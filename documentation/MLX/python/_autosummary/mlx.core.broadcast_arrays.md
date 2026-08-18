@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.br
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.broadcast_arrays
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.br
 
 # mlx.core.broadcast_arrays
 
-**broadcast_arrays(**arrays: array*, *stream: None | Stream | Device = None*) → Tuple[[array](mlx.core.array.html#mlx.core.array), ...]**
+**broadcast_arrays(**arrays: array*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), ...]**
 : Broadcast arrays against one another.
 The broadcasting semantics are the same as Numpy.
 

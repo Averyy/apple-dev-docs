@@ -1,4 +1,4 @@
-# macOS 27 Golden Gate Beta 5 Release Notes
+# macOS 27 Golden Gate Beta 6 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate beta 6. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Accessory Access
 
@@ -300,6 +300,10 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ##### Mac Catalyst
 
+###### New Features
+
+- Catalyst apps now behave like AppKit apps when you switch to them with no open windows - they won’t automatically create new windows unless activated through Dock or Spotlight.  (69906818)
+
 ###### Resolved Issues
 
 - Fixed: Mac-Idiom Catalyst apps could not use `UIStepper`.  (57819435)
@@ -408,6 +412,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: After you load certain 3D models, materials for most other 3D models might not appear properly and display an error pattern instead.  (177483209)
 - Fixed: When you drag an annotation in a 3D document, such as a USD file, and release the mouse button, the cursor might remain in the open-hand state instead of returning to the arrow cursor.  (177754200)
+
+##### Privacy Security Settings
+
+###### Known Issues
+
+- In the Files & Folders pane, a process without a bundle ID cannot be granted access to specific app data containers or app group containers owned by other developer teams.  (184660124) **Workaround:** Consider if the access is necessary. If required, grant Full Disk Access to the process for the duration of the requirement.
 
 ##### Realitykit
 
@@ -560,7 +570,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 ###### Resolved Issues
 
 - Fixed: The transaction refund request sheet fails to display on macOS.  (180072209)
+- Fixed: `Storefront` API may return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: Transactions fail to finish.  (183165269)
 
 ##### Storekit Testing in Xcode
 
@@ -575,6 +587,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 - Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 - Fixed: Purchases and fetching the unified app receipt sometimes fails with an unknown error when using StoreKit Testing in Xcode.  (178555835)
+
+###### Known Issues
+
+- Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836) **Workaround:** Wait 15 seconds after calling `SKTestSession.clearTransactions()` for the eligibility to reset.
+- Changing the storefront or locale using SKTestSession doesn’t propagate through Storefront.updates.  (184155259)
+- Failed purchases using SKTestSession may display error dialogs even when dialogsDisabled is set to true.  (184255116)
 
 ##### Swift Charts
 
@@ -771,6 +789,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: If an App uses `AccessoryAccess` framework within a Virtualization framework to launch a virtual machine, and if you assign both the Apple Keyboard (A1242 or A1243) and Apple Mouse (A1152) to that app and subsequently un-assign the mouse, then the virtual machine might crash.  (174794802)
 - Fixed: A virtual machine might crash during restore if a USB mass storage device was hot-plugged before the virtual machine was saved but is not attached during the restore.  (177528319)
 - Fixed: `AAUSBAccessoryManager registerListener:withMatchingCriteria:completionHandler:` does not work with a non-empty matching criteria array.  (177662539)
+
+##### Weather Highlights
+
+###### Deprecations
+
+- Weather Highlights is currently only available in US English.  (164408676)
 
 ##### Wi Fi Settings
 

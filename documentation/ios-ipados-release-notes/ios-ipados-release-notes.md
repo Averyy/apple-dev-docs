@@ -17,7 +17,7 @@ When writing your report, please include the full version number in the title an
 ## Topics
 
 ### iOS & iPadOS 27
-- [iOS & iPadOS 27 Beta 5 Release Notes](ios-ipados-27-release-notes.md)
+- [iOS & iPadOS 27 Beta 6 Release Notes](ios-ipados-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### iOS & iPadOS 26
 - [iOS & iPadOS 26.6 Release Notes](ios-ipados-26_6-release-notes.md)

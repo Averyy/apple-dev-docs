@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.optimizers.Adamax
@@ -44,8 +48,9 @@ Parameters:
 
 **learning_rate** ([float](https://docs.python.org/3/library/functions.html#float)* or **callable*) – The learning rate \(\lambda\).
 **betas** (*Tuple**[*[float](https://docs.python.org/3/library/functions.html#float)*, *[float](https://docs.python.org/3/library/functions.html#float)*]**, **optional*) – The coefficients
-\((\beta_1, \beta_2)\) used for computing running averages of the
-gradient and its square. Default: `(0.9, 0.999)`
+\((\beta_1, \beta_2)\) used for computing the running average of
+the gradient and the exponentially weighted infinity norm.
+Default: `(0.9, 0.999)`
 **eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the
 denominator to improve numerical stability. Default: `1e-8`
 

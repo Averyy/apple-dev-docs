@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/examples/data_parallelism.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Data Parallelism
@@ -57,7 +61,8 @@ for x, y in dataset:
 ```
 
 All we have to do to average the gradients across machines is perform an
-`all_sum()` and divide by the size of the `Group`. Namely we
+[mlx.core.distributed.all_sum()](../python/_autosummary/mlx.core.distributed.all_sum.html#mlx.core.distributed.all_sum) and divide by the size of the
+[mlx.core.distributed.Group](../python/_autosummary/mlx.core.distributed.Group.html#mlx.core.distributed.Group). Namely we
 have to [mlx.utils.tree_map()](../python/_autosummary/mlx.utils.tree_map.html#mlx.utils.tree_map) the gradients with following function.
 
 ```

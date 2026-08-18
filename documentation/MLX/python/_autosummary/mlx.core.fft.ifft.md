@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fft.ifft
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.ifft
 
-**ifft(*a: array*, *n: int | None = None*, *axis: int = -1*, *norm: str = 'backward'*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**ifft(*a: array*, *n: int | None = None*, *axis: int = -1*, *norm: str = 'backward'*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : One dimensional inverse discrete Fourier Transform.
 
 Parameters:

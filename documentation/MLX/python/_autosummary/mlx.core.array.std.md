@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.array.std
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.std
 
-**array.std(*self*, *axis: int | Sequence[int] | None = None*, *keepdims: bool = False*, *ddof: int = 0*, ***, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.std(*self*, *axis: int | Sequence[int] | None = None*, *keepdims: bool = False*, *ddof: int = 0*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : See [std()](mlx.core.std.html#mlx.core.std).
 
 ** Contents

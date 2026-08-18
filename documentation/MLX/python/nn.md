@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Neural Networks
@@ -186,6 +190,5 @@ parameters as the first argument to the function returned by
 | --- | --- |
 | quantize(model[, group_size, bits, mode, ...]) | Quantize the sub-modules of a module according to a predicate. |
 | average_gradients(gradients[, group, ...]) | Average the gradients across the distributed processes in the passed group. |
-| fsdp_apply_gradients(gradients, parameters, ...) | Perform a distributed optimizer step by sharding gradients and optimizer states across ranks. |
 
 ** Contents

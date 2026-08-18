@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.gr
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.greater_equal
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.gr
 
 # mlx.core.greater_equal
 
-**greater_equal(*a: scalar | array*, *b: scalar | array*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**greater_equal(*a: scalar | array*, *b: scalar | array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Element-wise greater or equal.
 Greater than or equal on two arrays with numpy-style broadcasting semantics.
 Either or both input arrays can also be scalars.

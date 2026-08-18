@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fft.fftshift
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.fftshift
 
-**fftshift(*a: array*, *axes: int | Sequence[int] | None = None*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**fftshift(*a: array*, *axes: int | Sequence[int] | None = None*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Shift the zero-frequency component to the center of the spectrum.
 
 Parameters:

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.linalg.cholesky_inv
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.cholesky_inv
 
-**cholesky_inv(*L: array*, *upper: bool = False*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**cholesky_inv(*a: array*, *upper: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Compute the inverse of a real symmetric positive semi-definite matrix using it’s Cholesky decomposition.
 Let \(\mathbf{A}\) be a real symmetric positive semi-definite matrix and \(\mathbf{L}\) its Cholesky decomposition such that:
 
@@ -44,7 +48,8 @@ If the input matrix is not a triangular matrix behaviour is undefined.
 
 Parameters:
 
-**L** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array. This is the Cholesky factor
+\(\mathbf{L}\), not \(\mathbf{A}\) itself.
 **upper** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, return the upper triangular Cholesky factor.
 If `False`, return the lower triangular Cholesky factor. Default: `False`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`

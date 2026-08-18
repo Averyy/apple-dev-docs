@@ -12,7 +12,7 @@ This distinction matters when planning seat allocation. Renewing seats represent
 
 Subscriptions are identified by two values: a `parentAdamId` that refers to the parent app in the store, and an `adamId` that identifies the specific subscription product.
 
-> ❗ **Important**:  Before content managers can purchase subscriptions into your managed organizational unit, your device management service must declare that it supports subscription management. Send a POST request to `/v2/subscriptions/enable` for each token you manage. Until you do, subscriptions aren’t available for purchase into the organizational unit that the token represents. Enabling an organizational unit is permanent.
+> ❗ **Important**:  Before content managers can purchase subscriptions into your managed organizational unit, your device management service must declare that it supports subscription management. Send a POST request to `/v2/subscriptions/enable` for each token you manage. Until you do, subscriptions aren’t available for purchase into the organizational unit that the token represents. You can disable subscription management later, but only while the organizational unit has no subscriptions.
 
 #### Declare Subscription Management Support
 
@@ -36,7 +36,7 @@ The code above results in a response like the following:
 }
 ```
 
-> ⚠️ **Warning**:  Enabling subscription management for an organizational unit is permanent. After an organizational unit opts in as enabled, you can’t disable it. Enable an organizational unit only after your device management service is ready to manage subscription assignments for it.
+> **Note**:  You can reverse an enable declaration by disabling the organizational unit, but only while it has no subscriptions. After content managers purchase subscriptions into it, disabling fails until no subscriptions remain.
 
 Send a POST request to `/v2/subscriptions/disable` to declare that your device management service doesn’t support subscriptions for an organizational unit. Apple School Manager and Apple Business Manager use this declaration to indicate to content managers that the organizational unit doesn’t support subscriptions, rather than leaving its support status unstated.
 
@@ -56,7 +56,7 @@ The code above results in a response like the following:
 }
 ```
 
-Disabling is a positive declaration that the organizational unit doesn’t support subscriptions. It isn’t a way to reverse an earlier enable request.
+Disabling is a positive declaration that the organizational unit doesn’t support subscriptions. It also reverses an earlier enable request, but only while the organizational unit has no subscriptions. If any subscriptions exist there, the request fails with error `9818` (`Subscriptions exist for the organizational unit, so subscription management can't be disabled.`). For more information, see [`Handling error responses`](handling-error-responses.md).
 
 The `subscriptionManagement` field reports the state that the server recorded for the token. Confirm that it matches the state you intended before you rely on the other subscription endpoints.
 

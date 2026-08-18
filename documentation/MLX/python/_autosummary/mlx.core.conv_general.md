@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.conv_general
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.conv_general
 
-**conv_general(*input: array*, *weight: array*, */*, *stride: int | Sequence[int] = 1*, *padding: int | Sequence[int] | tuple[Sequence[int], Sequence[int]] = 0*, *kernel_dilation: int | Sequence[int] = 1*, *input_dilation: int | Sequence[int] = 1*, *groups: int = 1*, *flip: bool = False*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**conv_general(*input: array*, *weight: array*, */*, *stride: int | Sequence[int] = 1*, *padding: int | Sequence[int] | tuple[Sequence[int], Sequence[int]] = 0*, *kernel_dilation: int | Sequence[int] = 1*, *input_dilation: int | Sequence[int] = 1*, *groups: int = 1*, *flip: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : General convolution over an input with several channels
 
 Parameters:

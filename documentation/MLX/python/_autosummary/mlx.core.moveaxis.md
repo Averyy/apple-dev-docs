@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.mo
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.moveaxis
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.mo
 
 # mlx.core.moveaxis
 
-**moveaxis(*a: array*, */*, *source: int*, *destination: int*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**moveaxis(*a: array*, */*, *source: int*, *destination: int*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Move an axis to a new position.
 
 Parameters:

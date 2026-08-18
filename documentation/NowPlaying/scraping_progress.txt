@@ -1,4 +1,4 @@
 Completed scraping Now Playing!
-Total pages scraped: 224
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 225
 Pages failed: 0

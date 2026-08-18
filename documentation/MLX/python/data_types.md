@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/data_types.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Data Types
@@ -61,3 +65,4 @@ documentation for more information. Use [issubdtype()](_autosummary/mlx.core.iss
 | DtypeCategory(*values) | Type to hold categories ofdtypes. |
 | issubdtype(arg1, arg2) | Check if aDtypeorDtypeCategoryis a subtype of another. |
 | finfo(*args, **kwargs) | Get information on floating-point types. |
+| iinfo(*args, **kwargs) | Get information on integer types. |

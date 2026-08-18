@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fast.layer_norm
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.layer_norm
 
-**layer_norm(*x: array*, *weight: array | None*, *bias: array | None*, *eps: float*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**layer_norm(*x: array*, *weight: array | None*, *bias: array | None*, *eps: float*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Layer normalization.
 The normalization is with respect to the last axis of the input `x`.
 

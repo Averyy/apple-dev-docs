@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.cu
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.cummin
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.cu
 
 # mlx.core.cummin
 
-**cummin(*a: array*, */*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**cummin(*a: array*, */*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Return the cumulative minimum of the elements along the given axis.
 
 Parameters:

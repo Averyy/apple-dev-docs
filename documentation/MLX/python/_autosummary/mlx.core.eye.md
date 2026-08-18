@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ey
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.eye
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ey
 
 # mlx.core.eye
 
-**eye(*n: int*, *m: int | None = None*, *k: int = 0*, *dtype: Dtype | None = float32*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**eye(*n: int*, *m: int | None = None*, *k: int = 0*, *dtype: Dtype | None = float32*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Create an identity matrix or a general diagonal matrix.
 
 Parameters:

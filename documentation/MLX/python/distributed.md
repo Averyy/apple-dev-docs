@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/distributed.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Distributed Communication
@@ -34,7 +38,7 @@ made available.
 | Group | Anmlx.core.distributed.Grouprepresents a group of independent mlx processes that can communicate. |
 | --- | --- |
 | is_available([backend]) | Check if a communication backend is available. |
-| init([strict, backend]) | Initialize the communication backend and create the global communication group. |
+| init([strict, backend, all_gather_factory]) | Initialize the communication backend and create the global communication group. |
 | all_max(x, *[, group, stream]) | All reduce max. |
 | all_min(x, *[, group, stream]) | All reduce min. |
 | all_sum(x, *[, group, stream]) | All reduce sum. |

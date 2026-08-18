@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.uniform
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.uniform
 
-**uniform(*low: scalar | array = 0*, *high: scalar | array = 1*, *shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**uniform(*low: scalar | array = 0*, *high: scalar | array = 1*, *shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Generate uniformly distributed random numbers.
 The values are sampled uniformly in the half-open interval `[low, high)`.
 The lower and upper bound can be scalars or arrays and must be

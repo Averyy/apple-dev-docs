@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/linalg.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Linear Algebra
@@ -32,7 +36,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/linalg.html
 | tri_inv(a[, upper, stream]) | Compute the inverse of a triangular square matrix. |
 | norm(a, /[, ord, axis, keepdims, stream]) | Matrix or vector norm. |
 | cholesky(a[, upper, stream]) | Compute the Cholesky decomposition of a real symmetric positive semi-definite matrix. |
-| cholesky_inv(L[, upper, stream]) | Compute the inverse of a real symmetric positive semi-definite matrix using it's Cholesky decomposition. |
+| cholesky_inv(a[, upper, stream]) | Compute the inverse of a real symmetric positive semi-definite matrix using it's Cholesky decomposition. |
 | cross(a, b[, axis, stream]) | Compute the cross product of two arrays along a specified axis. |
 | det(a, *[, stream]) | Compute the determinant of a square matrix. |
 | qr(a, *[, stream]) | The QR factorization of the input matrix. |

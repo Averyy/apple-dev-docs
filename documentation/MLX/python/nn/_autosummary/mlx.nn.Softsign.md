@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.Softsign
@@ -31,7 +35,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 
 **class Softsign**
 : Applies the Softsign function.
-See `softsign()` for the functional equivalent.
+See [softsign()](../_autosummary_functions/mlx.nn.softsign.html#mlx.nn.softsign) for the functional equivalent.
 Methods
 
 ** Contents

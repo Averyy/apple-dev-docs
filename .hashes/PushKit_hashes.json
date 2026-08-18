@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-14T07:27:06.137799",
+    "last_updated": "2026-08-18T07:41:05.739471",
     "total_pages": 58,
-    "session_id": "2026-08-14T07:27:03.094829"
+    "session_id": "2026-08-18T07:41:01.488628"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/PushKit.json": {
       "hash": "cb585daadc46a0b8d0e88c6c429f25ac79104b41bfb88a7568de4c52b2e13b5d",
-      "last_checked": "2026-08-14T07:27:03.401103",
+      "last_checked": "2026-08-18T07:41:01.782039",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"45f6-658585efa1720-df\"",
       "file_path": "documentation/PushKit/PushKit.md"
     },
     "https://developer.apple.com/documentation/PushKit": {
       "hash": "cb585daadc46a0b8d0e88c6c429f25ac79104b41bfb88a7568de4c52b2e13b5d",
-      "last_checked": "2026-08-14T07:27:03.283838",
+      "last_checked": "2026-08-18T07:41:01.660178",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"45f6-658585efa1720-df\"",
       "file_path": "documentation/PushKit/PushKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/supporting-pushkit-notifications-in-your-app.json": {
       "hash": "b1389d4fd3f89637195aeaefa9c9041323f8311087e9bf8f8c660e721cc45371",
-      "last_checked": "2026-08-14T07:27:03.658484",
+      "last_checked": "2026-08-18T07:41:01.992045",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"4c3f-658585efa1720-df\"",
       "file_path": "documentation/PushKit/supporting-pushkit-notifications-in-your-app.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry.json": {
       "hash": "18b9135263ec0615a30d9b6f7bbf92338ac3ec06a58829044df57f48e3981fb7",
-      "last_checked": "2026-08-14T07:27:03.743825",
+      "last_checked": "2026-08-18T07:41:02.151434",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"6253-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistry.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate.json": {
       "hash": "bb7a97e2e963bd4fc530e2a00cf7debb3b7f516e86845ad279af25946de60106",
-      "last_checked": "2026-08-14T07:27:03.829909",
+      "last_checked": "2026-08-18T07:41:02.372322",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"623c-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushcredentials.json": {
       "hash": "1c563676be0970c8b5eaf517328742fc0c613b9800f13f23d114aa7198c29a28",
-      "last_checked": "2026-08-14T07:27:04.042405",
+      "last_checked": "2026-08-18T07:41:02.513987",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"4fa5-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/responding-to-voip-notifications-from-pushkit.json": {
       "hash": "1b3e450259ff01e50fee3f84d29ca65ba847818a3c58327ca327ee40bf83f560",
-      "last_checked": "2026-08-14T07:27:04.120400",
+      "last_checked": "2026-08-18T07:41:02.609158",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"9438-658585efa1720-df\"",
       "file_path": "documentation/PushKit/responding-to-voip-notifications-from-pushkit.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype.json": {
       "hash": "9e893111bd7f6fecea1ec924e4e4c4d6960225149b841fdb7471435237aa4800",
-      "last_checked": "2026-08-14T07:27:04.200214",
+      "last_checked": "2026-08-18T07:41:02.746027",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"38e5-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushtype.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushpayload.json": {
       "hash": "3ce9b6359a4bb038682cc914709786c7f1f9207c559f2401495a249c1be8a3f7",
-      "last_checked": "2026-08-14T07:27:04.279732",
+      "last_checked": "2026-08-18T07:41:02.876726",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"37e9-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushpayload.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/exporting-delivery-metrics-logs.json": {
       "hash": "224911496db068d971feaf088d5e626606f1544222e2bfa58084c7324f46b907",
-      "last_checked": "2026-08-14T07:27:04.365092",
+      "last_checked": "2026-08-18T07:41:02.984720",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"4aae-658585efa1720-df\"",
       "file_path": "documentation/PushKit/exporting-delivery-metrics-logs.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/exporting-broadcast-push-notification-metrics.json": {
       "hash": "440fb515b3e837bd86a86f28d3c79a9c9f15e0dd07ce081d7dd67b8b905efc87",
-      "last_checked": "2026-08-14T07:27:04.449222",
+      "last_checked": "2026-08-18T07:41:03.118626",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"5059-658585efa1720-df\"",
       "file_path": "documentation/PushKit/exporting-broadcast-push-notification-metrics.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/init(queue:).json": {
       "hash": "e4238c82217afe30c0d9d3e6b7f2347ad298d10d1fa1a465ca96849bedbe5536",
-      "last_checked": "2026-08-14T07:27:04.564683",
+      "last_checked": "2026-08-18T07:41:03.391259",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"2574-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/init-queue.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/delegate.json": {
       "hash": "525bd0feb3abf842f48f4048b1cb7d180555cedb7ca66b1a278063d82b66810b",
-      "last_checked": "2026-08-14T07:27:04.621791",
+      "last_checked": "2026-08-18T07:41:03.521363",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"2c7e-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/delegate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/desiredpushtypes.json": {
       "hash": "bb04f126895502d473e177a39a770b767976b704ec4145446cb2251820e6a0e0",
-      "last_checked": "2026-08-14T07:27:04.717792",
+      "last_checked": "2026-08-18T07:41:03.634502",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"319f-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/desiredpushtypes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/pushtoken(for:).json": {
       "hash": "a9db9a0b91e591174062a84795724abc56d66969dae65fbc3ab24bd8c3cc36e3",
-      "last_checked": "2026-08-14T07:27:04.744210",
+      "last_checked": "2026-08-18T07:41:03.756247",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"325c-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/pushtoken-for.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didupdate:for:).json": {
       "hash": "b1f516ac00a1c99d38a4406aa1a424b0a917d171ed676881e02d83a115f2419e",
-      "last_checked": "2026-08-14T07:27:04.987124",
+      "last_checked": "2026-08-18T07:41:03.886900",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"4ded-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry-didupdatefor.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didinvalidatepushtokenfor:).json": {
       "hash": "1f79201d640acedd83cc185f5a0a930bc25c4ad7c86ede6433124bf81c79f96a",
-      "last_checked": "2026-08-14T07:27:05.060483",
+      "last_checked": "2026-08-18T07:41:04.007743",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"3e2a-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry-didinvalidatepushtokenfor.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:completion:).json": {
       "hash": "755c598aaabb2e2a0a04976255954c27fe797fc03ecc5d47dcb2b764dc84c810",
-      "last_checked": "2026-08-14T07:27:05.139618",
+      "last_checked": "2026-08-18T07:41:04.203796",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"6e6c-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry-didreceiveincomingpushwithforcompletion.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:).json": {
       "hash": "a9c94dc64da2d0d035fe960a7d9f2e7b3cdc472605e1b4ed72d92df31886dba0",
-      "last_checked": "2026-08-14T07:27:05.224473",
+      "last_checked": "2026-08-18T07:41:04.352736",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"48ab-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry-didreceiveincomingpushwithfor.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushcredentials/token.json": {
       "hash": "d283d8b18b46484cc4e519e6febaed751dafecd10c732271e982f745da9b97e8",
-      "last_checked": "2026-08-14T07:27:05.369275",
+      "last_checked": "2026-08-18T07:41:04.571102",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"255c-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials/token.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushcredentials/type.json": {
       "hash": "bd6c4f106afa5e4f2ad761533e497b0066ab3aefa485d56b9521475f183bd740",
-      "last_checked": "2026-08-14T07:27:05.442131",
+      "last_checked": "2026-08-18T07:41:04.687609",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"273d-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials/type.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/complication.json": {
       "hash": "a0c94bc208aee080ac2ff3ce0985ecf2b4b4b77878850fafcdcc7fe7271f05e7",
-      "last_checked": "2026-08-14T07:27:05.521960",
+      "last_checked": "2026-08-18T07:41:04.797336",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"2d60-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushtype/complication.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/fileprovider.json": {
       "hash": "555fe48ed4ae9a29056e9b1d88af1102605e5549fdaf6360360eacfe2f55be82",
-      "last_checked": "2026-08-14T07:27:05.551191",
+      "last_checked": "2026-08-18T07:41:04.982302",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"2a0c-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushtype/fileprovider.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/voip.json": {
       "hash": "c1de27937c250a64679b0419d92b8ba6b76734667621b5789a557965c7755e76",
-      "last_checked": "2026-08-14T07:27:05.685975",
+      "last_checked": "2026-08-18T07:41:05.113863",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"351d-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushtype/voip.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/init(rawvalue:).json": {
       "hash": "dabfb39718e048b89c5051ee80917369266fafea74e44a2d6c0336ef771cded7",
-      "last_checked": "2026-08-14T07:27:05.804964",
+      "last_checked": "2026-08-18T07:41:05.245525",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"13a0-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushtype/init-rawvalue.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushpayload/dictionarypayload.json": {
       "hash": "201f8ba973614f4f7d52e49fff08d666927009c2b33046372b218e71e56cf26a",
-      "last_checked": "2026-08-14T07:27:05.838060",
+      "last_checked": "2026-08-18T07:41:05.340858",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"2630-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushpayload/dictionarypayload.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushpayload/type.json": {
       "hash": "83c219065bf940a64b42b9246a19a2b8d0a3f4caa8470908ef2e9374b07ab91e",
-      "last_checked": "2026-08-14T07:27:06.036733",
+      "last_checked": "2026-08-18T07:41:05.501391",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"2767-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushpayload/type.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkvoippushmetadata.json": {
       "hash": "f19b32f5bc4f4b17c924d22b77b806e9b2258a695abe663714994f35836405bf",
-      "last_checked": "2026-08-14T07:27:04.534477",
+      "last_checked": "2026-08-18T07:41:03.294056",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"3b19-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkvoippushmetadata.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingvoippushwith:metadata:withcompletionhandler:).json": {
       "hash": "5b78ffa03e807836dea9a31a327b0a82c842b4e302ae9f3a30ac05be0a6e7052",
-      "last_checked": "2026-08-14T07:27:05.257485",
+      "last_checked": "2026-08-18T07:41:04.439138",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"7364-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry-didreceiveincomingvoippushwithmetadatawithcompletionhandler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkvoippushmetadata/mustreport.json": {
       "hash": "c75c66b9357656fb926b47938889dc5945190477ea9c18f8bf9885aaf103eb24",
-      "last_checked": "2026-08-14T07:27:06.128323",
+      "last_checked": "2026-08-18T07:41:05.667257",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:03.094829",
+      "session_id": "2026-08-18T07:41:01.488628",
       "etag": "\"1f7d-658585efa1720-df\"",
       "file_path": "documentation/PushKit/pkvoippushmetadata/mustreport.md"
     },

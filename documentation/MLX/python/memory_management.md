@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/memory_management.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Memory Management

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.linalg.norm
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.norm
 
-**norm(*a: array*, */*, *ord: None | int | float | str = None*, *axis: None | int | list[int] = None*, *keepdims: bool = False*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**norm(*a: array*, */*, *ord: None | int | float | str = None*, *axis: None | int | list[int] = None*, *keepdims: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Matrix or vector norm.
 This function computes vector or  matrix norms depending on the value of
 the `ord` and `axis` parameters.

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.array.transpose
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.transpose
 
-**array.transpose(*self*, **axes*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.transpose(*self*, **axes*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Equivalent to [transpose()](mlx.core.transpose.html#mlx.core.transpose) but the axes can be passed either as
 a tuple or as separate arguments.
 See [transpose()](mlx.core.transpose.html#mlx.core.transpose) for full documentation.

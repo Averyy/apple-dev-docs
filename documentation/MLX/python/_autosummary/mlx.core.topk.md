@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.to
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.topk
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.to
 
 # mlx.core.topk
 
-**topk(*a: array*, */*, *k: int*, *axis: None | int = -1*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**topk(*a: array*, */*, *k: int*, *axis: None | int = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Returns the `k` largest elements from the input along a given axis.
 The elements will not necessarily be in sorted order.
 

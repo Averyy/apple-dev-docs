@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fast.scaled_dot_product_attention
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.scaled_dot_product_attention
 
-**scaled_dot_product_attention(*q: array*, *k: array*, *v: array*, ***, *scale: float*, *mask: None | str | array = None*, *sinks: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**scaled_dot_product_attention(*q: array*, *k: array*, *v: array*, ***, *scale: float*, *mask: None | str | array = None*, *sinks: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : A fast implementation of multi-head attention: `O = softmax(Q @ K.T, dim=-1) @ V`.
 Supports:
 

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.un
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.unstack
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.un
 
 # mlx.core.unstack
 
-**unstack(*x: array*, */*, ***, *axis: int = 0*, *stream: None | Stream | Device = None*) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)]**
+**unstack(*x: array*, */*, ***, *axis: int = 0*, *stream: StreamOrDevice = None*) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)]**
 : Split an array into a sequence of arrays along the given axis.
 The inverse of [stack()](mlx.core.stack.html#mlx.core.stack). The given axis is removed from each of
 the returned arrays.

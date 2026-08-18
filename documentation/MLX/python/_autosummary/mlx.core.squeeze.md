@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sq
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.squeeze
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sq
 
 # mlx.core.squeeze
 
-**squeeze(*a: array*, */*, *axis: None | int | Sequence[int] = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**squeeze(*a: array*, */*, *axis: None | int | Sequence[int] = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Remove length one axes from an array.
 
 Parameters:

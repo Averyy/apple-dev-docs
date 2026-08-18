@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.va
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.var
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.va
 
 # mlx.core.var
 
-**var(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, *ddof: int = 0*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**var(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, *ddof: int = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Compute the variance(s) over the given axes.
 
 Parameters:

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.multivariate_normal
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.multivariate_normal
 
-**multivariate_normal(*mean: array*, *cov: array*, *shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**multivariate_normal(*mean: array*, *cov: array*, *shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Generate jointly-normal random samples given a mean and covariance.
 The matrix `cov` must be positive semi-definite. The behavior is
 undefined if it is not.  The only supported `dtype` is `float32`.

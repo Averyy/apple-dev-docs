@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.divmod
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.divmod
 
-**divmod(*a: scalar | array*, *b: scalar | array*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**divmod(*a: scalar | array*, *b: scalar | array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Element-wise quotient and remainder.
 The fuction `divmod(a, b)` is equivalent to but faster than
 `(a // b, a % b)`. The function uses numpy-style broadcasting

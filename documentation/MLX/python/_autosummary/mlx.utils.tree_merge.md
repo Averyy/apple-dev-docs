@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.utils.t
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.utils.tree_merge
@@ -31,7 +35,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.utils.t
 
 **tree_merge(*tree_a*, *tree_b*, *merge_fn=None*)**
 : Merge two Python trees in one containing the values of both. It can be
-thought of as a deep dict.update method.
+thought of as a deep dict.update method. Empty containers are treated as
+empty subtrees.
 
 Parameters:
 

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/transforms.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Transforms

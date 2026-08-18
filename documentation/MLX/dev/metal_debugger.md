@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/dev/metal_debugger.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Metal Debugger

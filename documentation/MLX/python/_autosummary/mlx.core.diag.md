@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.diag
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.diag
 
-**diag(*a: array*, */*, *k: int = 0*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**diag(*a: array*, */*, *k: int = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Extract a diagonal or construct a diagonal matrix.
 If `a` is 1-D then a diagonal matrix is constructed with `a` on the
 \(k\)-th diagonal. If `a` is 2-D then the \(k\)-th diagonal is

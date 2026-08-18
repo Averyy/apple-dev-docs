@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.br
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.broadcast_shapes
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.br
 
 # mlx.core.broadcast_shapes
 
-**broadcast_shapes(**shapes: Sequence[int]*) → Tuple[[int](https://docs.python.org/3/library/functions.html#int)]**
+**broadcast_shapes(**shapes: Sequence[int]*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[int](https://docs.python.org/3/library/functions.html#int)]**
 : Broadcast shapes.
 Returns the shape that results from broadcasting the supplied array shapes
 against each other.

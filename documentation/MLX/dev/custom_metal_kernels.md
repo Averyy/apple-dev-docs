@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/dev/custom_metal_kernels.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Custom Metal Kernels
@@ -111,8 +115,8 @@ function. This means we will launch `mx.prod(grid)` threads, subdivided into
 `threadgroup` size threadgroups.  For optimal performance, each thread group
 dimension should be less than or equal to the corresponding grid dimension.
 
-Passing `verbose=True` to `ast.metal_kernel.__call__()` will print the
-generated code for debugging purposes.
+Passing `verbose=True` when calling the kernel returned by
+[fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel) will print the generated code for debugging purposes.
 
 ## Math Mode
 

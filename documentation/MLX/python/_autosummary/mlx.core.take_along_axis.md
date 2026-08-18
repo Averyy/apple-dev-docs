@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ta
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.take_along_axis
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ta
 
 # mlx.core.take_along_axis
 
-**take_along_axis(*a: array*, */*, *indices: array*, *axis: int | None = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**take_along_axis(*a: array*, */*, *indices: array*, *axis: int | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Take values along an axis at the specified indices.
 
 Parameters:

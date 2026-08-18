@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/common_optimi
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Common Optimizers

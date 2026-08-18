@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-14T07:26:59.847473",
+    "last_updated": "2026-08-18T07:40:57.287693",
     "total_pages": 102,
-    "session_id": "2026-08-14T07:26:55.310618"
+    "session_id": "2026-08-18T07:40:50.010420"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/installer_js.json": {
       "hash": "9ec9b5efa4aed0d4545b4731f7fcfbc56aa81358a8a0d2f57e21fb58d627de3a",
-      "last_checked": "2026-08-14T07:26:55.613849",
+      "last_checked": "2026-08-18T07:40:50.311938",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"204d-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/installer_js.md"
     },
     "https://developer.apple.com/documentation/installer_js": {
       "hash": "9ec9b5efa4aed0d4545b4731f7fcfbc56aa81358a8a0d2f57e21fb58d627de3a",
-      "last_checked": "2026-08-14T07:26:55.552495",
+      "last_checked": "2026-08-18T07:40:50.177694",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"204d-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/installer_js.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/applications.json": {
       "hash": "11430b1adcb858fca57e65b1827df49427151d1f86abab6e6027e90ec0b6dbe8",
-      "last_checked": "2026-08-14T07:26:55.831817",
+      "last_checked": "2026-08-18T07:40:50.475478",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1254-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/applications.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice.json": {
       "hash": "69d76a69120997f1efa802c3265fc6a32e6c3fce0b64175316bfd0b1b2c5a34d",
-      "last_checked": "2026-08-14T07:26:55.971273",
+      "last_checked": "2026-08-18T07:40:50.675892",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"2a4c-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/files.json": {
       "hash": "f4210a4e784f05a1c2be39c6e484a77d5084f207e2dde17c82e423724b311110",
-      "last_checked": "2026-08-14T07:26:56.051860",
+      "last_checked": "2026-08-18T07:40:50.846692",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"11c0-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/files.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry.json": {
       "hash": "ceaed8c6b665daf8f70fb063956b87a739d462caac97100e1aa1ef8af8f2f1f0",
-      "last_checked": "2026-08-14T07:26:56.124939",
+      "last_checked": "2026-08-18T07:40:51.003230",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"19c7-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/ioregistry.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/processinformation.json": {
       "hash": "b29271043e5fe15c7de52d4831805664c61f9f85bfdb15d74a20a9dc75cf8cb1",
-      "last_checked": "2026-08-14T07:26:56.226143",
+      "last_checked": "2026-08-18T07:40:51.206853",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"3510-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/processinformation.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/result.json": {
       "hash": "c929504e2ee530023aee25b44efe1727f3f7d7784719254ea9666b522b01a0e0",
-      "last_checked": "2026-08-14T07:26:56.320946",
+      "last_checked": "2026-08-18T07:40:51.343111",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1167-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/result.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system.json": {
       "hash": "943db363f1bc0736912ddd03ca563bb9533e1ea5458a25a72de94c990202fa9c",
-      "last_checked": "2026-08-14T07:26:56.360545",
+      "last_checked": "2026-08-18T07:40:51.483611",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"3fa7-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/target.json": {
       "hash": "18a636e9f0dc7db02b49c27b9a88038dcdb6ec83f22ba1b4c0be3ea15778b725",
-      "last_checked": "2026-08-14T07:26:56.447611",
+      "last_checked": "2026-08-18T07:40:51.594445",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"154c-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/target.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/applications/1812189-frompid.json": {
       "hash": "79a128c58675a4bd64fe562c314289b7d9b709b6961a3e9f683925142362b7de",
-      "last_checked": "2026-08-14T07:26:56.523188",
+      "last_checked": "2026-08-18T07:40:51.722031",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1b5b-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/applications/api-1812189-frompid.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/applications/1812198-fromidentifier.json": {
       "hash": "abfe964c222fff34fecf22fd19bc7bba3cbd1e04c702569562f24cfe053c9d53",
-      "last_checked": "2026-08-14T07:26:56.552980",
+      "last_checked": "2026-08-18T07:40:51.828668",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1b99-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/applications/api-1812198-fromidentifier.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/applications/1812212-all.json": {
       "hash": "524c9f7ae7b6b430a92b3b0c3dc19d93525f3c4542e6ef17183f9304ea584f25",
-      "last_checked": "2026-08-14T07:26:56.618322",
+      "last_checked": "2026-08-18T07:40:51.965517",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"17f0-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/applications/api-1812212-all.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812159-selected.json": {
       "hash": "f422eff601fc8e9fee88c3158ac65a2454f413828b6dfe3700dffd6d5f954a91",
-      "last_checked": "2026-08-14T07:26:56.726686",
+      "last_checked": "2026-08-18T07:40:52.121505",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"151f-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice/api-1812159-selected.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812168-enabled.json": {
       "hash": "f8ad18aab03bd7e16627e2a9670f4d1e2a1a50fd201bc3d2372c0c583ce72984",
-      "last_checked": "2026-08-14T07:26:56.931149",
+      "last_checked": "2026-08-18T07:40:52.247118",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1319-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice/api-1812168-enabled.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812175-visible.json": {
       "hash": "c6507508b182fb18857435eae7a4016fcfc12add0e6cc3b40d5bd5100a3df5d9",
-      "last_checked": "2026-08-14T07:26:57.005031",
+      "last_checked": "2026-08-18T07:40:52.382529",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"13c2-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice/api-1812175-visible.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812183-title.json": {
       "hash": "32916202710e45885d04371088a3c8d0b9ce1b7aa205083a445a1a7f05805c18",
-      "last_checked": "2026-08-14T07:26:57.078710",
+      "last_checked": "2026-08-18T07:40:52.471018",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"e7b-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice/api-1812183-title.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812191-description.json": {
       "hash": "bd43bba012384626f024cd06affc49e906b60a4c55a3656c2d27dd1974925a14",
-      "last_checked": "2026-08-14T07:26:57.104790",
+      "last_checked": "2026-08-18T07:40:52.668348",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"e83-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice/api-1812191-description.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812201-packages.json": {
       "hash": "c12b894a16ffc6e7780c8604c21f2d608b1392187aa8a607435dd89f11a45b19",
-      "last_checked": "2026-08-14T07:26:57.200645",
+      "last_checked": "2026-08-18T07:40:52.771300",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1a36-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice/api-1812201-packages.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812213-packageupgradeaction.json": {
       "hash": "b77102c6436b89774ae3ecf1c18b5a2f2eae6c90567e3c64f0caa5ac48031947",
-      "last_checked": "2026-08-14T07:26:57.294757",
+      "last_checked": "2026-08-18T07:40:52.904226",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"2325-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/choice/api-1812213-packageupgradeaction.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/files/1812173-fileexistsatpath.json": {
       "hash": "0e1b392dd74e97f0187744f3a32bd91aff23fc840e14a115e566ed11e92f58e7",
-      "last_checked": "2026-08-14T07:26:57.365940",
+      "last_checked": "2026-08-18T07:40:53.041810",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"193f-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/files/api-1812173-fileexistsatpath.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/files/1812182-plistatpath.json": {
       "hash": "40b67c74e894f86b966bb795f495111a30b9b79748bc882a95c526c8fc3ac177",
-      "last_checked": "2026-08-14T07:26:57.391721",
+      "last_checked": "2026-08-18T07:40:53.182646",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1629-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/files/api-1812182-plistatpath.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/files/1812190-bundleatpath.json": {
       "hash": "f45fcaa96f6835a91e5a53a79385b056d821eacefc4f2f4d49645fb18e3b5888",
-      "last_checked": "2026-08-14T07:26:57.457490",
+      "last_checked": "2026-08-18T07:40:53.306074",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"164f-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/files/api-1812190-bundleatpath.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812172-frompath.json": {
       "hash": "bd377624d4e36266a0bfdad972e0f440362c96ef01c1cb9e298c9754bad384d1",
-      "last_checked": "2026-08-14T07:26:57.536301",
+      "last_checked": "2026-08-18T07:40:53.419674",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1aeb-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/ioregistry/api-1812172-frompath.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812186-matchingclass.json": {
       "hash": "9a8b0188880831087879329a48db4c36f35bcec6793b401ba789f81355dde47c",
-      "last_checked": "2026-08-14T07:26:57.596477",
+      "last_checked": "2026-08-18T07:40:53.555802",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1e84-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/ioregistry/api-1812186-matchingclass.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812200-matchingname.json": {
       "hash": "1e8779231597145dd9b13a894ad721a46d6632c1758507a845e639501522b0a0",
-      "last_checked": "2026-08-14T07:26:57.701718",
+      "last_checked": "2026-08-18T07:40:53.735872",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1e8b-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/ioregistry/api-1812200-matchingname.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812215-childrenof.json": {
       "hash": "d5afa168efd235661b569dcca3985cc3cd69b1a1b0e4ff2eef1446bb636505ea",
-      "last_checked": "2026-08-14T07:26:57.777005",
+      "last_checked": "2026-08-18T07:40:53.876400",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1c14-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/ioregistry/api-1812215-childrenof.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812225-parentsof.json": {
       "hash": "2da93c7f9fcb6daa05d80affd1b5354b43c030ef7368cc3d51d2cd29c53ed077",
-      "last_checked": "2026-08-14T07:26:57.852155",
+      "last_checked": "2026-08-18T07:40:54.041651",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1c11-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/ioregistry/api-1812225-parentsof.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/result/1811962-message.json": {
       "hash": "579673f3003de750583bd29ac1dba8d6b691d984e7261f0d1a8318e1b06a0ec2",
-      "last_checked": "2026-08-14T07:26:57.938274",
+      "last_checked": "2026-08-18T07:40:54.144367",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1242-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/result/api-1811962-message.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/result/1811969-type.json": {
       "hash": "0a037071bf47f9af2805021ba3c67d5f046687a9eacf19e3baa5ca5cd887daff",
-      "last_checked": "2026-08-14T07:26:57.996717",
+      "last_checked": "2026-08-18T07:40:54.263927",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1731-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/result/api-1811969-type.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/result/1811977-title.json": {
       "hash": "1765fe3c8ff3ca83130b0e106ed9c43618cfef692db9d880c762c02f063c7614",
-      "last_checked": "2026-08-14T07:26:58.026013",
+      "last_checked": "2026-08-18T07:40:54.417768",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"10c7-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/result/api-1811977-title.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812308-sysctl.json": {
       "hash": "dc4bf239d47004710c103181df3ba74d78f9c4fab7d96848e3dac5be2db89144",
-      "last_checked": "2026-08-14T07:26:58.131118",
+      "last_checked": "2026-08-18T07:40:54.545065",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1f51-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812308-sysctl.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812277-users_desktopsessioncount.json": {
       "hash": "85360a84a9eb1eda825457a029d49bf927efc4117fa995f8de9089a1bb75995b",
-      "last_checked": "2026-08-14T07:26:58.208656",
+      "last_checked": "2026-08-18T07:40:54.703246",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"141e-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812277-users-desktopsessioncount.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812284-version.json": {
       "hash": "3db91e2e219092352c6249f5be0d65dae668a0a94b299ae2f26ebfbae9338b68",
-      "last_checked": "2026-08-14T07:26:58.290624",
+      "last_checked": "2026-08-18T07:40:54.808895",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1585-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812284-version.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812245-defaults.json": {
       "hash": "bb1a1126ae90188263582ad2134b6933942bcedd7a2f25a53a5dbb213d0fbf92",
-      "last_checked": "2026-08-14T07:26:58.570841",
+      "last_checked": "2026-08-18T07:40:55.296618",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"baa-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812245-defaults.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812294-propertiesof.json": {
       "hash": "1f27c611fa43c42c12507cc2b3e559507ef2cb80f3e337a5beb2d379123f8243",
-      "last_checked": "2026-08-14T07:26:58.775333",
+      "last_checked": "2026-08-18T07:40:55.421921",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1139-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812294-propertiesof.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812314-compareversions.json": {
       "hash": "5b7fa98de98e4e56960bf787ffb4c289fcf865f18f4330e568a55e3baf330463",
-      "last_checked": "2026-08-14T07:26:58.802757",
+      "last_checked": "2026-08-18T07:40:55.542350",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1a68-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812314-compareversions.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812321-localizedstring.json": {
       "hash": "9df63047a55804041ebaa88b82c91be03cbec4b90b733bd258ca56b8fae08064",
-      "last_checked": "2026-08-14T07:26:58.898535",
+      "last_checked": "2026-08-18T07:40:55.666566",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1592-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812321-localizedstring.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812327-localizedstringwithformat.json": {
       "hash": "286bc9e62ff4baaaecf2c946303f07633dc195f6ac07b159dbd50c279fe17c1a",
-      "last_checked": "2026-08-14T07:26:58.992196",
+      "last_checked": "2026-08-18T07:40:55.791946",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1828-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812327-localizedstringwithformat.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812348-log.json": {
       "hash": "5ef999422cbfd0e5a31fc8105336fba5e2fcc8f634f6f6d7420f555121678ad6",
-      "last_checked": "2026-08-14T07:26:59.026276",
+      "last_checked": "2026-08-18T07:40:55.993571",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"17eb-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812348-log.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812364-run.json": {
       "hash": "0b8cf62725dea0885ce49167bca82eec0eb8fa5c0576302bc19c542def2acca8",
-      "last_checked": "2026-08-14T07:26:59.119624",
+      "last_checked": "2026-08-18T07:40:56.136112",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1ed2-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812364-run.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812367-runonce.json": {
       "hash": "9989b04e15d25a4bae53f427e8441e443953b1fb54f7e32078f6df0f2fdb40d1",
-      "last_checked": "2026-08-14T07:26:59.192071",
+      "last_checked": "2026-08-18T07:40:56.225606",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"21ae-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812367-runonce.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812304-gestalt.json": {
       "hash": "1d526375d3bb0958d064ebd83cc314e882d15bb2f1898f5f90296c77dfecd2cf",
-      "last_checked": "2026-08-14T07:26:59.261703",
+      "last_checked": "2026-08-18T07:40:56.428197",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"2839-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812304-gestalt.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812330-localizedstandardstring.json": {
       "hash": "aa88820772482588ec958cd9f3e9c2f619f6a580319ff1133c9bd712cc57d45a",
-      "last_checked": "2026-08-14T07:26:59.339129",
+      "last_checked": "2026-08-18T07:40:56.533863",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1ccd-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812330-localizedstandardstring.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812341-localizedstandardstringwithforma.json": {
       "hash": "5f3d1bf1599fe0aa07e62045c25313ef70dea31adeafd1022e0b343f9c2e6e7d",
-      "last_checked": "2026-08-14T07:26:59.412684",
+      "last_checked": "2026-08-18T07:40:56.673067",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1f92-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812341-localizedstandardstringwithforma.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1811965-mountpoint.json": {
       "hash": "98d0a9006f5eb335a51c6d81b73abe1fb1b46fda4cac4b8a472e281642be38cf",
-      "last_checked": "2026-08-14T07:26:59.450148",
+      "last_checked": "2026-08-18T07:40:56.827309",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"12d1-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/target/api-1811965-mountpoint.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1811975-availablekilobytes.json": {
       "hash": "936877beaaa23d8daff6a3673a3babe4e76f218f6ba8176e295c2536ff132f5d",
-      "last_checked": "2026-08-14T07:26:59.548642",
+      "last_checked": "2026-08-18T07:40:56.940316",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1195-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/target/api-1811975-availablekilobytes.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1811984-systemversion.json": {
       "hash": "36c332935eb105f9f44e1bbcc2114873e75f79db56fcbd7994c0b6d7206cb8fe",
-      "last_checked": "2026-08-14T07:26:59.705548",
+      "last_checked": "2026-08-18T07:40:57.104824",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"118c-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/target/api-1811984-systemversion.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1812064-receiptforidentifier.json": {
       "hash": "ed2bb4ea1046b1f26912919ab25e1df0d70d62a66857df453351044e26573fcf",
-      "last_checked": "2026-08-14T07:26:59.817735",
+      "last_checked": "2026-08-18T07:40:57.250513",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"1241-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/target/api-1812064-receiptforidentifier.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812235-applications.json": {
       "hash": "fd175a3fd2e029c59b1284fb35913a02741d79305be1e3786adb8ff0bc357727",
-      "last_checked": "2026-08-14T07:26:58.359558",
+      "last_checked": "2026-08-18T07:40:54.959773",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"103d-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812235-applications.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812262-files.json": {
       "hash": "9fd9d0188825689a6f9ce8ed74049f164556c8b5ebaa8e30a0cf770a1c05e414",
-      "last_checked": "2026-08-14T07:26:58.383294",
+      "last_checked": "2026-08-18T07:40:55.064336",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"fa1-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812262-files.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812270-ioregistry.json": {
       "hash": "7efff3e1f2b96f7d8189490184c550a356a316379eb29fda13c257928395f5ac",
-      "last_checked": "2026-08-14T07:26:58.496947",
+      "last_checked": "2026-08-18T07:40:55.178877",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:55.310618",
+      "session_id": "2026-08-18T07:40:50.010420",
       "etag": "\"fef-657ecd66da77a-df\"",
       "file_path": "documentation/installer_js/system/api-1812270-ioregistry.md"
     },

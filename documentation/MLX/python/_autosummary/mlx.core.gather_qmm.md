@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ga
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.gather_qmm
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ga
 
 # mlx.core.gather_qmm
 
-**gather_qmm(*x: array*, *w: array*, */*, *scales: array*, *biases: array | None = None*, *lhs_indices: array | None = None*, *rhs_indices: array | None = None*, *transpose: bool = True*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *sorted_indices: bool = False*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**gather_qmm(*x: array*, *w: array*, */*, *scales: array*, *biases: array | None = None*, *lhs_indices: array | None = None*, *rhs_indices: array | None = None*, *transpose: bool = True*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *sorted_indices: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Perform quantized matrix multiplication with matrix-level gather.
 This operation is the quantized equivalent to [gather_mm()](mlx.core.gather_mm.html#mlx.core.gather_mm).
 Similar to [gather_mm()](mlx.core.gather_mm.html#mlx.core.gather_mm), the indices `lhs_indices` and

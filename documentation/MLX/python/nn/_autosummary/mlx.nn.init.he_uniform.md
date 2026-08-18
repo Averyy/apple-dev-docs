@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.init.he_uniform
@@ -31,11 +35,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 **he_uniform(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [Literal](https://docs.python.org/3/library/typing.html#typing.Literal)['fan_in', 'fan_out'], [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
 : A He uniform (Kaiming uniform) initializer.
-This initializer samples from a uniform distribution with a range
-computed from the number of input (`fan_in`) or output (`fan_out`)
+This initializer samples from a uniform distribution on the interval
+\([-\text{limit}, \text{limit}]\), where the bound \(\text{limit}\)
+is computed from the number of input (`fan_in`) or output (`fan_out`)
 units according to:
 
-\[\sigma = \gamma \sqrt{\frac{3.0}{\text{fan}}}\]
+\[\text{limit} = \gamma \sqrt{\frac{3.0}{\text{fan}}}\]
 where \(\text{fan}\) is either the number of input units when the
 `mode` is `"fan_in"` or output units when the `mode` is
 `"fan_out"`.

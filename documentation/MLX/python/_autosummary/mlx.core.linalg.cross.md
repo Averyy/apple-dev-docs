@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.linalg.cross
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.cross
 
-**cross(*a: array*, *b: array*, *axis: int = -1*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**cross(*a: array*, *b: array*, *axis: int = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Compute the cross product of two arrays along a specified axis.
 The cross product is defined for arrays with size 2 or 3 in the
 specified axis. If the size is 2 then the third value is assumed

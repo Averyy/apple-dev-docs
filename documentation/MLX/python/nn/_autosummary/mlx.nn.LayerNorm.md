@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.LayerNorm
@@ -41,12 +45,13 @@ parameters initialized at 1 and 0 respectively.
 Parameters:
 
 **dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The feature dimension of the input to normalize over
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A small additive constant for numerical stability
+**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A small additive constant for numerical stability.
+Default: `1e-5`.
 **affine** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If True learn an affine transform to apply after the
-normalization
+normalization. Default: `True`.
 **bias** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If True include a translation to the affine
 transformation. If set to False the transformation is not really affine
-just scaling.
+just scaling. Default: `True`.
 
 Methods
 

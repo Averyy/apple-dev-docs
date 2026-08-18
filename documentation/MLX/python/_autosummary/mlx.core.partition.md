@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pa
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.partition
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pa
 
 # mlx.core.partition
 
-**partition(*a: array*, */*, *kth: int*, *axis: None | int = -1*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**partition(*a: array*, */*, *kth: int*, *axis: None | int = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Returns a partitioned copy of the array such that the smaller `kth`
 elements are first.
 The ordering of the elements in partitions is undefined.

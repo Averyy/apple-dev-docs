@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sw
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.swapaxes
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sw
 
 # mlx.core.swapaxes
 
-**swapaxes(*a: array*, */*, *axis1: int*, *axis2: int*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**swapaxes(*a: array*, */*, *axis1: int*, *axis2: int*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Swap two axes of an array.
 
 Parameters:

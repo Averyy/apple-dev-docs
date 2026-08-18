@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.export_function
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 
 # mlx.core.export_function
 
-**export_function(*file_or_callback: str | Callable*, *fun: Callable*, **args*, *shapeless: bool = False*, ***kwargs*) → [None](https://docs.python.org/3/library/constants.html#None)**
+**export_function(*file_or_callback: str | Callable*, *fun: Callable*, **args*, *shapeless: bool = False*, *metadata: str | None = None*, ***kwargs*) → [None](https://docs.python.org/3/library/constants.html#None)**
 : Export an MLX function.
 Example input arrays must be provided to export a function. The example
 inputs can be variable `*args` and `**kwargs` or a tuple of arrays
@@ -49,8 +53,15 @@ the function to or a callback.
 ***args** ([array](mlx.core.array.html#mlx.core.array)) – Example array inputs to the function.
 **shapeless** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether or not the function allows
 inputs with variable shapes. Default: `False`.
+**metadata** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – A string to save alongside the
+function, for example a JSON encoded model configuration. Only
+supported when exporting to a file. Read it back with
+[import_function()](mlx.core.import_function.html#mlx.core.import_function). Default: `None`.
 ****kwargs** ([array](mlx.core.array.html#mlx.core.array)) – Additional example keyword array inputs to the
 function.
+
+Raises:
+[ValueError](https://docs.python.org/3/library/exceptions.html#ValueError) – If `metadata` is given when exporting with a callback.
 
 Example
 def fun(x, y):

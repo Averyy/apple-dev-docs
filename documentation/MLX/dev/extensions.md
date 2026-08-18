@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/dev/extensions.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Custom Extensions in MLX
@@ -349,6 +353,34 @@ Here are some helpful resources if you are new to Metal:
 - A walkthrough of the metal compute pipeline: [Metal Example](https://developer.apple.com/documentation/metal/performing_calculations_on_a_gpu?language=objc)
 - Documentation for metal shading language: [Metal Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
 - Using metal from C++: [Metal-cpp](https://developer.apple.com/metal/cpp/)
+
+Note
+
+As of Metal 4.1, the implicit address space of `this` in a member function
+is `__metal_generic` rather than `thread`. Member functions in Metal
+shading code should therefore carry an explicit address space qualifier,
+written after the parameter list:
+
+```
+struct Accumulator {
+    float vals[4];
+    thread float& at(short i) thread {
+        return vals[i];
+    }
+};
+```
+
+Without the trailing `thread`, returning a `thread`-qualified reference
+to a member no longer compiles:
+
+```
+error: reference to type 'thread float' could not bind to an lvalue
+of type '__metal_generic float'
+```
+
+Metal libraries built with `mlx_build_metallib` are compiled with
+`-Wmetal-addr-spaces`, which reports a missing qualifier as a warning on
+toolchains where it is not yet an error.
 
 Let’s keep the GPU kernel simple. We will launch exactly as many threads as
 there are elements in the output. Each thread will pick the element it needs

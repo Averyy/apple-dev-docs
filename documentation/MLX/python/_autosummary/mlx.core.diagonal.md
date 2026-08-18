@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.diagonal
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.diagonal
 
-**diagonal(*a: array*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**diagonal(*a: array*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Return specified diagonals.
 If `a` is 2-D, then a 1-D array containing the diagonal at the given
 `offset` is returned.

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.categorical
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.categorical
 
-**categorical(*logits: array*, *axis: int = -1*, *shape: Sequence[int] | None = None*, *num_samples: int | None = None*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**categorical(*logits: array*, *axis: int = -1*, *shape: Sequence[int] | None = None*, *num_samples: int | None = None*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Sample from a categorical distribution.
 The values are sampled from the categorical distribution specified by
 the unnormalized values in `logits`. Note, at most one of `shape`

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.tr
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.trace
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.tr
 
 # mlx.core.trace
 
-**trace(*a: array*, */*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *dtype: Dtype | None = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**trace(*a: array*, */*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *dtype: Dtype | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Return the sum along a specified diagonal in the given array.
 
 Parameters:

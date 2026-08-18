@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.R
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.RNN
@@ -51,7 +55,7 @@ Parameters:
 **hidden_size** ([int](https://docs.python.org/3/library/functions.html#int)) – Dimension of the hidden state, `H`.
 **bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether to use a bias. Default: `True`.
 **nonlinearity** (*callable**, **optional*) – Non-linearity to use. If `None`,
-then func:tanh is used. Default: `None`.
+then [tanh()](../_autosummary_functions/mlx.nn.tanh.html#mlx.nn.tanh) is used. Default: `None`.
 
 Methods
 

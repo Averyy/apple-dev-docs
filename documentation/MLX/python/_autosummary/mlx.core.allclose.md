@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.al
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.allclose
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.al
 
 # mlx.core.allclose
 
-**allclose(*a: array*, *b: array*, */*, *rtol: float = 1e-05*, *atol: float = 1e-08*, ***, *equal_nan: bool = False*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**allclose(*a: array*, *b: array*, */*, *rtol: float = 1e-05*, *atol: float = 1e-08*, ***, *equal_nan: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Approximate comparison of two arrays.
 Infinite values are considered equal if they have the same sign, NaN values are not equal unless `equal_nan` is `True`.
 The arrays are considered equal if:

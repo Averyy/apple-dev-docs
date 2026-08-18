@@ -1,4 +1,4 @@
 Completed scraping TVUIKit!
-Total pages scraped: 126
-Pages skipped (unchanged): 1
+Total pages scraped: 2
+Pages skipped (unchanged): 125
 Pages failed: 0

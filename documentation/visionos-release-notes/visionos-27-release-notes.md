@@ -1,4 +1,4 @@
-# visionOS 27 Beta 5 Release Notes
+# visionOS 27 Beta 6 Release Notes
 
 **Framework**: visionOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 27 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27 beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The visionOS 27 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27 beta 6. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
 
@@ -225,12 +225,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
 - Fixed: Shadow rendering memory is not counted against each application’s memory limit, which might prevent apps from consistently using up to 8 shadowed directional and spot lights depending on what other apps are running.  (177984485)
 - Fixed: Specular highlights in the PBR shading model do not fade out correctly at low specular values. A visible specular effect persists even when the specular parameter is set to 0, causing materials with zero specular to appear reflective instead of non-reflective.  (178289846)
-- Fixed: To use primitive restart with triangleStrip and lineStrips, set LowLevelMesh.Descriptor.allowsPrimitiveRestart = true.  (180878999)
-
-###### Known Issues
-
-- Subtitles might become clipped in Multiview when resizing tiles in Multiview in TV app.  (181267166) **Workaround:** Move back to Fullscreen Mode.
-- Shaders using the new RealityKit shader node name of `ND_realitykit_pbr_surfaceshader_2_0` will fail to load in Quick Look or with USDKit.  (181616779)
+- To use primitive restart with triangleStrip and lineStrips, set `LowLevelMesh.Descriptor.allowsPrimitiveRestart = true`.  (180878999)
+- Fixed: Subtitles might become clipped in Multiview when resizing tiles in Multiview in TV app.  (181267166)
+- Fixed: Shaders using the new RealityKit shader node name of `ND_realitykit_pbr_surfaceshader_2_0` will fail to load in Quick Look or with USDKit.  (181616779)
 
 ##### Screen Recording
 
@@ -344,7 +341,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight.  (180999342) (FB23487953)
 - Fixed: Displaying the offer code sheet or the manage subscription sheet consecutively might cause the app to hang when using StoreKit Testing in Xcode.  (181171733)
+- Fixed: `Storefront` API may return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: Transactions fail to finish.  (183165269)
 
 ##### Storekit Testing in Xcode
 
@@ -359,6 +358,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 - Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 - Fixed: Purchases fail on visionOS when initiated from offer code redemption or from the manage subscriptions sheet.  (180741834)
+
+###### Known Issues
+
+- Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836) **Workaround:** Wait 15 seconds after calling `SKTestSession.clearTransactions()` for the eligibility to reset.
+- Changing the storefront or locale using SKTestSession doesn’t propagate through Storefront.updates.  (184155259)
+- Failed purchases using SKTestSession may display error dialogs even when dialogsDisabled is set to true.  (184255116)
 
 ##### Swift Charts
 
@@ -502,12 +507,6 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions.  (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p.  (179040806)
-
-##### Visionos Photos
-
-###### Known Issues
-
-- In some cases, toggling between 2D and Spatial views of a large panorama image (>300Mb) could cause the Photos application to unexpectedly quit.  (183442382) **Workaround:** Convert the asset to JPEG or HEIC before importing it into the photos library.
 
 ##### Webkit
 

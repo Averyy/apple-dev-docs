@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-14T07:26:30.167087",
+    "last_updated": "2026-08-18T07:40:05.590091",
     "total_pages": 225,
-    "session_id": "2026-08-14T07:26:19.313321"
+    "session_id": "2026-08-18T07:39:51.106730"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MultipeerConnectivity.json": {
       "hash": "d5f31983d66f772ec9deec4c401cbd25769eff24abf0a6398ef1e1966061d365",
-      "last_checked": "2026-08-14T07:26:19.685584",
+      "last_checked": "2026-08-18T07:39:51.387436",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"b135-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/MultipeerConnectivity.md"
     },
     "https://developer.apple.com/documentation/MultipeerConnectivity": {
       "hash": "d5f31983d66f772ec9deec4c401cbd25769eff24abf0a6398ef1e1966061d365",
-      "last_checked": "2026-08-14T07:26:19.574244",
+      "last_checked": "2026-08-18T07:39:51.302224",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"b135-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/MultipeerConnectivity.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant.json": {
       "hash": "4e967a0a2deac0a02482f87ea235ec7ecab801c8c2fc6772affd33eeda5024d6",
-      "last_checked": "2026-08-14T07:26:20.056686",
+      "last_checked": "2026-08-18T07:39:51.626076",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"ae89-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller.json": {
       "hash": "f527b746fa118e893454f8c1f5cf3e35cd4fd515c0ee8e8405fa650b817a65af",
-      "last_checked": "2026-08-14T07:26:20.194592",
+      "last_checked": "2026-08-18T07:39:51.717211",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"10215-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser.json": {
       "hash": "3c666ea17d3e5edc23a8fcc137ff20238838252886d2deee08826a17de43f772",
-      "last_checked": "2026-08-14T07:26:20.391882",
+      "last_checked": "2026-08-18T07:39:51.834625",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"bbc2-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser.json": {
       "hash": "02c6fa98e829db725f59424f5edbe868c296b6d38c40649e9f9621cb7023ee01",
-      "last_checked": "2026-08-14T07:26:20.469814",
+      "last_checked": "2026-08-18T07:39:51.947211",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"af79-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcpeerid.json": {
       "hash": "4d33f339c1edd2e7e08a84c0f6aaeb6340eecb099704ca604bba0586fc4597e5",
-      "last_checked": "2026-08-14T07:26:20.552174",
+      "last_checked": "2026-08-18T07:39:52.088040",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"a9ea-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcpeerid.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession.json": {
       "hash": "bbcc86e1a6811ff50b1ae9f51900a380819f4f0ee87c1b1da02c9fb45bb67422",
-      "last_checked": "2026-08-14T07:26:20.760931",
+      "last_checked": "2026-08-18T07:39:52.219786",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"16afd-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistantdelegate.json": {
       "hash": "0a2f6facb1d4ffe54bfeb3c1e6f282b4a90c3488cb9cb321f29b36d9839a00d0",
-      "last_checked": "2026-08-14T07:26:20.847310",
+      "last_checked": "2026-08-18T07:39:52.337671",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5a42-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistantdelegate.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontrollerdelegate.json": {
       "hash": "1f0dc079d696d40c91ffd39cd456fb6ed47967077f613bc444f80a5e22dc689c",
-      "last_checked": "2026-08-14T07:26:20.920605",
+      "last_checked": "2026-08-18T07:39:52.479157",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"6518-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontrollerdelegate.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiserdelegate.json": {
       "hash": "9340427662cb23060d17a05b98aa6056aa6ddfa4b4cdbd94091c062735bcce3d",
-      "last_checked": "2026-08-14T07:26:21.013938",
+      "last_checked": "2026-08-18T07:39:52.629952",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"6099-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiserdelegate.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowserdelegate.json": {
       "hash": "8608fa165cf5c5090643f4da012af6577bff67e004bec52e3a8ff98246b15300",
-      "last_checked": "2026-08-14T07:26:21.161889",
+      "last_checked": "2026-08-18T07:39:52.764855",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"969c-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowserdelegate.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessiondelegate.json": {
       "hash": "4474eea4acffb0c7ed4adc34b8a05d94df9554d686d17214c9ab2fe1a11085ee",
-      "last_checked": "2026-08-14T07:26:21.239481",
+      "last_checked": "2026-08-18T07:39:52.874673",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"844c-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessiondelegate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror.json": {
       "hash": "9a34753cd5464b562338fce4708517f301a161c07ade589a665b10b0f91a0f6a",
-      "last_checked": "2026-08-14T07:26:21.449287",
+      "last_checked": "2026-08-18T07:39:53.043842",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"399b-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror.md"
     },
@@ -215,25 +215,25 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/multipeerconnectivity_enumerations.json": {
       "hash": "4038972b0f532a0a214fcdc2f7bb9015c47bf33534b0da3b6b2cb4ff7f038ec8",
-      "last_checked": "2026-08-14T07:26:21.654297",
+      "last_checked": "2026-08-18T07:39:53.138773",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
-      "etag": "\"2996-658584e9517f1\"",
+      "session_id": "2026-08-18T07:39:51.106730",
+      "etag": "\"2996-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/multipeerconnectivity-enumerations.md"
     },
     "https://developer.apple.com/documentation/multipeerconnectivity/multipeerconnectivity_enumerations": {
       "hash": "4038972b0f532a0a214fcdc2f7bb9015c47bf33534b0da3b6b2cb4ff7f038ec8",
-      "last_checked": "2026-08-14T07:26:21.654358",
+      "last_checked": "2026-08-18T07:39:53.138832",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
-      "etag": "\"2996-658584e9517f1\"",
+      "session_id": "2026-08-18T07:39:51.106730",
+      "etag": "\"2996-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/multipeerconnectivity-enumerations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/multipeerconnectivity_constants.json": {
       "hash": "1c3bce0180057c46a2da47a9a89bdb71794f7a22e09045528fcb9e8c082ea0d2",
-      "last_checked": "2026-08-14T07:26:21.736131",
+      "last_checked": "2026-08-18T07:39:53.200334",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"1e45-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/multipeerconnectivity-constants.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant/init(servicetype:discoveryinfo:session:).json": {
       "hash": "152ae7872bcc1ffc9cc45b2c6a9d1671ffb55e59ba9fbf47d65f5b897cdd9f6c",
-      "last_checked": "2026-08-14T07:26:21.819742",
+      "last_checked": "2026-08-18T07:39:53.340900",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"77c2-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant/init-servicetypediscoveryinfosession.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant/session.json": {
       "hash": "c6db15c44f1e2d55546c6c1afe5517d8134a755f189c615a65d64db4d5570fad",
-      "last_checked": "2026-08-14T07:26:21.894612",
+      "last_checked": "2026-08-18T07:39:53.491668",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"47ca-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant/session.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant/delegate.json": {
       "hash": "e353f30bbc32db462ed0063e8eb7a953c26da9e497b28ecc8c8761883dcf5a49",
-      "last_checked": "2026-08-14T07:26:21.967667",
+      "last_checked": "2026-08-18T07:39:53.641049",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4949-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant/delegate.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant/discoveryinfo.json": {
       "hash": "cb4662223c31e9ff2ae4febda643549c18e397f1ebd814022d3690c45c5d9cfb",
-      "last_checked": "2026-08-14T07:26:22.043509",
+      "last_checked": "2026-08-18T07:39:53.760692",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4632-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant/discoveryinfo.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant/servicetype.json": {
       "hash": "b3f4beab3b22284f4347a7965bdde364a8d4319dad9ef770873d48db51a778b2",
-      "last_checked": "2026-08-14T07:26:22.117990",
+      "last_checked": "2026-08-18T07:39:53.886011",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"43d9-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant/servicetype.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant/start().json": {
       "hash": "1e8fb5b27ad068c3636de0b3ef7064bb00b0400abcfaee30d318b8476ba3e7d1",
-      "last_checked": "2026-08-14T07:26:22.146064",
+      "last_checked": "2026-08-18T07:39:54.003020",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2826-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant/start.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistant/stop().json": {
       "hash": "8a9187032b61ba7ea6ace9f1623f6dbce357e1eb164bc35f002f5cc42323929d",
-      "last_checked": "2026-08-14T07:26:22.266908",
+      "last_checked": "2026-08-18T07:39:54.111573",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"281b-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistant/stop.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller/init(servicetype:session:).json": {
       "hash": "7d06d0427680b272f356453d4cc449f0ce3ecec68cb5ed69100e8c52f897c1c6",
-      "last_checked": "2026-08-14T07:26:22.364985",
+      "last_checked": "2026-08-18T07:39:54.233707",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"8d29-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller/init-servicetypesession.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller/init(browser:session:).json": {
       "hash": "afdd4a232fafecef98cc9af54c11ec119af157d5e1596cb18e8248ae6d0bd5e5",
-      "last_checked": "2026-08-14T07:26:22.444184",
+      "last_checked": "2026-08-18T07:39:54.341456",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"8e17-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller/init-browsersession.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller/delegate.json": {
       "hash": "e2e25942039fcebfc488c71f968e70bb5599ef45a43dbd09def6fd2bb6a691a9",
-      "last_checked": "2026-08-14T07:26:22.519590",
+      "last_checked": "2026-08-18T07:39:54.483104",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"7745-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller/delegate.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller/browser.json": {
       "hash": "dbe954bf8a191792a919d61865664316514f37755d9ffe4fd1494d92d03f5a61",
-      "last_checked": "2026-08-14T07:26:22.595320",
+      "last_checked": "2026-08-18T07:39:54.613764",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"76b4-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller/browser.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller/session.json": {
       "hash": "3936ac1c0dcd14a16a83e2f8e5d98ab58a6116857e9b8cf35d04785d81a0bf3e",
-      "last_checked": "2026-08-14T07:26:22.741807",
+      "last_checked": "2026-08-18T07:39:54.746912",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"729f-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller/session.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller/maximumnumberofpeers.json": {
       "hash": "4c46d96f6f9389fa5517a1483ae2be30e4f5cf823af8f537d11b975fe775b26e",
-      "last_checked": "2026-08-14T07:26:22.780744",
+      "last_checked": "2026-08-18T07:39:54.899666",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5b72-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller/maximumnumberofpeers.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontroller/minimumnumberofpeers.json": {
       "hash": "aaa59d6de5a55ef2f90a1cc8c17a5779da01961fbee01147d139706d5d0a1da4",
-      "last_checked": "2026-08-14T07:26:22.895761",
+      "last_checked": "2026-08-18T07:39:55.009763",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5b7b-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontroller/minimumnumberofpeers.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/init(peer:discoveryinfo:servicetype:).json": {
       "hash": "629c7579edee60b615cf7efab223c51e8533944ca4b6f16d0f640e969e02d73b",
-      "last_checked": "2026-08-14T07:26:22.983166",
+      "last_checked": "2026-08-18T07:39:55.150383",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"7796-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser/init-peerdiscoveryinfoservicetype.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/delegate.json": {
       "hash": "9c483934e7bc3e3363b41ab358650acfeb5135411853c011ce3f0c844d023e9c",
-      "last_checked": "2026-08-14T07:26:23.074367",
+      "last_checked": "2026-08-18T07:39:55.270363",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4a17-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser/delegate.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/discoveryinfo.json": {
       "hash": "96f9cb82f9446a4601d4fba6e71ede0321f7b08edac5fddfa4db579408133a1c",
-      "last_checked": "2026-08-14T07:26:23.159798",
+      "last_checked": "2026-08-18T07:39:55.399995",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4647-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser/discoveryinfo.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/mypeerid.json": {
       "hash": "6625b8b53265b2270d8f1df1db4ec05ef6e9e77620e1c0b81dfbc6cc6c190d89",
-      "last_checked": "2026-08-14T07:26:23.192513",
+      "last_checked": "2026-08-18T07:39:55.524124",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4789-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser/mypeerid.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/servicetype.json": {
       "hash": "080a868db336ba5946a7bf89cbcaed32d736128245d141dfc80aec88c0ad9f31",
-      "last_checked": "2026-08-14T07:26:23.307008",
+      "last_checked": "2026-08-18T07:39:55.638202",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"43f6-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser/servicetype.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/startadvertisingpeer().json": {
       "hash": "ec9ab6d236e2b16d7b766fbdb96850e8cf24087c556778d832cc93871fdd9ec3",
-      "last_checked": "2026-08-14T07:26:23.375538",
+      "last_checked": "2026-08-18T07:39:55.781710",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"29f1-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser/startadvertisingpeer.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/stopadvertisingpeer().json": {
       "hash": "5a937dd8ddb1ff037d1ab0a30ba973b8e4910ec9c1ab64b53d2e9983b520d08e",
-      "last_checked": "2026-08-14T07:26:23.445835",
+      "last_checked": "2026-08-18T07:39:55.896030",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"29e7-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiser/stopadvertisingpeer.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser/init(peer:servicetype:).json": {
       "hash": "af9932c2ae4af8df28e29f722e896adba37ca2eff40f7ad18270bdb41e099a4e",
-      "last_checked": "2026-08-14T07:26:23.530817",
+      "last_checked": "2026-08-18T07:39:56.020280",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"58f8-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/init-peerservicetype.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser/delegate.json": {
       "hash": "6f3b1e981a578fc76632766e4a5968655f01470b247a1ea9f60ddd7fd0fb5269",
-      "last_checked": "2026-08-14T07:26:23.615948",
+      "last_checked": "2026-08-18T07:39:56.144717",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"40d6-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/delegate.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser/mypeerid.json": {
       "hash": "acc5c2933e3e739c1002646285963145caceebd80bbe6807a989a1330291298f",
-      "last_checked": "2026-08-14T07:26:23.705489",
+      "last_checked": "2026-08-18T07:39:56.281255",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3efa-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/mypeerid.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser/servicetype.json": {
       "hash": "903c72adb5f4b8cc19fbe5674b2408b4f4e053ddde2e4e2b5ff00ba73957383b",
-      "last_checked": "2026-08-14T07:26:23.793494",
+      "last_checked": "2026-08-18T07:39:56.404327",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3b59-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/servicetype.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser/startbrowsingforpeers().json": {
       "hash": "9d4109c83643327812061fc855ea07be40c677d43012d3170924c580046c0e5b",
-      "last_checked": "2026-08-14T07:26:23.893295",
+      "last_checked": "2026-08-18T07:39:56.522011",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3b44-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/startbrowsingforpeers.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser/stopbrowsingforpeers().json": {
       "hash": "7bcf9df9a27d414a89ac3773bbf0260fe0ab4126f2ac78aa8cfed701b9d1415b",
-      "last_checked": "2026-08-14T07:26:24.014347",
+      "last_checked": "2026-08-18T07:39:56.666814",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"294a-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/stopbrowsingforpeers.md"
     },
@@ -679,25 +679,25 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowser/invitepeer(_:to:withcontext:timeout:).json": {
       "hash": "b4fde9d1a591052d7c299cd09819c2d3e958481c98ccd2044a78230b5e7787a7",
-      "last_checked": "2026-08-14T07:26:24.108294",
+      "last_checked": "2026-08-18T07:39:56.795317",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
-      "etag": "\"4fd0-658584e9517f1\"",
+      "session_id": "2026-08-18T07:39:51.106730",
+      "etag": "\"4fd0-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/invitepeer-towithcontexttimeout.md"
     },
     "https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyservicebrowser/invitepeer(_:to:withcontext:timeout:)": {
       "hash": "b4fde9d1a591052d7c299cd09819c2d3e958481c98ccd2044a78230b5e7787a7",
-      "last_checked": "2026-08-14T07:26:24.108364",
+      "last_checked": "2026-08-18T07:39:56.795394",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
-      "etag": "\"4fd0-658584e9517f1\"",
+      "session_id": "2026-08-18T07:39:51.106730",
+      "etag": "\"4fd0-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowser/invitepeer-towithcontexttimeout.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcpeerid/init(displayname:).json": {
       "hash": "367a24b6d4cfea6ad9f08b4e7cedba776d64ee96cb833deb571d5797d906159e",
-      "last_checked": "2026-08-14T07:26:24.200517",
+      "last_checked": "2026-08-18T07:39:56.856689",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3545-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcpeerid/init-displayname.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcpeerid/displayname.json": {
       "hash": "6ac18fffb2cb69bef0aa28fca3f5a98f46cc764d89b6669c147f1cfacdf2d436",
-      "last_checked": "2026-08-14T07:26:24.286947",
+      "last_checked": "2026-08-18T07:39:56.977931",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2d46-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcpeerid/displayname.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/init(peer:).json": {
       "hash": "722dd0c55464bebb7c1771a074c416106d042ee163dc69bd65244dba937475d9",
-      "last_checked": "2026-08-14T07:26:24.404595",
+      "last_checked": "2026-08-18T07:39:57.237056",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"6447-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/init-peer.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/init(peer:securityidentity:encryptionpreference:).json": {
       "hash": "7469ee99339c45ee7d8a525c1657ba5e627062d99d49c20d1faa636a509ea99c",
-      "last_checked": "2026-08-14T07:26:24.502615",
+      "last_checked": "2026-08-18T07:39:57.382130",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"733f-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/init-peersecurityidentityencryptionpreference.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/delegate.json": {
       "hash": "2c0803b5e9b622b6815394ea5d5b81636345dae24e9e2fb7b3e8fd5e28503117",
-      "last_checked": "2026-08-14T07:26:24.577952",
+      "last_checked": "2026-08-18T07:39:57.493212",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4b92-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/delegate.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/encryptionpreference.json": {
       "hash": "58221e5748ee45c637340887002f3e58d101c312f78c5af37cf7fee5154ee37b",
-      "last_checked": "2026-08-14T07:26:24.657230",
+      "last_checked": "2026-08-18T07:39:57.615927",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4cad-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/encryptionpreference.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/mypeerid.json": {
       "hash": "df0ffb5836e521d71efb31e5f0033f8361f5cb2dfb0a4b1c6d35c3db77c91272",
-      "last_checked": "2026-08-14T07:26:24.730967",
+      "last_checked": "2026-08-18T07:39:57.733679",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4a55-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/mypeerid.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/securityidentity.json": {
       "hash": "23941fc0a85335bb1160a9fa9193e8e76ef4343ed857db77d3b032cabf565b32",
-      "last_checked": "2026-08-14T07:26:24.809799",
+      "last_checked": "2026-08-18T07:39:57.882584",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"45d9-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/securityidentity.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/connectpeer(_:withnearbyconnectiondata:).json": {
       "hash": "dbdbc3269783c94b29d3050c281468da8dea9d11942288feb85fdb243293e98d",
-      "last_checked": "2026-08-14T07:26:24.888774",
+      "last_checked": "2026-08-18T07:39:58.012229",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4b70-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/connectpeer-withnearbyconnectiondata.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/cancelconnectpeer(_:).json": {
       "hash": "ec9ba9fd3fb35f66f45af96c7d69c5fd7b30fbb28a597c2a82f2ab1d77358d47",
-      "last_checked": "2026-08-14T07:26:24.965998",
+      "last_checked": "2026-08-18T07:39:58.125447",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"4671-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/cancelconnectpeer.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/connectedpeers.json": {
       "hash": "e6ad46c638e4854568ad864c0c6c55011b481653b445a9f433c24e6ae72eff9b",
-      "last_checked": "2026-08-14T07:26:25.043889",
+      "last_checked": "2026-08-18T07:39:58.244055",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"417a-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/connectedpeers.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/nearbyconnectiondata(forpeer:withcompletionhandler:).json": {
       "hash": "7a62e222275a7326746154998cf24c88ee8a9986cbde5ff95908e837726d6c05",
-      "last_checked": "2026-08-14T07:26:25.113624",
+      "last_checked": "2026-08-18T07:39:58.385714",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5d85-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/nearbyconnectiondata-forpeerwithcompletionhandler.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/send(_:topeers:with:).json": {
       "hash": "b0b3332c4fd675d4f744ada0c19dfbe7719aa7a858c646ad3629abc815379a24",
-      "last_checked": "2026-08-14T07:26:25.187285",
+      "last_checked": "2026-08-18T07:39:58.518531",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"6203-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/send-topeerswith.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/sendresource(at:withname:topeer:withcompletionhandler:).json": {
       "hash": "a10397dfdc64f638b61abec06f6e0124599b6793efc519dae16e3a38212a5d04",
-      "last_checked": "2026-08-14T07:26:25.265002",
+      "last_checked": "2026-08-18T07:39:58.651627",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"7a89-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/sendresource-atwithnametopeerwithcompletionhandler.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/startstream(withname:topeer:).json": {
       "hash": "35272554938e44187d7c3935dd5cf5d2a3e923ac1246d14227064ef6ef56fd5d",
-      "last_checked": "2026-08-14T07:26:25.338342",
+      "last_checked": "2026-08-18T07:39:58.775174",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5663-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/startstream-withnametopeer.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsession/disconnect().json": {
       "hash": "2181578c5793e1d73c8a6646668cfd165b2da4de4c3708057d0a3cfcacf3b968",
-      "last_checked": "2026-08-14T07:26:25.412705",
+      "last_checked": "2026-08-18T07:39:58.887980",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"200f-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsession/disconnect.md"
     },
@@ -951,25 +951,25 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionsenddatamode.json": {
       "hash": "8f41b092f3afe76c592ff400e3b9516a92695836b21877ee3b6f86ca349ff497",
-      "last_checked": "2026-08-14T07:26:25.496631",
+      "last_checked": "2026-08-18T07:39:59.022949",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
-      "etag": "\"5954-658584e9517f1\"",
+      "session_id": "2026-08-18T07:39:51.106730",
+      "etag": "\"5954-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionsenddatamode.md"
     },
     "https://developer.apple.com/documentation/multipeerconnectivity/mcsessionsenddatamode": {
       "hash": "8f41b092f3afe76c592ff400e3b9516a92695836b21877ee3b6f86ca349ff497",
-      "last_checked": "2026-08-14T07:26:25.496700",
+      "last_checked": "2026-08-18T07:39:59.023019",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
-      "etag": "\"5954-658584e9517f1\"",
+      "session_id": "2026-08-18T07:39:51.106730",
+      "etag": "\"5954-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionsenddatamode.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionstate.json": {
       "hash": "6a9dca3682a667d238d537359f0be1a59311f31d40f3b6ee5419bdfed468e599",
-      "last_checked": "2026-08-14T07:26:25.689686",
+      "last_checked": "2026-08-18T07:39:59.080384",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5cda-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionstate.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcencryptionpreference.json": {
       "hash": "2061b80eb900ab7353bda36d46c51776856c570c2fd3d9247327e91108dece5e",
-      "last_checked": "2026-08-14T07:26:25.761768",
+      "last_checked": "2026-08-18T07:39:59.227869",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"60d6-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcencryptionpreference.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code.json": {
       "hash": "f461dde0bd88c85a39d4e6325ac9d76f2085249389cb5db54a6b1e979a77d7c1",
-      "last_checked": "2026-08-14T07:26:25.839644",
+      "last_checked": "2026-08-18T07:39:59.368281",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"7e61-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/multipeer_connectivity_error_domain.json": {
       "hash": "354c9fcabf5c4fb34997e918adc3a650bf5e13335fbdb455f0c49d34929c58f7",
-      "last_checked": "2026-08-14T07:26:25.925831",
+      "last_checked": "2026-08-18T07:39:59.471793",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"307b-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/multipeer-connectivity-error-domain.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/minimum_and_maximum_supported_peers.json": {
       "hash": "df4a8a32572069599dc493efd2ac87401fc8771ba6af1487cb90ebd969ddc61a",
-      "last_checked": "2026-08-14T07:26:26.012890",
+      "last_checked": "2026-08-18T07:39:59.594560",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3b7d-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/minimum-and-maximum-supported-peers.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistantdelegate/advertiserassistantwillpresentinvitation(_:).json": {
       "hash": "9616decdaa93eab0350b408c5a72c316bfdc737e3ac0910ebb7b2f5ac5d58e9f",
-      "last_checked": "2026-08-14T07:26:26.098600",
+      "last_checked": "2026-08-18T07:39:59.723847",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3c20-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistantdelegate/advertiserassistantwillpresentinvitation.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcadvertiserassistantdelegate/advertiserassistantdiddismissinvitation(_:).json": {
       "hash": "d697cae26de469d1b8b70647636e28d0548c968ff6c6df88e49976bf15068049",
-      "last_checked": "2026-08-14T07:26:26.308406",
+      "last_checked": "2026-08-18T07:39:59.834639",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3bee-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcadvertiserassistantdelegate/advertiserassistantdiddismissinvitation.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontrollerdelegate/browserviewcontroller(_:shouldpresentnearbypeer:withdiscoveryinfo:).json": {
       "hash": "c5c906d53cbd9985e22556c114a468c864c379f0a1f8f34a8fc5dca29d6c4115",
-      "last_checked": "2026-08-14T07:26:26.394222",
+      "last_checked": "2026-08-18T07:39:59.961360",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"8ef8-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontrollerdelegate/browserviewcontroller-shouldpresentnearbypeerwithdiscoveryinfo.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontrollerdelegate/browserviewcontrollerdidfinish(_:).json": {
       "hash": "a9ccd6c1736a585ad52b4f405386315771edd2e307b0c2232bff34046701efad",
-      "last_checked": "2026-08-14T07:26:26.531568",
+      "last_checked": "2026-08-18T07:40:00.083277",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"66d1-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontrollerdelegate/browserviewcontrollerdidfinish.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcbrowserviewcontrollerdelegate/browserviewcontrollerwascancelled(_:).json": {
       "hash": "5525f841585eb02766531667c69232d3e6cbbe6aafe13e22bbc5633386865362",
-      "last_checked": "2026-08-14T07:26:26.605187",
+      "last_checked": "2026-08-18T07:40:00.209675",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"6768-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcbrowserviewcontrollerdelegate/browserviewcontrollerwascancelled.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiserdelegate/advertiser(_:didnotstartadvertisingpeer:).json": {
       "hash": "dc38afab6ca19bdd227efe8a48cddcaddf3ec35cee908bf83dd3d52802dc5fb8",
-      "last_checked": "2026-08-14T07:26:26.684711",
+      "last_checked": "2026-08-18T07:40:00.338392",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"37ef-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiserdelegate/advertiser-didnotstartadvertisingpeer.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyserviceadvertiserdelegate/advertiser(_:didreceiveinvitationfrompeer:withcontext:invitationhandler:).json": {
       "hash": "7cd9ecb7457814183b8e8edb8ae649a9dc10ae8cfc7089e1912f762d38d7fae1",
-      "last_checked": "2026-08-14T07:26:26.759364",
+      "last_checked": "2026-08-18T07:40:00.458684",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"60ee-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyserviceadvertiserdelegate/advertiser-didreceiveinvitationfrompeerwithcontextinvitationhandler.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowserdelegate/browser(_:didnotstartbrowsingforpeers:).json": {
       "hash": "cd6394591f5a6ac58e71bd0e414aebc2e800e4dd640e32d0ff801417a56db1e5",
-      "last_checked": "2026-08-14T07:26:26.832198",
+      "last_checked": "2026-08-18T07:40:00.593897",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"371b-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowserdelegate/browser-didnotstartbrowsingforpeers.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowserdelegate/browser(_:foundpeer:withdiscoveryinfo:).json": {
       "hash": "f56f9855a0c0b2bcb1610368a2fc8ea715ed493d8b0a075c1cd2ce681b2c2f46",
-      "last_checked": "2026-08-14T07:26:26.905007",
+      "last_checked": "2026-08-18T07:40:00.734677",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5d32-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowserdelegate/browser-foundpeerwithdiscoveryinfo.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcnearbyservicebrowserdelegate/browser(_:lostpeer:).json": {
       "hash": "3ff0647376ec8046f163a6d532facf9a998bc65a21ea8590ffc23b477c16c97c",
-      "last_checked": "2026-08-14T07:26:26.982450",
+      "last_checked": "2026-08-18T07:40:00.856341",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"45cc-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcnearbyservicebrowserdelegate/browser-lostpeer.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessiondelegate/session(_:didreceive:frompeer:).json": {
       "hash": "915f8086ab2679ba5374fb3c17d3b9d354aaf3d8f1298df6110efe0ff5381405",
-      "last_checked": "2026-08-14T07:26:27.066162",
+      "last_checked": "2026-08-18T07:40:00.982126",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"7088-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessiondelegate/session-didreceivefrompeer.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessiondelegate/session(_:didstartreceivingresourcewithname:frompeer:with:).json": {
       "hash": "23382cc7a238371fe5da0e8ea1bb54bac01d68aac91af75163c4ad5be5e55e5b",
-      "last_checked": "2026-08-14T07:26:27.106960",
+      "last_checked": "2026-08-18T07:40:01.113875",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"7b18-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessiondelegate/session-didstartreceivingresourcewithnamefrompeerwith.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessiondelegate/session(_:didfinishreceivingresourcewithname:frompeer:at:witherror:).json": {
       "hash": "c70fa32eb39c4220415c66d1d8821985adc615f80994ea94d8c1b6953d3946a2",
-      "last_checked": "2026-08-14T07:26:27.202390",
+      "last_checked": "2026-08-18T07:40:01.258271",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"8110-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessiondelegate/session-didfinishreceivingresourcewithnamefrompeeratwitherror.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessiondelegate/session(_:didreceive:withname:frompeer:).json": {
       "hash": "fa05b8ef750ff76c66e27f7b4b049ffbe9554f2729a00623f974bc7dbd4d2ff5",
-      "last_checked": "2026-08-14T07:26:27.275442",
+      "last_checked": "2026-08-18T07:40:01.391339",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"7a5f-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessiondelegate/session-didreceivewithnamefrompeer.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessiondelegate/session(_:peer:didchange:).json": {
       "hash": "ac5d996396a47d7ef24635820c6c45b513e73e1b63769c4cc25e87d33b58e38d",
-      "last_checked": "2026-08-14T07:26:27.358312",
+      "last_checked": "2026-08-18T07:40:01.521304",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"803a-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessiondelegate/session-peerdidchange.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessiondelegate/session(_:didreceivecertificate:frompeer:certificatehandler:).json": {
       "hash": "591cc001e865e1059d91f95c1c8e51d9f2ed991ea999a2a91bdac2649f682717",
-      "last_checked": "2026-08-14T07:26:27.443365",
+      "last_checked": "2026-08-18T07:40:01.638931",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"9674-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessiondelegate/session-didreceivecertificatefrompeercertificatehandler.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/cancelled.json": {
       "hash": "6e33e030f69e54d2cce7902ab6cf83f825271e823e9b140baa32ff3ab1241271",
-      "last_checked": "2026-08-14T07:26:27.523529",
+      "last_checked": "2026-08-18T07:40:01.778003",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"20e8-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/cancelled.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/errordomain.json": {
       "hash": "337da13f18544524072b41b8fe3ef4c3da86424e302d20b5aa81cf6c7a13ce33",
-      "last_checked": "2026-08-14T07:26:27.550188",
+      "last_checked": "2026-08-18T07:40:01.899614",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"1540-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/errordomain.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/invalidparameter.json": {
       "hash": "cae4605996c076023f79082fa19ad862ba4030684c61a9901a3d2de8ef2dad8e",
-      "last_checked": "2026-08-14T07:26:27.647463",
+      "last_checked": "2026-08-18T07:40:02.039127",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2136-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/invalidparameter.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/notconnected.json": {
       "hash": "00c6858c8285f70527d5f8998fbfa0da0836bff2399f4da129cb5152c0985429",
-      "last_checked": "2026-08-14T07:26:27.725929",
+      "last_checked": "2026-08-18T07:40:02.176979",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"210a-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/notconnected.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/timedout.json": {
       "hash": "85701583d278181430250948aebe31ceb384a41d47bbde5185e58e6471835485",
-      "last_checked": "2026-08-14T07:26:27.802120",
+      "last_checked": "2026-08-18T07:40:02.309694",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"20dd-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/timedout.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/unavailable.json": {
       "hash": "7647f4f90f6bf0c8681b2deb19d0f4f8f7615479736c2f3946bf9be25d8ccfcb",
-      "last_checked": "2026-08-14T07:26:27.837730",
+      "last_checked": "2026-08-18T07:40:02.435448",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"20ff-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/unavailable.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/unknown.json": {
       "hash": "5440ba3c396bc1566ad572385b26f1500f35201f68db04f17dfabe9a969fdfbd",
-      "last_checked": "2026-08-14T07:26:27.907684",
+      "last_checked": "2026-08-18T07:40:02.579666",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"20d2-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/unknown.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/unsupported.json": {
       "hash": "f53e6149b18fa24b078749445c78e8e291b51625a17af8a0437621a953f8b288",
-      "last_checked": "2026-08-14T07:26:28.018623",
+      "last_checked": "2026-08-18T07:40:02.697427",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"20ff-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/unsupported.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerrordomain.json": {
       "hash": "ace8b1706ed1e54954601c155d05ff86037b4d5e5639a0e8185d57b129da71e0",
-      "last_checked": "2026-08-14T07:26:28.278764",
+      "last_checked": "2026-08-18T07:40:02.834250",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2cf0-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerrordomain.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/kmcsessionmaximumnumberofpeers.json": {
       "hash": "d8c4a56b7e397ef946538fb1badc815d84e9d1dfa2cbacb80a1bf99158f2afd1",
-      "last_checked": "2026-08-14T07:26:28.306240",
+      "last_checked": "2026-08-18T07:40:02.950514",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2bd2-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/kmcsessionmaximumnumberofpeers.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/kmcsessionminimumnumberofpeers.json": {
       "hash": "0b7afbdaae450613f291a65b2020145c97d8d78ef1cbc66e6220944e5d266def",
-      "last_checked": "2026-08-14T07:26:28.435031",
+      "last_checked": "2026-08-18T07:40:03.081557",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2bd2-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/kmcsessionminimumnumberofpeers.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionsenddatamode/reliable.json": {
       "hash": "49c33b9d811d62bd567eb15b20a023943f46527c1334f97718d1609e86d6227b",
-      "last_checked": "2026-08-14T07:26:28.514970",
+      "last_checked": "2026-08-18T07:40:03.212885",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"27d7-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionsenddatamode/reliable.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionsenddatamode/unreliable.json": {
       "hash": "912b8c57271d62a11689ed288de66827d6db2ee5a67cb3017bc05a827023b221",
-      "last_checked": "2026-08-14T07:26:28.596301",
+      "last_checked": "2026-08-18T07:40:03.337646",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2846-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionsenddatamode/unreliable.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionsenddatamode/init(rawvalue:).json": {
       "hash": "eac792092a04135c13e1a5d1ffe37866506563f331d2a1cb53d4d6b9bc79e5c7",
-      "last_checked": "2026-08-14T07:26:28.638302",
+      "last_checked": "2026-08-18T07:40:03.476915",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"1814-658584e987f7d-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionsenddatamode/init-rawvalue.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionstate/notconnected.json": {
       "hash": "d2ff46483377455869fb31d3566d354b4d5831e9a6802ad860036f0297adff29",
-      "last_checked": "2026-08-14T07:26:28.853658",
+      "last_checked": "2026-08-18T07:40:03.591520",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2a2e-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionstate/notconnected.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionstate/connecting.json": {
       "hash": "18e782821c6c4bc85d0be11ee9f5fd887fa381da2afd95b65b11349825d3be05",
-      "last_checked": "2026-08-14T07:26:28.888765",
+      "last_checked": "2026-08-18T07:40:03.712678",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2a22-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionstate/connecting.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionstate/connected.json": {
       "hash": "ffaa2b228db2c82573be00402c57b3d1c1d0e4c354309e44fd5db14d29bd5bb5",
-      "last_checked": "2026-08-14T07:26:28.950744",
+      "last_checked": "2026-08-18T07:40:03.831009",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2a07-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionstate/connected.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcsessionstate/init(rawvalue:).json": {
       "hash": "62eef947c1e5c8fea2ce0c0f42e35bd2c8b11705df91a2a516e7b7f61d746e56",
-      "last_checked": "2026-08-14T07:26:29.031843",
+      "last_checked": "2026-08-18T07:40:03.961689",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"1794-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcsessionstate/init-rawvalue.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcencryptionpreference/optional.json": {
       "hash": "b0587bcc129a492a2c9d83171f15e369f54fbfc8a9484aa9203c73c605c68f88",
-      "last_checked": "2026-08-14T07:26:29.089374",
+      "last_checked": "2026-08-18T07:40:04.113644",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"3176-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcencryptionpreference/optional.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcencryptionpreference/required.json": {
       "hash": "4d9dc8a371591aa1e61ccea96b053e04bde27d2b45a0f79d068828d12a3056a7",
-      "last_checked": "2026-08-14T07:26:29.245479",
+      "last_checked": "2026-08-18T07:40:04.229703",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2e02-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcencryptionpreference/required.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcencryptionpreference/none.json": {
       "hash": "a92863b624b956cc3c1f7fb7a80411585989b8899f4e340c7d1eea48f06176cd",
-      "last_checked": "2026-08-14T07:26:29.320577",
+      "last_checked": "2026-08-18T07:40:04.373372",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"2de2-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcencryptionpreference/none.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcencryptionpreference/init(rawvalue:).json": {
       "hash": "54b65ae1c8894d9f24634d5fde4e5bd8f7776fd1c30289d8cb73653dd95298c2",
-      "last_checked": "2026-08-14T07:26:29.403937",
+      "last_checked": "2026-08-18T07:40:04.487029",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"1846-658584e9517f1-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcencryptionpreference/init-rawvalue.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/unknown.json": {
       "hash": "96a71d6f6d53b40ec8cf42279b8e7cda711a16d1624a03f02d5f2cd76caddc89",
-      "last_checked": "2026-08-14T07:26:29.511194",
+      "last_checked": "2026-08-18T07:40:04.612866",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5128-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/unknown.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/notconnected.json": {
       "hash": "ab5754dddc2b4338d014b7e0a5393a41a7c7c7ca4c4039cf3db66b8fdb6a386c",
-      "last_checked": "2026-08-14T07:26:29.610530",
+      "last_checked": "2026-08-18T07:40:04.723194",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"517b-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/notconnected.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/invalidparameter.json": {
       "hash": "357fc19416a6dc8c689fee8ebe5d5a507c8ad08b19036c124f57778bcb7d2f99",
-      "last_checked": "2026-08-14T07:26:29.753544",
+      "last_checked": "2026-08-18T07:40:04.847981",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"518f-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/invalidparameter.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/unsupported.json": {
       "hash": "dfe1adc31b7d5883ebb15ebd1347e2f08a7610297206cd1bc59e596e75c2d46b",
-      "last_checked": "2026-08-14T07:26:29.786002",
+      "last_checked": "2026-08-18T07:40:04.983865",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5297-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/unsupported.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/timedout.json": {
       "hash": "edbed28b7e4964948af6fb43c1dbd2f8c120cff3e676e40da872ad5f773fb422",
-      "last_checked": "2026-08-14T07:26:29.924232",
+      "last_checked": "2026-08-18T07:40:05.097752",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5138-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/timedout.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/cancelled.json": {
       "hash": "09b00328234e13eccea90418dce7501f47d6e77722300e4d27459a6bbf771eac",
-      "last_checked": "2026-08-14T07:26:29.999780",
+      "last_checked": "2026-08-18T07:40:05.239950",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5148-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/cancelled.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/unavailable.json": {
       "hash": "cbcdcf5275b79762d7155c0a78794ce65f397d8df11a6970f920ff07e19d82b2",
-      "last_checked": "2026-08-14T07:26:30.082646",
+      "last_checked": "2026-08-18T07:40:05.415859",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"5162-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/unavailable.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcerror/code/init(rawvalue:).json": {
       "hash": "443a796fc22e8ff0b38ce3a39af8416737f62d32ba684427b889e4dfaf434d64",
-      "last_checked": "2026-08-14T07:26:30.163107",
+      "last_checked": "2026-08-18T07:40:05.548966",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"20a9-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcerror/code/init-rawvalue.md"
     },
@@ -1789,9 +1789,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/mcpeerid/init(coder:).json": {
       "hash": "029fe04b46df2bfa224045338c52e7b8d3d0888ccfb30b501fd1630c74733710",
-      "last_checked": "2026-08-14T07:26:24.330272",
+      "last_checked": "2026-08-18T07:39:57.106600",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.313321",
+      "session_id": "2026-08-18T07:39:51.106730",
       "etag": "\"18bd-658584e97756c-df\"",
       "file_path": "documentation/MultipeerConnectivity/mcpeerid/init-coder.md"
     },

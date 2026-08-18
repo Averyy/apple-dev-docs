@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.init.glorot_uniform
@@ -31,11 +35,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 **glorot_uniform(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
 : A Glorot uniform initializer.
-This initializer samples from a uniform distribution with a range
-computed from the number of input (`fan_in`) and output (`fan_out`)
+This initializer samples from a uniform distribution on the interval
+\([-\text{limit}, \text{limit}]\), where the bound \(\text{limit}\)
+is computed from the number of input (`fan_in`) and output (`fan_out`)
 units according to:
 
-\[\sigma = \gamma \sqrt{\frac{6.0}{\text{fan\_in} + \text{fan\_out}}}\]
+\[\text{limit} = \gamma \sqrt{\frac{6.0}{\text{fan\_in} + \text{fan\_out}}}\]
 For more details see the original reference: [Understanding the difficulty
 of training deep feedforward neural networks](https://proceedings.mlr.press/v9/glorot10a.md)
 

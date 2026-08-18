@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.truncated_normal
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.truncated_normal
 
-**truncated_normal(*lower: scalar | array*, *upper: scalar | array*, *shape: Sequence[int] | None = None*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**truncated_normal(*lower: scalar | array*, *upper: scalar | array*, *shape: Sequence[int] | None = None*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Generate values from a truncated normal distribution.
 The values are sampled from the truncated normal distribution
 on the domain `(lower, upper)`. The bounds `lower` and `upper`

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.as
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.as_strided
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.as
 
 # mlx.core.as_strided
 
-**as_strided(*a: array*, */*, *shape: Sequence[int] | None = None*, *strides: Sequence[int] | None = None*, *offset: int = 0*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**as_strided(*a: array*, */*, *shape: Sequence[int] | None = None*, *strides: Sequence[int] | None = None*, *offset: int = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Create a view into the array with the given shape and strides.
 The resulting array will always be as if the provided array was row
 contiguous regardless of the provided arrays storage order and current

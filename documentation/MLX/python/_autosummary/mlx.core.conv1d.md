@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.conv1d
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.conv1d
 
-**conv1d(*input: array*, *weight: array*, */*, *stride: int = 1*, *padding: int = 0*, *dilation: int = 1*, *groups: int = 1*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**conv1d(*input: array*, *weight: array*, */*, *stride: int = 1*, *padding: int = 0*, *dilation: int = 1*, *groups: int = 1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : 1D convolution over an input with several channels
 
 Parameters:

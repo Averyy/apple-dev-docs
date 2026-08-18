@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.normal
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.normal
 
-**normal(*shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *loc: scalar | array | None = None*, *scale: scalar | array | None = None*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**normal(*shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *loc: scalar | array | None = None*, *scale: scalar | array | None = None*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Generate normally distributed random numbers.
 If `loc` and `scale` are not provided the “standard” normal
 distribution is used. That means $x sim mathcal{N}(0, 1)$ for

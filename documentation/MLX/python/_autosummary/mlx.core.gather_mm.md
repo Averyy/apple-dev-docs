@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ga
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.gather_mm
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ga
 
 # mlx.core.gather_mm
 
-**gather_mm(*a: array*, *b: array*, */*, *lhs_indices: array*, *rhs_indices: array*, ***, *sorted_indices: bool = False*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**gather_mm(*a: array*, *b: array*, */*, *lhs_indices: array*, *rhs_indices: array*, ***, *sorted_indices: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Matrix multiplication with matrix-level gather.
 Performs a gather of the operands with the given indices followed by a
 (possibly batched) matrix multiplication of two arrays.  This operation

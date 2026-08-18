@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.array_equal
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array_equal
 
-**array_equal(*a: scalar | array*, *b: scalar | array*, *equal_nan: bool = False*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array_equal(*a: scalar | array*, *b: scalar | array*, *equal_nan: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Array equality check.
 Compare two arrays for equality. Returns `True` if and only if the arrays
 have the same shape and their values are equal. The arrays need not have

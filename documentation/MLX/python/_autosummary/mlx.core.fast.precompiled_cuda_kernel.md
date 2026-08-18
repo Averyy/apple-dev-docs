@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fast.precompiled_cuda_kernel
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.precompiled_cuda_kernel
 
-**precompiled_cuda_kernel(**, name: str, compiled_source: bytes, inputs: collections.abc.Sequence[bool | int | float | mlx.core.array | ndarray[writable=False] | complex | mlx.core.ArrayLike], output_shapes: collections.abc.Sequence[tuple[int, ...]], output_dtypes: collections.abc.Sequence[mlx.core.Dtype], scalars: collections.abc.Sequence[object], grid: tuple[int, int, int], threadgroup: tuple[int, int, int], shared_memory: int = 0, init_value: float | None = None, ensure_row_contiguous: bool = False, stream: mlx.core.Stream | mlx.core.ThreadLocalStream | mlx.core.Device | None = None*) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)]**
+**precompiled_cuda_kernel(**, name: str, compiled_source: bytes, inputs: collections.abc.Sequence[bool | int | float | mlx.core.array | ndarray[writable=False] | complex | mlx.core.ArrayLike], output_shapes: collections.abc.Sequence[tuple[int, ...]], output_dtypes: collections.abc.Sequence[mlx.core.Dtype], scalars: collections.abc.Sequence[object], grid: tuple[int, int, int], threadgroup: tuple[int, int, int], shared_memory: int = 0, init_value: float | None = None, ensure_row_contiguous: bool = False, stream: mlx.core.Stream | mlx.core.ThreadLocalStream | mlx.core.Device | mlx.core.DeviceType | None = None*) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)]**
 : Run a precompiled CUDA kernel defined from PTX or cubin.
 This op is still experimental and various parts of the API may change.
 

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.bernoulli
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.bernoulli
 
-**bernoulli(*p: scalar | array = 0.5*, *shape: Sequence[int] | None = None*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**bernoulli(*p: scalar | array = 0.5*, *shape: Sequence[int] | None = None*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Generate Bernoulli random values.
 The values are sampled from the bernoulli distribution with parameter
 `p`. The parameter `p` can be a [float](https://docs.python.org/3/library/functions.html#float) or [array](https://docs.python.org/3/library/array.html#module-array) and

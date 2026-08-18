@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.cl
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.clip
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.cl
 
 # mlx.core.clip
 
-**clip(*a: array*, */*, *a_min: scalar | array | None*, *a_max: scalar | array | None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**clip(*a: array*, */*, *a_min: scalar | array | None*, *a_max: scalar | array | None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Clip the values of the array between the given minimum and maximum.
 If either `a_min` or `a_max` are `None`, then corresponding edge
 is ignored. At least one of `a_min` and `a_max` cannot be `None`.

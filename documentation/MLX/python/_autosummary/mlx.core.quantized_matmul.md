@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.qu
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.quantized_matmul
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.qu
 
 # mlx.core.quantized_matmul
 
-**quantized_matmul(*x: array*, *w: array*, */*, *scales: array*, *biases: array | None = None*, *transpose: bool = True*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**quantized_matmul(*x: array*, *w: array*, */*, *scales: array*, *biases: array | None = None*, *transpose: bool = True*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Perform the matrix multiplication with the quantized matrix `w`. The
 quantization uses one floating point scale and bias per `group_size` of
 elements. Each element in `w` takes `bits` bits and is packed in an

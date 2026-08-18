@@ -1,4 +1,4 @@
-# iOS & iPadOS 27 Beta 5 Release Notes
+# iOS & iPadOS 27 Beta 6 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 6. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Airplay
 
@@ -38,11 +38,11 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Default values from schemas might not be applied for parameters that are of “Set” type.  (175534195)
 - Fixed: Entities you register using `RelevantEntities` for the workout audio context might not appear as suggestions in Fitness media picker.  (177996973)
 - Fixed: Requests that should result in an app’s `reminders.updateReminder`-conforming intent to be called might fail with “ cannot be used for this action right now.”  (181212609) (FB23526663)
+- Fixed: AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
 - Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
 
 ###### Known Issues
 
-- AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
 - Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release.  (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
@@ -258,9 +258,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Gaussian Splats
 
-###### Known Issues
+###### Resolved Issues
 
-- When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering.  (183538823)
+- Fixed: When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering.  (183538823)
 
 ##### Healthkit
 
@@ -300,11 +300,8 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: When VoiceOver is enabled and the gallery contains only one image, the prompt input UI might not appear.  (175357842)
 - Fixed: When Image Wand encounters an error — such as an unsupported flow or unsafe output — you might see the misleading message “Connect to Wi-Fi to create images” even when your device is already connected to Wi-Fi.  (177710762)
+- Fixed: If required models are downloading, you might see an error message instead of download progress information.  (177833994)
 - Fixed: In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from.  (178256174)
-
-###### Known Issues
-
-- If required models are downloading, you might see an error message instead of download progress information.  (177833994) **Workaround:** This issue occurs only on first install. Wait for the models to finish downloading, then try again.
 
 ##### Iphone Mirroring
 
@@ -418,9 +415,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Nowplaying
 
-###### Known Issues
+###### Resolved Issues
 
-- Newly created RemoteMediaSession won’t be visible in control center if created while the app is open in the foreground.  (183641494) **Workaround:** Background the app and open it again.
+- Fixed: Newly created RemoteMediaSession won’t be visible in control center if created while the app is open in the foreground.  (183641494)
 
 ##### On Demand Resources
 
@@ -511,9 +508,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Security
 
-###### Known Issues
+###### Resolved Issues
 
-- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
+- Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836)
 
 ##### Sensorkit
 
@@ -534,12 +531,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Focus automations migrated from iOS 26 to iOS 27 do not work.  (179514725)
 - Fixed: Writing Tools actions are unavailable in Shortcuts.  (179846468)
 - Fixed: The Use Model action might fail to run when using the On-Device option for some output types.  (181071784)
+- Fixed: Shortcuts containing the Send Message action might fail to import or share.  (182745894)
 
 ###### Known Issues
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail.  (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
 - When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected.  (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
-- Shortcuts containing the Send Message action might fail to import or share.  (182745894)
 
 ##### Siri
 
@@ -630,7 +627,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight.  (180999342) (FB23487953)
+- Fixed: `Storefront` API may return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: Transactions fail to finish.  (183165269)
 
 ##### Storekit Testing in Xcode
 
@@ -643,6 +642,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 - Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
+- Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836)
+
+###### Known Issues
+
+- Changing the storefront or locale using SKTestSession doesn’t propagate through Storefront.updates.  (184155259)
+- Failed purchases using SKTestSession may display error dialogs even when dialogsDisabled is set to true.  (184255116)
 
 ##### Suggestions in Messages
 
@@ -807,21 +812,18 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: In apps built with the iOS 27.0 SDK, the deprecated status bar accessors on `UIApplication`  — including `statusBarFrame`, `statusBarOrientation`, `statusBarStyle`, and `isStatusBarHidden` — might return NaN or null values.  (162044221)
+- Fixed: On iPad, if your iPad app is built with the iOS 27 SDK and its `UISupportedInterfaceOrientations` doesn’t include all four interface orientations, the app is treated as non-continuously resizable. Beginning with iOS 27, supported interface orientations should no longer be a condition for continuous resizability.  (166422120)
 - Fixed: The `UISceneClosureConfirmation` API does not present a confirmation dialog.  (169108042)
 - Fixed: The `UIMenuLeaf` protocol is missing the subtitle property introduced in iOS 16.0.  (173271862)
 - Fixed: The background might not appear on a bottom toolbar when you use `UIBarButtonItem.hidesSharedBackground` to hide a toolbar item’s glass background.  (174773785)
+- Fixed: In iPhone Mirroring, if your app is built with the iOS 27 SDK its scene will support all interface orientations regardless of the orientations declared in `UISupportedInterfaceOrientations` or returned by `UIViewController.supportedInterfaceOrientations`. Supported interface orientations should be honored until the user begins resizing the window.  (178555304)
+- Fixed: In iPhone Mirroring, if your app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, its scene receives continuous resize updates when the user resizes the window. Each resize should instead be delivered as a discrete change to a new `UIScreen` with an updated bounds.  (178558224)
+- Fixed: In iPhone Mirroring if your app is built with the iOS 27 SDK, its scene is initially connected to a `UIScreen` that isn’t `UIScreen.main`. The scene should start on the main screen.  (178558897)
 - Fixed: On iPad, if your iPad app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, the bounds of `UIScreen.main` changes when the user resizes the window. The bounds of the main screen should remain fixed once the screen connects.  (178559386)
-
-###### Known Issues
-
-- On iPad, if your iPad app is built with the iOS 27 SDK and its `UISupportedInterfaceOrientations` doesn’t include all four interface orientations, the app is treated as non-continuously resizable. Beginning with iOS 27, supported interface orientations should no longer be a condition for continuous resizability.  (166422120) **Workaround:** To make your app continuously resizable on iPad, declare support for all four interface orientations in your `Info.plist` with `UISupportedInterfaceOrientations`.
-- In iPhone Mirroring, if your app is built with the iOS 27 SDK its scene will support all interface orientations regardless of the orientations declared in `UISupportedInterfaceOrientations` or returned by `UIViewController.supportedInterfaceOrientations`. Supported interface orientations should be honored until the user begins resizing the window.  (178555304)
-- In iPhone Mirroring, if your app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, its scene receives continuous resize updates when the user resizes the window. Each resize should instead be delivered as a discrete change to a new `UIScreen` with an updated bounds.  (178558224)
-- In iPhone Mirroring if your app is built with the iOS 27 SDK, its scene is initially connected to a `UIScreen` that isn’t `UIScreen.main`. The scene should start on the main screen.  (178558897)
-- On iPad, if your iPad app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, its scene receives continuous resize updates when the user resizes the window. Each resize should instead be delivered as a discrete change to a new `UIScreen` with an updated bounds.  (178560235)
-- On iPad, if your iPhone-only app is built with the iOS 27 SDK its scene continues to honor supported interface orientations after the user resizes the window. After the first resize, the scene should ignore supported interface orientations.  (178561952)
-- On iPad, if your iPhone-only app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, its scene receives continuous resize updates when the user resizes the window. Each resize should instead be delivered as a discrete change to a new `UIScreen` with an updated bounds.  (178562971)
-- On iPad, if your iPhone-only app is built with the iOS 27 SDK and supports only portrait or only landscape interface orientations, its layout breaks when the iPad is in an orientation the app doesn’t support.  (178573319)
+- Fixed: On iPad, if your iPad app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, its scene receives continuous resize updates when the user resizes the window. Each resize should instead be delivered as a discrete change to a new `UIScreen` with an updated bounds.  (178560235)
+- Fixed: On iPad, if your iPhone-only app is built with the iOS 27 SDK its scene continues to honor supported interface orientations after the user resizes the window. After the first resize, the scene should ignore supported interface orientations.  (178561952)
+- Fixed: On iPad, if your iPhone-only app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, its scene receives continuous resize updates when the user resizes the window. Each resize should instead be delivered as a discrete change to a new `UIScreen` with an updated bounds.  (178562971)
+- Fixed: On iPad, if your iPhone-only app is built with the iOS 27 SDK and supports only portrait or only landscape interface orientations, its layout breaks when the iPad is in an orientation the app doesn’t support.  (178573319)
 
 ###### Deprecations
 
@@ -844,15 +846,21 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Voice Control
 
-###### Known Issues
+###### Resolved Issues
 
-- Voice Control might not respond when using Flexible Item Names to describe items on the screen.  (184088006) **Workaround:** Target items on the screen using numbers (“Show numbers”) or names (“Show names”)
+- Fixed: Voice Control might not respond when using Flexible Item Names to describe items on the screen.  (184088006)
 
 ##### Watch Connectivity
 
 ###### Resolved Issues
 
 - Fixed: The `WCSession.transferCurrentComplicationUserInfo` method does not work with complications built using WidgetKit on watchOS.  (113202790) (FB12819178)
+
+##### Weather Highlights
+
+###### Deprecations
+
+- Weather Highlights is currently only available in US English.  (164408676)
 
 ##### Widgetkit
 

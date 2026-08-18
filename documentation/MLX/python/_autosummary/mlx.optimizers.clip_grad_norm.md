@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.optimiz
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.optimizers.clip_grad_norm

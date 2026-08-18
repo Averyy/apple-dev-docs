@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.isnan
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 
 # mlx.core.isnan
 
-**isnan(*a: array*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**isnan(*a: array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Return a boolean array indicating which elements are NaN.
 
 Parameters:

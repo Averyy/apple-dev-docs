@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.utils.t
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.utils.tree_unflatten

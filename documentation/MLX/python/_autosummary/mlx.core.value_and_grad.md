@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.va
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.value_and_grad
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.va
 
 # mlx.core.value_and_grad
 
-**value_and_grad(*fun: Callable[P, R]*, *argnums: int | Sequence[int] | None = None*, *argnames: str | Sequence[str] = []*) → Callable[P, Tuple[R, Any]]**
+**value_and_grad(*fun: Callable[P, R]*, *argnums: int | Sequence[int] | None = None*, *argnames: str | Sequence[str] = []*) → Callable[P, [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[R, Any]]**
 : Returns a function which computes the value and gradient of `fun`.
 The function passed to [value_and_grad()](#mlx.core.value_and_grad) should return either
 a scalar loss or a tuple in which the first element is a scalar

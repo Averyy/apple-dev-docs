@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sl
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.slice
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sl
 
 # mlx.core.slice
 
-**slice(*a: array*, *start_indices: array*, *axes: Sequence[int]*, *slice_size: Sequence[int]*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**slice(*a: array*, *start_indices: array*, *axes: Sequence[int]*, *slice_size: Sequence[int]*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Extract a sub-array from the input array.
 
 Parameters:

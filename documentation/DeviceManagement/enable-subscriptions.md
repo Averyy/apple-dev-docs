@@ -11,7 +11,7 @@ Send a POST request to declare that your device management service supports subs
 
 This request takes no body. The server processes it synchronously and returns the resulting `subscriptionManagement` state.
 
-> ⚠️ **Warning**:  Enabling subscription management for an organizational unit is permanent. After an organizational unit opts in as enabled, you can’t disable it. Enable an organizational unit only after your device management service is ready to manage subscription assignments for it.
+> **Note**:  You can reverse this declaration with [`Disable Subscriptions`](disable-subscriptions.md), but only while the organizational unit has no subscriptions. After content managers purchase subscriptions into it, disabling fails until no subscriptions remain.
 
 ##### Example Request and Response
 

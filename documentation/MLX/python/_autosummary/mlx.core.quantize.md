@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.qu
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.quantize
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.qu
 
 # mlx.core.quantize
 
-**quantize(*w: array*, */*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *global_scale: array | None = None*, *stream: None | Stream | Device = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
+**quantize(*w: array*, */*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *global_scale: array | None = None*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
 : Quantize the array `w`.
 Note, every `group_size` elements in a row of `w` are quantized
 together. Hence, the last dimension of `w` should be divisible by

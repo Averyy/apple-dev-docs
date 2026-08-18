@@ -1,4 +1,4 @@
 Completed scraping Video Toolbox!
-Total pages scraped: 801
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 802
 Pages failed: 0

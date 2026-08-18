@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.step
@@ -32,7 +36,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 **class step(*x: array*, *threshold: float = 0.0*)**
 : Applies the Step Activation Function.
 This function implements a binary step activation, where the output is set
-to 1 if the input is greater than a specified threshold, and 0 otherwise.
+to 1 if the input is greater than or equal to a specified threshold, and 0
+otherwise.
 
 \[\begin{split}\text{step}(x) = \begin{cases}
 0 & \text{if } x < \text{threshold} \\
@@ -40,6 +45,6 @@ to 1 if the input is greater than a specified threshold, and 0 otherwise.
 \end{cases}\end{split}\]
 
 Parameters:
-**threshold** – The value to threshold at.
+**threshold** – The value to threshold at. Default: `0.0`.
 
 ** Contents

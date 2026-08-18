@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/functions.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Functions
@@ -55,5 +59,6 @@ simple functions.
 | softmin(x[, axis]) | Applies the Softmin function. |
 | softplus(x) | Applies the Softplus function. |
 | softshrink(x[, lambd]) | Applies the Softshrink activation function. |
+| softsign(x) | Applies the Softsign function. |
 | step(x[, threshold]) | Applies the Step Activation Function. |
 | tanh(x) | Applies the hyperbolic tangent function. |

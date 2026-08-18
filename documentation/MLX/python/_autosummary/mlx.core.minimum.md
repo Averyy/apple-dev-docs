@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.mi
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.minimum
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.mi
 
 # mlx.core.minimum
 
-**minimum(*a: scalar | array*, *b: scalar | array*, */*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**minimum(*a: scalar | array*, *b: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Element-wise minimum.
 Take the element-wise min of two arrays with numpy-style broadcasting
 semantics. Either or both input arrays can also be scalars.

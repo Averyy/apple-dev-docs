@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ro
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.roll
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ro
 
 # mlx.core.roll
 
-**roll(*a: array*, *shift: int | Tuple[int]*, *axis: None | int | Tuple[int] = None*, */*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**roll(*a: array*, *shift: int | tuple[int]*, *axis: None | int | tuple[int] = None*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Roll array elements along a given axis.
 Elements that are rolled beyond the end of the array are introduced at
 the beggining and vice-versa.

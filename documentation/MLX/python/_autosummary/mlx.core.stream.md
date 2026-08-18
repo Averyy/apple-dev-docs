@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.st
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.stream
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.st
 
 # mlx.core.stream
 
-**stream(*s: Stream | mlx.core.ThreadLocalStream | Device*) → mlx.core.StreamContext**
+**stream(*s: Stream | ThreadLocalStream | Device | mlx.core.DeviceType*) → mlx.core.StreamContext**
 : Create a context manager to set the default device and stream.
 
 Parameters:

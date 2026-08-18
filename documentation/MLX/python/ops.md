@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Operations
@@ -133,7 +137,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | left_shift(a, b[, stream]) | Element-wise left shift. |
 | less(a, b[, stream]) | Element-wise less than. |
 | less_equal(a, b[, stream]) | Element-wise less than or equal. |
-| linspace(start, stop[, num, dtype, stream]) | Generatenumevenly spaced numbers over interval[start,stop]. |
+| linspace(start, stop[, num, endpoint, ...]) | Generatenumevenly spaced numbers over interval[start,stop]. |
 | load(file, /[, format, return_metadata, stream]) | Load array(s) from a binary file. |
 | log(a, /, *[, stream]) | Element-wise natural logarithm. |
 | log2(a, /, *[, stream]) | Element-wise base-2 logarithm. |
@@ -160,7 +164,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | negative(a, /, *[, stream]) | Element-wise negation. |
 | not_equal(a, b[, stream]) | Element-wise not equal. |
 | ones(shape[, dtype, stream]) | Construct an array of ones. |
-| ones_like(a, /, *[, stream]) | An array of ones like the input. |
+| ones_like(a, /[, dtype, stream]) | An array of ones like the input. |
 | outer(a, b, /, *[, stream]) | Compute the outer product of two 1-D arrays, if the array's passed are not 1-D a flatten op will be run beforehand. |
 | partition(a, /, kth[, axis, stream]) | Returns a partitioned copy of the array such that the smallerkthelements are first. |
 | pad(a, pad_width[, mode, constant_values, ...]) | Pad an array with a constant value |
@@ -188,6 +192,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | savez_compressed(file, *args, **kwargs) | Save several arrays to a binary file in compressed.npzformat. |
 | save_gguf(file, arrays, metadata) | Save array(s) to a binary file in.ggufformat. |
 | save_safetensors(file, arrays[, metadata]) | Save array(s) to a binary file in.safetensorsformat. |
+| searchsorted(sorted_sequence, values, /[, ...]) | Find the indices that keepsorted_sequencesorted when insertingvalues. |
 | sigmoid(a, /, *[, stream]) | Element-wise logistic sigmoid. |
 | sign(a, /, *[, stream]) | Element-wise sign. |
 | sin(a, /, *[, stream]) | Element-wise sine. |
@@ -195,7 +200,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | slice(a, start_indices, axes, slice_size, *) | Extract a sub-array from the input array. |
 | slice_update(a, update, start_indices, axes, *) | Update a sub-array of the input array. |
 | segmented_mm(a, b, /, segments, *[, stream]) | Perform a matrix multiplication but segment the inner dimension and save the result for each segment separately. |
-| softmax(a, /[, axis, stream]) | Perform the softmax along the given axis. |
+| softmax(a, /[, axis, precise, stream]) | Perform the softmax along the given axis. |
 | sort(a, /[, axis, stream]) | Returns a sorted copy of the array. |
 | split(a, /, indices_or_sections[, axis, stream]) | Split an array along a given axis. |
 | sqrt(a, /, *[, stream]) | Element-wise square root. |
@@ -228,4 +233,4 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | view(a, dtype[, stream]) | View the array as a different type. |
 | where(condition, x, y, /, *[, stream]) | Select fromxoryaccording tocondition. |
 | zeros(shape[, dtype, stream]) | Construct an array of zeros. |
-| zeros_like(a, /, *[, stream]) | An array of zeros like the input. |
+| zeros_like(a, /[, dtype, stream]) | An array of zeros like the input. |

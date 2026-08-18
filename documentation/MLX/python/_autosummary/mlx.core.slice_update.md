@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sl
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.slice_update
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sl
 
 # mlx.core.slice_update
 
-**slice_update(*a: array*, *update: array*, *start_indices: array*, *axes: Sequence[int]*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**slice_update(*a: array*, *update: array*, *start_indices: array*, *axes: Sequence[int]*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Update a sub-array of the input array.
 
 Parameters:

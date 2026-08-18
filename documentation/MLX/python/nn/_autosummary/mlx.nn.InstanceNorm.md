@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.I
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.InstanceNorm
@@ -45,7 +49,8 @@ Parameters:
 **affine** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Default: `False`.
 
 Shape:
-Input: \((..., C)\) where \(C\) is equal to `dims`.
+Input: \((N, ..., C)\) where \(C\) is equal to `dims`.
+The input must have at least 3 dimensions.
 Output: Same shape as the input.
 
 Examples

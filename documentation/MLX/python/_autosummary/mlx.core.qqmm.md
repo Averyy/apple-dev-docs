@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.qq
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.qqmm
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.qq
 
 # mlx.core.qqmm
 
-**qqmm(*x: array*, *w: array*, *scales: array | None = None*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'nvfp4'*, *global_scale_x: array | None = None*, *global_scale_w: array | None = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**qqmm(*x: array*, *w: array*, *scales: array | None = None*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'nvfp4'*, *global_scale_x: array | None = None*, *global_scale_w: array | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Perform a matrix multiplication using a possibly quantized weight matrix
 `w` and a non-quantized input `x`. The input `x` is quantized on the
 fly. The weight matrix `w` is used as-is if it is already quantized;

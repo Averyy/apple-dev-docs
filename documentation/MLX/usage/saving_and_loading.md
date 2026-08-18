@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/usage/saving_and_loading.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Saving and Loading Arrays

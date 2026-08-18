@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.kr
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.kron
@@ -29,14 +33,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.kr
 
 # mlx.core.kron
 
-**kron(*a: array*, *b: array*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**kron(*a: array*, *b: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Compute the Kronecker product of two arrays `a` and `b`.
 
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – The first input array.
 **b** ([array](mlx.core.array.html#mlx.core.array)) – The second input array.
-**stream** (*Union**[**None**, *[Stream](stream_class.html#mlx.core.Stream)*, *[Device](mlx.core.Device.html#mlx.core.Device)*]**, **optional*) – Optional stream or
+**stream** (*StreamOrDevice**, **optional*) – Optional stream or
 device for execution. Default: `None`.
 
 Returns:

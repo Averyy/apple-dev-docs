@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/install.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Build and Install

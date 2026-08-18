@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.laplace
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.laplace
 
-**laplace(*shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *loc: float = 0.0*, *scale: float = 1.0*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**laplace(*shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *loc: float = 0.0*, *scale: float = 1.0*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Sample numbers from a Laplace distribution.
 
 Parameters:

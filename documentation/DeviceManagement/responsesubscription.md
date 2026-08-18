@@ -19,7 +19,7 @@ object ResponseSubscription
 
 ## Properties
 
-- `parentAdamId` (int64): The parent Adam ID for the subscription.
+- `parentAdamId` (int64): The parent Adam ID for the subscription. This value can be `null`, so don’t require it when you parse a subscription record.
 - `adamId` (int64): The Adam ID for the subscription.
 - `status` (string): The current state of the subscription.
 - `periodEndDate` (string): The end date of the current billing period in ISO-8601 calendar date format (`YYYY-MM-DD`).

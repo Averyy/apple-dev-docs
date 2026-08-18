@@ -6,11 +6,15 @@ Support iPad multitasking and dynamic resizing while updating your app to remove
 
 #### Overview
 
-Prior to iPadOS 26, apps could request a compatibility mode that opted them out of multitasking and dynamic scene resizing through the [`UIRequiresFullScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiresFullScreen) key. This key-value pair configures iPadOS apps only, and is ignored for iOS apps.
+Prior to iPadOS 26, apps could request a compatibility mode that opted them out of multitasking and dynamic scene resizing through the [`UIRequiresFullScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiresFullScreen) key. Prior to iOS 27, this key-value pair configures iPadOS apps only, and is ignored for iOS apps.
 
 Update apps that rely on `UIRequiresFullScreen`’s compatibility mode to handle resizing scenes so they can provide a better multitasking experience.
 
-> **Note**: Starting in iPadOS 26, `UIRequiresFullscreen` and its associated compatibility mode are deprecated and will be ignored in a future release. Apps that don’t update may experience broken layouts, UI elements positioned incorrectly, or content that doesn’t fit properly when the system resizes their scenes to accommodate multitasking scenarios they weren’t designed to handle.
+> **Note**: Starting in iPadOS 26, `UIRequiresFullScreen` and its associated compatibility mode are deprecated and will be ignored in a future release. Apps that don’t update may experience broken layouts, UI elements positioned incorrectly, or content that doesn’t fit properly when the system resizes their scenes to accommodate multitasking scenarios they weren’t designed to handle.
+
+Starting in iOS 27 and iPadOS 27, `UIRequiresFullScreen` no longer opts your app out of resizing. Instead, the system resizes your app’s scene discretely. This behavior applies when you build your app with the iOS 27 SDK or later and set `UIRequiresFullScreen` to `YES`, unless [`UIRequiresFullScreenIgnoredStartingWithVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreenignoredstartingwithversion) specifies version 27 or earlier.
+
+With a discrete resize, the scene doesn’t change size while people drag the window. When they finish, the `coordinateSpace.bounds` of the scene’s `effectiveGeometry` changes, and the scene moves to a `UIScreen` of exactly the same size. To learn more about discrete resizing, see WWDC26 session 278: [`Modernize your UIKit app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/278/).
 
 This guide will help you migrate away from `UIRequiresFullScreen` and handle dynamic resizing. For more information on the enhanced window resizing and improved multitasking, see WWDC25 session 282: [`Make your UIKit app more flexible`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/282/).
 
@@ -158,6 +162,7 @@ For more information about locking your scene to your preferred interface orient
 
 #### Revision History
 
+- **2026-08-13** Added information about the updated behavior of UIRequiresFullScreen in iOS 27 and iPadOS 27.
 - **2026-06-08** Added launch screen requirement for iOS 27 and iPadOS 27.
 - **2026-02-06** Added information about back deployment support.
 - **2025-09-08** First published.

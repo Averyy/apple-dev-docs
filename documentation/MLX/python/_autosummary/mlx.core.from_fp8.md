@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fr
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.from_fp8
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fr
 
 # mlx.core.from_fp8
 
-**from_fp8(*x: array*, *dtype: Dtype = bfloat16*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**from_fp8(*x: array*, *dtype: Dtype = bfloat16*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Convert the array from fp8 (e4m3) to another floating-point type.
 
 Parameters:

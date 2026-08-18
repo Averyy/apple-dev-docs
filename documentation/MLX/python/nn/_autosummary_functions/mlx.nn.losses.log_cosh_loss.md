@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.losses.log_cosh_loss
@@ -36,8 +40,7 @@ and like the L1 loss for large errors, reducing sensitivity to outliers. This
 dual behavior offers a balanced, robust approach for regression tasks.
 
 \[\text{logcosh}(y_{\text{true}}, y_{\text{pred}}) =
-     \frac{1}{n} \sum_{i=1}^{n}
-     \log(\cosh(y_{\text{pred}}^{(i)} - y_{\text{true}}^{(i)}))\]
+     \log(\cosh(y_{\text{pred}} - y_{\text{true}}))\]
 
 Parameters:
 

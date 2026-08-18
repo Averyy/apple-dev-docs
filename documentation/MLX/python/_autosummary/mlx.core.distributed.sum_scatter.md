@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.distributed.sum_scatter
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.distributed.sum_scatter
 
-**sum_scatter(*x: array*, ***, *group: Group | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**sum_scatter(*x: array*, ***, *group: Group | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Sum `x` across all processes in the group and shard the result along the first axis across ranks.
 `x.shape[0]` must be divisible by the group size.
 The result is equivalent to `all_sum(x)[rank*chunk_size:(rank+1)*chunk_size]`, where `chunk_size = x.shape[0] // group.size()` and `rank` is the rank of this process in the group.

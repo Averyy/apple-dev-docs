@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fft.rfftfreq
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.rfftfreq
 
-**rfftfreq(*n: int*, *d: float = 1.0*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**rfftfreq(*n: int*, *d: float = 1.0*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Return the discrete Fourier Transform sample frequencies
 for use with [rfft()](mlx.core.fft.rfft.html#mlx.core.fft.rfft) and [irfft()](mlx.core.fft.irfft.html#mlx.core.fft.irfft).
 The returned array contains the non-negative frequency terms

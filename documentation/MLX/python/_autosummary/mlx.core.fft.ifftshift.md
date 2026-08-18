@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fft.ifftshift
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.ifftshift
 
-**ifftshift(*a: array*, *axes: int | Sequence[int] | None = None*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**ifftshift(*a: array*, *axes: int | Sequence[int] | None = None*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : The inverse of [fftshift()](mlx.core.fft.fftshift.html#mlx.core.fft.fftshift). While identical to [fftshift()](mlx.core.fft.fftshift.html#mlx.core.fft.fftshift) for even-length axes,
 the behavior differs for odd-length axes.
 

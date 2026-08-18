@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/devices_and_streams.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Devices and Streams
@@ -30,11 +34,13 @@ url: https://ml-explore.github.io/mlx/build/html/python/devices_and_streams.html
 | Device(*args, **kwargs) | A device to run operations on. |
 | --- | --- |
 | Stream | A stream for running operations on a given device. |
+| ThreadLocalStream | A stream that will be unique per thread and can be used to run operations on a given device. |
 | default_device() | Get the default device. |
 | set_default_device(device) | Set the default device. |
 | default_stream(device) | Get the device's default stream. |
 | new_stream(device) | Make a new stream on the given device. |
 | new_thread_local_stream(device) | Make a new stream that will be unique per thread. |
+| new_thread_unsafe_stream(device) | Make a new stream that can be used in any thread. |
 | set_default_stream(stream) | Set the default stream. |
 | stream(s) | Create a context manager to set the default device and stream. |
 | synchronize([stream]) | Synchronize with the given stream. |

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/schedulers.ht
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Schedulers

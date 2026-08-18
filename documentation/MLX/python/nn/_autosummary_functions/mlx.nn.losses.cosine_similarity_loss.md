@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.losses.cosine_similarity_loss
@@ -37,8 +41,8 @@ The cosine similarity loss is given by
 
 Parameters:
 
-**x1** (*mx.array*) – The first set of inputs.
-**x2** (*mx.array*) – The second set of inputs.
+**x1** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The first set of inputs.
+**x2** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The second set of inputs.
 **axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The embedding axis. Default: `1`.
 **eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The minimum value of the denominator used for
 numerical stability. Default: `1e-8`.
@@ -49,6 +53,6 @@ Returns:
 The computed cosine similarity loss.
 
 Return type:
-mx.array
+[array](../../_autosummary/mlx.core.array.html#mlx.core.array)
 
 ** Contents

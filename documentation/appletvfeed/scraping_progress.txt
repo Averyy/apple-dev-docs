@@ -1,0 +1,4 @@
+Completed scraping Apple TV Feed!
+Total pages scraped: 77
+Pages skipped (unchanged): 1
+Pages failed: 0

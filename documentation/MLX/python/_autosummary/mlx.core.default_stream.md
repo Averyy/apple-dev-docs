@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.de
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.default_stream
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.de
 
 # mlx.core.default_stream
 
-**default_stream(*device: Device*) → [Stream](stream_class.html#mlx.core.Stream)**
+**default_stream(*device: Device | DeviceType*) → [Stream](stream_class.html#mlx.core.Stream)**
 : Get the device’s default stream.
 
 ** Contents

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ze
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.zeros
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ze
 
 # mlx.core.zeros
 
-**zeros(*shape: int | Sequence[int]*, *dtype: Dtype | None = float32*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**zeros(*shape: int | Sequence[int]*, *dtype: Dtype | None = float32*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Construct an array of zeros.
 
 Parameters:

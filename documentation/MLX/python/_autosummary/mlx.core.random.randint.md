@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.random.randint
@@ -29,11 +33,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.randint
 
-**randint(*low: scalar | array*, *high: scalar | array*, *shape: Sequence[int] = []*, *dtype: Dtype | None = int32*, *key: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**randint(*low: scalar | array*, *high: scalar | array*, *shape: Sequence[int] = []*, *dtype: Dtype | None = int32*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Generate random integers from the given interval.
 The values are sampled with equal probability from the integers in
 half-open interval `[low, high)`. The lower and upper bound can be
 scalars or arrays and must be broadcastable to `shape`.
+
+Note
+The samples are drawn from a `float32` uniform and clamped to
+`[low, high - 1]`, so not every integer in the range is reachable
+once the bounds or the width of the interval go beyond the
+`2**24` integer resolution of `float32`.
 
 Parameters:
 

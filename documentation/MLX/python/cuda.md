@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/cuda.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # CUDA

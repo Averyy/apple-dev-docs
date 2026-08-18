@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.optimizers.Adam

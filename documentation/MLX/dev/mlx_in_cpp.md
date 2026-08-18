@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/dev/mlx_in_cpp.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Using MLX in C++

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/dev/metal_logging.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Metal Logging

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.D
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.Dropout2d
@@ -47,6 +51,7 @@ Efficient Object Localization Using Convolutional Networks. CVPR 2015.
 
 Parameters:
 **p** ([float](https://docs.python.org/3/library/functions.html#float)) – Probability of zeroing a channel during training.
+Default: `0.5`.
 
 Methods
 

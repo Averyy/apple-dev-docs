@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.exporter
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 
 # mlx.core.exporter
 
-**exporter(*file: str*, *fun: Callable*, ***, *shapeless: bool = False*) → mlx.core.FunctionExporter**
+**exporter(*file: str*, *fun: Callable*, ***, *shapeless: bool = False*, *metadata: str | None = None*) → mlx.core.FunctionExporter**
 : Make a callable object to export multiple traces of a function to a file.
 
 Warning
@@ -42,6 +46,9 @@ Parameters:
 **file** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – File path to export the function to.
 **shapeless** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether or not the function allows
 inputs with variable shapes. Default: `False`.
+**metadata** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – A string to save alongside the
+function, for example a JSON encoded model configuration. Read
+it back with [import_function()](mlx.core.import_function.html#mlx.core.import_function). Default: `None`.
 
 Example
 def fun(*args):

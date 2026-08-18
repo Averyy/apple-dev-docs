@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ro
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.round
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ro
 
 # mlx.core.round
 
-**round(*a: array*, */*, *decimals: int = 0*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**round(*a: array*, */*, *decimals: int = 0*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Round to the given number of decimals.
 Basically performs:
 s = 10**decimals

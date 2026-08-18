@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pa
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.pad
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pa
 
 # mlx.core.pad
 
-**pad(*a: array*, *pad_width: int | tuple[int] | tuple[int, int] | list[tuple[int, int]]*, *mode: Literal['constant', 'edge'] = 'constant'*, *constant_values: scalar | array = 0*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**pad(*a: array*, *pad_width: int | tuple[int] | tuple[int, int] | list[tuple[int, int]]*, *mode: Literal['constant', 'edge', 'reflect', 'symmetric'] = 'constant'*, *constant_values: scalar | array = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Pad an array with a constant value
 
 Parameters:
@@ -44,7 +48,9 @@ all axes are extended by the same number on each side.
 **mode** – Padding mode. One of the following strings:
 “constant” (default): Pads with a constant value.
 “edge”: Pads with the edge values of array.
-**constant_value** ([array](mlx.core.array.html#mlx.core.array)* or **scalar**, **optional*) – Optional constant value
+“reflect”: Pads with the reflection of the array, without repeating the edge values.
+“symmetric”: Pads with the reflection of the array, repeating the edge values.
+**constant_values** ([array](mlx.core.array.html#mlx.core.array)* or **scalar**, **optional*) – Optional constant value
 to pad the edges of the array with.
 
 Returns:

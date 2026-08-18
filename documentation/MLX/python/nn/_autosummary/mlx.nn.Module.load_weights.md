@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.Module.load_weights
@@ -34,7 +38,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 Parameters:
 
-**file_or_weights** ([str](https://docs.python.org/3/library/stdtypes.html#str)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[str](https://docs.python.org/3/library/stdtypes.html#str)*, **mx.array**)**)*) – The path to
+**file_or_weights** ([str](https://docs.python.org/3/library/stdtypes.html#str)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[array](../../_autosummary/mlx.core.array.html#mlx.core.array)*)**)*) – The path to
 the weights `.npz` file (`.npz` or `.safetensors`) or a list
 of pairs of parameter names and arrays.
 **strict** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True` then checks that the provided

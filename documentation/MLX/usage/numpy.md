@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/usage/numpy.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Conversion to NumPy and Other Frameworks

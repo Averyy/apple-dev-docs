@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.R
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.RMSNorm
@@ -42,7 +46,8 @@ Note the accumulation for the mean is done in 32-bit precision.
 Parameters:
 
 **dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The feature dimension of the input to normalize over
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A small additive constant for numerical stability
+**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A small additive constant for numerical stability.
+Default: `1e-5`.
 
 Methods
 

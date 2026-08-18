@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/tree_utils.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Tree Utils

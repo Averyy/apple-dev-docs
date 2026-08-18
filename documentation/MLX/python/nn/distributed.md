@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/distributed.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Distributed
@@ -37,6 +41,7 @@ create sharded layers from existing [Modules](module.html#mlx.nn.Module).
 | shard_linear(module, sharding, *[, ...]) | Create a new linear layer that has its parameters sharded and also performs distributed communication either in the forward or backward pass. |
 | --- | --- |
 | shard_inplace(module, sharding, *[, ...]) | Shard a module in-place by updating its parameter dictionary with the sharded parameter dictionary. |
+| fully_shard(module, *[, group, compute_dtype]) | Wrapmodulein aFullyShardedModule. |
 
 ## Layers
 
@@ -45,5 +50,6 @@ create sharded layers from existing [Modules](module.html#mlx.nn.Module).
 | ShardedToAllLinear(input_dims, output_dims) | Each member of the group applies part of the affine transformation and then aggregates the results. |
 | QuantizedAllToShardedLinear(input_dims, ...) | Each member of the group applies part of the affine transformation with a quantized matrix such that the result is sharded across the group. |
 | QuantizedShardedToAllLinear(input_dims, ...) | Each member of the group applies part of the affine transformation using the quantized matrix and then aggregates the results. |
+| FullyShardedModule(module[, group, ...]) | Wrap a module so each member of the group holds only a shard of its parameters. |
 
 ** Contents

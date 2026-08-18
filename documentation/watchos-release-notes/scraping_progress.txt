@@ -1,4 +1,4 @@
 Completed scraping watchOS Release Notes!
-Total pages scraped: 55
-Pages skipped (unchanged): 1
+Total pages scraped: 2
+Pages skipped (unchanged): 54
 Pages failed: 0

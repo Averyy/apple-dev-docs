@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.fast.rope
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.rope
 
-**rope(*a: array*, *dims: int*, ***, *traditional: bool*, *base: float | None*, *scale: float*, *offset: int | array*, *freqs: array | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**rope(*a: array*, *dims: int*, ***, *traditional: bool*, *base: float | None*, *scale: float*, *offset: int | array*, *freqs: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Apply rotary positional encoding to the input.
 
 The input is expected to be at least 3D with shape `(B, *, T, D)` where:

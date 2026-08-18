@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.conv_transpose2d
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.conv_transpose2d
 
-**conv_transpose2d(*input: array*, *weight: array*, */*, *stride: int | Tuple[int, int] = 1*, *padding: int | Tuple[int, int] = 0*, *dilation: int | Tuple[int, int] = 1*, *output_padding: int | Tuple[int, int] = 0*, *groups: int = 1*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**conv_transpose2d(*input: array*, *weight: array*, */*, *stride: int | tuple[int, int] = 1*, *padding: int | tuple[int, int] = 0*, *dilation: int | tuple[int, int] = 1*, *output_padding: int | tuple[int, int] = 0*, *groups: int = 1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : 2D transposed convolution over an input with several channels
 Note: Only the default `groups=1` is currently supported.
 

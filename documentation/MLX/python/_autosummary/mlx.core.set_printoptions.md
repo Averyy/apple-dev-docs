@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.set_printoptions
@@ -33,7 +37,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 : Set global printing precision for array formatting.
 Example
 >>> print(x)  # Uses default precision
->>> mx.set_printoptions(precision=3):
+>>> mx.set_printoptions(precision=3)
 >>> print(x)  # Uses precision of 3
 >>> print(x)  # Uses precision of 3 (again)
 

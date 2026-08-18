@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fl
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.flatten
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fl
 
 # mlx.core.flatten
 
-**flatten(*a: array*, */*, *start_axis: int = 0*, *end_axis: int = -1*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**flatten(*a: array*, */*, *start_axis: int = 0*, *end_axis: int = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Flatten an array.
 The axes flattened will be between `start_axis` and `end_axis`,
 inclusive. Negative axes are supported. After converting negative axis to

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.optimizers.MultiOptimizer
@@ -40,7 +44,7 @@ given for it.
 Parameters:
 
 **optimizers** ([list](https://docs.python.org/3/library/stdtypes.html#list)*[*[Optimizer](../optimizer.html#mlx.optimizers.Optimizer)*]*) – A list of optimizers to delegate to
-**filters** ([list](https://docs.python.org/3/library/stdtypes.html#list)*[**Callable**[**[*[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[array](../../_autosummary/mlx.core.array.html#mlx.core.array)*]**, *[bool](https://docs.python.org/3/library/functions.html#bool)*]*) – A list of predicates that
+**filters** ([list](https://docs.python.org/3/library/stdtypes.html#list)*[**Callable**[**[*[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[array](../../_autosummary/mlx.core.array.html#mlx.core.array)*]**, *[bool](https://docs.python.org/3/library/functions.html#bool)*]**]*) – A list of predicates that
 should be one less than the provided optimizers.
 
 Methods

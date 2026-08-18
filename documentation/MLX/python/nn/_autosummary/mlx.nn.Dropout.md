@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.D
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.Dropout
@@ -36,7 +40,7 @@ The remaining elements are multiplied with \(\frac{1}{1-p}\) where
 expected value of a given element will remain the same.
 
 Parameters:
-**p** ([float](https://docs.python.org/3/library/functions.html#float)) – The probability to zero an element
+**p** ([float](https://docs.python.org/3/library/functions.html#float)) – The probability to zero an element. Default: `0.5`.
 
 Methods
 

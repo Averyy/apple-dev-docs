@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/usage/function_transforms.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Function Transforms

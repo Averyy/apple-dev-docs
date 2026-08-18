@@ -8,6 +8,18 @@ Learn about new features and updates in the Apple School Manager and Apple Busin
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Apple School Manager and Apple Business APIs.
 
+##### 23 Apple Business 2026812
+
+##### 16 Apple School Manager 2026812
+
+New features for the Apple School Manager and Apple Business APIs
+
+Added support for device management service migration, allowing organizations to change device management services for their managed devices without erasing the device:
+
+- [`Apple School Manager: Assign or Unassign Devices to a Device Management Service.`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/create-an-orgdeviceactivity) — now supports scheduling, updating, and canceling a device management service migration using the new `orgDeviceActivities` activity types.
+- [`Apple Business: Assign or Unassign Devices to a Device Management Service.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/create-an-orgdeviceactivity) — now supports scheduling, updating, and canceling a device management service migration using the new `orgDeviceActivities` activity types.
+- New read-only fields on organization devices: `isMdmMigrationCapable`, `mdmMigrationStatus`, and `mdmMigrationDeadlineDateTime`.
+
 ##### 22 2026715
 
 New features for the Apple Business APIs

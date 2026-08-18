@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.po
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.power
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.po
 
 # mlx.core.power
 
-**power(*a: scalar | array*, *b: scalar | array*, */*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**power(*a: scalar | array*, *b: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Element-wise power operation.
 Raise the elements of a to the powers in elements of b with numpy-style
 broadcasting semantics. Either or both input arrays can also be scalars.

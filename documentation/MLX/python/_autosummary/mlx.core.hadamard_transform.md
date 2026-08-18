@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ha
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.hadamard_transform
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ha
 
 # mlx.core.hadamard_transform
 
-**hadamard_transform(*a: array*, *scale: float | None = None*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**hadamard_transform(*a: array*, *scale: float | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Perform the Walsh-Hadamard transform along the final axis.
 Equivalent to:
 from scipy.linalg import hadamard

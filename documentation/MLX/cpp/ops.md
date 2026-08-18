@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/cpp/ops.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Operations
@@ -56,14 +60,14 @@ url: https://ml-explore.github.io/mlx/build/html/cpp/ops.html
 **array arange(int stop, StreamOrDevice s = {})**
 : 
 
-**array linspace(double start, double stop, int num = 50, Dtype dtype = float32, StreamOrDevice s = {})**
-: A 1D array of `num` evenly spaced numbers in the range `[start, stop]`
+**array linspace(double start, double stop, int num, bool endpoint, Dtype dtype = float32, StreamOrDevice s = {})**
+: A 1D array of `num` evenly spaced numbers in the range `[start, stop]`, or in the half-open range `[start, stop)` when `endpoint` is false.
 
-**array astype(array a, Dtype dtype, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<bool> copy, StreamOrDevice s = {})**
-: Convert an array to the given data type.
-
-**inline array astype(array a, Dtype dtype, StreamOrDevice s = {})**
+**inline array linspace(double start, double stop, int num = 50, Dtype dtype = float32, StreamOrDevice s = {})**
 : 
+
+**array astype(array a, Dtype dtype, StreamOrDevice s = {})**
+: Convert an array to the given data type.
 
 **array as_strided(array a, Shape shape, Strides strides, size_t offset, StreamOrDevice s = {})**
 : Create a view of an array with the given shape and strides.
@@ -106,6 +110,9 @@ array full_like(const array &a, [T](#_CPPv4I0E9full_like5arrayRK5array1T14Stream
 : 
 
 **array zeros_like(const array &a, StreamOrDevice s = {})**
+: Create an array of zeros with the shape of `a`.
+
+**array zeros_like(const array &a, Dtype dtype, StreamOrDevice s = {})**
 : 
 
 **array ones(const Shape &shape, Dtype dtype, StreamOrDevice s = {})**
@@ -115,6 +122,9 @@ array full_like(const array &a, [T](#_CPPv4I0E9full_like5arrayRK5array1T14Stream
 : 
 
 **array ones_like(const array &a, StreamOrDevice s = {})**
+: Create an array of ones with the shape of `a`.
+
+**array ones_like(const array &a, Dtype dtype, StreamOrDevice s = {})**
 : 
 
 **array eye(int n, int m, int k, Dtype dtype, StreamOrDevice s = {})**
@@ -620,6 +630,9 @@ The sort is stable and NaN values are placed at the end.
 **array argpartition(const array &a, int kth, int axis, StreamOrDevice s = {})**
 : Returns indices that partition the array along a given axis such that the smaller kth elements are first.
 
+**array searchsorted(const array &sorted_sequence, const array &values, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &side = "left", StreamOrDevice s = {})**
+: Find the indices of `values` in `sorted_sequence`.
+
 **array topk(const array &a, int k, StreamOrDevice s = {})**
 : Returns topk elements of the flattened array.
 
@@ -1056,7 +1069,7 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 **array conv_transpose3d(const array &input, const array &weight, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<int, int, int> &stride = {1, 1, 1}, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<int, int, int> &padding = {0, 0, 0}, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<int, int, int> &dilation = {1, 1, 1}, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<int, int, int> &output_padding = {0, 0, 0}, int groups = 1, StreamOrDevice s = {})**
 : 3D transposed convolution with a filter
 
-**array quantized_matmul(array x, array w, array scales, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool transpose = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", StreamOrDevice s = {})**
+**array quantized_matmul(const array &x, const array &w, const array &scales, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool transpose = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", StreamOrDevice s = {})**
 : Quantized matmul multiplies x with a quantized matrix w.
 
 **[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> quantize(const array &w, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
@@ -1065,7 +1078,7 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 **array dequantize(const array &w, const array &scales, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<Dtype> dtype = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : Dequantize a matrix produced by [quantize()](#group__ops_1gaf70cd9a027e81e11e7f4fc91271e580c)
 
-**array qqmm(array x, array w, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> w_scales = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "nvfp4", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> global_scale_x = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> global_scale_w = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
+**array qqmm(const array &x, const array &w, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &w_scales = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "nvfp4", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale_x = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale_w = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : 
 
 **array from_fp8(array x, Dtype dtype, StreamOrDevice s = {})**
@@ -1076,6 +1089,9 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 
 **array gather_qmm(const array &x, const array &w, const array &scales, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> lhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> rhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool transpose = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", bool sorted_indices = false, StreamOrDevice s = {})**
 : Compute matrix products with matrix-level gather.
+
+**array gather_qqmm(const array &x, const array &w, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &scales_w = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &lhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &rhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "nvfp4", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale_x = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale_w = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool sorted_indices = false, StreamOrDevice s = {})**
+: 
 
 **array tensordot(const array &a, const array &b, const int axis = 2, StreamOrDevice s = {})**
 : Returns a contraction of a and b over multiple dimensions.

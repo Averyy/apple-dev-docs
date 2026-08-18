@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/examples/mlp.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Multi-Layer Perceptron

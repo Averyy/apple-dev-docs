@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.na
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.nan_to_num
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.na
 
 # mlx.core.nan_to_num
 
-**nan_to_num(*a: scalar | array*, *nan: float = 0*, *posinf: float | None = None*, *neginf: float | None = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**nan_to_num(*a: scalar | array*, *nan: float = 0*, *posinf: float | None = None*, *neginf: float | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Replace NaN and Inf values with finite numbers.
 
 Parameters:

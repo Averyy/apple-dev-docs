@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.te
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.tensordot
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.te
 
 # mlx.core.tensordot
 
-**tensordot(*a: array*, *b: array*, */*, *axes: int | list[Sequence[int]] = 2*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**tensordot(*a: array*, *b: array*, */*, *axes: int | list[Sequence[int]] = 2*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Compute the tensor dot product along the specified axes.
 
 Parameters:

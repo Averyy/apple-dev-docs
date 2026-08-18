@@ -1,4 +1,4 @@
 Completed scraping Accelerate!
-Total pages scraped: 8145
-Pages skipped (unchanged): 149
+Total pages scraped: 0
+Pages skipped (unchanged): 8294
 Pages failed: 0

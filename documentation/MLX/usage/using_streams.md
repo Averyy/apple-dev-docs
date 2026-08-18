@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/usage/using_streams.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Using Streams

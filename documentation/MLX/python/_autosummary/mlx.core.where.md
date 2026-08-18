@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.wh
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.where
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.wh
 
 # mlx.core.where
 
-**where(*condition: scalar | array*, *x: scalar | array*, *y: scalar | array*, */*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**where(*condition: scalar | array*, *x: scalar | array*, *y: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Select from `x` or `y` according to `condition`.
 The condition and input arrays must be the same shape or
 broadcastable with each another.

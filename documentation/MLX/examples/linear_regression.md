@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/examples/linear_regression.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Linear Regression

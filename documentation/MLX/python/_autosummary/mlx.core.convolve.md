@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.convolve
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.convolve
 
-**convolve(*a: array*, *v: array*, */*, *mode: str = 'full'*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**convolve(*a: array*, *v: array*, */*, *mode: str = 'full'*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : The discrete convolution of 1D arrays.
 If `v` is longer than `a`, then they are swapped.
 The conv filter is flipped following signal processing convention.

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.count_nonzero
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.count_nonzero
 
-**count_nonzero(*a: array*, */*, ***, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**count_nonzero(*a: array*, */*, ***, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Count the number of non-zero elements along the given axis.
 
 Parameters:

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/optimizer.htm
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Optimizer

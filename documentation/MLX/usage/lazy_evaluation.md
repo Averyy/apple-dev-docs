@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/usage/lazy_evaluation.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Lazy Evaluation

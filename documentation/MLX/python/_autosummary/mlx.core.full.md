@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fu
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.full
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fu
 
 # mlx.core.full
 
-**full(*shape: int | Sequence[int]*, *vals: scalar | array*, *dtype: Dtype | None = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**full(*shape: int | Sequence[int]*, *vals: scalar | array*, *dtype: Dtype | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Construct an array with the given value.
 Constructs an array of size `shape` filled with `vals`. If `vals`
 is an [array](mlx.core.array.html#mlx.core.array) it must be broadcastable to the given `shape`.

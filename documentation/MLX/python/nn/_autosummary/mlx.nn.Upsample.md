@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.U
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.Upsample
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.U
 
 # mlx.nn.Upsample
 
-**class Upsample(*scale_factor: float | Tuple*, *mode: Literal['nearest', 'linear', 'cubic'] = 'nearest'*, *align_corners: bool = False*)**
+**class Upsample(*scale_factor: float | Tuple*, *mode: Literal['nearest', 'linear', 'cubic'] = 'nearest'*, *align_corners: bool = False*, *antialias: bool = False*)**
 : Upsample the input signal spatially.
 The spatial dimensions are by convention dimensions `1` to `x.ndim -
 2`. The first is the batch dimension and the last is the feature
@@ -48,6 +52,21 @@ argument changes how the corners are treated in the input image. If
 `align_corners=True` then the top and left edge of the input and
 output will be matching as will the bottom right edge.
 
+Note
+When `antialias=True` is used with `"linear"` or `"cubic"` mode,
+an antialiased filter is applied during downsampling (scale factor < 1),
+producing smoother results by avoiding aliasing artifacts. For 2D
+integer-ratio downscales with `align_corners=False`, this matches the
+behavior of PyTorch’s `F.interpolate(antialias=True)`. Non-integer
+scale factors are supported but may differ from PyTorch because of
+existing index-selection differences.
+For `"cubic"` mode, enabling `antialias` also changes the cubic
+kernel coefficient from `a=-0.75` (OpenCV convention) to `a=-0.5`
+(PIL/Pillow convention), matching PyTorch’s behavior. This affects the
+interpolant shape, not just the filter width.
+`antialias=True` with `align_corners=True` is not supported and
+will raise a `ValueError`.
+
 Parameters:
 
 **scale_factor** ([float](https://docs.python.org/3/library/functions.html#float)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)) – The multiplier for the spatial size.
@@ -59,6 +78,11 @@ number of spatial dimensions.
 **align_corners** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Changes the way the corners are treated
 during `"linear"` and `"cubic"` upsampling.  See the note above and the
 examples below for more details.  Default: `False`.
+**antialias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, apply an antialiasing filter
+when downsampling with `"linear"` or `"cubic"` mode. For
+`"cubic"` mode this also switches the kernel coefficient to
+`a=-0.5`. Not supported with `"nearest"` mode or with
+`align_corners=True`. Default: `False`.
 
 Examples
 >>> import mlx.core as mx

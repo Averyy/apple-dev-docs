@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/layers.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Layers
@@ -97,4 +101,4 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/layers.html
 | TransformerDecoderLayer(dims, num_heads, ...) |  |
 | TransformerEncoder(num_layers, dims, ...[, ...]) |  |
 | TransformerEncoderLayer(dims, num_heads, ...) |  |
-| Upsample(scale_factor[, mode, align_corners]) | Upsample the input signal spatially. |
+| Upsample(scale_factor[, mode, ...]) | Upsample the input signal spatially. |

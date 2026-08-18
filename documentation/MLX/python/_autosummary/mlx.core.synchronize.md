@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sy
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.synchronize
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sy
 
 # mlx.core.synchronize
 
-**synchronize(*stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [None](https://docs.python.org/3/library/constants.html#None)**
+**synchronize(*stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [None](https://docs.python.org/3/library/constants.html#None)**
 : Synchronize with the given stream.
 
 Parameters:

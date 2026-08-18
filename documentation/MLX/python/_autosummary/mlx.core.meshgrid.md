@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.me
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.meshgrid
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.me
 
 # mlx.core.meshgrid
 
-**meshgrid(**arrays: array*, *sparse: bool | None = False*, *indexing: str | None = 'xy'*, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**meshgrid(**arrays: array*, *sparse: bool | None = False*, *indexing: str | None = 'xy'*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), ...]**
 : Generate multidimensional coordinate grids from 1-D coordinate arrays
 
 Parameters:
@@ -45,6 +49,6 @@ Returns:
 The output arrays.
 
 Return type:
-[list](https://docs.python.org/3/library/stdtypes.html#list)([array](mlx.core.array.html#mlx.core.array))
+[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array))
 
 ** Contents

@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ne
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.new_thread_local_stream
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ne
 
 # mlx.core.new_thread_local_stream
 
-**new_thread_local_stream(*device: Device*) → mlx.core.ThreadLocalStream**
+**new_thread_local_stream(*device: Device | DeviceType*) → [ThreadLocalStream](mlx.core.ThreadLocalStream.html#mlx.core.ThreadLocalStream)**
 : Make a new stream that will be unique per thread.
 
 ** Contents

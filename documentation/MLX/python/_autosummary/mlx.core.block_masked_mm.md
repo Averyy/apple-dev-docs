@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.bl
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.block_masked_mm
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.bl
 
 # mlx.core.block_masked_mm
 
-**block_masked_mm(*a: array*, *b: array*, */*, *block_size: int = 64*, *mask_out: array | None = None*, *mask_lhs: array | None = None*, *mask_rhs: array | None = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**block_masked_mm(*a: array*, *b: array*, */*, *block_size: int = 64*, *mask_out: array | None = None*, *mask_lhs: array | None = None*, *mask_rhs: array | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Matrix multiplication with block masking.
 Perform the (possibly batched) matrix multiplication of two arrays and with blocks
 of size `block_size x block_size` optionally masked out.

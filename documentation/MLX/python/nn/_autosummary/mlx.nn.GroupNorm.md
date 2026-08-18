@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.G
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.nn.GroupNorm
@@ -47,11 +51,12 @@ Parameters:
 
 **num_groups** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of groups to separate the features into
 **dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The feature dimensions of the input to normalize over
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A small additive constant for numerical stability
+**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A small additive constant for numerical stability.
+Default: `1e-5`.
 **affine** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If True learn an affine transform to apply after the
-normalization.
+normalization. Default: `True`.
 **pytorch_compatible** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If True perform the group normalization in
-the same order/grouping as PyTorch.
+the same order/grouping as PyTorch. Default: `False`.
 
 Methods
 

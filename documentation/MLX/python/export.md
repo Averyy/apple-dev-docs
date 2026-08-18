@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/export.html
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Export Functions
@@ -29,6 +33,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/export.html
 
 | export_function(file_or_callback, fun, *args) | Export an MLX function. |
 | --- | --- |
-| import_function(file) | Import a function from a file. |
-| exporter(file, fun, *[, shapeless]) | Make a callable object to export multiple traces of a function to a file. |
+| import_function(file[, return_metadata]) | Import a function from a file. |
+| exporter(file, fun, *[, shapeless, metadata]) | Make a callable object to export multiple traces of a function to a file. |
 | export_to_dot(file, *args, **kwargs) | Export a graph to DOT format for visualization. |

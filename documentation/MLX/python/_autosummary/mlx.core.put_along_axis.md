@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pu
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # mlx.core.put_along_axis
@@ -29,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pu
 
 # mlx.core.put_along_axis
 
-**put_along_axis(*a: array*, */*, *indices: array*, *values: array*, *axis: int | None = None*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**put_along_axis(*a: array*, */*, *indices: array*, *values: array*, *axis: int | None = None*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Put values along an axis at the specified indices.
 
 Parameters:

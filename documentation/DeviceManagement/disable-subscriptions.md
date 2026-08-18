@@ -11,7 +11,7 @@ Send a POST request to declare that your device management service doesn’t sup
 
 This request takes no body. The server processes it synchronously and returns the resulting `subscriptionManagement` state.
 
-> ❗ **Important**:  Disabling is a positive declaration that an organizational unit doesn’t support subscriptions. It isn’t a way to reverse an earlier [`Enable Subscriptions`](enable-subscriptions.md) request — after an organizational unit opts in as enabled, you can’t disable it.
+> ❗ **Important**:  Disabling is a positive declaration that an organizational unit doesn’t support subscriptions. You can also use it to reverse an earlier [`Enable Subscriptions`](enable-subscriptions.md) request, but only while the organizational unit has no subscriptions. If any subscriptions exist there, the request fails with error `9818` (`Subscriptions exist for the organizational unit, so subscription management can't be disabled.`). For more information, see [`Handling error responses`](handling-error-responses.md).
 
 ##### Example Request and Response
 

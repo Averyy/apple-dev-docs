@@ -19,6 +19,10 @@ url: https://ml-explore.github.io/mlx/build/html/examples/tensor_parallelism.htm
 **
 **
 
+- **System Settings
+- **Light
+- **Dark
+
 **
 
 # Tensor Parallelism
