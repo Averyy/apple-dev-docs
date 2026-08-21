@@ -1,4 +1,4 @@
 Completed scraping Address Book!
-Total pages scraped: 1
-Pages skipped (unchanged): 584
+Total pages scraped: 3
+Pages skipped (unchanged): 582
 Pages failed: 0

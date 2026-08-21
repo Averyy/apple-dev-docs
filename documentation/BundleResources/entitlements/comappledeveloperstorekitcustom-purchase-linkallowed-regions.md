@@ -1,4 +1,4 @@
-# com.apple.developer.storekit.custom-purchase-link.allowed-regions
+# StoreKit external purchases or offers entitlement
 
 **Framework**: Bundle Resources  
 **Kind**: typealias
@@ -36,6 +36,8 @@ If your account receives this entitlement, you can add it to your app by opening
 ```
 
 > ❗ **Important**: Provide the regions where you intend to offer this functionality. This must only include regions where Apple supports custom purchase link options.
+
+In addition to Brazil (br) and Japan (jp), the permitted EU country codes include: Austria (at), Belgium (be), Bulgaria (bg), Croatia (hr), Cyprus (cy), Czechia (cz), Denmark (dk), Estonia (ee), Finland (fi), France (fr), Germany (de), Greece (gr), Hungary (hu), Ireland (ie), Italy (it), Latvia (lv), Lithuania (lt), Luxembourg (lu), Malta (mt), Netherlands (nl), Poland (pl), Portugal (pt), Romania (ro), Slovakia (sk), Slovenia (si), Spain (es), Sweden (se).
 
 For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 

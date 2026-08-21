@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-18T07:41:08.386207",
+    "last_updated": "2026-08-21T07:42:31.584838",
     "total_pages": 34,
-    "session_id": "2026-08-18T07:41:05.891826"
+    "session_id": "2026-08-21T07:42:28.711736"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AccountDataTransfer.json": {
       "hash": "7589be71afa17314e85606d8a7732e05176c13686482984bca27d0205119ada0",
-      "last_checked": "2026-08-18T07:41:06.235877",
+      "last_checked": "2026-08-21T07:42:29.020088",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"7bfc-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/AccountDataTransfer.md"
     },
     "https://developer.apple.com/documentation/AccountDataTransfer": {
       "hash": "7589be71afa17314e85606d8a7732e05176c13686482984bca27d0205119ada0",
-      "last_checked": "2026-08-18T07:41:06.119991",
+      "last_checked": "2026-08-21T07:42:28.927622",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"7bfc-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/AccountDataTransfer.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/submit-request.json": {
       "hash": "1a5073609df5be9d27e286c37b12e6e2436b9a344b99ec2fad4b8b8a21b8432f",
-      "last_checked": "2026-08-18T07:41:06.447812",
+      "last_checked": "2026-08-21T07:42:29.230310",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"2412-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/submit-request.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/jobsubmission.json": {
       "hash": "2a5700ab5f17ae663cb7c4402005db2684805194a240741b04ba313879ab49d6",
-      "last_checked": "2026-08-18T07:41:06.569168",
+      "last_checked": "2026-08-21T07:42:29.370537",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1a53-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/jobsubmission.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/createdjob.json": {
       "hash": "6b206483fc6b93d65607768c57b6c154a0a907043627fb7ef552bb557b6e9dbf",
-      "last_checked": "2026-08-18T07:41:06.712334",
+      "last_checked": "2026-08-21T07:42:29.559241",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"2312-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/createdjob.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/resubmit-request.json": {
       "hash": "9196763eb62435d5e26a40abe13618433767ec82a81057ca1690b30910139516",
-      "last_checked": "2026-08-18T07:41:06.877071",
+      "last_checked": "2026-08-21T07:42:29.692224",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"21b6-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/resubmit-request.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/resubmissionrequest.json": {
       "hash": "de39ff367c68a6b5b15290155c7f2c9534973dd0ef2ad601983261af4d9e6810",
-      "last_checked": "2026-08-18T07:41:06.982977",
+      "last_checked": "2026-08-21T07:42:29.829990",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1dcf-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/resubmissionrequest.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/resubmissionresponse.json": {
       "hash": "f01d47e651cc228a72acb9f67f47983131c84b3f28cc797d1de6d282ff12252b",
-      "last_checked": "2026-08-18T07:41:07.149562",
+      "last_checked": "2026-08-21T07:42:29.976734",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"2016-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/resubmissionresponse.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-one-time-request-status.json": {
       "hash": "d779200180ec359e093fc7aef4fb3b4b562785e2ea3cc6ef770d9c269dac95a5",
-      "last_checked": "2026-08-18T07:41:07.270842",
+      "last_checked": "2026-08-21T07:42:30.088466",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"171c-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/get-one-time-request-status.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-recurring-request-status.json": {
       "hash": "ff3471177eb17a3edcc52d3456a2a08f2ed121b2147747638c4d2b7ff9d9fbeb",
-      "last_checked": "2026-08-18T07:41:07.312738",
+      "last_checked": "2026-08-21T07:42:30.295178",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"18d5-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/get-recurring-request-status.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/requeststatus.json": {
       "hash": "ac6193b4204e2d6988468b653dc71e1c062575cb84cbadb8cca0ddcac9c5295f",
-      "last_checked": "2026-08-18T07:41:07.419030",
+      "last_checked": "2026-08-21T07:42:30.477574",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"14a7-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/requeststatus.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-one-time-request-download-urls.json": {
       "hash": "784141dd1cd560a50d20c209106285ed1eb08ad6176f1e5eb458be7118ee25a4",
-      "last_checked": "2026-08-18T07:41:07.563912",
+      "last_checked": "2026-08-21T07:42:30.645244",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1c00-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/get-one-time-request-download-urls.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-recurring-request-download-urls.json": {
       "hash": "a6b08df64be4efbddc5d3f8461f604612c791573be62fb992c55ff2e2ea96840",
-      "last_checked": "2026-08-18T07:41:07.695215",
+      "last_checked": "2026-08-21T07:42:30.772747",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1db7-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/get-recurring-request-download-urls.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/downloadlinks.json": {
       "hash": "162fbecaec24ffb2fe0ab92f862ef2531b55b897543caea96d81df42db283842",
-      "last_checked": "2026-08-18T07:41:07.873081",
+      "last_checked": "2026-08-21T07:42:30.911098",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1d42-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/downloadlinks.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/downloaderror.json": {
       "hash": "91c770449a2cf263d16f2f4d4cc558cc7096789c33ded1be88cf1d73247e2550",
-      "last_checked": "2026-08-18T07:41:07.977024",
+      "last_checked": "2026-08-21T07:42:31.067566",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1aec-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/downloaderror.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/cancel-request.json": {
       "hash": "3e55b90158541dce7b2fcce4423776e7ffa43d7b9d8958d533b037f0b1642969",
-      "last_checked": "2026-08-18T07:41:08.105431",
+      "last_checked": "2026-08-21T07:42:31.205171",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1c04-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/cancel-request.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/cancellationrequest.json": {
       "hash": "81d3839a754b08a87c6dba35ce57523a6ca9de4ae69cb3ca0d16942c6a378111",
-      "last_checked": "2026-08-18T07:41:08.244640",
+      "last_checked": "2026-08-21T07:42:31.368663",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"1305-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/cancellationrequest.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/cancellationresponse.json": {
       "hash": "a90ac1cbc79c1e67bf784448a31f0d4c469f37f0617cb87408e5b70bd5af061c",
-      "last_checked": "2026-08-18T07:41:08.384879",
+      "last_checked": "2026-08-21T07:42:31.503373",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:05.891826",
+      "session_id": "2026-08-21T07:42:28.711736",
       "etag": "\"13b5-6585804fac95c-df\"",
       "file_path": "documentation/AccountDataTransfer/cancellationresponse.md"
     },

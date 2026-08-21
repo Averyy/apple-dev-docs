@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-18T07:40:50.901570",
+    "last_updated": "2026-08-21T07:42:10.883251",
     "total_pages": 124,
-    "session_id": "2026-08-18T07:40:41.748663"
+    "session_id": "2026-08-21T07:42:00.430655"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SoundAnalysis.json": {
       "hash": "b713a2971448fe53a7eaef366fe7a5467e80bf6fbd690f8b0a44ae997c681c96",
-      "last_checked": "2026-08-18T07:40:42.064428",
+      "last_checked": "2026-08-21T07:42:00.720044",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3f7c-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/SoundAnalysis.md"
     },
     "https://developer.apple.com/documentation/SoundAnalysis": {
       "hash": "b713a2971448fe53a7eaef366fe7a5467e80bf6fbd690f8b0a44ae997c681c96",
-      "last_checked": "2026-08-18T07:40:41.947312",
+      "last_checked": "2026-08-21T07:42:00.597574",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3f7c-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/SoundAnalysis.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/classifying-sounds-in-an-audio-file.json": {
       "hash": "df90402d7e7923dd3f8ee58889c1d66d5d4b1a9373a8b8a1d7050f60195ab296",
-      "last_checked": "2026-08-18T07:40:42.273821",
+      "last_checked": "2026-08-21T07:42:00.968028",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"6d8b-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/classifying-sounds-in-an-audio-file.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer.json": {
       "hash": "ed8e36d6ad988b3daefc793f908b3e43c757a10e3f99da702bc932a22558a5a1",
-      "last_checked": "2026-08-18T07:40:42.482683",
+      "last_checked": "2026-08-21T07:42:01.117084",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"7acf-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/classifying-sounds-in-an-audio-stream.json": {
       "hash": "9571f277dafd32a7cc26b28870108ac489f97ec5e35bdf7f305bd05d76ece185",
-      "last_checked": "2026-08-18T07:40:42.629773",
+      "last_checked": "2026-08-21T07:42:01.254210",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"575f-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/classifying-sounds-in-an-audio-stream.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiostreamanalyzer.json": {
       "hash": "01d8962644df19f3145a58e1c9c96f84bd280802645391da4047278d72596a77",
-      "last_checked": "2026-08-18T07:40:42.782402",
+      "last_checked": "2026-08-21T07:42:01.405409",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"7353-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiostreamanalyzer.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/classifying-live-audio-input-with-a-built-in-sound-classifier.json": {
       "hash": "2d19a2e1c17b752b36b9dc3a49a5f1c1fee834becca6d81f93fd265b196d3218",
-      "last_checked": "2026-08-18T07:40:42.919837",
+      "last_checked": "2026-08-21T07:42:01.661649",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"1a2b-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/classifying-live-audio-input-with-a-built-in-sound-classifier.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest.json": {
       "hash": "bfd265a5928706ec31e995a90a8ff1cb6d1b376ece0061ebf741b03e7efb0b78",
-      "last_checked": "2026-08-18T07:40:43.271329",
+      "last_checked": "2026-08-21T07:42:01.803373",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"8cb3-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassificationresult.json": {
       "hash": "f29e508ae5f7eddeb09bd8871648e5fd92ad38812a3844127868fc5e1b49d6fe",
-      "last_checked": "2026-08-18T07:40:43.360385",
+      "last_checked": "2026-08-21T07:42:01.952254",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"6459-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassificationresult.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror.json": {
       "hash": "934561d01919bd778c1ea132fc40e5b78f9455abd62a19d49b58f72b00bccdee",
-      "last_checked": "2026-08-18T07:40:43.512174",
+      "last_checked": "2026-08-21T07:42:02.106996",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3c45-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snerror.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/code.json": {
       "hash": "1052becf8f0cf5a8ed7150e8db04a589d467662d20d5d65e3419c8705803c673",
-      "last_checked": "2026-08-18T07:40:43.644252",
+      "last_checked": "2026-08-21T07:42:02.243665",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"4cb1-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/code.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerrordomain.json": {
       "hash": "d0fab4c85ae3d56357dd14eda355bc1674ab9c08ef88ea6a2bc472d52dc394c2",
-      "last_checked": "2026-08-18T07:40:43.789905",
+      "last_checked": "2026-08-21T07:42:02.390897",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2203-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerrordomain.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/add(_:withobserver:).json": {
       "hash": "89fa7cec7c06ca280786d082b8930b3d54269526b91dd1ec83360484b480ec5c",
-      "last_checked": "2026-08-18T07:40:44.022448",
+      "last_checked": "2026-08-21T07:42:02.797622",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"45e6-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/add-withobserver.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snrequest.json": {
       "hash": "fa3afd442accf2aff6f6a90633d9290c0fd10a532b4bf5eb2468aca4789ae5f9",
-      "last_checked": "2026-08-18T07:40:44.207031",
+      "last_checked": "2026-08-21T07:42:02.953651",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3d3b-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snrequest.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snresultsobserving.json": {
       "hash": "e18a8c14dcfada4806a3e8e4dd7956faca56f7978fbfbda03422c5eb1eb0a7da",
-      "last_checked": "2026-08-18T07:40:44.352385",
+      "last_checked": "2026-08-21T07:42:03.278680",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"540d-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snresultsobserving.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/remove(_:).json": {
       "hash": "7c4634c3bb084a47f42f32bf97511bea8f9e8e6200815d95b04e5716dfde756e",
-      "last_checked": "2026-08-18T07:40:44.481460",
+      "last_checked": "2026-08-21T07:42:03.537173",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3998-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/remove.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/removeallrequests().json": {
       "hash": "4441e3c23ccaa67cf2297d3729abdbded78e4a3ce70d081fe4a54263f1d6759f",
-      "last_checked": "2026-08-18T07:40:44.611534",
+      "last_checked": "2026-08-21T07:42:03.684524",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"349f-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/removeallrequests.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/analyze().json": {
       "hash": "1dffd5ad8954225c2d265715f4da74d782251db44fbd634a91d51bb61a4236ba",
-      "last_checked": "2026-08-18T07:40:44.753520",
+      "last_checked": "2026-08-21T07:42:03.934104",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2e7e-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/analyze.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/analyze(completionhandler:).json": {
       "hash": "6169a9d15225307b9dd21355ed738a03c082db15f6f0244dd02815809f19294f",
-      "last_checked": "2026-08-18T07:40:44.895813",
+      "last_checked": "2026-08-21T07:42:04.212121",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3cec-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/analyze-completionhandler.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/cancelanalysis().json": {
       "hash": "701cd5124e242fcf6f639491c7a1ce112a0a429e711808a55774f508f782cd9b",
-      "last_checked": "2026-08-18T07:40:45.044161",
+      "last_checked": "2026-08-21T07:42:04.351420",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2ba7-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/cancelanalysis.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiostreamanalyzer/init(format:).json": {
       "hash": "e3b1fa586fcad0b4ddc9fe53e7649b3f0625b40b4c3e9b4afee74401b198353d",
-      "last_checked": "2026-08-18T07:40:45.325026",
+      "last_checked": "2026-08-21T07:42:04.639270",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"25e9-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiostreamanalyzer/init-format.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiostreamanalyzer/add(_:withobserver:).json": {
       "hash": "d453b7c86596c7fcec3cf68d031b11b8054581690803949c8eaec557308d2287",
-      "last_checked": "2026-08-18T07:40:45.481624",
+      "last_checked": "2026-08-21T07:42:04.793400",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"4987-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiostreamanalyzer/add-withobserver.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiostreamanalyzer/remove(_:).json": {
       "hash": "f599ee6ccb94a0ba8210f1f2d8a760b07d72bdd0030046d6059f7c6bbd8ebabc",
-      "last_checked": "2026-08-18T07:40:45.618657",
+      "last_checked": "2026-08-21T07:42:04.989434",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3a00-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiostreamanalyzer/remove.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiostreamanalyzer/removeallrequests().json": {
       "hash": "12de8d5efbf232628c0dba676a5caad5d8a29c54ff6529033991176c05fd7416",
-      "last_checked": "2026-08-18T07:40:45.769352",
+      "last_checked": "2026-08-21T07:42:05.128585",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3507-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiostreamanalyzer/removeallrequests.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiostreamanalyzer/analyze(_:ataudioframeposition:).json": {
       "hash": "339d6829bc4ba5aca786e64527504e32a530bfbdd84b6d194c6b2f80a92db1ca",
-      "last_checked": "2026-08-18T07:40:45.923664",
+      "last_checked": "2026-08-21T07:42:05.256748",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"44fb-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiostreamanalyzer/analyze-ataudioframeposition.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiostreamanalyzer/completeanalysis().json": {
       "hash": "ca63117e07e2c8669ff09a93c6b32f6ad7dd3dc6df9a2d98f52ef933dfea0b31",
-      "last_checked": "2026-08-18T07:40:46.057413",
+      "last_checked": "2026-08-21T07:42:05.538652",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"27dd-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiostreamanalyzer/completeanalysis.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest/init(classifieridentifier:).json": {
       "hash": "019d547e687bc9e3bfa2c6f89041a8e330200044156623aaa4f8c8a55ae4531f",
-      "last_checked": "2026-08-18T07:40:46.296077",
+      "last_checked": "2026-08-21T07:42:05.837312",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3b08-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest/init-classifieridentifier.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifieridentifier.json": {
       "hash": "9f37ae0a9c842f1fb5e57beac65471c924c8903c68b08aab0377f40eb67d7063",
-      "last_checked": "2026-08-18T07:40:46.476130",
+      "last_checked": "2026-08-21T07:42:05.985619",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3d9d-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifieridentifier.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest/overlapfactor.json": {
       "hash": "eca8e5f1b2f64c23a84a7591231772cc92176dc8c5b57f8c8f7f2952426a808f",
-      "last_checked": "2026-08-18T07:40:46.749382",
+      "last_checked": "2026-08-21T07:42:06.136079",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2cd4-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest/overlapfactor.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest/windowduration.json": {
       "hash": "718f3a456f3864c4747bd9ce6e0b484a603f04a513d9190393fcbbdd69852366",
-      "last_checked": "2026-08-18T07:40:46.848194",
+      "last_checked": "2026-08-21T07:42:06.284467",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2f85-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest/windowduration.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest/knownclassifications.json": {
       "hash": "1f030bb1db921489eef09e6ae1afe267d513505e103ed7272a36f5324c06b581",
-      "last_checked": "2026-08-18T07:40:46.976819",
+      "last_checked": "2026-08-21T07:42:06.422649",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2931-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest/knownclassifications.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/sntimedurationconstraint-swift.enum.json": {
       "hash": "e4ba2fa33cd8215492dab0f5c8ca629b916d71dddf5e00e9c5e4735c97e9ac0d",
-      "last_checked": "2026-08-18T07:40:47.158568",
+      "last_checked": "2026-08-21T07:42:06.564660",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"1c82-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/sntimedurationconstraint-swiftenum.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest/windowdurationconstraint-5no60.json": {
       "hash": "6dd05ef2fe406fd0fca26b4ee8d8a531a8ec49ef172b6ce2eee851bca7a76140",
-      "last_checked": "2026-08-18T07:40:47.253955",
+      "last_checked": "2026-08-21T07:42:06.709964",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"1fcc-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest/windowdurationconstraint-5no60.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassificationresult/timerange.json": {
       "hash": "9b5452b82e57fa07dcbb4118c2cc3ddc74e55460777b9793c3844016322018aa",
-      "last_checked": "2026-08-18T07:40:47.544549",
+      "last_checked": "2026-08-21T07:42:07.107273",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3a0c-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassificationresult/timerange.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassificationresult/classifications.json": {
       "hash": "129f8081415702aed8da0e9faae6a360a8ba4b2270304f524a12f3bb4226e3fa",
-      "last_checked": "2026-08-18T07:40:47.666680",
+      "last_checked": "2026-08-21T07:42:07.269220",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3368-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassificationresult/classifications.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassification.json": {
       "hash": "45f82eebbad2c880a8283ccc80dd5a98223a2084ff9062f0d8a90ad4eaa5f31d",
-      "last_checked": "2026-08-18T07:40:47.786757",
+      "last_checked": "2026-08-21T07:42:07.416766",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"4e5d-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassification.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassificationresult/classification(foridentifier:).json": {
       "hash": "df59021ba2abd95b6e650de81fb179a43a1d9177c3b6244c5ba642f6d75c4d2d",
-      "last_checked": "2026-08-18T07:40:47.920369",
+      "last_checked": "2026-08-21T07:42:07.617834",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"41f0-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassificationresult/classification-foridentifier.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snresult.json": {
       "hash": "ab9ecf6f1a27fe471ab7774fdb1c5bd4039cf8eedbb89f0672c571ab908a66aa",
-      "last_checked": "2026-08-18T07:40:48.033759",
+      "last_checked": "2026-08-21T07:42:07.760128",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"39cb-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snresult.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/invalidmodel.json": {
       "hash": "4f967aadf0e36bda08201c9253b3027fbedac39a207f69b4445fad455f271838",
-      "last_checked": "2026-08-18T07:40:48.213929",
+      "last_checked": "2026-08-21T07:42:07.898637",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"26db-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/invalidmodel.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/invalidformat.json": {
       "hash": "8670eb56df27701642b988797163ff9fb62a26407cc650800f01b740ccfb3bc4",
-      "last_checked": "2026-08-18T07:40:48.316953",
+      "last_checked": "2026-08-21T07:42:08.038723",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"26bd-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/invalidformat.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/invalidfile.json": {
       "hash": "d2f316d1fe0dbfc42895ac8b0ac5dff5aa3f851550a21c6ee853ef2708f0d2ca",
-      "last_checked": "2026-08-18T07:40:48.477350",
+      "last_checked": "2026-08-21T07:42:08.180639",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"26a4-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/invalidfile.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/operationfailed.json": {
       "hash": "beb990ac95418a33f42c6bfbe99d5184e61a9b91e5ea619736807cd7ebb72126",
-      "last_checked": "2026-08-18T07:40:48.566492",
+      "last_checked": "2026-08-21T07:42:08.311414",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"26c6-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/operationfailed.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/unknownerror.json": {
       "hash": "69acdea22ca3938e02d8490bb46c8584b72a152a75c9e469c73742153d8b9375",
-      "last_checked": "2026-08-18T07:40:48.697475",
+      "last_checked": "2026-08-21T07:42:08.439336",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"26b7-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/unknownerror.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/errordomain.json": {
       "hash": "7cf7fdb7147b0400d7947dc14f1761b33e7871e0c0e7f7864e456c1031c5dde3",
-      "last_checked": "2026-08-18T07:40:48.882016",
+      "last_checked": "2026-08-21T07:42:08.587525",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"18c3-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/errordomain.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/code/invalidmodel.json": {
       "hash": "5a7bf69498535a4c4b4876fbec99a43007207e824d0190ab8f565d70011ad4a9",
-      "last_checked": "2026-08-18T07:40:48.978602",
+      "last_checked": "2026-08-21T07:42:08.725138",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"310c-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/code/invalidmodel.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/code/invalidformat.json": {
       "hash": "30d25ed2622557d659f820efaae1a002ee22ebc4afe500c5a1334dc0e8708c92",
-      "last_checked": "2026-08-18T07:40:49.099136",
+      "last_checked": "2026-08-21T07:42:08.870571",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"30f2-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/code/invalidformat.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/code/invalidfile.json": {
       "hash": "f1cb3e11f1fdf8f11e9cd8ceeb44b1aaef80b49b5cb2131253984af1189824eb",
-      "last_checked": "2026-08-18T07:40:49.252189",
+      "last_checked": "2026-08-21T07:42:09.006116",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"30d1-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/code/invalidfile.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/code/operationfailed.json": {
       "hash": "a2f3df1786f6a7b7555d47ea2cabed2a52f287a5f70a6af62a7661be6533af0f",
-      "last_checked": "2026-08-18T07:40:49.345720",
+      "last_checked": "2026-08-21T07:42:09.274077",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3103-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/code/operationfailed.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/code/unknownerror.json": {
       "hash": "76da5f2d7c67d29c810ce600af9a6cc09f5df7cc4a9b7a9b4e4ad0220fb94eed",
-      "last_checked": "2026-08-18T07:40:49.466010",
+      "last_checked": "2026-08-21T07:42:09.416640",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"30e8-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/code/unknownerror.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snerror/code/init(rawvalue:).json": {
       "hash": "2b78d4e4839638419895a4ee4c5ab7064242fa72f052222f0d3a1bc49ec738e4",
-      "last_checked": "2026-08-18T07:40:49.598760",
+      "last_checked": "2026-08-21T07:42:09.561542",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"170f-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snerror/code/init-rawvalue.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snresultsobserving/request(_:didproduce:).json": {
       "hash": "b2cbd2839de47afb17bf19ac86dce3e9079dfda171123ca5b4f2da80ab5e3242",
-      "last_checked": "2026-08-18T07:40:49.725103",
+      "last_checked": "2026-08-21T07:42:09.706364",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3ee4-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snresultsobserving/request-didproduce.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snresultsobserving/request(_:didfailwitherror:).json": {
       "hash": "52c0287f475136394abb1130a0b25cfa3725a75823aec6174c3d097d6be6cea1",
-      "last_checked": "2026-08-18T07:40:49.856472",
+      "last_checked": "2026-08-21T07:42:09.857067",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"415f-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snresultsobserving/request-didfailwitherror.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snresultsobserving/requestdidcomplete(_:).json": {
       "hash": "f13fecc05f0821be388b2cbd967e249c6d450b32ecc2483c0a647867293e054c",
-      "last_checked": "2026-08-18T07:40:50.040576",
+      "last_checked": "2026-08-21T07:42:10.006928",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3a7c-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snresultsobserving/requestdidcomplete.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifieridentifier/version1.json": {
       "hash": "dcfbf843e37fa3442987f5c3d51e872a420a86066263e16bd3a6a1e8db5da29a",
-      "last_checked": "2026-08-18T07:40:50.153123",
+      "last_checked": "2026-08-21T07:42:10.142104",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2018-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifieridentifier/version1.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifieridentifier/init(rawvalue:).json": {
       "hash": "f6fe317f041146f7e2ff425380161708b21b9a7d02b0812e95aa921eff7ea6f9",
-      "last_checked": "2026-08-18T07:40:50.266722",
+      "last_checked": "2026-08-21T07:42:10.292272",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"1d70-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifieridentifier/init-rawvalue.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/sntimedurationconstraint-swift.enum/durationrange(_:).json": {
       "hash": "d09648a8cd76d466d578dad2ea077e72a5659b3a607451234dd6238b7dab7ff4",
-      "last_checked": "2026-08-18T07:40:50.438865",
+      "last_checked": "2026-08-21T07:42:10.428313",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"1b76-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/sntimedurationconstraint-swift.enum/durationrange.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/sntimedurationconstraint-swift.enum/enumerateddurations(_:).json": {
       "hash": "2dc8fba809e93c73d2ef3d433b507b229621f5a6aaf3e0908e970d5fd231b7b3",
-      "last_checked": "2026-08-18T07:40:50.547721",
+      "last_checked": "2026-08-21T07:42:10.561098",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"1b5b-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/sntimedurationconstraint-swift.enum/enumerateddurations.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassification/identifier.json": {
       "hash": "f9f284f92ec809a6f7571243226051d7794a68343d70af3d0eebcad6b8f6b693",
-      "last_checked": "2026-08-18T07:40:50.651920",
+      "last_checked": "2026-08-21T07:42:10.691270",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"2931-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassification/identifier.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassification/confidence.json": {
       "hash": "5ba59a4ba8ab512fd110aaac1e722a78b29d2a6c1c44fbdb61a9e8f28b2e10b2",
-      "last_checked": "2026-08-18T07:40:50.823236",
+      "last_checked": "2026-08-21T07:42:10.865445",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"27dc-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snclassification/confidence.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/init(url:)-336no.json": {
       "hash": "4222c0b1b91705d40f6a25566d095bbda66f0de305db22dc5e1779d93acd4d0a",
-      "last_checked": "2026-08-18T07:40:43.892925",
+      "last_checked": "2026-08-21T07:42:02.531888",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"27c0-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/init-url-336no.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snaudiofileanalyzer/init(url:)-2skhg.json": {
       "hash": "e4c90789df231b3f444e9450f99de92b8d3de84eef3adf152fc011b6201e7759",
-      "last_checked": "2026-08-18T07:40:45.191290",
+      "last_checked": "2026-08-21T07:42:04.497384",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"16a8-6585827f8b28c-df\"",
       "file_path": "documentation/SoundAnalysis/snaudiofileanalyzer/init-url-2skhg.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest/init(mlmodel:)-6rmee.json": {
       "hash": "99826701f4c2e01ce22c8b18bd792ecacab6b5bb02a7f900e6bcbf2934f80e27",
-      "last_checked": "2026-08-18T07:40:46.204529",
+      "last_checked": "2026-08-21T07:42:05.690210",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"3b27-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest/init-mlmodel-6rmee.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/soundanalysis/snclassifysoundrequest/init(mlmodel:)-9p7qz.json": {
       "hash": "302ce7bb0a1dae4cbf68e90557c8d8d6e0826bad322ba7bab712f11a7e3d1c0a",
-      "last_checked": "2026-08-18T07:40:47.390504",
+      "last_checked": "2026-08-21T07:42:06.849349",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:40:41.748663",
+      "session_id": "2026-08-21T07:42:00.430655",
       "etag": "\"178a-6585827fa50a1-df\"",
       "file_path": "documentation/SoundAnalysis/snclassifysoundrequest/init-mlmodel-9p7qz.md"
     },

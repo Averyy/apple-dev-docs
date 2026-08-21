@@ -29,7 +29,7 @@ enum ExternalPurchaseCustomLink
 
 This functionality is only available to apps with the any of the following entitlements:
 
-- [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions)
+- [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions)
 - [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link)
 - [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming)
 
@@ -44,7 +44,7 @@ For more information, see:
 
 If your account receives the StoreKit External Custom Purchase Link Regions entitlement, in Brazil your app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases starting in iOS 26.5.  To use this API, complete the following steps:
 
-- Configure the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
+- Configure the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether the API is available at runtime. If the value is `false`, don’t continue to use this API. For more information, see  [`isEligible`](externalpurchasecustomlink/iseligible.md).
 - Call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function before every potential transaction to request external purchase tokens, using the token types `IN_APP` or `LINK_OUT`. For more information, see [`token(for:)`](externalpurchasecustomlink/token(for:).md).
 - Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
@@ -54,7 +54,7 @@ If your account receives the StoreKit External Custom Purchase Link Regions enti
 
 If your account receives the StoreKit External Custom Purchase Link Regions entitlement, in Japan your app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases starting in iOS 26.2.  To use this API, complete the following steps:
 
-- Configure the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
+- Configure the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether the API is available at runtime. If the value is `false`, don’t continue to use this API. For more information, see  [`isEligible`](externalpurchasecustomlink/iseligible.md).
 - Starting in iOS 26.4, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function before every potential transaction to request external purchase tokens, using the token types `IN_APP` or `LINK_OUT`. For more information, see [`token(for:)`](externalpurchasecustomlink/token(for:).md).
 - Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
@@ -64,7 +64,7 @@ If your account receives the StoreKit External Custom Purchase Link Regions enti
 
 If your account receives the StoreKit External Purchase Link (EU) entitlement or the StoreKit External Custom Purchase Link Regions entitlement, in the EU your app can use the `ExternalPurchaseCustomLink` API to implement external purchases. To use this API, complete the following steps:
 
-- Depending on the entitlement you receive, configure the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app, or configure the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) entitlement and the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasecustomlinkregions) property list key, including the country code for each permitted region where your app implements external purchases.
+- Depending on the entitlement you receive, configure the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app, or configure the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) entitlement and the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasecustomlinkregions) property list key, including the country code for each permitted region where your app implements external purchases.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the `ExternalPurchaseCustomLink` API to determine whether the API is available at runtime. If the value is false, don’t continue to use this API. See [`isEligible`](externalpurchasecustomlink/iseligible.md) for more details.
 - At launch and before every potential transaction, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
 - Call the [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) function after a deliberate customer interaction, such as tapping a button, that can lead to a potential external purchase.
@@ -185,7 +185,7 @@ struct MyView: View {
 
 - [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
   A token you use with the External Purchase custom link API.
-- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](../bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+- [StoreKit external purchases or offers entitlement](../bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 - [com.apple.developer.storekit.external-purchase-link](../bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.

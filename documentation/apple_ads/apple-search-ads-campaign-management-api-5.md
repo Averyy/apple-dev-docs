@@ -6,9 +6,7 @@ Learn about changes to Apple Ads Campaign Management API 5.
 
 #### Overview
 
-API 5 is the current version.
-
-The new Apple Ads Platform API will be coming in Summer 2026. To learn more about the new Platform API, see the [`preview guide`](https://developer.apple.comhttps://ads.apple.com/adsdam/app-store/us/en_us/documents/api-preview-guide.pdf). The Apple Ads Campaign Management API will be sunset on January 26, 2027.
+> ❗ **Important**: The [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) supersedes the Apple Ads Campaign Management API, which will be sunset on January 26, 2027.
 
 ##### 56
 

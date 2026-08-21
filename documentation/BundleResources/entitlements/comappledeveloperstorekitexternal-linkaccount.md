@@ -29,7 +29,7 @@ If your developer account has this entitlement, add it to your app by opening th
 
 ## See Also
 
-- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+- [StoreKit external purchases or offers entitlement](entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 - [com.apple.developer.storekit.external-purchase](entitlements/com.apple.developer.storekit.external-purchase.md)
   A Boolean value that indicates whether your app can offer external purchases.

@@ -41,7 +41,7 @@ For more information, see [`External Purchase`](https://developer.apple.com/docu
 
 ## See Also
 
-- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+- [StoreKit external purchases or offers entitlement](entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 - [com.apple.developer.storekit.external-link.account](entitlements/com.apple.developer.storekit.external-link.account.md)
   A Boolean value that indicates whether your app can link to an external website for account creation or management.

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-18T07:41:05.888757",
+    "last_updated": "2026-08-21T07:42:28.287814",
     "total_pages": 58,
-    "session_id": "2026-08-18T07:41:01.561462"
+    "session_id": "2026-08-21T07:42:23.989474"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/RealityComposerPro.json": {
       "hash": "a17567df5de3d176d0578edc65e0f68eda2c061e1511706209c1359f173f6489",
-      "last_checked": "2026-08-18T07:41:01.829555",
+      "last_checked": "2026-08-21T07:42:24.248625",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"6dd3-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/RealityComposerPro.md"
     },
     "https://developer.apple.com/documentation/RealityComposerPro": {
       "hash": "a17567df5de3d176d0578edc65e0f68eda2c061e1511706209c1359f173f6489",
-      "last_checked": "2026-08-18T07:41:01.756312",
+      "last_checked": "2026-08-21T07:42:24.145756",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"6dd3-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/RealityComposerPro.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-linkingxcodeproject.json": {
       "hash": "d3cbb877bd7e6f239ec8bf665b2ffd137991a172d261e7aa6098ace04b2a3c7c",
-      "last_checked": "2026-08-18T07:41:02.305317",
+      "last_checked": "2026-08-21T07:42:24.491822",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"448b-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-linkingxcodeproject.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-configuringprojectworkspace.json": {
       "hash": "90eceeeb2cfa077837e029c8865ed32df5f90f3c05ae411f63b434f56c30b5db",
-      "last_checked": "2026-08-18T07:41:02.400258",
+      "last_checked": "2026-08-21T07:42:24.635898",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"2f64-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-configuringprojectworkspace.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-workspaceoverview.json": {
       "hash": "79c101f59cc30d5413de5a5cc4f2b31fc0bd0d835ffb64a374b2edcef3d6ff34",
-      "last_checked": "2026-08-18T07:41:02.521406",
+      "last_checked": "2026-08-21T07:42:24.804976",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"9cb0-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-workspaceoverview.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-addingentitiestoscene.json": {
       "hash": "ece699f3be241c02c1d450e5309ed7d9737ae896128a03d493746d655569bc40",
-      "last_checked": "2026-08-18T07:41:02.647732",
+      "last_checked": "2026-08-21T07:42:24.942734",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"61fb-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-addingentitiestoscene.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-grapheditoroverview.json": {
       "hash": "891c308cec43ef4f9751a15d5ddcad91fe463093918565564a9e711e8ceaf015",
-      "last_checked": "2026-08-18T07:41:02.767059",
+      "last_checked": "2026-08-21T07:42:25.057239",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"54d2-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-grapheditoroverview.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-understandingprototypes.json": {
       "hash": "c40b031ad3b0809aaf78aab5bf052f25d4cd9850aeb8d9b093e39db7813a211a",
-      "last_checked": "2026-08-18T07:41:02.892863",
+      "last_checked": "2026-08-21T07:42:25.211926",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"3c46-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-understandingprototypes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/building-materials-in-reality-composer-pro.json": {
       "hash": "c0d00866fd49090f4b016b1f54ed75fbe61e30ccd67abf14271f4969e380db1d",
-      "last_checked": "2026-08-18T07:41:03.178228",
+      "last_checked": "2026-08-21T07:42:25.481582",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"b217-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/building-materials-in-reality-composer-pro.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/applying-materials-to-an-asset.json": {
       "hash": "dbe48d3c197f34ebf9658a7ce586a8199e3698c87192a22dbd8f6594e3e521e9",
-      "last_checked": "2026-08-18T07:41:03.293290",
+      "last_checked": "2026-08-21T07:42:25.668079",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"4d89-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/applying-materials-to-an-asset.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/designing-materials-with-shader-graph.json": {
       "hash": "a6c020ad8d8bfa32d52a9e8c83ae4791f503cfe4184a7844f4933e9425004efb",
-      "last_checked": "2026-08-18T07:41:03.416213",
+      "last_checked": "2026-08-21T07:42:25.811869",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"71b5-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/designing-materials-with-shader-graph.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/getting-started-with-script-graphs.json": {
       "hash": "54456f1b15f4374c3240a063bcdec59eda2f0041af328efb65f094ec2ef1b20d",
-      "last_checked": "2026-08-18T07:41:03.740089",
+      "last_checked": "2026-08-21T07:42:26.055616",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"3946-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/getting-started-with-script-graphs.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/defining-a-behavior-with-behavior-trees.json": {
       "hash": "035484fbd98eedb4e050ea45bc589aa4e88c693c6ad2807a0babe7e04b8a9439",
-      "last_checked": "2026-08-18T07:41:04.870059",
+      "last_checked": "2026-08-21T07:42:27.237756",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"5a6b-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/defining-a-behavior-with-behavior-trees.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/creating-animation-sequences.json": {
       "hash": "c1e750ded8c2580b7b5a35f9563b21a0753276989f40a6d61377fe7973ec5ab6",
-      "last_checked": "2026-08-18T07:41:04.222291",
+      "last_checked": "2026-08-21T07:42:26.421584",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"56f6-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/creating-animation-sequences.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/working-with-the-animation-graph.json": {
       "hash": "36b4c27d5cf85184e18769aaad9c8f780e372620242c38e6174ca7722e41f48e",
-      "last_checked": "2026-08-18T07:41:04.515936",
+      "last_checked": "2026-08-21T07:42:26.837804",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"69e9-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/working-with-the-animation-graph.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/working-with-the-reality-composer-pro-assistant.json": {
       "hash": "d270710dbf24c6bb442e38c276ea6590ceba649c9d85fb40bf13dfc639be6061",
-      "last_checked": "2026-08-18T07:41:05.041910",
+      "last_checked": "2026-08-21T07:42:27.405442",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"23eb-658c35989df67-df\"",
       "file_path": "documentation/RealityComposerPro/working-with-the-reality-composer-pro-assistant.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/reality-composer-pro-release-notes.json": {
       "hash": "49896928e3757079c5ad5f3fa304ac90aaee1c2ec97af79e6414b5a26bd37758",
-      "last_checked": "2026-08-18T07:41:05.412507",
+      "last_checked": "2026-08-21T07:42:27.817606",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"3285-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/reality-composer-pro-release-notes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/creating-particle-systems-in-reality-composer-pro.json": {
       "hash": "4249831bb103f2f7210379c2ebe8af00acc892d8f9ef5a3ad4d9dddc85104050",
-      "last_checked": "2026-08-18T07:41:03.597187",
+      "last_checked": "2026-08-21T07:42:25.916515",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"46f1-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/creating-particle-systems-in-reality-composer-pro.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/reality-composer-pro-beta-2-release-notes.json": {
       "hash": "c145e6f74deece8d0e7af837ad68c9ab590d39c3985f96dfeed382827139d067",
-      "last_checked": "2026-08-18T07:41:05.549737",
+      "last_checked": "2026-08-21T07:42:27.963060",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"3133-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/reality-composer-pro-beta-2-release-notes.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/realitycomposerpro-essentials-previewcontentrunsimulations.json": {
       "hash": "56452cb96d9f521cd28929823f03cc6a6051f51a47882a71dd57617794f0ad82",
-      "last_checked": "2026-08-18T07:41:03.068231",
+      "last_checked": "2026-08-21T07:42:25.324369",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"35ec-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/realitycomposerpro-essentials-previewcontentrunsimulations.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/building-a-navmesh-in-reality-composer-pro.json": {
       "hash": "5ce09ee1aded01eb29c26c2505eeb345fd1b3cce7c9c5ffe35b3cd6e4dabe249",
-      "last_checked": "2026-08-18T07:41:04.836848",
+      "last_checked": "2026-08-21T07:42:27.101856",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"51ec-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/building-a-navmesh-in-reality-composer-pro.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/reality-composer-pro-beta-3-release-notes.json": {
       "hash": "6d0895e771baca062d294dd46a083a34d482d4df3ccbc4cfa2dae7d970bcd167",
-      "last_checked": "2026-08-18T07:41:05.702068",
+      "last_checked": "2026-08-21T07:42:28.128882",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"2a27-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/reality-composer-pro-beta-3-release-notes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/introduction-to-reality-composer-pro-audio.json": {
       "hash": "4228b7c759e7bc95bdd40c94ad899bda629a7cd0a192ddec42af95029ea0f4e9",
-      "last_checked": "2026-08-18T07:41:05.182918",
+      "last_checked": "2026-08-21T07:42:27.567021",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"61cd-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/introduction-to-reality-composer-pro-audio.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/reality-composer-pro-beta-4-release-notes.json": {
       "hash": "d6fe498658fb03042324aa067af8f656ecc2304e815ddeaebdb7c2aa68036f05",
-      "last_checked": "2026-08-18T07:41:05.838632",
+      "last_checked": "2026-08-21T07:42:28.271215",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"242e-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/reality-composer-pro-beta-4-release-notes.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/introducing-compute-graph.json": {
       "hash": "9f7f7a6cd16045b3e49ffab94e3dc84ee047a04f062e0a735ea77ba711ddab68",
-      "last_checked": "2026-08-18T07:41:04.012274",
+      "last_checked": "2026-08-21T07:42:26.157573",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"71ed-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/introducing-compute-graph.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/building-a-working-compute-graph-example.json": {
       "hash": "8f5f42f8f73d1e7428c266c0c95604d4f7c8ee8a34ca7ef140a4d1cea504e0f6",
-      "last_checked": "2026-08-18T07:41:04.105528",
+      "last_checked": "2026-08-21T07:42:26.327962",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"1fde-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/building-a-working-compute-graph-example.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/creating-animation-sequences-for-autoplay.json": {
       "hash": "a9f2067d4154cde15e0160c345724b491fdf3e95bea653440c24f3e066b5b764",
-      "last_checked": "2026-08-18T07:41:04.271565",
+      "last_checked": "2026-08-21T07:42:26.529678",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"3541-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/creating-animation-sequences-for-autoplay.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/building-multi-track-animation-sequences.json": {
       "hash": "2a34faa6a17fd6623cbe511dbb3185489dbcbd8f68b2638c8dbfedaea921e0b5",
-      "last_checked": "2026-08-18T07:41:04.387361",
+      "last_checked": "2026-08-21T07:42:26.726367",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"5db6-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/building-multi-track-animation-sequences.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/building-an-advanced-animation-graph.json": {
       "hash": "964acabcda1781f6ce4ee38663dc2b14e63d01a95ad5376abf065dc11a80d349",
-      "last_checked": "2026-08-18T07:41:04.641033",
+      "last_checked": "2026-08-21T07:42:26.997504",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"9524-658798b0380ba-df\"",
       "file_path": "documentation/RealityComposerPro/building-an-advanced-animation-graph.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/optimizing-audio-playback.json": {
       "hash": "3f31c7b7fd427f7e2d9aae30f70466d7d58f1b6040190aa5efcfced20cf0dc78",
-      "last_checked": "2026-08-18T07:41:05.294570",
+      "last_checked": "2026-08-21T07:42:27.666055",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:01.561462",
+      "session_id": "2026-08-21T07:42:23.989474",
       "etag": "\"989e-6585804053f20-df\"",
       "file_path": "documentation/RealityComposerPro/optimizing-audio-playback.md"
     },

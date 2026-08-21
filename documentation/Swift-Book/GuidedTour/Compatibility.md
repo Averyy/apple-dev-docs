@@ -8,7 +8,7 @@ url: https://github.com/swiftlang/swift-book/blob/main/TSPL.docc/GuidedTour/Comp
 Learn what functionality is available in older language modes.
 
 This book describes Swift 6.4,
-the default version of Swift that's included in Xcode 26.4.
+the default version of Swift that's included in Xcode 27.
 You can use the Swift 6.4 compiler to build code
 that's written in Swift 6.4, Swift 5, Swift 4.2, or Swift 4.
 

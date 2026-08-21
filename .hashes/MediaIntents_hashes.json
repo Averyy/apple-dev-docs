@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-18T07:41:11.022096",
+    "last_updated": "2026-08-21T07:42:33.657864",
     "total_pages": 28,
-    "session_id": "2026-08-18T07:41:08.472590"
+    "session_id": "2026-08-21T07:42:31.349647"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MediaIntents.json": {
       "hash": "5b904c8e1a0c0fcb2993b9f2702123efd4c55a9591e23253434fc85b1b3fa529",
-      "last_checked": "2026-08-18T07:41:08.810731",
+      "last_checked": "2026-08-21T07:42:31.710805",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"14cf-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/MediaIntents.md"
     },
     "https://developer.apple.com/documentation/MediaIntents": {
       "hash": "5b904c8e1a0c0fcb2993b9f2702123efd4c55a9591e23253434fc85b1b3fa529",
-      "last_checked": "2026-08-18T07:41:08.657451",
+      "last_checked": "2026-08-21T07:42:31.627239",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"14cf-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/MediaIntents.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/responding-to-audio-search-and-playback-requests.json": {
       "hash": "213f3b39ebadce36af422a752efbe9cd49d4b2919cf04b03afe64d1b0b24c957",
-      "last_checked": "2026-08-18T07:41:09.328778",
+      "last_checked": "2026-08-21T07:42:31.923330",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"5d70-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/responding-to-audio-search-and-playback-requests.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch.json": {
       "hash": "1f3841f11410f36db5f6e5482efee65749f854c12d55c59d7fadcfcf155b2320",
-      "last_checked": "2026-08-18T07:41:09.432233",
+      "last_checked": "2026-08-21T07:42:32.079060",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"63b9-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/criteria-swift.property.json": {
       "hash": "910034b9494bd5e0652554e059e6bd40d05c568d424ce7c0790f54d7dbf55947",
-      "last_checked": "2026-08-18T07:41:09.591459",
+      "last_checked": "2026-08-21T07:42:32.182196",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"1983-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/criteria-swiftproperty.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/criteria-swift.enum.json": {
       "hash": "c28257fad52ec4c380b6c979734cbf6534d04d347375e8053725cbb59e703f7c",
-      "last_checked": "2026-08-18T07:41:09.693386",
+      "last_checked": "2026-08-21T07:42:32.318851",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"3108-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/criteria-swiftenum.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/init(criteria:spotlightsearchresults:).json": {
       "hash": "eabfc8196ff4038bbbb38a1220b6377d46f624bb380e35deb23c9db87ffff0fd",
-      "last_checked": "2026-08-18T07:41:09.822941",
+      "last_checked": "2026-08-21T07:42:32.455954",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"1ffb-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/init-criteriaspotlightsearchresults.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/defaultresolverspecification.json": {
       "hash": "5826e87d47893d38a4aeee604762e6acabe879accb25d487453ca7496a1c2218",
-      "last_checked": "2026-08-18T07:41:09.950061",
+      "last_checked": "2026-08-21T07:42:32.578640",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"1c63-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/defaultresolverspecification.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/specification.json": {
       "hash": "2632a4e3b30a84598743f7182e2463430237e279ee339029eeba960013f53bff",
-      "last_checked": "2026-08-18T07:41:10.193401",
+      "last_checked": "2026-08-21T07:42:32.863207",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"13f2-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/specification.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/unwrappedtype.json": {
       "hash": "d3fcd8b1a23d518a2c83def397597b6597de575c7211a56e7fc5b155855c5ce5",
-      "last_checked": "2026-08-18T07:41:10.341628",
+      "last_checked": "2026-08-21T07:42:32.983133",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"10a5-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/unwrappedtype.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/valuetype.json": {
       "hash": "24dcd5b52138c0fc3a5024757decfc29d2f7ab5280641bd520582814845bab11",
-      "last_checked": "2026-08-18T07:41:10.513967",
+      "last_checked": "2026-08-21T07:42:33.121350",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"1070-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/valuetype.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/criteria-swift.enum/searchquery(_:).json": {
       "hash": "23e306976f17a618fca38ecbaad5d24ca42f79072f0b313751887207e4705bdb",
-      "last_checked": "2026-08-18T07:41:10.704064",
+      "last_checked": "2026-08-21T07:42:33.307271",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"2156-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/criteria-swift.enum/searchquery.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/criteria-swift.enum/unspecified.json": {
       "hash": "7230ec96a44073868119324c457adc9f53c03c0f9e8704808942c32675a24569",
-      "last_checked": "2026-08-18T07:41:10.824973",
+      "last_checked": "2026-08-21T07:42:33.451452",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"1e43-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/criteria-swift.enum/unspecified.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/criteria-swift.enum/url(_:).json": {
       "hash": "3677c23b71ba12578afb12166099af2183f8efe348eb0c25e5040c9d08f5a8f8",
-      "last_checked": "2026-08-18T07:41:10.956266",
+      "last_checked": "2026-08-21T07:42:33.616688",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"2739-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/criteria-swift.enum/url.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaintents/audiosearch/init(criteria:).json": {
       "hash": "51ff1e0eafb193bddb6a765d80670339c7bc868882b25c99e7eae761f581d060",
-      "last_checked": "2026-08-18T07:41:10.078217",
+      "last_checked": "2026-08-21T07:42:32.722086",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:41:08.472590",
+      "session_id": "2026-08-21T07:42:31.349647",
       "etag": "\"1703-658585ddd193f-df\"",
       "file_path": "documentation/MediaIntents/audiosearch/init-criteria.md"
     },

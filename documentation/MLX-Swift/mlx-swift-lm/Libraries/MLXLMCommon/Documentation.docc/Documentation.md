@@ -15,6 +15,21 @@ Common language model code.
 - <doc:wired-memory>
 - <doc:kv-cache-quantization>
 
+## Reranking
+
+- ``Reranker``
+- ``RerankerContainer``
+- ``RerankRequest``
+- ``RerankDocument``
+- ``RerankResult``
+- ``RerankedDocument``
+- ``RerankResponse``
+- ``RerankDocumentsResponse``
+- ``RerankExecutionOptions``
+- ``RerankTruncationPolicy``
+- ``RerankScoreKind``
+- ``RerankerError``
+
 ## Other MLX Libraries Packages
 
 - [MLXEmbedders](MLXEmbedders)

@@ -65,8 +65,6 @@ You don’t create an instance of the dashboard scene directly. Instead, you spe
 - [Hashable](../swift/hashable.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
 - [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
 - [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
