@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Rubric guidance shown to the judge for this level.
+Rubric guidance the model judge references for this level.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -13,6 +13,7 @@ Rubric guidance shown to the judge for this level.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

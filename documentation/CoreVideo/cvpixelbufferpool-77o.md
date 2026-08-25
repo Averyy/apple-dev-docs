@@ -30,11 +30,11 @@ A utility object for managing a recyclable set of pixel buffer objects.
   The flags to pass to flush the pool.
 ### Constants
 - [let kCVPixelBufferPoolMinimumBufferCountKey: CFString](kcvpixelbufferpoolminimumbuffercountkey.md)
-  The minimum number of buffers allowed in the pixel buffer pool.
+  The key that sets the minimum number of pixel buffers in the pool.
 - [let kCVPixelBufferPoolMaximumBufferAgeKey: CFString](kcvpixelbufferpoolmaximumbufferagekey.md)
-  The key you use to set the maximum allowable age for a buffer in the pixel buffer pool.
+  The key that sets how long the pool keeps an unused buffer before it ages out.
 - [let kCVPixelBufferPoolAllocationThresholdKey: CFString](kcvpixelbufferpoolallocationthresholdkey.md)
-  The key you use to set the auxiliary attributes dictionary.
+  The key that limits the number of pixel buffers the pool allocates.
 ### Notifications
 - [let kCVPixelBufferPoolFreeBufferNotification: CFString](kcvpixelbufferpoolfreebuffernotification.md)
   A notification that the system posts if a buffer becomes available after it fails to create a pixel buffer with auxiliary attributes because it exceeded the threshold you specified.

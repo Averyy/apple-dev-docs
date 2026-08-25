@@ -16,6 +16,15 @@ Places the presentation on the leading edge of the presenting view.
 static let leading: PresentationPlacement
 ```
 
+## See Also
+
+- [static let automatic: PresentationPlacement](presentationplacement/automatic.md)
+  The system determines the placement of the presentation.
+- [static let center: PresentationPlacement](presentationplacement/center.md)
+  Centers the presentation within the presenting view.
+- [static let trailing: PresentationPlacement](presentationplacement/trailing.md)
+  Places the presentation on the trailing edge of the presenting view.
+
 
 ---
 

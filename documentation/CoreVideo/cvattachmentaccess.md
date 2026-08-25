@@ -63,11 +63,11 @@ pixelBuffer.attachments[CVPixelBufferAttachmentKeyDefinitions.displayDimensions.
 
 ### Instance Methods
 - [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinitionWithDefault<some CVAttachmentModePreference, some CVAttachmentValueRepresentable & Equatable & Sendable>>) -> CVAttachmentMode?](cvattachmentaccess/attachedmode(of:)-79dr.md)
-  Returns mode of an attached key without retriving value.
+  Returns the propagation mode of an attachment you identify with a key path to a key definition that supplies a default, without retrieving the value.
 - [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinition<some CVAttachmentModePreference, some CVAttachmentValueRepresentable>>) -> CVAttachmentMode?](cvattachmentaccess/attachedmode(of:)-9g9h6.md)
-  Returns mode of an attached key without retriving value.
+  Returns the propagation mode of an attachment you identify with a key path to a key definition, without retrieving the value.
 - [func attachedMode(of: String) -> CVAttachmentMode?](cvattachmentaccess/attachedmode(of:)-m49.md)
-  Returns mode of an attached key without retriving value.
+  Returns the propagation mode of an attachment you identify by its raw key string, without retrieving the value.
 - [func copy() -> CVAttachmentContainer<Keys>](cvattachmentaccess/copy.md)
   Creates a copy all propagated and non-propagated attachments.
 - [func propagate(from: borrowing CVAttachmentAccess<Keys>)](cvattachmentaccess/propagate(from:).md)

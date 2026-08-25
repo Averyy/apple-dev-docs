@@ -12,12 +12,17 @@ A custom aggregation identified by its label.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case custom(label: String)
 ```
+
+## Parameters
+
+- `label`: The display label for this custom aggregation.
 
 
 ---

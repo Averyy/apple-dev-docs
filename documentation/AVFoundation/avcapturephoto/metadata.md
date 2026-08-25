@@ -19,7 +19,7 @@ var metadata: [String : Any] { get }
 
 #### Discussion
 
-See `CGImageProperties` for possible keys and values. Metadata captured with a photo may include image orientation, EXIF camera properties, and Live Photo metadata.
+See `CGImageProperties` for possible keys and values. Metadata captured with a photo may include image orientation, Exif camera properties, and Live Photo metadata.
 
 ## See Also
 

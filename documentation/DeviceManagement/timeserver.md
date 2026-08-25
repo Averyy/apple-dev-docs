@@ -91,6 +91,8 @@ If multiple profiles with this payload are sent, the system sets the device’s 
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
+- [object SystemLogging](systemlogging.md)
+  The payload that configures system logging.
 
 
 ---

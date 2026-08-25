@@ -111,7 +111,7 @@ do {
 }
 ```
 
-> **Note**: Sending a dynamic parameter for intensity *multiplies* the original pattern’s event intensity by the dynamic parameter value. Sending a dynamic parameter for sharpness *adds* the dynamic parameter value to the original pattern’s event sharpness.
+Intensity is a magnitude, so [`hapticIntensityControl`](chhapticdynamicparameter/id/hapticintensitycontrol.md) multiplies it by a factor from `0` to `1`. The factor only reduces the pattern’s intensity. Sharpness is a position on a spectrum from dull to crisp, so [`hapticSharpnessControl`](chhapticdynamicparameter/id/hapticsharpnesscontrol.md) adds a signed amount from `-1` to `1`. The amount moves the pattern’s sharpness in either direction. The other dynamic parameters split the same way. [`audioVolumeControl`](chhapticdynamicparameter/id/audiovolumecontrol.md) multiplies, and brightness, pan, pitch, and the envelope times add.
 
 Only when the gesture ends does the app stop the pattern player.
 

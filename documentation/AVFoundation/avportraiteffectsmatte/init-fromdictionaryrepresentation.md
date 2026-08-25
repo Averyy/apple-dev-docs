@@ -37,7 +37,7 @@ When using the [`Image I/O`](https://developer.apple.com/documentation/imageio) 
 - [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
 - [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avportraiteffectsmatte/applyingexiforientation(_:).md)
-  Returns a derivative portrait effects matte after applying the specified EXIF orientation.
+  Returns a derivative portrait effects matte after applying the specified Exif orientation.
 - [func replacingPortraitEffectsMatte(with: CVPixelBuffer) throws -> Self](avportraiteffectsmatte/replacingportraiteffectsmatte(with:).md)
   Returns a portrait effects matte by wrapping the replacement pixel buffer.
 

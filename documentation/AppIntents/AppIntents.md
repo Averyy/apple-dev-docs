@@ -76,6 +76,8 @@ For design guidance on how to implement features that involve [`Widgets`](https:
 - [Visual intelligence](visual-intelligence.md)
   Match images to your app’s content and report the results to the Visual Intelligence framework using an app intent.
 ### Testing
+- [Verifying your App Intents implementation](verifying-your-app-intents-implementation.md)
+  Confirm that your app intents work correctly, the system can understand your content, and that it can run your app’s actions.
 - [Testing your App Intents code](../appintentstesting/testing-your-app-intents-code.md)
   Evaluate intents, entities, and queries, and verify your integration with system features like Spotlight and Siri.
 - [App Intents Testing](../appintentstesting/appintentstesting.md)

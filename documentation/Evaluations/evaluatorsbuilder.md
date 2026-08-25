@@ -12,6 +12,7 @@ A result builder that enables declarative evaluator lists.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -37,7 +38,9 @@ func buildEvaluators() -> [any EvaluatorProtocol<ModelSample<String>, ModelSubje
 
 ### Type Methods
 - [static func buildExpression(any EvaluatorProtocol<Sample, Subject>) -> any EvaluatorProtocol<Sample, Subject>](evaluatorsbuilder/buildexpression(_:).md)
+  Wraps a single evaluator expression into the builder pipeline.
 - [static func buildOptional([any EvaluatorProtocol<Sample, Subject>]?) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildoptional(_:).md)
+  Provides an empty array when an optional evaluator block is absent.
 - [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(accumulated:next:)-7lvjo.md)
 - [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: any EvaluatorProtocol<Sample, Subject>) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(accumulated:next:)-88zf9.md)
 - [static func buildPartialBlock(first: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(first:)-3o70b.md)
@@ -46,9 +49,9 @@ func buildEvaluators() -> [any EvaluatorProtocol<ModelSample<String>, ModelSubje
 ## See Also
 
 - [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
-  The evaluators to apply to each subject/sample pair.
+  The evaluators to apply to each sample and its corresponding subject.
 - [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
-  Shorthand for the evaluator array type, resolved per-conformance.
+  The evaluator array type for this conformance.
 - [protocol EvaluatorProtocol](evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
 - [func aggregateMetrics(using: inout MetricsAggregator)](evaluation/aggregatemetrics(using:).md)

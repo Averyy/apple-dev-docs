@@ -12,6 +12,7 @@ Creates a model sample with string-based prompt and instructions.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

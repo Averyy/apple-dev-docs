@@ -27,7 +27,7 @@ The default vertical size class for a trait collection is [`UIUserInterfaceSizeC
 - [var accessibilityContrast: UIAccessibilityContrast](uimutabletraits-13ja5/accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
 - [var activeAppearance: UIUserInterfaceActiveAppearance](uimutabletraits-13ja5/activeappearance.md)
-  A property that indicates whether the user interface has an active appearance.
+  A property that indicates whether a scene has an active appearance.
 - [var displayGamut: UIDisplayGamut](uimutabletraits-13ja5/displaygamut.md)
   The gamut of the current display.
 - [var displayScale: CGFloat](uimutabletraits-13ja5/displayscale.md)

@@ -14,6 +14,10 @@ An action type that captures text provided by a person in response to a notifica
 case textInput(placeholder: String)
 ```
 
+## Mentions
+
+- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+
 ## Parameters
 
 - `placeholder`: Text that acts as a placeholder for the text input field.

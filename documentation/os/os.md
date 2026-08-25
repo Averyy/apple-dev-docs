@@ -16,9 +16,6 @@ Coordinate the scheduling and synchronization of your app’s tasks, and log inf
 
 ## Topics
 
-### Essentials
-- [Reading UNIX Manual Pages](reading-unix-manual-pages.md)
-  Use the Terminal app to read the documentation for low-level UNIX tools and APIs.
 ### Logs
 - [Logging](logging.md)
   Capture telemetry from your app for debugging and performance analysis using the unified logging system.

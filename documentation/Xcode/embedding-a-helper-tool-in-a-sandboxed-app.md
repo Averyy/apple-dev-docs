@@ -79,7 +79,7 @@ Select App Store Connect and click Next, then select Export and click Next.
 
 Go through the rest of the export workflow. The end result is a directory with a name like `AppWithTool 2021-05-17 14-07-21`. Within that directory is an installer package (with the `.pkg` extension). Unpack that package.
 
-> **Note**: The easiest way to unpack an installer package is to install it. If you’d rather not install it, unpack it manually using `xar` and `cpio`. For more information, read the manual pages for these tools (see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages)).
+> **Note**: The easiest way to unpack an installer package is to install it. If you’d rather not install it, unpack it manually using `xar` and `cpio`.
 
 Run the following commands to confirm that Xcode constructed everything correctly:
 

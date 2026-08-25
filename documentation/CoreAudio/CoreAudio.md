@@ -53,6 +53,7 @@ Use the Core Audio framework to interact with device’s audio hardware.
 - [class AudioHardwareTap](audiohardwaretap.md)
   Instances of the AudioHardwareTap class encapsulate a single audio tap, which can capture outgoing audio from a process or group of processes, and be used as an input stream source in an aggregate device.
 - [class CATapDescription](catapdescription.md)
+  This class describes a tap object that contains an input stream.
 ### Protocols
 - [protocol PropertyListenerDelegate](propertylistenerdelegate.md)
   A delegate protocol for receiving notifications when properties registered with AudioHardwareObject.addPropertyListener change.

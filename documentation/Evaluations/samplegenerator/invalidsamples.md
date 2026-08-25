@@ -12,6 +12,7 @@ Samples that the validator rejected during the most recent run.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -30,7 +31,7 @@ Returns an empty array when no validator was provided.
 ## See Also
 
 - [var samples: [SampleType]](samplegenerator/samples.md)
-  All samples — initial and generated — from the most recent run.
+  All initial and generated samples from the most recent run.
 
 
 ---

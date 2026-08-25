@@ -27,7 +27,7 @@ A value of `1.0` indicates a non-Retina display, `2.0` indicates a Retina displa
 - [var accessibilityContrast: UIAccessibilityContrast](uimutabletraits-13ja5/accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
 - [var activeAppearance: UIUserInterfaceActiveAppearance](uimutabletraits-13ja5/activeappearance.md)
-  A property that indicates whether the user interface has an active appearance.
+  A property that indicates whether a scene has an active appearance.
 - [var displayGamut: UIDisplayGamut](uimutabletraits-13ja5/displaygamut.md)
   The gamut of the current display.
 - [var forceTouchCapability: UIForceTouchCapability](uimutabletraits-13ja5/forcetouchcapability.md)

@@ -12,6 +12,7 @@ A grouped collection of related metrics.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ struct Group
 
 #### Overview
 
-Use `Group` within [`group(_:_:)`](metricsaggregator/group(_:_:).md) to add metrics that should be displayed together.
+Use `Group` within [`group(_:_:)`](metricsaggregator/group(_:_:).md) to add metrics to display together.
 
 ## Topics
 

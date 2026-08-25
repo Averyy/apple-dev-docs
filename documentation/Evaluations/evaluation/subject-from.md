@@ -13,6 +13,7 @@ Produces the subject of evaluation from a given sample.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -41,13 +42,13 @@ Implement this method to run your system under test and return the subject that 
 ## See Also
 
 - [associatedtype Subject : EvaluationSubject](evaluation/subject.md)
-  The type of the subject produced by the system under test.
+  The type of subject the system under test produces.
 - [protocol EvaluationSubject](evaluationsubject.md)
-  A type that represents the output produced by the system under test.
+  A type that represents the output the system under test produces.
 - [struct ModelSubject](modelsubject.md)
   The subject type for language model evaluations.
 - [var name: String](evaluation/name.md)
-  The default name, derived from the type name.
+  The default name, taken from the type name.
 
 
 ---

@@ -65,7 +65,7 @@ tcpdump: listening on en0, link-type EN10MB (Ethernet), capture size 65535 bytes
 
 If the dropped count is non-zero, increase the packet recording buffer size by passing the `-B` option to `tcpdump`.
 
-> **Note**:  For more information about this and other `tcpdump` options, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+> **Note**:  For more information about this and other `tcpdump` options, see doc://com.apple.documentation/documentation/os/reading-unix-manual-pages.
 
 ##### Use Promiscuous Mode Effectively
 
@@ -86,8 +86,6 @@ The [`Wireshark wiki`](https://developer.apple.comhttps://wiki.wireshark.org/) h
 
 ## See Also
 
-- [Reading UNIX Manual Pages](../os/reading-unix-manual-pages.md)
-  Use the Terminal app to read the documentation for low-level UNIX tools and APIs.
 - [Recording a Wi-Fi Packet Trace](recording-a-wi-fi-packet-trace.md)
   Record traces of Wi-Fi traffic and traffic management.
 - [Submitting a Packet Trace to Apple](submitting-a-packet-trace-to-apple.md)

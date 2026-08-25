@@ -46,7 +46,7 @@ Xcode Cloud uses your personal SCM account to monitor the Git repository for cha
 ## See Also
 
 - [Making dependencies available to Xcode Cloud](making-dependencies-available-to-xcode-cloud.md)
-  Review dependencies and make them available to Xcode Cloud before you configure your project to use Xcode Cloud.
+  Confirm that Xcode Cloud has access to every dependency your project needs to build.
 - [Sharing macOS and Xcode versions across Xcode Cloud workflows](sharing-custom-aliases-across-xcode-cloud-workflows.md)
   Use custom aliases to share configurations with multiple workflows.
 - [Sharing environment variables across Xcode Cloud workflows](sharing-environment-variables-across-xcode-cloud-workflows.md)

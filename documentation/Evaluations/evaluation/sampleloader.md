@@ -13,6 +13,7 @@ The type of the sample loader used to provide the evaluation dataset.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

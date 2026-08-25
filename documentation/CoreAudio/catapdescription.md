@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: class
 
+This class describes a tap object that contains an input stream.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,7 +19,7 @@ class CATapDescription
 
 #### Overview
 
-This class describes a tap object that contains an input stream.  The input stream is a mix of all of the specified processes output audio.
+The input stream is a mix of all of the specified processes’ output audio.
 
 ## Topics
 

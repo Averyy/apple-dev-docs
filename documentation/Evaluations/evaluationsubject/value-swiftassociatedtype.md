@@ -4,7 +4,7 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
-The type of the value produced by the system under test.
+The type of value the system under test produces.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -13,6 +13,7 @@ The type of the value produced by the system under test.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

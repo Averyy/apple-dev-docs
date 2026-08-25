@@ -172,21 +172,9 @@ Several properties of the [`AppIntent`](appintent.md) protocol provide the syste
 
 For more information about how to create a parameter summary, see [`Adding parameters to an app intent`](adding-parameters-to-an-app-intent.md).
 
-##### Test the Behavior of Your Code in Simulator or on Device
+##### Test the Behavior of Your Code
 
-During development, validate that your intents behave as you expect by testing them in Simulator or on-device. If you’re adding intents to a macOS app, build and run the app. For other platforms, select the relevant simulator or connected device and then build and run. After your app launches, follow these steps:
-
-1. Launch the Shortcuts app.
-2. Tap or click the New Shortcut (+) button to create a shortcut.
-3. Choose Apps in the Action Library’s segmented control.
-4. Tap or click your app’s icon.
-5. Select the action to test.
-6. For app intents with parameters, use the summary to set the parameter values.
-7. Tap or click the Run button.
-
-Set a breakpoint at the top of your `perform()` method to confirm your implementation is working. The debugger pauses execution immediately after you run the shortcut, enabling you to step through the code and inspect the intent’s parameters to verify they have the values they require.
-
-Another way to test your code is using the App Intents Testing framework. For more information about how to use it, see [`App Intents Testing`](https://developer.apple.com/documentation/appintentstesting).
+During development, validate that your intents behave as you expect by writing integration tests using the [`App Intents Testing`](https://developer.apple.com/documentation/appintentstesting) framework and additional verification steps that build on top of each other. For more information, see [`Verifying your App Intents implementation`](verifying-your-app-intents-implementation.md).
 
 ## See Also
 

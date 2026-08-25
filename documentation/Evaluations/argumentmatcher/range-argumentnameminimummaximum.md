@@ -12,6 +12,7 @@ A value that indicates that the argument must be present and its numeric value m
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,12 @@ case range(argumentName: String, minimum: Double?, maximum: Double?)
 ## Mentions
 
 - [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+
+## Parameters
+
+- `argumentName`: The name of the argument to validate.
+- `minimum`: The lower bound of the allowed range, or `nil` for no lower bound.
+- `maximum`: The upper bound of the allowed range, or `nil` for no upper bound.
 
 ## See Also
 

@@ -32,14 +32,16 @@ This activity might cause the system to pause location updates when the vehicle 
 
 ## See Also
 
-- [CLActivityType.other](clactivitytype/other.md)
-  The value that indicates the app is using location manager for an unspecified activity.
-- [CLActivityType.fitness](clactivitytype/fitness.md)
-  The value that indicates positioning during dedicated fitness sessions, such as walking workouts, running workouts, cycling workouts, and so on.
-- [CLActivityType.otherNavigation](clactivitytype/othernavigation.md)
-  The value that indicates positioning for activities that don’t or may not adhere to roads such as cycling, scooters, trains, boats and off-road vehicles.
 - [CLActivityType.airborne](clactivitytype/airborne.md)
   The value that indicates activities in the air.
+- [CLActivityType.fitness](clactivitytype/fitness.md)
+  The value that indicates positioning during dedicated fitness sessions, such as walking workouts, running workouts, cycling workouts, and so on.
+- [CLActivityType.maritime](clactivitytype/maritime.md)
+  The value that indicates positioning for activities in vessels on water, including while anchored.
+- [CLActivityType.other](clactivitytype/other.md)
+  The value that indicates the app is using location manager for an unspecified activity.
+- [CLActivityType.otherNavigation](clactivitytype/othernavigation.md)
+  The value that indicates positioning for activities that don’t or may not adhere to roads such as cycling, scooters, trains, boats and off-road vehicles.
 
 
 ---

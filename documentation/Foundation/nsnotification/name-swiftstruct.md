@@ -883,7 +883,7 @@ struct Name
 - [class let userDidTakeScreenshotNotification: NSNotification.Name](../uikit/uiapplication/userdidtakescreenshotnotification.md)
   A notification that posts when a person takes a screenshot on the device.
 - [class let willEnterForegroundNotification: NSNotification.Name](../uikit/uiapplication/willenterforegroundnotification.md)
-  A notification that posts shortly before an app leaves the background state on its way to becoming the active app.
+  A notification that posts shortly before your app’s UI transitions to the foreground.
 - [class let willResignActiveNotification: NSNotification.Name](../uikit/uiapplication/willresignactivenotification.md)
   A notification that posts when the app is no longer active and loses focus.
 - [class let willTerminateNotification: NSNotification.Name](../uikit/uiapplication/willterminatenotification.md)

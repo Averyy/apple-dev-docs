@@ -23,7 +23,7 @@ var isVideoMirrored: Bool { get set }
 
 You can apply a mirror-image effect to a video flowing through the connection by setting the value to [`true`](https://developer.apple.com/documentation/swift/true). The mirroring effect only applies to video or depth connections, similar to [`videoRotationAngle`](avcaptureconnection/videorotationangle.md), and if [`isVideoMirroringSupported`](avcaptureconnection/isvideomirroringsupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
-Not all capture connections mirror each frame. For example, a video connection to an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) or [`AVCapturePhotoOutput`](avcapturephotooutput.md) instance applies the mirror effect with a QuickTime track matrix or with EXIF tags, respectively.
+Not all capture connections mirror each frame. For example, a video connection to an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) or [`AVCapturePhotoOutput`](avcapturephotooutput.md) instance applies the mirror effect with a QuickTime track matrix or with Exif tags, respectively.
 
 Capture connections to [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) and [`AVCaptureDepthDataOutput`](avcapturedepthdataoutput.md) instances mirror video frames they provide to their [`captureOutput(_:didOutput:from:)`](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md) and [`depthDataOutput(_:didOutput:timestamp:connection:)`](avcapturedepthdataoutputdelegate/depthdataoutput(_:didoutput:timestamp:connection:).md) delegate methods, respectively. Each [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) instance uses hardware acceleration to mirror every frame.
 

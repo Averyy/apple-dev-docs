@@ -87,7 +87,7 @@ Notarizing your preexisting software lets Gatekeeper warn users when they try to
 
 To notarize your preexisting software, do the following:
 
-1. Make your active Xcode installation one that supports notarization by using the `xcode-select` command-line tool. For information about how to use this tool, see its man page, as described in [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+1. Make your active Xcode installation one that supports notarization by using the `xcode-select` command-line tool. For information about how to use this tool, see its man page, as described in doc://com.apple.documentation/documentation/os/reading-unix-manual-pages.
 2. Upload your software to the Apple notary service, as described in [`Upload your app to the notarization service`](customizing-the-notarization-workflow#Upload-your-app-to-the-notarization-service.md).
 3. Staple the returned ticket to your existing software, as described in [`Staple the ticket to your distribution`](customizing-the-notarization-workflow#Staple-the-ticket-to-your-distribution.md).
 

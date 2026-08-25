@@ -12,6 +12,7 @@ A test trait that runs an evaluation and records the result as attachments.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,7 +27,23 @@ struct EvaluationTrait
 
 #### Overview
 
-The result is accessible via [`EvaluationContext`](evaluationcontext.md).
+```swift
+let accuracyMetric = Metric("Accuracy")
+
+@Test(.evaluates(myEvaluation))
+func testAccuracy() async throws {
+    let result = EvaluationContext.current.result
+    #expect(result.aggregateValue(.mean(of: accuracyMetric)) >= 0.8)
+}
+```
+
+The result is accessible from an evaluation context.
+
+## Topics
+
+### Instance Methods
+- [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](evaluationtrait/providescope(for:testcase:performing:).md)
+  Runs the evaluation and makes its result available to the test body through an evaluation context.
 
 ## Relationships
 

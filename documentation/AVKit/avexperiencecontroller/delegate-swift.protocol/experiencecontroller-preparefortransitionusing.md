@@ -32,7 +32,7 @@ Implement this method to prepare the app’s state for the [`toExperience`](avex
 - [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangetransitioncontext:).md)
   Tells the delegate when the transition context changes during a transition.
 - [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
-  The state of the transition provided to the delegate object.
+  The state of the transition that the system provides to the delegate object.
 
 
 ---

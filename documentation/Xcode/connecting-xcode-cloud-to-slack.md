@@ -81,7 +81,7 @@ To configure a workflow to send a build notification to a Slack channel:
 ## See Also
 
 - [Configuring webhooks in Xcode Cloud](configuring-webhooks-in-xcode-cloud.md)
-  Configure webhooks that connect Xcode Cloud to other services and tools.
+  Send build events to external services and tools using webhooks.
 - [Xcode Cloud webhook payload reference](webhook-payload.md)
   Review details of the webhook payload that Xcode Cloud sends, including the product, workflow, build, actions, results, and SCM metadata associated with it.
 

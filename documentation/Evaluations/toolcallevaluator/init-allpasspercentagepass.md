@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: init
 
-Creates a new tool call expectations evaluator.
+Creates a new tool-call expectations evaluator.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -11,6 +11,7 @@ Creates a new tool call expectations evaluator.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,7 +21,17 @@ init(allPass: Metric, percentagePass: Metric)
 
 #### Discussion
 
-The evaluator evaluates expectations once and produces two columns: a strict score (pass/fail) and a partial score (proportion matched).
+The evaluator evaluates expectations once and produces two columns: a strict score (pass or fail) and a partial score (proportion matched).
+
+```swift
+let allPassMetric = Metric("Tools All Pass")
+let percentagePassMetric = Metric("Tools Percentage Pass")
+
+let evaluator = ToolCallEvaluator<ModelSample<String>>(
+    allPass: allPassMetric,
+    percentagePass: percentagePassMetric
+)
+```
 
 ## Parameters
 

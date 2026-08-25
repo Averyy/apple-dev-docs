@@ -8,8 +8,6 @@ Use command-line tools that require you to install Xcode and set the app as the 
 
 Xcode includes a set of command-line tools that only ship with the app, such as `devicectl`, `simctl`, and `xcodebuild`. You must install and set Xcode as the active developer directory before you can invoke these commands in Terminal.
 
-> **Note**: For more information on accessing the command-line tools documentation, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
-
 ##### Automate Build and Version Numbers
 
 - **`agvtool`**: Manage build and version numbers. To learn more about this command, enter `man agvtool` in Terminal.

@@ -1,4 +1,4 @@
 Completed scraping Network!
-Total pages scraped: 0
-Pages skipped (unchanged): 1843
+Total pages scraped: 2
+Pages skipped (unchanged): 1841
 Pages failed: 0

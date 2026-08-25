@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: case
 
-The evaluator fails to decode the JSON from the model-as-judge’s response.
+The evaluator fails to decode the JSON from the model judge’s response.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,12 +12,18 @@ The evaluator fails to decode the JSON from the model-as-judge’s response.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case jsonDecodingFailed(response: String, underlying: any Error)
 ```
+
+## Parameters
+
+- `response`: The raw response text from the model judge.
+- `underlying`: The decoding error.
 
 
 ---

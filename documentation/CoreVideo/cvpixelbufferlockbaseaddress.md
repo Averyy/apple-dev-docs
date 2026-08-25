@@ -26,14 +26,14 @@ A Core Video result code. See [`Core Video Constants`](core-video-constants.md) 
 
 #### Discussion
 
-You must call the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) function before accessing pixel data with the CPU, and call the [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md) function afterward. If you include the [`readOnly`](cvpixelbufferlockflags/readonly.md) value in the `lockFlags` parameter when locking the buffer, you must also include it when unlocking the buffer.
+You must call the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) function before accessing pixel data with the CPU, and call the [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md) function afterward. If you include the [`readOnly`](cvpixelbufferlockflags/readonly.md) value in the `lockFlags` parameter when locking the buffer, you must also include it when unlocking the buffer. Using the flag asymmetrically results in undefined behavior.
 
 > ❗ **Important**:  When accessing pixel data with the GPU, locking is not necessary and can impair performance.
 
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer whose base address you want to lock.
-- `lockFlags`: Either [`readOnly`](cvpixelbufferlockflags/readonly.md) or `0`; see [`CVPixelBufferLockFlags`](cvpixelbufferlockflags.md) for discussion.
+- `lockFlags`: An option that indicates whether you modify the buffer’s data while you hold the lock. Pass [`readOnly`](cvpixelbufferlockflags/readonly.md) to lock the buffer for reading only, or pass no flags to lock it for both reading and writing.
 
 ## See Also
 

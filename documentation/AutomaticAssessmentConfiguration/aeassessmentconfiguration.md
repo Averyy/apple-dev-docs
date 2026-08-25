@@ -85,18 +85,10 @@ While you provide a configuration instance when creating a session on iOS, iPadO
 - [var allowsActivityContinuation: Bool](aeassessmentconfiguration/allowsactivitycontinuation.md)
   A Boolean value that indicates whether to allow Handoff during an assessment.
 ### Instance Properties
-- [var allowLockdownMode: Bool](aeassessmentconfiguration/allowlockdownmode.md)
-  A Boolean value that indicates whether the assessment allows Lockdown Mode to be active.
-- [var allowOnlyParticipantsToRun: Bool](aeassessmentconfiguration/allowonlyparticipantstorun.md)
-  A Boolean value that indicates whether only participant applications are allowed to run during an assessment.
-- [var allowPrivateRelay: Bool](aeassessmentconfiguration/allowprivaterelay.md)
-  A Boolean value that indicates whether the assessment allows iCloud Private Relay to be active.
-- [var allowVirtualMachine: Bool](aeassessmentconfiguration/allowvirtualmachine.md)
-  A Boolean value that indicates whether the assessment allows running inside a virtual machine.
 - [var allowedAppleMenuItems: Set<AEAppleMenuItem>?](aeassessmentconfiguration/allowedapplemenuitems.md)
   The set of allowed Apple menu items during an assessment.
 - [var allowedDirectoriesAndFiles: Set<URL>?](aeassessmentconfiguration/alloweddirectoriesandfiles.md)
-  The set of allowed directories and files that participants can access during an assessment.
+  The set of directories and files that remain visible in the Finder during an assessment.
 - [var allowedMenuBarItems: Set<AEMenuBarItem>?](aeassessmentconfiguration/allowedmenubaritems.md)
   The set of menu bar items that should remain visible during an assessment.
 - [var allowsAccessibilityAlternativeInputMethods: Bool](aeassessmentconfiguration/allowsaccessibilityalternativeinputmethods.md)
@@ -133,20 +125,30 @@ While you provide a configuration instance when creating a session on iOS, iPadO
   A Boolean value that indicates whether to allow the Dock during an assessment.
 - [var allowsEmojiKeyboard: Bool](aeassessmentconfiguration/allowsemojikeyboard.md)
   A Boolean value that indicates whether to allow the emoji keyboard during an assessment.
-- [var allowsForceQuit: Bool](aeassessmentconfiguration/allowsforcequit.md)
+- [var allowsForceQuitKeyboardShortcuts: Bool](aeassessmentconfiguration/allowsforcequitkeyboardshortcuts.md)
   A Boolean value that indicates whether to allow force quitting apps during an assessment.
+- [var allowsLockdownMode: Bool](aeassessmentconfiguration/allowslockdownmode.md)
+  A Boolean value that indicates whether the assessment allows Lockdown Mode to be active.
 - [var allowsMenuBar: Bool](aeassessmentconfiguration/allowsmenubar.md)
   A Boolean value that indicates whether to allow the menu bar during an assessment.
+- [var allowsOnlyParticipantsToRun: Bool](aeassessmentconfiguration/allowsonlyparticipantstorun.md)
+  A Boolean value that indicates whether only participant applications are allowed to run during an assessment.
+- [var allowsPrivateRelay: Bool](aeassessmentconfiguration/allowsprivaterelay.md)
+  A Boolean value that indicates whether the assessment allows iCloud Private Relay to be active.
 - [var allowsScreenshots: Bool](aeassessmentconfiguration/allowsscreenshots.md)
   A Boolean value that indicates whether to allow screenshots copied to the clipboard during an assessment.
 - [var allowsStructuralInput: Bool](aeassessmentconfiguration/allowsstructuralinput.md)
   A Boolean value that indicates whether to allow Chinese and Japanese structural input during an assessment.
 - [var allowsUserScriptExecution: Bool](aeassessmentconfiguration/allowsuserscriptexecution.md)
   A Boolean value that indicates whether to allow user script execution during an assessment.
+- [var allowsVirtualMachine: Bool](aeassessmentconfiguration/allowsvirtualmachine.md)
+  A Boolean value that indicates whether the assessment allows running inside a virtual machine.
 - [var configurationsByBinaryExecutable: [AEAssessmentBinaryExecutable : AEAssessmentBinaryExecutableConfiguration]](aeassessmentconfiguration/configurationsbybinaryexecutable.md)
   The collection of executable participants available during an assessment, along with their associated configurations.
 - [var requiresManagedDevice: Bool](aeassessmentconfiguration/requiresmanageddevice.md)
   A Boolean value that indicates whether the device must be managed to start an assessment.
+- [var requiresReleaseOS: Bool](aeassessmentconfiguration/requiresreleaseos.md)
+  A Boolean value that indicates whether the device must be running a final customer release of the operating system to start an assessment.
 - [var requiresSIP: Bool](aeassessmentconfiguration/requiressip.md)
   A Boolean value that indicates whether System Integrity Protection (SIP) must be enabled to start an assessment.
 - [var requiresSingleUser: Bool](aeassessmentconfiguration/requiressingleuser.md)

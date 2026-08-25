@@ -12,6 +12,7 @@ Creates a scale option.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ init(label: String, guideDescription: String, value: Double)
 ## Parameters
 
 - `label`: A short label for this option.
-- `guideDescription`: Rubric guidance shown to the judge for this option.
+- `guideDescription`: Rubric guidance the model judge references for this option.
 - `value`: The numeric value for this option.
 
 

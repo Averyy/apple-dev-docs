@@ -219,6 +219,8 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
+- [object SystemLogging](systemlogging.md)
+  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 ### System policy

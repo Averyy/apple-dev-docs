@@ -68,7 +68,7 @@ enum UILegibilityWeight
 - [var legibilityWeight: UILegibilityWeight](uitraitcollection/legibilityweight.md)
   The font weight to apply to text.
 - [var activeAppearance: UIUserInterfaceActiveAppearance](uitraitcollection/activeappearance.md)
-  A property that indicates whether the user interface has an active appearance.
+  A property that indicates whether a scene has an active appearance.
 - [enum UIUserInterfaceActiveAppearance](uiuserinterfaceactiveappearance.md)
   Constants that indicate whether the user interface has an active appearance.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](uitraitcollection/toolbaritempresentationsize.md)

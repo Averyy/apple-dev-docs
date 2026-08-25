@@ -2,7 +2,7 @@
 
 **Framework**: PhotoKit
 
-Help users organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
+Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
 
 **Availability**:
 - iOS 11.0+

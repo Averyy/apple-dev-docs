@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: property
 
-A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when the user requests them.
+A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when someone requests them.
 
 **Availability**:
 - tvOS 11.0+

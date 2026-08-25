@@ -92,6 +92,8 @@ This payload allows administrators to specify optional text displayed in the Log
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
+- [object SystemLogging](systemlogging.md)
+  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

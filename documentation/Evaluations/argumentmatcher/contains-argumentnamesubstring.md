@@ -12,12 +12,18 @@ A value that indicates that the argument must be present and its string value mu
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case contains(argumentName: String, substring: String)
 ```
+
+## Parameters
+
+- `argumentName`: The name of the argument to validate.
+- `substring`: The substring the argument’s string value must contain.
 
 ## See Also
 

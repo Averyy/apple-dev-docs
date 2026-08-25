@@ -55,6 +55,10 @@ Use values of this type with the [`presentationContentInteraction(_:)`](view/pre
   A type that represents a height where a sheet naturally rests.
 - [protocol CustomPresentationDetent](custompresentationdetent.md)
   The definition of a custom detent with a calculated height.
+- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+  Sets the placement of a presentation within the presenting view.
+- [struct PresentationPlacement](presentationplacement.md)
+  The placement of a presentation within the presenting view.
 
 
 ---

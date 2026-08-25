@@ -12,6 +12,7 @@ Creates a scoring scale from a typed score level enum.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ static func custom<Level>(_ level: Level.Type) -> ScoringScale where Level : Sco
 
 #### Discussion
 
-All cases are enumerated and converted to [`ScaleOption`](scaleoption.md) values.
+The method enumerates all cases and converts them to [`ScaleOption`](scaleoption.md) values.
 
 ## Parameters
 
@@ -30,7 +31,7 @@ All cases are enumerated and converted to [`ScaleOption`](scaleoption.md) values
 ## See Also
 
 - [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](scoringscale/passfail(passdescription:faildescription:).md)
-  Creates a binary pass/fail scoring scale.
+  Creates a binary pass or fail scoring scale.
 - [static func numeric([Double : String]) -> ScoringScale](scoringscale/numeric(_:).md)
   Creates a scoring scale from a numeric dictionary.
 - [init(options: [ScaleOption])](scoringscale/init(options:).md)

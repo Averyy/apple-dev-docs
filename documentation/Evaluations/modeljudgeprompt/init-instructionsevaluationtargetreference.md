@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: init
 
-Creates a model-as-judge prompt configuration.
+Creates a model prompt configuration.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ Creates a model-as-judge prompt configuration.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -29,9 +30,9 @@ let prompt = ModelJudgePrompt<ModelSample<String>>(
 
 ## Parameters
 
-- `instructions`: System instructions for the model-as-judge. Defaults to a general-purpose evaluator prompt.
+- `instructions`: System instructions for the model judge. Defaults to a general-purpose evaluator prompt.
 - `evaluationTarget`: Optional closure to convert the response to a string. When `nil`, the response is JSON-serialized.
-- `reference`: Optional closure returning labeled reference data to include in the judge prompt.
+- `reference`: Optional closure returning labeled reference data to include in the model prompt.
 
 ## See Also
 

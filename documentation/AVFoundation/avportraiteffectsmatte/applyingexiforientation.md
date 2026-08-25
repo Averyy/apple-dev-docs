@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
-Returns a derivative portrait effects matte after applying the specified EXIF orientation.
+Returns a derivative portrait effects matte after applying the specified Exif orientation.
 
 **Availability**:
 - iOS 12.0+
@@ -22,7 +22,7 @@ func applyingExifOrientation(_ exifOrientation: CGImagePropertyOrientation) -> S
 
 ## Parameters
 
-- `exifOrientation`: One of the standard EXIF orientation tags expressing how the portrait effects matte should be rotated or mirrored.
+- `exifOrientation`: One of the standard Exif orientation tags expressing how the portrait effects matte should be rotated or mirrored.
 
 ## See Also
 

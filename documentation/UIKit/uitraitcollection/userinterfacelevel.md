@@ -47,7 +47,7 @@ Levels create a visual separation between different parts of your UI. Window con
 - [enum UILegibilityWeight](uilegibilityweight.md)
   Constants that indicate the weight to apply to text in your interface.
 - [var activeAppearance: UIUserInterfaceActiveAppearance](uitraitcollection/activeappearance.md)
-  A property that indicates whether the user interface has an active appearance.
+  A property that indicates whether a scene has an active appearance.
 - [enum UIUserInterfaceActiveAppearance](uiuserinterfaceactiveappearance.md)
   Constants that indicate whether the user interface has an active appearance.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](uitraitcollection/toolbaritempresentationsize.md)

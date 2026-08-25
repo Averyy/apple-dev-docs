@@ -84,9 +84,6 @@ func newContextualSession(with originalSession: LanguageModelSession) -> Languag
   The transcript entries excluding the leading instructions entry, if present.
 - [Transcript.HistoryView](transcript/historyview.md)
   A mutable view into the conversational entries of a [`Transcript`](transcript.md).
-### Getting the structured transcript
-- [var structuredTranscript: StructuredTranscript](transcript/structuredtranscript.md)
-  A structured representation of this transcript, with tool calls, outputs, and responses collected into typed arrays.
 ### Constructing entries
 - [Transcript.Entry](transcript/entry.md)
   An entry in a transcript.
@@ -124,6 +121,9 @@ func newContextualSession(with originalSession: LanguageModelSession) -> Languag
 ### Configuring the output format
 - [Transcript.ResponseFormat](transcript/responseformat.md)
   A response format that the model must conform its output to.
+### Instance Properties
+- [var structuredTranscript: StructuredTranscript](transcript/structuredtranscript.md)
+  A structured representation of this transcript, with tool calls, outputs, and responses collected into typed arrays.
 
 ## Relationships
 

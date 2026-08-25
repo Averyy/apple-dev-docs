@@ -60,6 +60,10 @@ After you implement a network path monitor, test your app in a variety of condit
 
 ## See Also
 
+- [Network](../network/network.md)
+  Create network connections to send and receive data using transport and security protocols.
+- [class NWParameters](../network/nwparameters.md)
+  An object that stores the protocols to use for connections, options for sending data, and network path constraints.
 - [Information Property List](information-property-list.md)
   A resource containing key-value pairs that identify and configure a bundle.
 

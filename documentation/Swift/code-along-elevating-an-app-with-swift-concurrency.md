@@ -22,6 +22,8 @@ To run this sample app, you need a physical iOS or iPadOS device.
 
 - [Updating an app to use strict concurrency](updating-an-app-to-use-strict-concurrency.md)
   Use this code to follow along with a guide to migrating your code to take advantage of the full concurrency protection that the Swift 6 language mode provides.
+- [Updating an app to use Swift concurrency](updating-an-app-to-use-swift-concurrency.md)
+  Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 
 
 ---

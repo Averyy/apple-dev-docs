@@ -17,7 +17,7 @@ protocol Delegate : AnyObject
 
 #### Overview
 
-Use this delegate to be informed of transitions and to update applications state based on these changes.
+Use this delegate to be aware of transitions and to update an app’s state based on those changes.
 
 ## Topics
 
@@ -29,7 +29,7 @@ Use this delegate to be informed of transitions and to update applications state
 - [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangetransitioncontext:).md)
   Tells the delegate when the transition context changes during a transition.
 - [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
-  The state of the transition provided to the delegate object.
+  The state of the transition that the system provides to the delegate object.
 
 ## See Also
 

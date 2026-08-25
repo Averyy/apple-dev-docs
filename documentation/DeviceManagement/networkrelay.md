@@ -28,10 +28,10 @@ Specify `com.apple.configuration.network.relay` as the declaration type.
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
 | Allowed in device enrollment | iOS, Shared iPad, visionOS |
-| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in local enrollment | N/A |
-| Allowed in system scope | iOS, macOS, visionOS |
-| Allowed in user scope | Shared iPad |
+| Allowed in user enrollment | iOS, Shared iPad, visionOS |
+| Allowed in local enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in system scope | iOS, macOS, Shared iPad, visionOS |
+| Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
 ##### Configuration Examples
@@ -110,6 +110,8 @@ This configuration routes specific hostnames through two chained relay hops supp
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -138,8 +140,6 @@ This configuration routes specific hostnames through two chained relay hops supp
   The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
-- [object IntelligenceSettings](intelligencesettings.md)
-  The declaration to configure Apple Intelligence settings.
 
 
 ---

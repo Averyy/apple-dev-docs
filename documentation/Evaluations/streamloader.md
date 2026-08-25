@@ -12,6 +12,7 @@ A loader backed by a custom async sequence.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -19,11 +20,23 @@ A loader backed by a custom async sequence.
 struct StreamLoader<Sample> where Sample : SampleProtocol
 ```
 
+#### Overview
+
+```swift
+let loader = StreamLoader(stream: AsyncThrowingStream { continuation in
+    continuation.yield(ModelSample(prompt: "What is 2+2?", expected: "4"))
+    continuation.finish()
+})
+```
+
 ## Topics
 
 ### Initializers
 - [init(stream: some Sendable & AsyncSequence<Sample, any Error>)](streamloader/init(stream:).md)
   Creates a loader backed by the given async sequence.
+### Instance Properties
+- [var stream: any AsyncSequence<Sample, any Error>](streamloader/stream.md)
+  The async sequence that forwards each sample from the underlying async sequence during an evaluation run.
 
 ## Relationships
 

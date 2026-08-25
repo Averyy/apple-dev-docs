@@ -88,7 +88,7 @@ func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
 ## See Also
 
 - [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
-  Help users organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
+  Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
 - [Selecting Photos and Videos in iOS](selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
 - [Bringing Photos picker to your SwiftUI app](bringing-photos-picker-to-your-swiftui-app.md)

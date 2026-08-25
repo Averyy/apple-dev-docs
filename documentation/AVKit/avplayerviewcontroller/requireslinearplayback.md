@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: property
 
-A Boolean value that determines whether the player allows the user to skip media content.
+A Boolean value that determines whether the player allows someone to skip media content.
 
 **Availability**:
 - iOS 11.0+

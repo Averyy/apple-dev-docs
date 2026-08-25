@@ -96,6 +96,11 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
 - [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
   Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
+### Lighting
+- [Lighting a scene with lights and light layers](lighting-a-scene-with-lights-and-light-layers.md)
+  Configure lights and light layers to control a scene’s illumination.
+- [Configuring how materials respond to light](configuring-how-materials-respond-to-light.md)
+  Match how a material reacts to the lights in a scene.
 ### Assistant
 - [Working with the Reality Composer Pro Assistant](working-with-the-reality-composer-pro-assistant.md)
   Connect an AI model to Reality Composer Pro to generate assets and get contextual help building scenes.
@@ -112,6 +117,8 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 - [Reality Composer Pro Beta 3 Release Notes](reality-composer-pro-beta-3-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 - [Reality Composer Pro Beta 4 Release Notes](reality-composer-pro-beta-4-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.
+- [Reality Composer Pro Beta 5 Release Notes](reality-composer-pro-beta-5-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 
 

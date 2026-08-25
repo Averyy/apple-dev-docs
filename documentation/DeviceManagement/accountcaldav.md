@@ -63,6 +63,8 @@ This configuration sets up a CalDAV account for calendars.
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCardDAV](accountcarddav.md)
   The declaration to configure a Contacts account.
 - [object AccountExchange](accountexchange.md)
@@ -91,8 +93,6 @@ This configuration sets up a CalDAV account for calendars.
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
 
 
 ---

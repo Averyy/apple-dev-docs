@@ -84,7 +84,7 @@ Because of these changes, the type `va_list` is an alias for `char*`, and not fo
 
 ##### Handle C++ Differences
 
-The generic ARM64 C++ ABI mirrors the Itanium C++ ABI, which many UNIX-like systems use. Apple’s C++ ABI differs from this ABI in the following ways:
+The generic ARM64 C++ ABI mirrors the Itanium C++ ABI. Apple’s C++ ABI differs from this ABI in the following ways:
 
 - The mangled name of the `va_list` type is `Pc`, and not `St9__va_list`. This difference occurs because `va_list` is an alias for `char *`, and uses the same name-mangling conventions.
 - The mangled names for NEON vector types match their 32-bit ARM counterparts, rather than using the 64-bit scheme. For example, Apple platforms use `17__simd128_int32_t` instead of the generic `11_int32x4_t`.

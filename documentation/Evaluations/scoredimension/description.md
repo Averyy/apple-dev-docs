@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-An optional description providing additional context for the judge about what this dimension measures.
+An optional description providing additional context for the model judge about what this dimension measures.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ An optional description providing additional context for the judge about what th
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ let description: String?
 ## See Also
 
 - [var metric: Metric](scoredimension/metric.md)
-  A metric identifier derived from this dimension’s name.
+  A metric identifier that uses this dimension’s name.
 - [let scale: ScoringScale](scoredimension/scale.md)
   The scoring scale for this dimension.
 

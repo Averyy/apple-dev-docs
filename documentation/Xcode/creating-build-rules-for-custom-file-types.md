@@ -32,7 +32,7 @@ To match custom file types, select the “Source files with names matching” op
 
 > ❗ **Important**: Avoid choosing filename extensions that overlap with the extensions other file types use. Xcode selects the first rule that matches a given file, so any overlap might cause Xcode to run the wrong tool.
 
-For information about pattern matching using the `fnmatch` function, see the man page for that function.
+For information about pattern matching using the `fnmatch` function, see the man (manual) page for that function.
 
 ##### Specify the Input and Output Files for Your Shell Script
 

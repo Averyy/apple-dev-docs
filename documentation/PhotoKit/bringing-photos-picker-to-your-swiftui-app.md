@@ -116,7 +116,7 @@ When handling many items at the same time, or large assets, use [`FileRepresenta
 ## See Also
 
 - [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
-  Help users organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
+  Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
 - [Selecting Photos and Videos in iOS](selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
 - [Implementing an inline Photos picker](implementing-an-inline-photos-picker.md)

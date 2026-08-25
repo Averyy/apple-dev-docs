@@ -14,7 +14,7 @@ The platform, and whether you’re a member of the [`Apple Developer Program`](h
 
 Before you begin, add your Apple Account to settings and assign the project to a team in the project editor so that Xcode can create a provisioning profile for your app. For iOS, iPadOS, tvOS, visionOS, and watchOS apps, run your app on a device to register the device and create a development provisioning profile. For more information, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md).
 
-> ❗ **Important**: Use the default automatic signing when you create a project from a template. If you manually sign your app, you need to perform the capability configuration steps yourself. For more information on manually signing, see [`Configure code signing`](distributing-your-app-to-registered-devices#Configure-code-signing.md).
+> ❗ **Important**: Use the default automatic signing when you create a project from a template. If you manually sign your app, you need to perform the capability configuration steps yourself.
 
 ##### Add a Capability
 

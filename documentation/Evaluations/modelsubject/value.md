@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-The typed value produced by the model.
+The typed value the model produces.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ The typed value produced by the model.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

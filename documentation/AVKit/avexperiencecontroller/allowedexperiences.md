@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: property
 
-The set of experiences the application supports.
+The set of experiences the app supports.
 
 **Availability**:
 - visionOS 2.0+
@@ -19,7 +19,7 @@ final var allowedExperiences: AVExperienceController.Experiences { get set }
 
 Use this to allow additional experiences like multiview, or to disable expanded. This list is the basis for [`availableExperiences`](avexperiencecontroller/availableexperiences.md), which filters out inapplicable experiences.
 
-> **Note**: Because [`AVExperienceController.Experience.embedded`](avexperiencecontroller/experience-swift.enum/embedded.md) is the initial experience, and the one returned to when others end, it’s a programming error to exclude it from this list.
+> **Note**: Because [`AVExperienceController.Experience.embedded`](avexperiencecontroller/experience-swift.enum/embedded.md) is the initial experience, and the one that the player returns to when others end, it’s a programming error to exclude it from this list.
 
 ## See Also
 
@@ -34,7 +34,7 @@ Use this to allow additional experiences like multiview, or to disable expanded.
 - [var configuration: AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.property.md)
   The configuration options per experience.
 - [AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.struct.md)
-  A structure that stores per-experience configuration.
+  Options that configure each experience.
 
 
 ---

@@ -330,7 +330,7 @@ var evaluators: Evaluators {
 }
 ```
 
-This pattern lets you verify that the model both uses the right tools and produces the right answer. For subjective quality criteria like tone or helpfulness, see [`Scoring with model-as-judge evaluators`](scoring-with-model-as-judge-evaluators.md).
+This pattern lets you verify that the model both uses the right tools and produces the right answer. For subjective quality criteria like tone or helpfulness, see [`Scoring with model-judge evaluators`](scoring-with-model-as-judge-evaluators.md).
 
 #### Run Your Evaluation
 

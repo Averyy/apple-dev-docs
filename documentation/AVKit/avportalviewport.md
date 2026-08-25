@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: class
 
-Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
+An object that defines the visual parameters for content displayed within a portal frame.
 
 **Availability**:
 - visionOS 27.0+ (Beta)
@@ -16,13 +16,7 @@ class AVPortalViewport
 
 #### Overview
 
-Portal viewports allow you to control how immersive content is framed and presented to users. You can specify the aspect ratio of the portal frame to achieve the desired visual effect.
-
-When properties are not explicitly set, the system provides sensible defaults:
-
-- Aspect Ratio: Defaults to 16:9 (1.78) for standard widescreen content
-
-> **Note**: Spatial videos do not support portal viewport settings.
+Use this configuration to create cinematic viewing experiences with custom framing. Portal viewports let you control how the system frames and presents immersive content. Specify the aspect ratio of the portal frame to achieve the visual effect you want, as the following example shows:
 
 ```swift
 let portalViewport = AVPortalViewport()
@@ -30,11 +24,15 @@ portalViewport.aspectRatio = 2.39
 playerViewController.viewport.portal = portalViewport
 ```
 
+When you don’t explicitly set properties, the system provides sensible defaults. The aspect ratio defaults to 16:9 (1.78) for standard widescreen content.
+
+> **Note**: Spatial videos don’t support portal viewport settings.
+
 ## Topics
 
 ### Configuring the aspect ratio
 - [var aspectRatio: Double?](avportalviewport/aspectratio-4drnq.md)
-  The aspect ratio of the portal frame.
+  The width-to-height ratio of the portal frame.
 
 ## Relationships
 
@@ -69,7 +67,7 @@ playerViewController.viewport.portal = portalViewport
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
 - [class AVViewport](avviewport.md)
-  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+  An object that provides configuration options for how the player displays content in different viewing contexts.
 - [Third-party casting support](third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.
 

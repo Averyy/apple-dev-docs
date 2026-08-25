@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-A short label for this option (e.g., “excellent”, “pass”, “5”).
+A short label for this option, such as “excellent”, “pass”, or “5”.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ A short label for this option (e.g., “excellent”, “pass”, “5”).
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

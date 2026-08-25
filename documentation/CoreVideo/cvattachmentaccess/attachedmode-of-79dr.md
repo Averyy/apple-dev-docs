@@ -3,7 +3,7 @@
 **Framework**: Core Video  
 **Kind**: method
 
-Returns mode of an attached key without retriving value.
+Returns the propagation mode of an attachment you identify with a key path to a key definition that supplies a default, without retrieving the value.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,9 +20,19 @@ Returns mode of an attached key without retriving value.
 func attachedMode(of keyPath: KeyPath<Keys.Type, CVAttachmentKeyDefinitionWithDefault<some CVAttachmentModePreference, some CVAttachmentValueRepresentable & Equatable & Sendable>>) -> CVAttachmentMode?
 ```
 
+#### Return Value
+
+The propagation mode of the attachment, or `nil` if the key isn’t attached.
+
 #### Discussion
 
-This function can be used to check for the presence of a specific key without converting it’s value. Returns `nil` if the key is not attached.
+Use this method to check for the presence of a specific key without converting its value.
+
+Because this kind of key supplies a default, reading it as a property always produces a value, whether or not the buffer carries an attachment for it. This method returns `nil` in the second case, which makes it the way to tell an attached value from a defaulted one.
+
+## Parameters
+
+- `keyPath`: A key path to a key definition that supplies a default value.
 
 
 ---

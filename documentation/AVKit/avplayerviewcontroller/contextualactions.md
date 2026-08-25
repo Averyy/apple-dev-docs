@@ -33,7 +33,7 @@ For details about observing player timing, see `Observing the Playback Time`.
 - [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
   A Boolean value that indicates whether the player shows the transport bar and related controls.
 - [var playbackControlsIncludeInfoViews: Bool](avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
-  A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when the user requests them.
+  A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when someone requests them.
 - [var transportBarIncludesTitleView: Bool](avplayerviewcontroller/transportbarincludestitleview.md)
   A Boolean value that indicates whether the player user interface shows the title view above the scrubber.
 - [var transportBarCustomMenuItems: [UIMenuElement]](avplayerviewcontroller/transportbarcustommenuitems.md)

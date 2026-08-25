@@ -26,7 +26,6 @@ object AppManagedInstallBehavior_LicenseObject
 
 - `Assignment` (string): The type of license that the app uses for installation through the App Store, which is one of the following values: - `Device`: The app has a device license.
 - `User`: The app has a user license. This key needs to be present for App Store apps, when either `AppStoreID` or `BundleID` are present in the configuration.
-- `VPPType` (string)
 
 
 ---

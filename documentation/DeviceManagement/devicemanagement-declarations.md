@@ -7,6 +7,8 @@ Configure devices using declarative device management.
 ## Topics
 
 ### Configurations
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -108,7 +110,7 @@ Configure devices using declarative device management.
 - [object AssetCredentialACME](assetcredentialacme.md)
   A reference to an ACME identity.
 - [object AssetCredentialCertificate](assetcredentialcertificate.md)
-  A reference to a PKCS #1 or PEM encoded certificate.
+  A reference to one PKCS #1 or PEM encoded certificate.
 - [object AssetCredentialIdentity](assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
 - [object AssetCredentialSCEP](assetcredentialscep.md)

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The bundled language model input (prompt, instructions, schema).
+The bundled language model input, including prompt, instructions, and schema.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -13,6 +13,7 @@ The bundled language model input (prompt, instructions, schema).
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: Evaluations  
 **Kind**: method
 
+Provides an empty array when an optional evaluator block is absent.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -10,6 +12,7 @@
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

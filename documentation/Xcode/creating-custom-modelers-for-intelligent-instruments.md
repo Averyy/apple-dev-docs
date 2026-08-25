@@ -23,7 +23,7 @@ Each Instruments Distribution Package target within the Xcode project uses incre
 
 This sample requires Xcode 11 or later and iOS 12 or later.
 
-Select GoatList from the target choices in Xcode to run the sample app in the iOS Simulator or on an iOS device. When the app launches, select a Modeling target to run on your Mac. The Modeling target launches Instruments. Next, select the Blank template and click the Add button (+) in the upper-right corner to search for the Instrument that was created when building the target. Searching for “Mobile Agent” should reveal the Custom Instrument. Once you select the proper device and target process within Instruments, you’re ready to record.
+Select GoatList from the target choices in Xcode to run the sample app on a simulated or physical iOS device. When the app launches, select a Modeling target to run on your Mac. The Modeling target launches Instruments. Next, select the Blank template and click the Add button (+) in the upper-right corner to search for the Instrument that was created when building the target. Searching for “Mobile Agent” should reveal the Custom Instrument. Once you select the proper device and target process within Instruments, you’re ready to record.
 
 ##### Design a Custom Modeler for Mobileagent Activity
 

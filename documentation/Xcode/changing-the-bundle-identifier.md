@@ -10,6 +10,8 @@ If you want to change your app’s bundle ID before you upload a build to App St
 
 The *bundle ID* is an information property list key that uniquely identifies your app throughout the system. Some capabilities use information property list or entitlement keys in your project that contain the main bundle ID.
 
+When you choose a physical device other than a Mac to run your app, Xcode registers an App ID in your developer account based on the bundle ID in your developer account. If you aren’t a member of the Apple Developer Program, the number of App IDs you can register in Xcode is limited, so don’t change the bundle ID frequently. For more information, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md).
+
 If you refer to a bundle ID in your code, replace it with the [`bundle()`](https://developer.apple.com/documentation/foundation/bundle()) macro that returns the bundle for the calling code.
 
 > **Note**: If you use [`Xcode Cloud`](xcode-cloud.md), commit your project changes to your remote repository before creating a workflow.
@@ -60,14 +62,14 @@ Update any other settings in App Store Connect that use the bundle ID, such as i
 
 #### Update Manual Provisioning Profiles
 
-If you use manual provisioning, update the App ID in those provisioning files to match the bundle ID in your project. For more information, see [`Edit, download, or delete provisioning profiles`](https://developer.apple.comhttps://developer.apple.com/help/account/provisioning-profiles/edit-download-or-delete-profiles) in Developer Account Help. After you update your provisioning profile in your developer account, you can download it from Xcode > Settings > Accounts, using the Download Manual Profiles button when you select your account.
+If you use manual provisioning, update the App ID in those provisioning files to match the bundle ID in your project. For more information, see [`Edit, download, or delete provisioning profiles`](https://developer.apple.comhttps://developer.apple.com/help/account/provisioning-profiles/edit-download-or-delete-profiles) in Developer Account Help. After you update your provisioning profile in your developer account, you can download it from Xcode > Settings > Apple Accounts, using the Download Manual Profiles button when you select your account.
 
 If you toggle the “Automatically manage signing” checkbox in the Signing & Capabilities pane, Xcode updates your provisioning profiles for you.
 
 ## See Also
 
 - [Making dependencies available to Xcode Cloud](making-dependencies-available-to-xcode-cloud.md)
-  Review dependencies and make them available to Xcode Cloud before you configure your project to use Xcode Cloud.
+  Confirm that Xcode Cloud has access to every dependency your project needs to build.
 - [Configuring Xcode Cloud for your team](configuring-xcode-cloud-for-your-team.md)
   Start using continuous integration and delivery with Xcode Cloud as a team.
 - [Sharing macOS and Xcode versions across Xcode Cloud workflows](sharing-custom-aliases-across-xcode-cloud-workflows.md)

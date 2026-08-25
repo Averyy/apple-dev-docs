@@ -58,6 +58,8 @@ Reality Composer Pro Beta 4 is a standalone app, available for download from the
   Review known issues and changes in Reality Composer Pro 3.
 - [Reality Composer Pro Beta 3 Release Notes](reality-composer-pro-beta-3-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
+- [Reality Composer Pro Beta 5 Release Notes](reality-composer-pro-beta-5-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.
 
 
 ---

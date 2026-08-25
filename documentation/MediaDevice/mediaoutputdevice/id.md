@@ -16,6 +16,10 @@ A unique identifier for the device.
 let id: UUID
 ```
 
+## Mentions
+
+- [Creating a media device extension](creating-a-media-device-extension.md)
+
 
 ---
 

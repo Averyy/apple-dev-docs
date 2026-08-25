@@ -20,7 +20,7 @@ object DNSProxy.ProviderConfiguration
 
 ## Properties
 
-- `ANY` (any): Key/value pairs.
+- `ANY` (any): Key/value pairs. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 
 ---

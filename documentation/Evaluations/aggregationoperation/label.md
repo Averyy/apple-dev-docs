@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-The display label derived from this operation.
+The display label this operation produces.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ The display label derived from this operation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

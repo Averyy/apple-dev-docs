@@ -9,6 +9,7 @@ Build interactive experiences with Foundation Models and Private Cloud Compute u
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 - Xcode 27.0+ (Beta)
 
 #### Overview
@@ -125,7 +126,7 @@ struct BrainstormInstructions: DynamicInstructions {
 }
 ```
 
-The full sample applies the same branching to `.brainstorm` and adds path-specific extras like a shortened transcript history on the on-device path.
+The full sample applies the same on-device branching to `.brainstorm`, dropping the higher temperature and using the on-device model when PCC isn’t configured. The on-device `.tutorial` and `.term` paths go a step further and shorten their transcript history to fit the smaller context window.
 
 A dynamic profile keeps mode-specific configuration in one place and out of the code that sends prompts. For more information, see [`Composing dynamic sessions with instructions and profiles`](composing-dynamic-sessions-with-instructions-and-profiles.md).
 

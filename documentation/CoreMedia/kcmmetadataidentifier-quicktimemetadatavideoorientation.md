@@ -3,7 +3,7 @@
 **Framework**: Core Media  
 **Kind**: var
 
-Video orientation as defined by TIFF/EXIF.
+Video orientation as defined by TIFF/Exif.
 
 **Availability**:
 - iOS 9.0+

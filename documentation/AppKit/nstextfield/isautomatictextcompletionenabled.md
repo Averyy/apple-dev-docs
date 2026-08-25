@@ -16,6 +16,8 @@ var isAutomaticTextCompletionEnabled: Bool { get set }
 
 ## See Also
 
+- [var suggestionsDelegate: (any NSTextSuggestionsDelegate)?](nstextfield/suggestionsdelegate.md)
+  The delegate that provides text suggestions for the receiving text field and responds to the user highlighting and selecting items.
 - [protocol NSTextSuggestionsDelegate](nstextsuggestionsdelegate.md)
   A protocol for suggestion delegates of text fields to conform to in order to provide text suggestions in response to the user typing.
 - [struct NSSuggestionItem](nssuggestionitem.md)

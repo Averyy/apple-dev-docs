@@ -17,13 +17,13 @@ final class AVExperienceController
 
 #### Overview
 
-Use this class to control, observe, and respond to experience changes for an [`AVPlayerViewController`](avplayerviewcontroller.md). A player view controller’s presentation APIs will no longer be honored after attaching an experience controller. Using the other presentation APIs may preclude the use of this class.
+Use this class to control, observe, and respond to experience changes for an [`AVPlayerViewController`](avplayerviewcontroller.md). After you attach an experience controller, the player view controller no longer honors its presentation APIs. Using the other presentation APIs may preclude the use of this class.
 
 ## Topics
 
 ### Configuring the experience
 - [var allowedExperiences: AVExperienceController.Experiences](avexperiencecontroller/allowedexperiences.md)
-  The set of experiences the application supports.
+  The set of experiences the app supports.
 - [var availableExperiences: AVExperienceController.Experiences](avexperiencecontroller/availableexperiences.md)
   The allowed experiences that are available to use on the device at this time.
 - [AVExperienceController.Experiences](avexperiencecontroller/experiences.md)
@@ -35,7 +35,7 @@ Use this class to control, observe, and respond to experience changes for an [`A
 - [var configuration: AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.property.md)
   The configuration options per experience.
 - [AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.struct.md)
-  A structure that stores per-experience configuration.
+  Options that configure each experience.
 ### Transitioning experiences
 - [AVExperienceController.TransitionGroup](avexperiencecontroller/transitiongroup.md)
   A group of experience transitions that prepare concurrently and run simultaneously as a single visual transition.
@@ -52,7 +52,7 @@ Use this class to control, observe, and respond to experience changes for an [`A
 - [AVExperienceController.ExpandedConfiguration](avexperiencecontroller/expandedconfiguration.md)
   A structure that specifies options for an expanded experience.
 - [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
-  The state of the transition provided to the delegate object.
+  The state of the transition that the system provides to the delegate object.
 
 ## Relationships
 
@@ -79,9 +79,9 @@ Use this class to control, observe, and respond to experience changes for an [`A
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
 - [class AVViewport](avviewport.md)
-  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+  An object that provides configuration options for how the player displays content in different viewing contexts.
 - [class AVPortalViewport](avportalviewport.md)
-  Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
+  An object that defines the visual parameters for content displayed within a portal frame.
 - [Third-party casting support](third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.
 

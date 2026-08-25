@@ -15,8 +15,8 @@ Different preview macros enable different kinds of configuration. For example, y
 ## Topics
 
 ### Essentials
-- [Previewing your app’s interface in Xcode](../xcode/previewing-your-apps-interface-in-xcode.md)
-  Iterate designs quickly and preview your apps’ displays across different Apple devices.
+- [Adding previews to your interface files](../xcode/adding-previews-to-your-interface-files.md)
+  Write code to test your views on different devices and configurations without needing to run your app.
 ### Creating a preview
 - [macro Preview(String?, body: () -> any View)](preview(_:body:).md)
   Creates a preview of a SwiftUI view.

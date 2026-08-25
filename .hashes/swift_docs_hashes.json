@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-08-21T08:37:55.163437",
+    "last_updated": "2026-08-25T08:34:51.708177",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -29,17 +29,17 @@
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/OpaqueTypes.md": "752815b326d39b714bd83d517f2bd062f09c9d3ba8ebc3dd1d74ce1c6e718493",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/OptionalChaining.md": "d67c0a49b54100c2bd2fd9356ed9f8d6af6ff5997da6e7cd7df7916a40006711",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Properties.md": "875c5268895f3abe65b67d73ac9950b603ca68edb25e6e890ad613df08f6c7e0",
-    "swiftlang/swift-book:TSPL.docc/LanguageGuide/Protocols.md": "9b4b61d89e965d2a2733729b935bd69f214be52dbd62c0a135554e45f16d19a4",
+    "swiftlang/swift-book:TSPL.docc/LanguageGuide/Protocols.md": "0a195a8fbfe694f3cb212fdd8332f2810338fe56813d3460b396be4ac7e40bd6",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/StringsAndCharacters.md": "2bd491271377eedabedfddebb2cece8f292009759ba9836bc43d43ee44634385",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Subscripts.md": "54844cf530c3325708028e1cf88d94f885c3658ec6316f869421d5cbba9b939a",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/TheBasics.md": "7af35edc1e56e2927f11fa9c9ffb98e48b35b2bb2950d4ef3198d0927db7a851",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/TypeCasting.md": "2271c6b1584720d2d44161201c8bee190ba7224b709d3059e50fb00c4a312e55",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/AboutTheLanguageReference.md": "a8f697ca399b79642cb724de1512fe439ff3878054515abe36e5f77a8d0f7a8c",
-    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Attributes.md": "e16f6c78dab49ad34a264d83e06cf5131be51f73f5605d70f120bdca9e0b4598",
-    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Declarations.md": "b56691ea76df6e8af06b1c369a93147d0d2e2791731cbaa4cdc0acc91a20b41c",
+    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Attributes.md": "0921ac0d2b7c2403614fe7245ff36c410a9ec175837dcba39e5de5df61ac2389",
+    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Declarations.md": "f70bba7c13d968d0dcb372f51f3bd55518e4d40efc917248ec98c17d37821fb7",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Expressions.md": "6f09949cb5d8b8807a3097a6f22919e026df5bc7a97485e884cc01b72b08a329",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/GenericParametersAndArguments.md": "bd8bdf972a825fecf1c6180c94ae108a7ffe66c8d16c925faacc94733181f636",
-    "swiftlang/swift-book:TSPL.docc/ReferenceManual/LexicalStructure.md": "3b383eb0e7b58b8acee7f6935a1309592183b43b64d03b086f457a409e57819e",
+    "swiftlang/swift-book:TSPL.docc/ReferenceManual/LexicalStructure.md": "1c81943f9b2a776aff04e470c437f22acf07a16986db76ec3473477107325d6f",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Patterns.md": "89002b2c5e02f6aa8e177f48e41aa1f6b7205648c35053b15cd3ce4a65328067",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Statements.md": "e4232168fc5cad0eac98b5d2b291d7d2f238dda5ee941d3e3e9b0a84d2d9cd5d",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Types.md": "e2cf59ebd60caca12da39b1004e5eff92d3ec294e48c257216d2548d5667c030",
@@ -47,7 +47,7 @@
     "swiftlang/swift-book:TSPL.docc/GuidedTour/Compatibility.md": "3978935ba3201d2f1e74a3e3b63a54a1412b141e33a684036b32a41230f9fe5a",
     "swiftlang/swift-book:TSPL.docc/GuidedTour/GuidedTour.md": "0becd1b48ee0baab2fd3432c70448f0c5edfa5fd1d36fa242aa08c4191391261",
     "swiftlang/swift-org-website:documentation/api-design-guidelines/index.md": "71f3853c08ac1a8e9df4a071bd6e819aee70e4e8cc7f4ab5901d380154308389",
-    "swiftlang/swift-org-website:documentation/cxx-interop/index.md": "0ab168adc0f755ff90045a06d99944450947205ae9809d49986b3f50e7085e4a",
+    "swiftlang/swift-org-website:documentation/cxx-interop/index.md": "ede26b55f6b3fbb6f4bbb9ab953ff4a096657493a09d2ef8553d8113529dfa63",
     "swiftlang/swift-org-website:documentation/cxx-interop/project-build-setup/index.md": "29827b8511437f85a8deaed828e858fd6f2c97e05b94bfd8c340751ddf8a141b",
     "swiftlang/swift-org-website:documentation/cxx-interop/safe-interop/index.md": "473a3ec7219adf92007fe1b5bc32e726bb1fd34e93e216f4b801588a303fe4f8",
     "swiftlang/swift-org-website:documentation/cxx-interop/status/index.md": "818e18524c2848b217cad9a50a617935daa645b1b69ac4a2662fc84c9d8a99d2"

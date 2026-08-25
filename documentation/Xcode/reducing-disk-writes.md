@@ -104,7 +104,7 @@ func testDiskUse() {
 }
 ```
 
-##### Use Swift Data Core Data or Sqlite Databases for Frequently Changing Documents
+##### Use Swiftdata Core Data or Sqlite Databases for Frequently Changing Documents
 
 SQLite is highly optimized for efficient access to storage. It uses in-memory caches and batched disk-writes to ensure high performance and minimal wear on storage. The data structures are designed to allow efficient updates when inserting new content or updating existing content.
 

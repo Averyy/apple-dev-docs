@@ -72,46 +72,16 @@ After you change your app to address the most important performance issue you ob
 
 Finally, decide whether the metric you’re working on is still the most important to address, or whether the data points to another metric for the next iteration of the performance improvement cycle.
 
-##### Additional Resources
-
-The following articles, Xcode Help topics, and WWDC session videos contain more information about using Xcode and Instruments for measuring and improving app performance:
-
-###### Performance Tools and Techniques
-
-- [`Diagnose Performance Issues With the Xcode Organizer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10076/)
-- [`Eliminate Animation Hitches With XCTest`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10077)
-- [`Instruments Help`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current)
-- [`Logging`](https://developer.apple.com/documentation/os/logging)
-- [`Practical Approaches to Great App Performance`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/407/)
-- [`Time Profiler`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/#/dev44b2b437)
-- [`What’s New in MetricKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10081)
-- [`Writing and running performance tests`](writing-and-running-performance-tests.md)
-
-###### Energy Consumption
-
-- [`Energy Efficiency and the User Experience`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929-CH15)
-- [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243)
-- [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_11.html#//apple_ref/doc/uid/TP40016227-SW14)
-- [`Identify Trends With the Power and Performance API`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10057)
-- [`Monitor a running app using debug gauges`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/dev94c128b7b)
-- [`Monitor your app’s energy usage`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/devf7f7c5fcd)
-- [`Profile your app’s energy use`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/#/dev7b8f6eb6)
-- [`Xcode Energy Organizer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/dev36a5a9141)
-
 ## See Also
 
-- [Reducing your app’s memory use](reducing-your-app-s-memory-use.md)
-  Improve your app’s performance by analyzing memory-use metrics and making changes to maximize memory efficiency.
-- [Reducing your app’s launch time](reducing-your-app-s-launch-time.md)
-  Create a more responsive experience with your app by minimizing time spent in startup.
-- [Reducing disk writes](reducing-disk-writes.md)
-  Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 - [Profiling apps using Instruments](https://developer.apple.com/tutorials/instruments)
   Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
 - [Analyzing the performance of your shipping app](analyzing-the-performance-of-your-shipping-app.md)
   View power and performance metrics for apps you distribute through the App Store.
 - [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
+- [Writing and running performance tests](writing-and-running-performance-tests.md)
+  Repeatably gather metrics on the performance of your code.
 
 
 ---

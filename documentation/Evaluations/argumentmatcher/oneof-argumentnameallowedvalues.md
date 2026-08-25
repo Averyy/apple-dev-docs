@@ -12,6 +12,7 @@ A value that indicates the argument must be present with a value that matches on
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,11 @@ case oneOf(argumentName: String, allowedValues: [ArgumentValue])
 ## Mentions
 
 - [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+
+## Parameters
+
+- `argumentName`: The name of the argument to validate.
+- `allowedValues`: The set of values the argument must match one of.
 
 ## See Also
 

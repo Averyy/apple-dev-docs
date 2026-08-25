@@ -48,6 +48,8 @@ Implement this protocol in your app’s [`didActivate(for:)`](notificationsforwa
 
 ## See Also
 
+- [Receiving iOS notifications on an accessory](../accessorytransportextension/receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage iOS system notifications for your accessory.
 - [class NotificationsForwarding](notificationsforwarding.md)
   A class for handling notification forwarding in your accessory’s data provider extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)

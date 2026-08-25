@@ -78,7 +78,7 @@ if (iopolicy >= 0) {
 }
 ```
 
-For more information about the functions and constants in the above code, see their man pages. [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages) covers how to read man pages.
+For more information about the functions and constants in the above code, see their man pages. doc://com.apple.documentation/documentation/os/reading-unix-manual-pages covers how to read man pages.
 
 #### Revision History
 

@@ -71,6 +71,8 @@ This configuration enables temporary pairing and sets an unpairing time of 6 pm.
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -99,8 +101,6 @@ This configuration enables temporary pairing and sets an unpairing time of 6 pm.
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
 
 
 ---

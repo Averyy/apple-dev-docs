@@ -12,6 +12,7 @@ A mode that allows the model to return any floating-point value. The scale serve
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

@@ -26,10 +26,12 @@ This property determines whether tasks within sessions based on this configurati
 
 The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
+HTTP/2 and later ignore this property. HTTP/1.1 only considers this property in the classic loading mode ([`usesClassicLoadingMode`](urlsessionconfiguration/usesclassicloadingmode.md)).
+
 ## See Also
 
 - [var httpMaximumConnectionsPerHost: Int](urlsessionconfiguration/httpmaximumconnectionsperhost.md)
-  The maximum number of simultaneous connections to make to a given host.
+  The maximum number of simultaneous HTTP/1.1 connections to make to a given host.
 - [var proxyConfigurations: [ProxyConfiguration]](urlsessionconfiguration/proxyconfigurations.md)
   An array of proxy configuration objects containing information about the proxies to use within this session.
 - [var connectionProxyDictionary: [AnyHashable : Any]?](urlsessionconfiguration/connectionproxydictionary.md)

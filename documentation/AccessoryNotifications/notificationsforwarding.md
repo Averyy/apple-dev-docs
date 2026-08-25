@@ -43,6 +43,8 @@ Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notifica
 
 ## See Also
 
+- [Receiving iOS notifications on an accessory](../accessorytransportextension/receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage iOS system notifications for your accessory.
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
   A protocol that defines methods for handling notification life cycle events in your extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)

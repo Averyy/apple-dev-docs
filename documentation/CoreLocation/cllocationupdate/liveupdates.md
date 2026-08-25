@@ -35,7 +35,7 @@ static func liveUpdates(_ configuration: CLLocationUpdate.LiveConfiguration = .d
 ## See Also
 
 - [CLLocationUpdate.LiveConfiguration](cllocationupdate/liveconfiguration.md)
-  Values for indicating the kind of updates the framework delivers.
+  Values that indicate the kind of positioning updates the framework delivers.
 - [CLLocationUpdate.Updates](cllocationupdate/updates.md)
   A structure that represents an asynchronous sequence of location updates.
 

@@ -128,7 +128,7 @@ When the model calls your tool, the [`call(arguments:)`](tool/call(arguments:).m
 ```swift
 func call(arguments: Arguments) async throws -> String {
     // Get the image attachment from the session history.
-    guard let attachment = arguments.image.resolve(in: Transcript(entries: sessionHistory)) else {
+    guard let attachment = arguments.image.resolved(in: Transcript(entries: sessionHistory)) else {
         return "The image isn't in the session history."
     }
     

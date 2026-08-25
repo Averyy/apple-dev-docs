@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-All samples — initial and generated — from the most recent run.
+All initial and generated samples from the most recent run.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ All samples — initial and generated — from the most recent run.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ var samples: [SampleType] { get }
 
 #### Discussion
 
-Before [`run()`](samplegenerator/run().md) is called, this equals `initialSamples`. After iteration completes, it contains the full resulting dataset.
+Before you call [`run()`](samplegenerator/run().md), this equals the samples you passed to the initializer. After iteration completes, it contains the full resulting dataset.
 
 ## See Also
 

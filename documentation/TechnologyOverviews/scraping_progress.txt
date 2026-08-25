@@ -1,4 +1,4 @@
 Completed scraping Technology Overviews!
-Total pages scraped: 0
-Pages skipped (unchanged): 46
+Total pages scraped: 3
+Pages skipped (unchanged): 43
 Pages failed: 0

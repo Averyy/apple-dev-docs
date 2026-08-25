@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-Rubric guidance shown to the judge for this option.
+Rubric guidance that the model judge references for this option.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ Rubric guidance shown to the judge for this option.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

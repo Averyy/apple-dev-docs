@@ -113,6 +113,8 @@ Beginning in macOS 11.3, installing or removing this payload can change the stat
   The payload that configures a Lock Screen message.
 - [object Screensaver](screensaver.md)
   The payload that configures the screen saver.
+- [object SystemLogging](systemlogging.md)
+  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

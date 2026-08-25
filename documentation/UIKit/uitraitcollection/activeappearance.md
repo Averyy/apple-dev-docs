@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-A property that indicates whether the user interface has an active appearance.
+A property that indicates whether a scene has an active appearance.
 
 **Availability**:
 - iOS 14.0+
@@ -20,7 +20,13 @@ var activeAppearance: UIUserInterfaceActiveAppearance { get }
 
 #### Discussion
 
-The active appearance varies by platform and window management mode. On macOS, Stage Manager on iPad, and Windowed mode on iPad, the value is `.active` when at least one window is in the foreground and `.inactive` when no windows are in the foreground. On iOS and Full Screen mode on iPad, the value reflects whether the app itself is in the foreground (`.active`) or not (`.inactive`).
+`activeAppearance` describes whether a scene is frontmost; it doesn’t describe a scene’s life-cycle state. A scene that isn’t frontmost can remain in the [`UIScene.ActivationState.foregroundActive`](uiscene/activationstate-swift.enum/foregroundactive.md) activation state as long as it can still receive user interaction. Its activation state changes to [`UIScene.ActivationState.foregroundInactive`](uiscene/activationstate-swift.enum/foregroundinactive.md) only when a system interruption takes over interaction. This can happen because of Control Center, an alert, Siri, App Switcher, or another app’s window covering it in windowed apps. Use [`UIScene.ActivationState`](uiscene/activationstate-swift.enum.md) to decide when to save view state, and use `activeAppearance` to detect when a scene is no longer frontmost.
+
+Because `activeAppearance` belongs to a scene’s trait collection, each scene has its own value, even in apps that support multiple scenes. To detect when a scene becomes frontmost, register for changes to this trait by calling [`registerForTraitChanges(_:handler:)`](uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:).md) on the window scene, or on any view or view controller in its hierarchy.
+
+In Mac apps built with Mac Catalyst, Stage Manager on iPad, and a windowed app on iPad, the value is `.active` when the window is focused (the key window) and `.inactive` when it isn’t. A window that another app’s window covers keeps an `.active` appearance as long as it remains the focused window.
+
+In iOS and in a full-screen app on iPad, the value reflects whether the app itself is in the foreground (`.active`) or not (`.inactive`).
 
 ## See Also
 

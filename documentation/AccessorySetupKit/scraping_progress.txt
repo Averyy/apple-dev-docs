@@ -1,4 +1,4 @@
 Completed scraping AccessorySetupKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 159
+Total pages scraped: 4
+Pages skipped (unchanged): 155
 Pages failed: 0

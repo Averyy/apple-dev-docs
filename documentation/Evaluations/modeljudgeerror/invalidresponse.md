@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: case
 
-The evaluator can’t interpret the model-as-judge’s response as a valid score.
+The evaluator can’t interpret the model judge’s response as a valid score.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,12 +12,17 @@ The evaluator can’t interpret the model-as-judge’s response as a valid score
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case invalidResponse(String)
 ```
+
+#### Discussion
+
+The associated value is the raw response text.
 
 
 ---

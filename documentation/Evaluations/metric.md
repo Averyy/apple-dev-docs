@@ -12,6 +12,7 @@ A named metric that carries a result value.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ struct Metric
 
 ## Mentions
 
-- [Scoring with model-as-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
 - [Evaluating language model responses](evaluating-language-model-responses.md)
 - [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
 
@@ -56,7 +57,7 @@ let result = metric.passing(rationale: "Exact match")
 - [let value: Metric.Value](metric/value-swift.property.md)
   The result value of this metric.
 - [var doubleValue: Double?](metric/doublevalue.md)
-  The numeric value of this metric, or `nil` for ignored metrics.
+  The numeric value of this metric.
 - [let rationale: String?](metric/rationale.md)
   An optional rationale describing the result.
 - [Metric.Value](metric/value-swift.enum.md)
@@ -66,6 +67,8 @@ let result = metric.passing(rationale: "Exact match")
   A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](toolcallevaluator.md).
 - [static let toolsPercentagePass: Metric](metric/toolspercentagepass.md)
   A convenience metric for the partial score result of a [`ToolCallEvaluator`](toolcallevaluator.md).
+### Default Implementations
+- [CustomStringConvertible Implementations](metric/customstringconvertible-implementations.md)
 
 ## Relationships
 

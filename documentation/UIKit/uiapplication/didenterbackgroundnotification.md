@@ -38,7 +38,7 @@ The `object` of the notification is the [`UIApplication`](uiapplication.md) obje
 - [class let didBecomeActiveNotification: NSNotification.Name](uiapplication/didbecomeactivenotification.md)
   A notification that posts when the app becomes active.
 - [class let willEnterForegroundNotification: NSNotification.Name](uiapplication/willenterforegroundnotification.md)
-  A notification that posts shortly before an app leaves the background state on its way to becoming the active app.
+  A notification that posts shortly before your app’s UI transitions to the foreground.
 - [class let willResignActiveNotification: NSNotification.Name](uiapplication/willresignactivenotification.md)
   A notification that posts when the app is no longer active and loses focus.
 - [class let willTerminateNotification: NSNotification.Name](uiapplication/willterminatenotification.md)

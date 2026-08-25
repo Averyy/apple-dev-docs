@@ -21,6 +21,18 @@ Creates a trait that runs a single evaluation and makes its result available thr
 static func evaluates(_ evaluation: any Evaluation, info: [String : String] = [:], recordTranscripts: Bool = false) -> Self
 ```
 
+#### Discussion
+
+```swift
+let accuracyMetric = Metric("Accuracy")
+
+@Test(.evaluates(myEvaluation, info: ["model": "gpt-4"]))
+func testAccuracy() async throws {
+    let result = EvaluationContext.current.result
+    #expect(result.aggregateValue(.mean(of: accuracyMetric)) >= 0.8)
+}
+```
+
 ## Parameters
 
 - `evaluation`: The evaluation to run.

@@ -12,6 +12,7 @@ The subject type for language model evaluations.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,7 +26,7 @@ struct ModelSubject<Value> where Value : Decodable, Value : Encodable, Value : S
 
 #### Overview
 
-Carries the model’s produced value and an optional structured transcript. The transcript is required for tool-call evaluation. [`ToolCallEvaluator`](toolcallevaluator.md) performs a runtime check and throws [`EvaluationError.missingTranscript(evaluatorType:)`](evaluationerror/missingtranscript(evaluatortype:).md) if the transcript is `nil`.
+Carries the value the model produces and an optional structured transcript. The transcript is required for tool-call evaluation. [`ToolCallEvaluator`](toolcallevaluator.md) performs a runtime check and throws [`EvaluationError.missingTranscript(evaluatorType:)`](evaluationerror/missingtranscript(evaluatortype:).md) if the transcript is `nil`.
 
 ```swift
 let subject = ModelSubject(value: "Paris, France")
@@ -38,7 +39,7 @@ let subject = ModelSubject(value: "Paris, France")
   Creates a model subject with a value and optional transcript.
 ### Accessing the content
 - [var value: Value](modelsubject/value.md)
-  The typed value produced by the model.
+  The typed value the model produces.
 - [var transcript: StructuredTranscript?](modelsubject/transcript.md)
   The structured transcript from the model session.
 ### Inspecting tool calls
@@ -56,13 +57,13 @@ let subject = ModelSubject(value: "Paris, France")
 ## See Also
 
 - [associatedtype Subject : EvaluationSubject](evaluation/subject.md)
-  The type of the subject produced by the system under test.
+  The type of subject the system under test produces.
 - [func subject(from: Self.Sample) async throws -> Self.Subject](evaluation/subject(from:).md)
   Produces the subject of evaluation from a given sample.
 - [protocol EvaluationSubject](evaluationsubject.md)
-  A type that represents the output produced by the system under test.
+  A type that represents the output the system under test produces.
 - [var name: String](evaluation/name.md)
-  The default name, derived from the type name.
+  The default name, taken from the type name.
 
 
 ---

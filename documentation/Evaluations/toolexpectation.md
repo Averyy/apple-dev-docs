@@ -12,6 +12,7 @@ A specification for an expected tool call, or a group of expectations that can b
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -61,6 +62,23 @@ ToolExpectation.anyOrder([
 ### Matching arguments
 - [enum ArgumentMatcher](argumentmatcher.md)
   The values that define how to validate a tool-call argument.
+### Initializers
+- [init(from: any Decoder) throws](toolexpectation/init(from:).md)
+  Creates a tool expectation by decoding from the given decoder.
+### Instance Properties
+- [var generatedContent: GeneratedContent](toolexpectation/generatedcontent.md)
+  The generated content representation of this tool expectation.
+### Instance Methods
+- [func encode(to: any Encoder) throws](toolexpectation/encode(to:).md)
+  Encodes this tool expectation into the given encoder.
+### Type Properties
+- [static var generationSchema: GenerationSchema](toolexpectation/generationschema.md)
+  The generation schema for this tool expectation.
+### Enumerations
+- [ToolExpectation.PartiallyGenerated](toolexpectation/partiallygenerated.md)
+  A partially generated form of a tool expectation.
+### Default Implementations
+- [ConvertibleFromGeneratedContent Implementations](toolexpectation/convertiblefromgeneratedcontent-implementations.md)
 
 ## Relationships
 

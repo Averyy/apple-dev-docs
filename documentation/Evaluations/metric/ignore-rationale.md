@@ -12,11 +12,18 @@ Returns a metric with an ignored result, excluded from aggregation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 func ignore(rationale: String? = nil) -> Metric
+```
+
+#### Discussion
+
+```swift
+let ignoredResult = metric.ignore()
 ```
 
 ## See Also

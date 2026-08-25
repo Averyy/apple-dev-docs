@@ -12,11 +12,21 @@ Creates a loader backed by the given async sequence.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 init(stream: some Sendable & AsyncSequence<Sample, any Error>)
+```
+
+#### Discussion
+
+```swift
+let loader = StreamLoader(stream: AsyncThrowingStream { continuation in
+    continuation.yield(ModelSample(prompt: "What is 2+2?", expected: "4"))
+    continuation.finish()
+})
 ```
 
 

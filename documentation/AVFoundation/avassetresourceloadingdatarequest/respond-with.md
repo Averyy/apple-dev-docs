@@ -23,6 +23,8 @@ func respond(with data: Data)
 
 This method may be invoked multiple times on the same instance of `AVAssetResourceLoadingDataRequest` to provide the full range of requested data incrementally. Upon each invocation, the value of the [`currentOffset`](avassetresourceloadingdatarequest/currentoffset.md) property is updated to match the amount of data provided.
 
+The system can retain the data you provide and keep processing it for an indefinite period after this method returns. Don’t modify that data after you share its contents. If you manage your own memory pool, create the data with `init(bytesNoCopy:count:deallocator:)`, and its deallocator signals the earliest moment when reusing the memory is safe.
+
 ## Parameters
 
 - `data`: An instance of NSData containing some or all of the requested bytes.

@@ -1,4 +1,4 @@
-# watchOS 27 Beta 6 Release Notes
+# watchOS 27 Beta 7 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,17 +6,14 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 6. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 7. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
 
 ###### Resolved Issues
 
+- Fixed: AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
 - Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
-
-###### Known Issues
-
-- AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
 
 ##### Av Conference Telephony
 
@@ -83,9 +80,9 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ##### Security
 
-###### Known Issues
+###### Resolved Issues
 
-- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
+- Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836)
 
 ##### Siri
 
@@ -99,12 +96,7 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 - Siri might appear to be listening when it is not after extended periods of silence while the Siri interface remains on screen.  (180434572)
 - As of beta 5, SiriAI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost.  (182145010)
 - SiriAI conversations might not sync to paired Apple Watch, failing with a “No iCloud is configured” error.  (183040889) **Workaround:** On the Watch, open Settings > Apple Account to trigger an account refresh and restores syncing.
-
-##### Siri Conversation History
-
-###### Known Issues
-
-- Apple Watch devices updated from an earlier seed may remain in a state where Siri conversation history does not sync with the paired iPhone. In most cases the watch recovers on its own without any action.  (183958361) **Workaround:** If syncing does not resume, open Settings > Apple Account on the Apple Watch to trigger an account refresh.
+- Apple Watch devices updated from an earlier beta might remain in a state where Siri conversation history does not sync with the paired iPhone. In most cases, the watch recovers on its own without any action.  (183958361) **Workaround:** If syncing doesn’t resume, open Settings > Apple Account on Apple Watch to trigger an account refresh.
 
 ##### Sleep Focus
 
@@ -134,7 +126,7 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Resolved Issues
 
-- Fixed: `Storefront` API may return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
+- Fixed: `Storefront` API might return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 - Fixed: Transactions fail to finish.  (183165269)
 
@@ -150,12 +142,12 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 - Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 - Fixed: Purchases made with the original StoreKit API fail with an unknown error on watchOS.  (178760994)
+- Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836)
 
 ###### Known Issues
 
-- Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836) **Workaround:** Wait 15 seconds after calling `SKTestSession.clearTransactions()` for the eligibility to reset.
-- Changing the storefront or locale using SKTestSession doesn’t propagate through Storefront.updates.  (184155259)
-- Failed purchases using SKTestSession may display error dialogs even when dialogsDisabled is set to true.  (184255116)
+- Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`.  (184155259)
+- Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true.  (184255116)
 
 ##### Swift Charts
 

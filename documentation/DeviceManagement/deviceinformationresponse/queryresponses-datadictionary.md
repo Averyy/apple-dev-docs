@@ -29,10 +29,14 @@ object DeviceInformationResponse.QueryResponses
   The response dictionary that contains the administrator setup information.
 - [object DeviceInformationResponse.QueryResponses.MDMOptions](deviceinformationresponse/queryresponses-data.dictionary/mdmoptions-data.dictionary.md)
   The response dictionary that contains MDM options.
+- [object DeviceInformationResponse.QueryResponses.OSUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary.md)
+  The response dictionary that contains operating system update settings.
 - [object DeviceInformationResponse.QueryResponses.OrganizationInfo](deviceinformationresponse/queryresponses-data.dictionary/organizationinfo-data.dictionary.md)
   The response dictionary that contains organization information.
 - [object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty.md)
   The response dictionary that contains information about the active service subscription.
+- [object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/softwareupdatesettings-data.dictionary.md)
+  The response dictionary that contains information about the Software Update pane in Settings.
 
 ## Properties
 
@@ -45,10 +49,14 @@ object DeviceInformationResponse.QueryResponses
 - `BatteryLevel` (number): The battery level, between `0.0` and `1.0`, or `-1.0` if MDM can’t determine the battery level. Requires the Device Information access right. Available: iOS 5+ | iPadOS 5+ | macOS 13.3+ | visionOS 1.1+ | watchOS 10+
 - `BluetoothMAC` (string): The Bluetooth media access control (MAC) address. Requires the Network Information access right. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | visionOS 1.1+
 - `BuildVersion` (string): The operating system version. Requires the Device Information access right.
+- `CarrierSettingsVersion` (string): Removed: iOS 26+ | iPadOS 26+
 - `CellularTechnology` (integer): The cellular technology type, which is one of the following values: - `0`: None
 - `1`: GSM
 - `2`: CDMA
 - `3`: GSM and CDMA Requires the Device Information access right. Available: iOS 4.2.6+ | iPadOS 4.2.6+
+- `CurrentCarrierNetwork` (string): Removed: iOS 26+ | iPadOS 26+
+- `CurrentMCC` (string): Removed: iOS 26+ | iPadOS 26+
+- `CurrentMNC` (string): Removed: iOS 26+ | iPadOS 26+
 - `DataRoamingEnabled` (boolean): If `true`, the device has enabled data roaming. Requires the Network Information access right. Available: iOS 5+ | iPadOS 5+
 - `DeviceCapacity` (number): The total capacity in floating-point base-10 gigabytes (GB) on iOS and macOS 12 or later. The capacity is in base-2 gibibytes (GiB) on macOS 11 and earlier. Requires the Device Information access right. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1.1+ | watchOS 10+
 - `DeviceID` (string): The device identifier. Requires the Device Information access right. Available: tvOS 9+
@@ -71,6 +79,8 @@ object DeviceInformationResponse.QueryResponses
 - `EthernetMAC` (string): The primary Ethernet MAC address. Requires the Network Information access right. Available: macOS 10.7+
 - `HasBattery` (boolean): If `true`, the device has an internal battery. Available: macOS 13.3+
 - `HostName` (string): The host name. Available: macOS 10.11+
+- `ICCID` (string): Removed: iOS 26+ | iPadOS 26+
+- `IMEI` (string): Removed: iOS 26+ | iPadOS 26+
 - `IsActivationLockEnabled` (boolean): If `true`, the device has enabled Activation Lock. Requires the Device Information access right. Available as of iOS 7 and macOS 10.9, and deprecated in iOS 16 and macOS 13. Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | watchOS 10+
 Deprecated: iOS 16+ | iPadOS 16+ | macOS 13+ | watchOS 10+
 - `IsActivationLockSupported` (boolean): If `true`, the device supports Activation Lock. Also see `IsActivationLockManageable` in [`SecurityInfoResponse.SecurityInfo.ManagementStatus`](securityinforesponse/securityinfo-data.dictionary/managementstatus-data.dictionary.md). Available: macOS 10.9+
@@ -81,6 +91,7 @@ Deprecated: iOS 16+ | iPadOS 16+ | macOS 13+ | watchOS 10+
 - `IsMDMLostModeEnabled` (boolean): If `true`, the device has enabled Managed Lost Mode. Requires the Device Information access right. Available: iOS 9.3+ | iPadOS 9.3+ | watchOS 10+
 - `IsMultiUser` (boolean): If `true`, the device is a Shared iPad. Requires the Device Information access right. Available: iOS 9.3+ | iPadOS 9.3+
 - `IsNetworkTethered` (boolean): If `true`, the device is network-tethered. Requires the Network Information access right. Available: iOS 10.3+ | iPadOS 10.3+
+- `IsRoaming` (boolean): Removed: iOS 26+ | iPadOS 26+
 - `IsSupervised` (boolean): If `true`, it’s a supervised device. Requires the Device Information access right. Available: iOS 6+ | iPadOS 6+ | macOS 10.15+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 - `iTunesStoreAccountHash` (string): A hash of the logged-in iTunes Store account. Also see [`GetVppUserRequest`](getvppuserrequest.md). Requires the App Installation access right. Available: iOS 8+ | iPadOS 8+ | macOS 10.10+ | tvOS 9+ | watchOS 10+
 - `iTunesStoreAccountIsActive` (boolean): If `true`, the device has an active iTunes Store account. Requires the App Installation access right. Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | watchOS 10+
@@ -89,14 +100,19 @@ Deprecated: iOS 16+ | iPadOS 16+ | macOS 13+ | watchOS 10+
 - `ManagedAppleIDDefaultDomains` ([string]): The list of domains that the device suggests on the Shared iPad login screen. Available: iOS 16+ | iPadOS 16+
 - `MaximumResidentUsers` (integer): The maximum number of users that can use this Shared iPad device. Starting with iOS 13.4, the value that returns is always `32`. Requires the Device Information access right. Available: iOS 9.3+ | iPadOS 9.3+
 - `MDMOptions` (DeviceInformationResponse.QueryResponses.MDMOptions): The contents of [`SettingsCommand.Command.Settings.MDMOptions.MDMOptions`](settingscommand/command-data.dictionary/settings-data.dictionary/mdmoptions-data.dictionary/mdmoptions-data.dictionary.md). Available: iOS 7+ | iPadOS 7+ | macOS 11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
+- `MEID` (string): Removed: iOS 26+ | iPadOS 26+
 - `Model` (string): The model. Requires the Device Information access right. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | watchOS 10+
 - `ModelName` (string): The model name, such as *iPhone*. Requires the Device Information access right.
 - `ModelNumber` (string): The device’s hardware model number including region info, for example, `MK1A3LL/A`. Requires the Device Information access right. Requires a Mac with Apple silicon on macOS.
 - `ModemFirmwareVersion` (string): The modem firmware version. Requires the Device Information access right. Available: iOS 4+ | iPadOS 4+
 - `OnlineAuthenticationGracePeriod` (integer): The grace period for Shared iPad online authentication (in days). A value of `0` indicates that the device requires online authentication for every login. Available: iOS 16+ | iPadOS 16+
 - `OrganizationInfo` (DeviceInformationResponse.QueryResponses.OrganizationInfo): The contents of [`SettingsCommand.Command.Settings.OrganizationInfo.OrganizationInfo`](settingscommand/command-data.dictionary/settings-data.dictionary/organizationinfo-data.dictionary/organizationinfo-data.dictionary.md). Available: iOS 7+ | iPadOS 7+ | macOS 10.11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
+- `OSUpdateSettings` (DeviceInformationResponse.QueryResponses.OSUpdateSettings): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration to set values. 
+
+Removed: macOS 27+
 - `OSVersion` (string): The operating system version. Requires the Device Information access right.
 - `PersonalHotspotEnabled` (boolean): If `true,` the device has enabled Personal Hotspot, which isn’t available for all carriers. Requires the Network Information access right. Available: iOS 7+ | iPadOS 7+
+- `PhoneNumber` (string): Removed: iOS 26+ | iPadOS 26+
 - `PINRequiredForDeviceLock` (boolean): If `true`, the [`DeviceLockCommand`](devicelockcommand.md) requires a PIN. Available: macOS 11+
 - `PINRequiredForEraseDevice` (boolean): If `true`, the [`EraseDeviceCommand`](erasedevicecommand.md) requires a PIN. Available: macOS 11+
 - `ProductName` (string): The product name, such as *iPad8,12*. Requires the Device Information access right.
@@ -106,7 +122,19 @@ Deprecated: iOS 16+ | iPadOS 16+ | macOS 13+ | watchOS 10+
 - `ResidentUsers` (integer): The number of users currently on this Shared iPad device. Requires the Device Information access right. Available: iOS 13.4+ | iPadOS 13.4+
 - `SerialNumber` (string): The serial number. Requires the Device Information access right.
 - `ServiceSubscriptions` ([DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty]): The contents of [`DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty`](deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty.md). Requires the Network Information access right. Available: iOS 12+ | iPadOS 12+
+- `SIMCarrierNetwork` (string): Removed: iOS 5+ | iPadOS 5+
+- `SIMMCC` (string): Removed: iOS 4.2.6+ | iPadOS 4.2.6+
+- `SIMMNC` (string): Removed: iOS 4.2.6+ | iPadOS 4.2.6+
 - `SkipLanguageAndLocaleSetupForNewUsers` (boolean): If `true`, skip the language and country/region panes for new users on Shared iPad. Available: iOS 16.2+ | iPadOS 16.2+
+- `SoftwareUpdateDeviceID` (string): Removed: subscribe to the declarative management `softwareupdate.device-id` status item. 
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `SoftwareUpdateSettings` (DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration to set values. 
+
+Removed: iOS 27+ | iPadOS 27+
+- `SubscriberCarrierNetwork` (string): Removed: iOS 26+ | iPadOS 26+
+- `SubscriberMCC` (string): Removed: iOS 26+ | iPadOS 26+
+- `SubscriberMNC` (string): Removed: iOS 26+ | iPadOS 26+
 - `SupplementalBuildVersion` (string): The supplemental OS build version. Available: iOS 16.1+ | iPadOS 16.1+ | macOS 13+ | tvOS 16.1+ | visionOS 1.1+ | watchOS 10+
 - `SupplementalOSVersionExtra` (string): The OS update Background Security Improvement version letter. Available: iOS 16.1+ | iPadOS 16.1+ | macOS 13+ | tvOS 16.1+ | visionOS 1.1+ | watchOS 10+
 - `SupportsiOSAppInstalls` (boolean): If `true`, the device supports iOS or iPadOS app installs through MDM. Available: macOS 11+
@@ -117,6 +145,7 @@ Deprecated: iOS 16+ | iPadOS 16+ | macOS 13+ | watchOS 10+
 - `TimeZone` (string): The current Internet Assigned Numbers Authority (IANA) time zone database name. Requires the Device Information access right. Available: iOS 14+ | iPadOS 14+ | tvOS 14+ | visionOS 1.1+ | watchOS 10+
 - `UDID` (string): The unique identifier of the device.
 - `UserSessionTimeout` (integer): The timeout interval for the user session. A value of `0` indicates that there’s no timeout. Available: iOS 14.5+ | iPadOS 14.5+
+- `VoiceRoamingEnabled` (boolean): Removed: iOS 26+ | iPadOS 26+
 - `WiFiMAC` (string): The Wi-Fi MAC address. Requires the Network Information access right.
 
 ## See Also

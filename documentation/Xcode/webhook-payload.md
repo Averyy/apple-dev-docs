@@ -138,7 +138,7 @@ Information and metadata for each build action that runs as part of the build.
 ## See Also
 
 - [Configuring webhooks in Xcode Cloud](configuring-webhooks-in-xcode-cloud.md)
-  Configure webhooks that connect Xcode Cloud to other services and tools.
+  Send build events to external services and tools using webhooks.
 - [Connecting Xcode Cloud to Slack](connecting-xcode-cloud-to-slack.md)
   Connect Xcode Cloud to Slack to keep your team informed about the latest Xcode Cloud builds.
 

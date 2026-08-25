@@ -21,7 +21,7 @@ object AppSettingsPrivacy_PermissionDefaultsObject
 
 In iOS, the app identifier is a bundle ID, for example, “com.example.app”.
 
-In macOS, the app identifier is a composed identifier. The format of the composed identifier is either “Bundle-ID”, “Bundle-ID (Team-ID)”, or “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the app. “Team-ID” is the team identifier from the app’s code signature. “Designated-Requirement” is the designated requirement string from the code signature of the app. For example, “com.example.app” for the bundle ID format, “com.example.app (ABCD1234)” for the team ID format, or “com.example.app {anchor apple generic}” for the designated requirement format. The device only applies defaults for an app if its code signature matches the composed identifier.
+In macOS, the app identifier is a composed identifier. The format of the composed identifier is “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the app. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the app. For example, “com.example.app {anchor apple generic}”. The device only applies defaults for an app if its code signature matches the composed identifier.
 
 ## Topics
 

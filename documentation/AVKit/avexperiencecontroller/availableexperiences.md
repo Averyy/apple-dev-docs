@@ -22,7 +22,7 @@ This property is a subset of [`allowedExperiences`](avexperiencecontroller/allow
 ## See Also
 
 - [var allowedExperiences: AVExperienceController.Experiences](avexperiencecontroller/allowedexperiences.md)
-  The set of experiences the application supports.
+  The set of experiences the app supports.
 - [AVExperienceController.Experiences](avexperiencecontroller/experiences.md)
   A structure that represents a collection of experiences to use with an experience controller.
 - [var experience: AVExperienceController.Experience](avexperiencecontroller/experience-swift.property.md)
@@ -32,7 +32,7 @@ This property is a subset of [`allowedExperiences`](avexperiencecontroller/allow
 - [var configuration: AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.property.md)
   The configuration options per experience.
 - [AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.struct.md)
-  A structure that stores per-experience configuration.
+  Options that configure each experience.
 
 
 ---

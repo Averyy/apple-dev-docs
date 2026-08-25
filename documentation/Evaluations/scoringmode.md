@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: enum
 
-The scoring constraint mode for a model-as-judge evaluator.
+The scoring constraint mode for a model evaluator.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ The scoring constraint mode for a model-as-judge evaluator.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,7 +26,7 @@ enum ScoringMode
 let mode: ScoringMode = .discrete
 ```
 
-Controls whether the judge model can return any floating-point score (continuous) or is structurally constrained to return exactly one of the defined scale values (discrete).
+The mode controls whether the model judge can return any floating-point score, or structured generation constrains it to return exactly one of the scale values that the dimension defines.
 
 ## Topics
 

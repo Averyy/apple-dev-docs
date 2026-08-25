@@ -16,7 +16,7 @@ Set up and maintain connectivity with devices and leverage declarative device ma
 - [Dealing with inactive managed devices and invalid push tokens](dealing-with-inactive-managed-devices-and-invalid-push-tokens.md)
   Handle when devices become unmanageable due to inactivity or invalid push tokens.
 ### Push notifications
-- [Setting up push notifications for your device management customers](setting-up-push-notifications-for-your-device-magagement-customers.md)
+- [Setting up push notifications for your device management customers](setting-up-push-notifications-for-your-device-management-customers.md)
   Create and sign a certificate signing request (CSR) to enable push notifications.
 ### Commands
 - [Sending MDM commands to a device](sending-mdm-commands-to-a-device.md)

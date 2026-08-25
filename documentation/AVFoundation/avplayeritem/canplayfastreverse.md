@@ -26,7 +26,7 @@ var canPlayFastReverse: Bool { get }
 - [var canPlayReverse: Bool](avplayeritem/canplayreverse.md)
   A Boolean value that indicates whether the item can play in reverse.
 - [var canPlayFastForward: Bool](avplayeritem/canplayfastforward.md)
-  A Boolean value that indicates whether the item can be fast forwarded.
+  A Boolean value that indicates whether the item can play at fast-forward rates.
 - [var canPlaySlowForward: Bool](avplayeritem/canplayslowforward.md)
   A Boolean value that indicates whether the item can play slower than normal.
 - [var canPlaySlowReverse: Bool](avplayeritem/canplayslowreverse.md)

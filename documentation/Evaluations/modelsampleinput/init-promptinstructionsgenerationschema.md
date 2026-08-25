@@ -12,11 +12,27 @@ Creates a model sample input with the given prompt, instructions, and schema.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 init(prompt: Prompt, instructions: Instructions? = nil, generationSchema: GenerationSchema? = nil)
+```
+
+#### Discussion
+
+```swift
+@Generable
+struct WeatherAnswer {
+    let condition: String
+}
+
+let input = ModelSampleInput(
+    prompt: Prompt("What's the weather like in Cupertino?"),
+    instructions: Instructions("Respond with the weather condition only."),
+    generationSchema: GenerationSchema(type: WeatherAnswer.self, properties: [])
+)
 ```
 
 ## Parameters

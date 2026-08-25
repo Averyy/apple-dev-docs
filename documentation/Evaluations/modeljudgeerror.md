@@ -10,6 +10,7 @@
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,13 +22,13 @@ enum ModelJudgeError
 
 ### Enumeration Cases
 - [ModelJudgeError.invalidResponse(_:)](modeljudgeerror/invalidresponse(_:).md)
-  The evaluator can’t interpret the model-as-judge’s response as a valid score.
+  The evaluator can’t interpret the model judge’s response as a valid score.
 - [case invalidScore(dimension: String, value: String)](modeljudgeerror/invalidscore(dimension:value:).md)
   A scoring dimension returns a value the evaluator can’t parse as a number.
 - [case jsonDecodingFailed(response: String, underlying: any Error)](modeljudgeerror/jsondecodingfailed(response:underlying:).md)
-  The evaluator fails to decode the JSON from the model-as-judge’s response.
+  The evaluator fails to decode the JSON from the model judge’s response.
 - [case missingDimension(String, response: String)](modeljudgeerror/missingdimension(_:response:).md)
-  The model-as-judge’s response is missing a required scoring dimension.
+  The model judge’s response is missing a required scoring dimension. The first associated value is the name of the missing dimension.
 - [ModelJudgeError.noScaleValues(dimension:)](modeljudgeerror/noscalevalues(dimension:).md)
   The scoring dimension has no scale values defined.
 

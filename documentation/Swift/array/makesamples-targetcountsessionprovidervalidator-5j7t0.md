@@ -18,9 +18,20 @@ Generates synthetic data based on this dataset and returns a stream of new sampl
 func makeSamples<T>(_ prompt: Prompt, targetCount: Int, sessionProvider: (@Sendable () -> LanguageModelSession)? = nil, validator: (nonisolated(nonsending) @Sendable (ModelSample<T>) async throws -> Bool)? = nil) -> some AsyncSequence<ModelSample<T>, any Error> where Element == ModelSample<T>, T : Generable, T : Decodable, T : Encodable, T : Sendable
 ```
 
+#### Return Value
+
+An async throwing stream of newly generated samples.
+
 #### Discussion
 
 For more control over generation, create a `SampleGenerator` directly.
+
+## Parameters
+
+- `prompt`: The prompt the generator sends to the language model session.
+- `targetCount`: The desired total number of samples, counting both the initial dataset and newly generated ones.
+- `sessionProvider`: A closure that creates a new language model session, or `nil` to use the default.
+- `validator`: A closure that decides whether a generated sample is valid, or `nil` to accept all samples.
 
 
 ---

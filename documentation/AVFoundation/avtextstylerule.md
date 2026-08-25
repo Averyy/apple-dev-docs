@@ -36,7 +36,7 @@ You use text style objects to format subtitles, closed captions, and other text-
 - [var textMarkupAttributes: [String : Any]](avtextstylerule/textmarkupattributes.md)
   A dictionary of text style attributes to apply to the text.
 - [var textSelector: String?](avtextstylerule/textselector.md)
-  A string that identifies the text to which the attributes should apply.
+  A string that identifies the text the style attributes apply to.
 ### Exporting the style rules
 - [class func propertyList(for: [AVTextStyleRule]) -> Any](avtextstylerule/propertylist(for:).md)
   Converts one or more text style rules into a serializable property list object.

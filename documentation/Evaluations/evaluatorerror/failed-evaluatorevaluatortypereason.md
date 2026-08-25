@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: case
 
-The evaluator threw.
+The evaluator threw an error while scoring the subject.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ The evaluator threw.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

@@ -93,6 +93,8 @@ In iPadOS 18 and later, the font profile is available on the user channel for Sh
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
+- [object SystemLogging](systemlogging.md)
+  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

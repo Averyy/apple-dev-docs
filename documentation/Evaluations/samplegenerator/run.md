@@ -12,6 +12,7 @@ Runs the generator and returns a stream of newly synthesized samples.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,7 +27,7 @@ An async throwing stream of individual samples.
 
 #### Discussion
 
-Each element in the returned stream is a newly generated sample. After iteration completes, access [`samples`](samplegenerator/samples.md) to retrieve the full dataset (initial + generated), or [`invalidSamples`](samplegenerator/invalidsamples.md) to see samples the validator rejected.
+Each element the stream yields is a newly generated sample. After iteration completes, access [`samples`](samplegenerator/samples.md) to retrieve the full dataset (initial + generated), or [`invalidSamples`](samplegenerator/invalidsamples.md) to see samples the validator rejected.
 
 
 ---

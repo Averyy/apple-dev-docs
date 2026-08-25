@@ -12,6 +12,7 @@ Returns a metric with a failing result.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,12 @@ func failing(rationale: String? = nil) -> Metric
 ## Mentions
 
 - [Evaluating language model responses](evaluating-language-model-responses.md)
+
+#### Discussion
+
+```swift
+let failingResult = metric.failing(rationale: "No match found")
+```
 
 ## See Also
 

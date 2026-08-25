@@ -19,6 +19,8 @@ var placeholderAttributedString: NSAttributedString? { get set }
 
 - [var placeholderString: String?](nstextfield/placeholderstring.md)
   The string the text field displays when empty to help the user understand the text field’s purpose.
+- [var placeholderStrings: [String]](nstextfield/placeholderstrings.md)
+- [var placeholderAttributedStrings: [NSAttributedString]](nstextfield/placeholderattributedstrings.md)
 
 
 ---

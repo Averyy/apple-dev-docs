@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: method
 
-Creates a binary pass/fail scoring scale.
+Creates a binary pass or fail scoring scale.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ Creates a binary pass/fail scoring scale.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

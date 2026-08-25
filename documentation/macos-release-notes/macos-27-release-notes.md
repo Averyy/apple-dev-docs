@@ -1,4 +1,4 @@
-# macOS 27 Golden Gate Beta 6 Release Notes
+# macOS 27 Golden Gate Beta 7 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate beta 6. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate beta 7. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Accessory Access
 
@@ -43,12 +43,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: Default values from schemas might not be applied for parameters that are of “Set” type.  (175534195)
 - Fixed: Requests that should result in an app’s `reminders.updateReminder`-conforming intent to be called might fail with “ cannot be used for this action right now.”  (181212609) (FB23526663)
+- Fixed: AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
 - Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
 
 ###### Known Issues
 
 - If you adopt the Audio App Schema domain, you might have trouble playing your content using Siri.  (177198033) **Workaround:** Adopt an IntentValueQuery that takes the AudioSearch input, or index your entities in Spotlight.
-- AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
 - Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release.  (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
@@ -66,7 +66,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - `NSTextSelectionManager` provides common text selection interactions (click, drag, shift-click, double/triple-click word/line/paragraph selection) to a `NSView` with a set of `NSGestureRecognizers` rather than overriding `NSEvent` mouse methods. `NSTextView` now uses `NSTextSelectionManager` and provides its own set of `NSGestureRecognizers` to provide additional features in addition to text selection. Existing `NSTextView` subclasses that override `mouseDown: ` continue to work through a binary-compatible fallback path.  (163365571)
 - In macOS 27.0, menu bar and context menus present a reduced set of menu item images, similar to the behavior prior to macOS 26.0. By default, `NSMenu` hides all menu item symbol images — non-symbol images remain visible. For menu items created from a xib file, `NSMenu` also observes the value of the “macOS 26.0 only” checkbox in the menu item inspector. If this checkbox is unchecked, the menu item image remains visible; if checked, it is hidden. These changes in menu item image visibility apply to applications linked on macOS 26.0 and later. Review the updated Human Interface Guidelines to determine which menu items in your app should still display images. Use the new `preferredImageVisibility` property on `NSMenuItem` to customize the image visibility for your menu items. As in macOS 26.0, `NSMenu` automatically provides default visible menu item images for certain common system-wide menu items, such as Settings, Share, and Print.  (170477566)
 - NSTextView’s `menuForEvent:` now returns a context menu in which the Layout Orientation menu item, and its submenu, are located inside the Font submenu. Because this change can cause compatibility issues with some shipping applications, it applies only to applications linked on the macOS 27 SDK. For applications linked on earlier SDKs, the Layout Orientation menu item remains at the top level of the context menu.  (177605020)
-- When an app is linked on macOS 26.0 or later, `NSTitlebarAccessoryViewController` is now allowed to draw outside its bounds by default, supporting effects such as shadows and interactive glass effects. During reveal animations, accessories might be clipped for the duration of the animation or when the accessory is `hidden`.  (180962967) (FB23481212)
+- When an app is linked on macOS 27.0 or later, `NSTitlebarAccessoryViewController` is now allowed to draw outside its bounds by default, supporting effects such as shadows and interactive glass effects. During reveal animations, accessories might be clipped for the duration of the animation or when the accessory is `hidden`.  (180962967) (FB23481212)
 
 ###### Resolved Issues
 
@@ -81,16 +81,13 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: An `NSSegmentedCell` draws incorrectly under the Liquid Glass appearance, with the control rendering at the wrong location.  (168066807) (FB21616308)
 - Fixed: A subclass of `NSSegmentedCell` that overrides label drawing does not take charge of drawing labels, with the system drawing the default labels instead.  (169126818) (FB21791717)
 - Fixed: When full keyboard navigation is off, the keyboard loop might not traverse the correct fields and controls.  (169837566)
+- `NSClickGestureRecognizers` with a click count greater than 1 will send an action before their multi-click timeout has elapsed.  (173975472)
 - Fixed: An `NSTextField` whose `textColor` is set to `nil` displays inconsistent text colors while in editing mode.  (175095850) (FB22546245)
 - Fixed: `-[NSFilePromiseReceiver receivePromisedFilesAtDestination:options:operationQueue:reader:]` asserts that it is called during `-prepareForDragOperation:`, `-performDragOperation:`, or `-concludeDragOperation:`. If `receivePromisedFilesAtDestination:...` is called at other times, your application will throw an exception and terminate.  (176048351)
 - Fixed: The base `NSGestureRecognizer` implementation of `locationInView:` previously returned the current mouse location converted into the view’s coordinate system, which is incorrect for touch-driven gestures. It now returns `NSZeroPoint` and logs an error pointing the developer at the missing override. Custom `NSGestureRecognizer` subclasses must provide their own `locationInView:` implementation.  (176395420)
 - Fixed: Some NSMenu APIs, such as `highlightedItem`, will not work in context menus.  (178288949)
 - Fixed: For applications linked on the macOS 27 SDK, both symbol and non-symbol menu item images are now automatically hidden. For applications linked on earlier SDKs, non-symbol images remain automatically visible, preserving compatibility with existing application behavior. This change allows applications to rely on system behavior for determining menu item image visibility, regardless of whether an image is a symbol image or a non-symbol image. If necessary, applications should use the `preferredImageVisibility` API to ensure that menu item images remain visible.  (179374305) (FB23070183)
 - Fixed: For applications linked on SDKs prior to macOS 27, NSMenu now automatically shows menu item images if the menu item title and attributed title are both empty. This preserves existing application behavior when the image is the only representation of the menu item content. When linking against the macOS 27 SDK, these images will automatically be hidden; a menu with this design should use the `preferredImageVisibility` API to ensure that the menu item images remain visible.  (179936632)
-
-###### Known Issues
-
-- `NSClickGestureRecognizer`s with a click count greater than 1 might improperly allow `NSClickGestureRecognizer`s with a click count of 1 in an ancestor view to send an action before their multi-click timeout has elapsed.  (173975472)
 
 ##### Apple Intelligence Report
 
@@ -268,9 +265,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ##### Gaussian Splats
 
-###### Known Issues
+###### Resolved Issues
 
-- When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering.  (183538823)
+- Fixed: When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering.  (183538823)
 
 ##### Homekit
 
@@ -469,9 +466,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ##### Security
 
-###### Known Issues
+###### Resolved Issues
 
-- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
+- Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836)
 
 ##### Setup Assistant
 
@@ -570,7 +567,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 ###### Resolved Issues
 
 - Fixed: The transaction refund request sheet fails to display on macOS.  (180072209)
-- Fixed: `Storefront` API may return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
+- Fixed: `Storefront` API might return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 - Fixed: Transactions fail to finish.  (183165269)
 
@@ -587,12 +584,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 - Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 - Fixed: Purchases and fetching the unified app receipt sometimes fails with an unknown error when using StoreKit Testing in Xcode.  (178555835)
+- Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836)
 
 ###### Known Issues
 
-- Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836) **Workaround:** Wait 15 seconds after calling `SKTestSession.clearTransactions()` for the eligibility to reset.
-- Changing the storefront or locale using SKTestSession doesn’t propagate through Storefront.updates.  (184155259)
-- Failed purchases using SKTestSession may display error dialogs even when dialogsDisabled is set to true.  (184255116)
+- Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`.  (184155259)
+- Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true.  (184255116)
 
 ##### Swift Charts
 

@@ -2,19 +2,31 @@
 
 **Framework**: Xcode
 
-Review dependencies and make them available to Xcode Cloud before you configure your project to use Xcode Cloud.
+Confirm that Xcode Cloud has access to every dependency your project needs to build.
 
 #### Overview
 
-Xcode Cloud combines the tools you use to create apps and frameworks: [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/), [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/), and [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com). However, your Xcode project or workspace may require additional dependencies or third-party tools to compile your code. For example, you may use a library created by the open source community or Swift package dependencies to reuse and share code between apps.
+Xcode Cloud combines the tools you use to create apps and frameworks: [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/), [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/), and [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com). However, your Xcode project or workspace may require additional dependencies or third-party tools to compile your code. For example, you may use a library created by the open source community or Swift package dependencies to reuse and share code between apps. You may also create an internal framework that your app depends on to build.
 
-If Xcode Cloud can’t access a private dependency or a third-party tool, it won’t be able to successfully build your project. To avoid a failing build and save time when you start using Xcode Cloud, review your dependencies and make sure that Xcode Cloud can access them before configuring your project to use Xcode Cloud.
+If Xcode Cloud can’t access a private dependency or a third-party tool, it fails to build your project. To avoid a failing build and save time when you start using Xcode Cloud, review your dependencies and make sure that Xcode Cloud can access them before configuring your project to use Xcode Cloud.
 
-> **Note**: The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode — for example, Python — and additionally [`Homebrew`](https://developer.apple.comhttps://brew.sh) to support installing third-party dependencies and tools. For more information, see the “Use a custom build script to install a third-party dependency or tool” section below.
+> **Note**: The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode — for example, Python — and [`Homebrew`](https://developer.apple.comhttps://brew.sh) to support installing third-party dependencies and tools. For more information, see [`Install a third-party dependency with a custom script`](making-dependencies-available-to-xcode-cloud#Install-a-third-party-dependency-with-a-custom-script.md).
 
-##### Use Swift Package Dependencies and Git Submodules
+#### Add Multiple Repositories to Your Workflow
 
-Xcode Cloud supports Swift packages and dependencies that you manage using Git submodules without any separate configuration if their repositories are publicly accessible. If you use private dependencies, Xcode Cloud helps you access them. For more information on using them, see [`Grant Xcode Cloud access to private dependencies`](making-dependencies-available-to-xcode-cloud#Grant-Xcode-Cloud-access-to-private-dependencies.md) below.
+If you keep some of your product code, such as a shared framework, in a separate repository, make sure Xcode Cloud builds it as part of your app.
+
+1. In the Report navigator, click the Cloud tab.
+2. Control-click your product under the Cloud tab and choose Manage Repositories from the contextual menu.
+3. In the Repositories pane of the sheet that appears, click the Add button under Additional.
+4. In the Add Repository dialog, enter the URL for the remote repository and click Add.
+5. Click Done.
+
+If you already gave Xcode Cloud access to the remote provider, you don’t need to authorize it again.
+
+#### Use Swift Package Dependencies and Git Submodules
+
+Xcode Cloud supports Swift packages and dependencies that you manage using Git submodules without any separate configuration if their repositories are publicly accessible. If you use private dependencies, Xcode Cloud helps you access them. For more information, see [`Grant Xcode Cloud access to private dependencies`](making-dependencies-available-to-xcode-cloud#Grant-Xcode-Cloud-access-to-private-dependencies.md).
 
 Following the best practice for using Swift package dependencies in a CI/CD environment, Xcode Cloud doesn’t use automatic package resolution and instead relies on the `Package.resolved` file to resolve your dependencies. If you use Swift package dependencies in your project, make sure to include the `Package.resolved` file in your Git repository and commit any changes to it. Don’t include the file in your `.gitignore` file. Additionally, make sure the `Package.resolved` file resides at `$filename.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
 
@@ -22,7 +34,7 @@ Following the best practice for using Swift package dependencies in a CI/CD envi
 
 For general information on building Swift packages in a continuous integration and delivery environment, see [`Building Swift packages or apps that use them in continuous integration workflows`](building-swift-packages-or-apps-that-use-them-in-continuous-integration-workflows.md).
 
-##### Grant Xcode Cloud Access to Private Dependencies
+#### Grant Xcode Cloud Access to Private Dependencies
 
 When you configure your project or workspace to use Xcode Cloud, Xcode detects the source code management (SCM) provider you use to host your code. It also detects the SCM provider for each private Git submodule, Swift package dependency, or Git repository you access in a custom script and helps you grant Xcode Cloud access to it. For example, if you host your code with [`Bitbucket Server`](https://developer.apple.comhttps://bitbucket.org/product/enterprise) and use a private dependency you host with [`GitLab`](https://developer.apple.comhttps://gitlab.com), Xcode helps you connect both your Bitbucket Server and your GitLab account to Xcode Cloud.
 
@@ -32,17 +44,17 @@ If you add a new private package dependency that Xcode Cloud can’t access, the
 
 Building your project may require access to more than one instance of your self-hosted SCM provider — a common case for large teams. For example, you may use two different GitHub Enterprise instances where one hosts your app’s code and the other hosts your dependencies. If this scenario applies to you, finish the initial onboarding workflow for the project in Xcode and connect the instance that hosts your app’s code, then let the first build fail. After the build failure, Xcode suggests a fix to connect the other instance.
 
-##### Review Third Party Dependencies
+#### Review Third Party Dependencies
 
-If you use a third-party dependency manager like [`CocoaPods`](https://developer.apple.comhttps://cocoapods.org) or [`Carthage`](https://developer.apple.comhttps://github.com/Carthage/Carthage), or require an additional tool to successfully build your project, you’ll need to make changes to your project or workspace before you can use Xcode Cloud.
+If you use a third-party dependency manager, such as [`CocoaPods`](https://developer.apple.comhttps://cocoapods.org) or [`Carthage`](https://developer.apple.comhttps://github.com/Carthage/Carthage), or require an additional tool to successfully build your project, you need to make changes to your project or workspace before you can use Xcode Cloud.
 
 Because third-party tools and dependencies require additional work, review and simplify your third-party dependencies before you configure your project or workspace to use Xcode Cloud. For example, you may be able to replace a dependency with a framework that Apple provides. Alternatively, see if its creator offers the dependency as a Swift package. If so, you can use the package and take advantage of the support for the Swift Package Manager without configuring Xcode Cloud to use a third-party tool.
 
 If switching to a Swift package dependency or removing a dependency isn’t practical, follow the instructions below to ensure Xcode Cloud can access dependencies and required tooling.
 
-##### Use a Custom Build Script to Install a Third Party Dependency or Tool
+#### Install a Third Party Dependency with a Custom Script
 
-The temporary build environment Xcode Cloud uses to perform a build doesn’t include third-party tools or dependencies. However, it includes [`Homebrew`](https://developer.apple.comhttps://brew.sh), an open source package manager you can use to install additional software. For example, you can use Homebrew to install dependency managers like [`CocoaPods`](https://developer.apple.comhttps://cocoapods.org) or [`Carthage`](https://developer.apple.comhttps://github.com/Carthage/Carthage).
+The temporary build environment Xcode Cloud uses to perform a build doesn’t include third-party tools or dependencies. However, it includes [`Homebrew`](https://developer.apple.comhttps://brew.sh), an open source package manager you can use to install additional software. For example, you can use Homebrew to install dependency managers, such as [`CocoaPods`](https://developer.apple.comhttps://cocoapods.org) or [`Carthage`](https://developer.apple.comhttps://github.com/Carthage/Carthage).
 
 To install a tool with Homebrew:
 
@@ -54,7 +66,7 @@ To install a tool with Homebrew:
 
 For more information about custom build scripts, see [`Writing custom build scripts`](writing-custom-build-scripts.md).
 
-##### Make Cocoapods Dependencies Available to Xcode Cloud
+#### Make Cocoapods Dependencies Available to Xcode Cloud
 
 CocoaPods is an open source dependency manager for Apple platforms. The temporary build environment that Xcode Cloud uses to perform a build comes with the tool pre-installed. If you use CocoaPods, first make sure you commit both your `Podfile` and the `Podfile.lock` file. Then, decide between one of the following options:
 
@@ -67,7 +79,7 @@ If you commit the `Pods` directory and its contents, you won’t need to install
 
 If you choose to exclude the `Pods` directory from source control, you’ll need to install dependencies managed by CocoaPods using a custom build script. The benefit, however, is that the source code repository takes up less disk space and doesn’t slow down your Git repository. To install CocoaPods dependencies using a custom build script:
 
-1. Create a post-clone script as described in [`Use a custom build script to install a third-party dependency or tool`](making-dependencies-available-to-xcode-cloud#Use-a-custom-build-script-to-install-a-third-party-dependency-or-tool.md).
+1. Create a post-clone script as described in [`Install a third-party dependency with a custom script`](making-dependencies-available-to-xcode-cloud#Install-a-third-party-dependency-with-a-custom-script.md).
 2. Add the command to the script that installs CocoaPods dependencies. The following code snippet shows a basic script to achieve this: ```bash
 #!/bin/sh
 
@@ -75,11 +87,11 @@ If you choose to exclude the `Pods` directory from source control, you’ll need
 pod install
 ```
 
-##### Make Carthage Dependencies Available to Xcode Cloud
+#### Make Carthage Dependencies Available to Xcode Cloud
 
-Carthage is an open source dependency manager for Apple platforms. However, the temporary build environment that Xcode Cloud uses to build your project doesn’t come with the tool pre-installed. To facilitate projects that rely on the `carthage copy-frameworks` command — most projects do — , install Carthage using a custom build script:
+Carthage is an open source dependency manager for Apple platforms. However, the temporary build environment that Xcode Cloud uses to build your project doesn’t come with the tool pre-installed. To facilitate projects that rely on the `carthage copy-frameworks` command, install Carthage using a custom build script:
 
-1. Create a post-clone script as described in [`Use a custom build script to install a third-party dependency or tool`](making-dependencies-available-to-xcode-cloud#Use-a-custom-build-script-to-install-a-third-party-dependency-or-tool.md).
+1. Create a post-clone script as described in [`Install a third-party dependency with a custom script`](making-dependencies-available-to-xcode-cloud#Install-a-third-party-dependency-with-a-custom-script.md).
 2. Add the necessary commands to the script to install Carthage using Homebrew and build your Carthage dependencies.
 
 ## See Also

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-21T07:41:30.968889",
+    "last_updated": "2026-08-25T07:38:47.817015",
     "total_pages": 204,
-    "session_id": "2026-08-21T07:41:14.198748"
+    "session_id": "2026-08-25T07:38:34.617107"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/BrowserKit.json": {
       "hash": "0e576ab77d7bc43bfd96eca2f4cce05b5d111fcc9d8a56eb408ff5cfd4cc8db1",
-      "last_checked": "2026-08-21T07:41:14.493938",
+      "last_checked": "2026-08-25T07:38:34.905237",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"67d0-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/BrowserKit.md"
     },
     "https://developer.apple.com/documentation/BrowserKit": {
       "hash": "0e576ab77d7bc43bfd96eca2f4cce05b5d111fcc9d8a56eb408ff5cfd4cc8db1",
-      "last_checked": "2026-08-21T07:41:14.398839",
+      "last_checked": "2026-08-25T07:38:34.814891",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"67d0-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/BrowserKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability.json": {
       "hash": "8ee4aeb04a7b94cccfb9db3ca490d94baab2b70f7f5d16d6fb6504f628fa4f36",
-      "last_checked": "2026-08-21T07:41:14.847961",
+      "last_checked": "2026-08-25T07:38:35.246647",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3d5c-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beavailability.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context.json": {
       "hash": "6f27ccb003a097780d9ad8b64926ac4d0584bd2f5c38abaaf91e7bc0c2d67735",
-      "last_checked": "2026-08-21T07:41:17.432923",
+      "last_checked": "2026-08-25T07:38:37.334025",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"31a9-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beavailability/context.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/iseligible(for:completionhandler:).json": {
       "hash": "7c5997dc6d7524b1ece3ecbd8aa48162b00731efc489344a992446c326c6fd2d",
-      "last_checked": "2026-08-21T07:41:17.108260",
+      "last_checked": "2026-08-25T07:38:37.234091",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"501c-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beavailability/iseligible-forcompletionhandler.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/webbrowser.json": {
       "hash": "6b8a850967975931a2d5affdc96d10bc723d0b948c09dc8a8b0f44db2092ee8d",
-      "last_checked": "2026-08-21T07:41:29.420074",
+      "last_checked": "2026-08-25T07:38:46.353317",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"260b-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beavailability/context/webbrowser.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beavailability/context/init(rawvalue:).json": {
       "hash": "b7c1e3676e928a29af347f2d01e39fa1f228729180717d12fb6c0559cfe0ba89",
-      "last_checked": "2026-08-21T07:41:29.559661",
+      "last_checked": "2026-08-25T07:38:46.494261",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1860-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beavailability/context/init-rawvalue.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/transferring-browsing-data-to-another-browser.json": {
       "hash": "6419194f704fd3d0af348deaad4ad0dfbe14545f98cb54001cff3c75b38c04be",
-      "last_checked": "2026-08-21T07:41:14.730503",
+      "last_checked": "2026-08-25T07:38:35.138848",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"ea1b-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/transferring-browsing-data-to-another-browser.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager.json": {
       "hash": "cade273a7a095af66e3001da51ba35b769625739b75c7c21df9a6c011e155d07",
-      "last_checked": "2026-08-21T07:41:14.971496",
+      "last_checked": "2026-08-25T07:38:35.363993",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"6feb-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions.json": {
       "hash": "3e30f0eee0456ad4abd68d801abcf7e51c47d81400e708b63f0130ce6f2e85db",
-      "last_checked": "2026-08-21T07:41:15.092643",
+      "last_checked": "2026-08-25T07:38:35.493341",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"63e9-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata.json": {
       "hash": "ae5c9920d96ce80d35d2fef9c601dfccf4cfbe452bcc60035b38c9f0642bbe28",
-      "last_checked": "2026-08-21T07:41:15.270631",
+      "last_checked": "2026-08-25T07:38:35.640659",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"7921-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager.json": {
       "hash": "2b6f3e978b4324e682d4c260003d003a622a2c81eb7e21f7bd8fecc914ed012a",
-      "last_checked": "2026-08-21T07:41:15.378130",
+      "last_checked": "2026-08-25T07:38:35.743179",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"718a-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportmetadata.json": {
       "hash": "8b2a4fb5db3e0318541b185f128815c37e46e29f58bb3c1bf21f4a5ba095a17b",
-      "last_checked": "2026-08-21T07:41:15.511269",
+      "last_checked": "2026-08-25T07:38:35.875075",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"55e4-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beimportmetadata.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportoptions.json": {
       "hash": "5dc7ff26b79da19db21a0646e27de32ffbe7931da24f9bd61fa2edb153319cda",
-      "last_checked": "2026-08-21T07:41:15.606831",
+      "last_checked": "2026-08-25T07:38:36.002005",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"5ce8-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beimportoptions.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit.json": {
       "hash": "f5b3a0615ab12794737587b1e74e0ccd3291bd402892d26eadd6098c569e86a6",
-      "last_checked": "2026-08-21T07:41:15.833292",
+      "last_checked": "2026-08-25T07:38:36.200533",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"9e40-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark.json": {
       "hash": "761de56101dc41cfe5f4a0b99b52e92ffa0c40b84013060b884da5c432fbcf34",
-      "last_checked": "2026-08-21T07:41:15.980504",
+      "last_checked": "2026-08-25T07:38:36.320411",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"7365-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatareadinglistitem.json": {
       "hash": "8a255bc2f501d5efe11debb42cfc3a4c5128b77648a5db9a6706c57590983903",
-      "last_checked": "2026-08-21T07:41:16.079666",
+      "last_checked": "2026-08-25T07:38:36.438413",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"613e-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatareadinglistitem.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataextension.json": {
       "hash": "52aae9f984817303e86be9d419757f55a55f4b012d14b5d6f16769a40e572e46",
-      "last_checked": "2026-08-21T07:41:16.201604",
+      "last_checked": "2026-08-25T07:38:36.544728",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"67d8-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataextension.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdata.json": {
       "hash": "cbee0f4225f364dfd3b6e58c5df979b7cfaa00ba17becc5b623a8c3e2a09ae5b",
-      "last_checked": "2026-08-21T07:41:16.393548",
+      "last_checked": "2026-08-25T07:38:36.718889",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"68c2-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdata.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct.json": {
       "hash": "58b579e0645993e98cb179d4a920f1ec8d8ecb15ec9695aa3b61a1d336d2610a",
-      "last_checked": "2026-08-21T07:41:16.513209",
+      "last_checked": "2026-08-25T07:38:36.849483",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3716-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swiftstruct.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerrordomain.json": {
       "hash": "945a1a0d1e7333f43414fee5d813cf367538ad09b667f107166b3864ca4b36df",
-      "last_checked": "2026-08-21T07:41:16.682195",
+      "last_checked": "2026-08-25T07:38:36.957621",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1b49-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerrordomain.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/init(scene:).json": {
       "hash": "c9e04bbb0e14e1e7d72b3471aeb0749ad3bd0687908ed545f7c59b875be22fb0",
-      "last_checked": "2026-08-21T07:41:17.567286",
+      "last_checked": "2026-08-25T07:38:37.452852",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"234b-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/init-scene.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/exportbrowserdata(_:).json": {
       "hash": "44a451f73f4be9c7411da5a168337d076c014d3d266a0c957bd5cb22312a289c",
-      "last_checked": "2026-08-21T07:41:17.774436",
+      "last_checked": "2026-08-25T07:38:37.574540",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3baf-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exportbrowserdata.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/requestexport(for:token:completionhandler:).json": {
       "hash": "f9db64e6a4dba2c1cb7b84b3da169f5cfd8d85879b571141110602b5cbc5796d",
-      "last_checked": "2026-08-21T07:41:18.024553",
+      "last_checked": "2026-08-25T07:38:37.758745",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"64e5-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/requestexport-fortokencompletionhandler.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.json": {
       "hash": "caf2764dde83b169ad586e6528d53ddda69e94e1eafe749216215ad96beda5d7",
-      "last_checked": "2026-08-21T07:41:18.118499",
+      "last_checked": "2026-08-25T07:38:37.865381",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"28f1-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/exporttokenuserinfokey-7e56u.json": {
       "hash": "7d7894d9b4128e939dec125eacb873bd147256f089cd3918246ce09ad9632a27",
-      "last_checked": "2026-08-21T07:41:18.289419",
+      "last_checked": "2026-08-25T07:38:37.991898",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2f73-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exporttokenuserinfokey-7e56u.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/useractivitytype-4ar5j.json": {
       "hash": "a3965391c5c04be167d16477aa4b448780aa2d17ad266612a8f4023208a5c005",
-      "last_checked": "2026-08-21T07:41:18.432405",
+      "last_checked": "2026-08-25T07:38:38.108496",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3195-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/useractivitytype-4ar5j.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/useractivitytype-g862.json": {
       "hash": "66344abcd84ee9cd497937756335b6f4757c05975deb247a754cc04f1991be75",
-      "last_checked": "2026-08-21T07:41:18.578214",
+      "last_checked": "2026-08-25T07:38:38.224420",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"382b-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/useractivitytype-g862.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/init(coder:).json": {
       "hash": "fa1158a7a27209fc7b8209d4386820b78d664d8bcfc978c9de3dc94db0e5b3e4",
-      "last_checked": "2026-08-21T07:41:18.849324",
+      "last_checked": "2026-08-25T07:38:38.349835",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1ba3-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/init-coder.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/init(exporttofiles:datatypes:).json": {
       "hash": "a97d07a75aac04e21222ec50d98d148e73db34ddeaf1e790668de681c2dbc434",
-      "last_checked": "2026-08-21T07:41:18.997837",
+      "last_checked": "2026-08-25T07:38:38.486286",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2fcd-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/init-exporttofilesdatatypes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.property.json": {
       "hash": "0f0e0a03f33cab5b0ab8febe6c689ea1090ae619caaa8682a0fe1393b32f8185",
-      "last_checked": "2026-08-21T07:41:19.130575",
+      "last_checked": "2026-08-25T07:38:38.605957",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2abc-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swiftproperty.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.struct.json": {
       "hash": "6622503c5169a1fd4719479e23c8d0509e04d8fe5f77ebf399ea935a5b966997",
-      "last_checked": "2026-08-21T07:41:19.456577",
+      "last_checked": "2026-08-25T07:38:38.742704",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"5a4d-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swiftstruct.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/exporttofiles.json": {
       "hash": "0efd4135cabb47789ce0e178821b55c1037fe72c2d6e24a0bd822acc0b2feca8",
-      "last_checked": "2026-08-21T07:41:19.733332",
+      "last_checked": "2026-08-25T07:38:38.866105",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"33b4-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/exporttofiles.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata/init(coder:).json": {
       "hash": "45f95e6a95e01564d4b977fdfe53ec5a7d7a5c85811960771c2e85d7197bb24c",
-      "last_checked": "2026-08-21T07:41:19.879538",
+      "last_checked": "2026-08-25T07:38:38.979573",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1fd1-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata/init-coder.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata/init(supportforexporttofiles:bookmarkscount:readinglistcount:historycount:extensionscount:).json": {
       "hash": "7e32f836999134e24333fe9060f2eca0f68d665126bf35115977401d8511d43b",
-      "last_checked": "2026-08-21T07:41:20.020314",
+      "last_checked": "2026-08-25T07:38:39.091977",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3d62-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata/init-supportforexporttofilesbookmarkscountreadinglistcounthistorycountextensionscount.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata/bookmarkscount.json": {
       "hash": "1df18f82801d302b94d936e85e499e07294ba880647853807fcf2d48061ac6e1",
-      "last_checked": "2026-08-21T07:41:20.171367",
+      "last_checked": "2026-08-25T07:38:39.231471",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2a11-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata/bookmarkscount.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata/extensionscount.json": {
       "hash": "7a9f2a15fc10fb6672a0b58ab95f9c7f1c591d4daba43e7cee47b882bcbbe60b",
-      "last_checked": "2026-08-21T07:41:20.302053",
+      "last_checked": "2026-08-25T07:38:39.354170",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2a1b-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata/extensionscount.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata/historycount.json": {
       "hash": "b7fb1d04efb36df34ec7ed17d7928c64c5cedbd0d452d3a1e342eed0d946afa6",
-      "last_checked": "2026-08-21T07:41:20.447028",
+      "last_checked": "2026-08-25T07:38:39.465907",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2a03-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata/historycount.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata/readinglistcount.json": {
       "hash": "e36998e9ad36397152ada50f97d7ab8eca29c9310a44c51641da364b8775ff8c",
-      "last_checked": "2026-08-21T07:41:20.605941",
+      "last_checked": "2026-08-25T07:38:39.585574",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2a2c-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata/readinglistcount.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportmetadata/supportexporttofiles.json": {
       "hash": "f32ad7127bf2209986b5ef47b391d91c9e023f999ad466424326bbadcacd09d9",
-      "last_checked": "2026-08-21T07:41:20.756360",
+      "last_checked": "2026-08-25T07:38:39.710854",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1ebf-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportmetadata/supportexporttofiles.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/init().json": {
       "hash": "77a2d796134d92dfa6d252d8d24e8eb10c65fa05b5ebcabc2533313a960d975f",
-      "last_checked": "2026-08-21T07:41:20.906687",
+      "last_checked": "2026-08-25T07:38:39.818641",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"170e-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/init.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/importbrowserdata(token:).json": {
       "hash": "8ca149a98a6bb766f50c86f98d0854d6548bd8d373c316db036ed17819cd9adc",
-      "last_checked": "2026-08-21T07:41:21.042013",
+      "last_checked": "2026-08-25T07:38:39.932726",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3ef6-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/importbrowserdata-token.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/requestimport(for:completionhandler:).json": {
       "hash": "716638990101b71f44c8a97f2e98c5f2b95761624fabb039c14064f125556776",
-      "last_checked": "2026-08-21T07:41:21.157983",
+      "last_checked": "2026-08-25T07:38:40.086594",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"4c3b-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/requestimport-forcompletionhandler.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/importtokenuserinfokey-3bqve.json": {
       "hash": "8140f7c45d1464326d5dfc4c7084dfec67cad30939991222ea25e7db4931f2e8",
-      "last_checked": "2026-08-21T07:41:21.295262",
+      "last_checked": "2026-08-25T07:38:40.208009",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2ffc-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/importtokenuserinfokey-3bqve.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/importtokenuserinfokey-3zzub.json": {
       "hash": "d0db798495bf01a5c68bd200b901d23d41ce2afb498ad4fb2a8c7338d7b1271b",
-      "last_checked": "2026-08-21T07:41:21.436625",
+      "last_checked": "2026-08-25T07:38:40.382253",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2879-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/importtokenuserinfokey-3zzub.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/useractivitytype-35jes.json": {
       "hash": "4e1129089678e2c54d5ba53b4509156736d351e9ca6d89aa430d0bb5cf16cdbd",
-      "last_checked": "2026-08-21T07:41:21.587061",
+      "last_checked": "2026-08-25T07:38:40.493326",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3ca6-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/useractivitytype-35jes.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/useractivitytype-8xgjo.json": {
       "hash": "476e74ffd6afff3231c322029b0a83c392ac69b0ad08f8e6882484690e08dd8f",
-      "last_checked": "2026-08-21T07:41:21.729423",
+      "last_checked": "2026-08-25T07:38:40.624774",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"43be-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/useractivitytype-8xgjo.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportmetadata/init(coder:).json": {
       "hash": "24cf41d4e92fb23c4e67ed1d352b287609357d5f6940c0dda418820b23d5c662",
-      "last_checked": "2026-08-21T07:41:21.990814",
+      "last_checked": "2026-08-25T07:38:40.880617",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1ad5-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beimportmetadata/init-coder.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportmetadata/init(supportforimportfromfiles:).json": {
       "hash": "100bebb7bde8f66878c23535b0ee39922a4d85f0973ab5ec79cc80420cb390d6",
-      "last_checked": "2026-08-21T07:41:22.119446",
+      "last_checked": "2026-08-25T07:38:41.002519",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"257c-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beimportmetadata/init-supportforimportfromfiles.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportmetadata/supportimportfromfiles.json": {
       "hash": "310ed25f1563534af1971d4155f515f4c3365f3304349dc45620bcc622ebb7cd",
-      "last_checked": "2026-08-21T07:41:22.263320",
+      "last_checked": "2026-08-25T07:38:41.127697",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1ecc-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beimportmetadata/supportimportfromfiles.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportoptions/init(coder:).json": {
       "hash": "2a9b6bc5d10dcf71d071cfc32ee74be268683519413064826d159aa06e6622a0",
-      "last_checked": "2026-08-21T07:41:22.411029",
+      "last_checked": "2026-08-25T07:38:41.240914",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1a11-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beimportoptions/init-coder.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportoptions/init(importfromfiles:).json": {
       "hash": "0ffe5052c0996bc809dda5216e19190da339824f93f22925c0c32ea1024bc197",
-      "last_checked": "2026-08-21T07:41:22.558957",
+      "last_checked": "2026-08-25T07:38:41.364799",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"23cb-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beimportoptions/init-importfromfiles.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beimportoptions/importfromfiles.json": {
       "hash": "58ae937b9a1fa5a62c1b4d689b93a8244f51f073b0ce2db73d10334559f9934d",
-      "last_checked": "2026-08-21T07:41:22.665926",
+      "last_checked": "2026-08-25T07:38:41.490803",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2c51-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/beimportoptions/importfromfiles.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/dateoflastvisit.json": {
       "hash": "fd3dff03de4a1cd2e6bea39c9e364546d1867940738582282e9798f7730b3a7f",
-      "last_checked": "2026-08-21T07:41:22.966414",
+      "last_checked": "2026-08-25T07:38:41.727429",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"34e8-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/dateoflastvisit.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/httpget.json": {
       "hash": "b9d25f389fc4eff99bd71ba83155af0bd36ae45491956779d095e8b0ec49db9d",
-      "last_checked": "2026-08-21T07:41:23.072257",
+      "last_checked": "2026-08-25T07:38:41.866235",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"36dd-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/httpget.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/loadedsuccessfully.json": {
       "hash": "f5efd949e68ca76aca9bd5cd8149d4ca030e07df2ca96bc9ec676991c65fa89a",
-      "last_checked": "2026-08-21T07:41:23.255254",
+      "last_checked": "2026-08-25T07:38:42.000613",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"373d-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/loadedsuccessfully.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/title.json": {
       "hash": "7448ac233d544be4f21d2b5fabe72bc3d0c58766a237e054be0dc54190897734",
-      "last_checked": "2026-08-21T07:41:23.380861",
+      "last_checked": "2026-08-25T07:38:42.119894",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"34fb-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/title.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/url.json": {
       "hash": "86e16de2c47ec3589fe1062c37d3eb17bdd97a57c09505f02951be87a320570b",
-      "last_checked": "2026-08-21T07:41:23.509918",
+      "last_checked": "2026-08-25T07:38:42.229062",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"348f-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/url.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/visitcount.json": {
       "hash": "4d054c1bdacd1c777ca4bdb672e714a402a874530c23e8c6c6c521004d4dc4e1",
-      "last_checked": "2026-08-21T07:41:23.641955",
+      "last_checked": "2026-08-25T07:38:42.351135",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"345a-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/visitcount.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/redirectdestinationdateofvisit.json": {
       "hash": "24503eb19315abc89d443c504b36c700b2bf1edd9b948f7ef9c6446ef61b3b04",
-      "last_checked": "2026-08-21T07:41:23.768874",
+      "last_checked": "2026-08-25T07:38:42.477367",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2f60-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/redirectdestinationdateofvisit.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/redirectdestinationurl.json": {
       "hash": "4f205b093833b254d6c070ccf87a647d8beaf2f465ba93c2223db0156171b9f7",
-      "last_checked": "2026-08-21T07:41:23.911780",
+      "last_checked": "2026-08-25T07:38:42.599235",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2f33-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/redirectdestinationurl.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/redirectsourcedateofvisit.json": {
       "hash": "2cdf6326bfac16e8d14a3afb79b85d8d8c066b82cc9c4f4c95b9d3d31bfd8e65",
-      "last_checked": "2026-08-21T07:41:24.060367",
+      "last_checked": "2026-08-25T07:38:42.725558",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2f2e-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/redirectsourcedateofvisit.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/redirectsourceurl.json": {
       "hash": "12dbaf2f50f07203caeb8f51582dc5b9428851315f2e550cbdbc64412be54afd",
-      "last_checked": "2026-08-21T07:41:24.159131",
+      "last_checked": "2026-08-25T07:38:42.848982",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"31c5-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/redirectsourceurl.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark/init(isfolder:title:identifier:url:parentidentifier:).json": {
       "hash": "afded38547cb0ce9687c35a216d71fc72544572e7e98bfac48be283e0593b390",
-      "last_checked": "2026-08-21T07:41:24.453347",
+      "last_checked": "2026-08-25T07:38:43.094932",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"39c7-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark/init-isfoldertitleidentifierurlparentidentifier.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark/identifier.json": {
       "hash": "2007feffb55fc88522f3f763b2207e666c6051631d945ee28a54d4fdb139c88a",
-      "last_checked": "2026-08-21T07:41:24.560841",
+      "last_checked": "2026-08-25T07:38:43.209617",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2a12-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark/identifier.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark/isfolder.json": {
       "hash": "b4b4d10e7fc53aced6a545bba7fd698719052480e7a006e2bffe4f9d339a9067",
-      "last_checked": "2026-08-21T07:41:24.720885",
+      "last_checked": "2026-08-25T07:38:43.344900",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2c2d-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark/isfolder.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark/title.json": {
       "hash": "48179735e43e44ab577673141f9fe9cd75bdeb755319835060b8202de3284f0e",
-      "last_checked": "2026-08-21T07:41:24.854532",
+      "last_checked": "2026-08-25T07:38:43.466385",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"29e3-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark/title.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark/url.json": {
       "hash": "d5be10cf1873ccaf20d31d8be2a39bf1b0454d2b5a42d6bdff7596d9f560339e",
-      "last_checked": "2026-08-21T07:41:24.980617",
+      "last_checked": "2026-08-25T07:38:43.574577",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2a3b-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark/url.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark/parentidentifier.json": {
       "hash": "09a7b612223a112059353d21ae3a6126c56eca6acdacfde9b774af38ba92d3b8",
-      "last_checked": "2026-08-21T07:41:25.117622",
+      "last_checked": "2026-08-25T07:38:43.711574",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1fba-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark/parentidentifier.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatareadinglistitem/init(title:url:dateoflastvisit:).json": {
       "hash": "57232f17dffa98a73ce5d5a687d59dbcc441d5da8b38392a6493b9d3149cfb64",
-      "last_checked": "2026-08-21T07:41:25.416614",
+      "last_checked": "2026-08-25T07:38:43.972468",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2d12-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatareadinglistitem/init-titleurldateoflastvisit.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatareadinglistitem/dateoflastvisit.json": {
       "hash": "63dddc0c7fe85c39664c0a14439598eb8f5b2a7b8117796b905f37aea7b6ee83",
-      "last_checked": "2026-08-21T07:41:25.687601",
+      "last_checked": "2026-08-25T07:38:44.112544",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"273d-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatareadinglistitem/dateoflastvisit.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatareadinglistitem/title.json": {
       "hash": "aad833d5da4c12ab6a5fa8ef32d1e2546f250794fb2d9f0f6772ade173c0d37e",
-      "last_checked": "2026-08-21T07:41:25.840325",
+      "last_checked": "2026-08-25T07:38:44.227228",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"26a0-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatareadinglistitem/title.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatareadinglistitem/url.json": {
       "hash": "172cbb34493a03813a10ffd61f807a364f4feeff96f40a54d89ca1ab59029876",
-      "last_checked": "2026-08-21T07:41:25.986183",
+      "last_checked": "2026-08-25T07:38:44.340938",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2691-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatareadinglistitem/url.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataextension/init(displayname:developername:identifier:storeidentifier:).json": {
       "hash": "c1fc62cd88d5b21f7405c31495317623609167d3aabff7b30ffc62de54feb16c",
-      "last_checked": "2026-08-21T07:41:26.128378",
+      "last_checked": "2026-08-25T07:38:44.459248",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2f7d-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataextension/init-displaynamedevelopernameidentifierstoreidentifier.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataextension/developername.json": {
       "hash": "52ff294f61082473d9971a5db5b7fe1f6c6b055adb250a52db411e256311b34f",
-      "last_checked": "2026-08-21T07:41:26.257055",
+      "last_checked": "2026-08-25T07:38:44.586282",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2b46-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataextension/developername.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataextension/displayname.json": {
       "hash": "7e7c0844c306fad925b1fb33f0fd3a05dc345ade836220346671a1f704563b53",
-      "last_checked": "2026-08-21T07:41:26.395487",
+      "last_checked": "2026-08-25T07:38:44.700379",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2b3c-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataextension/displayname.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataextension/identifier.json": {
       "hash": "71865c5df4b84bc5751d0b662efce15c8535c2c48d2c251337ab83ac002f55dd",
-      "last_checked": "2026-08-21T07:41:26.544582",
+      "last_checked": "2026-08-25T07:38:44.822356",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2b30-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataextension/identifier.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataextension/storeidentifier.json": {
       "hash": "ad2c2c9f0bdfff9236beeb106c4ff610e67cbae831b7a1cf9e1f5435544242b3",
-      "last_checked": "2026-08-21T07:41:26.651765",
+      "last_checked": "2026-08-25T07:38:44.962293",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2e2b-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataextension/storeidentifier.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdata/init(coder:).json": {
       "hash": "1081fbdd2364013e5d9de7350a3667b7b50ad8b156e546ef73aaef196af8b030",
-      "last_checked": "2026-08-21T07:41:26.769352",
+      "last_checked": "2026-08-25T07:38:45.085086",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1cfe-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdata/init-coder.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdata/init(sourceapplicationbundleidentifier:sourceapplicationlocalizedname:).json": {
       "hash": "8841886f2e6853a8a9cf2125c887c6262d2cefc1f348b415778f4dc46cbf2e34",
-      "last_checked": "2026-08-21T07:41:26.928565",
+      "last_checked": "2026-08-25T07:38:45.229005",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2a7c-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdata/init-sourceapplicationbundleidentifiersourceapplicationlocalizedname.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdata/sourceapplicationbundleidentifier.json": {
       "hash": "8d65f328f978ce3ebf566cd58414ea070800ede2f74b030e801f0e8e8ae4a60c",
-      "last_checked": "2026-08-21T07:41:27.041051",
+      "last_checked": "2026-08-25T07:38:45.369131",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"240a-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdata/sourceapplicationbundleidentifier.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdata/sourceapplicationlocalizedname.json": {
       "hash": "8c1e6fe8314a21a99a81dd9e10046d95d7d3622ae937e52d8a28616b445fd132",
-      "last_checked": "2026-08-21T07:41:27.205696",
+      "last_checked": "2026-08-25T07:38:45.498526",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"23ec-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdata/sourceapplicationlocalizedname.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/code.json": {
       "hash": "b82869bbfb02c52fce25933b9f42697f89597649aaff522ee48d9bb57f05f130",
-      "last_checked": "2026-08-21T07:41:27.346601",
+      "last_checked": "2026-08-25T07:38:45.620346",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"48ca-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/code.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/export.json": {
       "hash": "abd40dd62767886c8ffee5296fdfc70c7a0e9aaa04ab28996c06ea6fb1b56ada",
-      "last_checked": "2026-08-21T07:41:28.466245",
+      "last_checked": "2026-08-25T07:38:45.738060",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2091-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/export.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/import.json": {
       "hash": "a58cf15c836a1a786af603275b89c3de8fb20a62751aa23a38c0775aecd6c070",
-      "last_checked": "2026-08-21T07:41:28.602035",
+      "last_checked": "2026-08-25T07:38:45.863013",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2095-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/import.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/unknown.json": {
       "hash": "65152503a6609400b780485729b2e0b1acbe3da80b9315c2135ff52461bd45a7",
-      "last_checked": "2026-08-21T07:41:28.861838",
+      "last_checked": "2026-08-25T07:38:45.995168",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2086-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/unknown.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/errordomain.json": {
       "hash": "b2b1147d85a223128de8bc030ec5a3fea21cddc44550704f1b014f55f474273f",
-      "last_checked": "2026-08-21T07:41:29.002450",
+      "last_checked": "2026-08-25T07:38:46.114023",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"12bd-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/errordomain.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.struct/init(rawvalue:).json": {
       "hash": "1edffab4a3121506d0c797319080813b5411b38fbd828bf0ab2c207d1b498b67",
-      "last_checked": "2026-08-21T07:41:29.665449",
+      "last_checked": "2026-08-25T07:38:46.600038",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"1915-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swift.struct/init-rawvalue.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.struct/bookmarks.json": {
       "hash": "98e7c89a97586d4cbec651bc26ae3bbd3161329b6d5590c57b095ab14d14cebb",
-      "last_checked": "2026-08-21T07:41:29.826641",
+      "last_checked": "2026-08-25T07:38:46.722932",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3995-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swift.struct/bookmarks.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.struct/extensions.json": {
       "hash": "5c22dc0db27cabbbfb0138df35e7364bd275bc5366f8a9d76d0447350774daa5",
-      "last_checked": "2026-08-21T07:41:29.958377",
+      "last_checked": "2026-08-25T07:38:46.881506",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"399f-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swift.struct/extensions.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.struct/history.json": {
       "hash": "99e8bda481e70339f45c274cf0e23991a59dcc8704eaa87f0dead39eae3458b3",
-      "last_checked": "2026-08-21T07:41:30.096737",
+      "last_checked": "2026-08-25T07:38:46.987237",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3984-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swift.struct/history.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.struct/readinglist.json": {
       "hash": "fb7824086c15150b093c621fb2a4d02109d1c225a28fdf5b8637c7686dcf4dca",
-      "last_checked": "2026-08-21T07:41:30.246579",
+      "last_checked": "2026-08-25T07:38:47.108603",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"39b1-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swift.struct/readinglist.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/beexportoptions/datatypes-swift.struct/none.json": {
       "hash": "d7e3d4096e21f68f493bc1f3750ff0a6b4b20f655f57e1f903b085c776848ffc",
-      "last_checked": "2026-08-21T07:41:30.394972",
+      "last_checked": "2026-08-25T07:38:47.234705",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3fbc-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/beexportoptions/datatypes-swift.struct/none.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/code/export.json": {
       "hash": "ae0da198c5cf43d3ce072544dad582b39910af96d836db3d995449b53bacb468",
-      "last_checked": "2026-08-21T07:41:30.522173",
+      "last_checked": "2026-08-25T07:38:47.388801",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2730-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/code/export.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/code/import.json": {
       "hash": "5996052ebc1d5cc7f5f77ff92a8da46b61384b94ff208d943540b3dccc4c54d1",
-      "last_checked": "2026-08-21T07:41:30.668416",
+      "last_checked": "2026-08-25T07:38:47.506132",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2734-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/code/import.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/code/unknown.json": {
       "hash": "61da2ba793c0080c1b49eedc571feb569fb0d3b466146db4fb882642adc10e07",
-      "last_checked": "2026-08-21T07:41:30.804057",
+      "last_checked": "2026-08-25T07:38:47.648227",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2729-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/code/unknown.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexchangeerror-swift.struct/code/init(rawvalue:).json": {
       "hash": "d8a8657dec55ed660eae2dfcea5fdc87492e5a23c502d7ca5fce5d8bdc80cd13",
-      "last_checked": "2026-08-21T07:41:30.953460",
+      "last_checked": "2026-08-25T07:38:47.773620",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"183c-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexchangeerror-swift.struct/code/init-rawvalue.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/init(scene:).json": {
       "hash": "1a2aa5547ab8a335247b2936bdbe0818d6b94b746833f4d58b629b4a49f38774",
-      "last_checked": "2026-08-21T07:41:21.858433",
+      "last_checked": "2026-08-25T07:38:40.755245",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2338-6585840bcb4fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/init-scene.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/init(url:dateoflastvisit:title:loadedsuccessfully:httpget:redirectsourceurl:redirectsourcedateofvisit:redirectdestinationurl:redirectdestinationdateofvisit:visitcount:)-j2oc.json": {
       "hash": "a1783268b3bff141a421bddf85063b0d5d9f063a40761e7096e6e658e88017a4",
-      "last_checked": "2026-08-21T07:41:22.799977",
+      "last_checked": "2026-08-25T07:38:41.622956",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"61be-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/init-urldateoflastvisittitleloadedsuccessfullyhttpgetredirectsourceurlredirectsourcedateofvisitredirectdestinationurlredirectdestinationdateofvisitvisitcount-j2oc.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatahistoryvisit/init(url:dateoflastvisit:title:loadedsuccessfully:httpget:redirectsourceurl:redirectsourcedateofvisit:redirectdestinationurl:redirectdestinationdateofvisit:visitcount:)-hvhk.json": {
       "hash": "439e1d99aae10fc04de6ab5069d5ba0939bdf35a67fcb936bb9f02361dc723b1",
-      "last_checked": "2026-08-21T07:41:24.310784",
+      "last_checked": "2026-08-25T07:38:42.960999",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"370b-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatahistoryvisit/init-urldateoflastvisittitleloadedsuccessfullyhttpgetredirectsourceurlredirectsourcedateofvisitredirectdestinationurlredirectdestinationdateofvisitvisitcount-hvhk.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdatabookmark/init(asfolder:title:identifier:url:parentidentifier:).json": {
       "hash": "92951b3e0e462d287015bddd9d43112cf675aa89ac8ff960d953820d985e5059",
-      "last_checked": "2026-08-21T07:41:25.268195",
+      "last_checked": "2026-08-25T07:38:43.840974",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"2244-6585840bbd7fd-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdatabookmark/init-asfoldertitleidentifierurlparentidentifier.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowsercontentfilter.json": {
       "hash": "a7be98b7e3f7d5be143d3bad931a209fdffee4ddb7904d55bf06589e1c040cc5",
-      "last_checked": "2026-08-21T07:41:16.782148",
+      "last_checked": "2026-08-25T07:38:37.075250",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"3270-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowsercontentfilter.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowsercontentfilter/evaluateurl(_:completionhandler:).json": {
       "hash": "f41b629f605e39eec2855b3b1874b2dcd68bc7926a487246e1f9fb79fa25c77e",
-      "last_checked": "2026-08-21T07:41:29.155507",
+      "last_checked": "2026-08-25T07:38:46.232916",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:41:14.198748",
+      "session_id": "2026-08-25T07:38:34.617107",
       "etag": "\"31fa-6585840b99597-df\"",
       "file_path": "documentation/BrowserKit/bebrowsercontentfilter/evaluateurl-completionhandler.md"
     },

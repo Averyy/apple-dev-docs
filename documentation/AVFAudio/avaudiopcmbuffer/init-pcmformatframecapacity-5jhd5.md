@@ -29,7 +29,7 @@ A new [`AVAudioPCMBuffer`](avaudiopcmbuffer.md) instance, or `nil` if it’s not
 The method returns `nil` due to the following reasons:
 
 - The format has zero bytes per frame.
-- The system can’t represent the buffer byte capacity as an unsigned bit-32 integer.
+- The system can’t represent the buffer byte capacity as an unsigned 32-bit integer.
 
 ## Parameters
 

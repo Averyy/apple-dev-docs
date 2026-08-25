@@ -31,7 +31,7 @@ The default value is [`CGPointZero`](https://developer.apple.com/documentation/c
 - [var contentSize: CGSize](uiscrollview/contentsize.md)
   The size of the content view.
 - [func setContentOffset(CGPoint, animated: Bool)](uiscrollview/setcontentoffset(_:animated:).md)
-  Sets the offset from the content view’s origin that corresponds to the scroll view’s origin.
+  Sets the point at which the origin of the content view is offset from the origin of the scroll view.
 
 
 ---

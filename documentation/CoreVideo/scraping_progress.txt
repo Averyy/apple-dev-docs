@@ -1,4 +1,4 @@
 Completed scraping Core Video!
-Total pages scraped: 0
-Pages skipped (unchanged): 1002
+Total pages scraped: 21
+Pages skipped (unchanged): 981
 Pages failed: 0

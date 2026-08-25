@@ -64,7 +64,7 @@ The logs are typically very overwhelming. Use the timestamps you noted when capt
 
 If you use Console.app, specify a custom time frame with the `Showing` option below the log view, and use the search field in the toolbar to set up filters. Be sure that `Include Info Messages` and `Include Debug Messages` under the `Action` menu are checked. For more information about how to find log messages and activities in Console.app, see [`Console User Guide`](https://developer.apple.comhttps://support.apple.com/guide/console/find-log-messages-and-activities-cnslbf30b61a/1.1/mac/14.0).
 
-If you use `log`, specify the time frame with the `--start` and `--end` options, and use `--predicate` to set up filters. As an example, the following command extracts the logs generated between `2023-12-07 12:22:47+0100` and `2023-12-07 12:33:53+0100` for the process named `YourCoolApp`, with the subsystem being `com.apple.coredata` and the messages containing “import.” For the detailed syntax of `log`, see its man page; for how to read man pages, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+If you use `log`, specify the time frame with the `--start` and `--end` options, and use `--predicate` to set up filters. As an example, the following command extracts the logs generated between `2023-12-07 12:22:47+0100` and `2023-12-07 12:33:53+0100` for the process named `YourCoolApp`, with the subsystem being `com.apple.coredata` and the messages containing “import.” For the detailed syntax of `log`, see its man page; for how to read man pages, see Reading UNIX Manual Pages.
 
 ```None
 log show --start "2023-12-07 12:22:47+0100" --end "2023-12-07 12:33:53+0100" 

@@ -12,6 +12,7 @@ Encodes the operation as a keyed container with a `type` discriminator and eithe
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

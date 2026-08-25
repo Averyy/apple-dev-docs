@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: init
 
-Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that the agent must not call.
+Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that the model must not call.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ Creates a trajectory expectation with ordered and unordered requirements, plus s
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,13 +22,13 @@ init(ordered: [ToolExpectation] = [], unordered: [ToolExpectation] = [], disallo
 
 #### Discussion
 
-Additional tool calls beyond the expected ones are always allowed when using disallowed expectations — the disallowed list targets specific tools while permitting everything else. To disallow *all* unexpected calls instead, use [`init(ordered:unordered:allowsAdditionalToolCalls:)`](trajectoryexpectation/init(ordered:unordered:allowsadditionaltoolcalls:).md) with `allowsAdditionalToolCalls: false`.
+Using disallowed expectations always allows additional tool calls; the disallowed list targets specific tools while permitting everything else. To disallow *all* unexpected calls instead, use [`init(ordered:unordered:allowsAdditionalToolCalls:)`](trajectoryexpectation/init(ordered:unordered:allowsadditionaltoolcalls:).md) with `allowsAdditionalToolCalls: false`.
 
 ## Parameters
 
 - `ordered`: Steps that must be satisfied in sequential order.
 - `unordered`: Tool calls that must occur at some point, regardless of position.
-- `disallowed`: Tools that the agent must not call.
+- `disallowed`: Tools that the model must not call.
 
 ## See Also
 

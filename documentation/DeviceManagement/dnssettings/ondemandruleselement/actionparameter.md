@@ -25,8 +25,8 @@ The keys allowed in each dictionary are described below. Note: This array is onl
 ## Properties
 
 - `DomainAction` (string) *(required)*: The DNS settings behavior for the specified domains. Allowed values: - ‘NeverConnect’: Don’t use the DNS Settings for the specified domains.
-- ‘ConnectIfNeeded’: Allow using the DNS Settings for the specified domains.
-- `Domains` ([string]) *(required)*: The domains for which this evaluation applies.
+- ‘ConnectIfNeeded’: Allow using the DNS Settings for the specified domains. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `Domains` ([string]) *(required)*: The domains for which this evaluation applies. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 
 ---

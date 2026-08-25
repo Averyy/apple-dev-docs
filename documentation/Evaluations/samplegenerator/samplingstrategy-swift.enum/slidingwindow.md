@@ -12,6 +12,7 @@ A strategy that slides a window through the examples, advancing it each batch.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

@@ -22,11 +22,7 @@ typealias CVPixelBufferReleasePlanarBytesCallback = (UnsafeMutableRawPointer?, U
 
 #### Discussion
 
-You would declare a callback named `MyPixelBufferReleasePlanarBytes` like this:
-
-##### Discussion
-
-You use this callback to release the pixels and perform any other cleanup when a pixel buffer is released.
+You use this callback to release the pixel data and perform any other cleanup when the system releases the pixel buffer.
 
 ## Parameters
 

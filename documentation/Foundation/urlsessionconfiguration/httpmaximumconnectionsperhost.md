@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-The maximum number of simultaneous connections to make to a given host.
+The maximum number of simultaneous HTTP/1.1 connections to make to a given host.
 
 **Availability**:
 - iOS 7.0+
@@ -22,11 +22,13 @@ var httpMaximumConnectionsPerHost: Int { get set }
 
 #### Discussion
 
-This property determines the maximum number of simultaneous connections made to each host by tasks within sessions based on this configuration.
+This property determines the maximum number of simultaneous HTTP/1.1 connections made to each host by tasks within sessions based on this configuration.
 
 This limit is per session, so if you use multiple sessions, your app as a whole may exceed this limit. Additionally, depending on your connection to the Internet, a session may use a lower limit than the one you specify.
 
 The default value is `6`.
+
+HTTP/2 and later run multiple requests over a single connection and thus ignore this property.
 
 ## See Also
 

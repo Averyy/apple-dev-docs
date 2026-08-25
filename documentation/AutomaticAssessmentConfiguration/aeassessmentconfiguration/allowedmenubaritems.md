@@ -17,9 +17,9 @@ var allowedMenuBarItems: Set<AEMenuBarItem>? { get set }
 
 #### Discussion
 
-When `allowsMenuBar` is `true`, the menu bar is restricted to only the items specified in this set. If this property is `nil`, all menu bar items are allowed (unrestricted menu bar).
+When [`allowsMenuBar`](aeassessmentconfiguration/allowsmenubar.md) is `true`, the menu bar is restricted to only the items specified in this set. If this property is `nil`, all menu bar items are allowed (unrestricted menu bar).
 
-> **Note**: This property only takes effect when `allowsMenuBar` is `true`.
+> **Note**: This property only takes effect when [`allowsMenuBar`](aeassessmentconfiguration/allowsmenubar.md) is `true`.
 
 
 ---

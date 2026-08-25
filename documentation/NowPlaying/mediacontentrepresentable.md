@@ -33,8 +33,6 @@ Content types like [`MusicContent`](musiccontent.md), [`PodcastContent`](podcast
   The entities that represent this content, making them available to Siri and Apple Intelligence.
 - [var artwork: Artwork?](mediacontentrepresentable/artwork.md)
   Artwork for this content.
-- [var collectionID: String?](mediacontentrepresentable/collectionid.md)
-  An opaque identifier for the collection this content belongs to, such as an album, playlist, or podcast show.
 - [var duration: MediaDuration?](mediacontentrepresentable/duration.md)
   The duration of this content.
 - [var genre: String?](mediacontentrepresentable/genre.md)
@@ -45,8 +43,6 @@ Content types like [`MusicContent`](musiccontent.md), [`PodcastContent`](podcast
   A Boolean value that indicates whether to exclude this content from media suggestions.
 - [var isExplicit: Bool?](mediacontentrepresentable/isexplicit.md)
   A Boolean value that indicates whether this content is explicit.
-- [var serviceID: String?](mediacontentrepresentable/serviceid.md)
-  A unique identifier for the service provider this content belongs to.
 - [var type: MediaType](mediacontentrepresentable/type.md)
   The media type (audio or video).
 

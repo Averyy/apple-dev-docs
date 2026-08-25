@@ -12,6 +12,7 @@ Creates a pairwise comparison evaluator that compares the model’s response aga
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ static func pairwise(_ name: String, scale: ScoringScale, judge: any LanguageMod
 
 ## Mentions
 
-- [Scoring with model-as-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
 
 #### Discussion
 

@@ -12,6 +12,7 @@ Creates a group of expectations that must all be satisfied at the same sequentia
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,7 +26,7 @@ static func anyOrder(_ expectations: [ToolExpectation]) -> ToolExpectation
 
 #### Discussion
 
-Only valid within the `ordered` array of a [`TrajectoryExpectation`](trajectoryexpectation.md).
+You can only use this method within the `ordered` array of a [`TrajectoryExpectation`](trajectoryexpectation.md).
 
 ## Parameters
 

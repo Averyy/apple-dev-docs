@@ -58,7 +58,7 @@ To illustrate this point, the traditional property list view of a profile is no 
 
 Still, the property list is easier to read and so the bulk of this technote focuses on that.
 
-For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .
 
 #### The Who
 

@@ -76,6 +76,8 @@ For more details about how to use the data in the Organizer panes to improve the
   Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
 - [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
+- [Writing and running performance tests](writing-and-running-performance-tests.md)
+  Repeatably gather metrics on the performance of your code.
 
 
 ---

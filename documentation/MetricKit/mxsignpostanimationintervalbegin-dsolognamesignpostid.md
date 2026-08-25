@@ -26,6 +26,8 @@ func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer = #dsohandle, log: O
 
 Call this function to mark the beginning of an animation interval in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md), a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](https://developer.apple.com/documentation/os/os_signpost_event_emit). Don’t alter the parameters `dso`, `signpostID`, or `format`.
 
+To end the interval, call [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md) with a `type` of `end`, passing the same `log`, `name`, and `signpostID` you used to begin it.
+
 ## Parameters
 
 - `dso`: A parameter for internal system use.

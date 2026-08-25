@@ -29,6 +29,7 @@ object InstallMediaResponse
 - `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment. Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
 Deprecated: macOS 11+
 Removed: macOS 11+
+- `EnrollmentUserID` (string) *(required)*: Removed: macOS 11+
 - `ErrorChain` ([InstallMediaResponse.ErrorChainItem]): An array of dictionaries that describes any errors that occur.
 - `iTunesStoreID` (integer): The book’s iTunes Store identifier, if present in the command. Deprecated: macOS 11+
 Removed: macOS 11+
@@ -37,6 +38,7 @@ Removed: macOS 11+
 - `MediaURL` (string): The URL to retrieve the book, if present in the command. Available: iOS 8+ | iPadOS 8+
 Deprecated: macOS 11+
 Removed: macOS 11+
+- `NotOnConsole` (boolean) *(required)*: If `true`, the device isn’t on-console.
 - `PersistentID` (string): The book’s persistent identifier, if present in the command. Available: iOS 8+ | iPadOS 8+
 Deprecated: macOS 11+
 Removed: macOS 11+
@@ -59,12 +61,10 @@ Removed: macOS 11+
 - `UserID` (string): For macOS, this value is the ID of the user. For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur. Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.9+
 Deprecated: macOS 11+
 Removed: macOS 11+
+- `UserLongName` (string) *(required)*: Removed: macOS 11+
 - `UserShortName` (string): For macOS, this value is the short name of the user. For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel. Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.9+
 Deprecated: macOS 11+
 Removed: macOS 11+
-- `EnrollmentUserID` (string) *(required)*
-- `NotOnConsole` (boolean) *(required)*
-- `UserLongName` (string) *(required)*
 
 ## See Also
 

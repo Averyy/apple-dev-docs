@@ -8,7 +8,7 @@ Install command-line tools for Xcode using an installer package or the Terminal 
 
 Xcode comes bundled with command-line tools such as `clang`, `notarytool`, `xcodebuild`, and `xcrun`. If you install Xcode on your Mac, then you don’t need to install the command-line tools separately.
 
-Apple offers the Command Line Tools for Xcode package as an alternative to a full Xcode installation. This package is useful for installing the command-line tools if you work outside of Xcode or use UNIX-style commands to build your apps. The package contains the same macOS SDK, man pages, and toolchain binaries that ship with Xcode. You can download a specific version of the package or install its latest version for your Mac from the command line. The system installs the package at the following path: `/Library/Developer/CommandLineTools`.
+Apple offers the Command Line Tools for Xcode package as an alternative to a full Xcode installation. This package is useful for installing the command-line tools if you work outside of Xcode to build your apps. The package contains the same macOS SDK, man (manual) pages, and toolchain binaries that ship with Xcode. You can download a specific version of the package or install its latest version for your Mac from the command line. The system installs the package at the following path: `/Library/Developer/CommandLineTools`.
 
 > ❗ **Important**: Commands such as `xcodebuild` and `xctrace` only ship with Xcode, and aren’t in the Command Line Tools for Xcode package. For more information, see [`Xcode command-line tool reference`](xcode-command-line-tool-reference.md).
 

@@ -130,7 +130,7 @@ Background sessions let you perform uploads and downloads of content in the back
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
 ### Setting HTTP policy and proxy properties
 - [var httpMaximumConnectionsPerHost: Int](urlsessionconfiguration/httpmaximumconnectionsperhost.md)
-  The maximum number of simultaneous connections to make to a given host.
+  The maximum number of simultaneous HTTP/1.1 connections to make to a given host.
 - [var httpShouldUsePipelining: Bool](urlsessionconfiguration/httpshouldusepipelining.md)
   A Boolean value that determines whether the session should use HTTP pipelining.
 - [var proxyConfigurations: [ProxyConfiguration]](urlsessionconfiguration/proxyconfigurations.md)

@@ -34,7 +34,7 @@ The mutable subclass of [`NSURLRequest`](nsurlrequest.md) is [`NSMutableURLReque
 
 ##### Reserved Http Headers
 
-The URL Loading System handles various aspects of the HTTP protocol for you (HTTP 1.1 persistent connections, proxies, authentication, and so on). As part of this support, the URL Loading System takes responsibility for certain HTTP headers:
+The URL Loading System handles various aspects of the HTTP protocol for you (HTTP/1.1 persistent connections, proxies, authentication, and so on). As part of this support, the URL Loading System takes responsibility for certain HTTP headers:
 
 - `Content-Length`
 - `Authorization`

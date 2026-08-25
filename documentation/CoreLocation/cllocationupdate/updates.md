@@ -42,7 +42,7 @@ struct Updates
 - [static func liveUpdates(CLLocationUpdate.LiveConfiguration) -> CLLocationUpdate.Updates](cllocationupdate/liveupdates(_:).md)
   Tells Core Location to start delivering the location updates it produces for the configuration you specify.
 - [CLLocationUpdate.LiveConfiguration](cllocationupdate/liveconfiguration.md)
-  Values for indicating the kind of updates the framework delivers.
+  Values that indicate the kind of positioning updates the framework delivers.
 
 
 ---

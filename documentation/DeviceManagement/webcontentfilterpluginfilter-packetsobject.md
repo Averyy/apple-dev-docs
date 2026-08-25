@@ -17,7 +17,7 @@ object WebContentFilterPluginFilter_PacketsObject
 ## Properties
 
 - `Enabled` (boolean) *(required)*: If `true`, the system enables filtering network packets.
-- `ProviderComposedIdentifier` (string): The packet provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true. The identifier is a composed identifier. The format of the composed identifier is “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string from the code signature of the provider. For example, “com.example.app {anchor apple generic}”.
+- `ProviderComposedIdentifier` (string): The packet provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true. The identifier is a composed identifier. The format of the composed identifier is “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the provider. For example, “com.example.app {anchor apple generic}”.
 
 ## See Also
 

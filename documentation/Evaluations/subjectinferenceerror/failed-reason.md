@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: case
 
-The subject producer threw. `reason` is the thrown error’s `localizedDescription`.
+The subject method threw an error.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,12 +12,17 @@ The subject producer threw. `reason` is the thrown error’s `localizedDescripti
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case failed(reason: String)
 ```
+
+## Parameters
+
+- `reason`: The thrown error’s `localizedDescription`.
 
 
 ---

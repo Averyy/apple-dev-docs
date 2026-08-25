@@ -42,6 +42,8 @@ Be aware of how you persist attributed strings to and from the disk. RTF and RTF
 
 If you work extensively with HTML content, validate the results and performance of import and export operations during testing. WebKit handles the conversion between HTML markup and attributed strings. If an HTML file contains tags or constructs that attributed strings don’t support, the import process ignores them and imports what it can.
 
+> **Note**:  Apple discourages the use of the synchronous `initWithHTML:` initializers, which parse HTML in-process. Use the WebKit-based [`loadFromHTML(request:options:completionHandler:)`](nsattributedstring/loadfromhtml(request:options:completionhandler:).md) family of methods instead, which parse HTML out-of-process for improved security, stability, and code isolation.
+
 When you create an attributed string from Markdown, the system adds presentation intent attributes with information about the original Markdown content. The system doesn’t add style attributes to match the Markdown elements, but the system applies default style information when it renders a string with intent attributes. To change the rendering behavior of your Markdown content, remove the intent attributes and add the style attributes you prefer.
 
 > ❗ **Important**:  When reading or writing attributed strings, choose methods that return or throw an error, and check any errors you receive. Handling errors is the best way to detect issues with the import or export process and take corrective action.
@@ -182,7 +184,6 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
   Migrate your code away from using these symbols.
 ### Initializers
 - [init?(coder: NSCoder)](nsattributedstring/init(coder:).md)
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsattributedstring/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

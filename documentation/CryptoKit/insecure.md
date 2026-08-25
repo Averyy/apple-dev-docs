@@ -36,11 +36,6 @@ enum Insecure
   The output of a MD5 hash.
 - [Insecure.SHA1Digest](insecure/sha1digest.md)
   The output of a SHA1 hash.
-- [Insecure.UnauthenticatedChaCha20](insecure/unauthenticatedchacha20.md)
-  Unauthenticated ChaCha20 stream cipher.
-### Enumerations
-- [Insecure.UnauthenticatedAES](insecure/unauthenticatedaes.md)
-  AES-ECB (Electronic Codebook) single-block permutation.
 
 ## Relationships
 

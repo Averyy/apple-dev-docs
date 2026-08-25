@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: method
 
-Sets the offset from the content view’s origin that corresponds to the scroll view’s origin.
+Sets the point at which the origin of the content view is offset from the origin of the scroll view.
 
 **Availability**:
 - iOS 2.0+

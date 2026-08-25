@@ -19,8 +19,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Capture photos and record video using the front and rear iPhone and iPad cameras.
 - [Book Tracker: Using Evaluations to evaluate an intelligent feature](../evaluations/book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
-- [Build a responsive camera app that launches quickly](../avfoundation/build-a-responsive-camera-app-that-launches-quickly.md)
-  Build a fast camera launch experience for your iOS and iPadOS apps.
+- [Building a responsive camera app that launches quickly](../avfoundation/building-a-responsive-camera-app-that-launches-quickly.md)
+  Show a camera preview sooner by deferring capture output setup and postponing noncritical interface elements.
 - [Building a cross-platform web browser](../webkit/building-a-cross-platform-web-browser.md)
   Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
 - [Building a handwriting recognition experience with PencilKit](../pencilkit/building-a-handwriting-recognition-experience-with-pencilkit.md)
@@ -88,7 +88,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Wishlist: Planning travel in a SwiftUI app](../swiftui/wishlist-planning-travel-in-a-swiftui-app.md)
   Build a travel planning app that organizes trips into collections and tracks activity completion.
 - [Working with content from your Mac app using Spatial Preview](../spatialpreview/working-with-content-from-your-mac-app-using-spatial-preview.md)
-  Send and update documents, and work with 3D content live from your macOS app to a visionOS device through the Spatial Preview framework.
+  Send and update documents, and work with 3D content live from your Mac app to a visionOS device.
 ### Accelerate
 - [Adding a bokeh effect to images](../accelerate/adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
@@ -784,7 +784,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Bringing Photos picker to your SwiftUI app](../photokit/bringing-photos-picker-to-your-swiftui-app.md)
   Select media assets by using a Photos picker view that SwiftUI provides.
 - [Browsing and Modifying Photo Albums](../photokit/browsing-and-modifying-photo-albums.md)
-  Help users organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
+  Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
 - [Building a guessing game for visionOS](../groupactivities/building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
 - [Capturing screen content in macOS](../screencapturekit/capturing-screen-content-in-macos.md)
@@ -910,6 +910,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use C++ APIs in Swift – and Swift APIs in C++ – in a single framework target, and consume the framework’s APIs in a separate app target.
 - [Updating an app to use strict concurrency](../swift/updating-an-app-to-use-strict-concurrency.md)
   Use this code to follow along with a guide to migrating your code to take advantage of the full concurrency protection that the Swift 6 language mode provides.
+- [Updating an app to use Swift concurrency](../swift/updating-an-app-to-use-swift-concurrency.md)
+  Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 ### SwiftUI
 - [Add rich graphics to your SwiftUI app](../swiftui/add-rich-graphics-to-your-swiftui-app.md)
   Make your apps stand out by adding background materials, vibrancy, custom graphics, and animations.

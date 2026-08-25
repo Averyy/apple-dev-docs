@@ -27,7 +27,7 @@ You must obtain exclusive access to the device by calling [`lockForConfiguration
 
 You can set this property only to formats present in the active format’s [`supportedDepthDataFormats`](avcapturedevice/format/supporteddepthdataformats.md) array. Attempting to set an unsupported format throws an exception.
 
-You can’t set the frame rate of depth data directly. Instead, the system synchronizes the depth data frame rate to the device’s [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md) and [`activeVideoMaxFrameDuration`](avcapturedevice/activevideomaxframeduration.md) values. It may match the device’s current frame rate, or lower, if the system can’t produce depth data fast enough for the active video frame rate.
+You can’t set the frame rate of depth data directly. Instead, the system synchronizes the depth data frame rate to the device’s [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md) and [`activeVideoMaxFrameDuration`](avcapturedevice/activevideomaxframeduration.md) values. It may match the device’s current frame rate, or lower, if the system can’t produce depth data fast enough for the active video frame rate. To receive depth data less often than video, set an upper limit on its frame rate with [`activeDepthDataMinFrameDuration`](avcapturedevice/activedepthdataminframeduration.md).
 
 Delivery of depth data to a [`AVCaptureDepthDataOutput`](avcapturedepthdataoutput.md) may increase the system load, resulting in a reduced video frame rate for thermal sustainability.
 

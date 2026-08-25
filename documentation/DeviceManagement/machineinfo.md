@@ -35,7 +35,7 @@ This dictionary is CMS-signed with the device identity certificate. The system i
 - `LANGUAGE` (string): The user’s currently-selected language, for example, `en`.
 - `MANDATORY_SOFTWARE_UPDATE_REQUIRED` (boolean): If `true`, indicates that the device requires a mandatory software update during Setup Assistant. The MDM server can return a 403 with a [`ErrorCodeSoftwareUpdateRequired`](errorcodesoftwareupdaterequired.md) error to force the device to update to a specific version instead of the device choosing a version. Available: macOS 26.1+
 - `MDM_CAN_REQUEST_PSSO_CONFIG` (boolean): If `true`, indicates that the server can trigger the device to do a required Platform SSO authentication before enrolling. Available: macOS 26+
-- `MDM_CAN_REQUEST_SOFTWARE_UPDATE` (boolean): If `true`, indicates that the server can trigger the device to do a required software update. Available: iOS 17+ | iPadOS 17+ | macOS 14+
+- `MDM_CAN_REQUEST_SOFTWARE_UPDATE` (boolean): If `true`, indicates that the server can trigger the device to do a required software update. Available: iOS 17+ | iPadOS 17+ | macOS 14+ | visionOS 26+
 - `MEID` (string): The device’s MEID (if available). Available: iOS 7+ | iPadOS 7+ | watchOS 10+
 - `OS_VERSION` (string) *(required)*: The OS version installed on the device, for example, 17.0. Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 - `PAIRING_TOKEN` (data): The pairing token to validate when a watch is enrolling. Available: watchOS 10+

@@ -8,8 +8,6 @@ Detects when you access a C++ container outside its bounds.
 
 Use this check to detect when you access a libc++ container beyond the region `[container.begin(), container.end()]`, even when the accessed memory is in a heap-allocated buffer the container uses internally. Available in Xcode 7 and later.
 
-> **Note**: This check is enabled by default. In Xcode versions prior to version 26, it was disabled by default. See [`Disabling Container Overflow Checks`](overflow-of-c-containers#Disabling-Container-Overflow-Checks.md) to disable it.
-
 ##### Vector Overflow in C++
 
 In the following example, the `vector` variable has valid indexes in the range `[0,2]`, but the accessed index is `3`, which causes an overflow:
@@ -29,9 +27,9 @@ Add a bounds check before attempting to access a container at a specific index.
 
 ##### Disabling Container Overflow Checks
 
-> **Note**: The [`Enable C++ Container Overflow Checks`](build-settings-reference#Enable-C++-Container-Overflow-Checks.md) build setting no longer has any effect in Xcode 26 onwards.
-
 You may encounter a false-positive ‘Container overflow’ error when code that isn’t compiled with Address Sanitizer modifies a container. For container overflow checks to work correctly, you need to compile all code with Address Sanitizer. If you can’t do this, turn off container overflow checks using one of the following methods:
+
+Set the [`Enable C++ Container Overflow Checks`](build-settings-reference#Enable-C++-Container-Overflow-Checks.md) build setting to ‘NO’.
 
 - **Set the ASAN_OPTIONS Environment Variable**: Set the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0`, or append `:detect_container_overflow=0` to this environment variable if it has already been set. You should do this under the Scheme for Run targets, or Configurations for Test Plans. Note that for UI tests you may need to set this in the XCUIApplication [`launchEnvironment`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/launchenvironment).
 - **Define the __asan_default_options function in your executable**: Use this method when you can’t control your program’s environment variables. Disable container overflow checks by defining the following function in your executable:

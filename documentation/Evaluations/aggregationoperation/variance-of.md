@@ -12,12 +12,17 @@ The variance of the metric’s values.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case variance(of: Metric)
 ```
+
+## Parameters
+
+- `of`: The metric for which the model computes the variance.
 
 
 ---

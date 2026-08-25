@@ -57,7 +57,9 @@ Only AppKit-based apps on macOS support this feature.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### App Privacy Examples
+##### Configuration Examples
+
+###### App Privacy Examples
 
 **Allow various permission defaults for several apps in iOS**:
 
@@ -117,6 +119,270 @@ This configuration sets various privacy permission defaults for several apps.
 }
 ```
 
+###### App Settings Allowlist Examples
+
+**Allow apps by code directory hash**:
+
+This configuration allows an app with a specific code directory hash to run on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B5",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC193F",
+    "Payload": {
+        "Allowed": {
+            "AllowedBinaries": [
+                {
+                    "CDHash": "90bc96cd95be55c12e7d9b1611cbc677610bb70c"
+                }
+            ]
+        }
+    }
+}
+```
+
+**Allow apps by team ID**:
+
+This configuration allows any app with a specific team ID to run on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4BA",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC1944",
+    "Payload": {
+        "Allowed": {
+            "AllowedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX"
+                }
+            ]
+        }
+    }
+}
+```
+
+**Complex rules in an allowlist**:
+
+This configuration allows any app that matches a set of complex rules to run on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B7",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC1941",
+    "Payload": {
+        "Allowed": {
+            "AllowedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX",
+                    "CDHash": "90bc96cd95be55c12e7d9b1611cbc677610bb70c",
+                    "SigningID": "com.example.app",
+                    "PathPrefix": "/Applications/Example.app",
+                    "SigningState": "All"
+                }
+            ]
+        }
+    }
+}
+```
+
+###### App Settings Denylist Examples
+
+**Deny apps by code directory hash**:
+
+This configuration prevents an app with a specific code directory hash from running on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B6",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC1940",
+    "Payload": {
+        "Allowed": {
+            "DeniedBinaries": [
+                {
+                    "CDHash": "90bc96cd95be55c12e7d9b1611cbc677610bb70c"
+                }
+            ]
+        }
+    }
+}
+```
+
+**Deny apps by team ID**:
+
+This configuration prevents any app with a specific team ID from running on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4BB",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC1945",
+    "Payload": {
+        "Allowed": {
+            "DeniedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX"
+                }
+            ]
+        }
+    }
+}
+```
+
+**Deny apps by signing ID**:
+
+This configuration prevents any app with a specific signing ID from running on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B9",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC1943",
+    "Payload": {
+        "Allowed": {
+            "DeniedBinaries": [
+                {
+                    "SigningID": "com.example.app"
+                }
+            ]
+        }
+    }
+}
+```
+
+**Complex rules in a denylist**:
+
+This configuration prevents any app that matches a set of complex rules from running on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B8",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC1942",
+    "Payload": {
+        "Allowed": {
+            "DeniedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX",
+                    "CDHash": "90bc96cd95be55c12e7d9b1611cbc677610bb70c",
+                    "SigningID": "com.example.app",
+                    "PathPrefix": "/Applications/Example.app",
+                    "SigningState": "All"
+                }
+            ]
+        }
+    }
+}
+```
+
+###### App Settings Allowlist and Denylist Examples
+
+This configuration allows one set of apps to run, and prevents ome other apps that would otherwise be allowed from running.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B3",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC193D",
+    "Payload": {
+        "Allowed": {
+            "AllowedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX",
+                    "CDHash": "90bc96cd95be55c12e7d9b1611cbc677610bb70c",
+                    "SigningID": "com.example.app",
+                    "PathPrefix": "/Applications/Example.app",
+                    "SigningState": "All"
+                },
+                {
+                    "TeamID": "*APPLE*",
+                    "SigningID": "com.apple.iCal"
+                }
+            ],
+            "DeniedBinaries": [
+                {
+                    "SigningID": "com.apple.iCal"
+                },
+                {
+                    "CDHash": "03552d8140254d0c190af06f1e470dbc5ded53ba"
+                }
+            ]
+        }
+    }
+}
+```
+
+###### App Settings Managed Apps Examples
+
+This configuration always allows all managed apps and one other app to run on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B4",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC193E",
+    "Payload": {
+        "Allowed": {
+            "AlwaysAllowManagedApps": true,
+            "AllowedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX",
+                    "SigningID": "com.example.app"
+                }
+            ]
+        }
+    }
+}
+```
+
+###### App Settings Webclips Examples
+
+**Allow WebClips on macOS**:
+
+This configuration allows only WebClips to be run on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B1",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC193B",
+    "Payload": {
+        "Allowed": {
+            "AllowedBinaries": [
+                {
+                    "TeamID": "*APPLE*",
+                    "SigningID": "com.apple.Safari.WebApp"
+                }
+            ]
+        }
+    }
+}
+```
+
+**Deny WebClips on macOS**:
+
+This configuration prevents all WebClips from running on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B2",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC193C",
+    "Payload": {
+        "Allowed": {
+            "DeniedBinaries": [
+                {
+                    "SigningID": "com.apple.Safari.WebApp"
+                }
+            ]
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
@@ -133,6 +399,8 @@ Allowed scopes: iOS: system | macOS: user
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -161,8 +429,6 @@ Allowed scopes: iOS: system | macOS: user
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
 
 
 ---

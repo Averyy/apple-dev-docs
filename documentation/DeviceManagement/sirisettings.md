@@ -63,10 +63,12 @@ This configuration restricts Siri features.
 - `AllowWhileLocked` (boolean): If `false`, disables Siri while locked. Available: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
 - `Enabled` (boolean): If `false`, disables Siri. Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | tvOS 27+ | visionOS 26.4+
 - `ForceProfanityFilter` (boolean): If `true`, forces Siri profanity filter. Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
-- `ForceReduceSensitiveContent` (boolean): If `true`, forces Siri to reduce sensitive content. Available: iOS 27+ | iPadOS 27+ | macOS 27+
+- `ForceReduceSensitiveContent` (boolean): If `true`, forces Siri to reduce sensitive content. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -95,8 +97,6 @@ This configuration restricts Siri features.
   The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
-- [object IntelligenceSettings](intelligencesettings.md)
-  The declaration to configure Apple Intelligence settings.
 
 
 ---

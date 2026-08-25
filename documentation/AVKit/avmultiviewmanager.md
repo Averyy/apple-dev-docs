@@ -23,7 +23,7 @@ Watch multiple videos at the same time with [`AVExperienceController.Experience.
 
 ### Accessing the default instance
 - [static var `default`: AVMultiviewManager](avmultiviewmanager/default.md)
-  Use this default AVMultiviewManager to customize the multiview experience.
+  The default multiview manager.
 ### Providing additional UI
 - [var contentSelectionViewController: AVContentSelectionViewController?](avmultiviewmanager/contentselectionviewcontroller.md)
   A view controller that presents a user interface to select additional video content to display.
@@ -31,7 +31,7 @@ Watch multiple videos at the same time with [`AVExperienceController.Experience.
   A view controller for providing additional UI to the multiview experience.
 ### Dismissing the multiview experience
 - [func dismiss()](avmultiviewmanager/dismiss.md)
-  Dismiss the multiview presentation.
+  Dismisses the multiview presentation.
 
 ## Relationships
 
@@ -58,9 +58,9 @@ Watch multiple videos at the same time with [`AVExperienceController.Experience.
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
 - [class AVViewport](avviewport.md)
-  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+  An object that provides configuration options for how the player displays content in different viewing contexts.
 - [class AVPortalViewport](avportalviewport.md)
-  Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
+  An object that defines the visual parameters for content displayed within a portal frame.
 - [Third-party casting support](third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.
 

@@ -12,6 +12,7 @@ Returns the evaluation results as JSON data.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -32,6 +33,17 @@ The data contains sections for summary, results, metadata, and optionally report
 - `includeReportMetadata`: Whether to include report metadata. Defaults to `false`.
 - `includeTranscripts`: Whether to encode each row’s transcript into the `Transcript` column as JSON. Defaults to `false` to keep file size small for runs that don’t need transcripts in the artifact.
 - `jsonOptions`: The writing options for the final JSON serialization. Defaults to `[.prettyPrinted, .sortedKeys]`.
+
+## See Also
+
+- [func saveJSON(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](evaluationresult/savejson(to:includereportmetadata:includetranscripts:).md)
+  Saves evaluation results to a single JSON file.
+- [static func loadJSON(from: URL) throws -> EvaluationResult](evaluationresult/loadjson(from:).md)
+  Loads an evaluation result from a JSON file on disk.
+- [static func loadJSONLines(from: URL) async throws -> [EvaluationResult]](evaluationresult/loadjsonlines(from:).md)
+  Loads an array of evaluation results from a JSONL file on disk.
+- [init(jsonData: Data) throws](evaluationresult/init(jsondata:).md)
+  Creates an evaluation result by parsing JSON data.
 
 
 ---

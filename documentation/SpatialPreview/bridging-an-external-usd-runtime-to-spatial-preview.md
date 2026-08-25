@@ -74,7 +74,7 @@ func reloadStage() {
 ## See Also
 
 - [Working with content from your Mac app using Spatial Preview](working-with-content-from-your-mac-app-using-spatial-preview.md)
-  Send and update documents, and work with 3D content live from your macOS app to a visionOS device through the Spatial Preview framework.
+  Send and update documents, and work with 3D content live from your Mac app to a visionOS device.
 
 
 ---

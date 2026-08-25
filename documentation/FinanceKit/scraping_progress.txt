@@ -1,4 +1,4 @@
 Completed scraping FinanceKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 183
+Total pages scraped: 1
+Pages skipped (unchanged): 182
 Pages failed: 0

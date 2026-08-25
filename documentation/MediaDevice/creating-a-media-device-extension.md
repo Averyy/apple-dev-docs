@@ -195,6 +195,12 @@ Report discovery events through [`routingManager(for:)`](mediadeviceroutingmanag
 - [`updateDevices(_:)`](mediadeviceroutingmanager/updatedevices(_:).md) — Refreshes the state of one or more devices after their properties change.
 - [`discoveryFailed(_:)`](mediadeviceroutingmanager/discoveryfailed(_:).md) — Reports an unexpected discovery failure. Don’t call this when no devices are found.
 
+The system caches the devices your extension reports so it can bring them up quickly in future sessions, like it does for AirPlay. When you call [`foundDevice(_:)`](mediadeviceroutingmanager/founddevice(_:).md), the system stores and associates the device’s details with both the current network and your extension.
+
+The next time someone opens the picker on the same network, the system uses the cache to surface those devices before your extension rediscovers them. Each time your extension reports a device with the same [`id`](mediaoutputdevice/id.md), the system refreshes the cached entry with the updated details. Devices that go several days without discovery drop out of the cache.
+
+Because of this caching, a device your extension hasn’t reported yet in the current session might appear in the picker. This is expected behavior, and the system removes the device if your extension calls [`lostDevice(_:)`](mediadeviceroutingmanager/lostdevice(_:).md) or the device isn’t found when the person picks it.
+
 #### Activate a Device
 
 When a person selects a device, the system calls [`activateDevice(_:session:for:)`](mediadeviceextension/activatedevice(_:session:for:).md). Connect to the device and report the result through [`routingManager(for:)`](mediadeviceroutingmanager/routingmanager(for:).md).
@@ -321,7 +327,7 @@ func stopSession(_ session: MediaOutputSession) {
 }
 ```
 
-The `playbackControl` parameter conforms to doc://com.apple.documentation/documentation/avkit/avinterfacecontrollable-1wpdy, which models the full playback state of the remote session. Update its properties to keep the system in sync as playback progresses: for example, `isPlaying`, `state`, `currentPlaybackPosition`, `playbackSpeed`, `timeRange`, and `metadata`.
+The `playbackControl` parameter conforms to doc://com.apple.documentation/documentation/AVKit/AVPlaybackUserInterfaceControllable, which models the full playback state of the remote session. Update its properties to keep the system in sync as playback progresses: for example, `isPlaying`, `state`, `currentPlaybackPosition`, `playbackSpeed`, `timeRange`, and `metadata`.
 
 The system observes these properties and drives the shared playback UI from them, including Now Playing, the media device picker, and any controls surfaced by media apps. The system also uses the object’s conformance to `AVInterfacePlaybackControllable` to deliver play, pause, and seek commands back to your extension.
 
@@ -330,13 +336,17 @@ The system observes these properties and drives the shared playback UI from them
 Some devices receive audio or video samples directly instead of fetching a URL. Real-time sample delivery is orthogonal to URL playback, and a device can support any combination of the two:
 
 - For devices that receive audio samples directly, set the device’s capabilities to include [`realtimeAudioStreaming`](mediaoutputdevice/capabilities-swift.struct/realtimeaudiostreaming.md). The system routes audio destined for that device through your extension.
-- For devices that receive video frames directly to support screen-mirroring, set the device’s capabilities to include [`realtimeVideoStreaming`](mediaoutputdevice/capabilities-swift.struct/realtimevideostreaming.md). The system routes screen frames to your extension only while screen mirroring is active.
+- For devices that receive video frames directly to support screen-mirroring, set the device’s capabilities to include [`realtimeVideoStreaming`](mediaoutputdevice/capabilities-swift.struct/realtimevideostreaming.md). The system routes screen frames to your extension only while screen mirroring is active. A device that supports real-time video streaming must also support real-time audio streaming, so include [`realtimeAudioStreaming`](mediaoutputdevice/capabilities-swift.struct/realtimeaudiostreaming.md) in its capabilities as well.
 
 Ensure your extension class conforms to [`RealtimeSampleHandling`](realtimesamplehandling.md). The system calls [`startRealtimeSampleDelivery(session:)`](realtimesamplehandling/startrealtimesampledelivery(session:).md) when samples start flowing, and [`stopRealtimeSampleDelivery(session:)`](realtimesamplehandling/stoprealtimesampledelivery(session:).md) to stop them.
 
+Whether you stream audio or mirror the screen, your extension must publish an audio server driver plug-in when the system activates the device. Build it by following [`Creating an Audio Server Driver Plug-in`](https://developer.apple.com/documentation/coreaudio/creating-an-audio-server-driver-plug-in), then publish it from [`startRealtimeSampleDelivery(session:)`](realtimesamplehandling/startrealtimesampledelivery(session:).md) by calling `AudioServerPlugInRegisterMediaDeviceExtension`. The plug-in must present a single output device whose unique identifier matches the device’s [`id`](mediaoutputdevice/id.md) and whose transport type is `kAudioDeviceTransportTypeRemoteScreen` for screen mirroring or `kAudioDeviceTransportTypeRemoteStreaming` for audio streaming.
+
+> ❗ **Important**: The audio device must appear promptly upon activation, or the system deactivates your device and playback fails with an “Unable to Connect” message.
+
 To capture the samples themselves, use the appropriate system framework:
 
-- For audio, use [`AudioDriverKit`](https://developer.apple.com/documentation/audiodriverkit/audiodriverkit) to receive system audio, then [`Audio Toolbox`](https://developer.apple.com/documentation/audiotoolbox) to encode it.
+- For audio, receive the system audio through the audio server driver plug-in you publish (its I/O callbacks deliver the mixed audio), then use [`Audio Toolbox`](https://developer.apple.com/documentation/audiotoolbox) to encode it.
 - For video, use [`ScreenCaptureKit`](https://developer.apple.com/documentation/screencapturekit) to receive system video, then [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) to encode it.
 
 ```swift

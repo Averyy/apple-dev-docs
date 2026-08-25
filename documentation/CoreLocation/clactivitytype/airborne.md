@@ -26,12 +26,14 @@ Use this activity type for activities such as flying in an airplane or helicopte
 
 ## See Also
 
-- [CLActivityType.other](clactivitytype/other.md)
-  The value that indicates the app is using location manager for an unspecified activity.
 - [CLActivityType.automotiveNavigation](clactivitytype/automotivenavigation.md)
   The value that indicates positioning in an automobile following a road network.
 - [CLActivityType.fitness](clactivitytype/fitness.md)
   The value that indicates positioning during dedicated fitness sessions, such as walking workouts, running workouts, cycling workouts, and so on.
+- [CLActivityType.maritime](clactivitytype/maritime.md)
+  The value that indicates positioning for activities in vessels on water, including while anchored.
+- [CLActivityType.other](clactivitytype/other.md)
+  The value that indicates the app is using location manager for an unspecified activity.
 - [CLActivityType.otherNavigation](clactivitytype/othernavigation.md)
   The value that indicates positioning for activities that don’t or may not adhere to roads such as cycling, scooters, trains, boats and off-road vehicles.
 

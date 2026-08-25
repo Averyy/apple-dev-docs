@@ -19,7 +19,7 @@ var metadata: [String : Any] { get set }
 
 #### Discussion
 
-The capture output automatically writes metadata including image orientation, EXIF camera properties, and Live Photo metadata, but you can override those values or specify additional metadata using the keys and values listed in `CGImageProperties`. (Setting this property with any other keys raises an exception.)
+The capture output automatically writes metadata including image orientation, Exif camera properties, and Live Photo metadata, but you can override those values or specify additional metadata using the keys and values listed in `CGImageProperties`. (Setting this property with any other keys raises an exception.)
 
 
 ---

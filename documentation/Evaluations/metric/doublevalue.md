@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-The numeric value of this metric, or `nil` for ignored metrics.
+The numeric value of this metric.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ The numeric value of this metric, or `nil` for ignored metrics.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,9 +22,9 @@ var doubleValue: Double? { get }
 
 #### Discussion
 
-- `pass` → `1.0`
-- `fail` → `0.0`
-- `score(x)` → `x`
+- `passing` → `1.0`
+- `failing` → `0.0`
+- `scoring(x)` → `x`
 - `ignore` → `nil`
 
 ## See Also

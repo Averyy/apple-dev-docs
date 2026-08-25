@@ -3,7 +3,7 @@
 **Framework**: Security  
 **Kind**: var
 
-Specifies an item should be stored in the device’s Secure Enclave.
+Specifies an item should be protected by the device’s Secure Enclave.
 
 **Availability**:
 - iOS 9.0+
@@ -26,9 +26,7 @@ let kSecAttrTokenIDSecureEnclave: CFString
 
 #### Discussion
 
-The only keychain items supported by the Secure Enclave are 256-bit elliptic curve private keys (those that have key type [`kSecAttrKeyTypeEC`](ksecattrkeytypeec.md)). Such keys must be generated directly on the Secure Enclave using the [`SecKeyGeneratePair(_:_:_:)`](seckeygeneratepair(_:_:_:).md) function with the [`kSecAttrTokenID`](ksecattrtokenid.md) key set to [`kSecAttrTokenIDSecureEnclave`](ksecattrtokenidsecureenclave.md) in the parameters dictionary.
-
-> ❗ **Important**:  It is not possible to import pre-existing keys into the Secure Enclave.
+To generate a new key that’s protected by the Secure Enclave, call [`SecKeyGeneratePair(_:_:_:)`](seckeygeneratepair(_:_:_:).md), setting the [`kSecAttrTokenID`](ksecattrtokenid.md) key in the parameters dictionary to [`kSecAttrTokenIDSecureEnclave`](ksecattrtokenidsecureenclave.md). For an example, see [`Protecting keys with the Secure Enclave`](protecting-keys-with-the-secure-enclave.md).
 
 
 ---

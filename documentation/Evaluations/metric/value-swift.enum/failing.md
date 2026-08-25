@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: case
 
-A negative/failing result.
+A failing result.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ A negative/failing result.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

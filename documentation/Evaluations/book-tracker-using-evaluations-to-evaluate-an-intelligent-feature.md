@@ -21,21 +21,21 @@ Book Tracker is a SwiftUI app for cataloging books and the reviews you write abo
 
 ![A side-by-side view of the Book Tracker app. The library screen shows a grid of book covers, and the book details screen shows generated tags above a written review.](/images/com.apple.evaluations/library-and-details@2x.png)
 
-This sample evaluates both of Book Tracker’s intelligent features. It builds a complete evaluation for the book-tagging feature, then assesses the app’s synthetic data generation, model-as-judge calibration, and tool-call evaluation:
+This sample evaluates both of Book Tracker’s intelligent features. It builds a complete evaluation for the book-tagging feature, then assesses the app’s synthetic data generation, model-judge calibration, and tool-call evaluation:
 
 - Apply code-based checks to the generated tags to test: number of tags, genre presence, and number of words.
-- Use a model as judge to score usefulness and accuracy of the tags.
+- Use a model judge to score usefulness and accuracy of the tags.
 - Grow the small dataset into a larger one using synthetic data generation.
-- Calibrate the model as judge against a human expert so you can trust its scores as you iterate on a prompt.
+- Calibrate the model judge against a human expert so you can trust its scores as you iterate on a prompt.
 - Evaluate the search assistant’s tool calls against expected tool-calling trajectories.
 
 For more information about the concepts behind this workflow, see [`Designing effective evaluations`](designing-effective-evaluations.md). This article focuses on the code that puts these concepts to work.
 
 > **Note**: This sample code project is associated with WWDC26 session 298: [`Meet the Evaluations framework`](https://developer.apple.comhttps://developer.apple.com/wwdc26/298/), session 335: [`Improve your prompts by hill-climbing with Evaluations`](https://developer.apple.comhttps://developer.apple.com/wwdc26/335/), and session 299: [`Create robust evaluations for agentic apps`](https://developer.apple.comhttps://developer.apple.com/wwdc26/299/).
 
-The diagram below shows the evaluation pipeline that this sample builds. A dataset of reviews flows through the book-tagging feature, both code-based evaluators and a model as judge score the generated tags, and the combined results produce a pass-or-fail report. The model as judge is calibrated to match a human expert’s scores.
+The diagram below shows the evaluation pipeline that this sample builds. A dataset of reviews flows through the book-tagging feature, both code-based evaluators and a model judge score the generated tags, and the combined results produce a pass-or-fail report. The model judge is calibrated to match a human expert’s scores.
 
-![A flowchart of the sample’s evaluation pipeline. A dataset of reviews and expected tags feeds the book-tagging feature, which produces generated tags. The tags flow in parallel to code-based evaluators and to a model as judge, whose results combine in a metrics aggregator that produces a pass-or-fail report. A dashed loop calibrates the model as judge against expert scores.](/images/com.apple.evaluations/flowchart@2x.png)
+![A flowchart of the sample’s evaluation pipeline. A dataset of reviews and expected tags feeds the book-tagging feature, which produces generated tags. The tags flow in parallel to code-based evaluators and to a model judge, whose results combine in a metrics aggregator that produces a pass-or-fail report. A dashed loop calibrates the model judge against expert scores.](/images/com.apple.evaluations/flowchart@2x.png)
 
 #### Configure the Sample Code Project
 
@@ -274,11 +274,11 @@ ModelJudgeEvaluator(
 )
 ```
 
-For the full range of model-as-judge options, including pairwise comparison and scored examples, see [`Scoring with model-as-judge evaluators`](scoring-with-model-as-judge-evaluators.md). For strategies that make a model as judge reliable, see [`Designing effective model-as-judge evaluators`](designing-effective-model-judges.md).
+For the full range of model-judge options, including pairwise comparison and scored examples, see [`Scoring with model-judge evaluators`](scoring-with-model-as-judge-evaluators.md). For strategies that make a model judge reliable, see [`Designing effective model-judge evaluators`](designing-effective-model-judges.md).
 
 #### Run the Evaluation and Read Results
 
-The sample’s evaluation aggregates its metrics by building up a [`MetricsAggregator`](metricsaggregator.md) in `aggregateMetrics(using:)`. Grouping the code-based heuristics separately from the model-as-judge quality scores keeps the results organized logically:
+The sample’s evaluation aggregates its metrics by building up a [`MetricsAggregator`](metricsaggregator.md) in `aggregateMetrics(using:)`. Grouping the code-based heuristics separately from the model-judge quality scores keeps the results organized logically:
 
 ```swift
 func aggregateMetrics(using aggregator: inout MetricsAggregator) {
@@ -309,7 +309,7 @@ func evaluateBookTagging() async throws {
 
 In the sample’s evaluation, the threshold for the `tagCount` metric requires at least 80 percent of the runs to produce a valid tag count. An intelligence feature that can’t reliably return the right number of tags fails. Xcode records the results and presents them in detail:
 
-![The Xcode test report summary for the Book Tracker tag evaluation. Metric cards report the code-based heuristics, including Has Genre Tag Ratio, Tag Count Ratio, and the tag-total average, variance, and standard deviation, alongside the model-as-judge Relevance and Usefulness averages.](/images/com.apple.evaluations/heuristics-and-quality-metric-groups@2x.png)
+![The Xcode test report summary for the Book Tracker tag evaluation. Metric cards report the code-based heuristics, including Has Genre Tag Ratio, Tag Count Ratio, and the tag-total average, variance, and standard deviation, alongside the model-judge Relevance and Usefulness averages.](/images/com.apple.evaluations/heuristics-and-quality-metric-groups@2x.png)
 
 #### Scale Coverage with Synthetic Data
 
@@ -338,11 +338,11 @@ for try await sample in generator.run() {
 
 The tool writes the expanded set to `synthetic_book_samples.json`, and `SyntheticBookTaggingEvaluation` loads it with a [`JSONLoader`](jsonloader.md) to run the same metrics against the larger dataset. For the validation and sampling options, see [`Generating synthetic datasets`](generating-synthetic-evaluation-datasets.md).
 
-#### Calibrate the Model As Judge Against an Expert
+#### Calibrate the Model Judge Against an Expert
 
-You can improve the quality of a model-as-judge’s scores for subjective quality evaluation by calibrating the scoring against a human expert. In the sample, `BookTagJudgmentCalibration` checks how closely the model as judge agrees with a set of human scores. The `DatasetExtractor` tool exports a real evaluation run to JSON, an expert scores those same tag sets by hand, and the calibration evaluation re-judges them and compares the two sets of scores.
+You can improve the quality of a model-judge’s scores for subjective quality evaluation by calibrating the scoring against a human expert. In the sample, `BookTagJudgmentCalibration` checks how closely the model judge agrees with a set of human scores. The `DatasetExtractor` tool exports a real evaluation run to JSON, an expert scores those same tag sets by hand, and the calibration evaluation re-judges them and compares the two sets of scores.
 
-Adding examples to the model-as-judge prompt can help it match the human scores:
+Adding examples to the model-judge prompt can help it match the human scores:
 
 ```swift
 prompt: ModelJudgePrompt(
@@ -416,9 +416,9 @@ prompt: ModelJudgePrompt(
         """,
 ```
 
-The prompt uses only a handful of examples on purpose. A longer list might teach the model as judge to echo those specific cases and overfit the alignment score, and hide whether the model as judge truly agrees with the expert on tag sets it has not seen.
+The prompt uses only a handful of examples on purpose. A longer list might teach the model judge to echo those specific cases and overfit the alignment score, and hide whether the model judge truly agrees with the expert on tag sets it has not seen.
 
-The aggregator reports agreement as a custom metric. For each dimension, it computes Cohen’s kappa between the human expert’s scores and the model as judge’s. Kappa is a better fit than plain percent agreement here because a four-point scale produces some agreement by chance; the kappa calculation accounts for that chance agreement, so a high Cohen’s kappa score reflects real alignment rather than two raters both drifting to the middle of the scale. The test requires a score above a threshold:
+The aggregator reports agreement as a custom metric. For each dimension, it computes Cohen’s kappa between the human expert’s scores and the model judge’s. Kappa is a better fit than plain percent agreement here because a four-point scale produces some agreement by chance; the kappa calculation accounts for that chance agreement, so a high Cohen’s kappa score reflects real alignment rather than two raters both drifting to the middle of the scale. The test requires a score above a threshold:
 
 ```swift
 aggregator.group("Relevance") { group in
@@ -436,7 +436,7 @@ aggregator.group("Relevance") { group in
 
 ![The Xcode test report showing the Judge Calibration test failing. The Relevance Alignment Score is -0.037, well below the required 0.6, so the assertion fails and the judge isn’t yet calibrated against the expert.](/images/com.apple.evaluations/alignment-fail@2x.png)
 
-In the sample, the test requires a Cohen’s kappa above 0.6 on both the relevance and usefulness dimensions. If the test fails, the next step is to revise the model-as-judge’s instructions, often by adding a worked example that covers the disagreement, and run again until the model as judge aligns with human scoring.
+In the sample, the test requires a Cohen’s kappa above 0.6 on both the relevance and usefulness dimensions. If the test fails, the next step is to revise the model-judge’s instructions, often by adding a worked example that covers the disagreement, and run again until the model judge aligns with human scoring.
 
 #### Evaluate the Assistants Tool Calls
 
@@ -503,11 +503,11 @@ var evaluators: Evaluators {
 
 For the full set of argument matchers and trajectory options, see [`Evaluating tool-calling behavior`](evaluating-tool-calling-behavior.md).
 
-This evaluation checks which tools the assistant calls, in what order, and with what arguments. It doesn’t score the quality of the answers the assistant produces from those tool results. A production app also evaluates the generated answers, scoring them for qualities like relevance and groundedness with the same code-based and model-as-judge techniques this sample applies to tags.
+This evaluation checks which tools the assistant calls, in what order, and with what arguments. It doesn’t score the quality of the answers the assistant produces from those tool results. A production app also evaluates the generated answers, scoring them for qualities like relevance and groundedness with the same code-based and model-judge techniques this sample applies to tags.
 
 ![The Xcode test report for the search-tool evaluation. An All Passed column marks each prompt with a pass or fail, and a Percentage Passed column reports the share of expected tool calls each prompt matched, with All Passed Ratio and Percentage Passed Average summarized above.](/images/com.apple.evaluations/search-tools-per-sample@2x.png)
 
-Both of Book Tracker’s intelligent features now have a measurable quality check: the sample scores tags with code and a calibrated model as judge, and it measures search against expected tool trajectories. Every change to a prompt, a model, or a tool runs against those evaluations, tracking statistics and failing the test suite when quality regresses. This systematic evaluation turns subjective impressions into evidence you can act on, and makes each round of improvement verifiable before release.
+Both of Book Tracker’s intelligent features now have a measurable quality check: the sample scores tags with code and a calibrated model judge, and it measures search against expected tool trajectories. Every change to a prompt, a model, or a tool runs against those evaluations, tracking statistics and failing the test suite when quality regresses. This systematic evaluation turns subjective impressions into evidence you can act on, and makes each round of improvement verifiable before release.
 
 ## See Also
 

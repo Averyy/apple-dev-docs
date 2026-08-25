@@ -29,7 +29,7 @@ The view controller ignores this property when [`playbackControlsIncludeTranspor
 - [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
   A Boolean value that indicates whether the player shows the transport bar and related controls.
 - [var playbackControlsIncludeInfoViews: Bool](avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
-  A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when the user requests them.
+  A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when someone requests them.
 - [var transportBarCustomMenuItems: [UIMenuElement]](avplayerviewcontroller/transportbarcustommenuitems.md)
   An array of actions and menus to display with the default player controls.
 - [var customInfoViewControllers: [UIViewController]](avplayerviewcontroller/custominfoviewcontrollers.md)

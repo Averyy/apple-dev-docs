@@ -10,7 +10,7 @@ You can explore and experiment with your code using playgrounds that you add dir
 
 ![A screenshot showing the Project navigator on the left, a SwiftUI file open in the source editor in the middle containing a playground and a preview, and the canvas on the right showing the results of the playground.](/images/com.apple.Xcode/running-playgrounds-canvas-output@2x.png)
 
-> 💡 **Tip**: Previews that you add to SwiftUI files also appear in the canvas. For information on adding previews, see [`Previewing your app’s interface in Xcode`](previewing-your-apps-interface-in-xcode.md).
+> 💡 **Tip**: Previews that you add to SwiftUI files also appear in the canvas. For information on previews, see [`Adding previews to your interface files`](adding-previews-to-your-interface-files.md).
 
 ##### Add Playgrounds to Your Swift Files
 

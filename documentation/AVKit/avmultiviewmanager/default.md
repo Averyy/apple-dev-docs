@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: property
 
-Use this default AVMultiviewManager to customize the multiview experience.
+The default multiview manager.
 
 **Availability**:
 - visionOS 2.0+
@@ -14,6 +14,10 @@ Use this default AVMultiviewManager to customize the multiview experience.
 @MainActor
 static var `default`: AVMultiviewManager { get }
 ```
+
+#### Discussion
+
+Use this manager to customize the multiview experience.
 
 
 ---

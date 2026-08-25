@@ -29,7 +29,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataLivePhotoStillImageTransformReference
 - [let kCMMetadataIdentifier_QuickTimeMetadataPreferredAffineTransform: CFString](kcmmetadataidentifier_quicktimemetadatapreferredaffinetransform.md)
   An affine transform to be applied to a video track.
 - [let kCMMetadataIdentifier_QuickTimeMetadataVideoOrientation: CFString](kcmmetadataidentifier_quicktimemetadatavideoorientation.md)
-  Video orientation as defined by TIFF/EXIF.
+  Video orientation as defined by TIFF/Exif.
 - [let kCMMetadataIdentifier_QuickTimeMetadataLivePhotoStillImageTransform: CFString](kcmmetadataidentifier_quicktimemetadatalivephotostillimagetransform.md)
   A perspective transform you use to adjust a Live Photo still image to match the Live Photo movie.
 

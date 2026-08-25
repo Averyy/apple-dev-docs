@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: case
 
-The model-as-judge’s response is missing a required scoring dimension.
+The model judge’s response is missing a required scoring dimension. The first associated value is the name of the missing dimension.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,12 +12,17 @@ The model-as-judge’s response is missing a required scoring dimension.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case missingDimension(String, response: String)
 ```
+
+## Parameters
+
+- `response`: The raw response text from the model judge.
 
 
 ---

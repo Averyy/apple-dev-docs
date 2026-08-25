@@ -26,12 +26,6 @@ class func fromHTML(fileURL: URL, options: [NSAttributedString.DocumentReadingOp
 
 ## See Also
 
-- [init?(HTML: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object.
-- [init?(HTML: Data, baseURL: URL, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:baseurl:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object and base URL.
-- [init?(HTML: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:options:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object.
 - [class func loadFromHTML(request: URLRequest, options: [NSAttributedString.DocumentReadingOptionKey : Any], completionHandler: (NSAttributedString?, [NSAttributedString.DocumentAttributeKey : Any]?, (any Error)?) -> Void)](nsattributedstring/loadfromhtml(request:options:completionhandler:).md)
   Creates an attributed string by converting the contents of the specified HTML URL request.
 - [class func loadFromHTML(string: String, options: [NSAttributedString.DocumentReadingOptionKey : Any], completionHandler: (NSAttributedString?, [NSAttributedString.DocumentAttributeKey : Any]?, (any Error)?) -> Void)](nsattributedstring/loadfromhtml(string:options:completionhandler:).md)
@@ -40,6 +34,12 @@ class func fromHTML(fileURL: URL, options: [NSAttributedString.DocumentReadingOp
   Creates an attributed string from the specified HTML data.
 - [NSAttributedString.CompletionHandler](nsattributedstring/completionhandler.md)
   A completion handler for getting an asynchronous attributed string.
+- [init?(HTML: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object.
+- [init?(HTML: Data, baseURL: URL, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:baseurl:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object and base URL.
+- [init?(HTML: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:options:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object.
 
 
 ---

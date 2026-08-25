@@ -61,7 +61,7 @@ Specify `com.apple.asset.credential.identity` as the declaration type.
 - [object AssetCredentialACME](assetcredentialacme.md)
   A reference to an ACME identity.
 - [object AssetCredentialCertificate](assetcredentialcertificate.md)
-  A reference to a PKCS #1 or PEM encoded certificate.
+  A reference to one PKCS #1 or PEM encoded certificate.
 - [object AssetCredentialSCEP](assetcredentialscep.md)
   A reference to a SCEP identity.
 - [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)

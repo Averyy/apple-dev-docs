@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
-A Boolean value that indicates whether the item can be fast forwarded.
+A Boolean value that indicates whether the item can play at fast-forward rates.
 
 **Availability**:
 - iOS 5.0+
@@ -23,7 +23,7 @@ var canPlayFastForward: Bool { get }
 
 #### Discussion
 
-An item can be fast forwarded if its rate can be greater than `1.0`.
+This property is `true` when an item can play at rates greater than `2.0`. Every item with a status of [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md) plays at rates between `1.0` and `2.0`, inclusive, even when this property is `false`.
 
 ## See Also
 

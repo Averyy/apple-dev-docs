@@ -13,6 +13,7 @@ A short judge-facing label for this level.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ var label: String { get }
 
 #### Discussion
 
-Defaults to `String(describing: self)`, which for enums produces the case name.
+The default is `String(describing: self)`, which for enums produces the case name.
 
 
 ---

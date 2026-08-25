@@ -50,25 +50,25 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Page Title | Various | The name of the product page or in-app event page that led someone to download the app. Possible values include the name you set for your page in App Store Connect, default product page, no page, or null. |
 | Source Type | Web referrer | A person discovered your app or in-app event after browsing a website in Safari. |
 | Source Type | Unavailable | The source type is unavailable. |
-| Engagement Type | App Privacy details dialog modal close | A person closed the app privacy details dialog modal. |
-| Engagement Type | App Privacy details dialog modal open | A person opened the App Privacy details dialog modal. |
+| Engagement Type | App Privacy details modal close | A person closed the app privacy details dialog modal. |
+| Engagement Type | App Privacy details modal open | A person opened the App Privacy details dialog modal. |
 | Engagement Type | Learn more about App Privacy | A person tapped on “Learn More” under App Privacy, which links out to a “Learn More About App Privacy” page. |
-| Engagement Type | Customer review dialog modal close | A person closed a customer review dialog modal. |
-| Engagement Type | Customer review dialog modal open (“more”) | A person tapped on “more” to view an entire customer review. |
+| Engagement Type | Customer review modal close | A person closed a customer review dialog modal. |
+| Engagement Type | Customer review modal open (“more”) | A person tapped on “more” to view an entire customer review. |
 | Engagement Type | Developer event page | A person tapped on a link to the developer event page. |
 | Engagement Type | Developer preview page | A person tapped on the developer name hyperlink. |
 | Engagement Type | Developer privacy policy link | A person tapped on the link to the developer privacy policy page. |
 | Engagement Type | Developer website | A person tapped on the link to the developer website. |
-| Engagement Type | License Agreement dialog modal close | A person closed the License Agreement modal. |
-| Engagement Type | License Agreement dialog modal open | A person opened the License Agreement modal. |
+| Engagement Type | License Agreement modal close | A person closed the License Agreement modal. |
+| Engagement Type | License Agreement modal open | A person opened the License Agreement modal. |
 | Engagement Type | Other | A person tapped a link to a destination not covered in the above Engagement Types. |
 | Engagement Type | Privacy Definitions and Examples | A person tapped on “Privacy Definitions and Examples” in the App Privacy dialog modal. |
 | Engagement Type | Product screenshots expanded | A person tapped on the down arrow to view all screenshots by platform. |
 | Engagement Type | See all apps by developer | A person tapped on “See All” to view all apps by the developer. |
 | Engagement Type | Ratings & Reviews expanded | A person tapped on “See All” to view all ratings and reviews. |
 | Engagement Type | Story app | A person tapped on a link to “Story”. |
-| Engagement Type | Version History dialog modal close | A person closed the Version History dialog modal. |
-| Engagement Type | Version History dialog modal open | A person tapped on the “Version History” dialog modal. |
+| Engagement Type | Version History modal close | A person closed the Version History dialog modal. |
+| Engagement Type | Version History modal open | A person tapped on the “Version History” dialog modal. |
 | Engagement Type | View in Mac App Store | A person tapped on the “View” button on your app’s product page or in-app event page. |
 
 ## See Also

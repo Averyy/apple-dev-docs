@@ -22,10 +22,10 @@ object PrivacyPreferencesPolicyControl.Services
 
 ## Properties
 
-- `Accessibility` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for the app via the Accessibility subsystem. This profile deprecated its ability to grant access as of macOS 26.2, and removes that ability in macOS 27.0. Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration. Deprecated: macOS 27+
+- `Accessibility` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for the app via the Accessibility subsystem. In macOS 27.0, the device shows a non-blocking notification for each application when this setting is applied, and it allows the user to make changes to the setting in the System Settings app. Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app.settings` configuration. Deprecated: macOS 27+
 - `AddressBook` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for contact information managed by the Contacts.app.
 - `AppleEvents` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for the app sending restricted AppleEvents to another process.
-- `BluetoothAlways` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for the app to access Bluetooth devices. Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration. Available: macOS 11+
+- `BluetoothAlways` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for the app to access Bluetooth devices. Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app.settings` configuration. Available: macOS 11+
 Deprecated: macOS 27+
 - `Calendar` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for calendar information managed by the Calendar.app.
 - `Camera` ([PrivacyPreferencesPolicyControl.Services.Identity]): A system camera. A profile can’t grant access to the camera; it can only deny it. Deprecated: macOS 27+
@@ -37,7 +37,7 @@ Deprecated: macOS 27+
 - `PostEvent` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for the application to use CoreGraphics APIs to send CGEvents to the system event stream.
 - `Reminders` ([PrivacyPreferencesPolicyControl.Services.Identity]): Specifies the policies for reminders information managed by the Reminders app.
 - `ScreenCapture` ([PrivacyPreferencesPolicyControl.Services.Identity]): Allows the application to capture (read) the contents of the system display. A profile can’t grant access to the contents; it can only deny it. Available: macOS 10.15+
-- `SpeechRecognition` ([PrivacyPreferencesPolicyControl.Services.Identity]): Allows the application to use the system Speech Recognition facility and to send speech data to Apple. Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration. Available: macOS 10.15+
+- `SpeechRecognition` ([PrivacyPreferencesPolicyControl.Services.Identity]): Allows the application to use the system Speech Recognition facility and to send speech data to Apple. Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app.settings` configuration. Available: macOS 10.15+
 Deprecated: macOS 27+
 - `SystemPolicyAllFiles` ([PrivacyPreferencesPolicyControl.Services.Identity]): Allows the application access to all protected files, including system administration files.
 - `SystemPolicyAppBundles` ([PrivacyPreferencesPolicyControl.Services.Identity]): Allows the application to update or delete other apps. Available: macOS 13+

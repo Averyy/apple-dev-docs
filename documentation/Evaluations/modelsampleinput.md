@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: struct
 
-The data sent to a language model for evaluation.
+The data a language model receives for evaluation.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ The data sent to a language model for evaluation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,20 @@ struct ModelSampleInput
 
 #### Overview
 
-Stores FoundationModels types (`Prompt`, `Instructions`) and automatically synthesizes text representations for display, logging, and synthetic data.
+```swift
+@Generable
+struct WeatherAnswer {
+    let condition: String
+}
+
+let input = ModelSampleInput(
+    prompt: Prompt("What's the weather like in Cupertino?"),
+    instructions: Instructions("Respond with the weather condition only."),
+    generationSchema: GenerationSchema(type: WeatherAnswer.self, properties: [])
+)
+```
+
+synthesizes text representations for display, logging, and synthetic data.
 
 ## Topics
 
@@ -29,6 +43,8 @@ Stores FoundationModels types (`Prompt`, `Instructions`) and automatically synth
 - [init(prompt: Prompt, instructions: Instructions?, generationSchema: GenerationSchema?)](modelsampleinput/init(prompt:instructions:generationschema:).md)
   Creates a model sample input with the given prompt, instructions, and schema.
 ### Instance Properties
+- [var description: String](modelsampleinput/description.md)
+  A text representation of this input, equivalent to `promptDescription`.
 - [var generationSchema: GenerationSchema?](modelsampleinput/generationschema.md)
   The output schema for the assistant’s response.
 - [var instructions: Instructions?](modelsampleinput/instructions.md)

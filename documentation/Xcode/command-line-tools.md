@@ -8,8 +8,6 @@ Develop and customize your projects in Terminal.
 
 You can use command-line tools to perform some actions in Terminal without running Xcode. For example, you can develop your open source or cross-platform projects, notarize your macOS software, automate your builds, implement continuous integration, and apply specific settings to your projects.
 
-> **Note**: For more information on accessing the command-line tools documentation, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
-
 ## Topics
 
 ### Essentials

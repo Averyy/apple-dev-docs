@@ -33,7 +33,7 @@ See `Global Proxy Configuration` for more information about these dictionaries.
 ## See Also
 
 - [var httpMaximumConnectionsPerHost: Int](urlsessionconfiguration/httpmaximumconnectionsperhost.md)
-  The maximum number of simultaneous connections to make to a given host.
+  The maximum number of simultaneous HTTP/1.1 connections to make to a given host.
 - [var httpShouldUsePipelining: Bool](urlsessionconfiguration/httpshouldusepipelining.md)
   A Boolean value that determines whether the session should use HTTP pipelining.
 - [var proxyConfigurations: [ProxyConfiguration]](urlsessionconfiguration/proxyconfigurations.md)

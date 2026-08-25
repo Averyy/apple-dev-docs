@@ -16,7 +16,7 @@ To see a command-line generator that expands a curated dataset for a real featur
 
 #### Create Your Initial Dataset
 
-Start by creating your initial dataset of samples. For guidance on dataset design principles, including golden sets, user profiles, and challenge cases, see [`Designing datasets to test your feature`](designing-evaluation-datasets.md). Include an optional *expected* value as a benchmark if your evaluation compares model output against a known answer. For evaluations that score output without a reference answer, such as model-as-judge assessments of tone or fluency, omit the expected value and generate prompt-only samples.
+Start by creating your initial dataset of samples. For guidance on dataset design principles, including golden sets, user profiles, and challenge cases, see [`Designing datasets to test your feature`](designing-evaluation-datasets.md). Include an optional *expected* value as a benchmark if your evaluation compares model output against a known answer. For evaluations that score output without a reference answer, such as model-judge assessments of tone or fluency, omit the expected value and generate prompt-only samples.
 
 This example builds an initial dataset for an intelligence-powered feature that converts natural-language requests into structured task items, extracting a title, due date, category, and urgency level from each free text input:
 

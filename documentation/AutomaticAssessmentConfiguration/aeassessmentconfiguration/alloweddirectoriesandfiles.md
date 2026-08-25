@@ -3,7 +3,7 @@
 **Framework**: Automatic Assessment Configuration  
 **Kind**: property
 
-The set of allowed directories and files that participants can access during an assessment.
+The set of directories and files that remain visible in the Finder during an assessment.
 
 **Availability**:
 - Mac Catalyst 27.0+ (Beta)
@@ -17,9 +17,9 @@ var allowedDirectoriesAndFiles: Set<URL>? { get set }
 
 #### Discussion
 
-By default, participants have restricted file system access. Use this property to specify file URLs to directories and files that should be accessible during the assessment session.
+Defaults to `nil`, which leaves Finder unrestricted. Setting a non-`nil` set hides everything except the given locations; pass an empty set to hide all of them.
 
-The default value is `nil`, which preserves the default unrestricted access behavior.
+This restricts what the Finder displays. It doesn’t sandbox participants, which can still reach other paths programmatically. Entries that aren’t file URLs are ignored.
 
 
 ---

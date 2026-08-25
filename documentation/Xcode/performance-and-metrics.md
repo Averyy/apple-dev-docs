@@ -15,6 +15,8 @@ Measure, investigate, and address the use of system resources and issues impacti
   View power and performance metrics for apps you distribute through the App Store.
 - [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
+- [Writing and running performance tests](writing-and-running-performance-tests.md)
+  Repeatably gather metrics on the performance of your code.
 ### Responsiveness
 - [Analyzing responsiveness issues in your shipping app](analyzing-responsiveness-issues-in-your-shipping-app.md)
   Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.

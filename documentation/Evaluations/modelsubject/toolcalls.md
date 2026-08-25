@@ -12,6 +12,7 @@ The tool calls from the transcript, or an empty array if no transcript was provi
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

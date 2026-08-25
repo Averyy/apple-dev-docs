@@ -17,9 +17,9 @@ A short string the system renders at the bottom edge of the document icon.
 
 #### Discussion
 
-This key is optional. If you omit this key, the system displays the file extension at the bottom of the document icon.
+This key is optional.
 
-If you set this key, the value substitutes a more descriptive term — for example, `scene` instead of `scn`. The system automatically scales the text to fit and capitalizes every letter. Keep the string short enough to remain legible at the smallest icon sizes.
+The system automatically scales the text to fit and capitalizes every letter. Keep the string short enough to remain legible at the smallest icon sizes.
 
 ## See Also
 

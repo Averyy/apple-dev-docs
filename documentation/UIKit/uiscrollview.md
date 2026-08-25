@@ -54,7 +54,7 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
 - [var contentOffset: CGPoint](uiscrollview/contentoffset.md)
   The point at which the origin of the content view is offset from the origin of the scroll view.
 - [func setContentOffset(CGPoint, animated: Bool)](uiscrollview/setcontentoffset(_:animated:).md)
-  Sets the offset from the content view’s origin that corresponds to the scroll view’s origin.
+  Sets the point at which the origin of the content view is offset from the origin of the scroll view.
 ### Managing the content inset behavior
 - [var adjustedContentInset: UIEdgeInsets](uiscrollview/adjustedcontentinset.md)
   The insets derived from the content insets and the safe area of the scroll view.

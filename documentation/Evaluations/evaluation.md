@@ -12,6 +12,7 @@ A type that defines an evaluation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -64,20 +65,20 @@ struct MyEvaluation: Evaluation {
   The evaluation dataset.
 ### Testing an intelligent feature
 - [associatedtype Subject : EvaluationSubject](evaluation/subject.md)
-  The type of the subject produced by the system under test.
+  The type of subject the system under test produces.
 - [func subject(from: Self.Sample) async throws -> Self.Subject](evaluation/subject(from:).md)
   Produces the subject of evaluation from a given sample.
 - [protocol EvaluationSubject](evaluationsubject.md)
-  A type that represents the output produced by the system under test.
+  A type that represents the output the system under test produces.
 - [struct ModelSubject](modelsubject.md)
   The subject type for language model evaluations.
 - [var name: String](evaluation/name.md)
-  The default name, derived from the type name.
+  The default name, taken from the type name.
 ### Scoring results
 - [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
-  The evaluators to apply to each subject/sample pair.
+  The evaluators to apply to each sample and its corresponding subject.
 - [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
-  Shorthand for the evaluator array type, resolved per-conformance.
+  The evaluator array type for this conformance.
 - [protocol EvaluatorProtocol](evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
 - [struct EvaluatorsBuilder](evaluatorsbuilder.md)
@@ -104,9 +105,9 @@ struct MyEvaluation: Evaluation {
 - [enum EvaluationError](evaluationerror.md)
   Errors thrown during an evaluation run.
 - [enum EvaluatorError](evaluatorerror.md)
-  A typed reason why an evaluator failed while scoring a produced subject.
+  A value that describes why an evaluator failed while scoring a produced subject.
 - [enum SubjectInferenceError](subjectinferenceerror.md)
-  A typed reason why `subject(from:)` failed to produce a subject for a sample.
+  A value that describes a failure to produce a subject for a sample.
 - [enum EvaluationResultsError](evaluationresultserror.md)
   Errors the framework throws when parsing evaluation results.
 

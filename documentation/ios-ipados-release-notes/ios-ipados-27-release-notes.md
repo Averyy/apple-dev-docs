@@ -1,4 +1,4 @@
-# iOS & iPadOS 27 Beta 6 Release Notes
+# iOS & iPadOS 27 Beta 7 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 6. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 7. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Airplay
 
@@ -123,6 +123,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: The “Add a Control” button in edit mode might appear small and clipped.  (170774279)
+
+###### Known Issues
+
+- Gathering `PowerProfiler` and `Lookback` traces through the `Performance Trace` Control Center widget might fail to produce traces.  (184729556) **Workaround:** Gather traces on iOS 27.0 beta 1 or earlier.
 
 ##### Core Ai
 
@@ -561,6 +565,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: New American English Siri voices 6 and 7 might default to legacy US voices when your device is overheated or in Low Power Mode.  (177742977)
 - Fixed: When you use ChatGPT with Apple Intelligence, some responses used in follow-up queries or when you resume a chat might be logged by Apple.  (177755742)
 - Fixed: When you ask Siri to find, search, or read reminders, Siri might list or read the reminders instead of showing a snippet. When reminder lists are displayed, the list color might not appear correctly.  (177762533)
+- Fixed: Mail older than 6 months might not be searchable by body content, but is still searchable by sender and subject.  (177942110)
 - Fixed: After enabling Expressive Voices, you are not able to modify Pace or Expressiveness in the Settings pane.  (177969955)
 - Fixed: Siri might run the incorrect `OpenIntent` or `system.open` intent when multiple intents targeting different entity types are available in your app.  (177992979)
 - Fixed: After creating a list through Siri, tapping the list icon might result in an error instead of opening the list in the Reminders app.  (177998395)
@@ -590,12 +595,6 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions.  (178274714) **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
 - Siri might cut off the end of words during navigation.  (181266301) **Workaround:** Reduce voice expressivity from the fastest pace, or turn off expressive voices.
 - As of beta 5, SiriAI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost.  (182145010)
-
-##### Siri Spotlight and Mail App Search
-
-###### Resolved Issues
-
-- Fixed: Mail older than 6 months might not be searchable by body content, but is still searchable by sender and subject.  (177942110)
 
 ##### Sleep Focus
 
@@ -627,7 +626,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight.  (180999342) (FB23487953)
-- Fixed: `Storefront` API may return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
+- Fixed: `Storefront` API might return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 - Fixed: Transactions fail to finish.  (183165269)
 
@@ -646,8 +645,8 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Changing the storefront or locale using SKTestSession doesn’t propagate through Storefront.updates.  (184155259)
-- Failed purchases using SKTestSession may display error dialogs even when dialogsDisabled is set to true.  (184255116)
+- Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`.  (184155259)
+- Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true.  (184255116)
 
 ##### Suggestions in Messages
 

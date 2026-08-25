@@ -13,17 +13,17 @@ Provide custom functionality in the Photos app by bundling an app extension.
 
 #### Overview
 
-You can incorporate your app’s features directly into the Photos app in iOS or macOS by building an app extension. A photo-editing app extension can enable people to edit media, apply your app’s filter effects, build slideshows, books, or custom content, such as a collage,  right in Photos app using code that you supply.
+You can incorporate your app’s features directly into the Photos app in iOS or macOS by building an app extension. With a photo-editing app extension, people can edit media, apply your app’s filter effects, and build slideshows, books, or custom content, such as collages, right in their Photos app.
 
 #### Implement and Bundle the App Extension
 
 Adopt the [`PHContentEditingController`](https://developer.apple.com/documentation/photosui/phcontenteditingcontroller) protocol to create an app extension that adds to the photo editing options and capabilities in the Photos app. Creating such an extension also requires using the following classes from the Photos framework:
 
-- [`PHContentEditingInput`](https://developer.apple.com/documentation/photos/phcontenteditinginput)—To reference the photo or video to be edited
-- [`PHContentEditingOutput`](https://developer.apple.com/documentation/photos/phcontenteditingoutput)—To save the results of an edit
-- [`PHAdjustmentData`](https://developer.apple.com/documentation/photos/phadjustmentdata)—To describe an edit operation
+- [`PHContentEditingInput`](https://developer.apple.com/documentation/photos/phcontenteditinginput) to reference the photo or video you want to edit
+- [`PHContentEditingOutput`](https://developer.apple.com/documentation/photos/phcontenteditingoutput) to save the results of an edit
+- [`PHAdjustmentData`](https://developer.apple.com/documentation/photos/phadjustmentdata) to describe an edit operation
 
-Include the app extension in your app bundle and the system installs it in Photos at the same time someone installs your app.
+Include the app extension in your app bundle, and the system installs it in Photos at the same time someone installs your app.
 
 > **Note**: If your app runs on a platform other than those listed above, the platform ignores your app extension.
 

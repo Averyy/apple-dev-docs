@@ -1,4 +1,4 @@
 Completed scraping Security!
-Total pages scraped: 0
-Pages skipped (unchanged): 5218
+Total pages scraped: 5
+Pages skipped (unchanged): 5213
 Pages failed: 0

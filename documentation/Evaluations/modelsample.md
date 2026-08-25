@@ -12,6 +12,7 @@ A general-purpose language model evaluation sample.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -64,7 +65,7 @@ let sample = ModelSample(prompt: "The capital of France is...", expected: "Paris
   The output schema for the model’s response.
 ### Bundled input and output
 - [struct ModelSampleInput](modelsampleinput.md)
-  The data sent to a language model for evaluation.
+  The data a language model receives for evaluation.
 - [struct ModelSampleOutput](modelsampleoutput.md)
   The expected output value and evaluation expectations for a sample.
 ### Protocols

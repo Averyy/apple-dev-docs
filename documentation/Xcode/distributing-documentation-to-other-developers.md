@@ -32,7 +32,7 @@ To export a documentation archive from Xcode’s documentation viewer:
 
 The documentation archive that Xcode exports uses a `.doccarchive` file extension.
 
-To export the documentation archive from the command line, run `xcodebuild docbuild` in Terminal and copy the resulting `.doccarchive` bundle from the derived data directory. Depending on your project’s configuration, you may need to pass additional command-line options. For additional information, consult the `xcodebuild` man page.
+To export the documentation archive from the command line, run `xcodebuild docbuild` in Terminal and copy the resulting `.doccarchive` bundle from the derived data directory. Depending on your project’s configuration, you may need to pass additional command-line options. For additional information, consult the `xcodebuild` man (manual) page.
 
 For example, to build a documentation archive, use a command similar to the following:
 

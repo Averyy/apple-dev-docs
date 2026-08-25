@@ -17,11 +17,13 @@ class AEAssessmentBinaryExecutable
 
 #### Overview
 
-Use this for a participant that has no bundle identifier and so cannot be expressed as an [`AEAssessmentApplication`](aeassessmentapplication.md). It feeds only the app-launch allowlist under [`allowsOnlyParticipantsToRun`](aeassessmentconfiguration/allowsonlyparticipantstorun.md) and, when its configuration permits, network access; UI policies (frontmost app, window server, media, menu bar) do not apply.
+Use this for a participant that has no bundle identifier and so cannot be expressed as an [`AEAssessmentApplication`](aeassessmentapplication.md). It feeds only the app-launch allowlist under [`allowsOnlyParticipantsToRun`](aeassessmentconfiguration/allowsonlyparticipantstorun.md) and, when its configuration permits, network access; UI policies do not apply.
 
-Matching is by exact on-disk path. At runtime the executable must also satisfy [`requiresSignatureValidation`](aeassessmentbinaryexecutable/requiressignaturevalidation.md) (and the team identifier, if set), so a swapped or re-signed binary is not silently trusted. Leave [`requiresSignatureValidation`](aeassessmentbinaryexecutable/requiressignaturevalidation.md) enabled (the default) unless the executable is unsigned.
+Matching is by exact on-disk path. At runtime the executable must also satisfy [`requiresSignatureValidation`](aeassessmentbinaryexecutable/requiressignaturevalidation.md) (and the team identifier, if set), so a swapped or re-signed binary is not silently trusted.
 
-> **Note**: [`AEAssessmentApplication`](aeassessmentapplication.md) for bundled participants.
+With [`requiresSignatureValidation`](aeassessmentbinaryexecutable/requiressignaturevalidation.md) enabled (the default), an unsigned or invalidly signed binary is treated as unavailable: a participant that isn’t [`isRequired`](aeassessmentbinaryexecutableconfiguration/isrequired.md) is dropped from enforcement, while a required one prevents the assessment session from beginning.
+
+> **Note**: [`allowsOnlyParticipantsToRun`](aeassessmentconfiguration/allowsonlyparticipantstorun.md) for why the launch allowlist requires a signature, and [`AEAssessmentApplication`](aeassessmentapplication.md) for bundled participants.
 
 ## Topics
 

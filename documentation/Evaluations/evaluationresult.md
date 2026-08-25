@@ -12,6 +12,7 @@ The results of running a model evaluation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,6 +28,15 @@ struct EvaluationResult
 #### Overview
 
 A structure that contains the summary and detailed results from an evaluation run.
+
+Use the column descriptors from your [`Evaluation`](evaluation.md) to access typed columns from the [`detailed`](evaluationresult/detailed.md) DataFrame:
+
+```swift
+let result = try await evaluation.run(on: samples)
+let inputs = result.detailed[evaluation.inputColumn]
+let responses = result.detailed[evaluation.responseColumn]
+let expected = result.detailed[evaluation.expectedColumn]
+```
 
 ## Topics
 
@@ -60,17 +70,19 @@ A structure that contains the summary and detailed results from an evaluation ru
 - [func jsonRepresentableDataFrame(of: EvaluationResult.DataFrameKind) throws -> DataFrame](evaluationresult/jsonrepresentabledataframe(of:).md)
   Transforms a DataFrame into one with column types compatible with JSON representation.
 ### Saving and loading results
+- [func saveJSON(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](evaluationresult/savejson(to:includereportmetadata:includetranscripts:).md)
+  Saves evaluation results to a single JSON file.
+- [func jsonData(includeReportMetadata: Bool, includeTranscripts: Bool, jsonOptions: JSONSerialization.WritingOptions) throws -> Data](evaluationresult/jsondata(includereportmetadata:includetranscripts:jsonoptions:).md)
+  Returns the evaluation results as JSON data.
 - [static func loadJSON(from: URL) throws -> EvaluationResult](evaluationresult/loadjson(from:).md)
   Loads an evaluation result from a JSON file on disk.
 - [static func loadJSONLines(from: URL) async throws -> [EvaluationResult]](evaluationresult/loadjsonlines(from:).md)
   Loads an array of evaluation results from a JSONL file on disk.
 - [init(jsonData: Data) throws](evaluationresult/init(jsondata:).md)
   Creates an evaluation result by parsing JSON data.
-### Instance Methods
-- [func jsonData(includeReportMetadata: Bool, includeTranscripts: Bool, jsonOptions: JSONSerialization.WritingOptions) throws -> Data](evaluationresult/jsondata(includereportmetadata:includetranscripts:jsonoptions:).md)
-  Returns the evaluation results as JSON data.
-- [func saveJSON(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](evaluationresult/savejson(to:includereportmetadata:includetranscripts:).md)
-  Saves evaluation results to a single JSON file.
+### Instance Properties
+- [let errors: EvaluationRunErrors](evaluationresult/errors.md)
+  A summary of the failures encountered during the run.
 
 ## Relationships
 

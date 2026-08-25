@@ -21,7 +21,7 @@ set rotation(rotation: number);
 
 #### Discussion
 
-This value represents the map’s [`rotation`](map/rotation.md) in degrees, where the value 0 means that the top edge of the map view corresponds to true north. The value 90 means the top of the map is pointing due east. The value 180 means the top of the map points due south, and so on.
+This value represents the map’s [`rotation`](map/rotation.md) in degrees, where the value 0 means that the top edge of the map view corresponds to true north. The value 90 means the top of the map is pointing due west. The value 180 means the top of the map points due south, and so on.
 
 Setting the rotation property always rotates the map around its [`center`](map/center.md).
 

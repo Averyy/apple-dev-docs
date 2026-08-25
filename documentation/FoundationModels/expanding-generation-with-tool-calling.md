@@ -227,6 +227,8 @@ struct MyHistoryView: View {
                 // Display the response from the model.
             case .reasoning(let reasoning):
                 // Display the reasoning from the model.
+            @unknown default:
+                // Handle an unknown entry.
             }
         }.task {
             do {

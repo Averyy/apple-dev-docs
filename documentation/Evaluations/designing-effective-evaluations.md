@@ -47,7 +47,7 @@ Turn vague goals into concrete, measurable targets:
 | “Match the user’s skill level.” | Complexity score (1–4) within 0.5 of stated preference |
 | “Generate accurate tags.” | 95% of tags classify as factual descriptors, not subjective reactions |
 
-The pattern is the same regardless of your feature: replace vague, subjective impressions with criteria that code or model-as-judge evaluators can verify. For guidance on defining measurable criteria, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md).
+The pattern is the same regardless of your feature: replace vague, subjective impressions with criteria that code or model-judge evaluators can verify. For guidance on defining measurable criteria, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md).
 
 #### Adopt an Evaluation Driven Development Life Cycle
 
@@ -89,7 +89,7 @@ Your dataset determines what your evaluation can tell you. A well-designed datas
 Evaluations supports two kinds of evaluators:
 
 - Code-based evaluators verify criteria with computable definitions: format compliance, word limits, schema validation, exact matches. They are instant, free, and perfectly reproducible.
-- Model-as-judge evaluators score subjective qualities that code can’t capture: tone, clarity, helpfulness, accuracy of open-ended responses. A language model reads the output and scores it against scoring levels you define. For best practices on configuring model-as-judge evaluators, see [`Designing effective model-as-judge evaluators`](designing-effective-model-judges.md).
+- Model-judge evaluators score subjective qualities that code can’t capture: tone, clarity, helpfulness, accuracy of open-ended responses. A language model reads the output and scores it against scoring levels you define. For best practices on configuring model-judge evaluators, see [`Designing effective model-judge evaluators`](designing-effective-model-judges.md).
 
 #### Analyze Your Results for Patterns
 
@@ -147,7 +147,7 @@ Here are some additional safeguards:
 - **Watch for brittle fixes.** If a change requires very specific wording to work, it may be fragile. Prefer changes that teach the model a principle over changes that enumerate specific prohibitions.
 - **Test with new data periodically.** As real users interact with your feature, add fresh samples that you never tuned your prompt against. These are your best signal for generalization.
 
-To see these practices in use in a complete app, where a model as judge is calibrated against expert scores so you can trust it while iterating on a prompt, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+To see these practices in use in a complete app, where a model judge is calibrated against expert scores so you can trust it while iterating on a prompt, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
 #### Capture Result Failures to Prevent Regressions
 
@@ -168,7 +168,7 @@ This creates an incrementing effect: your quality level can only go up. Each fai
 Start with small evaluations and build them into a comprehensive evaluation suite over time. Here’s what that might look like:
 
 - **Week one.** Define 2-3 evaluators covering your most critical quality dimensions. Build a golden set of 10-20 samples that represent core functionality. This gives you a baseline to iterate against.
-- **First month.** Add challenge sets as you discover failure modes. Introduce a model-as-judge for subjective dimensions that code can’t capture. Your dataset grows to 30-50 samples across categories.
+- **First month.** Add challenge sets as you discover failure modes. Introduce a model-judge for subjective dimensions that code can’t capture. Your dataset grows to 30-50 samples across categories.
 - **Ongoing.** Incorporate people’s interactions with your feature, with their permission. Use [`SampleGenerator`](samplegenerator.md) to test statistical consistency at volume. Add new quality dimensions as your understanding deepens. Periodically review whether existing evaluators still measure what matters.
 
 As your feature evolves, your evaluation evolves with it. Remove evaluators that no longer provide useful signals. Split evaluators that are measuring too many things at once. Add evaluators when you discover new failure modes.

@@ -14,6 +14,10 @@ A structure that represents a person’s response to a notification.
 struct NotificationResponse
 ```
 
+## Mentions
+
+- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+
 #### Overview
 
 Create an instance of this structure when a person responds to a notification on your accessory. Send it to the system using [`sendResponse(_:)`](notificationsforwarding/accessorynotificationssession/sendresponse(_:).md) after receiving the response data through [`messageHandler(_:)`](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md).
@@ -41,6 +45,11 @@ Create an instance of this structure when a person responds to a notification on
 - [Decodable](../swift/decodable.md)
 - [Encodable](../swift/encodable.md)
 - [Equatable](../swift/equatable.md)
+
+## See Also
+
+- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+  Enable people to interact with notifications on your accessory and convey their responses to iOS.
 
 
 ---

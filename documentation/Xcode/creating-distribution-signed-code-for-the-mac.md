@@ -43,7 +43,7 @@ To export a distribution-signed app from the command line:
 1. Run `xcodebuild` with the `archive` action to build and archive your app.
 2. Run `xcodebuild` with the `exportArchive` action to export the distribution-signed app from the archive created in step 1.
 
-For more information about `xcodebuild`, see its manual page.  For instructions on how to read a manual page, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).  For information about the keys supported by the export options property list, run `xcodebuild` with the `-help` argument.
+For more information about `xcodebuild`, see its man (manual) page.  For information about the keys supported by the export options property list, run `xcodebuild` with the `-help` argument.
 
 #### Export a Non App Product Built with Xcode
 

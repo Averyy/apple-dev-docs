@@ -27,17 +27,29 @@ Use these constants with [`allowedAppleMenuItems`](aeassessmentconfiguration/all
 - [init(rawValue: String)](aeapplemenuitem/init(rawvalue:).md)
 ### Type Properties
 - [static let aboutThisMac: AEAppleMenuItem](aeapplemenuitem/aboutthismac.md)
+  The About This Mac item, which remains visible during an assessment session whether or not [`allowedAppleMenuItems`](aeassessmentconfiguration/allowedapplemenuitems.md) names it.
 - [static let appStore: AEAppleMenuItem](aeapplemenuitem/appstore.md)
+  The App Store item.
 - [static let forceQuit: AEAppleMenuItem](aeapplemenuitem/forcequit.md)
+  The Force Quit item, covering both the Force Quit Applications window and quitting an app outright.
 - [static let location: AEAppleMenuItem](aeapplemenuitem/location.md)
+  The Location item.
 - [static let lockScreen: AEAppleMenuItem](aeapplemenuitem/lockscreen.md)
+  The Lock Screen item.
 - [static let logout: AEAppleMenuItem](aeapplemenuitem/logout.md)
+  The Log Out item, covering both the command and its confirmation.
 - [static let recent: AEAppleMenuItem](aeapplemenuitem/recent.md)
+  The Recent Items item.
 - [static let restart: AEAppleMenuItem](aeapplemenuitem/restart.md)
+  The Restart item, covering both the command and its confirmation.
 - [static let shutDown: AEAppleMenuItem](aeapplemenuitem/shutdown.md)
+  The Shut Down item, covering both the command and its confirmation.
 - [static let sleep: AEAppleMenuItem](aeapplemenuitem/sleep.md)
+  The Sleep item.
 - [static let systemInformation: AEAppleMenuItem](aeapplemenuitem/systeminformation.md)
+  The System Information item.
 - [static let systemSettings: AEAppleMenuItem](aeapplemenuitem/systemsettings.md)
+  The System Settings item.
 
 ## Relationships
 

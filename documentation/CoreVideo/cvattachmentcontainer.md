@@ -31,11 +31,11 @@ This object can be used to hold a copy of all buffer attachments. The attachment
 - [init(propagated: [String : any CVAttachmentValueRepresentable], nonPropagated: [String : any CVAttachmentValueRepresentable])](cvattachmentcontainer/init(propagated:nonpropagated:).md)
 ### Instance Methods
 - [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinition<some CVAttachmentModePreference, some CVAttachmentValueRepresentable>>) -> CVAttachmentMode?](cvattachmentcontainer/attachedmode(of:)-4qvrl.md)
-  Returns mode of an attached key without retriving value.
+  Returns the propagation mode of a stored attachment you identify with a key path to a key definition, without retrieving the value.
 - [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinitionWithDefault<some CVAttachmentModePreference, some CVAttachmentValueRepresentable & Equatable & Sendable>>) -> CVAttachmentMode?](cvattachmentcontainer/attachedmode(of:)-7vger.md)
-  Returns mode of an attached key without retriving value.
+  Returns the propagation mode of a stored attachment you identify with a key path to a key definition that supplies a default, without retrieving it.
 - [func attachedMode(of: String) -> CVAttachmentMode?](cvattachmentcontainer/attachedmode(of:)-p6ms.md)
-  Returns mode of an attached key without retriving value.
+  Returns the propagation mode of a stored attachment you identify by its raw key string, without retrieving the value.
 - [func removeAll()](cvattachmentcontainer/removeall.md)
   Removes all attachments.
 - [func update(from: CVAttachmentContainer<Keys>)](cvattachmentcontainer/update(from:).md)

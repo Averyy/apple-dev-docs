@@ -12,6 +12,7 @@ Creates a scoring scale from a numeric dictionary.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ static func numeric(_ scale: [Double : String]) -> ScoringScale
 
 #### Discussion
 
-Each key-value pair maps a numeric score to rubric guidance. The label for each option is derived from the numeric value (e.g., `5` becomes `"5"`).
+Each key-value pair maps a numeric score to rubric guidance. The label for each option derives from the numeric value.
 
 ## Parameters
 
@@ -30,7 +31,7 @@ Each key-value pair maps a numeric score to rubric guidance. The label for each 
 ## See Also
 
 - [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](scoringscale/passfail(passdescription:faildescription:).md)
-  Creates a binary pass/fail scoring scale.
+  Creates a binary pass or fail scoring scale.
 - [static func custom<Level>(Level.Type) -> ScoringScale](scoringscale/custom(_:).md)
   Creates a scoring scale from a typed score level enum.
 - [init(options: [ScaleOption])](scoringscale/init(options:).md)

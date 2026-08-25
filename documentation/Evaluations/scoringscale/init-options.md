@@ -12,6 +12,7 @@ Creates a scoring scale with explicit options.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,7 +27,7 @@ init(options: [ScaleOption])
 ## See Also
 
 - [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](scoringscale/passfail(passdescription:faildescription:).md)
-  Creates a binary pass/fail scoring scale.
+  Creates a binary pass or fail scoring scale.
 - [static func numeric([Double : String]) -> ScoringScale](scoringscale/numeric(_:).md)
   Creates a scoring scale from a numeric dictionary.
 - [static func custom<Level>(Level.Type) -> ScoringScale](scoringscale/custom(_:).md)

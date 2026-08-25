@@ -12,6 +12,7 @@ A closure-based evaluator.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -40,6 +41,9 @@ Evaluator { sample, subject in
 ### Initializers
 - [init(nonisolated(nonsending) (Input, ModelSubject<Input.ExpectedValue>) async throws -> Metric)](evaluator/init(_:).md)
   Creates an evaluator with the given evaluation closure.
+### Instance Methods
+- [func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]](evaluator/metrics(subject:input:).md)
+  Evaluates the input and returns an array of metrics.
 
 ## Relationships
 

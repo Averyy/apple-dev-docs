@@ -30,6 +30,8 @@ case otherNavigation
   The value that configures positioning for an automobile following a road network.
 - [CLLocationUpdate.LiveConfiguration.fitness](cllocationupdate/liveconfiguration/fitness.md)
   The value that configures positioning for dedicated fitness sessions.
+- [CLLocationUpdate.LiveConfiguration.maritime](cllocationupdate/liveconfiguration/maritime.md)
+  The value that configures positioning for vessels on water, including while anchored.
 
 
 ---

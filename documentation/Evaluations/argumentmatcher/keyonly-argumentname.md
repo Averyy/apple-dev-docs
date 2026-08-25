@@ -12,12 +12,17 @@ A value that indicates that the argument must be present with this key and no sp
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case keyOnly(argumentName: String)
 ```
+
+## Parameters
+
+- `argumentName`: The name of the argument that must be present.
 
 ## See Also
 

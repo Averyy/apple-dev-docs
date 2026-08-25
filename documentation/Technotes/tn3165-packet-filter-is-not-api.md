@@ -20,7 +20,7 @@ Packet Filter, oftened shorted to just PF or even pf, shows up in a number of pl
 - The `/dev/pf` character device
 - Various `/etc/pf*` configuration files
 - The `pfctl` command-line tool
-- The `pfctl` and `pf.conf` [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages)
+- The `pfctl` and `pf.conf` man pages
 
 PF implements rule-based filtering.  These rules are manipulated by various system services and, less commonly, by the user.  PF is not considered API because the PF rules you install might clash with those installed by:
 

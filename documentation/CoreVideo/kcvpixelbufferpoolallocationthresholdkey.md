@@ -3,7 +3,7 @@
 **Framework**: Core Video  
 **Kind**: var
 
-The key you use to set the auxiliary attributes dictionary.
+The key that limits the number of pixel buffers the pool allocates.
 
 **Availability**:
 - iOS 4.0+
@@ -22,16 +22,16 @@ let kCVPixelBufferPoolAllocationThresholdKey: CFString
 
 #### Discussion
 
-Use this key to set `auxAttributes` in [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](cvpixelbufferpoolcreatepixelbufferwithauxattributes(_:_:_:_:).md).
+Include this key in the auxiliary attributes dictionary you pass to [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](cvpixelbufferpoolcreatepixelbufferwithauxattributes(_:_:_:_:).md).
 
 The value for this key specifies that the system shouldn’t allocate a new pixel buffer if the pool already holds at least the specified number of allocated pixel buffers. This key doesn’t prevent the system from recycling allocated buffers. If this key causes [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](cvpixelbufferpoolcreatepixelbufferwithauxattributes(_:_:_:_:).md) to fail, it returns the [`kCVReturnWouldExceedAllocationThreshold`](kcvreturnwouldexceedallocationthreshold.md) result code.
 
 ## See Also
 
 - [let kCVPixelBufferPoolMinimumBufferCountKey: CFString](kcvpixelbufferpoolminimumbuffercountkey.md)
-  The minimum number of buffers allowed in the pixel buffer pool.
+  The key that sets the minimum number of pixel buffers in the pool.
 - [let kCVPixelBufferPoolMaximumBufferAgeKey: CFString](kcvpixelbufferpoolmaximumbufferagekey.md)
-  The key you use to set the maximum allowable age for a buffer in the pixel buffer pool.
+  The key that sets how long the pool keeps an unused buffer before it ages out.
 
 
 ---

@@ -55,6 +55,8 @@ object SettingsCommand.Command.Settings
   A dictionary that contains Personal Hotspot settings.
 - [object SettingsCommand.Command.Settings.SharedDeviceConfiguration](settingscommand/command-data.dictionary/settings-data.dictionary/shareddeviceconfiguration-data.dictionary.md)
   A dictionary that contains shared device configuration settings.
+- [object SettingsCommand.Command.Settings.SoftwareUpdateSettings](settingscommand/command-data.dictionary/settings-data.dictionary/softwareupdatesettings-data.dictionary.md)
+  A dictionary that contains software update settings.
 - [object SettingsCommand.Command.Settings.TimeZone](settingscommand/command-data.dictionary/settings-data.dictionary/timezone-data.dictionary.md)
   A dictionary that contains time zone settings.
 - [object SettingsCommand.Command.Settings.VoiceRoaming](settingscommand/command-data.dictionary/settings-data.dictionary/voiceroaming-data.dictionary.md)
@@ -82,6 +84,9 @@ Deprecated: iOS 13.4+ | iPadOS 13.4+
 Deprecated: iOS 17+ | iPadOS 17+
 - `PersonalHotspot` (SettingsCommand.Command.Settings.PersonalHotspot): A dictionary that contains Personal Hotspot settings. This setting requires the Network Information access right, and doesn’t support user enrollment. Available: iOS 5+ | iPadOS 5+
 - `SharedDeviceConfiguration` (SettingsCommand.Command.Settings.SharedDeviceConfiguration): A dictionary that contains shared device configuration settings. This setting is available only for Shared iPad in iOS 13.4 and later. Available: iOS 13.4+ | iPadOS 13.4+
+- `SoftwareUpdateSettings` (SettingsCommand.Command.Settings.SoftwareUpdateSettings): A dictionary that contains software update settings. This setting doesn’t support user enrollment. Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. Available: iOS 14.5+ | iPadOS 14.5+
+Deprecated: iOS 26+ | iPadOS 26+
+Removed: iOS 27+ | iPadOS 27+
 - `TimeZone` (SettingsCommand.Command.Settings.TimeZone): A dictionary that contains time zone settings. This setting is available only on supervised devices and doesn’t support user enrollment. Available: iOS 14+ | iPadOS 14+ | tvOS 14+ | visionOS 2+
 - `VoiceRoaming` (SettingsCommand.Command.Settings.VoiceRoaming): A dictionary that contains voice roaming settings. This setting requires the Network Information access right, and doesn’t support user enrollment. Available: iOS 5+ | iPadOS 5+
 Deprecated: iOS 16+ | iPadOS 16+

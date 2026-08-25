@@ -1,4 +1,4 @@
 Completed scraping App Intents!
-Total pages scraped: 0
-Pages skipped (unchanged): 4354
+Total pages scraped: 7
+Pages skipped (unchanged): 4348
 Pages failed: 0

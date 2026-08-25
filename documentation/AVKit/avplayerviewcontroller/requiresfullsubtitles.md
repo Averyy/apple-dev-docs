@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: property
 
-A Boolean value that indicates whether the user can disable the display of subtitles.
+A Boolean value that indicates whether someone can disable the display of subtitles.
 
 **Availability**:
 - tvOS 9.0+
@@ -23,7 +23,7 @@ The default value is `false`.
 ## See Also
 
 - [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
-  An array of language codes that restrict the set of subtitle languages available to the user.
+  An array of language codes that restrict the set of subtitle languages available.
 - [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 
 

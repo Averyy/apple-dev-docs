@@ -77,6 +77,10 @@ struct LaunchScreen: View {
   Sets the sizing of the containing presentation.
 - [func presentationBreakthroughEffect(BreakthroughEffect) -> some View](view/presentationbreakthrougheffect(_:).md)
   Changes the way the enclosing presentation breaks through content occluding it.
+- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+  Sets the placement of a presentation within the presenting view.
+- [struct PresentationPlacement](presentationplacement.md)
+  The placement of a presentation within the presenting view.
 
 
 ---

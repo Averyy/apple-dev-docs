@@ -11,7 +11,7 @@ To enhance the user experience, iOS Mail downloads a user’s email in the backg
 This process involves two main steps:
 
 1. **Client identification:** [`RFC 3501`](https://developer.apple.comhttps://tools.ietf.org/html/rfc3501) IMAP email servers can detect if a connection is for a background download. iOS Mail clients identify themselves to the server using the `ID` command. Starting with iOS 18.5, this command includes an `event` field. This field will indicate if the connection is being used for background downloading.
-2. **Load shedding:** If the server needs to limit its load and the client has been identified as a background download, the server should send a `NO [UNAVAILABLE]` tagged response to the `ID` command. This will result in the background download being postponed approximately a day, after which the client will retry the download.
+2. **Load shedding:** If the server needs to limit its load and the client has been identified as a background download, the server should send a `NO [UNAVAILABLE]` tagged response to the `ID` command. This will result in the background download being postponed, after which the client will retry the download.
 
 #### Identify Background Traffic From Mail
 
@@ -83,8 +83,17 @@ Here the IMAP email server responds with a tagged response containing `NO` and t
 
 > **Note**: Mail does not include an event field on macOS. It also doesn’t handle load shedding through the `NO [UNAVAILABLE]` server response.
 
+#### Prioritize Mail Traffic
+
+If the IMAP email server needs to reduce iOS Mail traffic, it should start by shedding traffic identified with `indexer` in the `event` field. This traffic downloads older message content for Apple Intelligence that Mail doesn’t save on the device.
+
+If the server still needs to reduce load, it should next shed traffic identified with `back-fill` in the `event` field. This traffic downloads messages that Mail saves to disk.
+
+The server shouldn’t shed the remaining iOS Mail traffic, which downloads new messages. Doing so would prevent users from receiving new messages.
+
 #### Revision History
 
+- **2026-08-18** Updated for iOS 27.
 - **2025-05-09** First published.
 
 

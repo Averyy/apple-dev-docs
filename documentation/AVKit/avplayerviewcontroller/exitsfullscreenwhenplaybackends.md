@@ -26,7 +26,7 @@ The default value is `false`.
 ## See Also
 
 - [var entersFullScreenWhenPlaybackBegins: Bool](avplayerviewcontroller/entersfullscreenwhenplaybackbegins.md)
-  A Boolean value that determines whether the player automatically displays in full screen when the user taps the play button.
+  A Boolean value that determines whether the player automatically displays in full screen when someone taps the Play button.
 
 
 ---

@@ -123,6 +123,8 @@ Specify `com.apple.loginwindow` as the payload type.
 - `DisableConsoleAccess` (boolean): If `true`, the system disregards the `>console` special user name, which provides a command line UI.
 - `DisableFDEAutoLogin` (boolean): If `true`, the system disables the automatic login option when using FileVault. Available: macOS 10.9+
 - `DisableScreenLockImmediate` (boolean): If `true`, the system disables the immediate Screen Lock functions. Available: macOS 10.13+
+- `ForceCaptivePortalConnectionFromLockScreen` (boolean): If `true`, the system allows use of the captive WiFi portal at login or unlock. Available: macOS 27+
+- `ForceWifiConfigurationOnLockScreen` (boolean): If `true`, the system allows the user to select WiFi networks at login or unlock. Available: macOS 27+
 - `HideAdminUsers` (boolean): If `true`, the system hides administrator users when showing a user list.
 - `HideLocalUsers` (boolean): If `true`, the system shows only network and system users when showing a user list.
 - `HideMobileAccounts` (boolean): If `true`, the system hides mobile account users in a user list. In some cases, mobile users show up as network users.

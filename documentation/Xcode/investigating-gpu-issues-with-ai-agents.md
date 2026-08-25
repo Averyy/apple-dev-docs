@@ -36,7 +36,7 @@ For an isolated single-command query where session management is a burden, use `
 % gpudebug --oneshot -t trace.gputrace -c "go commands/cb0/re0/draw0" -c "info pipeline"
 ```
 
-For the full command reference, see the `gpudebug(1)` manual page (`man gpudebug`).
+For the full command reference, see the `gpudebug(1)` man (manual) page (`man gpudebug`).
 
 ## See Also
 

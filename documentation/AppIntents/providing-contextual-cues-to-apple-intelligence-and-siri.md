@@ -193,9 +193,7 @@ class NoteBoardViewController: UIViewController {
 }
 ```
 
-Associating app entities with your views is the preferred way to make your content known to the system, but other options are available for apps that need to support earlier operating system versions. User activity objects have a [`appEntityIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/appentityidentifier) property, which you can use to specify data for an action.
-
-In UIKit and AppKit, you can assign user activity objects to views and responders using their [`userActivity`](https://developer.apple.com/documentation/uikit/uiresponder/useractivity) property. In SwiftUI, you can create and configure an activity object in one of your views using the [`userActivity(_:element:_:)`](https://developer.apple.com/documentation/swiftui/view/useractivity(_:element:_:)) modifier.
+Associating app entities with your views is the best option when the current set of views reflect multiple entities. If the views reflect only one entity, add view annotations or deliver the entity using an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. User activity objects store a single, optional entity in their [`appEntityIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/appentityidentifier) property, and the entity provides the system with similar information as an entity attached to one of your views. Delivering an entity in a user activity object is particularly relevant when your interface contains only one entity and represents an activity someone can continue on another device using Handoff. In UIKit and AppKit, assign user activity objects to views and responders using their [`userActivity`](https://developer.apple.com/documentation/uikit/uiresponder/useractivity) property. In SwiftUI, create and configure an activity object in one of your views using the [`userActivity(_:element:_:)`](https://developer.apple.com/documentation/swiftui/view/useractivity(_:element:_:)) modifier.
 
 ##### Associate Entities with Other Types of Content
 

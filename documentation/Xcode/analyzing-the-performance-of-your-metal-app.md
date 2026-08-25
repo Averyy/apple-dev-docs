@@ -139,7 +139,7 @@ To confirm whether low thread-priority is affecting your app’s frame rate, fol
 
 In the above screenshot, the Preempted thread state indicates that other Runnable and Running threads starved the rendering thread of processing. Low thread-priority is an example of how misconfigured host app code relates to low frame rate.
 
-A priority of 45 is recommended for rendering threads. To set your thread’s priority, call `pthread_attr_setschedparam(_:_:)` before creating your thread with `pthread_create(_:_:_:_:)`. For more information on thread priorities, see [`Tune CPU job scheduling for Apple silicon games`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/110147/). For more information on `pthread_create` and `pthread_attr_setschedparam`, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+A priority of 45 is recommended for rendering threads. To set your thread’s priority, call `pthread_attr_setschedparam(_:_:)` before creating your thread with `pthread_create(_:_:_:_:)`. For more information on thread priorities, see [`Tune CPU job scheduling for Apple silicon games`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/110147/).
 
 ##### Check Cpu Gpu Overlap
 

@@ -12,6 +12,7 @@ A type that defines individual levels within a scoring scale.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ protocol ScoreLevel : CaseIterable, Hashable, Sendable
 
 #### Overview
 
-Conform an enum to `ScoreLevel` to create a typed, reusable scoring vocabulary. Each case represents one level a model as judge can assign. Labels default to the case name via `String(describing:)` — override [`label`](scorelevel/label.md) for human-readable formatting.
+Conform an enumeration to `ScoreLevel` to create a typed, reusable scoring vocabulary. Each case represents one level a model judge can assign. Labels default to the case name using `String(describing:)`. Override [`label`](scorelevel/label.md) for human-readable formatting.
 
 ```swift
 enum SafetyLevel: ScoreLevel {
@@ -49,11 +50,11 @@ let dimension = ScoreDimension("Safety", scale: .custom(SafetyLevel.self))
 
 ### Instance Properties
 - [var guideDescription: String](scorelevel/guidedescription.md)
-  Rubric guidance shown to the judge for this level.
+  Rubric guidance the model judge references for this level.
 - [var label: String](scorelevel/label.md)
   A short judge-facing label for this level.
 - [var value: Double](scorelevel/value.md)
-  The numeric value for this level, used for metric aggregation.
+  The numeric value for this level that metric aggregation references.
 
 ## Relationships
 

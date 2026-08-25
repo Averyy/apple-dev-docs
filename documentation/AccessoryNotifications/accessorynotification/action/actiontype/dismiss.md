@@ -14,6 +14,10 @@ An action type that dismisses a notification.
 case dismiss
 ```
 
+## Mentions
+
+- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+
 ## See Also
 
 - [AccessoryNotification.Action.ActionType.background](accessorynotification/action/actiontype/background.md)

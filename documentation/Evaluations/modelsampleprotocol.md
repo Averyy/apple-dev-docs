@@ -12,6 +12,7 @@ A type that defines language model evaluation samples with prompt, instructions,
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -37,10 +38,10 @@ let sample = ModelSample(
 
 ### Associated Types
 - [associatedtype Expectation : Decodable, Encodable, Sendable](modelsampleprotocol/expectation.md)
-  The type of evaluation expectations (e.g., [`TrajectoryExpectation`](trajectoryexpectation.md)).
+  The type of evaluation expectations.
 ### Instance Properties
 - [var input: ModelSampleInput](modelsampleprotocol/input.md)
-  The bundled language model input (prompt, instructions, schema).
+  The bundled language model input, including prompt, instructions, and schema.
 - [var output: ModelSampleOutput<Self.ExpectedValue, Self.Expectation>](modelsampleprotocol/output.md)
   The expected output value and evaluation expectations.
 

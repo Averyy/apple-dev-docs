@@ -38,7 +38,7 @@ If you use a chat model, Xcode shows the code changes directly in the source edi
 
 Similarly, with an interface file in the source editor, open the coding tools popover and click Generate a Preview. Xcode adds the generated preview code to your file and renders the preview in the artifacts pane or the canvas.
 
-For more information, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md) and [`Previewing your app’s interface in Xcode`](previewing-your-apps-interface-in-xcode.md).
+For more information, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md) and [`Adding previews to your interface files`](adding-previews-to-your-interface-files.md).
 
 #### Generate Documentation
 

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-21T07:39:17.984462",
+    "last_updated": "2026-08-25T07:36:36.855135",
     "total_pages": 624,
-    "session_id": "2026-08-21T07:38:22.645039"
+    "session_id": "2026-08-25T07:35:54.792260"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CoreAI.json": {
       "hash": "cb39c31e6c7629a6a77207f8a4cbedca2e485398c994a286ad6c231aea160747",
-      "last_checked": "2026-08-21T07:38:23.056015",
+      "last_checked": "2026-08-25T07:35:55.126508",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"42ca-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/CoreAI.md"
     },
     "https://developer.apple.com/documentation/CoreAI": {
       "hash": "cb39c31e6c7629a6a77207f8a4cbedca2e485398c994a286ad6c231aea160747",
-      "last_checked": "2026-08-21T07:38:22.963145",
+      "last_checked": "2026-08-25T07:35:55.019831",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"42ca-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/CoreAI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/integrating-on-device-ai-models-in-your-app-with-core-ai.json": {
       "hash": "10b3fb3abc3c4b40b879f16800da440fcb80a12ade82b49d5a2a64e9d143ddcd",
-      "last_checked": "2026-08-21T07:38:23.280515",
+      "last_checked": "2026-08-25T07:35:55.321964",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"9b9a-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/integrating-on-device-ai-models-in-your-app-with-core-ai.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel.json": {
       "hash": "dc8d0ae8ccf7e79b3d94fb3ef4bb330195f7f51033023d79f9b6b5b350b83882",
-      "last_checked": "2026-08-21T07:38:23.466286",
+      "last_checked": "2026-08-25T07:35:55.457465",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"45ff-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/aimodel.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset.json": {
       "hash": "f70d763a18704dd38fe0fb9392809519a018d6dee2b73f7f74eca37642b56706",
-      "last_checked": "2026-08-21T07:38:23.615075",
+      "last_checked": "2026-08-25T07:35:55.568646",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3b20-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodelasset.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction.json": {
       "hash": "0f3c3895429ab0fdf2e0c8762c452c2375c04818943a657f1db0f1e9adc43b65",
-      "last_checked": "2026-08-21T07:38:23.795914",
+      "last_checked": "2026-08-25T07:35:55.698728",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"5907-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencefunction.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor.json": {
       "hash": "9f6e50c33df93af0655f44a9c03a411c5d4b722f43a05590bfff8ee32c80eeb5",
-      "last_checked": "2026-08-21T07:38:23.947315",
+      "last_checked": "2026-08-25T07:35:55.831067",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"48fb-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue.json": {
       "hash": "0fd0395f1dc8ea3351fa8a3bbbc39ce3b1f76ca84a5e8c023b0463866c2f96f1",
-      "last_checked": "2026-08-21T07:38:24.350109",
+      "last_checked": "2026-08-25T07:35:55.973632",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3ec5-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/inferencevalue.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/imagedescriptor.json": {
       "hash": "32f97a90fcf488728c8fea86c272b7ac131e7744edd0eea2660e90bf04842ab0",
-      "last_checked": "2026-08-21T07:38:24.493674",
+      "last_checked": "2026-08-25T07:35:56.095353",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2a0c-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/imagedescriptor.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computestream.json": {
       "hash": "88a069129e78e29c49a0cd4c3b3e69143e562340327640a61e61fd464ddf3276",
-      "last_checked": "2026-08-21T07:38:24.922296",
+      "last_checked": "2026-08-25T07:35:56.221403",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2cb2-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/computestream.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray.json": {
       "hash": "cd343047c53d3542dc7fa110d6c1f8f6bde59277eceb278ed15af09162f066ba",
-      "last_checked": "2026-08-21T07:38:25.275108",
+      "last_checked": "2026-08-25T07:35:56.353937",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"6ad2-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor.json": {
       "hash": "1b6bbfb3c33697145c70e23f77015b2da6a92ba3861efb2bb71beb36833f5fd6",
-      "last_checked": "2026-08-21T07:38:25.464090",
+      "last_checked": "2026-08-25T07:35:56.499494",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3cba-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/managing-model-specialization-and-caching.json": {
       "hash": "fbd378a139b3700d307c8134122874d896308da95c9f66e0aa70307c1ef18062",
-      "last_checked": "2026-08-21T07:38:25.626424",
+      "last_checked": "2026-08-25T07:35:56.629766",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"8d36-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/managing-model-specialization-and-caching.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/compiling-core-ai-models-ahead-of-time.json": {
       "hash": "6de9f5caf122e15744a6c557c881172a8f0485624cadfbaff0f0168bc470f128",
-      "last_checked": "2026-08-21T07:38:25.861433",
+      "last_checked": "2026-08-25T07:35:56.744797",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3cf4-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/compiling-core-ai-models-ahead-of-time.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache.json": {
       "hash": "fbde26088d7b183c4e997d80397ec3f37d93d80ba0d4d1208c3f956b4d7feead",
-      "last_checked": "2026-08-21T07:38:26.009572",
+      "last_checked": "2026-08-25T07:35:56.883275",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3ed2-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/aimodelcache.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computeunitkind.json": {
       "hash": "4b89f7690e233d59d7454762f97af4cc54adf6156869fa30cc0dad5f670d289c",
-      "last_checked": "2026-08-21T07:38:26.141368",
+      "last_checked": "2026-08-25T07:35:57.010102",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2e18-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/computeunitkind.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/specializationoptions.json": {
       "hash": "d3012b6d19036b0959c31cf697986e60c4a7a2327fce24f7971cc52394e2106d",
-      "last_checked": "2026-08-21T07:38:26.267816",
+      "last_checked": "2026-08-25T07:35:57.133928",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"36d6-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/specializationoptions.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inspecting-debugging-and-profiling-core-ai-models.json": {
       "hash": "def36c0b30ae0b3b844994d4f68e7243407e34f332d8bd8bdadae2d98fd46859",
-      "last_checked": "2026-08-21T07:38:26.496864",
+      "last_checked": "2026-08-25T07:35:57.265655",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2cc1-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inspecting-debugging-and-profiling-core-ai-models.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror.json": {
       "hash": "08ec9988aedef345d2f20aa90832668c9e34b7e85737d7c9f764ff3c2bd9d692",
-      "last_checked": "2026-08-21T07:38:26.635131",
+      "last_checked": "2026-08-25T07:35:57.408911",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2743-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/asseterror.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/init(contentsof:options:).json": {
       "hash": "641eda26adaaa3634e80cf62feb64fe5029c3fc19d451688ade3b71364300146",
-      "last_checked": "2026-08-21T07:38:26.779051",
+      "last_checked": "2026-08-25T07:35:57.547669",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2deb-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/init-contentsofoptions.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/init(resolvingbookmark:).json": {
       "hash": "70a52c52e175f96cf757e83129ceb9e153f1d21ac66acbc251045a483db52e7e",
-      "last_checked": "2026-08-21T07:38:26.921254",
+      "last_checked": "2026-08-25T07:35:57.679582",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2027-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/init-resolvingbookmark.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/loadfunction(named:).json": {
       "hash": "df05cabd0d2536097abab32e8eadf1aab2514634d7e1d492609bb96e7d076be1",
-      "last_checked": "2026-08-21T07:38:27.162322",
+      "last_checked": "2026-08-25T07:35:57.821129",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2152-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/loadfunction-named.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/functiondescriptor(for:).json": {
       "hash": "acd7984902f25e102a9865d2e9fca43b9eb5eae5f3e3659b0090830143911953",
-      "last_checked": "2026-08-21T07:38:27.315296",
+      "last_checked": "2026-08-25T07:35:57.938161",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2247-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/functiondescriptor-for.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/functionnames.json": {
       "hash": "73aa4f5dc499a8f40b6f4279ae6e4005919bf1ae589141258377496f5d416973",
-      "last_checked": "2026-08-21T07:38:27.455928",
+      "last_checked": "2026-08-25T07:35:58.063478",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1c92-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/functionnames.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/specialize(contentsof:options:cache:cachepolicy:).json": {
       "hash": "3be74052a33c2d4627a079dfc9d07e5cfa0a6bd787b76ccb4249f92d7a84621e",
-      "last_checked": "2026-08-21T07:38:27.607317",
+      "last_checked": "2026-08-25T07:35:58.192777",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"31d9-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/specialize-contentsofoptionscachecachepolicy.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/bookmarkdata.json": {
       "hash": "a161ca50aee1512e0ed76c76de13dc4997baf371e55c135b7c71c5064772d5c0",
-      "last_checked": "2026-08-21T07:38:27.818056",
+      "last_checked": "2026-08-25T07:35:58.305089",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"18e7-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/bookmarkdata.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodel/devicearchitecturename.json": {
       "hash": "1040b6c81fd53d1225cd9ab91018079fea169b8762806e8ceb1564113cc2b3bf",
-      "last_checked": "2026-08-21T07:38:27.973036",
+      "last_checked": "2026-08-25T07:35:58.431101",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ae1-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/aimodel/devicearchitecturename.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/init(contentsof:).json": {
       "hash": "dac098b79b4f5d4ee2690c599b6a9623dedfeb608bdddbfb54093aa290e36349",
-      "last_checked": "2026-08-21T07:38:28.173226",
+      "last_checked": "2026-08-25T07:35:58.565221",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"17cd-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/init-contentsof.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/isvalid(at:).json": {
       "hash": "b744c7685bef258885c84601b9bc6a13707f66bdc7c2300740d46fca4c322177",
-      "last_checked": "2026-08-21T07:38:28.326087",
+      "last_checked": "2026-08-25T07:35:58.688936",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f73-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/isvalid-at.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.property.json": {
       "hash": "1fff59b3ecdaa554634ef1c8863a36179ab0c8a101a3dbd17e7840394f0a890c",
-      "last_checked": "2026-08-21T07:38:28.483219",
+      "last_checked": "2026-08-25T07:35:58.814572",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1c59-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swiftproperty.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary(includingstatistics:).json": {
       "hash": "34537a483d05127c1b1be7c665fc3ef0649e17170101044daa54a89e3592d9e6",
-      "last_checked": "2026-08-21T07:38:28.643013",
+      "last_checked": "2026-08-25T07:35:58.934134",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"23a4-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary-includingstatistics.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/url.json": {
       "hash": "dfe6e40b1dbaa3e12db7107e549e06340c6bbcc2cebf450f4c51eec962ef02f5",
-      "last_checked": "2026-08-21T07:38:28.777404",
+      "last_checked": "2026-08-25T07:35:59.066811",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"19f5-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/url.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/updatemetadata(_:).json": {
       "hash": "01f7831f6a05e6f4f1f93407ffb9391c8c7f794bdb0c39e66c48162bb81fadbe",
-      "last_checked": "2026-08-21T07:38:28.968241",
+      "last_checked": "2026-08-25T07:35:59.204602",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2177-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/updatemetadata.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/removederivedartifacts().json": {
       "hash": "19028dea0a9b04e12e4f414cee4949ee0ba92e268b532b831f110d325566d162",
-      "last_checked": "2026-08-21T07:38:29.210071",
+      "last_checked": "2026-08-25T07:35:59.331687",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"147b-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/removederivedartifacts.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/functiondescriptor.json": {
       "hash": "e0d2b49dedbd93cd746e06588b8842476d1659d765ccd70ebc161eba4ed78c5c",
-      "last_checked": "2026-08-21T07:38:29.367389",
+      "last_checked": "2026-08-25T07:35:59.445407",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"30fe-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/functiondescriptor.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct.json": {
       "hash": "7e9320aa977abe8992eebe27ce093bd1e38dab0a529c593b356b102407ea66b5",
-      "last_checked": "2026-08-21T07:38:29.500597",
+      "last_checked": "2026-08-25T07:35:59.563140",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"5f99-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swiftstruct.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary.json": {
       "hash": "2b99f751f2daa05e36e067bd4022766c3b5d701644b5485641c828589464758f",
-      "last_checked": "2026-08-21T07:38:29.655913",
+      "last_checked": "2026-08-25T07:35:59.687818",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3a09-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/valuedescriptor.json": {
       "hash": "5412c13a0725d0be6648fa8a5480728df5dec88f6f562495e2df6a6910ebbacf",
-      "last_checked": "2026-08-21T07:38:29.813563",
+      "last_checked": "2026-08-25T07:35:59.800476",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2839-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/valuedescriptor.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/descriptor.json": {
       "hash": "5494b746f390a9c7ffa7b5008e47dca0f025ddf89e41d91fff162cbf0606d68a",
-      "last_checked": "2026-08-21T07:38:30.474042",
+      "last_checked": "2026-08-25T07:36:00.366240",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"133c-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/descriptor.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/inputs.json": {
       "hash": "ac6e79976640a71b038683b4d166fd6c8fe378b920813f3da7370082eab0801d",
-      "last_checked": "2026-08-21T07:38:30.620690",
+      "last_checked": "2026-08-25T07:36:00.487806",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"35a2-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/inputs.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/outputs.json": {
       "hash": "5a826db7238b0642aa83934836ca8e66dddeb33e4eae16ca75842efd018c3e40",
-      "last_checked": "2026-08-21T07:38:30.773309",
+      "last_checked": "2026-08-25T07:36:00.604184",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f5e-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/outputs.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue.json": {
       "hash": "23c86b8418f94860338f706afeebfd9560089aa2e35ea79d9a60c6b382c72207",
-      "last_checked": "2026-08-21T07:38:31.218028",
+      "last_checked": "2026-08-25T07:36:00.875317",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4315-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutablevalue.json": {
       "hash": "6da06df46c1e3729d28b04f8673dcbed9afaaa211eb8e59914d4273d26cc7dc4",
-      "last_checked": "2026-08-21T07:38:31.413284",
+      "last_checked": "2026-08-25T07:36:01.018550",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4290-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutablevalue.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutableviews.json": {
       "hash": "2038dd4d601b2b6a8cf64bf394180af1979cf5239db6f5a5b1ea3d4a2dbcb103",
-      "last_checked": "2026-08-21T07:38:31.562540",
+      "last_checked": "2026-08-25T07:36:01.140273",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e71-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutableviews.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/mutableviews.json": {
       "hash": "bc6f483ec5bec567b1feccb0c7aa795b45e2cba11cdc1a53b046ddbbb3337609",
-      "last_checked": "2026-08-21T07:38:31.024786",
+      "last_checked": "2026-08-25T07:36:00.739053",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2898-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/mutableviews.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/encode(inputs:states:outputviews:to:).json": {
       "hash": "7c72d8205d6c73c6a39b6bcbaa95aaebe77e5142873a3a5003c5ba6c5639785f",
-      "last_checked": "2026-08-21T07:38:30.277421",
+      "last_checked": "2026-08-25T07:36:00.188812",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"5641-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/encode-inputsstatesoutputviewsto.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/run(inputs:states:outputviews:)-14emi.json": {
       "hash": "1c6f6c4a62cfc7c2a03c0c38fcb112d00858510d95203fa546ce0c7e56ffd6b4",
-      "last_checked": "2026-08-21T07:38:30.120885",
+      "last_checked": "2026-08-25T07:36:00.076915",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4b54-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/run-inputsstatesoutputviews-14emi.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/run(inputs:states:outputviews:)-mqfb.json": {
       "hash": "fd6d6a3c862a2a624143637452720cbbb06cdc093bfb5331c13157f820d0d56e",
-      "last_checked": "2026-08-21T07:38:29.996894",
+      "last_checked": "2026-08-25T07:35:59.941620",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4ed6-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/run-inputsstatesoutputviews-mqfb.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/name.json": {
       "hash": "d22c097eec7e76cc64ab4d43f612d33963ef66d30d5c203bef6218ac47f29a9e",
-      "last_checked": "2026-08-21T07:38:31.702895",
+      "last_checked": "2026-08-25T07:36:01.259188",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"120c-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/name.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/inputcount.json": {
       "hash": "8b743bb03efa627e6222a74f6e19d519be6a0142861a58b720993a7afb14e9a2",
-      "last_checked": "2026-08-21T07:38:31.878116",
+      "last_checked": "2026-08-25T07:36:01.377424",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a23-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/inputcount.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/inputnames.json": {
       "hash": "60c1e5bcac36fe434f54e745e2567a10c81774ae43e3e7e18463917bc0654305",
-      "last_checked": "2026-08-21T07:38:32.007426",
+      "last_checked": "2026-08-25T07:36:01.518931",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a79-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/inputnames.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/inputdescriptor(of:).json": {
       "hash": "31c3b54963e1fbb0bf55d386c883dc68b5c0e0a6264af3c8bef227da4bd71616",
-      "last_checked": "2026-08-21T07:38:32.154286",
+      "last_checked": "2026-08-25T07:36:01.636425",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2760-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/inputdescriptor-of.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/outputcount.json": {
       "hash": "78255b83f2d7adf55d902e10bd75096655943066227fbdfb293564520e6bce6e",
-      "last_checked": "2026-08-21T07:38:32.329202",
+      "last_checked": "2026-08-25T07:36:01.760374",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a42-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/outputcount.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/outputnames.json": {
       "hash": "ea3883c0bfe020435a15b96f8ba7523d1d46a6265e0a886394156c1d07eecccc",
-      "last_checked": "2026-08-21T07:38:32.476026",
+      "last_checked": "2026-08-25T07:36:01.890209",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a97-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/outputnames.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/outputdescriptor(of:).json": {
       "hash": "b84184270a1c8951c26499923d8fdf5f6b79fda5a7a71e186327c5c11f6e1184",
-      "last_checked": "2026-08-21T07:38:32.665293",
+      "last_checked": "2026-08-25T07:36:02.033489",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"24dc-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/outputdescriptor-of.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/statenames.json": {
       "hash": "4bfc3f7a1f825bcf68c4de8751375aa7e0b65d5286f46f7479583cce0e5e3a53",
-      "last_checked": "2026-08-21T07:38:32.827077",
+      "last_checked": "2026-08-25T07:36:02.157586",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"22ee-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/statenames.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunctiondescriptor/statedescriptor(of:).json": {
       "hash": "5178a49a80e83900db87e4d855cea903bd7b0d304f844672e88e4ea2284c0e81",
-      "last_checked": "2026-08-21T07:38:32.973030",
+      "last_checked": "2026-08-25T07:36:02.278130",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"21e1-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/inferencefunctiondescriptor/statedescriptor-of.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/kind-swift.property.json": {
       "hash": "587a893422ce5780a48aedd3851c9e10f132531915ce8353396969135fd42fc8",
-      "last_checked": "2026-08-21T07:38:33.125382",
+      "last_checked": "2026-08-25T07:36:02.394041",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1acc-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/kind-swiftproperty.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/ndarray.json": {
       "hash": "670689fb6efc7735d709de55c4da6811b5f4e6851873949d207b28587e4724e5",
-      "last_checked": "2026-08-21T07:38:33.258975",
+      "last_checked": "2026-08-25T07:36:02.530226",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1b1a-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/ndarray.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/init(_:).json": {
       "hash": "676f0cccc3dab1c87e9a10cf5cda346ca98233e05e0516cb366dd06f73d0837e",
-      "last_checked": "2026-08-21T07:38:33.590962",
+      "last_checked": "2026-08-25T07:36:02.791415",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1456-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/init.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/descriptor.json": {
       "hash": "c75db965bf1eae31e7c4c695d8963d47b60e2acab0f2fdfa71847c1b10612853",
-      "last_checked": "2026-08-21T07:38:33.726396",
+      "last_checked": "2026-08-25T07:36:02.924902",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2545-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/descriptor.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/kind-swift.enum.json": {
       "hash": "f687badb2c1c7f82bdbba34b500bc929efa03c008b3b9d14f214be554345f517",
-      "last_checked": "2026-08-21T07:38:33.851376",
+      "last_checked": "2026-08-25T07:36:03.061552",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"220f-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/kind-swiftenum.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/view.json": {
       "hash": "db9883297c72d74d01d0c841f06d165a42d4229aa823fe18513b3c75054c8187",
-      "last_checked": "2026-08-21T07:38:34.004362",
+      "last_checked": "2026-08-25T07:36:03.193350",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1864-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/view.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/mutableview.json": {
       "hash": "88e5449ac25a5bb7097438e7b4d8db56fae67d9dc6fa4f33f3f84a141e15f661",
-      "last_checked": "2026-08-21T07:38:34.205228",
+      "last_checked": "2026-08-25T07:36:03.310495",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1490-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/mutableview.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/namedmutableviews.json": {
       "hash": "d06dc1dbabef5aad205cb495e8b54d5a197be47a58003f17448d2b3356d3c939",
-      "last_checked": "2026-08-21T07:38:34.325565",
+      "last_checked": "2026-08-25T07:36:03.445562",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a11-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/namedmutableviews.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/viewrepresentable.json": {
       "hash": "5ca4228df65a1f789a86bd33014654339d7ac0b9dbb7b1adfe613e1236b10216",
-      "last_checked": "2026-08-21T07:38:34.457400",
+      "last_checked": "2026-08-25T07:36:03.575660",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1999-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/viewrepresentable.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/mutableviewrepresentable.json": {
       "hash": "f75e80fbcd9e36b62b11361f75b90c3d55d50a9ec99f8651d2c1c21dc408fe0d",
-      "last_checked": "2026-08-21T07:38:34.598146",
+      "last_checked": "2026-08-25T07:36:03.709710",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a26-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/mutableviewrepresentable.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/pixelbuffer.json": {
       "hash": "b53e11399c0997e943509bcfc3039967eec909607325f122dc40bb8c8a41195f",
-      "last_checked": "2026-08-21T07:38:33.396516",
+      "last_checked": "2026-08-25T07:36:02.662900",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1de1-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/pixelbuffer.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/imagedescriptor/pixelformattype.json": {
       "hash": "b88db1d7b3e0666e3429241fb631a177853b2180e93b166d2d3cca6be5e94439",
-      "last_checked": "2026-08-21T07:38:34.789180",
+      "last_checked": "2026-08-25T07:36:03.848665",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a84-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/imagedescriptor/pixelformattype.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/imagedescriptor/width.json": {
       "hash": "5afd15f807de9415b3a009d013c290224f22cb815ca42ec255160dd252bd0db0",
-      "last_checked": "2026-08-21T07:38:34.949236",
+      "last_checked": "2026-08-25T07:36:03.975328",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"17f1-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/imagedescriptor/width.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/imagedescriptor/height.json": {
       "hash": "61a55ab99fae236b2c81c88457424e0cb190d85f38e13ae6886e1b5352899a78",
-      "last_checked": "2026-08-21T07:38:35.098531",
+      "last_checked": "2026-08-25T07:36:04.130892",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"17f7-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/imagedescriptor/height.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computestream/init().json": {
       "hash": "2dc6827e00603fba079899e8a3c4aedb7dd2760a9618d7d889cf0dd12b91681b",
-      "last_checked": "2026-08-21T07:38:35.239691",
+      "last_checked": "2026-08-25T07:36:04.245638",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"11b6-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/computestream/init.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computestream/init(commandqueue:).json": {
       "hash": "549c3c9a1debbd5ba2f474583d3da8481e1201a3a2332a9c194a8f300ac08429",
-      "last_checked": "2026-08-21T07:38:35.431313",
+      "last_checked": "2026-08-25T07:36:04.385066",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2376-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/computestream/init-commandqueue.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computestream/currentworkcompleted().json": {
       "hash": "558a8b9869e671fc9af56519eea356a52303b951e7033984349b57ff64fb0885",
-      "last_checked": "2026-08-21T07:38:35.582644",
+      "last_checked": "2026-08-25T07:36:04.523542",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"faf-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/computestream/currentworkcompleted.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/init(shape:scalartype:).json": {
       "hash": "e25f3bd195c7ec9644e11b62a5a02216d727a8fae091573a6d3dfeab8d10ab51",
-      "last_checked": "2026-08-21T07:38:35.700137",
+      "last_checked": "2026-08-25T07:36:04.654618",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2eb2-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/init-shapescalartype.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/init(shape:scalartype:strides:).json": {
       "hash": "459c76edef689dc8af6b84525f9f74987a4d9397938780a6604e3c26d8421ca6",
-      "last_checked": "2026-08-21T07:38:35.839687",
+      "last_checked": "2026-08-25T07:36:04.805203",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3187-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/init-shapescalartypestrides.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/init(descriptor:).json": {
       "hash": "3ebe1384cbf23727f088d59f68adf22e1c43ecee6e0a1b4eeee7ab372239ee63",
-      "last_checked": "2026-08-21T07:38:36.261629",
+      "last_checked": "2026-08-25T07:36:05.169806",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3a57-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/init-descriptor.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/shape.json": {
       "hash": "c0f796c955083e471b7452d2a8ec8fbc4696fa9beebc721504c7a7a8269578b3",
-      "last_checked": "2026-08-21T07:38:36.428860",
+      "last_checked": "2026-08-25T07:36:05.295209",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1bea-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/shape.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.property.json": {
       "hash": "ab6480739320d1afeb869404ba8be9efe974e05b201672fb8470ed3625877b1b",
-      "last_checked": "2026-08-21T07:38:36.574515",
+      "last_checked": "2026-08-25T07:36:05.417839",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1df8-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swiftproperty.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/strides.json": {
       "hash": "9f67fc7350cbb2ef6383557c7f8e5d907fb439e1bbdf01c2ae4867102dc363c6",
-      "last_checked": "2026-08-21T07:38:36.721121",
+      "last_checked": "2026-08-25T07:36:05.542481",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e67-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/strides.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view(as:).json": {
       "hash": "39aa49b3b40411a475a786e37980738beea2fe53f1c1066322a6fd57e63e4360",
-      "last_checked": "2026-08-21T07:38:37.018024",
+      "last_checked": "2026-08-25T07:36:05.819768",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2c1c-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view-as.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview(as:).json": {
       "hash": "7590b6d9e37dfd61534345d66cd84c4ce1543d77c508e270866aa60b049d9a01",
-      "last_checked": "2026-08-21T07:38:37.168319",
+      "last_checked": "2026-08-25T07:36:05.954501",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2f2f-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview-as.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview().json": {
       "hash": "de73ed4645a2ba4a6079318a4150f26bc470ea0add1492b8f943998e04ff4852",
-      "last_checked": "2026-08-21T07:38:37.318057",
+      "last_checked": "2026-08-25T07:36:06.081783",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"210b-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview().json": {
       "hash": "6a0b52eec6472871894409fc639e8d40db8144fd738aa8f6233d4772c29f7f66",
-      "last_checked": "2026-08-21T07:38:37.451022",
+      "last_checked": "2026-08-25T07:36:06.202500",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"21c7-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view.json": {
       "hash": "c7d700f7e7b3585d21f090f27e6e3efff6a2849a5d2b302e7d1165a383654262",
-      "last_checked": "2026-08-21T07:38:37.611406",
+      "last_checked": "2026-08-25T07:36:06.338260",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"5f50-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/view.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview.json": {
       "hash": "cd9b5f0352cd849f76563661d0b75e17226f8997c0b84a0417636a9572922fc0",
-      "last_checked": "2026-08-21T07:38:37.764588",
+      "last_checked": "2026-08-25T07:36:06.449870",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"8002-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview.json": {
       "hash": "4ee2701c51820ace42cd6b48be9c16d648e7f58151272f3b015f70678b7d3b16",
-      "last_checked": "2026-08-21T07:38:37.919085",
+      "last_checked": "2026-08-25T07:36:06.570098",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"5873-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview.json": {
       "hash": "4c330356835491e170b9fff51a520fb178e40de716885d43187d5954ef37d06b",
-      "last_checked": "2026-08-21T07:38:38.055375",
+      "last_checked": "2026-08-25T07:36:06.680219",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"6acc-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum.json": {
       "hash": "132baeee1b32156955ecd64e5bd7146bdfa289ca82f73bafde716cf457db7b56",
-      "last_checked": "2026-08-21T07:38:38.209256",
+      "last_checked": "2026-08-25T07:36:06.806402",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"7876-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swiftenum.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rangeexpression.json": {
       "hash": "6f7332bf1dd895bdb807170633686bac50150bdcd9a8773de705ee7a590f6551",
-      "last_checked": "2026-08-21T07:38:38.487130",
+      "last_checked": "2026-08-25T07:36:07.048397",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e10-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/rangeexpression.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/interleavelayout-swift.struct.json": {
       "hash": "801d6f16724eb849c34d5071d716b46702e3336943ca4a6f1ac8c9dc1bef27a7",
-      "last_checked": "2026-08-21T07:38:38.338676",
+      "last_checked": "2026-08-25T07:36:06.932699",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3628-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/interleavelayout-swiftstruct.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/init(scalars:shape:).json": {
       "hash": "1803bb5e320ff863299669386a579a6362c7e1cd4e8c5c930c6222b8472099bb",
-      "last_checked": "2026-08-21T07:38:36.126192",
+      "last_checked": "2026-08-25T07:36:05.047315",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"367b-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/init-scalarsshape.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/init(shape:scalartype:strides:interleavelayout:).json": {
       "hash": "cb283fb3ad27cb670ac672afb797afb1b6d9207fd9cb75da18669a9267dd4708",
-      "last_checked": "2026-08-21T07:38:35.968788",
+      "last_checked": "2026-08-25T07:36:04.935998",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3914-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/init-shapescalartypestridesinterleavelayout.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/interleavelayout-swift.property.json": {
       "hash": "ae59e5bc69981f7993efa4b717efe9a9b632c68e0df002dce969fb569a8453cb",
-      "last_checked": "2026-08-21T07:38:36.867535",
+      "last_checked": "2026-08-25T07:36:05.700799",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2081-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/interleavelayout-swiftproperty.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/shape.json": {
       "hash": "76e57f93ee6c8faaec2703e050890fa737e2d054f360b421c14e0b7afdf36795",
-      "last_checked": "2026-08-21T07:38:38.633713",
+      "last_checked": "2026-08-25T07:36:07.165308",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2117-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/shape.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/scalartype.json": {
       "hash": "50388bab70924fd810277a66a96b1d13da3ee919d2d7332e12d7f91af2952a2b",
-      "last_checked": "2026-08-21T07:38:38.774418",
+      "last_checked": "2026-08-25T07:36:07.285090",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2326-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/scalartype.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/rank.json": {
       "hash": "8e26049fbf440f62c3ed30ff696ba8a7d9a011e883b532230758edea5632d67e",
-      "last_checked": "2026-08-21T07:38:38.919974",
+      "last_checked": "2026-08-25T07:36:07.419909",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1eeb-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/rank.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/hasdynamicshape.json": {
       "hash": "607e31508f9c1f1271f25bdf27b3b91516bdcf6a07f16590657b4bb5889f9bc2",
-      "last_checked": "2026-08-21T07:38:39.121001",
+      "last_checked": "2026-08-25T07:36:07.541189",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1fde-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/hasdynamicshape.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/interleavelayout.json": {
       "hash": "e55df50c92575cca49877193d463ce8ed45241ccae7a68c3c493c1891d83457d",
-      "last_checked": "2026-08-21T07:38:39.314022",
+      "last_checked": "2026-08-25T07:36:07.671261",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"26f5-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/interleavelayout.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/minimumbytecount.json": {
       "hash": "52158901863c69f63a9dfa8ae9954bd8f58f5454c887bec6e518897da305263b",
-      "last_checked": "2026-08-21T07:38:39.467866",
+      "last_checked": "2026-08-25T07:36:07.818795",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ec1-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/minimumbytecount.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/preferredstrides.json": {
       "hash": "46289bec7bb1084d29f603d264303195d0fdbaec7ba32bd5fe65409ca180ee5b",
-      "last_checked": "2026-08-21T07:38:39.607044",
+      "last_checked": "2026-08-25T07:36:07.943844",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"242c-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/preferredstrides.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarraydescriptor/resolvingdynamicdimensions(_:).json": {
       "hash": "d7607fc0b97befb7a2198170434d2f2083e29a4cff8ef26f55098e6c9d43ee0f",
-      "last_checked": "2026-08-21T07:38:39.762563",
+      "last_checked": "2026-08-25T07:36:08.071157",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1cda-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/ndarraydescriptor/resolvingdynamicdimensions.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy.json": {
       "hash": "29d68085cb8cffd8ebc07623d4f256c038ddac498ac47783235d9e5c78c2e775",
-      "last_checked": "2026-08-21T07:38:40.992731",
+      "last_checked": "2026-08-25T07:36:09.118429",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3890-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/init(appgroup:).json": {
       "hash": "35c35f263daa490caa9c29a5b06958eb2913c358c1f14f4262a47738e8682ceb",
-      "last_checked": "2026-08-21T07:38:40.070002",
+      "last_checked": "2026-08-25T07:36:08.332649",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a43-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/init-appgroup.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/deleteall().json": {
       "hash": "6fd2d590708b7e7f5b35d91f0f46f69ec3e0fb202aa64c7ff7998eeeed879fff",
-      "last_checked": "2026-08-21T07:38:40.717436",
+      "last_checked": "2026-08-25T07:36:08.855546",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2392-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/deleteall.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/deleteentries(for:).json": {
       "hash": "1ca3bd21611ea354fa40222f5badc0cb598aab06e0597e88cc17e90529e04936",
-      "last_checked": "2026-08-21T07:38:40.580805",
+      "last_checked": "2026-08-25T07:36:08.715230",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"301e-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/deleteentries-for.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/deleteentry(for:options:).json": {
       "hash": "53c9c9a6fd00823358eb971c9f89f941b0e193b29e7887c98d3c12489727979b",
-      "last_checked": "2026-08-21T07:38:40.410912",
+      "last_checked": "2026-08-25T07:36:08.596285",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2cdc-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/deleteentry-foroptions.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/model(for:options:).json": {
       "hash": "b27b4b474810c11facb9705fb70a0813205e385803a14f3de55b330fdd17a339",
-      "last_checked": "2026-08-21T07:38:40.204891",
+      "last_checked": "2026-08-25T07:36:08.475812",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2594-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/model-foroptions.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/default.json": {
       "hash": "bb16353bc6da753bdcd76f619fbc6fdc393d9f7d486ecef8343ed52b9bc79ff6",
-      "last_checked": "2026-08-21T07:38:39.911349",
+      "last_checked": "2026-08-25T07:36:08.199064",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1c24-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/default.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/deleteentry(referencedby:).json": {
       "hash": "164e3bb74202063c92aae5e162fd0780e76fdcbbac9abc7f33fdf58739d2e143",
-      "last_checked": "2026-08-21T07:38:40.840308",
+      "last_checked": "2026-08-25T07:36:08.988290",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"279e-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/deleteentry-referencedby.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computeunitkind/cpu.json": {
       "hash": "85e8745f5ab0f3004d5fe2a74b9c8328cc562a67f07db669ded3034e02ce9149",
-      "last_checked": "2026-08-21T07:38:41.118291",
+      "last_checked": "2026-08-25T07:36:09.239989",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"12b9-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/computeunitkind/cpu.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computeunitkind/gpu.json": {
       "hash": "ba848ef18a7037d7713c98e36f0901e2259427140b5811b9ffbb12a9cdc9c6a6",
-      "last_checked": "2026-08-21T07:38:41.281432",
+      "last_checked": "2026-08-25T07:36:09.380162",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"12ba-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/computeunitkind/gpu.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computeunitkind/neuralengine.json": {
       "hash": "9e9de3ea8417659546b7123673a8bc3c5aacb88f00b87172330f272be16ec0d0",
-      "last_checked": "2026-08-21T07:38:41.480440",
+      "last_checked": "2026-08-25T07:36:09.502903",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"12dd-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/computeunitkind/neuralengine.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/computeunitkind/availablekinds.json": {
       "hash": "ae0bae042a7aa6c5337f02a647077be0e3292d55404b942a3d41551a8a14d246",
-      "last_checked": "2026-08-21T07:38:41.632711",
+      "last_checked": "2026-08-25T07:36:09.642237",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1770-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/computeunitkind/availablekinds.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/specializationoptions/default.json": {
       "hash": "9408eeb5c650b71b2a588895f21546ab06c2231cff08f0f94e9119d9e8470c7e",
-      "last_checked": "2026-08-21T07:38:41.772267",
+      "last_checked": "2026-08-25T07:36:09.767924",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"15d5-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/specializationoptions/default.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/specializationoptions/cpuonly.json": {
       "hash": "1275b2190dc216e4dc36adaeba6efab29158aa4c7b544141443aca9855da6c20",
-      "last_checked": "2026-08-21T07:38:41.919775",
+      "last_checked": "2026-08-25T07:36:09.902221",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1624-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/specializationoptions/cpuonly.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/specializationoptions/init(preferredcomputeunitkind:).json": {
       "hash": "7da97c479cb364e50d7818a46c3ed899988cc36cc2f8e3fe5dcd98bac65e7924",
-      "last_checked": "2026-08-21T07:38:42.054209",
+      "last_checked": "2026-08-25T07:36:10.033862",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"186b-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/specializationoptions/init-preferredcomputeunitkind.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/specializationoptions/allowedcomputeunitkinds.json": {
       "hash": "c49d993ed81c4e394ac24e07ebbb5af9db3a4f5a472cfdfc5ff3d30bbe4fbd6c",
-      "last_checked": "2026-08-21T07:38:42.200576",
+      "last_checked": "2026-08-25T07:36:10.186658",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1bcf-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/specializationoptions/allowedcomputeunitkinds.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/specializationoptions/expectfrequentreshapes.json": {
       "hash": "dee0c4ed57dfd9a513aed896e8c84eac6ce48d45da0772ba051e867d8ba43eca",
-      "last_checked": "2026-08-21T07:38:42.512112",
+      "last_checked": "2026-08-25T07:36:10.452391",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"154d-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/specializationoptions/expectfrequentreshapes.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/specializationoptions/preferredcomputeunitkind.json": {
       "hash": "f5a8b19a7e5cb3c2a6acba92782adf05af6fc347c1ba909f87c54a13bd40a53f",
-      "last_checked": "2026-08-21T07:38:42.347143",
+      "last_checked": "2026-08-25T07:36:10.326064",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1c04-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/specializationoptions/preferredcomputeunitkind.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/monitoring-model-performance-with-the-debug-gauge.json": {
       "hash": "02ae62934c6cb089cc6558504cf71cb3c43dca399fdecaf53eb56595473ac070",
-      "last_checked": "2026-08-21T07:38:42.659368",
+      "last_checked": "2026-08-25T07:36:10.573204",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4d90-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/monitoring-model-performance-with-the-debug-gauge.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/analyzing-model-runtime-performance-with-instruments.json": {
       "hash": "20413e0be0118e52a115563228a2a883e85c0e7d1206f3fe5d0224987c02092f",
-      "last_checked": "2026-08-21T07:38:42.804149",
+      "last_checked": "2026-08-25T07:36:10.700877",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3c5a-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/analyzing-model-runtime-performance-with-instruments.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inspecting-core-ai-models-with-core-ai-debugger.json": {
       "hash": "7dd99f0b55a340077e89031ecc17c416348b9381e8fd12a2584bf9325b2b798d",
-      "last_checked": "2026-08-21T07:38:42.955000",
+      "last_checked": "2026-08-25T07:36:10.834871",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3ce5-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inspecting-core-ai-models-with-core-ai-debugger.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/validating-inference-correctness-against-a-reference-run.json": {
       "hash": "6e5f00ecd959dbbf15b0a7d535eb7dedaaa02b1f6664bc59fb48692227568f42",
-      "last_checked": "2026-08-21T07:38:43.149957",
+      "last_checked": "2026-08-25T07:36:10.951899",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3936-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/validating-inference-correctness-against-a-reference-run.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/kind-swift.property.json": {
       "hash": "149c6bbe64e3bad99567b5ab7ac974238c3f1e0abb993f3929ef15a4a791cb90",
-      "last_checked": "2026-08-21T07:38:43.302958",
+      "last_checked": "2026-08-25T07:36:11.071030",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"19a4-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/kind-swiftproperty.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/debugmessage.json": {
       "hash": "e64c82637ffac3c0242e83f90f5efc538be700dd4b8647f6521a39de80adc472",
-      "last_checked": "2026-08-21T07:38:43.515387",
+      "last_checked": "2026-08-25T07:36:11.187828",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"184c-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/debugmessage.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/errordescription.json": {
       "hash": "4eaa6fcb8dc5c269622c7c20916dfad101da647c44b560bb1b4939cb35a7d471",
-      "last_checked": "2026-08-21T07:38:43.678975",
+      "last_checked": "2026-08-25T07:36:11.304367",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"188e-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/errordescription.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/init(kind:debugmessage:).json": {
       "hash": "134d6f2f79bf072a7bac185e46293ab312a27ac654d227f22b472c4a5473a21b",
-      "last_checked": "2026-08-21T07:38:43.834303",
+      "last_checked": "2026-08-25T07:36:11.437205",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"19a7-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/init-kinddebugmessage.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/kind-swift.enum.json": {
       "hash": "12f8fa2f14121a43b699fc1ce627138d7c9ca589469261981d4c23c92a09f6a8",
-      "last_checked": "2026-08-21T07:38:43.997084",
+      "last_checked": "2026-08-25T07:36:11.564393",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2387-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/kind-swiftenum.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/functiondescriptor/name.json": {
       "hash": "f937c68e96ebeeb4c39dee90155c9ebd2817cabf87ccc386b568281b7c2496f5",
-      "last_checked": "2026-08-21T07:38:44.185193",
+      "last_checked": "2026-08-25T07:36:11.679102",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1c5e-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/functiondescriptor/name.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/functiondescriptor/inputs.json": {
       "hash": "dea2e29214247de951531f49f1c34743412f717b17272c1a2cb08cf62141927f",
-      "last_checked": "2026-08-21T07:38:44.337699",
+      "last_checked": "2026-08-25T07:36:11.805339",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ed4-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/functiondescriptor/inputs.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/functiondescriptor/outputs.json": {
       "hash": "88c86d08d409b54a2460a42388f568410c0853a4134e928964c4d4118e330c92",
-      "last_checked": "2026-08-21T07:38:44.465648",
+      "last_checked": "2026-08-25T07:36:11.926788",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1eda-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/functiondescriptor/outputs.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/functiondescriptor/states.json": {
       "hash": "8a528276ccf950e6f08ecea8947962eca56d861081fe964e90364f7f6d34732a",
-      "last_checked": "2026-08-21T07:38:44.666288",
+      "last_checked": "2026-08-25T07:36:12.058505",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"17e9-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/functiondescriptor/states.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/init().json": {
       "hash": "60c7f87de06997dee94ddb3c46249315a542aedf0c05fd72d6935736ad80bc20",
-      "last_checked": "2026-08-21T07:38:44.830555",
+      "last_checked": "2026-08-25T07:36:12.189239",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1083-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/init.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/description.json": {
       "hash": "86a382c4f47cc545e9fde29d7b86e3dc23bde1fe9b5c8049bc98ef037bc00401",
-      "last_checked": "2026-08-21T07:38:44.988842",
+      "last_checked": "2026-08-25T07:36:12.306237",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f6a-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/description.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/author.json": {
       "hash": "f4a137a3e24333d01eef8a3ffe8dc38f5b2be1c3e4864408b69d1c3a3e54be2c",
-      "last_checked": "2026-08-21T07:38:45.144110",
+      "last_checked": "2026-08-25T07:36:12.450993",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f42-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/author.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/license.json": {
       "hash": "408f2ae807706e536075ade10f0e233dbd67409f05d0448c44ea0def163bf367",
-      "last_checked": "2026-08-21T07:38:45.282949",
+      "last_checked": "2026-08-25T07:36:12.580795",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f46-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/license.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creationdate.json": {
       "hash": "6b670c884aa6fa7c7c186c719faf6e2f063e2cb5c4a7ab374e63b1591e1c1909",
-      "last_checked": "2026-08-21T07:38:45.458084",
+      "last_checked": "2026-08-25T07:36:12.711039",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ed9-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creationdate.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedmetadata.json": {
       "hash": "5d003fd846e323bb85eb308bafbbee0b6d7e7cd93d023e9538a9610676a33f5c",
-      "last_checked": "2026-08-21T07:38:45.607002",
+      "last_checked": "2026-08-25T07:36:12.858810",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3dcb-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedmetadata.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/subscript(_:_:)-44ov4.json": {
       "hash": "d3cf5695c9eb7c4cd8c9ed44263dbf0768e8696e7c49dbeb01f852d4370f91f0",
-      "last_checked": "2026-08-21T07:38:45.752192",
+      "last_checked": "2026-08-25T07:36:12.988222",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"37ac-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/subscript-44ov4.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/subscript(_:_:)-50v52.json": {
       "hash": "a58b14f899b3ace790cce79bd7fbcda03e8c4c1c3ebe6f51e53a3b7f875b0415",
-      "last_checked": "2026-08-21T07:38:45.890174",
+      "last_checked": "2026-08-25T07:36:13.232077",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"39fe-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/subscript-50v52.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/subscript(_:_:)-5o1kb.json": {
       "hash": "aabb5046a14d649b4968f91cac8a171545b05ce73b5d0b6331634965ff033442",
-      "last_checked": "2026-08-21T07:38:46.028921",
+      "last_checked": "2026-08-25T07:36:13.355962",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4175-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/subscript-5o1kb.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/subscript(_:_:)-5se5j.json": {
       "hash": "89ce47b4231c45913a36a8368cf4c7552466a9a6bc475746cc1184ce58de15a4",
-      "last_checked": "2026-08-21T07:38:46.187974",
+      "last_checked": "2026-08-25T07:36:13.488193",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"43a6-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/subscript-5se5j.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/subscript(_:_:)-6bxrd.json": {
       "hash": "ff491e617be1aecb8465fc70e3cb4c2420c11d14c8e643f56053b337df672dde",
-      "last_checked": "2026-08-21T07:38:46.352378",
+      "last_checked": "2026-08-25T07:36:13.620404",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"39a6-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/subscript-6bxrd.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/subscript(_:_:)-9hpy0.json": {
       "hash": "ebf5ea77d410667bebaa2d48b2d452287835538dc3f74e6cad69a25d2af1f5be",
-      "last_checked": "2026-08-21T07:38:46.506046",
+      "last_checked": "2026-08-25T07:36:13.752126",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3965-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/subscript-9hpy0.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue.json": {
       "hash": "6872465cd6cf4670bc6a673c46db7fe60a8adf6a6e1bf26fd146deeb1ce41217",
-      "last_checked": "2026-08-21T07:38:46.681937",
+      "last_checked": "2026-08-25T07:36:13.875259",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"6f17-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/computetypes.json": {
       "hash": "20bb820aee7d832bc0c999c6776e2e1b46ef17d6e42783f4296d2ea719be255a",
-      "last_checked": "2026-08-21T07:38:46.865499",
+      "last_checked": "2026-08-25T07:36:13.992457",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1969-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/computetypes.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/storagetypes.json": {
       "hash": "74fa8c7d8d341989d100683ce44723fefa4609cae1cdae7f36fd8ea04e9535ef",
-      "last_checked": "2026-08-21T07:38:46.987461",
+      "last_checked": "2026-08-25T07:36:14.125349",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1d2a-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/storagetypes.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/operationdistribution.json": {
       "hash": "03cf8a646d8ed0ebd308f153c5e7980268377285e78e6d22e35b05c301a297f0",
-      "last_checked": "2026-08-21T07:38:47.105774",
+      "last_checked": "2026-08-25T07:36:14.265735",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a42-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/operationdistribution.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/functions.json": {
       "hash": "3dc3fa54cb8f73c40b40b31799ea4f556f7adfb36bc24989a2f6b6fae3fc8268",
-      "last_checked": "2026-08-21T07:38:47.229063",
+      "last_checked": "2026-08-25T07:36:14.380726",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"179e-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/functions.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/operationcount.json": {
       "hash": "7f4700ee7b1a6a281fd9c46299177d8c41501c7bbbaeee427f38834d0a54b964",
-      "last_checked": "2026-08-21T07:38:47.381192",
+      "last_checked": "2026-08-25T07:36:14.544571",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2622-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/operationcount.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/storagetype.json": {
       "hash": "425323cf34aea747fd3ed95878853c04823ccf1d208794d649dee3f809981c01",
-      "last_checked": "2026-08-21T07:38:47.521349",
+      "last_checked": "2026-08-25T07:36:14.672971",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"25d6-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/storagetype.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/valuedescriptor/name.json": {
       "hash": "4b7f962b0626948d8503c8133c535bc5ebdaac3f15f2b89bec6fc1fa5ec04fe1",
-      "last_checked": "2026-08-21T07:38:47.681226",
+      "last_checked": "2026-08-25T07:36:14.805314",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"178c-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/valuedescriptor/name.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/valuedescriptor/typename.json": {
       "hash": "4020ad8e3b1456480b6ce5f1306224629f2d3ba78ee014c8377ac5da5905c28c",
-      "last_checked": "2026-08-21T07:38:47.840309",
+      "last_checked": "2026-08-25T07:36:14.954928",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"17a5-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/valuedescriptor/typename.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/inputs/init().json": {
       "hash": "afaf566033ecb616a008e8b287d36413fae6dccd916f99304a7504eeb41084ba",
-      "last_checked": "2026-08-21T07:38:48.009304",
+      "last_checked": "2026-08-25T07:36:15.073354",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1057-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/inputs/init.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/inputs/insert(_:for:)-3eg32.json": {
       "hash": "96486e8c3ffe96d6a5ccf4dbdb0e8e3d875e07fbd80f8cc9c45a80d2fea132f2",
-      "last_checked": "2026-08-21T07:38:48.154837",
+      "last_checked": "2026-08-25T07:36:15.201561",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2b67-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/inputs/insert-for-3eg32.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/inputs/insert(_:for:)-2htrp.json": {
       "hash": "377c539f79f307eb2cc06debb0a48a3ed85bf5489ca8485a4c8b4f94febb495b",
-      "last_checked": "2026-08-21T07:38:48.302039",
+      "last_checked": "2026-08-25T07:36:15.334388",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2cfa-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/inputs/insert-for-2htrp.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/inputs/insert(_:for:)-5o5oi.json": {
       "hash": "7147185a10e0227840803a9b35a82f9d2b2db750a234abab88a1d0973e891be4",
-      "last_checked": "2026-08-21T07:38:48.609019",
+      "last_checked": "2026-08-25T07:36:15.467664",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2fcd-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/inputs/insert-for-5o5oi.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/outputs/remove(_:).json": {
       "hash": "087d56d5dc78c33314ed9a27e723f205d644f2117fb11dcd6b308a26241fe16b",
-      "last_checked": "2026-08-21T07:38:48.767962",
+      "last_checked": "2026-08-25T07:36:15.592629",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"261f-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/outputs/remove.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/outputs/count.json": {
       "hash": "acc3b9751097842facd3e1290ddb44730a2c1197b06718988b1c0c6c834b60df",
-      "last_checked": "2026-08-21T07:38:48.979147",
+      "last_checked": "2026-08-25T07:36:15.716874",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1bd4-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/outputs/count.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/outputs/names.json": {
       "hash": "7ab6d6d11f5636404c2379ca20b0285ff782c57d548f56ef76fbd7239da557c1",
-      "last_checked": "2026-08-21T07:38:49.170290",
+      "last_checked": "2026-08-25T07:36:15.854763",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2040-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/outputs/names.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue/init(_:)-5qtut.json": {
       "hash": "64f936b2bddbdee7283c1677f848869fb34d5eba3a4403662b7de92e65a98ea2",
-      "last_checked": "2026-08-21T07:38:50.094407",
+      "last_checked": "2026-08-25T07:36:16.552482",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2827-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue/init-5qtut.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue/init(_:)-90hbj.json": {
       "hash": "8cbab24208c4709bb5bfdf48df05d240c59058295fc100b4885d935b07e3f666",
-      "last_checked": "2026-08-21T07:38:50.259205",
+      "last_checked": "2026-08-25T07:36:16.742438",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2bd2-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue/init-90hbj.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue/init(_:)-9wk3.json": {
       "hash": "e4ab995cda5680cf9c38315961168b4860a63aafdd5e36a4daaec48c60dd934d",
-      "last_checked": "2026-08-21T07:38:50.432399",
+      "last_checked": "2026-08-25T07:36:16.904430",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"27ca-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue/init-9wk3.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue/init(unsafebuffer:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "022eaf508583dc9009cf83ea34384fc344788e14612b51d2f3b858ee53d07b06",
-      "last_checked": "2026-08-21T07:38:50.631973",
+      "last_checked": "2026-08-25T07:36:17.034055",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"44f3-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue/init-unsafebufferbyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue/kind.json": {
       "hash": "bfa2c1fc76cec279257c9360d3187d12b97f99ece7e157123eefe4ed8c57d7d0",
-      "last_checked": "2026-08-21T07:38:50.906530",
+      "last_checked": "2026-08-25T07:36:17.217043",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2127-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue/kind.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue/ndarray.json": {
       "hash": "a358788090bb17e73c11341a09e37c4af4096bd0d7c3aa625c2715536d101857",
-      "last_checked": "2026-08-21T07:38:51.065401",
+      "last_checked": "2026-08-25T07:36:17.377806",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"211e-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue/ndarray.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncvalue/pixelbuffer.json": {
       "hash": "b43de4e54adda35d6b68127859423d206c7b982cf80143ab0c51117f9d13d2be",
-      "last_checked": "2026-08-21T07:38:51.383200",
+      "last_checked": "2026-08-25T07:36:17.535098",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2055-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncvalue/pixelbuffer.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutablevalue/init(_:)-4aqgq.json": {
       "hash": "037d9f3f86875b70cd4fc40db7759f4333c0f189750263de5b3b4ad6328c828e",
-      "last_checked": "2026-08-21T07:38:51.590420",
+      "last_checked": "2026-08-25T07:36:17.665899",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"29da-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutablevalue/init-4aqgq.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutablevalue/init(_:)-x6se.json": {
       "hash": "d8aaf302f3ff1173d3511132bb0fd245c6c47b30ecbdf2087151f2268edc52c3",
-      "last_checked": "2026-08-21T07:38:51.867766",
+      "last_checked": "2026-08-25T07:36:17.790735",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2a26-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutablevalue/init-x6se.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutablevalue/init(descriptor:).json": {
       "hash": "6b44233187e9f61d804ccb3be81c9920d85feb22766ad47d276183071d04a55c",
-      "last_checked": "2026-08-21T07:38:52.201969",
+      "last_checked": "2026-08-25T07:36:17.956836",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2e7d-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutablevalue/init-descriptor.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutablevalue/init(unsafebuffer:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "b6724cfc70e3231842d3993ee94857a42dd0f7155eb6c609e94bd8373ac7d92a",
-      "last_checked": "2026-08-21T07:38:52.370533",
+      "last_checked": "2026-08-25T07:36:18.089122",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"45c4-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutablevalue/init-unsafebufferbyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutablevalue/ndarray.json": {
       "hash": "117daf47634ff4cf1f2a44038693fcf55d1defe3cc16fcf698347b8d7bb24dd8",
-      "last_checked": "2026-08-21T07:38:52.536692",
+      "last_checked": "2026-08-25T07:36:18.217603",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1dbc-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutablevalue/ndarray.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutablevalue/pixelbuffer.json": {
       "hash": "0ebd0653fe64db34d08c868b0d75093fa392a6ba4707c7b271f597098db4eabd",
-      "last_checked": "2026-08-21T07:38:52.717950",
+      "last_checked": "2026-08-25T07:36:18.330210",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1cc6-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutablevalue/pixelbuffer.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutableviews/init().json": {
       "hash": "927ea23e4e6f2eb6f8ce2a485d6ddb592c1aafb1a016bc479ba9e488def51486",
-      "last_checked": "2026-08-21T07:38:52.876163",
+      "last_checked": "2026-08-25T07:36:19.257835",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1193-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutableviews/init.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/asyncmutableviews/insert(_:for:).json": {
       "hash": "e8a0c654986e6c1e8c6b8df718501e111d71119e5fdf8b7a4dd6e66ed830671e",
-      "last_checked": "2026-08-21T07:38:53.178878",
+      "last_checked": "2026-08-25T07:36:19.427776",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2163-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/asyncmutableviews/insert-for.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/mutableviews/init().json": {
       "hash": "a40d87e93e52d0c30fb203254895d9d98a18f240f4a00bb3d50ed0f97dda8628",
-      "last_checked": "2026-08-21T07:38:49.350266",
+      "last_checked": "2026-08-25T07:36:16.016691",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1139-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/mutableviews/init.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/mutableviews/insert(_:for:)-1b2yx.json": {
       "hash": "828cf514e944de7872c0664408e2855e00647961cd637b1dea3af5f1d68cc943",
-      "last_checked": "2026-08-21T07:38:49.526093",
+      "last_checked": "2026-08-25T07:36:16.132401",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2eca-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/mutableviews/insert-for-1b2yx.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/mutableviews/insert(_:for:)-8ossp.json": {
       "hash": "663b66d0671260fbcdf5d981c238f325534d573321dcb79434619e62a74bb54a",
-      "last_checked": "2026-08-21T07:38:49.704529",
+      "last_checked": "2026-08-25T07:36:16.244897",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"31bc-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/mutableviews/insert-for-8ossp.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencefunction/mutableviews/insert(_:for:)-9ixpc.json": {
       "hash": "c802aa6805e5c80e44750753d445a3f6eb66214f9e8f80d695be3cc50649cac1",
-      "last_checked": "2026-08-21T07:38:49.891905",
+      "last_checked": "2026-08-25T07:36:16.381689",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2d93-6585815cdef3b-df\"",
       "file_path": "documentation/CoreAI/inferencefunction/mutableviews/insert-for-9ixpc.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/descriptor/image(_:).json": {
       "hash": "c30ba7dd2247e0c671576008ebfc27224f478eb038d77dbfe6a2ac7f5717eadc",
-      "last_checked": "2026-08-21T07:38:53.359269",
+      "last_checked": "2026-08-25T07:36:19.558317",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"186c-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/descriptor/image.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/descriptor/ndarray(_:).json": {
       "hash": "b443140168c802814f0f74d61e7ddfd6ec86549a190aa8aad49e1400d96a3cef",
-      "last_checked": "2026-08-21T07:38:53.521379",
+      "last_checked": "2026-08-25T07:36:19.689103",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"18a5-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/descriptor/ndarray.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/kind-swift.enum/image.json": {
       "hash": "3986a1c2c3f220fb6c0c43bbcec7e61370240947e0dd7d806ddf4faeb4df1ac2",
-      "last_checked": "2026-08-21T07:38:53.723926",
+      "last_checked": "2026-08-25T07:36:19.826322",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"13c6-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/kind-swift.enum/image.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/kind-swift.enum/ndarray.json": {
       "hash": "71168a4499a9ba1ce5a320aff6e38209b8cdf8076231b37f979df3f1b612dcea",
-      "last_checked": "2026-08-21T07:38:53.893642",
+      "last_checked": "2026-08-25T07:36:19.953505",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"13d4-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/kind-swift.enum/ndarray.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/namedmutableviews/take(_:).json": {
       "hash": "a5ae8e41eb35836df17b8bcbc4a50a077c87dae509ef0180a7469caab256620d",
-      "last_checked": "2026-08-21T07:38:54.101196",
+      "last_checked": "2026-08-25T07:36:20.078384",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f5e-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/namedmutableviews/take.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/viewrepresentable/view().json": {
       "hash": "ed2e85353e359d5b072b54ada74edca6dad56326c17c6463cd4060cc5fbde5d3",
-      "last_checked": "2026-08-21T07:38:54.303605",
+      "last_checked": "2026-08-25T07:36:20.212410",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"16bf-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/viewrepresentable/view.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/inferencevalue/mutableviewrepresentable/mutableview().json": {
       "hash": "a02f14a20e4a2f47dff13992f75dde912b9884d817500db08d9e49bcdde8e7ca",
-      "last_checked": "2026-08-21T07:38:54.517131",
+      "last_checked": "2026-08-25T07:36:20.341219",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1801-6585815c68b9a-df\"",
       "file_path": "documentation/CoreAI/inferencevalue/mutableviewrepresentable/mutableview.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/init(span:shape:strides:).json": {
       "hash": "0925e39b6efd6f90dc0082949988ca406a0a6d471d92a222b6e4de9815a5c2b8",
-      "last_checked": "2026-08-21T07:38:54.696558",
+      "last_checked": "2026-08-25T07:36:20.523854",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"29ac-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/init-spanshapestrides.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/iscontiguous.json": {
       "hash": "3231cef0edd6b4309fc3bb87035ce450438ba7636cb0dd32ec3146fe7f2c8a8a",
-      "last_checked": "2026-08-21T07:38:54.859914",
+      "last_checked": "2026-08-25T07:36:20.647844",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2b5e-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/iscontiguous.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/rank.json": {
       "hash": "219a1df926b7ff2c3964c3e44c7ab5360a5b9b51e44380f5a4b1f3ceeedd9a04",
-      "last_checked": "2026-08-21T07:38:55.028247",
+      "last_checked": "2026-08-25T07:36:20.828143",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2960-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/rank.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/shape.json": {
       "hash": "e76e78d4eb6bd0fc05aba89f4b7046045573602f959dcca8452cb41f11838734",
-      "last_checked": "2026-08-21T07:38:55.204840",
+      "last_checked": "2026-08-25T07:36:20.954281",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2c4c-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/shape.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/strides.json": {
       "hash": "b2a5607b34953809399d3b314e00dc6c4f3aac45416796bd596807819e83e3c0",
-      "last_checked": "2026-08-21T07:38:55.371198",
+      "last_checked": "2026-08-25T07:36:21.072987",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2c58-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/strides.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/contiguouselements.json": {
       "hash": "3a2b6372cb7ee1d1308279576861153834c8c501a5c2869abc817e0b7cd35059",
-      "last_checked": "2026-08-21T07:38:55.929428",
+      "last_checked": "2026-08-25T07:36:21.347155",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"220f-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/contiguouselements.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/withunsafepointer(_:).json": {
       "hash": "e6703e3d89a6d5453ce6de78d7bd4be025408bc16d74629f1348e62490e805be",
-      "last_checked": "2026-08-21T07:38:56.346244",
+      "last_checked": "2026-08-25T07:36:21.608865",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3a26-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/withunsafepointer.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/interleavelayout.json": {
       "hash": "8d59813b855b1a0125f826f0c9bbe33d9e9dd82034de3f81667bc8c3acc9056d",
-      "last_checked": "2026-08-21T07:38:55.737007",
+      "last_checked": "2026-08-25T07:36:21.206997",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2d77-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/interleavelayout.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/rawview.json": {
       "hash": "4be9f22d8de6639cbab1e5ddc74d49aed3d77aefb880e8822d76f1eb2b0ffea7",
-      "last_checked": "2026-08-21T07:38:56.868263",
+      "last_checked": "2026-08-25T07:36:21.997498",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"192c-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/rawview.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/slice(at:)-32gsh.json": {
       "hash": "d42e21182fdc3d00aedb1b304fedd361cd8c9f346d5fa95acc07755265842e46",
-      "last_checked": "2026-08-21T07:38:56.543657",
+      "last_checked": "2026-08-25T07:36:21.743417",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2c66-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/slice-at-32gsh.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/slice(at:)-4yomr.json": {
       "hash": "7e4fd24a2ab1c46862cc9a75445620a5cdf1db3b29860dde33706db9dd22ba47",
-      "last_checked": "2026-08-21T07:38:56.699446",
+      "last_checked": "2026-08-25T07:36:21.876001",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3085-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/slice-at-4yomr.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/init(mutablespan:shape:strides:).json": {
       "hash": "70cc419586ee4ca0c758316aa429e2c4267df00d1ae5f592ca1a1c31bb99506c",
-      "last_checked": "2026-08-21T07:38:57.043669",
+      "last_checked": "2026-08-25T07:36:22.127532",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2b49-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/init-mutablespanshapestrides.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/iscontiguous.json": {
       "hash": "173b4438bab3d1b2698d0e19bd4bd2272c2490e61d41e54832c5c41b01cc81ac",
-      "last_checked": "2026-08-21T07:38:57.209267",
+      "last_checked": "2026-08-25T07:36:22.249462",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2be1-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/iscontiguous.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/rank.json": {
       "hash": "28c3b2f8dda1b6e6f503dc8712dd2dfb7b96febfe43dcf8c5ba95113f89ac7d4",
-      "last_checked": "2026-08-21T07:38:57.374854",
+      "last_checked": "2026-08-25T07:36:22.363088",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"29e3-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/rank.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/shape.json": {
       "hash": "d1781c899dc14834b6476a478f39299a1838d214379aed31848bd839041fe7a8",
-      "last_checked": "2026-08-21T07:38:57.552991",
+      "last_checked": "2026-08-25T07:36:22.528278",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2ccf-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/shape.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/strides.json": {
       "hash": "49d8739e165a2181827a62e645a92e14652d381c804957d3b4ab1bb069071333",
-      "last_checked": "2026-08-21T07:38:57.851801",
+      "last_checked": "2026-08-25T07:36:22.645053",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2cdb-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/strides.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/copyelements(from:).json": {
       "hash": "5b391db8d0a3cdbd4cf70c754111bae7338bca109afa7ed407644f2aff7b8bcb",
-      "last_checked": "2026-08-21T07:38:58.707762",
+      "last_checked": "2026-08-25T07:36:23.179658",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2315-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/copyelements-from.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/copyelements(fromcontentsof:).json": {
       "hash": "f9e1a41c523bdb1d94fc5ae721a4c3e1bceef3ee86a5a675faaa970960e71cf2",
-      "last_checked": "2026-08-21T07:38:58.925422",
+      "last_checked": "2026-08-25T07:36:23.344605",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"23c9-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/copyelements-fromcontentsof.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/withunsafemutablepointer(_:).json": {
       "hash": "0fe209661e61e608da63b2ec4dcc60dc5c8f81e6f1c0917b965c42d9a4f6b586",
-      "last_checked": "2026-08-21T07:38:59.124811",
+      "last_checked": "2026-08-25T07:36:23.457841",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3bc3-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/withunsafemutablepointer.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/view.json": {
       "hash": "5cfcd0753ab9eb526a6e9e706ab956a008a603f091fa76405a2752b2e7378701",
-      "last_checked": "2026-08-21T07:39:00.063382",
+      "last_checked": "2026-08-25T07:36:24.115410",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f5a-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/view.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/contiguouselements.json": {
       "hash": "1e04705997b93ac7857f58a52bee0ca188b4a8c1dd64ef8664b6083c603d1d46",
-      "last_checked": "2026-08-21T07:38:58.248665",
+      "last_checked": "2026-08-25T07:36:22.908252",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2304-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/contiguouselements.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/interleavelayout.json": {
       "hash": "73a07e91abf1f9ad54acdbcdb65f6bcbfb4cada6dc2c8fbe1cdc5c13d1a13f1f",
-      "last_checked": "2026-08-21T07:38:58.030973",
+      "last_checked": "2026-08-25T07:36:22.774068",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2dfa-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/interleavelayout.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/mutablerawview.json": {
       "hash": "232e66627850fb7cf32dc7a0f194d8d421098b7e32218b59986ed0516e5ed9b9",
-      "last_checked": "2026-08-21T07:39:00.221547",
+      "last_checked": "2026-08-25T07:36:24.251857",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f21-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/mutablerawview.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/mutatingslice(at:)-30asd.json": {
       "hash": "d04f5fc9aa2ff1540523ee83edbf5dadefb591cbe89433d47e1bb60db75a4c8e",
-      "last_checked": "2026-08-21T07:38:59.710760",
+      "last_checked": "2026-08-25T07:36:23.872248",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"401d-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/mutatingslice-at-30asd.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/mutatingslice(at:)-9pmi4.json": {
       "hash": "805c5938aa794d8f7532505901464091a6daadc7bba8107fe82242f4b5d12ab5",
-      "last_checked": "2026-08-21T07:38:59.868345",
+      "last_checked": "2026-08-25T07:36:23.984043",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3bfe-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/mutatingslice-at-9pmi4.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/slice(at:)-50cpv.json": {
       "hash": "44e0219c1d1490cb4577c2a9cc1622a81f295688d9fc11b969d5dd3370ed5cd5",
-      "last_checked": "2026-08-21T07:38:59.316522",
+      "last_checked": "2026-08-25T07:36:23.618176",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"41a1-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/slice-at-50cpv.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/slice(at:)-qyjq.json": {
       "hash": "0a3c8ec1ecaa290e05c80273897ad2fc92d0dfff6cae41ae2ffcd646a483a3b0",
-      "last_checked": "2026-08-21T07:38:59.512533",
+      "last_checked": "2026-08-25T07:36:23.741583",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3d81-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/slice-at-qyjq.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/scalartype.json": {
       "hash": "d0368b5708b4b2719f9f2b35d48b3bdce1f6569a323f5667a8b5e29cb6894b56",
-      "last_checked": "2026-08-21T07:39:00.990160",
+      "last_checked": "2026-08-25T07:36:24.805207",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"236d-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/scalartype.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/shape.json": {
       "hash": "866fc4ed39591195ccd55b7b84260a3a81518a6f03fdebb40ccc5cd12caec9f7",
-      "last_checked": "2026-08-21T07:39:01.172499",
+      "last_checked": "2026-08-25T07:36:24.937633",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"255e-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/shape.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/strides.json": {
       "hash": "8fa1515b2d094f00bfc173bf80ae3dab4eb1d8ab1d1262b04fd0612bc6679346",
-      "last_checked": "2026-08-21T07:39:01.358304",
+      "last_checked": "2026-08-25T07:36:25.056938",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"256a-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/strides.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/bytes.json": {
       "hash": "542b3911624df70a521286b6e8dbedbde231e9263a79eb869a35aa6fd9e5e52a",
-      "last_checked": "2026-08-21T07:39:01.542666",
+      "last_checked": "2026-08-25T07:36:25.176785",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2987-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/bytes.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/view(as:).json": {
       "hash": "0cbef98a43cc179346af44c45fb9db6a9b971341b4931670d599ab2e15549bef",
-      "last_checked": "2026-08-21T07:39:01.927146",
+      "last_checked": "2026-08-25T07:36:25.461217",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e86-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/view-as.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/init(bytes:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "6334bde601dd820e80785b929590a29dd05bd720e484a78113f2075afe47755a",
-      "last_checked": "2026-08-21T07:39:00.453090",
+      "last_checked": "2026-08-25T07:36:24.394013",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4fa7-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/init-bytesbyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/init(iosurface:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "15479cfe0286fb443211f6da46cf02a1893228963ef8371514f62c593104560f",
-      "last_checked": "2026-08-21T07:39:00.820851",
+      "last_checked": "2026-08-25T07:36:24.675420",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4ff2-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/init-iosurfacebyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/init(metalbuffer:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "8d9772ff00661ce2539e524d728b0fc34e611167cdc64458fcf101b2bb7fa205",
-      "last_checked": "2026-08-21T07:39:00.628077",
+      "last_checked": "2026-08-25T07:36:24.510664",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4a2b-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/init-metalbufferbyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/interleavelayout.json": {
       "hash": "7819804cf52ec1105c883335e45d3faec70cc4e96fb55a0227ee977b9443bd02",
-      "last_checked": "2026-08-21T07:39:01.745518",
+      "last_checked": "2026-08-25T07:36:25.312180",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2689-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/interleavelayout.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/slice(at:)-1gght.json": {
       "hash": "87e19d64fa12a79f39c36bd5c556b2074e36fc063a1df96cd1ec075646c3db20",
-      "last_checked": "2026-08-21T07:39:02.112560",
+      "last_checked": "2026-08-25T07:36:25.606813",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2bab-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/slice-at-1gght.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/slice(at:)-kd5b.json": {
       "hash": "8b9ca84c8601fd88662ee655f7af3e2bdb9754f61d95909b79977607ea2d2419",
-      "last_checked": "2026-08-21T07:39:02.296076",
+      "last_checked": "2026-08-25T07:36:25.738820",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2790-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/slice-at-kd5b.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/scalartype.json": {
       "hash": "8992348ca7f5c963d75a6fe49db20d0b874c5c57975e72ccc7a3dc8421a1f88a",
-      "last_checked": "2026-08-21T07:39:03.190152",
+      "last_checked": "2026-08-25T07:36:26.376173",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"24f8-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/scalartype.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/shape.json": {
       "hash": "c738b5f3be4881b2fb196908cdf53f892cffd7f36d399d83119db80178ecf24a",
-      "last_checked": "2026-08-21T07:39:03.373276",
+      "last_checked": "2026-08-25T07:36:26.513489",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"26a4-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/shape.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/strides.json": {
       "hash": "ac45155618a4bdb488c268a9403cad62a5c87c0f0aa3f2924da973f35b657a9e",
-      "last_checked": "2026-08-21T07:39:03.536155",
+      "last_checked": "2026-08-25T07:36:26.641798",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"26b0-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/strides.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/view(as:).json": {
       "hash": "e7454c1b5bd11db45a5f11751892786cfa53a9c4861bcca996504580413a6bcc",
-      "last_checked": "2026-08-21T07:39:04.096250",
+      "last_checked": "2026-08-25T07:36:27.040824",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"211f-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/view-as.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/init(iosurface:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "638fa65b3514bd9179294a2bb8d420fdd26835a6c291a6c0f167eefd7c05c2f9",
-      "last_checked": "2026-08-21T07:39:02.992427",
+      "last_checked": "2026-08-25T07:36:26.259654",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"5124-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/init-iosurfacebyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/init(metalbuffer:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "2311222c8268972c227a2b219ace480e48d5705cc1f9c0c5563860ecbebea39d",
-      "last_checked": "2026-08-21T07:39:02.828381",
+      "last_checked": "2026-08-25T07:36:26.121667",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"4b55-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/init-metalbufferbyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/init(mutablebytes:byteoffset:scalartype:shape:strides:interleavelayout:).json": {
       "hash": "1d327c6dbe217494326dfbe5ee7d9e6634ad81058d1191f49fdae9b2258cd540",
-      "last_checked": "2026-08-21T07:39:02.676127",
+      "last_checked": "2026-08-25T07:36:26.008415",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"5185-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/init-mutablebytesbyteoffsetscalartypeshapestridesinterleavelayout.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/interleavelayout.json": {
       "hash": "b988cec3dc610d81a3a6bed66ede093a31b87d69b027d8e7f61e30a9e7f7170d",
-      "last_checked": "2026-08-21T07:39:03.878796",
+      "last_checked": "2026-08-25T07:36:26.898320",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"27ce-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/interleavelayout.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/mutablebytes.json": {
       "hash": "0c581ed25b3668cc812bf6ef058e1cd7031fa31bdb6fb1d98976aa463eb64062",
-      "last_checked": "2026-08-21T07:39:03.701694",
+      "last_checked": "2026-08-25T07:36:26.785931",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2ba7-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/mutablebytes.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/rawview.json": {
       "hash": "da2b96bba1be4e429de4ed0ed9ec281a4b09ec91b5d44046f9aa4666a85d5da4",
-      "last_checked": "2026-08-21T07:39:04.282477",
+      "last_checked": "2026-08-25T07:36:27.169019",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1728-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/rawview.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/mutatingslice(at:)-5tnq5.json": {
       "hash": "54e1a2e2ec455d23dfb5def5ae03c8d7c2f087893ad91ecf02e7824f1b5703d2",
-      "last_checked": "2026-08-21T07:39:04.890052",
+      "last_checked": "2026-08-25T07:36:27.569145",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3890-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/mutatingslice-at-5tnq5.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/mutatingslice(at:)-5ts4w.json": {
       "hash": "4ffd6e2647825226fb614309b05b5858c7dec1b0e95dc9d5b86a092b609db27c",
-      "last_checked": "2026-08-21T07:39:05.059392",
+      "last_checked": "2026-08-25T07:36:27.702701",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3476-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/mutatingslice-at-5ts4w.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/slice(at:)-47fbq.json": {
       "hash": "9a64fb9e5880c6d77d1352b77968628a0efe457ec8c3ea9e64b3b0d221692dbf",
-      "last_checked": "2026-08-21T07:39:04.485421",
+      "last_checked": "2026-08-25T07:36:27.285757",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3a17-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/slice-at-47fbq.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/slice(at:)-82sdj.json": {
       "hash": "66ff73213b93a92e9e2bc32ddfd16836addee21d209c7c18663278026f5c8b95",
-      "last_checked": "2026-08-21T07:39:04.700604",
+      "last_checked": "2026-08-25T07:36:27.427296",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"35fd-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/slice-at-82sdj.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/float16.json": {
       "hash": "548c4774e7420db65b92b094d53eefe41b1c1dcb7ddbefa94b4db2759f519f38",
-      "last_checked": "2026-08-21T07:39:05.382639",
+      "last_checked": "2026-08-25T07:36:27.943720",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1899-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/float16.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/float32.json": {
       "hash": "45874009dc67c5e790827ace085467643253b99344014aed402cc2b1f8101fa4",
-      "last_checked": "2026-08-21T07:39:05.577132",
+      "last_checked": "2026-08-25T07:36:28.067674",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1b40-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/float32.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/float64.json": {
       "hash": "32663a09b557c3f0379f1cb0765759266e817d21740aac651644f75fdb341938",
-      "last_checked": "2026-08-21T07:39:05.750509",
+      "last_checked": "2026-08-25T07:36:28.178897",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1899-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/float64.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/bfloat16.json": {
       "hash": "acb1ad14e0b677b97af28a4fc4b776533fcfa0b5b304aef371adfca8e103fdb6",
-      "last_checked": "2026-08-21T07:39:05.924331",
+      "last_checked": "2026-08-25T07:36:28.303092",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1abd-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/bfloat16.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/float8e4m3fn.json": {
       "hash": "98c9464f5a99ce53540ac51fb7bbc3069172d1a97025aff578803c18a6ecacaf",
-      "last_checked": "2026-08-21T07:39:06.074356",
+      "last_checked": "2026-08-25T07:36:28.434701",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1618-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/float8e4m3fn.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/float8e5m2.json": {
       "hash": "a21f87caaeb521d6233d414eb16f8ac10aa63ad9c73ae1a116f4f285f4a53e53",
-      "last_checked": "2026-08-21T07:39:06.259562",
+      "last_checked": "2026-08-25T07:36:28.576586",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"15f1-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/float8e5m2.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/float4e2m1fn.json": {
       "hash": "16ad51234e8044ac74807447b2e1448f1d66c2466c4ca6c20074d7d0fbface98",
-      "last_checked": "2026-08-21T07:39:06.432549",
+      "last_checked": "2026-08-25T07:36:28.696036",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"14a9-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/float4e2m1fn.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/float8e8m0fn.json": {
       "hash": "422adc1cabfe57d19181facef6ad270147ce2e26c292d5df2d8ef8c892586d74",
-      "last_checked": "2026-08-21T07:39:06.609896",
+      "last_checked": "2026-08-25T07:36:28.829624",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"14bf-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/float8e8m0fn.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/cfloat16.json": {
       "hash": "f0e1c32f5a969875b9c8943ec7bd4516f62e779f1e98390f1bcbc68d226cf00d",
-      "last_checked": "2026-08-21T07:39:06.796607",
+      "last_checked": "2026-08-25T07:36:28.970204",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"185f-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/cfloat16.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/cfloat32.json": {
       "hash": "0eea645faa32193978563af8a8114bfaee7d5a60376123dca9802e9088adaf40",
-      "last_checked": "2026-08-21T07:39:06.988507",
+      "last_checked": "2026-08-25T07:36:29.085401",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"185f-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/cfloat32.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/cfloat64.json": {
       "hash": "bc219a46a78074507545647efcc1b0b18724939964d6f9cee837aa022cb79b95",
-      "last_checked": "2026-08-21T07:39:07.175248",
+      "last_checked": "2026-08-25T07:36:29.200477",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1861-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/cfloat64.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int8.json": {
       "hash": "0b72b31a06e1d0b454e8a492e44d494b9b0795a46c0c92e42ecae1bbeb746a5d",
-      "last_checked": "2026-08-21T07:39:07.358427",
+      "last_checked": "2026-08-25T07:36:29.333588",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1aa0-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int8.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int16.json": {
       "hash": "152d58f421d57c2cc42fcadaccf8d311d152acc2de57863cfd5107f26ff687ca",
-      "last_checked": "2026-08-21T07:39:07.550713",
+      "last_checked": "2026-08-25T07:36:29.449866",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1aa5-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int16.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int32.json": {
       "hash": "9a9bc49648059c041f4059eb865ea6e76437aac10488fb02775fa42266923593",
-      "last_checked": "2026-08-21T07:39:07.722572",
+      "last_checked": "2026-08-25T07:36:29.565074",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1aa5-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int32.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int64.json": {
       "hash": "98b9479e9046bcfcb90af7e398351d4793662e415982a1ae1c343dfe06d15616",
-      "last_checked": "2026-08-21T07:39:07.900682",
+      "last_checked": "2026-08-25T07:36:29.678253",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1aa5-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int64.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int128.json": {
       "hash": "00b040b354fb585cea7a134bdfaad3556f80e7eedccc2c7b101a4c6224d25900",
-      "last_checked": "2026-08-21T07:39:08.113105",
+      "last_checked": "2026-08-25T07:36:29.828967",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1bec-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int128.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint8.json": {
       "hash": "9a7b752d5393350215c2c9221d7baa8cb21106386b3ae1c5200a58719b2887f8",
-      "last_checked": "2026-08-21T07:39:08.305894",
+      "last_checked": "2026-08-25T07:36:29.961304",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ae1-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint8.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint16.json": {
       "hash": "c6ad585cc6080472ac5013f3bbac8fdb1cd7100c498459a59efe29679f5f28cd",
-      "last_checked": "2026-08-21T07:39:08.484286",
+      "last_checked": "2026-08-25T07:36:30.083366",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ae6-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint16.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint32.json": {
       "hash": "982631d6beea4e55603ba1b284abe66af1b6e20d37acc5ed44d4fe90015797db",
-      "last_checked": "2026-08-21T07:39:08.673549",
+      "last_checked": "2026-08-25T07:36:30.228297",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ae6-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint32.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint64.json": {
       "hash": "7e44323129c60ef91d4788e22a578ceadb594b663ff7b5598688b5cf18dd560b",
-      "last_checked": "2026-08-21T07:39:08.854899",
+      "last_checked": "2026-08-25T07:36:30.360458",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ae6-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint64.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint128.json": {
       "hash": "d49c84881acf50aebe7377cf43ab5ab9e2f8e38f7538ec478520ff12654b1525",
-      "last_checked": "2026-08-21T07:39:09.038051",
+      "last_checked": "2026-08-25T07:36:30.473264",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1c2d-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint128.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int2.json": {
       "hash": "d4003f033f396d243faa4b2aa17ffc46e1c3b845c0527978e9e6d90ce90815b3",
-      "last_checked": "2026-08-21T07:39:09.208004",
+      "last_checked": "2026-08-25T07:36:30.591718",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e29-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int2.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int3.json": {
       "hash": "5e9861de489a5cc479f819388d16cd70ad3d3125d27386ac9ab6fa7fe7ff73bf",
-      "last_checked": "2026-08-21T07:39:09.387222",
+      "last_checked": "2026-08-25T07:36:30.705583",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e2b-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int3.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int4.json": {
       "hash": "c3ef6e5a94e942a4db2ce774d7aa4ccf13c7b7eec2de65f1e495a9965aa856a2",
-      "last_checked": "2026-08-21T07:39:09.593148",
+      "last_checked": "2026-08-25T07:36:30.837090",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e4f-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int4.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int5.json": {
       "hash": "774972fb5f94b9df43367cc36d9ae8859a9b9a02cc54949130d1924df268e486",
-      "last_checked": "2026-08-21T07:39:09.736397",
+      "last_checked": "2026-08-25T07:36:30.968760",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e2c-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int5.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int6.json": {
       "hash": "5ef8f618e425c42270d4574b167c6908340ae9bbe4b9d4240daced529ee88523",
-      "last_checked": "2026-08-21T07:39:09.932164",
+      "last_checked": "2026-08-25T07:36:31.084753",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e2b-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int6.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/int7.json": {
       "hash": "37b7711afaae4691d0285f78753812af016b24117a9b9845dc9f2b4feb65d000",
-      "last_checked": "2026-08-21T07:39:10.111352",
+      "last_checked": "2026-08-25T07:36:31.227297",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e2d-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/int7.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint1.json": {
       "hash": "e0c0fbbe04009ce5a692c47608da46f3191bfb050425b70856e06a74407bb70c",
-      "last_checked": "2026-08-21T07:39:10.272816",
+      "last_checked": "2026-08-25T07:36:31.336901",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"20e1-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint1.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint2.json": {
       "hash": "49d1109ace47d6c0e0034ba92a6b6a054b190f64767e56cba0c6c1e7e7b26d61",
-      "last_checked": "2026-08-21T07:39:10.450974",
+      "last_checked": "2026-08-25T07:36:31.468086",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"20e1-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint2.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint3.json": {
       "hash": "f95c54f727a50cf4b42b89307ad97c04b3067cc5cb0c8788d4cb3de287d04e4d",
-      "last_checked": "2026-08-21T07:39:10.626349",
+      "last_checked": "2026-08-25T07:36:31.583796",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"20e3-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint3.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint4.json": {
       "hash": "56335c1930c4e0f395b4e15e89759e714134277dee07929b702bd003012ae15a",
-      "last_checked": "2026-08-21T07:39:10.777543",
+      "last_checked": "2026-08-25T07:36:31.715841",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"20e3-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint4.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint5.json": {
       "hash": "8cf2e1a3c0bc601b859b9a1f92a198007b911ab8d8689914129efb49f4a2ea1b",
-      "last_checked": "2026-08-21T07:39:10.960541",
+      "last_checked": "2026-08-25T07:36:31.871921",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"20e3-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint5.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint6.json": {
       "hash": "f5a7e060cd8f53a02c8cc5dc059f6a0856fa87c3417203e5e191bf7d66d1041d",
-      "last_checked": "2026-08-21T07:39:11.125165",
+      "last_checked": "2026-08-25T07:36:31.998533",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"20e2-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint6.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/uint7.json": {
       "hash": "3f1627feecacdf46a37454f4583e333982442b799eba63b7c890eaccf70cb925",
-      "last_checked": "2026-08-21T07:39:11.290384",
+      "last_checked": "2026-08-25T07:36:32.144722",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"20e5-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/uint7.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/scalartype-swift.enum/bool.json": {
       "hash": "7fed37ff376a67cb2bf1ca6eabc08a905e9526abf9159bea473864446bfc07a8",
-      "last_checked": "2026-08-21T07:39:11.480973",
+      "last_checked": "2026-08-25T07:36:32.264210",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"140a-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/scalartype-swift.enum/bool.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rangeexpression/relative(to:).json": {
       "hash": "a0c316512f0d3a34b5063919691021600a4b808a053b173f8d2951577ae51940",
-      "last_checked": "2026-08-21T07:39:12.430531",
+      "last_checked": "2026-08-25T07:36:32.924679",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1f43-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/rangeexpression/relative-to.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rangeexpression/all.json": {
       "hash": "2a3bb37e3b0d4726af8bc1085e61b71c4d84e5480bac77d9bc2dfbcd128d83eb",
-      "last_checked": "2026-08-21T07:39:12.256252",
+      "last_checked": "2026-08-25T07:36:32.795423",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1490-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/rangeexpression/all.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/interleavelayout-swift.struct/init(dimension:factor:).json": {
       "hash": "e238ff3f4cc99db369f5c927087aefb2102acdcc87c5ab975c6e60fe0d7bbd54",
-      "last_checked": "2026-08-21T07:39:11.647851",
+      "last_checked": "2026-08-25T07:36:32.386982",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"16d7-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/interleavelayout-swift.struct/init-dimensionfactor.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/interleavelayout-swift.struct/dimension.json": {
       "hash": "3c0b31e296065ea4f0d7da1e4f783ccbaed0347021fecb9737245d3bcb21cbcb",
-      "last_checked": "2026-08-21T07:39:11.813181",
+      "last_checked": "2026-08-25T07:36:32.516311",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"18ba-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/interleavelayout-swift.struct/dimension.md"
     },
@@ -4439,9 +4439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/interleavelayout-swift.struct/factor.json": {
       "hash": "cee471df9dad1320b49dc681333915c03baafd5050d48e308ad526493a7ce225",
-      "last_checked": "2026-08-21T07:39:12.094575",
+      "last_checked": "2026-08-25T07:36:32.647570",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1946-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/interleavelayout-swift.struct/factor.md"
     },
@@ -4455,9 +4455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy/purgeconditions-swift.struct.json": {
       "hash": "90245dafeb0ad20607f0d78a487bcb15e737d3b0b719afad0b9606fd05c646f3",
-      "last_checked": "2026-08-21T07:39:13.398658",
+      "last_checked": "2026-08-25T07:36:33.570544",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"3795-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy/purgeconditions-swiftstruct.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy/init(purgeconditions:).json": {
       "hash": "7df0a48a911d434a13c5f2e07cebd99be784d3f09475bd7e1e31d03d43da68fc",
-      "last_checked": "2026-08-21T07:39:12.987352",
+      "last_checked": "2026-08-25T07:36:33.298861",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ca6-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy/init-purgeconditions.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy/purgeconditions-swift.property.json": {
       "hash": "89af0a2171d5a93a3bf08c78cafd4b8993cb0531e71bb26ab3112c0e31c2f936",
-      "last_checked": "2026-08-21T07:39:13.172909",
+      "last_checked": "2026-08-25T07:36:33.445808",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1b7b-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy/purgeconditions-swiftproperty.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy/default.json": {
       "hash": "6a5617a8a6fb129f099047cb45a2e43c4dbeb47d9991c05c37920243fe7f499c",
-      "last_checked": "2026-08-21T07:39:12.614513",
+      "last_checked": "2026-08-25T07:36:33.054957",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1b0e-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy/default.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy/persistent.json": {
       "hash": "67bdca730966fcf837acd2a514bfb3aa88cb5f4b95ae50a89cb411d084b72819",
-      "last_checked": "2026-08-21T07:39:12.809862",
+      "last_checked": "2026-08-25T07:36:33.166578",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1b96-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy/persistent.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/kind-swift.enum/corruptedmetadata.json": {
       "hash": "e2afc26211dfeaf9b76b65dc9d6f8614eb9f2aea19b65d46759077fbf5afbaf0",
-      "last_checked": "2026-08-21T07:39:13.584100",
+      "last_checked": "2026-08-25T07:36:33.704191",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1d8b-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/kind-swift.enum/corruptedmetadata.md"
     },
@@ -4551,9 +4551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/kind-swift.enum/duplicatename.json": {
       "hash": "b7572224d3e8c07b91d33bc122c13de39ec303e11121dc06fe46db1bdf8b17a9",
-      "last_checked": "2026-08-21T07:39:13.760970",
+      "last_checked": "2026-08-25T07:36:33.821565",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1d8e-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/kind-swift.enum/duplicatename.md"
     },
@@ -4567,9 +4567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/kind-swift.enum/invalidfeaturetype(_:).json": {
       "hash": "d584e1bd951ad26ddb7eaa66f88d1aa2ab888d3aca872925bbf649c1c3c01db0",
-      "last_checked": "2026-08-21T07:39:13.951437",
+      "last_checked": "2026-08-25T07:36:33.950664",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2250-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/kind-swift.enum/invalidfeaturetype.md"
     },
@@ -4583,9 +4583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/kind-swift.enum/invalidname.json": {
       "hash": "7d2b86614a4c5a0a568b026fd44110b21fdef276ff706f3e9b428f98146c5d13",
-      "last_checked": "2026-08-21T07:39:14.129276",
+      "last_checked": "2026-08-25T07:36:34.090664",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1d6b-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/kind-swift.enum/invalidname.md"
     },
@@ -4599,9 +4599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/asseterror/kind-swift.enum/unsupportedversion(_:).json": {
       "hash": "570dc274b444929a1afa18896ab7e27eacb7c397ec2acf7a70ac8f4e968e0f4c",
-      "last_checked": "2026-08-21T07:39:14.298969",
+      "last_checked": "2026-08-25T07:36:34.206996",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2224-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/asseterror/kind-swift.enum/unsupportedversion.md"
     },
@@ -4615,9 +4615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/string(_:).json": {
       "hash": "dc1e98b06fbce24cd0f3602c80177d7d8e63604bd9300502c8fcc443607c9adb",
-      "last_checked": "2026-08-21T07:39:14.462290",
+      "last_checked": "2026-08-25T07:36:34.317891",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2d7b-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/string.md"
     },
@@ -4631,9 +4631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/integer(_:).json": {
       "hash": "82e7a5a36f3f55eb6d511c96b588f99b81105087df571ecd0b844c11dce5501e",
-      "last_checked": "2026-08-21T07:39:14.661896",
+      "last_checked": "2026-08-25T07:36:34.429204",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2d49-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/integer.md"
     },
@@ -4647,9 +4647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/number(_:).json": {
       "hash": "22b6bda522ae51f7f3d223f87a6c13882b8faed9b3dd98c945da2c34ae13b25f",
-      "last_checked": "2026-08-21T07:39:14.819440",
+      "last_checked": "2026-08-25T07:36:34.552190",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2d91-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/number.md"
     },
@@ -4663,9 +4663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/bool(_:).json": {
       "hash": "8463fad4219a5e7fda4e929e1e9e781396a95690858a430398746da2a0cf0314",
-      "last_checked": "2026-08-21T07:39:14.954923",
+      "last_checked": "2026-08-25T07:36:34.677500",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2dce-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/bool.md"
     },
@@ -4679,9 +4679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/array(_:).json": {
       "hash": "2f1c3897472e75d66762312f8122a4825a3cebbe4de913638842a093ad35f661",
-      "last_checked": "2026-08-21T07:39:15.139105",
+      "last_checked": "2026-08-25T07:36:34.806699",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2f0c-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/array.md"
     },
@@ -4695,9 +4695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/dictionary(_:).json": {
       "hash": "6ff448feb9afd0043463064a7996357db1091c9143a51d1421c6dd0be86bf848",
-      "last_checked": "2026-08-21T07:39:15.324308",
+      "last_checked": "2026-08-25T07:36:34.929075",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"323a-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/dictionary.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/init(_:)-1q79a.json": {
       "hash": "c703a548838642656adc4b969df5347ee3f2949941d6386fff3b931e617aff79",
-      "last_checked": "2026-08-21T07:39:15.509984",
+      "last_checked": "2026-08-25T07:36:35.047046",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1e98-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/init-1q79a.md"
     },
@@ -4727,9 +4727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/init(_:)-2lzjt.json": {
       "hash": "a957eb87c2547ba304518afa0d6cf803c26545b9c8e78cd5f62af74eca1ff22f",
-      "last_checked": "2026-08-21T07:39:15.724868",
+      "last_checked": "2026-08-25T07:36:35.166455",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"18a4-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/init-2lzjt.md"
     },
@@ -4743,9 +4743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/init(_:)-40q72.json": {
       "hash": "cfb07eae372fdfd1e359cba4539221fd4a5d77954b9eb098daf7b1a76ac29267",
-      "last_checked": "2026-08-21T07:39:15.908688",
+      "last_checked": "2026-08-25T07:36:35.295496",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1867-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/init-40q72.md"
     },
@@ -4759,9 +4759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/init(_:)-5y6lm.json": {
       "hash": "da9a89a8318caaeb4955618df11eaf061c16458761411574e3d21d9fb41f1176",
-      "last_checked": "2026-08-21T07:39:16.101521",
+      "last_checked": "2026-08-25T07:36:35.415755",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1849-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/init-5y6lm.md"
     },
@@ -4775,9 +4775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/init(_:)-61sg1.json": {
       "hash": "4fe68fb4a6d3fbf3d54ecbaefe31b63e8f6126605546e7ce605f81682ebc6d34",
-      "last_checked": "2026-08-21T07:39:16.263207",
+      "last_checked": "2026-08-25T07:36:35.593100",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"180e-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/init-61sg1.md"
     },
@@ -4791,9 +4791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/init(_:)-9xsmm.json": {
       "hash": "4cbc1bab28fc6d69de68a35090a3131215220fb6afdb6fcaa10f41daec6ed37a",
-      "last_checked": "2026-08-21T07:39:16.444870",
+      "last_checked": "2026-08-25T07:36:35.712498",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1b17-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/init-9xsmm.md"
     },
@@ -4807,9 +4807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/customstringconvertible-implementations.json": {
       "hash": "5a2b99faa9f811a2d49d035376401922f07a5b9800997325b7213c3561a71dce",
-      "last_checked": "2026-08-21T07:39:16.659026",
+      "last_checked": "2026-08-25T07:36:35.867407",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1250-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/customstringconvertible-implementations.md"
     },
@@ -4823,9 +4823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/operationcount/operationname.json": {
       "hash": "189d21d617f8191eaf411e3ee73aaf0e0656323ab3f2e0e6aa9f54a8832c3757",
-      "last_checked": "2026-08-21T07:39:16.853769",
+      "last_checked": "2026-08-25T07:36:35.990858",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1afb-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/operationcount/operationname.md"
     },
@@ -4839,9 +4839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/operationcount/count.json": {
       "hash": "3e4e47886697d5554c04217c79d722a4b805b0d5eaedd65cb73e356b3cdec7b7",
-      "last_checked": "2026-08-21T07:39:17.040905",
+      "last_checked": "2026-08-25T07:36:36.124182",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1ab6-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/operationcount/count.md"
     },
@@ -4855,9 +4855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/storagetype/typename.json": {
       "hash": "401bc68489789303c1c8d648437f008012b17b29eec92586737fa11d25aa4754",
-      "last_checked": "2026-08-21T07:39:17.236668",
+      "last_checked": "2026-08-25T07:36:36.324593",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a8e-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/storagetype/typename.md"
     },
@@ -4871,9 +4871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/summary/storagetype/count.json": {
       "hash": "27a34d8b01edc427f41e5cbf40fd08ea7903350a51129868763e1881523cd5aa",
-      "last_checked": "2026-08-21T07:39:17.394687",
+      "last_checked": "2026-08-25T07:36:36.437633",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"1a5c-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/summary/storagetype/count.md"
     },
@@ -4887,9 +4887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy/purgeconditions-swift.struct/sourceassetchangedordeleted.json": {
       "hash": "0a36a8cd3b1b5adf36e1b14dc608a3ec87ddd6aac95e464326ee329f852fe09a",
-      "last_checked": "2026-08-21T07:39:17.564038",
+      "last_checked": "2026-08-25T07:36:36.572910",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"2353-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy/purgeconditions-swift.struct/sourceassetchangedordeleted.md"
     },
@@ -4903,9 +4903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelcache/policy/purgeconditions-swift.struct/storagepressure.json": {
       "hash": "0d37c374819b936bb184f32269d9ad2b9ebff12dc2c177061a8596cb3a48deb3",
-      "last_checked": "2026-08-21T07:39:17.733400",
+      "last_checked": "2026-08-25T07:36:36.696609",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"22de-6585815d286e5-df\"",
       "file_path": "documentation/CoreAI/aimodelcache/policy/purgeconditions-swift.struct/storagepressure.md"
     },
@@ -4919,9 +4919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/aimodelasset/metadata-swift.struct/creatordefinedvalue/description.json": {
       "hash": "b47590e839c5cf790fb1b8fb8727b469c56908bc57022c66786a1d1fa0a0d9cf",
-      "last_checked": "2026-08-21T07:39:17.923570",
+      "last_checked": "2026-08-25T07:36:36.822370",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"18a9-6585815d01f32-df\"",
       "file_path": "documentation/CoreAI/aimodelasset/metadata-swift.struct/creatordefinedvalue/description.md"
     },
@@ -4935,9 +4935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/view/subscript(scalarat:).json": {
       "hash": "c33f8766af16a2cea2a567d16368c7a4902f7daedbe494c1b0c27c0fc05c87a0",
-      "last_checked": "2026-08-21T07:38:56.128591",
+      "last_checked": "2026-08-25T07:36:21.477609",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"273c-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/view/subscript-scalarat.md"
     },
@@ -4951,9 +4951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutableview/subscript(scalarat:).json": {
       "hash": "4ed37b8ef80b2b0936b8dfd9d5678481f82cb6c17cbaf4fdc9f48f411418b275",
-      "last_checked": "2026-08-21T07:38:58.469577",
+      "last_checked": "2026-08-25T07:36:23.047590",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"27bc-6585815c83a47-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutableview/subscript-scalarat.md"
     },
@@ -4967,9 +4967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/rawview/withunsafebytes(_:).json": {
       "hash": "eb7af8e188fb7d1a269592743eff9e912b737cc04312074c937259c5c1f90801",
-      "last_checked": "2026-08-21T07:39:02.480176",
+      "last_checked": "2026-08-25T07:36:25.860219",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"347a-6585815cbf6d1-df\"",
       "file_path": "documentation/CoreAI/ndarray/rawview/withunsafebytes.md"
     },
@@ -4983,9 +4983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreai/ndarray/mutablerawview/withunsafemutablebytes(_:).json": {
       "hash": "88e984db0ef83887a2e575eb0e9224ece3cc24959540896a8ee9a45abfd890f5",
-      "last_checked": "2026-08-21T07:39:05.204028",
+      "last_checked": "2026-08-25T07:36:27.819000",
       "status": "unchanged",
-      "session_id": "2026-08-21T07:38:22.645039",
+      "session_id": "2026-08-25T07:35:54.792260",
       "etag": "\"362a-6585815c9f99e-df\"",
       "file_path": "documentation/CoreAI/ndarray/mutablerawview/withunsafemutablebytes.md"
     },

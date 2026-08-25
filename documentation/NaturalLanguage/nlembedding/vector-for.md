@@ -29,6 +29,10 @@ func vector(for string: String) -> [Double]?
 
 A vector represented as an array of doubles if present in the word embedding, otherwise `nil`.
 
+#### Discussion
+
+> ❗ **Important**: This method isn’t safe to call concurrently on a shared [`NLEmbedding`](nlembedding.md) instance. Calling it from multiple threads, queues, or tasks at the same time can corrupt the embedding’s state and crash your app. Serialize calls into a shared instance, or give each thread its own instance.
+
 ## Parameters
 
 - `string`: The term to find in the word embedding.

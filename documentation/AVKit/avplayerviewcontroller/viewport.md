@@ -14,6 +14,10 @@ A configuration object that manages viewport settings for different presentation
 var viewport: AVViewport { get }
 ```
 
+#### Discussion
+
+Set [`portal`](avviewport/portal.md) to control the aspect ratio of the frame the system uses for a portal presentation. When you don’t specify an aspect ratio, the portal defaults to 16:9 (1.78).
+
 ## See Also
 
 - [var infoViewActions: [UIAction]!](avplayerviewcontroller/infoviewactions.md)
@@ -33,7 +37,7 @@ var viewport: AVViewport { get }
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
 - [class AVViewport](avviewport.md)
-  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+  An object that provides configuration options for how the player displays content in different viewing contexts.
 
 
 ---

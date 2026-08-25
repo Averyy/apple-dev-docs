@@ -12,6 +12,10 @@
 var allowsWritingToolsAffordance: Bool { get set }
 ```
 
+## See Also
+
+- [var allowsWritingTools: Bool](nstextfield/allowswritingtools.md)
+
 
 ---
 

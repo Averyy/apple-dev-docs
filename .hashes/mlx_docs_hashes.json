@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-21T08:40:04.830583",
-    "total_files": 839,
+    "last_updated": "2026-08-25T08:36:58.145188",
+    "total_files": 842,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
@@ -749,7 +749,7 @@
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/sorting.md": "dec008918b534c747a7e7e3eaf1cc5bb31160b51a0f6a53eb5a6b909f7879ac7",
     "github:ml-explore/mlx-swift-lm:README.md": "3831f9e379ffcf84f60c03408af1385ce81d8948693fe336e7d847d37bd31505",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "7e056dab0785f00165df536f746c495c354a82eb8f262b35872a6f4bd728ab34",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "638dd5b9a3696cd9da49e1a2b61d0953d23d1dbd6c2990336394b3f391ed0659",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "c3af19663fadfdc3d7cca992aa6799d61bb2c9be6ebed5df63429cc7b4aaa334",
     "github:ml-explore/mlx-swift-examples:README.md": "4da27bf9cb2b3f338851067adf5d521dd4d64c351f3cabc25ae9870ae1b7884b",
     "github:ml-explore/mlx-swift-examples:Applications/LLMBasic/README.md": "764050b0ddb93e64a13c7f4999da7fac29bd748924314829f24e69f63a91d032",
     "github:ml-explore/mlx-swift-examples:Applications/LLMEval/README.md": "9d2551458e5f4781b2738712a67474cfedf7534104e012168387c85c1df48ce7",
@@ -843,6 +843,9 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_functions/mlx.nn.softsign.html": "6ccd84d45f02a69423618fd334bb67172530b4b5539e80f5aacdba09b568ccd2",
     "MLX:https://ml-explore.github.io/mlx/build/html/usage/environment_variables.html": "7f2c62cbc1f93189b5517a7ef56f35201d6661d508c7e4bd24fdfaf1707d3c91",
     "MLX:https://ml-explore.github.io/mlx/build/html/usage/kv_cache.html": "8df388c2c14c6cc28f733c96ae21eb7fc41fe31c52af0942024054bbcc08c665",
-    "MLX:https://ml-explore.github.io/mlx/build/html/usage/precision.html": "c6ee347f1ca776a927c843f74802ad6442ab70c5ace21116628d46dc6b25fbf3"
+    "MLX:https://ml-explore.github.io/mlx/build/html/usage/precision.html": "c6ee347f1ca776a927c843f74802ad6442ab70c5ace21116628d46dc6b25fbf3",
+    "MLX:https://ml-explore.github.io/mlx/build/html/": "3f8bd1c929af0fa9e8df0ca21247c97ba6841e20d17370cfe122550f78962c4a",
+    "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/": "f7b15ec72de8291c9f1fba9d18874279db261e71c4b70d8fb16d3efb831b19fd",
+    "coremltools:https://apple.github.io/coremltools/docs-guides/": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36"
   }
 }

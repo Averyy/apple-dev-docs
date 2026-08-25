@@ -2,6 +2,8 @@
 
 **Framework**: Virtualization
 
+Configure the USB devices that a guest system can access.
+
 ## Topics
 
 ### Storage Devices

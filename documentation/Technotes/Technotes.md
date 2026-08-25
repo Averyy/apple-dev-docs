@@ -11,6 +11,8 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
+  Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
   Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
@@ -45,8 +47,6 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
   Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
 - [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
   Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
-- [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
-  Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
   Update your app to receive scene-based life-cycle events and manage your user interface using scene objects and methods.
 - [TN3188: Troubleshooting In-App Purchases availability in the App Store](tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md)

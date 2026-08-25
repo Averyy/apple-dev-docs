@@ -64,6 +64,10 @@ People can always resize your presentation using the drag indicator.
   The definition of a custom detent with a calculated height.
 - [struct PresentationContentInteraction](presentationcontentinteraction.md)
   A behavior that you can use to influence how a presentation responds to swipe gestures.
+- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+  Sets the placement of a presentation within the presenting view.
+- [struct PresentationPlacement](presentationplacement.md)
+  The placement of a presentation within the presenting view.
 
 
 ---

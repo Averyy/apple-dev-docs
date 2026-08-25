@@ -12,6 +12,7 @@ A single option in a scoring scale.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -29,7 +30,7 @@ let option = ScaleOption(
 )
 ```
 
-Each option defines a label, guide description, and numeric value. Options are presented to the model as judge in the scoring guide section of the prompt.
+Each option defines a label, guide description, and numeric value. Options are presented to the model judge in the scoring guide section of the prompt.
 
 ## Topics
 
@@ -38,9 +39,9 @@ Each option defines a label, guide description, and numeric value. Options are p
   Creates a scale option.
 ### Instance Properties
 - [let guideDescription: String](scaleoption/guidedescription.md)
-  Rubric guidance shown to the judge for this option.
+  Rubric guidance that the model judge references for this option.
 - [let label: String](scaleoption/label.md)
-  A short label for this option (e.g., “excellent”, “pass”, “5”).
+  A short label for this option, such as “excellent”, “pass”, or “5”.
 - [let value: Double](scaleoption/value.md)
   The numeric value for this option, used for metric aggregation.
 

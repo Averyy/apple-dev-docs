@@ -51,8 +51,7 @@ This configuration sets up a Credential-type SSO extension that handles authenti
     "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
     "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
     "Payload": {
-        "ExtensionIdentifier": "com.example.sso.extension",
-        "TeamIdentifier": "ABCDE12345",
+        "ExtensionComposedIdentifier": "com.example.sso.extension (ABCDE12345)",
         "Type": "Credential",
         "Realm": "EXAMPLE.COM",
         "Hosts": [
@@ -75,8 +74,7 @@ This configuration sets up a Redirect-type SSO extension that intercepts authent
     "Identifier": "2A3B4C5D-6E7F-8A9B-0C1D-2E3F4A5B6C7D",
     "ServerToken": "F1E2D3C4-B5A6-7890-ABCD-EF1234567890",
     "Payload": {
-        "ExtensionIdentifier": "com.example.sso.extension",
-        "TeamIdentifier": "ABCDE12345",
+        "ExtensionComposedIdentifier": "com.example.sso.extension",
         "Type": "Redirect",
         "URLs": [
             "https://login.example.com/auth",
@@ -112,6 +110,8 @@ This configuration sets up a Redirect-type SSO extension that intercepts authent
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -140,8 +140,6 @@ This configuration sets up a Redirect-type SSO extension that intercepts authent
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
 
 
 ---

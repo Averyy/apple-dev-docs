@@ -56,7 +56,7 @@ An advantage of the declarative approach is that it’s easier to update your in
 
 #### Preview Your Content Live
 
-To help you design your views, Xcode provides intuitive design tools to [`Previewing your app’s interface in Xcode`](https://developer.apple.com/documentation/xcode/previewing-your-apps-interface-in-xcode) while you build it. As you edit the code for your view, Xcode updates the preview next to your code
+To help you design your views, Xcode provides intuitive design tools to [`Adding previews to your interface files`](https://developer.apple.com/documentation/xcode/adding-previews-to-your-interface-files) while you build it. As you edit the code for your view, Xcode updates the preview next to your code
 to reflect the changes you made. This immediate feedback lets you see if those changes match your expectations.
 
 ![A screenshot of Xcode with a preview of a SwiftUI view and the code for that view.](/images/com.apple.TechnologyOverviews/swiftui-new-project@2x.png)

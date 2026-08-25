@@ -30,13 +30,13 @@ Xcode also includes several tools to help you rapidly develop and test your app:
 
 ### Essentials
 - [Creating an Xcode project for an app](creating-an-xcode-project-for-an-app.md)
-  Start developing your app by creating an Xcode project from a template.
-- [Creating your app’s interface with SwiftUI](creating-your-app-s-interface-with-swiftui.md)
-  Develop apps in SwiftUI with an interactive preview that keeps the code and layout in sync.
-- [Previewing your app’s interface in Xcode](previewing-your-apps-interface-in-xcode.md)
-  Iterate designs quickly and preview your apps’ displays across different Apple devices.
-- [Building and running an app](building-and-running-an-app.md)
-  Compile your source files and assemble an app bundle to run on a device or simulator.
+  Set up a new project to start developing your app.
+- [Interacting with previews in the canvas](interacting-with-previews-in-the-canvas.md)
+  Use the canvas controls to test your view’s appearance and behavior on different devices and configurations.
+- [Adding previews to your interface files](adding-previews-to-your-interface-files.md)
+  Write code to test your views on different devices and configurations without needing to run your app.
+- [Running your app on simulated or physical devices](running-your-app-on-simulated-or-physical-devices.md)
+  Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
 - [Xcode updates](../updates/xcode.md)
   Learn about important changes to Xcode.
 ### Xcode IDE

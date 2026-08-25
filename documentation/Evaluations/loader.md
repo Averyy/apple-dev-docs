@@ -12,6 +12,7 @@ A protocol for types that supply a dataset for evaluation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ protocol Loader<Sample> : Sendable
 
 #### Overview
 
-Use one of the built-in concrete types — [`ArrayLoader`](arrayloader.md), [`JSONLoader`](jsonloader.md), or [`StreamLoader`](streamloader.md) — or implement this protocol directly for custom data sources.
+Use one of the built-in concrete types such as [`ArrayLoader`](arrayloader.md), [`JSONLoader`](jsonloader.md), or [`StreamLoader`](streamloader.md), or implement this protocol directly for custom data sources.
 
 ```swift
 var dataset: any Loader<ModelSample<String>> {

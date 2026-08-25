@@ -13,6 +13,7 @@ Computes metrics for the given subject, given the input sample.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -23,7 +24,7 @@ nonisolated
 
 #### Return Value
 
-An array of metrics produced by this evaluator.
+An array of metrics this evaluator produces.
 
 ## Parameters
 

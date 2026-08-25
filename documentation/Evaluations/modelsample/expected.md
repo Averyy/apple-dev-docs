@@ -12,6 +12,7 @@ The expected output for comparison.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ var expected: ExpectedValue? { get }
 ## Mentions
 
 - [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Scoring with model-as-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
 
 ## See Also
 

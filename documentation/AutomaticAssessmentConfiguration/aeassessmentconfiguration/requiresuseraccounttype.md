@@ -19,6 +19,8 @@ var requiresUserAccountType: AEUserAccountType { get set }
 
 This property defines the account requirement for starting an assessment session. Set it to `.standard` to require a non-administrator account, `.guest` to require a guest account, or `.any` (the default) to allow any account type.
 
+> **Note**: [`AEUserAccountType`](aeuseraccounttype.md).
+
 
 ---
 

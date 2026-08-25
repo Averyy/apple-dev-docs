@@ -72,6 +72,17 @@ If a test fails, you can find out more details about why the test failed by Cont
 
 For information on how performance tests fit into an overall life cycle of improving your app’s performance, see [`Improving your app’s performance`](improving-your-app-s-performance.md).
 
+## See Also
+
+- [Improving your app’s performance](improving-your-app-s-performance.md)
+  Model, measure, and boost the performance of your app by using a continuous-improvement cycle.
+- [Profiling apps using Instruments](https://developer.apple.com/tutorials/instruments)
+  Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
+- [Analyzing the performance of your shipping app](analyzing-the-performance-of-your-shipping-app.md)
+  View power and performance metrics for apps you distribute through the App Store.
+- [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
+  Identify your app’s performance and power goals and create a plan to measure and assess them.
+
 
 ---
 

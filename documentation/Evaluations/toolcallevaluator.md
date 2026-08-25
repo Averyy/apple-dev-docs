@@ -12,6 +12,7 @@ An evaluator that verifies agentic tool calls against an expected trajectory.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,9 +27,7 @@ struct ToolCallEvaluator<Input> where Input : ModelSampleProtocol, Input.Expecta
 
 #### Overview
 
-Produces both a strict and partial result from a single evaluation pass.
-
-Supports ordered sequences, unordered expectations, disallowed tool checks, and group steps.
+This evaluator produces both a strict and partial result from a single evaluation pass. It also supports ordered sequences, unordered expectations, disallowed tool checks, and group steps.
 
 Use the [`toolsAllPass`](metric/toolsallpass.md) and [`toolsPercentagePass`](metric/toolspercentagepass.md) conveniences for the standard metrics:
 
@@ -42,14 +41,17 @@ let evaluator = ToolCallEvaluator<ModelSample<String>>(
 
 ### Initializers
 - [init(allPass: Metric, percentagePass: Metric)](toolcallevaluator/init(allpass:percentagepass:).md)
-  Creates a new tool call expectations evaluator.
+  Creates a new tool-call expectations evaluator.
 - [init(allPass: Metric, percentagePass: Metric, argumentMatchModel: any LanguageModel)](toolcallevaluator/init(allpass:percentagepass:argumentmatchmodel:).md)
-  Creates a new tool call expectations evaluator with a custom language model for semantic matching of `.naturalLanguage` argument matchers.
+  Creates a new tool-call expectations evaluator with a custom language model for semantic matching of natural language argument matchers.
 ### Instance Properties
 - [let allPass: Metric](toolcallevaluator/allpass.md)
   The metric for the strict pass or fail result.
 - [let percentagePass: Metric](toolcallevaluator/percentagepass.md)
   The metric for the partial score result.
+### Instance Methods
+- [func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]](toolcallevaluator/metrics(subject:input:).md)
+  Evaluates tool-call expectations against the actual transcript and returns scored metrics.
 
 ## Relationships
 

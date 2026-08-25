@@ -23,7 +23,7 @@ class SCRecordingOutput
 - [init(configuration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)](screcordingoutput/init(configuration:delegate:).md)
 - [class SCRecordingOutputConfiguration](screcordingoutputconfiguration.md)
 - [protocol SCRecordingOutputDelegate](screcordingoutputdelegate.md)
-### Configuring the recording output
+### Monitoring recording progress
 - [var recordedDuration: CMTime](screcordingoutput/recordedduration.md)
 - [var recordedFileSize: Int](screcordingoutput/recordedfilesize.md)
 

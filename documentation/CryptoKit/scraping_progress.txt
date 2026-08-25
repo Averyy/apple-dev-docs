@@ -1,4 +1,4 @@
 Completed scraping Apple CryptoKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 713
+Total pages scraped: 1
+Pages skipped (unchanged): 705
 Pages failed: 0

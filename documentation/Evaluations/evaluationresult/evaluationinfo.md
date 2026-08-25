@@ -12,6 +12,7 @@ User-defined information about this evaluation, such as the model name, prompt v
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

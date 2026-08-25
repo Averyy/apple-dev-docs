@@ -12,6 +12,7 @@ A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

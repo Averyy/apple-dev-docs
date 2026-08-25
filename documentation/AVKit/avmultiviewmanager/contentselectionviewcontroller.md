@@ -17,7 +17,7 @@ final var contentSelectionViewController: AVContentSelectionViewController? { ge
 
 #### Discussion
 
-Implement this property to add custom user interface elements. The primary role of this interface is to provide a way for users to add additional videos.
+Implement this property to add custom user interface elements. The primary role of this interface is to provide a way for people to add videos.
 
 ## See Also
 

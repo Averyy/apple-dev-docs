@@ -45,6 +45,8 @@ protocol NSTextSuggestionsDelegate<SuggestionItemType> : AnyObject
 
 - [var isAutomaticTextCompletionEnabled: Bool](nstextfield/isautomatictextcompletionenabled.md)
   A Boolean value that indicates whether the text field automatically completes text as the user types.
+- [var suggestionsDelegate: (any NSTextSuggestionsDelegate)?](nstextfield/suggestionsdelegate.md)
+  The delegate that provides text suggestions for the receiving text field and responds to the user highlighting and selecting items.
 - [struct NSSuggestionItem](nssuggestionitem.md)
   The items that appear in suggestion menus.
 - [struct NSSuggestionItemResponse](nssuggestionitemresponse.md)

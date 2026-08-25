@@ -75,7 +75,7 @@ To complete the test purchase, launch the app on the device or simulator where y
 
 ##### Send a Purchase Intent
 
-Making in-app purchases isn’t the only way people can buy content for you app or game. As a developer, you can promote in-app purchases from the App Store. When a custom sees an in-app purchase in the App Store, they can initiate a purchase. The App Store then sends that purchase intent to the customer on their device. When the customer opens their device, they complete the purchase.
+Making in-app purchases isn’t the only way people can buy content for your app or game. As a developer, you can promote in-app purchases from the App Store. When a customer sees an in-app purchase in the App Store, they can initiate a purchase. The App Store then sends that purchase intent to the customer on their device. When the customer opens their device, they complete the purchase.
 
 > **Note**: To send a purchase intent, your app needs to implement the [`PurchaseIntent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/purchaseintent) API.
 

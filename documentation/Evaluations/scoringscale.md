@@ -12,6 +12,7 @@ A scoring scale that defines the set of options a judge can assign.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,17 +22,17 @@ struct ScoringScale
 
 ## Mentions
 
-- [Designing effective model-as-judge evaluators](designing-effective-model-judges.md)
+- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
 
 #### Overview
 
-Use the factory methods to create scales from numeric dictionaries, pass/fail pairs, or typed [`ScoreLevel`](scorelevel.md) enums:
+Use the factory methods to create scales from numeric dictionaries, pass or fail pairs, or typed [`ScoreLevel`](scorelevel.md) enums:
 
 ```swift
 // Numeric scale
 let _ = ScoringScale.numeric([5: "Flawless", 3: "Readable", 1: "Incomprehensible"])
 
-// Pass/fail
+// Pass or fail
 let _ = ScoringScale.passFail(passDescription: "Safe", failDescription: "Unsafe")
 
 // Typed enum
@@ -47,7 +48,7 @@ let _ = ScoringScale.custom(SafetyLevel.self)
 
 ### Creating a scale
 - [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](scoringscale/passfail(passdescription:faildescription:).md)
-  Creates a binary pass/fail scoring scale.
+  Creates a binary pass or fail scoring scale.
 - [static func numeric([Double : String]) -> ScoringScale](scoringscale/numeric(_:).md)
   Creates a scoring scale from a numeric dictionary.
 - [static func custom<Level>(Level.Type) -> ScoringScale](scoringscale/custom(_:).md)

@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: class
 
-Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+An object that provides configuration options for how the player displays content in different viewing contexts.
 
 **Availability**:
 - visionOS 27.0+ (Beta)
@@ -16,6 +16,8 @@ class AVViewport
 
 #### Overview
 
+Use this object to customize the visual presentation of your content, as the following example shows:
+
 ```swift
 let portalViewport = AVPortalViewport()
 portalViewport.aspectRatio = 2.39
@@ -26,9 +28,9 @@ playerViewController.viewport.portal = portalViewport
 
 ### Configuring the portal viewport
 - [var portal: AVPortalViewport?](avviewport/portal.md)
-  The viewport configuration to use when immersive content is displayed in a portal.
+  The viewport configuration to use when the player displays immersive content in a portal.
 - [class AVPortalViewport](avportalviewport.md)
-  Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
+  An object that defines the visual parameters for content displayed within a portal frame.
 
 ## Relationships
 
@@ -63,7 +65,7 @@ playerViewController.viewport.portal = portalViewport
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
 - [class AVPortalViewport](avportalviewport.md)
-  Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
+  An object that defines the visual parameters for content displayed within a portal frame.
 - [Third-party casting support](third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.
 

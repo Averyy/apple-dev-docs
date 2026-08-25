@@ -32,10 +32,14 @@ object DeviceInformationResponse.QueryResponses.MDMOptions
   The response dictionary that contains the devices accessibility settings.
 - [object DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](deviceinformationresponse/queryresponses-data.dictionary/autosetupadminaccountsitem.md)
   The response dictionary that contains the administrator setup information.
+- [object DeviceInformationResponse.QueryResponses.OSUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary.md)
+  The response dictionary that contains operating system update settings.
 - [object DeviceInformationResponse.QueryResponses.OrganizationInfo](deviceinformationresponse/queryresponses-data.dictionary/organizationinfo-data.dictionary.md)
   The response dictionary that contains organization information.
 - [object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty.md)
   The response dictionary that contains information about the active service subscription.
+- [object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/softwareupdatesettings-data.dictionary.md)
+  The response dictionary that contains information about the Software Update pane in Settings.
 
 
 ---

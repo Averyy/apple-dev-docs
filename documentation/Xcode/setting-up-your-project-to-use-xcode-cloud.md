@@ -55,9 +55,10 @@ If you use an IP allow list either on a self-hosted or cloud SCM provider — su
 2a01:b747:3001:200::/56
 2a01:b747:3002:200::/56
 2a01:b747:3003:200::/56
+2a01:b747:3004:200::/56
 2a01:b747:3005:200::/56
 2a01:b747:3006:200::/56
-2a01:b747:3004:200::/56
+2a01:b747:3007::/56
 ```
 
 Additionally, you need a certain permission or role to connect Xcode Cloud to your Git repository. The exact permission depends on the SCM provider you use:

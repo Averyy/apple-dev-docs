@@ -24,6 +24,8 @@ final class Session
 
 ## See Also
 
+- [Receiving iOS notifications on an accessory](../accessorytransportextension/receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage iOS system notifications for your accessory.
 - [class NotificationsForwarding](notificationsforwarding.md)
   A class for handling notification forwarding in your accessory’s data provider extension.
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)

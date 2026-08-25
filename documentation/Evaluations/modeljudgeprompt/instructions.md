@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: property
 
-The system instructions for the judge model.
+The system instructions for the model judge.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ The system instructions for the judge model.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,14 +22,14 @@ let instructions: String
 
 ## Mentions
 
-- [Designing effective model-as-judge evaluators](designing-effective-model-judges.md)
+- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
 
 ## See Also
 
 - [let evaluationTarget: ((Input.ExpectedValue) -> String)?](modeljudgeprompt/evaluationtarget.md)
-  An optional closure that converts the model’s response to a string for the judge prompt.
+  An optional closure that converts the model’s response to a string for the model prompt.
 - [let reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?](modeljudgeprompt/reference.md)
-  An optional closure that provides labeled reference data to include in the model-as-judge prompt.
+  An optional closure that provides labeled reference data to include in the model prompt.
 
 
 ---

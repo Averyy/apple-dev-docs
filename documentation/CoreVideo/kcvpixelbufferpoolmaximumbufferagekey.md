@@ -3,7 +3,7 @@
 **Framework**: Core Video  
 **Kind**: var
 
-The key you use to set the maximum allowable age for a buffer in the pixel buffer pool.
+The key that sets how long the pool keeps an unused buffer before it ages out.
 
 **Availability**:
 - iOS 4.0+
@@ -22,14 +22,16 @@ let kCVPixelBufferPoolMaximumBufferAgeKey: CFString
 
 #### Discussion
 
-This value for this key is of type [`CFAbsoluteTime`](https://developer.apple.com/documentation/corefoundation/cfabsolutetime).
+Include this key in the pool attributes dictionary you pass to [`CVPixelBufferPoolCreate(_:_:_:_:)`](cvpixelbufferpoolcreate(_:_:_:_:).md).
+
+By default, buffers age out after one second. Set an age of zero to turn off the age-out mechanism.
 
 ## See Also
 
 - [let kCVPixelBufferPoolMinimumBufferCountKey: CFString](kcvpixelbufferpoolminimumbuffercountkey.md)
-  The minimum number of buffers allowed in the pixel buffer pool.
+  The key that sets the minimum number of pixel buffers in the pool.
 - [let kCVPixelBufferPoolAllocationThresholdKey: CFString](kcvpixelbufferpoolallocationthresholdkey.md)
-  The key you use to set the auxiliary attributes dictionary.
+  The key that limits the number of pixel buffers the pool allocates.
 
 
 ---

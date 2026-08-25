@@ -12,11 +12,22 @@ Creates an evaluator with the given evaluation closure.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 init(_ evaluate: nonisolated(nonsending) @escaping (Input, ModelSubject<Input.ExpectedValue>) async throws -> Metric)
+```
+
+#### Discussion
+
+```swift
+let metric = Metric("ExactMatch")
+let evaluator = Evaluator<ModelSample<String>> { sample, subject in
+    guard let expected = sample.expected else { return metric.ignore() }
+    return subject.value == expected ? metric.passing() : metric.failing()
+}
 ```
 
 ## Parameters

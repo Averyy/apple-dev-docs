@@ -17,6 +17,8 @@ func setConfiguration(_ configuration: AEAssessmentBinaryExecutableConfiguration
 
 #### Discussion
 
+Ignores an executable whose [`binaryExecutableURL`](aeassessmentbinaryexecutable/binaryexecutableurl.md) isn’t a file URL.
+
 > **Note**: [`AEAssessmentBinaryExecutable`](aeassessmentbinaryexecutable.md)
 
 ## Parameters

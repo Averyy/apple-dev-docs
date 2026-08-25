@@ -12,12 +12,18 @@ A value that indicates that the argument must be present and its string value mu
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case hasSuffix(argumentName: String, suffix: String)
 ```
+
+## Parameters
+
+- `argumentName`: The name of the argument to validate.
+- `suffix`: The string the argument’s value must end with.
 
 ## See Also
 

@@ -12,12 +12,17 @@ The scoring dimension has no scale values defined.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case noScaleValues(dimension: String)
 ```
+
+## Parameters
+
+- `dimension`: The name of the scoring dimension with no scale values.
 
 
 ---

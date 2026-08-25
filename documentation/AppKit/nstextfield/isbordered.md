@@ -18,6 +18,11 @@ var isBordered: Bool { get set }
 
 If [`true`](https://developer.apple.com/documentation/swift/true), the text field draws a border; if [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t draw a border.
 
+## See Also
+
+- [var borderShape: NSControl.BorderShape](nstextfield/bordershape.md)
+  Set border shape `NSControlBorderShapeAutomatic` sets text field or subclass to default system shape. `NSControlBorderShapeCircle` sets text field or subclass to `NSControlBorderShapeAutomatic`.
+
 
 ---
 

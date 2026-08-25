@@ -14,6 +14,11 @@ Set border shape `NSControlBorderShapeAutomatic` sets text field or subclass to 
 var borderShape: NSControl.BorderShape { get set }
 ```
 
+## See Also
+
+- [var isBordered: Bool](nstextfield/isbordered.md)
+  A Boolean value that controls whether the text field draws a solid black border around its contents.
+
 
 ---
 

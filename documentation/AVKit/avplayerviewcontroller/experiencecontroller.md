@@ -19,7 +19,7 @@ The experience controller for this view controller.
 
 Use an experience controller to transition a player to different experiences and observe experience transitions.
 
-The use of the experience controller is mutually exclusive with a view controller’s existing API for managing the experience. After accessing the `experienceController` property, those methods will log an error and have no effect. Attempting to access this property may fail if these mutually-exclusive properties and methods have been used.
+The use of the experience controller is mutually exclusive with a view controller’s existing API for managing the experience. After accessing the `experienceController` property, those methods log an error and have no effect. Attempting to access this property may fail if you use these mutually exclusive properties and methods together.
 
 ## See Also
 
@@ -40,7 +40,7 @@ The use of the experience controller is mutually exclusive with a view controlle
 - [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
   A configuration object that manages viewport settings for different presentation modes.
 - [class AVViewport](avviewport.md)
-  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+  An object that provides configuration options for how the player displays content in different viewing contexts.
 
 
 ---

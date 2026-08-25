@@ -37,7 +37,7 @@ For more information about continuous integration and delivery, see [`About cont
   Set up your project or workspace to use Xcode Cloud and adopt continuous integration and delivery.
 ### Setup and maintenance
 - [Making dependencies available to Xcode Cloud](making-dependencies-available-to-xcode-cloud.md)
-  Review dependencies and make them available to Xcode Cloud before you configure your project to use Xcode Cloud.
+  Confirm that Xcode Cloud has access to every dependency your project needs to build.
 - [Configuring Xcode Cloud for your team](configuring-xcode-cloud-for-your-team.md)
   Start using continuous integration and delivery with Xcode Cloud as a team.
 - [Sharing macOS and Xcode versions across Xcode Cloud workflows](sharing-custom-aliases-across-xcode-cloud-workflows.md)
@@ -85,7 +85,7 @@ For more information about continuous integration and delivery, see [`About cont
   Provide feedback on issues you encounter when building with Xcode Cloud.
 ### Notifications
 - [Configuring webhooks in Xcode Cloud](configuring-webhooks-in-xcode-cloud.md)
-  Configure webhooks that connect Xcode Cloud to other services and tools.
+  Send build events to external services and tools using webhooks.
 - [Xcode Cloud webhook payload reference](webhook-payload.md)
   Review details of the webhook payload that Xcode Cloud sends, including the product, workflow, build, actions, results, and SCM metadata associated with it.
 - [Connecting Xcode Cloud to Slack](connecting-xcode-cloud-to-slack.md)

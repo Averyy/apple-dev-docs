@@ -12,6 +12,7 @@ The default system instructions used when no custom instructions are provided.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ static var defaultInstructions: String { get }
 ## See Also
 
 - [init(instructions: String, evaluationTarget: ((Input.ExpectedValue) -> String)?, reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?)](modeljudgeprompt/init(instructions:evaluationtarget:reference:).md)
-  Creates a model-as-judge prompt configuration.
+  Creates a model prompt configuration.
 
 
 ---

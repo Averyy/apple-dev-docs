@@ -12,6 +12,7 @@ A type-safe representation of JSON values.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,7 +28,7 @@ let score: StructuredValue = 4.5
 let tags: StructuredValue = ["swift", "evaluation"]
 ```
 
-This type is not `@Generable` due to its recursive array/dictionary structure. For generable argument specifications, use `ArgumentValue` instead.
+This type is not `@Generable` due to its recursive array or dictionary structure. For generable argument specifications, use `ArgumentValue` instead.
 
 ## Topics
 
@@ -74,7 +75,7 @@ This type is not `@Generable` due to its recursive array/dictionary structure. F
 ## See Also
 
 - [enum ArgumentValue](argumentvalue.md)
-  A primitive value type for argument specifications that is @Generable.
+  A primitive, generable value type for argument specifications.
 
 
 ---

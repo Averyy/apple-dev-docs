@@ -3,6 +3,8 @@
 **Framework**: Automatic Assessment Configuration  
 **Kind**: property
 
+The Input Menu system menu bar item, which selects keyboard layouts.
+
 **Availability**:
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)

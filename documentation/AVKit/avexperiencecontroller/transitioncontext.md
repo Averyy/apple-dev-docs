@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: struct
 
-The state of the transition provided to the delegate object.
+The state of the transition that the system provides to the delegate object.
 
 **Availability**:
 - visionOS 2.0+

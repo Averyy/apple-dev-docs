@@ -12,6 +12,7 @@ The scoring constraint mode. See [`ScoringMode`](scoringmode.md).
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -24,7 +25,7 @@ let scoringMode: ScoringMode
 - [let dimensions: [ScoreDimension]](modeljudgeevaluator/dimensions.md)
   The dimensions this evaluator scores.
 - [enum ScoringMode](scoringmode.md)
-  The scoring constraint mode for a model-as-judge evaluator.
+  The scoring constraint mode for a model evaluator.
 
 
 ---

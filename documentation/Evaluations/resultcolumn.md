@@ -12,6 +12,7 @@ A typed descriptor for a column in an evaluation result DataFrame.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ struct ResultColumn<Value>
 #### Overview
 
 ```swift
-let column = ResultColumn<ModelSample<String>>(name: "Input")
+let column = myEvaluation.inputColumn
 ```
 
 ## Topics

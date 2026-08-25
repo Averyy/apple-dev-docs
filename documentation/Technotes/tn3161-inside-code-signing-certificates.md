@@ -242,7 +242,7 @@ When you sign code, you pass `codesign` the name of a code-signing identity usin
 
 By default `codesign` searches all keychains for a code-signing identity whose certificate matches the supplied name.  If multiple identities match, `codesign` complains about the ambiguity.  To resolve this, either pass in the full name or pass in the SHA-1 hash of the identity’s certificate.
 
-The `codesign` man page explains this search process in detail.  For general information about man pages, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+The `codesign` man page explains this search process in detail.  For general information about man pages, see doc://com.apple.documentation/documentation/os/reading-unix-manual-pages.
 
 When searching for code-signing identities, `codesign` checks certain aspects of each identity’s certificate:
 
@@ -367,8 +367,8 @@ Be careful how you interpret this output.  It isn’t saying that the code is fi
 
 To check whether the code is fit for a specific purpose, you need some other mechanism:
 
-- For an app you’re submitting to the App Store, use `altool` with the `--validate-app` subcommand.  For more on this, see the `altool` [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).  This uses the same infrastructure as the Validate App button in the Xcode organizer.
-- For Mac apps that you directly distribute using Developer ID code signing, use the `syspolicy_check` tool.  To learn more about this tool, see its [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+- For an app you’re submitting to the App Store, use `altool` with the `--validate-app` subcommand.  For more on this, see the `altool` man page.  This uses the same infrastructure as the Validate App button in the Xcode organizer.
+- For Mac apps that you directly distribute using Developer ID code signing, use the `syspolicy_check` tool.  To learn more about this tool, see its man page.
 
 #### Non Apple Certificates
 

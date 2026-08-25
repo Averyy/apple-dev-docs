@@ -20,7 +20,7 @@ Offer codes for auto-renewable subscriptions are available starting in iOS 14.2,
 
 ##### Set Up Offer Codes in App Store Connect
 
-Configure offers and manage your offer codes in App Store Connect. There are three types of offer codes: one-time use codes, custom codes, and sandbox codes for testing. The offer code redemption APIs support all offer codes types. You can have up to 10 active offers at at time, with a limit of 1,000,000 codes per app, per quarter. To distribute offer codes to your customers, download them from App Store Connect.
+Configure offers and manage your offer codes in App Store Connect. There are three types of offer codes: one-time use codes, custom codes, and sandbox codes for testing. The offer code redemption APIs support all offer codes types. You can have up to 10 active offers at a time, with a limit of 1,000,000 codes per app, per quarter. To distribute offer codes to your customers, download them from App Store Connect.
 
 For more information on creating and distributing offer codes, and to learn which type of offer code may work for your campaign, see [`Set up offer codes`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes) and [`Create offer codes for in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-offer-codes-for-in-app-purchases).
 

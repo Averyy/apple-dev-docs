@@ -16,7 +16,7 @@ object AppSettingsAllowed_BinaryIdentifierObject
 
 ## Properties
 
-- `CDHash` (string): The code signature code directory hash of the binary.
+- `CDHash` (string): The 40 character code signature code directory hash of the binary.
 - `PathPrefix` (string): The file system path prefix to match binaries.
 - `SigningID` (string): The code signature signing identifier of the binary.
 - `SigningState` (string): The code signing state to match binaries.

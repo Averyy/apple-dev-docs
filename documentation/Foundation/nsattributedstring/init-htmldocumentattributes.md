@@ -18,6 +18,10 @@ init?(html data: Data, documentAttributes dict: AutoreleasingUnsafeMutablePointe
 
 Returns an initialized object, or `nil` if the data can’t be decoded.
 
+#### Discussion
+
+> **Note**:  Apple discourages the use of this symbol. Use [`loadFromHTML(data:options:completionHandler:)`](nsattributedstring/loadfromhtml(data:options:completionhandler:).md) instead.
+
 ## Parameters
 
 - `data`: A data object with text in HTML format. The method uses this data to create the attributed string.
@@ -25,10 +29,6 @@ Returns an initialized object, or `nil` if the data can’t be decoded.
 
 ## See Also
 
-- [init?(HTML: Data, baseURL: URL, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:baseurl:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object and base URL.
-- [init?(HTML: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:options:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object.
 - [class func loadFromHTML(request: URLRequest, options: [NSAttributedString.DocumentReadingOptionKey : Any], completionHandler: (NSAttributedString?, [NSAttributedString.DocumentAttributeKey : Any]?, (any Error)?) -> Void)](nsattributedstring/loadfromhtml(request:options:completionhandler:).md)
   Creates an attributed string by converting the contents of the specified HTML URL request.
 - [class func loadFromHTML(fileURL: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any], completionHandler: (NSAttributedString?, [NSAttributedString.DocumentAttributeKey : Any]?, (any Error)?) -> Void)](nsattributedstring/loadfromhtml(fileurl:options:completionhandler:).md)
@@ -39,6 +39,10 @@ Returns an initialized object, or `nil` if the data can’t be decoded.
   Creates an attributed string from the specified HTML data.
 - [NSAttributedString.CompletionHandler](nsattributedstring/completionhandler.md)
   A completion handler for getting an asynchronous attributed string.
+- [init?(HTML: Data, baseURL: URL, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:baseurl:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object and base URL.
+- [init?(HTML: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:options:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object.
 
 
 ---

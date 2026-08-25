@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: subscript
 
-Returns the first metric whose `Metric/name` equals the given metric’s name, or `nil` if not found.
+Returns the first metric with a metric name that equals the given metric’s name.
 
 **Availability**:
 - iOS 27.0+ (Beta)

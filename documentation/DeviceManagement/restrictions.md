@@ -332,6 +332,12 @@ Requires supervision: iOS
 Requires supervision: iOS
 - `allowRadioService` (boolean): If `false`, the system disables Apple Music Radio. Available: iOS 9.3+ | iPadOS 9.3+
 Requires supervision: iOS
+- `allowRapidSecurityResponseInstallation` (boolean): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+
+- `allowRapidSecurityResponseRemoval` (boolean): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+
 - `allowRCSMessaging` (boolean): If `false`, prevents the use of RCS messaging. Available: iOS 18.1+ | iPadOS 18.1+
 Requires supervision: iOS
 - `allowRemoteAppleEventsModification` (boolean): If `false`, the system prevents modifying Remote Apple Events Sharing settings in System Settings. Available: macOS 14+
@@ -356,6 +362,9 @@ Allowed for user enrollments: iOS | macOS | visionOS
 - `allowSharedDeviceTemporarySession` (boolean): If `false`, the system makes temporary sessions unavailable on Shared iPad. Available: iOS 13.4+ | iPadOS 13.4+
 Requires supervision: iOS
 - `allowSharedStream` (boolean): If `false`, the system disables Shared Photo Stream. Support for this restriction on unsupervised devices is deprecated. Available: iOS 6+ | iPadOS 6+
+- `allowSiriAI` (boolean): If `false`, the system disables Apple Intelligence integration in Siri. Deprecated: use the declarative management `com.apple.configuration.siri.settings` configuration. Available: iOS 27+ | iPadOS 27+
+Deprecated: iOS 27+ | iPadOS 27+
+Allowed for user enrollments: iOS
 - `allowSpellCheck` (boolean): If `false`, the system disables the keyboard spell checker. Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration. Available: iOS 8.1.3+ | iPadOS 8.1.3+
 Deprecated: iOS 26.4+ | iPadOS 26.4+
 Requires supervision: iOS
@@ -407,6 +416,18 @@ Requires supervision: iOS
 - `deniedICCIDsForRCS` ([string]): An array of strings representing ICCIDs of cellular plans. The device prevents use of any matching cellular networks with RCS messaging. The array must contain no more than 4 ICCID strings. Available: iOS 26+ | iPadOS 26+
 Requires supervision: iOS
 - `enforcedFingerprintTimeout` (integer): The value, in seconds, after which the fingerprint unlock requires a password to authenticate. The default value is 48 hours. Available: macOS 12+
+- `enforcedSoftwareUpdateDelay` (integer): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
+- `enforcedSoftwareUpdateMajorOSDeferredInstallDelay` (integer): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: macOS 27+
+- `enforcedSoftwareUpdateMinorOSDeferredInstallDelay` (integer): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: macOS 27+
+- `enforcedSoftwareUpdateNonOSDeferredInstallDelay` (integer): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: macOS 27+
 - `forceAirDropUnmanaged` (boolean): If `true`, the system considers AirDrop to be an unmanaged drop target. Available: iOS 9+ | iPadOS 9+ | visionOS 2+
 Allowed for user enrollments: iOS | visionOS
 - `forceAirPlayIncomingRequestsPairingPassword` (boolean): If `true`, the system forces all devices sending AirPlay requests to this device to use a pairing password. This key isn’t supported in tvOS 10.2 and later. Use the AirPlay Security Payload instead. Available: tvOS 9+
@@ -422,8 +443,6 @@ Requires supervision: iOS | visionOS
 - `forceAutomaticDateAndTime` (boolean): If `true`, the system enables the Set Automatically feature in Date & Time and the user can’t disable it. The system updates the device’s time zone only when the device can determine its location using a cellular connection or Wi-Fi with location services enabled. Available: iOS 12+ | iPadOS 12+ | tvOS 12.2+ | visionOS 2+
 Requires supervision: iOS | tvOS | visionOS
 - `forceBypassScreenCaptureAlert` (boolean): If `true`, then the system bypasses the presentation of a screen capture alert. Available: macOS 15.1+
-- `ForceCaptivePortalConnectionFromLockScreen` (boolean): If `true`, the system allows use of the captive WiFi portal at login or unlock. Available: macOS 27+
-Requires supervision: macOS
 - `forceClassroomAutomaticallyJoinClasses` (boolean): If `true`, the system automatically gives permission to the teacher’s requests without prompting the student. Available: iOS 11+ | iPadOS 11+ | macOS 10.14.4+
 Requires supervision: iOS | macOS
 - `forceClassroomRequestPermissionToLeaveClasses` (boolean): If `true`, a student enrolled in an unmanaged course through Classroom needs to request permission from the teacher to leave the course. Available: iOS 11.3+ | iPadOS 11.3+ | macOS 10.14.4+
@@ -432,6 +451,13 @@ Requires supervision: iOS | macOS
 Requires supervision: iOS | macOS
 - `forceClassroomUnpromptedScreenObservation` (boolean): If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher’s requests to observe the student’s screen without prompting the student. Available: iOS 11+ | iPadOS 11+ | macOS 10.14.4+
 Requires supervision: iOS | macOS
+- `forceDelayedAppSoftwareUpdates` (boolean): Removed: macOS 27+
+- `forceDelayedMajorSoftwareUpdates` (boolean): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: macOS 27+
+- `forceDelayedSoftwareUpdates` (boolean): Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration. 
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 - `forceEncryptedBackup` (boolean): If `true`, the system encrypts all backups. Available: iOS 4+ | iPadOS 4+
 Allowed for user enrollments: iOS
 - `forceITunesStorePasswordEntry` (boolean): If `true`, the system forces the user to enter their iTunes password for each transaction. Available: iOS 6+ | iPadOS 6+
@@ -447,8 +473,6 @@ Allowed for user enrollments: iOS
 Requires supervision: iOS
 - `forceWatchWristDetection` (boolean): If `true`, the system forces a paired Apple Watch to use Wrist Detection. Available: iOS 8.2+ | iPadOS 8.2+ | watchOS 10+
 Allowed for user enrollments: iOS
-- `ForceWifiConfigurationOnLockScreen` (boolean): If `true`, the system allows the user to select WiFi networks at login or unlock. Available: macOS 27+
-Requires supervision: macOS
 - `forceWiFiPowerOn` (boolean): If `true`, the system prevents turning off Wi-Fi in Settings or Control Center, even by entering or leaving Airplane Mode. It doesn’t prevent selecting which Wi-Fi network to use. and later. Available: iOS 13+ | iPadOS 13+
 Requires supervision: iOS
 - `forceWiFiToAllowedNetworksOnly` (boolean): If `true`, the system limits the device to only join Wi-Fi networks set up through a configuration profile. Available: iOS 14.5+ | iPadOS 14.5+ | visionOS 2+

@@ -16,7 +16,7 @@ var fallbackPlacement: AVExperienceController.ExpandedConfiguration.Placement
 
 #### Discussion
 
-The system places expanded experience over the scene of the original container. When the container isn’t available, the system uses this value. If neither specifies a valid placement, attempting to transition to an expanded experience fails.
+The system places the expanded experience over the scene of the original container. When the container isn’t available, the system uses this value. A transition to an expanded experience fails unless the container or this value specifies a valid placement.
 
 ## See Also
 

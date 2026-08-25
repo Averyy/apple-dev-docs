@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: typealias
 
-Shorthand for the evaluator array type, resolved per-conformance.
+The evaluator array type for this conformance.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ Shorthand for the evaluator array type, resolved per-conformance.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ typealias Evaluators = [any EvaluatorProtocol<Self.Sample, Self.Subject>]
 ## See Also
 
 - [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
-  The evaluators to apply to each subject/sample pair.
+  The evaluators to apply to each sample and its corresponding subject.
 - [protocol EvaluatorProtocol](evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
 - [struct EvaluatorsBuilder](evaluatorsbuilder.md)

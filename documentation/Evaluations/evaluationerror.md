@@ -12,6 +12,7 @@ Errors thrown during an evaluation run.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -32,8 +33,6 @@ do {
 ## Topics
 
 ### Enumeration Cases
-- [EvaluationError.metricsNotFound(names:)](evaluationerror/metricsnotfound(names:).md)
-  One or more metric columns were not found in the evaluation results.
 - [EvaluationError.missingTranscript(evaluatorType:)](evaluationerror/missingtranscript(evaluatortype:).md)
   An evaluator received a subject without the required transcript.
 
@@ -48,9 +47,9 @@ do {
 ## See Also
 
 - [enum EvaluatorError](evaluatorerror.md)
-  A typed reason why an evaluator failed while scoring a produced subject.
+  A value that describes why an evaluator failed while scoring a produced subject.
 - [enum SubjectInferenceError](subjectinferenceerror.md)
-  A typed reason why `subject(from:)` failed to produce a subject for a sample.
+  A value that describes a failure to produce a subject for a sample.
 - [enum EvaluationResultsError](evaluationresultserror.md)
   Errors the framework throws when parsing evaluation results.
 

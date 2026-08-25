@@ -12,6 +12,7 @@ The values that define how to validate a tool-call argument.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -75,9 +76,26 @@ let matchers: [ArgumentMatcher] = [
   A value that indicates that the argument must be present and semantically match the given criteria.
 ### Supporting types
 - [enum ArgumentValue](argumentvalue.md)
-  A primitive value type for argument specifications that is @Generable.
+  A primitive, generable value type for argument specifications.
 - [enum StructuredValue](structuredvalue.md)
   A type-safe representation of JSON values.
+### Initializers
+- [init(from: any Decoder) throws](argumentmatcher/init(from:).md)
+  Creates an argument matcher from the given decoder.
+### Instance Properties
+- [var generatedContent: GeneratedContent](argumentmatcher/generatedcontent.md)
+  The generated content representation of this argument matcher.
+### Instance Methods
+- [func encode(to: any Encoder) throws](argumentmatcher/encode(to:).md)
+  Encodes this argument matcher into the given encoder.
+### Type Properties
+- [static var generationSchema: GenerationSchema](argumentmatcher/generationschema.md)
+  The generation schema for this partially generated argument matcher.
+### Enumerations
+- [ArgumentMatcher.PartiallyGenerated](argumentmatcher/partiallygenerated.md)
+  A partially generated form of an argument matcher.
+### Default Implementations
+- [ConvertibleFromGeneratedContent Implementations](argumentmatcher/convertiblefromgeneratedcontent-implementations.md)
 
 ## Relationships
 

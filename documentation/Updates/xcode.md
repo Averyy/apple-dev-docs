@@ -48,7 +48,7 @@ The latest version of Xcode includes the following new features.
 
 - Configure Xcode Cloud for building and testing your app without joining the Apple Developer Program. For more information, see [`Getting started with Xcode Cloud`](https://developer.apple.com/documentation/xcode/getting-started-with-xcode-cloud).
 - Easily add a workflow to distribute your app through TestFlight. For more information, see [`Distributing your Xcode Cloud builds through TestFlight`](https://developer.apple.com/documentation/xcode/distributing-your-xcode-cloud-builds-through-testflight).
-- Xcode Cloud supports webhooks and additional repositories. For more information, see [`Build, deliver, and automate with Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/261/).
+- Xcode Cloud supports webhooks and additional repositories. For more information, see [`Configuring webhooks in Xcode Cloud`](https://developer.apple.com/documentation/xcode/configuring-webhooks-in-xcode-cloud) and [`Making dependencies available to Xcode Cloud`](https://developer.apple.com/documentation/xcode/making-dependencies-available-to-xcode-cloud).
 
 #### February 2026
 

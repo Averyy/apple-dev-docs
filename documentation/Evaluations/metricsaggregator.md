@@ -12,6 +12,7 @@ A utility for computing aggregate statistics from evaluation metrics.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,7 +23,7 @@ struct MetricsAggregator
 ## Mentions
 
 - [Designing effective evaluations](designing-effective-evaluations.md)
-- [Scoring with model-as-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
 
 #### Overview
 

@@ -3,7 +3,7 @@
 **Framework**: Core Location  
 **Kind**: enum
 
-Values for indicating the kind of updates the framework delivers.
+Values that indicate the kind of positioning updates the framework delivers.
 
 **Availability**:
 - iOS 17.0+
@@ -31,10 +31,10 @@ enum LiveConfiguration
   The value that configures positioning for an automobile following a road network.
 - [CLLocationUpdate.LiveConfiguration.fitness](cllocationupdate/liveconfiguration/fitness.md)
   The value that configures positioning for dedicated fitness sessions.
+- [CLLocationUpdate.LiveConfiguration.maritime](cllocationupdate/liveconfiguration/maritime.md)
+  The value that configures positioning for vessels on water, including while anchored.
 - [CLLocationUpdate.LiveConfiguration.otherNavigation](cllocationupdate/liveconfiguration/othernavigation.md)
   The value that configures positioning for transportation that doesn’t, or may not, adhere to roads, such as cycling, scooters, trains, boats, and off-road vehicles.
-### Enumeration Cases
-- [CLLocationUpdate.LiveConfiguration.maritime](cllocationupdate/liveconfiguration/maritime.md)
 
 ## Relationships
 

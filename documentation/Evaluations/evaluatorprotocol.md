@@ -12,6 +12,7 @@ A type that evaluates subjects and produces metrics.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,9 +22,9 @@ protocol EvaluatorProtocol<Input, Subject> : Sendable
 
 #### Overview
 
-Conform to `EvaluatorProtocol` to create custom evaluators that measure the system’s output against expected criteria. Each evaluator returns an array of [`Metric`](metric.md) values — one per DataFrame column produced.
+Conform to `EvaluatorProtocol` to create custom evaluators that measure the system’s output against expected criteria. Each evaluator returns an array of [`Metric`](metric.md) values: one for each DataFrame column.
 
-The protocol is parameterized by `Input` (the sample type). `Subject` is an associated type constrained to [`EvaluationSubject`](evaluationsubject.md), ensuring the subject’s value type matches the sample’s expected value type.
+The protocol takes `Input` (the sample type) as a type parameter. `Subject` is an associated type constrained to [`EvaluationSubject`](evaluationsubject.md), ensuring the subject’s value type matches the sample’s expected value type.
 
 Conforming types must be `Sendable`.
 
@@ -47,7 +48,7 @@ where Input.ExpectedValue: Sendable & Codable {
 - [associatedtype Input : SampleProtocol](evaluatorprotocol/input.md)
   The input sample type.
 - [associatedtype Subject : EvaluationSubject](evaluatorprotocol/subject.md)
-  The type of the subject produced by the system under test.
+  The type of subject the system under test produces.
 ### Instance Methods
 - [func metrics(subject: Self.Subject, input: Self.Input) async throws -> [Metric]](evaluatorprotocol/metrics(subject:input:).md)
   Computes metrics for the given subject, given the input sample.
@@ -65,9 +66,9 @@ where Input.ExpectedValue: Sendable & Codable {
 ## See Also
 
 - [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
-  The evaluators to apply to each subject/sample pair.
+  The evaluators to apply to each sample and its corresponding subject.
 - [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
-  Shorthand for the evaluator array type, resolved per-conformance.
+  The evaluator array type for this conformance.
 - [struct EvaluatorsBuilder](evaluatorsbuilder.md)
   A result builder that enables declarative evaluator lists.
 - [func aggregateMetrics(using: inout MetricsAggregator)](evaluation/aggregatemetrics(using:).md)

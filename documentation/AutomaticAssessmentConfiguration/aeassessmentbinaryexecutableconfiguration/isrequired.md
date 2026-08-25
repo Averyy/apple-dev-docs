@@ -15,6 +15,12 @@ Whether the assessment requires this executable. Defaults to `NO`.
 var isRequired: Bool { get set }
 ```
 
+#### Discussion
+
+Governs what happens when the executable cannot be enforced — for example, when signature validation fails under [`allowsOnlyParticipantsToRun`](aeassessmentconfiguration/allowsonlyparticipantstorun.md). A non-required participant is silently dropped; a required one prevents the session from beginning.
+
+> **Note**: [`requiresSignatureValidation`](aeassessmentbinaryexecutable/requiressignaturevalidation.md).
+
 
 ---
 

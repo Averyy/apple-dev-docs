@@ -133,12 +133,12 @@ The methods of the [`IndexedEntityQuery`](indexedentityquery.md) protocol tell y
 struct PhotoQuery: IndexedEntityQuery {
     func reindexEntities(for identifiers: [PhotoEntity.ID], indexDescription: CSSearchableIndexDescription) async throws {
         let photos = try await photoStore.fetch(ids: identifiers)
-        try await CSSearchableIndex(name: “MyPhotosApp”).indexAppEntities(photos)
+        try await CSSearchableIndex(name: "MyPhotosApp").indexAppEntities(photos)
     }
 
     func reindexAllEntities(indexDescription: CSSearchableIndexDescription) async throws {
         let allPhotos = try await photoStore.fetchAll()
-        try await CSSearchableIndex(name: “MyPhotosApp”).indexAppEntities(allPhotos)
+        try await CSSearchableIndex(name: "MyPhotosApp").indexAppEntities(allPhotos)
     }
 
    // Other query-related methods.

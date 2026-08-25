@@ -34,6 +34,11 @@ To manage your simulated and physical devices, select a device in the sidebar to
   Use Device Hub to control interactions with your apps on simulated and physical devices.
 - [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
+### Device details
+- [Locating device identifiers](locating-device-identifiers.md)
+  Get the unique identifier for a device before registering it in your developer account.
+- [Managing apps on devices](managing-apps-on-devices.md)
+  Find, add, and remove apps installed for testing on simulated and physical devices.
 
 ## See Also
 

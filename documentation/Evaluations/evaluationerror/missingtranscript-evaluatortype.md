@@ -12,6 +12,7 @@ An evaluator received a subject without the required transcript.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,10 @@ case missingTranscript(evaluatorType: String)
 #### Discussion
 
 This occurs when using [`ToolCallEvaluator`](toolcallevaluator.md) with a [`ModelSubject`](modelsubject.md) that has a `nil` transcript. Pass `session.transcript.structuredTranscript` when creating the `ModelSubject`.
+
+## Parameters
+
+- `evaluatorType`: The concrete type name of the evaluator that requires a transcript.
 
 
 ---

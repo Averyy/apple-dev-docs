@@ -14,6 +14,10 @@ An array of possible interactions that a person can have with the notification.
 let actions: [AccessoryNotification.Action]
 ```
 
+## Mentions
+
+- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+
 ## See Also
 
 - [AccessoryNotification.Action](accessorynotification/action.md)

@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: protocol
 
-A type that represents the output produced by the system under test.
+A type that represents the output the system under test produces.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ A type that represents the output produced by the system under test.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -34,12 +35,12 @@ struct MySubject<Value: Codable>: EvaluationSubject {
 
 ### Associated Types
 - [associatedtype Value : Decodable, Encodable](evaluationsubject/value-swift.associatedtype.md)
-  The type of the value produced by the system under test.
+  The type of value the system under test produces.
 ### Instance Properties
 - [var transcript: StructuredTranscript?](evaluationsubject/transcript.md)
   The structured transcript captured while producing the value, if any.
 - [var value: Self.Value](evaluationsubject/value-swift.property.md)
-  The typed value produced by the system under test.
+  The typed value the system under test produces.
 
 ## Relationships
 
@@ -49,13 +50,13 @@ struct MySubject<Value: Codable>: EvaluationSubject {
 ## See Also
 
 - [associatedtype Subject : EvaluationSubject](evaluation/subject.md)
-  The type of the subject produced by the system under test.
+  The type of subject the system under test produces.
 - [func subject(from: Self.Sample) async throws -> Self.Subject](evaluation/subject(from:).md)
   Produces the subject of evaluation from a given sample.
 - [struct ModelSubject](modelsubject.md)
   The subject type for language model evaluations.
 - [var name: String](evaluation/name.md)
-  The default name, derived from the type name.
+  The default name, taken from the type name.
 
 
 ---

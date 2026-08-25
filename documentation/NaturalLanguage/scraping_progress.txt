@@ -1,4 +1,4 @@
 Completed scraping Natural Language!
-Total pages scraped: 0
-Pages skipped (unchanged): 299
+Total pages scraped: 3
+Pages skipped (unchanged): 296
 Pages failed: 0

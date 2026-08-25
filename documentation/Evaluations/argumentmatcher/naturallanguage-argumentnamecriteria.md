@@ -12,12 +12,18 @@ A value that indicates that the argument must be present and semantically match 
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case naturalLanguage(argumentName: String, criteria: String)
 ```
+
+## Parameters
+
+- `argumentName`: The name of the argument to validate.
+- `criteria`: The semantic criteria the argument’s value must satisfy.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
-A string that identifies the text to which the attributes should apply.
+A string that identifies the text the style attributes apply to.
 
 **Availability**:
 - iOS 6.0+
@@ -21,9 +21,34 @@ var textSelector: String? { get }
 
 #### Discussion
 
-The contents of the string are determined by the format of the legible media. For example, the string could contain the CSS selectors used by the corresponding text in Web Video Text Tracks (WebVTT) markup.
+The format of the legible media determines the syntax of this string. For WebVTT, it’s a CSS selector that matches the markup inside a cue. A class selector needs a leading period, and a voice selector wraps the speaker’s name in a `voice` attribute.
 
-If the value of this property is `nil`, the text style attributes apply to all text in the media item.
+- **`.music`**: The text of any tag carrying the `music` class, as in `<c.music>`
+- **`v[voice="Ana"]`**: The text of a voice tag that names Ana, as in `<v Ana>`
+- **`::cue`**: The text of every cue
+
+The following example applies one rule for each of those selectors:
+
+```swift
+import CoreMedia
+
+playerItem.textStyleRules = [
+    AVTextStyleRule(
+        textMarkupAttributes: [kCMTextMarkupAttribute_ItalicStyle as String: true],
+        textSelector: ".music"
+    ),
+    AVTextStyleRule(
+        textMarkupAttributes: [kCMTextMarkupAttribute_ForegroundColorARGB as String: [1.0, 0.4, 0.8, 1.0]],
+        textSelector: "v[voice=\"Ana\"]"
+    ),
+    AVTextStyleRule(
+        textMarkupAttributes: [kCMTextMarkupAttribute_RelativeFontSize as String: 120],
+        textSelector: "::cue"
+    ),
+].compactMap { $0 }
+```
+
+When this property is `nil`, the attributes act as defaults for all of the item’s text. Rules apply only where the media resource doesn’t supply equivalent styling of its own; see [`textStyleRules`](avplayeritem/textstylerules.md).
 
 ## See Also
 

@@ -67,6 +67,10 @@ Only popovers allow breakthrough to be disabled altogether. Passing a `.none` va
   Sets the sizing of the containing presentation.
 - [func presentationPreventsAppTermination(Bool?) -> some View](view/presentationpreventsapptermination(_:).md)
   Whether a presentation prevents the app from being terminated/quit by the system or app termination menu item.
+- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+  Sets the placement of a presentation within the presenting view.
+- [struct PresentationPlacement](presentationplacement.md)
+  The placement of a presentation within the presenting view.
 
 
 ---

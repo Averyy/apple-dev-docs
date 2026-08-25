@@ -17,7 +17,7 @@ To create an evaluation, you:
 - Add evaluators that score each response against metrics you define.
 - Aggregate those scores into a metric summary you compare across runs.
 
-To see these four steps in use in a complete app, with code-based and model-as-judge scoring, synthetic data, and tool-call evaluation, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+To see these four steps in use in a complete app, with code-based and model-judge scoring, synthetic data, and tool-call evaluation, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
 #### Provide Input
 
@@ -63,7 +63,7 @@ You can inspect both the output and the transcript in the detailed results.
 
 #### Add Evaluators
 
-Add evaluators that score each response. For guidance on choosing between code-based and model-as-judge evaluators, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). Declare a [`Metric`](metric.md) for each measurement, then return one of its result values: [`passing(rationale:)`](metric/passing(rationale:).md) or [`failing(rationale:)`](metric/failing(rationale:).md) for binary checks, and [`scoring(_:rationale:)`](metric/scoring(_:rationale:).md) for continuous values.
+Add evaluators that score each response. For guidance on choosing between code-based and model-judge evaluators, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). Declare a [`Metric`](metric.md) for each measurement, then return one of its result values: [`passing(rationale:)`](metric/passing(rationale:).md) or [`failing(rationale:)`](metric/failing(rationale:).md) for binary checks, and [`scoring(_:rationale:)`](metric/scoring(_:rationale:).md) for continuous values.
 
 The first evaluator below checks whether the count is exactly correct. The second measures how much the model’s answer deviates from the correct answer:
 
@@ -253,9 +253,9 @@ For a side-by-side view, choose Compare and select a run for each side. This fig
 
 For more on evaluating tool calling, see [`Evaluating tool-calling behavior`](evaluating-tool-calling-behavior.md).
 
-#### Evaluate Subjective Quality with a Model As Judge
+#### Evaluate Subjective Quality with a Model Judge
 
-Not every quality dimension has a clear-cut programmatic test. For subjective criteria such as tone, helpfulness, or fluency, use a [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to have a language model score responses on your behalf. Provide a rating scale and evaluation instructions, then add the model as judge to your evaluators list:
+Not every quality dimension has a clear-cut programmatic test. For subjective criteria such as tone, helpfulness, or fluency, use a [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to have a language model score responses on your behalf. Provide a rating scale and evaluation instructions, then add the model judge to your evaluators list:
 
 ```swift
 var evaluators: Evaluators {
@@ -280,7 +280,7 @@ var evaluators: Evaluators {
 }
 ```
 
-The model as judge scores each response on a numeric scale and provides a written rationale explaining its reasoning. For a complete walkthrough of building model-as-judge configurations, including pointwise and pairwise evaluation, scored examples, and prompt customization, see [`Scoring with model-as-judge evaluators`](scoring-with-model-as-judge-evaluators.md).
+The model judge scores each response on a numeric scale and provides a written rationale explaining its reasoning. For a complete walkthrough of building model-judge configurations, including pointwise and pairwise evaluation, scored examples, and prompt customization, see [`Scoring with model-judge evaluators`](scoring-with-model-as-judge-evaluators.md).
 
 ## See Also
 

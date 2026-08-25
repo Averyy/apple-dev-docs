@@ -53,7 +53,7 @@ For information about capturing the portrait effects matte, see [`Configuring ca
 - [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avportraiteffectsmatte/init(fromdictionaryrepresentation:).md)
   Initializes a portrait effects matte instance from auxiliary image information in an image file.
 - [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avportraiteffectsmatte/applyingexiforientation(_:).md)
-  Returns a derivative portrait effects matte after applying the specified EXIF orientation.
+  Returns a derivative portrait effects matte after applying the specified Exif orientation.
 - [func replacingPortraitEffectsMatte(with: CVPixelBuffer) throws -> Self](avportraiteffectsmatte/replacingportraiteffectsmatte(with:).md)
   Returns a portrait effects matte by wrapping the replacement pixel buffer.
 ### Examining a Portrait Effects matte

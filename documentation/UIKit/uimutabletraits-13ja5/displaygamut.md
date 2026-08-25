@@ -23,7 +23,7 @@ var displayGamut: UIDisplayGamut { get set }
 - [var accessibilityContrast: UIAccessibilityContrast](uimutabletraits-13ja5/accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
 - [var activeAppearance: UIUserInterfaceActiveAppearance](uimutabletraits-13ja5/activeappearance.md)
-  A property that indicates whether the user interface has an active appearance.
+  A property that indicates whether a scene has an active appearance.
 - [var displayScale: CGFloat](uimutabletraits-13ja5/displayscale.md)
   The display scale of the trait collection.
 - [var forceTouchCapability: UIForceTouchCapability](uimutabletraits-13ja5/forcetouchcapability.md)

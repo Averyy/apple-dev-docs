@@ -48,7 +48,7 @@ In Xcode, take advantage of several other key features:
 
 - Write code, fix bugs, and and navigate unfamiliar code bases using [`Writing code with intelligence in Xcode`](https://developer.apple.com/documentation/xcode/writing-code-with-intelligence-in-xcode).
 - Track and manage changes to your code using the integrated [`Source control management`](https://developer.apple.com/documentation/xcode/source-control-management).
-- [`Previewing your app’s interface in Xcode`](https://developer.apple.com/documentation/xcode/previewing-your-apps-interface-in-xcode) as you build it.
+- [`Adding previews to your interface files`](https://developer.apple.com/documentation/xcode/adding-previews-to-your-interface-files) as you build it.
 - [`Running code snippets using the playground macro`](https://developer.apple.com/documentation/xcode/running-code-snippets-using-the-playground-macro) to verify it delivers the results you expect.
 - Use [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/xcode/managing-assets-with-asset-catalogs) to simplify the management of [`Adding images to your Xcode project`](https://developer.apple.com/documentation/xcode/adding-images-to-your-xcode-project), [`Specifying your app’s color scheme`](https://developer.apple.com/documentation/xcode/specifying-your-apps-color-scheme), and other project assets you ship with your code.
 - Use [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog) to manage string resources, including localized and customized versions of those strings.

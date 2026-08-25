@@ -81,7 +81,7 @@ Make the following substitutions to this command:
 - **`<PathToApp>`**: The path to your app.
 - **`<PathToPackage>`**: The path where `productbuild` creates the Installer package.
 
-If you have a more complex product, you’ll need a more complex Installer package.  For more details on how to work with Installer packages, see the manual pages for `productbuild`, `productsign`, `pkgbuild`, and `pkgutil`.  For instructions on how to read a manual page, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+If you have a more complex product, you’ll need a more complex Installer package.  For more details on how to work with Installer packages, see the [`productbuild`](https://developer.apple.comx-man-page://1/productbuild), [`productsign`](https://developer.apple.comx-man-page://1/productsign), [`pkgbuild`](https://developer.apple.comx-man-page://1/pkgbuild), and [`pkgutil`](https://developer.apple.comx-man-page://1/pkgutil) man (manual) pages.
 
 #### Build a Disk Image File
 
@@ -154,7 +154,9 @@ For products that you distribute as zip files or disk image files, consider thes
 - [Distributing your app for beta testing and releases](distributing-your-app-for-beta-testing-and-releases.md)
   Release your app to beta testers and users.
 - [Distributing your app to registered devices](distributing-your-app-to-registered-devices.md)
-  Register devices in your developer account and deploy your app to them for testing.
+  Test your app on devices that you register in your developer account.
+- [Locating device identifiers](locating-device-identifiers.md)
+  Get the unique identifier for a device before registering it in your developer account.
 
 
 ---

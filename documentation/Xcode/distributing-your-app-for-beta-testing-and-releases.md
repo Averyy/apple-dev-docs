@@ -140,7 +140,9 @@ If you distribute your app using TestFlight or through the App Store, you can vi
 ## See Also
 
 - [Distributing your app to registered devices](distributing-your-app-to-registered-devices.md)
-  Register devices in your developer account and deploy your app to them for testing.
+  Test your app on devices that you register in your developer account.
+- [Locating device identifiers](locating-device-identifiers.md)
+  Get the unique identifier for a device before registering it in your developer account.
 - [Packaging Mac software for distribution](packaging-mac-software-for-distribution.md)
   Build a zip archive, disk image, or installer package for distributing your Mac software.
 

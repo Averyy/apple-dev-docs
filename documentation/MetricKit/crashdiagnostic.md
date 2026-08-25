@@ -68,7 +68,7 @@ if let category = diagnostic.terminationCategory {
 - [CrashDiagnostic.TerminationCategory](crashdiagnostic/terminationcategory-swift.struct.md)
   A value that describes the category of termination that caused a crash.
 - [CrashDiagnostic.TerminationReason](crashdiagnostic/terminationreason-swift.struct.md)
-  The reason the app was terminated, as a human-readable string.
+  A value that describes the reason the app terminated.
 
 ## Relationships
 

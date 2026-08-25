@@ -23,6 +23,8 @@ var dataRequest: AVAssetResourceLoadingDataRequest? { get }
 
 An instance of [`AVAssetResourceLoadingDataRequest`](avassetresourceloadingdatarequest.md) that indicates the range of resource data that’s being requested. The value of this property is `nil` if no data is being requested.
 
+If the loading request’s [`contentInformationRequest`](avassetresourceloadingrequest/contentinformationrequest.md) isn’t `nil`, set that request’s properties before you respond to any data request.
+
 ## See Also
 
 - [var request: URLRequest](avassetresourceloadingrequest/request.md)

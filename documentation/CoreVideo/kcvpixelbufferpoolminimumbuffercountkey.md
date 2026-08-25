@@ -3,7 +3,7 @@
 **Framework**: Core Video  
 **Kind**: var
 
-The minimum number of buffers allowed in the pixel buffer pool.
+The key that sets the minimum number of pixel buffers in the pool.
 
 **Availability**:
 - iOS 4.0+
@@ -22,14 +22,14 @@ let kCVPixelBufferPoolMinimumBufferCountKey: CFString
 
 #### Discussion
 
-This value for this key is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+Include this key in the pool attributes dictionary you pass to [`CVPixelBufferPoolCreate(_:_:_:_:)`](cvpixelbufferpoolcreate(_:_:_:_:).md).
 
 ## See Also
 
 - [let kCVPixelBufferPoolMaximumBufferAgeKey: CFString](kcvpixelbufferpoolmaximumbufferagekey.md)
-  The key you use to set the maximum allowable age for a buffer in the pixel buffer pool.
+  The key that sets how long the pool keeps an unused buffer before it ages out.
 - [let kCVPixelBufferPoolAllocationThresholdKey: CFString](kcvpixelbufferpoolallocationthresholdkey.md)
-  The key you use to set the auxiliary attributes dictionary.
+  The key that limits the number of pixel buffers the pool allocates.
 
 
 ---

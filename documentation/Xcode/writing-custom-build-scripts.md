@@ -18,7 +18,7 @@ For Xcode Cloud to recognize your custom build scripts, you’ll need to place t
 
 > ❗ **Important**: Xcode Cloud uses `zsh` as its default Unix shell. As a best practice, always include a shebang in the first line of your custom build script; for example `#!/bin/sh`.
 
-For additional information about custom build scripts, see [`Customize your advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10269). For more information on installing a third-party tool, see [`Use a custom build script to install a third-party dependency or tool`](making-dependencies-available-to-xcode-cloud#Use-a-custom-build-script-to-install-a-third-party-dependency-or-tool.md).
+For additional information about custom build scripts, see [`Customize your advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10269). For more information on installing a third-party tool, see [`Install a third-party dependency with a custom script`](making-dependencies-available-to-xcode-cloud#Install-a-third-party-dependency-with-a-custom-script.md).
 
 ##### Create the Ci Scripts Directory
 

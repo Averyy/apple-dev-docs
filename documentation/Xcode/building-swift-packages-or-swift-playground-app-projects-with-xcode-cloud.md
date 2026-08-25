@@ -22,7 +22,7 @@ Similarly, Xcode Cloud can’t build standalone apps you create with [`Swift Pla
 ## See Also
 
 - [Making dependencies available to Xcode Cloud](making-dependencies-available-to-xcode-cloud.md)
-  Review dependencies and make them available to Xcode Cloud before you configure your project to use Xcode Cloud.
+  Confirm that Xcode Cloud has access to every dependency your project needs to build.
 - [Configuring Xcode Cloud for your team](configuring-xcode-cloud-for-your-team.md)
   Start using continuous integration and delivery with Xcode Cloud as a team.
 - [Sharing macOS and Xcode versions across Xcode Cloud workflows](sharing-custom-aliases-across-xcode-cloud-workflows.md)

@@ -49,7 +49,7 @@ For design guidance, see [`Modality`](https://developer.apple.com/design/human-i
   A proxy to a view provided to the presentation with a defined presentation size.
 - [struct PresentationSizingContext](presentationsizingcontext.md)
   Contextual information about a presentation.
-### Configuring a sheet’s height
+### Configuring a sheet’s height and placement
 - [func presentationDetents(Set<PresentationDetent>) -> some View](view/presentationdetents(_:).md)
   Sets the available detents for the enclosing sheet.
 - [func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View](view/presentationdetents(_:selection:).md)
@@ -64,6 +64,10 @@ For design guidance, see [`Modality`](https://developer.apple.com/design/human-i
   The definition of a custom detent with a calculated height.
 - [struct PresentationContentInteraction](presentationcontentinteraction.md)
   A behavior that you can use to influence how a presentation responds to swipe gestures.
+- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+  Sets the placement of a presentation within the presenting view.
+- [struct PresentationPlacement](presentationplacement.md)
+  The placement of a presentation within the presenting view.
 ### Styling a sheet and its background
 - [func presentationCornerRadius(CGFloat?) -> some View](view/presentationcornerradius(_:).md)
   Requests that the presentation have a specific corner radius.

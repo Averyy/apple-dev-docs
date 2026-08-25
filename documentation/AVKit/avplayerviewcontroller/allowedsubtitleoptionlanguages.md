@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: property
 
-An array of language codes that restrict the set of subtitle languages available to the user.
+An array of language codes that restrict the set of subtitle languages available.
 
 **Availability**:
 - tvOS 9.0+
@@ -23,7 +23,7 @@ To allow only a restricted subset of subtitles, set this property value to an ar
 ## See Also
 
 - [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
-  A Boolean value that indicates whether the user can disable the display of subtitles.
+  A Boolean value that indicates whether someone can disable the display of subtitles.
 - [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 
 

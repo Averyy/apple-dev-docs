@@ -240,7 +240,7 @@ You specify attributes as the keys and values of a dictionary. The available att
   Specifies that both synchronizable and non-synchronizable results should be returned from a query.
 ### Token ID Values
 - [let kSecAttrTokenIDSecureEnclave: CFString](ksecattrtokenidsecureenclave.md)
-  Specifies an item should be stored in the device’s Secure Enclave.
+  Specifies an item should be protected by the device’s Secure Enclave.
 ### Accessibility Values
 - [let kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly: CFString](ksecattraccessiblewhenpasscodesetthisdeviceonly.md)
   The data in the keychain can only be accessed when the device is unlocked. Only available if a passcode is set on the device.

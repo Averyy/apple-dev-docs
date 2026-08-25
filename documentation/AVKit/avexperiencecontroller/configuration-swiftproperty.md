@@ -22,7 +22,7 @@ You may modify the configuration at any time, but after the [`experienceControll
 ## See Also
 
 - [var allowedExperiences: AVExperienceController.Experiences](avexperiencecontroller/allowedexperiences.md)
-  The set of experiences the application supports.
+  The set of experiences the app supports.
 - [var availableExperiences: AVExperienceController.Experiences](avexperiencecontroller/availableexperiences.md)
   The allowed experiences that are available to use on the device at this time.
 - [AVExperienceController.Experiences](avexperiencecontroller/experiences.md)
@@ -32,7 +32,7 @@ You may modify the configuration at any time, but after the [`experienceControll
 - [AVExperienceController.Experience](avexperiencecontroller/experience-swift.enum.md)
   The types of experiences the system supports.
 - [AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.struct.md)
-  A structure that stores per-experience configuration.
+  Options that configure each experience.
 
 
 ---

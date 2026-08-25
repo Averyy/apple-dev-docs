@@ -15,6 +15,10 @@ Handles decrypted messages received from the paired accessory.
 func messageHandler(_ message: TransportMessage)
 ```
 
+## Mentions
+
+- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+
 #### Discussion
 
 The system calls this method when your accessory sends data to the data provider extension. For Bluetooth transport, the accessory sends data through your transport extension using [`sendMessageToDataProvider(_:)`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/sendmessagetodataprovider(_:)). For internet transport, the accessory routes data to the device through APNs using [`pushToken`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/pushtoken). In either case, the system delivers decrypted messages to this method regardless of the transport type.

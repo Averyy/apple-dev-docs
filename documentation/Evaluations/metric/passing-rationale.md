@@ -12,6 +12,7 @@ Returns a metric with a passing result.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,12 @@ func passing(rationale: String? = nil) -> Metric
 ## Mentions
 
 - [Evaluating language model responses](evaluating-language-model-responses.md)
+
+#### Discussion
+
+```swift
+let passingResult = metric.passing(rationale: "Exact match")
+```
 
 ## See Also
 

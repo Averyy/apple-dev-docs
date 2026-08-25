@@ -17,7 +17,7 @@ var allowedAppleMenuItems: Set<AEAppleMenuItem>? { get set }
 
 #### Discussion
 
-By default, all Apple menu items are restricted during an assessment. Use this property to specify which menu items should be accessible.
+Defaults to `nil`, which leaves every Apple menu item available. Setting a non-`nil` set restricts the menu to the items it names; pass an empty set to restrict all of them. Some constants cover more than one menu item.
 
 > **Note**: [`aboutThisMac`](aeapplemenuitem/aboutthismac.md) is always visible during assessment sessions regardless of configuration.
 

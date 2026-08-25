@@ -36,7 +36,7 @@ If you have no active developer directory on your macOS computer, this command p
 % xcode-select --print-path
 xcode-select: error: Unable to get active developer directory. Use 
 sudo `xcode-select --switch <path/to/>Xcode.app` to set one 
-(or see man xcode-select)
+(or use the `man xcode-select` command)
 ```
 
 > ❗ **Important**: The standard location of Xcode is `/Applications/Xcode.app`. If you install Xcode in a nonstandard location, such as `/Applications/Xcode26/Xcode.app`, use Xcode settings or `xcode-select` to select this location.

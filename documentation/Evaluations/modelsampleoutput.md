@@ -12,6 +12,7 @@ The expected output value and evaluation expectations for a sample.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -41,7 +42,7 @@ struct ModelSampleOutput<Value, Expectation> where Value : Decodable, Value : En
 ## See Also
 
 - [struct ModelSampleInput](modelsampleinput.md)
-  The data sent to a language model for evaluation.
+  The data a language model receives for evaluation.
 
 
 ---

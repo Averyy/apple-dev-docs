@@ -15,9 +15,9 @@ Work with image and video assets that the Photos app manages, including those fr
 
 #### Overview
 
-PhotoKit is the combination of the Photos and PhotosUI frameworks, which together enable you to access image and video assets that the Photos app manages. You might use PhotoKit to edit or display a person’s photos, or to manage collections of assets such as albums, Moments, and Shared Albums. The framework provides access to photos on the person’s device and in iCloud.
+PhotoKit is the combination of the Photos and PhotosUI frameworks. Using the capabilities of these two frameworks, you can access image and video assets that the Photos app manages. You might use PhotoKit to edit or display a person’s photos, or to manage collections of assets such as albums, Moments, and Shared Albums. The framework provides access to photos on the person’s device and in iCloud.
 
-![A diagram showing the types of requests your app can make through PhotoKit, to access photos stored in the user’s photo library](/images/com.apple.photokit/media-3030182@2x.png)
+![A flowchart showing the types of requests your app can make through PhotoKit to access photos stored in a person’s photo library. On the left are boxes labeled iCloud photos and Local photo library, with arrows pointing to and from PhotoKit. On the far right is an icon representing your app, with an arrow flowing to PhotoKit. Below PhotoKit is a list of outputs with icons, including Slideshow, Calendar, and Wall decor.](/images/com.apple.photokit/media-3030182@2x.png)
 
 ## Topics
 
@@ -28,7 +28,7 @@ PhotoKit is the combination of the Photos and PhotosUI frameworks, which togethe
   Present a person’s photo library using a picker interface, display Live Photos, or extend the Photos app with custom functionality.
 ### Sample code
 - [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
-  Help users organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
+  Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
 - [Selecting Photos and Videos in iOS](selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
 - [Bringing Photos picker to your SwiftUI app](bringing-photos-picker-to-your-swiftui-app.md)

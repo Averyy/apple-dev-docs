@@ -18,6 +18,10 @@ A Boolean value that indicates whether the window scene is full screen or window
 var isFullScreen: Bool { get }
 ```
 
+#### Discussion
+
+The system only supports this property in Mac Catalyst apps.
+
 ## See Also
 
 - [var windowingBehaviors: UISceneWindowingBehaviors?](uiwindowscene/windowingbehaviors.md)

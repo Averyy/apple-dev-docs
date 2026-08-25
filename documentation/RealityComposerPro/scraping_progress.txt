@@ -1,4 +1,4 @@
 Completed scraping Reality Composer Pro!
-Total pages scraped: 0
-Pages skipped (unchanged): 30
+Total pages scraped: 8
+Pages skipped (unchanged): 25
 Pages failed: 0

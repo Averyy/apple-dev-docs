@@ -152,6 +152,8 @@ Move your app’s existing life-cycle methods from [`UIApplicationDelegate`](uia
 | [`applicationDidEnterBackground(_:)`](uiapplicationdelegate/applicationdidenterbackground(_:).md) | [`sceneDidEnterBackground(_:)`](uiscenedelegate/scenedidenterbackground(_:).md) |
 | [`applicationWillEnterForeground(_:)`](uiapplicationdelegate/applicationwillenterforeground(_:).md) | [`sceneWillEnterForeground(_:)`](uiscenedelegate/scenewillenterforeground(_:).md) |
 
+> ❗ **Important**:  Once your app adopts the scene-based life cycle, UIKit no longer calls these [`UIApplicationDelegate`](uiapplicationdelegate.md) methods, even if you keep them implemented. Each scene delegate method reflects only that scene’s own transitions. If you need to track your app’s aggregate state across all of its scenes ([`applicationState`](uiapplication/applicationstate.md)), such as whether any scene is in the foreground, use the corresponding [`UIApplication`](uiapplication.md) notification instead of relying on a single scene delegate callback. For example, use [`willEnterForegroundNotification`](uiapplication/willenterforegroundnotification.md).
+
 After migrating, test your app in Full Screen Apps, Windowed Apps, and Stage Manager on iPad. To learn how to respond to state transitions, see [`Managing your app’s life cycle`](managing-your-app-s-life-cycle.md).
 
 #### Support Noninteractive External Display Scenes

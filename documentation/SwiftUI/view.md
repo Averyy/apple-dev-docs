@@ -99,9 +99,6 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 ### Deprecated modifiers
 - [Deprecated modifiers](view-deprecated.md)
   Review unsupported modifiers and their replacements.
-### Instance Methods
-- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
-  Sets the placement of a presentation within the presenting view.
 
 ## Relationships
 

@@ -32,7 +32,7 @@ Implement this method to track the transition between experiences.
 - [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:preparefortransitionusing:).md)
   Tells the delegate that the system is preparing for a transition.
 - [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
-  The state of the transition provided to the delegate object.
+  The state of the transition that the system provides to the delegate object.
 
 
 ---

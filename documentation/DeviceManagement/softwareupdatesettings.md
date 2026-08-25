@@ -98,6 +98,8 @@ Allowed enrollments: supervised
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -126,8 +128,6 @@ Allowed enrollments: supervised
   The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
-- [object IntelligenceSettings](intelligencesettings.md)
-  The declaration to configure Apple Intelligence settings.
 
 
 ---

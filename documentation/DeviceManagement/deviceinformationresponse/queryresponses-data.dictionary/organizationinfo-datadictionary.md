@@ -36,8 +36,12 @@ object DeviceInformationResponse.QueryResponses.OrganizationInfo
   The response dictionary that contains the administrator setup information.
 - [object DeviceInformationResponse.QueryResponses.MDMOptions](deviceinformationresponse/queryresponses-data.dictionary/mdmoptions-data.dictionary.md)
   The response dictionary that contains MDM options.
+- [object DeviceInformationResponse.QueryResponses.OSUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary.md)
+  The response dictionary that contains operating system update settings.
 - [object DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty.md)
   The response dictionary that contains information about the active service subscription.
+- [object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](deviceinformationresponse/queryresponses-data.dictionary/softwareupdatesettings-data.dictionary.md)
+  The response dictionary that contains information about the Software Update pane in Settings.
 
 
 ---

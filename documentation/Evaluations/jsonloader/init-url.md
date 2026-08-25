@@ -12,11 +12,21 @@ Creates a loader backed by the JSON or JSONL file at the given URL.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 init(url: URL)
+```
+
+#### Discussion
+
+```swift
+var dataset: JSONLoader<ModelSample<String>> {
+    let url = Bundle.main.url(forResource: "samples", withExtension: "jsonl")!
+    return JSONLoader(url: url)
+}
 ```
 
 

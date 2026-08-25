@@ -31,7 +31,7 @@ This affine transform can be used in place of a track matrix for displaying a vi
 - [let kCMMetadataIdentifier_QuickTimeMetadataDirection_Facing: CFString](kcmmetadataidentifier_quicktimemetadatadirection_facing.md)
   Direction the observer is facing.
 - [let kCMMetadataIdentifier_QuickTimeMetadataVideoOrientation: CFString](kcmmetadataidentifier_quicktimemetadatavideoorientation.md)
-  Video orientation as defined by TIFF/EXIF.
+  Video orientation as defined by TIFF/Exif.
 - [let kCMMetadataIdentifier_QuickTimeMetadataLivePhotoStillImageTransformReferenceDimensions: CFString](kcmmetadataidentifier_quicktimemetadatalivephotostillimagetransformreferencedimensions.md)
   The dimensions of the live photo still image.
 - [let kCMMetadataIdentifier_QuickTimeMetadataLivePhotoStillImageTransform: CFString](kcmmetadataidentifier_quicktimemetadatalivephotostillimagetransform.md)

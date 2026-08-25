@@ -104,7 +104,7 @@ In this command:
 
 `altool` uses the key ID to search for the key’s `.p8` file.  For example, it might find a key file at `~/.appstoreconnect/private_keys/AuthKey_T9GPZ92M7K.p8`.
 
-> **Note**: For details on the search path used by `altool`, see its man page.  If you’re unfamiliar with man pages, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+> **Note**: For details on the search path used by `altool`, see its man page.  If you’re unfamiliar with man pages, see .
 
 The equivalent for `notarytool` is:
 
@@ -256,7 +256,7 @@ OPTIONS:
 …
 ```
 
-For comprehensive help, see the `notarytool` man page.  If you’re unfamiliar with man pages, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+For comprehensive help, see the `notarytool` man page.  If you’re unfamiliar with man pages, see .
 
 ##### Save Credentials in the Keychain
 

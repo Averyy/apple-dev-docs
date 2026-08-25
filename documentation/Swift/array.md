@@ -567,7 +567,7 @@ When the destination array’s element type is a nonclass type that bridges to a
   Access the underlying CMTaggedBuffers.
 ### Subscripts
 - [subscript(Metric) -> Metric?](array/subscript(_:)-dplx.md)
-  Returns the first metric whose `Metric/name` equals the given metric’s name, or `nil` if not found.
+  Returns the first metric with a metric name that equals the given metric’s name.
 ### Type Aliases
 - [typealias Specification](array/specification.md)
 - [typealias UnderlyingSequence](array/underlyingsequence.md)

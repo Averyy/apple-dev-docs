@@ -12,11 +12,20 @@ Creates a loader backed by the given array of samples.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 init(samples: [Sample])
+```
+
+#### Discussion
+
+```swift
+let loader = ArrayLoader(samples: [
+    ModelSample(prompt: "Is 7 a prime number?", expected: true),
+])
 ```
 
 

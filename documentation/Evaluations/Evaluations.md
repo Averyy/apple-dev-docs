@@ -6,7 +6,13 @@
 Measure the quality of your app’s intelligence-powered features.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 #### Overview
 
@@ -20,7 +26,7 @@ With the Evaluations framework, you can:
 - Track quality over time.
 - Catch regressions before they ship.
 
-The framework evaluates your intelligence-powered features against the metrics you define, from simple pass or fail checks to detailed scoring with model-as-judge patterns. It aggregates the results into summaries that show you which approach performs best and where individual responses fall short. The framework works with any model available through [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels), including on-device, Private Cloud Compute, and other models.
+The framework evaluates your intelligence-powered features against the metrics you define, from simple pass or fail checks to detailed scoring with model-judge patterns. It aggregates the results into summaries that show you which approach performs best and where individual responses fall short. The framework works with any model available through [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels), including on-device, Private Cloud Compute, and other models.
 
 ## Topics
 
@@ -64,17 +70,17 @@ The framework evaluates your intelligence-powered features against the metrics y
   A typed column descriptor for the model responses in the detailed DataFrame.
 - [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](evaluation/expectedcolumn.md)
   A typed column descriptor for the expected values in the detailed DataFrame.
-### Model-as-judge evaluations
-- [Designing effective model-as-judge evaluators](designing-effective-model-judges.md)
-  Configure model-as-judge evaluators that produce scores you correlate with human review.
-- [Scoring with model-as-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+### Model-judge evaluations
+- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
+  Configure model-judge evaluators that produce scores you correlate with human review.
+- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
   Score subjective qualities like tone, accuracy, and relevance that programmatic checks cannot measure.
 - [struct ModelJudgeEvaluator](modeljudgeevaluator.md)
   An evaluator that uses a language model as a judge to score responses.
 - [struct ModelJudgePrompt](modeljudgeprompt.md)
-  A configuration for how a model-as-judge evaluator constructs its prompt.
+  A configuration for how a model evaluator constructs its prompt.
 - [struct ScoreDimension](scoredimension.md)
-  A named scoring dimension for a model judge evaluator.
+  A named scoring dimension for a model evaluator.
 ### Tool-call evaluation
 - [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
   Analyze your model’s tool calls against expected trajectories, argument values, and call ordering.
@@ -89,6 +95,9 @@ The framework evaluates your intelligence-powered features against the metrics y
   A test trait that runs an evaluation and records the result as attachments.
 - [struct EvaluationContext](evaluationcontext.md)
   A context that provides the evaluation result within a test scope.
+### Structures
+- [struct EvaluationRunErrors](evaluationrunerrors.md)
+  A summary of the failures encountered during an evaluation run.
 
 
 ---

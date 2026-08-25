@@ -12,6 +12,7 @@ A Boolean value that indicates whether to allow tool calls that don’t match an
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

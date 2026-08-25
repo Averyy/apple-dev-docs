@@ -12,6 +12,7 @@ A strategy that randomly picks a subset of samples each time a model repeats inf
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,6 +27,10 @@ case random(retries: Int = 5)
 #### Discussion
 
 When the model repeats an inference, this strategy retries up to `retries` times, selecting a random subset to steer the model toward a new inference.
+
+## Parameters
+
+- `retries`: The maximum number of retries when the model repeats an inference.
 
 ## See Also
 

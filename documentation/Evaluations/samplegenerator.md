@@ -12,6 +12,7 @@ An actor that generates evaluation samples using a language model.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,7 +28,7 @@ actor SampleGenerator<SampleType> where SampleType : ModelSampleProtocol
 
 #### Overview
 
-Create a generator, configure its properties, then call [`run()`](samplegenerator/run().md) to produce new samples as an async stream. After iteration completes, access [`samples`](samplegenerator/samples.md) for all generated samples, or [`invalidSamples`](samplegenerator/invalidsamples.md) for any the validator rejected.
+To produce new samples, create an instance, configure its properties, and call [`run()`](samplegenerator/run().md). After iteration completes, access [`samples`](samplegenerator/samples.md) for the full dataset, or [`invalidSamples`](samplegenerator/invalidsamples.md) for any samples the validator rejected.
 
 ## Topics
 
@@ -49,7 +50,7 @@ Create a generator, configure its properties, then call [`run()`](samplegenerato
   Runs the generator and returns a stream of newly synthesized samples.
 ### Accessing results
 - [var samples: [SampleType]](samplegenerator/samples.md)
-  All samples — initial and generated — from the most recent run.
+  All initial and generated samples from the most recent run.
 - [var invalidSamples: [SampleType]](samplegenerator/invalidsamples.md)
   Samples that the validator rejected during the most recent run.
 

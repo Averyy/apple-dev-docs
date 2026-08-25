@@ -12,6 +12,7 @@ A context that provides the evaluation result within a test scope.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,7 +26,7 @@ struct EvaluationContext
 
 #### Overview
 
-Access the result via [`result`](evaluationcontext/result.md) after the evaluation completes.
+Access the result through [`result`](evaluationcontext/result.md) after the evaluation completes.
 
 ## Topics
 

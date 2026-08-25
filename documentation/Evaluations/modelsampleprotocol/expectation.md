@@ -4,7 +4,7 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
-The type of evaluation expectations (e.g., [`TrajectoryExpectation`](trajectoryexpectation.md)).
+The type of evaluation expectations.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -13,6 +13,7 @@ The type of evaluation expectations (e.g., [`TrajectoryExpectation`](trajectorye
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

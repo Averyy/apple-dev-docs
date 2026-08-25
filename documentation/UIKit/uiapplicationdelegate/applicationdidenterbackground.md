@@ -59,7 +59,7 @@ For more information about how to transition gracefully to the background, and f
 - [class let didEnterBackgroundNotification: NSNotification.Name](uiapplication/didenterbackgroundnotification.md)
   A notification that posts when the app enters the background.
 - [class let willEnterForegroundNotification: NSNotification.Name](uiapplication/willenterforegroundnotification.md)
-  A notification that posts shortly before an app leaves the background state on its way to becoming the active app.
+  A notification that posts shortly before your app’s UI transitions to the foreground.
 - [class let willResignActiveNotification: NSNotification.Name](uiapplication/willresignactivenotification.md)
   A notification that posts when the app is no longer active and loses focus.
 - [class let willTerminateNotification: NSNotification.Name](uiapplication/willterminatenotification.md)

@@ -31,7 +31,7 @@ class NLTagger
 
 When you create a linguistic tagger, you specify what kind of information you’re interested in by passing one or more [`NLTagScheme`](nltagscheme.md) values. Set the [`string`](nltagger/string.md) property to the natural language text you want to analyze, and the linguistic tagger processes it according to the specified tag schemes. You can then enumerate over the tags in a specified range, using the methods described in Enumerating linguistic tags, to get the information requested for a given scheme and unit.
 
-> ❗ **Important**:  Don’t use an instance of [`NLTagger`](nltagger.md) simultaneously from multiple threads.
+> ❗ **Important**: An [`NLTagger`](nltagger.md) isn’t safe for concurrent use, including its read-looking query methods such as [`tags(in:unit:scheme:options:)`](nltagger/tags(in:unit:scheme:options:).md), [`tag(at:unit:scheme:)`](nltagger/tag(at:unit:scheme:).md), and the `enumerateTags` family, which mutate shared state. Use a given instance from only one thread or dispatch queue at a time: either serialize all calls to it, or create a separate tagger for each thread or dispatch queue.
 
 ## Topics
 

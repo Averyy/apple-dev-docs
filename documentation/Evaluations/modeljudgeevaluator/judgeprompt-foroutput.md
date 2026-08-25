@@ -12,6 +12,7 @@ Builds and returns the full judge prompt for inspection, debugging, or logging.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,11 +23,11 @@ nonisolated
 
 #### Return Value
 
-The fully assembled `Prompt` that would be sent to the judge.
+The fully assembled `Prompt` to send to the model judge.
 
 #### Discussion
 
-Use this to see exactly what the judge model will receive for a given input/response pair.
+Use this to inspect exactly what the model judge receives for a given input and response pair.
 
 ## Parameters
 

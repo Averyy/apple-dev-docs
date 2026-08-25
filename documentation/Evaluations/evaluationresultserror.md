@@ -6,12 +6,13 @@
 Errors the framework throws when parsing evaluation results.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -53,9 +54,9 @@ do {
 - [enum EvaluationError](evaluationerror.md)
   Errors thrown during an evaluation run.
 - [enum EvaluatorError](evaluatorerror.md)
-  A typed reason why an evaluator failed while scoring a produced subject.
+  A value that describes why an evaluator failed while scoring a produced subject.
 - [enum SubjectInferenceError](subjectinferenceerror.md)
-  A typed reason why `subject(from:)` failed to produce a subject for a sample.
+  A value that describes a failure to produce a subject for a sample.
 
 
 ---

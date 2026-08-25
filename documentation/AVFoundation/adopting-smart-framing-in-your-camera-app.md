@@ -63,7 +63,7 @@ func configureSmartFraming() async {
 }
 ```
 
-By default, the smart framing monitor isn’t configured to provide recommendations. Attempting to start it in this state results in an error. To monitor the scene, specify the framings the monitor should consider by setting its [`enabledFramings`](avcapturesmartframingmonitor/enabledframings.md) property value. The example above enables all the monitor’s [`supportedFramings`](avcapturesmartframingmonitor/supportedframings.md), but you can enable a subset of these values, depending on the needs of your app. For example, it could limit the enabled framings to [`ratio3x4`](avcapturedevice/aspectratio/ratio3x4.md) and [`ratio4x3`](avcapturedevice/aspectratio/ratio4x3.md) for photo capture, or [`ratio9x16`](avcapturedevice/aspectratio/ratio9x16.md) and [`ratio16x9`](avcapturedevice/aspectratio/ratio16x9.md) for video.
+By default, the smart framing monitor isn’t configured to provide recommendations. Attempting to start it in this state results in an error. To monitor the scene, specify the framings the monitor should consider by setting its [`enabledFramings`](avcapturesmartframingmonitor/enabledframings.md) property value. The example above enables all the monitor’s [`supportedFramings`](avcapturesmartframingmonitor/supportedframings.md), but you can enable a subset of these values, depending on the needs of your app. For example, it could limit the enabled framings to [`ratio3x4`](avcapturedevice/aspectratio/ratio3x4.md) and [`ratio4x3`](avcapturedevice/aspectratio/ratio4x3.md) for photo capture, or [`ratio9x16`](avcapturedevice/aspectratio/ratio9x16.md) and [`ratio16x9`](avcapturedevice/aspectratio/ratio16x9.md) for video. Set the enabled framings before you start your capture session so the monitor is prepared to make recommendations as soon as the session runs.
 
 #### Monitor Framing Recommendations
 
@@ -91,7 +91,7 @@ func startMonitoring() async {
 }
 ```
 
-The code example configures an observer to respond to new framing recommendations. When it observes a new value, it calls a method to apply the framing to the capture device. After configuring the observer, the example calls the monitor’s  [`startMonitoring()`](avcapturesmartframingmonitor/startmonitoring().md) method to generate framing recommendations.
+The code example configures an observer to respond to new framing recommendations. When it observes a new value, it calls a method to apply the framing to the capture device. After configuring the observer, the example calls the monitor’s  [`startMonitoring()`](avcapturesmartframingmonitor/startmonitoring().md) method to generate framing recommendations. You can call this method before or after you start your capture session, but the monitor makes recommendations only while the session runs.
 
 To disable smart framing, and allow a person to manually frame their shot, invalidate your key-value observation and call the monitor’s [`stopMonitoring()`](avcapturesmartframingmonitor/stopmonitoring().md) method, as shown here:
 

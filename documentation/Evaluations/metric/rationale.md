@@ -12,6 +12,7 @@ An optional rationale describing the result.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,7 +27,7 @@ let rationale: String?
 - [let value: Metric.Value](metric/value-swift.property.md)
   The result value of this metric.
 - [var doubleValue: Double?](metric/doublevalue.md)
-  The numeric value of this metric, or `nil` for ignored metrics.
+  The numeric value of this metric.
 - [Metric.Value](metric/value-swift.enum.md)
   A metric result value.
 

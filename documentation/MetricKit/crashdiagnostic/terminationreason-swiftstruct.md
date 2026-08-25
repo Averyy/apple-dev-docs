@@ -3,7 +3,7 @@
 **Framework**: MetricKit  
 **Kind**: struct
 
-The reason the app was terminated, as a human-readable string.
+A value that describes the reason the app terminated.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -16,6 +16,16 @@ The reason the app was terminated, as a human-readable string.
 
 ```swift
 struct TerminationReason
+```
+
+#### Discussion
+
+`TerminationReason` is [`RawRepresentable`](https://developer.apple.com/documentation/swift/rawrepresentable) and [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible). Use `rawValue` to access the underlying string value, or rely on the [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible) conformance to print the termination reason or interpolate it into a string:
+
+```swift
+if let reason = diagnostic.terminationReason {
+    print("Termination reason: \(reason)")
+}
 ```
 
 ## Relationships

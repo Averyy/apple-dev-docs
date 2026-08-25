@@ -213,7 +213,7 @@ macOS uses the responsible code to:
 - Record the user’s choice for the whole app, not just that specific helper tool
 - Present that choice in System Settings
 
-If you ship a `launchd` agent that’s not installed using `SMAppService`, make macOS aware of the responsible code by setting the `AssociatedBundleIdentifiers` property in your `launchd` property list.  See the `launchd.plist` man page for details.  For information on how to access that documentation, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+If you ship a `launchd` agent that’s not installed using `SMAppService`, make macOS aware of the responsible code by setting the `AssociatedBundleIdentifiers` property in your `launchd` property list.  See the `launchd.plist` man page for details.  For information on how to access that documentation, see doc://com.apple.documentation/documentation/os/reading-unix-manual-pages.
 
 Most standalone executables—that is, executables that aren’t the main executable for a bundle—don’t need the [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocalnetworkusagedescription) property because they’re either:
 

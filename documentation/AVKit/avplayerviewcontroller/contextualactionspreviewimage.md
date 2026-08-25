@@ -40,7 +40,7 @@ Use this to enhance a contextual action with more context. For example, if the a
 - [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
   A configuration object that manages viewport settings for different presentation modes.
 - [class AVViewport](avviewport.md)
-  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+  An object that provides configuration options for how the player displays content in different viewing contexts.
 
 
 ---

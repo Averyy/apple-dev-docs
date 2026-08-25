@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Settings for S/MIME.
+Settings for S/MIME. Applicable for “EAS” only.
 
 **Availability**:
 - iOS 17.0+
@@ -21,14 +21,14 @@ object AccountExchangeSMIMEObject
 
 ### Objects
 - [object AccountExchangeSMIME_EncryptionObject](accountexchangesmime_encryptionobject.md)
-  Settings for S/MIME encryption.
+  Settings for S/MIME encryption. Applicable for “EAS” only.
 - [object AccountExchangeSMIME_SigningObject](accountexchangesmime_signingobject.md)
-  Settings for S/MIME signing.
+  Settings for S/MIME signing. Applicable for “EAS” only.
 
 ## Properties
 
-- `Encryption` (AccountExchangeSMIME_EncryptionObject): Settings for S/MIME encryption.
-- `Signing` (AccountExchangeSMIME_SigningObject): Settings for S/MIME signing.
+- `Encryption` (AccountExchangeSMIME_EncryptionObject): Settings for S/MIME encryption. Applicable for “EAS” only.
+- `Signing` (AccountExchangeSMIME_SigningObject): Settings for S/MIME signing. Applicable for “EAS” only.
 
 ## See Also
 

@@ -29,7 +29,7 @@ Using this function is memory efficient when reading variable bit-rate (VBR) aud
 
 If the buffer you provide in the `outBuffer` parameter is too small to hold the packets you request in `ioNumPackets`, the output values of `ioNumPackets` and `ioNumBytes` are reduced to reflect the packets that were placed into the buffer. You also see a difference in the input and output values for `ioNumPackets` when this function has reached the end of the file you are reading. In this case, the output value for this parameter is smaller than its input value.
 
-This function is more efficient than [`AudioFileReadPackets(_:_:_:_:_:_:_:)`](audiofilereadpackets(_:_:_:_:_:_:_:).md) when reading compressed file formats that do not have packet tables, such as MP3 or ADTS. This function is a good choice for reading either CBR (constant bit-rate) or VBR data if you do not need to read a fixed duration of audio. If you do need to read a fixed duration of audio, whether CBR  or VBR, use [`AudioFileReadPackets(_:_:_:_:_:_:_:)`](audiofilereadpackets(_:_:_:_:_:_:_:).md) instead.
+This function replaces the deprecated [`AudioFileReadPackets(_:_:_:_:_:_:_:)`](audiofilereadpackets(_:_:_:_:_:_:_:).md), and is more efficient when reading compressed file formats that don’t have packet tables, such as MP3 or ADTS. It’s a good choice for reading either CBR (constant bit-rate) or VBR data.
 
 Audio File Services reads one 32-bit chunk of a file at a time.
 

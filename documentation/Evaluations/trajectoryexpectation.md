@@ -12,6 +12,7 @@ The expected pattern of tool calls for an evaluation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -85,7 +86,7 @@ TrajectoryExpectation(expected: "getWeather", arguments: [
 - [init(ordered: [ToolExpectation], unordered: [ToolExpectation], allowsAdditionalToolCalls: Bool)](trajectoryexpectation/init(ordered:unordered:allowsadditionaltoolcalls:).md)
   Creates a trajectory expectation with ordered and unordered requirements, and controls whether unmatched tool calls are permitted.
 - [init(ordered: [ToolExpectation], unordered: [ToolExpectation], disallowed: [ToolExpectation])](trajectoryexpectation/init(ordered:unordered:disallowed:).md)
-  Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that the agent must not call.
+  Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that the model must not call.
 - [init(unordered: [ToolExpectation])](trajectoryexpectation/init(unordered:).md)
   Creates a trajectory expectation with only unordered requirements.
 ### Combining expectations
@@ -97,6 +98,14 @@ TrajectoryExpectation(expected: "getWeather", arguments: [
   Tools that the model must NOT call.
 - [var allowsAdditionalCalls: Bool](trajectoryexpectation/allowsadditionalcalls.md)
   A Boolean value that indicates whether to allow tool calls that don’t match any expectation.
+### Instance Properties
+- [var generatedContent: GeneratedContent](trajectoryexpectation/generatedcontent.md)
+  The generated content representation of this trajectory expectation.
+### Type Properties
+- [static var generationSchema: GenerationSchema](trajectoryexpectation/generationschema.md)
+  The generation schema for this trajectory expectation.
+### Default Implementations
+- [ConvertibleFromGeneratedContent Implementations](trajectoryexpectation/convertiblefromgeneratedcontent-implementations.md)
 
 ## Relationships
 

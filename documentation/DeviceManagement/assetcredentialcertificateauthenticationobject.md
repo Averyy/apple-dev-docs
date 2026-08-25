@@ -28,7 +28,7 @@ object AssetCredentialCertificateAuthenticationObject
 ## See Also
 
 - [object AssetCredentialCertificateReferenceObject](assetcredentialcertificatereferenceobject.md)
-  The external reference. Ensure that the asset data uses a media type of `application/pkcs1` or `application/pem` to correctly identify the type of encoded certificate. If the asset data includes a `ContentType` sub-key, set it to the corresponding media type.
+  The external reference. Ensure the asset data contains exactly one certificate. If the PEM data contains more than one certificate, the system installs the first certificate and ignores the rest. Ensure that the asset data uses a media type of `application/pkcs1` or `application/pem` to correctly identify the type of encoded certificate. If the asset data includes a `ContentType` sub-key, set it to the corresponding media type.
 
 
 ---

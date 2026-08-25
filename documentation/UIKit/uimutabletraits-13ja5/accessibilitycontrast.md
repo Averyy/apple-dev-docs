@@ -21,7 +21,7 @@ var accessibilityContrast: UIAccessibilityContrast { get set }
 ## See Also
 
 - [var activeAppearance: UIUserInterfaceActiveAppearance](uimutabletraits-13ja5/activeappearance.md)
-  A property that indicates whether the user interface has an active appearance.
+  A property that indicates whether a scene has an active appearance.
 - [var displayGamut: UIDisplayGamut](uimutabletraits-13ja5/displaygamut.md)
   The gamut of the current display.
 - [var displayScale: CGFloat](uimutabletraits-13ja5/displayscale.md)

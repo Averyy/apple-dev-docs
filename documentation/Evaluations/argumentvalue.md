@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: enum
 
-A primitive value type for argument specifications that is @Generable.
+A primitive, generable value type for argument specifications.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -12,6 +12,7 @@ A primitive value type for argument specifications that is @Generable.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,7 +28,7 @@ let count: ArgumentValue = 5
 let score: ArgumentValue = 0.95
 ```
 
-Unlike `StructuredValue`, this enum only contains primitive types (no recursive array/dictionary) which allows it to work with the @Generable macro.
+Unlike `StructuredValue`, this enum only contains primitive types (no recursive array or dictionary) that allows it to work with the `@Generable` macro.
 
 ## Topics
 

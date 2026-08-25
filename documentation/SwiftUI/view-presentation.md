@@ -107,6 +107,10 @@ For more information about how to use these modifiers, see [`Modal presentations
   Changes the way the enclosing presentation breaks through content occluding it.
 - [func presentationPreventsAppTermination(Bool?) -> some View](view/presentationpreventsapptermination(_:).md)
   Whether a presentation prevents the app from being terminated/quit by the system or app termination menu item.
+- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+  Sets the placement of a presentation within the presenting view.
+- [struct PresentationPlacement](presentationplacement.md)
+  The placement of a presentation within the presenting view.
 ### File exporter
 - [func fileExporter<D>(isPresented: Binding<Bool>, document: D?, contentType: UTType?, defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: (() -> Void)?) -> some View](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to export a `WritableDocument` to a file on disk.

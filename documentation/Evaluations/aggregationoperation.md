@@ -12,6 +12,7 @@ The type of aggregation operation used to compute a summary statistic.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -44,7 +45,7 @@ Each case pairs a statistical function with the [`Metric`](metric.md) it operate
   The variance of the metric’s values.
 ### Instance Properties
 - [var label: String](aggregationoperation/label.md)
-  The display label derived from this operation.
+  The display label this operation produces.
 ### Default Implementations
 - [Decodable Implementations](aggregationoperation/decodable-implementations.md)
 - [Encodable Implementations](aggregationoperation/encodable-implementations.md)

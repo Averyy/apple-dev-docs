@@ -62,7 +62,7 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 - [var canPlayReverse: Bool](avplayeritem/canplayreverse.md)
   A Boolean value that indicates whether the item can play in reverse.
 - [var canPlayFastForward: Bool](avplayeritem/canplayfastforward.md)
-  A Boolean value that indicates whether the item can be fast forwarded.
+  A Boolean value that indicates whether the item can play at fast-forward rates.
 - [var canPlayFastReverse: Bool](avplayeritem/canplayfastreverse.md)
   A Boolean value that indicates whether the item can be quickly reversed.
 - [var canPlaySlowForward: Bool](avplayeritem/canplayslowforward.md)

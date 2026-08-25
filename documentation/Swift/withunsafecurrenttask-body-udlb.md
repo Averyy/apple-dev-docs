@@ -17,7 +17,7 @@ Calls a closure with an unsafe reference to the current task.
 ## Declaration
 
 ```swift
-@abi(nonisolated(nonsending) func withUnsafeCurrentTaskNonsending<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T) nonisolated(nonsending) func withUnsafeCurrentTask<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T
+@abi(nonisolated(nonsending) func withUnsafeCurrentTaskNonsendingExportedImpl<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T) @export(implementation) nonisolated(nonsending) func withUnsafeCurrentTask<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T
 ```
 
 #### Return Value

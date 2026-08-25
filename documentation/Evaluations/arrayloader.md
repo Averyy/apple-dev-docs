@@ -12,6 +12,7 @@ A loader backed by an in-memory array.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -19,11 +20,23 @@ A loader backed by an in-memory array.
 struct ArrayLoader<Sample> where Sample : SampleProtocol
 ```
 
+#### Overview
+
+```swift
+let loader = ArrayLoader(samples: [
+    ModelSample(prompt: "What is 2+2?", expected: "4"),
+    ModelSample(prompt: "What is the capital of France?", expected: "Paris"),
+])
+```
+
 ## Topics
 
 ### Initializers
 - [init(samples: [Sample])](arrayloader/init(samples:).md)
   Creates a loader backed by the given array of samples.
+### Instance Properties
+- [var stream: any AsyncSequence<Sample, any Error>](arrayloader/stream.md)
+  The async sequence that yields each sample in the array during an evaluation run.
 
 ## Relationships
 

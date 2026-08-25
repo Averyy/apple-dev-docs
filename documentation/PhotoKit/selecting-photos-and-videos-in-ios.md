@@ -143,7 +143,7 @@ if itemProvider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
 ## See Also
 
 - [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
-  Help users organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
+  Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
 - [Bringing Photos picker to your SwiftUI app](bringing-photos-picker-to-your-swiftui-app.md)
   Select media assets by using a Photos picker view that SwiftUI provides.
 - [Implementing an inline Photos picker](implementing-an-inline-photos-picker.md)

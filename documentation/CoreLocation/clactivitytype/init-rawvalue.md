@@ -3,6 +3,8 @@
 **Framework**: Core Location  
 **Kind**: init
 
+Creates an activity type instance with the provided value.
+
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+

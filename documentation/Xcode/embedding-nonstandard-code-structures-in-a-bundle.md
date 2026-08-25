@@ -76,8 +76,6 @@ And both `wafflevarnish` and `libVarnish.dylib` reference their dynamic library 
     …
 ```
 
-For more information on the rpath mechanism, see the `dyld` man page.  If you’re unfamiliar with reading man pages, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
-
 With this setup it’s easy to place this tool and its libraries in your bundle with a minimum amount of disruption.  If the code you’re using is built this way, skip forward to [`Place content in the correct location within the bundle`](embedding-nonstandard-code-structures-in-a-bundle#Place-content-in-the-correct-location-within-the-bundle.md).
 
 ##### Adopt Rpath Relative References

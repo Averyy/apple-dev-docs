@@ -12,12 +12,18 @@ A scoring dimension returns a value the evaluator can’t parse as a number.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case invalidScore(dimension: String, value: String)
 ```
+
+## Parameters
+
+- `dimension`: The name of the scoring dimension.
+- `value`: The unparsable value the model returned.
 
 
 ---

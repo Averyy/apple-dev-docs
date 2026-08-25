@@ -28,6 +28,8 @@ case automotiveNavigation
   The value that configures positioning for activities in the air.
 - [CLLocationUpdate.LiveConfiguration.fitness](cllocationupdate/liveconfiguration/fitness.md)
   The value that configures positioning for dedicated fitness sessions.
+- [CLLocationUpdate.LiveConfiguration.maritime](cllocationupdate/liveconfiguration/maritime.md)
+  The value that configures positioning for vessels on water, including while anchored.
 - [CLLocationUpdate.LiveConfiguration.otherNavigation](cllocationupdate/liveconfiguration/othernavigation.md)
   The value that configures positioning for transportation that doesn’t, or may not, adhere to roads, such as cycling, scooters, trains, boats, and off-road vehicles.
 

@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether the current device supports devic
 
 ## Parameters
 
-- `listenerProvider`: A doc://com.apple.documentation/documentaiton/network/ListenerProvider protocol object that defines the service the listener advertises.
+- `listenerProvider`: A [`ListenerProvider`](https://developer.apple.com/documentation/network/listenerprovider) protocol object that defines the service the listener advertises.
 
 
 ---

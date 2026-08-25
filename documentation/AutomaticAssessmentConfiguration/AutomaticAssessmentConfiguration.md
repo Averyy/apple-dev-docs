@@ -69,6 +69,7 @@ The framework reports an error if you try to start an assessment from an app run
 - [struct AEAppleMenuItem](aeapplemenuitem.md)
   Identifies an item in the Apple menu.
 - [struct AEMenuBarItem](aemenubaritem.md)
+  Identifies a menu bar item that can remain visible during an assessment session.
 ### Enumerations
 - [enum AEUserAccountType](aeuseraccounttype.md)
   Specifies the type of account required for an assessment session.

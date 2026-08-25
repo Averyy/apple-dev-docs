@@ -83,7 +83,9 @@ This configuration restricts several Apple Intelligence features.
 - `AllowImagePlayground` (boolean): If `false`, disables Image Playground.
 - `AllowImageWand` (boolean): If `false`, disables Image Wand. Available: iOS 26.4+ | iPadOS 26.4+ | visionOS 26.4+
 - `AllowPersonalizedHandwritingResults` (boolean): If `false`, disables Personalized Handwriting Results. Available: iOS 26.4+ | iPadOS 26.4+
-- `AllowVisualIntelligenceSummary` (boolean): If `false`, disables Visual Intelligence Summary. Available: iOS 26.4+ | iPadOS 26.4+
+- `AllowVisualIntelligence` (boolean): If `false`, disables Visual Intelligence. Available: iOS 27+ | iPadOS 27+ | macOS 27+
+- `AllowVisualIntelligenceSummary` (boolean): If `false`, disables Visual Intelligence Summary. Deprecated: use the `AllowVisualIntelligence` key. Available: iOS 26.4+ | iPadOS 26.4+
+Deprecated: iOS 27+ | iPadOS 27+
 - `AllowWritingTools` (boolean): If `false`, disables Writing Tools.
 - `Apps` (IntelligenceSettingsAppsObject): If present, configures app-specific Intelligence features.
 - `ForceOnDeviceOnlyDictation` (boolean): If `true`, forces On-Device Only Dictation.
@@ -91,6 +93,8 @@ This configuration restricts several Apple Intelligence features.
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -119,8 +123,6 @@ This configuration restricts several Apple Intelligence features.
   The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
 
 
 ---

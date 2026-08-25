@@ -26,7 +26,7 @@ The supported keys for this dictionary are defined in `CMTextMarkup.h`.
 ## See Also
 
 - [var textSelector: String?](avtextstylerule/textselector.md)
-  A string that identifies the text to which the attributes should apply.
+  A string that identifies the text the style attributes apply to.
 
 
 ---

@@ -1,4 +1,4 @@
-# tvOS 27 Beta 6 Release Notes
+# tvOS 27 Beta 7 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 6. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 7. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
 
@@ -90,9 +90,9 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Security
 
-###### Known Issues
+###### Resolved Issues
 
-- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
+- Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836)
 
 ##### Shadergraph
 
@@ -116,7 +116,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Resolved Issues
 
-- Fixed: `Storefront` API may return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
+- Fixed: `Storefront` API might return incorrect metadata when running in the TestFlight environment.  (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 - Fixed: Transactions fail to finish.  (183165269)
 
@@ -131,12 +131,12 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 - Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
+- Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836)
 
 ###### Known Issues
 
-- Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`.  (183933307) (FB24137836) **Workaround:** Wait 15 seconds after calling `SKTestSession.clearTransactions()` for the eligibility to reset.
-- Changing the storefront or locale using SKTestSession doesn’t propagate through Storefront.updates.  (184155259)
-- Failed purchases using SKTestSession may display error dialogs even when dialogsDisabled is set to true.  (184255116)
+- Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`.  (184155259)
+- Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true.  (184255116)
 
 ##### Swift Charts
 

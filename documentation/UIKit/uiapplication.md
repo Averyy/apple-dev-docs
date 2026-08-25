@@ -26,6 +26,7 @@ class UIApplication
 - [About the app launch sequence](about-the-app-launch-sequence.md)
 - [About the UI preservation process](about-the-ui-preservation-process.md)
 - [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Overview
 

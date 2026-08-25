@@ -32,35 +32,35 @@ class AVPlayerViewController
 
 A player view controller makes it simple to add media playback capabilities to your app that match the styling and features of the native system players. Using this object also means that your app automatically adopts the new features and styling of future operating system releases.
 
-> ❗ **Important**:  The framework doesn’t support subclassing [`AVPlayerViewController`](avplayerviewcontroller.md).
+> ❗ **Important**:  The framework doesn’t support subclassing `AVPlayerViewController`.
 
 ##### Support Airplay
 
-AirPlay lets users stream media to Apple TV, HomePod, and AirPlay 2-compatible speakers and smart TVs. A player view controller supports AirPlay automatically, but you need to configure your app to enable it. See [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback) for more information about configuring your app for background playback.
+AirPlay lets people stream media to Apple TV, HomePod, and AirPlay 2-compatible speakers and smart TVs. A player view controller supports AirPlay automatically, but you need to configure your app to enable it. See [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback) for more information about configuring your app for background playback.
 
 ##### Adopt Picture in Picture Playback
 
-[`AVPlayerViewController`](avplayerviewcontroller.md) provides Picture in Picture (PiP) playback in iOS and tvOS. PiP playback lets users minimize the video player to a small floating window so they can perform other activities in the primary app or in another app.
+`AVPlayerViewController` provides Picture in Picture (PiP) playback in iOS and tvOS. PiP playback lets people minimize the video player to a small floating window so they can perform other activities in the primary app or in another app.
 
 > **Note**: To enable PiP playback in your macOS app, use [`AVPlayerView`](avplayerview.md).
 
 ##### Customize the Tvos Playback Experience
 
-[`AVPlayerViewController`](avplayerviewcontroller.md) in tvOS brings advanced Siri Remote control features to your app. This support lets users play and navigate your content, and access supporting features like subtitles and alternate audio tracks. This object also provides support for using Siri Remote voice commands, such as “Skip ahead 15 seconds” and “What did they say?”, to control playback of your content.
+`AVPlayerViewController` in tvOS brings advanced Siri Remote control features to your app. This support lets people play and navigate your content, and access supporting features like subtitles and alternate audio tracks. This object also provides support for using Siri Remote voice commands, such as “Skip ahead 15 seconds” and “What did they say?” to control playback of your content.
 
-AVKit for tvOS extends the features of [`AVPlayerViewController`](avplayerviewcontroller.md) and [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) to provide additional ways to navigate and present content. Features unique to the tvOS player user interface include:
+AVKit for tvOS extends the features of `AVPlayerViewController` and [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) to provide additional ways to navigate and present content. Features unique to the tvOS player user interface include:
 
-- Navigation Marker Groups. A group of navigation markers that allow a viewer to jump between significant events in the media timeline. The most common type of navigation marker group is a chapter list, but you can also create additional or alternative means of navigation — for example, to allow the user to quickly jump between key moments in a recorded sporting event. The player view controller lets the user choose between multiple marker groups for navigating through the media timeline.
+- Navigation Marker Groups. A group of navigation markers that allow a viewer to jump between significant events in the media timeline. The most common type of navigation marker group is a chapter list, but you can also create additional or alternative means of navigation — for example, to allow someone to quickly jump between key moments in a recorded sporting event. The player view controller lets a person choose between multiple marker groups for navigating through the media timeline.
 
-Use the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) class to create and describe navigation markers, then use the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property to associate marker groups with the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object.
+Use the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) class to create and describe navigation markers, and then use the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property to associate marker groups with the current `AVPlayerItem` object.
 
-- Interstitial Content. Some content might not relate to the main content that your app presents, or might have different presentation requirements. For example, you might not allow the user to skip over advertisements when scrubbing through the playback timeline, or to skip mandatory legal notices.
+- Interstitial Content. Some content might not relate to the main content that your app presents, or might have different presentation requirements. For example, you might not allow people to skip over advertisements when scrubbing through the playback timeline, or to skip mandatory legal notices.
 
-Use the [`AVInterstitialTimeRange`](avinterstitialtimerange.md) class to describe interstitial content, and the [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) property to associate those time ranges with the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object.
+Use the [`AVInterstitialTimeRange`](avinterstitialtimerange.md) class to describe interstitial content, and the [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) property to associate those time ranges with the current `AVPlayerItem` object.
 
-- Content Proposals. When presenting serialized content, like a TV show, you often want to propose additional content for the viewer to watch when the current episode ends. It’s straightforward to add this functionality to your app using content proposals.
+- Content Proposals. When presenting serialized content, like a TV show, you often want to propose additional content for someone to watch when the current episode ends. It’s straightforward to add this functionality to your app using content proposals.
 
-Use the [`AVContentProposal`](avcontentproposal.md) class to describe the proposed content, and set it as the [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal) property of the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object. You can implement the methods of the player view controller’s [`delegate`](avplayerviewcontroller/delegate.md) object to prepare to present a content proposal, and perform actions in response to the viewer accepting, rejecting, or deferring the proposal.
+Use the [`AVContentProposal`](avcontentproposal.md) class to describe the proposed content, and set it as the [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal) property of the current `AVPlayerItem` object. You can implement the methods of the player view controller’s [`delegate`](avplayerviewcontroller/delegate.md) object to prepare to present a content proposal, and perform actions in response to someone accepting, rejecting, or deferring the proposal.
 
 ## Topics
 
@@ -81,7 +81,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
 - [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
   A Boolean value that indicates whether the player shows the transport bar and related controls.
 - [var playbackControlsIncludeInfoViews: Bool](avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
-  A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when the user requests them.
+  A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when someone requests them.
 - [var transportBarIncludesTitleView: Bool](avplayerviewcontroller/transportbarincludestitleview.md)
   A Boolean value that indicates whether the player user interface shows the title view above the scrubber.
 - [var transportBarCustomMenuItems: [UIMenuElement]](avplayerviewcontroller/transportbarcustommenuitems.md)
@@ -118,7 +118,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
 - [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
   A configuration object that manages viewport settings for different presentation modes.
 - [class AVViewport](avviewport.md)
-  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
+  An object that provides configuration options for how the player displays content in different viewing contexts.
 ### Presenting the visionOS trimming UI
 - [var canBeginTrimming: Bool](avplayerviewcontroller/canbegintrimming.md)
   A Boolean value that indicates whether the current media supports trimming.
@@ -149,18 +149,18 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   A Boolean value that indicates whether Picture in Picture starts automatically when transitioning to the background when the view controller presents its content inline.
 ### Managing full-screen behavior
 - [var entersFullScreenWhenPlaybackBegins: Bool](avplayerviewcontroller/entersfullscreenwhenplaybackbegins.md)
-  A Boolean value that determines whether the player automatically displays in full screen when the user taps the play button.
+  A Boolean value that determines whether the player automatically displays in full screen when someone taps the Play button.
 - [var exitsFullScreenWhenPlaybackEnds: Bool](avplayerviewcontroller/exitsfullscreenwhenplaybackends.md)
   A Boolean value that indicates whether the player exits full-screen mode when playback ends.
 ### Managing subtitles
 - [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
-  An array of language codes that restrict the set of subtitle languages available to the user.
+  An array of language codes that restrict the set of subtitle languages available.
 - [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
-  A Boolean value that indicates whether the user can disable the display of subtitles.
+  A Boolean value that indicates whether someone can disable the display of subtitles.
 - [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 ### Preventing navigation
 - [var requiresLinearPlayback: Bool](avplayerviewcontroller/requireslinearplayback.md)
-  A Boolean value that determines whether the player allows the user to skip media content.
+  A Boolean value that determines whether the player allows someone to skip media content.
 ### Configuring skipping behavior
 - [var isSkipForwardEnabled: Bool](avplayerviewcontroller/isskipforwardenabled.md)
   A Boolean value that indicates whether forward-skipping is available.

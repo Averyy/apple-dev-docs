@@ -66,12 +66,14 @@ This configuration sets up a DNS proxy using a Network Extension app.
 
 - `AppBundleIdentifier` (string) *(required)*: The bundle identifier of the app containing the DNS proxy network extension.
 - `DNSProxyUUID` (string): A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment. Available: iOS 27+ | iPadOS 27+ | visionOS 27+
-- `ProviderComposedIdentifier` (string): The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension. In iOS and visionOS, the identifier is a bundle ID, for example, “com.example.app”. In macOS, the identifier is a composed identifier. The format of the composed identifier is either “Bundle-ID” or “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string from the code signature of the provider. For example, “com.example.app” for the bundle ID format, or “com.example.app {anchor apple generic}” for the designated requirement format.
+- `ProviderComposedIdentifier` (string): The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension. In iOS and visionOS, the identifier is a bundle ID, for example, “com.example.app”. In macOS, the identifier is a composed identifier. The format of the composed identifier is either “Bundle-ID” or “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the provider. For example, “com.example.app” for the bundle ID format, or “com.example.app {anchor apple generic}” for the designated requirement format.
 - `ProviderConfiguration` (NetworkDNSProxyProviderConfigurationObject): The dictionary of vendor-specific configuration items.
 - `VisibleName` (string) *(required)*: The name of the DNS proxy configuration that the system displays on the device.
 
 ## See Also
 
+- [object AccessibilitySettings](accessibilitysettings.md)
+  The declaration to configure accessibility settings.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
@@ -100,8 +102,6 @@ This configuration sets up a DNS proxy using a Network Extension app.
   The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
-- [object IntelligenceSettings](intelligencesettings.md)
-  The declaration to configure Apple Intelligence settings.
 
 
 ---

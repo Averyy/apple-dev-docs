@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The numeric value for this level, used for metric aggregation.
+The numeric value for this level that metric aggregation references.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -13,6 +13,7 @@ The numeric value for this level, used for metric aggregation.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

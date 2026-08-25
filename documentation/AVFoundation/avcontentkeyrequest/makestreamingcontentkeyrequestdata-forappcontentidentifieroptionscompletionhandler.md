@@ -27,7 +27,7 @@ If [`AVContentKeyRequestProtocolVersionsKey`](avcontentkeyrequestprotocolversion
 ## Parameters
 
 - `appIdentifier`: An opaque identifier for the app.
-- `contentIdentifier`: An opaque identifier for the content.
+- `contentIdentifier`: An opaque identifier for the content. When you provide an identifier, its length must range from 2 to 200 bytes, inclusive.
 - `options`: A dictionary containing any additional information required to obtain the key. The value of this parameter is `nil` when no additional information is required.
 - `handler`: A block called after the streaming content key request has been prepared. - **contentKeyRequestData**: The streaming content key request data.
 - **error**: An object that describes the error, if one occurred; otherwise, the value is `nil`.

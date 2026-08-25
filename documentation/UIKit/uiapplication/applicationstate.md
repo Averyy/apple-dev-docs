@@ -18,6 +18,10 @@ The app’s current state, or that of its most active scene.
 var applicationState: UIApplication.State { get }
 ```
 
+## Mentions
+
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+
 #### Discussion
 
 The behavior of this property depends on whether your app is scene-based.

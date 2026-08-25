@@ -12,6 +12,7 @@ Returns the first aggregate value matching the given operation, or `-1` if not f
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 

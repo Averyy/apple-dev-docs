@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The evaluators to apply to each subject/sample pair.
+The evaluators to apply to each sample and its corresponding subject.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -13,6 +13,7 @@ The evaluators to apply to each subject/sample pair.
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 ## Declaration
 
@@ -24,7 +25,7 @@ The evaluators to apply to each subject/sample pair.
 ## See Also
 
 - [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
-  Shorthand for the evaluator array type, resolved per-conformance.
+  The evaluator array type for this conformance.
 - [protocol EvaluatorProtocol](evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
 - [struct EvaluatorsBuilder](evaluatorsbuilder.md)

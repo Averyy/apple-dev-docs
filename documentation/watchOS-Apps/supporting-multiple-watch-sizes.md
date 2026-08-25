@@ -132,7 +132,7 @@ You can then use the Preview destination picker to switch between different devi
 
 ![A screenshot of Xcode that shows Apple Watch Series 4 40mm selected in the destination picker.](/images/com.apple.watchOS-Apps/screensize-preview@2x.png)
 
-You can also view all the Dynamic Type sizes for that device by selecting the Dynamic Type Variants option in Xcode. For more information, refer to [`Previewing your app’s interface in Xcode`](https://developer.apple.com/documentation/xcode/previewing-your-apps-interface-in-xcode).
+You can also view all the Dynamic Type sizes for that device by selecting the Dynamic Type Variants option in Xcode. For more information, refer to [`Adding previews to your interface files`](https://developer.apple.com/documentation/xcode/adding-previews-to-your-interface-files).
 
 ![A screenshot of Xcode that shows a preview of all the Dynamic Type variants.](/images/com.apple.watchOS-Apps/preview-dynamic-type@2x.png)
 

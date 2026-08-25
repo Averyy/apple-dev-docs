@@ -28,12 +28,6 @@ Create attributed strings from existing content or raw text and apply the initia
 - [init(URL: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsattributedstring/init(url:options:documentattributes:).md)
   Creates an attributed string from the contents of the specified URL.
 ### Creating from HTML
-- [init?(HTML: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object.
-- [init?(HTML: Data, baseURL: URL, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:baseurl:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object and base URL.
-- [init?(HTML: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:options:documentattributes:).md)
-  Creates an attributed string from the HTML in the specified data object.
 - [class func loadFromHTML(request: URLRequest, options: [NSAttributedString.DocumentReadingOptionKey : Any], completionHandler: (NSAttributedString?, [NSAttributedString.DocumentAttributeKey : Any]?, (any Error)?) -> Void)](nsattributedstring/loadfromhtml(request:options:completionhandler:).md)
   Creates an attributed string by converting the contents of the specified HTML URL request.
 - [class func loadFromHTML(fileURL: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any], completionHandler: (NSAttributedString?, [NSAttributedString.DocumentAttributeKey : Any]?, (any Error)?) -> Void)](nsattributedstring/loadfromhtml(fileurl:options:completionhandler:).md)
@@ -44,6 +38,12 @@ Create attributed strings from existing content or raw text and apply the initia
   Creates an attributed string from the specified HTML data.
 - [NSAttributedString.CompletionHandler](nsattributedstring/completionhandler.md)
   A completion handler for getting an asynchronous attributed string.
+- [init?(HTML: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object.
+- [init?(HTML: Data, baseURL: URL, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:baseurl:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object and base URL.
+- [init?(HTML: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(html:options:documentattributes:).md)
+  Creates an attributed string from the HTML in the specified data object.
 ### Creating from RTF
 - [init?(RTF: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(rtf:documentattributes:).md)
   Creates an attributed string by decoding the stream of RTF commands and data in the specified data object.

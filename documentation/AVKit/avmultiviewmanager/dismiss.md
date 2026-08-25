@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: method
 
-Dismiss the multiview presentation.
+Dismisses the multiview presentation.
 
 **Availability**:
 - visionOS 2.0+
