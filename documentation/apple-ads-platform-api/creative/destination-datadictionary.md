@@ -16,7 +16,7 @@ object Creative.Destination
 
 #### Discussion
 
-Destination is the post-tap experience for the ad creative. `destinationType` is immutable after creation, and the system computes the read-only `url` field from `destinationType` and `parameters`.
+Destination is the post-tap experience for the ad creative. The `destinationType` field is immutable after creation, and the system computes the read-only `url` field from `destinationType` and `parameters`.
 
 ## Properties
 

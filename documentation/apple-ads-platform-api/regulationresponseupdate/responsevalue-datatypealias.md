@@ -16,6 +16,8 @@ string RegulationResponseUpdate.ResponseValue
 
 #### Discussion
 
+Updating this value only makes sense when the campaign’s `regulationType` still requires the disclosure it answers.
+
 ##### Example
 
 ```json

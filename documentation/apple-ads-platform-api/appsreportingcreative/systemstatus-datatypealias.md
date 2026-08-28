@@ -16,6 +16,8 @@ string AppsReportingCreative.SystemStatus
 
 #### Discussion
 
+This is a point-in-time snapshot of validation state; a creative later marked `INVALID` may still show `VALID` in an older report.
+
 ##### Example
 
 ```json

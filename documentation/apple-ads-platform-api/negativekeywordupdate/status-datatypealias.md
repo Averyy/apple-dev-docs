@@ -16,6 +16,8 @@ string NegativeKeywordUpdate.Status
 
 #### Discussion
 
+Set this to `PAUSED` to temporarily allow traffic from the excluded term without deleting the negative keyword.
+
 ##### Example
 
 ```json

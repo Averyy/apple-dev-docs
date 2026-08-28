@@ -35,6 +35,9 @@ struct VideoAugmentationOptions
   Randomly translate the pose in a video.
 - [Option set support](option-set-support.md)
   Inspect and modify a video augmentation option set with the properties and methods it inherits from standard protocols.
+### Initializers
+- [init(rawValue: Int)](mlhandactionclassifier/videoaugmentationoptions/init(rawvalue:).md)
+  Creates an option set from an integer.
 
 ## Relationships
 

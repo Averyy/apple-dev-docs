@@ -18,9 +18,9 @@ object NegativeKeyword
 
 A `NegativeKeyword` prevents ads from showing when a search query matches the excluded term.
 
-- `EXACT` match negatives block only searches that precisely match the term.
-- `BROAD` match negatives block a wider range of related queries.
-- `PHRASE` match negatives block Apple Maps searches that match the term and close variants.
+- The `EXACT` match negatives block only searches that precisely match the term.
+- The `BROAD` match negatives block a wider range of related queries.
+- The `PHRASE` match negatives block Apple Maps searches that match the term and close variants.
 
 Pausing a negative keyword (`status: PAUSED`) temporarily re-enables traffic from that term without permanently removing the exclusion. A `deleted` negative keyword is soft-deleted and excluded from serving but remains accessible in query results.
 
@@ -58,7 +58,7 @@ You can use fields marked **Filterable** in the dictionary keys as filter criter
 - `text` (string): The original advertiser-given keyword text. Filterable (`EQUALS`, `STARTS_WITH`). Immutable after creation.
 - `matchType` (NegativeKeyword.MatchType): Match type for this negative keyword. The schema accepts all four `KeywordMatchType` values (`EXACT`, `BROAD`, `PHRASE`, `CATEGORY`). In practice, `EXACT` and `BROAD` apply to App Store negatives and `PHRASE` applies to Apple Maps negatives. `CATEGORY` is not supported for negative keywords. See [`KeywordMatchType`](keywordmatchtype.md). Filterable (`EQUALS`, `IN`). Immutable after creation.
 - `status` (NegativeKeyword.Status): Whether the negative keyword is active or paused. See [`NegativeKeywordStatus`](negativekeywordstatus.md). Filterable (`EQUALS`, `IN`). Mutable.
-- `id` (int64): System-assigned unique identifier. Read-only.
+- `id` (int64): System-assigned unique identifier. Read-only. Filterable (`EQUALS`, `IN`).
 - `creationTime` (date-time): Timestamp when the negative keyword was created. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification. Read-only.
 - `deleted` (boolean): Whether the negative keyword has been deleted. Read-only.

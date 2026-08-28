@@ -16,7 +16,7 @@ string CampaignDisplayStatus
 
 #### Discussion
 
-`CampaignDisplayStatus` is a read-only, derived field on [`Campaign`](campaign.md) that surfaces the effective delivery state. It combines `CampaignStatus` (advertiser intent) and `CampaignSystemStatus` (system evaluation) into one actionable label. Use this field when displaying campaign health in a UI. Inspect `CampaignSystemStatusReason` for the root cause when the status is not `RUNNING`.
+The `CampaignDisplayStatus` is a read-only, derived field on [`Campaign`](campaign.md) that surfaces the effective delivery state. It combines `CampaignStatus` (advertiser intent) and `CampaignSystemStatus` (system evaluation) into one actionable label. Use this field when displaying campaign health in a UI. Inspect `CampaignSystemStatusReason` for the root cause when the status isn’t `RUNNING`.
 
 ## See Also
 

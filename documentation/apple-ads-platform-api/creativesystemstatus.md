@@ -16,7 +16,7 @@ string CreativeSystemStatus
 
 #### Discussion
 
-`CreativeSystemStatus` is a read-only field that reflects whether an ad creative has passed all system validation checks and is eligible to serve.
+The `CreativeSystemStatus` is a read-only field that reflects whether an ad creative has passed all system validation checks and is eligible to serve.
 
 When the status isn’t `VALID`, inspect `systemStatusReasons` on the [`Creative`](creative.md) object to determine the specific blocking condition.
 
@@ -25,7 +25,7 @@ When the status isn’t `VALID`, inspect `systemStatusReasons` on the [`Creative
 - [type CreativeType](creativetype.md)
   Enum identifying the visual format and placement context of an ad creative.
 - [type CreativeSystemStatusReason](creativesystemstatusreason.md)
-  A reason code explaining why an ad creative is not valid or is pending review.
+  A reason code explaining why an ad creative isn’t valid or is pending review.
 - [type DestinationType](destinationtype.md)
   Specifies where an ad sends users after they tap it.
 

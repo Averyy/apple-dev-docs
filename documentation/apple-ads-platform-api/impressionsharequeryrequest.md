@@ -14,13 +14,7 @@ Request body for the impression share query endpoint.
 object ImpressionShareQueryRequest
 ```
 
-#### Discussion
-
-`ImpressionShareQueryRequest` is the request body for the impression share endpoint. Timezone is fixed to UTC.
-
-`timeRange` specifies the date window to query. `options` allows additional configuration of the impression share calculation.
-
-##### Example
+#### Example
 
 ```json
 {
@@ -63,9 +57,9 @@ object ImpressionShareQueryRequest
 
 - `filters` ([Filter]) *(required)*: Filter conditions. A filter on `promotedObjectId` is required. Omitting it will result in a 400 error.
 - `sorting` ([Sorting]): Sort criteria. Maximum 2 sort fields.
-- `timeRange` (ImpressionShareTimeRange) *(required)*: See [`ImpressionShareTimeRange`](impressionsharetimerange.md) for details.
+- `timeRange` (ImpressionShareTimeRange) *(required)*: Specifies the date window to query. Timezone is fixed to UTC. See [`ImpressionShareTimeRange`](impressionsharetimerange.md) for details.
 - `pagination` (RequestPagination): Pagination controls. Default `pageSize` is `100`. Maximum `pageSize` is `5000`. See [`RequestPagination`](requestpagination.md) for details.
-- `options` (ImpressionShareOptions): See [`ImpressionShareOptions`](impressionshareoptions.md) for details.
+- `options` (ImpressionShareOptions): Allows additional configuration of the impression share calculation. See [`ImpressionShareOptions`](impressionshareoptions.md) for details.
 
 ## See Also
 

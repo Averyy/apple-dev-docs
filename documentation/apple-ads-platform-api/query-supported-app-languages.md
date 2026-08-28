@@ -20,30 +20,27 @@ Use this endpoint to:
 
 An empty request body returns all supported countries and regions with default pagination. To scope results to specific country codes, use `filters`. To order results alphabetically, use `sorting`.
 
-The `filters` array supports the following fields:
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
 
-| Field | Supported Operators | Notes |
-| --- | --- | --- |
-| `countryCode` | `EQUALS`, `INCLUDE` | ISO 3166-1 alpha-2 country code (e.g., `US`, `GB`, `CA`). |
-| `name` | `EQUALS` | Full country or region name. |
+##### Filterable Fields
 
-The `sorting` array supports the following fields:
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `countryCode` | string | `EQUALS`, `IN` | Yes | ISO 3166-1 alpha-2 country code (for example, `US`, `GB`, `CA`) |
+| `name` | string | `EQUALS` | Yes | Full country or region name |
 
-| Field | Notes |
-| --- | --- |
-| `name` | Sort alphabetically by country or region name. |
-| `countryCode` | Sort by country code. |
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 Each result row includes the following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `name` | string | Full display name of the country or region (e.g., `United States`). |
-| `countryCode` | string | ISO 3166-1 alpha-2 code (e.g., `US`). |
-| `adsSupportedLanguages` | array | All language/locale combinations eligible for Apple Ads creatives and targeting in this market. |
-| `adsDefaultLanguages` | array | The default language(s) used when no explicit locale is specified. |
-| `adsSupportedLanguages[].language` | string | Language identifier (e.g., `en`, `es`, `fr`). |
-| `adsSupportedLanguages[].languageCode` | string | Full locale code (e.g., `en-US`, `es-US`). |
+| `name` | string | Full display name of the country or region (for example, `United States`) |
+| `countryCode` | string | ISO 3166-1 alpha-2 code (for example, `US`) |
+| `adsSupportedLanguages` | array | All language/locale combinations eligible for Apple Ads creatives and targeting in this market |
+| `adsDefaultLanguages` | array | The default language(s) used when no explicit locale is specified |
+| `adsSupportedLanguages[].language` | string | Language identifier (for example, `en`, `es`, `fr`) |
+| `adsSupportedLanguages[].languageCode` | string | Full locale code (for example, `en-US`, `es-US`) |
 
 #### Payload Examples
 
@@ -201,7 +198,7 @@ POST /v1/metadata/apps/supported-languages/query
  "filters": [
    {
      "field": "countryCode",
-     "operator": "INCLUDE",
+     "operator": "IN",
      "value": ["US", "GB", "CA", "AU"]
    }
  ],

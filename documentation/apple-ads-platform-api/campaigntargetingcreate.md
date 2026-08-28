@@ -16,7 +16,7 @@ object CampaignTargetingCreate
 
 #### Discussion
 
-`CampaignTargetingCreate` is the create-time counterpart to [`CampaignTargeting`](campaigntargeting.md). It defines the supply source, placement, and geographic markets for a new campaign using [`TargetingDataCreate`](targetingdatacreate.md) objects for each dimension. All three dimensions are include-only: the `exclude` array is not supported at the campaign level. [`TargetingDataCreate`](targetingdatacreate.md) at creation time corresponds to [`TargetingData`](targetingdata.md) in read and update responses. Once the campaign is created, use [`CampaignTargeting`](campaigntargeting.md) to read or update any of the three dimensions.
+The `CampaignTargetingCreate` object is the create-time counterpart to [`CampaignTargeting`](campaigntargeting.md). It defines the supply source, placement, and geographic markets for a new campaign using [`TargetingDataCreate`](targetingdatacreate.md) objects for each dimension. All three dimensions are include-only: the `exclude` array isn’t supported at the campaign level. The [`TargetingDataCreate`](targetingdatacreate.md) at creation time corresponds to [`TargetingData`](targetingdata.md) in read and update responses. Once the campaign is created, use [`CampaignTargeting`](campaigntargeting.md) to read or update any of the three dimensions.
 
 ##### Example
 

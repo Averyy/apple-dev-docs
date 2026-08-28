@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-Ad metadata for APPS report rows.
+Ad metadata for apps report rows.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -16,7 +16,7 @@ object AppsReportingAd
 
 #### Discussion
 
-`AppsReportingAd` is the ad metadata object embedded in APPS ad report rows. It captures the configuration and status of the ad at report time, providing the full organizational context (`adAccountId`, `campaignId`, `adGroupId`) alongside the ad’s operational state (`status`, `systemStatus`, `displayStatus`).
+The `AppsReportingAd` object is the ad metadata embedded in apps ad report rows. It captures the configuration and status of the ad at report time, providing the full organizational context (`adAccountId`, `campaignId`, `adGroupId`) alongside the ad’s operational state (`status`, `systemStatus`, `displayStatus`).
 
 The `creative` field embeds an `AppsReportingCreative` summary capturing the creative type and system status, without needing a separate lookup.
 
@@ -77,23 +77,23 @@ The `creative` field embeds an `AppsReportingCreative` summary capturing the cre
 ## See Also
 
 - [object AppsReportingRequest](appsreportingrequest.md)
-  Request body for APPS reporting queries.
+  Request body for apps reporting queries.
 - [object AppsReportingCampaign](appsreportingcampaign.md)
-  Campaign metadata for APPS report rows.
+  Campaign metadata for apps report rows.
 - [object AppsReportingAdGroup](appsreportingadgroup.md)
-  Ad group metadata for APPS report rows.
+  Ad group metadata for apps report rows.
 - [object AppsReportingCreative](appsreportingcreative.md)
-  Creative metadata for APPS ads.
+  Creative metadata for apps ads.
 - [object AppsCampaignReportResponse](appscampaignreportresponse.md)
-  The top-level response envelope for APPS campaign-level reports.
+  The top-level response envelope for apps campaign-level reports.
 - [object AppsCampaignReportRow](appscampaignreportrow.md)
-  A single row in an APPS campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
+  A single row in an apps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
 - [object AppsCampaignReportSummary](appscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps campaign report.
 - [object AppsCampaignResultContainer](appscampaignresultcontainer.md)
   Wraps the array of Apps campaign report rows along with a grand-total summary.
 - [object AppsAdGroupReportResponse](appsadgroupreportresponse.md)
-  The top-level response envelope for APPS ad group reports.
+  The top-level response envelope for apps ad group reports.
 - [object AppsAdGroupReportRow](appsadgroupreportrow.md)
   A single row in an Apps ad group report, containing ad group metadata, total metrics, and optional granular time-series metrics.
 - [object AppsAdGroupReportSummary](appsadgroupreportsummary.md)
@@ -101,7 +101,7 @@ The `creative` field embeds an `AppsReportingCreative` summary capturing the cre
 - [object AppsAdGroupResultContainer](appsadgroupresultcontainer.md)
   Wraps the array of Apps ad group report rows along with a grand-total summary.
 - [object AppsAdReportResponse](appsadreportresponse.md)
-  The top-level response envelope for APPS ad-level reports.
+  The top-level response envelope for apps ad-level reports.
 - [object AppsAdReportRow](appsadreportrow.md)
   A single row in an Apps ad-level report, containing ad metadata, total metrics, and optional granular time-series metrics.
 - [object AppsAdReportSummary](appsadreportsummary.md)

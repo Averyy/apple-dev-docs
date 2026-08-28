@@ -16,6 +16,8 @@ string BrandsReportingCampaign.BillingEvent
 
 #### Discussion
 
+Brands campaigns can use either billing model, so check this field before comparing cost-per-tap and cost-per-impression figures across rows.
+
 ##### Example
 
 ```json

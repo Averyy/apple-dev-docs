@@ -16,6 +16,8 @@ string AppsReportingAdGroup.Status
 
 #### Discussion
 
+This captures the advertiser-set status as of the report’s generation, separate from the system-evaluated [`AppsReportingAdGroup.SystemStatus`](appsreportingadgroup/systemstatus-data.typealias.md) reported alongside it.
+
 ##### Example
 
 ```json

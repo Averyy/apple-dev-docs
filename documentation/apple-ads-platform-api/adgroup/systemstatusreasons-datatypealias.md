@@ -16,6 +16,8 @@ string AdGroup.SystemStatusReasons
 
 #### Discussion
 
+These reasons range from scheduling and audience-size conditions on the ad group itself to a parent campaign that isn’t running, as with `CAMPAIGN_NOT_RUNNING`.
+
 ##### Example
 
 ```json

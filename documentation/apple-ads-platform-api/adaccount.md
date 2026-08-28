@@ -20,7 +20,7 @@ An `AdAccount` is the operational container for campaigns within an organization
 
 Each ad account is authorized for App Store or Apple Maps advertising, not both. You can’t combine the two on the same account.
 
-`systemStatus` reflects operational readiness. If `INACTIVE`, check `systemStatusReasons`. Common causes include a missing payment method or pending tax verification.
+The `systemStatus` field reflects operational readiness. If `INACTIVE`, check `systemStatusReasons`. Common causes include a missing payment method or pending tax verification.
 
 ##### Example
 
@@ -53,13 +53,13 @@ Each ad account is authorized for App Store or Apple Maps advertising, not both.
 
 ### Type Aliases
 - [type AdAccount.Currency](adaccount/currency-data.typealias.md)
-  The currency for the ad account, inherited from the parent org at creation.
+  The currency for the ad account.
 - [type AdAccount.PaymentModel](adaccount/paymentmodel-data.typealias.md)
   The payment model for the ad account.
 - [type AdAccount.SystemStatus](adaccount/systemstatus-data.typealias.md)
-  `ACTIVE` on successful creation, transitioning to `INACTIVE` if issues arise.
+  The system status for an ad account.
 - [type AdAccount.SystemStatusReasons](adaccount/systemstatusreasons-data.typealias.md)
-  Populated when `systemStatus` is `INACTIVE`, identifying the specific blocking condition.
+  Populated when `systemStatus` is not active.
 
 ## Properties
 

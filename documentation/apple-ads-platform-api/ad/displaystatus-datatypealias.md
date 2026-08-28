@@ -16,6 +16,8 @@ string Ad.DisplayStatus
 
 #### Discussion
 
+Because delivery depends on the full hierarchy, an ad can show `AD_GROUP_ON_HOLD` or `CAMPAIGN_ON_HOLD` even when its own settings are otherwise ready to serve.
+
 ##### Example
 
 ```json

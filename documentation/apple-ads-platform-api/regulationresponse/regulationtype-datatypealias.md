@@ -16,6 +16,8 @@ string RegulationResponse.RegulationType
 
 #### Discussion
 
+This mirrors the `regulationType` set when the response was created, and continues to determine which `responseValue` options are valid.
+
 ##### Example
 
 ```json

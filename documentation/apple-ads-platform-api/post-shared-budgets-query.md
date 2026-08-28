@@ -10,7 +10,17 @@ Returns a filtered, sorted, and paginated list of budget orders.
 
 #### Discussion
 
-To find budget orders by name, status, or date range, or to retrieve them across an ad account, use this endpoint. Narrow and order the result set with `filters`, `sorting`, and `pagination`.
+This endpoint finds budget orders by name, status, or date range, or retrieves them across an ad account. Narrow and order the result set with `filters`, `sorting`, and `pagination`.
+
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `deleted` | boolean | `EQUALS` | Yes | Whether the budget order has been soft-deleted. |
+
+Only `deleted` is confirmed filterable by example; the Discussion above also describes filtering by name, status, or date range, but no operators are documented for those fields. The `name` field is confirmed sortable by example. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 #### Payload Examples
 
@@ -109,7 +119,7 @@ Query all active budget orders for an ad account, sorted by name.
 
 ## Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-Ap-Context` (string)
 
 ## See Also
 

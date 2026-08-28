@@ -16,9 +16,7 @@ object BrandsCampaignReportRow
 
 #### Discussion
 
-`BrandsCampaignReportRow` is a single row in a `BRANDS` campaign report response.
-
-For `BRANDS` reports, supported `groupBy` dimensions are `deviceClass`, `locationId`, and `supplyPlacement`. These appear as dimension values within the `metadata` object.
+For `brands` reports, supported `groupBy` dimensions are `deviceClass`, `locationId`, and `supplyPlacement`. These appear as dimension values within the `metadata` object.
 
 ##### Example
 
@@ -116,7 +114,7 @@ For `BRANDS` reports, supported `groupBy` dimensions are `deviceClass`, `locatio
 
 ## Properties
 
-- `totalMetrics` (BrandsCampaignMetrics): Aggregated performance figures including the `BRANDS`-specific engagement metrics (directions, calls, shares, etc.). See [`BrandsCampaignMetrics`](brandscampaignmetrics.md) for details.
+- `totalMetrics` (BrandsCampaignMetrics): Aggregated performance figures including the `brands`-specific engagement metrics (directions, calls, shares, etc.). See [`BrandsCampaignMetrics`](brandscampaignmetrics.md) for details.
 - `granularMetrics` ([BrandsCampaignMetrics]): Time-series breakdown, present when a `granularity` is specified in the request.
 - `metadata` (BrandsReportingCampaign): Campaign identifiers, targeting projection, budget, and operational status at report time. See [`BrandsReportingCampaign`](brandsreportingcampaign.md) for details.
 

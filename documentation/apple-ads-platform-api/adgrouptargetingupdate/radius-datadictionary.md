@@ -16,7 +16,7 @@ object AdGroupTargetingUpdate.Radius
 
 #### Discussion
 
-In practice, radius targeting applies only to `MAPS_SEARCH_RESULTS` campaigns. Avoid combining it with geo location targeting in the same ad group, though the API does not enforce either constraint at the schema level. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+In practice, radius targeting applies only to `MAPS_SEARCH_RESULTS` campaigns. Avoid combining it with geo location targeting in the same ad group, though the API doesn’t enforce either constraint at the schema level. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "radius": {

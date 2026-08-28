@@ -20,12 +20,12 @@ Each `ImpressionShareRow` represents one combination of date, search term, and c
 
 ##### Impression Share Encoding
 
-`lowImpressionShare` and `highImpressionShare` use a tiered encoding:
+The `lowImpressionShare` and `highImpressionShare` fields use a tiered encoding:
 
 | Impression share | `lowImpressionShare` | `highImpressionShare` |
 | --- | --- | --- |
 | 0% | `0` | `0` |
-| 1% – 90% | `x` (e.g. `0.23`) | `x` (same value) |
+| 1% – 90% | `x` (for example, `0.23`) | `x` (same value) |
 | 91% – 100% | `0.91` | `1` |
 
 When both fields are equal and less than `0.91`, the value is a precise single-digit percentage. When `highImpressionShare` is `1`, the app holds more than 90% impression share for that term.
@@ -52,7 +52,7 @@ When both fields are equal and less than `0.91`, the value is a precise single-d
 - `week` (date): Week start date (Sunday) in YYYY-MM-DD format. Present when granularity is `WEEKLY_SUN_SAT`. Read-only.
 - `appName` (string): Display name of the promoted app. Read-only.
 - `promotedObjectId` (string): The Adam ID (App Store app identifier) of the promoted app. Serialized as a JSON string representation of an int64. Read-only.
-- `countryOrRegion` (string): ISO 3166-1 alpha-2 country or region code (e.g., `US`, `CA`, `GB`). Read-only.
+- `countryOrRegion` (string): ISO 3166-1 alpha-2 country or region code (for example, `US`, `CA`, `GB`). Read-only.
 - `searchTerm` (string): The search term. Privacy-filtered: suppressed for terms with fewer than 10 impressions. Read-only.
 - `lowImpressionShare` (double): Lower bound of the app’s impression share (0–1). See encoding table above. Read-only.
 - `highImpressionShare` (double): Upper bound of the app’s impression share (0–1). See encoding table above. Read-only.

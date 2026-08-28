@@ -28,7 +28,7 @@ Every asset has an `assetType` field, which identifies the kind of media it cont
 
 ##### Upload Assets
 
-Assets enter the system through a single upload method. Send a multipart form to `POST /v1/assets/upload` containing the binary image file (`file`), `promotedObjectId`, and `promotedObjectType: BUSINESS_BRAND`. The endpoint accepts PNG, JPG, and HEIC formats.
+Assets enter the system through a single upload method. Send a multipart form to `POST /v1/assets/upload` ([`Upload Asset`](upload-asset.md)) containing the binary image file (`file`), `promotedObjectId`, and `promotedObjectType: BUSINESS_BRAND`. The endpoint accepts PNG, JPG, and HEIC formats.
 
 This endpoint only supports asset uploads for Apple Maps (`BUSINESS_BRAND`) assets, and it doesn’t accept any other value for `promotedObjectType`. The uploaded asset belongs to the ad account identified by the `X-AP-Context` header and becomes part of that account’s asset library.
 
@@ -36,7 +36,7 @@ After upload, the asset begins processing. Poll using [`Get Asset`](get-asset-by
 
 ##### Query Assets
 
-To find assets, use `POST /v1/assets/query` with the following filterable fields:
+To find assets, use `POST /v1/assets/query` ([`Query Assets`](query-assets.md)) with the following filterable fields:
 
 | Filterable Field | Operators | Description |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ Every asset response includes the following fields:
 | `providerAssetMetadata` | Provider-specific metadata. Structure varies by provider type. |
 | `assetDetails` | Type-specific media metadata. For `IMAGE` assets, contains [`AssetImage`](assetimage.md) fields, including `format` (see [`ImageType`](imagetype.md)) and `orientation` (see [`Orientation`](orientation.md)). |
 | `parentAssetId` | Identifier of the parent asset if this asset is a variant. |
-| `variantIds` | Identifiers for asset variants (e.g., different sizes or localizations). |
+| `variantIds` | Identifiers for asset variants (for example, different sizes or localizations). |
 | `eligibility` | Eligibility data. See [`AssetEligibility`](asseteligibility.md) for the `status` field (see [`AssetEligibilityStatus`](asseteligibilitystatus.md)) and the `blockedGroups`/`allowedGroups` constraint fields (see [`AssetConstraintGroup`](assetconstraintgroup.md)). Always returned unless excluded via a `fields` projection parameter. |
 | `creationTime` | Timestamp when the asset was created (ISO 8601). Read-only. |
 | `modificationTime` | Timestamp of the last modification (ISO 8601). Read-only. |

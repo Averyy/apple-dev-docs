@@ -16,6 +16,8 @@ string Creative.SystemStatus
 
 #### Discussion
 
+A `VALID` result only confirms system checks passed; Apple’s additional creative review can still affect whether the ad creative ultimately serves.
+
 ##### Example
 
 ```json

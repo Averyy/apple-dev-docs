@@ -14,13 +14,7 @@ Request body for the search term popularity query endpoint.
 object SearchTermPopularityQueryRequest
 ```
 
-#### Discussion
-
-`SearchTermPopularityQueryRequest` is the request body for the search term popularity endpoint. Timezone is fixed to UTC.
-
-To scope results to specific countries or genres, use `filters`. `timeRange` is required and specifies the date window to query.
-
-##### Example
+#### Example
 
 ```json
 {
@@ -62,10 +56,24 @@ To scope results to specific countries or genres, use `filters`. `timeRange` is 
 
 ## Properties
 
-- `filters` ([Filter]): Filter conditions to narrow results. Genre values are free-text strings matching App Store genre names (e.g., `PRODUCTIVITY_UTILITIES`, `TRAVEL`). There is no fixed enum of allowed values.
-- `sorting` ([Sorting]): Sort criteria. Maximum 2 sort fields. Default genre ASC, rankInGenre ASC.
-- `timeRange` (SearchTermPopularityTimeRange) *(required)*: See [`SearchTermPopularityTimeRange`](searchtermpopularitytimerange.md) for details.
-- `pagination` (RequestPagination): See [`RequestPagination`](requestpagination.md) for details.
+- `filters` ([Filter]): Filter conditions to scope results to specific countries or genres. Genre values match App Store genre names (for example, `PRODUCTIVITY_UTILITIES`, `TRAVEL`). Enumeration values are: - BUSINESS
+- EDUCATION
+- ENTERTAINMENT
+- FINANCE
+- FOOD_DRINK
+- GAMES
+- HEALTH_FITNESS
+- LIFESTYLE
+- NEW_PUBLICATION
+- PHOTO_VIDEO
+- PRODUCTIVITY_UTILITIES
+- SHOPPING
+- SOCIAL_NETWORKING
+- SPORTS
+- TRAVEL
+- `sorting` ([Sorting]): Sort criteria. Maximum two sort fields. Default genre ASC, `rankInGenre` ASC.
+- `timeRange` (SearchTermPopularityTimeRange) *(required)*: timeRange is required and specifies the date window to query. Timezone is fixed to UTC. See [`SearchTermPopularityTimeRange`](searchtermpopularitytimerange.md) for granularity rules.
+- `pagination` (RequestPagination): See [`RequestPagination`](requestpagination.md) for details. This endpoint caps `pageSize` at 5000.
 
 ## See Also
 

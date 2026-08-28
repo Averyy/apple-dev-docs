@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns, broken down by optional dimensions.
+Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -20,7 +20,9 @@ Use Apple Maps search term data to:
 
 Filter by `adGroupId` or `campaignId` to scope results to a specific part of your account.
 
-> **Note**: **Note:** Apple Maps search term reports require the `ORTZ` timezone. `UTC` is not supported. The `supplyPlacement` and `locationId` dimensions are excluded from `groupBy` for the `SEARCHTERM` entity.
+> **Note**: **Note:** Apple Maps search term reports require the `ORTZ` timezone. The `UTC` timezone isn’t supported. The `supplyPlacement` and `locationId` dimensions are excluded from `groupBy` for the `SEARCHTERM` entity.
+
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -546,13 +548,13 @@ POST /v1/reports/business-brands/searchterms/query
 ## See Also
 
 - [Campaigns Report (Brands)](get-brand-campaign-reports.md)
-  Retrieve performance metrics for Apple Maps campaigns broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for Apple Maps campaigns.
 - [Ad Groups Report (Brands)](get-brand-ad-group-reports.md)
-  Retrieve performance metrics for Apple Maps ad groups broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for Apple Maps ad groups.
 - [Ads Report (Brands)](get-brand-ad-reports.md)
-  Retrieve performance metrics for Apple Maps ads broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for Apple Maps ads.
 - [Keywords Report (Brands)](get-brand-keyword-reports.md)
-  Retrieve performance metrics for Apple Maps keywords broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for Apple Maps keywords.
 
 
 ---

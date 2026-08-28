@@ -16,6 +16,8 @@ string BulkNegativeKeywordUpdate.Status
 
 #### Discussion
 
+Include this field within an item’s `data` to re-enable or pause the negative keyword’s suppression as part of the same bulk update request.
+
 ##### Example
 
 ```json

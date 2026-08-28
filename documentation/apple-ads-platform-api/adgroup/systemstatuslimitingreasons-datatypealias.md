@@ -16,6 +16,8 @@ string AdGroup.SystemStatusLimitingReasons
 
 #### Discussion
 
+These reasons can stem from the ad group’s own location targeting or cascade up from limited ads within it, as with `ADS_LIMITED`.
+
 ##### Example
 
 ```json

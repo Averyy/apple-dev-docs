@@ -12,7 +12,16 @@ Query phrase suggestions using either a discovery or search route based on the q
 
 Each result is a [`PhraseSuggestion`](phrasesuggestion.md) object. Sort by `popularity DESC` and use `pagination` to page through results.
 
-#### Request Body
+See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Description |
+| --- | --- | --- | --- |
+| `queryType` | string (enum) | `EQUALS` | Required. `SUGGESTION` discovers phrases for an app or brand, and `SEARCH` looks up or searches specific phrases. |
+| `promotedObjectId` | string | `EQUALS` | Required for the `SUGGESTION` route. The App Store app ID or brand ID, depending on `promotedObjectType`. |
+| `promotedObjectType` | string (enum) | `EQUALS` | Required for the `SUGGESTION` route. `APPSTORE_APP` or `BUSINESS_BRAND`. |
+| `phrase` | string | `IN`, `LIKE` | Required for the `SEARCH` route. `IN` fetches popularity for specific phrases. `LIKE` performs a string match search. |
 
 #### Payload Examples
 

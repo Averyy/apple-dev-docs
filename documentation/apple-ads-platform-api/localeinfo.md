@@ -16,9 +16,9 @@ object LocaleInfo
 
 #### Discussion
 
-`LocaleInfo` pairs a two-letter language identifier with its full BCP-47 locale code. Use it when you need to communicate both the base language (`language`) and the regional variant (`languageCode`) together, for example when enumerating the locales supported by a product page or brand creative.
+The `LocaleInfo` object pairs a two-letter language identifier with its full BCP-47 locale code. Use it when you need to communicate both the base language (`language`) and the regional variant (`languageCode`) together, for example when enumerating the locales supported by a product page or brand creative.
 
-The `language` field corresponds to the ISO 639-1 language code (e.g., `en`, `fr`, `ja`), while `languageCode` includes the region subtag as required by BCP-47 (e.g., `en-US`, `fr-FR`, `ja-JP`). When building locale-aware creative specs, use `languageCode` as the map key in `localizedText` structures.
+The `language` field corresponds to the ISO 639-1 language code (for example, `en`, `fr`, `ja`). The `languageCode` field includes the region subtag as required by BCP-47 (for example, `en-US`, `fr-FR`, `ja-JP`). When building locale-aware creative specs, use `languageCode` as the map key in `localizedText` structures.
 
 ##### Example
 
@@ -31,8 +31,8 @@ The `language` field corresponds to the ISO 639-1 language code (e.g., `en`, `fr
 
 ## Properties
 
-- `language` (string): Language identifier (e.g., “en”, “es”). Read-only.
-- `languageCode` (string): BCP-47 language code (e.g., “en-US”, “es-MX”). Read-only.
+- `language` (string): Language identifier (for example, “en”, “es”). Read-only.
+- `languageCode` (string): BCP-47 language code (for example, “en-US”, “es-MX”). Read-only.
 
 ## See Also
 

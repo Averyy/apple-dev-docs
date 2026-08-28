@@ -16,9 +16,9 @@ object CreativeRejectionReason
 
 #### Discussion
 
-`CreativeRejectionReason` records are returned by the rejection reasons endpoint and describe why a specific ad creative was rejected. Each record includes the scope of rejection (by `adamId`, `productPageId`, or `assetId`) and the policy categories that were violated. To diagnose and remediate rejected ad creatives, use these records alongside `systemStatusReasons` on the [`Creative`](creative.md).
+The `CreativeRejectionReason` object represents a record returned by the rejection reasons endpoint, describing why a specific ad creative was rejected. Each record includes the scope of rejection (by `adamId`, `productPageId`, or `assetId`) and the policy categories that were violated. To diagnose and remediate rejected ad creatives, use these records alongside `systemStatusReasons` on the [`Creative`](creative.md).
 
-The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/rejection-reasons/apps/query` and `GET /v1/rejection-reasons/apps/{rejectionReasonId}`, are documented under Apps > App Eligibility. See [`Query Rejection Reasons`](find-rejection-reasons.md) and [`Get Rejection Reasons`](gets-rejection-reasons-by-id.md).
+The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/rejection-reasons/apps/query` ([`Query Rejection Reasons`](find-rejection-reasons.md)) and `GET /v1/rejection-reasons/apps/{rejectionReasonId}` ([`Get Rejection Reasons`](gets-rejection-reasons-by-id.md)), are documented under Apps > App Eligibility. See [`Query Rejection Reasons`](find-rejection-reasons.md) and [`Get Rejection Reasons`](gets-rejection-reasons-by-id.md).
 
 ##### Example
 

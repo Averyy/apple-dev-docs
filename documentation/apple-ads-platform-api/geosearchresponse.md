@@ -16,7 +16,7 @@ object GeoSearchResponse
 
 #### Discussion
 
-`GeoSearchResponse` is the response envelope for both `GET /v1/search/geo` and `POST /v1/search/geo`. The `result` array contains [`SearchEntity`](searchentity.md) objects sorted alphabetically by `displayName`. To determine how many pages of results are available and iterate using `offset`, use the `pagination.totalCount` value.
+The `GeoSearchResponse` object is the response envelope for both `GET /v1/search/geo` ([`Search Geo Locations`](searches-for-a-list-of-geo-locations.md)) and `POST /v1/search/geo` ([`Query Geo Locations`](gets-a-list-of-geo-locations.md)). The `result` array contains [`SearchEntity`](searchentity.md) objects sorted alphabetically by `displayName`. To determine how many pages of results are available and iterate using `offset`, use the `pagination.totalCount` value.
 
 Each `SearchEntity` in the array includes `id` (numeric string, use as targeting value in ad group `targetingDimensions`), `legacyId` (pipe-delimited hierarchy for human reference), `entity` type, localized `displayName`, `countryOrRegion`, `adminArea`, `locality`, `postalCode`, and an `eligibility` object scoped to the `supplySource` specified in the request. If `eligibility` is absent from the response, no restrictions apply for that supply source.
 

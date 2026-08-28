@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-Ad group-level metrics for BRANDS, inheriting all properties from `BrandsMetrics`.
+Ad group-level metrics for brands, inheriting all properties from `BrandsMetrics`.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -16,7 +16,7 @@ object BrandsAdGroupMetrics
 
 #### Discussion
 
-`BrandsAdGroupMetrics` extends [`BrandsMetrics`](brandsmetrics.md) with no additional fields. It is the metrics object embedded in BRANDS ad group report rows.
+The `BrandsAdGroupMetrics` extends [`BrandsMetrics`](brandsmetrics.md) with no additional fields. It’s the metrics object embedded in brands ad group report rows.
 
 ## Properties
 

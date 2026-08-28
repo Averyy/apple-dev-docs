@@ -16,9 +16,9 @@ object AssetEligibility
 
 #### Discussion
 
-`AssetEligibility` captures the policy evaluation result for an asset. `Asset` responses always include it (unless excluded via the `fields` parameter), and it describes whether and where the asset can be used for ad serving.
+The `AssetEligibility` object captures the policy evaluation result for an asset. The `Asset` responses always include it (unless excluded via the `fields` parameter), and it describes whether and where the asset can be used for ad serving.
 
-Check `AssetEligibility` before including an asset in a creative. You cannot use assets with `INELIGIBLE` or `PENDING` status in any ad unit. Assets with `LIMITED` status can serve in some placements or markets. See [`AssetEligibilityStatus`](asseteligibilitystatus.md) for the full list of status values.
+Check `AssetEligibility` before including an asset in a creative. You can’t use assets with `INELIGIBLE` or `PENDING` status in any ad unit. Assets with `LIMITED` status can serve in some placements or markets. See [`AssetEligibilityStatus`](asseteligibilitystatus.md) for the full list of status values.
 
 ##### Example
 

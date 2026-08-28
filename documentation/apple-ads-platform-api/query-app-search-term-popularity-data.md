@@ -12,31 +12,37 @@ Retrieve the relative search volume ranking of search terms for a given App Stor
 
 This endpoint returns the most popular search terms for a given App Store genre and country, showing top search terms by search volume. To discover high-volume terms to target during campaign setup, use this data.
 
-#### Request Body
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
-See [`SearchTermPopularityQueryRequest`](searchtermpopularityqueryrequest.md). The endpoint caps `pagination.pageSize` at 5000. [`SearchTermPopularityTimeRange`](searchtermpopularitytimerange.md) documents timezone and granularity rules. `SearchTermPopularityQueryRequest`’s `sorting` field documents sort field limits.
+##### Filterable Fields
 
-#### Response Body
+| Field | Type | Operators | Description |
+| --- | --- | --- | --- |
+| `week` | string | `IN` | Available only when `granularity` is `WEEKLY_SUN_SAT`. Values must be valid week boundary dates. |
+| `month` | string | `IN` | Available only when `granularity` is `MONTHLY`. |
+| `countryOrRegion` | string | `EQUALS`, `IN` | App Store country or region code to scope results to. Use `IN` with an array to query multiple countries or regions in one request. |
+| `genre` | string | `EQUALS`, `IN` | App Store genre name (for example, `PRODUCTIVITY_UTILITIES`, `TRAVEL`). See [`SearchTermPopularityQueryRequest`](searchtermpopularityqueryrequest.md) for the enumeration of allowed values. |
+| `searchTerm` | string | `EQUALS`, `IN`, `CONTAINS`, `STARTS_WITH` | The search term text. `CONTAINS` and `STARTS_WITH` match case-insensitively. |
+| `rankInGenre` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | `BETWEEN` requires exactly two values. |
+| `searchPopularityInGenre` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | `BETWEEN` requires exactly two values. |
+| `searchPopularity1to100` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | `BETWEEN` requires exactly two values. |
+| `searchPopularity1to5` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | `BETWEEN` requires exactly two values. |
 
-##### Mandatory Dimensions
+##### Sortable Fields
 
-The endpoint always includes the following dimension fields in results:
+All fields are sortable. There is a maximum two sort fields per request.
 
-| Field | Description |
-| --- | --- |
-| `countryOrRegion` | The App Store country or region for the search volume data. |
-| `genre` | The App Store genre category. |
-| `searchTerm` | The search term text. |
-| `week` or `month` | The date field corresponding to the selected granularity. |
-
-The endpoint includes the following dimension fields only when requested.
-
-| Field | Description |
-| --- | --- |
-| `rankInGenre` | The search term’s rank by volume within the genre of the given App Store country or region. |
-| `searchPopularityInGenre` | Relative popularity score within the genre (1–100) of the given App Store country or region. |
-| `searchPopularity1to100` | Popularity score on a 1–100 scale across all genres within the country or region. `100` = most popular overall. |
-| `searchPopularity1to5` | Relative popularity on a 1–5 scale across all genres of the given App Store country or region. |
+| Field | Sort Directions | Default |
+| --- | --- | --- |
+| `week` | `ASC`, `DESC` | — |
+| `month` | `ASC`, `DESC` | — |
+| `countryOrRegion` | `ASC`, `DESC` | — |
+| `genre` | `ASC`, `DESC` | 1st: `ASC` |
+| `searchTerm` | `ASC`, `DESC` | — |
+| `rankInGenre` | `ASC`, `DESC` | 2nd: `ASC` |
+| `searchPopularityInGenre` | `ASC`, `DESC` | — |
+| `searchPopularity1to100` | `ASC`, `DESC` | — |
+| `searchPopularity1to5` | `ASC`, `DESC` | — |
 
 #### Payload Examples
 
@@ -89,7 +95,7 @@ POST /v1/insights/apps/search-term-popularity/query
  "result": {
    "rows": [
      {
-       "week": "2025-01-05",
+       "week": "2025-01-12",
        "countryOrRegion": "US",
        "genre": "PRODUCTIVITY_UTILITIES",
        "searchTerm": "task manager",
@@ -99,7 +105,7 @@ POST /v1/insights/apps/search-term-popularity/query
        "searchPopularity1to5": 5
      },
      {
-       "week": "2025-01-05",
+       "week": "2025-01-12",
        "countryOrRegion": "US",
        "genre": "PRODUCTIVITY_UTILITIES",
        "searchTerm": "to do list app",
@@ -109,7 +115,7 @@ POST /v1/insights/apps/search-term-popularity/query
        "searchPopularity1to5": 5
      },
      {
-       "week": "2025-01-05",
+       "week": "2025-01-12",
        "countryOrRegion": "US",
        "genre": "PRODUCTIVITY_UTILITIES",
        "searchTerm": "calendar planner",

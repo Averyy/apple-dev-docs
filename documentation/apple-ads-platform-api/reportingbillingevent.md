@@ -16,7 +16,7 @@ string ReportingBillingEvent
 
 #### Discussion
 
-`ReportingBillingEvent` mirrors [`BillingEvent`](billingevent.md) for use in report rows and filters. See [`BillingEvent`](billingevent.md) for the full description of each value.
+The `ReportingBillingEvent` mirrors [`BillingEvent`](billingevent.md) for use in report rows and filters. See [`BillingEvent`](billingevent.md) for the full description of each value.
 
 ## See Also
 

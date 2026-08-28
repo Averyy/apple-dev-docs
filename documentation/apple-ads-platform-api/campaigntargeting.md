@@ -16,9 +16,9 @@ object CampaignTargeting
 
 #### Discussion
 
-`CampaignTargeting` defines where a campaign is eligible to serve ads, using three `TargetingData` fields: `supplySource`, `supplyPlacement`, and `countryOrRegion`.
+The `CampaignTargeting` object defines where a campaign is eligible to serve ads, using three `TargetingData` fields: `supplySource`, `supplyPlacement`, and `countryOrRegion`.
 
-`supplySource`, `supplyPlacement`, and `countryOrRegion` are all include-only at the campaign level: the `exclude` array is not supported for any of the three dimensions. Use [`CampaignTargetingCreate`](campaigntargetingcreate.md) to supply these values when creating a new campaign. Once the campaign exists, all three dimensions remain mutable via [`CampaignTargetingUpdate`](campaigntargetingupdate.md). After campaign-level targeting is in place, [`AdGroupTargeting`](adgrouptargeting.md) provides further audience and delivery refinements at the ad group level.
+The `supplySource`, `supplyPlacement`, and `countryOrRegion` fields are all include-only at the campaign level: the `exclude` array isn’t supported for any of the three dimensions. Use [`CampaignTargetingCreate`](campaigntargetingcreate.md) to supply these values when creating a new campaign. Once the campaign exists, all three dimensions remain mutable via [`CampaignTargetingUpdate`](campaigntargetingupdate.md). After campaign-level targeting is in place, [`AdGroupTargeting`](adgrouptargeting.md) provides further audience and delivery refinements at the ad group level.
 
 ##### Example
 

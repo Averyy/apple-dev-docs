@@ -16,6 +16,16 @@ The endpoint returns results as `BrandRejectionReasonResponse` objects, each con
 
 The request supports standard `filters`, `sorting`, and `pagination` via `PolicyAssignmentQueryRequest`. Filter by `promotedObjectId` to scope results to a specific brand. The endpoint returns only non-deleted rejection reasons.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `promotedObjectId` | string | `IN` |  | Scope results to a specific brand. The only field supported by `PolicyAssignmentQueryRequest`. |
+
+The request body is a [`QueryRequest`](queryrequest.md)-shaped object composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Request Body
 
 `PolicyAssignmentQueryRequest`

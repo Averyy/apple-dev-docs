@@ -16,9 +16,9 @@ object BrandsReportingAdGroup
 
 #### Discussion
 
-`BrandsReportingAdGroup` is the ad group metadata object embedded in `BRANDS` ad group report rows. It captures configuration at report time, including the `pricingModel`, `bidStrategy`, and the `BRANDS`-specific `targeting` projection with supply placement and location group details.
+The `BrandsReportingAdGroup` object is the ad group metadata embedded in `brands` ad group report rows. It captures configuration at report time, including the `pricingModel`, `bidStrategy`, and the `brands`-specific `targeting` projection with supply placement and location group details.
 
-The `campaign` field embeds a lightweight `ReportingCampaignMin` for parent campaign context. The system populates the `BRANDS` dimension fields (`deviceClass`, `locationId`, `supplyPlacement`) based on the `groupBy` dimensions in the report request. Note that keyword and search term entities exclude `supplyPlacement` and `locationId` as `groupBy` options.
+The `campaign` field embeds a lightweight `ReportingCampaignMin` for parent campaign context. The system populates the `brands` dimension fields (`deviceClass`, `locationId`, `supplyPlacement`) based on the `groupBy` dimensions in the report request. Note that keyword and search term entities exclude `supplyPlacement` and `locationId` as `groupBy` options.
 
 ##### Example
 

@@ -16,9 +16,9 @@ object BrandsReportingCampaign
 
 #### Discussion
 
-`BrandsReportingCampaign` is the campaign metadata object embedded in `BRANDS` campaign report rows. It captures the campaign’s full configuration at report time: identity, budget (`dailyBudget`), bid strategy, billing event, and the `BrandsTargetingProjection` snapshot of active supply placement and location targeting.
+The `BrandsReportingCampaign` object is the campaign metadata embedded in `brands` campaign report rows. It captures the campaign’s full configuration at report time: identity, budget (`dailyBudget`), bid strategy, billing event, and the `BrandsTargetingProjection` snapshot of active supply placement and location targeting.
 
-`promotedObjectType` is always `BUSINESS_BRAND` for Maps-based campaigns. The system populates the `BRANDS` dimension fields (`deviceClass`, `locationId`, `supplyPlacement`) based on the `groupBy` dimensions in the report request.
+The `promotedObjectType` field is always `BUSINESS_BRAND` for Maps-based campaigns. The system populates the `brands` dimension fields (`deviceClass`, `locationId`, `supplyPlacement`) based on the `groupBy` dimensions in the report request.
 
 ##### Example
 

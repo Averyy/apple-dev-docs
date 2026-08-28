@@ -18,7 +18,7 @@ object CampaignCreate.InvoiceDetail
 
 Supply these contact and reference details when creating a campaign or budget order on a Line of Credit account. Line of Credit accounts require this object. Pay As You Go accounts can omit it.
 
-`clientName` and `orderNumber` are required for agency-type accounts.
+The `clientName` and `orderNumber` fields are required for agency-type accounts.
 
 See [`InvoiceDetailCreate`](invoicedetailcreate.md) for the full field reference.
 

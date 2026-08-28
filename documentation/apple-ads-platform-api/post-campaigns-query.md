@@ -12,6 +12,30 @@ Query campaigns using filters, sorting, and pagination.
 
 This endpoint queries campaigns using a standard `QueryRequest` body. An empty request body returns all campaigns for the ad account with default pagination.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | integer | `EQUALS`, `IN` | Yes | System-assigned unique identifier for the campaign. |
+| `name` | string | `EQUALS`, `IN`, `LIKE`, `STARTS_WITH`, `ENDS_WITH` | Yes | Campaign name. |
+| `status` | string (enum) | `EQUALS`, `IN` | Yes | Captures the advertiser’s intent for the campaign to serve. See [`CampaignStatus`](campaignstatus.md). |
+| `systemStatus` | string (enum) | `EQUALS`, `IN` | Yes | System-computed operational status reflecting the campaign’s serving state. See [`CampaignSystemStatus`](campaignsystemstatus.md). |
+| `systemStatusReasons` | array of strings | `CONTAINS_ANY`, `CONTAINS_ALL`, `NOT_CONTAINS_ANY`, `NOT_CONTAINS_ALL` | No | Reasons contributing to the current `systemStatus`. See [`CampaignSystemStatusReason`](campaignsystemstatusreason.md). |
+| `systemStatusLimitingReasons` | array of strings | `CONTAINS_ANY`, `CONTAINS_ALL`, `NOT_CONTAINS_ANY`, `NOT_CONTAINS_ALL` | No | Reasons limiting delivery below maximum potential. See [`CampaignSystemLimitedStatusReason`](campaignsystemlimitedstatusreason.md). |
+| `billingEvent` | string (enum) | `EQUALS`, `IN` | Yes | The event type that triggers a charge. See [`BillingEvent`](billingevent.md). |
+| `paymentModel` | string (enum) | `EQUALS`, `IN` | Yes | The payment model for the campaign. See [`PaymentModel`](paymentmodel.md). |
+| `promotedObjectType` | string (enum) | `EQUALS`, `NOT_EQUALS`, `IN`, `NOT_IN` | Yes | Whether the campaign promotes an App Store app or a brand. See [`PromotedObjectType`](promotedobjecttype.md). |
+| `promotedObjectId` | string | `EQUALS`, `NOT_EQUALS`, `IN`, `NOT_IN` | Yes | The identifier of the promoted entity. |
+| `startTime` | string (ISO 8601) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` | Yes | The scheduled start date and time of the campaign. |
+| `endTime` | string (ISO 8601) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` | Yes | The scheduled end date and time of the campaign. |
+| `creationTime` | string (ISO 8601) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` | Yes | Timestamp when the campaign was created. |
+| `modificationTime` | string (ISO 8601) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` | Yes | Timestamp of the last modification to the campaign. |
+| `deleted` | boolean | `EQUALS`, `IN` | Yes | Whether the campaign has been soft-deleted. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Payload Examples
 
 **Query for a Brand**:

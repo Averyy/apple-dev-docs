@@ -16,7 +16,7 @@ object KeywordQueryResponse
 
 #### Discussion
 
-`KeywordQueryResponse` is returned by the keyword query endpoint and contains the filtered, sorted, and paginated set of `Keyword` objects matching the request.
+The `KeywordQueryResponse` object is returned by the keyword query endpoint and contains the filtered, sorted, and paginated set of `Keyword` objects matching the request.
 
 To narrow results to a specific ad group, campaign, or set of keyword IDs, use the `QueryRequest` body with `filters`, `sorting`, and `pagination`. Multiple filter conditions are combined with AND logic.
 
@@ -77,7 +77,7 @@ To narrow results to a specific ad group, campaign, or set of keyword IDs, use t
 ## See Also
 
 - [object Keyword](keyword.md)
-  The targeting unit that connects a user’s App Store search query to an ad group’s ads.
+  The targeting unit that connects a user’s search query to the ad group’s ads.
 - [object KeywordCreate](keywordcreate.md)
   The request body for creating a new Keyword object.
 - [object KeywordUpdate](keywordupdate.md)

@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-Campaign metadata for APPS report rows.
+Campaign metadata for apps report rows.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -16,9 +16,9 @@ object AppsReportingCampaign
 
 #### Discussion
 
-`AppsReportingCampaign` is the campaign metadata object embedded in APPS campaign report rows. It captures the campaign’s identity, operational status, budget, bid strategy, and targeting projection at report time.
+The `AppsReportingCampaign` object is the campaign metadata embedded in apps campaign report rows. It captures the campaign’s identity, operational status, budget, bid strategy, and targeting projection at report time.
 
-The `targeting` field contains an `AppsTargetingProjection` snapshot of the campaign’s supply placement and App Store countries or regions targeted at the time of the report. The `groupBy` dimensions specified in the report request determine the values of the dimension fields (`countryOrRegion`, `deviceClass`, `gender`, `ageRange`, etc.).
+The `groupBy` dimensions specified in the report request determine the values of the dimension fields (`countryOrRegion`, `deviceClass`, `gender`, `ageRange`, etc.).
 
 ##### Example
 
@@ -113,7 +113,7 @@ The `targeting` field contains an `AppsTargetingProjection` snapshot of the camp
 - `systemStatusReasons` ([CampaignSystemStatusReason]): System-applied reasons contributing to the current `systemStatus`. See [`CampaignSystemStatusReason`](campaignsystemstatusreason.md) for possible values.
 - `billingEvent` (AppsReportingCampaign.BillingEvent): Possible values: `TAPS`, `IMPRESSIONS`.
 - `systemStatusLimitingReasons` ([string]): System-applied reasons limiting delivery below maximum potential. See [`CampaignSystemLimitedStatusReason`](campaignsystemlimitedstatusreason.md) for possible values.
-- `targeting` (AppsTargetingProjection): See [`AppsTargetingProjection`](appstargetingprojection.md) for details.
+- `targeting` (AppsTargetingProjection): The `targeting` field contains an `AppsTargetingProjection` snapshot of the campaign’s supply placement and App Store countries or regions targeted at the time of the report. See [`AppsTargetingProjection`](appstargetingprojection.md) for details.
 - `dailyBudget` (ReportingMoney): See [`ReportingMoney`](reportingmoney.md) for details.
 - `startTime` (date-time): Campaign start time.
 - `endTime` (date-time): Campaign end time.
@@ -131,23 +131,23 @@ The `targeting` field contains an `AppsTargetingProjection` snapshot of the camp
 ## See Also
 
 - [object AppsReportingRequest](appsreportingrequest.md)
-  Request body for APPS reporting queries.
+  Request body for apps reporting queries.
 - [object AppsReportingAdGroup](appsreportingadgroup.md)
-  Ad group metadata for APPS report rows.
+  Ad group metadata for apps report rows.
 - [object AppsReportingAd](appsreportingad.md)
-  Ad metadata for APPS report rows.
+  Ad metadata for apps report rows.
 - [object AppsReportingCreative](appsreportingcreative.md)
-  Creative metadata for APPS ads.
+  Creative metadata for apps ads.
 - [object AppsCampaignReportResponse](appscampaignreportresponse.md)
-  The top-level response envelope for APPS campaign-level reports.
+  The top-level response envelope for apps campaign-level reports.
 - [object AppsCampaignReportRow](appscampaignreportrow.md)
-  A single row in an APPS campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
+  A single row in an apps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
 - [object AppsCampaignReportSummary](appscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps campaign report.
 - [object AppsCampaignResultContainer](appscampaignresultcontainer.md)
   Wraps the array of Apps campaign report rows along with a grand-total summary.
 - [object AppsAdGroupReportResponse](appsadgroupreportresponse.md)
-  The top-level response envelope for APPS ad group reports.
+  The top-level response envelope for apps ad group reports.
 - [object AppsAdGroupReportRow](appsadgroupreportrow.md)
   A single row in an Apps ad group report, containing ad group metadata, total metrics, and optional granular time-series metrics.
 - [object AppsAdGroupReportSummary](appsadgroupreportsummary.md)
@@ -155,7 +155,7 @@ The `targeting` field contains an `AppsTargetingProjection` snapshot of the camp
 - [object AppsAdGroupResultContainer](appsadgroupresultcontainer.md)
   Wraps the array of Apps ad group report rows along with a grand-total summary.
 - [object AppsAdReportResponse](appsadreportresponse.md)
-  The top-level response envelope for APPS ad-level reports.
+  The top-level response envelope for apps ad-level reports.
 - [object AppsAdReportRow](appsadreportrow.md)
   A single row in an Apps ad-level report, containing ad metadata, total metrics, and optional granular time-series metrics.
 - [object AppsAdReportSummary](appsadreportsummary.md)

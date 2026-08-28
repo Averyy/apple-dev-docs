@@ -16,7 +16,7 @@ string BidStrategyUpdate.BidStrategyType
 
 #### Discussion
 
-`MANUAL_CPT` and `MANUAL_CPM` are manual bidding strategies with a fixed bid. `MAX_CONVERSIONS` and `MAX_ENGAGEMENTS` are automated strategies that adjust bids to maximize conversions or engagements.
+The `MANUAL_CPT` and `MANUAL_CPM` values are manual bidding strategies with a fixed bid. The `MAX_CONVERSIONS` and `MAX_ENGAGEMENTS` values are automated strategies that adjust bids to maximize conversions or engagements.
 
 
 ---

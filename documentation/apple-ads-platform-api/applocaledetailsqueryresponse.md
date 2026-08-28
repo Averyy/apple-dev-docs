@@ -63,9 +63,9 @@ The `pagination` object contains the following fields:
 
 | Field | Description |
 | --- | --- |
-| `pageSize` | Number of results per page. |
-| `offset` | Zero-based offset of the first result. |
-| `totalCount` | Total number of matching records. Only populated when the request sends `fetchTotalCount: true`. |
+| `pageSize` | Number of results per page |
+| `offset` | Zero-based offset of the first result |
+| `totalCount` | Total number of matching records. Only populated when the request sends `fetchTotalCount: true` |
 
 ## Properties
 

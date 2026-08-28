@@ -61,8 +61,6 @@ For more information, see [`Keychain Services Programming Guide`](https://develo
 - [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

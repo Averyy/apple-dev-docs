@@ -12,7 +12,7 @@ Create a new ad group within a campaign, defining targeting, bid strategy, and s
 
 This endpoint creates an ad group that belongs to a single campaign via `campaignId`, which is required at creation and immutable afterward. The ad group defines its own targeting, bid strategy, and schedule, scoped within the campaign’s supply placement and budget.
 
-`pricingModel` is also required: use `CPT` for tap-billed campaigns and `CPM` for impression-billed campaigns using the `MANUAL_CPM` bid strategy.
+The `pricingModel` field is also required: use `CPT` for tap-billed campaigns and `CPM` for impression-billed campaigns using the `MANUAL_CPM` bid strategy.
 
 #### Payload Examples
 
@@ -121,7 +121,7 @@ POST /v1/adgroups
 
 **App Store - Maximize Conversions**:
 
-An App Store ad group using the `MAX_CONVERSIONS` automated bid strategy, which pairs with the `INSTALL` goal to optimize bids toward app installs. `bid` is optional and acts as a ceiling rather than a fixed price.
+An App Store ad group using the `MAX_CONVERSIONS` automated bid strategy, which pairs with the `INSTALL` goal to optimize bids toward app installs. The `bid` field is optional and acts as a ceiling rather than a fixed price.
 
 ##### Request
 
@@ -214,7 +214,7 @@ POST /v1/adgroups
 
 **Apple Maps - Automated**:
 
-An automated ad group for an Apple Maps campaign. `automatedKeywordsOptIn` is `true`, enabling Search Match to automatically identify and target relevant search queries. Separately, omitting `locationGroup` means the ad group defaults to targeting all of the brand’s locations.
+An automated ad group for an Apple Maps campaign. The `automatedKeywordsOptIn` field is `true`, enabling Search Match to automatically identify and target relevant search queries. Separately, omitting `locationGroup` means the ad group defaults to targeting all of the brand’s locations.
 
 ##### Request
 
@@ -425,7 +425,7 @@ POST /v1/adgroups
 
 **Apple Maps - Daypart**:
 
-An Apple Maps ad group using daypart targeting to restrict delivery to specific hours. Supported for `BUSINESS_BRAND` campaigns per the `AdGroupTargetingCreate` schema. `daypart` values are hourly slot integers 0–167 (0 = Sunday 12:00 AM, 24 = Monday 12:00 AM, and so on).
+An Apple Maps ad group using daypart targeting to restrict delivery to specific hours. Supported for `BUSINESS_BRAND` campaigns per the `AdGroupTargetingCreate` schema. The `daypart` values are hourly slot integers 0–167 (0 = Sunday 12:00 AM, 24 = Monday 12:00 AM, and so on).
 
 ##### Request
 

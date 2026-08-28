@@ -14,6 +14,23 @@ This endpoint retrieves a paginated list of physical business locations associat
 
 Locations are registered entities that represent physical places of business, such as retail stores, restaurants, and service centers. An empty request body returns all locations with default pagination. Filter by `brandId` to retrieve locations for a specific brand.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `brandId` | string | `EQUALS` |  | Filter by the brand the location belongs to. |
+| `name` | string | `EQUALS`, `STARTS_WITH` | Yes | Filter by location display name or prefix. |
+| `status` | string (enum) | `EQUALS`, `IN` |  | Filter by operational status: `OPEN`, `OPENING_SOON`, `CLOSED`, `MOVED`, `TEMPORARILY_CLOSED`. |
+| `address.countryOrRegion` | string | `EQUALS`, `IN` |  | Filter by ISO 3166-1 alpha-2 country or region code. |
+| `address.adminArea` | string | `EQUALS`, `IN` |  | Filter by state or province name. |
+| `address.locality` | string | `EQUALS`, `STARTS_WITH` |  | Filter by city or town name. |
+| `address.postalCode` | string | `EQUALS`, `IN` |  | Filter by postal or ZIP code. |
+| `eligibility.status` | string (enum) | `EQUALS`, `IN` |  | Filter by eligibility status: `ELIGIBLE`, `INELIGIBLE`, `LIMITED`, `PENDING`, `UNDEFINED`. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Request Body
 
 See [`QueryRequest`](queryrequest.md).
@@ -30,19 +47,6 @@ Each location record returned by this endpoint includes the following fields:
 | `address.postalCode` | string | Postal or ZIP code. |
 | `status` | string | Operational status: `OPEN`, `OPENING_SOON`, `CLOSED`, `MOVED`, `TEMPORARILY_CLOSED`. |
 | `eligibility` | object | System-managed eligibility for ad targeting. |
-
-Narrow results using any of these fields and their supported operators:
-
-| Field | Operators | Description |
-| --- | --- | --- |
-| `brandId` | `EQUALS` | Filter by the brand the location belongs to. |
-| `address.countryOrRegion` | `EQUALS`, `IN` | Filter by country or region code. |
-| `address.adminArea` | `EQUALS`, `IN` | Filter by state or province name. |
-| `address.locality` | `EQUALS`, `STARTS_WITH` | Filter by city or town name. |
-| `address.postalCode` | `EQUALS`, `IN` | Filter by postal or ZIP code. |
-| `eligibility.status` | `EQUALS`, `IN` | Filter by eligibility status: `ELIGIBLE`, `INELIGIBLE`, `LIMITED`, `PENDING`, `UNDEFINED`. |
-| `status` | `EQUALS`, `IN` | Filter by operational status. |
-| `name` | `EQUALS`, `STARTS_WITH` | Filter by location display name or prefix. |
 
 A few limitations apply to querying locations and using the results for targeting:
 

@@ -16,7 +16,7 @@ object BrandsTargetingProjection
 
 #### Discussion
 
-`BrandsTargetingProjection` appears in `BRANDS` report rows, capturing the targeting configuration at the time of the report. All fields use `IncludeExclude` objects containing an `include` array of string values.
+The `BrandsTargetingProjection` appears in `brands` report rows, capturing the targeting configuration at the time of the report. All fields use `IncludeExclude` objects containing an `include` array of string values.
 
 ##### Example
 

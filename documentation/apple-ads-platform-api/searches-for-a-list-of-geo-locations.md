@@ -10,7 +10,7 @@ Search for geographic locations for use in ad group geo targeting.
 
 #### Discussion
 
-This endpoint returns a list of geographic locations matching the search criteria. To discover valid geo location identifiers by name before assigning targets to an ad group, use this endpoint. For ID-based lookup of known locations, use the POST endpoint `POST /v1/search/geo` instead.
+This endpoint returns a list of geographic locations matching the search criteria. To discover valid geo location identifiers by name before assigning targets to an ad group, use this endpoint. For ID-based lookup of known locations, use the POST endpoint `POST /v1/search/geo` ([`Query Geo Locations`](gets-a-list-of-geo-locations.md)) instead.
 
 The API sorts results alphabetically by `displayName` and paginates them. Each result includes a `legacyId`, which is a pipe-delimited string encoding the full geographic hierarchy (such as `US|CA|San Francisco`), and an `eligibility` object scoped to the requested `supplySource`.
 

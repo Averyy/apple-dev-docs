@@ -16,7 +16,7 @@ object LocationResponse
 
 #### Discussion
 
-`LocationResponse` is the top-level envelope returned by [`Get a Location`](get-location-by-id.md). On success, `result` contains a single [`Location`](location.md) object representing a physical brand location sourced from Apple Maps. On failure (for example, 404 Not Found), the response contains only the `error` object. The response omits the `result` key entirely rather than setting it to `null`.
+The `LocationResponse` object is the top-level envelope returned by [`Get a Location`](get-location-by-id.md). On success, `result` contains a single [`Location`](location.md) object representing a physical brand location sourced from Apple Maps. On failure (for example, 404 Not Found), the response contains only the `error` object. The response omits the `result` key entirely rather than setting it to `null`.
 
 ##### Example
 

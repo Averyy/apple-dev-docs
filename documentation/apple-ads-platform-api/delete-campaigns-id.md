@@ -10,9 +10,9 @@ Soft-delete a campaign by its unique identifier, cascading to its ad groups, key
 
 #### Discussion
 
-This endpoint deletes a campaign by its ID. The campaign is soft-deleted: it is marked with `deleted: true` and excluded from query results by default, but the record and all its fields are preserved.
+This endpoint deletes a campaign by its ID. The campaign is soft-deleted: it’s marked with `deleted: true` and excluded from query results by default, but the record and all its fields are preserved.
 
-After deletion, the query API will no longer include the deleted campaign by default. To retrieve deleted campaigns via the query API, pass an explicit filter with `deleted IN [true, false]`. To confirm deletion, use `GET /v1/campaigns/{id}` and verify that `Campaign.deleted` is `true`. You can also check that `systemStatus` is `NOT_RUNNING` and that `systemStatusReasons` contains `DELETED_BY_USER`.
+After deletion, the query API will no longer include the deleted campaign by default. To retrieve deleted campaigns via the query API, pass an explicit filter with `deleted IN [true, false]`. To confirm deletion, use `GET /v1/campaigns/{id}` ([`Get a Campaign`](get-campaigns-_id_.md)) and verify that `Campaign.deleted` is `true`. You can also check that `systemStatus` is `NOT_RUNNING` and that `systemStatusReasons` contains `DELETED_BY_USER`.
 
 Keep the following in mind when relying on this endpoint’s soft-delete behavior:
 

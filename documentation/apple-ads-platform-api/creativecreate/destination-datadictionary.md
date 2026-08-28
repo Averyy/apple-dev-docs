@@ -16,7 +16,7 @@ object CreativeCreate.Destination
 
 #### Discussion
 
-`destinationType` is immutable after creation and determines which fields `parameters` must include. For App Store destinations, provide `adamId` and optionally `productPageId`. See [`DestinationType`](destinationtype.md) and [`DestinationParameter`](destinationparameter.md) for details, and [`DestinationCreate`](destinationcreate.md) for the full field reference.
+The `destinationType` field is immutable after creation and determines which fields `parameters` must include. For App Store destinations, provide `adamId` and optionally `productPageId`. See [`DestinationType`](destinationtype.md) and [`DestinationParameter`](destinationparameter.md) for details, and [`DestinationCreate`](destinationcreate.md) for the full field reference.
 
 ## Properties
 

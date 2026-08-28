@@ -16,9 +16,9 @@ object SharedBudgetAssignmentCreate
 
 #### Discussion
 
-`SharedBudgetAssignmentCreate` is embedded in [`CampaignCreate`](campaigncreate.md) to link a campaign to one or more existing budget orders at creation time. The `sharedBudgets` field on `CampaignCreate` is an array. You can create a campaign with multiple budget order assignments, subject to the non-overlap rule: each budget order must have an `endTime` strictly before the next budget order’s `startTime`. You cannot combine an open-ended budget order with another.
+The `SharedBudgetAssignmentCreate` object is embedded in [`CampaignCreate`](campaigncreate.md) to link a campaign to one or more existing budget orders at creation time. The `sharedBudgets` field on `CampaignCreate` is an array. You can create a campaign with multiple budget order assignments, subject to the non-overlap rule: each budget order must have an `endTime` strictly before the next budget order’s `startTime`. You can’t combine an open-ended budget order with another.
 
-Every campaign requires a `dailyBudget` regardless of whether it has shared budget assignments. Both controls function independently: `dailyBudget` caps daily spending while each shared budget caps spending over its flight period.
+Every campaign requires a `dailyBudget` regardless of whether it has shared budget assignments. Both controls function independently: the `dailyBudget` field caps daily spending. Each shared budget caps spending over its flight period.
 
 ##### Example
 

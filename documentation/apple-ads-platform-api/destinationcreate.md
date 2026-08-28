@@ -16,7 +16,7 @@ object DestinationCreate
 
 #### Discussion
 
-[`CreativeCreate`](creativecreate.md) embeds `DestinationCreate` to define where users go after tapping the ad.
+The [`CreativeCreate`](creativecreate.md) embeds `DestinationCreate` to define where users go after tapping the ad.
 
 ##### Example
 

@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: typealias
 
-The lifecycle state of a recommendation, indicating whether it is available to act on or has already been accepted or rejected.
+The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -16,7 +16,7 @@ string RecommendationState
 
 #### Discussion
 
-`RecommendationState` tracks the advertiser’s response to a recommendation. Only recommendations in `AVAILABLE` state can be acted on. Applying or dismissing a recommendation moves it to `APPLIED` or `DISMISSED`, respectively, and creates a corresponding history record.
+The `RecommendationState` tracks the advertiser’s response to a recommendation. Only recommendations in `AVAILABLE` state can be acted on. Applying or dismissing a recommendation moves it to `APPLIED` or `DISMISSED`, respectively, and creates a corresponding history record.
 
 To retrieve only actionable recommendations, use the `state` filter in query requests:
 

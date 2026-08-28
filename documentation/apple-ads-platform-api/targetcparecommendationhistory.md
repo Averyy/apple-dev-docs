@@ -16,7 +16,7 @@ object TargetCpaRecommendationHistory
 
 #### Discussion
 
-`TargetCpaRecommendationHistory` is an immutable record that the system creates when you apply or dismiss a target CPA recommendation. The record preserves both `recommendedTargetCPA` and `appliedTargetCPA` (the value actually used, which may differ if the advertiser supplied a custom override).
+The `TargetCpaRecommendationHistory` object is an immutable record that the system creates when you apply or dismiss a target CPA recommendation. The record preserves both `recommendedTargetCPA` and `appliedTargetCPA` (the value actually used, which may differ if the advertiser supplied a custom override).
 
 ##### Example
 
@@ -106,7 +106,7 @@ object TargetCpaRecommendationHistory
 - [object TargetCpaRecommendation](targetcparecommendation.md)
   A target CPA recommendation for a campaign using a Maximize Conversions bid strategy.
 - [object DailyCapRecommendation](dailycaprecommendation.md)
-  A daily budget recommendation for a campaign that is frequently hitting its spending ceiling.
+  A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 - [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
 - [object ApplyTargetCpaRecommendation](applytargetcparecommendation.md)

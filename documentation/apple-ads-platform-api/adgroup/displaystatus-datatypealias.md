@@ -16,6 +16,8 @@ string AdGroup.DisplayStatus
 
 #### Discussion
 
+Because it rolls up the full hierarchy, an ad group can show `CAMPAIGN_ON_HOLD` even when its own status and system conditions are otherwise fine.
+
 ##### Example
 
 ```json

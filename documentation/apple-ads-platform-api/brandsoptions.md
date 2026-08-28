@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-Report options for brands promoted object campaigns.
+Reports options for brands promoted object campaigns.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -16,9 +16,9 @@ object BrandsOptions
 
 #### Discussion
 
-`BrandsOptions` configures optional row behavior for `BRANDS` report responses. The only supported value for `includeRows` is `GRAND_TOTAL`, which appends an aggregated summary row at the end of the result set. This totals all numeric metric fields across the full result page, giving a quick overview without requiring a client-side sum.
+The `BrandsOptions` configures optional row behavior for `brands` report responses. The only supported value for `includeRows` is `GRAND_TOTAL`, which appends an aggregated summary row at the end of the result set. This totals all numeric metric fields across the full result page, giving a quick overview without requiring a client-side sum.
 
-Note that `EMPTY_METRICS` (which is available for some other promoted object types) is explicitly unsupported for `BRANDS` entities. If you omit `BrandsOptions` entirely from the report request, the response returns only individual data rows with no summary.
+Note that `EMPTY_METRICS` (which is available for some other promoted object types) is explicitly unsupported for `brands` entities. If you omit `BrandsOptions` entirely from the report request, the response returns only individual data rows with no summary.
 
 ##### Example
 
@@ -30,7 +30,7 @@ Note that `EMPTY_METRICS` (which is available for some other promoted object typ
 
 ## Properties
 
-- `includeRows` ([string]): Row inclusion options for the report. Set to `GRAND_TOTAL` to append a summary row with aggregated totals across all result rows. `EMPTY_METRICS` is not a supported value for any `BRANDS` entity type.
+- `includeRows` ([string]): Row inclusion options for the report. Set to `GRAND_TOTAL` to append a summary row with aggregated totals across all result rows. `EMPTY_METRICS` is not a supported value for any `brands` entity type.
 
 ## See Also
 

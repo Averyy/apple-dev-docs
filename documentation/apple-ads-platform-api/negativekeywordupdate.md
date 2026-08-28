@@ -16,7 +16,7 @@ object NegativeKeywordUpdate
 
 #### Discussion
 
-`NegativeKeywordUpdate` is the request payload for modifying an existing negative keyword. An update request can include only `status`. The schema rejects `text` and `matchType`. Set `status` to `PAUSED` to temporarily allow traffic from the excluded term, or `ENABLED` to re-activate the exclusion.
+The `NegativeKeywordUpdate` object is the request payload for modifying an existing negative keyword. An update request can include only `status`. The schema rejects `text` and `matchType`. Set `status` to `PAUSED` to temporarily allow traffic from the excluded term, or `ENABLED` to re-activate the exclusion.
 
 ##### Example
 

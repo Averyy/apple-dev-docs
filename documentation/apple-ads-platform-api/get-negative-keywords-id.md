@@ -10,14 +10,14 @@ Retrieve a single negative keyword by its unique identifier.
 
 #### Discussion
 
-This endpoint retrieves a single negative keyword by its ID. The response indicates whether the record is a campaign-level or ad-group-level exclusion based on the presence of the `adGroupId` field. Campaign-level negatives do not include `adGroupId` in the response. Ad-group-level negatives include it.
+This endpoint retrieves a single negative keyword by its ID. The response indicates whether the record is a campaign-level or ad-group-level exclusion based on the presence of the `adGroupId` field. Campaign-level negatives don’t include `adGroupId` in the response. Ad-group-level negatives include it.
 
 The presence of `adGroupId` in the response distinguishes which level the negative keyword applies to.
 
 | Condition | Level |
 | --- | --- |
-| `adGroupId` is absent from the response | Campaign-level negative keyword: applies to all ad groups in the campaign. |
-| `adGroupId` is present in the response | Ad-group-level negative keyword: scoped to a single ad group. |
+| `adGroupId` is absent from the response | Campaign-level negative keyword: applies to all ad groups in the campaign |
+| `adGroupId` is present in the response | Ad-group-level negative keyword: scoped to a single ad group |
 
 Deleted negative keywords remain retrievable by ID and never expose a `bid` field.
 

@@ -16,7 +16,7 @@ string RegulationResponseValue
 
 #### Discussion
 
-`FRENCH_BUSINESS`, `NOT_FRENCH_BUSINESS`, `AGENT`, and `NOT_AGENT` all pair with the Sapin Law [`RegulationType`](regulationtype.md) variants (`CAMPAIGN_SAPIN_LAW`, `ORG_SAPIN_LAW`).
+The `FRENCH_BUSINESS`, `NOT_FRENCH_BUSINESS`, `AGENT`, and `NOT_AGENT` values all pair with the Sapin Law [`RegulationType`](regulationtype.md) variants (`CAMPAIGN_SAPIN_LAW`, `ORG_SAPIN_LAW`).
 
 ## See Also
 

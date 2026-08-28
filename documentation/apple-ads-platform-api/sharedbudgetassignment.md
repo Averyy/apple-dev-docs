@@ -16,13 +16,13 @@ object SharedBudgetAssignment
 
 #### Discussion
 
-`SharedBudgetAssignment` is an embedded object returned as part of a [`Campaign`](campaign.md). On Campaign, the field is `sharedBudgets`, an array of assignment objects each containing a `budgetId`.
+The `SharedBudgetAssignment` object is an embedded object returned as part of a [`Campaign`](campaign.md). On Campaign, the field is `sharedBudgets`, an array of assignment objects each containing a `budgetId`.
 
-A campaign can carry multiple budget order assignments as long as their schedules do not overlap.
+A campaign can carry multiple budget order assignments as long as their schedules don’t overlap.
 
-**Multiple budget orders per campaign:** A campaign can be assigned to multiple budget orders, subject to the non-overlap rule. Sort budget orders by `startTime`. Each budget order must have an `endTime` that is strictly before the next budget order’s `startTime`. An open-ended budget order (no `endTime`) cannot be combined with another budget order on the same campaign. The API rejects overlapping schedules with a `BUDGET_ORDER_OVERLAPPING` error.
+**Multiple budget orders per campaign:** A campaign can be assigned to multiple budget orders, subject to the non-overlap rule. Sort budget orders by `startTime`. Each budget order must have an `endTime` that is strictly before the next budget order’s `startTime`. An open-ended budget order (no `endTime`) can’t be combined with another budget order on the same campaign. The API rejects overlapping schedules with a `BUDGET_ORDER_OVERLAPPING` error.
 
-**No standalone operations:** `SharedBudgetAssignment` is not independently addressable. There are no standalone create, read, update, delete, or query operations for it. The API only returns assignment objects as part of a Campaign response.
+**No standalone operations:** The `SharedBudgetAssignment` isn’t independently addressable. There are no standalone create, read, update, delete, or query operations for it. The API only returns assignment objects as part of a Campaign response.
 
 ##### Example
 

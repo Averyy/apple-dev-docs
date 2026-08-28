@@ -10,7 +10,7 @@ Request, response, and data objects for managing keywords in ad group campaigns.
 ## Topics
 
 - [object Keyword](keyword.md)
-  The targeting unit that connects a user’s App Store search query to an ad group’s ads.
+  The targeting unit that connects a user’s search query to the ad group’s ads.
 - [object KeywordCreate](keywordcreate.md)
   The request body for creating a new Keyword object.
 - [object KeywordUpdate](keywordupdate.md)

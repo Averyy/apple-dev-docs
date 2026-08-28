@@ -16,7 +16,7 @@ object InvoiceDetail
 
 #### Discussion
 
-`InvoiceDetail` captures the billing contact information required for campaign or budget Line of Credit (`LOC`) payment model accounts. The API embeds it in `Campaign` and `SharedBudget` objects.
+The `InvoiceDetail` object captures the billing contact information required for campaign or budget Line of Credit (`LOC`) payment model accounts. The API embeds it in `Campaign` and `SharedBudget` objects.
 
 See [`InvoiceDetailCreate`](invoicedetailcreate.md) for which fields are required when creating a new record, and [`InvoiceDetailUpdate`](invoicedetailupdate.md) for update behavior.
 

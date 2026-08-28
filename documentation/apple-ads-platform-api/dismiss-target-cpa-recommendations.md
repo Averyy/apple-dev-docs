@@ -12,8 +12,6 @@ Dismiss one or more target CPA recommendations without changing the campaign’s
 
 Dismissing a target CPA recommendation just means you’ve reviewed it and decided not to apply it. The campaign’s target CPA stays unchanged, and the recommendation moves to `DISMISSED` state. The response is a history record that preserves the recommended value you passed on.
 
-#### Request Body
-
 #### Payload Examples
 
 This example dismisses a target CPA recommendation. The campaign’s target CPA stays the same, and the response confirms the recommendation is now in `DISMISSED` state, along with the recommended value that was passed on.

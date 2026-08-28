@@ -16,7 +16,7 @@ object BaseBulkRequest
 
 #### Discussion
 
-`BaseBulkRequest` is the common base type extended by all typed bulk request objects (`KeywordCreateBulkRequest`, `NegativeKeywordUpdateBulkRequest`, etc.) and by `BulkOperationRequest`. It carries the `allowPartialSuccess` flag that controls batch failure behavior.
+The `BaseBulkRequest` object is the common base type extended by all typed bulk request objects (`KeywordCreateBulkRequest`, `NegativeKeywordUpdateBulkRequest`, etc.) and by `BulkOperationRequest`. It carries the `allowPartialSuccess` flag that controls batch failure behavior.
 
 ##### Example
 

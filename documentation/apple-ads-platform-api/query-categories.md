@@ -12,7 +12,17 @@ Retrieve a paginated list of business categories using filters and sorting.
 
 This endpoint returns a paginated list of business categories from the Maps taxonomy. Categories classify brands and locations. You use them to scope targeting and discovery within Apple Maps campaigns. An empty request body returns all categories with default pagination.
 
-Each category has a `qualifiedId` using a dot to separate each level of the taxonomy hierarchy (for example, `dining.restaurant`). A single hierarchy level’s own name can itself contain underscores (for example, `association_or_organization`), so a dot always marks a hierarchy boundary, but an underscore does not. Use the `text` value on a `CATEGORY` match-type [`Keyword`](keyword.md) to target Apple Maps searches within that category.
+Each category has a `qualifiedId` using a dot to separate each level of the taxonomy hierarchy (for example, `dining.restaurant`). A single hierarchy level’s own name can itself contain underscores (for example, `association_or_organization`), so a dot always marks a hierarchy boundary, but an underscore doesn’t. Use the `text` value on a `CATEGORY` match-type [`Keyword`](keyword.md) to target Apple Maps searches within that category.
+
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `name` | string | `STARTS_WITH` |  | English display name of the category. |
+
+Only `name` is confirmed filterable; other category fields (`id`, `qualifiedId`, `eligibility`) aren’t documented as query filters. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 #### Request Body
 

@@ -16,6 +16,8 @@ string AppsReportingAd.Status
 
 #### Discussion
 
+This captures the advertiser’s run-or-pause choice as of the report’s generation, separate from the system-evaluated [`AppsReportingAd.SystemStatus`](appsreportingad/systemstatus-data.typealias.md) reported in the same row.
+
 ##### Example
 
 ```json

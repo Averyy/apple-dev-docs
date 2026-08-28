@@ -16,9 +16,9 @@ string AssetEligibilityStatus
 
 #### Discussion
 
-`status` on [`AssetEligibility`](asseteligibility.md) is always one of these values. Treat it as the first check before inspecting `blockedGroups` or `allowedGroups`.
+The `status` field on [`AssetEligibility`](asseteligibility.md) is always one of these values. Treat it as the first check before inspecting `blockedGroups` or `allowedGroups`.
 
-`INELIGIBLE` and `PENDING` mean you should not use the asset in a creative, regardless of what the constraint groups contain. `LIMITED` is the only value where you need to consult those groups for placement- and market-specific detail.
+The `INELIGIBLE` and `PENDING` statuses mean you should not use the asset in a creative, regardless of what the constraint groups contain. The `LIMITED` status is the only value where you need to consult those groups for placement- and market-specific detail.
 
 ## See Also
 

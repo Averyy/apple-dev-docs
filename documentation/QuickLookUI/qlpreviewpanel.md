@@ -78,8 +78,6 @@ You can’t subclass [`QLPreviewPanel`](qlpreviewpanel.md); you can, however, cu
 - [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

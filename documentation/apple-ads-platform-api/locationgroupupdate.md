@@ -16,7 +16,7 @@ object LocationGroupUpdate
 
 #### Discussion
 
-`LocationGroupUpdate` is the partial-update payload sent to [`Update Location Group`](update-location-group.md). All fields are optional. The system changes only the fields you provide. Omitted fields retain their current values.
+The `LocationGroupUpdate` object is the partial-update payload sent to [`Update Location Group`](update-location-group.md). All fields are optional. The system changes only the fields you provide. Omitted fields retain their current values.
 
 ##### Example
 
@@ -30,7 +30,7 @@ object LocationGroupUpdate
 ## Properties
 
 - `name` (string): Updated display name for the location group.
-- `groupType` (LocationGroupType): Type of location grouping. Values: `STATIC`, `DYNAMIC`. Immutable after creation. To switch a group between types, delete the group and recreate it.
+- `groupType` (LocationGroupType): Type of location grouping. Values: `STATIC`, `DYNAMIC`. Immutable after creation. To switch a group between types, delete the group and recreate it. See groupType Details in [`LocationGroupCreate`](locationgroupcreate.md).
 - `rules` ([Rule]): Updated array of [`Rule`](rule.md) objects for `DYNAMIC` groups. Replaces the existing rules and transitions `systemStatus` to `PENDING`. Wait for `systemStatus: VALID` before relying on the updated membership in active targeting.
 - `locationIds` ([string]): Updated array of location IDs for `STATIC` groups. Replaces the existing list and may briefly set `systemStatus` to `PENDING`.
 - `description` (string): Updated description of the location group.

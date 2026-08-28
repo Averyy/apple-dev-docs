@@ -14,6 +14,21 @@ This endpoint queries ad creatives using the standard `QueryRequest` structure. 
 
 By default, results exclude deleted ad creatives. To include deleted records, add an explicit filter on `"field": "deleted", "operator": "EQUALS", "value": true`.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | integer | `EQUALS`, `IN` | Yes (default) | Primary identifier of the ad creative. |
+| `adAccountId` | integer | `EQUALS` |  | Reference to the ad account. |
+| `name` | string | `EQUALS`, `STARTS_WITH` |  | Name of the ad creative. |
+| `creativeType` | string (enum) | `EQUALS`, `IN` |  | Type of ad creative. See [`CreativeType`](creativetype.md). |
+| `systemStatus` | string (enum) | `EQUALS`, `IN` |  | System validation status. |
+| `deleted` | boolean | `EQUALS` |  | Whether the ad creative has been deleted. Excluded by default unless explicitly filtered to `true`. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Payload Examples
 
 **Query by Creative Type**:

@@ -16,6 +16,8 @@ string AdGroup.SystemStatus
 
 #### Discussion
 
+This status reflects the ad group specifically, separate from the advertiser-set [`AdGroup.Status`](adgroup/status-data.typealias.md) and the system status of ads within it.
+
 ##### Example
 
 ```json

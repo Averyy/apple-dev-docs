@@ -16,7 +16,7 @@ object AdGroupResponse
 
 #### Discussion
 
-`AdGroupResponse` is the single-item response envelope returned by create, update, and delete ad group operations.
+The `AdGroupResponse` object is the single-item response envelope returned by create, update, and delete ad group operations.
 
 ##### Example
 

@@ -16,7 +16,7 @@ string ReportingPricingModel
 
 #### Discussion
 
-`ReportingPricingModel` mirrors [`PricingModel`](pricingmodel.md) for use in report rows and filters. See [`PricingModel`](pricingmodel.md) for the full description of each value.
+The `ReportingPricingModel` mirrors [`PricingModel`](pricingmodel.md) for use in report rows and filters. See [`PricingModel`](pricingmodel.md) for the full description of each value.
 
 ## See Also
 

@@ -16,6 +16,8 @@ object TargetingDataUpdate
 
 #### Discussion
 
+As with creation, most targeting dimensions only support `include`, so setting `exclude` on those has no effect when updating targeting.
+
 ##### Example
 
 ```json

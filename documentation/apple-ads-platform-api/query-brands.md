@@ -14,6 +14,17 @@ This endpoint returns a paginated list of brands accessible to the ad account. A
 
 The brand `id` returned in results corresponds to the `promotedObjectId` used when creating `BUSINESS_BRAND` campaigns.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | string | `EQUALS`, `IN` |  | ID of the brand. |
+| `eligibility.status` | string (enum) | `EQUALS` |  | Ad serving eligibility for the brand. See [`Eligibility`](eligibility.md). |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Request Body
 
 See [`QueryRequest`](queryrequest.md).

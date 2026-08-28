@@ -16,6 +16,8 @@ string BidStrategyCreate.BidStrategyGoal
 
 #### Discussion
 
+Set this alongside `bidStrategyType` when creating a bid strategy, matching `IMPRESSION` or `TAP` goals to the corresponding `MANUAL_CPM` or `MANUAL_CPT` type.
+
 ##### Example
 
 ```json

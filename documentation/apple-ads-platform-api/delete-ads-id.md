@@ -12,7 +12,7 @@ Soft-deletes an ad by its unique identifier, stopping delivery and removing it f
 
 This endpoint soft-deletes an ad by its ID. The system marks the ad `deleted: true`, and it immediately stops serving. The system preserves the record and excludes it from query results by default, but a GET request still returns the ad with `deleted: true`. A subsequent PUT request to update a deleted ad returns 404 Not Found.
 
-Deleting an ad does not affect the associated ad creative. The ad creative remains available, and new ads in any ad group can reference it. Deleting an ad does not affect delivery of other ads in the same ad group that reference the same or different ad creatives.
+Deleting an ad doesn’t affect the associated ad creative. The ad creative remains available, and new ads in any ad group can reference it. Deleting an ad doesn’t affect delivery of other ads in the same ad group that reference the same or different ad creatives.
 
 To change which ad creative an ad group serves, delete the existing ad and create a new ad with the desired `creativeId` in the same ad group.
 

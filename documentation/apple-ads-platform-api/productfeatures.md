@@ -18,7 +18,7 @@ string ProductFeatures
 
 The `productFeatures` array on an [`AdAccount`](adaccount.md) controls whether campaigns in that account run on App Store or Apple Maps. You set `productFeatures` when creating an ad account (it’s required on `AdAccountCreate`). It can’t be changed after the account is created. An account is authorized for App Store or Apple Maps, not both.
 
-An account configured for App Store advertising cannot create Apple Maps campaigns. An account configured for Apple Maps advertising cannot create App Store campaigns. If your organization needs campaigns on both App Store and Apple Maps, create a dedicated ad account for each.
+An account configured for App Store advertising can’t create Apple Maps campaigns. An account configured for Apple Maps advertising can’t create App Store campaigns. If your organization needs campaigns on both App Store and Apple Maps, create a dedicated ad account for each.
 
 ##### Enable App Store Advertising
 
@@ -54,9 +54,9 @@ To link a resource, use [`Create Ad Accounts`](post-ad-accounts.md) (`POST /v1/a
 }
 ```
 
-**Create: `POST /v1/ad-accounts`**
+**Create: `POST /v1/ad-accounts` ([`Create Ad Accounts`](post-ad-accounts.md))**
 
-`delegations` is optional but when included, each entry requires `resourceId` and `resourceType`.
+The `delegations` field is optional but when included, each entry requires `resourceId` and `resourceType`.
 
 ```json
 {
@@ -73,9 +73,9 @@ To link a resource, use [`Create Ad Accounts`](post-ad-accounts.md) (`POST /v1/a
 }
 ```
 
-**Update: `PUT /v1/ad-accounts/{id}`**
+**Update: `PUT /v1/ad-accounts/{id}` ([`Update Ad Accounts`](put-ad-accounts-_id_.md))**
 
-`delegations` is optional and nullable. Providing the array replaces all existing delegations in full. This endpoint does not change `productFeatures`, which is fixed at creation.
+The `delegations` field is optional and nullable. Providing the array replaces all existing delegations in full. This endpoint doesn’t change `productFeatures`, which is fixed at creation.
 
 ```json
 {
@@ -95,7 +95,7 @@ See [`DelegationCreate`](delegationcreate.md) and [`DelegationUpdate`](delegatio
 - [type OrgSystemStatus](orgsystemstatus.md)
   System-derived operational status of an organization.
 - [type OrgSystemStatusReason](orgsystemstatusreason.md)
-  Reasons that can cause an organization’s system status to be `INACTIVE`.
+  Reasons that can cause an organization’s system status to not be active.
 - [type AdAccountSystemStatus](adaccountsystemstatus.md)
   System-derived operational status of an ad account.
 - [type AdAccountSystemStatusReason](adaccountsystemstatusreason.md)

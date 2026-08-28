@@ -10,7 +10,7 @@ Soft-delete an asset by its UUID.
 
 #### Discussion
 
-This endpoint soft-deletes an asset. You can delete only assets that have been uploaded. [`Query Assets`](query-assets.md) excludes deleted assets from results by default, but [`Get Asset`](get-asset-by-id.md) can still retrieve them with `deleted: true`. Attempting to delete an asset that is already deleted returns 404.
+This endpoint soft-deletes an asset. You can delete only assets that have been uploaded. The [`Query Assets`](query-assets.md) excludes deleted assets from results by default, but [`Get Asset`](get-asset-by-id.md) can still retrieve them with `deleted: true`. Attempting to delete an asset that’s already deleted returns 404.
 
 #### Payload Examples
 

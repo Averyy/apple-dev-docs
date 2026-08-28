@@ -16,7 +16,7 @@ object Error
 
 #### Discussion
 
-`Error` is the standard error envelope that the API returns when a request fails.
+The `Error` object is the standard error envelope that the API returns when a request fails.
 
 Change History endpoints use a separate, ChangeHistory-specific error object, [`ErrorMessage`](errormessage.md), whose `code` is a closed enum (`BAD_REQUEST`, `NOT_FOUND`, `NOT_AUTHED`) rather than the open string used here.
 

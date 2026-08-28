@@ -31,6 +31,8 @@ For example, here’s a `BETWEEN` filter on a campaign ID range:
 }
 ```
 
+Endpoints that accept a `RecommendationFilterCondition` are [`Query Daily Budget Recommendations`](query-daily-budget-recommendations.md), [`Query Target CPA Recommendations`](query-target-cpa-recommendations.md), [`Query Target CPA Suggestion`](query-target-cpa-suggestion.md), [`Query Category Suggestions`](query-category-suggestions.md), [`Query Keyword Suggestions`](query-keyword-suggestions.md), and [`Query Phrase Suggestions`](query-phrase-suggestions.md).
+
 ## See Also
 
 - [object RecommendationQueryRequest](recommendationqueryrequest.md)
@@ -44,7 +46,7 @@ For example, here’s a `BETWEEN` filter on a campaign ID range:
 - [object RecommendationFilterCondition](recommendationfiltercondition.md)
   A single filter condition used in a recommendation query request to narrow results.
 - [type RecommendationState](recommendationstate.md)
-  The lifecycle state of a recommendation, indicating whether it is available to act on or has already been accepted or rejected.
+  The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 - [type RecommendationStatus](recommendationstatus.md)
   The operational status of a recommendation record, independent of its lifecycle state.
 - [type RecommendationCategory](recommendationcategory.md)

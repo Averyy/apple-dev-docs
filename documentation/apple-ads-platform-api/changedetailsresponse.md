@@ -16,7 +16,7 @@ object ChangeDetailsResponse
 
 #### Discussion
 
-`ChangeDetailsResponse` is the response envelope returned by the change history detail endpoints. Use `pagination` to navigate large transaction responses.
+The `ChangeDetailsResponse` object is the response envelope returned by the change history detail endpoints. Use `pagination` to navigate large transaction responses.
 
 ##### Example
 

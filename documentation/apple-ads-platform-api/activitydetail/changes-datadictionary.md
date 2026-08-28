@@ -28,7 +28,7 @@ Each entry in the `changes` array describes a single field that changed during t
 }
 ```
 
-`changes` is the array field on the parent [`ActivityDetail`](activitydetail.md) object: `ChangeDetails` holds a `details` array of `ActivityDetail` objects, and each `ActivityDetail` groups the field-level changes that share a common activity context in this `changes` array.
+The `changes` field is the array field on the parent [`ActivityDetail`](activitydetail.md) object: `ChangeDetails` holds a `details` array of `ActivityDetail` objects, and each `ActivityDetail` groups the field-level changes that share a common activity context in this `changes` array.
 
 ## Properties
 

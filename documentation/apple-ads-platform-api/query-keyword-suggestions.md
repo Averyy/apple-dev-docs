@@ -12,7 +12,16 @@ Query keyword suggestions based on search terms and App Store countries or regio
 
 Each [`KeywordSuggestion`](keywordsuggestion.md) result contains `text` (the suggested keyword string) and `popularity` (a relative score). Sort by `popularity DESC` and use `pagination` to page through results.
 
-#### Request Body
+See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Description |
+| --- | --- | --- | --- |
+| `promotedObjectId` | string | `EQUALS` | Required. The app Adam ID. Keyword suggestions are scoped to the promoted app. |
+| `promotedObjectType` | string (enum) | `EQUALS` | Required. The type of promoted object. |
+| `terms` | array of strings | `IN` | Optional. Specific search terms to get suggestions for. |
+| `countriesOrRegions` | array of strings | `IN` | Optional. App Store country or region codes to scope results to. |
 
 #### Payload Examples
 

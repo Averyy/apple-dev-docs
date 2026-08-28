@@ -16,12 +16,12 @@ object SearchEntity
 
 #### Discussion
 
-`SearchEntity` is a single geographic location result returned by the geo search endpoints. It provides multiple identifiers for the same location: `id` (numeric) for use as a targeting value in `AdGroupTargeting`, and `legacyId` (pipe-delimited) for human-readable reference. The `entity` field classifies the geographic granularity from `Country` down to `PostalCode`.
+The `SearchEntity` object is a single geographic location result returned by the geo search endpoints. It provides multiple identifiers for the same location: `id` (numeric) for use as a targeting value in `AdGroupTargeting`, and `legacyId` (pipe-delimited) for human-readable reference. The `entity` field classifies the geographic granularity from `Country` down to `PostalCode`.
 
 The `eligibility` field indicates whether you can use the location for ads on the requested supply source.
 
 - If `eligibility` is absent from the response, no restrictions apply.
-- If it contains `blockedGroups`, the location has one or more blocking reasons for that supply source (e.g., low search volume, sparse coverage, or a hard-block condition), but the API still returns it with this data so the client can decide how to present it.
+- If it contains `blockedGroups`, the location has one or more blocking reasons for that supply source (for example, low search volume, sparse coverage, or a hard-block condition), but the API still returns it with this data so the client can decide how to present it.
 - The API scopes eligibility to the single `supplySource` specified in the request.
 - The response includes only `blockedGroups` matching that supply source.
 

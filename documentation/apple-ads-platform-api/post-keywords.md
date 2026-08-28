@@ -14,7 +14,7 @@ This endpoint creates one keyword per request. To create many keywords in a sing
 
 Creates a keyword in an ad group. Each keyword belongs to an ad group via `adGroupId`, which is required at creation and immutable afterward. The `text` field is the search term itself and is also immutable after creation. To change a keyword’s text, delete it and create a new one.
 
-Omitting `bid` or passing `null` on create defaults the keyword to the ad group’s bid strategy. This differs from [`Update a Keyword`](put-keywords-_id_.md), where `null` is not accepted for `bid`. See [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md) for the full explanation.
+Omitting `bid` or passing `null` on create defaults the keyword to the ad group’s bid strategy. This differs from [`Update a Keyword`](put-keywords-_id_.md), where `null` isn’t accepted for `bid`. See [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md) for the full explanation.
 
 #### Payload Examples
 

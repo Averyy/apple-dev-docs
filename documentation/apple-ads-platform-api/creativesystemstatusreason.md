@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: typealias
 
-A reason code explaining why an ad creative is not valid or is pending review.
+A reason code explaining why an ad creative isn’t valid or is pending review.
 
 **Availability**:
 - apple-ads-platform-api 1.0+

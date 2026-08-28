@@ -16,9 +16,9 @@ object AdCreate
 
 #### Discussion
 
-Creating an ad links an ad creative to an ad group with `POST /v1/ads`.
+Creating an ad links an ad creative to an ad group with `POST /v1/ads` ([`Create an Ad`](post-ads.md)).
 
-An ad cannot be enabled until its parent ad group and campaign are also enabled.
+An ad can’t be enabled until its parent ad group and campaign are also enabled.
 
 ##### Example
 

@@ -123,7 +123,7 @@ POST /v1/creatives
 
 **Apple Maps Creative**:
 
-Create an Apple Maps ad creative with localized promo text. The `creativeSpec` carries the brand content. `destination` is the post-tap Maps place card.
+Create an Apple Maps ad creative with localized promo text. The `creativeSpec` carries the brand content. The `destination` field is the post-tap Maps place card.
 
 ##### Request
 

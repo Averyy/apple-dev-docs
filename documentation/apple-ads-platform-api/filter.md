@@ -16,9 +16,11 @@ object Filter
 
 #### Discussion
 
-`Filter` specifies a single field-level filter condition for a reporting request. The `field` name must match a filterable field on the target entity (e.g., `localSpend`, `impressions`, `campaignId`). The `operator` determines the comparison type, and `value` supplies the comparison operand.
+The `Filter` specifies a single field-level filter condition for a reporting request. The `field` name must match a filterable field on the target entity (for example, `localSpend`, `impressions`, `campaignId`). The `operator` determines the comparison type, and `value` supplies the comparison operand.
 
-You can include multiple `Filter` objects in the `filters` array of a `AppsReportingRequest` or `BrandsReportingRequest` to narrow results by several criteria simultaneously. Supported operators vary by endpoint and field type: numeric fields support range operators like `GREATER_THAN` and `BETWEEN`, while string fields support `EQUALS`, `IN`, and pattern operators like `STARTS_WITH`.
+You can include multiple `Filter` objects in the `filters` array of a `AppsReportingRequest` or `BrandsReportingRequest` to narrow results by several criteria simultaneously. Supported operators vary by endpoint and field type: numeric fields support range operators like `GREATER_THAN` and `BETWEEN`. String fields support `EQUALS`, `IN`, and pattern operators like `STARTS_WITH`.
+
+Endpoints that accept a `Filter` are: [`Campaigns Report`](get-app-campaign-reports.md), [`Ad Groups Report`](get-app-ad-group-reports.md), [`Ads Report`](get-app-ad-reports.md), [`Keywords Report`](get-app-keyword-reports.md), [`Search Terms Report`](get-app-search-term-reports.md), [`Campaigns Report (Brands)`](get-brand-campaign-reports.md), [`Ad Groups Report (Brands)`](get-brand-ad-group-reports.md), [`Ads Report (Brands)`](get-brand-ad-reports.md), [`Keywords Report (Brands)`](get-brand-keyword-reports.md), [`Search Terms Report (Brands)`](get-brand-search-term-reports.md), [`Impression Share Query`](query-app-impression-share-data.md), and [`Search Term Popularity Query`](query-app-search-term-popularity-data.md).
 
 ##### Example
 
@@ -40,7 +42,7 @@ You can include multiple `Filter` objects in the `filters` array of a `AppsRepor
 
 ## Properties
 
-- `field` (string): The name of the field to filter on (e.g. localSpend, impressions).
+- `field` (string): The name of the field to filter on (for example, localSpend, impressions).
 - `operator` (string): Comparison operator. Supported operators (may vary by endpoint): BETWEEN, CONTAINS, CONTAINS_ANY, CONTAINS_ALL, ENDS_WITH, EQUALS, GREATER_THAN, GREATER_THAN_OR_EQUAL_TO, IN, LESS_THAN, LESS_THAN_OR_EQUAL_TO, LIKE, NOT_EQUALS, STARTS_WITH.
 - `value` (Filter.Value): One or more filter conditions applied to the result set.
 

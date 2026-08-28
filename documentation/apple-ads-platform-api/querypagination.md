@@ -16,7 +16,7 @@ object QueryPagination
 
 #### Discussion
 
-`QueryPagination` controls the page size and starting offset for query results.
+The `QueryPagination` controls the page size and starting offset for query results.
 
 ##### Example
 

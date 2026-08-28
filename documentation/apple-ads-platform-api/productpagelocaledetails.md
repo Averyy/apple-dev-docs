@@ -16,7 +16,7 @@ object ProductPageLocaleDetails
 
 #### Discussion
 
-`ProductPageLocaleDetails` provides the locale-specific content for an App Store product page, including display text and creative assets organized by device type. Each record is tied to a specific `languageCode`, making it possible to retrieve the exact creative content users will see in a given locale.
+The `ProductPageLocaleDetails` object provides the locale-specific content for an App Store product page, including display text and creative assets organized by device type. Each record is tied to a specific `languageCode`, making it possible to retrieve the exact creative content users will see in a given locale.
 
 The `assetsByDevice` map is the primary structure for accessing locale media.
 
@@ -68,14 +68,14 @@ The `assetsByDevice` map is the primary structure for accessing locale media.
 ## Properties
 
 - `adamId` (int64): The app’s Adam ID. The unique App Store identifier for the promoted object. Used as promotedObjectId when creating a campaign.
-- `language` (string): The language identifier, e.g. en.
-- `languageCode` (string): The BCP-47 language code, e.g. en-US.
+- `language` (string): The language identifier, for example, en.
+- `languageCode` (string): The BCP-47 language code, for example, en-US.
 - `appName` (string): The localized application display name as it appears on the App Store.
 - `subTitle` (string): The app subtitle for the locale.
 - `promotionalText` (string): The promotional text for the locale. Max 170 characters.
 - `shortDescription` (string): A short description for the locale. Max 4000 characters.
 - `deviceClasses` ([string]): Supported device classes. Use to verify targeting compatibility when configuring ad groups with device-class targeting. Possible values: `IPHONE`, `IPAD`.
-- `assetsByDevice` (ProductPageLocaleDetails.AssetsByDevice): Map of device type (e.g., `iphone_6_5`, `iphone_6_7`) to a [`DeviceAssetGroup`](deviceassetgroup.md) object. Keys are specific device type strings, not limited to the values in `deviceClasses`.
+- `assetsByDevice` (ProductPageLocaleDetails.AssetsByDevice): Map of device type (for example, `iphone_6_5`, `iphone_6_7`) to a [`DeviceAssetGroup`](deviceassetgroup.md) object. Keys are specific device type strings, not limited to the values in `deviceClasses`.
 - `productPageId` (string): The parent product page identifier (ASC product page ID).
 
 ## See Also

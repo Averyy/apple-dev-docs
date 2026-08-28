@@ -59,7 +59,7 @@ GET https://api.ads.apple.com/v1/shared-budgets/777888999
 
 ## Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-Ap-Context` (string)
 
 ## See Also
 

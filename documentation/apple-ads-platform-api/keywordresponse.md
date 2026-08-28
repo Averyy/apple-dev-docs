@@ -16,9 +16,9 @@ object KeywordResponse
 
 #### Discussion
 
-`KeywordResponse` is the single-item response envelope returned by create and update keyword operations.
+The `KeywordResponse` object is the single-item response envelope returned by create and update keyword operations.
 
-Check the `error` field to detect per-item failures, especially in bulk contexts where some items may succeed while others fail.
+Check the `error` field to detect per-item failures, especially in bulk contexts where some items may succeed. Others can still fail without blocking the successful ones.
 
 ##### Example
 
@@ -52,7 +52,7 @@ Check the `error` field to detect per-item failures, especially in bulk contexts
 ## See Also
 
 - [object Keyword](keyword.md)
-  The targeting unit that connects a user’s App Store search query to an ad group’s ads.
+  The targeting unit that connects a user’s search query to the ad group’s ads.
 - [object KeywordCreate](keywordcreate.md)
   The request body for creating a new Keyword object.
 - [object KeywordUpdate](keywordupdate.md)

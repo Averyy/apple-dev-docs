@@ -16,7 +16,7 @@ object BusinessCategoryQueryResponse
 
 #### Discussion
 
-[`Query Business Categories`](query-categories.md) returns `BusinessCategoryQueryResponse` as the top-level envelope. It extends the standard [`QueryResponse`](queryresponse.md) envelope: on success, `result` contains an array of [`BusinessCategory`](businesscategory.md) objects matching the query criteria. The standard `pagination` field handles pagination.
+The [`Query Business Categories`](query-categories.md) returns `BusinessCategoryQueryResponse` as the top-level envelope. It extends the standard [`QueryResponse`](queryresponse.md) envelope: on success, `result` contains an array of [`BusinessCategory`](businesscategory.md) objects matching the query criteria. The standard `pagination` field handles pagination.
 
 ##### Example
 
@@ -28,8 +28,6 @@ object BusinessCategoryQueryResponse
       "name": "Restaurant",
       "qualifiedId": "dining.restaurant",
       "description": "Establishments that serve prepared food and beverages for on-site consumption.",
-      "creationTime": "2025-01-10T08:00:00.000",
-      "modificationTime": "2025-01-10T08:00:00.000",
       "eligibility": {
         "status": "ELIGIBLE",
         "blockedGroups": [],

@@ -16,7 +16,7 @@ string KeywordDisplayStatus
 
 #### Discussion
 
-`KeywordDisplayStatus` is a read-only derived field on [`Keyword`](keyword.md) that summarizes why a keyword is or is not participating in auctions. It accounts for the keyword’s own status and the status of its parent ad group and campaign. Use this field when displaying keyword health in a UI.
+The `KeywordDisplayStatus` is a read-only derived field on [`Keyword`](keyword.md) that summarizes why a keyword is or isn’t participating in auctions. It accounts for the keyword’s own status and the status of its parent ad group and campaign. Use this field when displaying keyword health in a UI.
 
 ## See Also
 

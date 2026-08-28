@@ -16,7 +16,7 @@ The `systemStatus` field conveys the ad creative’s current operational state, 
 
 ##### Understand System Status and Ad Delivery
 
-While `systemStatus` is `PENDING`, any ads associated with this ad creative will also have `systemStatus: NOT_RUNNING` and will not deliver impressions. Once the ad creative reaches `VALID`, associated ads resume normal delivery, provided the ad group and campaign are also active.
+While `systemStatus` is `PENDING`, any ads associated with this ad creative will also have `systemStatus: NOT_RUNNING` and won’t deliver impressions. Once the ad creative reaches `VALID`, associated ads resume normal delivery, provided the ad group and campaign are also active.
 
 The `eligibility` object in the response describes any policy or content restrictions that apply to the ad creative. This can include blocked countries, restricted placements, or content category limitations that affect where the ad creative is allowed to serve.
 

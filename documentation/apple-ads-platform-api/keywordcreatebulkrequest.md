@@ -16,7 +16,7 @@ object KeywordCreateBulkRequest
 
 #### Discussion
 
-`KeywordCreateBulkRequest` allows creating multiple keywords in a single API call.
+The `KeywordCreateBulkRequest` object allows creating multiple keywords in a single API call.
 
 ##### Example
 
@@ -56,7 +56,7 @@ object KeywordCreateBulkRequest
 
 ## Properties
 
-- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed while others fail.
+- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed. Other operations can still fail without blocking the successful ones.
 - `items` ([KeywordCreateBulkRequestItem]): Array of bulk item objects to create. Each item has the shape `{ correlationId: int64, data: BulkKeywordCreate }`.
 
 ## See Also

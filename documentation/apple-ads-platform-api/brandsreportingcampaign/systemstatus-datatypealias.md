@@ -16,6 +16,8 @@ string BrandsReportingCampaign.SystemStatus
 
 #### Discussion
 
+This reflects delivery conditions evaluated at the moment the report was generated, separate from the advertiser-set [`BrandsReportingCampaign.Status`](brandsreportingcampaign/status-data.typealias.md) reported alongside it.
+
 ##### Example
 
 ```json

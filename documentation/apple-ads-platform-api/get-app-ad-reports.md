@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Retrieve performance metrics for ads broken down by optional dimensions such as device class or country.
+Retrieve performance metrics for ads.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -12,7 +12,9 @@ Retrieve performance metrics for ads broken down by optional dimensions such as 
 
 Ad reports return one row per ad. Each row contains a `metadata` object with ad identifiers (including `campaignId` and `adGroupId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
-Filter by `adGroupId` or `campaignId` in the `filters` array to scope results to a specific ad group or campaign.
+Every apps report request requires a `campaignId` filter; optionally add `adGroupId` in the `filters` array to scope results to a specific ad group.
+
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -258,13 +260,13 @@ POST /v1/reports/apps/ads/query
 ## See Also
 
 - [Campaigns Report](get-app-campaign-reports.md)
-  Retrieve performance metrics for campaigns broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for campaigns.
 - [Ad Groups Report](get-app-ad-group-reports.md)
-  Retrieve performance metrics for ad groups broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for ad groups.
 - [Keywords Report](get-app-keyword-reports.md)
-  Retrieve performance metrics for keywords broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for keywords.
 - [Search Terms Report](get-app-search-term-reports.md)
-  Retrieve performance metrics for the actual search terms that triggered keyword matches, broken down by optional dimensions.
+  Retrieve performance metrics for the actual search terms that triggered keyword matches.
 
 
 ---

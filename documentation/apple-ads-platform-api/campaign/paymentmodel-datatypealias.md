@@ -16,6 +16,8 @@ string Campaign.PaymentModel
 
 #### Discussion
 
+Because this reflects the ad account’s payment model rather than a campaign-level setting, every campaign under the same ad account reports the same value.
+
 ##### Example
 
 ```json

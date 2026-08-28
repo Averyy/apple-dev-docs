@@ -16,7 +16,7 @@ object ConstraintGroup
 
 #### Discussion
 
-`ConstraintGroup` defines a pairing of supply placements and geographic markets that collectively describe where an eligibility rule applies. [`Eligibility`](eligibility.md) objects embed it to specify the exact scope of blocking or allowing a business entity from serving ads.
+The `ConstraintGroup` object defines a pairing of supply placements and geographic markets that collectively describe where an eligibility rule applies. The [`Eligibility`](eligibility.md) objects embed it to specify the exact scope of blocking or allowing a business entity from serving ads.
 
 When you populate both `supplyPlacement` and `countryOrRegion`, the constraint applies to the intersection of those placements and markets.
 

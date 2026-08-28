@@ -16,7 +16,7 @@ object AssetImage
 
 #### Discussion
 
-`AssetImage` contains the image-specific metadata for an asset when `assetType` is `IMAGE`. All fields are read-only, and the system populates them when it ingests the asset from the provider. To verify the asset meets size requirements for a given ad placement, use `width`, `height`, and `orientation`.
+The `AssetImage` object contains the image-specific metadata for an asset when `assetType` is `IMAGE`. All fields are read-only, and the system populates them when it ingests the asset from the provider. To verify the asset meets size requirements for a given ad placement, use `width`, `height`, and `orientation`.
 
 ##### Example
 

@@ -16,13 +16,13 @@ object Location.Address
 
 #### Discussion
 
-`address` is sourced from Apple Maps and is read-only. Use `countryOrRegion` to verify country or region targeting compatibility, and `fullAddress` for a single formatted display string.
+The `address` field is sourced from Apple Maps and is read-only. Use `countryOrRegion` to verify country or region targeting compatibility, and `fullAddress` for a single formatted display string.
 
 ## Properties
 
-- `countryOrRegion` (string): ISO 3166-1 alpha-2 country code, e.g. `"US"`, `"GB"`. Read-only.
-- `adminArea` (string): State or province name, e.g. `"California"`. Read-only.
-- `adminAreaCode` (string): Abbreviated state or province code, e.g. `"CA"`. Read-only.
+- `countryOrRegion` (string): ISO 3166-1 alpha-2 country code, for example, `"US"`, `"GB"`. Read-only.
+- `adminArea` (string): State or province name, for example, `"California"`. Read-only.
+- `adminAreaCode` (string): Abbreviated state or province code, for example, `"CA"`. Read-only.
 - `locality` (string): City or town name. Read-only.
 - `subLocality` (string): Neighborhood or district within a city. Read-only.
 - `subAdminArea` (string): County or sub-administrative area. Read-only.
@@ -31,10 +31,9 @@ object Location.Address
 - `subThoroughfare` (string): Street number. Read-only.
 - `fullThoroughfare` (string): Combined street number and street name. Read-only.
 - `fullAddress` (string): Complete formatted address string. Read-only.
-- `unit` (string): Suite or unit number, e.g. `"Suite 100"`. Read-only.
-- `floor` (string): Floor number, e.g. `"1"`. Read-only.
-- `building` (string): Building name, e.g. `"Main Building"`. Read-only.
-- `dependentLocality` ([string]): Array of additional locality components. Read-only.
+- `unit` (string): Suite or unit number, for example, `"Suite 100"`. Read-only.
+- `floor` (string): Floor number, for example, `"1"`. Read-only.
+- `building` (string): Building name, for example, `"Main Building"`. Read-only.
 
 
 ---

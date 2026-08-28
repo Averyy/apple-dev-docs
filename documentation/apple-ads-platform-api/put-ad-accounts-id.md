@@ -10,7 +10,8 @@ Update an ad account’s name or delegations.
 
 #### Discussion
 
-- This endpoint updates an ad account’s `name` or `delegations`. See [`AdAccountUpdate`](adaccountupdate.md) for field-level mutability details.
+This endpoint updates an ad account’s name or delegations. See [`AdAccountUpdate`](adaccountupdate.md) for field-level mutability details.
+
 - The `delegations` field is optional and nullable.
 - When included, each entry requires a `resourceType` and a `resourceId`.
 - Like a promoted object, a delegation always identifies its resource by type and ID: `CONTENT_PROVIDER` takes a Content Provider ID (CPID), and `BUSINESS_BRAND` takes a Brand ID. See [`AdvertiserResourceType`](advertiserresourcetype.md) for all supported values.
@@ -21,7 +22,7 @@ Update an ad account’s name or delegations.
 
 **Update with CPID Delegation**:
 
-All fields in the request body are optional. `delegations` is also nullable, but `name`, if provided, must not be null. Providing the `delegations` array replaces all existing delegations in full.
+All fields in the request body are optional. The `delegations` field is also nullable, but `name`, if provided, must not be null. Providing the `delegations` array replaces all existing delegations in full.
 
 ##### Request
 

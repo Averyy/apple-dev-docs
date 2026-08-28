@@ -16,7 +16,7 @@ object CreativeRejectionReasonQueryResponse
 
 #### Discussion
 
-`CreativeRejectionReasonQueryResponse` is returned by the creative rejection reason query endpoint.
+The `CreativeRejectionReasonQueryResponse` object is returned by the creative rejection reason query endpoint.
 
 To understand why an ad creative’s `systemStatus` is `INVALID` and which specific policy or format requirements it failed to meet, use this response.
 

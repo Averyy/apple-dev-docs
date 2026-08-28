@@ -10,9 +10,9 @@ Create a new advertising campaign with a promoted object, budget, targeting, and
 
 #### Discussion
 
-Every campaign identifies what it promotes through two immutable fields set at creation, `promotedObjectType` and `promotedObjectId`. You can’t change these fields after you create the campaign. To advertise a different app or brand, create a new campaign. For a full comparison of App Store and Apple Maps campaigns, including supported placements, supply sources, and creative sources, see the [`Campaigns Endpoints`](campaigns-endpoints.md) overview.
+This endpoint creates a new campaign with a promoted object, budget, targeting, and bid strategy configuration. Every campaign identifies what it promotes through two immutable fields set at creation, `promotedObjectType` and `promotedObjectId`. You can’t change these fields after you create the campaign. To advertise a different app or brand, create a new campaign. For a full comparison of App Store and Apple Maps campaigns, including supported placements, supply sources, and creative sources, see the [`Campaigns Endpoints`](campaigns-endpoints.md) overview.
 
-`promotedObjectType` determines which kind of object `promotedObjectId` points to:
+The `promotedObjectType` field determines which kind of object `promotedObjectId` points to:
 
 - APPSTORE_APP: The campaign promotes an iOS app. `promotedObjectId` is the app’s `adamId`, retrieved from [`Search for Apps`](searches-for-a-list-of-apps.md). See [`Campaigns Endpoints`](campaigns-endpoints.md) for eligibility requirements before creating the campaign.
 - BUSINESS_BRAND: The campaign promotes a brand and its business locations on Apple Maps. `promotedObjectId` is the brand’s unique identifier, retrieved from [`Query Brands`](query-brands.md) or `GET /v1/advertiser-resources?resourceType=BUSINESS_BRAND`. See [`Campaigns Endpoints`](campaigns-endpoints.md) for eligibility requirements before creating the campaign.
@@ -28,7 +28,7 @@ Within `bidStrategy`, `bidStrategyType` and `bidStrategyGoal` are both required 
 
 **App Store Search**:
 
-An app campaign targeting App Store Search Results. `promotedObjectType` is `APPSTORE_APP` and `promotedObjectId` is the app’s `adamId`.
+An app campaign targeting App Store Search Results. The `promotedObjectType` field is `APPSTORE_APP` and `promotedObjectId` is the app’s `adamId`.
 
 > **Note**: Uses `bidStrategyType: MANUAL_CPT` with `bidStrategyGoal: TAP`.
 
@@ -220,13 +220,13 @@ POST /v1/campaigns
 
 **App Store — Maximize Conversions**:
 
-An app campaign using the automated `MAX_CONVERSIONS` bid strategy, which optimizes bids toward installs while billing per tap. See [`BidStrategy`](bidstrategy.md) for the full type/goal pairings and [`Query Target CPA Suggestion`](query-target-cpa-suggestion.md) for a data-driven starting target CPA.
+An app campaign using the automated `MAX_CONVERSIONS` bid strategy, which optimizes bids toward installs while billing per tap. See [`BidStrategy`](bidstrategy.md) for the full type and goal pairings and [`Query Target CPA Suggestion`](query-target-cpa-suggestion.md) for a data-driven starting target CPA.
 
 > **Note**: Uses `bidStrategyType: MAX_CONVERSIONS` with `bidStrategyGoal: INSTALL`.
 
 ##### Request
 
-Creates an App Store Search campaign for an app identified by its `adamId`, using `bidStrategyType: MAX_CONVERSIONS` with the required `INSTALL` goal. `billingEvent` remains `TAPS`, so Apple Ads still charges per tap, but it automates bidding toward installs.
+Creates an App Store Search campaign for an app identified by its `adamId`, using `bidStrategyType: MAX_CONVERSIONS` with the required `INSTALL` goal. The `billingEvent` field remains `TAPS`, so Apple Ads still charges per tap, but it automates bidding toward installs.
 
 ```json
 POST /v1/campaigns
@@ -604,7 +604,7 @@ POST /v1/campaigns
 
 **Apple Maps — Manual CPM**:
 
-An Apple Maps campaign using manual cost-per-thousand-impressions bidding. `billingEvent` must be `IMPRESSIONS`.
+An Apple Maps campaign using manual cost-per-thousand-impressions bidding. The `billingEvent` field must be `IMPRESSIONS`.
 
 > **Note**: Uses `bidStrategyType: MANUAL_CPM` with `bidStrategyGoal: IMPRESSION`.
 

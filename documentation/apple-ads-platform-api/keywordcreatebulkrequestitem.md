@@ -16,6 +16,8 @@ object KeywordCreateBulkRequestItem
 
 #### Discussion
 
+The `data` object accepts only the fields defined on [`BulkKeywordCreate`](bulkkeywordcreate.md), keeping each item’s payload identical in shape to a single-item create request.
+
 ##### Example
 
 ```json

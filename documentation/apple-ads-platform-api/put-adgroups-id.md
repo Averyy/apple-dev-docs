@@ -16,7 +16,7 @@ For ad groups under an auto-bidding campaign, see [`AdGroupUpdate.BidStrategy`](
 
 ##### Determine Which Fields You Can Update
 
-To change any field marked Yes below, use this endpoint. Fields marked No are either only settable at creation via [`Create an Ad Group`](post-adgroups.md) or are system-computed. Sending them in an update request has no effect. See the Notes column for which applies to a given field. `cpaCap` is marked Deprecated: the API still accepts it on update for backward compatibility, but new integrations should use `bidStrategy` instead.
+To change any field marked Yes below, use this endpoint. Fields marked No are either only settable at creation via [`Create an Ad Group`](post-adgroups.md) or are system-computed. Sending them in an update request has no effect. See the Notes column for which applies to a given field. The `cpaCap` field is marked Deprecated: the API still accepts it on update for backward compatibility, but new integrations should use `bidStrategy` instead.
 
 | Field | Mutable | Notes |
 | --- | --- | --- |
@@ -161,7 +161,7 @@ PUT /v1/adgroups/555666779
 
 **Echo Auto-Bidding Strategy**:
 
-For an ad group under an auto-bidding campaign (`MAX_CONVERSIONS` or `MAX_ENGAGEMENTS`), a `GET`-then-`PUT` round trip is safe: echo the same `bidStrategyType` and `bidStrategyGoal` as the campaign with `bid` set to `0`. The API rejects a non-zero bid or a type/goal that doesn’t match the campaign’s.
+For an ad group under an auto-bidding campaign (`MAX_CONVERSIONS` or `MAX_ENGAGEMENTS`), a `GET`-then-`PUT` round trip is safe: echo the same `bidStrategyType` and `bidStrategyGoal` as the campaign with `bid` set to `0`. The API rejects a non-zero bid or a type or goal that doesn’t match the campaign’s.
 
 ##### Request
 

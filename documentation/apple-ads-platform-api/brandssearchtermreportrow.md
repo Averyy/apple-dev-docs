@@ -16,9 +16,9 @@ object BrandsSearchTermReportRow
 
 #### Discussion
 
-`BrandsSearchTermReportRow` is the `BRANDS` counterpart to [`AppsSearchTermReportRow`](appssearchtermreportrow.md). The `metadata` field captures the search term text and its associated keyword, ad group, and location context at report time, while `totalMetrics` contains the aggregated performance figures across the full reporting period.
+The `BrandsSearchTermReportRow` object is the `brands` counterpart to [`AppsSearchTermReportRow`](appssearchtermreportrow.md). The `metadata` field captures the search term text and its associated keyword, ad group, and location context at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
-Like all search term reports, `BRANDS` search term reports require the ORTZ timezone. UTC is not supported. Search term entity reports also exclude the `supplyPlacement` and `locationId` dimensions from `groupBy`.
+Like all search term reports, `brands` search term reports require the ORTZ timezone. UTC isn’t supported. Search term entity reports also exclude the `supplyPlacement` and `locationId` dimensions from `groupBy`.
 
 ##### Example
 

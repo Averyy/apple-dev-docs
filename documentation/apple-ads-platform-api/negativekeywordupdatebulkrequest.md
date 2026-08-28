@@ -16,7 +16,7 @@ object NegativeKeywordUpdateBulkRequest
 
 #### Discussion
 
-`NegativeKeywordUpdateBulkRequest` allows updating multiple negative keywords in a single API call.
+The `NegativeKeywordUpdateBulkRequest` object allows updating multiple negative keywords in a single API call.
 
 ##### Example
 
@@ -44,7 +44,7 @@ object NegativeKeywordUpdateBulkRequest
 
 ## Properties
 
-- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed while others fail.
+- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed. Other operations can still fail without blocking the successful ones.
 - `items` ([NegativeKeywordUpdateBulkRequestItem]): Array of bulk item objects to update. Each item has the shape `{ correlationId: int64, data: BulkNegativeKeywordUpdate }`. The `id` field is required in `BulkNegativeKeywordUpdate`.
 
 ## See Also

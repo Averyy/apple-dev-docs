@@ -14,7 +14,7 @@ This endpoint returns a list of geographic locations matching the specified enti
 
 The API sorts results alphabetically by `displayName` and paginates them using [`GeoSearchPagination`](geosearchpagination.md). Each result is a [`SearchEntity`](searchentity.md) and includes a hierarchy identifier in `legacyId`, which is a pipe-delimited string that encodes the full geographic hierarchy, such as `US|CA|San Francisco`. See [`GeoEntityType`](geoentitytype.md) for the full list of entity granularities.
 
-The `supplySource` field controls which entity types appear in the response. Use `APPSTORE` for App Store campaigns and `MAPS` for Apple Maps campaigns. Unlike the GET endpoint, the POST endpoint does not filter by eligibility. The API always returns soft-blocked geos with their eligibility data included.
+The `supplySource` field controls which entity types appear in the response. Use `APPSTORE` for App Store campaigns and `MAPS` for Apple Maps campaigns. Unlike the GET endpoint, the POST endpoint doesn’t filter by eligibility. The API always returns soft-blocked geos with their eligibility data included.
 
 #### Payload Examples
 

@@ -16,7 +16,7 @@ object Campaign.InvoiceDetail
 
 #### Discussion
 
-Captures the billing contact and reference information required for Line of Credit (`LOC`) payment model accounts. `primaryBuyerEmail` and `billingEmail` must each be a valid email address.
+Captures the billing contact and reference information required for Line of Credit (`LOC`) payment model accounts. The `primaryBuyerEmail` and `billingEmail` fields must each be a valid email address.
 
 See [`InvoiceDetailCreate`](invoicedetailcreate.md) for which fields are required when creating a new record, and [`InvoiceDetailUpdate`](invoicedetailupdate.md) for update behavior.
 

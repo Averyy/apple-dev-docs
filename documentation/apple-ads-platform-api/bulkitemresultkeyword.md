@@ -16,7 +16,7 @@ object BulkItemResultKeyword
 
 #### Discussion
 
-`BulkItemResultKeyword` extends [`BulkItemResult`](bulkitemresult.md) with a typed `result` field containing the `Keyword` object the operation created or updated. This type appears as array items in `KeywordCreateBulkResponse` and `KeywordUpdateBulkResponse`.
+The `BulkItemResultKeyword` object extends [`BulkItemResult`](bulkitemresult.md) with a typed `result` field containing the `Keyword` object the operation created or updated. This type appears as array items in `KeywordCreateBulkResponse` and `KeywordUpdateBulkResponse`.
 
 On success, `result` contains the full `Keyword` entity as it exists after the operation. On failure, `success` is `false` and `error` carries per-item details.
 

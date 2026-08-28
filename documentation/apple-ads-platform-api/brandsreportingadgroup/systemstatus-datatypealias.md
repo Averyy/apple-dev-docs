@@ -16,6 +16,8 @@ string BrandsReportingAdGroup.SystemStatus
 
 #### Discussion
 
+This is a point-in-time snapshot; an ad group that later changes to `NOT_RUNNING` won’t retroactively update in an already-generated report.
+
 ##### Example
 
 ```json

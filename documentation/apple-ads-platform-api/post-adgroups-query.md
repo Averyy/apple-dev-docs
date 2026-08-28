@@ -14,6 +14,22 @@ This endpoint queries ad groups using a standard `QueryRequest` body. Filter by 
 
 Each result in the response includes the full `targeting` and `bidStrategy` nested objects, making this the primary endpoint for auditing ad group configuration at scale.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | integer | `EQUALS`, `IN` | Yes (default) | The unique identifier for the ad group. |
+| `campaignId` | integer | `EQUALS` | Yes | The campaign this ad group belongs to. |
+| `name` | string | `EQUALS`, `STARTS_WITH` | Yes | The advertiser-given name of the ad group. |
+| `status` | string (enum) | `EQUALS`, `IN` | Yes | Advertiser-configurable status. See [`AdGroupStatus`](adgroupstatus.md). |
+| `startTime` | string (ISO 8601) | `LESS_THAN`, `GREATER_THAN` | Yes | Ad group schedule start time. |
+| `endTime` | string (ISO 8601) | `LESS_THAN`, `GREATER_THAN` | Yes | Ad group schedule end time. |
+| `deleted` | boolean | `EQUALS` | Yes | Whether the ad group has been deleted. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Payload Examples
 
 **Query by Campaign**:

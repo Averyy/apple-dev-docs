@@ -16,7 +16,7 @@ object BulkItemResultNegativeKeyword
 
 #### Discussion
 
-`BulkItemResultNegativeKeyword` extends [`BulkItemResult`](bulkitemresult.md) with a typed `result` field containing the `NegativeKeyword` object the operation created or updated. This type appears as array items in `NegativeKeywordCreateBulkResponse` and `NegativeKeywordUpdateBulkResponse`.
+The `BulkItemResultNegativeKeyword` object extends [`BulkItemResult`](bulkitemresult.md) with a typed `result` field containing the `NegativeKeyword` object the operation created or updated. This type appears as array items in `NegativeKeywordCreateBulkResponse` and `NegativeKeywordUpdateBulkResponse`.
 
 On success, `result` contains the full `NegativeKeyword` entity as it exists after the operation. On failure, `success` is `false` and `error` carries per-item details.
 

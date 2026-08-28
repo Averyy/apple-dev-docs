@@ -16,7 +16,7 @@ object KeywordInsights
 
 #### Discussion
 
-`KeywordInsights` provides performance insights attached to a keyword report row. Currently includes bid recommendation data.
+The `KeywordInsights` object provides performance insights attached to a keyword report row. Currently includes bid recommendation data.
 
 ##### Example
 

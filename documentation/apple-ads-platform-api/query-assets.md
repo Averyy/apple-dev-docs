@@ -14,18 +14,25 @@ This endpoint queries assets using a standard `QueryRequest` body. Filter by `pr
 
 After uploading an asset, use this endpoint to check `eligibility` status in bulk rather than polling each asset individually.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | string (UUID) | `EQUALS`, `IN` |  | Internal asset identifier. |
+| `name` | string | `EQUALS`, `IN`, `LIKE`, `LIKE_IGNORE_CASE`, `STARTS_WITH`, `ENDS_WITH` |  | User-facing asset name or description. |
+| `assetType` | string (enum) | `EQUALS`, `IN` |  | The media type of the asset. See [`AssetType`](assettype.md). |
+| `providerAssetId` | string | `EQUALS`, `IN` |  | Asset identifier assigned by the provider system. |
+| `promotedObjectId` | string | `EQUALS` |  | Identifier of the promoted object. Scope to a specific brand or app. |
+| `promotedObjectType` | string (enum) | `EQUALS` |  | The type of the promoted object: `BUSINESS_BRAND` or `APPSTORE_APP`. |
+| `deleted` | boolean | `EQUALS` |  | Whether the asset has been deleted. Excluded by default unless explicitly filtered. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Request Body
 
 See [`QueryRequest`](queryrequest.md).
-
-Narrow results using any of the following fields and operators:
-
-| Field | Operators | Description |
-| --- | --- | --- |
-| `promotedObjectId` | `EQUALS` | Scope to a specific brand or app. |
-| `promotedObjectType` | `EQUALS` | Filter by type: `BUSINESS_BRAND` or `APPSTORE_APP`. |
-| `providerAssetId` | `EQUALS`, `IN` | Filter by the provider-assigned asset identifier. |
-| `assetType` | `EQUALS`, `IN` | Filter by asset type: `IMAGE`. |
 
 Querying assets carries a couple of caveats around scope and variants:
 

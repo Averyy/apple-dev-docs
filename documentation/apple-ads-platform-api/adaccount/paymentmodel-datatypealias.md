@@ -16,6 +16,10 @@ string AdAccount.PaymentModel
 
 #### Discussion
 
+Choosing `LOC` here is a prerequisite for using budget orders on this ad account.
+
+See also [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+
 ##### Example
 
 ```json

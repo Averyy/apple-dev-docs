@@ -16,9 +16,9 @@ object BrandsReportingSearchTerm
 
 #### Discussion
 
-`BrandsReportingSearchTerm` extends the base `ReportingSearchTerm` object with a `BRANDS`-specific `keyword` field. While the base object provides the `searchTermText` and `searchTermSource`, the `keyword` field here is a `BrandsReportingKeyword` rather than the standard `ReportingKeyword`, capturing the `BRANDS` keyword context that the search term matched against.
+The `BrandsReportingSearchTerm` extends the base `ReportingSearchTerm` object with a `brands`-specific `keyword` field. The base object provides the `searchTermText` and `searchTermSource`. The `keyword` field here is a `BrandsReportingKeyword` rather than the standard `ReportingKeyword`, capturing the `brands` keyword context that the search term matched against.
 
-Search term reports require the ORTZ timezone. `BRANDS` search term reports exclude the `supplyPlacement` and `locationId` dimensions from `groupBy`. Only `deviceClass` is available if dimensioned grouping is needed.
+Search term reports require the ORTZ timezone. The `brands` search term reports exclude the `supplyPlacement` and `locationId` dimensions from `groupBy`. Only `deviceClass` is available if dimensioned grouping is needed.
 
 ##### Example
 

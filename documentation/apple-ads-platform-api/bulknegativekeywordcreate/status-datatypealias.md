@@ -16,6 +16,8 @@ string BulkNegativeKeywordCreate.Status
 
 #### Discussion
 
+Set this within each item’s `data` to determine whether the negative keyword begins suppressing matching search queries as soon as the bulk create request completes.
+
 ##### Example
 
 ```json

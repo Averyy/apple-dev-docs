@@ -10,7 +10,7 @@ Update a campaign’s name, status, budget, targeting, or bid strategy.
 
 #### Discussion
 
-This endpoint updates an existing campaign. It changes only the fields included in the request body. Omitted fields retain their current values. `promotedObjectType` and `promotedObjectId` are **not** part of the `CampaignUpdate` schema. They’re immutable after campaign creation, so this endpoint can’t change them.
+This endpoint updates an existing campaign. It changes only the fields included in the request body. Omitted fields retain their current values. The `promotedObjectType` and `promotedObjectId` fields are **not** part of the `CampaignUpdate` schema. They’re immutable after campaign creation, so this endpoint can’t change them.
 
 #### Payload Examples
 

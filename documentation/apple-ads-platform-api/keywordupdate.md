@@ -16,7 +16,7 @@ object KeywordUpdate
 
 #### Discussion
 
-`KeywordUpdate` is the request payload for modifying an existing keyword. The request accepts only `bid` and `status` fields. You cannot include `text` or `matchType` in an update request. The schema does not accept these fields.
+The `KeywordUpdate` object is the request payload for modifying an existing keyword. The request accepts only `bid` and `status` fields. You can’t include `text` or `matchType` in an update request. The schema doesn’t accept these fields.
 
 ##### Example
 
@@ -38,13 +38,13 @@ object KeywordUpdate
 
 ## Properties
 
-- `bid` (Money): Per-keyword bid override as a `Money` object. See [`Money`](money.md). Must be a valid `Money` value. `null` is not accepted and returns an error. Mutable.
+- `bid` (Money): Per-keyword bid override as a `Money` object. See [`Money`](money.md). Must be a valid `Money` value. `null` isn’t accepted and returns an error. Mutable.
 - `status` (KeywordUpdate.Status): Whether this keyword is active and eligible to serve. Values: `ENABLED` or `PAUSED`. See [`KeywordStatus`](keywordstatus.md). Mutable.
 
 ## See Also
 
 - [object Keyword](keyword.md)
-  The targeting unit that connects a user’s App Store search query to an ad group’s ads.
+  The targeting unit that connects a user’s search query to the ad group’s ads.
 - [object KeywordCreate](keywordcreate.md)
   The request body for creating a new Keyword object.
 - [object KeywordResponse](keywordresponse.md)

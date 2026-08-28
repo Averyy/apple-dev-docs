@@ -21,7 +21,7 @@ The response’s `systemStatus` field can take any of the following values:
 | `INVALID` | One or more issues prevent the group from serving. Inspect `eligibility` for details. |
 | `DELETED` | The group has been soft-deleted and is no longer available for targeting. |
 
-`PENDING` appears immediately after a `DYNAMIC` group is created or after its `rules` are updated. `STATIC` groups transition directly to `VALID` because membership is explicit and requires no evaluation.
+The `PENDING` status appears immediately after a `DYNAMIC` group is created or after its `rules` are updated. The `STATIC` groups transition directly to `VALID` because membership is explicit and requires no evaluation.
 
 Fetching a group by ID differs from a bulk query in a couple of ways:
 

@@ -48,9 +48,9 @@ For `DEFAULT_PRODUCT_PAGE` and `CUSTOM_PRODUCT_PAGE` creative types, `creativeSp
 
 The `destination` object carries all required parameters for product page ad creatives:
 
-- `destinationType` is set to `APP_STORE_PRODUCT_PAGE`.
-- `parameters.adamId` is the App Store app identifier, and it’s required for both ad creative types.
-- `parameters.productPageId` is the custom product page identifier, and it’s required for `CUSTOM_PRODUCT_PAGE`. Omit it or leave it `null` for `DEFAULT_PRODUCT_PAGE`.
+- The `destinationType` field is set to `APP_STORE_PRODUCT_PAGE`.
+- The `parameters.adamId` field is the App Store app identifier, and it’s required for both ad creative types.
+- The `parameters.productPageId` field is the custom product page identifier, and it’s required for `CUSTOM_PRODUCT_PAGE`. Omit it or leave it `null` for `DEFAULT_PRODUCT_PAGE`.
 
 ##### Understand Apple Maps Creatives
 

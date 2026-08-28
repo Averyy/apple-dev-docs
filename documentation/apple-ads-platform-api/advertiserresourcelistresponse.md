@@ -16,7 +16,7 @@ object AdvertiserResourceListResponse
 
 #### Discussion
 
-`AdvertiserResourceListResponse` is the response envelope the API returns when you fetch advertiser resources associated with an organization.
+The `AdvertiserResourceListResponse` object is the response envelope the API returns when you fetch advertiser resources associated with an organization.
 
 Advertiser resources include entities such as content providers and brands. These resources appear in `Delegation` objects and control whether App Store or Apple Maps campaigns are accessible to an ad account.
 
@@ -46,7 +46,7 @@ Advertiser resources include entities such as content providers and brands. Thes
 - [type OrgSystemStatus](orgsystemstatus.md)
   System-derived operational status of an organization.
 - [type OrgSystemStatusReason](orgsystemstatusreason.md)
-  Reasons that can cause an organization’s system status to be `INACTIVE`.
+  Reasons that can cause an organization’s system status to not be active.
 - [type AdAccountSystemStatus](adaccountsystemstatus.md)
   System-derived operational status of an ad account.
 - [type AdAccountSystemStatusReason](adaccountsystemstatusreason.md)

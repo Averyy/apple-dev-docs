@@ -10,14 +10,29 @@ Query negative keywords using structured filters, sorting, and pagination.
 
 #### Discussion
 
-Queries negative keywords using a standard `QueryRequest` body. `adGroupId` is always required. The API returns an error if it is omitted.
+This endpoint queries negative keywords using a standard `QueryRequest` body. The `adGroupId` field is always required. The API returns an error if it is omitted.
 
-- `adGroupId EQUALS` or `adGroupId IN` scopes the query to one or more specific ad groups. `campaignId` is optional with these operators. `adGroupId IN` accepts up to 1000 values.
-- `adGroupId IS_NULL` combined with a `campaignId EQUALS` filter returns only campaign-level negatives.
-- `adGroupId IS_NOT_NULL` combined with a `campaignId EQUALS` filter returns only ad-group-level negatives across the campaign.
-- `adGroupId NOT_EQUALS` combined with a `campaignId EQUALS` filter returns ad-group-level negatives, excluding the specified ad group.
-- `campaignId` only supports `EQUALS`.
+- The `adGroupId EQUALS` or `adGroupId IN` filter scopes the query to one or more specific ad groups. The `campaignId` field is optional with these operators. The `adGroupId IN` filter accepts up to 1000 values.
+- The `adGroupId IS_NULL` filter combined with a `campaignId EQUALS` filter returns only campaign-level negatives.
+- The `adGroupId IS_NOT_NULL` filter combined with a `campaignId EQUALS` filter returns only ad-group-level negatives across the campaign.
+- The `adGroupId NOT_EQUALS` filter combined with a `campaignId EQUALS` filter returns ad-group-level negatives, excluding the specified ad group.
+- The `campaignId` field only supports `EQUALS`.
 - Filtering by `id` (`EQUALS` or `IN`) is exempt from the `adGroupId` requirement, since `id` already fully bounds the query.
+
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | integer | `EQUALS`, `IN` | Yes (default) | The unique identifier for the negative keyword. |
+| `adGroupId` | integer | `EQUALS`, `IN`, `NOT_EQUALS`, `IS_NULL`, `IS_NOT_NULL` | Yes | The ad group this negative keyword belongs to. Null if defined at campaign level. |
+| `campaignId` | integer | `EQUALS` | Yes | The campaign ID. Negative keywords can be defined at campaign or ad group level. |
+| `text` | string | `EQUALS`, `STARTS_WITH` |  | The original advertiser-given keyword text. |
+| `matchType` | string (enum) | `EQUALS`, `IN` |  | Match type for this negative keyword. See [`KeywordMatchType`](keywordmatchtype.md). |
+| `status` | string (enum) | `EQUALS`, `IN` |  | Whether the negative keyword is active or paused. See [`NegativeKeywordStatus`](negativekeywordstatus.md). |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 #### Payload Examples
 

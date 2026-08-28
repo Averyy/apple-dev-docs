@@ -16,9 +16,7 @@ object BrandsAdGroupReportResponse
 
 #### Discussion
 
-`BrandsAdGroupReportResponse` is the top-level response envelope for `BRANDS` ad group reports.
-
-`BRANDS` ad group reports support `groupBy` dimensions `deviceClass`, `locationId`, and `supplyPlacement`.
+The `brands` ad group reports support `groupBy` dimensions `deviceClass`, `locationId`, and `supplyPlacement`.
 
 ##### Example
 

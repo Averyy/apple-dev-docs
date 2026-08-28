@@ -16,6 +16,8 @@ string RegulationResponseCreate.RegulationType
 
 #### Discussion
 
+Choosing this value at creation fixes which `responseValue` options are valid for the response.
+
 ##### Example
 
 ```json

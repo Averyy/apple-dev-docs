@@ -16,6 +16,8 @@ string Keyword.MatchType
 
 #### Discussion
 
+Available options differ by platform: App Store keywords use `EXACT` or `BROAD`, while Apple Maps keywords add `PHRASE` and category-based matching.
+
 ##### Example
 
 ```json

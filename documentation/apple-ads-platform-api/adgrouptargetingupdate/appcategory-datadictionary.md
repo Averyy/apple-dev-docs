@@ -16,7 +16,7 @@ object AdGroupTargetingUpdate.AppCategory
 
 #### Discussion
 
-`appCategory` is one of only two `AdGroupTargeting` dimensions that support both `include` and `exclude`. Used with App Store campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+The `appCategory` field is one of only two `AdGroupTargeting` dimensions that support both `include` and `exclude`. Used with App Store campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "appCategory": {

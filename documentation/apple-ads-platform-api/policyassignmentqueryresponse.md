@@ -16,7 +16,7 @@ object PolicyAssignmentQueryResponse
 
 #### Discussion
 
-`PolicyAssignmentQueryResponse` extends the standard [`QueryResponse`](queryresponse.md) envelope. The `result` array contains [`BrandRejectionReasonResponse`](brandrejectionreasonresponse.md) objects, each describing a policy assignment with rejection reason details for a brand entity.
+The `PolicyAssignmentQueryResponse` object extends the standard [`QueryResponse`](queryresponse.md) envelope. The `result` array contains [`BrandRejectionReasonResponse`](brandrejectionreasonresponse.md) objects, each describing a policy assignment with rejection reason details for a brand entity.
 
 ##### Example
 

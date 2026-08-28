@@ -16,7 +16,7 @@ object RecommendationQueryRequestPagination
 
 #### Discussion
 
-`QueryRequestPagination` controls pagination in recommendation query requests. The response includes a `pagination` envelope with `offset`, `pageSize`, and `totalCount` indicating how many records matched the filters in total.
+The `QueryRequestPagination` controls pagination in recommendation query requests. The response includes a `pagination` envelope with `offset`, `pageSize`, and `totalCount` indicating how many records matched the filters in total.
 
 To retrieve the next page, increment `offset` by `pageSize`:
 
@@ -27,7 +27,7 @@ To retrieve the next page, increment `offset` by `pageSize`:
 }
 ```
 
-Continue until `offset + pageSize >= totalCount`. New recommendations may appear or disappear between pages because the result set is not snapshotted.
+Continue until `offset + pageSize >= totalCount`. New recommendations may appear or disappear between pages because the result set isn’t snapshotted.
 
 ## Properties
 
@@ -47,7 +47,7 @@ Continue until `offset + pageSize >= totalCount`. New recommendations may appear
 - [type RecommendationFilterOperator](recommendationfilteroperator.md)
   The comparison operator applied in a recommendation filter condition.
 - [type RecommendationState](recommendationstate.md)
-  The lifecycle state of a recommendation, indicating whether it is available to act on or has already been accepted or rejected.
+  The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 - [type RecommendationStatus](recommendationstatus.md)
   The operational status of a recommendation record, independent of its lifecycle state.
 - [type RecommendationCategory](recommendationcategory.md)

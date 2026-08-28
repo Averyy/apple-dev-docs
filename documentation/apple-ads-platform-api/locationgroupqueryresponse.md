@@ -16,7 +16,7 @@ object LocationGroupQueryResponse
 
 #### Discussion
 
-`LocationGroupQueryResponse` is the top-level envelope returned by [`Query Location Groups`](query-location-groups.md). The `result` array contains all [`LocationGroup`](locationgroup.md) objects that match the supplied filters, subject to pagination. Use `pagination.totalCount` and `pagination.offset` to page through large result sets.
+The `LocationGroupQueryResponse` object is the top-level envelope returned by [`Query Location Groups`](query-location-groups.md). The `result` array contains all [`LocationGroup`](locationgroup.md) objects that match the supplied filters, subject to pagination. Use `pagination.totalCount` and `pagination.offset` to page through large result sets.
 
 ##### Example
 

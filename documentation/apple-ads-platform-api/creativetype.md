@@ -16,14 +16,14 @@ string CreativeType
 
 #### Discussion
 
-`CreativeType` is set at creation time and is immutable. It determines which `creativeSpec` variant to supply and which ad placements the ad creative can serve on.
+The `CreativeType` is set at creation time and is immutable. It determines which `creativeSpec` variant to supply and which ad placements the ad creative can serve on.
 
 ## See Also
 
 - [type CreativeSystemStatus](creativesystemstatus.md)
   System-evaluated validation state for an ad creative.
 - [type CreativeSystemStatusReason](creativesystemstatusreason.md)
-  A reason code explaining why an ad creative is not valid or is pending review.
+  A reason code explaining why an ad creative isn’t valid or is pending review.
 - [type DestinationType](destinationtype.md)
   Specifies where an ad sends users after they tap it.
 

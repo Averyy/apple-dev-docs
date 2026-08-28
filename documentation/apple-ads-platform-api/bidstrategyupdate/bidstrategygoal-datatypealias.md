@@ -16,6 +16,8 @@ string BidStrategyUpdate.BidStrategyGoal
 
 #### Discussion
 
+Changing this on an update must keep the goal compatible with the bid strategy’s existing `bidStrategyType`, since `IMPRESSION` and `TAP` map to different pricing models.
+
 ##### Example
 
 ```json

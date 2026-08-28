@@ -16,7 +16,7 @@ string RecommendationStatus
 
 #### Discussion
 
-`RecommendationStatus` reflects the system-level status of the recommendation record itself, in contrast to [`RecommendationState`](recommendationstate.md) which tracks the advertiser’s response. In most workflows `state` is the relevant field. `status` primarily serves internal record management.
+The `RecommendationStatus` reflects the system-level status of the recommendation record itself, in contrast to [`RecommendationState`](recommendationstate.md) which tracks the advertiser’s response. In most workflows `state` is the relevant field. The `status` field primarily serves internal record management.
 
 A recommendation can be `ENABLED` while in `APPLIED` or `DISMISSED` state. The status reflects the record’s persistence in the system, not its actionability.
 
@@ -35,7 +35,7 @@ A recommendation can be `ENABLED` while in `APPLIED` or `DISMISSED` state. The s
 - [type RecommendationFilterOperator](recommendationfilteroperator.md)
   The comparison operator applied in a recommendation filter condition.
 - [type RecommendationState](recommendationstate.md)
-  The lifecycle state of a recommendation, indicating whether it is available to act on or has already been accepted or rejected.
+  The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 - [type RecommendationCategory](recommendationcategory.md)
   Enumeration that categorizes a recommendation by optimization area and origin.
 

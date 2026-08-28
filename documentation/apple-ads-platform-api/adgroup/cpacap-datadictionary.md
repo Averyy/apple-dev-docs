@@ -16,6 +16,8 @@ object AdGroup.CpaCap
 
 #### Discussion
 
+Existing ad groups may still carry a `cpaCap` value, but new bid strategy configurations should express the same cost target through `bidStrategy`’s `MAX_CONVERSIONS` goal instead.
+
 ##### Example
 
 ```json

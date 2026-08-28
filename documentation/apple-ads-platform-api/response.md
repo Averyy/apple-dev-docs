@@ -16,7 +16,7 @@ object Response
 
 #### Discussion
 
-`Response` is the base response wrapper used across all response types in the Apple Ads Platform API.
+The `Response` object is the base response wrapper used across all response types in the Apple Ads Platform API.
 
 ##### Example
 

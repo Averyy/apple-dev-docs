@@ -16,7 +16,7 @@ object ProductPageDetailsQueryResponse
 
 #### Discussion
 
-`ProductPageDetailsQueryResponse` is the top-level envelope returned by [`Query Product Pages`](query-product-pages.md). The `pagination` object describes the current page position.
+The `ProductPageDetailsQueryResponse` object is the top-level envelope returned by [`Query Product Pages`](query-product-pages.md). The `pagination` object describes the current page position.
 
 ##### Example
 

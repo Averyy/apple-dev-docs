@@ -16,7 +16,7 @@ object ResponsePagination
 
 #### Discussion
 
-`ResponsePagination` reports offset-based pagination metadata: `offset`/`pageSize`/`totalCount` allow jumping to any page directly.
+The `ResponsePagination` object reports offset-based pagination metadata: `offset`, `pageSize`, and `totalCount` allow jumping to any page directly.
 
 ##### Example
 

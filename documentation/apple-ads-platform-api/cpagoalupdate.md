@@ -16,7 +16,7 @@ object CPAGoalUpdate
 
 #### Discussion
 
-`cpaCap` is deprecated on `AdGroupUpdate`. Use `BidStrategyUpdate` with `bidStrategyType` set to `MAX_CONVERSIONS` instead of `CPAGoalUpdate` to configure automated conversion-maximizing bidding.
+The `cpaCap` field is deprecated on `AdGroupUpdate`. Use `BidStrategyUpdate` with `bidStrategyType` set to `MAX_CONVERSIONS` instead of `CPAGoalUpdate` to configure automated conversion-maximizing bidding.
 
 ##### Example
 

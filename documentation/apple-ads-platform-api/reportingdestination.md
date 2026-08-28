@@ -16,7 +16,7 @@ object ReportingDestination
 
 #### Discussion
 
-`ReportingDestination` captures the destination parameters of a creative as recorded at report time.
+The `ReportingDestination` captures the destination parameters of a creative as recorded at report time.
 
 ##### Example
 

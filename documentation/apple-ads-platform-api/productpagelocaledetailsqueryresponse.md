@@ -16,7 +16,7 @@ object ProductPageLocaleDetailsQueryResponse
 
 #### Discussion
 
-`ProductPageLocaleDetailsQueryResponse` is the top-level envelope returned by [`Query Product Page Locale Details`](query-product-page-locale-details.md). The `pagination` object describes the current page position.
+The `ProductPageLocaleDetailsQueryResponse` object is the top-level envelope returned by [`Query Product Page Locale Details`](query-product-page-locale-details.md). The `pagination` object describes the current page position.
 
 ##### Example
 

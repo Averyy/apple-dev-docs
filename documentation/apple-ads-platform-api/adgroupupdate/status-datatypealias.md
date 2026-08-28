@@ -16,6 +16,8 @@ string AdGroupUpdate.Status
 
 #### Discussion
 
+Send `status: PAUSED` to stop an existing ad group from competing for delivery, or `ENABLED` to resume it.
+
 ##### Example
 
 ```json

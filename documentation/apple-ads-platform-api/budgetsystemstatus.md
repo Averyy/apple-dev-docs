@@ -16,7 +16,7 @@ string BudgetSystemStatus
 
 #### Discussion
 
-`BudgetSystemStatus` is a read-only, system-computed field on budget objects. It reflects whether campaigns can currently draw spend against the budget. Check `systemStatusReasons` on the parent object to determine the specific cause when the status is not `ACTIVE`.
+The `BudgetSystemStatus` is a read-only, system-computed field on budget objects. It reflects whether campaigns can currently draw spend against the budget. Check `systemStatusReasons` on the parent object to determine the specific cause when the status is not `ACTIVE`.
 
 ## See Also
 

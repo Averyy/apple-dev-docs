@@ -18,7 +18,7 @@ object CampaignResponse
 
 Create, get, and update campaign operations return `CampaignResponse` as the single-item response envelope. On success, `result` contains the `Campaign` object reflecting its current or post-operation state. On failure, `result` is absent and `error` contains structured details about what went wrong.
 
-Delete operations (`DELETE /v1/campaigns/{id}`) do not return a `CampaignResponse`. They return a generic `Response` object with a `null` result on success.
+Delete operations (`DELETE /v1/campaigns/{id}` ([`Delete a Campaign`](delete-campaigns-_id_.md))) don’t return a `CampaignResponse`. They return a generic `Response` object with a `null` result on success.
 
 To handle failures gracefully, check the `error` field before accessing `result`.
 

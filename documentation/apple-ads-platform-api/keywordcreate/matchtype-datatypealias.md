@@ -16,6 +16,8 @@ string KeywordCreate.MatchType
 
 #### Discussion
 
+Choosing `CATEGORY` restricts the keyword to Apple Maps business-category matching and rules out combining it with App Store-only options like `EXACT` or `BROAD`.
+
 ##### Example
 
 ```json

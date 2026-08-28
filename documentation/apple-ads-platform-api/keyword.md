@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-The targeting unit that connects a user’s App Store search query to an ad group’s ads.
+The targeting unit that connects a user’s search query to the ad group’s ads.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -18,10 +18,10 @@ object Keyword
 
 A `Keyword` is the targeting unit that connects a user’s App Store search query to an ad group’s ads. Each keyword belongs to a single ad group and inherits the ad group’s default bid unless you set a bid in the keyword’s `bid` field. The `text` and `matchType` fields are immutable after creation. To change them, delete the keyword and create a new one.
 
-- `BROAD` match serves ads when a user’s search term contains the keyword or close variants, maximizing reach.
-- `EXACT` match restricts delivery to searches that precisely match the keyword, giving tighter control over targeting and spend.
-- `PHRASE` match allows flexibility while staying focused on the keyword’s intent.
-- `CATEGORY` match targets based on the Maps business category associated with the keyword.
+- The `BROAD` match type serves ads when a user’s search term contains the keyword or close variants, maximizing reach.
+- The `EXACT` match type restricts delivery to searches that precisely match the keyword, giving tighter control over targeting and spend.
+- The `PHRASE` match type allows flexibility while staying focused on the keyword’s intent.
+- The `CATEGORY` match type targets based on the Maps business category associated with the keyword.
 
 Pausing a keyword via `status` halts delivery without deleting the object, preserving historical performance data. A `deleted` keyword is soft-deleted and excluded from serving but remains queryable.
 

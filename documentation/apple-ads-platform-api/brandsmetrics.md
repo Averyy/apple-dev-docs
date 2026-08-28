@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-Metrics for BRANDS promoted object type.
+Metrics for brands promoted object type.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -16,7 +16,7 @@ object BrandsMetrics
 
 #### Discussion
 
-`BrandsMetrics` is the base metrics object for BRANDS campaign reports. It includes spend, impression, and tap metrics shared with APPS, plus BRANDS-specific engagement actions (get directions, tap URL, call, share, get the app, gallery engagement) and their associated rate and cost breakdowns.
+The `BrandsMetrics` object is the base metrics for brands campaign reports. It includes spend, impression, and tap metrics shared with apps, plus brands-specific engagement actions (get directions, tap URL, call, share, get the app, gallery engagement) and their associated rate and cost breakdowns.
 
 All action count fields reference [`ActionMetrics`](actionmetrics.md) objects. Cost fields reference [`CostMetrics`](costmetrics.md). Rate fields reference [`RateMetrics`](ratemetrics.md). Monetary spend fields reference [`Money`](money.md).
 

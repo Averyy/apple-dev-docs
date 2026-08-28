@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: typealias
 
-`ACTIVE` on successful creation, transitioning to `INACTIVE` if issues arise.
+The system status for an ad account.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -15,6 +15,8 @@ string AdAccount.SystemStatus
 ```
 
 #### Discussion
+
+This status reflects the ad account specifically, separate from the [`Org.SystemStatus`](org/systemstatus-data.typealias.md) of its parent organization.
 
 ##### Example
 

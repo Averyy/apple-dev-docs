@@ -16,6 +16,8 @@ object TargetingDataCreate
 
 #### Discussion
 
+Most targeting dimensions only support `include`, so setting `exclude` on those has no effect at creation.
+
 ##### Example
 
 ```json

@@ -9,7 +9,7 @@ Explore the request, response, and metadata objects that Brands report endpoints
 
 #### Overview
 
-Brands reports cover the five `business-brands` reporting entities: campaigns, ad groups, ads, keywords, and search terms. Each entity has its own endpoint, request/response pair, and metadata schema, but all five share the same row shape and request structure described below.
+Brands reports cover the five `business-brands` reporting entities: campaigns, ad groups, ads, keywords, and search terms. Each entity has its own endpoint, request and response pair, and metadata schema, but all five share the same row shape and request structure described below.
 
 The five Brands reporting entities each have a dedicated endpoint.
 
@@ -26,7 +26,7 @@ The five Brands reporting entities each have a dedicated endpoint.
 Every Brands report request uses [`BrandsReportingRequest`](brandsreportingrequest.md) as its body. Each response row follows the same three-part shape:
 
 - `metadata`: entity attributes (name, status, identifiers) plus any `groupBy` dimension value (`deviceClass`, `locationId`, or `supplyPlacement`) applied to that row. Entity-specific metadata schemas define the fields available for each entity, including [`BrandsReportingCampaign`](brandsreportingcampaign.md), [`BrandsReportingAdGroup`](brandsreportingadgroup.md), [`BrandsReportingAd`](brandsreportingad.md), [`BrandsReportingKeyword`](brandsreportingkeyword.md), and [`BrandsReportingSearchTerm`](brandsreportingsearchterm.md). Ad metadata nests creative details in a [`BrandsReportingCreative`](brandsreportingcreative.md) object rather than a flat creative ID.
-- `totalMetrics`: aggregate [`BrandsMetrics`](brandsmetrics.md) (or entity variant, e.g. [`BrandsAdGroupMetrics`](brandsadgroupmetrics.md)) values for the row over the full requested date range.
+- `totalMetrics`: aggregate [`BrandsMetrics`](brandsmetrics.md) (or entity variant, for example, [`BrandsAdGroupMetrics`](brandsadgroupmetrics.md)) values for the row over the full requested date range.
 - `granularMetrics`: an array of pure metrics objects, one per period in the requested `granularity`, with no dimension fields of their own. Only present when `granularity` is specified in the request.
 
 Action-count fields (`actions`, `firstActions`, `getDirections`, `tapURL`, `call`, `share`, `getTheApp`, `galleryEngagement`) are objects keyed by attribution type (for example `{"tap": 170}`), not bare integers, in both `totalMetrics` and `granularMetrics`.
@@ -92,13 +92,13 @@ For a side-by-side comparison of Brands and Apps reporting differences (groupBy 
 - [object BrandsSearchTermResultContainer](brandssearchtermresultcontainer.md)
   Wraps the array of Brands search term report rows along with a grand-total summary.
 - [object BrandsMetrics](brandsmetrics.md)
-  Metrics for BRANDS promoted object type.
+  Metrics for brands promoted object type.
 - [object BrandsCampaignMetrics](brandscampaignmetrics.md)
-  Campaign-level metrics for BRANDS, inheriting all properties from `BrandsMetrics`.
+  Campaign-level metrics for brands, inheriting all properties from `BrandsMetrics`.
 - [object BrandsAdGroupMetrics](brandsadgroupmetrics.md)
-  Ad group-level metrics for BRANDS, inheriting all properties from `BrandsMetrics`.
+  Ad group-level metrics for brands, inheriting all properties from `BrandsMetrics`.
 - [object BrandsOptions](brandsoptions.md)
-  Report options for brands promoted object campaigns.
+  Reports options for brands promoted object campaigns.
 - [object BrandsTargetingProjection](brandstargetingprojection.md)
   Targeting projection for brands ad groups and campaigns.
 

@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: typealias
 
-The currency for the ad account, inherited from the parent org at creation.
+The currency for the ad account.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -15,6 +15,8 @@ string AdAccount.Currency
 ```
 
 #### Discussion
+
+The `AdAccount` currency is inherited from the parent org at creation.
 
 ##### Example
 

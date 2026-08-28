@@ -16,9 +16,9 @@ object SharedBudget
 
 #### Discussion
 
-A SharedBudget creates a spending cap across a group of campaigns within an ad account. Campaigns participating in the same SharedBudget draw from a common spend limit. `startTime` and `endTime` define the active window.
+A SharedBudget creates a spending cap across a group of campaigns within an ad account. Campaigns participating in the same SharedBudget draw from a common spend limit. The `startTime` and `endTime` fields define the active window.
 
-`systemStatus` reflects whether the budget is currently usable. Common blocking reasons in `systemStatusReasons` include `EXHAUSTED` and `SCHEDULE_PENDING`.
+The `systemStatus` field reflects whether the budget is currently usable. Common blocking reasons in `systemStatusReasons` include `EXHAUSTED` and `SCHEDULE_PENDING`.
 
 ##### Example
 
@@ -64,7 +64,7 @@ A SharedBudget creates a spending cap across a group of campaigns within an ad a
 ## Properties
 
 - `name` (string): Non-empty string label for the budget order. Mutable.
-- `startTime` (date-time): The start date and time for this budget. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2026-06-07T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected. Mutable.
+- `startTime` (date-time): The start date and time for this budget. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-06-07T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected. Mutable.
 - `endTime` (date-time): The end date and time for this budget. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Must be after `startTime`. Omit for an open-ended budget. Mutable.
 - `value` (Money): The budget amount as a Money object with amount and ISO 4217 currency code. See [`Money`](money.md). Mutable.
 - `adAccountIds` ([int64]): The ad account IDs this budget order applies to. Exactly one allowed at creation. Mutable.

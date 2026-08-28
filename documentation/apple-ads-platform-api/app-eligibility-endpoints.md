@@ -27,7 +27,7 @@ The following endpoints let you check eligibility and retrieve rejection reasons
 
 #### Interpret the Eligibility States
 
-The following states apply to `EligibilityResponse.state` values returned by the `POST /v1/eligibilities/apps/query` endpoint:
+The following states apply to `EligibilityResponse.state` values returned by the `POST /v1/eligibilities/apps/query` ([`Check App Eligibility`](find-apps-eligibilities.md)) endpoint:
 
 | State | Description |
 | --- | --- |

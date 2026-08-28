@@ -16,7 +16,7 @@ object CategorySuggestion
 
 #### Discussion
 
-`CategorySuggestion` represents a single category suggestion for targeting.
+The `CategorySuggestion` object represents a single category suggestion for targeting.
 
 To discover high-value categories to add as targeting criteria, use category suggestions. For App Store app campaigns, results reflect app categories. For Apple Maps campaigns, results reflect the categories associated with the brand. Sort results by `popularity` to prioritize the most impactful categories.
 
@@ -31,7 +31,7 @@ To discover high-value categories to add as targeting criteria, use category sug
 
 ## Properties
 
-- `category` (string): The category name. For App Store apps, an app category (e.g., `Productivity`, `Games`). For Apple Maps brands, the category associated with the brand (e.g., `Restaurants`, `Retail`). Read-only.
+- `category` (string): The category name. For App Store apps, an app category (for example, `Productivity`, `Games`). For Apple Maps brands, the category associated with the brand (for example, `Restaurants`, `Retail`). Read-only.
 - `popularity` (int32): Relative popularity score for this category. Read-only.
 
 ## See Also

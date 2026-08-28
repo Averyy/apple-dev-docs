@@ -14,7 +14,7 @@ Look up the allowed values for creative type, status, and destination type field
 - [type CreativeSystemStatus](creativesystemstatus.md)
   System-evaluated validation state for an ad creative.
 - [type CreativeSystemStatusReason](creativesystemstatusreason.md)
-  A reason code explaining why an ad creative is not valid or is pending review.
+  A reason code explaining why an ad creative isn’t valid or is pending review.
 - [type DestinationType](destinationtype.md)
   Specifies where an ad sends users after they tap it.
 

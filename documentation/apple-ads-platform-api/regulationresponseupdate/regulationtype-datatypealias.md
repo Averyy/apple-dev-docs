@@ -16,6 +16,8 @@ string RegulationResponseUpdate.RegulationType
 
 #### Discussion
 
+Each type maps to a different set of valid `responseValue` options, and applies at either the campaign level (`CAC`, `CAMPAIGN_SAPIN_LAW`) or the organization level (`ORG_SAPIN_LAW`).
+
 ##### Example
 
 ```json

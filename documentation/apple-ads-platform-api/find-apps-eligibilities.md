@@ -16,6 +16,21 @@ To confirm that your app can be promoted in the target markets, use this endpoin
 
 Ineligibility reasons can include: the app is not available in that market, regional distribution restrictions set in App Store Connect, or Apple Ads policy violations.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `adamId` | integer (int64) | `EQUALS`, `IN` |  | The Adam ID of the app |
+| `supplyPlacement` | string |  |  | The supply placement being checked |
+| `supplySource` | string |  |  | The supply source being checked |
+| `countryOrRegion` | string |  | Yes | The country or region evaluated |
+| `deviceClass` | string |  |  | The device class evaluated |
+| `state` | string |  |  | Eligibility state: `ELIGIBLE` or `INELIGIBLE` |
+
+See [`EligibilityQueryRequest`](eligibilityqueryrequest.md) for the full field list. The request body is a [`QueryRequest`](queryrequest.md)-shaped object composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Request Body
 
 The `state` field resolves to one of the following values:
@@ -31,16 +46,16 @@ Each item in `result` is a flat `EligibilityResponse` row for a specific combina
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `adamId` | integer (int64) | The Adam ID of the app. |
-| `supplyPlacement` | string | The supply placement being checked. |
-| `supplySource` | string | The supply source being checked. |
-| `minAge` | number | The minimum age rating required to serve ads for this app in this market. |
-| `state` | string | Eligibility state: `ELIGIBLE` or `INELIGIBLE` (default `ELIGIBLE`). |
-| `countryOrRegion` | string | The country or region evaluated. |
-| `deviceClass` | string | The device class evaluated. |
-| `reasons` | array of strings | Codes explaining an `INELIGIBLE` state. |
-| `creationTime` | string (ISO 8601) | When this eligibility record was created. |
-| `modificationTime` | string (ISO 8601) | When this eligibility record was last modified. |
+| `adamId` | integer (int64) | The Adam ID of the app |
+| `supplyPlacement` | string | The supply placement being checked |
+| `supplySource` | string | The supply source being checked |
+| `minAge` | number | The minimum age rating required to serve ads for this app in this market |
+| `state` | string | Eligibility state: `ELIGIBLE` or `INELIGIBLE` (default `ELIGIBLE`) |
+| `countryOrRegion` | string | The country or region evaluated |
+| `deviceClass` | string | The device class evaluated |
+| `reasons` | array of strings | Codes explaining an `INELIGIBLE` state |
+| `creationTime` | string (ISO 8601) | When this eligibility record was created |
+| `modificationTime` | string (ISO 8601) | When this eligibility record was last modified |
 
 An app that is eligible in some placements and ineligible in others appears as multiple rows, one per combination.
 

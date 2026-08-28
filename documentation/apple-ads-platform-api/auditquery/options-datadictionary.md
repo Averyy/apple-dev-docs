@@ -16,7 +16,7 @@ object AuditQuery.Options
 
 #### Discussion
 
-`options` has three well-known keys (`needTotals`, `timeZone`, and `metadata`), each with a fixed set of accepted string values and a default. The API accepts any other key as a plain string (labeled `Any Key` on the reference page) and passes it through without affecting the query.
+The `options` field has three well-known keys (`needTotals`, `timeZone`, and `metadata`), each with a fixed set of accepted string values and a default. The API accepts any other key as a plain string (labeled `Any Key` on the reference page) and passes it through without affecting the query.
 
 All keys and values in `options` are strings: pass `needTotals` as `"true"` or `"false"`, not as a boolean, and `metadata` as `"none"`, `"latest"`, or `"snapshot"`.
 

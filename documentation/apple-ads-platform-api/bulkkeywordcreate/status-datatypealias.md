@@ -16,6 +16,8 @@ string BulkKeywordCreate.Status
 
 #### Discussion
 
+Set this within each item’s `data` to determine whether the keyword begins serving as soon as the bulk create request completes.
+
 ##### Example
 
 ```json

@@ -33,7 +33,7 @@ An ad-group-level negative keyword requires `adGroupId` and leaves `campaignId` 
 
 | Field | Requirement |
 | --- | --- |
-| `campaignId` | Must not be set. |
+| `campaignId` | Must not be set |
 | `adGroupId` | Required |
 
 #### Payload Examples
@@ -111,7 +111,7 @@ POST /v1/negative-keywords
 
 **Maps - Phrase Negative**:
 
-Create a phrase-match negative keyword for an Apple Maps ad group. Blocks queries containing the phrase within Maps search. `CATEGORY` is not supported for negative keywords.
+Create a phrase-match negative keyword for an Apple Maps ad group. Blocks queries containing the phrase within Maps search. The `CATEGORY` match type is not supported for negative keywords.
 
 ##### Request
 

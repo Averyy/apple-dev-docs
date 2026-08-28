@@ -16,7 +16,7 @@ object DailyBudgetUpdate
 
 #### Discussion
 
-`DailyBudgetUpdate` is the update-time counterpart to [`DailyBudget`](dailybudget.md). It wraps a single `value` field containing the new daily spend cap as a `Money` object.
+The `DailyBudgetUpdate` object is the update-time counterpart to [`DailyBudget`](dailybudget.md). It wraps a single `value` field containing the new daily spend cap as a `Money` object.
 
 ##### Example
 

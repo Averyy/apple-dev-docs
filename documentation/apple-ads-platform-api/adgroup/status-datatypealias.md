@@ -16,6 +16,8 @@ string AdGroup.Status
 
 #### Discussion
 
+This field directly controls auction eligibility for the ad group, independent of the system-computed [`AdGroup.SystemStatus`](adgroup/systemstatus-data.typealias.md).
+
 ##### Example
 
 ```json

@@ -16,7 +16,7 @@ object DailyCapRecommendationHistory
 
 #### Discussion
 
-`DailyCapRecommendationHistory` is an immutable record created when you apply or dismiss a daily budget recommendation. The record preserves both `suggestedDailyBudgetAmount` and the `appliedDailyBudgetAmount` actually used, so you can check whether you overrode the suggestion.
+The `DailyCapRecommendationHistory` object is an immutable record created when you apply or dismiss a daily budget recommendation. The record preserves both `suggestedDailyBudgetAmount` and the `appliedDailyBudgetAmount` actually used, so you can check whether you overrode the suggestion.
 
 ##### Example
 
@@ -142,7 +142,7 @@ object DailyCapRecommendationHistory
 - [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
 - [object DailyCapRecommendation](dailycaprecommendation.md)
-  A daily budget recommendation for a campaign that is frequently hitting its spending ceiling.
+  A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 - [object ApplyTargetCpaRecommendation](applytargetcparecommendation.md)
   Request object for applying or dismissing a target CPA recommendation.
 - [object ApplyDailyCapRecommendation](applydailycaprecommendation.md)

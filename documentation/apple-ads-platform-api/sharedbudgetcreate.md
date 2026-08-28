@@ -16,7 +16,7 @@ object SharedBudgetCreate
 
 #### Discussion
 
-`SharedBudgetCreate` is the request payload for creating a new budget order.
+The `SharedBudgetCreate` object is the request payload for creating a new budget order.
 
 Ensure the `currency` in the `Money` object matches the ad account’s currency. Once created, you can assign the budget order to one or more campaigns using `SharedBudgetAssignment` on each campaign.
 
@@ -54,7 +54,7 @@ Ensure the `currency` in the `Money` object matches the ad account’s currency.
 ## Properties
 
 - `name` (string) *(required)*: A descriptive label for the budget order. Must be non-empty.
-- `startTime` (date-time) *(required)*: The date and time the budget becomes active. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2026-06-07T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected.
+- `startTime` (date-time) *(required)*: The date and time the budget becomes active. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-06-07T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected.
 - `endTime` (date-time): The date and time the budget expires. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Must be after `startTime`. Omit for an open-ended budget.
 - `value` (Money) *(required)*: The total budget amount as a `Money` object with `amount` and ISO 4217 `currency` code. See [`Money`](money.md).
 - `adAccountIds` ([int64]) *(required)*: The ad account IDs that can draw from this budget. Exactly one ID is allowed at creation. The API rejects requests that send more than one ID.

@@ -16,6 +16,8 @@ string DestinationCreate.DestinationType
 
 #### Discussion
 
+Apple Maps ad creatives only support `LOCAL_ADS_PLACECARD`, while App Store ad creatives use `APP_STORE_PRODUCT_PAGE`.
+
 ##### Example
 
 ```json

@@ -16,6 +16,8 @@ string RegulationResponseCreate.ResponseValue
 
 #### Discussion
 
+Set this alongside `regulationType` when creating the response, since the valid options depend on which disclosure category you’re answering.
+
 ##### Example
 
 ```json

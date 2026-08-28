@@ -16,7 +16,7 @@ object Rule
 
 #### Discussion
 
-`Rule` defines a filter for a `DYNAMIC` `LocationGroup`, specifying how the system selects locations at query time. Rules can mix different `field` values within the same group, and the system re-evaluates location membership whenever rules change, setting `LocationGroup.systemStatus` to `PENDING` until evaluation completes.
+The `Rule` object defines a filter for a `DYNAMIC` `LocationGroup`, specifying how the system selects locations at query time. Rules can mix different `field` values within the same group, and the system re-evaluates location membership whenever rules change, setting `LocationGroup.systemStatus` to `PENDING` until evaluation completes.
 
 ##### Example
 
@@ -36,7 +36,7 @@ object Rule
 
 ## Properties
 
-- `field` (string) *(required)*: The location attribute to filter on. Values: `adminArea` (state or province name, e.g. `"California"`), `locality` (city or locality, formatted as `countryOrRegion|adminArea|locality`, e.g. `"US|New York|Brooklyn"`), `postalCode` (postal code, e.g. `"94107"`), `locationId` (location ID, e.g. `"7205759403792794"`). Cannot be `null`.
+- `field` (string) *(required)*: The location attribute to filter on. Values: `adminArea` (state or province name, for example, `"California"`), `locality` (city or locality, formatted as `countryOrRegion|adminArea|locality`, for example, `"US|New York|Brooklyn"`), `postalCode` (postal code, for example, `"94107"`), `locationId` (location ID, for example, `"7205759403792794"`). Cannot be `null`.
 - `operator` (string) *(required)*: Comparison operator to apply against `field`. Cannot be `null`.
 - `value` (Rule.Value) *(required)*: The value to match against. Pass a string for `EQUALS` and `NOT_EQUALS`. Pass an array of strings for `IN` and `NOT_IN`.
 

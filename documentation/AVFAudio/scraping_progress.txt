@@ -1,4 +1,4 @@
 Completed scraping AVFAudio!
-Total pages scraped: 9
-Pages skipped (unchanged): 1505
+Total pages scraped: 0
+Pages skipped (unchanged): 1514
 Pages failed: 0

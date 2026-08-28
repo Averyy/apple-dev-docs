@@ -16,6 +16,8 @@ string Ad.SystemStatusLimitingReasons
 
 #### Discussion
 
+Unlike [`Ad.SystemStatusReasons`](ad/systemstatusreasons-data.typealias.md), these codes flag conditions, such as creative policy issues, that reduce delivery rather than stop it outright.
+
 ##### Example
 
 ```json

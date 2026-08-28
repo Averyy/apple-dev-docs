@@ -16,7 +16,7 @@ object RequestPagination
 
 #### Discussion
 
-`RequestPagination` controls which page of results is returned for a reporting request.
+The `RequestPagination` controls which page of results is returned for a reporting request.
 
 The `ResponsePagination` object on the report response returns the total number of available results. Use it to calculate how many additional pages exist and to determine the `offset` for subsequent requests when iterating through large result sets.
 
@@ -31,7 +31,7 @@ The `ResponsePagination` object on the report response returns the total number 
 
 ## Properties
 
-- `offset` (integer): The starting position (zero-based index) for the result set (e.g., `0` for the first page, `50` for the second page when `pageSize` is `50`).
+- `offset` (integer): The starting position (zero-based index) for the result set (for example, `0` for the first page, `50` for the second page when `pageSize` is `50`).
 - `pageSize` (integer): The number of records to return per page. Maximum 5000, default 100.
 
 ## See Also

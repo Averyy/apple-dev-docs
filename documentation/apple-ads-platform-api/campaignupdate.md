@@ -16,9 +16,9 @@ object CampaignUpdate
 
 #### Discussion
 
-`CampaignUpdate` is the request payload for modifying an existing campaign. Only the fields listed here can be changed after creation. Immutable fields such as `billingEvent`, `promotedObjectType`, and `promotedObjectId` are not present. Include only the fields you want to modify.
+The `CampaignUpdate` object is the request payload for modifying an existing campaign. Only the fields listed here can be changed after creation. Immutable fields such as `billingEvent`, `promotedObjectType`, and `promotedObjectId` aren’t present. Include only the fields you want to modify.
 
-Both `dailyBudget` and `sharedBudgets` can be present on a campaign and function independently: `dailyBudget` caps daily spending, while each shared budget enforces a flight-period cap defined by its `startTime` and `endTime`.
+Both `dailyBudget` and `sharedBudgets` can be present on a campaign and function independently: `dailyBudget` caps daily spending. Each shared budget enforces a flight-period cap defined by its `startTime` and `endTime`.
 
 To pause (`PAUSED`) or resume (`ENABLED`) delivery without deleting the campaign, use `status`.
 
@@ -101,12 +101,12 @@ To pause (`PAUSED`) or resume (`ENABLED`) delivery without deleting the campaign
 ## Properties
 
 - `name` (string): The advertiser-given name of this campaign. Maximum 200 characters. Must be non-empty. Mutable.
-- `startTime` (date-time): The scheduled start date and time of the campaign. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2026-06-07T00:00:00.000`). Mutable.
-- `endTime` (date-time): The scheduled end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2026-12-31T00:00:00.000`). Omit to keep the campaign running indefinitely. Mutable.
+- `startTime` (date-time): The scheduled start date and time of the campaign. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-06-07T00:00:00.000`). Mutable.
+- `endTime` (date-time): The scheduled end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-12-31T00:00:00.000`). Omit to keep the campaign running indefinitely. Mutable.
 - `status` (CampaignUpdate.Status): Advertiser-configurable serving status. Use to pause or resume the campaign. See [`CampaignStatus`](campaignstatus.md). Mutable.
 - `dailyBudget` (CampaignUpdate.DailyBudget): The daily spend cap for this campaign. See [`DailyBudgetUpdate`](dailybudgetupdate.md). Mutable.
 - `sharedBudgets` ([SharedBudgetAssignmentUpdate]): One or more budget order assignments for this campaign. See [`SharedBudgetAssignmentUpdate`](sharedbudgetassignmentupdate.md). Mutable.
-- `targeting` (CampaignUpdate.Targeting): Country/region, supply source, and placement targeting for this campaign. Mutable.
+- `targeting` (CampaignUpdate.Targeting): Country or region, supply source, and placement targeting for this campaign. Mutable.
 - `bidStrategy` (CampaignUpdate.BidStrategy): The bid strategy governing how this campaign competes in auctions. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in [`CampaignUpdate.BidStrategy`](campaignupdate/bidstrategy-data.dictionary.md). See [`BidStrategyUpdate`](bidstrategyupdate.md). Mutable.
 - `invoiceDetail` (CampaignUpdate.InvoiceDetail): Invoice and billing contact details for Line of Credit accounts. Mutable.
 - `regulationResponses` ([RegulationResponseUpdate]): Regulatory consent acknowledgments required in certain markets. See [`RegulationResponseUpdate`](regulationresponseupdate.md). Mutable.

@@ -16,7 +16,7 @@ object CostMetrics
 
 #### Discussion
 
-`CostMetrics` reports monetary cost values segmented by attribution type.
+The `CostMetrics` reports monetary cost values segmented by attribution type.
 
 ##### Example
 

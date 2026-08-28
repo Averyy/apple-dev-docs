@@ -16,9 +16,7 @@ object BrandsKeywordReportResponse
 
 #### Discussion
 
-`BrandsKeywordReportResponse` is the top-level response envelope for `BRANDS` keyword-level reports.
-
-`BRANDS` keyword reports exclude both `supplyPlacement` and `locationId` from supported `groupBy` dimensions. Use `deviceClass` only.
+The `brands` keyword reports exclude both `supplyPlacement` and `locationId` from supported `groupBy` dimensions. Use `deviceClass` only.
 
 ##### Example
 
@@ -107,7 +105,7 @@ object BrandsKeywordReportResponse
 
 ## Properties
 
-- `result` (BrandsKeywordResultContainer): Wraps the report rows, each containing keyword metadata and associated `BRANDS` performance metrics. See [`BrandsKeywordResultContainer`](brandskeywordresultcontainer.md) for details.
+- `result` (BrandsKeywordResultContainer): Wraps the report rows, each containing keyword metadata and associated `brands` performance metrics. See [`BrandsKeywordResultContainer`](brandskeywordresultcontainer.md) for details.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

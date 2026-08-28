@@ -16,6 +16,8 @@ string AppsReportingCampaign.BillingEvent
 
 #### Discussion
 
+This determines which report metrics are actionable for cost analysis: `TAPS` billing pairs with tap-based cost metrics, while `IMPRESSIONS` billing pairs with CPM-based ones.
+
 ##### Example
 
 ```json

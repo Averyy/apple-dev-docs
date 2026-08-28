@@ -16,7 +16,7 @@ object RecommendationQueryTargetCpaSuggestionResponse
 
 #### Discussion
 
-`RecommendationQueryTargetCpaSuggestionResponse` is the top-level response body for `POST /suggestions/target-cpas/query`.
+The `RecommendationQueryTargetCpaSuggestionResponse` object is the top-level response body for `POST /suggestions/target-cpas/query`.
 
 ##### Example
 

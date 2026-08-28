@@ -16,6 +16,8 @@ string Keyword.DisplayStatus
 
 #### Discussion
 
+Because it rolls up the full hierarchy, a keyword can show `AD_GROUP_ON_HOLD` or `CAMPAIGN_ON_HOLD` even when its own status is otherwise fine.
+
 ##### Example
 
 ```json

@@ -16,6 +16,8 @@ string CampaignUpdate.Status
 
 #### Discussion
 
+Send `status: PAUSED` to stop an existing campaign from competing for delivery, or `ENABLED` to resume it.
+
 ##### Example
 
 ```json

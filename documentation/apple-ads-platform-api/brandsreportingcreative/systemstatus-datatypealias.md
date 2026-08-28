@@ -16,6 +16,8 @@ string BrandsReportingCreative.SystemStatus
 
 #### Discussion
 
+A `VALID` result at report time only confirms system checks had passed as of that snapshot; Apple’s additional creative review can still affect current delivery.
+
 ##### Example
 
 ```json

@@ -16,7 +16,7 @@ string CampaignSystemStatus
 
 #### Discussion
 
-`CampaignSystemStatus` is a read-only field set by the platform. It reflects whether the campaign is actively delivering ads based on all system-evaluated conditions. When `NOT_RUNNING`, inspect `systemStatusReasons` on the [`Campaign`](campaign.md) object for the specific blocking condition.
+The `CampaignSystemStatus` is a read-only field set by the platform. It reflects whether the campaign is actively delivering ads based on all system-evaluated conditions. When `NOT_RUNNING`, inspect `systemStatusReasons` on the [`Campaign`](campaign.md) object for the specific blocking condition.
 
 ## See Also
 

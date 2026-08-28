@@ -16,7 +16,7 @@ object UserAcl
 
 #### Discussion
 
-`UserAcl` represents a user’s access control entry for a single ad account. Each record returned by `GET /v1/acls` corresponds to one ad account the authenticated user can access.
+The `UserAcl` object represents a user’s access control entry for a single ad account. Each record returned by `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)) corresponds to one ad account the authenticated user can access.
 
 ##### Example
 
@@ -35,14 +35,14 @@ object UserAcl
 
 #### Roles Reference
 
-An API Account Manager assigns roles through the Apple Ads UI, and you can’t set or change them via the API. Use the table below as a reference when interpreting the `roles` field returned by `GET /v1/acls`.
+An API Account Manager assigns roles through the Apple Ads UI, and you can’t set or change them via the API. Use the table below as a reference when interpreting the `roles` field returned by `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)).
 
 | Role | Access Level |
 | --- | --- |
 | `Admin` | Full read and write access to the ad account |
 | `API Account Manager` | Full read and write access |
 | `API Account Read Only` | Read-only access to all resources |
-| `Limited Access: API Read & Write` | Read/write access to a limited resource set |
+| `Limited Access: API Read & Write` | Read and write access to a limited resource set |
 | `Limited Access: API Read Only` | Read-only access to a limited resource set |
 
 ## Properties

@@ -16,7 +16,7 @@ string ImageType
 
 #### Discussion
 
-`ImageType` identifies the image file format of an [`Asset`](asset.md). The system infers the value from the uploaded file and returns it in the asset record. The API caller does not set it directly.
+The `ImageType` identifies the image file format of an [`Asset`](asset.md). The system infers the value from the uploaded file and returns it in the asset record. The API caller doesn’t set it directly.
 
 Uploading through [`Upload Asset`](upload-asset.md) only accepts PNG, JPG, and HEIC files. The remaining values (JPEG, HEIF, SVG, WEBP) can appear on assets that were sourced or created outside this upload path.
 

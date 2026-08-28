@@ -10,9 +10,9 @@ Update multiple negative keywords in a single request.
 
 #### Discussion
 
-Updates multiple negative keywords in a single API call. The request body contains an `items` array where each item wraps a `BulkNegativeKeywordUpdate` object with a `correlationId`. Each item must include the `id` of the negative keyword to update along with only the fields being changed. Unset fields retain their current values.
+This endpoint updates multiple negative keywords in a single API call. The request body contains an `items` array where each item wraps a `BulkNegativeKeywordUpdate` object with a `correlationId`. Each item must include the `id` of the negative keyword to update along with only the fields being changed. Unset fields retain their current values.
 
-When `allowPartialSuccess: true` is set in the request, this endpoint uses partial success semantics: if some items fail validation (for example, an ID that does not exist), the API still applies the successful updates. When omitted or `false`, any single item failure rejects the entire batch. The response includes a per-item result array with each item’s `correlationId`, success status, the updated object, and any error details for failures.
+When `allowPartialSuccess: true` is set in the request, this endpoint uses partial success semantics: if some items fail validation (for example, an ID that doesn’t exist), the API still applies the successful updates. When omitted or `false`, any single item failure rejects the entire batch. The response includes a per-item result array with each item’s `correlationId`, success status, the updated object, and any error details for failures.
 
 #### Payload Examples
 

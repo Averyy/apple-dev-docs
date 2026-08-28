@@ -16,7 +16,7 @@ object KeywordCreate
 
 #### Discussion
 
-`KeywordCreate` is the request payload for adding a keyword to an ad group via `POST /v1/keywords`, after the ad group has already been created. `AdGroupCreate` doesn’t support keywords inline. See the properties below for field-level requirements, mutability, and defaults.
+The `KeywordCreate` object is the request payload for adding a keyword to an ad group via `POST /v1/keywords` ([`Create a Keyword`](post-keywords.md)), after the ad group has already been created. The `AdGroupCreate` doesn’t support keywords inline. See the properties below for field-level requirements, mutability, and defaults.
 
 ##### Example
 
@@ -44,7 +44,7 @@ object KeywordCreate
 ## Properties
 
 - `adGroupId` (int64) *(required)*: The ad group this keyword targets.
-- `text` (string) *(required)*: The keyword text as entered by the advertiser. Cannot be changed after creation. To change it, delete the keyword and create a new one.
+- `text` (string) *(required)*: The keyword text as entered by the advertiser. Can’t be changed after creation. To change it, delete the keyword and create a new one.
 - `matchType` (KeywordCreate.MatchType): The match type for this keyword. Values: `EXACT`, `BROAD`, `PHRASE`, `CATEGORY`. See [`KeywordMatchType`](keywordmatchtype.md). Immutable after creation. To change it, delete the keyword and create a new one.
 - `bid` (Money): Per-keyword bid override as a `Money` object. See [`Money`](money.md). Overrides the ad group default bid. Omit or pass `null` to default to the ad group’s `BidStrategy` bid. Not used with Maximize Conversions bid strategy campaigns.
 - `status` (KeywordCreate.Status): Whether this keyword is active and eligible to serve. Values: `ENABLED`, `PAUSED`. See [`KeywordStatus`](keywordstatus.md).
@@ -52,7 +52,7 @@ object KeywordCreate
 ## See Also
 
 - [object Keyword](keyword.md)
-  The targeting unit that connects a user’s App Store search query to an ad group’s ads.
+  The targeting unit that connects a user’s search query to the ad group’s ads.
 - [object KeywordUpdate](keywordupdate.md)
   The request body for updating an existing Keyword object.
 - [object KeywordResponse](keywordresponse.md)

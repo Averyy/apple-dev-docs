@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Retrieve performance metrics for Apple Maps campaigns broken down by optional dimensions such as country, device class, or storefront.
+Retrieve performance metrics for Apple Maps campaigns.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -13,6 +13,8 @@ Retrieve performance metrics for Apple Maps campaigns broken down by optional di
 These reports return one row per campaign. Each row contains a `metadata` object with campaign identifiers, `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
 Use `filters` to scope results to specific campaigns by `campaignId`. Use `groupBy` to split metrics along a dimension: each dimension value produces its own row within the campaign’s result.
+
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -30,26 +32,26 @@ The following metrics are available for brand campaign reports, covering spend, 
 
 | Metric | Description |
 | --- | --- |
-| `localSpend` | Total spend in the account currency. |
-| `impressions` | Total number of ad impressions. |
-| `taps` | Total number of taps on the ad. |
-| `ttr` | Tap-through rate (`taps / impressions`). |
-| `cpt` | Average cost per tap. |
-| `cpm` | Cost per thousand impressions. |
-| `firstActions` | First-time engagement actions taken after an ad tap. |
-| `firstActionsPerTap` | First actions divided by taps. |
-| `firstActionsPerImpression` | First actions divided by impressions. |
-| `costPerFirstAction` | Spend divided by first actions. |
-| `actions` | Total actions (directions, calls, URL taps, shares, etc.). |
-| `costPerAction` | Spend divided by actions. |
-| `getDirections` | Count of Get Directions taps. |
-| `tapURL` | Count of URL taps. |
-| `call` | Count of Call actions. |
-| `share` | Count of Share actions. |
-| `getTheApp` | Count of Get the App taps. |
-| `galleryEngagement` | Count of gallery photo engagements. |
-| `actionsPerTap` | Actions divided by taps. |
-| `actionsPerImpression` | Actions divided by impressions. |
+| `localSpend` | Total spend in the account currency |
+| `impressions` | Total number of ad impressions |
+| `taps` | Total number of taps on the ad |
+| `ttr` | Tap-through rate (`taps / impressions`) |
+| `cpt` | Average cost per tap |
+| `cpm` | Cost per thousand impressions |
+| `firstActions` | First-time engagement actions taken after an ad tap |
+| `firstActionsPerTap` | First actions divided by taps |
+| `firstActionsPerImpression` | First actions divided by impressions |
+| `costPerFirstAction` | Spend divided by first actions |
+| `actions` | Total actions (directions, calls, URL taps, shares, etc.) |
+| `costPerAction` | Spend divided by actions |
+| `getDirections` | Count of Get Directions taps |
+| `tapURL` | Count of URL taps |
+| `call` | Count of Call actions |
+| `share` | Count of Share actions |
+| `getTheApp` | Count of Get the App taps |
+| `galleryEngagement` | Count of gallery photo engagements |
+| `actionsPerTap` | Actions divided by taps |
+| `actionsPerImpression` | Actions divided by impressions |
 
 Granularity constraints follow the usual date range rules, from a 7-day lookback for `HOURLY` to a 90-day-old end date for `MONTHLY`.
 
@@ -62,7 +64,7 @@ Granularity constraints follow the usual date range rules, from a 7-day lookback
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there is no `granularMetrics` breakdown to compute.
 
-`EMPTY_METRICS` isn’t supported for `business-brands`, and only `ORTZ` or `UTC` timezones are accepted.
+The `EMPTY_METRICS` value isn’t supported for `business-brands`, and only `ORTZ` or `UTC` timezones are accepted.
 
 | Constraint | Detail |
 | --- | --- |
@@ -420,13 +422,13 @@ POST /v1/reports/business-brands/campaigns/query
 ## See Also
 
 - [Ad Groups Report (Brands)](get-brand-ad-group-reports.md)
-  Retrieve performance metrics for Apple Maps ad groups broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for Apple Maps ad groups.
 - [Ads Report (Brands)](get-brand-ad-reports.md)
-  Retrieve performance metrics for Apple Maps ads broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for Apple Maps ads.
 - [Keywords Report (Brands)](get-brand-keyword-reports.md)
-  Retrieve performance metrics for Apple Maps keywords broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for Apple Maps keywords.
 - [Search Terms Report (Brands)](get-brand-search-term-reports.md)
-  Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns, broken down by optional dimensions.
+  Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 
 ---

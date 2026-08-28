@@ -16,7 +16,7 @@ string CampaignSystemLimitedStatusReason
 
 #### Discussion
 
-`CampaignSystemLimitedStatusReason` values appear in the `systemStatusLimitingReasons` array on a [`Campaign`](campaign.md) alongside an active `systemStatus`. Unlike `CampaignSystemStatusReason`, these codes do not stop delivery. They indicate conditions that constrain reach or impression volume.
+The `CampaignSystemLimitedStatusReason` values appear in the `systemStatusLimitingReasons` array on a [`Campaign`](campaign.md) alongside an active `systemStatus`. Unlike `CampaignSystemStatusReason`, these codes don’t stop delivery. They indicate conditions that constrain reach or impression volume.
 
 ## See Also
 

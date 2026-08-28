@@ -16,7 +16,7 @@ object Location
 
 #### Discussion
 
-`Location` represents a physical brand location sourced from Apple Maps. An `id` identifies each location, and each location belongs to a `brandId`. The `status` field reflects the operational state of the location. `BRANDS` campaigns typically target only `OPEN` locations.
+The `Location` object represents a physical brand location sourced from Apple Maps. An `id` identifies each location, and each location belongs to a `brandId`. The `status` field reflects the operational state of the location. Typically, `brands` campaigns target only `OPEN` locations.
 
 The API always returns the `eligibility` field, which describes whether the location can be promoted through ads. Use `categories` to understand the business type, and `address.countryOrRegion` to verify country or region targeting compatibility. The `address` and `displayPoint` provide the geographic data used for map placement rendering.
 
@@ -46,8 +46,7 @@ The API always returns the `eligibility` field, which describes whether the loca
     "fullAddress": "1 Infinite Loop, Cupertino, California 95014, US",
     "unit": "Suite 100",
     "floor": "1",
-    "building": "Main Building",
-    "dependentLocality": []
+    "building": "Main Building"
   },
   "displayPoint": {
     "latitude": "37.3318",
@@ -90,7 +89,7 @@ The API always returns the `eligibility` field, which describes whether the loca
 - `categories` ([string]): Category identifiers (first is primary). Read-only.
 - `address` (Location.Address): Postal address of the location, sourced from Apple Maps. See [`Location.Address`](location/address-data.dictionary.md) for the full subfield breakdown. Read-only.
 - `displayPoint` (Location.DisplayPoint): Geographic coordinates used for map placement rendering. Read-only.
-- `countryOrRegion` (string): ISO 3166-1 alpha-2 country code, e.g. `"US"`, `"GB"`. Read-only.
+- `countryOrRegion` (string): ISO 3166-1 alpha-2 country code, for example, `"US"`, `"GB"`. Read-only.
 - `creationTime` (date-time): ISO-8601 timestamp when the location record was created. Read-only.
 - `modificationTime` (date-time): ISO-8601 timestamp of the last modification to the location record. Read-only.
 - `eligibility` (Eligibility): Eligibility details for this location. See [`Eligibility`](eligibility.md). Read-only.

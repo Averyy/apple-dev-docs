@@ -16,7 +16,7 @@ object Sorting
 
 #### Discussion
 
-`Sorting` specifies a single sort condition for a reporting request.
+The `Sorting` specifies a single sort condition for a reporting request.
 
 Multiple `Sorting` objects can be included in the `sorting` array of a reporting request to apply multi-level sorting: results are sorted by the first entry first, then by subsequent entries for ties. When you omit `sorting`, the API sorts results by entity `id` in ascending order by default.
 
@@ -31,7 +31,7 @@ Multiple `Sorting` objects can be included in the `sorting` array of a reporting
 
 ## Properties
 
-- `field` (string): The name of the field to sort on (e.g. localSpend, impressions).
+- `field` (string): The name of the field to sort on (for example, localSpend, impressions).
 - `order` (string): The sort direction for the specified field. Possible values: `ASC` (lowest to highest), `DESC` (highest to lowest).
 
 ## See Also

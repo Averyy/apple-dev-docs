@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: typealias
 
-Reasons that can cause an organization’s system status to be `INACTIVE`.
+Reasons that can cause an organization’s system status to not be active.
 
 **Availability**:
 - apple-ads-platform-api 1.0+

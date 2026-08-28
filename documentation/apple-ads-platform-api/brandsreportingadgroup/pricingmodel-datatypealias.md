@@ -16,7 +16,7 @@ string BrandsReportingAdGroup.PricingModel
 
 #### Discussion
 
-`pricingModel` reflects the ad group’s charge unit at the time the system generated the report row. See [`ReportingPricingModel`](reportingpricingmodel.md) for additional context.
+The `pricingModel` field reflects the ad group’s charge unit at the time the system generated the report row. See [`ReportingPricingModel`](reportingpricingmodel.md) for additional context.
 
 
 ---

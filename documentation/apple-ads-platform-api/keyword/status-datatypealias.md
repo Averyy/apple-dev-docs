@@ -16,6 +16,8 @@ string Keyword.Status
 
 #### Discussion
 
+This field controls auction eligibility directly, separate from the system-computed factors reflected in [`Keyword.DisplayStatus`](keyword/displaystatus-data.typealias.md).
+
 ##### Example
 
 ```json

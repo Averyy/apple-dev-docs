@@ -16,6 +16,8 @@ string BrandsReportingAdGroup.Status
 
 #### Discussion
 
+This reflects whether the advertiser had the ad group set to run as of the report’s generation, distinct from the system-evaluated [`BrandsReportingAdGroup.SystemStatus`](brandsreportingadgroup/systemstatus-data.typealias.md) reported alongside it.
+
 ##### Example
 
 ```json

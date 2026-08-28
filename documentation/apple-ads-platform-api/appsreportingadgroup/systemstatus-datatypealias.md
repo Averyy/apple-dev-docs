@@ -16,6 +16,8 @@ string AppsReportingAdGroup.SystemStatus
 
 #### Discussion
 
+Like the other report-time status fields, this value is fixed at generation time and doesn’t reflect changes made afterward.
+
 ##### Example
 
 ```json

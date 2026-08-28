@@ -16,7 +16,7 @@ object ReportingCreativeSpec
 
 #### Discussion
 
-`ReportingCreativeSpec` captures the locale language of a creative as recorded at report time. It is embedded in ad and creative reporting objects where language-level segmentation is required.
+The `ReportingCreativeSpec` captures the locale language of a creative as recorded at report time. It’s embedded in ad and creative reporting objects where language-level segmentation is required.
 
 ##### Example
 
@@ -28,7 +28,7 @@ object ReportingCreativeSpec
 
 ## Properties
 
-- `language` (string): The BCP 47 language tag of the creative (e.g., `en-US`, `fr-FR`).
+- `language` (string): The BCP 47 language tag of the creative (for example, `en-US`, `fr-FR`).
 
 ## See Also
 

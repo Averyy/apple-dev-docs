@@ -16,7 +16,7 @@ object CampaignTargetingCreate.SupplySource
 
 #### Discussion
 
-`supplySource` is **include-only**; setting `exclude` has no effect. Valid values:
+The `supplySource` field is **include-only**; setting `exclude` has no effect. Valid values:
 
 | Value | Ad channel |
 | --- | --- |

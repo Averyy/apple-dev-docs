@@ -16,7 +16,7 @@ object DailyBudgetCreate
 
 #### Discussion
 
-`DailyBudgetCreate` is the create-time counterpart to [`DailyBudget`](dailybudget.md). It wraps a single `value` field containing the desired daily spend cap as a `Money` object. `dailyBudget` is required for all campaigns. `sharedBudgets` may also be provided to assign the campaign to one or more budget orders.
+The `DailyBudgetCreate` object is the create-time counterpart to [`DailyBudget`](dailybudget.md). It wraps a single `value` field containing the desired daily spend cap as a `Money` object. The `dailyBudget` field is required for all campaigns. The `sharedBudgets` field may also be provided to assign the campaign to one or more budget orders.
 
 ##### Example
 

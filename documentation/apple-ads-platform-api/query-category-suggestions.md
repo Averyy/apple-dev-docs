@@ -10,9 +10,18 @@ Query category suggestions for apps or brands using either a discovery or search
 
 #### Discussion
 
-Each result is a [`CategorySuggestion`](categorysuggestion.md) object with a `category` name (e.g. `"Productivity"`) and a `popularity` score. Sort by `popularity DESC` and use `pagination` to page through results.
+Each result is a [`CategorySuggestion`](categorysuggestion.md) object with a `category` name (for example, `"Productivity"`) and a `popularity` score. Sort by `popularity DESC` and use `pagination` to page through results.
 
-#### Request Body
+See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Description |
+| --- | --- | --- | --- |
+| `queryType` | string (enum) | `EQUALS` | Required. Selects this query route: `SUGGESTION` discovers categories for an app or brand, and `SEARCH` looks up or searches categories by name. |
+| `promotedObjectId` | string | `EQUALS` | Required for the `SUGGESTION` route. The app or brand ID. |
+| `promotedObjectType` | string (enum) | `EQUALS` | Required for the `SUGGESTION` route. Can be either `APPSTORE_APP` or `BUSINESS_BRAND`. |
+| `category` | string | `IN`, `LIKE` | Required for the `SEARCH` route. `IN` fetches popularity for specific named categories. `LIKE` performs a partial string match search across all available categories. |
 
 #### Payload Examples
 

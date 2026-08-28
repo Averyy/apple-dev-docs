@@ -16,7 +16,7 @@ object SharedBudgetUpdate
 
 #### Discussion
 
-`SharedBudgetUpdate` is the partial-update request payload for modifying an existing budget order. Include only the fields you want to change. Fields you leave out of the request body stay unchanged. To extend a budget that is approaching exhaustion, increase the `value.amount`.
+The `SharedBudgetUpdate` object is the partial-update request payload for modifying an existing budget order. Include only the fields you want to change. Fields you leave out of the request body stay unchanged. To extend a budget that is approaching exhaustion, increase the `value.amount`.
 
 ##### Example
 
@@ -49,7 +49,7 @@ The example below shows every updatable field for reference. In a real request, 
 ## Properties
 
 - `name` (string): New display name for the budget order.
-- `startTime` (date-time): Updated budget start date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2026-07-01T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected.
+- `startTime` (date-time): Updated budget start date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-07-01T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected.
 - `endTime` (date-time): Updated budget end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Set to `null` to remove an expiration date, making the budget open-ended.
 - `value` (Money): Updated budget amount. Specify `amount` and `currency`. See [`Money`](money.md).
 - `adAccountIds` ([int64]): The ad account ID this budget order applies to. Exactly one ID is allowed, the same single-ID constraint as at creation. The API rejects requests that send more than one ID. Mutable.

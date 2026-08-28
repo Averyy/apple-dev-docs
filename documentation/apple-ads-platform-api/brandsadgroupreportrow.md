@@ -16,7 +16,7 @@ object BrandsAdGroupReportRow
 
 #### Discussion
 
-`BrandsAdGroupReportRow` is the `BRANDS` counterpart to [`AppsAdGroupReportRow`](appsadgroupreportrow.md). The `metadata` field captures ad group identifiers and configuration at report time, while `totalMetrics` contains the aggregated performance figures across the full reporting period.
+The `BrandsAdGroupReportRow` object is the `brands` counterpart to [`AppsAdGroupReportRow`](appsadgroupreportrow.md). The `metadata` field captures ad group identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
 ##### Example
 
@@ -208,7 +208,7 @@ object BrandsAdGroupReportRow
 ## Properties
 
 - `totalMetrics` (BrandsAdGroupMetrics): See [`BrandsAdGroupMetrics`](brandsadgroupmetrics.md) for details.
-- `granularMetrics` ([BrandsAdGroupMetrics]): Time-series metrics broken down by the requested granularity (e.g., `DAILY`, `WEEKLY`). Present only when a `granularity` is specified in the request. When it isn’t, this field is absent and all data appears in `totalMetrics` instead.
+- `granularMetrics` ([BrandsAdGroupMetrics]): Time-series metrics broken down by the requested granularity (for example, `DAILY`, `WEEKLY`). Present only when a `granularity` is specified in the request. When it isn’t, this field is absent and all data appears in `totalMetrics` instead.
 - `metadata` (BrandsReportingAdGroup): See [`BrandsReportingAdGroup`](brandsreportingadgroup.md) for details.
 
 ## See Also

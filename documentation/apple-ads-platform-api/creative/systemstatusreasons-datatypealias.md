@@ -16,6 +16,8 @@ string Creative.SystemStatusReasons
 
 #### Discussion
 
+These reasons span policy review, asset validation, and App Store product page issues that the platform surfaces when [`Creative.SystemStatus`](creative/systemstatus-data.typealias.md) is `INVALID`.
+
 ##### Example
 
 ```json

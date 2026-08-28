@@ -16,15 +16,19 @@ To preview how a product page creative will appear across different locales befo
 
 The endpoint requires a filter on `productPageId`. Omitting the `languageCode` filter returns locale details for all supported languages of the product page. Add a `languageCode` filter to retrieve a specific locale.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
 #### Request Body
 
-The `filters` array supports the following fields:
+##### Filterable Fields
 
-| Field | Supported Operators | Notes |
-| --- | --- | --- |
-| `productPageId` | `EQUALS` | Scopes the query to a specific product page. See Key Constraints below. |
-| `language` | `EQUALS` | Filter to a specific language identifier, such as `en` or `fr`. |
-| `languageCode` | `EQUALS` | Filter to a specific locale, such as `en-US` or `fr-FR`. |
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `productPageId` | string (UUID) | `EQUALS` |  | Scopes the query to a specific product page. See Key Constraints below. |
+| `language` | string | `EQUALS` |  | Filter to a specific language identifier, such as `en` or `fr`. |
+| `languageCode` | string | `EQUALS` |  | Filter to a specific locale, such as `en-US` or `fr-FR`. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 Keep the following constraints in mind when querying locale details:
 
@@ -32,7 +36,7 @@ Keep the following constraints in mind when querying locale details:
 | --- | --- |
 | productPageId required | A filter on `productPageId` is required. The query will return an error without it. |
 | All locales by default | Omitting `languageCode` returns all locales configured for the product page. |
-| assetsByDevice structure | The `assetsByDevice` field maps each specific device type (e.g., `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
+| assetsByDevice structure | The `assetsByDevice` field maps each specific device type (for example, `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
 
 #### Payload Examples
 

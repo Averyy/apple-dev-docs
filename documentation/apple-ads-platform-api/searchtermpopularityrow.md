@@ -39,15 +39,15 @@ The response provides three popularity scales, each scoped differently.
 
 ## Properties
 
-- `week` (date): The start date of the completed weekly range in YYYY-MM-DD format. Present when granularity is `WEEKLY_SUN_SAT`. Read-only.
+- `week` (date): The date immediately following the completed weekly range, in YYYY-MM-DD format. For example, a range covering Sunday through Saturday returns the following Sunday’s date. Present when granularity is `WEEKLY_SUN_SAT`. Read-only.
 - `month` (string): Calendar month of the report snapshot in YYYY-MM format. Present when granularity is `MONTHLY`. Read-only.
-- `countryOrRegion` (string): ISO 3166-1 alpha-2 country or region code. Read-only.
-- `genre` (string): App Store genre classification. Read-only.
-- `searchTerm` (string): The search term. Only terms meeting eligibility criteria (≥ 500 searches) are included. Read-only.
-- `rankInGenre` (integer): Rank of the search term by search volume within its country/region and genre. Rank `1` = highest volume. Up to 500 search terms per country/genre combination. Read-only.
-- `searchPopularityInGenre` (integer): Popularity within country/region and genre on a 1–100 scale. `100` = most popular within that genre. Read-only.
-- `searchPopularity1to100` (integer): Popularity score on a 1–100 scale across all genres within the country or region. `100` = most popular overall. Use to compare a term’s in-genre popularity against its market-wide popularity. Read-only.
-- `searchPopularity1to5` (integer): Popularity across all genres within country/region on a 1–5 scale. `5` = most popular. Matches the Search Popularity metric displayed in Campaign Management. Read-only.
+- `countryOrRegion` (string): ISO 3166-1 alpha-2 country or region code. Data is available for approximately 90 countries and regions, excluding Russia and Belarus. Always included in the response. Read-only.
+- `genre` (string): App Store genre classification. Always included in the response. Read-only.
+- `searchTerm` (string): The search term. Only terms meeting eligibility criteria (≥ 500 searches and ≥ 10 impressions within the reporting period) are included. Always included in the response. Read-only.
+- `rankInGenre` (integer): Rank of the search term by search volume within its country or region and genre. Rank `1` = highest volume. Up to 500 search terms per country and genre combination. Included only when requested via the request’s `fields` array. Read-only.
+- `searchPopularityInGenre` (integer): Popularity within country or region and genre on a 1–100 scale. `100` = most popular within that genre. Included only when requested via the request’s `fields` array. Read-only.
+- `searchPopularity1to100` (integer): Popularity score on a 1–100 scale across all genres within the country or region. `100` = most popular overall. Use to compare a term’s in-genre popularity against its market-wide popularity. Include only when requested via the request’s `fields` array. Read-only.
+- `searchPopularity1to5` (integer): Popularity across all genres within country/region on a 1–5 scale. `5` = most popular. Matches the Search Popularity metric displayed in Campaign Management. Include only when requested via the request’s `fields` array. Read-only.
 
 ## See Also
 

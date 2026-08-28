@@ -16,6 +16,8 @@ string AppsReportingCampaign.AdChannelType
 
 #### Discussion
 
+This distinguishes `SEARCH` results placements from `DISPLAY` placements such as the Search tab, Today tab, or product pages for this campaign’s rows.
+
 ##### Example
 
 ```json

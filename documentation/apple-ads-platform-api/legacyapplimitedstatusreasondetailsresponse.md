@@ -16,7 +16,7 @@ object LegacyAppLimitedStatusReasonDetailsResponse
 
 #### Discussion
 
-`LegacyAppLimitedStatusReasonDetailsResponse` extends the standard [`Response`](response.md) envelope with a `result` object containing `countryOrRegionLimitedStatusReasons`. This map associates ISO 3166-1 alpha-2 country or region codes with arrays of reason strings that explain why ad delivery is limited in each market for legacy app campaigns.
+The `LegacyAppLimitedStatusReasonDetailsResponse` object extends the standard [`Response`](response.md) envelope with a `result` object containing `countryOrRegionLimitedStatusReasons`. This map associates ISO 3166-1 alpha-2 country or region codes with arrays of reason strings that explain why ad delivery is limited in each market for legacy app campaigns.
 
 An empty array for a given country or region means no limiting reasons are currently active there. Reason strings are human-readable labels corresponding to system conditions such as budget exhaustion, policy holds, or app-eligibility issues.
 

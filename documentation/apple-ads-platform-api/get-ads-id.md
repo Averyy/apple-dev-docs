@@ -12,7 +12,7 @@ Retrieves a single ad by its unique identifier.
 
 This endpoint retrieves a single ad by its ID. The response includes `systemStatus`, `displayStatus`, `systemStatusReasons`, and `systemStatusLimitingReasons`. To diagnose why an ad may not be delivering, use these fields together. See [`Ads Endpoints`](ads-endpoints.md) for the full status field semantics.
 
-`displayStatus` resolves to one of the following values:
+The `displayStatus` field resolves to one of the following values:
 
 | Value | Description |
 | --- | --- |
@@ -50,7 +50,7 @@ Keep the following constraints in mind when reading a GET response:
 
 ##### Request
 
-Response for an ad that is actively serving. `systemStatus` is `RUNNING` and `displayStatus` is `RUNNING`.
+Response for an ad that is actively serving. The `systemStatus` field is `RUNNING` and the `displayStatus` field is `RUNNING`.
 
 ```None
 GET https://api.ads.apple.com/v1/ads/777888999
@@ -83,7 +83,7 @@ GET https://api.ads.apple.com/v1/ads/777888999
 
 ##### Request
 
-Response for an ad whose ad creative is pending review. `systemStatus` is `NOT_RUNNING` with a reason of `AD_APPROVAL_PENDING`, and `displayStatus` is `PROCESSING`.
+Response for an ad whose ad creative is pending review. The `systemStatus` field is `NOT_RUNNING` with a reason of `AD_APPROVAL_PENDING`, and the `displayStatus` field is `PROCESSING`.
 
 ```None
 GET https://api.ads.apple.com/v1/ads/777888998

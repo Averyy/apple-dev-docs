@@ -16,7 +16,7 @@ string EligibilityStatus
 
 #### Discussion
 
-`EligibilityStatus` is a string enumeration embedded within [`Eligibility`](eligibility.md). To make quick go/no-go decisions before configuring campaigns, use it.
+The `EligibilityStatus` is a string enumeration embedded within [`Eligibility`](eligibility.md). Use it to decide quickly whether to proceed before configuring campaigns.
 
 ## See Also
 

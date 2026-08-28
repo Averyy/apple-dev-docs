@@ -16,7 +16,7 @@ object BusinessCategory
 
 #### Discussion
 
-`BusinessCategory` represents a leaf or branch node in the Apple Maps category taxonomy. Categories classify brands and locations and scope which businesses Apple Maps campaigns can reach.
+The `BusinessCategory` object represents a leaf or branch node in the Apple Maps category taxonomy. Categories classify brands and locations and scope which businesses Apple Maps campaigns can reach.
 
 You can associate active Apple Maps campaigns only with categories that have `eligibility.status: ELIGIBLE`. Check eligibility before using a category in a production campaign.
 
@@ -38,9 +38,7 @@ You can associate active Apple Maps campaigns only with categories that have `el
       }
     ],
     "modificationTime": "2025-01-10T08:00:00.000"
-  },
-  "creationTime": "2024-11-02T09:15:00.000",
-  "modificationTime": "2025-01-10T08:00:00.000"
+  }
 }
 ```
 
@@ -51,8 +49,6 @@ You can associate active Apple Maps campaigns only with categories that have `el
 - `qualifiedId` (string): Dot-delimited taxonomy path encoding the category hierarchy. A dot always marks a hierarchy boundary, but an individual level’s name can itself contain underscores (for example, `association_or_organization`). Example: `"dining.restaurant"`. Use this value as the `text` on a `CATEGORY` match-type Keyword. Read-only.
 - `description` (string): Human-readable description of the category. Example: `"Sporting venues where animals are involved."` Read-only.
 - `eligibility` (Eligibility): Ad serving eligibility for this category. See [`Eligibility`](eligibility.md). Read-only.
-- `creationTime` (date-time): ISO-8601 timestamp when the category record was created. Read-only.
-- `modificationTime` (date-time): ISO-8601 timestamp of the last modification. Read-only.
 
 ## See Also
 

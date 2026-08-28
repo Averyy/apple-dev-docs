@@ -18,11 +18,11 @@ object Ad
 
 An `Ad` links a `Creative` to an `AdGroup` and is the atomic serving unit, the object that appears to users. To serve a different ad creative on an ad group, create a new ad rather than modifying an existing one.
 
-`status` is the advertiser-controlled on/off switch. `ENABLED` allows the ad to participate in auctions while `PAUSED` suspends it.
+The `status` field is the advertiser-controlled on/off switch. The `ENABLED` value allows the ad to participate in auctions. The `PAUSED` value suspends it.
 
 When `systemStatus` is `NOT_RUNNING`, inspect `systemStatusReasons` for the cause. Common causes include ad creative review pending (`AD_APPROVAL_PENDING`), a rejected ad creative (`AD_APPROVAL_CREATIVE_DOC_REJECTED`), or an incompatible product page (`PRODUCT_PAGE_INCOMPATIBLE`).
 
-Fields marked **Filterable** in the dictionary keys work as filter criteria in query endpoint requests. See [`Calling the Apple Ads Platform API`](calling-apple-ads-platform-api.md) for details on constructing queries.
+Fields you can filter and sort on when querying ads are listed in [`Query Ads`](post-ads-query.md).
 
 ##### Example
 
@@ -61,20 +61,20 @@ Fields marked **Filterable** in the dictionary keys work as filter criteria in q
 
 ## Properties
 
-- `id` (int64): The unique identifier of the ad. Read-only. Filterable: EQUALS, IN.
+- `id` (int64): The unique identifier of the ad. Read-only.
 - `name` (string): Advertiser-given name of the ad. Mutable.
-- `status` (Ad.Status): Advertiser-configurable status. Use to pause or enable the ad. See [`AdStatus`](adstatus.md). Mutable. Filterable: EQUALS, IN.
+- `status` (Ad.Status): Advertiser-configurable status. Use to pause or enable the ad. See [`AdStatus`](adstatus.md). Mutable.
 - `adAccountId` (int64): The identifier of the ad account this ad belongs to. Immutable after creation.
-- `campaignId` (int64): The identifier of the campaign this ad belongs to. Immutable after creation. Filterable: EQUALS.
-- `adGroupId` (int64): The identifier of the ad group this ad belongs to. Immutable after creation. Filterable: EQUALS.
-- `creativeId` (int64): The unique identifier of the ad creative this ad was created from. Immutable after creation. Filterable: EQUALS.
+- `campaignId` (int64): The identifier of the campaign this ad belongs to. Immutable after creation.
+- `adGroupId` (int64): The identifier of the ad group this ad belongs to. Immutable after creation.
+- `creativeId` (int64): The unique identifier of the ad creative this ad was created from. Immutable after creation.
 - `systemStatus` (Ad.SystemStatus): System-computed serving status of the ad. See [`AdSystemStatus`](adsystemstatus.md). Read-only.
 - `systemStatusReasons` ([Ad.SystemStatusReasons]): Reasons for the current system status. Populated when the ad is not serving. Possible values: `AD_APPROVAL_CREATIVE_DOC_EXPIRED`, `AD_APPROVAL_CREATIVE_DOC_NOT_SUBMITTED`, `AD_APPROVAL_CREATIVE_DOC_PENDING`, `AD_APPROVAL_CREATIVE_DOC_REJECTED`, `AD_APPROVAL_PENDING`, `AD_APPROVAL_REJECTED`, `CREATIVE_INVALID`, `CREATIVE_LOCALE_INCOMPATIBLE`, `CREATIVE_PENDING`, `CREATIVE_SET_INVALID`, `CREATIVE_SET_UNSUPPORTED`, `DELETED_BY_USER`, `PAUSED_BY_SYSTEM`, `PAUSED_BY_USER`, `PROCESSING`, `PRODUCT_PAGE_DELETED`, `PRODUCT_PAGE_HIDDEN`, `PRODUCT_PAGE_INCOMPATIBLE`, `PRODUCT_PAGE_INSUFFICIENT_ASSETS`, `PRODUCT_PAGE_UNAVAILABLE`. Read-only.
 - `systemStatusLimitingReasons` ([Ad.SystemStatusLimitingReasons]): System status limited reasons for the ad. Possible values: `CREATIVE_POLICY_ISSUES`. Read-only.
 - `creationTime` (date-time): Timestamp when the ad was created. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification to the ad. Read-only.
 - `displayStatus` (Ad.DisplayStatus): Rolled-up delivery state combining ad, ad group, and campaign conditions. Possible values: `RUNNING`, `PAUSED`, `ON_HOLD`, `AD_GROUP_ON_HOLD`, `CAMPAIGN_ON_HOLD`, `LIMITED`, `PROCESSING`, `DELETED`. Read-only.
-- `deleted` (boolean): Indicates whether the ad is deleted. Read-only. Filterable: EQUALS.
+- `deleted` (boolean): Indicates whether the ad is deleted. Read-only.
 
 ## See Also
 

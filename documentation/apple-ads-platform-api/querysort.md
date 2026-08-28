@@ -16,7 +16,7 @@ object QuerySort
 
 #### Discussion
 
-`QuerySort` defines one sort directive in a `QueryRequest.sorting` array. The query applies multiple `QuerySort` entries in order: the first entry is the primary sort, subsequent entries are tiebreakers.
+The `QuerySort` defines one sort directive in a `QueryRequest.sorting` array. The query applies multiple `QuerySort` entries in order: the first entry is the primary sort, subsequent entries are tiebreakers.
 
 ##### Example
 
@@ -29,7 +29,7 @@ object QuerySort
 
 ## Properties
 
-- `field` (string): The name of the field to sort on (e.g., id, name).
+- `field` (string): The name of the field to sort on (for example, id, name).
 - `order` (QuerySortOrder): The sort direction for the specified field. Valid values: `ASC`, `DESC`.
 
 ## See Also

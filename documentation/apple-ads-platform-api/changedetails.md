@@ -57,11 +57,11 @@ Each `ChangeDetails` record represents one entity’s complete change history fo
 
 ##### Relationship to Auditsummary
 
-`ChangeDetails` is the field-level expansion of an [`AuditSummary`](auditsummary.md) row. The `count` field on a summary row tells you how many field change entries to expect across all `ActivityDetail` objects in `details`.
+The `ChangeDetails` object is the field-level expansion of an [`AuditSummary`](auditsummary.md) row. The `count` field on a summary row tells you how many field change entries to expect across all `ActivityDetail` objects in `details`.
 
 ##### Entitymetadata Vs Metas
 
-`ChangeDetails` always populates `entityMetaData` (when metadata is available) regardless of the request’s `options.metadata` setting. It represents a point-in-time snapshot of key entity attributes captured at change time. This differs from the `metas` field on `AuditSummary`, which the request’s `options.metadata` query option controls.
+The `ChangeDetails` always populates `entityMetaData` (when metadata is available) regardless of the request’s `options.metadata` setting. It represents a point-in-time snapshot of key entity attributes captured at change time. This differs from the `metas` field on `AuditSummary`, which the request’s `options.metadata` query option controls.
 
 ##### Understand Oldvalues and Newvalues
 
@@ -71,7 +71,7 @@ Both fields are string arrays. For scalar fields, each array contains a single e
 | --- | --- | --- |
 | `CREATE` | Empty `[]` | Values at creation |
 | `UPDATE` | Previous value(s) | Updated value(s) |
-| `DELETE` | Last known value(s) | Typically empty `[]`, but may contain system-managed values (e.g., deletion flag, status, transaction ID) set at delete time |
+| `DELETE` | Last known value(s) | Typically empty `[]`, but may contain system-managed values (for example, deletion flag, status, transaction ID) set at delete time |
 
 ## Topics
 
@@ -84,12 +84,12 @@ Both fields are string arrays. For scalar fields, each array contains a single e
 - `transactionId` (string): The unique identifier for the transaction that produced this change record.
 - `detailId` (string): A unique identifier for this specific entity change within the transaction.
 - `eventType` (AuditEventType): The type of change operation performed. See [`AuditEventType`](auditeventtype.md).
-- `entityType` (string): The API entity type that changed, matching the name of the API entity in the Apple Ads Platform API (e.g. `Campaign`, `AdGroup`, `Keyword`). Not a closed enum. See [`Change History Endpoints`](change-history-endpoints.md) for the entity types this endpoint reports on.
-- `entityId` (string): The platform ID of the entity that changed (e.g. a campaign ID or ad group ID).
+- `entityType` (string): The API entity type that changed, matching the name of the API entity in the Apple Ads Platform API (for example, `Campaign`, `AdGroup`, `Keyword`). Not a closed enum. See [`Change History Endpoints`](change-history-endpoints.md) for the entity types this endpoint reports on.
+- `entityId` (string): The platform ID of the entity that changed (for example, a campaign ID or ad group ID).
 - `eventTime` (date-time): The UTC timestamp of when the change occurred, in ISO 8601 format.
 - `userType` (AuditUserType): The category of actor that performed the change. See [`AuditUserType`](auditusertype.md) for possible values. Read-only.
-- `modifiedBy` (string): The identifier of the user or service that performed the change. We do not expose user email, only `modifiedBy`. Read-only.
-- `entityMetaData` (ChangeDetails.EntityMetaData): A key-value map of entity metadata captured at the time of the change (e.g. entity name, parent IDs). See [`ChangeDetails.EntityMetaData`](changedetails/entitymetadata-data.dictionary.md). Keys and values are strings and vary by entity type. Read-only.
+- `modifiedBy` (string): The identifier of the user or service that performed the change. We don’t expose user email, only `modifiedBy`. Read-only.
+- `entityMetaData` (ChangeDetails.EntityMetaData): A key-value map of entity metadata captured at the time of the change (for example, entity name, parent IDs). See [`ChangeDetails.EntityMetaData`](changedetails/entitymetadata-data.dictionary.md). Keys and values are strings and vary by entity type. Read-only.
 - `details` ([ActivityDetail]): An array of [`ActivityDetail`](activitydetail.md) objects. Each entry contains a `changes` array of field change objects, where every entry captures one field that changed in the transaction. Read-only.
 
 ## See Also

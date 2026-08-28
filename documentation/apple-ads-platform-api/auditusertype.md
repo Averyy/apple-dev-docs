@@ -16,7 +16,7 @@ string AuditUserType
 
 #### Discussion
 
-`AuditUserType` appears in the `userType` field of [`AuditSummary`](auditsummary.md) and [`ChangeDetails`](changedetails.md) records. Use it to distinguish manual advertiser-initiated changes from API-driven automation or Apple-initiated actions.
+The `AuditUserType` appears in the `userType` field of [`AuditSummary`](auditsummary.md) and [`ChangeDetails`](changedetails.md) records. Use it to distinguish manual advertiser-initiated changes from API-driven automation or Apple-initiated actions.
 
 Filter by `userType` in an [`AuditQuery`](auditquery.md) to scope results to a specific actor category:
 

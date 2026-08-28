@@ -16,9 +16,9 @@ object ReportingSearchTerm
 
 #### Discussion
 
-`ReportingSearchTerm` is the search term metadata object embedded in search term report rows. The `keyword` field links the search term back to the keyword that matched it, enabling attribution of observed query behavior to specific bids.
+The `ReportingSearchTerm` object is the search term metadata embedded in search term report rows. The `keyword` field links the search term back to the keyword that matched it, enabling attribution of observed query behavior to specific bids.
 
-Search term reports exclusively require the ORTZ timezone. UTC is not supported. The report populates the dimension fields (`countryOrRegion`, `deviceClass`) based on the `groupBy` dimensions in the report request. The `adGroup` field provides a lightweight parent ad group summary for display and grouping purposes.
+Search term reports exclusively require the ORTZ timezone. UTC isn’t supported. The report populates the dimension fields (`countryOrRegion`, `deviceClass`) based on the `groupBy` dimensions in the report request. The `adGroup` field provides a lightweight parent ad group summary for display and grouping purposes.
 
 ##### Example
 

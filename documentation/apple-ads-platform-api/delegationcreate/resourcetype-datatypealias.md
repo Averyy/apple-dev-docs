@@ -16,6 +16,8 @@ string DelegationCreate.ResourceType
 
 #### Discussion
 
+Choosing `CONTENT_PROVIDER` or `BUSINESS_BRAND` here fixes which kind of identifier `resourceId` must supply.
+
 ##### Example
 
 ```json

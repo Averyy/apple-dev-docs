@@ -16,6 +16,8 @@ string KeywordCreate.Status
 
 #### Discussion
 
+Include `status` in the create request to determine whether the new keyword begins competing in auctions immediately or starts paused.
+
 ##### Example
 
 ```json

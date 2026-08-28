@@ -10,9 +10,9 @@ Create multiple negative keywords in a single request.
 
 #### Discussion
 
-Creates multiple negative keywords in a single API call. The request body contains an `items` array where each item wraps a `BulkNegativeKeywordCreate` object with a `correlationId`. You can mix campaign-level and ad-group-level negatives in the same request. The API processes each item independently.
+This endpoint creates multiple negative keywords in a single API call. The request body contains an `items` array where each item wraps a `BulkNegativeKeywordCreate` object with a `correlationId`. You can mix campaign-level and ad-group-level negatives in the same request. The API processes each item independently.
 
-When `allowPartialSuccess: true` is set in the request, this endpoint uses partial success semantics: if some items in the request fail validation (for example, a duplicate text/matchType combination), the API still creates the successful items. When omitted or `false`, any single item failure rejects the entire batch. The response includes a per-item result array with each item’s `correlationId`, success status, the created object, and any error details for failures.
+When `allowPartialSuccess: true` is set in the request, this endpoint uses partial success semantics: if some items in the request fail validation (for example, a duplicate text and matchType combination), the API still creates the successful items. When omitted or `false`, any single item failure rejects the entire batch. The response includes a per-item result array with each item’s `correlationId`, success status, the created object, and any error details for failures.
 
 #### Payload Examples
 

@@ -16,6 +16,8 @@ string NegativeKeyword.Status
 
 #### Discussion
 
+This field controls suppression directly; pausing it lets matching search queries resume triggering ads again.
+
 ##### Example
 
 ```json

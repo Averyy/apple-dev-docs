@@ -14,6 +14,21 @@ This endpoint queries ads using a standard `QueryRequest` body. Filter by `adGro
 
 The system excludes deleted ads from results by default. To retrieve deleted ads, include a `deleted EQUALS true` filter.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | integer | `EQUALS`, `IN` | Yes (default) | The unique identifier for the ad. |
+| `campaignId` | integer | `EQUALS` | Yes | The campaign this ad belongs to. |
+| `adGroupId` | integer | `EQUALS` | Yes | The ad group this ad belongs to. |
+| `creativeId` | integer | `EQUALS` | Yes | The ad creative this ad was created from. |
+| `status` | string (enum) | `EQUALS`, `IN` | Yes | Advertiser-configured status. See [`AdStatus`](adstatus.md). |
+| `deleted` | boolean | `EQUALS` | Yes | Whether the ad has been deleted. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+
 #### Payload Examples
 
 **Query by Ad Group**:

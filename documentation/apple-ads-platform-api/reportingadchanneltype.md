@@ -16,6 +16,8 @@ string ReportingAdChannelType
 
 #### Discussion
 
+This distinguishes `SEARCH` results placements from `DISPLAY` placements such as the Search tab, Today tab, or product pages.
+
 ## See Also
 
 - [object TimeRange](timerange.md)

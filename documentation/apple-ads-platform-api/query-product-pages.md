@@ -16,12 +16,16 @@ Filter by `adamId` to list all product pages for a specific app. This is the rec
 
 Changes made in App Store Connect, such as publishing, hiding, or editing a product page, appear in this endpoint’s results after a short propagation delay.
 
-The `filters` array supports the following fields:
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
 
-| Field | Supported Operators | Notes |
-| --- | --- | --- |
-| `adamId` | `EQUALS` | Filter to all product pages for a specific app. |
-| `state` | `EQUALS` | Filter by page state. `state` is a plain nullable string with no fixed enum. The typical value is `PUBLISHED`. |
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `adamId` | integer | `EQUALS` |  | Filter to all product pages for a specific app. |
+| `state` | string | `EQUALS` |  | Filter by page state. `state` is a plain nullable string with no fixed enum. The typical value is `PUBLISHED`. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 Keep the following constraints in mind when querying product pages:
 

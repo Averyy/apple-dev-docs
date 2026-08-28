@@ -14,7 +14,7 @@ Reference the enumerations and scalar types for account management, access contr
 - [type OrgSystemStatus](orgsystemstatus.md)
   System-derived operational status of an organization.
 - [type OrgSystemStatusReason](orgsystemstatusreason.md)
-  Reasons that can cause an organization’s system status to be `INACTIVE`.
+  Reasons that can cause an organization’s system status to not be active.
 - [type AdAccountSystemStatus](adaccountsystemstatus.md)
   System-derived operational status of an ad account.
 - [type AdAccountSystemStatusReason](adaccountsystemstatusreason.md)

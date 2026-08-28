@@ -16,7 +16,7 @@ object CampaignTargetingCreate.SupplyPlacement
 
 #### Discussion
 
-`supplyPlacement` is **include-only**; setting `exclude` has no effect. Each placement belongs to exactly one [`CampaignTargetingCreate.SupplySource`](campaigntargetingcreate/supplysource-data.dictionary.md):
+The `supplyPlacement` field is **include-only**; setting `exclude` has no effect. Each placement belongs to exactly one [`CampaignTargetingCreate.SupplySource`](campaigntargetingcreate/supplysource-data.dictionary.md):
 
 | Value | Supply source | Placement |
 | --- | --- | --- |

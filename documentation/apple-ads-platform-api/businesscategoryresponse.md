@@ -16,7 +16,7 @@ object BusinessCategoryResponse
 
 #### Discussion
 
-[`Get Business Category`](get-category-by-id.md) returns `BusinessCategoryResponse` as the top-level envelope. On success, `result` contains a single [`BusinessCategory`](businesscategory.md) object. On failure (for example, 404 Not Found), the response contains only the `error` object. The response omits the `result` key entirely rather than setting it to `null`.
+The [`Get Business Category`](get-category-by-id.md) returns `BusinessCategoryResponse` as the top-level envelope. On success, `result` contains a single [`BusinessCategory`](businesscategory.md) object. On failure (for example, 404 Not Found), the response contains only the `error` object. The response omits the `result` key entirely rather than setting it to `null`.
 
 ##### Example
 
@@ -27,8 +27,6 @@ object BusinessCategoryResponse
     "name": "Restaurant",
     "qualifiedId": "dining.restaurant",
     "description": "Establishments that serve prepared food and beverages for on-site consumption.",
-    "creationTime": "2025-01-10T08:00:00.000",
-    "modificationTime": "2025-01-10T08:00:00.000",
     "eligibility": {
       "status": "ELIGIBLE",
       "blockedGroups": [],

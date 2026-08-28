@@ -16,6 +16,8 @@ string DelegationUpdate.ResourceType
 
 #### Discussion
 
+This value determines whether `resourceId` must refer to a Content Provider ID or a Brand ID.
+
 ##### Example
 
 ```json

@@ -16,7 +16,7 @@ object AssetConstraintGroup
 
 #### Discussion
 
-`AssetConstraintGroup` defines a pairing of supply placements and geographic markets that collectively describe where an asset eligibility rule applies. [`AssetEligibility`](asseteligibility.md) objects embed it to specify the exact scope of a blocking or allowing rule for an asset.
+The `AssetConstraintGroup` object defines a pairing of supply placements and geographic markets that collectively describe where an asset eligibility rule applies. The [`AssetEligibility`](asseteligibility.md) objects embed it to specify the exact scope of a blocking or allowing rule for an asset.
 
 When both `supplyPlacement` and `countryOrRegion` are populated, the constraint applies to the intersection of those placements and markets.
 

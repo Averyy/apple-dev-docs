@@ -16,7 +16,7 @@ object AuditFilter
 
 #### Discussion
 
-`AuditFilter` is the building block for narrowing change history query results. Each filter targets a single field and applies the specified operator against the provided values. The system combines multiple filters in the same request with logical AND.
+The `AuditFilter` object is the building block for narrowing change history query results. Each filter targets a single field and applies the specified operator against the provided values. The system combines multiple filters in the same request with logical AND.
 
 Every `AuditQuery` request requires an `eventTime` filter:
 
@@ -68,7 +68,7 @@ Each field accepts only certain operators and value formats, summarized below.
 ## Properties
 
 - `field` (string): The name of the field to filter on. Standard event fields always available: `eventTime`, `entityType`, `entityId`, `userId`, `userType`, `txnId`. Parent identifier fields vary by `entityType`: `adAccountId` (for `Campaign`, `AdGroup`), `campaignId` (for `AdGroup`, `Keyword`, `NegativeKeyword`), `adGroupId` (for `Keyword`, `NegativeKeyword`). For non-time fields, the API supports only `EQUALS` and `IN`. It reserves `GREATER_THAN`, `LESS_THAN`, and `BETWEEN` for `eventTime`.
-- `operator` (AuditOperator): The comparison operator to apply. See [`AuditOperator`](auditoperator.md). For most fields use `IN`. For `eventTime` use `BETWEEN` for a bounded range, or `GREATER_THAN`/`LESS_THAN` for an open-ended range.
+- `operator` (AuditOperator): The comparison operator to apply. See [`AuditOperator`](auditoperator.md). For most fields use `IN`. For `eventTime` use `BETWEEN` for a bounded range, or `GREATER_THAN` or `LESS_THAN` for an open-ended range.
 - `value` (AuditFilter.Value): One or more filter values as strings. See [`AuditFilter.Value`](auditfilter/value-data.dictionary.md). For `BETWEEN`, provide exactly two values representing the inclusive lower and upper bounds.
 
 ## See Also

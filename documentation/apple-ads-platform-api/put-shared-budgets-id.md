@@ -104,7 +104,7 @@ PUT /v1/shared-budgets/{id}
 
 ## Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `id` (string) *(required)*
 
 ## See Also
 

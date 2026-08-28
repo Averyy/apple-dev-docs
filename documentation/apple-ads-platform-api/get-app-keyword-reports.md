@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Retrieve performance metrics for keywords broken down by optional dimensions such as device class or country.
+Retrieve performance metrics for keywords.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -12,7 +12,9 @@ Retrieve performance metrics for keywords broken down by optional dimensions suc
 
 Keyword performance reports return one row per keyword. Each row contains a `metadata` object with keyword identifiers (including `campaignId`, `adGroupId`, `text`, and `matchType`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`. Rows may also include an optional `insights` object whose `bidRecommendation` field surfaces a recommended bid for the keyword.
 
-Filter by `adGroupId` or `campaignId` in the `filters` array to scope results. Use `groupBy` to split metrics along a dimension.
+Every apps report request requires a `campaignId` filter; optionally add `adGroupId` in the `filters` array to scope results further. Use `groupBy` to split metrics along a dimension.
+
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -249,13 +251,13 @@ POST /v1/reports/apps/keywords/query
 ## See Also
 
 - [Campaigns Report](get-app-campaign-reports.md)
-  Retrieve performance metrics for campaigns broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for campaigns.
 - [Ad Groups Report](get-app-ad-group-reports.md)
-  Retrieve performance metrics for ad groups broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for ad groups.
 - [Ads Report](get-app-ad-reports.md)
-  Retrieve performance metrics for ads broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for ads.
 - [Search Terms Report](get-app-search-term-reports.md)
-  Retrieve performance metrics for the actual search terms that triggered keyword matches, broken down by optional dimensions.
+  Retrieve performance metrics for the actual search terms that triggered keyword matches.
 
 
 ---

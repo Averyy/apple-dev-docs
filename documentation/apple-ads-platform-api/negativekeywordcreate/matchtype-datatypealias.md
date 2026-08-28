@@ -16,6 +16,8 @@ string NegativeKeywordCreate.MatchType
 
 #### Discussion
 
+Set this when creating the negative keyword; `CATEGORY` matching isn’t available since it’s not supported for negative keywords.
+
 ##### Example
 
 ```json

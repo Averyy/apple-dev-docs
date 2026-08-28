@@ -16,7 +16,7 @@ object RecommendationSorting
 
 #### Discussion
 
-`Sorting` specifies one sort dimension in the `sorting` array of a QueryRequest. The `sorting` array supports multiple entries, which the system applies in order. The first entry is the primary sort, the second is the tiebreaker, and so on.
+The `Sorting` specifies one sort dimension in the `sorting` array of a QueryRequest. The `sorting` array supports multiple entries, which the system applies in order. The first entry is the primary sort, the second is the tiebreaker, and so on.
 
 ##### Example
 
@@ -45,7 +45,7 @@ object RecommendationSorting
 - [type RecommendationFilterOperator](recommendationfilteroperator.md)
   The comparison operator applied in a recommendation filter condition.
 - [type RecommendationState](recommendationstate.md)
-  The lifecycle state of a recommendation, indicating whether it is available to act on or has already been accepted or rejected.
+  The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 - [type RecommendationStatus](recommendationstatus.md)
   The operational status of a recommendation record, independent of its lifecycle state.
 - [type RecommendationCategory](recommendationcategory.md)

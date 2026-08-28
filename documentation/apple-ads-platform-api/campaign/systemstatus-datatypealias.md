@@ -16,6 +16,8 @@ string Campaign.SystemStatus
 
 #### Discussion
 
+This status reflects the campaign specifically, separate from the advertiser-set [`Campaign.Status`](campaign/status-data.typealias.md) and the system status of ad groups within it.
+
 ##### Example
 
 ```json

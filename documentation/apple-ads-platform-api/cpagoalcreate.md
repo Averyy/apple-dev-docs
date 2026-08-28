@@ -16,7 +16,7 @@ object CPAGoalCreate
 
 #### Discussion
 
-`cpaCap` is deprecated on `AdGroupCreate`. Use `BidStrategyCreate` with `bidStrategyType` set to `MAX_CONVERSIONS` instead of `CPAGoalCreate` to configure automated conversion-maximizing bidding.
+The `cpaCap` field is deprecated on `AdGroupCreate`. Use `BidStrategyCreate` with `bidStrategyType` set to `MAX_CONVERSIONS` instead of `CPAGoalCreate` to configure automated conversion-maximizing bidding.
 
 ##### Example
 

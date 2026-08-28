@@ -16,12 +16,12 @@ object PolicyAssignmentQueryRequest
 
 #### Discussion
 
-`PolicyAssignmentQueryRequest` extends the standard `QueryRequest` pattern. It accepts `filters`, `sorting`, and `pagination` to retrieve paginated `BrandRejectionReasonResponse` records.
+The `PolicyAssignmentQueryRequest` object extends the standard `QueryRequest` pattern. It accepts `filters`, `sorting`, and `pagination` to retrieve paginated `BrandRejectionReasonResponse` records.
 
 ## Properties
 
 - `filters` ([QueryFilter]): Filter conditions for the query. Supported filterable fields are `promotedObjectId` (operators `IN`, `EQUALS`; filters by brand or promoted object ID) and `deleted` (operator `EQUALS`; includes soft-deleted records when `true`, excludes them when `false`). See [`QueryFilter`](queryfilter.md).
-- `sorting` ([QuerySort]): Sort directives. Each entry specifies a `field` (e.g., `id`) and `order` (`ASC` or `DESC`). See [`QuerySort`](querysort.md).
+- `sorting` ([QuerySort]): Sort directives. Each entry specifies a `field` (for example, `id`) and `order` (`ASC` or `DESC`). See [`QuerySort`](querysort.md).
 - `pagination` (QueryPagination): Pagination parameters. Default `pageSize`: 20. Default `offset`: 0. Set `fetchTotalCount` to `true` inside the pagination object to include the total count of matching records in the response. See [`QueryPagination`](querypagination.md).
 
 ## See Also

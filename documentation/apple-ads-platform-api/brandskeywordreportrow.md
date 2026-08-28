@@ -16,7 +16,7 @@ object BrandsKeywordReportRow
 
 #### Discussion
 
-`BrandsKeywordReportRow` contains keyword metadata, performance metrics, and optional keyword insights for a single reporting row.
+The `BrandsKeywordReportRow` object contains keyword metadata, performance metrics, and optional keyword insights for a single reporting row.
 
 ##### Example
 

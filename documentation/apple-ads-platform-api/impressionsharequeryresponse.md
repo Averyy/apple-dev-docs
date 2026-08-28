@@ -22,9 +22,9 @@ The `ImpressionShareResultContainer` wrapping `result` exposes a single field.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `rows` | array | Array of `ImpressionShareRow` objects, one per date + search term + country combination. |
+| `rows` | array | Array of [`ImpressionShareRow`](impressionsharerow.md) objects, one per date + search term + country combination |
 
-Each `ImpressionShareRow` in `rows` carries the following fields.
+Each [`ImpressionShareRow`](impressionsharerow.md) in `rows` carries the following fields.
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ Each `ImpressionShareRow` in `rows` carries the following fields.
 | `week` | string | Week start date, Sunday (`YYYY-MM-DD`). Present when granularity is `WEEKLY_SUN_SAT`. |
 | `appName` | string | Display name of the promoted app. |
 | `promotedObjectId` | string | Adam ID of the promoted app. |
-| `countryOrRegion` | string | ISO 3166-1 alpha-2 country or region code (e.g., `US`, `GB`). |
+| `countryOrRegion` | string | ISO 3166-1 alpha-2 country or region code (for example, `US`, `GB`). |
 | `searchTerm` | string | The search term. Suppressed for terms with fewer than 10 impressions in the aggregation period. |
 | `lowImpressionShare` | number | Lower bound of impression share. See encoding table below. |
 | `highImpressionShare` | number | Upper bound of impression share. See encoding table below. |
@@ -41,12 +41,12 @@ Each `ImpressionShareRow` in `rows` carries the following fields.
 
 ##### Impression Share Encoding
 
-`lowImpressionShare` and `highImpressionShare` use a tiered encoding. They are not always a range:
+The `lowImpressionShare` and `highImpressionShare` fields use a tiered encoding. They are not always a range:
 
 | Impression Share | `lowImpressionShare` | `highImpressionShare` |
 | --- | --- | --- |
 | 0% | `0` | `0` |
-| 1% – 90% | `x` (e.g. `0.23`) | `x` (same value) |
+| 1% – 90% | `x` (for example, `0.23`) | `x` (same value) |
 | 91% – 100% | `0.91` | `1` |
 
 For 1–90%, both fields carry the same single-digit value. The 91–100% bucket retains a range because accuracy of the estimated metric declines near full market saturation, and reporting a precise value there would overstate confidence.
@@ -57,9 +57,9 @@ The `pagination` object included in the response reports the following.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `totalCount` | integer | Total number of rows matching the query. |
-| `offset` | integer | Current page offset. |
-| `pageSize` | integer | Number of rows returned in this response. |
+| `totalCount` | integer | Total number of rows matching the query |
+| `offset` | integer | Current page offset |
+| `pageSize` | integer | Number of rows returned in this response |
 
 ## Properties
 

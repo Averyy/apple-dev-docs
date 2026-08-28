@@ -10,7 +10,7 @@ Updates the name or status of an existing ad by its unique identifier.
 
 #### Discussion
 
-This endpoint updates an existing ad. Only `name` and `status` are mutable. `creativeId` and `adGroupId` cannot be changed after the ad is created. The system modifies only the fields included in the request body. Omitted fields retain their current values.
+This endpoint updates an existing ad. Only `name` and `status` are mutable. The `creativeId` and `adGroupId` fields can’t be changed after the ad is created. The system modifies only the fields included in the request body. Omitted fields retain their current values.
 
 To change which ad creative an ad group serves, create a new ad with the desired `creativeId` and delete the old one. This pattern ensures ad delivery history remains traceable per ad.
 

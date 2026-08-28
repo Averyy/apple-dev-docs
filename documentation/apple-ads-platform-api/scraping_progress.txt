@@ -1,4 +1,4 @@
 Completed scraping Apple Ads Platform API!
-Total pages scraped: 0
-Pages skipped (unchanged): 746
+Total pages scraped: 551
+Pages skipped (unchanged): 195
 Pages failed: 0

@@ -10,9 +10,9 @@ Remove an ad creative by its unique identifier.
 
 #### Discussion
 
-Deleting an ad creative is a soft-delete operation: the system retains the ad creative record with `deleted: true`, but you can no longer use it to create new ads. The system automatically sets existing ads that reference the ad creative to `systemStatus: NOT_RUNNING`.
+This endpoint soft-deletes an ad creative: the system retains the ad creative record with `deleted: true`, but you can no longer use it to create new ads. The system automatically sets existing ads that reference the ad creative to `systemStatus: NOT_RUNNING`.
 
-Deleted ad creatives cannot be restored. To use a similar ad creative, create a new ad creative with the same properties.
+Deleted ad creatives can’t be restored. To use a similar ad creative, create a new ad creative with the same properties.
 
 ##### Understand the Impact on Ads
 

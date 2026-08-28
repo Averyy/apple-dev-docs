@@ -25,7 +25,7 @@ The [`Destination`](destination.md) object sets `DestinationType`, which is immu
 - [type CreativeSystemStatus](creativesystemstatus.md)
   System-evaluated validation state for an ad creative.
 - [type CreativeSystemStatusReason](creativesystemstatusreason.md)
-  A reason code explaining why an ad creative is not valid or is pending review.
+  A reason code explaining why an ad creative isn’t valid or is pending review.
 
 
 ---

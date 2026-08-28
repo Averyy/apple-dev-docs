@@ -16,7 +16,7 @@ object QueryResponse
 
 #### Discussion
 
-`QueryResponse` is the generic paginated response envelope returned by query endpoints.
+The `QueryResponse` object is the generic paginated response envelope returned by query endpoints.
 
 This wrapper is the base type for all query responses. Specific entity query responses extend this pattern with a typed `result` array.
 

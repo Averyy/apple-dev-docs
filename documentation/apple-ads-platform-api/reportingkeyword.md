@@ -16,7 +16,7 @@ object ReportingKeyword
 
 #### Discussion
 
-`ReportingKeyword` is the keyword metadata object embedded in keyword report rows and within search term rows (via the `keyword` field). It captures the keyword’s text, match type, bid amount, and status at report time, along with its organizational context (`campaignId`, `adGroupId`, `adAccountId`).
+The `ReportingKeyword` object is the keyword metadata embedded in keyword report rows and within search term rows (via the `keyword` field). It captures the keyword’s text, match type, bid amount, and status at report time, along with its organizational context (`campaignId`, `adGroupId`, `adAccountId`).
 
 The `bid` field is the keyword-level bid amount in the account currency, and `adGroup` provides a lightweight summary of the parent ad group. The report populates the dimension fields (`countryOrRegion`, `deviceClass`) when you specify those dimensions in the report request.
 

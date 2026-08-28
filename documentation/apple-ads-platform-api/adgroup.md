@@ -18,7 +18,7 @@ object AdGroup
 
 An `AdGroup` is the primary unit for governing ad delivery within a campaign. Multiple ad groups within a campaign allow different targeting strategies, bids, and schedules to compete and optimize within the same promoted app or brand.
 
-Fields marked **Filterable** in the dictionary keys work as filter criteria in query endpoint requests. See [`Calling the Apple Ads Platform API`](calling-apple-ads-platform-api.md) for details on constructing queries.
+Fields you can filter and sort on when querying ad groups are listed in [`Query Ad Groups`](post-adgroups-query.md).
 
 ##### Example
 
@@ -100,25 +100,25 @@ Fields marked **Filterable** in the dictionary keys work as filter criteria in q
 
 ## Properties
 
-- `name` (string): The advertiser-given name of this ad group. Mutable. Filterable: EQUALS, STARTS_WITH.
+- `name` (string): The advertiser-given name of this ad group. Mutable.
 - `adAccountId` (int64): The ad account this ad group belongs to. Read-only.
-- `campaignId` (int64): The campaign this ad group belongs to. Immutable after creation. Filterable: EQUALS.
-- `startTime` (date-time): Ad group schedule start time. ISO 8601 format, for example `2025-09-01T00:00:00.000`. Mutable. Filterable: LESS_THAN, GREATER_THAN.
-- `endTime` (date-time): Ad group schedule end time. ISO 8601 format, for example `2025-12-31T23:59:59.000`. Mutable. Filterable: LESS_THAN, GREATER_THAN.
+- `campaignId` (int64): The campaign this ad group belongs to. Immutable after creation.
+- `startTime` (date-time): Ad group schedule start time. ISO 8601 format, for example `2025-09-01T00:00:00.000`. Mutable.
+- `endTime` (date-time): Ad group schedule end time. ISO 8601 format, for example `2025-12-31T23:59:59.000`. Mutable.
 - `pricingModel` (AdGroup.PricingModel): The pricing model for this ad group. Values: `CPA`, `CPM`, `CPT`. See [`AdGroup.PricingModel`](adgroup/pricingmodel-data.typealias.md). Immutable after creation. Must match the parent campaign’s billing event.
 - `automatedKeywordsOptIn` (boolean): Opt in to Search Match, which automatically matches search terms without requiring explicit keywords. Mutable.
-- `status` (AdGroup.Status): Advertiser-configurable status for this ad group. See [`AdGroupStatus`](adgroupstatus.md). Mutable. Filterable: EQUALS, IN.
+- `status` (AdGroup.Status): Advertiser-configurable status for this ad group. See [`AdGroupStatus`](adgroupstatus.md). Mutable.
 - `systemStatus` (AdGroup.SystemStatus): System-computed operational status reflecting the ad group’s current serving state. See [`AdGroupSystemStatus`](adgroupsystemstatus.md). Read-only.
 - `systemStatusReasons` ([AdGroup.SystemStatusReasons]): System-applied reasons that contribute to the current `systemStatus`. See [`AdGroupSystemStatusReason`](adgroupsystemstatusreason.md) for all values. Read-only.
 - `systemStatusLimitingReasons` ([AdGroup.SystemStatusLimitingReasons]): System-applied reasons that limit delivery below maximum potential. See [`AdGroupSystemLimitedStatusReason`](adgroupsystemlimitedstatusreason.md) for details. Read-only.
 - `automatedKeywordsRequired` (boolean): Auto keyword generation required. Immutable after creation.
-- `displayStatus` (AdGroup.DisplayStatus): System-computed, rolled-up delivery state combining `status` and `systemStatus` into a single delivery label, more intuitive than a binary running/not-running signal. See [`AdGroupDisplayStatus`](adgroupdisplaystatus.md). Read-only.
+- `displayStatus` (AdGroup.DisplayStatus): System-computed, rolled-up delivery state combining `status` and `systemStatus` into a single delivery label, more intuitive than a binary running-or-not-running signal. See [`AdGroupDisplayStatus`](adgroupdisplaystatus.md). Read-only.
 - `bidStrategy` (AdGroup.BidStrategy): The bid strategy for this ad group. If omitted, the campaign-level bid strategy applies. See [`AdGroup.BidStrategy`](adgroup/bidstrategy-data.dictionary.md). Mutable.
 - `targeting` (AdGroup.Targeting): Targeting configuration for this ad group. See [`AdGroupTargeting`](adgrouptargeting.md). Mutable.
-- `id` (int64): The unique identifier for this ad group. Read-only. Filterable: EQUALS, IN.
+- `id` (int64): The unique identifier for this ad group. Read-only.
 - `creationTime` (date-time): Timestamp when the ad group was created. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification to the ad group. Read-only.
-- `deleted` (boolean): Indicates if the ad group has been deleted. Read-only. Filterable: EQUALS.
+- `deleted` (boolean): Indicates if the ad group has been deleted. Read-only.
 - `cpaCap` (AdGroup.CpaCap): Deprecated. Use `bidStrategy` with `MAX_CONVERSIONS` instead. See [`CPAGoal`](cpagoal.md).
 
 ## See Also

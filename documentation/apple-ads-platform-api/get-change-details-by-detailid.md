@@ -18,7 +18,7 @@ What populates `oldValues` and `newValues` depends on the event type that produc
 | --- | --- | --- |
 | `CREATE` | Empty array | Set to values at creation |
 | `UPDATE` | Previous field value | Updated field value |
-| `DELETE` | Last known value | Typically empty [], but may contain system-managed values (e.g., deletion flag, status, transaction ID) set at delete time. |
+| `DELETE` | Last known value | Typically empty [], but may contain system-managed values (for example, deletion flag, status, transaction ID) set at delete time |
 
 #### Payload Examples
 
@@ -89,7 +89,7 @@ GET https://api.ads.apple.com/v1/change-history/Campaign.444555666.txn_abc123def
 
 ##### Request
 
-Retrieve field-level details for a new ad group creation. `oldValues` is empty for all fields on `CREATE` events.
+Retrieve field-level details for a new ad group creation. The `oldValues` field is empty for all fields on `CREATE` events.
 
 ```None
 GET https://api.ads.apple.com/v1/change-history/AdGroup.888999333.txn_def789ghi012
@@ -163,7 +163,7 @@ GET https://api.ads.apple.com/v1/change-history/AdGroup.888999333.txn_def789ghi0
 
 ##### Request
 
-Retrieve field-level details for a deleted keyword. `newValues` is empty for all fields on `DELETE` events.
+Retrieve field-level details for a deleted keyword. The `newValues` field is empty for all fields on `DELETE` events.
 
 ```None
 GET https://api.ads.apple.com/v1/change-history/Keyword.777888999.txn_jkl345mno678

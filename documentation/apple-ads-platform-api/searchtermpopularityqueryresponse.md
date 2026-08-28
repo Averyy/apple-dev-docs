@@ -16,7 +16,25 @@ object SearchTermPopularityQueryResponse
 
 #### Discussion
 
-The search term popularity endpoint returns `SearchTermPopularityQueryResponse`. To navigate large result sets, use `pagination`. The endpoint populates `error` when the request fails.
+Each row in `result.rows` always includes the following dimension fields:
+
+| Field | Description |
+| --- | --- |
+| `countryOrRegion` | The App Store country or region for the search volume data |
+| `genre` | The App Store genre category |
+| `searchTerm` | The search term text |
+| `week` or `month` | The date field corresponding to the selected granularity |
+
+Rows include the following dimension fields only when requested via the request’s `fields` array.
+
+| Field | Description |
+| --- | --- |
+| `rankInGenre` | The search term’s rank by volume within the genre of the given App Store country or region. |
+| `searchPopularityInGenre` | Relative popularity score within the genre (1–100) of the given App Store country or region. |
+| `searchPopularity1to100` | Popularity score on a 1–100 scale across all genres within the country or region with `100` = most popular overall |
+| `searchPopularity1to5` | Relative popularity on a 1–5 scale across all genres of the given App Store country or region. |
+
+See [`SearchTermPopularityRow`](searchtermpopularityrow.md) for field descriptions.
 
 ##### Example
 

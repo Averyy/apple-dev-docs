@@ -10,9 +10,9 @@ Soft-delete a keyword by ID, setting its deleted field to true and stopping bids
 
 #### Discussion
 
-Soft-deletes the keyword by setting its deleted field to true. The record remains queryable by including deleted=true in query filters. The operation returns HTTP 200 with an empty response body on success.
+This endpoint soft-deletes the keyword by setting its deleted field to true. The record remains queryable by including deleted=true in query filters. The operation returns HTTP 200 with an empty response body on success.
 
-Deleting a keyword does not affect the parent ad group or campaign. Only the keyword itself is removed. Other keywords in the same ad group continue to serve normally. If you want to temporarily stop bidding on a term without permanently removing it, pause the keyword using `PUT /keywords/{id}` with `status: "PAUSED"` instead.
+Deleting a keyword doesn’t affect the parent ad group or campaign. Only the keyword itself is removed. Other keywords in the same ad group continue to serve normally. If you want to temporarily stop bidding on a term without permanently removing it, pause the keyword using `PUT /keywords/{id}` with `status: "PAUSED"` instead.
 
 The soft delete is reflected consistently across subsequent GET and PUT requests.
 

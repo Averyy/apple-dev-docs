@@ -16,7 +16,7 @@ string Orientation
 
 #### Discussion
 
-`Orientation` classifies the aspect ratio of an image or video asset. The system determines the value from the asset’s pixel dimensions when you upload the asset, and returns it as part of the [`Asset`](asset.md) record.
+The `Orientation` classifies the aspect ratio of an image or video asset. The system determines the value from the asset’s pixel dimensions when you upload the asset, and returns it as part of the [`Asset`](asset.md) record.
 
 ## See Also
 

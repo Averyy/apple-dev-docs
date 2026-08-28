@@ -16,7 +16,7 @@ object CreativeUpdate
 
 #### Discussion
 
-To change an existing ad creative’s `name` or `creativeSpec`, use `CreativeUpdate` with `PUT /v1/creatives/{id}`. `creativeType` and `destination` are locked in at creation and can’t be changed later.
+To change an existing ad creative’s `name` or `creativeSpec`, use `CreativeUpdate` with `PUT /v1/creatives/{id}` ([`Update an Ad Creative`](put-creatives-_id_.md)). `creativeType` and `destination` are locked in at creation and can’t be changed later.
 
 ##### Example
 
@@ -43,8 +43,8 @@ To change an existing ad creative’s `name` or `creativeSpec`, use `CreativeUpd
 
 ## Properties
 
-- `name` (string): Name of the ad creative. Omit if you do not intend to update. Mutable, Optional.
-- `creativeSpec` (CreativeUpdate.CreativeSpec): The creative spec. Updating this may trigger re-review. `systemStatus` transitions back to `PENDING`. Omit if you do not intend to update. Mutable, Optional.
+- `name` (string): Name of the ad creative. Omit if you don’t intend to update. Mutable, Optional.
+- `creativeSpec` (CreativeUpdate.CreativeSpec): The creative spec. Updating this may trigger re-review. `systemStatus` transitions back to `PENDING`. Omit if you don’t intend to update. Mutable, Optional.
 
 ## See Also
 

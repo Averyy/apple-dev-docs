@@ -16,7 +16,7 @@ object AdAccountCreate
 
 #### Discussion
 
-`AdAccountCreate` is the request body for `POST /v1/ad-accounts`.
+The `AdAccountCreate` object is the request body for [`Create Ad Accounts`](post-ad-accounts.md).
 
 ##### Example
 

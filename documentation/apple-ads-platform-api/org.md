@@ -20,7 +20,7 @@ An `Org` is the top-level entity that owns ad accounts, manages users, and group
 
 The `systemStatus` field reflects whether the org is `ACTIVE` or `INACTIVE`. An inactive org prevents all campaigns under it from serving. Check `systemStatusReasons` for the specific cause.
 
-To discover which organizations the current API token can access, use `GET /v1/acls`. Then, to retrieve full details, use `GET /v1/orgs/{orgId}`.
+To discover which organizations the current API token can access, use `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)). Then, to retrieve full details, use `GET /v1/orgs/{orgId}` ([`Get Org by ID`](get-orgs-_id_.md)).
 
 ##### Example
 

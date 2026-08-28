@@ -16,7 +16,7 @@ object QueryPaginationResult
 
 #### Discussion
 
-`QueryPaginationResult` is returned in the `pagination` field of query responses. It echoes the `pageSize` and `offset` from the request and provides `totalCount` when requested. To calculate the total number of pages, use `totalCount` with `pageSize`.
+The `QueryPaginationResult` object is returned in the `pagination` field of query responses. It echoes the `pageSize` and `offset` from the request and provides `totalCount` when requested. To calculate the total number of pages, use `totalCount` with `pageSize`.
 
 ##### Example
 

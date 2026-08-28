@@ -10,15 +10,15 @@ Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search t
 ## Topics
 
 - [Campaigns Report](get-app-campaign-reports.md)
-  Retrieve performance metrics for campaigns broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for campaigns.
 - [Ad Groups Report](get-app-ad-group-reports.md)
-  Retrieve performance metrics for ad groups broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for ad groups.
 - [Ads Report](get-app-ad-reports.md)
-  Retrieve performance metrics for ads broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for ads.
 - [Keywords Report](get-app-keyword-reports.md)
-  Retrieve performance metrics for keywords broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for keywords.
 - [Search Terms Report](get-app-search-term-reports.md)
-  Retrieve performance metrics for the actual search terms that triggered keyword matches, broken down by optional dimensions.
+  Retrieve performance metrics for the actual search terms that triggered keyword matches.
 
 ## See Also
 

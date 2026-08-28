@@ -96,8 +96,8 @@ Creating a campaign ties together what’s being promoted, a budget, targeting, 
 ## Properties
 
 - `name` (string) *(required)*: The advertiser-given name of this campaign. Maximum 200 characters. Must be non-empty. Mutable.
-- `startTime` (date-time): The scheduled start date and time of this campaign. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2025-09-01T00:00:00.000`). If omitted, the campaign starts immediately upon activation. Mutable.
-- `endTime` (date-time): The scheduled end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2025-12-31T23:59:59.000`). Omit to keep the campaign running indefinitely. Mutable.
+- `startTime` (date-time): The scheduled start date and time of this campaign. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2025-09-01T00:00:00.000`). If omitted, the campaign starts immediately upon activation. Mutable.
+- `endTime` (date-time): The scheduled end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2025-12-31T23:59:59.000`). Omit to keep the campaign running indefinitely. Mutable.
 - `dailyBudget` (CampaignCreate.DailyBudget) *(required)*: The daily spend cap for this campaign. See [`DailyBudgetCreate`](dailybudgetcreate.md). Mutable.
 - `sharedBudgets` ([SharedBudgetAssignmentCreate]): One or more budget order assignments for this campaign. Can be provided alongside `dailyBudget`. See [`SharedBudgetAssignmentCreate`](sharedbudgetassignmentcreate.md).
 - `targeting` (CampaignCreate.Targeting) *(required)*: Country or region, supply source, and placement targeting for this campaign. See [`CampaignTargetingCreate`](campaigntargetingcreate.md). Mutable.

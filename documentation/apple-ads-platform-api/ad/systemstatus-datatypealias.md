@@ -16,6 +16,8 @@ string Ad.SystemStatus
 
 #### Discussion
 
+The `SystemStatus` reports whether the platform currently allows the ad to serve, distinct from the advertiser-set [`Ad.Status`](ad/status-data.typealias.md).
+
 ##### Example
 
 ```json

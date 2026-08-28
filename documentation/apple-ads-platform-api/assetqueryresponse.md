@@ -16,7 +16,7 @@ object AssetQueryResponse
 
 #### Discussion
 
-`AssetQueryResponse` is the top-level envelope returned by [`Query Assets`](query-assets.md). The `pagination` object describes the current page position.
+The `AssetQueryResponse` object is the top-level envelope returned by [`Query Assets`](query-assets.md). The `pagination` object describes the current page position.
 
 ##### Example
 

@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Retrieve performance metrics for Apple Maps keywords broken down by optional dimensions such as device class or country.
+Retrieve performance metrics for Apple Maps keywords.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -13,6 +13,8 @@ Retrieve performance metrics for Apple Maps keywords broken down by optional dim
 Apple Maps keyword performance reports return one row per keyword. Each row contains a `metadata` object with keyword identifiers (including `campaignId`, `adGroupId`, `text`, and `matchType`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
 Use `filters` to scope results to specific campaigns or ad groups. For Apple Maps campaigns, keywords represent search queries that trigger ad delivery on Apple Maps.
+
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -26,7 +28,7 @@ Apple Maps keyword reports support a reduced set of `groupBy` dimensions. Neithe
 | --- | --- |
 | `deviceClass` | Break down metrics by device type (`IPHONE`, `IPAD`). |
 
-`supplyPlacement` and `locationId` are **not** supported for the `KEYWORD` entity under `business-brands`.
+The `supplyPlacement` and `locationId` fields are **not** supported for the `KEYWORD` entity under `business-brands`.
 
 Granularity constraints mirror other Apple Maps entities, with lookback windows ranging from 7 days for `HOURLY` to 90 days for `MONTHLY`.
 
@@ -252,13 +254,13 @@ POST /v1/reports/business-brands/keywords/query
 ## See Also
 
 - [Campaigns Report (Brands)](get-brand-campaign-reports.md)
-  Retrieve performance metrics for Apple Maps campaigns broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for Apple Maps campaigns.
 - [Ad Groups Report (Brands)](get-brand-ad-group-reports.md)
-  Retrieve performance metrics for Apple Maps ad groups broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for Apple Maps ad groups.
 - [Ads Report (Brands)](get-brand-ad-reports.md)
-  Retrieve performance metrics for Apple Maps ads broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for Apple Maps ads.
 - [Search Terms Report (Brands)](get-brand-search-term-reports.md)
-  Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns, broken down by optional dimensions.
+  Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 
 ---

@@ -16,7 +16,7 @@ object RateMetrics
 
 #### Discussion
 
-`RateMetrics` reports ratio or rate values segmented by attribution type. This object appears in BRANDS metrics for action-per-tap and action-per-impression rates.
+The `RateMetrics` reports ratio or rate values segmented by attribution type. This object appears in brands metrics for action-per-tap and action-per-impression rates.
 
 ##### Example
 

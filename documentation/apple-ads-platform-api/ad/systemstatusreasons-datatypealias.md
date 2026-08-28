@@ -16,6 +16,8 @@ string Ad.SystemStatusReasons
 
 #### Discussion
 
+These codes span approval, creative, and product page conditions that the platform surfaces when [`Ad.SystemStatus`](ad/systemstatus-data.typealias.md) is `NOT_RUNNING`.
+
 ##### Example
 
 ```json

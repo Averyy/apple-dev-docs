@@ -16,6 +16,8 @@ string BrandsReportingAd.SystemStatus
 
 #### Discussion
 
+This reflects delivery conditions evaluated at the moment the report was generated, which may differ from the ad’s current live status.
+
 ##### Example
 
 ```json

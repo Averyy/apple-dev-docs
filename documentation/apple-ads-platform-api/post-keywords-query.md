@@ -10,11 +10,27 @@ Query keywords using structured filters, sorting, and pagination.
 
 #### Discussion
 
-Queries keywords using a standard `QueryRequest` body. Either `adGroupId` or `campaignId` is required. The API returns an error if neither is present.
+This endpoint queries keywords using a standard `QueryRequest` body. Either `adGroupId` or `campaignId` is required. The API returns an error if neither is present.
 
-- `adGroupId EQUALS` or `adGroupId IN` scopes the query to one or more specific ad groups, and can span ad groups across different campaigns within the same ad account. `adGroupId IN` accepts up to 1000 values. `IS_NULL`, `IS_NOT_NULL`, and `NOT_EQUALS` are not supported on `adGroupId` for keywords.
-- `campaignId` scopes the query to all keywords across a campaign, and only supports `EQUALS`. There is no campaign-level keyword concept the way there is for negative keywords.
+- The `adGroupId EQUALS` or `adGroupId IN` filter scopes the query to one or more specific ad groups, and can span ad groups across different campaigns within the same ad account. The `adGroupId IN` filter accepts up to 1000 values. The `IS_NULL`, `IS_NOT_NULL`, and `NOT_EQUALS` operators aren’t supported on `adGroupId` for keywords.
+- The `campaignId` field scopes the query to all keywords across a campaign, and only supports `EQUALS`. There is no campaign-level keyword concept the way there is for negative keywords.
 - Filtering by `id` (`EQUALS` or `IN`) is exempt from the `adGroupId`/`campaignId` requirement, since `id` already fully bounds the query.
+
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | integer | `EQUALS`, `IN` | Yes (default) | The unique identifier for the keyword. |
+| `adGroupId` | integer | `EQUALS`, `IN` | Yes | The ad group this keyword belongs to. |
+| `campaignId` | integer | `EQUALS` | Yes | The campaign ID of the parent campaign. Informational only. |
+| `text` | string | `EQUALS`, `STARTS_WITH` | Yes | The original advertiser-given keyword text. |
+| `matchType` | string (enum) | `EQUALS`, `IN` | Yes | Keyword match type. See [`KeywordMatchType`](keywordmatchtype.md). |
+| `status` | string (enum) | `EQUALS`, `IN` | Yes | Whether the keyword is active and eligible to serve. See [`KeywordStatus`](keywordstatus.md). |
+| `deleted` | boolean | `EQUALS` | Yes | Whether the keyword has been deleted. |
+
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 #### Payload Examples
 

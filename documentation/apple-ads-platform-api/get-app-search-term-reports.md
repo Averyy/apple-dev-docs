@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Retrieve performance metrics for the actual search terms that triggered keyword matches, broken down by optional dimensions.
+Retrieve performance metrics for the actual search terms that triggered keyword matches.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -18,7 +18,9 @@ Use search term data to:
 - Identify irrelevant queries to exclude as negative keywords with [`Create a Negative Keyword`](post-negative-keywords.md).
 - Understand match expansion breadth for BROAD-match keywords.
 
-Filter by `adGroupId` or `campaignId` in the `filters` array to scope results.
+Every apps report request requires a `campaignId` filter; optionally add `adGroupId` in the `filters` array to scope results further.
+
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -290,13 +292,13 @@ POST /v1/reports/apps/searchterms/query
 ## See Also
 
 - [Campaigns Report](get-app-campaign-reports.md)
-  Retrieve performance metrics for campaigns broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for campaigns.
 - [Ad Groups Report](get-app-ad-group-reports.md)
-  Retrieve performance metrics for ad groups broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for ad groups.
 - [Ads Report](get-app-ad-reports.md)
-  Retrieve performance metrics for ads broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for ads.
 - [Keywords Report](get-app-keyword-reports.md)
-  Retrieve performance metrics for keywords broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for keywords.
 
 
 ---

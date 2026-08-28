@@ -12,8 +12,6 @@ Apply one or more daily budget recommendations, updating the campaign’s daily 
 
 Applying a daily budget recommendation updates the campaign’s `dailyBudget` to the recommendation’s `suggestedDailyBudgetAmount`, and moves the recommendation to `APPLIED` state. You can override the suggested amount by passing `appliedDailyBudget` in the request. The response is a history record with both the suggested and applied amounts, plus the performance context behind the recommendation.
 
-#### Request Body
-
 #### Payload Examples
 
 This example applies a daily budget recommendation, raising the campaign’s daily budget to the suggested $500.00. The response confirms the recommendation is now `APPLIED`.

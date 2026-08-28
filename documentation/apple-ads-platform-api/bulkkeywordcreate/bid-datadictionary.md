@@ -16,7 +16,7 @@ object BulkKeywordCreate.Bid
 
 #### Discussion
 
-The keyword-level bid amount for a bulk keyword create item, expressed as a `Money` object with `amount` and `currency`. It overrides the ad group’s default bid for this keyword. Omit the field or pass `null` to default to the ad group’s `BidStrategy` bid instead. This bid is not used with Maximize Conversions bid strategy campaigns.
+The keyword-level bid amount for a bulk keyword create item, expressed as a `Money` object with `amount` and `currency`. It overrides the ad group’s default bid for this keyword. Omit the field or pass `null` to default to the ad group’s `BidStrategy` bid instead. This bid isn’t used with Maximize Conversions bid strategy campaigns.
 
 See [`BulkKeywordCreate`](bulkkeywordcreate.md) for the full field reference.
 

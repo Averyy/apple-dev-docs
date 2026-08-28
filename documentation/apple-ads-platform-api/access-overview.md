@@ -23,7 +23,7 @@ All ad account scoped endpoints require an `X-AP-Context` header that identifies
 X-AP-Context: adAccountId=<id>
 ```
 
-You don’t need the header for `GET /v1/me`, `GET /v1/acls`, `GET /v1/orgs/{id}`, `GET /v1/advertiser-resources`, or `POST /v1/ad-accounts`.
+You don’t need the header for `GET /v1/me` ([`Get Me Details`](get-current-user-details.md)), `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)), `GET /v1/orgs/{id}` ([`Get Org by ID`](get-orgs-_id_.md)), `GET /v1/advertiser-resources` ([`Get Advertiser Resources`](get-advertiser-resources.md)), or `POST /v1/ad-accounts` ([`Create Ad Accounts`](post-ad-accounts.md)).
 
 #### Explore the Account Management Endpoints
 
@@ -72,7 +72,7 @@ Save `access_token`. Every call below sends it as `Authorization: Bearer {access
 
 ##### Confirm Your User and Org
 
-The `GET /v1/me` endpoint doesn’t require an `X-AP-Context` header, so you can call it right after you get your token:
+The `GET /v1/me` ([`Get Me Details`](get-current-user-details.md)) endpoint doesn’t require an `X-AP-Context` header, so you can call it right after you get your token:
 
 ```console
 curl "https://api.ads.apple.com/v1/me" \
@@ -92,7 +92,7 @@ The response includes your `userId` and `orgId`:
 
 ##### Discover Your Ad Accounts
 
-The `GET /v1/acls` endpoint also doesn’t require an `X-AP-Context` header. It returns every ad account your token can access and your role on each one:
+The `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)) endpoint also doesn’t require an `X-AP-Context` header. It returns every ad account your token can access and your role on each one:
 
 ```console
 curl "https://api.ads.apple.com/v1/acls" \
@@ -124,7 +124,7 @@ If `acls` comes back empty, your org has no ad accounts yet. See “Create an Ad
 
 ##### Make Your First Ad Account Scoped Call
 
-The `GET /v1/ad-accounts/{id}` endpoint is ad account scoped, so it requires the `X-AP-Context` header set to the `adAccountId` from Discover Your Ad Accounts, above:
+The `GET /v1/ad-accounts/{id}` ([`Get Ad Account by ID`](get-ad-accounts-_id_.md)) endpoint is ad account scoped, so it requires the `X-AP-Context` header set to the `adAccountId` from Discover Your Ad Accounts, above:
 
 ```console
 curl "https://api.ads.apple.com/v1/ad-accounts/123456789" \
@@ -193,11 +193,11 @@ All array fields use full-replacement semantics. If you send a partial array, th
 
 #### Find Advertiser Resources
 
-Advertiser resources are brands and content providers available across your organization that you can delegate to an ad account. To retrieve the advertiser resources available in your organization, filtered by resource type, use `GET /v1/advertiser-resources`. The `resourceType` query parameter is required. Omitting it returns a validation error.
+Advertiser resources are brands and content providers available across your organization that you can delegate to an ad account. To retrieve the advertiser resources available in your organization, filtered by resource type, use `GET /v1/advertiser-resources` ([`Get Advertiser Resources`](get-advertiser-resources.md)). The `resourceType` query parameter is required. Omitting it returns a validation error.
 
 #### Retrieve Access Control Lists Acls
 
-Call `GET /v1/acls` to retrieve the `UserAccessResult` for the authenticated user. Each acl entry (`UserAcl`) contains:
+Call `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)) to retrieve the `UserAccessResult` for the authenticated user. Each acl entry (`UserAcl`) contains:
 
 - `adAccount`: the ad account this entry covers
 - `roles`: the list of role names the user holds for that account

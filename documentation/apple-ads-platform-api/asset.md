@@ -70,16 +70,16 @@ Query endpoint requests support fields marked **Filterable** in the properties a
 - `id` (uuid): Internal asset identifier (UUID). Filterable with `EQUALS`, `IN`.
 - `name` (string): User-facing asset name or description. Filterable with `EQUALS`, `IN`, `LIKE`, `LIKE_IGNORE_CASE`, `STARTS_WITH`, `ENDS_WITH`.
 - `assetType` (AssetType): The media type of the asset. See [`AssetType`](assettype.md) for details. Filterable with `EQUALS`, `IN`.
-- `providerAssetId` (string): Asset identifier assigned by the provider system (e.g., App Store Connect asset ID). Filterable with `EQUALS`, `IN`.
-- `promotedObjectId` (string): Identifier of the promoted object (e.g., `adamId` for apps, `brandId` for Maps). Filterable with `EQUALS`.
+- `providerAssetId` (string): Asset identifier assigned by the provider system (for example, App Store Connect asset ID). Filterable with `EQUALS`, `IN`.
+- `promotedObjectId` (string): Identifier of the promoted object (for example, `adamId` for apps, `brandId` for Maps). Filterable with `EQUALS`.
 - `promotedObjectType` (PromotedObjectType): The type of the promoted object. See [`PromotedObjectType`](promotedobjecttype.md) for details. Filterable with `EQUALS`.
 - `providerAssetMetadata` (Asset.ProviderAssetMetadata): Provider-specific metadata. Structure varies by provider type. For example, an App Store Connect asset returns keys such as `appPreviewDevice` and `assetGenId`.
 - `assetDetails` (AssetImage): Type-specific asset details. When `assetType` is `IMAGE`, contains `AssetImage` properties: `width`, `height`, `format`, `sizeBytes`, `orientation`, `providerAssetUrl` (provider URL for accessing the image), `providerToken` (provider token for referencing the image in provider-specific APIs), `checkSum` (file checksum), `sortPosition` (display order for UI sorting), and `adAccountId` (ad account identifier, present for custom assets). See [`AssetImage`](assetimage.md) for details.
 - `parentAssetId` (string): Identifier of the parent asset if this asset is a variant (crop, resize). Null for original assets.
-- `variantIds` ([string]): Asset variant identifiers (e.g., different sizes, formats, or localizations).
+- `variantIds` ([string]): Asset variant identifiers (for example, different sizes, formats, or localizations).
 - `creationTime` (date-time): Asset creation timestamp (ISO-8601 format). Read-only.
 - `modificationTime` (date-time): Last modification timestamp (ISO-8601 format). Read-only.
-- `deleted` (boolean): Soft delete flag indicating whether the asset has been deleted. Deleted assets are excluded from query results unless an explicit `deleted` filter is supplied. Default: `false`. Read-only.
+- `deleted` (boolean): Soft delete flag indicating whether the asset has been deleted. Deleted assets are excluded from query results unless an explicit `deleted` filter is supplied. Default: `false`. Read-only. Filterable with `EQUALS`.
 - `eligibility` (AssetEligibility): Eligibility data. Always returned unless excluded via a `fields` projection parameter. See [`AssetEligibility`](asseteligibility.md) for details. Read-only.
 
 ## See Also

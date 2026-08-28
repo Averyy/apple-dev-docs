@@ -16,7 +16,7 @@ object AdGroupQueryResponse
 
 #### Discussion
 
-`AdGroupQueryResponse` is returned by the ad group query endpoint.
+The `AdGroupQueryResponse` object is returned by the ad group query endpoint.
 
 Use the `QueryRequest` body with `filters` to scope results to a specific campaign, status, or set of ad group IDs.
 

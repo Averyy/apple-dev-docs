@@ -16,7 +16,7 @@ object Asset.ProviderAssetMetadata
 
 #### Discussion
 
-`providerAssetMetadata` depends on the asset’s source provider and has no fixed shape. For Apple Maps (`BUSINESS_BRAND`) assets uploaded through this API, `providerAssetMetadata` is currently empty (`{}`). The App Store Connect keys shown below (`appPreviewDevice`, `assetGenId`) illustrate the field’s shape for assets sourced from that provider and don’t apply to Maps assets.
+The `providerAssetMetadata` field depends on the asset’s source provider and has no fixed shape. For Apple Maps (`BUSINESS_BRAND`) assets uploaded through this API, `providerAssetMetadata` is currently empty (`{}`). The App Store Connect keys shown below (`appPreviewDevice`, `assetGenId`) illustrate the field’s shape for assets sourced from that provider and don’t apply to Maps assets.
 
 
 ---

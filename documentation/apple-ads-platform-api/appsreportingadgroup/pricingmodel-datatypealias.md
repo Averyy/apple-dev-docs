@@ -16,6 +16,8 @@ string AppsReportingAdGroup.PricingModel
 
 #### Discussion
 
+This determines which report metrics are directly tied to cost: `CPM` pairs with impression-based billing and `CPT` with tap-based billing.
+
 ##### Example
 
 ```json

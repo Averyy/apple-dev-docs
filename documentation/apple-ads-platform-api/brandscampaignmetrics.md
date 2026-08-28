@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-Campaign-level metrics for BRANDS, inheriting all properties from `BrandsMetrics`.
+Campaign-level metrics for brands, inheriting all properties from `BrandsMetrics`.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -16,7 +16,7 @@ object BrandsCampaignMetrics
 
 #### Discussion
 
-`BrandsCampaignMetrics` extends [`BrandsMetrics`](brandsmetrics.md) with no additional fields. It is the metrics object embedded in BRANDS campaign report rows.
+The `BrandsCampaignMetrics` extends [`BrandsMetrics`](brandsmetrics.md) with no additional fields. It’s the metrics object embedded in brands campaign report rows.
 
 ## Properties
 

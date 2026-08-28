@@ -16,7 +16,7 @@ object DeviceAssetGroup
 
 #### Discussion
 
-`DeviceAssetGroup` is a value type within the `assetsByDevice` map on `ProductPageLocaleDetails` and `AppLocaleDetails`, keyed by specific device type string (e.g., `iphone_6_5`, `iphone_6_7`, `ipadPro`).
+The `DeviceAssetGroup` object is a value type within the `assetsByDevice` map on `ProductPageLocaleDetails` and `AppLocaleDetails`, keyed by specific device type string (for example, `iphone_6_5`, `iphone_6_7`, `ipadPro`).
 
 ##### Example
 
@@ -40,7 +40,7 @@ object DeviceAssetGroup
 ## Properties
 
 - `assets` ([AssetReference]): Ordered list of asset references for this device type. Each item is an `AssetReference` containing an `assetId` UUID. Read-only.
-- `appPreviewDeviceFallBackDevices` ([string]): List of fallback device type strings to use if assets are not available for this device (e.g., `["iphone6", "iphone5"]`). Empty array when no fallback applies. Read-only.
+- `appPreviewDeviceFallBackDevices` ([string]): List of fallback device type strings to use if assets are not available for this device (for example, `["iphone6", "iphone5"]`). Empty array when no fallback applies. Read-only.
 
 ## See Also
 

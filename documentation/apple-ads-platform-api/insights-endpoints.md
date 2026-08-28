@@ -24,7 +24,7 @@ Query the following endpoints to retrieve insights data:
 
 Impression share reports measure your share of available impressions relative to competitors for a given set of keywords or app categories. The report shows how often your ad appeared in any ad position for a specific search term, out of the total number of searches on that search term, in the same App Store country or region. Use impression share data to understand how competitive you are on a given search term and how much headroom exists to increase reach.
 
-To retrieve impression share data, use `POST /v1/insights/apps/impression-share/query`. You must filter on `promotedObjectId`, or the request fails with a 400 error. The endpoint returns results synchronously with pagination. The following table lists the granularity options and limits for impression share queries:
+To retrieve impression share data, use `POST /v1/insights/apps/impression-share/query` ([`Impression Share Query`](query-app-impression-share-data.md)). You must filter on `promotedObjectId`, or the request fails with a 400 error. The endpoint returns results synchronously with pagination. The following table lists the granularity options and limits for impression share queries:
 
 | Field | Details |
 | --- | --- |
@@ -53,7 +53,7 @@ Search term popularity reports show the relative ranking of search terms by volu
 
 Use monthly and weekly search term popularity data to understand search volume trends and identify high-opportunity terms.
 
-To retrieve search term popularity data, use `POST /v1/insights/apps/search-term-popularity/query`. This endpoint always uses UTC. The following table lists the granularity options and limits for search term popularity queries:
+To retrieve search term popularity data, use `POST /v1/insights/apps/search-term-popularity/query` ([`Search Term Popularity Query`](query-app-search-term-popularity-data.md)). This endpoint always uses UTC. The following table lists the granularity options and limits for search term popularity queries:
 
 | Field | Details |
 | --- | --- |

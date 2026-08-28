@@ -16,7 +16,7 @@ object AppLocaleDetails
 
 #### Discussion
 
-`AppLocaleDetails` represents the localized metadata and asset groupings for a single locale of an app’s Default Product Page (DPP). `language` (e.g., `"en"`) and `languageCode` (e.g., `"en-US"`) identify each locale entry.
+The `AppLocaleDetails` object represents the localized metadata and asset groupings for a single locale of an app’s Default Product Page (DPP). The `language` (for example, `"en"`) and `languageCode` (for example, `"en-US"`) fields identify each locale entry.
 
 ##### Example
 
@@ -62,15 +62,15 @@ object AppLocaleDetails
 ## Properties
 
 - `adamId` (int64): App Store identifier for the app.
-- `language` (string): Language identifier (e.g., `"en"`).
-- `languageCode` (string): BCP-47 language code (e.g., `"en-US"`).
+- `language` (string): Language identifier (for example, `"en"`).
+- `languageCode` (string): BCP-47 language code (for example, `"en-US"`).
 - `isPrimaryLocale` (boolean): True if this locale’s `languageCode` matches the app’s primary language.
 - `appName` (string): Localized app name.
 - `subTitle` (string): Localized app subtitle.
 - `promotionalText` (string): Promotional text for this locale (max 170 characters).
 - `shortDescription` (string): Short description for this locale (max 4000 characters).
 - `deviceClasses` ([string]): Device families with available assets for this locale.
-- `assetsByDevice` (AppLocaleDetails.AssetsByDevice): Map of device type (e.g., `"iphone_6_5"`) to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references.
+- `assetsByDevice` (AppLocaleDetails.AssetsByDevice): Map of device type (for example, `"iphone_6_5"`) to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references.
 
 ## See Also
 

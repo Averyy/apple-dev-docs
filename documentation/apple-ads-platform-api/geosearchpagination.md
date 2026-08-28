@@ -16,9 +16,9 @@ object GeoSearchPagination
 
 #### Discussion
 
-`GeoSearchPagination` controls and reports offset-based pagination through geo location search results.
+The `GeoSearchPagination` object controls and reports offset-based pagination through geo location search results.
 
-When used in a [`GeoSearchPostRequest`](geosearchpostrequest.md) body, set `offset` and `pageSize` to retrieve a specific page of results. The GET endpoint (`GET /v1/search/geo`) accepts `offset` and `pageSize` as query parameters instead of a request body. In both cases the response `pagination` object includes `totalCount`, enabling callers to calculate the total number of pages available.
+When used in a [`GeoSearchPostRequest`](geosearchpostrequest.md) body, set `offset` and `pageSize` to retrieve a specific page of results. The GET endpoint (`GET /v1/search/geo` ([`Search Geo Locations`](searches-for-a-list-of-geo-locations.md))) accepts `offset` and `pageSize` as query parameters instead of a request body. In both cases the response `pagination` object includes `totalCount`, enabling callers to calculate the total number of pages available.
 
 The default `pageSize` of 20 is sufficient for most targeted lookups. Increase it for searches expected to return many matching locations. To retrieve the next page, increment `offset` by `pageSize`.
 

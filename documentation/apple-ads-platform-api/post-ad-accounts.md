@@ -13,8 +13,8 @@ Create a new ad account under a specified organization.
 This endpoint creates a new ad account under a specified organization.
 
 - The ad account inherits `currency`, `timezone`, and `paymentModel` from the parent org at creation time. These values are immutable after creation, as is the `orgId` relationship.
-- `name` and `productFeatures` are both required. The system rejects the request if either is omitted.
-- The `X-AP-Context` header is not required for this endpoint.
+- The `name` and `productFeatures` fields are both required. The system rejects the request if either is omitted.
+- The `X-AP-Context` header isn’t required for this endpoint.
 - To enable App Store advertising, include a `CONTENT_PROVIDER` delegation with the CPID as `resourceId`.
 - To enable Maps advertising, include a `BUSINESS_BRAND` delegation with the Brand ID as `resourceId`.
 - See [`ProductFeatures`](productfeatures.md) for delegation requirements by App Store or Apple Maps.
@@ -23,7 +23,7 @@ This endpoint creates a new ad account under a specified organization.
 
 **Request with CPID Delegation**:
 
-Links the ad account to an App Store Connect account via a Content Provider ID (CPID). `delegations` is optional but when included, each entry requires `resourceId` and `resourceType`.
+Links the ad account to an App Store Connect account via a Content Provider ID (CPID). The `delegations` field is optional but when included, each entry requires `resourceId` and `resourceType`.
 
 ##### Request
 
@@ -75,7 +75,7 @@ POST /v1/ad-accounts
 
 **Request with Maps Delegation**:
 
-Links the ad account to a validated brand for Apple Maps advertising via a Brand ID. `productFeatures` must include `BUSINESS_BRAND_MANUAL` and the matching delegation must use `resourceType: BUSINESS_BRAND`.
+Links the ad account to a validated brand for Apple Maps advertising via a Brand ID. The `productFeatures` field must include `BUSINESS_BRAND_MANUAL` and the matching delegation must use `resourceType: BUSINESS_BRAND`.
 
 ##### Request
 

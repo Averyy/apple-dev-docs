@@ -16,7 +16,7 @@ object InvoiceDetailCreate
 
 #### Discussion
 
-`InvoiceDetailCreate` is the create-time counterpart to [`InvoiceDetail`](invoicedetail.md). It is required for Line of Credit (`LOC`) accounts when creating a campaign or budget order.
+The `InvoiceDetailCreate` object is the create-time counterpart to [`InvoiceDetail`](invoicedetail.md). It’s required for Line of Credit (`LOC`) accounts when creating a campaign or budget order.
 
 ##### Example
 

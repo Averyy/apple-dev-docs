@@ -16,7 +16,7 @@ object SearchTermPopularityTimeRange
 
 #### Discussion
 
-`SearchTermPopularityTimeRange` specifies the date window and granularity for a search term popularity report. Date format and retention period differ by granularity.
+The `SearchTermPopularityTimeRange` object specifies the date window and granularity for a search term popularity report. Date format and retention period differ by granularity.
 
 > **Note**: **Note:** For `MONTHLY` granularity, the response truncates the date field to `YYYY-MM`.
 

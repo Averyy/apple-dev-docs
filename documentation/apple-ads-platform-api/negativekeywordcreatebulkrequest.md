@@ -16,7 +16,7 @@ object NegativeKeywordCreateBulkRequest
 
 #### Discussion
 
-`NegativeKeywordCreateBulkRequest` allows creating multiple negative keywords in a single API call.
+The `NegativeKeywordCreateBulkRequest` object allows creating multiple negative keywords in a single API call.
 
 ##### Example
 
@@ -50,7 +50,7 @@ object NegativeKeywordCreateBulkRequest
 
 ## Properties
 
-- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed while others fail.
+- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed. Other operations can still fail without blocking the successful ones.
 - `items` ([NegativeKeywordCreateBulkRequestItem]): Array of bulk item objects to create. Each item has the shape `{ correlationId: int64, data: BulkNegativeKeywordCreate }`.
 
 ## See Also

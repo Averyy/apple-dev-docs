@@ -16,13 +16,13 @@ object IncludeExclude
 
 #### Discussion
 
-`IncludeExclude` is a shared targeting wrapper used by [`BrandsTargetingProjection`](brandstargetingprojection.md) and [`AppsTargetingProjection`](appstargetingprojection.md). The `include` array accepts different value sets depending on context:
+The `IncludeExclude` object is a shared targeting wrapper used by [`BrandsTargetingProjection`](brandstargetingprojection.md) and [`AppsTargetingProjection`](appstargetingprojection.md). The `include` array accepts different value sets depending on context:
 
 | Field | Accepted values |
 | --- | --- |
 | `supplyPlacement` | Apps: `APPSTORE_SEARCH_RESULTS`, `APPSTORE_SEARCH_TAB`, `APPSTORE_TODAY_TAB`, `APPSTORE_PRODUCT_PAGES`. Brands: `MAPS_SEARCH_RESULTS`, `MAPS_SEARCH_HOME` |
 | `supplySource` | `MAPS` |
-| `countryOrRegion` | ISO 3166-1 alpha-2 country codes, e.g. `US`, `GB` |
+| `countryOrRegion` | ISO 3166-1 alpha-2 country codes, for example, `US`, `GB` |
 | `lifetimeStorefronts` | ISO 3166-1 alpha-2 storefront codes |
 | `promotedLocationGroup` | Location group IDs associated with the brand |
 | `promotedLocation` | Individual brand location IDs |

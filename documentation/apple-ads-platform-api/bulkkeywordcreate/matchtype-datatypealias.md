@@ -16,6 +16,8 @@ string BulkKeywordCreate.MatchType
 
 #### Discussion
 
+Available options vary by platform: App Store keywords use `EXACT` or `BROAD`, while Apple Maps keywords add `PHRASE` and category-based matching.
+
 ##### Example
 
 ```json

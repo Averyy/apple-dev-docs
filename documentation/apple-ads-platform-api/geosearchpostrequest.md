@@ -16,7 +16,7 @@ object GeoSearchPostRequest
 
 #### Discussion
 
-`GeoSearchPostRequest` is the request body for the `POST /v1/search/geo` endpoint. It accepts an array of [`GeoRequest`](georequest.md) objects, each specifying a geo entity, and returns eligibility data for all of them in a single call scoped to the specified `supplySource`. Use this for batch-validating a list of location IDs before setting them as ad group targeting values.
+The `GeoSearchPostRequest` object is the request body for the `POST /v1/search/geo` ([`Query Geo Locations`](gets-a-list-of-geo-locations.md)) endpoint. It accepts an array of [`GeoRequest`](georequest.md) objects, each specifying a geo entity, and returns eligibility data for all of them in a single call scoped to the specified `supplySource`. Use this for batch-validating a list of location IDs before setting them as ad group targeting values.
 
 Each `GeoRequest` must supply exactly one of `id` (numeric `geo_location_id`) or `legacyId` (pipe-delimited string such as `US|CA|San Francisco`) plus the required `entity` field. The response is a [`GeoSearchResponse`](geosearchresponse.md) containing a `result` array of matching entities.
 

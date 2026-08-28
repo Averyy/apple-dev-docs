@@ -12,9 +12,9 @@ Update an existing location group’s name, rules, or location membership.
 
 The system modifies only the fields you include in the request body. Omitted fields retain their current values. See [`LocationGroupUpdate`](locationgroupupdate.md) for the request body’s accepted fields, including which ones are mutable.
 
-`brandId` and `adAccountId` can’t change after creation, and the update request body doesn’t accept them. To move a group to a different brand or transfer ownership to another ad account, delete the group and recreate it.
+The `brandId` and `adAccountId` fields can’t change after creation, and the update request body doesn’t accept them. To move a group to a different brand or transfer ownership to another ad account, delete the group and recreate it.
 
-`locationIds` and `rules` use full-replacement semantics: the value you send becomes the entire list, not a diff against the existing one, since the API doesn’t support partial updates within an array. To add a single location to a `STATIC` group, retrieve the current `locationIds` array, append the new ID, and send the complete list.
+The `locationIds` and `rules` fields use full-replacement semantics: the value you send becomes the entire list, not a diff against the existing one, since the API doesn’t support partial updates within an array. To add a single location to a `STATIC` group, retrieve the current `locationIds` array, append the new ID, and send the complete list.
 
 When you add or update rules on a `DYNAMIC` group, `systemStatus` transitions to `PENDING` while the system evaluates membership, and `groupTotal` keeps its last known value until evaluation completes. Updating only `name` or `description` leaves `systemStatus`, `groupTotal`, and membership unchanged. Because an ad group displays the place card for each location in its assigned location group, changing a group’s membership changes which place cards appear once evaluation (if triggered) completes.
 

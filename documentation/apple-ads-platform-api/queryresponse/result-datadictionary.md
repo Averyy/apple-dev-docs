@@ -16,7 +16,7 @@ object QueryResponse.Result
 
 #### Discussion
 
-`QueryResponse` is a generic envelope meant to be extended, so its `result` array has no properties defined here. Concrete query responses, such as `CampaignQueryResponse` or `KeywordQueryResponse`, declare their own `result` array typed to the resource they return. No endpoint returns this untyped shape directly.
+The `QueryResponse` object is a generic envelope meant to be extended, so its `result` array has no properties defined here. Concrete query responses, such as `CampaignQueryResponse` or `KeywordQueryResponse`, declare their own `result` array typed to the resource they return. No endpoint returns this untyped shape directly.
 
 
 ---

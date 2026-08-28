@@ -16,6 +16,8 @@ string AppsReportingCampaign.Status
 
 #### Discussion
 
+This captures the advertiser-set run state as of the report’s generation, separate from the system-evaluated [`AppsReportingCampaign.SystemStatus`](appsreportingcampaign/systemstatus-data.typealias.md) alongside it.
+
 ##### Example
 
 ```json

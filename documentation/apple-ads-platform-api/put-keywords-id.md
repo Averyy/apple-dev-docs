@@ -10,7 +10,7 @@ Update a keyword’s bid amount or status to optimize spend and control delivery
 
 #### Discussion
 
-This endpoint updates an existing keyword. Only fields included in the request body are modified. Omitted fields retain their current values. The `KeywordUpdate` schema is intentionally narrow. Only `bid` and `status` are accepted. Attempting to update a deleted keyword returns 404 Not Found. This differs from [`Get a Keyword`](get-keywords-_id_.md), which does not return 404 for a deleted keyword. It returns the keyword with `deleted: true` instead.
+This endpoint updates an existing keyword. Only fields included in the request body are modified. Omitted fields retain their current values. The `KeywordUpdate` schema is intentionally narrow. Only `bid` and `status` are accepted. Attempting to update a deleted keyword returns 404 Not Found. This differs from [`Get a Keyword`](get-keywords-_id_.md), which doesn’t return 404 for a deleted keyword. It returns the keyword with `deleted: true` instead.
 
 On update, `bid` must be a valid `Money` object. Passing `null` returns an error, unlike [`Create a Keyword`](post-keywords.md), where omitting `bid` or passing `null` defaults the keyword to the ad group’s bid strategy. See [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md) for the full explanation.
 

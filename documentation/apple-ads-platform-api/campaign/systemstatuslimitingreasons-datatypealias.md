@@ -16,6 +16,8 @@ string Campaign.SystemStatusLimitingReasons
 
 #### Discussion
 
+Unlike [`Campaign.SystemStatusReasons`](campaign/systemstatusreasons-data.typealias.md), these codes describe conditions, such as pending app documentation or brand policy issues, that throttle delivery rather than stop it outright.
+
 ##### Example
 
 ```json

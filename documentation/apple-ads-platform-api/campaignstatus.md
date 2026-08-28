@@ -16,7 +16,7 @@ string CampaignStatus
 
 #### Discussion
 
-`CampaignStatus` is the only campaign field that directly controls whether the campaign is eligible to serve ads. Set it to `PAUSED` to stop delivery without deleting the campaign. The system status (`CampaignSystemStatus`) reflects actual delivery. A campaign can be `ENABLED` but `NOT_RUNNING` due to system conditions.
+The `CampaignStatus` is the only campaign field that directly controls whether the campaign is eligible to serve ads. Set it to `PAUSED` to stop delivery without deleting the campaign. The system status (`CampaignSystemStatus`) reflects actual delivery. A campaign can be `ENABLED` but `NOT_RUNNING` due to system conditions.
 
 ## See Also
 

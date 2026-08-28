@@ -16,7 +16,7 @@ string AdDisplayStatus
 
 #### Discussion
 
-`AdDisplayStatus` is a read-only derived field on [`Ad`](ad.md) that summarizes the effective delivery state of the ad. It accounts for the ad’s own `AdStatus`, parent ad group status, and parent campaign status. When displaying ad health in a UI, use this field.
+The `AdDisplayStatus` is a read-only derived field on [`Ad`](ad.md) that summarizes the effective delivery state of the ad. It accounts for the ad’s own `AdStatus`, parent ad group status, and parent campaign status. When displaying ad health in a UI, use this field.
 
 ## See Also
 

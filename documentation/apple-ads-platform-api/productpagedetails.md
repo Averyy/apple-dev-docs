@@ -16,7 +16,7 @@ object ProductPageDetails
 
 #### Discussion
 
-`ProductPageDetails` describes a product page associated with an app. The product page query and get-by-ID endpoints return it. Creative and ad group objects that use a product page destination reference the page by its `productPageId` only, not this full object.
+The `ProductPageDetails` object describes a product page associated with an app. The product page query and get-by-ID endpoints return it. Creative and ad group objects that use a product page destination reference the page by its `productPageId` only, not this full object.
 
 ##### Example
 
@@ -37,7 +37,7 @@ object ProductPageDetails
 - `id` (string): Product page identifier. This is the App Store Connect product page UUID. Read-only.
 - `adamId` (int64): The App Store app identifier (Adam ID) this product page belongs to.
 - `name` (string): The product page name as configured in App Store Connect.
-- `state` (string): Product page state. Nullable string with no fixed enum, e.g. `PUBLISHED`. App Store Connect may also surface states such as `READY_FOR_DISTRIBUTION` before a page finishes propagating.
+- `state` (string): Product page state. Nullable string with no fixed enum, for example, `PUBLISHED`. App Store Connect may also surface states such as `READY_FOR_DISTRIBUTION` before a page finishes propagating.
 - `deepLink` (uri): Deep link URL for this product page. Only present for product pages with a configured deep link destination.
 - `creationTime` (date-time): Timestamp when the product page was created, in ISO 8601 format. Read-only.
 - `modificationTime` (date-time): Timestamp when the product page was last modified, in ISO 8601 format. Read-only.

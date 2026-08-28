@@ -21,7 +21,7 @@ string AdAccountSystemStatusReason
 - [type OrgSystemStatus](orgsystemstatus.md)
   System-derived operational status of an organization.
 - [type OrgSystemStatusReason](orgsystemstatusreason.md)
-  Reasons that can cause an organization’s system status to be `INACTIVE`.
+  Reasons that can cause an organization’s system status to not be active.
 - [type AdAccountSystemStatus](adaccountsystemstatus.md)
   System-derived operational status of an ad account.
 - [object AdvertiserResourceListResponse](advertiserresourcelistresponse.md)

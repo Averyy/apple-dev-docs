@@ -16,7 +16,7 @@ object ActionMetrics
 
 #### Discussion
 
-`ActionMetrics` is a sub-object used within BRANDS metrics to report action counts segmented by how the action was attributed. Each field on this object corresponds to one attribution category. Currently, `tap` is the only defined field. Future API versions may add additional attribution types.
+The `ActionMetrics` object is used within brands metrics to report action counts segmented by how the action was attributed. Each field on this object corresponds to one attribution category. Currently, `tap` is the only defined field. Future API versions may add additional attribution types.
 
 ##### Example
 

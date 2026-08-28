@@ -16,7 +16,7 @@ object TimeRange
 
 #### Discussion
 
-`TimeRange` defines the date window, timezone, and optional time-series breakdown for a reporting request.
+The `TimeRange` defines the date window, timezone, and optional time-series breakdown for a reporting request.
 
 ##### Example
 

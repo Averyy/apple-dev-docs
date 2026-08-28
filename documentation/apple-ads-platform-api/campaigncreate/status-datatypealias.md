@@ -16,6 +16,8 @@ string CampaignCreate.Status
 
 #### Discussion
 
+Include `status` in the create request to determine whether the new campaign begins competing for delivery immediately or starts paused.
+
 ##### Example
 
 ```json

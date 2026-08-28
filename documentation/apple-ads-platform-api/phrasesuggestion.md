@@ -16,7 +16,7 @@ object PhraseSuggestion
 
 #### Discussion
 
-`PhraseSuggestion` represents a phrase suggestion for use as a keyword targeting input.
+The `PhraseSuggestion` object represents a phrase suggestion for use as a keyword targeting input.
 
 Phrase suggestions are similar to keyword suggestions but may reflect multi-word user queries or longer-tail search patterns. Phrase suggestions help you discover targeting opportunities beyond single-word keywords, particularly for apps with specific use cases or niche audiences.
 

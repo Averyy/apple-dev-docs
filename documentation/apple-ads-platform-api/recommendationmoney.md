@@ -16,7 +16,7 @@ object RecommendationMoney
 
 #### Discussion
 
-`Money` represents a monetary value in the Recommendations and Suggestions APIs.
+The `Money` object represents a monetary value in the Recommendations and Suggestions APIs.
 
 The `currency` code corresponds to the ad account’s billing currency. All monetary fields on a given recommendation share the same currency.
 
@@ -43,7 +43,7 @@ The `currency` code corresponds to the ad account’s billing currency. All mone
 - [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
 - [object DailyCapRecommendation](dailycaprecommendation.md)
-  A daily budget recommendation for a campaign that is frequently hitting its spending ceiling.
+  A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 - [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
 - [object ApplyTargetCpaRecommendation](applytargetcparecommendation.md)

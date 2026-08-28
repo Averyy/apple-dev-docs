@@ -16,6 +16,8 @@ string Org.PaymentModel
 
 #### Discussion
 
+Setting this to `LOC` at the organization level is what makes budget orders available to the ad accounts beneath it.
+
 ##### Example
 
 ```json

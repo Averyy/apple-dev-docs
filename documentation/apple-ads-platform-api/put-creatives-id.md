@@ -10,7 +10,7 @@ Change an ad creative’s name or creative spec by its unique identifier.
 
 #### Discussion
 
-For this endpoint, only two fields are mutable after you create an ad creative: `name` and `creativeSpec`. The `creativeType` and `destination` are permanently fixed at creation time and cannot be changed. Not every field within `creativeSpec` is mutable. Refer to the specific creative type documentation for which sub-fields can be updated.
+This endpoint updates an existing ad creative. Only two fields are mutable after creation: `name` and `creativeSpec`. The `creativeType` and `destination` are permanently fixed at creation time and can’t be changed. Not every field within `creativeSpec` is mutable. Refer to the specific creative type documentation for which sub-fields can be updated.
 
 #### Payload Examples
 

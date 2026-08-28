@@ -16,7 +16,7 @@ object CreativeCreate.CreativeSpec
 
 #### Discussion
 
-- For `CUSTOM_PRODUCT_PAGE` and `DEFAULT_PRODUCT_PAGE`, pass an empty object (`{}`). Pre-tap content is not customizable for these types.
+- For `CUSTOM_PRODUCT_PAGE` and `DEFAULT_PRODUCT_PAGE`, pass an empty object (`{}`). Pre-tap content isn’t customizable for these types.
 - For `LOCAL_ADS_SEARCH_CREATIVE`, `creativeSpec` is required and must carry the Apple Maps ad creative spec: - `brandId`: The brand this ad creative belongs to.
 - `creativeSubtype`: Asset format, either `BUSINESS_LOGO` or `BUSINESS_ASSET`.
 - `creativeAssets`: Array of asset references, each identified by `assetId`, pointing to the image or video content to display.

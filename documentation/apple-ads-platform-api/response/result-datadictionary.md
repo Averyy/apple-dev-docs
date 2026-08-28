@@ -16,7 +16,7 @@ object Response.Result
 
 #### Discussion
 
-`Response.Result` represents the generic `result` field on the base [`Response`](response.md) type. Each endpoint returns a more specific type in its place, such as `Campaign` or `UserAccessResult`. See the endpoint’s own documentation for the concrete shape it returns.
+The `Response.Result` object represents the generic `result` field on the base [`Response`](response.md) type. Each endpoint returns a more specific type in its place, such as `Campaign` or `UserAccessResult`. See the endpoint’s own documentation for the concrete shape it returns.
 
 
 ---

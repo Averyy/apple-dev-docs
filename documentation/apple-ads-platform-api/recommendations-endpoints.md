@@ -13,7 +13,7 @@ The Recommendations API returns recommendations for target CPA adjustments and d
 
 #### Explore the Available Endpoints
 
-The API scopes recommendations to a promoted object, either an app or a brand, that you identify by `promotedObjectId` and `promotedObjectType`. For `promotedObjectId`, use the app Adam ID when `promotedObjectType` is `APPSTORE_APP` and the brand ID when it is `BUSINESS_BRAND`. Use `campaignId` as an optional filter to narrow results to a specific campaign.
+The API scopes recommendations to a promoted object, either an app or a brand, that you identify by `promotedObjectId` and `promotedObjectType`. For `promotedObjectId`, use the app Adam ID when `promotedObjectType` is `APPSTORE_APP` and the brand ID when it’s `BUSINESS_BRAND`. Use `campaignId` as an optional filter to narrow results to a specific campaign.
 
 For Apple Maps (`BUSINESS_BRAND`) campaigns, only daily budget recommendations are available. Target CPA recommendations apply to App Store (`APPSTORE_APP`) campaigns using a Maximize Conversions bid strategy, which relies on Search Match within the Search results placement.
 
@@ -62,7 +62,7 @@ The following table lists each optimization area’s merged and system categorie
 
 All recommendation types use a `POST /query` pattern with the [`RecommendationQueryRequest`](recommendationqueryrequest.md) body. Two filters are mandatory on every request:
 
-- The `promotedObjectId` field is the ID of the promoted object being queried. Use the app Adam ID when `promotedObjectType` is `APPSTORE_APP`, or the brand ID when it is `BUSINESS_BRAND`.
+- The `promotedObjectId` field is the ID of the promoted object being queried. Use the app Adam ID when `promotedObjectType` is `APPSTORE_APP`, or the brand ID when it’s `BUSINESS_BRAND`.
 - The `promotedObjectType` field is the type of the promoted object (for example, `APPSTORE_APP`).
 
 Optional filters such as `state` and `campaignId` narrow results further. The following example shows a query request body with these filters applied:

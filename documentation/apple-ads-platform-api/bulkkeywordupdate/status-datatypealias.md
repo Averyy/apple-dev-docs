@@ -16,6 +16,8 @@ string BulkKeywordUpdate.Status
 
 #### Discussion
 
+Include this field within an item’s `data` to enable or pause the keyword as part of the same bulk update request.
+
 ##### Example
 
 ```json

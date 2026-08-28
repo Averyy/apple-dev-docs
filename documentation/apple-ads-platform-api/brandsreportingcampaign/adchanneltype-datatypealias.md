@@ -16,6 +16,8 @@ string BrandsReportingCampaign.AdChannelType
 
 #### Discussion
 
+Since Brands campaigns only run on Apple Maps, this field distinguishes `SEARCH` results placements from `DISPLAY` placements like the Search tab or Today tab.
+
 ##### Example
 
 ```json

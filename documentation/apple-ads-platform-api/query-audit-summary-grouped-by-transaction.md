@@ -12,7 +12,9 @@ Query audit summaries grouped by transaction across a specified time range.
 
 This endpoint returns one `AuditSummary` row per (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination. The `count` field on each row indicates how many individual field changes that transaction group contains.
 
-To fetch field-level details via `GET /v1/change-history/{detailId}`, you need a composite `detailId` in the form `EntityType.entityId.txnId`. A summary row alone doesn’t include `entityId`, so set `options.metadata` to `latest` or `snapshot` on the query request: each resulting row’s `metas` array then includes a ready-to-use `detailId` you can pass directly to the detail endpoint.
+To fetch field-level details via `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](get-change-details-by-detailid.md)), you need a composite `detailId` in the form `EntityType.entityId.txnId`. A summary row alone doesn’t include `entityId`, so set `options.metadata` to `latest` or `snapshot` on the query request: each resulting row’s `metas` array then includes a ready-to-use `detailId` you can pass directly to the detail endpoint.
+
+See [`AuditOperator`](auditoperator.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -398,7 +400,7 @@ Query keyword changes with `options.metadata` set to `latest`, returning per-ent
 
 ## Request Body
 
-An [`AuditQuery`](auditquery.md) object specifying filter fields, sorting, pagination, and options. Every request requires a time-range filter on `eventTime`. Use `BETWEEN` for a bounded range or `GREATER_THAN`/`LESS_THAN` for an open-ended range.
+An [`AuditQuery`](auditquery.md) object specifying filter fields, sorting, pagination, and options. Every request requires a time-range filter on `eventTime`. Use `BETWEEN` for a bounded range or `GREATER_THAN` or `LESS_THAN` for an open-ended range.
 
 ## See Also
 

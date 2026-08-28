@@ -16,7 +16,7 @@ object KeywordUpdateBulkRequest
 
 #### Discussion
 
-`KeywordUpdateBulkRequest` allows updating multiple keywords in a single API call.
+The `KeywordUpdateBulkRequest` object allows updating multiple keywords in a single API call.
 
 ##### Example
 
@@ -52,7 +52,7 @@ object KeywordUpdateBulkRequest
 
 ## Properties
 
-- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed while others fail.
+- `allowPartialSuccess` (boolean): If `true`, allows some operations in the batch to succeed. Other operations can still fail without blocking the successful ones.
 - `items` ([KeywordUpdateBulkRequestItem]): Array of bulk item objects to update. Each item has the shape `{ correlationId: int64, data: BulkKeywordUpdate }`. The `id` field is required in `BulkKeywordUpdate`.
 
 ## See Also

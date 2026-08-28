@@ -16,7 +16,7 @@ object BulkResponse
 
 #### Discussion
 
-`BulkResponse` is the standard response wrapper for bulk create, update, and delete operations. The `result` array is parallel to the `items` array in the corresponding `BulkOperationRequest`: element at index `n` in `result` corresponds to element at index `n` in the request. To correlate results back to their originating request item, use the `correlationId` field on each result entry.
+The `BulkResponse` object is the standard response wrapper for bulk create, update, and delete operations. The `result` array is parallel to the `items` array in the corresponding `BulkOperationRequest`: element at index `n` in `result` corresponds to element at index `n` in the request. To correlate results back to their originating request item, use the `correlationId` field on each result entry.
 
 When `allowPartialSuccess` is `true` in the request, individual item failures appear in the `result` array rather than the top-level `error`.
 
@@ -36,7 +36,7 @@ When `allowPartialSuccess` is `true` in the request, individual item failures ap
 
 ## Properties
 
-- `result` (Response.Result): `BulkResponse` inherits `result` as a generic nullable object from the `Response` base schema. The array-of-items typing (e.g., array of `BulkItemResultKeyword`) is defined by typed response subclasses such as `KeywordCreateBulkResponse`, not by `BulkResponse` itself. Each entry contains the operation outcome and, on failure, per-item error details. Read-only.
+- `result` (Response.Result): `BulkResponse` inherits `result` as a generic nullable object from the `Response` base schema. The array-of-items typing (for example, array of `BulkItemResultKeyword`) is defined by typed response subclasses such as `KeywordCreateBulkResponse`, not by `BulkResponse` itself. Each entry contains the operation outcome and, on failure, per-item error details. Read-only.
 - `error` (Error): Top-level error if the entire bulk request was rejected before processing. `null` when the request was accepted (even with per-item failures). See [`Error`](error.md). Read-only.
 
 ## See Also

@@ -16,9 +16,7 @@ object BrandsAdReportResponse
 
 #### Discussion
 
-`BrandsAdReportResponse` is the top-level response envelope for `BRANDS` ad-level reports.
-
-Note that ad-level reports do not support `HOURLY` granularity.
+Note that ad-level reports don’t support `HOURLY` granularity.
 
 ##### Example
 
@@ -98,7 +96,7 @@ Note that ad-level reports do not support `HOURLY` granularity.
 
 ## Properties
 
-- `result` (BrandsAdResultContainer): Wraps the report rows, each including ad metadata (including creative type and the `BRANDS`-specific groupBy dimensions `deviceClass`, `locationId`, and `supplyPlacement`) and associated performance metrics. See [`BrandsAdResultContainer`](brandsadresultcontainer.md) for details.
+- `result` (BrandsAdResultContainer): Wraps the report rows, each including ad metadata (including creative type and the `brands`-specific groupBy dimensions `deviceClass`, `locationId`, and `supplyPlacement`) and associated performance metrics. See [`BrandsAdResultContainer`](brandsadresultcontainer.md) for details.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

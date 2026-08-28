@@ -22,7 +22,7 @@ Query, filter, pagination, and sorting objects for recommendation requests.
 - [type RecommendationFilterOperator](recommendationfilteroperator.md)
   The comparison operator applied in a recommendation filter condition.
 - [type RecommendationState](recommendationstate.md)
-  The lifecycle state of a recommendation, indicating whether it is available to act on or has already been accepted or rejected.
+  The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 - [type RecommendationStatus](recommendationstatus.md)
   The operational status of a recommendation record, independent of its lifecycle state.
 - [type RecommendationCategory](recommendationcategory.md)

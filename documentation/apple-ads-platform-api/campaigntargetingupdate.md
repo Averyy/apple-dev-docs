@@ -16,7 +16,7 @@ object CampaignTargetingUpdate
 
 #### Discussion
 
-`CampaignTargetingUpdate` is the update-time counterpart to [`CampaignTargeting`](campaigntargeting.md). The `supplySource`, `supplyPlacement`, and `countryOrRegion` fields are all optional and nullable. Only the fields you supply are changed, and any omitted field retains its current value. Each field uses a [`TargetingDataUpdate`](targetingdataupdate.md) object to express `include`/`exclude` changes for that dimension.
+The `CampaignTargetingUpdate` object is the update-time counterpart to [`CampaignTargeting`](campaigntargeting.md). The `supplySource`, `supplyPlacement`, and `countryOrRegion` fields are all optional and nullable. Only the fields you supply are changed, and any omitted field retains its current value. Each field uses a [`TargetingDataUpdate`](targetingdataupdate.md) object to express `include`/`exclude` changes for that dimension.
 
 ##### Example
 

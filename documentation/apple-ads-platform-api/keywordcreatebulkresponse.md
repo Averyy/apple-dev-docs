@@ -16,7 +16,7 @@ object KeywordCreateBulkResponse
 
 #### Discussion
 
-`KeywordCreateBulkResponse` is the response envelope returned by the bulk keyword creation endpoint. The response populates `error` only when the system rejects the overall request before processing any items.
+The `KeywordCreateBulkResponse` object is the response envelope returned by the bulk keyword creation endpoint. The response populates `error` only when the system rejects the overall request before processing any items.
 
 ##### Example
 

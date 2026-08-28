@@ -16,7 +16,7 @@ object DestinationParameter
 
 #### Discussion
 
-[`Destination`](destination.md) and [`DestinationCreate`](destinationcreate.md) embed `DestinationParameter`. It supplies the app and product page identifiers needed to route a tapped ad to the correct App Store listing. For non-App Store destination types (such as `LOCAL_ADS_PLACECARD`), omit this object.
+The [`Destination`](destination.md) and [`DestinationCreate`](destinationcreate.md) embed `DestinationParameter`. It supplies the app and product page identifiers needed to route a tapped ad to the correct App Store listing. For non-App Store destination types (such as `LOCAL_ADS_PLACECARD`), omit this object.
 
 ##### Example
 

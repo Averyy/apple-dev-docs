@@ -16,7 +16,7 @@ object RecommendationFilterCondition
 
 #### Discussion
 
-`FilterCondition` is the building block of query filters in the Recommendations API. The API combines multiple conditions in the `filters` array with AND logic. All conditions must match for a recommendation to appear in results.
+The `FilterCondition` object is the building block of query filters in the Recommendations API. The API combines multiple conditions in the `filters` array with AND logic. All conditions must match for a recommendation to appear in results.
 
 Every query request requires two filters:
 
@@ -70,7 +70,7 @@ Always pass `value` as an array.
 - [type RecommendationFilterOperator](recommendationfilteroperator.md)
   The comparison operator applied in a recommendation filter condition.
 - [type RecommendationState](recommendationstate.md)
-  The lifecycle state of a recommendation, indicating whether it is available to act on or has already been accepted or rejected.
+  The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 - [type RecommendationStatus](recommendationstatus.md)
   The operational status of a recommendation record, independent of its lifecycle state.
 - [type RecommendationCategory](recommendationcategory.md)

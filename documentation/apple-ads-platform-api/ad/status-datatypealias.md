@@ -16,6 +16,8 @@ string Ad.Status
 
 #### Discussion
 
+The `Status` field controls auction eligibility directly, while the system-computed [`Ad.SystemStatus`](ad/systemstatus-data.typealias.md) reflects whether the ad is actually delivering.
+
 ##### Example
 
 ```json

@@ -17,9 +17,9 @@ This group exposes the following endpoints:
 | `GET` | `/v1/acls` | [`Get User ACL`](get-user-acls.md) returns a list of `UserAcl` entries identifying every ad account the token can access and the role assigned to each. |
 | `GET` | `/v1/orgs/{id}` | [`Get Org by ID`](get-orgs-_id_.md) returns an `OrgResponse` with the organization’s name, currency, timezone, payment model, and system status. |
 
-Call `GET /v1/me`, `GET /v1/acls`, and `GET /v1/orgs/{id}` in that order to confirm identity and discover accessible ad accounts. `GET /v1/acls` is the recommended starting point for determining which ad accounts a token can manage.
+Call `GET /v1/me` ([`Get Me Details`](get-current-user-details.md)), `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)), and `GET /v1/orgs/{id}` ([`Get Org by ID`](get-orgs-_id_.md)) in that order to confirm identity and discover accessible ad accounts. The `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)) endpoint is the recommended starting point for determining which ad accounts a token can manage.
 
-> **Note**: `GET /v1/me`, `GET /v1/acls`, and `GET /v1/orgs/{id}` do not require the `X-AP-Context` header. Supply `X-AP-Context` only for ad-account-scoped operations.
+> **Note**: The `GET /v1/me` ([`Get Me Details`](get-current-user-details.md)), `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)), and `GET /v1/orgs/{id}` ([`Get Org by ID`](get-orgs-_id_.md)) endpoints don’t require the `X-AP-Context` header. Supply `X-AP-Context` only for ad-account-scoped operations.
 
 ## Topics
 

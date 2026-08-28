@@ -17,7 +17,16 @@ Each [`DailyCapRecommendation`](dailycaprecommendation.md) result includes:
 - Historical metrics: `installs`, `spend`, `impression`, `taps`, `averageCPA`, `averageCPT`, `ttr`
 - Expected metrics: projected performance if the budget is raised
 
-#### Request Body
+See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Description |
+| --- | --- | --- | --- |
+| `promotedObjectId` | string | `EQUALS` | Required. The ID of the promoted object. For `APPSTORE_APP`, this is the app Adam ID. For `BUSINESS_BRAND`, this is the brand ID. |
+| `promotedObjectType` | string (enum) | `EQUALS` | Required. The type of promoted object. |
+| `state` | string (enum) | `EQUALS` | Optional. Filter by recommendation state: `AVAILABLE`, `APPLIED`, `DISMISSED`, or `DELETE`. |
+| `campaignId` | integer | `EQUALS`, `IN` | Optional. Filter by a specific campaign. |
 
 #### Payload Examples
 

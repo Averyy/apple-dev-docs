@@ -10,7 +10,7 @@ Creates a budget order that can be assigned to campaigns within an ad account.
 
 #### Discussion
 
-This endpoint creates a budget order that campaigns can draw from via `SharedBudgetAssignment`. With a budget order, total spend across all assigned campaigns cannot exceed the budget order’s `value`, providing centralized cost control across a campaign group.
+This endpoint creates a budget order that campaigns can draw from via `SharedBudgetAssignment`. With a budget order, total spend across all assigned campaigns can’t exceed the budget order’s `value`, providing centralized cost control across a campaign group.
 
 #### Payload Examples
 
@@ -72,10 +72,6 @@ Creates a $20,000 budget order for Q3 2026, active from July through September.
 ## Endpoint
 
 `POST https://api.ads.apple.com/v1/shared-budgets`
-
-## Parameters
-
-- `X-Ap-Context` (string) *(required)*
 
 ## See Also
 

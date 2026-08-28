@@ -16,8 +16,8 @@ string AdGroup.PricingModel
 
 #### Discussion
 
-- `CPM` pairs with `billingEvent: IMPRESSIONS`.
-- `CPT` pairs with `billingEvent: TAPS`.
+- The `CPM` value pairs with `billingEvent: IMPRESSIONS`.
+- The `CPT` value pairs with `billingEvent: TAPS`.
 
 ##### Example
 
@@ -39,7 +39,7 @@ string AdGroup.PricingModel
 }
 ```
 
-`PricingModel` is distinct from `PaymentModel`. `PricingModel` (`CPA`/`CPM`/`CPT`) determines the delivery unit an ad group is charged for. `PaymentModel` (`PAYG`/`LOC`) determines how the advertiser’s account funds that spend. The two are unrelated enums on unrelated resources.
+The `PricingModel` is distinct from `PaymentModel`. The `PricingModel` (`CPA`, `CPM`, or `CPT`) determines the delivery unit an ad group is charged for. The `PaymentModel` (`PAYG` or `LOC`) determines how the advertiser’s account funds that spend. The two are unrelated enums on unrelated resources.
 
 
 ---

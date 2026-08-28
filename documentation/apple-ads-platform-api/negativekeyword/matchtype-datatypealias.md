@@ -16,6 +16,8 @@ string NegativeKeyword.MatchType
 
 #### Discussion
 
+Unlike positive keywords, negative keywords can use `EXACT`, `BROAD`, or `PHRASE`, but not `CATEGORY` matching.
+
 ##### Example
 
 ```json

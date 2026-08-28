@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: typealias
 
-Populated when `systemStatus` is `INACTIVE`, identifying the specific blocking condition.
+Populated when `systemStatus` is not active.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -15,6 +15,8 @@ string AdAccount.SystemStatusReasons
 ```
 
 #### Discussion
+
+Reasons here can originate from the ad account’s own payment method or cascade down from the parent organization, as with `ORG_NO_PAYMENT_METHOD_ON_FILE`.
 
 ##### Example
 

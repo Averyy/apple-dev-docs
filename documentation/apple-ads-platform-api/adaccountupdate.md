@@ -16,7 +16,7 @@ object AdAccountUpdate
 
 #### Discussion
 
-`AdAccountUpdate` is the request payload for modifying an existing ad account. Include only the fields you want to change. Fields you leave out keep their current value.
+The `AdAccountUpdate` object is the request payload for modifying an existing ad account. Include only the fields you want to change. Fields you leave out keep their current value.
 
 ##### Example
 

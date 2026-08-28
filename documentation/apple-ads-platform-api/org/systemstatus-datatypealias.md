@@ -16,6 +16,8 @@ string Org.SystemStatus
 
 #### Discussion
 
+This status reflects the organization as a whole; individual ad accounts under it carry their own separate [`AdAccount.SystemStatus`](adaccount/systemstatus-data.typealias.md).
+
 ##### Example
 
 ```json

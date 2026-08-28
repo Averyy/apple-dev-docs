@@ -22,7 +22,17 @@ Keep the following constraints in mind when querying default locale details:
 | --- | --- |
 | Default page only | This endpoint returns only the default product page. Custom product pages require the Query Product Page Locale Details endpoint. |
 | All locales returned | This endpoint returns all locales configured for the default product page. Filter by `languageCode` in the request body `filters` array if you need a specific locale. |
-| assetsByDevice structure | The `assetsByDevice` field maps each specific device type (e.g., `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
+| assetsByDevice structure | The `assetsByDevice` field maps each specific device type (for example, `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
+
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `languageCode` | string |  |  | Filter to a specific locale, such as `en-US` or `fr-FR`. |
+
+The `adamId` field identifies the app via the URL path (`/v1/apps/{adamId}/locale-details/query`), not a request body filter. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 #### Payload Examples
 

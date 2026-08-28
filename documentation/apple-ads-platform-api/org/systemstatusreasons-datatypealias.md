@@ -16,6 +16,8 @@ string Org.SystemStatusReasons
 
 #### Discussion
 
+Most of these reasons trace back to a payment or compliance issue, such as an expired Master Services Agreement or a declined payment method.
+
 ##### Example
 
 ```json

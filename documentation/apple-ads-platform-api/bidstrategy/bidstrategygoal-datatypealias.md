@@ -16,6 +16,8 @@ string BidStrategy.BidStrategyGoal
 
 #### Discussion
 
+The goal must match the ad group’s pricing model, since `IMPRESSION` and `TAP` goals apply only under `MANUAL_CPM` and `MANUAL_CPT` respectively.
+
 ##### Example
 
 ```json

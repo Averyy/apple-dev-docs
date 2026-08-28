@@ -16,7 +16,7 @@ object AppInfo
 
 #### Discussion
 
-`AppInfo` represents one app returned from the search apps endpoint. It includes the app’s Adam ID, display name, developer name, and the country or region codes where the app is available.
+The `AppInfo` object represents one app returned from the search apps endpoint. It includes the app’s Adam ID, display name, developer name, and the country or region codes where the app is available.
 
 ##### Example
 

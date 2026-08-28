@@ -16,6 +16,8 @@ string Campaign.Status
 
 #### Discussion
 
+This field directly controls auction eligibility for the campaign, independent of the system-computed [`Campaign.SystemStatus`](campaign/systemstatus-data.typealias.md).
+
 ##### Example
 
 ```json

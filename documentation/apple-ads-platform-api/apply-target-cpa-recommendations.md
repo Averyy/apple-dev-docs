@@ -12,8 +12,6 @@ Apply one or more target CPA recommendations.
 
 Applying a target CPA recommendation applies the recommendation’s `recommendedTargetCPA` value and moves the recommendation to `APPLIED` state. You can override the suggested value by passing `appliedTargetCPA` in the request. The response is a history record with both the recommended and applied values, plus the performance context behind the recommendation.
 
-#### Request Body
-
 #### Payload Examples
 
 This example applies a target CPA recommendation, overriding the suggested CPA with $5.00. The response confirms the recommendation is now `APPLIED`.

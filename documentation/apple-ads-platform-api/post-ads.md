@@ -12,7 +12,7 @@ Creates a new ad that links an ad creative to an ad group for delivery.
 
 This endpoint creates an ad that links an ad creative to an ad group.
 
-- `adGroupId` and `creativeId` are required at creation and are **immutable**: you cannot change them after creating the ad.
+- `adGroupId` and `creativeId` are required at creation and are **immutable**: you can’t change them after creating the ad.
 - The ad creative defines the visual content (product page or Apple Maps ad creative).
 - The ad controls the `name` and `status`.
 - An ad group can contain multiple ads, but only one ad per ad group can be `ENABLED` at a time.

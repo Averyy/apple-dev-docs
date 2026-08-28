@@ -16,7 +16,7 @@ object BidStrategyCreate
 
 #### Discussion
 
-`BidStrategyCreate` is the creation payload for configuring a bid strategy on an ad group or campaign.
+The `BidStrategyCreate` object is the creation payload for configuring a bid strategy on an ad group or campaign.
 
 Whenever you include `bidStrategyType`, you must also include the matching `bidStrategyGoal` (and vice versa), using the pairings in [`BidStrategy`](bidstrategy.md). Omitting one, or sending a goal that doesn’t match the type, returns an error. This pairing is always required on campaign creation. On ad group creation, you can omit `bidStrategy` entirely to inherit the parent campaign’s defaults, but the same pairing rule applies if you include it.
 

@@ -16,7 +16,7 @@ object BrandsReportingKeyword
 
 #### Discussion
 
-`BrandsReportingKeyword` extends the base `ReportingKeyword` object with `BRANDS`-only internal fields.
+The `BrandsReportingKeyword` extends the base `ReportingKeyword` object with `brands`-only internal fields.
 
 The example and `DictionaryKeys` below show only the Brands-specific additional fields (`locationId` and `matchType`). The full field set, including `id`, `text`, `bid`, `status`, and `adGroupId`, is inherited from [`ReportingKeyword`](reportingkeyword.md) and appears alongside these fields in an actual response.
 

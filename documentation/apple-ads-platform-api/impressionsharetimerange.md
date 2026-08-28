@@ -16,7 +16,7 @@ object ImpressionShareTimeRange
 
 #### Discussion
 
-`ImpressionShareTimeRange` specifies the date window and granularity for an impression share report.
+The `ImpressionShareTimeRange` object specifies the date window and granularity for an impression share report.
 
 ##### Example
 

@@ -16,7 +16,7 @@ object Brand
 
 #### Discussion
 
-`Brand` represents a business entity registered in Apple Ads. Use the `id` field as the `promotedObjectId` when creating a `BUSINESS_BRAND` campaign. You can actively promote only brands with `eligibility.status: ELIGIBLE`.
+The `Brand` object represents a business entity registered in Apple Ads. Use the `id` field as the `promotedObjectId` when creating a `BUSINESS_BRAND` campaign. You can actively promote only brands with `eligibility.status: ELIGIBLE`.
 
 To understand the business type, use the `categories` field. The `countryOrRegion` field identifies the primary market for the brand. Use [`Query Brands`](query-brands.md) to list brands accessible to your ad account, and [`Get Brand by ID`](get-brand-by-id.md) to retrieve a specific brand by its identifier.
 
@@ -50,7 +50,7 @@ Query endpoint requests support fields marked **Filterable** in the properties a
 - `name` (string): Primary display name for the brand.
 - `countryOrRegion` (string): 2-character ISO 3166-1 alpha-2 country or region code.
 - `categories` ([string]): Modern category taxonomy identifiers. The first entry is the primary category. See [`BusinessCategory`](businesscategory.md).
-- `eligibility` (Eligibility): Ad serving eligibility for this brand. See [`Eligibility`](eligibility.md). Read-only.
+- `eligibility` (Eligibility): Ad serving eligibility for this brand. See [`Eligibility`](eligibility.md). Read-only. Filterable with `EQUALS` on `eligibility.status`.
 - `creationTime` (date-time): ISO-8601 timestamp when the brand record was created. Read-only.
 - `modificationTime` (date-time): ISO-8601 timestamp of the last modification. Read-only.
 

@@ -16,6 +16,8 @@ string AdUpdate.Status
 
 #### Discussion
 
+Send `status: PAUSED` to stop an existing ad from competing in auctions, or `ENABLED` to resume it.
+
 ##### Example
 
 ```json

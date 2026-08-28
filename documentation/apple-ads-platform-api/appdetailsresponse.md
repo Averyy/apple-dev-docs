@@ -24,7 +24,7 @@ Unlike paginated query responses, `AppDetailsResponse` returns exactly one app r
 
 On a 404, the response contains an `ENTITY_NOT_FOUND` error in the `error` field and `result` is absent. Always check the HTTP status code first, then inspect `error` for machine-readable detail.
 
-The returned `AppDetails` object includes App Store metadata such as app name, developer, supported device classes, and available App Store countries or regions. `GET /v1/apps/{adamId}` accepts only the `adamId` path parameter and the `X-Ap-Context` header.
+The returned `AppDetails` object includes App Store metadata such as app name, developer, supported device classes, and available App Store countries or regions. The `GET /v1/apps/{adamId}` ([`Get App Details by Adam ID`](get-app-details-by-adam-id.md)) endpoint accepts only the `adamId` path parameter and the `X-Ap-Context` header.
 
 ##### Understand the Error Field
 
@@ -32,14 +32,14 @@ Inspect `error.details` for a structured list of error codes and messages. Commo
 
 - **400**: malformed Adam ID or unsupported query parameter
 - **401**: missing or expired OAuth token
-- **403**: the authenticated account does not have access to the requested app
+- **403**: the authenticated account doesn’t have access to the requested app
 - **404**: no app exists for the supplied Adam ID
 - **429**: rate limit exceeded. Use exponential backoff before retrying
 - **500**: transient server error. The request may succeed on retry
 
 ##### Understand the Relationship to Appdetails
 
-`AppDetailsResponse` is a thin wrapper. All substantive app metadata lives in the `AppDetails` object inside `result`. The wrapper exists to provide a uniform envelope that carries both success data and error information in a single response shape, consistent with every other API response object in this documentation.
+The `AppDetailsResponse` object is a thin wrapper. All substantive app metadata lives in the `AppDetails` object inside `result`. The wrapper exists to provide a uniform envelope that carries both success data and error information in a single response shape, consistent with every other API response object in this documentation.
 
 ##### Example
 

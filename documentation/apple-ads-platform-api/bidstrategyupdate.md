@@ -16,9 +16,9 @@ object BidStrategyUpdate
 
 #### Discussion
 
-Use `BidStrategyUpdate` as the `bidStrategy` field value when updating an ad group (`PUT /v1/adgroups/{id}`) or a campaign (`PUT /v1/campaigns/{id}`). Include only the fields you want to change. The `bidStrategyType` must remain compatible with the parent campaign’s `billingEvent`. Changing the type to an incompatible combination returns a 400 error.
+Use `BidStrategyUpdate` as the `bidStrategy` field value when updating an ad group (`PUT /v1/adgroups/{id}` ([`Update an Ad Group`](put-adgroups-_id_.md))) or a campaign (`PUT /v1/campaigns/{id}` ([`Update a Campaign`](put-campaigns-_id_.md))). Include only the fields you want to change. The `bidStrategyType` must remain compatible with the parent campaign’s `billingEvent`. Changing the type to an incompatible combination returns a 400 error.
 
-`bidStrategyGoal` can be changed together with `bidStrategyType`. Omitting one, or sending a goal that doesn’t match the type, returns an error. For ad group-specific behavior when the parent campaign uses an automated `bidStrategyType` (`MAX_CONVERSIONS` or `MAX_ENGAGEMENTS`), see [`AdGroupUpdate.BidStrategy`](adgroupupdate/bidstrategy-data.dictionary.md).
+The `bidStrategyGoal` field can be changed together with `bidStrategyType`. Omitting one, or sending a goal that doesn’t match the type, returns an error. For ad group-specific behavior when the parent campaign uses an automated `bidStrategyType` (`MAX_CONVERSIONS` or `MAX_ENGAGEMENTS`), see [`AdGroupUpdate.BidStrategy`](adgroupupdate/bidstrategy-data.dictionary.md).
 
 ##### Example
 

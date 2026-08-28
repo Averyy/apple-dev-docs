@@ -16,6 +16,8 @@ string AdCreate.Status
 
 #### Discussion
 
+Include `status` in the create request to determine whether the new ad starts competing in auctions immediately or begins paused.
+
 ##### Example
 
 ```json

@@ -14,7 +14,15 @@ This endpoint returns the suggested target CPA for a [`Campaigns Endpoints`](cam
 
 To identify the app, use `promotedObjectId` and `promotedObjectType`. Scope results to specific markets with an optional `countryOrRegion` filter. The response returns the single highest suggested target CPA and the market that produced it, along with the `appCategory` the suggestion applies to.
 
-#### Request Body
+See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Description |
+| --- | --- | --- | --- |
+| `promotedObjectId` | string | `EQUALS` | Required. A single numeric App Store app ID. |
+| `promotedObjectType` | string (enum) | `EQUALS` | Required. Must be `APPSTORE_APP`. |
+| `countryOrRegion` | array of strings | `IN` | Optional. One or more ISO 3166-1 alpha-2 country or region codes. When omitted, all eligible countries and regions are considered. |
 
 #### Payload Examples
 

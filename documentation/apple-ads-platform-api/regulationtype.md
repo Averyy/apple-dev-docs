@@ -16,6 +16,8 @@ string RegulationType
 
 #### Discussion
 
+`CAC` and `CAMPAIGN_SAPIN_LAW` apply at the campaign level, while `ORG_SAPIN_LAW` applies at the organization level.
+
 ##### Example
 
 ```json

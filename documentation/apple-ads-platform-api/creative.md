@@ -20,10 +20,10 @@ A `Creative` is the unit of visual presentation for an ad, composed of a pre-tap
 
 The `creativeType` field governs which `creativeSpec` variant applies:
 
-- `CUSTOM_PRODUCT_PAGE` and `DEFAULT_PRODUCT_PAGE` use App Store product pages.
-- `LOCAL_ADS_SEARCH_CREATIVE` is for Ads on Apple Maps.
+- The `CUSTOM_PRODUCT_PAGE` and `DEFAULT_PRODUCT_PAGE` types use App Store product pages.
+- The `LOCAL_ADS_SEARCH_CREATIVE` type is for Ads on Apple Maps.
 
-`systemStatus` reflects the ad creative’s validation state:
+The `systemStatus` field reflects the ad creative’s validation state:
 
 - `VALID`: the ad creative can serve on an ad, though it may still be subject to additional review.
 - `INVALID`: the ad creative has failed validation. For App Ads (`CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`), you must create a new ad creative. For Apple Maps (`LOCAL_ADS_SEARCH_CREATIVE`), the ad creative may be recoverable by editing it (for example, adding a missing asset). Inspect `systemStatusReasons` to identify the cause.
@@ -31,7 +31,7 @@ The `creativeType` field governs which `creativeSpec` variant applies:
 
 The system always returns the `eligibility` field unless you exclude it with the `fields` parameter. It summarizes whether the ad creative meets the requirements to serve ads on each supported ad placement.
 
-Fields marked **Filterable** in the dictionary keys work as filter criteria in query endpoint requests. See [`Calling the Apple Ads Platform API`](calling-apple-ads-platform-api.md) for details on constructing queries.
+Fields you can filter and sort on when querying ad creatives are listed in [`Query Ad Creatives`](post-creatives-query.md).
 
 ##### Example
 
@@ -86,18 +86,18 @@ Fields marked **Filterable** in the dictionary keys work as filter criteria in q
 
 ## Properties
 
-- `id` (int64): Primary identifier. Read-only. Filterable: `EQUALS`, `IN`.
-- `adAccountId` (int64): Reference to the Ad Account. System-assigned. Read-only. Filterable: `EQUALS`.
-- `name` (string): Name of the ad creative. Mutable. Filterable: `EQUALS`, `STARTS_WITH`.
-- `creativeType` (Creative.CreativeType): Type of ad creative. Possible values: `CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`, `LOCAL_ADS_SEARCH_CREATIVE`. See [`Creative.CreativeType`](creative/creativetype-data.typealias.md). Immutable after creation. Filterable: `EQUALS`, `IN`.
-- `creativeSpec` (Creative.CreativeSpec): Pre-tap ad experience specification with customizable attributes/assets. Contains data used to render the ad before user interaction. Empty for Product Page ad creatives (`CUSTOM_PRODUCT_PAGE`/`DEFAULT_PRODUCT_PAGE`) since pre-tap is not customizable. For `LOCAL_ADS_SEARCH_CREATIVE` the `creativeSpec` carries the Apple Maps ad creative spec (brand ID, asset references, and localized text). Not every sub-field within `creativeSpec` is mutable. Partially mutable.
-- `destination` (Creative.Destination): Post-tap destination entity (embedded). Defines where users go after tapping the ad (e.g., App Store product page). See [`Creative.Destination`](creative/destination-data.dictionary.md). Immutable after creation.
-- `systemStatus` (Creative.SystemStatus): System validation status. Possible values: `VALID`, `INVALID`, `PENDING`. Read-only. Filterable: `EQUALS`, `IN`.
+- `id` (int64): Primary identifier. Read-only.
+- `adAccountId` (int64): Reference to the Ad Account. System-assigned. Read-only.
+- `name` (string): Name of the ad creative. Mutable.
+- `creativeType` (Creative.CreativeType): Type of ad creative. Possible values: `CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`, `LOCAL_ADS_SEARCH_CREATIVE`. See [`Creative.CreativeType`](creative/creativetype-data.typealias.md). Immutable after creation.
+- `creativeSpec` (Creative.CreativeSpec): Pre-tap ad experience specification with customizable attributes and assets. Contains data used to render the ad before user interaction. Empty for Product Page ad creatives (`CUSTOM_PRODUCT_PAGE` or `DEFAULT_PRODUCT_PAGE`) since pre-tap isn’t customizable. For `LOCAL_ADS_SEARCH_CREATIVE` the `creativeSpec` carries the Apple Maps ad creative spec (brand ID, asset references, and localized text). Not every sub-field within `creativeSpec` is mutable. Partially mutable.
+- `destination` (Creative.Destination): Post-tap destination entity (embedded). Defines where users go after tapping the ad (for example, App Store product page). See [`Creative.Destination`](creative/destination-data.dictionary.md). Immutable after creation.
+- `systemStatus` (Creative.SystemStatus): System validation status. Possible values: `VALID`, `INVALID`, `PENDING`. Read-only.
 - `systemStatusReasons` ([Creative.SystemStatusReasons]): Reasons for system status. Read-only.
 - `creationTime` (date-time): Creation timestamp. Read-only.
 - `modificationTime` (date-time): Last modification timestamp. Read-only.
+- `deleted` (boolean): Whether the ad creative has been deleted. Excluded from query results by default unless explicitly filtered to `true`. Read-only.
 - `eligibility` (Creative.Eligibility): Eligibility data. Always returned unless excluded via `fields` parameter. See [`CreativeEligibility`](creativeeligibility.md). Read-only.
-- `deleted` (boolean)
 
 ## See Also
 

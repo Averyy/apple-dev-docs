@@ -18,19 +18,19 @@ Geo targeting lets you focus ad delivery on specific countries, regions, cities,
 
 ##### Query Geo Location Metadata
 
-App Store and Apple Maps campaigns both use the Geo Search endpoints (`GET` and `POST /v1/search/geo`). The `supplySource` parameter controls which entity types appear in the results and scopes eligibility evaluation to the relevant campaign context.
+App Store and Apple Maps campaigns both use the Geo Search endpoints (`GET` and `POST /v1/search/geo` ([`Query Geo Locations`](gets-a-list-of-geo-locations.md))). The `supplySource` parameter controls which entity types appear in the results and scopes eligibility evaluation to the relevant campaign context.
 
 Use the two geo search endpoints to retrieve geographic location metadata:
 
-- Use `GET /v1/search/geo` to perform a text search by name or wildcard. It requires the `supplySource` query parameter, and it accepts optional parameters `query` (minimum two characters, or `*` to return all), `entity`, `countrycode`, `eligible`, `offset`, and `pageSize`.
-- Use `POST /v1/search/geo` to look up locations by ID. It accepts a `GeoSearchPostRequest` body with a `geoRequest` array of (`entity ID`, `type`) or (`legacyID`, `type`) pairs, and it also requires `supplySource`.
+- Use `GET /v1/search/geo` ([`Search Geo Locations`](searches-for-a-list-of-geo-locations.md)) to perform a text search by name or wildcard. It requires the `supplySource` query parameter, and it accepts optional parameters `query` (minimum two characters, or `*` to return all), `entity`, `countrycode`, `eligible`, `offset`, and `pageSize`.
+- Use `POST /v1/search/geo` ([`Query Geo Locations`](gets-a-list-of-geo-locations.md)) to look up locations by ID. It accepts a `GeoSearchPostRequest` body with a `geoRequest` array of (`entity ID`, `type`) or (`legacyID`, `type`) pairs, and it also requires `supplySource`.
 
 | `supplySource` | Entity types returned | Excludes | Notes |
 | --- | --- | --- | --- |
 | `APPSTORE` | `Country` (a country or region), `AdminArea` (a state or province within a country), `Locality` (a city or metropolitan area) | `PostalCode` | Postal-code geo is only available with `MAPS`. |
 | `MAPS` | `AdminArea` (a state or province within a country), `Locality` (a city or metropolitan area), `PostalCode` (a postal code) | `Country` | Results are restricted to the US and Canada. |
 
-Each result includes `id`, `legacyId` (pipe-delimited hierarchy, e.g. `US|CA|San Francisco`), `entity`, `displayName`, `countryOrRegion`, `adminArea`, `locality`, `postalCode`, and an `eligibility` object scoped to the requested supply source.
+Each result includes `id`, `legacyId` (pipe-delimited hierarchy, for example, `US|CA|San Francisco`), `entity`, `displayName`, `countryOrRegion`, `adminArea`, `locality`, `postalCode`, and an `eligibility` object scoped to the requested supply source.
 
 By default, the API includes soft-blocked geos (low search volume, sparse coverage) with eligibility data. Pass `eligible=true` on the GET endpoint to exclude them from results.
 
@@ -38,7 +38,7 @@ By default, the API includes soft-blocked geos (low search volume, sparse covera
 
 For Apple Maps campaigns, geo targeting controls where the ad viewer is located when the ad is shown, not which advertiser business locations the ad group promotes. To reach users in specific geographic areas on Maps, use the `postalCode`, `locality`, and `adminArea` targeting dimensions.
 
-To find valid locality and postal code identifiers for Maps campaigns, use `GET /v1/search/geo` with `supplySource=MAPS`. The API restricts results to the US and Canada. You can only use the `PostalCode` entity type under `supplySource=MAPS`.
+To find valid locality and postal code identifiers for Maps campaigns, use `GET /v1/search/geo` ([`Search Geo Locations`](searches-for-a-list-of-geo-locations.md)) with `supplySource=MAPS`. The API restricts results to the US and Canada. You can only use the `PostalCode` entity type under `supplySource=MAPS`.
 
 You can view location-level reporting for Apple Maps campaigns by grouping or filtering the Apple Maps report endpoints (`POST /v1/reports/business-brands/{campaigns,adgroups,ads,keywords,searchterms}/query`) by `locationId`, rather than through a dedicated locations-report endpoint.
 
@@ -63,7 +63,7 @@ Dimensions can be combined. For example, target a country while excluding specif
 
 ##### Check Supported Languages By Market
 
-This applies to App Store campaigns only. To retrieve the languages supported for App Store advertising in each country or region, use `POST /v1/metadata/apps/supported-languages/query`. The response includes `adsSupportedLanguages` and `adsDefaultLanguages` per country code. To validate creative language selection before targeting a new market, use this data.
+This applies to App Store campaigns only. To retrieve the languages supported for App Store advertising in each country or region, use `POST /v1/metadata/apps/supported-languages/query` ([`Query Supported App Languages`](query-supported-app-languages.md)). The response includes `adsSupportedLanguages` and `adsDefaultLanguages` per country code. To validate creative language selection before targeting a new market, use this data.
 
 ##### Report on Performance By Geography
 

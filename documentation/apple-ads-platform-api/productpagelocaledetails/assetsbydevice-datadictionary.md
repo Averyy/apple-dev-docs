@@ -16,7 +16,7 @@ object ProductPageLocaleDetails.AssetsByDevice
 
 #### Discussion
 
-Each key is a device type identifier, such as `iphone_6_5` or `iphone_6_7`, not a fixed field name. `assetsByDevice` is a free-form map rather than an object with named properties, so the reference page labels this key `Any Key`. The value for each key is a [`DeviceAssetGroup`](deviceassetgroup.md) containing that device’s asset references and fallback devices.
+Each key is a device type identifier, such as `iphone_6_5` or `iphone_6_7`, not a fixed field name. The `assetsByDevice` field is a free-form map rather than an object with named properties, so the reference page labels this key `Any Key`. The value for each key is a [`DeviceAssetGroup`](deviceassetgroup.md) containing that device’s asset references and fallback devices.
 
 On the parent [`ProductPageLocaleDetails`](productpagelocaledetails.md) object, `assetsByDevice` is the field that carries a product page locale’s screenshots and preview videos. Each device-type key maps to a [`DeviceAssetGroup`](deviceassetgroup.md) holding an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array listing which other device types to fall back to when assets are not available for that class.
 

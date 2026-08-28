@@ -146,7 +146,7 @@ python setup.py build_ext --inplace
 Run the tests with:
 
 ```
-python -m unittest discover python/tests
+python python/tests/run.py
 ```
 
 ### C++ API

@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Retrieve performance metrics for Apple Maps ad groups broken down by optional dimensions such as country, device class, or storefront.
+Retrieve performance metrics for Apple Maps ad groups.
 
 **Availability**:
 - apple-ads-platform-api 1.0+
@@ -13,6 +13,8 @@ Retrieve performance metrics for Apple Maps ad groups broken down by optional di
 Brand ad group reports return one row per ad group. Each row contains a `metadata` object with ad group identifiers (including `campaignId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
 Filter by `campaignId` or `adGroupId` in the `filters` array to scope results. Use `groupBy` to split metrics along a dimension: each dimension value produces its own row within the ad group’s result.
+
+See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -375,13 +377,13 @@ POST /v1/reports/business-brands/adgroups/query
 ## See Also
 
 - [Campaigns Report (Brands)](get-brand-campaign-reports.md)
-  Retrieve performance metrics for Apple Maps campaigns broken down by optional dimensions such as country, device class, or storefront.
+  Retrieve performance metrics for Apple Maps campaigns.
 - [Ads Report (Brands)](get-brand-ad-reports.md)
-  Retrieve performance metrics for Apple Maps ads broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for Apple Maps ads.
 - [Keywords Report (Brands)](get-brand-keyword-reports.md)
-  Retrieve performance metrics for Apple Maps keywords broken down by optional dimensions such as device class or country.
+  Retrieve performance metrics for Apple Maps keywords.
 - [Search Terms Report (Brands)](get-brand-search-term-reports.md)
-  Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns, broken down by optional dimensions.
+  Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 
 ---

@@ -16,7 +16,7 @@ object BulkKeywordUpdate.Bid
 
 #### Discussion
 
-The updated keyword-level bid amount for a bulk keyword update item, expressed as a `Money` object with `amount` and `currency`. It overrides the ad group’s default bid for this keyword. This bid is not used with Maximize Conversions bid strategy campaigns.
+The updated keyword-level bid amount for a bulk keyword update item, expressed as a `Money` object with `amount` and `currency`. It overrides the ad group’s default bid for this keyword. This bid isn’t used with Maximize Conversions bid strategy campaigns.
 
 See [`BulkKeywordUpdate`](bulkkeywordupdate.md) for the full field reference.
 

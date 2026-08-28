@@ -16,7 +16,7 @@ object KeywordSuggestion
 
 #### Discussion
 
-`KeywordSuggestion` represents a single keyword text suggestion for an APPS campaign.
+A `KeywordSuggestion` represents a single keyword text suggestion for an apps campaign.
 
 These suggestions are discovery tools. They surface keywords that may not already be in the ad group but are relevant to the app. Sort suggestions by `popularity` to add the highest-impact keywords first.
 

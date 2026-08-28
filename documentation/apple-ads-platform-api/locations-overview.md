@@ -45,7 +45,7 @@ Each location object returned by the API includes these read-only fields:
 | `name` | string | Display name of the location. **Read-only.** |
 | `brandId` | string | The brand this location belongs to. **Read-only.** |
 | `status` | string | Operational status: `OPEN`, `OPENING_SOON`, `CLOSED`, `MOVED`, or `TEMPORARILY_CLOSED`. **Read-only.** |
-| `countryOrRegion` | string | ISO 3166-1 alpha-2 country or region code for the location (e.g., `"US"`, `"GB"`). **Read-only.** |
+| `countryOrRegion` | string | ISO 3166-1 alpha-2 country or region code for the location (for example, `"US"`, `"GB"`). **Read-only.** |
 | `categories` | array of strings | Business category identifiers. The first entry is the primary category. **Read-only.** |
 | `address` | object | Full address with subfields for street, city, state, postal code, and country. **Read-only.** |
 | `displayPoint` | object | Geographic coordinates of the location. **Read-only.** |

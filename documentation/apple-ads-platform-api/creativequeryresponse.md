@@ -16,7 +16,7 @@ object CreativeQueryResponse
 
 #### Discussion
 
-`CreativeQueryResponse` is returned by the ad creatives query endpoint and contains the filtered, sorted, and paginated set of `Creative` objects matching the request.
+The `CreativeQueryResponse` object is returned by the ad creatives query endpoint and contains the filtered, sorted, and paginated set of `Creative` objects matching the request.
 
 To scope results by `adAccountId`, `creativeType`, `systemStatus`, or other filterable fields, use the `QueryRequest` body with `filters`.
 

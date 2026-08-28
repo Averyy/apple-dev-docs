@@ -16,7 +16,7 @@ object BrandsReportingRequest
 
 #### Discussion
 
-`BrandsReportingRequest` is the request body for all `BRANDS` entity-level report endpoints.
+The `BrandsReportingRequest` object is the request body for all `brands` entity-level report endpoints.
 
 ##### Example
 
@@ -69,9 +69,9 @@ object BrandsReportingRequest
 - `sorting` ([Sorting]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`Sorting`](sorting.md) for details.
 - `filters` ([Filter]): Filter field conditions for the report. See [`Filter`](filter.md) for details.
 - `fields` ([string]): A list of field names to return in the response. If omitted, all fields are returned.
-- `groupBy` ([string]): Groups responses by selected dimensions. Supported values for `BRANDS` campaign, ad group, and ad entities: deviceClass, locationId, supplyPlacement. Note: KEYWORD and SEARCHTERM entities exclude both supplyPlacement and locationId.
+- `groupBy` ([string]): Groups responses by selected dimensions. Supported values for `brands` campaign, ad group, and ad entities: `deviceClass`, `locationId`, `supplyPlacement`. Note: `KEYWORD` and `SEARCHTERM` entities exclude both `supplyPlacement` and `locationId`.
 - `timeRange` (TimeRange): The date range, timezone, and granularity for report data. Defines the start and end dates for the reporting period. See [`TimeRange`](timerange.md) for details.
-- `options` (BrandsOptions): Options to include additional rows in the report. Note: EMPTY_METRICS is not supported for any `BRANDS` entity. See [`BrandsOptions`](brandsoptions.md) for details.
+- `options` (BrandsOptions): Options to include additional rows in the report. Note: EMPTY_METRICS is not supported for any `brands` entity. See [`BrandsOptions`](brandsoptions.md) for details.
 
 ## See Also
 

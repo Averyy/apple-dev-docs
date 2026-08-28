@@ -16,7 +16,7 @@ object RecommendationResponsePagination
 
 #### Discussion
 
-`ResponsePagination` is the pagination state object returned in Recommendations and Suggestions list responses.
+The `ResponsePagination` object is the pagination state returned in Recommendations and Suggestions list responses.
 
 To page through results, increment the `offset` in subsequent requests by the `pageSize` until `offset + pageSize >= totalCount`. Unlike cursor-based pagination, offset-based pagination allows jumping to any page directly, though new recommendations may appear or disappear between requests.
 
@@ -43,7 +43,7 @@ To page through results, increment the `offset` in subsequent requests by the `p
 - [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
 - [object DailyCapRecommendation](dailycaprecommendation.md)
-  A daily budget recommendation for a campaign that is frequently hitting its spending ceiling.
+  A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 - [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
 - [object ApplyTargetCpaRecommendation](applytargetcparecommendation.md)

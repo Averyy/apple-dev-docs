@@ -16,7 +16,7 @@ object ApplyTargetCpaRecommendation
 
 #### Discussion
 
-`ApplyTargetCpaRecommendation` is the request body for applying or dismissing a target CPA recommendation.
+The `ApplyTargetCpaRecommendation` object is the request body for applying or dismissing a target CPA recommendation.
 
 ##### Example
 
@@ -48,7 +48,7 @@ object ApplyTargetCpaRecommendation
 - [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
 - [object DailyCapRecommendation](dailycaprecommendation.md)
-  A daily budget recommendation for a campaign that is frequently hitting its spending ceiling.
+  A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 - [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
 - [object ApplyDailyCapRecommendation](applydailycaprecommendation.md)

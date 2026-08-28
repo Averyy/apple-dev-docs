@@ -14,7 +14,7 @@ This endpoint retrieves a single App Store product page (DPP, CPP, or PPO) by it
 
 The `state` field is a plain string reflecting the product page’s current distribution status, and it is not a closed enum. The typical value once a page is live is `PUBLISHED`, though App Store Connect may surface other states (such as `READY_FOR_DISTRIBUTION`) before a page finishes propagating.
 
-The `deepLink` field provides the URL used when the product page is set as a creative destination. The response also includes the product page `name`, the associated `adamId` of the app, and `creationTime` / `modificationTime` timestamps.
+The `deepLink` field provides the URL used when the product page is set as a creative destination. The response also includes the product page `name`, the associated `adamId` of the app, and `creationTime` and `modificationTime` timestamps.
 
 Keep the following constraints in mind when fetching a product page:
 

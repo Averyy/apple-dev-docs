@@ -55,7 +55,7 @@ See [`Ads on Apple Maps Endpoints`](brands-endpoints.md) for the full setup work
 
 ##### Choose a Bid Strategy
 
-The `bidStrategy` object is always present on a campaign and controls how the campaign competes in auctions. It’s required at creation: you must send both `bidStrategyType` and `bidStrategyGoal`, and the goal must match the type. See [`BidStrategy`](bidstrategy.md) for the type/goal pairings.
+The `bidStrategy` object is always present on a campaign and controls how the campaign competes in auctions. It’s required at creation: you must send both `bidStrategyType` and `bidStrategyGoal`, and the goal must match the type. See [`BidStrategy`](bidstrategy.md) for the type and goal pairings.
 
 Use the following table to match your goal to a `bidStrategyType` and `bidStrategyGoal` pair:
 
@@ -72,7 +72,7 @@ To switch a campaign’s bid strategy after creation, send an updated `bidStrate
 
 ##### Manage Budget Orders
 
-A budget order enforces a spending cap for a group of campaigns within an ad account. Campaigns assigned to the same budget order share a common spend limit via the `sharedBudgets` field. Budget orders are available to Apple Ads customers on monthly invoicing. A campaign with shared budget assignments also requires a `dailyBudget`. Both controls function independently: `dailyBudget` caps daily spending while each shared budget caps spending over its flight period.
+A budget order enforces a spending cap for a group of campaigns within an ad account. Campaigns assigned to the same budget order share a common spend limit via the `sharedBudgets` field. Budget orders are available to Apple Ads customers on monthly invoicing. A campaign with shared budget assignments also requires a `dailyBudget`. Both controls function independently: `dailyBudget` caps daily spending. Each shared budget caps spending over its flight period.
 
 See [`Budget Orders Endpoints`](budget-orders-endpoints.md) for details on creating and managing budget orders.
 

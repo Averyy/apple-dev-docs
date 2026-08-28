@@ -10,7 +10,7 @@ Update a negative keyword’s status to enable or pause its search term exclusio
 
 #### Discussion
 
-This endpoint updates an existing negative keyword. The `NegativeKeywordUpdate` schema accepts only the `status` field. Negative keywords do not have a `bid` field, and `text` and `matchType` are immutable after creation. To change a negative keyword’s text or match type, delete it and create a new one.
+This endpoint updates an existing negative keyword. The `NegativeKeywordUpdate` schema accepts only the `status` field. Negative keywords don’t have a `bid` field, and `text` and `matchType` are immutable after creation. To change a negative keyword’s text or match type, delete it and create a new one.
 
 #### Payload Examples
 

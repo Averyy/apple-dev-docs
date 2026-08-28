@@ -12,6 +12,8 @@ Retrieve a paginated list of location groups using filters and sorting.
 
 This endpoint returns a paginated list of location groups accessible to the authenticated ad account. An empty request body returns all non-deleted groups with default pagination applied.
 
+See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+
 #### Request Body
 
 See [`QueryRequest`](queryrequest.md).
@@ -43,21 +45,23 @@ Two behaviors are worth noting when filtering by ID or excluding deleted groups:
 
 There is no dedicated filter for looking up location groups by location membership. To determine which groups contain a specific location, query location groups scoped to the location’s brand with a `brandId` filter, then inspect each returned group’s membership client-side. For `STATIC` groups, check whether the location’s `id` appears in the group’s `locationIds` array. For `DYNAMIC` groups, check whether the location satisfies the group’s `rules` criteria.
 
-Narrow results using any of the following fields and operators:
+##### Filterable Fields
 
-| Field | Type | Operators | Notes |
-| --- | --- | --- | --- |
-| `id` | string | EQUALS, IN | Matches the group’s system-assigned identifier. |
-| `name` | string | EQUALS, CONTAINS | Group display name. |
-| `brandId` | string | EQUALS | Parent brand. |
-| `groupType` | string | EQUALS, IN | `STATIC` or `DYNAMIC`. |
-| `deleted` | boolean | EQUALS | Soft-delete flag. Defaults to excluding deleted groups. |
-| `isAllLocationsGroup` | boolean | EQUALS | All-locations group flag. |
-| `eligibility.status` | string | EQUALS, IN | Eligibility status. |
-| `eligibility.blockedGroups.supplyPlacement` | string | CONTAINS_ANY | Blocked placement. |
-| `eligibility.blockedGroups.countryOrRegion` | string | CONTAINS_ANY | Blocked country. |
-| `eligibility.allowedGroups.supplyPlacement` | string | CONTAINS_ANY | Allowed placement. |
-| `eligibility.allowedGroups.countryOrRegion` | string | CONTAINS_ANY | Allowed country. |
+You can sort results by any filterable field using the `sorting` array; see [`QuerySort`](querysort.md) ([`QuerySortOrder`](querysortorder.md)) and [`QueryPagination`](querypagination.md) for the request shape.
+
+| Field | Type | Operators | Sortable | Description |
+| --- | --- | --- | --- | --- |
+| `id` | string | `EQUALS`, `IN` | Yes | Matches the group’s system-assigned identifier. |
+| `name` | string | `EQUALS`, `CONTAINS` | Yes | Group display name. |
+| `brandId` | string | `EQUALS` | Yes | Parent brand. |
+| `groupType` | string (enum) | `EQUALS`, `IN` | Yes | `STATIC` or `DYNAMIC`. |
+| `deleted` | boolean | `EQUALS` | Yes | Soft-delete flag. Defaults to excluding deleted groups. |
+| `isAllLocationsGroup` | boolean | `EQUALS` | Yes | All-locations group flag. |
+| `eligibility.status` | string (enum) | `EQUALS`, `IN` | Yes | Eligibility status. |
+| `eligibility.blockedGroups.supplyPlacement` | string | `CONTAINS_ANY` | Yes | Blocked placement. |
+| `eligibility.blockedGroups.countryOrRegion` | string | `CONTAINS_ANY` | Yes | Blocked country. |
+| `eligibility.allowedGroups.supplyPlacement` | string | `CONTAINS_ANY` | Yes | Allowed placement. |
+| `eligibility.allowedGroups.countryOrRegion` | string | `CONTAINS_ANY` | Yes | Allowed country. |
 
 #### Payload Examples
 

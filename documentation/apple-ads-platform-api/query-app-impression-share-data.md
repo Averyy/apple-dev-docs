@@ -14,6 +14,15 @@ This endpoint measures impression share: what fraction of available impressions 
 
 A filter on `promotedObjectId` is required. Omitting it will result in a 400 error. The endpoint returns results synchronously as paginated JSON.
 
+See [`Filter`](filter.md) for the full set of supported comparison operators.
+
+##### Filterable Fields
+
+| Field | Type | Operators | Description |
+| --- | --- | --- | --- |
+| `promotedObjectId` | string | `EQUALS` | Required. The Adam ID of the promoted app. Omitting this filter results in a 400 error. |
+| `countryOrRegion` | string | `EQUALS` | Optional. ISO 3166-1 alpha-2 country or region code to scope results to. |
+
 ##### Output Types
 
 Configure the output type via `options.impressionShareReportType`:
@@ -40,12 +49,12 @@ Each row in the response carries the following fields.
 
 ##### Impression Share Encoding
 
-`lowImpressionShare` and `highImpressionShare` use a tiered encoding, not a continuous range:
+The `lowImpressionShare` and `highImpressionShare` fields use a tiered encoding, not a continuous range:
 
 | Impression Share | `lowImpressionShare` | `highImpressionShare` |
 | --- | --- | --- |
 | 0% | `0` | `0` |
-| 1% – 90% | `x` (e.g. `0.23`) | `x` (same value) |
+| 1% – 90% | `x` (for example, `0.23`) | `x` (same value) |
 | 91% – 100% | `0.91` | `1` |
 
 For single-digit values (1–90%), both fields are equal. When `highImpressionShare` equals `1`, the app has >90% impression share. The encoding preserves the range at that level to avoid false precision near market saturation.

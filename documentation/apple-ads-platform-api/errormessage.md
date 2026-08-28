@@ -18,7 +18,7 @@ object ErrorMessage
 
 When a change history request fails, the API populates the `error` field of [`BaseAuditResponse`](baseauditresponse.md) with an `ErrorMessage`. On success, `error` is null.
 
-`ErrorMessage` is specific to Change History endpoints and is not the same object as the general [`Error`](error.md) envelope used elsewhere in the API. Its `code` is a closed 3-value enum rather than an open string, so `Error`‘s codes (such as `INVALID_ARGUMENT`) don’t apply here.
+The `ErrorMessage` object is specific to Change History endpoints and isn’t the same object as the general [`Error`](error.md) envelope used elsewhere in the API. Its `code` is a closed 3-value enum rather than an open string, so `Error`‘s codes (such as `INVALID_ARGUMENT`) don’t apply here.
 
 Check the HTTP status code first to determine the error category. Use `code` for programmatic error handling. Use `message` and `details` for diagnostic logging or user-facing error displays.
 
@@ -26,7 +26,7 @@ Common error scenarios:
 
 - Missing required `eventTime` filter returns `400 Bad Request`
 - Expired or missing credentials return `401 Unauthorized`
-- Requesting a `detailId` that does not exist returns `404 Not Found`
+- Requesting a `detailId` that doesn’t exist returns `404 Not Found`
 
 A `429 Too Many Requests` or `500 Internal Server Error` response also populates `error`. For `429`, see [`Applying Rate Limits`](rate-limits.md) for the headers and backoff strategy to use before retrying. For `500`, retry with backoff since the failure may be transient.
 

@@ -16,7 +16,7 @@ object CampaignUpdate.BidStrategy
 
 #### Discussion
 
-To change a campaign’s bid strategy after creation, use this object. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in `BidStrategy`.
+To change a campaign’s bid strategy after creation, use this object. The `bidStrategyType` and `bidStrategyGoal` fields must be sent together and matched per the pairings in `BidStrategy`.
 
 See [`BidStrategyUpdate`](bidstrategyupdate.md) for the full field reference.
 

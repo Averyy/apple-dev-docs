@@ -16,7 +16,7 @@ object CampaignUpdate.DailyBudget
 
 #### Discussion
 
-To change a campaign’s daily spend cap, use this object. Submitting a new value replaces the current daily budget outright and does not affect `sharedBudgets`, which are managed independently.
+To change a campaign’s daily spend cap, use this object. Submitting a new value replaces the current daily budget outright and doesn’t affect `sharedBudgets`, which are managed independently.
 
 See [`DailyBudgetUpdate`](dailybudgetupdate.md) for the full field reference.
 

@@ -16,7 +16,7 @@ string QuerySortOrder
 
 #### Discussion
 
-`QuerySortOrder` specifies the direction of a sort applied in `QuerySort.order`.
+The `QuerySortOrder` specifies the direction of a sort applied in `QuerySort.order`.
 
 ## See Also
 

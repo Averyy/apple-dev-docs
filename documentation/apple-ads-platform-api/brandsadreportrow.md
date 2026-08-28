@@ -16,9 +16,9 @@ object BrandsAdReportRow
 
 #### Discussion
 
-`BrandsAdReportRow` is the `BRANDS` counterpart to [`AppsAdReportRow`](appsadreportrow.md). It uses [`BrandsMetrics`](brandsmetrics.md), a richer metric set than the APPS metrics that includes Maps location-action fields such as `getDirections`, `call`, and `share` alongside the standard impression and tap metrics.
+The `BrandsAdReportRow` object is the `brands` counterpart to [`AppsAdReportRow`](appsadreportrow.md). It uses [`BrandsMetrics`](brandsmetrics.md), a richer metric set than the apps metrics that includes Maps location-action fields such as `getDirections`, `call`, and `share` alongside the standard impression and tap metrics.
 
-The `metadata` field captures ad identifiers and configuration at report time, while `totalMetrics` contains the aggregated performance figures across the full reporting period.
+The `metadata` field captures ad identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
 ##### Example
 
@@ -186,7 +186,7 @@ The `metadata` field captures ad identifiers and configuration at report time, w
 ## Properties
 
 - `totalMetrics` (BrandsMetrics): See [`BrandsMetrics`](brandsmetrics.md) for details.
-- `granularMetrics` ([BrandsMetrics]): Time-series metrics broken down by the requested granularity (e.g., `DAILY`, `WEEKLY`). Present only when a `granularity` is specified in the request. When it isn’t, this field is absent and all data appears in `totalMetrics` instead.
+- `granularMetrics` ([BrandsMetrics]): Time-series metrics broken down by the requested granularity (for example, `DAILY`, `WEEKLY`). Present only when a `granularity` is specified in the request. When it isn’t, this field is absent and all data appears in `totalMetrics` instead.
 - `metadata` (BrandsReportingAd): See [`BrandsReportingAd`](brandsreportingad.md) for details.
 
 ## See Also

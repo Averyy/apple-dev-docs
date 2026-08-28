@@ -18,7 +18,7 @@ object DelegationUpdate
 
 You only ever send `DelegationUpdate` entries as part of the `delegations` array on [`Update Ad Accounts`](put-ad-accounts-_id_.md), which uses full-replacement semantics: the array you send becomes the account’s complete set of delegations. There is no separate add or remove operation. The system keeps entries you include and removes entries you omit.
 
-**Adding a new delegation**: include every existing delegation plus the new entry. All delegations on an ad account must share the same `resourceType`. You cannot mix `CONTENT_PROVIDER` and `BUSINESS_BRAND` delegations on the same account. For example, an ad account with an existing `CONTENT_PROVIDER` delegation that wants to add a second `CONTENT_PROVIDER` delegation sends both entries:
+**Adding a new delegation**: include every existing delegation plus the new entry. All delegations on an ad account must share the same `resourceType`. You can’t mix `CONTENT_PROVIDER` and `BUSINESS_BRAND` delegations on the same account. For example, an ad account with an existing `CONTENT_PROVIDER` delegation that wants to add a second `CONTENT_PROVIDER` delegation sends both entries:
 
 ```json
 PUT /v1/ad-accounts/{id}

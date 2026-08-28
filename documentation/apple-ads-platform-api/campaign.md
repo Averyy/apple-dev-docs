@@ -18,11 +18,11 @@ object Campaign
 
 A `Campaign` is the top-level advertising container that defines the promoted object, billing model, scheduling, and geographic targeting for a set of ad groups. Each campaign belongs to a single ad account and promotes either an App Store app (`APPSTORE_APP`) or a brand (`BUSINESS_BRAND`). The `billingEvent`, `promotedObjectType`, and `promotedObjectId` fields stay fixed after creation. To change any of them, create a new campaign.
 
-The `status` field captures the advertiser’s intent for the campaign to serve, while the `systemStatus` field reflects Apple’s system assessment of whether the campaign can deliver. When `systemStatus` isn’t `RUNNING`, inspect `systemStatusReasons` to identify blocking conditions and `systemStatusLimitingReasons` for delivery-reducing (but non-blocking) factors.
+The `status` field captures the advertiser’s intent for the campaign to serve. The `systemStatus` field reflects Apple’s system assessment of whether the campaign can deliver. When `systemStatus` isn’t `RUNNING`, inspect `systemStatusReasons` to identify blocking conditions and `systemStatusLimitingReasons` for delivery-reducing (but non-blocking) factors.
 
-A required `dailyBudget` cap controls the campaign’s budget and limits daily spending. You can also assign a campaign to one or more shared budgets via `sharedBudgets`. The two budget controls function independently: `dailyBudget` enforces a daily cap, while each shared budget enforces a flight-period cap defined by its `startTime` and `endTime`.
+A required `dailyBudget` cap controls the campaign’s budget and limits daily spending. You can also assign a campaign to one or more shared budgets via `sharedBudgets`. The two budget controls function independently: `dailyBudget` enforces a daily cap. Each shared budget enforces a flight-period cap defined by its `startTime` and `endTime`.
 
-For filterable fields and query operators, see [`Query Campaigns`](post-campaigns-query.md). For the complete list of required and optional fields at creation, see [`CampaignCreate`](campaigncreate.md). For the fields that can be changed after creation, see [`CampaignUpdate`](campaignupdate.md).
+Fields you can filter and sort on when querying campaigns are listed in [`Query Campaigns`](post-campaigns-query.md). For the complete list of required and optional fields at creation, see [`CampaignCreate`](campaigncreate.md). For the fields that you can change after creation, see [`CampaignUpdate`](campaignupdate.md).
 
 ##### Example
 
@@ -126,7 +126,7 @@ For filterable fields and query operators, see [`Query Campaigns`](post-campaign
 - [type Campaign.SystemStatusLimitingReasons](campaign/systemstatuslimitingreasons-data.typealias.md)
   A reason code indicating that a campaign is running but delivering at reduced capacity.
 - [type Campaign.SystemStatusReasons](campaign/systemstatusreasons-data.typealias.md)
-  A reason code explaining why a campaign is not currently running.
+  A reason code explaining why a campaign isn’t currently running.
 
 ## Properties
 
@@ -134,8 +134,8 @@ For filterable fields and query operators, see [`Query Campaigns`](post-campaign
 - `name` (string): Campaign name. Maximum 200 characters. Must be non-empty. Mutable.
 - `billingEvent` (Campaign.BillingEvent): The event type that triggers a charge (for example, `TAPS` or `IMPRESSIONS`). See [`Campaign.BillingEvent`](campaign/billingevent-data.typealias.md). Read-only.
 - `paymentModel` (Campaign.PaymentModel): The payment model for this campaign (for example, `LOC` for Line of Credit or `PAYG` for Pay As You Go). See [`Campaign.PaymentModel`](campaign/paymentmodel-data.typealias.md). System-set, Read-only.
-- `startTime` (date-time): The scheduled start date and time of the campaign. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2026-06-07T00:00:00.000`). Mutable.
-- `endTime` (date-time): The scheduled end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (e.g., `2026-12-31T00:00:00.000`). Omit to keep the campaign running indefinitely. Mutable.
+- `startTime` (date-time): The scheduled start date and time of the campaign. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-06-07T00:00:00.000`). Mutable.
+- `endTime` (date-time): The scheduled end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-12-31T00:00:00.000`). Omit to keep the campaign running indefinitely. Mutable.
 - `promotedObjectType` (Campaign.PromotedObjectType): Whether this campaign promotes an App Store app (`APPSTORE_APP`) or a brand (`BUSINESS_BRAND`). See [`Campaign.PromotedObjectType`](campaign/promotedobjecttype-data.typealias.md). Read-only.
 - `promotedObjectId` (string): The identifier of the promoted entity: the `adamId` for App Store apps or the brand ID for Brands. Read-only.
 - `status` (Campaign.Status): Captures the advertiser’s intent for the campaign to serve. See [`CampaignStatus`](campaignstatus.md). Mutable.

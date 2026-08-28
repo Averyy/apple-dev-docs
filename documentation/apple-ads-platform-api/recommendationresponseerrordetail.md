@@ -16,7 +16,7 @@ object RecommendationResponseErrorDetail
 
 #### Discussion
 
-`ResponseErrorDetail` provides field-level granularity for errors returned in a `ResponseError`. Each detail entry identifies one specific condition that caused the request to fail. For example, this occurs for a missing required field, an invalid value, or a constraint violation.
+The `ResponseErrorDetail` provides field-level granularity for errors returned in a `ResponseError`. Each detail entry identifies one specific condition that caused the request to fail. For example, this occurs for a missing required field, an invalid value, or a constraint violation.
 
 The `code` and `message` fields identify the nature of the issue. When `details` contains multiple entries, correct all issues before retrying. The API rejects the request atomically on the first validation pass.
 
@@ -52,7 +52,7 @@ The `code` and `message` fields identify the nature of the issue. When `details`
 - [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
 - [object DailyCapRecommendation](dailycaprecommendation.md)
-  A daily budget recommendation for a campaign that is frequently hitting its spending ceiling.
+  A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 - [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
 - [object ApplyTargetCpaRecommendation](applytargetcparecommendation.md)

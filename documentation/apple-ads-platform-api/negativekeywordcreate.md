@@ -16,7 +16,7 @@ object NegativeKeywordCreate
 
 #### Discussion
 
-`NegativeKeywordCreate` is the request payload for adding a negative keyword to a campaign or ad group.
+The `NegativeKeywordCreate` object is the request payload for adding a negative keyword to a campaign or ad group.
 
 ##### Example
 
@@ -39,8 +39,8 @@ object NegativeKeywordCreate
 
 ## Properties
 
-- `campaignId` (int64): Scopes this negative keyword to a specific campaign. Required for campaign-level negatives when calling `POST /v1/negative-keywords` directly. Must not be set for ad group-level negatives.
-- `adGroupId` (int64): Scopes this negative keyword to a specific ad group. Required for ad group-level negatives when calling `POST /v1/negative-keywords` directly. Do not set `campaignId` when providing this field.
+- `campaignId` (int64): Scopes this negative keyword to a specific campaign. Required for campaign-level negatives when calling `POST /v1/negative-keywords` ([`Create a Negative Keyword`](post-negative-keywords.md)) directly. Must not be set for ad group-level negatives.
+- `adGroupId` (int64): Scopes this negative keyword to a specific ad group. Required for ad group-level negatives when calling `POST /v1/negative-keywords` ([`Create a Negative Keyword`](post-negative-keywords.md)) directly. Don’t set `campaignId` when providing this field.
 - `text` (string) *(required)*: The keyword text to exclude. Immutable after creation. To correct it, delete the existing record and create a new one.
 - `matchType` (NegativeKeywordCreate.MatchType): The match type for this negative keyword. See [`KeywordMatchType`](keywordmatchtype.md). Defaults to `BROAD` if omitted. Immutable after creation.
 - `status` (NegativeKeywordCreate.Status): Whether this negative keyword is active. See [`NegativeKeywordStatus`](negativekeywordstatus.md). Defaults to `ENABLED` if omitted.

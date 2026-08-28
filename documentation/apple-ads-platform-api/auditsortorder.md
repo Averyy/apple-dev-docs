@@ -16,7 +16,7 @@ string AuditSortOrder
 
 #### Discussion
 
-`AuditSortOrder` controls the direction of a sort directive in an [`AuditQuery`](auditquery.md) request. When the `sorting` array is omitted entirely, results default to `eventTime DESC` (most recent first).
+The `AuditSortOrder` controls the direction of a sort directive in an [`AuditQuery`](auditquery.md) request. When the `sorting` array is omitted entirely, results default to `eventTime DESC` (most recent first).
 
 ## See Also
 

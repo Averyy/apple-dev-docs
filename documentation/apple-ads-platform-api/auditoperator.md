@@ -16,9 +16,11 @@ string AuditOperator
 
 #### Discussion
 
-`AuditOperator` determines how the system applies the filter `values` against the target field. Use `GREATER_THAN` or `LESS_THAN` with a single timestamp for an open-ended `eventTime` filter.
+The `AuditOperator` determines how the system applies the filter `values` against the target field. Use `GREATER_THAN` or `LESS_THAN` with a single timestamp for an open-ended `eventTime` filter.
 
 Every valid `AuditQuery` must include at least one filter on `eventTime` using `BETWEEN`, `GREATER_THAN`, or `LESS_THAN`. All other filters use `IN`.
+
+The endpoint that accepts an `AuditFilter` is [`Query Change History`](query-audit-summary-_-grouped-by-transaction.md).
 
 ## See Also
 

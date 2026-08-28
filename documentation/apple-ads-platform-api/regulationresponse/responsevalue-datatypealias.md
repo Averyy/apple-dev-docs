@@ -16,6 +16,8 @@ string RegulationResponse.ResponseValue
 
 #### Discussion
 
+Which values apply depends on the paired `regulationType`: Sapin Law questions expect `AGENT`/`NOT_AGENT` or `FRENCH_BUSINESS`/`NOT_FRENCH_BUSINESS`, while other regulation types may use the generic `TRUE`/`FALSE`.
+
 ##### Example
 
 ```json

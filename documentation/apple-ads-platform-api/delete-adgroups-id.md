@@ -12,7 +12,7 @@ Soft-delete an ad group by its unique identifier, along with all ads and keyword
 
 This endpoint deletes an ad group by its ID, using a soft delete: the system marks it `deleted: true` and preserves the record. By default, `POST /adgroups/query` results exclude it unless you filter with `deleted EQUALS true`.
 
-Deletion cascades to all resources nested under the ad group: it also marks ads, keywords, and negative keywords as deleted. This operation cannot be undone.
+Deletion cascades to all resources nested under the ad group: it also marks ads, keywords, and negative keywords as deleted. This operation can’t be undone.
 
 Deleting an ad group has the following effects:
 

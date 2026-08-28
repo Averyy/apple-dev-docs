@@ -16,6 +16,8 @@ string NegativeKeywordCreate.Status
 
 #### Discussion
 
+Include `status` in the create request to determine whether the negative keyword begins suppressing matching search queries immediately or starts paused.
+
 ##### Example
 
 ```json

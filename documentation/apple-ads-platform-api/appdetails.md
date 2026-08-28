@@ -16,7 +16,7 @@ object AppDetails
 
 #### Discussion
 
-`AppDetails` represents the App Store metadata for an app retrieved via [`Get App Details by Adam ID`](get-app-details-by-adam-id.md). The `id` field is the Adam ID, which is the same value used as `promotedObjectId` when targeting this app.
+The `AppDetails` object represents the App Store metadata for an app retrieved via [`Get App Details by Adam ID`](get-app-details-by-adam-id.md). The `id` field is the Adam ID, which is the same value used as `promotedObjectId` when targeting this app.
 
 Use `deviceClasses` to verify that your campaign’s device-class targeting is compatible with the app before launching. Targeting an App Store country or region not in `availableStorefronts` will result in no impressions for that market.
 
@@ -51,8 +51,8 @@ Use `deviceClasses` to verify that your campaign’s device-class targeting is c
 - `id` (string): App identifier (Adam ID). Read-only.
 - `appName` (string): Application display name.
 - `artistName` (string): Developer or company name.
-- `primaryLanguage` (string): Primary language of the app (BCP-47 code, e.g., `"en-US"`).
-- `primaryGenre` (string): The primary App Store genre category (e.g., `">Mobile Software Applications>Music"`).
+- `primaryLanguage` (string): Primary language of the app (BCP-47 code, for example, `"en-US"`).
+- `primaryGenre` (string): The primary App Store genre category (for example, `">Mobile Software Applications>Music"`).
 - `secondaryGenre` (string): The secondary App Store genre category, if assigned.
 - `deviceClasses` ([string]): Device families supported by the app. Possible values: `IPHONE`, `IPAD`.
 - `iconPictureUrl` (uri): URL of the app’s icon image.

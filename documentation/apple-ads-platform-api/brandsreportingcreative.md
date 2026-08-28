@@ -16,9 +16,9 @@ object BrandsReportingCreative
 
 #### Discussion
 
-`BrandsReportingCreative` is the creative metadata snapshot embedded within `BrandsReportingAd` in `BRANDS` ad report rows. The `creativeType` field uses the shared `CreativeType` enum, but Brands (Apple Maps) creative reports only ever return `LOCAL_ADS_SEARCH_CREATIVE`.
+The `BrandsReportingCreative` object is the creative metadata snapshot embedded within `BrandsReportingAd` in `brands` ad report rows. The `creativeType` field uses the shared `CreativeType` enumeration, but Brands (Apple Maps) creative reports only ever return `LOCAL_ADS_SEARCH_CREATIVE`.
 
-`systemStatus` reflects whether the creative was valid at report time. Creatives with `INVALID` status were not eligible to serve during the reporting period and will not contribute to impression or engagement metrics.
+The `systemStatus` field reflects whether the creative was valid at report time. Creatives with `INVALID` status were not eligible to serve during the reporting period and won’t contribute to impression or engagement metrics.
 
 ##### Example
 

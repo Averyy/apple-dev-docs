@@ -10,7 +10,7 @@ Return a map of country or region codes to their associated limited-status reaso
 
 #### Discussion
 
-Use this endpoint to diagnose why specific campaigns are not delivering in one or more countries or regions. The response contains information on why delivery is limited in each market.
+This endpoint helps diagnose why specific campaigns aren’t delivering in one or more countries or regions. The response contains information on why delivery is limited in each market.
 
 #### Payload Examples
 

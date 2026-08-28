@@ -16,7 +16,7 @@ object CreativeRejectionReasonQueryRequest
 
 #### Discussion
 
-`CreativeRejectionReasonQueryRequest` is the request body for querying ad creative rejection reasons.
+The `CreativeRejectionReasonQueryRequest` object is the request body for querying ad creative rejection reasons.
 
 ##### Example
 

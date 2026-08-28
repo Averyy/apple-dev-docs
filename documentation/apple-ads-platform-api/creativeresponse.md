@@ -16,7 +16,7 @@ object CreativeResponse
 
 #### Discussion
 
-`CreativeResponse` is the single-item response envelope returned by ad creative create, read, and update operations.
+The `CreativeResponse` object is the single-item response envelope returned by ad creative create, read, and update operations.
 
 ##### Example
 

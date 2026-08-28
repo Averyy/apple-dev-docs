@@ -16,6 +16,8 @@ string KeywordUpdate.Status
 
 #### Discussion
 
+Send `status: PAUSED` to stop an existing keyword from competing in auctions, or `ENABLED` to resume it.
+
 ##### Example
 
 ```json

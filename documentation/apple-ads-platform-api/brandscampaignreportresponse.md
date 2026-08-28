@@ -16,9 +16,7 @@ object BrandsCampaignReportResponse
 
 #### Discussion
 
-`BrandsCampaignReportResponse` is the top-level response envelope for `BRANDS` campaign-level reports.
-
-`BRANDS` campaign reports support `groupBy` dimensions `deviceClass`, `locationId`, and `supplyPlacement`.
+The `brands` campaign reports support `groupBy` dimensions `deviceClass`, `locationId`, and `supplyPlacement`.
 
 ##### Example
 

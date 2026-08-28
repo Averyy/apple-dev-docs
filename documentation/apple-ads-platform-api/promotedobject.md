@@ -16,7 +16,7 @@ object PromotedObject
 
 #### Discussion
 
-`PromotedObject` provides a lightweight summary of the entity being promoted in an ad.
+The `PromotedObject` object provides a lightweight summary of the entity being promoted in an ad.
 
 This object appears in report rows and response contexts where the full promoted object identity (id, type) is captured elsewhere, and only the human-readable name is needed for display or logging purposes.
 
@@ -30,7 +30,7 @@ This object appears in report rows and response contexts where the full promoted
 
 ## Properties
 
-- `name` (string): The name of the promoted object. For `BRANDS` campaigns this is the brand or location name as it appears in Maps. Read-only.
+- `name` (string): The name of the promoted object. For `brands` campaigns, this is the brand or location name as it appears in Maps. Read-only.
 
 ## See Also
 

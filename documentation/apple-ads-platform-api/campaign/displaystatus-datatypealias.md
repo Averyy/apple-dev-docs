@@ -16,6 +16,8 @@ string Campaign.DisplayStatus
 
 #### Discussion
 
+Because it merges both inputs into one label, a campaign set to `ENABLED` can still display as `ON_HOLD` or `LIMITED` when a system condition intervenes.
+
 ##### Example
 
 ```json
