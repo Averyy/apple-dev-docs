@@ -6,7 +6,7 @@
 Request payload for assigning a campaign to a budget order at campaign creation time.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

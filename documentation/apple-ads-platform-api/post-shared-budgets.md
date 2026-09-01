@@ -6,7 +6,7 @@
 Creates a budget order that can be assigned to campaigns within an ad account.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

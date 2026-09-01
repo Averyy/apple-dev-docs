@@ -6,7 +6,7 @@
 Dismiss one or more daily budget recommendations without changing the campaign’s budget.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

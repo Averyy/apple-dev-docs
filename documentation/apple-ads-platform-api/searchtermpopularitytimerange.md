@@ -6,7 +6,7 @@
 Time range for search term popularity queries.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The unit of ad delivery an ad group is charged for, independent of how the account funds spend.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A single field change entry, capturing the field name and its before and after values.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

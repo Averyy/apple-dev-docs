@@ -6,7 +6,7 @@
 The targeting configuration for updating an existing ad group, specifying audience dimensions to include or exclude.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

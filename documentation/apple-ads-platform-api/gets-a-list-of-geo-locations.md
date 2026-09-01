@@ -6,7 +6,7 @@
 Search for geographic locations by entity type and ID for use in ad group geo targeting.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

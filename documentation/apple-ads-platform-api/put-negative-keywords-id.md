@@ -6,7 +6,7 @@
 Update a negative keyword’s status to enable or pause its search term exclusion.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

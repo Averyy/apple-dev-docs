@@ -6,7 +6,7 @@
 Eligibility restrictions for a geographic location, scoped to the supply source specified in the request.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

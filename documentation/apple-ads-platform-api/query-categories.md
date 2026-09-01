@@ -6,7 +6,7 @@
 Retrieve a paginated list of business categories using filters and sorting.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

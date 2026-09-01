@@ -6,7 +6,7 @@
 The category of entity being promoted by a campaign, determining which ad placements and creative workflows apply.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

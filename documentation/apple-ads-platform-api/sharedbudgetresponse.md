@@ -6,7 +6,7 @@
 The response object for a single budget order operation.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

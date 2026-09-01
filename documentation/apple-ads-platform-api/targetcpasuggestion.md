@@ -6,7 +6,7 @@
 A suggested Target CPA for a new Maximize Conversions campaign, based on historical performance and market conditions.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

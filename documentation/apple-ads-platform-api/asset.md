@@ -6,7 +6,7 @@
 Unified asset entity containing product-agnostic asset metadata and references.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

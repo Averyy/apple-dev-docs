@@ -6,7 +6,7 @@
 The payload for a single keyword-update.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

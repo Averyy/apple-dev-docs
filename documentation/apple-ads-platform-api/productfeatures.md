@@ -6,7 +6,7 @@
 Product features are the advertising capabilities for an ad account.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

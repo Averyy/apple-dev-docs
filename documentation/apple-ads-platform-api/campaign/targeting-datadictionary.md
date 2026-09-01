@@ -6,7 +6,7 @@
 Defines where a campaign is eligible to serve ads, including supply source, placement, and geographic markets.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
-# watchOS 27 Beta 7 Release Notes
+# watchOS 27 Beta 8 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 7. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 8. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
 

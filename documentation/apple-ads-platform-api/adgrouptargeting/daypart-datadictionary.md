@@ -6,7 +6,7 @@
 Hour-of-day targeting, restricting delivery to specific one-hour slots in a 7-day week grid.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

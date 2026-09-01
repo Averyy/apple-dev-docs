@@ -6,7 +6,7 @@
 Create a new ad account under a specified organization.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

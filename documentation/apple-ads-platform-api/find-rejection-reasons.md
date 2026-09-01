@@ -6,7 +6,7 @@
 Query ad creative rejection reasons for apps and return why each ad creative failed approval.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

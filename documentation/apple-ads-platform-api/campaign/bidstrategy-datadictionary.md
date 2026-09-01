@@ -6,7 +6,7 @@
 Defines how this campaign competes in auctions, including bid type, optimization goal, and bid amount.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

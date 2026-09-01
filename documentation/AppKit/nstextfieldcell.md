@@ -83,8 +83,6 @@ When subclassing `NSTextFieldCell` you must implement the designated initializer
 - [NSCopying](../foundation/nscopying.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

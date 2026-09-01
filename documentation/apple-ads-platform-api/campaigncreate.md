@@ -6,7 +6,7 @@
 The request body for creating a new campaign.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -101,13 +101,13 @@ Creating a campaign ties together what’s being promoted, a budget, targeting, 
 - `dailyBudget` (CampaignCreate.DailyBudget) *(required)*: The daily spend cap for this campaign. See [`DailyBudgetCreate`](dailybudgetcreate.md). Mutable.
 - `sharedBudgets` ([SharedBudgetAssignmentCreate]): One or more budget order assignments for this campaign. Can be provided alongside `dailyBudget`. See [`SharedBudgetAssignmentCreate`](sharedbudgetassignmentcreate.md).
 - `targeting` (CampaignCreate.Targeting) *(required)*: Country or region, supply source, and placement targeting for this campaign. See [`CampaignTargetingCreate`](campaigntargetingcreate.md). Mutable.
-- `bidStrategy` (CampaignCreate.BidStrategy): Bid strategy governing how this campaign competes in auctions. `bidStrategyType` and `bidStrategyGoal` must both be supplied and must match one of the pairings in [`CampaignCreate.BidStrategy`](campaigncreate/bidstrategy-data.dictionary.md). Omitting either field, or pairing a mismatched goal, returns an error. See [`BidStrategyCreate`](bidstrategycreate.md). Mutable.
+- `bidStrategy` (CampaignCreate.BidStrategy): Bid strategy governing how this campaign competes in auctions. `bidStrategyType` and `bidStrategyGoal` must both be supplied and must match one of the pairings in [`BidStrategy`](bidstrategy.md). Omitting either field, or pairing a mismatched goal, returns an error. See [`BidStrategyCreate`](bidstrategycreate.md). Mutable.
 - `invoiceDetail` (CampaignCreate.InvoiceDetail): Invoice and billing contact details. Required for Line of Credit accounts. See [`InvoiceDetailCreate`](invoicedetailcreate.md).
 - `regulationResponses` ([RegulationResponseCreate]): Regulatory consent acknowledgments required in certain markets. See [`RegulationResponseCreate`](regulationresponsecreate.md).
 - `adAccountId` (int64) *(required)*: The ad account this campaign belongs to. Immutable after creation.
-- `billingEvent` (CampaignCreate.BillingEvent) *(required)*: The billing event for this campaign. See [`CampaignCreate.BillingEvent`](campaigncreate/billingevent-data.typealias.md). Immutable after creation.
+- `billingEvent` (CampaignCreate.BillingEvent) *(required)*: The billing event for this campaign. See [`BillingEvent`](billingevent.md). Immutable after creation.
 - `promotedObjectId` (string) *(required)*: The identifier for the promoted object (for example, an app Adam ID). Immutable after creation.
-- `promotedObjectType` (CampaignCreate.PromotedObjectType) *(required)*: The type of the promoted object. See [`CampaignCreate.PromotedObjectType`](campaigncreate/promotedobjecttype-data.typealias.md). Immutable after creation.
+- `promotedObjectType` (CampaignCreate.PromotedObjectType) *(required)*: The type of the promoted object. See [`PromotedObjectType`](promotedobjecttype.md). Immutable after creation.
 - `status` (CampaignCreate.Status): Advertiser-configurable serving status, `ENABLED` or `PAUSED`. Specify it explicitly if a specific initial status is required. See [`CampaignStatus`](campaignstatus.md).
 
 ## See Also

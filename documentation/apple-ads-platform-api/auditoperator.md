@@ -6,7 +6,7 @@
 Enumeration of comparison operators supported in audit filter conditions for change history queries.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

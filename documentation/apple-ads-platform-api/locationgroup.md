@@ -6,7 +6,7 @@
 A collection of business locations associated with a brand, used to target geos in Apple Maps campaigns.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

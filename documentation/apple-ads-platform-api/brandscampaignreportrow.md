@@ -6,7 +6,7 @@
 A single row in an Apple Maps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Placeholder for the response payload, whose actual shape depends on each endpoint’s concrete result type.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

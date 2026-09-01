@@ -6,7 +6,7 @@
 The paginated response object for an app eligibility query.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

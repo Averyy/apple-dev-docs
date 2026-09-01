@@ -6,7 +6,7 @@
 Query keyword suggestions based on search terms and App Store countries or regions using structured filters.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 The request body for querying policy assignment with rejection reason details.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Campaign-level metrics for apps, inheriting all properties from `AppsMetrics`.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -20,29 +20,29 @@ The `AppsCampaignMetrics` extends [`AppsMetrics`](appsmetrics.md) with no additi
 
 ## Properties
 
-- `cpm` (Money)
-- `cpt` (Money)
-- `date` (date)
-- `impressions` (int64)
-- `localSpend` (Money)
-- `tapInstallCPI` (Money)
-- `tapInstallRate` (number)
-- `tapInstalls` (int64)
-- `tapNewDownloads` (int64)
-- `tapPreOrdersPlaced` (int64)
-- `tapRedownloads` (int64)
-- `taps` (int64)
-- `totalAvgCPI` (Money)
-- `totalInstallRate` (number)
-- `totalInstalls` (int64)
-- `totalNewDownloads` (int64)
-- `totalPreOrdersPlaced` (int64)
-- `totalRedownloads` (int64)
-- `ttr` (number)
-- `viewInstalls` (int64)
-- `viewNewDownloads` (int64)
-- `viewPreOrdersPlaced` (int64)
-- `viewRedownloads` (int64)
+- `date` (date): Report date in YYYY-MM-DD format.
+- `localSpend` (Money): Total spend in the reporting period. See [`Money`](money.md).
+- `impressions` (int64): Total ad impressions.
+- `taps` (int64): Total ad taps.
+- `ttr` (number): Tap-through rate (taps divided by impressions).
+- `cpt` (Money): Average cost per tap. See [`Money`](money.md).
+- `cpm` (Money): Average cost per thousand impressions. See [`Money`](money.md).
+- `tapInstalls` (int64): Number of installs attributed to taps.
+- `tapInstallCPI` (Money): Average cost per tap-attributed install. See [`Money`](money.md).
+- `totalNewDownloads` (int64): Total new downloads (first-time installs) across all attribution types.
+- `totalRedownloads` (int64): Total redownloads (installs of an app the user previously had installed, verified by the App Store) across all attribution types.
+- `viewInstalls` (int64): Number of installs attributed to view-through (impression-based) attribution.
+- `totalInstalls` (int64): Total installs combining tap and view attribution.
+- `tapNewDownloads` (int64): New downloads attributed to taps.
+- `tapRedownloads` (int64): Redownloads attributed to taps.
+- `viewNewDownloads` (int64): New downloads attributed to view-through impressions.
+- `viewRedownloads` (int64): Redownloads attributed to view-through impressions.
+- `totalAvgCPI` (Money): Average cost per install across all attribution types. See [`Money`](money.md).
+- `totalInstallRate` (number): Total install rate (total installs divided by taps).
+- `tapInstallRate` (number): Tap install rate (tap installs divided by taps).
+- `tapPreOrdersPlaced` (int64): Pre-orders placed attributed to taps.
+- `viewPreOrdersPlaced` (int64): Pre-orders placed attributed to view-through impressions.
+- `totalPreOrdersPlaced` (int64): Total pre-orders placed across all attribution types.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 A sort specification used in a recommendation query request to order results.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

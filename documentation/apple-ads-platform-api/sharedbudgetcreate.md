@@ -6,7 +6,7 @@
 The request body for creating a new budget order.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -58,7 +58,7 @@ Ensure the `currency` in the `Money` object matches the ad account’s currency.
 - `endTime` (date-time): The date and time the budget expires. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Must be after `startTime`. Omit for an open-ended budget.
 - `value` (Money) *(required)*: The total budget amount as a `Money` object with `amount` and ISO 4217 `currency` code. See [`Money`](money.md).
 - `adAccountIds` ([int64]) *(required)*: The ad account IDs that can draw from this budget. Exactly one ID is allowed at creation. The API rejects requests that send more than one ID.
-- `invoiceDetail` (SharedBudgetCreate.InvoiceDetail) *(required)*: Billing contact details. See [`SharedBudgetCreate.InvoiceDetail`](sharedbudgetcreate/invoicedetail-data.dictionary.md).
+- `invoiceDetail` (SharedBudgetCreate.InvoiceDetail) *(required)*: Billing contact details. See [`InvoiceDetail`](invoicedetail.md).
 
 ## See Also
 

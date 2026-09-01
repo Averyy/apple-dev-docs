@@ -6,7 +6,7 @@
 Error information returned in the response body when a Recommendations or Suggestions request fails.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

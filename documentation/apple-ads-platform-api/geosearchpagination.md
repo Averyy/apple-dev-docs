@@ -6,7 +6,7 @@
 Pagination parameters for geo location search requests and responses.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The top-level response envelope for brands ad-level reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -96,7 +96,7 @@ Note that ad-level reports don’t support `HOURLY` granularity.
 
 ## Properties
 
-- `result` (BrandsAdResultContainer): Wraps the report rows, each including ad metadata (including creative type and the `brands`-specific groupBy dimensions `deviceClass`, `locationId`, and `supplyPlacement`) and associated performance metrics. See [`BrandsAdResultContainer`](brandsadresultcontainer.md) for details.
+- `result` (BrandsAdResultContainer): Wraps the report rows, each including ad metadata (including creative type and the `brands`-specific groupBy dimensions `deviceClass`, `locationId`, and `supplyPlacement`) and associated performance metrics. If no rows match the request, `result` is returned as an empty object. See [`BrandsAdResultContainer`](brandsadresultcontainer.md) for details.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

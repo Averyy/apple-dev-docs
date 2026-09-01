@@ -6,7 +6,7 @@
 Retrieve daily budget recommendations for campaigns that may have more opportunities.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

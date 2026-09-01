@@ -6,7 +6,7 @@
 Query category suggestions for apps or brands using either a discovery or search route based on the query type.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

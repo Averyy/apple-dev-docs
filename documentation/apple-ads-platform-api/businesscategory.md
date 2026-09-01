@@ -6,7 +6,7 @@
 A category in the Apple Maps business taxonomy used to classify brands and locations.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Destination-specific identifiers used when linking an ad creative to an App Store product page.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

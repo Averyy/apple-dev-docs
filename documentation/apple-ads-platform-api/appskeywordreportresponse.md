@@ -6,7 +6,7 @@
 The top-level response envelope for apps keyword-level reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -92,7 +92,7 @@ Keyword reports support `groupBy` dimensions such as `countryOrRegion` and `devi
 
 ## Properties
 
-- `result` (AppsKeywordResultContainer): Contains the array of keyword report rows, each including keyword metadata, associated performance metrics, and an optional `insights.bidRecommendation`. See [`AppsKeywordResultContainer`](appskeywordresultcontainer.md) for details.
+- `result` (AppsKeywordResultContainer): Contains the array of keyword report rows, each including keyword metadata, associated performance metrics, and an optional `insights.bidRecommendation`. If no rows match the request, `result` is returned as an empty object. See [`AppsKeywordResultContainer`](appskeywordresultcontainer.md) for details.
 - `pagination` (ResponsePagination): Provides pagination state for navigating large result sets. See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

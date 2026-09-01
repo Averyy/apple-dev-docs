@@ -6,7 +6,7 @@
 The standard response envelope for all Recommendations and Suggestions API endpoints.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

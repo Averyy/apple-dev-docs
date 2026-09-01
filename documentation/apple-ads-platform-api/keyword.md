@@ -6,7 +6,7 @@
 The targeting unit that connects a user’s search query to the ad group’s ads.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

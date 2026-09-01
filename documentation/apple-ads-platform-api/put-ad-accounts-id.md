@@ -6,7 +6,7 @@
 Update an ad account’s name or delegations.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

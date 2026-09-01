@@ -6,7 +6,7 @@
 The top-level response envelope for Apple Maps campaign-level reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -103,7 +103,7 @@ The `brands` campaign reports support `groupBy` dimensions `deviceClass`, `locat
 
 ## Properties
 
-- `result` (BrandsCampaignResultContainer): Contains the array of campaign report rows. Each row includes the campaign `metadata`, capturing targeting, budget, and status at report time, along with `totalMetrics` and optional `granularMetrics`. See [`BrandsCampaignResultContainer`](brandscampaignresultcontainer.md) for details.
+- `result` (BrandsCampaignResultContainer): Contains the array of campaign report rows. Each row includes the campaign `metadata`, capturing targeting, budget, and status at report time, along with `totalMetrics` and optional `granularMetrics`. If no rows match the request, `result` is returned as an empty object. See [`BrandsCampaignResultContainer`](brandscampaignresultcontainer.md) for details.
 - `pagination` (ResponsePagination): Provided for iterating through large result sets. See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

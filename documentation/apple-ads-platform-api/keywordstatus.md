@@ -6,7 +6,7 @@
 Enumeration of advertiser-configurable serving states for a keyword.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

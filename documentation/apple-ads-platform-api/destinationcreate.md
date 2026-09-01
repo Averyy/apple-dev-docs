@@ -6,7 +6,7 @@
 Request payload for specifying the post-tap destination when creating an ad creative.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -41,7 +41,7 @@ The [`CreativeCreate`](creativecreate.md) embeds `DestinationCreate` to define w
 
 ## Properties
 
-- `destinationType` (DestinationCreate.DestinationType) *(required)*: The type of post-tap destination. See [`DestinationCreate.DestinationType`](destinationcreate/destinationtype-data.typealias.md). Immutable after creation.
+- `destinationType` (DestinationCreate.DestinationType) *(required)*: The type of post-tap destination. See [`DestinationType`](destinationtype.md). Immutable after creation.
 - `parameters` (DestinationCreate.Parameters): Destination-specific parameters. For App Store destinations, provide `adamId` and optionally `productPageId` to link to a Custom Product Page. See [`DestinationParameter`](destinationparameter.md).
 
 ## See Also

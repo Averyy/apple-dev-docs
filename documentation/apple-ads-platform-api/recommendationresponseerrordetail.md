@@ -6,7 +6,7 @@
 Granular error detail for a single field or condition within a failed Recommendations or Suggestions request.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

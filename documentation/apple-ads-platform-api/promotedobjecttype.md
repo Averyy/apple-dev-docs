@@ -6,7 +6,7 @@
 The category of entity that a campaign promotes, determining which values apply.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

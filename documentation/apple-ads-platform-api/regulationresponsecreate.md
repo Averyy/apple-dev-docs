@@ -6,7 +6,7 @@
 Request body for submitting a regulatory disclosure response when creating a resource.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

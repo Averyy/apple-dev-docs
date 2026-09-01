@@ -6,7 +6,7 @@
 The comprehensive audience and placement configuration for an ad group.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Ad creative containing all data for visually rendering an ad.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -89,9 +89,9 @@ Fields you can filter and sort on when querying ad creatives are listed in [`Que
 - `id` (int64): Primary identifier. Read-only.
 - `adAccountId` (int64): Reference to the Ad Account. System-assigned. Read-only.
 - `name` (string): Name of the ad creative. Mutable.
-- `creativeType` (Creative.CreativeType): Type of ad creative. Possible values: `CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`, `LOCAL_ADS_SEARCH_CREATIVE`. See [`Creative.CreativeType`](creative/creativetype-data.typealias.md). Immutable after creation.
+- `creativeType` (Creative.CreativeType): Type of ad creative. Possible values: `CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`, `LOCAL_ADS_SEARCH_CREATIVE`. See [`CreativeType`](creativetype.md). Immutable after creation.
 - `creativeSpec` (Creative.CreativeSpec): Pre-tap ad experience specification with customizable attributes and assets. Contains data used to render the ad before user interaction. Empty for Product Page ad creatives (`CUSTOM_PRODUCT_PAGE` or `DEFAULT_PRODUCT_PAGE`) since pre-tap isn’t customizable. For `LOCAL_ADS_SEARCH_CREATIVE` the `creativeSpec` carries the Apple Maps ad creative spec (brand ID, asset references, and localized text). Not every sub-field within `creativeSpec` is mutable. Partially mutable.
-- `destination` (Creative.Destination): Post-tap destination entity (embedded). Defines where users go after tapping the ad (for example, App Store product page). See [`Creative.Destination`](creative/destination-data.dictionary.md). Immutable after creation.
+- `destination` (Creative.Destination): Post-tap destination entity (embedded). Defines where users go after tapping the ad (for example, App Store product page). See [`Destination`](destination.md). Immutable after creation.
 - `systemStatus` (Creative.SystemStatus): System validation status. Possible values: `VALID`, `INVALID`, `PENDING`. Read-only.
 - `systemStatusReasons` ([Creative.SystemStatusReasons]): Reasons for system status. Read-only.
 - `creationTime` (date-time): Creation timestamp. Read-only.

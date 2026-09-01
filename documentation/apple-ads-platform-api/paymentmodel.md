@@ -6,7 +6,7 @@
 Enumeration of billing models that determine payment method and budget availability for an ad account.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

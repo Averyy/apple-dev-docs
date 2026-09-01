@@ -6,7 +6,7 @@
 Wraps the array of Brands keyword report rows along with a grand-total summary.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

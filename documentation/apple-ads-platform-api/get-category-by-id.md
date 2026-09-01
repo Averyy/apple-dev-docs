@@ -6,7 +6,7 @@
 Retrieve a single business category by its identifier.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 The geographic granularity (dimension) of a geo entity, from country down to postal code.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Reasons that can cause an ad group’s system status to be `NOT_RUNNING`.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

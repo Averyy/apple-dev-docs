@@ -6,7 +6,7 @@
 Create a new keyword in an ad group, setting the match type and optional bid amount.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

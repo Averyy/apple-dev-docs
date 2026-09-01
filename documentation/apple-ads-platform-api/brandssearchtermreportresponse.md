@@ -6,7 +6,7 @@
 The top-level response envelope for brands search term reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -63,7 +63,7 @@ Like all search term reports, `brands` search term reports require the ORTZ time
 
 ## Properties
 
-- `result` (BrandsSearchTermResultContainer): See [`BrandsSearchTermResultContainer`](brandssearchtermresultcontainer.md) for details.
+- `result` (BrandsSearchTermResultContainer): If no rows match the request, `result` is returned as an empty object. See [`BrandsSearchTermResultContainer`](brandssearchtermresultcontainer.md) for details.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

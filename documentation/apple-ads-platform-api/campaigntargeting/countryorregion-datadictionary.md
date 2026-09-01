@@ -6,7 +6,7 @@
 The countries or regions where a campaign’s ads are eligible to serve.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Return the user ID and organization ID of the authenticated API caller.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

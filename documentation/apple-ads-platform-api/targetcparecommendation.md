@@ -6,7 +6,7 @@
 A target CPA recommendation for a campaign using a Maximize Conversions bid strategy.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

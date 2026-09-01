@@ -6,7 +6,7 @@
 Invoice billing details for accounts on the Line of Credit (LOC) payment model.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

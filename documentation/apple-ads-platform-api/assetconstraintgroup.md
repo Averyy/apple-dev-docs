@@ -6,7 +6,7 @@
 A constraint group defining the supply placements and countries or regions where an asset is blocked or allowed to serve.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

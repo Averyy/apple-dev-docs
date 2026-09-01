@@ -6,7 +6,7 @@
 Common response envelope fields shared by all change history response objects.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

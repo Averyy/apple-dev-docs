@@ -6,7 +6,7 @@
 How a location group’s membership is composed: dynamically via rules, or as a static, explicit list.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

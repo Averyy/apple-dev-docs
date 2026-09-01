@@ -5,6 +5,9 @@
 
 The response object describing an app’s eligibility for a specific supply placement, supply source, country or region, and device class.
 
+**Availability**:
+- Apple Ads Platform API 1.0+
+
 ## Declaration
 
 ```swift

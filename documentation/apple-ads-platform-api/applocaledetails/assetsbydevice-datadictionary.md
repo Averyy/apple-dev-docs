@@ -6,7 +6,7 @@
 Map of device type to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

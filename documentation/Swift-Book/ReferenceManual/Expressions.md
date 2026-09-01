@@ -1206,7 +1206,7 @@ and the value is captured with the specified strength.
 For example:
 
 ```swift
-// Weak capture of "self.parent" as "parent"
+// Weak capture of "self.parent" as "parent".
 myFunction { [weak parent = self.parent] in print(parent!.title) }
 ```
 
@@ -1219,7 +1219,7 @@ myFunction { [weak parent = self.parent] in print(parent!.title) }
   >> class C {
   >> let parent = P()
   >> func method() {
-  // Weak capture of "self.parent" as "parent"
+  // Weak capture of "self.parent" as "parent".
   -> myFunction { [weak parent = self.parent] in print(parent!.title) }
   >> } }
   >> C().method()

@@ -6,7 +6,7 @@
 System-evaluated delivery state indicating whether a campaign is currently running.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

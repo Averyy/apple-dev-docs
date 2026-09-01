@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-08-25T08:34:51.708177",
+    "last_updated": "2026-09-01T08:35:53.095801",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -37,7 +37,7 @@
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/AboutTheLanguageReference.md": "a8f697ca399b79642cb724de1512fe439ff3878054515abe36e5f77a8d0f7a8c",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Attributes.md": "0921ac0d2b7c2403614fe7245ff36c410a9ec175837dcba39e5de5df61ac2389",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Declarations.md": "f70bba7c13d968d0dcb372f51f3bd55518e4d40efc917248ec98c17d37821fb7",
-    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Expressions.md": "6f09949cb5d8b8807a3097a6f22919e026df5bc7a97485e884cc01b72b08a329",
+    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Expressions.md": "a3b9d8cdda97582544293e0551d8eb97d2ed3731016b570d8d82062c2ddedf44",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/GenericParametersAndArguments.md": "bd8bdf972a825fecf1c6180c94ae108a7ffe66c8d16c925faacc94733181f636",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/LexicalStructure.md": "1c81943f9b2a776aff04e470c437f22acf07a16986db76ec3473477107325d6f",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Patterns.md": "89002b2c5e02f6aa8e177f48e41aa1f6b7205648c35053b15cd3ce4a65328067",

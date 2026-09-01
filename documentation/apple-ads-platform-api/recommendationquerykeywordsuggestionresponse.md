@@ -6,7 +6,7 @@
 Response envelope returned by the keyword suggestions query endpoint, containing suggested keywords.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

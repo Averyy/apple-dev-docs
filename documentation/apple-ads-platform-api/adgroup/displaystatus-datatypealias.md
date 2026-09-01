@@ -6,7 +6,7 @@
 Derived display status for an ad group, combining advertiser-set status with system status.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

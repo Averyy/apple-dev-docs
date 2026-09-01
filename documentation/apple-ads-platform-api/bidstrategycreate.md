@@ -6,7 +6,7 @@
 The creation payload for configuring a bid strategy on an ad group or campaign.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -46,8 +46,8 @@ For manual CPT strategies, set `bidStrategyType` to `MANUAL_CPT` and supply a `b
 ## Properties
 
 - `bid` (Money): The bid amount for this bid strategy. See [`Money`](money.md).
-- `bidStrategyGoal` (BidStrategyCreate.BidStrategyGoal): The optimization goal for the bid strategy. Must match `bidStrategyType` per [`BidStrategy`](bidstrategy.md). See [`BidStrategyCreate.BidStrategyGoal`](bidstrategycreate/bidstrategygoal-data.typealias.md). Required when `bidStrategyType` is set. Mutable after creation via [`BidStrategyUpdate`](bidstrategyupdate.md).
-- `bidStrategyType` (BidStrategyCreate.BidStrategyType): The type of bid strategy. See [`BidStrategyCreate.BidStrategyType`](bidstrategycreate/bidstrategytype-data.typealias.md). Required when `bidStrategyGoal` is set. Mutable after creation via [`BidStrategyUpdate`](bidstrategyupdate.md).
+- `bidStrategyGoal` (BidStrategyCreate.BidStrategyGoal): The optimization goal for the bid strategy. Must match `bidStrategyType` per [`BidStrategy`](bidstrategy.md). See [`BidStrategyGoal`](bidstrategygoal.md). Required when `bidStrategyType` is set. Mutable after creation via [`BidStrategyUpdate`](bidstrategyupdate.md).
+- `bidStrategyType` (BidStrategyCreate.BidStrategyType): The type of bid strategy. See [`BidStrategyType`](bidstrategytype.md). Required when `bidStrategyGoal` is set. Mutable after creation via [`BidStrategyUpdate`](bidstrategyupdate.md).
 
 ## See Also
 

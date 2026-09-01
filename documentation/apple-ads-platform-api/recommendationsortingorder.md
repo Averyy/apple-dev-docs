@@ -6,7 +6,7 @@
 The sort direction used in a recommendation sorting specification.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

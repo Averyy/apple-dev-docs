@@ -6,7 +6,7 @@
 The top-level container that defines a campaign’s promoted object, billing, scheduling, and targeting.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -132,22 +132,22 @@ Fields you can filter and sort on when querying campaigns are listed in [`Query 
 
 - `adAccountId` (int64): The ad account this campaign belongs to. Read-only.
 - `name` (string): Campaign name. Maximum 200 characters. Must be non-empty. Mutable.
-- `billingEvent` (Campaign.BillingEvent): The event type that triggers a charge (for example, `TAPS` or `IMPRESSIONS`). See [`Campaign.BillingEvent`](campaign/billingevent-data.typealias.md). Read-only.
-- `paymentModel` (Campaign.PaymentModel): The payment model for this campaign (for example, `LOC` for Line of Credit or `PAYG` for Pay As You Go). See [`Campaign.PaymentModel`](campaign/paymentmodel-data.typealias.md). System-set, Read-only.
+- `billingEvent` (Campaign.BillingEvent): The event type that triggers a charge (for example, `TAPS` or `IMPRESSIONS`). See [`BillingEvent`](billingevent.md). Read-only.
+- `paymentModel` (Campaign.PaymentModel): The payment model for this campaign (for example, `LOC` for Line of Credit or `PAYG` for Pay As You Go). See [`PaymentModel`](paymentmodel.md). System-set, Read-only.
 - `startTime` (date-time): The scheduled start date and time of the campaign. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-06-07T00:00:00.000`). Mutable.
 - `endTime` (date-time): The scheduled end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-12-31T00:00:00.000`). Omit to keep the campaign running indefinitely. Mutable.
-- `promotedObjectType` (Campaign.PromotedObjectType): Whether this campaign promotes an App Store app (`APPSTORE_APP`) or a brand (`BUSINESS_BRAND`). See [`Campaign.PromotedObjectType`](campaign/promotedobjecttype-data.typealias.md). Read-only.
+- `promotedObjectType` (Campaign.PromotedObjectType): Whether this campaign promotes an App Store app (`APPSTORE_APP`) or a brand (`BUSINESS_BRAND`). See [`PromotedObjectType`](promotedobjecttype.md). Read-only.
 - `promotedObjectId` (string): The identifier of the promoted entity: the `adamId` for App Store apps or the brand ID for Brands. Read-only.
 - `status` (Campaign.Status): Captures the advertiser’s intent for the campaign to serve. See [`CampaignStatus`](campaignstatus.md). Mutable.
 - `systemStatus` (Campaign.SystemStatus): System-computed operational status reflecting the campaign’s current serving state. See [`CampaignSystemStatus`](campaignsystemstatus.md). System-set, Read-only.
 - `systemStatusReasons` ([Campaign.SystemStatusReasons]): System-applied reasons that contribute to the current `systemStatus`. See [`CampaignSystemStatusReason`](campaignsystemstatusreason.md) for possible values. System-set, Read-only.
 - `systemStatusLimitingReasons` ([Campaign.SystemStatusLimitingReasons]): System-applied reasons that limit delivery below maximum potential. See [`CampaignSystemLimitedStatusReason`](campaignsystemlimitedstatusreason.md) for possible values. System-set, Read-only.
 - `displayStatus` (Campaign.DisplayStatus): System-computed, rolled-up delivery state combining `status` and `systemStatus` into a single user-facing label. See [`CampaignDisplayStatus`](campaigndisplaystatus.md). System-set, Read-only.
-- `dailyBudget` (Campaign.DailyBudget): The required daily spend cap for this campaign. Limits spending each calendar day, independent of any shared budget assignments. See [`Campaign.DailyBudget`](campaign/dailybudget-data.dictionary.md). Mutable.
+- `dailyBudget` (Campaign.DailyBudget): The required daily spend cap for this campaign. Limits spending each calendar day, independent of any shared budget assignments. See [`DailyBudget`](dailybudget.md). Mutable.
 - `sharedBudgets` ([SharedBudgetAssignment]): One or more budget orders assigned to this campaign. Each assignment enforces a flight-period spending cap defined by the budget order’s `startTime` and `endTime`. A campaign must have a `dailyBudget` and may also have one or more shared budget assignments. See [`SharedBudgetAssignment`](sharedbudgetassignment.md). Mutable.
 - `targeting` (Campaign.Targeting): Country or region, supply source, and placement targeting configuration for this campaign. See [`CampaignTargeting`](campaigntargeting.md). Mutable.
-- `bidStrategy` (Campaign.BidStrategy): The bid strategy governing how this campaign competes in auctions. See [`Campaign.BidStrategy`](campaign/bidstrategy-data.dictionary.md). Mutable.
-- `invoiceDetail` (Campaign.InvoiceDetail): Invoice and billing contact details. Required for Line of Credit accounts. See [`Campaign.InvoiceDetail`](campaign/invoicedetail-data.dictionary.md). Mutable.
+- `bidStrategy` (Campaign.BidStrategy): The bid strategy governing how this campaign competes in auctions. See [`BidStrategy`](bidstrategy.md). Mutable.
+- `invoiceDetail` (Campaign.InvoiceDetail): Invoice and billing contact details. Required for Line of Credit accounts. See [`InvoiceDetail`](invoicedetail.md). Mutable.
 - `regulationResponses` ([RegulationResponse]): Regulatory consent acknowledgments required in certain markets. See [`RegulationResponse`](regulationresponse.md). Mutable.
 - `id` (int64): System-assigned unique identifier for this campaign. System-set, Read-only.
 - `creationTime` (date-time): Timestamp when this campaign was created (ISO 8601). System-set, Read-only.

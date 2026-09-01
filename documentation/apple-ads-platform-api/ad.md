@@ -6,7 +6,7 @@
 Ad entity that links an ad creative to an ad group for serving.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

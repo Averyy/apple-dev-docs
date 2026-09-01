@@ -6,7 +6,7 @@
 Soft-delete a campaign by its unique identifier, cascading to its ad groups, keywords, and ads.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

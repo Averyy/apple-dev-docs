@@ -6,7 +6,7 @@
 The request body for updating a bid strategy on an ad group or campaign.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

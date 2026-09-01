@@ -6,7 +6,7 @@
 A reason code explaining why an ad creative isn’t valid or is pending review.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

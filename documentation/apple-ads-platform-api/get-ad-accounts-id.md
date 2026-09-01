@@ -6,7 +6,7 @@
 Retrieve the full details of a specific ad account by its ID.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

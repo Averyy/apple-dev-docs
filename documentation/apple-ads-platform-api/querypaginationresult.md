@@ -6,7 +6,7 @@
 Pagination metadata returned in query responses, including page size, offset, and optional total count.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

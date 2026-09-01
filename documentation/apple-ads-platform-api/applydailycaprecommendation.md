@@ -6,7 +6,7 @@
 Request object for applying or dismissing a daily budget recommendation.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

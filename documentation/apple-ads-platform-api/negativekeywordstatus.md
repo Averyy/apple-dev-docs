@@ -6,7 +6,7 @@
 Advertiser-configurable active state for a negative keyword.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

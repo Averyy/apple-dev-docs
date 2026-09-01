@@ -6,7 +6,7 @@
 Retrieve the advertiser resources available to your organization, filtered by resource type.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

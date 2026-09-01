@@ -6,7 +6,7 @@
 Rolled-up delivery state for a keyword, combining advertiser settings and parent entity status.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

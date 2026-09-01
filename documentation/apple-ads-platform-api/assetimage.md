@@ -6,7 +6,7 @@
 Image-specific asset detail fields.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

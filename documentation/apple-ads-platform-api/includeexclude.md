@@ -6,7 +6,7 @@
 Targeting criteria object specifying values to include or exclude in ad delivery.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

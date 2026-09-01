@@ -6,7 +6,7 @@
 The supply sources and placements where this ad creative is eligible to serve.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

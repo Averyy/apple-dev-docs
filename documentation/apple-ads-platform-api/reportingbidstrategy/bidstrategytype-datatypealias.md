@@ -6,7 +6,7 @@
 Auction participation approach applied to the campaign or ad group at report time.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

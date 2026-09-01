@@ -6,7 +6,7 @@
 Specifies where an ad sends users after they tap it.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

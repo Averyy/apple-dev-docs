@@ -6,7 +6,7 @@
 The grand-total metrics aggregated across all rows in an Apps ad-level report.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

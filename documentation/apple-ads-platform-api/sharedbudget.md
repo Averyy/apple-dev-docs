@@ -6,7 +6,7 @@
 A budget order.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -71,7 +71,7 @@ The `systemStatus` field reflects whether the budget is currently usable. Common
 - `orgId` (int64): The identifier of the organization that owns this budget order. Read-only.
 - `systemStatus` (SharedBudget.SystemStatus): Current system status of this budget order. See [`BudgetSystemStatus`](budgetsystemstatus.md). Read-only.
 - `systemStatusReasons` ([SharedBudget.SystemStatusReasons]): Status reasons applied based on system factors. Values: `CANCELED`, `CAMPAIGN_BUDGET_UNASSIGNED`, `DELETED_BY_USER`, `EXHAUSTED`, `PROCESSING`, `SCHEDULE_EXPIRED`, `SCHEDULE_PENDING`. Read-only.
-- `invoiceDetail` (SharedBudget.InvoiceDetail): Invoice details required on create for Line of Credit accounts. Required fields: `name`, `primaryBuyerName`, `primaryBuyerEmail`, `billingEmail`. `clientName` and `orderNumber` are optional and nullable. See [`SharedBudget.InvoiceDetail`](sharedbudget/invoicedetail-data.dictionary.md). Mutable.
+- `invoiceDetail` (SharedBudget.InvoiceDetail): Invoice details required on create for Line of Credit accounts. Required fields: `name`, `primaryBuyerName`, `primaryBuyerEmail`, `billingEmail`. `clientName` and `orderNumber` are optional and nullable. See [`InvoiceDetail`](invoicedetail.md). Mutable.
 - `id` (int64): The unique budget identifier. Read-only.
 - `creationTime` (date-time): Timestamp when the budget was created. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Read-only.

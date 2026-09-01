@@ -6,7 +6,7 @@
 A monetary amount with currency used throughout the Recommendations and Suggestions APIs.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

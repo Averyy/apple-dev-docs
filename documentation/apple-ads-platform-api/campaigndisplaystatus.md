@@ -6,7 +6,7 @@
 Rolled-up delivery state for a campaign, combining advertiser settings and system conditions into a single user-facing label.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

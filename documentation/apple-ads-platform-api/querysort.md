@@ -6,7 +6,7 @@
 A sort directive in a query request, specifying a field and direction.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

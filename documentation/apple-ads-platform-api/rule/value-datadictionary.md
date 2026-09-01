@@ -6,7 +6,7 @@
 The comparison value for a targeting rule, as either a single string or an array of strings.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

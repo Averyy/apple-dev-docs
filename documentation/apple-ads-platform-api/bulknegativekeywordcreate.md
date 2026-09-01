@@ -6,7 +6,7 @@
 The `data` payload for a single negative-keyword-create item within a bulk create request.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

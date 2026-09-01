@@ -6,7 +6,7 @@
 The supply source context (App Store or Apple Maps) used to scope a geo location search.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

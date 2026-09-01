@@ -6,7 +6,7 @@
 A single error detail entry describing one part of a failed change history request.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The top-level response envelope for brands keyword-level reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -105,7 +105,7 @@ The `brands` keyword reports exclude both `supplyPlacement` and `locationId` fro
 
 ## Properties
 
-- `result` (BrandsKeywordResultContainer): Wraps the report rows, each containing keyword metadata and associated `brands` performance metrics. See [`BrandsKeywordResultContainer`](brandskeywordresultcontainer.md) for details.
+- `result` (BrandsKeywordResultContainer): Wraps the report rows, each containing keyword metadata and associated `brands` performance metrics. If no rows match the request, `result` is returned as an empty object. See [`BrandsKeywordResultContainer`](brandskeywordresultcontainer.md) for details.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

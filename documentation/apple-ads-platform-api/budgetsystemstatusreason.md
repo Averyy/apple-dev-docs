@@ -6,7 +6,7 @@
 A reason code that explains why a budget or budget order has its current system status.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

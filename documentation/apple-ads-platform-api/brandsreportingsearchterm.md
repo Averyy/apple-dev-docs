@@ -6,7 +6,7 @@
 Search term metadata for brands report rows, extending the base reporting search term with brands-only internal fields.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

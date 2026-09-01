@@ -6,7 +6,7 @@
 The request body for updating an existing Campaign object.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -107,7 +107,7 @@ To pause (`PAUSED`) or resume (`ENABLED`) delivery without deleting the campaign
 - `dailyBudget` (CampaignUpdate.DailyBudget): The daily spend cap for this campaign. See [`DailyBudgetUpdate`](dailybudgetupdate.md). Mutable.
 - `sharedBudgets` ([SharedBudgetAssignmentUpdate]): One or more budget order assignments for this campaign. See [`SharedBudgetAssignmentUpdate`](sharedbudgetassignmentupdate.md). Mutable.
 - `targeting` (CampaignUpdate.Targeting): Country or region, supply source, and placement targeting for this campaign. Mutable.
-- `bidStrategy` (CampaignUpdate.BidStrategy): The bid strategy governing how this campaign competes in auctions. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in [`CampaignUpdate.BidStrategy`](campaignupdate/bidstrategy-data.dictionary.md). See [`BidStrategyUpdate`](bidstrategyupdate.md). Mutable.
+- `bidStrategy` (CampaignUpdate.BidStrategy): The bid strategy governing how this campaign competes in auctions. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in [`BidStrategy`](bidstrategy.md). See [`BidStrategyUpdate`](bidstrategyupdate.md). Mutable.
 - `invoiceDetail` (CampaignUpdate.InvoiceDetail): Invoice and billing contact details for Line of Credit accounts. Mutable.
 - `regulationResponses` ([RegulationResponseUpdate]): Regulatory consent acknowledgments required in certain markets. See [`RegulationResponseUpdate`](regulationresponseupdate.md). Mutable.
 

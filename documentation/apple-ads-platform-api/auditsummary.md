@@ -6,7 +6,7 @@
 One row in the query change history response, grouping a single actor’s entity changes in one transaction by entity type and event type.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

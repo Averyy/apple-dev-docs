@@ -6,7 +6,7 @@
 Create a new ad group within a campaign, defining targeting, bid strategy, and scheduling for a set of ads.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

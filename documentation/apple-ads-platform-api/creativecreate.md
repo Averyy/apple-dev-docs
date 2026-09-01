@@ -6,7 +6,7 @@
 The request body for creating a new Creative object.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -51,7 +51,7 @@ Pick `creativeType` before filling in `creativeSpec` and `destination`, since it
 ## Properties
 
 - `name` (string) *(required)*: Name of the ad creative.
-- `creativeType` (CreativeCreate.CreativeType) *(required)*: Type of ad creative. Determines the shape of `creativeSpec`. Immutable after creation. Possible values: `CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`, `LOCAL_ADS_SEARCH_CREATIVE`. See [`CreativeCreate.CreativeType`](creativecreate/creativetype-data.typealias.md).
+- `creativeType` (CreativeCreate.CreativeType) *(required)*: Type of ad creative. Determines the shape of `creativeSpec`. Immutable after creation. Possible values: `CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE`, `LOCAL_ADS_SEARCH_CREATIVE`. See [`CreativeType`](creativetype.md).
 - `creativeSpec` (CreativeCreate.CreativeSpec): Provide the matching spec object for the ad creative type being created. Required when `creativeType` is `LOCAL_ADS_SEARCH_CREATIVE`. See [`CreativeCreate.CreativeSpec`](creativecreate/creativespec-data.dictionary.md).
 - `destination` (CreativeCreate.Destination) *(required)*: The post-tap landing experience. For App Store placements, include `adamId` in `destination.parameters`. For Custom Product Page campaigns, also include `productPageId`. See [`DestinationCreate`](destinationcreate.md).
 

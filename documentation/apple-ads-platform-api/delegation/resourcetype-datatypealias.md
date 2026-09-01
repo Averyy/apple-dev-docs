@@ -6,7 +6,7 @@
 The type of the linked resource: `CONTENT_PROVIDER` or `BUSINESS_BRAND`.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

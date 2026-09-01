@@ -6,7 +6,7 @@
 The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

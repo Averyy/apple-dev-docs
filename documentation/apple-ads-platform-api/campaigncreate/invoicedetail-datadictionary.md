@@ -6,7 +6,7 @@
 Invoice billing contact details supplied when creating a campaign or budget order.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

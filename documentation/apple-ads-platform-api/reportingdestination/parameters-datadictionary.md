@@ -6,7 +6,7 @@
 Destination-specific parameters for the creative’s post-tap experience, as recorded at report time.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

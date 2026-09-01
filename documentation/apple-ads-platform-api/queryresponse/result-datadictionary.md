@@ -6,7 +6,7 @@
 The untyped placeholder item shape for the base `QueryResponse` envelope’s `result` array.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

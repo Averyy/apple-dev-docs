@@ -6,7 +6,7 @@
 A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

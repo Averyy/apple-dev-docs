@@ -5,7 +5,7 @@
 Request, response, and data objects for managing keywords in ad group campaigns.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Topics
 

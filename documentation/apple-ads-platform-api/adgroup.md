@@ -6,7 +6,7 @@
 Primary unit governing targeting, bid strategy, pricing model, and scheduling within a campaign.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -105,7 +105,7 @@ Fields you can filter and sort on when querying ad groups are listed in [`Query 
 - `campaignId` (int64): The campaign this ad group belongs to. Immutable after creation.
 - `startTime` (date-time): Ad group schedule start time. ISO 8601 format, for example `2025-09-01T00:00:00.000`. Mutable.
 - `endTime` (date-time): Ad group schedule end time. ISO 8601 format, for example `2025-12-31T23:59:59.000`. Mutable.
-- `pricingModel` (AdGroup.PricingModel): The pricing model for this ad group. Values: `CPA`, `CPM`, `CPT`. See [`AdGroup.PricingModel`](adgroup/pricingmodel-data.typealias.md). Immutable after creation. Must match the parent campaign’s billing event.
+- `pricingModel` (AdGroup.PricingModel): The pricing model for this ad group. Values: `CPA`, `CPM`, `CPT`. See [`PricingModel`](pricingmodel.md). Immutable after creation. Must match the parent campaign’s billing event.
 - `automatedKeywordsOptIn` (boolean): Opt in to Search Match, which automatically matches search terms without requiring explicit keywords. Mutable.
 - `status` (AdGroup.Status): Advertiser-configurable status for this ad group. See [`AdGroupStatus`](adgroupstatus.md). Mutable.
 - `systemStatus` (AdGroup.SystemStatus): System-computed operational status reflecting the ad group’s current serving state. See [`AdGroupSystemStatus`](adgroupsystemstatus.md). Read-only.
@@ -113,7 +113,7 @@ Fields you can filter and sort on when querying ad groups are listed in [`Query 
 - `systemStatusLimitingReasons` ([AdGroup.SystemStatusLimitingReasons]): System-applied reasons that limit delivery below maximum potential. See [`AdGroupSystemLimitedStatusReason`](adgroupsystemlimitedstatusreason.md) for details. Read-only.
 - `automatedKeywordsRequired` (boolean): Auto keyword generation required. Immutable after creation.
 - `displayStatus` (AdGroup.DisplayStatus): System-computed, rolled-up delivery state combining `status` and `systemStatus` into a single delivery label, more intuitive than a binary running-or-not-running signal. See [`AdGroupDisplayStatus`](adgroupdisplaystatus.md). Read-only.
-- `bidStrategy` (AdGroup.BidStrategy): The bid strategy for this ad group. If omitted, the campaign-level bid strategy applies. See [`AdGroup.BidStrategy`](adgroup/bidstrategy-data.dictionary.md). Mutable.
+- `bidStrategy` (AdGroup.BidStrategy): The bid strategy for this ad group. If omitted, the campaign-level bid strategy applies. See [`BidStrategy`](bidstrategy.md). Mutable.
 - `targeting` (AdGroup.Targeting): Targeting configuration for this ad group. See [`AdGroupTargeting`](adgrouptargeting.md). Mutable.
 - `id` (int64): The unique identifier for this ad group. Read-only.
 - `creationTime` (date-time): Timestamp when the ad group was created. Read-only.

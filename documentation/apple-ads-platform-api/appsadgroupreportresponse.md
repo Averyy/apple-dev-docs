@@ -6,7 +6,7 @@
 The top-level response envelope for apps ad group reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -81,7 +81,7 @@ Check for the presence of `error` before processing `result` to handle failure c
 
 ## Properties
 
-- `result` (AppsAdGroupResultContainer): Wraps the array of report rows. See [`AppsAdGroupResultContainer`](appsadgroupresultcontainer.md) for details.
+- `result` (AppsAdGroupResultContainer): Wraps the array of report rows. If no rows match the request, `result` is returned as an empty object. See [`AppsAdGroupResultContainer`](appsadgroupresultcontainer.md) for details.
 - `pagination` (ResponsePagination): Pagination metadata to support paging through large result sets. See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): Populated with an `ErrorResponse` when the request fails or partially fails. See [`ErrorResponse`](errorresponse.md) for details.
 

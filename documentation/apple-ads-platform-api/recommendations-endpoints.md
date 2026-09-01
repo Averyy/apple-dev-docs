@@ -5,7 +5,7 @@
 Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Overview
 

@@ -6,7 +6,7 @@
 Soft-delete a keyword by ID, setting its deleted field to true and stopping bids on that term.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

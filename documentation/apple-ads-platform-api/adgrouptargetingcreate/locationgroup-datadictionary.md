@@ -6,7 +6,7 @@
 Location group targeting, restricting delivery to the business locations in specified groups.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

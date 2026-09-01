@@ -6,7 +6,7 @@
 The top-level response envelope for brands ad group reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -77,7 +77,7 @@ The `brands` ad group reports support `groupBy` dimensions `deviceClass`, `locat
 
 ## Properties
 
-- `result` (BrandsAdGroupResultContainer): Wraps the array of report rows, each containing the ad group `metadata` (including targeting configuration) and performance metrics segmented by the requested `groupBy` dimensions. See [`BrandsAdGroupResultContainer`](brandsadgroupresultcontainer.md) for details.
+- `result` (BrandsAdGroupResultContainer): Wraps the array of report rows, each containing the ad group `metadata` (including targeting configuration) and performance metrics segmented by the requested `groupBy` dimensions. If no rows match the request, `result` is returned as an empty object. See [`BrandsAdGroupResultContainer`](brandsadgroupresultcontainer.md) for details.
 - `pagination` (ResponsePagination): Returned for paging through large result sets. See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

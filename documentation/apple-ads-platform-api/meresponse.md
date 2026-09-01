@@ -6,7 +6,7 @@
 The response envelope for the Get Me Details endpoint, containing the authenticated user’s identity.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

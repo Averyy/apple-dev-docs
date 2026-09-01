@@ -6,7 +6,7 @@
 A brand eligible for promotion through Apple Maps ads.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

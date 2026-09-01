@@ -6,7 +6,7 @@
 The response envelope returned by the Get Change History Detail endpoint, wrapping an array of change detail records with pagination metadata.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

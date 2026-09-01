@@ -6,7 +6,7 @@
 Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 The currency code used for monetary values in the Apple Ads Platform API.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Destination-specific parameters supplied when creating an ad creative.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

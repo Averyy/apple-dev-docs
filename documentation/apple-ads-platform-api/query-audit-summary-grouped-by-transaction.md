@@ -6,7 +6,7 @@
 Query audit summaries grouped by transaction across a specified time range.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

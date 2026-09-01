@@ -6,7 +6,7 @@
 A reason code indicating that a campaign is running but delivering at reduced capacity.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

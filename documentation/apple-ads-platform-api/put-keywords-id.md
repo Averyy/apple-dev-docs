@@ -6,7 +6,7 @@
 Update a keyword’s bid amount or status to optimize spend and control delivery for that term.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

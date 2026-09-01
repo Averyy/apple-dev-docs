@@ -6,7 +6,7 @@
 Response envelope returned when dismissing a daily budget recommendation, containing the resulting history record(s).
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

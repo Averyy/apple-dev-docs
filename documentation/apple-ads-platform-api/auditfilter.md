@@ -6,7 +6,7 @@
 A single filter condition in an audit query request, specifying the field to filter on, the comparison operator, and one or more values to match against.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

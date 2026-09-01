@@ -6,7 +6,7 @@
 Enumeration of change operation types in change history, used in audit summary objects, change detail objects, and query filters.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

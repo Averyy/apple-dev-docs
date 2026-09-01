@@ -6,7 +6,7 @@
 Links an ad account to an external advertiser resource, such as a content provider or brand.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

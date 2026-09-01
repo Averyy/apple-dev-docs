@@ -6,7 +6,7 @@
 An object (string-to-string map) with additional structured context for a specific validation failure.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

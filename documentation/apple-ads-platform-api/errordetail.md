@@ -6,7 +6,7 @@
 Field-level or request-level detail for a specific part of a failed API request.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

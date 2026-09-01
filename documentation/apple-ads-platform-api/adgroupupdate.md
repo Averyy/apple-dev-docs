@@ -6,7 +6,7 @@
 The request body for updating an existing ad group.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -78,7 +78,7 @@ To manage keywords and negative keywords, use the dedicated keyword endpoints.
 - `automatedKeywordsOptIn` (boolean): Opt in to Search Match, which automatically matches search terms without requiring explicit keywords. Mutable.
 - `status` (AdGroupUpdate.Status): Advertiser-configurable serving status. Use to pause (`PAUSED`) or resume (`ENABLED`) this ad group. See [`AdGroupStatus`](adgroupstatus.md). Mutable.
 - `automatedKeywordsRequired` (boolean): Immutable. Set at creation via `AdGroupCreate`. Any value sent here is ignored.
-- `bidStrategy` (AdGroupUpdate.BidStrategy): The bid strategy for this ad group. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in [`AdGroupUpdate.BidStrategy`](adgroupupdate/bidstrategy-data.dictionary.md). See [`AdGroupUpdate.BidStrategy`](adgroupupdate/bidstrategy-data.dictionary.md) and [`BidStrategyUpdate`](bidstrategyupdate.md). Mutable.
+- `bidStrategy` (AdGroupUpdate.BidStrategy): The bid strategy for this ad group. `bidStrategyType` and `bidStrategyGoal` must be sent together and matched per the pairings in [`BidStrategy`](bidstrategy.md). See [`AdGroupUpdate.BidStrategy`](adgroupupdate/bidstrategy-data.dictionary.md) and [`BidStrategyUpdate`](bidstrategyupdate.md). Mutable.
 - `targeting` (AdGroupUpdate.Targeting): Audience and placement targeting configuration for this ad group. See [`AdGroupTargetingUpdate`](adgrouptargetingupdate.md). Mutable.
 - `cpaCap` (AdGroupUpdate.CpaCap): Deprecated. Still accepted on update for backward compatibility, but use `bidStrategy` with `MAX_CONVERSIONS` instead. See [`CPAGoalUpdate`](cpagoalupdate.md).
 

@@ -6,7 +6,7 @@
 Create a named group of locations for geographic targeting.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

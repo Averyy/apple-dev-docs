@@ -6,7 +6,7 @@
 The creative spec fields that can be updated after creation.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

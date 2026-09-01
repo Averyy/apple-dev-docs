@@ -6,7 +6,7 @@
 Auction participation approach controlling how an ad group or campaign sets and adjusts bids.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

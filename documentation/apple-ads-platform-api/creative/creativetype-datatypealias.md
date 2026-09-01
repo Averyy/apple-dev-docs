@@ -6,7 +6,7 @@
 Type of ad creative, determining which ad placements it can serve on.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

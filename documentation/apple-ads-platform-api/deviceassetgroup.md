@@ -6,7 +6,7 @@
 Represents assets organized by device type with fallback device information.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

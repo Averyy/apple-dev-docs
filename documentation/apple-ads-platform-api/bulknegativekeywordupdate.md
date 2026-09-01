@@ -6,7 +6,7 @@
 The `data` payload for a single negative-keyword-update item within a bulk update request, identifying the record by `id`.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

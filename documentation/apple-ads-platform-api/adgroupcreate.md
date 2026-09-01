@@ -6,7 +6,7 @@
 The request body for creating a new ad group.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -86,7 +86,7 @@ You can’t create keywords or negative keywords inline. Create the ad group fir
 - `campaignId` (int64) *(required)*: The campaign this ad group belongs to. Immutable after creation.
 - `startTime` (date-time): The scheduled start date and time of this ad group in ISO 8601 format.
 - `endTime` (date-time): The scheduled end date and time. Omit to inherit the campaign end date.
-- `pricingModel` (AdGroupCreate.PricingModel) *(required)*: The pricing model for this ad group (`CPA`, `CPM`, or `CPT`). Must match the campaign’s billing event: `CPT` pairs with `billingEvent: TAPS`, `CPM` pairs with `billingEvent: IMPRESSIONS`. See [`AdGroupCreate.PricingModel`](adgroupcreate/pricingmodel-data.typealias.md). Immutable after creation.
+- `pricingModel` (AdGroupCreate.PricingModel) *(required)*: The pricing model for this ad group (`CPA`, `CPM`, or `CPT`). Must match the campaign’s billing event: `CPT` pairs with `billingEvent: TAPS`, `CPM` pairs with `billingEvent: IMPRESSIONS`. See [`PricingModel`](pricingmodel.md). Immutable after creation.
 - `automatedKeywordsOptIn` (boolean): Auto opt-in for Search Match. When enabled, the system automatically targets additional relevant search terms beyond the explicit keyword list.
 - `status` (AdGroupCreate.Status): Advertiser-configurable serving status. No default is applied when this field is omitted. See [`AdGroupStatus`](adgroupstatus.md).
 - `automatedKeywordsRequired` (boolean): Whether automated keyword generation is required for this ad group.

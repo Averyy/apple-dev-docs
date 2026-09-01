@@ -6,7 +6,7 @@
 A keyword exclusion that prevents ads from showing when a search query matches the excluded term.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

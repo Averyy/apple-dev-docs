@@ -5,7 +5,7 @@
 Response objects for keyword, phrase, category, and Target CPA suggestion endpoints.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Topics
 

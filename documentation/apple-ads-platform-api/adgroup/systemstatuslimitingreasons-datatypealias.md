@@ -6,7 +6,7 @@
 Reasons that limit delivery for an ad group without fully stopping it.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

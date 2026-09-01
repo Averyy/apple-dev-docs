@@ -6,7 +6,7 @@
 A single row in a Brands (Apple Maps) ad group report, pairing ad group metadata with total and granular performance metrics.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

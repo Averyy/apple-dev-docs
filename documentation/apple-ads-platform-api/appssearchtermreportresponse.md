@@ -6,7 +6,7 @@
 The top-level response envelope for apps search term reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -157,7 +157,7 @@ Search term reports require the ORTZ timezone. UTC isn’t supported. Each row l
 
 ## Properties
 
-- `result` (AppsSearchTermResultContainer): Contains the array of search term rows, each capturing the actual user query text and associated performance metrics. See [`AppsSearchTermResultContainer`](appssearchtermresultcontainer.md) for details.
+- `result` (AppsSearchTermResultContainer): Contains the array of search term rows, each capturing the actual user query text and associated performance metrics. If no rows match the request, `result` is returned as an empty object. See [`AppsSearchTermResultContainer`](appssearchtermresultcontainer.md) for details.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): See [`ErrorResponse`](errorresponse.md) for details.
 

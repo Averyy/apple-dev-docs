@@ -6,7 +6,7 @@
 A single row in an Apps search term report, pairing search-term metadata with total and granular performance metrics.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

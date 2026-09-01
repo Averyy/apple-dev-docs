@@ -6,7 +6,7 @@
 The top-level response envelope for apps campaign-level reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -116,7 +116,7 @@ Each row nests campaign `metadata` alongside `totalMetrics` for the full date ra
 
 ## Properties
 
-- `result` (AppsCampaignResultContainer): Wraps the array of report rows, each including campaign `metadata`, `totalMetrics`, and `granularMetrics`. See [`AppsCampaignResultContainer`](appscampaignresultcontainer.md) for details.
+- `result` (AppsCampaignResultContainer): Wraps the array of report rows, each including campaign `metadata`, `totalMetrics`, and `granularMetrics`. If no rows match the request, `result` is returned as an empty object. See [`AppsCampaignResultContainer`](appscampaignresultcontainer.md) for details.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): Populated with an `ErrorResponse` describing the failure when the request fails. See [`ErrorResponse`](errorresponse.md) for details.
 

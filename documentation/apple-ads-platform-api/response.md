@@ -6,7 +6,7 @@
 Base response wrapper used by all response types.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

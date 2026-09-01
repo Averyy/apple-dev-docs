@@ -6,7 +6,7 @@
 An array of per-entity metadata entries, populated when the request includes metadata options.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

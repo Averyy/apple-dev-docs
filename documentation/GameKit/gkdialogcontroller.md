@@ -72,6 +72,8 @@ func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterV
 - [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
 - [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -6,7 +6,7 @@
 The result object returned when querying user ACL entries, containing the list of ad account access records.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

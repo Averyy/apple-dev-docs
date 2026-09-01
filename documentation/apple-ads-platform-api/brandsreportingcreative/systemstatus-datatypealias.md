@@ -6,7 +6,7 @@
 System-evaluated validation state of the creative at report time.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A single policy assignment with rejection reason details for a brand entity.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

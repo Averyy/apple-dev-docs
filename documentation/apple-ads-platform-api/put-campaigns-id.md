@@ -6,7 +6,7 @@
 Update a campaign’s name, status, budget, targeting, or bid strategy.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 App supported and default languages for an App Store country or region.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

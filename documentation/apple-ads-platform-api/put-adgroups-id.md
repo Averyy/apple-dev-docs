@@ -6,7 +6,7 @@
 Update an existing ad group’s name, status, bid strategy, targeting, or scheduling.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

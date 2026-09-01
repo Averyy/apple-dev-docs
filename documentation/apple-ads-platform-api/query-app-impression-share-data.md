@@ -6,7 +6,7 @@
 Retrieve impression share data showing how often your ads appear relative to total eligible impressions for a given search term and country.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

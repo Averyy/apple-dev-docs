@@ -6,7 +6,7 @@
 Reports options for brands promoted object campaigns.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

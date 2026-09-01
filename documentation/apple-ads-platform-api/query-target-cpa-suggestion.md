@@ -6,7 +6,7 @@
 Retrieve the recommended target CPA for a new Maximize Conversions campaign on the App Store.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

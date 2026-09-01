@@ -6,7 +6,7 @@
 Query campaigns using filters, sorting, and pagination.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

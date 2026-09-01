@@ -6,7 +6,7 @@
 Request body for updating an existing budget order.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -53,7 +53,7 @@ The example below shows every updatable field for reference. In a real request, 
 - `endTime` (date-time): Updated budget end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Set to `null` to remove an expiration date, making the budget open-ended.
 - `value` (Money): Updated budget amount. Specify `amount` and `currency`. See [`Money`](money.md).
 - `adAccountIds` ([int64]): The ad account ID this budget order applies to. Exactly one ID is allowed, the same single-ID constraint as at creation. The API rejects requests that send more than one ID. Mutable.
-- `invoiceDetail` (SharedBudgetUpdate.InvoiceDetail): Updated billing contact details. See [`SharedBudgetUpdate.InvoiceDetail`](sharedbudgetupdate/invoicedetail-data.dictionary.md).
+- `invoiceDetail` (SharedBudgetUpdate.InvoiceDetail): Updated billing contact details. See [`InvoiceDetail`](invoicedetail.md).
 
 ## See Also
 

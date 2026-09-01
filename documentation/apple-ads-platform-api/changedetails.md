@@ -6,7 +6,7 @@
 Field-level change record for a single API entity within a transaction.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

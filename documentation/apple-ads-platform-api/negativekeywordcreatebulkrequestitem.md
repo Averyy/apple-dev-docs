@@ -6,7 +6,7 @@
 A single item in a negative-keyword bulk-create request.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

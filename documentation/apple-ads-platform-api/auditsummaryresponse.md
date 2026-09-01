@@ -6,7 +6,7 @@
 The response envelope returned by the Query Change History endpoint, wrapping an array of audit summary rows with pagination metadata.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

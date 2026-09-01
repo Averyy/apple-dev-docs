@@ -6,7 +6,7 @@
 Radius targeting used with Apple Maps campaigns to restrict delivery to users within a given proximity of the brand’s locations.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

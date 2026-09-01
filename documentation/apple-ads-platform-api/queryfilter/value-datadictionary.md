@@ -6,7 +6,7 @@
 The comparison value or values for a `QueryFilter` condition.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

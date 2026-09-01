@@ -1,4 +1,4 @@
-# iOS & iPadOS 27 Beta 7 Release Notes
+# iOS & iPadOS 27 Beta 8 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 7. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 8. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Airplay
 
@@ -423,6 +423,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Newly created RemoteMediaSession won’t be visible in control center if created while the app is open in the foreground.  (183641494)
 
+###### Known Issues
+
+- `RemoteMediaSession` and `RemoteMediaSessionRepresentable` always provision NowPlaying start and update push tokens for the `production` APNS environment, even if the `aps-environment` configuration is set to `development`.  (186036238) **Workaround:** Use the `production` environment for testing and validation
+
 ##### On Demand Resources
 
 ###### Deprecations
@@ -610,9 +614,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Status Bar
 
-###### Known Issues
+###### Resolved Issues
 
-- Status bar might appear blurred while apps are in the foreground.  (179470940) **Workaround:** Restart your iPhone.
+- Fixed: Status bar might appear blurred while apps are in the foreground.  (179470940)
 
 ##### Storekit
 

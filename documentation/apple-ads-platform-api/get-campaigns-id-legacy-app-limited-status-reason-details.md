@@ -6,7 +6,7 @@
 Return a map of country or region codes to their associated limited-status reason for legacy app campaigns.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

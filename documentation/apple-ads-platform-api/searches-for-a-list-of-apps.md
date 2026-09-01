@@ -6,7 +6,7 @@
 Search the App Store for apps matching the supplied criteria and return app details.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Query Parameters
 

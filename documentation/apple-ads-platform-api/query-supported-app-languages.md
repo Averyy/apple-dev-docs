@@ -6,7 +6,7 @@
 Query countries and regions to discover the ad-supported languages available in each market.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 The negative keyword’s status for a bulk negative-keyword create item.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

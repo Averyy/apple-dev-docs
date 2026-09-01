@@ -6,7 +6,7 @@
 The specific placement within a supply source where an existing campaign’s ads are eligible to appear.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

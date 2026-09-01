@@ -6,7 +6,7 @@
 The keyword’s match type for a bulk keyword create item.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A blocking rule that names the supply source(s) and reason code(s) restricting a geo location.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

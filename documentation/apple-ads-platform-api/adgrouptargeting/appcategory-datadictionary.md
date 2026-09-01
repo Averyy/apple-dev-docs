@@ -6,7 +6,7 @@
 App category targeting based on App Store categories, with include and exclude support.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

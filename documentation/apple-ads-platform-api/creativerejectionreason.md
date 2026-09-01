@@ -6,7 +6,7 @@
 Detailed rejection reason for an ad creative that failed Apple review.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

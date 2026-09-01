@@ -6,7 +6,7 @@
 Queries the localized content associated with a custom product page.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

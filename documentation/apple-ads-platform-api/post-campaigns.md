@@ -6,7 +6,7 @@
 Create a new advertising campaign with a promoted object, budget, targeting, and bid strategy configuration.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

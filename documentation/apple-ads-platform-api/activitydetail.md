@@ -6,7 +6,7 @@
 A group of field-level changes that occurred within a single activity context in a change details record.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

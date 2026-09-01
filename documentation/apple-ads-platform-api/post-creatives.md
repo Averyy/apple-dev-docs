@@ -6,7 +6,7 @@
 Add a new ad creative that defines the visual presentation and tap destination for an ad.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

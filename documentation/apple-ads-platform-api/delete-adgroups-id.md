@@ -6,7 +6,7 @@
 Soft-delete an ad group by its unique identifier, along with all ads and keywords associated with it.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

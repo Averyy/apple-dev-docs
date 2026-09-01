@@ -6,7 +6,7 @@
 Create a negative keyword at the campaign or ad group level to prevent ads from showing for unwanted search terms.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 #### Discussion
 

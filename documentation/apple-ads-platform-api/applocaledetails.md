@@ -6,7 +6,7 @@
 Localized content for an app’s Default Product Page.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 

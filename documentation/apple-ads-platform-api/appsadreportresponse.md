@@ -6,7 +6,7 @@
 The top-level response envelope for apps ad-level reports.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
@@ -85,7 +85,7 @@ Check for `error` before processing `result`. Note that ad-level reports don’t
 
 ## Properties
 
-- `result` (AppsAdResultContainer): Wraps the array of ad report rows, each containing ad metadata and associated metrics. See [`AppsAdResultContainer`](appsadresultcontainer.md) for details.
+- `result` (AppsAdResultContainer): Wraps the array of ad report rows, each containing ad metadata and associated metrics. If no rows match the request, `result` is returned as an empty object. See [`AppsAdResultContainer`](appsadresultcontainer.md) for details.
 - `pagination` (ResponsePagination): Allows paging through all matching ads. See [`ResponsePagination`](responsepagination.md) for details.
 - `error` (Error): Populated with an `ErrorResponse` when the request fails. See [`ErrorResponse`](errorresponse.md) for details.
 

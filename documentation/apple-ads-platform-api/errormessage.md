@@ -6,7 +6,7 @@
 Error information returned in a change history response when a request fails.
 
 **Availability**:
-- apple-ads-platform-api 1.0+
+- Apple Ads Platform API 1.0+
 
 ## Declaration
 
