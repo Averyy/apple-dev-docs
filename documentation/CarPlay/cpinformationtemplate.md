@@ -67,6 +67,8 @@ To display an information template, call your interface controller’s [`pushTem
 - [NSCoding](../foundation/nscoding.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

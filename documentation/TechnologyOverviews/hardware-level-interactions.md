@@ -42,7 +42,7 @@ When building iOS apps, remember that your app can [`Running your iOS apps in ma
 
 If you still have code that runs on Intel-based Macs, [`Porting your macOS apps to Apple silicon`](https://developer.apple.com/documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon) to run on Apple silicon. Xcode makes it easy to recompile your code for Apple silicon, but you might need to [`Addressing architectural differences in your macOS code`](https://developer.apple.com/documentation/apple-silicon/addressing-architectural-differences-in-your-macos-code) you made about the underlying hardware architecture when writing your original code.
 
-When performance is absolutely crucial, [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon) specifically for Apple silicon. Make sure you’re running the right code and taking advantage of parallel execution when you can. Review the [`Apple Silicon CPU Optimization Guide Version 4`](https://developer.apple.com/documentation/apple-silicon/cpu-optimization-guide) to make sure you’re not writing code in a way that hampers performance.
+When performance is absolutely crucial, [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon) specifically for Apple silicon. Make sure you’re running the right code and taking advantage of parallel execution when you can. Review the [`Apple Silicon CPU Optimization Guide`](https://developer.apple.com/documentation/apple-silicon/cpu-optimization-guide) to make sure you’re not writing code in a way that hampers performance.
 
 
 ---

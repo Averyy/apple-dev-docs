@@ -39,6 +39,12 @@ The iOS & iPadOS 26.6 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: `SKTestSessions` does not properly connect to the test environment when using Simulator, causing test actions to fail.  (174738526) (FB22500243)
 
+##### Updates
+
+###### Known Issues
+
+- Software updates performed over cellular will not proceed. (185768684) **Workaround:** Update using Wi-Fi or a computer.
+
 ## See Also
 
 - [iOS & iPadOS 26.5 Release Notes](ios-ipados-26_5-release-notes.md)

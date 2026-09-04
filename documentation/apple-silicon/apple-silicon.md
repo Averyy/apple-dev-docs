@@ -32,7 +32,7 @@ Getting the best performance on Apple silicon sometimes requires making adjustme
 ### Performance
 - [Tuning your code’s performance for Apple silicon](tuning-your-code-s-performance-for-apple-silicon.md)
   Improve your code to get the best performance from both Apple silicon and Intel-based Mac computers.
-- [Apple Silicon CPU Optimization Guide Version 4](cpu-optimization-guide.md)
+- [Apple Silicon CPU Optimization Guide](cpu-optimization-guide.md)
   Identify performance optimization strategies for Apple silicon M-series and A-series chips.
 ### Rosetta
 - [About the Rosetta translation environment](about-the-rosetta-translation-environment.md)

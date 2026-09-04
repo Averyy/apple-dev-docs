@@ -103,7 +103,7 @@ The CPU Counters track and Summary: Metrics view show the fraction of particular
 
 ![A screenshot of Instruments. A CPU bottleneck is highlighted in the Remarks view, and Instruments suggests how to mitigate the bottleneck.](/images/com.apple.Xcode/cpu-bottlenecks-remarks-view@2x.png)
 
-Refer to the [`Apple Silicon CPU Optimization Guide Version 4`](https://developer.apple.com/documentation/apple-silicon/cpu-optimization-guide) for more information on Apple silicon and guidance on optimizing your code.
+Refer to the [`Apple Silicon CPU Optimization Guide`](https://developer.apple.com/documentation/apple-silicon/cpu-optimization-guide) for more information on Apple silicon and guidance on optimizing your code.
 
 After you make a code change, re-run your performance tests, and use the CPU Counters instrument again to validate that your change improves your app’s processor usage.
 

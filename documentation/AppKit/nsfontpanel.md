@@ -67,8 +67,6 @@ Actual changes to the font panel are made through conversion messages sent to th
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -68,7 +68,7 @@ When scheduling asynchronous tasks for execution from an XPC message handler, Ap
 
 ## See Also
 
-- [Apple Silicon CPU Optimization Guide Version 4](cpu-optimization-guide.md)
+- [Apple Silicon CPU Optimization Guide](cpu-optimization-guide.md)
   Identify performance optimization strategies for Apple silicon M-series and A-series chips.
 
 
