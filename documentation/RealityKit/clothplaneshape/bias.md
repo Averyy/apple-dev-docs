@@ -6,9 +6,9 @@
 The distance by which the surface of the plane shape is displaced along the direction of its normal.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

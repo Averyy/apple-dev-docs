@@ -6,7 +6,7 @@
 Creates a new device configuration with spatial audio support.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

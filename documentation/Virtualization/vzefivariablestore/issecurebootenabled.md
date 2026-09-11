@@ -6,7 +6,7 @@
 A Boolean value that indicates whether Secure Boot is in an enabled state in the variable store.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

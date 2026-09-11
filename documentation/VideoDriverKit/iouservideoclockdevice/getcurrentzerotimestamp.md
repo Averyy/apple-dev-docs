@@ -3,18 +3,16 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the current zero timestamp value.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
 ```swift
 void GetCurrentZeroTimestamp(uint64_t *out_sample_time, uint64_t *out_host_time);
 ```
-
-#### Discussion
-
-Get the current zero timestamp value.
 
 ## Parameters
 
@@ -24,6 +22,7 @@ Get the current zero timestamp value.
 ## See Also
 
 - [UpdateCurrentZeroTimestamp](iouservideoclockdevice/updatecurrentzerotimestamp.md)
+  Update the current timestamp value.
 
 
 ---

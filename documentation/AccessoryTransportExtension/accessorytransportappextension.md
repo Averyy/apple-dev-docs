@@ -7,8 +7,7 @@ A protocol for an extension that transmits data to an accessory you develop.
 
 **Availability**:
 - iOS 26.2+
-- iPadOS 26.2+
-- Mac Catalyst 26.2+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -19,6 +18,7 @@ protocol AccessoryTransportAppExtension : AppExtension
 ## Mentions
 
 - [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Overview
 

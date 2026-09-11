@@ -6,7 +6,7 @@
 A Boolean value indicating whether a refresh operation is in progress.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

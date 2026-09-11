@@ -24,7 +24,7 @@ object APN.DefaultsData
 
 ## Properties
 
-- `apns` ([APN.DefaultsData.ApnsItem]) *(required)*: An array of APN dictionaries (`APN.DefaultsData.Apns`). Deprecated: iOS 7+ | iPadOS 7+
+- `apns` ([APN.DefaultsData.ApnsItem]) *(required)*: An array of APN dictionaries. Deprecated: iOS 7+ | iPadOS 7+
 
 
 ---

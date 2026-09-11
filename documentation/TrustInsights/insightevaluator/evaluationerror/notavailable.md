@@ -6,8 +6,8 @@
 An error that indicates evaluations are not available on this device.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

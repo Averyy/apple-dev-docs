@@ -6,7 +6,7 @@
 A sendable wrapper that connects a virtual machine view to a virtual machine.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

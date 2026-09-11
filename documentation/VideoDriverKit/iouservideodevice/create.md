@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+A static factory method that allocates and initializes a video device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -18,9 +20,7 @@ OSSharedPtr to an IOUserVideoDevice if it was successfully allocated and initial
 
 #### Discussion
 
-Static factory method to allocate and initialize an IOUserVideoDevice.
-
-If IOUserVideoDevice is subclassed to override behavior, Create should not be used to allocate/initialize the custom subclass.
+If IOUserVideoDevice is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 
 ## Parameters
 
@@ -32,7 +32,9 @@ If IOUserVideoDevice is subclassed to override behavior, Create should not be us
 ## See Also
 
 - [init](iouservideodevice/init.md)
+  Initializes a video device.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 
 
 ---

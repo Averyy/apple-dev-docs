@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+The system calls this virtual method when the stream’s format changes.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,22 +16,22 @@ virtual kern_return_t HandleChangeCurrentStreamFormat(const IOUserVideoStreamBas
 
 #### Return Value
 
-Returns kIOReturnSuccess on sucess. Upon sucess the stream’s format should be updated.
+`kIOReturnSuccess` on success. Upon success the stream’s format should be updated.
 
 #### Discussion
 
-Virtual method will be called when the streams format will be changed
-
-Default implementation will call SetCurrentStreamFormat() and return kIOReturnSuccess. Subclass and override this method to handle changing stream format and return kIOReturnSucess upon success.
+The default implementation calls `SetCurrentStreamFormat()` and returns `kIOReturnSuccess`. Subclass and override this method to handle changing stream format and return `kIOReturnSuccess` upon success.
 
 ## Parameters
 
-- `in_format`: Pointer to IOUserVideoStreamBasicDescription attempting to be set on the stream.
+- `in_format`: Pointer to a basic description, to be set on the stream.
 
 ## See Also
 
 - [HandleChangeStreamIsActive](iouservideostream/handlechangestreamisactive.md)
+  The system calls this virtual method when the stream active state changes.
 - [DeviceSampleRateChanged](iouservideostream/devicesampleratechanged.md)
+  Call to update stream formats when the owning video device changes sample rate
 
 
 ---

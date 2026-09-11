@@ -6,7 +6,7 @@
 Coordinate spaces are unaltered and represent actual locations.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 26.0+
 
 ## Declaration

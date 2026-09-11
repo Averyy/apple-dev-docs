@@ -6,10 +6,10 @@
 Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

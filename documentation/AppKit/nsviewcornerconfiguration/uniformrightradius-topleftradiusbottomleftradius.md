@@ -6,7 +6,7 @@
 A configuration that applies the `rightRadius` uniformly to the top-right and bottom-right corners, with optional independent radii for the top-left and bottom-left corners. When the uniform corners differ, it uses the largest of the resolved corner radii.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

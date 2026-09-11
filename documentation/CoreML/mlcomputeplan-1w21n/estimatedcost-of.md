@@ -20,6 +20,10 @@ Returns the estimated cost of executing a MLProgram operation.
 func estimatedCost(of operation: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?
 ```
 
+## Mentions
+
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+
 #### Return Value
 
 The estimated cost of executing the operation.

@@ -6,8 +6,8 @@
 An error that indicates that the app has reached the rate limit for the particular insight type.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

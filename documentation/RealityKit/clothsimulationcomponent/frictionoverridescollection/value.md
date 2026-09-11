@@ -6,9 +6,9 @@
 The combined frictions that override the frictions used between a pair of materials.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

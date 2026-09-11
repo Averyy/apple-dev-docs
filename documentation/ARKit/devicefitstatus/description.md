@@ -6,7 +6,7 @@
 A textual representation of the device fit status.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

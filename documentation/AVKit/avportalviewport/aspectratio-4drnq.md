@@ -6,7 +6,7 @@
 The width-to-height ratio of the portal frame.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

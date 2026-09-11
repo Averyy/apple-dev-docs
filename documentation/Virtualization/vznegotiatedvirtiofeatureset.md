@@ -6,7 +6,7 @@
 Values that represent a set of negotiated Virtio feature bits.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

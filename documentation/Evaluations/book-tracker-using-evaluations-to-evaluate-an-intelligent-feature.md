@@ -5,10 +5,10 @@
 Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- Xcode 27.0+
 
 #### Overview
 
@@ -515,6 +515,8 @@ Both of Book Tracker’s intelligent features now have a measurable quality chec
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 - [Designing effective evaluations](designing-effective-evaluations.md)
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
+- [Evaluating a Core AI model](evaluating-a-core-ai-model.md)
+  Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
 - [protocol Evaluation](evaluation.md)
   A type that defines an evaluation.
 

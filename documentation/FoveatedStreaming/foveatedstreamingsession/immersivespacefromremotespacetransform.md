@@ -6,7 +6,7 @@
 A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

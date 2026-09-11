@@ -6,7 +6,7 @@
 Truncate or extend the disk image to a new size.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A value that represents the Accessory Access framework’s error domain.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

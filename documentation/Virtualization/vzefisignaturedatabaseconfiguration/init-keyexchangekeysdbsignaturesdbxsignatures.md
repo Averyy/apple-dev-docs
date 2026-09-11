@@ -6,7 +6,7 @@
 Creates a signature lists container from signature list objects.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

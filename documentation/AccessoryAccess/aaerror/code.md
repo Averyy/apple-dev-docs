@@ -6,7 +6,7 @@
 Values that represent error codes that the AccessoryAccess framework returns.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

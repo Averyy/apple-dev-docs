@@ -6,7 +6,7 @@
 Creates a result for an I/O-completion operation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

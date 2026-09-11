@@ -6,7 +6,7 @@
 A message that posts after a spatial accessory disconnects from the device.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The protocol for stacked disk images that contain multiple layers.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

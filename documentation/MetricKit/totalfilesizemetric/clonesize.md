@@ -6,8 +6,8 @@
 The total size of all clone files that are attributed to your app.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

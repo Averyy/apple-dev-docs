@@ -12,6 +12,10 @@ When you launch your app on a simulated device, Device Hub opens to show the dev
 
 Device Hub surrounds the screen content with a bezel that resembles the target device. In visionOS, it displays a synthetic space to mimic the experience someone would have when they wear the device. Each device bezel and space has specific controls to support interactions.
 
+![A screenshot of Device Hub showing an iOS simulator in compact view running a sample code app.](/images/com.apple.Xcode/running-app-in-ios-simulator@2x.png)
+
+To interact with a simulated Apple Vision Pro device in Device Hub, see [`Interacting with your visionOS app in Device Hub`](interacting-with-your-visionos-app-in-device-hub.md). To take screenshots and record videos, see [`Capturing screenshots and videos from devices`](capturing-screenshots-and-videos-from-devices.md).
+
 #### Interact with Your Ios or Ipados App in the Canvas
 
 Use your Mac’s pointer, trackpad or Magic Mouse, keyboard, menu items, and buttons to make gestures on a simulated iOS or iPadOS device.
@@ -84,6 +88,8 @@ If you launch higher-priority apps on the device that access the camera or micro
 
 - [Configuring the environment of a simulated device](configuring-the-environment-of-a-simulated-device.md)
   Modify the settings of a simulated device.
+- [Interacting with your visionOS app in Device Hub](interacting-with-your-visionos-app-in-device-hub.md)
+  Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
 - [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
 

@@ -21,6 +21,11 @@ The type of the item to open.
 associatedtype Value : AppValue
 ```
 
+## See Also
+
+- [var target: Self.Value](openintent/target.md)
+  The item to open in your app.
+
 
 ---
 

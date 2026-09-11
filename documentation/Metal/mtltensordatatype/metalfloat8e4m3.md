@@ -6,12 +6,12 @@
 An 8-bit floating point data type with 4 exponent bits, 3 mantissa bits, and 1 sign bit.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

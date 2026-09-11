@@ -6,7 +6,7 @@
 Initializes a criteria object using a USB device matching dictionary.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

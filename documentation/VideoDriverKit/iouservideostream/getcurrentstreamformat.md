@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the current basic description of the stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,27 +14,30 @@
 IOUserVideoStreamBasicDescription GetCurrentStreamFormat();
 ```
 
-#### Return Value
-
-Returns IOUserVideoStreamBasicDescription
-
 #### Discussion
 
-Get the current IOUserVideoStreamBasicDescription of the stream
-
-Getting the current stream format will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the current stream format.
 
 ## See Also
 
 - [SetCurrentStreamFormat](iouservideostream/setcurrentstreamformat.md)
+  Sets the current stream format.
 - [SetAvailableStreamFormats](iouservideostream/setavailablestreamformats.md)
+  Sets the available descriptions for the stream.
 - [GetAvailableStreamFormats](iouservideostream/getavailablestreamformats.md)
+  Gets the available basic descriptions for the stream.
 - [GetNumberAvailableStreamFormats](iouservideostream/getnumberavailablestreamformats.md)
+  Gets the number of available description for the stream.
 - [IOUserVideoStreamBasicDescription](videodriverkit/iouservideostreambasicdescription.md)
+  A structure that encapsulates all the information for describing the basic format properties of a stream of audio data.
 - [GetStreamDirection](iouservideostream/getstreamdirection.md)
+  Gets the direction of the stream.
 - [IOUserVideoStreamDirection](videodriverkit/iouservideostreamdirection.md)
+  The direction of a video stream.
 - [SetStreamIsActive](iouservideostream/setstreamisactive.md)
+  Sets whether that the stream is active and doing IO.
 - [GetStreamIsActive](iouservideostream/getstreamisactive.md)
+  Gets the stream activity state.
 
 
 ---

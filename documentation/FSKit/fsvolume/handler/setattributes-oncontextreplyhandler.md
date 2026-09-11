@@ -7,7 +7,7 @@
 Sets the given attributes on an item.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

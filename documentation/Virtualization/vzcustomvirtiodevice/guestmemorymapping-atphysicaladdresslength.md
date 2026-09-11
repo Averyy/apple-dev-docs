@@ -6,7 +6,7 @@
 Returns guest memory mapping referred to by physicalAddress and length.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

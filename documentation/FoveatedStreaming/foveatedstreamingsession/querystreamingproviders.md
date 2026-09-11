@@ -6,7 +6,7 @@
 Returns a list of currently-available streaming providers.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

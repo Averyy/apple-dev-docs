@@ -6,7 +6,7 @@
 An error that indicates the accessory listener is already registered, and therefore the app can’t re-register it.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

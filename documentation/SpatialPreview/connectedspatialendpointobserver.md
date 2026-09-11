@@ -6,7 +6,7 @@
 An observer that provides access to the endpoint for a device connected via Mac Virtual Display.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

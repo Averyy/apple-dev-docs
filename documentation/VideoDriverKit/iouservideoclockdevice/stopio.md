@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Tells the clock device to stop IO.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 virtual kern_return_t StopIO(IOUserVideoStartStopFlags in_flags);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Tells the clock device to stop IO.
-
-Default implementation will always return kIOReturnSuccess. Subclass and override this method to handle any hardware specific things when IO is stopping, then call super class to update IO state.
+The default implementation always returns `kIOReturnSuccess`. Subclass and override this method to handle any hardware specific things when IO is stopping, then call the superclass implementation to update IO state.
 
 ## Parameters
 
@@ -29,7 +25,9 @@ Default implementation will always return kIOReturnSuccess. Subclass and overrid
 ## See Also
 
 - [StartIO](iouservideoclockdevice/startio.md)
+  Tells the clock device to start IO.
 - [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+  Flags used to indicate how I/O is starting or stopping.
 
 
 ---

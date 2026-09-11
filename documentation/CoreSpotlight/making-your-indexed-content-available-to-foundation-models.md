@@ -26,7 +26,7 @@ let session = LanguageModelSession(tools: [tool])
 let response = try await session.respond(to: "Find my notes about the project deadline.")
 ```
 
-The default configuration of [`SpotlightSearchTool`](spotlightsearchtool.md) performs queries against your app’s Spotlight index using all available search techniques. The tool supports a variety of techniques, some of which might not be relevant to your content. When configuring the tool, provide guidance on which search techniques to use along with other configuration details:
+The default configuration of [`SpotlightSearchTool`](spotlightsearchtool.md) performs queries against your app’s Spotlight index using all available search techniques and *Private Cloud Compute* (PCC) models designed for Apple Intelligence. The tool supports a variety of techniques, some of which might not be relevant to your content. When configuring the tool, provide guidance on which search techniques to use along with other configuration details:
 
 - **Specify where to find your app’s content.** You can tell the tool to search your app’s Spotlight index or search directories containing your app’s files. You can also search multiple sources and combine the results.
 - **Tell the tool to fetch specific attributes for each item.** The default tool configuration returns minimal information for each item. Include a list of attributes your items support to make the associated data available to the model.
@@ -53,6 +53,8 @@ To specify your guidance options, create the [`SpotlightSearchTool.Configuration
 - The [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md) option employs all search options to find your content.
 - The [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](spotlightsearchtool/guidancelevel/focused(_:).md) option focuses the model on specific types of content.
 - The [`SpotlightSearchTool.GuidanceLevel.dynamic(_:)`](spotlightsearchtool/guidancelevel/dynamic(_:).md) option specifies which search techniques make sense for your content.
+
+The default configuration of [`SpotlightSearchTool`](spotlightsearchtool.md) uses the `complete` option and *Private Cloud Compute* (PCC) models designed for Apple Intelligence. To make sure the search tool can provide search results, configure the tool with a `guide` that works well with the model’s context window. For example, if you configure it to use the on-device language model without providing a `focused(_:)` guide, Spotlight search exceeds the context window of the model and can’t return results.
 
 If you’re using a model with severe token constraints, another way to improve efficiency is to apply the [`SpotlightSearchTool.FormatLevel.compact`](spotlightsearchtool/formatlevel/compact.md) configuration option. When you apply this option to the [`format`](spotlightsearchtool/guide/format.md) property of your guide configuration, the tool outputs results in a compact format. You might choose this option if you’re using a model with a small context window that can’t handle conversations with large amounts of data. You might also use this approach if you anticipate a long conversation and need to save room for additional contextual data later.
 

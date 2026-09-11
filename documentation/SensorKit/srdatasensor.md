@@ -6,9 +6,9 @@
 `SRDataSensor` serves as the foundational protocol for all sensor types, providing type safety and consistency across the SensorKit ecosystem. Each conforming sensor type specifies the kind of data it produces, enabling compile-time verification and type-safe data access patterns.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

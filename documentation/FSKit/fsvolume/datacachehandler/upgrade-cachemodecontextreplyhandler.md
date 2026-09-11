@@ -7,7 +7,7 @@
 Upgrades the item cache mode to a less restrictive level, allowing more caching.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

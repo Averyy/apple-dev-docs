@@ -6,7 +6,7 @@
 Asks the delegate for preview images for the specified text.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

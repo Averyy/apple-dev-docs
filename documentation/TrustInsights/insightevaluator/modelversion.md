@@ -6,8 +6,8 @@
 Values that define the required model version of the insight.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

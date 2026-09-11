@@ -186,12 +186,6 @@ The device reports errors to the device management service in two ways:
 
 - [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
   Use a management app to display managed apps and packages to the user.
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
-  Provide managed apps and extensions with app configuration and secrets.
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Transition apps to declarative management.
-- [Processing status for managed apps](processing-status-for-managed-apps.md)
-  Process the status that declarative management reports for managed apps.
 - [Installing packages](installing-packages.md)
   Use declarative package management to install and remove packages in macOS.
 

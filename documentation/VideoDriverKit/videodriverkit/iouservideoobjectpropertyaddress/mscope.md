@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: property
 
+The scope for the property.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,7 +17,9 @@ IOUserVideoObjectPropertyScope mScope;
 ## See Also
 
 - [mSelector](videodriverkit/iouservideoobjectpropertyaddress/mselector.md)
+  The selector for the property.
 - [mElement](videodriverkit/iouservideoobjectpropertyaddress/melement.md)
+  The element for the property.
 
 
 ---

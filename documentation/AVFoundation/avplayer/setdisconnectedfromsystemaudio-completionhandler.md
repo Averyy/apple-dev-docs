@@ -6,11 +6,11 @@
 Changes whether the player is disconnected from system audio. This method allows you to dynamically change the player’s system audio connection. The operation is asynchronous. Each call to this method will invoke its own completion handler when the operation completes. When changing from `false` to `true`, you should typically call this method first, then deactivate the `AVAudioSession` to allow other audio to resume.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
 
 ## Declaration
 

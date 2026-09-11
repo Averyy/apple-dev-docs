@@ -6,7 +6,7 @@
 A session that manages the lifecycle and connection state of a spatial preview on a visionOS device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

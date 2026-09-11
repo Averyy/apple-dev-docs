@@ -6,7 +6,7 @@
 The method the framework calls when a device pauses.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

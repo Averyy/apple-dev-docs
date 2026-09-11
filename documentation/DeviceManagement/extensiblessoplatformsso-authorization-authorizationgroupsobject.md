@@ -6,7 +6,7 @@
 The pairing of Authorization Rights to group names. When using this, the system updates the Authorization Right to use the group.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

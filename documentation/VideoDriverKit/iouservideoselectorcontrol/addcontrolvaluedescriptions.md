@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Adds control value descriptions to the selector control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,26 +16,29 @@ kern_return_t AddControlValueDescriptions(const IOUserVideoSelectorValueDescript
 
 #### Return Value
 
-Returns kIOReturnSuccess if selector control value descriptions were successfully added.
-
-#### Discussion
-
-Add control value descriptions to the selector control.
+`kIOReturnSuccess` if the method successfully adds the value descriptions.
 
 ## Parameters
 
 - `in_value_descriptions`: Pointer to an array of IOUserVideoSelectorValueDescriptions.
-- `in_num_value_descriptions`: Size_t of number of items in the in_value_descriptions parameter.
+- `in_num_value_descriptions`: The number of items in the in_value_descriptions parameter.
 
 ## See Also
 
 - [SetCurrentSelectedValues](iouservideoselectorcontrol/setcurrentselectedvalues.md)
+  Sets the current control value.
 - [GetCurrentSelectedValues](iouservideoselectorcontrol/getcurrentselectedvalues.md)
+  Gets the current selected values of the control.
 - [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+  Selector value for controls.
 - [GetControlValuesCount](iouservideoselectorcontrol/getcontrolvaluescount.md)
+  Gets the number of available selector control values.
 - [RemoveControlValueDescriptions](iouservideoselectorcontrol/removecontrolvaluedescriptions.md)
+  Removes selector control values from the selector control.
 - [GetControlValueDescriptions](iouservideoselectorcontrol/getcontrolvaluedescriptions.md)
+  Gets the selector values for the control.
 - [IOUserVideoSelectorValueDescription](iouservideoselectorvaluedescription.md)
+  A selector control’s value and name.
 
 
 ---

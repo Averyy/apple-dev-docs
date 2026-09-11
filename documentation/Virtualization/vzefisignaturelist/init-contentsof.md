@@ -6,7 +6,7 @@
 Creates a signature list from a file.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

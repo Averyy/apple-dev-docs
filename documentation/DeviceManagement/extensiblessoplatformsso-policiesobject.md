@@ -6,7 +6,7 @@
 Policies for login, unlock, and FileVault behavior.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

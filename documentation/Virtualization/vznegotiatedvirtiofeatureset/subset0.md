@@ -6,7 +6,7 @@
 The values that represent feature bits 0 through 31.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

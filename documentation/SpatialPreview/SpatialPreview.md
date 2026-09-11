@@ -6,8 +6,8 @@
 Preview spatial content from a macOS app on a connected visionOS device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- macOS 27.0+
+- visionOS 27.0+
 
 #### Overview
 

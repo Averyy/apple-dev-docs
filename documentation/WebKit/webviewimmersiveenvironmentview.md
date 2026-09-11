@@ -6,7 +6,7 @@
 A SwiftUI view that renders a specific website-provided immersive environment.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -14,7 +14,7 @@ Initialize this instance so that it can be presented in a test’s output.
 - visionOS 1.0+
 - watchOS 2.0+
 - Swift 6.4+
-- Xcode 27.0+ (Beta)
+- Xcode 27.0+
 
 ## Declaration
 

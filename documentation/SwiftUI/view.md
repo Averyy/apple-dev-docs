@@ -99,6 +99,15 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 ### Deprecated modifiers
 - [Deprecated modifiers](view-deprecated.md)
   Review unsupported modifiers and their replacements.
+### Instance Methods
+- [func photosReferenceImageViewer(asset: Binding<PHAsset?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(asset:onprocessingcompletion:).md)
+  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `isPresented` is set to true.
+- [func photosReferenceImageViewer(fileURL: Binding<URL?>, onProcessingCompletion: ((Result<URL, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(fileurl:onprocessingcompletion:).md)
+  Presents an image viewer for a given image file containing Apple Reference Image data when `fileURL` is set.
+- [func photosReferenceImageViewer(pickerItem: Binding<PhotosPickerItem?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(pickeritem:onprocessingcompletion:).md)
+  Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `isPresented` is set to true.
+- [func photosReferenceImageViewer(pickerResult: Binding<PHPickerResult?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(pickerresult:onprocessingcompletion:).md)
+  Presents an image viewer for the resulting image containing Apple Reference Image data from `PHPickerViewController` when `isPresented` is set to true.
 
 ## Relationships
 

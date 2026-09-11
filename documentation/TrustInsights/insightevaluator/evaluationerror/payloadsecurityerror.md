@@ -6,8 +6,8 @@
 Server returned payload contains security related error and should not be trusted. This may indicate that the payload has been tampered with.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

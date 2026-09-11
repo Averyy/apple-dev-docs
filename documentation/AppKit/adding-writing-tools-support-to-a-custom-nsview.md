@@ -269,6 +269,8 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 }
 ```
 
+> ❗ **Important**: Pass one rectangle per line of text to `candidateRects`, as the example above does. Writing Tools uses each rectangle to animate its line independently, producing a bounce effect. If you pass a single rectangle that spans the entire range instead, Writing Tools can only animate the text as one unit, which produces a shimmer instead of a bounce.
+
 In addition to providing the initial image, use the [`writingToolsCoordinator(_:prepareFor:for:in:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:preparefor:for:in:completion:).md) method to hide the specified range of text in your view. UIKit places the image from your [`NSTextPreview`](nstextpreview.md) object in your view at the location you specified. When the animations finish, Writing Tools calls the [`writingToolsCoordinator(_:finish:for:in:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:finish:for:in:completion:).md) method so you can show the text in the specified range again.
 
 ##### Create Proofreading Marks for Your Content

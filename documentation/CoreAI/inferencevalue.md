@@ -6,11 +6,11 @@
 A value that an inference function accepts as input or produces as output.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
 
 ## Declaration
 
@@ -66,6 +66,8 @@ An `InferenceValue` wraps either an [`NDArray`](ndarray.md) or a pixel buffer, a
   A description of an image’s dimensions and pixel format.
 - [class ComputeStream](computestream.md)
   A stream of work to be run asynchronously.
+- [Background Inference](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+  An entitlement that lets a background task run inference on the Neural Engine.
 
 
 ---

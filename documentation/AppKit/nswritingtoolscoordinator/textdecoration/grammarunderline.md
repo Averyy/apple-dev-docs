@@ -6,7 +6,7 @@
 Requests a preview of the text with the grammar indication underline.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

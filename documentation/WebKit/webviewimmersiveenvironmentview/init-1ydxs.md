@@ -6,7 +6,7 @@
 Creates an immersive environment view from a [`WebPage.ImmersiveEnvironment`](webpage/immersiveenvironment.md).
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

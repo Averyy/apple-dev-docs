@@ -6,7 +6,7 @@
 Methods implemented for read and write operations that deliver data to and from the extension.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 A result that indicates a lack of evidence as to whether or not coaching is occurring.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

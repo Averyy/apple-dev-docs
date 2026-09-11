@@ -6,7 +6,7 @@
 A group of experience transitions that prepare concurrently and run simultaneously as a single visual transition.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

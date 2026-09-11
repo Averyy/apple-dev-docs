@@ -6,7 +6,7 @@
 A session that enables you to present the contents of a Universal Scene Description (USD) stage.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

@@ -6,7 +6,7 @@
 Returns a Boolean value indicating whether two configurations are equal.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

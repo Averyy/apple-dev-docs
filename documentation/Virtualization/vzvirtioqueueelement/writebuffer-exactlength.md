@@ -6,7 +6,7 @@
 Writes to the memory represented by the pointer to the buffer you provide to the write buffers.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

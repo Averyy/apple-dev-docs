@@ -6,7 +6,7 @@
 Requests authorization for the given input capabilities, prompting the user for any capability whose status is [`FoveatedStreamingSession.AuthorizationStatus.notDetermined`](foveatedstreamingsession/authorizationstatus/notdetermined.md).
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

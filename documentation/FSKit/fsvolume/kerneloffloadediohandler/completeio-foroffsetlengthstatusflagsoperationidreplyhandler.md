@@ -7,7 +7,7 @@
 Completes an I/O operation for a given file.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 A value that indicates the app canceled the operation, so no decision required.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

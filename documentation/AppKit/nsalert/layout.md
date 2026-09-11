@@ -24,6 +24,8 @@ You need to call this method only when you need to customize the alert’s layou
 
 - [var alertStyle: NSAlert.Style](nsalert/alertstyle.md)
   Indicates the alert’s severity level.
+- [NSAlert.Style](nsalert/style.md)
+  The set of alert styles to style alerts in your app.
 - [var accessoryView: NSView?](nsalert/accessoryview.md)
   The alert’s accessory view.
 - [var showsHelp: Bool](nsalert/showshelp.md)

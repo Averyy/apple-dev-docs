@@ -35,7 +35,7 @@ var type: AVMetadataObject.ObjectType { get }
 - [var groupID: Int](avmetadataobject/groupid.md)
   An identifier associated with a metadata object used to group it with other metadata objects belonging to a common parent.
 - [var objectID: Int](avmetadataobject/objectid.md)
-  A unique identifier for each detected object type (face, body, hands, heads and salient objects) in a collection.
+  A unique identifier for each detected object type (face, body, hands, heads, salient objects and focus-tracked objects) in a collection.
 
 
 ---

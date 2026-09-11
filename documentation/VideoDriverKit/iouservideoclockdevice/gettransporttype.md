@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the transport type of the IOUserVideoClockDevice.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,18 +16,18 @@ IOUserVideoTransportType GetTransportType();
 
 #### Return Value
 
-Returns IOUserVideoTransportType
+The transport type of the clock device.
 
 #### Discussion
 
-Get the transport type of the IOUserVideoClockDevice.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to this value.
 
 ## See Also
 
 - [SetTransportType](iouservideoclockdevice/settransporttype.md)
+  Sets the transport type of the clock device.
 - [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+  The transport type of a video stream.
 
 
 ---

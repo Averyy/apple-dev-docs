@@ -9,7 +9,7 @@ Include your app’s content in search results that visual intelligence provides
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 #### Overview
 
@@ -32,6 +32,8 @@ To integrate your app with visual intelligence and include your app’s content 
 - [struct SemanticContentDescriptor](semanticcontentdescriptor.md)
   A type that represents a scene that visual intelligence captures, for example, a screenshot, photo, or photo and video stream.
 ### App Intents essentials
+- [Making actions and content discoverable by Apple Intelligence](../appintents/making-actions-and-content-discoverable-by-apple-intelligence.md)
+  Equip the system so that Siri can work with your app by adding specific schemas from relevant domains.
 - [Creating your first app intent](../appintents/creating-your-first-app-intent.md)
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the transport type of the driver.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,18 +14,16 @@
 IOUserVideoTransportType GetTransportType();
 ```
 
-#### Return Value
-
-Returns IOUserVideoTransportType
-
 #### Discussion
 
-Get the transport type of the IOUserVideoDriver. Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetTransportType](iouservideodriver/settransporttype.md)
+  Sets the transport type of the video driver.
 - [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+  The transport type of a video stream.
 
 
 ---

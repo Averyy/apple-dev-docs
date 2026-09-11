@@ -6,7 +6,7 @@
 Creates and returns a dragging session for the specified gesture recognizer.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

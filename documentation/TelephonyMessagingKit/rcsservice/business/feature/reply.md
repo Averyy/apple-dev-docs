@@ -6,7 +6,7 @@
 Reply feature.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

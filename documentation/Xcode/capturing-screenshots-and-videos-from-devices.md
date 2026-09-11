@@ -31,6 +31,8 @@ To record a video of your app, run your app on a simulated device in Device Hub 
   Modify the settings of a simulated device.
 - [Interacting with your app in Device Hub](interacting-with-your-app-in-device-hub.md)
   Use Device Hub to control interactions with your apps on simulated and physical devices.
+- [Interacting with your visionOS app in Device Hub](interacting-with-your-visionos-app-in-device-hub.md)
+  Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
 
 
 ---

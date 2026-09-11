@@ -5,10 +5,10 @@
 Enable Center Stage for photos and videos on the iPhone front camera.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- Xcode 27.0+
 
 #### Overview
 

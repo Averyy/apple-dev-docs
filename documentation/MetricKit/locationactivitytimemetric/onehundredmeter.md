@@ -6,8 +6,8 @@
 The total time spent tracking the current location to an accuracy of 100 meters.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

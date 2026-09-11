@@ -6,7 +6,7 @@
 Create a new DocumentPreviewSession with the name and contentType, to be used for all content updates.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

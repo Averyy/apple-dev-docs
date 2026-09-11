@@ -6,7 +6,7 @@
 The text selection manager for this view.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

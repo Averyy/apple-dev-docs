@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Removes a video device from the video box.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,13 +16,11 @@ kern_return_t RemoveDevice(IOUserVideoDevice *in_device);
 
 #### Return Value
 
-Returns kIOReturnSuccess if device was successfully removed.
+`kIOReturnSuccess` if device was successfully removed.
 
 #### Discussion
 
-Remove a IOUserVideoDevice from the IOUserVideoBox.
-
-Remove a IOUserVideoDevice from the IOUserVideoBox. The device’s reference count will be decremented if it was successfully removed.
+The device’s reference count will be decremented if it was successfully removed.
 
 ## Parameters
 
@@ -29,10 +29,15 @@ Remove a IOUserVideoDevice from the IOUserVideoBox. The device’s reference cou
 ## See Also
 
 - [AddDevice](iouservideobox/adddevice.md)
+  Adds a video device to the video box.
 - [IOUserVideoDevice](iouservideodevice.md)
+  A video device.
 - [AddClockDevice](iouservideobox/addclockdevice.md)
+  Adds a clock device video box.
 - [RemoveClockDevice](iouservideobox/removeclockdevice.md)
+  Removes aa clock device from the video box.
 - [IOUserVideoClockDevice](iouservideoclockdevice.md)
+  A clock device.
 
 
 ---

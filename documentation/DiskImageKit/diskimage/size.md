@@ -6,7 +6,7 @@
 The logical size of the disk image in bytes.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

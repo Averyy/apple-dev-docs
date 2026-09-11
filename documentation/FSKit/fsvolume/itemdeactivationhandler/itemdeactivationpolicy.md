@@ -7,7 +7,7 @@
 A property that tells FSKit to which types of items the deactivation applies, if any.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

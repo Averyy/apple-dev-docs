@@ -3,18 +3,16 @@
 **Framework**: VideoDriverKit  
 **Kind**: enum
 
+Reserved configuration change identifiers when changing object state that requires a configuration change.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
 ```swift
 enum IOUserVideoReservedConfigChangeAction : uint64_t;
 ```
-
-#### Overview
-
-Reserved configuration change IDs when changing object state that requires a config change
 
 ## Topics
 

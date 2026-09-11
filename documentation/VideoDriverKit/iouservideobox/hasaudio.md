@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+A Boolean value indicating if box has audio capabilities.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,21 +14,22 @@
 bool HasAudio();
 ```
 
-#### Return Value
-
-Returns bool
-
 #### Discussion
 
-Bool value indiciating if box has audio capabilities. Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetHasAudio](iouservideobox/sethasaudio.md)
+  Sets the value indicating the box’s audio support.
 - [SetHasVideo](iouservideobox/sethasvideo.md)
+  Sets the value indicating the box’s video support.
 - [HasVideo](iouservideobox/hasvideo.md)
+  A Boolean value indicating if box has video capabilities.
 - [SetHasMIDI](iouservideobox/sethasmidi.md)
+  Sets the value indicating the box’s MIDI support
 - [HasMIDI](iouservideobox/hasmidi.md)
+  A Boolean value indicating if box has MIDI capabilities.
 
 
 ---

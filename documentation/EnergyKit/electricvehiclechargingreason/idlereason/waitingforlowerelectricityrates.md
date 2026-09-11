@@ -6,8 +6,8 @@
 A reason that indicates the vehicle waits for lower electricity rates to become available.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst ?+
 
 ## Declaration

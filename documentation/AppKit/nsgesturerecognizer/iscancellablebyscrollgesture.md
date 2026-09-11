@@ -6,7 +6,7 @@
 Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

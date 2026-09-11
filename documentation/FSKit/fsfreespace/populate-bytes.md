@@ -6,7 +6,7 @@
 Populates this instance with the given free space value and atomically assigns a sequence number.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

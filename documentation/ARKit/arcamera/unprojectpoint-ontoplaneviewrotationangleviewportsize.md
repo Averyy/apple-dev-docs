@@ -6,8 +6,8 @@
 Unprojects a 2D point in image space onto a 3D plane in world space.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

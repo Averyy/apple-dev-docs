@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the work queue created by the video object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,21 +16,24 @@ OSSharedPtr<IODispatchQueue> GetWorkQueue();
 
 #### Return Value
 
-Returns an OSSharedPtr to an IODispatchQueue on success
+An OSSharedPtr to an IODispatchQueue on success
 
 #### Discussion
 
-Gets the work queue created by the IOUserVideoObject in an OSSharedPtr.
-
-The work queue is used to synchronize access to the driver’s state.  Setters and Getters for the driver will be done on the work queue.
+The work queue is used to synchronize access to the driver’s state. Setters and Getters for the driver will be done on the work queue.
 
 ## See Also
 
 - [GetClassID](iouservideodriver/getclassid.md)
+  Gets the class identifier of the object.
 - [GetBaseClassID](iouservideodriver/getbaseclassid.md)
+  Gets the class identifier of the base class object.
 - [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+  Video class identifiers of an video object.
 - [GetName](iouservideodriver/getname.md)
+  Gets the name of the driver.
 - [SetName](iouservideodriver/setname.md)
+  Sets the name of the video driver.
 
 
 ---

@@ -6,7 +6,7 @@
 The cache transition is not allowed.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

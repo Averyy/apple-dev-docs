@@ -6,8 +6,8 @@
 A value that indicates a person has previously denied authorization to use the framework, but the app can present a request again at a later time.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

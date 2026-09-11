@@ -31,6 +31,8 @@ struct Error
   An error that indicates a missing parameter the function requires.
 - [static let unsupportedOperation: NSError](cmclock/error/unsupportedoperation.md)
   An error that indicates an operation the system doesn’t support.
+### Type Properties
+- [static let preferredStartTimeNotAvailable: NSError](cmclock/error/preferredstarttimenotavailable.md)
 
 ## Relationships
 

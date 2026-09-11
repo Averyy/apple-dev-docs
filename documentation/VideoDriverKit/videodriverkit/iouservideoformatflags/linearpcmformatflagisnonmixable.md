@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+Synonym for `FormatFlagIsNonMixable`.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,6 +17,7 @@ LinearPCMFormatFlagIsNonMixable
 ## See Also
 
 - [FormatFlagIsNonMixable](videodriverkit/iouservideoformatflags/formatflagisnonmixable.md)
+  Set to indicate when a format is non-mixable.
 
 
 ---

@@ -16,14 +16,14 @@ class QLPreviewReply
 
 #### Overview
 
-Create an instance of [`QLPreviewReply`](qlpreviewreply.md) from the method [`providePreview(for:completionHandler:)`](qlpreviewingcontroller/providepreview(for:completionhandler:).md) in your subclass of [`QLPreviewProvider`](qlpreviewprovider.md). Create an instance to return data; for example, an image, PDF, or HTML; that the system displays as the preview for the content that the system indicates with [`QLFilePreviewRequest`](qlfilepreviewrequest.md).
+Create an instance of [`QLPreviewReply`](qlpreviewreply.md) from the method [`providePreview(for:completionHandler:)`](qlpreviewingcontroller/providepreview(for:completionhandler:).md) in your subclass of [`QLPreviewProvider`](qlpreviewprovider.md). Create an instance to return data, such as an image, PDF, or HTML, that the system displays as the preview for the content that [`QLFilePreviewRequest`](qlfilepreviewrequest.md) specifies.
 
 ## Topics
 
 ### Creating a preview reply
 - [init(fileURL: URL)](qlpreviewreply/init(fileurl:).md)
   Creates a preview reply from an existing file URL.
-### Create a PDF preview reply
+### Creating a PDF preview reply
 - [convenience init(forPDFWithPageSize: CGSize, createDocumentUsing: (QLPreviewReply) throws -> PDFDocument)](qlpreviewreply/init(forpdfwithpagesize:createdocumentusing:).md)
 ### Generating a preview reply
 - [convenience init(dataOfContentType: UTType, contentSize: CGSize, createDataUsing: (QLPreviewReply) throws -> Data)](qlpreviewreply/init(dataofcontenttype:contentsize:createdatausing:).md)

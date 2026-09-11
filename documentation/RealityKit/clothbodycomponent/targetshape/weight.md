@@ -6,9 +6,9 @@
 The weight by which the body will be pulled towards this target shape.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

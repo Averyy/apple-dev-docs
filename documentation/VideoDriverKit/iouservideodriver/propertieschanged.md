@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+This method informs the host when the state of an driver’s object changes.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -18,9 +20,7 @@ A kern_return_t indicating success or failure.
 
 #### Discussion
 
-This method informs the Host when the state of an driver’s object changes.
-
-Note that for device objects, this method is only used for state changes that don’t affect IO or the structure of the device.
+For device objects, this method is only used for state changes that don’t affect IO or the structure of the device.
 
 ## Parameters
 
@@ -30,7 +30,9 @@ Note that for device objects, this method is only used for state changes that do
 ## See Also
 
 - [IOUserVideoObjectID](videodriverkit/iouservideoobjectid.md)
+  A handle for a a specific video object.
 - [IOUserVideoObjectPropertySelector](videodriverkit/iouservideoobjectpropertyselector.md)
+  A four character code which, along with the scope and element, specifies a specific piece of information about a video object.
 
 
 ---

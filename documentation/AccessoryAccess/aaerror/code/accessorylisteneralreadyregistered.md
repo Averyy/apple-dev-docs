@@ -6,7 +6,7 @@
 An error code that indicates there’s already an accessory listener for the USB accessory.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

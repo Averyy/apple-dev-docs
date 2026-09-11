@@ -6,8 +6,8 @@
 Values that represent the types of operation it’s possible to request evaluations for.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

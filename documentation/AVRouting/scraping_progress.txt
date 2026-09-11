@@ -1,4 +1,4 @@
 Completed scraping AVRouting!
-Total pages scraped: 0
-Pages skipped (unchanged): 38
+Total pages scraped: 1
+Pages skipped (unchanged): 37
 Pages failed: 0

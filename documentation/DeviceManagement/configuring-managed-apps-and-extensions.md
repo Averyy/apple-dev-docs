@@ -62,16 +62,8 @@ Declarative management supports a many-to-many relationship between configuratio
 
 ## See Also
 
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
-  Use declarative management to handle all aspects of managing apps on devices.
-- [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
-  Use a management app to display managed apps and packages to the user.
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Transition apps to declarative management.
-- [Processing status for managed apps](processing-status-for-managed-apps.md)
-  Process the status that declarative management reports for managed apps.
-- [Installing packages](installing-packages.md)
-  Use declarative package management to install and remove packages in macOS.
+- [Allowing and denying apps and binaries](allowing-and-denying-apps-and-binaries.md)
+  Control what apps and binaries can run on supervised Apple devices.
 
 
 ---

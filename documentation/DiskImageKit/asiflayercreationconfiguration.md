@@ -6,7 +6,7 @@
 The configuration to use to create Apple sparse image format (ASIF) disk image layers in stacked images.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

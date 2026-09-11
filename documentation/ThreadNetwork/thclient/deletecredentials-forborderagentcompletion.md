@@ -11,6 +11,7 @@ Deletes Thread network credentials from the framework database for a Border Agen
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.0+
+- watchOS 8.0+
 
 ## Declaration
 

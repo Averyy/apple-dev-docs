@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the value for the box’s acquirability.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,28 +14,28 @@
 kern_return_t SetIsAcquirable(bool in_is_acquirable);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the value for the box’s acquirability
-
-A notification will be sent to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
-- `in_is_acquirable`: Bool value for the box’s acquirability state
+- `in_is_acquirable`: The box’s acquirability state.
 
 ## See Also
 
 - [HandleChangeAcquireBox](iouservideobox/handlechangeacquirebox.md)
+  Called when host is attempting to the change the box acquisition
 - [SetIsAcquired](iouservideobox/setisacquired.md)
+  Sets the value indicating the box’s acquisition state.
 - [IsAcquired](iouservideobox/isacquired.md)
+  A Boolean value indicating if box is acquired.
 - [IsAcquirable](iouservideobox/isacquirable.md)
+  A Boolean value indicating if box can be acquired.
 - [SetAcquisitionFailure](iouservideobox/setacquisitionfailure.md)
+  Sets the error for the box’s acquisition failure.
 - [GetAcquisitionFailure](iouservideobox/getacquisitionfailure.md)
+  Gets the acquisition failure of the video box.
 
 
 ---

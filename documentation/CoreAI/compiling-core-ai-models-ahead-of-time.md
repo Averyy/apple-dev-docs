@@ -14,7 +14,7 @@ Ahead-of-time compilation converts your `.aimodel` model file into `.aimodelc` a
 
 Before compiling, set up your project to load a Core AI model. See [`Integrating on-device AI models in your app with Core AI`](integrating-on-device-ai-models-in-your-app-with-core-ai.md) for project setup, the Xcode model viewer, and loading basics.
 
-> **Note**: Ahead-of-time compilation only compiles for devices that support Apple Intelligence, including iPhone or iPad with the A17 Pro chipset or later, a Mac with the M1 chipset or later, or Apple Vision Pro with the M2 chipset or later.
+> **Note**: Ahead-of-time compilation only compiles for devices that support Apple Intelligence, including iPhone or iPad with the A17 Pro chipset or later, a Mac with the M1 chipset or later, or Apple Vision Pro with the M2 chipset or later. Ahead-of-time compilation is not supported on tvOS and watchOS.
 
 #### Compile Your Model Ahead of Time
 

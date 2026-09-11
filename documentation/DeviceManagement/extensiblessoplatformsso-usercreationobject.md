@@ -6,7 +6,7 @@
 Settings for creating new users via Platform SSO.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

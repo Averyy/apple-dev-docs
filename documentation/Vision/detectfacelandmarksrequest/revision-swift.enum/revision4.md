@@ -6,12 +6,12 @@
 This revision uses [`DetectFaceRectanglesRequest.Revision.revision4`](detectfacerectanglesrequest/revision-swift.enum/revision4.md) for detecting faces and then detects 98 face landmark points, providing more detailed results than the previous revision. This is the default revision on platforms that support it. Specify `.revision3` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](detectfacelandmarksrequest/supportedrevisions.md) to check if this revision is supported on the platform.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

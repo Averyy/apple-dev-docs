@@ -58,6 +58,9 @@ Use this object to create a disbursement (payment) request from a merchant to a 
   A contact object that describes the recipient.
 - [var requiredRecipientContactFields: [PKContactField]](pkdisbursementrequest/requiredrecipientcontactfields.md)
   An array that indicates which of the recipient’s contact details the merchant requires in order to process a disbursement.
+### Excluding cards from the payment sheet
+- [var unsupportedPrimaryAccountIdentifiers: [String]](pkdisbursementrequest/unsupportedprimaryaccountidentifiers.md)
+  An array of Apple Pay cards to exclude from payment.
 ### Handling errors
 - [class func disbursementCardUnsupportedError() -> any Error](pkdisbursementrequest/disbursementcardunsupportederror.md)
   Creates an error that indicates that the selected payment pass doesn’t support receiving funds through disbursements.
@@ -66,7 +69,6 @@ Use this object to create a disbursement (payment) request from a merchant to a 
 ### Instance Properties
 - [var isDelegatedRequest: Bool](pkdisbursementrequest/isdelegatedrequest.md)
   A Boolean value that indicates whether this disbursement request is being made by a delegated entity on behalf of a merchant.
-- [var unsupportedPrimaryAccountIdentifiers: [String]](pkdisbursementrequest/unsupportedprimaryaccountidentifiers.md)
 
 ## Relationships
 

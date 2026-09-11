@@ -20,6 +20,10 @@ The compute devices that can execute the layer/operation.
 let supported: [MLComputeDevice]
 ```
 
+## Mentions
+
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+
 ## See Also
 
 - [let preferred: MLComputeDevice](mlcomputeplan-1w21n/deviceusage/preferred.md)

@@ -6,11 +6,11 @@
 [`AVCaptureBroadcastVideoOutput`](avcapturebroadcastvideooutput.md) is a subclass of [`AVCaptureOutput`](avcaptureoutput.md) that delivers broadcast-quality video and ancillary data through the device’s DisplayPort hardware interface (USB-C DP Alt Mode)
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
 
 ## Declaration
 
@@ -47,6 +47,9 @@ Not all [`AVCaptureDevice.Format`](avcapturedevice/format.md) instances support 
 ### Dropped Frame Replacement
 - [AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy](avcapturebroadcastvideooutput/droppedframereplacementpolicy-swift.enum.md)
   Constants indicating the replacement policy when a video frame is dropped.
+### Instance Properties
+- [var ancillaryDataEncoder: AVCaptureAncillaryDataEncoder](avcapturebroadcastvideooutput/ancillarydataencoder.md)
+  The AVCaptureAncillaryDataEncoder that sends per-frame lens/camera/user-defined acquisition data along with the video buffer.
 ### Type Methods
 - [class func new() -> Self](avcapturebroadcastvideooutput/new.md)
 
@@ -68,6 +71,9 @@ Not all [`AVCaptureDevice.Format`](avcapturedevice/format.md) instances support 
   Protocol for receiving broadcast video output events and data.
 - [protocol AVCaptureBroadcastVideoOutputDelegate](avcapturebroadcastvideooutputdelegate.md)
   Protocol for receiving broadcast video output events and data.
+- [class AVCaptureAncillaryDataEncoder](avcaptureancillarydataencoder.md)
+- [struct AVCaptureAncillaryDataUserKey](avcaptureancillarydatauserkey.md)
+  Clients may use an AVCaptureAncillaryDataUserKey to inspect the [`currentUserDefinedAncillaryData`](avcaptureancillarydataencoder/currentuserdefinedancillarydata.md).
 
 
 ---

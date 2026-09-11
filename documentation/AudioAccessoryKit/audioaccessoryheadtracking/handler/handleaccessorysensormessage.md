@@ -7,7 +7,7 @@
 Called when a `TransportMessage` arrives from the accessory’s transport extension on the inbound channel.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

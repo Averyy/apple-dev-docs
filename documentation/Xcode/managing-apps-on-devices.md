@@ -8,7 +8,7 @@ Find, add, and remove apps installed for testing on simulated and physical devic
 
 Use the Apps inspector in Device Hub to view, install, and remove apps on both simulated and physical devices. During development, Xcode installs your app on devices for you (see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md)), and you remove it using Device Hub. Later, when you’re ready to distribute your app for testing (see [`Distributing your app to registered devices`](distributing-your-app-to-registered-devices.md)), you can use Device Hub independently of Xcode to add and remove apps on multiple test devices.
 
-![A screenshot of the Device Hub with a simulator selected in the sidebar on the left, an iPhone simulator running in the canvas in the middle, and the Apps inspector showing an installed app selected on the right.](/images/com.apple.Xcode/device-hub-apps-inspector@2x.png)
+![A screenshot of Device Hub with a simulator selected in the sidebar on the left, an iPhone simulator running in the canvas in the middle, and the Apps inspector showing an installed app selected on the right.](/images/com.apple.Xcode/device-hub-apps-inspector@2x.png)
 
 #### View Apps on Devices
 

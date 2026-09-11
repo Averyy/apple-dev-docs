@@ -12,7 +12,7 @@ Many of the actions you make available to the system as app intents are simple, 
 
 For example, the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) sample app offers an app intent to view details about the landmarks nearby. People might use it to create shortcuts and perform its action from Spotlight or the Action button. When the app intent finds information about a nearby landmark, it displays an interactive snippet with the most important information, a button to add it to a list favorites, and a button to search for available tickets if the landmark requires people to pay an entrance fee.
 
-> **Note**: App intents that people perform from a control in Control Center can’t display snippets.
+> **Note**: When someone performs an action with Siri AI that invokes your app intent, the system might not display [`IntentDialog`](intentdialog.md) or [`ShowsSnippetView`](showssnippetview.md).
 
 ##### Show a Static Snippet
 

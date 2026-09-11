@@ -1,4 +1,4 @@
 Completed scraping TabularData!
-Total pages scraped: 0
-Pages skipped (unchanged): 707
+Total pages scraped: 3
+Pages skipped (unchanged): 704
 Pages failed: 0

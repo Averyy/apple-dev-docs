@@ -6,8 +6,8 @@
 A metric that measures the total time the app spent in the background playing audio.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

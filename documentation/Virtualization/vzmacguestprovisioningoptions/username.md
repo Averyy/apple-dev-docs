@@ -6,7 +6,7 @@
 The username for logging into the macOS virtual machine.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

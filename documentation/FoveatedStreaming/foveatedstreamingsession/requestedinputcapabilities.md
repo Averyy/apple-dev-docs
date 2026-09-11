@@ -6,7 +6,7 @@
 A list of input data types which should be included as part of the stream.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

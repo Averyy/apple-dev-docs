@@ -6,7 +6,7 @@
 A unit of work on a Virtio queue, also known as a descriptor chain.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

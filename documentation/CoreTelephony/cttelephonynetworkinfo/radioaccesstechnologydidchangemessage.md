@@ -6,9 +6,9 @@
 A message that posts when the radio access technology changes for one of the services.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

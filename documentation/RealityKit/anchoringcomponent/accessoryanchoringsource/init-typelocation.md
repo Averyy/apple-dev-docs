@@ -6,7 +6,7 @@
 Creates an accessory anchoring source for a deferred accessory type.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

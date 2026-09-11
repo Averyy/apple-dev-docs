@@ -7,19 +7,23 @@
 The list of targets this intent can be executed against.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
 
 ## Declaration
 
 ```swift
 static var allowedExecutionTargets: IntentExecutionTargets { get }
 ```
+
+## Mentions
+
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
 
 #### Discussion
 

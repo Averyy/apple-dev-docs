@@ -5,8 +5,8 @@
 Move cards between positions in a card game using drag, drop, and reordering modifiers.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- macOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

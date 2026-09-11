@@ -6,7 +6,7 @@
 Creates a new error code with the provided value.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

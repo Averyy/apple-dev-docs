@@ -24,7 +24,7 @@ struct InterleavedFx4
 
 ### Type Methods
 - [static func makePixel(Pixel_ARGB_16F) -> Pixel_FFFF](vimage/interleavedfx4/makepixel(_:).md)
-  Returns a 32-bit floating-point pixel value from a 16-bit floating-point pixel value.
+  Utility function to generate a `Pixel_FFFF` pixel value from a `Pixel_ARGB_16F` pixel value.
 
 ## Relationships
 

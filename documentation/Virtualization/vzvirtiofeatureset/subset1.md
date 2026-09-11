@@ -6,7 +6,7 @@
 An unsigned 32-bit integer that represents Virtio feature bits 32 through 63.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

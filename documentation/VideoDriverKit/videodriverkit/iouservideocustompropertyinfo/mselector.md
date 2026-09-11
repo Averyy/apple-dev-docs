@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: property
 
+The property selector of the custom property.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,7 +17,9 @@ IOUserVideoObjectPropertySelector mSelector;
 ## See Also
 
 - [mPropertyDataType](videodriverkit/iouservideocustompropertyinfo/mpropertydatatype.md)
+  The data type of the data of the custom property.
 - [mQualifierDataType](videodriverkit/iouservideocustompropertyinfo/mqualifierdatatype.md)
+  The data type of the qualifier data of the custom property.
 
 
 ---

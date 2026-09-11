@@ -6,11 +6,11 @@
 Retrieves all metadata items to write to an output metadata track, optionally clipped to a segment time range. Pass a `timeRange` to produce one item per segment (e.g. per IDR group or per fixed-length interval).
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

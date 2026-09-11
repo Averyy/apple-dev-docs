@@ -6,7 +6,7 @@
 The SHA-256 fingerprint of the server’s TLS certificate, as attested by the session management protocol during a previous successful pairing.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

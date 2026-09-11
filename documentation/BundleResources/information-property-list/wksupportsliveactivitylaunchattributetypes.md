@@ -10,7 +10,7 @@ The attribute type names that let a person launch your watchOS app by tapping a 
 
 
 
-**Type**: string
+**Type**: string 
 
 #### Discussion
 

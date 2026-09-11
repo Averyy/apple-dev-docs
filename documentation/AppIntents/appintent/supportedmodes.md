@@ -23,6 +23,7 @@ static var supportedModes: IntentModes { get }
 
 ## Mentions
 
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
 - [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
 

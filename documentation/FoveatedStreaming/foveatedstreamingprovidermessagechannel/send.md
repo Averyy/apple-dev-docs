@@ -6,7 +6,7 @@
 Sends data received from the streaming endpoint to the host app.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

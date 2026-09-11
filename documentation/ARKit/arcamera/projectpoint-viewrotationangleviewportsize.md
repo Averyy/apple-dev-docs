@@ -6,8 +6,8 @@
 Project a 3D point in world coordinate system into 2D viewport space.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

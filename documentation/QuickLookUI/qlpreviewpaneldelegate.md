@@ -41,7 +41,7 @@ You can implement these methods to perform custom tasks in response to events in
 - [class QLPreviewView](qlpreviewview.md)
   A Quick Look preview of an item that you can embed into your view hierarchy.
 - [protocol QLPreviewItem](qlpreviewitem.md)
-  A protocol that defines a set of properties you implement to make a preview of your application’s content.
+  A protocol that defines a set of properties you implement to make a preview of your app’s content.
 - [protocol QLPreviewPanelDataSource](qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
 - [typealias QLPreviewItemLoadingBlock](qlpreviewitemloadingblock.md)

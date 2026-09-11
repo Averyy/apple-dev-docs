@@ -6,7 +6,7 @@
 An object that represents a chunk of the guest operating system’s dynamic random access memory (DRAM).
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

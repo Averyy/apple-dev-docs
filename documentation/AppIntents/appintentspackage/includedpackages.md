@@ -19,6 +19,10 @@
 static var includedPackages: [any AppIntentsPackage.Type] { get }
 ```
 
+## Mentions
+
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+
 
 ---
 

@@ -8,7 +8,7 @@ Create a significant change flow to inform people about important updates in you
 - iOS 26.5+
 - iPadOS 26.5+
 - Mac Catalyst 26.5+
-- Xcode 27.0+ (Beta)
+- Xcode 27.0+
 
 #### Overview
 

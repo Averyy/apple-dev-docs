@@ -7,7 +7,7 @@
 Maps a file’s disk space into extents, allowing the kernel to perform I/O with that space.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

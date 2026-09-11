@@ -6,7 +6,7 @@
 Presents the recording editor for the given recording URL with a specific mode.
 
 **Availability**:
-- tvOS 27.0+ (Beta)
+- tvOS 27.0+
 
 ## Declaration
 

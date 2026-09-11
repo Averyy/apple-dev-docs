@@ -6,7 +6,7 @@
 A repeated tracking began event in the control. For this event the click count is greater than one.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Verifies the server certificate presented in a TLS authentication challenge.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

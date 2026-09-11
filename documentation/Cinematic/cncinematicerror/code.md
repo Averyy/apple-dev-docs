@@ -20,6 +20,7 @@ enum Code
 
 ### Enumeration Cases
 - [CNCinematicError.Code.cancelled](cncinematicerror/code/cancelled.md)
+- [CNCinematicError.Code.downloadFailed](cncinematicerror/code/downloadfailed.md)
 - [CNCinematicError.Code.incompatible](cncinematicerror/code/incompatible.md)
 - [CNCinematicError.Code.incomplete](cncinematicerror/code/incomplete.md)
 - [CNCinematicError.Code.malformed](cncinematicerror/code/malformed.md)

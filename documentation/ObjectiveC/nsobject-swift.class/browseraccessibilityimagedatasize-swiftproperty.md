@@ -6,9 +6,9 @@
 Returns the native pixel dimensions of the image represented by this element, or `CGSize.zero` if this element does not represent an image.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

@@ -19,7 +19,7 @@ Each identifier is a two-byte UUID that represents a company identifier as regis
 
 ## See Also
 
-- [NSAccessorySetupSupports](information-property-list/nsaccessorysetupsupports.md)
+- [NSAccessorySetupKitSupports](information-property-list/nsaccessorysetupkitsupports.md)
   An array of strings that indicates the wireless technologies AccessorySetupKit uses when discovering and configuring accessories.
 - [NSAccessorySetupBluetoothNames](information-property-list/nsaccessorysetupbluetoothnames.md)
   An array of strings that represent the Bluetooth device names or substrings for accessories that your app configures.

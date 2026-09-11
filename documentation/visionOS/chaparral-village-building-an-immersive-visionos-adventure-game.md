@@ -5,8 +5,8 @@
 Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 
@@ -328,7 +328,7 @@ A Script Graph on the player sets the `walk` variable in the Animation Graph to 
 
 ![A screenshot of a Script Graph with two independent branches. In the top branch, an On Scene Event node listening for OnPathFindStarted feeds a Set Entity Parameter node that sets the walk variable to true. In the bottom branch, an On Scene Event node listening for OnPathFindEnded feeds a Set Entity Parameter node that sets the walk variable to false.](/images/com.apple.visionOS/Chaparral-Village-SetEntityParameter@2x.png)
 
-For more information about using Animation Graph in Reality Composer Pro, see [`Working with the Animation Graph`](https://developer.apple.com/documentation/realitycomposerpro/working-with-the-animation-graph).
+For more information about using Animation Graph in Reality Composer Pro, see [`Working with the Animation Graph`](https://developer.apple.com/documentation/realitycomposerpro/working-with-the-animation-graph) and [`Creating animation graphs with Reality Composer Pro and RealityKit`](creating-animation-graphs-with-reality-composer-pro-and-realitykit.md).
 
 #### Animate Curtains with Cloth Simulation
 
@@ -384,6 +384,51 @@ Although the Alchemy area has several light sources, only three render at runtim
 The sample also uses area reflector entities, which are simply planes with reflective materials, to bounce scattered light back into the scene, providing warmer, fuller lighting:
 
 ![A screenshot of the Reality Composer Pro viewport showing two large reflector planes standing vertically at right angles around the hut interior, with a light source above casting illumination that bounces off the planes back onto the hut.](/images/com.apple.visionOS/Chaparral-Village-BounceLights@2x.png)
+
+#### Display Progress with Computegraph
+
+When players craft potions in the cauldron, smoke particles appear to provide visual feedback. A [`ComputeGraphComponent`](https://developer.apple.com/documentation/realitykit/computegraphcomponent) simulates each particle, driving changes in scale, opacity and position over time. The sample spawns the smoke cloud when the cauldron fills with ingredients.
+
+```swift
+    @MainActor
+    public func burst() {
+        guard let potionCompletionEffectEntity,
+              let effect = potionCompletionEffectEntity.components[PotionCompletionEffect.self],
+              var graph = potionCompletionEffectEntity.components[ComputeGraphComponent.self] else {
+            return
+        }
+        
+        // ...
+        graph.spawn(elements: Array(repeating: .init(position: .zero), count: effect.burstCount))
+        potionCompletionEffectEntity.components.set(graph)
+    }
+```
+
+The sample spawns a group of particles in bulk using [`spawn(elements:in:)`](https://developer.apple.com/documentation/realitykit/computegraphcomponent/spawn(elements:in:)). The graph post-processes the particle properties during the initialization phase of the graph. For more information on creating compute graphs, see [`Building a working Compute Graph example`](https://developer.apple.com/documentation/realitycomposerpro/building-a-working-compute-graph-example).
+
+```swift
+public struct PotionCompletionEffectViewpointSystem: System {
+    let query = EntityComponentQuery(PotionCompletionEffect.self)
+    public init(scene: Scene) {}
+    
+    public func update(context: SceneUpdateContext) {
+        guard let headTransform = context.scene[ARManager.self]?.head else {
+            return
+        }
+        
+        for (entity, _) in context.entities(matching: query) {
+            var viewpoint = entity.components[ComputeGraphViewpointComponent.self] ?? ComputeGraphViewpointComponent()
+            
+            viewpoint.viewPosition = headTransform.translation
+            viewpoint.viewDirection = headTransform.rotation.act(SIMD3(0.0, 0.0, -1.0))
+            
+            entity.components.set(viewpoint)
+        }
+    }
+}
+```
+
+[`ComputeGraphComponent`](https://developer.apple.com/documentation/realitykit/computegraphcomponent) sorts the particles for rendering so transparent elements layer correctly. The sample updates a [`ComputeGraphViewpointComponent`](https://developer.apple.com/documentation/realitykit/computegraphviewpointcomponent) on each effect entity to provide the required camera information for sorting.
 
 ## See Also
 

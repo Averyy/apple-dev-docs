@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the output safety offset of the device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,19 +16,20 @@ uint32_t GetOutputSafetyOffset();
 
 #### Return Value
 
-Returns uint32_t output safety offset.
+The output safety offset.
 
 #### Discussion
 
-Get the output safety offset of the device.
-
-A uint32_t whose value indicates the number for frames ahead the current hardware position that is safe to do IO.
+A uint32_t whose value indicates the number of frames ahead of the current hardware position that is safe to do IO.
 
 ## See Also
 
 - [SetInputSafetyOffset](iouservideodevice/setinputsafetyoffset.md)
+  Specifies the input safety offset of the device.
 - [GetInputSafetyOffset](iouservideodevice/getinputsafetyoffset.md)
+  Gets the input safety offset of the device.
 - [SetOutputSafetyOffset](iouservideodevice/setoutputsafetyoffset.md)
+  Specifies the output safety offset of the device.
 
 
 ---

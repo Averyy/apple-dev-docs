@@ -6,7 +6,7 @@
 A conflicting cache operation is in progress.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

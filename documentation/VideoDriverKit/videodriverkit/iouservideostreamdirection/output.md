@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+Output stream direction.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,6 +17,7 @@ Output
 ## See Also
 
 - [Input](videodriverkit/iouservideostreamdirection/input.md)
+  Input stream direction.
 
 
 ---

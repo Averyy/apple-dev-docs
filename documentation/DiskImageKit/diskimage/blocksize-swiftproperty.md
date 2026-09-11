@@ -6,7 +6,7 @@
 The block size, either 512 bytes or 4 KB.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the custom property’s data value.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,7 @@ kern_return_t SetQualifierAndDataValue(OSObject *in_qualifier_data, OSObject *in
 
 #### Return Value
 
-Returns kIOReturnSuccess on sucess.
-
-#### Discussion
-
-Set the custom propertie’s data value.
+`kIOReturnSuccess` on success.
 
 ## Parameters
 
@@ -28,8 +26,11 @@ Set the custom propertie’s data value.
 ## See Also
 
 - [GetCustomPropertyValueWithQualifier](iouservideocustomproperty/getcustompropertyvaluewithqualifier.md)
+  Gets the custom property value for a given qualifier.
 - [GetCustomPropertyInfo](iouservideocustomproperty/getcustompropertyinfo.md)
+  Gets the custom property information.
 - [IOUserVideoCustomPropertyInfo](videodriverkit/iouservideocustompropertyinfo.md)
+  A description of a a custom property that allow the Host to marshal the data between the Host and its clients.
 
 
 ---

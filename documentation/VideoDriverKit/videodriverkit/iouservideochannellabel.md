@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: enum
 
+These constants are to set the preferred channel layout on video device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -13,8 +15,6 @@ enum IOUserVideoChannelLabel : uint32_t;
 ```
 
 #### Overview
-
-These constants are to set the preferred channel layout on an IOUserVideoDevice
 
 These channel labels attempt to list all labels in common use. Due to the ambiguities in channel labeling by various groups, there may be some overlap or duplication in the labels below. Use the label which most clearly describes what you mean.
 
@@ -148,9 +148,13 @@ These channel labels attempt to list all labels in common use. Due to the ambigu
 ## See Also
 
 - [SetPreferredChannelsForStereo](iouservideodevice/setpreferredchannelsforstereo.md)
+  Sets the channel indices for the preferred stereo pair
 - [GetPreferredChannelsForStereo](iouservideodevice/getpreferredchannelsforstereo.md)
+  Gets the channel indices for the preferred stereo pair.
 - [SetPreferredInputChannelLayout](iouservideodevice/setpreferredinputchannellayout.md)
+  Sets the input channel layout with IOUserVideoChannelLabel values
 - [SetPreferredOutputChannelLayout](iouservideodevice/setpreferredoutputchannellayout.md)
+  Sets the output channel layout.
 
 
 ---

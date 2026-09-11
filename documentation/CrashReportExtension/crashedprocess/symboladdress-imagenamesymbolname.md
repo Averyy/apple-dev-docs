@@ -6,9 +6,9 @@
 Looks up a symbol’s address by name.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- macOS 27.0+
 - tvOS ?+
 - visionOS ?+
 - watchOS ?+

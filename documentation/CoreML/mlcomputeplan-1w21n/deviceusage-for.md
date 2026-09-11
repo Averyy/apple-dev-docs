@@ -20,6 +20,10 @@ Returns the anticipated compute devices that would be used for executing a Neura
 func deviceUsage(for layer: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?
 ```
 
+## Mentions
+
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+
 #### Return Value
 
 The anticipated compute devices that would be used for evaluating the layer or `nil` if the usage couldn’t be determined.

@@ -6,7 +6,7 @@
 Provides a structured way to define custom corner radii for each corner of a view, along with a corner curve.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

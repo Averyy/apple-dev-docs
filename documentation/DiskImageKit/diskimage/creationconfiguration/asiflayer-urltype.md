@@ -6,7 +6,7 @@
 Returns an Apple sparse image format (ASIF) configuration for stackable layers.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

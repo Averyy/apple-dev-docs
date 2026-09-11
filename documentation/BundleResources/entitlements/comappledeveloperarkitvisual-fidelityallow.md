@@ -6,7 +6,7 @@
 A Boolean value that indicates whether your app can monitor visual fidelity.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 
 

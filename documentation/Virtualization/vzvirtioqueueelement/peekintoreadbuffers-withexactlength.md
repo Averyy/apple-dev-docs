@@ -6,7 +6,7 @@
 Peeks into the read buffers and copy exactLength bytes from the read buffer into the data object it returns.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

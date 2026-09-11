@@ -6,8 +6,8 @@
 A value that indicates the app evaluated the insights and they were a factor in making the operation easier for the user.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

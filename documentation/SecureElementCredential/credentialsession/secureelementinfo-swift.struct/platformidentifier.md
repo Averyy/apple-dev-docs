@@ -6,8 +6,8 @@
 A unique identifier that describes the hardware and operating system combination of a device, along with its version information.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

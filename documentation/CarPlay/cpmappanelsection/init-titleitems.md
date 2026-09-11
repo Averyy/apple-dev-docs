@@ -6,9 +6,9 @@
 Initializes a section with items conforming to @c CPMapPanelItem. Only items that adopt @c CPMapPanelItem are supported when displaying panel sections on a @c CPMapTemplate.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: enum
 
+The terminal type of video stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,57 +14,42 @@
 enum IOUserVideoStreamTerminalType : uint32_t;
 ```
 
-#### Overview
-
-Various constants that describe the terminal type of an IOUserVideoStream.
-
-The ID used when the terminal type for the IOUserVideoStream is not known.
-
-The ID for a terminal type of a line level stream. Note that this applies to both input streams and output streams
-
-The ID for a terminal type of stream from/to a digital audio interface as defined by ISO 60958 (aka SPDIF or AES/EBU). Note that this applies to both input streams and output streams
-
-The ID for a terminal type of a speaker.
-
-The ID for a terminal type of headphones.
-
-The ID for a terminal type of a speaker for low frequency effects.
-
-The ID for a terminal type of a speaker on a telephone handset receiver.
-
-The ID for a terminal type of a microphone.
-
-The ID for a terminal type of a microphone attached to an headset.
-
-The ID for a terminal type of a microphone on a telephone handset receiver.
-
-The ID for a terminal type of a device providing a TTY signal.
-
-The ID for a terminal type of a stream from/to an HDMI port.
-
-The ID for a terminal type of a stream from/to an DisplayPort port.
-
 ## Topics
 
 ### Terminal types
 - [Line](videodriverkit/iouservideostreamterminaltype/line.md)
+  The identifier for a terminal type of a line level stream.
 - [DigitalVideoInterface](videodriverkit/iouservideostreamterminaltype/digitalvideointerface.md)
+  The ID for a terminal type of stream from/to a digital audio interface as defined by ISO 60958 (aka SPDIF or AES/EBU).
 - [Speaker](videodriverkit/iouservideostreamterminaltype/speaker.md)
+  The identifier for a terminal type of a speaker.
 - [Headphones](videodriverkit/iouservideostreamterminaltype/headphones.md)
+  The identifier for a terminal type of headphones.
 - [LFESpeaker](videodriverkit/iouservideostreamterminaltype/lfespeaker.md)
+  The identifier for a terminal type of a speaker for low frequency effects.
 - [ReceiverSpeaker](videodriverkit/iouservideostreamterminaltype/receiverspeaker.md)
+  The identifier for a terminal type of a speaker on a telephone handset receiver.
 - [Microphone](videodriverkit/iouservideostreamterminaltype/microphone.md)
+  The identifier for a terminal type of a microphone.
 - [HeadsetMicrophone](videodriverkit/iouservideostreamterminaltype/headsetmicrophone.md)
+  The identifier for a terminal type of a microphone attached to an headset.
 - [ReceiverMicrophone](videodriverkit/iouservideostreamterminaltype/receivermicrophone.md)
+  The identifier for a terminal type of a microphone on a telephone handset receiver.
 - [TTY](videodriverkit/iouservideostreamterminaltype/tty.md)
+  The identifier for a terminal type of a device providing a TTY signal.
 - [HDMI](videodriverkit/iouservideostreamterminaltype/hdmi.md)
+  The identifier for a terminal type of a stream from/to an HDMI port.
 - [DisplayPort](videodriverkit/iouservideostreamterminaltype/displayport.md)
+  The identifier for a terminal type of a stream from/to an DisplayPort port.
 - [Unknown](videodriverkit/iouservideostreamterminaltype/unknown.md)
+  The identifier used when the terminal type for the stream is not known.
 
 ## See Also
 
 - [SetTerminalType](iouservideostream/setterminaltype.md)
+  Sets the terminal type of the stream.
 - [GetTerminalType](iouservideostream/getterminaltype.md)
+  Gets the terminal type of the stream.
 
 
 ---

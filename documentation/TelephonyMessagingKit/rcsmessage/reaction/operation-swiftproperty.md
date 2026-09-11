@@ -6,7 +6,7 @@
 The operation to perform for the reaction.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

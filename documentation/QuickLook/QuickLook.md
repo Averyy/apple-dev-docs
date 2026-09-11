@@ -22,7 +22,9 @@ When showing files in your app, including the ability to quickly preview a file 
 - Text files
 - PDFs
 - Audio and video files
-- Augmented reality objects that use the USDZ file format (iOS and iPadOS only)
+- 3D models that use the USDZ file format
+
+In iOS and iPadOS, Quick Look can also present a USDZ model in an augmented reality view.
 
 On iOS devices, the Quick Look framework provides functionality for performing simple edits on previews of common file types; for example, users can add markup to an image. To perform more advanced edits on files, provide advanced playback features, display a file’s content next to text, or add views on top of the preview, use lower-level APIs. For example, use [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) to provide advanced video playback features.
 
@@ -38,13 +40,15 @@ To provide a view controller-based preview extension, set up a [`UIViewControlle
 
 To provide a data-based preview extension, implement a subclass of [`QLPreviewProvider`](https://developer.apple.com/documentation/quicklookui/qlpreviewprovider) to provide a [`QLPreviewReply`](https://developer.apple.com/documentation/quicklookui/qlpreviewreply) based on the [`QLFilePreviewRequest`](https://developer.apple.com/documentation/quicklookui/qlfilepreviewrequest) that the system provides.
 
+Import `QuickLook` to use these extension types in iOS and iPadOS. In macOS, the same types are part of Quick Look UI, so import `QuickLookUI` instead.
+
 ## Topics
 
 ### Previews
 - [class QLPreviewController](qlpreviewcontroller.md)
   A specialized view controller for previewing an item.
 - [protocol QLPreviewItem](../quicklookui/qlpreviewitem.md)
-  A protocol that defines a set of properties you implement to make a preview of your application’s content.
+  A protocol that defines a set of properties you implement to make a preview of your app’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.
 - [Previews or thumbnail images for macOS 10.14 or earlier](previews-or-thumbnail-images-for-macos-10-14-or-earlier.md)

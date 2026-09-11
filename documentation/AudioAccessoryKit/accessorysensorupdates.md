@@ -6,7 +6,7 @@
 Subscribes to a stream of raw sensor data packets from a connected accessory.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

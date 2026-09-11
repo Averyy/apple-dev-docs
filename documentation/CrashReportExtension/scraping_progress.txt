@@ -1,4 +1,4 @@
 Completed scraping CrashReportExtension!
-Total pages scraped: 0
-Pages skipped (unchanged): 30
+Total pages scraped: 29
+Pages skipped (unchanged): 1
 Pages failed: 0

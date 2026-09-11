@@ -6,7 +6,7 @@
 The set of optional features that the device offers.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

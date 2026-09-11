@@ -48,7 +48,7 @@ To use AccessorySetupKit with [`Wi-Fi Aware`](https://developer.apple.com/docume
 - [class ASMigrationDisplayItem](asmigrationdisplayitem.md)
   A previously-discovered accessory as presented by the discovery picker, for use when migrating it to AccessorySetupKit.
 ### Information property list keys
-- [NSAccessorySetupSupports](../bundleresources/information-property-list/nsaccessorysetupsupports.md)
+- [NSAccessorySetupKitSupports](../bundleresources/information-property-list/nsaccessorysetupkitsupports.md)
   An array of strings that indicates the wireless technologies AccessorySetupKit uses when discovering and configuring accessories.
 - [NSAccessorySetupBluetoothCompanyIdentifiers](../bundleresources/information-property-list/nsaccessorysetupbluetoothcompanyidentifiers.md)
   An array of strings that represent the Bluetooth company identifiers for accessories that your app configures.

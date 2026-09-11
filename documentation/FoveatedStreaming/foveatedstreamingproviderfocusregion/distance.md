@@ -6,7 +6,7 @@
 The estimated distance to the user’s focal point, in meters.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The endpoint for the visionOS device currently connected via Mac Virtual Display.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

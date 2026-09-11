@@ -6,7 +6,7 @@
 A Boolean value that controls whether only one view’s gesture recognizers can be active at a time.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 
 

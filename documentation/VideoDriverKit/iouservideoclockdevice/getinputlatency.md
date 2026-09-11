@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the input latency of the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,21 +14,18 @@
 uint32_t GetInputLatency();
 ```
 
-#### Return Value
-
-Returns uint32_t
-
 #### Discussion
 
-Get the input latency of the clock device
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetOutputLatency](iouservideoclockdevice/setoutputlatency.md)
+  Sets the output latency of the clock device.
 - [GetOutputLatency](iouservideoclockdevice/getoutputlatency.md)
+  Gets the output latency of the clock device.
 - [SetInputLatency](iouservideoclockdevice/setinputlatency.md)
+  Sets the input latency of the clock device.
 
 
 ---

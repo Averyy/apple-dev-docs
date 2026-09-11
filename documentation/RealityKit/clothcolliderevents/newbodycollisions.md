@@ -6,9 +6,9 @@
 An event type that a cloth collider publishes (before simulation update) when cloth bodies collide with it.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

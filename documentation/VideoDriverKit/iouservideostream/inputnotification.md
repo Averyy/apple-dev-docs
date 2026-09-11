@@ -4,7 +4,7 @@
 **Kind**: method
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,8 +15,11 @@ virtual void InputNotification();
 ## See Also
 
 - [StartIO](iouservideostream/startio.md)
+  Tells the stream to start IO.
 - [StopIO](iouservideostream/stopio.md)
+  Tells the stream to stop IO.
 - [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+  Flags used to indicate how I/O is starting or stopping.
 
 
 ---

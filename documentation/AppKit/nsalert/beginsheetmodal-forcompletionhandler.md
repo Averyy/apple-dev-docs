@@ -29,8 +29,6 @@ Note that [`orderOut(_:)`](nswindow/orderout(_:).md) no longer needs to be calle
 
 - [func runModal() -> NSApplication.ModalResponse](nsalert/runmodal.md)
   Runs the alert as an app-modal dialog and returns the constant that identifies the button clicked.
-- [func beginSheetModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsalert/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
-  Runs the alert modally as an alert sheet attached to a specified window.
 - [var suppressionButton: NSButton?](nsalert/suppressionbutton.md)
   The alert’s suppression checkbox.
 - [var showsSuppressionButton: Bool](nsalert/showssuppressionbutton.md)

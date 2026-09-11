@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+The system calls this virtual method when the custom property’s data value changes.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,13 +16,11 @@ virtual kern_return_t HandleChangeCustomPropertyDataValueWithQualifier(OSObject 
 
 #### Return Value
 
-Returns kIOReturnSuccess on sucess. Upon sucess the custom property’s data value should be updated.
+`kIOReturnSuccess` on success. Upon success the custom property’s data value should be updated.
 
 #### Discussion
 
-Virtual Method will be called when the custom property’s data value will be changed.
-
-Default implementation will always return kIOReturnSuccess and update the custom property data value without checking qualifier contents. Subclass and override this method to handle changes to this custom property value and return kIOReturnSucess upon success.
+The default implementation always returns `kIOReturnSuccess` and updates the custom property data value without checking qualifier contents. Subclass and override this method to handle changes to this custom property value and return `kIOReturnSuccess` upon success.
 
 ## Parameters
 

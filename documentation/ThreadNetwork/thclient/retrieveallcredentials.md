@@ -11,6 +11,7 @@ Requests all Thread credentials from the framework.
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.0+
+- watchOS 8.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The barcode content decoded as a UTF-8 string, if representable.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

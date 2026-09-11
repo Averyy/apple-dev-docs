@@ -6,7 +6,7 @@
 The streaming endpoint provided to a `FoveatedStreamingProvider` extension.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

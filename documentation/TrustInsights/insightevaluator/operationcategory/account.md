@@ -6,8 +6,8 @@
 A value that indicates an account operation including registration, login, or the modification of account details.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

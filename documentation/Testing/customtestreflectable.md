@@ -7,7 +7,7 @@ A protocol describing types with a custom reflection when presented as part of a
 
 **Availability**:
 - Swift 6.4+
-- Xcode 27.0+ (Beta)
+- Xcode 27.0+
 
 ## Declaration
 

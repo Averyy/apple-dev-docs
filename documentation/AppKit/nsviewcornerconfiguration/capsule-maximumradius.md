@@ -6,7 +6,7 @@
 A configuration where the container is to take on a capsule shape, scaling with the view’s size. and clamped to the `maximumRadius`.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

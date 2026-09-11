@@ -51,6 +51,8 @@ class MLPredictionOptions
   Generates a prediction for each input feature provider within the batch provider using the prediction options.
 - [func prediction(from:using:)](mlmodel/prediction(from:using:).md)
 - [func prediction(from:using:options:)](mlmodel/prediction(from:using:options:).md)
+- [Background Inference](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+  An entitlement that lets a background task run inference on the Neural Engine.
 
 
 ---

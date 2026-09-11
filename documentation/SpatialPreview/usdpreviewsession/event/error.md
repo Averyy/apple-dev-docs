@@ -6,7 +6,7 @@
 Session error (editing read-only stage, etc.)
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

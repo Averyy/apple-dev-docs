@@ -47,6 +47,8 @@ alert.accessoryView = accessory;
   Specifies that the alert must do immediate layout instead of lazily just before display.
 - [var alertStyle: NSAlert.Style](nsalert/alertstyle.md)
   Indicates the alert’s severity level.
+- [NSAlert.Style](nsalert/style.md)
+  The set of alert styles to style alerts in your app.
 - [var showsHelp: Bool](nsalert/showshelp.md)
   Specifies whether the alert has a help button.
 - [var helpAnchor: NSHelpManager.AnchorName?](nsalert/helpanchor.md)

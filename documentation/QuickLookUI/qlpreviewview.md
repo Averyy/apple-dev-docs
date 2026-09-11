@@ -67,7 +67,7 @@ class QLPreviewView
 - [class QLPreviewPanel](qlpreviewpanel.md)
   A class that implements the Quick Look preview panel to display a preview of a list of items.
 - [protocol QLPreviewItem](qlpreviewitem.md)
-  A protocol that defines a set of properties you implement to make a preview of your application’s content.
+  A protocol that defines a set of properties you implement to make a preview of your app’s content.
 - [protocol QLPreviewPanelDataSource](qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
 - [protocol QLPreviewPanelDelegate](qlpreviewpaneldelegate.md)

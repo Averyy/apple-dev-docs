@@ -7,7 +7,7 @@ An AudioObjectPropertyScope that indicates which part of the owning device the c
 
 **Availability**:
 - Mac Catalyst ?+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

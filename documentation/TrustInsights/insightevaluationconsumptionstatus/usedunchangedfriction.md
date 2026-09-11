@@ -6,8 +6,8 @@
 A value that indicates the app evaluated the insights, but the insights didn’t have any impact on the decision or user flow.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

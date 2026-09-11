@@ -77,8 +77,6 @@ For more information about making your app’s actions available to Apple Intell
   Make your calendar app’s actions available to Apple Intelligence and Siri by adopting schemas for common calendar actions.
 - [Camera](app-schema-domain-camera.md)
   Make your camera app’s actions available to Apple Intelligence and Siri by adopting schemas for common camera actions.
-- [Files](app-schema-domain-files.md)
-  Make your file-management app’s actions available to Apple Intelligence and Siri by adopting schemas for common file actions.
 - [Mail](app-schema-domain-mail.md)
   Make your email app’s actions available to Apple Intelligence and Siri by adopting schemas for common email actions.
 - [Maps](app-schema-domain-maps.md)

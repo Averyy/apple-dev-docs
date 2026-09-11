@@ -6,7 +6,7 @@
 The transform from the anchor to the origin coordinate system.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

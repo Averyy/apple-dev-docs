@@ -6,8 +6,8 @@
 A structure that provides details about the evaluations to request and provides information the framework requires for the evaluation to take place.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

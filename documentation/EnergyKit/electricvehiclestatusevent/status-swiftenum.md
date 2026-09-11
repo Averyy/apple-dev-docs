@@ -6,8 +6,8 @@
 The status of an electric vehicle’s charger connection.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst ?+
 
 ## Declaration

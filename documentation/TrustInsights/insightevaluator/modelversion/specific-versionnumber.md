@@ -6,8 +6,8 @@
 A value that defines a specific model version intended to be run in parallel with the latest version.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

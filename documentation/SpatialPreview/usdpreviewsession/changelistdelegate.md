@@ -6,7 +6,7 @@
 A protocol to provide shared undo/redo tracking in a USDPreviewSession.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

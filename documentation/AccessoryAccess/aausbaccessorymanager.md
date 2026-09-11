@@ -6,7 +6,7 @@
 A class your app uses to manage USB accessories and the listener objects for those accessories.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ A USB accessory listener receives notifications when a USB accessories connect t
 
 The `AAUSBAccessoryManager` presents UI on behalf of your application, which means you can only use it from an application that implements a UI, that is, one that appears in the Dock.
 
-> **Note**: To use the AccessoryAccess framework, add the `com.apple.developer.accessory-access.usb` entitlement to your app’s Xcode configuration. For more information, see [`Accessory Access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-access.usb).
+> **Note**: To use the AccessoryAccess framework, add the `com.apple.developer.accessory-access.usb` entitlement to your app’s Xcode configuration. For more information, see [`Claim USB Accessory`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-access.usb).
 
 ## Topics
 

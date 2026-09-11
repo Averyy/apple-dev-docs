@@ -6,7 +6,7 @@
 The approximate region where the person is looking.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

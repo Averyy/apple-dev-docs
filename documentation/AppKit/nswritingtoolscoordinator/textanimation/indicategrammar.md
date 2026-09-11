@@ -6,7 +6,7 @@
 The animation effect that Writing Tools performs on grammar issues when they are first indicated.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

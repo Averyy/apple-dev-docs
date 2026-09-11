@@ -6,7 +6,7 @@
 A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

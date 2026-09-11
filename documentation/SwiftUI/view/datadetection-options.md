@@ -6,10 +6,10 @@
 Asynchronously detects data in the view’s content and styles them to indicate they are clickable.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
 
 ## Declaration
 

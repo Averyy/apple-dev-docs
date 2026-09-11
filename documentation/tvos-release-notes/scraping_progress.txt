@@ -1,4 +1,4 @@
 Completed scraping tvOS Release Notes!
-Total pages scraped: 0
-Pages skipped (unchanged): 59
+Total pages scraped: 2
+Pages skipped (unchanged): 57
 Pages failed: 0

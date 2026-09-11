@@ -200,6 +200,8 @@ The `onTrackingError` closure receives a [`MetricManager.LaunchTaskError`](metri
   Work with the metric values, diagnostic data, and environments in MetricKit reports.
 - [Track performance by app state using MetricKit](track-performance-by-app-state-using-metrickit.md)
   Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
+- [MetricKit updates](../updates/metrickit.md)
+  Learn about important changes to MetricKit.
 
 
 ---

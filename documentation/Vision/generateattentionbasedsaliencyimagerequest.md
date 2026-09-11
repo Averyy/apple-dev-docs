@@ -12,7 +12,7 @@ An object that produces a heat map that identifies the parts of an image most li
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
-- watchOS 27.0+ (Beta)
+- watchOS 27.0+
 
 ## Declaration
 

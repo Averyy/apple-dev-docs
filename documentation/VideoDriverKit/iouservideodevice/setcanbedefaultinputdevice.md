@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Specify if device can be used as default input device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetCanBeDefaultInputDevice(bool in_can_be_default);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Specify if device can be used as default input device.
-
-Setting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
@@ -29,10 +25,15 @@ Setting the value will be synchronized using the work queue created by the objec
 ## See Also
 
 - [CanBeDefaultInputDevice](iouservideodevice/canbedefaultinputdevice.md)
+  Returns a Boolean value indicating if device can be used for default input.
 - [SetCanBeDefaultOutputDevice](iouservideodevice/setcanbedefaultoutputdevice.md)
+  Specifies if device can be used as default output device.
 - [CanBeDefaultOutputDevice](iouservideodevice/canbedefaultoutputdevice.md)
+  Returns a Boolean value indicating if device can be used for default output.
 - [SetCanBeDefaultSystemOutputDevice](iouservideodevice/setcanbedefaultsystemoutputdevice.md)
+  Specifies if device can be used as default system output device
 - [CanBeDefaultSystemOutputDevice](iouservideodevice/canbedefaultsystemoutputdevice.md)
+  Returns a Boolean value indicating if device can be used for default system output.
 
 
 ---

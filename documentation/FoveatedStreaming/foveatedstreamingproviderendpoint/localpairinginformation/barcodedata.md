@@ -6,7 +6,7 @@
 The raw barcode data as read from the scanned QR code.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

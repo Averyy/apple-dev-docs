@@ -74,6 +74,8 @@ The app intents you create conform to the [`AppIntent`](appintent.md) protocol f
 
 - [Creating your first app intent](creating-your-first-app-intent.md)
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+  Configure your app intents to run from your app in the foreground or background, or from an app extension in the background.
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
 - [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)

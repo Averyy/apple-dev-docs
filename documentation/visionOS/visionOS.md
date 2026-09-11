@@ -165,8 +165,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Inspect your running app to investigate issues in the appearance and placement of the content it displays.
 - [Running your app on simulated or physical devices](../xcode/running-your-app-on-simulated-or-physical-devices.md)
   Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
-- [Device Hub](../xcode/device-hub.md)
-  Manage the simulated and physical devices that you use to test your app.
+- [Interacting with your visionOS app in Device Hub](../xcode/interacting-with-your-visionos-app-in-device-hub.md)
+  Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
 ### Performance
 - [Creating a performance plan for your visionOS app](creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
@@ -196,6 +196,9 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
 - [Monitoring fit and field of view fidelity](monitoring-fit-and-field-of-view-fidelity.md)
   Respond to changes in fit and field of view fidelity on Apple Vision Pro by using the Visual Fidelity API.
+### Articles
+- [Creating animation graphs with Reality Composer Pro and RealityKit](creating-animation-graphs-with-reality-composer-pro-and-realitykit.md)
+  Animate RealityKit entities using blend spaces and state machines with the Animation Graph feature.
 
 
 ---

@@ -6,7 +6,7 @@
 Tests the conformance of the receiver to the provided device type.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

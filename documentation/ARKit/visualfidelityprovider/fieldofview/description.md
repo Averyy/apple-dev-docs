@@ -6,7 +6,7 @@
 A textual representation of the field of view.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

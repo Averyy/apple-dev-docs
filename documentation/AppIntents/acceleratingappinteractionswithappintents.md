@@ -277,6 +277,8 @@ To leverage the app’s existing code for handling a universal link, the app con
 
 - [Creating your first app intent](creating-your-first-app-intent.md)
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+  Configure your app intents to run from your app in the foreground or background, or from an app extension in the background.
 - [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [protocol AppIntent](appintent.md)

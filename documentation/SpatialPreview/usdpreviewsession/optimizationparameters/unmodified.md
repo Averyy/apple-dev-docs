@@ -6,7 +6,7 @@
 The USD stage is used as-is with no optimization.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

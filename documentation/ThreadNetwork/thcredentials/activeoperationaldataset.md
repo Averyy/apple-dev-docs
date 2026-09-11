@@ -11,6 +11,7 @@ The essential operational parameters for the Thread network.
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.0+
+- watchOS 8.0+
 
 ## Declaration
 

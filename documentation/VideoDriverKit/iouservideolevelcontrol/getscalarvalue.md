@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the scalar level value for the control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,21 +14,18 @@
 float GetScalarValue();
 ```
 
-#### Return Value
-
-Returns float.
-
 #### Discussion
 
-Get the scalar level value for the control.
-
-Getting the control value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the control value.
 
 ## See Also
 
 - [SetScalarValue](iouservideolevelcontrol/setscalarvalue.md)
+  Sets the current scalar level value.
 - [SetDecibelValue](iouservideolevelcontrol/setdecibelvalue.md)
+  Sets the current decibel level value.
 - [GetDecibelValue](iouservideolevelcontrol/getdecibelvalue.md)
+  Gets the decibel level value for the control.
 
 
 ---

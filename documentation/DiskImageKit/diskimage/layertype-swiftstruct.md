@@ -6,7 +6,7 @@
 An enumeration that defines the type of a layer in a stacked disk image.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -23,6 +23,7 @@ protocol StartWorkoutIntent : InstanceDisplayRepresentable, SystemIntent
 ## Mentions
 
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
 
 #### Overview
 

@@ -6,8 +6,8 @@
 A Boolean value that indicates whether the device must be running a final customer release of the operating system to start an assessment.
 
 **Availability**:
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

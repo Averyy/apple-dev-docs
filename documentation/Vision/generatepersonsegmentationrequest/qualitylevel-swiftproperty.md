@@ -12,7 +12,7 @@ A value that indicates how the request balances accuracy and performance.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
-- watchOS 27.0+ (Beta)
+- watchOS 27.0+
 
 ## Declaration
 

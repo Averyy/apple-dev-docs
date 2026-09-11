@@ -6,11 +6,11 @@
 The declaration to configure a VPN using the IPSec sub-type.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 
@@ -99,7 +99,6 @@ This configuration sets up an IPSec VPN using a certificate identity asset for a
 - `HostName` (string) *(required)*: The IP address or hostname of the VPN server.
 - `Idle` (NetworkVPNIPSecIdleObject): Specifies details about how the system handles idle VPN connections.
 - `OnDemand` (NetworkVPNIPSecOnDemandObject): Specifies details about how the system controls on-demand VPN.
-- `OverridePrimary` (boolean): If `true`, the system sends all network traffic over VPN.
 - `Proxies` (NetworkVPNIPSecProxiesObject): The dictionary to use to configure `Proxies` for use with `VPN`.
 - `VisibleName` (string) *(required)*: The name of the VPN connection that the system displays on the device.
 

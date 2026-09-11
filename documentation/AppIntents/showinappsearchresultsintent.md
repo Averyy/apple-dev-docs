@@ -22,8 +22,10 @@ protocol ShowInAppSearchResultsIntent : SystemIntent
 
 ## Mentions
 
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
 - [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
+- [Directing app intents to your app’s scenes](directing-app-intents-to-your-apps-scenes.md)
 
 #### Overview
 

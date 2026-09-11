@@ -6,7 +6,7 @@
 A value that controls provisioning a macOS guest.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

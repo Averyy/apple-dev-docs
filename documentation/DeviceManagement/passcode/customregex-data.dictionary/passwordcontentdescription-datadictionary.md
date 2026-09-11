@@ -16,7 +16,7 @@ object Passcode.CustomRegex.PasswordContentDescription
 
 ## Properties
 
-- `ANY` (string): A localized description.
+- `ANY` (string): A localized description. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 
 ---

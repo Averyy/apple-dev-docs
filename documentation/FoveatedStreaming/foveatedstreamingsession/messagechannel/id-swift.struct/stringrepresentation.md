@@ -6,7 +6,7 @@
 The String representation of this ID.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

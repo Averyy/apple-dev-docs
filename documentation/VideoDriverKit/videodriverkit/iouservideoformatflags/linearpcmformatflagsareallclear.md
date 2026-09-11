@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+Synonym for `FormatFlagsAreAllClear`.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,6 +17,7 @@ LinearPCMFormatFlagsAreAllClear
 ## See Also
 
 - [FormatFlagsAreAllClear](videodriverkit/iouservideoformatflags/formatflagsareallclear.md)
+  Set if all the flags would be clear.
 
 
 ---

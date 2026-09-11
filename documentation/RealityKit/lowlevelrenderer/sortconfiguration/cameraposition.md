@@ -6,10 +6,10 @@
 The camera position used to compute per-instance back-to-front sort distances for transparent draw calls.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

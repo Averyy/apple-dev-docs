@@ -6,7 +6,7 @@
 Presents nearby companion devices and allows the user to make a selection.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

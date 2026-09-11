@@ -6,8 +6,8 @@
 An entitlement that works with the EnergyKit framework to share energy data and usage insights in the Home app.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 
 

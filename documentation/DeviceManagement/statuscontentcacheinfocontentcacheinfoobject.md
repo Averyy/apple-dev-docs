@@ -6,7 +6,7 @@
 A dictionary that contains info about the usage of the Content Cache on the device
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

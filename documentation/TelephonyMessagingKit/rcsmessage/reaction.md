@@ -6,7 +6,7 @@
 A structure that represents a reaction to an RCS message.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

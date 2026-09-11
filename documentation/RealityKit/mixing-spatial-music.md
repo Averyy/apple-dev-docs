@@ -5,8 +5,8 @@
 Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

@@ -8,7 +8,7 @@ The identifier corresponding to the home that the accessory should be added to w
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst 27.0+ (Beta)
+- Mac Catalyst 27.0+
 
 ## Declaration
 

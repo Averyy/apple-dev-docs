@@ -6,10 +6,10 @@
 Asynchronously creates a simple surface shader using a built-in tint color or texture implementation, as described by the given descriptor.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

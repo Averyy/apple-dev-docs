@@ -6,7 +6,7 @@
 A value that indicates the match needs to be all inclusive of the provided interface criteria.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

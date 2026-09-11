@@ -6,7 +6,7 @@
 A mode that indicates read-write access with caching enabled.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

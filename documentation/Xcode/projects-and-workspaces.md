@@ -6,11 +6,6 @@ Manage the code and resources you use to build apps, libraries, and other softwa
 
 ## Topics
 
-### Files and workspaces
-- [Managing files and folders in your Xcode project](managing-files-and-folders-in-your-xcode-project.md)
-  Add new or existing files to your project, and use groups to organize the files and folders in the Project navigator.
-- [Managing multiple projects and their dependencies](managing-multiple-projects-and-their-dependencies.md)
-  Manage related projects in one place using a workspace, or configure build-time dependencies between different Xcode projects using cross-project references.
 - [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
   Add more simulated devices, optional features, and support for additional platforms.
 ### Navigation
@@ -29,6 +24,9 @@ Manage the code and resources you use to build apps, libraries, and other softwa
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [Embedding a command-line tool in a sandboxed app](embedding-a-helper-tool-in-a-sandboxed-app.md)
   Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.
+### Customization
+- [Customizing your workspace using themes](customizing-your-workspace-using-themes.md)
+  Personalize the appearance of Xcode on your Mac.
 ### Associated domains and universal links
 - [Allowing apps and websites to link to your content](allowing-apps-and-websites-to-link-to-your-content.md)
   Use universal links to link directly to content within your app and share data securely.

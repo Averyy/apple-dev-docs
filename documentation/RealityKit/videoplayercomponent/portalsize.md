@@ -6,7 +6,7 @@
 The size of the portal window for immersive video playback, in meters.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

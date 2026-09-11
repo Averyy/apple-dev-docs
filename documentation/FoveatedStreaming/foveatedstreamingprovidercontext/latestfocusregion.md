@@ -6,7 +6,7 @@
 The latest eye input data, to be used to enable foveated streaming.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

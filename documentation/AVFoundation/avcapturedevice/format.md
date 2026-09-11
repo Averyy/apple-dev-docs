@@ -172,8 +172,24 @@ You can find more information about a capture format using its associated Core M
 - [Deprecated symbols](avcapturedevice-format-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Properties
+- [var defaultLensAperture: Float](avcapturedevice/format/defaultlensaperture.md)
+  The default value for the [`lensAperture`](avcapturedevice/lensaperture.md) property.
+- [var isCinematicVideoMetadataCaptureSupported: Bool](avcapturedevice/format/iscinematicvideometadatacapturesupported.md)
+  Indicates whether the format supports Cinematic Video Metadata capture.
+- [var isContinuousAutoFocusTrackingSupported: Bool](avcapturedevice/format/iscontinuousautofocustrackingsupported.md)
+  Indicates whether the device format supports continuous autofocus tracking.
 - [var isEdgeLightSupported: Bool](avcapturedevice/format/isedgelightsupported.md)
   Indicates whether the format supports the Edge Light feature.
+- [var isLowLightVideoNoiseReductionSupported: Bool](avcapturedevice/format/islowlightvideonoisereductionsupported.md)
+  Indicates whether the format supports low light video noise reduction.
+- [var maxLensAperture: Float](avcapturedevice/format/maxlensaperture.md)
+  The maximum supported value for the [`lensAperture`](avcapturedevice/lensaperture.md) property.
+- [var minLensAperture: Float](avcapturedevice/format/minlensaperture.md)
+  The minimum supported value for the [`lensAperture`](avcapturedevice/lensaperture.md) property.
+- [var recommendedLensApertureStops: [Float]](avcapturedevice/format/recommendedlensaperturestops.md)
+### Instance Methods
+- [func supportsExposureModeCustom(lensAperture: Float, duration: CMTime, iso: Float) -> Bool](avcapturedevice/format/supportsexposuremodecustom(lensaperture:duration:iso:).md)
+  Reports if the given set of exposure parameters are supported by this format.
 
 ## Relationships
 

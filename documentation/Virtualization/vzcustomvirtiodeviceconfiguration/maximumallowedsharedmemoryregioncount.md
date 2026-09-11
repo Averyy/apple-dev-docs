@@ -6,7 +6,7 @@
 The maximum number of Virtio shared memory regions the framework allows.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

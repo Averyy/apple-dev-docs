@@ -7,7 +7,7 @@
 Renames an item from one path in the file system to another.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

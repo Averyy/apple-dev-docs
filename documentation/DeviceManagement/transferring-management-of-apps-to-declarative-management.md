@@ -16,19 +16,6 @@ MDM commands for installing, listing, and removing managed apps don’t operate 
 
 The device management service detects the app’s management transfer by subscribing to two status items: [`StatusMDMApp`](statusmdmapp.md), which reports MDM-managed app status, and [`StatusAppManagedList`](statusappmanagedlist.md), which reports declarative managed app status. When the transfer occurs, the managed app’s entry in [`StatusMDMApp`](statusmdmapp.md) indicates its removal, and a new entry for the app appears in [`StatusAppManagedList`](statusappmanagedlist.md).
 
-## See Also
-
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
-  Use declarative management to handle all aspects of managing apps on devices.
-- [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
-  Use a management app to display managed apps and packages to the user.
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
-  Provide managed apps and extensions with app configuration and secrets.
-- [Processing status for managed apps](processing-status-for-managed-apps.md)
-  Process the status that declarative management reports for managed apps.
-- [Installing packages](installing-packages.md)
-  Use declarative package management to install and remove packages in macOS.
-
 
 ---
 

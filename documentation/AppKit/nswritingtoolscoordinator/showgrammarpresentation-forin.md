@@ -6,7 +6,7 @@
 Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

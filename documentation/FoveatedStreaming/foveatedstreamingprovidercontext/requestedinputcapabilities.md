@@ -6,7 +6,7 @@
 The set of input capabilities the host app has requested for this session.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

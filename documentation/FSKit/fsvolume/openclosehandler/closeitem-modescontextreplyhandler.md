@@ -7,7 +7,7 @@
 Closes a file from further access.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

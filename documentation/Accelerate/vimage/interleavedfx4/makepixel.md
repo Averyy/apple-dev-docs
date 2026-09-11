@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: method
 
-Returns a 32-bit floating-point pixel value from a 16-bit floating-point pixel value.
+Utility function to generate a `Pixel_FFFF` pixel value from a `Pixel_ARGB_16F` pixel value.
 
 **Availability**:
 - iOS 16.0+

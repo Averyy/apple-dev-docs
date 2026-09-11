@@ -6,7 +6,7 @@
 Context object provided to a streaming provider when it connects.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

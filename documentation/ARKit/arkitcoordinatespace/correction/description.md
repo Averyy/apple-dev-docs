@@ -6,7 +6,7 @@
 Textual description of this correction type.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 26.0+
 
 ## Declaration

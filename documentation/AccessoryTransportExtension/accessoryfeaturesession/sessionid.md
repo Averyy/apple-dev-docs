@@ -7,8 +7,7 @@
 The session identifier for this capability session.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Returns the frame of the text container at the specified point.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

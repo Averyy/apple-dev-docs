@@ -6,7 +6,7 @@
 Opens the File System Extensions settings in System Settings.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

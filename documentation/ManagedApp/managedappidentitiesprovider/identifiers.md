@@ -8,7 +8,7 @@ An asynchronous sequence of arrays of identity identifiers provided by the MDM s
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 2.4+
 
 ## Declaration

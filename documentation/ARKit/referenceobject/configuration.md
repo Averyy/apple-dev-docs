@@ -6,7 +6,7 @@
 Defines a configuration for an individual reference object.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

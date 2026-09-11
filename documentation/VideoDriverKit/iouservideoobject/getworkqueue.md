@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the work queue created by the video object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,13 +16,11 @@ OSSharedPtr<IODispatchQueue> GetWorkQueue();
 
 #### Return Value
 
-Returns an OSSharedPtr to an IODispatchQueue on success
+An OSSharedPtr to an IODispatchQueue on success
 
 #### Discussion
 
-Gets the work queue created by the IOUserVideoObject in an OSSharedPtr.
-
-The work queue is used to synchronize access to the object’s state.  Setters and Getters for the object will be done on the work queue.
+The work queue is used to synchronize access to the object’s state. Setters and Getters for the object will be done on the work queue.
 
 
 ---

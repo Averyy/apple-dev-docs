@@ -6,7 +6,7 @@
 A gesture recognizer for setting up failure or exclusion relationships against scrolling gestures
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

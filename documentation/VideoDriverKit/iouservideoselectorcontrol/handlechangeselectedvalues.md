@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+The system calls this virtual method when the control’s selected values change.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,17 +16,15 @@ virtual kern_return_t HandleChangeSelectedValues(const IOUserVideoSelectorValue 
 
 #### Return Value
 
-Returns kIOReturnSuccess on sucess. Upon sucess the control’s value should be updated.
+`kIOReturnSuccess` on success. Upon success, the control’s value should be updated.
 
 #### Discussion
 
-Virtual method will be called when the controls selected values will be changed.
-
-Default implementation will call SetCurrentSelectedValues() and return kIOReturnSuccess. Subclass and override this method to handle changes to this control and return kIOReturnSucess upon success.
+The default implementation calls SetCurrentSelectedValues() and returns `kIOReturnSuccess`. Subclass and override this method to handle changes to this control and return `kIOReturnSuccess` upon success.
 
 ## Parameters
 
-- `in_control_values`: Pointer to an array of IOUserVideoSelectorValues attempting to be set on the control.
+- `in_control_values`: Pointer to an array of IOUserVideoSelectorValues to set on the control.
 - `in_num_values`: The number of IOUserVideoSelectorValues in in_control_values.
 
 

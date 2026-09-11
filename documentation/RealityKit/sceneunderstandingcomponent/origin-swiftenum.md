@@ -9,7 +9,7 @@ Types of scene-understanding origins this component lives in.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 1.0+
 
 ## Declaration

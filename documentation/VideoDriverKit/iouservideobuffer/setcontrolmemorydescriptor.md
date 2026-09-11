@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,13 +14,7 @@
 kern_return_t SetControlMemoryDescriptor(IOMemoryDescriptor *in_control_memory_descriptor);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
-
-Set a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 
 Setting this value should only be done during the PerformDeviceConfigurationChange() call. If the value needs to be changed, RequestDeviceConfigChange() should be called to allow IO to stop and the config change to be performed.
 
@@ -29,8 +25,11 @@ Setting this value should only be done during the PerformDeviceConfigurationChan
 ## See Also
 
 - [SetDataMemoryDescriptor](iouservideobuffer/setdatamemorydescriptor.md)
+  Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 - [GetDataMemoryDescriptor](iouservideobuffer/getdatamemorydescriptor.md)
+  Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
 - [GetControlMemoryDescriptor](iouservideobuffer/getcontrolmemorydescriptor.md)
+  Gets the memory descriptior used for video IO that was initialized with or set on the video stream.
 
 
 ---

@@ -6,7 +6,7 @@
 The restlt of a set-attributes call.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

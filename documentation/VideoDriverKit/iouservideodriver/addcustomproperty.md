@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Adds a custom property object to the video driver.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,20 +16,18 @@ kern_return_t AddCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 
 #### Return Value
 
-Returns kIOReturnSuccess on success
-
-#### Discussion
-
-Adds a IOUserVideoCustomProperty object to the IOUserVideoDriver.
+`kIOReturnSuccess` on success
 
 ## Parameters
 
-- `in_custom_property`: A IOUserVideoCustomProperty object that should be added to the IOUserVideoDriver
+- `in_custom_property`: The custom property object being added.
 
 ## See Also
 
 - [RemoveCustomProperty](iouservideodriver/removecustomproperty.md)
+  Removes a custom property object from the video driver.
 - [IOUserVideoCustomProperty](iouservideocustomproperty.md)
+  A custom property object that can be added to or associated with video objects.
 
 
 ---

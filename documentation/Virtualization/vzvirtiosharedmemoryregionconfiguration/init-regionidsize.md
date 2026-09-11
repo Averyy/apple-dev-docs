@@ -6,7 +6,7 @@
 Initializes a shared memory region with a shared memory region ID and size.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,10 +6,10 @@
 Validates that a node can be added to the graph without adding it, throwing a descriptive error if not.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

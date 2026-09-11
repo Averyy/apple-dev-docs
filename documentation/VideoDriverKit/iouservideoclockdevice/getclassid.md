@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the class identifier of the object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,18 +16,18 @@ virtual IOUserVideoClassID GetClassID();
 
 #### Return Value
 
-Returns IOUserVideoClassID
+A video class identifier.
 
 #### Discussion
 
-Get the IOUserVideoClassID of the object
-
-Overrides the base class IOUserVideoObject
+This method overrides the base class’s implementation.
 
 ## See Also
 
 - [GetBaseClassID](iouservideoclockdevice/getbaseclassid.md)
+  Gets the class identifier of the base class object.
 - [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+  Video class identifiers of an video object.
 
 
 ---

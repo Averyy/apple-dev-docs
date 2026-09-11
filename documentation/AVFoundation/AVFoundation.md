@@ -73,6 +73,11 @@ AVFoundation combines several major technology areas that together encompass a w
   A structure that defines the errors that framework operations can generate.
 ### Macros
 - [Macros](avfoundation-macros.md)
+### Classes
+- [class AVMetadataCinematicVideoMetadataObject](avmetadatacinematicvideometadataobject.md)
+  A metadata object containing opaque Cinematic video metadata for Cinematic video editing.
+- [class AVMetadataFocusTrackedObject](avmetadatafocustrackedobject.md)
+  A metadata object that is maintained in focus by the camera’s auto focus system continuously tracking it.
 
 
 ---

@@ -17,6 +17,10 @@ An intent that starts, pauses, or otherwise modifies a Live Activity when it run
 protocol LiveActivityIntent : SystemIntent
 ```
 
+## Mentions
+
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+
 #### Overview
 
 To gain permission for starting Live Activities, conform to this protocol. In general, your app needs to be in the foreground to start a Live Activity. However, you can use a `LiveActivityIntent` and start the Live Activity in its [`perform()`](appintent/perform().md) method. When the system performs the intent, the system launches your app process without opening the app, performs the intent, and starts the Live Activity. For example, people might place a control in Control Center that performs a `LiveActivityIntent` and starts the activity without opening your app. For more information about app intents, refer to [`App Intents`](AppIntents.md) and [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).

@@ -6,7 +6,7 @@
 Creates a custom accessory type with a uniform type identifier and chirality.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

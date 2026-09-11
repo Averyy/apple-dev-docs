@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the terminal type of the stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,20 +14,16 @@
 kern_return_t SetTerminalType(IOUserVideoStreamTerminalType in_terminal_type);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Set the terminal type of the IOUserVideoStream
-
-Terminal type can be changed dynamically.  A notification will be sent to the host to update the object state if successful.
+You can change the terminal type dynamically. On success, the system sends a notification to the host to update the object state.
 
 ## See Also
 
 - [GetTerminalType](iouservideostream/getterminaltype.md)
+  Gets the terminal type of the stream.
 - [IOUserVideoStreamTerminalType](videodriverkit/iouservideostreamterminaltype.md)
+  The terminal type of video stream.
 
 
 ---

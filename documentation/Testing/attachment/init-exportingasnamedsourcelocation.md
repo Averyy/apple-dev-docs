@@ -7,7 +7,7 @@ Initialize an instance of this type that encloses the given transferable value.
 
 **Availability**:
 - Swift 6.4+
-- Xcode 27.0+ (Beta)
+- Xcode 27.0+
 
 ## Declaration
 

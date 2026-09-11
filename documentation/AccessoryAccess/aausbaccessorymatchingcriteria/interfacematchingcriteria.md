@@ -6,7 +6,7 @@
 A structure you provide that enumerates which device interface characteristics to search for.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

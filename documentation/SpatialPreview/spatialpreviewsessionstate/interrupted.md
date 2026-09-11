@@ -6,7 +6,7 @@
 The session connection has been interrupted, but may resume.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

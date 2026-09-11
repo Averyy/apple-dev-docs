@@ -62,7 +62,7 @@ Tap and drag the window bar below your app’s content to reposition the window 
 
 > **Note**: Apps don’t control the placement of windows in the space. The system places each window in its initial position, and updates that position based on further interactions with the app.
 
-For additional information about how to interact with your app in Simulator, see [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub).
+For additional information about how to interact with your app in Simulator, see [`Interacting with your visionOS app in Device Hub`](https://developer.apple.com/documentation/xcode/interacting-with-your-visionos-app-in-device-hub).
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Enumeration representing an RCS service feature supported by a business.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

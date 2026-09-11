@@ -23,6 +23,7 @@ object AppManaged
 - [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
 - [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
 - [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
+- [Allowing and denying apps and binaries](allowing-and-denying-apps-and-binaries.md)
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Installing packages](installing-packages.md)
 - [Migrating managed devices](migrating-managed-devices.md)

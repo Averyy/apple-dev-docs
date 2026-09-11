@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+A static factory method that allocates and initializes a custom property.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -18,9 +20,7 @@ OSSharedPtr to an IOUserVideoBooleanControl if it was successfully allocated and
 
 #### Discussion
 
-Static factory method to allocate and initialize an IOUserVideoCustomProperty.
-
-If IOUserVideoCustomProperty is subclassed to override behavior, Create should not be used to allocate/initialize the custom subclass.
+If IOUserVideoCustomProperty is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 
 ## Parameters
 
@@ -33,8 +33,11 @@ If IOUserVideoCustomProperty is subclassed to override behavior, Create should n
 ## See Also
 
 - [init](iouservideocustomproperty/init.md)
+  Initializes a custom property.
 - [IOUserVideoObjectPropertyAddress](videodriverkit/iouservideoobjectpropertyaddress.md)
+  A data structure that contains all the three parts to identify a specific property, for easy transmission.
 - [IOUserVideoCustomPropertyDataType](videodriverkit/iouservideocustompropertydatatype.md)
+  Data qualifier types used for custom properties.
 
 
 ---

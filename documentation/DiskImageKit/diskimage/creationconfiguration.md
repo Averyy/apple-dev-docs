@@ -6,7 +6,7 @@
 A marker protocol for disk image creation configurations.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

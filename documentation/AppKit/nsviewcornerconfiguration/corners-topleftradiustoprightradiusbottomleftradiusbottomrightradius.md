@@ -6,7 +6,7 @@
 A configuration with independent radii for each corner.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

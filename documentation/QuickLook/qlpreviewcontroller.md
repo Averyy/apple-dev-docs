@@ -99,7 +99,7 @@ In addition, the system doesn’t display a live preview if you embed the `QLPre
 ## See Also
 
 - [protocol QLPreviewItem](../quicklookui/qlpreviewitem.md)
-  A protocol that defines a set of properties you implement to make a preview of your application’s content.
+  A protocol that defines a set of properties you implement to make a preview of your app’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.
 - [Previews or thumbnail images for macOS 10.14 or earlier](previews-or-thumbnail-images-for-macos-10-14-or-earlier.md)

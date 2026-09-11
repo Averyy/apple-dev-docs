@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the value indicating the box’s MIDI support
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,23 +14,22 @@
 kern_return_t SetHasMIDI(bool in_has_midi);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the value indicating the box’s midi support
-
-A notification will be sent to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetHasAudio](iouservideobox/sethasaudio.md)
+  Sets the value indicating the box’s audio support.
 - [HasAudio](iouservideobox/hasaudio.md)
+  A Boolean value indicating if box has audio capabilities.
 - [SetHasVideo](iouservideobox/sethasvideo.md)
+  Sets the value indicating the box’s video support.
 - [HasVideo](iouservideobox/hasvideo.md)
+  A Boolean value indicating if box has video capabilities.
 - [HasMIDI](iouservideobox/hasmidi.md)
+  A Boolean value indicating if box has MIDI capabilities.
 
 
 ---

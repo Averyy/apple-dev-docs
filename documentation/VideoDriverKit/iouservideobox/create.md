@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Static factory method to allocate and initialize an IOUserVideoBox.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -18,9 +20,7 @@ OSSharedPtr to an IOUserVideoBox if it was successfully allocated and initialize
 
 #### Discussion
 
-Static factory method to allocate and initialize an IOUserVideoBox.
-
-If IOUserVideoBox is subclassed to override behavior, Create should not be used to allocate/initialize the custom subclass.
+If IOUserVideoBox is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 
 ## Parameters
 
@@ -30,7 +30,9 @@ If IOUserVideoBox is subclassed to override behavior, Create should not be used 
 ## See Also
 
 - [init](iouservideobox/init.md)
+  Initializes a video box.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 
 
 ---

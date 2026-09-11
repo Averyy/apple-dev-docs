@@ -6,7 +6,7 @@
 A type that indicates writes immediately update the cache only, followed by a deferred write to storage.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

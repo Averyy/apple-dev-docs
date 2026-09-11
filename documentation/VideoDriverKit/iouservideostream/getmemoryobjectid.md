@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the video object identifier for a memory object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,22 +16,22 @@ IOUserVideoObjectID GetMemoryObjectID(uint32_t memtype);
 
 #### Return Value
 
-Returns IOUserVideoObjectID of the data portion of the IOUserVideoBuffer.
-
-#### Discussion
-
-Get the IOUserVideoObjectID for the memory object given the memtype which is a catagory in the upper 16bits and an index if needed in the lower 16 bits
+The object identifier of the data portion of the buffer.
 
 ## Parameters
 
-- `memtype`: The IOUserVideoObjectID of the memory specified  by the memtype
+- `memtype`: A value encoding the memory object’s category in the upper 16 bits and, if needed, an index in the lower 16 bits.
 
 ## See Also
 
 - [GetOutputControlMemoryDescriptor](iouservideostream/getoutputcontrolmemorydescriptor.md)
+  Gets the memory descriptor used for the control data part of a buffer.
 - [GetOutputDataMemoryDescriptor](iouservideostream/getoutputdatamemorydescriptor.md)
+  Gets the memory descriptor used for the video data part of a buffer.
 - [GetOutputQueueMemoryDescriptor](iouservideostream/getoutputqueuememorydescriptor.md)
+  Returns an memory descriptorrepesenting the shared memory output queue buffer.
 - [GetInputQueueMemoryDescriptor](iouservideostream/getinputqueuememorydescriptor.md)
+  Returns an memory descriptor for the shared memory input queue buffer.
 
 
 ---

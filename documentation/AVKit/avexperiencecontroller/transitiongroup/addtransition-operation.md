@@ -6,7 +6,7 @@
 Adds a transition to the group, suspending it until all transitions are ready to run together.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

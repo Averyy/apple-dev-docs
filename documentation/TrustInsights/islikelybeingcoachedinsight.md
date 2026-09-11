@@ -6,8 +6,8 @@
 An insight to request to examine indications that someone may be actively coaching a person to perform actions.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A content type for text content.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

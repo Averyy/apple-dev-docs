@@ -6,7 +6,7 @@
 WAVE: “Back Center” or plain “Rear Surround”
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

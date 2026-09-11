@@ -6,7 +6,7 @@
 The configuration for guest setup during macOS virtual machine startup.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

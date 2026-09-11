@@ -6,8 +6,8 @@
 A Boolean value that indicates whether an app supports URL-based playback via a media device extension.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 
 

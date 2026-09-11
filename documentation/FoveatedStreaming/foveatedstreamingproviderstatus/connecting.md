@@ -6,7 +6,7 @@
 [`connect(context:)`](foveatedstreamingextension/connect(context:).md) is in progress.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

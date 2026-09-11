@@ -6,7 +6,7 @@
 Notifies the delegate when the user chooses to disable grammar checking.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

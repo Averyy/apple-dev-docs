@@ -7,7 +7,7 @@
 Notifies the file system that the kernel is no longer making immediate use of the given item.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

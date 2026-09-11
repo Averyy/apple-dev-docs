@@ -6,7 +6,7 @@
 The method the framework calls when a USB accessory disconnects from the system.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

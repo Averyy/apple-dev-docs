@@ -59,10 +59,23 @@ A clock represents a source of time information: a piece of hardware that measur
 ### Constants
 - [CMClock.Error](cmclock/error.md)
   Constants that describe clock errors.
+### Structures
+- [CMClock.DisplayGenlockModeChangedMessage](cmclock/displaygenlockmodechangedmessage.md)
+  A message delivered when the display mode changes from genlock to non-genlock or vice versa.
+- [CMClock.StartTimePattern](cmclock/starttimepattern.md)
 ### Initializers
 - [init(referencing: CMClock)](cmclock/init(referencing:).md)
+### Instance Properties
+- [var implementsPreferredStartTimePattern: Bool](cmclock/implementspreferredstarttimepattern.md)
+  Indicates whether this clock implements preferred start time patterns.
+### Instance Methods
+- [func nextPreferredStartTimePattern() -> CMClock.StartTimePattern?](cmclock/nextpreferredstarttimepattern.md)
+  Returns the pattern of preferred start times, such as for synchronization with an external genlock signal.
 ### Type Aliases
 - [typealias T](cmclock/t.md)
+### Type Properties
+- [static var genlockClock: CMClock?](cmclock/genlockclock.md)
+- [static var isAnyDisplaySynchronizedToLockedGenlockSignal: Bool](cmclock/isanydisplaysynchronizedtolockedgenlocksignal.md)
 ### Default Implementations
 - [CMSyncProtocol Implementations](cmclock/cmsyncprotocol-implementations.md)
 

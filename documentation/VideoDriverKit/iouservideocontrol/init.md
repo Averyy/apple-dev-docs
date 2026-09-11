@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Initializes a video control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,22 +18,21 @@ virtual bool init(IOUserVideoDriver *in_driver, bool in_is_settable, IOUserVideo
 
 True on success.
 
-#### Discussion
-
-Initializes a IOUserVideoControl.
-
 ## Parameters
 
 - `in_driver`: The IOUserVideoDriver that owns this object.
-- `in_is_settable`: A bool value indicating if the control value can be set
+- `in_is_settable`: A Boolean value indicating if the control value can be set
 - `in_control_element`: A IOUserVideoObjectPropertyElement for the control
 - `in_control_scope`: A IOUserVideoObjectPropertyScope for the control
 
 ## See Also
 
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 - [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+  An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
 - [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+  A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 
 ---

@@ -32,6 +32,8 @@ To manage your simulated and physical devices, select a device in the sidebar to
   Modify the settings of a simulated device.
 - [Interacting with your app in Device Hub](interacting-with-your-app-in-device-hub.md)
   Use Device Hub to control interactions with your apps on simulated and physical devices.
+- [Interacting with your visionOS app in Device Hub](interacting-with-your-visionos-app-in-device-hub.md)
+  Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
 - [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
 ### Device details

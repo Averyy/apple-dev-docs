@@ -1,4 +1,4 @@
 Completed scraping External Accessory!
-Total pages scraped: 0
-Pages skipped (unchanged): 88
+Total pages scraped: 8
+Pages skipped (unchanged): 80
 Pages failed: 0

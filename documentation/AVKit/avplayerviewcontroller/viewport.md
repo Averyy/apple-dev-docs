@@ -6,7 +6,7 @@
 A configuration object that manages viewport settings for different presentation modes.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 The mobile national ID card holder’s name.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst 18.0+
 
 ## Declaration

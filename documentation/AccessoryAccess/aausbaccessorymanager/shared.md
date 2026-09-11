@@ -6,7 +6,7 @@
 Returns the shared USB accessory manager object for this process.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

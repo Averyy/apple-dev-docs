@@ -5,8 +5,8 @@
 Send and update documents, and work with 3D content live from your Mac app to a visionOS device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- macOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

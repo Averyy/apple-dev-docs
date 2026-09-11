@@ -6,7 +6,7 @@
 The features supported by the business.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

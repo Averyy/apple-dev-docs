@@ -6,7 +6,7 @@
 HTTP headers forwarded to the server for authentication and session management.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

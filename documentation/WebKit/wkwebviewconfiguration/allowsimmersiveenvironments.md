@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -5,10 +5,10 @@
 Give a language model access to your app’s Core Spotlight index to enable natural-language queries over searchable content.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- Xcode 27.0+
 
 #### Overview
 
@@ -26,9 +26,9 @@ This sample requires a device that supports Apple Intelligence, running iOS 27 o
 
 Before you build and run the sample, turn on Apple Intelligence by opening Settings > Apple Intelligence & Siri.
 
-By default, the sample runs searches on the on-device, so the project builds and runs without additional configuration. For best performance, route searches through Private Cloud Compute (PCC). For additional information, see [`Adopt Private Cloud Compute`](searching-indexed-content-with-natural-language#Adopt-Private-Cloud-Compute.md).
+By default, the sample runs searches on the on-device system language model, so the project builds and runs without additional configuration. For best search performance, route searches to *Private Cloud Compute* (PCC) models designed for Apple Intelligence. For more information, see [`Adopt Private Cloud Compute`](searching-indexed-content-with-natural-language#Adopt-Private-Cloud-Compute.md).
 
-#### Create a Search Tool for the Language Model
+#### Provide Search Attributes to the Language Model
 
 The sample creates a [`SpotlightSearchTool`](spotlightsearchtool.md) configured with a Core Spotlight source to let the language model search the indexed content. The `fetchAttributes` parameter specifies which item attributes the tool returns to the model, providing the information it uses to answer questions about trails. The sample includes both built-in attributes and a custom distance attribute that the app indexes for each trail:
 
@@ -47,31 +47,50 @@ let fetchAttributes: [SearchableItemAttribute] = [
     .completionDate,
     SearchableItemAttribute(rawValue: distanceAttributeKey.keyName)
 ]
-
-let tool = SpotlightSearchTool(
-    configuration: .init(
-        sources: [
-            .coreSpotlight(
-                .init(
-                    searchableIndexDelegate: SpotlightIndexer.shared,
-                    fetchAttributes: fetchAttributes
-                )
-            )
-        ],
-        guide: .focused()
-    )
-)
 ```
 
 #### Adopt Private Cloud Compute
 
-By default, the sample runs searches on the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel), so the project builds and runs without additional configuration. The view model exposes the model it uses as a `serverModel` property:
+By default, the sample searches your app’s Spotlight index using the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel), so the project builds and runs without additional configuration.
 
-```swift
-let serverModel = SystemLanguageModel()
+The sample’s view model exposes the language model it uses as a `foundationModel` property:
+
+```Swift
+// Initialize `foundationModel` with an on-device model so the sample works without additional configuration:
+let foundationModel = SystemLanguageModel()
+// Alternatively, initialize `foundationModel` with a PCC language model.
+// let foundationModel = PrivateCloudComputeLanguageModel()
 ```
 
-To route searches through Private Cloud Compute (PCC) instead, initialize `serverModel` with [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel). When `serverModel` is the PCC model, the search tool uses the [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md) guide for richer query construction; on device, it uses [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](spotlightsearchtool/guidancelevel/focused(_:).md) and provides more explicit search instructions to suit the smaller model. For eligibility and setup, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute).
+For best search performance that takes advantage of server models, route searches through *Private Cloud Compute* (PCC) instead. For eligibility and setup, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute).
+
+To adopt PCC, initialize `foundationModel` with [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel). When `foundationModel` is the PCC model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md) guide for richer query construction; on device. When `foundationModel` is the on-device model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](spotlightsearchtool/guidancelevel/focused(_:).md) guide and provides more explicit search instructions to suit the smaller model.
+
+```Swift
+// A Boolean value that indicates whether the search tool uses an on-device or PCC model.
+private var isOnDevice: Bool {
+    type(of: foundationModel) == SystemLanguageModel.self
+}
+
+// Initializes the Spotlight search tool and guides it to
+// perform a `.focused()` search when using an on-device model and a
+// `.complete` search when using Private Cloud Compute models.
+private func makeSpotlightTool() -> SpotlightSearchTool {
+    SpotlightSearchTool(
+        configuration: .init(
+            sources: [
+                .coreSpotlight(
+                    .init(
+                        searchableIndexDelegate: SpotlightIndexer.shared,
+                        fetchAttributes: Self.fetchAttributes
+                    )
+                )
+            ],
+            guide: isOnDevice ? .focused() : .complete
+        )
+    )
+}
+```
 
 #### Stream Responses From the Language Model
 
@@ -79,7 +98,7 @@ The sample passes the search tool to a [`LanguageModelSession`](https://develope
 
 ```swift
 let session = LanguageModelSession(
-    model: serverModel,
+    model: foundationModel,
     tools: [tool],
     instructions: instructions
 )

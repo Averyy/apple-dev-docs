@@ -54,6 +54,8 @@ For more information about app schemas, see [`App schema domains`](app-schema-do
   Make your ebook reader’s actions available in the Shortcuts app by adopting schemas for common reading actions.
 - [Browser](app-schema-domain-browser.md)
   Make your web browser’s actions available in the Shortcuts app by adopting schemas for common browsing actions.
+- [Files](app-schema-domain-files.md)
+  Make your app’s file-management actions available in the Shortcuts app.
 - [Journaling](app-schema-domain-journaling.md)
   Make your journaling app’s actions available in the Shortcuts app by adopting schemas for journal-entry management.
 - [Presentation](app-schema-domain-presentation.md)

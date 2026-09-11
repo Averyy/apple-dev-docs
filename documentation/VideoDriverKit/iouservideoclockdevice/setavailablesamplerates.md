@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the available sample rates for the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetAvailableSampleRates(const double *in_sample_rates, size_t in_num_rates);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the available sample rates for the clock device.
-
-Changing the available sample rates will send a notification to the host to update the object state if successful. Setting the sample rates will be synchronized using the work queue created by the object.
+Changing the available sample rates will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the sample rates.
 
 ## Parameters
 
@@ -30,9 +26,13 @@ Changing the available sample rates will send a notification to the host to upda
 ## See Also
 
 - [SetSampleRate](iouservideoclockdevice/setsamplerate.md)
+  Sets the current sample rate for the clock device.
 - [GetSampleRate](iouservideoclockdevice/getsamplerate.md)
+  Gets sample rate of the clock device.
 - [GetAvailableSampleRates](iouservideoclockdevice/getavailablesamplerates.md)
+  Gets available sample rates of the clock device.
 - [GetNumberAvailableSampleRates](iouservideoclockdevice/getnumberavailablesamplerates.md)
+  Gets number of available sample rates of the clock device.
 
 
 ---

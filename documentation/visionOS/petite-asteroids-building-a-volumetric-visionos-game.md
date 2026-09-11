@@ -135,7 +135,7 @@ func updateDragStartPosition(dragStartPosition: SIMD3<Float>,
 }
 ```
 
-> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub).
+> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [`Interacting with your visionOS app in Device Hub`](https://developer.apple.com/documentation/xcode/interacting-with-your-visionos-app-in-device-hub).
 
 #### Climb the Butte with Dual Input Gestures
 

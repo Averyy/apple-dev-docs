@@ -20,6 +20,10 @@ Construct the compute plan of a model asynchronously given the location of its o
 static func load(contentsOf url: URL, configuration: MLModelConfiguration) async throws -> MLComputePlan
 ```
 
+## Mentions
+
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+
 ## Parameters
 
 - `url`: The on-disk location of the compiled model (.mlmodelc directory).

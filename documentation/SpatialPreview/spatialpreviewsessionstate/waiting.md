@@ -6,7 +6,7 @@
 The session has been created, but not started.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

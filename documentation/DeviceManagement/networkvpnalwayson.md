@@ -6,10 +6,10 @@
 The declaration to configure a VPN using the Always On sub-type.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- visionOS 27.0+
 
 ## Declaration
 
@@ -74,10 +74,6 @@ This configuration sets up an always-on IKEv2 VPN for both Cellular and Wi-Fi in
   The array of captive networking apps whose traffic is allowed outside the VPN tunnel, to perform captive network handling. Used only when `AllowAllCaptiveNetworkPlugins` is `false`.
 - [object NetworkVPNAlwaysOnApplicationExceptionElementObject](networkvpnalwaysonapplicationexceptionelementobject.md)
   An array that contains an arbitrary number of apps whose connections occur outside the VPN.
-- [object NetworkVPNAlwaysOnDNSObject](networkvpnalwaysondnsobject.md)
-  A dictionary to use for all VPN types.
-- [object NetworkVPNAlwaysOnProxiesObject](networkvpnalwaysonproxiesobject.md)
-  The dictionary to use to configure `Proxies` for use with `VPN`.
 - [object NetworkVPNAlwaysOnServiceExceptionElementObject](networkvpnalwaysonserviceexceptionelementobject.md)
   An array that contains an arbitrary number of service exceptions.
 - [object NetworkVPNAlwaysOnTunnelConfigurationElementObject](networkvpnalwaysontunnelconfigurationelementobject.md)
@@ -89,8 +85,6 @@ This configuration sets up an always-on IKEv2 VPN for both Cellular and Wi-Fi in
 - `AllowCaptiveWebSheet` (boolean): If `true`, allows traffic from Captive Web Sheet outside the VPN tunnel.
 - `AllowedCaptiveNetworkPlugins` ([NetworkVPNAlwaysOnAllowedCaptiveNetworkPluginElementObject]): The array of captive networking apps whose traffic is allowed outside the VPN tunnel, to perform captive network handling. Used only when `AllowAllCaptiveNetworkPlugins` is `false`.
 - `ApplicationExceptions` ([NetworkVPNAlwaysOnApplicationExceptionElementObject]): An array that contains an arbitrary number of apps whose connections occur outside the VPN.
-- `DNS` (NetworkVPNAlwaysOnDNSObject): A dictionary to use for all VPN types.
-- `Proxies` (NetworkVPNAlwaysOnProxiesObject): The dictionary to use to configure `Proxies` for use with `VPN`.
 - `ServiceExceptions` ([NetworkVPNAlwaysOnServiceExceptionElementObject]): An array that contains an arbitrary number of service exceptions.
 - `TunnelConfigurations` ([NetworkVPNAlwaysOnTunnelConfigurationElementObject]) *(required)*: An array that contains an arbitrary number of tunnel configurations.
 - `UIToggleEnabled` (boolean): If `true`, allows the user to disable the VPN configuration.

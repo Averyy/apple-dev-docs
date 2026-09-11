@@ -7,7 +7,7 @@
 Returns the buffered input state that best aligns with the provided spatial accessory anchor timestamp.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

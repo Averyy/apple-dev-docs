@@ -6,7 +6,7 @@
 The viewport configuration to use when the player displays immersive content in a portal.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

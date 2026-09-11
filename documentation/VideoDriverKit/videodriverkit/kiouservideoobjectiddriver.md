@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: var
 
+The video object identifier of the driver.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,9 +16,7 @@ constexpr const IOUserVideoObjectID kIOUserVideoObjectIDDriver;
 
 #### Discussion
 
-IOUserVideoObjectID’s that are always the same
-
-The IOUserVideoObjectID that always refers to the one and only instance of the IOUserVideoDriver
+This video object ID always refers to the one and only instance of the `IOUserVideoDriver` class.
 
 
 ---

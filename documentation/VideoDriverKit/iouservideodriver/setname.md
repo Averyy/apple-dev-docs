@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the name of the video driver.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,25 +16,28 @@ kern_return_t SetName(OSString *in_name);
 
 #### Return Value
 
-Returns kern_return_t.
+A kern_return_t value indicating success or failure.
 
 #### Discussion
 
-Set the name of the IOUserVideoDriver
-
-If object can change the name dynamically, a notification will be sent to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+If the object can change the name dynamically, the object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to this value.
 
 ## Parameters
 
-- `in_name`: OSString name to set.
+- `in_name`: An OSString name to set.
 
 ## See Also
 
 - [GetClassID](iouservideodriver/getclassid.md)
+  Gets the class identifier of the object.
 - [GetBaseClassID](iouservideodriver/getbaseclassid.md)
+  Gets the class identifier of the base class object.
 - [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+  Video class identifiers of an video object.
 - [GetWorkQueue](iouservideodriver/getworkqueue.md)
+  Gets the work queue created by the video object.
 - [GetName](iouservideodriver/getname.md)
+  Gets the name of the driver.
 
 
 ---

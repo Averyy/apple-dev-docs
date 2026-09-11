@@ -5,8 +5,8 @@
 Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

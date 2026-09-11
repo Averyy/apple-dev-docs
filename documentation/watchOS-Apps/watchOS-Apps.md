@@ -95,6 +95,8 @@ Use SiriKit and App intents to expand the ways people can interact with your app
 - [Notifications](notifications.md)
   Communicate with users even when your app isn’t running.
 ### Siri
+- [Making actions and content discoverable by Apple Intelligence](../appintents/making-actions-and-content-discoverable-by-apple-intelligence.md)
+  Equip the system so that Siri can work with your app by adding specific schemas from relevant domains.
 - [Creating an Intents App Extension](../sirikit/creating-an-intents-app-extension.md)
   Add and configure an Intents app extension in your Xcode project.
 ### Health and fitness

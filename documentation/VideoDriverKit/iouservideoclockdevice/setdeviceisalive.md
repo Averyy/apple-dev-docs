@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets a Boolean value to indicate the device is alive.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetDeviceIsAlive(bool in_is_alive);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Set bool to indicate the device is alive.
-
-A bool where true means the device is ready and available and false means the device is unusable and will most likely go away shortly.
+A true  value means the device is ready and available and false means the device is unusable and will most likely go away shortly.
 
 ## Parameters
 
@@ -29,9 +25,13 @@ A bool where true means the device is ready and available and false means the de
 ## See Also
 
 - [GetDeviceIsRunning](iouservideoclockdevice/getdeviceisrunning.md)
+  Gets bool value indicating if device is running.
 - [GetDeviceIsAlive](iouservideoclockdevice/getdeviceisalive.md)
+  Gets a Boolean value indicating if the device is alive.
 - [SetIsHidden](iouservideoclockdevice/setishidden.md)
+  Sets a Boolean value indicating if the device is hidden.
 - [GetIsHidden](iouservideoclockdevice/getishidden.md)
+  Gets a Boolean value indicating if the device is hidden.
 
 
 ---

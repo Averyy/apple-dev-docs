@@ -5,8 +5,8 @@
 Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

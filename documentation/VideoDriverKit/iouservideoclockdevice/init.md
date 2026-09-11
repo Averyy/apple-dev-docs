@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Initializes a video clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,10 +18,6 @@ virtual bool init(IOUserVideoDriver *in_driver, OSString *in_device_uid, OSStrin
 
 True on success.
 
-#### Discussion
-
-Initializes a IOUserVideoClockDevice.
-
 ## Parameters
 
 - `in_driver`: The IOUserVideoDriver that owns this object.
@@ -30,7 +28,9 @@ Initializes a IOUserVideoClockDevice.
 ## See Also
 
 - [Create](iouservideoclockdevice/create.md)
+  A static factory method that allocates and initializes a video clock device.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 
 
 ---

@@ -6,7 +6,7 @@
 Enables Secure Boot with an Apple-managed Platform Key.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A protocol that identifies a view or layer as a drawable element for a text layout fragment.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

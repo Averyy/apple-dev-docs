@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+A Boolean value indicating if box is protected.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,17 +14,14 @@
 bool IsProtected();
 ```
 
-#### Return Value
-
-Returns bool
-
 #### Discussion
 
-Bool value indiciating if box is protected. Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetIsProtected](iouservideobox/setisprotected.md)
+  Sets the value indicating the box’s protection state.
 
 
 ---

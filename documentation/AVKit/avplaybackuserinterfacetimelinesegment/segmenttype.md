@@ -6,9 +6,9 @@
 The type of content within this segment, indicating whether it is primary program content or a specific category of auxiliary content.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

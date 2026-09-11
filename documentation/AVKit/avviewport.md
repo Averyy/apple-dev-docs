@@ -6,7 +6,7 @@
 An object that provides configuration options for how the player displays content in different viewing contexts.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

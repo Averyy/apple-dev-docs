@@ -6,7 +6,7 @@
 The open mode of the disk image, read-only or read-write.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 A non-bundled, non-UI executable (e.g. a launchd daemon) designated as an assessment participant by its on-disk path.
 
 **Availability**:
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

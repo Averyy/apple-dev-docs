@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the class identifier of the object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,16 +16,14 @@ virtual IOUserVideoClassID GetClassID();
 
 #### Return Value
 
-Returns IOUserVideoClassID
-
-#### Discussion
-
-Get the IOUserVideoClassID of the object
+A video class identifier.
 
 ## See Also
 
 - [GetBaseClassID](iouservideoobject/getbaseclassid.md)
+  Gets the class identifier of the object’s base class.
 - [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+  Video class identifiers of an video object.
 
 
 ---

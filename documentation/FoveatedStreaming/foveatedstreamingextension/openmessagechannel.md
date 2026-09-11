@@ -7,7 +7,7 @@
 Handles a message channel opened by the host app.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

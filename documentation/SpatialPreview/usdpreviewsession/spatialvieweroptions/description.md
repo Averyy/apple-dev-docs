@@ -6,7 +6,7 @@
 A human-readable description of the enabled options.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

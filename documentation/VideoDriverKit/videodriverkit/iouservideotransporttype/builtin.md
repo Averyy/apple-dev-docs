@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+The transport type identifier for video devices built into the system.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,6 +17,7 @@ BuiltIn
 ## See Also
 
 - [Unknown](videodriverkit/iouservideotransporttype/unknown.md)
+  The transport type identifier returned when a device doesn’t provide a transport type.
 
 
 ---

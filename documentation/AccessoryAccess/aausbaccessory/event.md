@@ -6,7 +6,7 @@
 Events that represent accessory connection and disconnection.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

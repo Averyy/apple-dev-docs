@@ -6,7 +6,7 @@
 The attribute mapping to use when creating users, or for authorization.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

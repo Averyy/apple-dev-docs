@@ -18,7 +18,7 @@ class QLPreviewReplyAttachment
 
 When providing a data-based Quick Look preview with HTML, use [`QLPreviewReplyAttachment`](qlpreviewreplyattachment.md) to include images, CSS, and other linked content in the HTML of the preview.
 
-Reference content in your html using the `CID` notation for the reference. For instance, if your HTML preview response includes an image, create a [`QLPreviewReplyAttachment`](qlpreviewreplyattachment.md) with the image, add it the reply’s [`attachments`](qlpreviewreply/attachments.md) with an associated string, and reference the image with the associated string, prefixed by `cid:`. The following example illustrates returning HTML as a preview reply with an image as an attachment:
+Reference content in your HTML using the `CID` notation for the reference. For example, if your HTML preview response includes an image, create a [`QLPreviewReplyAttachment`](qlpreviewreplyattachment.md) with the image, add it to the reply’s [`attachments`](qlpreviewreply/attachments.md) with an associated string, and reference the image with the associated string, prefixed by `cid:`. The following example illustrates returning HTML as a preview reply with an image as an attachment:
 
 ```swift
 let reply = QLPreviewReply(dataOfContentType: .html,
@@ -28,7 +28,7 @@ let reply = QLPreviewReply(dataOfContentType: .html,
                   <head></head>
                   <body>
                   <h1>Preview</h1>
-                  <img src=\"cid:exampleImage\" width=\"400\">
+                  <img src="cid:exampleImage" width="400">
                   </body>
                   </html>
                   """

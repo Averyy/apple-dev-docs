@@ -6,7 +6,7 @@
 The status item that reports the status of the Content Cache service.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

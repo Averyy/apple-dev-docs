@@ -6,7 +6,7 @@
 A sentinel instance that indicates no free space update occurred.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

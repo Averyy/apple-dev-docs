@@ -6,8 +6,8 @@
 Team identifier the running executable’s signature must match, or `nil` to skip the team check.
 
 **Availability**:
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

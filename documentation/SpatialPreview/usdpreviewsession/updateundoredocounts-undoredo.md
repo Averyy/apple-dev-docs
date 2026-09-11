@@ -6,7 +6,7 @@
 Update the count of undoable and redoable actions in the USDPreviewSession which is reflected in the UI on visionOS.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

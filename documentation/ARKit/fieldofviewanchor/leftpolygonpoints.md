@@ -6,7 +6,7 @@
 Left eye polygon boundary points defining the preset field of view.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

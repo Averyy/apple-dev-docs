@@ -7,7 +7,7 @@
 Creates a new file item and map its disk space.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

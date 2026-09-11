@@ -6,7 +6,7 @@
 An error value that indicates the accessory isn’t in the correct state for the current operation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

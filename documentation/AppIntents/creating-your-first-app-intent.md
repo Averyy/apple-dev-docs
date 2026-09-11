@@ -106,6 +106,8 @@ The result of an app intent can take many forms:
 
 For an example of how to design custom responses, see [`Design custom responses`](acceleratingappinteractionswithappintents#Design-custom-responses.md).
 
+> **Note**: When someone performs an action with Siri AI that invokes your app intent, the system might not display `IntentDialog` or `ShowsSnippetView`.
+
 ##### Register Dependencies to Other Parts of Your Code
 
 Most app intents are lightweight wrappers that call your app’s existing code to perform their actions. To ensure an app intent has the code it needs to function, you can add dependencies to other types in your app. A dependency tells the system that it can’t run the app intent until the specified object is available. For example, if an app intent requires access to your app’s database, you can create a dependency between the app intent and the object you use to access that database. Configure a dependency by doing the following in your code:
@@ -178,6 +180,8 @@ During development, validate that your intents behave as you expect by writing i
 
 ## See Also
 
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+  Configure your app intents to run from your app in the foreground or background, or from an app extension in the background.
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
 - [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)

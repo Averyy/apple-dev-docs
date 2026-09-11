@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the category name for the given element and scope of the video object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetElementCategoryName(IOUserVideoObjectPropertyElement in_element, IOUserVideoObjectPropertyScope in_scope, OSString *in_category_name);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Set the category name for the given element and scope of the IOUserVideoObject
-
-If object can change the name dynamically, a notification will be sent to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+If the object can change the name dynamically, the object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
@@ -31,10 +27,15 @@ If object can change the name dynamically, a notification will be sent to the ho
 ## See Also
 
 - [GetElementCategoryName](iouservideoobject/getelementcategoryname.md)
+  Gets the category name for the given element and scope of the video object.
 - [GetElementName](iouservideoobject/getelementname.md)
+  Gets the name for the given element and scope of the video object.
 - [SetElementName](iouservideoobject/setelementname.md)
+  Sets the name for the given element and scope of the video object.
 - [GetElementNumberName](iouservideoobject/getelementnumbername.md)
+  Gets the number name for the given element and scope of the video object.
 - [SetElementNumberName](iouservideoobject/setelementnumbername.md)
+  Sets the number name for the given element of the video object.
 
 
 ---

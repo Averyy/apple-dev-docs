@@ -31,7 +31,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [NFC](/design/human-interface-guidelines/nfc) - Near-field communication (NFC) allows devices within a few centimeters of each other to exchange information wirelessly.
 - [Photo editing](/design/human-interface-guidelines/photo-editing) - Photo-editing extensions let people modify photos and videos within the Photos app by applying filters or making other changes.
 - [ResearchKit](/design/human-interface-guidelines/researchkit) - A research app lets people everywhere participate in important medical research studies.
-- [SharePlay](/design/human-interface-guidelines/shareplay) - SharePlay helps multiple people share activities — like viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard — while they’re in a FaceTime call or Messages conversation.
+- [SharePlay](/design/human-interface-guidelines/shareplay) - SharePlay lets people experience activities together from anywhere, whether they’re watching a movie, playing a game, or sketching on a whiteboard.
 - [ShazamKit](/design/human-interface-guidelines/shazamkit) - ShazamKit supports audio recognition by matching an audio sample against the ShazamKit catalog or a custom audio catalog.
 - [Sign in with Apple](/design/human-interface-guidelines/sign-in-with-apple) - Sign in with Apple provides a fast, private way to sign into apps and websites, giving people a consistent experience they can trust and the convenience of not having to remember multiple accounts and passwords.
 - [Siri](/design/human-interface-guidelines/siri) - People use Siri to help them with the things they need to find, know, or do every day.
@@ -64,7 +64,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [NFC](nfc.md) - Near-field communication (NFC) allows devices within a few centimeters of each other to exchange information wirelessly.
 - [Photo editing](photo-editing.md) - Photo-editing extensions let people modify photos and videos within the Photos app by applying filters or making other changes.
 - [ResearchKit](researchkit.md) - A research app lets people everywhere participate in important medical research studies.
-- [SharePlay](shareplay.md) - SharePlay helps multiple people share activities — like viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard — while they’re in a FaceTime call or Messages conversation.
+- [SharePlay](shareplay.md) - SharePlay lets people experience activities together from anywhere, whether they’re watching a movie, playing a game, or sketching on a whiteboard.
 - [ShazamKit](shazamkit.md) - ShazamKit supports audio recognition by matching an audio sample against the ShazamKit catalog or a custom audio catalog.
 - [Sign in with Apple](sign-in-with-apple.md) - Sign in with Apple provides a fast, private way to sign into apps and websites, giving people a consistent experience they can trust and the convenience of not having to remember multiple accounts and passwords.
 - [Siri](siri.md) - People use Siri to help them with the things they need to find, know, or do every day.

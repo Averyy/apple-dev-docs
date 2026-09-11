@@ -6,7 +6,7 @@
 A UUID of the image that the framework uses to validate its compatibility with the layer above it in the stack
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

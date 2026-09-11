@@ -6,7 +6,7 @@
 Sets guest provisioning options with validation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Declares whether gesture recognizers should be exclusive in this view and its subviews.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

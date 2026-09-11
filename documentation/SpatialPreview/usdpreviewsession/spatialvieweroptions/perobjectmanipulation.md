@@ -6,7 +6,7 @@
 Enables per-object manipulation capabilities during the `USDPreviewSession`.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

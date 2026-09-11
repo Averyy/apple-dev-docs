@@ -34,6 +34,8 @@ By default, the first button has a key equivalent of Return, any button with a t
   A modal dialog or sheet attached to a document window.
 - [var buttons: [NSButton]](nsalert/buttons.md)
   The array of response buttons for the alert.
+- [NSApplication.ModalResponse](nsapplication/modalresponse.md)
+  A set of button return values for modal dialogs.
 
 
 ---

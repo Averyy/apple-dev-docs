@@ -3,18 +3,16 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the channel indices for the preferred stereo pair.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
 ```swift
 void GetPreferredChannelsForStereo(uint32_t *out_left_channel, uint32_t *out_right_channel);
 ```
-
-#### Discussion
-
-Get the channel indices for the prefered stereo pair
 
 ## Parameters
 
@@ -24,9 +22,13 @@ Get the channel indices for the prefered stereo pair
 ## See Also
 
 - [SetPreferredChannelsForStereo](iouservideodevice/setpreferredchannelsforstereo.md)
+  Sets the channel indices for the preferred stereo pair
 - [SetPreferredInputChannelLayout](iouservideodevice/setpreferredinputchannellayout.md)
+  Sets the input channel layout with IOUserVideoChannelLabel values
 - [SetPreferredOutputChannelLayout](iouservideodevice/setpreferredoutputchannellayout.md)
+  Sets the output channel layout.
 - [IOUserVideoChannelLabel](videodriverkit/iouservideochannellabel.md)
+  These constants are to set the preferred channel layout on video device.
 
 
 ---

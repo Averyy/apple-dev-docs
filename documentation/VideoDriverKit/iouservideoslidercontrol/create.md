@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+A static factory method that allocates and initializes an slider control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -18,14 +20,12 @@ OSSharedPtr to an IOUserVideoSliderControl if it was successfully allocated and 
 
 #### Discussion
 
-Static factory method to allocate and initialize an IOUserVideoSliderControl.
-
-If IOUserVideoSliderControl is subclassed to override behavior, Create should not be used to allocate/initialize the custom subclass.
+If IOUserVideoSliderControl is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 
 ## Parameters
 
 - `in_driver`: The IOUserVideoDriver that owns this object.
-- `in_is_settable`: A bool value indicating if the control value can be set
+- `in_is_settable`: A Boolean value indicating if the control value can be set
 - `in_control_value`: A uint32_t for the control’s current slider value
 - `in_range`: The IOUserVideoSliderRange for control
 - `in_control_element`: The IOUserVideoObjectPropertyElement for the control
@@ -35,9 +35,13 @@ If IOUserVideoSliderControl is subclassed to override behavior, Create should no
 ## See Also
 
 - [init](iouservideoslidercontrol/init.md)
+  Initializes a slider control.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 - [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+  An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
 - [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+  A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 
 ---

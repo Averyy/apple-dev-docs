@@ -6,7 +6,7 @@
 Enrolls the given signatures to Secure Boot databases.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

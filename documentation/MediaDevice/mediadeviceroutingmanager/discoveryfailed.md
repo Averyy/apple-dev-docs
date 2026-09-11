@@ -6,9 +6,9 @@
 Reports a discovery failure to the system, indicating that the extension was unable to search for devices.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

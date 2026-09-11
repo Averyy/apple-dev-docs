@@ -7,14 +7,17 @@ A unique identifier for the message’s capability session.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
+- Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
 let sessionID: UUID
 ```
+
+## Mentions
+
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 

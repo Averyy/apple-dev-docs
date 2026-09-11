@@ -6,7 +6,7 @@
 The value that represents the device protocol.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

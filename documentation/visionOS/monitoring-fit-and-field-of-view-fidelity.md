@@ -5,8 +5,8 @@
 Respond to changes in fit and field of view fidelity on Apple Vision Pro by using the Visual Fidelity API.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

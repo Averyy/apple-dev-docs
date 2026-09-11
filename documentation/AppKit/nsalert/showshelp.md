@@ -32,6 +32,8 @@ Clicking an alert’s help button can alternately cause the [`openHelpAnchor(_:i
   Specifies that the alert must do immediate layout instead of lazily just before display.
 - [var alertStyle: NSAlert.Style](nsalert/alertstyle.md)
   Indicates the alert’s severity level.
+- [NSAlert.Style](nsalert/style.md)
+  The set of alert styles to style alerts in your app.
 - [var accessoryView: NSView?](nsalert/accessoryview.md)
   The alert’s accessory view.
 - [var helpAnchor: NSHelpManager.AnchorName?](nsalert/helpanchor.md)

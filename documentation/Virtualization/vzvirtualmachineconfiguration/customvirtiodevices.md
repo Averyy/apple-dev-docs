@@ -6,7 +6,7 @@
 The array of custom virtio devices that you expose to the guest operating system.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

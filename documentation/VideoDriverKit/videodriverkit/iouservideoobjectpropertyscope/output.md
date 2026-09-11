@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+The scope for properties that apply to the output side of an object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,8 +17,11 @@ Output
 ## See Also
 
 - [Global](videodriverkit/iouservideoobjectpropertyscope/global.md)
+  The scope for properties that apply to the object as a whole.
 - [Input](videodriverkit/iouservideoobjectpropertyscope/input.md)
+  The scope for properties that apply to the input side of an object.
 - [PlayThrough](videodriverkit/iouservideoobjectpropertyscope/playthrough.md)
+  The scope for properties that apply to the play-through side of an object.
 
 
 ---

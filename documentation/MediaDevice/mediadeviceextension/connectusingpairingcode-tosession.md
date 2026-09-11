@@ -7,9 +7,9 @@
 Called after the user has input their authorization into a user interface. Use the Security framework’s keychain to store any derived key material.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

@@ -7,7 +7,7 @@
 An event emitted to the ChangelistDelegate indicating the end of a USD change.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

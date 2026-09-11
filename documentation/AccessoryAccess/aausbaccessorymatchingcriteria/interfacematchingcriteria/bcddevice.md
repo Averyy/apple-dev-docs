@@ -6,7 +6,7 @@
 The 2-byte Binary-Coded Decimal (BCD) value defined by the manufacturer to indicate the device revision or version number.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

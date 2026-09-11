@@ -3,22 +3,16 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Returns the video object identifier of the control’s owning device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
 ```swift
 IOUserVideoObjectID GetOwningDeviceID();
 ```
-
-#### Return Value
-
-Returns IOUserVideoObjectID
-
-#### Discussion
-
-Returns the IOUserVideoObjectID of the controls owning device
 
 
 ---

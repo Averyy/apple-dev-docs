@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the memory descriptor used for the video data part of a buffer.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,22 +16,22 @@ OSSharedPtr<IOMemoryDescriptor> GetOutputDataMemoryDescriptor(IOUserVideoObjectI
 
 #### Return Value
 
-Returns IOMemoryDescriptor in an OSSharedPtr.
-
-#### Discussion
-
-Get the IOMemoryDescriptor used for the video data part of the IOVideoUserBuffer given the IOUserVideoObjectID
+The memory descriptor.
 
 ## Parameters
 
-- `in_object_id`: The IOUserVideoObjectID of data portion of the desired IOUserVideoBuffer
+- `in_object_id`: The object identifier of the data portion of the desired buffer.
 
 ## See Also
 
 - [GetOutputControlMemoryDescriptor](iouservideostream/getoutputcontrolmemorydescriptor.md)
+  Gets the memory descriptor used for the control data part of a buffer.
 - [GetOutputQueueMemoryDescriptor](iouservideostream/getoutputqueuememorydescriptor.md)
+  Returns an memory descriptorrepesenting the shared memory output queue buffer.
 - [GetInputQueueMemoryDescriptor](iouservideostream/getinputqueuememorydescriptor.md)
+  Returns an memory descriptor for the shared memory input queue buffer.
 - [GetMemoryObjectID](iouservideostream/getmemoryobjectid.md)
+  Gets the video object identifier for a memory object.
 
 
 ---

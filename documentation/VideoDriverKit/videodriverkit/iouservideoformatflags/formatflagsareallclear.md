@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+Set if all the flags would be clear.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,9 +14,14 @@
 FormatFlagsAreAllClear
 ```
 
+#### Discussion
+
+This flag preserves `0` as the wildcard value.
+
 ## See Also
 
 - [LinearPCMFormatFlagsAreAllClear](videodriverkit/iouservideoformatflags/linearpcmformatflagsareallclear.md)
+  Synonym for `FormatFlagsAreAllClear`.
 
 
 ---

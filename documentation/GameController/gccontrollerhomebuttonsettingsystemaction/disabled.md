@@ -6,7 +6,7 @@
 System response to the game controller Home button press is disabled.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

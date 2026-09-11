@@ -7,7 +7,7 @@
 A property that provides up-to-date statistics of the volume.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

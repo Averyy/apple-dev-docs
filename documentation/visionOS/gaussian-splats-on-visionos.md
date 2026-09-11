@@ -5,8 +5,8 @@
 Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

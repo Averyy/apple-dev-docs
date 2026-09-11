@@ -11,7 +11,7 @@ A tool that a model can call to gather information at runtime or perform side ef
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
+- watchOS 27.0+
 
 ## Declaration
 

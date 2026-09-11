@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Specifies the output safety offset of the device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,13 +14,7 @@
 kern_return_t SetOutputSafetyOffset(uint32_t in_safety_offset);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
-
-Specify the output safety offset of the device.
 
 A uint32_t whose value indicates the number for frames ahead the current hardware position that is safe to do IO.
 
@@ -29,8 +25,11 @@ A uint32_t whose value indicates the number for frames ahead the current hardwar
 ## See Also
 
 - [SetInputSafetyOffset](iouservideodevice/setinputsafetyoffset.md)
+  Specifies the input safety offset of the device.
 - [GetInputSafetyOffset](iouservideodevice/getinputsafetyoffset.md)
+  Gets the input safety offset of the device.
 - [GetOutputSafetyOffset](iouservideodevice/getoutputsafetyoffset.md)
+  Gets the output safety offset of the device.
 
 
 ---

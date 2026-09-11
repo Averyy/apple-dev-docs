@@ -6,7 +6,7 @@
 The set of features that the driver and the device have successfully negotiated, or `nil` if no feature negotiation has taken place.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

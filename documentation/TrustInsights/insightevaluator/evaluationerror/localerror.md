@@ -6,8 +6,8 @@
 An error that indicates the framework couldn’t complete the evaluation.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

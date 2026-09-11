@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the unique identifier of the video box.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,13 +16,11 @@ OSSharedPtr<OSString> GetUID();
 
 #### Return Value
 
-Returns an OSString unique identifier in an OSSharedPtr object.
+An OSString unique identifier in an OSSharedPtr object.
 
 #### Discussion
 
-Get the unique identifier of the IOUserVideoBox.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 
 ---

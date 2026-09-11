@@ -6,7 +6,7 @@
 Opens a connection to the USB accessory for this process to access it exclusively.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

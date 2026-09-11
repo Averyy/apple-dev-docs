@@ -6,9 +6,9 @@
 Dynamic particles are moved exclusively by the simulation, and ignore changes to the entity transform.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

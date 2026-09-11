@@ -6,7 +6,7 @@
 Creates a drop configuration with the provided operation and reorder destination.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

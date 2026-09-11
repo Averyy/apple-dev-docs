@@ -6,7 +6,7 @@
 The messages the host app has sent to the extension.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

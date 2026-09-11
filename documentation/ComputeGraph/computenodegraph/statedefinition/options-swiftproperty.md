@@ -6,12 +6,12 @@
 Whether this state is read, written, or both. See [`ComputeNodeGraph.StateDefinition.Options`](computenodegraph/statedefinition/options-swift.struct.md).
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 - Reality Composer Pro ?+
 
 ## Declaration

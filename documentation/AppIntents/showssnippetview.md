@@ -22,8 +22,8 @@ protocol ShowsSnippetView : IntentResult where Self.Snippet == _SnippetViewConta
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
 - [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
+- [Creating your first app intent](creating-your-first-app-intent.md)
 
 ## Relationships
 

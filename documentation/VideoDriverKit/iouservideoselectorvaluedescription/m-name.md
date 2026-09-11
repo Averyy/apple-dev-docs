@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,6 +16,7 @@ OSSharedPtr<OSString> m_name;
 
 - [m_value](iouservideoselectorvaluedescription/m_value.md)
 - [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+  Selector value for controls.
 
 
 ---

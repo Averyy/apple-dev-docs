@@ -6,7 +6,7 @@
 Creates an entity identifier with the given UUID and qualifier data.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

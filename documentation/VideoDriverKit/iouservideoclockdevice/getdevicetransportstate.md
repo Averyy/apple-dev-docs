@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the transport state of the device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,19 +14,14 @@
 IOUserVideoDeviceTransportState GetDeviceTransportState();
 ```
 
-#### Return Value
-
-Returns IOUserVideoDeviceTransportState
-
 #### Discussion
 
-Get the IOUserVideoDeviceTransportState of the device.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [IOUserVideoDeviceTransportState](videodriverkit/iouservideodevicetransportstate.md)
+  The current transport state of the device.
 
 
 ---

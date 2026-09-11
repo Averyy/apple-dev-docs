@@ -96,8 +96,13 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [struct CMCustomNotificationInfo](cmcustomnotificationinfo.md)
   Holds custom userInfo for notification sent for a buffer event.
 ### Variables
+- [var COREMEDIA_SUPPORTS_GENLOCK_CLOCK: Int32](coremedia_supports_genlock_clock.md)
+- [var kCMClockError_PreferredStartTimeNotAvailable: OSStatus](kcmclockerror_preferredstarttimenotavailable.md)
 - [let kCMFormatDescriptionLogTransferFunction_AppleLog2: CFString](kcmformatdescriptionlogtransferfunction_applelog2.md)
   Log Transfer Function identifier for Apple Log 2.
+- [let kCMGenlockClockNotificationPayload_AnyDisplayIsSynchronizedToLockedGenlockSignal: CFString](kcmgenlockclocknotificationpayload_anydisplayissynchronizedtolockedgenlocksignal.md)
+- [let kCMGenlockClockNotification_DisplayGenlockModeChanged: CFString](kcmgenlockclocknotification_displaygenlockmodechanged.md)
+  Posted when the display mode changes from genlock to non-genlock or vice versa.
 - [let kCMMetadataBaseDataType_ISOLatin1: CFString](kcmmetadatabasedatatype_isolatin1.md)
 - [let kCMMetadataBaseDataType_MacRoman: CFString](kcmmetadatabasedatatype_macroman.md)
 - [let kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50: CFString](kcmmetadatadatatype_quicktimemetadatasmpte2094_50.md)

@@ -6,11 +6,11 @@
 Aggressively reduces the texture file size. RealityKit can suppress some visual details to reach the smallest file size.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

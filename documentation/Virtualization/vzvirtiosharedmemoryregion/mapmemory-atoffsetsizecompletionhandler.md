@@ -6,7 +6,7 @@
 Maps a chunk of host memory into the shared memory region.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

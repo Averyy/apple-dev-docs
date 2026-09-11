@@ -6,9 +6,9 @@
 A dynamic maximum number of steps per update is automatically configured throughout runtime based on target platform.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

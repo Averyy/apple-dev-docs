@@ -6,9 +6,9 @@
 A dictionary where each key represents a hardware component name and each value is a string indicating the component’s health status, which has the following values:
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

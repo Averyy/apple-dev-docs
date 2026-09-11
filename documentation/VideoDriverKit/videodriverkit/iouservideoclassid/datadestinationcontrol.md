@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+A video selector control that identifies where the data for the element is going.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,6 +17,7 @@ DataDestinationControl
 ## See Also
 
 - [DataSourceControl](videodriverkit/iouservideoclassid/datasourcecontrol.md)
+  A video selector control that identifies where the data for the element is coming from.
 
 
 ---

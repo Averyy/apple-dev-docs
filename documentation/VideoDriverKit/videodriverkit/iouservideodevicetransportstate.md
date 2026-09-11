@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: enum
 
+The current transport state of the device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,26 +14,20 @@
 enum IOUserVideoDeviceTransportState : uint64_t;
 ```
 
-#### Overview
-
-The current transport state of the device.
-
-Device transport state is stopped.  The hardware necessary for IO should be disabled.
-
-Device transport state is prewarmed.  The minimal hardware for IO should be enabled to minimize transition to normal IO operation.
-
-Device transport state is running.  The hardware should be enabled to fully run IO.
-
 ## Topics
 
 ### Transport states
 - [Stopped](videodriverkit/iouservideodevicetransportstate/stopped.md)
+  Device transport state is stopped.
 - [Prewarmed](videodriverkit/iouservideodevicetransportstate/prewarmed.md)
+  Device transport state is prewarmed.
 - [Running](videodriverkit/iouservideodevicetransportstate/running.md)
+  Device transport state is running.
 
 ## See Also
 
 - [GetDeviceTransportState](iouservideoclockdevice/getdevicetransportstate.md)
+  Gets the transport state of the device.
 
 
 ---

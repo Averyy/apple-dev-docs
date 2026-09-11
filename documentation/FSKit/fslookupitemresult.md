@@ -6,7 +6,7 @@
 The result of an item lookup call.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

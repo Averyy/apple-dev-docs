@@ -6,9 +6,9 @@
 Distance limits (in meters) for how much each particle is allowed to deviate from its perfectly-bound position.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

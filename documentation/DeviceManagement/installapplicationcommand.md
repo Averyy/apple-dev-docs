@@ -20,6 +20,10 @@ The command to install a third-party app on a device.
 object InstallApplicationCommand
 ```
 
+## Mentions
+
+- [Allowing and denying apps and binaries](allowing-and-denying-apps-and-binaries.md)
+
 ## Topics
 
 ### Objects

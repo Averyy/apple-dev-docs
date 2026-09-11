@@ -23,6 +23,7 @@ object SoftwareUpdateEnforcementSpecific
 
 - [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
 - [Phases of software update enforcement](phases-of-software-update-enforcement.md)
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion
 

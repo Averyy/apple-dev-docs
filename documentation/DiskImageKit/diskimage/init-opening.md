@@ -6,7 +6,7 @@
 Opens an existing disk image using the specified image URL.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

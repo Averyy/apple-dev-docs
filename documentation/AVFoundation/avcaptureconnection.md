@@ -102,6 +102,13 @@ You can add an `AVCaptureConnection` instance to a session using the [`addConnec
   An orientation that tells the connection how to rotate a video flowing through it.
 - [enum AVCaptureVideoOrientation](avcapturevideoorientation.md)
   Constants indicating video orientation.
+### Instance Properties
+- [var automaticallyEnablesLowLightVideoNoiseReduction: Bool](avcaptureconnection/automaticallyenableslowlightvideonoisereduction.md)
+  Indicates whether the connection should automatically enable low light video noise reduction when the connection supports it.
+- [var isLowLightVideoNoiseReductionEnabled: Bool](avcaptureconnection/islowlightvideonoisereductionenabled.md)
+  Indicates whether low light video noise reduction is enabled for the current session.
+- [var isLowLightVideoNoiseReductionSupported: Bool](avcaptureconnection/islowlightvideonoisereductionsupported.md)
+  Indicates whether the connection supports low light video noise reduction.
 
 ## Relationships
 

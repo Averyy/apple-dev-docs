@@ -6,7 +6,7 @@
 The styled text to display in the refresh controller.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

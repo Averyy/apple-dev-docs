@@ -5,12 +5,12 @@
 Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

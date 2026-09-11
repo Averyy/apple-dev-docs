@@ -5,10 +5,10 @@
 Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- Xcode 27.0+
 
 #### Overview
 
@@ -276,6 +276,8 @@ The sample demonstrates how to use this pattern to prompt someone for additional
   Receive daily performance and diagnostic reports from real device usage.
 - [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
   Work with the metric values, diagnostic data, and environments in MetricKit reports.
+- [MetricKit updates](../updates/metrickit.md)
+  Learn about important changes to MetricKit.
 
 
 ---

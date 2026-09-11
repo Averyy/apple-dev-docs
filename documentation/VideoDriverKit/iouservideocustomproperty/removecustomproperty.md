@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Always returns an error, because a custom property cannot have a custom property.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,17 +14,10 @@
 virtual kern_return_t RemoveCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 ```
 
-#### Return Value
-
-Returns kIOReturnError
-
-#### Discussion
-
-Will always return kIOReturnError since a custom property cannot have a custom property
-
 ## See Also
 
 - [AddCustomProperty](iouservideocustomproperty/addcustomproperty.md)
+  Always returns `kIOReturnError` because a custom property cannot have a custom property.
 
 
 ---

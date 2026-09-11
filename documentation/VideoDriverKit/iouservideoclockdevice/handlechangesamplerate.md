@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+The system calls this virtual method when the clock device’s sample rate changes.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,13 +16,11 @@ virtual kern_return_t HandleChangeSampleRate(double in_sample_rate);
 
 #### Return Value
 
-Returns kIOReturnSuccess on sucess. Upon sucess the value should be updated.
+`kIOReturnSuccess` on success. Upon success the value should be updated.
 
 #### Discussion
 
-Virtual method will be called when the clock device’s sample rate will be changed.
-
-Default implementation will call SetSampleRate() and return kIOReturnSuccess. Subclass and override this method to handle changes to this value and return kIOReturnSucess upon success.
+The default implementation calls SetSampleRate() and returns `kIOReturnSuccess`. Subclass and override this method to handle changes to this value and return `kIOReturnSuccess` upon success.
 
 ## Parameters
 

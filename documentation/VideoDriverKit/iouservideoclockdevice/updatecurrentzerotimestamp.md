@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Update the current timestamp value.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -13,8 +15,6 @@ void UpdateCurrentZeroTimestamp(uint64_t in_sample_time, uint64_t in_host_time);
 ```
 
 #### Discussion
-
-Update the current timestamp value.
 
 Updating the current timestamp should use the time passed in the hardware interrupt.
 
@@ -26,6 +26,7 @@ Updating the current timestamp should use the time passed in the hardware interr
 ## See Also
 
 - [GetCurrentZeroTimestamp](iouservideoclockdevice/getcurrentzerotimestamp.md)
+  Gets the current zero timestamp value.
 
 
 ---

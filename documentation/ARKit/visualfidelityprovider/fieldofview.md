@@ -6,7 +6,7 @@
 A field of view (FoV) specification.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

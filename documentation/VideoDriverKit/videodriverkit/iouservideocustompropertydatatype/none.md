@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+The custom property does not have any data.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,7 +17,9 @@ None
 ## See Also
 
 - [Dictionary](videodriverkit/iouservideocustompropertydatatype/dictionary.md)
+  The custom property data type is an `OSDictionary` value.
 - [String](videodriverkit/iouservideocustompropertydatatype/string.md)
+  The custom property data type is an `OSString` value.
 
 
 ---

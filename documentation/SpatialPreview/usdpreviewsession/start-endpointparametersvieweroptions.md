@@ -6,7 +6,7 @@
 Connects to the specified endpoint and begins streaming the USD stage for spatial preview.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

@@ -6,7 +6,7 @@
 A textual representation of this visual fidelity data.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The queue the framework uses to synchronize operations for this device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

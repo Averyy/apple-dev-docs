@@ -6,8 +6,8 @@
 Returns an authorization status that indicates whether a person permitted the app to request evaluations for the given context.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

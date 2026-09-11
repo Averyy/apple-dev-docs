@@ -6,7 +6,7 @@
 An object which represents an ARKit coordinate space.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 26.0+
 
 ## Declaration

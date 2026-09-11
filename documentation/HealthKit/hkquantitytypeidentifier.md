@@ -279,6 +279,8 @@ To create an [`HKQuantityType`](hkquantitytype.md) instance, pass an [`HKQuantit
 ### Initializers
 - [init(rawValue: String)](hkquantitytypeidentifier/init(rawvalue:).md)
   Returns a newly initialized quantity type identifier using the provided string.
+### Type Properties
+- [static let heartRateVariabilityRMSSD: HKQuantityTypeIdentifier](hkquantitytypeidentifier/heartratevariabilityrmssd.md)
 
 ## Relationships
 

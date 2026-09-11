@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the current stereo panning channels.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,20 +16,21 @@ void GetPanningChannels(IOUserVideoObjectPropertyElement *out_left_channel, IOUs
 
 #### Discussion
 
-Get the current stereo panning channels.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to this value.
 
 ## Parameters
 
-- `out_left_channel`: IOUserVideoObjectPropertyElement for the left channel
-- `out_right_channel`: IOUserVideoObjectPropertyElement for the right channel
+- `out_left_channel`: IOUserVideoObjectPropertyElement for the left channel.
+- `out_right_channel`: IOUserVideoObjectPropertyElement for the right channel.
 
 ## See Also
 
 - [SetControlValue](iouservideostereopancontrol/setcontrolvalue.md)
+  Sets the current control value.
 - [GetControlValue](iouservideostereopancontrol/getcontrolvalue.md)
+  Gets the current value of the control.
 - [SetPanningChannels](iouservideostereopancontrol/setpanningchannels.md)
+  Sets the current stereo panning channels.
 
 
 ---

@@ -6,7 +6,7 @@
 A Boolean value that indicates whether to enable Remote Login (using SSH) for the macOS virtual machine.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

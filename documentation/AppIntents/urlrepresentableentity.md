@@ -20,6 +20,10 @@ An interface you apply to an app entity type so the system can handle it like a 
 protocol URLRepresentableEntity : AppEntity, CustomURLRepresentationParameterConvertible
 ```
 
+## Mentions
+
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+
 #### Overview
 
 If your app already supports universal links for content, use this protocol to express your app entity types as URLs. When your app entity supports this protocol, the system can use the provided URL to refer to the item. For example, when an [`OpenIntent`](openintent.md) type contains the entity, the system can open the item by sending the entity’s URL to your app’s URL handling code. Having a URL representation for your app entity also makes it easier to share the contents of that entity with Siri, Shortcuts, and other system features.

@@ -6,7 +6,7 @@
 The value that represents the product ID.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

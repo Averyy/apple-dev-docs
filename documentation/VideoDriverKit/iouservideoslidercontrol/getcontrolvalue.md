@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the current value of the control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,22 +14,20 @@
 uint32_t GetControlValue();
 ```
 
-#### Return Value
-
-Returns uint32_t
-
 #### Discussion
 
-Get the current value of the control.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetControlValue](iouservideoslidercontrol/setcontrolvalue.md)
+  Sets the current control value.
 - [SetRange](iouservideoslidercontrol/setrange.md)
+  Sets the current range of the slider control.
 - [GetRange](iouservideoslidercontrol/getrange.md)
+  Gets the current range of the slider control.
 - [IOUserVideoSliderRange](iouservideosliderrange.md)
+  The minimum and maximum range for the slider value.
 
 
 ---

@@ -42,8 +42,18 @@ Currently, there’s no visual difference between informational and warning aler
 
 ## See Also
 
-- [NSApplication.ModalResponse](nsapplication/modalresponse.md)
-  A set of button return values for modal dialogs.
+- [func layout()](nsalert/layout.md)
+  Specifies that the alert must do immediate layout instead of lazily just before display.
+- [var alertStyle: NSAlert.Style](nsalert/alertstyle.md)
+  Indicates the alert’s severity level.
+- [var accessoryView: NSView?](nsalert/accessoryview.md)
+  The alert’s accessory view.
+- [var showsHelp: Bool](nsalert/showshelp.md)
+  Specifies whether the alert has a help button.
+- [var helpAnchor: NSHelpManager.AnchorName?](nsalert/helpanchor.md)
+  The alert’s HTML help anchor.
+- [var delegate: (any NSAlertDelegate)?](nsalert/delegate.md)
+  The alert’s delegate.
 
 
 ---

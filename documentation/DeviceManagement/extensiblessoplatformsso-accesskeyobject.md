@@ -6,7 +6,7 @@
 Settings for Access Key authentication.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A range of control-event values available for app use.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

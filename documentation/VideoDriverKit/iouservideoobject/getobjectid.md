@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the video object identifier of the object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,17 +14,14 @@
 IOUserVideoObjectID GetObjectID();
 ```
 
-#### Return Value
-
-Returns IOUserVideoObjectID
-
 #### Discussion
 
-Get the IOUserVideoObjectID of the object, which can be used for object lookup with IOUserVideoDriver
+This identifier can be used for object lookup with IOUserVideoDriver.
 
 ## See Also
 
 - [IOUserVideoObjectID](videodriverkit/iouservideoobjectid.md)
+  A handle for a a specific video object.
 
 
 ---

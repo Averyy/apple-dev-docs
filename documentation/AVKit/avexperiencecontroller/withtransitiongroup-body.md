@@ -6,7 +6,7 @@
 Coordinates multiple experience transitions to perform together as a single visual transition.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

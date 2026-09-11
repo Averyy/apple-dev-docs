@@ -9,7 +9,7 @@ A component that specifies an entity is participating in the system’s scene-un
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 1.0+
 
 ## Declaration

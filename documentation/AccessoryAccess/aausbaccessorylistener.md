@@ -6,7 +6,7 @@
 A class that conforms to the framework’s USB accessory listener protocol can listen to the accessory events.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

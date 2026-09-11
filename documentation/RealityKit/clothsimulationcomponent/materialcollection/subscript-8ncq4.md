@@ -6,9 +6,9 @@
 Accesses a collider material by name, returning `nil` if the name is absent or the material is not a collider material.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

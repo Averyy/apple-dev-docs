@@ -6,7 +6,7 @@
 Initializes a Virtio device specific configuration object with the configuration data you provide
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

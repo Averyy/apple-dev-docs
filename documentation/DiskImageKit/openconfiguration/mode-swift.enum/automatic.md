@@ -6,7 +6,7 @@
 Try to open the disk image as read-write, and fallback to read-only if there’s no read-write access.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

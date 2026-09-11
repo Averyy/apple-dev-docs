@@ -5,10 +5,10 @@
 Record and share screen captures on iOS by presenting the system content-sharing picker.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- Xcode 27.0+
 
 #### Overview
 
@@ -25,7 +25,7 @@ The sample declares two background modes so ScreenCaptureKit continues to run wh
 - `screen-capture` in [`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uibackgroundmodes), so the stream survives backgrounding for full-display capture.
 - `audio`, so the microphone tap keeps producing samples.
 
-The Info property list also declares [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) and [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryaddusagedescription). Verify both prompts appear the first time you exercise the in-app capture and recording flows.
+The Info pane in Xcode also declares [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) and [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryaddusagedescription). Verify both prompts appear the first time you exercise the in-app capture and recording flows.
 
 #### Present the Content Sharing Picker
 
@@ -53,7 +53,7 @@ Activating the picker registers the sample’s [`SCContentSharingPickerObserver`
 
 #### Configure the Pickers Controls
 
-The sample uses two [`SCContentSharingPickerConfiguration`](sccontentsharingpickerconfiguration-c.class.md) instances so it can tailor the picker to each capture mode. Both configurations allow toggling the microphone; only the in-app configuration enables the camera toggle, because ScreenCaptureKit doesn’t support a camera overlay for full-display captures.
+The sample uses two [`SCContentSharingPickerConfiguration`](sccontentsharingpickerconfiguration-c.class.md) instances so it tailors the picker to each capture mode. Both configurations allow toggling the microphone. Only the in-app configuration enables the camera toggle, because ScreenCaptureKit doesn’t support a camera overlay for full-display captures.
 
 ```swift
 var fullDisplayPickerConfiguration: SCContentSharingPickerConfiguration {
@@ -74,7 +74,7 @@ The picker records the person’s choices in the returned filter’s [`isMicroph
 
 #### Start a Stream From the Filter
 
-Once the picker returns a filter, the sample tears down any prior stream and builds a fresh [`SCStream`](scstream.md) with a new [`SCStreamConfiguration`](scstreamconfiguration.md). Screen frames flow through an output attached with the [`SCStreamOutputType.screen`](scstreamoutputtype/screen.md) type. The sample attaches a microphone output only when the filter’s [`isMicrophoneEnabled`](sccontentfilter/ismicrophoneenabled.md) is `true`, mirroring the person’s selection in the picker.
+When the picker returns a filter, the sample tears down any prior stream and builds a fresh [`SCStream`](scstream.md) with a new [`SCStreamConfiguration`](scstreamconfiguration.md). Screen frames flow through an output attached with the [`SCStreamOutputType.screen`](scstreamoutputtype/screen.md) type. The sample attaches a microphone output only when the filter’s [`isMicrophoneEnabled`](sccontentfilter/ismicrophoneenabled.md) is `true`, mirroring the person’s selection in the picker.
 
 ```swift
 let newStream = SCStream(filter: filter,

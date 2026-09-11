@@ -6,10 +6,10 @@
 An asynchronous sequence you use to observe changes to the push token of this remote session.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iOS App Extension 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iOS App Extension 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

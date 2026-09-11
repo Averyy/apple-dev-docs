@@ -6,10 +6,10 @@
 Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 The layer that displays the `ARFrame`, required before `viewRotationAngle` becomes available.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

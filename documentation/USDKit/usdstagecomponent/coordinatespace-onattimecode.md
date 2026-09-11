@@ -6,7 +6,7 @@
 Returns a coordinate space anchored to the closest rendered ancestor of `path`.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

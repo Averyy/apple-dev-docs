@@ -39,8 +39,6 @@ When you build your app, these macros expand and map the type to the schema you 
   Make your camera app’s actions available to Apple Intelligence and Siri by adopting schemas for common camera actions.
 - [Clock](app-schema-domain-clock.md)
   Make your clock app’s actions available to Apple Intelligence and Siri by adopting schemas for common alarm and timer actions.
-- [Files](app-schema-domain-files.md)
-  Make your file-management app’s actions available to Apple Intelligence and Siri by adopting schemas for common file actions.
 - [Mail](app-schema-domain-mail.md)
   Make your email app’s actions available to Apple Intelligence and Siri by adopting schemas for common email actions.
 - [Maps](app-schema-domain-maps.md)
@@ -67,6 +65,8 @@ When you build your app, these macros expand and map the type to the schema you 
   Make your ebook reader’s actions available in the Shortcuts app by adopting schemas for common reading actions.
 - [Browser](app-schema-domain-browser.md)
   Make your web browser’s actions available in the Shortcuts app by adopting schemas for common browsing actions.
+- [Files](app-schema-domain-files.md)
+  Make your app’s file-management actions available in the Shortcuts app.
 - [Journaling](app-schema-domain-journaling.md)
   Make your journaling app’s actions available in the Shortcuts app by adopting schemas for journal-entry management.
 - [Presentation](app-schema-domain-presentation.md)

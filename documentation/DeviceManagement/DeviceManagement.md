@@ -69,8 +69,6 @@ Device management works with Managed App Distribution and Managed App Configurat
   Commands and configuration profiles that have been removed and are no longer supported.
 ### Dictionaries
 - [object InApps](inapps.md)
-- [object StorefrontsResponse](storefrontsresponse.md)
-  The response to a storefront request.
 
 
 ---

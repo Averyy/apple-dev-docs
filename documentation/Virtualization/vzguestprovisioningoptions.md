@@ -6,7 +6,7 @@
 The base class for guest provisioning options.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A Boolean value that indicates whether keyboard shortcuts for menu items are ignored while any gesture recognizer is active.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 
 

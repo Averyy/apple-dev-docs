@@ -3,18 +3,16 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Frees the custom property.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
 ```swift
 virtual void free();
 ```
-
-#### Discussion
-
-Frees the IOUserVideoCustomProperty.
 
 
 ---

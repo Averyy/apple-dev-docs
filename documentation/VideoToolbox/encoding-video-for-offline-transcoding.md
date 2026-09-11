@@ -5,8 +5,8 @@
 Configure a compression session to transcode video in offline workflows.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- macOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

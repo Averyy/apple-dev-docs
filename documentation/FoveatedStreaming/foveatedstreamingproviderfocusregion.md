@@ -6,7 +6,7 @@
 Eye input data that describes the approximate region that the end user is looking, relative to the device pose.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

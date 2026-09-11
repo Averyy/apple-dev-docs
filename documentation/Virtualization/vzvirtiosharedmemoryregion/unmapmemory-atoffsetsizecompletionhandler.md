@@ -6,7 +6,7 @@
 Unmaps a chunk of host memory from the shared memory region.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The timestamp when this validation data was captured.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

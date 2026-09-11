@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: enum
 
+Flags used to indicate how I/O is starting or stopping.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,26 +14,20 @@
 enum IOUserVideoStartStopFlags : uint64_t;
 ```
 
-#### Overview
-
-Flags used to indicate how IO is starting or stopping.
-
-IO is starting or stopping for normal IO operation, which should result in enabling/disabling all necessary hardware.
-
-IO is starting or stoping for prewarming.  The minimal hardware should be enabled/disabled to minimize transition to normal IO operation.
-
-Additional bits are reserved for future use
-
 ## Topics
 
 ### Start/stop behaviors
 - [None](videodriverkit/iouservideostartstopflags/none.md)
+  A flag that indicates starting or stopping for normal I/O operation.
 - [Prewarm](videodriverkit/iouservideostartstopflags/prewarm.md)
+  A flag that indicates starting or stopping for prewarming.
 
 ## See Also
 
 - [StartIO](iouservideoclockdevice/startio.md)
+  Tells the clock device to start IO.
 - [StopIO](iouservideoclockdevice/stopio.md)
+  Tells the clock device to stop IO.
 
 
 ---

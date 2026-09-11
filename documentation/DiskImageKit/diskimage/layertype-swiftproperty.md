@@ -6,7 +6,7 @@
 The layer type of the disk image.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -341,6 +341,8 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
 - [static var didUpdate: NotificationCenter.BaseMessageIdentifier<UIFocusSystem.DidUpdateMessage>](notificationcenter/messageidentifier/didupdate-p3fm.md)
 - [static var didUpdate: NotificationCenter.BaseMessageIdentifier<NSWindow.DidUpdateMessage>](notificationcenter/messageidentifier/didupdate-vu3m.md)
 - [static var didUpdateWindows: NotificationCenter.BaseMessageIdentifier<NSApplication.DidUpdateWindowsMessage>](notificationcenter/messageidentifier/didupdatewindows.md)
+- [static var displayGenlockModeChanged: NotificationCenter.BaseMessageIdentifier<CMClock.DisplayGenlockModeChangedMessage>](notificationcenter/messageidentifier/displaygenlockmodechanged.md)
+  Identifies `CMClock/DisplayGenlockModeChangedMessage`.
 - [static var eventChanged: NotificationCenter.BaseMessageIdentifier<NSPersistentCloudKitContainer.EventChangedMessage>](notificationcenter/messageidentifier/eventchanged.md)
 - [static var fontSetChanged: NotificationCenter.BaseMessageIdentifier<NSFont.FontSetChangedMessage>](notificationcenter/messageidentifier/fontsetchanged.md)
 - [static var frameDidChange: NotificationCenter.BaseMessageIdentifier<NSView.FrameDidChangeMessage>](notificationcenter/messageidentifier/framedidchange.md)

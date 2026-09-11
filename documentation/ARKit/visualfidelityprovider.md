@@ -6,7 +6,7 @@
 A data provider that delivers visual fidelity monitoring data.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

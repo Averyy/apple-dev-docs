@@ -12,7 +12,7 @@ A request that detects a smudge on a lens from an image or video frame capture.
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
+- watchOS 27.0+
 
 ## Declaration
 

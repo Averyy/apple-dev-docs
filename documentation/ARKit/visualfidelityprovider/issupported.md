@@ -6,7 +6,7 @@
 Determines whether this device supports the visual fidelity data provider.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

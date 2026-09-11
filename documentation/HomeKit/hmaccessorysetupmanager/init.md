@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 27.0+ (Beta)
+- Mac Catalyst 27.0+
 
 ## Declaration
 

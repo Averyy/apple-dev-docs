@@ -6,8 +6,8 @@
 A Boolean value that indicates whether only a single user account must be logged in to start an assessment.
 
 **Availability**:
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

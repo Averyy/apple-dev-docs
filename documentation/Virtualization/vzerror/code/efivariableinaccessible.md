@@ -6,7 +6,7 @@
 An error that indicates the framework can’t access the EFI variable store.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

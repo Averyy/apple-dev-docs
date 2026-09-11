@@ -20,6 +20,10 @@ The estimated workload of executing the operation over the total model evaluatio
 let weight: Double
 ```
 
+## Mentions
+
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+
 
 ---
 

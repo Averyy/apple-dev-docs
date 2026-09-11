@@ -6,8 +6,8 @@
 The levels of trust the framework returns for the “is likely being coached” insight.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

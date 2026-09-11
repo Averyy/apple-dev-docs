@@ -6,7 +6,7 @@
 A type that indicates all I/O goes directly to storage, without caching.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

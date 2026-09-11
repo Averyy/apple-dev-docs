@@ -67,6 +67,7 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
 - [func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescriptor) -> (any MTLIntersectionFunctionTable)?](mtlcomputepipelinestate/makeintersectionfunctiontable(descriptor:).md)
   Creates a new intersection function table.
 ### Instance Properties
+- [var forwardProgressUsage: MTLForwardProgressUsage](mtlcomputepipelinestate/forwardprogressusage.md)
 - [var reflection: MTLComputePipelineReflection?](mtlcomputepipelinestate/reflection.md)
   The compute pipeline’s reflection information, if available.
 - [var requiredThreadsPerThreadgroup: MTLSize](mtlcomputepipelinestate/requiredthreadsperthreadgroup.md)
@@ -77,6 +78,7 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
   Gets the function handle for a function this pipeline links at the Metal IR level by name.
 - [func makeComputePipelineState(additionalBinaryFunctions: [any MTL4BinaryFunction]) throws -> any MTLComputePipelineState](mtlcomputepipelinestate/makecomputepipelinestate(additionalbinaryfunctions:).md)
   Allocates a new compute pipeline state by adding binary functions to this pipeline state.
+- [func recommendedPersistentThreadgroupsPerGrid(forThreadsPerThreadgroup: MTLSize) -> Int](mtlcomputepipelinestate/recommendedpersistentthreadgroupspergrid(forthreadsperthreadgroup:).md)
 
 ## Relationships
 

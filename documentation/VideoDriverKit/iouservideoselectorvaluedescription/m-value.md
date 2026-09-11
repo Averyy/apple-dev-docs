@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,6 +16,7 @@ IOUserVideoSelectorValue m_value;
 
 - [m_name](iouservideoselectorvaluedescription/m_name.md)
 - [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+  Selector value for controls.
 
 
 ---

@@ -6,9 +6,9 @@
 Requests that a child send the significant app update permission question to their parent or guardian using the specified permission flow.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

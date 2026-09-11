@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Returns an memory descriptorrepesenting the shared memory output queue buffer.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,16 +14,16 @@
 OSSharedPtr<IOMemoryDescriptor> GetOutputQueueMemoryDescriptor();
 ```
 
-#### Return Value
-
-An IOMemoryDescriptor object repesenting the shared memory output queue buffer.
-
 ## See Also
 
 - [GetOutputControlMemoryDescriptor](iouservideostream/getoutputcontrolmemorydescriptor.md)
+  Gets the memory descriptor used for the control data part of a buffer.
 - [GetOutputDataMemoryDescriptor](iouservideostream/getoutputdatamemorydescriptor.md)
+  Gets the memory descriptor used for the video data part of a buffer.
 - [GetInputQueueMemoryDescriptor](iouservideostream/getinputqueuememorydescriptor.md)
+  Returns an memory descriptor for the shared memory input queue buffer.
 - [GetMemoryObjectID](iouservideostream/getmemoryobjectid.md)
+  Gets the video object identifier for a memory object.
 
 
 ---

@@ -6,7 +6,7 @@
 Creates a group of previews of an NSViewController.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

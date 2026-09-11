@@ -12,7 +12,7 @@ The heat map that’s a pixel buffer in a one-component floating-point pixel for
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
-- watchOS 27.0+ (Beta)
+- watchOS 27.0+
 
 ## Declaration
 

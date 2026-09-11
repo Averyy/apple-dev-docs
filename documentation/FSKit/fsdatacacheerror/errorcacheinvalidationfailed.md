@@ -6,7 +6,7 @@
 Failed to invalidate (clear) cached data.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

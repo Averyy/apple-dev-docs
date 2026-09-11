@@ -6,7 +6,7 @@
 The guest’s physical memory base address of this guest memory mapping object.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

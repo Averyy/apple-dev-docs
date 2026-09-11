@@ -6,9 +6,9 @@
 A priority that moves the item to the overflow menu before items with the default or high priority.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 - macOS 26.1+
 
 ## Declaration

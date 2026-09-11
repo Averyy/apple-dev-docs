@@ -6,7 +6,7 @@
 The custom distance to inset the content view from the scroll view edges.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

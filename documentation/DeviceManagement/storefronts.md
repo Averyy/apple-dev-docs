@@ -27,6 +27,11 @@ object Storefronts
 - `id` (string) *(required)*: The identifier for the storefronts resource.
 - `type` (string) *(required)*: The type of the resource. The only allowed value is `storefronts`.
 
+## See Also
+
+- [object StorefrontsResponse](storefrontsresponse.md)
+  The response to a storefront request.
+
 
 ---
 

@@ -6,7 +6,7 @@
 An object that defines the visual parameters for content displayed within a portal frame.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 An action to update the coherency mode while keeping the cache valid, requiring no push or invalidation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

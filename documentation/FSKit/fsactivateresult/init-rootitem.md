@@ -6,7 +6,7 @@
 Creates an activate result instance.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A free space object that pairs free space values with atomic sequence numbers.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -102,6 +102,8 @@ try await AIModel.specialize(
 )
 ```
 
+> **Note**: `.persistent` isn’t available on tvOS.  Local storage on tvOS is limited and [`AIModelCache`](aimodelcache.md) entries must be puragable by tvOS when space is low. Use the default policy on tvOS.
+
 #### Delete Cached Assets You No Longer Need
 
 To reduce your app’s storage footprint, delete cached assets when they’re no longer needed. For example, when your app downloads an updated version of a model and the previous version’s cached assets are no longer valid:

@@ -24,9 +24,17 @@ The system font associated with the specified text style and traits.
 
 #### Discussion
 
+> **Note**:  Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
+
+#### Discussion
+
 To create a styled font based on a custom font, use a [`UIFontMetrics`](uifontmetrics.md) object.
 
 Because fonts are immutable, any element that adjusts for an updated content size category does not modify the font itself. Instead, the element replaces the assigned font with a new instance based on the original settings.
+
+A font’s metrics, such as [`ascender`](uifont/ascender.md), [`descender`](uifont/descender.md), and [`lineHeight`](uifont/lineheight.md), can differ across devices for the same text style and point size. UIKit reserves extra vertical space to accommodate scripts like Thai and Hindi whenever someone includes one of those languages in their preferred languages, even if your text doesn’t use that script.
+
+To take advantage of this behavior, create a font explicitly with this method and assign it to a text element, like a [`UILabel`](uilabel.md). Don’t set `clipsToBounds` on these text elements: ascenders and descenders for languages like Thai and Hindi often protrude beyond the line height bounds. This typically isn’t a problem, since layouts usually leave extra space around neighboring elements, but setting `clipsToBounds` clips that text. UIKit no longer enables `clipsToBounds` by default in places where it previously did.
 
 ## Parameters
 

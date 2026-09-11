@@ -6,7 +6,7 @@
 An action to invalidate all caches, revoke all access to the item, and trigger vnode reclamation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

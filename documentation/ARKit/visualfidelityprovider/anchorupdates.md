@@ -6,7 +6,7 @@
 An async sequence of anchor updates for visualizing a preset field of view (FoV).
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

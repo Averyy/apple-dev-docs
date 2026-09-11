@@ -6,7 +6,7 @@
 A type that indicates that writes bypass the cache and go directly to storage.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

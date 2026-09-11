@@ -6,9 +6,9 @@
 The instantaneous collider speed (in m/s) over which the source collider will be considered to have teleported.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

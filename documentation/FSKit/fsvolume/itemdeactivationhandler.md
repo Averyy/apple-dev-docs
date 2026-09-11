@@ -6,7 +6,7 @@
 Methods and properties implemented by volumes that support deactivating items.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Provides scoped access to the I/O node’s AudioUnit
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,11 +6,11 @@
 A function that performs inference on input values and produces output values.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
 
 ## Declaration
 
@@ -71,6 +71,8 @@ This type is `Sendable`, so you can run it concurrently from multiple tasks. The
   A description of an image’s dimensions and pixel format.
 - [class ComputeStream](computestream.md)
   A stream of work to be run asynchronously.
+- [Background Inference](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+  An entitlement that lets a background task run inference on the Neural Engine.
 
 
 ---

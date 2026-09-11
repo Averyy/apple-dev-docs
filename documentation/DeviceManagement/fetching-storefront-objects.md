@@ -24,6 +24,8 @@ GET https://api.ent.apple.com/v1/catalog/us/stoken-authenticated-apps?ids=200135
 - [Get All Storefronts](get-all-storefronts.md)
   Fetch all the storefronts in alphabetical order.
 ### Handling the response
+- [object StorefrontsResponse](storefrontsresponse.md)
+  The response to a storefront request.
 - [object Storefronts](storefronts.md)
   A resource object that represents a region that the content is available in, and supported languages for that region.
 

@@ -95,7 +95,7 @@ The poster generic pass style features a full background image and a pass field 
 ![A museum poster generic pass with a full-art illustration featuring a dinosaur skull, butterflies, and marine creatures, displaying member details and a QR code.](/images/com.apple.HIG/wallet-passes-types-generic-poster-pass@2x.png)
 
 ### Generic passes
-The generic style is for passes that don’t fit the other categories, such as a gym membership card or coat-check claim ticket. For developer guidance, see [Creating a generic pass](../walletpasses/creating-a-generic-pass.md).
+The generic style is for passes that don’t fit the other categories, such as a gym membership card or coat-check claim ticket. For developer guidance, see [Creating a poster generic pass](../walletpasses/creating-a-poster-generic-pass.md).
 ![A gym membership generic pass on a solid purple background with a dumbbell thumbnail, member details, and a barcode at the bottom.](/images/com.apple.HIG/wallet-passes-types-generic-pass@2x.png)
 
 ## Pass images

@@ -80,6 +80,9 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlcomputepipelinedescriptor/binaryarchives.md)
   The binary archives that contain any precompiled shader functions to link.
 ### Instance Properties
+- [var contentionRelief: MTLContentionRelief](mtlcomputepipelinedescriptor/contentionrelief.md)
+- [var forwardProgressUsage: MTLForwardProgressUsage](mtlcomputepipelinedescriptor/forwardprogressusage.md)
+- [var optimizeForPersistentKernel: Bool](mtlcomputepipelinedescriptor/optimizeforpersistentkernel.md)
 - [var requiredThreadsPerThreadgroup: MTLSize](mtlcomputepipelinedescriptor/requiredthreadsperthreadgroup.md)
 
 ## Relationships

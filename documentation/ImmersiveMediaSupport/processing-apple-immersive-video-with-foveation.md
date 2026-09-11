@@ -5,8 +5,8 @@
 Reduce a video’s data rate while maintaining high acuity in the center of the imagery by applying foveation to immersive video content.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- macOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

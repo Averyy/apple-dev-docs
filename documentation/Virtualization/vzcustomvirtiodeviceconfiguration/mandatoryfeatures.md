@@ -6,7 +6,7 @@
 The set of mandatory features that the device offers and the guest must accept.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

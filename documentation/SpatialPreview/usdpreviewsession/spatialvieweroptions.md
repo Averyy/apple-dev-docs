@@ -6,7 +6,7 @@
 Configuration options that control interaction capabilities for a USD document session.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

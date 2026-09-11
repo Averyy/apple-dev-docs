@@ -6,7 +6,7 @@
 The list of shared memory regions.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

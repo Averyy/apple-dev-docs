@@ -6,7 +6,7 @@
 The delegate that manages the lifecycle of the status item’s expanded interface.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

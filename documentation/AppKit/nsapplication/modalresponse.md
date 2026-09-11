@@ -60,8 +60,10 @@ The response value that a button returns can depend on which method is used to p
 
 ## See Also
 
-- [NSAlert.Style](nsalert/style.md)
-  The set of alert styles to style alerts in your app.
+- [var buttons: [NSButton]](nsalert/buttons.md)
+  The array of response buttons for the alert.
+- [func addButton(withTitle: String) -> NSButton](nsalert/addbutton(withtitle:).md)
+  Adds a button with a given title to the alert.
 
 
 ---

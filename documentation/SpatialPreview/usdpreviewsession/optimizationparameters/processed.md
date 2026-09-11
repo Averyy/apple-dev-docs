@@ -6,7 +6,7 @@
 Allows the stage to analyzed for the given `OptimizationSteps` preferences and have those prefences applied.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

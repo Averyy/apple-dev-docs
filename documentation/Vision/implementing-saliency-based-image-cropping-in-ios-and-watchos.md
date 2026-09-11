@@ -5,11 +5,11 @@
 Crop regions most likely drawing people’s attention from an image in your iOS or watchOS app.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- watchOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

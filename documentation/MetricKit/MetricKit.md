@@ -29,6 +29,8 @@ In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) 
   Work with the metric values, diagnostic data, and environments in MetricKit reports.
 - [Track performance by app state using MetricKit](track-performance-by-app-state-using-metrickit.md)
   Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
+- [MetricKit updates](../updates/metrickit.md)
+  Learn about important changes to MetricKit.
 ### Performance improvements
 - [Improving your app’s performance](../xcode/improving-your-app-s-performance.md)
   Model, measure, and boost the performance of your app by using a continuous-improvement cycle.

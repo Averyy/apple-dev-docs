@@ -6,7 +6,7 @@
 The uniform type identifier for the accessory.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

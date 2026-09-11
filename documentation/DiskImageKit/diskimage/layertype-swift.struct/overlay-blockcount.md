@@ -6,7 +6,7 @@
 An overlay layer with a specific block count.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

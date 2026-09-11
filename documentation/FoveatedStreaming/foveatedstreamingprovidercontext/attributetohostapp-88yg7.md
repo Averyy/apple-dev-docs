@@ -6,7 +6,7 @@
 Attributes a Metal resource’s memory to the host app instead of the extension.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

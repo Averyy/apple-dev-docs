@@ -233,8 +233,19 @@ A capture device provides several configuration options. Before attempting to co
 - [var minSupportedLockedVideoFrameDuration: CMTime](avcapturedevice/minsupportedlockedvideoframeduration.md)
   The maximum frame rate (expressed as a minimum duration) that can be set on an input associated with this device.
 ### Instance Properties
+- [var continuousAutoFocusTrackingLensPositionBias: Float](avcapturedevice/continuousautofocustrackinglenspositionbias.md)
+  Bias applied to the lens position during continuous autofocus tracking, normalized between -1 and 1.
 - [var isAdjustingSignalCompensationDelayWhileRunningSupported: Bool](avcapturedevice/isadjustingsignalcompensationdelaywhilerunningsupported.md)
   Whether adjusting the signal compensation delay property of an external sync device is supported while the session is running.
+- [var isContinuousAutoFocusTrackingEnabled: Bool](avcapturedevice/iscontinuousautofocustrackingenabled.md)
+  Indicates whether the device should use continuous autofocus tracking.
+- [var isContinuousAutoFocusTrackingSubjectAcquired: Bool](avcapturedevice/iscontinuousautofocustrackingsubjectacquired.md)
+  Indicates whether the device is actively tracking a subject in the scene to maintain focus.
+- [var isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported: Bool](avcapturedevice/isprimaryconstituentdeviceswitchingbehaviorlockedwithdevicesupported.md)
+  Whether locking to a particular primary constituent device is supported.
+### Instance Methods
+- [func setPrimaryConstituentDeviceSwitchingBehaviorLockedWith(AVCaptureDevice)](avcapturedevice/setprimaryconstituentdeviceswitchingbehaviorlockedwith(_:).md)
+  Sets the switching behavior of the primary constituent device to locked with the specified device.
 ### Type Properties
 - [class var isEdgeLightActive: Bool](avcapturedevice/isedgelightactive.md)
   A class property indicating whether the edge light UI is actively being shown on a screen.

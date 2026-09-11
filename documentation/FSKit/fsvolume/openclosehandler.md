@@ -6,7 +6,7 @@
 Methods and properties implemented by volumes that want to receive open and close calls for each item.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

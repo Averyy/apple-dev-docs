@@ -6,7 +6,7 @@
 A type that defines how the kernel caches data.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

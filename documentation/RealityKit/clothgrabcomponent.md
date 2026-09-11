@@ -6,9 +6,9 @@
 A component that grabs and drags particles of cloth bodies using either a ray or a volume, as determined by the `mode` property.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

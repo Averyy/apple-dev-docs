@@ -6,7 +6,7 @@
 Initialize an adaptor for a virtual machine.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

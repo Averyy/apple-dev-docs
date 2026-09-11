@@ -6,7 +6,7 @@
 Credential data obtained during QR code pairing.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

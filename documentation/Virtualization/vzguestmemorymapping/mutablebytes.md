@@ -6,7 +6,7 @@
 A pointer to the data this guest memory mapping object contains.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

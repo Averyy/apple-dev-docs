@@ -6,8 +6,8 @@
 The collection of executable participants available during an assessment, along with their associated configurations.
 
 **Availability**:
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

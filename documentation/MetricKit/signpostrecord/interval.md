@@ -6,10 +6,10 @@
 Time interval for the signpost For instant signposts, start and end are the same (duration == 0)
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

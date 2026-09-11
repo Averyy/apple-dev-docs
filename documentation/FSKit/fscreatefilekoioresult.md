@@ -6,7 +6,7 @@
 The result of a kernel-offloaded create-file call.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

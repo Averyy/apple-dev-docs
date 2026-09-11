@@ -20,6 +20,7 @@ struct CNCinematicError
 
 ### Type Properties
 - [static var cancelled: CNCinematicError.Code](cncinematicerror/cancelled.md)
+- [static var downloadFailed: CNCinematicError.Code](cncinematicerror/downloadfailed.md)
 - [static var errorDomain: String](cncinematicerror/errordomain.md)
 - [static var incompatible: CNCinematicError.Code](cncinematicerror/incompatible.md)
 - [static var incomplete: CNCinematicError.Code](cncinematicerror/incomplete.md)

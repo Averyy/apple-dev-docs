@@ -8,7 +8,7 @@ An error that indicates a failure requesting a secret from the asset server.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 2.4+
 
 ## Declaration

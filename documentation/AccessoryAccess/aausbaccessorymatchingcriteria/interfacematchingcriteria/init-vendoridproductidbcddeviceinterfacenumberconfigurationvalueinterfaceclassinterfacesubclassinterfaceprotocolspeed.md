@@ -6,7 +6,7 @@
 Initializes a new matching criteria structure with the provided values.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

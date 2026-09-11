@@ -66,6 +66,12 @@ A movie file output provides a complete file recording interface for writing med
 - [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturemoviefileoutput/primaryconstituentdevicerestrictedswitchingbehaviorconditionsforrecording.md)
   The conditions during which camera switching may occur while recording.
 ### Instance Properties
+- [var automaticallyAdjustsCinematicVideoMetadataCaptureEnabled: Bool](avcapturemoviefileoutput/automaticallyadjustscinematicvideometadatacaptureenabled.md)
+  Controls whether cinematic video metadata capture is automatically managed by the framework.
+- [var isCinematicVideoMetadataCaptureEnabled: Bool](avcapturemoviefileoutput/iscinematicvideometadatacaptureenabled.md)
+  Indicates whether cinematic video metadata is captured to movie files.
+- [var isCinematicVideoMetadataCaptureSupported: Bool](avcapturemoviefileoutput/iscinematicvideometadatacapturesupported.md)
+  Returns whether capturing cinematic video metadata to the movie file is supported in the current session configuration.
 - [var isProVideoStorageSupported: Bool](avcapturemoviefileoutput/isprovideostoragesupported.md)
   Whether this movie file output supports writing to Pro Video Storage in its current configuration.
 - [var usesProVideoStorage: Bool](avcapturemoviefileoutput/usesprovideostorage.md)

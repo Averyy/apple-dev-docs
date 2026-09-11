@@ -6,7 +6,7 @@
 Get the transformation to ancestor space from this ARKit coordinate space.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 26.0+
 
 ## Declaration

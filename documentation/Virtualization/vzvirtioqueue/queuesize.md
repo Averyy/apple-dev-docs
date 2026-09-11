@@ -6,7 +6,7 @@
 Size of this queue.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

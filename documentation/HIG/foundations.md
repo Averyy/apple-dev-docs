@@ -18,7 +18,7 @@ Understand how fundamental design elements help you create rich experiences.
 - [Images](/design/human-interface-guidelines/images) - To make sure your artwork looks great on all devices you support, learn how the system displays content and how to deliver art at the appropriate scale factors.
 - [Immersive experiences](/design/human-interface-guidelines/immersive-experiences) - In visionOS, you can design apps and games that extend beyond windows and volumes, immersing people in your content.
 - [Inclusion](/design/human-interface-guidelines/inclusion) - Inclusive apps and games put people first by prioritizing respectful communication and presenting content and functionality in ways that everyone can access and understand.
-- [Layout](/design/human-interface-guidelines/layout) - A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
+- [Layout](/design/human-interface-guidelines/layout) - A consistent layout that adapts across display sizes, orientations, and multitasking configurations helps people understand and enjoy your app or game on all their devices.
 - [Materials](/design/human-interface-guidelines/materials) - A material is a visual effect that creates a sense of depth, layering, and hierarchy between foreground and background elements.
 - [Motion](/design/human-interface-guidelines/motion) - Beautiful, fluid motions bring the interface to life, conveying status, providing feedback and instruction, and enriching the visual experience of your app or game.
 - [Privacy](/design/human-interface-guidelines/privacy) - Privacy is paramount: it’s critical to be transparent about the privacy-related data and resources you require and essential to protect the data people allow you to access.
@@ -40,7 +40,7 @@ Understand how fundamental design elements help you create rich experiences.
 - [Images](images.md) - To make sure your artwork looks great on all devices you support, learn how the system displays content and how to deliver art at the appropriate scale factors.
 - [Immersive experiences](immersive-experiences.md) - In visionOS, you can design apps and games that extend beyond windows and volumes, immersing people in your content.
 - [Inclusion](inclusion.md) - Inclusive apps and games put people first by prioritizing respectful communication and presenting content and functionality in ways that everyone can access and understand.
-- [Layout](layout.md) - A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
+- [Layout](layout.md) - A consistent layout that adapts across display sizes, orientations, and multitasking configurations helps people understand and enjoy your app or game on all their devices.
 - [Materials](materials.md) - A material is a visual effect that creates a sense of depth, layering, and hierarchy between foreground and background elements.
 - [Motion](motion.md) - Beautiful, fluid motions bring the interface to life, conveying status, providing feedback and instruction, and enriching the visual experience of your app or game.
 - [Privacy](privacy.md) - Privacy is paramount: it’s critical to be transparent about the privacy-related data and resources you require and essential to protect the data people allow you to access.

@@ -7,8 +7,7 @@ A cipher suite that provides xWing hybrid post-quantum key encapsulation.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -19,6 +18,7 @@ case xWing
 ## Mentions
 
 - [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 Appends a layer to this disk image, creating or extending a stack.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

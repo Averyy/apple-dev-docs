@@ -6,7 +6,7 @@
 The display name of the document on the spatial preview
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

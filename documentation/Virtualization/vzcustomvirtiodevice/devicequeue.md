@@ -6,7 +6,7 @@
 The dispatch queue this device uses.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

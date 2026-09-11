@@ -6,7 +6,7 @@
 The chirality of the accessory, if applicable.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 The server-side timestamp that indicates when the server processed the evaluation, in UTC.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

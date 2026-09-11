@@ -6,7 +6,7 @@
 An object representing a website-provided immersive environment that is ready for presentation.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

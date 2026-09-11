@@ -7,8 +7,7 @@ A transport method that uses the internet for data delivery.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,6 +17,7 @@ case internet
 
 ## Mentions
 
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 - [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
 
 #### Discussion

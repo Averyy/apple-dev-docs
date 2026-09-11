@@ -6,7 +6,7 @@
 Updates the accessories being tracked by a provider.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

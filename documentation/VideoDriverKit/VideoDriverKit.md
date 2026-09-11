@@ -6,7 +6,7 @@
 Develop drivers for video capture and playback devices.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 #### Overview
 
@@ -20,22 +20,35 @@ Develop your driver by subclassing [`IOUserVideoDriver`](iouservideodriver.md). 
 
 ### Essentials
 - [IOUserVideoObject](iouservideoobject.md)
+  The base class for all video objects.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 ### Video devices
 - [IOUserVideoClockDevice](iouservideoclockdevice.md)
+  A clock device.
 - [IOUserVideoDevice](iouservideodevice.md)
+  A video device.
 ### Video objects
 - [IOUserVideoBox](iouservideobox.md)
+  A container for other objects.
 ### Video streams
 - [IOUserVideoStream](iouservideostream.md)
+  A video stream.
 ### Video controls
 - [IOUserVideoControl](iouservideocontrol.md)
+  A base class for control objects.
 - [IOUserVideoBooleanControl](iouservideobooleancontrol.md)
+  A control object that supports Boolean values.
 - [IOUserVideoStereoPanControl](iouservideostereopancontrol.md)
+  A control object that supports panning between stereo channels.
 - [IOUserVideoSliderControl](iouservideoslidercontrol.md)
+  A control object that supports a 32-bit unsigned integer value slider.
 - [IOUserVideoDirectionControl](iouservideodirectioncontrol.md)
+  A control object that supports Boolean values.
 - [IOUserVideoSelectorControl](iouservideoselectorcontrol.md)
+  A control object that supports a 32-bit unsigned integer selector value.
 - [IOUserVideoLevelControl](iouservideolevelcontrol.md)
+  A control object that supports a float value level.
 ### Namespaces
 - [VideoDriverKit](videodriverkit.md)
   A namespace that holds supporting types used by VideoDriverKit functions.
@@ -46,6 +59,7 @@ Develop your driver by subclassing [`IOUserVideoDriver`](iouservideodriver.md). 
 - [FailIfNULL](failifnull.md)
 - [kIOStreamBufferIDInvalid](kiostreambufferidinvalid.md)
 - [kIOUserVideoDriverUserClientType](kiouservideodriveruserclienttype.md)
+  User client type required for connection to the Host.
 
 
 ---

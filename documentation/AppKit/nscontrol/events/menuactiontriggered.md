@@ -6,7 +6,7 @@
 A menu action has triggered prior to the menu being presented.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A method the framework calls when it creates a custom Virtio device from a custom Virtio device configuration.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

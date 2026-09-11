@@ -6,7 +6,7 @@
 A context object that provides information about the initiator of a file system operation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

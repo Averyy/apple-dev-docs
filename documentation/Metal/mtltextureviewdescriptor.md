@@ -22,6 +22,8 @@ class MTLTextureViewDescriptor
 ### Instance Properties
 - [var levelRange: Range<Int>](mtltextureviewdescriptor/levelrange-55q8m.md)
   A desired range of mip levels of a texture view.
+- [var minLOD: Float](mtltextureviewdescriptor/minlod.md)
+  The minimum level of detail for texture views you create with the descriptor.
 - [var pixelFormat: MTLPixelFormat](mtltextureviewdescriptor/pixelformat.md)
 - [var sliceRange: Range<Int>](mtltextureviewdescriptor/slicerange-6nq6v.md)
   A desired range of slices of a texture view.

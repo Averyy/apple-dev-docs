@@ -6,9 +6,9 @@
 Indicates whether this segment must be played sequentially without seeking or skipping. Typically used for advertisements or important announcements.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

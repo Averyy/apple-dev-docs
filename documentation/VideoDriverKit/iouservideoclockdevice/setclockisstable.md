@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the clock stability of the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetClockIsStable(bool in_clock_is_stable);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Set bool for clock stability of the IOUserVideoClockDevice.
-
-Setting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
@@ -29,9 +25,13 @@ Setting the value will be synchronized using the work queue created by the objec
 ## See Also
 
 - [SetClockAlgorithm](iouservideoclockdevice/setclockalgorithm.md)
+  Sets the algorithm for the video clock device.
 - [GetClockAlgorithm](iouservideoclockdevice/getclockalgorithm.md)
+  Gets the clock algorithm of the clock device.
 - [IOUserVideoClockAlgorithm](videodriverkit/iouservideoclockalgorithm.md)
+  Clock smoothing algorithm selectors.
 - [GetClockIsStable](iouservideoclockdevice/getclockisstable.md)
+  Gets a Boolean value for clock stability of the clock device.
 
 
 ---

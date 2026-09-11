@@ -32,19 +32,6 @@ The first argument of the `SUBQUERY` specifies the `app.managed.list` status ite
 
 In this example, two terms exist: one tests for a specific app bundle identifier, and the other tests the app’s state. The `@count != 0` term tests whether the `SUBQUERY` result array contains at least one matching item. So this predicate evaluates to `true` only if the app with the bundle identifier `com.example.app` is present and its management state is set to `managed`. To learn more about predicate expressions, see [`Predicate Programming`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html).
 
-## See Also
-
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
-  Use declarative management to handle all aspects of managing apps on devices.
-- [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
-  Use a management app to display managed apps and packages to the user.
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
-  Provide managed apps and extensions with app configuration and secrets.
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Transition apps to declarative management.
-- [Installing packages](installing-packages.md)
-  Use declarative package management to install and remove packages in macOS.
-
 
 ---
 

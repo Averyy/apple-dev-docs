@@ -20,6 +20,10 @@ Contextual information that the system provides while it performs the app intent
 var systemContext: IntentSystemContext { get }
 ```
 
+## Mentions
+
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+
 #### Discussion
 
 Access information the system provides to your app intent while it performs its action in its [`perform()`](appintent/perform().md) implementation. The available information varies by platform. For example, in watchOS, the intent system context includes a precise timestamp when a person starts the app intent’s action using the Action button on Apple Watch Ultra.

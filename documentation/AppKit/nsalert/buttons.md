@@ -24,6 +24,8 @@ Any button with a title of “Cancel” has a key equivalent of Escape, and any 
 
 - [func addButton(withTitle: String) -> NSButton](nsalert/addbutton(withtitle:).md)
   Adds a button with a given title to the alert.
+- [NSApplication.ModalResponse](nsapplication/modalresponse.md)
+  A set of button return values for modal dialogs.
 
 
 ---

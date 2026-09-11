@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Initializes a video box.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -18,9 +20,7 @@ True on success.
 
 #### Discussion
 
-Initializes a IOUserVideoBox.
-
-Always pass in the IOUserVideoDriver and arguments.  init() will always return false;
+Always pass in the IOUserVideoDriver and arguments. init() will always return false;
 
 ## Parameters
 
@@ -30,7 +30,9 @@ Always pass in the IOUserVideoDriver and arguments.  init() will always return f
 ## See Also
 
 - [Create](iouservideobox/create.md)
+  Static factory method to allocate and initialize an IOUserVideoBox.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 
 
 ---

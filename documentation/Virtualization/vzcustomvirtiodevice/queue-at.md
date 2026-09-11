@@ -6,7 +6,7 @@
 Returns Virtio queue at the specified index that belongs to this device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -16,9 +16,9 @@ class QLPreviewProvider
 
 #### Overview
 
-When you subclass [`QLPreviewProvider`](qlpreviewprovider.md), conform your subclass [`QLPreviewingController`](qlpreviewingcontroller.md).
+When you subclass [`QLPreviewProvider`](qlpreviewprovider.md), conform your subclass to [`QLPreviewingController`](qlpreviewingcontroller.md).
 
-To provide a data-based Quick Look extension, make the following modifications to your Info.plist file:
+To provide a data-based Quick Look extension, make the following modifications to your `Info.plist` file:
 
 - Set the Boolean key `QLIsDataBasedPreview` to `true`.
 - Add the type identifiers for your extension’s supported content types to the `QLSupportedContentTypes` array.

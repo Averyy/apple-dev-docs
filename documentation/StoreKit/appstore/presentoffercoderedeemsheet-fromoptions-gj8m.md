@@ -6,7 +6,7 @@
 Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

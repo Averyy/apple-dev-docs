@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the current stereo panning channels.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetPanningChannels(IOUserVideoObjectPropertyElement in_left_channel, IOUserVideoObjectPropertyElement in_right_channel);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the current stereo panning channels.
-
-Changing the panning channels will send a notification to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+Changing the panning channels will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
@@ -30,8 +26,11 @@ Changing the panning channels will send a notification to the host to update the
 ## See Also
 
 - [SetControlValue](iouservideostereopancontrol/setcontrolvalue.md)
+  Sets the current control value.
 - [GetControlValue](iouservideostereopancontrol/getcontrolvalue.md)
+  Gets the current value of the control.
 - [GetPanningChannels](iouservideostereopancontrol/getpanningchannels.md)
+  Gets the current stereo panning channels.
 
 
 ---

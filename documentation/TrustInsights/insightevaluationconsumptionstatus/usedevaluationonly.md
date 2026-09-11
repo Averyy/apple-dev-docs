@@ -6,8 +6,8 @@
 A value that indicates the app used the insights for evaluation of their usefulness or for model training with no impact on a decision process.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

@@ -4,7 +4,7 @@
 **Kind**: method
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,22 +14,27 @@ OSSharedPtr<IOUserVideoBuffer> GetBufferWithID(uint32_t bufferID);
 
 #### Return Value
 
-Returns a OSSharedPtr that points to the IOUserVideoBuffer , or NULL if the buffer ID was invalid for this stream
+The buffer, or `NULL` if the buffer identifier was invalid for this stream.
 
 ## Parameters
 
-- `bufferID`: uint32_t that specifies the bufferID of the buffer in the queue
+- `bufferID`: The buffer identifier of the buffer in the queue.
 
 ## See Also
 
 - [GetBufferCount](iouservideostream/getbuffercount.md)
+  Returns the number of buffers in the buffer queue.
 - [GetBufferList](iouservideostream/getbufferlist.md)
+  Gets an array containing all the buffers in the video stream.
 - [addBuffer](iouservideostream/addbuffer.md)
+  Add a buffer to a video stream.
 - [addBuffers](iouservideostream/addbuffers.md)
 - [enqueueOutputBuffer](iouservideostream/enqueueoutputbuffer.md)
 - [IOUserVideoBuffer](iouservideobuffer.md)
 - [removeAllBuffers](iouservideostream/removeallbuffers.md)
+  Removes all buffers from the video stream.
 - [SendOutputBufferNotification](iouservideostream/sendoutputbuffernotification.md)
+  Sends a notification to the host that data is available for reading on the output queue.
 
 
 ---

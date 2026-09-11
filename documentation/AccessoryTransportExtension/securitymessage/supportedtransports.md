@@ -7,14 +7,17 @@ An array of transports that the accessory supports for sending sensitive informa
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
+- Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
 let supportedTransports: [AccessoryTransport]
 ```
+
+## Mentions
+
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 

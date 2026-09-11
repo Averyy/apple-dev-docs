@@ -25,6 +25,8 @@ func perform() async throws -> Self.PerformResult
 
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
+- [Directing app intents to your app’s scenes](directing-app-intents-to-your-apps-scenes.md)
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
 - [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
 
 #### Return Value

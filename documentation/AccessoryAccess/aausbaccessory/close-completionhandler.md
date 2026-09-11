@@ -6,7 +6,7 @@
 Closes all connections to the USB accessory for this process.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

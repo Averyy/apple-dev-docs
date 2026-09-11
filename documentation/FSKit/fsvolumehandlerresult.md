@@ -6,7 +6,7 @@
 An abstract base class for all result objects in FSKit handler-style protocols.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 An interaction which specifies that the receiver should not trigger Look to Scroll.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

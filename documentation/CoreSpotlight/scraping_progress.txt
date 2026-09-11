@@ -1,4 +1,4 @@
 Completed scraping Core Spotlight!
-Total pages scraped: 0
-Pages skipped (unchanged): 795
+Total pages scraped: 420
+Pages skipped (unchanged): 375
 Pages failed: 0

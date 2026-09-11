@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the starting channel of the stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,15 +16,16 @@ uint32_t GetStartingChannel();
 
 #### Return Value
 
-Returns a uint32_t that represents the starting channel of the stream.
+The starting channel of the stream.
 
 #### Discussion
 
-Get the starting channel of the IOUserVideoStream. Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetStartingChannel](iouservideostream/setstartingchannel.md)
+  Sets the starting channel of the stream.
 
 
 ---

@@ -6,7 +6,7 @@
 Writes the memory represented by the data object you provide into the write buffers.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

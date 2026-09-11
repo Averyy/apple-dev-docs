@@ -123,7 +123,7 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 
 ##### Immersive Spaces
 
-- Add an action to perform when the state of the immersion changes using the doc://com.apple.documentation/documentation/SwiftUI/View/onImmersionChange(_:) modifier.
+- Add an action to perform when the state of the immersion changes using the [`onImmersionChange(initial:_:)`](https://developer.apple.com/documentation/swiftui/view/onimmersionchange(initial:_:)) modifier.
 - Apply a custom color or dim a passthrough video in an immersive space using the [`colorMultiply(_:)`](https://developer.apple.com/documentation/swiftui/surroundingseffect/colormultiply(_:)) and [`dim(intensity:)`](https://developer.apple.com/documentation/swiftui/surroundingseffect/dim(intensity:)) initializers.
 
 ##### Documents

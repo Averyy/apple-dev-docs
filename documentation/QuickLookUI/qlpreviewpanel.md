@@ -20,6 +20,14 @@ Every application has a single shared instance of [`QLPreviewPanel`](qlpreviewpa
 
 You can’t subclass [`QLPreviewPanel`](qlpreviewpanel.md); you can, however, customize its behavior using a [`delegate`](qlpreviewpanel/delegate.md). See the [`QLPreviewPanelDelegate`](qlpreviewpaneldelegate.md) protocol for the methods to customize a preview panel’s behavior.
 
+##### Take Control of the Preview Panel
+
+A preview panel has no controller until an object in the responder chain accepts control of it. The panel sends `acceptsPreviewPanelControl(_:)` to each object in the responder chain, and the first object to return `true` becomes the panel’s controller. Implement these methods in your window controller or delegate.
+
+A controlling object also implements `beginPreviewPanelControl(_:)` and `endPreviewPanelControl(_:)`. Set up the panel’s data source and delegate in `beginPreviewPanelControl(_:)`, and tear them down in `endPreviewPanelControl(_:)`. The panel sends all three messages itself, so never call them directly.
+
+> ❗ **Important**: Don’t modify a preview panel’s state unless you’re controlling it.
+
 ## Topics
 
 ### Accessing the Shared Panel
@@ -78,15 +86,13 @@ You can’t subclass [`QLPreviewPanel`](qlpreviewpanel.md); you can, however, cu
 - [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [class QLPreviewView](qlpreviewview.md)
   A Quick Look preview of an item that you can embed into your view hierarchy.
 - [protocol QLPreviewItem](qlpreviewitem.md)
-  A protocol that defines a set of properties you implement to make a preview of your application’s content.
+  A protocol that defines a set of properties you implement to make a preview of your app’s content.
 - [protocol QLPreviewPanelDataSource](qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
 - [protocol QLPreviewPanelDelegate](qlpreviewpaneldelegate.md)

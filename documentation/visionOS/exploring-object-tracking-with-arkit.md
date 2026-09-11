@@ -5,8 +5,8 @@
 Find and track real-world objects in visionOS using reference objects you train with Create ML.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

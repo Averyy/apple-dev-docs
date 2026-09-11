@@ -6,7 +6,7 @@
 A dictionary that describes how to uninstall the package.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The PCI subclass ID of the device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

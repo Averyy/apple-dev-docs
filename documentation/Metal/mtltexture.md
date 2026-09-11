@@ -134,6 +134,8 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
 ### Instance Properties
 - [var compressionType: MTLTextureCompressionType](mtltexture/compressiontype.md)
 - [var gpuResourceID: MTLResourceID](mtltexture/gpuresourceid.md)
+- [var minLOD: Float](mtltexture/minlod.md)
+  The lowest mipmap level of detail for the texture.
 - [var sparseTextureTier: MTLTextureSparseTier](mtltexture/sparsetexturetier.md)
 ### Instance Methods
 - [func newTextureView(with: MTLTextureViewDescriptor) -> (any MTLTexture)?](mtltexture/newtextureview(with:).md)

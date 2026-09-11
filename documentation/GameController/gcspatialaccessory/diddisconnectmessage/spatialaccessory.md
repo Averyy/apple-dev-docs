@@ -6,7 +6,7 @@
 The spatial object that disconnected from the device.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

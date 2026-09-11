@@ -4,7 +4,7 @@
 **Kind**: method
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,6 +16,7 @@ static OSSharedPtr<IOUserVideoBuffer> Create(IOUserVideoDriver *in_driver, IOUse
 
 - [init](iouservideobuffer/init.md)
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 
 
 ---

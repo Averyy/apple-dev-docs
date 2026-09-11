@@ -6,7 +6,7 @@
 Closes the channel and finishes [`receivedMessages`](foveatedstreamingprovidermessagechannel/receivedmessages.md).
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

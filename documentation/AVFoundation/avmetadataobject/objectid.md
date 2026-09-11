@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
-A unique identifier for each detected object type (face, body, hands, heads and salient objects) in a collection.
+A unique identifier for each detected object type (face, body, hands, heads, salient objects and focus-tracked objects) in a collection.
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +20,7 @@ var objectID: Int { get }
 
 #### Discussion
 
-Defaults to a value of -1 when invalid or not available. When used in conjunction with an [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md), each newly detected object that enters the scene is assigned a unique identifier. [`objectID`](avmetadataobject/objectid.md)s are never re-used as objects leave the picture and new ones enter. Objects that leave the picture and then re-enter are assigned a new [`objectID`](avmetadataobject/objectid.md).
+Defaults to a value of -1 when invalid or not available. When used in conjunction with an [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md), each newly detected object that enters the scene is assigned a unique identifier. [`objectID`](avmetadataobject/objectid.md)s are never re-used as objects leave the picture and new ones enter. Objects that leave the picture and then re-enter are assigned a new [`objectID`](avmetadataobject/objectid.md). Focus-tracked objects are an exception. They retain the same [`objectID`](avmetadataobject/objectid.md) when leaving and re-entering the picture.
 
 ## See Also
 

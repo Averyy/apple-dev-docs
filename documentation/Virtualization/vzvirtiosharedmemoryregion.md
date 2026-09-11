@@ -6,7 +6,7 @@
 A class that represents a Virtio shared memory region for a custom Virtio device in a virtual machine.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

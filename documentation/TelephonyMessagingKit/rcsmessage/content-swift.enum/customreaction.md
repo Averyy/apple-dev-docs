@@ -6,7 +6,7 @@
 A content type for custom reaction content.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

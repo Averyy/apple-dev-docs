@@ -6,7 +6,7 @@
 An entitlement that allows other apps to use privacy-sensitive foveation data for streaming from remote endpoints to Apple Vision Pro.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 
 

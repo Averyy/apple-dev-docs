@@ -6,7 +6,7 @@
 An enum describing the state of a [`FoveatedStreamingExtension`](foveatedstreamingextension.md).
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 An object that renders an immersive video frame into a texture and exposes the command buffer for presentation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

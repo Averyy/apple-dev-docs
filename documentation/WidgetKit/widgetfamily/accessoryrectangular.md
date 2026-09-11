@@ -9,7 +9,7 @@ A rectangular widget.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 - watchOS 9.0+
 
 ## Declaration

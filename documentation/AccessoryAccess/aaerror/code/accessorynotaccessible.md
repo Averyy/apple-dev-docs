@@ -6,7 +6,7 @@
 An error code that indicates the USB accessory isn’t accessible since it may already be in use.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 channel is present, but has no intended use or destination
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

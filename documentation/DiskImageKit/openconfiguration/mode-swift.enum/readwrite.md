@@ -6,7 +6,7 @@
 Open the disk-image with read-write permissions.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

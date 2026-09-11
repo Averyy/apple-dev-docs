@@ -6,7 +6,7 @@
 The configuration to use to create RAW disk images.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

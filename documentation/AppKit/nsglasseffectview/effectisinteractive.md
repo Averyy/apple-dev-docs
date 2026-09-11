@@ -6,7 +6,7 @@
 Enables interactive glass behavior, which adds a visual response to user interactions.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

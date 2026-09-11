@@ -6,7 +6,7 @@
 Notifies the delegate that a view provider associated with a text attachment is about to be invalidated.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -3,18 +3,16 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Frees the control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
 ```swift
 virtual void free();
 ```
-
-#### Discussion
-
-Frees the IOUserVideoBooleanControl.
 
 
 ---

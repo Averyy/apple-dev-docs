@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Adds an video stream to the device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,9 @@ kern_return_t AddStream(IOUserVideoStream *in_stream);
 
 #### Return Value
 
-Returns kIOReturnSuccess if stream was successfully added.
+`kIOReturnSuccess` if stream was successfully added.
 
 #### Discussion
-
-Add a IOUserVideoStream to the device.
 
 The stream’s reference count will be incremented if it was successfully added.
 
@@ -29,7 +29,9 @@ The stream’s reference count will be incremented if it was successfully added.
 ## See Also
 
 - [RemoveStream](iouservideodevice/removestream.md)
+  Removes a video stream from the device.
 - [IOUserVideoStream](iouservideostream.md)
+  A video stream.
 
 
 ---

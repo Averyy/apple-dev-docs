@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Initializes an stereo pan control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,14 +18,10 @@ virtual bool init(IOUserVideoDriver *in_driver, bool in_is_settable, float in_co
 
 True on success.
 
-#### Discussion
-
-Initializes a IOUserVideoStereoPanControl.
-
 ## Parameters
 
 - `in_driver`: The IOUserVideoDriver that owns this object.
-- `in_is_settable`: A bool value indicating if the control value can be set
+- `in_is_settable`: A Boolean value indicating if the control value can be set
 - `in_control_value`: A float for the control’s current stereo pan value
 - `in_control_element`: The IOUserVideoObjectPropertyElement for the control
 - `in_control_scope`: The IOUserVideoObjectPropertyScope for the control
@@ -32,9 +30,13 @@ Initializes a IOUserVideoStereoPanControl.
 ## See Also
 
 - [Create](iouservideostereopancontrol/create.md)
+  A static factory method that allocates and initializes an stereo pan control.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 - [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+  An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
 - [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+  A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 
 ---

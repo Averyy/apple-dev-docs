@@ -6,7 +6,7 @@
 The localized, human-readable display name of the provider.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

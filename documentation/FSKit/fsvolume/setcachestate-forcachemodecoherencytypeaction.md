@@ -6,7 +6,7 @@
 Sends a synchronous cache state update request from the module to the kernel.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

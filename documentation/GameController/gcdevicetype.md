@@ -6,7 +6,7 @@
 A class representing a type of spatial accessory.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

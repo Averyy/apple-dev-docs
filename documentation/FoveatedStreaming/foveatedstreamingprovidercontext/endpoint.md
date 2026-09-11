@@ -6,7 +6,7 @@
 The endpoint for which a connection is being requested (local IP or remote URL).
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: enum
 
+Video class identifiers of an video object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,108 +14,80 @@
 enum IOUserVideoClassID : uint32_t;
 ```
 
-#### Overview
-
-IOUserVideoClassID’s are used to identify the class of an IOUserVideooObject.
-
-The IOUserVideoClassID that identifies the IOUserVideoObject class.
-
-The IOUserVideoClassID that identifies the IOUserVideoDriver class
-
-The IOUserVideoClassID that identifies the IOUserVideoBox class
-
-The IOUserVideoClassID that identifies the IOUserVideoClockDevice class
-
-The IOUserVideoClassID that identifies the IOUserVideoDevice class
-
-The IOUserVideoClassID that identifies the IOUserVideoStream class
-
-The IOUserVideoClassID that identifies the IOUserVideoControl class
-
-The IOUserVideoClassID that identifies the IOUserVideoSliderControl class
-
-The IOUserVideoClassID that identifies the IOUserVideoLevelControl class
-
-The IOUserVideoClassID that identifies the IOUserVideoVolumeControl class
-
-A subclass of the IOUserVideoLevelControl class for an LFE channel that results from bass management. Note that LFE channels that are represented as normal audio channels must use IOUserVideoClassID VolumeControl to manipulate the level.
-
-The IOUserVideoClassID that identifies the IOUserVideoBooleanControl class
-
-A subclass of the IOUserVideoBooleanControl class where a true value means that solo is enabled making just that element audible and the other elements inaudible.
-
-A subclass of the IOUserVideoBooleanControl class where a true value means something is plugged into that element.
-
-A subclass of the IOUserVideoBooleanControl class where true means that mute is enabled making that LFE element inaudible. This control is for LFE channels that result from bass management. Note that LFE channels that are represented as normal audio channels must use an VideoMuteControl.
-
-A subclass of the IOUserVideoBooleanControl class where true means that the element’s hardware has phantom power enabled.
-
-A subclass of the IOUserVideoBooleanControl class where true means that the phase of the signal on the given element is being inverted by 180 degrees.
-
-A subclass of the IOUserVideoBooleanControl class where true means that the signal for the element has exceeded the sample range. Once a clip light is turned on, it is to stay on until either the value of the control is set to false or the current IO session stops and a new IO session starts.
-
-An IOUserVideoBooleanControl where true means that the talkback channel is enabled. This control is for talkback channels that are handled outside of the regular IO channels. If the talkback channel is among the normal IO channels, it will use IOUserVideoMuteControl.
-
-An IOUserVideoBooleanControl where true means that the listenback channel is audible. This control is for listenback channels that are handled outside of the regular IO channels. If the listenback channel is among the normal IO channels, it will use IOUserVideoMuteControl.
-
-The IOUserVideoClassID that identifies the IOUserVideoMuteControl class
-
-The IOUserVideoClassID that identifies the IOUserVideoSelectorControl class
-
-A subclass of the IOUserVideoSelectorControl class that identifies where the data for the element is coming from.
-
-A subclass of the IOUserVideoSelectorControl class that identifies where the data for the element is going.
-
-A subclass of the IOUserVideoSelectorControl class that identifies where the timing info for the object is coming from.
-
-A subclass of the IOUserVideoSelectorControl class that identifies the nominal line level for the element. Note that this is not a gain stage but rather indicating the voltage standard (if any) used for the element, such as +4dBu, -10dBV, instrument, etc.
-
-A subclass of the IOUserVideoSelectorControl class that indicates the setting for the high pass filter on the given element.
-
-The IOUserVideoClassID that identifies the IOUserVideoStereoPanControl class
-
 ## Topics
 
 ### Identifying VideoDriverKit types
 - [Object](videodriverkit/iouservideoclassid/object.md)
+  The class identifier for the `IOUserVideoObject` class.
 - [Driver](videodriverkit/iouservideoclassid/driver.md)
+  The class identifier for the `IOUserVideoDriver` class.
 - [Box](videodriverkit/iouservideoclassid/box.md)
+  The class identifier for the `IOUserVideoBox` class.
 - [Clock](videodriverkit/iouservideoclassid/clock.md)
+  The class identifier for the `IOUserVideoClockDevice` class.
 - [Buffer](videodriverkit/iouservideoclassid/buffer.md)
+  The class identifier for the `IOUserVideoBuffer` class.
 - [Device](videodriverkit/iouservideoclassid/device.md)
+  The class identifier for the `IOUserVideoDevice` class.
 - [Stream](videodriverkit/iouservideoclassid/stream.md)
+  The class identifier for the `IOUserVideoStream` class.
 ### Identifying generic control types
 - [Control](videodriverkit/iouservideoclassid/control.md)
+  The class identifier for the `IOUserVideoControl` class.
 - [BooleanControl](videodriverkit/iouservideoclassid/booleancontrol.md)
+  The class identifier for the `IOUserVideoBooleanControl` class.
 - [LevelControl](videodriverkit/iouservideoclassid/levelcontrol.md)
+  The class identifier for the `IOUserVideoLevelControl` class.
 - [SliderControl](videodriverkit/iouservideoclassid/slidercontrol.md)
+  The class identifier for the `IOUserVideoSliderControl` class.
 - [SelectorControl](videodriverkit/iouservideoclassid/selectorcontrol.md)
+  The class identifier for the `IOUserVideoSelectorControl` class.
 ### Identifying volume control types
 - [VolumeControl](videodriverkit/iouservideoclassid/volumecontrol.md)
+  The class identifier for the `IOUserVideoVolumeControl` class.
 - [MuteControl](videodriverkit/iouservideoclassid/mutecontrol.md)
+  The class identifier for the `IOUserVideoMuteControl` class.
 - [LFEVolumeControl](videodriverkit/iouservideoclassid/lfevolumecontrol.md)
+  A subclass of the `IOUserVideoLevelControl` class for an LFE channel that results from bass management.
 - [LFEMuteControl](videodriverkit/iouservideoclassid/lfemutecontrol.md)
+  A Boolean control where true means that mute is enabled, making that LFE element inaudible.
 - [LineLevelControl](videodriverkit/iouservideoclassid/linelevelcontrol.md)
+  A video selector control that identifies the nominal line level for the element.
 ### Identifying data control types
 - [DataSourceControl](videodriverkit/iouservideoclassid/datasourcecontrol.md)
+  A video selector control that identifies where the data for the element is coming from.
 - [DataDestinationControl](videodriverkit/iouservideoclassid/datadestinationcontrol.md)
+  A video selector control that identifies where the data for the element is going.
 ### Identifying miscellaneous control types
 - [ClipLightControl](videodriverkit/iouservideoclassid/cliplightcontrol.md)
+  A Boolean control where true means that the signal for the element has exceeded the sample range.
 - [ClockSourceControl](videodriverkit/iouservideoclassid/clocksourcecontrol.md)
+  A video selector control that identifies where the timing info for the object is coming from.
 - [DirectionControl](videodriverkit/iouservideoclassid/directioncontrol.md)
+  The class identifier for the `IOUserVideoDirectionControl` class.
 - [HighPassFilterControl](videodriverkit/iouservideoclassid/highpassfiltercontrol.md)
+  A video selector control that indicates the setting for the high pass filter on the given element.
 - [JackControl](videodriverkit/iouservideoclassid/jackcontrol.md)
+  A Boolean control where true means something is plugged into that element.
 - [ListenbackControl](videodriverkit/iouservideoclassid/listenbackcontrol.md)
+  An `IOUserVideoBooleanControl` where true means that the listenback channel is audible.
 - [PhantomPowerControl](videodriverkit/iouservideoclassid/phantompowercontrol.md)
+  A Boolean control where true means that the element’s hardware has phantom power enabled.
 - [PhaseInvertControl](videodriverkit/iouservideoclassid/phaseinvertcontrol.md)
+  A Boolean control where true means that the phase of the signal on the given element is being inverted by 180 degrees.
 - [SoloControl](videodriverkit/iouservideoclassid/solocontrol.md)
+  A Boolean control where true means that solo is enabled, making just that element audible and the other elements inaudible.
 - [StereoPanControl](videodriverkit/iouservideoclassid/stereopancontrol.md)
+  The class identifier for the `IOUserVideoStereoPanControl` class.
 - [TalkbackControl](videodriverkit/iouservideoclassid/talkbackcontrol.md)
+  A Boolean control where true means that the talkback channel is enabled.
 
 ## See Also
 
 - [GetClassID](iouservideobooleancontrol/getclassid.md)
+  Gets the class identifier of the object
 - [GetBaseClassID](iouservideobooleancontrol/getbaseclassid.md)
+  Gets the class identifier of the base class object
 
 
 ---

@@ -6,7 +6,7 @@
 Values that represent options for performing interface matching using interface matching criteria.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

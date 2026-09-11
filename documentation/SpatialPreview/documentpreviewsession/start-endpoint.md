@@ -6,7 +6,7 @@
 Connects to the specified endpoint and prepares the session to send document updates.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

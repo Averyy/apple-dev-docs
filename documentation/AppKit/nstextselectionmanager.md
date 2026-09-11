@@ -6,7 +6,7 @@
 An object that coordinates text selection behavior for custom text views.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

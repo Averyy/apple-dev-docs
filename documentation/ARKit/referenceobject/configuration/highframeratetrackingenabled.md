@@ -6,7 +6,7 @@
 Whether to enable high frame-rate tracking for this object.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

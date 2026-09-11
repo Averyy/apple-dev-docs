@@ -6,8 +6,8 @@
 A reason that indicates charging stops because the battery is full.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst ?+
 
 ## Declaration

@@ -6,7 +6,7 @@
 The frame information of the website that provided this immersive environment.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

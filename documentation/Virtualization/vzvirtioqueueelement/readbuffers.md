@@ -6,7 +6,7 @@
 Gets the remaining read buffers memory represented as an array of data.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

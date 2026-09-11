@@ -36,6 +36,9 @@ Capture audio and video directly to media files, or capture streams of media for
   [`AVCaptureBroadcastVideoOutput`](avcapturebroadcastvideooutput.md) is a subclass of [`AVCaptureOutput`](avcaptureoutput.md) that delivers broadcast-quality video and ancillary data through the device’s DisplayPort hardware interface (USB-C DP Alt Mode)
 - [protocol AVCaptureBroadcastVideoOutputDelegate](avcapturebroadcastvideooutputdelegate.md)
   Protocol for receiving broadcast video output events and data.
+- [class AVCaptureAncillaryDataEncoder](avcaptureancillarydataencoder.md)
+- [struct AVCaptureAncillaryDataUserKey](avcaptureancillarydatauserkey.md)
+  Clients may use an AVCaptureAncillaryDataUserKey to inspect the [`currentUserDefinedAncillaryData`](avcaptureancillarydataencoder/currentuserdefinedancillarydata.md).
 
 ## See Also
 

@@ -6,7 +6,7 @@
 The session has been disconnected for the provided reason.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

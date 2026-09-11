@@ -6,7 +6,7 @@
 Constructs an ID from a String.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

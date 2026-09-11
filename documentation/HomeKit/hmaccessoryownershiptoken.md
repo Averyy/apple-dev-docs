@@ -8,7 +8,7 @@ Authentication data that your app provides when adding an accessory to a home.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 27.0+ (Beta)
+- Mac Catalyst 27.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the name of the video object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,15 +16,16 @@ OSSharedPtr<OSString> GetName();
 
 #### Return Value
 
-Returns an OSSharedPtr to an OSString
+The video object’s name.
 
 #### Discussion
 
-Get the name of the IOUserVideoObject. Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetName](iouservideoobject/setname.md)
+  Sets the name of the video object.
 
 
 ---

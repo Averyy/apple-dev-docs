@@ -6,7 +6,7 @@
 Creates a configuration object for a new Apple sparse image format (ASIF) disk image layer.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

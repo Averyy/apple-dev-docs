@@ -6,9 +6,9 @@
 A value that holds either a [`String`](https://developer.apple.com/documentation/swift/string) or `[`Decimal`](https://developer.apple.com/documentation/foundation/decimal) amount for a summary line item.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

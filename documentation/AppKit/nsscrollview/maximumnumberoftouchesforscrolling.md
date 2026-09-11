@@ -6,7 +6,7 @@
 The maximum number of touches needed for scrolling
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

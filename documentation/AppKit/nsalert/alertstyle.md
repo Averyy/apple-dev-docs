@@ -22,6 +22,8 @@ See the [`NSAlert.Style`](nsalert/style.md) enumeration for the list of alert st
 
 - [func layout()](nsalert/layout.md)
   Specifies that the alert must do immediate layout instead of lazily just before display.
+- [NSAlert.Style](nsalert/style.md)
+  The set of alert styles to style alerts in your app.
 - [var accessoryView: NSView?](nsalert/accessoryview.md)
   The alert’s accessory view.
 - [var showsHelp: Bool](nsalert/showshelp.md)

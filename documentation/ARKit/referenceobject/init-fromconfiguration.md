@@ -6,7 +6,7 @@
 Initializes a reference object from a URL, with reference object configuration.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

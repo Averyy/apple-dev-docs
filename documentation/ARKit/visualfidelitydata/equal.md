@@ -6,7 +6,7 @@
 Compares two visual fidelity data instances for equality.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

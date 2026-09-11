@@ -6,7 +6,7 @@
 The XPC connection was permanently lost; the stream is finished.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

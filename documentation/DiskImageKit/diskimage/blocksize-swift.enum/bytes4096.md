@@ -6,7 +6,7 @@
 A value that represents a 4096 byte block size.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

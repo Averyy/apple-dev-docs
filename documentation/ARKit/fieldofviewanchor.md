@@ -6,7 +6,7 @@
 An anchor representing a set of field of view (FoV) boundary polygon points in immersive space.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

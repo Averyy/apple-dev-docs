@@ -6,7 +6,7 @@
 An endpoint representing a visionOS device you can connect to for spatial preview.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

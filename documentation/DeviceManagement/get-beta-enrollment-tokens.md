@@ -8,6 +8,10 @@ Retrieves the beta enrollment tokens available for the organization.
 **Availability**:
 - Device Assignment Services 5.1+
 
+## Mentions
+
+- [Enrolling a device in a beta program](enrolling-a-device-in-a-beta-program.md)
+
 ## Topics
 
 ### Response

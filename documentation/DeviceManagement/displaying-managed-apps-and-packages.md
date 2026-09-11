@@ -20,12 +20,6 @@ If a device management service provides optional apps or packages, it needs to p
 
 - [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
   Use declarative management to handle all aspects of managing apps on devices.
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
-  Provide managed apps and extensions with app configuration and secrets.
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Transition apps to declarative management.
-- [Processing status for managed apps](processing-status-for-managed-apps.md)
-  Process the status that declarative management reports for managed apps.
 - [Installing packages](installing-packages.md)
   Use declarative package management to install and remove packages in macOS.
 

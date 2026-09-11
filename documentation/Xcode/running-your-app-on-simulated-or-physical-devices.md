@@ -34,7 +34,9 @@ If you choose a simulator as a run destination, Device Hub opens a compact windo
 
 The first time you run your app on a physical device other than a Mac, Xcode needs to register the device and create a provisioning profile that contains the device. To set up a profile, see [`Set up code signing for physical devices`](running-your-app-on-simulated-or-physical-devices#Set-up-code-signing-for-physical-devices.md). Then Xcode runs the app on the device, and you can interact with your app using both the device and Device Hub. To use Device Hub, select the device in the sidebar and click View Screen in the canvas area.
 
-For more information on interacting with different device types in Device Hub, see  [`Interacting with your app in Device Hub`](interacting-with-your-app-in-device-hub.md) and [`Configuring the environment of a simulated device`](configuring-the-environment-of-a-simulated-device.md).
+For more information on interacting with different device types in Device Hub, see [`Interacting with your app in Device Hub`](interacting-with-your-app-in-device-hub.md), [`Interacting with your visionOS app in Device Hub`](interacting-with-your-visionos-app-in-device-hub.md), and [`Configuring the environment of a simulated device`](configuring-the-environment-of-a-simulated-device.md).
+
+> 💡 **Tip**: To run your app on a physical Apple Vision Pro device with Xcode side-by-side, see [`Use Mac Virtual Display on Apple Vision Pro`](https://developer.apple.comhttps://support.apple.com/guide/apple-vision-pro/use-mac-virtual-display-tan357ede966/26/visionos/26).
 
 If Xcode stops building the app because it encounters an error, click the indicators in the activity area to read the error and warning messages in the Issue navigator. If you want Xcode to show all build errors, toggle off “Stop build on first error” under Issues in General settings, then run the app again.
 

@@ -6,7 +6,7 @@
 Reads the number of bytes you specify from the read buffers into the memory pointed to by the pointer to the buffer you provide.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

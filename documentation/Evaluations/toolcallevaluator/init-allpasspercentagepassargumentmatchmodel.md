@@ -6,13 +6,13 @@
 Creates a new tool-call expectations evaluator with a custom language model for semantic matching of natural language argument matchers.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
+- Xcode 27.0+
 
 ## Declaration
 

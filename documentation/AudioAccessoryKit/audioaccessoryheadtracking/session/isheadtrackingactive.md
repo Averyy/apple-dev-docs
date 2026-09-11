@@ -6,7 +6,7 @@
 Returns `true` when head tracking is currently enabled for this accessory; `false` otherwise.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

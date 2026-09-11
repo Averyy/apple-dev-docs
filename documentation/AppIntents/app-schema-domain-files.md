@@ -2,21 +2,15 @@
 
 **Framework**: App Intents
 
-Make your file-management app’s actions available to Apple Intelligence and Siri by adopting schemas for common file actions.
+Make your app’s file-management actions available in the Shortcuts app.
 
 #### Overview
 
-The `.files` domain defines app schemas that provide a structured representation for common file actions and content. Apply schemas in the `.files` domain to make your app’s file management functionality available to Apple Intelligence and Siri.
-
-The following table maps example phrases that apply to each schema:
-
-| Files intent schemas | Example phrases |
-| --- | --- |
-| [`renameFile`](appschema/filesintent/renamefile.md) | “Rename this file.” or “Rename document.txt to report.txt.” |
+The `.files` domain defines app schemas that provide a structured representation for common file-management actions your app can do. Expose your app’s file-management functionality to the system as actions in the Shortcuts app with the schemas in the `.files` domain. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 
 > 💡 **Tip**: Xcode generates a template implementation when you type `files_` and select a schema from the suggestions list.
 
-For more information about making your app’s actions available to Apple Intelligence and Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+For more information about app schemas, see [`App schema domains`](app-schema-domains.md).
 
 ## Topics
 
@@ -41,30 +35,22 @@ For more information about making your app’s actions available to Apple Intell
 
 ## See Also
 
-- [Audio](app-schema-domain-audio.md)
-  Make your audio app’s actions available to Apple Intelligence and Siri by adopting schemas for common audio playback actions.
-- [Calendar](app-schema-domain-calendar.md)
-  Make your calendar app’s actions available to Apple Intelligence and Siri by adopting schemas for common calendar actions.
-- [Camera](app-schema-domain-camera.md)
-  Make your camera app’s actions available to Apple Intelligence and Siri by adopting schemas for common camera actions.
-- [Clock](app-schema-domain-clock.md)
-  Make your clock app’s actions available to Apple Intelligence and Siri by adopting schemas for common alarm and timer actions.
-- [Mail](app-schema-domain-mail.md)
-  Make your email app’s actions available to Apple Intelligence and Siri by adopting schemas for common email actions.
-- [Maps](app-schema-domain-maps.md)
-  Make your navigation app’s actions available to Apple Intelligence and Siri by adopting schemas for common navigation actions.
-- [Messages](app-schema-domain-messages.md)
-  Make your messaging app’s actions available to Apple Intelligence and Siri by adopting schemas for common messaging actions.
-- [Notes](app-schema-domain-notes.md)
-  Make your note-taking app’s actions available to Apple Intelligence and Siri by adopting schemas for common note actions.
-- [Phone](app-schema-domain-phone.md)
-  Make your phone app’s actions available to Apple Intelligence and Siri by adopting schemas for calling actions.
-- [Photos](app-schema-domain-photos.md)
-  Make your photo and video app’s actions available to Apple Intelligence and Siri by adopting schemas for common photo and video actions.
-- [Reminders](app-schema-domain-reminders.md)
-  Make your reminder app’s actions available to Apple Intelligence and Siri by adopting schemas for common reminder actions.
-- [System and in-app search](app-schema-domain-system-and-in-app-search.md)
-  Make your app’s actions available to Apple Intelligence and Siri by adopting schemas for in-app search and content access.
+- [Books](app-schema-domain-books.md)
+  Make your ebook reader’s actions available in the Shortcuts app by adopting schemas for common reading actions.
+- [Browser](app-schema-domain-browser.md)
+  Make your web browser’s actions available in the Shortcuts app by adopting schemas for common browsing actions.
+- [Journaling](app-schema-domain-journaling.md)
+  Make your journaling app’s actions available in the Shortcuts app by adopting schemas for journal-entry management.
+- [Presentation](app-schema-domain-presentation.md)
+  Make your presentation app’s actions available in the Shortcuts app by adopting schemas for common presentation actions.
+- [Reader](app-schema-domain-reader.md)
+  Make your document reader’s actions available in the Shortcuts app by adopting schemas for document viewing and manipulation.
+- [Spreadsheet](app-schema-domain-spreadsheet.md)
+  Make your spreadsheet app’s actions available in the Shortcuts app by adopting schemas for spreadsheet management.
+- [Whiteboard](app-schema-domain-whiteboard.md)
+  Make your whiteboard app’s actions available in the Shortcuts app by adopting schemas for common whiteboard actions.
+- [Word processor](app-schema-domain-word-processor.md)
+  Make your word processor’s actions available in the Shortcuts app by adopting schemas for document editing.
 
 
 ---

@@ -11,7 +11,7 @@ A null value.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
+- watchOS 27.0+
 
 ## Declaration
 

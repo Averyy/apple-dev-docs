@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the clock algorithm of the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,22 +14,20 @@
 IOUserVideoClockAlgorithm GetClockAlgorithm();
 ```
 
-#### Return Value
-
-Returns IOUserVideoClockAlgorithm
-
 #### Discussion
 
-Get the IOUserVideoClockAlgorithm of the IOUserVideoClockDevice.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetClockAlgorithm](iouservideoclockdevice/setclockalgorithm.md)
+  Sets the algorithm for the video clock device.
 - [IOUserVideoClockAlgorithm](videodriverkit/iouservideoclockalgorithm.md)
+  Clock smoothing algorithm selectors.
 - [SetClockIsStable](iouservideoclockdevice/setclockisstable.md)
+  Sets the clock stability of the clock device.
 - [GetClockIsStable](iouservideoclockdevice/getclockisstable.md)
+  Gets a Boolean value for clock stability of the clock device.
 
 
 ---

@@ -6,7 +6,7 @@
 Return a MutableRawSpan to the underlying bytes of the data buffer.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

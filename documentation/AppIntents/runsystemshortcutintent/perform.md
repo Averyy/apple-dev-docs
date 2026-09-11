@@ -6,9 +6,9 @@
 Performs a widget’s configured action, like opening another app or performing an App Shortcut, custom shortcut, or system action.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

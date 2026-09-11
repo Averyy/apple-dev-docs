@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the current value of the control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,17 +16,16 @@ bool GetControlValue();
 
 #### Return Value
 
-Returns bool
+A Boolean value that represents the control’s current value.
 
 #### Discussion
 
-Get the current value of the control.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to this value.
 
 ## See Also
 
 - [SetControlValue](iouservideobooleancontrol/setcontrolvalue.md)
+  Sets the current control value.
 
 
 ---

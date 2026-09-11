@@ -6,7 +6,7 @@
 Reads the number of bytes you specify from the read buffers and return result as a data object.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 User’s eyes are properly positioned within the optimal device fit range.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

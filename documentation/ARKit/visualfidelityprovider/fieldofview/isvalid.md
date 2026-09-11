@@ -6,7 +6,7 @@
 Validates whether this field of view specification is valid.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Creates a USB accessory from an XPC representation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

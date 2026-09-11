@@ -6,7 +6,7 @@
 Creates a sensor update sequence for the specified accessory.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

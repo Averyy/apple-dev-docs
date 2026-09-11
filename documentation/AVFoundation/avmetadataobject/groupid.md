@@ -39,7 +39,7 @@ When presented with a collection of [`AVMetadataObject`](avmetadataobject.md) in
 - [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
   The current focus mode when an object is detected during a Cinematic Video recording.
 - [var objectID: Int](avmetadataobject/objectid.md)
-  A unique identifier for each detected object type (face, body, hands, heads and salient objects) in a collection.
+  A unique identifier for each detected object type (face, body, hands, heads, salient objects and focus-tracked objects) in a collection.
 
 
 ---

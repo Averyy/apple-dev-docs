@@ -6,7 +6,7 @@
 Initiates a drag operation using a gesture recognizer.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

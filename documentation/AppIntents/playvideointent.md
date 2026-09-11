@@ -19,6 +19,10 @@ An intent that looks for videos based on a search term, then plays the content.
 protocol PlayVideoIntent : SystemIntent
 ```
 
+## Mentions
+
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+
 ## Topics
 
 ### Instance Properties

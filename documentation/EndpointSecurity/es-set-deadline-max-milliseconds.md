@@ -6,7 +6,7 @@
 Set the maximum deadline in milliseconds for specified auth event types for this client
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the current control value.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetControlValue(bool in_control_value);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the current control value.
-
-Changing the control value will send a notification to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+Changing the control value will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
@@ -29,6 +25,7 @@ Changing the control value will send a notification to the host to update the ob
 ## See Also
 
 - [GetControlValue](iouservideodirectioncontrol/getcontrolvalue.md)
+  Gets the current value of the control.
 
 
 ---

@@ -6,7 +6,7 @@
 Set the deadline miss mode for the specified client
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

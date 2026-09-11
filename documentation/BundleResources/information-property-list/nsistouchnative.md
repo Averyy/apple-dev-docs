@@ -6,7 +6,7 @@
 A Boolean value that indicates whether your app handles touch input natively, without relying on AppKit’s extra mouse emulation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 
 

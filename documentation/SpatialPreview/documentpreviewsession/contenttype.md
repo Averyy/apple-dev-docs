@@ -6,7 +6,7 @@
 The content type of the document. All updates must provide documents conforming to this content type.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

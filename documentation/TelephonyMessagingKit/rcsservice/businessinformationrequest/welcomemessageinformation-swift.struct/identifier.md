@@ -6,7 +6,7 @@
 The Welcome Message identifier provided by a business.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Disables Secure Boot while preserving the existing configuration.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Removes aa clock device from the video box.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,9 @@ kern_return_t RemoveClockDevice(IOUserVideoClockDevice *in_clock_device);
 
 #### Return Value
 
-Returns kIOReturnSuccess if clock device was successfully removed.
+`kIOReturnSuccess` if clock device was successfully removed.
 
 #### Discussion
-
-Remove a IOUserVideoClockDevice from the IOUserVideoBox.
 
 The clock device’s reference count will be decremented if it was successfully removed.
 
@@ -29,10 +29,15 @@ The clock device’s reference count will be decremented if it was successfully 
 ## See Also
 
 - [AddDevice](iouservideobox/adddevice.md)
+  Adds a video device to the video box.
 - [RemoveDevice](iouservideobox/removedevice.md)
+  Removes a video device from the video box.
 - [IOUserVideoDevice](iouservideodevice.md)
+  A video device.
 - [AddClockDevice](iouservideobox/addclockdevice.md)
+  Adds a clock device video box.
 - [IOUserVideoClockDevice](iouservideoclockdevice.md)
+  A clock device.
 
 
 ---

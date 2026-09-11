@@ -6,7 +6,7 @@ Provide customizable information for your Wallet Pass.
 
 #### Overview
 
-When designing your Wallet Pass, consider what information is most important to include on the type of pass you’re creating. By defining the metadata of your Wallet Pass, you can optimize the user experience, ensuring that the pass displays all the most helpful information to people. You can even extend the pass experience beyond just the Wallet app, for example, by adding featured actions related to your pass.
+When designing your Wallet Pass, consider what information is most important to include on the type of pass you’re creating. By defining the metadata of your Wallet Pass, you can optimize the user experience, ensuring that the pass displays all the most helpful information to people. You can even extend the pass experience beyond just the Wallet app, for example, by adding Featured Actions related to your pass.
 
 With metadata, you can:
 
@@ -114,7 +114,7 @@ Generic passes also allow for up to four secondary fields and four auxiliary fie
 
 ![An illustration of a generic pass for a gym with the various fields highlighted.](/images/com.apple.walletpasses/pass-fields-layout-generic-pass@2x.png)
 
-For details on how to create a generic pass, see [`Creating a generic pass`](creating-a-generic-pass.md).
+For details on how to create a generic pass, see [`Creating a poster generic pass`](creating-a-poster-generic-pass.md).
 
 #### Add Any Relevant Back Fields
 
@@ -122,13 +122,13 @@ Back fields are available for every pass type, but they don’t appear in the la
 
 #### Add Featured Actions
 
-You can also include featured actions with your pass. These actions display as cards when viewing your pass in the Wallet app and you can use them for quick calls to action for the viewer. Featured actions make it easy for someone to quickly find relevant information related to your pass, such as directions to a business location, music related to a live performance, or even quick links to book tickets.
+You can also include Featured Actions with your pass. These actions display as cards when viewing your pass in the Wallet app and you can use them for quick calls to action for the viewer. Featured actions make it easy for someone to quickly find relevant information related to your pass, such as directions to a business location, music related to a live performance, or even quick links to book tickets.
 
-![An illustration of a generic pass with two featured action options: View Membership Benefits and Go to Location.](/images/com.apple.walletpasses/featured-actions-with-pass@2x.png)
+![An illustration of a generic pass with two Featured Action options: View Membership Benefits and Go to Location.](/images/com.apple.walletpasses/featured-actions-with-pass@2x.png)
 
-Each featured action includes an icon, string, and action. You define your icon from available SF Symbols; be sure to pick one that accurately represents the action and that viewers can easily understand at a glance. Also, when choosing a symbol, prefer circular, filled icons. Your string is a brief call to action and your action label informs people what happens when they click the link; for example, your pass may redirect them to a website or the Maps app. ![An image of a featured action icon with labels.](/images/com.apple.walletpasses/featured-actions-anatomy@2x.png)
+Each Featured Action includes an icon, string, and action. You define your icon from available SF Symbols; be sure to pick one that accurately represents the action and that viewers can easily understand at a glance. Also, when choosing a symbol, prefer circular, filled icons. Your string is a brief call to action and your action label informs people what happens when they click the link; for example, your pass may redirect them to a website or the Maps app. ![An image of a Featured Action icon with labels.](/images/com.apple.walletpasses/featured-actions-anatomy@2x.png)
 
-Certain predefined featured actions are recommended for specific pass types, such as `View Schedule` for an event ticket or `View Membership Benefits` for a membership pass. See the full list of available featured actions below:
+Certain predefined Featured Actions are recommended for specific pass types, such as `View Schedule` for an event ticket or `View Membership Benefits` for a membership pass. See the full list of available Featured Actions below:
 
 | Preview | Action | Purpose | API | Category |
 | --- | --- | --- | --- | --- |
@@ -137,18 +137,13 @@ Certain predefined featured actions are recommended for specific pass types, suc
 | ![An image of the Listen to Music feature action.](/images/com.apple.walletpasses/featured-actions-listentomusic@2x.png) | Listen to Music | Opens link to playlist to listen to musical artist(s) | `listenToMusic` | Events |
 | ![An image of the call feature action.](/images/com.apple.walletpasses/featured-actions-call@2x.png) | Call | Opens phone app to call support call | `call` | Generic |
 | ![An image of the Go to Location feature action.](/images/com.apple.walletpasses/featured-actions-place@2x.png) | Go to Location | Opens Maps to singular location. | `place` | Generic |
-| ![An image of the call feature action.](/images/com.apple.walletpasses/featured-actions-call@2x.png) | Call | Opens phone app to call support | `call` | Generic |
-| ![An image of the Go to Location feature action.](/images/com.apple.walletpasses/featured-actions-place@2x.png) | Go to Location | Opens Maps to a singular location | `place` | Generic |
 | ![An image of the Add to Balance feature action.](/images/com.apple.walletpasses/featured-actions-addtobalance@2x.png) | Add to Balance | Opens link to load balance | `addToBalance` | Membership |
 | ![An image of the Order Delivery or Pickup feature action.](/images/com.apple.walletpasses/featured-actions-order@2x.png) | Order Delivery or Pickup | Opens link to facilitate pickup or delivery service | `order` | Membership |
 | ![An image of the Shop Online or In-App feature action](/images/com.apple.walletpasses/featured-actions-shop@2x.png) | Shop Online or In-App | Opens a link either online or in-app to e-commerce store | `shop` | Membership |
-| ![An image of the Shop Online or In-App feature action](/images/com.apple.walletpasses/featured-actions-shop@2x.png) | Shop Online or In-App | Opens link either online or in your app to an e-commerce store | `shop` | Membership |
 | ![An image of the View Membership Benefits feature action.](/images/com.apple.walletpasses/featured-actions-membershipbenefits@2x.png) | View Membership Benefits | Opens link to view membership benefits, points, and tiers for a membership program, either in your app or on your company’s website | `membershipBenefits` | Membership |
 | ![An image of the Book an Appointment feature action.](/images/com.apple.walletpasses/featured-actions-bookappointment@2x.png) | Book an Appointment | Opens the schedule to reserve a time slot for a service | `bookAppointment` | Membership |
 | ![An image of the Book a Car feature action.](/images/com.apple.walletpasses/featured-actions-bookcar@2x.png) | Book a Car | Quickly leads someone to your app or website to book a car with a car rental service | `bookCar` | Membership |
 | ![An image of the Book a Flight feature action.](/images/com.apple.walletpasses/featured-actions-bookflight@2x.png) | Book a Flight | Quickly leads someone your app or website to book a flight with airline service | `bookFlight` | Membership |
-| ![An image of the Book a Car feature action.](/images/com.apple.walletpasses/featured-actions-bookcar@2x.png) | Book a Car | Leads people to your app or website to book a car with a rental service | `bookCar` | Membership |
-| ![An image of the Book a Flight feature action.](/images/com.apple.walletpasses/featured-actions-bookflight@2x.png) | Book a Flight | Leads people to your app or website to book a flight with an airline service | `bookFlight` | Membership |
 | ![An image of the Book a Stay feature action.](/images/com.apple.walletpasses/featured-actions-bookstay@2x.png) | Book a Stay | Leads people to your app or website to book a hotel or hospitality-related stay | `bookStay` | Membership |
 | ![An image of the View Offers and Rewards feature action.](/images/com.apple.walletpasses/featured-actions-viewofferrewards@2x.png) | View Offers and Rewards | Leads people to your app or website to take an action related to their membership offers or rewards | `viewOffersRewards` | Membership, Generic, Event |
 
@@ -156,6 +151,8 @@ Certain predefined featured actions are recommended for specific pass types, suc
 
 - [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
+- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+  Construct a digital pass with information that enables people to take action.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
 - [Building a Pass](building-a-pass.md)

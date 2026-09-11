@@ -6,8 +6,8 @@
 A component that specifies that the spot light illuminates the physical and immersive environment.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

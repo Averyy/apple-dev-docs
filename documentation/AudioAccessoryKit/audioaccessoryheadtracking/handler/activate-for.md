@@ -7,7 +7,7 @@
 Called when a head-tracking session has been established with the host.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

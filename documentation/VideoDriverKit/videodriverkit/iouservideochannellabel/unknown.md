@@ -6,7 +6,7 @@
 unknown or unspecified other use
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

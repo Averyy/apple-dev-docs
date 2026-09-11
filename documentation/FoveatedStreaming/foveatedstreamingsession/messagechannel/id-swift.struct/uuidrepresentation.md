@@ -6,7 +6,7 @@
 The UUID representation of this ID, if it can be represented as one.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

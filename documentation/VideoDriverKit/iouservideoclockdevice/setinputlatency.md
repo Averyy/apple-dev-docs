@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the input latency of the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,23 +16,24 @@ kern_return_t SetInputLatency(uint32_t in_latency);
 
 #### Return Value
 
-Returns kern_return_t.
+A kern_return_t value indicating success or failure.
 
 #### Discussion
 
-Set the input latency of the clock device.
-
-Drivers can change the latency of the clock device dynamically.  A notification will be sent to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+Drivers can change the latency of the clock device dynamically. If successful, the clock device sends a notification to the host to update the object state. The object’s work queue synchronizes access to this value when it changes.
 
 ## Parameters
 
-- `in_latency`: uint32_t input latency value to set.
+- `in_latency`: The uint32_t input latency value to set.
 
 ## See Also
 
 - [SetOutputLatency](iouservideoclockdevice/setoutputlatency.md)
+  Sets the output latency of the clock device.
 - [GetOutputLatency](iouservideoclockdevice/getoutputlatency.md)
+  Gets the output latency of the clock device.
 - [GetInputLatency](iouservideoclockdevice/getinputlatency.md)
+  Gets the input latency of the clock device.
 
 
 ---

@@ -6,8 +6,8 @@
 Shorthand initializer for a configuration where all four corners are using a fixed corner radius in points.
 
 **Availability**:
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

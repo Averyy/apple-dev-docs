@@ -6,12 +6,12 @@
 A component that specifies a decal to be applied on the scene. A decal is essentially a projective texture applied to any mesh on the scene. The transform of the decal is inherited from the entity’s transform. The decal is projected along the local space negative z onto the meshes within its volume. All decal textures expect 2D texture resources. Decal textures do not support custom sampler, UV index, or swizzle options from [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) parameter types. All textures are sampled using bilinear filtering, projected UVs from the decal volume, and fixed channel mapping. Decals are available on devices with Apple6 GPU family feature support.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

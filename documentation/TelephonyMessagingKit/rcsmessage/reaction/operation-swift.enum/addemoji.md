@@ -6,7 +6,7 @@
 An operation type for adding one or more emoji reactions.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

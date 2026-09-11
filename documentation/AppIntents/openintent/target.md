@@ -25,6 +25,11 @@ var target: Self.Value { get set }
 
 Set this property to a dynamic or static type your app defines, such as an [`AppEntity`](appentity.md) or [`AppEnum`](appenum.md). Use this value to determine what content to show in your app’s interface.
 
+## See Also
+
+- [associatedtype Value : AppValue](openintent/value.md)
+  The type of the item to open.
+
 
 ---
 

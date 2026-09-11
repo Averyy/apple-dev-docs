@@ -6,7 +6,7 @@
 A class that represents a USB accessory.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

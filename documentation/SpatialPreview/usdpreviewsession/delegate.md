@@ -6,7 +6,7 @@
 Optional synchronous undo/redo event delegate
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

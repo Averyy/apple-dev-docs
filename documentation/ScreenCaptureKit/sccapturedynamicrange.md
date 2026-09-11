@@ -6,8 +6,8 @@
 Specifies whether the captured screen output is standard or high dynamic range.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst 18.2+
 - macOS 15.0+
 

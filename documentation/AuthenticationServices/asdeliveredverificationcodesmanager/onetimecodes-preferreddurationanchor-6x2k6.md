@@ -6,7 +6,7 @@
 Stream one-time codes received by the system.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

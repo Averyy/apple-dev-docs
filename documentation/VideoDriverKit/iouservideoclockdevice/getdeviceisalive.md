@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets a Boolean value indicating if the device is alive.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,22 +14,20 @@
 bool GetDeviceIsAlive();
 ```
 
-#### Return Value
-
-Returns bool
-
 #### Discussion
 
-Get bool value indicating if the device is alive
-
-Getting the value will be synchronized using the work queue created by the object. Default value with be true when the device is created.
+The object’s work queue synchronizes access to the value. The default value is true when the device is created.
 
 ## See Also
 
 - [GetDeviceIsRunning](iouservideoclockdevice/getdeviceisrunning.md)
+  Gets bool value indicating if device is running.
 - [SetDeviceIsAlive](iouservideoclockdevice/setdeviceisalive.md)
+  Sets a Boolean value to indicate the device is alive.
 - [SetIsHidden](iouservideoclockdevice/setishidden.md)
+  Sets a Boolean value indicating if the device is hidden.
 - [GetIsHidden](iouservideoclockdevice/getishidden.md)
+  Gets a Boolean value indicating if the device is hidden.
 
 
 ---

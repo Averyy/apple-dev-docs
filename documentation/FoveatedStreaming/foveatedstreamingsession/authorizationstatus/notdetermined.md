@@ -6,7 +6,7 @@
 The user has not yet been prompted for this capability.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The number of bytes contained by this guest memory mapping object.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

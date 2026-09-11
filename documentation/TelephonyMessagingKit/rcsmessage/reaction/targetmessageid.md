@@ -6,7 +6,7 @@
 The target message ID for the reaction.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

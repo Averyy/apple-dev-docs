@@ -6,7 +6,7 @@
 The result of an enumerate-directory call.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

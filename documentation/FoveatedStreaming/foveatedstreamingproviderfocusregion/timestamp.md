@@ -6,7 +6,7 @@
 The timestamp at which this focus region sample was captured, in the format returned by `CACurrentMediaTime()`.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -24,6 +24,8 @@ To set a delegate for the alert, provide an object conforming to the [`NSAlertDe
   Specifies that the alert must do immediate layout instead of lazily just before display.
 - [var alertStyle: NSAlert.Style](nsalert/alertstyle.md)
   Indicates the alert’s severity level.
+- [NSAlert.Style](nsalert/style.md)
+  The set of alert styles to style alerts in your app.
 - [var accessoryView: NSView?](nsalert/accessoryview.md)
   The alert’s accessory view.
 - [var showsHelp: Bool](nsalert/showshelp.md)

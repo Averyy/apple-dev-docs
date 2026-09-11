@@ -6,7 +6,7 @@
 A type that defines the cache mode requested by the kernel for data operations.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

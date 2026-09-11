@@ -6,11 +6,11 @@
 A description of an inference function’s signature.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
 
 ## Declaration
 
@@ -67,6 +67,8 @@ Use a descriptor to inspect the names and types of a function’s inputs, output
   A description of an image’s dimensions and pixel format.
 - [class ComputeStream](computestream.md)
   A stream of work to be run asynchronously.
+- [Background Inference](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+  An entitlement that lets a background task run inference on the Neural Engine.
 
 
 ---

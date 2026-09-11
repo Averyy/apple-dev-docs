@@ -6,7 +6,7 @@
 The stage was replaced during optimization and any changes made to the stage won’t be synced.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

@@ -6,7 +6,7 @@
 The direction of the user’s gaze in device-relative coordinates.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

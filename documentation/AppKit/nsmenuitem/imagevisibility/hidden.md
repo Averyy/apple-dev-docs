@@ -6,7 +6,7 @@
 The item image should not be visible.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

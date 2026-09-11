@@ -3,20 +3,39 @@
 **Framework**: UIKit  
 **Kind**: property
 
-A property that defines the content in a text input area to contain an international mobile equipment identity number 1 for an eSIM. This content type requires clients to have Carrier eSIM entitlements.
+A property that defines the content in a text input area to contain the International Mobile Equipment Identity (IMEI) for an eSIM.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 
 ```swift
 static let cellularIMEI1: UITextContentType
 ```
+
+#### Discussion
+
+On single SIM devices, this is the equivalent of [`cellularIMEI`](uitextcontenttype/cellularimei.md).
+
+## See Also
+
+- [static let emailAddress: UITextContentType](uitextcontenttype/emailaddress.md)
+  A property that defines the content in a text input area as an email address.
+- [static let telephoneNumber: UITextContentType](uitextcontenttype/telephonenumber.md)
+  A property that defines the content in a text input area as a telephone number.
+- [static let cellularEID: UITextContentType](uitextcontenttype/cellulareid.md)
+  A property that defines the content in a text input area to contain an embedded identity document number for an eSIM.
+- [static let cellularIMEI: UITextContentType](uitextcontenttype/cellularimei.md)
+  A property that defines the content in a text input area to contain the device’s primary International Mobile Equipment Identity (IMEI) number for an eSIM.
+- [static let cellularIMEI2: UITextContentType](uitextcontenttype/cellularimei2.md)
+  A property that defines the content in a text input area to contain the second International Mobile Equipment Identity (IMEI) for an eSIM.
+- [static let cellularNAL: UITextContentType](uitextcontenttype/cellularnal.md)
+  A property that defines the content in a text input area for use when activating a SIM, and applies only to China.
 
 
 ---

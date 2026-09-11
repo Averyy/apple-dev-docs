@@ -145,7 +145,7 @@ Under Color in the Style inspector, you can change a layer’s fill from the def
 
 ![A screenshot of the Color settings for a layer that shows Fill set to Gradient with yellow as the “From” color and orange as the “To” color.](/images/com.apple.Xcode/icon-composer-color-app-icon-layer@2x.png)
 
-> 💡 **Tip**: To set an RGB value or hexadecimal (hex) color number for a color, use the RGB sliders in the Color Sliders inspector in the Color picker.
+> 💡 **Tip**: To set an RGB value or hexadecimal (hex) color number for a color, use the RGB sliders in the Color Sliders inspector in the Colors window.
 
 For example, apply a gradient to your app icon’s background following these steps:
 

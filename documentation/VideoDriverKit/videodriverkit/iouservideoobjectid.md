@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: typealias
 
+A handle for a a specific video object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,14 @@
 typedef uint32_t IOUserVideoObjectID;
 ```
 
-#### Discussion
-
-A uint32_t that provides a handle on a specific IOUserVideoObject.
-
 ## See Also
 
 - [StartDevice](iouservideodriver/startdevice.md)
+  Tells the driver to start IO on an video device.
 - [StopDevice](iouservideodriver/stopdevice.md)
+  Tells the driver to stop IO on an video device.
 - [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+  Flags used to indicate how I/O is starting or stopping.
 
 
 ---

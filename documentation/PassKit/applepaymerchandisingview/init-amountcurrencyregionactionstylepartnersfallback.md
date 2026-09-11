@@ -6,8 +6,8 @@
 Constructs a view displaying Pay Later Promotional information given a configuration
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

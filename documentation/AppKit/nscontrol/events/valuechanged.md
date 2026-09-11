@@ -6,7 +6,7 @@
 An event where dragging or otherwise manipulating a control causes it to emit a series of different values.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

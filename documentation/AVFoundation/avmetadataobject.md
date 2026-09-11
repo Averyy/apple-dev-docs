@@ -44,7 +44,7 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
 - [var groupID: Int](avmetadataobject/groupid.md)
   An identifier associated with a metadata object used to group it with other metadata objects belonging to a common parent.
 - [var objectID: Int](avmetadataobject/objectid.md)
-  A unique identifier for each detected object type (face, body, hands, heads and salient objects) in a collection.
+  A unique identifier for each detected object type (face, body, hands, heads, salient objects and focus-tracked objects) in a collection.
 
 ## Relationships
 
@@ -53,8 +53,10 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
 ### Inherited By
 - [AVMetadataBodyObject](avmetadatabodyobject.md)
 - [AVMetadataCatHeadObject](avmetadatacatheadobject.md)
+- [AVMetadataCinematicVideoMetadataObject](avmetadatacinematicvideometadataobject.md)
 - [AVMetadataDogHeadObject](avmetadatadogheadobject.md)
 - [AVMetadataFaceObject](avmetadatafaceobject.md)
+- [AVMetadataFocusTrackedObject](avmetadatafocustrackedobject.md)
 - [AVMetadataMachineReadableCodeObject](avmetadatamachinereadablecodeobject.md)
 - [AVMetadataSalientObject](avmetadatasalientobject.md)
 ### Conforms To

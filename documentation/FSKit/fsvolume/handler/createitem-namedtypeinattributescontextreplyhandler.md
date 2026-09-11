@@ -7,7 +7,7 @@
 Creates a new file or directory item.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

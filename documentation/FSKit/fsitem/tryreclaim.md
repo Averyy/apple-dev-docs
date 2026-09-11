@@ -6,7 +6,7 @@
 Reclaims the item by executing the given block, if conditions allow.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

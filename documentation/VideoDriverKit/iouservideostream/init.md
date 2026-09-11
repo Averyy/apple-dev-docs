@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Initializes an video stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,20 +18,17 @@ virtual bool init(IOUserVideoDriver *in_driver, OSString *in_stream_uid, IOUserV
 
 True on success.
 
-#### Discussion
-
-Initializes a IOUserVideoStream
-
 ## Parameters
 
-- `in_driver`: The IOUserVideoDriver that owns this object.
-- `in_direction`: A IOUserVideoStreamDirection for the stream’s direction
-- `in_video_buffers`: A pointer to a an OSArray of IOUserVideoBuffers
+- `in_driver`: The video driver that owns this object.
+- `in_direction`: The stream’s direction
+- `in_video_buffers`: An array of video buffers.
 
 ## See Also
 
 - [Create](iouservideostream/create.md)
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 
 
 ---

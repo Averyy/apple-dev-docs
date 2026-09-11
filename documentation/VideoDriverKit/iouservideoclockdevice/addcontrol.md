@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Adds a video control to the video clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,9 @@ kern_return_t AddControl(IOUserVideoControl *in_control);
 
 #### Return Value
 
-Returns kIOReturnSuccess if control was successfully added.
+`kIOReturnSuccess` if control was successfully added.
 
 #### Discussion
-
-Add a IOUserVideoControl to the IOUserVideoClockDevice
 
 The control’s reference count will be incremented if it was successfully added to the clock device.
 
@@ -29,7 +29,9 @@ The control’s reference count will be incremented if it was successfully added
 ## See Also
 
 - [RemoveControl](iouservideoclockdevice/removecontrol.md)
+  Removes a user video control from the video clock device.
 - [IOUserVideoControl](iouservideocontrol.md)
+  A base class for control objects.
 
 
 ---

@@ -6,7 +6,7 @@
 A UUID of the image that must be equal to the layer UUID of the layer beneath it in the stack.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

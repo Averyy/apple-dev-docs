@@ -6,7 +6,7 @@
 Dictionary containing one or more identifier fields to match a binary.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

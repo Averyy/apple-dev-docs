@@ -6,8 +6,8 @@
 Returns the set of allowed menu item titles for the given language, or `nil` if no items have been configured for that language.
 
 **Availability**:
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

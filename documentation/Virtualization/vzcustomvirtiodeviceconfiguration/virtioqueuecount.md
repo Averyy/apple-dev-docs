@@ -6,7 +6,7 @@
 The number of virtqueues (Virtio queues) on this device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

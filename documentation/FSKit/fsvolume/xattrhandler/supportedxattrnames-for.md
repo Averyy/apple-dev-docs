@@ -6,7 +6,7 @@
 Returns an array that specifies the extended attribute names the given item supports.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

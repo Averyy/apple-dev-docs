@@ -6,7 +6,7 @@
 The dictionary to configure Platform SSO.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+The class identifier for the `IOUserVideoSliderControl` class.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,9 +17,13 @@ SliderControl
 ## See Also
 
 - [Control](videodriverkit/iouservideoclassid/control.md)
+  The class identifier for the `IOUserVideoControl` class.
 - [BooleanControl](videodriverkit/iouservideoclassid/booleancontrol.md)
+  The class identifier for the `IOUserVideoBooleanControl` class.
 - [LevelControl](videodriverkit/iouservideoclassid/levelcontrol.md)
+  The class identifier for the `IOUserVideoLevelControl` class.
 - [SelectorControl](videodriverkit/iouservideoclassid/selectorcontrol.md)
+  The class identifier for the `IOUserVideoSelectorControl` class.
 
 
 ---

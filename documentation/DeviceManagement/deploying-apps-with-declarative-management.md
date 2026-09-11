@@ -14,19 +14,24 @@ In macOS, device management services can install, update, and remove packages us
 
 ## Topics
 
-### Supporting managed apps
+### Install managed apps
 - [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
   Use declarative management to handle all aspects of managing apps on devices.
 - [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
   Use a management app to display managed apps and packages to the user.
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
-  Provide managed apps and extensions with app configuration and secrets.
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Transition apps to declarative management.
-- [Processing status for managed apps](processing-status-for-managed-apps.md)
-  Process the status that declarative management reports for managed apps.
 - [Installing packages](installing-packages.md)
   Use declarative package management to install and remove packages in macOS.
+### Configure managed apps
+- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
+  Provide managed apps and extensions with app configuration and secrets.
+- [Allowing and denying apps and binaries](allowing-and-denying-apps-and-binaries.md)
+  Control what apps and binaries can run on supervised Apple devices.
+### Monitor managed apps
+- [Processing status for managed apps](processing-status-for-managed-apps.md)
+  Process the status that declarative management reports for managed apps.
+### Migrate to declarative app management
+- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
+  Transition apps to declarative management.
 
 ## See Also
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets sample rate of the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,22 +14,20 @@
 double GetSampleRate();
 ```
 
-#### Return Value
-
-Returns double
-
 #### Discussion
 
-Get sample rate of the clock device.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetSampleRate](iouservideoclockdevice/setsamplerate.md)
+  Sets the current sample rate for the clock device.
 - [SetAvailableSampleRates](iouservideoclockdevice/setavailablesamplerates.md)
+  Sets the available sample rates for the clock device.
 - [GetAvailableSampleRates](iouservideoclockdevice/getavailablesamplerates.md)
+  Gets available sample rates of the clock device.
 - [GetNumberAvailableSampleRates](iouservideoclockdevice/getnumberavailablesamplerates.md)
+  Gets number of available sample rates of the clock device.
 
 
 ---

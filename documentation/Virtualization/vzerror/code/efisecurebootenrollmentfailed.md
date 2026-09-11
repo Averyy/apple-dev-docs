@@ -6,7 +6,7 @@
 An error that indicates the Secure Boot signatures failed to enroll.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

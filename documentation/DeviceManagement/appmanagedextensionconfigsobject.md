@@ -9,7 +9,7 @@ A dictionary of extension config data and credentials.
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 2.4+
 
 ## Declaration

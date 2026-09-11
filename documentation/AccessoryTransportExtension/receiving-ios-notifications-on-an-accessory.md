@@ -398,7 +398,7 @@ The direction is `HostToAccessory` for data that flows from the iPhone to the ac
 
 The system encrypts notification data using AES-GCM as specified in NIST Special Publication 800-38D. The ciphertext on the wire encodes as:
 
-```swift
+```None
 IV (12 bytes) || ciphertext || MAC (16 bytes)
 ```
 
@@ -473,6 +473,8 @@ func removeAllNotifications() {
 
 ## See Also
 
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+  Send notification data to your accessory over the internet when Bluetooth connectivity is unavailable.
 - [protocol AccessoryDataProvider](accessorydataprovider.md)
   A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)

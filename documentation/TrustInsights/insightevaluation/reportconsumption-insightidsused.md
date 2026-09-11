@@ -6,8 +6,8 @@
 Reports the consumption status, and optionally provides one or more associated insight identifiers.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

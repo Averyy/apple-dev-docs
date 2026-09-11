@@ -6,7 +6,7 @@
 The size of the write buffers memory (in bytes) exposed by the Virtio queue element that’s currently available for writing.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

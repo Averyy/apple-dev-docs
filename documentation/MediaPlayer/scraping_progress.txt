@@ -1,4 +1,4 @@
 Completed scraping Media Player!
-Total pages scraped: 0
-Pages skipped (unchanged): 727
+Total pages scraped: 9
+Pages skipped (unchanged): 718
 Pages failed: 0

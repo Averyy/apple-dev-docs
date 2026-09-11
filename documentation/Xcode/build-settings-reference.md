@@ -1340,6 +1340,12 @@ This setting indicates whether App Sandbox allows access to files in the user’
 
 Enable hardened runtime restrictions.
 
+##### Enable Hardware Checked Pointer Arithmetic Slice
+
+**Setting name:** `ENABLE_HARDWARE_CHECKED_POINTER_ARITHMETIC_SLICE`
+
+Builds the target with hardware-checked pointer arithmetic enabled. Adds an additional architectural slice (arm64e.x1) with hardware-checked pointer arithmetic instructions to `ARCHS_STANDARD`. Has no effect if `ARCHS` has been overridden to not be based on `ARCHS_STANDARD`.
+
 ##### Enableheaderdependencies
 
 **Setting name:** `ENABLE_HEADER_DEPENDENCIES`
@@ -2791,6 +2797,12 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSUserTrackin
 **Setting name:** `INFOPLIST_KEY_NSVideoSubscriberAccountUsageDescription`
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSVideoSubscriberAccountUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsvideosubscriberaccountusagedescription) key in the `Info.plist` file to the value of this build setting.
+
+##### View Gesture Recognizer Is Exclusive
+
+**Setting name:** `INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive`
+
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSViewGestureRecognizerIsExclusive`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsviewgesturerecognizerisexclusive) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Voip Usage Description
 

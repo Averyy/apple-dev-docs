@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+A Boolean value indicating if box can be acquired.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,22 +14,24 @@
 bool IsAcquirable();
 ```
 
-#### Return Value
-
-Returns bool
-
 #### Discussion
 
-Bool value indiciating if box can be acquired. Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [HandleChangeAcquireBox](iouservideobox/handlechangeacquirebox.md)
+  Called when host is attempting to the change the box acquisition
 - [SetIsAcquired](iouservideobox/setisacquired.md)
+  Sets the value indicating the box’s acquisition state.
 - [IsAcquired](iouservideobox/isacquired.md)
+  A Boolean value indicating if box is acquired.
 - [SetIsAcquirable](iouservideobox/setisacquirable.md)
+  Sets the value for the box’s acquirability.
 - [SetAcquisitionFailure](iouservideobox/setacquisitionfailure.md)
+  Sets the error for the box’s acquisition failure.
 - [GetAcquisitionFailure](iouservideobox/getacquisitionfailure.md)
+  Gets the acquisition failure of the video box.
 
 
 ---

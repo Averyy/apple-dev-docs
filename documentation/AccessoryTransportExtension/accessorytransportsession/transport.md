@@ -7,14 +7,17 @@ A transport method that the session uses to communicate with the accessory.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
+- Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
 var transport: AccessoryTransport?
 ```
+
+## Mentions
+
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 

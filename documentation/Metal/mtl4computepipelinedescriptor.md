@@ -24,8 +24,11 @@ class MTL4ComputePipelineDescriptor
 ### Instance Properties
 - [var computeFunctionDescriptor: MTL4FunctionDescriptor?](mtl4computepipelinedescriptor/computefunctiondescriptor.md)
   A descriptor representing the compute pipeline’s function.
+- [var contentionRelief: MTLContentionRelief](mtl4computepipelinedescriptor/contentionrelief.md)
+- [var forwardProgressUsage: MTLForwardProgressUsage](mtl4computepipelinedescriptor/forwardprogressusage.md)
 - [var maxTotalThreadsPerThreadgroup: Int](mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
   The maximum total number of threads that Metal can execute in a single threadgroup for the compute function.
+- [var optimizeForPersistentKernel: Bool](mtl4computepipelinedescriptor/optimizeforpersistentkernel.md)
 - [var requiredThreadsPerThreadgroup: MTLSize](mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md)
   The required number of threads per threadgroup for compute dispatches.
 - [var staticLinkingDescriptor: MTL4StaticLinkingDescriptor?](mtl4computepipelinedescriptor/staticlinkingdescriptor.md)

@@ -6,7 +6,7 @@
 The result of an open-item call.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

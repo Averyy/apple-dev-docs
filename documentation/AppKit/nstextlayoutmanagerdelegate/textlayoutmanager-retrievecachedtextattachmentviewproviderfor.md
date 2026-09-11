@@ -6,7 +6,7 @@
 Returns a cached `NSTextAttachmentViewProvider` to be associated with a particular attachment.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

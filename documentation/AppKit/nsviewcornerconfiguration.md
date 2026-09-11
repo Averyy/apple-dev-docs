@@ -6,7 +6,7 @@
 A configuration object that defines the corner styles of a view’s overall shape.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

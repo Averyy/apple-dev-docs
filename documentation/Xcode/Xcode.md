@@ -88,6 +88,11 @@ Xcode also includes several tools to help you rapidly develop and test your app:
   Get the resources you need to create software for Macs with Apple silicon.
 - [Application binary interfaces](application-binary-interfaces.md)
   Write assembly instructions that adhere to the application binary interfaces of Apple platforms.
+### Articles
+- [Managing files and folders in your Xcode project](managing-files-and-folders-in-your-xcode-project.md)
+  Add new or existing files to your project, and use groups to organize the files and folders in the Project navigator.
+- [Managing multiple projects and their dependencies](managing-multiple-projects-and-their-dependencies.md)
+  Manage related projects in one place using a workspace, or configure build-time dependencies between different Xcode projects using cross-project references.
 
 
 ---

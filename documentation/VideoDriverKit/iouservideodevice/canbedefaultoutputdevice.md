@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Returns a Boolean value indicating if device can be used for default output.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,21 +16,24 @@ uint32_t CanBeDefaultOutputDevice();
 
 #### Return Value
 
-Returns bool, true if device can be used for default output.
+True if device can be used for default output.
 
 #### Discussion
 
-Get bool value indiciating if device can be used for default output.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetCanBeDefaultInputDevice](iouservideodevice/setcanbedefaultinputdevice.md)
+  Specify if device can be used as default input device.
 - [CanBeDefaultInputDevice](iouservideodevice/canbedefaultinputdevice.md)
+  Returns a Boolean value indicating if device can be used for default input.
 - [SetCanBeDefaultOutputDevice](iouservideodevice/setcanbedefaultoutputdevice.md)
+  Specifies if device can be used as default output device.
 - [SetCanBeDefaultSystemOutputDevice](iouservideodevice/setcanbedefaultsystemoutputdevice.md)
+  Specifies if device can be used as default system output device
 - [CanBeDefaultSystemOutputDevice](iouservideodevice/canbedefaultsystemoutputdevice.md)
+  Returns a Boolean value indicating if device can be used for default system output.
 
 
 ---

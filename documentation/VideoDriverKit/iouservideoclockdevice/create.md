@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+A static factory method that allocates and initializes a video clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -18,9 +20,7 @@ OSSharedPtr to an IOUserVideoClockDevice if it was successfully allocated and in
 
 #### Discussion
 
-Static factory method to allocate and initialize an IOUserVideoClockDevice.
-
-If IOUserVideoClockDevice is subclassed to override behavior, Create should not be used to allocate/initialize the custom subclass.
+If IOUserVideoClockDevice is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 
 ## Parameters
 
@@ -32,7 +32,9 @@ If IOUserVideoClockDevice is subclassed to override behavior, Create should not 
 ## See Also
 
 - [init](iouservideoclockdevice/init.md)
+  Initializes a video clock device.
 - [IOUserVideoDriver](iouservideodriver.md)
+  A video driver.
 
 
 ---

@@ -29,6 +29,8 @@ To provide a view controller based preview extension, set up an [`NSViewControll
 
 To provide a data-based preview extension, implement a subclass of [`QLPreviewProvider`](qlpreviewprovider.md) to provide a [`QLPreviewReply`](qlpreviewreply.md) based on the [`QLFilePreviewRequest`](qlfilepreviewrequest.md) that the system provides.
 
+Import `QuickLookUI` to use these extension types in macOS. In iOS and iPadOS, the same types are part of Quick Look, so import `QuickLook` instead.
+
 ## Topics
 
 ### Previews
@@ -37,7 +39,7 @@ To provide a data-based preview extension, implement a subclass of [`QLPreviewPr
 - [class QLPreviewView](qlpreviewview.md)
   A Quick Look preview of an item that you can embed into your view hierarchy.
 - [protocol QLPreviewItem](qlpreviewitem.md)
-  A protocol that defines a set of properties you implement to make a preview of your application’s content.
+  A protocol that defines a set of properties you implement to make a preview of your app’s content.
 - [protocol QLPreviewPanelDataSource](qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
 - [protocol QLPreviewPanelDelegate](qlpreviewpaneldelegate.md)

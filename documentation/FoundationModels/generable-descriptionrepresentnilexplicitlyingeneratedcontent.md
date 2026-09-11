@@ -9,7 +9,7 @@
 - Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
-- watchOS 27.0+ (Beta)
+- watchOS 27.0+
 
 ## Declaration
 

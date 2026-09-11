@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: enum
 
+The transport type of a video stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,55 +14,41 @@
 enum IOUserVideoTransportType : uint32_t;
 ```
 
-#### Overview
-
-Commonly used values for transport types
-
-The transport type ID returned when a device doesn’t provide a transport type.
-
-The transport type ID for VideoDevices built into the system.
-
-The transport type ID for VideoDevices connected via the PCI bus.
-
-The transport type ID for VideoDevices connected via USB.
-
-The transport type ID for VideoDevices connected via FireWire.
-
-The transport type ID for VideoDevices connected via Bluetooth.
-
-The transport type ID for VideoDevices connected via Bluetooth Low Energy.
-
-The transport type ID for VideoDevices connected via HDMI.
-
-The transport type ID for VideoDevices connected via DisplayPort.
-
-The transport type ID for VideoDevices connected via AirPlay.
-
-The transport type ID for VideoDevices connected via AVB.
-
-The transport type ID for VideoDevices connected via Thunderbolt.
-
 ## Topics
 
 ### Protocol-based transport types
 - [PCI](videodriverkit/iouservideotransporttype/pci.md)
+  The transport type identifier for video devices connected via the PCI bus.
 - [USB](videodriverkit/iouservideotransporttype/usb.md)
+  The transport type identifier for video devices connected via USB.
 - [FireWire](videodriverkit/iouservideotransporttype/firewire.md)
+  The transport type identifier for video devices connected via FireWire.
 - [Bluetooth](videodriverkit/iouservideotransporttype/bluetooth.md)
+  The transport type identifier for video devices connected via Bluetooth Low Energy.
 - [BluetoothLE](videodriverkit/iouservideotransporttype/bluetoothle.md)
+  The transport type identifier for video devices connected via Bluetooth.
 - [HDMI](videodriverkit/iouservideotransporttype/hdmi.md)
+  The transport type identifier for video devices connected via HDMI.
 - [DisplayPort](videodriverkit/iouservideotransporttype/displayport.md)
+  The transport type identifier for video devices connected via DisplayPort.
 - [AirPlay](videodriverkit/iouservideotransporttype/airplay.md)
+  The transport type identifier for video devices connected via AirPlay.
 - [AVB](videodriverkit/iouservideotransporttype/avb.md)
+  The transport type identifier for video devices connected via AVB.
 - [Thunderbolt](videodriverkit/iouservideotransporttype/thunderbolt.md)
+  The transport type identifier for video devices connected via Thunderbolt.
 ### Other transport types
 - [Unknown](videodriverkit/iouservideotransporttype/unknown.md)
+  The transport type identifier returned when a device doesn’t provide a transport type.
 - [BuiltIn](videodriverkit/iouservideotransporttype/builtin.md)
+  The transport type identifier for video devices built into the system.
 
 ## See Also
 
 - [GetTransportType](iouservideobox/gettransporttype.md)
+  Gets the transport type of the video box.
 - [SetTransportType](iouservideobox/settransporttype.md)
+  Sets the transport type of the IOUserVideoBox.
 
 
 ---

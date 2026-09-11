@@ -6,8 +6,8 @@
 A reason that indicates charging pauses due to an active utility-demand response event.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst ?+
 
 ## Declaration

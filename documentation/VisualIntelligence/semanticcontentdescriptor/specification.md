@@ -8,8 +8,8 @@ A type that specifies how the system resolves a semantic content descriptor.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
+- Mac Catalyst 27.0+
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

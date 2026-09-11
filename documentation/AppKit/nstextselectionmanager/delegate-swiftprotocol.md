@@ -6,7 +6,7 @@
 A set of methods that manage text selection state and let you customize selection behavior.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

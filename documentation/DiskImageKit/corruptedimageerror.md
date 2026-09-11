@@ -6,7 +6,7 @@
 The disk image is corrupted or contains invalid data.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

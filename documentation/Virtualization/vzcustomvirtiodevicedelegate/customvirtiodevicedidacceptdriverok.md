@@ -6,7 +6,7 @@
 The method the framework calls when the device and driver successfully complete Virtio negotiation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

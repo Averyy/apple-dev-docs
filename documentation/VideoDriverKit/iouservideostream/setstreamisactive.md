@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets whether that the stream is active and doing IO.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,31 +14,34 @@
 kern_return_t SetStreamIsActive(bool in_is_active);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the bool value indicating that the stream is active and doing IO.
-
-Changing the stream active state will send a notification to the host to update the object state if successful. Setting the stream active state will be synchronized using the work queue created by the object.
+Changing the stream active state will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the stream active state.
 
 ## Parameters
 
-- `in_is_active`: Bool value, where true indicates that the stream is enabled and doing IO.
+- `in_is_active`: True if the stream is enabled and doing IO; otherwise, false.
 
 ## See Also
 
 - [SetCurrentStreamFormat](iouservideostream/setcurrentstreamformat.md)
+  Sets the current stream format.
 - [GetCurrentStreamFormat](iouservideostream/getcurrentstreamformat.md)
+  Gets the current basic description of the stream.
 - [SetAvailableStreamFormats](iouservideostream/setavailablestreamformats.md)
+  Sets the available descriptions for the stream.
 - [GetAvailableStreamFormats](iouservideostream/getavailablestreamformats.md)
+  Gets the available basic descriptions for the stream.
 - [GetNumberAvailableStreamFormats](iouservideostream/getnumberavailablestreamformats.md)
+  Gets the number of available description for the stream.
 - [IOUserVideoStreamBasicDescription](videodriverkit/iouservideostreambasicdescription.md)
+  A structure that encapsulates all the information for describing the basic format properties of a stream of audio data.
 - [GetStreamDirection](iouservideostream/getstreamdirection.md)
+  Gets the direction of the stream.
 - [IOUserVideoStreamDirection](videodriverkit/iouservideostreamdirection.md)
+  The direction of a video stream.
 - [GetStreamIsActive](iouservideostream/getstreamisactive.md)
+  Gets the stream activity state.
 
 
 ---

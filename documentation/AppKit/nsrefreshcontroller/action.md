@@ -6,7 +6,7 @@
 The action method to call when refresh is triggered.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

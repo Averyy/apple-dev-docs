@@ -6,7 +6,7 @@
 An option to replace the text in your view when a grammar suggestion is temporarily shown to preview the proposed change in the text.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

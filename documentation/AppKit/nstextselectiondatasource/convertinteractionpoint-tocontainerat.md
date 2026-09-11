@@ -6,7 +6,7 @@
 Converts an interaction point from display space into the text container’s coordinate system.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

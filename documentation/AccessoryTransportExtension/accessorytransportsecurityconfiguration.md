@@ -7,8 +7,7 @@ A protocol that configures and manages communication between your security exten
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -31,6 +30,8 @@ The [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol uses 
 
 - [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
   Create custom app extensions that manage iOS system notifications for your accessory.
+- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+  Send notification data to your accessory over the internet when Bluetooth connectivity is unavailable.
 - [protocol AccessoryDataProvider](accessorydataprovider.md)
   A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)

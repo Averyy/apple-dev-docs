@@ -6,7 +6,7 @@
 The sesion has been invalidated and is no longer available.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

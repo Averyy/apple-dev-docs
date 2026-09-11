@@ -6,7 +6,7 @@
 A custom Virtio Device provider for devices that implement a custom Virtio device configuration delegate.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 A list of X.509 authority key identifiers that correspond to the document signer certificate chain for the mobile document.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst ?+
 
 ## Declaration

@@ -6,11 +6,11 @@
 A guide that searches only the specified content domain using a compact, on-device-friendly schema.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 
@@ -21,6 +21,13 @@ static func focused(_ domain: SpotlightSearchTool.ContentDomain = .items) -> Spo
 ## Parameters
 
 - `domain`: The content domain to focus on. Defaults to [`items`](spotlightsearchtool/contentdomain/items-swift.type.property.md).
+
+## See Also
+
+- [static var complete: SpotlightSearchTool.Guide](spotlightsearchtool/guide/complete.md)
+  A guide that uses all available search techniques.
+- [static func dynamic(SpotlightSearchTool.GuidanceProfile) -> SpotlightSearchTool.Guide](spotlightsearchtool/guide/dynamic(_:).md)
+  A guide that includes only the search techniques specified by the given profile.
 
 
 ---

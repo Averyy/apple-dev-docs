@@ -6,7 +6,7 @@
 An interface that represents a custom Virtio device that you provide the implementation for.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

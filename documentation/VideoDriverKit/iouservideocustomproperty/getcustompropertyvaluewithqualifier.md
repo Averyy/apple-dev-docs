@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the custom property value for a given qualifier.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,24 +16,25 @@ virtual kern_return_t GetCustomPropertyValueWithQualifier(OSObject *in_qualifier
 
 #### Return Value
 
-Returns kIOReturnSuccess on sucess.
+`kIOReturnSuccess` on success.
 
 #### Discussion
 
-Get the custom property value for a given qualifier
-
-Base class will return the custom property value set on the object without looking at contents of the qualifier data.  If the value returned is dependent on qualfier, IOUserVideoCustomProperty should be subclassed and derived class should override this method.
+The base class returns the custom property value set on the object without looking at contents of the qualifier data. If the value returned is dependent on qualfier, subclass IOUserVideoCustomProperty and override this method.
 
 ## Parameters
 
-- `in_qualifier_data`: The OSObject that is used to qualify the custom property data value.  in_qualifier_data can be a nullptr if custom property value does not require qualifier data.
+- `in_qualifier_data`: The OSObject that is used to qualify the custom property data value. in_qualifier_data can be a nullptr if custom property value does not require qualifier data.
 - `out_data`: Returned OSObject that is retained and to be released by the caller.
 
 ## See Also
 
 - [SetQualifierAndDataValue](iouservideocustomproperty/setqualifieranddatavalue.md)
+  Sets the custom property’s data value.
 - [GetCustomPropertyInfo](iouservideocustomproperty/getcustompropertyinfo.md)
+  Gets the custom property information.
 - [IOUserVideoCustomPropertyInfo](videodriverkit/iouservideocustompropertyinfo.md)
+  A description of a a custom property that allow the Host to marshal the data between the Host and its clients.
 
 
 ---

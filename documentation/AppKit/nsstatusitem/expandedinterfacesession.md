@@ -6,7 +6,7 @@
 A session object that tracks the lifecycle of the status item’s active expanded interface.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

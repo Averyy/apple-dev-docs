@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the current range of the slider control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetRange(IOUserVideoSliderRange in_range);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the current range of the slider control.
-
-Changing the range will send a notification to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+Changing the range will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
@@ -29,9 +25,13 @@ Changing the range will send a notification to the host to update the object sta
 ## See Also
 
 - [SetControlValue](iouservideoslidercontrol/setcontrolvalue.md)
+  Sets the current control value.
 - [GetControlValue](iouservideoslidercontrol/getcontrolvalue.md)
+  Gets the current value of the control.
 - [GetRange](iouservideoslidercontrol/getrange.md)
+  Gets the current range of the slider control.
 - [IOUserVideoSliderRange](iouservideosliderrange.md)
+  The minimum and maximum range for the slider value.
 
 
 ---

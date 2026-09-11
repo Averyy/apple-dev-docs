@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+Device transport state is stopped.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,10 +14,16 @@
 Stopped
 ```
 
+#### Discussion
+
+The hardware necessary for I/O should be disabled.
+
 ## See Also
 
 - [Prewarmed](videodriverkit/iouservideodevicetransportstate/prewarmed.md)
+  Device transport state is prewarmed.
 - [Running](videodriverkit/iouservideodevicetransportstate/running.md)
+  Device transport state is running.
 
 
 ---

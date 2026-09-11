@@ -6,8 +6,8 @@
 A Boolean value that indicates whether a messaging app displays suggested actions for a message.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 
 

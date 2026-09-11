@@ -6,13 +6,13 @@
 Measure the quality of your app’s intelligence-powered features.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 
@@ -37,6 +37,8 @@ The framework evaluates your intelligence-powered features against the metrics y
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
 - [Book Tracker: Using Evaluations to evaluate an intelligent feature](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
+- [Evaluating a Core AI model](evaluating-a-core-ai-model.md)
+  Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
 - [protocol Evaluation](evaluation.md)
   A type that defines an evaluation.
 ### Datasets

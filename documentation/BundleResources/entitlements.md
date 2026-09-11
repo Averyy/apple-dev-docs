@@ -38,7 +38,7 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Accessibility
 - [com.apple.developer.accessibility.merchant-api-control](entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 ### Accessory Access
-- [Accessory Access](entitlements/com.apple.developer.accessory-access.usb.md)
+- [Claim USB Accessory](entitlements/com.apple.developer.accessory-access.usb.md)
   An entitlement that enables an app to use the Accessory Access framework to manage access to USB devices in macOS.
 ### AccessorySetupKit
 - [com.apple.developer.accessory-setup-discovery-extension](entitlements/com.apple.developer.accessory-setup-discovery-extension.md)

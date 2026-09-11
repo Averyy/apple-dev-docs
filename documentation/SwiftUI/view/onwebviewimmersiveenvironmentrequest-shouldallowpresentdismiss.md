@@ -6,7 +6,7 @@
 Manages the lifecycle of immersive environments requested by websites.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

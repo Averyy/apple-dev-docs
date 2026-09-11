@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: typealias
 
+A four character code which, along with the scope and element, specifies a specific piece of information about a video object.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,14 +16,14 @@ typedef uint32_t IOUserVideoObjectPropertySelector;
 
 #### Discussion
 
-An IOUserVideoObjectPropertySelector is a four char code that identifies, along with the IOUserVideoObjectPropertyScope and IOUserVideoObjectPropertyElement, a specific piece of information about an IOUserVideoObject.
-
-The property selector specifies the general classification of the property such as volume, stream format, latency, etc. Note that each class has a different set of selectors. A subclass inherits its super class’s set of selectors, although it may not implement them all.
+The property selector specifies the general classification of the property such as volume, stream format, or latency. Note that each class has a different set of selectors. A subclass inherits its superclass’s set of selectors, although it may not implement them all.
 
 ## See Also
 
 - [PropertiesChanged](iouservideodriver/propertieschanged.md)
+  This method informs the host when the state of an driver’s object changes.
 - [IOUserVideoObjectID](videodriverkit/iouservideoobjectid.md)
+  A handle for a a specific video object.
 
 
 ---

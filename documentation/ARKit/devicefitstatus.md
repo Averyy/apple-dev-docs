@@ -6,7 +6,7 @@
 Device fit validation status indicating the user’s eye position relative to the optimal device fit range.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

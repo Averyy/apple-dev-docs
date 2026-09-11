@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,17 +16,16 @@ OSSharedPtr<IOMemoryDescriptor> GetDataMemoryDescriptor();
 
 #### Return Value
 
-Returns IOMemoryDescriptor in an OSSharedPtr.
-
-#### Discussion
-
-Get the IOMemoryDescriptor used for video IO that was initialied with or set on the video stream
+IOMemoryDescriptor in an OSSharedPtr.
 
 ## See Also
 
 - [SetDataMemoryDescriptor](iouservideobuffer/setdatamemorydescriptor.md)
+  Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 - [SetControlMemoryDescriptor](iouservideobuffer/setcontrolmemorydescriptor.md)
+  Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 - [GetControlMemoryDescriptor](iouservideobuffer/getcontrolmemorydescriptor.md)
+  Gets the memory descriptior used for video IO that was initialized with or set on the video stream.
 
 
 ---

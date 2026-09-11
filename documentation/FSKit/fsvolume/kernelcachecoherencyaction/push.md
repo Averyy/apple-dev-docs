@@ -6,7 +6,7 @@
 An action to flush dirty data from cache to storage, preserving cache contents.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the current selected values of the control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,13 +16,11 @@ size_t GetCurrentSelectedValues(IOUserVideoSelectorValue *out_values, size_t in_
 
 #### Return Value
 
-Returns size_t indicating the number of values returning in out_values
+Size_t indicating the number of values returning in out_values
 
 #### Discussion
 
-Get the current selected values of the control.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
@@ -30,12 +30,19 @@ Getting the value will be synchronized using the work queue created by the objec
 ## See Also
 
 - [SetCurrentSelectedValues](iouservideoselectorcontrol/setcurrentselectedvalues.md)
+  Sets the current control value.
 - [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+  Selector value for controls.
 - [GetControlValuesCount](iouservideoselectorcontrol/getcontrolvaluescount.md)
+  Gets the number of available selector control values.
 - [AddControlValueDescriptions](iouservideoselectorcontrol/addcontrolvaluedescriptions.md)
+  Adds control value descriptions to the selector control.
 - [RemoveControlValueDescriptions](iouservideoselectorcontrol/removecontrolvaluedescriptions.md)
+  Removes selector control values from the selector control.
 - [GetControlValueDescriptions](iouservideoselectorcontrol/getcontrolvaluedescriptions.md)
+  Gets the selector values for the control.
 - [IOUserVideoSelectorValueDescription](iouservideoselectorvaluedescription.md)
+  A selector control’s value and name.
 
 
 ---

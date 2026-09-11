@@ -6,7 +6,7 @@
 Initializes a new interface matching option with the provided value.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

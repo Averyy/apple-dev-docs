@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Removes a video stream from the device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,9 @@ kern_return_t RemoveStream(IOUserVideoStream *in_stream);
 
 #### Return Value
 
-Returns kIOReturnSuccess if stream was successfully removed.
+`kIOReturnSuccess` if stream was successfully removed.
 
 #### Discussion
-
-Remove a IOUserVideoStream from the device.
 
 The stream’s reference count will be decremented if it was successfully removed.
 
@@ -29,7 +29,9 @@ The stream’s reference count will be decremented if it was successfully remove
 ## See Also
 
 - [AddStream](iouservideodevice/addstream.md)
+  Adds an video stream to the device.
 - [IOUserVideoStream](iouservideostream.md)
+  A video stream.
 
 
 ---

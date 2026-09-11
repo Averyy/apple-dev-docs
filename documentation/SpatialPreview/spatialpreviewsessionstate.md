@@ -6,7 +6,7 @@
 Indicates the state of the session and the health of the underlying connection.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

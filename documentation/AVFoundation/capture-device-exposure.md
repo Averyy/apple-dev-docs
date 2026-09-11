@@ -51,6 +51,16 @@ Configure the automatic exposure behavior of a camera, or manually control its e
 ### Configuring exposure manually
 - [func setExposureModeCustom(duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md)
   Sets the exposure mode to a custom state, and locks exposure duration and ISO at explicit values.
+- [func setExposureModeCustom(lensAperture: Float, duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(lensaperture:duration:iso:completionhandler:).md)
+  Sets a custom exposure mode with the specified lens aperture, exposure duration, and ISO values.
+- [class let autoExposureDuration: CMTime](avcapturedevice/autoexposureduration.md)
+  A special value that may be passed as the duration parameter of a device’s `setExposureModeCustom...` methods to allow the system’s auto-exposure system to manage the exposure duration.
+- [class let autoISO: Float](avcapturedevice/autoiso.md)
+  A special value that may be passed as the ISO parameter of a device’s `setExposureModeCustom...` methods to allow the system’s auto-exposure system to manage the gain value.
+- [class let autoLensAperture: Float](avcapturedevice/autolensaperture.md)
+  A special value that may be passed as the lensAperture parameter of a device’s `setExposureModeCustom...` methods to allow the system’s auto-exposure system to manage the aperture.
+- [class let currentLensAperture: Float](avcapturedevice/currentlensaperture.md)
+  A special value that may be passed as the lensAperture parameter of a device’s `setExposureModeCustom...` methods to lock at the current position.
 - [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
   The length of time over which exposure takes place.
 - [var iso: Float](avcapturedevice/iso.md)
@@ -59,6 +69,25 @@ Configure the automatic exposure behavior of a camera, or manually control its e
   The size of the lens diaphragm.
 - [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
   The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
+- [var automaticallyAdjustsExposureDuration: Bool](avcapturedevice/automaticallyadjustsexposureduration.md)
+  This property reports true whenever exposureDuration is unlocked, either by setting exposureMode to one of the automatic modes, or by passing `AVCaptureExposureDurationAuto` to the duration parameter of [`setExposureModeCustom(duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md) or [`setExposureModeCustom(lensAperture:duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(lensaperture:duration:iso:completionhandler:).md).
+- [var automaticallyAdjustsISO: Bool](avcapturedevice/automaticallyadjustsiso.md)
+  This property reports true whenever ISO is unlocked, either by setting exposureMode to one of the automatic modes, or by passing `AVCaptureISOAuto` to the ISO parameter of [`setExposureModeCustom(duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md) or [`setExposureModeCustom(lensAperture:duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(lensaperture:duration:iso:completionhandler:).md).
+- [var automaticallyAdjustsLensAperture: Bool](avcapturedevice/automaticallyadjustslensaperture.md)
+  This property reports true whenever lensAperture is unlocked, either by setting exposureMode to one of the automatic modes, or by passing `AVCaptureLensApertureAuto` to the aperture parameter of [`setExposureModeCustom(lensAperture:duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(lensaperture:duration:iso:completionhandler:).md).
+- [var autoExposureLensApertureRateLimit: Float](avcapturedevice/autoexposurelensapertureratelimit.md)
+  Specifies a rate limit for aperture motion, whenever auto-exposure is active.
+### Configuring exposure signals
+- [var activeExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/activeexposuresignals.md)
+  Reports which characteristics the auto exposure system associates with the current scene. Auto exposure may adjust properties such as lens aperture size based on these factors. This property is key-value observable.
+- [var enabledExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/enabledexposuresignals.md)
+  Can be assigned to control which characteristics AE should use in its decision making, must be a subset of supportedExposureSignals.
+- [var supportedExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/supportedexposuresignals.md)
+  Indicates what values can be included in `enabledExposureSignals`. This property is key-value observable.
+- [var automaticallyEnablesExposureSignals: Bool](avcapturedevice/automaticallyenablesexposuresignals.md)
+  When true (the default), capture sessions may automatically modify `enabledExposureSignals` based on changes to other device or session properties.
+- [struct AVCaptureDeviceExposureSignal](avcapturedeviceexposuresignal.md)
+  Values that can be used to configure the auto exposure system via [`enabledExposureSignals`](avcapturedevice/enabledexposuresignals.md) and associated methods.
 
 ## See Also
 

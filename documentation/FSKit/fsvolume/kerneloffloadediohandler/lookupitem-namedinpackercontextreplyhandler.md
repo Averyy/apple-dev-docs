@@ -7,7 +7,7 @@
 Looks up an item within a directory and maps its disk space.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

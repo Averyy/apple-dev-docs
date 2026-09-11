@@ -7,7 +7,7 @@
 Find the next offset of hole or data region greater than or equal to the supplied offset
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

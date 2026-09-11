@@ -288,6 +288,8 @@ The model judge scores each response on a numeric scale and provides a written r
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
 - [Book Tracker: Using Evaluations to evaluate an intelligent feature](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
+- [Evaluating a Core AI model](evaluating-a-core-ai-model.md)
+  Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
 - [protocol Evaluation](evaluation.md)
   A type that defines an evaluation.
 

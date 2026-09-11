@@ -6,9 +6,9 @@
 The damping factor affecting all the cloth bodies in the simulation. The expected range is between 0 and 1 (included).
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

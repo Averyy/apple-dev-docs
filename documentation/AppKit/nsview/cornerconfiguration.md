@@ -6,7 +6,7 @@
 Defines the corner styles (e.g., square, capsule, concentric, etc) for the view’s corners.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

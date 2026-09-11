@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the clock domain value of the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,19 +14,14 @@
 uint32_t GetClockDomain();
 ```
 
-#### Return Value
-
-Returns uint32_t
-
 #### Discussion
 
-Get the uint32_t clock domain value of the IOUserVideoClockDevice.
-
-Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetClockDomain](iouservideoclockdevice/setclockdomain.md)
+  Sets the clock domain value of the clock device.
 
 
 ---

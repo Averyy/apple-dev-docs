@@ -5,8 +5,8 @@
 Synchronize audio loops with a main tempo by creating a real-time clip launcher.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Xcode 27.0+ (Beta)
+- macOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 

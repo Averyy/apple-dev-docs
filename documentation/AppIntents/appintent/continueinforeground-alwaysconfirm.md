@@ -20,6 +20,10 @@ Attempts to transition the app to the foreground after optionally requesting per
 func continueInForeground(_ dialog: IntentDialog? = nil, alwaysConfirm: Bool = true) async throws
 ```
 
+## Mentions
+
+- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+
 #### Discussion
 
 Call this method from your app intent’s [`perform()`](appintent/perform().md) method when you want to continue running your code in the foreground. Before calling this method, use the contextual information in the intent’s [`systemContext`](appintent/systemcontext.md) property to verify the app can transition to the foreground. If you call this method and it’s not possible to transition the app to the foreground, the system throws an [`notAllowed`](appintenterror/unrecoverable/notallowed.md) error.

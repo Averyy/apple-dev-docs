@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Removes a user video control from the video clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,9 @@ kern_return_t RemoveControl(IOUserVideoControl *in_control);
 
 #### Return Value
 
-Returns kIOReturnSuccess if control was successfully removed.
+`kIOReturnSuccess` if control was successfully removed.
 
 #### Discussion
-
-Remove a IOUserVideoControl from the IOUserVideoClockDevice.
 
 The control’s reference count will be decremented if it was successfully removed from the clock device.
 
@@ -29,7 +29,9 @@ The control’s reference count will be decremented if it was successfully remov
 ## See Also
 
 - [AddControl](iouservideoclockdevice/addcontrol.md)
+  Adds a video control to the video clock device.
 - [IOUserVideoControl](iouservideocontrol.md)
+  A base class for control objects.
 
 
 ---

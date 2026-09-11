@@ -6,7 +6,7 @@
 Asks the delegate for information about grammar issues in the specified context.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

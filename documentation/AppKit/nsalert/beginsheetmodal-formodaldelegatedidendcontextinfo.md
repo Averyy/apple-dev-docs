@@ -39,17 +39,6 @@ If you use [`alertWithMessageText:defaultButton:alternateButton:otherButton:info
 - `didEndSelector`: Message the alert sends to `modalDelegate` after the user responds but before the sheet is dismissed.
 - `contextInfo`: Contextual data passed to `modalDelegate` in `didEndSelector` message.
 
-## See Also
-
-- [func runModal() -> NSApplication.ModalResponse](nsalert/runmodal.md)
-  Runs the alert as an app-modal dialog and returns the constant that identifies the button clicked.
-- [func beginSheetModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nsalert/beginsheetmodal(for:completionhandler:).md)
-  Runs the alert modally as a sheet attached to the specified window.
-- [var suppressionButton: NSButton?](nsalert/suppressionbutton.md)
-  The alert’s suppression checkbox.
-- [var showsSuppressionButton: Bool](nsalert/showssuppressionbutton.md)
-  Specifies whether the alert includes a suppression checkbox, which you can employ to allow a user to opt out of seeing the alert again.
-
 
 ---
 

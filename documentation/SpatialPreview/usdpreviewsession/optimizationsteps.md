@@ -6,7 +6,7 @@
 A set of optimization steps to apply to a USD stage before previewing on a device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

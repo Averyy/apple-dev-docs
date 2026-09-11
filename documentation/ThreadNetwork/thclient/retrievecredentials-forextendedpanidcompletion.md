@@ -11,6 +11,7 @@ Requests Thread credentials for an extended Personal Area Network (PAN) ID.
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.0+
+- watchOS 8.0+
 
 ## Declaration
 

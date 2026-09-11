@@ -6,7 +6,7 @@
 A marker protocol that stackable disk image layer configuration objects conform to.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

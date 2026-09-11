@@ -7,7 +7,7 @@
 Preallocates disk space for the given item.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

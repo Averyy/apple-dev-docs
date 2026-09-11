@@ -18,6 +18,16 @@ class func preferredFont(forTextStyle style: NSFont.TextStyle, options: [NSFont.
 
 The font associated with the text style.
 
+#### Discussion
+
+> **Note**:  Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
+
+#### Discussion
+
+A font’s metrics, such as [`ascender`](nsfont/ascender.md), [`descender`](nsfont/descender.md), and [`leading`](nsfont/leading.md), can differ across devices for the same text style and point size. AppKit reserves extra vertical space to accommodate scripts like Thai and Hindi whenever someone includes one of those languages in their preferred languages, even if your text doesn’t use that script.
+
+To take advantage of this behavior, create a font explicitly with this method and assign it to a text element. Don’t clip these text elements: ascenders and descenders for languages like Thai and Hindi often protrude beyond the expected line height. This typically isn’t a problem, since layouts usually leave extra space around neighboring elements, but clipping the view clips that text.
+
 ## Parameters
 
 - `style`: The text style for which to return a font. See [`NSFont.TextStyle`](nsfont/textstyle.md) for available values.

@@ -6,9 +6,9 @@
 An app intent you use in widgets to open another app or perform an App Shortcut, custom shortcut, or system action.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

@@ -38,7 +38,7 @@ For details about error codes, see [`AAAttributionError`](aaattributionerror.md)
 
 | **Response** | **Description** |
 | --- | --- |
-| 200 | Success. If the API finds a matching attribution record, the payload returns `attribution=true`. ![None](/images/com.apple.AdServices/spacer.png)If the API doesn’t find a matching attribution record, the payload returns `attribution=false`. In this case, the `200` `OK` response is acknowledgment of the receipt of the data request. |
+| 200 | Success. If the API finds a matching attribution record, the payload returns `attribution=true`. ![None](/images/com.apple.AdServices/spacer.png)If the API cannot find a matching attribution record, or if the ad group uses age or gender settings, the payload returns `attribution=false`. In this case, the `200` `OK` response is acknowledgment of the receipt of the data request. |
 | 400 | The token is invalid. |
 | 404 | Not found. The API is unable to retrieve the requested attribution record.  ![None](/images/com.apple.AdServices/spacer.png)Tokens have a TTL of 24 hours. If the `POST` API call exceeds 24 hours, a `404` response returns. If your token is valid, a best practice is to initiate retries at intervals of 5 seconds with a maximum of three attempts. |
 | 500 | The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later. |

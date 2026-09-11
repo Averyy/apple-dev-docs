@@ -258,6 +258,8 @@ func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinato
 }
 ```
 
+> ❗ **Important**: Pass one rectangle per line of text to `textLineRects`, as the example above does. Writing Tools uses each rectangle to animate its line independently, producing a bounce effect. If you pass a single rectangle that spans the entire range instead, Writing Tools can only animate the text as one unit, which produces a shimmer instead of a bounce.
+
 In addition to providing the initial image, use the [`writingToolsCoordinator(_:prepareFor:for:in:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:preparefor:for:in:completion:).md) method to hide the specified range of text in your view. UIKit inserts the image view from your [`UITargetedPreview`](uitargetedpreview.md) object into the same part of your view that contains the hidden text. Placement of the image view is important, which is why you must set its frame rectangle to the precise location of the text in your view. When the animations finish, Writing Tools calls the [`writingToolsCoordinator(_:finish:for:in:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:finish:for:in:completion:).md) method so you can show the text in the specified range again.
 
 ##### Create Proofreading Marks for Your Content

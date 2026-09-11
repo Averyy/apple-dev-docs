@@ -86,7 +86,7 @@ In the Alpha fields, click the minus (—) or plus (+) button, or double-click i
 
 Use the *Background* field to change the background color shown in the Xcode preview to help you visualize how the emitter will look in different environments.
 
-In the Background pop-up menu, choose a color. If the color you want to use isn’t listed, choose Other to bring up the color picker. To create an emitter with no background color, set the opacity in the color picker to `0`.
+In the Background pop-up menu, choose a color. If the color you want to use isn’t listed, choose Other to bring up the Colors window. To create an emitter with no background color, set the opacity in the Colors window to `0`.
 
 ![Screenshot of the Attributes inspector that shows a field named Background with a color value.](/images/com.apple.Xcode/sk-pe-background@2x.png)
 

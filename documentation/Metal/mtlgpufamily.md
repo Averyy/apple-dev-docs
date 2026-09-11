@@ -75,6 +75,7 @@ Check whether a GPU supports the features of a specific family by calling the [`
   Creates a GPU family instance from a raw value.
 ### Enumeration Cases
 - [MTLGPUFamily.apple10](mtlgpufamily/apple10.md)
+- [MTLGPUFamily.apple11](mtlgpufamily/apple11.md)
 
 ## Relationships
 

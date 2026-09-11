@@ -6,7 +6,7 @@
 Options you use to specify access to restricted content.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

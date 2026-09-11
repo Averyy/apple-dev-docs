@@ -6,7 +6,7 @@
 Methods and properties implemented by volumes that want to offer preallocation functions.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

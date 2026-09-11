@@ -6,7 +6,7 @@
 A delegate protocol that defines the methods you implement to respond to the life cycle events of a custom Virtio device.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -104,13 +104,6 @@ Xcode checks to see if the groups in your Xcode project match the underlying fil
 
 To convert the files Xcode displays in Show Details, make the file and directory structure in Xcode match what Finder displays on disk. Either modify the file and group structure in Xcode to match the file and directory structure in Finder, or modify the file and directory structure in Finder to match the contents of your groups in Xcode. Then select the groups, Control-click, and choose Convert to Folder again.
 
-## See Also
-
-- [Managing multiple projects and their dependencies](managing-multiple-projects-and-their-dependencies.md)
-  Manage related projects in one place using a workspace, or configure build-time dependencies between different Xcode projects using cross-project references.
-- [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
-  Add more simulated devices, optional features, and support for additional platforms.
-
 
 ---
 

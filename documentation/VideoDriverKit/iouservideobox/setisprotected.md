@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the value indicating the box’s protection state.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,23 +14,18 @@
 kern_return_t SetIsProtected(bool in_is_protected);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the value indicating the box’s protection state
-
-A notification will be sent to the host to update the object state if successful. Setting the value will be synchronized using the work queue created by the object.
+The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
-- `in_is_protected`: Bool value for the box’s protection state
+- `in_is_protected`: The box’s protection state.
 
 ## See Also
 
 - [IsProtected](iouservideobox/isprotected.md)
+  A Boolean value indicating if box is protected.
 
 
 ---

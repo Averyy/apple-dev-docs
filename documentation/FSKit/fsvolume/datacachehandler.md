@@ -6,7 +6,7 @@
 Methods and properties implemented by volumes that coordinate kernel-level data caching.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

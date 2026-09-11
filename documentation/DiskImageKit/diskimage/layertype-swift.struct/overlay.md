@@ -6,7 +6,7 @@
 An overlay layer that inherits its size from the layer beneath it.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

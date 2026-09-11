@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Tells the stream to stop IO.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,24 +14,20 @@
 virtual kern_return_t StopIO(IOUserVideoStartStopFlags in_flags);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Tells the stream to stop IO.
-
-Default implementation will always return kIOReturnSuccess. Subclass and override this method to handle any hardware specific things when IO is stopping, then call super class to update IO state.
+The default implementation always return s`kIOReturnSuccess`. Subclass and override this method to handle any hardware specific things when IO is stopping, then call the superclass implementation to update IO state.
 
 ## Parameters
 
-- `in_flags`: IOUserVideoStartStopFlags to indicate how IO is stopping.
+- `in_flags`: Flags to indicate how IO is stopping.
 
 ## See Also
 
 - [StartIO](iouservideostream/startio.md)
+  Tells the stream to start IO.
 - [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+  Flags used to indicate how I/O is starting or stopping.
 - [InputNotification](iouservideostream/inputnotification.md)
 
 

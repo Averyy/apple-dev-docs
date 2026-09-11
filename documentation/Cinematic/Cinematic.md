@@ -56,12 +56,16 @@ The Cinematic framework enables you to add professional-level editing and playba
 - [Cinematic Constants](cinematic-constants.md)
 - [Cinematic Data Types](cinematic-data-types.md)
 ### Classes
+- [class CNAssetPreprocessConfiguration](cnassetpreprocessconfiguration-5u7dk.md)
 - [class CNAssetSpatialAudioInfo](cnassetspatialaudioinfo-7hdev.md)
 - [class CNImageRenderingSession](cnimagerenderingsession.md)
   A session for rendering a shallow depth-of-field (SDoF) effect onto still images using Metal.
 - [class CNImageRenderingSessionConfiguration](cnimagerenderingsessionconfiguration.md)
   Configuration for a CNImageRenderingSession, specifying the rendering quality and algorithm version.
 ### Enumerations
+- [enum CNCinematicCapability](cncinematiccapability.md)
+- [enum CNCinematicResourceVersion](cncinematicresourceversion.md)
+- [enum CNResourceStatus](cnresourcestatus.md)
 - [enum CNSpatialAudioContentType](cnspatialaudiocontenttype.md)
 - [enum CNSpatialAudioRenderingStyle](cnspatialaudiorenderingstyle.md)
 

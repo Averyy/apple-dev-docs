@@ -8,7 +8,7 @@ The custom mirror for this instance.
 
 **Availability**:
 - Swift 6.4+
-- Xcode 27.0+ (Beta)
+- Xcode 27.0+
 
 ## Declaration
 

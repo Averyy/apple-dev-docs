@@ -6,7 +6,7 @@
 Returns the IORegistry ID for the USB accessory.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

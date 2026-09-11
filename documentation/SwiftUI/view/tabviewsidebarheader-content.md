@@ -10,7 +10,7 @@ Adds a custom header to the sidebar of a tab view.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 27.0+ (Beta)
+- tvOS 27.0+
 - visionOS 2.0+
 
 ## Declaration

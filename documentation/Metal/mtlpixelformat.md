@@ -335,6 +335,30 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 - [MTLPixelFormat.invalid](mtlpixelformat/invalid.md)
   The default value of the pixel format for the `MTLRenderPipelineState`. You cannot create a texture with this value.
 ### Enumeration Cases
+- [MTLPixelFormat.rgb16Float](mtlpixelformat/rgb16float.md)
+  An ordinary format with three components of 16-bit floating-point values in RGB order.
+- [MTLPixelFormat.rgb16Sint](mtlpixelformat/rgb16sint.md)
+  An ordinary format with three components of 16-bit signed integer values in RGB order.
+- [MTLPixelFormat.rgb16Snorm](mtlpixelformat/rgb16snorm.md)
+  An ordinary format with three components of 16-bit normalized, signed integer values in RGB order.
+- [MTLPixelFormat.rgb16Uint](mtlpixelformat/rgb16uint.md)
+  An ordinary format with three components of 16-bit unsigned integer values in RGB order.
+- [MTLPixelFormat.rgb16Unorm](mtlpixelformat/rgb16unorm.md)
+  An ordinary format with three components of 16-bit normalized, unsigned integer values in RGB order.
+- [MTLPixelFormat.rgb32Float](mtlpixelformat/rgb32float.md)
+  An ordinary format with three components of 32-bit floating-point values in RGB order.
+- [MTLPixelFormat.rgb32Sint](mtlpixelformat/rgb32sint.md)
+  An ordinary format with three components of 32-bit signed integer values in RGB order.
+- [MTLPixelFormat.rgb32Uint](mtlpixelformat/rgb32uint.md)
+  An ordinary format with three components of 32-bit unsigned integer values in RGB order.
+- [MTLPixelFormat.rgb8Sint](mtlpixelformat/rgb8sint.md)
+  An ordinary format with three components of 8-bit signed integer values in RGB order.
+- [MTLPixelFormat.rgb8Snorm](mtlpixelformat/rgb8snorm.md)
+  An ordinary format with three components of 8-bit normalized, signed integer values in RGB order.
+- [MTLPixelFormat.rgb8Uint](mtlpixelformat/rgb8uint.md)
+  An ordinary format with three components of 8-bit unsigned integer values in RGB order.
+- [MTLPixelFormat.rgb8Unorm](mtlpixelformat/rgb8unorm.md)
+  An ordinary format with three components of 8-bit normalized, unsigned integer values in RGB order.
 - [MTLPixelFormat.unspecialized](mtlpixelformat/unspecialized.md)
 ### Initializers
 - [init?(rawValue: UInt)](mtlpixelformat/init(rawvalue:).md)

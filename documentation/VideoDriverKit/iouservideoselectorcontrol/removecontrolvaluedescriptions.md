@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Removes selector control values from the selector control.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,7 @@ kern_return_t RemoveControlValueDescriptions(const IOUserVideoSelectorValueDescr
 
 #### Return Value
 
-Returns kIOReturnSuccess if selector control values were successfully removed.
-
-#### Discussion
-
-Remove selector control values from the selector control.
+`kIOReturnSuccess` if selector control values were successfully removed.
 
 ## Parameters
 
@@ -28,12 +26,19 @@ Remove selector control values from the selector control.
 ## See Also
 
 - [SetCurrentSelectedValues](iouservideoselectorcontrol/setcurrentselectedvalues.md)
+  Sets the current control value.
 - [GetCurrentSelectedValues](iouservideoselectorcontrol/getcurrentselectedvalues.md)
+  Gets the current selected values of the control.
 - [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+  Selector value for controls.
 - [GetControlValuesCount](iouservideoselectorcontrol/getcontrolvaluescount.md)
+  Gets the number of available selector control values.
 - [AddControlValueDescriptions](iouservideoselectorcontrol/addcontrolvaluedescriptions.md)
+  Adds control value descriptions to the selector control.
 - [GetControlValueDescriptions](iouservideoselectorcontrol/getcontrolvaluedescriptions.md)
+  Gets the selector values for the control.
 - [IOUserVideoSelectorValueDescription](iouservideoselectorvaluedescription.md)
+  A selector control’s value and name.
 
 
 ---

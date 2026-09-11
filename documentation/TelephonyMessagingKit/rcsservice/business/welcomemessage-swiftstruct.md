@@ -6,7 +6,7 @@
 Structure containing details about a business’ welcome message.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

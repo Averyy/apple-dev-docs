@@ -1,4 +1,4 @@
 Completed scraping Push to Talk!
-Total pages scraped: 0
-Pages skipped (unchanged): 112
+Total pages scraped: 1
+Pages skipped (unchanged): 111
 Pages failed: 0

@@ -127,6 +127,9 @@ If your app integrates AI models using the latest architectures and inference te
 ### Model deployments
 - [class MLModelCollection](mlmodelcollection.md)
   A set of Core ML models from a model deployment.
+### Optimization
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+  Measure how your model runs on your Mac or a connected device by generating a performance report in Xcode.
 ### Reference
 - [CoreML Enumerations](coreml-enumerations.md)
 

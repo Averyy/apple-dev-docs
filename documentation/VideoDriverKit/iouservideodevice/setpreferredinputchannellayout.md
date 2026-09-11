@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the input channel layout with IOUserVideoChannelLabel values
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,25 +14,21 @@
 kern_return_t SetPreferredInputChannelLayout(IOUserVideoChannelLabel *in_channel_labels, size_t in_num_channels);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
-#### Discussion
-
-Set the input channel layout with IOUserVideoChannelLabel values
-
 ## Parameters
 
-- `in_channel_labels`: Array of IOUserVideoChannelLabel’s.
-- `in_num_channels`: Number of items in in_channel_labels array
+- `in_channel_labels`: An array channel labels.
+- `in_num_channels`: The number of items in the array.
 
 ## See Also
 
 - [SetPreferredChannelsForStereo](iouservideodevice/setpreferredchannelsforstereo.md)
+  Sets the channel indices for the preferred stereo pair
 - [GetPreferredChannelsForStereo](iouservideodevice/getpreferredchannelsforstereo.md)
+  Gets the channel indices for the preferred stereo pair.
 - [SetPreferredOutputChannelLayout](iouservideodevice/setpreferredoutputchannellayout.md)
+  Sets the output channel layout.
 - [IOUserVideoChannelLabel](videodriverkit/iouservideochannellabel.md)
+  These constants are to set the preferred channel layout on video device.
 
 
 ---

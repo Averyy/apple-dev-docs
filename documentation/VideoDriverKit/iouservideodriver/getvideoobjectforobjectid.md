@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the video object that corresponds to a video object identifier.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,11 +16,7 @@ OSSharedPtr<IOUserVideoObject> GetVideoObjectForObjectID(IOUserVideoObjectID in_
 
 #### Return Value
 
-Returns OSSharedPtr to an IOUserVideoObject if in_object_id was found.
-
-#### Discussion
-
-Get a IOUserVideoObject OSSharedPtr that corresponds to a IOUserVideoObjectID
+OSSharedPtr to an IOUserVideoObject if in_object_id was found.
 
 ## Parameters
 
@@ -27,8 +25,11 @@ Get a IOUserVideoObject OSSharedPtr that corresponds to a IOUserVideoObjectID
 ## See Also
 
 - [AddObject](iouservideodriver/addobject.md)
+  Adds a video object to the driver.
 - [RemoveObject](iouservideodriver/removeobject.md)
+  Removes a video object from the driver.
 - [IOUserVideoObject](iouservideoobject.md)
+  The base class for all video objects.
 
 
 ---

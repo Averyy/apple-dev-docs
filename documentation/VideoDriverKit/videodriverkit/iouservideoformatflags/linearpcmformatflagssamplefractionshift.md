@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: case
 
+The linear PCM flags contain a 6-bit bitfield indicating that an integer format is to be interpreted as fixed point.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,9 +14,14 @@
 LinearPCMFormatFlagsSampleFractionShift
 ```
 
+#### Discussion
+
+The value indicates the number of bits are used to represent the fractional portion of each sample value. This constant indicates the bit position (counting from the right) of the bitfield in `mFormatFlags`.
+
 ## See Also
 
 - [LinearPCMFormatFlagsSampleFractionMask](videodriverkit/iouservideoformatflags/linearpcmformatflagssamplefractionmask.md)
+  The linear PCM flags contain a 6-bit bitfield indicating that an integer format is to be interpreted as fixed point.
 
 
 ---

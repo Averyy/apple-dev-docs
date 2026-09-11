@@ -20,6 +20,10 @@ The compute device that the framework prefers to execute the layer/operation.
 let preferred: MLComputeDevice
 ```
 
+## Mentions
+
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+
 ## See Also
 
 - [let supported: [MLComputeDevice]](mlcomputeplan-1w21n/deviceusage/supported.md)

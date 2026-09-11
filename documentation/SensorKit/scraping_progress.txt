@@ -1,4 +1,4 @@
 Completed scraping SensorKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 665
+Total pages scraped: 136
+Pages skipped (unchanged): 529
 Pages failed: 0

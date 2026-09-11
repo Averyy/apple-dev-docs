@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Initializes a custom property.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,10 +17,6 @@ virtual bool init(IOUserVideoDriver *in_video_driver, IOUserVideoObjectPropertyA
 #### Return Value
 
 True on success.
-
-#### Discussion
-
-Initializes a IOUserVideoCustomProperty.
 
 ## Parameters
 
@@ -31,8 +29,11 @@ Initializes a IOUserVideoCustomProperty.
 ## See Also
 
 - [Create](iouservideocustomproperty/create.md)
+  A static factory method that allocates and initializes a custom property.
 - [IOUserVideoObjectPropertyAddress](videodriverkit/iouservideoobjectpropertyaddress.md)
+  A data structure that contains all the three parts to identify a specific property, for easy transmission.
 - [IOUserVideoCustomPropertyDataType](videodriverkit/iouservideocustompropertydatatype.md)
+  Data qualifier types used for custom properties.
 
 
 ---

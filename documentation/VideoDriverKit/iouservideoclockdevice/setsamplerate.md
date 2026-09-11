@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the current sample rate for the clock device.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetSampleRate(double in_sample_rate);
 ```
 
-#### Return Value
-
-Returns kern_return_t.
-
 #### Discussion
 
-Set the current sample rate for the clock device.
-
-Changing the sample rate will send a notification to the host to update the object state if successful. Setting the sample rate will be synchronized using the work queue created by the object.
+Changing the sample rate will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the sample rate.
 
 ## Parameters
 
@@ -29,9 +25,13 @@ Changing the sample rate will send a notification to the host to update the obje
 ## See Also
 
 - [GetSampleRate](iouservideoclockdevice/getsamplerate.md)
+  Gets sample rate of the clock device.
 - [SetAvailableSampleRates](iouservideoclockdevice/setavailablesamplerates.md)
+  Sets the available sample rates for the clock device.
 - [GetAvailableSampleRates](iouservideoclockdevice/getavailablesamplerates.md)
+  Gets available sample rates of the clock device.
 - [GetNumberAvailableSampleRates](iouservideoclockdevice/getnumberavailablesamplerates.md)
+  Gets number of available sample rates of the clock device.
 
 
 ---

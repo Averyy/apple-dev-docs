@@ -7,7 +7,7 @@
 An array of all layers in the stack, from base (index 0) to top.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

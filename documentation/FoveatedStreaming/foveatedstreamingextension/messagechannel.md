@@ -6,7 +6,7 @@
 A message channel between the host app and the extension.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

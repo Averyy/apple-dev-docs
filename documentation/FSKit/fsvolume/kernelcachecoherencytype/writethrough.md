@@ -6,7 +6,7 @@
 A type that indicates writes update cache and storage synchronously.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -4,7 +4,7 @@
 **Kind**: init
 
 **Availability**:
-- tvOS 27.0+ (Beta)
+- tvOS 27.0+
 
 ## Declaration
 

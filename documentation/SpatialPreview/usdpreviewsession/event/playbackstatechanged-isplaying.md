@@ -6,7 +6,7 @@
 The USD’s animation playback state has changed
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS ?+
 
 ## Declaration

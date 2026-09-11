@@ -6,7 +6,7 @@
 A device type that represents any spatial accessory.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

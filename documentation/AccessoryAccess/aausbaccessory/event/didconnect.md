@@ -6,7 +6,7 @@
 The event the framework sends when a USB accessory connects to the system.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

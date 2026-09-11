@@ -8,7 +8,7 @@ An asynchronous sequence of arrays of certificate identifiers provided by the MD
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 2.4+
 
 ## Declaration

@@ -6,12 +6,12 @@
 A status that indicates the system successfully generated a new frame.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 - Mac Catalyst 18.2+
 - macOS 12.3+
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- tvOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 

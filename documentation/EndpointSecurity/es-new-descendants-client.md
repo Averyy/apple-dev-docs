@@ -6,7 +6,7 @@
 Create a new ES client scoped to descendant processes only.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

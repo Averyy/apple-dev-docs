@@ -6,7 +6,7 @@
 Asynchronously mounts a single volume file system with a given resource.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

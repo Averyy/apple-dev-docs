@@ -85,7 +85,13 @@ Use these constants with the [`textContentType`](uitextinputtraits/textcontentty
 - [static let cellularEID: UITextContentType](uitextcontenttype/cellulareid.md)
   A property that defines the content in a text input area to contain an embedded identity document number for an eSIM.
 - [static let cellularIMEI: UITextContentType](uitextcontenttype/cellularimei.md)
-  A property that defines the content in a text input area to contain an international mobile equipment identity number for an eSIM.
+  A property that defines the content in a text input area to contain the device’s primary International Mobile Equipment Identity (IMEI) number for an eSIM.
+- [static let cellularIMEI1: UITextContentType](uitextcontenttype/cellularimei1.md)
+  A property that defines the content in a text input area to contain the International Mobile Equipment Identity (IMEI) for an eSIM.
+- [static let cellularIMEI2: UITextContentType](uitextcontenttype/cellularimei2.md)
+  A property that defines the content in a text input area to contain the second International Mobile Equipment Identity (IMEI) for an eSIM.
+- [static let cellularNAL: UITextContentType](uitextcontenttype/cellularnal.md)
+  A property that defines the content in a text input area for use when activating a SIM, and applies only to China.
 ### Accepting payment
 - [static let creditCardNumber: UITextContentType](uitextcontenttype/creditcardnumber.md)
   A property that defines the content in a text input area as a credit card number.
@@ -127,13 +133,6 @@ Use these constants with the [`textContentType`](uitextinputtraits/textcontentty
 ### Creating a text content type
 - [init(rawValue: String)](uitextcontenttype/init(rawvalue:).md)
   Creates a text content type with the specified raw value.
-### Type Properties
-- [static let cellularIMEI1: UITextContentType](uitextcontenttype/cellularimei1.md)
-  A property that defines the content in a text input area to contain an international mobile equipment identity number 1 for an eSIM. This content type requires clients to have Carrier eSIM entitlements.
-- [static let cellularIMEI2: UITextContentType](uitextcontenttype/cellularimei2.md)
-  A property that defines the content in a text input area to contain an international mobile equipment identity number 2 for an eSIM. This content type requires clients to have Carrier eSIM entitlements.
-- [static let cellularNAL: UITextContentType](uitextcontenttype/cellularnal.md)
-  A property that defines the content in a text input area to contain a network access license for an eSIM. This content type requires clients to have Carrier eSIM entitlements.
 
 ## Relationships
 

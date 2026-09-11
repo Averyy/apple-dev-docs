@@ -6,7 +6,7 @@
 The method the framework calls when the device receives a virtqueue (Virtio queue) notification from the guest.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

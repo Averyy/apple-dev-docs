@@ -6,7 +6,7 @@
 Notifies the host app that the list of available message channels has updated.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

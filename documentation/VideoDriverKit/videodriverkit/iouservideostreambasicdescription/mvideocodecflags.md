@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -16,7 +16,9 @@ uint32_t mVideoCodecFlags;
 
 - [mVideoCodecType](videodriverkit/iouservideostreambasicdescription/mvideocodectype.md)
 - [IOUserVideoFormatID](videodriverkit/iouservideoformatid.md)
+  Identifiers used for formats of audio data.
 - [IOUserVideoFormatFlags](videodriverkit/iouservideoformatflags.md)
+  Standard format flags for a basic description.
 
 
 ---

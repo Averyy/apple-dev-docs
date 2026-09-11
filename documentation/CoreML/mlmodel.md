@@ -71,6 +71,8 @@ If your app downloads and compiles a model on the user’s device, you must use 
 - [func prediction(from:using:options:)](mlmodel/prediction(from:using:options:).md)
 - [class MLPredictionOptions](mlpredictionoptions.md)
   The options available when making a prediction.
+- [Background Inference](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+  An entitlement that lets a background task run inference on the Neural Engine.
 ### Making state
 - [func makeState() -> MLState](mlmodel/makestate.md)
   Creates a new state object.

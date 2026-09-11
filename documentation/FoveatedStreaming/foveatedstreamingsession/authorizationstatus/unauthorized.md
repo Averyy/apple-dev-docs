@@ -6,7 +6,7 @@
 The user has denied this capability, or the capability is otherwise unavailable.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The block count specified for the disk image is invalid (zero or negative).
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

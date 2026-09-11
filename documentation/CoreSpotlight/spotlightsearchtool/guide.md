@@ -6,11 +6,11 @@
 A type you use to offer guidance about what search capabillities to employ during a session.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
 
 ## Declaration
 
@@ -27,14 +27,13 @@ Use this type to specify additional guidance about how you want the model to sea
 ### Creating the search tool
 - [init(level: SpotlightSearchTool.GuidanceLevel, format: SpotlightSearchTool.FormatLevel)](spotlightsearchtool/guide/init(level:format:).md)
 ### Getting the guidance
-- [let format: SpotlightSearchTool.FormatLevel](spotlightsearchtool/guide/format.md)
-  The representation format for tool responses returned to the model.
 - [let level: SpotlightSearchTool.GuidanceLevel](spotlightsearchtool/guide/level.md)
   The guidance for the model to use during a session.
-### Type Properties
+- [let format: SpotlightSearchTool.FormatLevel](spotlightsearchtool/guide/format.md)
+  The representation format for tool responses returned to the model.
+### Setting the guidance levels
 - [static var complete: SpotlightSearchTool.Guide](spotlightsearchtool/guide/complete.md)
   A guide that uses all available search techniques.
-### Type Methods
 - [static func dynamic(SpotlightSearchTool.GuidanceProfile) -> SpotlightSearchTool.Guide](spotlightsearchtool/guide/dynamic(_:).md)
   A guide that includes only the search techniques specified by the given profile.
 - [static func focused(SpotlightSearchTool.ContentDomain) -> SpotlightSearchTool.Guide](spotlightsearchtool/guide/focused(_:).md)

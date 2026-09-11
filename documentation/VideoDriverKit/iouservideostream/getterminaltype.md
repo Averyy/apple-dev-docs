@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the terminal type of the stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,18 +14,16 @@
 IOUserVideoStreamTerminalType GetTerminalType();
 ```
 
-#### Return Value
-
-Returns IOUserVideoStreamTerminalType
-
 #### Discussion
 
-Get the terminal type of the IOUserVideoStream. Getting the value will be synchronized using the work queue created by the object.
+The object’s work queue synchronizes access to the value.
 
 ## See Also
 
 - [SetTerminalType](iouservideostream/setterminaltype.md)
+  Sets the terminal type of the stream.
 - [IOUserVideoStreamTerminalType](videodriverkit/iouservideostreamterminaltype.md)
+  The terminal type of video stream.
 
 
 ---

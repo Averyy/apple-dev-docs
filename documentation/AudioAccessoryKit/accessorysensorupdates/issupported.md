@@ -6,7 +6,7 @@
 Returns `true` when the running OS version supports `AccessorySensorUpdates`.
 
 **Availability**:
-- iOS 27.0+ (Beta)
+- iOS 27.0+
 
 ## Declaration
 

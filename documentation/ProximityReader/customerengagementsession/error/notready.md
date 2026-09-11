@@ -6,9 +6,9 @@
 The session has not yet received the `.ready` event from the customer. The merchant must wait for the `.ready` event before sending requests.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
 
 ## Declaration
 

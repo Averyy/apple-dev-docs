@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -14,26 +16,20 @@ IOStreamBufferQueue * GetOutputQueue();
 
 #### Return Value
 
-Returns IOMemoryDescriptor in an OSSharedPtr.
-
-#### Discussion
-
-Get the IOMemoryDescriptor used for video IO that was initialied with or set on the video stream
-
-```None
-@function getOutputQueue
-@result A pointer to the output IOStreamBufferQueue structure for the stream,
-or NULL if the stream is not open and the queue has not been created yet.
-```
+A pointer to the output buffer queue for the stream, or `NULL` if the stream is not open and the queue has not been created yet.
 
 ## See Also
 
 - [GetInputQueue](iouservideostream/getinputqueue.md)
+  Gets the buffer queue for the stream.
 - [createQueues](iouservideostream/createqueues.md)
+  Creates the shared input and output queues, without regard to whether the stream is open or not.
 - [destroyQueues](iouservideostream/destroyqueues.md)
+  Releases the shared input and output queues.
 - [dequeueInputEntry](iouservideostream/dequeueinputentry.md)
 - [enqueueOutputEntry](iouservideostream/enqueueoutputentry.md)
 - [SendBufferQueueChange](iouservideostream/sendbufferqueuechange.md)
+  Sends a notification to the host that the buffer queue has changed.
 - [IOStreamBufferQueue](iostreambufferqueue.md)
 
 

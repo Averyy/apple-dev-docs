@@ -6,8 +6,8 @@
 A diagnostic MetricKit generates when your app or extension terminates because it exceeds the memory limit.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
+- iOS 27.0+
+- iPadOS 27.0+
 
 ## Declaration
 

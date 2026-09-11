@@ -38,9 +38,18 @@ class CNRenderingSession
 - [let sessionAttributes: CNRenderingSession.Attributes](cnrenderingsession-1hzh8/sessionattributes.md)
   Rendering session attributes for a Cinematic asset.
 ### Instance Methods
-- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationImage: CVPixelBuffer) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationimage:).md)
-- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationLuma: any MTLTexture, destinationChroma: any MTLTexture) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationluma:destinationchroma:).md)
-- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationRGBA: any MTLTexture) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationrgba:).md)
+- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVReadOnlyPixelBuffer, sourceDisparity: CVReadOnlyPixelBuffer?, destinationImage: CVPixelBuffer) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationimage:)-3rknf.md)
+  Encode a command to render a shallow depth of field (SDoF) image to a pixel buffer.
+- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationImage: CVPixelBuffer) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationimage:)-58mjy.md)
+  Encode a command to render a shallow depth of field (SDoF) image to a pixel buffer.
+- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVReadOnlyPixelBuffer, sourceDisparity: CVReadOnlyPixelBuffer?, destinationLuma: any MTLTexture, destinationChroma: any MTLTexture) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationluma:destinationchroma:)-5ukp9.md)
+  Encode a command to render a shallow depth of field (SDoF) image to two metal textures as luma and chroma.
+- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationLuma: any MTLTexture, destinationChroma: any MTLTexture) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationluma:destinationchroma:)-9kvia.md)
+  Encode a command to render a shallow depth of field (SDoF) image to two metal textures as luma and chroma.
+- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVReadOnlyPixelBuffer, sourceDisparity: CVReadOnlyPixelBuffer?, destinationRGBA: any MTLTexture) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationrgba:)-1gaox.md)
+  Encode a command to render a shallow depth of field (SDoF) image to a metal texture as RGBA.
+- [func encodeRender(to: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationRGBA: any MTLTexture) -> Bool](cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationrgba:)-3ff9.md)
+  Encode a command to render a shallow depth of field (SDoF) image to a metal texture as RGBA.
 ### Type Properties
 - [static var destinationPixelFormatTypes: [OSType]](cnrenderingsession-1hzh8/destinationpixelformattypes.md)
   A static number representing the video compositor’s required pixel buffer attributes context dictionary when implementing video compositing.

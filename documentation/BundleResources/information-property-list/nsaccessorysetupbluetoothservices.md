@@ -19,7 +19,7 @@ Each value is a 16- or 128-bit UUID that represents either a Bluetooth Special I
 
 ## See Also
 
-- [NSAccessorySetupSupports](information-property-list/nsaccessorysetupsupports.md)
+- [NSAccessorySetupKitSupports](information-property-list/nsaccessorysetupkitsupports.md)
   An array of strings that indicates the wireless technologies AccessorySetupKit uses when discovering and configuring accessories.
 - [NSAccessorySetupBluetoothCompanyIdentifiers](information-property-list/nsaccessorysetupbluetoothcompanyidentifiers.md)
   An array of strings that represent the Bluetooth company identifiers for accessories that your app configures.

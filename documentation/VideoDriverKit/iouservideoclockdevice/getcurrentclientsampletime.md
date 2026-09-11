@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Gets the current sample time in the ring buffer that the client reads from and writes to.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,14 +14,10 @@
 void GetCurrentClientSampleTime(uint64_t *out_input_sample_time, uint64_t *out_output_sample_time);
 ```
 
-#### Discussion
-
-Get the current sample time in the ring buffer written to/read from by the client
-
 ## Parameters
 
-- `out_input_sample_time`: Pointer to uint64_t that will be set with the current input sample time read by the client.
-- `out_output_sample_time`: Pointer to uint64_t that will be set with the current output sample time written by the client.
+- `out_input_sample_time`: A pointer to a uint64_t value that this method sets to the current input sample time the client reads.
+- `out_output_sample_time`: A pointer to a uint64_t value that this method sets to the current output sample time the client writes.
 
 
 ---

@@ -6,7 +6,7 @@
 A description of why the stacking operation failed.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

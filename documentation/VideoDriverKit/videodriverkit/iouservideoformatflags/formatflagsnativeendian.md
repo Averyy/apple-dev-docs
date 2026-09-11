@@ -4,7 +4,7 @@
 **Kind**: case
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -15,7 +15,9 @@ FormatFlagsNativeEndian
 ## See Also
 
 - [FormatFlagIsBigEndian](videodriverkit/iouservideoformatflags/formatflagisbigendian.md)
+  Set for big endian, clear for little endian.
 - [LinearPCMFormatFlagIsBigEndian](videodriverkit/iouservideoformatflags/linearpcmformatflagisbigendian.md)
+  Synonym for `FormatFlagIsBigEndian`.
 
 
 ---

@@ -6,7 +6,7 @@
 Returns the current authorization status of the given input capabilities without presenting an authorization prompt.
 
 **Availability**:
-- visionOS 27.0+ (Beta)
+- visionOS 27.0+
 
 ## Declaration
 

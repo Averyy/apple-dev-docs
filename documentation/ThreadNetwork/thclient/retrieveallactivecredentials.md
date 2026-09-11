@@ -11,6 +11,7 @@ Returns a set of the active credentials.
 - Mac Catalyst 16.4+
 - macOS 13.0+
 - visionOS 1.0+
+- watchOS 9.4+
 
 ## Declaration
 

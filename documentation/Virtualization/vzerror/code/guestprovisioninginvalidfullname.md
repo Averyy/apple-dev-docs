@@ -6,7 +6,7 @@
 An error that indicates the full name for guest provisioning is invalid.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

@@ -20,6 +20,10 @@ The processing unit or units the model uses to make predictions.
 var computeUnits: MLComputeUnits { get set }
 ```
 
+## Mentions
+
+- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+
 ## See Also
 
 - [enum MLComputeUnits](mlcomputeunits.md)

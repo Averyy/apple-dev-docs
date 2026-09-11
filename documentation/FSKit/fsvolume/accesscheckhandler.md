@@ -6,7 +6,7 @@
 Methods and properties implemented by volumes that want to enforce access check operations.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 
 ## Declaration
 

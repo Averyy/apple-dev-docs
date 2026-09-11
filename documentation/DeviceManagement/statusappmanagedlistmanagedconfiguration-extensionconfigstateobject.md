@@ -9,7 +9,7 @@ The status of any app extension managed configuration. This key’s value is a d
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- macOS 27.0+ (Beta)
+- macOS 27.0+
 - visionOS 2.4+
 
 ## Declaration

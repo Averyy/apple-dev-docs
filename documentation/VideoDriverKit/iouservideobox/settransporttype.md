@@ -3,8 +3,10 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Sets the transport type of the IOUserVideoBox.
+
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 
@@ -12,15 +14,9 @@
 kern_return_t SetTransportType(IOUserVideoTransportType in_transport_type);
 ```
 
-#### Return Value
-
-Returns kern_return_t
-
 #### Discussion
 
-Set the transport type of the IOUserVideoBox
-
-Drivers can change the transport type of the box dynamically.  A notification will be sent to the host to update the object state if successful.
+Drivers can change the transport type of the box dynamically. The object sends a notification to the host to update the object state on success.
 
 ## Parameters
 
@@ -29,7 +25,9 @@ Drivers can change the transport type of the box dynamically.  A notification wi
 ## See Also
 
 - [GetTransportType](iouservideobox/gettransporttype.md)
+  Gets the transport type of the video box.
 - [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+  The transport type of a video stream.
 
 
 ---

@@ -1,4 +1,4 @@
 Completed scraping ScreenCaptureKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 328
+Total pages scraped: 189
+Pages skipped (unchanged): 139
 Pages failed: 0
