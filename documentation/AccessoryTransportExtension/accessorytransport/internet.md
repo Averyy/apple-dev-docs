@@ -7,7 +7,6 @@ A transport method that uses the internet for data delivery.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
 Completed scraping ThreadNetwork!
-Total pages scraped: 25
-Pages skipped (unchanged): 5
+Total pages scraped: 29
+Pages skipped (unchanged): 1
 Pages failed: 0

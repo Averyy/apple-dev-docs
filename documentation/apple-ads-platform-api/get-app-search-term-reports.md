@@ -94,15 +94,36 @@ POST /v1/reports/apps/searchterms/query
    "rows": [
      {
        "metadata": {
+         "campaignId": 444555666,
+         "adAccountId": 123456789,
          "searchTermText": "best productivity app 2025",
+         "searchTermSource": "SEARCH",
          "keyword": {
            "id": 888999000,
+           "campaignId": 444555666,
+           "adAccountId": 123456789,
+           "deleted": false,
            "text": "productivity app",
-           "matchType": "BROAD"
+           "status": "ENABLED",
+           "matchType": "BROAD",
+           "bid": {
+             "amount": "0.35",
+             "currency": "USD"
+           },
+           "adGroupId": 555666777,
+           "modificationTime": "2024-12-15T08:00:00.000",
+           "creationTime": "2024-11-01T08:00:00.000",
+           "displayStatus": "RUNNING",
+           "adGroup": {
+             "name": "Productivity - Broad Match",
+             "deleted": false
+           }
          },
-         "adAccountId": 123456789,
-         "campaignId": 444555666,
-         "adGroupId": 555666777
+         "adGroupId": 555666777,
+         "adGroup": {
+           "name": "Productivity - Broad Match",
+           "deleted": false
+         }
        },
        "totalMetrics": {
          "localSpend": {
@@ -134,15 +155,36 @@ POST /v1/reports/apps/searchterms/query
      },
      {
        "metadata": {
+         "campaignId": 444555666,
+         "adAccountId": 123456789,
          "searchTermText": "task management tools",
+         "searchTermSource": "SEARCH",
          "keyword": {
            "id": 888999001,
+           "campaignId": 444555666,
+           "adAccountId": 123456789,
+           "deleted": false,
            "text": "task manager",
-           "matchType": "BROAD"
+           "status": "ENABLED",
+           "matchType": "BROAD",
+           "bid": {
+             "amount": "0.32",
+             "currency": "USD"
+           },
+           "adGroupId": 555666777,
+           "modificationTime": "2024-12-15T08:00:00.000",
+           "creationTime": "2024-11-01T08:00:00.000",
+           "displayStatus": "RUNNING",
+           "adGroup": {
+             "name": "Productivity - Broad Match",
+             "deleted": false
+           }
          },
-         "adAccountId": 123456789,
-         "campaignId": 444555666,
-         "adGroupId": 555666777
+         "adGroupId": 555666777,
+         "adGroup": {
+           "name": "Productivity - Broad Match",
+           "deleted": false
+         }
        },
        "totalMetrics": {
          "localSpend": {
@@ -228,15 +270,36 @@ POST /v1/reports/apps/searchterms/query
    "rows": [
      {
        "metadata": {
+         "campaignId": 444555666,
+         "adAccountId": 123456789,
          "searchTermText": "organize tasks",
+         "searchTermSource": "SEARCH",
          "keyword": {
            "id": 888999002,
+           "campaignId": 444555666,
+           "adAccountId": 123456789,
+           "deleted": false,
            "text": "task organizer",
-           "matchType": "BROAD"
+           "status": "ENABLED",
+           "matchType": "BROAD",
+           "bid": {
+             "amount": "0.40",
+             "currency": "USD"
+           },
+           "adGroupId": 555666777,
+           "modificationTime": "2024-12-15T08:00:00.000",
+           "creationTime": "2024-11-01T08:00:00.000",
+           "displayStatus": "RUNNING",
+           "adGroup": {
+             "name": "Productivity - Broad Match",
+             "deleted": false
+           }
          },
-         "adAccountId": 123456789,
-         "campaignId": 444555666,
-         "adGroupId": 555666777
+         "adGroupId": 555666777,
+         "adGroup": {
+           "name": "Productivity - Broad Match",
+           "deleted": false
+         }
        },
        "totalMetrics": {
          "localSpend": {

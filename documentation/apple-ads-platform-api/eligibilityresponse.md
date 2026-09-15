@@ -23,7 +23,6 @@ object EligibilityResponse
 - `state` (string): Eligibility state: `ELIGIBLE` or `INELIGIBLE`. Defaults to `ELIGIBLE`. Read-only.
 - `countryOrRegion` (string): The country or region evaluated. Read-only.
 - `deviceClass` (string): The device class evaluated. Read-only.
-- `reasons` ([string]): Codes explaining an `INELIGIBLE` state. Read-only.
 - `creationTime` (date-time): The date and time this eligibility record was created. Read-only.
 - `modificationTime` (date-time): The date and time this eligibility record was last modified. Read-only.
 

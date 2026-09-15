@@ -8,7 +8,6 @@ Handles session invalidation.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

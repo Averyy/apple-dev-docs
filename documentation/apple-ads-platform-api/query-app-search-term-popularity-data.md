@@ -21,7 +21,7 @@ See [`Filter`](filter.md) for the full set of supported comparison operators.
 | `week` | string | `IN` | Available only when `granularity` is `WEEKLY_SUN_SAT`. Values must be valid week boundary dates. |
 | `month` | string | `IN` | Available only when `granularity` is `MONTHLY`. |
 | `countryOrRegion` | string | `EQUALS`, `IN` | App Store country or region code to scope results to. Use `IN` with an array to query multiple countries or regions in one request. |
-| `genre` | string | `EQUALS`, `IN` | App Store genre name (for example, `PRODUCTIVITY_UTILITIES`, `TRAVEL`). See [`SearchTermPopularityQueryRequest`](searchtermpopularityqueryrequest.md) for the enumeration of allowed values. |
+| `genre` | string | `EQUALS`, `IN` | App Store genre name. Enumeration values are: BUSINESS, EDUCATION, ENTERTAINMENT, FINANCE, FOOD_DRINK, GAMES, HEALTH_FITNESS, LIFESTYLE, NEW_PUBLICATION, PHOTO_VIDEO, PRODUCTIVITY_UTILITIES, SHOPPING, SOCIAL_NETWORKING, SPORTS, TRAVEL. |
 | `searchTerm` | string | `EQUALS`, `IN`, `CONTAINS`, `STARTS_WITH` | The search term text. `CONTAINS` and `STARTS_WITH` match case-insensitively. |
 | `rankInGenre` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | `BETWEEN` requires exactly two values. |
 | `searchPopularityInGenre` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | `BETWEEN` requires exactly two values. |
@@ -128,8 +128,7 @@ POST /v1/insights/apps/search-term-popularity/query
  },
  "pagination": {
    "offset": 0,
-   "pageSize": 20,
-   "totalCount": 3
+   "pageSize": 20
  }
 }
 ```
@@ -210,8 +209,7 @@ POST /v1/insights/apps/search-term-popularity/query
  },
  "pagination": {
    "offset": 0,
-   "pageSize": 50,
-   "totalCount": 2
+   "pageSize": 50
  }
 }
 ```

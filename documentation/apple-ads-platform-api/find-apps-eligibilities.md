@@ -3,14 +3,14 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: httpRequest
 
-Check whether apps are eligible to run on certain Apple Ads placements and in specific countries or regions.
+Check whether an app is eligible to run on certain Apple Ads placements and in specific countries or regions.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
 #### Discussion
 
-This endpoint checks whether one or more apps are eligible to run Apple Ads campaigns in specified countries or regions. The response contains per-app eligibility status, along with the specific supply placements and markets where advertising is allowed or blocked.
+This endpoint checks whether an app is eligible to run Apple Ads campaigns in specified countries or regions. The response contains per-app eligibility status, along with the specific supply placements and markets where advertising is allowed or blocked.
 
 To confirm that your app can be promoted in the target markets, use this endpoint before creating campaigns. Attempting to run campaigns in ineligible markets will result in zero delivery. Calling this endpoint early in the campaign setup workflow avoids wasted configuration.
 
@@ -22,12 +22,11 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
-| `adamId` | integer (int64) | `EQUALS`, `IN` |  | The Adam ID of the app |
-| `supplyPlacement` | string |  |  | The supply placement being checked |
-| `supplySource` | string |  |  | The supply source being checked |
-| `countryOrRegion` | string |  | Yes | The country or region evaluated |
-| `deviceClass` | string |  |  | The device class evaluated |
-| `state` | string |  |  | Eligibility state: `ELIGIBLE` or `INELIGIBLE` |
+| `adamId` | integer (int64) | `EQUALS` | No | The Adam ID of the app |
+| `supplyPlacement` | string | `EQUALS`, `IN` | Yes | The supply placement being checked |
+| `state` | string | `EQUALS`, `IN` | Yes | Eligibility state: `ELIGIBLE` or `INELIGIBLE` |
+| `countryOrRegion` | string | `EQUALS`, `IN` | Yes | The country or region evaluated |
+| `deviceClass` | string | `EQUALS`, `IN` | Yes | The device class evaluated |
 
 See [`EligibilityQueryRequest`](eligibilityqueryrequest.md) for the full field list. The request body is a [`QueryRequest`](queryrequest.md)-shaped object composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
@@ -53,7 +52,6 @@ Each item in `result` is a flat `EligibilityResponse` row for a specific combina
 | `state` | string | Eligibility state: `ELIGIBLE` or `INELIGIBLE` (default `ELIGIBLE`) |
 | `countryOrRegion` | string | The country or region evaluated |
 | `deviceClass` | string | The device class evaluated |
-| `reasons` | array of strings | Codes explaining an `INELIGIBLE` state |
 | `creationTime` | string (ISO 8601) | When this eligibility record was created |
 | `modificationTime` | string (ISO 8601) | When this eligibility record was last modified |
 
@@ -63,13 +61,10 @@ Keep the following constraints in mind when checking eligibility:
 
 | Constraint | Detail |
 | --- | --- |
-| Batch queries | Filter by multiple `adamId` values in a single request to check several apps at once. |
 | Pre-campaign check | Always call this endpoint before creating campaigns in new markets. |
 | Distribution restrictions | Ineligibility may reflect App Store Connect distribution settings, not just policy violations. |
 
 #### Payload Examples
-
-**Check Single App**:
 
 ##### Request
 
@@ -119,75 +114,6 @@ POST /v1/eligibilities/apps/query
    "totalCount": 2,
    "offset": 0,
    "pageSize": 20
- }
-}
-```
-
-**Check Multiple Apps**:
-
-##### Request
-
-```json
-POST /v1/eligibilities/apps/query
-
-{
- "filters": [
-   {
-     "field": "adamId",
-     "operator": "IN",
-     "value": [
-       123456789,
-       987654321
-     ]
-   }
- ],
- "pagination": {
-   "offset": 0,
-   "pageSize": 50
- }
-}
-```
-
-##### Response
-
-```json
-{
- "result": [
-   {
-     "adamId": 123456789,
-     "supplyPlacement": "APPSTORE_SEARCH_RESULTS",
-     "supplySource": "APPSTORE",
-     "minAge": 4,
-     "state": "ELIGIBLE",
-     "countryOrRegion": "US",
-     "deviceClass": "IPHONE"
-   },
-   {
-     "adamId": 987654321,
-     "supplyPlacement": "APPSTORE_SEARCH_RESULTS",
-     "supplySource": "APPSTORE",
-     "minAge": 4,
-     "state": "ELIGIBLE",
-     "countryOrRegion": "US",
-     "deviceClass": "IPHONE"
-   },
-   {
-     "adamId": 987654321,
-     "supplyPlacement": "APPSTORE_SEARCH_RESULTS",
-     "supplySource": "APPSTORE",
-     "minAge": 17,
-     "state": "INELIGIBLE",
-     "countryOrRegion": "JP",
-     "deviceClass": "IPHONE",
-     "reasons": [
-       "APP_NOT_ELIGIBLE_IN_STOREFRONT"
-     ]
-   }
- ],
- "pagination": {
-   "totalCount": 3,
-   "offset": 0,
-   "pageSize": 50
  }
 }
 ```

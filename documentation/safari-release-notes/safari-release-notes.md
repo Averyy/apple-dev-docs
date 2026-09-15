@@ -11,8 +11,8 @@ Safari is a web browser app and web technology platform available on iOS and mac
 ## Topics
 
 ### Version 27
-- [Safari 27 Beta Release Notes](safari-27-release-notes.md)
-  Released July 20, 2026 — 27.0 beta (20625.1.24)
+- [Safari 27 Release Notes](safari-27-release-notes.md)
+  Released September 14, 2026 — 27.0 (20625.1.29)
 ### Version 26
 - [Safari 26.6 Release Notes](safari-26_6-release-notes.md)
   Released July 27, 2026 — 26.6 (20624.4.5)

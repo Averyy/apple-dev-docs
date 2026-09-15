@@ -7,7 +7,6 @@ An incoming session request that your extension accepts or rejects.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

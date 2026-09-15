@@ -7,7 +7,6 @@ A cipher suite that provides xWing hybrid post-quantum key encapsulation.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

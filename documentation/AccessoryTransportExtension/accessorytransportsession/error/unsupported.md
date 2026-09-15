@@ -7,7 +7,6 @@ An error that indicates the framework doesn’t support an client-provided value
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

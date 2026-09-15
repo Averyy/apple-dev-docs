@@ -8,7 +8,6 @@ Evaluates incoming security session requests for an accessory.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

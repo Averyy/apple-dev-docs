@@ -56,7 +56,7 @@ object SearchTermPopularityQueryRequest
 
 ## Properties
 
-- `filters` ([Filter]): Filter conditions to scope results to specific countries or genres. Genre values match App Store genre names (for example, `PRODUCTIVITY_UTILITIES`, `TRAVEL`). Enumeration values are: BUSINESS, EDUCATION, ENTERTAINMENT, FINANCE, FOOD_DRINK, GAMES, HEALTH_FITNESS, LIFESTYLE, NEW_PUBLICATION, PHOTO_VIDEO, PRODUCTIVITY_UTILITIES, SHOPPING, SOCIAL_NETWORKING, SPORTS, TRAVEL.
+- `filters` ([Filter]): Filter conditions to scope results to specific countries or genres. See [`Filterable Fields`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api/query-app-search-term-popularity-data#Filterable-Fields) for `genre` values matching App Store genre names.
 - `sorting` ([Sorting]): Sort criteria. Maximum two sort fields. Default genre ASC, `rankInGenre` ASC.
 - `timeRange` (SearchTermPopularityTimeRange) *(required)*: timeRange is required and specifies the date window to query. Timezone is fixed to UTC. See [`SearchTermPopularityTimeRange`](searchtermpopularitytimerange.md) for granularity rules.
 - `pagination` (RequestPagination): See [`RequestPagination`](requestpagination.md) for details. This endpoint caps `pageSize` at 5000.

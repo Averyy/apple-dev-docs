@@ -7,7 +7,6 @@ The cipher suite version.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

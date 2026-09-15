@@ -44,8 +44,8 @@ The API returns `RejectionReasonResponse` as the envelope when you retrieve reje
 
 ## Properties
 
-- `error` (Error)
 - `result` (CreativeRejectionReason): The rejection reason record describing why an ad creative was rejected during review. See [`CreativeRejectionReason`](creativerejectionreason.md) for the full field reference, including `creativeId` and `reasonLevel`. Read-only.
+- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](error.md).
 
 ## See Also
 

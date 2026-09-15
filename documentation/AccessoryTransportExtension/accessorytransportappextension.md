@@ -7,7 +7,6 @@ A protocol for an extension that transmits data to an accessory you develop.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -7,7 +7,6 @@ An error indicating the transport is unavailable.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

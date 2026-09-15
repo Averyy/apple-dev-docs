@@ -1,4 +1,4 @@
 Completed scraping Accessibility!
-Total pages scraped: 6
-Pages skipped (unchanged): 298
+Total pages scraped: 303
+Pages skipped (unchanged): 1
 Pages failed: 0

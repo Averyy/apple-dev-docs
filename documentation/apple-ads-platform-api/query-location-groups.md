@@ -24,30 +24,13 @@ See [`QueryRequest`](queryrequest.md).
 | `sorting` | array | No | Sort order for results (field + ASC/DESC). |
 | `pagination` | object | No | Offset and page size. Defaults apply if omitted. |
 
-##### Filtering
+##### Filterable Fields
 
-The system combines multiple filters with AND logic. The `id` filter matches the group’s system-assigned identifier, the same `id` value returned in create and get responses. Filtering by `brandId` is the most common way to scope results to a single brand’s groups.
+The system combines multiple filters with AND logic. The `id` filter matches the group’s system-assigned identifier, the same `id` value returned in create and get responses, not the provider object ID. Filtering by `brandId` is the most common way to scope results to a single brand’s groups.
 
 The system excludes soft-deleted groups from results by default. To include them, add a filter with `field: "deleted"`, `operator: "EQUALS"`, `value: true`.
 
-##### Sorting and Pagination
-
-You can sort results by any filterable field using the `sorting` array. The response includes a `pagination` object with `totalCount`, `offset`, and `pageSize`. Page through large result sets by incrementing `offset`.
-
-Two behaviors are worth noting when filtering by ID or excluding deleted groups:
-
-| Constraint | Detail |
-| --- | --- |
-| `id` filter | Matches the group’s system-assigned identifier, not the provider object ID. |
-| Deleted groups excluded | Use a `deleted EQUALS true` filter to surface soft-deleted groups. |
-
-##### Find Groups for a Location
-
-There is no dedicated filter for looking up location groups by location membership. To determine which groups contain a specific location, query location groups scoped to the location’s brand with a `brandId` filter, then inspect each returned group’s membership client-side. For `STATIC` groups, check whether the location’s `id` appears in the group’s `locationIds` array. For `DYNAMIC` groups, check whether the location satisfies the group’s `rules` criteria.
-
-##### Filterable Fields
-
-You can sort results by any filterable field using the `sorting` array; see [`QuerySort`](querysort.md) ([`QuerySortOrder`](querysortorder.md)) and [`QueryPagination`](querypagination.md) for the request shape.
+> **Note**: There’s no dedicated filter for looking up location groups by location membership. To determine which groups contain a specific location, query location groups scoped to the location’s brand with a `brandId` filter, then inspect each returned group’s membership client-side. For `STATIC` groups, check whether the location’s `id` appears in the group’s `locationIds` array. For `DYNAMIC` groups, check whether the location satisfies the group’s `rules` criteria.
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -62,6 +45,10 @@ You can sort results by any filterable field using the `sorting` array; see [`Qu
 | `eligibility.blockedGroups.countryOrRegion` | string | `CONTAINS_ANY` | Yes | Blocked country. |
 | `eligibility.allowedGroups.supplyPlacement` | string | `CONTAINS_ANY` | Yes | Allowed placement. |
 | `eligibility.allowedGroups.countryOrRegion` | string | `CONTAINS_ANY` | Yes | Allowed country. |
+
+##### Sorting and Pagination
+
+You can sort results by any filterable field using the `sorting` array; see [`QuerySort`](querysort.md) ([`QuerySortOrder`](querysortorder.md)) and [`QueryPagination`](querypagination.md) for the request shape. The response includes a `pagination` object with `totalCount`, `offset`, and `pageSize`. Page through large result sets by incrementing `offset`.
 
 #### Payload Examples
 

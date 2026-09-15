@@ -1,4 +1,4 @@
 Completed scraping PaperKit!
-Total pages scraped: 226
-Pages skipped (unchanged): 127
+Total pages scraped: 352
+Pages skipped (unchanged): 1
 Pages failed: 0

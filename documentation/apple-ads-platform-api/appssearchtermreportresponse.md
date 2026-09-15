@@ -36,7 +36,7 @@ Search term reports require the ORTZ timezone. UTC isn’t supported. Each row l
             "adAccountId": 123456789,
             "deleted": false,
             "text": "travel app",
-            "status": "ACTIVE",
+            "status": "ENABLED",
             "matchType": "BROAD",
             "bid": {
               "amount": "0.85",

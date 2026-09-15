@@ -7,7 +7,6 @@ Accepts the session request and provides an event handler.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

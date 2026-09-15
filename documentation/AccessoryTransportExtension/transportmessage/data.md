@@ -7,7 +7,6 @@ A data object that contains the message content.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

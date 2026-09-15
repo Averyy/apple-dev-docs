@@ -7,7 +7,6 @@ The cipher suite used for key exchange.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

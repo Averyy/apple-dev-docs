@@ -26,8 +26,8 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
-| `countryCode` | string | `EQUALS`, `IN` | Yes | ISO 3166-1 alpha-2 country code (for example, `US`, `GB`, `CA`) |
-| `name` | string | `EQUALS` | Yes | Full country or region name |
+| `countryCode` | string | `EQUALS`, `NOT_EQUALS`, `IN` | Yes | ISO 3166-1 alpha-2 country code (for example, `US`, `GB`, `CA`) |
+| `name` | string | `EQUALS`, `NOT_EQUALS`, `IN`, `STARTS_WITH`, `ENDS_WITH`, `LIKE` | Yes | Full country or region name |
 
 The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 

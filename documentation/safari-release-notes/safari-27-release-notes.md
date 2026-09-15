@@ -1,12 +1,12 @@
-# Safari 27 Beta Release Notes
+# Safari 27 Release Notes
 
 **Framework**: Safari Release Notes
 
-Released July 20, 2026 — 27.0 beta (20625.1.24)
+Released September 14, 2026 — 27.0 (20625.1.29)
 
 #### Overview
 
-Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, macOS 27 beta, macOS 26, and macOS Sequoia.
+Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, and macOS Sequoia.
 
 ##### Accessibility
 
@@ -48,7 +48,6 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed an `<a>` element with a click handler but no `href` not being exposed as a link. (179398579)
 - Fixed VoiceOver not announcing the selected state of the day-of-month button when configuring a monthly notification.  (180294912)
 - Fixed stale `aria-labelledby` when the referenced element dynamically changes its `aria-label`. (180319221)
-- Fixed a text-stitch-group representative’s text marker range being truncated to its first run, affecting VoiceOver navigation. (181299126)
 
 ##### Animations
 
@@ -182,7 +181,6 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed highlight pseudo-elements such as `::selection` and `::highlight` to disallow vendor-prefixed properties, aligning with the CSS Pseudo-Elements specification. (174590593)
 - Fixed cycle detection and nested function call handling in CSS custom functions. (174609179)
 - Fixed `FontFace.loaded` to reject when a `local()` font source fails to load. (174631384)
-- Fixed an emoji reaction overlapping the comment code box on GitHub. (174652842)
 - Fixed an issue where `word-break: break-all` incorrectly allowed CJK close punctuation to appear at the start of a line. (174656971)
 - Fixed an issue where `word-break: keep-all` incorrectly suppressed line break opportunities at CJK punctuation characters. (174658701)
 - Fixed the `FontFace` constructor to reject with a `SyntaxError` instead of a `NetworkError` when a `BufferSource` fails to parse, per the CSS Font Loading specification. (174669738)
@@ -322,6 +320,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed iOS selection behavior so that selection is now possible while focus is inside editable content. (178846185)
 - Fixed deletion in an editable table leaving an empty trailing table row behind. (180877315)
 - Fixed vertical caret movement in editable content ignoring the requested editable-type parameter. (181000174)
+- Fixed the page scrolling on its own while adjusting a text selection inside a fixed-position element, such as a search field pinned to the top of the page. (182770935)
 
 ##### Encoding
 
@@ -347,7 +346,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed an issue where keyboard tabbing position was lost when a focused button became disabled, causing focus to jump to the beginning of the page. (120676409)
 - Fixed an issue where a positive `margin-top` on a `<legend>` element inside a `<fieldset>` did not shift the fieldset down. (141267953)
 - Fixed an issue where small range input slider thumbs were difficult to interact with on iPadOS and visionOS by expanding their touch hit area. (147428926)
-- Fixed `<datalist>` suggestions appearing with with white text on a white background in dark mode after typing. (168676757)
+- Fixed `<datalist>` suggestions appearing with white text on a white background in dark mode after typing. (168676757)
 - Fixed an issue on iOS where typing into an `<input>` element associated with a `<datalist>` was intercepted by type-to-select behavior. (173346270)
 - Fixed: Made the `<input type="checkbox" switch>` control behave more like other controls with regards to native appearance CSS properties. (173487610)
 - Fixed identically sized buttons to render with consistent corner radius. (173786057)
@@ -363,6 +362,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed `<option>` and `<optgroup>` elements to match the `:disabled` pseudo-class when inside a disabled `<select>`. (176559708)
 - Fixed a box with percentage offset (e.g. `top: 100%`) being mispositioned when its containing block is out-of-flow with percentage height. (177181803)
 - Fixed the concentric inner-button corner radius on horizontal text form controls incorrectly ignoring the bottom inset. (180869927)
+- Fixed a number of issues with the default styles for customizable `<select>` with `appearance: base-select`, including spacing, borders, `border-radius`, overflow, cursors, `optgroup` styling, picker dialog shadow, and increased contrast colors. (183345556)
 
 ##### Html
 
@@ -420,6 +420,10 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Deprecated the `href` attribute on all MathML elements except `<a>`. (173996661)
 
 ##### Images
+
+###### New Features
+
+- Added support for applying HDR gain maps to images decoded into accelerated backing stores in the GPU process. (157871315)
 
 ###### Resolved Issues
 
@@ -574,6 +578,8 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed video playback of streams from certain sources such as security cameras not working. (180411019)
 - Fixed transient device rotation resulting in captured video frames having the wrong orientation. (180429147)
 - Fixed Media Source Extensions playback and seek by loosening the gap tolerance between buffered ranges. (180439090)
+- Fixed being unable to enter Picture-in-Picture again after navigating to another video. (182971786)
+- Fixed video showing a black screen while audio continued to play after the video decoder was invalidated. (184041554)
 
 ##### Model Element
 
@@ -624,6 +630,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 
 - Fixed an issue where panning a zoomed-in PDF on iOS would frequently rubber band back to the starting position. (156854435)
 - Fixed broken text underlines in PDFs created by `WKWebView`’s PDF export API. (180631575)
+- Fixed only one PDF HUD responding to mouse clicks on pages with multiple embedded PDFs. (183273642)
 
 ##### Performance
 
@@ -707,7 +714,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed `<legend>` to mask the `<fieldset>`’s border correctly when it has a negative left margin. (174185071)
 - Fixed an issue where `<br>` elements with `line-height: 0` still created extra vertical space, failing to respect the declared line height. (174400946)
 - Fixed auto outlines to more closely follow the border radii of elements. (174466854)
-- Fixed how gradients are renderer to improve performance. (174880197)
+- Fixed how gradients are rendered to improve performance. (174880197)
 - Fixed `image-orientation` being ignored for `background-image`, `border-image`, and `list-style-image`. (174894122)
 - Fixed a `white-space: pre-wrap` layout issue with justified text. (174937310)
 - Fixed an image with `min-height: min-content` inside a column flex container not shrinking to preserve its aspect ratio. (174999995)
@@ -849,6 +856,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed an issue where pages using the Navigation API could have offset hit test locations, making elements unclickable. (171752650)
 - Fixed CSS scroll snap points inside zero-sized elements not working correctly. (172863699)
 - Fixed an issue on iOS where composited layers would briefly flash blank when `window.scrollTo()` was called synchronously with a DOM layout change. (173197381)
+- Fixed occasional flashes of an incorrect scroll position when scroll anchoring adjusts content while scrolling. (173456210)
 - Fixed an issue where sticky-positioned elements could flicker rapidly after scrolling. (173680821)
 - Fixed an issue where scroll anchoring could cause a page to scroll to the top or bottom automatically. (173885027)
 - Fixed an issue where calling `scrollIntoView()` on a scrollable element incorrectly scrolled the element’s own contents. (174173683)
@@ -860,6 +868,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed an issue where interrupting a smooth scroll with a new `scrollTo()` call to a different target fired the `scrollend` event at the wrong position. (179551854)
 - Fixed an issue where re-snapping after a layout change moved away from a valid scroll position when the snap area was larger than the snapport. (179553122)
 - Fixed CSS scroll snap re-snap to prefer a snap area that contains the focused or fragment-targeted element. (180707984)
+- Fixed the scroll position jumping when a page changes `scroll-padding` while scroll anchoring is active. (183145868)
 
 ##### Security
 
@@ -934,6 +943,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 
 ###### New Features
 
+- Added `WKWebView` API to enable or disable sending the Global Privacy Control (GPC) HTTP header for outgoing requests. (80500366)
 - Added support for the service worker static routing API.  (157951894)
 - Added support for async iteration over `ReadableStream` objects using `for await...of` loops. (168049382)
 - Added `srgb-linear` and `display-p3-linear` to `PredefinedColorSpace`. (169340732)
@@ -948,7 +958,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed an issue where the `change` event was not fired on `<input>` and `<textarea>` elements when they lost focus while another application was in the foreground. (98526540)
 - Fixed Web IDL bindings to correctly reject `SharedArrayBuffer` where `[AllowShared]` is not specified. (107786134)
 - Fixed Content Security Policy to only recognize ASCII whitespace excluding vertical tabs to align with the specification. (108559413)
-- Fixed emoji input on Google Docs and similar web applications by supressing keypress events for supplementary characters. (122678873)
+- Fixed emoji input on Google Docs and similar web applications by suppressing keypress events for supplementary characters. (122678873)
 - Fixed an issue where `MouseEvent.offsetX` and `MouseEvent.offsetY` were not relative to the padding edge as specified. (125763807)
 - Fixed an issue on visionOS where the `gamepadconnected` event did not fire unless gamepad permission had already been granted. (141623162)
 - Fixed an issue where `CSPViolationReportBody` did not include the source line number in Content Security Policy violation reports. (152607402)
@@ -1114,6 +1124,7 @@ Safari 27 beta is available for iOS 27 beta, iPadOS 27 beta, visionOS 27 beta, m
 - Fixed adopted constructable stylesheets being misclassified as User Agent stylesheets in cross-origin iframes. (181204768)
 - Fixed an unsigned underflow that caused the DOM agent to spuriously report power-efficient playback. (181205602)
 - Fixed `Network.setExtraHTTPHeaders` to replace previously set headers instead of accumulating them. (181282814)
+- Fixed zero-width joiners and other hidden Unicode characters not being displayed in text nodes. (182968570)
 
 ##### Web Views
 

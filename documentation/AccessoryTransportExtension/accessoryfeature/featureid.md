@@ -8,7 +8,6 @@ A string identifier for the feature.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

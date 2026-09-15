@@ -225,6 +225,8 @@ You can replace images, colors, or values for any of the PBR attributes with ano
   Assign and configure surface materials on 3D model assets in Reality Composer Pro.
 - [Designing materials with Shader Graph](designing-materials-with-shader-graph.md)
   Create realistic materials with Reality Composer Pro’s Shader Graph.
+- [Creating a procedural Shader Graph material](creating-a-procedural-shader-graph-material.md)
+  Learn how to build an organic, pulsing, color-shifting material in the Reality Composer Pro 3 Shader Graph.
 
 
 ---

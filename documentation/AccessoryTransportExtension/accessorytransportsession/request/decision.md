@@ -7,7 +7,6 @@ An opaque type returned from the incoming session handler of an event listener.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

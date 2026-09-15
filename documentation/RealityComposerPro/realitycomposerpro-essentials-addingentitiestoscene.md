@@ -129,6 +129,10 @@ In the Scene Hierarchy, Control-click an entity and then select **Activate**.
 
 - [Linking an Xcode project](realitycomposerpro-essentials-linkingxcodeproject.md)
   Iterate on a scene and run it as an app without leaving the editor.
+- [Migrating older projects to Reality Composer Pro 3](realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
+  Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
+- [Updating migrated assets to Reality Composer Pro 3](realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
+  Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
 - [Configuring the project workspace](realitycomposerpro-essentials-configuringprojectworkspace.md)
   Open a project and arrange the workspace’s tabs and panes to fit your task.
 - [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)

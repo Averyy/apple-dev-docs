@@ -29,7 +29,7 @@ The `metadata` field captures keyword identifiers and configuration at report ti
     "adAccountId": 123456789,
     "campaignId": 444555666,
     "adGroupId": 555666777,
-    "status": "ACTIVE",
+    "status": "ENABLED",
     "deleted": false
   },
   "totalMetrics": {

@@ -7,7 +7,6 @@ Initializes an accessory message using a result builder closure.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

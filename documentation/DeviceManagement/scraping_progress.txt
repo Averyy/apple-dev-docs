@@ -1,4 +1,4 @@
 Completed scraping Device Management!
-Total pages scraped: 229
-Pages skipped (unchanged): 1187
+Total pages scraped: 1415
+Pages skipped (unchanged): 1
 Pages failed: 0

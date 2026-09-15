@@ -34,7 +34,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `modificationTime` | string (ISO 8601) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` | Yes | Timestamp of the last modification to the campaign. |
 | `deleted` | boolean | `EQUALS`, `IN` | Yes | Whether the campaign has been soft-deleted. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md). This endpoint caps `pageSize` at 1000.
 
 #### Payload Examples
 

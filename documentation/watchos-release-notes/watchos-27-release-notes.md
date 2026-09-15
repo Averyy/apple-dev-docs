@@ -1,4 +1,4 @@
-# watchOS 27 RC Release Notes
+# watchOS 27 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 RC. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
 
@@ -55,6 +55,12 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding. (178181782)
 - Fixed: Using `@Generable` on an `enum` fails to compile for watchOS. (178244470)
 - Fixed: Foundation Models framework cannot be imported when building for watchOS in Xcode 27 beta 2. (179949809)
+
+##### Hardware Security
+
+###### New Features
+
+- arm64e.x1 introduces additional hardware security and performance instructions, including CPA2 for stronger MIE protection. Devices with support for arm64e.x1 include iPhone models with A20 Pro or later chips, Mac computers with M6 or later chips, and Apple Watch models with S11 or later chips. You can access arm64e.x1 and CPA2 in Xcode through the enhanced security pane and a build setting. Learn more in the [`Enhanced Security article`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app). (152103975)
 
 ##### Health
 

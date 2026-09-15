@@ -16,9 +16,7 @@ object BrandsReportingKeyword
 
 #### Discussion
 
-The `BrandsReportingKeyword` extends the base `ReportingKeyword` object with `brands`-only internal fields.
-
-The example and `DictionaryKeys` below show only the Brands-specific additional fields (`locationId` and `matchType`). The full field set, including `id`, `text`, `bid`, `status`, and `adGroupId`, is inherited from [`ReportingKeyword`](reportingkeyword.md) and appears alongside these fields in an actual response.
+The `BrandsReportingKeyword` extends the base `ReportingKeyword` object with a `brands`-only `locationId` field and a Maps-specific `matchType` override. All other fields, including `id`, `text`, `bid`, `status`, and `adGroupId`, are inherited unchanged from [`ReportingKeyword`](reportingkeyword.md) and appear alongside these fields in an actual response.
 
 ##### Example
 
@@ -31,22 +29,22 @@ The example and `DictionaryKeys` below show only the Brands-specific additional 
 
 ## Properties
 
-- `adAccountId` (int64)
-- `adGroup` (ReportingAdGroupMin)
-- `adGroupId` (int64)
-- `bid` (Money)
-- `campaignId` (int64)
-- `countryOrRegion` (string)
-- `creationTime` (date-time)
-- `deleted` (boolean)
-- `deviceClass` (string)
-- `displayStatus` (string)
-- `id` (int64)
-- `locationId` (string): Location ID groupBy dimension value.
+- `id` (int64): The keyword identifier.
+- `campaignId` (int64): The identifier of the campaign that owns the keyword.
+- `adAccountId` (int64): The identifier of the ad account that owns the keyword.
+- `deleted` (boolean): `true` if the keyword has been deleted.
+- `text` (string): The keyword text.
+- `status` (string): Possible values: `ENABLED`, `PAUSED`.
 - `matchType` (string): Match type for the keyword in Maps campaigns. Possible values: `PHRASE`, `CATEGORY`.
-- `modificationTime` (date-time)
-- `status` (string)
-- `text` (string)
+- `bid` (Money): See [`Money`](money.md) for details.
+- `adGroupId` (int64): The identifier of the ad group that owns the keyword.
+- `modificationTime` (date-time): The time the keyword was last modified.
+- `creationTime` (date-time): The time the keyword was created.
+- `displayStatus` (string): The computed display status of the keyword.
+- `adGroup` (ReportingAdGroupMin): See [`ReportingAdGroupMin`](reportingadgroupmin.md) for details.
+- `countryOrRegion` (string): Country or region groupBy dimension value.
+- `deviceClass` (string): Device class groupBy dimension value.
+- `locationId` (string): Location ID groupBy dimension value.
 
 ## See Also
 

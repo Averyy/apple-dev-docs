@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-09-04T08:36:29.381995",
+    "last_updated": "2026-09-15T08:05:21.488889",
     "total_files": 843,
     "source": "scrape_mlx_docs.py"
   },
@@ -744,7 +744,7 @@
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/indexing.md": "99b8280b99b7dfed7a0536de8138e2a1adc9cf77dd879ee1631aec652255a1c6",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/initialization.md": "9bf1e311e2694fa215f199561d9fceab56bf2bde2bdc93c237f29d03663109da",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/logical.md": "5edd87c64c6d033bf73f69687efa8ffc029f4db24847804cbafdbbe006d55a02",
-    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/reduction.md": "d9c20f27ca379c30fcaa104efd081eb110d261b36bf61f1a800a7149520ef779",
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/reduction.md": "daff0ec4002dbca95011abdbc17260080d0aa33678a56cd1c96acbe3e81aa798",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/shapes.md": "515fb4d69c99680a71cb49cf671d54e445fec53bc4c7bbf38e20dc4c81d0c4ef",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/sorting.md": "dec008918b534c747a7e7e3eaf1cc5bb31160b51a0f6a53eb5a6b909f7879ac7",
     "github:ml-explore/mlx-swift-lm:README.md": "3831f9e379ffcf84f60c03408af1385ce81d8948693fe336e7d847d37bd31505",

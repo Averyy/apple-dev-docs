@@ -41,7 +41,7 @@ When `allowPartialSuccess` is `true` in the request, inspect `success` on each e
 - `operation` (string): The operation performed on this item: `CREATE`, `UPDATE`, or `DELETE`. Read-only.
 - `success` (boolean): Whether this individual item operation succeeded. Read-only.
 - `error` (Error): Per-item error details when this item failed. Null on success. See [`Error`](error.md). Read-only.
-- `result` (Response.Result)
+- `result` (Response.Result): The response payload. Type depends on the specific response subtype. See [`Response.Result`](response/result-data.dictionary.md). Absent when the request fails.
 
 ## See Also
 

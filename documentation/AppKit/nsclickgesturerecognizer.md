@@ -22,7 +22,7 @@ The gesture recognizer automatically sets the values of the [`delaysPrimaryMouse
 
 ## Topics
 
-### Configuring the Gesture
+### Configuring the gesture
 - [var buttonMask: Int](nsclickgesturerecognizer/buttonmask.md)
   A bit mask of the button (or buttons) required to recognize this click.
 - [var numberOfClicksRequired: Int](nsclickgesturerecognizer/numberofclicksrequired.md)

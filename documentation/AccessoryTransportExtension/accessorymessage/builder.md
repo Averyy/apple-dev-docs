@@ -7,7 +7,6 @@ A builder that constructs accessory messages declaratively.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

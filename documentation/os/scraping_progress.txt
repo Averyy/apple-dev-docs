@@ -1,4 +1,4 @@
 Completed scraping os!
-Total pages scraped: 1
-Pages skipped (unchanged): 242
+Total pages scraped: 242
+Pages skipped (unchanged): 1
 Pages failed: 0

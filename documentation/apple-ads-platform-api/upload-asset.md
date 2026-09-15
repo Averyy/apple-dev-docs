@@ -12,6 +12,8 @@ Upload a binary image file to create a new asset.
 
 This endpoint uploads a raw image file and associates it with a promoted object (Brand). The multipart request body must include the binary image file alongside `promotedObjectId` and `promotedObjectType` fields that identify the brand the asset belongs to.
 
+**This endpoint currently supports Business Brand assets only.** `promotedObjectType` accepts only `BUSINESS_BRAND`, so uploaded assets serve ads on Apple Maps. App Store app assets aren’t supported here: App Store creatives use `CUSTOM_PRODUCT_PAGE` or `DEFAULT_PRODUCT_PAGE`, which reference an app’s existing App Store product page instead of an uploaded image.
+
 After upload, the asset begins processing. Poll using [`Get Asset`](get-asset-by-id.md) until the `eligibility.status` indicates the asset is ready before referencing it in a creative.
 
 The returned asset has `assetType: IMAGE` and a `providerAssetId` that the provider system assigns.
@@ -24,7 +26,7 @@ Multipart form data (`multipart/form-data`) containing the binary image file and
 | --- | --- | --- | --- |
 | `file` | binary | Yes | The image file to upload. Accepted formats: PNG, JPG, HEIC. |
 | `promotedObjectId` | string | Yes | The identifier of the promoted object (for example, the brand ID for a `BUSINESS_BRAND`). |
-| `promotedObjectType` | string | Yes | The type of the promoted object. Only `BUSINESS_BRAND` is supported. |
+| `promotedObjectType` | string | Yes | The type of the promoted object. Only `BUSINESS_BRAND` is supported; App Store apps aren’t supported by this endpoint. |
 
 ##### Post Upload Workflow
 

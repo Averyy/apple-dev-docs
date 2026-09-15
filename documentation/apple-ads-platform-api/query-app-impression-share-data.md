@@ -12,16 +12,22 @@ Retrieve impression share data showing how often your ads appear relative to tot
 
 This endpoint measures impression share: what fraction of available impressions your app captures for a given search term and country. To identify competitive gaps, use this data. A low impression share on a high-volume term indicates that either budget, bid, or eligibility constraints are limiting your reach.
 
-A filter on `promotedObjectId` is required. Omitting it will result in a 400 error. The endpoint returns results synchronously as paginated JSON.
-
 See [`Filter`](filter.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
-| `promotedObjectId` | string | `EQUALS` | Required. The Adam ID of the promoted app. Omitting this filter results in a 400 error. |
-| `countryOrRegion` | string | `EQUALS` | Optional. ISO 3166-1 alpha-2 country or region code to scope results to. |
+| `promotedObjectId` | string | `IN` | Optional. The Adam ID of the promoted app. |
+| `countryOrRegion` | string | `EQUALS`, `IN` | Optional. ISO 3166-1 alpha-2 country or region code to scope results to. |
+| `day` | string (date) | `IN`, `BETWEEN` | Optional. Filter by specific dates. Only usable with `DAILY` granularity. |
+| `week` | string (date) | `IN` | Optional. Filter by week start date. Only usable with `WEEKLY_SUN_SAT` granularity; the endpoint rejects it under `DAILY` granularity. |
+| `appName` | string | `EQUALS`, `IN`, `CONTAINS`, `STARTS_WITH` | Optional. Display name of the promoted app. |
+| `searchTerm` | string | `EQUALS`, `IN`, `CONTAINS`, `STARTS_WITH` | Optional. The search term. |
+| `lowImpressionShare` | number | `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Optional. Lower bound of impression share. |
+| `highImpressionShare` | number | `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Optional. Upper bound of impression share. |
+| `rank` | integer | `EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Optional. App’s impression share rank for the search term and country. |
+| `searchPopularity1to5` | integer | `EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Optional. Relative search volume on a 1-5 scale. |
 
 ##### Output Types
 
@@ -66,10 +72,10 @@ The following limits and defaults apply to this endpoint’s requests and respon
 | Timezone | Fixed to `UTC`. |
 | Granularity | Supports `DAILY` and `WEEKLY_SUN_SAT` only. |
 | `DAILY` max range | 30 days (inclusive). |
-| `WEEKLY_SUN_SAT` max range | 4 weeks (`LAST_4_WEEK`). |
+| `WEEKLY_SUN_SAT` max range | 4 weeks. |
 | Weekly start date | When `granularity` is `WEEKLY_SUN_SAT`, `timeRange.start` must be a Sunday. The endpoint rejects requests with a non-Sunday start date. |
 | Default `pageSize` | 100. |
-| Maximum `pageSize` | 5000. |
+| Maximum `pageSize` | 10000. |
 | Sort fields | Maximum 2 sort fields per request. |
 | High-saturation bucket | `lowImpressionShare: 0.91, highImpressionShare: 1.0` indicates >90% impression share. Marginal bid increases at this level yield diminishing returns. |
 | Privacy filter | The privacy filter suppresses `searchTerm` for terms with fewer than 10 impressions in the aggregation period. |
@@ -99,8 +105,8 @@ POST /v1/insights/apps/impression-share/query
  "filters": [
    {
      "field": "promotedObjectId",
-     "operator": "EQUALS",
-     "value": "123456789"
+     "operator": "IN",
+     "value": ["123456789"]
    },
    {
      "field": "countryOrRegion",
@@ -176,8 +182,8 @@ POST /v1/insights/apps/impression-share/query
  "filters": [
    {
      "field": "promotedObjectId",
-     "operator": "EQUALS",
-     "value": "123456789"
+     "operator": "IN",
+     "value": ["123456789"]
    }
  ],
  "options": {
@@ -243,8 +249,8 @@ POST /v1/insights/apps/impression-share/query
  "filters": [
    {
      "field": "promotedObjectId",
-     "operator": "EQUALS",
-     "value": "123456789"
+     "operator": "IN",
+     "value": ["123456789"]
    },
    {
      "field": "countryOrRegion",

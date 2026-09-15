@@ -18,7 +18,7 @@ object EligibilityQueryRequest
 
 The `EligibilityQueryRequest` object is the request body for the eligibility query endpoint. To filter, paginate, and sort the app eligibility records returned, use it.
 
-The `filters` array accepts `QueryFilter` objects targeting filterable fields on the eligibility resource. Combine multiple filters to narrow results. For example, filter by `adamId` to check eligibility for a specific set of apps.
+The `filters` array accepts `QueryFilter` objects targeting filterable fields on the eligibility resource. Combine multiple filters to narrow results. For example, filter by `adamId` to check eligibility for a specific app.
 
 The `filters` array supports the following fields:
 

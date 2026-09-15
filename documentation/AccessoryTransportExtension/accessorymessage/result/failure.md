@@ -7,7 +7,6 @@ A result indicating message transmission failed.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

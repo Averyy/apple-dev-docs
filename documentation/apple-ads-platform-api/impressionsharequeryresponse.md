@@ -63,7 +63,7 @@ The `pagination` object included in the response reports the following.
 
 ## Properties
 
-- `result` (ImpressionShareResultContainer): See [`ImpressionShareResultContainer`](impressionshareresultcontainer.md).
+- `result` (ImpressionShareResultContainer): See [`ImpressionShareResultContainer`](impressionshareresultcontainer.md). If no rows match the request, `result` is returned as `{ "rows": [] }`, not an empty object.
 - `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md).
 - `error` (Error): See [`Error`](error.md). Present only on failure.
 

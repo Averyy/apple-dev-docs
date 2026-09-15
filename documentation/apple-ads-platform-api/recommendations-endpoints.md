@@ -45,18 +45,19 @@ The following table lists the possible `state` values:
 
 > **Note**: The `DELETE` value of `state` and the `DELETED` value of `status` are similarly named but distinct. Don’t confuse them when filtering or reading a recommendation record.
 
-##### Filter By Recommendation Category
+##### Recommendation Category
 
-The `recommendationType` field uses the [`RecommendationCategory`](recommendationcategory.md) enum. Each optimization area has a merged category and a system category (algorithm-generated, prefixed `S`). Use the merged category when filtering to retrieve all recommendations for that area.
+Every recommendation read object carries a `recommendationType` field using the [`RecommendationCategory`](recommendationcategory.md) enum. Each optimization area has a merged category and a system category (algorithm-generated, prefixed `S`). This field isn’t a filterable field on the query endpoints below; see each endpoint’s Filterable Fields table for what you can query on.
 
 The following table lists each optimization area’s merged and system categories:
 
 | Merged | System (S) | Applies To |
 | --- | --- | --- |
-| `KEYWORD` | `SKEYWORD` | Keyword recommendations |
 | `DAILYCAP` | `SDAILYCAP` | Daily budget recommendations |
 | `TCPA` | `STCPA` | Target CPA recommendations |
 | `BID` | `SBID` | Bid recommendations |
+
+Only `DAILYCAP` and `TCPA` have corresponding query, apply, and dismiss endpoints in this API version. `BID` is defined in the enum but has no dedicated endpoints.
 
 ##### Query Recommendations
 

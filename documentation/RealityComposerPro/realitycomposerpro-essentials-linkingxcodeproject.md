@@ -12,7 +12,7 @@ You can also iterate on your scene (models, composition, shaders, physics, anima
 
 ![An annotated demo screenshot showing the Reality Composer Pro and Xcode integration workflow.](/images/RealityComposerPro/launchbar@2x.png)
 
-> **Note**: Install Xcode 27 before linking Reality Composer Pro and Xcode projects.
+> **Note**: Install Xcode 27 or later before linking Reality Composer Pro 3 and Xcode projects.
 
 #### Link to a New Xcode Project
 
@@ -65,6 +65,10 @@ To link an Xcode project with custom plugins — including custom components, cu
 
 ## See Also
 
+- [Migrating older projects to Reality Composer Pro 3](realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
+  Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
+- [Updating migrated assets to Reality Composer Pro 3](realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
+  Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
 - [Configuring the project workspace](realitycomposerpro-essentials-configuringprojectworkspace.md)
   Open a project and arrange the workspace’s tabs and panes to fit your task.
 - [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)

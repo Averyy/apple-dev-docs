@@ -16,7 +16,7 @@ object BrandsReportingSearchTerm
 
 #### Discussion
 
-The `BrandsReportingSearchTerm` extends the base `ReportingSearchTerm` object with a `brands`-specific `keyword` field. The base object provides the `searchTermText` and `searchTermSource`. The `keyword` field here is a `BrandsReportingKeyword` rather than the standard `ReportingKeyword`, capturing the `brands` keyword context that the search term matched against.
+The `BrandsReportingSearchTerm` extends the base `ReportingSearchTerm` object with a `brands`-only `locationId` field. The base object provides the `searchTermText` and `searchTermSource`, along with `campaignId`, `adAccountId`, `adGroupId`, `adGroup`, `countryOrRegion`, and `deviceClass`, all inherited unchanged from [`ReportingSearchTerm`](reportingsearchterm.md). The `keyword` field here is a `BrandsReportingKeyword` rather than the standard `ReportingKeyword`, capturing the `brands` keyword context that the search term matched against.
 
 Search term reports require the ORTZ timezone. The `brands` search term reports exclude the `supplyPlacement` and `locationId` dimensions from `groupBy`. Only `deviceClass` is available if dimensioned grouping is needed.
 
@@ -34,16 +34,16 @@ Search term reports require the ORTZ timezone. The `brands` search term reports 
 
 ## Properties
 
-- `adAccountId` (int64)
-- `adGroup` (ReportingAdGroupMin)
-- `adGroupId` (int64)
-- `campaignId` (int64)
-- `countryOrRegion` (string)
-- `deviceClass` (string)
+- `campaignId` (int64): The identifier of the campaign that owns the search term.
+- `adAccountId` (int64): The identifier of the ad account that owns the search term.
+- `searchTermText` (string): The actual user-entered query string.
+- `searchTermSource` (string): Indicates whether the search term came from a direct user search or an auto-match source.
 - `keyword` (BrandsReportingKeyword): See [`BrandsReportingKeyword`](brandsreportingkeyword.md) for details.
+- `adGroupId` (int64): The identifier of the ad group that owns the search term.
+- `adGroup` (ReportingAdGroupMin): See [`ReportingAdGroupMin`](reportingadgroupmin.md) for details.
+- `countryOrRegion` (string): Country or region groupBy dimension value.
+- `deviceClass` (string): Device class groupBy dimension value.
 - `locationId` (string): Location ID groupBy dimension value.
-- `searchTermSource` (string)
-- `searchTermText` (string)
 
 ## See Also
 

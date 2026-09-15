@@ -7,7 +7,6 @@ Unsupported value, operation, etc.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -7,7 +7,6 @@ Errors that can occur with an accessory transport session.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

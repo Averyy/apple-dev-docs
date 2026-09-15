@@ -42,16 +42,15 @@ To fetch a single brand’s full details, use [`Get Brand by ID`](get-brand-by-i
 
 #### Upload Creative Assets
 
-Ads on Apple Maps can use image assets. Use [`Upload Asset`](upload-asset.md) to upload an image file. The response returns an `assetId` you can use in the ad creative, as shown here:
+Ads on Apple Maps can use image assets. Use [`Upload Asset`](upload-asset.md) to upload an image file. This endpoint takes `multipart/form-data`, not a JSON body: send the binary file alongside `promotedObjectId` and `promotedObjectType` as form fields. The response returns an `id` you reference as `assetId` in the ad creative, as shown here:
 
-```json
-POST /v1/assets/upload
-
-{
-  "file": "hero.png",
-  "promotedObjectId": "9876543",
-  "promotedObjectType": "BUSINESS_BRAND"
-}
+```console
+curl -X POST https://api.ads.apple.com/v1/assets/upload \
+  -H "Authorization: Bearer {access_token}" \
+  -H "X-AP-Context: adAccountId={adAccountId}" \
+  -F "file=@hero.png;type=image/png" \
+  -F "promotedObjectId=9876543" \
+  -F "promotedObjectType=BUSINESS_BRAND"
 ```
 
 After upload is complete, use [`Query Assets`](query-assets.md) to list and filter your asset library by status, type, or brand, and use [`Get Asset`](get-asset-by-id.md) to inspect a specific asset’s processing state. Assets must reach `ELIGIBLE` (`eligibility.status`) before you can use them in a creative.
@@ -158,7 +157,7 @@ POST /v1/campaigns
 
 #### Create an Ad Group with Location Targeting
 
-Create an ad group under your Apple Maps campaign with [`Create an Ad Group`](post-adgroups.md). Apple Maps ad groups support admin area, locality, postal code, location group, radius, and daypart targeting. You can add keyword phrases and keyword categories for the Search results placement, as shown below, though keyword bids don’t apply to ad groups that use location groups.
+Create an ad group under your Apple Maps campaign with [`Create an Ad Group`](post-adgroups.md). Apple Maps ad groups support admin area, locality, postal code, location group, radius, and daypart targeting. You can also add keyword phrases and keyword categories for the Search results placement with [`Create a Keyword`](post-keywords.md), though keyword bids don’t apply to ad groups that use location groups.
 
 For a full description of targeting dimensions, see [`Ad Groups Endpoints`](adgroups-endpoints.md). Reference the location group IDs from the previous step in the `targeting.locationGroup` field to restrict delivery to your chosen locations. This ad group’s `bidStrategy` matches the `MAX_ENGAGEMENTS` / `TAP` pairing you set on the campaign.
 
@@ -246,7 +245,7 @@ POST /v1/reports/business-brands/campaigns/query
 }
 ```
 
-Apple Maps campaigns don’t have a dedicated location-level report endpoint. Instead, you can group or filter any of the five `business-brands` report endpoints (`campaigns`, `adgroups`, `ads`, `keywords`, `searchterms`) by `locationId` to see performance broken down by individual map location. For deeper funnel analysis, use [`Ad Groups Report (Brands)`](get-brand-ad-group-reports.md), [`Ads Report (Brands)`](get-brand-ad-reports.md), [`Keywords Report (Brands)`](get-brand-keyword-reports.md), and [`Search Terms Report (Brands)`](get-brand-search-term-reports.md).
+Apple Maps campaigns don’t have a dedicated location-level report endpoint. Instead, you can group the campaign, ad group, and ad report endpoints by `locationId` to see performance broken down by individual map location; the keyword and search term report endpoints don’t support the `locationId` dimension. For deeper funnel analysis, use [`Ad Groups Report (Brands)`](get-brand-ad-group-reports.md), [`Ads Report (Brands)`](get-brand-ad-reports.md), [`Keywords Report (Brands)`](get-brand-keyword-reports.md), and [`Search Terms Report (Brands)`](get-brand-search-term-reports.md).
 
 #### Optimize Campaigns
 

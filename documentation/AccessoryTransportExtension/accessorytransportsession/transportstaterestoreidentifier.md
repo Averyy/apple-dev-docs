@@ -7,7 +7,6 @@ An optional identifier for restoring transport state across sessions.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

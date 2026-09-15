@@ -7,7 +7,6 @@ An enumeration of data events that the transport extension receives.
 
 **Availability**:
 - iOS 26.4+
-- Mac Catalyst ?+
 
 ## Declaration
 

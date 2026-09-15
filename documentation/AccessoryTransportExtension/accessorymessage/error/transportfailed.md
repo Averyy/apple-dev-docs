@@ -7,7 +7,6 @@ An error indicating the transport failed but may recover.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

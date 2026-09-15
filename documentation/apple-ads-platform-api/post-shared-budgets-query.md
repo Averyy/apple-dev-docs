@@ -18,9 +18,19 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
-| `deleted` | boolean | `EQUALS` | Yes | Whether the budget order has been soft-deleted. |
+| `deleted` | boolean | `EQUALS`, `IN` |  | Whether the budget order has been soft-deleted. |
+| `id` | integer | `EQUALS`, `IN` |  | System-assigned unique identifier for the budget order. |
+| `name` | string | `EQUALS`, `IN`, `LIKE`, `STARTS_WITH`, `ENDS_WITH` | Yes | The budget order’s display name. |
+| `orgId` | integer | `EQUALS` |  | The organization that owns the budget order. |
+| `adAccountIds` | array of integers | `EQUALS`, `IN` |  | The ad accounts the budget order is assigned to. |
+| `systemStatus` | string (enum) | `EQUALS`, `IN` |  | The budget order’s current status. See [`BudgetSystemStatus`](budgetsystemstatus.md). |
+| `systemStatusReasons` | array of strings (enum) | `CONTAINS_ANY`, `CONTAINS_ALL`, `NOT_CONTAINS_ANY`, `NOT_CONTAINS_ALL`, `IS_NULL`, `IS_NOT_NULL` |  | Reasons contributing to the current `systemStatus`. See [`BudgetSystemStatusReason`](budgetsystemstatusreason.md). |
+| `startTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | The budget order’s scheduled start date and time. |
+| `endTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | The budget order’s scheduled end date and time. |
+| `creationTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | Timestamp when the budget order was created. |
+| `modificationTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | Timestamp of the last modification to the budget order. |
 
-Only `deleted` is confirmed filterable by example; the Discussion above also describes filtering by name, status, or date range, but no operators are documented for those fields. The `name` field is confirmed sortable by example. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The `value` and `invoiceDetail` fields aren’t filterable. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 
 #### Payload Examples
 
@@ -59,6 +69,7 @@ Query all active budget orders for an ad account, sorted by name.
    {
      "id": 777890001,
      "name": "AwayFinder - Q3 2025 Budget",
+     "orgId": 555666777,
      "startTime": "2025-07-01T00:00:00.000",
      "endTime": "2025-09-30T23:59:59.000",
      "value": {
@@ -82,6 +93,7 @@ Query all active budget orders for an ad account, sorted by name.
    {
      "id": 777890002,
      "name": "AwayFinder - Q4 2025 Budget",
+     "orgId": 555666777,
      "startTime": "2025-10-01T00:00:00.000",
      "endTime": "2025-12-31T23:59:59.000",
      "value": {

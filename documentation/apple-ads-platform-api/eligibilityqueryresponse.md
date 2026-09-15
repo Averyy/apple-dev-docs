@@ -33,9 +33,6 @@ To iterate through large result sets, use the `totalCount` and `offset` fields o
       "state": "ELIGIBLE",
       "countryOrRegion": "US",
       "deviceClass": "IPHONE",
-      "reasons": [
-        "APP_LANGUAGE_INCOMPATIBLE"
-      ],
       "creationTime": "2026-02-05T08:30:00.000",
       "modificationTime": "2026-03-05T08:30:00.000"
     },
@@ -47,10 +44,6 @@ To iterate through large result sets, use the `totalCount` and `offset` fields o
       "state": "INELIGIBLE",
       "countryOrRegion": "BR",
       "deviceClass": "IPHONE",
-      "reasons": [
-        "APP_NOT_ELIGIBLE_SUPPLY",
-        "APP_NOT_ELIGIBLE_IN_STOREFRONT"
-      ],
       "creationTime": "2026-02-05T08:30:00.000",
       "modificationTime": "2026-03-05T08:30:00.000"
     }

@@ -54,6 +54,10 @@ Drag any tab onto a layout dock to dock it to a new location in a workspace.
 
 - [Linking an Xcode project](realitycomposerpro-essentials-linkingxcodeproject.md)
   Iterate on a scene and run it as an app without leaving the editor.
+- [Migrating older projects to Reality Composer Pro 3](realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
+  Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
+- [Updating migrated assets to Reality Composer Pro 3](realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
+  Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
 - [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)
   Explore the panes and toolbars that make up the Reality Composer Pro editing environment.
 - [Adding entities and assets to a scene](realitycomposerpro-essentials-addingentitiestoscene.md)

@@ -7,7 +7,6 @@ Cancels the session.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -94,7 +94,7 @@ POST /v1/rejection-reasons/apps/query
 - [App Eligibility Endpoints](app-eligibility-endpoints.md)
   Check whether apps qualify to run ads and look up rejection reasons for creatives.
 - [Check App Eligibility](find-apps-eligibilities.md)
-  Check whether apps are eligible to run on certain Apple Ads placements and in specific countries or regions.
+  Check whether an app is eligible to run on certain Apple Ads placements and in specific countries or regions.
 - [Get Rejection Reasons](gets-rejection-reasons-by-id.md)
   Retrieve the details of an ad creative rejection reason by ID.
 

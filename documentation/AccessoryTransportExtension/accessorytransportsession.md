@@ -7,7 +7,6 @@ A class that manages a transport session between the extension and the system.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -29,7 +29,7 @@ The `bid` field is the keyword-level bid amount in the account currency, and `ad
   "adAccountId": 987654321,
   "deleted": false,
   "text": "awayfinder travel app",
-  "status": "ACTIVE",
+  "status": "ENABLED",
   "matchType": "BROAD",
   "bid": {
     "currency": "USD",
@@ -55,7 +55,7 @@ The `bid` field is the keyword-level bid amount in the account currency, and `ad
 - `adAccountId` (int64): The identifier of the ad account that owns the keyword.
 - `deleted` (boolean): `true` if the keyword has been deleted.
 - `text` (string): The keyword text.
-- `status` (string): Possible values: `ACTIVE`, `PAUSED`, `DELETED`.
+- `status` (string): Possible values: `ENABLED`, `PAUSED`.
 - `matchType` (string): Possible values: `BROAD`, `EXACT`.
 - `bid` (Money): See [`Money`](money.md) for details.
 - `adGroupId` (int64): The identifier of the ad group that owns the keyword.

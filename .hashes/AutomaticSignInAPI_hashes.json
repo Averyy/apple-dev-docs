@@ -1,88 +1,88 @@
 {
   "metadata": {
-    "last_updated": "2026-09-11T07:40:26.641104",
+    "last_updated": "2026-09-15T07:29:30.786715",
     "total_pages": 10,
-    "session_id": "2026-09-11T07:40:25.641412"
+    "session_id": "2026-09-15T07:29:30.011506"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AutomaticSignInAPI.json": {
-      "hash": "5886288b6d8c1136b2ea145d22831bdc8f4dfa2c387ea2979a41c1e940697314",
-      "last_checked": "2026-09-11T07:40:25.918859",
+      "hash": "26b22ef4b8adf8d9b6c0c23f4ef0f4c07361dd461b0f0f30c64e699cb63edebb",
+      "last_checked": "2026-09-15T07:29:30.315688",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:40:25.641412",
-      "etag": "\"3868-658583b774f74-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"38c8-659025c09a261-df\"",
       "file_path": "documentation/AutomaticSignInAPI/AutomaticSignInAPI.md"
     },
     "https://developer.apple.com/documentation/AutomaticSignInAPI": {
-      "hash": "5886288b6d8c1136b2ea145d22831bdc8f4dfa2c387ea2979a41c1e940697314",
-      "last_checked": "2026-09-11T07:40:25.800336",
+      "hash": "26b22ef4b8adf8d9b6c0c23f4ef0f4c07361dd461b0f0f30c64e699cb63edebb",
+      "last_checked": "2026-09-15T07:29:30.206463",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:40:25.641412",
-      "etag": "\"3868-658583b774f74-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"38c8-659025c09a261-df\"",
       "file_path": "documentation/AutomaticSignInAPI/AutomaticSignInAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/automaticsigninapi/update-this-token-for-all-associated-users.json": {
-      "hash": "a862f2a2fcdc735cf5c75fb40c26079c4fd6a48fcf04c11eeba53e516886b44d",
-      "last_checked": "2026-09-11T07:40:26.150252",
+      "hash": "28d8d1e7413de0688cdb4c12e57373274eadc0748466364cc3466fe0283e27e0",
+      "last_checked": "2026-09-15T07:29:30.578914",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:40:25.641412",
-      "etag": "\"247e-658583b77fc85-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"24de-659025c0a3c6a-df\"",
       "file_path": "documentation/AutomaticSignInAPI/update-this-token-for-all-associated-users.md"
     },
     "https://developer.apple.com/documentation/automaticsigninapi/update-this-token-for-all-associated-users": {
-      "hash": "a862f2a2fcdc735cf5c75fb40c26079c4fd6a48fcf04c11eeba53e516886b44d",
-      "last_checked": "2026-08-14T07:27:09.907783",
+      "hash": "28d8d1e7413de0688cdb4c12e57373274eadc0748466364cc3466fe0283e27e0",
+      "last_checked": "2026-09-15T07:29:30.578953",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:09.317052",
-      "etag": "\"247e-658583b77fc85-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"24de-659025c0a3c6a-df\"",
       "file_path": "documentation/AutomaticSignInAPI/update-this-token-for-all-associated-users.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/automaticsigninapi/updateautosignintokenrequest.json": {
-      "hash": "c01a9377fe767edc697377a1b027a47ed5777f88fac12185c9cd223c20f7d505",
-      "last_checked": "2026-09-11T07:40:26.258378",
+      "hash": "b908aa3a836bb5ebcd0c052262ad53c01a34c90ba1d4ca2b5ecc6856c889e244",
+      "last_checked": "2026-09-15T07:29:30.638860",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:40:25.641412",
-      "etag": "\"164e-658583b77fc85-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"16ae-659025c0a3c6a-df\"",
       "file_path": "documentation/AutomaticSignInAPI/updateautosignintokenrequest.md"
     },
     "https://developer.apple.com/documentation/automaticsigninapi/updateautosignintokenrequest": {
-      "hash": "c01a9377fe767edc697377a1b027a47ed5777f88fac12185c9cd223c20f7d505",
-      "last_checked": "2026-08-14T07:27:10.017385",
+      "hash": "b908aa3a836bb5ebcd0c052262ad53c01a34c90ba1d4ca2b5ecc6856c889e244",
+      "last_checked": "2026-09-15T07:29:30.638906",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:09.317052",
-      "etag": "\"164e-658583b77fc85-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"16ae-659025c0a3c6a-df\"",
       "file_path": "documentation/AutomaticSignInAPI/updateautosignintokenrequest.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/automaticsigninapi/delete-this-token-for-all-associated-users.json": {
-      "hash": "5dbe2f9fe1e6d35f5b9b84b11d6cb5e288fe8e508843acef7e979da7cfa753a4",
-      "last_checked": "2026-09-11T07:40:26.444232",
+      "hash": "d12764f58a54c64c95ec4e2b1337c193748310aa6814050243cbecca394427c9",
+      "last_checked": "2026-09-15T07:29:30.681739",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:40:25.641412",
-      "etag": "\"2191-658583b774f74-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"21f1-659025c09a261-df\"",
       "file_path": "documentation/AutomaticSignInAPI/delete-this-token-for-all-associated-users.md"
     },
     "https://developer.apple.com/documentation/automaticsigninapi/delete-this-token-for-all-associated-users": {
-      "hash": "5dbe2f9fe1e6d35f5b9b84b11d6cb5e288fe8e508843acef7e979da7cfa753a4",
-      "last_checked": "2026-08-14T07:27:10.052851",
+      "hash": "d12764f58a54c64c95ec4e2b1337c193748310aa6814050243cbecca394427c9",
+      "last_checked": "2026-09-15T07:29:30.681819",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:09.317052",
-      "etag": "\"2191-658583b774f74-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"21f1-659025c09a261-df\"",
       "file_path": "documentation/AutomaticSignInAPI/delete-this-token-for-all-associated-users.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/automaticsigninapi/deleteautosignintokenrequest.json": {
-      "hash": "f8540187e7e4950d90394b2fdadd8feea96f152d0d5ff039257bf70c7ca4cdb5",
-      "last_checked": "2026-09-11T07:40:26.602101",
+      "hash": "bdf5edf4f693482381c83e157174d535160f997560a217898fbe0d5980ab94c0",
+      "last_checked": "2026-09-15T07:29:30.785818",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:40:25.641412",
-      "etag": "\"1488-658583b77fc85-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"14e8-659025c0a3c6a-df\"",
       "file_path": "documentation/AutomaticSignInAPI/deleteautosignintokenrequest.md"
     },
     "https://developer.apple.com/documentation/automaticsigninapi/deleteautosignintokenrequest": {
-      "hash": "f8540187e7e4950d90394b2fdadd8feea96f152d0d5ff039257bf70c7ca4cdb5",
-      "last_checked": "2026-08-14T07:27:10.173620",
+      "hash": "bdf5edf4f693482381c83e157174d535160f997560a217898fbe0d5980ab94c0",
+      "last_checked": "2026-09-15T07:29:30.785865",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:27:09.317052",
-      "etag": "\"1488-658583b77fc85-df\"",
+      "session_id": "2026-09-15T07:29:30.011506",
+      "etag": "\"14e8-659025c0a3c6a-df\"",
       "file_path": "documentation/AutomaticSignInAPI/deleteautosignintokenrequest.md"
     }
   }

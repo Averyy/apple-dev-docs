@@ -12,6 +12,8 @@ Reality Composer Pro 3 makes it easy to rapidly iterate, preview, and prepare 3D
 
 Reality Composer Pro includes editors and workflows for designing materials with Shader Graph, building visual scripts with Script Graph, authoring GPU-driven simulations with Compute Graph, defining character behaviors with Animation Graphs, and editing skeletons.
 
+> **Note**: Download the latest version of Reality Composer Pro from the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=Reality%20Composer%20Pro).
+
 ##### System Requirements
 
 - macOS Tahoe 26.5 or later
@@ -51,6 +53,10 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 ### Essentials
 - [Linking an Xcode project](realitycomposerpro-essentials-linkingxcodeproject.md)
   Iterate on a scene and run it as an app without leaving the editor.
+- [Migrating older projects to Reality Composer Pro 3](realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
+  Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
+- [Updating migrated assets to Reality Composer Pro 3](realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
+  Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
 - [Configuring the project workspace](realitycomposerpro-essentials-configuringprojectworkspace.md)
   Open a project and arrange the workspace’s tabs and panes to fit your task.
 - [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)
@@ -70,17 +76,23 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
   Assign and configure surface materials on 3D model assets in Reality Composer Pro.
 - [Designing materials with Shader Graph](designing-materials-with-shader-graph.md)
   Create realistic materials with Reality Composer Pro’s Shader Graph.
+- [Creating a procedural Shader Graph material](creating-a-procedural-shader-graph-material.md)
+  Learn how to build an organic, pulsing, color-shifting material in the Reality Composer Pro 3 Shader Graph.
 ### Particle Emitter
 - [Creating particle systems in Reality Composer Pro](creating-particle-systems-in-reality-composer-pro.md)
   Add Particle Emitters and Particles to scenes to create nearly any type of visual effect.
 ### Script Graph
 - [Getting started with Script Graphs](getting-started-with-script-graphs.md)
   Build interactive, code-free 3D experiences using a visual, node-based editor in Reality Composer Pro.
+- [Building custom interactive behavior with Script Graph](building-custom-interactive-behavior-with-script-graph.md)
+  Build event-driven behavior with Script Graph with nodes, events, and components.
+- [Registering a Reality Composer Pro custom component](registering-a-reality-composer-pro-custom-component.md)
+  Expose a custom component to the Reality Composer Pro editor and RealityKit Scripting.
 ### Compute Graph
 - [Introducing Compute Graph](introducing-compute-graph.md)
   Use Reality Composer Pro Compute Graph to build custom particle simulations with a node-based graph.
 - [Building a working Compute Graph example](building-a-working-compute-graph-example.md)
-  Combine emission, initialization, simulation, and output nodes into a falling-snow effect colored from a gradient texture.
+  Combine emission, initialization, simulation, and output nodes into a swirling ring of particles colored from a gradient texture.
 ### Animation
 - [Creating animation sequences](creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
@@ -111,14 +123,6 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
   Balance audio quality against CPU, memory, and power cost when configuring playback.
 ### Release notes
 - [Reality Composer Pro Release Notes](reality-composer-pro-release-notes.md)
-  Review known issues and changes in Reality Composer Pro 3.
-- [Reality Composer Pro Beta 2 Release Notes](reality-composer-pro-beta-2-release-notes.md)
-  Review known issues and changes in Reality Composer Pro 3.
-- [Reality Composer Pro Beta 3 Release Notes](reality-composer-pro-beta-3-release-notes.md)
-  Review known issues and changes in Reality Composer Pro 3.
-- [Reality Composer Pro Beta 4 Release Notes](reality-composer-pro-beta-4-release-notes.md)
-  Review known issues and changes in Reality Composer Pro 3.
-- [Reality Composer Pro Beta 5 Release Notes](reality-composer-pro-beta-5-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 
 

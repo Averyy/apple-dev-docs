@@ -114,7 +114,7 @@ The `metadata` field captures the search term text and its associated keyword an
       "adAccountId": 987654321,
       "deleted": false,
       "text": "awayfinder travel app",
-      "status": "ACTIVE",
+      "status": "ENABLED",
       "matchType": "BROAD",
       "bid": {
         "currency": "USD",

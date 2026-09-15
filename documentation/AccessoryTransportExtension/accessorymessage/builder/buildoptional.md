@@ -7,7 +7,6 @@ Builds an accessory message from an optional component.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

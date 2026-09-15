@@ -7,7 +7,6 @@ An optional Bluetooth identifier that the system uses to derive HPKE keys.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

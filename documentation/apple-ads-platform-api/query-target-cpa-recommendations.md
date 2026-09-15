@@ -27,9 +27,30 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
-| `promotedObjectId` | string | `EQUALS` | Required. The ID of the promoted object. For `APPSTORE_APP`, this is the app Adam ID. For `BUSINESS_BRAND`, this is the brand ID. |
-| `promotedObjectType` | string (enum) | `EQUALS` | Required. The type of promoted object. |
-| `state` | string (enum) | `EQUALS` | Optional. Filter by recommendation state: `AVAILABLE`, `APPLIED`, `DISMISSED`, or `DELETE`. |
+| `promotedObjectId` | string | `EQUALS` | Required. The ID of the promoted object. For `APPSTORE_APP`, this is the app Adam ID. For `BUSINESS_BRAND`, this is the brand ID. Accepts exactly one value. |
+| `promotedObjectType` | string (enum) | `EQUALS` | Required. The type of promoted object. Accepts exactly one value. |
+| `id` | string | `EQUALS`, `IN` | Optional. The recommendation’s unique identifier. |
+| `state` | string (enum) | `EQUALS`, `IN` | Optional. `AVAILABLE`, `APPLIED`, `DISMISSED`, or `DELETE`. |
+| `status` | string (enum) | `EQUALS`, `IN` | Optional. `ENABLED`, `DISABLED`, or `DELETED`. |
+| `recommendationType` | string (enum) | `EQUALS`, `IN` | Optional. The recommendation category, for example `TCPA` or `STCPA`. See [`RecommendationCategory`](recommendationcategory.md). |
+| `campaignId` | integer | `EQUALS`, `IN` | Optional. Filter by a specific campaign. |
+| `campaignName` | string | `EQUALS`, `CONTAINS_ANY`, `STARTS_WITH` | Optional. The campaign’s display name. |
+| `bidStrategy` | object | `EQUALS`, `IN` | Optional. The campaign’s current bid strategy. |
+| `creationTime` | string (date-time) | `EQUALS`, `GREATER_THAN`, `LESS_THAN` | Optional. When the recommendation was created. |
+| `modificationTime` | string (date-time) | `EQUALS`, `GREATER_THAN`, `LESS_THAN` | Optional. When the recommendation was last modified. |
+| `expirationTime` | string (date-time) | `EQUALS`, `GREATER_THAN`, `LESS_THAN` | Optional. When the recommendation expires. |
+| `averageCPT` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical average cost-per-tap. |
+| `averageCPA` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical average cost-per-acquisition. |
+| `expectedTaps` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected tap count if the recommendation is applied. |
+| `expectedCPA` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected cost-per-acquisition if the recommendation is applied. |
+| `expectedInstalls` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected install count if the recommendation is applied. |
+| `expectedSpend` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected spend if the recommendation is applied. |
+| `impression` | integer | `EQUALS`, `IN`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical impression count. |
+| `installs` | integer | `EQUALS`, `IN`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical install count. |
+| `spend` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical spend. |
+| `recommendedTargetCPA` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. The suggested new target CPA. |
+| `taps` | integer | `EQUALS`, `IN`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical tap count. |
+| `ttr` | number | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical tap-through rate. |
 
 #### Payload Examples
 
@@ -94,6 +115,10 @@ POST /v1/recommendations/target-cpas/query
      "recommendedTargetCPA": {
        "amount": "5.00",
        "currency": "USD"
+     },
+     "bidStrategy": {
+       "bidStrategyType": "MAX_CONVERSIONS",
+       "bidStrategyGoal": "INSTALL"
      },
      "averageCPT": {
        "amount": "0.50",

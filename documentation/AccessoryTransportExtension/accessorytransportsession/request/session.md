@@ -7,7 +7,6 @@ The session to which the request belongs.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

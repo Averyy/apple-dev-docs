@@ -12,6 +12,8 @@ Query phrase suggestions using either a discovery or search route based on the q
 
 Each result is a [`PhraseSuggestion`](phrasesuggestion.md) object. Sort by `popularity DESC` and use `pagination` to page through results.
 
+Use `SUGGESTION` to discover new candidate phrases for an app or brand. It requires `promotedObjectId` and `promotedObjectType`, and works well when building a phrase list from scratch. Use `SEARCH` to look up or match specific phrases you already have in mind, using `phrase` with `IN` for an exact popularity lookup or `LIKE` for a partial match. The `SEARCH` route doesn’t require `promotedObjectId`.
+
 See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
@@ -25,7 +27,7 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 
 #### Payload Examples
 
-This example discovers relevant search phrases for an app using the SUGGESTION route. The response is a list of phrases with their relative popularity scores, useful for expanding keyword targeting. The same route also works for Apple Maps brands, using `BUSINESS_BRAND` as the `promotedObjectType`.
+These examples discover relevant search phrases for an app or brand using the SUGGESTION route, and look up or search specific phrases using the SEARCH route.
 
 **Discover Phrases for an App**:
 
@@ -143,6 +145,109 @@ POST /v1/suggestions/phrases/query
    "offset": 0,
    "pageSize": 20,
    "totalCount": 3
+ }
+}
+```
+
+**Search by Phrase**:
+
+This example uses `IN` to fetch popularity for specific known phrases, using the SEARCH route.
+
+##### Request
+
+```json
+POST /v1/suggestions/phrases/query
+
+{
+ "filters": [
+   {
+     "field": "queryType",
+     "operator": "EQUALS",
+     "value": [
+       "SEARCH"
+     ]
+   },
+   {
+     "field": "phrase",
+     "operator": "IN",
+     "value": [
+       "best productivity apps",
+       "task management tools"
+     ]
+   }
+ ]
+}
+```
+
+##### Response
+
+```json
+{
+ "result": [
+   {
+     "phrase": "best productivity apps",
+     "popularity": 82
+   },
+   {
+     "phrase": "task management tools",
+     "popularity": 75
+   }
+ ],
+ "pagination": {
+   "offset": 0,
+   "pageSize": 20,
+   "totalCount": 2
+ }
+}
+```
+
+**Search by Partial Match**:
+
+This example uses `LIKE` to perform a partial string match search across all available phrases, rather than looking up specific phrases with `IN`.
+
+##### Request
+
+```json
+POST /v1/suggestions/phrases/query
+
+{
+ "filters": [
+   {
+     "field": "queryType",
+     "operator": "EQUALS",
+     "value": [
+       "SEARCH"
+     ]
+   },
+   {
+     "field": "phrase",
+     "operator": "LIKE",
+     "value": [
+       "productivity"
+     ]
+   }
+ ]
+}
+```
+
+##### Response
+
+```json
+{
+ "result": [
+   {
+     "phrase": "best productivity apps",
+     "popularity": 82
+   },
+   {
+     "phrase": "productivity tools for teams",
+     "popularity": 58
+   }
+ ],
+ "pagination": {
+   "offset": 0,
+   "pageSize": 20,
+   "totalCount": 2
  }
 }
 ```

@@ -42,7 +42,7 @@ An empty array for a given country or region means no limiting reasons are curre
 ## Properties
 
 - `result` (LegacyAppLimitedStatusReasonDetails): The response payload object. Read-only.
-- `error` (Error)
+- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](error.md).
 
 ## See Also
 

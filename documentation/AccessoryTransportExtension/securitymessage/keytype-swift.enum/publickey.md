@@ -7,7 +7,6 @@ A public key, sent from the accessory to the host.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

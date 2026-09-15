@@ -8,7 +8,6 @@ Handles a new session request for the accessory.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

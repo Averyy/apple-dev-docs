@@ -7,7 +7,6 @@ A version of the cipher suite protocol.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

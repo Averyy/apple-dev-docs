@@ -7,7 +7,6 @@ A structure that represents an incoming security session request.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

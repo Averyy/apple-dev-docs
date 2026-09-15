@@ -34,7 +34,7 @@ Search term reports exclusively require the ORTZ timezone. UTC isn’t supported
     "adAccountId": 987654321,
     "deleted": false,
     "text": "awayfinder travel app",
-    "status": "ACTIVE",
+    "status": "ENABLED",
     "matchType": "BROAD",
     "bid": {
       "currency": "USD",

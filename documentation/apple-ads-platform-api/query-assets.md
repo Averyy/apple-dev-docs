@@ -20,13 +20,18 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
-| `id` | string (UUID) | `EQUALS`, `IN` |  | Internal asset identifier. |
-| `name` | string | `EQUALS`, `IN`, `LIKE`, `LIKE_IGNORE_CASE`, `STARTS_WITH`, `ENDS_WITH` |  | User-facing asset name or description. |
-| `assetType` | string (enum) | `EQUALS`, `IN` |  | The media type of the asset. See [`AssetType`](assettype.md). |
-| `providerAssetId` | string | `EQUALS`, `IN` |  | Asset identifier assigned by the provider system. |
-| `promotedObjectId` | string | `EQUALS` |  | Identifier of the promoted object. Scope to a specific brand or app. |
-| `promotedObjectType` | string (enum) | `EQUALS` |  | The type of the promoted object: `BUSINESS_BRAND` or `APPSTORE_APP`. |
-| `deleted` | boolean | `EQUALS` |  | Whether the asset has been deleted. Excluded by default unless explicitly filtered. |
+| `id` | string (UUID) | `EQUALS`, `NOT_EQUALS`, `IN`, `LIKE`, `STARTS_WITH` | Yes | Internal asset identifier. |
+| `name` | string | `EQUALS`, `NOT_EQUALS`, `IN`, `LIKE`, `STARTS_WITH`, `ENDS_WITH` | Yes | User-facing asset name or description. |
+| `assetType` | string (enum) | `EQUALS`, `NOT_EQUALS`, `IN` | Yes | The media type of the asset. See [`AssetType`](assettype.md). |
+| `providerAssetId` | string | `EQUALS`, `NOT_EQUALS`, `IN` | No | Asset identifier assigned by the provider system. |
+| `promotedObjectId` | string | `EQUALS`, `NOT_EQUALS`, `IN` | No | Identifier of the promoted object. Scope to a specific brand or app. |
+| `promotedObjectType` | string (enum) | `EQUALS`, `NOT_EQUALS`, `IN` | No | The type of the promoted object: `BUSINESS_BRAND` or `APPSTORE_APP`. |
+| `deleted` | boolean | `EQUALS`, `NOT_EQUALS`, `IN` | No | Whether the asset has been deleted. Excluded by default unless explicitly filtered. |
+| `parentAssetId` | string (UUID) | `EQUALS`, `IS_NULL`, `IS_NOT_NULL` | No | Identifier of the parent asset for a variant crop. `null` for original assets. |
+| `creationTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Yes | Timestamp when the asset was created. |
+| `modificationTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Yes | Timestamp of the last modification to the asset. |
+
+`providerAssetMetadata`, `assetDetails`, `eligibility`, and `eligibility.status` aren’t filterable.
 
 The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 

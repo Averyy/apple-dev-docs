@@ -7,7 +7,6 @@ Underlying failure with an unknown cause.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

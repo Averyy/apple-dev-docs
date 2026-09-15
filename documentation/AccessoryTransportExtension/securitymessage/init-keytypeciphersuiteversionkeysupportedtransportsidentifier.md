@@ -7,7 +7,6 @@ Initializes a security message with key material and metadata.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

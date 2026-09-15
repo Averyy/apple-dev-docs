@@ -7,7 +7,6 @@ A string that describes the error.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -7,7 +7,6 @@ A string that describes the security session.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

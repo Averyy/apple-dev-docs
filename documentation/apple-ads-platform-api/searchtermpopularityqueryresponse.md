@@ -56,8 +56,7 @@ See [`SearchTermPopularityRow`](searchtermpopularityrow.md) for field descriptio
   },
   "pagination": {
     "offset": 0,
-    "pageSize": 20,
-    "totalCount": 1
+    "pageSize": 20
   }
 }
 ```
@@ -65,7 +64,7 @@ See [`SearchTermPopularityRow`](searchtermpopularityrow.md) for field descriptio
 ## Properties
 
 - `result` (SearchTermPopularityResultContainer): Container object holding the matching rows. Contains a `rows` array of [`SearchTermPopularityRow`](searchtermpopularityrow.md) objects. See [`SearchTermPopularityResultContainer`](searchtermpopularityresultcontainer.md). Read-only.
-- `pagination` (ResponsePagination): Pagination metadata for the current result page, including `offset`, `pageSize`, and `totalCount` for retrieving subsequent pages. Read-only.
+- `pagination` (ResponsePagination): Pagination metadata for the current result page, including `offset`, and `pageSize`. Read-only.
 - `error` (Error): See [`Error`](error.md) for details. Read-only.
 
 ## See Also

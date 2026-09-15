@@ -7,7 +7,6 @@ A protocol that defines methods for handling security session events.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

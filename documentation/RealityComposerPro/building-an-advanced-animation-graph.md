@@ -72,7 +72,7 @@ The Simulate Tab goes a step further by letting you play the graph over time rat
 
 #### Drive the Graph From a Script Graph
 
-Everything up to this point lives entirely inside the Animation Graph editor. Getting a Trigger input or a Tag to respond to gameplay — a collision, a button press — requires a second, separate graph type: Script Graph, Reality Composer Pro’s event-driven visual scripting surface for runtime logic. Authoring a Script Graph produces a `ScriptingComponent` — the editor and its JavaScript-facing API call it `ReScriptingComponent` — that you attach to an entity alongside its Animation Graph component.
+Everything up to this point lives entirely inside the Animation Graph editor. Getting a Trigger input or a Tag to respond to gameplay — a collision, a button press — requires a second, separate graph type: Script Graph, Reality Composer Pro’s event-driven visual scripting surface for runtime logic. Authoring a Script Graph produces a `ScriptingComponent` that you attach to an entity alongside its Animation Graph component.
 
 Reality Composer Pro links `RealityKitScripting` automatically; a plain RealityKit app project needs it linked manually so its `ScriptingSystem` can execute `ScriptingComponent` instances at runtime.
 

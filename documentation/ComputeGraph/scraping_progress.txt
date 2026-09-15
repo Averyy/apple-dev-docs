@@ -1,4 +1,4 @@
 Completed scraping Compute Graph!
-Total pages scraped: 439
-Pages skipped (unchanged): 129
+Total pages scraped: 567
+Pages skipped (unchanged): 1
 Pages failed: 0

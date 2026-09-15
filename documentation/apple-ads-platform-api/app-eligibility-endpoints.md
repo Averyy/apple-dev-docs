@@ -21,7 +21,7 @@ The following endpoints let you check eligibility and retrieve rejection reasons
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/eligibilities/apps/query` | [`Check App Eligibility`](find-apps-eligibilities.md) queries eligibility status for one or more apps across supply placements and countries or regions. |
+| `POST` | `/v1/eligibilities/apps/query` | [`Check App Eligibility`](find-apps-eligibilities.md) queries eligibility status for an app across supply placements and countries or regions. |
 | `POST` | `/v1/rejection-reasons/apps/query` | [`Query Rejection Reasons`](find-rejection-reasons.md) queries rejection reasons for ad creatives associated with an app. |
 | `GET` | `/v1/rejection-reasons/apps/{rejectionReasonId}` | [`Get Rejection Reasons`](gets-rejection-reasons-by-id.md) retrieves a single rejection reason by ID. |
 
@@ -37,7 +37,7 @@ The following states apply to `EligibilityResponse.state` values returned by the
 ## Topics
 
 - [Check App Eligibility](find-apps-eligibilities.md)
-  Check whether apps are eligible to run on certain Apple Ads placements and in specific countries or regions.
+  Check whether an app is eligible to run on certain Apple Ads placements and in specific countries or regions.
 - [Query Rejection Reasons](find-rejection-reasons.md)
   Query ad creative rejection reasons for apps and return why each ad creative failed approval.
 - [Get Rejection Reasons](gets-rejection-reasons-by-id.md)

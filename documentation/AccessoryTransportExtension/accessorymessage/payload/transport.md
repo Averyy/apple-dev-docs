@@ -7,7 +7,6 @@ A transport method for delivering the payload.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

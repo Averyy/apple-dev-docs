@@ -16,7 +16,7 @@ object ImpressionShareResultContainer
 
 ## Properties
 
-- `rows` ([ImpressionShareRow]): The impression share data rows matching the query. See [`ImpressionShareRow`](impressionsharerow.md). Read-only.
+- `rows` ([ImpressionShareRow]): The impression share data rows matching the query. See [`ImpressionShareRow`](impressionsharerow.md). Read-only. If no rows match the request, this is an empty array rather than the field being omitted.
 
 ## See Also
 

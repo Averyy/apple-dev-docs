@@ -7,7 +7,6 @@ Sends a message to the data provider extension.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

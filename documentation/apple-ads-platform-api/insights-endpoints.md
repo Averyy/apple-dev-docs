@@ -30,10 +30,10 @@ To retrieve impression share data, use `POST /v1/insights/apps/impression-share/
 | --- | --- |
 | Granularity | `DAILY` or `WEEKLY_SUN_SAT` |
 | `DAILY` max range | 30 days (inclusive) |
-| `WEEKLY_SUN_SAT` max range | 4 weeks (`LAST_4_WEEK`) |
+| `WEEKLY_SUN_SAT` max range | 4 weeks |
 | Weekly start date | When `WEEKLY_SUN_SAT`, `timeRange.start` must be a Sunday |
 | Timezone | Fixed to UTC |
-| Maximum pageSize | 5000 |
+| Maximum pageSize | 10000 |
 | Maximum sort fields | 2 |
 
 The `options.impressionShareReportType` field controls which ad positions the calculation includes:
@@ -59,7 +59,7 @@ To retrieve search term popularity data, use `POST /v1/insights/apps/search-term
 | --- | --- |
 | Granularity | `WEEKLY_SUN_SAT` or `MONTHLY` |
 | Timezone | Fixed to UTC |
-| Maximum pageSize | 5000 |
+| Maximum pageSize | 10000 |
 | Maximum sort fields | 2 (default: `genre ASC`, `rankInGenre ASC`) |
 
 The response always returns all dimension fields: `countryOrRegion`, `genre`, `searchTerm`, and the date field for the selected granularity (`week` or `month`). Request additional fields via the `fields` array:

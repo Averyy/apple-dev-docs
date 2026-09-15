@@ -59,7 +59,7 @@ GET https://api.ads.apple.com/v1/rejection-reasons/apps/112233445
 - [App Eligibility Endpoints](app-eligibility-endpoints.md)
   Check whether apps qualify to run ads and look up rejection reasons for creatives.
 - [Check App Eligibility](find-apps-eligibilities.md)
-  Check whether apps are eligible to run on certain Apple Ads placements and in specific countries or regions.
+  Check whether an app is eligible to run on certain Apple Ads placements and in specific countries or regions.
 - [Query Rejection Reasons](find-rejection-reasons.md)
   Query ad creative rejection reasons for apps and return why each ad creative failed approval.
 

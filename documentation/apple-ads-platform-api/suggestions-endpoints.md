@@ -24,6 +24,10 @@ The three keyword discovery endpoints use a `POST /query` pattern with a [`Recom
 | `POST` | `/v1/suggestions/categories/query` | Returns genre category names for apps or brands, or matched by name. Supports `SUGGESTION` and `SEARCH` routes. See [`Query Category Suggestions`](query-category-suggestions.md). |
 | `POST` | `/v1/suggestions/target-cpas/query` | Retrieves the recommended target CPA for an App Store app based on recent tap-install CPI data. See [`Query Target CPA Suggestion`](query-target-cpa-suggestion.md). |
 
+##### Keywords Vs Phrases
+
+Keyword and phrase suggestions serve different targeting needs. [`Query Keyword Suggestions`](query-keyword-suggestions.md) returns single ranked keyword strings meant to seed exact-match keyword targeting, and its results feed directly into [`Create a Keyword`](post-keywords.md). [`Query Phrase Suggestions`](query-phrase-suggestions.md) returns natural-language, multi-word search phrases people actually type, useful for broader phrase-level discovery or gauging phrase traffic rather than picking discrete keyword terms.
+
 ##### Request Keyword Suggestions
 
 The `promotedObjectId` and `promotedObjectType` fields are both required. Optionally scope results to specific App Store countries or regions with `countriesOrRegions`, or seed with specific `terms` to get related suggestions. Results are [`KeywordSuggestion`](keywordsuggestion.md) objects. To activate a suggestion, create a keyword entity via [`Create a Keyword`](post-keywords.md). Here’s a sample request that scopes suggestions to a single app and two countries:

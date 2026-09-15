@@ -125,6 +125,8 @@ The following property appears when you set **Shader** to **Shader Graph**.
   Apply surface properties to 3D entities to control how they look in your scene.
 - [Designing materials with Shader Graph](designing-materials-with-shader-graph.md)
   Create realistic materials with Reality Composer Pro’s Shader Graph.
+- [Creating a procedural Shader Graph material](creating-a-procedural-shader-graph-material.md)
+  Learn how to build an organic, pulsing, color-shifting material in the Reality Composer Pro 3 Shader Graph.
 
 
 ---

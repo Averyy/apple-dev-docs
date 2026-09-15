@@ -7,7 +7,6 @@ The key data carried by this message.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

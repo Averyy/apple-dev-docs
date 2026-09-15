@@ -1,1615 +1,1615 @@
 {
   "metadata": {
-    "last_updated": "2026-09-11T07:39:48.541570",
+    "last_updated": "2026-09-15T07:29:01.720334",
     "total_pages": 228,
-    "session_id": "2026-09-11T07:39:08.832318"
+    "session_id": "2026-09-15T07:28:15.961272"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppleNews.json": {
-      "hash": "0bf6fa13c89f48e98df537436315d6c645f67ad557bd0107e795c17aea49a2a0",
-      "last_checked": "2026-09-11T07:39:09.106980",
+      "hash": "fe8edd0c3e15069b22d8781d8ec64f1df08ce3d9c08e501845893bda9311ad92",
+      "last_checked": "2026-09-15T07:28:16.398412",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"14c8-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1528-6590229150437-df\"",
       "file_path": "documentation/AppleNews/AppleNews.md"
     },
     "https://developer.apple.com/documentation/AppleNews": {
-      "hash": "0bf6fa13c89f48e98df537436315d6c645f67ad557bd0107e795c17aea49a2a0",
-      "last_checked": "2026-09-11T07:39:08.998403",
+      "hash": "fe8edd0c3e15069b22d8781d8ec64f1df08ce3d9c08e501845893bda9311ad92",
+      "last_checked": "2026-09-15T07:28:16.298497",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"14c8-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1528-6590229150437-df\"",
       "file_path": "documentation/AppleNews/AppleNews.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/getting-started-as-an-apple-news-publisher.json": {
-      "hash": "0386292a0d60e8ec25543c1e82e43d8c9c16fbf886782fa7235e2ba2aaad8df1",
-      "last_checked": "2026-09-11T07:39:09.316309",
+      "hash": "a45862ee80670d182632fc04289e22b4fe441e0ea30acd5cbf8bf71dd13e6248",
+      "last_checked": "2026-09-15T07:28:16.780270",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"18fd-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"195d-659022912d319-df\"",
       "file_path": "documentation/AppleNews/getting-started-as-an-apple-news-publisher.md"
     },
     "https://developer.apple.com/documentation/applenews/getting-started-as-an-apple-news-publisher": {
-      "hash": "0386292a0d60e8ec25543c1e82e43d8c9c16fbf886782fa7235e2ba2aaad8df1",
-      "last_checked": "2026-08-18T07:39:51.329425",
+      "hash": "a45862ee80670d182632fc04289e22b4fe441e0ea30acd5cbf8bf71dd13e6248",
+      "last_checked": "2026-09-15T07:28:16.780314",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:39:50.825931",
-      "etag": "\"18fd-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"195d-659022912d319-df\"",
       "file_path": "documentation/AppleNews/getting-started-as-an-apple-news-publisher.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/apple-news-format-tutorials.json": {
-      "hash": "6acafe058284c8416fce594723cce8365772df8e4161cd94b5f8bfae4f9f4934",
-      "last_checked": "2026-09-11T07:39:09.479293",
+      "hash": "0c0ee00762b7ec2e19045e3b3de221fb0c7d4df6ddaeee53e9a95cc868f4db0f",
+      "last_checked": "2026-09-15T07:28:16.940228",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"5aec-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"5b4c-659022912d319-df\"",
       "file_path": "documentation/AppleNews/apple-news-format-tutorials.md"
     },
     "https://developer.apple.com/documentation/applenews/apple-news-format-tutorials": {
-      "hash": "6acafe058284c8416fce594723cce8365772df8e4161cd94b5f8bfae4f9f4934",
-      "last_checked": "2026-08-14T07:26:19.859622",
+      "hash": "0c0ee00762b7ec2e19045e3b3de221fb0c7d4df6ddaeee53e9a95cc868f4db0f",
+      "last_checked": "2026-09-15T07:28:16.940301",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"5aec-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"5b4c-659022912d319-df\"",
       "file_path": "documentation/AppleNews/apple-news-format-tutorials.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:09.893360",
+      "last_checked": "2026-09-15T07:28:17.433911",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/apple-news-api-tutorial.json": {
-      "hash": "4345bab832f6a4566c085ee041161dbe0cd45900c6be17525dd004955188fc50",
-      "last_checked": "2026-09-11T07:39:10.012090",
+      "hash": "5034f8417b3d3301fef707cc659491e1a82847120b10968d3158a28b69b05020",
+      "last_checked": "2026-09-15T07:28:18.253847",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"1f07-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1f67-659022912d319-df\"",
       "file_path": "documentation/AppleNews/apple-news-api-tutorial.md"
     },
     "https://developer.apple.com/documentation/applenews/apple-news-api-tutorial": {
-      "hash": "4345bab832f6a4566c085ee041161dbe0cd45900c6be17525dd004955188fc50",
-      "last_checked": "2026-08-14T07:26:20.437339",
+      "hash": "5034f8417b3d3301fef707cc659491e1a82847120b10968d3158a28b69b05020",
+      "last_checked": "2026-09-15T07:28:18.253914",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"1f07-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1f67-659022912d319-df\"",
       "file_path": "documentation/AppleNews/apple-news-api-tutorial.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsapi.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:10.393507",
+      "last_checked": "2026-09-15T07:28:18.760648",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/setting-up-the-introductory-tutorial.json": {
-      "hash": "e30f14dfb9fdd55c0515a9afb8f5216e290d67c0d3ca1e4b8b22a4f25ebd12aa",
-      "last_checked": "2026-09-11T07:39:10.457043",
+      "hash": "2372013d5e7fad0cd33f37444bafedd46b7b830452addeb106675d6ee0388e10",
+      "last_checked": "2026-09-15T07:28:18.953502",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"6958-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"69b8-6590229150437-df\"",
       "file_path": "documentation/AppleNews/setting-up-the-introductory-tutorial.md"
     },
     "https://developer.apple.com/documentation/applenews/setting-up-the-introductory-tutorial": {
-      "hash": "e30f14dfb9fdd55c0515a9afb8f5216e290d67c0d3ca1e4b8b22a4f25ebd12aa",
-      "last_checked": "2026-08-14T07:26:20.910442",
+      "hash": "2372013d5e7fad0cd33f37444bafedd46b7b830452addeb106675d6ee0388e10",
+      "last_checked": "2026-09-15T07:28:18.953601",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"6958-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"69b8-6590229150437-df\"",
       "file_path": "documentation/AppleNews/setting-up-the-introductory-tutorial.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-your-first-article.json": {
-      "hash": "876538f6ae625af69b8d8c6dabbd829101de8928b332a3bf27ab99216ec272dd",
-      "last_checked": "2026-09-11T07:39:10.638263",
+      "hash": "aee03c899ed98d4c8af9929f89abf734d675d93d3472b8f2312960b0d043b77c",
+      "last_checked": "2026-09-15T07:28:19.113484",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"9eaf-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"9f0f-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-your-first-article.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-your-first-article": {
-      "hash": "876538f6ae625af69b8d8c6dabbd829101de8928b332a3bf27ab99216ec272dd",
-      "last_checked": "2026-08-14T07:26:21.009700",
+      "hash": "aee03c899ed98d4c8af9929f89abf734d675d93d3472b8f2312960b0d043b77c",
+      "last_checked": "2026-09-15T07:28:19.113598",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"9eaf-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"9f0f-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-your-first-article.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/positioning-text-components.json": {
-      "hash": "1b07ea8b844e10e7573eed5cddd1be34baa279a0843dc7275fa8aee00f576e4b",
-      "last_checked": "2026-09-11T07:39:10.773838",
+      "hash": "1738047a1fd1ede14c9b6d82c16f8352244910159d5361fa9a979f55d012064c",
+      "last_checked": "2026-09-15T07:28:19.205734",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"577c-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"57dc-6590229150437-df\"",
       "file_path": "documentation/AppleNews/positioning-text-components.md"
     },
     "https://developer.apple.com/documentation/applenews/positioning-text-components": {
-      "hash": "1b07ea8b844e10e7573eed5cddd1be34baa279a0843dc7275fa8aee00f576e4b",
-      "last_checked": "2026-08-14T07:26:21.092010",
+      "hash": "1738047a1fd1ede14c9b6d82c16f8352244910159d5361fa9a979f55d012064c",
+      "last_checked": "2026-09-15T07:28:19.205837",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"577c-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"57dc-6590229150437-df\"",
       "file_path": "documentation/AppleNews/positioning-text-components.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-divider.json": {
-      "hash": "8667a44064dda07d683d3c4d162fa03858912e34fc6489c7bd84fa5c577f21fb",
-      "last_checked": "2026-09-11T07:39:10.919416",
+      "hash": "8d045d8452c2d1a360fb46f0f38cc7fbd73445f6ebd4f78c35e5d8335de0bce6",
+      "last_checked": "2026-09-15T07:28:19.304541",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"4be5-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"4c45-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-divider.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-divider": {
-      "hash": "8667a44064dda07d683d3c4d162fa03858912e34fc6489c7bd84fa5c577f21fb",
-      "last_checked": "2026-08-14T07:26:21.122110",
+      "hash": "8d045d8452c2d1a360fb46f0f38cc7fbd73445f6ebd4f78c35e5d8335de0bce6",
+      "last_checked": "2026-09-15T07:28:19.304625",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"4be5-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"4c45-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-divider.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-an-image-and-captions.json": {
-      "hash": "1c4a947cede15e818bdd179aed7f83b1d78f9f2cb324c814844dbf3027566a4a",
-      "last_checked": "2026-09-11T07:39:11.068535",
+      "hash": "8e4dec2df8fc79ae4ded0a3f62c177785a371b99d6ca25a16b7547c0d3794030",
+      "last_checked": "2026-09-15T07:28:19.465611",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"701a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"707a-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-an-image-and-captions.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-an-image-and-captions": {
-      "hash": "1c4a947cede15e818bdd179aed7f83b1d78f9f2cb324c814844dbf3027566a4a",
-      "last_checked": "2026-08-14T07:26:21.291479",
+      "hash": "8e4dec2df8fc79ae4ded0a3f62c177785a371b99d6ca25a16b7547c0d3794030",
+      "last_checked": "2026-09-15T07:28:19.465694",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"701a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"707a-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-an-image-and-captions.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-pull-quote.json": {
-      "hash": "b531998e4d965319f40a8e8ab9fc3dd39de2eb6aa9efdb9095a4f085ae25118b",
-      "last_checked": "2026-09-11T07:39:11.221054",
+      "hash": "5f057a6dd7a3a03702f02c2d359c8f760e6b0c066e29f3cc840ee0178210f4e0",
+      "last_checked": "2026-09-15T07:28:19.555266",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"7f4d-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7fad-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-pull-quote.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-pull-quote": {
-      "hash": "b531998e4d965319f40a8e8ab9fc3dd39de2eb6aa9efdb9095a4f085ae25118b",
-      "last_checked": "2026-08-14T07:26:21.371466",
+      "hash": "5f057a6dd7a3a03702f02c2d359c8f760e6b0c066e29f3cc840ee0178210f4e0",
+      "last_checked": "2026-09-15T07:28:19.555356",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"7f4d-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7fad-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-pull-quote.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-gallery-of-images.json": {
-      "hash": "7fccd726e1a322886815f531f29e53b5aa796940b97ef8c37ca60a7fa2e12726",
-      "last_checked": "2026-09-11T07:39:11.357732",
+      "hash": "468df7837ab10c7f9cfe0db7941c7565be8494343cbf140d07f56b0700e05010",
+      "last_checked": "2026-09-15T07:28:19.714530",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"6e46-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"6ea6-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-gallery-of-images.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-gallery-of-images": {
-      "hash": "7fccd726e1a322886815f531f29e53b5aa796940b97ef8c37ca60a7fa2e12726",
-      "last_checked": "2026-08-14T07:26:21.577965",
+      "hash": "468df7837ab10c7f9cfe0db7941c7565be8494343cbf140d07f56b0700e05010",
+      "last_checked": "2026-09-15T07:28:19.714615",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"6e46-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"6ea6-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-gallery-of-images.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-mosaic-of-images.json": {
-      "hash": "a8c1dc2987de8198755982649e0054c915b33fdb5105c02eb7c0c8f896efab20",
-      "last_checked": "2026-09-11T07:39:11.513614",
+      "hash": "3e861098a4e6a6806455dbf8364915a33ee8ba1566192320a1969e096bceecd4",
+      "last_checked": "2026-09-15T07:28:19.808418",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"53db-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"543b-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-mosaic-of-images.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-mosaic-of-images": {
-      "hash": "a8c1dc2987de8198755982649e0054c915b33fdb5105c02eb7c0c8f896efab20",
-      "last_checked": "2026-08-14T07:26:21.658375",
+      "hash": "3e861098a4e6a6806455dbf8364915a33ee8ba1566192320a1969e096bceecd4",
+      "last_checked": "2026-09-15T07:28:19.808488",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"53db-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"543b-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-mosaic-of-images.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-tweet.json": {
-      "hash": "6277d01549565ed4ba7e21d304d39a84a32de5101934c27e952c8f07106eb6e7",
-      "last_checked": "2026-09-11T07:39:11.667327",
+      "hash": "6b1a3a691b1cd6fb83b6e873865b4bcd3658a47cd743a7222bdc55f928e658fe",
+      "last_checked": "2026-09-15T07:28:19.896295",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"3721-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3781-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-tweet.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-tweet": {
-      "hash": "6277d01549565ed4ba7e21d304d39a84a32de5101934c27e952c8f07106eb6e7",
-      "last_checked": "2026-08-14T07:26:21.792028",
+      "hash": "6b1a3a691b1cd6fb83b6e873865b4bcd3658a47cd743a7222bdc55f928e658fe",
+      "last_checked": "2026-09-15T07:28:19.896355",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"3721-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3781-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-a-tweet.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-podcast.json": {
-      "hash": "78ca61f71fc73b44c4c618b45edbe42565d73fc26013a158ae0278e8eb4a5d09",
-      "last_checked": "2026-09-11T07:39:11.830239",
+      "hash": "cdabf3b6f414defc5cc3c0b982d20bfc752e0a2f394a06cc348d1098702e631a",
+      "last_checked": "2026-09-15T07:28:19.989216",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"3b8a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3bea-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-podcast.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-podcast": {
-      "hash": "78ca61f71fc73b44c4c618b45edbe42565d73fc26013a158ae0278e8eb4a5d09",
-      "last_checked": "2026-08-14T07:26:21.871062",
+      "hash": "cdabf3b6f414defc5cc3c0b982d20bfc752e0a2f394a06cc348d1098702e631a",
+      "last_checked": "2026-09-15T07:28:19.989295",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"3b8a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3bea-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-podcast.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/viewing-the-finished-article-for-the-introductory-design-tutorial.json": {
-      "hash": "c206eb692fd475ec70b4fc56cc133237177a1c73dfa5e9df61ac5b131c09de0e",
-      "last_checked": "2026-09-11T07:39:11.984094",
+      "hash": "c7fccd4f786d5eeb81b4eb3ff082573c71e4a758c8d318f6c1071cd745827de7",
+      "last_checked": "2026-09-15T07:28:20.288849",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"6644-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"66a4-6590229150437-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-the-introductory-design-tutorial.md"
     },
     "https://developer.apple.com/documentation/applenews/viewing-the-finished-article-for-the-introductory-design-tutorial": {
-      "hash": "c206eb692fd475ec70b4fc56cc133237177a1c73dfa5e9df61ac5b131c09de0e",
-      "last_checked": "2026-08-14T07:26:21.947711",
+      "hash": "c7fccd4f786d5eeb81b4eb3ff082573c71e4a758c8d318f6c1071cd745827de7",
+      "last_checked": "2026-09-15T07:28:20.288939",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"6644-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"66a4-6590229150437-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-the-introductory-design-tutorial.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/setting-up-the-advanced-tutorials.json": {
-      "hash": "624f6dcc79078495c7bd4ba70a4bf047352eeef0a636712c4c369f397273810d",
-      "last_checked": "2026-09-11T07:39:12.139061",
+      "hash": "64922eb3b8212f89ab6794a0a3df5b77e68c20c4a81e6dcaa84c3e70539ba43d",
+      "last_checked": "2026-09-15T07:28:20.375656",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"3c17-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3c77-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/setting-up-the-advanced-tutorials.md"
     },
     "https://developer.apple.com/documentation/applenews/setting-up-the-advanced-tutorials": {
-      "hash": "624f6dcc79078495c7bd4ba70a4bf047352eeef0a636712c4c369f397273810d",
-      "last_checked": "2026-08-14T07:26:22.023082",
+      "hash": "64922eb3b8212f89ab6794a0a3df5b77e68c20c4a81e6dcaa84c3e70539ba43d",
+      "last_checked": "2026-09-15T07:28:20.375724",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"3c17-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3c77-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/setting-up-the-advanced-tutorials.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/about-containers.json": {
-      "hash": "3f1891dc685a0959e8a5721ba2973d039539f5cf3f221aec6e77d617b5769456",
-      "last_checked": "2026-09-11T07:39:12.280926",
+      "hash": "0acb93b658514a907eda4da9c77e13dea3379817612dfeea392d1ffc701a90bf",
+      "last_checked": "2026-09-15T07:28:20.465237",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"1cb6-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1d16-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/about-containers.md"
     },
     "https://developer.apple.com/documentation/applenews/about-containers": {
-      "hash": "3f1891dc685a0959e8a5721ba2973d039539f5cf3f221aec6e77d617b5769456",
-      "last_checked": "2026-08-14T07:26:22.108558",
+      "hash": "0acb93b658514a907eda4da9c77e13dea3379817612dfeea392d1ffc701a90bf",
+      "last_checked": "2026-09-15T07:28:20.465282",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"1cb6-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1d16-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/about-containers.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-a-layered-header.json": {
-      "hash": "96a78d4524d77cd4d0a64c0a746aad0f47a68ed1c327fe24372ae208ca7ecb66",
-      "last_checked": "2026-09-11T07:39:12.425540",
+      "hash": "57cd2d8cacd03208c9ff491e614fd775d074cb35d8c6715404d78ddfc40a60dc",
+      "last_checked": "2026-09-15T07:28:20.623026",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"c11b-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"c17b-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-a-layered-header.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-a-layered-header": {
-      "hash": "96a78d4524d77cd4d0a64c0a746aad0f47a68ed1c327fe24372ae208ca7ecb66",
-      "last_checked": "2026-08-14T07:26:22.259848",
+      "hash": "57cd2d8cacd03208c9ff491e614fd775d074cb35d8c6715404d78ddfc40a60dc",
+      "last_checked": "2026-09-15T07:28:20.623144",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"c11b-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"c17b-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-a-layered-header.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-parallax-behavior.json": {
-      "hash": "5c8ef18786131bc1848fcefba0476be02093785f948a6939b762165635fbd16f",
-      "last_checked": "2026-09-11T07:39:12.526831",
+      "hash": "41e353abe58ef76957c501919da55431eca65c102f38c22d036013b6332bf567",
+      "last_checked": "2026-09-15T07:28:20.931838",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"71c9-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7229-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-parallax-behavior.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-parallax-behavior": {
-      "hash": "5c8ef18786131bc1848fcefba0476be02093785f948a6939b762165635fbd16f",
-      "last_checked": "2026-08-14T07:26:22.351288",
+      "hash": "41e353abe58ef76957c501919da55431eca65c102f38c22d036013b6332bf567",
+      "last_checked": "2026-09-15T07:28:20.931933",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"71c9-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7229-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-parallax-behavior.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-1.json": {
-      "hash": "a297059f8e6570fd6f2e3dbdb15b3dedba7ab461131a909dd11d4272ef9bd689",
-      "last_checked": "2026-09-11T07:39:12.692404",
+      "hash": "5961f03225c5753756b4d80a0efa53a1d7a5cf181f34db7461b2cf357b0f90ae",
+      "last_checked": "2026-09-15T07:28:21.021344",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"6420-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"6480-659022912d319-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-1.md"
     },
     "https://developer.apple.com/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-1": {
-      "hash": "a297059f8e6570fd6f2e3dbdb15b3dedba7ab461131a909dd11d4272ef9bd689",
-      "last_checked": "2026-08-14T07:26:22.431298",
+      "hash": "5961f03225c5753756b4d80a0efa53a1d7a5cf181f34db7461b2cf357b0f90ae",
+      "last_checked": "2026-09-15T07:28:21.021437",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"6420-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"6480-659022912d319-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-1.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-a-complex-layered-header.json": {
-      "hash": "6917d77e04c23c30444663510d357ae4b607be91b12d11a6c464e9e3231d0942",
-      "last_checked": "2026-09-11T07:39:12.850302",
+      "hash": "01a8dd30a3ef4e2d40105d2484c99a694ac963737f2748411ec3c6c36a3196e3",
+      "last_checked": "2026-09-15T07:28:21.391670",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"afe2-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"b042-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-a-complex-layered-header.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-a-complex-layered-header": {
-      "hash": "6917d77e04c23c30444663510d357ae4b607be91b12d11a6c464e9e3231d0942",
-      "last_checked": "2026-08-14T07:26:22.503396",
+      "hash": "01a8dd30a3ef4e2d40105d2484c99a694ac963737f2748411ec3c6c36a3196e3",
+      "last_checked": "2026-09-15T07:28:21.391794",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"afe2-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"b042-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-a-complex-layered-header.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-a-floating-caption.json": {
-      "hash": "95a2f79aae79d1c5ff4f091e5bd23ceef018375a9232f087358a608a930aab9c",
-      "last_checked": "2026-09-11T07:39:12.979588",
+      "hash": "769562c30a74be1d427931d37e885c6526e8e887833a8b3a2e689b098dde9a35",
+      "last_checked": "2026-09-15T07:28:21.483706",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"53ab-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"540b-6590229150437-df\"",
       "file_path": "documentation/AppleNews/creating-a-floating-caption.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-a-floating-caption": {
-      "hash": "95a2f79aae79d1c5ff4f091e5bd23ceef018375a9232f087358a608a930aab9c",
-      "last_checked": "2026-08-14T07:26:22.574155",
+      "hash": "769562c30a74be1d427931d37e885c6526e8e887833a8b3a2e689b098dde9a35",
+      "last_checked": "2026-09-15T07:28:21.483808",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"53ab-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"540b-6590229150437-df\"",
       "file_path": "documentation/AppleNews/creating-a-floating-caption.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-an-inset-pull-quote.json": {
-      "hash": "b3eae5b86af3a83e8b21b7714341f39fb2fc9a3eab7dce374d03127ea95e48b7",
-      "last_checked": "2026-09-11T07:39:13.079759",
+      "hash": "56d459484325fe7390acd7be2e372bc52f630f2f2def5bd9812eba44f24a5d39",
+      "last_checked": "2026-09-15T07:28:21.578656",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"83e6-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8446-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-an-inset-pull-quote.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-an-inset-pull-quote": {
-      "hash": "b3eae5b86af3a83e8b21b7714341f39fb2fc9a3eab7dce374d03127ea95e48b7",
-      "last_checked": "2026-08-14T07:26:22.650707",
+      "hash": "56d459484325fe7390acd7be2e372bc52f630f2f2def5bd9812eba44f24a5d39",
+      "last_checked": "2026-09-15T07:28:21.578731",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"83e6-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8446-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-an-inset-pull-quote.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-an-inset-photo.json": {
-      "hash": "1e65a2698efc4c5b1277335126e26157d12c97705d4609edc4f56346c2c93f79",
-      "last_checked": "2026-09-11T07:39:13.200652",
+      "hash": "65a5687b9e8ca7fb5a4e2aac2011486e4ad9d019be9f689170ab9643e56c47da",
+      "last_checked": "2026-09-15T07:28:21.673051",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"6719-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"6779-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-an-inset-photo.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-an-inset-photo": {
-      "hash": "1e65a2698efc4c5b1277335126e26157d12c97705d4609edc4f56346c2c93f79",
-      "last_checked": "2026-08-14T07:26:22.730643",
+      "hash": "65a5687b9e8ca7fb5a4e2aac2011486e4ad9d019be9f689170ab9643e56c47da",
+      "last_checked": "2026-09-15T07:28:21.673143",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"6719-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"6779-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-an-inset-photo.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-color-to-text-ranges.json": {
-      "hash": "ef823a14afe6fec79c2aed03b950e17a2019f1918d0c40a6cbd0351d45d0859e",
-      "last_checked": "2026-09-11T07:39:13.330044",
+      "hash": "ebdab9f7c753a018eb21e210ab79b24d12040865fe4e1a6e17fafd1ef67393ee",
+      "last_checked": "2026-09-15T07:28:21.764949",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"7853-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"78b3-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-color-to-text-ranges.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-color-to-text-ranges": {
-      "hash": "ef823a14afe6fec79c2aed03b950e17a2019f1918d0c40a6cbd0351d45d0859e",
-      "last_checked": "2026-08-14T07:26:22.809020",
+      "hash": "ebdab9f7c753a018eb21e210ab79b24d12040865fe4e1a6e17fafd1ef67393ee",
+      "last_checked": "2026-09-15T07:28:21.765030",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"7853-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"78b3-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-color-to-text-ranges.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-animations.json": {
-      "hash": "8ff302e7bb8d78e902ad06a61f555e8d5d67881e7f5c6fc96e06391530bf18f2",
-      "last_checked": "2026-09-11T07:39:13.464004",
+      "hash": "07418010c47a400c321a041d420d9e6fb0461f979f62a3508d04d28f6e090b76",
+      "last_checked": "2026-09-15T07:28:21.857742",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"401b-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"407b-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-animations.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-animations": {
-      "hash": "8ff302e7bb8d78e902ad06a61f555e8d5d67881e7f5c6fc96e06391530bf18f2",
-      "last_checked": "2026-08-14T07:26:22.893898",
+      "hash": "07418010c47a400c321a041d420d9e6fb0461f979f62a3508d04d28f6e090b76",
+      "last_checked": "2026-09-15T07:28:21.857838",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"401b-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"407b-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-animations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-scene.json": {
-      "hash": "4f2f42e6cc2da5d654ab76414999d5d847e126b5b7abbc71cff438ab38f0f199",
-      "last_checked": "2026-09-11T07:39:13.616180",
+      "hash": "31aa60b4997f3f50eca6d48f3764dba9aa1a3cf88d296d0e52662570803c8f06",
+      "last_checked": "2026-09-15T07:28:21.951476",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"33a3-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3403-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/adding-a-scene.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-scene": {
-      "hash": "4f2f42e6cc2da5d654ab76414999d5d847e126b5b7abbc71cff438ab38f0f199",
-      "last_checked": "2026-08-14T07:26:22.980048",
+      "hash": "31aa60b4997f3f50eca6d48f3764dba9aa1a3cf88d296d0e52662570803c8f06",
+      "last_checked": "2026-09-15T07:28:21.951540",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"33a3-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3403-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/adding-a-scene.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-2.json": {
-      "hash": "226708eca6f26ac6b1a37fcf00ac09e51b3e226834980431f8a3f1a51445e5c8",
-      "last_checked": "2026-09-11T07:39:13.715147",
+      "hash": "e509f94a327ac51e364ae778de2f106279c291dd99374399394c3c73219fcecd",
+      "last_checked": "2026-09-15T07:28:22.116078",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"7b21-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7b81-659022912d319-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-2.md"
     },
     "https://developer.apple.com/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-2": {
-      "hash": "226708eca6f26ac6b1a37fcf00ac09e51b3e226834980431f8a3f1a51445e5c8",
-      "last_checked": "2026-08-14T07:26:23.014906",
+      "hash": "e509f94a327ac51e364ae778de2f106279c291dd99374399394c3c73219fcecd",
+      "last_checked": "2026-09-15T07:28:22.116186",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"7b21-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7b81-659022912d319-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-2.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/giving-the-article-a-dark-color-scheme.json": {
-      "hash": "1a86930c8c9b5a40279c7fd260e765ac3046bc07be2b4cf0cff7edd4a639f176",
-      "last_checked": "2026-09-11T07:39:13.850461",
+      "hash": "a1f0068e7fe258a0acc47884e03424dd42dac661ea28492213039a3c59bf8c61",
+      "last_checked": "2026-09-15T07:28:22.207687",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"8911-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8971-6590229150437-df\"",
       "file_path": "documentation/AppleNews/giving-the-article-a-dark-color-scheme.md"
     },
     "https://developer.apple.com/documentation/applenews/giving-the-article-a-dark-color-scheme": {
-      "hash": "1a86930c8c9b5a40279c7fd260e765ac3046bc07be2b4cf0cff7edd4a639f176",
-      "last_checked": "2026-08-14T07:26:23.124309",
+      "hash": "a1f0068e7fe258a0acc47884e03424dd42dac661ea28492213039a3c59bf8c61",
+      "last_checked": "2026-09-15T07:28:22.207790",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"8911-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8971-6590229150437-df\"",
       "file_path": "documentation/AppleNews/giving-the-article-a-dark-color-scheme.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-video.json": {
-      "hash": "b95579f651711b8e9ba1458a91760881042ae78a936b700564383c24fcc697d2",
-      "last_checked": "2026-09-11T07:39:14.014071",
+      "hash": "2f9f7a133decd5a4f36a3eebe8323c058d0ac102332d0653bdae069370022c99",
+      "last_checked": "2026-09-15T07:28:22.298380",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"3cbf-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3d1f-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-video.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-video": {
-      "hash": "b95579f651711b8e9ba1458a91760881042ae78a936b700564383c24fcc697d2",
-      "last_checked": "2026-08-14T07:26:23.261902",
+      "hash": "2f9f7a133decd5a4f36a3eebe8323c058d0ac102332d0653bdae069370022c99",
+      "last_checked": "2026-09-15T07:28:22.298455",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"3cbf-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3d1f-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-video.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-a-sidebar.json": {
-      "hash": "24409d37e08d1d3839511c6c08af95567653c0c7f3a9fafa702eb6a7de7180c4",
-      "last_checked": "2026-09-11T07:39:14.156096",
+      "hash": "2212b240c59879c105006ff78ae18829b1c7fc4a94334b90661f117b21671a51",
+      "last_checked": "2026-09-15T07:28:22.598138",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"76a5-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7705-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-a-sidebar.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-a-sidebar": {
-      "hash": "24409d37e08d1d3839511c6c08af95567653c0c7f3a9fafa702eb6a7de7180c4",
-      "last_checked": "2026-08-14T07:26:23.342661",
+      "hash": "2212b240c59879c105006ff78ae18829b1c7fc4a94334b90661f117b21671a51",
+      "last_checked": "2026-09-15T07:28:22.598425",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"76a5-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"7705-659022912d319-df\"",
       "file_path": "documentation/AppleNews/creating-a-sidebar.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-fixed-image-fill.json": {
-      "hash": "16f266479800689b94dec42ecda6854b9783efa8bbd191010997475554b747e2",
-      "last_checked": "2026-09-11T07:39:14.247027",
+      "hash": "14208589f2bd4036a801e67a782ab621d696a52f4f63e1bb0d509eb2cca13512",
+      "last_checked": "2026-09-15T07:28:22.695544",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"4c7a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"4cda-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-fixed-image-fill.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-fixed-image-fill": {
-      "hash": "16f266479800689b94dec42ecda6854b9783efa8bbd191010997475554b747e2",
-      "last_checked": "2026-08-14T07:26:23.421004",
+      "hash": "14208589f2bd4036a801e67a782ab621d696a52f4f63e1bb0d509eb2cca13512",
+      "last_checked": "2026-09-15T07:28:22.695613",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"4c7a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"4cda-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-fixed-image-fill.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-a-newsletter-sign-up-element.json": {
-      "hash": "d19e213bc4dcb8622d18e53df1be08582ba9c13a052fd4a09f69af624e48111a",
-      "last_checked": "2026-09-11T07:39:14.369073",
+      "hash": "730c931682a9c710c52b50e6022e7b0a2abc5d2922ebd195a835f7d2b6debe10",
+      "last_checked": "2026-09-15T07:28:22.999295",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"608d-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"60ed-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/creating-a-newsletter-sign-up-element.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-a-newsletter-sign-up-element": {
-      "hash": "d19e213bc4dcb8622d18e53df1be08582ba9c13a052fd4a09f69af624e48111a",
-      "last_checked": "2026-08-14T07:26:23.493203",
+      "hash": "730c931682a9c710c52b50e6022e7b0a2abc5d2922ebd195a835f7d2b6debe10",
+      "last_checked": "2026-09-15T07:28:22.999396",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"608d-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"60ed-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/creating-a-newsletter-sign-up-element.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-3.json": {
-      "hash": "0aa88f824ad5f78c07ce50dd92b9f53bc47ceb1b2c8758875996180d8c3668ef",
-      "last_checked": "2026-09-11T07:39:14.488629",
+      "hash": "1274091a6b85e291874f93dad85f56551cffdd593e76dc68f4512f94a598979d",
+      "last_checked": "2026-09-15T07:28:23.090252",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"9871-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"98d1-659022912d319-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-3.md"
     },
     "https://developer.apple.com/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-3": {
-      "hash": "0aa88f824ad5f78c07ce50dd92b9f53bc47ceb1b2c8758875996180d8c3668ef",
-      "last_checked": "2026-08-14T07:26:23.564247",
+      "hash": "1274091a6b85e291874f93dad85f56551cffdd593e76dc68f4512f94a598979d",
+      "last_checked": "2026-09-15T07:28:23.090365",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"9871-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"98d1-659022912d319-df\"",
       "file_path": "documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-3.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/examples.json": {
-      "hash": "edee3fe33ec859020293d7a9b1f486ed02308c55eee885cd960008b1c46df2e1",
-      "last_checked": "2026-09-11T07:39:14.659491",
+      "hash": "cd432c0d0baf0acf87300941dfd12cce9432466fffc6b01fe0353647ab15b249",
+      "last_checked": "2026-09-15T07:28:23.183316",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"aee-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"b4e-659022912d319-df\"",
       "file_path": "documentation/AppleNews/examples.md"
     },
     "https://developer.apple.com/documentation/applenews/examples": {
-      "hash": "edee3fe33ec859020293d7a9b1f486ed02308c55eee885cd960008b1c46df2e1",
-      "last_checked": "2026-08-14T07:26:23.642572",
+      "hash": "cd432c0d0baf0acf87300941dfd12cce9432466fffc6b01fe0353647ab15b249",
+      "last_checked": "2026-09-15T07:28:23.183366",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"aee-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"b4e-659022912d319-df\"",
       "file_path": "documentation/AppleNews/examples.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/making-an-http-request-to-the-apple-news-api.json": {
-      "hash": "1dd6d1b28855932004b6faf5dde0360a432b74efcaf5c43bc27f8095e3070cf9",
-      "last_checked": "2026-09-11T07:39:14.754283",
+      "hash": "48271759369debe52f361bef8022102d5c34d35eb9579ee72b15ba5c6d799c2d",
+      "last_checked": "2026-09-15T07:28:23.279883",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"1cb2-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1d12-659022912d319-df\"",
       "file_path": "documentation/AppleNews/making-an-http-request-to-the-apple-news-api.md"
     },
     "https://developer.apple.com/documentation/applenews/making-an-http-request-to-the-apple-news-api": {
-      "hash": "1dd6d1b28855932004b6faf5dde0360a432b74efcaf5c43bc27f8095e3070cf9",
-      "last_checked": "2026-08-14T07:26:23.716190",
+      "hash": "48271759369debe52f361bef8022102d5c34d35eb9579ee72b15ba5c6d799c2d",
+      "last_checked": "2026-09-15T07:28:23.279932",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"1cb2-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1d12-659022912d319-df\"",
       "file_path": "documentation/AppleNews/making-an-http-request-to-the-apple-news-api.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/signing-the-http-request.json": {
-      "hash": "1a8868cbfe89aa9f8be21deadcb3d4b7ac5fc64859e58364d08d9079b8a06365",
-      "last_checked": "2026-09-11T07:39:14.896796",
+      "hash": "5aab7b6a0154892dadbe6b76c2adf5a7b671578a5ff2198c0bc74ea9fa2e5e0e",
+      "last_checked": "2026-09-15T07:28:23.568741",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"338c-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"33ec-6590229150437-df\"",
       "file_path": "documentation/AppleNews/signing-the-http-request.md"
     },
     "https://developer.apple.com/documentation/applenews/signing-the-http-request": {
-      "hash": "1a8868cbfe89aa9f8be21deadcb3d4b7ac5fc64859e58364d08d9079b8a06365",
-      "last_checked": "2026-08-14T07:26:23.799990",
+      "hash": "5aab7b6a0154892dadbe6b76c2adf5a7b671578a5ff2198c0bc74ea9fa2e5e0e",
+      "last_checked": "2026-09-15T07:28:23.568817",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"338c-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"33ec-6590229150437-df\"",
       "file_path": "documentation/AppleNews/signing-the-http-request.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/publishing-an-article.json": {
-      "hash": "846e2b005978d3649c6747ee60c167cc729bb93db433439e8350605317439f7b",
-      "last_checked": "2026-09-11T07:39:15.006717",
+      "hash": "213824f8e2dda59c7e3a1e166344f7d61c7fa472189a78d2e90c197fcbdad46a",
+      "last_checked": "2026-09-15T07:28:23.658708",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"5066-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"50c6-659022912d319-df\"",
       "file_path": "documentation/AppleNews/publishing-an-article.md"
     },
     "https://developer.apple.com/documentation/applenews/publishing-an-article": {
-      "hash": "846e2b005978d3649c6747ee60c167cc729bb93db433439e8350605317439f7b",
-      "last_checked": "2026-08-14T07:26:23.895193",
+      "hash": "213824f8e2dda59c7e3a1e166344f7d61c7fa472189a78d2e90c197fcbdad46a",
+      "last_checked": "2026-09-15T07:28:23.658804",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"5066-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"50c6-659022912d319-df\"",
       "file_path": "documentation/AppleNews/publishing-an-article.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/defining-and-applying-text-styles.json": {
-      "hash": "c6fbb720f2c5a7628177532ed3f1b52993c4b41ea76fa72cef08500edcd68491",
-      "last_checked": "2026-09-11T07:39:15.140268",
+      "hash": "2ce2790282b3c8e4ebf471cf340b8a12777658ca353e835dbb6523ca6a13d3ec",
+      "last_checked": "2026-09-15T07:28:23.960008",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"685b-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"68bb-659022912d319-df\"",
       "file_path": "documentation/AppleNews/defining-and-applying-text-styles.md"
     },
     "https://developer.apple.com/documentation/applenews/defining-and-applying-text-styles": {
-      "hash": "c6fbb720f2c5a7628177532ed3f1b52993c4b41ea76fa72cef08500edcd68491",
-      "last_checked": "2026-08-14T07:26:23.993216",
+      "hash": "2ce2790282b3c8e4ebf471cf340b8a12777658ca353e835dbb6523ca6a13d3ec",
+      "last_checked": "2026-09-15T07:28:23.960093",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"685b-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"68bb-659022912d319-df\"",
       "file_path": "documentation/AppleNews/defining-and-applying-text-styles.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/using-html-with-apple-news-format.json": {
-      "hash": "795cca4ffecbfee018528fd119254fcb937370e7ca4b8115d13350eeb986bbfb",
-      "last_checked": "2026-09-11T07:39:15.292930",
+      "hash": "c27391f2c4ea94626fddbd0a1225fe4400b05cb72788f4687fe240fdd0c90265",
+      "last_checked": "2026-09-15T07:28:24.049562",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"a062-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"a0c2-6590229150437-df\"",
       "file_path": "documentation/AppleNews/using-html-with-apple-news-format.md"
     },
     "https://developer.apple.com/documentation/applenews/using-html-with-apple-news-format": {
-      "hash": "795cca4ffecbfee018528fd119254fcb937370e7ca4b8115d13350eeb986bbfb",
-      "last_checked": "2026-08-14T07:26:24.088195",
+      "hash": "c27391f2c4ea94626fddbd0a1225fe4400b05cb72788f4687fe240fdd0c90265",
+      "last_checked": "2026-09-15T07:28:24.049664",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"a062-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"a0c2-6590229150437-df\"",
       "file_path": "documentation/AppleNews/using-html-with-apple-news-format.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applying-apple-news-format-fonts.json": {
-      "hash": "d4021e7791241e3d5c51b7ceec2ad0c911264ac937add2281388b4111cc88430",
-      "last_checked": "2026-09-11T07:39:15.384175",
+      "hash": "ef18f115a9fab1cde6fc24cdc41bedeff7c666885e453f564dd14a09b2a4e9f4",
+      "last_checked": "2026-09-15T07:28:24.141438",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"92e0-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"9340-6590229150437-df\"",
       "file_path": "documentation/AppleNews/applying-apple-news-format-fonts.md"
     },
     "https://developer.apple.com/documentation/applenews/applying-apple-news-format-fonts": {
-      "hash": "d4021e7791241e3d5c51b7ceec2ad0c911264ac937add2281388b4111cc88430",
-      "last_checked": "2026-08-14T07:26:24.173406",
+      "hash": "ef18f115a9fab1cde6fc24cdc41bedeff7c666885e453f564dd14a09b2a4e9f4",
+      "last_checked": "2026-09-15T07:28:24.141550",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"92e0-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"9340-6590229150437-df\"",
       "file_path": "documentation/AppleNews/applying-apple-news-format-fonts.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/components.json": {
-      "hash": "fe05d9a140785b443516a449bf2353a39d52030914cd1dfbf0c2a0c61493b230",
-      "last_checked": "2026-09-11T07:39:15.496373",
+      "hash": "086b27f6cf8c696f7caf1d18a843a4c40fff1bef52d53839204b06a030c844de",
+      "last_checked": "2026-09-15T07:28:24.303778",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"f618-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"f678-6590229150437-df\"",
       "file_path": "documentation/AppleNews/components.md"
     },
     "https://developer.apple.com/documentation/applenews/components": {
-      "hash": "fe05d9a140785b443516a449bf2353a39d52030914cd1dfbf0c2a0c61493b230",
-      "last_checked": "2026-08-14T07:26:24.245443",
+      "hash": "086b27f6cf8c696f7caf1d18a843a4c40fff1bef52d53839204b06a030c844de",
+      "last_checked": "2026-09-15T07:28:24.303923",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"f618-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"f678-6590229150437-df\"",
       "file_path": "documentation/AppleNews/components.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/componenttextstyle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:15.827057",
+      "last_checked": "2026-09-15T07:28:24.799652",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/dropcapstyle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:16.094454",
+      "last_checked": "2026-09-15T07:28:25.132931",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/positioning-the-content-in-your-article.json": {
-      "hash": "fdb74b6ffec22c2367789bc6b2fbe8a821c9338ca22c3296e1dcda62cab58906",
-      "last_checked": "2026-09-11T07:39:16.159893",
+      "hash": "6c70c100610568c88d4ca59e93c0afb4b3066a49f3a8c5fd38b688de5638bb85",
+      "last_checked": "2026-09-15T07:28:25.266676",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"5c60-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"5cc0-6590229150437-df\"",
       "file_path": "documentation/AppleNews/positioning-the-content-in-your-article.md"
     },
     "https://developer.apple.com/documentation/applenews/positioning-the-content-in-your-article": {
-      "hash": "fdb74b6ffec22c2367789bc6b2fbe8a821c9338ca22c3296e1dcda62cab58906",
-      "last_checked": "2026-08-14T07:26:24.886137",
+      "hash": "6c70c100610568c88d4ca59e93c0afb4b3066a49f3a8c5fd38b688de5638bb85",
+      "last_checked": "2026-09-15T07:28:25.266789",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"5c60-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"5cc0-6590229150437-df\"",
       "file_path": "documentation/AppleNews/positioning-the-content-in-your-article.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/componentlayout.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:16.488050",
+      "last_checked": "2026-09-15T07:28:25.537385",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/planning-the-layout-for-your-article.json": {
-      "hash": "19e4deda6dd817e103b00aaf4107f7be439b85452b255aa32589787f7af449b3",
-      "last_checked": "2026-09-11T07:39:16.562422",
+      "hash": "1c43dcd46647470da28c8080da42f0238d9884d8edcad1ab7adc1c6de00274b6",
+      "last_checked": "2026-09-15T07:28:25.682413",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"3ac7-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3b27-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/planning-the-layout-for-your-article.md"
     },
     "https://developer.apple.com/documentation/applenews/planning-the-layout-for-your-article": {
-      "hash": "19e4deda6dd817e103b00aaf4107f7be439b85452b255aa32589787f7af449b3",
-      "last_checked": "2026-08-14T07:26:25.248666",
+      "hash": "1c43dcd46647470da28c8080da42f0238d9884d8edcad1ab7adc1c6de00274b6",
+      "last_checked": "2026-09-15T07:28:25.682476",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"3ac7-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3b27-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/planning-the-layout-for-your-article.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/divider.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:16.892019",
+      "last_checked": "2026-09-15T07:28:26.035335",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/strokestyle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:17.181388",
+      "last_checked": "2026-09-15T07:28:26.349851",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/photo.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:17.470708",
+      "last_checked": "2026-09-15T07:28:26.666246",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/caption.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:17.739337",
+      "last_checked": "2026-09-15T07:28:26.981860",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/captiondescriptor.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:18.006332",
+      "last_checked": "2026-09-15T07:28:27.295363",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/textstyle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:18.311490",
+      "last_checked": "2026-09-15T07:28:27.619071",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/pullquote.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:18.614275",
+      "last_checked": "2026-09-15T07:28:27.956303",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/gallery.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:18.906539",
+      "last_checked": "2026-09-15T07:28:28.318315",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/galleryitem.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:19.193606",
+      "last_checked": "2026-09-15T07:28:28.649300",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/mosaic.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:19.481828",
+      "last_checked": "2026-09-15T07:28:28.970857",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/tweet.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:19.774627",
+      "last_checked": "2026-09-15T07:28:29.281338",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/apple-news-format-tutorials#requirements.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:20.046455",
+      "last_checked": "2026-09-15T07:28:29.605455",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/nesting-components-in-an-article.json": {
-      "hash": "c24c6f16e4dbea6dc7a901f3b5fda865ae673260cf60068964d5840280d7a653",
-      "last_checked": "2026-09-11T07:39:20.135426",
+      "hash": "9ef50463f21497f2c9195efeebbe16ec460f010d27d3af5625fae45f47182185",
+      "last_checked": "2026-09-15T07:28:29.725316",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"51a5-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"5205-659022912d319-df\"",
       "file_path": "documentation/AppleNews/nesting-components-in-an-article.md"
     },
     "https://developer.apple.com/documentation/applenews/nesting-components-in-an-article": {
-      "hash": "c24c6f16e4dbea6dc7a901f3b5fda865ae673260cf60068964d5840280d7a653",
-      "last_checked": "2026-08-14T07:26:29.393519",
+      "hash": "9ef50463f21497f2c9195efeebbe16ec460f010d27d3af5625fae45f47182185",
+      "last_checked": "2026-09-15T07:28:29.725405",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"51a5-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"5205-659022912d319-df\"",
       "file_path": "documentation/AppleNews/nesting-components-in-an-article.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/container.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:20.450357",
+      "last_checked": "2026-09-15T07:28:29.999308",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applying-a-background-to-a-component.json": {
-      "hash": "7d4745385f91e7432ca5b7a697a96263f9ac77281ff2b0dc493f580508a2aeab",
-      "last_checked": "2026-09-11T07:39:20.548521",
+      "hash": "039ed396d326164e0c397710702c59162717a64dc802461be021054295b427bc",
+      "last_checked": "2026-09-15T07:28:30.116372",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"271d-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"277d-659022912d319-df\"",
       "file_path": "documentation/AppleNews/applying-a-background-to-a-component.md"
     },
     "https://developer.apple.com/documentation/applenews/applying-a-background-to-a-component": {
-      "hash": "7d4745385f91e7432ca5b7a697a96263f9ac77281ff2b0dc493f580508a2aeab",
-      "last_checked": "2026-08-14T07:26:29.950794",
+      "hash": "039ed396d326164e0c397710702c59162717a64dc802461be021054295b427bc",
+      "last_checked": "2026-09-15T07:28:30.116430",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"271d-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"277d-659022912d319-df\"",
       "file_path": "documentation/AppleNews/applying-a-background-to-a-component.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/anchor.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:20.863448",
+      "last_checked": "2026-09-15T07:28:30.386657",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/header.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:21.169978",
+      "last_checked": "2026-09-15T07:28:30.728070",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/componentstyle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:21.411588",
+      "last_checked": "2026-09-15T07:28:31.036237",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/imagefill.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:21.685639",
+      "last_checked": "2026-09-15T07:28:31.374040",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/specifying-measurements-for-components.json": {
-      "hash": "110fd456d0f5737ab1b5f8f0203e1078139fbebc492b476722536af3db2b80e7",
-      "last_checked": "2026-09-11T07:39:21.767921",
+      "hash": "64009f131aa8adf80d5b5711b3777721d417d24172abca4cca7bbc27e3eb189b",
+      "last_checked": "2026-09-15T07:28:31.506137",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"34f9-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3559-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/specifying-measurements-for-components.md"
     },
     "https://developer.apple.com/documentation/applenews/specifying-measurements-for-components": {
-      "hash": "110fd456d0f5737ab1b5f8f0203e1078139fbebc492b476722536af3db2b80e7",
-      "last_checked": "2026-08-14T07:26:31.199605",
+      "hash": "64009f131aa8adf80d5b5711b3777721d417d24172abca4cca7bbc27e3eb189b",
+      "last_checked": "2026-09-15T07:28:31.506185",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"34f9-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3559-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/specifying-measurements-for-components.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/about-component-behaviors.json": {
-      "hash": "6c9c6b4f67c9b5f743f94a21edfe2b5a0b8025cfebeaecd44d863d46c8d5d4e0",
-      "last_checked": "2026-09-11T07:39:21.881933",
+      "hash": "ed3045d1e980b5d2e37b1451869836e6611bbcd14679cc48fa6e1019d80b8531",
+      "last_checked": "2026-09-15T07:28:31.739983",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"27ff-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"285f-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/about-component-behaviors.md"
     },
     "https://developer.apple.com/documentation/applenews/about-component-behaviors": {
-      "hash": "6c9c6b4f67c9b5f743f94a21edfe2b5a0b8025cfebeaecd44d863d46c8d5d4e0",
-      "last_checked": "2026-08-14T07:26:31.283559",
+      "hash": "ed3045d1e980b5d2e37b1451869836e6611bbcd14679cc48fa6e1019d80b8531",
+      "last_checked": "2026-09-15T07:28:31.740039",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"27ff-65858057b1b6b-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"285f-6590229110f8e-df\"",
       "file_path": "documentation/AppleNews/about-component-behaviors.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/parallax.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:22.210162",
+      "last_checked": "2026-09-15T07:28:32.011283",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/section.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:22.508317",
+      "last_checked": "2026-09-15T07:28:32.347994",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/lineargradientfill.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:22.776823",
+      "last_checked": "2026-09-15T07:28:32.881426",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/wrapping-text-around-a-component.json": {
-      "hash": "8a385a71583019d7cee386f10dfe11b9474eb347fdcd3e5d271fc212a2804495",
-      "last_checked": "2026-09-11T07:39:22.848329",
+      "hash": "dab605499db571ceb87204fb0d63037c1de91eeacf8849d049891ee0d52184f1",
+      "last_checked": "2026-09-15T07:28:33.009699",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"2bb1-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2c11-6590229150437-df\"",
       "file_path": "documentation/AppleNews/wrapping-text-around-a-component.md"
     },
     "https://developer.apple.com/documentation/applenews/wrapping-text-around-a-component": {
-      "hash": "8a385a71583019d7cee386f10dfe11b9474eb347fdcd3e5d271fc212a2804495",
-      "last_checked": "2026-08-14T07:26:32.233498",
+      "hash": "dab605499db571ceb87204fb0d63037c1de91eeacf8849d049891ee0d52184f1",
+      "last_checked": "2026-09-15T07:28:33.009773",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"2bb1-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2c11-6590229150437-df\"",
       "file_path": "documentation/AppleNews/wrapping-text-around-a-component.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/layout.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:23.153984",
+      "last_checked": "2026-09-15T07:28:33.294367",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/border.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:23.437531",
+      "last_checked": "2026-09-15T07:28:33.631629",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/about-component-animations.json": {
-      "hash": "bb034ef72be74870da1e8e7409e990c3e8821706c49aadce1406e8cccdfe3679",
-      "last_checked": "2026-09-11T07:39:23.559333",
+      "hash": "8506c1675db50111fb286ab80d4c32665212c1b724626e70c3d39bcdb61909bb",
+      "last_checked": "2026-09-15T07:28:33.760023",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"2438-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2498-659022912d319-df\"",
       "file_path": "documentation/AppleNews/about-component-animations.md"
     },
     "https://developer.apple.com/documentation/applenews/about-component-animations": {
-      "hash": "bb034ef72be74870da1e8e7409e990c3e8821706c49aadce1406e8cccdfe3679",
-      "last_checked": "2026-08-14T07:26:32.974558",
+      "hash": "8506c1675db50111fb286ab80d4c32665212c1b724626e70c3d39bcdb61909bb",
+      "last_checked": "2026-09-15T07:28:33.760076",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"2438-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2498-659022912d319-df\"",
       "file_path": "documentation/AppleNews/about-component-animations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-scene-to-a-chapter-or-a-section-header.json": {
-      "hash": "c57b2d7dd351c80c954793de1386518181456a7fcf032ed47f699acc3eb92fef",
-      "last_checked": "2026-09-11T07:39:23.664170",
+      "hash": "0b019cc342a77e2b98e82a268855d40bbeb0caa438479e1da9d73c3a020d6cd5",
+      "last_checked": "2026-09-15T07:28:33.851600",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"46d7-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"4737-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-scene-to-a-chapter-or-a-section-header.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-scene-to-a-chapter-or-a-section-header": {
-      "hash": "c57b2d7dd351c80c954793de1386518181456a7fcf032ed47f699acc3eb92fef",
-      "last_checked": "2026-08-18T07:40:05.052557",
+      "hash": "0b019cc342a77e2b98e82a268855d40bbeb0caa438479e1da9d73c3a020d6cd5",
+      "last_checked": "2026-09-15T07:28:33.851669",
       "status": "unchanged",
-      "session_id": "2026-08-18T07:39:50.825931",
-      "etag": "\"46d7-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"4737-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-scene-to-a-chapter-or-a-section-header.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/fadingstickyheader.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:24.000394",
+      "last_checked": "2026-09-15T07:28:34.144897",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/defining-a-component-style.json": {
-      "hash": "6a08a4710502c8930dd53715aeee40bb1dbe6556f80c5aa32033a40fb0ae58f6",
-      "last_checked": "2026-09-11T07:39:24.107110",
+      "hash": "dfcaf4a251e4ee87fea8ac5feef72796bacea23cf86739029973d7ba2308f51e",
+      "last_checked": "2026-09-15T07:28:34.269162",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"2513-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2573-6590229150437-df\"",
       "file_path": "documentation/AppleNews/defining-a-component-style.md"
     },
     "https://developer.apple.com/documentation/applenews/defining-a-component-style": {
-      "hash": "6a08a4710502c8930dd53715aeee40bb1dbe6556f80c5aa32033a40fb0ae58f6",
-      "last_checked": "2026-08-14T07:26:33.414696",
+      "hash": "dfcaf4a251e4ee87fea8ac5feef72796bacea23cf86739029973d7ba2308f51e",
+      "last_checked": "2026-09-15T07:28:34.269216",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"2513-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2573-6590229150437-df\"",
       "file_path": "documentation/AppleNews/defining-a-component-style.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/video.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:24.440865",
+      "last_checked": "2026-09-15T07:28:34.545339",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/preparing-image-video-audio-music-and-arkit-assets.json": {
-      "hash": "87c0a46a8579b49d5e80690d944b81c5c80e7a71188f39c4bc04116eb7f2193f",
-      "last_checked": "2026-09-11T07:39:24.521089",
+      "hash": "0ca146e233b3c4d26be52007862f6c29d30dccc2eb3a1102a5661ed9ed6a476f",
+      "last_checked": "2026-09-15T07:28:34.665734",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"8c56-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8cb6-6590229150437-df\"",
       "file_path": "documentation/AppleNews/preparing-image-video-audio-music-and-arkit-assets.md"
     },
     "https://developer.apple.com/documentation/applenews/preparing-image-video-audio-music-and-arkit-assets": {
-      "hash": "87c0a46a8579b49d5e80690d944b81c5c80e7a71188f39c4bc04116eb7f2193f",
-      "last_checked": "2026-08-14T07:26:33.787057",
+      "hash": "0ca146e233b3c4d26be52007862f6c29d30dccc2eb3a1102a5661ed9ed6a476f",
+      "last_checked": "2026-09-15T07:28:34.665846",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"8c56-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8cb6-6590229150437-df\"",
       "file_path": "documentation/AppleNews/preparing-image-video-audio-music-and-arkit-assets.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/listitemstyle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:24.823414",
+      "last_checked": "2026-09-15T07:28:34.953674",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/inlinetextstyle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:25.109990",
+      "last_checked": "2026-09-15T07:28:35.283279",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/using-markdown-with-apple-news-format.json": {
-      "hash": "5f988b9ed3eec3ffd281598552e364c1e258fd801e6d90a4170290687db4ce77",
-      "last_checked": "2026-09-11T07:39:25.244769",
+      "hash": "05edc428e194e61abfe750bed1f4ac2205a21dc2138e8602ae8bf500e81ea301",
+      "last_checked": "2026-09-15T07:28:35.496304",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"8ac3-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8b23-6590229150437-df\"",
       "file_path": "documentation/AppleNews/using-markdown-with-apple-news-format.md"
     },
     "https://developer.apple.com/documentation/applenews/using-markdown-with-apple-news-format": {
-      "hash": "5f988b9ed3eec3ffd281598552e364c1e258fd801e6d90a4170290687db4ce77",
-      "last_checked": "2026-08-14T07:26:34.387534",
+      "hash": "05edc428e194e61abfe750bed1f4ac2205a21dc2138e8602ae8bf500e81ea301",
+      "last_checked": "2026-09-15T07:28:35.496402",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"8ac3-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"8b23-6590229150437-df\"",
       "file_path": "documentation/AppleNews/using-markdown-with-apple-news-format.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/body.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:25.535474",
+      "last_checked": "2026-09-15T07:28:35.786023",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/title.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:25.802916",
+      "last_checked": "2026-09-15T07:28:36.101514",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/heading.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:26.075901",
+      "last_checked": "2026-09-15T07:28:36.439697",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/intro.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:26.394579",
+      "last_checked": "2026-09-15T07:28:36.753628",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/author.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:26.673081",
+      "last_checked": "2026-09-15T07:28:37.271326",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/byline.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:26.951376",
+      "last_checked": "2026-09-15T07:28:37.574395",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/illustrator.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:27.223564",
+      "last_checked": "2026-09-15T07:28:37.887313",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/photographer.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:27.559013",
+      "last_checked": "2026-09-15T07:28:38.184865",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/quote.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:27.866880",
+      "last_checked": "2026-09-15T07:28:38.492647",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/text.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:28.158279",
+      "last_checked": "2026-09-15T07:28:38.811549",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-components.json": {
-      "hash": "c55c285686a136ad85c4c0052451c9573f2a8b8d439199750bfda5c2e251562c",
-      "last_checked": "2026-09-11T07:39:28.231550",
+      "hash": "7cf0d976dc85d2c93828f7f497a8490c551e675f572d9dda8f4dfbdc2225f47f",
+      "last_checked": "2026-09-15T07:28:38.934757",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"1dd7-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1e37-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-components.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-components": {
-      "hash": "c55c285686a136ad85c4c0052451c9573f2a8b8d439199750bfda5c2e251562c",
-      "last_checked": "2026-08-14T07:26:37.318566",
+      "hash": "7cf0d976dc85d2c93828f7f497a8490c551e675f572d9dda8f4dfbdc2225f47f",
+      "last_checked": "2026-09-15T07:28:38.934819",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"1dd7-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"1e37-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-components.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/component.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:28.564601",
+      "last_checked": "2026-09-15T07:28:39.428925",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/image.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:28.852801",
+      "last_checked": "2026-09-15T07:28:39.730220",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/figure.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:29.130276",
+      "last_checked": "2026-09-15T07:28:40.045502",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/portrait.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:29.437010",
+      "last_checked": "2026-09-15T07:28:40.553605",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/logo.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:29.732729",
+      "last_checked": "2026-09-15T07:28:40.859280",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/replicaadvertisement.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:29.994147",
+      "last_checked": "2026-09-15T07:28:41.184272",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/audio.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:30.270038",
+      "last_checked": "2026-09-15T07:28:41.496827",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/music.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:30.537316",
+      "last_checked": "2026-09-15T07:28:41.829144",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/podcast.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:30.839888",
+      "last_checked": "2026-09-15T07:28:42.141390",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/embedwebvideo.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:31.117659",
+      "last_checked": "2026-09-15T07:28:42.974336",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/map.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:31.444194",
+      "last_checked": "2026-09-15T07:28:43.349382",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/mapitem.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:31.720252",
+      "last_checked": "2026-09-15T07:28:43.696154",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/mapspan.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:32.052668",
+      "last_checked": "2026-09-15T07:28:44.009522",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/place.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:32.344355",
+      "last_checked": "2026-09-15T07:28:44.323412",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/instagram.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:32.609805",
+      "last_checked": "2026-09-15T07:28:44.643118",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/facebookpost.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:32.880443",
+      "last_checked": "2026-09-15T07:28:44.967228",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/tiktok.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:33.172404",
+      "last_checked": "2026-09-15T07:28:45.269020",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/arkit.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:33.452264",
+      "last_checked": "2026-09-15T07:28:45.565701",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/tables-in-an-article.json": {
-      "hash": "db48117da0c4e8c2e0ca4fcbcc9a07bb96e14512b6af3f6b8c9948c3496c2b7f",
-      "last_checked": "2026-09-11T07:39:33.517244",
+      "hash": "a15e4a7634d5f55bedecacfc4c149a44adc1f0b364bae1a208fae79dce5638b3",
+      "last_checked": "2026-09-15T07:28:45.831877",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"2afa-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2b5a-659022912d319-df\"",
       "file_path": "documentation/AppleNews/tables-in-an-article.md"
     },
     "https://developer.apple.com/documentation/applenews/tables-in-an-article": {
-      "hash": "db48117da0c4e8c2e0ca4fcbcc9a07bb96e14512b6af3f6b8c9948c3496c2b7f",
-      "last_checked": "2026-08-14T07:26:42.438122",
+      "hash": "a15e4a7634d5f55bedecacfc4c149a44adc1f0b364bae1a208fae79dce5638b3",
+      "last_checked": "2026-09-15T07:28:45.831929",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"2afa-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2b5a-659022912d319-df\"",
       "file_path": "documentation/AppleNews/tables-in-an-article.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/banneradvertisement.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:33.813288",
+      "last_checked": "2026-09-15T07:28:46.028310",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/mediumrectangleadvertisement.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:34.095304",
+      "last_checked": "2026-09-15T07:28:46.347922",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/creating-an-article-link.json": {
-      "hash": "973936b9a1dbc2d9ef435c63ae10d5875ac116aa1d919ce140258ac783c343e5",
-      "last_checked": "2026-09-11T07:39:34.181125",
+      "hash": "79ffb966fc30e540cb9636a8022f50dc11888e5ca980c0487fddb15b16b1d186",
+      "last_checked": "2026-09-15T07:28:46.482281",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"396a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"39ca-6590229150437-df\"",
       "file_path": "documentation/AppleNews/creating-an-article-link.md"
     },
     "https://developer.apple.com/documentation/applenews/creating-an-article-link": {
-      "hash": "973936b9a1dbc2d9ef435c63ae10d5875ac116aa1d919ce140258ac783c343e5",
-      "last_checked": "2026-08-14T07:26:43.079903",
+      "hash": "79ffb966fc30e540cb9636a8022f50dc11888e5ca980c0487fddb15b16b1d186",
+      "last_checked": "2026-09-15T07:28:46.482331",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"396a-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"39ca-6590229150437-df\"",
       "file_path": "documentation/AppleNews/creating-an-article-link.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/displaying-components-side-by-side.json": {
-      "hash": "bc769291deeb062d2528521b6f29f0b7e102d5a896bd37a956f6bb2374c0a999",
-      "last_checked": "2026-09-11T07:39:34.308299",
+      "hash": "abbf793a2c43fc3a80a2e85c55b4b29c1e455e8d1128481e29a15f6a778833ae",
+      "last_checked": "2026-09-15T07:28:46.574848",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"3a83-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3ae3-6590229150437-df\"",
       "file_path": "documentation/AppleNews/displaying-components-side-by-side.md"
     },
     "https://developer.apple.com/documentation/applenews/displaying-components-side-by-side": {
-      "hash": "bc769291deeb062d2528521b6f29f0b7e102d5a896bd37a956f6bb2374c0a999",
-      "last_checked": "2026-08-14T07:26:43.159947",
+      "hash": "abbf793a2c43fc3a80a2e85c55b4b29c1e455e8d1128481e29a15f6a778833ae",
+      "last_checked": "2026-09-15T07:28:46.574910",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"3a83-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"3ae3-6590229150437-df\"",
       "file_path": "documentation/AppleNews/displaying-components-side-by-side.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/chapter.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:34.645472",
+      "last_checked": "2026-09-15T07:28:46.843690",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/aside.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:34.939261",
+      "last_checked": "2026-09-15T07:28:47.173359",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/collectiondisplay.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:35.241794",
+      "last_checked": "2026-09-15T07:28:47.505061",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/horizontalstackdisplay.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:35.499074",
+      "last_checked": "2026-09-15T07:28:47.826235",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/flexiblespacer.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:35.784865",
+      "last_checked": "2026-09-15T07:28:48.057542",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/articlelink.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:36.034505",
+      "last_checked": "2026-09-15T07:28:48.434115",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/supportedarticleidentifier.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:36.312912",
+      "last_checked": "2026-09-15T07:28:48.752164",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/publisherarticleidentifier.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:36.605759",
+      "last_checked": "2026-09-15T07:28:48.997501",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/articletitle.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:36.869427",
+      "last_checked": "2026-09-15T07:28:49.311615",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/articlethumbnail.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:37.138476",
+      "last_checked": "2026-09-15T07:28:49.628805",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/linkbutton.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:37.410941",
+      "last_checked": "2026-09-15T07:28:49.960966",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/componentanimation.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:37.704346",
+      "last_checked": "2026-09-15T07:28:50.266364",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/appearanimation.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:38.013052",
+      "last_checked": "2026-09-15T07:28:50.584344",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/fadeinanimation.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:38.342347",
+      "last_checked": "2026-09-15T07:28:50.927797",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/moveinanimation.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:38.616583",
+      "last_checked": "2026-09-15T07:28:51.179083",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/scalefadeanimation.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:38.922622",
+      "last_checked": "2026-09-15T07:28:51.498128",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/behavior.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:39.221299",
+      "last_checked": "2026-09-15T07:28:51.811255",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/backgroundmotion.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:39.514622",
+      "last_checked": "2026-09-15T07:28:52.117041",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/backgroundparallax.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:39.806186",
+      "last_checked": "2026-09-15T07:28:52.431529",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/motion.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:40.056187",
+      "last_checked": "2026-09-15T07:28:52.739386",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/springy.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:40.340398",
+      "last_checked": "2026-09-15T07:28:53.081441",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/linkaddition.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:40.598458",
+      "last_checked": "2026-09-15T07:28:53.382393",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/componentlink.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:40.884412",
+      "last_checked": "2026-09-15T07:28:53.714554",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/addition.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:41.198103",
+      "last_checked": "2026-09-15T07:28:54.086136",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/componentaddition.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:41.476031",
+      "last_checked": "2026-09-15T07:28:54.403278",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/supportedurls.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:41.759325",
+      "last_checked": "2026-09-15T07:28:54.733365",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/supportedinternalurls.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:42.023801",
+      "last_checked": "2026-09-15T07:28:55.063144",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/margin.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:42.339123",
+      "last_checked": "2026-09-15T07:28:55.387288",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/autoplacementlayout.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:42.644765",
+      "last_checked": "2026-09-15T07:28:55.729156",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/advertisinglayout.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:42.935984",
+      "last_checked": "2026-09-15T07:28:56.048125",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/repeatableimagefill.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:43.229430",
+      "last_checked": "2026-09-15T07:28:56.361384",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/videofill.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:43.528570",
+      "last_checked": "2026-09-15T07:28:56.707975",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/gradientfill.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:43.829503",
+      "last_checked": "2026-09-15T07:28:57.032231",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/fill.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:44.165233",
+      "last_checked": "2026-09-15T07:28:57.357067",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/colorstop.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:44.463163",
+      "last_checked": "2026-09-15T07:28:57.595472",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/supportedunits.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:44.762221",
+      "last_checked": "2026-09-15T07:28:57.899151",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/scene.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:45.058955",
+      "last_checked": "2026-09-15T07:28:58.227242",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/parallaxscaleheader.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:45.372082",
+      "last_checked": "2026-09-15T07:28:58.540065",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/cornermask.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:45.702389",
+      "last_checked": "2026-09-15T07:28:58.870574",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-a-json-table.json": {
-      "hash": "9af913d6058ed8a2beee57e2cd0736236023a03c9ffc66db223783c75824d260",
-      "last_checked": "2026-09-11T07:39:45.826414",
+      "hash": "e287d5052ae39ee9f1272c1a839e92b7ff5c5961b2351c430f797fa9b8f29f41",
+      "last_checked": "2026-09-15T07:28:59.019980",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"2954-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"29b4-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-json-table.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-a-json-table": {
-      "hash": "9af913d6058ed8a2beee57e2cd0736236023a03c9ffc66db223783c75824d260",
-      "last_checked": "2026-08-14T07:26:54.767917",
+      "hash": "e287d5052ae39ee9f1272c1a839e92b7ff5c5961b2351c430f797fa9b8f29f41",
+      "last_checked": "2026-09-15T07:28:59.020028",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"2954-65858057f3661-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"29b4-6590229150437-df\"",
       "file_path": "documentation/AppleNews/adding-a-json-table.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/datatable.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:46.112620",
+      "last_checked": "2026-09-15T07:28:59.262628",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/recordstore.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:46.459914",
+      "last_checked": "2026-09-15T07:28:59.583926",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/datadescriptor.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:46.822402",
+      "last_checked": "2026-09-15T07:29:00.108860",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/datatablesorting.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:47.172194",
+      "last_checked": "2026-09-15T07:29:00.420736",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/dataformat.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:47.450856",
+      "last_checked": "2026-09-15T07:29:00.732404",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/floatdataformat.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:47.736790",
+      "last_checked": "2026-09-15T07:29:01.040601",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/imagedataformat.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:48.037160",
+      "last_checked": "2026-09-15T07:29:01.317274",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/adding-an-html-table.json": {
-      "hash": "5aae165e952ebdd52e1d129a44ad4e4a3d303d98ffc5e10c8a927622581c09cd",
-      "last_checked": "2026-09-11T07:39:48.165649",
+      "hash": "665f53182a6907fe59508f954bd1b4b6db4443556e9661b4d7b7f440e1601f71",
+      "last_checked": "2026-09-15T07:29:01.453411",
       "status": "unchanged",
-      "session_id": "2026-09-11T07:39:08.832318",
-      "etag": "\"2a07-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2a67-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-an-html-table.md"
     },
     "https://developer.apple.com/documentation/applenews/adding-an-html-table": {
-      "hash": "5aae165e952ebdd52e1d129a44ad4e4a3d303d98ffc5e10c8a927622581c09cd",
-      "last_checked": "2026-08-14T07:26:56.870860",
+      "hash": "665f53182a6907fe59508f954bd1b4b6db4443556e9661b4d7b7f440e1601f71",
+      "last_checked": "2026-09-15T07:29:01.453473",
       "status": "unchanged",
-      "session_id": "2026-08-14T07:26:19.124139",
-      "etag": "\"2a07-65858057ce416-df\"",
+      "session_id": "2026-09-15T07:28:15.961272",
+      "etag": "\"2a67-659022912d319-df\"",
       "file_path": "documentation/AppleNews/adding-an-html-table.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenews/applenewsformat/htmltable.json": {
       "hash": "",
-      "last_checked": "2026-09-11T07:39:48.540770",
+      "last_checked": "2026-09-15T07:29:01.719880",
       "status": "error",
       "error": "HTTP 404"
     }

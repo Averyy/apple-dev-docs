@@ -1,4 +1,4 @@
 Completed scraping MetricKit!
-Total pages scraped: 536
-Pages skipped (unchanged): 19
+Total pages scraped: 554
+Pages skipped (unchanged): 1
 Pages failed: 0

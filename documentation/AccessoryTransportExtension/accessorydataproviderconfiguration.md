@@ -7,7 +7,6 @@ A protocol that configures and manages communication between the extension and t
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

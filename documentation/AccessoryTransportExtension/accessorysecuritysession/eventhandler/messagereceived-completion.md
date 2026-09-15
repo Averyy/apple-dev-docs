@@ -8,7 +8,6 @@ Handles incoming key material from the system during key exchange.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
 Completed scraping PermissionKit!
-Total pages scraped: 14
-Pages skipped (unchanged): 95
+Total pages scraped: 108
+Pages skipped (unchanged): 1
 Pages failed: 0

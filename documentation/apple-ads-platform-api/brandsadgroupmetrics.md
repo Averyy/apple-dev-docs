@@ -20,27 +20,27 @@ The `BrandsAdGroupMetrics` extends [`BrandsMetrics`](brandsmetrics.md) with no a
 
 ## Properties
 
-- `actions` (ActionMetrics)
-- `actionsPerImpression` (RateMetrics)
-- `actionsPerTap` (RateMetrics)
-- `call` (ActionMetrics)
-- `costPerAction` (CostMetrics)
-- `costPerFirstAction` (CostMetrics)
-- `cpm` (Money)
-- `cpt` (Money)
-- `date` (date)
-- `firstActions` (ActionMetrics)
-- `firstActionsPerImpression` (RateMetrics)
-- `firstActionsPerTap` (RateMetrics)
-- `galleryEngagement` (ActionMetrics)
-- `getDirections` (ActionMetrics)
-- `getTheApp` (ActionMetrics)
-- `impressions` (int64)
-- `localSpend` (Money)
-- `share` (ActionMetrics)
-- `tapURL` (ActionMetrics)
-- `taps` (int64)
-- `ttr` (number)
+- `date` (date): Report date in YYYY-MM-DD format.
+- `localSpend` (Money): Total spend. See [`Money`](money.md).
+- `impressions` (int64): Total ad impressions.
+- `taps` (int64): Total ad taps.
+- `ttr` (number): Tap-through rate.
+- `cpt` (Money): Average cost per tap. See [`Money`](money.md).
+- `cpm` (Money): Average cost per thousand impressions. See [`Money`](money.md).
+- `firstActions` (ActionMetrics): First-time action counts. See [`ActionMetrics`](actionmetrics.md).
+- `firstActionsPerTap` (RateMetrics): First-action rates per tap. See [`RateMetrics`](ratemetrics.md).
+- `firstActionsPerImpression` (RateMetrics): First-action rates per impression. See [`RateMetrics`](ratemetrics.md).
+- `costPerFirstAction` (CostMetrics): Cost per first action. See [`CostMetrics`](costmetrics.md).
+- `actions` (ActionMetrics): Total action counts. See [`ActionMetrics`](actionmetrics.md).
+- `costPerAction` (CostMetrics): Cost per action. See [`CostMetrics`](costmetrics.md).
+- `getDirections` (ActionMetrics): Get-directions action counts. See [`ActionMetrics`](actionmetrics.md).
+- `tapURL` (ActionMetrics): Tap-URL action counts. See [`ActionMetrics`](actionmetrics.md).
+- `call` (ActionMetrics): Call action counts. See [`ActionMetrics`](actionmetrics.md).
+- `share` (ActionMetrics): Share action counts. See [`ActionMetrics`](actionmetrics.md).
+- `getTheApp` (ActionMetrics): Get-the-app action counts. See [`ActionMetrics`](actionmetrics.md).
+- `galleryEngagement` (ActionMetrics): Gallery engagement action counts. See [`ActionMetrics`](actionmetrics.md).
+- `actionsPerTap` (RateMetrics): Total actions per tap rate. See [`RateMetrics`](ratemetrics.md).
+- `actionsPerImpression` (RateMetrics): Total actions per impression rate. See [`RateMetrics`](ratemetrics.md).
 
 ## See Also
 

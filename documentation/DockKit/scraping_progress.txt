@@ -1,4 +1,4 @@
 Completed scraping DockKit!
-Total pages scraped: 1
-Pages skipped (unchanged): 168
+Total pages scraped: 168
+Pages skipped (unchanged): 1
 Pages failed: 0

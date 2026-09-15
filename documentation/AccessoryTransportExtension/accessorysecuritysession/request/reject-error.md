@@ -7,7 +7,6 @@ Rejects the session request with an optional error.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

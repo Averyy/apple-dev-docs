@@ -7,7 +7,6 @@ Sends a security message to the system.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -7,7 +7,6 @@ A transport method that uses the local network for data delivery.
 
 **Availability**:
 - iOS 26.5+
-- Mac Catalyst ?+
 
 ## Declaration
 

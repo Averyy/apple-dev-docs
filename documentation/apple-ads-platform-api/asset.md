@@ -68,7 +68,7 @@ Query endpoint requests support fields marked **Filterable** in the properties a
 ## Properties
 
 - `id` (uuid): Internal asset identifier (UUID). Filterable with `EQUALS`, `IN`.
-- `name` (string): User-facing asset name or description. Filterable with `EQUALS`, `IN`, `LIKE`, `LIKE_IGNORE_CASE`, `STARTS_WITH`, `ENDS_WITH`.
+- `name` (string): User-facing asset name or description. Filterable with `EQUALS`, `IN`, `LIKE`, `STARTS_WITH`, `ENDS_WITH`.
 - `assetType` (AssetType): The media type of the asset. See [`AssetType`](assettype.md) for details. Filterable with `EQUALS`, `IN`.
 - `providerAssetId` (string): Asset identifier assigned by the provider system (for example, App Store Connect asset ID). Filterable with `EQUALS`, `IN`.
 - `promotedObjectId` (string): Identifier of the promoted object (for example, `adamId` for apps, `brandId` for Maps). Filterable with `EQUALS`.

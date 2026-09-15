@@ -7,7 +7,6 @@ A protocol that defines methods for handling transport session events.
 
 **Availability**:
 - iOS 26.2+
-- Mac Catalyst ?+
 
 ## Declaration
 

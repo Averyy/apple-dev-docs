@@ -28,15 +28,15 @@ Alternatively, Control-click inside a folder, and then click **New** > **Compute
 
 #### Work Within the Four Stage Run Order
 
-The default Compute Graph node includes four stages — Emission, Initialization, Simulation, and Output. Additional stage types, such as Texture, are available when configuring custom pipelines. The Compute Graph stages run top to bottom.
+The default Compute Graph node includes four phases — Emission, Initialization, Simulation, and Output. Additional stage types, such as Texture, are available when configuring custom pipelines. The Compute Graph phases run top to bottom.
 
-![A screenshot of the four Reality Composer Pro Compute Graph stages, shown left to right.](/images/RealityComposerPro/ComputeGraphHorizontal@2x.png)
+![A screenshot of the four Reality Composer Pro Compute Graph phases, shown left to right.](/images/RealityComposerPro/ComputeGraphHorizontal@2x.png)
 
-At the top of each stage is a node called **Constants**. Constant nodes provide static values that you can feed into other nodes’ parameters. Constants inject fixed, hardcoded values into the graph, rather than values computed dynamically from other nodes. In the Simulation stage, for example, you can use the Constant to set up the capacity count and a loop toggle. The Output stage Constant contains properties related to the material used by the individual particles.
+At the top of each phase is a node called **Constants**. Constant nodes provide static values that you can feed into other nodes’ parameters. Constants inject fixed, hardcoded values into the graph, rather than values computed dynamically from other nodes. In the Simulation phase, for example, you can use the Constant to set up the capacity count and a loop toggle. The Output phase Constant contains properties related to the material used by the individual particles.
 
-Add a node to a stage by clicking **+** inside the node. Nodes in each stage run in the order they appear, top to bottom; reorder them with the up and down arrows on a node when a later node depends on an earlier one’s result.
+Add a node to a phase by clicking **+** inside the node. Nodes in each phase run in the order they appear, top to bottom; reorder them with the up and down arrows on a node when a later node depends on an earlier one’s result.
 
-For example, in the Simulation stage, a `force::gravity` node feeding into `element_integrate` must run before a termination check that depends on the resulting position. A **Texture** stage type is also available for custom pipelines that generate textures rather than driving particles directly.
+For example, in the Simulation phase, a `force::gravity` node feeding into `element_integrate` must run before a termination check that depends on the resulting position. A **Texture** phase type is also available for custom pipelines that generate textures rather than driving particles directly.
 
 Every parameter is static until you wire a node into its port, which is what makes it dynamic. Compute Graph has no separate “dynamic mode” toggle the way some other tools do.
 
@@ -56,7 +56,7 @@ Apple’s Compute Graph framework documents the full built-in node library by na
 
 #### Read Current Element State with Element Nodes
 
-Available in any stage, `element::` nodes read data about the particle currently being processed:
+Available in any phase, `element::` nodes read data about the particle currently being processed:
 
 - `element::position`, `element::velocity`, `element::size`, and `element::color` return current per-particle values.
 - `element::age` and `element::ageOverLifetime` return elapsed time (ageOverLifetime is normalized to 0–1 across the particle’s lifetime, useful for anything that should animate consistently regardless of how long the particle lives).
@@ -94,7 +94,7 @@ Output nodes shape what’s rendered without modifying the underlying element da
 
 #### Reach for Utility Nodes
 
-- `graph::` nodes are usable in any stage and cover general-purpose operations not specific to a single stage.
+- `graph::` nodes are usable in any phase and cover general-purpose operations not specific to a single phase.
 - `random::` nodes generate pseudo-random values seeded from the graph’s random number generator — the editor’s **Random (Float3)** node is what you’ll use to add per-particle variation to position, velocity, or color so a whole burst of particles doesn’t look identical.
 - `texture_sample` and `texture_sample1d` sample a texture asset, letting you drive per-particle values, typically color, from an image rather than computing them with shader math.
 
@@ -112,7 +112,7 @@ For complete documentation on Compute Graph nodes, see [`Compute Graph`](https:/
 
 - **Set particle capacity to match the effect.** A far larger capacity than the effect ever uses wastes GPU memory. Size the capacity to the emission rate and particle lifetime you’ve configured (roughly `rate × lifetime`, plus headroom for bursts).
 - **Prefer a gradient texture over computed gradient math.** Sampling a small texture is both more efficient than computing equivalent colors procedurally with shader math in the graph, and easier to iterate on — an artist can edit a texture without touching the graph.
-- **Keep Output-stage work presentation-only.** Output nodes run on every live particle each time the stage executes, so avoid putting expensive computation there that could instead run once in Simulation (or once in Initialization, if the value doesn’t need to change over the particle’s life).
+- **Keep Output-phase work presentation-only.** Output nodes run on every live particle each time the phase executes, so avoid putting expensive computation there that could instead run once in Simulation (or once in Initialization, if the value doesn’t need to change over the particle’s life).
 - **Use `element::terminate` deliberately.** Precise termination conditions, rather than relying purely on a long fixed lifetime, keep the live particle count, and therefore GPU cost, closer to what’s actually visible on screen.
 
 #### Combine Compute Graph with Your Apps Gameplay Logic
@@ -126,7 +126,7 @@ Keep Compute Graph focused on simulating and rendering the effect; broader gamep
 ## See Also
 
 - [Building a working Compute Graph example](building-a-working-compute-graph-example.md)
-  Combine emission, initialization, simulation, and output nodes into a falling-snow effect colored from a gradient texture.
+  Combine emission, initialization, simulation, and output nodes into a swirling ring of particles colored from a gradient texture.
 
 
 ---

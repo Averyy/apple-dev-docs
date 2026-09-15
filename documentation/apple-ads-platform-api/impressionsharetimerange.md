@@ -34,7 +34,7 @@ The `ImpressionShareTimeRange` object specifies the date window and granularity 
 - `start` (date) *(required)*: Start date in YYYY-MM-DD format. When `granularity` is `WEEKLY_SUN_SAT`, this date must be a Sunday.
 - `end` (date) *(required)*: End date in YYYY-MM-DD format.
 - `timeZone` (string): Timezone. Fixed to `UTC`. Not user-configurable. Default: `"UTC"`.
-- `granularity` (string) *(required)*: Aggregation period. `DAILY` aggregates per day, with a maximum window of 30 days (inclusive), and populates the `day` field (not the `week` field) in each row. `WEEKLY_SUN_SAT` aggregates per Sunday-to-Saturday week, with a maximum window of 4 weeks (`LAST_4_WEEK`), and populates the `week` field (not the `day` field) with the Sunday start date. The `start` date must be a Sunday. Possible values: `DAILY`, `WEEKLY_SUN_SAT`.
+- `granularity` (string) *(required)*: Aggregation period. `DAILY` aggregates per day, with a maximum window of 30 days (inclusive), and populates the `day` field (not the `week` field) in each row. `WEEKLY_SUN_SAT` aggregates per Sunday-to-Saturday week, with a maximum window of 4 weeks, and populates the `week` field (not the `day` field) with the Sunday start date. The `start` date must be a Sunday. Possible values: `DAILY`, `WEEKLY_SUN_SAT`.
 
 ## See Also
 

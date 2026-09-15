@@ -13,7 +13,7 @@ Budget orders are available to [`Apple Ads`](https://developer.apple.comhttps://
 
 To use budget orders, an ad account must have a `LOC` (Line of Credit) `paymentModel`. In the API, Line of Credit (`LOC`) invoicing details are in [`InvoiceDetail`](invoicedetail.md). If you don’t have a billing model set up, campaigns default to Pay as You Go (`PAYG`) and budget orders aren’t available.
 
-To confirm your payment model, call [`Get User ACL`](get-user-acls.md) and check the [`PaymentModel`](paymentmodel.md) field in the [`User ACL`](useracl.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
+To confirm your payment model, call [`Get Ad Account by ID`](get-ad-accounts-_id_.md) and check the [`AdAccount.PaymentModel`](adaccount/paymentmodel-data.typealias.md) field in the [`AdAccount`](adaccount.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
 
 #### Call the Budget Orders Endpoints
 

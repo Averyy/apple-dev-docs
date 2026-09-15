@@ -32,7 +32,7 @@ Keyword reports support `groupBy` dimensions such as `countryOrRegion` and `devi
           "adAccountId": 123456789,
           "campaignId": 444555666,
           "adGroupId": 555666777,
-          "status": "ACTIVE",
+          "status": "ENABLED",
           "deleted": false
         },
         "totalMetrics": {
