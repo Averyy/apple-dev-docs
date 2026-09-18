@@ -6,7 +6,7 @@
 Sets the current range of the slider control.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

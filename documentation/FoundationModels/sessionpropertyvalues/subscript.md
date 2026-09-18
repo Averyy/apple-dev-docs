@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: subscript
 
+Accesses the value stored for the given session property key.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,10 @@
 ```swift
 final subscript<K>(key: K.Type) -> K.Value where K : SessionPropertyKey { get set }
 ```
+
+## Parameters
+
+- `key`: The session property key type whose value to read or write.
 
 
 ---

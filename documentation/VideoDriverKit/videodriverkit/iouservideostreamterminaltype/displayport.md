@@ -6,7 +6,7 @@
 The identifier for a terminal type of a stream from/to an DisplayPort port.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

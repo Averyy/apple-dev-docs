@@ -23,6 +23,8 @@ static var systemTraitsAffectingColorAppearance: [UITrait] { get }
 ## See Also
 
 - [static var systemTraitsAffectingImageLookup: [UITrait]](uitraitcollection/systemtraitsaffectingimagelookup-4jv5.md)
+- [static var systemTraitsAffectingVerticalBarEdge: [UITrait]](uitraitcollection/systemtraitsaffectingverticalbaredge-475st.md)
+  The system traits that affect the value of `verticalBarEdge`.
 
 
 ---

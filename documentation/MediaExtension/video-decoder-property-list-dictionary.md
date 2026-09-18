@@ -33,6 +33,8 @@ A MediaExtension video decoder needs to include an `EXAppExtensionAttributes` di
 
 ## See Also
 
+- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+  Extend the media formats the system can open by providing a format reader and a video decoder.
 - [protocol MEVideoDecoder](mevideodecoder.md)
   A protocol that defines the requirements for a video decoder.
 - [protocol MEVideoDecoderExtension](mevideodecoderextension.md)

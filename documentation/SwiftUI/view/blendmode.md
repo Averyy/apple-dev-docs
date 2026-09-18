@@ -59,6 +59,7 @@ HStack {
 - [enum ColorRenderingMode](colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
 - [protocol CompositorContent](compositorcontent.md)
+  A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
 - [struct CompositorContentBuilder](compositorcontentbuilder.md)
   A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 - [struct AnyCompositorContent](anycompositorcontent.md)

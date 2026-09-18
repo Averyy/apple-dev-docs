@@ -16,7 +16,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 ## Mentions
 
-- [Working with Interstitial Content](working-with-interstitial-content.md)
+- [Working with interstitial content](working-with-interstitial-content.md)
 
 #### Return Value
 

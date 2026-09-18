@@ -18,7 +18,7 @@ object Pass.Generic
 
 ## Mentions
 
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
 
 #### Discussion
 
@@ -31,7 +31,7 @@ Use the generic pass type for passes that don’t fit into other pass categories
 
 ## See Also
 
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
 
 

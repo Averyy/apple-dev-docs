@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
+Information about a network problem that prevented a request from completing.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,8 +23,10 @@ struct NetworkFailure
 
 ### Creating a network failure error
 - [init(debugDescription: String)](privatecloudcomputelanguagemodel/error/networkfailure/init(debugdescription:).md)
+  Creates a network failure with the debug description you specify.
 ### Getting the error description
 - [var debugDescription: String](privatecloudcomputelanguagemodel/error/networkfailure/debugdescription.md)
+  A debug description of the network failure.
 
 ## Relationships
 

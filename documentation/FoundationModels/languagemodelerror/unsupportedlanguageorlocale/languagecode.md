@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The language code that the model doesn’t support.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var languageCode: Locale.LanguageCode
 ## See Also
 
 - [var metadata: [String : any Sendable]](languagemodelerror/unsupportedlanguageorlocale/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var debugDescription: String](languagemodelerror/unsupportedlanguageorlocale/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 
 ---

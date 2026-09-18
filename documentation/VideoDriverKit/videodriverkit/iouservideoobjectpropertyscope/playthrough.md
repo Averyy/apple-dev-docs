@@ -6,7 +6,7 @@
 The scope for properties that apply to the play-through side of an object.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

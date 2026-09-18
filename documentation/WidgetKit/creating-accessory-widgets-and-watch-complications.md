@@ -58,9 +58,22 @@ Additionally, consider adding support for iOS by adding an iOS app target to you
 - [struct AccessoryWidgetGroup](accessorywidgetgroup.md)
   A view type that has a label at the top and three content views masked with a circle or rounded square.
 - [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
-  The style for an [`AccessoryWidgetGroup`](accessorywidgetgroup.md) view.
+  The style for an accessory widget group view.
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
+- [func widgetCurvesContent(Bool) -> some View
+](../swiftui/view/widgetcurvescontent(_:).md)
+  Displays the widget’s content along a curve if the context allows it.
+- [func widgetLabel(_:)](../swiftui/view/widgetlabel(_:).md)
+  Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
+- [func widgetLabel<Label>(label: () -> Label) -> some View
+](../swiftui/view/widgetlabel(label:).md)
+  Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
+- [var showsWidgetLabel: Bool](../swiftui/environmentvalues/showswidgetlabel.md)
+  A Boolean value that indicates whether an accessory family widget can display an accessory label.
+- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View
+](../swiftui/view/accessorywidgetgroupstyle(_:).md)
+  The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 
 
 ---

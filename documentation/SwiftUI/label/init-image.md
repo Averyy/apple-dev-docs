@@ -24,6 +24,7 @@ nonisolated init(_ titleResource: LocalizedStringResource, image name: String)
 ## Parameters
 
 - `titleResource`: A title generated from a localized string.
+- `name`: The name of the image resource to lookup.
 
 ## See Also
 

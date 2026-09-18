@@ -37,7 +37,7 @@ You can further tailor passes for a personalized experience and make live update
 ### Essentials
 - [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
@@ -79,7 +79,7 @@ You can further tailor passes for a personalized experience and make live update
 - [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
 ### Generic passes
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
 - [object Pass.Generic](pass/generic-data.dictionary.md)
   An object that represents the groups of fields that display the information for a generic pass.

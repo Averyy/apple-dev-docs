@@ -6,7 +6,7 @@
 Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

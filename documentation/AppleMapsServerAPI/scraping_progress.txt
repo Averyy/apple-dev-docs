@@ -1,4 +1,4 @@
 Completed scraping Apple Maps Server API!
-Total pages scraped: 48
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 49
 Pages failed: 0

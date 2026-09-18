@@ -23,6 +23,8 @@ nonisolated init<C>(_ titleResource: LocalizedStringResource, image: ImageResour
 ## Parameters
 
 - `titleResource`: Text resource for the group’s localized title, that describes the contents of the group.
+- `image`: The name of the image resource to look up.
+- `content`: The content to display.
 
 ## See Also
 

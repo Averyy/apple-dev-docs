@@ -23,8 +23,10 @@ struct Reasoning
 
 ### Creating a reasoning instance
 - [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], signature: Data?)](transcript/reasoning/init(id:metadata:segments:signature:).md)
+  Creates a reasoning entry that contains the segments you provide.
 ### Inspecting the reasoning
 - [var description: String](transcript/reasoning/description.md)
+  A textual representation of the reasoning entry.
 - [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
   Metadata produced by the model while generating this reasoning entry.
 - [var segments: [Transcript.Segment]](transcript/reasoning/segments.md)

@@ -261,6 +261,7 @@ struct HMError
 ### Type Properties
 - [static var errorDomain: String](hmerror/errordomain.md)
 - [static var homeUpgradeRequired: HMError.Code](hmerror/homeupgraderequired.md)
+- [static var nfcReaderTooHot: HMError.Code](hmerror/nfcreadertoohot.md)
 
 ## Relationships
 

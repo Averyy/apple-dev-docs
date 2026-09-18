@@ -47,7 +47,7 @@ To get storefront information in your app, use [`Storefront`](https://developer.
 - [type refundRiskingPreference](refundriskingpreference.md)
   A Boolean value that indicates whether the App Store asks you for consumption data to help inform the refund decision.
 - [type SKU](sku.md)
-  The product identifier of an in-app purchase product you manage in your own system.
+  The product identifier of an Apple In-App Purchase product you manage in your own system.
 - [type taxCode](taxcode.md)
   A tax code that applies to a SKU.
 - [type targetProductId](targetproductid.md)

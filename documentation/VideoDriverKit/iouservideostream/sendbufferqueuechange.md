@@ -6,7 +6,7 @@
 Sends a notification to the host that the buffer queue has changed.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

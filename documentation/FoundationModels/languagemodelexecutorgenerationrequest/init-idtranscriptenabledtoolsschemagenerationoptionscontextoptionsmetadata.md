@@ -23,7 +23,7 @@ init(id: UUID, transcript: Transcript, enabledTools: [Transcript.ToolDefinition]
 
 - `id`: The request identifier.
 - `transcript`: The transcript to generate the next entry for.
-- `enabledTools`: The subset tool definitions that the model can call.
+- `enabledTools`: The subset of tool definitions that the model can call.
 - `schema`: The schema dictating the required output format.
 - `generationOptions`: The generation options to use.
 - `contextOptions`: The settings that configure how the model is prompted.

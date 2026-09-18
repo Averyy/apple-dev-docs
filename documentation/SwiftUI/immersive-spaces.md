@@ -34,6 +34,7 @@ When you open an immersive space, the system continues to display all of your ap
 - [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
   The behavior of the system-provided immersive environments when a scene is opened by your app.
 - [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
+  The shape of the portal that a progressive immersion style opens.
 ### Opening an immersive space
 - [var openImmersiveSpace: OpenImmersiveSpaceAction](environmentvalues/openimmersivespace.md)
   An action that presents an immersive space.

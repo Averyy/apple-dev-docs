@@ -54,6 +54,7 @@ When adopting this protocol in your custom objects, you must also remember to re
 ### Conforming Types
 - [UIActivityViewController](uiactivityviewcontroller.md)
 - [UIAlertController](uialertcontroller.md)
+- [UIArrangementViewController](uiarrangementviewcontroller.md)
 - [UICloudSharingController](uicloudsharingcontroller.md)
 - [UICollectionViewController](uicollectionviewcontroller.md)
 - [UIColorPickerViewController](uicolorpickerviewcontroller.md)

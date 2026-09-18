@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func requestSpecificationVersion(resultHandler: @escaping (Result<NFCFeliCaRequestSpecificationVersionResponse, any Error>) -> Void)
+@preconcurrency
+func requestSpecificationVersion(resultHandler: @escaping @Sendable (Result<NFCFeliCaRequestSpecificationVersionResponse, any Error>) -> Void)
 ```
 
 

@@ -72,6 +72,7 @@ Text("Projection effects using transforms")
 - [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
   Applies a 3D transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)
+  A 3x3 matrix that transforms points in a plane.
 - [enum ContentMode](contentmode.md)
   Constants that define how a view’s content fills the available space.
 

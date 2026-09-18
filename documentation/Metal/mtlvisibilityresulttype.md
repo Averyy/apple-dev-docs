@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: enum
 
-This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
+Actions for visibility results between render passes.
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +21,10 @@ enum MTLVisibilityResultType
 
 #### Overview
 
-You can specify this property for `MTLRenderCommandEncoders` and for `MTL4RenderCommandEncoders` through their descriptors’ `MTLRenderCommandEncoder/visibilityResultType` and `MTL4RenderCommandEncoder/visibilityResultType` methods.
+You can apply a visibility result action to either kind of render command encoder:
+
+- For an [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md), set the [`visibilityResultType`](mtl4renderpassdescriptor/visibilityresulttype.md) property of an [`MTL4RenderPassDescriptor`](mtl4renderpassdescriptor.md) instance.
+- For an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), set the [`visibilityResultType`](mtlrenderpassdescriptor/visibilityresulttype.md) property of an [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance.
 
 ## Topics
 

@@ -31,6 +31,8 @@ Before you begin, set up an agent or model in Intelligence settings and choose i
   Expand agent capabilities for your specific needs and application domain.
 - [Giving external agents access to Xcode](giving-external-agents-access-to-xcode.md)
   Let agents access your project and Xcode capabilities using the Model Context Protocol.
+- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+  Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 
 ## See Also
 

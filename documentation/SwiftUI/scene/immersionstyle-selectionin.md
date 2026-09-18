@@ -56,6 +56,7 @@ struct SolarSystemApp: App {
 - [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
   The behavior of the system-provided immersive environments when a scene is opened by your app.
 - [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
+  The shape of the portal that a progressive immersion style opens.
 
 
 ---

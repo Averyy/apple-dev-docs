@@ -1,4 +1,4 @@
-# Customizing the tvOS Playback Experience
+# Customizing the tvOS playback experience
 
 **Framework**: AVKit
 
@@ -14,7 +14,7 @@ It’s simple to provide this playback experience in your app by using [`AVPlaye
 
 > **Note**:  Existing apps that use [`AVPlayerViewController`](avplayerviewcontroller.md) adopt the new styling and features of the redesigned player UI when they link against the tvOS 15 SDK.
 
-##### Display Supporting Metadata
+#### Display Supporting Metadata
 
 The player user interface displays a title view above the transport bar when the current player item contains title and subtitle metadata. When playing live streaming content, the title view may also display a badge to indicate that content state to the viewer.
 
@@ -68,7 +68,7 @@ Only the title and subtitle values display in the title view. The player present
 
 > **Note**:  If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](avplayerviewcontroller/transportbarincludestitleview.md) to `false`.
 
-##### Add Custom Transport Bar Items
+#### Add Custom Transport Bar Items
 
 The redesigned transport bar displays controls along its trailing side, which provides viewers quick access to common actions. The system automatically displays controls to configure common playback settings, like selecting subtitles and enabling Picture in Picture, but apps can also add custom controls to the transport bar.
 
@@ -134,7 +134,7 @@ Setting the custom action and menu adds two new items to the transport bar.
 
 ![An image that shows a custom action to add a movie to or remove it from a user’s favorites list. It also shows a custom preferences menu that displays an action to enable looping playback and a list of options to control playback speed.](/images/com.apple.avkit/media-3820865@2x.png)
 
-##### Display Content Tabs
+#### Display Content Tabs
 
 The tvOS player UI can display one or more content tabs below the transport bar to show supporting information or related content. By default, the player presents an Info tab when an asset contains embedded metadata or when you set external metadata on the player item, as the Display Supporting Metadata section above describes.
 
@@ -154,7 +154,7 @@ playerViewController.customInfoViewControllers = [
 
 For the player view controller to size your content appropriately, specify a [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) or define appropriate auto layout constraints. The system sizes all view controllers to the height of the tallest content tab, so size your custom view controllers consistently or verify that they lay out as you expect at their runtime height.
 
-##### Present Actions in the Info Tab
+#### Present Actions in the Info Tab
 
 A player view controller presents an Info tab when playing an asset with embedded or external metadata. The tab’s view displays the metadata details, and it may show up to two [`UIAction`](https://developer.apple.com/documentation/uikit/uiaction) controls along its trailing edge, as shown below.
 
@@ -172,7 +172,7 @@ let watchLater = UIAction(title: "Watch Later", image: glasses) { action in
 playerViewController.infoViewActions.append(watchLater)
 ```
 
-##### Present Actions Contextually
+#### Present Actions Contextually
 
 You can use the tvOS player UI to present controls contextually, which you display for a specific range of time in the content and then dismiss. A common use for this type of control is a Skip button that displays during the title sequence of a movie or TV show. Clicking the button allows viewers to bypass the introduction and quickly skip to the main content.
 
@@ -206,34 +206,20 @@ func addTimeObserver() {
 
 ## See Also
 
-- [Presenting Navigation Markers](presenting-navigation-markers.md)
-  Present navigation markers in the Chapters panel to help users quickly navigate your content.
-- [Working with Interstitial Content](working-with-interstitial-content.md)
-  Present additional content alongside your main media presentation using HTTP Live Streaming support.
-- [Presenting Content Proposals in tvOS](presenting-content-proposals-in-tvos.md)
-  Display a preview of an upcoming media item at the conclusion of the currently playing media item.
-- [Working with Overlays and Parental Controls in tvOS](working-with-overlays-and-parental-controls-in-tvos.md)
-  Add interactive overlays, parental controls, and livestream channel flipping using a player view controller.
-- [Supporting Continuity Camera in your tvOS app](supporting-continuity-camera-in-your-tvos-app.md)
-  Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
+- [Playing video content in a standard user interface](playing-video-content-in-a-standard-user-interface.md)
+  Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
+- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
+  Provide an optimized viewing experience for watching 3D video content.
 - [class AVPlayerViewController](avplayerviewcontroller.md)
   A view controller that displays content from a player and presents a native user interface to control playback.
 - [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
   A protocol that defines the methods to implement to respond to player view controller events.
-- [class AVInterstitialTimeRange](avinterstitialtimerange.md)
-  A time range in an audiovisual presentation for content with an interstitial designation, such as advertisements or legal notices.
-- [class AVNavigationMarkersGroup](avnavigationmarkersgroup.md)
-  A set of markers for navigating playback of an audiovisual presentation.
-- [class AVContentProposalViewController](avcontentproposalviewcontroller.md)
-  A view controller that proposes content to watch next.
-- [class AVDisplayManager](avdisplaymanager.md)
-  A tvOS management object that controls whether a TV switches modes to match the video’s native mode.
-- [class AVContinuityDevicePickerViewController](avcontinuitydevicepickerviewcontroller.md)
-  A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
-- [protocol AVContinuityDevicePickerViewControllerDelegate](avcontinuitydevicepickerviewcontrollerdelegate.md)
-  An interface that responds to events from a continuity device picker view controller.
-- [Third-party casting support](third-party-casting-support.md)
-  Provide custom playback controls for third-party casting services and other media sources.
+- [class AVPlayerView](avplayerview.md)
+  A view that displays content from a player and presents a native user interface to control playback.
+- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+  A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
+- [struct VideoPlayer](videoplayer.md)
+  A view that displays content from a player and a native user interface to control playback.
 
 
 ---

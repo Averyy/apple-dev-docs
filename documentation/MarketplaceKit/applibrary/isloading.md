@@ -26,8 +26,6 @@ final var isLoading: Bool { get }
   The set of apps that are pending installation completion.
 - [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](applibrary/requestappinstallation(_:).md)
   Requests the installation of the given app distribution package for the given account.
-- [func requestAppInstallationFromBrowser(for: URL, referrer: URL) async throws](applibrary/requestappinstallationfrombrowser(for:referrer:).md)
-  Forwards an app installation request from the developer’s webpage.
 
 
 ---

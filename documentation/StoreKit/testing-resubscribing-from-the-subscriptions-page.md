@@ -27,7 +27,7 @@ To test resubscribing from the Subscriptions page:
 7. Open your app.
 8. In Xcode, verify that your [`SKPaymentTransactionObserver`](skpaymenttransactionobserver.md) gets a callback on [`paymentQueue(_:updatedTransactions:)`](skpaymenttransactionobserver/paymentqueue(_:updatedtransactions:).md) with a transaction in the [`SKPaymentTransactionState.purchased`](skpaymenttransactionstate/purchased.md) state.
 9. Check that your app retrieves and verifies the app receipt. Verify that the successful transaction is in the receipt.
-10. Check that your app makes the in-app purchase available and updates the subscriber’s status.
+10. Check that your app makes the Apple In-App Purchase available and updates the subscriber’s status.
 11. In Xcode, check that your app calls [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md). For more information, see [`Finishing a transaction`](finishing-a-transaction.md).
 
 ##### Conclude Testing

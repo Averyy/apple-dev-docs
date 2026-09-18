@@ -26,7 +26,11 @@ struct SpotlightSearchTool
 
 The `SpotlightSearchTool` type implements the protocol that Foundation Models use to run custom tools when resolving prompts. If you implement intelligent features using the Foundation Models framework, you can use this tool to provide your app’s data to the model as additional contextual information. The model can use this additional data to answer questions specific to your app’s content. For example, a note-taking app that runs the prompt “Find my meeting notes from last Tuesday” can use this tool to make its notes available to the model.
 
-Create an instance of `SpotlightSearchTool` before configuring a [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession) object to run prompts. Configure the tool with the sources and options you want to use to search your particular content. For example, you can direct the tool to search your app’s Spotlight index, files and directories your app created, or both. Use the tool options to offer guidance on how to perform searches efficiently on your content. The following example shows you how to create and configure this tool with a custom source.
+Create an instance of `SpotlightSearchTool` before configuring a [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession) object to run prompts. Configure the tool with the sources and options you want to use to search your particular content. For example, you can direct the tool to search your app’s Spotlight index, files and directories your app created, or both. Use the tool options to offer guidance on how to perform searches efficiently on your content.
+
+Always configure `SpotlightSearchTool` with a guide that works well with a model’s context window to avoid token overflow errors.
+
+This example shows how to create and configure this tool with a custom source:
 
 ```swift
 import CoreSpotlight
@@ -34,7 +38,6 @@ import FoundationModels
 
 // Search the app’s Spotlight index and fetch specific attributes for each result.
 var csSource = CoreSpotlightSource(fetchAttributes: [.subject, .authorNames, .contentDescription])
-csSource.sourceOptions = [.allowMail]
 csSource.maximumResultCount = 20
 
 // Create and configure the search tool.
@@ -45,6 +48,8 @@ let tool = SpotlightSearchTool(configuration: configuration)
 let session = LanguageModelSession(tools: [tool])
 let response = try await session.respond(to: "Find my notes about the project deadline")
 ```
+
+> **Note**: By default, `SpotlightSearchTool` uses the `complete` option which works best with *Private Cloud Compute* (PCC) models designed for Apple Intelligence. For eligibility and setup, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute).
 
 ## Topics
 

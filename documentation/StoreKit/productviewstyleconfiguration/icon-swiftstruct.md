@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-A type-erased icon of an in-app purchase product.
+A type-erased icon of an Apple In-App Purchase product.
 
 **Availability**:
 - iOS 17.0+

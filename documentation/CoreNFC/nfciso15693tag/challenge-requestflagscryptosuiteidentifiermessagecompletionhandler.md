@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func challenge(requestFlags flags: NFCISO15693RequestFlag, cryptoSuiteIdentifier: Int, message: Data, completionHandler: @escaping ((any Error)?) -> Void)
+@preconcurrency
+func challenge(requestFlags flags: NFCISO15693RequestFlag, cryptoSuiteIdentifier: Int, message: Data, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
 

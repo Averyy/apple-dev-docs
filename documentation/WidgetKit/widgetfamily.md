@@ -97,6 +97,8 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
   The configuration and content of a widget to display on the Home screen or in Notification Center.
 - [struct StaticConfiguration](staticconfiguration.md)
   An object describing the content of a widget that has no user-configurable options.
+- [var widgetFamily: WidgetFamily](../swiftui/environmentvalues/widgetfamily.md)
+  The template of the widget — small, medium, or large.
 
 
 ---

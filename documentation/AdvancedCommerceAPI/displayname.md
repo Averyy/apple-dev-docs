@@ -16,7 +16,7 @@ string displayName
 
 ## Mentions
 
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
 
 #### Discussion
 
@@ -24,7 +24,7 @@ You provide a display name for every SKU you offer in your app. For subscription
 
 You can provide localized display names, based on the customer’s storefront. For more information on storefronts, see [`Storefront`](https://developer.apple.com/documentation/storekit/storefront).
 
-For more information and best practices on providing names and other data the system displays to customers, see [`Creating SKUs for your In-App Purchases`](creating-your-purchases.md).
+For more information and best practices on providing names and other data the system displays to customers, see [`Creating SKUs for your Apple In-App Purchases`](creating-your-purchases.md).
 
 ## See Also
 
@@ -51,7 +51,7 @@ For more information and best practices on providing names and other data the sy
 - [type refundRiskingPreference](refundriskingpreference.md)
   A Boolean value that indicates whether the App Store asks you for consumption data to help inform the refund decision.
 - [type SKU](sku.md)
-  The product identifier of an in-app purchase product you manage in your own system.
+  The product identifier of an Apple In-App Purchase product you manage in your own system.
 - [type storefront](storefront.md)
   A three-letter code that represents the country or region associated with the App Store storefront.
 - [type taxCode](taxcode.md)

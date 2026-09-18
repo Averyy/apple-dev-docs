@@ -44,6 +44,7 @@ struct CompositorContentBuilder
 - [enum ColorRenderingMode](colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
 - [protocol CompositorContent](compositorcontent.md)
+  A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
 - [struct AnyCompositorContent](anycompositorcontent.md)
   Type erased compositor content.
 

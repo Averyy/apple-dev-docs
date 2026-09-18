@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+The keyboard modifier flags in effect while the receiver last processed an event.
+
 **Availability**:
 - macOS 26.0+
 
@@ -11,6 +13,10 @@
 ```swift
 var modifierFlags: NSEvent.ModifierFlags { get }
 ```
+
+#### Discussion
+
+Use this property from an action method or delegate callback to determine which modifier keys, such as Shift or Command, were held down as part of the gesture.
 
 ## See Also
 

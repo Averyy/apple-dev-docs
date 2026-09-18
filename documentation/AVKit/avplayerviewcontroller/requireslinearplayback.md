@@ -20,8 +20,8 @@ var requiresLinearPlayback: Bool { get set }
 
 ## Mentions
 
-- [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
-- [Working with Interstitial Content](working-with-interstitial-content.md)
+- [Adopting Picture in Picture in a standard player](adopting-picture-in-picture-in-a-standard-player.md)
+- [Working with interstitial content](working-with-interstitial-content.md)
 
 #### Discussion
 

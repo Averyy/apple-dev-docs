@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
+A result builder that combines tools and other content into dynamic instructions.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

@@ -25,9 +25,9 @@ The properties of a transaction, including identifiers, purchase and revocation 
 - [let appBundleID: String](transaction/appbundleid.md)
   The bundle identifier for the app.
 - [let productID: String](transaction/productid.md)
-  The product identifier of the in-app purchase.
+  The product identifier of the Apple In-App Purchase.
 - [let productType: Product.ProductType](transaction/producttype.md)
-  The type of the in-app purchase.
+  The type of the Apple In-App Purchase.
 - [let subscriptionGroupID: String?](transaction/subscriptiongroupid.md)
   The identifier of the subscription group that the subscription belongs to.
 ### Getting purchase and expiration dates
@@ -37,7 +37,7 @@ The properties of a transaction, including identifiers, purchase and revocation 
   The date the subscription expires or renews.
 ### Getting the product price and currency
 - [var price: Decimal?](transaction/price.md)
-  The price of the in-app purchase that the system records in the transaction.
+  The price of the Apple In-App Purchase that the system records in the transaction.
 - [var currency: Locale.Currency?](transaction/currency.md)
   The currency of the price of the product.
 ### Getting purchase details

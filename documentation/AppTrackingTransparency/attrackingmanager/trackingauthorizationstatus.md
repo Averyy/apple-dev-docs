@@ -3,7 +3,7 @@
 **Framework**: App Tracking Transparency  
 **Kind**: property
 
-The authorization status that is current for the calling application.
+A value that indicates the status of the app’s tracking authorization.
 
 **Availability**:
 - iOS 14.0+
@@ -19,20 +19,21 @@ The authorization status that is current for the calling application.
 class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus { get }
 ```
 
-#### Return Value
-
-Information about your application’s tracking authorization status. Users are able to grant or deny developers tracking privileges on a per-app basis. Application developers must call `requestTrackingAuthorizationWithCompletionHandler:` for the ability to track users.
-
 #### Discussion
 
-If the user has not yet been prompted to approve access, the return value will either be `ATTrackingManagerAuthorizationStatusNotDetermined`, or `ATTrackingManagerAuthorizationStatusRestricted` if this value is managed. Once the user has been prompted, the return value will be either `ATTrackingManagerAuthorizationStatusDenied` or `ATTrackingManagerAuthorizationStatusAuthorized`.
+Check this property to determine whether your app has permission to access app-related data it can use to track a person or device.
 
-Use the [`trackingAuthorizationStatus`](attrackingmanager/trackingauthorizationstatus.md) property to check authorization status.
+If the status is [`ATTrackingManager.AuthorizationStatus.notDetermined`](attrackingmanager/authorizationstatus/notdetermined.md), call one of the tracking-request methods to present the tracking-authorization prompt and ask the person for permission:
+
+- [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md)
+- [`requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)`](attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:).md)
+
+This property returns [`ATTrackingManager.AuthorizationStatus.restricted`](attrackingmanager/authorizationstatus/restricted.md) when the system restricts tracking for the device, regardless of whether your app has presented the prompt.
 
 ## See Also
 
 - [ATTrackingManager.AuthorizationStatus](attrackingmanager/authorizationstatus.md)
-  The status values for app tracking authorization.
+  A type that represents the tracking-authorization status of an app.
 
 
 ---

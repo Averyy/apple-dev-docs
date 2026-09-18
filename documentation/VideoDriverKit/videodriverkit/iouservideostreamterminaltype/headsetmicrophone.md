@@ -6,7 +6,7 @@
 The identifier for a terminal type of a microphone attached to an headset.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

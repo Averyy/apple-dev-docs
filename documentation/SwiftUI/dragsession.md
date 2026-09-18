@@ -47,6 +47,7 @@ struct DragSession
 ## See Also
 
 - [struct DropSession](dropsession.md)
+  A description of a drop that is in progress.
 
 
 ---

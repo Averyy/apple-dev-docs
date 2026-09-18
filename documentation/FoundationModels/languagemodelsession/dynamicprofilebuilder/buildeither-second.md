@@ -27,6 +27,7 @@ static func buildEither<TrueContent, FalseContent>(second content: FalseContent)
 - [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> LanguageModelSession.ConditionalDynamicProfile<TrueContent, FalseContent>](languagemodelsession/dynamicprofilebuilder/buildeither(first:).md)
   Creates a builder with the first component.
 - [static func buildLimitedAvailability(some LanguageModelSession.DynamicProfile) -> LanguageModelSession.AnyDynamicProfile](languagemodelsession/dynamicprofilebuilder/buildlimitedavailability(_:).md)
+  Creates a builder with a limited availability dynamic profile.
 
 
 ---

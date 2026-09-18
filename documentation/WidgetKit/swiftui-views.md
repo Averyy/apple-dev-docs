@@ -131,6 +131,7 @@ Widgets can use many, but not all, SwiftUI views to present content. Use the vie
 - [struct GeometryReader](../swiftui/geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.
 - [struct ProjectionTransform](../swiftui/projectiontransform.md)
+  A 3x3 matrix that transforms points in a plane.
 ### Substituting views
 - [struct AnyView](../swiftui/anyview.md)
   A type-erased view.

@@ -591,6 +591,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [Encodable Implementations](array/encodable-implementations.md)
 - [Equatable Implementations](array/equatable-implementations.md)
 - [ExpressibleByArrayLiteral Implementations](array/expressiblebyarrayliteral-implementations.md)
+- [Generable Implementations](array/generable-implementations.md)
 - [Hashable Implementations](array/hashable-implementations.md)
 - [IntentValueConvertible Implementations](array/intentvalueconvertible-implementations.md)
 - [IntentValueExpressing Implementations](array/intentvalueexpressing-implementations.md)

@@ -23,9 +23,9 @@ let appBundleID: String
 ## See Also
 
 - [let productID: String](transaction/productid.md)
-  The product identifier of the in-app purchase.
+  The product identifier of the Apple In-App Purchase.
 - [let productType: Product.ProductType](transaction/producttype.md)
-  The type of the in-app purchase.
+  The type of the Apple In-App Purchase.
 - [let subscriptionGroupID: String?](transaction/subscriptiongroupid.md)
   The identifier of the subscription group that the subscription belongs to.
 

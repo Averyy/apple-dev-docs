@@ -35,7 +35,7 @@ Use the authorization status to determine in what ways you can access the userâ€
 
 ## See Also
 
-- [In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
+- [Apple In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
 - [Requesting Access to Apple Music Library](requesting-access-to-apple-music-library.md)
   Prompt the customer to authorize access to Apple Music library.
 - [class func requestAuthorization((SKCloudServiceAuthorizationStatus) -> Void)](skcloudservicecontroller/requestauthorization(_:).md)

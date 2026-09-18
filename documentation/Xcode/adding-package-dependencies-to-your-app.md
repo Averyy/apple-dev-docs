@@ -103,6 +103,8 @@ To remove a package dependency from your Xcode project:
 
 ## See Also
 
+- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+  Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 - [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
 - [Creating a Mac version of your iPad app](../uikit/creating-a-mac-version-of-your-ipad-app.md)

@@ -6,7 +6,7 @@
 A block that tells the device to perform an IOUserVideoIOOperation.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

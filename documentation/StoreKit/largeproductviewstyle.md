@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-A style for a product view that’s suitable for layouts where the in-app purchase content is prominent.
+A style for a product view that’s suitable for layouts where the Apple In-App Purchase content is prominent.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,7 @@ A style for a product view that’s suitable for layouts where the in-app purcha
 
 ### Getting the large product view style
 - [static var large: LargeProductViewStyle](productviewstyle/large.md)
-  A product view style suitable for layouts where the in-app purchase content is prominent.
+  A product view style suitable for layouts where the Apple In-App Purchase content is prominent.
 ### Creating the style
 - [init()](largeproductviewstyle/init.md)
 

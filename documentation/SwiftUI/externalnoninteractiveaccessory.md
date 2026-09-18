@@ -54,6 +54,8 @@ struct RootView: View {
 
 - [func sceneAccessory<C>(content: () -> C) -> some View](view/sceneaccessory(content:).md)
   Defines any scene accessories associated with `self`.
+- [struct CameraCaptureAccessory](cameracaptureaccessory.md)
+  A scene accessory that presents content during camera capture.
 - [protocol SceneAccessoryContent](sceneaccessorycontent.md)
   Conforming types represent items which define content for scene accessories.
 

@@ -40,6 +40,7 @@ VStack {
 ## Parameters
 
 - `effect`: A symbol effect to add to the view. Existing effects added by ancestors of the view are preserved, but may be overridden by the new effect. Added effects will be applied to the [`Image`](image.md) views contained by the child view.
+- `options`: A set of options that configure how effects apply to symbol-based images.
 - `value`: The value to monitor for changes, the animation is triggered each time the value changes.
 
 ## See Also

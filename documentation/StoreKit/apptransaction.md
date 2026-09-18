@@ -28,7 +28,7 @@ struct AppTransaction
 
 #### Overview
 
-> **Note**:  Session 10007:  [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
+> **Note**:  Session 10007:  [`What’s new with Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
 
 ## Topics
 

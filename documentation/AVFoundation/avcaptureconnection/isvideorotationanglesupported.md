@@ -25,7 +25,7 @@ func isVideoRotationAngleSupported(_ videoRotationAngle: CGFloat) -> Bool
 ## See Also
 
 - [var videoRotationAngle: CGFloat](avcaptureconnection/videorotationangle.md)
-  A rotation angle the connection applies to a video flowing through it.
+  A rotation angle the connection applies to the video flowing through it.
 
 
 ---

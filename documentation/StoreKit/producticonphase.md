@@ -41,7 +41,7 @@ StoreView(products: [
  }
 ```
 
-You set up promotional images for in-app purchases in App Store Connect. For more information, see [`Promote in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
+You set up promotional images for Apple In-App Purchases in App Store Connect. For more information, see [`Promote Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
 
 ## Topics
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates information describing a transcript that exceeded the model’s context size.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,13 @@
 ```swift
 init(contextSize: Int, tokenCount: Int, debugDescription: String, metadata: [String : any Sendable] = [:])
 ```
+
+## Parameters
+
+- `contextSize`: The model’s maximum context size, in tokens.
+- `tokenCount`: The number of tokens in the transcript that exceeded the context size.
+- `debugDescription`: A developer-facing description of the failure.
+- `metadata`: Additional information about the failure, keyed by name.
 
 
 ---

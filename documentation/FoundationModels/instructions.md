@@ -61,6 +61,7 @@ For more information on managing the context window size, see [`Managing the con
 
 ### Creating instructions
 - [init(_:)](instructions/init(_:).md)
+  Creates instructions from the content of a builder closure.
 - [struct InstructionsBuilder](instructionsbuilder.md)
   A type that represents an instructions builder.
 - [protocol InstructionsRepresentable](instructionsrepresentable.md)

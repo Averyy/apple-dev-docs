@@ -32,14 +32,13 @@ Correctly rotate the photos and movies your app captures, and optionally, a live
   An angle the coordinator provides your app to apply to photos or videos it captures with the device so that they’re level relative to gravity.
 - [var videoRotationAngleForHorizonLevelPreview: CGFloat](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md)
   An angle the coordinator provides your app to apply to the preview layer so that it’s level relative to gravity.
+- [func videoRotationAngleRelative(toDeviceOrientation: AVCaptureVideoOrientation) -> CGFloat](avcapturedevice/rotationcoordinator/videorotationanglerelative(todeviceorientation:).md)
+  An angle the coordinator provides your app to apply to photos or videos it takes with the capture device so that they’re upright relative to an orientation your app provides.
 ### Inspecting a coordinator’s configuration
 - [var device: AVCaptureDevice?](avcapturedevice/rotationcoordinator/device.md)
   The capture device the coordinator monitors to track its physical rotation.
 - [var previewLayer: CALayer?](avcapturedevice/rotationcoordinator/previewlayer.md)
   The layer that displays a camera preview the coordinator calculates a video rotation angle for.
-### Instance Methods
-- [func videoRotationAngleRelative(toDeviceOrientation: AVCaptureVideoOrientation) -> CGFloat](avcapturedevice/rotationcoordinator/videorotationanglerelative(todeviceorientation:).md)
-  Returns a video rotation angle in degrees from this camera relative to the provided orientation.
 
 ## Relationships
 

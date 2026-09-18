@@ -25,6 +25,7 @@ The system initially uses a portal effect that replaces passthrough in a portion
 
 ## Parameters
 
+- `immersionRange`: The range of immersion used for this instance of the style. The lower bound and upper bound value of the range represent how much of a spherical field of view of the user is covered by the portal effect of the style. The lower bound value must be equal to or greater than `0` and smaller than the upper bound. The upper bound value must be greater than the lower bound and smaller than or equal to `1`.
 - `initialAmount`: The initial amount of immersion used for this instance of the style. If `nil`, a system default will be used. The value must be within the range defined by this style.
 - `aspectRatio`: The aspect ratio of the portal. If `nil`, a system default of landscape will be used.
 

@@ -22,7 +22,7 @@ func invalidate(reason: Self.InvalidationReason)
 
 ## Parameters
 
-- `reason`: The reason for the tip’s invalidation. The tip’s `invalidationReason` returns this value after invalidation.
+- `reason`: The reason for the tip’s invalidation. After invalidation the tip’s [`status`](tip/status-swift.property.md) becomes `invalidated`, carrying this value.
 
 ## See Also
 

@@ -81,6 +81,8 @@ struct RootView: View {
 
 ## See Also
 
+- [struct CameraCaptureAccessory](cameracaptureaccessory.md)
+  A scene accessory that presents content during camera capture.
 - [protocol SceneAccessoryContent](sceneaccessorycontent.md)
   Conforming types represent items which define content for scene accessories.
 - [struct ExternalNonInteractiveAccessory](externalnoninteractiveaccessory.md)

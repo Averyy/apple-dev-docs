@@ -20,7 +20,7 @@ func promotionOrder() async throws -> [SKProduct]
 
 ## Mentions
 
-- [Promoting In-App Purchases](promoting-in-app-purchases.md)
+- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
 
 #### Discussion
 

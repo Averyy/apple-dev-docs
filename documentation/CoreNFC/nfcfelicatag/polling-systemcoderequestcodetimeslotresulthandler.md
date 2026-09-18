@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func polling(systemCode: Data, requestCode: NFCFeliCaPollingRequestCode, timeSlot: NFCFeliCaPollingTimeSlot, resultHandler: @escaping (Result<NFCFeliCaPollingResponse, any Error>) -> Void)
+@preconcurrency
+func polling(systemCode: Data, requestCode: NFCFeliCaPollingRequestCode, timeSlot: NFCFeliCaPollingTimeSlot, resultHandler: @escaping @Sendable (Result<NFCFeliCaPollingResponse, any Error>) -> Void)
 ```
 
 

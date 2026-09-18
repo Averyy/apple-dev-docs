@@ -10,7 +10,7 @@ You can offer a discounted or free period of service for auto-renewable subscrip
 
 Before you can provide promotional offers in your app, you must first generate a subscription key and set up the offers in your App Store Connect account.
 
-> **Note**:  If your goal is to attract new users, use introductory offers and promote the in-app purchase on the App Store. Redeeming an introductory offer doesn’t affect a user’s eligibility for a promotional offer. For more information, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
+> **Note**:  If your goal is to attract new users, use introductory offers and promote the Apple In-App Purchase on the App Store. Redeeming an introductory offer doesn’t affect a user’s eligibility for a promotional offer. For more information, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
 
 ##### Generate a Private Key
 

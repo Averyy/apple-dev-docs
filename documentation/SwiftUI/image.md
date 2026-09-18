@@ -115,6 +115,7 @@ To use an image as a control, use one of the initializers that takes a `label` p
 - [var allowedDynamicRange: Image.DynamicRange?](environmentvalues/alloweddynamicrange.md)
   The allowed dynamic range for the view, or nil.
 - [struct DynamicRange](image/dynamicrange.md)
+  The range of brightness that an image is allowed to draw.
 ### Instance Methods
 - [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> Image](image/symbolcolorrenderingmode(_:).md)
   Sets the color rendering mode of the image.

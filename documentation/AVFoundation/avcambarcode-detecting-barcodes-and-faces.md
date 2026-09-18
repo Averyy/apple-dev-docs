@@ -30,6 +30,8 @@ Identify machine readable codes or faces by using the camera.
   Enable Center Stage for photos and videos on the iPhone front camera.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
+- [Registering a camera capture accessory on iPhone Duo](registering-a-camera-capture-accessory-on-iphone-duo.md)
+  Provide content to the person in front of the camera by pairing it with your capture interface.
 - [class AVCaptureSession](avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.
 - [class AVCaptureMultiCamSession](avcapturemulticamsession.md)

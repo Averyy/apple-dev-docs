@@ -41,6 +41,7 @@ struct PromptBuilder
 ## See Also
 
 - [init(_:)](prompt/init(_:).md)
+  Creates a prompt from the content of a builder closure.
 - [protocol PromptRepresentable](promptrepresentable.md)
   A type whose value can represent a prompt.
 

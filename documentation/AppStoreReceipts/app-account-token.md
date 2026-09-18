@@ -18,7 +18,7 @@ string app_account_token
 
 When a customer initiates an in-app purchase, you can optionally generate an [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)) and send it to the App Store. The App Store returns the same value in [`appAccountToken`](https://developer.apple.com/documentation/storekit/transaction/appaccounttoken) in the transaction information after the customer completes the purchase.
 
-If you’re using the [`Original API for In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase) and provide a UUID in the [`applicationUsername`](https://developer.apple.com/documentation/storekit/skmutablepayment/applicationusername) property, then the [`app_account_token`](app_account_token.md) field contains that value.
+If you’re using the [`Original API for Apple In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase) and provide a UUID in the [`applicationUsername`](https://developer.apple.com/documentation/storekit/skmutablepayment/applicationusername) property, then the [`app_account_token`](app_account_token.md) field contains that value.
 
 ## See Also
 

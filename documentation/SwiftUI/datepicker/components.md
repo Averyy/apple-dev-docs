@@ -20,6 +20,7 @@ typealias Components = DatePickerComponents
 ## See Also
 
 - [struct DatePickerComponents](datepickercomponents.md)
+  The date and time components that a date picker shows.
 
 
 ---

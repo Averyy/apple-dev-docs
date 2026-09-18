@@ -29,6 +29,11 @@ Use an instance of this type along with `UIViewController.registerSceneAccessory
 
 ## Topics
 
+### Creating a camera capture accessory
+- [class func cameraCapture(sceneConfiguration: UISceneConfiguration) -> Self](uisceneaccessory/cameracapture(sceneconfiguration:).md)
+  Creates a scene accessory for presenting content during camera capture.
+- [class func cameraCapture(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self](uisceneaccessory/cameracapture(sceneconfiguration:userinfo:).md)
+  Creates a scene accessory for presenting content during camera capture, passing additional context to the scene delegate.
 ### Type Methods
 - [class func externalNonInteractive(sceneConfiguration: UISceneConfiguration) -> Self](uisceneaccessory/externalnoninteractive(sceneconfiguration:).md)
   Creates a new scene accessory configuration for presenting non-interactive content on an external display.
@@ -50,6 +55,8 @@ Use an instance of this type along with `UIViewController.registerSceneAccessory
 
 ## See Also
 
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+  Fill connected displays with additional content from your app.
 - [class UISceneAccessoryRegistration](uisceneaccessoryregistration.md)
   A type which represents the registration for a given scene accessory.
 

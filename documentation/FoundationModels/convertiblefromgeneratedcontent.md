@@ -34,6 +34,7 @@ protocol ConvertibleFromGeneratedContent : SendableMetatype
 ### Conforming Types
 - [GeneratedContent](generatedcontent.md)
 - [ImageReference](imagereference.md)
+- [ImageReference.PartiallyGenerated](imagereference/partiallygenerated.md)
 
 ## See Also
 

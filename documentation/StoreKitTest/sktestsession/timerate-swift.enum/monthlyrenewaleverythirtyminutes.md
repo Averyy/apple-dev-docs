@@ -33,7 +33,7 @@ The following table shows how this time rate affects subscriptions with various 
 | Semiannually | 3 hours |
 | Annually | 6 hours |
 
-The sandbox environment also supports this subscription renewal rate. For more information about renewal rates in the sandbox environment, see [`Test in-app purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev7e89e149d).
+The sandbox environment also supports this subscription renewal rate. For more information about renewal rates in the sandbox environment, see [`Test Apple In-App Purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev7e89e149d).
 
 The time rate also affects the billing grace period and the billing retry period in the testing environment, as the table below shows:
 

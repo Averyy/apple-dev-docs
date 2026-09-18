@@ -6,7 +6,7 @@
 Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

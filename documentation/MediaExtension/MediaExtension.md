@@ -16,6 +16,8 @@ MediaExtension format readers encapsulate media assets that the system doesn’t
 ## Topics
 
 ### Format readers
+- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+  Extend the media formats the system can open by providing a format reader and a video decoder.
 - [protocol MEFormatReader](meformatreader.md)
   A protocol that defines the requirements for a format reader, which represents a single media asset.
 - [protocol MEFormatReaderExtension](meformatreaderextension.md)
@@ -48,6 +50,8 @@ MediaExtension format readers encapsulate media assets that the system doesn’t
 - [class MEByteSource](mebytesource.md)
   Provides read access to the data in a media asset file.
 ### Video decoders
+- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+  Extend the media formats the system can open by providing a format reader and a video decoder.
 - [protocol MEVideoDecoder](mevideodecoder.md)
   A protocol that defines the requirements for a video decoder.
 - [protocol MEVideoDecoderExtension](mevideodecoderextension.md)

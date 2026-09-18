@@ -6,7 +6,7 @@
 A namespace that holds supporting types used by VideoDriverKit functions.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -24,9 +24,9 @@ case emptyTypeChoices(schema: String, context: GenerationSchema.SchemaError.Cont
 - [case duplicateProperty(schema: String, property: String, context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/duplicateproperty(schema:property:context:).md)
   An error that represents an attempt to construct a dynamic schema with properties that have conflicting names.
 - [case duplicateType(schema: String?, type: String, context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/duplicatetype(schema:type:context:).md)
-  An error that represents an attempt to construct a schema from dynamic schemas, and two or more of the subschemas have the same type name.
+  An error that represents an attempt to construct a schema from dynamic schemas in which two or more of the subschemas have the same type name.
 - [case undefinedReferences(schema: String?, references: [String], context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/undefinedreferences(schema:references:context:).md)
-  An error that represents an attempt to construct a schema from dynamic schemas, and one of those schemas references an undefined schema.
+  An error that represents an attempt to construct a schema from dynamic schemas in which one of those schemas references an undefined schema.
 - [GenerationSchema.SchemaError.Context](generationschema/schemaerror/context.md)
   The context in which the error occurred.
 

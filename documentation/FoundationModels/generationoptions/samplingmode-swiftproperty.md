@@ -24,7 +24,7 @@ var samplingMode: GenerationOptions.SamplingMode? { get set }
 
 When you execute a prompt on a model, the model produces a probability for every token in its vocabulary. The sampling strategy controls how the model narrows down the list of tokens to consider during that process. A strategy that picks the single most likely token yields a predictable response every time, but other strategies offer results that often sound more natural to a person.
 
-> **Note**: Leaving the `sampling` nil lets the system choose a a reasonable default on your behalf.
+> **Note**: Leaving the `sampling` to `nil` lets the system choose a reasonable default on your behalf.
 
 ## See Also
 
@@ -37,7 +37,7 @@ When you execute a prompt on a model, the model produces a probability for every
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
   The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
-  A value you use to describe the model behavior when it comes to tool usage.
+  A value that describes how the model uses tools.
 - [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
   The maximum number of tokens the model is allowed to produce in its response.
 

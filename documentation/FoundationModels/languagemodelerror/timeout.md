@@ -23,9 +23,12 @@ struct Timeout
 
 ### Creating an error instance
 - [init(debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/timeout/init(debugdescription:metadata:).md)
+  Creates information describing a request timeout.
 ### Inspecting timeout errors
 - [var metadata: [String : any Sendable]](languagemodelerror/timeout/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var debugDescription: String](languagemodelerror/timeout/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 ## Relationships
 

@@ -346,6 +346,8 @@ For more information about how the system determines which view controllers to p
   The nearest ancestor in the view controller hierarchy that is a navigation controller.
 - [var tabBarController: UITabBarController?](uiviewcontroller/tabbarcontroller.md)
   The nearest ancestor in the view controller hierarchy that is a tab bar controller.
+- [var arrangementViewController: UIArrangementViewController?](uiviewcontroller/arrangementviewcontroller.md)
+  The nearest ancestor arrangement view controller.
 ### Configuring a navigation interface
 - [var navigationItem: UINavigationItem](uiviewcontroller/navigationitem.md)
   The navigation item used to represent the view controller in a parent’s navigation bar.
@@ -411,6 +413,15 @@ For more information about how the system determines which view controllers to p
   Indicates that the view controller changed the pointer lock preference.
 - [var childViewControllerForPointerLock: UIViewController?](uiviewcontroller/childviewcontrollerforpointerlock.md)
   A child view controller to query for the pointer lock preference.
+### Configuring bars on the vertical axis
+- [var preferredVerticalBarBehavior: UIVerticalBarBehavior](uiviewcontroller/preferredverticalbarbehavior.md)
+  The vertical bar behavior that this view controller prefers.
+- [enum UIVerticalBarBehavior](uiverticalbarbehavior.md)
+  A behavior that determines whether the vertical bar is used.
+- [var childForPreferredVerticalBarBehavior: UIViewController?](uiviewcontroller/childforpreferredverticalbarbehavior.md)
+  Which child view controller, if any, should control the vertical bar behavior.
+- [func setNeedsUpdateOfVerticalBarConfiguration()](uiviewcontroller/setneedsupdateofverticalbarconfiguration.md)
+  Signals to the system that the preferred vertical bar configuration, such as its behavior, has changed.
 ### Managing the status bar
 - [var prefersStatusBarHidden: Bool](uiviewcontroller/prefersstatusbarhidden.md)
   Specifies whether the view controller prefers the status bar to be hidden or shown.
@@ -482,6 +493,7 @@ For more information about how the system determines which view controllers to p
 ### Inherited By
 - [UIActivityViewController](uiactivityviewcontroller.md)
 - [UIAlertController](uialertcontroller.md)
+- [UIArrangementViewController](uiarrangementviewcontroller.md)
 - [UICloudSharingController](uicloudsharingcontroller.md)
 - [UICollectionViewController](uicollectionviewcontroller.md)
 - [UIColorPickerViewController](uicolorpickerviewcontroller.md)

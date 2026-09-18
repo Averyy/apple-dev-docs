@@ -104,6 +104,7 @@ TabView {
 - [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](view/tabbarminimizebehavior(_:).md)
   Sets the behavior for tab bar minimization.
 - [struct TabBarMinimizeBehavior](tabbarminimizebehavior.md)
+  A behavior that determines when a tab bar minimizes.
 
 
 ---

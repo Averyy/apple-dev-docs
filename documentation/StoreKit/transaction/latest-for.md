@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: method
 
-Gets the customer’s most recent transaction for an In-App Purchase.
+Gets the customer’s most recent transaction for an Apple In-App Purchase.
 
 **Availability**:
 - iOS 15.0+
@@ -26,7 +26,7 @@ A [`VerificationResult`](verificationresult.md) with a single [`Transaction`](tr
 
 #### Discussion
 
-Call this method for any type of In-App Purchase. The following code example illustrates requesting the most recent transaction to determine whether the customer purchased the product indicated by the string `productIdentifier`:
+Call this method for any type of Apple In-App Purchase. The following code example illustrates requesting the most recent transaction to determine whether the customer purchased the product indicated by the string `productIdentifier`:
 
 ```swift
 guard let verificationResult = await Transaction.latest(for: productIdentifier) else {    
@@ -46,9 +46,9 @@ case .unverified(let transaction, let verificationError):
 }
 ```
 
-By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key is `false`, this method excludes finished consumable in-app purchases unless they are refunded or revoked.
+By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key is `false`, this method excludes finished consumable Apple In-App Purchases unless they are refunded or revoked.
 
-If you set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key to `true`, this method returns all transactions, including consumable In-App Purchases that your app marked as finished ([`finish()`](transaction/finish().md)).
+If you set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key to `true`, this method returns all transactions, including consumable Apple In-App Purchases that your app marked as finished ([`finish()`](transaction/finish().md)).
 
 ## Parameters
 

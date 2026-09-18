@@ -24,7 +24,7 @@ class SKTestTransaction
 
 The test transaction represents the test environment’s knowledge of the transaction, including its identifier and the transaction’s state. It represents all the transaction-related configurations you control manually in Xcode for interrupted purchases, Ask to Buy scenarios, and changes to a subscription’s auto-renew state.
 
-The test environment creates an `SKTestTransaction` instance each time your test code calls any method of [`SKTestSession`](sktestsession.md) that affects in-app purchases.
+The test environment creates an `SKTestTransaction` instance each time your test code calls any method of [`SKTestSession`](sktestsession.md) that affects Apple In-App Purchases.
 
 ## Topics
 

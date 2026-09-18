@@ -16,7 +16,7 @@ string period
 
 ## Mentions
 
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
 
 ##### Discussion
 
@@ -47,7 +47,7 @@ Auto-renewable subscriptions renew periodically. For example, if the period is 2
 - [type refundRiskingPreference](refundriskingpreference.md)
   A Boolean value that indicates whether the App Store asks you for consumption data to help inform the refund decision.
 - [type SKU](sku.md)
-  The product identifier of an in-app purchase product you manage in your own system.
+  The product identifier of an Apple In-App Purchase product you manage in your own system.
 - [type storefront](storefront.md)
   A three-letter code that represents the country or region associated with the App Store storefront.
 - [type taxCode](taxcode.md)

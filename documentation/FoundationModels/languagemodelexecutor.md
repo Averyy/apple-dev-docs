@@ -70,6 +70,9 @@ Use [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationch
 ### Inherits From
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
+### Conforming Types
+- [PrivateCloudComputeLanguageModel.Executor](privatecloudcomputelanguagemodel/executor.md)
+- [SystemLanguageModel.Executor](systemlanguagemodel/executor.md)
 
 ## See Also
 

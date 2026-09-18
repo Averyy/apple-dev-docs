@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
+A type that represents the dynamic profile a modifier applies to.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -33,10 +35,13 @@ struct DynamicProfileModifierContent<Modifier> where Modifier : LanguageModelSes
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
 - [LanguageModelSession.ConditionalDynamicProfile](languagemodelsession/conditionaldynamicprofile.md)
+  A dynamic profile that resolves to one of two profiles, depending on a condition.
 - [LanguageModelSession.DynamicProfileBuilder](languagemodelsession/dynamicprofilebuilder.md)
   A type that represents a dynamic profile builder.
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+  A dynamic profile with a modifier applied to it.
 - [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
+  A type-erased dynamic profile.
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+A Boolean value that indicates whether usage is nearing the usage limit.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

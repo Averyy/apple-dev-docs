@@ -30,6 +30,8 @@ The numbers in a report reflect what the device is doing while the report runs. 
 
 Open the Performance tab and click the Add button (+) in the lower-left corner to create a report. Choose where to run it, either your Mac or a connected device, and choose a compute-unit configuration to test.
 
+![Screenshot of the Choose a connected device dialog in Xcode. The dialog shows My Mac selected in the list of available devices, with Cancel and Next buttons.](/images/com.apple.coreml/coreml-performance-report-connected-devices@2x.png)
+
 The configuration sets which compute units the model may use, such as All, CPU only, CPU and GPU, or CPU and Neural Engine. After you start the report, Xcode runs the model on the device and shows the report once it’s done; you don’t see intermediate results while it runs.
 
 ![Screenshot of the Choose compute unit dialog in Xcode. The Compute Unit options are All (selected), CPU only, CPU and GPU, and CPU and Neural Engine. The dialog has Cancel, Previous, and Run Test buttons.](/images/com.apple.coreml/performance-report-compute-unit@2x.png)

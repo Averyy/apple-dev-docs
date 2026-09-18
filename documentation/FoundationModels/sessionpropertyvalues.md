@@ -57,6 +57,7 @@ Use [`SessionPropertyEntry()`](sessionpropertyentry().md) to create custom sessi
   The history portion of the session’s transcript.
 ### Accessing the subscript
 - [subscript<K>(K.Type) -> K.Value](sessionpropertyvalues/subscript(_:).md)
+  Accesses the value stored for the given session property key.
 
 ## Relationships
 
@@ -70,7 +71,7 @@ Use [`SessionPropertyEntry()`](sessionpropertyentry().md) to create custom sessi
 ## See Also
 
 - [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
-  A property wrapper that provides access to properties from within profiles,  dynamic instructions, and tools.
+  A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
 - [protocol SessionPropertyKey](sessionpropertykey.md)
   A protocol for defining a custom session property key.
 - [macro SessionPropertyEntry()](sessionpropertyentry().md)

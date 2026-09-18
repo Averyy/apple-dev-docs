@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Version aware identifiers for all assets used to generate this response.
+Version-aware identifiers for all assets used to generate this response.
 
 **Availability**:
 - iOS 26.0+
@@ -22,7 +22,7 @@ var assetIDs: [String]
 ## See Also
 
 - [var segments: [Transcript.Segment]](transcript/response/segments.md)
-  Ordered prompt segments.
+  Ordered response segments.
 - [var metadata: [String : GeneratedContent]](transcript/response/metadata.md)
   Metadata associated with generating the response.
 

@@ -25,6 +25,9 @@ static let windowApplication: UISceneSession.Role
 
 ## See Also
 
+- [static let windowAssistiveAccessApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowassistiveaccessapplication.md)
+- [static let windowCameraCaptureAccessory: UISceneSession.Role](uiscenesession/role-swift.struct/windowcameracaptureaccessory.md)
+  A session role for scenes that present content during camera capture.
 - [static let windowExternalDisplay: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplay.md)
   A scene that displays noninteractive windows on an externally connected display.
 - [static let windowExternalDisplayNonInteractive: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md)

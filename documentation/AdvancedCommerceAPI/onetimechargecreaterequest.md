@@ -17,7 +17,7 @@ object OneTimeChargeCreateRequest
 ## Mentions
 
 - [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
 
 ##### Example
 

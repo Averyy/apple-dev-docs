@@ -19,7 +19,7 @@ static var messages: Message.Messages { get }
 
 ## Mentions
 
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 
 #### Discussion

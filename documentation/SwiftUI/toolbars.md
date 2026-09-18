@@ -65,6 +65,7 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/human-i
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
 - [struct ContentToolbarPlacement](contenttoolbarplacement.md)
+  A region of the interface that hosts its own toolbar content.
 ### Specifying the role of toolbar content
 - [func toolbarRole(ToolbarRole) -> some View](view/toolbarrole(_:).md)
   Configures the semantic role for the content populating the toolbar.
@@ -120,6 +121,15 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/human-i
   Sets the safe area adjustment for the specified bars during minimization.
 - [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
   The safe area adjustment during toolbar minimization.
+### Configuring vertical toolbar behavior
+- [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](view/toolbarverticalbehavior(_:).md)
+  Sets the behavior for the vertical bar.
+- [struct ToolbarVerticalBehavior](toolbarverticalbehavior.md)
+  A behavior that determines whether the vertical bar is used.
+- [func toolbarVerticalCompressionBehavior(ToolbarVerticalCompressionBehavior) -> some View](view/toolbarverticalcompressionbehavior(_:).md)
+  Sets how bars should compress when different types of toolbars are hosted together and space is constrained.
+- [struct ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior.md)
+  A behavior that determines how bars compress when the system places different types of bars together and space is constrained.
 
 ## See Also
 

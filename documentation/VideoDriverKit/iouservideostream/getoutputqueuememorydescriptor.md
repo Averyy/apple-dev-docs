@@ -6,7 +6,7 @@
 Returns an memory descriptorrepesenting the shared memory output queue buffer.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

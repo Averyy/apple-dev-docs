@@ -51,14 +51,23 @@ struct SwiftUIAttributes
 - [let underlineStyle: AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute](attributescopes/swiftuiattributes/underlinestyle.md)
 ### Enumerations
 - [AttributeScopes.SwiftUIAttributes.AdaptiveImageGlyphAttribute](attributescopes/swiftuiattributes/adaptiveimageglyphattribute.md)
+  A key for an adaptive image glyph inside a run of attributed text.
 - [AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute](attributescopes/swiftuiattributes/backgroundcolorattribute.md)
+  A key for the color that fills the area behind a run of attributed text.
 - [AttributeScopes.SwiftUIAttributes.BaselineOffsetAttribute](attributescopes/swiftuiattributes/baselineoffsetattribute.md)
+  A key for the distance a run of attributed text shifts from its baseline.
 - [AttributeScopes.SwiftUIAttributes.FontAttribute](attributescopes/swiftuiattributes/fontattribute.md)
+  A key for the font of a run of attributed text.
 - [AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute](attributescopes/swiftuiattributes/foregroundcolorattribute.md)
+  A key for the color that draws a run of attributed text.
 - [AttributeScopes.SwiftUIAttributes.KerningAttribute](attributescopes/swiftuiattributes/kerningattribute.md)
+  A key for the space added between specific pairs of characters in a run of attributed text.
 - [AttributeScopes.SwiftUIAttributes.StrikethroughStyleAttribute](attributescopes/swiftuiattributes/strikethroughstyleattribute.md)
+  A key for the line drawn through a run of attributed text.
 - [AttributeScopes.SwiftUIAttributes.TrackingAttribute](attributescopes/swiftuiattributes/trackingattribute.md)
+  A key for the space added between every character of a run of attributed text.
 - [AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute](attributescopes/swiftuiattributes/underlinestyleattribute.md)
+  A key for the line drawn under a run of attributed text.
 
 ## Relationships
 

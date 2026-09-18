@@ -54,6 +54,8 @@ For information on creating custom traits, see [`Providing data to the view hier
 ### Getting related traits
 - [static var systemTraitsAffectingColorAppearance: [UITrait]](uitraitcollection/systemtraitsaffectingcolorappearance-64z7q.md)
 - [static var systemTraitsAffectingImageLookup: [UITrait]](uitraitcollection/systemtraitsaffectingimagelookup-4jv5.md)
+- [static var systemTraitsAffectingVerticalBarEdge: [UITrait]](uitraitcollection/systemtraitsaffectingverticalbaredge-475st.md)
+  The system traits that affect the value of `verticalBarEdge`.
 ### Modifying traits
 - [convenience init(mutations: UITraitCollection.TraitMutations)](uitraitcollection/init(mutations:).md)
 - [func modifyingTraits(UITraitCollection.TraitMutations) -> UITraitCollection](uitraitcollection/modifyingtraits(_:).md)
@@ -119,6 +121,10 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [var hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit](uitraitcollection/hdrheadroomusagelimit.md)
   If HDR headroom should be used for the current UI configuration. Headroom usage is disabled in certain UI configurations, such as when all an application’s windows are in the background.
 - [enum UIHDRHeadroomUsageLimit](uihdrheadroomusagelimit.md)
+- [var verticalBarEdge: UIVerticalBarEdge](uitraitcollection/verticalbaredge.md)
+  The edge where the system places the vertical bar.
+- [enum UIVerticalBarEdge](uiverticalbaredge.md)
+  The edge where the system places the vertical bar.
 ### Retrieving the force touch capability traits
 - [var forceTouchCapability: UIForceTouchCapability](uitraitcollection/forcetouchcapability.md)
   The force touch capability value of the trait collection.
@@ -220,6 +226,8 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [convenience init(systemPrefersReducedResourceUsage: Bool)](uitraitcollection/init(systemprefersreducedresourceusage:).md)
 - [init(traitsFromCollections: [UITraitCollection])](uitraitcollection/init(traitsfromcollections:).md)
 ### Instance Properties
+- [var navigationTitleAlignment: UINavigationItem.TitleAlignment](uitraitcollection/navigationtitlealignment.md)
+  The alignment the navigation bar resolved for its title.
 - [var systemPrefersReducedResourceUsage: Bool](uitraitcollection/systemprefersreducedresourceusage-1yl57.md)
 ### Instance Methods
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](uitraitcollection/replacing(_:value:)-162et.md)

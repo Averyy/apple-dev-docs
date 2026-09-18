@@ -44,7 +44,7 @@ See the [`Customizing render pass setup`](customizing-render-pass-setup.md) samp
 - [enum MTLVisibilityResultMode](mtlvisibilityresultmode.md)
   The mode that determines what, if anything, the GPU writes to the results buffer, after the GPU executes the render pass.
 - [enum MTLVisibilityResultType](mtlvisibilityresulttype.md)
-  This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
+  Actions for visibility results between render passes.
 ### Encoding a render pass in parallel
 - [protocol MTLParallelRenderCommandEncoder](mtlparallelrendercommandencoder.md)
   An instance that splits up a single render pass so that it can be simultaneously encoded from multiple threads.

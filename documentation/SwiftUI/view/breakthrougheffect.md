@@ -81,6 +81,7 @@ This also applies to RealityKit presentations using `RealityKit/PresentationComp
 - [struct SurroundingsEffect](surroundingseffect.md)
   Effects that the system can apply to passthrough video.
 - [struct BreakthroughEffect](breakthrougheffect.md)
+  The way a presentation shows through content in front of it.
 
 
 ---

@@ -29,11 +29,11 @@ struct Reason
 - [static let other: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/other.md)
   The customer requested a refund for other reasons.
 - [static let unfulfilled: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unfulfilled.md)
-  The customer had issues with receiving or using the in-app purchase.
+  The customer had issues with receiving or using the Apple In-App Purchase.
 - [static let unintended: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unintended.md)
-  The customer didn’t intend to make the in-app purchase.
+  The customer didn’t intend to make the Apple In-App Purchase.
 - [static let unsatisfied: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unsatisfied.md)
-  The customer wasn’t satisfied with the in-app purchase.
+  The customer wasn’t satisfied with the Apple In-App Purchase.
 
 ## Relationships
 

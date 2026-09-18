@@ -6,7 +6,7 @@
 Gets the work queue created by the video object.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -93,8 +93,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
-- [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
-  Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
+- [Rendering Gaussian splats with RealityKit](working-with-gaussian-splats-with-realitykit.md)
+  Bring a real-world scan into your app by loading splat data from a USD or PLY file.
 - [Manipulating models with RealityKit](../realitykit/manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.
 ### ARKit

@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-The secondary action button, or @c nil if excluded.
+An optional action button to display in the panel.
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +16,10 @@ The secondary action button, or @c nil if excluded.
 @NSCopying
 var secondaryAction: CPTextButton? { get }
 ```
+
+#### Discussion
+
+Specify this button at initialization time and use this property to retrieve it later.
 
 
 ---

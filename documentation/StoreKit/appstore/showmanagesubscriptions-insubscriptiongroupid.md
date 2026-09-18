@@ -20,7 +20,7 @@ static func showManageSubscriptions(in scene: UIWindowScene, subscriptionGroupID
 
 ## Mentions
 
-- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Choosing a StoreKit API for Apple In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
 - [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## Parameters

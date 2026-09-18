@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A value you use to describe the model behavior when it comes to tool usage.
+A value that describes how the model uses tools.
 
 **Availability**:
 - iOS 27.0+
@@ -67,7 +67,9 @@ struct RecipeDynamicProfile: LanguageModelSession.DynamicProfile {
   The model must call one or multiple tools.
 ### Accessing the content
 - [var kind: GenerationOptions.ToolCallingMode.Kind](generationoptions/toolcallingmode-swift.struct/kind-swift.property.md)
+  The tool-calling behavior this mode represents.
 - [GenerationOptions.ToolCallingMode.Kind](generationoptions/toolcallingmode-swift.struct/kind-swift.enum.md)
+  A representation of the different ways a model can use tools.
 
 ## Relationships
 

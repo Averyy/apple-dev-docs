@@ -23,6 +23,7 @@ nonisolated init<C, S>(_ title: S, @ContentBuilder content: () -> C) where Conte
 ## Parameters
 
 - `title`: A string that describes the contents of the group.
+- `content`: The content to display.
 
 ## See Also
 

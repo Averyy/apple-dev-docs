@@ -34,7 +34,7 @@ A view that uses the specified shortcuts button style on its child views.
 - [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](view/appentityuielements(_:).md)
   Provides the system with additional context to make a custom view’s content discoverable by Apple Intelligence and Siri.
 - [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](view/onappintentexecution(_:perform:).md)
-  Registers a handler to invoke in response to the specified app intent that your app receives.
+  Registers a handler to run when the app receives an app intent that targets the associated scene.
 - [func siriTipViewStyle(SiriTipViewStyle) -> some View](view/siritipviewstyle(_:).md)
   Sets the given style for SiriTipView within the view hierarchy
 

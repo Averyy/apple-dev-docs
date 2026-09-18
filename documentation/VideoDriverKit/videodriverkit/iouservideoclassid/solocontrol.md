@@ -6,7 +6,7 @@
 A Boolean control where true means that solo is enabled, making just that element audible and the other elements inaudible.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

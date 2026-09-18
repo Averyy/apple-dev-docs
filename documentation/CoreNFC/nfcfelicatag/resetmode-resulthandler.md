@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func resetMode(resultHandler: @escaping (Result<NFCFeliCaStatusFlag, any Error>) -> Void)
+@preconcurrency
+func resetMode(resultHandler: @escaping @Sendable (Result<NFCFeliCaStatusFlag, any Error>) -> Void)
 ```
 
 

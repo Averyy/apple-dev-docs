@@ -6,7 +6,7 @@ Provide prices for SKUs with the supported number of decimal places, in milliuni
 
 #### Discussion
 
-Apps that use the Advanced Commerce API manage their own catalog of in-app purchases and their respective SKUs, including their prices. When supplying a price, be sure to use the supported number of decimal places, as shown in the section below. In the API, provide the price value in milliunit format.
+Apps that use the Advanced Commerce API manage their own catalog of Apple In-App Purchases and their respective SKUs, including their prices. When supplying a price, be sure to use the supported number of decimal places, as shown in the section below. In the API, provide the price value in milliunit format.
 
 When setting a price for your SKU, it’s strongly recommended that you choose from the 900 price points that the App Store supports across 175 storefronts and 44 currencies. To view or download a .csv file that includes all the storefronts, currencies, and price points:
 
@@ -108,7 +108,7 @@ The following currencies support two decimal places:
 ## See Also
 
 - [Choosing tax codes for your SKUs](taxcodes.md)
-  Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
+  Select a tax code for each SKU that represents a product your app offers as an Apple In-App Purchase.
 - [Handling subscription price changes](handling-subscription-price-changes.md)
   Initiate a price change and manage communications with your subscribers through the App Store.
 

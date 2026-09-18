@@ -6,7 +6,7 @@
 A video selector control that identifies where the data for the element is coming from.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

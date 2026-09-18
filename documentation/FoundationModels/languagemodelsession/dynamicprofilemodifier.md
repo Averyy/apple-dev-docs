@@ -29,10 +29,13 @@ protocol DynamicProfileModifier
 - [func body(content: Self.Content) -> Self.Body](languagemodelsession/dynamicprofilemodifier/body(content:).md)
   The content of the dynamic profile modifier.
 - [LanguageModelSession.DynamicProfileModifier.Content](languagemodelsession/dynamicprofilemodifier/content.md)
+  The type of dynamic profile content that this modifier wraps.
 - [associatedtype Body : LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofilemodifier/body.md)
   The type of dynamic profile modifier that represents this modifier.
 - [LanguageModelSession.DynamicProfileModifier.SessionProperty](languagemodelsession/dynamicprofilemodifier/sessionproperty.md)
+  A property wrapper that provides access to a session property from within a dynamic profile modifier.
 - [LanguageModelSession.DynamicProfileModifier.DynamicProfile](languagemodelsession/dynamicprofilemodifier/dynamicprofile.md)
+  The dynamic profile type that a modifier’s body returns.
 
 ## See Also
 
@@ -43,6 +46,7 @@ protocol DynamicProfileModifier
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
 - [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+  Dynamic instructions that produce content for each element of a collection.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)

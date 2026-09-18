@@ -25,7 +25,7 @@
 ## See Also
 
 - [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
-  A property wrapper that provides access to properties from within profiles,  dynamic instructions, and tools.
+  A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
 - [protocol SessionPropertyKey](sessionpropertykey.md)
   A protocol for defining a custom session property key.
 - [class SessionPropertyValues](sessionpropertyvalues.md)

@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A region of the interface that hosts its own toolbar content.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -17,6 +19,32 @@
 ```swift
 struct ContentToolbarPlacement
 ```
+
+#### Overview
+
+Some containers draw a bar that belongs to the container as a whole rather than to the view currently on screen, such as the sidebar of a [`TabView`](tabview.md) that uses the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style. Pass a value of this type to [`contentToolbar(for:content:)`](view/contenttoolbar(for:content:).md) to put items in one of those bars.
+
+The following example adds a button to the sidebar of a tab view, where it stays put as someone moves between tabs:
+
+```swift
+TabView {
+    Tab("Lights", systemImage: "lightbulb") {
+        LightsView()
+    }
+
+    Tab("Locks", systemImage: "lock") {
+        LocksView()
+    }
+}
+.tabViewStyle(.sidebarAdaptable)
+.contentToolbar(for: .tabViewSidebar) {
+    ToolbarItem {
+        DisconnectDevicesButton()
+    }
+}
+```
+
+Each placement accepts only some [`ToolbarItemPlacement`](toolbaritemplacement.md) values. Check the documentation of the placement you use before you rely on a position.
 
 ## Topics
 

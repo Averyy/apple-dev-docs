@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-The properties of an In-App Purchase product for use by custom product view styles.
+The properties of an Apple In-App Purchase product for use by custom product view styles.
 
 **Availability**:
 - iOS 17.0+
@@ -28,16 +28,16 @@ Use the `ProductViewStyleConfiguration` to create a custom [`ProductViewStyle`](
 
 ### Getting a product’s information
 - [var product: Product?](productviewstyleconfiguration/product.md)
-  The in-app purchase product to merchandise.
+  The Apple In-App Purchase product to merchandise.
 - [let state: Product.TaskState](productviewstyleconfiguration/state.md)
   The product task state that indicates the product’s loading phase.
 - [let hasCurrentEntitlement: Bool](productviewstyleconfiguration/hascurrententitlement.md)
-  A Boolean value that indicates whether an in-app purchase transaction exists for the product.
+  A Boolean value that indicates whether an Apple In-App Purchase transaction exists for the product.
 ### Getting a product view’s icon
 - [let icon: ProductViewStyleConfiguration.Icon](productviewstyleconfiguration/icon-swift.property.md)
   A decorative view for merchandising the product.
 - [ProductViewStyleConfiguration.Icon](productviewstyleconfiguration/icon-swift.struct.md)
-  A type-erased icon of an in-app purchase product.
+  A type-erased icon of an Apple In-App Purchase product.
 ### Getting a product’s description visibility
 - [let descriptionVisibility: Visibility](productviewstyleconfiguration/descriptionvisibility.md)
   The visibility of product descriptions.
@@ -54,7 +54,7 @@ Use the `ProductViewStyleConfiguration` to create a custom [`ProductViewStyle`](
 ](../swiftui/view/producticonborder.md)
   Adds a standard border to an in-app purchase product’s icon .
 - [protocol ProductViewStyle](productviewstyle.md)
-  A type that specifies the appearance and interaction of In-App Purchase products within the view hierarchy.
+  A type that specifies the appearance and interaction of Apple In-App Purchase products within the view hierarchy.
 
 
 ---

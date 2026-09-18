@@ -157,6 +157,8 @@ To interpret accelerometer, gyroscope, or attitude information, you need to know
   Defines motion errors.
 ### Instance Properties
 - [var deviceMotionBody: (any CMBodyIdentifiable)?](cmmotionmanager/devicemotionbody.md)
+### Type Methods
+- [class func authorizationStatus() -> CMAuthorizationStatus](cmmotionmanager/authorizationstatus.md)
 
 ## Relationships
 

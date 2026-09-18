@@ -135,9 +135,13 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [class CPListTemplateDetailsHeader](cplisttemplatedetailsheader.md)
   A header for list templates that displays rich media content with action buttons.
 - [class CPMapPanel](cpmappanel.md)
+  An overlay for a custom map interface that shows navigation-related instructions or information over a portion of the map.
 - [class CPMapPanelButtonConfiguration](cpmappanelbuttonconfiguration.md)
+  A type that manages the action buttons and travel estimates in a map panel.
 - [class CPMapPanelItem](cpmappanelitem.md)
+  A type that manages the waypoint, route, trip, and other information you display in a map panel.
 - [class CPMapPanelSection](cpmappanelsection.md)
+  A single section of a map panel that you fill with a title and one or more items.
 - [class CPMapTemplateWaypoint](cpmaptemplatewaypoint.md)
   CPMapTemplateWaypoint represents a waypoint with associated travel estimates
 - [class CPMessageGridItemConfiguration](cpmessagegriditemconfiguration.md)
@@ -156,8 +160,11 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [class CPNowPlayingSportsTeamLogo](cpnowplayingsportsteamlogo.md)
   A logo image or, if no image is available, an abbreviation or initialism for this team.
 - [class CPPanel](cppanel.md)
+  A type that provides the common behaviors for panels you display on top of your app’s content.
 - [class CPPanelButtonConfiguration](cppanelbuttonconfiguration.md)
+  A type that provides the common behaviors for a button layout in a panel.
 - [class CPPanelItem](cppanelitem.md)
+  A type that provides the common behaviors for items you display in a section of a panel.
 - [class CPPlaybackConfiguration](cpplaybackconfiguration.md)
 - [class CPRouteDetail](cproutedetail.md)
 - [class CPRouteSegment](cproutesegment.md)

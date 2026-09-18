@@ -16,7 +16,7 @@ var canBeginTrimming: Bool { get }
 
 ## Mentions
 
-- [Implementing Trimming in a macOS Player](implementing-trimming-in-a-macos-player.md)
+- [Implementing trimming in a macOS player](implementing-trimming-in-a-macos-player.md)
 
 #### Discussion
 

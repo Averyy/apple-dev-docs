@@ -40,7 +40,7 @@ The net effect is that low temperatures manifest as more stable and predictable 
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
   The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
-  A value you use to describe the model behavior when it comes to tool usage.
+  A value that describes how the model uses tools.
 - [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
   The maximum number of tokens the model is allowed to produce in its response.
 

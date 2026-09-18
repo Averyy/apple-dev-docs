@@ -6,7 +6,7 @@
 Call to update stream formats when the owning video device changes sample rate
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

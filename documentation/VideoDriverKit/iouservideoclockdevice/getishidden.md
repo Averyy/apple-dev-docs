@@ -6,7 +6,7 @@
 Gets a Boolean value indicating if the device is hidden.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

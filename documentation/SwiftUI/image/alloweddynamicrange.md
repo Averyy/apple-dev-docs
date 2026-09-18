@@ -40,6 +40,7 @@ Image("hdr-asset").allowedDynamicRange(.high)
 - [var allowedDynamicRange: Image.DynamicRange?](environmentvalues/alloweddynamicrange.md)
   The allowed dynamic range for the view, or nil.
 - [struct DynamicRange](image/dynamicrange.md)
+  The range of brightness that an image is allowed to draw.
 
 
 ---

@@ -36,7 +36,7 @@ protocol MTL4CommandBuffer : NSObjectProtocol
 - [func beginCommandBuffer(allocator: any MTL4CommandAllocator, options: MTL4CommandBufferOptions)](mtl4commandbuffer/begincommandbuffer(allocator:options:).md)
   Prepares a command buffer for encoding with additional options.
 - [func endCommandBuffer()](mtl4commandbuffer/endcommandbuffer.md)
-  Closes a command buffer to prepare it for submission to a command queue.
+  Finalizes a command buffer which makes it ready for you to submit it to a command queue.
 - [func makeComputeCommandEncoder() -> (any MTL4ComputeCommandEncoder)?](mtl4commandbuffer/makecomputecommandencoder.md)
   Creates a compute command encoder.
 - [func makeMachineLearningCommandEncoder() -> (any MTL4MachineLearningCommandEncoder)?](mtl4commandbuffer/makemachinelearningcommandencoder.md)

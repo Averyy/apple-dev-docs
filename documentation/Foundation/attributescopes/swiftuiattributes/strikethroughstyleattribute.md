@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for the line drawn through a run of attributed text.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,17 @@
 ```swift
 @frozen
 enum StrikethroughStyleAttribute
+```
+
+#### Overview
+
+Set this key to mark text as no longer current, such as a completed item or a superseded price. The value carries both the pattern and the color of the line:
+
+```None
+var price = AttributedString("$24.00")
+price.strikethroughStyle = .single
+
+Text(price)
 ```
 
 ## Relationships

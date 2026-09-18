@@ -18,20 +18,11 @@ object DownloadLinks
 
 The URLs you get from the `assetInfo` property are valid for 15 minutes after you receive them.
 
-=======
-
-- assetInfo: An array of URLs to which you make `GET` requests to download someone’s account data.
-
-> **Note**: > **Note**: > **Note**: > **Note**: > **Note**: > **Note**: > **Note**: Main
-
-- jobStatus: The result of the download request.
-- status: The result of the operation to request download links.
-
 ## Properties
 
-- `assetInfo` ([string]): An array of URLs to which you make `GET` requests to download someone’s account data if `jobStatus` is `completed`; otherwise, [TBD].
-- `jobStatus` (string)
-- `status` (string)
+- `assetInfo` ([string]): An array of URLs to which you make `GET` requests to download someone’s account data.
+- `jobStatus` (string): The result of the download request.
+- `status` (string): The result of the operation to request download links.
 
 ## See Also
 

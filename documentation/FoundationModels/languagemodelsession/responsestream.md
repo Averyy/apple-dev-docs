@@ -27,6 +27,8 @@ struct ResponseStream<Content> where Content : Generable
 ### Getting a snapshot of a partial response
 - [LanguageModelSession.ResponseStream.Snapshot](languagemodelsession/responsestream/snapshot.md)
   A snapshot of partially generated content.
+### Default Implementations
+- [AsyncSequence Implementations](languagemodelsession/responsestream/asyncsequence-implementations.md)
 
 ## Relationships
 

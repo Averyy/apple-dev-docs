@@ -13,7 +13,8 @@ Connects the reader session to a tag and activates that tag.
 ## Declaration
 
 ```swift
-func connect(to tag: NFCTag, completionHandler: @escaping ((any Error)?) -> Void)
+@preconcurrency
+func connect(to tag: NFCTag, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
 #### Discussion

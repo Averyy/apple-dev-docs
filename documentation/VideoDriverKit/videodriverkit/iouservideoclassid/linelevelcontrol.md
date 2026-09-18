@@ -6,7 +6,7 @@
 A video selector control that identifies the nominal line level for the element.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

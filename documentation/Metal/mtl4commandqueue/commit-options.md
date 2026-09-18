@@ -31,7 +31,7 @@ When you commit work from multiple threads, modifying and reusing the same optio
 
 ## Parameters
 
-- `commandBuffers`: A Swift array of `MTL4CommandBuffers` to commit.
+- `commandBuffers`: A Swift array of [`MTL4CommandBuffer`](mtl4commandbuffer.md) instances to commit.
 - `options`: An instance of [`MTL4CommitOptions`](mtl4commitoptions.md) that configures the commit operation.
 
 

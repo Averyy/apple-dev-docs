@@ -34,7 +34,9 @@ A model builds its response to a prompt in a loop. At each iteration in the loop
   A sampling mode that considers a fixed number of high-probability tokens.
 ### Getting the kind of sampling
 - [let kind: GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.property.md)
+  The strategy this sampling mode uses to choose the next token.
 - [GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.enum.md)
+  A representation of the different strategies for choosing the next token.
 
 ## Relationships
 
@@ -54,7 +56,7 @@ A model builds its response to a prompt in a loop. At each iteration in the loop
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
   The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
-  A value you use to describe the model behavior when it comes to tool usage.
+  A value that describes how the model uses tools.
 - [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
   The maximum number of tokens the model is allowed to produce in its response.
 

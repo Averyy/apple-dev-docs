@@ -6,7 +6,7 @@
 Gets the custom property value for a given qualifier.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

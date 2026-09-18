@@ -20,7 +20,7 @@ protocol AVRoutePickerViewDelegate : NSObjectProtocol
 
 ## Topics
 
-### Presenting Routes
+### Presenting routes
 - [func routePickerViewWillBeginPresentingRoutes(AVRoutePickerView)](avroutepickerviewdelegate/routepickerviewwillbeginpresentingroutes(_:).md)
   Tells the delegate that the route picker view is about to begin presenting routes to the user.
 - [func routePickerViewDidEndPresentingRoutes(AVRoutePickerView)](avroutepickerviewdelegate/routepickerviewdidendpresentingroutes(_:).md)
@@ -33,8 +33,10 @@ protocol AVRoutePickerViewDelegate : NSObjectProtocol
 
 ## See Also
 
-- [var delegate: (any AVRoutePickerViewDelegate)?](avroutepickerview/delegate.md)
-  The delegate object for the route picker.
+- [class AVRoutePickerView](avroutepickerview.md)
+  A view that presents a list of nearby media receivers.
+- [enum AVRoutePickerViewButtonStyle](avroutepickerviewbuttonstyle.md)
+  Constants that define the button styles a route picker view supports.
 
 
 ---

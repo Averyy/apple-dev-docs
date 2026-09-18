@@ -3,7 +3,7 @@
 **Framework**: Advanced Commerce API  
 **Kind**: typealias
 
-The product identifier of an in-app purchase product you manage in your own system.
+The product identifier of an Apple In-App Purchase product you manage in your own system.
 
 **Availability**:
 - Advanced Commerce API 1.0+
@@ -16,11 +16,11 @@ string SKU
 
 ##### Discussion
 
-Apps that use the Advanced Commerce API manage their own catalogs of in-app purchases. You assign a SKU to each product, along with other information such as the display name, description, and price.
+Apps that use the Advanced Commerce API manage their own catalogs of Apple In-App Purchases. You assign a SKU to each product, along with other information such as the display name, description, and price.
 
 The SKU value isn’t displayed to customers, and isn’t stored by App Store Connect.
 
-A SKU can represent any type of in-app purchase product that your app offers, including products with a one-time charge, auto-renewable subscriptions, or bundles and items in subscriptions.
+A SKU can represent any type of Apple In-App Purchase product that your app offers, including products with a one-time charge, auto-renewable subscriptions, or bundles and items in subscriptions.
 
 ## See Also
 

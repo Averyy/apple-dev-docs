@@ -313,7 +313,10 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Adds an action to perform in response to the system’s Play/Pause command.
 - [func onCommand(Selector, perform: (() -> Void)?) -> some View](view/oncommand(_:perform:).md)
   Adds an action to perform in response to the given selector.
-### Digital crown
+### Hinge
+- [func onHingeChange(isEnabled: Bool, (DeviceHingeContext, DeviceHingeContext) -> Void) -> some View](view/onhingechange(isenabled:_:).md)
+  Adds an action to perform when the hinge context of the view hierarchy changes.
+### Digital Crown
 - [func digitalCrownAccessory(Visibility) -> some View](view/digitalcrownaccessory(_:).md)
   Specifies the visibility of Digital Crown accessory Views on Apple Watch.
 - [func digitalCrownAccessory<Content>(content: () -> Content) -> some View](view/digitalcrownaccessory(content:).md)
@@ -414,7 +417,7 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 - [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](view/appentityuielements(_:).md)
   Provides the system with additional context to make a custom view’s content discoverable by Apple Intelligence and Siri.
 - [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](view/onappintentexecution(_:perform:).md)
-  Registers a handler to invoke in response to the specified app intent that your app receives.
+  Registers a handler to run when the app receives an app intent that targets the associated scene.
 - [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](view/shortcutslinkstyle(_:).md)
   Sets the given style for ShortcutsLinks within the view hierarchy
 - [func siriTipViewStyle(SiriTipViewStyle) -> some View](view/siritipviewstyle(_:).md)

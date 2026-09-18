@@ -6,7 +6,7 @@
 Sets whether that the stream is active and doing IO.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

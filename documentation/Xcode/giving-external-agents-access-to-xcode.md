@@ -49,6 +49,8 @@ Before prompting an external agent (outside of Xcode), be sure to open your proj
 
 - [Extending and customizing agents](extending-and-customizing-agents.md)
   Expand agent capabilities for your specific needs and application domain.
+- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+  Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 
 
 ---

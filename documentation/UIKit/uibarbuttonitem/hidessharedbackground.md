@@ -26,6 +26,9 @@ This item will not be visually grouped with any other items, without the standar
 
 - [var sharesBackground: Bool](uibarbuttonitem/sharesbackground.md)
   A boolean value indicating whether this bar button item can share a background with other items in a navigation bar or a toolbar.
+- [var axisBehavior: UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.property.md)
+  The bar axis behavior of the item.
+- [UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.enum.md)
 
 
 ---

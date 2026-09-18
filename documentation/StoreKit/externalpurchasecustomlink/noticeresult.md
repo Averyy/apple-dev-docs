@@ -44,10 +44,10 @@ If the value is [`ExternalPurchaseCustomLink.NoticeResult.continued`](externalpu
 
 ## See Also
 
-- [static func showNotice(type: ExternalPurchaseCustomLink.NoticeType) async throws -> ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/shownotice(type:).md)
-  Displays the system disclosure notice sheet and asks the customer whether to continue.
-- [ExternalPurchaseCustomLink.NoticeType](externalpurchasecustomlink/noticetype.md)
-  The custom link out style that informs the type of disclosure notice to display.
+- [static func showNotice(for: ExternalPurchaseCustomLink.ExternalPurchaseType) async throws -> ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/shownotice(for:).md)
+  Displays the system disclosure notice sheet for a custom link type and asks the customer whether to continue.
+- [ExternalPurchaseCustomLink.ExternalPurchaseType](externalpurchasecustomlink/externalpurchasetype.md)
+  Values that represent the types of external purchase an app can perform.
 
 
 ---

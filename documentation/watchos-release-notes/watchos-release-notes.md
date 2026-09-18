@@ -15,6 +15,8 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 ## Topics
 
 ### watchOS 27
+- [watchOS 27.2 Beta Release Notes](watchos-27_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [watchOS 27 Release Notes](watchos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### watchOS 26

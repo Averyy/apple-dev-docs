@@ -46,18 +46,24 @@ extension MyCustomType: Transition {
   The composition of content that comprise the toolbar content.
 - [associatedtype Body : ToolbarContent](toolbarcontent/body-swift.associatedtype.md)
   The type of content representing the body of this toolbar content.
+### Customizing behaviors
+- [func axisBehavior(ToolbarItemAxisBehavior) -> some ToolbarContent](toolbarcontent/axisbehavior(_:).md)
+  The bar axis behavior of the toolbar item.
+- [struct ToolbarItemAxisBehavior](toolbaritemaxisbehavior.md)
+  Describes the bar axis behavior of a toolbar item.
 ### Setting visibility
-- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
-  Defines the visibility priority for a toolbar item.
-### Instance Methods
-- [func contentMarginsRemoved(Bool) -> some ToolbarContent](toolbarcontent/contentmarginsremoved(_:).md)
-  Configures whether the content margins are removed.
 - [func hidden(Bool) -> some ToolbarContent](toolbarcontent/hidden(_:).md)
   Hides a toolbar item within its toolbar.
-- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some ToolbarContent](toolbarcontent/matchedtransitionsource(id:in:).md)
-  Identifies this toolbar content as the source of a navigation transition, such as a zoom transition.
 - [func sharedBackgroundVisibility(Visibility) -> some ToolbarContent](toolbarcontent/sharedbackgroundvisibility(_:).md)
   Controls the visibility of the glass background effect on items in the toolbar. In certain contexts, such as the navigation bar on iOS and the window toolbar on macOS, toolbar items will be given a glass background effect that is shared with other items in the same logical grouping.
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
+  Defines the visibility priority for a toolbar item.
+### Coordinating with animations
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some ToolbarContent](toolbarcontent/matchedtransitionsource(id:in:).md)
+  Identifies this toolbar content as the source of a navigation transition, such as a zoom transition.
+### Adjusting content margins
+- [func contentMarginsRemoved(Bool) -> some ToolbarContent](toolbarcontent/contentmarginsremoved(_:).md)
+  Configures whether the content margins are removed.
 
 ## Relationships
 

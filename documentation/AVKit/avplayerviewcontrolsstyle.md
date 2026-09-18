@@ -18,7 +18,7 @@ enum AVPlayerViewControlsStyle
 
 ### Creating a controls style
 - [init?(rawValue: Int)](avplayerviewcontrolsstyle/init(rawvalue:).md)
-### Controls Styles
+### Controls styles
 - [AVPlayerViewControlsStyle.none](avplayerviewcontrolsstyle/none.md)
   The view displays no playback controls.
 - [AVPlayerViewControlsStyle.inline](avplayerviewcontrolsstyle/inline.md)

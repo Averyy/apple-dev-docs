@@ -46,6 +46,9 @@ let response = try await session.respond(to: "Tell me a joke!")
 - [var executorConfiguration: Self.Executor.Configuration](languagemodel/executorconfiguration.md)
   A configuration for an executor capable of running this model.
 - [associatedtype Executor : LanguageModelExecutor](languagemodel/executor.md)
+### Instance Methods
+- [func supportsDataAttachmentType(UTType) async throws -> Bool](languagemodel/supportsdataattachmenttype(_:).md)
+- [func supportsDataEntryType(UTType) async throws -> Bool](languagemodel/supportsdataentrytype(_:).md)
 
 ## Relationships
 

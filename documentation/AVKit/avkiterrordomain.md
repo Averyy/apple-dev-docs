@@ -24,6 +24,8 @@ let AVKitErrorDomain: String
   A structure that represents a framework error.
 - [AVKitError.Code](avkiterror-swift.struct/code.md)
   Constants that identify framework error codes.
+- [Error constants](error-constants.md)
+  Error code constants for framework operations.
 
 
 ---

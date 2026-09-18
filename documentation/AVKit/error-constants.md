@@ -1,4 +1,4 @@
-# Error Constants
+# Error constants
 
 **Framework**: AVKit
 
@@ -6,7 +6,7 @@ Error code constants for framework operations.
 
 ## Topics
 
-### Error Code Constants
+### Error codes
 - [static var unknown: AVKitError.Code](avkiterror-swift.struct/unknown.md)
   An unknown error.
 - [static var contentRatingUnknown: AVKitError.Code](avkiterror-swift.struct/contentratingunknown.md)
@@ -20,7 +20,10 @@ Error code constants for framework operations.
 
 ## See Also
 
-- [static var errorDomain: String](avkiterror-swift.struct/errordomain.md)
+- [let AVKitErrorDomain: String](avkiterrordomain.md)
+  The domain of errors the framework generates.
+- [struct AVKitError](avkiterror-swift.struct.md)
+  A structure that represents a framework error.
 - [AVKitError.Code](avkiterror-swift.struct/code.md)
   Constants that identify framework error codes.
 

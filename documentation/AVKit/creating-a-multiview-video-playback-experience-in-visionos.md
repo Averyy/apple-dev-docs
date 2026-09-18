@@ -237,14 +237,6 @@ if !supportsEmbeddedPlaybackExperience, context.toExperience == .expanded {
 
 - [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
   Adopt the system playback interface to provide an immersive video watching experience.
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
-  Provide an optimized viewing experience for watching 3D video content.
-- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
-  Display standard controls in your app to edit the timeline of the currently playing media.
-- [class AVPlayerViewController](avplayerviewcontroller.md)
-  A view controller that displays content from a player and presents a native user interface to control playback.
-- [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
-  A protocol that defines the methods to implement to respond to player view controller events.
 - [class AVExperienceController](avexperiencecontroller.md)
   An object that controls video experiences.
 - [class AVMultiviewManager](avmultiviewmanager.md)
@@ -255,8 +247,6 @@ if !supportsEmbeddedPlaybackExperience, context.toExperience == .expanded {
   An object that provides configuration options for how the player displays content in different viewing contexts.
 - [class AVPortalViewport](avportalviewport.md)
   An object that defines the visual parameters for content displayed within a portal frame.
-- [Third-party casting support](third-party-casting-support.md)
-  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

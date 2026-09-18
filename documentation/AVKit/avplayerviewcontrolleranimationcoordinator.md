@@ -16,7 +16,7 @@ protocol AVPlayerViewControllerAnimationCoordinator : NSObjectProtocol
 
 ## Topics
 
-### Coordinating Animations
+### Coordinating animations
 - [func addCoordinatedAnimations((() -> Void)?, completion: ((Bool) -> Void)?)](avplayerviewcontrolleranimationcoordinator/addcoordinatedanimations(_:completion:).md)
   Adds animations to perform alongside the playback controls’ visibility animation.
 

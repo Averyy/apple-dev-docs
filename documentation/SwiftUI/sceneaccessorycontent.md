@@ -31,6 +31,7 @@ protocol SceneAccessoryContent
 ## Relationships
 
 ### Conforming Types
+- [CameraCaptureAccessory](cameracaptureaccessory.md)
 - [EmptyView](emptyview.md)
 - [ExternalNonInteractiveAccessory](externalnoninteractiveaccessory.md)
 - [ForEach](foreach.md)
@@ -41,6 +42,8 @@ protocol SceneAccessoryContent
 
 - [func sceneAccessory<C>(content: () -> C) -> some View](view/sceneaccessory(content:).md)
   Defines any scene accessories associated with `self`.
+- [struct CameraCaptureAccessory](cameracaptureaccessory.md)
+  A scene accessory that presents content during camera capture.
 - [struct ExternalNonInteractiveAccessory](externalnoninteractiveaccessory.md)
   A scene accessory that presents non-interactive content on an external display.
 

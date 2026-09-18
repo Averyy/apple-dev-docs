@@ -17,6 +17,7 @@ Advances the position of this iterator by the specified offset, or until the end
 ## Declaration
 
 ```swift
+@export(implementation)
 mutating func skip(by offset: Int) throws(Self.Failure) -> Int
 ```
 

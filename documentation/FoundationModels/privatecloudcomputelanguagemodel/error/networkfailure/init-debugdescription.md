@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a network failure with the debug description you specify.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

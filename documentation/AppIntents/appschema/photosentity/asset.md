@@ -6,11 +6,11 @@
 An entity schema for an asset.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
-- macOS 27.0+
-- visionOS 27.0+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- visionOS 2.0+
 
 ## Declaration
 

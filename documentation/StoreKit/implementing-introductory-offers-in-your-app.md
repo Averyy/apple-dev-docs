@@ -39,7 +39,7 @@ The [`SKProductDiscount.PaymentMode.freeTrial`](skproductdiscount/paymentmode-sw
 To determine if a user is eligible for an introductory offer, check their receipt:
 
 1. Validate the receipt as described in [`Validating receipts with the App Store`](validating-receipts-with-the-app-store.md).
-2. In the receipt, check the values of the [`is_trial_period`](https://developer.apple.com/documentation/appstorereceipts/is_trial_period) and the [`is_in_intro_offer_period`](https://developer.apple.com/documentation/appstorereceipts/is_in_intro_offer_period) for all in-app purchase transactions. If either of these fields are `true` for a given subscription, the user is not eligible for an introductory offer on that subscription product or any other products within the same subscription group. Use `subscription_group_identifier` in the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary) array to determine the subscription group to which the subscription belongs.
+2. In the receipt, check the values of the [`is_trial_period`](https://developer.apple.com/documentation/appstorereceipts/is_trial_period) and the [`is_in_intro_offer_period`](https://developer.apple.com/documentation/appstorereceipts/is_in_intro_offer_period) for all Apple In-App Purchase transactions. If either of these fields are `true` for a given subscription, the user is not eligible for an introductory offer on that subscription product or any other products within the same subscription group. Use `subscription_group_identifier` in the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary) array to determine the subscription group to which the subscription belongs.
 
 Typically, you check the user’s eligibility from your server. Determine eligibility early—for example, on the first launch of the app, if possible.
 
@@ -59,7 +59,7 @@ Once you determine the user is eligible for an introductory offer, query the App
 1. Retrieve localized information from the App Store about a specified list of subscription products using the [`SKProductsRequest`](skproductsrequest.md) class. Products that have an available discount defined in App Store Connect always include an [`introductoryPrice`](skproduct/introductoryprice.md) object.
 2. Use the properties in the [`introductoryPrice`](skproduct/introductoryprice.md) object to display the discounted price for the subscription. Based on the type of the introductory offer (represented by [`SKProductDiscount.PaymentMode`](skproductdiscount/paymentmode-swift.enum.md)), display a UI that describes the offer accordingly.
 
-For design guidance, see [`Human Interface Guidelines > In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/).
+For design guidance, see [`Human Interface Guidelines > Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/).
 
 ## See Also
 

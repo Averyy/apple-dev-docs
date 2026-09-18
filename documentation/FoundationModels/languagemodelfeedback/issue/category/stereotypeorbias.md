@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-The model exhibited bias or perpetuated a stereotype.
+A response that exhibits bias or perpetuates a stereotype.
 
 **Availability**:
 - iOS 26.0+
@@ -26,19 +26,19 @@ A stereotype or bias issue might be where you ask the model to summarize an arti
 ## See Also
 
 - [LanguageModelFeedback.Issue.Category.didNotFollowInstructions](languagemodelfeedback/issue/category/didnotfollowinstructions.md)
-  The model did not follow instructions correctly.
+  A response that doesn’t follow instructions correctly.
 - [LanguageModelFeedback.Issue.Category.incorrect](languagemodelfeedback/issue/category/incorrect.md)
-  The model provided an incorrect response.
+  An incorrect response.
 - [LanguageModelFeedback.Issue.Category.suggestiveOrSexual](languagemodelfeedback/issue/category/suggestiveorsexual.md)
-  The model produces suggestive or sexual material.
+  A response with suggestive or sexual material.
 - [LanguageModelFeedback.Issue.Category.tooVerbose](languagemodelfeedback/issue/category/tooverbose.md)
-  The response was too verbose.
+  An overly verbose response.
 - [LanguageModelFeedback.Issue.Category.triggeredGuardrailUnexpectedly](languagemodelfeedback/issue/category/triggeredguardrailunexpectedly.md)
-  The model throws a guardrail violation when it shouldn’t.
+  An unexpected guardrail violation.
 - [LanguageModelFeedback.Issue.Category.unhelpful](languagemodelfeedback/issue/category/unhelpful.md)
-  The response was unhelpful.
+  An unhelpful response.
 - [LanguageModelFeedback.Issue.Category.vulgarOrOffensive](languagemodelfeedback/issue/category/vulgaroroffensive.md)
-  The model produces vulgar or offensive material.
+  A response with vulgar or offensive material.
 
 
 ---

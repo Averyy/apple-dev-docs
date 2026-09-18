@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: init
 
-Initializes a map panel button configuration with a primary action, optional travel estimates, and an optional secondary button.
+Initializes the map panel button configuration with the specified action buttons and travel estimates.
 
 **Availability**:
 - iOS 27.0+
@@ -18,13 +18,13 @@ init(primaryAction: CPTextButton, secondaryButton: CPButton?, travelEstimates: C
 
 #### Return Value
 
-A new @c CPMapPanelButtonConfiguration instance.
+A new map panel button configuration object.
 
 ## Parameters
 
-- `primaryAction`: The primary text button for the panel.
-- `secondaryButton`: An optional secondary button. Note: only the image property of this button is used. Any title provided will be dropped.
-- `travelEstimates`: The travel estimates to display alongside the primary button.
+- `primaryAction`: The text button for the primary action.
+- `secondaryButton`: An optional button you can use to handle a secondary action. The configuration object stores a copy of the provided button in the [`secondaryButton`](cpmappanelbuttonconfiguration/secondarybutton.md) property.
+- `travelEstimates`: The travel estimates to display with the buttons. The configuration object stores a copy of the provided travel estimates.
 
 
 ---

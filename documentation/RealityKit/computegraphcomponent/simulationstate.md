@@ -26,7 +26,7 @@ enum SimulationState
 - [ComputeGraphComponent.SimulationState.playing](computegraphcomponent/simulationstate/playing.md)
   The simulation advances each frame at its configured rate.
 - [ComputeGraphComponent.SimulationState.stepping](computegraphcomponent/simulationstate/stepping.md)
-  The simulation evaluates exactly one step on the next frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](computegraphcomponent/simulationstate/paused.md).
+  The simulation advances a single frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](computegraphcomponent/simulationstate/paused.md).
 
 ## Relationships
 

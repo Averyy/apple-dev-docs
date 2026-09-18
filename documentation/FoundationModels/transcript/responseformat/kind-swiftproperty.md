@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The way the response format constrains the model’s output.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,6 +22,7 @@ let kind: Transcript.ResponseFormat.Kind
 ## See Also
 
 - [Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.enum.md)
+  A representation of the different ways a response format can constrain model output.
 
 
 ---

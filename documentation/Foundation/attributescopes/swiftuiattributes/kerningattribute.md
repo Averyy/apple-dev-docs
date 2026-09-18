@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for the space added between specific pairs of characters in a run of attributed text.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -18,6 +20,19 @@
 @frozen
 enum KerningAttribute
 ```
+
+#### Overview
+
+Kerning adjusts the gap between individual pairs, such as the two letters in “AV”, so that the pair looks evenly spaced. Give a positive value to open the pairs up and a negative value to tighten them:
+
+```None
+var title = AttributedString("AVIATION")
+title.kern = 2
+
+Text(title)
+```
+
+To space every character of a run apart by the same amount instead, use [`AttributeScopes.SwiftUIAttributes.TrackingAttribute`](attributescopes/swiftuiattributes/trackingattribute.md).
 
 ## Relationships
 

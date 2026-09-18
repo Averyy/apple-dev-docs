@@ -47,8 +47,8 @@ For example code that calls this method, see [`ExternalPurchaseCustomLink`](exte
 
 - [ExternalPurchaseCustomLink.NoticeType](externalpurchasecustomlink/noticetype.md)
   The custom link out style that informs the type of disclosure notice to display.
-- [ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/noticeresult.md)
-  The result of showing the disclosure notice.
+- [static func token(for: String) async throws -> ExternalPurchaseCustomLink.Token?](externalpurchasecustomlink/token(for:)-1fyo.md)
+  Returns an external purchase token of the specified type.
 
 
 ---

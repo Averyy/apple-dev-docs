@@ -16,7 +16,7 @@ protocol ReadWriteHandler : NSObjectProtocol
 
 #### Overview
 
-Most volumes conform to either this protocol or [`FSVolume.KernelOffloadedIOHandler`](fsvolume/kerneloffloadediohandler.md). You can conform to both if you need to provide kernel-offloaded I/O only for certain files. In that case, files with the [`inhibitKernelOffloadedIO`](fsitem/attribute/inhibitkerneloffloadedio.md) attribute set use this protocol, and those without it use [`FSVolume.KernelOffloadedIOHandler`](fsvolume/kerneloffloadediohandler.md). A volume that doesn’t conform to either protocol can’t support any I/O operation.
+Most volumes conform to either this protocol or [`FSVolume.KernelOffloadedIOHandler`](fsvolume/kerneloffloadediohandler.md). You can conform to both if you need to provide kernel-offloaded I/O only for certain files. In that case, files with the [`inhibitKernelOffloadedIO`](fsitem/attribute/inhibitkerneloffloadedio.md) attribute set use this protocol, and those without it use [`FSVolume.KernelOffloadedIOHandler`](fsvolume/kerneloffloadediohandler.md). Set that attribute on an item when you create it; The kernel sets each file’s routing when it first instantiates the item. This choice is immutable for the item’s lifetime. A volume that doesn’t conform to either protocol can’t support any I/O operation.
 
 > ❗ **Important**: This protocol replaces the [`FSVolume.ReadWriteOperations`](fsvolume/readwriteoperations.md) protocol. It exposes the same functionality, while using [`FSVolumeHandlerResult`](fsvolumehandlerresult.md) objects. These objects add the ability to reply with [`FSItem.Attributes`](fsitem/attributes.md) and free space from the relevant methods.
 

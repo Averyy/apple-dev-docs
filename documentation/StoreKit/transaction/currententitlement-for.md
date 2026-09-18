@@ -22,11 +22,11 @@ static func currentEntitlement(for productID: String) async -> VerificationResul
 
 #### Return Value
 
-A [`VerificationResult`](verificationresult.md) or `nil` if the customer has no current In-App Purchases.
+A [`VerificationResult`](verificationresult.md) or `nil` if the customer has no current Apple In-App Purchases.
 
 ## Parameters
 
-- `productID`: In-App Purchase product identifier.
+- `productID`: Apple In-App Purchase product identifier.
 
 ## See Also
 

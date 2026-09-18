@@ -6,14 +6,14 @@ Manage the code and resources you use to build apps, libraries, and other softwa
 
 ## Topics
 
-- [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
-  Add more simulated devices, optional features, and support for additional platforms.
 ### Navigation
 - [Configuring the Xcode project window](configuring-the-xcode-project-window.md)
   Customize the Xcode project window and editor area to view and edit project files in a configuration you prefer.
 - [Finding and replacing content in a project](finding-and-replacing-content-in-a-project.md)
   Search some or all of your project for text strings or symbol names, and perform advanced searches using regular expressions.
 ### Project configuration
+- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+  Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 - [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
 - [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
@@ -25,6 +25,8 @@ Manage the code and resources you use to build apps, libraries, and other softwa
 - [Embedding a command-line tool in a sandboxed app](embedding-a-helper-tool-in-a-sandboxed-app.md)
   Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.
 ### Customization
+- [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
+  Add more simulated devices, optional features, and support for additional platforms.
 - [Customizing your workspace using themes](customizing-your-workspace-using-themes.md)
   Personalize the appearance of Xcode on your Mac.
 ### Associated domains and universal links

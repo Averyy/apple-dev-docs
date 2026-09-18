@@ -19,7 +19,7 @@ static let current: AppLibrary
 ## See Also
 
 - [func didAuthenticate(account: String) async](applibrary/didauthenticate(account:).md)
-  Instructs iOS to reinstall an app after a required reuthorization completes.
+  Instructs the system to reinstall an app after a required reuthorization completes.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: enum
 
+A representation of the different strategies for choosing the next token.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,8 +23,11 @@ enum Kind
 
 ### Sampling cases
 - [GenerationOptions.SamplingMode.Kind.greedy](generationoptions/samplingmode-swift.struct/kind-swift.enum/greedy.md)
+  A strategy that always chooses the most likely token.
 - [GenerationOptions.SamplingMode.Kind.randomProbabilityThreshold(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomprobabilitythreshold(_:seed:).md)
+  A strategy that samples from the highest-probability tokens whose cumulative probability reaches a threshold.
 - [GenerationOptions.SamplingMode.Kind.randomTopK(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomtopk(_:seed:).md)
+  A strategy that samples from a fixed number of the highest-probability tokens.
 
 ## Relationships
 
@@ -34,6 +39,7 @@ enum Kind
 ## See Also
 
 - [let kind: GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.property.md)
+  The strategy this sampling mode uses to choose the next token.
 
 
 ---

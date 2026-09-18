@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-The system is ready for making requests.
+The system is ready to make requests.
 
 **Availability**:
 - iOS 27.0+
@@ -22,9 +22,9 @@ case available
 ## See Also
 
 - [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](privatecloudcomputelanguagemodel/availability-swift.enum/unavailable(_:).md)
-  Indicates that the system isn’t ready for requests.
+  The system isn’t ready for requests.
 - [PrivateCloudComputeLanguageModel.Availability.UnavailableReason](privatecloudcomputelanguagemodel/availability-swift.enum/unavailablereason.md)
-  The unavailable reason.
+  The reason the model is unavailable.
 
 
 ---

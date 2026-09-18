@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
+A strategy that samples from a fixed number of the highest-probability tokens.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ case randomTopK(Int, seed: UInt64?)
 ## See Also
 
 - [GenerationOptions.SamplingMode.Kind.greedy](generationoptions/samplingmode-swift.struct/kind-swift.enum/greedy.md)
+  A strategy that always chooses the most likely token.
 - [GenerationOptions.SamplingMode.Kind.randomProbabilityThreshold(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomprobabilitythreshold(_:seed:).md)
+  A strategy that samples from the highest-probability tokens whose cumulative probability reaches a threshold.
 
 
 ---

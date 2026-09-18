@@ -19,7 +19,7 @@ final func requestAppUpdate(_ request: AppLibrary.InstallationRequest) async thr
 ## See Also
 
 - [func requestLicenseRenewal(appleItemIDs: [UInt64]) async throws](applibrary/requestlicenserenewal(appleitemids:).md)
-  Instructs iOS to request an updated app license from your marketplace server for the given app identifier.
+  Instructs the system to request an updated app license from your marketplace server for the given app identifier.
 
 
 ---

@@ -10,7 +10,7 @@ Offer customers additional time-based content and services through purchases the
 - [Handling Subscriptions Billing](handling-subscriptions-billing.md)
   Build logic around the date and time constraints of subscription products, while planning for all scenarios where you control access to content.
 - [Enabling App Store Server Notifications](enabling-app-store-server-notifications.md)
-  Configure your server and provide an HTTPS URL to receive notifications about in-app purchase events and unreported external purchase tokens.
+  Configure your server and provide an HTTPS URL to receive notifications about Apple In-App Purchase events and unreported external purchase tokens.
 - [Offering a Subscription Across Multiple Apps](offering-a-subscription-across-multiple-apps.md)
   Support a single auto-renewable subscription across multiple apps.
 - [Reducing Involuntary Subscriber Churn](reducing-involuntary-subscriber-churn.md)

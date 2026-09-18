@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates information describing a rate-limiting event.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,12 @@
 ```swift
 init(resetDate: Date?, debugDescription: String, metadata: [String : any Sendable] = [:])
 ```
+
+## Parameters
+
+- `resetDate`: The date after which retrying is likely to succeed, or `nil` if unknown.
+- `debugDescription`: A debug description to help developers diagnose issues during development.
+- `metadata`: Additional information about the failure, keyed by name.
 
 
 ---

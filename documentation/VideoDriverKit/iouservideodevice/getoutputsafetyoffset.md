@@ -6,7 +6,7 @@
 Gets the output safety offset of the device.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

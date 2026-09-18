@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: case
 
-The App Store has already received a refund request for this in-app purchase.
+The App Store has already received a refund request for this Apple In-App Purchase.
 
 **Availability**:
 - iOS 15.0+

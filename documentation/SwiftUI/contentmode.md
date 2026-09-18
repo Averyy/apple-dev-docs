@@ -75,6 +75,7 @@ enum ContentMode
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)
+  A 3x3 matrix that transforms points in a plane.
 
 
 ---

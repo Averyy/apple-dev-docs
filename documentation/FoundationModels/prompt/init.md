@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a prompt from the content of a builder closure.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,6 +18,10 @@
 ```swift
 init(@PromptBuilder _ content: () throws -> Prompt) rethrows
 ```
+
+## Parameters
+
+- `content`: A closure that produces the prompt to send to the model.
 
 ## See Also
 

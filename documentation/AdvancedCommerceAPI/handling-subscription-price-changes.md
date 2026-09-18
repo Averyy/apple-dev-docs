@@ -95,9 +95,9 @@ If the price increase takes place during a reset billing cycle, the following ru
 
 If you need to change a subscription’s metadata, call the [`Change Subscription Metadata`](change-subscription-metadata.md). Metadata-only changes, such as changing the SKU from SKU A to SKU B, preserve the price increase because it isn’t a change in product, but rather a change to the product SKU.
 
-If you need to call the ACA Migration API to migrate a subscription that a subscriber purchased through In-App Purchase to a subscription you manage using the Advanced Commerce API, the following rules apply:
+If you need to call the ACA Migration API to migrate a subscription that a subscriber purchased through Apple In-App Purchase to a subscription you manage using the Advanced Commerce API, the following rules apply:
 
-- If the In-App purchase product has a pending price increase through App Store Connect, the App Store doesn’t allow the migration if it already communicated the price increase to the subscriber.
+- If the Apple In-App Purchase product has a pending price increase through App Store Connect, the App Store doesn’t allow the migration if it already communicated the price increase to the subscriber.
 - The App Store doesn’t allow migrations if the item is currently subject to a price increase, and the App Store already sent price increase communications to the subscriber.
 - If there’s an upcoming price increase, the App Store migrates the pending price increase as well.
 
@@ -159,7 +159,7 @@ In the sandbox, the first renewal after calling [`Change Subscription Price`](ch
 - [Specifying prices for Advanced Commerce SKUs](prices.md)
   Provide prices for SKUs with the supported number of decimal places, in milliunits of currency.
 - [Choosing tax codes for your SKUs](taxcodes.md)
-  Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
+  Select a tax code for each SKU that represents a product your app offers as an Apple In-App Purchase.
 
 
 ---

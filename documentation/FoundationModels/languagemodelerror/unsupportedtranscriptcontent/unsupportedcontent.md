@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The transcript entries that the model can’t process.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var unsupportedContent: [Transcript.Entry]
 ## See Also
 
 - [var metadata: [String : any Sendable]](languagemodelerror/unsupportedtranscriptcontent/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var debugDescription: String](languagemodelerror/unsupportedtranscriptcontent/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 
 ---

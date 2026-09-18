@@ -16,7 +16,7 @@ Before you can begin testing in Xcode, complete the steps in [`Setting up StoreK
 
 ##### Enable Ask to Buy for Testing
 
-Open the StoreKit configuration editor in Xcode and define at least one in-app purchase. Then follow these steps in the StoreKit configuration editor:
+Open the StoreKit configuration editor in Xcode and define at least one Apple In-App Purchase. Then follow these steps in the StoreKit configuration editor:
 
 1. In the left pane, select Configuration Settings.
 2. Under the Purchase Options heading in the editor, enable Ask to Buy.
@@ -25,7 +25,7 @@ Open the StoreKit configuration editor in Xcode and define at least one in-app p
 
 To test approving a purchase, run your app in the Xcode environment and follow these steps:
 
-1. In your app, attempt to purchase the in-app purchase.
+1. In your app, attempt to purchase the Apple In-App Purchase.
 2. When the Ask Permission dialog appears, select Ask.
 3. In the Xcode StoreKit transaction manager, notice that the Pending Approval purchase appears with a state of Pending Ask to Buy. In your code, verify the purchase state is [`Product.PurchaseResult.pending`](product/purchaseresult/pending.md).
 4. Control-click the transaction and select Approve.
@@ -36,7 +36,7 @@ To test approving a purchase, run your app in the Xcode environment and follow t
 
 To test declining a purchase, run your app in the Xcode environment and follow these steps:
 
-1. In your app, attempt to purchase the in-app purchase.
+1. In your app, attempt to purchase the Apple In-App Purchase.
 2. When the Ask Permission dialog appears, select Ask.
 3. In the Xcode StoreKit transaction manager, notice that the Pending Approval purchase appears with a state of Pending Ask to Buy. In your code, verify the purchase state is [`Product.PurchaseResult.pending`](product/purchaseresult/pending.md).
 4. Control-click the transaction and select Decline.
@@ -51,9 +51,9 @@ You can run the same test again without resetting state values. When you’re do
 ## See Also
 
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
-  Verify your implementation of In-App Purchases by testing your code throughout its development.
-- [Testing In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
-  Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
+  Verify your implementation of Apple In-App Purchases by testing your code throughout its development.
+- [Testing Apple In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
+  Test your implementation of Apple In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 - [Testing refund requests](testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)

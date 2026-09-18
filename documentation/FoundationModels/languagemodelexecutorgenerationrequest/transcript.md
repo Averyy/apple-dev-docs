@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-A transcript to generate the next entry for
+A transcript to generate the next entry for.
 
 **Availability**:
 - iOS 27.0+
@@ -22,17 +22,17 @@ var transcript: Transcript
 ## See Also
 
 - [var id: UUID](languagemodelexecutorgenerationrequest/id.md)
-  A request id for logging and tracing purposes
+  A request id for logging and tracing purposes.
 - [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
-  Metadata to attach to the request
+  Metadata to attach to the request.
 - [var contextOptions: ContextOptions](languagemodelexecutorgenerationrequest/contextoptions.md)
-  Settings that configure how the model is prompted
+  Settings that configure how the model is prompted.
 - [var enabledToolDefinitions: [Transcript.ToolDefinition]](languagemodelexecutorgenerationrequest/enabledtooldefinitions.md)
-  The subset tool definitions that the model is allowed to call
+  The subset of tool definitions that the model is allowed to call.
 - [var generationOptions: GenerationOptions](languagemodelexecutorgenerationrequest/generationoptions.md)
-  Generation options that control sampling behavior
+  Generation options that control sampling behavior.
 - [var schema: GenerationSchema?](languagemodelexecutorgenerationrequest/schema.md)
-  An optional schema dictating the required output format
+  An optional schema dictating the required output format.
 
 
 ---

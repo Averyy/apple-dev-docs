@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Language models that provide other kinds of usage statistics may encode them in metadata.
+Additional usage statistics that the language model encodes for the response.
 
 **Availability**:
 - iOS 27.0+

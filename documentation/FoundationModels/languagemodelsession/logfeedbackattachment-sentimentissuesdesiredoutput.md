@@ -92,7 +92,9 @@ try allFeedback.write(to: url)
 ## See Also
 
 - [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsecontent:).md)
+  Logs and serializes a feedback attachment that includes the content you expected.
 - [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsetext:).md)
+  Logs and serializes a feedback attachment that includes the response text you expected.
 - [struct LanguageModelFeedback](languagemodelfeedback.md)
   Feedback appropriate for logging or attaching to Feedback Assistant.
 

@@ -26,7 +26,7 @@ The [`error`](skpaymenttransaction/error.md) property is undefined except when [
 
 ## See Also
 
-- [In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
+- [Apple In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
 - [var payment: SKPayment](skpaymenttransaction/payment.md)
   The payment for the transaction.
 - [var transactionIdentifier: String?](skpaymenttransaction/transactionidentifier.md)

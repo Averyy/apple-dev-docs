@@ -3,7 +3,7 @@
 **Framework**: StoreKit Test  
 **Kind**: module
 
-Create and automate tests in Xcode for your app’s subscription and in-app purchase transactions, and SKAdNetwork implementations.
+Create and automate tests in Xcode for your app’s subscription and Apple In-App Purchase transactions, and SKAdNetwork implementations.
 
 **Availability**:
 - iOS 14.0+
@@ -18,7 +18,7 @@ Create and automate tests in Xcode for your app’s subscription and in-app purc
 
 The StoreKitTest framework makes StoreKit testing in Xcode available for automation. Use this framework to write unit tests and continuous integration tests. Use [`SKTestSession`](sktestsession.md) and [`SKAdTestSession`](skadtestsession.md) to control the test environment.
 
-For testing in-app purchase transactions, use `SKTestSession`. Each instance of `SKTestSession` gives you access to the same settings you manually change for StoreKit testing in Xcode. Use this class to test a variety of in-app purchase scenarios, such as subscription renewals and Ask to Buy transactions, and maintain control over the transactions in the testing environment.
+For testing Apple In-App Purchase transactions, use `SKTestSession`. Each instance of `SKTestSession` gives you access to the same settings you manually change for StoreKit testing in Xcode. Use this class to test a variety of Apple In-App Purchase scenarios, such as subscription renewals and Ask to Buy transactions, and maintain control over the transactions in the testing environment.
 
 For testing ad impressions and postbacks, use `SKAdTestSession`. Each instance of `SKAdTestSession` holds a set of test postbacks that you create and can use in multiple unit tests. Ad networks that use [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) APIs can use this class to validate the ad impressions that they sign, and test receiving postbacks on their server. Advertised apps can test their conversion value updates.
 

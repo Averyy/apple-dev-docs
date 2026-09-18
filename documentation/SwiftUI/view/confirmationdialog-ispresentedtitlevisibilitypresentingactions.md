@@ -87,7 +87,7 @@ On iOS, tvOS, and watchOS, confirmation dialogs only support controls with label
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:).md)
   Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:).md)
-  Presents a confirmation dialog when a dismiss action has been triggered.
+  Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 
 
 ---

@@ -41,6 +41,8 @@ This object is mutable with options set through instance properties.
 
 ## See Also
 
+- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+  Extend the media formats the system can open by providing a format reader and a video decoder.
 - [protocol MEFormatReader](meformatreader.md)
   A protocol that defines the requirements for a format reader, which represents a single media asset.
 - [protocol MEFormatReaderExtension](meformatreaderextension.md)

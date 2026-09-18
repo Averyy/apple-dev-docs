@@ -23,7 +23,7 @@ An product view style suitable for layouts where less space is available, or for
 
 - [static var automatic: AutomaticProductViewStyle](productviewstyle/automatic.md)
 - [static var large: LargeProductViewStyle](productviewstyle/large.md)
-  A product view style suitable for layouts where the in-app purchase content is prominent.
+  A product view style suitable for layouts where the Apple In-App Purchase content is prominent.
 - [static var regular: RegularProductViewStyle](productviewstyle/regular.md)
   A product view style that uses a standard, platform-appropriate layout.
 

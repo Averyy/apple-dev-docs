@@ -43,7 +43,7 @@ This initializer provides a convenient way to create content from its kind repre
 - [init(json: String) throws](generatedcontent/init(json:).md)
   Creates equivalent content from a JSON string.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
-  A failure that occurs when a string cannot be parsed into GeneratedContent.
+  A failure that occurs when a string cannot be parsed into generated content.
 
 
 ---

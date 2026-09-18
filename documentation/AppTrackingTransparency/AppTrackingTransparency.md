@@ -3,7 +3,7 @@
 **Framework**: App Tracking Transparency  
 **Kind**: module
 
-Request user authorization to access app-related data for tracking the user or the device.
+Request authorization to access app-related data that your app can use to track the person or the device.
 
 **Availability**:
 - iOS 14.0+
@@ -15,24 +15,37 @@ Request user authorization to access app-related data for tracking the user or t
 
 #### Overview
 
-You must use the AppTrackingTransparency framework if your app collects data about end users and shares it with other companies for purposes of tracking across apps and web sites. The AppTrackingTransparency framework presents an app-tracking authorization request to the user and provides the tracking authorization status.
+Your app needs to use the App Tracking Transparency framework if it collects data about people and shares it with other companies to track them across apps and websites. The framework presents a tracking-authorization UI and reports the current authorization status.
 
-To use the AppTrackingTransparency framework:
+#### Request Authorization to Access App Related Data
 
-1. Set up a [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsusertrackingusagedescription) to display a system-permission alert request for your app installed on end-user devices.
-2. Call [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md) to present the app-tracking authorization request to the end user.
-3. Use [`trackingAuthorizationStatus`](attrackingmanager/trackingauthorizationstatus.md) to determine the app-tracking permission status. See [`ATTrackingManager.AuthorizationStatus`](attrackingmanager/authorizationstatus.md) for status enums.
+To use the App Tracking Transparency framework:
+
+1. Add the [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsusertrackingusagedescription) key to your app’s target properties in Xcode.
+2. Call [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md) to present the tracking-authorization request.
+3. Check [`trackingAuthorizationStatus`](attrackingmanager/trackingauthorizationstatus.md) to determine the current authorization status; see [`ATTrackingManager.AuthorizationStatus`](attrackingmanager/authorizationstatus.md) for the possible values.
 
 For more information about app tracking and privacy, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/) and [`App Privacy Details`](https://developer.apple.comhttps://developer.apple.com/app-store/app-privacy-details/).
 
 ## Topics
 
 ### Essentials
-- [NSUserTrackingUsageDescription](../bundleresources/information-property-list/nsusertrackingusagedescription.md)
-  A message that informs the user why an app is requesting permission to use data for tracking the user or the device.
-### Class and Components
 - [class ATTrackingManager](attrackingmanager.md)
-  A class that provides a tracking authorization request and the tracking authorization status of the app.
+  A class that requests tracking authorization and provides the current authorization status.
+- [NSUserTrackingUsageDescription](../bundleresources/information-property-list/nsusertrackingusagedescription.md)
+  A message that explains the purpose for accessing data that an app can use to track a person or device.
+### Authorization requests
+- [class func requestTrackingAuthorization(completionHandler: (ATTrackingManager.AuthorizationStatus) -> Void)](attrackingmanager/requesttrackingauthorization(completionhandler:).md)
+  Presents a modal UI that asks someone for permission to access data that your app can use to track a person or device.
+- [class func requestTrackingAuthorization(usingExpandedInterface: Bool, additionalInformationAction: (() -> Void)?, completionHandler: (ATTrackingManager.AuthorizationStatus) -> Void)](attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:).md)
+  Presents a modal UI that asks someone for permission to access data that your app can use to track a person or device.
+- [NSUserTrackingMarkdownUsageDescription](../bundleresources/information-property-list/nsusertrackingmarkdownusagedescription.md)
+  A message that explains the purpose for accessing data that an application can use to track a person or device.
+### Authorization status and results
+- [class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus](attrackingmanager/trackingauthorizationstatus.md)
+  A value that indicates the status of the app’s tracking authorization.
+- [ATTrackingManager.AuthorizationStatus](attrackingmanager/authorizationstatus.md)
+  A type that represents the tracking-authorization status of an app.
 
 
 ---

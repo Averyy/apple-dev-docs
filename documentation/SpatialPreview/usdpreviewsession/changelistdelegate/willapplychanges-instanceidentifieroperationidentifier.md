@@ -22,6 +22,11 @@ func willApplyChanges(instanceIdentifier: String, operationIdentifier: UInt)
 - `instanceIdentifier`: The Spatial Preview receiver instance making the change.
 - `operationIdentifier`: Multiple changes with the same operation identifier can be grouped together.
 
+## See Also
+
+- [func didApplyChanges(instanceIdentifier: String, operationIdentifier: UInt)](usdpreviewsession/changelistdelegate/didapplychanges(instanceidentifier:operationidentifier:).md)
+  An event emitted to the ChangelistDelegate indicating the end of a USD change.
+
 
 ---
 

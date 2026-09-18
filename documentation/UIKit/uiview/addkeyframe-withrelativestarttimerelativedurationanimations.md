@@ -15,7 +15,7 @@ Specifies the timing and animation values for a single frame of a keyframe anima
 ## Declaration
 
 ```swift
-class func addKeyframe(withRelativeStartTime frameStartTime: Double, relativeDuration frameDuration: Double, animations: @escaping () -> Void)
+class func addKeyframe(withRelativeStartTime frameStartTime: Double, relativeDuration frameDuration: Double, animations: () -> Void)
 ```
 
 #### Discussion

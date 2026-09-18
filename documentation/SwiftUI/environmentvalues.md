@@ -106,8 +106,6 @@ Clients of your value then access the value in the usual way, reading it with th
   Whether the system preference for Reduce Motion is enabled.
 - [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
-  Whether the system preference for Show Button Shapes is enabled.
 - [var accessibilitySwitchControlEnabled: Bool](environmentvalues/accessibilityswitchcontrolenabled.md)
   A Boolean value that indicates whether the Switch Control motor accessibility feature is in use.
 - [var accessibilityVoiceOverEnabled: Bool](environmentvalues/accessibilityvoiceoverenabled.md)
@@ -145,6 +143,11 @@ Clients of your value then access the value in the usual way, reading it with th
   An action that requests the focus system to reevaluate default focus.
 - [var openSettings: OpenSettingsAction](environmentvalues/opensettings.md)
   A Settings presentation action stored in a view’s environment.
+### Arrangement views
+- [var overlayArrangementZIndex: Int](environmentvalues/overlayarrangementzindex.md)
+  The z-index for a view within an overlay arrangement view.
+- [var splitArrangementAxis: Axis?](environmentvalues/splitarrangementaxis.md)
+  The axis of the split for a view within a split arrangement view.
 ### Authentication
 - [var authorizationController: AuthorizationController](environmentvalues/authorizationcontroller.md)
   A value provided in the SwiftUI environment that views can use to perform authorization requests.
@@ -198,6 +201,8 @@ Clients of your value then access the value in the usual way, reading it with th
   A placement for tabs in a tab view.
 - [var toolbarLabelStyle: ToolbarLabelStyle?](environmentvalues/toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
+- [var toolbarVerticalEdge: HorizontalEdge?](environmentvalues/toolbarverticaledge.md)
+  This value reflects the system’s preferred edge for the vertical bar in the current context, regardless of whether a vertical bar is currently visible. Use it to position custom bars or other UI relative to the system’s bar placement.
 ### Global objects
 - [var calendar: Calendar](environmentvalues/calendar.md)
   The current calendar that views should use when handling dates.
@@ -328,18 +333,20 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var widgetContentMargins: EdgeInsets](environmentvalues/widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
 ### Deprecated environment values
-- [var disableAutocorrection: Bool?](environmentvalues/disableautocorrection.md)
-  A Boolean value that determines whether the view hierarchy has auto-correction enabled.
-- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
-  The size of content.
-- [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
-  A binding to the current presentation mode of the view associated with this environment.
-- [struct PresentationMode](presentationmode.md)
-  An indication whether a view is currently presented by another view.
+- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+  Whether the system preference for Show Button Shapes is enabled.
 - [var complicationRenderingMode: ComplicationRenderingMode](environmentvalues/complicationrenderingmode.md)
   The complication rendering mode for the current environment.
 - [var controlActiveState: ControlActiveState](environmentvalues/controlactivestate.md)
   The active appearance expected of controls in a window.
+- [var disableAutocorrection: Bool?](environmentvalues/disableautocorrection.md)
+  A Boolean value that determines whether the view hierarchy has auto-correction enabled.
+- [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
+  A binding to the current presentation mode of the view associated with this environment.
+- [struct PresentationMode](presentationmode.md)
+  An indication whether a view is currently presented by another view.
+- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
+  The size of content.
 ### Instance Properties
 - [var accessibilityReduceHighlightingEffects: Bool](environmentvalues/accessibilityreducehighlightingeffects.md)
   Whether the system preference for Reduce Bright Effects is enabled.

@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-A view that merchandises an individual In-App Purchase product.
+A view that merchandises an individual Apple In-App Purchase product.
 
 **Availability**:
 - iOS 17.0+
@@ -23,11 +23,11 @@ A view that merchandises an individual In-App Purchase product.
 
 #### Overview
 
-A `ProductView` shows information about an in-app purchase product, including its localized name, description, and price, and displays a purchase button.
+A `ProductView` shows information about an Apple In-App Purchase product, including its localized name, description, and price, and displays a purchase button.
 
 You create a product view by providing a product identifier to load from the App Store, or a [`Product`](product.md) value you previously loaded. If you provide a product identifier, the view loads the product’s information from the App Store automatically, and updates the view when the product is available.
 
-You can customize the view by providing a view to use as an icon, or image, for the in-app purchase product. If you provide a product identifier, you can optionally provide a placeholder icon for the system to use instead of the automatic placeholder icon. If you set up promoted images for your products in App Store Connect, you can choose to use those images as the icon.
+You can customize the view by providing a view to use as an icon, or image, for the Apple In-App Purchase product. If you provide a product identifier, you can optionally provide a placeholder icon for the system to use instead of the automatic placeholder icon. If you set up promoted images for your products in App Store Connect, you can choose to use those images as the icon.
 
 You can customize the product view’s appearance using the standard styles, including the [`CompactProductViewStyle`](compactproductviewstyle.md), [`RegularProductViewStyle`](regularproductviewstyle.md), and [`LargeProductViewStyle`](largeproductviewstyle.md) styles. Apply the style using the [`productViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)) view modifier.
 
@@ -71,7 +71,7 @@ You can also create your own custom styles by creating styles that conform to th
 ## See Also
 
 - [struct StoreView](storeview.md)
-  A view that merchandises a collection of In-App Purchase products.
+  A view that merchandises a collection of Apple In-App Purchase products.
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 - [struct SubscriptionOfferView](subscriptionofferview.md)

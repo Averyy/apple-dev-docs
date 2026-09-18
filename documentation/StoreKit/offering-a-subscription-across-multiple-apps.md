@@ -12,7 +12,7 @@ To offer this functionality, your server must grant access to the subscription c
 
 ##### Create the Subscription for Each App
 
-To get started, use App Store Connect to create a separate and equivalent [`auto-renewable subscription`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev06f89ce98) for each app that offers the multi-app subscription so that users can subscribe from any app. For design guidance, see [`Human Interface Guidelines > In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/introduction/).
+To get started, use App Store Connect to create a separate and equivalent [`auto-renewable subscription`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev06f89ce98) for each app that offers the multi-app subscription so that users can subscribe from any app. For design guidance, see [`Human Interface Guidelines > Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/introduction/).
 
 > 💡 **Tip**:  Use an [`app bundle`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev96d99635a) to group apps that share auto-renewable subscriptions on the same platform in a single App Store product page. An app bundle enables customers to view and download apps in a single purchase.
 
@@ -51,7 +51,7 @@ After determining that the user should have access, you can enable access in eac
 - [Handling Subscriptions Billing](handling-subscriptions-billing.md)
   Build logic around the date and time constraints of subscription products, while planning for all scenarios where you control access to content.
 - [Enabling App Store Server Notifications](enabling-app-store-server-notifications.md)
-  Configure your server and provide an HTTPS URL to receive notifications about in-app purchase events and unreported external purchase tokens.
+  Configure your server and provide an HTTPS URL to receive notifications about Apple In-App Purchase events and unreported external purchase tokens.
 - [Reducing Involuntary Subscriber Churn](reducing-involuntary-subscriber-churn.md)
   Prevent unintentional loss of subscribers due to billing issues.
 

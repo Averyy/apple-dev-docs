@@ -6,11 +6,11 @@ Load the unique identifiers for your in-app products to retrieve product informa
 
 #### Overview
 
-Implementing an in-app purchase flow consists of three stages. In the first stage, your app retrieves product information. Then your app requests payment when the user selects a product in your app’s store. Finally, your app delivers the product.
+Implementing an Apple In-App Purchase flow consists of three stages. In the first stage, your app retrieves product information. Then your app requests payment when the user selects a product in your app’s store. Finally, your app delivers the product.
 
-![A flowchart depicting the three stages of the in-app purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The first stage, retrieving product information, is highlighted.](/images/com.apple.storekit/media-3317194@2x.png)
+![A flowchart depicting the three stages of the Apple In-App Purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The first stage, retrieving product information, is highlighted.](/images/com.apple.storekit/media-3317194@2x.png)
 
-To begin the purchase process, your app needs the product identifiers so it can retrieve information about the products from the App Store and present its store UI to the user. Every product you sell in your app has a unique product identifier. You provide this value in App Store Connect when you create a new in-app purchase product (see [`Create in-app purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devae49fb316) for more information). Your app uses these product identifiers to fetch information about products available for sale in the App Store, such as pricing, and to submit payment requests when users purchase those products.
+To begin the purchase process, your app needs the product identifiers so it can retrieve information about the products from the App Store and present its store UI to the user. Every product you sell in your app has a unique product identifier. You provide this value in App Store Connect when you create a new Apple In-App Purchase product (see [`Create Apple In-App Purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devae49fb316) for more information). Your app uses these product identifiers to fetch information about products available for sale in the App Store, such as pricing, and to submit payment requests when users purchase those products.
 
 There are several strategies for storing a list of product identifiers in your app, such as embedding them in the app bundle or storing them on your server. You can then retrieve the product identifiers by reading them locally in the app bundle or fetching them from your server. Choose the method that best serves your app’s needs.
 
@@ -20,8 +20,8 @@ There are several strategies for storing a list of product identifiers in your a
 
 Embed the product identifiers in your app bundle if:
 
-- Your app has a fixed list of in-app purchase products. For example, apps with an in-app purchase to remove ads or unlock functionality can embed the product identifier list in the app bundle.
-- You expect users to update the app to see new in-app purchase products.
+- Your app has a fixed list of Apple In-App Purchase products. For example, apps with an Apple In-App Purchase to remove ads or unlock functionality can embed the product identifier list in the app bundle.
+- You expect users to update the app to see new Apple In-App Purchase products.
 - The app or product doesn’t require a server.
 
 Include a property list file in your app bundle containing an array of product identifiers, such as the following:

@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A behavior that determines whether a search field offers dictation, and what starts it.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -14,6 +16,22 @@
 ```swift
 struct TextInputDictationBehavior
 ```
+
+#### Overview
+
+Pass a value of this type to the [`searchDictationBehavior(_:)`](view/searchdictationbehavior(_:).md) modifier. Search fields use [`automatic`](textinputdictationbehavior/automatic.md) unless you choose otherwise.
+
+The following example keeps the dictation microphone in the search field, but waits for someone to select it before listening:
+
+```swift
+NavigationStack {
+    RecipeList(matching: query)
+}
+.searchable(text: $query)
+.searchDictationBehavior(.inline(activation: .onSelect))
+```
+
+On visionOS you can remove the microphone from the field entirely with [`preventDictation`](textinputdictationbehavior/preventdictation.md).
 
 ## Topics
 
@@ -37,6 +55,7 @@ struct TextInputDictationBehavior
 - [func searchDictationBehavior(TextInputDictationBehavior) -> some View](view/searchdictationbehavior(_:).md)
   Configures the dictation behavior for any search fields configured by the searchable modifier.
 - [struct TextInputDictationActivation](textinputdictationactivation.md)
+  A configuration that determines what starts dictation in a search field.
 
 
 ---

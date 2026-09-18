@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-A custom level that indicates a level not supported by the other cases.
+A custom level not represented by the other cases.
 
 **Availability**:
 - iOS 27.0+

@@ -20,7 +20,7 @@ func display(in scene: UIWindowScene) throws
 
 ## Mentions
 
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 #### Discussion
 

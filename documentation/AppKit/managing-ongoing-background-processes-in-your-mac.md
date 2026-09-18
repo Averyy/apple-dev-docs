@@ -31,7 +31,7 @@ When an app runs in the background for the first time, macOS also presents a not
 
 People need to have control over when an app runs and how it utilizes the resources on their Mac: a best practice is to ensure apps running in macOS are visible. This means an app is visible in the Dock, menu bar, Control Center, or listed in the Background Items list in System Settings. Helper apps, services, or other processes that an app starts also need to end when an app quits or need to give people the capability to stop them.
 
-Apps running in macOS have a number of options available to manage their use of background processes, depending on what kinds of background services the app uses. The following scenarios describe how to allow keep people informed on what an app is doing on their behalf and enable them to control when and for how long these apps and services run.
+Apps running in macOS have a number of options available to manage their use of background processes, depending on what kinds of background services the app uses. The following scenarios describe how to keep people informed on what an app is doing on their behalf and enable them to control when and for how long these apps and services run.
 
 #### Provide a Control to Manage Long Running Work After an App Quits
 

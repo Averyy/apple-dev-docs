@@ -26,6 +26,7 @@ When this is non-nil, `segments` may represent a partial summary or be empty; fu
 ## See Also
 
 - [var description: String](transcript/reasoning/description.md)
+  A textual representation of the reasoning entry.
 - [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
   Metadata produced by the model while generating this reasoning entry.
 - [var segments: [Transcript.Segment]](transcript/reasoning/segments.md)

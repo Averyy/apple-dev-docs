@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-15T07:29:10.285329",
+    "last_updated": "2026-09-18T07:39:28.546104",
     "total_pages": 106,
-    "session_id": "2026-09-15T07:29:02.260906"
+    "session_id": "2026-09-18T07:39:20.687832"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AVSystemRouting.json": {
       "hash": "a6ae55b532bdbc62a428a3639f221dc8064ef297c3a288d48a46511f9888cf56",
-      "last_checked": "2026-09-15T07:29:02.576457",
+      "last_checked": "2026-09-18T07:39:21.098234",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"78b1-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/AVSystemRouting.md"
     },
     "https://developer.apple.com/documentation/AVSystemRouting": {
       "hash": "a6ae55b532bdbc62a428a3639f221dc8064ef297c3a288d48a46511f9888cf56",
-      "last_checked": "2026-09-15T07:29:02.467332",
+      "last_checked": "2026-09-18T07:39:21.000641",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"78b1-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/AVSystemRouting.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/routing-media-to-third-party-devices.json": {
       "hash": "a54055564f2dc4b60e1fd964cd85ba9fe58ee8d67efacc44ff49132dfc993f3a",
-      "last_checked": "2026-09-15T07:29:03.053050",
+      "last_checked": "2026-09-18T07:39:21.356304",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"5f15-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/routing-media-to-third-party-devices.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/routing-and-streaming-media-to-remote-devices.json": {
       "hash": "4c8ce3a3c8f30f556a1ae430fb373ae56b913614d5e46d9253b096989369aa9e",
-      "last_checked": "2026-09-15T07:29:03.221420",
+      "last_checked": "2026-09-18T07:39:21.555830",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"193a2-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/routing-and-streaming-media-to-remote-devices.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutecontroller-18ns8.json": {
       "hash": "baae15b6e834cfce1fa531b3a3ac3dc5f4212df85f35ffec799df698e6e92f91",
-      "last_checked": "2026-09-15T07:29:03.267552",
+      "last_checked": "2026-09-18T07:39:21.690653",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"338f-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutecontroller-18ns8.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutecontrollerobserver-5syvg.json": {
       "hash": "e3e0570d440ba340ebc8e913014a7fe78f1dba139d777161661c7f6ad44e65e0",
-      "last_checked": "2026-09-15T07:29:03.399199",
+      "last_checked": "2026-09-18T07:39:21.819448",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1d51-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutecontrollerobserver-5syvg.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemrouteevent-2elr5.json": {
       "hash": "0eb4b30c5f035d3f8c3e273f3e9a0d34ede2f93ab260fbd001d08650b4a5387d",
-      "last_checked": "2026-09-15T07:29:03.630593",
+      "last_checked": "2026-09-18T07:39:21.934597",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"20d2-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemrouteevent-2elr5.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemrouteevent-2elr5/reason-swift.enum.json": {
       "hash": "c1a546c296315c85c5a3a38f354effa0e0dbdc9e8ba1779b079be368e488abff",
-      "last_checked": "2026-09-15T07:29:03.722159",
+      "last_checked": "2026-09-18T07:39:22.064371",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"21f0-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemrouteevent-2elr5/reason-swiftenum.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um.json": {
       "hash": "0da879d0743bab4d7119568a4257171543b7dd631568bb4f0f0f025e1b73483d",
-      "last_checked": "2026-09-15T07:29:04.030811",
+      "last_checked": "2026-09-18T07:39:22.253495",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"3df6-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutesession-gp78.json": {
       "hash": "7bacb664b838ba758ed3cd07cdaa51cc166b2c92dd49d71b804925953e81769d",
-      "last_checked": "2026-09-15T07:29:04.331632",
+      "last_checked": "2026-09-18T07:39:22.411240",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"3e1f-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutesession-gp78.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/launchmode.json": {
       "hash": "5dfe5edf94e4a20d61e0b392458b3650711df073e284f48e1bbf5c40b62e06b5",
-      "last_checked": "2026-09-15T07:29:04.427132",
+      "last_checked": "2026-09-18T07:39:22.586876",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"2b9c-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/launchmode.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutemediasession-98ioq.json": {
       "hash": "0d98ba25caf2f4938c1bfd8bacd94d55afa093948dd38f6b07c9965e7ac72083",
-      "last_checked": "2026-09-15T07:29:04.527289",
+      "last_checked": "2026-09-18T07:39:22.723293",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"30b4-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutemediasession-98ioq.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/datachannel.json": {
       "hash": "265144de6ff1eac07653fbca279f090c79b806d5bce3be48307344c4ff47f694",
-      "last_checked": "2026-09-15T07:29:04.620131",
+      "last_checked": "2026-09-18T07:39:22.846063",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"24d9-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/datachannel.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutedatadelegate-7vt4b.json": {
       "hash": "b76939ef97060954feb7e04c369d15342d64a7a46a60e304a596ca5f981daedd",
-      "last_checked": "2026-09-15T07:29:04.710000",
+      "last_checked": "2026-09-18T07:39:22.985233",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1cfa-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutedatadelegate-7vt4b.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya.json": {
       "hash": "7323e54f2ab999256482ff7a97f767cd84970003c2a1249e56be8ce91e61d7cb",
-      "last_checked": "2026-09-15T07:29:04.799371",
+      "last_checked": "2026-09-18T07:39:23.116046",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"32e4-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-19zkj.json": {
       "hash": "1f6126ab5e3f50626893fd5928e7dc74528241fcc5ca56375660f6b5ee03a688",
-      "last_checked": "2026-09-15T07:29:05.094369",
+      "last_checked": "2026-09-18T07:39:23.253729",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"2bf1-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-19zkj.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutecontroller-18ns8/addobserver(_:).json": {
       "hash": "e1261be04a17949e65c9482a3173887338dd663207e8fd1274ba20d619b88180",
-      "last_checked": "2026-09-15T07:29:05.185189",
+      "last_checked": "2026-09-18T07:39:23.391003",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"22e6-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutecontroller-18ns8/addobserver.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutecontroller-18ns8/removeobserver(_:).json": {
       "hash": "cc56f878585e2f770ca396438341caed882f4dfb0d91d4a41d8a5f3c222244b0",
-      "last_checked": "2026-09-15T07:29:05.281847",
+      "last_checked": "2026-09-18T07:39:23.617319",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1910-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutecontroller-18ns8/removeobserver.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutecontroller-18ns8/shared.json": {
       "hash": "3ecea9913fdb3027fccd5d9b5ec13c93e67b7509d4d5434e377009170ecd6014",
-      "last_checked": "2026-09-15T07:29:05.374571",
+      "last_checked": "2026-09-18T07:39:23.726359",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"14f9-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutecontroller-18ns8/shared.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutecontroller-18ns8/supportedextensionavailable.json": {
       "hash": "a43e1790a6a1dcda2fffc3f4b2a7cde7919852d697ac1e206b92f89626176ec5",
-      "last_checked": "2026-09-15T07:29:05.468162",
+      "last_checked": "2026-09-18T07:39:23.845348",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1bc7-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutecontroller-18ns8/supportedextensionavailable.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemrouteevent-2elr5/reason-swift.property.json": {
       "hash": "664fbc10807a0a11ea14a0e9586763dd36c1662fd7810762a6d8f635f920f2d0",
-      "last_checked": "2026-09-15T07:29:05.667009",
+      "last_checked": "2026-09-18T07:39:24.165582",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1628-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemrouteevent-2elr5/reason-swiftproperty.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemrouteevent-2elr5/route.json": {
       "hash": "149f8f5c760406717cccf2daae9515d10f10447b4423a313484ae812401c3293",
-      "last_checked": "2026-09-15T07:29:05.754838",
+      "last_checked": "2026-09-18T07:39:24.295453",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"163a-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemrouteevent-2elr5/route.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemrouteevent-2elr5/reason-swift.enum/activate.json": {
       "hash": "79a22f2f9375dd743f6743d7e307d2a730ad50c50cc03c08e859461ac13cd1f7",
-      "last_checked": "2026-09-15T07:29:05.848609",
+      "last_checked": "2026-09-18T07:39:24.467178",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"178a-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemrouteevent-2elr5/reason-swift.enum/activate.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemrouteevent-2elr5/reason-swift.enum/deactivate.json": {
       "hash": "ab05f10dfeb25877b2e4390d2e37ab36d543b9e14152493a3b447f9e693b12cd",
-      "last_checked": "2026-09-15T07:29:05.938269",
+      "last_checked": "2026-09-18T07:39:24.597978",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"128b-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemrouteevent-2elr5/reason-swift.enum/deactivate.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutesession-gp78/init(url:mode:).json": {
       "hash": "f824646a8729cedad58b779c1f97bef2319175812cc9c49bd7f665ebce5177c7",
-      "last_checked": "2026-09-15T07:29:06.760157",
+      "last_checked": "2026-09-18T07:39:25.578201",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"3331-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutesession-gp78/init-urlmode.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutesession-gp78/start().json": {
       "hash": "0a2e5b88aade416d2ad029d2acd20c00475742891b72b026be83920daf63598e",
-      "last_checked": "2026-09-15T07:29:06.851833",
+      "last_checked": "2026-09-18T07:39:25.705381",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"4395-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutesession-gp78/start.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutesession-gp78/stop().json": {
       "hash": "6f192e5d82c07abb628bcfab2c02f53494503b78a372284cadbbbd769e0b9ae8",
-      "last_checked": "2026-09-15T07:29:06.945416",
+      "last_checked": "2026-09-18T07:39:25.826182",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"16f7-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutesession-gp78/stop.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/launchmode/application.json": {
       "hash": "75f7f3ca59ff3ea46bdc6c87e8fe978305863d6a39c2648e71ec3cdb453e3446",
-      "last_checked": "2026-09-15T07:29:07.180713",
+      "last_checked": "2026-09-18T07:39:25.957179",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"24db-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/launchmode/application.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/launchmode/player.json": {
       "hash": "2100b08fb387207bd40a377fb5213250d512b7699d6eea9d926ecbb670e11524",
-      "last_checked": "2026-09-15T07:29:07.270799",
+      "last_checked": "2026-09-18T07:39:26.091818",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"211d-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/launchmode/player.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutemediasession-98ioq/datachannel.json": {
       "hash": "4fcfcecf5f8a573af75de6c38fc42a5c9a5343022bb9a2ba1c550f81241d91f0",
-      "last_checked": "2026-09-15T07:29:07.494567",
+      "last_checked": "2026-09-18T07:39:26.207092",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"23b0-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutemediasession-98ioq/datachannel.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutemediasession-98ioq/playbackcontrol.json": {
       "hash": "81dfce22f0b98bb36326dfecdd3a7400792689b564d59e3b5795fd3bfe542cd5",
-      "last_checked": "2026-09-15T07:29:07.586097",
+      "last_checked": "2026-09-18T07:39:26.331316",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"2221-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutemediasession-98ioq/playbackcontrol.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/datachannel/datadelegate.json": {
       "hash": "6c1fa2717eee7dd589dc31153f0a0d1e322c0aad6a80e459c4e7550061efe82c",
-      "last_checked": "2026-09-15T07:29:07.678408",
+      "last_checked": "2026-09-18T07:39:26.477652",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1b3d-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/datachannel/datadelegate.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/datachannel/send(_:).json": {
       "hash": "5a8a7ecc807e90d2ac6976bbf4295c4a84e245b13298495cc49ab8e680185aae",
-      "last_checked": "2026-09-15T07:29:07.769207",
+      "last_checked": "2026-09-18T07:39:26.587521",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1f5b-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/datachannel/send.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutedatadelegate-7vt4b/receive(_:).json": {
       "hash": "ca80cc5b2a371d83e411b9992d1f79991f62415e6d711914a005949704eba684",
-      "last_checked": "2026-09-15T07:29:07.884918",
+      "last_checked": "2026-09-18T07:39:26.772147",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"168b-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutedatadelegate-7vt4b/receive.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/init(_:).json": {
       "hash": "16cfb6e040f5939138bd8ce87c32708f79c61d50e07e6729545f0250dcd83eb8",
-      "last_checked": "2026-09-15T07:29:07.986337",
+      "last_checked": "2026-09-18T07:39:26.900213",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1604-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/init.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/code-swift.property.json": {
       "hash": "fc40b7483fc801e94879ce32609660591165e1733f3a32bf745e60a0fe3a7c85",
-      "last_checked": "2026-09-15T07:29:08.076884",
+      "last_checked": "2026-09-18T07:39:27.024593",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"158b-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/code-swiftproperty.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/errordescription.json": {
       "hash": "ef9dab19bd4155ad5d3eec3ee707053bc3f49f5c94b9d365e327c3e6aea7e574",
-      "last_checked": "2026-09-15T07:29:08.166649",
+      "last_checked": "2026-09-18T07:39:27.148953",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1314-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/errordescription.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/failurereason.json": {
       "hash": "c0928ec53652ab36d47130b5365780c287aa12b7fbfd2f21745c70ec8f9c505a",
-      "last_checked": "2026-09-15T07:29:08.260822",
+      "last_checked": "2026-09-18T07:39:27.301833",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1311-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/failurereason.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/helpanchor.json": {
       "hash": "03573bfe1d6a0fe7d20351ad12267d86e864079faae7ee9485b2370b2b42a943",
-      "last_checked": "2026-09-15T07:29:08.361010",
+      "last_checked": "2026-09-18T07:39:27.432940",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"12d4-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/helpanchor.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/recoverysuggestion.json": {
       "hash": "497bf0ea07ad76ed4334eef57f0fc93fd7437233eccbef034a4001359ed74c34",
-      "last_checked": "2026-09-15T07:29:09.346894",
+      "last_checked": "2026-09-18T07:39:27.579334",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1352-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/recoverysuggestion.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/code-swift.enum.json": {
       "hash": "9adadbd7676069ccc31ce279c812438bcceeea947c4cda5f39919c02ece90aea",
-      "last_checked": "2026-09-15T07:29:09.461262",
+      "last_checked": "2026-09-18T07:39:27.705322",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1e0d-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/code-swiftenum.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-19zkj/connectionfailed.json": {
       "hash": "7005e9ccd48f2f1dca2daf123f4fbddce777e58126ec9482ae084ed358f6cd04",
-      "last_checked": "2026-09-15T07:29:09.553636",
+      "last_checked": "2026-09-18T07:39:27.818016",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1838-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-19zkj/connectionfailed.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-19zkj/errordomain.json": {
       "hash": "14511d495d1611fa3080569d87d2ecbe666571af860f01193e039b3c0be03aad",
-      "last_checked": "2026-09-15T07:29:09.639084",
+      "last_checked": "2026-09-18T07:39:27.952236",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1278-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-19zkj/errordomain.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-19zkj/code.json": {
       "hash": "51d16ba0cdecd85aaa544e6a16fc46e3f5e94e612182dc446f247f883f18ee37",
-      "last_checked": "2026-09-15T07:29:09.729196",
+      "last_checked": "2026-09-18T07:39:28.082892",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"34ae-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-19zkj/code.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-7miya/code-swift.enum/connectionfailed.json": {
       "hash": "6626e948296990c781f4915564f6da525de3f93c17afea679866edd033fec61c",
-      "last_checked": "2026-09-15T07:29:09.956226",
+      "last_checked": "2026-09-18T07:39:28.233950",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"12b4-65b3b4ff6a3cd-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-7miya/code-swift.enum/connectionfailed.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-19zkj/code/connectionfailed.json": {
       "hash": "817dce33a5c9aa93ffa1211c8ecd138c39e2e85e9971688ccc41199d7dfa89d0",
-      "last_checked": "2026-09-15T07:29:10.047520",
+      "last_checked": "2026-09-18T07:39:28.371183",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1d30-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-19zkj/code/connectionfailed.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutingerror-19zkj/code/init(rawvalue:).json": {
       "hash": "9034a8de27e7dfa60fd40506d99c9a7b9b10a9ce6b558b17fae50dd459c261b5",
-      "last_checked": "2026-09-15T07:29:10.283919",
+      "last_checked": "2026-09-18T07:39:28.505139",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1747-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutingerror-19zkj/code/init-rawvalue.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroutecontrollerobserver-5syvg/systemroutecontroller(_:handle:).json": {
       "hash": "89b932ca5b612a8acdc57b260767d3a88fb70606e3cb126924f097dc47e73894",
-      "last_checked": "2026-09-15T07:29:05.574557",
+      "last_checked": "2026-09-18T07:39:24.041524",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"282c-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroutecontrollerobserver-5syvg/systemroutecontroller-handle.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/routedatachannel.json": {
       "hash": "864307f1fff2573bf98cdbc0da9d1b5e71fc26e88ac944dc8ffc8154b764aeeb",
-      "last_checked": "2026-09-15T07:29:06.126895",
+      "last_checked": "2026-09-18T07:39:24.867525",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1dcb-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/routedatachannel.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/routesymbolname.json": {
       "hash": "5bc93dac5db0c10abe3491bfa8057072b2d1111b495dd5bb32fa013f03f32a81",
-      "last_checked": "2026-09-15T07:29:06.453776",
+      "last_checked": "2026-09-18T07:39:25.133443",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1914-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/routesymbolname.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/protocoltype.json": {
       "hash": "0608d411afcdd600cba47e6059011f19d020d5856aa93fcf1d89ac3308f3d9a6",
-      "last_checked": "2026-09-15T07:29:06.028972",
+      "last_checked": "2026-09-18T07:39:24.731545",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"15e5-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/protocoltype.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/addsession(_:).json": {
       "hash": "78264722535fdbd247f8719724ff47a0dc7d24e5712f6fa847b9369d0c41fdfc",
-      "last_checked": "2026-09-15T07:29:06.558551",
+      "last_checked": "2026-09-18T07:39:25.260890",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"2c7e-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/addsession.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/routedisplayname.json": {
       "hash": "dfc3c6e0f54306e960d3b91c7957f9a1d43f1c369da08de54249d0f19d2eee67",
-      "last_checked": "2026-09-15T07:29:06.221198",
+      "last_checked": "2026-09-18T07:39:25.008239",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"176a-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/routedisplayname.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/avsystemrouting/avsystemroute-5s2um/removesession(_:).json": {
       "hash": "537e47140376006c26affd5b433633ee5baf4d11a300f99c40a1f51e566e694c",
-      "last_checked": "2026-09-15T07:29:06.658915",
+      "last_checked": "2026-09-18T07:39:25.392827",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:02.260906",
+      "session_id": "2026-09-18T07:39:20.687832",
       "etag": "\"1d7a-65b3b4ff52092-df\"",
       "file_path": "documentation/AVSystemRouting/avsystemroute-5s2um/removesession.md"
     },

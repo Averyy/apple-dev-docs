@@ -6,7 +6,7 @@
 A static factory method that allocates and initializes a video device.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-A Boolean value indicating whether the close button is allowed to appear.
+A Boolean value that indicates whether the panel displays a close button.
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +18,7 @@ var showsCloseButton: Bool { get set }
 
 #### Discussion
 
-Set the value of this property to @c NO to hide the close button.
-
-Defaults to YES.
+When the value of this property is `true`, the panel displays a close button that the driver can use to dismiss the panel. When the value of this property is `false`, you need to dismiss the panel programmatically from your app. The default value of this property is `true`.
 
 
 ---

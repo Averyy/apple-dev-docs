@@ -30,7 +30,7 @@ case deep
 - [ContextOptions.ReasoningLevel.moderate](contextoptions/reasoninglevel-swift.enum/moderate.md)
   A level that indicates a moderate amount of reasoning.
 - [ContextOptions.ReasoningLevel.custom(_:)](contextoptions/reasoninglevel-swift.enum/custom(_:).md)
-  A custom level that indicates a level not supported by the other cases.
+  A custom level not represented by the other cases.
 
 
 ---

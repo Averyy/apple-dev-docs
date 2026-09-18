@@ -22,7 +22,7 @@ struct Storefront
 
 ## Mentions
 
-- [Testing In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
+- [Testing Apple In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
 
 #### Overview
 
@@ -34,7 +34,7 @@ You need to maintain your own list of product identifiers and the storefronts wh
 
 ##### Change the App Store Country or Region in the Sandbox Environment
 
-When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test In-App Purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [`Test in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/).
+When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test Apple In-App Purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [`Test Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/).
 
 > ❗ **Important**:  To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple Account on the device and sign back in.
 

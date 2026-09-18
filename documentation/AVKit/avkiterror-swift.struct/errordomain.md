@@ -20,7 +20,7 @@ static var errorDomain: String { get }
 
 - [AVKitError.Code](avkiterror-swift.struct/code.md)
   Constants that identify framework error codes.
-- [Error Constants](error-constants.md)
+- [Error constants](error-constants.md)
   Error code constants for framework operations.
 
 

@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A description of a drop that is in progress.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -15,6 +17,24 @@
 ```swift
 struct DropSession
 ```
+
+#### Overview
+
+Read [`location`](dropsession/location.md) to find where the drop landed, [`itemsCount`](dropsession/itemscount.md) for how many items it carries, and [`phase`](dropsession/phase-swift.property.md) to follow the drag through its lifecycle.
+
+The following example animates a drop at the point of the drop:
+
+```swift
+Color.pink
+    .frame(width: 400, height: 400)
+    .dropDestination(for: String.self) { titles, session in
+        process(titles: titles)
+    }
+```
+
+To follow a drag while its phases change, apply [`onDropSessionUpdated(_:)`](view/ondropsessionupdated(_:).md).
+
+Use [`localSession`](dropsession/localsession-swift.property.md) to recognize a drag that started inside your own app. It is `nil` for a drag that came from elsewhere.
 
 ## Topics
 

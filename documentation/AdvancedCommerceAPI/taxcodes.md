@@ -2,17 +2,17 @@
 
 **Framework**: Advanced Commerce API
 
-Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
+Select a tax code for each SKU that represents a product your app offers as an Apple In-App Purchase.
 
 #### Overview
 
-Each SKU, which represents a unique product that your app offers as an in-app purchase, needs a tax code. You provide the tax code value each time you use the Advanced Commerce API to transact.
+Each SKU, which represents a unique product that your app offers as an Apple In-App Purchase, needs a tax code. You provide the tax code value each time you use the Advanced Commerce API to transact.
 
 Use the following table to look up tax codes for your products.
 
 > **Note**: Other tax codes are available, similar to those listed in [`Set a tax category`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-information/set-a-tax-category). If you don’t see an appropriate tax code for your product in the table below, send a request using the Advanced Commerce API Access form on the [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) page.
 
-##### Look Up Tax Codes for in App Purchases
+##### Look Up Tax Codes for Apple in App Purchases
 
 Select the tax code for your subscription or one-time purchase based on the following tax categories, subcategories, and attributes. You can use the App Store Software category as a default.
 

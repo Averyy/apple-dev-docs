@@ -18,7 +18,7 @@ Use the AdSupport framework to obtain an advertising identifier. The [`advertisi
 
 ##### Get an Advertising Identifier
 
-Before requesting the advertising identifier for the first time, your app must make a one-time call to [`requestTrackingAuthorization(completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:)). That method presents the app-tracking authorization request to the user. The user chooses whether to allow tracking, but can change your app’s authorization at any time in Settings > Privacy > Tracking. You can determine the user’s intent by checking your app’s authorization status with [`trackingAuthorizationStatus`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/trackingauthorizationstatus).
+Before requesting the advertising identifier for the first time, your app must make a one-time call to doc://com.apple.documentation/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorizationwith. That method presents the app-tracking authorization request to the user. The user chooses whether to allow tracking, but can change your app’s authorization at any time in Settings > Privacy > Tracking. You can determine the user’s intent by checking your app’s authorization status with doc://com.apple.documentation/documentation/apptrackingtransparency/attrackingmanager/3547038-trackingauthorizationstatus.
 
 To get the advertising identifier, follow these steps:
 

@@ -36,6 +36,10 @@ Access device-specific information like battery state, proximity sensor data, an
   A representation of the current device.
 - [class UIStatusBarManager](uistatusbarmanager.md)
   An object that describes the configuration of the status bar.
+- [class UIHinge](uihinge.md)
+  An object encapsulating the state of a single hinge.
+- [class UIHingeInteraction](uihingeinteraction.md)
+  An interaction for observing the hinge state associated with the view’s hierarchy.
 ### Data observation
 - [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
   Use Swift Observation and automatic tracking to update your views in response to model data updates.

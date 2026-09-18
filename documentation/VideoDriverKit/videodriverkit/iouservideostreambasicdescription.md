@@ -6,7 +6,7 @@
 A structure that encapsulates all the information for describing the basic format properties of a stream of audio data.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

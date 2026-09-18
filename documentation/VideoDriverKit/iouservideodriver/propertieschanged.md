@@ -6,7 +6,7 @@
 This method informs the host when the state of an driver’s object changes.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

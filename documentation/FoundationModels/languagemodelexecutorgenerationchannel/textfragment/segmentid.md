@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The identifier of the text segment to append to, or empty to append to the current segment.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var segmentID: String?
 ## See Also
 
 - [var content: String](languagemodelexecutorgenerationchannel/textfragment/content.md)
+  The text to append to the entry’s current text segment.
 - [var tokenCount: Int](languagemodelexecutorgenerationchannel/textfragment/tokencount.md)
+  The number of tokens the text carries.
 
 
 ---

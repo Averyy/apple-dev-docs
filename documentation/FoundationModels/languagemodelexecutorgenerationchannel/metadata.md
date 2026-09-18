@@ -27,6 +27,7 @@ Each event replaces the prior metadata wholesale; keys absent from `values` are 
 
 ### Handling the metadata values
 - [var values: [String : GeneratedContent]](languagemodelexecutorgenerationchannel/metadata/values.md)
+  The metadata key-value pairs for the entry.
 
 ## Relationships
 

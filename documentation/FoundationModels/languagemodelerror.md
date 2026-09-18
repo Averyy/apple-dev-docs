@@ -16,7 +16,7 @@ A failure that may occur while generating a response when using any language mod
 ## Declaration
 
 ```swift
-enum LanguageModelError
+@nonexhaustive enum LanguageModelError
 ```
 
 ## Mentions
@@ -62,7 +62,7 @@ enum LanguageModelError
   Information about unsupported prompt content.
 ### Generation guide unsupported error
 - [case unsupportedGenerationGuide(LanguageModelError.UnsupportedGenerationGuide)](languagemodelerror/unsupportedgenerationguide(_:).md)
-  An unsupported generation guide was used
+  An unsupported generation guide was used.
 - [LanguageModelError.UnsupportedGenerationGuide](languagemodelerror/unsupportedgenerationguide.md)
   Information about an unsupported generation guide.
 ### Language unsupported error

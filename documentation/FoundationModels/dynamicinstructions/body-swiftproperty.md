@@ -26,7 +26,9 @@ var body: Self.Body { get }
 - [associatedtype Body : DynamicInstructions](dynamicinstructions/body-swift.associatedtype.md)
   The type of dynamic instructions that represent these instructions.
 - [DynamicInstructions.ForEach](dynamicinstructions/foreach.md)
+  A shorthand for producing content for each element of a collection.
 - [DynamicInstructions.SessionProperty](dynamicinstructions/sessionproperty.md)
+  A property wrapper that provides access to a session property within dynamic instructions.
 
 
 ---

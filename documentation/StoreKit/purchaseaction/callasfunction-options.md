@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: method
 
-Starts an in-app purchase for the indicated product and purchase options.
+Starts an Apple In-App Purchase for the indicated product and purchase options.
 
 **Availability**:
 - iOS 17.0+
@@ -35,7 +35,7 @@ For information about how Swift uses the [`callAsFunction(_:options:)`](purchase
 
 ## Parameters
 
-- `product`: The in-app purchase [`Product`](product.md) the customer is purchasing.
+- `product`: The Apple In-App Purchase [`Product`](product.md) the customer is purchasing.
 - `options`: A set of options you may associate with the purchase ([`Product.PurchaseOption`](product/purchaseoption.md)).
 
 

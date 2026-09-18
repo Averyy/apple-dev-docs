@@ -8,6 +8,7 @@ A Boolean value that indicates whether emulation is currently active.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

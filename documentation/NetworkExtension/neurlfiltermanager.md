@@ -21,13 +21,13 @@ class NEURLFilterManager
 
 The system performs URL filtering on your behalf according to your configuration and URL data set. The system filters all URL requests initiated with the [`WebKit`](https://developer.apple.com/documentation/webkit) and [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) APIs.
 
-During URL filtering, the system performs sub-URL generation to enumurate all possible sub-URLs for the URL in question. For example, the URL
+During URL filtering, the system performs sub-URL generation to enumurate all possible sub-URLs for the URL in question. For example, this URL:
 
 ```None
 https://www.sub1.example.com/a/b/c?id=123#fragment
 ```
 
-parses into the following sub-URLs:
+Parses into the following sub-URLs:
 
 - `example.com`
 - `example.com/`
@@ -78,11 +78,32 @@ parses into the following sub-URLs:
 - `sub1.example.com:443/a/b/c?id=123`
 - `sub1.example.com:443/a/b/c?id=123#fragment`
 
-The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict indicates if the app should block the requested URL. Note that the manager Punycodes the requested URL before parsing. Because of this, be sure to Punycode your own URL dataset before constructing your Bloom filter and PIR database.
+The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict determines if the app blocks the requested URL. Note that the manager Punycodes the requested URL before parsing; be sure to Punycode your own URL dataset before constructing your Bloom filter and PIR database.
 
-Neither the Bloom filter nor PIR supports wildcards or regular expressions. For a more flexible URL matching solution, use the [`urlParsingConfiguration`](neurlfiltermanager/urlparsingconfiguration.md) property to select the URL components – the scheme, domain, path, query, fragment) – to include in the parsing results. You can also use the [`urlParsingRegularExpression`](neurlfiltermanager/urlparsingregularexpression.md) property to implement custom parsing.
+Neither the Bloom filter nor PIR supports wildcards or regular expressions. For a more flexible URL matching solution, use the [`urlParsingConfiguration`](neurlfiltermanager/urlparsingconfiguration.md) property to select the URL components, including the scheme, domain, path, query, and fragment, that you want to include in the parsing results. You can also use the [`urlParsingRegularExpression`](neurlfiltermanager/urlparsingregularexpression.md) property to implement custom parsing.
 
 Instances of this class are thread-safe.
+
+#### Configure the Pir Server
+
+URL filtering requires that your app’s information property list contain a top-level `NSPIRConfiguration` dictionary. The dictionary includes two keys:
+
+- **`PIRServerURL`**: (Required) The URL of the PIR server. The value of this key is equivalent to the [`pirServerURL`](neurlfiltermanager/pirserverurl.md) property.
+- **`PrivacyPassIssuerURL`**: (Optional) The URL of the Privacy Pass Issuer. The value of this key is equivalent to the [`pirPrivacyPassIssuerURL`](neurlfiltermanager/pirprivacypassissuerurl.md) property. If absent, the `PrivacyPassIssuerURL` defaults to the value of `PIRServerURL`.
+
+An `NSPIRConfiguration` dictionary may look like this example:
+
+```xml
+<key>NSPIRConfiguration</key>
+<dict>
+    <key>PIRServerURL</key>
+    <string>https://pir.example.com</string>
+    <key>PrivacyPassIssuerURL</key>
+    <string>https://issuer.example.com</string>
+</dict>
+```
+
+See the [`PIRService - NEURLFilter`](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice#NEURLFilter) documentation for updated security guidance to configure your PIR server to support a URL filter.
 
 ## Topics
 
@@ -90,16 +111,16 @@ Instances of this class are thread-safe.
 - [static var shared: NEURLFilterManager](neurlfiltermanager/shared.md)
   The shared filter manager instance your app uses to manage URL filters.
 ### Working with a Private Information Retrieval server
-- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
-  A URL that contains the domain name of the PIR server.
-- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
-  A URL that contains the domain name of Privacy Pass issuer.
 - [var pirAuthenticationToken: String?](neurlfiltermanager/pirauthenticationtoken.md)
   A PIR per-user authentication token string.
 - [func refreshPIRParameters() async throws](neurlfiltermanager/refreshpirparameters.md)
   Refetches PIR parameters from the server.
 - [func resetPIRCache() async throws](neurlfiltermanager/resetpircache.md)
   Resets the PIR on-device cache.
+- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
+  A URL that contains the domain name of the PIR server.
+- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
+  A URL that contains the domain name of Privacy Pass issuer.
 ### Working with the filter configuration
 - [func setConfiguration(pirServerURL: URL, pirPrivacyPassIssuerURL: URL?, pirAuthenticationToken: String, controlProviderBundleIdentifier: String) throws](neurlfiltermanager/setconfiguration(pirserverurl:pirprivacypassissuerurl:pirauthenticationtoken:controlproviderbundleidentifier:).md)
   Sets a URL filter configuration with the required PIR server attributes and app extension information.

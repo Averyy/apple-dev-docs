@@ -6,7 +6,7 @@
 These constants are to set the preferred channel layout on video device.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

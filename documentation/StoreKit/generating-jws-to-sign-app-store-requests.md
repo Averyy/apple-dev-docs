@@ -26,12 +26,12 @@ To get started, you need your key ID and issuer ID from App Store Connect. Then,
 
 ##### Get Your Key Id and Issuer Id From App Store Connect
 
-First you need your key ID for the JWS header and your issuer ID for the JWS payload. Sign in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) to get these values. Use your In-App Purchase key, not your App Store Connect API key.
+First you need your key ID for the JWS header and your issuer ID for the JWS payload. Sign in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) to get these values. Use your Apple In-App Purchase key, not your App Store Connect API key.
 
 To get the key ID:
 
 1. Select Users and Access, then select Integrations.
-2. Select the In-App Purchase tab.
+2. Select the Apple In-App Purchase tab.
 3. Hover the cursor next to a key ID to display the Copy Key ID link. The key IDs appear in a column under the Active heading.
 4. Click Copy Key ID.
 
@@ -40,7 +40,7 @@ If you have more than one API key, copy the key ID of the private key that you u
 To get the issuer ID:
 
 1. Select Users and Access, then select Integrations.
-2. Select the In-App Purchase tab.
+2. Select the Apple In-App Purchase tab.
 3. To copy the issuer ID that appears near the top of the page, click Copy next to the ID.
 
 ##### Create the Jws Header
@@ -73,7 +73,7 @@ Include the following base claims in the JWS payload:
 
 | **Payload field** | **Value** |
 | --- | --- |
-| `iss` - Issuer | Your issuer ID from the In-App Purchase page in App Store Connect (example: “`57246542-96fe-1a63-e053-0824d011072a"`) |
+| `iss` - Issuer | Your issuer ID from the Apple In-App Purchase page in App Store Connect (example: “`57246542-96fe-1a63-e053-0824d011072a"`) |
 | `iat` - Issued At | The UNIX time, in seconds, that you issue the token, which the App Store server uses to calculate an expiration time (example: `1623085200`) |
 | `aud` - Audience | A value that depends on the feature you’re using (see the table below) |
 | `bid` - Bundle ID | Your app’s bundle ID (example: `“com.example.testbundleid”)` |
@@ -136,7 +136,7 @@ For promotional offer signature custom claims, use the following values:
 | --- | --- |
 | `productId` | The unique identifier of the product (for more information, see [`id`](product/id.md)) |
 | `offerIdentifier` | The promotional offer identifier that you set up in App Store Connect |
-| `transactionId` | The unique identifier of any transaction that belongs to the customer. You can use the customer’s [`appTransactionID`](apptransaction/apptransactionid.md), even for customers who haven’t made any In-App Purchases in your app. This field is optional, but recommended. |
+| `transactionId` | The unique identifier of any transaction that belongs to the customer. You can use the customer’s [`appTransactionID`](apptransaction/apptransactionid.md), even for customers who haven’t made any Apple In-App Purchases in your app. This field is optional, but recommended. |
 
 Here’s an example of a payload for a promotional offer signature:
 
@@ -161,7 +161,7 @@ For introductory offer eligibility custom claims, use the following values:
 | --- | --- |
 | `productId` | The unique identifier of the product (for more information, see [`id`](product/id.md)) |
 | `allowIntroductoryOffer` | A Boolean value, `true` or `false`, that determines whether the customer is eligible for an introductory offer |
-| `transactionId` | The unique identifier of any transaction that belongs to the customer. You can use the customer’s [`appTransactionID`](apptransaction/apptransactionid.md), even for customers who haven’t made any In-App Purchases in your app. |
+| `transactionId` | The unique identifier of any transaction that belongs to the customer. You can use the customer’s [`appTransactionID`](apptransaction/apptransactionid.md), even for customers who haven’t made any Apple In-App Purchases in your app. |
 
 Here’s an example of a payload for introductory offer eligibility:
 

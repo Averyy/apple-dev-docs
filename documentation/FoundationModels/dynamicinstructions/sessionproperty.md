@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: typealias
 
+A property wrapper that provides access to a session property within dynamic instructions.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -24,6 +26,7 @@ typealias SessionProperty = LanguageModelSession.SessionProperty
 - [associatedtype Body : DynamicInstructions](dynamicinstructions/body-swift.associatedtype.md)
   The type of dynamic instructions that represent these instructions.
 - [DynamicInstructions.ForEach](dynamicinstructions/foreach.md)
+  A shorthand for producing content for each element of a collection.
 
 
 ---

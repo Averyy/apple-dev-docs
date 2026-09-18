@@ -21,13 +21,13 @@ class AVPlaybackSpeed
 
 ## Topics
 
-### Retrieving Default Speeds
+### Retrieving default speeds
 - [class var systemDefaultSpeeds: [AVPlaybackSpeed]](avplaybackspeed/systemdefaultspeeds.md)
   A list of playback speeds the system uses by default.
-### Creating a Playback Speed
+### Creating a playback speed
 - [init(rate: Float, localizedName: String)](avplaybackspeed/init(rate:localizedname:).md)
   Creates a playback speed with a rate and localized name.
-### Inspecting Speed Details
+### Inspecting speed details
 - [var rate: Float](avplaybackspeed/rate.md)
   The playback rate to use when you select this speed.
 - [var localizedName: String](avplaybackspeed/localizedname.md)

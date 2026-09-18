@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 It’s important to add the observer at launch, in [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)), to ensure that it persists during all launches of your app, receives all payment queue notifications, and continues transactions that may initiate outside the app, such as:
 
-- Promoted in-app purchases. For more information, see [`Promoting In-App Purchases`](promoting-in-app-purchases.md).
+- Promoted Apple In-App Purchases. For more information, see [`Promoting Apple In-App Purchases`](promoting-in-app-purchases.md).
 - Background subscription renewals
 - Interrupted purchases
 
@@ -84,12 +84,12 @@ The observer needs to be persistent so the system doesn’t deallocate it when i
 
 - [func add(any SKPaymentTransactionObserver)](skpaymentqueue/add(_:)-5ciz2.md)
   Adds an observer to the payment queue.
-- [Offering, completing, and restoring in-app purchases](offering-completing-and-restoring-in-app-purchases.md)
+- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
 - [class SKPaymentQueue](skpaymentqueue.md)
   A queue of payment transactions for the App Store to process.
 - [protocol SKPaymentTransactionObserver](skpaymenttransactionobserver.md)
-  A set of methods that process transactions, unlock purchased functionality, and continue promoted In-App Purchases.
+  A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
 - [protocol SKPaymentQueueDelegate](skpaymentqueuedelegate.md)
   The protocol that provides information needed to complete transactions.
 - [class SKRequest](skrequest.md)

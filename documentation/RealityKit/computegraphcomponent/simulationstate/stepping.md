@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-The simulation evaluates exactly one step on the next frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](computegraphcomponent/simulationstate/paused.md).
+The simulation advances a single frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](computegraphcomponent/simulationstate/paused.md).
 
 **Availability**:
 - iOS 27.0+

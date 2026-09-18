@@ -8,7 +8,7 @@ Define display names and SKUs for one-time charges and subscriptions in the Mini
 
 If your app supports the Mini Apps Partner Program, use the Advanced Commerce APIs when a customer initiates a one-time purchase ([`OneTimeChargeCreateRequest`](onetimechargecreaterequest.md)), or purchases a subscription ([`SubscriptionCreateRequest`](subscriptioncreaterequest.md)).
 
-The Mini Apps Partner Program has specific requirements for defining the SKUs and the product display names, so they fully identify each mini app product. Follow these guidelines to create display names and SKUs for products you offer through the Mini Apps Partner Program and describe the format for one-time purchases and subscriptions. See [`Creating SKUs for your In-App Purchases`](creating-your-purchases.md) for additional guidance.
+The Mini Apps Partner Program has specific requirements for defining the SKUs and the product display names, so they fully identify each mini app product. Follow these guidelines to create display names and SKUs for products you offer through the Mini Apps Partner Program and describe the format for one-time purchases and subscriptions. See [`Creating SKUs for your Apple In-App Purchases`](creating-your-purchases.md) for additional guidance.
 
 #### Describe the Mini App and Mini Apps Partner with Metadata
 
@@ -78,7 +78,7 @@ All three elements are separated by the ‘|’ character and all three elements
 
 - [Setting up generic product identifiers](setting-up-generic-product-identifiers.md)
   Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
   Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
 
 

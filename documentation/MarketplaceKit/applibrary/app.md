@@ -69,8 +69,6 @@ final class App
   A Boolean value that indicates whether the library is currently loading apps.
 - [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](applibrary/requestappinstallation(_:).md)
   Requests the installation of the given app distribution package for the given account.
-- [func requestAppInstallationFromBrowser(for: URL, referrer: URL) async throws](applibrary/requestappinstallationfrombrowser(for:referrer:).md)
-  Forwards an app installation request from the developer’s webpage.
 
 
 ---

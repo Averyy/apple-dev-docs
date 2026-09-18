@@ -28,7 +28,7 @@ func beginCommandBuffer(allocator: any MTL4CommandAllocator)
 
 Attaches the command buffer to the specified [`MTL4CommandAllocator`](mtl4commandallocator.md) and declares that the application is ready to encode commands into the command buffer.
 
-Command allocators only service a single command buffer at a time. If you need to issue multiple calls to this method simultaneously, for example, in a multi-threaded command encoding scenario, create multiple instances of `MTLCommandAllocator` and use one for each call.
+Command allocators only service a single command buffer at a time. If you need to issue multiple calls to this method simultaneously, for example, in a multi-threaded command encoding scenario, create multiple instances of [`MTL4CommandAllocator`](mtl4commandallocator.md) and use one for each call.
 
 You can safely reuse command allocators after ending the command buffer using it by calling [`endCommandBuffer()`](mtl4commandbuffer/endcommandbuffer().md).
 

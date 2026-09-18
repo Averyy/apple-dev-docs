@@ -18,8 +18,8 @@ Though you can finish the transaction immediately without providing the content 
   Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 - [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
   Verify that your app handles an interrupted purchase by inspecting and invoking payment transactions.
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
-  Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed In-App Purchases.
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+  Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed Apple In-App Purchases.
 
 
 ---

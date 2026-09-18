@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
+A format that constrains the model’s output to a generation schema.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

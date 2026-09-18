@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-The product identifier of the promoted in-app purchase.
+The product identifier of the promoted Apple In-App Purchase.
 
 **Availability**:
 - iOS 16.4+

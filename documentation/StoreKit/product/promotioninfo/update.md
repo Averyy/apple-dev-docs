@@ -18,7 +18,7 @@ func update() async throws
 
 ## Mentions
 
-- [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 

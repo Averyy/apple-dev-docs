@@ -42,7 +42,7 @@ You can change the shape with which the content views are masked using the `.acc
 
 ## Topics
 
-### Initializers
+### Creating an accessory widget group
 - [init(some StringProtocol, content: () -> Content)](accessorywidgetgroup/init(_:content:)-3ij0e.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a string.
 - [init(LocalizedStringResource, content: () -> Content)](accessorywidgetgroup/init(_:content:)-75rkg.md)
@@ -63,6 +63,9 @@ You can change the shape with which the content views are masked using the `.acc
   Creates an `AccessoryWidgetGroup` that generates its label from a string and system image name.
 - [init(label: () -> Label, content: () -> Content)](accessorywidgetgroup/init(label:content:).md)
   Creates an AccessoryWidgetGroup composed of a label and three circular or rounded square contents with equal spacing and vertical alignment.
+### Styling an accessory widget group
+- [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
+  The style for an accessory widget group view.
 
 ## Relationships
 
@@ -74,9 +77,22 @@ You can change the shape with which the content views are masked using the `.acc
 - [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
   Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
 - [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
-  The style for an [`AccessoryWidgetGroup`](accessorywidgetgroup.md) view.
+  The style for an accessory widget group view.
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
+- [func widgetCurvesContent(Bool) -> some View
+](../swiftui/view/widgetcurvescontent(_:).md)
+  Displays the widget’s content along a curve if the context allows it.
+- [func widgetLabel(_:)](../swiftui/view/widgetlabel(_:).md)
+  Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
+- [func widgetLabel<Label>(label: () -> Label) -> some View
+](../swiftui/view/widgetlabel(label:).md)
+  Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
+- [var showsWidgetLabel: Bool](../swiftui/environmentvalues/showswidgetlabel.md)
+  A Boolean value that indicates whether an accessory family widget can display an accessory label.
+- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View
+](../swiftui/view/accessorywidgetgroupstyle(_:).md)
+  The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 
 
 ---

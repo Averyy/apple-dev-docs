@@ -57,6 +57,7 @@ The original dimensions of the view are considered to be unchanged by scaling th
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)
+  A 3x3 matrix that transforms points in a plane.
 - [enum ContentMode](contentmode.md)
   Constants that define how a view’s content fills the available space.
 

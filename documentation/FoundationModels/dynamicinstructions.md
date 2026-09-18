@@ -58,9 +58,12 @@ struct PresentationInstructions: DynamicInstructions {
 - [associatedtype Body : DynamicInstructions](dynamicinstructions/body-swift.associatedtype.md)
   The type of dynamic instructions that represent these instructions.
 - [DynamicInstructions.ForEach](dynamicinstructions/foreach.md)
+  A shorthand for producing content for each element of a collection.
 - [DynamicInstructions.SessionProperty](dynamicinstructions/sessionproperty.md)
+  A property wrapper that provides access to a session property within dynamic instructions.
 ### Building dynamic instructions
 - [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+  A result builder that combines tools and other content into dynamic instructions.
 - [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
   An empty dynamic instructions type.
 - [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
@@ -87,6 +90,7 @@ struct PresentationInstructions: DynamicInstructions {
 - [Origami: Crafting a dynamic tutorial for Apple Intelligence](origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 - [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+  Dynamic instructions that produce content for each element of a collection.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

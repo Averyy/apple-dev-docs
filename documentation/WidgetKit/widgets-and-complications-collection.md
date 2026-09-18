@@ -31,6 +31,8 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
   Values that define the widget’s size and shape.
 - [struct StaticConfiguration](staticconfiguration.md)
   An object describing the content of a widget that has no user-configurable options.
+- [var widgetFamily: WidgetFamily](../swiftui/environmentvalues/widgetfamily.md)
+  The template of the widget — small, medium, or large.
 ### Configurable widgets
 - [Making a configurable widget](making-a-configurable-widget.md)
   Give people the option to customize their widgets by adding a custom app intent to your project.
@@ -57,6 +59,20 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
 - [struct WidgetLocation](widgetlocation.md)
   Values that indicate different widget locations.
+- [func widgetAccentable(Bool) -> some View
+](../swiftui/view/widgetaccentable(_:).md)
+  Adds the view and all of its subviews to the accented group.
+- [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
+](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+  Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
+- [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
+  The widget’s rendering mode, based on where the system is displaying it.
+- [var widgetContentMargins: EdgeInsets](../swiftui/environmentvalues/widgetcontentmargins.md)
+  A property that identifies the content margins of a widget.
+- [static let widget: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/widget.md)
+  The container background placement for a widget.
+- [var showsWidgetContainerBackground: Bool](../swiftui/environmentvalues/showswidgetcontainerbackground.md)
+  An environment variable that indicates whether the background of a widget appears.
 ### Timeline updates
 - [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
@@ -116,9 +132,22 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
 - [struct AccessoryWidgetGroup](accessorywidgetgroup.md)
   A view type that has a label at the top and three content views masked with a circle or rounded square.
 - [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
-  The style for an [`AccessoryWidgetGroup`](accessorywidgetgroup.md) view.
+  The style for an accessory widget group view.
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
+- [func widgetCurvesContent(Bool) -> some View
+](../swiftui/view/widgetcurvescontent(_:).md)
+  Displays the widget’s content along a curve if the context allows it.
+- [func widgetLabel(_:)](../swiftui/view/widgetlabel(_:).md)
+  Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
+- [func widgetLabel<Label>(label: () -> Label) -> some View
+](../swiftui/view/widgetlabel(label:).md)
+  Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
+- [var showsWidgetLabel: Bool](../swiftui/environmentvalues/showswidgetlabel.md)
+  A Boolean value that indicates whether an accessory family widget can display an accessory label.
+- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View
+](../swiftui/view/accessorywidgetgroupstyle(_:).md)
+  The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 ### Smart Stacks
 - [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.

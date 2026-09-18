@@ -21,7 +21,7 @@ struct Usage
 
 #### Overview
 
-Producers report the current cumulative totals on every update and consumers replace prior totals wholesale.
+Producers report the current cumulative totals on every update, and consumers replace prior totals wholesale.
 
 ## Topics
 

@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-Whether the item is interactable. Defaults to @c YES.
+A Boolean value that indicates whether the item supports interactions.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +15,10 @@ Whether the item is interactable. Defaults to @c YES.
 ```swift
 var isEnabled: Bool { get set }
 ```
+
+#### Discussion
+
+When the value of this property is `true`, the item is enabled and supports interactions. Set the value to `false` to disable interactions. The default value of this property is `true`.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-The product identifier of the In-App Purchase that the customer selects to purchase outside of the app.
+The product identifier of the Apple In-App Purchase that the customer selects to purchase outside of the app.
 
 **Availability**:
 - iOS 16.4+
@@ -21,7 +21,7 @@ var id: Product.ID { get }
 ## See Also
 
 - [let product: Product](purchaseintent/product.md)
-  The product information of the In-App Purchase the customer selects to purchase outside of the app.
+  The product information of the Apple In-App Purchase the customer selects to purchase outside of the app.
 
 
 ---

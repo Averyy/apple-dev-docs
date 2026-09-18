@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-The type of the in-app purchase.
+The type of the Apple In-App Purchase.
 
 **Availability**:
 - iOS 15.0+
@@ -25,7 +25,7 @@ let productType: Product.ProductType
 - [let appBundleID: String](transaction/appbundleid.md)
   The bundle identifier for the app.
 - [let productID: String](transaction/productid.md)
-  The product identifier of the in-app purchase.
+  The product identifier of the Apple In-App Purchase.
 - [let subscriptionGroupID: String?](transaction/subscriptiongroupid.md)
   The identifier of the subscription group that the subscription belongs to.
 

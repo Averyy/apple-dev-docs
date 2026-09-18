@@ -341,6 +341,8 @@ Call the completion handler with `.success` if the message transmits successfull
 
 Add the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-extension) entitlement to your extension’s code signature to use the [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol.
 
+To configure your extension to resume an interrupted Bluetooth session in the background, which allows your extension to skip accessory scanning on relaunch, see [`AccessoryTransportAppExtension`](accessorytransportappextension.md).
+
 #### Decrypt Notification Data on Your Accessory
 
 When your accessory receives the encrypted notification data, it decrypts the data using [`HPKE (RFC9180)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/rfc9180/) with keys exchanged through the transport security extension.

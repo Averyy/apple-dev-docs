@@ -28,7 +28,7 @@ The payment mode indicates how the product discount [`price`](skproductdiscount/
 - Once in advance, for [`SKProductDiscount.PaymentMode.payUpFront`](skproductdiscount/paymentmode-swift.enum/payupfront.md) mode
 - No initial charge, for [`SKProductDiscount.PaymentMode.freeTrial`](skproductdiscount/paymentmode-swift.enum/freetrial.md) mode.
 
-Use the payment mode to display an accurate description of the product discount in your UI. For design guidance, see [`Human Interface Guidelines > In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/).
+Use the payment mode to display an accurate description of the product discount in your UI. For design guidance, see [`Human Interface Guidelines > Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/).
 
 ## See Also
 

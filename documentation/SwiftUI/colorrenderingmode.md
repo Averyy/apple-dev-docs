@@ -53,6 +53,7 @@ Each color space guarantees the preservation of a particular range of color valu
 - [enum BlendMode](blendmode.md)
   Modes for compositing a view with overlapping content.
 - [protocol CompositorContent](compositorcontent.md)
+  A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
 - [struct CompositorContentBuilder](compositorcontentbuilder.md)
   A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 - [struct AnyCompositorContent](anycompositorcontent.md)

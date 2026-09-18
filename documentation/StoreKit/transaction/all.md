@@ -29,7 +29,7 @@ static var all: Transaction.Transactions { get }
 
 This sequence returns the customer’s transaction history current to the moment you access it. The sequence emits a finite number of transactions. If the App Store processes additional transactions for the customer while you’re accessing this sequence, they appear in the transaction listener [`updates`](transaction/updates.md).
 
-The transaction history includes the following in-app purchases:
+The transaction history includes the following Apple In-App Purchases:
 
 - Unfinished consumables
 - Finished consumables that are refunded or revoked
@@ -48,7 +48,7 @@ To get all possible transactions, including all finished consumables, set the [`
 - [static var updates: Transaction.Transactions](transaction/updates.md)
   The asynchronous sequence that emits a transaction when the system creates or updates transactions that occur outside the app or on other devices.
 - [static var currentEntitlements: Transaction.Transactions](transaction/currententitlements.md)
-  A sequence of the latest transactions that entitle a customer to In-App Purchases and subscriptions.
+  A sequence of the latest transactions that entitle a customer to Apple In-App Purchases and subscriptions.
 
 
 ---

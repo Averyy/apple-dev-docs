@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a text segment that contains the text you provide.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,6 +18,11 @@
 ```swift
 init(id: String = UUID().uuidString, content: String)
 ```
+
+## Parameters
+
+- `id`: A unique identifier for the segment.
+- `content`: The text of the segment.
 
 
 ---

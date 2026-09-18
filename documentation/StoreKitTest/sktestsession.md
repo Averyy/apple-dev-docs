@@ -26,7 +26,7 @@ This class controls the settings that the server uses when it processes transact
 
 > **Note**:  There’s a single instance of the test environment. All `SKTestSession` instances control the same test environment.
 
-The test environment creates an [`SKTestTransaction`](sktesttransaction.md) instance each time your test code calls any method of `SKTestSession` that affects in-app purchases, including:
+The test environment creates an [`SKTestTransaction`](sktesttransaction.md) instance each time your test code calls any method of `SKTestSession` that affects Apple In-App Purchases, including:
 
 - [`buyProduct(productIdentifier:)`](sktestsession/buyproduct(productidentifier:).md)
 - [`refundTransaction(identifier:)`](sktestsession/refundtransaction(identifier:).md)
@@ -111,9 +111,9 @@ Before automating a test session with `SKTestSession`, you must create a StoreKi
   Simulates a user canceling an auto-renewable subscription by disabling auto-renew.
 ### Testing externally performed transactions
 - [func buyProduct(productIdentifier: String) throws](sktestsession/buyproduct(productidentifier:).md)
-  Simulates buying an in-app purchase or subscription outside the app.
+  Simulates buying an Apple In-App Purchase or subscription outside the app.
 - [func refundTransaction(identifier: Int) throws](sktestsession/refundtransaction(identifier:).md)
-  Simulates a refund for an in-app purchase that completes outside of the app.
+  Simulates a refund for an Apple In-App Purchase that completes outside of the app.
 ### Instance Methods
 - [func buyProduct(identifier: Product.ID, options: Set<Product.PurchaseOption>) async throws -> Transaction](sktestsession/buyproduct(identifier:options:).md)
 - [func setSimulatedError<API>(API.Failure?, forAPI: API) async throws](sktestsession/setsimulatederror(_:forapi:).md)

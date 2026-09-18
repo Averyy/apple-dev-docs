@@ -30,7 +30,7 @@ enum AudioAppViewIdentifier: String {
     case nowPlaying
 
     static let caseDisplayRepresentations: [Self: DisplayRepresentation] = [
-        .nowPlaying: "NowPlaying"
+        .nowPlaying: "Now Playing"
     ]
 }
 ```

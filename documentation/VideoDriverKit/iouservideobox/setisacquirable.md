@@ -6,7 +6,7 @@
 Sets the value for the box’s acquirability.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

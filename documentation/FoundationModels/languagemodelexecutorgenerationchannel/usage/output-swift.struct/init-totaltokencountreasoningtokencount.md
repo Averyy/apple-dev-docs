@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates output token counts for the response the model produces.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,11 @@
 ```swift
 init(totalTokenCount: Int, reasoningTokenCount: Int)
 ```
+
+## Parameters
+
+- `totalTokenCount`: The total number of output tokens.
+- `reasoningTokenCount`: The number of output tokens that were part of the model’s reasoning output.
 
 
 ---

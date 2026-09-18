@@ -135,6 +135,7 @@ You can also query this object to find out about the supported camera models, de
 ### Instance Methods
 - [func downloadResources(timeout: TimeInterval, completionHandler: ((any Error)?) -> Void) -> Progress](cirawfilter/downloadresources(timeout:completionhandler:).md)
 ### Type Methods
+- [class func downloadAllResources(timeout: TimeInterval, completionHandler: ((any Error)?) -> Void) -> Progress](cirawfilter/downloadallresources(timeout:completionhandler:).md)
 - [class func supportedCameraModels(with: CIRAWDecoderVersion) -> [String]](cirawfilter/supportedcameramodels(with:).md)
 
 ## Relationships

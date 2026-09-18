@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-A sequence of the latest transactions that entitle a customer to In-App Purchases and subscriptions.
+A sequence of the latest transactions that entitle a customer to Apple In-App Purchases and subscriptions.
 
 **Availability**:
 - iOS 15.0+
@@ -25,7 +25,7 @@ static var currentEntitlements: Transaction.Transactions { get }
 - [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
+- [Getting started with Apple In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
 - [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
@@ -33,11 +33,11 @@ static var currentEntitlements: Transaction.Transactions { get }
 
 The current entitlements sequence emits the latest transaction for each product the customer has an entitlement to, specifically:
 
-- A transaction for each non-consumable In-App Purchase
+- A transaction for each non-consumable Apple In-App Purchase
 - The latest transaction for each auto-renewable subscription that has a [`Product.SubscriptionInfo.RenewalState`](product/subscriptioninfo/renewalstate.md) state of [`subscribed`](product/subscriptioninfo/renewalstate/subscribed.md) or [`inGracePeriod`](product/subscriptioninfo/renewalstate/ingraceperiod.md)
 - The latest transaction for each non-renewing subscription, including finished ones
 
-Products that the App Store has refunded or revoked don’t appear in the current entitlements. Consumable In-App Purchases also don’t appear in the current entitlements. To get transactions for unfinished consumables, use the [`unfinished`](transaction/unfinished.md) or [`all`](transaction/all.md) sequences in [`Transaction`](transaction.md).
+Products that the App Store has refunded or revoked don’t appear in the current entitlements. Consumable Apple In-App Purchases also don’t appear in the current entitlements. To get transactions for unfinished consumables, use the [`unfinished`](transaction/unfinished.md) or [`all`](transaction/all.md) sequences in [`Transaction`](transaction.md).
 
 The following example illustrates iterating through the current entitlements:
 

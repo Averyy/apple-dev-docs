@@ -22,7 +22,7 @@ struct Status
 
 ## Mentions
 
-- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Choosing a StoreKit API for Apple In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
 
 #### Overview
 

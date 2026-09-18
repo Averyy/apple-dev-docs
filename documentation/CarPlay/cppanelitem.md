@@ -3,6 +3,8 @@
 **Framework**: CarPlay  
 **Kind**: class
 
+A type that provides the common behaviors for items you display in a section of a panel.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,23 +18,23 @@ class CPPanelItem
 
 #### Overview
 
-Subclasses represent items specific to a particular template context (e.g., @c CPMapPanelItem for map templates).
+The `CPPanelItem` type defines the default behaviors for content you display in a panel. You don’t create this type directly or use it to configure the contents of your panel. Instead, instantiate one of the defined subclasses based on the type of panel you’re configuring. For example, create [`CPMapPanelItem`](cpmappanelitem.md) objects when configuring the content for a [`CPMapPanel`](cpmappanel.md) type.
 
 ## Topics
 
 ### Initializers
 - [init?(coder: NSCoder)](cppanelitem/init(coder:).md)
 - [init(gridButtons: [CPGridButton])](cppanelitem/init(gridbuttons:).md)
-  Initializes a panel item wrapping an array of @c CPGridButton objects.
+  Initialize the item using one or more grid buttons.
 - [init(listItem: CPListItem)](cppanelitem/init(listitem:).md)
-  Initializes a panel item wrapping a @c CPListItem.
+  Initialize the item using a list item.
 ### Instance Properties
 - [var isEnabled: Bool](cppanelitem/isenabled.md)
-  Whether the item is interactable. Defaults to @c YES.
+  A Boolean value that indicates whether the item supports interactions.
 - [var showsBottomSeparator: Bool](cppanelitem/showsbottomseparator.md)
-  When @c NO, the bottom separator line below this item is not drawn. Defaults to @c YES.
+  A Boolean value that indicates whether a separator line appears at the bottom edge of the item.
 - [var userInfo: Any?](cppanelitem/userinfo.md)
-  Any custom user info related to this item.
+  Custom information you want to store with the item.
 
 ## Relationships
 

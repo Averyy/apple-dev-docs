@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A hardware keyboard event that a focused view receives.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,33 @@
 ```swift
 struct KeyPress
 ```
+
+#### Overview
+
+The [`onKeyPress(phases:action:)`](view/onkeypress(phases:action:).md) family of modifiers passes a value of this type to your action. Read [`key`](keypress/key.md) and [`modifiers`](keypress/modifiers.md) to decide what to do, then return [`KeyPress.Result.handled`](keypress/result/handled.md) to consume the event or [`KeyPress.Result.ignored`](keypress/result/ignored.md) to let other views receive it.
+
+The following example removes the selected item when someone presses Delete, clears the selection on Escape, and leaves every other key to the rest of the app:
+
+```swift
+LibraryView(selection: $selection)
+    .focusable()
+    .onKeyPress(phases: .down) { keyPress in
+        switch keyPress.key {
+        case .delete:
+            library.remove(selection)
+            return .handled
+        case .escape:
+            selection = nil
+            return .handled
+        default:
+            return .ignored
+        }
+    }
+```
+
+A view only receives key presses while it has focus, so pair these modifiers with [`focusable(_:)`](view/focusable(_:).md) or another source of focus.
+
+To respond to the arrow keys, use [`onMoveCommand(perform:)`](view/onmovecommand(perform:).md) instead. That modifier also responds to the Siri Remote on tvOS.
 
 ## Topics
 

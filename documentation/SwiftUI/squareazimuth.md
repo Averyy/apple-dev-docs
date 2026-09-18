@@ -19,6 +19,7 @@ enum SquareAzimuth
 
 ### Structures
 - [SquareAzimuth.Set](squareazimuth/set.md)
+  A set of horizontal directions that specify how someone can look at a volume.
 ### Enumeration Cases
 - [SquareAzimuth.back](squareazimuth/back.md)
   Has an orientation with an horizontal angle equal to `180°`

@@ -21,7 +21,7 @@ enum AVDisplayDynamicRange
 
 ### Creating a dynamic range
 - [init?(rawValue: Int)](avdisplaydynamicrange/init(rawvalue:).md)
-### Dynamic Ranges
+### Dynamic ranges
 - [AVDisplayDynamicRange.automatic](avdisplaydynamicrange/automatic.md)
   Defines an automatic dynamic range. Indicates that the dynamic range will be set automatically.
 - [AVDisplayDynamicRange.standard](avdisplaydynamicrange/standard.md)
@@ -43,8 +43,8 @@ enum AVDisplayDynamicRange
 
 ## See Also
 
-- [var preferredDisplayDynamicRange: AVDisplayDynamicRange](avplayerview/preferreddisplaydynamicrange.md)
-  Describes how High Dynamic Range (HDR) video content renders.
+- [class AVDisplayManager](avdisplaymanager.md)
+  A tvOS management object that controls whether a TV switches modes to match the video’s native mode.
 
 
 ---

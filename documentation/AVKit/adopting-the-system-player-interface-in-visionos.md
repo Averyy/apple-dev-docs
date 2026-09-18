@@ -146,28 +146,20 @@ private func addTimeObserver() {
 
 ## See Also
 
-- [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
-  Adopt the system playback interface to provide an immersive video watching experience.
-- [Creating a multiview video playback experience in visionOS](creating-a-multiview-video-playback-experience-in-visionos.md)
-  Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
-- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
-  Display standard controls in your app to edit the timeline of the currently playing media.
+- [Playing video content in a standard user interface](playing-video-content-in-a-standard-user-interface.md)
+  Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
+- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
+  Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
 - [class AVPlayerViewController](avplayerviewcontroller.md)
   A view controller that displays content from a player and presents a native user interface to control playback.
 - [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
   A protocol that defines the methods to implement to respond to player view controller events.
-- [class AVExperienceController](avexperiencecontroller.md)
-  An object that controls video experiences.
-- [class AVMultiviewManager](avmultiviewmanager.md)
-  An object that manages viewing multiple videos at once.
-- [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
-  An object that synchronizes viewing environment state across participants in a SharePlay session.
-- [class AVViewport](avviewport.md)
-  An object that provides configuration options for how the player displays content in different viewing contexts.
-- [class AVPortalViewport](avportalviewport.md)
-  An object that defines the visual parameters for content displayed within a portal frame.
-- [Third-party casting support](third-party-casting-support.md)
-  Provide custom playback controls for third-party casting services and other media sources.
+- [class AVPlayerView](avplayerview.md)
+  A view that displays content from a player and presents a native user interface to control playback.
+- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+  A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
+- [struct VideoPlayer](videoplayer.md)
+  A view that displays content from a player and a native user interface to control playback.
 
 
 ---

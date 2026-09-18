@@ -26,6 +26,7 @@ This method constructs a curve starting from the path’s current point and endi
 
 ## Parameters
 
+- `end`: The point, in user space coordinates, at which to end the curve.
 - `control`: The control point of the curve, in user space coordinates.
 
 ## See Also

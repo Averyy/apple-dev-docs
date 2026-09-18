@@ -139,19 +139,6 @@ The notification object’s user information dictionary contains the reason for 
 }
 ```
 
-## See Also
-
-- [Adopting Picture in Picture Playback in tvOS](adopting-picture-in-picture-playback-in-tvos.md)
-  Add advanced multitasking capabilities to your video apps by using Picture in Picture playback in tvOS.
-- [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
-  Add Picture in Picture (PiP) playback to your app using a player view controller.
-- [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
-  Add controls to your custom player user interface to invoke Picture in Picture (PiP) playback.
-- [Adopting Picture in Picture for video calls](adopting-picture-in-picture-for-video-calls.md)
-  Add multitasking capability to your video-call apps by using Picture in Picture (PiP).
-- [class AVPictureInPictureController](avpictureinpicturecontroller.md)
-  A controller that responds to user-initiated Picture in Picture playback of video in a floating, resizable window.
-
 
 ---
 

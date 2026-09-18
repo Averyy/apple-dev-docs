@@ -22,7 +22,7 @@ enum Code
 
 ### Creating an error code
 - [init?(rawValue: Int)](avkiterror-swift.struct/code/init(rawvalue:).md)
-### Error Codes
+### Error codes
 - [AVKitError.Code.unknown](avkiterror-swift.struct/code/unknown.md)
   An unknown error.
 - [AVKitError.Code.contentRatingUnknown](avkiterror-swift.struct/code/contentratingunknown.md)
@@ -50,6 +50,8 @@ enum Code
   The domain of errors the framework generates.
 - [struct AVKitError](avkiterror-swift.struct.md)
   A structure that represents a framework error.
+- [Error constants](error-constants.md)
+  Error code constants for framework operations.
 
 
 ---

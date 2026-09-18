@@ -24,8 +24,7 @@ When you upload an app built with the iOS 27 SDK or later, App Store Connect val
 If none of these keys are present, App Store Connect rejects the upload with the following error:
 
 ```None
-ITMS-90870: Missing launch screen. Starting with the iOS 27 release this fall, 
-apps built with the iOS 27 SDK or later must provide a launch screen using an Xcode storyboard or UILaunchScreen. 
+ITMS-90870: Missing launch screen. Apps built with the iOS 27 SDK or later must provide a launch screen using an Xcode storyboard or UILaunchScreen. 
 Make sure the Info.plist contains one of the following keys: UILaunchStoryboardName, UILaunchStoryboards, UILaunchScreen, UILaunchScreens. 
 For details, visit: https://developer.apple.com/documentation/technotes/tn3208-preparing-your-apps-launch-screen-to-meet-app-store-requirements.
 ```
@@ -46,6 +45,7 @@ If you see a blank screen, an outdated launch screen, or no launch screen at all
 
 #### Revision History
 
+- **2026-09-14** Updated the ITMS-90870 error message to reflect the iOS 27 launch screen requirement.
 - **2026-06-08** First published.
 
 

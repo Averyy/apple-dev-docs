@@ -26,16 +26,18 @@ When the value is `nil`, SwiftUI uses the system default. The default value is `
 
 ## See Also
 
-- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
-  The size of content.
-- [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
-  A binding to the current presentation mode of the view associated with this environment.
-- [struct PresentationMode](presentationmode.md)
-  An indication whether a view is currently presented by another view.
+- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+  Whether the system preference for Show Button Shapes is enabled.
 - [var complicationRenderingMode: ComplicationRenderingMode](environmentvalues/complicationrenderingmode.md)
   The complication rendering mode for the current environment.
 - [var controlActiveState: ControlActiveState](environmentvalues/controlactivestate.md)
   The active appearance expected of controls in a window.
+- [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
+  A binding to the current presentation mode of the view associated with this environment.
+- [struct PresentationMode](presentationmode.md)
+  An indication whether a view is currently presented by another view.
+- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
+  The size of content.
 
 
 ---

@@ -125,6 +125,11 @@ Then, install the toolchain into Xcode:
 xcodebuild -importComponent metalToolchain ~/Downloads/metalToolchain.dmg
 ```
 
+## See Also
+
+- [Customizing your workspace using themes](customizing-your-workspace-using-themes.md)
+  Personalize the appearance of Xcode on your Mac.
+
 
 ---
 

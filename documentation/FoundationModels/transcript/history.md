@@ -34,7 +34,7 @@ When writing, the new value replaces all entries except the leading instructions
 ## See Also
 
 - [Transcript.HistoryView](transcript/historyview.md)
-  A mutable view into the conversational entries of a [`Transcript`](transcript.md).
+  A mutable view into the conversational entries of a transcript.
 
 
 ---

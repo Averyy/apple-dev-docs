@@ -23,9 +23,9 @@ var configuration: MTL4PipelineDataSetSerializerConfiguration { get set }
 
 The configuration of the serialization process determines the mechanisms you use to serialize pipeline data sets.
 
-When this configuration contains `MTL4PipelineDataSetSerializerConfigurationCaptureDescriptors`, use `serializeAsPipelinesScriptWithError:` to serialize pipeline scripts.
+When this configuration contains [`captureDescriptors`](mtl4pipelinedatasetserializerconfiguration/capturedescriptors.md), use [`serializeAsPipelinesScript()`](mtl4pipelinedatasetserializer/serializeaspipelinesscript().md) to serialize pipeline scripts.
 
-If this option contains `MTL4PipelineDataSetSerializerConfigurationCaptureBinaries`, the serializer can additionally serialize to a binary archive by calling `serializeAsArchiveAndFlushToURL:error::`.
+If this option contains [`captureBinaries`](mtl4pipelinedatasetserializerconfiguration/capturebinaries.md), the serializer can additionally serialize to a binary archive by calling [`serializeAsArchiveAndFlush(url:)`](mtl4pipelinedatasetserializer/serializeasarchiveandflush(url:).md).
 
 
 ---

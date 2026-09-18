@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: init
 
-Initializes a map template item wrapping a @c CPTravelEstimates.
+Creates a map panel item with travel estimate information.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +15,19 @@ Initializes a map template item wrapping a @c CPTravelEstimates.
 ```swift
 init(travelEstimates: CPTravelEstimates, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
 ```
+
+#### Return Value
+
+A map panel item initialized with travel estimates.
+
+#### Discussion
+
+For this type of item, the map panel displays the expected arrival time, along with the remaining distance and time information.
+
+## Parameters
+
+- `travelEstimates`: The object that provides the remaining distance and time values for a trip.
+- `handler`: A closure you use to respond when someone taps or selects the item. The closure takes the map panel item as a parameter and returns no value. Specify `nil` if you don’t want to respond to interactions with the item.
 
 
 ---

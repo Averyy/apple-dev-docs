@@ -28,7 +28,7 @@ func call(arguments: Self.Arguments) async throws -> Self.Output
 
 #### Discussion
 
-If errors are throw in the body of this method, the framework wraps them in a [`LanguageModelSession.ToolCallError`](languagemodelsession/toolcallerror.md) and rethrows them at the call site of [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md).
+If errors are thrown in the body of this method, the framework wraps them in a [`LanguageModelSession.ToolCallError`](languagemodelsession/toolcallerror.md) and rethrows them at the call site of [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md).
 
 > **Note**: This method may be invoked concurrently with itself or with other tools.
 

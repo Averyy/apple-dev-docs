@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func extendedWriteMultipleBlocks(requestFlags flags: NFCISO15693RequestFlag, blockRange: NSRange, dataBlocks: [Data], completionHandler: @escaping ((any Error)?) -> Void)
+@preconcurrency
+func extendedWriteMultipleBlocks(requestFlags flags: NFCISO15693RequestFlag, blockRange: NSRange, dataBlocks: [Data], completionHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
 

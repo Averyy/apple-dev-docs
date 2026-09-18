@@ -6,7 +6,7 @@
 Sets the transport type of the clock device.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -19,8 +19,8 @@ func setConfiguration(pirServerURL: URL, pirPrivacyPassIssuerURL: URL?, pirAuthe
 
 ## Parameters
 
-- `pirServerURL`: The PIR server URL.  The URL must contain only the domain name of the PIR server.
-- `pirPrivacyPassIssuerURL`: The PIR Privacy Pass issuer URL. The URL must contain only the domain name of the Privacy Pass issuer. If nil, the configuration uses the PIR server URL as the Privacy Pass issuer URL.
+- `pirServerURL`: The PIR server URL.  The URL must contain only the domain name of the PIR server, and must match the value defined in the `NSPIRConfiguration` dictionary in the information property list.
+- `pirPrivacyPassIssuerURL`: The PIR Privacy Pass issuer URL. The URL must contain only the domain name of the Privacy Pass issuer. If `nil`, the configuration uses the PIR server URL as the Privacy Pass issuer URL. This value must match the value defined in the `NSPIRConfiguration` dictionary in the information property list.
 - `pirAuthenticationToken`: An HTTP bearer token that authenticates the person using your app. The system uses this token to attest that it’s a valid user when requesting anonymous authentication tokens.
 - `controlProviderBundleIdentifier`: The bundle identifier of the [`NEURLFilterControlProvider`](neurlfiltercontrolprovider.md) app extension.
 

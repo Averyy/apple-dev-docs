@@ -53,6 +53,12 @@ func photosSharedAlbumPostingSheet(isPresented: Binding<Bool>, items: [PHPickerR
   Presents a view for allowing the user to create a new shared album.
 - [func photosSharedAlbumCustomizationSheet(isPresented: Binding<Bool>, albumIdentifier: String?, photoLibrary: PHPhotoLibrary, onCompletion: (((any Error)?) -> Void)?) -> some View](view/photossharedalbumcustomizationsheet(ispresented:albumidentifier:photolibrary:oncompletion:).md)
   Presents a view for allowing the user to customize a specified shared album.
+- [func photosReferenceImageViewer(asset: Binding<PHAsset?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(asset:onprocessingcompletion:).md)
+  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `isPresented` is set to true.
+- [func photosReferenceImageViewer(fileURL: Binding<URL?>, onProcessingCompletion: ((Result<URL, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(fileurl:onprocessingcompletion:).md)
+  Presents an image viewer for a given image file containing Apple Reference Image data when `fileURL` is set.
+- [func photosReferenceImageViewer(pickerItem: Binding<PhotosPickerItem?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(pickeritem:onprocessingcompletion:).md)
+  Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `isPresented` is set to true.
 
 
 ---

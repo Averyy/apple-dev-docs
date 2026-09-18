@@ -47,7 +47,7 @@ The default value is `true`.
 - [type refundReason](refundreason.md)
   A reason to request a refund.
 - [type SKU](sku.md)
-  The product identifier of an in-app purchase product you manage in your own system.
+  The product identifier of an Apple In-App Purchase product you manage in your own system.
 - [type storefront](storefront.md)
   A three-letter code that represents the country or region associated with the App Store storefront.
 - [type taxCode](taxcode.md)

@@ -41,6 +41,7 @@ A modified view that binds hardware keyboard input when focused.
 - [func onKeyPress(keys: Set<KeyEquivalent>, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](view/onkeypress(keys:phases:action:).md)
   Performs an action if the user presses one or more keys on a hardware keyboard while the view has focus.
 - [struct KeyPress](keypress.md)
+  A hardware keyboard event that a focused view receives.
 
 
 ---

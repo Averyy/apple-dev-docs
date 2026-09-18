@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a reasoning entry that contains the segments you provide.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,13 @@
 ```swift
 init(id: String = UUID().uuidString, metadata: [String : any ConvertibleToGeneratedContent] = [:], segments: [Transcript.Segment], signature: Data? = nil)
 ```
+
+## Parameters
+
+- `id`: A unique identifier for the reasoning entry.
+- `metadata`: Additional information to associate with the entry, keyed by name.
+- `segments`: The reasoning segments, in order.
+- `signature`: An opaque, producer-supplied signature for the reasoning entry, if any.
 
 
 ---

@@ -73,16 +73,16 @@ enum AudioActivity: String {
         .cleaning: "Cleaning",
         .relaxing: "Relaxing",
         .sleeping: "Sleeping",
-        .indoorActivity: "IndoorActivity",
+        .indoorActivity: "Indoor Activity",
         .partying: "Partying",
         .commuting: "Commuting",
         .driving: "Driving",
         .traveling: "Traveling",
         .gardening: "Gardening",
         .barbecuing: "Barbecuing",
-        .beachDay: "BeachDay",
-        .roadTrip: "RoadTrip",
-        .outdoorActivity: "OutdoorActivity",
+        .beachDay: "Beach Day",
+        .roadTrip: "Road Trip",
+        .outdoorActivity: "Outdoor Activity",
         .meditating: "Meditating",
         .yoga: "Yoga",
         .walking: "Walking",
@@ -90,11 +90,11 @@ enum AudioActivity: String {
         .strength: "Strength",
         .cycling: "Cycling",
         .dance: "Dance",
-        .hiit: "Hiit",
+        .hiit: "HIIT",
         .rowing: "Rowing",
-        .workoutLowIntensity: "WorkoutLowIntensity",
-        .workoutMediumIntensity: "WorkoutMediumIntensity",
-        .workoutHighIntensity: "WorkoutHighIntensity"
+        .workoutLowIntensity: "Low-Intensity Workout",
+        .workoutMediumIntensity: "Medium-Intensity Workout",
+        .workoutHighIntensity: "High-Intensity Workout"
     ]
 }
 ```

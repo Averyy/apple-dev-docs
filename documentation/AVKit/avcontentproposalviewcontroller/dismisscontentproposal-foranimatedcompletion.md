@@ -16,7 +16,7 @@ func dismissContentProposal(for action: AVContentProposalAction, animated: Bool)
 
 ## Mentions
 
-- [Presenting Content Proposals in tvOS](presenting-content-proposals-in-tvos.md)
+- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
 
 #### Discussion
 

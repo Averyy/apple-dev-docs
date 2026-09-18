@@ -27,7 +27,7 @@ struct Variant
   AFM 3 Core Advanced.
 ### Getting the model display name
 - [let displayName: String](systemlanguagemodel/variant-swift.struct/displayname.md)
-  The user-facing name of the variant — for example `"AFM 3 Core"` or `"AFM 3 Core Advanced"`.
+  The user-facing name of the variant.
 
 ## Relationships
 

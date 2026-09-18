@@ -3,7 +3,7 @@
 **Framework**: App Tracking Transparency  
 **Kind**: case
 
-The value that returns if the user authorizes access to app-related data for tracking the user or the device.
+A value that indicates someone grants your app permission to access data your app can use to track a person or device.
 
 **Availability**:
 - iOS 14.0+
@@ -19,18 +19,14 @@ The value that returns if the user authorizes access to app-related data for tra
 case authorized
 ```
 
-#### Discussion
-
-This setting allows users to opt in or out of allowing apps to request user consent to access app-related data for tracking the user or the device. End users can revoke permission at any time through the Allow Apps to Request to Track privacy setting on the device.
-
 ## See Also
 
 - [ATTrackingManager.AuthorizationStatus.denied](attrackingmanager/authorizationstatus/denied.md)
-  The value that returns if the user denies authorization to access app-related data for tracking the user or the device.
+  A value that indicates someone denies your app permission to access data your app can use to track a person or device.
 - [ATTrackingManager.AuthorizationStatus.notDetermined](attrackingmanager/authorizationstatus/notdetermined.md)
-  The value that returns when the app can’t determine the user’s authorization status for access to app-related data for tracking the user or the device.
+  A value that indicates the person hasn’t responded to a tracking authorization request.
 - [ATTrackingManager.AuthorizationStatus.restricted](attrackingmanager/authorizationstatus/restricted.md)
-  The value that returns if authorization to access app-related data for tracking the user or the device has a restricted status.
+  A value that indicates the system restricts tracking authorization.
 
 
 ---

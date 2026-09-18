@@ -32,6 +32,9 @@ Construct one with a leading-dot factory — [`response(entryID:action:)`](langu
   A tool-calls event addressed to a transcript entry.
 - [static func reasoning(entryID: String?, action: LanguageModelExecutorGenerationChannel.Reasoning.Action) -> LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event/reasoning(entryid:action:).md)
   A reasoning event addressed to a transcript entry.
+### Type Methods
+- [static func data(entryID: String?, action: LanguageModelExecutorGenerationChannel.DataEntry.Action) -> LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event/data(entryid:action:).md)
+  A data-entry event addressed to a transcript entry.
 
 ## Relationships
 

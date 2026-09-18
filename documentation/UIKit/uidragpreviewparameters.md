@@ -34,6 +34,8 @@ You can refine the appearance of a preview by providing additional parameters wh
 - [Hashable](../swift/hashable.md)
 - [NSCopying](../foundation/nscopying.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

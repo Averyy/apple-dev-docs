@@ -1,4 +1,4 @@
 Completed scraping Symbols!
-Total pages scraped: 126
-Pages skipped (unchanged): 1
+Total pages scraped: 4
+Pages skipped (unchanged): 123
 Pages failed: 0

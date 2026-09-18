@@ -66,6 +66,8 @@ Before using the model, verify its availability. Model availability depends on w
 ### Accessing the error
 - [PrivateCloudComputeLanguageModel.Error](privatecloudcomputelanguagemodel/error.md)
   Errors that may occur when using Private Cloud Compute.
+### Default Implementations
+- [LanguageModel Implementations](privatecloudcomputelanguagemodel/languagemodel-implementations.md)
 
 ## Relationships
 

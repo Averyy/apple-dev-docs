@@ -23,25 +23,29 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
 ## Topics
 
 ### Using default options
-- [func defaultCustomization() -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization.md)
-  Configures customizable toolbar content with the default visibility and options.
 - [func defaultCustomization(Visibility, options: ToolbarCustomizationOptions) -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization(_:options:).md)
   Configures the way customizable toolbar items with the default behavior behave.
-### Customizing the behavior
+### Customizing behaviors
+- [func axisBehavior(ToolbarItemAxisBehavior) -> some CustomizableToolbarContent](customizabletoolbarcontent/axisbehavior(_:).md)
+  The bar axis behavior of the toolbar item.
 - [func customizationBehavior(ToolbarCustomizationBehavior) -> some CustomizableToolbarContent](customizabletoolbarcontent/customizationbehavior(_:).md)
   Configures the customization behavior of customizable toolbar content.
 ### Setting visibility
-- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some CustomizableToolbarContent](customizabletoolbarcontent/visibilitypriority(_:).md)
-  Defines the visibility priority for a toolbar item.
-### Instance Methods
-- [func contentMarginsRemoved(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/contentmarginsremoved(_:).md)
-  Configures whether the content margins are removed.
 - [func hidden(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/hidden(_:).md)
   Hides a toolbar item within its toolbar.
-- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some CustomizableToolbarContent](customizabletoolbarcontent/matchedtransitionsource(id:in:).md)
-  Identifies this toolbar content as the source of a navigation transition, such as a zoom transition.
 - [func sharedBackgroundVisibility(Visibility) -> some CustomizableToolbarContent](customizabletoolbarcontent/sharedbackgroundvisibility(_:).md)
   Controls the visibility of the glass background effect on items in the toolbar. In certain contexts, such as the navigation bar on iOS and the window toolbar on macOS, toolbar items will be given a glass background effect that is shared with other items in the same logical grouping.
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some CustomizableToolbarContent](customizabletoolbarcontent/visibilitypriority(_:).md)
+  Defines the visibility priority for a toolbar item.
+### Coordinating with animations
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some CustomizableToolbarContent](customizabletoolbarcontent/matchedtransitionsource(id:in:).md)
+  Identifies this toolbar content as the source of a navigation transition, such as a zoom transition.
+### Adjusting content margins
+- [func contentMarginsRemoved(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/contentmarginsremoved(_:).md)
+  Configures whether the content margins are removed.
+### Deprecated
+- [func defaultCustomization() -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization.md)
+  Configures customizable toolbar content with the default visibility and options.
 
 ## Relationships
 

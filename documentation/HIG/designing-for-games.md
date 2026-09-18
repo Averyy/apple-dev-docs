@@ -88,7 +88,7 @@ As you create or adapt a game for Apple platforms, learn how to integrate the fu
 **Take advantage of Apple technologies to enable unique gameplay mechanics.**  For example, you can integrate technologies like augmented reality, machine learning, and [HealthKit](../healthkit.md), and request access to location data and functionality like camera and microphone. For a full list of Apple technologies, features, and services, see [Technologies](technologies.md).
 - [Game Center](/design/human-interface-guidelines/game-center) - Game Center is Apple’s social gaming network, which lets players track their progress and connect with friends across Apple platforms, and boosts the discovery of your game across players’ devices.
 - [iCloud](/design/human-interface-guidelines/icloud) - iCloud is a service that lets people seamlessly access the content they care about — photos, videos, documents, and more — from any device, without performing explicit synchronization.
-- [In-app purchase](/design/human-interface-guidelines/in-app-purchase) - People can use in-app purchase to pay for virtual goods — like premium content, digital goods, and subscriptions — securely within your app.
+- [Apple In-App Purchase](/design/human-interface-guidelines/apple-in-app-purchase) - People can use Apple In-App Purchase to pay for digital goods and services, like premium content and subscriptions, securely within your app.
 
 ## Resources
 

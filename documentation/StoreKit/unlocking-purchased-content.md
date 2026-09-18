@@ -10,7 +10,7 @@ After a purchase is complete, it’s your responsibility to make sure that you p
 
 ##### Identify the Purchased Content
 
-For an in-app purchase product that enables app functionality, such as a premium subscription, set a Boolean value to enable the code path and update your user interface as needed. Consult your app’s persistent transaction record to determine the functionality to unlock. Your app needs to update this Boolean value whenever the user completes a purchase and at app launch. For information on making a persistent record, see [`Persisting a purchase`](persisting-a-purchase.md).
+For an Apple In-App Purchase product that enables app functionality, such as a premium subscription, set a Boolean value to enable the code path and update your user interface as needed. Consult your app’s persistent transaction record to determine the functionality to unlock. Your app needs to update this Boolean value whenever the user completes a purchase and at app launch. For information on making a persistent record, see [`Persisting a purchase`](persisting-a-purchase.md).
 
 For example, using the app receipt, your code might look like the following:
 
@@ -55,7 +55,7 @@ BOOL rocketCarEnabled = [defaults boolForKey:@"enable_rocket_car"];
 
 ```
 
-After you define the Boolean variable that represents the in-app purchase content, use the purchase information to enable the appropriate code paths in your app.
+After you define the Boolean variable that represents the Apple In-App Purchase content, use the purchase information to enable the appropriate code paths in your app.
 
 ```swift
 if (rocketCarEnabled) {
@@ -109,13 +109,13 @@ Consider the security implications of how you host your content and how your app
 
 ##### Download Content Using on Demand Resources
 
-You can use [`On-Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/index.html) (ODR) for flexibility in downloading data in your app. ODR is an Apple-hosted service you use to store in-app purchase data that your app downloads after you verify the user’s purchase using the app receipt. ODR doesn’t require a call to restore transactions and authenticate the user to download content hosted on Apple’s server.
+You can use [`On-Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/index.html) (ODR) for flexibility in downloading data in your app. ODR is an Apple-hosted service you use to store Apple In-App Purchase data that your app downloads after you verify the user’s purchase using the app receipt. ODR doesn’t require a call to restore transactions and authenticate the user to download content hosted on Apple’s server.
 
 ##### Download Hosted Content From Apples Server
 
 > ❗ **Important**:  [`SKDownload`](skdownload.md) and its related functionality are deprecated. The following information is for apps that already host content on Apple’s servers and use [`SKDownload`](skdownload.md).
 
-Apps can use Apple-hosted content for downloaded files. You create an Apple-hosted content bundle using the In-App Purchase Content target in Xcode and submit it to App Store Connect. Apple’s servers store your app’s content using the same infrastructure that supports other large-scale operations, such as the App Store. Apple-hosted content automatically downloads in the background even if your app isn’t running.
+Apps can use Apple-hosted content for downloaded files. You create an Apple-hosted content bundle using the Apple In-App Purchase Content target in Xcode and submit it to App Store Connect. Apple’s servers store your app’s content using the same infrastructure that supports other large-scale operations, such as the App Store. Apple-hosted content automatically downloads in the background even if your app isn’t running.
 
 If you need to support older versions of iOS or share your server infrastructure across multiple platforms, you may choose to host your own content using your own server infrastructure.
 

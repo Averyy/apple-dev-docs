@@ -21,7 +21,7 @@ var blendingState: MTL4BlendState { get set }
 
 #### Discussion
 
-This property’s default value is `MTL4BlendStateDisabled`.
+This property’s default value is [`MTL4BlendState.disabled`](mtl4blendstate/disabled.md).
 
 
 ---

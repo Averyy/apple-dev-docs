@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: protocol
 
-A set of methods that process transactions, unlock purchased functionality, and continue promoted In-App Purchases.
+A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
 
 **Availability**:
 - iOS 3.0+
@@ -22,8 +22,8 @@ protocol SKPaymentTransactionObserver : NSObjectProtocol
 
 ## Mentions
 
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-- [Promoting In-App Purchases](promoting-in-app-purchases.md)
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
 - [Processing a transaction](processing-a-transaction.md)
 - [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
 - [Testing transaction observer code](testing-transaction-observer-code.md)
@@ -49,11 +49,11 @@ The system calls an observer when the queue updates or removes transactions. An 
   Tells the observer that an error occurred while restoring transactions.
 - [func paymentQueueRestoreCompletedTransactionsFinished(SKPaymentQueue)](skpaymenttransactionobserver/paymentqueuerestorecompletedtransactionsfinished(_:).md)
   Tells the observer that the payment queue has finished sending restored transactions.
-### Handling promoted in-app purchases
-- [Promoting In-App Purchases](promoting-in-app-purchases.md)
-  Show promoted In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
+### Handling promoted Apple In-App Purchases
+- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
+  Show promoted Apple In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
 - [func paymentQueue(SKPaymentQueue, shouldAddStorePayment: SKPayment, for: SKProduct) -> Bool](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md)
-  Tells the observer when a user initiates an in-app purchase from the App Store.
+  Tells the observer when a user initiates an Apple In-App Purchase from the App Store.
 ### Revoking entitlements
 - [func paymentQueue(SKPaymentQueue, didRevokeEntitlementsForProductIdentifiers: [String])](skpaymenttransactionobserver/paymentqueue(_:didrevokeentitlementsforproductidentifiers:).md)
   Tells an observer that the customer is no longer entitled to one or more Family Sharing purchases.
@@ -73,7 +73,7 @@ The system calls an observer when the queue updates or removes transactions. An 
 
 - [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
   Enable your app to receive and handle transactions by adding an observer.
-- [Offering, completing, and restoring in-app purchases](offering-completing-and-restoring-in-app-purchases.md)
+- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
 - [class SKPaymentQueue](skpaymentqueue.md)
   A queue of payment transactions for the App Store to process.

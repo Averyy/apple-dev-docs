@@ -6,7 +6,7 @@
 The transport type identifier returned when a device doesn’t provide a transport type.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

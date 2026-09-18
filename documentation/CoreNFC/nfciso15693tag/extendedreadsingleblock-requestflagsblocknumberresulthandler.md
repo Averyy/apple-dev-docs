@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func extendedReadSingleBlock(requestFlags flags: NFCISO15693RequestFlag, blockNumber: Int, resultHandler: @escaping (Result<Data, any Error>) -> Void)
+@preconcurrency
+func extendedReadSingleBlock(requestFlags flags: NFCISO15693RequestFlag, blockNumber: Int, resultHandler: @escaping @Sendable (Result<Data, any Error>) -> Void)
 ```
 
 

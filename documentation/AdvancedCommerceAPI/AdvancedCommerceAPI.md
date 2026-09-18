@@ -3,16 +3,16 @@
 **Framework**: Advanced Commerce API  
 **Kind**: module
 
-Support In-App Purchases through the App Store for exceptionally large catalogs of custom one-time purchases, subscriptions, and subscriptions with optional add-ons.
+Support Apple In-App Purchases through the App Store for exceptionally large catalogs of custom one-time purchases, subscriptions, and subscriptions with optional add-ons.
 
 **Availability**:
 - Advanced Commerce API 1.0+
 
 #### Overview
 
-Use this framework to offer an exceptionally large catalog of one-time purchases, subscriptions, and subscriptions with optional add-ons while using the App Store commerce system. Apps that use this API host and manage their own catalog of In-App Purchases, or SKUs. The App Store commerce system handles the end-to-end payment processing, global distribution, tax support, and customer service.
+Use this framework to offer an exceptionally large catalog of one-time purchases, subscriptions, and subscriptions with optional add-ons while using the App Store commerce system. Apps that use this API host and manage their own catalog of Apple In-App Purchases, or SKUs. The App Store commerce system handles the end-to-end payment processing, global distribution, tax support, and customer service.
 
-You can use the Advanced Commerce API and the StoreKit [`In-App Purchase`](https://developer.apple.com/documentation/storekit/in-app-purchase) API in the same app. Both APIs use the App Store commerce system, including the same signed JWS transactions and JWS renewal info. For products that you offer using the In-App Purchase API, you set up product identifiers in App Store Connect. For products that you offer using the Advanced Commerce API, you host and manage your own catalog of SKUs and add product details dynamically at runtime. For complete setup information, see [`Setting up your project for Advanced Commerce API`](setting-up-your-project-for-advanced-commerce.md).
+You can use the Advanced Commerce API and the StoreKit [`Apple In-App Purchase`](https://developer.apple.com/documentation/storekit/in-app-purchase) API in the same app. Both APIs use the App Store commerce system, including the same signed JWS transactions and JWS renewal info. For products that you offer using the Apple In-App Purchase API, you set up product identifiers in App Store Connect. For products that you offer using the Advanced Commerce API, you host and manage your own catalog of SKUs and add product details dynamically at runtime. For complete setup information, see [`Setting up your project for Advanced Commerce API`](setting-up-your-project-for-advanced-commerce.md).
 
 Advanced Commerce API features are available through requests you make using StoreKit in your app and endpoint requests from your server. To authorize these requests, you generate JSON Web Tokens (JWTs). The App Store Server Library provides a client that makes it easier to create JWTs to authorize calls. For more information about the library, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library). For more information about authorizing calls, see  [`Authorizing API requests from your server`](authorizing-server-calls.md).
 
@@ -37,7 +37,7 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 ### Generic product IDs and SKUs
 - [Setting up generic product identifiers](setting-up-generic-product-identifiers.md)
   Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
   Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
 - [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
   Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
@@ -45,7 +45,7 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 - [Specifying prices for Advanced Commerce SKUs](prices.md)
   Provide prices for SKUs with the supported number of decimal places, in milliunits of currency.
 - [Choosing tax codes for your SKUs](taxcodes.md)
-  Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
+  Select a tax code for each SKU that represents a product your app offers as an Apple In-App Purchase.
 - [Handling subscription price changes](handling-subscription-price-changes.md)
   Initiate a price change and manage communications with your subscribers through the App Store.
 ### In-app API requests
@@ -122,9 +122,9 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
   The metadata to change for an item, specifically its SKU, description, and display name.
 ### Migration from the server
 - [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)
-  Migrate a subscription that a customer purchased through In-App Purchase to a subscription you manage using the Advanced Commerce API.
+  Migrate a subscription that a customer purchased through Apple In-App Purchase to a subscription you manage using the Advanced Commerce API.
 - [object SubscriptionMigrateRequest](subscriptionmigraterequest.md)
-  The subscription details you provide to migrate a subscription from In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
+  The subscription details you provide to migrate a subscription from Apple In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
 - [object SubscriptionMigrateResponse](subscriptionmigrateresponse.md)
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
 - [object SubscriptionMigrateItem](subscriptionmigrateitem.md)

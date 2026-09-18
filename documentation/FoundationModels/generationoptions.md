@@ -35,6 +35,7 @@ All input to the model contributes tokens to the context window of the [`Languag
 
 ### Creating options
 - [init(samplingMode: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](generationoptions/init(samplingmode:temperature:maximumresponsetokens:).md)
+  Creates generation options that control token sampling behavior.
 - [init(samplingMode: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?, toolCallingMode: GenerationOptions.ToolCallingMode?)](generationoptions/init(samplingmode:temperature:maximumresponsetokens:toolcallingmode:).md)
   Creates generation options that control token sampling behavior.
 - [init(sampling: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](generationoptions/init(sampling:temperature:maximumresponsetokens:).md)
@@ -51,7 +52,7 @@ All input to the model contributes tokens to the context window of the [`Languag
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
   The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
-  A value you use to describe the model behavior when it comes to tool usage.
+  A value that describes how the model uses tools.
 - [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
   The maximum number of tokens the model is allowed to produce in its response.
 

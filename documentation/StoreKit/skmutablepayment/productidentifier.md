@@ -26,7 +26,7 @@ The product identifier is a string previously agreed on between your app and the
 
 ## See Also
 
-- [In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
+- [Apple In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
 - [var quantity: Int](skmutablepayment/quantity.md)
   The number of items the user wants to purchase.
 - [var requestData: Data?](skmutablepayment/requestdata.md)

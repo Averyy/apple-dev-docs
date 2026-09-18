@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
-Returns a video rotation angle in degrees from this camera relative to the provided orientation.
+An angle the coordinator provides your app to apply to photos or videos it takes with the capture device so that they’re upright relative to an orientation your app provides.
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +18,22 @@ func videoRotationAngleRelative(toDeviceOrientation deviceOrientation: AVCapture
 
 #### Discussion
 
-The returned video rotation angle represents the amount by which photos or movies captured from the camera should be rotated to be upright relative to the provided orientation. A returned video rotation angle of 0 degrees means that the output will be in the camera’s unrotated, native sensor orientation. The returned video rotation angle for an orientation may differ between cameras. For example, some cameras are upright when the device is held with the port on the bottom, while others are upright when holding the device with the port on the left or right. External cameras return 0 degrees for all given video orientations because the relationship between the device and the camera is unknown.
+The angle this method returns is distinct from the angles that the [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) and [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) properties provide. Those angles are relative to the horizon and change dynamically as someone physically rotates the device. This method returns a static angle relative to the orientation your app provides, no matter how the device is physically oriented when your app calls it.
 
-The angle returned from this property is distinct from the angles returned by -videoRotationAngleForHorizonLevelCapture and -videoRotationAngleForHorizonLevelPreview because those return angles relative to the horizon which change dynamically as the device is physically rotated, while this returns the static angle relative to the provided orientation regardless of how the device is physically oriented at the time this method is called.
+An angle of `0` means the output is in the camera’s unrotated, native sensor orientation. Cameras vary in how they’re physically mounted. The angle for an orientation may differ between the capture devices your app uses. An external camera returns `0` for every orientation because the relationship between the device and the camera is unknown.
+
+Apps typically apply the returned angle to an [`AVCaptureConnection`](avcaptureconnection.md) instance’s [`videoRotationAngle`](avcaptureconnection/videorotationangle.md) property, which describes the angles a connection accepts and how it applies them.
+
+## Parameters
+
+- `deviceOrientation`: The device orientation to measure the angle against, represented with the [`AVCaptureVideoOrientation`](avcapturevideoorientation.md) enumeration.
+
+## See Also
+
+- [var videoRotationAngleForHorizonLevelCapture: CGFloat](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md)
+  An angle the coordinator provides your app to apply to photos or videos it captures with the device so that they’re level relative to gravity.
+- [var videoRotationAngleForHorizonLevelPreview: CGFloat](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md)
+  An angle the coordinator provides your app to apply to the preview layer so that it’s level relative to gravity.
 
 
 ---

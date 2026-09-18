@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The metadata key-value pairs for the entry.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

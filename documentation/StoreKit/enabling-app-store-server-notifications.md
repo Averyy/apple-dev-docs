@@ -2,11 +2,11 @@
 
 **Framework**: StoreKit
 
-Configure your server and provide an HTTPS URL to receive notifications about in-app purchase events and unreported external purchase tokens.
+Configure your server and provide an HTTPS URL to receive notifications about Apple In-App Purchase events and unreported external purchase tokens.
 
 #### Overview
 
-[`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications) is a server-to-server service that sends real-time notifications for in-app purchase events, and notifications for unreported external purchase tokens. To enable notifications, set up an HTTPS URL on your server, and configure settings in App Store Connect.
+[`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications) is a server-to-server service that sends real-time notifications for Apple In-App Purchase events, and notifications for unreported external purchase tokens. To enable notifications, set up an HTTPS URL on your server, and configure settings in App Store Connect.
 
 For information about parsing and interpreting notifications, see [`Receiving App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/receiving-app-store-server-notifications).
 

@@ -41,7 +41,7 @@ Billing Grace Period is applied at the time of a billing error when it’s enabl
 - 3 or 6 days for a weekly subscription
 - 3, 16, or 28 days for monthly and longer subscriptions
 
-If you choose to enable Billing Grace Period, ensure that you provide full service for the subscription throughout the grace period. You can check the `grace_period_expires_date_ms` field in the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary) array of the `verifyReceipt` response or `unified_receipt` object in the server notification to determine the end of this grace period duration. For more information on reducing involuntary churn using a grace period, see [`WWDC 2019 > In-App Purchases and Using Server-to-Server Notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/302/).
+If you choose to enable Billing Grace Period, ensure that you provide full service for the subscription throughout the grace period. You can check the `grace_period_expires_date_ms` field in the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary) array of the `verifyReceipt` response or `unified_receipt` object in the server notification to determine the end of this grace period duration. For more information on reducing involuntary churn using a grace period, see [`WWDC 2019 > Apple In-App Purchases and Using Server-to-Server Notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/302/).
 
 If the user is recovered within this grace period, neither the subscriber’s days of paid service, nor your revenue for auto-renewable subscriptions will be interrupted. Billing error recoveries made after the grace period expires, but within the overall billing retry period, will maintain existing behavior and renew on the recovery date, starting a new billing cycle. Payment for the provided full service during the grace period would not be collected.
 
@@ -68,7 +68,7 @@ StoreKit adds a new transaction for the renewal to the transaction queue on the 
 - [Handling Subscriptions Billing](handling-subscriptions-billing.md)
   Build logic around the date and time constraints of subscription products, while planning for all scenarios where you control access to content.
 - [Enabling App Store Server Notifications](enabling-app-store-server-notifications.md)
-  Configure your server and provide an HTTPS URL to receive notifications about in-app purchase events and unreported external purchase tokens.
+  Configure your server and provide an HTTPS URL to receive notifications about Apple In-App Purchase events and unreported external purchase tokens.
 - [Offering a Subscription Across Multiple Apps](offering-a-subscription-across-multiple-apps.md)
   Support a single auto-renewable subscription across multiple apps.
 

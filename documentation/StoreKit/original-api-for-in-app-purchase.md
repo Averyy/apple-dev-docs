@@ -1,31 +1,31 @@
-# Original API for In-App Purchase
+# Original API for Apple In-App Purchase
 
 **Framework**: StoreKit
 
-Offer additional content and services in your app using the Original In-App Purchase API.
+Offer additional content and services in your app using the Original Apple In-App Purchase API.
 
 #### Overview
 
-The In-App Purchase APIs, including the original API and the Swift-based [`In-App Purchase`](in-app-purchase.md) API, allow you to offer customers the opportunity to purchase in-app content and features. Customers can make the purchases within your app, and find your promoted products on the App Store.
+The Apple In-App Purchase APIs, including the original API and the Swift-based [`Apple In-App Purchase`](in-app-purchase.md) API, allow you to offer customers the opportunity to purchase in-app content and features. Customers can make the purchases within your app, and find your promoted products on the App Store.
 
 The StoreKit framework connects to the App Store on your app’s behalf to prompt for, and securely process, payments. The framework then notifies your app, which delivers the purchased products. To validate purchases, you can verify receipts on your server with the App Store or on the device. For auto-renewable subscriptions, the App Store can also notify your server of key subscription events.
 
 ![A diagram of the interactions between StoreKit, your app, the App Store, and your server that occur during a transaction.](/images/com.apple.storekit/media-3039996@2x.png)
 
-For more information about In-App Purchases, including configuration, testing, marketing, and more, see [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/).
+For more information about Apple In-App Purchases, including configuration, testing, marketing, and more, see [`Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/).
 
-##### Configure in App Purchases in App Store Connect
+##### Configure Apple in App Purchases in App Store Connect
 
-To use the In-App Purchase API, you need to configure the products in App Store Connect. As you develop your app, you can add or remove products and refine or reconfigure existing products. For more information, see [`Configure In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+To use the Apple In-App Purchase API, you need to configure the products in App Store Connect. As you develop your app, you can add or remove products and refine or reconfigure existing products. For more information, see [`Configure Apple In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
-You can also offer apps and In-App Purchases that run on multiple platforms as a single purchase. For more information about universal purchase, see [`App Store Connect Help`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev2cd126805).
+You can also offer apps and Apple In-App Purchases that run on multiple platforms as a single purchase. For more information about universal purchase, see [`App Store Connect Help`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev2cd126805).
 
 ##### Understand Product Types
 
-There are four In-App Purchase types you can offer:
+There are four Apple In-App Purchase types you can offer:
 
 - *Consumables* are a type that are depleted after one use. Customers can purchase them multiple times.
-- *Non-consumables* are a type that customers purchase once. They don’t expire. Non-consumable In-App Purchases can offer Family Sharing.
+- *Non-consumables* are a type that customers purchase once. They don’t expire. Non-consumable Apple In-App Purchases can offer Family Sharing.
 - *Auto-renewable subscriptions* to services or content are a type that customers purchase once and that renew automatically on a recurring basis until customers decide to cancel. Auto-renewable subscriptions can offer Family Sharing.
 - *Non-renewing subscriptions* to services or content provide access over a limited duration and don’t renew automatically. Customers need to purchase a new subscription after it concludes if they want to retain access.
 
@@ -36,12 +36,12 @@ You can sync and restore non-consumables and auto-renewable subscriptions across
 ### Essentials
 - [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
   Enable your app to receive and handle transactions by adding an observer.
-- [Offering, completing, and restoring in-app purchases](offering-completing-and-restoring-in-app-purchases.md)
+- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
 - [class SKPaymentQueue](skpaymentqueue.md)
   A queue of payment transactions for the App Store to process.
 - [protocol SKPaymentTransactionObserver](skpaymenttransactionobserver.md)
-  A set of methods that process transactions, unlock purchased functionality, and continue promoted In-App Purchases.
+  A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
 - [protocol SKPaymentQueueDelegate](skpaymentqueuedelegate.md)
   The protocol that provides information needed to complete transactions.
 - [class SKRequest](skrequest.md)
@@ -116,21 +116,21 @@ You can sync and restore non-consumables and auto-renewable subscriptions across
 - [Subscriptions and offers](subscriptions-and-offers.md)
   Offer customers additional time-based content and services through purchases they make within your app.
 ### Promotions
-- [Promoting In-App Purchases](promoting-in-app-purchases.md)
-  Show promoted In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
-- [Testing promoted In-App Purchases](testing-promoted-in-app-purchases.md)
-  Test your In-App Purchases before making your app available in the App Store.
+- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
+  Show promoted Apple In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
+- [Testing promoted Apple In-App Purchases](testing-promoted-in-app-purchases.md)
+  Test your Apple In-App Purchases before making your app available in the App Store.
 - [class SKProductStorePromotionController](skproductstorepromotioncontroller.md)
-  A product promotion controller for customizing the order and visibility of In-App Purchases per device.
-### Testing In-App Purchases
+  A product promotion controller for customizing the order and visibility of Apple In-App Purchases per device.
+### Testing Apple In-App Purchases
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
-  Verify your implementation of In-App Purchases by testing your code throughout its development.
+  Verify your implementation of Apple In-App Purchases by testing your code throughout its development.
 - [Setting up StoreKit Testing in Xcode](../xcode/setting-up-storekit-testing-in-xcode.md)
   Prepare your test environment to test in-app purchases with data you configure locally.
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-  Use locally configured product data to test and debug your In-App Purchases implementation.
-- [Testing In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
-  Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+  Use locally configured product data to test and debug your Apple In-App Purchases implementation.
+- [Testing Apple In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
+  Test your implementation of Apple In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 ### Errors
 - [Handling errors](handling-errors.md)
   Determine the underlying cause of errors that result from StoreKit requests.
@@ -143,8 +143,8 @@ You can sync and restore non-consumables and auto-renewable subscriptions across
 
 ## See Also
 
-- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
-  Use the latest API to support In-App Purchases in new or existing apps, or the original API to support In-App Purchases in earlier operating systems.
+- [Choosing a StoreKit API for Apple In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+  Use the latest API to support Apple In-App Purchases in new or existing apps, or the original API to support Apple In-App Purchases in earlier operating systems.
 
 
 ---

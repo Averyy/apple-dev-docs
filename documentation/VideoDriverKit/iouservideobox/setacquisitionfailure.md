@@ -6,7 +6,7 @@
 Sets the error for the box’s acquisition failure.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

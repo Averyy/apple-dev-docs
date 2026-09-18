@@ -46,7 +46,7 @@ Generated content may contain a single value, an array, or key-value pairs with 
 - [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
   Creates content with the specified kind and generation identifier.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
-  A failure that occurs when a string cannot be parsed into GeneratedContent.
+  A failure that occurs when a string cannot be parsed into generated content.
 ### Accessing the content
 - [var kind: GeneratedContent.Kind](generatedcontent/kind-swift.property.md)
   The representation of the generated content.

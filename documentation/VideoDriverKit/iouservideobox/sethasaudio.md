@@ -6,7 +6,7 @@
 Sets the value indicating the box’s audio support.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

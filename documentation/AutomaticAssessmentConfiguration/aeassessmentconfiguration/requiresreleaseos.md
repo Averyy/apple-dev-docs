@@ -17,11 +17,9 @@ var requiresReleaseOS: Bool { get set }
 
 #### Discussion
 
-When set to `true`, the assessment session will only start if the device is running a released build of the operating system, rather than a beta, seed, or other prerelease build. This requirement is disabled by default.
+When set to `true`, the assessment session will only start if the device is running a released build of the operating system, rather than a beta, seed, or other prerelease build. Defaults to `false`.
 
-> ❗ **Important**: This check is advisory, not a security guarantee. Use this property to steer proctored exams away from prerelease software whose behavior may not match a shipping release; it doesn’t provide a cryptographic attestation of the operating system build.
-
-For stronger runtime assurances, pair this property with [`App Attest`](https://developer.apple.comhttps://developer.apple.com/documentation/DeviceCheck) on macOS.
+> **Note**: [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) for the limits that apply to every enablement requirement.
 
 
 ---

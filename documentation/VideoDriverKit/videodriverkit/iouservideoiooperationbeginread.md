@@ -6,7 +6,7 @@
 This operation is called just prior to reading data from the device’s stream buffers.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

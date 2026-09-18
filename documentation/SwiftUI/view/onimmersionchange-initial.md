@@ -41,7 +41,8 @@ struct ImmersiveView: View {
 ## Parameters
 
 - `initial`: Whether the action should be run when this view initially appears.
-- `action`: A closure to run when the immersion changes.
+- `action`: A closure to run when the immersion changes. - **oldValue**: The value representing the old state of immersion.
+- **newValue**: The value representing the current state of immersion.
 
 ## See Also
 

@@ -16,7 +16,7 @@ class AVContentProposal
 
 ## Mentions
 
-- [Presenting Content Proposals in tvOS](presenting-content-proposals-in-tvos.md)
+- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
 
 #### Overview
 
@@ -32,10 +32,10 @@ currentPlayerItem.nextContentProposal = proposal
 
 ## Topics
 
-### Creating a Content Proposal
+### Creating a content proposal
 - [init(contentTimeForTransition: CMTime, title: String, previewImage: UIImage?)](avcontentproposal/init(contenttimefortransition:title:previewimage:).md)
   Creates a new content proposal with the specified transition time, title, and preview image.
-### Configuring the Content Proposal
+### Configuring the content proposal
 - [var contentTimeForTransition: CMTime](avcontentproposal/contenttimefortransition.md)
   The time within the timeline of the current player item when the content proposal presentation should begin.
 - [var title: String](avcontentproposal/title.md)
@@ -64,14 +64,14 @@ currentPlayerItem.nextContentProposal = proposal
 
 ## See Also
 
-- [var contentProposal: AVContentProposal?](avcontentproposalviewcontroller/contentproposal.md)
-  A prosal of content to play.
-- [var dateOfAutomaticAcceptance: Date?](avcontentproposalviewcontroller/dateofautomaticacceptance.md)
-  The date that the system automatically accepts a proposal if the user doesn’t intervene.
-- [var playerLayoutGuide: UILayoutGuide](avcontentproposalviewcontroller/playerlayoutguide.md)
-  A layout guide that tracks the size and location of the player view.
-- [var preferredPlayerViewFrame: CGRect](avcontentproposalviewcontroller/preferredplayerviewframe.md)
-  The preferred presentation frame of the player view while the content proposal is active.
+- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
+  Display a preview of an upcoming media item at the conclusion of the currently playing media item.
+- [Working with overlays and parental controls in tvOS](working-with-overlays-and-parental-controls-in-tvos.md)
+  Add interactive overlays, parental controls, and livestream channel flipping using a player view controller.
+- [enum AVContentProposalAction](avcontentproposalaction.md)
+  Constant that indicate the action a user takes when dismissing a content proposal.
+- [class AVContentProposalViewController](avcontentproposalviewcontroller.md)
+  A view controller that proposes content to watch next.
 
 
 ---

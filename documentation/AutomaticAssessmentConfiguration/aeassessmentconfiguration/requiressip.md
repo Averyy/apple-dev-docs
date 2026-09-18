@@ -17,11 +17,11 @@ var requiresSIP: Bool { get set }
 
 #### Discussion
 
-When set to `true`, the assessment session will only start if System Integrity Protection is enabled on the device. This requirement is disabled by default.
+When set to `true`, the assessment session will only start if System Integrity Protection is enabled on the device. Defaults to `false`.
 
-> ❗ **Important**: This check is advisory, not a security guarantee. The framework can’t reliably detect whether SIP is enabled on systems where the user has administrator privileges, so setting `requiresSIP` to `true` may not block an assessment session when SIP is in fact disabled. Use this property to prompt users to re-enable SIP if they turned it off for unrelated reasons; it doesn’t indicate whether the system was modified while SIP was previously disabled.
+> ❗ **Important**: The framework can’t reliably detect whether SIP is enabled on systems where the user has administrator privileges, so setting `requiresSIP` to `true` may not block a session when SIP is in fact disabled. It also doesn’t indicate whether the system was modified while SIP was previously disabled.
 
-For stronger assurances that SIP is enabled, pair this property with [`App Attest`](https://developer.apple.comhttps://developer.apple.com/documentation/DeviceCheck) on macOS.
+> **Note**: [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) for the limits that apply to every enablement requirement.
 
 
 ---

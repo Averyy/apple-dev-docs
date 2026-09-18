@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for the font of a run of attributed text.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,17 @@
 ```swift
 @frozen
 enum FontAttribute
+```
+
+#### Overview
+
+Access this key through the [`font`](attributescopes/swiftuiattributes/font.md) property of an attribute container, or set it on an `AttributedString` and pass the result to a `Text` view:
+
+```None
+var headline = AttributedString("On Sale")
+headline.font = .headline
+
+Text(headline)
 ```
 
 ## Relationships

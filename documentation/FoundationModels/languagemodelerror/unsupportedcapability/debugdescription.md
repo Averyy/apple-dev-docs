@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+A debug description to help developers diagnose issues during development.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var debugDescription: String
 ## See Also
 
 - [var metadata: [String : any Sendable]](languagemodelerror/unsupportedcapability/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var capability: LanguageModelCapabilities.Capability](languagemodelerror/unsupportedcapability/capability.md)
+  The capability that the model doesn’t support.
 
 
 ---

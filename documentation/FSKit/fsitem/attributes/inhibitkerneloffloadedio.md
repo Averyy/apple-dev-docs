@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: property
 
-A Boolean value that indicates whether the file system overrides the per-volume settings for kernel offloaded I/O for a specific file.
+A Boolean value that indicates whether the file system overrides the per-volume settings for kernel offloaded I/O for a specific file. FSKit reads this value the first time the module reports attributes for a given file; It then sets the file’s kernel-offloaded-I/O routing accordingly. The routing stays in effect for the item’s lifetime; later changes are ignored.
 
 **Availability**:
 - macOS 15.4+
@@ -16,7 +16,7 @@ var inhibitKernelOffloadedIO: Bool { get set }
 
 #### Discussion
 
-This property has no meaning if the volume doesn’t conform to [`FSVolumeKernelOffloadedIOOperations`](fsvolumekerneloffloadediooperations.md).
+This property has no meaning if the volume doesn’t conform to [`FSVolumeKernelOffloadedIOOperations`](fsvolumekerneloffloadediooperations.md) or [`FSVolume.KernelOffloadedIOHandler`](fsvolume/kerneloffloadediohandler.md).
 
 ## See Also
 

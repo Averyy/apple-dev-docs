@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A mutable view into the conversational entries of a [`Transcript`](transcript.md).
+A mutable view into the conversational entries of a transcript.
 
 **Availability**:
 - iOS 27.0+
@@ -18,6 +18,25 @@ A mutable view into the conversational entries of a [`Transcript`](transcript.md
 ```swift
 struct HistoryView
 ```
+
+## Topics
+
+### Instance Methods
+- [func append(Transcript.Entry)](transcript/historyview/append(_:).md)
+  Adds an entry to the end of the history view.
+- [func append(contentsOf: some Sequence<Transcript.Entry>)](transcript/historyview/append(contentsof:).md)
+  Adds the entries of a sequence to the end of the history view.
+### Subscripts
+- [subscript(_:)](transcript/historyview/subscript(_:).md)
+  Accesses the subsequence of entries within the specified bounds.
+### Type Aliases
+- [Transcript.HistoryView.Element](transcript/historyview/element.md)
+  The type of entry the view contains.
+- [Transcript.HistoryView.SubSequence](transcript/historyview/subsequence.md)
+  The type that represents a contiguous subrange of the view’s entries.
+### Default Implementations
+- [ExpressibleByArrayLiteral Implementations](transcript/historyview/expressiblebyarrayliteral-implementations.md)
+- [MutableCollection Implementations](transcript/historyview/mutablecollection-implementations.md)
 
 ## Relationships
 

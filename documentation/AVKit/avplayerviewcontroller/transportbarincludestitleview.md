@@ -16,7 +16,7 @@ var transportBarIncludesTitleView: Bool { get set }
 
 ## Mentions
 
-- [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
+- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
 
 #### Discussion
 

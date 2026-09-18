@@ -6,7 +6,7 @@
 Returns a Boolean value indicating if device can be used for default system output.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

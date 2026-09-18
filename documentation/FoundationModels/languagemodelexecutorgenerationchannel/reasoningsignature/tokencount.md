@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The number of the tokens the signature carries.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,6 +22,7 @@ var tokenCount: Int
 ## See Also
 
 - [var signature: Data](languagemodelexecutorgenerationchannel/reasoningsignature/signature.md)
+  The opaque token that authenticates the reasoning entry.
 
 
 ---

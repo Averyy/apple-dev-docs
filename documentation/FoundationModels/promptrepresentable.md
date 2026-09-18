@@ -70,6 +70,7 @@ let response = try await LanguageModelSession().respond {
 ## See Also
 
 - [init(_:)](prompt/init(_:).md)
+  Creates a prompt from the content of a builder closure.
 - [struct PromptBuilder](promptbuilder.md)
   A type that represents a prompt builder.
 

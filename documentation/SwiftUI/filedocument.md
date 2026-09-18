@@ -29,9 +29,11 @@ To store a document as a value type — like a structure — create a type that 
 
 > **Note**: The `fileWrapper(configuration:)` method can either serialize the whole document into a single file, or use a document package — a directory `FileWrapper` — to store the document as a collection of files. With a package, you can improve performance by rewriting only the specific files that changed since the last save. For examples, see [`fileWrapper(configuration:)`](filedocument/filewrapper(configuration:).md).
 
+Because `FileDocument` is a value type, SwiftUI automatically registers an undo action whenever your document’s value changes. You don’t need to call `UndoManager/registerUndo(withTarget:handler:)` yourself.
+
 Ensure that types that conform to this protocol are `Sendable`. In particular, SwiftUI calls the protocol’s methods from different isolation domains. Don’t perform serialization and deserialization on `MainActor`.
 
-> ❗ **Important**: If you store your document as a reference type — like a class — use [`ReferenceFileDocument`](referencefiledocument.md) instead.
+> ❗ **Important**: If you store your document as a reference type — like a class — use [`ReferenceFileDocument`](referencefiledocument.md) instead. Because SwiftUI can’t detect changes to a reference type’s properties on its own, you’re responsible for registering undo actions yourself.
 
 ## Topics
 

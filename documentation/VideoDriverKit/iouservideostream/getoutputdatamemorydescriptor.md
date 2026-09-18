@@ -6,7 +6,7 @@
 Gets the memory descriptor used for the video data part of a buffer.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

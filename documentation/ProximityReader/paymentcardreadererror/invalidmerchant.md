@@ -33,7 +33,7 @@ There is an issue with the merchant details in the token provided by your paymen
 - [PaymentCardReaderError.accountLinkingFailed](paymentcardreadererror/accountlinkingfailed.md)
   An error that indicates the system couldn’t link or relink the merchant using the provided Apple Account.
 - [PaymentCardReaderError.accountLinkingRequiresiCloudSignIn](paymentcardreadererror/accountlinkingrequiresicloudsignin.md)
-  An error that indicates the merchant must be signed into iCloud to accept the Terms and Conditions.
+  An error that indicates the merchant must be signed into an Apple Account on the device to accept the Terms and Conditions.
 - [PaymentCardReaderError.accountNotLinked](paymentcardreadererror/accountnotlinked.md)
   An error that indicates the merchant must accept the Terms and Conditions with a valid Apple Account.
 - [PaymentCardReaderError.backgroundRequestNotAllowed](paymentcardreadererror/backgroundrequestnotallowed.md)

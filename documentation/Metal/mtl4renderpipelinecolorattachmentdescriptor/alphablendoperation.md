@@ -21,7 +21,7 @@ var alphaBlendOperation: MTLBlendOperation { get set }
 
 #### Discussion
 
-This property defaults to `MTLBlendOperationAdd`.
+This property defaults to [`MTLBlendOperation.add`](mtlblendoperation/add.md).
 
 
 ---

@@ -18,7 +18,7 @@ enum ButtonState
 
 ### Creating a button state
 - [init?(rawValue: Int)](avroutepickerview/buttonstate/init(rawvalue:).md)
-### Button States
+### Button states
 - [AVRoutePickerView.ButtonState.normal](avroutepickerview/buttonstate/normal.md)
   The normal, or default, button state.
 - [AVRoutePickerView.ButtonState.normalHighlighted](avroutepickerview/buttonstate/normalhighlighted.md)

@@ -6,7 +6,7 @@
 Set for signed integer, clear for unsigned integer.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

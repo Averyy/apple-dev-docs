@@ -63,8 +63,8 @@ private var oceans = [
 ]
 
 var body: some View {
-    List(oceans) {
-        Text($0.name)
+    List(oceans) { ocean in
+        Text(ocean.name)
     }
 }
 ```
@@ -92,9 +92,9 @@ private var oceans = [
 @State private var multiSelection = Set<UUID>()
 
 var body: some View {
-    NavigationView {
-        List(oceans, selection: $multiSelection) {
-            Text($0.name)
+    NavigationStack {
+        List(oceans, selection: $multiSelection) { ocean in
+            Text(ocean.name)
         }
         .navigationTitle("Oceans")
         .toolbar { EditButton() }
@@ -122,19 +122,26 @@ struct Ocean: Identifiable, Hashable {
      let stats: [String: String]
  }
 
- class OceanStore: ObservableObject {
-     @Published var oceans = [Ocean]()
-     func loadStats() async {}
+ @Observable class OceanStore {
+     var oceans: [Ocean] = [
+         Ocean(name: "Atlantic", stats: [:]),
+         Ocean(name: "Indian", stats: [:]),
+         Ocean(name: "Pacific", stats: [:])
+     ]
+     func loadStats() async {
+         // Load statistics asynchronously.
+     }
  }
 
- @EnvironmentObject var store: OceanStore
+ @State private var store: OceanStore = OceanStore()
 
  var body: some View {
-     NavigationView {
+     NavigationStack {
          List(store.oceans) { ocean in
              HStack {
                  Text(ocean.name)
-                 StatsSummary(stats: ocean.stats) // A custom view for showing statistics.
+                 // A custom view that shows statistics.
+                 StatsSummary(stats: ocean.stats)
              }
          }
          .refreshable {
@@ -183,7 +190,7 @@ struct ContentView: View {
     @State private var singleSelection: UUID?
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(selection: $singleSelection) {
                 ForEach(oceanRegions) { region in
                     Section(header: Text("Major \(region.name) Ocean Seas")) {

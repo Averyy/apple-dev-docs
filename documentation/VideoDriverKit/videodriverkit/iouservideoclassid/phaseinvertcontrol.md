@@ -6,7 +6,7 @@
 A Boolean control where true means that the phase of the signal on the given element is being inverted by 180 degrees.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

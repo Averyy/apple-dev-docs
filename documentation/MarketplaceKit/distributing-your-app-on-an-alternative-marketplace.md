@@ -33,7 +33,7 @@ If your app installs from more than one source, you can implement conditional co
 In apps that people install from alternative marketplaces, use APIs that vary from apps on the App Store. Specifically, use:
 
 - [`AdAttributionKit`](https://developer.apple.com/documentation/adattributionkit) for ads
-- A custom e-commerce solution; API that rely on Apple’s App Store, such as [`In-App Purchase`](https://developer.apple.com/documentation/storekit/in-app-purchase) and [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/), don’t support alternative app marketplaces.
+- A custom e-commerce solution; API that rely on Apple’s App Store, such as [`Apple In-App Purchase`](https://developer.apple.com/documentation/storekit/in-app-purchase) and [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/), don’t support alternative app marketplaces.
 - [`Background Assets`](https://developer.apple.com/documentation/backgroundassets) to download large files in the background
 - A social gaming network other than [`Game Center`](https://developer.apple.com/documentation/appstoreconnectapi/game-center) unless your app is also on the App Store
 

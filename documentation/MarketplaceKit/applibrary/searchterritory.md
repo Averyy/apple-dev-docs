@@ -23,7 +23,7 @@ This property is an optional two-letter country code in the ISO 3166-1 alpha-2 s
 ## See Also
 
 - [func setSearchTerritory(String?) async](applibrary/setsearchterritory(_:).md)
-  Defines a country code that iOS uses to filter the search results of apps that aren’t available in that country.
+  Defines a country code that the system uses to filter the search results of apps that aren’t available in that country.
 
 
 ---

@@ -81,6 +81,7 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
 - [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+  Dynamic instructions that produce content for each element of a collection.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
@@ -144,7 +145,7 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
   A type that contains the details for a generation request.
 ### Custom session properties
 - [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
-  A property wrapper that provides access to properties from within profiles,  dynamic instructions, and tools.
+  A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
 - [protocol SessionPropertyKey](sessionpropertykey.md)
   A protocol for defining a custom session property key.
 - [class SessionPropertyValues](sessionpropertyvalues.md)
@@ -160,6 +161,11 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 - [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
   Measure how prompts, responses, and tool calls affect token consumption and response times in Instruments.
+### Protocols
+- [protocol DataAttachmentRepresentable](dataattachmentrepresentable.md)
+  A type that you use as the content of a data attachment.
+- [protocol DataEntryRepresentable](dataentryrepresentable.md)
+  A type that a model can produce and represent as a top-level transcript entry.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a response that contains the metadata and segments you provide.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -17,9 +19,16 @@
 init(id: String = UUID().uuidString, metadata: [String : any ConvertibleToGeneratedContent] = [:], segments: [Transcript.Segment])
 ```
 
+## Parameters
+
+- `id`: A unique identifier for the response.
+- `metadata`: Additional information to associate with the response, keyed by name.
+- `segments`: The segments of the response, in order.
+
 ## See Also
 
 - [init(id: String, assetIDs: [String], segments: [Transcript.Segment])](transcript/response/init(id:assetids:segments:).md)
+  Creates a response that contains the segments you provide.
 
 
 ---

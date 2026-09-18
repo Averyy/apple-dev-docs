@@ -23,6 +23,7 @@ struct Input
 
 ### Creating an input instance
 - [init(totalTokenCount: Int, cachedTokenCount: Int)](languagemodelexecutorgenerationchannel/usage/input-swift.struct/init(totaltokencount:cachedtokencount:).md)
+  Creates input token counts for the transcript submitted to the model.
 ### Handling the input tokens
 - [var totalTokenCount: Int](languagemodelexecutorgenerationchannel/usage/input-swift.struct/totaltokencount.md)
   The total number of input tokens from the transcript.

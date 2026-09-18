@@ -16,24 +16,24 @@ class AVCaptureView
 
 ## Topics
 
-### Configuring the Capture Session
+### Configuring the capture session
 - [var session: AVCaptureSession?](avcaptureview/session.md)
   The view’s associated capture session.
 - [func setSession(AVCaptureSession?, showVideoPreview: Bool, showAudioPreview: Bool)](avcaptureview/setsession(_:showvideopreview:showaudiopreview:).md)
   Sets the view’s capture session.
-### Customizing the View
+### Customizing the view
 - [var controlsStyle: AVCaptureViewControlsStyle](avcaptureview/controlsstyle.md)
   The style of the capture controls presented by the view.
 - [enum AVCaptureViewControlsStyle](avcaptureviewcontrolsstyle.md)
   Constants that describe the capture view’s supported controls styles.
 - [var videoGravity: AVLayerVideoGravity](avcaptureview/videogravity.md)
   A string value that defines how the capture view displays video within its bounds.
-### Configuring the Delegate
+### Configuring the delegate
 - [var delegate: (any AVCaptureViewDelegate)?](avcaptureview/delegate.md)
   The capture view’s delegate object.
 - [protocol AVCaptureViewDelegate](avcaptureviewdelegate.md)
   The protocol that defines the methods you can implement to respond to capture view events.
-### Recording Media
+### Recording media
 - [var fileOutput: AVCaptureFileOutput?](avcaptureview/fileoutput.md)
   The capture file output used to record media data.
 
@@ -61,10 +61,8 @@ class AVCaptureView
 
 ## See Also
 
-- [Implementing Trimming in a macOS Player](implementing-trimming-in-a-macos-player.md)
-  Provide a QuickTime media-trimming experience in your macOS app.
-- [class AVPlayerView](avplayerview.md)
-  A view that displays content from a player and presents a native user interface to control playback.
+- [protocol AVCaptureViewDelegate](avcaptureviewdelegate.md)
+  The protocol that defines the methods you can implement to respond to capture view events.
 
 
 ---

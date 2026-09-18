@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-The in-app purchase product type.
+The Apple In-App Purchase product type.
 
 **Availability**:
 - iOS 15.0+
@@ -25,7 +25,7 @@ let type: Product.ProductType
 - [let id: String](product/id.md)
   The unique product identifier.
 - [Product.ProductType](product/producttype.md)
-  The types of in-app purchases.
+  The types of Apple In-App Purchases.
 
 
 ---

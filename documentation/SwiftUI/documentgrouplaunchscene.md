@@ -26,6 +26,8 @@ If you don’t provide the title of the scene, it displays the application name.
 
 A `DocumentGroupLaunchScene` configures the document browser on the bottom sheet to open content types from all the document groups in the app definition. A `DocumentGroupLaunchScene` also configures the document groups to create documents of the first content type that your application can create and write.
 
+If you provide one or two actions, each one appears as its own button. If you provide more than two actions, only the first action appears as a button; SwiftUI groups the remaining actions into a secondary “More” menu. Because people can’t create a new document from within that menu, place [`NewDocumentButton`](newdocumentbutton.md) as the first action, or as the second action only when you provide exactly two actions in total. Use [`Button`](button.md) for any actions beyond the first two.
+
 For more information, see `FileDocument.writableContentTypes` and `ReferenceFileDocument.writableContentTypes`.
 
 ## Topics

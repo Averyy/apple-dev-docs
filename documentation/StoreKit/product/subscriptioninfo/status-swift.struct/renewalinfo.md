@@ -24,7 +24,7 @@ let renewalInfo: VerificationResult<Product.SubscriptionInfo.RenewalInfo>
 
 - [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
 - [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 
 ## See Also
 

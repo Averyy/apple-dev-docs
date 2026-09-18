@@ -135,7 +135,7 @@ There are also several options for distributing business, customized, or in-hous
 
 ##### Review Crash Diagnostic and Metrics Reports
 
-If you distribute your app using TestFlight or through the App Store, you can view crash and diagnostic reports that Apple generates for you in the organizer. You can also use the organizer to review feedback from beta testers. If you distribute your app through the App Store, you can view metrics reports in the organizer too. For more information, see [`Acquiring crash reports and diagnostic logs`](acquiring-crash-reports-and-diagnostic-logs.md) and [`Viewing and responding to feedback from beta testers`](viewing-and-responding-to-feedback.md). For more information about performance improvements, see [`Improving your app’s performance`](improving-your-app-s-performance.md) and [`Analyzing the performance of your shipping app`](analyzing-the-performance-of-your-shipping-app.md).
+If you distribute your app using TestFlight or through the App Store, you can view crash and diagnostic reports that Apple generates for you in the organizer. You can also use the organizer to review feedback from beta testers. If you distribute your app through the App Store, you can view metrics reports in the organizer too. For more information, see doc:acquiring-crash-reports-and-diagnostic-logs and [`Viewing and responding to feedback from beta testers`](viewing-and-responding-to-feedback.md). For more information about performance improvements, see [`Improving your app’s performance`](improving-your-app-s-performance.md) and [`Analyzing the performance of your shipping app`](analyzing-the-performance-of-your-shipping-app.md).
 
 ## See Also
 

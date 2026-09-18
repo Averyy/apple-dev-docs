@@ -116,6 +116,7 @@ var body: some View {
 ### Setting date picker components
 - [DatePicker.Components](datepicker/components.md)
 - [struct DatePickerComponents](datepickercomponents.md)
+  The date and time components that a date picker shows.
 
 ## Relationships
 

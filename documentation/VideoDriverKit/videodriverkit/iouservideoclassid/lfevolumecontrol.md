@@ -6,7 +6,7 @@
 A subclass of the `IOUserVideoLevelControl` class for an LFE channel that results from bass management.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

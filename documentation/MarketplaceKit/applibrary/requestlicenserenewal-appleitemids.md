@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: method
 
-Instructs iOS to request an updated app license from your marketplace server for the given app identifier.
+Instructs the system to request an updated app license from your marketplace server for the given app identifier.
 
 **Availability**:
 - iOS 17.4+

@@ -50,8 +50,6 @@ The state changes as the user turns on or off the Switch Control feature.
   Whether the system preference for Reduce Motion is enabled.
 - [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
-  Whether the system preference for Show Button Shapes is enabled.
 - [var accessibilityVoiceOverEnabled: Bool](environmentvalues/accessibilityvoiceoverenabled.md)
   A Boolean value that indicates whether the VoiceOver screen reader is in use.
 - [var legibilityWeight: LegibilityWeight?](environmentvalues/legibilityweight.md)

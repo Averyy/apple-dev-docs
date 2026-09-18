@@ -249,6 +249,11 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions. (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p. (179040806)
 
+## See Also
+
+- [tvOS 27.2 Beta Release Notes](tvos-27_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+
 
 ---
 

@@ -16,7 +16,7 @@ var playerLayoutGuide: UILayoutGuide { get }
 
 ## Mentions
 
-- [Presenting Content Proposals in tvOS](presenting-content-proposals-in-tvos.md)
+- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
 
 #### Discussion
 

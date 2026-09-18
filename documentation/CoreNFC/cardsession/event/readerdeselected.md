@@ -8,6 +8,7 @@ The session lost the RF link or the currently-selected Application Identifier (A
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

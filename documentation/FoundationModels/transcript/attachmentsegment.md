@@ -23,9 +23,12 @@ struct AttachmentSegment
 
 ### Creating an attachment segment
 - [init(id: String, content: Transcript.Attachment, label: String?)](transcript/attachmentsegment/init(id:content:label:).md)
+  Creates an attachment segment that wraps the content you provide.
 ### Inspecting an attachment segment
 - [var content: Transcript.Attachment](transcript/attachmentsegment/content.md)
+  The attached file or image.
 - [var label: String?](transcript/attachmentsegment/label.md)
+  An optional label that identifies the attachment.
 
 ## Relationships
 

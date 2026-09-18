@@ -13,7 +13,8 @@ Sends an application protocol data unit (APDU) to the tag and receives a respons
 ## Declaration
 
 ```swift
-func sendCommand(apdu: NFCISO7816APDU, resultHandler: @escaping (Result<NFCISO7816ResponseAPDU, any Error>) -> Void)
+@preconcurrency
+func sendCommand(apdu: NFCISO7816APDU, resultHandler: @escaping @Sendable (Result<NFCISO7816ResponseAPDU, any Error>) -> Void)
 ```
 
 #### Discussion

@@ -31,7 +31,9 @@ struct ResponseFormat
   A name associated with the response format.
 ### Accessing the kind of format
 - [let kind: Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.property.md)
+  The way the response format constrains the model’s output.
 - [Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.enum.md)
+  A representation of the different ways a response format can constrain model output.
 
 ## Relationships
 

@@ -33,7 +33,7 @@ The merchant must accept the Terms and Conditions before configuring the device.
 - [PaymentCardReaderError.accountLinkingFailed](paymentcardreadererror/accountlinkingfailed.md)
   An error that indicates the system couldn’t link or relink the merchant using the provided Apple Account.
 - [PaymentCardReaderError.accountLinkingRequiresiCloudSignIn](paymentcardreadererror/accountlinkingrequiresicloudsignin.md)
-  An error that indicates the merchant must be signed into iCloud to accept the Terms and Conditions.
+  An error that indicates the merchant must be signed into an Apple Account on the device to accept the Terms and Conditions.
 - [PaymentCardReaderError.backgroundRequestNotAllowed](paymentcardreadererror/backgroundrequestnotallowed.md)
   An error that results from requests to the reader while the host app is in the background state.
 - [PaymentCardReaderError.deviceBanned(_:)](paymentcardreadererror/devicebanned(_:).md)

@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: init
 
-Initializes a panel item wrapping an array of @c CPGridButton objects.
+Initialize the item using one or more grid buttons.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +15,14 @@ Initializes a panel item wrapping an array of @c CPGridButton objects.
 ```swift
 init(gridButtons: [CPGridButton])
 ```
+
+#### Return Value
+
+A panel item configured with the specified grid buttons.
+
+## Parameters
+
+- `gridButtons`: The grid buttons to display in the item. Specify the buttons in the order you want them to appear. Include no more than four grid buttons in the array.
 
 
 ---

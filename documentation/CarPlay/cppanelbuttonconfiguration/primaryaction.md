@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-The primary action button.
+The primary action button for the panel.
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +16,10 @@ The primary action button.
 @NSCopying
 var primaryAction: CPTextButton { get }
 ```
+
+#### Discussion
+
+Specify the button at initialization time and use this property to retrieve it later.
 
 
 ---

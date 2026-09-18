@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: typealias
 
+A representation of partially generated content for the wrapped type.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

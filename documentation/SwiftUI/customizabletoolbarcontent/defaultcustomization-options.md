@@ -59,11 +59,6 @@ ContentView()
 - `defaultVisibility`: The default visibility of toolbar content with the default customization behavior.
 - `options`: The customization options to configure the behavior of toolbar content with the default customization behavior.
 
-## See Also
-
-- [func defaultCustomization() -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization.md)
-  Configures customizable toolbar content with the default visibility and options.
-
 
 ---
 

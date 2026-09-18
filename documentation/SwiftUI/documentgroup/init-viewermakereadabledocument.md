@@ -22,6 +22,7 @@ init(@ContentBuilder viewer: @escaping (Document) -> Content, makeReadableDocume
 ## Parameters
 
 - `viewer`: The viewing UI for the provided document.
+- `makeReadableDocument`: A closure that creates the document instance. Throw `CancellationError` to indicate that document opening was cancelled.
 
 ## See Also
 

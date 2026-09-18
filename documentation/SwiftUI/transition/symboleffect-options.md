@@ -28,6 +28,7 @@ A new transition.
 ## Parameters
 
 - `effect`: The symbol effect value.
+- `options`: A set of options that configure how effects apply to symbol-based images.
 
 ## See Also
 

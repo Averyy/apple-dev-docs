@@ -23,7 +23,7 @@ let icon: ProductViewStyleConfiguration.Icon
 ## See Also
 
 - [ProductViewStyleConfiguration.Icon](productviewstyleconfiguration/icon-swift.struct.md)
-  A type-erased icon of an in-app purchase product.
+  A type-erased icon of an Apple In-App Purchase product.
 
 
 ---

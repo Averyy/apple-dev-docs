@@ -27,6 +27,9 @@ struct Role
 ### Determining scene roles
 - [static let windowApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowapplication.md)
   A scene that displays interactive windows on the device’s built-in display or an externally connected display.
+- [static let windowAssistiveAccessApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowassistiveaccessapplication.md)
+- [static let windowCameraCaptureAccessory: UISceneSession.Role](uiscenesession/role-swift.struct/windowcameracaptureaccessory.md)
+  A session role for scenes that present content during camera capture.
 - [static let windowExternalDisplay: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplay.md)
   A scene that displays noninteractive windows on an externally connected display.
 - [static let windowExternalDisplayNonInteractive: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md)

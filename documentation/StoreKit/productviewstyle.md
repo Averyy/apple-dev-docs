@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: protocol
 
-A type that specifies the appearance and interaction of In-App Purchase products within the view hierarchy.
+A type that specifies the appearance and interaction of Apple In-App Purchase products within the view hierarchy.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,7 @@ A type that specifies the appearance and interaction of In-App Purchase products
 
 #### Overview
 
-To configure the in-app purchase product style for a view hierarchy, use the [`productViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)) modifier.
+To configure the Apple In-App Purchase product style for a view hierarchy, use the [`productViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)) modifier.
 
 To create a custom style, declare a type that conforms to the `ProductViewStyle` protocol. Implement the [`makeBody(configuration:)`](productviewstyle/makebody(configuration:).md) method to return a view that composes the elements of the configuration that the system provides to your method. The following code example shows how to create a custom product view style:
 
@@ -54,7 +54,7 @@ ProductView(id: "com.example.product")
 - [static var compact: CompactProductViewStyle](productviewstyle/compact.md)
   An product view style suitable for layouts where less space is available, or for displaying more items in a small amount of space.
 - [static var large: LargeProductViewStyle](productviewstyle/large.md)
-  A product view style suitable for layouts where the in-app purchase content is prominent.
+  A product view style suitable for layouts where the Apple In-App Purchase content is prominent.
 - [static var regular: RegularProductViewStyle](productviewstyle/regular.md)
   A product view style that uses a standard, platform-appropriate layout.
 ### Creating custom product views
@@ -71,7 +71,7 @@ ProductView(id: "com.example.product")
 - [struct RegularProductViewStyle](regularproductviewstyle.md)
   A style for a product view that uses a standard, platform-appropriate layout.
 - [struct LargeProductViewStyle](largeproductviewstyle.md)
-  A style for a product view that’s suitable for layouts where the in-app purchase content is prominent.
+  A style for a product view that’s suitable for layouts where the Apple In-App Purchase content is prominent.
 
 ## Relationships
 
@@ -90,7 +90,7 @@ ProductView(id: "com.example.product")
 ](../swiftui/view/producticonborder.md)
   Adds a standard border to an in-app purchase product’s icon .
 - [struct ProductViewStyleConfiguration](productviewstyleconfiguration.md)
-  The properties of an In-App Purchase product for use by custom product view styles.
+  The properties of an Apple In-App Purchase product for use by custom product view styles.
 
 
 ---

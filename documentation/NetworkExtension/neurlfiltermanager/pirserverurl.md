@@ -25,14 +25,14 @@ To use the PIR server for URL filtering, make sure the server contains a PIR use
 
 ## See Also
 
-- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
-  A URL that contains the domain name of Privacy Pass issuer.
 - [var pirAuthenticationToken: String?](neurlfiltermanager/pirauthenticationtoken.md)
   A PIR per-user authentication token string.
 - [func refreshPIRParameters() async throws](neurlfiltermanager/refreshpirparameters.md)
   Refetches PIR parameters from the server.
 - [func resetPIRCache() async throws](neurlfiltermanager/resetpircache.md)
   Resets the PIR on-device cache.
+- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
+  A URL that contains the domain name of Privacy Pass issuer.
 
 
 ---

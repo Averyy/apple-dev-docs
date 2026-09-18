@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A view modifier that recognizes manipulation hand gestures and reports their state through a binding.
+
 **Availability**:
 - visionOS 26.0+
 
@@ -12,6 +14,10 @@
 nonisolated
 struct ManipulationGestureModifier
 ```
+
+#### Overview
+
+[`manipulationGesture(updating:coordinateSpace:operations:inertia:isEnabled:onChanged:)`](view/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged:).md) returns a view modified with this type. You don’t create it directly.
 
 ## Relationships
 
@@ -35,10 +41,15 @@ struct ManipulationGestureModifier
 - [protocol EnvironmentalModifier](environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
 - [struct ManipulableModifier](manipulablemodifier.md)
+  A view modifier that lets hand gestures move, rotate, and scale a view.
 - [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+  A view modifier that makes a view respond to manipulation hand gestures.
 - [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+  A view modifier that applies a 3D affine transform to a view and lets hand gestures change it.
 - [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+  A view modifier that tracks the geometry a manipulation gesture acts on.
 - [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+  A view modifier that applies the manipulation state from a gesture on another view.
 - [enum Manipulable](manipulable.md)
   A namespace for various manipulable related types.
 

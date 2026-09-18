@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func sendMiFareISO7816Command(_ apdu: NFCISO7816APDU, resultHandler: @escaping (Result<NFCISO7816ResponseAPDU, any Error>) -> Void)
+@preconcurrency
+func sendMiFareISO7816Command(_ apdu: NFCISO7816APDU, resultHandler: @escaping @Sendable (Result<NFCISO7816ResponseAPDU, any Error>) -> Void)
 ```
 
 

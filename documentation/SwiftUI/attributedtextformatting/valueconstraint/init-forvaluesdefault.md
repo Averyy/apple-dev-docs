@@ -22,6 +22,7 @@ init(for attribute: AttributeKey.Type, values allowedValues: Set<AttributeKey.Va
 
 ## Parameters
 
+- `attribute`: An attribute to constrain to a set of allowed values.
 - `allowedValues`: A set of values that are permitted.
 - `defaultValue`: A single permitted value that is used to replace any values that are not in the set of `allowedValues`.
 

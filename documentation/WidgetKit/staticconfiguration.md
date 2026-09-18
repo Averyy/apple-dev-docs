@@ -116,6 +116,8 @@ Modifiers let you specify the families your widget supports, and the details sho
   The configuration and content of a widget to display on the Home screen or in Notification Center.
 - [enum WidgetFamily](widgetfamily.md)
   Values that define the widget’s size and shape.
+- [var widgetFamily: WidgetFamily](../swiftui/environmentvalues/widgetfamily.md)
+  The template of the widget — small, medium, or large.
 
 
 ---

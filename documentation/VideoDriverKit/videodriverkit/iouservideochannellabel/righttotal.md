@@ -6,7 +6,7 @@
 matrix encoded 4 channels
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

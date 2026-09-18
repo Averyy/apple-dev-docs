@@ -14,7 +14,7 @@ After your app successfully builds, Device Hub opens to show the simulated devic
 
 To take screenshots and record videos, see [`Capturing screenshots and videos from devices`](capturing-screenshots-and-videos-from-devices.md).
 
-> 💡 **Tip**: If you build and run your app on a physical device, you can interact with Xcode running side-by-side. For more information, see [`Use Mac Virtual Display on Apple Vision Pro`](https://developer.apple.comhttps://support.apple.com/guide/apple-vision-pro/use-mac-virtual-display-tan357ede966/26/visionos/26).
+> 💡 **Tip**: If you build and run your app on a physical visionOS device, you can’t interact with your app in Device Hub. Instead, use [`Mac Virtual Display on Apple Vision Pro`](https://developer.apple.comhttps://support.apple.com/guide/apple-vision-pro/use-mac-virtual-display-tan357ede966/26/visionos/26) to interact with your app with Xcode running side-by-side.
 
 #### Interact with Your Visionos App in the Canvas
 

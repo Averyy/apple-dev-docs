@@ -21,7 +21,7 @@ class var pictureInPictureButtonStopImage: NSImage { get }
 
 ## Mentions
 
-- [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
+- [Adopting Picture in Picture in a custom player](adopting-picture-in-picture-in-a-custom-player.md)
 
 ## See Also
 

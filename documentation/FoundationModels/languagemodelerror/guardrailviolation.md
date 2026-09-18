@@ -23,9 +23,12 @@ struct GuardrailViolation
 
 ### Creating an error instance
 - [init(debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/guardrailviolation/init(debugdescription:metadata:).md)
+  Creates information describing a guardrail violation.
 ### Inspecting guardrail violation errors
 - [var metadata: [String : any Sendable]](languagemodelerror/guardrailviolation/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var debugDescription: String](languagemodelerror/guardrailviolation/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 ## Relationships
 

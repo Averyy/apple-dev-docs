@@ -70,6 +70,11 @@ ContentView()
 
 - `behavior`: The customization behavior of the customizable toolbar content.
 
+## See Also
+
+- [func axisBehavior(ToolbarItemAxisBehavior) -> some CustomizableToolbarContent](customizabletoolbarcontent/axisbehavior(_:).md)
+  The bar axis behavior of the toolbar item.
+
 
 ---
 

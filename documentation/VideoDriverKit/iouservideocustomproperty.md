@@ -6,7 +6,7 @@
 A custom property object that can be added to or associated with video objects.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

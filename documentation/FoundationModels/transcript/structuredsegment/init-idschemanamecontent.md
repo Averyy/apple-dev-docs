@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a structured segment that contains the generated content you provide.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,12 @@
 ```swift
 init(id: String = UUID().uuidString, schemaName: String, content: GeneratedContent)
 ```
+
+## Parameters
+
+- `id`: A unique identifier for the segment.
+- `schemaName`: A name that describes which type the content represents.
+- `content`: The structured content of the segment.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-The system is ready for making requests.
+The system is ready to make requests.
 
 **Availability**:
 - iOS 26.0+
@@ -21,9 +21,9 @@ case available
 ## See Also
 
 - [case unavailable(SystemLanguageModel.Availability.UnavailableReason)](systemlanguagemodel/availability-swift.enum/unavailable(_:).md)
-  Indicates that the system is not ready for requests.
+  The system isn’t ready for requests.
 - [SystemLanguageModel.Availability.UnavailableReason](systemlanguagemodel/availability-swift.enum/unavailablereason.md)
-  The unavailable reason.
+  The reason the system language model is unavailable.
 
 
 ---

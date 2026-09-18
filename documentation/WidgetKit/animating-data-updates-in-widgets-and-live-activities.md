@@ -92,6 +92,9 @@ If a content update changes many views in your widget or Live Activity, consider
   Include buttons or toggles in a widget or Live Activity to offer app functionality without launching the app.
 - [Linking to specific app scenes from your widget or Live Activity](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md)
   Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
+- [func widgetURL(URL?) -> some View
+](../swiftui/view/widgeturl(_:).md)
+  Sets the URL to open in the containing app when the user clicks the widget.
 
 
 ---

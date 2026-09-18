@@ -44,8 +44,8 @@ Browse notable changes in [`App Clips`](https://developer.apple.com/documentatio
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Background Tasks updates](backgroundtasks.md)
-  Learn about important changes in Background Tasks.
+- [AVKit updates](avkit.md)
+  Learn about important changes to AVKit.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that informs the user why an app is requesting permission to use data for tracking the user or the device.
+A message that explains the purpose for accessing data that an app can use to track a person or device.
 
 **Availability**:
 - iOS 14.0+
@@ -17,19 +17,18 @@ A message that informs the user why an app is requesting permission to use data 
 
 #### Discussion
 
-If your app calls the App Tracking Transparency API, you must provide custom text, known as a *usage-description string*, which displays as a system-permission alert request. The usage-description string tells the user why the app is requesting permission to use data for tracking the user or the device. The user has the option to grant or deny the authorization request. If you don’t include a usage-description string, your app may crash when a user first launches it.
+If your application uses the [`App Tracking Transparency`](https://developer.apple.com/documentation/apptrackingtransparency) framework, you need to provide a *usage-description string* to explain the purpose for accessing app-related data that the app can use to track a person or device. The system displays the string in a modal UI from which the person can grant or deny permission to access the tracking data.
 
-Make sure your app requests permission to track sometime before tracking occurs. This could be at first launch or when using certain features in your app. For example, when signing on with a third-party SSO. For more information on asking permission to track, see [`User privacy and data use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
+This key is required. Your app crashes if it attempts to use the [`App Tracking Transparency`](https://developer.apple.com/documentation/apptrackingtransparency) framework without including the key in your target’s properties in Xcode.
 
-Set the [`NSUserTrackingUsageDescription`](information-property-list/nsusertrackingusagedescription.md) key in the [`Information Property List`](information-property-list.md) (`Info.plist`):
+The system displays this key’s string in a modal UI when your app requests authorization to access app-related data that the app can use to track the person or the device by calling either method:
 
-1. Select your project’s `Info.plist` file in Xcode Project navigator.
-2. Modify the file using the Xcode Property List Editor: Privacy - Tracking Usage Description.
+- [`requestTrackingAuthorization(completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:))
+- [`requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:))
 
-- Use sentence-style capitalization and appropriate ending punctuation. Keep the text short and specific. You don’t need to include your app name because the system already identifies your app.
-- If the title is a sentence fragment, don’t add ending punctuation.
+> ❗ **Important**: Alternatively, in the European Union, your app can provide a tracking-usage description that supports rich text elements by using markdown format (see [`NSUserTrackingMarkdownUsageDescription`](information-property-list/nsusertrackingmarkdownusagedescription.md)).
 
-See [`Apple’s Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/) for example usage descriptions.
+Keep the text of your description short and specific. The system displays your app name in the prompt, so you don’t need to include it in the string. For example usage descriptions, see [`Apple’s Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/).
 
 ## See Also
 
@@ -39,6 +38,8 @@ See [`Apple’s Human Interface Guidelines`](https://developer.apple.comhttps://
   A message that tells people why the app needs to access the contents of other apps’ bundles.
 - [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
   A message that tells people why the app needs to access files in other apps’ sandbox containers.
+- [NSUserTrackingMarkdownUsageDescription](information-property-list/nsusertrackingmarkdownusagedescription.md)
+  A message that explains the purpose for accessing data that an application can use to track a person or device.
 - [NSAppleEventsUsageDescription](information-property-list/nsappleeventsusagedescription.md)
   A message that tells people why the app is requesting the ability to send Apple events.
 - [NSSystemAdministrationUsageDescription](information-property-list/nssystemadministrationusagedescription.md)

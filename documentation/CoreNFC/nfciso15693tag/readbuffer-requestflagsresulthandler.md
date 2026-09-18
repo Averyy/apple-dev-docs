@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func readBuffer(requestFlags flags: NFCISO15693RequestFlag, resultHandler: @escaping (Result<(NFCISO15693ResponseFlag, Data), any Error>) -> Void)
+@preconcurrency
+func readBuffer(requestFlags flags: NFCISO15693RequestFlag, resultHandler: @escaping @Sendable (Result<(NFCISO15693ResponseFlag, Data), any Error>) -> Void)
 ```
 
 

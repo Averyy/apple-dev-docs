@@ -73,6 +73,7 @@ Depending on the specified bars, the requested visibility may not be able to be 
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
 - [struct ContentToolbarPlacement](contenttoolbarplacement.md)
+  A region of the interface that hosts its own toolbar content.
 
 
 ---

@@ -1,4 +1,4 @@
 Completed scraping Swift!
-Total pages scraped: 18142
-Pages skipped (unchanged): 46
+Total pages scraped: 16
+Pages skipped (unchanged): 18174
 Pages failed: 0

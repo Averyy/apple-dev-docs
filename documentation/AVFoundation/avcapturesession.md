@@ -214,6 +214,8 @@ You use the [`sessionPreset`](avcapturesession/sessionpreset.md) property to cus
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 - [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
+- [Registering a camera capture accessory on iPhone Duo](registering-a-camera-capture-accessory-on-iphone-duo.md)
+  Provide content to the person in front of the camera by pairing it with your capture interface.
 - [class AVCaptureMultiCamSession](avcapturemulticamsession.md)
   A capture session that supports simultaneous capture from multiple inputs of the same media type.
 - [class AVCaptureInput](avcaptureinput.md)

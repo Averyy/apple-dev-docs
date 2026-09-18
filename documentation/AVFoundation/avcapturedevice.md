@@ -270,6 +270,8 @@ A capture device provides several configuration options. Before attempting to co
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
 - [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
   Capture the optimal shot by providing automatic framing recommendations.
+- [Supporting device rotation in your camera app](supporting-device-rotation-in-your-camera-app.md)
+  Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
 - [class AVCaptureDeviceInput](avcapturedeviceinput.md)
   An object that provides media input from a capture device to a capture session.
 - [class AVContinuityDevice](avcontinuitydevice.md)

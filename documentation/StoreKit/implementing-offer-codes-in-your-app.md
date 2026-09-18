@@ -6,11 +6,11 @@ Enable customers to redeem offer codes through the App Store or within an app th
 
 #### Overview
 
-> ❗ **Important**: This article refers to some deprecated APIs from the [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md) and receipts, also deprecated. To implement offer codes using the  [`In-App Purchase`](in-app-purchase.md) APIs with the [`Transaction`](transaction.md) class, see [`Supporting offer codes in your app`](supporting-offer-codes-in-your-app.md).
+> ❗ **Important**: This article refers to some deprecated APIs from the [`Original API for Apple In-App Purchase`](original-api-for-in-app-purchase.md) and receipts, also deprecated. To implement offer codes using the  [`Apple In-App Purchase`](in-app-purchase.md) APIs with the [`Transaction`](transaction.md) class, see [`Supporting offer codes in your app`](supporting-offer-codes-in-your-app.md).
 
-To help you acquire, retain, and win back customers, you can use offer codes. Offer codes are available for all in-app purchase types: consumables, non-consumables, non-renewing subscriptions, and auto-renewable subscriptions.
+To help you acquire, retain, and win back customers, you can use offer codes. Offer codes are available for all Apple In-App Purchase types: consumables, non-consumables, non-renewing subscriptions, and auto-renewable subscriptions.
 
-Offer codes are alphanumeric codes that provide In-App Purchases at a discount or for free for a specific duration. Configure the offers and create offer codes in App Store Connect, and distribute them to your customers. Customers can redeem offer codes in the App Store, using offer code redemption URLs, or in your app if you’ve implemented one of the following APIs:
+Offer codes are alphanumeric codes that provide Apple In-App Purchases at a discount or for free for a specific duration. Configure the offers and create offer codes in App Store Connect, and distribute them to your customers. Customers can redeem offer codes in the App Store, using offer code redemption URLs, or in your app if you’ve implemented one of the following APIs:
 
 - [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)) or [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md), which are available in iOS 16 and later and iPadOS 16 and later
 - [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md), which is available in iOS 14 and later and iPadOS 14 and later.
@@ -35,7 +35,7 @@ To display the system sheet for customers to redeem offer codes within your app,
 
 The redemption sheet takes care of the redemption flow, including alerting customers about invalid entries, as appropriate. Invalid entries may include, for example, expired offer codes, invalid codes, or codes that would result in a subscription downgrade.
 
-Including the redemption sheet in your app is recommended, but optional. For more guidance on supporting offer code redemption within your app, see Human Interface Guidelines > [`In-app purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase).
+Including the redemption sheet in your app is recommended, but optional. For more guidance on supporting offer code redemption within your app, see Human Interface Guidelines > [`Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase).
 
 ##### Support Offer Codes Redeemed Outside Your App
 

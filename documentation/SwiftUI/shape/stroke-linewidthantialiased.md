@@ -37,6 +37,7 @@ Circle().stroke(Color.purple, lineWidth: 5)
 
 - `content`: The color or gradient with which to stroke this shape.
 - `lineWidth`: The width of the stroke that outlines this shape.
+- `antialiased`: A Boolean value that specifies whether to allow antialiasing. Pass `true` to allow antialising, otherwise `false`.
 
 ## See Also
 

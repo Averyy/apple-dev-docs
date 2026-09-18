@@ -6,7 +6,7 @@
 Creates the shared input and output queues, without regard to whether the stream is open or not.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

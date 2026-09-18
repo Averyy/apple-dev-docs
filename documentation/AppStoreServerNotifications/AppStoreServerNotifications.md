@@ -68,7 +68,7 @@ The App Store server sends the `TEST` notification in the version 2 notification
 
 ## See Also
 
-- [In-App Purchase](../storekit/in-app-purchase.md)
+- [Apple In-App Purchase](../storekit/in-app-purchase.md)
   Offer content and services in your app across Apple platforms using a Swift-based interface.
 - [App Store Server API](../appstoreserverapi/appstoreserverapi.md)
   Manage your customers’ App Store transactions from your server.

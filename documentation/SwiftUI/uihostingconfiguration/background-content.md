@@ -31,6 +31,10 @@ UIHostingConfiguration {
 }
 ```
 
+## Parameters
+
+- `content`: The contents of the SwiftUI hierarchy to be shown inside the background of the cell.
+
 ## See Also
 
 - [func background<S>(S) -> UIHostingConfiguration<Content, _UIHostingConfigurationBackgroundView<S>>](uihostingconfiguration/background(_:).md)

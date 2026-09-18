@@ -24,6 +24,11 @@ static func symbolEffect<T>(_ effect: T, options: SymbolEffectOptions = .default
 
 A new content transition.
 
+## Parameters
+
+- `effect`: The symbol effect value.
+- `options`: A set of options that configure how effects apply to symbol-based images.
+
 ## See Also
 
 - [static let identity: ContentTransition](contenttransition/identity.md)

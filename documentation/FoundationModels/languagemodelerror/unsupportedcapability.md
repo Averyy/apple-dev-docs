@@ -23,10 +23,14 @@ struct UnsupportedCapability
 
 ### Creating an error instance
 - [init(capability: LanguageModelCapabilities.Capability, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedcapability/init(capability:debugdescription:metadata:).md)
+  Creates information describing a capability the model doesn’t support.
 ### Inspecting unsupported capability errors
 - [var metadata: [String : any Sendable]](languagemodelerror/unsupportedcapability/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var capability: LanguageModelCapabilities.Capability](languagemodelerror/unsupportedcapability/capability.md)
+  The capability that the model doesn’t support.
 - [var debugDescription: String](languagemodelerror/unsupportedcapability/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 ## Relationships
 

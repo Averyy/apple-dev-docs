@@ -32,6 +32,8 @@ Process muting works, but only for processes that are already in the descendant 
 
 > **Note**: Events will be delivered when a descendant submits the event or instigates it
 
+> **Note**: The caller and its descendants can’t execute setuid/setgid binaries unless the caller has an effective uid of 0. Blocked execs are killed before they run and generate no exec event; subscribers observe the process dying via ES_EVENT_TYPE_NOTIFY_EXIT.
+
 ## Parameters
 
 - `client`: Out param. On success, set to the newly created es_client_t.

@@ -25,7 +25,7 @@ var maximumResponseTokens: Int?
 
 #### Discussion
 
-If the model produce `maximumResponseTokens` before it naturally completes its response, the framework terminates the response early, without throwing an error. Use this property to protect against unexpectedly verbose responses and runaway generations.
+If the model produces `maximumResponseTokens` before it naturally completes its response, the framework terminates the response early, without throwing an error. Use this property to protect against unexpectedly verbose responses and runaway generations.
 
 If no value is specified, then the model is allowed to produce the longest answer its context size supports. If the response exceeds that limit without terminating, the framework throws an error.
 
@@ -42,7 +42,7 @@ If no value is specified, then the model is allowed to produce the longest answe
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
   The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
-  A value you use to describe the model behavior when it comes to tool usage.
+  A value that describes how the model uses tools.
 
 
 ---

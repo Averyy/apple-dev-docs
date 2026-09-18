@@ -16,13 +16,17 @@ The types of attached content.
 ## Declaration
 
 ```swift
-enum Attachment
+@nonexhaustive enum Attachment
 ```
 
 ## Topics
 
 ### Image attachment case
 - [case image(Transcript.ImageAttachment)](transcript/attachment/image(_:).md)
+  An attached image.
+### Enumeration Cases
+- [case data(Transcript.DataAttachment)](transcript/attachment/data(_:).md)
+  An attached data payload identified by a content type identifier.
 
 ## Relationships
 

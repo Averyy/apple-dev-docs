@@ -76,7 +76,7 @@ Your development-signed apps use the sandbox environment when you sign in to App
 
 If you enabled App Store Server Notifications, test your logic for transactions in the sandbox environment. To determine if a notification for a subscription event occurred in the test environment, check whether the value of the `environment` field in the JSON [`responseBodyV1`](responsebodyv1.md) object equals `Sandbox`.
 
-The following notification types are available in sandbox: `INITIAL_BUY`, `DID_CHANGE_RENEWAL_PREF`, `DID_CHANGE_RENEWAL_STATUS`, `DID_RENEW`, `INTERACTIVE_RENEWAL`, `CANCEL`, and `REFUND`. Notifications in the sandbox environment are for the purchaser only, and have [`in_app_ownership_type`](https://developer.apple.com/documentation/appstorereceipts/in_app_ownership_type) equal to `PURCHASED`. For more information about testing in-app purchases, see [`Testing In-App Purchases with sandbox`](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox).
+The following notification types are available in sandbox: `INITIAL_BUY`, `DID_CHANGE_RENEWAL_PREF`, `DID_CHANGE_RENEWAL_STATUS`, `DID_RENEW`, `INTERACTIVE_RENEWAL`, `CANCEL`, and `REFUND`. Notifications in the sandbox environment are for the purchaser only, and have [`in_app_ownership_type`](https://developer.apple.com/documentation/appstorereceipts/in_app_ownership_type) equal to `PURCHASED`. For more information about testing in-app purchases, see [`Testing Apple In-App Purchases with sandbox`](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox).
 
 ## See Also
 

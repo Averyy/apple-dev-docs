@@ -27,6 +27,8 @@ To store a document as a reference type — like a class — create a type that 
 - Loads documents from file in the [`init(configuration:)`](referencefiledocument/init(configuration:).md) initializer.
 - Stores documents to file by providing a snapshot of the document’s content in the [`snapshot(contentType:)`](referencefiledocument/snapshot(contenttype:).md) method, and then serializing that content in the [`fileWrapper(snapshot:configuration:)`](referencefiledocument/filewrapper(snapshot:configuration:).md) method.
 
+Because `ReferenceFileDocument` is a reference type, SwiftUI can’t detect changes to your document’s properties on its own. Register an undo action with the environment’s `UndoManager` whenever you mutate the document, for example by calling `UndoManager/registerUndo(withTarget:handler:)`.
+
 Ensure that types that conform to this protocol are `Sendable`. In particular, SwiftUI calls the protocol’s methods from different isolation domains. Don’t perform serialization and deserialization on `MainActor`.
 
 ```swift
@@ -55,7 +57,7 @@ final class PDFDocument: ReferenceFileDocument {
 }
 ```
 
-> ❗ **Important**: If you store your document as a value type — like a structure — use [`FileDocument`](filedocument.md) instead.
+> ❗ **Important**: If you store your document as a value type — like a structure — use [`FileDocument`](filedocument.md) instead. Because a value type’s changes are always visible to SwiftUI, undo management and the registration of undo actions are automatic.
 
 ## Topics
 

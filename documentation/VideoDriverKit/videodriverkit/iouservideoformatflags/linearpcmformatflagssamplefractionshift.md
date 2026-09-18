@@ -6,7 +6,7 @@
 The linear PCM flags contain a 6-bit bitfield indicating that an integer format is to be interpreted as fixed point.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

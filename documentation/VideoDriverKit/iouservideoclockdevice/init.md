@@ -6,7 +6,7 @@
 Initializes a video clock device.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

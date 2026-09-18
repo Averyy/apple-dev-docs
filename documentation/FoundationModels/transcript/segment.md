@@ -16,7 +16,7 @@ The types of segments that may be included in a transcript entry.
 ## Declaration
 
 ```swift
-enum Segment
+@nonexhaustive enum Segment
 ```
 
 ## Topics

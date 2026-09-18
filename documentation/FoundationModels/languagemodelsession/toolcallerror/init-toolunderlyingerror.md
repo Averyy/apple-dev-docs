@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a tool call error
+Creates a tool call error.
 
 **Availability**:
 - iOS 26.0+

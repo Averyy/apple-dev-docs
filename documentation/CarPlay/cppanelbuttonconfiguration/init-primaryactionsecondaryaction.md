@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: init
 
-Initializes a button configuration with a primary action and an optional secondary action.
+Initializes the button configuration object with the specified buttons.
 
 **Availability**:
 - iOS 27.0+
@@ -18,12 +18,12 @@ init(primaryAction: CPTextButton, secondaryAction: CPTextButton?)
 
 #### Return Value
 
-A new @c CPPanelButtonConfiguration instance
+An initialized panel button configuration object.
 
 ## Parameters
 
-- `primaryAction`: The primary text button for the panel.
-- `secondaryAction`: An optional secondary @c CPTextButton.
+- `primaryAction`: The primary button for the panel. Use this button to specify the default or primary action someone might want to perform. The initializer makes a copy of the provided button.
+- `secondaryAction`: The secondary button for the panel. Use this to specify an additional action someone might want to perform. The initializer makes a copy of the provided button, if any.
 
 
 ---

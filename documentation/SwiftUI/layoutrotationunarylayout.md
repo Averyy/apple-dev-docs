@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A layout that rotates the space containing a view.
+
 **Availability**:
 - visionOS 26.0+
 
@@ -12,6 +14,10 @@
 nonisolated
 struct LayoutRotationUnaryLayout
 ```
+
+#### Overview
+
+`View/layoutRotation3D(_:)` returns a view modified with this type. You don’t create it directly.
 
 ## Relationships
 

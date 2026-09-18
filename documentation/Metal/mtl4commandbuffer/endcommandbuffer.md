@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Closes a command buffer to prepare it for submission to a command queue.
+Finalizes a command buffer which makes it ready for you to submit it to a command queue.
 
 **Availability**:
 - iOS 26.0+
@@ -26,7 +26,9 @@ func endCommandBuffer()
 
 #### Discussion
 
-Explicitly ending the command buffer allows you to reuse the [`MTL4CommandAllocator`](mtl4commandallocator.md) to start servicing other command buffers. It is an error to call `commit` on a command buffer previously recording before calling this method.
+Metal generates an error if you submit a command buffer to a queue, such as with its [`commit:count:`](mtl4commandqueue/commit:count:.md) method, before calling this method.
+
+> **Note**: Ending a command buffer also marks its [`MTL4CommandAllocator`](mtl4commandallocator.md) as available for you to assign it to work with another command buffer.
 
 
 ---

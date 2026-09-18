@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-15T07:28:16.883405",
+    "last_updated": "2026-09-18T07:38:29.628027",
     "total_pages": 276,
-    "session_id": "2026-09-15T07:28:00.161599"
+    "session_id": "2026-09-18T07:38:10.590407"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/VideoSubscriberAccount.json": {
       "hash": "e8a3885bc8a5d539586d1a9a731045aef6cd6f5b3e2d118120004161b07745ec",
-      "last_checked": "2026-09-15T07:28:00.398931",
+      "last_checked": "2026-09-18T07:38:10.871302",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"7096-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/VideoSubscriberAccount.md"
     },
     "https://developer.apple.com/documentation/VideoSubscriberAccount": {
       "hash": "e8a3885bc8a5d539586d1a9a731045aef6cd6f5b3e2d118120004161b07745ec",
-      "last_checked": "2026-09-15T07:28:00.341938",
+      "last_checked": "2026-09-18T07:38:10.786367",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"7096-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/VideoSubscriberAccount.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanager.json": {
       "hash": "93c1bf7d3c889a6e0dae82907a63cb7b5ca49579bee550b078199e996d0b94b3",
-      "last_checked": "2026-09-15T07:28:00.624908",
+      "last_checked": "2026-09-18T07:38:11.052987",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"8359-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanager.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsapplesubscription-swift.struct.json": {
       "hash": "bf4da78c99951d9106579e2fe1c7cb0b56e86039f2139c99867099b39e735301",
-      "last_checked": "2026-09-15T07:28:00.704910",
+      "last_checked": "2026-09-18T07:38:11.254731",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3208-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsapplesubscription-swiftstruct.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionregistrationcenter.json": {
       "hash": "9490e007aa6ee0d973dec5e05e2b3f732e8cad3135dc5a3beff77100061e5ceb",
-      "last_checked": "2026-09-15T07:28:00.766213",
+      "last_checked": "2026-09-18T07:38:11.395715",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"5073-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionregistrationcenter.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountapplicationprovider.json": {
       "hash": "cf00ea8c36e3812eb9ba01208b12fc856b468907b371cd4572ad32172240e574",
-      "last_checked": "2026-09-15T07:28:00.829524",
+      "last_checked": "2026-09-18T07:38:11.594333",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"54a0-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountapplicationprovider.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/signing-people-in-to-media-apps-automatically.json": {
       "hash": "02231b7e147e302fa8d7f8babbc6c21de5844e5f8ee54ff2412b1fdaf6545ea7",
-      "last_checked": "2026-09-15T07:28:00.896052",
+      "last_checked": "2026-09-18T07:38:11.724977",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"7890-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager.json": {
       "hash": "313c92e20defff15568ba7c837835a3993b3158faec5520eaf32a30c62f85787",
-      "last_checked": "2026-09-15T07:28:00.978271",
+      "last_checked": "2026-09-18T07:38:11.858022",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"90fb-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct.json": {
       "hash": "742a57c02e9a542df16ad17c2cc4b18cfe98ee597dd91e6ab709496deb589dec",
-      "last_checked": "2026-09-15T07:28:01.027531",
+      "last_checked": "2026-09-18T07:38:11.981034",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"7023-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swiftstruct.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserrordomain.json": {
       "hash": "1156e49798c24aa06ee5d418b1edc3ceb551d6c0ff1e4eda141d880639a9a6ab",
-      "last_checked": "2026-09-15T07:28:01.087045",
+      "last_checked": "2026-09-18T07:38:12.104014",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3a5b-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserrordomain.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserrorinfokeysamlresponse.json": {
       "hash": "3333c7c975d1928d7fdbedece73994addffea30e9ccf0afa6478d8d26374a4da",
-      "last_checked": "2026-09-15T07:28:01.155827",
+      "last_checked": "2026-09-18T07:38:12.231202",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4067-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserrorinfokeysamlresponse.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserrorinfokeysamlresponsestatus.json": {
       "hash": "4fd77f1a3060cacdf213c070ef585960655830ced35d2df6d3105f71d10d8240",
-      "last_checked": "2026-09-15T07:28:01.302642",
+      "last_checked": "2026-09-18T07:38:12.368466",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"40a9-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserrorinfokeysamlresponsestatus.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserrorinfokeyaccountproviderresponse.json": {
       "hash": "f30231e88e5035d3b794a8226f18a09286b80fdeb746953d84b46d04d5df3bf3",
-      "last_checked": "2026-09-15T07:28:01.403878",
+      "last_checked": "2026-09-18T07:38:12.486692",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"40c7-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserrorinfokeyaccountproviderresponse.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserrorinfokeyunsupportedprovideridentifier.json": {
       "hash": "4c41653b6fb7598acf06ead555a9e16da98c8abb5655323cc458db243fe69367",
-      "last_checked": "2026-09-15T07:28:01.450587",
+      "last_checked": "2026-09-18T07:38:12.679081",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4106-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserrorinfokeyunsupportedprovideridentifier.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror.json": {
       "hash": "576bbe9bc2a6c2194326ab34404623361fc6c1efcd6c9e6d8077c7eb4f1f339c",
-      "last_checked": "2026-09-15T07:28:01.532075",
+      "last_checked": "2026-09-18T07:38:12.883406",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"5ffb-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code.json": {
       "hash": "5f174f38fe090d380be164a6d8e2248e48ad457943b8820e9abd56c778c29cfa",
-      "last_checked": "2026-09-15T07:28:01.634740",
+      "last_checked": "2026-09-18T07:38:12.995990",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"7996-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscription.json": {
       "hash": "5ee836454cb426ed405cc8e4bc47b39448e0f9e88529853911c909dde676b74c",
-      "last_checked": "2026-09-15T07:28:01.690131",
+      "last_checked": "2026-09-18T07:38:13.125015",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"5111-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscription.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanager/delegate.json": {
       "hash": "4046bc33af407b8108c054bc9b28bcef7e660ac14a43ed076cc3e95a3392a18c",
-      "last_checked": "2026-09-15T07:28:01.786204",
+      "last_checked": "2026-09-18T07:38:13.258193",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"29fc-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanager/delegate.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanagerdelegate.json": {
       "hash": "074e6d0c06bc093a51aa9906a0d27303fd202de97bc14ba34b3a943c86922250",
-      "last_checked": "2026-09-15T07:28:01.913721",
+      "last_checked": "2026-09-18T07:38:13.439741",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"572b-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanagerdelegate.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanager/checkaccessstatus(options:completionhandler:).json": {
       "hash": "bbef2bec68d3369e83d0394424ef023cdc5aa252119e5a708b757cc2dca2224f",
-      "last_checked": "2026-09-15T07:28:01.976862",
+      "last_checked": "2026-09-18T07:38:13.567677",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"50a7-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanager/checkaccessstatus-optionscompletionhandler.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vscheckaccessoption.json": {
       "hash": "578757e1fefc8c9165180bdbc2231e8a17ea946e304f13050f1ad5c71ce6e7d1",
-      "last_checked": "2026-09-15T07:28:02.034787",
+      "last_checked": "2026-09-18T07:38:13.694245",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"432e-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vscheckaccessoption.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountaccessstatus.json": {
       "hash": "beaba5c6ab1e321acb45510bd2140ba7ab24eca62cd83e7646e1dcae0a11c2de",
-      "last_checked": "2026-09-15T07:28:02.104163",
+      "last_checked": "2026-09-18T07:38:13.815881",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"5530-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountaccessstatus.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanager/enqueue(_:completionhandler:).json": {
       "hash": "a2e1b585d50dd8e7730fff4171a79e57b8608338bf81c97718629ba2f7aa7c24",
-      "last_checked": "2026-09-15T07:28:02.167559",
+      "last_checked": "2026-09-18T07:38:13.949303",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"69df-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanager/enqueue-completionhandler.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest.json": {
       "hash": "5767445ee19c08dbe7bff64371462a87eaaeaedceea224dc96bab180a7dedb4c",
-      "last_checked": "2026-09-15T07:28:02.252879",
+      "last_checked": "2026-09-18T07:38:14.070846",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"ac41-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadata.json": {
       "hash": "c4d1dec390562b7a936509daef3195facfc743bd4cf2d06a326ade1fbcb01547",
-      "last_checked": "2026-09-15T07:28:02.307997",
+      "last_checked": "2026-09-18T07:38:14.253264",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"76ed-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadata.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanagerresult.json": {
       "hash": "cccdfe24aa719e1debef1ca6796f54f33e1f09aa3cac52f27e2bf04f12f01d17",
-      "last_checked": "2026-09-15T07:28:02.393142",
+      "last_checked": "2026-09-18T07:38:14.379576",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"5b5c-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanagerresult.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderresponse.json": {
       "hash": "a0ddf9e248f361138453dd31413f39e6e3d432c71512dbfe0a306083a7ebff01",
-      "last_checked": "2026-09-15T07:28:02.441730",
+      "last_checked": "2026-09-18T07:38:14.517117",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"65e1-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderresponse.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderauthenticationscheme.json": {
       "hash": "5e432da3ac604921ec7350746b62e2c8381b8aaee0c0db20c193cbef03e3df19",
-      "last_checked": "2026-09-15T07:28:02.519336",
+      "last_checked": "2026-09-18T07:38:14.708476",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"6699-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderauthenticationscheme.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsopentvprovidersettingsurlstring.json": {
       "hash": "9394334d9c40407992d13215b2a65577306e4a9b3cd47b3dbed1e52a4345e98e",
-      "last_checked": "2026-09-15T07:28:02.611858",
+      "last_checked": "2026-09-18T07:38:14.831322",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2868-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsopentvprovidersettingsurlstring.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsapplesubscription-swift.struct/init(customerid:productcodes:).json": {
       "hash": "c5391ec88b416bf48e21e73ee1f8801447d5301c589e9a2bc9fee8880e78b6e0",
-      "last_checked": "2026-09-15T07:28:02.663234",
+      "last_checked": "2026-09-18T07:38:14.958278",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1771-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsapplesubscription-swift.struct/init-customeridproductcodes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsapplesubscription-swift.struct/customerid.json": {
       "hash": "2d8d17b5037f480fd0d60b5f789d10ece909bdf8920499f906dbc3d94034315b",
-      "last_checked": "2026-09-15T07:28:02.720590",
+      "last_checked": "2026-09-18T07:38:15.090039",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"18f2-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsapplesubscription-swift.struct/customerid.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsapplesubscription-swift.struct/productcodes.json": {
       "hash": "5bd76468fc4282f1b32e9fe93b655333650c035043154eeb61a0e4da728ca02d",
-      "last_checked": "2026-09-15T07:28:02.780441",
+      "last_checked": "2026-09-18T07:38:15.227788",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1925-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsapplesubscription-swift.struct/productcodes.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionregistrationcenter/setcurrentsubscription(_:).json": {
       "hash": "20c9f96261176ef19a511908dd0b457102a555a96b06e22e36c9693791d7756c",
-      "last_checked": "2026-09-15T07:28:02.905537",
+      "last_checked": "2026-09-18T07:38:15.367147",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"312b-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionregistrationcenter/setcurrentsubscription.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionregistrationcenter/default().json": {
       "hash": "c5cd4e3ba1b105fd19fcfd5170758749530faa19c176681a9cb8c3ab9253f27f",
-      "last_checked": "2026-09-15T07:28:02.968284",
+      "last_checked": "2026-09-18T07:38:15.509455",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2925-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionregistrationcenter/default.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountapplicationprovider/init(localizeddisplayname:identifier:).json": {
       "hash": "302b5fea77dcd2994cd87a145a5660683e1e0df68c4cce527bbcaa3d38d5684b",
-      "last_checked": "2026-09-15T07:28:03.026239",
+      "last_checked": "2026-09-18T07:38:15.630732",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2e17-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountapplicationprovider/init-localizeddisplaynameidentifier.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountapplicationprovider/identifier.json": {
       "hash": "3417582943cd61f3967a297b5adfa1e1cbd13cb4cd41c628a80d22083483f027",
-      "last_checked": "2026-09-15T07:28:03.085473",
+      "last_checked": "2026-09-18T07:38:15.762268",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2be1-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountapplicationprovider/identifier.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountapplicationprovider/localizeddisplayname.json": {
       "hash": "13679c0e674ff2768341028fb3ca4914c8e65016d22b39d1e15732f39d259233",
-      "last_checked": "2026-09-15T07:28:03.152712",
+      "last_checked": "2026-09-18T07:38:15.889137",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2c63-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountapplicationprovider/localizeddisplayname.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/shared.json": {
       "hash": "7115dc73e69f18c3f6961c9af7086941bb32d363bbd805b66071bcc61bd1ccf5",
-      "last_checked": "2026-09-15T07:28:03.207678",
+      "last_checked": "2026-09-18T07:38:16.010856",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"228e-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/shared.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/useraccounts(options:).json": {
       "hash": "27b8b0c800830832b842c35bd42560eaa8afbdc5ca9ca47857423db95bcfc193",
-      "last_checked": "2026-09-15T07:28:03.298093",
+      "last_checked": "2026-09-18T07:38:16.130306",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2f59-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/useraccounts-options.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/queryoptions.json": {
       "hash": "d3937d3c59c79fa34f6e99cb0c1439fcfb6e71d47e651445a823350df7133e7d",
-      "last_checked": "2026-09-15T07:28:03.611011",
+      "last_checked": "2026-09-18T07:38:16.343595",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4f13-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/queryoptions.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/update(_:).json": {
       "hash": "605b530b975fd07962a72c97d2876ffffe4075d06f6275f5d9f7eae1068a16e8",
-      "last_checked": "2026-09-15T07:28:03.706927",
+      "last_checked": "2026-09-18T07:38:16.466003",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1a20-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/update.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintoken-swift.struct.json": {
       "hash": "c58bd0ffc8e4d88fc860bf33408d9827ebef5e5bc29f1bac2bf26b2985982422",
-      "last_checked": "2026-09-15T07:28:03.748562",
+      "last_checked": "2026-09-18T07:38:16.593267",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4ad3-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosignintoken-swiftstruct.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintokenupdatecontext.json": {
       "hash": "4a688e65885287ccc2c2864005c192e45935ba06733501e32858af7f4b49a928",
-      "last_checked": "2026-09-15T07:28:03.933819",
+      "last_checked": "2026-09-18T07:38:16.714635",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4480-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosignintokenupdatecontext.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosigninauthorization.json": {
       "hash": "2ab104b0eeb8a3f8d256929eb5f5484fa2cf9f29a9f40841fb2d21484716e1d8",
-      "last_checked": "2026-09-15T07:28:04.025529",
+      "last_checked": "2026-09-18T07:38:16.836820",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"450e-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosigninauthorization.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintoken-swift.property.json": {
       "hash": "f74d0b76a24c0a7d39f56bd160040afc302a7c73a109ef739152bd89344236f3",
-      "last_checked": "2026-09-15T07:28:04.116614",
+      "last_checked": "2026-09-18T07:38:16.970428",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3b57-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosignintoken-swiftproperty.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/deleteautosignintoken().json": {
       "hash": "3678c9609788a473448db398ba2242392be9217e753cf66ae21331201e6073c4",
-      "last_checked": "2026-09-15T07:28:04.205696",
+      "last_checked": "2026-09-18T07:38:17.087622",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3e31-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/deleteautosignintoken.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/requestautosigninauthorization().json": {
       "hash": "9f9e3698d3e4583ef3e1a9bc8c3b80660a0a0c6d4c0ba50945885cfcbc679de2",
-      "last_checked": "2026-09-15T07:28:04.306987",
+      "last_checked": "2026-09-18T07:38:17.217025",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4ad2-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/requestautosigninauthorization.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/updateautosignintoken(_:updatecontext:).json": {
       "hash": "708ee2ccbd6d3bdaa4c9d2b73d4d65761c1b8aae4ac2d1c82f3372ff946113ba",
-      "last_checked": "2026-09-15T07:28:04.398394",
+      "last_checked": "2026-09-18T07:38:17.345977",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4533-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/updateautosignintoken-updatecontext.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/init(accounttype:updateurl:).json": {
       "hash": "6b38d24fbf8ed5e9cb9449ff1bc74e5ada5a3b7a8802fadceea28dd3f23293b8",
-      "last_checked": "2026-09-15T07:28:04.488457",
+      "last_checked": "2026-09-18T07:38:17.474659",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1fd9-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/init-accounttypeupdateurl.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/accounttype-swift.enum.json": {
       "hash": "2e6625fc9214cd9796a5e3b86393f46ebbe05a89301a8c695968d704943baf28",
-      "last_checked": "2026-09-15T07:28:04.533921",
+      "last_checked": "2026-09-18T07:38:17.603420",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"31a7-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/accounttype-swiftenum.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/accountprovideridentifier.json": {
       "hash": "4bd37ee676b090237654f671a2c57db6c7651ac02dc2b49aa18c970c22c70fd7",
-      "last_checked": "2026-09-15T07:28:04.637457",
+      "last_checked": "2026-09-18T07:38:17.720885",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"43da-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/accountprovideridentifier.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/accounttype-swift.property.json": {
       "hash": "bcfa8f649455f9e811c0d8c2ccdf7883d7950529dfd29d5200fd1dc75107d478",
-      "last_checked": "2026-09-15T07:28:04.934215",
+      "last_checked": "2026-09-18T07:38:17.861389",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"45a9-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/accounttype-swiftproperty.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/authenticationdata.json": {
       "hash": "b6d1f95793f7fe30580dc23af0cd7c361f1f8413bc8eb1d8bd4de23f085d9ed0",
-      "last_checked": "2026-09-15T07:28:05.232117",
+      "last_checked": "2026-09-18T07:38:17.996735",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4c07-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/authenticationdata.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/billingidentifier.json": {
       "hash": "a0df7ac42d18b5ab3c23064415383efa618697c82f082e32f1b89ce240aff470",
-      "last_checked": "2026-09-15T07:28:05.324661",
+      "last_checked": "2026-09-18T07:38:18.128348",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"42d0-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/billingidentifier.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/devicecategory.json": {
       "hash": "01e9788308ed8cb73e20702105049106653ebf75080cc54a76ec4585bbd7ec2b",
-      "last_checked": "2026-09-15T07:28:05.417498",
+      "last_checked": "2026-09-18T07:38:18.248887",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"42ef-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/devicecategory.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/originatingdevicecategory.json": {
       "hash": "d7a567b7e20c3d48eb7298924e9f66e05f47bdc2b082146364b0fe916c8485b8",
-      "last_checked": "2026-09-15T07:28:05.717246",
+      "last_checked": "2026-09-18T07:38:18.385399",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"5937-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/originatingdevicecategory.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/identifier.json": {
       "hash": "616709e864ecdc31c2aa3c760f86127fbcfc25ad0b27fdcc4afec4b1eadfffb4",
-      "last_checked": "2026-09-15T07:28:05.816863",
+      "last_checked": "2026-09-18T07:38:18.498123",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"43cc-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/identifier.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/isfromcurrentdevice.json": {
       "hash": "3d69b6eaa2450a22bc674452ec9ff9d9d8d753e486d0bc8e81ff8c549bca72c1",
-      "last_checked": "2026-09-15T07:28:05.913521",
+      "last_checked": "2026-09-18T07:38:18.610759",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4a1a-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/isfromcurrentdevice.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/issignedout.json": {
       "hash": "e3e5d3d08c925a7c740bfff1c7f08b299be7651a748d4bdc8eda8848428eadb2",
-      "last_checked": "2026-09-15T07:28:06.005643",
+      "last_checked": "2026-09-18T07:38:18.750488",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"42e3-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/issignedout.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/requiressystemtrust.json": {
       "hash": "5a498cb73343841962197edd6739bf28421011d95cb6decc64fd61b584de69ab",
-      "last_checked": "2026-09-15T07:28:06.304907",
+      "last_checked": "2026-09-18T07:38:18.865989",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4430-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/requiressystemtrust.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/subscriptionbillingcycleenddate.json": {
       "hash": "1e77fb55b7e522ed9f6db40b2480a1fff549534a3d90c160d429c43585f84e81",
-      "last_checked": "2026-09-15T07:28:06.398635",
+      "last_checked": "2026-09-18T07:38:19.001340",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"44ad-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/subscriptionbillingcycleenddate.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/tieridentifiers.json": {
       "hash": "ccde3b6f8469bbf0010ce140da3b959829315c7152dc0a6eea348f6e7f1b41fb",
-      "last_checked": "2026-09-15T07:28:06.709440",
+      "last_checked": "2026-09-18T07:38:19.112235",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"43c3-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/tieridentifiers.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/updateurl.json": {
       "hash": "b17f52df5b7b5dc2272951ab57cd0b44243da03702944bb5b34a361c066e4200",
-      "last_checked": "2026-09-15T07:28:06.800415",
+      "last_checked": "2026-09-18T07:38:19.243531",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4422-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/updateurl.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/applesubscription.json": {
       "hash": "cf09136621f5eee2c08c89ac7030eccef6fa0530fce3c8b027544ddf1cc461ac",
-      "last_checked": "2026-09-15T07:28:07.032588",
+      "last_checked": "2026-09-18T07:38:19.371511",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"15e9-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/applesubscription.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/errordomain.json": {
       "hash": "902f48af8aac57a86a6af55dbda00336aa3ce36c4463eb6eae4a4b3b123615ba",
-      "last_checked": "2026-09-15T07:28:07.122866",
+      "last_checked": "2026-09-18T07:38:19.504663",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1362-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/errordomain.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/accessnotgranted.json": {
       "hash": "4a615cd51d46ac83b0cadc311fffd8535f6d8a0a4e0d40b81fd7657f799da944",
-      "last_checked": "2026-09-15T07:28:07.213781",
+      "last_checked": "2026-09-18T07:38:19.624663",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"353c-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/accessnotgranted.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/invalidverificationtoken.json": {
       "hash": "da1f516cf2f4d10c1daa418d7ed73ee36ce2a9c7b2566498b9443a0411b6fb60",
-      "last_checked": "2026-09-15T07:28:07.304513",
+      "last_checked": "2026-09-18T07:38:19.737896",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3587-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/invalidverificationtoken.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/providerrejected.json": {
       "hash": "d92748120503f38e28f928a8fc2f5bca12cf5329463baeb7ade70c410a68f63c",
-      "last_checked": "2026-09-15T07:28:07.598757",
+      "last_checked": "2026-09-18T07:38:19.865447",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"36b3-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/providerrejected.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/rejected.json": {
       "hash": "554812bbe1b6723fc7886c61420457de6e99b6611325fcd62742128271e30353",
-      "last_checked": "2026-09-15T07:28:07.699974",
+      "last_checked": "2026-09-18T07:38:19.980241",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"35c5-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/rejected.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/servicetemporarilyunavailable.json": {
       "hash": "63bb7df81c77f32ce4b8ceb36c62c61cccff385a349d0f45ea4f3058042911c7",
-      "last_checked": "2026-09-15T07:28:07.788716",
+      "last_checked": "2026-09-18T07:38:20.101763",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"359a-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/servicetemporarilyunavailable.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/unsupported.json": {
       "hash": "564fac513d8a00216e9813eb0cacb7afbf0de2e3a3edb4cf1c9575ce53b6088a",
-      "last_checked": "2026-09-15T07:28:07.877788",
+      "last_checked": "2026-09-18T07:38:20.235587",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"353f-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/unsupported.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/unsupportedprovider.json": {
       "hash": "9d4d267e38d4acd3173fe7d9507bacc81cdbfb90d02de2def988c37bdcee1f78",
-      "last_checked": "2026-09-15T07:28:07.967248",
+      "last_checked": "2026-09-18T07:38:20.354954",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3548-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/unsupportedprovider.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/usercancelled.json": {
       "hash": "478d2af8ab4cb2914a05327cc45fef5f0623cdc2e5b70d5282ab15216bdbcbb0",
-      "last_checked": "2026-09-15T07:28:08.062037",
+      "last_checked": "2026-09-18T07:38:20.490528",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3508-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/usercancelled.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/accessnotgranted.json": {
       "hash": "361d902d47d7a9344a79d990bb84f87391fb4ad29fade848f03e8aa9d4f9aaba",
-      "last_checked": "2026-09-15T07:28:08.167625",
+      "last_checked": "2026-09-18T07:38:20.617636",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4576-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/accessnotgranted.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/invalidverificationtoken.json": {
       "hash": "08274ae8b848eb1972038e7f8d406d2f5eafc057a5420355c768d9605889ff62",
-      "last_checked": "2026-09-15T07:28:08.480902",
+      "last_checked": "2026-09-18T07:38:20.734273",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"45e1-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/invalidverificationtoken.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/providerrejected.json": {
       "hash": "3eabdddf04129373960b8e32e065322f8e9ff222434e2205949c205cb5b4c735",
-      "last_checked": "2026-09-15T07:28:08.651927",
+      "last_checked": "2026-09-18T07:38:20.941109",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"46ed-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/providerrejected.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/rejected.json": {
       "hash": "d934bce29027387bb1ae4e333cbd3954c353a6760f0c3735aef649713c709d18",
-      "last_checked": "2026-09-15T07:28:08.742178",
+      "last_checked": "2026-09-18T07:38:21.053390",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"45e0-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/rejected.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/servicetemporarilyunavailable.json": {
       "hash": "a69adbd14bbc7b37b5992bfd6f552eebb6878c55d9aaa08f2c77a4386c9654c1",
-      "last_checked": "2026-09-15T07:28:08.831656",
+      "last_checked": "2026-09-18T07:38:21.251253",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4608-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/servicetemporarilyunavailable.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/unsupported.json": {
       "hash": "a7cde66dbc4d81a030da476e2e29a682ac38a21952467f7dc6006c36f4cf3375",
-      "last_checked": "2026-09-15T07:28:08.921925",
+      "last_checked": "2026-09-18T07:38:21.451554",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4565-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/unsupported.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/unsupportedprovider.json": {
       "hash": "3193b1e66017589f85ba84ae4c82bcc8af682dc4bdc0ba16835a0393a5b78c3c",
-      "last_checked": "2026-09-15T07:28:09.013025",
+      "last_checked": "2026-09-18T07:38:21.591690",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"458e-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/unsupportedprovider.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/usercancelled.json": {
       "hash": "ca2416f354b8fcb58a3e9008a704f1bb711a12b7b2c01d85a06f1ea25753d64f",
-      "last_checked": "2026-09-15T07:28:09.106035",
+      "last_checked": "2026-09-18T07:38:21.777714",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4536-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/usercancelled.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vserror/code/init(rawvalue:).json": {
       "hash": "0e5b8c3f4c9b630b3b18c4a5423238fff56cdbf102840d2b830c6e029d9e9e70",
-      "last_checked": "2026-09-15T07:28:09.200582",
+      "last_checked": "2026-09-18T07:38:21.951741",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"17c9-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vserror/code/init-rawvalue.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscription/accesslevel.json": {
       "hash": "652badf5441cc7ac0c3343abafea8f55b3cc5c9e13f1be20f2a4815c9afd7afe",
-      "last_checked": "2026-09-15T07:28:09.297957",
+      "last_checked": "2026-09-18T07:38:22.079754",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"412e-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscription/accesslevel.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionaccesslevel.json": {
       "hash": "fca554ae75ec81a7b5fcc06a15816f89b77df3563b843f805edb954407ff6da5",
-      "last_checked": "2026-09-15T07:28:09.394944",
+      "last_checked": "2026-09-18T07:38:22.194847",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"5b45-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionaccesslevel.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscription/billingidentifier.json": {
       "hash": "167a6c9e453520810b6283ae3af2b6314d0dc6d2a9329d73d0d40de14b9af540",
-      "last_checked": "2026-09-15T07:28:09.710393",
+      "last_checked": "2026-09-18T07:38:22.320163",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3ece-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscription/billingidentifier.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscription/expirationdate.json": {
       "hash": "8b818b3eb06e2c5a22ed1a22c164fae935c7b8007522002a5365a5549cbccc37",
-      "last_checked": "2026-09-15T07:28:09.817791",
+      "last_checked": "2026-09-18T07:38:22.526085",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4a66-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscription/expirationdate.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscription/tieridentifiers.json": {
       "hash": "2343168deb9f9f3d20eb862d03d1bcb1b971ff83e6f55993f0dd9de8d725cde3",
-      "last_checked": "2026-09-15T07:28:09.926340",
+      "last_checked": "2026-09-18T07:38:22.654366",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3d8f-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscription/tieridentifiers.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanagerdelegate/accountmanager(_:present:).json": {
       "hash": "161d20f867133a4628dae9dd82a98f859bae5b9cfc30300a5033a95291dfbd24",
-      "last_checked": "2026-09-15T07:28:10.030618",
+      "last_checked": "2026-09-18T07:38:22.849465",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3bad-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanagerdelegate/accountmanager-present.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanagerdelegate/accountmanager(_:dismiss:).json": {
       "hash": "63834dd9c09be66c7687bf22b175c8462c4f4f16e31358bfcc23af3c050a2d9c",
-      "last_checked": "2026-09-15T07:28:10.135494",
+      "last_checked": "2026-09-18T07:38:23.040177",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3b4e-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanagerdelegate/accountmanager-dismiss.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanagerdelegate/accountmanager(_:shouldauthenticateaccountproviderwithidentifier:).json": {
       "hash": "cec1d6b3dfec5f7b4c8f0c2117c5d630821256416cdf0d48bbb358670497f49d",
-      "last_checked": "2026-09-15T07:28:10.243528",
+      "last_checked": "2026-09-18T07:38:23.158943",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"47f7-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanagerdelegate/accountmanager-shouldauthenticateaccountproviderwithidentifier.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vscheckaccessoption/prompt.json": {
       "hash": "5621a0632ad815299e831040456fe619a5922615080fde65a9b7ba3d366a4135",
-      "last_checked": "2026-09-15T07:28:10.336339",
+      "last_checked": "2026-09-18T07:38:23.287055",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2039-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vscheckaccessoption/prompt.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vscheckaccessoption/init(rawvalue:).json": {
       "hash": "406c1b00c7d43a056a0a19eb97448beb5d8d1408df572be36873de2f031e56ec",
-      "last_checked": "2026-09-15T07:28:10.432863",
+      "last_checked": "2026-09-18T07:38:23.405934",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1604-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vscheckaccessoption/init-rawvalue.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountaccessstatus/denied.json": {
       "hash": "a1fc02d703db3c41dc416c27d1ddc034f9b79326e44d903d167a7a97c6fd341a",
-      "last_checked": "2026-09-15T07:28:10.540084",
+      "last_checked": "2026-09-18T07:38:23.543541",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2db9-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountaccessstatus/denied.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountaccessstatus/granted.json": {
       "hash": "089b6d2f9deb280b4c82c175ab8a70a7fc7a5ee6fa60ed05cc29d353d606d0ba",
-      "last_checked": "2026-09-15T07:28:10.630440",
+      "last_checked": "2026-09-18T07:38:23.675528",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2dc3-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountaccessstatus/granted.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountaccessstatus/notdetermined.json": {
       "hash": "a8ad84fe7f55c680a4cf7d57548ea59efd5f6ef31eb5d9d2f5cc575f63a08c0b",
-      "last_checked": "2026-09-15T07:28:10.723695",
+      "last_checked": "2026-09-18T07:38:23.819627",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2e12-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountaccessstatus/notdetermined.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountaccessstatus/restricted.json": {
       "hash": "69a37df31ed4f12394b3d94d47e83777a0635f7ad67f31488fa1e5ef1dcde93a",
-      "last_checked": "2026-09-15T07:28:10.820608",
+      "last_checked": "2026-09-18T07:38:23.946292",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2ed7-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountaccessstatus/restricted.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountaccessstatus/init(rawvalue:).json": {
       "hash": "e9c19c62deea3972b33e60fe6e8f41821955cff8c84105411473b893fe86dc84",
-      "last_checked": "2026-09-15T07:28:10.910701",
+      "last_checked": "2026-09-18T07:38:24.078302",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1618-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountaccessstatus/init-rawvalue.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/includeaccountprovideridentifier.json": {
       "hash": "57865e25b167069bbfdc217ec09ddfc7969f72b8b01b8d58a0320505069ee17a",
-      "last_checked": "2026-09-15T07:28:10.999286",
+      "last_checked": "2026-09-18T07:38:24.210881",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2e1d-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/includeaccountprovideridentifier.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/includeauthenticationexpirationdate.json": {
       "hash": "ef41b1a04a85f5b73c70eb27eedd7cc99b2f7565a2628035eb442ddf30631ba0",
-      "last_checked": "2026-09-15T07:28:11.093822",
+      "last_checked": "2026-09-18T07:38:24.335518",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2e54-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/includeauthenticationexpirationdate.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/attributenames.json": {
       "hash": "852598d4f5317b23e350f4fa1854cdb3257a101ab9b0d5ba5201443e355ff4b3",
-      "last_checked": "2026-09-15T07:28:11.189036",
+      "last_checked": "2026-09-18T07:38:24.469374",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3e41-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/attributenames.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/channelidentifier.json": {
       "hash": "54ba1c6b427bbbd49957ceaec767da9308ea829761c5ded63142782153df76ad",
-      "last_checked": "2026-09-15T07:28:11.488829",
+      "last_checked": "2026-09-18T07:38:24.606451",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"42bb-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/channelidentifier.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/supportedaccountprovideridentifiers.json": {
       "hash": "c90cecb9a16f87c92acdc903b8a1d20c25be54fdc367bbdf41f66ed46d7fa1b6",
-      "last_checked": "2026-09-15T07:28:11.581387",
+      "last_checked": "2026-09-18T07:38:24.742196",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3f33-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/supportedaccountprovideridentifiers.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/supportedauthenticationschemes.json": {
       "hash": "bb11bc13fb364773965dd65d283462ceefc94f756e604115e828e71f0c3c6ec7",
-      "last_checked": "2026-09-15T07:28:11.681855",
+      "last_checked": "2026-09-18T07:38:24.871610",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"43fb-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/supportedauthenticationschemes.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/verificationtoken.json": {
       "hash": "a3a4fe9b4d1b2a0e5e009f1be302a75ef69461903966f3d09da89415bccfe2c2",
-      "last_checked": "2026-09-15T07:28:11.779698",
+      "last_checked": "2026-09-18T07:38:24.990887",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"418d-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/verificationtoken.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/isinterruptionallowed.json": {
       "hash": "7ea6563e440f0ebe8d09938ad2311ff23a2ea5f68c58041ba34f457b66f31a15",
-      "last_checked": "2026-09-15T07:28:11.877280",
+      "last_checked": "2026-09-18T07:38:25.119994",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4098-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/isinterruptionallowed.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/featuredaccountprovideridentifiers.json": {
       "hash": "e555c076a1fa309779839fccc083574d1de2467faa5f1006d96a9d6cfe14308a",
-      "last_checked": "2026-09-15T07:28:11.975850",
+      "last_checked": "2026-09-18T07:38:25.249933",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3fa4-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/featuredaccountprovideridentifiers.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/forceauthentication.json": {
       "hash": "9bac5b77bc66b7745f10639774876035e2427cb26462e09a32cb6e25e73cc2da",
-      "last_checked": "2026-09-15T07:28:12.066580",
+      "last_checked": "2026-09-18T07:38:25.380469",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"461b-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/forceauthentication.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/localizedvideotitle.json": {
       "hash": "5ed736fd95431fff9f35becffafbd539bf84b6caac5761c33efe925fd42c3223",
-      "last_checked": "2026-09-15T07:28:12.159667",
+      "last_checked": "2026-09-18T07:38:25.586710",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4353-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/localizedvideotitle.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/applicationaccountproviders.json": {
       "hash": "faa75748740510a9e41230b33283f3a8a67228f73e4d3ed0191c0f73b90d6b63",
-      "last_checked": "2026-09-15T07:28:12.248870",
+      "last_checked": "2026-09-18T07:38:25.716969",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"4265-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/applicationaccountproviders.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadatarequest/accountproviderauthenticationtoken.json": {
       "hash": "e2db257c95dc85036c49ca429c83a9f4d8b92a3a2523199fe3e93f84923f839e",
-      "last_checked": "2026-09-15T07:28:12.339935",
+      "last_checked": "2026-09-18T07:38:25.825610",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2838-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadatarequest/accountproviderauthenticationtoken.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadata/accountprovideridentifier.json": {
       "hash": "f46858e6155e8ee76cbf224a69f04206279b083ade4d7390070e720fc4c90677",
-      "last_checked": "2026-09-15T07:28:12.790668",
+      "last_checked": "2026-09-18T07:38:25.947365",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2dd6-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadata/accountprovideridentifier.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadata/authenticationexpirationdate.json": {
       "hash": "d762837e0a5505d630358f4655cb8066bdebc7588f985e2efc3a9ccd568ae2d1",
-      "last_checked": "2026-09-15T07:28:12.883373",
+      "last_checked": "2026-09-18T07:38:26.071090",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2ec8-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadata/authenticationexpirationdate.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadata/accountproviderresponse.json": {
       "hash": "bb044d8e36ed82ca10580ff337dd8c53f8be9125f845383983878f4e7ea5a753",
-      "last_checked": "2026-09-15T07:28:12.973199",
+      "last_checked": "2026-09-18T07:38:26.189222",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3ba7-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadata/accountproviderresponse.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadata/samlattributequeryresponse.json": {
       "hash": "c81302846ac09dfc97d6a444c2d05cae68319b8fbc4687be3355683233e33d4c",
-      "last_checked": "2026-09-15T07:28:13.275030",
+      "last_checked": "2026-09-18T07:38:26.406320",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3a63-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadata/samlattributequeryresponse.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmetadata/verificationdata.json": {
       "hash": "222cbb40d830f35f795f74e91edc91b95d3e8e007c45b1cc634fcd899dd006c5",
-      "last_checked": "2026-09-15T07:28:13.365932",
+      "last_checked": "2026-09-18T07:38:26.532498",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"316a-659025c09a261-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmetadata/verificationdata.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountmanagerresult/cancel().json": {
       "hash": "1a6f0536502fd8dd73a27167217d227e7eba2d0e42e31efddbb4f17eb07b78b5",
-      "last_checked": "2026-09-15T07:28:13.455316",
+      "last_checked": "2026-09-18T07:38:26.650899",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2495-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountmanagerresult/cancel.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderresponse/authenticationscheme.json": {
       "hash": "bb5512f316d2d79e087ae2f667ca5a8a6f13d1e1b280456ca3a088285ba4666f",
-      "last_checked": "2026-09-15T07:28:13.548983",
+      "last_checked": "2026-09-18T07:38:26.774653",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"35ac-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderresponse/authenticationscheme.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderresponse/body.json": {
       "hash": "a0e34c96842c4c799857ba36fe2cb0cf674e6eb8d899ef8ca80a2cb7aceecdcb",
-      "last_checked": "2026-09-15T07:28:13.666245",
+      "last_checked": "2026-09-18T07:38:26.916398",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3261-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderresponse/body.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderresponse/status.json": {
       "hash": "9ad172aa03a75acc6d48db2fb9f2fb338b092862fd3ae8085f8709124d736494",
-      "last_checked": "2026-09-15T07:28:13.768165",
+      "last_checked": "2026-09-18T07:38:27.045228",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3271-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderresponse/status.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderauthenticationscheme/init(_:).json": {
       "hash": "519aad757a7e2cc55f24ec5f6f9f35314df810197213122e133b3e3e7cf40eb5",
-      "last_checked": "2026-09-15T07:28:14.010622",
+      "last_checked": "2026-09-18T07:38:27.165216",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1d9a-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderauthenticationscheme/init.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderauthenticationscheme/init(rawvalue:).json": {
       "hash": "a5e0ac03537d68387709179eed975f585a63713b64ab99859e28b7c2403dd061",
-      "last_checked": "2026-09-15T07:28:14.117616",
+      "last_checked": "2026-09-18T07:38:27.284634",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1dbd-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderauthenticationscheme/init-rawvalue.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderauthenticationscheme/saml.json": {
       "hash": "99cf3bca9b1f6bd39cfd5645f494545b3a4e1c34fac6034b7b8c0a47e2302a9c",
-      "last_checked": "2026-09-15T07:28:14.205792",
+      "last_checked": "2026-09-18T07:38:27.397735",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"29f3-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderauthenticationscheme/saml.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsaccountproviderauthenticationscheme/api.json": {
       "hash": "66c940408f364f68ac959795d81a89ccdcb4ceecc77103c70072de794200223c",
-      "last_checked": "2026-09-15T07:28:15.207167",
+      "last_checked": "2026-09-18T07:38:27.527407",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"29e7-659025c080654-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsaccountproviderauthenticationscheme/api.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/queryoptions/alldevices.json": {
       "hash": "05899f6aa83eaf1b345a25fc0418ac3bac7d5aed9feee49bbc2d6f24f8063fb9",
-      "last_checked": "2026-09-15T07:28:15.311035",
+      "last_checked": "2026-09-18T07:38:27.660538",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"287f-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/queryoptions/alldevices.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/queryoptions/init(rawvalue:).json": {
       "hash": "f54e2cf12db22eb8e2a02373fd8e6bf20f787cf4008fa7ae07b1b90ec7564644",
-      "last_checked": "2026-09-15T07:28:15.406587",
+      "last_checked": "2026-09-18T07:38:27.796479",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1d86-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/queryoptions/init-rawvalue.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintoken-swift.struct/value.json": {
       "hash": "224694985670bdb671344a3022f64480d8180b121e78cd7c4d208ab810224239",
-      "last_checked": "2026-09-15T07:28:15.499031",
+      "last_checked": "2026-09-18T07:38:27.909984",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"277f-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosignintoken-swift.struct/value.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintoken-swift.struct/authorization.json": {
       "hash": "8e22ad799b84b81de1356f329b5d4a114a125362ba7cfcbae14a7b9046d36f9c",
-      "last_checked": "2026-09-15T07:28:15.587757",
+      "last_checked": "2026-09-18T07:38:28.024284",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"300b-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosignintoken-swift.struct/authorization.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintokenupdatecontext/authorization.json": {
       "hash": "245b3fa129c839d898835358d3a1ae4e5d54d90f4a7458b22f5ed8acc192aed1",
-      "last_checked": "2026-09-15T07:28:15.678138",
+      "last_checked": "2026-09-18T07:38:28.140759",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"3595-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosignintokenupdatecontext/authorization.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosigninauthorization/notdetermined.json": {
       "hash": "ab53c0d8ceff131ae513fa1f6f3013d4aa76ed89124574ab312481c4e045fcff",
-      "last_checked": "2026-09-15T07:28:15.770636",
+      "last_checked": "2026-09-18T07:38:28.271488",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"323d-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosigninauthorization/notdetermined.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosigninauthorization/granted.json": {
       "hash": "7f25deccf23004092fd529a24ec3b5e06a2a0d2bcbc9af9774f77878e5ef0189",
-      "last_checked": "2026-09-15T07:28:15.865028",
+      "last_checked": "2026-09-18T07:38:28.412597",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2b49-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosigninauthorization/granted.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccountmanager/autosigninauthorization/denied.json": {
       "hash": "b54132fede7a434c6bc70219d444bb44fc19947f93263e9cc800fde6b9f3edd4",
-      "last_checked": "2026-09-15T07:28:15.978225",
+      "last_checked": "2026-09-18T07:38:28.546846",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1e77-659025c0635b8-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccountmanager/autosigninauthorization/denied.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/accounttype-swift.enum/free.json": {
       "hash": "9d3a3d2663b9e538c5bb1cf739db14eae621283a75914a5407c899d40f827dc1",
-      "last_checked": "2026-09-15T07:28:16.081935",
+      "last_checked": "2026-09-18T07:38:28.675039",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"17d7-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/accounttype-swift.enum/free.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/accounttype-swift.enum/paid.json": {
       "hash": "5396c8f8c57e20e89ee99b45d13ec81349c546a598f13de30e17c1253b6d7b55",
-      "last_checked": "2026-09-15T07:28:16.175121",
+      "last_checked": "2026-09-18T07:38:28.787795",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"17d6-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/accounttype-swift.enum/paid.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/originatingdevicecategory/mobile.json": {
       "hash": "59644a1c692bb1d4838a2a2049da588e479cec2ea25429debd4796960707d816",
-      "last_checked": "2026-09-15T07:28:16.413782",
+      "last_checked": "2026-09-18T07:38:28.932925",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"18dc-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/originatingdevicecategory/mobile.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vsuseraccount-swift.struct/originatingdevicecategory/other.json": {
       "hash": "386e623ce20502e50e47ac982e8c88b9ff34df4564eab1110348a244f6c01481",
-      "last_checked": "2026-09-15T07:28:16.503528",
+      "last_checked": "2026-09-18T07:38:29.045100",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"19c6-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vsuseraccount-swift.struct/originatingdevicecategory/other.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionaccesslevel/freewithaccount.json": {
       "hash": "d7cbe811584eaa6fd2e0060a1adb88ae60b93188c33ffd25ed9986bc576bd972",
-      "last_checked": "2026-09-15T07:28:16.604495",
+      "last_checked": "2026-09-18T07:38:29.180433",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2e1c-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionaccesslevel/freewithaccount.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionaccesslevel/paid.json": {
       "hash": "89bc2dc681e13c2c9dc919a04456e0b5e51639b771cb0e52afdf2ee0975e5287",
-      "last_checked": "2026-09-15T07:28:16.696517",
+      "last_checked": "2026-09-18T07:38:29.308522",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2e07-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionaccesslevel/paid.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionaccesslevel/unknown.json": {
       "hash": "1003af3ffe67913b6111e98ca3a64c0fe1d007d39b1afd13e4800ad582d7c1d4",
-      "last_checked": "2026-09-15T07:28:16.788542",
+      "last_checked": "2026-09-18T07:38:29.454474",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"2dfe-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionaccesslevel/unknown.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/vssubscriptionaccesslevel/init(rawvalue:).json": {
       "hash": "847b439505791ad071d0d7d76909123b858669037d0b922c36d2f93e3ccf88c5",
-      "last_checked": "2026-09-15T07:28:16.880867",
+      "last_checked": "2026-09-18T07:38:29.593741",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:28:00.161599",
+      "session_id": "2026-09-18T07:38:10.590407",
       "etag": "\"1846-659025c04255b-df\"",
       "file_path": "documentation/VideoSubscriberAccount/vssubscriptionaccesslevel/init-rawvalue.md"
     },

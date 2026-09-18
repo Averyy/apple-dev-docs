@@ -23,9 +23,9 @@ var metadata: [String : GeneratedContent] { get }
 ## See Also
 
 - [var segments: [Transcript.Segment]](transcript/response/segments.md)
-  Ordered prompt segments.
+  Ordered response segments.
 - [var assetIDs: [String]](transcript/response/assetids.md)
-  Version aware identifiers for all assets used to generate this response.
+  Version-aware identifiers for all assets used to generate this response.
 
 
 ---

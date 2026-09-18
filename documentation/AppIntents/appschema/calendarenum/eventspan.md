@@ -32,9 +32,9 @@ enum EventSpan: String {
     case all
 
     static let caseDisplayRepresentations: [Self: DisplayRepresentation] = [
-        .this: "This",
-        .future: "Future",
-        .all: "All"
+        .this: "This Event Only",
+        .future: "Future Events",
+        .all: "All Events"
     ]
 }
 ```

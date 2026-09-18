@@ -26,9 +26,9 @@ This is the response body for the [`Migrate a Subscription to Advanced Commerce 
 ## See Also
 
 - [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)
-  Migrate a subscription that a customer purchased through In-App Purchase to a subscription you manage using the Advanced Commerce API.
+  Migrate a subscription that a customer purchased through Apple In-App Purchase to a subscription you manage using the Advanced Commerce API.
 - [object SubscriptionMigrateRequest](subscriptionmigraterequest.md)
-  The subscription details you provide to migrate a subscription from In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
+  The subscription details you provide to migrate a subscription from Apple In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
 - [object SubscriptionMigrateItem](subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
 - [object SubscriptionMigrateRenewalItem](subscriptionmigraterenewalitem.md)

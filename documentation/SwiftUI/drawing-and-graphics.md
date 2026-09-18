@@ -111,6 +111,7 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/human-
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)
+  A 3x3 matrix that transforms points in a plane.
 - [enum ContentMode](contentmode.md)
   Constants that define how a view’s content fills the available space.
 ### Masking and clipping
@@ -148,6 +149,7 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/human-
 - [enum ColorRenderingMode](colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
 - [protocol CompositorContent](compositorcontent.md)
+  A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
 - [struct CompositorContentBuilder](compositorcontentbuilder.md)
   A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 - [struct AnyCompositorContent](anycompositorcontent.md)
@@ -159,6 +161,10 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/human-
   A container view that defines its content as a function of its own size and coordinate space.
 - [struct GeometryProxy](geometryproxy.md)
   A proxy for access to the size and coordinate space (for anchor resolution) of the container view.
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+  Returns an array of reserved regions that match the selection options you specify.
+- [struct ReservedRegion](reservedregion.md)
+  A region within a view’s coordinate space that another entity reserves.
 - [struct GeometryProxy3D](geometryproxy3d.md)
   A proxy for access to the size and coordinate space of the container view.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](view/coordinatespace(_:).md)
@@ -199,6 +205,7 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/human-
 - [struct Anchor](anchor.md)
   An opaque value derived from an anchor source and a particular view.
 - [protocol DepthAlignmentID](depthalignmentid.md)
+  A type that defines a custom depth alignment guide.
 - [struct Alignment3D](alignment3d.md)
   An alignment in all three axes.
 - [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)

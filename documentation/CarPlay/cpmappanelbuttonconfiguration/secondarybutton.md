@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-An optional secondary button shown with this configuration. Note: only the image property of this button is used.
+The optional button you use to perform a secondary action.
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +16,10 @@ An optional secondary button shown with this configuration. Note: only the image
 @NSCopying
 var secondaryButton: CPButton? { get }
 ```
+
+#### Discussion
+
+Specify this button at initialization time and access it using this property. The value of this property can be `nil`.
 
 
 ---

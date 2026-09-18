@@ -63,6 +63,20 @@ To test widgets in CarPlay, preview your widget in Xcode to verify that your wid
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
 - [struct WidgetLocation](widgetlocation.md)
   Values that indicate different widget locations.
+- [func widgetAccentable(Bool) -> some View
+](../swiftui/view/widgetaccentable(_:).md)
+  Adds the view and all of its subviews to the accented group.
+- [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
+](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+  Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
+- [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
+  The widget’s rendering mode, based on where the system is displaying it.
+- [var widgetContentMargins: EdgeInsets](../swiftui/environmentvalues/widgetcontentmargins.md)
+  A property that identifies the content margins of a widget.
+- [static let widget: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/widget.md)
+  The container background placement for a widget.
+- [var showsWidgetContainerBackground: Bool](../swiftui/environmentvalues/showswidgetcontainerbackground.md)
+  An environment variable that indicates whether the background of a widget appears.
 
 
 ---

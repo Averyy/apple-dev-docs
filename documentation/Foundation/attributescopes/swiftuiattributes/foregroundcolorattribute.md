@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for the color that draws a run of attributed text.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,17 @@
 ```swift
 @frozen
 enum ForegroundColorAttribute
+```
+
+#### Overview
+
+Set this key to tint part of a string without splitting it into several `Text` views:
+
+```None
+var status = AttributedString("Low battery")
+status.foregroundColor = .red
+
+Text(status)
 ```
 
 ## Relationships

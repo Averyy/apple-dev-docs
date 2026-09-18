@@ -17,7 +17,11 @@ func offset(z: CGFloat) -> some VisualEffect
 
 #### Return Value
 
-An effect that is extruded forward in Z by `distance`.
+An effect that is extruded forward in Z by `z`.
+
+## Parameters
+
+- `z`: The distance to extrude the view forward in Z, in points.
 
 ## See Also
 

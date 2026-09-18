@@ -58,6 +58,8 @@ UIKit provides several standard view controllers for navigation and managing spe
   An object that manages a collection of tab objects.
 - [class UIPageViewController](uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
+- [class UIArrangementViewController](uiarrangementviewcontroller.md)
+  A view controller that presents its container view controllers through an arrangement.
 ### Presentation management
 - [Disabling the pull-down gesture for a sheet](disabling-the-pull-down-gesture-for-a-sheet.md)
   Ensure a positive user experience when presenting a view controller as a sheet.

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: typealias
 
+A shorthand for producing content for each element of a collection.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -24,6 +26,7 @@ typealias ForEach = DynamicInstructionsForEach
 - [associatedtype Body : DynamicInstructions](dynamicinstructions/body-swift.associatedtype.md)
   The type of dynamic instructions that represent these instructions.
 - [DynamicInstructions.SessionProperty](dynamicinstructions/sessionproperty.md)
+  A property wrapper that provides access to a session property within dynamic instructions.
 
 
 ---

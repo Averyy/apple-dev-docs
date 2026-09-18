@@ -176,6 +176,9 @@ In the context of iPhone widgets on Mac, it’s important to use the [`invalidat
   Use SwiftUI animations to indicate data updates in your widgets and Live Activities.
 - [Linking to specific app scenes from your widget or Live Activity](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md)
   Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
+- [func widgetURL(URL?) -> some View
+](../swiftui/view/widgeturl(_:).md)
+  Sets the URL to open in the containing app when the user clicks the widget.
 
 
 ---

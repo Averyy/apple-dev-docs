@@ -22,7 +22,7 @@ class SKPayment
 
 ## Mentions
 
-- [Promoting In-App Purchases](promoting-in-app-purchases.md)
+- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
 - [Testing a payment request](testing-a-payment-request.md)
 
 #### Overview

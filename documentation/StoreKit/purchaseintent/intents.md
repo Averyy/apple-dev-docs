@@ -20,7 +20,7 @@ static var intents: PurchaseIntent.PurchaseIntents { get }
 ## Mentions
 
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 

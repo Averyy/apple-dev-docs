@@ -17,7 +17,11 @@ nonisolated func offset(z: CGFloat) -> some View
 
 #### Return Value
 
-A view that is extruded forward in Z by `distance`.
+A view that is extruded forward in Z by `z`.
+
+## Parameters
+
+- `z`: The distance to extrude the view forward in Z, in points.
 
 ## See Also
 

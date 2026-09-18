@@ -21,7 +21,7 @@ var jsonString: String { get }
 
 #### Discussion
 
-Use this type to retrieve a JSON representation, like:
+Use this property to retrieve a JSON representation, like:
 
 ```swift
 // Create an object with properties.

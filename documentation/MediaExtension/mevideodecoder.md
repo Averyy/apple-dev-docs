@@ -89,6 +89,8 @@ If a change occurs in the format description on incoming [`CMSampleBuffer`](http
 
 ## See Also
 
+- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+  Extend the media formats the system can open by providing a format reader and a video decoder.
 - [protocol MEVideoDecoderExtension](mevideodecoderextension.md)
   A protocol that defines a factory to create new video decoders for a codec type that the extension implements.
 - [class MEDecodeFrameOptions](medecodeframeoptions.md)

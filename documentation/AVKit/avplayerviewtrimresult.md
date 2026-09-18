@@ -18,7 +18,7 @@ enum AVPlayerViewTrimResult
 
 ### Creating a trim result
 - [init?(rawValue: Int)](avplayerviewtrimresult/init(rawvalue:).md)
-### Trim Results
+### Trim results
 - [AVPlayerViewTrimResult.okButton](avplayerviewtrimresult/okbutton.md)
   The user clicked the Trim button.
 - [AVPlayerViewTrimResult.cancelButton](avplayerviewtrimresult/cancelbutton.md)
@@ -36,10 +36,10 @@ enum AVPlayerViewTrimResult
 
 ## See Also
 
-- [var canBeginTrimming: Bool](avplayerview/canbegintrimming.md)
-  A Boolean value that indicates whether the player view can begin trimming.
-- [func beginTrimming(completionHandler: ((AVPlayerViewTrimResult) -> Void)?)](avplayerview/begintrimming(completionhandler:).md)
-  Puts the player view into trimming mode.
+- [Implementing trimming in a macOS player](implementing-trimming-in-a-macos-player.md)
+  Provide a QuickTime media-trimming experience in your macOS app.
+- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
+  Display standard controls in your app to edit the timeline of the currently playing media.
 
 
 ---

@@ -6,7 +6,7 @@
 The transport type of a video stream.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -218,6 +218,8 @@ LazyVStack {
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
+- [AVKit updates](avkit.md)
+  Learn about important changes to AVKit.
 - [Background Tasks updates](backgroundtasks.md)
   Learn about important changes in Background Tasks.
 - [Bundle Resources updates](bundleresources.md)

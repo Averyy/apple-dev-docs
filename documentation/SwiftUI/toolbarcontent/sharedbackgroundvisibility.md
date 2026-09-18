@@ -36,6 +36,13 @@ ContentView()
 
 - `visibility`: The visibility of the background effect.
 
+## See Also
+
+- [func hidden(Bool) -> some ToolbarContent](toolbarcontent/hidden(_:).md)
+  Hides a toolbar item within its toolbar.
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
+  Defines the visibility priority for a toolbar item.
+
 
 ---
 

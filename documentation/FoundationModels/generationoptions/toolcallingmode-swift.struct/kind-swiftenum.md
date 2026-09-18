@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: enum
 
+A representation of the different ways a model can use tools.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,8 +23,11 @@ enum Kind
 
 ### Tool calling mode cases
 - [GenerationOptions.ToolCallingMode.Kind.allowed](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/allowed.md)
+  The model may call tools.
 - [GenerationOptions.ToolCallingMode.Kind.disallowed](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/disallowed.md)
+  The model can’t call any tools.
 - [GenerationOptions.ToolCallingMode.Kind.required](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/required.md)
+  The model must call one or more tools.
 
 ## Relationships
 
@@ -35,6 +40,7 @@ enum Kind
 ## See Also
 
 - [var kind: GenerationOptions.ToolCallingMode.Kind](generationoptions/toolcallingmode-swift.struct/kind-swift.property.md)
+  The tool-calling behavior this mode represents.
 
 
 ---

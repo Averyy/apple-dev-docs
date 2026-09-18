@@ -56,6 +56,8 @@ struct MyTool: Tool {
 ### Accessing the referenced image
 - [func resolved(in: some Sequence<Transcript.Entry>) -> Transcript.ImageAttachment?](imagereference/resolved(in:).md)
   Returns the referenced image from the transcript.
+### Default Implementations
+- [Generable Implementations](imagereference/generable-implementations.md)
 
 ## Relationships
 

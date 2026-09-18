@@ -31,8 +31,8 @@ enum QueueInsertionLocation: String {
     case tail
 
     static let caseDisplayRepresentations: [Self: DisplayRepresentation] = [
-        .next: "Next",
-        .tail: "Tail"
+        .next: "Play Next",
+        .tail: "Play Last"
     ]
 }
 ```

@@ -6,7 +6,7 @@
 Set if the sample bits occupy the entire available bits for the channel, clear if they are high or low aligned within the channel.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

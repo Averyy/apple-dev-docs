@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: enum
 
-Controls the amount of reasoning that the model is allowed to output before producing a response.
+A level of reasoning the model is allowed to output before producing a response.
 
 **Availability**:
 - iOS 27.0+
@@ -29,7 +29,7 @@ enum ReasoningLevel
 - [ContextOptions.ReasoningLevel.moderate](contextoptions/reasoninglevel-swift.enum/moderate.md)
   A level that indicates a moderate amount of reasoning.
 - [ContextOptions.ReasoningLevel.custom(_:)](contextoptions/reasoninglevel-swift.enum/custom(_:).md)
-  A custom level that indicates a level not supported by the other cases.
+  A custom level not represented by the other cases.
 
 ## Relationships
 
@@ -41,7 +41,7 @@ enum ReasoningLevel
 ## See Also
 
 - [var reasoningLevel: ContextOptions.ReasoningLevel?](contextoptions/reasoninglevel-swift.property.md)
-  Controls the amount of reasoning that the model is allowed to output before producing a response.
+  A value that controls the amount of reasoning the model is allowed to output before producing a response.
 
 
 ---

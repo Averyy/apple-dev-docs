@@ -44,7 +44,7 @@ For more information about how to use these modifiers, see [`Modal presentations
 - [func confirmationDialog(_:item:titleVisibility:actions:)](view/confirmationdialog(_:item:titlevisibility:actions:).md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:).md)
-  Presents a confirmation dialog when a dismiss action has been triggered.
+  Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 ### Confirmation dialogs with a message
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:message:).md)
   Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
@@ -53,7 +53,7 @@ For more information about how to use these modifiers, see [`Modal presentations
 - [func confirmationDialog(_:item:titleVisibility:actions:message:)](view/confirmationdialog(_:item:titlevisibility:actions:message:).md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:message:).md)
-  Presents a confirmation dialog when a dismiss action has been triggered.
+  Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 ### Dialog configuration
 - [func dialogIcon(Image?) -> some View](view/dialogicon(_:).md)
   Configures the icon used by dialogs within this view.
@@ -242,6 +242,14 @@ For more information about how to use these modifiers, see [`Modal presentations
   Presents a view for allowing the user to customize a specified shared album.
 - [func photosSharedAlbumPostingSheet(isPresented:items:defaultAlbumIdentifier:photoLibrary:completion:)](view/photossharedalbumpostingsheet(ispresented:items:defaultalbumidentifier:photolibrary:completion:).md)
   Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
+- [func photosReferenceImageViewer(asset: Binding<PHAsset?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(asset:onprocessingcompletion:).md)
+  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `isPresented` is set to true.
+- [func photosReferenceImageViewer(fileURL: Binding<URL?>, onProcessingCompletion: ((Result<URL, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(fileurl:onprocessingcompletion:).md)
+  Presents an image viewer for a given image file containing Apple Reference Image data when `fileURL` is set.
+- [func photosReferenceImageViewer(pickerItem: Binding<PhotosPickerItem?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(pickeritem:onprocessingcompletion:).md)
+  Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `isPresented` is set to true.
+- [func photosReferenceImageViewer(pickerResult: Binding<PHPickerResult?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(pickerresult:onprocessingcompletion:).md)
+  Presents an image viewer for the resulting image containing Apple Reference Image data from `PHPickerViewController` when `isPresented` is set to true.
 ### Translation
 - [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
   Presents a translation popover when a given condition is true.

@@ -40,6 +40,8 @@ A struct describing the state of the legible options menu.
 ## See Also
 
 - [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
+- [class AVContentSelectionViewController](avcontentselectionviewcontroller.md)
+  A view controller for providing additional UI to the multiview experience.
 
 
 ---

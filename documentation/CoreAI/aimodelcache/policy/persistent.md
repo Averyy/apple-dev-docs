@@ -21,6 +21,8 @@ static let persistent: AIModelCache.Policy
 
 This policy ensures the system does not purge specialized assets until the next OS update. You can manually delete them, but the system does *not* automatically purge them under low storage or when the source `.aimodel` changes.
 
+> **Note**: On tvOS this setting is unavailable. Any policy must be purgeable for storagePressure.
+
 ## See Also
 
 - [static let `default`: AIModelCache.Policy](aimodelcache/policy/default.md)

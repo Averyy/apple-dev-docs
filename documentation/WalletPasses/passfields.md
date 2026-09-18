@@ -19,7 +19,7 @@ object PassFields
 ## Mentions
 
 - [Creating a coupon pass](creating-a-coupon-pass.md)
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
 - [Creating a store card pass](creating-a-store-card-pass.md)
 
 ## Topics
@@ -62,7 +62,7 @@ object PassFields
 
 - [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.

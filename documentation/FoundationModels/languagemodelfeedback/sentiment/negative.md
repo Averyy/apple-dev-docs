@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-A negative sentiment
+A negative sentiment.
 
 **Availability**:
 - iOS 26.0+
@@ -26,9 +26,9 @@ case negative
 ## See Also
 
 - [LanguageModelFeedback.Sentiment.neutral](languagemodelfeedback/sentiment/neutral.md)
-  A neutral sentiment
+  A neutral sentiment.
 - [LanguageModelFeedback.Sentiment.positive](languagemodelfeedback/sentiment/positive.md)
-  A positive sentiment
+  A positive sentiment.
 
 
 ---

@@ -6,7 +6,7 @@
 The minimum and maximum range for the slider value.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

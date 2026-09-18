@@ -6,7 +6,7 @@
 Gets the current sample time in the ring buffer that the client reads from and writes to.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

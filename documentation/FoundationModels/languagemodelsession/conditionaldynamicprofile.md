@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
+A dynamic profile that resolves to one of two profiles, depending on a condition.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -35,8 +37,11 @@ struct ConditionalDynamicProfile<TrueContent, FalseContent> where TrueContent : 
 - [LanguageModelSession.DynamicProfileBuilder](languagemodelsession/dynamicprofilebuilder.md)
   A type that represents a dynamic profile builder.
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
+  A type that represents the dynamic profile a modifier applies to.
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+  A dynamic profile with a modifier applied to it.
 - [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
+  A type-erased dynamic profile.
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 

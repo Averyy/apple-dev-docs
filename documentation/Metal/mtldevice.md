@@ -73,6 +73,7 @@ If your app uses more than one GPU (see [`Multi-GPU systems`](multi-gpu-systems.
   A Boolean value that indicates whether the device supports placement sparse resources.
 ### Instance Methods
 - [func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?](mtldevice/functionhandle(function:)-4bw39.md)
+  Returns the handle for a function that you can add to a function table.
 - [func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)?](mtldevice/functionhandle(function:)-w9ia.md)
   Get the function handle for the specified binary-linked function from the pipeline state.
 - [func makeArchive(url: URL) throws -> any MTL4Archive](mtldevice/makearchive(url:).md)

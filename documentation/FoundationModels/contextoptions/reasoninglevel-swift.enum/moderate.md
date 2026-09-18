@@ -30,7 +30,7 @@ case moderate
 - [ContextOptions.ReasoningLevel.light](contextoptions/reasoninglevel-swift.enum/light.md)
   A level that indicates light reasoning that’s good for quick responses.
 - [ContextOptions.ReasoningLevel.custom(_:)](contextoptions/reasoninglevel-swift.enum/custom(_:).md)
-  A custom level that indicates a level not supported by the other cases.
+  A custom level not represented by the other cases.
 
 
 ---

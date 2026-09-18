@@ -3,6 +3,8 @@
 **Framework**: AVFAudio  
 **Kind**: init
 
+Creates a deactivation-options set from a raw bitmask.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+
@@ -17,6 +19,10 @@
 ```swift
 init(rawValue: UInt)
 ```
+
+## Parameters
+
+- `rawValue`: A bitwise combination of the defined [`AVAudioSessionDeactivationOptions`](avaudiosessiondeactivationoptions.md) constants.
 
 
 ---

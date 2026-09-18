@@ -39,6 +39,8 @@ For popover segues, the destination view controller contains the content to be d
 - [Equatable](../swift/equatable.md)
 - [Hashable](../swift/hashable.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

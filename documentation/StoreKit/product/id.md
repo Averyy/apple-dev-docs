@@ -26,14 +26,14 @@ let id: String
 
 #### Discussion
 
-You configure In-App Purchases, including the product ID, in App Store Connect. For information, see [`Overview for configuring In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+You configure Apple In-App Purchases, including the product ID, in App Store Connect. For information, see [`Overview for configuring Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 ## See Also
 
 - [let type: Product.ProductType](product/type.md)
-  The in-app purchase product type.
+  The Apple In-App Purchase product type.
 - [Product.ProductType](product/producttype.md)
-  The types of in-app purchases.
+  The types of Apple In-App Purchases.
 
 
 ---

@@ -21,6 +21,7 @@ init<T>(payloadType: T.Type, onPaste: @escaping ([T]) -> Void) where T : Transfe
 
 ## Parameters
 
+- `payloadType`: The type that you want to paste via the `PasteButton`.
 - `onPaste`: The handler to call on trigger of the button with at least one item of the specified `Transferable` type from the pasteboard.
 
 ## See Also

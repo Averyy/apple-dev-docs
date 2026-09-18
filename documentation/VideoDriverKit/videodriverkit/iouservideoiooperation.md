@@ -6,7 +6,7 @@
 The IO operation being called on the operation handler block.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

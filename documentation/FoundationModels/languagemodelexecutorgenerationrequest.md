@@ -30,19 +30,19 @@ A generation request is the input payload that [`respond(to:model:streamingInto:
   Creates a generation request.
 ### Configuring a generation request
 - [var id: UUID](languagemodelexecutorgenerationrequest/id.md)
-  A request id for logging and tracing purposes
+  A request id for logging and tracing purposes.
 - [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
-  Metadata to attach to the request
+  Metadata to attach to the request.
 - [var contextOptions: ContextOptions](languagemodelexecutorgenerationrequest/contextoptions.md)
-  Settings that configure how the model is prompted
+  Settings that configure how the model is prompted.
 - [var enabledToolDefinitions: [Transcript.ToolDefinition]](languagemodelexecutorgenerationrequest/enabledtooldefinitions.md)
-  The subset tool definitions that the model is allowed to call
+  The subset of tool definitions that the model is allowed to call.
 - [var generationOptions: GenerationOptions](languagemodelexecutorgenerationrequest/generationoptions.md)
-  Generation options that control sampling behavior
+  Generation options that control sampling behavior.
 - [var schema: GenerationSchema?](languagemodelexecutorgenerationrequest/schema.md)
-  An optional schema dictating the required output format
+  An optional schema dictating the required output format.
 - [var transcript: Transcript](languagemodelexecutorgenerationrequest/transcript.md)
-  A transcript to generate the next entry for
+  A transcript to generate the next entry for.
 
 ## Relationships
 

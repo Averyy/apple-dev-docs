@@ -6,7 +6,7 @@
 The custom property data type is an `OSString` value.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

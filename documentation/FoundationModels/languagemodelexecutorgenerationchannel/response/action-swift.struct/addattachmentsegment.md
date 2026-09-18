@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
+Creates an action that adds an attachment segment to the entry.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,10 @@
 ```swift
 static func addAttachmentSegment(_ segment: Transcript.AttachmentSegment) -> LanguageModelExecutorGenerationChannel.Response.Action
 ```
+
+## Parameters
+
+- `segment`: The attatchment segment to add.
 
 
 ---

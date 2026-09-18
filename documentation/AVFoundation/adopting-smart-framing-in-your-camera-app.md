@@ -142,6 +142,8 @@ The order of applying aspect ratio and zoom factor affects the visual transition
 
 - [Choosing a capture device](choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
+- [Supporting device rotation in your camera app](supporting-device-rotation-in-your-camera-app.md)
+  Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
 - [class AVCaptureDevice](avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
 - [class AVCaptureDeviceInput](avcapturedeviceinput.md)

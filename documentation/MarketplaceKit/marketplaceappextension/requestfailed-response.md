@@ -23,7 +23,7 @@ func requestFailed(response: HTTPURLResponse) async -> Bool
 
 #### Discussion
 
-iOS invokes your implementation of this callback when it receives anything but an OK status from your marketplace endpoints. Your implementation performs the necessary action according to the given status code. Your server might be down or it might return a code that indicates that the person needs to reauthenticate, if for example, their access token expires.
+The system invokes your implementation of this callback when it receives anything but an OK status from your marketplace endpoints. Your implementation performs the necessary action according to the given status code. Your server might be down, or it might return a code that indicates that the person needs to reauthenticate if, for example, their access token expired.
 
 For more information, see [`Installing apps from an alternative marketplace`](installing-apps-from-an-alternative-marketplace.md).
 

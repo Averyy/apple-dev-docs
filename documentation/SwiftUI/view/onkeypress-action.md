@@ -28,6 +28,17 @@ A modified view that binds hardware keyboard input when focused.
 
 SwiftUI performs the action for key-down and key-repeat events.
 
+The following example plays or pauses a video when someone presses the space bar:
+
+```swift
+PlayerView(item: item)
+    .focusable()
+    .onKeyPress(.space) {
+        player.togglePlayback()
+        return .handled
+    }
+```
+
 ## Parameters
 
 - `key`: The key to match against incoming hardware keyboard events.
@@ -44,6 +55,7 @@ SwiftUI performs the action for key-down and key-repeat events.
 - [func onKeyPress(keys: Set<KeyEquivalent>, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](view/onkeypress(keys:phases:action:).md)
   Performs an action if the user presses one or more keys on a hardware keyboard while the view has focus.
 - [struct KeyPress](keypress.md)
+  A hardware keyboard event that a focused view receives.
 
 
 ---

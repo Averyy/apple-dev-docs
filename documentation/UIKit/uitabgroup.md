@@ -106,6 +106,8 @@ Use tab groups to create a rich hierarchy of tab items. On iPad, the system disp
   A tab subclass that represents the system’s search tab.
 - [class UIPageViewController](uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
+- [class UIArrangementViewController](uiarrangementviewcontroller.md)
+  A view controller that presents its container view controllers through an arrangement.
 
 
 ---

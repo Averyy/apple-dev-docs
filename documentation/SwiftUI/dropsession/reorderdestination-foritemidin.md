@@ -61,6 +61,7 @@ struct ContentView: View {
 ## Parameters
 
 - `item`: The type of reorderable items in the container.
+- `itemID`: A keypath to the identifier used to represent an item.
 - `collectionID`: The identifier type for collections in your container.
 
 ## See Also

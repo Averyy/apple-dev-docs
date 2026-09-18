@@ -18,7 +18,7 @@ var infoViewActions: [UIAction]! { get set }
 ## Mentions
 
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
-- [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
+- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
 
 #### Discussion
 

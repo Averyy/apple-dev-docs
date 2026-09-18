@@ -20,7 +20,7 @@ optional func playerViewControllerWillStartPictureInPicture(_ playerViewControll
 
 ## Mentions
 
-- [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
+- [Adopting Picture in Picture in a standard player](adopting-picture-in-picture-in-a-standard-player.md)
 
 #### Discussion
 

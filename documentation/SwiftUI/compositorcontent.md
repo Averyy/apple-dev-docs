@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: protocol
 
+A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
+
 **Availability**:
 - macOS 26.0+
 - visionOS 26.0+
@@ -13,6 +15,34 @@
 @MainActor
 protocol CompositorContent
 ```
+
+#### Overview
+
+Conform to this protocol when you draw an immersive scene with your own Metal renderer. Implement [`body`](compositorcontent/body-swift.property.md) to describe the content, then pass the type to an [`ImmersiveSpace`](immersivespace.md) in place of a view. The `CompositorLayer` type in CompositorServices gives you the render loop to draw into.
+
+The following example wraps a renderer in a type that an immersive space can present:
+
+```swift
+struct StarField: CompositorContent {
+    var body: some CompositorContent {
+        CompositorLayer(configuration: StarFieldConfiguration()) {
+            layerRenderer in
+            renderLoop(layerRenderer)
+        }
+    }
+}
+
+@main
+struct StarFieldApp: App {
+    var body: some Scene {
+        ImmersiveSpace {
+            StarField()
+        }
+    }
+}
+```
+
+Compose these types the same way you compose views: a body can contain another [`CompositorContent`](compositorcontent.md), and [`AnyCompositorContent`](anycompositorcontent.md) erases the concrete type when you need to return one of several kinds.
 
 ## Topics
 

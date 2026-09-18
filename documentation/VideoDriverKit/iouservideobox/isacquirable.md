@@ -6,7 +6,7 @@
 A Boolean value indicating if box can be acquired.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

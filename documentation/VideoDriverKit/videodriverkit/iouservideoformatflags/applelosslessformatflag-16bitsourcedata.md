@@ -6,7 +6,7 @@
 This flag is set for Apple Lossless data that was sourced from 16 bit native endian signed integer data.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

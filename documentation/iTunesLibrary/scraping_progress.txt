@@ -1,4 +1,4 @@
 Completed scraping iTunes Library!
-Total pages scraped: 283
-Pages skipped (unchanged): 1
+Total pages scraped: 2
+Pages skipped (unchanged): 282
 Pages failed: 0

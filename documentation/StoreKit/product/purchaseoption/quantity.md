@@ -26,7 +26,7 @@ An instance of [`Product.PurchaseOption`](product/purchaseoption.md) to use in [
 
 #### Discussion
 
-The quantity applies to consumable in-app purchases and non-renewing subscriptions.
+The quantity applies to consumable Apple In-App Purchases and non-renewing subscriptions.
 
 ## Parameters
 

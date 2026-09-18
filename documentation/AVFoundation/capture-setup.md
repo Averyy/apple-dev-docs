@@ -41,6 +41,8 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 - [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
+- [Registering a camera capture accessory on iPhone Duo](registering-a-camera-capture-accessory-on-iphone-duo.md)
+  Provide content to the person in front of the camera by pairing it with your capture interface.
 - [class AVCaptureSession](avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.
 - [class AVCaptureMultiCamSession](avcapturemulticamsession.md)
@@ -56,6 +58,8 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
 - [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
   Capture the optimal shot by providing automatic framing recommendations.
+- [Supporting device rotation in your camera app](supporting-device-rotation-in-your-camera-app.md)
+  Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
 - [class AVCaptureDevice](avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
 - [class AVCaptureDeviceInput](avcapturedeviceinput.md)

@@ -22,7 +22,7 @@ static func sync() async throws
 
 #### Discussion
 
-Include some mechanism in your app, such as a Restore Purchases button, to let users restore their in-app purchases. In rare cases when a user suspects the app isn’t showing all the transactions, call [`sync()`](appstore/sync().md). By calling [`sync()`](appstore/sync().md), you force the app to obtain transaction information and subscription status from the App Store.
+Include some mechanism in your app, such as a Restore Purchases button, to let users restore their Apple In-App Purchases. In rare cases when a user suspects the app isn’t showing all the transactions, call [`sync()`](appstore/sync().md). By calling [`sync()`](appstore/sync().md), you force the app to obtain transaction information and subscription status from the App Store.
 
 > ❗ **Important**:  Calling [`sync()`](appstore/sync().md)displays a system prompt that asks users to authenticate with their App Store credentials. Call this function only in response to an explicit user action, like tapping or clicking a button.
 

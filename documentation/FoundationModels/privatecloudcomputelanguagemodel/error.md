@@ -30,10 +30,12 @@ enum Error
 - [case networkFailure(PrivateCloudComputeLanguageModel.Error.NetworkFailure)](privatecloudcomputelanguagemodel/error/networkfailure(_:).md)
   An error that occurs when a network is available, but PCC is inaccessible.
 - [PrivateCloudComputeLanguageModel.Error.NetworkFailure](privatecloudcomputelanguagemodel/error/networkfailure.md)
+  Information about a network problem that prevented a request from completing.
 ### Service unavailable error
 - [case serviceUnavailable(PrivateCloudComputeLanguageModel.Error.ServiceUnavailable)](privatecloudcomputelanguagemodel/error/serviceunavailable(_:).md)
   Services are unavailable.
 - [PrivateCloudComputeLanguageModel.Error.ServiceUnavailable](privatecloudcomputelanguagemodel/error/serviceunavailable.md)
+  Information about the model service being unable to handle a request.
 
 ## Relationships
 

@@ -100,6 +100,19 @@ To get started arranging views, see [`Layout fundamentals`](layout-fundamentals.
   Configures the content margin for a provided placement.
 - [func contentMargins(_:_:for:)](view/contentmargins(_:_:for:).md)
   Configures the content margin for a provided placement.
+### Arrangement views
+- [func arrangementViewStyle(some ArrangementViewStyle) -> some View](view/arrangementviewstyle(_:).md)
+  Sets the style for arrangement views within this view.
+- [func overlayArrangementEdge(_:)](view/overlayarrangementedge(_:).md)
+  The horizontal edge a view in an overlay arrangement occupies when the arrangement transitions to a horizontal layout.
+- [func splitArrangementFixedLayoutSize(horizontal: Bool, vertical: Bool) -> some View](view/splitarrangementfixedlayoutsize(horizontal:vertical:).md)
+  Sets the preferred size constraint for an arrangement view in a split style to the ideal size of the view within its container. The arrangement view will prefer this size, but may resize to a smaller size depending on the priority of the view.
+- [func splitArrangementLayoutRatio(CGFloat?) -> some View](view/splitarrangementlayoutratio(_:).md)
+  Sets the preferred size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+- [func splitArrangementLayoutRatio(minHorizontal: CGFloat?, idealHorizontal: CGFloat?, maxHorizontal: CGFloat?, minVertical: CGFloat?, idealVertical: CGFloat?, maxVertical: CGFloat?) -> some View](view/splitarrangementlayoutratio(minhorizontal:idealhorizontal:maxhorizontal:minvertical:idealvertical:maxvertical:).md)
+  Sets the size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+- [func splitArrangementLayoutSize(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?) -> some View](view/splitarrangementlayoutsize(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:).md)
+  Sets the size constraints for an arrangement view in a split style.
 ### Layer order
 - [func zIndex(Double) -> some View](view/zindex(_:).md)
   Controls the display order of overlapping views.

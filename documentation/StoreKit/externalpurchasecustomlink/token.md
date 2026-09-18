@@ -22,7 +22,7 @@ struct Token
 
 #### Overview
 
-StoreKit returns an external purchase token of this type when you call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function. For more information, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
+StoreKit returns an external purchase token of this type when you call the [`token(for:)`](externalpurchasecustomlink/token(for:)-6pixj.md) function. For more information, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
 
 ## Topics
 

@@ -19,6 +19,10 @@ Creates a hosting view object from the contents of the specified archive.
 
 The default implementation of this method throws an exception. To create your view from an archive, override this method and initialize the superclass using the [`init(coder:rootView:)`](nshostingview/init(coder:rootview:).md) method instead.
 
+## Parameters
+
+- `aDecoder`: The decoder to use during initialization.
+
 ## See Also
 
 - [init(rootView: Content)](nshostingview/init(rootview:).md)

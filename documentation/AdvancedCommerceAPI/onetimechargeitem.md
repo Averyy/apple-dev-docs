@@ -16,7 +16,7 @@ object OneTimeChargeItem
 
 ## Mentions
 
-- [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
 
 ## Properties
 

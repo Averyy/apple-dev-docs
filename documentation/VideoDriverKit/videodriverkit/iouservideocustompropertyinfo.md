@@ -6,7 +6,7 @@
 A description of a a custom property that allow the Host to marshal the data between the Host and its clients.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

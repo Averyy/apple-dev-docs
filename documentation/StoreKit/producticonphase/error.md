@@ -22,7 +22,7 @@ var error: (any Error)? { get }
 
 #### Discussion
 
-The [`error`](producticonphase/error.md) value is `nil` while the icon is loading, if the icon successfully loads, or if you haven’t set up a promotional image for the in-app purchase in App Store Connect. Use this value as a convenience to access the error value in code that assumes you’ve set up a promotional image.
+The [`error`](producticonphase/error.md) value is `nil` while the icon is loading, if the icon successfully loads, or if you haven’t set up a promotional image for the Apple In-App Purchase in App Store Connect. Use this value as a convenience to access the error value in code that assumes you’ve set up a promotional image.
 
 
 ---

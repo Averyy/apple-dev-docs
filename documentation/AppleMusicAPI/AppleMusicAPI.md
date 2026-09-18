@@ -127,7 +127,7 @@ Use this API to retrieve information about albums, songs, artists, playlists, mu
 - [Media Player](../mediaplayer/mediaplayer.md)
   Find and play songs, audio podcasts, audio books, and more from within your app.
 - [StoreKit](../storekit/storekit.md)
-  Support In-App Purchases and interactions with the App Store.
+  Support Apple In-App Purchases and interactions with the App Store.
 
 
 ---

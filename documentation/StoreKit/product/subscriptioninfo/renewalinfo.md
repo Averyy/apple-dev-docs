@@ -25,7 +25,7 @@ struct RenewalInfo
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 - [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 #### Overview
 

@@ -21,7 +21,7 @@ var destinationRGBBlendFactor: MTLBlendFactor { get set }
 
 #### Discussion
 
-This property defaults to `MTLBlendFactorZero`.
+This property defaults to [`MTLBlendFactor.zero`](mtlblendfactor/zero.md).
 
 
 ---

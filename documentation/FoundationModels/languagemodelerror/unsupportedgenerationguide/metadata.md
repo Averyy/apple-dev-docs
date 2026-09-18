@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+Additional information about the failure, keyed by name.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var metadata: [String : any Sendable]
 ## See Also
 
 - [var schemaName: String?](languagemodelerror/unsupportedgenerationguide/schemaname.md)
+  The name of the schema whose generation guide isn’t supported, if any.
 - [var debugDescription: String](languagemodelerror/unsupportedgenerationguide/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 
 ---

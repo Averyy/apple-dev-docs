@@ -22,6 +22,7 @@ var metadata: [String : GeneratedContent]
 ## See Also
 
 - [var description: String](transcript/reasoning/description.md)
+  A textual representation of the reasoning entry.
 - [var segments: [Transcript.Segment]](transcript/reasoning/segments.md)
   Ordered reasoning segments.
 - [var signature: Data?](transcript/reasoning/signature.md)

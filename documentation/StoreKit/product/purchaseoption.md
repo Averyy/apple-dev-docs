@@ -22,7 +22,7 @@ struct PurchaseOption
 
 #### Overview
 
-Associate purchase options with an in-app purchase when you call the methods to initiate a purchase, such as [`purchase(options:)`](product/purchase(options:).md) or [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md). Use the testing-specific options with [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) or in the sandbox testing environment.
+Associate purchase options with an Apple In-App Purchase when you call the methods to initiate a purchase, such as [`purchase(options:)`](product/purchase(options:).md) or [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md). Use the testing-specific options with [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) or in the sandbox testing environment.
 
 Purchase options enable you to provide additional information for the purchase, such as an app account token, promotional offer, win back offer, and quantity. You can also use purchase options to indicate how the transaction behaves if the storefront changes, and to indicate whether the transaction is eligible for an introductory offer.
 

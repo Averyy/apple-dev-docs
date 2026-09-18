@@ -200,7 +200,9 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/human
 - [func searchDictationBehavior(TextInputDictationBehavior) -> some View](view/searchdictationbehavior(_:).md)
   Configures the dictation behavior for any search fields configured by the searchable modifier.
 - [struct TextInputDictationActivation](textinputdictationactivation.md)
+  A configuration that determines what starts dictation in a search field.
 - [struct TextInputDictationBehavior](textinputdictationbehavior.md)
+  A behavior that determines whether a search field offers dictation, and what starts it.
 ### Configuring the Writing Tools behavior
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](view/writingtoolsbehavior(_:).md)
   Specifies the Writing Tools behavior for text and text input in the environment.

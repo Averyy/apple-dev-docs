@@ -27,7 +27,9 @@ See the [`TextInputDictationBehavior`](textinputdictationbehavior.md) type for m
 ## See Also
 
 - [struct TextInputDictationActivation](textinputdictationactivation.md)
+  A configuration that determines what starts dictation in a search field.
 - [struct TextInputDictationBehavior](textinputdictationbehavior.md)
+  A behavior that determines whether a search field offers dictation, and what starts it.
 
 
 ---

@@ -37,11 +37,15 @@ convenience init(model: some LanguageModel, dynamicInstructions: sending some Dy
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
 - [LanguageModelSession.ConditionalDynamicProfile](languagemodelsession/conditionaldynamicprofile.md)
+  A dynamic profile that resolves to one of two profiles, depending on a condition.
 - [LanguageModelSession.DynamicProfileBuilder](languagemodelsession/dynamicprofilebuilder.md)
   A type that represents a dynamic profile builder.
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
+  A type that represents the dynamic profile a modifier applies to.
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+  A dynamic profile with a modifier applied to it.
 - [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
+  A type-erased dynamic profile.
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 

@@ -66,6 +66,7 @@ TabView {
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
 - [struct ContentToolbarPlacement](contenttoolbarplacement.md)
+  A region of the interface that hosts its own toolbar content.
 
 
 ---

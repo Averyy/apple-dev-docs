@@ -21,7 +21,7 @@ Subclass or use view controller containment to add additional UI elements to the
 
 ## Topics
 
-### Creating a view controller.
+### Creating a view controller
 - [init?(coder: NSCoder)](avcontentselectionviewcontroller/init(coder:).md)
   Creates a view controller with data in an unarchiver.
 - [init(nibName: String?, bundle: Bundle?)](avcontentselectionviewcontroller/init(nibname:bundle:).md)
@@ -53,8 +53,8 @@ Subclass or use view controller containment to add additional UI elements to the
 
 ## See Also
 
-- [var contentSelectionViewController: AVContentSelectionViewController?](avmultiviewmanager/contentselectionviewcontroller.md)
-  A view controller that presents a user interface to select additional video content to display.
+- [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
 
 
 ---

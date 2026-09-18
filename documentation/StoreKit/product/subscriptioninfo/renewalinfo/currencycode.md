@@ -28,7 +28,7 @@ Use [`currencyCode`](product/subscriptioninfo/renewalinfo/currencycode.md) to ac
 
 Don’t use [`currencyCode`](transaction/currencycode.md) to infer the storefront. Use the [`storefront`](transaction/storefront.md) value in the transaction instead.
 
-For more information on how you set prices, see [`Set a price for an in-app purchase`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).
+For more information on how you set prices, see [`Set a price for an Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).
 
 ## See Also
 

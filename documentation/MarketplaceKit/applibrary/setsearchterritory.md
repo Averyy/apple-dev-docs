@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: method
 
-Defines a country code that iOS uses to filter the search results of apps that aren’t available in that country.
+Defines a country code that the system uses to filter the search results of apps that aren’t available in that country.
 
 **Availability**:
 - iOS 17.4+
@@ -18,7 +18,7 @@ final func setSearchTerritory(_ territory: String?) async
 
 #### Discussion
 
-Set this property to an ISO 3166-1 alpha-2, two-letter country code. Any system-wide app search — such as through Lookup, Safari, or Spotlight — that a person starts after you set this, results in apps matching the criteria that are available in that country.
+Set this property to an ISO 3166-1 alpha-2, two-letter country code. Any system-wide app search, such as through Lookup, Safari, or Spotlight, that a person starts after you set this property results in apps matching the criteria available in that country.
 
 This property is optional and you choose how to derive the value. You can set this property using the country from a person’s billing address — which is how the App Store sets its search territory — or you can use some other source, for example, language settings.
 

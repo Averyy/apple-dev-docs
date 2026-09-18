@@ -23,10 +23,14 @@ struct UnsupportedLanguageOrLocale
 
 ### Creating an error instance
 - [init(languageCode: Locale.LanguageCode, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedlanguageorlocale/init(languagecode:debugdescription:metadata:).md)
+  Creates information describing a language or locale the model doesn’t support.
 ### Inspecting unsupported language or locale errors
 - [var metadata: [String : any Sendable]](languagemodelerror/unsupportedlanguageorlocale/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var languageCode: Locale.LanguageCode](languagemodelerror/unsupportedlanguageorlocale/languagecode.md)
+  The language code that the model doesn’t support.
 - [var debugDescription: String](languagemodelerror/unsupportedlanguageorlocale/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 ## Relationships
 

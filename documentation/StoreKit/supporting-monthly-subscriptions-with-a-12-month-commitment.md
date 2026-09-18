@@ -53,7 +53,7 @@ A monthly subscription with a 12-month commitment isn’t a new product type; yo
 To configure the billing plan:
 
 1. Log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login).
-2. Navigate to your app’s In-App Purchases section and select the yearly auto-renewable subscription you want to update.
+2. Navigate to your app’s Apple In-App Purchases section and select the yearly auto-renewable subscription you want to update.
 3. Enable the monthly billing plan type for that product.
 4. Set a monthly price per territory.
 
@@ -73,7 +73,7 @@ Plan the tiers in your subscription group carefully to achieve the desired upgra
 
 #### Merchandise Monthly Subscriptions with 12 Month Commitments
 
-Use the [`Product`](product.md) API to fetch information for all your In-App Purchases, including monthly subscriptions with 12-month commitments. Use this information to display a store within your app to offer In-App Purchases.
+Use the [`Product`](product.md) API to fetch information for all your Apple In-App Purchases, including monthly subscriptions with 12-month commitments. Use this information to display a store within your app to offer Apple In-App Purchases.
 
 To specifically identify monthly subscriptions with 12-month commitments, check the [`pricingTerms`](product/subscriptioninfo/pricingterms-swift.property.md) property in [`SubscriptionInfo`](subscriptioninfo.md). This array returns one entry for each available billing plan. For a 1-year subscription with monthly billing enabled, it contains two entries:
 
@@ -137,7 +137,7 @@ When the customer successfully completes the purchase, StoreKit delivers a new t
 
 Each billing period in a commitment plan produces a new, independent transaction. Granting access to the monthly subscription with a 12-month commitment works the same way as for a standard monthly subscription.
 
-The simplest way to determine entitlements in your app is to check [`currentEntitlements`](transaction/currententitlements.md), which produces a sequence of the latest transactions that entitle a customer to In-App Purchases and subscriptions.
+The simplest way to determine entitlements in your app is to check [`currentEntitlements`](transaction/currententitlements.md), which produces a sequence of the latest transactions that entitle a customer to Apple In-App Purchases and subscriptions.
 
 You can also check each transaction ([`Transaction`](transaction.md)) to verify the following:
 
@@ -174,7 +174,7 @@ To get the same information about the subscription commitment, read the [`commit
 ## See Also
 
 - [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
-  Offer In-App Purchases and manage entitlements using signed transactions and status information.
+  Offer Apple In-App Purchases and manage entitlements using signed transactions and status information.
 - [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
   Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
 - [struct Product](product.md)

@@ -132,6 +132,8 @@ This class is generally used as-is, but can also be subclassed.
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)
   An object that manages a collection of tab objects.
+- [class UIArrangementViewController](uiarrangementviewcontroller.md)
+  A view controller that presents its container view controllers through an arrangement.
 
 
 ---

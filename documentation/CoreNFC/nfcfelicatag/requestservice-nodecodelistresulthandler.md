@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func requestService(nodeCodeList: [Data], resultHandler: @escaping (Result<[Data], any Error>) -> Void)
+@preconcurrency
+func requestService(nodeCodeList: [Data], resultHandler: @escaping @Sendable (Result<[Data], any Error>) -> Void)
 ```
 
 

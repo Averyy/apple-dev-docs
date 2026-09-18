@@ -23,7 +23,7 @@ A user-interface element that enables a person to install, update, or launch app
 
 #### Overview
 
-iOS doesn’t allow an app marketplace to install apps without a person’s consent. When iOS receives a request to install an app, it validates that request came from a user interaction with this button. If instead, a marketplace calls the [`AppLibrary`](applibrary.md) installation methods directly, the call may fail.
+The system doesn’t allow an app marketplace to install apps without a person’s consent. When the system receives a request to install an app, it validates that request came from a person’s interaction with this button. If instead a marketplace calls the [`AppLibrary`](applibrary.md) installation methods directly, the call may fail.
 
 ## Topics
 

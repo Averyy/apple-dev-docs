@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for the line drawn under a run of attributed text.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,17 @@
 ```swift
 @frozen
 enum UnderlineStyleAttribute
+```
+
+#### Overview
+
+Set this key to underline part of a string, such as a term that leads somewhere. The value carries both the pattern and the color of the line:
+
+```None
+var terms = AttributedString("Terms of Service")
+terms.underlineStyle = .single
+
+Text(terms)
 ```
 
 ## Relationships

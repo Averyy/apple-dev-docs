@@ -33,7 +33,7 @@ The following table shows how this time rate affects subscriptions with various 
 | Semiannually | 3 minutes |
 | Annually | 6 minutes |
 
-The sandbox environment doesn’t have an equivalent subscription renewal rate for [`SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds`](sktestsession/timerate-swift.enum/monthlyrenewaleverythirtyseconds.md). For more information about renewal rates in the sandbox environment, see [`Test in-app purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev7e89e149d).
+The sandbox environment doesn’t have an equivalent subscription renewal rate for [`SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds`](sktestsession/timerate-swift.enum/monthlyrenewaleverythirtyseconds.md). For more information about renewal rates in the sandbox environment, see [`Test Apple In-App Purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev7e89e149d).
 
 The time rate also affects the billing grace period and the billing retry period in the testing environment, as the table below shows:
 

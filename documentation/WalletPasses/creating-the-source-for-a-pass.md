@@ -113,7 +113,7 @@ Use UTF-16 encoding for non-ASCII characters.
 
 - [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
 - [Building a Pass](building-a-pass.md)
   Build a distributable pass.

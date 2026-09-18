@@ -34,6 +34,8 @@ If the view controller or one of its ancestors is a child of a split view contro
   The nearest ancestor in the view controller hierarchy that is a navigation controller.
 - [var tabBarController: UITabBarController?](uiviewcontroller/tabbarcontroller.md)
   The nearest ancestor in the view controller hierarchy that is a tab bar controller.
+- [var arrangementViewController: UIArrangementViewController?](uiviewcontroller/arrangementviewcontroller.md)
+  The nearest ancestor arrangement view controller.
 
 
 ---

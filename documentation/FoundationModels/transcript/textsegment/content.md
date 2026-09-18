@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The text of the segment.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

@@ -6,7 +6,7 @@
 Gets the decibel level value for the control.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Registers a handler to invoke in response to the specified app intent that your app receives.
+Registers a handler to run when the app receives an app intent that targets the associated scene.
 
 **Availability**:
 - iOS 26.0+
@@ -21,20 +21,20 @@ func onAppIntentExecution<I>(_ intent: I.Type = I.self, perform action: @escapin
 
 #### Return Value
 
-A view that handles the specified app intent’s perform
+A view that handles the specified app intent.
 
 #### Discussion
 
-Use this view modifier to receive instances in a particular scene within your app. The scene that SwiftUI routes the incoming user activity to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md).
+Add this modifier to a view and use it to receive app intents intended for one of your scenes. In your handler, use the contents of the app intent to configure the views of your scene. For example, retrieve the item from an `OpenIntent` type and display it in your views. Your closure runs before the app comes to the foreground and before the system calls the app intent’s `AppIntent/perform()` method, so you can use the closure to configure your interface in advance.
 
-The action closure is called before the app is foregrounded. If the app intent implements a perform() method, it will be called after the action closure. This can be useful if your app intent supports running in the background via the AppIntent.IntentModes API.
+> **Note**: In your closure, you can inspect the parameter values of the app intent, but cannot perform interactive requests with it. For example, you can’t call the [`requestValue(_:)`](https://developer.apple.com/documentation/appintents/intentparameter/requestvalue(_:)-592nd) or [`needsValueError(_:)`](https://developer.apple.com/documentation/appintents/intentparameter/needsvalueerror(_:)) methods.
 
-> **Note**: Usage of the app intent instance provided to the action closure is limited to inspecting parameter values, interactive requests like [`requestValue(_:)`](https://developer.apple.com/documentation/appintents/intentparameter/requestvalue(_:)-592nd) or [`needsValueError(_:)`](https://developer.apple.com/documentation/appintents/intentparameter/needsvalueerror(_:)) doesn’t work.
+To route app intents to a particular scene, add the [`handlesExternalEvents(preferring:allowing:)`](view/handlesexternalevents(preferring:allowing:).md) modifier to your view or the [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md) modifier to your [`Scene`](scene.md) type. For each modifier, you supply one or more strings to match against the target content modifier of an incoming app intent. SwiftUI delivers only matching app intents to this modifier.
 
 ## Parameters
 
-- `intent`: The type of App Intent that the `action` closure handles.
-- `action`: A closure that SwiftUI calls when the specified app intent is being performed. The closure takes the app intent instance as an input parameter.
+- `intent`: The type of app intent that the `action` closure handles.
+- `action`: A closure for SwiftUI to call when it receives the specified type of app intent. The closure takes the received app intent instance as an input parameter.
 
 ## See Also
 

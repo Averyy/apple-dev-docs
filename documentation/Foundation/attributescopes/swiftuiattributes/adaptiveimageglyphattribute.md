@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for an adaptive image glyph inside a run of attributed text.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,6 +20,18 @@
 @frozen
 enum AdaptiveImageGlyphAttribute
 ```
+
+#### Overview
+
+An adaptive image glyph is an inline image that flows with text and scales with the surrounding font, such as a Genmoji or a sticker that someone inserts from the keyboard. A text view draws these glyphs in place, so a string that people edit keeps them where they put them:
+
+```None
+TextField("Message", text: $message)
+
+Text(message)
+```
+
+SwiftUI sets this key as people insert glyphs, so you rarely set it yourself. Read it when you need to find the glyphs in a string, for example to strip them before you store the text somewhere that cannot represent them.
 
 ## Relationships
 

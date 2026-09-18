@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func extendedGetMultipleBlockSecurityStatus(requestFlags flags: NFCISO15693RequestFlag, blockRange: NSRange, resultHandler: @escaping (Result<NFCISO15693MultipleBlockSecurityStatus, any Error>) -> Void)
+@preconcurrency
+func extendedGetMultipleBlockSecurityStatus(requestFlags flags: NFCISO15693RequestFlag, blockRange: NSRange, resultHandler: @escaping @Sendable (Result<NFCISO15693MultipleBlockSecurityStatus, any Error>) -> Void)
 ```
 
 

@@ -17,7 +17,7 @@ var requiresManagedDevice: Bool { get set }
 
 #### Discussion
 
-When set to `true`, the assessment session will only start if the device is enrolled in a Mobile Device Management (MDM) solution. This requirement is disabled by default.
+When set to `true`, the assessment session will only start if the device is enrolled in a Mobile Device Management (MDM) solution. Defaults to `false`.
 
 
 ---

@@ -51,6 +51,7 @@ A `LayoutDirectionBehavior` can be used with the `layoutDirectionBehavior` view 
 - [enum LayoutDirection](layoutdirection.md)
   A direction in which SwiftUI can lay out content.
 - [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
+  A layout that rotates the space containing a view.
 
 
 ---

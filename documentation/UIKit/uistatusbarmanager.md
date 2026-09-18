@@ -52,6 +52,10 @@ You don’t use this object to modify the configuration of the status bar. Inste
 
 - [class UIDevice](uidevice.md)
   A representation of the current device.
+- [class UIHinge](uihinge.md)
+  An object encapsulating the state of a single hinge.
+- [class UIHingeInteraction](uihingeinteraction.md)
+  An interaction for observing the hinge state associated with the view’s hierarchy.
 
 
 ---

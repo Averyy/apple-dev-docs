@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A failure that occurs when a string cannot be parsed into GeneratedContent.
+A failure that occurs when a string cannot be parsed into generated content.
 
 **Availability**:
 - iOS 27.0+

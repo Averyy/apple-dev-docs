@@ -56,6 +56,9 @@ Prompt {
 ### Assigning a label
 - [func label(String) -> Attachment<Content>](attachment/label(_:).md)
   Assigns a label to an attachment.
+### Initializers
+- [init(Content)](attachment/init(_:).md)
+  Creates an attachment from data content.
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a refusal for the transcript entries the model declined to respond to.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -15,6 +17,10 @@
 ```swift
 init(transcriptEntries: [Transcript.Entry])
 ```
+
+## Parameters
+
+- `transcriptEntries`: The entries leading up to the refusal, which the framework uses to produce the refusal’s explanation.
 
 
 ---

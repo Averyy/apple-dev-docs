@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-The title of the page.
+The title to display at the top of the panel.
 
 **Availability**:
 - iOS 27.0+

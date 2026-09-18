@@ -26,6 +26,9 @@ This property is ignored if the item is in a `UIBarButtonItemGroup` with more th
 
 - [var hidesSharedBackground: Bool](uibarbuttonitem/hidessharedbackground.md)
   A boolean value indicating whether the background this item may share with other items in the bar should be hidden.
+- [var axisBehavior: UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.property.md)
+  The bar axis behavior of the item.
+- [UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.enum.md)
 
 
 ---

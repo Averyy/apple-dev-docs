@@ -41,6 +41,15 @@ struct GeometryProxy
   Resolves the value of an anchor to the container view.
 - [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy/transform(in:).md)
   The container view’s 3D transform converted to a defined coordinate space.
+### Inspecting reserved regions
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+  Returns an array of reserved regions that match the selection options you specify.
+- [struct ReservedRegion](reservedregion.md)
+  A region within a view’s coordinate space that another entity reserves.
+- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
+  A kind of reserved region.
+- [ReservedRegion.QueryOptions](reservedregion/queryoptions.md)
+  Options for querying reserved regions.
 
 ## See Also
 
@@ -48,6 +57,10 @@ struct GeometryProxy
   A container view that defines its content as a function of its own size and coordinate space.
 - [struct GeometryReader3D](geometryreader3d.md)
   A container view that defines its content as a function of its own size and coordinate space.
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+  Returns an array of reserved regions that match the selection options you specify.
+- [struct ReservedRegion](reservedregion.md)
+  A region within a view’s coordinate space that another entity reserves.
 - [struct GeometryProxy3D](geometryproxy3d.md)
   A proxy for access to the size and coordinate space of the container view.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](view/coordinatespace(_:).md)

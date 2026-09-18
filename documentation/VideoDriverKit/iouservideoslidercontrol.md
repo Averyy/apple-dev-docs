@@ -6,7 +6,7 @@
 A control object that supports a 32-bit unsigned integer value slider.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

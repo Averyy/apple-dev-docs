@@ -48,6 +48,7 @@ Use one of these values with the [`immersiveEnvironmentBehavior(_:)`](scene/imme
 - [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
 - [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
+  The shape of the portal that a progressive immersion style opens.
 
 
 ---

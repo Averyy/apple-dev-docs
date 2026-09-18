@@ -91,20 +91,10 @@ The event handler queries the capture event to determine its phase, and when the
 
 ## See Also
 
-- [Playing video content in a standard user interface](playing-video-content-in-a-standard-user-interface.md)
-  Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
-- [class AVPlayerViewController](avplayerviewcontroller.md)
-  A view controller that displays content from a player and presents a native user interface to control playback.
-- [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
-  A protocol that defines the methods to implement to respond to player view controller events.
 - [class AVCaptureEvent](avcaptureevent.md)
   An object that describes a user interaction with a system hardware button.
 - [class AVCaptureEventSound](avcaptureeventsound.md)
   A sound object for a capture event.
-- [class AVInputPickerInteraction](avinputpickerinteraction.md)
-  Use `AVInputPickerInteraction` to present an input picker.
-- [Third-party casting support](third-party-casting-support.md)
-  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

@@ -177,6 +177,7 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
   Takes the wrapped value being stored in this instance and returns it while also setting the instance to `nil`. If there is no value being stored in this instance, this returns `nil` instead.
 ### Type Aliases
 - [typealias PartiallyGenerated](optional/partiallygenerated.md)
+  A representation of partially generated content for the wrapped type.
 - [typealias Specification](optional/specification.md)
 - [typealias TableRowBody](optional/tablerowbody.md)
 - [typealias TicksCollection](optional/tickscollection.md)

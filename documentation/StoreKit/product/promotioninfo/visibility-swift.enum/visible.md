@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: case
 
-A visibility value that makes a promoted in-app purchase visible on the App Store on a user’s device.
+A visibility value that makes a promoted Apple In-App Purchase visible on the App Store on a user’s device.
 
 **Availability**:
 - iOS 16.4+
@@ -18,14 +18,14 @@ case visible
 
 #### Discussion
 
-A promoted in-app purchase with this visibility setting is visible on the App Store on a user’s device.
+A promoted Apple In-App Purchase with this visibility setting is visible on the App Store on a user’s device.
 
 ## See Also
 
 - [Product.PromotionInfo.Visibility.appStoreConnectDefault](product/promotioninfo/visibility-swift.enum/appstoreconnectdefault.md)
-  A visibility value for a promoted in-app purchase that uses the visibility setting from App Store Connect.
+  A visibility value for a promoted Apple In-App Purchase that uses the visibility setting from App Store Connect.
 - [Product.PromotionInfo.Visibility.hidden](product/promotioninfo/visibility-swift.enum/hidden.md)
-  A visibility value that hides a promoted in-app purchase on the App Store on a user’s device.
+  A visibility value that hides a promoted Apple In-App Purchase on the App Store on a user’s device.
 
 
 ---

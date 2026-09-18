@@ -47,6 +47,13 @@ struct RootView: View {
 
 - `priority`: The visibility priority for this toolbar item.
 
+## See Also
+
+- [func hidden(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/hidden(_:).md)
+  Hides a toolbar item within its toolbar.
+- [func sharedBackgroundVisibility(Visibility) -> some CustomizableToolbarContent](customizabletoolbarcontent/sharedbackgroundvisibility(_:).md)
+  Controls the visibility of the glass background effect on items in the toolbar. In certain contexts, such as the navigation bar on iOS and the window toolbar on macOS, toolbar items will be given a glass background effect that is shared with other items in the same logical grouping.
+
 
 ---
 

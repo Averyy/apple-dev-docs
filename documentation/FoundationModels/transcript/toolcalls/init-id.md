@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a collection that contains the tool calls you provide.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,6 +18,11 @@
 ```swift
 init<S>(id: String = UUID().uuidString, _ calls: S) where S : Sequence, S.Element == Transcript.ToolCall
 ```
+
+## Parameters
+
+- `id`: A unique identifier for the collection of tool calls.
+- `calls`: The tool calls to include, in the order the model generates them.
 
 
 ---

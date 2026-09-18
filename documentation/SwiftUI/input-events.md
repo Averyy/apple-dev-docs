@@ -26,6 +26,7 @@ For design guidance, see [`Inputs`](https://developer.apple.com/design/human-int
 - [func onKeyPress(keys: Set<KeyEquivalent>, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](view/onkeypress(keys:phases:action:).md)
   Performs an action if the user presses one or more keys on a hardware keyboard while the view has focus.
 - [struct KeyPress](keypress.md)
+  A hardware keyboard event that a focused view receives.
 ### Creating keyboard shortcuts
 - [func keyboardShortcut(_:)](view/keyboardshortcut(_:).md)
   Assigns a keyboard shortcut to the modified control.
@@ -141,6 +142,13 @@ For design guidance, see [`Inputs`](https://developer.apple.com/design/human-int
   Sets the content shape for this view.
 - [struct ContentShapeKinds](contentshapekinds.md)
   A kind for the content shape of a view.
+### Responding to hinge angle changes
+- [func onHingeChange(isEnabled: Bool, (DeviceHingeContext, DeviceHingeContext) -> Void) -> some View](view/onhingechange(isenabled:_:).md)
+  Adds an action to perform when the hinge context of the view hierarchy changes.
+- [struct DeviceHingeContext](devicehingecontext.md)
+  A type describing the context of hinges on the device.
+- [struct DeviceHinge](devicehinge.md)
+  A type encapsulating the state of a single hinge.
 ### Interacting with the Digital Crown
 - [func digitalCrownAccessory(Visibility) -> some View](view/digitalcrownaccessory(_:).md)
   Specifies the visibility of Digital Crown accessory Views on Apple Watch.

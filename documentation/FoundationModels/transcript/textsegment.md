@@ -23,8 +23,10 @@ struct TextSegment
 
 ### Creating a text segment
 - [init(id: String, content: String)](transcript/textsegment/init(id:content:).md)
+  Creates a text segment that contains the text you provide.
 ### Inspecting a text segment
 - [var content: String](transcript/textsegment/content.md)
+  The text of the segment.
 
 ## Relationships
 

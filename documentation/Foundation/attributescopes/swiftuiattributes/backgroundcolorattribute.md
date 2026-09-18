@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for the color that fills the area behind a run of attributed text.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,19 @@
 ```swift
 @frozen
 enum BackgroundColorAttribute
+```
+
+#### Overview
+
+Set this key to highlight part of a string, such as the way a search result marks the term someone typed:
+
+```None
+var line = AttributedString("No matches for swift")
+if let match = line.range(of: "swift") {
+    line[match].backgroundColor = .yellow
+}
+
+Text(line)
 ```
 
 ## Relationships

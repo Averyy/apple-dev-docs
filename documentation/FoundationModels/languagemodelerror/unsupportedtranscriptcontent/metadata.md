@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+Additional information about the failure, keyed by name.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var metadata: [String : any Sendable]
 ## See Also
 
 - [var unsupportedContent: [Transcript.Entry]](languagemodelerror/unsupportedtranscriptcontent/unsupportedcontent.md)
+  The transcript entries that the model can’t process.
 - [var debugDescription: String](languagemodelerror/unsupportedtranscriptcontent/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 
 ---

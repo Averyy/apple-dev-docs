@@ -22,9 +22,10 @@ struct AVAudioSessionDeactivationOptions
 
 ## Topics
 
-### Initializers
+### Creating a Deactivation Option
 - [init(rawValue: UInt)](avaudiosessiondeactivationoptions/init(rawvalue:).md)
-### Type Properties
+  Creates a deactivation-options set from a raw bitmask.
+### Getting Standard Deactivation Options
 - [static var notifyOthersOnDeactivation: AVAudioSessionDeactivationOptions](avaudiosessiondeactivationoptions/notifyothersondeactivation.md)
   Notify an interrupted app that the interruption has ended and it may resume playback.
 

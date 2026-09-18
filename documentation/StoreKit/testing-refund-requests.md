@@ -63,9 +63,9 @@ For more information on receiving server notifications for the sandbox environme
 ## See Also
 
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
-  Verify your implementation of In-App Purchases by testing your code throughout its development.
-- [Testing In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
-  Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
+  Verify your implementation of Apple In-App Purchases by testing your code throughout its development.
+- [Testing Apple In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
+  Test your implementation of Apple In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
   Validate your app’s handling of win-back offers that you configure for the testing environment.
 - [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)

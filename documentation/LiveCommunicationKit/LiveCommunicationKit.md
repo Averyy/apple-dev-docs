@@ -75,6 +75,11 @@ With a person’s permission, an installed health research app that uses [`Senso
   An action that starts an outgoing conversation and causes the devices of a remote participant to ring.
 - [class UnmergeConversationAction](unmergeconversationaction.md)
   An action that separates two previosuly merged conversations.
+### Conversation assistance
+- [protocol LiveAssistanceExtension](liveassistanceextension.md)
+  The protocol you extend to provide live assistance services.
+- [enum LiveAssistance](liveassistance.md)
+  A namespace to collect APIs for use by container apps that provide live assistance services.
 
 
 ---

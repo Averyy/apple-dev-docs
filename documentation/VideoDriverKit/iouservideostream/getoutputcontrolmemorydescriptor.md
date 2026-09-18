@@ -6,7 +6,7 @@
 Gets the memory descriptor used for the control data part of a buffer.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

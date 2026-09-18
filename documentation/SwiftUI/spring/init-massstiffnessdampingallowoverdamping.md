@@ -25,6 +25,7 @@ init(mass: Double = 1.0, stiffness: Double, damping: Double, allowOverDamping: B
 - `mass`: Specifies that property of the object attached to the end of the spring.
 - `stiffness`: The corresponding spring coefficient.
 - `damping`: Defines how the spring’s motion should be damped due to the forces of friction.
+- `allowOverDamping`: A value of true specifies that over-damping should be allowed when appropriate based on the other inputs, and a value of false specifies that such cases should instead be treated as critically damped.
 
 ## See Also
 

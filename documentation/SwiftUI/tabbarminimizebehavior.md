@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A behavior that determines when a tab bar minimizes.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,6 +18,25 @@
 
 ```swift
 struct TabBarMinimizeBehavior
+```
+
+#### Overview
+
+A minimized tab bar becomes smaller so that the content behind it has more room. Pass a value of this type to the [`tabBarMinimizeBehavior(_:)`](view/tabbarminimizebehavior(_:).md) modifier to specify the behavior.
+
+The following example minimizes the tab bar as soon as someone scrolls down through a feed, and restores it when they scroll back up:
+
+```swift
+TabView {
+    Tab("Feed", systemImage: "list.bullet") {
+        FeedView()
+    }
+
+    Tab("Profile", systemImage: "person") {
+        ProfileView()
+    }
+}
+.tabBarMinimizeBehavior(.onScrollDown)
 ```
 
 ## Topics

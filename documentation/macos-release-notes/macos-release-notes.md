@@ -17,6 +17,8 @@ When writing your report, please include the full version number in the title an
 ## Topics
 
 ### macOS 27
+- [macOS 27.2 Golden Gate Beta Release Notes](macos-27_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [macOS 27 Golden Gate Release Notes](macos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### macOS 26

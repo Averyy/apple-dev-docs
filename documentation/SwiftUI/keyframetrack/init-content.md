@@ -23,6 +23,7 @@ init(_ keyPath: WritableKeyPath<Root, Value>, @KeyframeTrackContentBuilder<Value
 ## Parameters
 
 - `keyPath`: The property to animate.
+- `content`: A keyframe collection builder closure containing the keyframes that control the interpolation curve.
 
 ## See Also
 

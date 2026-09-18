@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates an attachment segment that wraps the content you provide.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,12 @@
 ```swift
 init(id: String = UUID().uuidString, content: Transcript.Attachment, label: String? = nil)
 ```
+
+## Parameters
+
+- `id`: A unique identifier for the segment.
+- `content`: The attached file or image.
+- `label`: An optional label that identifies the attachment.
 
 
 ---

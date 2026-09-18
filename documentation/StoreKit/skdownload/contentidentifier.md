@@ -25,7 +25,7 @@ Each piece of downloadable content associated with a product has its own unique 
 
 ## See Also
 
-- [In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
+- [Apple In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
 - [var expectedContentLength: Int64](skdownload/expectedcontentlength.md)
   The length of the downloadable content, in bytes.
 - [var contentVersion: String](skdownload/contentversion.md)

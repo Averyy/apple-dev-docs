@@ -93,6 +93,23 @@ The system encrypts data using keys through your app’s [`AccessoryTransportSec
 
 > **Note**:  Call [`cancel(error:)`](accessorytransportsession/cancel(error:).md) on the session if your extension encounters an error that requires terminating the session.
 
+#### Support Bluetooth in the Background
+
+The system suspends your transport extension when it’s idle, and relaunches or resumes the extension when your accessory sends an update for a characteristic to which your extension subscribes (for more information on characteristics, see [`Transferring Data Between Bluetooth Low Energy Devices`](https://developer.apple.com/documentation/corebluetooth/transferring-data-between-bluetooth-low-energy-devices)). If the system calls your central manager delegate’s [`centralManager(_:willRestoreState:)`](https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:willrestorestate:)) method so your extension can reconstitute its prior session state, the system initiates a *cold relaunch*. If your extension’s objects remain in memory and the system doesn’t call the method, the restart of the accessory is a *warm resume*, because your existing state persists unchanged. In either case, to restore a prior Bluetooth session, configure your extension’s target properties and use the [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) framework’s [`CBCentralManager`](https://developer.apple.com/documentation/corebluetooth/cbcentralmanager), as shown below.
+
+In your extension’s target properties in Xcode, include the [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) entries your companion app declares for accessory permissions, so the extension has access to the same approved accessories. Add the `bluetooth-central` background mode to your extension’s target properties:
+
+```xml
+<key>UIBackgroundModes</key>
+<array>
+    <string>bluetooth-central</string>
+</array>
+```
+
+When your extension instantiates [`CBCentralManager`](https://developer.apple.com/documentation/corebluetooth/cbcentralmanager), use the [`transportStateRestoreIdentifier`](accessorytransportsession/transportstaterestoreidentifier.md), which is unique to your transport extension instance. The system allocates background operation time and state restoration to one `CBCentralManager` per restoration identifier, and the system doesn’t grant background operation time or state restoration to additional instances.
+
+> **Note**: Only the transport app extension needs this background mode; neither [`AccessoryDataProvider`](accessorydataprovider.md) nor [`AccessoryTransportSecurity`](accessorytransportsecurity.md) requires it.
+
 ## Topics
 
 ### Accepting session requests

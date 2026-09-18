@@ -20,6 +20,8 @@ var showsCloseButton: Bool { get set }
 
 Set the value of this property to @c NO to hide the close button.
 
+> **Note**: If the @c actions array is empty, the close button will be displayed regardless of this property’s value to ensure the alert remains dismissible.
+
 Defaults to @c YES.
 
 

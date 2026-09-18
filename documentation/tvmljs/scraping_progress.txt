@@ -1,4 +1,4 @@
 Completed scraping TVMLKit JS!
-Total pages scraped: 268
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 269
 Pages failed: 0

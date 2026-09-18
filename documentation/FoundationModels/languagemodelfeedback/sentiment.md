@@ -27,11 +27,11 @@ enum Sentiment
 
 ### Sentiment values
 - [LanguageModelFeedback.Sentiment.negative](languagemodelfeedback/sentiment/negative.md)
-  A negative sentiment
+  A negative sentiment.
 - [LanguageModelFeedback.Sentiment.neutral](languagemodelfeedback/sentiment/neutral.md)
-  A neutral sentiment
+  A neutral sentiment.
 - [LanguageModelFeedback.Sentiment.positive](languagemodelfeedback/sentiment/positive.md)
-  A positive sentiment
+  A positive sentiment.
 
 ## Relationships
 

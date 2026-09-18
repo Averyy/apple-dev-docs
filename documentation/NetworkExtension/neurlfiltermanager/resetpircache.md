@@ -23,14 +23,14 @@ The PIR system on device caches previous PIR queries and responses to minimize e
 
 ## See Also
 
-- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
-  A URL that contains the domain name of the PIR server.
-- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
-  A URL that contains the domain name of Privacy Pass issuer.
 - [var pirAuthenticationToken: String?](neurlfiltermanager/pirauthenticationtoken.md)
   A PIR per-user authentication token string.
 - [func refreshPIRParameters() async throws](neurlfiltermanager/refreshpirparameters.md)
   Refetches PIR parameters from the server.
+- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
+  A URL that contains the domain name of the PIR server.
+- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
+  A URL that contains the domain name of Privacy Pass issuer.
 
 
 ---

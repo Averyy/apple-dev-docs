@@ -23,7 +23,7 @@ Your application must set the delegate before presenting the store view controll
 
 ## See Also
 
-- [In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
+- [Apple In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
 - [protocol SKStoreProductViewControllerDelegate](skstoreproductviewcontrollerdelegate.md)
   A protocol to call when the customer dismisses the store screen.
 

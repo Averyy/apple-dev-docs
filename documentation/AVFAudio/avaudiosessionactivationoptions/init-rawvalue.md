@@ -3,7 +3,7 @@
 **Framework**: AVFAudio  
 **Kind**: init
 
-Creates a new instance with the raw value you specify.
+Creates an activation-options set from a raw bitmask.
 
 **Availability**:
 - iOS ?+
@@ -22,7 +22,7 @@ init(rawValue: UInt)
 
 ## Parameters
 
-- `rawValue`: The raw value to use for the new instance.
+- `rawValue`: A bitwise combination of the defined [`AVAudioSessionActivationOptions`](avaudiosessionactivationoptions.md) constants.
 
 
 ---

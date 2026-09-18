@@ -6,14 +6,14 @@ Include an entitlement to indicate your extension is a MediaExtension RAW proces
 
 #### Overview
 
-MediaExtension RAW processors must include an special entitlement key with a Boolean value set to true. This entitlement is the same as for MediaExtension video decoders, since RAW processors always work in conjunction with a corresponding video decoder. To add the entitlement key in Xcode, follow these steps:
+MediaExtension RAW processors must include a special entitlement key with a Boolean value set to `true`. This entitlement is the same as for MediaExtension video decoders because RAW processors always work in conjunction with a corresponding video decoder. To add the entitlement key in Xcode, follow these steps:
 
-1. Select the build target for your format reader extension
-2. Go to the Signing & Capabilities tab
-3. Click + to add a new capability
-4. Choose Media Extension Video Decoder from the list
+1. Select the build target for your RAW processor extension.
+2. Go to the Signing & Capabilities tab.
+3. Click + to add a new capability.
+4. Choose Media Extension Video Decoder from the list.
 
-The entitlement key is `com.apple.developer.mediaextension.videodecoder` and it must have a Boolean value set to true. A developer provisioning profile will be needed to use this entitlement.
+The entitlement key is `com.apple.developer.mediaextension.videodecoder` and it must have a Boolean value set to `true`. Using this entitlement requires a developer provisioning profile.
 
 ## See Also
 

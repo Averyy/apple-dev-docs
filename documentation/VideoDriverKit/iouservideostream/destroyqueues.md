@@ -6,7 +6,7 @@
 Releases the shared input and output queues.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

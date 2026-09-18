@@ -6,7 +6,7 @@
 WAVE: “Top Front Center”
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

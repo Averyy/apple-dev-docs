@@ -1,4 +1,4 @@
 Completed scraping Audio Toolbox!
-Total pages scraped: 3561
-Pages skipped (unchanged): 1
+Total pages scraped: 39
+Pages skipped (unchanged): 3523
 Pages failed: 0

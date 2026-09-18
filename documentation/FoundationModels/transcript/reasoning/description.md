@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+A textual representation of the reasoning entry.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

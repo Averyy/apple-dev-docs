@@ -34,6 +34,10 @@ The `Box` view defined above automatically changes its appearance when the user 
 
 > **Note**: Use this initializer only if you need to convert an existing [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
 
+## Parameters
+
+- `nsColor`: An [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) instance from which to create a color.
+
 ## See Also
 
 - [init(uiColor: UIColor)](color/init(uicolor:).md)

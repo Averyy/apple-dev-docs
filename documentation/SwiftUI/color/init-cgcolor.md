@@ -20,6 +20,10 @@ Creates a color from a Core Graphics color.
 init(cgColor: CGColor)
 ```
 
+## Parameters
+
+- `cgColor`: A [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) instance from which to create a color.
+
 ## See Also
 
 - [init(uiColor: UIColor)](color/init(uicolor:).md)

@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: module
 
-Support In-App Purchases and interactions with the App Store.
+Support Apple In-App Purchases and interactions with the App Store.
 
 **Availability**:
 - iOS 3.0+
@@ -16,9 +16,9 @@ Support In-App Purchases and interactions with the App Store.
 
 #### Overview
 
-Use the StoreKit framework to provide the following features and services for your apps and In-App Purchases:
+Use the StoreKit framework to provide the following features and services for your apps and Apple In-App Purchases:
 
-- **In-App Purchase**: Offer and promote In-App Purchases for content and services.
+- **Apple In-App Purchase**: Offer and promote Apple In-App Purchases for content and services.
 - **App transaction**: Verify a customer’s app purchase with an App Store-signed transaction.
 - **Messages**: Control the display of App Store messages in your app.
 - **Reviews**: Request App Store reviews and ratings from your customers.
@@ -29,12 +29,12 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
 
 ## Topics
 
-### In-App Purchase
-- [In-App Purchase](in-app-purchase.md)
+### Apple In-App Purchase
+- [Apple In-App Purchase](in-app-purchase.md)
   Offer content and services in your app across Apple platforms using a Swift-based interface.
 - [Understanding StoreKit workflows](understanding-storekit-workflows.md)
   Implement an in-app store with several product types, using StoreKit views.
-- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
+- [Getting started with Apple In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
   Set up an in-app store using SwiftUI and StoreKit views.
 ### App transaction
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
@@ -85,6 +85,8 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
 ### Articles
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
   Provide subscription service for customers who redeem offer codes through the App Store or within your app.
+- [Using StoreKit in Unity](using-storekit-in-unity.md)
+  Provide in-app purchases in Unity-based games using C#.
 ### Structures
 - [struct RedeemOption](redeemoption.md)
   An option that customizes the behavior of an offer code redemption.
@@ -94,13 +96,13 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
 - [App Store Server API](../appstoreserverapi/appstoreserverapi.md)
   Manage your customers’ App Store transactions from your server.
 - [StoreKit Test](../storekittest/storekittest.md)
-  Create and automate tests in Xcode for your app’s subscription and in-app purchase transactions, and SKAdNetwork implementations.
+  Create and automate tests in Xcode for your app’s subscription and Apple In-App Purchase transactions, and SKAdNetwork implementations.
 - [App Store Server Notifications](../appstoreservernotifications/appstoreservernotifications.md)
   Monitor In-App Purchase events in real time and learn of unreported external purchase tokens, with server notifications from the App Store.
 - [App Store Connect API](../appstoreconnectapi/appstoreconnectapi.md)
   The data structure that represents an app store connect api resource.
 - [Advanced Commerce API](../advancedcommerceapi/advancedcommerceapi.md)
-  Support In-App Purchases through the App Store for exceptionally large catalogs of custom one-time purchases, subscriptions, and subscriptions with optional add-ons.
+  Support Apple In-App Purchases through the App Store for exceptionally large catalogs of custom one-time purchases, subscriptions, and subscriptions with optional add-ons.
 - [App Store Receipts](../appstorereceipts/appstorereceipts.md)
   Validate app and In-App Purchase receipts with the App Store.
 

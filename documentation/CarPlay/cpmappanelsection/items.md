@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-The items displayed in this section, or @c nil if the section does not contain items.
+The items to display in the section.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +15,10 @@ The items displayed in this section, or @c nil if the section does not contain i
 ```swift
 var items: [CPMapPanelItem] { get set }
 ```
+
+#### Discussion
+
+You specify the set of items at initialization time, but can change the items at any time. If you change the value of this property while the panel is visible, the system updates your CarPlay interface to reflect the changes.
 
 
 ---

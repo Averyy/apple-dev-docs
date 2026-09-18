@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
+Creates a builder with a limited availability dynamic profile.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -17,6 +19,10 @@
 @export(implementation)
 static func buildLimitedAvailability(_ component: some LanguageModelSession.DynamicProfile) -> LanguageModelSession.AnyDynamicProfile
 ```
+
+## Parameters
+
+- `component`: The dynamic profile.
 
 ## See Also
 

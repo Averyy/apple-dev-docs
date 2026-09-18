@@ -19,7 +19,7 @@ static let billingIssue: Message.Reason
 
 ## Mentions
 
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 #### Discussion
 
@@ -46,7 +46,7 @@ For more information about the billing retry state, see [`isInBillingRetry`](pro
 
 ##### Test the Message in the Sandbox Environment
 
-You can simulate billing issues in the sandbox environment to test how the system presents the [`billingIssue`](message/reason-swift.struct/billingissue.md) message in your app, and how your app handles it if you choose to delay or suppress its presentation. For more information, including step-by-step test cases, see [`Testing failing subscription renewals and In-App Purchases`](testing-failing-subscription-renewals-and-in-app-purchases.md).
+You can simulate billing issues in the sandbox environment to test how the system presents the [`billingIssue`](message/reason-swift.struct/billingissue.md) message in your app, and how your app handles it if you choose to delay or suppress its presentation. For more information, including step-by-step test cases, see [`Testing failing subscription renewals and Apple In-App Purchases`](testing-failing-subscription-renewals-and-in-app-purchases.md).
 
 ## See Also
 

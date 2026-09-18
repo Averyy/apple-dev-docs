@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func writeWithoutEncryption(serviceCodeList: [Data], blockList: [Data], blockData: [Data], resultHandler: @escaping (Result<NFCFeliCaStatusFlag, any Error>) -> Void)
+@preconcurrency
+func writeWithoutEncryption(serviceCodeList: [Data], blockList: [Data], blockData: [Data], resultHandler: @escaping @Sendable (Result<NFCFeliCaStatusFlag, any Error>) -> Void)
 ```
 
 

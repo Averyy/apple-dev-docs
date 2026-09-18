@@ -6,7 +6,7 @@
 The transport type identifier for video devices built into the system.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -23,7 +23,7 @@ var paymentDiscount: SKPaymentDiscount? { get }
 
 ## Mentions
 
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Sets the current scalar level value.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

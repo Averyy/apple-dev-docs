@@ -21,6 +21,10 @@ The framework will initialize the provided delegate and manage its lifetime, cal
 
 > **Note**: The instantiated delegate will be placed in the Environment and may be accessed by using the `@Environment` property wrapper in the view hierarchy.
 
+## Parameters
+
+- `delegateType`: The type of `WKApplicationDelegate` to use.
+
 
 ---
 

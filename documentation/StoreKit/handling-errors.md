@@ -12,7 +12,7 @@ A StoreKit request may fail for one of many possible reasons, including invalid 
 
 When handling errors, such as with the [`request(_:didFailWithError:)`](skrequestdelegate/request(_:didfailwitherror:).md) delegate method, it’s important to use the [`domain`](https://developer.apple.com/documentation/foundation/nserror/domain) and [`code`](https://developer.apple.com/documentation/foundation/nserror/code) of the resulting error to determine the underlying cause of failure.
 
-StoreKit uses [`SKErrorDomain`](skerrordomain.md) for errors related to payments, store products, and cloud services, as described in [`SKError.Code`](skerror/code.md). For additional information on troubleshooting StoreKit framework issues, see the [`In-App Purchase FAQ`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228).
+StoreKit uses [`SKErrorDomain`](skerrordomain.md) for errors related to payments, store products, and cloud services, as described in [`SKError.Code`](skerror/code.md). For additional information on troubleshooting StoreKit framework issues, see the [`Apple In-App Purchase FAQ`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228).
 
 Errors related to networking use [`NSURLErrorDomain`](https://developer.apple.com/documentation/foundation/nsurlerrordomain). The following table describes some of the most common networking errors that may occur when using StoreKit:
 

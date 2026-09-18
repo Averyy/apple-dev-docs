@@ -39,6 +39,7 @@ protocol InstructionsRepresentable
 ## See Also
 
 - [init(_:)](instructions/init(_:).md)
+  Creates instructions from the content of a builder closure.
 - [struct InstructionsBuilder](instructionsbuilder.md)
   A type that represents an instructions builder.
 

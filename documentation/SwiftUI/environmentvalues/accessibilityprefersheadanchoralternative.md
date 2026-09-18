@@ -42,8 +42,6 @@ If this property’s value is true, alternate anchors should be used for most he
   Whether the system preference for Reduce Motion is enabled.
 - [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
-  Whether the system preference for Show Button Shapes is enabled.
 - [var accessibilitySwitchControlEnabled: Bool](environmentvalues/accessibilityswitchcontrolenabled.md)
   A Boolean value that indicates whether the Switch Control motor accessibility feature is in use.
 - [var accessibilityVoiceOverEnabled: Bool](environmentvalues/accessibilityvoiceoverenabled.md)

@@ -20,11 +20,11 @@ struct AVKitError
 
 ## Topics
 
-### Inspecting an Error
+### Inspecting an error
 - [static var errorDomain: String](avkiterror-swift.struct/errordomain.md)
 - [AVKitError.Code](avkiterror-swift.struct/code.md)
   Constants that identify framework error codes.
-- [Error Constants](error-constants.md)
+- [Error constants](error-constants.md)
   Error code constants for framework operations.
 
 ## Relationships
@@ -43,6 +43,8 @@ struct AVKitError
   The domain of errors the framework generates.
 - [AVKitError.Code](avkiterror-swift.struct/code.md)
   Constants that identify framework error codes.
+- [Error constants](error-constants.md)
+  Error code constants for framework operations.
 
 
 ---

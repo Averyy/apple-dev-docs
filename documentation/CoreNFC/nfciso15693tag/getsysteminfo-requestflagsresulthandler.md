@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func getSystemInfo(requestFlags flags: NFCISO15693RequestFlag, resultHandler: @escaping (Result<NFCISO15693SystemInfo, any Error>) -> Void)
+@preconcurrency
+func getSystemInfo(requestFlags flags: NFCISO15693RequestFlag, resultHandler: @escaping @Sendable (Result<NFCISO15693SystemInfo, any Error>) -> Void)
 ```
 
 

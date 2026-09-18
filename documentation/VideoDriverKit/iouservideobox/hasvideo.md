@@ -6,7 +6,7 @@
 A Boolean value indicating if box has video capabilities.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

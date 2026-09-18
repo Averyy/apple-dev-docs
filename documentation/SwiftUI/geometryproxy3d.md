@@ -43,6 +43,10 @@ You can use a proxy for anchor resolution.
   A container view that defines its content as a function of its own size and coordinate space.
 - [struct GeometryProxy](geometryproxy.md)
   A proxy for access to the size and coordinate space (for anchor resolution) of the container view.
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+  Returns an array of reserved regions that match the selection options you specify.
+- [struct ReservedRegion](reservedregion.md)
+  A region within a view’s coordinate space that another entity reserves.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](view/coordinatespace(_:).md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 - [enum CoordinateSpace](coordinatespace.md)

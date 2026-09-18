@@ -47,6 +47,7 @@ Use a value of `nil` to indicate that you have no preference. You typically do t
 - [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
   Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [struct BreakthroughEffect](breakthrougheffect.md)
+  The way a presentation shows through content in front of it.
 
 
 ---

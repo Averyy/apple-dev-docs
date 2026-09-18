@@ -66,6 +66,7 @@ Many modifiers apply to specific kinds of views or behaviors, but some apply mor
 - [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
   Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [struct BreakthroughEffect](breakthrougheffect.md)
+  The way a presentation shows through content in front of it.
 ### Redacting private content
 - [Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.

@@ -23,14 +23,14 @@ This value is an HTTP bearer token that authenticates the person using your app.
 
 ## See Also
 
-- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
-  A URL that contains the domain name of the PIR server.
-- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
-  A URL that contains the domain name of Privacy Pass issuer.
 - [func refreshPIRParameters() async throws](neurlfiltermanager/refreshpirparameters.md)
   Refetches PIR parameters from the server.
 - [func resetPIRCache() async throws](neurlfiltermanager/resetpircache.md)
   Resets the PIR on-device cache.
+- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
+  A URL that contains the domain name of the PIR server.
+- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
+  A URL that contains the domain name of Privacy Pass issuer.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-The types of in-app purchases.
+The types of Apple In-App Purchases.
 
 **Availability**:
 - iOS 15.0+
@@ -24,9 +24,9 @@ struct ProductType
 
 ### Getting the Product Type
 - [static let consumable: Product.ProductType](product/producttype/consumable.md)
-  A consumable in-app purchase.
+  A consumable Apple In-App Purchase.
 - [static let nonConsumable: Product.ProductType](product/producttype/nonconsumable.md)
-  A non-consumable in-app purchase.
+  A non-consumable Apple In-App Purchase.
 - [static let nonRenewable: Product.ProductType](product/producttype/nonrenewable.md)
   A non-renewing subscription.
 - [static let autoRenewable: Product.ProductType](product/producttype/autorenewable.md)
@@ -51,7 +51,7 @@ struct ProductType
 - [let id: String](product/id.md)
   The unique product identifier.
 - [let type: Product.ProductType](product/type.md)
-  The in-app purchase product type.
+  The Apple In-App Purchase product type.
 
 
 ---

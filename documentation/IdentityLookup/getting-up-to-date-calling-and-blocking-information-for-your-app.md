@@ -18,17 +18,40 @@ To use the Live Caller ID Lookup app extension, you need to add it to your Xcode
 
 When you add this target to your project, it provides the initial files you need for your app extension.
 
-##### Specify Your Server Information
+##### Configure Your Pir Server
 
-After adding the app extension, the system needs configuration data to connect to your server and authenticate the person using your app. The app extension’s entrypoint is an object that adopts the [`LiveCallerIDLookupProtocol`](livecalleridlookupprotocol.md). This defines a context parameter where you provide information for the system about your server and access tokens. The [`LiveCallerIDLookupExtensionContext`](livecalleridlookupextensioncontext.md) takes three parameters:
+After you add the app extension, configure your PIR server. Live Caller ID Lookup requires that your app extension’s information property list contains a top-level `NSPIRConfiguration`. The dictionary contains the following two keys:
 
-- [`serviceURL`](livecalleridlookupextensioncontext/serviceurl.md) — The endpoint for fetching information from your server.
-- [`tokenIssuerURL`](livecalleridlookupextensioncontext/tokenissuerurl.md)— The URL for the Private Access token issuer.
-- [`userTierToken`](livecalleridlookupextensioncontext/usertiertoken.md) — An HTTP bearer token that authenticates the person using your app.
+- **`PIRServerURL`**: (Required) The endpoint for fetching information from your server. This endpoint is equivalent to the [`serviceURL`](livecalleridlookupextensioncontext/serviceurl.md) property.
+- **`PrivacyPassIssuerURL`**: (Required) The URL for the Private Access token issuer. This URL is equivalent to the [`tokenIssuerURL`](livecalleridlookupextensioncontext/tokenissuerurl.md).
 
-The system uses Private Information Retrieval (PIR) to fetch a database entry without disclosing the query to the server. When an incoming call occurs, the PIR process privately checks the number against your server before revealing relevant caller information to the system.
+See the [`PIR Service - Live Caller ID Lookup `](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice#Live-Caller-ID-Lookup) documentation for updated security guidance to configure your PIR server to support Live Caller ID Lookup.
 
-The system caches the responses for server-side per entry configuration time. This means, if a second phone call comes in from the same number before the cache expires, the system uses the cached values instead of making another PIR request. For more information about setting up your server endpoints, see [`Setting up the HTTP endpoints for Live Caller ID Lookup`](setting-up-the-http-endpoints-for-live-caller-id-lookup.md).
+The following example shows an `NSPIRConfiguration` dictionary:
+
+```xml
+<key>NSPIRConfiguration</key>
+<dict>
+    <key>PIRServerURL</key>
+    <string>https://pir.example.com</string>
+    <key>PrivacyPassIssuerURL</key>
+    <string>https://issuer.example.com</string>
+</dict>
+```
+
+> **Note**: The `NSPIRConfiguration` goes in your app extension’s information property list.
+
+The system uses Private Information Retrieval (PIR) to fetch a database entry without disclosing the query to the server. When an incoming call occurs, the PIR process privately checks the number against your server before revealing relevant caller information to the system. For more information on setting up your PIRService, see [`PIRService`](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice).
+
+The system needs configuration data to connect to your server and authenticate the person using your app. The app extension’s entrypoint is an object that adopts the [`LiveCallerIDLookupProtocol`](livecalleridlookupprotocol.md). This protocol defines a context parameter in which you provide information for the system about your server and access tokens. The [`LiveCallerIDLookupExtensionContext`](livecalleridlookupextensioncontext.md) takes three parameters:
+
+- **[`serviceURL`](livecalleridlookupextensioncontext/serviceurl.md)**: The endpoint for fetching information from your server.
+- **[`tokenIssuerURL`](livecalleridlookupextensioncontext/tokenissuerurl.md)**: The URL for the Private Access token issuer.
+- **[`userTierToken`](livecalleridlookupextensioncontext/usertiertoken.md)**: An HTTP bearer token that authenticates the person using your app.
+
+The system caches the responses for server-side per entry configuration time. As a result, if a second phone call comes in from the same number before the cache expires, the system uses the cached values instead of making another PIR request. For more information about setting up your PIR server, see [`Setting up the HTTP endpoints`](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice/httpendpoints).
+
+The following example shows an extension entrypoint configuration using [`LiveCallerIDLookupExtensionContext`](livecalleridlookupextensioncontext.md).
 
 ```swift
 import Foundation

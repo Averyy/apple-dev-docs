@@ -34,6 +34,7 @@ struct DynamicProfileBuilder
 - [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> LanguageModelSession.ConditionalDynamicProfile<TrueContent, FalseContent>](languagemodelsession/dynamicprofilebuilder/buildeither(second:).md)
   Creates a builder with the second component.
 - [static func buildLimitedAvailability(some LanguageModelSession.DynamicProfile) -> LanguageModelSession.AnyDynamicProfile](languagemodelsession/dynamicprofilebuilder/buildlimitedavailability(_:).md)
+  Creates a builder with a limited availability dynamic profile.
 
 ## See Also
 
@@ -46,9 +47,13 @@ struct DynamicProfileBuilder
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
 - [LanguageModelSession.ConditionalDynamicProfile](languagemodelsession/conditionaldynamicprofile.md)
+  A dynamic profile that resolves to one of two profiles, depending on a condition.
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
+  A type that represents the dynamic profile a modifier applies to.
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+  A dynamic profile with a modifier applied to it.
 - [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
+  A type-erased dynamic profile.
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 

@@ -271,6 +271,8 @@ A split view controller interposes itself between the app’s window and its chi
   An object that manages a collection of tab objects.
 - [class UIPageViewController](uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
+- [class UIArrangementViewController](uiarrangementviewcontroller.md)
+  A view controller that presents its container view controllers through an arrangement.
 
 
 ---

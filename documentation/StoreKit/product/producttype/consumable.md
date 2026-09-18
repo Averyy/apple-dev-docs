@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-A consumable in-app purchase.
+A consumable Apple In-App Purchase.
 
 **Availability**:
 - iOS 15.0+
@@ -23,7 +23,7 @@ static let consumable: Product.ProductType
 ## See Also
 
 - [static let nonConsumable: Product.ProductType](product/producttype/nonconsumable.md)
-  A non-consumable in-app purchase.
+  A non-consumable Apple In-App Purchase.
 - [static let nonRenewable: Product.ProductType](product/producttype/nonrenewable.md)
   A non-renewing subscription.
 - [static let autoRenewable: Product.ProductType](product/producttype/autorenewable.md)

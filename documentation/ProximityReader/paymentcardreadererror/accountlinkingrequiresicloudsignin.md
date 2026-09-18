@@ -3,7 +3,7 @@
 **Framework**: ProximityReader  
 **Kind**: case
 
-An error that indicates the merchant must be signed into iCloud to accept the Terms and Conditions.
+An error that indicates the merchant must be signed into an Apple Account on the device to accept the Terms and Conditions.
 
 **Availability**:
 - iOS 15.4+
@@ -18,7 +18,7 @@ case accountLinkingRequiresiCloudSignIn
 
 #### Discussion
 
-To accept the Terms and Conditions on device, the merchant must be signed into iCloud. Your app needs to provide guidance to the merchant to do so.
+To accept the Terms and Conditions on device, the merchant must be signed into an Apple Account on the device. Your app should provide guidance.
 
 ## See Also
 

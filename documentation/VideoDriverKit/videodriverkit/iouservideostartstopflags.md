@@ -6,7 +6,7 @@
 Flags used to indicate how I/O is starting or stopping.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

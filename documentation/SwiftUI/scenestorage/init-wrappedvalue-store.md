@@ -28,6 +28,7 @@ The tab view customization is typically not added to `SceneStorage`, but instead
 
 - `wrappedValue`: The default value if the customization is not available for the given key.
 - `key`: A key used to save and restore the value.
+- `store`: The user defaults store to read and write to. A value of `nil` will use the user default store from the environment.
 
 
 ---

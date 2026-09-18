@@ -1,14 +1,14 @@
-# Testing In-App Purchases with sandbox
+# Testing Apple In-App Purchases with sandbox
 
 **Framework**: StoreKit
 
-Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
+Test your implementation of Apple In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 
 #### Overview
 
-Use the Apple sandbox environment to test your implementation of In-App Purchases that use the StoreKit framework on devices with real product information from App Store Connect. Transactions from test accounts don’t incur charges because the sandbox environment simulates successful transactions using the App Store’s infrastructure without processing actual payments.
+Use the Apple sandbox environment to test your implementation of Apple In-App Purchases that use the StoreKit framework on devices with real product information from App Store Connect. Transactions from test accounts don’t incur charges because the sandbox environment simulates successful transactions using the App Store’s infrastructure without processing actual payments.
 
-Apps in the development and beta-testing stages of your product cycle use the sandbox environment for In-App Purchases. These apps include:
+Apps in the development and beta-testing stages of your product cycle use the sandbox environment for Apple In-App Purchases. These apps include:
 
 - Development-signed apps you build and run from Xcode
 - Apps you download from TestFlight
@@ -17,15 +17,15 @@ When you sign in to a Sandbox Apple Account on your device, you gain access to s
 
 ##### Prepare for Sandbox Testing
 
-Before you start testing In-App Purchases in the sandbox environment, make sure that:
+Before you start testing Apple In-App Purchases in the sandbox environment, make sure that:
 
 1. Your Apple Developer Program account is active. For more information, see [`Become a member`](https://developer.apple.comhttps://developer.apple.com/programs/enroll/).
 2. Your membership Account Holder has signed the Paid Applications Agreement, as described in [`Sign and update agreements`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements).
-3. You set up the product information in App Store Connect for the app you’re testing. At minimum, set up a product reference name, product ID, a localized name, and a price. For more information, see [`Overview for configuring in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+3. You set up the product information in App Store Connect for the app you’re testing. At minimum, set up a product reference name, product ID, a localized name, and a price. For more information, see [`Overview for configuring Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 4. You create Sandbox Apple Accounts in App Store Connect. For more information, see [`Create a Sandbox Apple Account`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-sandbox-apple-ids).
 5. You grant permission for locally installed apps to run on the device if you test a development-signed build on iOS, watchOS, or visionOS devices. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
-> ❗ **Important**: A Sandbox Apple Account only works for testing In-App Purchases in apps that belong to the same Apple Developer Program account you used to create it. Don’t use a Sandbox Apple Account to test In-App Purchases in another developer’s app.
+> ❗ **Important**: A Sandbox Apple Account only works for testing Apple In-App Purchases in apps that belong to the same Apple Developer Program account you used to create it. Don’t use a Sandbox Apple Account to test Apple In-App Purchases in another developer’s app.
 
 For more information on the workflow from signing agreements to testing, see [`App Store Connect workflow`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/get-started/app-store-connect-workflow).
 
@@ -40,7 +40,7 @@ Finally, to gain access to the sandbox settings, follow the instructions below t
 
 In iOS and iPadOS, the sandbox account appears in Settings > Developer after the first time you use the device to attempt a purchase in a development-signed app. There’s no need to sign out of the non-Sandbox Apple Account. Sign in using a Sandbox Apple Account.
 
-In macOS, the sandbox account appears in App Store Settings after the first time you use the device to make an In-App Purchase. Open App Store > Settings and click the Sign In button to sign in using a Sandbox Apple Account. When you’re done testing, sign out of the Sandbox Apple Account from the App Store Settings.
+In macOS, the sandbox account appears in App Store Settings after the first time you use the device to make an Apple In-App Purchase. Open App Store > Settings and click the Sign In button to sign in using a Sandbox Apple Account. When you’re done testing, sign out of the Sandbox Apple Account from the App Store Settings.
 
 If your test device has macOS 11.1 or earlier installed, sign out of the Mac App Store, then build your app in Xcode and launch it from Finder.
 
@@ -59,11 +59,11 @@ Follow these steps to access sandbox controls for TestFlight in iOS:
 5. Next, open Settings and select Developer. (This option is available when you enable [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)).
 6. Scroll to the bottom of the screen, and select Sign In under Sandbox Apple Account. Enter your Sandbox Apple Account credentials.
 
-Your device now has access to the sandbox controls for testing your beta app, and In-App Purchases use your Sandbox Apple Account.
+Your device now has access to the sandbox controls for testing your beta app, and Apple In-App Purchases use your Sandbox Apple Account.
 
 > ❗ **Important**: Signing out of Media & Purchases can remove your access to purchased content in production apps on your device. Consider using a dedicated testing device when testing a TestFlight app with sandbox controls.
 
-If you sign back in to your Apple Account in Media & Purchases, apps you install through TestFlight revert to attributing In-App Purchases to your Apple Account and not to your Sandbox Apple Account.
+If you sign back in to your Apple Account in Media & Purchases, apps you install through TestFlight revert to attributing Apple In-App Purchases to your Apple Account and not to your Sandbox Apple Account.
 
 ##### Manage Sandbox Settings From App Store Connect or Ios Account Settings
 
@@ -93,15 +93,15 @@ For information on all aspects of managing sandbox settings in App Store Connect
 
 ##### Get Server Notifications for the Sandbox Environment
 
-Along with testing In-App Purchase in your app, you can also test related server operations in the sandbox environment. To enable App Store Server Notifications for the sandbox environment, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications).
+Along with testing Apple In-App Purchase in your app, you can also test related server operations in the sandbox environment. To enable App Store Server Notifications for the sandbox environment, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications).
 
-As you test your app, your server receives notifications for In-App Purchase transactions. The notification payload identifies the sandbox environment in the [`environment`](https://developer.apple.com/documentation/appstoreservernotifications/environment) property of the [`data`](https://developer.apple.com/documentation/appstoreservernotifications/data) object. For more information, [`Testing App Store server notifications`](testing-app-store-server-notifications.md).
+As you test your app, your server receives notifications for Apple In-App Purchase transactions. The notification payload identifies the sandbox environment in the [`environment`](https://developer.apple.com/documentation/appstoreservernotifications/environment) property of the [`data`](https://developer.apple.com/documentation/appstoreservernotifications/data) object. For more information, [`Testing App Store server notifications`](testing-app-store-server-notifications.md).
 
 The [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi) is also available in the sandbox environment. Use the endpoints’ sandbox URLs to get information about transactions that occur during testing.
 
-##### Test in App Purchases for All Regions
+##### Test Apple in App Purchases for All Regions
 
-In-app products you create through App Store Connect are available for sale in every App Store region. You can also maintain a list of product identifiers that you make available in specific regions. To test In-App Purchases in multiple regions using the same Sandbox Apple Account:
+In-app products you create through App Store Connect are available for sale in every App Store region. You can also maintain a list of product identifiers that you make available in specific regions. To test Apple In-App Purchases in multiple regions using the same Sandbox Apple Account:
 
 1. Open App Store Connect.
 2. Click the Sandbox Apple Account.
@@ -109,7 +109,7 @@ In-app products you create through App Store Connect are available for sale in e
 
 For more information, see [`Manage Sandbox Apple Account settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings).
 
-To activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple Account account on the device and sign back in. When testing this activation, you see the In-App Purchases appropriate to the region assigned to your Sandbox Apple Account. Changing the App Store Country or Region setting affects the storefront value in your app. For more information, see [`Storefront`](storefront.md).
+To activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple Account account on the device and sign back in. When testing this activation, you see the Apple In-App Purchases appropriate to the region assigned to your Sandbox Apple Account. Changing the App Store Country or Region setting affects the storefront value in your app. For more information, see [`Storefront`](storefront.md).
 
 ##### Clear the Purchase History for a Sandbox Apple Account
 
@@ -125,7 +125,7 @@ For information about clearing the purchase history from App Store Connect, see 
 
 Clearing the purchase history for Sandbox Apple Accounts with a high number of purchases can take longer than several minutes. When the process completes, the transaction history is empty and the Sandbox Apple Account is eligible for introductory offers. If you’re signed in with the Sandbox Apple Account, you can purchase subscriptions previously subscribed to without causing duplicate purchases.
 
-> **Note**:  Clearing the purchase history doesn’t affect In-App Purchases that customers make on the App Store.
+> **Note**:  Clearing the purchase history doesn’t affect Apple In-App Purchases that customers make on the App Store.
 
 ## Topics
 
@@ -143,8 +143,8 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
   Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 - [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
   Verify that your app handles an interrupted purchase by inspecting and invoking payment transactions.
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
-  Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed In-App Purchases.
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+  Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed Apple In-App Purchases.
 - [Testing a payment request](testing-a-payment-request.md)
   Verify that requests for payment function properly in the sandbox environment by inspecting the calls to the payment transaction observer.
 ### Subscriptions
@@ -156,7 +156,7 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
   Verify that your app receives subscription updates when a user cancels a subscription by verifying the receipt or receiving a notification.
 ### Family Sharing
 - [Testing Family Sharing](testing-family-sharing.md)
-  Verify that your app handles auto-renewable subscriptions and non-consumable in-app purchases that family members share with Family Sharing.
+  Verify that your app handles auto-renewable subscriptions and non-consumable Apple In-App Purchases that family members share with Family Sharing.
 ### Age Assurance
 - [Testing age assurance in sandbox](testing-age-assurance-in-sandbox.md)
   Check that your app responds correctly to age assurance scenarios and consent revocation using the sandbox environment.
@@ -177,7 +177,7 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
 ## See Also
 
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
-  Verify your implementation of In-App Purchases by testing your code throughout its development.
+  Verify your implementation of Apple In-App Purchases by testing your code throughout its development.
 - [Testing refund requests](testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)

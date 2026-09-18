@@ -22,8 +22,8 @@ struct RenewalState
 
 ## Mentions
 
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 
 #### Overview
 

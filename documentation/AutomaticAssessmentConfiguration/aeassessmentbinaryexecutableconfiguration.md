@@ -17,7 +17,7 @@ class AEAssessmentBinaryExecutableConfiguration
 
 #### Overview
 
-A non-bundled executable (such as a launchd daemon) is headless, so it supports only the subset of participant policies that apply to a process without UI: network access and whether the assessment requires it. The UI-oriented policies of [`AEAssessmentParticipantConfiguration`](aeassessmentparticipantconfiguration.md) (allowed menu items, graceful termination) do not apply.
+A non-bundled executable (such as a launchd daemon) is headless, so it supports only the subset of participant policies that apply to a process without UI: network access and whether the assessment requires it. The UI-oriented policies of [`AEAssessmentParticipantConfiguration`](aeassessmentparticipantconfiguration.md) do not apply.
 
 > **Note**: [`AEAssessmentBinaryExecutable`](aeassessmentbinaryexecutable.md), [`AEAssessmentParticipantConfiguration`](aeassessmentparticipantconfiguration.md).
 

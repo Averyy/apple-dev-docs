@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
+Information about usage that hasn’t yet reached the usage limit.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,6 +23,7 @@ struct BelowLimit
 
 ### Getting the limit status
 - [var isApproachingLimit: Bool](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/belowlimit/isapproachinglimit.md)
+  A Boolean value that indicates whether usage is nearing the usage limit.
 
 ## Relationships
 
@@ -31,8 +34,11 @@ struct BelowLimit
 ## See Also
 
 - [case belowLimit(PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit)](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/belowlimit(_:).md)
+  The model’s usage is below its usage limit.
 - [case limitReached(PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached)](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/limitreached(_:).md)
+  The model’s usage has reached its usage limit.
 - [PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/limitreached.md)
+  Information about usage that has reached the usage limit.
 
 
 ---

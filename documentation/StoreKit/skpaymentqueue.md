@@ -38,7 +38,7 @@ The exact mechanism you use to process a processed transaction depends on the de
 - If the product includes downloadable content provided by the App Store, your app retrieves the [`SKDownload`](skdownload.md) objects from the transaction and ask the payment queue to download them. You provide the actual content files to be served by the App Store to App Store Connect when you create the product information.
 - If the product represents downloadable content provided by your own server, your app might open a network connection to your server and download the content from there.
 
-For more information on designing the payment processing portion of your app, see [`In-App Purchase Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267).
+For more information on designing the payment processing portion of your app, see [`Apple In-App Purchase Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267).
 
 ## Topics
 
@@ -106,10 +106,10 @@ For more information on designing the payment processing portion of your app, se
 
 - [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
   Enable your app to receive and handle transactions by adding an observer.
-- [Offering, completing, and restoring in-app purchases](offering-completing-and-restoring-in-app-purchases.md)
+- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
 - [protocol SKPaymentTransactionObserver](skpaymenttransactionobserver.md)
-  A set of methods that process transactions, unlock purchased functionality, and continue promoted In-App Purchases.
+  A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
 - [protocol SKPaymentQueueDelegate](skpaymentqueuedelegate.md)
   The protocol that provides information needed to complete transactions.
 - [class SKRequest](skrequest.md)

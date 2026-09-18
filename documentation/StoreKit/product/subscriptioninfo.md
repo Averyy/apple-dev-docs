@@ -22,7 +22,7 @@ struct SubscriptionInfo
 
 ## Mentions
 
-- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Choosing a StoreKit API for Apple In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 
 ## Topics
@@ -92,7 +92,7 @@ struct SubscriptionInfo
 ## See Also
 
 - [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
-  Offer In-App Purchases and manage entitlements using signed transactions and status information.
+  Offer Apple In-App Purchases and manage entitlements using signed transactions and status information.
 - [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
   Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
 - [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)

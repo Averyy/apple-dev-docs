@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-A view that merchandises a collection of In-App Purchase products.
+A view that merchandises a collection of Apple In-App Purchase products.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,7 @@ A view that merchandises a collection of In-App Purchase products.
 
 #### Overview
 
-A `StoreView` displays a collection of in-app purchase products, including their localized names, descriptions, and prices, and displays a purchase button.
+A `StoreView` displays a collection of Apple In-App Purchase products, including their localized names, descriptions, and prices, and displays a purchase button.
 
 Create a store view by providing a collection of product identifiers for the view to load from the App Store, or a collection of [`Product`](product.md) values you previously loaded. If you provide product identifiers, the store view automatically loads the product information from the App Store, and updates the view when the products are available.
 
@@ -43,7 +43,7 @@ To achieve a custom layout, you can compose [`ProductView`](productview.md) inst
 
 You can customize the store by displaying additional buttons, and applying styles.
 
-To display a button that syncs in-app purchase entitlements with the App Store, modify the in-app store view or an ancestor view using the `storeButton(_:for:)` modifier with the parameters [`Visibility.visible`](https://developer.apple.com/documentation/swiftui/visibility/visible) and [`restorePurchases`](storebuttonkind/restorepurchases.md). The app calls the [`sync()`](appstore/sync().md) method when people use this button.
+To display a button that syncs Apple In-App Purchase entitlements with the App Store, modify the in-app store view or an ancestor view using the `storeButton(_:for:)` modifier with the parameters [`Visibility.visible`](https://developer.apple.com/documentation/swiftui/visibility/visible) and [`restorePurchases`](storebuttonkind/restorepurchases.md). The app calls the [`sync()`](appstore/sync().md) method when people use this button.
 
 You can customize the appearance of the products using product view styles, such as [`CompactProductViewStyle`](compactproductviewstyle.md), [`LargeProductViewStyle`](largeproductviewstyle.md), and [`RegularProductViewStyle`](regularproductviewstyle.md). To apply the style, call the [`productViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)) modifier.
 
@@ -79,7 +79,7 @@ You can customize the appearance of the products using product view styles, such
 ## See Also
 
 - [struct ProductView](productview.md)
-  A view that merchandises an individual In-App Purchase product.
+  A view that merchandises an individual Apple In-App Purchase product.
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 - [struct SubscriptionOfferView](subscriptionofferview.md)

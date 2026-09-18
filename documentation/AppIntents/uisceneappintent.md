@@ -39,6 +39,8 @@ For more information about how to use app intents to configure your app’s inte
 ### Updating the app’s interface
 - [func performNavigation(forScene: UIScene)](uisceneappintent/performnavigation(forscene:).md)
   Tells the app intent that the system is about to show the specified scene.
+### Default Implementations
+- [TargetContentProvidingIntent Implementations](uisceneappintent/targetcontentprovidingintent-implementations.md)
 
 ## Relationships
 

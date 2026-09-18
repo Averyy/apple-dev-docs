@@ -18,7 +18,7 @@ The app is an expense report manager that lets you create reports, scan receipts
 
 ![An iOS app displaying a daily expense breakdown across two spending categories. The presentation can be adjusted to show daily, weekly, monthly, or yearly breakdowns.](/images/com.apple.metrickit/track-performance-by-app-state-using-metrickit-1@2x.png)
 
-> **Note**: MetricKit delivers reports on a system-determined schedule. To generate reports during development, choose Debug > Simulate MetricKit Payloads in Xcode.
+> **Note**: MetricKit delivers reports on a system-determined schedule. To generate reports during development, import MetricKit, subscribe to reports in code, and run your app from Xcode, then choose Debug > MetricKit > Simulate MetricKit Payloads.
 
 #### Configure the Sample Code Project
 

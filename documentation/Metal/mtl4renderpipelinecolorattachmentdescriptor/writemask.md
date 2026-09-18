@@ -21,7 +21,7 @@ var writeMask: MTLColorWriteMask { get set }
 
 #### Discussion
 
-This property defaults to `MTLColorWriteMaskAll`.
+This property defaults to [`all`](mtlcolorwritemask/all.md).
 
 
 ---

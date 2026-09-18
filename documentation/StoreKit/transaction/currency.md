@@ -34,7 +34,7 @@ To access the transaction’s currency on systems earlier than iOS 16, iPadOS 16
 ## See Also
 
 - [var price: Decimal?](transaction/price.md)
-  The price of the in-app purchase that the system records in the transaction.
+  The price of the Apple In-App Purchase that the system records in the transaction.
 
 
 ---

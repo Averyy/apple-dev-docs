@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A unique name for the tool, such as “get_weather”, “toggleDarkMode”, or “search contacts”.
+A unique name for the tool.
 
 **Availability**:
 - iOS 26.0+
@@ -20,6 +20,10 @@ A unique name for the tool, such as “get_weather”, “toggleDarkMode”, or 
 var name: String { get }
 ```
 
+#### Discussion
+
+Use whichever style reads best in your codebase, such as `get_weather`, `toggleDarkMode`, or `search contacts`.
+
 ## See Also
 
 - [var description: String](tool/description.md)
@@ -27,8 +31,9 @@ var name: String { get }
 - [var parameters: GenerationSchema](tool/parameters.md)
   A schema for the parameters this tool accepts.
 - [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
-  A Boolean value that indicates whether the tool’s name, description, and parameters schema are injected into the instructions of sessions that leverage this tool.
+  A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
 - [typealias SessionProperty](tool/sessionproperty.md)
+  A property wrapper that provides access to a session property from within a tool.
 
 
 ---

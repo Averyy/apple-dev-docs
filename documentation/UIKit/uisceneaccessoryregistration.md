@@ -48,6 +48,8 @@ Instances of this type allow for observing availability of a given scene accesso
 
 ## See Also
 
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+  Fill connected displays with additional content from your app.
 - [class UISceneAccessory](uisceneaccessory.md)
   A type which can be used to register for a specific type of scene accessory presentation.
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The model’s maximum context size, in tokens.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,8 +22,11 @@ var contextSize: Int
 ## See Also
 
 - [var metadata: [String : any Sendable]](languagemodelerror/contextsizeexceeded/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var tokenCount: Int](languagemodelerror/contextsizeexceeded/tokencount.md)
+  The number of tokens in the transcript that exceeded the model’s context size.
 - [var debugDescription: String](languagemodelerror/contextsizeexceeded/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 
 ---

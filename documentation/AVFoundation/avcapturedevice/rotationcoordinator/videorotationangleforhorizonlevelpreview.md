@@ -34,6 +34,8 @@ Alternatively, if your app uses an [`AVCaptureVideoDataOutput`](avcapturevideoda
 
 - [var videoRotationAngleForHorizonLevelCapture: CGFloat](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md)
   An angle the coordinator provides your app to apply to photos or videos it captures with the device so that they’re level relative to gravity.
+- [func videoRotationAngleRelative(toDeviceOrientation: AVCaptureVideoOrientation) -> CGFloat](avcapturedevice/rotationcoordinator/videorotationanglerelative(todeviceorientation:).md)
+  An angle the coordinator provides your app to apply to photos or videos it takes with the capture device so that they’re upright relative to an orientation your app provides.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A 3x3 matrix that transforms points in a plane.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -18,6 +20,31 @@
 @frozen
 struct ProjectionTransform
 ```
+
+#### Overview
+
+A projection transform covers everything `CGAffineTransform` does - translation, rotation, scale, and skew - and adds perspective, which an affine transform cannot express. SwiftUI uses it to describe the geometry a view effect applies.
+
+Return a value of this type from [`effectValue(size:)`](geometryeffect/effectvalue(size:).md) to write a custom effect. The following effect leans a view to one side by shearing it, and animates as `amount` changes:
+
+```swift
+struct ShearEffect: GeometryEffect {
+    var amount: CGFloat
+
+    var animatableData: CGFloat {
+        get { amount }
+        set { amount = newValue }
+    }
+
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        ProjectionTransform(
+            CGAffineTransform(
+                a: 1, b: 0, c: amount, d: 1, tx: 0, ty: 0))
+    }
+}
+```
+
+Create a transform from a `CGAffineTransform` or a `CATransform3D` when you already have one, or set the nine elements directly. The elements are named for their row and column, so [`m11`](projectiontransform/m11.md) is the first row and first column.
 
 ## Topics
 

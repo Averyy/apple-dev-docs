@@ -6,7 +6,7 @@
 When this value for the clock algorithm is specified, the Host applies a simple IIR filter to the time stamp stream.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

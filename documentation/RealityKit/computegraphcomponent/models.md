@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Per-output model component overrides, keyed by output node identifier.
+The model component used to render each graph output, keyed by output node identifier.
 
 **Availability**:
 - iOS 27.0+
@@ -20,7 +20,7 @@ var models: [ComputeNodeGraph.NodeID : ModelComponent] { get set }
 
 #### Discussion
 
-When non-`nil`, these model components replace those defined in [`resource`](computegraphcomponent/resource.md). Set to `[:]` to restore resource-defined models.
+Assigning a [`resource`](computegraphcomponent/resource.md) initializes this dictionary from the models the resource defines for its outputs. Assign a new value to replace them.
 
 
 ---

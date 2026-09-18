@@ -46,7 +46,7 @@ An individual schema may reference other schemas by name, and references are res
   A property that belongs to a dynamic generation schema.
 ### Creating a null schema
 - [static var null: DynamicGenerationSchema](dynamicgenerationschema/null.md)
-  Creates a null schema.
+  A schema that represents a null value.
 
 ## Relationships
 

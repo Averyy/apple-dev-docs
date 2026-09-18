@@ -96,6 +96,8 @@ struct GenerativeView: View {
 ### Handling a language model error
 - [SystemLanguageModel.Error](systemlanguagemodel/error.md)
   An error specific to the on-device system language model.
+### Default Implementations
+- [LanguageModel Implementations](systemlanguagemodel/languagemodel-implementations.md)
 
 ## Relationships
 

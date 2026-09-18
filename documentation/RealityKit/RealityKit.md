@@ -148,6 +148,9 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
 - [Low-level rendering](low-level-rendering.md)
   Drive the renderer directly to build custom drawing pipelines, meshes, buffers, and textures when higher-level rendering does not give you the control you need.
+### Articles
+- [Gaussian Splat Rendering Guidelines](gaussian-splat-rendering-guidelines.md)
+  Improving performance and watching thermal state when rendering Gaussian splats
 ### Classes
 - [class ComputeGraphResource](computegraphresource.md)
   A loaded compute graph resource containing the graph definition, compiled pipelines, and all associated rendering assets.

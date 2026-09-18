@@ -30,6 +30,8 @@ Interfaces across Apple platforms feature a new dynamic material called Liquid G
 ### Interface
 - [Interface fundamentals](interface-fundamentals.md)
   Explore the components that go into building your app’s interface, and discover platform-specific features that improve the experience you offer to people.
+- [Preparing your app for iPhone Duo](preparing-your-app-for-iphone-duo.md)
+  Update your iOS app to dynamically resize for inner and outer displays, adjust your layout for the folding display, and adapt bars for vertical layout.
 - [Liquid Glass](liquid-glass.md)
   Learn how to design and develop beautiful interfaces that leverage Liquid Glass.
 

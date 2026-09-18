@@ -1,4 +1,4 @@
-# AVKit Metadata Identifiers
+# AVKit metadata identifiers
 
 **Framework**: AVKit
 
@@ -6,7 +6,7 @@ Additional metadata that an asset contains.
 
 ## Topics
 
-### Displayed Metadata
+### Displayed metadata
 - [let AVKitMetadataIdentifierExactStartDate: String](avkitmetadataidentifierexactstartdate.md)
   The exact start date for a live event stream.
 - [let AVKitMetadataIdentifierExactEndDate: String](avkitmetadataidentifierexactenddate.md)
@@ -15,7 +15,7 @@ Additional metadata that an asset contains.
   The approximate start date for a live event stream.
 - [let AVKitMetadataIdentifierApproximateEndDate: String](avkitmetadataidentifierapproximateenddate.md)
   The approximate end date for a live event stream.
-### Nondisplayed Metadata
+### Nondisplayed metadata
 - [let AVKitMetadataIdentifierPlaybackProgress: String](avkitmetadataidentifierplaybackprogress.md)
   The playback progress published through the Now Playing Info Center.
 - [let AVKitMetadataIdentifierExternalContentIdentifier: String](avkitmetadataidentifierexternalcontentidentifier.md)

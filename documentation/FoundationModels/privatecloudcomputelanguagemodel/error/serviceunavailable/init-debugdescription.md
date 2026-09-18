@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a service unavailable instance.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -16,6 +18,10 @@
 ```swift
 init(debugDescription: String)
 ```
+
+## Parameters
+
+- `debugDescription`: The debug description of why the service is unavailable.
 
 
 ---

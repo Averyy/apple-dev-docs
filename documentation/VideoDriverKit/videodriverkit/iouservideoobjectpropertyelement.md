@@ -6,7 +6,7 @@
 An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

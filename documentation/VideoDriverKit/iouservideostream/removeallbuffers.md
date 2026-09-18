@@ -6,7 +6,7 @@
 Removes all buffers from the video stream.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

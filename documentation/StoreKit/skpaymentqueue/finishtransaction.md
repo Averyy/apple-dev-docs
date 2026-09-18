@@ -22,7 +22,7 @@ func finishTransaction(_ transaction: SKPaymentTransaction)
 
 ## Mentions
 
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Finishing a transaction](finishing-a-transaction.md)
 - [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 - [Testing an interrupted purchase](testing-an-interrupted-purchase.md)

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
+Sets the tool-calling mode.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

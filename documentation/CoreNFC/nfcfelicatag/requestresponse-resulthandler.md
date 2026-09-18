@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func requestResponse(resultHandler: @escaping (Result<Int, any Error>) -> Void)
+@preconcurrency
+func requestResponse(resultHandler: @escaping @Sendable (Result<Int, any Error>) -> Void)
 ```
 
 

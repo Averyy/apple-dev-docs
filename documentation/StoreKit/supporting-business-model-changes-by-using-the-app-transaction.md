@@ -6,17 +6,17 @@ Access the app transaction to determine when a customer purchased an app and the
 
 #### Overview
 
-The [`originalAppVersion`](apptransaction/originalappversion.md) property indicates the app version that the customer purchased. If you change your business model from a paid app to a free app that offers in-app purchases, use this property to learn whether the customer purchased your app before you changed the business model. Then, use that information to determine your customers’ entitlement to features that were available in the paid app.
+The [`originalAppVersion`](apptransaction/originalappversion.md) property indicates the app version that the customer purchased. If you change your business model from a paid app to a free app that offers Apple In-App Purchases, use this property to learn whether the customer purchased your app before you changed the business model. Then, use that information to determine your customers’ entitlement to features that were available in the paid app.
 
 ##### Provide Features to All Customers
 
-For example, an app that is a paid app in version 1 has premium features available to everyone who buys it. For version 2, the developer changes the business model, making it a free app that offers in-app purchases. Version 2 of the app has the same premium features, but now they’re available as in-app purchases.
+For example, an app that is a paid app in version 1 has premium features available to everyone who buys it. For version 2, the developer changes the business model, making it a free app that offers Apple In-App Purchases. Version 2 of the app has the same premium features, but now they’re available as Apple In-App Purchases.
 
 In version 2, the developer wants to continue to provide the premium features to customers who purchased version 1. To do so, the app performs the following steps:
 
 1. The app’s code includes a constant that indicates the version the business model changed; that constant is `"2"` in this example.
 2. The app compares the [`originalAppVersion`](apptransaction/originalappversion.md)  value with the constant. If the customer purchased the app before the business model changed, the app determines that they’re entitled to the premium features.
-3. The app also checks the [`currentEntitlements`](transaction/currententitlements.md) sequence and delivers any in-app purchases the customers may have made.
+3. The app also checks the [`currentEntitlements`](transaction/currententitlements.md) sequence and delivers any Apple In-App Purchases the customers may have made.
 
 ##### Obtain an App Transaction
 
@@ -92,7 +92,7 @@ for await result in Transaction.currentEntitlements {
 }
 ```
 
-> **Note**:  Session 10007:  [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
+> **Note**:  Session 10007:  [`What’s new with Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
 
 ## See Also
 

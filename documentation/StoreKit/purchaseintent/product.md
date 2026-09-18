@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-The product information of the In-App Purchase the customer selects to purchase outside of the app.
+The product information of the Apple In-App Purchase the customer selects to purchase outside of the app.
 
 **Availability**:
 - iOS 16.4+
@@ -19,7 +19,7 @@ let product: Product
 
 ## Mentions
 
-- [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 
 #### Discussion
@@ -29,7 +29,7 @@ To enable users to complete the purchase they start on the App Store, call [`pur
 ## See Also
 
 - [var id: Product.ID](purchaseintent/id.md)
-  The product identifier of the In-App Purchase that the customer selects to purchase outside of the app.
+  The product identifier of the Apple In-App Purchase that the customer selects to purchase outside of the app.
 
 
 ---

@@ -1,4 +1,4 @@
-# Getting started with In-App Purchase using StoreKit views
+# Getting started with Apple In-App Purchase using StoreKit views
 
 **Framework**: StoreKit
 
@@ -6,7 +6,7 @@ Set up an in-app store using SwiftUI and StoreKit views.
 
 #### Overview
 
-StoreKit provides a streamlined system for building basic In-App Purchase (IAP) capabilities that allow you to provide purchases in your app and process transactions using simple SwiftUI views. You can use this capability to build a basic store with default styling, or you can customize your store’s experience using the full, expressive capabilities of SwiftUI.
+StoreKit provides a streamlined system for building basic Apple In-App Purchase (IAP) capabilities that allow you to provide purchases in your app and process transactions using simple SwiftUI views. You can use this capability to build a basic store with default styling, or you can customize your store’s experience using the full, expressive capabilities of SwiftUI.
 
 #### Choose Your Product Types
 
@@ -19,7 +19,7 @@ StoreKit supports the following product types, and StoreKit views can display al
 
 #### Prototype Your in App Store Offline
 
-With StoreKit, you can create a file that allows you to prototype and test your In-App Purchase code in Xcode without needing to set up products in App Store Connect. Xcode calls this a StoreKit local configuration; to create a local configuration file, follow these steps:
+With StoreKit, you can create a file that allows you to prototype and test your Apple In-App Purchase code in Xcode without needing to set up products in App Store Connect. Xcode calls this a StoreKit local configuration; to create a local configuration file, follow these steps:
 
 1. Open your app’s Xcode project.
 2. Create the local StoreKit configuration by selecting File > New > File From Template.
@@ -51,7 +51,7 @@ enum ProductID: String {
 }
 ```
 
-> **Note**: In a production app, consider fetching the list of product IDs programmatically — either from App Store Connect, or from your own server. This approach lets you enable and disable products without recompiling your app. For more information, see [`Configure In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+> **Note**: In a production app, consider fetching the list of product IDs programmatically — either from App Store Connect, or from your own server. This approach lets you enable and disable products without recompiling your app. For more information, see [`Configure Apple In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 #### Monitor Transactions in Your App
 
@@ -202,11 +202,11 @@ To show a specific subset of your available products, use the same view structur
 
 ![A screenshot of the StoreKitWorkflows app showing a view of only available subscriptions.](/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-SubsOnly@2x.png)
 
-For more information on StoreKit Testing in Xcode, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/). For more information on the presentation of In-App purchase products, see Human Interface Guidelines > [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase). For more information on creating products in App Store Connect, see [`Configure In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+For more information on StoreKit Testing in Xcode, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/). For more information on the presentation of Apple In-App Purchase products, see Human Interface Guidelines > [`Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase). For more information on creating products in App Store Connect, see [`Configure Apple In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 ## See Also
 
-- [In-App Purchase](in-app-purchase.md)
+- [Apple In-App Purchase](in-app-purchase.md)
   Offer content and services in your app across Apple platforms using a Swift-based interface.
 - [Understanding StoreKit workflows](understanding-storekit-workflows.md)
   Implement an in-app store with several product types, using StoreKit views.

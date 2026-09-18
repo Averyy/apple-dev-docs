@@ -18,7 +18,7 @@ enum AVCaptureViewControlsStyle
 
 ### Creating a controls style
 - [init?(rawValue: Int)](avcaptureviewcontrolsstyle/init(rawvalue:).md)
-### Controls Styles
+### Controls styles
 - [AVCaptureViewControlsStyle.inline](avcaptureviewcontrolsstyle/inline.md)
   The view’s inline controls style.
 - [AVCaptureViewControlsStyle.floating](avcaptureviewcontrolsstyle/floating.md)

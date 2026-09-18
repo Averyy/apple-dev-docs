@@ -6,7 +6,7 @@
 The system calls this virtual method when the control’s selected values change.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

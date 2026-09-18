@@ -34,7 +34,7 @@ init<S>(elements: S, id: GenerationID? = nil) where S : Sequence, S.Element == a
 - [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
   Creates content with the specified kind and generation identifier.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
-  A failure that occurs when a string cannot be parsed into GeneratedContent.
+  A failure that occurs when a string cannot be parsed into generated content.
 
 
 ---

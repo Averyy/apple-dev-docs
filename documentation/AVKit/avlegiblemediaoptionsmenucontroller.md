@@ -53,6 +53,8 @@ Supports both media track selection and caption appearance customization. When i
 ## See Also
 
 - [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
+- [class AVContentSelectionViewController](avcontentselectionviewcontroller.md)
+  A view controller for providing additional UI to the multiview experience.
 
 
 ---

@@ -1,4 +1,4 @@
 Completed scraping Automatic Sign-In API!
-Total pages scraped: 5
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 6
 Pages failed: 0

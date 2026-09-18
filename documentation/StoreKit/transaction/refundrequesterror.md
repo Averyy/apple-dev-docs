@@ -28,7 +28,7 @@ The following methods throw refund request errors: [`beginRefundRequest(in:)`](t
 
 ### Error Enumeration
 - [Transaction.RefundRequestError.duplicateRequest](transaction/refundrequesterror/duplicaterequest.md)
-  The App Store has already received a refund request for this in-app purchase.
+  The App Store has already received a refund request for this Apple In-App Purchase.
 - [Transaction.RefundRequestError.failed](transaction/refundrequesterror/failed.md)
   The refund request submission failed.
 ### Enumeration Cases

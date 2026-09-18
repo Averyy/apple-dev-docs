@@ -23,9 +23,9 @@ static let nonRenewable: Product.ProductType
 ## See Also
 
 - [static let consumable: Product.ProductType](product/producttype/consumable.md)
-  A consumable in-app purchase.
+  A consumable Apple In-App Purchase.
 - [static let nonConsumable: Product.ProductType](product/producttype/nonconsumable.md)
-  A non-consumable in-app purchase.
+  A non-consumable Apple In-App Purchase.
 - [static let autoRenewable: Product.ProductType](product/producttype/autorenewable.md)
   An auto-renewable subscription.
 

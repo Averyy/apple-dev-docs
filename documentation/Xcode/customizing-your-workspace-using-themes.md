@@ -62,6 +62,11 @@ In the Fonts pane, you can:
 
 To add colors that you configured in earlier Xcode releases, click the Import button on the Themes popover and select the color theme file (with a `.xcolortheme` extension) from the `~/Library/Developer/Xcode/UserData/FontAndColorThemes` folder.
 
+## See Also
+
+- [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
+  Add more simulated devices, optional features, and support for additional platforms.
+
 
 ---
 

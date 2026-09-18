@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The model’s explanation for why it refused to generate a response, delivered as it streams.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,6 +22,7 @@ var explanationStream: LanguageModelSession.ResponseStream<String> { get }
 ## See Also
 
 - [var explanation: LanguageModelSession.Response<String>](languagemodelerror/refusal/explanation.md)
+  The model’s explanation for why it refused to generate a response.
 
 
 ---

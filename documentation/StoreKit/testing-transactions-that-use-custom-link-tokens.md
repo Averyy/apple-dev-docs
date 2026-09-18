@@ -16,7 +16,7 @@ Apps running in the sandbox environment need to satisfy the same requirements as
 
 ##### Handle Custom Link Tokens in the Sandbox Environment
 
-The [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API generates custom link tokens, which have a token type and an expiration date. There are two possible token types, `ACQUISITION` and `SERVICES`. Your app requests a token by calling the [`token(for:)`](externalpurchasecustomlink/token(for:).md) method and specifying the token type. The first time you request a token in the sandbox environment, the system creates the token and initiates an *active token period*.
+The [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API generates custom link tokens, which have a token type and an expiration date. There are two possible token types, `ACQUISITION` and `SERVICES`. Your app requests a token by calling the `ExternalPurchaseCustomLink/token(for:)` method and specifying the token type. The first time you request a token in the sandbox environment, the system creates the token and initiates an *active token period*.
 
 > **Note**: In the sandbox environment, custom link tokens expire 1 hour after creation.
 

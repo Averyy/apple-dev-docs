@@ -22,7 +22,7 @@ case unsupported
 
 #### Discussion
 
-The system surfaces this error when the type that originates the request doesn’t support the operation. For example, initializing an [`AdvancedCommerceProduct`](advancedcommerceproduct.md) using the product ID of an in-app purchase that isn’t registered as a generic SKU in App Store Connect.
+The system surfaces this error when the type that originates the request doesn’t support the operation. For example, initializing an [`AdvancedCommerceProduct`](advancedcommerceproduct.md) using the product ID of an Apple In-App Purchase that isn’t registered as a generic SKU in App Store Connect.
 
 ## See Also
 

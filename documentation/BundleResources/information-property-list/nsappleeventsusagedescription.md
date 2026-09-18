@@ -27,7 +27,9 @@ An app using Apple events to control another app might be able to gain access to
 - [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
   A message that tells people why the app needs to access files in other apps’ sandbox containers.
 - [NSUserTrackingUsageDescription](information-property-list/nsusertrackingusagedescription.md)
-  A message that informs the user why an app is requesting permission to use data for tracking the user or the device.
+  A message that explains the purpose for accessing data that an app can use to track a person or device.
+- [NSUserTrackingMarkdownUsageDescription](information-property-list/nsusertrackingmarkdownusagedescription.md)
+  A message that explains the purpose for accessing data that an application can use to track a person or device.
 - [NSSystemAdministrationUsageDescription](information-property-list/nssystemadministrationusagedescription.md)
   A message in macOS that tells people why the app is requesting to manipulate the system configuration.
 - [ITSAppUsesNonExemptEncryption](information-property-list/itsappusesnonexemptencryption.md)

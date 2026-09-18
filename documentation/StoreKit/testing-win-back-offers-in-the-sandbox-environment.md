@@ -31,7 +31,7 @@ On the iOS device, set up the testing environment by opening Account Settings, a
 1. Open Settings and select Developer.
 2. Select the Sandbox Apple Account. If you’re not yet signed in, see [`Sign in to your Sandbox Apple Account for a development-signed app`](testing-in-app-purchases-with-sandbox#Sign-in-to-your-Sandbox-Apple-Account-for-a-development-signed-app.md) to sign in. A popover appears.
 3. Select Manage on the popover. The Account Settings page appears.
-4. Check that the Allow Purchases & Renewals toggle remains on. If it’s off, all purchases fail, which represents a different test case. For more information, see [`Testing failing subscription renewals and In-App Purchases`](testing-failing-subscription-renewals-and-in-app-purchases.md).
+4. Check that the Allow Purchases & Renewals toggle remains on. If it’s off, all purchases fail, which represents a different test case. For more information, see [`Testing failing subscription renewals and Apple In-App Purchases`](testing-failing-subscription-renewals-and-in-app-purchases.md).
 5. Turn on or off the Win-Back Offer Sheet toggle.  Turn it on to enable the [`Message`](message.md) API to display the win-back offer sheet when you launch the app.  Turn it off to prevent the sheet from appearing, even if the customer is eligible for the offer. This toggle only affects sandbox testing.  In either case, StoreKit delivers the new transaction to your app through the [`updates`](transaction/updates.md) asynchronous sequence in [`Transaction`](transaction.md).
 
 ##### Prepare Eligibility Conditions
@@ -96,8 +96,8 @@ To repeat a test and redeem the same win-back offer, cancel the subscription and
   Verify that your app receives and handles transactions that occur outside your app, such as subscription purchases, renewals, and offer and promo code redemptions.
 - [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
   Verify that your app handles an interrupted purchase by inspecting and invoking payment transactions.
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
-  Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed In-App Purchases.
+- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+  Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed Apple In-App Purchases.
 - [Testing a payment request](testing-a-payment-request.md)
   Verify that requests for payment function properly in the sandbox environment by inspecting the calls to the payment transaction observer.
 

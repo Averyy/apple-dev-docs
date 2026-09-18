@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func sendRequest(requestFlags flags: Int, commandCode: Int, data: Data?, resultHandler: @escaping (Result<(NFCISO15693ResponseFlag, Data?), any Error>) -> Void)
+@preconcurrency
+func sendRequest(requestFlags flags: Int, commandCode: Int, data: Data?, resultHandler: @escaping @Sendable (Result<(NFCISO15693ResponseFlag, Data?), any Error>) -> Void)
 ```
 
 

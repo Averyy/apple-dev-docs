@@ -38,9 +38,9 @@ entity.components.set(component)
   Creates a `ComputeGraphComponent` and immediately attaches the given resource.
 ### Instance Properties
 - [var materials: [ComputeNodeGraph.NodeID : any Material]](computegraphcomponent/materials.md)
-  Per-output material overrides, keyed by output node identifier.
+  The material used to render each graph output, keyed by output node identifier.
 - [var models: [ComputeNodeGraph.NodeID : ModelComponent]](computegraphcomponent/models.md)
-  Per-output model component overrides, keyed by output node identifier.
+  The model component used to render each graph output, keyed by output node identifier.
 - [var pipelines: ComputeNodeGraph.Pipelines?](computegraphcomponent/pipelines.md)
   The compiled pipelines used to execute the simulation.
 - [var randomSeed: UInt32?](computegraphcomponent/randomseed.md)

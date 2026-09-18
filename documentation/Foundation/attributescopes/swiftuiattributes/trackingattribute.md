@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+A key for the space added between every character of a run of attributed text.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -18,6 +20,19 @@
 @frozen
 enum TrackingAttribute
 ```
+
+#### Overview
+
+Tracking spreads a run out evenly, which suits a short label set in capitals. Give a positive value to open the run up and a negative value to tighten it:
+
+```None
+var label = AttributedString("SOLD OUT")
+label.tracking = 3
+
+Text(label)
+```
+
+To adjust only the gap between particular pairs of letters, use [`AttributeScopes.SwiftUIAttributes.KerningAttribute`](attributescopes/swiftuiattributes/kerningattribute.md).
 
 ## Relationships
 

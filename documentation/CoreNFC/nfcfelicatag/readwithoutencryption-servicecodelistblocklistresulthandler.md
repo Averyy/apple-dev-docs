@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func readWithoutEncryption(serviceCodeList: [Data], blockList: [Data], resultHandler: @escaping (Result<(NFCFeliCaStatusFlag, [Data]), any Error>) -> Void)
+@preconcurrency
+func readWithoutEncryption(serviceCodeList: [Data], blockList: [Data], resultHandler: @escaping @Sendable (Result<(NFCFeliCaStatusFlag, [Data]), any Error>) -> Void)
 ```
 
 

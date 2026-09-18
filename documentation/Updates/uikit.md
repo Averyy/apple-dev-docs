@@ -8,6 +8,47 @@ Learn about important changes to UIKit.
 
 Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/uikit).
 
+#### September 2026
+
+##### Arrangement View Controllers
+
+- Arrange primary and secondary view controllers using an adaptive layout that responds to the environment with [`UIArrangementViewController`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller).
+- Assign a view controller to the primary or secondary view of an arrangement using [`setViewController(_:for:animated:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/setviewcontroller(_:for:animated:)) with a [`UIArrangementViewController.ViewPlacement`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/viewplacement).
+- Update the arrangement a view controller uses, such as a split or overlay arrangement, using [`updateArrangement(_:animated:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/updatearrangement(_:animated:)).
+- Create a custom arrangement by conforming to [`UIArrangementViewController.Arrangement`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/arrangement), providing [`defaultViewProperties`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/arrangement/defaultviewproperties), and implementing [`setViewProperties(_:for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/arrangement/setviewproperties(_:for:)) to configure how each view appears within the arrangement.
+- Look up the view controller for a view placement using [`viewController(for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/viewcontroller(for:)), get its state (including z-index, split axis, and visibility) using [`state(for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/state(for:)), and find the placement for a view controller using [`placement(for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/placement(for:)).
+- Split views on one or more axes using [`UISplitArrangement`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct) and restrict which axes the split can use with [`axes(_:)`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct/axes(_:)). Configure the minimum, preferred, and maximum size of a view within the split using [`UISplitArrangement.DimensionRange`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct/dimensionrange), specifying each size as an absolute, fractional, automatic, or intrinsic [`UISplitArrangement.Dimension`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct/dimension) value.
+- Overlay views using [`UIOverlayArrangement`](https://developer.apple.com/documentation/uikit/uioverlayarrangement-swift.struct), and use [`axes(_:)`](https://developer.apple.com/documentation/uikit/uioverlayarrangement-swift.struct/axes(_:)) to restrict the axes on which the overlay can transition to a side-by-side layout.
+- Find the nearest ancestor arrangement view controller from a descendant view controller using its [`arrangementViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller/arrangementviewcontroller) property.
+
+##### Reserved Regions
+
+- Identify and avoid a region of a view reserved by hardware, such as a camera or the hinge, using [`UIView.ReservedRegion`](https://developer.apple.com/documentation/uikit/uiview/reservedregion).
+- Query the reserved regions that intersect a view using the [`reservedRegions(kind:options:)`](https://developer.apple.com/documentation/uikit/uiview/reservedregions(kind:options:)) method, specifying a [`UIView.ReservedRegion.Kind`](https://developer.apple.com/documentation/uikit/uiview/reservedregion/kind-swift.struct) such as `.occlusion` or `.division`.
+- Include inactive reserved regions in a query using the [`includeInactive`](https://developer.apple.com/documentation/uikit/uiview/reservedregion/queryoptions/includeinactive) option.
+
+##### Hinge
+
+- Observe the state of the hinge associated with a view’s hierarchy by adding a [`UIHingeInteraction`](https://developer.apple.com/documentation/uikit/uihingeinteraction) to the view. The interaction’s handler receives a [`UIHingeInteraction.Update`](https://developer.apple.com/documentation/uikit/uihingeinteraction/update) with the current hinge, or `nil` when the interaction leaves a hierarchy that provides hinge updates.
+- Read the hinge’s current angle and status, such as `.closed`, `.partiallyOpen`, or `.fullyOpen`, using [`UIHinge`](https://developer.apple.com/documentation/uikit/uihinge).
+
+##### Controls on the Vertical Axis
+
+- Opt a view controller out of showing bar content on the vertical axis, or let the system decide, using [`preferredVerticalBarBehavior`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredverticalbarbehavior) and the [`UIVerticalBarBehavior`](https://developer.apple.com/documentation/uikit/uiverticalbarbehavior) values `automatic` and `disabled`.
+- Defer a view controller’s preference for showing bar content on the vertical axis to one of its descendants using [`childForPreferredVerticalBarBehavior`](https://developer.apple.com/documentation/uikit/uiviewcontroller/childforpreferredverticalbarbehavior), and signal that the preferred configuration has changed with [`setNeedsUpdateOfVerticalBarConfiguration()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/setneedsupdateofverticalbarconfiguration()).
+- Read the edge where the system places controls on the vertical axis using [`verticalBarEdge`](https://developer.apple.com/documentation/uikit/uitraitcollection/verticalbaredge), which returns a [`UIVerticalBarEdge`](https://developer.apple.com/documentation/uikit/uiverticalbaredge) value such as `.leading` or `.trailing`. Register for changes to it using the traits from [`systemTraitsAffectingVerticalBarEdge`](https://developer.apple.com/documentation/uikit/uitraitcollection/systemtraitsaffectingverticalbaredge-475st).
+- Reserve a layout region for bar content on a specific edge using [`bar(onEdge:extent:)`](https://developer.apple.com/documentation/uikit/uiview/layoutregion/bar(onedge:extent:)-2tj1g).
+
+##### Scene Accessories
+
+- Present content on the outer display of iPhone Duo while the device is open, the app is in the foreground, and a camera capture session is active, using [`cameraCapture(sceneConfiguration:)`](https://developer.apple.com/documentation/uikit/uisceneaccessory/cameracapture(sceneconfiguration:)) on [`UISceneAccessory`](https://developer.apple.com/documentation/uikit/uisceneaccessory).
+- Identify a scene created from a camera capture accessory registration using the [`windowCameraCaptureAccessory`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowcameracaptureaccessory) session role.
+
+##### Bar Items
+
+- Control whether a bar button item appears on the vertical or horizontal axis using the [`axisBehavior`](https://developer.apple.com/documentation/uikit/uibarbuttonitem/axisbehavior-swift.property) property with a [`UIBarButtonItem.AxisBehavior`](https://developer.apple.com/documentation/uikit/uibarbuttonitem/axisbehavior-swift.enum) value, such as `.horizontalOnly` or `.verticalPreferred`.
+- Control how bars compress when the system renders different types of bars together and space is constrained using the [`verticalBarCompressionBehavior`](https://developer.apple.com/documentation/uikit/uinavigationitem/verticalbarcompressionbehavior) property with a [`UIVerticalBarCompressionBehavior`](https://developer.apple.com/documentation/uikit/uiverticalbarcompressionbehavior) value, such as `.prefersBarItems` or `.prefersTabBar`.
+
 #### June 2026
 
 ##### General

@@ -15,7 +15,7 @@ Animate changes to one or more views using the specified duration.
 ## Declaration
 
 ```swift
-class func animate(withDuration duration: TimeInterval, animations: @escaping () -> Void)
+class func animate(withDuration duration: TimeInterval, animations: () -> Void)
 ```
 
 #### Discussion

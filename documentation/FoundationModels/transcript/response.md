@@ -23,12 +23,14 @@ struct Response
 
 ### Creating a response
 - [init(id: String, assetIDs: [String], segments: [Transcript.Segment])](transcript/response/init(id:assetids:segments:).md)
+  Creates a response that contains the segments you provide.
 - [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment])](transcript/response/init(id:metadata:segments:).md)
+  Creates a response that contains the metadata and segments you provide.
 ### Inspecting a response
 - [var segments: [Transcript.Segment]](transcript/response/segments.md)
-  Ordered prompt segments.
+  Ordered response segments.
 - [var assetIDs: [String]](transcript/response/assetids.md)
-  Version aware identifiers for all assets used to generate this response.
+  Version-aware identifiers for all assets used to generate this response.
 - [var metadata: [String : GeneratedContent]](transcript/response/metadata.md)
   Metadata associated with generating the response.
 

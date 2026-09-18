@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+A set of horizontal directions that specify how someone can look at a volume.
+
 **Availability**:
 - visionOS 2.0+
 
@@ -12,6 +14,17 @@
 @frozen
 struct Set
 ```
+
+#### Overview
+
+Combine the [`SquareAzimuth`](squareazimuth.md) constants to name several directions at once. Pass a set to [`supportedVolumeViewpoints(_:)`](view/supportedvolumeviewpoints(_:).md) to say which sides the window bar and ornaments of a volume should follow someone to.
+
+```swift
+VolumeContentView()
+    .supportedVolumeViewpoints([.front, .left])
+```
+
+A volume supports [`all`](squareazimuth/set/all.md) unless you narrow it. Narrow the set when your content only makes sense from certain sides, such as a model with a defined back that you never want someone to see the controls through.
 
 ## Topics
 

@@ -47,8 +47,8 @@ Provide a notice type value when you call [`showNotice(type:)`](externalpurchase
 
 - [static func showNotice(type: ExternalPurchaseCustomLink.NoticeType) async throws -> ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/shownotice(type:).md)
   Displays the system disclosure notice sheet and asks the customer whether to continue.
-- [ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/noticeresult.md)
-  The result of showing the disclosure notice.
+- [static func token(for: String) async throws -> ExternalPurchaseCustomLink.Token?](externalpurchasecustomlink/token(for:)-1fyo.md)
+  Returns an external purchase token of the specified type.
 
 
 ---

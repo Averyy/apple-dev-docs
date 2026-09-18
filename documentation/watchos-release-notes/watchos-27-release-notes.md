@@ -259,6 +259,11 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Mirrored Playback might not start on iPhone when started on Apple Watch. (176497682)
 - Fixed: When Siri AI is enabled on the paired iPhone and Apple Watch is operating in standalone, watch-only mode, Workout Alerts including Workout Buddy might fail to deliver audio announcements during an active workout. (181296052)
 
+## See Also
+
+- [watchOS 27.2 Beta Release Notes](watchos-27_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+
 
 ---
 

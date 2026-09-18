@@ -3,7 +3,7 @@
 **Framework**: StoreKit Test  
 **Kind**: method
 
-Simulates a refund for an in-app purchase that completes outside of the app.
+Simulates a refund for an Apple In-App Purchase that completes outside of the app.
 
 **Availability**:
 - iOS 14.0+
@@ -28,12 +28,12 @@ After calling this function, handle the new transaction in [`updates`](https://d
 
 ## Parameters
 
-- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of an in-app purchase to get a refund.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of an Apple In-App Purchase to get a refund.
 
 ## See Also
 
 - [func buyProduct(productIdentifier: String) throws](sktestsession/buyproduct(productidentifier:).md)
-  Simulates buying an in-app purchase or subscription outside the app.
+  Simulates buying an Apple In-App Purchase or subscription outside the app.
 
 
 ---

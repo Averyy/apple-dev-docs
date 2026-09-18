@@ -25,6 +25,7 @@ A `UIViewController` object that you can present from your interface.
 
 ## Parameters
 
+- `aDecoder`: The decoder to use during initialization.
 - `rootView`: The root view of the SwiftUI view hierarchy that you want to manage using this view controller.
 
 ## See Also

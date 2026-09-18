@@ -45,7 +45,7 @@ struct Input
 - [LanguageModelSession.Usage.Output](languagemodelsession/usage-swift.struct/output-swift.struct.md)
   Token counts for the output produced by the model.
 - [var metadata: [String : GeneratedContent]](languagemodelsession/usage-swift.struct/metadata.md)
-  Language models that provide other kinds of usage statistics may encode them in metadata.
+  Additional usage statistics that the language model encodes for the response.
 - [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/totaltokencount.md)
   The total number of tokens involved in this generation, combining input and output counts.
 

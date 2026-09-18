@@ -81,6 +81,8 @@ import MyAPI
 - [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
 - [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

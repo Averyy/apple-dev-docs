@@ -34,7 +34,7 @@ The [`eligibleURLs`](externalpurchaselink/eligibleurls.md) array is `nil` if any
 
 If this value is `nil` and your app also configures the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselink) property list key, check [`canOpen`](externalpurchaselink/canopen.md) to determine whether your app can continue to provide an external purchase link.
 
-Otherwise, if this value is `nil`, check [`canMakePayments`](appstore/canmakepayments.md) to determine whether your app can offer in-app purchases using the StoreKit [`In-App Purchase`](in-app-purchase.md) APIs. For more information, see [`canMakePayments`](appstore/canmakepayments.md).
+Otherwise, if this value is `nil`, check [`canMakePayments`](appstore/canmakepayments.md) to determine whether your app can offer in-app purchases using the StoreKit [`Apple In-App Purchase`](in-app-purchase.md) APIs. For more information, see [`canMakePayments`](appstore/canmakepayments.md).
 
 ## See Also
 

@@ -27,7 +27,7 @@ A refund request submission can fail for many reasons, such as having an invalid
 ## See Also
 
 - [Transaction.RefundRequestError.duplicateRequest](transaction/refundrequesterror/duplicaterequest.md)
-  The App Store has already received a refund request for this in-app purchase.
+  The App Store has already received a refund request for this Apple In-App Purchase.
 
 
 ---

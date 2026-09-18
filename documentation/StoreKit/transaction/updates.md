@@ -27,7 +27,7 @@ static var updates: Transaction.Transactions { get }
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
-- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
+- [Getting started with Apple In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 - [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
@@ -35,7 +35,7 @@ static var updates: Transaction.Transactions { get }
 
 Use [`updates`](transaction/updates.md) to receive new transactions while the app is running. This sequence receives transactions that occur outside of the app, such as Ask to Buy transactions, offer code redemptions, and purchases that customers make in the App Store. It also emits transactions that customers complete in your app on another device.
 
-Note that after a successful in-app purchase on the same device, StoreKit returns the transaction through [`Product.PurchaseResult.success(_:)`](product/purchaseresult/success(_:).md).
+Note that after a successful Apple In-App Purchase on the same device, StoreKit returns the transaction through [`Product.PurchaseResult.success(_:)`](product/purchaseresult/success(_:).md).
 
 > ❗ **Important**:  Create a [`Task`](https://developer.apple.com/documentation/swift/task) to iterate through the transactions from the listener as soon as your app launches. If your app has unfinished transactions, the [`updates`](transaction/updates.md) listener receives them once, immediately after the app launches. Without the [`Task`](https://developer.apple.com/documentation/swift/task) to listen for these transactions, your app may miss them.
 
@@ -103,7 +103,7 @@ The [`updates`](transaction/updates.md) listener receives unfinished transaction
 - [static var all: Transaction.Transactions](transaction/all.md)
   A sequence that emits all the customer’s transactions for your app.
 - [static var currentEntitlements: Transaction.Transactions](transaction/currententitlements.md)
-  A sequence of the latest transactions that entitle a customer to In-App Purchases and subscriptions.
+  A sequence of the latest transactions that entitle a customer to Apple In-App Purchases and subscriptions.
 
 
 ---

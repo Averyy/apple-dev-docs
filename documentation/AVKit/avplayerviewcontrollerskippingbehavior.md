@@ -18,7 +18,7 @@ enum AVPlayerViewControllerSkippingBehavior
 
 ### Creating a skipping behavior
 - [init?(rawValue: Int)](avplayerviewcontrollerskippingbehavior/init(rawvalue:).md)
-### Skipping Behaviors
+### Skipping behaviors
 - [AVPlayerViewControllerSkippingBehavior.default](avplayerviewcontrollerskippingbehavior/default.md)
   The default skipping behavior, which is to skip forward or backward in 10-second intervals.
 - [AVPlayerViewControllerSkippingBehavior.skipItem](avplayerviewcontrollerskippingbehavior/skipitem.md)

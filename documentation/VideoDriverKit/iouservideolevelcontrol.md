@@ -6,7 +6,7 @@
 A control object that supports a float value level.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

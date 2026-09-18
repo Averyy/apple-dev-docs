@@ -27,7 +27,7 @@ To install iOS, iPadOS, tvOS, visionOS, or watchOS apps on a device without usin
 1. In the Apps inspector, click the Add button (+) below the list of apps.
 2. Select the iOS Package Archive file (with an `.ipa` extension) and click Open.
 
-Alternatively, use Apple Configurator to install apps on devices. For more information, see [`Apple Configurator Support`](https://developer.apple.comhttps://support.apple.com/apple-configurator).
+Alternatively, use [`Apple Configurator`](https://developer.apple.comhttps://apps.apple.com/app/id1037126344) to install apps on devices. For more information, see [`Add apps to a device in Apple Configurator for Mac`](https://developer.apple.comhttps://support.apple.com/guide/apple-configurator-mac/add-apps-to-a-device-cad4cd08c03/2.20/mac#apd379468a002794).
 
 To install a macOS app, drag the app bundle (with an `.app` extension) to the `/Applications` folder or another folder of your choice on your Mac.
 

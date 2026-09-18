@@ -6,7 +6,7 @@
 Gets the transport type of the video box.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

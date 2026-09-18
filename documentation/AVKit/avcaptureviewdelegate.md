@@ -16,7 +16,7 @@ protocol AVCaptureViewDelegate : NSObjectProtocol
 
 ## Topics
 
-### Starting a New Recording
+### Starting a new recording
 - [func captureView(AVCaptureView, startRecordingTo: AVCaptureFileOutput)](avcaptureviewdelegate/captureview(_:startrecordingto:).md)
   Tells the delegate that the user has made a request to start a new recording.
 
@@ -27,8 +27,8 @@ protocol AVCaptureViewDelegate : NSObjectProtocol
 
 ## See Also
 
-- [var delegate: (any AVCaptureViewDelegate)?](avcaptureview/delegate.md)
-  The capture view’s delegate object.
+- [class AVCaptureView](avcaptureview.md)
+  A view that displays standard user interface controls for capturing media data.
 
 
 ---

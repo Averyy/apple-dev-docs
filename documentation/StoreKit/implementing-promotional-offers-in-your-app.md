@@ -12,7 +12,7 @@ You decide the criteria for which subscribers qualify for an offer. In your app,
 
 For business guidance on using promotional offers, see [`Auto-renewable Subscriptions > Providing Subscription Offers`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#providing-subscription-offers).
 
-> **Note**:  If your goal is to attract new users, you can use introductory offers and promote the in-app purchase on the App Store. Users are eligible to receive only one introductory offer, but redeeming an introductory offer doesn’t affect their eligibility for a promotional offer. For more information on introductory offers, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
+> **Note**:  If your goal is to attract new users, you can use introductory offers and promote the Apple In-App Purchase on the App Store. Users are eligible to receive only one introductory offer, but redeeming an introductory offer doesn’t affect their eligibility for a promotional offer. For more information on introductory offers, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
 
 ##### Prepare Your Offer
 

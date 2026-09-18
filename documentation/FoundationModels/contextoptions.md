@@ -34,9 +34,9 @@ Create a [`ContextOptions`](contextoptions.md) structure when you need to bias t
   Creates options that control how the model is prompted.
 ### Configuring the reasoning level
 - [var reasoningLevel: ContextOptions.ReasoningLevel?](contextoptions/reasoninglevel-swift.property.md)
-  Controls the amount of reasoning that the model is allowed to output before producing a response.
+  A value that controls the amount of reasoning the model is allowed to output before producing a response.
 - [ContextOptions.ReasoningLevel](contextoptions/reasoninglevel-swift.enum.md)
-  Controls the amount of reasoning that the model is allowed to output before producing a response.
+  A level of reasoning the model is allowed to output before producing a response.
 ### Including the schema
 - [var includeSchemaInPrompt: Bool?](contextoptions/includeschemainprompt.md)
   A Boolean value that indicates whether to inject the schema into the prompt to bias the model.

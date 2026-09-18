@@ -20,7 +20,7 @@ Use this enum to describe the desired automatic transition behavior into the imm
 
 ## Topics
 
-### Enumeration Cases
+### Transition behaviors
 - [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.default](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum/default.md)
   Describes the system default behavior.
 - [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.none](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum/none.md)

@@ -27,7 +27,9 @@ The signature is an opaque, producer-supplied token; each `updateSignature` even
 
 ### Handling the reasoning signature
 - [var signature: Data](languagemodelexecutorgenerationchannel/reasoningsignature/signature.md)
+  The opaque token that authenticates the reasoning entry.
 - [var tokenCount: Int](languagemodelexecutorgenerationchannel/reasoningsignature/tokencount.md)
+  The number of the tokens the signature carries.
 
 ## Relationships
 

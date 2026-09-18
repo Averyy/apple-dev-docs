@@ -118,6 +118,7 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
 ### Structures
 - [struct UIConfigurationTextAttributesTransformer](uiconfigurationtextattributestransformer-swift.struct.md)
   Defines a text transformation that can affect the visual appearance of a string.
+- [struct UITraitNavigationTitleAlignment](uitraitnavigationtitlealignment-swift.struct.md)
 - [struct UITraitSystemPrefersReducedResourceUsage](uitraitsystemprefersreducedresourceusage-swift.struct.md)
 ### Macros
 - [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview(_:traits:arguments:body:)-6gm4c.md)

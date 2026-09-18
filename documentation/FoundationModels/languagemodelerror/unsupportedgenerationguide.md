@@ -23,10 +23,14 @@ struct UnsupportedGenerationGuide
 
 ### Creating an error instance
 - [init(schemaName: String?, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedgenerationguide/init(schemaname:debugdescription:metadata:).md)
+  Creates information describing a generation guide the model doesn’t support.
 ### Inspecting unsupported generation guide errors
 - [var metadata: [String : any Sendable]](languagemodelerror/unsupportedgenerationguide/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var schemaName: String?](languagemodelerror/unsupportedgenerationguide/schemaname.md)
+  The name of the schema whose generation guide isn’t supported, if any.
 - [var debugDescription: String](languagemodelerror/unsupportedgenerationguide/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
@@ -37,7 +41,7 @@ struct UnsupportedGenerationGuide
 ## See Also
 
 - [case unsupportedGenerationGuide(LanguageModelError.UnsupportedGenerationGuide)](languagemodelerror/unsupportedgenerationguide(_:).md)
-  An unsupported generation guide was used
+  An unsupported generation guide was used.
 
 
 ---

@@ -17,6 +17,7 @@ Returns a span over the next group of elements that are ready to by visited, up 
 ## Declaration
 
 ```swift
+@export(implementation)
 mutating func nextSpan() throws(Self.Failure) -> Span<Self.Element>
 ```
 

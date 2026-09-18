@@ -22,7 +22,7 @@ case unavailable
 
 #### Discussion
 
-You set up promotional images for in-app purchases in App Store Connect.
+You set up promotional images for Apple In-App Purchases in App Store Connect.
 
 ## See Also
 

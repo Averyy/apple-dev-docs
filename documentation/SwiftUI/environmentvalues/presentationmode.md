@@ -22,16 +22,18 @@ var presentationMode: Binding<PresentationMode> { get }
 
 ## See Also
 
-- [var disableAutocorrection: Bool?](environmentvalues/disableautocorrection.md)
-  A Boolean value that determines whether the view hierarchy has auto-correction enabled.
-- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
-  The size of content.
-- [struct PresentationMode](presentationmode.md)
-  An indication whether a view is currently presented by another view.
+- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+  Whether the system preference for Show Button Shapes is enabled.
 - [var complicationRenderingMode: ComplicationRenderingMode](environmentvalues/complicationrenderingmode.md)
   The complication rendering mode for the current environment.
 - [var controlActiveState: ControlActiveState](environmentvalues/controlactivestate.md)
   The active appearance expected of controls in a window.
+- [var disableAutocorrection: Bool?](environmentvalues/disableautocorrection.md)
+  A Boolean value that determines whether the view hierarchy has auto-correction enabled.
+- [struct PresentationMode](presentationmode.md)
+  An indication whether a view is currently presented by another view.
+- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
+  The size of content.
 
 
 ---

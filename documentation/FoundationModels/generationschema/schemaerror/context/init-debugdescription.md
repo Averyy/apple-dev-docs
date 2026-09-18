@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a context with the debug description you provide.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,6 +18,10 @@
 ```swift
 init(debugDescription: String)
 ```
+
+## Parameters
+
+- `debugDescription`: A description of the circumstances of the error.
 
 
 ---

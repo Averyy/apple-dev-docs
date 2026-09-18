@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: init
 
-Initializes a map template item wrapping a @c CPRouteChoice.
+Creates a map panel item with one of the route choices available for a trip.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +15,19 @@ Initializes a map template item wrapping a @c CPRouteChoice.
 ```swift
 init(routeChoice: CPRouteChoice, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
 ```
+
+#### Return Value
+
+A map panel item initialized with a route choice.
+
+#### Discussion
+
+For this type of item, the map panel displays the relevant route choice summaries.
+
+## Parameters
+
+- `routeChoice`: A route choice for an upcoming trip.
+- `handler`: A closure you use to respond when someone taps or selects the item. The closure takes the map panel item as a parameter and returns no value. Specify `nil` if you don’t want to respond to interactions with the item.
 
 
 ---

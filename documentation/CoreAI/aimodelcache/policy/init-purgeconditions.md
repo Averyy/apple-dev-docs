@@ -20,7 +20,7 @@ init(purgeConditions: AIModelCache.Policy.PurgeConditions)
 
 #### Discussion
 
-> **Note**: On tvOS this policy will be made purgeable for storagePressure.
+> **Note**: On tvOS any policy will be implicitly purgeable for storagePressure.
 
 ## Parameters
 

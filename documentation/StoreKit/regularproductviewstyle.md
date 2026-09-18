@@ -43,7 +43,7 @@ A style for a product view that uses a standard, platform-appropriate layout.
 - [struct CompactProductViewStyle](compactproductviewstyle.md)
   A style for a product view that’s suitable for layouts with less available space, or for displaying more items in a small amount of space.
 - [struct LargeProductViewStyle](largeproductviewstyle.md)
-  A style for a product view that’s suitable for layouts where the in-app purchase content is prominent.
+  A style for a product view that’s suitable for layouts where the Apple In-App Purchase content is prominent.
 
 
 ---

@@ -22,6 +22,7 @@ Defaults to `false`.
 
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](nsgesturerecognizer/allowedtouchtypes.md)
 - [var modifierFlags: NSEvent.ModifierFlags](nsgesturerecognizer/modifierflags.md)
+  The keyboard modifier flags in effect while the receiver last processed an event.
 - [var name: String?](nsgesturerecognizer/name.md)
 
 

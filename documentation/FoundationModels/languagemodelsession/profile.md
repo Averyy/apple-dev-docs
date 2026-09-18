@@ -25,7 +25,7 @@ struct Profile
 
 #### Overview
 
-A profile binds [`DynamicInstructions`](dynamicinstructions.md) to a set of session-level configuration values. The [`DynamicInstructions`](dynamicinstructions.md) describes the content and tools and a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) orchestrates transitions betwen session configurations.
+A profile binds [`DynamicInstructions`](dynamicinstructions.md) to a set of session-level configuration values. The [`DynamicInstructions`](dynamicinstructions.md) describes the content and tools and a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) orchestrates transitions between session configurations.
 
 ```swift
 Profile {
@@ -68,6 +68,7 @@ Profile {
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
 - [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+  Dynamic instructions that produce content for each element of a collection.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

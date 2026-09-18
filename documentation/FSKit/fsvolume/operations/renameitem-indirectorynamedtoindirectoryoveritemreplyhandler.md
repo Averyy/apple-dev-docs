@@ -17,6 +17,8 @@ func renameItem(_ item: FSItem, inDirectory sourceDirectory: FSItem, named sourc
 
 #### Discussion
 
+> **Note**: This method only implements plain `rename(2)` semantics. FSKit fails `renamex_np(2)` calls that pass flags, such as `RENAME_SWAP` or `RENAME_EXCL`, with `ENOTSUP` without calling this method.
+
 Implement renaming along the lines of this algorithm:
 
 - If `item` is a file: - If the destination file exists: - Remove the destination file.

@@ -23,7 +23,7 @@ func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SK
 
 ## Mentions
 
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 - [Processing a transaction](processing-a-transaction.md)
 - [Testing a payment request](testing-a-payment-request.md)
@@ -45,7 +45,7 @@ Once a transaction is processed, it should be removed from the payment queue by 
 
 ## See Also
 
-- [In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
+- [Apple In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
 - [func paymentQueue(SKPaymentQueue, removedTransactions: [SKPaymentTransaction])](skpaymenttransactionobserver/paymentqueue(_:removedtransactions:).md)
   Tells an observer that one or more transactions have been removed from the queue.
 

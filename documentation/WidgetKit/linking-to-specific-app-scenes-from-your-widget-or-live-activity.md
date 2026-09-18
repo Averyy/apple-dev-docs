@@ -60,6 +60,9 @@ In CarPlay, linking from your widget to your app works differently to match the 
   Include buttons or toggles in a widget or Live Activity to offer app functionality without launching the app.
 - [Animating data updates in widgets and Live Activities](animating-data-updates-in-widgets-and-live-activities.md)
   Use SwiftUI animations to indicate data updates in your widgets and Live Activities.
+- [func widgetURL(URL?) -> some View
+](../swiftui/view/widgeturl(_:).md)
+  Sets the URL to open in the containing app when the user clicks the widget.
 
 
 ---

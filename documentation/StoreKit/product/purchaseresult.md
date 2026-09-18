@@ -77,7 +77,7 @@ case .userCancelled:
 ## See Also
 
 - [struct PurchaseAction](purchaseaction.md)
-  An action that starts an In-App Purchase.
+  An action that starts an Apple In-App Purchase.
 - [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(options:).md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
 

@@ -6,7 +6,7 @@
 A video selector control that identifies where the timing info for the object is coming from.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -19,6 +19,7 @@ init(id: String = UUID().uuidString, source: String, content: GeneratedContent)
 ## See Also
 
 - [init(id: String, schemaName: String, content: GeneratedContent)](transcript/structuredsegment/init(id:schemaname:content:).md)
+  Creates a structured segment that contains the generated content you provide.
 
 
 ---

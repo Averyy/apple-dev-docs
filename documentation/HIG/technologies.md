@@ -12,6 +12,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [AirPlay](/design/human-interface-guidelines/airplay) - AirPlay lets people stream media content wirelessly from iOS, iPadOS, macOS, and tvOS devices to Apple TV, HomePod, and TVs and speakers that support AirPlay.
 - [Always On](/design/human-interface-guidelines/always-on) - On devices that include the Always On display, the system can continue to display an app’s interface when people suspend their interactions with the device.
 - [App Clips](/design/human-interface-guidelines/app-clips) - An App Clip is a lightweight version of your app or game that provides an on-the-go or demo experience that’s instantly available.
+- [Apple In-App Purchase](/design/human-interface-guidelines/apple-in-app-purchase) - People can use Apple In-App Purchase to pay for digital goods and services, like premium content and subscriptions, securely within your app.
 - [Apple Pay](/design/human-interface-guidelines/apple-pay) - Apple Pay is a secure, easy way to make payments for physical goods and services, donations, and subscriptions in apps and in any browser.
 - [Augmented reality](/design/human-interface-guidelines/augmented-reality) - Augmented reality (or AR) lets you deliver immersive, engaging experiences that seamlessly blend virtual objects with the real world.
 - [CareKit](/design/human-interface-guidelines/carekit) - People can use CareKit apps to manage care plans related to a chronic illness like diabetes, recover from an injury or surgery, or achieve health and wellness goals.
@@ -23,7 +24,6 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [iCloud](/design/human-interface-guidelines/icloud) - iCloud is a service that lets people seamlessly access the content they care about — photos, videos, documents, and more — from any device, without performing explicit synchronization.
 - [ID Verifier](/design/human-interface-guidelines/id-verifier) - ID Verifier lets your iPhone app read mobile IDs in person without requiring external hardware.
 - [iMessage apps and stickers](/design/human-interface-guidelines/imessage-apps-and-stickers) - An iMessage app can help people share content, collaborate, and even play games with others in a conversation; stickers are images that people can use to decorate a conversation.
-- [In-app purchase](/design/human-interface-guidelines/in-app-purchase) - People can use in-app purchase to pay for virtual goods — like premium content, digital goods, and subscriptions — securely within your app.
 - [Live Photos](/design/human-interface-guidelines/live-photos) - Live Photos lets people capture favorite memories in a sound- and motion-rich interactive experience that adds vitality to traditional still photos.
 - [Mac Catalyst](/design/human-interface-guidelines/mac-catalyst) - When you use Mac Catalyst to create a Mac version of your iPad app, you give people the opportunity to enjoy the experience in a new environment.
 - [Machine learning](/design/human-interface-guidelines/machine-learning) - Machine learning enables apps and games to learn from data and usage patterns, letting you improve existing experiences and create engaging new ones.
@@ -45,6 +45,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [AirPlay](airplay.md) - AirPlay lets people stream media content wirelessly from iOS, iPadOS, macOS, and tvOS devices to Apple TV, HomePod, and TVs and speakers that support AirPlay.
 - [Always On](always-on.md) - On devices that include the Always On display, the system can continue to display an app’s interface when people suspend their interactions with the device.
 - [App Clips](app-clips.md) - An App Clip is a lightweight version of your app or game that provides an on-the-go or demo experience that’s instantly available.
+- [Apple In-App Purchase](apple-in-app-purchase.md) - People can use Apple In-App Purchase to pay for digital goods and services, like premium content and subscriptions, securely within your app.
 - [Apple Pay](apple-pay.md) - Apple Pay is a secure, easy way to make payments for physical goods and services, donations, and subscriptions in apps and in any browser.
 - [Augmented reality](augmented-reality.md) - Augmented reality (or AR) lets you deliver immersive, engaging experiences that seamlessly blend virtual objects with the real world.
 - [CareKit](carekit.md) - People can use CareKit apps to manage care plans related to a chronic illness like diabetes, recover from an injury or surgery, or achieve health and wellness goals.
@@ -56,7 +57,6 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [iCloud](icloud.md) - iCloud is a service that lets people seamlessly access the content they care about — photos, videos, documents, and more — from any device, without performing explicit synchronization.
 - [ID Verifier](id-verifier.md) - ID Verifier lets your iPhone app read mobile IDs in person without requiring external hardware.
 - [iMessage apps and stickers](imessage-apps-and-stickers.md) - An iMessage app can help people share content, collaborate, and even play games with others in a conversation; stickers are images that people can use to decorate a conversation.
-- [In-app purchase](in-app-purchase.md) - People can use in-app purchase to pay for virtual goods — like premium content, digital goods, and subscriptions — securely within your app.
 - [Live Photos](live-photos.md) - Live Photos lets people capture favorite memories in a sound- and motion-rich interactive experience that adds vitality to traditional still photos.
 - [Mac Catalyst](mac-catalyst.md) - When you use Mac Catalyst to create a Mac version of your iPad app, you give people the opportunity to enjoy the experience in a new environment.
 - [Machine learning](machine-learning.md) - Machine learning enables apps and games to learn from data and usage patterns, letting you improve existing experiences and create engaging new ones.

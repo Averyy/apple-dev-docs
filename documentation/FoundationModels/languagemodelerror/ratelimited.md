@@ -23,10 +23,14 @@ struct RateLimited
 
 ### Creating an error instance
 - [init(resetDate: Date?, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/ratelimited/init(resetdate:debugdescription:metadata:).md)
+  Creates information describing a rate-limiting event.
 ### Inspecting rate-limit errors
 - [var metadata: [String : any Sendable]](languagemodelerror/ratelimited/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var resetDate: Date?](languagemodelerror/ratelimited/resetdate.md)
+  The date after which retrying is likely to succeed, if known.
 - [var debugDescription: String](languagemodelerror/ratelimited/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 ## Relationships
 

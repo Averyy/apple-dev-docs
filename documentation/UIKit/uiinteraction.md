@@ -47,6 +47,7 @@ protocol UIInteraction : NSObjectProtocol
 - [UIEditMenuInteraction](uieditmenuinteraction.md)
 - [UIFeedbackGenerator](uifeedbackgenerator.md)
 - [UIFindInteraction](uifindinteraction.md)
+- [UIHingeInteraction](uihingeinteraction.md)
 - [UIImpactFeedbackGenerator](uiimpactfeedbackgenerator.md)
 - [UIIndirectScribbleInteraction](uiindirectscribbleinteraction-1nfjm.md)
 - [UILargeContentViewerInteraction](uilargecontentviewerinteraction.md)

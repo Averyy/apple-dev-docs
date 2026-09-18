@@ -35,7 +35,7 @@ protocol SessionPropertyKey : SendableMetatype
 ## See Also
 
 - [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
-  A property wrapper that provides access to properties from within profiles,  dynamic instructions, and tools.
+  A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
 - [class SessionPropertyValues](sessionpropertyvalues.md)
   A container for property values.
 - [macro SessionPropertyEntry()](sessionpropertyentry().md)

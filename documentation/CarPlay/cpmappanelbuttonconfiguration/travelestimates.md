@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-Optional travel estimates displayed alongside the primary action.
+The travel estimates to display alongside the action buttons.
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +16,10 @@ Optional travel estimates displayed alongside the primary action.
 @NSCopying
 var travelEstimates: CPTravelEstimates? { get set }
 ```
+
+#### Discussion
+
+Specify this information at initialization time and access it using this property.
 
 
 ---

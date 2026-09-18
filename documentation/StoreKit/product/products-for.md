@@ -33,7 +33,7 @@ let productIdentifiers = ["com.example.productA", "com.example.productB"]
 let appProducts = try await Product.products(for: productIdentifiers)
 ```
 
-You initially create product identifiers when you configure in-app purchases in App Store Connect; for more information, see [`Create an in-app purchase`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devae49fb316). Your app can store or retrieve product identifiers in several ways, such as embedding the identifiers in the app bundle, or fetching them from your server.
+You initially create product identifiers when you configure Apple In-App Purchases in App Store Connect; for more information, see [`Create an Apple In-App Purchase`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devae49fb316). Your app can store or retrieve product identifiers in several ways, such as embedding the identifiers in the app bundle, or fetching them from your server.
 
 If any identifiers are invalid or the App Store can’t find them, the App Store excludes them from the return value. The [`products(for:)`](product/products(for:).md) function can throw a [`StoreKitError`](storekiterror.md) for system-related errors.
 
@@ -41,7 +41,7 @@ If any identifiers are invalid or the App Store can’t find them, the App Store
 
 ## Parameters
 
-- `identifiers`: A collection of unique in-app purchase product identifiers that you previously configured in App Store Connect. StoreKit ignores any duplicate identifiers in the collection.
+- `identifiers`: A collection of unique Apple In-App Purchase product identifiers that you previously configured in App Store Connect. StoreKit ignores any duplicate identifiers in the collection.
 
 
 ---

@@ -17,7 +17,7 @@ var requiresSingleUser: Bool { get set }
 
 #### Discussion
 
-When set to `true`, the assessment session will only start if there is exactly one user account logged in on the device. This requirement is disabled by default.
+When set to `true`, the assessment session will only start if there is exactly one user account logged in on the device. Defaults to `false`.
 
 
 ---

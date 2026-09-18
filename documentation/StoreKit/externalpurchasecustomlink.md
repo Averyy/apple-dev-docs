@@ -46,9 +46,9 @@ If your account receives the StoreKit External Custom Purchase Link Regions enti
 
 - Configure the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether the API is available at runtime. If the value is `false`, don’t continue to use this API. For more information, see  [`isEligible`](externalpurchasecustomlink/iseligible.md).
-- Call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function before every potential transaction to request external purchase tokens, using the token types `IN_APP` or `LINK_OUT`. For more information, see [`token(for:)`](externalpurchasecustomlink/token(for:).md).
-- Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
+- Call the [`token(for:)`](externalpurchasecustomlink/token(for:)-6pixj.md) function before every potential transaction to request external purchase tokens, using the token types [`withinApp`](externalpurchasecustomlink/tokentype/withinapp.md) or [`outOfApp`](externalpurchasecustomlink/tokentype/outofapp.md).
 - Report the external purchase tokens and the transactions associated with the tokens using the [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi). Otherwise, report transactions as indicated in [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
+- Starting in iOS 27.2, before routing customers to external purchase options, call [`showNotice(for:)`](externalpurchasecustomlink/shownotice(for:).md) to let people know they’ll be transacting with you and not Apple. Otherwise, draw the disclosure sheet yourself following the instructions in [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil)“
 
 ##### Implement External Purchase for Apps Available in Japan
 
@@ -56,9 +56,9 @@ If your account receives the StoreKit External Custom Purchase Link Regions enti
 
 - Configure the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether the API is available at runtime. If the value is `false`, don’t continue to use this API. For more information, see  [`isEligible`](externalpurchasecustomlink/iseligible.md).
-- Starting in iOS 26.4, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function before every potential transaction to request external purchase tokens, using the token types `IN_APP` or `LINK_OUT`. For more information, see [`token(for:)`](externalpurchasecustomlink/token(for:).md).
-- Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
+- Starting in iOS 26.4, call the [`token(for:)`](externalpurchasecustomlink/token(for:)-6pixj.md) function before every potential transaction to request external purchase tokens, using the token types [`withinApp`](externalpurchasecustomlink/tokentype/withinapp.md) or [`outOfApp`](externalpurchasecustomlink/tokentype/outofapp.md).
 - Starting in iOS 26.4, report the external purchase tokens and the transactions associated with the tokens using the [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi). Otherwise, report transactions as indicated in [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
+- Starting in iOS 27.2, before routing customers to external purchase options, call [`showNotice(for:)`](externalpurchasecustomlink/shownotice(for:).md) to let people know they’ll be transacting with you and not Apple. Otherwise, draw the disclosure sheet yourself following the instructions in [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
 
 ##### Implement External Purchase for Apps Available in the European Union Eu
 
@@ -66,8 +66,8 @@ If your account receives the StoreKit External Purchase Link (EU) entitlement or
 
 - Depending on the entitlement you receive, configure the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app, or configure the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) entitlement and the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasecustomlinkregions) property list key, including the country code for each permitted region where your app implements external purchases.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the `ExternalPurchaseCustomLink` API to determine whether the API is available at runtime. If the value is false, don’t continue to use this API. See [`isEligible`](externalpurchasecustomlink/iseligible.md) for more details.
-- At launch and before every potential transaction, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
-- Call the [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) function after a deliberate customer interaction, such as tapping a button, that can lead to a potential external purchase.
+- At launch and before every potential transaction, call the [`token(for:)`](externalpurchasecustomlink/token(for:)-6pixj.md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
+- Starting in iOS 27.2, before routing customers to external purchase options, call [`showNotice(for:)`](externalpurchasecustomlink/shownotice(for:).md) to let people know they’ll be transacting with you and not Apple.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
 For information about testing in the sandbox environment, see [`Testing transactions that use custom link tokens`](testing-transactions-that-use-custom-link-tokens.md).
@@ -78,8 +78,8 @@ If your account receives the Music Streaming Services EEA entitlement, in the EE
 
 - Configure the [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming) entitlement for your app and the [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselinkstreamingregions) property list key, providing the country code for each permitted region where your app implements external purchases.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the `ExternalPurchaseCustomLink` API to determine whether external purchase is available at runtime. If the value is false, don’t continue to use this API. See [`isEligible`](externalpurchasecustomlink/iseligible.md) for more details.
-- At launch and before every potential transaction, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
-- Call the [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) function after a deliberate customer interaction, such as tapping a button, that can lead to a potential external purchase.
+- At launch and before every potential transaction, call the [`token(for:)`](externalpurchasecustomlink/token(for:)-6pixj.md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
+- - Starting in iOS 27.2, before routing customers to external purchase options, call [`showNotice(for:)`](externalpurchasecustomlink/shownotice(for:).md) to let people know they’ll be transacting with you and not Apple.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
 ##### Check Eligibility and Request Tokens for Apps Available in the Eu
@@ -158,22 +158,31 @@ struct MyView: View {
 - [static var isEligible: Bool](externalpurchasecustomlink/iseligible.md)
   A Boolean value that indicates at runtime whether the app can use this API for external purchases.
 ### Getting external purchase tokens
-- [static func token(for: String) async throws -> ExternalPurchaseCustomLink.Token?](externalpurchasecustomlink/token(for:).md)
-  Requests an external purchase token of the specified type.
+- [static func token(for: ExternalPurchaseCustomLink.TokenType) async throws -> ExternalPurchaseCustomLink.Token?](externalpurchasecustomlink/token(for:)-6pixj.md)
+  Returns an external purchase token of the specified token type.
+- [ExternalPurchaseCustomLink.TokenType](externalpurchasecustomlink/tokentype.md)
+  Values that represent the external purchase token types.
 - [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
   A token you use with the External Purchase custom link API.
 - [Receiving and decoding external purchase tokens](receiving-and-decoding-external-purchase-tokens.md)
   Receive tokens for external purchases that you use to report transactions to Apple.
 ### Displaying the disclosure sheet
+- [static func showNotice(for: ExternalPurchaseCustomLink.ExternalPurchaseType) async throws -> ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/shownotice(for:).md)
+  Displays the system disclosure notice sheet for a custom link type and asks the customer whether to continue.
+- [ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/noticeresult.md)
+  The result of showing the disclosure notice.
+- [ExternalPurchaseCustomLink.ExternalPurchaseType](externalpurchasecustomlink/externalpurchasetype.md)
+  Values that represent the types of external purchase an app can perform.
+### Testing external purchase transactions
+- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+  Recognize custom link tokens that your app receives in the sandbox testing environment, and use them to test reporting transactions.
+### Deprecated methods and values
 - [static func showNotice(type: ExternalPurchaseCustomLink.NoticeType) async throws -> ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/shownotice(type:).md)
   Displays the system disclosure notice sheet and asks the customer whether to continue.
 - [ExternalPurchaseCustomLink.NoticeType](externalpurchasecustomlink/noticetype.md)
   The custom link out style that informs the type of disclosure notice to display.
-- [ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/noticeresult.md)
-  The result of showing the disclosure notice.
-### Testing external purchase transactions
-- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
-  Recognize custom link tokens that your app receives in the sandbox testing environment, and use them to test reporting transactions.
+- [static func token(for: String) async throws -> ExternalPurchaseCustomLink.Token?](externalpurchasecustomlink/token(for:)-1fyo.md)
+  Returns an external purchase token of the specified type.
 
 ## Relationships
 

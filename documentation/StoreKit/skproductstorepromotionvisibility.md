@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: enum
 
-The visibility settings that determine if an in-app purchase is visible on a device.
+The visibility settings that determine if an Apple In-App Purchase is visible on a device.
 
 **Availability**:
 - iOS 11.0+

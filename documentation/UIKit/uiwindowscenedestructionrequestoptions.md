@@ -42,6 +42,8 @@ Create a [`UIWindowSceneDestructionRequestOptions`](uiwindowscenedestructionrequ
 - [Equatable](../swift/equatable.md)
 - [Hashable](../swift/hashable.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

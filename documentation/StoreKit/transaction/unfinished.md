@@ -23,7 +23,7 @@ static var unfinished: Transaction.Transactions { get }
 ## Mentions
 
 - [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
-- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
+- [Getting started with Apple In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
 
 #### Discussion
 
@@ -32,7 +32,7 @@ A transaction is unfinished until you call [`finish()`](transaction/finish().md)
 ## See Also
 
 - [static func latest(for: String) async -> VerificationResult<Transaction>?](transaction/latest(for:).md)
-  Gets the customer’s most recent transaction for an In-App Purchase.
+  Gets the customer’s most recent transaction for an Apple In-App Purchase.
 - [static var all: Transaction.Transactions](transaction/all.md)
   A sequence that emits all the customer’s transactions for your app.
 - [SKIncludeConsumableInAppPurchaseHistory](../bundleresources/information-property-list/skincludeconsumableinapppurchasehistory.md)

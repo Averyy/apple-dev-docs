@@ -33,6 +33,7 @@ Both the `x` and `y` multiplication factors halve their respective dimension’s
 
 - `x`: The multiplication factor used to resize this shape along its x-axis.
 - `y`: The multiplication factor used to resize this shape along its y-axis.
+- `anchor`: The point to rotate the shape around.
 
 ## See Also
 

@@ -149,6 +149,7 @@ It’s important to test your app for the different locales that you distribute 
 - [struct Anchor](anchor.md)
   An opaque value derived from an anchor source and a particular view.
 - [protocol DepthAlignmentID](depthalignmentid.md)
+  A type that defines a custom depth alignment guide.
 - [struct Alignment3D](alignment3d.md)
   An alignment in all three axes.
 - [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)

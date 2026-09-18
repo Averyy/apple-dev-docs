@@ -42,6 +42,7 @@ For design guidance, see [`Drag and drop`](https://developer.apple.com/design/hu
 - [struct DragSession](dragsession.md)
   Describes the ongoing dragging session.
 - [struct DropSession](dropsession.md)
+  A description of a drop that is in progress.
 ### Moving transferable items
 - [func draggable<T>(@autoclosure () -> T) -> some View](view/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.

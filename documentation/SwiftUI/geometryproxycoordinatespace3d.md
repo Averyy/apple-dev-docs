@@ -38,6 +38,7 @@ struct GeometryProxyCoordinateSpace3D
 - [struct Anchor](anchor.md)
   An opaque value derived from an anchor source and a particular view.
 - [protocol DepthAlignmentID](depthalignmentid.md)
+  A type that defines a custom depth alignment guide.
 - [struct Alignment3D](alignment3d.md)
   An alignment in all three axes.
 

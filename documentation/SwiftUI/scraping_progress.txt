@@ -1,4 +1,4 @@
 Completed scraping SwiftUI!
-Total pages scraped: 7045
-Pages skipped (unchanged): 1
+Total pages scraped: 694
+Pages skipped (unchanged): 6426
 Pages failed: 0

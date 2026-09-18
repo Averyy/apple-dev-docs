@@ -70,6 +70,8 @@ The system presents an `SWCollaborationView` that displays participants and shar
   A reference to an object that conforms to the cloud-sharing service delegate protocol.
 ### Instance Properties
 - [var pendingAccessRequestsCount: Int](swcollaborationview/pendingaccessrequestscount.md)
+- [var showsParticipantCount: Bool](swcollaborationview/showsparticipantcount.md)
+  Whether the collaboration button should show the participant count. Defaults to YES.
 
 ## Relationships
 

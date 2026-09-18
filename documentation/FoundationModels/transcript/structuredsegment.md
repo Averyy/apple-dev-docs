@@ -24,6 +24,7 @@ struct StructuredSegment
 ### Creating a structured segment
 - [init(id: String, source: String, content: GeneratedContent)](transcript/structuredsegment/init(id:source:content:).md)
 - [init(id: String, schemaName: String, content: GeneratedContent)](transcript/structuredsegment/init(id:schemaname:content:).md)
+  Creates a structured segment that contains the generated content you provide.
 ### Inspecting a structured segment
 - [var content: GeneratedContent](transcript/structuredsegment/content.md)
   The content of the segment.

@@ -53,6 +53,7 @@ You can convert the anchor to a `Value` in the coordinate space of a target view
 - [struct UnitPoint3D](unitpoint3d.md)
   A normalized 3D point in a view’s coordinate space.
 - [protocol DepthAlignmentID](depthalignmentid.md)
+  A type that defines a custom depth alignment guide.
 - [struct Alignment3D](alignment3d.md)
   An alignment in all three axes.
 - [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)

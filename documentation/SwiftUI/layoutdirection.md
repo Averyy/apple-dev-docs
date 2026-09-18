@@ -60,6 +60,7 @@ You can also read the [`layoutDirection`](environmentvalues/layoutdirection.md) 
 - [var layoutDirection: LayoutDirection](environmentvalues/layoutdirection.md)
   The layout direction associated with the current environment.
 - [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
+  A layout that rotates the space containing a view.
 
 
 ---

@@ -6,7 +6,7 @@
 A Boolean control where true means that the element’s hardware has phantom power enabled.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

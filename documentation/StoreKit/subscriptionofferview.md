@@ -41,9 +41,9 @@
 ## See Also
 
 - [struct ProductView](productview.md)
-  A view that merchandises an individual In-App Purchase product.
+  A view that merchandises an individual Apple In-App Purchase product.
 - [struct StoreView](storeview.md)
-  A view that merchandises a collection of In-App Purchase products.
+  A view that merchandises a collection of Apple In-App Purchase products.
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 - [Backyard Birds: Building an app with SwiftData and widgets](../swiftui/backyard-birds-sample.md)

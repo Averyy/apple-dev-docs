@@ -25,6 +25,10 @@ struct IntentDialog
 - [Creating your first app intent](creating-your-first-app-intent.md)
 - [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
 
+#### Overview
+
+When someone performs an action with Siri AI that invokes your app intent, the system might not display the `IntentDialog` you return as an intent result.
+
 ## Topics
 
 ### Creating a dialog

@@ -27,8 +27,11 @@ Use this type when appending text with [`LanguageModelExecutorGenerationChannel.
 
 ### Handling the text fragment
 - [var content: String](languagemodelexecutorgenerationchannel/textfragment/content.md)
+  The text to append to the entry’s current text segment.
 - [var tokenCount: Int](languagemodelexecutorgenerationchannel/textfragment/tokencount.md)
+  The number of tokens the text carries.
 - [var segmentID: String?](languagemodelexecutorgenerationchannel/textfragment/segmentid.md)
+  The identifier of the text segment to append to, or empty to append to the current segment.
 
 ## Relationships
 

@@ -31,7 +31,7 @@ The App Store generates a single, globally unique `appTransactionID` for each Ap
 
 This value remains the same for the same Apple Account and app if the customer redownloads the app on any device, receives a refund, repurchases the app, or changes the storefront. For apps that support Family Sharing, the `appTransactionID` is unique for each family group member.
 
-The `appTransactionID` is available even if a customer makes no in-app purchases.
+The `appTransactionID` is available even if a customer makes no Apple In-App Purchases.
 
 The App Store server and StoreKit provide the `appTransactionID` in the following APIs:
 

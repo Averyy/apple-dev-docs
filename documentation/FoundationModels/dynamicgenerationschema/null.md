@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Creates a null schema.
+A schema that represents a null value.
 
 **Availability**:
 - iOS 26.4+

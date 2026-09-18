@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+An optional label that identifies the attachment.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,6 +22,7 @@ var label: String?
 ## See Also
 
 - [var content: Transcript.Attachment](transcript/attachmentsegment/content.md)
+  The attached file or image.
 
 
 ---

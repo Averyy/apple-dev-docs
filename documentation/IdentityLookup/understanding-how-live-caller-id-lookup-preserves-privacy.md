@@ -14,7 +14,7 @@ Apple’s implementation of Live Caller ID Lookup upholds user privacy while pro
 
 - Hiding the client’s IP address using Apple’s Oblivious HTTP.
 - Using anonymous authentication with the Privacy Pass protocol.
-- Hiding the incoming number by using keyword private information retrieval (KPIR).
+- Hiding the incoming number by using private information retrieval (PIR).
 
 ##### Hide the Clients Ip Address
 
@@ -32,7 +32,7 @@ Your server doesn’t learn which user token the system has. Additionally, your 
 
 ##### Hide the Incoming Number
 
-Apple’s Oblivious HTTP and Privacy Pass hide the client’s identity from your server. However, they don’t hide the query itself. Live Caller ID Lookup uses KPIR to hide client queries. KPIR is a cryptographic protocol that calls the server to fetch data corresponding to a particular keyword from the hosted database without revealing the keyword to the server. Implementing the Live Caller ID Lookup feature requires the service provider to run a KPIR server on its database and handle all of the client’s KPIR encrypted queries. For more information, see the [`Live Caller ID Lookup example`](https://developer.apple.comhttps://github.com/apple/live-caller-id-lookup-example).
+Apple’s Oblivious HTTP and Privacy Pass hide the client’s identity from your server. However, they don’t hide the query itself. Live Caller ID Lookup uses PIR to hide client queries. PIR is a cryptographic protocol that calls the server to fetch data corresponding to a particular keyword from the hosted database without revealing the keyword to the server. Implementing the Live Caller ID Lookup feature requires the service provider to run a PIR server on its database and handle all of the client’s PIR encrypted queries. For more information, see the [`Live Caller ID Lookup example`](https://developer.apple.comhttps://github.com/apple/live-caller-id-lookup-example).
 
 ## See Also
 

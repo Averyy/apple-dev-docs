@@ -64,7 +64,7 @@ enum MTLVisibilityResultMode
 - [enum MTLDepthClipMode](mtldepthclipmode.md)
   The mode that determines how to deal with fragments outside of the near or far planes.
 - [enum MTLVisibilityResultType](mtlvisibilityresulttype.md)
-  This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
+  Actions for visibility results between render passes.
 
 
 ---

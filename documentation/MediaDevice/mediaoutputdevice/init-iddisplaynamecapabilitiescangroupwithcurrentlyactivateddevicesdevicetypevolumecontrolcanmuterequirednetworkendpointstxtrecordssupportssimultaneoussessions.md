@@ -18,7 +18,7 @@ init?(id: UUID, displayName: String, capabilities: MediaOutputDevice.Capabilitie
 
 #### Return Value
 
-A configured `MediaOutputDevice`, or `nil` if `networkEndpoints` is empty.
+A configured `MediaOutputDevice`, or `nil` if `networkEndpoints` is empty or `capabilities` is invalid.
 
 #### Discussion
 

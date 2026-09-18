@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: method
 
-Instructs iOS to reinstall an app after a required reuthorization completes.
+Instructs the system to reinstall an app after a required reuthorization completes.
 
 **Availability**:
 - iOS 17.5+

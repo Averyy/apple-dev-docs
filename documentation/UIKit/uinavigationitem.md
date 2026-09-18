@@ -106,6 +106,11 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   Sets the right bar button items, optionally animating the transition to the new items.
 - [func setRightBarButton(UIBarButtonItem?, animated: Bool)](uinavigationitem/setrightbarbutton(_:animated:).md)
   Sets the custom bar button item, optionally animating the transition to the view.
+### Configuring bars on the vertical axis
+- [var verticalBarCompressionBehavior: UIVerticalBarCompressionBehavior](uinavigationitem/verticalbarcompressionbehavior.md)
+  When the tab bar and navigation/toolbar items are both rendered together in the vertical bar, this property controls which items compress first.
+- [enum UIVerticalBarCompressionBehavior](uiverticalbarcompressionbehavior.md)
+  How bars compress when different types of bars are hosted together and space is constrained.
 ### Getting and setting properties
 - [var prompt: String?](uinavigationitem/prompt.md)
   A single line of text that displays at the top of the navigation bar.
@@ -159,6 +164,10 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   Methods an object implements to rename a navigation item.
 ### Instance Properties
 - [var navigationBarMinimization: UIBarMinimization](uinavigationitem/navigationbarminimization-1kj9z.md)
+- [var titleAlignment: UINavigationItem.TitleAlignment](uinavigationitem/titlealignment-swift.property.md)
+  The preferred alignment of the navigation bar’s title.
+### Enumerations
+- [UINavigationItem.TitleAlignment](uinavigationitem/titlealignment-swift.enum.md)
 
 ## Relationships
 
@@ -199,6 +208,8 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   An object that manages a collection of tab objects.
 - [class UIPageViewController](uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
+- [class UIArrangementViewController](uiarrangementviewcontroller.md)
+  A view controller that presents its container view controllers through an arrangement.
 
 
 ---

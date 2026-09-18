@@ -26,7 +26,7 @@ struct ToolCallError
 
 ### Creating a tool call error
 - [init(tool: any Tool, underlyingError: any Error)](languagemodelsession/toolcallerror/init(tool:underlyingerror:).md)
-  Creates a tool call error
+  Creates a tool call error.
 ### Getting the tool
 - [var tool: any Tool](languagemodelsession/toolcallerror/tool.md)
   The tool that produced the error.

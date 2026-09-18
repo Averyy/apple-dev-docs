@@ -6,7 +6,7 @@
 The system calls this virtual method when the stream’s format changes.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The argument text to append to the tool call.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,6 +22,7 @@ var content: String
 ## See Also
 
 - [var tokenCount: Int](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment/tokencount.md)
+  The number of tokens the argument text carries.
 
 
 ---

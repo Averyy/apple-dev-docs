@@ -21,7 +21,7 @@ static var captureDescriptors: MTL4PipelineDataSetSerializerConfiguration { get 
 
 #### Discussion
 
-Set this mask to use `MTL4PipelineDataSetSerializer.serializeAsPipelinesScriptWithError`.
+Set this mask to use [`serializeAsPipelinesScript()`](mtl4pipelinedatasetserializer/serializeaspipelinesscript().md).
 
 This for the default behavior.
 

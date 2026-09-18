@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
+The model can’t call any tools.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ case disallowed
 ## See Also
 
 - [GenerationOptions.ToolCallingMode.Kind.allowed](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/allowed.md)
+  The model may call tools.
 - [GenerationOptions.ToolCallingMode.Kind.required](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/required.md)
+  The model must call one or more tools.
 
 
 ---

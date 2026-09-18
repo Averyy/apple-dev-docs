@@ -27,7 +27,7 @@ A product view style that uses a standard, platform-appropriate layout.
 - [static var compact: CompactProductViewStyle](productviewstyle/compact.md)
   An product view style suitable for layouts where less space is available, or for displaying more items in a small amount of space.
 - [static var large: LargeProductViewStyle](productviewstyle/large.md)
-  A product view style suitable for layouts where the in-app purchase content is prominent.
+  A product view style suitable for layouts where the Apple In-App Purchase content is prominent.
 
 
 ---

@@ -6,7 +6,7 @@
 Set for floating point, clear for integer.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

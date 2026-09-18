@@ -1,14 +1,14 @@
-# Testing failing subscription renewals and In-App Purchases
+# Testing failing subscription renewals and Apple In-App Purchases
 
 **Framework**: StoreKit
 
-Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed In-App Purchases.
+Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed Apple In-App Purchases.
 
 #### Overview
 
 Payments can fail unexpectedly at any stage of the billing cycle, such as when a payment card expires. Test your app’s user experience to ensure it handles these unexpected events, and provides appropriate levels of service when billing issues occur.
 
-In sandbox testing, you can simulate billing issues that cause In-App Purchases to fail, and auto-renewable subscriptions not to renew. You can also enable Billing Grace Period for the sandbox environment. Use these sandbox features to test how your app handles auto-renewable subscriptions with billing issues that do or don’t recover.
+In sandbox testing, you can simulate billing issues that cause Apple In-App Purchases to fail, and auto-renewable subscriptions not to renew. You can also enable Billing Grace Period for the sandbox environment. Use these sandbox features to test how your app handles auto-renewable subscriptions with billing issues that do or don’t recover.
 
 The sandbox environment sends [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications) as you perform tests. For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications).
 
@@ -24,7 +24,7 @@ Follow these steps on a test device running iOS 16 or iPadOS 16, or later:
 2. Choose Settings > Developer > Sandbox Account > Manage > Account Settings.
 3. Disable the Allow Purchases & Renewals setting.
 
-Disabling this setting causes In-App Purchases to fail, and auto-renewable subscriptions to not renew in the sandbox environment.
+Disabling this setting causes Apple In-App Purchases to fail, and auto-renewable subscriptions to not renew in the sandbox environment.
 
 > **Note**:  This setting applies to all devices that the Sandbox Apple Account signs in to, and to all active auto-renewable subscriptions belonging to that account.
 
@@ -127,12 +127,12 @@ To test a subscription that a customer cancels, follow these steps:
 
 Repeat the test starting with a subscription in the billing retry state, as described above in [`Test subscriptions that enter a billing retry state`](testing-failing-subscription-renewals-and-in-app-purchases#Test-subscriptions-that-enter-a-billing-retry-state.md).
 
-##### Test a Failed in App Purchase
+##### Test a Failed Apple in App Purchase
 
 To test a failed purchase attempt, follow these steps:
 
 1. Set the environment to simulate billing issues, as described above in [`Configure the sandbox environment to simulate billing issues`](testing-failing-subscription-renewals-and-in-app-purchases#Configure-the-sandbox-environment-to-simulate-billing-issues.md).
-2. In your app, attempt to buy an In-App Purchase product. The system displays an error message for the sandbox environment that shows the purchase failed.
+2. In your app, attempt to buy an Apple In-App Purchase product. The system displays an error message for the sandbox environment that shows the purchase failed.
 3. To continue testing billing issues, select OK. Alternatively, to simulate a user resolving a billing issue, select Settings to return to Account Settings, where you can enable Allow Purchases & Renewals.
 
 ## See Also

@@ -21,7 +21,10 @@ case inherited
 
 #### Discussion
 
-Use this setting to indicate Metal should inherit the mapping from the `colorAttachmentMap` property of the current [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) or [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) in use at draw time.
+This setting instructs the pipeline state to inherit the color attachment map of the current render encoder:
+
+- For an [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md), call its [`setColorAttachmentMap(_:)`](mtl4rendercommandencoder/setcolorattachmentmap(_:).md) method.
+- For an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), call its [`setColorAttachmentMap(_:)`](mtlrendercommandencoder/setcolorattachmentmap(_:).md) method.
 
 
 ---

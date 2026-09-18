@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: typealias
 
+A property wrapper that provides access to a session property from within a tool.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,13 +22,13 @@ typealias SessionProperty = LanguageModelSession.SessionProperty
 ## See Also
 
 - [var name: String](tool/name.md)
-  A unique name for the tool, such as “get_weather”, “toggleDarkMode”, or “search contacts”.
+  A unique name for the tool.
 - [var description: String](tool/description.md)
   A natural language description of when and how to use the tool.
 - [var parameters: GenerationSchema](tool/parameters.md)
   A schema for the parameters this tool accepts.
 - [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
-  A Boolean value that indicates whether the tool’s name, description, and parameters schema are injected into the instructions of sessions that leverage this tool.
+  A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
 
 
 ---

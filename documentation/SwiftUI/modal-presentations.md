@@ -108,14 +108,14 @@ For design guidance, see [`Modality`](https://developer.apple.com/design/human-i
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:).md)
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:).md)
-  Presents a confirmation dialog when a dismiss action has been triggered.
+  Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 ### Showing a confirmation dialog with a message
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:message:).md)
   Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:).md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:message:).md)
-  Presents a confirmation dialog when a dismiss action has been triggered.
+  Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 ### Configuring a dialog
 - [func dialogIcon(Image?) -> some View](view/dialogicon(_:).md)
   Configures the icon used by dialogs within this view.

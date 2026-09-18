@@ -19,14 +19,14 @@ var pirPrivacyPassIssuerURL: URL? { get }
 
 ## See Also
 
-- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
-  A URL that contains the domain name of the PIR server.
 - [var pirAuthenticationToken: String?](neurlfiltermanager/pirauthenticationtoken.md)
   A PIR per-user authentication token string.
 - [func refreshPIRParameters() async throws](neurlfiltermanager/refreshpirparameters.md)
   Refetches PIR parameters from the server.
 - [func resetPIRCache() async throws](neurlfiltermanager/resetpircache.md)
   Resets the PIR on-device cache.
+- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
+  A URL that contains the domain name of the PIR server.
 
 
 ---

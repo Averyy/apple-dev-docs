@@ -38,7 +38,7 @@ struct MenuContents
 
 ### Creating menu contents
 - [init(rawValue: Int)](avlegiblemediaoptionsmenucontroller/menucontents/init(rawvalue:).md)
-### Menu Content Options
+### Menu content options
 - [static var all: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/all.md)
 - [static var captionAppearance: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/captionappearance.md)
 - [static var legible: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/legible.md)

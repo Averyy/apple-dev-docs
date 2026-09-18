@@ -22,9 +22,9 @@ struct AVAudioSessionActivationOptions
 
 ## Topics
 
-### Getting Standard Activation Options
+### Creating an Activation Option
 - [init(rawValue: UInt)](avaudiosessionactivationoptions/init(rawvalue:).md)
-  Creates a new instance with the raw value you specify.
+  Creates an activation-options set from a raw bitmask.
 
 ## Relationships
 

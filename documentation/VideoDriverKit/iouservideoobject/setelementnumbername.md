@@ -6,7 +6,7 @@
 Sets the number name for the given element of the video object.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

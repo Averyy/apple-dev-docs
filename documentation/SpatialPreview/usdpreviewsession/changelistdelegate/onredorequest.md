@@ -17,6 +17,11 @@ An redo has been requested in the session
 func onRedoRequest()
 ```
 
+## See Also
+
+- [func onUndoRequest()](usdpreviewsession/changelistdelegate/onundorequest.md)
+  An undo has been requested in the session
+
 
 ---
 

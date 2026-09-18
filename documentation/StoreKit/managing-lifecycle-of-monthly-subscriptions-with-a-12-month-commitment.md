@@ -112,7 +112,7 @@ In the sandbox environment, you can:
 ## See Also
 
 - [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
-  Offer In-App Purchases and manage entitlements using signed transactions and status information.
+  Offer Apple In-App Purchases and manage entitlements using signed transactions and status information.
 - [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
   Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
 - [struct Product](product.md)

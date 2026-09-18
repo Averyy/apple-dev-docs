@@ -114,7 +114,7 @@ Generic passes also allow for up to four secondary fields and four auxiliary fie
 
 ![An illustration of a generic pass for a gym with the various fields highlighted.](/images/com.apple.walletpasses/pass-fields-layout-generic-pass@2x.png)
 
-For details on how to create a generic pass, see [`Creating a poster generic pass`](creating-a-poster-generic-pass.md).
+For details on how to create a generic pass, see [`Creating a Poster Generic Pass`](creating-a-poster-generic-pass.md).
 
 #### Add Any Relevant Back Fields
 
@@ -151,7 +151,7 @@ Certain predefined Featured Actions are recommended for specific pass types, suc
 
 - [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
-- [Creating a poster generic pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.

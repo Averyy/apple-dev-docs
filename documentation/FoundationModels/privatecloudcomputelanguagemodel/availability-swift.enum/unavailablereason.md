@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: enum
 
-The unavailable reason.
+The reason the model is unavailable.
 
 **Availability**:
 - iOS 27.0+
@@ -38,9 +38,9 @@ enum UnavailableReason
 ## See Also
 
 - [PrivateCloudComputeLanguageModel.Availability.available](privatecloudcomputelanguagemodel/availability-swift.enum/available.md)
-  The system is ready for making requests.
+  The system is ready to make requests.
 - [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](privatecloudcomputelanguagemodel/availability-swift.enum/unavailable(_:).md)
-  Indicates that the system isn’t ready for requests.
+  The system isn’t ready for requests.
 
 
 ---

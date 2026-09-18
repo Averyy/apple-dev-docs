@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The number of tokens the replacement text carries.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var tokenCount: Int
 ## See Also
 
 - [var content: String](languagemodelexecutorgenerationchannel/textsegmentreplacement/content.md)
+  The replacement text for the entry’s current text segment.
 - [var segmentID: String?](languagemodelexecutorgenerationchannel/textsegmentreplacement/segmentid.md)
+  The identifier of the text segment to replace, or empty for the current segment.
 
 
 ---

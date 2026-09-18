@@ -6,7 +6,7 @@
 Device transport state is stopped.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

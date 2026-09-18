@@ -28,6 +28,8 @@ enum HKHeartRateRecoveryTestType
   A test that estimates a person’s heart-rate recovery without using exercise.
 - [HKHeartRateRecoveryTestType.predictionSubMaxExercise](hkheartraterecoverytesttype/predictionsubmaxexercise.md)
   A test that estimates a person’s heart-rate recovery using lower-intensity exercise.
+### Enumeration Cases
+- [HKHeartRateRecoveryTestType.stepTest](hkheartraterecoverytesttype/steptest.md)
 ### Initializers
 - [init?(rawValue: Int)](hkheartraterecoverytesttype/init(rawvalue:).md)
 

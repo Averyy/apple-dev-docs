@@ -108,6 +108,9 @@ AVMutableMetadataItem *myTaggedMediaCharacteristic = [[AVMutableMetadataItem all
   Creates a media characteristic.
 - [init(rawValue: String)](avmediacharacteristic/init(rawvalue:).md)
   Creates a media characteristic with a string value.
+### Type Properties
+- [static let signLanguageInterpretationForAccessibility: AVMediaCharacteristic](avmediacharacteristic/signlanguageinterpretationforaccessibility.md)
+  A media characteristic that indicates that a track or media selection option provides a sign language interpretation of the spoken dialog and other significant aspects of the presentation.
 
 ## Relationships
 

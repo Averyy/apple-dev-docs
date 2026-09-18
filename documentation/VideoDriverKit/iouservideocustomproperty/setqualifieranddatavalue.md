@@ -6,7 +6,7 @@
 Sets the custom property’s data value.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

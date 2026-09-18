@@ -24,13 +24,13 @@ struct Product
 
 - [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 - [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
-- [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Overview
 
-The `Product` type represents the in-app purchases that you configure in App Store Connect and make available for purchase within your app. Use `Product` to perform all product-related tasks in your app, from displaying in-app purchases and offers to making a purchase and getting transaction and subscription status information.
+The `Product` type represents the Apple In-App Purchases that you configure in App Store Connect and make available for purchase within your app. Use `Product` to perform all product-related tasks in your app, from displaying Apple In-App Purchases and offers to making a purchase and getting transaction and subscription status information.
 
-To get a `Product` instance, call [`products(for:)`](product/products(for:).md) and provide one or more in-app purchase product identifiers. Use a `Product` instance to display in-app purchases and subscription offers in your store, as follows:
+To get a `Product` instance, call [`products(for:)`](product/products(for:).md) and provide one or more in-app purchase product identifiers. Use a `Product` instance to display Apple In-App Purchases and subscription offers in your store, as follows:
 
 - Show the localized name, description, and pricing information using [`displayName`](product/displayname.md), [`description`](product/description.md), and [`displayPrice`](product/displayprice.md), respectively.
 - Determine whether a user is eligible for an introductory offer for the product using [`isEligibleForIntroOffer`](product/subscriptioninfo/iseligibleforintrooffer.md).
@@ -42,7 +42,7 @@ Use a `Product` instance to learn whether a user is entitled to a product by che
 
 If the product is an auto-renewable subscription, use the [`status`](product/subscriptioninfo/status-swift.property.md) and [`renewalInfo`](product/subscriptioninfo/status-swift.struct/renewalinfo.md) in the [`subscription`](product/subscription.md) information to help manage subscriptions and inform business decisions, such as presenting subscription offers.
 
-For information about configuring In-App Purchases in App Store Connect, see [`Overview for configuring In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+For information about configuring Apple In-App Purchases in App Store Connect, see [`Overview for configuring Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 ## Topics
 
@@ -99,15 +99,15 @@ For information about configuring In-App Purchases in App Store Connect, see [`O
 - [let id: String](product/id.md)
   The unique product identifier.
 - [let type: Product.ProductType](product/type.md)
-  The in-app purchase product type.
+  The Apple In-App Purchase product type.
 - [Product.ProductType](product/producttype.md)
-  The types of in-app purchases.
+  The types of Apple In-App Purchases.
 ### Getting Family Sharing status
 - [let isFamilyShareable: Bool](product/isfamilyshareable.md)
   A Boolean value that indicates whether the product is available for Family Sharing in App Store Connect.
-### Managing promoted in-app purchases
+### Managing promoted Apple In-App Purchases
 - [Product.PromotionInfo](product/promotioninfo.md)
-  Information about a promoted In-App Purchase that customizes its order and visibility on the device.
+  Information about a promoted Apple In-App Purchase that customizes its order and visibility on the device.
 ### Loading products
 - [Product.CollectionTaskState](product/collectiontaskstate.md)
   The state of a task that loads a collection of products in the background.
@@ -137,7 +137,7 @@ For information about configuring In-App Purchases in App Store Connect, see [`O
 ## See Also
 
 - [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
-  Offer In-App Purchases and manage entitlements using signed transactions and status information.
+  Offer Apple In-App Purchases and manage entitlements using signed transactions and status information.
 - [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
   Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
 - [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)

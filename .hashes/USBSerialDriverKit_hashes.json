@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-15T07:29:29.975735",
+    "last_updated": "2026-09-18T07:39:48.255808",
     "total_pages": 30,
-    "session_id": "2026-09-15T07:29:27.671213"
+    "session_id": "2026-09-18T07:39:45.935381"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/USBSerialDriverKit.json": {
       "hash": "dec5fc95704f0580cdf830a474ea19acabd9d2f6b988f1e9556a06645f8cb549",
-      "last_checked": "2026-09-15T07:29:27.968621",
+      "last_checked": "2026-09-18T07:39:46.212765",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"16d5-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/USBSerialDriverKit.md"
     },
     "https://developer.apple.com/documentation/USBSerialDriverKit": {
       "hash": "dec5fc95704f0580cdf830a474ea19acabd9d2f6b988f1e9556a06645f8cb549",
-      "last_checked": "2026-09-15T07:29:27.877270",
+      "last_checked": "2026-09-18T07:39:46.111131",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"16d5-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/USBSerialDriverKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial.json": {
       "hash": "8478bdefaa7154e2a5eaf7690d2b83cf8aec109bf9207809d46fbff22a5e1e72",
-      "last_checked": "2026-09-15T07:29:28.206239",
+      "last_checked": "2026-09-18T07:39:46.418063",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"36ca-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/init.json": {
       "hash": "2e07dda57e9ca8f01e6b6933aaa2887e31521020a32919e21947efb4ae0d6845",
-      "last_checked": "2026-09-15T07:29:28.297308",
+      "last_checked": "2026-09-18T07:39:46.650882",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1dc6-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/init.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/start.json": {
       "hash": "4e9f6f4b125763385db64fca17296ed822641debe41a2ce713c453f2a1c796fa",
-      "last_checked": "2026-09-15T07:29:28.392297",
+      "last_checked": "2026-09-18T07:39:46.766069",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"2ede-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/start.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/stop.json": {
       "hash": "0be6ff0600e0c1351af9ded41bf30d7c78993837d45f7f25e58fd9d1d030d130",
-      "last_checked": "2026-09-15T07:29:28.484171",
+      "last_checked": "2026-09-18T07:39:46.892516",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"2750-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/stop.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/free.json": {
       "hash": "ee81feb9313794417a01787bb3db2518ad927ec6c2e8b2189003bd6ea9147f98",
-      "last_checked": "2026-09-15T07:29:28.581656",
+      "last_checked": "2026-09-18T07:39:47.009562",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1b5a-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/free.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/initwith.json": {
       "hash": "04ce64e214cf8dff5f411da186b790ddcc316774bb0c5c1fb426f2e3fff439ab",
-      "last_checked": "2026-09-15T07:29:28.816012",
+      "last_checked": "2026-09-18T07:39:47.160813",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1e38-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/initwith.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/hwactivate.json": {
       "hash": "ce73b8952ef53457ca54ccd35083322a6b34f23b63a33766188de4524010b0d2",
-      "last_checked": "2026-09-15T07:29:29.038037",
+      "last_checked": "2026-09-18T07:39:47.276706",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"193a-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/hwactivate.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/hwdeactivate.json": {
       "hash": "f9b061e1ce3eff8689aa672308354ab6c728a32ec704826a8a3aecbed0c05cfd",
-      "last_checked": "2026-09-15T07:29:29.129608",
+      "last_checked": "2026-09-18T07:39:47.398196",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1938-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/hwdeactivate.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/handlerxpacket.json": {
       "hash": "5e9282c2726c1007289a3a0f8ec8d39e9b91acdf5146b06f8ee2cd54e7b0cc0d",
-      "last_checked": "2026-09-15T07:29:29.222977",
+      "last_checked": "2026-09-18T07:39:47.525853",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1d7b-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/handlerxpacket.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/rxfreespaceavailable.json": {
       "hash": "90a1bf157c187fa9dd1bd736b8265e6cc9823be774572e532f94b2ab7f5dc6f4",
-      "last_checked": "2026-09-15T07:29:29.314469",
+      "last_checked": "2026-09-18T07:39:47.646414",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1772-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/rxfreespaceavailable.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/txdataavailable.json": {
       "hash": "481d5dad7a57107d6ef89d3677b44336259e2b9c3ce71131d6b63c2b8529149a",
-      "last_checked": "2026-09-15T07:29:29.546169",
+      "last_checked": "2026-09-18T07:39:47.776774",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1762-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/txdataavailable.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/handleinterruptpacket.json": {
       "hash": "2eeadf4b5ca1c8727d348a09767aa946a1365ad6dd530de69224557aa1a2d6cc",
-      "last_checked": "2026-09-15T07:29:29.779219",
+      "last_checked": "2026-09-18T07:39:47.895290",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"1d42-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/handleinterruptpacket.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/connectqueues.json": {
       "hash": "ee1374a13060cfe597a75bc1d869311ca3070db9a8ff66dee2d0076ed26f09aa",
-      "last_checked": "2026-09-15T07:29:29.875831",
+      "last_checked": "2026-09-18T07:39:48.059769",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"3c12-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/connectqueues.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbserialdriverkit/iouserusbserial/disconnectqueues.json": {
       "hash": "5bc2d5e141dfbe802b0212d21fddb34cc76722f329d32ba6c2f99ea2d0226e4f",
-      "last_checked": "2026-09-15T07:29:29.971741",
+      "last_checked": "2026-09-18T07:39:48.215944",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.671213",
+      "session_id": "2026-09-18T07:39:45.935381",
       "etag": "\"19c8-6590294e742d9-df\"",
       "file_path": "documentation/USBSerialDriverKit/iouserusbserial/disconnectqueues.md"
     },

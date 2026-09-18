@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: enum
 
-StoreKit In-App Purchase error codes.
+StoreKit Apple In-App Purchase error codes.
 
 **Availability**:
 - iOS 15.0+

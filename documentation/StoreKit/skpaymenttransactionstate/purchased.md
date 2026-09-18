@@ -22,7 +22,7 @@ case purchased
 
 ## Mentions
 
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
 - [Processing a transaction](processing-a-transaction.md)

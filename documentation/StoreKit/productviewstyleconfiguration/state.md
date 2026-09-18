@@ -23,9 +23,9 @@ let state: Product.TaskState
 ## See Also
 
 - [var product: Product?](productviewstyleconfiguration/product.md)
-  The in-app purchase product to merchandise.
+  The Apple In-App Purchase product to merchandise.
 - [let hasCurrentEntitlement: Bool](productviewstyleconfiguration/hascurrententitlement.md)
-  A Boolean value that indicates whether an in-app purchase transaction exists for the product.
+  A Boolean value that indicates whether an Apple In-App Purchase transaction exists for the product.
 
 
 ---

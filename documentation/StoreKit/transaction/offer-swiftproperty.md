@@ -29,7 +29,7 @@ let offer: Transaction.Offer?
 
 This value is `nil` if the transaction doesn’t include an offer.
 
-You set up offers for auto-renewable subscriptions and other In-App Purchase product types in App Store Connect. If a customer redeems an offer, this property contains the offer details, including its [`type`](transaction/offer-swift.struct/type.md), [`paymentMode`](transaction/offer-swift.struct/paymentmode-swift.property.md), and [`id`](transaction/id.md). For more information, see [`Transaction.Offer`](transaction/offer-swift.struct.md).
+You set up offers for auto-renewable subscriptions and other Apple In-App Purchase product types in App Store Connect. If a customer redeems an offer, this property contains the offer details, including its [`type`](transaction/offer-swift.struct/type.md), [`paymentMode`](transaction/offer-swift.struct/paymentmode-swift.property.md), and [`id`](transaction/id.md). For more information, see [`Transaction.Offer`](transaction/offer-swift.struct.md).
 
 ## See Also
 

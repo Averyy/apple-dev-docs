@@ -86,6 +86,11 @@ func respond(
   A tool-call lifecycle event, including per-call argument streaming, reasoning, metadata, usage, or retraction.
 - [LanguageModelExecutorGenerationChannel.Usage](languagemodelexecutorgenerationchannel/usage.md)
   Snapshot of an entry’s token totals.
+### Structures
+- [LanguageModelExecutorGenerationChannel.DataEntry](languagemodelexecutorgenerationchannel/dataentry.md)
+  A top-level data-entry event addressed to a transcript entry.
+### Default Implementations
+- [AsyncSequence Implementations](languagemodelexecutorgenerationchannel/asyncsequence-implementations.md)
 
 ## Relationships
 

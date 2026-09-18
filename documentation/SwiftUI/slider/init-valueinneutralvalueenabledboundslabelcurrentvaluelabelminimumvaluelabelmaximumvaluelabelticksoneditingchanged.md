@@ -36,6 +36,7 @@ The slider calls `onEditingChanged` when editing begins and ends. For example, o
 - `currentValueLabel`: A view that describes `value`.
 - `minimumValueLabel`: A view that describes `bounds.lowerBound`.
 - `maximumValueLabel`: A view that describes `bounds.lowerBound`.
+- `ticks`: The ticks to display along the slider.
 - `onEditingChanged`: A callback for when editing begins and ends.
 
 

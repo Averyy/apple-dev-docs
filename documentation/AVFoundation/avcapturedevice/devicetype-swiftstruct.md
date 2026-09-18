@@ -63,6 +63,9 @@ Use the device type constants to retrieve devices using an [`AVCaptureDevice.Dis
 ### Initializers
 - [init(rawValue: String)](avcapturedevice/devicetype-swift.struct/init(rawvalue:).md)
   Creates a capture device type with a string value.
+### Type Properties
+- [static let builtInInnerUltraWideCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtininnerultrawidecamera.md)
+- [static let builtInOuterUltraWideCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinouterultrawidecamera.md)
 
 ## Relationships
 

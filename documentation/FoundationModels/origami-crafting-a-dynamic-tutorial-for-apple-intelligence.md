@@ -375,6 +375,7 @@ Origami also draws on other parts of the Foundation Models framework, like tool 
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
 - [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+  Dynamic instructions that produce content for each element of a collection.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

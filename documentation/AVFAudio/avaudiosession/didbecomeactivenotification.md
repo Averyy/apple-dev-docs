@@ -33,21 +33,6 @@ This notification has no userInfo payload.
   Keys for [`didBecomeInactiveNotification`](avaudiosession/didbecomeinactivenotification.md) Value is an [`AVAudioSession.DeactivationContext`](avaudiosession/deactivationcontext.md) object describing the deactivation.
 - [class let resumptionContextKey: String](avaudiosession/resumptioncontextkey.md)
   Keys for [`resumptionRecommendationNotification`](avaudiosession/resumptionrecommendationnotification.md) Value is an [`AVAudioSession.ResumptionContext`](avaudiosession/resumptioncontext.md) describing the resumption recommendation.
-- [AVAudioSession.DidBecomeActiveMessage](avaudiosession/didbecomeactivemessage.md)
-- [AVAudioSession.DidBecomeInactiveMessage](avaudiosession/didbecomeinactivemessage.md)
-- [AVAudioSession.ResumptionRecommendationMessage](avaudiosession/resumptionrecommendationmessage.md)
-- [AVAudioSession.DeactivationResult](avaudiosession/deactivationresult.md)
-  Type-safe representation of audio session deactivation results.
-- [AVAudioSession.DeactivationContext](avaudiosession/deactivationcontext.md)
-  An object that describes why and how the audio session deactivated.
-- [AVAudioSession.DeactivationSource](avaudiosession/deactivationsource.md)
-  The source of the audio session deactivation.
-- [AVAudioSession.InterruptionContext](avaudiosession/interruptioncontext.md)
-  An object that provides context about an audio session interruption.
-- [AVAudioSession.ResumptionContext](avaudiosession/resumptioncontext.md)
-  An object that provides context when resumption becomes available.
-- [AVAudioSession.ResumptionRecommendation](avaudiosession/resumptionrecommendation.md)
-  The system’s recommendation on whether to resume playback.
 
 
 ---

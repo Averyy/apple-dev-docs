@@ -214,20 +214,20 @@ func playerViewController(
 
 ## See Also
 
+- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
+  Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
+- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
+  Provide an optimized viewing experience for watching 3D video content.
 - [class AVPlayerViewController](avplayerviewcontroller.md)
   A view controller that displays content from a player and presents a native user interface to control playback.
 - [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
   A protocol that defines the methods to implement to respond to player view controller events.
-- [class AVCaptureEventInteraction](avcaptureeventinteraction.md)
-  An object that registers handlers to respond to capture events from system hardware buttons.
-- [class AVCaptureEvent](avcaptureevent.md)
-  An object that describes a user interaction with a system hardware button.
-- [class AVCaptureEventSound](avcaptureeventsound.md)
-  A sound object for a capture event.
-- [class AVInputPickerInteraction](avinputpickerinteraction.md)
-  Use `AVInputPickerInteraction` to present an input picker.
-- [Third-party casting support](third-party-casting-support.md)
-  Provide custom playback controls for third-party casting services and other media sources.
+- [class AVPlayerView](avplayerview.md)
+  A view that displays content from a player and presents a native user interface to control playback.
+- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+  A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
+- [struct VideoPlayer](videoplayer.md)
+  A view that displays content from a player and a native user interface to control playback.
 
 
 ---

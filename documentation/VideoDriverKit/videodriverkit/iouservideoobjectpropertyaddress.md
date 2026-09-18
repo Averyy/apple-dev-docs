@@ -6,7 +6,7 @@
 A data structure that contains all the three parts to identify a specific property, for easy transmission.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
+Information about the model service being unable to handle a request.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -21,8 +23,10 @@ struct ServiceUnavailable
 
 ### Creating a service unavailable error
 - [init(debugDescription: String)](privatecloudcomputelanguagemodel/error/serviceunavailable/init(debugdescription:).md)
+  Creates a service unavailable instance.
 ### Getting the error description
 - [var debugDescription: String](privatecloudcomputelanguagemodel/error/serviceunavailable/debugdescription.md)
+  A debug description of why the service is unavailable.
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 The scope for properties that apply to the object as a whole.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

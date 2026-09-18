@@ -27,7 +27,9 @@ The first event for a given id opens the tool call (using `name` from the enclos
 
 ### Handling the arguments fragment
 - [var content: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment/content.md)
+  The argument text to append to the tool call.
 - [var tokenCount: Int](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment/tokencount.md)
+  The number of tokens the argument text carries.
 
 ## Relationships
 

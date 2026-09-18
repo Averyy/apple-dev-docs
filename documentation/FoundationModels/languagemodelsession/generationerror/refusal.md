@@ -38,6 +38,7 @@ do {
 
 ### Creating a generation error refusal
 - [init(transcriptEntries: [Transcript.Entry])](languagemodelsession/generationerror/refusal/init(transcriptentries:).md)
+  Creates a refusal for the transcript entries the model declined to respond to.
 ### Getting the explanation
 - [var explanation: LanguageModelSession.Response<String>](languagemodelsession/generationerror/refusal/explanation.md)
   An explanation for why the model refused to respond.

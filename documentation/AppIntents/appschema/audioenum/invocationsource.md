@@ -31,8 +31,8 @@ enum InvocationSource: String {
     case suggestedByApp
 
     static let caseDisplayRepresentations: [Self: DisplayRepresentation] = [
-        .userInitiated: "UserInitiated",
-        .suggestedByApp: "SuggestedByApp"
+        .userInitiated: "User Initiated",
+        .suggestedByApp: "Suggested by App"
     ]
 }
 ```

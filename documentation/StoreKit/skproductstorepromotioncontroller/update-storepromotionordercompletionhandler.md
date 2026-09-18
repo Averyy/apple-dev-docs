@@ -20,15 +20,15 @@ func update(promotionOrder: [SKProduct]) async throws
 
 ## Mentions
 
-- [Promoting In-App Purchases](promoting-in-app-purchases.md)
+- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
 
 #### Discussion
 
-The default order of promoted in-app purchase products is set in App Store Connect. You can override this order per device. For example, you can promote an in-app purchase product that unlocks a specific level in your game when a user reaches the level immediately before the specified level.
+The default order of promoted Apple In-App Purchase products is set in App Store Connect. You can override this order per device. For example, you can promote an Apple In-App Purchase product that unlocks a specific level in your game when a user reaches the level immediately before the specified level.
 
-To override the default product order, put the product information for the subset of products you want to reorder into an array, in the order you want them to appear in. Pass the array to the [`update(storePromotionOrder:completionHandler:)`](skproductstorepromotioncontroller/update(storepromotionorder:completionhandler:).md) method. The products in the array are shown at the beginning of the list, followed by the remaining in-app purchase products, which are listed in the same relative order that you set in App Store Connect.
+To override the default product order, put the product information for the subset of products you want to reorder into an array, in the order you want them to appear in. Pass the array to the [`update(storePromotionOrder:completionHandler:)`](skproductstorepromotioncontroller/update(storepromotionorder:completionhandler:).md) method. The products in the array are shown at the beginning of the list, followed by the remaining Apple In-App Purchase products, which are listed in the same relative order that you set in App Store Connect.
 
-To cancel order overrides, send an empty product array to the [`update(storePromotionOrder:completionHandler:)`](skproductstorepromotioncontroller/update(storepromotionorder:completionhandler:).md) method.  The in-app purchase products will be displayed in the default order.
+To cancel order overrides, send an empty product array to the [`update(storePromotionOrder:completionHandler:)`](skproductstorepromotioncontroller/update(storepromotionorder:completionhandler:).md) method.  The Apple In-App Purchase products will be displayed in the default order.
 
 ## See Also
 

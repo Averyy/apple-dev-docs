@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func fastReadMultipleBlocks(requestFlags flags: NFCISO15693RequestFlag, blockRange: NSRange, resultHandler: @escaping (Result<[Data], any Error>) -> Void)
+@preconcurrency
+func fastReadMultipleBlocks(requestFlags flags: NFCISO15693RequestFlag, blockRange: NSRange, resultHandler: @escaping @Sendable (Result<[Data], any Error>) -> Void)
 ```
 
 

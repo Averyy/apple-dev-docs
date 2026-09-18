@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Presents a confirmation dialog when a dismiss action has been triggered.
+Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 
 **Availability**:
 - iOS 27.0+
@@ -20,7 +20,7 @@ nonisolated func dismissalConfirmationDialog<A, M>(_ titleResource: LocalizedStr
 
 #### Discussion
 
-On macOS, the dialog will be presented when attempting to dismiss the window for this view.
+On macOS, the dialog will be presented when attempting to dismiss the window for this view, either through a user-initiated dismissal or a programmatic dismiss action. On iOS, the dialog will only be presented for a user-initiated dismissal.
 
 For example, you could present a dialog asking to persist unsaved changes:
 

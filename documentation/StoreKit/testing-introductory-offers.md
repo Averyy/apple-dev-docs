@@ -11,7 +11,7 @@ To test introductory offers, verify that users see the same subscription and int
 To test introductory offers:
 
 1. Configure test accounts, as described in [`Create a sandbox tester account`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev8b997bee1). Create a variety of accounts that are eligible or ineligible for offers.
-2. Initiate in-app purchases from within the app for each test user.
+2. Initiate Apple In-App Purchases from within the app for each test user.
 3. Verify that the user experience and pricing information dynamically represent the accurate price of your subscription.
 
 Introductory offers are only offered once, but when testing your app, you can reset the status of the test account to allow you to redeem an introductory offer more than once. To reset offer eligibility for the sandbox account:

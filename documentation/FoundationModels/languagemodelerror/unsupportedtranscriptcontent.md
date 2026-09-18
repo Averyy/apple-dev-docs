@@ -23,10 +23,14 @@ struct UnsupportedTranscriptContent
 
 ### Creating an error instance
 - [init(unsupportedContent: [Transcript.Entry], debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedtranscriptcontent/init(unsupportedcontent:debugdescription:metadata:).md)
+  Creates information describing transcript content the model can’t process.
 ### Inspecting unsupported transcript content errors
 - [var metadata: [String : any Sendable]](languagemodelerror/unsupportedtranscriptcontent/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var unsupportedContent: [Transcript.Entry]](languagemodelerror/unsupportedtranscriptcontent/unsupportedcontent.md)
+  The transcript entries that the model can’t process.
 - [var debugDescription: String](languagemodelerror/unsupportedtranscriptcontent/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 Specify if device can be used as default input device.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

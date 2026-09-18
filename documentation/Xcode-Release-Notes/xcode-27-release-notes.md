@@ -291,6 +291,10 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - `arm64e.x1` or the Hardware-Checked Pointer Arithmetic slice contains the Check for Overflow of Pointer Arithmetic entitlement by checking for overflow into memory tags, providing additional protection on top of Memory Integrity Enforcement. (152104701)
 
+###### Known Issues
+
+- Apps with Hardware-Checked Pointer Arithmetic Slice feature enabled cannot be uploaded to the App Store on macOS Tahoe 26.6 with Xcode automatic signing enabled. (187057599) **Workaround:** Distribute with macOS 27 and Xcode 27 or use manual signing.
+
 ##### Foundation
 
 ###### Resolved Issues
@@ -701,6 +705,11 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### Resolved Issues
 
 - Fixed: `wifiAware` and `wifiAware(_:)` extensions on NWParameters are unavailable for configuring Wi-Fi Aware properties. (178019157)
+
+## See Also
+
+- [Xcode 27.2 Beta Release Notes](xcode-27_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 
 
 ---

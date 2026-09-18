@@ -33,7 +33,7 @@ var supportsLimitedXAttrs: Bool { get set }
 - [var allocSize: UInt64](fsitem/attributes/allocsize.md)
   The item’s allocated size.
 - [var inhibitKernelOffloadedIO: Bool](fsitem/attributes/inhibitkerneloffloadedio.md)
-  A Boolean value that indicates whether the file system overrides the per-volume settings for kernel offloaded I/O for a specific file.
+  A Boolean value that indicates whether the file system overrides the per-volume settings for kernel offloaded I/O for a specific file. FSKit reads this value the first time the module reports attributes for a given file; It then sets the file’s kernel-offloaded-I/O routing accordingly. The routing stays in effect for the item’s lifetime; later changes are ignored.
 
 
 ---

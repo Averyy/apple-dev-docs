@@ -22,7 +22,7 @@ var purchaseDate: Date { get }
 
 #### Discussion
 
-The purchase date applies to any type of in-app purchase.
+The purchase date applies to any type of Apple In-App Purchase.
 
 ## See Also
 

@@ -35,6 +35,7 @@ struct ConditionalDynamicInstructions<TrueContent, FalseContent> where TrueConte
 ## See Also
 
 - [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+  A result builder that combines tools and other content into dynamic instructions.
 - [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
   An empty dynamic instructions type.
 - [struct AnyDynamicInstructions](anydynamicinstructions.md)

@@ -84,6 +84,7 @@ Traits defined in Swift aren’t automatically bridged to Objective-C. If you ne
 - [UITraitLayoutDirection](uitraitlayoutdirection-swift.struct.md)
 - [UITraitLegibilityWeight](uitraitlegibilityweight-swift.struct.md)
 - [UITraitListEnvironment](uitraitlistenvironment-swift.struct.md)
+- [UITraitNavigationTitleAlignment](uitraitnavigationtitlealignment-swift.struct.md)
 - [UITraitPreferredContentSizeCategory](uitraitpreferredcontentsizecategory-swift.struct.md)
 - [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct.md)
 - [UITraitSceneCaptureState](uitraitscenecapturestate-swift.struct.md)

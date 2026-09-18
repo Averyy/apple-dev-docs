@@ -36,7 +36,7 @@ nonisolated func confirmationDialog<A, M, T>(_ title: Text, item data: Binding<T
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:).md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:message:).md)
-  Presents a confirmation dialog when a dismiss action has been triggered.
+  Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 
 
 ---

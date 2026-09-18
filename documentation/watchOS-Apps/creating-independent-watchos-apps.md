@@ -13,7 +13,7 @@ Apple Watch users have come to expect that the apps on their watches just work, 
 
 Create a watch-only app for apps that only run on Apple Watch. If you have watchOS and iOS apps that are substantially similar, release them as companion apps.
 
-People can purchase watchOS apps directly from the App Store on Apple Watch. They can make in-app purchases directly on Apple Watch as well. If you create a watchOS app with a companion iOS app, the in-app purchases are universal. Users make the purchase once, and the content is available in both watchOS and iOS. For more information, see [`Original API for In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase).
+People can purchase watchOS apps directly from the App Store on Apple Watch. They can make in-app purchases directly on Apple Watch as well. If you create a watchOS app with a companion iOS app, the in-app purchases are universal. Users make the purchase once, and the content is available in both watchOS and iOS. For more information, see [`Original API for Apple In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase).
 
 ![A screenshot of a watch face displaying the App Store on Apple Watch.](/images/com.apple.watchOS-Apps/creating-independent-watchos-apps-2@2x.png)
 

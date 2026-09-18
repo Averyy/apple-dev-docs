@@ -84,6 +84,7 @@ SectionedStack {
 ## Parameters
 
 - `view`: The view to extract the sections of.
+- `transform`: A closure that constructs a view from the collection of sections.
 
 ## See Also
 

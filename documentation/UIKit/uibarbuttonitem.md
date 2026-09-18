@@ -167,6 +167,9 @@ In general, specify a value for the normal state so that other states without a 
   A boolean value indicating whether the background this item may share with other items in the bar should be hidden.
 - [var sharesBackground: Bool](uibarbuttonitem/sharesbackground.md)
   A boolean value indicating whether this bar button item can share a background with other items in a navigation bar or a toolbar.
+- [var axisBehavior: UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.property.md)
+  The bar axis behavior of the item.
+- [UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.enum.md)
 ### Instance Properties
 - [var identifier: String?](uibarbuttonitem/identifier.md)
   An identifier used to match bar button items across transitions in a navigation bar or toolbar.

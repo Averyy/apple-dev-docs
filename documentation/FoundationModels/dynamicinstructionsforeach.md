@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
+Dynamic instructions that produce content for each element of a collection.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -17,11 +19,17 @@
 struct DynamicInstructionsForEach<Data, ID, Content> where Data : RandomAccessCollection, ID : Hashable, Content : DynamicInstructions
 ```
 
+#### Overview
+
+Don’t use this type directly. Instead, use [`DynamicInstructions.ForEach`](dynamicinstructions/foreach.md) within the `body` of your [`DynamicInstructions`](dynamicinstructions.md).
+
 ## Topics
 
 ### Creating an instance
 - [init(Data, content: (Data.Element) -> Content)](dynamicinstructionsforeach/init(_:content:).md)
+  Creates dynamic instructions that produce content for each element of an identifiable collection.
 - [init(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](dynamicinstructionsforeach/init(_:id:content:).md)
+  Creates dynamic instructions that produce content for each element of a collection.
 
 ## Relationships
 

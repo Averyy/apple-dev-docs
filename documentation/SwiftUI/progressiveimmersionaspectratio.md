@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+The shape of the portal that a progressive immersion style opens.
+
 **Availability**:
 - macOS 26.0+
 - visionOS 26.0+
@@ -12,6 +14,27 @@
 ```swift
 struct ProgressiveImmersionAspectRatio
 ```
+
+#### Overview
+
+A progressive immersive space replaces passthrough inside a portal that people resize with the Digital Crown. Pass a value of this type to [`progressive(aspectRatio:)`](immersionstyle/progressive(aspectratio:).md) to ask for a wide or a tall portal, which lets the shape suit the content you show:
+
+```swift
+@main
+struct MatchApp: App {
+    @State private var style: any ImmersionStyle =
+        .progressive(aspectRatio: .landscape)
+
+    var body: some Scene {
+        ImmersiveSpace {
+            MatchView()
+        }
+        .immersionStyle(selection: $style, in: style)
+    }
+}
+```
+
+The system chooses a shape for you when you pass [`automatic`](progressiveimmersionaspectratio/automatic.md).
 
 ## Topics
 

@@ -3,6 +3,8 @@
 **Framework**: Vision  
 **Kind**: case
 
+Compared to `.revision2`, this revision generally provides better precision and recall, and can also detect dog and cat heads. This is the default revision on platforms that support it. Specify `.revision2` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](recognizeanimalsrequest/supportedrevisions.md) to check if this revision is supported on the platform.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

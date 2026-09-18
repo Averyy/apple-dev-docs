@@ -21,14 +21,17 @@ struct TextSegmentReplacement
 
 #### Overview
 
-The `tokenCount` is the producer’s count of tokens carried by `content` and is used by safety or usage accounting to credit the replacement against
+The `tokenCount` is the producer’s count of tokens carried by `content` and is used by safety or usage accounting to credit the replacement against.
 
 ## Topics
 
 ### Handling the replacement
 - [var content: String](languagemodelexecutorgenerationchannel/textsegmentreplacement/content.md)
+  The replacement text for the entry’s current text segment.
 - [var tokenCount: Int](languagemodelexecutorgenerationchannel/textsegmentreplacement/tokencount.md)
+  The number of tokens the replacement text carries.
 - [var segmentID: String?](languagemodelexecutorgenerationchannel/textsegmentreplacement/segmentid.md)
+  The identifier of the text segment to replace, or empty for the current segment.
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
+An attached image.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

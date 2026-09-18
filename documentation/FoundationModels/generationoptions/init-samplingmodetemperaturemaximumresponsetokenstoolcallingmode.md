@@ -24,10 +24,12 @@ init(samplingMode: GenerationOptions.SamplingMode? = nil, temperature: Double? =
 - `samplingMode`: A strategy to use for sampling from a distribution.
 - `temperature`: A value between `0` and `1`, inclusive, that controls how sharply the model favors its most likely responses. A higher value increases variety.
 - `maximumResponseTokens`: The maximum number of tokens the model is allowed to produce before being artificially halted. Must be positive.
+- `toolCallingMode`: The requirements defining how the model should call tools.
 
 ## See Also
 
 - [init(samplingMode: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](generationoptions/init(samplingmode:temperature:maximumresponsetokens:).md)
+  Creates generation options that control token sampling behavior.
 - [init(sampling: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](generationoptions/init(sampling:temperature:maximumresponsetokens:).md)
   Creates generation options that control token sampling behavior.
 

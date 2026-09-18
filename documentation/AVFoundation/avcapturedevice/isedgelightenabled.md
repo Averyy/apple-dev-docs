@@ -20,7 +20,7 @@ class var isEdgeLightEnabled: Bool { get }
 
 #### Discussion
 
-This readonly property changes to reflect the Edge Light state in Control Center. It is key-value observable.
+This readonly property changes to reflect the Edge Light state in Control Center. It is key-value observable. On iOS, Edge Light only applies to video conferencing apps by default (apps that use “voip” as one of their UIBackgroundModes). Non video conferencing apps may opt in for Edge Light by adding the following key to their Info.plist: NSCameraEdgeLightEnabled 
 
 
 ---

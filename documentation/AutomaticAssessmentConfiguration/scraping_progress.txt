@@ -1,4 +1,4 @@
 Completed scraping Automatic Assessment Configuration!
-Total pages scraped: 148
-Pages skipped (unchanged): 1
+Total pages scraped: 49
+Pages skipped (unchanged): 100
 Pages failed: 0

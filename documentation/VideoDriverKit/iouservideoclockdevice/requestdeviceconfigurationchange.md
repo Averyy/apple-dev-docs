@@ -6,7 +6,7 @@
 Tells the host to initiate a configuration change operation.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

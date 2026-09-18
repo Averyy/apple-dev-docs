@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates a tool definition that describes the tool you provide.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -17,9 +19,14 @@
 init(tool: some Tool)
 ```
 
+## Parameters
+
+- `tool`: The tool whose name, description, and parameters describe the definition.
+
 ## See Also
 
 - [init(name: String, description: String, parameters: GenerationSchema)](transcript/tooldefinition/init(name:description:parameters:).md)
+  Creates a tool definition with the name, description, and parameter schema you provide.
 
 
 ---

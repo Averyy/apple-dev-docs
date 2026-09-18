@@ -48,6 +48,7 @@ Capsule()
 
 - `content`: The color or gradient with which to stroke this shape.
 - `style`: The stroke characteristics — such as the line’s width and whether the stroke is dashed — that determine how to render this shape.
+- `antialiased`: A Boolean value that specifies whether to allow antialiasing. Pass `true` to allow antialising, otherwise `false`.
 
 ## See Also
 

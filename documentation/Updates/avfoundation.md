@@ -64,8 +64,8 @@ Browse notable changes in [`AVFoundation`](https://developer.apple.com/documenta
   Learn about important changes to AuthenticationServices.
 - [AVFAudio updates](avfaudio.md)
   Learn about important changes to AVFAudio.
-- [Background Tasks updates](backgroundtasks.md)
-  Learn about important changes in Background Tasks.
+- [AVKit updates](avkit.md)
+  Learn about important changes to AVKit.
 
 
 ---

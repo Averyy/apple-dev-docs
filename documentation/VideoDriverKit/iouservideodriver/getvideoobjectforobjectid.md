@@ -6,7 +6,7 @@
 Gets the video object that corresponds to a video object identifier.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

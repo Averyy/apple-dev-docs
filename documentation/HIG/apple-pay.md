@@ -20,7 +20,7 @@ During checkout, the payment sheet can show the credit or debit card linked to A
 People pay using Face ID, Touch ID, or Optic ID on supported devices, or by double-clicking on Apple Watch. In browsers, they can also pay using a nearby iPhone or Apple Watch, or by scanning a code with an iPhone or iPad.
 For developer guidance, see [Apple Pay](../passkit/apple-pay.md) and [Apple Pay on the Web](../applepayontheweb.md). For a hands-on demo of Apple Pay on the web, see [Apple Pay on the web interactive demo](https://applepaydemo.apple.com).
 
-> **Note:** Use [In-app purchase](in-app-purchase.md) to sell virtual goods in your app, such as premium content, and subscriptions for digital content.
+> **Note:** Use [Apple In-App Purchase](apple-in-app-purchase.md) to sell virtual goods in your app, such as premium content, and subscriptions for digital content.
 
 ## Offering Apple Pay
 **Offer Apple Pay on all devices and browsers that support it.** If the device doesn’t support Apple Pay, don’t present Apple Pay as a payment option. For developer guidance, see [PKPaymentAuthorizationController](../passkit/pkpaymentauthorizationcontroller.md) (iOS, watchOS) and [applePayCapabilities](../applepayontheweb/applepaysession/applepaycapabilities.md) (web).

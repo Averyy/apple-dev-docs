@@ -11,7 +11,7 @@ The value that configures positioning for vessels on water, including while anch
 - Mac Catalyst 27.0+
 - macOS 27.0+
 - tvOS 27.0+
-- visionOS 1.0+
+- visionOS 27.0+
 - watchOS 27.0+
 
 ## Declaration

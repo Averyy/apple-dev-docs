@@ -26,6 +26,7 @@ enum MTRTransportType
 - [MTRTransportType.UDP](mtrtransporttype/udp.md)
 - [MTRTransportType.undefined](mtrtransporttype/undefined.md)
 - [MTRTransportType.NFC](mtrtransporttype/nfc.md)
+- [MTRTransportType.proxy](mtrtransporttype/proxy.md)
 - [MTRTransportType.threadMeshcop](mtrtransporttype/threadmeshcop.md)
 - [MTRTransportType.wiFiPAF](mtrtransporttype/wifipaf.md)
 ### Initializers

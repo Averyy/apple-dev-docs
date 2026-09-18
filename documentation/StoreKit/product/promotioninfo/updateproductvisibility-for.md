@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: method
 
-Updates a value that indicates whether a promoted in-app purchase appears in the App Store on the user’s device.
+Updates a value that indicates whether a promoted Apple In-App Purchase appears in the App Store on the user’s device.
 
 **Availability**:
 - iOS 16.4+
@@ -18,11 +18,11 @@ static func updateProductVisibility(_ visibility: Product.PromotionInfo.Visibili
 
 ## Mentions
 
-- [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 
-Call this method to change the visibility setting for a promoted in-app purchase. Changes take effect after you call this method.
+Call this method to change the visibility setting for a promoted Apple In-App Purchase. Changes take effect after you call this method.
 
 The following code example updates a promoted product’s visibility after the user purchases it. The purchased product is hidden to avoid showing it again on the device.
 
@@ -40,13 +40,13 @@ catch {
 
 ## Parameters
 
-- `visibility`: A visibility value of [`Product.PromotionInfo.Visibility`](product/promotioninfo/visibility-swift.enum.md) that determines whether a promoted in-app purchase appears in the App Store on the user’s device.
-- `productID`: The product identifier of the promoted in-app purchase.
+- `visibility`: A visibility value of [`Product.PromotionInfo.Visibility`](product/promotioninfo/visibility-swift.enum.md) that determines whether a promoted Apple In-App Purchase appears in the App Store on the user’s device.
+- `productID`: The product identifier of the promoted Apple In-App Purchase.
 
 ## See Also
 
 - [var visibility: Product.PromotionInfo.Visibility](product/promotioninfo/visibility-swift.property.md)
-  A value that indicates whether the promoted in-app purchase is visible or hidden on the user’s device.
+  A value that indicates whether the promoted Apple In-App Purchase is visible or hidden on the user’s device.
 - [Product.PromotionInfo.Visibility](product/promotioninfo/visibility-swift.enum.md)
   The visibility states for product promotion information.
 

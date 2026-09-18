@@ -106,9 +106,9 @@ You can further customize the subscription store’s appearance using control st
 ## See Also
 
 - [struct ProductView](productview.md)
-  A view that merchandises an individual In-App Purchase product.
+  A view that merchandises an individual Apple In-App Purchase product.
 - [struct StoreView](storeview.md)
-  A view that merchandises a collection of In-App Purchase products.
+  A view that merchandises a collection of Apple In-App Purchase products.
 - [struct SubscriptionOfferView](subscriptionofferview.md)
 - [Backyard Birds: Building an app with SwiftData and widgets](../swiftui/backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.

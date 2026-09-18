@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: init
 
-Initializes a map template item wrapping an array of @c CPRouteDetail objects.
+Creates a map panel item with route details.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +15,19 @@ Initializes a map template item wrapping an array of @c CPRouteDetail objects.
 ```swift
 init(routeDetails: [CPRouteDetail], handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
 ```
+
+#### Return Value
+
+A map panel item initialized with route details.
+
+#### Discussion
+
+For this type of item, the map panel displays up to four route details per item.
+
+## Parameters
+
+- `routeDetails`: The route detail that helps someone make an informed decision about their journey.
+- `handler`: A closure you use to respond when someone taps or selects the item. The closure takes the map panel item as a parameter and returns no value. Specify `nil` if you don’t want to respond to interactions with the item.
 
 
 ---

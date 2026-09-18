@@ -121,6 +121,7 @@ To get started with a basic layout, see [`Layout fundamentals`](layout-fundament
 - [enum LayoutDirection](layoutdirection.md)
   A direction in which SwiftUI can lay out content.
 - [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
+  A layout that rotates the space containing a view.
 ### Reacting to interface characteristics
 - [var isLuminanceReduced: Bool](environmentvalues/isluminancereduced.md)
   A Boolean value that indicates whether the display or environment currently requires reduced luminance.

@@ -4,6 +4,8 @@
 **Kind**: method  
 **Required**: Yes
 
+Returns the handle for a function that you can add to a function table.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -18,9 +20,18 @@
 func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?
 ```
 
+#### Return Value
+
+A function handle if the method succeeds, otherwise `nil`.
+
 #### Discussion
 
-Returns the function handle for a function that was compiled with MTLFunctionOptionPipelineIndependent and MTLFunctionOptionCompileToBinary.
+- [`compileToBinary`](mtlfunctionoptions/compiletobinary.md)
+- [`pipelineIndependent`](mtlfunctionoptions/pipelineindependent.md)
+
+## Parameters
+
+- `function`: A function that the Metal compiler created with both of the following settings:
 
 
 ---

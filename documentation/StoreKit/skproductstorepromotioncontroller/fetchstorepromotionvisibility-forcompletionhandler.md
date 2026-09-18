@@ -20,7 +20,7 @@ func promotionVisibility(for product: SKProduct) async throws -> SKProductStoreP
 
 ## Mentions
 
-- [Promoting In-App Purchases](promoting-in-app-purchases.md)
+- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
 
 #### Discussion
 
@@ -31,7 +31,7 @@ The default visibility for a promoted product is set in App Store Connect. Call 
 - [func update(storePromotionVisibility: SKProductStorePromotionVisibility, for: SKProduct, completionHandler: (((any Error)?) -> Void)?)](skproductstorepromotioncontroller/update(storepromotionvisibility:for:completionhandler:).md)
   Updates the visibility of the product on the App Store, per device.
 - [enum SKProductStorePromotionVisibility](skproductstorepromotionvisibility.md)
-  The visibility settings that determine if an in-app purchase is visible on a device.
+  The visibility settings that determine if an Apple In-App Purchase is visible on a device.
 
 
 ---

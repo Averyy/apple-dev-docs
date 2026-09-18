@@ -22,7 +22,7 @@ static let purchase: Transaction.Reason
 
 #### Discussion
 
-The customer initiated the purchase, which may be for any in-app purchase type: consumable, non-consumable, non-renewing subscription, or auto-renewable subscription.
+The customer initiated the purchase, which may be for any Apple In-App Purchase type: consumable, non-consumable, non-renewing subscription, or auto-renewable subscription.
 
 ## See Also
 

@@ -891,6 +891,11 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: The Simulator might display a black wallpaper and blank app icons temporarily during first boot. (179746601)
 
+## See Also
+
+- [iOS & iPadOS 27.2 Beta Release Notes](ios-ipados-27_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+
 
 ---
 

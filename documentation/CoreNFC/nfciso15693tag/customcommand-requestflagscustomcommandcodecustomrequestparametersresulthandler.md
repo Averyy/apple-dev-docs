@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func customCommand(requestFlags flags: NFCISO15693RequestFlag, customCommandCode: Int, customRequestParameters: Data, resultHandler: @escaping (Result<Data, any Error>) -> Void)
+@preconcurrency
+func customCommand(requestFlags flags: NFCISO15693RequestFlag, customCommandCode: Int, customRequestParameters: Data, resultHandler: @escaping @Sendable (Result<Data, any Error>) -> Void)
 ```
 
 

@@ -6,7 +6,7 @@
 An `IOUserVideoBooleanControl` where true means that the listenback channel is audible.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

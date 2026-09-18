@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
+Creates an action that appends argument text to the tool call.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -17,9 +19,15 @@
 static func appendArguments(_ content: String, tokenCount: Int) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action
 ```
 
+## Parameters
+
+- `content`: The argument text to append to the tool call.
+- `tokenCount`: The number of the tokens the argument text carries.
+
 ## See Also
 
 - [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct/updatemetadata(_:).md)
+  Creates an action that replaces the metadata for a tool call.
 
 
 ---

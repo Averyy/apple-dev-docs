@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func sendFeliCaCommand(commandPacket: Data, resultHandler: @escaping (Result<Data, any Error>) -> Void)
+@preconcurrency
+func sendFeliCaCommand(commandPacket: Data, resultHandler: @escaping @Sendable (Result<Data, any Error>) -> Void)
 ```
 
 

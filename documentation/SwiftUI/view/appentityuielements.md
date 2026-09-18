@@ -117,7 +117,7 @@ For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligen
 - [func appEntityIdentifier<I>(forSelectionType: I.Type, identifier: (I) -> EntityIdentifier?) -> some View](view/appentityidentifier(forselectiontype:identifier:).md)
   Associates the items in a SwiftUI list view with app entities to make them discoverable by Apple Intelligence and Siri.
 - [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](view/onappintentexecution(_:perform:).md)
-  Registers a handler to invoke in response to the specified app intent that your app receives.
+  Registers a handler to run when the app receives an app intent that targets the associated scene.
 - [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](view/shortcutslinkstyle(_:).md)
   Sets the given style for ShortcutsLinks within the view hierarchy
 - [func siriTipViewStyle(SiriTipViewStyle) -> some View](view/siritipviewstyle(_:).md)

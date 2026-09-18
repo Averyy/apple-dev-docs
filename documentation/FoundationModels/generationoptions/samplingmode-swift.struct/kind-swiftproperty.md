@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The strategy this sampling mode uses to choose the next token.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,6 +22,7 @@ let kind: GenerationOptions.SamplingMode.Kind
 ## See Also
 
 - [GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.enum.md)
+  A representation of the different strategies for choosing the next token.
 
 
 ---

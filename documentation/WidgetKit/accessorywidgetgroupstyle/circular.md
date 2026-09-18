@@ -14,6 +14,13 @@ Masks each content view with a circle.
 static let circular: AccessoryWidgetGroupStyle
 ```
 
+## See Also
+
+- [static let automatic: AccessoryWidgetGroupStyle](accessorywidgetgroupstyle/automatic.md)
+  The default style that is set to circular.
+- [static let roundedSquare: AccessoryWidgetGroupStyle](accessorywidgetgroupstyle/roundedsquare.md)
+  Masks each content view with a rounded square.
+
 
 ---
 

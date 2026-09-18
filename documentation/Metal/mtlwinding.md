@@ -60,7 +60,7 @@ enum MTLWinding
 - [enum MTLVisibilityResultMode](mtlvisibilityresultmode.md)
   The mode that determines what, if anything, the GPU writes to the results buffer, after the GPU executes the render pass.
 - [enum MTLVisibilityResultType](mtlvisibilityresulttype.md)
-  This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
+  Actions for visibility results between render passes.
 
 
 ---

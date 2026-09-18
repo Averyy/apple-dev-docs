@@ -28,7 +28,7 @@ static func maximumCount<Element>(_ count: Int) -> GenerationGuide<[Element]> wh
 
 The bounds are inclusive.
 
-A `maximumCount` generation guide may be used when you want to ensure the model produces a number of array elements less than or equal to to some maximum value, such as the number of items in a game’s shop.
+A `maximumCount` generation guide may be used when you want to ensure the model produces a number of array elements less than or equal to some maximum value, such as the number of items in a game’s shop.
 
 ```swift
 @Generable

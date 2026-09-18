@@ -51,11 +51,6 @@ Manage the configuration of new scenes from your [`UIApplicationDelegate`](uiapp
 - [class UISceneClosureConfirmation](uisceneclosureconfirmation.md)
   A configuration specifying a confirmation dialog that will be shown before a user action will result in destruction of the scene session and the disconnection of the scene.
 ### Scene accessories
-- [class UISceneAccessory](uisceneaccessory.md)
-  A type which can be used to register for a specific type of scene accessory presentation.
-- [class UISceneAccessoryRegistration](uisceneaccessoryregistration.md)
-  A type which represents the registration for a given scene accessory.
-### Scene accessories
 - [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
 - [class UISceneAccessory](uisceneaccessory.md)

@@ -393,9 +393,16 @@ override func viewDidLoad() {
   A Boolean value that determines whether the view’s autoresizing mask converts to Auto Layout constraints.
 ### Accessing insets and layout guides
 - [UIView.LayoutRegion](uiview/layoutregion.md)
+- [static func bar(onEdge: NSDirectionalRectEdge, extent: CGFloat) -> UIView.LayoutRegion](uiview/layoutregion/bar(onedge:extent:)-2tj1g.md)
+- [static func bar(onEdge: UIRectEdge, extent: CGFloat) -> UIView.LayoutRegion](uiview/layoutregion/bar(onedge:extent:)-8rmhq.md)
 - [func directionalEdgeInsets(for: UIView.LayoutRegion) -> NSDirectionalEdgeInsets](uiview/directionaledgeinsets(for:).md)
 - [func edgeInsets(for: UIView.LayoutRegion) -> UIEdgeInsets](uiview/edgeinsets(for:).md)
 - [func layoutGuide(for: UIView.LayoutRegion) -> UILayoutGuide](uiview/layoutguide(for:).md)
+### Inspecting reserved regions
+- [UIView.ReservedRegion](uiview/reservedregion.md)
+  A region within a view’s coordinate space that another entity occupies.
+- [func reservedRegions(kind: UIView.ReservedRegion.Kind, options: UIView.ReservedRegion.QueryOptions) -> [UIView.ReservedRegion]](uiview/reservedregions(kind:options:).md)
+  Returns the reserved regions of a given kind and options.
 ### Adjusting the user interface
 - [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiview/overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.

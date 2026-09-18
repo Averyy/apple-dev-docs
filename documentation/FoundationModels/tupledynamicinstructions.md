@@ -33,6 +33,7 @@ struct TupleDynamicInstructions<each Content> where repeat each Content : Dynami
 ## See Also
 
 - [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+  A result builder that combines tools and other content into dynamic instructions.
 - [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
   An empty dynamic instructions type.
 - [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)

@@ -22,7 +22,7 @@ The configuration and content of a widget to display on the Home screen or in No
 
 #### Overview
 
-Widgets show glanceable and relevant content from your app right on the iOS Home screen or in Notification Center on macOS. Users can add, configure, and arrange widgets to suit their individual needs. You can provide multiple types of widgets, each presenting a specific kind of information. When users want more information, like to read the full article for a headline or to see the details of a package delivery, the widget lets them get to the information in your app quickly.
+Widgets show glanceable and relevant content from your app right on the iOS Home screen or desktop on macOS. People can add, configure, and arrange widgets to suit their individual needs. You can provide multiple types of widgets, each presenting a specific kind of information. When people want more information, like to read the full article for a headline or to see the details of a package delivery, the widget lets them get to the information in your app quickly.
 
 There are three key components to a widget:
 
@@ -32,7 +32,7 @@ There are three key components to a widget:
 
 For information about adding a widget extension to your app, and keeping your widget up to date, see [`Creating a widget extension`](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension) and [`Keeping a widget up to date`](https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date), respectively.
 
-By adding a custom SiriKit intent definition, you can let users customize their widgets to show the information that’s most relevant to them. If you’ve already added support for Siri or Shortcuts, you’re well on your way to supporting customizable widgets. For more information, see [`Making a configurable widget`](https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget).
+By adding custom app intent types that conform to [`WidgetConfigurationIntent`](https://developer.apple.com/documentation/appintents/widgetconfigurationintent), you can let people customize their widgets to show the information that’s most relevant to them. If you’ve already added support for Siri or Shortcuts, you’re well on your way to supporting customizable widgets. For more information, see [`Making a configurable widget`](https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget).
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 

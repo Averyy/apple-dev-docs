@@ -8,6 +8,17 @@ Learn about new features and updates in the Apple School Manager and Apple Busin
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Apple School Manager and Apple Business APIs.
 
+##### 25 Apple Business 2026915
+
+##### 17 Apple School Manager 2026915
+
+New features for the Apple School Manager and Apple Business APIs
+
+Added support for retrieving a device’s Activation Lock status:
+
+- [`Apple School Manager: Get the Activation Lock Status for a Device.`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/get-the-activation-lock-status-information-for-an-orgdevice)
+- [`Apple Business: Get the Activation Lock Status for a Device.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-the-activation-lock-status-information-for-an-orgdevice)
+
 ##### 24 Apple Business 2026826
 
 New features for the Apple Business APIs

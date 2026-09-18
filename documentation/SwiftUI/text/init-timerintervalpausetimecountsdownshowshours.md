@@ -30,6 +30,8 @@ Text(
 
 The example above shows a text that displays a timer counting down from “12:00” and will pause when reaching “10:00”.
 
+> **Note**: In a widget, this `Text` becomes horizontally flexible and expands to fill the available width, because its content keeps changing as the timer counts. Widgets can’t perform layout again after the system archives them, so the text can’t measure itself against its eventual content without risking clipping. If you want to constrain the width, apply a [`frame(width:height:alignment:)`](view/frame(width:height:alignment:).md) modifier, and use [`multilineTextAlignment(_:)`](view/multilinetextalignment(_:).md) to align the text within that frame.
+
 ## Parameters
 
 - `timerInterval`: The interval between where to run the timer.

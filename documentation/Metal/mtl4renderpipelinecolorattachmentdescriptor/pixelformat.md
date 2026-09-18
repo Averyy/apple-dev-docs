@@ -21,7 +21,7 @@ var pixelFormat: MTLPixelFormat { get set }
 
 #### Discussion
 
-This property defaults to `MTLPixelFormatInvalid`.
+This property defaults to [`MTLPixelFormat.invalid`](mtlpixelformat/invalid.md).
 
 
 ---

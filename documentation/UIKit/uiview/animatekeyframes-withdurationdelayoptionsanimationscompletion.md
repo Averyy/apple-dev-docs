@@ -15,7 +15,7 @@ Creates an animation block object that can be used to set up keyframe-based anim
 ## Declaration
 
 ```swift
-class func animateKeyframes(withDuration duration: TimeInterval, delay: TimeInterval, options: UIView.KeyframeAnimationOptions = [], animations: @escaping () -> Void) async -> Bool
+class func animateKeyframes(withDuration duration: TimeInterval, delay: TimeInterval, options: UIView.KeyframeAnimationOptions = [], animations: () -> Void) async -> Bool
 ```
 
 #### Discussion

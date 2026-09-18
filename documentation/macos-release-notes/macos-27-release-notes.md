@@ -832,6 +832,11 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: Clicking on X11 windows while XQuartz is in the background does not activate the XQuartz application. (180761569)
 
+## See Also
+
+- [macOS 27.2 Golden Gate Beta Release Notes](macos-27_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+
 
 ---
 

@@ -124,6 +124,10 @@ You can also use the [`playInputClick()`](uidevice/playinputclick().md) instance
 
 - [class UIStatusBarManager](uistatusbarmanager.md)
   An object that describes the configuration of the status bar.
+- [class UIHinge](uihinge.md)
+  An object encapsulating the state of a single hinge.
+- [class UIHingeInteraction](uihingeinteraction.md)
+  An interaction for observing the hinge state associated with the view’s hierarchy.
 
 
 ---

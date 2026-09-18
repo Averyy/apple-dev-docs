@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The date after which retrying is likely to succeed, if known.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -20,7 +22,9 @@ var resetDate: Date?
 ## See Also
 
 - [var metadata: [String : any Sendable]](languagemodelerror/ratelimited/metadata.md)
+  Additional information about the failure, keyed by name.
 - [var debugDescription: String](languagemodelerror/ratelimited/debugdescription.md)
+  A debug description to help developers diagnose issues during development.
 
 
 ---

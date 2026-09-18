@@ -24,6 +24,7 @@ nonisolated init<C, S>(_ title: S, systemImage: String, @ContentBuilder content:
 
 - `title`: A string that describes the contents of the group.
 - `systemImage`: The name of the image resource to lookup.
+- `content`: The content to display.
 
 ## See Also
 

@@ -23,6 +23,7 @@ struct Output
 
 ### Creating an output instance
 - [init(totalTokenCount: Int, reasoningTokenCount: Int)](languagemodelexecutorgenerationchannel/usage/output-swift.struct/init(totaltokencount:reasoningtokencount:).md)
+  Creates output token counts for the response the model produces.
 ### Handling the output tokens
 - [var totalTokenCount: Int](languagemodelexecutorgenerationchannel/usage/output-swift.struct/totaltokencount.md)
   The total number of output tokens.

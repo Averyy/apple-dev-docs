@@ -24,6 +24,7 @@ struct LayoutKey
 
 ### Structures
 - [Text.LayoutKey.AnchoredLayout](text/layoutkey/anchoredlayout.md)
+  The layout of one text view, together with an anchor for the position of that view.
 
 ## Relationships
 

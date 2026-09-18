@@ -89,6 +89,8 @@ When people place an iPhone widget on a Mac desktop, the system renders it using
   Values that define the widget’s size and shape.
 - [struct StaticConfiguration](staticconfiguration.md)
   An object describing the content of a widget that has no user-configurable options.
+- [var widgetFamily: WidgetFamily](../swiftui/environmentvalues/widgetfamily.md)
+  The template of the widget — small, medium, or large.
 
 
 ---

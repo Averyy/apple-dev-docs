@@ -42,12 +42,12 @@ This protocol includes a method that lets your app determine whether to continue
 
 - [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
   Enable your app to receive and handle transactions by adding an observer.
-- [Offering, completing, and restoring in-app purchases](offering-completing-and-restoring-in-app-purchases.md)
+- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
 - [class SKPaymentQueue](skpaymentqueue.md)
   A queue of payment transactions for the App Store to process.
 - [protocol SKPaymentTransactionObserver](skpaymenttransactionobserver.md)
-  A set of methods that process transactions, unlock purchased functionality, and continue promoted In-App Purchases.
+  A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
 - [class SKRequest](skrequest.md)
   An abstract class that represents a request to the App Store.
 

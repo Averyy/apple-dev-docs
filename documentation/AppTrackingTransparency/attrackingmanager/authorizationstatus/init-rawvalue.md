@@ -3,6 +3,8 @@
 **Framework**: App Tracking Transparency  
 **Kind**: init
 
+Initializes an authorization status.
+
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+

@@ -22,6 +22,30 @@ enum DynamicTypeSize
 
 #### Overview
 
+Read this value from the environment to adapt a layout to the text size someone chooses in system settings. The sizes are ordered, so you can compare them to find out how much room the text needs.
+
+```swift
+struct BatteryLabel: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+
+    var body: some View {
+        if dynamicTypeSize >= .accessibility1 {
+            VStack {
+                BatteryIcon()
+                Text("Charging")
+            }
+        } else {
+            HStack {
+                BatteryIcon()
+                Text("Charging")
+            }
+        }
+    }
+}
+```
+
+The five sizes whose names begin with `accessibility` are much larger than the rest. Check [`isAccessibilitySize`](dynamictypesize/isaccessibilitysize.md) when you want to change a layout for those sizes without comparing sizes yourself.
+
 For more information, see [`Typography`](https://developer.apple.com/design/human-interface-guidelines/typography) in the Human Interface Guidelines.
 
 ## Topics

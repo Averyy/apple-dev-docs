@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Per-output material overrides, keyed by output node identifier.
+The material used to render each graph output, keyed by output node identifier.
 
 **Availability**:
 - iOS 27.0+
@@ -20,7 +20,7 @@ var materials: [ComputeNodeGraph.NodeID : any Material] { get set }
 
 #### Discussion
 
-When non-`nil`, these materials replace the corresponding materials defined in [`resource`](computegraphcomponent/resource.md). Set to `[:]` to restore resource-defined materials.
+Assigning a [`resource`](computegraphcomponent/resource.md) initializes this dictionary from the materials the resource defines for its outputs. Assign a new value to replace them.
 
 
 ---

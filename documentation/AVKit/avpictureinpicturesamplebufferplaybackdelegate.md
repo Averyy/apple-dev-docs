@@ -21,7 +21,7 @@ protocol AVPictureInPictureSampleBufferPlaybackDelegate : NSObjectProtocol
 
 ## Topics
 
-### Responding to Playback Events
+### Responding to playback events
 - [func pictureInPictureController(AVPictureInPictureController, setPlaying: Bool)](avpictureinpicturesamplebufferplaybackdelegate/pictureinpicturecontroller(_:setplaying:).md)
   Tells the delegate that the user requested to begin or pause playback.
 - [func pictureInPictureControllerTimeRangeForPlayback(AVPictureInPictureController) -> CMTimeRange](avpictureinpicturesamplebufferplaybackdelegate/pictureinpicturecontrollertimerangeforplayback(_:).md)
@@ -42,8 +42,22 @@ protocol AVPictureInPictureSampleBufferPlaybackDelegate : NSObjectProtocol
 
 ## See Also
 
-- [var sampleBufferPlaybackDelegate: (any AVPictureInPictureSampleBufferPlaybackDelegate)?](avpictureinpicturecontroller/contentsource-swift.class/samplebufferplaybackdelegate.md)
-  A delegate object that responds to sample buffer playback events.
+- [Adopting Picture in Picture in a standard player](adopting-picture-in-picture-in-a-standard-player.md)
+  Add Picture in Picture (PiP) playback to your app using a player view controller.
+- [Adopting Picture in Picture in a custom player](adopting-picture-in-picture-in-a-custom-player.md)
+  Add controls to your custom player user interface to invoke Picture in Picture (PiP) playback.
+- [Adopting Picture in Picture for video calls](adopting-picture-in-picture-for-video-calls.md)
+  Add multitasking capability to your video-call apps by using Picture in Picture (PiP).
+- [Adopting Picture in Picture playback in tvOS](adopting-picture-in-picture-playback-in-tvos.md)
+  Add advanced multitasking capabilities to your video apps by using Picture in Picture playback in tvOS.
+- [class AVPictureInPictureController](avpictureinpicturecontroller.md)
+  A controller that responds to user-initiated Picture in Picture playback of video in a floating, resizable window.
+- [protocol AVPictureInPictureControllerDelegate](avpictureinpicturecontrollerdelegate.md)
+  A protocol to adopt to respond to Picture in Picture events.
+- [class AVPictureInPictureVideoCallViewController](avpictureinpicturevideocallviewcontroller.md)
+  A view controller that presents content from a video call in Picture in Picture.
+- [protocol AVPlayerViewPictureInPictureDelegate](avplayerviewpictureinpicturedelegate.md)
+  A protocol that defines the methods to implement to respond to Picture in Picture playback events.
 
 
 ---

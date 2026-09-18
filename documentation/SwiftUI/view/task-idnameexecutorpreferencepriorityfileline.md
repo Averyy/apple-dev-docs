@@ -74,6 +74,7 @@ The task attached to the [`Text`](text.md) view gets and displays the status val
 
 - `id`: The value to observe for changes. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
 - `name`: Human readable name for the task. A name will be generated if this argument is `nil`.
+- `taskExecutor`: The task executor that the child task should be started on and keep using.
 - `priority`: The task priority to use when creating the asynchronous task. The default priority is [`userInitiated`](https://developer.apple.com/documentation/swift/taskpriority/userinitiated).
 - `file`: File name used in default task name. SwiftUI uses the callsite of .task by default.
 - `line`: Line number used in default task name. SwiftUI uses the callsite of .task by default.

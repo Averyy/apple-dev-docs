@@ -35,6 +35,7 @@ struct EmptyDynamicInstructions
 ## See Also
 
 - [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+  A result builder that combines tools and other content into dynamic instructions.
 - [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
   A dynamic instructions type that conditionally selects between two conditions.
 - [struct AnyDynamicInstructions](anydynamicinstructions.md)

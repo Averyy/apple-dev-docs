@@ -45,6 +45,7 @@ SwiftUI performs the action for the specified event phases.
 - [func onKeyPress(keys: Set<KeyEquivalent>, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](view/onkeypress(keys:phases:action:).md)
   Performs an action if the user presses one or more keys on a hardware keyboard while the view has focus.
 - [struct KeyPress](keypress.md)
+  A hardware keyboard event that a focused view receives.
 
 
 ---

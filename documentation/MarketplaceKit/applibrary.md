@@ -26,11 +26,17 @@ final class AppLibrary
 
 Alternative app marketplaces call methods of this class to retrieve the set of currently installed apps, to request the installation of available apps, or to update the license for a specific app. Browser apps that use an alternative browser engine make a call to this class to install alternative app marketplaces from a webpage. You can also customize Spotlight search results and manage age-rating exception requests to install apps with an age rating beyond the maximum allowed for the device.
 
+#### Perform App Installation
+
+To install apps with this class, the system requires the following criteria:
+
+- **[`requestAppInstallation(_:)`](applibrary/requestappinstallation(_:).md)**: Your app needs to have the [`com.apple.developer.marketplace.app-installation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.marketplace.app-installation) entitlement.
+- **[`requestAppInstallationFromBrowser(for:referrer:)`](applibrary/requestappinstallationfrombrowser(for:referrer:).md)**: Your app needs to have the [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.browser.app-installation) entitlement.
+- **[`requestInlineAppInstallation(_:subjectToken:)`](applibrary/requestinlineappinstallation(_:subjecttoken:).md)**: The app to install must be from the same developer account as the one that distributes the app that calls the method. The app to install also needs to be owned or controlled by you.
+
 #### Observe Runtime Changes
 
 The class is observable (through [`SwiftUI`](https://developer.apple.com/documentation/swiftui) or the [`Observation`](https://developer.apple.com/documentation/observation) framework), so you can provide reactive updates when finishing, installing, updating, or loading (see [`isLoading`](applibrary/isloading.md)).
-
-> ❗ **Important**: iOS ignores calls to this class for apps that lack one of the required entitlements: [`com.apple.developer.marketplace.app-installation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.marketplace.app-installation), or [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.browser.app-installation).
 
 ## Topics
 
@@ -38,8 +44,8 @@ The class is observable (through [`SwiftUI`](https://developer.apple.com/documen
 - [static let current: AppLibrary](applibrary/current.md)
   A global accessor for the device’s app library instance.
 - [func didAuthenticate(account: String) async](applibrary/didauthenticate(account:).md)
-  Instructs iOS to reinstall an app after a required reuthorization completes.
-### Managing app installation
+  Instructs the system to reinstall an app after a required reuthorization completes.
+### Installing apps as a marketplace
 - [AppLibrary.App](applibrary/app.md)
   Information about an app that someone installs from a marketplace, including its ID and installation status.
 - [AppLibrary.InstallationRequest](applibrary/installationrequest.md)
@@ -50,8 +56,12 @@ The class is observable (through [`SwiftUI`](https://developer.apple.com/documen
   A Boolean value that indicates whether the library is currently loading apps.
 - [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](applibrary/requestappinstallation(_:).md)
   Requests the installation of the given app distribution package for the given account.
+### Installing apps as a web browser
 - [func requestAppInstallationFromBrowser(for: URL, referrer: URL) async throws](applibrary/requestappinstallationfrombrowser(for:referrer:).md)
   Forwards an app installation request from the developer’s webpage.
+### Installing web-distributed apps from your app
+- [func requestInlineAppInstallation(AppLibrary.InstallationRequest, subjectToken: String?) async throws](applibrary/requestinlineappinstallation(_:subjecttoken:).md)
+  Requests the installation of a web-distributed app that you also distribute.
 ### Accessing installed apps
 - [func app(forAppleItemID: AppleItemID) -> AppLibrary.App](applibrary/app(forappleitemid:).md)
   Provides the app for the given app identifier.
@@ -68,12 +78,12 @@ The class is observable (through [`SwiftUI`](https://developer.apple.com/documen
 - [var searchTerritory: String?](applibrary/searchterritory.md)
   A country code that the framework uses to filter the search results of apps that aren’t available in that country.
 - [func setSearchTerritory(String?) async](applibrary/setsearchterritory(_:).md)
-  Defines a country code that iOS uses to filter the search results of apps that aren’t available in that country.
+  Defines a country code that the system uses to filter the search results of apps that aren’t available in that country.
 ### Updating apps
 - [func requestAppUpdate(AppLibrary.InstallationRequest) async throws](applibrary/requestappupdate(_:).md)
   Requests an app update for the given app distribution package and account information.
 - [func requestLicenseRenewal(appleItemIDs: [UInt64]) async throws](applibrary/requestlicenserenewal(appleitemids:).md)
-  Instructs iOS to request an updated app license from your marketplace server for the given app identifier.
+  Instructs the system to request an updated app license from your marketplace server for the given app identifier.
 ### Determining device region
 - [var catalogRegion: String?](applibrary/catalogregion.md)
   A country code for the device’s current region.

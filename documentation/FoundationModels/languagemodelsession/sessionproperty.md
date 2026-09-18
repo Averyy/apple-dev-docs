@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A property wrapper that provides access to properties from within profiles,  dynamic instructions, and tools.
+A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
 
 **Availability**:
 - iOS 27.0+

@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-The title of the section.
+The localized string to display for the section title.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +15,10 @@ The title of the section.
 ```swift
 var title: String? { get set }
 ```
+
+#### Discussion
+
+Set this property to `nil` if you don’t want to display a title for the section.
 
 
 ---

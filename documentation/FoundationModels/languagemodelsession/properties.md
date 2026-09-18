@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
+The values of the session’s managed properties.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+

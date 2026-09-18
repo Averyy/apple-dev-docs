@@ -3,6 +3,8 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
+Creates dynamic instructions that produce content for each element of a collection.
+
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
@@ -17,9 +19,20 @@
 init(_ data: Data, id: KeyPath<Data.Element, ID>, @DynamicInstructionsBuilder content: @escaping (Data.Element) -> Content)
 ```
 
+#### Discussion
+
+Don’t create this type directly. Instead, use [`DynamicInstructions.ForEach`](dynamicinstructions/foreach.md) within the `body` of your [`DynamicInstructions`](dynamicinstructions.md).
+
+## Parameters
+
+- `data`: The collection whose elements each produce content.
+- `id`: A key path to a property that uniquely identifies each element.
+- `content`: A builder closure that produces the dynamic instructions for an element.
+
 ## See Also
 
 - [init(Data, content: (Data.Element) -> Content)](dynamicinstructionsforeach/init(_:content:).md)
+  Creates dynamic instructions that produce content for each element of an identifiable collection.
 
 
 ---

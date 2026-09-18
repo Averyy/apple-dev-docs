@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-A product view style suitable for layouts where the in-app purchase content is prominent.
+A product view style suitable for layouts where the Apple In-App Purchase content is prominent.
 
 **Availability**:
 - iOS 17.0+

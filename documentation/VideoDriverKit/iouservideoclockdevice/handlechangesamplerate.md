@@ -6,7 +6,7 @@
 The system calls this virtual method when the clock device’s sample rate changes.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

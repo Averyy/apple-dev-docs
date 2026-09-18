@@ -6,7 +6,7 @@
 A Boolean control where true means that mute is enabled, making that LFE element inaudible.
 
 **Availability**:
-- DriverKit 27.0+
+- DriverKit 27.0+ (Beta)
 
 ## Declaration
 

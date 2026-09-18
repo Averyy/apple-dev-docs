@@ -22,7 +22,7 @@ var originalTransactionIdentifier: Int { get }
 
 #### Discussion
 
-For subscription renewals, or if you restore a purchase, the [`originalTransactionIdentifier`](sktesttransaction/originaltransactionidentifier.md) is the original transaction for that subscription or in-app purchase.
+For subscription renewals, or if you restore a purchase, the [`originalTransactionIdentifier`](sktesttransaction/originaltransactionidentifier.md) is the original transaction for that subscription or Apple In-App Purchase.
 
 ## See Also
 

@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-func requestSystemCode(resultHandler: @escaping (Result<[Data], any Error>) -> Void)
+@preconcurrency
+func requestSystemCode(resultHandler: @escaping @Sendable (Result<[Data], any Error>) -> Void)
 ```
 
 
