@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-18T07:39:12.119330",
+    "last_updated": "2026-09-22T07:41:35.717821",
     "total_pages": 154,
-    "session_id": "2026-09-18T07:39:02.012066"
+    "session_id": "2026-09-22T07:41:25.471326"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed.json": {
       "hash": "0c902f152ee16f50326c880b347117edc43778ca5f1b9bcf070687a2990a3e98",
-      "last_checked": "2026-09-18T07:39:02.223644",
+      "last_checked": "2026-09-22T07:41:25.720338",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"296d-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/appletvfeed.md"
     },
     "https://developer.apple.com/documentation/appletvfeed": {
       "hash": "0c902f152ee16f50326c880b347117edc43778ca5f1b9bcf070687a2990a3e98",
-      "last_checked": "2026-09-18T07:39:02.139472",
+      "last_checked": "2026-09-22T07:41:25.592282",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"296d-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/appletvfeed.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/generating-developer-tokens.json": {
       "hash": "18c5fb807787956ed810f566d1f9044f2b1a0a34a19f376849c5d432d1fbab17",
-      "last_checked": "2026-09-18T07:39:02.432601",
+      "last_checked": "2026-09-22T07:41:25.886730",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2711-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/generating-developer-tokens.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/requesting-a-feed-export.json": {
       "hash": "4fa4e4a0116294abc49748e306cb3e86e3210ec8815ff7d891489fa7a67dc4b1",
-      "last_checked": "2026-09-18T07:39:02.580232",
+      "last_checked": "2026-09-22T07:41:26.044565",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3ede-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/requesting-a-feed-export.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/interpreting-responses.json": {
       "hash": "3e04b6c890b03593974fa72ddd4a31eb9ad8aa25ca7f9f0cac5b0b282cdbe9d9",
-      "last_checked": "2026-09-18T07:39:02.689770",
+      "last_checked": "2026-09-22T07:41:26.162501",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"21af-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/interpreting-responses.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie.json": {
       "hash": "c483935818ebd374ac12ae3e6bea5ab8e44b3eff81c1c7dc7b7e7762be2222ff",
-      "last_checked": "2026-09-18T07:39:02.801470",
+      "last_checked": "2026-09-22T07:41:26.273834",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"480c-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode.json": {
       "hash": "c62ff7e5908be740f1e0b9073a9e538bf8b0023c3ade27694f0edb7b89fa74f3",
-      "last_checked": "2026-09-18T07:39:02.933903",
+      "last_checked": "2026-09-22T07:41:26.393434",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"485c-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvepisode.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason.json": {
       "hash": "ccc301b1a862560224e70b3d918018699792a0ca415ee903909c4f9f658f6f95",
-      "last_checked": "2026-09-18T07:39:03.058646",
+      "last_checked": "2026-09-22T07:41:26.505924",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"4537-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow.json": {
       "hash": "884d423bb0c58b6575e968074d14c663d716fb1611146feacecff2cb0d7976ca",
-      "last_checked": "2026-09-18T07:39:03.201277",
+      "last_checked": "2026-09-22T07:41:26.626990",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"440a-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent.json": {
       "hash": "cf8c4c34156f9bca747bb0d4c6741f35c9a428b3e7e4a6399504135785648945",
-      "last_checked": "2026-09-18T07:39:03.315883",
+      "last_checked": "2026-09-22T07:41:26.768507",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"639f-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/artworks-data.dictionary.json": {
       "hash": "74130e467220289807a0c1f3dac228db3eaa6c66fdbe53465467b34865adccfd",
-      "last_checked": "2026-09-18T07:39:03.448462",
+      "last_checked": "2026-09-22T07:41:26.908633",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2d7f-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/artworks-datadictionary.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/castandcrew-data.dictionary.json": {
       "hash": "2840ea4e91f6db0e01fcf943ba2404dbebf4cd661708af5764796dec27f0358b",
-      "last_checked": "2026-09-18T07:39:03.584520",
+      "last_checked": "2026-09-22T07:41:27.043500",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2f2d-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/castandcrew-datadictionary.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/description-data.dictionary.json": {
       "hash": "e7a6e819afe6116643accea442a08c5917cfdf196ae07a7fac8e324c3d4725ce",
-      "last_checked": "2026-09-18T07:39:03.747207",
+      "last_checked": "2026-09-22T07:41:27.168378",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"28dd-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/description-datadictionary.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/externalcontentid.json": {
       "hash": "02d00371da9d553e9ca6331d6a5385e99a98513333bec9d741c15bcb245144a0",
-      "last_checked": "2026-09-18T07:39:03.862785",
+      "last_checked": "2026-09-22T07:41:27.289328",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2a2f-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/externalcontentid.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/genre.json": {
       "hash": "1bc8e8d6ab0dc08f69c556a73d371d29dbc6e3438dcc304a351575de79a324d7",
-      "last_checked": "2026-09-18T07:39:03.979233",
+      "last_checked": "2026-09-22T07:41:27.413589",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"27a5-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/genre.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/name-data.dictionary.json": {
       "hash": "bd6d64c5daf0691bc8139f5634a8fc9c02a69f532e90531f870bee63233e2d19",
-      "last_checked": "2026-09-18T07:39:04.105546",
+      "last_checked": "2026-09-22T07:41:27.534780",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"27fa-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/name-datadictionary.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/originalreleasedate-data.dictionary.json": {
       "hash": "a25959305467e4e1d7ef55731a2b46bbf1390cb3da70a5198ee254d42935d083",
-      "last_checked": "2026-09-18T07:39:04.238416",
+      "last_checked": "2026-09-22T07:41:27.684900",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"287c-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/originalreleasedate-datadictionary.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/prices-data.dictionary.json": {
       "hash": "5a2fada8d581639d92e14647816b3088521670f60e8f2fe0a47977f7c9f104c2",
-      "last_checked": "2026-09-18T07:39:04.368206",
+      "last_checked": "2026-09-22T07:41:27.824368",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2c04-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/prices-datadictionary.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/rating-data.dictionary.json": {
       "hash": "c1e8c2f112b23c65a2c97b32eef558c80989f389ce3117fa565e4aed52446e08",
-      "last_checked": "2026-09-18T07:39:04.517506",
+      "last_checked": "2026-09-22T07:41:27.967629",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2c32-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/rating-datadictionary.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/url-data.dictionary.json": {
       "hash": "644fd5ed8ce6e0b2f557e3529d2a76f4d4ad701eb1acd3b3e86d3e03d38c97fe",
-      "last_checked": "2026-09-18T07:39:04.615765",
+      "last_checked": "2026-09-22T07:41:28.118170",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"27f2-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/url-datadictionary.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/artworks-data.dictionary.json": {
       "hash": "8a6b13ff3c17ea9683acc9e471b05ae339eebd2647945ddc7674600e3684bade",
-      "last_checked": "2026-09-18T07:39:04.754635",
+      "last_checked": "2026-09-22T07:41:28.232903",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2be9-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/artworks-datadictionary.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/castandcrew-data.dictionary.json": {
       "hash": "5ae60629f861391051f63fe012bcf658ec68616bd012033797d244f1329c2476",
-      "last_checked": "2026-09-18T07:39:04.870244",
+      "last_checked": "2026-09-22T07:41:28.353618",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2d97-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/castandcrew-datadictionary.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/description-data.dictionary.json": {
       "hash": "c824f445791a087658123873947d1169030b54abccbcc0b7135bb70d5d8bafdb",
-      "last_checked": "2026-09-18T07:39:04.997277",
+      "last_checked": "2026-09-22T07:41:28.500200",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2724-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/description-datadictionary.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/externalcontentid.json": {
       "hash": "f6545a3b7fa97dd7cee639845e02a61a45f20ffa5cea0537100604a1dade88d7",
-      "last_checked": "2026-09-18T07:39:05.106903",
+      "last_checked": "2026-09-22T07:41:28.641211",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2871-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/externalcontentid.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/genre.json": {
       "hash": "f9a0ec3efd147f7c47cf8fe97ccb3a4087d8a145e9ca11fee97310e8d1e1bef0",
-      "last_checked": "2026-09-18T07:39:05.246216",
+      "last_checked": "2026-09-22T07:41:28.778175",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"25e7-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/genre.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/name-data.dictionary.json": {
       "hash": "57f1eea991f4b0a9ee9a3e1f9858240e17090505525bd436765856ecd8bae50d",
-      "last_checked": "2026-09-18T07:39:05.373445",
+      "last_checked": "2026-09-22T07:41:28.904350",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2641-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/name-datadictionary.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/prices-data.dictionary.json": {
       "hash": "791eca60e853beddbfda19e196b31ae7ebf93ea038c43207d135d8fb8cbfad0a",
-      "last_checked": "2026-09-18T07:39:05.499238",
+      "last_checked": "2026-09-22T07:41:29.033753",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2a6e-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/prices-datadictionary.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/rating-data.dictionary.json": {
       "hash": "cbc9696cfeae35eadc20ad442438480c9fbccfa773549ab0b4f0a1d9ee275413",
-      "last_checked": "2026-09-18T07:39:05.649901",
+      "last_checked": "2026-09-22T07:41:29.175784",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2a74-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/rating-datadictionary.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/url-data.dictionary.json": {
       "hash": "4e9489d18e1116dbd069945c3532c2bfc2f3d7c5c502a020e2ad0b3a81baa21f",
-      "last_checked": "2026-09-18T07:39:05.770113",
+      "last_checked": "2026-09-22T07:41:29.308880",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2634-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/url-datadictionary.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/artworks-data.dictionary.json": {
       "hash": "58685aabb8c8d4570a48cf8baa85d2dae181fed41e2ac3a4bbd8443c42c9d331",
-      "last_checked": "2026-09-18T07:39:05.878131",
+      "last_checked": "2026-09-22T07:41:29.440378",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2b90-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/artworks-datadictionary.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/castandcrew-data.dictionary.json": {
       "hash": "30410115e8384c718e63ca2f4d468fc1fb7abe29ca14c049b33fc28e2dd53b6a",
-      "last_checked": "2026-09-18T07:39:06.012586",
+      "last_checked": "2026-09-22T07:41:29.560218",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2d3e-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/castandcrew-datadictionary.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/description-data.dictionary.json": {
       "hash": "6a1bbca557d610ccb1f403782513ea61508bc4b70d5a3621bf1f8e8c53c61b4f",
-      "last_checked": "2026-09-18T07:39:06.187014",
+      "last_checked": "2026-09-22T07:41:29.687424",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"26d4-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/description-datadictionary.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/externalcontentid.json": {
       "hash": "5a8028f614d3d5080268744a8f28e43f22ab633c9d55e97e4e991cc04a225bf5",
-      "last_checked": "2026-09-18T07:39:06.283107",
+      "last_checked": "2026-09-22T07:41:29.818122",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2822-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/externalcontentid.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/genre.json": {
       "hash": "9459e03b39978c42bb1c9ca38d105131e47aaabb9563b69b84a0668c03286833",
-      "last_checked": "2026-09-18T07:39:06.409706",
+      "last_checked": "2026-09-22T07:41:29.978548",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2598-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/genre.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/name-data.dictionary.json": {
       "hash": "fecdbeae19cbbb2f16351e8c1294b929249defef981abe3aea50d54faa28da2b",
-      "last_checked": "2026-09-18T07:39:06.540500",
+      "last_checked": "2026-09-22T07:41:30.085607",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"25f1-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/name-datadictionary.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/prices-data.dictionary.json": {
       "hash": "848b47aa8ebfcd89d31911687b8abe804969e34774e5c80ef1c6397a48c1e377",
-      "last_checked": "2026-09-18T07:39:06.649998",
+      "last_checked": "2026-09-22T07:41:30.237509",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2a15-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/prices-datadictionary.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/rating-data.dictionary.json": {
       "hash": "60efc434b1b2cf80a2fca38454ca54fd2906e3bb7bebb65666c24b5a4dba7407",
-      "last_checked": "2026-09-18T07:39:06.777814",
+      "last_checked": "2026-09-22T07:41:30.370431",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2a25-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/rating-datadictionary.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/url-data.dictionary.json": {
       "hash": "5d105631a02093ae6f7b0d3ed237f3eb52c8e19badecd8cc8fd6ef559673ff4b",
-      "last_checked": "2026-09-18T07:39:06.908995",
+      "last_checked": "2026-09-22T07:41:30.494581",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"25e5-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/url-datadictionary.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/artworks-data.dictionary.json": {
       "hash": "8a9db86c7cc5face2798a2a03ea8ad474816d4257c598cfa2aede6453a884145",
-      "last_checked": "2026-09-18T07:39:07.046777",
+      "last_checked": "2026-09-22T07:41:30.638359",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2ade-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/artworks-datadictionary.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/castandcrew-data.dictionary.json": {
       "hash": "bcf2c71c11c229694f6e6cd571c335f1d0751b4130693805a8c8a8b7b43b04bc",
-      "last_checked": "2026-09-18T07:39:07.161558",
+      "last_checked": "2026-09-22T07:41:30.746662",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2c8c-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/castandcrew-datadictionary.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/description-data.dictionary.json": {
       "hash": "281a22c0a63ae465699f40d9f9c26214f472e6a150039ab5b764db273f43fb0d",
-      "last_checked": "2026-09-18T07:39:07.286738",
+      "last_checked": "2026-09-22T07:41:30.869449",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2634-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/description-datadictionary.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/externalcontentid.json": {
       "hash": "b38499f0e84f4a64b9cde2f7761616368c304941a2076d53a2efd1f45f19b669",
-      "last_checked": "2026-09-18T07:39:07.418390",
+      "last_checked": "2026-09-22T07:41:31.015561",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2784-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/externalcontentid.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/genre.json": {
       "hash": "f603d78f693e7de5b453cafe50d4a0d4594f4fcde1e55e6014b9c4867a225608",
-      "last_checked": "2026-09-18T07:39:07.609395",
+      "last_checked": "2026-09-22T07:41:31.145850",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"24fa-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/genre.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/name-data.dictionary.json": {
       "hash": "087daa5ff6c3e32045b333c7832115edc3354c9e193e326e0d961a18238633cd",
-      "last_checked": "2026-09-18T07:39:07.712538",
+      "last_checked": "2026-09-22T07:41:31.267339",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2551-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/name-datadictionary.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/prices-data.dictionary.json": {
       "hash": "765b11916f712c8d3840e0fd9986274608753630c9b1a32603adb1cc4431cebe",
-      "last_checked": "2026-09-18T07:39:07.846105",
+      "last_checked": "2026-09-22T07:41:31.377733",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2963-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/prices-datadictionary.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/rating-data.dictionary.json": {
       "hash": "1292c98f940bf07e276ed089936534378e3ba81eef23435b106a9ed26a15a52e",
-      "last_checked": "2026-09-18T07:39:07.966240",
+      "last_checked": "2026-09-22T07:41:31.505671",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2987-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/rating-datadictionary.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/url-data.dictionary.json": {
       "hash": "9ba810539976437146dc593ed40fa4ef7bee7b90782efa81a73d2634150e32c4",
-      "last_checked": "2026-09-18T07:39:08.103645",
+      "last_checked": "2026-09-22T07:41:31.638515",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"2547-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/url-datadictionary.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/artworks-data.dictionary.json": {
       "hash": "dc57eacc845883ebf3711b15603a54cf9a10695fb9fa61bc5279d1d82a875d12",
-      "last_checked": "2026-09-18T07:39:08.236497",
+      "last_checked": "2026-09-22T07:41:31.752951",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3ff8-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/artworks-datadictionary.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/castandcrew-data.dictionary.json": {
       "hash": "95dad9c7dc50ffb68b5d85ce6d64cc5bd3fae80aacaf270a4291cef7a3bb2cfd",
-      "last_checked": "2026-09-18T07:39:08.364063",
+      "last_checked": "2026-09-22T07:41:31.878010",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"41a6-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/castandcrew-datadictionary.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/competitor.json": {
       "hash": "af2a3100f95faaebc184befe6a11a0e578f1dfc3c705384e0c1e66eef2d6decd",
-      "last_checked": "2026-09-18T07:39:08.472245",
+      "last_checked": "2026-09-22T07:41:32.013850",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3dd1-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/competitor.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/description-data.dictionary.json": {
       "hash": "03e17f162c5e62f1a55d969187bc3064b23bfabcd013bb460189aa673383f882",
-      "last_checked": "2026-09-18T07:39:08.585389",
+      "last_checked": "2026-09-22T07:41:32.143301",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3b0f-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/description-datadictionary.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/externalcontentid.json": {
       "hash": "8e06c72dd5327a93994b2057cb5a7c2fb73c269e01e7b1239f5d11c1f40635d5",
-      "last_checked": "2026-09-18T07:39:08.728589",
+      "last_checked": "2026-09-22T07:41:32.266671",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3c5c-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/externalcontentid.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/leagueabbreviation-data.dictionary.json": {
       "hash": "05386e5622b2585dbd34804005cd38f23390128cff3b420667a05c95825f9444",
-      "last_checked": "2026-09-18T07:39:08.851595",
+      "last_checked": "2026-09-22T07:41:32.399844",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3aab-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/leagueabbreviation-datadictionary.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/leaguename-data.dictionary.json": {
       "hash": "68f6821005ab14a5e603e56816296d2e5b6ee7ba3bfcf3b77ab607c389c9a383",
-      "last_checked": "2026-09-18T07:39:08.973853",
+      "last_checked": "2026-09-22T07:41:32.525771",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3a63-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/leaguename-datadictionary.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/name-data.dictionary.json": {
       "hash": "c16b30d1cc214f1f47f1a79acddb7b71548ede33de95e62c035575a475c70ba5",
-      "last_checked": "2026-09-18T07:39:09.097703",
+      "last_checked": "2026-09-22T07:41:32.637866",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3a2a-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/name-datadictionary.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/prices-data.dictionary.json": {
       "hash": "98c4df909d447558eb6a5d33fa8d32c4552d90d99436e656c24bbbe9ac90f069",
-      "last_checked": "2026-09-18T07:39:09.213945",
+      "last_checked": "2026-09-22T07:41:32.802843",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3e7d-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/prices-datadictionary.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/rating-data.dictionary.json": {
       "hash": "bc6fba1219c2ff12de33b831e927797fcb5443cf40387391ca48b25989c70d3c",
-      "last_checked": "2026-09-18T07:39:09.338593",
+      "last_checked": "2026-09-22T07:41:32.915477",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3e5b-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/rating-datadictionary.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/shortname-data.dictionary.json": {
       "hash": "406a9b40a06297f49befaf526e9fb19f3528e295c5765b1d8d8bb26f633f488e",
-      "last_checked": "2026-09-18T07:39:09.481471",
+      "last_checked": "2026-09-22T07:41:33.042555",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3a60-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/shortname-datadictionary.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/sportname-data.dictionary.json": {
       "hash": "5dcc80c2c95faab05cd668ba60fd16ebde84a71584c1320b14c77f19674b6918",
-      "last_checked": "2026-09-18T07:39:09.609809",
+      "last_checked": "2026-09-22T07:41:33.186259",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3a51-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/sportname-datadictionary.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/url-data.dictionary.json": {
       "hash": "0b2292e367c907452dc4a958e9eb50bd83f16d82769315a3679d5ac9d6aea4e4",
-      "last_checked": "2026-09-18T07:39:09.760900",
+      "last_checked": "2026-09-22T07:41:33.303897",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3a1b-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/url-datadictionary.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/venueaddress-data.dictionary.json": {
       "hash": "ff56401852f30828f1abe0708160ce7d8e48228ffb4fc432aa37bbf641c238fc",
-      "last_checked": "2026-09-18T07:39:09.874444",
+      "last_checked": "2026-09-22T07:41:33.438257",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3a66-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/venueaddress-datadictionary.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/venuename-data.dictionary.json": {
       "hash": "2b85a3601b27595ce79a18557c18d7940d102db37ad0fa6c90975519909cf12f",
-      "last_checked": "2026-09-18T07:39:09.994436",
+      "last_checked": "2026-09-22T07:41:33.558138",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"3a4a-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/venuename-datadictionary.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/artworks-data.dictionary/artwork-data.dictionary.json": {
       "hash": "fa7d6108a37dc78968b9ed49f0477343636f1eb672eebcbb9c60e6af9da2fa7b",
-      "last_checked": "2026-09-18T07:39:10.115170",
+      "last_checked": "2026-09-22T07:41:33.688904",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"14e2-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/artworks-data.dictionary/artwork-datadictionary.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/castandcrew-data.dictionary/name-data.dictionary.json": {
       "hash": "ef8dff0cb386f8c7af2d60d07745a623e2e0d151abf409dfb33d9aae9b2c13bb",
-      "last_checked": "2026-09-18T07:39:10.258067",
+      "last_checked": "2026-09-22T07:41:33.831116",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"133b-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/castandcrew-data.dictionary/name-datadictionary.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/prices-data.dictionary/price.json": {
       "hash": "6a89a274c4a1b406d4ff2d46f5603f4c82d2df83bb26a85034ab0ff7f4238c8e",
-      "last_checked": "2026-09-18T07:39:10.401308",
+      "last_checked": "2026-09-22T07:41:33.932446",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"13f6-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/movie/prices-data.dictionary/price.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-data.dictionary.json": {
       "hash": "e03e53e2215822add60fb81794a3733a96d515ca747e3e698191a809e870e4b1",
-      "last_checked": "2026-09-18T07:39:10.526329",
+      "last_checked": "2026-09-22T07:41:34.050676",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"1553-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-datadictionary.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-data.dictionary.json": {
       "hash": "949910f3d04891a4afde9731caf90946031a7fd4edfc8bba990da0b9b9df13b2",
-      "last_checked": "2026-09-18T07:39:10.640385",
+      "last_checked": "2026-09-22T07:41:34.170336",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"13ac-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-datadictionary.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/prices-data.dictionary/price.json": {
       "hash": "4ffa8e1b10511a84fc2e110a340b87340cefd0dea9684b55da4b8cd9ee2ac14e",
-      "last_checked": "2026-09-18T07:39:10.764827",
+      "last_checked": "2026-09-22T07:41:34.299812",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"1467-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvepisode/prices-data.dictionary/price.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-data.dictionary.json": {
       "hash": "9a143d391362c61f2460f3a37c5527193db2419ae89e19b360b4ddf44e3125a7",
-      "last_checked": "2026-09-18T07:39:10.881307",
+      "last_checked": "2026-09-22T07:41:34.441269",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"1537-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-datadictionary.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-data.dictionary.json": {
       "hash": "32173b9d8566aa96d01b155a65b9b9950efe1737e1ebcd9795f8bf0484f9f39d",
-      "last_checked": "2026-09-18T07:39:11.078285",
+      "last_checked": "2026-09-22T07:41:34.564662",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"1390-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-datadictionary.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/prices-data.dictionary/price.json": {
       "hash": "dda89f4308e8d7be597154d6f6248df73a9067dfaf350221286d169c53eb38da",
-      "last_checked": "2026-09-18T07:39:11.209447",
+      "last_checked": "2026-09-22T07:41:34.709669",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"144b-6593d0f2aca26-df\"",
       "file_path": "documentation/appletvfeed/tvseason/prices-data.dictionary/price.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-data.dictionary.json": {
       "hash": "376871a03fca9ab552bc2943d5d2bc367fed145e8b09d92b8f92c0e2c8639d32",
-      "last_checked": "2026-09-18T07:39:11.335447",
+      "last_checked": "2026-09-22T07:41:34.846653",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"14ff-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-datadictionary.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-data.dictionary.json": {
       "hash": "854f2d5a617440f27960e60f30bff49b52cc2d4e6bec4d584919e2eea7323d23",
-      "last_checked": "2026-09-18T07:39:11.470003",
+      "last_checked": "2026-09-22T07:41:34.983355",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"1358-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-datadictionary.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/prices-data.dictionary/price.json": {
       "hash": "c38140c557e4a78aa9696654d9a365627768c25ad53771a7c9df90b5f87af8bd",
-      "last_checked": "2026-09-18T07:39:11.583017",
+      "last_checked": "2026-09-22T07:41:35.114431",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"1413-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/tvshow/prices-data.dictionary/price.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-data.dictionary.json": {
       "hash": "8eca1405ac0dd3e1494bb24917e396975bbb067ac7ff80cf3fe2c60e3b71abd2",
-      "last_checked": "2026-09-18T07:39:11.707694",
+      "last_checked": "2026-09-22T07:41:35.244505",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"15c3-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-datadictionary.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-data.dictionary.json": {
       "hash": "b543bb504efe91fb59a39a3636584c1bda69eef328154e8ce96e935a32582a92",
-      "last_checked": "2026-09-18T07:39:11.828646",
+      "last_checked": "2026-09-22T07:41:35.383563",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"141c-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-datadictionary.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/competitor/name-data.dictionary.json": {
       "hash": "865ae8ac7d238846510b3e6c20fe6d5787cfcf46ed321f90c254eb233fe2f97f",
-      "last_checked": "2026-09-18T07:39:11.950220",
+      "last_checked": "2026-09-22T07:41:35.482286",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"1353-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/competitor/name-datadictionary.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/prices-data.dictionary/price.json": {
       "hash": "2c3df2b8fc6075c43f5f2653d23b9ef435f292534a0ed4a80829a8ffe68826e8",
-      "last_checked": "2026-09-18T07:39:12.074151",
+      "last_checked": "2026-09-22T07:41:35.654162",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:02.012066",
+      "session_id": "2026-09-22T07:41:25.471326",
       "etag": "\"14d5-6593d0f294942-df\"",
       "file_path": "documentation/appletvfeed/sportingevent/prices-data.dictionary/price.md"
     },

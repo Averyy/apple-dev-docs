@@ -22,9 +22,9 @@ See [`AppsReportingRequest`](appsreportingrequest.md).
 
 ##### Groupby Dimensions
 
-`storefront`, `countryOrRegion`
+`countryOrRegion`
 
-The following dimensions are **not** supported for the `AD` entity: `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`.
+The `AD` entity supports only the `countryOrRegion` groupBy dimension. `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, and `locality` are **not** supported.
 
 Ad reports follow the standard date range rules per granularity, except `HOURLY` isn’t available at the ad level.
 
@@ -46,13 +46,13 @@ Only `DAILY` granularity or coarser is available for ads, and either `ORTZ` or `
 
 #### Payload Examples
 
-**Daily by Device**:
+**Daily by Country**:
 
-Retrieve daily ad metrics for a specific ad group, grouped by device class.
+Retrieve daily ad metrics for a specific ad group, grouped by country or region.
 
 ##### Request
 
-Filters by `adGroupId` and groups results by `deviceClass`, returning daily ad-level metrics for a 31-day window in the account’s reporting timezone.
+Filters by `campaignId` and `adGroupId` and groups results by `countryOrRegion`, returning daily ad-level metrics for a 31-day window in the account’s reporting timezone.
 
 ```json
 POST /v1/reports/apps/ads/query
@@ -64,13 +64,18 @@ POST /v1/reports/apps/ads/query
  },
  "filters": [
    {
+     "field": "campaignId",
+     "operator": "EQUALS",
+     "value": "444555666"
+   },
+   {
      "field": "adGroupId",
      "operator": "EQUALS",
      "value": "555666777"
    }
  ],
  "groupBy": [
-   "deviceClass"
+   "countryOrRegion"
  ],
  "timeRange": {
    "start": "2025-01-01",
@@ -95,7 +100,12 @@ POST /v1/reports/apps/ads/query
          "campaignId": 444555666,
          "adGroupId": 555666777,
          "status": "ENABLED",
-         "deleted": false
+         "deleted": false,
+         "creative": {
+           "id": 456789012,
+           "creativeType": "DEFAULT_PRODUCT_PAGE",
+           "systemStatus": "VALID"
+         }
        },
        "totalMetrics": {
          "localSpend": {
@@ -115,7 +125,7 @@ POST /v1/reports/apps/ads/query
        "granularMetrics": [
          {
            "date": "2025-01-01",
-           "deviceClass": "IPHONE",
+           "countryOrRegion": "US",
            "localSpend": {
              "amount": "4.80",
              "currency": "USD"
@@ -193,7 +203,12 @@ POST /v1/reports/apps/ads/query
          "campaignId": 444555666,
          "adGroupId": 555666777,
          "status": "ENABLED",
-         "deleted": false
+         "deleted": false,
+         "creative": {
+           "id": 456789012,
+           "creativeType": "DEFAULT_PRODUCT_PAGE",
+           "systemStatus": "VALID"
+         }
        },
        "totalMetrics": {
          "localSpend": {

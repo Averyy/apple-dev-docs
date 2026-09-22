@@ -53,6 +53,8 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 
 #### Payload Examples
 
+**Query App Budget Recommendations**:
+
 This example queries available daily budget recommendations for an app, sorted by the suggested budget amount in descending order. The response includes the current and suggested budgets alongside historical and projected performance metrics.
 
 ##### Request
@@ -159,6 +161,123 @@ POST /v1/recommendations/daily-budgets/query
    "offset": 0,
    "pageSize": 20,
    "totalCount": 1
+ }
+}
+```
+
+**Query Brands Budget Recommendations**:
+
+This example queries available daily budget recommendations for a Brands campaign by filtering on `promotedObjectId` and `promotedObjectType: BUSINESS_BRAND`. Since these campaigns haven’t accrued reporting history yet, the historical and expected metric fields return `null`.
+
+##### Request
+
+```json
+POST /v1/recommendations/daily-budgets/query
+
+{
+ "filters": [
+   {
+     "field": "promotedObjectId",
+     "operator": "EQUALS",
+     "value": [
+       "1234567890123456789"
+     ]
+   },
+   {
+     "field": "promotedObjectType",
+     "operator": "EQUALS",
+     "value": [
+       "BUSINESS_BRAND"
+     ]
+   }
+ ]
+}
+```
+
+##### Response
+
+```json
+{
+ "result": [
+   {
+     "id": "a1b2c3d4-e5f6-47a8-9b0c-d1e2f3a4b5c6",
+     "recommendationType": "SDAILYCAP",
+     "promotedObjectId": "1234567890123456789",
+     "promotedObjectType": "BUSINESS_BRAND",
+     "campaignId": 900123456,
+     "campaignName": "Campaign_manualCPT_PF_searchHome_alllocations",
+     "suggestedDailyBudgetAmount": {
+       "amount": "5.42",
+       "currency": "USD"
+     },
+     "dailyBudget": {
+       "amount": "4.93",
+       "currency": "USD"
+     },
+     "state": "AVAILABLE",
+     "status": "DISABLED",
+     "creationTime": "2026-09-17T12:38:48.368",
+     "modificationTime": "2026-09-17T12:38:48.368",
+     "expirationTime": "2026-09-24T00:00:00.000",
+     "installs": null,
+     "spend": null,
+     "averageCPA": null,
+     "averageCPT": null,
+     "impression": null,
+     "ttr": null,
+     "taps": null,
+     "expectedImpressions": null,
+     "expectedInstalls": null,
+     "expectedSpend": null,
+     "expectedTaps": null,
+     "expectedCpa": null,
+     "bidStrategy": {
+       "bidStrategyType": "MANUAL_CPT",
+       "bidAmount": null
+     }
+   },
+   {
+     "id": "b2c3d4e5-f6a7-48b9-0c1d-e2f3a4b5c6d7",
+     "recommendationType": "SDAILYCAP",
+     "promotedObjectId": "1234567890123456789",
+     "promotedObjectType": "BUSINESS_BRAND",
+     "campaignId": 900123457,
+     "campaignName": "Campaign_manualCPT_PF_searchResults_alllocations",
+     "suggestedDailyBudgetAmount": {
+       "amount": "5.42",
+       "currency": "USD"
+     },
+     "dailyBudget": {
+       "amount": "4.93",
+       "currency": "USD"
+     },
+     "state": "AVAILABLE",
+     "status": "DISABLED",
+     "creationTime": "2026-09-17T12:38:48.362",
+     "modificationTime": "2026-09-17T12:38:48.362",
+     "expirationTime": "2026-09-24T00:00:00.000",
+     "installs": null,
+     "spend": null,
+     "averageCPA": null,
+     "averageCPT": null,
+     "impression": null,
+     "ttr": null,
+     "taps": null,
+     "expectedImpressions": null,
+     "expectedInstalls": null,
+     "expectedSpend": null,
+     "expectedTaps": null,
+     "expectedCpa": null,
+     "bidStrategy": {
+       "bidStrategyType": "MANUAL_CPT",
+       "bidAmount": null
+     }
+   }
+ ],
+ "pagination": {
+   "offset": 0,
+   "pageSize": 20,
+   "totalCount": 2
  }
 }
 ```

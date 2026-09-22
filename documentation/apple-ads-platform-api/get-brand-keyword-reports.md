@@ -30,12 +30,12 @@ Apple Maps keyword reports support a reduced set of `groupBy` dimensions. Neithe
 
 The `supplyPlacement` and `locationId` fields are **not** supported for the `KEYWORD` entity under `business-brands`.
 
-Granularity constraints mirror other Apple Maps entities, with lookback windows ranging from 7 days for `HOURLY` to 90 days for `MONTHLY`.
+Granularity constraints mirror other Apple Maps entities, with a 7-day span limit for `HOURLY` and lookback windows ranging up to 90 days for `MONTHLY`.
 
 | Granularity | Constraint |
 | --- | --- |
 | `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
-| `HOURLY` | Date range start must be within the last 7 days. |
+| `HOURLY` | Date range must span 7 days or less, and the start date must be within the last 365 days. |
 | `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
 | `MONTHLY` | End date must be at least 90 days in the past. |
 

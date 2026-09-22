@@ -27,7 +27,7 @@ Search term reports exclusively require the ORTZ timezone. UTC isn’t supported
   "campaignId": 123456789,
   "adAccountId": 987654321,
   "searchTermText": "awayfinder travel app",
-  "searchTermSource": "SEARCH",
+  "searchTermSource": "AUTO",
   "keyword": {
     "id": 555666777,
     "campaignId": 123456789,

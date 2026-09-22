@@ -15,7 +15,7 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 ## Topics
 
 ### visionOS 27
-- [visionOS 27.2 Beta Release Notes](visionos-27_2-release-notes.md)
+- [visionOS 27.2 Beta 2 Release Notes](visionos-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [visionOS 27 Release Notes](visionos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

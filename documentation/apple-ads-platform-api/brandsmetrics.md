@@ -93,7 +93,7 @@ All action count fields reference [`ActionMetrics`](actionmetrics.md) objects. C
 
 ## Properties
 
-- `date` (date): Report date in YYYY-MM-DD format.
+- `date` (string): Report date. Uses YYYY-MM-DD for DAILY, WEEKLY, and MONTHLY granularity, or YYYY-MM-DD HH (hour in 24-hour time) for HOURLY granularity.
 - `localSpend` (Money): Total spend. See [`Money`](money.md).
 - `impressions` (int64): Total ad impressions.
 - `taps` (int64): Total ad taps.

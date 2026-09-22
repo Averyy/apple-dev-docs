@@ -55,9 +55,9 @@
     "last_updated": "2026-09-11T08:40:11.163633"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/icons.json": {
-    "hash": "77220af689325c183952755d422d55400de5c1bc3888d4e5a97e9082aff806e5",
+    "hash": "d6718d1582dcb05aab844ea6e800a5514e1b7c49e49a47905c851c76418d706b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/icons.md",
-    "last_updated": "2026-08-14T07:56:33.690665"
+    "last_updated": "2026-09-22T08:39:49.753993"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/accessibility.json": {
     "hash": "640f149ff97f66bf34fa5808c3dc889657e6bb6e3e942d0596eeb9ca6455125f",
@@ -860,9 +860,9 @@
     "last_updated": "2026-08-14T07:56:32.649066"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-iphone-duo.json": {
-    "hash": "58576ab8a80d7f2fe182e492a26db4f5d0b7853d27145a51f3e6177749ccafcc",
+    "hash": "f8f0a31602eb61e51d189a8d5e5094e612df0ee4b714efc3ec6823fdecccb0b0",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-iphone-duo.md",
-    "last_updated": "2026-09-18T08:33:57.010731"
+    "last_updated": "2026-09-22T08:39:45.184386"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/apple-in-app-purchase.json": {
     "hash": "16e2b5295a4f21b6f53194305190bcb5de518511a4ba7ba370afeff30b6f4780",

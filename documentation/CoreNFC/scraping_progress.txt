@@ -1,4 +1,4 @@
 Completed scraping Core NFC!
-Total pages scraped: 76
-Pages skipped (unchanged): 373
+Total pages scraped: 0
+Pages skipped (unchanged): 449
 Pages failed: 0

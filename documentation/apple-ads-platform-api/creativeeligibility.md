@@ -49,7 +49,7 @@ The `CreativeEligibility` object describes whether an ad creative is eligible to
 
 ## Properties
 
-- `status` (string): The overall eligibility status. Values: `ELIGIBLE`, `INELIGIBLE`. Read-only.
+- `status` (string): The overall eligibility status. Read-only.
 - `allowedGroups` (CreativeEligibility.AllowedGroups): The supply sources and placements where this ad creative is eligible to serve. Read-only.
 - `blockedGroups` (CreativeEligibility.BlockedGroups): The supply sources and placements where this ad creative is not eligible to serve, along with the blocking reason. Read-only. - reason: Why the ad creative is blocked from serving in this group, for example `APP_NOT_ELIGIBLE`. Read-only.
 

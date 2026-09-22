@@ -1,4 +1,4 @@
 Completed scraping Metal!
-Total pages scraped: 41
-Pages skipped (unchanged): 3832
+Total pages scraped: 0
+Pages skipped (unchanged): 3873
 Pages failed: 0

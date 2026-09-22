@@ -16,22 +16,24 @@ object QueryPaginationResult
 
 #### Discussion
 
-The `QueryPaginationResult` object is returned in the `pagination` field of query responses. It echoes the `pageSize` and `offset` from the request and provides `totalCount` when requested. To calculate the total number of pages, use `totalCount` with `pageSize`.
+The `QueryPaginationResult` object is returned in the `pagination` field of query responses. It echoes `offset` from the request and provides `totalCount` when requested, but `pageSize` reports the number of rows actually returned in this response, not the requested page size. On the last page of a result set, this is often smaller than the `pageSize` you requested. Don’t rely on `result.length == pagination.pageSize` to detect the last page; instead, compare `offset + pagination.pageSize` against `totalCount`.
 
 ##### Example
 
+A request with `pagination: { "offset": 150, "pageSize": 50 }` against a result set with 180 total matches returns only the remaining 30 rows on this page:
+
 ```json
 {
-  "pageSize": 20,
-  "offset": 0,
-  "totalCount": 137
+  "pageSize": 30,
+  "offset": 150,
+  "totalCount": 180
 }
 ```
 
 ## Properties
 
-- `pageSize` (int32): The page size for this response.
-- `offset` (int32): The offset position for this response page.
+- `pageSize` (int32): The number of rows actually returned in this response. May be smaller than the requested `pageSize`, for example on the last page of a result set.
+- `offset` (int32): The offset position for this response page. Echoes the `offset` from the request.
 - `totalCount` (int64): The total number of results matching the query. Only populated when `fetchTotalCount` is `true` in the request.
 
 ## See Also

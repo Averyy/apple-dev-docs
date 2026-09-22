@@ -161,7 +161,7 @@ Like all search term reports, `brands` search term reports require the ORTZ time
     "campaignId": 555666777,
     "adAccountId": 123456789,
     "searchTermText": "AwayFinder",
-    "searchTermSource": "SEARCH",
+    "searchTermSource": "TARGETED",
     "keyword": {
       "locationId": "555666777",
       "matchType": "PHRASE"

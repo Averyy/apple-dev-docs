@@ -261,7 +261,7 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ## See Also
 
-- [watchOS 27.2 Beta Release Notes](watchos-27_2-release-notes.md)
+- [watchOS 27.2 Beta 2 Release Notes](watchos-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

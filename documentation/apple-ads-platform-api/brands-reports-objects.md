@@ -94,9 +94,9 @@ For a side-by-side comparison of Brands and Apps reporting differences (groupBy 
 - [object BrandsMetrics](brandsmetrics.md)
   Metrics for brands promoted object type.
 - [object BrandsCampaignMetrics](brandscampaignmetrics.md)
-  Campaign-level metrics for brands, inheriting all properties from `BrandsMetrics`.
+  Campaign-level performance metrics for brands.
 - [object BrandsAdGroupMetrics](brandsadgroupmetrics.md)
-  Ad group-level metrics for brands, inheriting all properties from `BrandsMetrics`.
+  Ad group-level performance metrics for brands.
 - [object BrandsOptions](brandsoptions.md)
   Reports options for brands promoted object campaigns.
 - [object BrandsTargetingProjection](brandstargetingprojection.md)

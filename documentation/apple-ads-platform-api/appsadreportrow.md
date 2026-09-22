@@ -41,8 +41,7 @@ The `metadata` field captures ad identifiers and configuration at report time. T
       "creativeType": "DEFAULT_PRODUCT_PAGE",
       "systemStatus": "VALID"
     },
-    "countryOrRegion": "US",
-    "storefront": "US"
+    "countryOrRegion": "US"
   },
   "totalMetrics": {
     "localSpend": {

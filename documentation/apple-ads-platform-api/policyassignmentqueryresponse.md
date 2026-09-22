@@ -38,7 +38,7 @@ The `PolicyAssignmentQueryResponse` object extends the standard [`QueryResponse`
   ],
   "pagination": {
     "offset": 0,
-    "pageSize": 20,
+    "pageSize": 1,
     "totalCount": 1
   }
 }

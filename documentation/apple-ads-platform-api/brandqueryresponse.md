@@ -43,7 +43,7 @@ The [`Query Brands`](query-brands.md) returns `BrandQueryResponse` as the top-le
   ],
   "pagination": {
     "offset": 0,
-    "pageSize": 20,
+    "pageSize": 1,
     "totalCount": 1
   }
 }

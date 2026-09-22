@@ -1,4 +1,4 @@
 Completed scraping Core Location!
-Total pages scraped: 47
-Pages skipped (unchanged): 415
+Total pages scraped: 0
+Pages skipped (unchanged): 462
 Pages failed: 0

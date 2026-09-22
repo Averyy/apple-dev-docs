@@ -38,7 +38,7 @@ The [`Query Business Categories`](query-categories.md) returns `BusinessCategory
   "pagination": {
     "totalCount": 1,
     "offset": 0,
-    "pageSize": 20
+    "pageSize": 1
   }
 }
 ```

@@ -1,4 +1,4 @@
 Completed scraping visionOS!
-Total pages scraped: 6
-Pages skipped (unchanged): 81
+Total pages scraped: 0
+Pages skipped (unchanged): 87
 Pages failed: 0

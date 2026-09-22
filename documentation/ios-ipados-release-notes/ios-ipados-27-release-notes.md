@@ -893,7 +893,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ## See Also
 
-- [iOS & iPadOS 27.2 Beta Release Notes](ios-ipados-27_2-release-notes.md)
+- [iOS & iPadOS 27.2 Beta 2 Release Notes](ios-ipados-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

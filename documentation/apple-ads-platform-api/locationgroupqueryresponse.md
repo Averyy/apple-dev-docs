@@ -41,7 +41,7 @@ The `LocationGroupQueryResponse` object is the top-level envelope returned by [`
   "pagination": {
     "totalCount": 1,
     "offset": 0,
-    "pageSize": 100
+    "pageSize": 1
   }
 }
 ```

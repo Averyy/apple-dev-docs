@@ -38,7 +38,7 @@ To scope results by `adAccountId`, `creativeType`, `systemStatus`, or other filt
   ],
   "pagination": {
     "offset": 0,
-    "pageSize": 20,
+    "pageSize": 1,
     "totalCount": 1
   }
 }

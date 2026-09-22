@@ -10,6 +10,12 @@ Core AI allows you to deploy AI models within your app. Inference happens on dev
 
 You start with an `.aimodel` file, either converted from a model using the [`Core AI PyTorch Extensions Python package`](https://developer.apple.comhttps://apple.github.io/coreai-torch) or already prepared in the correct format. The model it represents should contain one or more inference functions needed to power your app’s intelligent features.
 
+#### Choose a Model
+
+When you have more than one model to choose from, you can compare their quality using the [`Evaluations`](https://developer.apple.com/documentation/evaluations) framework. Comparing models this way doesn’t require matching input or output shapes; your own code adapts each model’s output into a form the evaluation can score.
+
+Quality can also shift over time: a different dataset, a new model judge, or a newer model version can change which model scores best, even after you’ve already bundled one. `Evaluating a Core AI model` shows this pattern: one evaluation definition run against two different models with the same metrics, compared side by side. For details, see [`Evaluating a Core AI model`](https://developer.apple.com/documentation/evaluations/evaluating-a-core-ai-model).
+
 #### Add the Model File to Your Project
 
 To use a Core AI model, your app needs access to the `.aimodel` file at runtime. You can bundle the file directly in your Xcode project or Swift package, or your app can download it over the network. The following steps show how to bundle and configure the model in Xcode.
@@ -58,6 +64,8 @@ Most models have a single function. The named inputs and outputs describe what d
 #### Load the Model
 
 Load the model in your app by creating an [`AIModel`](aimodel.md) from the `.aimodel` file.
+
+If your model is a language model, you can also run it through [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession), using the same session, prompting, and structured-output features you’d use with Foundation Models’ [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel). For details, see [`Running a Core AI model in a Foundation Models session`](https://developer.apple.com/documentation/foundationmodels/running-a-core-ai-model-in-a-foundation-models-session).
 
 ```swift
 import CoreAI

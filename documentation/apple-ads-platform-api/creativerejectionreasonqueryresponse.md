@@ -44,7 +44,7 @@ To understand why an ad creative’s `systemStatus` is `INVALID` and which speci
     }
   ],
   "pagination": {
-    "pageSize": 20,
+    "pageSize": 1,
     "offset": 0,
     "totalCount": 1
   }

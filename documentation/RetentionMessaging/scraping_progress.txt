@@ -1,4 +1,4 @@
 Completed scraping Retention Messaging API!
-Total pages scraped: 3
-Pages skipped (unchanged): 106
+Total pages scraped: 0
+Pages skipped (unchanged): 109
 Pages failed: 0

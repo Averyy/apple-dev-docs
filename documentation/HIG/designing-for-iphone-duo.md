@@ -24,7 +24,7 @@ The outer front-facing camera is in the corner and is always visible, vertically
 People hold iPhone Duo and set it down in a number of ways: partially folded like a book, placed down on a surface, or standing on its edges.
 ![An illustration of six device poses.](/images/com.apple.HIG/designing-for-iphone-poses~dark@2x.png)
 Supporting the device’s various poses doesn’t mean designing a custom layout for each one: instead, use [Size classes](layout.md#Size-classes) so your app adapts naturally as it changes size. A compact width layout for the outer display and a regular width layout for the inner display give you the fundamentals for every pose. Don’t reinvent your app when it resizes; allow the existing layout to expand based on the available space instead. See [Dynamic layouts](designing-for-iphone-duo.md#Dynamic-layouts) for guidance.
-You can use [Device Hub](../xcode/device-hub.md) in Xcode 27.1 to preview your app on iPhone Duo and test how your app appears in its various poses.
+You can use [Device Hub](../xcode/device-hub.md) in Xcode to preview your app on iPhone Duo and test how your app appears in its various poses.
 
 ## Best practices
 **Build your app to resize.** Because the device has two displays and supports a wide range of poses and Split View multitasking, your app can appear at many different sizes. Use size classes, layout margins, and safe area insets to lay out controls and content. Avoid fixed widths and display-specific dependencies. See [Dynamic layouts](designing-for-iphone-duo.md#Dynamic-layouts) below and [Layout](layout.md) for guidance.

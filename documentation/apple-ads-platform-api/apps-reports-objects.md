@@ -25,7 +25,7 @@ The five Apps reporting entities each have a dedicated endpoint.
 
 Every Apps report request uses [`AppsReportingRequest`](appsreportingrequest.md) as its body. Every Apps report request must include a `campaignId` filter. Brands report requests don’t have this requirement. Each response row follows the same three-part shape:
 
-- `metadata`: entity attributes (name, status, identifiers) plus any `groupBy` dimension value (`deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `storefront`, or `countryOrRegion`, with entity-level restrictions) applied to that row. Entity-specific metadata schemas define the fields available for each entity, including [`AppsReportingCampaign`](appsreportingcampaign.md), [`AppsReportingAdGroup`](appsreportingadgroup.md), [`AppsReportingAd`](appsreportingad.md), [`ReportingKeyword`](reportingkeyword.md), and [`ReportingSearchTerm`](reportingsearchterm.md). Ad metadata nests creative details in an [`AppsReportingCreative`](appsreportingcreative.md) object rather than a flat creative ID.
+- `metadata`: entity attributes (name, status, identifiers) plus any `groupBy` dimension value (`deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, or `countryOrRegion`, with entity-level restrictions) applied to that row. Entity-specific metadata schemas define the fields available for each entity, including [`AppsReportingCampaign`](appsreportingcampaign.md), [`AppsReportingAdGroup`](appsreportingadgroup.md), [`AppsReportingAd`](appsreportingad.md), [`ReportingKeyword`](reportingkeyword.md), and [`ReportingSearchTerm`](reportingsearchterm.md). Ad metadata nests creative details in an [`AppsReportingCreative`](appsreportingcreative.md) object rather than a flat creative ID.
 - `totalMetrics`: aggregate [`AppsMetrics`](appsmetrics.md) (or entity variant, for example, [`AppsAdGroupMetrics`](appsadgroupmetrics.md)) values for the row over the full requested date range.
 - `granularMetrics`: an array of pure metrics objects, one per period in the requested `granularity`, with no dimension fields of their own. Only present when `granularity` is specified in the request.
 
@@ -88,9 +88,9 @@ For a side-by-side comparison of Apps and Brands reporting differences (groupBy 
 - [object AppsMetrics](appsmetrics.md)
   Metrics for apps promoted object type.
 - [object AppsCampaignMetrics](appscampaignmetrics.md)
-  Campaign-level metrics for apps, inheriting all properties from `AppsMetrics`.
+  Campaign-level performance metrics for apps.
 - [object AppsAdGroupMetrics](appsadgroupmetrics.md)
-  Ad group-level metrics for apps, inheriting all properties from `AppsMetrics`.
+  Ad group-level performance metrics for apps.
 - [object AppsOptions](appsoptions.md)
   Reporting options for apps promoted object type reports.
 - [object AppsTargetingProjection](appstargetingprojection.md)

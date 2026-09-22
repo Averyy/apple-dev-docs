@@ -22,9 +22,7 @@ iPhone Duo presents navigation bars, toolbars, and tab bars together vertically 
 
 ![An image of iPhone Duo showing the outer display, with bars presented on the vertical axis. The image has callouts that identify the Dynamic Island, the status bar, toolbar, and tab bar from the top down.](/images/com.apple.TechnologyOverviews/preparing-your-app-for-iphone-duo-3@2x.png)
 
-Build your app with Xcode 27.1 or later to use all of the available screen space on iPhone Duo. In earlier versions, your app doesn’t extend under the status bar and camera. For more information, see [`Prepare your app for iPhone Duo`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111461?time=30). Then, take the first step in preparing your app for iPhone Duo by testing it in a simulator or on iPhone Duo. For more information, see [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices).
-
-> ❗ **Important**: The iPhone Duo simulator in Device Hub requires Xcode 27.1, coming later this month.
+Build your app with the latest version of Xcode to use all of the available screen space on iPhone Duo. When you build with Xcode 26 and earlier, your app doesn’t extend under the status bar and camera. For more information, see [`Prepare your app for iPhone Duo`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111461?time=30). Then, take the first step in preparing your app for iPhone Duo by testing it in a simulator or on iPhone Duo. For more information, see [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices).
 
 ##### Address Common Layout and Resizing Considerations
 

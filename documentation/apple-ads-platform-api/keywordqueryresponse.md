@@ -62,7 +62,7 @@ To narrow results to a specific ad group, campaign, or set of keyword IDs, use t
   ],
   "pagination": {
     "offset": 0,
-    "pageSize": 20,
+    "pageSize": 2,
     "totalCount": 2
   }
 }

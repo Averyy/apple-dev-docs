@@ -67,7 +67,7 @@ The campaign query endpoint returns `CampaignQueryResponse`, which contains the 
   ],
   "pagination": {
     "offset": 0,
-    "pageSize": 20,
+    "pageSize": 1,
     "totalCount": 1
   }
 }

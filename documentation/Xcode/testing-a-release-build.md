@@ -141,7 +141,7 @@ To learn more about testing languages and regions, see [`Testing localizations w
 For issues that continue to surface in only the release build, open an Apple Developer Technical Support (DTS) case by submitting a [`Technical Support Incident`](https://developer.apple.comhttps://developer.apple.com/support/technical/). To facilitate review of the issue, provide DTS with:
 
 - Details about the problem and the steps you followed to reproduce or resolve the error
-- For crashes, a log that contains human-readable function references; see doc:acquiring-crash-reports-and-diagnostic-logs
+- For crashes, a log that contains human-readable function references; see [`Acquiring crash reports and diagnostic logs`](acquiring-crash-reports-and-diagnostic-logs.md)
 - The build UUID of the app archive you’re testing
 
 To retrieve the archived app’s build UUID, run the Terminal command:

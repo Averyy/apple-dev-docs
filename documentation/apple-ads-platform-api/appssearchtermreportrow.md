@@ -107,7 +107,7 @@ The `metadata` field captures the search term text and its associated keyword an
     "campaignId": 123456789,
     "adAccountId": 987654321,
     "searchTermText": "awayfinder travel app",
-    "searchTermSource": "SEARCH",
+    "searchTermSource": "AUTO",
     "keyword": {
       "id": 555666777,
       "campaignId": 123456789,

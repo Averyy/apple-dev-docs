@@ -1,4 +1,4 @@
 Completed scraping Wallet Passes!
-Total pages scraped: 14
-Pages skipped (unchanged): 50
+Total pages scraped: 4
+Pages skipped (unchanged): 60
 Pages failed: 0

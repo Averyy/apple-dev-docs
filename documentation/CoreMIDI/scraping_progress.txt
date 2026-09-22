@@ -1,4 +1,4 @@
 Completed scraping Core MIDI!
-Total pages scraped: 12
-Pages skipped (unchanged): 964
+Total pages scraped: 0
+Pages skipped (unchanged): 976
 Pages failed: 0

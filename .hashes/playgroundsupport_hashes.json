@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-18T07:39:15.292099",
+    "last_updated": "2026-09-22T07:41:42.474264",
     "total_pages": 146,
-    "session_id": "2026-09-18T07:39:05.405621"
+    "session_id": "2026-09-22T07:41:32.662159"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport.json": {
       "hash": "56736898c19652ec708dbd9ff2f2daaf359b5d94464b364fbf00fa81570dffc2",
-      "last_checked": "2026-09-18T07:39:05.688661",
+      "last_checked": "2026-09-22T07:41:32.913104",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"3cfc-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundsupport.md"
     },
     "https://developer.apple.com/documentation/playgroundsupport": {
       "hash": "56736898c19652ec708dbd9ff2f2daaf359b5d94464b364fbf00fa81570dffc2",
-      "last_checked": "2026-09-18T07:39:05.602897",
+      "last_checked": "2026-09-22T07:41:32.821904",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"3cfc-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundsupport.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage.json": {
       "hash": "73397789c353e8c557fd2ef1e8249212a2febae62bad24bffce24c56458da352",
-      "last_checked": "2026-09-18T07:39:05.912992",
+      "last_checked": "2026-09-22T07:41:33.117649",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"7ad5-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewable.json": {
       "hash": "01d3a7f534fb78888f8309b222a3ade2bd90d2edd277c29d58fb0975923c0b6d",
-      "last_checked": "2026-09-18T07:39:06.043918",
+      "last_checked": "2026-09-22T07:41:33.258085",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"3093-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewable.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewrepresentation.json": {
       "hash": "1a3546d0000df2d3fb7711871eeb0834fec3341a952ffb266b7283fa978104a2",
-      "last_checked": "2026-09-18T07:39:06.180832",
+      "last_checked": "2026-09-22T07:41:33.396842",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"28f9-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewrepresentation.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewsafeareacontainer.json": {
       "hash": "45253ec91c9951bd38856bbed9db68f379cc9116f482966a09cf6ddc6d339aad",
-      "last_checked": "2026-09-18T07:39:06.299524",
+      "last_checked": "2026-09-22T07:41:33.526134",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2ac5-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewsafeareacontainer.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/messaging_between_a_playground_page_and_the_always-on_live_view.json": {
       "hash": "c33ebb4bdbb2aae34a2e6aba7d021f78fd792432579f083bd50a1fcdd93f9d5e",
-      "last_checked": "2026-09-18T07:39:06.422368",
+      "last_checked": "2026-09-22T07:41:33.663853",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"554e-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/messaging-between-a-playground-page-and-the-always-on-live-view.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxy.json": {
       "hash": "0454f4104d38a797b5d6575b9d36535762b1410d17257f3b96619eeeeac862ff",
-      "last_checked": "2026-09-18T07:39:06.555007",
+      "last_checked": "2026-09-22T07:41:33.771750",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"45bd-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxy.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxydelegate.json": {
       "hash": "127b83d90a90bf72308f91c22ea7b62594116fc3f58c2be882c359b56ed7c0eb",
-      "last_checked": "2026-09-18T07:39:06.666686",
+      "last_checked": "2026-09-22T07:41:33.896909",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"26ff-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxydelegate.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewmessagehandler.json": {
       "hash": "972eb60bb4ec102a75330e29de60f417da99e525cc46382ee286e2e39ed53ddf",
-      "last_checked": "2026-09-18T07:39:06.776235",
+      "last_checked": "2026-09-22T07:41:34.017721",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"3028-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewmessagehandler.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundkeyvaluestore.json": {
       "hash": "7e70735a0d0a82ddcbaf7dbba58797d78ee6a2d8ad963c99d312e6fdd063db71",
-      "last_checked": "2026-09-18T07:39:06.970394",
+      "last_checked": "2026-09-22T07:41:34.142430",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"26f2-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundkeyvaluestore.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue.json": {
       "hash": "58fdf841bb3ec469f91337e3fdfceb5e1deb59f6fc72a9740a14e8defdd7fee3",
-      "last_checked": "2026-09-18T07:39:07.085378",
+      "last_checked": "2026-09-22T07:41:34.273020",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"4564-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundshareddatadirectory.json": {
       "hash": "4191b0d57e779c3caf1d297600efcefe805fc259ce42dd69141259fcbfd42968",
-      "last_checked": "2026-09-18T07:39:07.206832",
+      "last_checked": "2026-09-22T07:41:34.407356",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1bd3-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundshareddatadirectory.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/1964509-current.json": {
       "hash": "db665931a20c7142b505b46845fe1140d3234129c9f793d67e5b4fcfdf5b2082",
-      "last_checked": "2026-09-18T07:39:07.317194",
+      "last_checked": "2026-09-22T07:41:34.547181",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"232d-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-1964509-current.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3375751-setliveview.json": {
       "hash": "1757fbe77f2d7d0f444df596d5b28bbe6e9d1a4945d533bd6e34b178c6af6bf4",
-      "last_checked": "2026-09-18T07:39:07.434454",
+      "last_checked": "2026-09-22T07:41:34.667503",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"3a21-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3375751-setliveview.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3375752-setliveview.json": {
       "hash": "5e3413d7e18b9186fa8cd3ac02fb03d3dd895c834811f3d65c30b1236a1746ac",
-      "last_checked": "2026-09-18T07:39:07.562093",
+      "last_checked": "2026-09-22T07:41:34.786833",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"3b85-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3375752-setliveview.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/1964506-liveview.json": {
       "hash": "a2a28f11dcdac4b402f2909478698782eb595e10ebfc25438c5c442ddd0bce77",
-      "last_checked": "2026-09-18T07:39:07.679132",
+      "last_checked": "2026-09-22T07:41:34.919247",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"3c81-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-1964506-liveview.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3029561-executionmode.json": {
       "hash": "836ef091b26fc0d3b8e946dc83ed752f525cc13302e40d458b71973e10b558dd",
-      "last_checked": "2026-09-18T07:39:07.812714",
+      "last_checked": "2026-09-22T07:41:35.045364",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"22d8-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3029561-executionmode.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/executionmode.json": {
       "hash": "aa12ab4cf06a87a4795d96d4e536babd63455f6e4b300d30233a139ee45961e1",
-      "last_checked": "2026-09-18T07:39:08.026053",
+      "last_checked": "2026-09-22T07:41:35.188859",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"45f6-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/executionmode.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/1964501-needsindefiniteexecution.json": {
       "hash": "c729f186053414406e61db154efebd9c5743a8d2b765bb7a320afbc864f6e1d8",
-      "last_checked": "2026-09-18T07:39:08.159106",
+      "last_checked": "2026-09-22T07:41:35.301816",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"36d5-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-1964501-needsindefiniteexecution.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/1964505-finishexecution.json": {
       "hash": "22da7fdc3ec9816d39886ec2c29edf20b05b52c5f7dd646a970a7253933a52c5",
-      "last_checked": "2026-09-18T07:39:08.289263",
+      "last_checked": "2026-09-22T07:41:35.406535",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"28dd-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-1964505-finishexecution.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3029560-assessmentstatus.json": {
       "hash": "f3e387f60d10d851385f8bf766fcc710fc78657ef4b5078e0140b37e73b562c8",
-      "last_checked": "2026-09-18T07:39:08.407160",
+      "last_checked": "2026-09-22T07:41:35.528121",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1c05-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3029560-assessmentstatus.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/assessmentstatus.json": {
       "hash": "dbcb21a4f128e513199d401f1992fd3c835bb033903c99e666df6e9b103107f8",
-      "last_checked": "2026-09-18T07:39:08.545002",
+      "last_checked": "2026-09-22T07:41:35.702378",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2322-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/assessmentstatus.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3029563-text.json": {
       "hash": "5a0316edf59f10ef9571c8b59c618870a0d7b3de0606cb72e2714f4375531171",
-      "last_checked": "2026-09-18T07:39:08.685820",
+      "last_checked": "2026-09-22T07:41:35.844368",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"18ce-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3029563-text.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3029562-keyvaluestore.json": {
       "hash": "013a8440defee84df4c6d137123af8b2a948dfaa5720e814e8f42825f116aa2f",
-      "last_checked": "2026-09-18T07:39:08.818541",
+      "last_checked": "2026-09-22T07:41:35.999592",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1bb7-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3029562-keyvaluestore.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/2919769-livetouchbar.json": {
       "hash": "367d3b2db65fd047a35b15e232dc928afff31c25712e5abfb67fd7ae4541d407",
-      "last_checked": "2026-09-18T07:39:08.969714",
+      "last_checked": "2026-09-22T07:41:36.100603",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1a9a-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-2919769-livetouchbar.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3919480-usermodulenames.json": {
       "hash": "a43f45b82fddfc1f6cd380b0f1147faa71c91b2a2ea4fa1060b7691a58f45bb8",
-      "last_checked": "2026-09-18T07:39:09.087660",
+      "last_checked": "2026-09-22T07:41:36.220950",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"118a-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3919480-usermodulenames.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3074093-wantsfullscreenliveview.json": {
       "hash": "339259459c040ff6b2021b4dff3691e346ca435bee1aa8bf730324de96d62142",
-      "last_checked": "2026-09-18T07:39:09.216382",
+      "last_checked": "2026-09-22T07:41:36.323639",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"11b5-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3074093-wantsfullscreenliveview.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3919478-gettext.json": {
       "hash": "20d6861e4f297afc1ef7f5ecfa85ea4fddc38ffb4a01be16e23d8f7516dc809d",
-      "last_checked": "2026-09-18T07:39:09.333590",
+      "last_checked": "2026-09-22T07:41:36.452739",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"162b-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3919478-gettext.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3919479-listsourcefiles.json": {
       "hash": "e304212b783e6f3fe22a37fd9e3919ff44e5304c0e3b4ec1ab4293115b50f943",
-      "last_checked": "2026-09-18T07:39:09.483371",
+      "last_checked": "2026-09-22T07:41:36.587777",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"139b-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3919479-listsourcefiles.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3239065-navigateto.json": {
       "hash": "5623a107b172406e4c09f2385f947e20099cfcd6e54ddbb1a55178f52b98463c",
-      "last_checked": "2026-09-18T07:39:09.623165",
+      "last_checked": "2026-09-22T07:41:36.706262",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1488-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3239065-navigateto.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3239066-openapplication.json": {
       "hash": "8dee24128922942d9b72e73ea1057edabdac4c6802c3df3425a9f9427547499a",
-      "last_checked": "2026-09-18T07:39:09.768298",
+      "last_checked": "2026-09-22T07:41:36.814170",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"158d-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3239066-openapplication.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3239067-openplayground.json": {
       "hash": "1b2f6ba1a1bbe9803bb97482597b97996cb8e94f0931918f2b45ef59caa0f971",
-      "last_checked": "2026-09-18T07:39:09.901071",
+      "last_checked": "2026-09-22T07:41:36.916253",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1628-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3239067-openplayground.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/3239068-showglossaryentry.json": {
       "hash": "0fe806a265be76df03fa0796e8e389be45ef3939c413fe08af19d3f0afe16b96",
-      "last_checked": "2026-09-18T07:39:10.025436",
+      "last_checked": "2026-09-22T07:41:37.028444",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"18de-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/api-3239068-showglossaryentry.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/pagenavigation.json": {
       "hash": "5e379e5932542eab75440223450ea2dfc8f52c786ca8231e17627c94835f45ad",
-      "last_checked": "2026-09-18T07:39:10.160471",
+      "last_checked": "2026-09-22T07:41:37.157238",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"19f6-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/pagenavigation.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewable/1978828-playgroundliveviewrepresentation.json": {
       "hash": "0a6b308d3acc1debf6c03fb53ad03f987e6670cc912d5867c64bab5afec97ae7",
-      "last_checked": "2026-09-18T07:39:10.273571",
+      "last_checked": "2026-09-22T07:41:37.284097",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2082-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewable/api-1978828-playgroundliveviewrepresentation.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewrepresentation/view.json": {
       "hash": "ee1301923a05bee8366cd4d50d44005e62aa7bcbc5589ef91b1ec000355f4e0f",
-      "last_checked": "2026-09-18T07:39:10.400739",
+      "last_checked": "2026-09-22T07:41:37.387892",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"191e-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewrepresentation/view.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewrepresentation/viewcontroller.json": {
       "hash": "7e0ad9d670df489ba43d1ab50fa61fe9278a520cf1195d62cc9f4dd37d710f52",
-      "last_checked": "2026-09-18T07:39:10.532395",
+      "last_checked": "2026-09-22T07:41:37.521608",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1984-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewrepresentation/viewcontroller.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewrepresentation/view-ues.json": {
       "hash": "128ca9b8e6315db6a76f3c1002c6f55b0ad92090f365bc1b9f21cef7c0b31709",
-      "last_checked": "2026-09-18T07:39:10.668804",
+      "last_checked": "2026-09-22T07:41:37.632723",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1c94-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewrepresentation/view-ues.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewrepresentation/viewcontroller-uej.json": {
       "hash": "b4779a62d5f19ff1ac619e6224adb918191812c13b911b6a6a740b9597d83a81",
-      "last_checked": "2026-09-18T07:39:10.810389",
+      "last_checked": "2026-09-22T07:41:37.780307",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1d48-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewrepresentation/viewcontroller-uej.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewsafeareacontainer/3029546-liveviewsafeareaguide.json": {
       "hash": "e97f362ac4a692fa749cfff0717ca558c34102772e68e1b5e631127aed0c4982",
-      "last_checked": "2026-09-18T07:39:10.924953",
+      "last_checked": "2026-09-22T07:41:37.917054",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2679-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewsafeareacontainer/api-3029546-liveviewsafeareaguide.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxy/3029570-send.json": {
       "hash": "ffb9344f0176d6977c4f19a9fa5efbd2a86a1256eeb675c8bad83e0a0e15f20c",
-      "last_checked": "2026-09-18T07:39:11.036632",
+      "last_checked": "2026-09-22T07:41:38.031422",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1b87-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxy/api-3029570-send.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxy/3029565-delegate.json": {
       "hash": "a8e13a2cde14d0add28890ef1e7a50247120237bb1e8f6cd31ff410d32efac10",
-      "last_checked": "2026-09-18T07:39:11.166844",
+      "last_checked": "2026-09-22T07:41:38.145188",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1c8b-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxy/api-3029565-delegate.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxy/3029569-receive.json": {
       "hash": "8b312fe166ef330b9808692e1a7e589bc2a1b9ad9d58b0a13e24174c5fbcd9d5",
-      "last_checked": "2026-09-18T07:39:11.294702",
+      "last_checked": "2026-09-22T07:41:38.273123",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2931-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxy/api-3029569-receive.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxy/3029567-liveviewmessageconnectionopened.json": {
       "hash": "78a14eac33a1bd23774a337c9043afd4b32da4a58e5ee9771234adcd8a6119ee",
-      "last_checked": "2026-09-18T07:39:11.435136",
+      "last_checked": "2026-09-22T07:41:38.400423",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1e8c-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxy/api-3029567-liveviewmessageconnectionopened.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxy/3029566-liveviewmessageconnectionclosed.json": {
       "hash": "b4dc8d90e0519f81c7e190cbc9ef4b8aae3cf5c1378297da5c825abd572b1dcb",
-      "last_checked": "2026-09-18T07:39:11.558009",
+      "last_checked": "2026-09-22T07:41:38.509693",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1eaa-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxy/api-3029566-liveviewmessageconnectionclosed.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxy/3029568-playgroundliveviewrepresentation.json": {
       "hash": "ead1195d55567b51fa1ce4b29d467660e2bc30681bc3484682f260c5bfca69e8",
-      "last_checked": "2026-09-18T07:39:11.670698",
+      "last_checked": "2026-09-22T07:41:38.639725",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1e29-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxy/api-3029568-playgroundliveviewrepresentation.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxydelegate/3029572-remoteliveviewproxy.json": {
       "hash": "48738924db2b12a592180ba6d8ac95908d4128747679ca818b012a82bc064449",
-      "last_checked": "2026-09-18T07:39:11.818648",
+      "last_checked": "2026-09-22T07:41:38.766563",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2299-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxydelegate/api-3029572-remoteliveviewproxy.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundremoteliveviewproxydelegate/3029573-remoteliveviewproxyconnectionclo.json": {
       "hash": "6beba3042db13270330bea118e9a8edac11c3a651b26fc5983ba9a0ae813d13a",
-      "last_checked": "2026-09-18T07:39:11.951571",
+      "last_checked": "2026-09-22T07:41:38.897052",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1a30-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundremoteliveviewproxydelegate/api-3029573-remoteliveviewproxyconnectionclo.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewmessagehandler/3029542-send.json": {
       "hash": "75919637e2cc8adf99a45aa55622a8443f1821cf5a4cd0e185d99d0c09da5f82",
-      "last_checked": "2026-09-18T07:39:12.081354",
+      "last_checked": "2026-09-22T07:41:39.017225",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1b8c-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewmessagehandler/api-3029542-send.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewmessagehandler/3029540-receive.json": {
       "hash": "b1f603f12f7cbc648642fbdc12041effc00429e2f29c808bace09dc64d260fca",
-      "last_checked": "2026-09-18T07:39:12.209339",
+      "last_checked": "2026-09-22T07:41:39.144828",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2579-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewmessagehandler/api-3029540-receive.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewmessagehandler/3029538-liveviewmessageconnectionopened.json": {
       "hash": "ad958d1b9c44955d3a52f3566434bb5bfa088767b81ce822d7e2ac88304408a4",
-      "last_checked": "2026-09-18T07:39:12.346756",
+      "last_checked": "2026-09-22T07:41:39.265862",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1f9f-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewmessagehandler/api-3029538-liveviewmessageconnectionopened.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundliveviewmessagehandler/3029536-liveviewmessageconnectionclosed.json": {
       "hash": "916c01eab2d1d155e5b23632bcff54d73e728b27e59df97164e7af168733586b",
-      "last_checked": "2026-09-18T07:39:12.472988",
+      "last_checked": "2026-09-22T07:41:39.392814",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1fdb-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundliveviewmessagehandler/api-3029536-liveviewmessageconnectionclosed.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundkeyvaluestore/3029533-current.json": {
       "hash": "5839ebfc11ecd48cc278e15ecf284351839280f2fe1762228337548a5ca87dd8",
-      "last_checked": "2026-09-18T07:39:12.598489",
+      "last_checked": "2026-09-22T07:41:39.523834",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"18d4-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundkeyvaluestore/api-3029533-current.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundkeyvaluestore/3029534-subscript.json": {
       "hash": "2eb5ca1ef5af1574db44a5dfb40b0a7acbab5ac9e99239a1f609289a14bd80bc",
-      "last_checked": "2026-09-18T07:39:12.729318",
+      "last_checked": "2026-09-22T07:41:39.840320",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2105-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundkeyvaluestore/api-3029534-subscript.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/boolean.json": {
       "hash": "e299e3a85953f12466383a4e638b6a977e3d4e5f026463b3d87cccd50cb96a12",
-      "last_checked": "2026-09-18T07:39:12.892449",
+      "last_checked": "2026-09-22T07:41:39.968807",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2553-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/boolean.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/data.json": {
       "hash": "0b2b82e2757c4ed7009d9c4929099e79688ccfd289c630eb4a1113fa7aeb1c23",
-      "last_checked": "2026-09-18T07:39:13.022045",
+      "last_checked": "2026-09-22T07:41:40.077260",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2563-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/data.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/date.json": {
       "hash": "b76e2612fa3ad299a02070e754b1d483bd7626963945cf8a5611a34f50b5ac17",
-      "last_checked": "2026-09-18T07:39:13.151737",
+      "last_checked": "2026-09-22T07:41:40.242771",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2561-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/date.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/floatingpoint.json": {
       "hash": "53872d680179d40bc353636eec0579f56dc93771483a50f8a6876d415034f1f0",
-      "last_checked": "2026-09-18T07:39:13.300857",
+      "last_checked": "2026-09-22T07:41:40.355749",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2584-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/floatingpoint.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/integer.json": {
       "hash": "82d85f43dd762d3b8c572fb2ef1c9433aa9d1373753878c7eabf4141e090e50c",
-      "last_checked": "2026-09-18T07:39:13.429010",
+      "last_checked": "2026-09-22T07:41:40.457658",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2552-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/integer.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/string.json": {
       "hash": "b56aa1a6196e3478c370dd14960b3fdbf0ffa5f4308fc5c3375303c279df19e4",
-      "last_checked": "2026-09-18T07:39:13.578504",
+      "last_checked": "2026-09-22T07:41:40.578716",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2551-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/string.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/array.json": {
       "hash": "f32cac4ac350d5df727887f44773e41b919eb5b798d262f7cc11beff0215f525",
-      "last_checked": "2026-09-18T07:39:13.699894",
+      "last_checked": "2026-09-22T07:41:40.727470",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1b62-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/array.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundvalue/dictionary.json": {
       "hash": "ba60f0bb474e4dfe309bbe38f245228c93b9aeb5777ef1e7ab7ee64262493b06",
-      "last_checked": "2026-09-18T07:39:13.826230",
+      "last_checked": "2026-09-22T07:41:40.864372",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1c70-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundvalue/dictionary.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/executionmode/run.json": {
       "hash": "bde20d3730ed934f7aed6f081bd5d65edcc2f21bda4cd670e1b4a02b5344c5e6",
-      "last_checked": "2026-09-18T07:39:13.948535",
+      "last_checked": "2026-09-22T07:41:40.976987",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1bb2-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/executionmode/run.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/executionmode/runfaster.json": {
       "hash": "965a80cb5c5bb6e1d0c923715d7ab5914dd572674ca3006633a2e77ad9678b28",
-      "last_checked": "2026-09-18T07:39:14.074377",
+      "last_checked": "2026-09-22T07:41:41.105177",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1bd4-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/executionmode/runfaster.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/executionmode/runfastest.json": {
       "hash": "876ec0f97fc01a1ad0583d42c017ae290cefad907ff029c92caf335222b92324",
-      "last_checked": "2026-09-18T07:39:14.210608",
+      "last_checked": "2026-09-22T07:41:41.248532",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1be0-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/executionmode/runfastest.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/executionmode/step.json": {
       "hash": "f4aaa9586e65348cf944c1e6721fb7acef42c4119f430f6016595d102e965137",
-      "last_checked": "2026-09-18T07:39:14.333555",
+      "last_checked": "2026-09-22T07:41:41.377758",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"186b-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/executionmode/step.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/executionmode/stepslowly.json": {
       "hash": "c1e6a2305462bd721005a17b35cb84ef3f37db7a766b4be3edd7012553af251a",
-      "last_checked": "2026-09-18T07:39:14.477149",
+      "last_checked": "2026-09-22T07:41:41.708094",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"18a9-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/executionmode/stepslowly.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/executionmode/3029554.json": {
       "hash": "dbb2b57685901e5096b4493a097f126b121e061c50d216c5fe6c4ed94baee3b5",
-      "last_checked": "2026-09-18T07:39:14.599295",
+      "last_checked": "2026-09-22T07:41:41.801700",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1e9b-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/executionmode/api-3029554.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/assessmentstatus/pass_message.json": {
       "hash": "656fb451ec08ff7d1efadd9f6a95a0227884f4006d8a760b7391215a505a0acb",
-      "last_checked": "2026-09-18T07:39:14.727415",
+      "last_checked": "2026-09-22T07:41:41.924163",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"24b4-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/assessmentstatus/pass-message.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/assessmentstatus/fail_hints_solution.json": {
       "hash": "1667c657673dd99c82a488c4eb6f5243a8ba3c67d4f4eef91870ca0f8b5f314e",
-      "last_checked": "2026-09-18T07:39:14.846419",
+      "last_checked": "2026-09-22T07:41:42.053769",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"2991-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/assessmentstatus/fail-hints-solution.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/pagenavigation/next.json": {
       "hash": "d5036a1bfe5d95a61f91e21cbc491eaea2ac2399b5934859726eed04c54a63c6",
-      "last_checked": "2026-09-18T07:39:14.975428",
+      "last_checked": "2026-09-22T07:41:42.211801",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1011-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/pagenavigation/next.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/pagenavigation/pagereference_reference.json": {
       "hash": "ef70b6b2ccab6ccfcd34f49e91eff95c5238d98b379bd4c8183b5104aec88513",
-      "last_checked": "2026-09-18T07:39:15.106651",
+      "last_checked": "2026-09-22T07:41:42.304567",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1330-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/pagenavigation/pagereference-reference.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundsupport/playgroundpage/pagenavigation/previous.json": {
       "hash": "a078072ae7c269e805ea777f68f838f2f88dea7f8f0e14d00a618586130f4a66",
-      "last_checked": "2026-09-18T07:39:15.238745",
+      "last_checked": "2026-09-22T07:41:42.441800",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:05.405621",
+      "session_id": "2026-09-22T07:41:32.662159",
       "etag": "\"1029-6593d0fba6ac1-df\"",
       "file_path": "documentation/playgroundsupport/playgroundpage/pagenavigation/previous.md"
     },

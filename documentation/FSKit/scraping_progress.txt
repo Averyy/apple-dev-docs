@@ -1,4 +1,4 @@
 Completed scraping FSKit!
-Total pages scraped: 22
-Pages skipped (unchanged): 549
+Total pages scraped: 0
+Pages skipped (unchanged): 571
 Pages failed: 0

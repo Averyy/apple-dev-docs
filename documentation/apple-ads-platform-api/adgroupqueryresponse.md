@@ -57,7 +57,7 @@ Use the `QueryRequest` body with `filters` to scope results to a specific campai
   ],
   "pagination": {
     "offset": 0,
-    "pageSize": 20,
+    "pageSize": 1,
     "totalCount": 1
   }
 }

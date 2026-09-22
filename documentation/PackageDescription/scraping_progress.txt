@@ -1,4 +1,4 @@
 Completed scraping PackageDescription!
-Total pages scraped: 1
-Pages skipped (unchanged): 465
+Total pages scraped: 0
+Pages skipped (unchanged): 466
 Pages failed: 0

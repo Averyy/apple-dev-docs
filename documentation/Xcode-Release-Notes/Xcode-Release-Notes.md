@@ -17,6 +17,8 @@ For information about Xcode Cloud releases, see [`Xcode Cloud release notes`](ht
 ### Xcode 27
 - [Xcode 27.2 Beta Release Notes](xcode-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
+- [Xcode 27.1 Beta Release Notes](xcode-27_1-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [Xcode 27 Release Notes](xcode-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### Xcode 26

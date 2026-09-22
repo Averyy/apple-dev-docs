@@ -49,7 +49,7 @@ To iterate through large result sets, use the `totalCount` and `offset` fields o
     }
   ],
   "pagination": {
-    "pageSize": 20,
+    "pageSize": 2,
     "offset": 0,
     "totalCount": 2
   }

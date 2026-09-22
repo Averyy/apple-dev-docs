@@ -24,7 +24,7 @@ To programmatically handle specific rejection categories, use `code`. To surface
 
 - `id` (int64): Policy assignment identifier. Read-only.
 - `promotedObjectId` (string): The brand or promoted object ID. Read-only.
-- `promotedObjectType` (string): The type of the promoted object (for example, `BUSINESS_BRAND`). Read-only.
+- `promotedObjectType` (string): The type of the promoted object. Read-only.
 - `entityId` (string): Identifier of the affected entity. Read-only.
 - `entityType` (string): Type of the affected entity (for example, `BUSINESS_BRAND`). Read-only.
 - `componentType` (string): Type of the entity component that triggered the policy (for example, `ENTITY_ASSET`). Read-only.

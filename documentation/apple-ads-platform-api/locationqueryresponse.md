@@ -74,7 +74,7 @@ You can assign only locations with `eligibility.status: ELIGIBLE` to ad group ta
     }
   ],
   "pagination": {
-    "pageSize": 20,
+    "pageSize": 1,
     "offset": 0,
     "totalCount": 1
   }

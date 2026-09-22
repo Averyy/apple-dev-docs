@@ -834,7 +834,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ## See Also
 
-- [macOS 27.2 Golden Gate Beta Release Notes](macos-27_2-release-notes.md)
+- [macOS 27.2 Golden Gate Beta 2 Release Notes](macos-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

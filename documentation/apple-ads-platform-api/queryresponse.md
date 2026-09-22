@@ -33,7 +33,7 @@ This wrapper is the base type for all query responses. Specific entity query res
   "pagination": {
     "totalCount": 1,
     "offset": 0,
-    "pageSize": 20
+    "pageSize": 1
   }
 }
 ```

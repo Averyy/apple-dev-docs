@@ -67,7 +67,7 @@ The `AppsReportingRequest` object is the request body for all apps entity-level 
 - `sorting` ([Sorting]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`Sorting`](sorting.md) for details.
 - `filters` ([Filter]): Filter field conditions for the report. `campaignId` is a required filter for every apps report request. See [`Filter`](filter.md) for details.
 - `fields` ([string]): A list of field names to return in the response. If you omit this field, the response includes all fields.
-- `groupBy` ([string]): Groups responses by selected dimensions. Supported values for apps: `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `storefront`, `countryOrRegion`. Note: `KEYWORD` and `SEARCHTERM` entities exclude `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`. The `AD` entity also excludes `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, supporting only `storefront` and `countryOrRegion`.
+- `groupBy` ([string]): Groups responses by selected dimensions. `KEYWORD` and `SEARCHTERM` entities exclude `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`. The `AD` entity also excludes `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, supporting only `countryOrRegion`.
 - `timeRange` (TimeRange): The date range, timezone, and granularity for report data. Defines the start and end dates for the reporting period. See [`TimeRange`](timerange.md) for details.
 - `options` (AppsOptions): Options to include additional rows in the report (for example, GRAND_TOTAL, EMPTY_METRICS). You can’t combine `EMPTY_METRICS` with `groupBy`. See [`AppsOptions`](appsoptions.md) for details.
 

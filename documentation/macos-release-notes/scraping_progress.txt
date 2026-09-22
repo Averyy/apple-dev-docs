@@ -1,4 +1,4 @@
 Completed scraping macOS Release Notes!
-Total pages scraped: 6
-Pages skipped (unchanged): 58
+Total pages scraped: 3
+Pages skipped (unchanged): 61
 Pages failed: 0

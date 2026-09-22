@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-18T07:39:24.013716",
+    "last_updated": "2026-09-22T07:41:45.198317",
     "total_pages": 132,
-    "session_id": "2026-09-18T07:39:15.295505"
+    "session_id": "2026-09-22T07:41:35.853329"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SpatialPreview.json": {
       "hash": "813c3454d74051672fe3662e48e8757b53f2e958d2f2aa49e30b9617d65531c5",
-      "last_checked": "2026-09-18T07:39:15.589039",
+      "last_checked": "2026-09-22T07:41:36.138740",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"3b88-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/SpatialPreview.md"
     },
     "https://developer.apple.com/documentation/SpatialPreview": {
       "hash": "813c3454d74051672fe3662e48e8757b53f2e958d2f2aa49e30b9617d65531c5",
-      "last_checked": "2026-09-18T07:39:15.482755",
+      "last_checked": "2026-09-22T07:41:36.023950",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"3b88-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/SpatialPreview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/working-with-content-from-your-mac-app-using-spatial-preview.json": {
       "hash": "a79f3722a06476669c0e85c33172cd9b16c002c66d585e2d078fce9b7f236ba5",
-      "last_checked": "2026-09-18T07:39:15.782332",
+      "last_checked": "2026-09-22T07:41:36.354958",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1408-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/working-with-content-from-your-mac-app-using-spatial-preview.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/bridging-an-external-usd-runtime-to-spatial-preview.json": {
       "hash": "55627f6b96290e6f5f290aa0e087aadef17118c719fce847858afa842a25844e",
-      "last_checked": "2026-09-18T07:39:15.931588",
+      "last_checked": "2026-09-22T07:41:36.519805",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"6ad4-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/bridging-an-external-usd-runtime-to-spatial-preview.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewendpoint.json": {
       "hash": "9fe5b4487edf7ef43213d159e5b37f8ba84f25f3940ff10a6668cd58564ad933",
-      "last_checked": "2026-09-18T07:39:16.051674",
+      "last_checked": "2026-09-22T07:41:36.660823",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"3a3f-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewendpoint.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewdevicepicker.json": {
       "hash": "a9a6ba31bb991036c5354aec593db25569a9c6de2001afb98726622735d9e645",
-      "last_checked": "2026-09-18T07:39:16.164732",
+      "last_checked": "2026-09-22T07:41:36.843822",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"24c2-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewdevicepicker.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver.json": {
       "hash": "a07bd890a675a8fc55429849933d22ec1dc679c50fa6652abd5907147b24b2d3",
-      "last_checked": "2026-09-18T07:39:16.305979",
+      "last_checked": "2026-09-22T07:41:36.982611",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"3406-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession.json": {
       "hash": "1fd32832e0499b7546b88b19786ae395291586344930459330ff30dbf153b81f",
-      "last_checked": "2026-09-18T07:39:16.435427",
+      "last_checked": "2026-09-22T07:41:37.108673",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"2148-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession.json": {
       "hash": "013475a2ca50a0a77492f31d22be88834b2ce010e3507b3bacd3301633bc6e20",
-      "last_checked": "2026-09-18T07:39:16.578748",
+      "last_checked": "2026-09-22T07:41:37.202242",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"6969-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession.json": {
       "hash": "f3469e72ef21005eb28a215b55676c1a62ae8ac9699a0c57fdbcd4c3dfdaf195",
-      "last_checked": "2026-09-18T07:39:16.699343",
+      "last_checked": "2026-09-22T07:41:37.406785",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"61fe-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate.json": {
       "hash": "208710f6dbf1ded41b3a1b0d41abe18a2bd8e45cdc9ebadf5d1d9e92c6270270",
-      "last_checked": "2026-09-18T07:39:16.817084",
+      "last_checked": "2026-09-22T07:41:37.483940",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"3899-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror.json": {
       "hash": "f5f66fd34afb8a10578bdf0a75440f5367ad0eeb9679ff303f672e55a49e3949",
-      "last_checked": "2026-09-18T07:39:16.952688",
+      "last_checked": "2026-09-22T07:41:37.617980",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"31ba-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/unavailableerror.json": {
       "hash": "aef0553ce9cbb29f5646199c5143cd8b5160ebba02fdf6e63090e0f61b6ebf7a",
-      "last_checked": "2026-09-18T07:39:17.058208",
+      "last_checked": "2026-09-22T07:41:37.774413",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"288c-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/unavailableerror.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/error.json": {
       "hash": "8675ff9c0ad1babb31d102e3b928e0063070bf2128cf2ac46741c799ab61502c",
-      "last_checked": "2026-09-18T07:39:17.217385",
+      "last_checked": "2026-09-22T07:41:37.893367",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"3200-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event.json": {
       "hash": "cfab1ab425ceedcc6b6594dd2ac338e3add24e5b55614994ddbab9d00cfe020d",
-      "last_checked": "2026-09-18T07:39:17.327301",
+      "last_checked": "2026-09-22T07:41:38.068847",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"304e-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewdevicepicker/init(ispresented:onselect:).json": {
       "hash": "0e736df70c6ba993dbe592ee6aea1aacf33552f0edaea121b5f00e009c8c346f",
-      "last_checked": "2026-09-18T07:39:17.530626",
+      "last_checked": "2026-09-22T07:41:38.170550",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"2641-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewdevicepicker/init-ispresentedonselect.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/init().json": {
       "hash": "97e93c5f8a8a47b47808cd3446428758c0feacf1c2ac48f1350430ceeed27882",
-      "last_checked": "2026-09-18T07:39:17.661113",
+      "last_checked": "2026-09-22T07:41:38.308677",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"11b7-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/init.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/endpoint.json": {
       "hash": "a0578dd45056b257435bba96c157ea916ed22720755d0e46131adc79e24be7c2",
-      "last_checked": "2026-09-18T07:39:17.762438",
+      "last_checked": "2026-09-22T07:41:38.454229",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"22f4-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/endpoint.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/isendpointavailable.json": {
       "hash": "4754776a069475acf4ee8ade4d4c6bf2e3c8a506110b8f53b51cbb89cadaef86",
-      "last_checked": "2026-09-18T07:39:17.897707",
+      "last_checked": "2026-09-22T07:41:38.573361",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1835-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/isendpointavailable.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession/progress.json": {
       "hash": "ce9888b6abe36803a03e2de320c08865f117560d405883e7ab34e65c70c3edc9",
-      "last_checked": "2026-09-18T07:39:18.046893",
+      "last_checked": "2026-09-22T07:41:38.756710",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1335-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/progress.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession/state.json": {
       "hash": "92063adf8f036632339c1e847dfb0aee95a8110896a3fddfb2ca4a02a6e394ba",
-      "last_checked": "2026-09-18T07:39:18.156513",
+      "last_checked": "2026-09-22T07:41:38.850751",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1355-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/state.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession/close().json": {
       "hash": "ccbb80ab68d969244b4d1b25dde4bbd6f286d9c87440c183d095ad5c3737734d",
-      "last_checked": "2026-09-18T07:39:18.291221",
+      "last_checked": "2026-09-22T07:41:39.028878",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1005-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/close.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/init(name:contenttype:).json": {
       "hash": "721ef26e531845c2364673cb0a0a5c10d0b66f6feae299fa71619ddba5e34746",
-      "last_checked": "2026-09-18T07:39:18.416763",
+      "last_checked": "2026-09-22T07:41:39.126704",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"190c-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/init-namecontenttype.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/contenttype.json": {
       "hash": "21e45e4aad951be92394fac9faebdd905f4732f494f4f92dc33659122c6a5ccd",
-      "last_checked": "2026-09-18T07:39:18.542419",
+      "last_checked": "2026-09-22T07:41:39.256363",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"138f-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/contenttype.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/name.json": {
       "hash": "8130a7f384a8c694c999a7164763e3dc44d15b89ae5c984f1dbe8a250d1cb81f",
-      "last_checked": "2026-09-18T07:39:18.677078",
+      "last_checked": "2026-09-22T07:41:39.380524",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"11eb-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/name.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/start(endpoint:).json": {
       "hash": "bcce331264b5dadef3d7c6882b28c831619df07b2b5e588f3af6c3b2525ef06e",
-      "last_checked": "2026-09-18T07:39:18.831401",
+      "last_checked": "2026-09-22T07:41:39.504067",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"284b-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/start-endpoint.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/updatecontents(data:).json": {
       "hash": "74707789a84d2dc5a9e86a5e62b4cf4572a072496d7522f5348d1d1b9983e938",
-      "last_checked": "2026-09-18T07:39:18.960016",
+      "last_checked": "2026-09-22T07:41:39.634801",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"15e1-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/updatecontents-data.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/updatecontents(url:).json": {
       "hash": "9f2001df6358555ad3b717d4b79ecc732c6c1c04595750e8da67a0078807a2ab",
-      "last_checked": "2026-09-18T07:39:19.096961",
+      "last_checked": "2026-09-22T07:41:39.818804",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1637-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/updatecontents-url.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationsteps.json": {
       "hash": "a538d11697e268e499bc396f781fe53fdf37443c5c990be34b3da927f602be50",
-      "last_checked": "2026-09-18T07:39:19.306425",
+      "last_checked": "2026-09-22T07:41:40.024321",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"2ebe-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions.json": {
       "hash": "722fffcef31184b47c265cc75516861670cde2e835d0755235c5c9287d923b0a",
-      "last_checked": "2026-09-18T07:39:19.439964",
+      "last_checked": "2026-09-22T07:41:40.396937",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"3d26-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/init(stage:).json": {
       "hash": "811f9af80c01e744c199aea4a353581457179597ed4100ca33f167256383e80a",
-      "last_checked": "2026-09-18T07:39:19.553956",
+      "last_checked": "2026-09-22T07:41:40.495668",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"12b6-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/init-stage.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/events.json": {
       "hash": "e8ee8c377b12206eb45763ce872357f7d0303eb4c18ce4ce78ad7e09b5da918b",
-      "last_checked": "2026-09-18T07:39:19.792596",
+      "last_checked": "2026-09-22T07:41:40.754731",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1cd8-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/events.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/isplaying.json": {
       "hash": "50dd23ae13cbc8679f7d770674edf77b25974033977025a2399110c1664bc02a",
-      "last_checked": "2026-09-18T07:39:19.914137",
+      "last_checked": "2026-09-22T07:41:40.884808",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1278-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/isplaying.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/time.json": {
       "hash": "c65bcba0e5a2548e332a07ddf751fbe501d1d292f142c180762666463867568b",
-      "last_checked": "2026-09-18T07:39:20.063331",
+      "last_checked": "2026-09-22T07:41:41.018869",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1487-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/time.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/start(endpoint:parameters:vieweroptions:).json": {
       "hash": "41a17d438265d7b09cc9ec1078f67330a940bbfdfa8849b19685cbe08856cd64",
-      "last_checked": "2026-09-18T07:39:20.193162",
+      "last_checked": "2026-09-22T07:41:41.203218",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"426d-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/start-endpointparametersvieweroptions.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationparameters.json": {
       "hash": "7b78a23c97d50f110cd15f1357d0cde6bd48ddff2c655d5cd1e4efd3224de2b6",
-      "last_checked": "2026-09-18T07:39:20.493073",
+      "last_checked": "2026-09-22T07:41:41.428192",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"201a-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/connected.json": {
       "hash": "db73bd6f4d097275331d2f15f2bf5effda085168f7eec678eaf00dae699030b4",
-      "last_checked": "2026-09-18T07:39:20.621578",
+      "last_checked": "2026-09-22T07:41:41.544891",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"119e-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/connected.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/interrupted.json": {
       "hash": "29a69805291398bfa3283299ffb71daaa4c8ab3d3b5712da9df2d6a45d1c9532",
-      "last_checked": "2026-09-18T07:39:20.773983",
+      "last_checked": "2026-09-22T07:41:41.689359",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"11eb-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/interrupted.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/invalidated.json": {
       "hash": "2262e1fb892e4da6ea7b62cc510e98d214bc5ba2858081c1a0aac6eeed4fd282",
-      "last_checked": "2026-09-18T07:39:20.904162",
+      "last_checked": "2026-09-22T07:41:41.805727",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"11e9-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/invalidated.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/waiting.json": {
       "hash": "4ec812f2b6755e9356fe4e60381d386b5b2ab88d1542e1d59b9ef2d43906206f",
-      "last_checked": "2026-09-18T07:39:21.084641",
+      "last_checked": "2026-09-22T07:41:41.960669",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"11a2-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/waiting.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/isinvalidated.json": {
       "hash": "b9ff235a26446a2112130cb8f583cdc2c1270d3612360522438d367ee5b604c1",
-      "last_checked": "2026-09-18T07:39:21.225120",
+      "last_checked": "2026-09-22T07:41:42.037795",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"125a-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/isinvalidated.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror/invalidspatialpreviewendpoint.json": {
       "hash": "f50c4c495e821958f5fa02532992dfa7f279f420927fe80f691e7156050880c2",
-      "last_checked": "2026-09-18T07:39:21.354683",
+      "last_checked": "2026-09-22T07:41:42.161071",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"f0f-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/invalidspatialpreviewendpoint.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror/invalidated.json": {
       "hash": "69bd8d1046b13d44a02c23bc54eaaa1e8a0da6bcc64939c19cacb3e1149e4380",
-      "last_checked": "2026-09-18T07:39:21.501695",
+      "last_checked": "2026-09-22T07:41:42.267101",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"dc4-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/invalidated.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror/toomanysessions.json": {
       "hash": "443303dcc32337006ed3a32eb5643c1ba08e43e16d1916cf3991f9a65e05acea",
-      "last_checked": "2026-09-18T07:39:21.629638",
+      "last_checked": "2026-09-22T07:41:42.597479",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"eaa-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/toomanysessions.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/error/assetunshareable.json": {
       "hash": "d7cac50a2e0810dcf8fc4b7208d9c7f2da4920ee646ae88039846cbaa82f5999",
-      "last_checked": "2026-09-18T07:39:21.757378",
+      "last_checked": "2026-09-22T07:41:42.683792",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"118b-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error/assetunshareable.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/error/readonlystage.json": {
       "hash": "06869442ec1c54aa5a5972dbd45ac90ff094e7bddeab3a60074e787330455f02",
-      "last_checked": "2026-09-18T07:39:21.881776",
+      "last_checked": "2026-09-22T07:41:42.829053",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"11de-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error/readonlystage.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event/error(_:).json": {
       "hash": "c66dd96f55f8e46fce2039fc68aeca5c331c998ecdc8358e88ab42965a12a9ee",
-      "last_checked": "2026-09-18T07:39:22.054845",
+      "last_checked": "2026-09-22T07:41:42.971857",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"181f-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/error.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event/playbackstatechanged(isplaying:).json": {
       "hash": "93290511e7c3f29f79967db40027f252b59b7361dc4e8a8245928a35615e45d4",
-      "last_checked": "2026-09-18T07:39:22.187664",
+      "last_checked": "2026-09-22T07:41:43.114944",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"170d-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/playbackstatechanged-isplaying.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event/timechanged(_:).json": {
       "hash": "2314fb0f7ead7775720222459444df463753b16a385f112ba405a7b91de59f77",
-      "last_checked": "2026-09-18T07:39:22.303055",
+      "last_checked": "2026-09-22T07:41:43.239006",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"17ca-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/timechanged.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationsteps/compressed.json": {
       "hash": "98c6f5d2dc140ebe10318ee4dece5bd9bd1b6e8e0a11885f87c085bde8bfe87e",
-      "last_checked": "2026-09-18T07:39:22.847463",
+      "last_checked": "2026-09-22T07:41:44.087863",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1c79-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps/compressed.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationsteps/optimized.json": {
       "hash": "2e70ca1742af9d7b8f544bc878a0bbc33b66f78dca6dbee1d177ae3d5e7e8233",
-      "last_checked": "2026-09-18T07:39:23.031316",
+      "last_checked": "2026-09-22T07:41:44.216927",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"19a1-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps/optimized.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/description.json": {
       "hash": "6052cc7646ef631d9b5c62f09da615c00b65373c0ded40df281fc47f9281d444",
-      "last_checked": "2026-09-18T07:39:23.157689",
+      "last_checked": "2026-09-22T07:41:44.331493",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"15fa-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/description.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/annotations.json": {
       "hash": "24a01a400cd6773ba7aa4ca93fcfc363228d59aa7916711a70dc13627d6c7d5e",
-      "last_checked": "2026-09-18T07:39:23.288600",
+      "last_checked": "2026-09-22T07:41:44.447251",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1809-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/annotations.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/default.json": {
       "hash": "3ba4090970b737c5b608e851c0ad6bb21e121aea7ab54a2263ea4f9802f0e4e4",
-      "last_checked": "2026-09-18T07:39:23.417403",
+      "last_checked": "2026-09-22T07:41:44.595762",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"178a-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/default.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/export.json": {
       "hash": "af1f9c1894defd7055b7373d32ee40d5acf3ac8aa6f32c0da24de0036570eea2",
-      "last_checked": "2026-09-18T07:39:23.554798",
+      "last_checked": "2026-09-22T07:41:44.702116",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1793-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/export.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/perobjectmanipulation.json": {
       "hash": "30ce8ee89c236ca43fb3e072a2176a13940c0c4f25b2291788e5a5c226edb094",
-      "last_checked": "2026-09-18T07:39:23.682327",
+      "last_checked": "2026-09-22T07:41:44.870647",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1891-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/perobjectmanipulation.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationparameters/processed(_:).json": {
       "hash": "4955d089404308e195d67d43da98d5ea65e64ad97b89cbcc86c463f2e19cdc34",
-      "last_checked": "2026-09-18T07:39:23.815773",
+      "last_checked": "2026-09-22T07:41:45.023648",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1ab6-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters/processed.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationparameters/unmodified.json": {
       "hash": "bde874c985118e055c31a2734168bc381645c0e2dcd6659b3dd4f43397abfd1d",
-      "last_checked": "2026-09-18T07:39:23.980192",
+      "last_checked": "2026-09-22T07:41:45.138830",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1216-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters/unmodified.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate.json": {
       "hash": "0e1e86cfe04969714fdbb3ee3819fea8fc76b9774e55eab1952e533058d618bd",
-      "last_checked": "2026-09-18T07:39:19.221381",
+      "last_checked": "2026-09-22T07:41:39.915964",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"2d71-65b79199db8c9-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/delegate.json": {
       "hash": "c449329af772f1fd6615111747cc0495033603568386749d5006937d7b561843",
-      "last_checked": "2026-09-18T07:39:19.675262",
+      "last_checked": "2026-09-22T07:41:40.670551",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"1692-65b3b3fadd225-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/delegate.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/updateundoredocounts(undo:redo:).json": {
       "hash": "b577e893d6bb6a0ea794d5b7677aa77718bcdc204b5237c519438a403937bc55",
-      "last_checked": "2026-09-18T07:39:20.335719",
+      "last_checked": "2026-09-22T07:41:41.286131",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"181d-65b3b3fae9730-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/updateundoredocounts-undoredo.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(instanceidentifier:operationidentifier:).json": {
       "hash": "96e5149b4b7ec5bdf910cab480b6b52387ca3e4b38b7154cc67346f2fc467aee",
-      "last_checked": "2026-09-18T07:39:22.511227",
+      "last_checked": "2026-09-22T07:41:43.487439",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"273f-65b79199e03c4-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges-instanceidentifieroperationidentifier.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/onredorequest().json": {
       "hash": "c1ab2b4a97dc8dade1d8de8599496be1ad150068d27088219ae4f6940fb1707b",
-      "last_checked": "2026-09-18T07:39:22.644066",
+      "last_checked": "2026-09-22T07:41:43.727180",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"193f-65b79199e03c4-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/onredorequest.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/onundorequest().json": {
       "hash": "e3919b9acc69a0920a69f60254b819893a3046d52e18366169bcbbb4b1da56e1",
-      "last_checked": "2026-09-18T07:39:22.576836",
+      "last_checked": "2026-09-22T07:41:43.615460",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"193f-65b79199e03c4-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/onundorequest.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(instanceidentifier:operationidentifier:).json": {
       "hash": "8e58f74e57426681c2f40d6aef1681d3496187d139f6bc4f391b0157b29683e4",
-      "last_checked": "2026-09-18T07:39:22.435967",
+      "last_checked": "2026-09-22T07:41:43.360964",
       "status": "unchanged",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"2746-65b79199e03c4-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges-instanceidentifieroperationidentifier.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(_:).json": {
       "hash": "870cc67fd42b2ee480bea74d59e7bdd834460a8be2d9462fb6db7c33528a895f",
-      "last_checked": "2026-09-18T07:39:22.704211",
+      "last_checked": "2026-09-22T07:41:43.861215",
       "status": "new",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"26a3-65b79199e03c4-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(_:).json": {
       "hash": "af8fa7f12e0b2fe4f0df447b65398fbbc5c779572286a04501edd6d51fa45831",
-      "last_checked": "2026-09-18T07:39:22.778785",
+      "last_checked": "2026-09-22T07:41:43.969578",
       "status": "new",
-      "session_id": "2026-09-18T07:39:15.295505",
+      "session_id": "2026-09-22T07:41:35.853329",
       "etag": "\"26ae-65b79199e03c4-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges.md"
     },

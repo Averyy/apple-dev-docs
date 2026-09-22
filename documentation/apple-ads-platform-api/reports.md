@@ -53,7 +53,7 @@ Granularity is an optional time-series breakdown that applies to `granularMetric
 
 | Granularity | Constraint |
 | --- | --- |
-| `HOURLY` | Date range must start within the last 7 days. Ad-level and search term-level reports don’t support it. |
+| `HOURLY` | Date range must span 7 days or less, and `start` must fall within the last 365 days. Ad-level and search term-level reports don’t support it. |
 | `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
 | `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
 | `MONTHLY` | End date must be at least 90 days in the past. |
@@ -67,10 +67,10 @@ Apps and Brands campaigns measure different coverage: app installs and engagemen
 | Feature | Apps (`apps`) | Brands (`business-brands`) |
 | --- | --- | --- |
 | Request object | [`AppsReportingRequest`](appsreportingrequest.md) | [`BrandsReportingRequest`](brandsreportingrequest.md) |
-| Campaign/ad-group `groupBy` dimensions | `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `storefront`, `countryOrRegion` | `deviceClass`, `locationId`, `supplyPlacement` |
-| Keyword `groupBy` dimensions | `deviceClass`, `storefront`, `countryOrRegion` | `deviceClass` |
-| Search term `groupBy` dimensions | `deviceClass`, `storefront`, `countryOrRegion` | `deviceClass` |
-| Ad `groupBy` dimensions | `storefront`, `countryOrRegion` | `deviceClass`, `locationId`, `supplyPlacement` |
+| Campaign/ad-group `groupBy` dimensions | `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion` | `deviceClass`, `locationId`, `supplyPlacement` |
+| Keyword `groupBy` dimensions | `deviceClass`, `countryOrRegion` | `deviceClass` |
+| Search term `groupBy` dimensions | `deviceClass`, `countryOrRegion` | `deviceClass` |
+| Ad `groupBy` dimensions | `countryOrRegion` | `deviceClass`, `locationId`, `supplyPlacement` |
 | `EMPTY_METRICS` option | Supported | Not supported |
 | Creative metadata | [`AppsReportingCreative`](appsreportingcreative.md): includes `creativeSpec` and `destination` | [`BrandsReportingCreative`](brandsreportingcreative.md): includes `id`, `creativeType`, and `systemStatus` only |
 | Location-level report | Not available | Not available |

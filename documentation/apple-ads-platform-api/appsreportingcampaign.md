@@ -100,7 +100,7 @@ The `groupBy` dimensions specified in the report request determine the values of
 
 - `id` (int64): The campaign’s unique identifier.
 - `promotedObject` (PromotedObject): See [`PromotedObject`](promotedobject.md) for details.
-- `promotedObjectType` (string): Always `APPSTORE_APP` for Apple Ads campaigns.
+- `promotedObjectType` (string): The type of the promoted object.
 - `promotedObjectId` (string): The Adam ID of the promoted App Store app.
 - `name` (string): The campaign name as configured at report time.
 - `status` (AppsReportingCampaign.Status): Possible values: `ENABLED`, `PAUSED`.

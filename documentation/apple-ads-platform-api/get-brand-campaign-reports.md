@@ -53,12 +53,12 @@ The following metrics are available for brand campaign reports, covering spend, 
 | `actionsPerTap` | Actions divided by taps |
 | `actionsPerImpression` | Actions divided by impressions |
 
-Granularity constraints follow the usual date range rules, from a 7-day lookback for `HOURLY` to a 90-day-old end date for `MONTHLY`.
+Granularity constraints follow the usual date range rules, from a 7-day span limit for `HOURLY` to a 90-day-old end date for `MONTHLY`.
 
 | Granularity | Constraint |
 | --- | --- |
 | `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
-| `HOURLY` | Date range start must be within the last 7 days. |
+| `HOURLY` | Date range must span 7 days or less, and the start date must be within the last 365 days. |
 | `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
 | `MONTHLY` | End date must be at least 90 days in the past. |
 

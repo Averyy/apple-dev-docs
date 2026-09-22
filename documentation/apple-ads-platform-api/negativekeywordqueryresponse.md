@@ -51,7 +51,7 @@ To scope results to a specific campaign or ad group, filter by status, or retrie
   "pagination": {
     "totalCount": 2,
     "offset": 0,
-    "pageSize": 20
+    "pageSize": 2
   }
 }
 ```

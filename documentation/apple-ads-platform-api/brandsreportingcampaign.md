@@ -102,7 +102,7 @@ The `promotedObjectType` field is always `BUSINESS_BRAND` for Maps-based campaig
 
 - `id` (int64): The campaign’s unique identifier.
 - `promotedObject` (PromotedObject): See [`PromotedObject`](promotedobject.md) for details.
-- `promotedObjectType` (string): Possible values: `BUSINESS_BRAND`.
+- `promotedObjectType` (string): The type of the promoted object.
 - `promotedObjectId` (string): The brand ID of the promoted Maps business.
 - `name` (string): The campaign name as configured at report time.
 - `status` (BrandsReportingCampaign.Status): Possible values: `ENABLED`, `PAUSED`.

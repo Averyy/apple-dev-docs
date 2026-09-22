@@ -37,7 +37,7 @@ While inspecting the header, examine the `largestProcess` field—this field nam
 
 A jetsam event report contains a `processes` array, with each item in the array describing a single process in the system. Search for the `reason` key to identify the jettisoned process and why the system jettisoned it. Only the jettisoned process has the reason key.
 
-> ❗ **Important**: If your app crashed, but the jettisoned process isn’t your app, then the crash isn’t due to memory pressure. To diagnose your app’s issue, see doc:acquiring-crash-reports-and-diagnostic-logs to locate its crash report.
+> ❗ **Important**: If your app crashed, but the jettisoned process isn’t your app, then the crash isn’t due to memory pressure. To diagnose your app’s issue, see [`Acquiring crash reports and diagnostic logs`](acquiring-crash-reports-and-diagnostic-logs.md) to locate its crash report.
 
 This example is one process entry in the `processes` array:
 

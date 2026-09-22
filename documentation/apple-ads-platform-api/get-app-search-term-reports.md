@@ -28,7 +28,7 @@ See [`AppsReportingRequest`](appsreportingrequest.md).
 
 ##### Groupby Dimensions
 
-`deviceClass`, `storefront`, `countryOrRegion`
+`deviceClass`, `countryOrRegion`
 
 The following dimensions are **not** supported for the `SEARCHTERM` entity: `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`.
 
@@ -97,7 +97,7 @@ POST /v1/reports/apps/searchterms/query
          "campaignId": 444555666,
          "adAccountId": 123456789,
          "searchTermText": "best productivity app 2025",
-         "searchTermSource": "SEARCH",
+         "searchTermSource": "AUTO",
          "keyword": {
            "id": 888999000,
            "campaignId": 444555666,
@@ -158,7 +158,7 @@ POST /v1/reports/apps/searchterms/query
          "campaignId": 444555666,
          "adAccountId": 123456789,
          "searchTermText": "task management tools",
-         "searchTermSource": "SEARCH",
+         "searchTermSource": "TARGETED",
          "keyword": {
            "id": 888999001,
            "campaignId": 444555666,
@@ -273,7 +273,7 @@ POST /v1/reports/apps/searchterms/query
          "campaignId": 444555666,
          "adAccountId": 123456789,
          "searchTermText": "organize tasks",
-         "searchTermSource": "SEARCH",
+         "searchTermSource": "TARGETED",
          "keyword": {
            "id": 888999002,
            "campaignId": 444555666,

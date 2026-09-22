@@ -3,7 +3,7 @@
 **Framework**: Apple Ads Platform API  
 **Kind**: dictionary
 
-Campaign-level metrics for brands, inheriting all properties from `BrandsMetrics`.
+Campaign-level performance metrics for brands.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
@@ -20,7 +20,7 @@ The `BrandsCampaignMetrics` extends [`BrandsMetrics`](brandsmetrics.md) with no 
 
 ## Properties
 
-- `date` (date): Report date in YYYY-MM-DD format.
+- `date` (string): Report date. Uses YYYY-MM-DD for DAILY, WEEKLY, and MONTHLY granularity, or YYYY-MM-DD HH (hour in 24-hour time) for HOURLY granularity.
 - `localSpend` (Money): Total spend. See [`Money`](money.md).
 - `impressions` (int64): Total ad impressions.
 - `taps` (int64): Total ad taps.
