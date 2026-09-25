@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A screenshot of the in-app purchase flow submitted alongside an in-app purchase for App Store review.
+A screenshot of the In-App Purchase flow submitted alongside an In-App Purchase for App Store review.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -18,7 +18,7 @@ object InAppPurchaseAppStoreReviewScreenshot
 
 ### Objects
 - [object InAppPurchaseAppStoreReviewScreenshot.Attributes](inapppurchaseappstorereviewscreenshot/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase App Store review screenshot resource.
+  Attributes that describe an In-App Purchase App Store review screenshot resource.
 - [object InAppPurchaseAppStoreReviewScreenshot.Relationships](inapppurchaseappstorereviewscreenshot/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
@@ -33,11 +33,11 @@ object InAppPurchaseAppStoreReviewScreenshot
 ## See Also
 
 - [object InAppPurchaseAppStoreReviewScreenshotCreateRequest](inapppurchaseappstorereviewscreenshotcreaterequest.md)
-  The request body you use to create an in-app purchase App Store review screenshot.
+  The request body you use to create an In-App Purchase App Store review screenshot.
 - [object InAppPurchaseAppStoreReviewScreenshotResponse](inapppurchaseappstorereviewscreenshotresponse.md)
-  A response containing a single App Store review screenshot for an in-app purchase.
+  A response containing a single App Store review screenshot for an In-App Purchase.
 - [object InAppPurchaseAppStoreReviewScreenshotUpdateRequest](inapppurchaseappstorereviewscreenshotupdaterequest.md)
-  The request body you use to update an in-app purchase App Store review screenshot update request.
+  The request body you use to update an In-App Purchase App Store review screenshot update request.
 
 
 ---

@@ -2,7 +2,7 @@
 
 **Framework**: App Store Connect API
 
-Manage all aspects of your app, App Clips, in-app purchases, and customer reviews in the App Store.
+Manage all aspects of your app, App Clips, In-App Purchases, and customer reviews in the App Store.
 
 ## Topics
 
@@ -31,15 +31,15 @@ Manage all aspects of your app, App Clips, in-app purchases, and customer review
   View, and assign to builds, the declarations about types of encryption used in your app.
 ### In-App Purchases and Subscriptions
 - [In-App Purchase](in-app-purchase.md)
-  Create and manage in-app purchases, including localizations, price schedules, and submissions for review.
+  Create and manage In-App Purchases, including localizations, price schedules, and submissions for review.
 - [Auto-Renewable Subscriptions](auto-renewable-subscriptions.md)
   Create and manage auto-renewable subscriptions, including managing subscription groups and submissions for review.
 - [Promoted Purchases](promoted-purchases-top.md)
-  Manage promoted in-app purchases and auto-renewable subscriptions, including their visibility and images.
+  Manage promoted In-App Purchases and auto-renewable subscriptions, including their visibility and images.
 - [Win-back offers](win-back-offers.md)
   Create and manage win-back offers for your auto-renewable subscriptions.
 - [In-App Purchase and Subscription App Store Review Submissions](in-app-purchase-and-subscription-app-store-review-submissions.md)
-  Manage submissions for App Store Review for in-app purchases and auto-renewable subscriptions, including their screenshots.
+  Manage submissions for App Store Review for In-App Purchases and auto-renewable subscriptions, including their screenshots.
 - [Testing In-App Purchase and Subscriptions](testing-in-app-purchase-and-subscriptions.md)
 ### Customer Reviews and Responses
 - [Customer Reviews](customer-reviews.md)

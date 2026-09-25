@@ -4,6 +4,10 @@
 
 Check whether your app is eligible to promote in a campaign.
 
+#### Overview
+
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 ## Topics
 
 ### App Eligibility Endpoints

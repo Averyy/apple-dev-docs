@@ -2,12 +2,12 @@
 
 **Framework**: App Store Connect API
 
-Create, commit, and delete images for a promoted in-app purchase.
+Create, commit, and delete images for a promoted In-App Purchase.
 
 ## See Also
 
 - [Promoted Purchases](promoted-purchases.md)
-  Manage the in-app purchase or auto-renewable subscription that’s promoted on an app listing in the App Store.
+  Manage the In-App Purchase or auto-renewable subscription that’s promoted on an app listing in the App Store.
 
 
 ---

@@ -59,6 +59,8 @@ Each subscription has a version, which is the container for the localizations an
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 - [Querying adjusted subscription price equalizations](querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
+- [Configuring multi-seat subscriptions for organizations](configuring-multi-seat-subscriptions-for-organizations.md)
+  Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscriptions](subscriptions.md)
   Create, modify, and delete auto-renewable subscriptions for your app.
 - [Subscription Localizations](subscription-localizations.md)

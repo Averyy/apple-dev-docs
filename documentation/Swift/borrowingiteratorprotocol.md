@@ -41,8 +41,8 @@ protocol BorrowingIteratorProtocol<Element, Failure> : ~Copyable, ~Escapable
 
 ## See Also
 
-- [protocol IteratorProtocol](iteratorprotocol.md)
-  A type that supplies the values of a sequence one at a time.
+- [protocol Iterable](iterable.md)
+  A type that provides sequential, borrowing access to its elements.
 - [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
 
 

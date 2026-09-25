@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-Attributes that describe an in-app purchase content resource.
+Attributes that describe an In-App Purchase content resource.
 
 **Availability**:
 - App Store Connect API 2.0+

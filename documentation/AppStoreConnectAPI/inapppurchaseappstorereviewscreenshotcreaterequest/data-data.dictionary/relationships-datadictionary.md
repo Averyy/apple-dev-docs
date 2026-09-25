@@ -26,7 +26,7 @@ object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Attributes](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase App Store review screenshot create request resource.
+  Attributes that describe an In-App Purchase App Store review screenshot create request resource.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update an activity version version.
+The request body you use to update an activity version.
 
 **Availability**:
 - App Store Connect API 4.0+

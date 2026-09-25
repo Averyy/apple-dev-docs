@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to modify an in-app purchase image with the v2 API.
+The request body you use to modify an In-App Purchase image with the v2 API.
 
 **Availability**:
 - App Store Connect API 4.4.1+
@@ -18,7 +18,7 @@ object InAppPurchaseImageV2UpdateRequest.Data
 
 ### Objects
 - [object InAppPurchaseImageV2UpdateRequest.Data.Attributes](inapppurchaseimagev2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase image update request resource.
+  Attributes that describe an In-App Purchase image update request resource.
 
 ## Properties
 

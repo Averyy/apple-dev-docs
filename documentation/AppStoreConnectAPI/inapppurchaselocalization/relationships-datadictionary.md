@@ -26,7 +26,7 @@ object InAppPurchaseLocalization.Relationships
 ## See Also
 
 - [object InAppPurchaseLocalization.Attributes](inapppurchaselocalization/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase localization resource.
+  Attributes that describe an In-App Purchase localization resource.
 
 
 ---

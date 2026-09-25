@@ -1,32 +1,32 @@
-# Working with in-app purchase versions
+# Working with In-App Purchase versions
 
 **Framework**: App Store Connect API
 
-Manage draft versions of an in-app purchase’s localized metadata and review images before submitting for App Review.
+Manage draft versions of an In-App Purchase’s localized metadata and review images before submitting for App Review.
 
 #### Overview
 
-An in-app purchase version is a draft container that groups the localized metadata and review images that go through App Review together. Create a version, attach localizations and images to it, then submit the version through the review submissions workflow. The parent in-app purchase resource holds properties that stay stable across versions — its product ID, in-app purchase type, and pricing — while each version captures the reviewable metadata for a single review cycle.
+An In-App Purchase version is a draft container that groups the localized metadata and review images that go through App Review together. Create a version, attach localizations and images to it, then submit the version through the review submissions workflow. The parent In-App Purchase resource holds properties that stay stable across versions — its product ID, In-App Purchase type, and pricing — while each version captures the reviewable metadata for a single review cycle.
 
-> **Note**:  The pre-4.4.1 workflow that posts localizations and images directly to the in-app purchase (`POST /v1/inAppPurchaseLocalizations`, `POST /v1/inAppPurchaseImages`) is deprecated as of 4.4.1 but remains available for existing integrations. For guidance on moving to the version-based workflow, see [`Migrating in-app purchase metadata to v2`](migrating-in-app-purchase-metadata-to-v2.md).
+> **Note**:  The pre-4.4.1 workflow that posts localizations and images directly to the In-App Purchase (`POST /v1/inAppPurchaseLocalizations`, `POST /v1/inAppPurchaseImages`) is deprecated as of 4.4.1 but remains available for existing integrations. For guidance on moving to the version-based workflow, see [`Migrating In-App Purchase metadata to v2`](migrating-in-app-purchase-metadata-to-v2.md).
 
 ##### Understand the Version Lifecycle
 
 A version moves through these states, exposed on `InAppPurchaseVersion/Attributes/state`:
 
-- `PREPARE_FOR_SUBMISSION`: the version is being edited. Localizations and images can be added, changed, or removed.
-- `READY_FOR_REVIEW`: the version is attached to a review submission and awaiting the submission to be marked `submitted`.
-- `WAITING_FOR_REVIEW`: the review submission has been submitted and the version is queued.
+- `PREPARE_FOR_SUBMISSION`: The version is open for editing. You can add, change, or remove localizations and images.
+- `READY_FOR_REVIEW`: The version belongs to a review submission and is waiting for you to mark that submission `submitted`.
+- `WAITING_FOR_REVIEW`: You submitted the review submission, and the version is queued.
 - `IN_REVIEW`: App Review is actively reviewing the version.
-- `ACCEPTED` or `APPROVED`: the version passed review.
-- `REJECTED` or `DEVELOPER_REJECTED`: the version was rejected by App Review or withdrawn by the developer.
-- `REPLACED_WITH_NEW_VERSION`: a newer version supersedes this one.
+- `ACCEPTED` or `APPROVED`: The version passed review.
+- `REJECTED` or `DEVELOPER_REJECTED`: App Review rejected the version, or you withdrew it.
+- `REPLACED_WITH_NEW_VERSION`: A newer version supersedes this one.
 
 Versions are read-only after creation. To change a version’s contents, create a new version.
 
 ##### Create a Version
 
-Create a draft version with `POST /v1/inAppPurchaseVersions` ([`Create an in-app purchase version`](post-v1-inapppurchaseversions.md)). Relate it to the in-app purchase whose metadata you’re updating:
+Create a draft version with `POST /v1/inAppPurchaseVersions` ([`Create an In-App Purchase version`](post-v1-inapppurchaseversions.md)). Relate it to the In-App Purchase whose metadata you’re updating:
 
 ```json
 {
@@ -48,7 +48,7 @@ The response returns the new version’s `id` and a `state` of `PREPARE_FOR_SUBM
 
 ##### Attach a Localization to the Version
 
-Add a localized display name and description with `POST /v2/inAppPurchaseLocalizations` ([`Create an in-app purchase localization`](post-v2-inapppurchaselocalizations.md)). The payload relates the localization to the version, not the parent in-app purchase:
+Add a localized display name and description with `POST /v2/inAppPurchaseLocalizations` ([`Create an In-App Purchase localization`](post-v2-inapppurchaselocalizations.md)). The payload relates the localization to the version, not the parent In-App Purchase:
 
 ```json
 {
@@ -71,13 +71,13 @@ Add a localized display name and description with `POST /v2/inAppPurchaseLocaliz
 }
 ```
 
-Repeat for each locale you support. To list the localizations attached to a version, use `GET /v1/inAppPurchaseVersions/{id}/localizations` ([`List localizations for an in-app purchase version`](get-v1-inapppurchaseversions-_id_-localizations.md)).
+Repeat for each locale you support. To list the localizations attached to a version, use `GET /v1/inAppPurchaseVersions/{id}/localizations` ([`List localizations for an In-App Purchase version`](get-v1-inapppurchaseversions-_id_-localizations.md)).
 
 ##### Attach a Review Image to the Version
 
-An in-app purchase version can carry review images that show the promotion image customers see on the App Store product page. Reserve, upload, and commit each image in three steps.
+An In-App Purchase version can carry review images that show the promotion image customers see on the App Store product page. Reserve, upload, and commit each image in three steps.
 
-Reserve an image with `POST /v2/inAppPurchaseImages` ([`Create an in-app purchase image`](post-v2-inapppurchaseimages.md)):
+Reserve an image with `POST /v2/inAppPurchaseImages` ([`Create an In-App Purchase image`](post-v2-inapppurchaseimages.md)):
 
 ```json
 {
@@ -101,7 +101,7 @@ Reserve an image with `POST /v2/inAppPurchaseImages` ([`Create an in-app purchas
 
 The response returns an `id` for the image and a set of `uploadOperations` describing how to `PUT` the file bytes.
 
-Upload the image bytes to the URL from `uploadOperations`. Then commit the upload with `PATCH /v2/inAppPurchaseImages/{id}` ([`Modify an in-app purchase image`](patch-v2-inapppurchaseimages-_id_.md)):
+Upload the image bytes to the URL from `uploadOperations`. Then commit the upload with `PATCH /v2/inAppPurchaseImages/{id}` ([`Modify an In-App Purchase image`](patch-v2-inapppurchaseimages-_id_.md)):
 
 ```json
 {
@@ -115,42 +115,42 @@ Upload the image bytes to the URL from `uploadOperations`. Then commit the uploa
 }
 ```
 
-Read image metadata with `GET /v2/inAppPurchaseImages/{id}` ([`Read in-app purchase image information`](get-v2-inapppurchaseimages-_id_.md)). Remove an image with `DELETE /v2/inAppPurchaseImages/{id}` ([`Delete an in-app purchase image`](delete-v2-inapppurchaseimages-_id_.md)).
+Read image metadata with `GET /v2/inAppPurchaseImages/{id}` ([`Read In-App Purchase image information`](get-v2-inapppurchaseimages-_id_.md)). Remove an image with `DELETE /v2/inAppPurchaseImages/{id}` ([`Delete an In-App Purchase image`](delete-v2-inapppurchaseimages-_id_.md)).
 
 For more on the reserve-upload-commit pattern, see [`Uploading Assets to App Store Connect`](uploading-assets-to-app-store-connect.md).
 
 ##### List All Versions for an in App Purchase
 
-To see every version on a parent in-app purchase, use `GET /v2/inAppPurchases/{id}/versions` ([`List the versions of an in-app purchase`](get-v2-inapppurchases-_id_-versions.md)). The response includes each version’s state, so you can find the current draft, the most recently approved version, and any versions currently in review.
+To see every version on a parent In-App Purchase, use `GET /v2/inAppPurchases/{id}/versions` ([`List the versions of an In-App Purchase`](get-v2-inapppurchases-_id_-versions.md)). The response includes each version’s state, so you can find the current draft, the most recently approved version, and any versions currently in review.
 
 ##### Submit the Version
 
-Submit a completed version through the review submissions workflow. Create a review submission for the app, add the version as an item, and mark the submission as `submitted`. For step-by-step instructions, see [`Managing in-app purchases`](managing-in-app-purchases.md).
+Submit a completed version through the review submissions workflow. Create a review submission for the app, add the version as an item, and mark the submission as `submitted`. For step-by-step instructions, see [`Managing In-App Purchases`](managing-in-app-purchases.md).
 
-When you mark the submission `submitted`, the version moves from `READY_FOR_REVIEW` to `WAITING_FOR_REVIEW`. Poll `GET /v1/inAppPurchaseVersions/{id}` ([`Read in-app purchase version information`](get-v1-inapppurchaseversions-_id_.md)) to watch it continue to `IN_REVIEW` and then `APPROVED` or `REJECTED`.
+When you mark the submission `submitted`, the version moves from `READY_FOR_REVIEW` to `WAITING_FOR_REVIEW`. Poll `GET /v1/inAppPurchaseVersions/{id}` ([`Read In-App Purchase version information`](get-v1-inapppurchaseversions-_id_.md)) to watch it continue to `IN_REVIEW` and then `APPROVED` or `REJECTED`.
 
 ## See Also
 
-- [Managing in-app purchases](managing-in-app-purchases.md)
-  Create in-app purchases, configure their metadata and pricing, submit them for review, and promote them with the App Store Connect API.
-- [Migrating in-app purchase metadata to v2](migrating-in-app-purchase-metadata-to-v2.md)
+- [Managing In-App Purchases](managing-in-app-purchases.md)
+  Create In-App Purchases, configure their metadata and pricing, submit them for review, and promote them with the App Store Connect API.
+- [Migrating In-App Purchase metadata to v2](migrating-in-app-purchase-metadata-to-v2.md)
   Update an existing integration from the pre-4.4.1 metadata workflow to the version-based v2 workflow.
 - [In-App Purchase Versions](in-app-purchase-versions.md)
-  Create and read draft versions of an in-app purchase, with their localized metadata and review images.
+  Create and read draft versions of an In-App Purchase, with their localized metadata and review images.
 - [In-App Purchases](in-app-purchases.md)
-  Create, modify, and delete in-app purchases for your app.
+  Create, modify, and delete In-App Purchases for your app.
 - [In-App Purchase Localizations](in-app-purchase-localizations.md)
-  Create, modify, and delete localized metadata for in-app purchase versions.
-- [In-app purchase localizations (v1)](in-app-purchase-localizations-v1.md)
-  Create, modify, and delete localized metadata for in-app purchases.
-- [In-App purchase price schedules](in-app-purchase-price-schedules.md)
-  Create a scheduled price change for an in-app purchase, and get information about scheduled price changes.
-- [In-app purchase availability](in-app-purchase-availability.md)
-  Read and modify territory availability for an in-app purchase.
-- [In-app purchase images](in-app-purchase-images.md)
-  Create, modify, and delete promotion images for in-app purchases.
-- [In-app purchase images (v1)](in-app-purchase-images-v1.md)
-  Create, modify, and delete promotion images for your in-app purchases.
+  Create, modify, and delete localized metadata for In-App Purchase versions.
+- [In-App Purchase localizations (v1)](in-app-purchase-localizations-v1.md)
+  Create, modify, and delete localized metadata for In-App Purchases.
+- [In-App Purchase price schedules](in-app-purchase-price-schedules.md)
+  Create a scheduled price change for an In-App Purchase, and get information about scheduled price changes.
+- [In-App Purchase availability](in-app-purchase-availability.md)
+  Read and modify territory availability for an In-App Purchase.
+- [In-App Purchase images](in-app-purchase-images.md)
+  Create, modify, and delete promotion images for In-App Purchases.
+- [In-App Purchase images (v1)](in-app-purchase-images-v1.md)
+  Create, modify, and delete promotion images for your In-App Purchases.
 
 
 ---

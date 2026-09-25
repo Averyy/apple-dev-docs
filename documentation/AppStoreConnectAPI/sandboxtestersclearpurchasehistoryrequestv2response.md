@@ -26,13 +26,13 @@ object SandboxTestersClearPurchaseHistoryRequestV2Response
 - [object SandboxTesterV2UpdateRequest](sandboxtesterv2updaterequest.md)
   The request body you use to update a sandbox tester v2update request.
 - [object SandboxTestersClearPurchaseHistoryRequestV2](sandboxtestersclearpurchasehistoryrequestv2.md)
-  A batch request to reset the in-app purchase and subscription history for one or more sandbox Apple IDs.
+  A batch request to reset the In-App Purchase and subscription history for one or more sandbox Apple IDs.
 - [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest](sandboxtestersclearpurchasehistoryrequestv2createrequest.md)
   The request body you use to create a request to clear sandbox tester purchase history.
 - [object SandboxTestersV2Response](sandboxtestersv2response.md)
   The response body for endpoints that list sandbox Apple IDs used for testing.
 - [object SandboxTesterV2](sandboxtesterv2.md)
-  A sandbox Apple ID you use to test in-app purchases and subscriptions in the Xcode sandbox environment.
+  A sandbox Apple ID you use to test In-App Purchases and subscriptions in the Xcode sandbox environment.
 
 
 ---

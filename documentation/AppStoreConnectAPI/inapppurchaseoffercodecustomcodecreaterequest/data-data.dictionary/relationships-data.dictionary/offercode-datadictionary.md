@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to create an in-app purchase offer code custom code for data relationships.
+The request body you use to create an In-App Purchase offer code custom code for data relationships.
 
 **Availability**:
 - App Store Connect API 4.2+

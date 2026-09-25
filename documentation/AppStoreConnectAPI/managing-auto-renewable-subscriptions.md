@@ -259,7 +259,7 @@ You can provide additional attributes to control the duration of the grace perio
 
 ##### Promote Your Auto Renewable Subscriptions
 
-You can promote an auto-renewable subscription to users who visit your app listing in the App Store. Use `POST /v1/promotedPurchases` ([`Promote a purchase`](post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your auto-renewable subscription. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v1/promotedPurchases` ([`Read promoted purchase information for an in-app purchase`](get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases for an app by using `GET /v1/apps/{id}/promotedPurchases` ([`List all promoted purchases for an app`](get-v1-apps-_id_-promotedpurchases.md)).
+You can promote an auto-renewable subscription to users who visit your app listing in the App Store. Use `POST /v1/promotedPurchases` ([`Promote a purchase`](post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your auto-renewable subscription. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v1/promotedPurchases` ([`Read promoted purchase information for an In-App Purchase`](get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases for an app by using `GET /v1/apps/{id}/promotedPurchases` ([`List all promoted purchases for an app`](get-v1-apps-_id_-promotedpurchases.md)).
 
 Here’s an example payload:
 
@@ -298,6 +298,8 @@ Here’s an example payload:
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 - [Querying adjusted subscription price equalizations](querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
+- [Configuring multi-seat subscriptions for organizations](configuring-multi-seat-subscriptions-for-organizations.md)
+  Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
 - [Subscriptions](subscriptions.md)

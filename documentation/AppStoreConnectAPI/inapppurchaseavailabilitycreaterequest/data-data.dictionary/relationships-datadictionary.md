@@ -28,7 +28,7 @@ object InAppPurchaseAvailabilityCreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Attributes](inapppurchaseavailabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase availability create request resource.
+  Attributes that describe an In-App Purchase availability create request resource.
 
 
 ---

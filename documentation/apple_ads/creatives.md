@@ -6,6 +6,8 @@ Create and manage ad creatives within your organization.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 You assign [`Creative`](creative.md) objects to your [`Custom Product Pages`](custom-product-pages.md). You can assign one [`Creative`](creative.md) per custom product page per organization. After assigning your creative, the next step is to [`Create an Ad`](create-an-ad.md) object to assign to an ad group.
 
 ## Topics

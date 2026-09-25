@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get a list of promoted in-app purchases, including promoted auto-renewable subscriptions, for an app.
+Get a list of promoted In-App Purchases, including promoted auto-renewable subscriptions, for an app.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -11,7 +11,7 @@ Get a list of promoted in-app purchases, including promoted auto-renewable subsc
 ## Mentions
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
-- [Managing in-app purchases](managing-in-app-purchases.md)
+- [Managing In-App Purchases](managing-in-app-purchases.md)
 
 #### Discussion
 
@@ -87,7 +87,7 @@ https://api.appstoreconnect.apple.com/v1/apps/1000001234/promotedPurchases
 
 ## Parameters
 
-- `fields[inAppPurchases]` ([string]): Additional fields to include for each in-app purchase resource returned by the response.
+- `fields[inAppPurchases]` ([string]): Additional fields to include for each In-App Purchase resource returned by the response.
 - `fields[promotedPurchases]` ([string]): Additional fields to include for each promoted purchase resource returned by the response.
 - `fields[subscriptions]` ([string]): Additional fields to include for each subscription resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
@@ -95,10 +95,10 @@ https://api.appstoreconnect.apple.com/v1/apps/1000001234/promotedPurchases
 
 ## See Also
 
-- [Read in-app purchase information](get-v1-inapppurchases-_id_.md)
-  Get information about an in-app purchase.
-- [List all in-app purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
-  List the in-app purchases that are available for your app.
+- [Read In-App Purchase information](get-v1-inapppurchases-_id_.md)
+  Get information about an In-App Purchase.
+- [List all In-App Purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
+  List the In-App Purchases that are available for your app.
 
 
 ---

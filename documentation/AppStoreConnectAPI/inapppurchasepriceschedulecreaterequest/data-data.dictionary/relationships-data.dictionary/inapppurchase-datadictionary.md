@@ -16,7 +16,7 @@ object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase
 
 ### Objects
 - [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase.Data](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary/data-data.dictionary.md)
-  The request body you use to create an in-app purchase price schedule.
+  The request body you use to create an In-App Purchase price schedule.
 
 ## Properties
 

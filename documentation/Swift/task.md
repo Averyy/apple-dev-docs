@@ -153,6 +153,8 @@ deinit actor
 - [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 ### Shielding Tasks from Cancellation
+- [static var hasActiveCancellationShield: Bool](task/hasactivecancellationshield.md)
+  Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
 - [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
   Enters a scope in which a task cancellation shield is active.
 - [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](withtaskcancellationshield(operation:)-8zlgh.md)
@@ -198,9 +200,6 @@ deinit actor
 ### Instance Properties
 - [var name: String?](task/name-swift.property.md)
   Return the task’s name, if it was set during its creation.
-### Type Properties
-- [static var hasActiveCancellationShield: Bool](task/hasactivecancellationshield.md)
-  Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
 ### Default Implementations
 - [Equatable Implementations](task/equatable-implementations.md)
 - [Hashable Implementations](task/hashable-implementations.md)

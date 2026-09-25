@@ -26,8 +26,8 @@ This workflow is the same for every asset type you manage and upload using the f
 | Attachments for the App Review team | [`App Store review attachments`](app-store-review-attachments.md) |
 | Game center activity images | [`Game Center activity images`](game-center-activity-images.md) |
 | Game center challenge images | [`Game Center challenge images`](game-center-challenge-images.md) |
-| In-App purchase App Store review screenshots | [`In-App Purchase App Store Review Screenshots`](in-app-purchase-app-store-review-screenshots.md) |
-| In-app purchase images | [`In-app purchase images`](in-app-purchase-images.md) |
+| In-App Purchase App Store review screenshots | [`In-App Purchase App Store Review Screenshots`](in-app-purchase-app-store-review-screenshots.md) |
+| In-App Purchase images | [`In-App Purchase images`](in-app-purchase-images.md) |
 | Subscription App Store review screenshots | [`Subscription App Store Review Screenshots`](subscription-app-store-review-screenshots.md) |
 | Subscription images | [`Subscription images`](subscription-images.md) |
 | Routing app coverage files | [`Routing App Coverages`](routing-app-coverages.md) |

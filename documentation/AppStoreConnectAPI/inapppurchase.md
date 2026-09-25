@@ -47,9 +47,9 @@ object InAppPurchase
 - [object AppsResponse](appsresponse.md)
   A response containing a list of apps registered in your App Store Connect team.
 - [object InAppPurchaseResponse](inapppurchaseresponse.md)
-  The response body for endpoints that read a single in-app purchase.
+  The response body for endpoints that read a single In-App Purchase.
 - [object InAppPurchasesResponse](inapppurchasesresponse.md)
-  The response body for endpoints that list in-app purchases for an app.
+  The response body for endpoints that list In-App Purchases for an app.
 - [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
 - [object AppPricePointV3](apppricepointv3.md)

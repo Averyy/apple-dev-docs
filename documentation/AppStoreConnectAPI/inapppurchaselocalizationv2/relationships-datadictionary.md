@@ -18,7 +18,7 @@ object InAppPurchaseLocalizationV2.Relationships
 
 ### Objects
 - [object InAppPurchaseLocalizationV2.Relationships.Version](inapppurchaselocalizationv2/relationships-data.dictionary/version-data.dictionary.md)
-  The in-app purchase version for the in-app purchase localization.
+  The In-App Purchase version for the In-App Purchase localization.
 
 ## Properties
 
@@ -27,7 +27,7 @@ object InAppPurchaseLocalizationV2.Relationships
 ## See Also
 
 - [object InAppPurchaseLocalizationV2.Attributes](inapppurchaselocalizationv2/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase localization resource.
+  Attributes that describe an In-App Purchase localization resource.
 
 
 ---

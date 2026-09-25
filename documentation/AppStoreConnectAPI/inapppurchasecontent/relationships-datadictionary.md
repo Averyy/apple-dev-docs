@@ -26,7 +26,7 @@ object InAppPurchaseContent.Relationships
 ## See Also
 
 - [object InAppPurchaseContent.Attributes](inapppurchasecontent/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase content resource.
+  Attributes that describe an In-App Purchase content resource.
 
 
 ---

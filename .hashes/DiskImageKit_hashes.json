@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-22T07:41:53.299344",
+    "last_updated": "2026-09-25T07:39:52.845214",
     "total_pages": 116,
-    "session_id": "2026-09-22T07:41:45.113461"
+    "session_id": "2026-09-25T07:39:44.783688"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/DiskImageKit.json": {
       "hash": "c55579122fc02f24786409f347c7bde586d68752cb6cddeb68fdfee09bbe32f1",
-      "last_checked": "2026-09-22T07:41:45.347055",
+      "last_checked": "2026-09-25T07:39:45.132850",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"71b3-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/DiskImageKit.md"
     },
     "https://developer.apple.com/documentation/DiskImageKit": {
       "hash": "c55579122fc02f24786409f347c7bde586d68752cb6cddeb68fdfee09bbe32f1",
-      "last_checked": "2026-09-22T07:41:45.250293",
+      "last_checked": "2026-09-25T07:39:45.035742",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"71b3-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/DiskImageKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage.json": {
       "hash": "dee6e0ab0ecb9318fe3f06a234e4f6cfe844e75156b8be62edbfc6bf24c4e044",
-      "last_checked": "2026-09-22T07:41:45.548459",
+      "last_checked": "2026-09-25T07:39:45.324091",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"644c-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/stackedimage.json": {
       "hash": "8cbf05cd3fa2400402f23215deedfc153ef57367145da0cd50fafb2b14f9cdcd",
-      "last_checked": "2026-09-22T07:41:45.738293",
+      "last_checked": "2026-09-25T07:39:45.465387",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1e54-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/stackedimage.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfigurationprotocol.json": {
       "hash": "86aa2be7a86b1bd8dd4c4a3001610e0363b1bc7b634e3fc359372e72aa0eb8cc",
-      "last_checked": "2026-09-22T07:41:45.826206",
+      "last_checked": "2026-09-25T07:39:45.644198",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2a59-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfigurationprotocol.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration.json": {
       "hash": "fc7532cb20beca8744f731988dce513375d34bf6f79a32008cbb659d16427609",
-      "last_checked": "2026-09-22T07:41:46.144796",
+      "last_checked": "2026-09-25T07:39:45.781861",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"22be-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration/mode-swift.enum.json": {
       "hash": "b35e739b7b535a038ed0f21f2783b4811894fd1ca2d11c028c6df7fd6f9e2b52",
-      "last_checked": "2026-09-22T07:41:46.230786",
+      "last_checked": "2026-09-25T07:39:45.873978",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2438-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration/mode-swiftenum.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/init(creating:).json": {
       "hash": "6c3c8bbced2d3db2caebf2a9383ba6e6ed48cd9e102cab4a78f1693dae519f7d",
-      "last_checked": "2026-09-22T07:41:46.416445",
+      "last_checked": "2026-09-25T07:39:46.016521",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"31b5-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/init-creating.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/asifcreationconfiguration.json": {
       "hash": "62e01b6fa582a544b5b91eb56304996c1997deaaf7d94b19d3ab8f71d5458493",
-      "last_checked": "2026-09-22T07:41:46.501958",
+      "last_checked": "2026-09-25T07:39:46.139873",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2008-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/asifcreationconfiguration.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/asiflayercreationconfiguration.json": {
       "hash": "5e795f0289d7943f92fce62eef358670273967e832bc407562d27a79ed0cb117",
-      "last_checked": "2026-09-22T07:41:46.659244",
+      "last_checked": "2026-09-25T07:39:46.248435",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1efe-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/asiflayercreationconfiguration.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/creationconfiguration.json": {
       "hash": "75f0553ec6f0903c365893949e3b170f201d12f9da964d6e645d9e4280895cde",
-      "last_checked": "2026-09-22T07:41:46.820342",
+      "last_checked": "2026-09-25T07:39:46.399404",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"3170-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/creationconfiguration.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/rawcreationconfiguration.json": {
       "hash": "92e00a5e0497def32bbff629704968a5cd05e5097958fa3ef64d184972aca92a",
-      "last_checked": "2026-09-22T07:41:46.913973",
+      "last_checked": "2026-09-25T07:39:46.515425",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"19dd-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/rawcreationconfiguration.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/init(opening:).json": {
       "hash": "121294af310ad085ee448371473c0357aaea85a130f78727c1e66eed4ce5f1fa",
-      "last_checked": "2026-09-22T07:41:47.034872",
+      "last_checked": "2026-09-25T07:39:46.627267",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"23b2-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/init-opening.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/stackablelayer.json": {
       "hash": "0195d43bf32010935dba87900d79bb1e63ed2f78ab8d254bcd17e068593f0384",
-      "last_checked": "2026-09-22T07:41:47.162464",
+      "last_checked": "2026-09-25T07:39:46.772688",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1fe0-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/stackablelayer.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/appending(_:)-4wifj.json": {
       "hash": "c98aad085dafcdc779a3ee80f2c70ceb97843f7e7cb8c8f1f1ee9b61e18089c6",
-      "last_checked": "2026-09-22T07:41:47.311561",
+      "last_checked": "2026-09-25T07:39:46.881582",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"212a-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/appending-4wifj.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/format-swift.enum.json": {
       "hash": "3db47c65c80431925a59507f6596b8246a1e4d3e76e3662a58922daa97cf9820",
-      "last_checked": "2026-09-22T07:41:47.418257",
+      "last_checked": "2026-09-25T07:39:47.005053",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"20d0-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/format-swiftenum.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/blocksize-swift.enum.json": {
       "hash": "d242105e37d43fb4c93acfe5f4445aeb8e8b0c126ecf16de71c656f5b0793053",
-      "last_checked": "2026-09-22T07:41:47.545799",
+      "last_checked": "2026-09-25T07:39:47.136801",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2e36-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/blocksize-swiftenum.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/layertype-swift.struct.json": {
       "hash": "bc4d90aed163fc4439d571262a0f63ecdf8f4510833f92c6974a30da423d7102",
-      "last_checked": "2026-09-22T07:41:47.670174",
+      "last_checked": "2026-09-25T07:39:47.271681",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2ebc-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/layertype-swiftstruct.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/incompatiblestackingerror.json": {
       "hash": "023f3d9adfa92a40e551ca27309703d07215a9623475550c543a36e52ead6e0a",
-      "last_checked": "2026-09-22T07:41:47.798974",
+      "last_checked": "2026-09-25T07:39:47.387235",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2263-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/incompatiblestackingerror.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/invalidblockcounterror.json": {
       "hash": "116df1f1cd2d2a6ac5236e72ca83d7528609c47f29b37313c9a251fd9a9a1b6f",
-      "last_checked": "2026-09-22T07:41:47.961098",
+      "last_checked": "2026-09-25T07:39:47.518348",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1f0d-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/invalidblockcounterror.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/corruptedimageerror.json": {
       "hash": "0ffe63566f4d447d4b37bec6e27e944f88e9cdd2a3de8edaabd2904a88a07d0e",
-      "last_checked": "2026-09-22T07:41:48.062111",
+      "last_checked": "2026-09-25T07:39:47.637245",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"225f-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/corruptedimageerror.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/unsupportedformaterror.json": {
       "hash": "b3f8999c31d2e1e463eb12698cd9e1c41b54f0e9d9ad33ed28b5088b10357810",
-      "last_checked": "2026-09-22T07:41:48.227399",
+      "last_checked": "2026-09-25T07:39:47.804505",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2273-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/unsupportedformaterror.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/blockcount.json": {
       "hash": "d7433531aea6fed84e9bba09f746a733543a1c9a9b88ae0b65a20d4dc9ae2a7e",
-      "last_checked": "2026-09-22T07:41:48.368259",
+      "last_checked": "2026-09-25T07:39:47.933289",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1035-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/blockcount.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/blocksize-swift.property.json": {
       "hash": "e8aca50673bce1c03ef7a9e41af3e4d17d1a1075d100df01088840ad1b2a8428",
-      "last_checked": "2026-09-22T07:41:48.474360",
+      "last_checked": "2026-09-25T07:39:48.029723",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1355-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/blocksize-swiftproperty.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/format-swift.property.json": {
       "hash": "539533618272c29213604aada6222458b0ffadf048d3332cb94ec998f4f8b89a",
-      "last_checked": "2026-09-22T07:41:48.619295",
+      "last_checked": "2026-09-25T07:39:48.163987",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1474-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/format-swiftproperty.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/layertype-swift.property.json": {
       "hash": "ce9d785308385480964cf48235dad61a26ef2b7a67b7859e525c9ad355b6e198",
-      "last_checked": "2026-09-22T07:41:48.720577",
+      "last_checked": "2026-09-25T07:39:48.293472",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1dbe-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/layertype-swiftproperty.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/layeruuid.json": {
       "hash": "7ab26559c56c445a671ef68f849ff2a87b25688ea618830a5799f702af53ee0c",
-      "last_checked": "2026-09-22T07:41:48.844258",
+      "last_checked": "2026-09-25T07:39:48.418851",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"138a-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/layeruuid.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/openmode.json": {
       "hash": "71ea1eddb59cc87aad39d9bb5ee4284da433f4cf2aa758f5517d00c31c78bbb2",
-      "last_checked": "2026-09-22T07:41:48.965155",
+      "last_checked": "2026-09-25T07:39:48.541990",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"15c4-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/openmode.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/parentuuid.json": {
       "hash": "05558879f28d04861a1213e8757063160356e9d7de7b1f63eb9c1ba290623e2b",
-      "last_checked": "2026-09-22T07:41:49.099894",
+      "last_checked": "2026-09-25T07:39:48.667804",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"160e-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/parentuuid.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/size.json": {
       "hash": "d43f56a6a93ee90695d5fbde96306bea4b9a0c1a2d7b9ff77a5c7b9500c40322",
-      "last_checked": "2026-09-22T07:41:49.242827",
+      "last_checked": "2026-09-25T07:39:48.836176",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1774-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/size.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/url.json": {
       "hash": "758b71d7230ca30a535c17eb56f5cec6c625e445cef6a6b617ee914ed327188c",
-      "last_checked": "2026-09-22T07:41:49.345159",
+      "last_checked": "2026-09-25T07:39:48.952858",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"14ad-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/url.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/appending(_:)-3pfqg.json": {
       "hash": "ceb210ca6984893da56537ca83004e94f0b4ce98bc70bb1d76a96839705a9a1b",
-      "last_checked": "2026-09-22T07:41:49.530938",
+      "last_checked": "2026-09-25T07:39:49.088731",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"2c2c-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/appending-3pfqg.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/truncate(blockcount:).json": {
       "hash": "148c3e452854f853182b1a02fe9351540068441f5c635de18cab4595ee5fbf59",
-      "last_checked": "2026-09-22T07:41:49.607559",
+      "last_checked": "2026-09-25T07:39:49.207284",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"19d4-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/truncate-blockcount.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/stackedimage/layers.json": {
       "hash": "9e609b9c01ee40b9143bdfd81b842cf18c75cf3086ab95e253f62350f5dbae81",
-      "last_checked": "2026-09-22T07:41:49.742995",
+      "last_checked": "2026-09-25T07:39:49.329397",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1178-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/stackedimage/layers.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfigurationprotocol/mode.json": {
       "hash": "73f6ed6bd526a7254bdefb2b30bbc17d77d662a1bce693c30e0e7614b252af35",
-      "last_checked": "2026-09-22T07:41:49.865498",
+      "last_checked": "2026-09-25T07:39:49.452137",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"17c1-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfigurationprotocol/mode.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfigurationprotocol/url.json": {
       "hash": "a2a4d1d09abfa7964d457254aaf738a7ae3bafd9eedbe23204310dfbd019e1bf",
-      "last_checked": "2026-09-22T07:41:49.980481",
+      "last_checked": "2026-09-25T07:39:49.593867",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1186-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfigurationprotocol/url.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfigurationprotocol/open(url:mode:).json": {
       "hash": "e58eaeb21f0ba5a8ed95c6dcef1fb426178d9a364eef6de4dace02940445ea24",
-      "last_checked": "2026-09-22T07:41:50.104949",
+      "last_checked": "2026-09-25T07:39:49.764450",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"244c-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfigurationprotocol/open-urlmode.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration/init(url:mode:).json": {
       "hash": "d3684aa12b3a3afda62553062d3fbf99313efcd99e4b2b6d81fb25da85fd6214",
-      "last_checked": "2026-09-22T07:41:50.218905",
+      "last_checked": "2026-09-25T07:39:49.844204",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1a77-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration/init-urlmode.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration/mode-swift.property.json": {
       "hash": "6403075685f92842f5288b77d61a9a5426653c1083571a648d4c8277cfa84457",
-      "last_checked": "2026-09-22T07:41:50.339003",
+      "last_checked": "2026-09-25T07:39:49.950164",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1388-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration/mode-swiftproperty.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration/url.json": {
       "hash": "7e583501bf49df896312a032d45bdc9c918383c05ff6d237d0473504b23ee46c",
-      "last_checked": "2026-09-22T07:41:50.464357",
+      "last_checked": "2026-09-25T07:39:50.077353",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"10ab-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration/url.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration/mode-swift.enum/automatic.json": {
       "hash": "082313503c9275eb5fa983b6e132865cc0d6f3048685aaae08b28a7298d959a4",
-      "last_checked": "2026-09-22T07:41:50.600101",
+      "last_checked": "2026-09-25T07:39:50.206644",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"10c9-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration/mode-swift.enum/automatic.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration/mode-swift.enum/readonly.json": {
       "hash": "10c5f372a9758eaf42fc5223d61ee7c7f8d2456542da9c8eec546c56b1d26629",
-      "last_checked": "2026-09-22T07:41:50.708346",
+      "last_checked": "2026-09-25T07:39:50.357782",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1127-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration/mode-swift.enum/readonly.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/openconfiguration/mode-swift.enum/readwrite.json": {
       "hash": "2d3bd648a335bbf06e103ea9b714b1664b59e44f53bba5bc5bf7a80758925721",
-      "last_checked": "2026-09-22T07:41:50.895407",
+      "last_checked": "2026-09-25T07:39:50.460286",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1144-65b3b4cb43081-df\"",
       "file_path": "documentation/DiskImageKit/openconfiguration/mode-swift.enum/readwrite.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/asifcreationconfiguration/layer(url:type:).json": {
       "hash": "2f472f6d04363e624ee227fe237083e81436ab5caed187d2d6e11e444a80f3ba",
-      "last_checked": "2026-09-22T07:41:51.006767",
+      "last_checked": "2026-09-25T07:39:50.598156",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"34ba-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/asifcreationconfiguration/layer-urltype.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/creationconfiguration/asif(url:blockcount:blocksize:).json": {
       "hash": "5ecc9b75f014b6530cf6bd58e40afeadc3e33da1b0ad5c11e39345d0f1a75894",
-      "last_checked": "2026-09-22T07:41:51.119015",
+      "last_checked": "2026-09-25T07:39:50.744945",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"399f-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/creationconfiguration/asif-urlblockcountblocksize.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/creationconfiguration/asiflayer(url:type:).json": {
       "hash": "ce62473485cc7f6f1149d577096006f520044c7f131800c52703e7ba94e0ea6d",
-      "last_checked": "2026-09-22T07:41:51.241636",
+      "last_checked": "2026-09-25T07:39:50.880126",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"27f0-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/creationconfiguration/asiflayer-urltype.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/creationconfiguration/raw(url:blockcount:).json": {
       "hash": "fc5b2a9f2e373a56cfc55ce55d1c04c8cec06f36e7a89560739f36b16aad9e15",
-      "last_checked": "2026-09-22T07:41:51.394544",
+      "last_checked": "2026-09-25T07:39:51.072430",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"24be-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/creationconfiguration/raw-urlblockcount.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/format-swift.enum/asif.json": {
       "hash": "46d057b10768e812ef5ecabbb9d9f4f7e86ff8680c0e3c9062ff88873208beab",
-      "last_checked": "2026-09-22T07:41:51.506689",
+      "last_checked": "2026-09-25T07:39:51.155759",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"12ed-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/format-swift.enum/asif.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/format-swift.enum/raw.json": {
       "hash": "2c3bf02af6b6a3b44fa85605cd669d4252d605cf81dc1367fe2c44713611a38e",
-      "last_checked": "2026-09-22T07:41:51.655600",
+      "last_checked": "2026-09-25T07:39:51.296519",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"129a-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/format-swift.enum/raw.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/format-swift.enum/stack.json": {
       "hash": "aa53aec27c819fe4f4f3e4308021bee3a4c20945941d63c832b39e7edfebff63",
-      "last_checked": "2026-09-22T07:41:51.976359",
+      "last_checked": "2026-09-25T07:39:51.426122",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1275-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/format-swift.enum/stack.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/blocksize-swift.enum/bytes4096.json": {
       "hash": "ea4bab52d8531dc2ee3aa6d12ec60b11e438b8f4524ad34c0c2165ef1c4ead74",
-      "last_checked": "2026-09-22T07:41:52.074695",
+      "last_checked": "2026-09-25T07:39:51.588717",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"140d-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/blocksize-swift.enum/bytes4096.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/blocksize-swift.enum/bytes512.json": {
       "hash": "99eceb52a43609191519af1f26eff186eda5ffaa2b996e4a0328890118f22c39",
-      "last_checked": "2026-09-22T07:41:52.240370",
+      "last_checked": "2026-09-25T07:39:51.691212",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"ffb-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/blocksize-swift.enum/bytes512.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/layertype-swift.struct/==(_:_:).json": {
       "hash": "f3aab87f2c19c8bda58be825ff90112c6ffd9e8f5bca6d1310061b72d64cc2b1",
-      "last_checked": "2026-09-22T07:41:52.393688",
+      "last_checked": "2026-09-25T07:39:51.874394",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1dc8-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/layertype-swift.struct/equal.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/layertype-swift.struct/cache.json": {
       "hash": "7cfaeb5343a30ac96b4a81f857a6b18284e47822b889b677f829c2d0c53501e8",
-      "last_checked": "2026-09-22T07:41:52.518324",
+      "last_checked": "2026-09-25T07:39:52.013877",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1576-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/layertype-swift.struct/cache.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/layertype-swift.struct/overlay.json": {
       "hash": "1fdd358d70253c22dc4f3c60780a9b82c804e82118622b7a2acc43c34e05a93e",
-      "last_checked": "2026-09-22T07:41:52.795267",
+      "last_checked": "2026-09-25T07:39:52.292960",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1b61-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/layertype-swift.struct/overlay.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/diskimage/layertype-swift.struct/overlay(blockcount:).json": {
       "hash": "47dfbdffc1aff01dff38eda0775b7a164aec7940469ff10fcb735e3a685a61ad",
-      "last_checked": "2026-09-22T07:41:52.878196",
+      "last_checked": "2026-09-25T07:39:52.386573",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1ba2-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/diskimage/layertype-swift.struct/overlay-blockcount.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/incompatiblestackingerror/reason.json": {
       "hash": "8a49823390634bf53846cf7017db822f76979542ecd2821055d0771cdea202e8",
-      "last_checked": "2026-09-22T07:41:53.016199",
+      "last_checked": "2026-09-25T07:39:52.509806",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"10f1-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/incompatiblestackingerror/reason.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/corruptedimageerror/underlyingerror.json": {
       "hash": "dc476ffda89a9e09c65ac48fdefbcd154d99df725dd63aeca0aa5a01e0905b37",
-      "last_checked": "2026-09-22T07:41:53.164137",
+      "last_checked": "2026-09-25T07:39:52.648798",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1119-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/corruptedimageerror/underlyingerror.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskimagekit/unsupportedformaterror/underlyingerror.json": {
       "hash": "f1133cb52b5421edc5829fe972703c508979a6148c91b23a3ee5974e8123ffdd",
-      "last_checked": "2026-09-22T07:41:53.276766",
+      "last_checked": "2026-09-25T07:39:52.840937",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:45.113461",
+      "session_id": "2026-09-25T07:39:44.783688",
       "etag": "\"1136-65b3b4cb3aea4-df\"",
       "file_path": "documentation/DiskImageKit/unsupportedformaterror/underlyingerror.md"
     },

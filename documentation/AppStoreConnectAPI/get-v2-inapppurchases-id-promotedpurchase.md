@@ -1,9 +1,9 @@
-# Read promoted purchase information for an in-app purchase
+# Read promoted purchase information for an In-App Purchase
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get details about the promoted purchase of an in-app purchase.
+Get details about the promoted purchase of an In-App Purchase.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -11,7 +11,7 @@ Get details about the promoted purchase of an in-app purchase.
 ## Mentions
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
-- [Managing in-app purchases](managing-in-app-purchases.md)
+- [Managing In-App Purchases](managing-in-app-purchases.md)
 
 ## Endpoint
 
@@ -26,35 +26,35 @@ Get details about the promoted purchase of an in-app purchase.
 
 ## See Also
 
-- [Create an in-app purchase](post-v2-inapppurchases.md)
-  Create an in-app purchase, including a consumable, non-consumable, or non-renewing subscription.
-- [Read in-app purchase information](get-v2-inapppurchases-_id_.md)
-  Get information about a specific in-app purchase.
-- [List all in-app purchases for an app](get-v1-apps-_id_-inapppurchasesv2.md)
-  Get a list of the in-app purchases for a specific app.
-- [Modify an in-app purchase](patch-v2-inapppurchases-_id_.md)
-  Update the reference name of a specific in-app purchase.
-- [Delete an in-app purchase](delete-v2-inapppurchases-_id_.md)
-  Delete a specific in-app purchase from your app.
-- [List all price points for an in-app purchase](get-v2-inapppurchases-_id_-pricepoints.md)
-  Get a list of possible price points for an in-app purchase.
-- [List price point IDs for an in-app purchase](get-v2-inapppurchases-_id_-relationships-pricepoints.md)
-  Get a list of price point IDs for a specific in-app purchase.
+- [Create an In-App Purchase](post-v2-inapppurchases.md)
+  Create an In-App Purchase, including a consumable, non-consumable, or non-renewing subscription.
+- [Read In-App Purchase information](get-v2-inapppurchases-_id_.md)
+  Get information about a specific In-App Purchase.
+- [List all In-App Purchases for an app](get-v1-apps-_id_-inapppurchasesv2.md)
+  Get a list of the In-App Purchases for a specific app.
+- [Modify an In-App Purchase](patch-v2-inapppurchases-_id_.md)
+  Update the reference name of a specific In-App Purchase.
+- [Delete an In-App Purchase](delete-v2-inapppurchases-_id_.md)
+  Delete a specific In-App Purchase from your app.
+- [List all price points for an In-App Purchase](get-v2-inapppurchases-_id_-pricepoints.md)
+  Get a list of possible price points for an In-App Purchase.
+- [List price point IDs for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-pricepoints.md)
+  Get a list of price point IDs for a specific In-App Purchase.
 - [List All In-App Purchase Price Point Equalizations](get-v1-inapppurchasepricepoints-_id_-equalizations.md)
-  Get a list of in-app purchase price points and their equivalent in a specified currency.
-- [List equalization IDs for an in-app purchase price point](get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
-- [Read the promoted purchase ID for an in-app purchase](get-v2-inapppurchases-_id_-relationships-promotedpurchase.md)
-  Get the promoted purchase ID for a specific in-app purchase.
-- [List all localizations for an in-app purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
-  Get a list of localized display names and descriptions for a specific in-app purchase.
-- [List localization IDs for an in-app purchase](get-v2-inapppurchases-_id_-relationships-inapppurchaselocalizations.md)
-  Get a list of localization IDs for a specific in-app purchase.
-- [Read review screenshot information for an in-app purchase](get-v2-inapppurchases-_id_-appstorereviewscreenshot.md)
-  Get information about a review screenshot for a specific in-app purchase.
-- [Read the App Store review screenshot ID for an in-app purchase](get-v2-inapppurchases-_id_-relationships-appstorereviewscreenshot.md)
-  Get the App Store review screenshot ID for a specific in-app purchase.
-- [Create a review submission for an in-app purchase](post-v1-inapppurchasesubmissions.md)
-  Create an in-app purchase submission for review.
+  Get a list of In-App Purchase price points and their equivalent in a specified currency.
+- [List equalization IDs for an In-App Purchase price point](get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
+- [Read the promoted purchase ID for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-promotedpurchase.md)
+  Get the promoted purchase ID for a specific In-App Purchase.
+- [List all localizations for an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
+  Get a list of localized display names and descriptions for a specific In-App Purchase.
+- [List localization IDs for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-inapppurchaselocalizations.md)
+  Get a list of localization IDs for a specific In-App Purchase.
+- [Read review screenshot information for an In-App Purchase](get-v2-inapppurchases-_id_-appstorereviewscreenshot.md)
+  Get information about a review screenshot for a specific In-App Purchase.
+- [Read the App Store review screenshot ID for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-appstorereviewscreenshot.md)
+  Get the App Store review screenshot ID for a specific In-App Purchase.
+- [Create a review submission for an In-App Purchase](post-v1-inapppurchasesubmissions.md)
+  Create an In-App Purchase submission for review.
 
 
 ---

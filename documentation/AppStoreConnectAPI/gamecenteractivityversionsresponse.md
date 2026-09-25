@@ -30,11 +30,11 @@ object GameCenterActivityVersionsResponse
 - [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
   A response containing a single version of a Game Center activity.
 - [object GameCenterActivityVersionUpdateRequest](gamecenteractivityversionupdaterequest.md)
-  The request body you use to update an activity version version.
+  The request body you use to update an activity version.
 - [object GameCenterActivityVersionDefaultImageLinkageResponse](gamecenteractivityversiondefaultimagelinkageresponse.md)
 - [object GameCenterActivityVersionLocalizationsLinkagesResponse](gamecenteractivityversionlocalizationslinkagesresponse.md)
 - [object GameCenterActivityVersionUpdateRequest](gamecenteractivityversionupdaterequest.md)
-  The request body you use to update an activity version version.
+  The request body you use to update an activity version.
 - [object GameCenterActivityVersionsLinkagesResponse](gamecenteractivityversionslinkagesresponse.md)
   A response containing the resource identifiers of versions for a Game Center activity.
 

@@ -6,6 +6,8 @@ View Custom Product Page details.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 In iOS 15 and later, you can use [`custom product pages`](https://developer.apple.comhttps://developer.apple.com/app-store/product-page/) that you build in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) to create ad variations in the Apple Search Ads Campaign Management API to promote your apps.
 
 To create a custom product page ad, use the following workflow:

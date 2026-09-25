@@ -14,6 +14,10 @@ A string that represents the release state of a background asset.
 string BackgroundAssetVersionAppStoreReleaseState
 ```
 
+## Mentions
+
+- [Understanding webhook events](webhook-events.md)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

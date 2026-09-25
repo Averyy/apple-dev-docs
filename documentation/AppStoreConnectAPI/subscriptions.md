@@ -93,9 +93,9 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [object SubscriptionOfferCode](subscriptionoffercode.md)
   A promotional code that gives customers a discounted or free subscription for a specified duration and eligibility group.
 - [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
-  The response body for endpoints that read or modify a promoted in-app purchase or subscription.
+  The response body for endpoints that read or modify a promoted In-App Purchase or subscription.
 - [object PromotedPurchase](promotedpurchase.md)
-  An in-app purchase or subscription configured to appear on the app’s App Store product page.
+  An In-App Purchase or subscription configured to appear on the app’s App Store product page.
 - [object SubscriptionPricePointsResponse](subscriptionpricepointsresponse.md)
   The response body for endpoints that list available price points for a subscription.
 - [object SubscriptionPricesResponse](subscriptionpricesresponse.md)
@@ -132,6 +132,8 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 - [Querying adjusted subscription price equalizations](querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
+- [Configuring multi-seat subscriptions for organizations](configuring-multi-seat-subscriptions-for-organizations.md)
+  Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
 - [Subscription Localizations](subscription-localizations.md)

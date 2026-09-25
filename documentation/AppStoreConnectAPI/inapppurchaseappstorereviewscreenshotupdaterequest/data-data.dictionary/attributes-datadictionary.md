@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-Attributes that describe an in-app purchase App Store review screenshot update request resource.
+Attributes that describe an In-App Purchase App Store review screenshot update request resource.
 
 **Availability**:
 - App Store Connect API 2.0+

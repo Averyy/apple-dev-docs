@@ -1,4 +1,4 @@
-# Migrating in-app purchase metadata to v2
+# Migrating In-App Purchase metadata to v2
 
 **Framework**: App Store Connect API
 
@@ -6,7 +6,7 @@ Update an existing integration from the pre-4.4.1 metadata workflow to the versi
 
 #### Overview
 
-Before 4.4.1, localizations and review images attached directly to an in-app purchase, subscription, or subscription group. In 4.4.1, they attach to a *version* — a draft container that groups the metadata and images that go through App Review together. The pre-4.4.1 endpoints remain available for existing integrations, but new work uses the version-based path.
+Before 4.4.1, localizations and review images attached directly to an In-App Purchase, subscription, or subscription group. In 4.4.1, they attach to a *version* — a draft container that groups the metadata and images that go through App Review together. The pre-4.4.1 endpoints remain available for existing integrations, but new work uses the version-based path.
 
 The version model separates a product’s stable properties (product ID, type, pricing) from its reviewable metadata (localized names, descriptions, review images). Each review cycle produces one version. When you need to change any localization or image, you create a new version rather than editing the live product.
 
@@ -14,7 +14,7 @@ The version model separates a product’s stable properties (product ID, type, p
 
 Each deprecated v1 endpoint has a v2 equivalent that targets a version. The v1 endpoint keeps working; use it only for existing integrations that haven’t moved yet.
 
-In-app purchase metadata and submission:
+In-App Purchase metadata and submission:
 
 | Deprecated (v1) | Replacement (v2) |
 | --- | --- |
@@ -58,7 +58,7 @@ Read localizations and images through the version instead:
 
 ##### Migrate an in App Purchase Integration
 
-The pre-4.4.1 flow posts a localization directly against the in-app purchase:
+The pre-4.4.1 flow posts a localization directly against the In-App Purchase:
 
 ```other
 POST /v1/inAppPurchaseLocalizations
@@ -118,7 +118,7 @@ The relationship key changes from `inAppPurchaseV2` (targeting the parent produc
 
 ##### Migrate a Submission
 
-The pre-4.4.1 flow submits an in-app purchase directly:
+The pre-4.4.1 flow submits an In-App Purchase directly:
 
 ```other
 POST /v1/inAppPurchaseSubmissions
@@ -187,37 +187,37 @@ Before 4.4.1, integrations tracked submission status by reading the parent produ
 
 These pieces of the workflow are unchanged in 4.4.1:
 
-- The in-app purchase resource: `POST /v2/inAppPurchases`, `GET`, and `PATCH`.
+- The In-App Purchase resource: `POST /v2/inAppPurchases`, `GET`, and `PATCH`.
 - The subscription resource: `POST /v1/subscriptions`, `GET`, and `PATCH`.
 - The subscription group resource: `POST /v1/subscriptionGroups`, `GET`, and `PATCH`.
 - Pricing: `/v1/inAppPurchasePriceSchedules` and `/v1/subscriptionPricePoints` remain the same.
 - App Review screenshots: `/v1/inAppPurchaseAppStoreReviewScreenshots` and `/v1/subscriptionAppStoreReviewScreenshots` still target the parent product, not the version.
 - Promoted purchases: `/v1/promotedPurchases` is unaffected.
 
-For the full version workflow, see [`Working with in-app purchase versions`](working-with-in-app-purchase-versions.md), [`Working with subscription versions`](working-with-subscription-versions.md), and [`Working with subscription group versions`](working-with-subscription-group-versions.md).
+For the full version workflow, see [`Working with In-App Purchase versions`](working-with-in-app-purchase-versions.md), [`Working with subscription versions`](working-with-subscription-versions.md), and [`Working with subscription group versions`](working-with-subscription-group-versions.md).
 
 ## See Also
 
-- [Managing in-app purchases](managing-in-app-purchases.md)
-  Create in-app purchases, configure their metadata and pricing, submit them for review, and promote them with the App Store Connect API.
-- [Working with in-app purchase versions](working-with-in-app-purchase-versions.md)
-  Manage draft versions of an in-app purchase’s localized metadata and review images before submitting for App Review.
+- [Managing In-App Purchases](managing-in-app-purchases.md)
+  Create In-App Purchases, configure their metadata and pricing, submit them for review, and promote them with the App Store Connect API.
+- [Working with In-App Purchase versions](working-with-in-app-purchase-versions.md)
+  Manage draft versions of an In-App Purchase’s localized metadata and review images before submitting for App Review.
 - [In-App Purchase Versions](in-app-purchase-versions.md)
-  Create and read draft versions of an in-app purchase, with their localized metadata and review images.
+  Create and read draft versions of an In-App Purchase, with their localized metadata and review images.
 - [In-App Purchases](in-app-purchases.md)
-  Create, modify, and delete in-app purchases for your app.
+  Create, modify, and delete In-App Purchases for your app.
 - [In-App Purchase Localizations](in-app-purchase-localizations.md)
-  Create, modify, and delete localized metadata for in-app purchase versions.
-- [In-app purchase localizations (v1)](in-app-purchase-localizations-v1.md)
-  Create, modify, and delete localized metadata for in-app purchases.
-- [In-App purchase price schedules](in-app-purchase-price-schedules.md)
-  Create a scheduled price change for an in-app purchase, and get information about scheduled price changes.
-- [In-app purchase availability](in-app-purchase-availability.md)
-  Read and modify territory availability for an in-app purchase.
-- [In-app purchase images](in-app-purchase-images.md)
-  Create, modify, and delete promotion images for in-app purchases.
-- [In-app purchase images (v1)](in-app-purchase-images-v1.md)
-  Create, modify, and delete promotion images for your in-app purchases.
+  Create, modify, and delete localized metadata for In-App Purchase versions.
+- [In-App Purchase localizations (v1)](in-app-purchase-localizations-v1.md)
+  Create, modify, and delete localized metadata for In-App Purchases.
+- [In-App Purchase price schedules](in-app-purchase-price-schedules.md)
+  Create a scheduled price change for an In-App Purchase, and get information about scheduled price changes.
+- [In-App Purchase availability](in-app-purchase-availability.md)
+  Read and modify territory availability for an In-App Purchase.
+- [In-App Purchase images](in-app-purchase-images.md)
+  Create, modify, and delete promotion images for In-App Purchases.
+- [In-App Purchase images (v1)](in-app-purchase-images-v1.md)
+  Create, modify, and delete promotion images for your In-App Purchases.
 
 
 ---

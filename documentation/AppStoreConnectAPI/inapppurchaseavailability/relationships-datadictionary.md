@@ -26,7 +26,7 @@ object InAppPurchaseAvailability.Relationships
 ## See Also
 
 - [object InAppPurchaseAvailability.Attributes](inapppurchaseavailability/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase availability resource.
+  Attributes that describe an In-App Purchase availability resource.
 
 
 ---

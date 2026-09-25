@@ -197,9 +197,10 @@ for count in threeTwoOne {
 
 ## See Also
 
-- [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
-  A type that provides borrowed access to the values of a borrowing sequence.
-- [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
+- [protocol Sequence](sequence.md)
+  A type that provides sequential, iterated access to its elements.
+- [protocol Collection](collection.md)
+  A sequence whose elements can be traversed multiple times, nondestructively, and accessed by an indexed subscript.
 
 
 ---

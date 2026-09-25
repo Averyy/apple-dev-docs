@@ -24,7 +24,7 @@ object InAppPurchaseV2.Relationships
 - [object InAppPurchaseV2.Relationships.InAppPurchaseAvailability](inapppurchasev2/relationships-data.dictionary/inapppurchaseavailability-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations](inapppurchasev2/relationships-data.dictionary/inapppurchaselocalizations-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.OfferCodes](inapppurchasev2/relationships-data.dictionary/offercodes-data.dictionary.md)
-  The data and links that describe the offer codes of the in-app purchase.
+  The data and links that describe the offer codes of the In-App Purchase.
 - [object InAppPurchaseV2.Relationships.PricePoints](inapppurchasev2/relationships-data.dictionary/pricepoints-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.PromotedPurchase](inapppurchasev2/relationships-data.dictionary/promotedpurchase-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.Versions](inapppurchasev2/relationships-data.dictionary/versions-data.dictionary.md)
@@ -45,7 +45,7 @@ object InAppPurchaseV2.Relationships
 ## See Also
 
 - [object InAppPurchaseV2.Attributes](inapppurchasev2/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase v2 resource.
+  Attributes that describe an In-App Purchase v2 resource.
 - [type InAppPurchaseType](inapppurchasetype.md)
   A string that represents the type of an In-App Purchase.
 - [type InAppPurchaseState](inapppurchasestate.md)

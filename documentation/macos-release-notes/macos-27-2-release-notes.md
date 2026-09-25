@@ -10,10 +10,9 @@ The macOS 27.2 SDK provides support to develop apps for Mac computers running ma
 
 ##### General
 
-###### Known Issues
+###### Resolved Issues
 
-- Xcode might crash when using code completion on macOS 27.2 beta. (186939138) **Workaround:** Turn off enhanced code completion ranking with the following preference:
-`defaults write com.apple.dt.Xcode CodeCompletionAssetsToLoad /dev/null`
+- Fixed: Xcode might crash when using code completion on macOS 27.2 beta. (186939138)
 
 ##### Appkit
 

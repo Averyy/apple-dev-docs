@@ -49,6 +49,8 @@ Create, modify, and delete promotion images for your auto-renewable subscription
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 - [Querying adjusted subscription price equalizations](querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
+- [Configuring multi-seat subscriptions for organizations](configuring-multi-seat-subscriptions-for-organizations.md)
+  Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
 - [Subscriptions](subscriptions.md)

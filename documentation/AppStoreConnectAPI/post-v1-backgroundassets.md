@@ -11,6 +11,7 @@ Create an asset pack record for your Apple-hosted background assets.
 ## Mentions
 
 - [Uploading and versioning Apple hosted background assets](managing-apple-hosted-background-assets.md)
+- [Understanding webhook events](webhook-events.md)
 
 ## Endpoint
 

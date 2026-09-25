@@ -34,6 +34,13 @@ Cancellation shields are not automatically inherited by child tasks; each child 
 
 > **Note**: [`hasActiveCancellationShield`](unsafecurrenttask/hasactivecancellationshield.md)
 
+## See Also
+
+- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
+  Enters a scope in which a task cancellation shield is active.
+- [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](withtaskcancellationshield(operation:)-8zlgh.md)
+  Enters a scope in which a task cancellation shield is active.
+
 
 ---
 

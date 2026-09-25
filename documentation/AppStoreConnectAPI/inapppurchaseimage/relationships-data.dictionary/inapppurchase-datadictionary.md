@@ -17,7 +17,7 @@ object InAppPurchaseImage.Relationships.InAppPurchase
 ## Topics
 
 - [object InAppPurchaseImage.Relationships.InAppPurchase.Data](inapppurchaseimage/relationships-data.dictionary/inapppurchase-data.dictionary/data-data.dictionary.md)
-  The resource linkage identifying the in-app purchase associated with an in-app purchase image.
+  The resource linkage identifying the In-App Purchase associated with an In-App Purchase image.
 
 ## Properties
 

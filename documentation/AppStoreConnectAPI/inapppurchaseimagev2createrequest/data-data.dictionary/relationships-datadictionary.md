@@ -18,7 +18,7 @@ object InAppPurchaseImageV2CreateRequest.Data.Relationships
 
 ### Objects
 - [object InAppPurchaseImageV2CreateRequest.Data.Relationships.Version](inapppurchaseimagev2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
-  The version to associate with the new in-app purchase image.
+  The version to associate with the new In-App Purchase image.
 
 ## Properties
 
@@ -27,7 +27,7 @@ object InAppPurchaseImageV2CreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseImageV2CreateRequest.Data.Attributes](inapppurchaseimagev2createrequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase image create request resource.
+  Attributes that describe an In-App Purchase image create request resource.
 
 
 ---

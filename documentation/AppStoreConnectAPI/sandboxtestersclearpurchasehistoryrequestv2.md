@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A batch request to reset the in-app purchase and subscription history for one or more sandbox Apple IDs.
+A batch request to reset the In-App Purchase and subscription history for one or more sandbox Apple IDs.
 
 **Availability**:
 - App Store Connect API 2.2+
@@ -33,7 +33,7 @@ object SandboxTestersClearPurchaseHistoryRequestV2
 - [object SandboxTestersV2Response](sandboxtestersv2response.md)
   The response body for endpoints that list sandbox Apple IDs used for testing.
 - [object SandboxTesterV2](sandboxtesterv2.md)
-  A sandbox Apple ID you use to test in-app purchases and subscriptions in the Xcode sandbox environment.
+  A sandbox Apple ID you use to test In-App Purchases and subscriptions in the Xcode sandbox environment.
 
 
 ---

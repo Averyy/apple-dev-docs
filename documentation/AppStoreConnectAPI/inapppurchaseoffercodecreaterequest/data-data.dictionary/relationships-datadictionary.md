@@ -18,9 +18,9 @@ object InAppPurchaseOfferCodeCreateRequest.Data.Relationships
 
 ### Dictionaries
 - [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.InAppPurchase](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)
-  The request body you use to create an in-app purchase offer code for data relationships for an in-app purchase.
+  The request body you use to create an In-App Purchase offer code for data relationships for an In-App Purchase.
 - [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary.md)
-  The request body you use to create an in-app purchase offer code data relationships prices.
+  The request body you use to create an In-App Purchase offer code data relationships prices.
 
 ## Properties
 
@@ -30,7 +30,7 @@ object InAppPurchaseOfferCodeCreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseOfferCodeCreateRequest.Data.Attributes](inapppurchaseoffercodecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  The request body you use to create an in-app purchase offer code create request.
+  The request body you use to create an In-App Purchase offer code create request.
 
 
 ---

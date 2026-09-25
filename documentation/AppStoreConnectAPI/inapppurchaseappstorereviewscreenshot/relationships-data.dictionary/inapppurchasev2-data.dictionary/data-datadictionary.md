@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update an in-app purchase App Store review screenshot.
+The request body you use to update an In-App Purchase App Store review screenshot.
 
 **Availability**:
 - App Store Connect API 2.0+

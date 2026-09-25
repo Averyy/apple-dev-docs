@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-Attributes that describe an in-app purchase offer code custom code resource.
+Attributes that describe an In-App Purchase offer code custom code resource.
 
 **Availability**:
 - App Store Connect API 4.2+

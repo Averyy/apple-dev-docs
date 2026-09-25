@@ -26,6 +26,8 @@ For more information about all you can do with Game Center, see the [`Game Cente
   Manage enablement, achievement, leaderboard, and localization details for your apps.
 - [Game Center groups](game-center-groups.md)
   Manage groups between your apps.
+- [Game Center blocked players](game-center-blocked-players.md)
+  Block and unblock the Game Center players who can play your game.
 ### Achievements
 - [Game Center achievements](game-center-achievements.md)
   Manage achievements for your apps.
@@ -52,6 +54,8 @@ For more information about all you can do with Game Center, see the [`Game Cente
   Read, create, and delete Game Center leaderboards releases.
 - [Game Center leaderboards scores](game-center-leaderboards-scores.md)
   Create and modify Game Center leaderboards scores.
+- [Game Center score moderations](game-center-score-moderations.md)
+  Review and moderate scores players submit to your app’s leaderboards.
 ### Leaderboard sets
 - [Game Center leaderboard sets](game-center-leaderboard-sets.md)
   Manage Game Center leaderboard sets for your apps.

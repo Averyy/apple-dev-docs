@@ -365,6 +365,8 @@ A sequence should provide its iterator in O(1). The `Sequence` protocol makes no
 
 ## See Also
 
+- [protocol IteratorProtocol](iteratorprotocol.md)
+  A type that supplies the values of a sequence one at a time.
 - [protocol Collection](collection.md)
   A sequence whose elements can be traversed multiple times, nondestructively, and accessed by an indexed subscript.
 

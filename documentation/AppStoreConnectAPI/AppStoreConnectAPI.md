@@ -25,7 +25,7 @@ Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain key
 
 The API provides resources to automate these areas of App Store Connect:
 
-- **In-App Purchases and Subscriptions.** Manage in-app purchases and auto-renewable subscriptions for your app.
+- **In-App Purchases and Subscriptions.** Manage In-App Purchases and auto-renewable subscriptions for your app.
 - **TestFlight.** Manage beta builds of your app, testers, and groups.
 - **Xcode Cloud.** Read Xcode Cloud data, manage workflows, and start builds.
 - **Users and Access.** Send invitations for users to join your team. Adjust their level of access or remove users.
@@ -55,7 +55,7 @@ The App Store Connect API returns responses from resources that are consistent J
   Learn about new features and updates in the App Store Connect API.
 ### App Store
 - [App Store](app-store.md)
-  Manage all aspects of your app, App Clips, in-app purchases, and customer reviews in the App Store.
+  Manage all aspects of your app, App Clips, In-App Purchases, and customer reviews in the App Store.
 ### TestFlight
 - [Prerelease Versions and Beta Testers](prerelease-versions-and-beta-testers.md)
   Manage your beta testing program, including beta testers and groups, apps, App Clips, and builds.

@@ -31,7 +31,7 @@ GET /v1/subscriptionPricePoints/{pricePointId}/adjustedEqualizations?filter[upfr
 - `filter[territory]` ([string]): Filter the returned subscription price points by territory.
 - `filter[subscription]` ([string]): Filter the returned subscription price points by subscription.
 - `filter[upfrontPricePointId]` ([string]): Filter the returned subscription price points by upfront price point ID.
-- `filter[planType]` ([string]): Filter the returned subscription price points by plan type.
+- `filter[planType]` ([string]) *(required)*: Filter the returned subscription price points by plan type.
 - `fields[subscriptionPricePoints]` ([string]): Additional fields to include for each subscription price point resource returned by the response.
 - `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response.
 - `limit` (integer): The maximum number of subscription price point resources to return.

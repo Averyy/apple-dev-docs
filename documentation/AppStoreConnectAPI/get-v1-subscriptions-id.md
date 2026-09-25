@@ -8,6 +8,10 @@ Get information about a specific auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Mentions
+
+- [Configuring multi-seat subscriptions for organizations](configuring-multi-seat-subscriptions-for-organizations.md)
+
 ## Endpoint
 
 `GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}`

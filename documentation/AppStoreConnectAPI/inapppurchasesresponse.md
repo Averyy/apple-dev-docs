@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The response body for endpoints that list in-app purchases for an app.
+The response body for endpoints that list In-App Purchases for an app.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -40,7 +40,7 @@ object InAppPurchasesResponse
 - [object InAppPurchase](inapppurchase.md)
   A one-time purchasable item available in an app, such as a consumable, non-consumable, or non-renewing subscription.
 - [object InAppPurchaseResponse](inapppurchaseresponse.md)
-  The response body for endpoints that read a single in-app purchase.
+  The response body for endpoints that read a single In-App Purchase.
 - [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
 - [object AppPricePointV3](apppricepointv3.md)

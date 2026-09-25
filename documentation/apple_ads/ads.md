@@ -6,6 +6,8 @@ Assign an ad creative to an ad group.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 You use an [`Ad`](ad.md) object to assign an ad creative to an ad group. You can assign one active ad per ad group. See also [`Ad Rejection Reasons`](ad-rejection-reasons.md).
 
 ## Topics

@@ -6,6 +6,8 @@ Create and manage Apple Ads campaigns.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 Use campaigns to promote your apps in the App Store. For an app to be eligible for Apple Ads in a particular market, it must be available for purchase, download, or preorder in the App Store, and Apple Ads must be available in the countries and regions you want to promote to. There may be some restrictions that make your app ineligible for Apple Ads advertising in some markets. Use [`Find App Eligibility Records`](find-app-eligibility-records.md) to determine your app eligibility to run in campaigns.
 
 You must have an `adamId` for each app you’re promoting, a valid email address, and an Apple ID. Apple IDs that only use phone numbers aren’t acceptable. All advertisers must comply with [`Apple Ads Advertising Content Policies`](https://developer.apple.comhttps://ads.apple.com/policies).
@@ -73,9 +75,7 @@ For reports with a Maximize Conversions bidding strategy, see campaign and ad gr
 ## See Also
 
 - [Budget Orders](budget-orders.md)
-  Manage your budgets.
 - [Ad Groups](ad-groups.md)
-  Create and manage ad groups.
 - [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)
   Apply relevant words or phrases that make your campaigns findable.
 - [Search Geolocations](search-geolocations.md)

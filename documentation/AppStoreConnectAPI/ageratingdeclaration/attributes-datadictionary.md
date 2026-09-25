@@ -48,7 +48,8 @@ object AgeRatingDeclaration.Attributes
 - `violenceRealistic` (string): Declaration for realistic violence.
 - `ageRatingOverride` (string): An override you set for the app’s calculated age rating. Allowed values are NONE, NINE_PLUS, THIRTEEN_PLUS, SIXTEEN_PLUS, SEVENTEEN_PLUS, and UNRATED. This attribute is deprecated; use ageRatingOverrideV2 instead.
 - `ageRatingOverrideV2` (string): An override you set for the app’s calculated age rating. Allowed values are NONE, NINE_PLUS, THIRTEEN_PLUS, SIXTEEN_PLUS, EIGHTEEN_PLUS, and UNRATED.
-- `koreaAgeRatingOverride` (string): An override you set for the app’s calculated age rating in Korea. Allowed values are NONE, FIFTEEN_PLUS, and NINETEEN_PLUS.
+- `koreaAgeRatingOverride` (string): An override you set for the app’s calculated age rating in Korea. Set this value to the age rating that corresponds to the rating the `gracRatingClassificationNumber` represents.
+- `gracRatingClassificationNumber` (string): The rating classification number provided by Game Rating and Administration Committee (GRAC). To learn more, see the [`Game Rating and Administration Committee`](https://developer.apple.comhttps://www.gcrb.or.kr) website.
 - `developerAgeRatingInfoUrl` (uri): The URL where people can find more information about how you determine the app’s age rating.
 
 

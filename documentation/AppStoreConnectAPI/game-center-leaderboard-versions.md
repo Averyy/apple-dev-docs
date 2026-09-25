@@ -41,6 +41,8 @@ Manage versions for your Game Center leaderboards.
   Read, create, and delete Game Center leaderboards releases.
 - [Game Center leaderboards scores](game-center-leaderboards-scores.md)
   Create and modify Game Center leaderboards scores.
+- [Game Center score moderations](game-center-score-moderations.md)
+  Review and moderate scores players submit to your app’s leaderboards.
 
 
 ---

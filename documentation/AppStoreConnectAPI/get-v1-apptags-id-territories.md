@@ -8,6 +8,10 @@ List territory availability for a specific app tag.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Mentions
+
+- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+
 ## Endpoint
 
 `GET https://api.appstoreconnect.apple.com/v1/appTags/{id}/territories`

@@ -1,9 +1,9 @@
-# Delete an in-app purchase image (v1)
+# Delete an In-App Purchase image (v1)
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Delete the image asset that appears on the App Store listing that represents an in-app purchase.
+Delete the image asset that appears on the App Store listing that represents an In-App Purchase.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -18,18 +18,18 @@ Delete the image asset that appears on the App Store listing that represents an 
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `inAppPurchaseImages` resource ID from the [`List in-app purchase images`](get-v2-inapppurchases-_id_-images.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `inAppPurchaseImages` resource ID from the [`List In-App Purchase images`](get-v2-inapppurchases-_id_-images.md) response.
 
 ## See Also
 
-- [Create an image for an in-app purchase (v1)](post-v1-inapppurchaseimages.md)
-  Reserve an image asset to appear in the App Store, representing an in-app purchase.
-- [Read in-app purchase image information (v1)](get-v1-inapppurchaseimages-_id_.md)
-  Read details about a specific in-app purchase image.
-- [List in-app purchase images](get-v2-inapppurchases-_id_-images.md)
-  List all images for a specific in-app purchase.
-- [Commit an image for an in-app purchase (v1)](patch-v1-inapppurchaseimages-_id_.md)
-  Commit an uploaded image asset for an in-app purchase.
+- [Create an image for an In-App Purchase (v1)](post-v1-inapppurchaseimages.md)
+  Reserve an image asset to appear in the App Store, representing an In-App Purchase.
+- [Read In-App Purchase image information (v1)](get-v1-inapppurchaseimages-_id_.md)
+  Read details about a specific In-App Purchase image.
+- [List In-App Purchase images](get-v2-inapppurchases-_id_-images.md)
+  List all images for a specific In-App Purchase.
+- [Commit an image for an In-App Purchase (v1)](patch-v1-inapppurchaseimages-_id_.md)
+  Commit an uploaded image asset for an In-App Purchase.
 
 
 ---

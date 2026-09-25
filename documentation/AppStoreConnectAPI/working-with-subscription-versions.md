@@ -8,19 +8,19 @@ Manage draft versions of an auto-renewable subscription’s localized metadata a
 
 A subscription version is a draft container that groups the localized metadata and review images that go through App Review together. Create a version, attach localizations and images to it, then submit the version through the review submissions workflow. The parent subscription resource holds properties that stay stable across versions — its product ID, subscription duration, group, and pricing — while each version captures the reviewable metadata for a single review cycle.
 
-> **Note**:  The pre-4.4.1 workflow that posts localizations and images directly to the subscription (`POST /v1/subscriptionLocalizations`, `POST /v1/subscriptionImages`) is deprecated as of 4.4.1 but remains available for existing integrations. For guidance on moving to the version-based workflow, see [`Migrating in-app purchase metadata to v2`](migrating-in-app-purchase-metadata-to-v2.md).
+> **Note**:  The pre-4.4.1 workflow that posts localizations and images directly to the subscription (`POST /v1/subscriptionLocalizations`, `POST /v1/subscriptionImages`) is deprecated as of 4.4.1 but remains available for existing integrations. For guidance on moving to the version-based workflow, see [`Migrating In-App Purchase metadata to v2`](migrating-in-app-purchase-metadata-to-v2.md).
 
 ##### Understand the Version Lifecycle
 
 A version moves through these states, exposed on `SubscriptionVersion/Attributes/state`:
 
-- `PREPARE_FOR_SUBMISSION`: the version is being edited. Localizations and images can be added, changed, or removed.
-- `READY_FOR_REVIEW`: the version is attached to a review submission and awaiting the submission to be marked `submitted`.
-- `WAITING_FOR_REVIEW`: the review submission has been submitted and the version is queued.
+- `PREPARE_FOR_SUBMISSION`: The version is open for editing. You can add, change, or remove localizations and images.
+- `READY_FOR_REVIEW`: The version belongs to a review submission and is waiting for you to mark that submission `submitted`.
+- `WAITING_FOR_REVIEW`: You submitted the review submission, and the version is queued.
 - `IN_REVIEW`: App Review is actively reviewing the version.
-- `ACCEPTED` or `APPROVED`: the version passed review.
-- `REJECTED` or `DEVELOPER_REJECTED`: the version was rejected by App Review or withdrawn by the developer.
-- `REPLACED_WITH_NEW_VERSION`: a newer version supersedes this one.
+- `ACCEPTED` or `APPROVED`: The version passed review.
+- `REJECTED` or `DEVELOPER_REJECTED`: App Review rejected the version, or you withdrew it.
+- `REPLACED_WITH_NEW_VERSION`: A newer version supersedes this one.
 
 Versions are read-only after creation. To change a version’s contents, create a new version.
 
@@ -137,6 +137,8 @@ When you mark the submission `submitted`, the version moves from `READY_FOR_REVI
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 - [Querying adjusted subscription price equalizations](querying-adjusted-subscription-price-equalizations.md)
   Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
+- [Configuring multi-seat subscriptions for organizations](configuring-multi-seat-subscriptions-for-organizations.md)
+  Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
 - [Subscriptions](subscriptions.md)

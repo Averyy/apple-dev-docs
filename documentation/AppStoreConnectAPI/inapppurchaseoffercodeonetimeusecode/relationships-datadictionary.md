@@ -18,11 +18,11 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Relationships
 
 ### Dictionaries
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/createdbyactor-data.dictionary.md)
-  The data that describes the created by actor of the in-app purchase offer code one-time use code.
+  The data that describes the created by actor of the In-App Purchase offer code one-time use code.
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
-  The data that describes the deactivated by actor of the in-app purchase offer code one-time use code.
+  The data that describes the deactivated by actor of the In-App Purchase offer code one-time use code.
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/values-data.dictionary.md)
-  Information about the values of the in-app purchase offer code one-time use code.
+  Information about the values of the In-App Purchase offer code one-time use code.
 
 ## Properties
 
@@ -33,7 +33,7 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Relationships
 ## See Also
 
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Attributes](inapppurchaseoffercodeonetimeusecode/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase offer code one-time use code resource.
+  Attributes that describe an In-App Purchase offer code one-time use code resource.
 
 
 ---

@@ -11,7 +11,7 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 ##### New Features
 
 - Win-back offers can now be configured using [`Win-back offers`](win-back-offers.md). These are offers to bring back churned or expired customers to a subscription.  To learn more, see [`Creating and configuring win-back offers`](creating-and-configuring-win-back-offers.md).
-- Developers can now use [`Subscription images`](subscription-images.md) and [`In-app purchase images`](in-app-purchase-images.md) endpoints to manage images for promoting subscriptions and in-app purchases.
+- Developers can now use [`Subscription images`](subscription-images.md) and [`In-App Purchase images`](in-app-purchase-images.md) endpoints to manage images for promoting subscriptions and In-App Purchases.
 - Age ratings for Australia and Korea can be read using [`Read app info information`](get-v1-appinfos-_id_.md).
 - There are two new attributes available for age rating declarations. Use [`Modify an age rating declaration`](patch-v1-ageratingdeclarations-_id_.md) to set the attributes `lootbox` and `koreaAgeRatingOverride`, to learn more, see [`AgeRatingDeclarationUpdateRequest.Data.Attributes`](ageratingdeclarationupdaterequest/data-data.dictionary/attributes-data.dictionary.md).
 - The `INSTALLS` report type now has a detailed and summary monthly option for [`Download sales and trends reports`](get-v1-salesreports.md).
@@ -31,14 +31,16 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 ##### Deprecations
 
 - The `app` relationship to [`Create an app encryption declaration`](post-v1-appencryptiondeclarations.md) has been deprecated.
-- The [`Promoted Purchase Images`](promoted-purchase-images.md) endpoints have been deprecated and replaced with [`Subscription images`](subscription-images.md) and [`In-app purchase images`](in-app-purchase-images.md).
+- The [`Promoted Purchase Images`](promoted-purchase-images.md) endpoints have been deprecated and replaced with [`Subscription images`](subscription-images.md) and [`In-App Purchase images`](in-app-purchase-images.md).
 
 ##### Removals
 
-- The duration `ONE_DAY` has been removed from from [`SubscriptionOfferDuration`](subscriptionofferduration.md).
+- The duration `ONE_DAY` has been removed from [`SubscriptionOfferDuration`](subscriptionofferduration.md).
 
 ## See Also
 
+- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
@@ -66,8 +68,6 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

@@ -28,7 +28,7 @@ object InAppPurchasePriceInlineCreate.Relationships
 ## See Also
 
 - [object InAppPurchasePriceInlineCreate.Attributes](inapppurchasepriceinlinecreate/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase price inline create resource.
+  Attributes that describe an In-App Purchase price inline create resource.
 
 
 ---

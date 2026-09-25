@@ -29,9 +29,9 @@ object ReviewSubmissionItemsLinkagesResponse
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)
-  A formal submission to App Store review grouping one or more items — app versions, in-app purchases, or events — for simultaneous review.
+  A formal submission to App Store review grouping one or more items — app versions, In-App Purchases, or events — for simultaneous review.
 - [object ReviewSubmissionItem](reviewsubmissionitem.md)
-  An individual reviewable item — such as an app version, in-app purchase, or App Clip — included in a review submission.
+  An individual reviewable item — such as an app version, In-App Purchase, or App Clip — included in a review submission.
 - [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
   The request body you use to update a review submission update request.
 - [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
@@ -43,9 +43,9 @@ object ReviewSubmissionItemsLinkagesResponse
 - [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
   A response containing the resource identifiers of review submissions associated with an app.
 - [object ReviewSubmission](reviewsubmission.md)
-  A formal submission to App Store review grouping one or more items — app versions, in-app purchases, or events — for simultaneous review.
+  A formal submission to App Store review grouping one or more items — app versions, In-App Purchases, or events — for simultaneous review.
 - [object ReviewSubmissionItem](reviewsubmissionitem.md)
-  An individual reviewable item — such as an app version, in-app purchase, or App Clip — included in a review submission.
+  An individual reviewable item — such as an app version, In-App Purchase, or App Clip — included in a review submission.
 - [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
   The request body you use to update a review submission update request.
 - [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)

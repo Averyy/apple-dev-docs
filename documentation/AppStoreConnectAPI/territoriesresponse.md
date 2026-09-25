@@ -23,7 +23,7 @@ object TerritoriesResponse
 ## See Also
 
 - [object Territory](territory.md)
-  An App Store region (country or territory) where apps, subscriptions, and in-app purchases are offered.
+  An App Store region (country or territory) where apps, subscriptions, and In-App Purchases are offered.
 - [object TerritoryResponse](territoryresponse.md)
   The response body for endpoints that read a single App Store territory.
 - [object TerritoriesWithoutIncludesResponse](territorieswithoutincludesresponse.md)

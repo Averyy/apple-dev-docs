@@ -30,7 +30,7 @@ Get the app in App Store Connect that’s related to an Xcode Cloud product.
 - `limit[betaGroups]` (integer): The number of included Apps resources to return if the beta groups relationship is included.
 - `limit[builds]` (integer): The number of included Apps resources to return if the builds relationship is included.
 - `limit[gameCenterEnabledVersions]` (integer): The number of included Apps resources to return if the Game Center enabled versions relationship is included.
-- `limit[inAppPurchases]` (integer): The number of included Apps resources to return if the in-app purchases relationship is included.
+- `limit[inAppPurchases]` (integer): The number of included Apps resources to return if the In-App Purchases relationship is included.
 - `limit[preReleaseVersions]` (integer): The number of included Apps resources to return if the pre-release versions relationship is included.
 - `limit[appClips]` (integer)
 - `fields[appClips]` ([string])

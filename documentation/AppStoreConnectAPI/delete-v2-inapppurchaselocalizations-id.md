@@ -1,9 +1,9 @@
-# Delete an in-app purchase localization
+# Delete an In-App Purchase localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Delete a localized display name and description for an in-app purchase configured with the v2 API.
+Delete a localized display name and description for an In-App Purchase configured with the v2 API.
 
 **Availability**:
 - App Store Connect API 4.4.1+
@@ -22,14 +22,14 @@ Delete a localized display name and description for an in-app purchase configure
 
 ## See Also
 
-- [List localizations for an in-app purchase version](get-v1-inapppurchaseversions-_id_-localizations.md)
-  List the localized display names and descriptions captured in a draft version of an in-app purchase.
-- [Create an in-app purchase localization](post-v2-inapppurchaselocalizations.md)
-  Create a localized display name and description for an in-app purchase configured with the v2 API.
-- [Read in-app purchase localization information](get-v2-inapppurchaselocalizations-_id_.md)
-  Get the display name and description for a specific locale of an in-app purchase configured with the v2 API.
-- [Modify an in-app purchase localization](patch-v2-inapppurchaselocalizations-_id_.md)
-  Update the display name and description for a specific locale of an in-app purchase configured with the v2 API.
+- [List localizations for an In-App Purchase version](get-v1-inapppurchaseversions-_id_-localizations.md)
+  List the localized display names and descriptions captured in a draft version of an In-App Purchase.
+- [Create an In-App Purchase localization](post-v2-inapppurchaselocalizations.md)
+  Create a localized display name and description for an In-App Purchase configured with the v2 API.
+- [Read In-App Purchase localization information](get-v2-inapppurchaselocalizations-_id_.md)
+  Get the display name and description for a specific locale of an In-App Purchase configured with the v2 API.
+- [Modify an In-App Purchase localization](patch-v2-inapppurchaselocalizations-_id_.md)
+  Update the display name and description for a specific locale of an In-App Purchase configured with the v2 API.
 
 
 ---

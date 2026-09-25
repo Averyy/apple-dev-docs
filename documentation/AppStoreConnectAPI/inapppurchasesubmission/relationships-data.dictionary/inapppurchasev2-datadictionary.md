@@ -16,7 +16,7 @@ object InAppPurchaseSubmission.Relationships.InAppPurchaseV2
 
 ### Objects
 - [object InAppPurchaseSubmission.Relationships.InAppPurchaseV2.Data](inapppurchasesubmission/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
-  The request body you use to update an in-app purchase submission.
+  The request body you use to update an In-App Purchase submission.
 
 ## Properties
 

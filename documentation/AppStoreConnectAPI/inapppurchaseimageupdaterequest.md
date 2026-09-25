@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body for updating the upload state or file content of an in-app purchase image.
+The request body for updating the upload state or file content of an In-App Purchase image.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -18,7 +18,7 @@ object InAppPurchaseImageUpdateRequest
 
 ### Objects
 - [object InAppPurchaseImageUpdateRequest.Data](inapppurchaseimageupdaterequest/data-data.dictionary.md)
-  The request body you use to update an in-app purchase image.
+  The request body you use to update an In-App Purchase image.
 
 ## Properties
 
@@ -27,13 +27,13 @@ object InAppPurchaseImageUpdateRequest
 ## See Also
 
 - [object InAppPurchaseImage](inapppurchaseimage.md)
-  A screenshot or image associated with an in-app purchase or subscription, displayed on the App Store product page.
+  A screenshot or image associated with an In-App Purchase or subscription, displayed on the App Store product page.
 - [object InAppPurchaseImageCreateRequest](inapppurchaseimagecreaterequest.md)
-  The request body you use to create an in-app purchase image reservation.
+  The request body you use to create an In-App Purchase image reservation.
 - [object InAppPurchaseImageResponse](inapppurchaseimageresponse.md)
-  A response containing a single image for an in-app purchase.
+  A response containing a single image for an In-App Purchase.
 - [object InAppPurchaseImagesResponse](inapppurchaseimagesresponse.md)
-  A response containing a list of images for an in-app purchase.
+  A response containing a list of images for an In-App Purchase.
 
 
 ---

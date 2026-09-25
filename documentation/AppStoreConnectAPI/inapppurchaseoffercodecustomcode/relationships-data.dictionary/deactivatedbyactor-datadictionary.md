@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data that describes the deactivated by actor of the in-app purchase offer code custom code.
+The data that describes the deactivated by actor of the In-App Purchase offer code custom code.
 
 **Availability**:
 - App Store Connect API 4.2+
@@ -27,7 +27,7 @@ object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor
 ## See Also
 
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/createdbyactor-data.dictionary.md)
-  The data that describes the created by actor of the in-app purchase offer code custom code.
+  The data that describes the created by actor of the In-App Purchase offer code custom code.
 
 
 ---

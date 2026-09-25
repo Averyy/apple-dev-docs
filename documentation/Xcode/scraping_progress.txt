@@ -1,4 +1,4 @@
 Completed scraping Xcode!
-Total pages scraped: 5
-Pages skipped (unchanged): 362
+Total pages scraped: 1
+Pages skipped (unchanged): 366
 Pages failed: 0

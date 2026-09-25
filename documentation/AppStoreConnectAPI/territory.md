@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-An App Store region (country or territory) where apps, subscriptions, and in-app purchases are offered.
+An App Store region (country or territory) where apps, subscriptions, and In-App Purchases are offered.
 
 **Availability**:
 - App Store Connect API 1.2+

@@ -89,6 +89,8 @@ Use this class to perform registration and authentication tasks, and to repair r
 
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
   Specify how Platform SSO authenticates with the identity provider.
+- [Interpreting Platform Single Sign-on authorization scopes](interpreting-platform-single-sign-on-authorization-scopes.md)
+  Use authorization scopes to apply authentication policies.
 - [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)
   An interface for configuring platform single sign-on.
 

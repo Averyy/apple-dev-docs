@@ -17,44 +17,6 @@ object App.Relationships
 ## Topics
 
 ### Objects
-- [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)
-  The data and links that describe the relationship between an app and an App Encryption Declaration.
-- [object App.Relationships.InAppPurchasesV2](app/relationships-data.dictionary/inapppurchasesv2-data.dictionary.md)
-- [object App.Relationships.AppClips](app/relationships-data.dictionary/appclips-data.dictionary.md)
-  The data and links that describe the relationship between the Apps and the App Clips resources.
-- [object App.Relationships.AppCustomProductPages](app/relationships-data.dictionary/appcustomproductpages-data.dictionary.md)
-- [object App.Relationships.AppEvents](app/relationships-data.dictionary/appevents-data.dictionary.md)
-- [object App.Relationships.AppInfos](app/relationships-data.dictionary/appinfos-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.AppStoreVersions](app/relationships-data.dictionary/appstoreversions-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.BetaAppLocalizations](app/relationships-data.dictionary/betaapplocalizations-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.BetaAppReviewDetail](app/relationships-data.dictionary/betaappreviewdetail-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.BetaGroups](app/relationships-data.dictionary/betagroups-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.BetaLicenseAgreement](app/relationships-data.dictionary/betalicenseagreement-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.Builds](app/relationships-data.dictionary/builds-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.CiProduct](app/relationships-data.dictionary/ciproduct-data.dictionary.md)
-  The data and links that describe the relationship between the Apps and Products resources.
-- [object App.Relationships.EndUserLicenseAgreement](app/relationships-data.dictionary/enduserlicenseagreement-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.GameCenterEnabledVersions](app/relationships-data.dictionary/gamecenterenabledversions-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.InAppPurchases](app/relationships-data.dictionary/inapppurchases-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.PreReleaseVersions](app/relationships-data.dictionary/prereleaseversions-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
-- [object App.Relationships.ReviewSubmissions](app/relationships-data.dictionary/reviewsubmissions-data.dictionary.md)
-- [object App.Relationships.SubscriptionGracePeriod](app/relationships-data.dictionary/subscriptiongraceperiod-data.dictionary.md)
-- [object App.Relationships.PromotedPurchases](app/relationships-data.dictionary/promotedpurchases-data.dictionary.md)
-- [object App.Relationships.SubscriptionGroups](app/relationships-data.dictionary/subscriptiongroups-data.dictionary.md)
-- [object App.Relationships.AppStoreVersionExperimentsV2](app/relationships-data.dictionary/appstoreversionexperimentsv2-data.dictionary.md)
-- [object App.Relationships.GameCenterDetail](app/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
-### Dictionaries
 - [object App.Relationships.AccessibilityDeclarations](app/relationships-data.dictionary/accessibilitydeclarations-data.dictionary.md)
   The link object for the app’s accessibility declarations relationship.
 - [object App.Relationships.AlternativeDistributionKey](app/relationships-data.dictionary/alternativedistributionkey-data.dictionary.md)
@@ -62,24 +24,63 @@ object App.Relationships
 - [object App.Relationships.AndroidToIosAppMappingDetails](app/relationships-data.dictionary/androidtoiosappmappingdetails-data.dictionary.md)
   The data and links that describe Android to iOS app mapping details related to an app.
 - [object App.Relationships.AppAvailabilityV2](app/relationships-data.dictionary/appavailabilityv2-data.dictionary.md)
+- [object App.Relationships.AppClips](app/relationships-data.dictionary/appclips-data.dictionary.md)
+  The data and links that describe the relationship between the Apps and the App Clips resources.
+- [object App.Relationships.AppCustomProductPages](app/relationships-data.dictionary/appcustomproductpages-data.dictionary.md)
+- [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)
+  The data and links that describe the relationship between an app and an App Encryption Declaration.
+- [object App.Relationships.AppEvents](app/relationships-data.dictionary/appevents-data.dictionary.md)
+- [object App.Relationships.AppInfos](app/relationships-data.dictionary/appinfos-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 - [object App.Relationships.AppPricePoints](app/relationships-data.dictionary/apppricepoints-data.dictionary.md)
 - [object App.Relationships.AppPriceSchedule](app/relationships-data.dictionary/apppriceschedule-data.dictionary.md)
 - [object App.Relationships.AppStoreIcon](app/relationships-data.dictionary/appstoreicon-data.dictionary.md)
+- [object App.Relationships.AppStoreVersionExperimentsV2](app/relationships-data.dictionary/appstoreversionexperimentsv2-data.dictionary.md)
+- [object App.Relationships.AppStoreVersions](app/relationships-data.dictionary/appstoreversions-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 - [object App.Relationships.AppTags](app/relationships-data.dictionary/apptags-data.dictionary.md)
 - [object App.Relationships.BackgroundAssets](app/relationships-data.dictionary/backgroundassets-data.dictionary.md)
   The link object for the app’s background assets relationship.
+- [object App.Relationships.BetaAppLocalizations](app/relationships-data.dictionary/betaapplocalizations-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object App.Relationships.BetaAppReviewDetail](app/relationships-data.dictionary/betaappreviewdetail-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 - [object App.Relationships.BetaFeedbackCrashSubmissions](app/relationships-data.dictionary/betafeedbackcrashsubmissions-data.dictionary.md)
   The link object for the app’s beta feedback crash submissions relationship.
 - [object App.Relationships.BetaFeedbackScreenshotSubmissions](app/relationships-data.dictionary/betafeedbackscreenshotsubmissions-data.dictionary.md)
   The link object for the app’s beta feedback screenshot submissions relationship.
+- [object App.Relationships.BetaGroups](app/relationships-data.dictionary/betagroups-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object App.Relationships.BetaLicenseAgreement](app/relationships-data.dictionary/betalicenseagreement-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
 - [object App.Relationships.BetaTesters](app/relationships-data.dictionary/betatesters-data.dictionary.md)
 - [object App.Relationships.BuildUploads](app/relationships-data.dictionary/builduploads-data.dictionary.md)
+- [object App.Relationships.Builds](app/relationships-data.dictionary/builds-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object App.Relationships.CiProduct](app/relationships-data.dictionary/ciproduct-data.dictionary.md)
+  The data and links that describe the relationship between the Apps and Products resources.
 - [object App.Relationships.CustomerReviewSummarizations](app/relationships-data.dictionary/customerreviewsummarizations-data.dictionary.md)
   The link object for the app’s customer review summarizations relationship.
 - [object App.Relationships.CustomerReviews](app/relationships-data.dictionary/customerreviews-data.dictionary.md)
+- [object App.Relationships.EndUserLicenseAgreement](app/relationships-data.dictionary/enduserlicenseagreement-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object App.Relationships.GameCenterDetail](app/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object App.Relationships.GameCenterEnabledVersions](app/relationships-data.dictionary/gamecenterenabledversions-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object App.Relationships.InAppPurchases](app/relationships-data.dictionary/inapppurchases-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object App.Relationships.InAppPurchasesV2](app/relationships-data.dictionary/inapppurchasesv2-data.dictionary.md)
 - [object App.Relationships.MarketplaceSearchDetail](app/relationships-data.dictionary/marketplacesearchdetail-data.dictionary.md)
 - [object App.Relationships.PerfPowerMetrics](app/relationships-data.dictionary/perfpowermetrics-data.dictionary.md)
+- [object App.Relationships.PerformanceOverviews](app/relationships-data.dictionary/performanceoverviews-data.dictionary.md)
+  The link object for the app’s performance overviews relationship.
+- [object App.Relationships.PreReleaseVersions](app/relationships-data.dictionary/prereleaseversions-data.dictionary.md)
+  The data and links that describe the relationship between the resources.
+- [object App.Relationships.PromotedPurchases](app/relationships-data.dictionary/promotedpurchases-data.dictionary.md)
+- [object App.Relationships.ReviewSubmissions](app/relationships-data.dictionary/reviewsubmissions-data.dictionary.md)
 - [object App.Relationships.SearchKeywords](app/relationships-data.dictionary/searchkeywords-data.dictionary.md)
+- [object App.Relationships.SubscriptionGracePeriod](app/relationships-data.dictionary/subscriptiongraceperiod-data.dictionary.md)
+- [object App.Relationships.SubscriptionGroups](app/relationships-data.dictionary/subscriptiongroups-data.dictionary.md)
 - [object App.Relationships.Webhooks](app/relationships-data.dictionary/webhooks-data.dictionary.md)
   The link object for the app’s webhooks relationship.
 
@@ -109,25 +110,26 @@ object App.Relationships
 - `appEncryptionDeclarations` (App.Relationships.AppEncryptionDeclarations): The data and links that describe the relationship between the Apps and the App Encryption Declarations resources.
 - `gameCenterDetail` (App.Relationships.GameCenterDetail): The data and links that describe the relationship between the Apps and the Game Center Detail resources.
 - `androidToIosAppMappingDetails` (App.Relationships.AndroidToIosAppMappingDetails)
-- `accessibilityDeclarations` (App.Relationships.AccessibilityDeclarations)
-- `alternativeDistributionKey` (App.Relationships.AlternativeDistributionKey)
-- `analyticsReportRequests` (App.Relationships.AnalyticsReportRequests)
-- `appAvailabilityV2` (App.Relationships.AppAvailabilityV2)
-- `appPricePoints` (App.Relationships.AppPricePoints)
-- `appPriceSchedule` (App.Relationships.AppPriceSchedule)
-- `appStoreIcon` (App.Relationships.AppStoreIcon)
-- `appTags` (App.Relationships.AppTags)
-- `backgroundAssets` (App.Relationships.BackgroundAssets)
-- `betaFeedbackCrashSubmissions` (App.Relationships.BetaFeedbackCrashSubmissions)
-- `betaFeedbackScreenshotSubmissions` (App.Relationships.BetaFeedbackScreenshotSubmissions)
-- `betaTesters` (App.Relationships.BetaTesters)
-- `buildUploads` (App.Relationships.BuildUploads)
-- `customerReviewSummarizations` (App.Relationships.CustomerReviewSummarizations)
-- `customerReviews` (App.Relationships.CustomerReviews)
-- `marketplaceSearchDetail` (App.Relationships.MarketplaceSearchDetail)
-- `perfPowerMetrics` (App.Relationships.PerfPowerMetrics)
-- `searchKeywords` (App.Relationships.SearchKeywords)
-- `webhooks` (App.Relationships.Webhooks)
+- `performanceOverviews` (App.Relationships.PerformanceOverviews): The data and links that describe the relationship between the Apps and the Performance Overviews resources.
+- `accessibilityDeclarations` (App.Relationships.AccessibilityDeclarations): The data and links that describe the relationship between the Apps and the Accessibility Declarations resources.
+- `alternativeDistributionKey` (App.Relationships.AlternativeDistributionKey): The data and links that describe the relationship between the Apps and the Alternative Distribution Keys resources.
+- `analyticsReportRequests` (App.Relationships.AnalyticsReportRequests): The data and links that describe the relationship between the Apps and the Analytics Report Requests resources.
+- `appAvailabilityV2` (App.Relationships.AppAvailabilityV2): The data and links that describe the relationship between the Apps and the App Availabilities resources.
+- `appPricePoints` (App.Relationships.AppPricePoints): The data and links that describe the relationship between the Apps and the App Price Points resources.
+- `appPriceSchedule` (App.Relationships.AppPriceSchedule): The data and links that describe the relationship between the Apps and the App Price Schedules resources.
+- `appStoreIcon` (App.Relationships.AppStoreIcon): The data and links that describe the relationship between the Apps and the App Store Icons resources.
+- `appTags` (App.Relationships.AppTags): The data and links that describe the relationship between the Apps and the App Tags resources.
+- `backgroundAssets` (App.Relationships.BackgroundAssets): The data and links that describe the relationship between the Apps and the Background Assets resources.
+- `betaFeedbackCrashSubmissions` (App.Relationships.BetaFeedbackCrashSubmissions): The data and links that describe the relationship between the Apps and the Beta Feedback Crash Submissions resources.
+- `betaFeedbackScreenshotSubmissions` (App.Relationships.BetaFeedbackScreenshotSubmissions): The data and links that describe the relationship between the Apps and the Beta Feedback Screenshot Submissions resources.
+- `betaTesters` (App.Relationships.BetaTesters): The data and links that describe the relationship between the Apps and the Beta Testers resources.
+- `buildUploads` (App.Relationships.BuildUploads): The data and links that describe the relationship between the Apps and the Build Uploads resources.
+- `customerReviews` (App.Relationships.CustomerReviews): The data and links that describe the relationship between the Apps and the Customer Reviews resources.
+- `customerReviewSummarizations` (App.Relationships.CustomerReviewSummarizations): The data and links that describe the relationship between the Apps and the Customer Review Summarizations resources.
+- `marketplaceSearchDetail` (App.Relationships.MarketplaceSearchDetail): The data and links that describe the relationship between the Apps and the Marketplace Search Details resources.
+- `perfPowerMetrics` (App.Relationships.PerfPowerMetrics): The data and links that describe the relationship between the Apps and the Power and Performance Metrics resources.
+- `searchKeywords` (App.Relationships.SearchKeywords): The data and links that describe the relationship between the Apps and the Search Keywords resources.
+- `webhooks` (App.Relationships.Webhooks): The data and links that describe the relationship between the Apps and the Webhooks resources.
 
 ## See Also
 

@@ -84,13 +84,13 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [List all app store experiments for an app](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
   Get a list of all App Store version experiments for a specific app.
 - [List App Store version experiment IDs for an app](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
-### Getting in-app purchase information
-- [Read in-app purchase information](get-v1-inapppurchases-_id_.md)
-  Get information about an in-app purchase.
+### Getting In-App Purchase information
+- [Read In-App Purchase information](get-v1-inapppurchases-_id_.md)
+  Get information about an In-App Purchase.
 - [List all promoted purchases for an app](get-v1-apps-_id_-promotedpurchases.md)
-  Get a list of promoted in-app purchases, including promoted auto-renewable subscriptions, for an app.
-- [List all in-app purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
-  List the in-app purchases that are available for your app.
+  Get a list of promoted In-App Purchases, including promoted auto-renewable subscriptions, for an app.
+- [List all In-App Purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
+  List the In-App Purchases that are available for your app.
 ### Getting review submissions
 - [Get Review Submissions for an App](get-v1-apps-_id_-reviewsubmissions.md)
   Get a list of review submissions associated with a specific app.
@@ -99,6 +99,9 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 ### Getting power and performance metrics
 - [Get power and performance metrics for an app](get-v1-apps-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for the most recent version of an app.
+### Getting performance overviews
+- [Get the performance overview for an app](get-v1-apps-_id_-performanceoverviews.md)
+  Get the aggregated performance overview data for a specific app.
 ### Getting customer reviews
 - [List all customer reviews for an app](get-v1-apps-_id_-customerreviews.md)
   Get a list of customer reviews for a specific app.
@@ -140,14 +143,14 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
   Get a list of subscription groups for a specific app.
 - [Get the subscription grace period ID for an app](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
 - [List subscription group IDs for an app](get-v1-apps-_id_-relationships-subscriptiongroups.md)
-### Getting in-app purchase information
-- [List all in-app purchases for an app](get-v1-apps-_id_-inapppurchasesv2.md)
-  Get a list of the in-app purchases for a specific app.
+### Getting In-App Purchase information
+- [List all In-App Purchases for an app](get-v1-apps-_id_-inapppurchasesv2.md)
+  Get a list of the In-App Purchases for a specific app.
 - [GET /v1/apps/{id}/relationships/inAppPurchasesV2](get-v1-apps-_id_-relationships-inapppurchasesv2.md)
-- [List all in-app purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
-  List the in-app purchases that are available for your app.
-- [List in-app purchases ids for an app v1](get-v1-apps-_id_-relationships-inapppurchases.md)
-  Get a list of all in-app purchases IDs for a specific app V1.
+- [List all In-App Purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
+  List the In-App Purchases that are available for your app.
+- [List In-App Purchases ids for an app v1](get-v1-apps-_id_-relationships-inapppurchases.md)
+  Get a list of all In-App Purchases IDs for a specific app V1.
 ### Getting beta feedback
 - [List All Beta Feedback Crash Submissions for an App](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
   Get the beta feedback crash submissions for a specific app.
@@ -212,9 +215,9 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [object InAppPurchase](inapppurchase.md)
   A one-time purchasable item available in an app, such as a consumable, non-consumable, or non-renewing subscription.
 - [object InAppPurchaseResponse](inapppurchaseresponse.md)
-  The response body for endpoints that read a single in-app purchase.
+  The response body for endpoints that read a single In-App Purchase.
 - [object InAppPurchasesResponse](inapppurchasesresponse.md)
-  The response body for endpoints that list in-app purchases for an app.
+  The response body for endpoints that list In-App Purchases for an app.
 - [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
 - [object AppPricePointV3](apppricepointv3.md)
@@ -286,6 +289,9 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [object AppInfoSecondarySubcategoryTwoLinkageResponse](appinfosecondarysubcategorytwolinkageresponse.md)
 - [object AppMarketplaceSearchDetailLinkageResponse](appmarketplacesearchdetaillinkageresponse.md)
 - [object AppPerfPowerMetricsLinkagesResponse](appperfpowermetricslinkagesresponse.md)
+- [object AppPerformanceOverviewsLinkagesResponse](appperformanceoverviewslinkagesresponse.md)
+- [object PerformanceOverview](performanceoverview.md)
+  An aggregated performance overview for an app, summarizing the performance data that Xcode reports.
 - [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
 - [object AppPricePointV3EqualizationsLinkagesResponse](apppricepointv3equalizationslinkagesresponse.md)
 - [object AppPriceScheduleAutomaticPricesLinkagesResponse](apppricescheduleautomaticpriceslinkagesresponse.md)

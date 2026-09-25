@@ -18,9 +18,9 @@ object InAppPurchaseOfferCodeCustomCode.Relationships
 
 ### Dictionaries
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/createdbyactor-data.dictionary.md)
-  The data that describes the created by actor of the in-app purchase offer code custom code.
+  The data that describes the created by actor of the In-App Purchase offer code custom code.
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
-  The data that describes the deactivated by actor of the in-app purchase offer code custom code.
+  The data that describes the deactivated by actor of the In-App Purchase offer code custom code.
 
 ## Properties
 
@@ -30,7 +30,7 @@ object InAppPurchaseOfferCodeCustomCode.Relationships
 ## See Also
 
 - [object InAppPurchaseOfferCodeCustomCode.Attributes](inapppurchaseoffercodecustomcode/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase offer code custom code resource.
+  Attributes that describe an In-App Purchase offer code custom code resource.
 
 
 ---

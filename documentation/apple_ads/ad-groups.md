@@ -2,9 +2,11 @@
 
 **Framework**: Apple Ads
 
-Create and manage ad groups.
-
 #### Overview
+
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
+Create and manage ad groups.
 
 An ad group is a collection of criteria that defines who sees your ad in App Store search results. A basic ad group includes a `startTime`, `endTime`, and `dailyBudgetAmount`. You can add bid amounts, [`TargetingDimensions`](targetingdimensions.md), and [`Targeting Keywords and Negative Keywords`](targeting-keywords-and-negative-keywords.md). Use the [`Search for Geolocations`](search-for-geolocations.md) endpoint to find localities to use for targeting dimensions within ad groups.
 
@@ -115,7 +117,6 @@ For reports with a Maximize Conversions bidding strategy, see campaign and ad gr
 - [Campaigns](campaigns.md)
   Create and manage Apple Ads campaigns.
 - [Budget Orders](budget-orders.md)
-  Manage your budgets.
 - [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)
   Apply relevant words or phrases that make your campaigns findable.
 - [Search Geolocations](search-geolocations.md)

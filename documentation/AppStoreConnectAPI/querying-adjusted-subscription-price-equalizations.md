@@ -30,6 +30,8 @@ To read the raw equalizations without adjustments, use `GET /v1/subscriptionPric
   Manage draft versions of an auto-renewable subscription’s localized metadata and review images before submitting for App Review.
 - [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
   Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
+- [Configuring multi-seat subscriptions for organizations](configuring-multi-seat-subscriptions-for-organizations.md)
+  Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 - [Subscription Versions](subscription-versions.md)
   Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
 - [Subscriptions](subscriptions.md)

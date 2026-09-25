@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update an in-app purchase localization update request.
+The request body you use to update an In-App Purchase localization update request.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -18,7 +18,7 @@ object InAppPurchaseLocalizationUpdateRequest.Data
 
 ### Objects
 - [object InAppPurchaseLocalizationUpdateRequest.Data.Attributes](inapppurchaselocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase localization update request resource.
+  Attributes that describe an In-App Purchase localization update request resource.
 
 ## Properties
 

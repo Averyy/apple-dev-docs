@@ -14,6 +14,10 @@ The token endpoint URL for login requests.
 var tokenEndpointURL: URL { get set }
 ```
 
+## Mentions
+
+- [Interpreting Platform Single Sign-on authorization scopes](interpreting-platform-single-sign-on-authorization-scopes.md)
+
 ## See Also
 
 - [var audience: String](asauthorizationproviderextensionloginconfiguration/audience.md)

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-Attributes that describe an in-app purchase availability create request resource.
+Attributes that describe an In-App Purchase availability create request resource.
 
 **Availability**:
 - App Store Connect API 2.3+

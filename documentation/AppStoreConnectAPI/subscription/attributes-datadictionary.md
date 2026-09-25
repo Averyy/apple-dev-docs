@@ -23,6 +23,8 @@ object Subscription.Attributes
 - `state` (string)
 - `subscriptionPeriod` (string)
 - `groupLevel` (integer)
+- `marketSettings` ([string]): The markets in which the subscription is available for multi-seat purchase.
+- `multiSeatStatus` (string): The status that indicates whether the subscription supports multiple seats for organizations. Turning on Family Sharing for the subscription automatically sets this value to DISABLED.
 
 ## See Also
 

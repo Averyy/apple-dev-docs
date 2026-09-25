@@ -6,7 +6,7 @@ Learn about changes to Apple Ads Campaign Management API 5.
 
 #### Overview
 
-> ❗ **Important**: The [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) supersedes the Apple Ads Campaign Management API, which will be sunset on January 26, 2027.
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
 
 ##### 56
 

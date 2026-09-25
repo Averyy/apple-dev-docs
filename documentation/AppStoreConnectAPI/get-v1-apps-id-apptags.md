@@ -8,18 +8,22 @@ List all app tags for a specific app.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Mentions
+
+- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+
 ## Endpoint
 
 `GET https://api.appstoreconnect.apple.com/v1/apps/{id}/appTags`
 
 ## Parameters
 
-- `fields[appTags]` ([string]): Additional fields to include for each app tag resource returned by the response.
-- `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response.
+- `fields[appTags]` ([string]): Additional fields to include for each app tag resource returned by the response. Note: `territories` is deprecated; after the relationship is removed, requests that use it return an error.
+- `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response. Note: this parameter is deprecated; after the `territories` relationship is removed, requests that use it return an error.
 - `filter[visibleInAppStore]` ([string]): Filter the returned app tags by visibility in the App Store.
-- `include` ([string]): The relationship data to include in the response.
+- `include` ([string]): The relationship data to include in the response. Note: `territories` is deprecated; after the relationship is removed, requests that include it return an error.
 - `limit` (integer): The maximum number of app tag resources to return.
-- `limit[territories]` (integer): The maximum number of related territory resources to return.
+- `limit[territories]` (integer): The maximum number of related territory resources to return. Note: this parameter is deprecated; after the `territories` relationship is removed, requests that use it return an error.
 - `sort` ([string]): Attributes by which to sort.
 
 ## See Also

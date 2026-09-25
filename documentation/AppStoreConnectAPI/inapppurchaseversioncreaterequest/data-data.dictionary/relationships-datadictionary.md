@@ -18,7 +18,7 @@ object InAppPurchaseVersionCreateRequest.Data.Relationships
 
 ### Objects
 - [object InAppPurchaseVersionCreateRequest.Data.Relationships.InAppPurchase](inapppurchaseversioncreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)
-  The in-app purchase to associate with the new in-app purchase version.
+  The In-App Purchase to associate with the new In-App Purchase version.
 
 ## Properties
 

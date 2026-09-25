@@ -8,6 +8,16 @@ Learn about new features and updates in the Apple School Manager and Apple Busin
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Apple School Manager and Apple Business APIs.
 
+##### 26 Apple Business 2026924
+
+New features for the Apple Business APIs
+
+Expanded the suite of identity services [`Audit Events`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-audit-events) with the following event types.
+
+- Account activity: `EXTERNAL_ACCOUNT_INVITED`, `ACCOUNT_PASSWORD_CHANGED`, `BATCH_PASSWORD_RESET_INITIATED`, `ACCOUNT_IMAGE_SET`, `ACCOUNT_IMAGE_REPLACED`, and `ACCOUNT_IMAGE_REMOVED`.
+- Access management: `APPLE_SERVICES_SETTINGS_UPDATED`, `ROLE_CREATED`, and `ROLE_UPDATED`.
+- Organization: `TERMS_ACCEPTED`, `IDP_CREATED`, `IDP_UPDATED`, `IDP_DELETED`, `IDP_ACCOUNT_SYNC_ENABLED`, `IDP_ACCOUNT_SYNC_DISABLED`, `DOMAIN_FEDERATION_ENABLED`, and `DOMAIN_FEDERATION_DISABLED`.
+
 ##### 25 Apple Business 2026915
 
 ##### 17 Apple School Manager 2026915
@@ -39,7 +49,7 @@ Added support for device management service migration, allowing organizations to
 - [`Assign, Unassign Devices to a Device Management Service or Release Devices.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/create-an-orgdeviceactivity)
 - New read-only fields on organization devices: `isMdmMigrationCapable`, `mdmMigrationStatus`, and `mdmMigrationDeadlineDateTime`.
 
-##### 22 2026715
+##### 22 Apple Business 2026715
 
 New features for the Apple Business APIs
 
@@ -49,7 +59,7 @@ Added support for organizational units using the following endpoints:
 - [`Get Organizational Unit Information.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-organizationalunit-information)
 - [`Get User IDs for an Organizational Unit.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-all-user-ids-for-an-organizationalunit)
 
-##### 21 202663
+##### 21 Apple Business 202663
 
 New features for the Apple Business APIs
 
@@ -60,13 +70,13 @@ Added support for managing device management services using the following endpoi
 - [`Update a Device Management Service.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/update-an-mdmserver)
 - [`Delete a Device Management Service.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/delete-an-mdmserver)
 
-##### 20 2026414
+##### 20 Apple Business 2026414
 
 New features for the Apple Business APIs
 
 Added the following endpoints:
 
-- Audit events (to query organization audit events with filtering support) - [`Retrieve a list of audit events for an organization.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-audit-events)
+- Audit events (to query organization audit events with filtering support) - [`Audit Events`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-audit-events)
 - User and user group management services - [`Get a list of users in an organization.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-users)
 - [`Get information about a specific user in an organization.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-user-information)
 - [`Get a list of user groups in an organization.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-user-groups)
@@ -119,7 +129,7 @@ Added detailed device information for devices enrolled in the built-in device ma
 
 - [`Get Details for a Device Enrolled in the Apple Device Management Service.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-the-details-for-apple-mdm-enrolled-device)
 
-##### 15 2026120
+##### 15 Apple School Manager and Apple Business 2026120
 
 Changes
 
@@ -127,28 +137,28 @@ Changes
 - Updated MAC address types in Apple School Manager [`OrgDevice.Attributes`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/attributes-data.dictionary).
 - Updated MAC address types in Apple Business [`OrgDevice.Attributes`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessmanagerapi/orgdevice/attributes-data.dictionary).
 
-##### 14 20251217
+##### 14 Apple School Manager and Apple Business 20251217
 
 New features
 
 - Added Wi-Fi, Bluetooth, and built-in Ethernet MAC address attributes for macOS to the [`OrgDevice.Attributes`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/attributes-data.dictionary)
 - Added Wi-Fi, Bluetooth, and built-in Ethernet MAC address attributes for macOS to the [`OrgDevice.Attributes`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/attributes-data.dictionary)
 
-##### 13 2025115
+##### 13 Apple School Manager and Apple Business 2025115
 
 New features
 
 - Added AppleCare content to the [`Apple School Manager API`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice)
 - Added AppleCare content to the [`Apple Business API`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessmanagerapi/get-all-apple-care-coverage-for-an-orgdevice)
 
-##### 12 20250716
+##### 12 Apple School Manager and Apple Business 20250716
 
 New features
 
 - Added Wi-Fi and Bluetooth MAC address attributes for iOS, iPadOS, tvOS, and visionOS to the [`OrgDevice.Attributes`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/attributes-data.dictionary)
 - Added Wi-Fi and Bluetooth MAC address attributes for iOS, iPadOS, tvOS, and visionOS to the [`OrgDevice.Attributes`](https://developer.apple.comhttps://developer.apple.com/documentation/appleschoolmanagerapi/orgdevice/attributes-data.dictionary)
 
-##### 11 20250710
+##### 11 Apple School Manager and Apple Business 20250710
 
 Changes
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The in-app purchase to associate with the new in-app purchase version.
+The In-App Purchase to associate with the new In-App Purchase version.
 
 **Availability**:
 - App Store Connect API 4.4.1+

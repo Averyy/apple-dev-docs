@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update an in-app purchase v2.
+The request body you use to update an In-App Purchase v2.
 
 **Availability**:
 - App Store Connect API 2.0+

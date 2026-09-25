@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The version to associate with the new in-app purchase image.
+The version to associate with the new In-App Purchase image.
 
 **Availability**:
 - App Store Connect API 4.4.1+
@@ -18,7 +18,7 @@ object InAppPurchaseImageV2CreateRequest.Data.Relationships.Version
 
 ### Objects
 - [object InAppPurchaseImageV2CreateRequest.Data.Relationships.Version.Data](inapppurchaseimagev2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
-  The request body you use to create an in-app purchase image with the v2 API.
+  The request body you use to create an In-App Purchase image with the v2 API.
 
 ## Properties
 

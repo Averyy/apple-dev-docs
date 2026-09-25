@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to create an in-app purchase price schedule.
+The request body you use to create an In-App Purchase price schedule.
 
 **Availability**:
 - App Store Connect API 2.0+

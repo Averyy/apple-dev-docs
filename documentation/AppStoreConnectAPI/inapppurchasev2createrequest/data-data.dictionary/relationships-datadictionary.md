@@ -26,7 +26,7 @@ object InAppPurchaseV2CreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseV2CreateRequest.Data.Attributes](inapppurchasev2createrequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase create request resource.
+  Attributes that describe an In-App Purchase create request resource.
 
 
 ---

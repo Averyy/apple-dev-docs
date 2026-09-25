@@ -1,9 +1,9 @@
-# Read in-app purchase information
+# Read In-App Purchase information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get information about an in-app purchase.
+Get information about an In-App Purchase.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -105,9 +105,9 @@ https://api.appstoreconnect.apple.com/v1/inAppPurchases/6446998023
 ## See Also
 
 - [List all promoted purchases for an app](get-v1-apps-_id_-promotedpurchases.md)
-  Get a list of promoted in-app purchases, including promoted auto-renewable subscriptions, for an app.
-- [List all in-app purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
-  List the in-app purchases that are available for your app.
+  Get a list of promoted In-App Purchases, including promoted auto-renewable subscriptions, for an app.
+- [List all In-App Purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
+  List the In-App Purchases that are available for your app.
 
 
 ---

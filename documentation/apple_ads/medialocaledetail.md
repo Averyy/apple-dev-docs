@@ -6,7 +6,7 @@
 The media locale detail object.
 
 **Availability**:
-- Search Ads 5.2+
+- Search Ads 5.0+
 
 ## Declaration
 

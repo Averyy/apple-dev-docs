@@ -6,6 +6,8 @@ Review reasons for an ad rejection.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 Ads require approval by Apple. While in review, your [`Ad`](ad.md) is on hold. After approval, the [`AdServingStatus`](adservingstatus.md) changes to `RUNNING` unless you schedule it to start on a specific date or [`Update an Ad`](update-an-ad.md) status to `PAUSED` while in review.
 
 > **Note**:  In [`4.9`](apple-search-ads-campaign-management-api-4#49.md) release, all previously rejected Today tab ad creatives were `PAUSED` and resubmitted for re-review. You need to update the status to `ENABLED` after the re-review. See [`Update an Ad`](update-an-ad.md).

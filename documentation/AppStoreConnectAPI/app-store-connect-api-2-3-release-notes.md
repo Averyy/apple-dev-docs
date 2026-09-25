@@ -6,10 +6,10 @@ Update your server-side code to use new features, and test your code against API
 
 ##### New Features
 
-- Getting an app’s price points and [`List all price points for an in-app purchase`](get-v2-inapppurchases-_id_-pricepoints.md) now support 900 price points.
+- Getting an app’s price points and [`List all price points for an In-App Purchase`](get-v2-inapppurchases-_id_-pricepoints.md) now support 900 price points.
 - [`List App Price Point Equalizations`](get-v3-apppricepoints-_id_-equalizations.md) allows for setting equalized prices.
-- Getting and managing an app’s price schedules   and [`In-App purchase price schedules`](in-app-purchase-price-schedules.md) support automatic prices, manual prices, and base territory configuration.
-- Getting and managing an app’s availability, [`In-app purchase availability`](in-app-purchase-availability.md) and [`Subscription availability`](subscription-availability.md) supports configuring availability for apps, in-app purchases, and subscriptions.
+- Getting and managing an app’s price schedules   and [`In-App Purchase price schedules`](in-app-purchase-price-schedules.md) support automatic prices, manual prices, and base territory configuration.
+- Getting and managing an app’s availability, [`In-App Purchase availability`](in-app-purchase-availability.md) and [`Subscription availability`](subscription-availability.md) supports configuring availability for apps, In-App Purchases, and subscriptions.
 
 ##### Deprecations
 
@@ -24,10 +24,12 @@ Update your server-side code to use new features, and test your code against API
 
 ##### Note to Developers
 
-On May 9, 2023, pricing for your existing apps and in-app purchases (excluding auto-renewable subscriptions) will be updated across all 175 storefronts to be equalized to your base country or region using publicly available exchange rate information. If you don’t specify a base country or region, Apple will use your current price in the United States as the basis to provide comparable prices in other countries or regions. Learn more about [`app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-pricing/set-a-price) or[` in-app purchase pricing`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).
+On May 9, 2023, pricing for your existing apps and In-App Purchases (excluding auto-renewable subscriptions) will be updated across all 175 storefronts to be equalized to your base country or region using publicly available exchange rate information. If you don’t specify a base country or region, Apple will use your current price in the United States as the basis to provide comparable prices in other countries or regions. Learn more about [`app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-pricing/set-a-price) or[` In-App Purchase pricing`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).
 
 ## See Also
 
+- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
@@ -55,8 +57,6 @@ On May 9, 2023, pricing for your existing apps and in-app purchases (excluding a
 - [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

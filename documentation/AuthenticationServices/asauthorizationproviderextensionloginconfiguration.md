@@ -17,6 +17,7 @@ class ASAuthorizationProviderExtensionLoginConfiguration
 ## Mentions
 
 - [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Interpreting Platform Single Sign-on authorization scopes](interpreting-platform-single-sign-on-authorization-scopes.md)
 
 #### Overview
 
@@ -135,6 +136,8 @@ This class provides login configuration information for platform single sign-on.
 
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
   Specify how Platform SSO authenticates with the identity provider.
+- [Interpreting Platform Single Sign-on authorization scopes](interpreting-platform-single-sign-on-authorization-scopes.md)
+  Use authorization scopes to apply authentication policies.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)
   An interface to maintain platform single sign-on (SSO) during authentication and registration.
 

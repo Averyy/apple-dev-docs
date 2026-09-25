@@ -5,6 +5,9 @@
 
 Fetches the localized default product page for an app.
 
+**Availability**:
+- Search Ads 5.0+
+
 ## Mentions
 
 - [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)

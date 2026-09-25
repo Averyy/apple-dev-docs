@@ -36,6 +36,8 @@ Hardware memory tagging and other memory-related features have dependencies on s
   A Boolean value that indicates whether to tag memory that contains only data.
 - [com.apple.security.hardened-process.checked-allocations.no-tagged-receive](entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive.md)
   A Boolean value that indicates whether to prevent receiving tagged memory from other processes.
+- [Check for Overflow of Pointer Arithmetic](entitlements/com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow.md)
+  A Boolean value that enables checking pointers for arithmetic overflow.
 
 
 ---

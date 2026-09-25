@@ -18,9 +18,9 @@ object InAppPurchaseOfferPrice.Relationships
 
 ### Dictionaries
 - [object InAppPurchaseOfferPrice.Relationships.PricePoint](inapppurchaseofferprice/relationships-data.dictionary/pricepoint-data.dictionary.md)
-  The data that describes the price point of the in-app purchase offer price.
+  The data that describes the price point of the In-App Purchase offer price.
 - [object InAppPurchaseOfferPrice.Relationships.Territory](inapppurchaseofferprice/relationships-data.dictionary/territory-data.dictionary.md)
-  The data that describes the territory of the in-app purchase offer price.
+  The data that describes the territory of the In-App Purchase offer price.
 
 ## Properties
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The relationships for an in-app purchase image, linking it to its associated in-app purchase.
+The relationships for an In-App Purchase image, linking it to its associated In-App Purchase.
 
 **Availability**:
 - App Store Connect API 2.0+

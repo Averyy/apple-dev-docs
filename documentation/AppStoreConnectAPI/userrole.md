@@ -23,7 +23,7 @@ string UserRole
 - [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
 - [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
 - [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
-- [Managing in-app purchases](managing-in-app-purchases.md)
+- [Managing In-App Purchases](managing-in-app-purchases.md)
 
 #### Discussion
 

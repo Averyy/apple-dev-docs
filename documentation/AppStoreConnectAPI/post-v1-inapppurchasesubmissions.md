@@ -1,16 +1,16 @@
-# Create a review submission for an in-app purchase
+# Create a review submission for an In-App Purchase
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Create an in-app purchase submission for review.
+Create an In-App Purchase submission for review.
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Mentions
 
-- [Managing in-app purchases](managing-in-app-purchases.md)
+- [Managing In-App Purchases](managing-in-app-purchases.md)
 
 ## Endpoint
 

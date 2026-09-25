@@ -10,6 +10,7 @@ Associate an uploaded asset pack with a background asset version to finish the u
 
 ## Mentions
 
+- [Understanding webhook events](webhook-events.md)
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
 - [Uploading and versioning Apple hosted background assets](managing-apple-hosted-background-assets.md)
 

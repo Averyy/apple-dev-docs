@@ -18,7 +18,7 @@ object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships
 
 ### Objects
 - [object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships.Version](inapppurchaselocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
-  The in-app purchase version to associate with the new in-app purchase localization.
+  The In-App Purchase version to associate with the new In-App Purchase localization.
 
 ## Properties
 
@@ -27,7 +27,7 @@ object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseLocalizationV2CreateRequest.Data.Attributes](inapppurchaselocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase localization create request resource.
+  Attributes that describe an In-App Purchase localization create request resource.
 
 
 ---

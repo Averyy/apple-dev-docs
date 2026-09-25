@@ -117,6 +117,8 @@ Use this resource to:
 
 - [Game Center details](game-center-details.md)
   Manage enablement, achievement, leaderboard, and localization details for your apps.
+- [Game Center blocked players](game-center-blocked-players.md)
+  Block and unblock the Game Center players who can play your game.
 
 
 ---

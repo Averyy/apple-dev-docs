@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to modify an in-app purchase offer code update request.
+The request body you use to modify an In-App Purchase offer code update request.
 
 **Availability**:
 - App Store Connect API 4.2+

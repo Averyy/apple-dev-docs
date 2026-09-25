@@ -27,9 +27,9 @@ object ReviewSubmissionUpdateRequest
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)
-  A formal submission to App Store review grouping one or more items — app versions, in-app purchases, or events — for simultaneous review.
+  A formal submission to App Store review grouping one or more items — app versions, In-App Purchases, or events — for simultaneous review.
 - [object ReviewSubmissionItem](reviewsubmissionitem.md)
-  An individual reviewable item — such as an app version, in-app purchase, or App Clip — included in a review submission.
+  An individual reviewable item — such as an app version, In-App Purchase, or App Clip — included in a review submission.
 - [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
   The request body for creating a review submission for an App Store version or associated items.
 - [object ReviewSubmissionResponse](reviewsubmissionresponse.md)

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get information about a specific in-app purchase offer code.
+Get information about a specific In-App Purchase offer code.
 
 **Availability**:
 - App Store Connect API 4.2+
@@ -26,13 +26,13 @@ Get information about a specific in-app purchase offer code.
 ## See Also
 
 - [Create an In-App Purchase Offer Code](post-v1-inapppurchaseoffercodes.md)
-  Create an offer code for an in-app purchase.
+  Create an offer code for an In-App Purchase.
 - [Modify an In-App Purchase Offer Code](patch-v1-inapppurchaseoffercodes-_id_.md)
-  Update a specific in-app purchase offer code.
+  Update a specific In-App Purchase offer code.
 - [List All Prices for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-prices.md)
-  Get a list of prices for a specific in-app purchase offer code.
+  Get a list of prices for a specific In-App Purchase offer code.
 - [Get All Price IDs for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-relationships-prices.md)
-  Get a list of price resource IDs for a specific in-app purchase offer code.
+  Get a list of price resource IDs for a specific In-App Purchase offer code.
 
 
 ---

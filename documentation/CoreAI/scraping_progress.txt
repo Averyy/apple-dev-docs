@@ -1,4 +1,4 @@
 Completed scraping Core AI!
-Total pages scraped: 3
-Pages skipped (unchanged): 310
+Total pages scraped: 0
+Pages skipped (unchanged): 313
 Pages failed: 0

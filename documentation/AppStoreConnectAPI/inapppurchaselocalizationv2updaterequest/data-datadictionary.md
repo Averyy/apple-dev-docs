@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to modify an in-app purchase localization with the v2 API.
+The request body you use to modify an In-App Purchase localization with the v2 API.
 
 **Availability**:
 - App Store Connect API 4.4.1+
@@ -18,7 +18,7 @@ object InAppPurchaseLocalizationV2UpdateRequest.Data
 
 ### Objects
 - [object InAppPurchaseLocalizationV2UpdateRequest.Data.Attributes](inapppurchaselocalizationv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase localization update request resource.
+  Attributes that describe an In-App Purchase localization update request resource.
 
 ## Properties
 

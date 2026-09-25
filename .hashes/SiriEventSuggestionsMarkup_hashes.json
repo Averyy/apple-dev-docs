@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-22T07:42:04.726867",
+    "last_updated": "2026-09-25T07:40:03.588428",
     "total_pages": 74,
-    "session_id": "2026-09-22T07:41:59.199163"
+    "session_id": "2026-09-25T07:39:58.401755"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SiriEventSuggestionsMarkup.json": {
       "hash": "3dfe7f5eaf06c9ec384b6e0690289a8d0c003bd4bdfdd630c6ad6579c9183c4e",
-      "last_checked": "2026-09-22T07:41:59.516479",
+      "last_checked": "2026-09-25T07:39:58.668053",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"5aad-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/SiriEventSuggestionsMarkup.md"
     },
     "https://developer.apple.com/documentation/SiriEventSuggestionsMarkup": {
       "hash": "3dfe7f5eaf06c9ec384b6e0690289a8d0c003bd4bdfdd630c6ad6579c9183c4e",
-      "last_checked": "2026-09-22T07:41:59.402919",
+      "last_checked": "2026-09-25T07:39:58.560064",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"5aad-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/SiriEventSuggestionsMarkup.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/providing-trusted-data.json": {
       "hash": "16ae7e44ab4b779ad3876bb00e3561d4ce228bd174d9b358f3fbd6bfceb3096b",
-      "last_checked": "2026-09-22T07:41:59.790582",
+      "last_checked": "2026-09-25T07:39:58.881720",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1921-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/providing-trusted-data.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/checking-your-reservation-markup.json": {
       "hash": "2e6ab5096c907836e25cdf7a9e7dab4eb9573b85659706cf7b312809a9d2c34f",
-      "last_checked": "2026-09-22T07:41:59.902863",
+      "last_checked": "2026-09-25T07:39:59.097398",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1c00-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/checking-your-reservation-markup.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/flightreservation.json": {
       "hash": "6e55792fc04536dfa16e9a592e761f633bac595aede550632297395775746fa1",
-      "last_checked": "2026-09-22T07:42:00.016211",
+      "last_checked": "2026-09-25T07:39:59.227646",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"3d5d-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/flightreservation.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/trainreservation.json": {
       "hash": "956c974e31f0ef9f376cd7f472054cb329ba0d0d612f0fc8e3767921401c10a1",
-      "last_checked": "2026-09-22T07:42:00.186124",
+      "last_checked": "2026-09-25T07:39:59.349987",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"3b20-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/trainreservation.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/busreservation.json": {
       "hash": "d136c6a7e94984d67fb0be138c68b84bb37de9dd8ac5935594f55f7e1fe544d4",
-      "last_checked": "2026-09-22T07:42:00.282711",
+      "last_checked": "2026-09-25T07:39:59.518115",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"3ae4-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/busreservation.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/boatreservation.json": {
       "hash": "b7a61ddc0f7340ee5bcac97c2e7442b6b43e21ff2195b7838d3038a9df438dc7",
-      "last_checked": "2026-09-22T07:42:00.590362",
+      "last_checked": "2026-09-25T07:39:59.643780",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"3b0a-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/boatreservation.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/rentalcarreservation.json": {
       "hash": "9545af1a9c334dfaa38d62dd94af628dacfbd3b89e48ad17e925d3fa2a9995f0",
-      "last_checked": "2026-09-22T07:42:00.685167",
+      "last_checked": "2026-09-25T07:39:59.734527",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"42e4-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/rentalcarreservation.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/eventreservation.json": {
       "hash": "298b5e35149da42ad6294319f8d85032a7893732b749171aeae3891c9d66e96b",
-      "last_checked": "2026-09-22T07:42:00.819068",
+      "last_checked": "2026-09-25T07:39:59.879617",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"3394-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/eventreservation.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/foodestablishmentreservation.json": {
       "hash": "8b2a51a59d85b25ad19fcef23a70d8c78fffb8537a627b96f9c31da852464ce7",
-      "last_checked": "2026-09-22T07:42:00.939382",
+      "last_checked": "2026-09-25T07:40:00.062809",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"3554-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/foodestablishmentreservation.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/lodgingreservation.json": {
       "hash": "1cab1d98036548350fc72da818128a55f1376d610b017682d20739f9dc9011cf",
-      "last_checked": "2026-09-22T07:42:01.054652",
+      "last_checked": "2026-09-25T07:40:00.196141",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"35ba-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/lodgingreservation.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/person.json": {
       "hash": "0bd2575459b8a1a36f764ad39b93d0946b8fddd3bb63ba59a9f5fdca1346a26a",
-      "last_checked": "2026-09-22T07:42:01.388885",
+      "last_checked": "2026-09-25T07:40:00.324310",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1b96-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/person.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/ticket.json": {
       "hash": "de083616e073864d1fbc87fe4a0d3ef0801a640c74be544ba82c3653d3d3d97d",
-      "last_checked": "2026-09-22T07:42:01.481337",
+      "last_checked": "2026-09-25T07:40:00.472424",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1cb3-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/ticket.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/seat.json": {
       "hash": "4bca6415dcda4d46cd53aa3f07f86126edfed96dfec5560fc7e45e6f1cf174ef",
-      "last_checked": "2026-09-22T07:42:01.623864",
+      "last_checked": "2026-09-25T07:40:00.545539",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1dbf-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/seat.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/organization.json": {
       "hash": "10c96d081f012beea64bb48bc9f95a399b68fd03c70d1a9da0a235be9822635c",
-      "last_checked": "2026-09-22T07:42:01.755855",
+      "last_checked": "2026-09-25T07:40:00.709182",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1b4f-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/organization.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/place.json": {
       "hash": "da846b046bc55c65f4df0ed1a15e5bbf6c72664d5358ec1142bc0ddb306dd111",
-      "last_checked": "2026-09-22T07:42:01.893610",
+      "last_checked": "2026-09-25T07:40:00.847449",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"2090-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/place.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/postaladdress.json": {
       "hash": "d5475acbd032269d87cb37275eab827d57271f55ebace14b5f23843528e303de",
-      "last_checked": "2026-09-22T07:42:02.034210",
+      "last_checked": "2026-09-25T07:40:00.979058",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1f7a-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/postaladdress.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/@context.json": {
       "hash": "8eb8a6923a4c94b2dc16934a46ad323515b89edc4c538ceb62614849a0d8b74f",
-      "last_checked": "2026-09-22T07:42:02.172653",
+      "last_checked": "2026-09-25T07:40:01.103912",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1e4a-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/context.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/datetimeiso8601.json": {
       "hash": "26fe98fc04cd845ccd319245607d91dbddbd570a0a0f8d9190d522423d321274",
-      "last_checked": "2026-09-22T07:42:02.302323",
+      "last_checked": "2026-09-25T07:40:01.249469",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1c99-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/datetimeiso8601.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/reservationid.json": {
       "hash": "c0b19deba7f360a57eb672f219252891ee7d9916efa766261aff020ccbf20cb4",
-      "last_checked": "2026-09-22T07:42:02.405867",
+      "last_checked": "2026-09-25T07:40:01.385751",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"2580-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/reservationid.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/reservationstatus.json": {
       "hash": "dce7afb97c85bc72f8b1d8d99b89a529d02d63778a3c5ca9b70418c73feb1d81",
-      "last_checked": "2026-09-22T07:42:02.537958",
+      "last_checked": "2026-09-25T07:40:01.469580",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1dad-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/reservationstatus.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/url.json": {
       "hash": "23c3e0c5e85d86e1dfac8dc13a6b06b9888aa967d1934fb6b90c6693b09110ea",
-      "last_checked": "2026-09-22T07:42:02.661644",
+      "last_checked": "2026-09-25T07:40:01.618912",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1975-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/url.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/telephone.json": {
       "hash": "22f392a389dc29d38c4c9b92b5f84d607d361cdfacc65250283b04d3d0d5dc2b",
-      "last_checked": "2026-09-22T07:42:02.836378",
+      "last_checked": "2026-09-25T07:40:01.753452",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"198f-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/telephone.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/flight.json": {
       "hash": "3be972e07b4a73a3cb957946e48aa7e5a3a6620dae6b8fae457b34d29891452c",
-      "last_checked": "2026-09-22T07:42:02.939301",
+      "last_checked": "2026-09-25T07:40:01.882694",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"2136-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/flight.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/airline.json": {
       "hash": "4d4a3f664865510a75e48b7c5c271bd0828dda0966c7eeaed59d22bc5817e34c",
-      "last_checked": "2026-09-22T07:42:03.065865",
+      "last_checked": "2026-09-25T07:40:02.008557",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"142c-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/airline.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/airport.json": {
       "hash": "c9eb928c9d49950b0edfd46896d1095ae63c3af87de5b8686575b0f4cbab3410",
-      "last_checked": "2026-09-22T07:42:03.173023",
+      "last_checked": "2026-09-25T07:40:02.130559",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1805-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/airport.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/traintrip.json": {
       "hash": "62fdc89d7aa2a18d4c797ebd0d9e30ec920b2d733c65e70694cc6501f0e93b17",
-      "last_checked": "2026-09-22T07:42:03.321842",
+      "last_checked": "2026-09-25T07:40:02.250489",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1fed-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/traintrip.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/trainstation.json": {
       "hash": "da79184538586d0991e0c7d8990e9c2e1bdfa1a45fa10728e67df07842eea30e",
-      "last_checked": "2026-09-22T07:42:03.507524",
+      "last_checked": "2026-09-25T07:40:02.333939",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"14d2-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/trainstation.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/bustrip.json": {
       "hash": "ea6e69df162ef54406187442d2ddaeb6dc9ec1cf7999b93a1ffd2e49c926f8ba",
-      "last_checked": "2026-09-22T07:42:03.596749",
+      "last_checked": "2026-09-25T07:40:02.516283",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1e22-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/bustrip.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/busstation.json": {
       "hash": "59851272422cb2bc0bf00f662cb8771858667b7fe835b7edd1c4fd4306c4d845",
-      "last_checked": "2026-09-22T07:42:03.716520",
+      "last_checked": "2026-09-25T07:40:02.600564",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"149a-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/busstation.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/boattrip.json": {
       "hash": "83fadaeaf0da4fc81f491cff7283bfad60bfe211b59219a870f85bcf47779086",
-      "last_checked": "2026-09-22T07:42:03.855632",
+      "last_checked": "2026-09-25T07:40:02.725747",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1e7e-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/boattrip.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/boatterminal.json": {
       "hash": "8f186d885be2610d17b5c6dcefe2f8716bf4dd78e9d3460d4e4c6bfce2a43e9a",
-      "last_checked": "2026-09-22T07:42:04.007599",
+      "last_checked": "2026-09-25T07:40:02.895328",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"14c8-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/boatterminal.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/car.json": {
       "hash": "81c7d5bf90dfb8249c95449f5268d47f7bdc156657bae861f4d7f237338a9d1f",
-      "last_checked": "2026-09-22T07:42:04.117787",
+      "last_checked": "2026-09-25T07:40:02.990908",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"126f-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/car.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/brand.json": {
       "hash": "a64bd677a7de4451dcd2a921093ec18f3d9890003e8f20ce86c2c422fb4bade0",
-      "last_checked": "2026-09-22T07:42:04.243852",
+      "last_checked": "2026-09-25T07:40:03.180771",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"102a-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/brand.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/event.json": {
       "hash": "f434258c54fa043a84a514805eadb4b79c6983017d4a7e5382c385e94e208c6f",
-      "last_checked": "2026-09-22T07:42:04.390811",
+      "last_checked": "2026-09-25T07:40:03.299308",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"16aa-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/event.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/foodestablishment.json": {
       "hash": "762f5e61de3e09677b9cf5a977e9a450ee35400ee7939d194d506aaf72b89878",
-      "last_checked": "2026-09-22T07:42:04.546281",
+      "last_checked": "2026-09-25T07:40:03.380041",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"15b4-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/foodestablishment.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirieventsuggestionsmarkup/lodgingbusiness.json": {
       "hash": "0842a38c5b14b0898e0e8be3c1ab433c582e40a2b1e93ee5346180a09b495949",
-      "last_checked": "2026-09-22T07:42:04.680639",
+      "last_checked": "2026-09-25T07:40:03.572212",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:59.199163",
+      "session_id": "2026-09-25T07:39:58.401755",
       "etag": "\"1569-6590229660257-df\"",
       "file_path": "documentation/SiriEventSuggestionsMarkup/lodgingbusiness.md"
     },

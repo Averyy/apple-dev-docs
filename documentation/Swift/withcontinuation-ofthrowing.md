@@ -54,6 +54,9 @@ You must invoke the continuation’s `resume` method exactly once. The continuat
   A mechanism to interface between synchronous and asynchronous code, without correctness checking.
 - [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
   Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data and links that describe the offer codes of the in-app purchase.
+The data and links that describe the offer codes of the In-App Purchase.
 
 **Availability**:
 - App Store Connect API 4.2+

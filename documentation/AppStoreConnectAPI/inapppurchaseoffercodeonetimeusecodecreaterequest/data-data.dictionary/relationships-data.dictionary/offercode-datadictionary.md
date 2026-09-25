@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to create an in-app purchase offer code one-time use code for a data relationships offer code.
+The request body you use to create an In-App Purchase offer code one-time use code for a data relationships offer code.
 
 **Availability**:
 - App Store Connect API 4.2+

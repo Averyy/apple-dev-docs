@@ -6,6 +6,8 @@ Search for apps and geocriteria for your campaigns.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 Search endpoints fetch app and geocriteria used in targeting and elsewhere in the API. See [`Ad Groups`](ad-groups.md) for specific use cases.
 
 ## Topics
@@ -28,9 +30,7 @@ Search endpoints fetch app and geocriteria used in targeting and elsewhere in th
 - [Campaigns](campaigns.md)
   Create and manage Apple Ads campaigns.
 - [Budget Orders](budget-orders.md)
-  Manage your budgets.
 - [Ad Groups](ad-groups.md)
-  Create and manage ad groups.
 - [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)
   Apply relevant words or phrases that make your campaigns findable.
 

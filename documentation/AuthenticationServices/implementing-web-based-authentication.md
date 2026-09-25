@@ -91,7 +91,7 @@ Connection: keep-alive
 }
 ```
 
-**Step 3**: Platform SSO loads the webpage located at the `authorizationURL`. This request includes an updated scope for the current request in the web view. For more information on the available scope value, see [`Interpret Platform SSO authorization scopes`](implementing-web-based-authentication#Interpret-Platform-SSO-authorization-scopes.md).
+**Step 3**: Platform SSO loads the webpage located at the `authorizationURL`. This request includes an updated scope for the current request in the web view. For more information on the available scope value, see [`Interpreting Platform Single Sign-on authorization scopes`](interpreting-platform-single-sign-on-authorization-scopes.md).
 
 **Step 4**: The user interacts with the web view, which can involve multiple steps that the authorization endpoint defines. Platform SSO loads only the URLs that the `WebLoginURLAllowList` key in the device management configuration permits. If authentication is successful, the authorization endpoint returns the callback URI `com.apple.platformsso://callback`, which includes an authorization code and a redirect to engage the Platform SSO extension.
 
@@ -274,44 +274,6 @@ The following is an example JWT login request:
 **Step 7**: If all checks pass, the identity provider sends the Platform SSO login response back to the device, including the access token, ID token, and refresh token.
 
 Platform SSO processes and validates the login response the same way as other login requests. It then uses the Platform SSO 2.0 key service to unlock the user’s keybag and complete the login or unlock flow. Platform SSO always uses the key service during web-based authentication.
-
-#### Interpret Platform Sso Authorization Scopes
-
-When Platform SSO requests OpenID tokens from your identity provider, it includes one of the scopes below in the authorization request. The scope tells your identity provider why the user is authenticating, so you can apply the correct policy (for example, require multifactor authentication at login but not at screen unlock).
-
-All scope values use the prefix `urn:apple:platformsso:auth:`:
-
-| Scope | Usage |
-| --- | --- |
-| `elevation` | Platform SSO prompts the user to re-authenticate to elevate privileges (administrator authorization prompt). |
-| `refresh` | A silent token refresh with no user interaction. If refresh fails and falls back to a real login, the scope reverts to the originating caller’s scope (for example, `auth-prompt`). |
-| `auth-prompt` | An in-session authentication prompt; for example, background re-authentication at session start, after a network change, or on a token-refresh timer. |
-| `create-user` | Platform SSO creates a new local account at the login window using credentials from the identity provider. |
-| `fallback` | Fallback uses OpenID because the primary credential (for example, Touch ID) isn’t usable. Platform SSO sends this scope on both the authorization request and the corresponding token verification. |
-| `login` | The user logs in at the login window or unlocks FileVault. Also the default scope when no other context applies. |
-| `password-change` | The user is in the password-change flow. |
-| `setup-assistant` | Setup Assistant drives this authentication during initial device setup, including embedded system-session authentication that isn’t an elevation prompt. |
-| `temporary-session` | Authentication for an Authenticated Guest Mode session. |
-| `unlock` | The user unlocks their Mac from the screen-locked state (already logged in). |
-
-> **Note**: Platform SSO adds exactly one of these scopes to your authorization URL per request. The scopes are mutually exclusive with respect to the originating user action.
-
-For most session-driven flows, Platform SSO selects the scope purely from the session type:
-
-| Session type | Resulting scope |
-| --- | --- |
-| Elevation prompt | `elevation` |
-| In-session prompt | `auth-prompt` |
-| Login window, or FileVault unlock | `login` |
-| Password change | `password-change` |
-| Setup Assistant | `setup-assistant` |
-| Screen unlock | `unlock` |
-
-A few scopes fall outside the session-type mapping:
-
-- Platform SSO applies the special-purpose scopes (`create-user`, `temporary-session`, `fallback`, `refresh`) based on the specific feature path instead of the session type.
-- When no specific context is available, `login` doubles as the default. Treat it as the safe baseline and reserve stricter policy for the more specific scopes.
-- For fallback, Platform SSO sends the same scope on both legs of the OpenID handshake (the initial authorization request and the subsequent token verification), so your identity provider can apply policy decisions consistently across both.
 
 #### Sync the Password
 

@@ -14,6 +14,10 @@ The possible states for a background asset version.
 string BackgroundAssetVersionState
 ```
 
+## Mentions
+
+- [Understanding webhook events](webhook-events.md)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

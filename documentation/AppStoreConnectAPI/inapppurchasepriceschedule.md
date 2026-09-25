@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A time-based pricing schedule for an in-app purchase, managing base prices and planned price changes.
+A time-based pricing schedule for an In-App Purchase, managing base prices and planned price changes.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -30,11 +30,11 @@ object InAppPurchasePriceSchedule
 ## See Also
 
 - [object InAppPurchasePriceScheduleCreateRequest](inapppurchasepriceschedulecreaterequest.md)
-  The request body you use to create an in-app purchase price schedule.
+  The request body you use to create an In-App Purchase price schedule.
 - [object InAppPurchasePriceScheduleResponse](inapppurchasepricescheduleresponse.md)
-  A response containing a single pricing schedule for an in-app purchase.
+  A response containing a single pricing schedule for an In-App Purchase.
 - [object InAppPurchasePricesResponse](inapppurchasepricesresponse.md)
-  A response containing a list of configured prices for an in-app purchase.
+  A response containing a list of configured prices for an In-App Purchase.
 - [object InAppPurchasePriceScheduleAutomaticPricesLinkagesResponse](inapppurchasepricescheduleautomaticpriceslinkagesresponse.md)
 - [object InAppPurchasePriceScheduleBaseTerritoryLinkageResponse](inapppurchasepriceschedulebaseterritorylinkageresponse.md)
 - [object InAppPurchasePriceScheduleManualPricesLinkagesResponse](inapppurchasepriceschedulemanualpriceslinkagesresponse.md)

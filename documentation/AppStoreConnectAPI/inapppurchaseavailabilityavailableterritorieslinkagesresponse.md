@@ -26,11 +26,11 @@ object InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse
 ## See Also
 
 - [object InAppPurchaseAvailability](inapppurchaseavailability.md)
-  The territory availability configuration for an in-app purchase, specifying which App Store regions it’s offered in.
+  The territory availability configuration for an In-App Purchase, specifying which App Store regions it’s offered in.
 - [object InAppPurchaseAvailabilityCreateRequest](inapppurchaseavailabilitycreaterequest.md)
-  The request body you use to create an in-app purchase availability.
+  The request body you use to create an In-App Purchase availability.
 - [object InAppPurchaseAvailabilityResponse](inapppurchaseavailabilityresponse.md)
-  A response containing a single territory availability configuration for an in-app purchase.
+  A response containing a single territory availability configuration for an In-App Purchase.
 
 
 ---

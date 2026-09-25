@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to create a draft version of an in-app purchase.
+The request body you use to create a draft version of an In-App Purchase.
 
 **Availability**:
 - App Store Connect API 4.4.1+

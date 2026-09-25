@@ -73,6 +73,9 @@ A *continuation* is an opaque representation of program state. To create a conti
   Invokes the passed in closure with a checked continuation for the current task.
 - [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
   Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
 
 
 ---

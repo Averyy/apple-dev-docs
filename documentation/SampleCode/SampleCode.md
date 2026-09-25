@@ -87,6 +87,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build a travel planning app that organizes trips into collections and tracks activity completion.
 - [Working with content from your Mac app using Spatial Preview](../spatialpreview/working-with-content-from-your-mac-app-using-spatial-preview.md)
   Send and update documents, and work with 3D content live from your Mac app to a visionOS device.
+- [Rendering Gaussian splats with RealityKit](../visionos/working-with-gaussian-splats-with-realitykit.md)
+  Bring a real-world scan into your app by loading splat data from a USD or PLY file.
 ### Accelerate
 - [Adding a bokeh effect to images](../accelerate/adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
@@ -511,6 +513,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Enable high-quality photo and video capture by using an iPhone camera as an external capture device.
 - [Supporting coordinated media playback](../avfoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
+- [Supporting device rotation in your camera app](../avfoundation/supporting-device-rotation-in-your-camera-app.md)
+  Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
 - [Supporting remote interactions in tvOS](../avfoundation/supporting-remote-interactions-in-tvos.md)
   Set up your app to support remote commands and events in a variety of scenarios by using the relevant approach.
 - [Using AVFoundation to play and persist HTTP live streams](../avfoundation/using-avfoundation-to-play-and-persist-http-live-streams.md)
@@ -815,6 +819,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Improve the user experience of finding and selecting assets by using the Photos picker.
 - [Structuring recognized text on a document](../visionkit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
+- [Supporting custom media formats and decoders](../mediaextension/supporting-custom-media-formats-and-decoders.md)
+  Extend the media formats the system can open by providing a format reader and a video decoder.
 ### RealityKit and Reality Composer Pro
 - [Animating entity rotation with a system](../realitykit/animated-rotation-with-a-system.md)
   Rotate an entity around an axis using a Component and a System.

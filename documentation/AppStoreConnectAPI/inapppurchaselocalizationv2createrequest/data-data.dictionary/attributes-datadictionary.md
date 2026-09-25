@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-Attributes that describe an in-app purchase localization create request resource.
+Attributes that describe an In-App Purchase localization create request resource.
 
 **Availability**:
 - App Store Connect API 4.4.1+

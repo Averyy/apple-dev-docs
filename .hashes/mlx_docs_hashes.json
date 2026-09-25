@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-09-18T08:36:02.312026",
+    "last_updated": "2026-09-25T08:37:02.142576",
     "total_files": 843,
     "source": "scrape_mlx_docs.py"
   },
@@ -708,8 +708,8 @@
     "coremltools:https://apple.github.io/coremltools/docs-guides/source/updatable-tiny-drawing-classifier-pipeline-model.html": "29a7661350b7dda023191bd5ab7b6bcaaffee17700fe28258bdaea0a6b55a1a9",
     "coremltools:https://apple.github.io/coremltools/docs-guides/source/xcode-model-preview-types.html": "d0355d4658d6bab4c4d6827d7974316d7ef28f374100c8b50f76682caef724bf",
     "coremltools:https://apple.github.io/coremltools/docs-guides/source/xgboost-conversion.html": "3c07fab07f1d3b583c07649364c96661803a6a348d976960e23d1f36eb6ea560",
-    "github:ml-explore/mlx-lm:README.md": "625b4478800ad2fd5d393792f7ca8d4006be9c95b725cc239a9e67b7aa891875",
-    "github:ml-explore/mlx-lm:mlx_lm/LORA.md": "d25cbf9facf49bcd4961155a3e87ca59bf0b65de133082d0c8d8b399a041d571",
+    "github:ml-explore/mlx-lm:README.md": "fc4dc67d70ca364ef8c2f94e84d170072d3c5f4fdfd2aa7a7be7a38a6b3d0008",
+    "github:ml-explore/mlx-lm:mlx_lm/LORA.md": "305fec69ccbde4c5b8f2c752ab889258bfa7192f2ec7e2b767ad641c57021852",
     "github:ml-explore/mlx-examples:README.md": "4b8d8cc5f34dc9453497f9e645ae3c83229859c4e7253c23ef2ca18a1319702b",
     "github:ml-explore/mlx-examples:llms/README.md": "9bbd9fab1add954913e4471624ac4d578bc2a39adbdaeb00e2d35e074bef98da",
     "github:ml-explore/mlx-examples:llms/gguf_llm/README.md": "e2476b37aef0f7f1d89fc9a8d48abd3bcafbf86cfb55b7614f8f7318cd716d66",

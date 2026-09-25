@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data and links that describe the custom codes of the in-app purchase offer code.
+The data and links that describe the custom codes of the In-App Purchase offer code.
 
 **Availability**:
 - App Store Connect API 4.2+
@@ -29,9 +29,9 @@ object InAppPurchaseOfferCode.Relationships.CustomCodes
 ## See Also
 
 - [object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes](inapppurchaseoffercode/relationships-data.dictionary/onetimeusecodes-data.dictionary.md)
-  The data and links that describe the one-time use codes of the in-app purchase offer code.
+  The data and links that describe the one-time use codes of the In-App Purchase offer code.
 - [object InAppPurchaseOfferCode.Relationships.Prices](inapppurchaseoffercode/relationships-data.dictionary/prices-data.dictionary.md)
-  The data and links that describe the prices of the in-app purchase offer code.
+  The data and links that describe the prices of the In-App Purchase offer code.
 
 
 ---

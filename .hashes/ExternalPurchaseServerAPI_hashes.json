@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-22T07:41:35.667626",
+    "last_updated": "2026-09-25T07:39:35.871187",
     "total_pages": 166,
-    "session_id": "2026-09-22T07:41:24.719021"
+    "session_id": "2026-09-25T07:39:24.564961"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ExternalPurchaseServerAPI.json": {
       "hash": "5d7b04d4e55fce62fb5d8722fd12c653596b97a7c5347d68fc43d74506daac5f",
-      "last_checked": "2026-09-22T07:41:25.007739",
+      "last_checked": "2026-09-25T07:39:24.832311",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"712a-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md"
     },
     "https://developer.apple.com/documentation/ExternalPurchaseServerAPI": {
       "hash": "5d7b04d4e55fce62fb5d8722fd12c653596b97a7c5347d68fc43d74506daac5f",
-      "last_checked": "2026-09-22T07:41:24.888015",
+      "last_checked": "2026-09-25T07:39:24.718409",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"712a-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/changelog.json": {
       "hash": "ed474bdb9dc511c07b799e48cd7b41edc45a94cbd39e8285e6f5d9f6a14743b0",
-      "last_checked": "2026-09-22T07:41:25.204849",
+      "last_checked": "2026-09-25T07:39:25.078578",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"2f47-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/changelog.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/send-external-purchase-report.json": {
       "hash": "c4b64bff101a93ff3dc6bc6fc842257cf7a086e653bf3c82e3bfc8491a75ace7",
-      "last_checked": "2026-09-22T07:41:25.336194",
+      "last_checked": "2026-09-25T07:39:25.199852",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"3fb8-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/send-external-purchase-report.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/externalpurchasereport.json": {
       "hash": "02cb9080879a3bf9df54775ba5cc81e8447353dccbec63f4123cefd184bba311",
-      "last_checked": "2026-09-22T07:41:25.462838",
+      "last_checked": "2026-09-25T07:39:25.372354",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"5d70-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/externalpurchasereport.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/sendreportsuccessresponse.json": {
       "hash": "68f396a281abe5d44afa335258eee237e848b0fffbad9b948c46659652373ab4",
-      "last_checked": "2026-09-22T07:41:25.589437",
+      "last_checked": "2026-09-25T07:39:25.506284",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"2397-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/sendreportsuccessresponse.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/sendreporterrorresponse.json": {
       "hash": "5ff74a0f4a979d6d503f89ef945ae16e00f8c435b9b0d61297dca40356416cc2",
-      "last_checked": "2026-09-22T07:41:25.721632",
+      "last_checked": "2026-09-25T07:39:25.643885",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"bc13-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/sendreporterrorresponse.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/reportwithtransactions.json": {
       "hash": "a320871f889f0a00e553c671a6fc08839ba3cf0ca82c79704fba645ed058330d",
-      "last_checked": "2026-09-22T07:41:25.842095",
+      "last_checked": "2026-09-25T07:39:25.732976",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"5667-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/reportwithtransactions.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/reportcorrections.json": {
       "hash": "79e6d28841362b17ac54552e766b78e2618e104f3bf4bd2646f589df12884be4",
-      "last_checked": "2026-09-22T07:41:25.955981",
+      "last_checked": "2026-09-25T07:39:25.873812",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"41e1-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/reportcorrections.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/onetimebuylineitem.json": {
       "hash": "d57c672725be4af6543ac9703518f2d55651d848196467ca572ca1ad78646110",
-      "last_checked": "2026-09-22T07:41:26.063818",
+      "last_checked": "2026-09-25T07:39:26.087815",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"7eba-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/onetimebuylineitem.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/refundlineitem.json": {
       "hash": "bf3b552b834d5461ce4ae8a83a6364c3d065b7bfea424a73ad9bf3528f44a55b",
-      "last_checked": "2026-09-22T07:41:26.188802",
+      "last_checked": "2026-09-25T07:39:26.176184",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"69e5-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/refundlineitem.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/subscriptionbuylineitem.json": {
       "hash": "3f8069accdd748504c009144a6ad7d913fba0f2464cca2926b0d816c394f4501",
-      "last_checked": "2026-09-22T07:41:26.313646",
+      "last_checked": "2026-09-25T07:39:26.305161",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"9e05-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/subscriptionbuylineitem.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/lineitems.json": {
       "hash": "aa7f334a425d58717bbbdd3e769e9f323b77c10133fa4674883afec1ec2fd4bd",
-      "last_checked": "2026-09-22T07:41:26.455221",
+      "last_checked": "2026-09-25T07:39:26.498023",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"5781-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/lineitems.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/reportwithouttransactions.json": {
       "hash": "b6f6fbabcc9903de56fb4a59d5e07645a5660fa47c47e563fc92e6efd653094b",
-      "last_checked": "2026-09-22T07:41:26.587741",
+      "last_checked": "2026-09-25T07:39:26.628656",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4add-65b78e67e4e3e-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/reportwithouttransactions.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/retrieve-external-purchase-report.json": {
       "hash": "b5802718ce3686d58016f9c773a5cd35d473f7275efec7ecd21d034797a6f645",
-      "last_checked": "2026-09-22T07:41:26.719944",
+      "last_checked": "2026-09-25T07:39:26.761223",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"25a6-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/retrieve-external-purchase-report.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/retrievereportsuccessresponse.json": {
       "hash": "d734d3d054de93db3d16f406ba7a0233742a4e1a15bb505284189281ddbb78f7",
-      "last_checked": "2026-09-22T07:41:26.860729",
+      "last_checked": "2026-09-25T07:39:26.846572",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"180c-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/retrievereportsuccessresponse.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/errorcodes.json": {
       "hash": "06066903d3c7e7241da7ea5b78ffba441f41929f779df647b4163a1d8a3e3196",
-      "last_checked": "2026-09-22T07:41:26.992980",
+      "last_checked": "2026-09-25T07:39:26.969870",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"99f3-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/errorcodes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/requestidentifier.json": {
       "hash": "1482f55246b5a97582ee7fa4cf858da0f3980554611992bb386a382633188f30",
-      "last_checked": "2026-09-22T07:41:27.110678",
+      "last_checked": "2026-09-25T07:39:27.094942",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"220e-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/requestidentifier.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/externalpurchaseid.json": {
       "hash": "1d9e42670fbd31cbb3e536351140c04dbad288ba58ab4f7711b2dc9c31b3bddb",
-      "last_checked": "2026-09-22T07:41:27.246665",
+      "last_checked": "2026-09-25T07:39:27.282556",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1a54-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/externalpurchaseid.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/status.json": {
       "hash": "b4d7f9cd292dcaf284ad1eb65c49ef95c0c4583cb6fc851bad46b412bcc70602",
-      "last_checked": "2026-09-22T07:41:27.376375",
+      "last_checked": "2026-09-25T07:39:27.371131",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"28a4-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/status.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/lineitemid.json": {
       "hash": "bd76492e4e6164894524ec0dc8b6953d08c095e6c45cc0560337c66f49171246",
-      "last_checked": "2026-09-22T07:41:27.503644",
+      "last_checked": "2026-09-25T07:39:27.499295",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1c2b-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/lineitemid.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/creationdate.json": {
       "hash": "748c19815d5634e8661f1f597437b6dff86a997cfee1acc9cad82d233b0b914a",
-      "last_checked": "2026-09-22T07:41:27.624883",
+      "last_checked": "2026-09-25T07:39:27.626931",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"13c0-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/creationdate.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/eventtype.json": {
       "hash": "e00b1208e10baafb5f415d45a1d4c5e82ae6ee55242587dc3dd3abbb5a2b85ae",
-      "last_checked": "2026-09-22T07:41:27.740898",
+      "last_checked": "2026-09-25T07:39:27.745682",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"285e-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/eventtype.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/referencelineitemid.json": {
       "hash": "b104e15018c631ecbaf1ab4bb6dacc0791dca04e7e86dfb2bbc49d5ee0a61237",
-      "last_checked": "2026-09-22T07:41:27.881268",
+      "last_checked": "2026-09-25T07:39:27.912172",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"25fa-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/referencelineitemid.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/productidentifier.json": {
       "hash": "302f4e90aef410f2b2d9be92142ff7f3a9a017ce9a0487ebc988fcb84029b6b9",
-      "last_checked": "2026-09-22T07:41:27.997521",
+      "last_checked": "2026-09-25T07:39:28.004701",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"13c5-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/productidentifier.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/producttype.json": {
       "hash": "335f805294a7906ce551b401a4ad4517ebf3f3030a77efad8e34cf4f9a2586de",
-      "last_checked": "2026-09-22T07:41:28.123952",
+      "last_checked": "2026-09-25T07:39:28.161096",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1572-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/producttype.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/quantity.json": {
       "hash": "2834804c58db2faf54c1562faf1350d0d4f8bb909d603bb9fef8e0ef64709dd5",
-      "last_checked": "2026-09-22T07:41:28.264214",
+      "last_checked": "2026-09-25T07:39:28.253273",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1afe-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/quantity.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/amounttaxexclusive.json": {
       "hash": "49eabb93082dc6bdf46c49b0d36c7ce932107975b7424bb7c9637505dae28e2f",
-      "last_checked": "2026-09-22T07:41:28.405594",
+      "last_checked": "2026-09-25T07:39:28.386794",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"27d8-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/amounttaxexclusive.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/amounttaxinclusive.json": {
       "hash": "b1ae35805120fb9e3790a984029dfc962a4b14c72ddbde4c6236c4c489ccaad8",
-      "last_checked": "2026-09-22T07:41:28.525578",
+      "last_checked": "2026-09-25T07:39:28.513040",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"26af-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/amounttaxinclusive.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/netamounttaxexclusive.json": {
       "hash": "397b18cab79fb293e7023440a1a9e7a2af64e8489c01ab787cc54b26050d728b",
-      "last_checked": "2026-09-22T07:41:28.645085",
+      "last_checked": "2026-09-25T07:39:28.655427",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"2f7c-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/netamounttaxexclusive.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/taxamount.json": {
       "hash": "11e5e5b8622901727eab373fe28d4270555e91e64679115a0fb5359699228784",
-      "last_checked": "2026-09-22T07:41:28.779089",
+      "last_checked": "2026-09-25T07:39:28.778342",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"2646-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/taxamount.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/taxcountry.json": {
       "hash": "3aceb57cb943efe9c5ba9b1e817f2c64fc4901d8ecf1a9791ef436dd7071257e",
-      "last_checked": "2026-09-22T07:41:28.902687",
+      "last_checked": "2026-09-25T07:39:28.958387",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"22c2-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/taxcountry.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/pricingcurrency.json": {
       "hash": "85aa92d31e580078fde1322d91aa4f62dee9ac4e822239da187dd04038d8c4df",
-      "last_checked": "2026-09-22T07:41:29.031770",
+      "last_checked": "2026-09-25T07:39:29.085510",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"2839-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/pricingcurrency.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/reportingcurrency.json": {
       "hash": "8355b05262bf62a139e21f09bd573cd122e9bc9e66cd30704cf4444f7c0ebefc",
-      "last_checked": "2026-09-22T07:41:29.173581",
+      "last_checked": "2026-09-25T07:39:29.224792",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"3a21-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/reportingcurrency.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/exchangerate.json": {
       "hash": "436060100f47d49e6f87a7c6f1c8afb4395f30cdddfba56f1ab071939eb1633e",
-      "last_checked": "2026-09-22T07:41:29.315729",
+      "last_checked": "2026-09-25T07:39:29.353108",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"2b93-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/exchangerate.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/subscriptiondaysofpaidservice.json": {
       "hash": "24277d0d2ffddd02e1cced7f05284d7fe6a2720559e34f1bc164b465d9515731",
-      "last_checked": "2026-09-22T07:41:29.467013",
+      "last_checked": "2026-09-25T07:39:29.493874",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"2152-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/subscriptiondaysofpaidservice.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/subscriptionenddate.json": {
       "hash": "710c75ce39e63facfe365313a5c6860e78bf79dc895ef479f45f7f14054de6f7",
-      "last_checked": "2026-09-22T07:41:29.584409",
+      "last_checked": "2026-09-25T07:39:29.571710",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1a77-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/subscriptionenddate.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/subscriptionevent.json": {
       "hash": "eefe089fff0ebf034f0dce8b9b77d37a765c59a1f348fc67a4a291f16cb7e579",
-      "last_checked": "2026-09-22T07:41:29.702677",
+      "last_checked": "2026-09-25T07:39:29.734370",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"28d3-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/subscriptionevent.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/subscriptionstartdate.json": {
       "hash": "688ec6a6f476f3fb69381d4378f172b111f895b150161803b22c4d787dd947f7",
-      "last_checked": "2026-09-22T07:41:29.818949",
+      "last_checked": "2026-09-25T07:39:29.867645",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"19c7-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/subscriptionstartdate.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/erroneouslysubmitted.json": {
       "hash": "a2e2bb58d4ed79703f840286b4de4da0cbec61865160ff40217c89bb2e926e72",
-      "last_checked": "2026-09-22T07:41:29.981274",
+      "last_checked": "2026-09-25T07:39:29.962506",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1766-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/erroneouslysubmitted.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/restatement.json": {
       "hash": "8716f55337deca7a046359574e34505d467b4e2f64b94c2a8f3d37f693314e0d",
-      "last_checked": "2026-09-22T07:41:30.100220",
+      "last_checked": "2026-09-25T07:39:30.126469",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1b85-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/restatement.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/datetoofarinpasterror.json": {
       "hash": "79a3a7a2557b4d45c93ada1514c21f97024304794e1fe8335da20460eff56fbc",
-      "last_checked": "2026-09-22T07:41:30.227909",
+      "last_checked": "2026-09-25T07:39:30.221416",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4b3b-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/datetoofarinpasterror.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/duplicatevalueerror.json": {
       "hash": "2d8b5ae77aa1cb612d011d2b638654afc7e9ce7caf7cb55500c11e8a94f1ea83",
-      "last_checked": "2026-09-22T07:41:30.476599",
+      "last_checked": "2026-09-25T07:39:30.521512",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"473b-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/duplicatevalueerror.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/erroneouslineitemreferencedbyvalidlineitemerror.json": {
       "hash": "8d32b148f12aed367ed7ba5a19efdb3354f810f4ff8bae2bf8f7e899f1942a02",
-      "last_checked": "2026-09-22T07:41:30.614211",
+      "last_checked": "2026-09-25T07:39:30.616878",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4811-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/erroneouslineitemreferencedbyvalidlineitemerror.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/erroneouslysubmittednotrestatementerror.json": {
       "hash": "25051615cf64434eb9c6e3d062162dd69044ff3a6bbfef065a76b820737bcc1c",
-      "last_checked": "2026-09-22T07:41:30.733716",
+      "last_checked": "2026-09-25T07:39:30.743252",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"47b1-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/erroneouslysubmittednotrestatementerror.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/exchangeratemismatcherror.json": {
       "hash": "d82dffee03c5010ad08ba8ab3dc451a08108f95f84c8421481186a3525ed9413",
-      "last_checked": "2026-09-22T07:41:30.875194",
+      "last_checked": "2026-09-25T07:39:30.884398",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"473b-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/exchangeratemismatcherror.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/fieldnotallowederror.json": {
       "hash": "681872fcb6e2b5a37e209c3f499675c993700d3211cf2f37f0f033b879a325a3",
-      "last_checked": "2026-09-22T07:41:30.982084",
+      "last_checked": "2026-09-25T07:39:31.069976",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"477c-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/fieldnotallowederror.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/futuredateerror.json": {
       "hash": "914c2352134e2c7ff7b60191fa13c469901e765b7901a05b7ca2865d33849f75",
-      "last_checked": "2026-09-22T07:41:31.100480",
+      "last_checked": "2026-09-25T07:39:31.161347",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"470b-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/futuredateerror.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/incorrectamounttaxinclusiveerror.json": {
       "hash": "63da28d7b4adf6b75e6892948ffe69f0d42db3a5e312dd00a43776a5ebb37c0e",
-      "last_checked": "2026-09-22T07:41:31.227402",
+      "last_checked": "2026-09-25T07:39:31.334484",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"478c-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/incorrectamounttaxinclusiveerror.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/incorrectnetamounterror.json": {
       "hash": "80df4ef912f1a7ab801064bcf9145ce52b92f296088fc3df9fedb3289a73811d",
-      "last_checked": "2026-09-22T07:41:31.372781",
+      "last_checked": "2026-09-25T07:39:31.418889",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"471c-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/incorrectnetamounterror.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/invalidtaxinclusiveamountforsubscriptionpaymenterror.json": {
       "hash": "119e48d94d9238f9457370300181d76ae3b6baeeccaf989f628bfe9c37a64af4",
-      "last_checked": "2026-09-22T07:41:31.510401",
+      "last_checked": "2026-09-25T07:39:31.553582",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4828-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/invalidtaxinclusiveamountforsubscriptionpaymenterror.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/lineitemstatusregressionerror.json": {
       "hash": "5c11e4c3697e9d1727fb0ee5da465cd0f4d5bd3c67837516e069ef88f8620765",
-      "last_checked": "2026-09-22T07:41:31.755283",
+      "last_checked": "2026-09-25T07:39:31.817699",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4421-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/lineitemstatusregressionerror.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/lineitemsnotallowedforstatuserror.json": {
       "hash": "91de70c7fb960f1ba9cdc891134144ef28057f722f57ff17283b080e13c7fddb",
-      "last_checked": "2026-09-22T07:41:31.871271",
+      "last_checked": "2026-09-25T07:39:31.936284",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"443c-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/lineitemsnotallowedforstatuserror.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/maximumlengthexceedederror.json": {
       "hash": "94b7851612b6b52380ab649b15878f1dec93ca746e53664e6c1f61c79092c267",
-      "last_checked": "2026-09-22T07:41:32.015173",
+      "last_checked": "2026-09-25T07:39:32.055481",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4751-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/maximumlengthexceedederror.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/missinglineitemsforstatuserror.json": {
       "hash": "4a6626b3e130bf8c644af38be7a51fa4a747c0cde95059c63848dcfa903a7beb",
-      "last_checked": "2026-09-22T07:41:32.141085",
+      "last_checked": "2026-09-25T07:39:32.168934",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"43d8-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/missinglineitemsforstatuserror.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/negativevaluenotallowederror.json": {
       "hash": "2a46b6faca1f1ac79606bc024cdb328b442a545f346c376052b01a6bd0807804",
-      "last_checked": "2026-09-22T07:41:32.253727",
+      "last_checked": "2026-09-25T07:39:32.330102",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4747-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/negativevaluenotallowederror.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/netamountmismatcherror.json": {
       "hash": "ac3ae4d8850976bb2c224a1258ee4d10a58531c41500735490d7ae27bef26997",
-      "last_checked": "2026-09-22T07:41:32.372076",
+      "last_checked": "2026-09-25T07:39:32.419631",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4739-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/netamountmismatcherror.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/noninitialbuyreferencedbybuyerror.json": {
       "hash": "bc13a1bef093379b32aee420ea4453cc0b92600d5bcc367cc9d9002d277b0ffa",
-      "last_checked": "2026-09-22T07:41:32.497670",
+      "last_checked": "2026-09-25T07:39:32.549626",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4822-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/noninitialbuyreferencedbybuyerror.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/notfounderror.json": {
       "hash": "8fdf3e22860d19dd64e6a917ddab8674a89204d7ab2e05de0e5beb08d6a786ce",
-      "last_checked": "2026-09-22T07:41:32.615136",
+      "last_checked": "2026-09-25T07:39:32.732622",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"464c-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/notfounderror.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/omittedfielderror.json": {
       "hash": "20fc77b0c96f15da04d7290dc3148309f6166dc6a3a20303504d905f90ccef90",
-      "last_checked": "2026-09-22T07:41:32.800094",
+      "last_checked": "2026-09-25T07:39:32.817754",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"47ae-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/omittedfielderror.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/positivevaluerequirederror.json": {
       "hash": "0e8655713833b5ba84ceedc20d98afd0af0b92c330cfcf9d17c685a58dde18fa",
-      "last_checked": "2026-09-22T07:41:32.901827",
+      "last_checked": "2026-09-25T07:39:32.960869",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"46c8-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/positivevaluerequirederror.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/pricingcurrencymismatcherror.json": {
       "hash": "bef7b4af6e44188270f2f4a765bd34f5a52044baa9b31ea7a6a2dd8a1b48902f",
-      "last_checked": "2026-09-22T07:41:33.014954",
+      "last_checked": "2026-09-25T07:39:33.126369",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4745-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/pricingcurrencymismatcherror.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/referenceinvalidsubscriptioneventerror.json": {
       "hash": "47de3692e0ed64fa3942f67a2c85b1f290bbfa6f60f7b3af185cf1d25c5ee0ac",
-      "last_checked": "2026-09-22T07:41:33.179697",
+      "last_checked": "2026-09-25T07:39:33.213990",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4827-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/referenceinvalidsubscriptioneventerror.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/referencelineitemnotabuyerror.json": {
       "hash": "e019a77576e75d662678d85eba8109e341001e86c892e963df7c5ce29fe22fd8",
-      "last_checked": "2026-09-22T07:41:33.282481",
+      "last_checked": "2026-09-25T07:39:33.349353",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"46ef-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/referencelineitemnotabuyerror.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/referencedcreationdateincompatibleerror.json": {
       "hash": "8b9f7150c6655b1f03b162c5813df0231092613decc1d93332683059ab6ace4a",
-      "last_checked": "2026-09-22T07:41:33.412583",
+      "last_checked": "2026-09-25T07:39:33.490365",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"47ef-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/referencedcreationdateincompatibleerror.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/refundnotallowedcreationdateerror.json": {
       "hash": "0b6e57d71f7e21d22bfa1ebc470f67e1090320ca5b6d10b7f35cdc7d4b553006",
-      "last_checked": "2026-09-22T07:41:33.538470",
+      "last_checked": "2026-09-25T07:39:33.686146",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4ffb-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/refundnotallowedcreationdateerror.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/refundreferencedbyrefunderror.json": {
       "hash": "57f70904f72caf70743ad3715230c77184cd0f126264fb292388fa1af8dea763",
-      "last_checked": "2026-09-22T07:41:33.666172",
+      "last_checked": "2026-09-25T07:39:33.766898",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"47b9-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/refundreferencedbyrefunderror.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/restatementcreationdatemismatcherror.json": {
       "hash": "1ea29b58dc869c495b58ee5789b2162d0e1c2b26f04479583c252903a635ac8c",
-      "last_checked": "2026-09-22T07:41:33.772843",
+      "last_checked": "2026-09-25T07:39:33.909647",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4b15-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/restatementcreationdatemismatcherror.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/restatementnotallowedcreationdateerror.json": {
       "hash": "efecb0836b584a53f2b3a67236ac7919319c2a5403e3359eafc7df820b740b89",
-      "last_checked": "2026-09-22T07:41:33.904447",
+      "last_checked": "2026-09-25T07:39:34.027057",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4efb-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/restatementnotallowedcreationdateerror.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/repeaterroneoussubmissionerror.json": {
       "hash": "ae18405c785642b6ec21737a1d022835400c0cb9c8d8970897641b4db89bed9d",
-      "last_checked": "2026-09-22T07:41:34.019402",
+      "last_checked": "2026-09-25T07:39:34.134509",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"47de-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/repeaterroneoussubmissionerror.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/reportingcurrencyexchangenotallowederror.json": {
       "hash": "672841d374a94783c8f53909e68d076cd11a0008970d721c850f661998581990",
-      "last_checked": "2026-09-22T07:41:34.164518",
+      "last_checked": "2026-09-25T07:39:34.271580",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"47f4-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/reportingcurrencyexchangenotallowederror.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/reportingcurrencymismatcherror.json": {
       "hash": "fb12c677f0b793f3516b49f2dc03022271be90e9e50fa6ce8a9ac79261c8c03c",
-      "last_checked": "2026-09-22T07:41:34.304716",
+      "last_checked": "2026-09-25T07:39:34.415999",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4766-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/reportingcurrencymismatcherror.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/selfreferenceerror.json": {
       "hash": "ddd877ae622a7fcb4b7decd4127132807f62393ba28c7a5515add1033a19406c",
-      "last_checked": "2026-09-22T07:41:34.427840",
+      "last_checked": "2026-09-25T07:39:34.553231",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4656-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/selfreferenceerror.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/simultaneoussubmissionerror.json": {
       "hash": "36d9aa321a0b7cac29a96e9e8d3512eae91b89a44e2069a3413b0fa7f38b728a",
-      "last_checked": "2026-09-22T07:41:34.548435",
+      "last_checked": "2026-09-25T07:39:34.692459",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4310-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/simultaneoussubmissionerror.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/startdateafterenddateerror.json": {
       "hash": "78a7d3904a8eebafc6bfa007911bc0d2bb693d04724eced92a1f639f2c767d7c",
-      "last_checked": "2026-09-22T07:41:34.671016",
+      "last_checked": "2026-09-25T07:39:34.832166",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"472c-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/startdateafterenddateerror.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/subscriptionstartnonzerodayspaidserviceerror.json": {
       "hash": "d206bcc96ba386e3055c235002ed65f7c5a5af527b87d729c05bb50d55f6db90",
-      "last_checked": "2026-09-22T07:41:34.784226",
+      "last_checked": "2026-09-25T07:39:34.959377",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"48a9-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/subscriptionstartnonzerodayspaidserviceerror.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/taxcountrymismatcherror.json": {
       "hash": "458a427d0e841e32225b8fc56f3b7967392904d85ad31a69fb9b9b7731811aba",
-      "last_checked": "2026-09-22T07:41:34.898907",
+      "last_checked": "2026-09-25T07:39:35.091083",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"46f0-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/taxcountrymismatcherror.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/unknownenumerror.json": {
       "hash": "e23d2b86d5d4825b6a5311ac9a616a0ce58566ec5fb5817c526d34c1db854b26",
-      "last_checked": "2026-09-22T07:41:35.040924",
+      "last_checked": "2026-09-25T07:39:35.234110",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"466e-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/unknownenumerror.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/validlineitemreferenceserroneouslineitemerror.json": {
       "hash": "fd1eb872d81579a4ea16f52faed87e3b1fd51fabe3ca7f05f8498e8cff3298d4",
-      "last_checked": "2026-09-22T07:41:35.188002",
+      "last_checked": "2026-09-25T07:39:35.386062",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"48a9-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/validlineitemreferenceserroneouslineitemerror.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/errorcode.json": {
       "hash": "6702b2a771a61e2982a94c725debc1ba9d211f63f44c349ae6a9f5bf01003751",
-      "last_checked": "2026-09-22T07:41:35.335915",
+      "last_checked": "2026-09-25T07:39:35.480739",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1201-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/errorcode.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/errormessage.json": {
       "hash": "1bc609f8c67813df348eb3f27f69190ddb955a514f072cf745c60ccbf66651fb",
-      "last_checked": "2026-09-22T07:41:35.449215",
+      "last_checked": "2026-09-25T07:39:35.612272",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"11e7-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/errormessage.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/fieldname.json": {
       "hash": "8324757b82aa2d35e569c5c43f7e45590f6cbfa58418fafdea6b3a4329154bc0",
-      "last_checked": "2026-09-22T07:41:35.600942",
+      "last_checked": "2026-09-25T07:39:35.841846",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"1641-6590227a4fde6-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/fieldname.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/duplicatetokenstatusnotallowederror.json": {
       "hash": "08830a3c005dd70f55086a66f16591a0ba527a35d1e9d12533ae32f9e5e1c41f",
-      "last_checked": "2026-09-22T07:41:30.363805",
+      "last_checked": "2026-09-25T07:39:30.343816",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"46e7-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/duplicatetokenstatusnotallowederror.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalpurchaseserverapi/lineitemcreationdateoutofrangeerror.json": {
       "hash": "96b75bcab58469fc57630a29c386ae9ba5326e95531496a4fd6fe0a81489cebb",
-      "last_checked": "2026-09-22T07:41:31.642520",
+      "last_checked": "2026-09-25T07:39:31.679506",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:41:24.719021",
+      "session_id": "2026-09-25T07:39:24.564961",
       "etag": "\"4aa3-6590227a6d3ff-df\"",
       "file_path": "documentation/ExternalPurchaseServerAPI/lineitemcreationdateoutofrangeerror.md"
     },

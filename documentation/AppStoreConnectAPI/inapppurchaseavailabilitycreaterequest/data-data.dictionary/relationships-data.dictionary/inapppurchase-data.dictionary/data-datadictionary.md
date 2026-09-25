@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to create an in-app purchase availability.
+The request body you use to create an In-App Purchase availability.
 
 **Availability**:
 - App Store Connect API 2.3+

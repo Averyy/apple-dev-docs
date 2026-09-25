@@ -27,15 +27,15 @@ object PromotedPurchaseUpdateRequest
 ## See Also
 
 - [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
-  The response body for endpoints that read or modify a promoted in-app purchase or subscription.
+  The response body for endpoints that read or modify a promoted In-App Purchase or subscription.
 - [object PromotedPurchasesResponse](promotedpurchasesresponse.md)
-  The response body for endpoints that list promoted in-app purchases and subscriptions for an app.
+  The response body for endpoints that list promoted In-App Purchases and subscriptions for an app.
 - [object PromotedPurchaseCreateRequest](promotedpurchasecreaterequest.md)
   The request body you use to create a promoted purchase.
 - [object AppPromotedPurchasesLinkagesRequest](apppromotedpurchaseslinkagesrequest.md)
-  The request body for updating the ordered list of in-app purchases and subscriptions promoted on an app’s product page.
+  The request body for updating the ordered list of In-App Purchases and subscriptions promoted on an app’s product page.
 - [object AppPromotedPurchasesLinkagesResponse](apppromotedpurchaseslinkagesresponse.md)
-  A response containing the resource identifiers of in-app purchases and subscriptions promoted on an app’s product page.
+  A response containing the resource identifiers of In-App Purchases and subscriptions promoted on an app’s product page.
 
 
 ---

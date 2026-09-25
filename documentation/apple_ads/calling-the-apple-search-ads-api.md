@@ -6,6 +6,8 @@ Pass your access token in the authorization header of HTTP requests.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 Before you can call the API, you need to perform the implementation steps in [`Implementing OAuth for the Apple Ads API`](implementing-oauth-for-the-apple-search-ads-api.md).
 
 To call the Apple Ads Campaign Management API, pass your access token as `Bearer` in the authorization header of HTTP requests. The `Bearer` value informs the API that the bearer of the token has authorization to access the API and perform specified actions. The following is an example call to the API:

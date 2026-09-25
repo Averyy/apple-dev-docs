@@ -1,9 +1,9 @@
-# Delete an in-app purchase image
+# Delete an In-App Purchase image
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Delete an in-app purchase image configured with the v2 API.
+Delete an In-App Purchase image configured with the v2 API.
 
 **Availability**:
 - App Store Connect API 4.4.1+
@@ -11,7 +11,7 @@ Delete an in-app purchase image configured with the v2 API.
 ## Mentions
 
 - [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
-- [Working with in-app purchase versions](working-with-in-app-purchase-versions.md)
+- [Working with In-App Purchase versions](working-with-in-app-purchase-versions.md)
 
 ## Endpoint
 
@@ -23,12 +23,12 @@ Delete an in-app purchase image configured with the v2 API.
 
 ## See Also
 
-- [Create an in-app purchase image](post-v2-inapppurchaseimages.md)
-  Reserve a promotion image for an in-app purchase configured with the v2 API and prepare its asset upload.
-- [Read in-app purchase image information](get-v2-inapppurchaseimages-_id_.md)
-  Get the metadata for an in-app purchase image configured with the v2 API, including the asset upload state.
-- [Modify an in-app purchase image](patch-v2-inapppurchaseimages-_id_.md)
-  Commit the asset upload for an in-app purchase image configured with the v2 API.
+- [Create an In-App Purchase image](post-v2-inapppurchaseimages.md)
+  Reserve a promotion image for an In-App Purchase configured with the v2 API and prepare its asset upload.
+- [Read In-App Purchase image information](get-v2-inapppurchaseimages-_id_.md)
+  Get the metadata for an In-App Purchase image configured with the v2 API, including the asset upload state.
+- [Modify an In-App Purchase image](patch-v2-inapppurchaseimages-_id_.md)
+  Commit the asset upload for an In-App Purchase image configured with the v2 API.
 
 
 ---

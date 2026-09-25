@@ -16,7 +16,7 @@ object InAppPurchaseAvailability.Relationships.AvailableTerritories
 
 ### Objects
 - [object InAppPurchaseAvailability.Relationships.AvailableTerritories.Data](inapppurchaseavailability/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
-  The request body you use to update an in-app purchase availability.
+  The request body you use to update an In-App Purchase availability.
 
 ## Properties
 

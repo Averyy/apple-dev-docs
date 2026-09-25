@@ -30,6 +30,7 @@ object GameCenterDetail.Relationships
 - [object GameCenterDetail.Relationships.LeaderboardSetReleases](gamecenterdetail/relationships-data.dictionary/leaderboardsetreleases-data.dictionary.md)
 ### Dictionaries
 - [object GameCenterDetail.Relationships.ActivityReleases](gamecenterdetail/relationships-data.dictionary/activityreleases-data.dictionary.md)
+- [object GameCenterDetail.Relationships.BlockedPlayers](gamecenterdetail/relationships-data.dictionary/blockedplayers-data.dictionary.md)
 - [object GameCenterDetail.Relationships.ChallengeReleases](gamecenterdetail/relationships-data.dictionary/challengereleases-data.dictionary.md)
 - [object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions](gamecenterdetail/relationships-data.dictionary/challengesminimumplatformversions-data.dictionary.md)
 - [object GameCenterDetail.Relationships.DefaultGroupLeaderboardV2](gamecenterdetail/relationships-data.dictionary/defaultgroupleaderboardv2-data.dictionary.md)
@@ -63,6 +64,7 @@ object GameCenterDetail.Relationships
 - `challengesMinimumPlatformVersions` (GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions)
 - `gameCenterActivities` (GameCenterDetail.Relationships.GameCenterActivities)
 - `gameCenterChallenges` (GameCenterDetail.Relationships.GameCenterChallenges)
+- `blockedPlayers` (GameCenterDetail.Relationships.BlockedPlayers)
 - `defaultGroupLeaderboardV2` (GameCenterDetail.Relationships.DefaultGroupLeaderboardV2)
 - `defaultLeaderboardV2` (GameCenterDetail.Relationships.DefaultLeaderboardV2)
 - `gameCenterAchievementsV2` (GameCenterDetail.Relationships.GameCenterAchievementsV2)

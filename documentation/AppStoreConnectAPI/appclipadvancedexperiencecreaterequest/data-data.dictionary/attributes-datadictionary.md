@@ -27,7 +27,7 @@ object AppClipAdvancedExperienceCreateRequest.Data.Attributes
 - `defaultLanguage` (AppClipAdvancedExperienceLanguage) *(required)*: The default language for the advanced App Clip experience.
 - `isPoweredBy` (boolean) *(required)*: A Boolean value that indicates whether the advanced App Clip experience was submitted by a platform provider that serves multiple businesses.
 - `link` (uri) *(required)*: The invocation URL of the advanced App Clip experience you’re creating.
-- `place` (AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place): The physical location you associate with the advanced App Clip experience. If you associate an advanced App Clip experience with a place, users can launch your App Clip from from location-based suggestions from Siri Suggestions and the Maps app.
+- `place` (AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place): The physical location you associate with the advanced App Clip experience. If you associate an advanced App Clip experience with a place, users can launch your App Clip from location-based suggestions from Siri Suggestions and the Maps app.
 
 ## See Also
 

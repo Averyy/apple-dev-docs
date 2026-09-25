@@ -1216,6 +1216,11 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed `OverconstrainedError` to inherit from `DOMException` and expose a `code` attribute per the Media Capture spec. (180728516)
 - Fixed the `configurationchange` event being dropped when a source-side change occurred while a `MediaStreamTrack` was muted; the event is now deferred until unmute. (180728609)
 
+## See Also
+
+- [Safari 27.2 Beta Release Notes](safari-27_2-release-notes.md)
+  Released September 16, 2026 — 27.2 beta (20625.2.4)
+
 
 ---
 

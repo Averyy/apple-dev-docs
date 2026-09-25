@@ -85,6 +85,8 @@ await withTaskGroup(of: Void.self) { group in
 
 ## See Also
 
+- [static var hasActiveCancellationShield: Bool](task/hasactivecancellationshield.md)
+  Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
 - [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](withtaskcancellationshield(operation:)-8zlgh.md)
   Enters a scope in which a task cancellation shield is active.
 

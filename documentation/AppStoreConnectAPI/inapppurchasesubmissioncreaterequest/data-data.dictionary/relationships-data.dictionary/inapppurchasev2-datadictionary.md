@@ -16,7 +16,7 @@ object InAppPurchaseSubmissionCreateRequest.Data.Relationships.InAppPurchaseV2
 
 ### Objects
 - [object InAppPurchaseSubmissionCreateRequest.Data.Relationships.InAppPurchaseV2.Data](inapppurchasesubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
-  The request body you use to create an in-app purchase submission.
+  The request body you use to create an In-App Purchase submission.
 
 ## Properties
 

@@ -16,7 +16,7 @@ object InAppPurchasePriceSchedule.Relationships.BaseTerritory
 
 ### Objects
 - [object InAppPurchasePriceSchedule.Relationships.BaseTerritory.Data](inapppurchasepriceschedule/relationships-data.dictionary/baseterritory-data.dictionary/data-data.dictionary.md)
-  The request body you use to update an in-app purchase price schedule.
+  The request body you use to update an In-App Purchase price schedule.
 
 ## Properties
 

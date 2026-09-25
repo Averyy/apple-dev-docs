@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response containing a single hosted content record for an in-app purchase.
+A response containing a single hosted content record for an In-App Purchase.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -23,15 +23,15 @@ object InAppPurchaseContentResponse
 ## See Also
 
 - [object InAppPurchaseContent](inapppurchasecontent.md)
-  Hosted downloadable content associated with a non-consumable in-app purchase.
+  Hosted downloadable content associated with a non-consumable In-App Purchase.
 - [object InAppPurchaseLocalizationCreateRequest](inapppurchaselocalizationcreaterequest.md)
-  The request body you use to create an in-app purchase localization.
+  The request body you use to create an In-App Purchase localization.
 - [object InAppPurchaseLocalizationUpdateRequest](inapppurchaselocalizationupdaterequest.md)
-  The request body you use to update an in-app purchase localization update request.
+  The request body you use to update an In-App Purchase localization update request.
 - [object InAppPurchaseLocalizationsResponse](inapppurchaselocalizationsresponse.md)
-  The response body for endpoints that list localizations for an in-app purchase.
+  The response body for endpoints that list localizations for an In-App Purchase.
 - [object InAppPurchaseLocalization](inapppurchaselocalization.md)
-  The localized display name and description for an in-app purchase shown to customers in a specific language.
+  The localized display name and description for an In-App Purchase shown to customers in a specific language.
 
 
 ---

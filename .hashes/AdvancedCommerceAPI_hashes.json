@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-09-22T07:39:54.116605",
+    "last_updated": "2026-09-25T07:38:14.196268",
     "total_pages": 410,
-    "session_id": "2026-09-22T07:39:27.810258"
+    "session_id": "2026-09-25T07:37:46.545599"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AdvancedCommerceAPI.json": {
       "hash": "d58bcb4b9914549d035d1d54075b26e9008904c3c4f178ac5a91c11986eb5e49",
-      "last_checked": "2026-09-22T07:39:28.063719",
+      "last_checked": "2026-09-25T07:37:46.792132",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"b90a-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/AdvancedCommerceAPI.md"
     },
     "https://developer.apple.com/documentation/AdvancedCommerceAPI": {
       "hash": "d58bcb4b9914549d035d1d54075b26e9008904c3c4f178ac5a91c11986eb5e49",
-      "last_checked": "2026-09-22T07:39:27.969646",
+      "last_checked": "2026-09-25T07:37:46.703653",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"b90a-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/AdvancedCommerceAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/setting-up-your-project-for-advanced-commerce.json": {
       "hash": "fd8211901c0edd2e17b2d2edce7ee0e30e273df6e5e4584fd2bda97eb71cad7c",
-      "last_checked": "2026-09-22T07:39:28.271706",
+      "last_checked": "2026-09-25T07:37:46.967260",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3da3-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/setting-up-your-project-for-advanced-commerce.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/creating-your-purchases.json": {
       "hash": "7f55596e66ee4933a3162425052eb4235f4f02e2ef600135008f6be14dab2f28",
-      "last_checked": "2026-09-22T07:39:29.091079",
+      "last_checked": "2026-09-25T07:37:47.784904",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"76d2-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/creating-your-purchases.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/setupmanagesubscriptions.json": {
       "hash": "252587062e94e43f2820b9626005b626360443e6a25cedfcf410c8a495719cb1",
-      "last_checked": "2026-09-22T07:39:28.413230",
+      "last_checked": "2026-09-25T07:37:47.117383",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"1d75-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/setupmanagesubscriptions.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/changelog.json": {
       "hash": "4705c7e00e5525c4770ca93b8baf0008a411ef25c62bbfc3befa071e3e587838",
-      "last_checked": "2026-09-22T07:39:28.547750",
+      "last_checked": "2026-09-25T07:37:47.254654",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"5b5a-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/changelog.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/prices.json": {
       "hash": "042e6f5a85b74e53673950eed425171af527d4fbd46096d533f02f0296b45300",
-      "last_checked": "2026-09-22T07:39:29.329091",
+      "last_checked": "2026-09-25T07:37:48.017569",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"51c7-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/prices.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/taxcodes.json": {
       "hash": "80571f493ffe5b03f3aa537f6fdc4512c1cf03e5722ebd8c0f33e13d59c5c4b2",
-      "last_checked": "2026-09-22T07:39:29.451516",
+      "last_checked": "2026-09-25T07:37:48.180026",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"36d5-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/taxcodes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/handling-subscription-price-changes.json": {
       "hash": "d527756f34d44bff7079d2a2a85b19b4689eb3f2dc96032bf7e763a74dc64a04",
-      "last_checked": "2026-09-22T07:39:29.627337",
+      "last_checked": "2026-09-25T07:37:48.451513",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"b1b7-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/handling-subscription-price-changes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/authorizing-server-calls.json": {
       "hash": "a40237b5e1878ed1eef5a928e961b3bef4705df5534dbfd22307d7c39512c2e4",
-      "last_checked": "2026-09-22T07:39:28.723309",
+      "last_checked": "2026-09-25T07:37:47.371173",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2e1f-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/authorizing-server-calls.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/ratelimits.json": {
       "hash": "03b26a75ee3352b82f2348c5c45730cc56a1d7d7c5cd7cd3ebf9eb5c32864df6",
-      "last_checked": "2026-09-22T07:39:28.854469",
+      "last_checked": "2026-09-25T07:37:47.489175",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2d34-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/ratelimits.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/onetimechargecreaterequest.json": {
       "hash": "01314908234bedead48c73edd813b3e6cc27031c9c44d87261638e33b7afc625",
-      "last_checked": "2026-09-22T07:39:29.764103",
+      "last_checked": "2026-09-25T07:37:48.537281",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2f68-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/onetimechargecreaterequest.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/onetimechargeitem.json": {
       "hash": "801ef865705deee51a475672df97f257f72c5a8f38d855000f2b53aa4a789eff",
-      "last_checked": "2026-09-22T07:39:29.860543",
+      "last_checked": "2026-09-25T07:37:48.656579",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"23ee-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/onetimechargeitem.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptioncreaterequest.json": {
       "hash": "ec757a7e84a69d27687eacd44149168fbfaca48f72563418d05dac0bf34c514f",
-      "last_checked": "2026-09-22T07:39:29.976681",
+      "last_checked": "2026-09-25T07:37:48.785712",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3fe4-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptioncreaterequest.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptioncreateitem.json": {
       "hash": "96b50f2a8ae9f25187d135237c203e4061b66cd77c3b9f0bc7116e04faaf629c",
-      "last_checked": "2026-09-22T07:39:30.093635",
+      "last_checked": "2026-09-25T07:37:48.901196",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"26d7-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptioncreateitem.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmodifyinapprequest.json": {
       "hash": "09f31bbb321538d50e282991f66a48b3a535acb6df213057d5c81eaacd322bfc",
-      "last_checked": "2026-09-22T07:39:30.275520",
+      "last_checked": "2026-09-25T07:37:49.033315",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"5ee8-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmodifyinapprequest.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmodifyadditem.json": {
       "hash": "42d058aeb36a2df99c2279e0aa393367d1edae2da0d33d4315f6c311ca187f6b",
-      "last_checked": "2026-09-22T07:39:30.358425",
+      "last_checked": "2026-09-25T07:37:49.193469",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"317e-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmodifyadditem.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmodifychangeitem.json": {
       "hash": "53f910bbc6df52cf792bfe67147f56846b8548fb829b121061ec27c1654b9d15",
-      "last_checked": "2026-09-22T07:39:30.488050",
+      "last_checked": "2026-09-25T07:37:49.332500",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3786-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmodifychangeitem.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmodifyremoveitem.json": {
       "hash": "6273c6c989b153d8521381d7509e81a90339f11588d7b682d7705bcdf60ba786",
-      "last_checked": "2026-09-22T07:39:30.598078",
+      "last_checked": "2026-09-25T07:37:49.434320",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"1f93-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmodifyremoveitem.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmodifyperiodchange.json": {
       "hash": "8ec809deeae35d614b1154e52a90dd94eaca6a28138770814bec45cd21329450",
-      "last_checked": "2026-09-22T07:39:30.739227",
+      "last_checked": "2026-09-25T07:37:49.550158",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"232c-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmodifyperiodchange.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionreactivateinapprequest.json": {
       "hash": "87ba71a3fa5f9acaa89684ca96e80ae4b9b2fe19db0753d183a78e690e1a2c54",
-      "last_checked": "2026-09-22T07:39:30.859071",
+      "last_checked": "2026-09-25T07:37:49.690770",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"23e3-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionreactivateinapprequest.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionreactivateitem.json": {
       "hash": "ecc1938fc0d242491ca5b0864f5ef22c7cdfea2b8ae5dff4c5f00a2f9eb89c56",
-      "last_checked": "2026-09-22T07:39:31.003466",
+      "last_checked": "2026-09-25T07:37:49.872061",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"1823-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionreactivateitem.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/change-subscription-price.json": {
       "hash": "837220ce7d1ccbf63d7244a54f32e0d66e4d4c4f59b36a42f0bf50bf75cc6ab8",
-      "last_checked": "2026-09-22T07:39:31.142283",
+      "last_checked": "2026-09-25T07:37:49.998108",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"aae3-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/change-subscription-price.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionpricechangerequest.json": {
       "hash": "e513c018c8e8ab484cdaf9f1a599cddb86176a344043292706c9792f85363f1c",
-      "last_checked": "2026-09-22T07:39:31.259557",
+      "last_checked": "2026-09-25T07:37:50.070303",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2876-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionpricechangerequest.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionpricechangeresponse.json": {
       "hash": "82b39f01f46003f00bff6f4f7d4e9a040df9c000a8d9f1edf6514209b7bc9e04",
-      "last_checked": "2026-09-22T07:39:31.371710",
+      "last_checked": "2026-09-25T07:37:50.191204",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"1ff4-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionpricechangeresponse.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/cancel-a-subscription.json": {
       "hash": "110a3efb700bd3df6b26e5f2d150d2e0cd44ccbd8536e800b623e8239094bfc9",
-      "last_checked": "2026-09-22T07:39:31.536258",
+      "last_checked": "2026-09-25T07:37:50.311161",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"7574-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/cancel-a-subscription.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptioncancelrequest.json": {
       "hash": "34119805f60569d09fe02a3c9299e032ef4df665c22cf47d0193e882b0491664",
-      "last_checked": "2026-09-22T07:39:31.632449",
+      "last_checked": "2026-09-25T07:37:50.427641",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"1c06-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptioncancelrequest.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptioncancelresponse.json": {
       "hash": "7d5f7f9efa02bd0ee07b349d0e4cf196d18d7ea913508654c0731bc0d32a4fdf",
-      "last_checked": "2026-09-22T07:39:31.743953",
+      "last_checked": "2026-09-25T07:37:50.554653",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"1ebe-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptioncancelresponse.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/revoke-subscription.json": {
       "hash": "0dd16f5ba739ece697a22c11708eaa1600ad2267db4754fa51d256596f5938c6",
-      "last_checked": "2026-09-22T07:39:31.865808",
+      "last_checked": "2026-09-25T07:37:50.687198",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"a853-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/revoke-subscription.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionrevokerequest.json": {
       "hash": "0baffc90f8e15c03cf7056b075bed066172ae3317af8ae3c0d21f819eb07cc40",
-      "last_checked": "2026-09-22T07:39:32.028884",
+      "last_checked": "2026-09-25T07:37:50.826331",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"272a-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionrevokerequest.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionrevokeresponse.json": {
       "hash": "5db1c7e260a0e3ce9c0879ce2fdbae9ae9ffaa68a3cfc0a5195a4fc1eeb04238",
-      "last_checked": "2026-09-22T07:39:32.108912",
+      "last_checked": "2026-09-25T07:37:51.002318",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"1f59-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionrevokeresponse.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/request-transaction-refund.json": {
       "hash": "6209e98d84521e4b19d92c5ff858ed29e798d5c8fd7f858f4d6bf1c4f1854389",
-      "last_checked": "2026-09-22T07:39:32.243521",
+      "last_checked": "2026-09-25T07:37:51.077143",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"a301-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/request-transaction-refund.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/requestrefundrequest.json": {
       "hash": "1b95b877de67c7dddf22a0bcec44c16fb5df4a7ace1121faca7d1288c92511a6",
-      "last_checked": "2026-09-22T07:39:32.374433",
+      "last_checked": "2026-09-25T07:37:51.249088",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2a19-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/requestrefundrequest.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/requestrefundresponse.json": {
       "hash": "2e849c4162fc8a68410e3cc37bfb989a06d5aa9e43674a4fee9397eeb734614a",
-      "last_checked": "2026-09-22T07:39:32.501567",
+      "last_checked": "2026-09-25T07:37:51.389136",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"21b7-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/requestrefundresponse.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/requestrefunditem.json": {
       "hash": "441aa76137ccd74ab47f418704d752e49014c3ca44edc8029d29b31fa7347492",
-      "last_checked": "2026-09-22T07:39:32.642609",
+      "last_checked": "2026-09-25T07:37:51.513720",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"24fd-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/requestrefunditem.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/change-subscription-metadata.json": {
       "hash": "d0be215b742db253ca32447c3af1107253266504abef3023422cc42dcb681f9e",
-      "last_checked": "2026-09-22T07:39:32.768850",
+      "last_checked": "2026-09-25T07:37:51.584813",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"a0f4-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/change-subscription-metadata.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionchangemetadatarequest.json": {
       "hash": "c278d0193587b8ac2e3a0895b8f54de12d47ec5bfea09247f806266228331868",
-      "last_checked": "2026-09-22T07:39:32.883479",
+      "last_checked": "2026-09-25T07:37:51.766747",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2b1a-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionchangemetadatarequest.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionchangemetadataresponse.json": {
       "hash": "775f95c2e025f23d896fcbf7ceadd9b8233969e2e1239b466f00ec80b3d1a6e6",
-      "last_checked": "2026-09-22T07:39:33.004096",
+      "last_checked": "2026-09-25T07:37:51.849170",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"26bf-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionchangemetadataresponse.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionchangemetadatadescriptors.json": {
       "hash": "d6b617daef1587cd3b474e36cafd46f0c06f34b3d9fc2518e82cdd3641aa4b35",
-      "last_checked": "2026-09-22T07:39:33.132727",
+      "last_checked": "2026-09-25T07:37:52.011714",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"28ce-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionchangemetadatadescriptors.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionchangemetadataitem.json": {
       "hash": "c9fd8c89c398d49567c7e7a9cc5e62c644551552dedd9fda55fd5ed720d93cae",
-      "last_checked": "2026-09-22T07:39:33.251523",
+      "last_checked": "2026-09-25T07:37:52.105778",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2df9-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionchangemetadataitem.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/migrate-subscription-to-advanced-commerce-api.json": {
       "hash": "b02fe2371a4159c71b38d67fb1eb86ef32464fd8e6497f79cfe032f18ee9195d",
-      "last_checked": "2026-09-22T07:39:33.398209",
+      "last_checked": "2026-09-25T07:37:52.237334",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"c8be-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/migrate-subscription-to-advanced-commerce-api.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmigraterequest.json": {
       "hash": "d7981a66a9bc980a92e012b74eb62d2ec3d8ac1807b6029535c8b17922cd12e9",
-      "last_checked": "2026-09-22T07:39:33.503214",
+      "last_checked": "2026-09-25T07:37:52.383183",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3991-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmigraterequest.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmigrateresponse.json": {
       "hash": "e6690762a18d81eae91e9d151c2d51e0d0508326ea7701c6f2837301a5580d53",
-      "last_checked": "2026-09-22T07:39:33.632934",
+      "last_checked": "2026-09-25T07:37:52.521563",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2a9e-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmigrateresponse.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmigrateitem.json": {
       "hash": "0839078394e9eaf16f2e428f171a0daf98a5802be3f716d4be78f4c5ebdac60b",
-      "last_checked": "2026-09-22T07:39:33.734291",
+      "last_checked": "2026-09-25T07:37:52.643317",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2b6b-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmigrateitem.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmigraterenewalitem.json": {
       "hash": "cbe92cca7dc9deb562567d675448d019d0c29ddc9a1065f17c659dd6d03d8eb1",
-      "last_checked": "2026-09-22T07:39:33.870445",
+      "last_checked": "2026-09-25T07:37:52.772329",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2e8f-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmigraterenewalitem.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmigratedescriptors.json": {
       "hash": "106d0731ebd8a8d4681a6f574099666d3cd6f03063133af0bdf41615c6ed9c9e",
-      "last_checked": "2026-09-22T07:39:34.008543",
+      "last_checked": "2026-09-25T07:37:52.884567",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"284f-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmigratedescriptors.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/datatypes.json": {
       "hash": "4128c96ba0bb02ef72febc0b07b87916d9da7ca72b1edcd6a863205151cb8eb9",
-      "last_checked": "2026-09-22T07:39:34.134311",
+      "last_checked": "2026-09-25T07:37:53.054589",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"5319-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/datatypes.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/jwsrenewalinfo.json": {
       "hash": "cbddd176bb7bbd07d397233cd0d692523c376125651bd14bddfce63b4c594090",
-      "last_checked": "2026-09-22T07:39:34.250251",
+      "last_checked": "2026-09-25T07:37:53.134312",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"15d7-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/jwsrenewalinfo.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/jwstransaction.json": {
       "hash": "4944b6e899e0b252ed65eedfbd39b72bec259e2de15c0dd46c7fd8fc3d93727d",
-      "last_checked": "2026-09-22T07:39:34.368604",
+      "last_checked": "2026-09-25T07:37:53.279478",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"160a-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/jwstransaction.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/errorcodes.json": {
       "hash": "f5f32246a1fc0c7c31b0b21a6e1104811b8ca13d518611f257debe909d564dc2",
-      "last_checked": "2026-09-22T07:39:34.481208",
+      "last_checked": "2026-09-25T07:37:53.454506",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"16592-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/errorcodes.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/descriptors.json": {
       "hash": "f65db76a2240964c474355c82038ebb76bf8e6eaa6ae79765f30f56a999f8fff",
-      "last_checked": "2026-09-22T07:39:34.619466",
+      "last_checked": "2026-09-25T07:37:53.530255",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2df8-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/descriptors.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/offer.json": {
       "hash": "a9db9c3ce2f020b1af7a9e3dcb5b6e1e1571bf158c4cd000a6e45445550abcbd",
-      "last_checked": "2026-09-22T07:39:34.758787",
+      "last_checked": "2026-09-25T07:37:53.650275",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"2c55-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/offer.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/requestinfo.json": {
       "hash": "0b8eac031691a5436468235122604fb13c7c213df135425f01d3673eabcef82c",
-      "last_checked": "2026-09-22T07:39:34.876435",
+      "last_checked": "2026-09-25T07:37:53.829150",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"5540-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/requestinfo.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionmodifydescriptors.json": {
       "hash": "7fb077155ff01024d90ea8e2d1fc84b9e8415eb59899dd45124f613b6e458dfe",
-      "last_checked": "2026-09-22T07:39:35.000316",
+      "last_checked": "2026-09-25T07:37:53.953988",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"318e-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionmodifydescriptors.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionpricechangeitem.json": {
       "hash": "1977d9527d111ed405f9088308a8446535ec1f00655dba740de4336af1dc4518",
-      "last_checked": "2026-09-22T07:39:35.140844",
+      "last_checked": "2026-09-25T07:37:54.043508",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"30ce-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionpricechangeitem.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/currency.json": {
       "hash": "4d99ccea30bf4cb254c35b00cfd20c7a41d84c8ba3efb37194ca8fe05656acf6",
-      "last_checked": "2026-09-22T07:39:35.253314",
+      "last_checked": "2026-09-25T07:37:54.170675",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"45a6-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/currency.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/description.json": {
       "hash": "737d5b7c240b6c26e0705b93f3a983a7bebda226b4d105fbce426d7499c9989e",
-      "last_checked": "2026-09-22T07:39:35.383936",
+      "last_checked": "2026-09-25T07:37:54.349168",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3801-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/description.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/displayname.json": {
       "hash": "9ad76165afa011b3e414e094e0eb466d74a90fa5bd72488a5d1fec8e4bbe92a1",
-      "last_checked": "2026-09-22T07:39:35.640724",
+      "last_checked": "2026-09-25T07:37:54.566079",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3eec-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/displayname.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/effective.json": {
       "hash": "ec18f092edc561d3c960b2d1a296f8fbd510da181a2b39d92fe7f7da612f1999",
-      "last_checked": "2026-09-22T07:39:35.836767",
+      "last_checked": "2026-09-25T07:37:54.749997",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3720-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/effective.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/period.json": {
       "hash": "c4b7a3bd8ece7f4c9a95c1cb01bdfe1f9f6a0b6a8a8c0493b333768e678f9305",
-      "last_checked": "2026-09-22T07:39:35.928605",
+      "last_checked": "2026-09-25T07:37:54.874133",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3c56-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/period.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/price.json": {
       "hash": "1521090cda4e78ad65ce4e94bbe06cd2fd6725f5e36efe8358aa1a209d344b88",
-      "last_checked": "2026-09-22T07:39:36.060485",
+      "last_checked": "2026-09-25T07:37:54.943276",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3c0e-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/price.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/proratedprice.json": {
       "hash": "78561b916fa177898937ff415c1120e00e581392112c93d0e756e47be7d9ad3a",
-      "last_checked": "2026-09-22T07:39:36.188517",
+      "last_checked": "2026-09-25T07:37:55.091126",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"38d3-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/proratedprice.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/retainbillingcycle.json": {
       "hash": "9ed5ece2afc5d4060dae68c323383dfd16fb3ebc33bb745cb8bdb5493d437aa9",
-      "last_checked": "2026-09-22T07:39:36.337750",
+      "last_checked": "2026-09-25T07:37:55.245569",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"35cb-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/retainbillingcycle.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/refundamount.json": {
       "hash": "c8a6baa869c515b41a15fda80793dcd122e0bda7319440dac0f9601c0b69ac10",
-      "last_checked": "2026-09-22T07:39:36.463415",
+      "last_checked": "2026-09-25T07:37:55.325874",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"36b1-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/refundamount.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/refundreason.json": {
       "hash": "9d19882228d16e022ed796b4c5e86d494e7734268a2adddc8040774a8d11243f",
-      "last_checked": "2026-09-22T07:39:36.586571",
+      "last_checked": "2026-09-25T07:37:55.458460",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3b0a-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/refundreason.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/refundriskingpreference.json": {
       "hash": "9b254f79ff9a6b460c2bbfaf42e39d3d0eeb6b2805ad031d255040d0ecc7ac5d",
-      "last_checked": "2026-09-22T07:39:36.704551",
+      "last_checked": "2026-09-25T07:37:55.571640",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"4456-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/refundriskingpreference.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/sku.json": {
       "hash": "d6620b733d201eda183c4b331cb4c81ce3a88959a2126f17e3cd5ef2e39d8a04",
-      "last_checked": "2026-09-22T07:39:36.823204",
+      "last_checked": "2026-09-25T07:37:55.700210",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"38d2-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/sku.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/storefront.json": {
       "hash": "f61b363a5f9ac5d8d735d3ac92001a991b598bfbfb4b346aa9e6734e4f7b95bc",
-      "last_checked": "2026-09-22T07:39:36.962594",
+      "last_checked": "2026-09-25T07:37:55.817789",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"44e5-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/storefront.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/taxcode.json": {
       "hash": "da7fcf8dd1cc83f770bb5e4887b492074bdf1c4b9d25fb280bafd6a6c39bbab4",
-      "last_checked": "2026-09-22T07:39:37.080694",
+      "last_checked": "2026-09-25T07:37:55.936475",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"38a0-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/taxcode.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/targetproductid.json": {
       "hash": "9a7d805b322dee6d3c62929199be608b77240aae4ed67e3c4225c5bc72509a4d",
-      "last_checked": "2026-09-22T07:39:37.215415",
+      "last_checked": "2026-09-25T07:37:56.063421",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3dff-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/targetproductid.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/transactionid.json": {
       "hash": "5615eff4f307f2cc35a407a7633ea389e2a927d8ce9d95755b0092511bfee6be",
-      "last_checked": "2026-09-22T07:39:37.335112",
+      "last_checked": "2026-09-25T07:37:56.184139",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"352e-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/transactionid.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/version.json": {
       "hash": "833b3524ddc78560276ca33edfc17eb003a8dd3e0263dd3bb9166fe83591b1a1",
-      "last_checked": "2026-09-22T07:39:37.459966",
+      "last_checked": "2026-09-25T07:37:56.378316",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"359b-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/version.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/alreadyrefundederror.json": {
       "hash": "8116dbc80d57ccea6dffde19e2798be9b4a59d85e0484ef548fc64d20fefb75e",
-      "last_checked": "2026-09-22T07:39:37.714613",
+      "last_checked": "2026-09-25T07:37:56.609296",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39c3-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/alreadyrefundederror.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/atleastoneitemerror.json": {
       "hash": "d18900800c0b7b5954502e8f5324b31d5697a1c1be33f37745346991fe445bbf",
-      "last_checked": "2026-09-22T07:39:37.833722",
+      "last_checked": "2026-09-25T07:37:56.783126",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"396b-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/atleastoneitemerror.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/atleastoneofdisplaynameordescriptionerror.json": {
       "hash": "8d37a963dff7939ccf89415c18b9df000545d2e4a8cec49c2aa0219d0b1948b8",
-      "last_checked": "2026-09-22T07:39:37.940529",
+      "last_checked": "2026-09-25T07:37:56.862010",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39ed-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/atleastoneofdisplaynameordescriptionerror.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/billingcycleresetwitheffectivelatererror.json": {
       "hash": "97e6b38dc134f22696d3043505000efb3d1942edebebdac24e2ad440d96503b7",
-      "last_checked": "2026-09-22T07:39:38.047657",
+      "last_checked": "2026-09-25T07:37:57.018707",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39dd-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/billingcycleresetwitheffectivelatererror.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/changeitemnotfounderror.json": {
       "hash": "7291b2b0e15e227a41d3e934276ab413f3753151989a3da7d0839602c5f73199",
-      "last_checked": "2026-09-22T07:39:38.167725",
+      "last_checked": "2026-09-25T07:37:57.139746",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"397f-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/changeitemnotfounderror.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/currentskulengthexceedederror.json": {
       "hash": "fe581bac959910a8b1736a7157442fa531789d1258d0a4fe9789710455f932b1",
-      "last_checked": "2026-09-22T07:39:38.297681",
+      "last_checked": "2026-09-25T07:37:57.215417",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39a8-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/currentskulengthexceedederror.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/descriptionlengthexceedederror.json": {
       "hash": "081ef58091723cc59e1546ab1cd3f73f63eb2dbe7d0e9b800e4b42b56b428722",
-      "last_checked": "2026-09-22T07:39:38.694257",
+      "last_checked": "2026-09-25T07:37:57.596370",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39af-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/descriptionlengthexceedederror.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/displaynamelengthexceedederror.json": {
       "hash": "da2ae50671e977638dfb6cd8dd931775146023ed11d3d50b53282626fedf0d08",
-      "last_checked": "2026-09-22T07:39:38.816234",
+      "last_checked": "2026-09-25T07:37:57.750020",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39af-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/displaynamelengthexceedederror.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/emptyaddchangeitemserror.json": {
       "hash": "29944db15074c25fc520f341d1dbe336f2ebe1b99cb20fe63280085bbeca71ca",
-      "last_checked": "2026-09-22T07:39:38.919002",
+      "last_checked": "2026-09-25T07:37:57.843757",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"398c-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/emptyaddchangeitemserror.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/generalinternalerror.json": {
       "hash": "607d7d37807a39f168b1a1d7e13cd7d42b2e11118482aa61ebbc043ddf618da5",
-      "last_checked": "2026-09-22T07:39:39.193431",
+      "last_checked": "2026-09-25T07:37:58.133536",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3959-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/generalinternalerror.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/generalinternalretryableerror.json": {
       "hash": "40c089f908d4a344b8eb109ac3fbe0d2e91cfaedbc30eb16c405e34b2b4c7a55",
-      "last_checked": "2026-09-22T07:39:39.305707",
+      "last_checked": "2026-09-25T07:37:58.255329",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39a1-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/generalinternalretryableerror.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/inactiveacasuberror.json": {
       "hash": "2daa889cc64efc24f8cfa84ba0a21d27acb377fbc729d0470feba866ca2c77b2",
-      "last_checked": "2026-09-22T07:39:39.445833",
+      "last_checked": "2026-09-25T07:37:58.332795",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39b7-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/inactiveacasuberror.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/insufficientfundserror.json": {
       "hash": "d3ccc92a00f7bab44320f9303bd566b346f8335b9b8c336b41cda8d1e969886d",
-      "last_checked": "2026-09-22T07:39:39.568529",
+      "last_checked": "2026-09-25T07:37:58.505728",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39dd-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/insufficientfundserror.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidamounterror.json": {
       "hash": "54ed3fd98376e8ab86142554e9539addc7d71cd01ebd93605c5e1ab8e823161f",
-      "last_checked": "2026-09-22T07:39:39.689514",
+      "last_checked": "2026-09-25T07:37:58.635889",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3942-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidamounterror.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidappaccounttokenerror.json": {
       "hash": "fcf5ab7bd9f048294c4dd1c7c6b9616a872da02cfdac675f589d7b47304f44b0",
-      "last_checked": "2026-09-22T07:39:39.854309",
+      "last_checked": "2026-09-25T07:37:58.708806",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39e8-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidappaccounttokenerror.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidchangereasonerror.json": {
       "hash": "5c7e046e825ebca0d28c359cb96486e0c0e249b0c8fbe31e093465d77e304622",
-      "last_checked": "2026-09-22T07:39:39.934659",
+      "last_checked": "2026-09-25T07:37:58.835210",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3997-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidchangereasonerror.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidconsistencytokenerror.json": {
       "hash": "f3a5ba837e5fc8dcfb516475551d0e769b13f02492981ee45ca3a872de3b1e7b",
-      "last_checked": "2026-09-22T07:39:40.050457",
+      "last_checked": "2026-09-25T07:37:59.016432",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39d4-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidconsistencytokenerror.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidcurrencyerror.json": {
       "hash": "a198c10db9f4b31cb91a4b73425810dd24e33ee124829d591b7c56ef097b901c",
-      "last_checked": "2026-09-22T07:39:40.189886",
+      "last_checked": "2026-09-25T07:37:59.137603",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3964-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidcurrencyerror.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invaliddescriptionerror.json": {
       "hash": "7c7c6f5590bff1594dadc454622810d04a59d43bfd2f9cb4e9e80d1ad785c93b",
-      "last_checked": "2026-09-22T07:39:40.298549",
+      "last_checked": "2026-09-25T07:37:59.268802",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3988-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invaliddescriptionerror.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invaliddisplaynameerror.json": {
       "hash": "9aca9d389f729f207dd093d347dd8f859b0eb0b6cad1ae335130ebda0b7d5486",
-      "last_checked": "2026-09-22T07:39:40.429842",
+      "last_checked": "2026-09-25T07:37:59.348124",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3988-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invaliddisplaynameerror.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidofferperiodcounterror.json": {
       "hash": "860cae7e6460b0c00a613b436b82dde080919a0e777261e609ff17d6848b3f4a",
-      "last_checked": "2026-09-22T07:39:40.554979",
+      "last_checked": "2026-09-25T07:37:59.520399",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39cf-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidofferperiodcounterror.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidofferperioderror.json": {
       "hash": "abf1ab8d5a862b459f421882ab1a893bb43c8a3adce496fabf9af771a77b88f0",
-      "last_checked": "2026-09-22T07:39:40.685830",
+      "last_checked": "2026-09-25T07:37:59.616975",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3989-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidofferperioderror.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidofferpriceerror.json": {
       "hash": "01b9800ca35f85e70ba4fe432960e68f854e45169132b82b33de2f8f1f89dac9",
-      "last_checked": "2026-09-22T07:39:40.808544",
+      "last_checked": "2026-09-25T07:37:59.886257",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39ab-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidofferpriceerror.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidofferreasonerror.json": {
       "hash": "75aed0069add6273efc4e89c59698f6891e548ef43ae34728cd2bf4583f9d21b",
-      "last_checked": "2026-09-22T07:39:40.933882",
+      "last_checked": "2026-09-25T07:37:59.966742",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3989-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidofferreasonerror.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidoperationerror.json": {
       "hash": "a8f7f96e4e6f390518f069ac3934462140b05c6b64986094ce075b2399f95ba4",
-      "last_checked": "2026-09-22T07:39:41.065759",
+      "last_checked": "2026-09-25T07:38:00.095621",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"396c-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidoperationerror.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidprevioussubscriptionerror.json": {
       "hash": "dc7060d15751dfbffd3fb1e3593b3345a8e3ada49d7815fd0664b9107a8b04a6",
-      "last_checked": "2026-09-22T07:39:41.207380",
+      "last_checked": "2026-09-25T07:38:00.228940",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a10-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidprevioussubscriptionerror.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidprevioustransactioniderror.json": {
       "hash": "2e3608182058a937559ecb857f6d5dfc7ca7355504e1259a260189770b55cd26",
-      "last_checked": "2026-09-22T07:39:41.317847",
+      "last_checked": "2026-09-25T07:38:00.417910",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a1b-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidprevioustransactioniderror.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidproductchangeserror.json": {
       "hash": "0ac9803f551a77160fac541b89b36cd59440e114d52b59cf43d27a1b7f4682ea",
-      "last_checked": "2026-09-22T07:39:41.581229",
+      "last_checked": "2026-09-25T07:38:00.686676",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39b0-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidproductchangeserror.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidproducterror.json": {
       "hash": "e5b5f7190dd3237bef80a9d7b04dec9141a4862bbd22b75408285769e1d28969",
-      "last_checked": "2026-09-22T07:39:41.711704",
+      "last_checked": "2026-09-25T07:38:00.814087",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3967-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidproducterror.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidproratedpriceerror.json": {
       "hash": "9bd8856439f026f8268cb9429590f3ae9eca6eee4542360cd9a9bf02b1e43024",
-      "last_checked": "2026-09-22T07:39:41.840168",
+      "last_checked": "2026-09-25T07:38:00.949625",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39a6-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidproratedpriceerror.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidrefundreasonerror.json": {
       "hash": "842f588d4341fc0ed4f59451454e098b60d07c9008fd18d102d67c0f6c2d63e1",
-      "last_checked": "2026-09-22T07:39:42.096996",
+      "last_checked": "2026-09-25T07:38:01.339233",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39f5-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidrefundreasonerror.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidrefundtypeerror.json": {
       "hash": "c79a1ebbcef3a8ef24301fb30266d80ad30c4fedbea6759847f03e1c0404c69e",
-      "last_checked": "2026-09-22T07:39:42.222018",
+      "last_checked": "2026-09-25T07:38:01.430163",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39d9-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidrefundtypeerror.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidrenewalperioderror.json": {
       "hash": "052b37c3152d3d57916abadfead133f569aa9f492ed4c6f0369b4ab419b4a12e",
-      "last_checked": "2026-09-22T07:39:42.334435",
+      "last_checked": "2026-09-25T07:38:01.611341",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39a5-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidrenewalperioderror.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidrenewalpriceerror.json": {
       "hash": "24bde1aaee8268dce3602d98744bc61b8f1bf238e644a018de91b610c3531510",
-      "last_checked": "2026-09-22T07:39:42.476179",
+      "last_checked": "2026-09-25T07:38:01.746982",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3997-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidrenewalpriceerror.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidrequestreferenceiderror.json": {
       "hash": "29637d7b8d9bfaf38405658d010f48e19f86c4228d9b1cb251eaec2becf6e724",
-      "last_checked": "2026-09-22T07:39:42.613535",
+      "last_checked": "2026-09-25T07:38:01.883171",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39f0-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidrequestreferenceiderror.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidsalabledurationerror.json": {
       "hash": "4808cc18d0e9778360650660f98a5b34d4daaaa179a159a01a0fec65ab3e54fc",
-      "last_checked": "2026-09-22T07:39:42.729536",
+      "last_checked": "2026-09-25T07:38:02.018023",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39c1-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidsalabledurationerror.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidsalableerror.json": {
       "hash": "17ae2e40fa2093955d1e3ef8288b54708c099a6f47b967da4eb4f4008bdb5a4c",
-      "last_checked": "2026-09-22T07:39:42.841884",
+      "last_checked": "2026-09-25T07:38:02.166417",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3974-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidsalableerror.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidsignatureerror.json": {
       "hash": "2da2669e9ae4853a3cdedf5581954053f86c8ffd085d3de1c4939561559ae97a",
-      "last_checked": "2026-09-22T07:39:42.969458",
+      "last_checked": "2026-09-25T07:38:02.292779",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"396c-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidsignatureerror.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidskuerror.json": {
       "hash": "8003b6b4e15df93d4b29052ac87bef073d46901cd5618888d76e176e166d1e27",
-      "last_checked": "2026-09-22T07:39:43.102496",
+      "last_checked": "2026-09-25T07:38:02.417938",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3919-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidskuerror.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidstorefronterror.json": {
       "hash": "e4a4733f9e7d47ae024acaf7b50c8e99bf04c881539c975a47831cc646940a68",
-      "last_checked": "2026-09-22T07:39:43.346592",
+      "last_checked": "2026-09-25T07:38:02.680359",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3980-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidstorefronterror.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidtargetproductiderror.json": {
       "hash": "3c8350a220d38af5278a6891504bd3ea6fac9c5e46ccd7894ad9c2a73dae8be6",
-      "last_checked": "2026-09-22T07:39:43.491016",
+      "last_checked": "2026-09-25T07:38:02.813844",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a25-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidtargetproductiderror.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidtaxproductcodeerror.json": {
       "hash": "e9f76278c43c108bf954b5c2e270a4682ada140291eff7c0306dbab600e50a15",
-      "last_checked": "2026-09-22T07:39:43.601399",
+      "last_checked": "2026-09-25T07:38:02.937778",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39ab-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidtaxproductcodeerror.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidtransactioniderror.json": {
       "hash": "1ae08024dbe5e56f01a05cbc6e576208ce096dd548734e6e9e7bb19002388cb8",
-      "last_checked": "2026-09-22T07:39:43.733949",
+      "last_checked": "2026-09-25T07:38:03.202142",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39a4-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidtransactioniderror.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/itemlimitexceedederror.json": {
       "hash": "2914d2fcf3b443b7cdc7e2dd36f2155176e8aec84a3c8b77c33b0fcb9d639ae4",
-      "last_checked": "2026-09-22T07:39:43.975020",
+      "last_checked": "2026-09-25T07:38:03.477823",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39f5-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/itemlimitexceedederror.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/malformedpayloaderror.json": {
       "hash": "e28b8b7fea79eec94218726f4b080d24513684a4ee79a9ae86420446db4ad5d3",
-      "last_checked": "2026-09-22T07:39:44.113491",
+      "last_checked": "2026-09-25T07:38:03.610119",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"396c-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/malformedpayloaderror.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/misalignedbillingcycleerror.json": {
       "hash": "372f1f5b4efd316bcf7fcbc006addfceb5b7b75e38799c57e8f100ad21758649",
-      "last_checked": "2026-09-22T07:39:44.228758",
+      "last_checked": "2026-09-25T07:38:03.742301",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a00-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/misalignedbillingcycleerror.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/mismatchedstorefronterror.json": {
       "hash": "3daf75476e74fb0d0b2459c335ad3dd0e52df288aef20720a93030adcd701326",
-      "last_checked": "2026-09-22T07:39:44.487628",
+      "last_checked": "2026-09-25T07:38:03.979300",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39a0-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/mismatchedstorefronterror.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/missingpricingconfigforstorefronterror.json": {
       "hash": "fa722e1057f20695786ed634f3470d3649af908c76e7c81ac145c07302d14518",
-      "last_checked": "2026-09-22T07:39:44.618589",
+      "last_checked": "2026-09-25T07:38:04.097896",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a5c-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/missingpricingconfigforstorefronterror.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/missingupdateditemswithperiodchangeerror.json": {
       "hash": "9a1d520fa3c3b605fb1096f18d90f906960296845627713307a085790b295803",
-      "last_checked": "2026-09-22T07:39:44.741093",
+      "last_checked": "2026-09-25T07:38:04.224746",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a77-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/missingupdateditemswithperiodchangeerror.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/moreitemsthanallowederror.json": {
       "hash": "288fa3f86a5dc46fcc341227b43d7ac17af661a33d3a686c47d9960382ae3a68",
-      "last_checked": "2026-09-22T07:39:44.871329",
+      "last_checked": "2026-09-25T07:38:04.359971",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39ad-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/moreitemsthanallowederror.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/moreoffersthanallowederror.json": {
       "hash": "bbd44b371d7c80eb545e9dc4e16ebca5814e1f061ee0226309c76b084771ce1e",
-      "last_checked": "2026-09-22T07:39:45.013705",
+      "last_checked": "2026-09-25T07:38:04.477509",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39bb-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/moreoffersthanallowederror.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/multipleoperationsonsingleskuerror.json": {
       "hash": "499f4ef5b24abb15e820dcf6eb2be825d0a1e864882ff4f30125b5b87baa7270",
-      "last_checked": "2026-09-22T07:39:45.140076",
+      "last_checked": "2026-09-25T07:38:04.608621",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a2e-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/multipleoperationsonsingleskuerror.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/multiplepriceserror.json": {
       "hash": "2d6f6993016feeb72aba677bcc5a61bc2ca0608aaf2f90ef9686fe8745473dac",
-      "last_checked": "2026-09-22T07:39:45.266155",
+      "last_checked": "2026-09-25T07:38:04.751790",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"396f-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/multiplepriceserror.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/negativepriceerror.json": {
       "hash": "b5baf2b90356afbd0aeaef1b6e33a880febf4d59af65457181a353da814782e1",
-      "last_checked": "2026-09-22T07:39:45.383673",
+      "last_checked": "2026-09-25T07:38:04.873496",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"395b-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/negativepriceerror.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/negativeproratedpriceerror.json": {
       "hash": "93ef85176dc7c99f64dbbbbb12f7804231cb899e2f74f1a9ede4514935dae954",
-      "last_checked": "2026-09-22T07:39:45.501801",
+      "last_checked": "2026-09-25T07:38:05.132872",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39c2-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/negativeproratedpriceerror.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/negativerefundamounterror.json": {
       "hash": "24f52663fceb82a8b4596513bede210077575c96ca67cc24cb7734e61f1e1bee",
-      "last_checked": "2026-09-22T07:39:45.629556",
+      "last_checked": "2026-09-25T07:38:05.258161",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39b2-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/negativerefundamounterror.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulladvancedcommercedataerror.json": {
       "hash": "f118e65c8854a2301311339d2ef720138c27e84c40163fd506a5d981cd7afdee",
-      "last_checked": "2026-09-22T07:39:45.747211",
+      "last_checked": "2026-09-25T07:38:05.403240",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39ee-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulladvancedcommercedataerror.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullcurrencyerror.json": {
       "hash": "06777b0c97ae8bd3c7bb22fb63f5c29515a1d1a05e0340476b5829ed69ebbed1",
-      "last_checked": "2026-09-22T07:39:45.874266",
+      "last_checked": "2026-09-25T07:38:05.548146",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3948-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullcurrencyerror.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullcurrentskuerror.json": {
       "hash": "41c5d1a8fd7d3dfa519359338237614f6768ba71cda9fdf2a85d432405e49c09",
-      "last_checked": "2026-09-22T07:39:45.993748",
+      "last_checked": "2026-09-25T07:38:05.674925",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3964-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullcurrentskuerror.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulldescriptionerror.json": {
       "hash": "ffec9cc78f7a16ecb8049dffe4fc2fdce6a6754568d29b0307f4806056ddbda1",
-      "last_checked": "2026-09-22T07:39:46.128501",
+      "last_checked": "2026-09-25T07:38:05.797264",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3972-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulldescriptionerror.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulldescriptorserror.json": {
       "hash": "6f3afe6d0e6a6356e5fc8f339b62799e9abf28a79e9fe2f973e5968fb9306a62",
-      "last_checked": "2026-09-22T07:39:46.243203",
+      "last_checked": "2026-09-25T07:38:05.935724",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3972-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulldescriptorserror.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulldisplaynameerror.json": {
       "hash": "eef67ed707a8a294a06f40bea65aca24420e9c04a13ae58e433ad7f4fe8a54a2",
-      "last_checked": "2026-09-22T07:39:46.372355",
+      "last_checked": "2026-09-25T07:38:06.069145",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3972-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulldisplaynameerror.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulleffectiveerror.json": {
       "hash": "db3ef3087e6d7f95f048025bd74d98114ba420d7bfda8bba80780223a3030395",
-      "last_checked": "2026-09-22T07:39:46.503797",
+      "last_checked": "2026-09-25T07:38:06.207917",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3956-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulleffectiveerror.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullitemerror.json": {
       "hash": "47549ded09471bc5236616efdd4a88144e5bf1f53aa4424d54b88a3a668e8096",
-      "last_checked": "2026-09-22T07:39:46.634285",
+      "last_checked": "2026-09-25T07:38:06.339606",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3910-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullitemerror.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullitemserror.json": {
       "hash": "07eaffcbfdc890f6515b31c0f322beb25f4be28330a3bafa81dacdee6d68d23e",
-      "last_checked": "2026-09-22T07:39:46.773728",
+      "last_checked": "2026-09-25T07:38:06.475458",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"391e-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullitemserror.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullnewskuerror.json": {
       "hash": "305ff5cd20d6a0e4fe399e8c587149eeccd9090dd1667156ea007903f082df0b",
-      "last_checked": "2026-09-22T07:39:46.886729",
+      "last_checked": "2026-09-25T07:38:06.613340",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3938-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullnewskuerror.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullofferperioderror.json": {
       "hash": "94f0a2a634d6cc09ff9eb6f120adaa7ded9b7e6dbd6159b5c94600bb860dd7a3",
-      "last_checked": "2026-09-22T07:39:47.020018",
+      "last_checked": "2026-09-25T07:38:06.698306",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3973-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullofferperioderror.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullperiodcounterror.json": {
       "hash": "115b8d4ee47c847325a61dab1d3f65ec513ad2482c2772775591a162dbc7ebed",
-      "last_checked": "2026-09-22T07:39:47.128052",
+      "last_checked": "2026-09-25T07:38:06.876434",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3972-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullperiodcounterror.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullperioderror.json": {
       "hash": "9cfe1555b8fd05bfa9475a45fbd74677a0ca2bcf4e785551603cbf5be3c4c7b2",
-      "last_checked": "2026-09-22T07:39:47.239558",
+      "last_checked": "2026-09-25T07:38:06.952174",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"392c-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullperioderror.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullpriceerror.json": {
       "hash": "25b53519b9f56dc5a935a0c7a2f53b12b32ec3c6751235bd3097d61cee961217",
-      "last_checked": "2026-09-22T07:39:47.372625",
+      "last_checked": "2026-09-25T07:38:07.124999",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"391e-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullpriceerror.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullreasonerror.json": {
       "hash": "a5f60bc4d25ab58a4a22f73783e1c60137b799cafa9d35efbceb2d9b56575afe",
-      "last_checked": "2026-09-22T07:39:47.520983",
+      "last_checked": "2026-09-25T07:38:07.273633",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"392c-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullreasonerror.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullrefundamounterror.json": {
       "hash": "ce72cce4e0cc62f1120a1d9076a863c4c844df58de7889c6351ba4aa88fae338",
-      "last_checked": "2026-09-22T07:39:47.643563",
+      "last_checked": "2026-09-25T07:38:07.403543",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39d5-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullrefundamounterror.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullrefundreasonerror.json": {
       "hash": "4ae5de0e2b5d15e21d37499646c8b6e68dd897dc45cad879e483229d4cd15bb2",
-      "last_checked": "2026-09-22T07:39:47.771163",
+      "last_checked": "2026-09-25T07:38:07.488670",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39df-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullrefundreasonerror.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullrefundriskingerror.json": {
       "hash": "a8af36f98107fb0df9f0a2831850c6d92ebab49176b2283ea409a8b9f57c5099",
-      "last_checked": "2026-09-22T07:39:47.913952",
+      "last_checked": "2026-09-25T07:38:07.659161",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39f7-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullrefundriskingerror.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullrefundtypeerror.json": {
       "hash": "4a2bb99590ead668abdc839c4229923d869c3b532bc2a2b6f8974764fab69eba",
-      "last_checked": "2026-09-22T07:39:48.040811",
+      "last_checked": "2026-09-25T07:38:07.796063",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39c3-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullrefundtypeerror.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullrequestinfoerror.json": {
       "hash": "959f358db279b2abb6b08b1e1c215b8e6510a32127727714a71d81f4cee518c1",
-      "last_checked": "2026-09-22T07:39:48.176336",
+      "last_checked": "2026-09-25T07:38:07.924464",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3972-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullrequestinfoerror.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullrequestreferenceiderror.json": {
       "hash": "2e9c1016fdf4cf44daf5498e6b39718dfe01d1238bb5273195da958e5f020c96",
-      "last_checked": "2026-09-22T07:39:48.314897",
+      "last_checked": "2026-09-25T07:38:08.057445",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39d4-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullrequestreferenceiderror.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullretainbillingcycleerror.json": {
       "hash": "1b176d662cb047e5169eec9b960606ba2ecfc92f87d8faa309daba7da2557cb0",
-      "last_checked": "2026-09-22T07:39:48.432983",
+      "last_checked": "2026-09-25T07:38:08.183697",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39d4-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullretainbillingcycleerror.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullskuerror.json": {
       "hash": "bd11e23de903277800f18d008416639bfe203859b8d3aa76ef8f0c6db839cc07",
-      "last_checked": "2026-09-22T07:39:48.548605",
+      "last_checked": "2026-09-25T07:38:08.318880",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3902-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullskuerror.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullstorefronterror.json": {
       "hash": "d352ffcbc8fda7235dc9c0d990a375852e15be020a237805e34f9bb49b4b59ab",
-      "last_checked": "2026-09-22T07:39:48.681363",
+      "last_checked": "2026-09-25T07:38:08.451736",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3964-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullstorefronterror.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulltargetproductiderror.json": {
       "hash": "25d2cb97968fe7c2d6e8507f29ea19edea1a1638a167fb11e62722661963b25d",
-      "last_checked": "2026-09-22T07:39:48.806847",
+      "last_checked": "2026-09-25T07:38:08.693811",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a09-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulltargetproductiderror.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulltaxcodeerror.json": {
       "hash": "a48becafa3846a359284715ae673f5c9e78ed6e64699e3f79abea551a545cd58",
-      "last_checked": "2026-09-22T07:39:48.929116",
+      "last_checked": "2026-09-25T07:38:08.815045",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"393a-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulltaxcodeerror.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nulltransactioniderror.json": {
       "hash": "11d4d02f18b579f4671487b642f2936e75f145c14041a339e2cbf78d7a01b02b",
-      "last_checked": "2026-09-22T07:39:49.044048",
+      "last_checked": "2026-09-25T07:38:08.944084",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"398e-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nulltransactioniderror.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/nullversionerror.json": {
       "hash": "dd909be8ea3c6099b6eafe385d663fda245e8ac93674b55a7d441cac5bab9040",
-      "last_checked": "2026-09-22T07:39:49.166559",
+      "last_checked": "2026-09-25T07:38:09.079804",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"393a-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/nullversionerror.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/offerpreventsitemmidcyclechangeerror.json": {
       "hash": "3213e01279603f16bb17d3b7b88e15d8b123dc3f0ffb212e35bec05f4eb51d5c",
-      "last_checked": "2026-09-22T07:39:49.284232",
+      "last_checked": "2026-09-25T07:38:09.215327",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a58-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/offerpreventsitemmidcyclechangeerror.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/oneitemneededinmodifyerror.json": {
       "hash": "7702c56093ef3c23e92ac6a652b5fce33c75e3224e434c2658b537ac3e4e33f4",
-      "last_checked": "2026-09-22T07:39:49.410342",
+      "last_checked": "2026-09-25T07:38:09.346640",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39e2-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/oneitemneededinmodifyerror.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/operationnotallowederror.json": {
       "hash": "75c4bb48e4355eb0b3771470097f1c7af14bcafd7154fe80fbfc4346dfe2f3ce",
-      "last_checked": "2026-09-22T07:39:49.517255",
+      "last_checked": "2026-09-25T07:38:09.484717",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3996-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/operationnotallowederror.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/partialsimulaterefunddeclineerror.json": {
       "hash": "bd68e3dfd5e865aa28d86d1ff4ff058a92d55a3d0e7f761cbbb6f4ea8836228b",
-      "last_checked": "2026-09-22T07:39:49.635661",
+      "last_checked": "2026-09-25T07:38:09.611985",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3ad3-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/partialsimulaterefunddeclineerror.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/pendingchangesmismatcherror.json": {
       "hash": "c34c18a209faedd8844c31c7b204ca2c4e4965a8bd3f5383c1856a45711e2d6a",
-      "last_checked": "2026-09-22T07:39:49.759777",
+      "last_checked": "2026-09-25T07:38:09.752204",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a80-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/pendingchangesmismatcherror.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/pendingrefunderror.json": {
       "hash": "b49ddf57c7a3e9444c221a6248ec4c8a266660cb2b3213d83c09cf1ddf32b7ad",
-      "last_checked": "2026-09-22T07:39:49.886702",
+      "last_checked": "2026-09-25T07:38:09.869799",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39af-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/pendingrefunderror.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/periodchangeeffectiveconflicterror.json": {
       "hash": "d5edf2f9caf888677d0b75e4fdee8eef12750a982d99113e7f08e496bfca895d",
-      "last_checked": "2026-09-22T07:39:50.016611",
+      "last_checked": "2026-09-25T07:38:10.009458",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a48-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/periodchangeeffectiveconflicterror.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/periodchangeimmediatewitheffectiveatnextbillingcycleerror.json": {
       "hash": "aa929f775c4891f1f54098bf14e94c8a89d0666c155b2be9402db61751f516b2",
-      "last_checked": "2026-09-22T07:39:50.133747",
+      "last_checked": "2026-09-25T07:38:10.138587",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3b56-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/periodchangeimmediatewitheffectiveatnextbillingcycleerror.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/periodcountnotpositiveerror.json": {
       "hash": "a2f73e985aeb8bce8ec2821b65014c34a0fda925805b5c3d174591129ed764ac",
-      "last_checked": "2026-09-22T07:39:50.258700",
+      "last_checked": "2026-09-25T07:38:10.280051",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39c8-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/periodcountnotpositiveerror.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/periodresetwithretainbillingcycleerror.json": {
       "hash": "1c0c2b0bc1c9acb2c468a28a08c57a0a34e17284562dcbb334ee645072fd91f6",
-      "last_checked": "2026-09-22T07:39:50.410586",
+      "last_checked": "2026-09-25T07:38:10.401319",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a64-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/periodresetwithretainbillingcycleerror.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/pricechangenotsupportedthroughmodifyitemserror.json": {
       "hash": "a882ec0ca0816b12253099e79b82670d4a152f280a4aa13708e0248f67e35bbf",
-      "last_checked": "2026-09-22T07:39:50.666850",
+      "last_checked": "2026-09-25T07:38:10.668888",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3adf-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/pricechangenotsupportedthroughmodifyitemserror.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/productalreadyexistserror.json": {
       "hash": "c98ef8b89fd4e648e0419eed8049cd655a1d142453f50f04ea15c8895633b594",
-      "last_checked": "2026-09-22T07:39:50.780180",
+      "last_checked": "2026-09-25T07:38:10.783700",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39a5-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/productalreadyexistserror.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/productnoteligibleerror.json": {
       "hash": "94b1f8fbf3cd1ba28e18597f804cb6999c65d9429bb4e54d8f6ef742f00ad038",
-      "last_checked": "2026-09-22T07:39:50.915276",
+      "last_checked": "2026-09-25T07:38:10.923553",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a03-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/productnoteligibleerror.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/productnotfounderror.json": {
       "hash": "68e7339435c914dc858eb2186d8cbcd3c12a8fb2dd819ed74dd2e60b6eeaa564",
-      "last_checked": "2026-09-22T07:39:51.050419",
+      "last_checked": "2026-09-25T07:38:11.053459",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39b7-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/productnotfounderror.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/productnotownederror.json": {
       "hash": "98edcddab1c98e573792a38f1f2fbbdf0c9619d03a4fe7e65f8765e44cd83fbb",
-      "last_checked": "2026-09-22T07:39:51.162160",
+      "last_checked": "2026-09-25T07:38:11.194192",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"396b-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/productnotownederror.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/proratedonlylatesttransactionerror.json": {
       "hash": "562cb808cde29d05915a31c6b626504ea7c1f57defd7005356179571de5e66be",
-      "last_checked": "2026-09-22T07:39:51.283795",
+      "last_checked": "2026-09-25T07:38:11.318745",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3aad-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/proratedonlylatesttransactionerror.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/ratelimitexceedederror.json": {
       "hash": "d0d46b07f97a2895158c711c2ecbd7db7acabc976fb0d5c4fea6eceaa67e8db3",
-      "last_checked": "2026-09-22T07:39:51.411316",
+      "last_checked": "2026-09-25T07:38:11.447993",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3bc8-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/ratelimitexceedederror.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/refundamountwithoutcustomerror.json": {
       "hash": "82e8442600fa39d3ede18e016ae0c2d7f2db2cefa5e741371dec8ee9a17ed36a",
-      "last_checked": "2026-09-22T07:39:51.553700",
+      "last_checked": "2026-09-25T07:38:11.583365",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a6b-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/refundamountwithoutcustomerror.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/removalallnotallowederror.json": {
       "hash": "1dd7d1e7b826f41aa4a977322f8f808131545f55541cc36f6bd9326c76a6742a",
-      "last_checked": "2026-09-22T07:39:51.688890",
+      "last_checked": "2026-09-25T07:38:11.707222",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a3c-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/removalallnotallowederror.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/removeallitemsnotallowederror.json": {
       "hash": "8c355b2630edd21535ae35f68e8e24d5da7624315496e5076fa4f194a1e03159",
-      "last_checked": "2026-09-22T07:39:51.820098",
+      "last_checked": "2026-09-25T07:38:11.834773",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a11-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/removeallitemsnotallowederror.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/removeitemnotfounderror.json": {
       "hash": "e123e20f171484236c277ac148e7f5da71b2d9fb2c041dccec5ce8d35a32be09",
-      "last_checked": "2026-09-22T07:39:51.943393",
+      "last_checked": "2026-09-25T07:38:11.967008",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39ae-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/removeitemnotfounderror.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/removeitemswithoutaddorchangeitemserror.json": {
       "hash": "ed37d59670553caace6a246e2427f9134d35bb06e116b0cbd32d11b1fb2d51d1",
-      "last_checked": "2026-09-22T07:39:52.058903",
+      "last_checked": "2026-09-25T07:38:12.118591",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a80-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/removeitemswithoutaddorchangeitemserror.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/repeatedrequestreferenceiderror.json": {
       "hash": "82505b722d277765bbbfe98847f371830d70ca353978f561ee08d03248c4f17f",
-      "last_checked": "2026-09-22T07:39:52.200204",
+      "last_checked": "2026-09-25T07:38:12.255296",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39f9-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/repeatedrequestreferenceiderror.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/revokeoninactivesubscriptionerror.json": {
       "hash": "2e3b2113b678e563f948234e36abc02467a4a95f0823205a42edd34ac0d87017",
-      "last_checked": "2026-09-22T07:39:52.348504",
+      "last_checked": "2026-09-25T07:38:12.386797",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a76-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/revokeoninactivesubscriptionerror.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/simulaterefunddeclineonlyinsandboxerror.json": {
       "hash": "927eb9c7cbb4e94a701492b3d2e60020173d19a71bd6a01e83112e6d319ff76b",
-      "last_checked": "2026-09-22T07:39:52.485926",
+      "last_checked": "2026-09-25T07:38:12.505514",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3ad6-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/simulaterefunddeclineonlyinsandboxerror.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/skulengthexceedederror.json": {
       "hash": "ff03f2255d8a20622a94c61d9d23a8baa7d1261d3313aba9fdd46c662b13bfbf",
-      "last_checked": "2026-09-22T07:39:52.640515",
+      "last_checked": "2026-09-25T07:38:12.667148",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"398c-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/skulengthexceedederror.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/storefrontchangeerror.json": {
       "hash": "4361eb6a83a002561dc455579cceaac31c767990d262592afc17fdf827a9f50f",
-      "last_checked": "2026-09-22T07:39:52.749363",
+      "last_checked": "2026-09-25T07:38:12.795464",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39c9-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/storefrontchangeerror.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionalreadyactiveerror.json": {
       "hash": "b977a393f4c0b11a2cd599251a416d214fb2dcf44b5e5130f93c44ce0dceba43",
-      "last_checked": "2026-09-22T07:39:52.884716",
+      "last_checked": "2026-09-25T07:38:12.929215",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a1e-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionalreadyactiveerror.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionalreadyexistserror.json": {
       "hash": "8b6311a53a5cd431ff94ce349ebfc24a273eaee1f281852cbb394eec92f81a3e",
-      "last_checked": "2026-09-22T07:39:53.018245",
+      "last_checked": "2026-09-25T07:38:13.071381",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39e8-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionalreadyexistserror.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionalreadymigratederror.json": {
       "hash": "8933139d123a96f5c353463a96b0470d7dca18b266ad01d3bdab427ff825a2e8",
-      "last_checked": "2026-09-22T07:39:53.161339",
+      "last_checked": "2026-09-25T07:38:13.213237",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a67-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionalreadymigratederror.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptiondoesnotexisterror.json": {
       "hash": "dfb01ce194ff1b03fbd401e7b0a9f98534826059a472b92c4d25724f4ae0d139",
-      "last_checked": "2026-09-22T07:39:53.274848",
+      "last_checked": "2026-09-25T07:38:13.345476",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39da-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptiondoesnotexisterror.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/subscriptionnoteligibleerror.json": {
       "hash": "082e40c30400c3cc7abb9abfeb3b879d065ac84153391909065d102fcd1dcb0b",
-      "last_checked": "2026-09-22T07:39:53.404455",
+      "last_checked": "2026-09-25T07:38:13.485020",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39e8-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/subscriptionnoteligibleerror.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/transactionidnotfounderror.json": {
       "hash": "2911e7574fdecea1337a373132612d234753baaaa3bc800810bb2036c7344eb6",
-      "last_checked": "2026-09-22T07:39:53.522197",
+      "last_checked": "2026-09-25T07:38:13.616301",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"39ad-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/transactionidnotfounderror.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/transactionnotrefundableerror.json": {
       "hash": "165b15fcda40509f70c2d4c7c73475f7ef8d7a327b1c920eb35c79bccfc05740",
-      "last_checked": "2026-09-22T07:39:53.662907",
+      "last_checked": "2026-09-25T07:38:13.781711",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3a3c-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/transactionnotrefundableerror.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/transactioncannotberefundedcontactsupporterror.json": {
       "hash": "d213ac8545653a2c4d765963ec2b2bb39a502df7e2dd65f6e1dbb1690d13cbbb",
-      "last_checked": "2026-09-22T07:39:53.777531",
+      "last_checked": "2026-09-25T07:38:13.918484",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3cf8-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/transactioncannotberefundedcontactsupporterror.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/unexpectedversionerror.json": {
       "hash": "d030053900d3d6780b914d12f9463a988b396dd53079d795e1364201a5f9c24e",
-      "last_checked": "2026-09-22T07:39:54.076743",
+      "last_checked": "2026-09-25T07:38:14.189733",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3980-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/unexpectedversionerror.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/setting-up-generic-product-identifiers.json": {
       "hash": "c3e484dc0dd77701240fb5a524efaad6b5626e970b5a474657dfe5adacfaca41",
-      "last_checked": "2026-09-22T07:39:28.953912",
+      "last_checked": "2026-09-25T07:37:47.628292",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"4b11-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/setting-up-generic-product-identifiers.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/creating-skus-for-the-mini-app-partner-program.json": {
       "hash": "5eaf92be2c9d8ed2d7d20df896f153a754988b1db0430f75a02ff7b83a7534c1",
-      "last_checked": "2026-09-22T07:39:29.192697",
+      "last_checked": "2026-09-25T07:37:47.937291",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3738-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/creating-skus-for-the-mini-app-partner-program.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/dependentsku.json": {
       "hash": "a030396d82e89006843ade563578d6c4b9eb372c33f0f53b40266779bd835750",
-      "last_checked": "2026-09-22T07:39:35.516099",
+      "last_checked": "2026-09-25T07:37:54.443517",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"37ee-65b8a2da7bfb8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/dependentsku.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/acapriceincreaseisnotcurrentlysupportedinindiaerror.json": {
       "hash": "44c3b625547c2a41211aea4317c02ee73ebea02b3dcec0d22076cb00bf05e864",
-      "last_checked": "2026-09-22T07:39:37.568893",
+      "last_checked": "2026-09-25T07:37:56.475879",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3cc5-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/acapriceincreaseisnotcurrentlysupportedinindiaerror.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/dependentskuscannotbechainederror.json": {
       "hash": "fca60e5f453c8ccc07d2a0593b4fa3e5b53d48732cf3377bd36e06dcaf30cd17",
-      "last_checked": "2026-09-22T07:39:38.440539",
+      "last_checked": "2026-09-25T07:37:57.383802",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3c48-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/dependentskuscannotbechainederror.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/dependentskuscannotbesharederror.json": {
       "hash": "d711075c9b8416312b390b2c1a7e8469d0ace6d0f4f4b32ff9af1a882e8da180",
-      "last_checked": "2026-09-22T07:39:38.584024",
+      "last_checked": "2026-09-25T07:37:57.459522",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3c57-65b8a2da2a782-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/dependentskuscannotbesharederror.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidpriceforchangeiteminpriceincreaseerror.json": {
       "hash": "1675fbc798afefa9c21d66b52005e1cf1083979885524aa94281f4f6c1486e61",
-      "last_checked": "2026-09-22T07:39:41.455666",
+      "last_checked": "2026-09-25T07:38:00.546805",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3d85-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidpriceforchangeiteminpriceincreaseerror.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidskuprovidedmustbecurrentskusettorenewerror.json": {
       "hash": "5957725345fd539559a4a974984f4ed2b7a2d8e6155c2cb7cd312fd0985d8002",
-      "last_checked": "2026-09-22T07:39:43.221307",
+      "last_checked": "2026-09-25T07:38:02.545226",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3d98-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidskuprovidedmustbecurrentskusettorenewerror.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/itemcannotbespecifiedmultipletimeserror.json": {
       "hash": "1947328574e564665db80129e547f2a0328d0981f94bcadd47e3a604342765dd",
-      "last_checked": "2026-09-22T07:39:43.851750",
+      "last_checked": "2026-09-25T07:38:03.338199",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3d08-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/itemcannotbespecifiedmultipletimeserror.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/pricechangecannotbeissuedwhenalreadycommunicatederror.json": {
       "hash": "5bc84cbb7f7f9528a409f6e3b90a0c162188763972951105f5fb096fd0894454",
-      "last_checked": "2026-09-22T07:39:50.548886",
+      "last_checked": "2026-09-25T07:38:10.522954",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3de4-65b8a2da0b094-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/pricechangecannotbeissuedwhenalreadycommunicatederror.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/unauthorizederror.json": {
       "hash": "2165dc07ed5cb6435c46bdbd102355578efd0ef69a6e0e1e3df864b2b0f07320",
-      "last_checked": "2026-09-22T07:39:53.958744",
+      "last_checked": "2026-09-25T07:38:14.049178",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"398b-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/unauthorizederror.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/freetrialoffermustuseperiodcountofoneerror.json": {
       "hash": "f4a1d84a843bacc30e1073ed881ae9056452c195e354292a687a5a37d82fc157",
-      "last_checked": "2026-09-22T07:39:39.046509",
+      "last_checked": "2026-09-25T07:37:57.963816",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3cbf-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/freetrialoffermustuseperiodcountofoneerror.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/invalidproratedpriceforchangeitemwitheffectivelatererror.json": {
       "hash": "87639d6496560a7b72633f37eafd892a18a7ff945861969d40b2948fc122400b",
-      "last_checked": "2026-09-22T07:39:41.976875",
+      "last_checked": "2026-09-25T07:38:01.201373",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3e10-65b8a2da4d200-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/invalidproratedpriceforchangeitemwitheffectivelatererror.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/advancedcommerceapi/migrationnotallowedwhenpriceincreasecommunicatederror.json": {
       "hash": "be67b1f6412452507a617c39653146bc2c3f882409ebed0b74a4fdc48c393337",
-      "last_checked": "2026-09-22T07:39:44.363706",
+      "last_checked": "2026-09-25T07:38:03.858366",
       "status": "unchanged",
-      "session_id": "2026-09-22T07:39:27.810258",
+      "session_id": "2026-09-25T07:37:46.545599",
       "etag": "\"3df3-65b8a2da6f2f8-df\"",
       "file_path": "documentation/AdvancedCommerceAPI/migrationnotallowedwhenpriceincreasecommunicatederror.md"
     },

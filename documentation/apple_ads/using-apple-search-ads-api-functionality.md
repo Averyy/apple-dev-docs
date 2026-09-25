@@ -6,6 +6,8 @@ Call endpoints using CRUD methods.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 The Apple Ads API uses a REST data model, and you use CRUD (create, read, update, delete) functions to call endpoint resources.
 
 ![Apple Ads API call structure. This image is an example of an API call, including the domain, path, and resource. In some cases, the call may also incliude a query parameter.](/images/com.apple.appleads/media-3697454@2x.png)

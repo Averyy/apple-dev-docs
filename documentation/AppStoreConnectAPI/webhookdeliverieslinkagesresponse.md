@@ -52,7 +52,7 @@ object WebhookDeliveriesLinkagesResponse
 - [object WebhooksResponse](webhooksresponse.md)
   The response body for endpoints that list webhooks.
 - [type WebhookEventType](webhookeventtype.md)
-  A string that represents the the event types for a webhook notification.
+  A string that represents the event types for a webhook notification.
 - [object AppWebhooksLinkagesResponse](appwebhookslinkagesresponse.md)
 
 

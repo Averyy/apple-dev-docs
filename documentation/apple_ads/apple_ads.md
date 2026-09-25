@@ -3,14 +3,12 @@
 **Framework**: Apple Ads  
 **Kind**: module
 
+Drive app discovery by creating and managing campaigns with the Apple Ads Campaign Management API.
+
 **Availability**:
 - Apple Ads 2.0+
 
 #### Overview
-
-> ❗ **Important**: The [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) supersedes the Apple Ads Campaign Management API, which will be sunset on January 26, 2027.
-
-Drive app discovery by creating and managing campaigns with the Apple Ads Campaign Management API.
 
 Apple Ads is an efficient and easy way to help people discover your app when they search in the App Store. With Apple Ads Campaign Management API 5, you can build [`Campaigns`](campaigns.md) with budgets, and create ad groups that include keywords, audience refinement criteria, and scheduling.
 
@@ -36,9 +34,7 @@ You can implement your own keyword-bidding strategy in ad groups or [`Build a Ca
 - [Campaigns](campaigns.md)
   Create and manage Apple Ads campaigns.
 - [Budget Orders](budget-orders.md)
-  Manage your budgets.
 - [Ad Groups](ad-groups.md)
-  Create and manage ad groups.
 - [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)
   Apply relevant words or phrases that make your campaigns findable.
 - [Search Geolocations](search-geolocations.md)

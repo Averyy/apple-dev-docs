@@ -357,6 +357,8 @@ The performance of some collection operations depends on the type of index that 
 
 ## See Also
 
+- [protocol IteratorProtocol](iteratorprotocol.md)
+  A type that supplies the values of a sequence one at a time.
 - [protocol Sequence](sequence.md)
   A type that provides sequential, iterated access to its elements.
 

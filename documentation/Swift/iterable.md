@@ -47,6 +47,12 @@ protocol Iterable<Element, Failure> : ~Copyable, ~Escapable
 - [Span](span.md)
 - [UniqueArray](uniquearray.md)
 
+## See Also
+
+- [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
+  A type that provides borrowed access to the values of a borrowing sequence.
+- [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
+
 
 ---
 

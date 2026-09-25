@@ -2,6 +2,10 @@
 
 **Framework**: Apple Ads
 
+#### Overview
+
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 Manage your budgets.
 
 #### Overview
@@ -46,7 +50,6 @@ To confirm your payment model, call [`Get User ACL`](get-user-acl.md) and check 
 - [Campaigns](campaigns.md)
   Create and manage Apple Ads campaigns.
 - [Ad Groups](ad-groups.md)
-  Create and manage ad groups.
 - [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)
   Apply relevant words or phrases that make your campaigns findable.
 - [Search Geolocations](search-geolocations.md)

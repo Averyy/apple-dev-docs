@@ -7,6 +7,8 @@ Write generic code that works with any collection, or build your own collection 
 ## Topics
 
 ### First Steps
+- [protocol IteratorProtocol](iteratorprotocol.md)
+  A type that supplies the values of a sequence one at a time.
 - [protocol Sequence](sequence.md)
   A type that provides sequential, iterated access to its elements.
 - [protocol Collection](collection.md)
@@ -21,9 +23,9 @@ Write generic code that works with any collection, or build your own collection 
   A collection that supports subscript assignment.
 - [protocol RangeReplaceableCollection](rangereplaceablecollection.md)
   A collection that supports replacement of an arbitrary subrange of elements with the elements of another collection.
-### Manual Iteration
-- [protocol IteratorProtocol](iteratorprotocol.md)
-  A type that supplies the values of a sequence one at a time.
+### Borrowing Iteration
+- [protocol Iterable](iterable.md)
+  A type that provides sequential, borrowing access to its elements.
 - [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
   A type that provides borrowed access to the values of a borrowing sequence.
 - [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)

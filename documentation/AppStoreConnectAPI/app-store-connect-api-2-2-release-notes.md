@@ -16,10 +16,12 @@ App Store Connect API version 2.2 provides resources that enable you to automate
 
 ##### Deprecations
 
-- The [`List all in-app purchases for an app v1`](get-v1-apps-_id_-inapppurchases.md) endpoint is now deprecated and replaced with the [`List all in-app purchases for an app`](get-v1-apps-_id_-inapppurchasesv2.md) endpoint.
+- The [`List all In-App Purchases for an app v1`](get-v1-apps-_id_-inapppurchases.md) endpoint is now deprecated and replaced with the [`List all In-App Purchases for an app`](get-v1-apps-_id_-inapppurchasesv2.md) endpoint.
 
 ## See Also
 
+- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
@@ -47,8 +49,6 @@ App Store Connect API version 2.2 provides resources that enable you to automate
 - [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

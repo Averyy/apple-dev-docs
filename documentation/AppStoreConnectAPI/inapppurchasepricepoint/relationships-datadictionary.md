@@ -29,7 +29,7 @@ object InAppPurchasePricePoint.Relationships
 ## See Also
 
 - [object InAppPurchasePricePoint.Attributes](inapppurchasepricepoint/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase price point resource.
+  Attributes that describe an In-App Purchase price point resource.
 
 
 ---

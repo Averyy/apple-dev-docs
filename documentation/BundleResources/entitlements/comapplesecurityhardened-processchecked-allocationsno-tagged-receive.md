@@ -33,6 +33,8 @@ For more information, see [`Enabling enhanced security for your app`](https://de
   A Boolean value that indicates whether to log memory-tagging faults as a simulated crash, instead of terminating the process.
 - [com.apple.security.hardened-process.checked-allocations.enable-pure-data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
   A Boolean value that indicates whether to tag memory that contains only data.
+- [Check for Overflow of Pointer Arithmetic](entitlements/com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow.md)
+  A Boolean value that enables checking pointers for arithmetic overflow.
 
 
 ---

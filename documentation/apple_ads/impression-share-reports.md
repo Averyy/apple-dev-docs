@@ -6,6 +6,8 @@ Obtain metrics with impression share insights.
 
 #### Overview
 
+> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+
 Impression share reports provide insights into opportunities to scale keywords and optimize maximum CPT bids and budgets for your search results campaigns. The reports also show you how your app ranks in terms of impression share compared to other apps in the same countries and regions.
 
 Use the [`Impression Share Report`](impression-share-report.md) endpoint to obtain a report `ID` to use with [`Get a Single Impression Share Report`](get-a-single-impression-share-report.md), or use [`Get All Impression Share Reports`](get-all-impression-share-reports.md) without a report `ID`.

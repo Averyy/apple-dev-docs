@@ -148,6 +148,8 @@ To enable Game Center, begin by calling [`Enable game center for an app`](post-v
 
 - [Game Center groups](game-center-groups.md)
   Manage groups between your apps.
+- [Game Center blocked players](game-center-blocked-players.md)
+  Block and unblock the Game Center players who can play your game.
 
 
 ---

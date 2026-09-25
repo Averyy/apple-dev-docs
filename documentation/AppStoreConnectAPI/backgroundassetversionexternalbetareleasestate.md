@@ -14,6 +14,10 @@ A string value identifying the current state of a background asset version’s e
 string BackgroundAssetVersionExternalBetaReleaseState
 ```
 
+## Mentions
+
+- [Understanding webhook events](webhook-events.md)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

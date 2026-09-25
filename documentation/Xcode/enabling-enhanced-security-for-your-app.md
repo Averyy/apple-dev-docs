@@ -6,17 +6,17 @@ Detect out-of-bounds memory access, use of freed memory, and other potential vul
 
 #### Overview
 
-People’s devices can contain a large amount of sensitive data that an attacker might want to use for malicious purposes. If your app contains any security vulnerabilities, an attacker may exploit the vulnerabilities to access or modify the data in your app, extension, App Clip, or device driver.
+People’s devices can contain a large amount of sensitive data that an attacker might want to use for malicious purposes. If your app contains any security vulnerabilities, an attacker might exploit the vulnerabilities to access or modify the data in your app, extension, or device driver.
 
 Adopt the Enhanced Security capability in your Xcode project to enable a collection of build settings and entitlements designed to mitigate certain common vulnerabilities in your app. Review the behavior of your app with these settings enabled, and fix any problems that Xcode and the system report.
 
 > ❗ **Important**:  The Enhanced Security capability enables security checks that can impact the performance and stability of an app that isn’t designed and built with security in mind. Review your app’s threat model, and only adopt the Enhanced Security capability if the protections it enables align with your app’s security goals. Test your app thoroughly to ensure that you address all situations in which Enhanced Security mitigations could lead to your app crashing.
 
-Enhanced Security compiler settings and runtime checks are available for apps and extensions built for iOS, iPadOS, macOS, and visionOS; App Clips in iOS; and DriverKit extensions in iPadOS and macOS. Additionally, you can create Enhanced Security helper extensions on iOS, iPadOS, and macOS to which the system provides further protections; for more information, see [`Creating enhanced security helper extensions`](creating-enhanced-security-helper-extensions.md).
+Enhanced Security compiler settings and runtime checks are available for apps and extensions built for iOS, iPadOS, macOS, watchOS, and visionOS; and DriverKit extensions in iPadOS and macOS. Additionally, you can create Enhanced Security helper extensions on iOS, iPadOS, macOS, and watchOS to which the system provides further protections; for more information, see [`Creating enhanced security helper extensions`](creating-enhanced-security-helper-extensions.md).
 
 ##### Adopt the Enhanced Security Capability
 
-Navigate to the Signing and Capabilities editor for your Xcode target, and click the Add Capability button. From the list of capabilities, select Enhanced Security. After you add the Enhanced Security capability to your target, use the checkboxes in the Enhanced Security capability of the Signing and Capabilities editor to adopt specific hardening features. Additionally, click Enable Build Settings to add security-related build settings to all targets in your project, which turns on certain hardening features.
+Navigate to the Signing and Capabilities editor for your Xcode target, and click the Add Capability button. From the list of capabilities, select Enhanced Security. After you add the Enhanced Security capability to your target, use the checkboxes in the Enhanced Security capability of the Signing and Capabilities editor to adopt specific hardening features. Additionally, select Enable Enhanced Security for All Targets in your project, which turns on certain hardening features including pointer authentication. For more information, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication).
 
 The sections below describe the individual entitlements and build settings that comprise Enhanced Security, and the steps you can take to adopt the hardening features in your code. Additionally, the sections describe how you can turn off any individual hardening setting, in case you need to do so while you prepare your code to support the additional protections.
 
@@ -24,15 +24,13 @@ The sections below describe the individual entitlements and build settings that 
 
 ##### Prepare Your App for Pointer Authentication
 
-The Enhanced Security capability includes additional runtime platform restrictions, which Xcode enables by default for your app when you adopt the capability by setting the `ENABLE_POINTER_AUTHENTICATION` build setting to `Yes`. With these additional runtime platform restrictions enabled, Xcode builds your app for the `arm64e` architecture and enables *pointer authentication*.
+The Enhanced Security capability includes additional runtime platform restrictions, which Xcode enables by default for your app. When you adopt the capability by clicking the Enable Enhanced Security for All Targets checkbox, Xcode enables the `ENABLE_POINTER_AUTHENTICATION` build setting. With these additional runtime platform restrictions enabled, Xcode builds your app for the `arm64e` architecture and enables *pointer authentication*, where the system generates signature metadata for pointers that your app creates by allocating memory or constructing C++ objects.
 
-When you enable pointer authentication, the system generates signature metadata for pointers that your app creates by allocating memory or constructing C++ objects. Then the system validates that the signatures are unchanged when your app accesses the memory addressed by those pointers. If the signature for a pointer isn’t valid, the system encounters an exception and crashes your app. Doing so helps to protect against an attacker overwriting memory in your app to compromise the app’s control flow.
+When you enable pointer authentication, the system validates that the signatures are unchanged when your app accesses the memory addressed by those pointers. If the signature for a pointer isn’t valid, the system encounters an exception and crashes your app. Doing so helps to protect against an attacker overwriting memory in your app to compromise the app’s control flow.
 
 To adopt pointer authentication, use the `__ptrauth` type qualifier to instruct the compiler to generate pointer authentication protection for variables in your code that store data and function pointers.
 
 When a variable uses pointer authentication, the system throws an error if you overwrite its value with a raw pointer in your code, or copy its value to another variable that uses a different pointer authentication schema. If your app does either of these, the system encounters an exception and crashes your app. Instead, sign the pointer before storing it, re-signing it for a different use if necessary. For more information, see [`Improving control flow integrity with pointer authentication`](https://developer.apple.com/documentation/apple-silicon/improving-control-flow-integrity-with-pointer-authentication).
-
-If you need to turn off pointer authentication for your target, uncheck the Authenticate Pointers checkbox in the Signing and Capabilities editor, or set the `ENABLE_POINTER_AUTHENTICATION` build setting to `No`.
 
 ##### Adopt Typed Allocator Support
 
@@ -59,6 +57,20 @@ You can also enable the [`com.apple.security.hardened-process.checked-allocation
 When you enable the Enhanced Security capability for your target, Xcode sets the `CLANG_ENABLE_STACK_ZERO_INIT` build setting to `Yes`. This build setting configures the compiler to initialize automatic variables in your code with zeroes. Doing so helps to protect against particular types of use-after-free vulnerability, because your app zeroes out previous values in stack memory before it reuses them for other variables.
 
 If you need to turn off zero-initialization of stack variables for your target, set the `CLANG_ENABLE_STACK_ZERO_INIT` build setting to `No`.
+
+##### Adopt Pointer Arithmetic Overflow Checking
+
+Your app can take advantage of an additional level of memory protection by adopting the [`Check for Overflow of Pointer Arithmetic`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow) entitlement that the `arm64e.x1` architecture slice supports. This is an additional level of pointer checking in addition to the memory integrity enforcement described above — adopting memory integrity enforcement is a prerequisite for adopting the Check for Overflow of Pointer Arithmetic entitlement. For more information, see [`Build settings reference`](build-settings-reference.md).
+
+To test your app with pointer-arithmetic overflow checking, you need to use specific hardware with arm64e.x1 support. For more information, see [`Improving control flow integrity with pointer authentication`](https://developer.apple.com/documentation/apple-silicon/improving-control-flow-integrity-with-pointer-authentication). Note that simulators cannot test this behavior.
+
+To adopt this capability:
+
+- Navigate to the Signing and Capabilities editor for your Xcode target.
+- Select Check for Overflow of Pointer Arithmetic under Memory Safety.
+- Click Enable Hardware-Checked Pointer Arithmetic Slice for All Targets in the Signing and Capabilities editor to enable this capability.
+
+> **Note**: The Xcode build system surfaces a build configuration warning if the `com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow` entitlement is present but a target dependency for the project doesn’t enable `HARDWARE_CHECKED_POINTER_ARITHMETIC_SLICE`.
 
 ##### Address Security Related Compiler Warnings
 

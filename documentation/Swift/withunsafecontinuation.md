@@ -62,6 +62,9 @@ Unlike the “checked” continuation variant, the `UnsafeContinuation` does not
   Invokes the passed in closure with a checked continuation for the current task.
 - [struct UnsafeContinuation](unsafecontinuation.md)
   A mechanism to interface between synchronous and asynchronous code, without correctness checking.
+- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
 
 
 ---

@@ -18,7 +18,7 @@ object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships
 
 ### Dictionaries
 - [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode](inapppurchaseoffercodeonetimeusecodecreaterequest/data-data.dictionary/relationships-data.dictionary/offercode-data.dictionary.md)
-  The request body you use to create an in-app purchase offer code one-time use code for a data relationships offer code.
+  The request body you use to create an In-App Purchase offer code one-time use code for a data relationships offer code.
 
 ## Properties
 
@@ -27,7 +27,7 @@ object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Attributes](inapppurchaseoffercodeonetimeusecodecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  The request body you use to create an in-app purchase offer code one-time use code create request.
+  The request body you use to create an In-App Purchase offer code one-time use code create request.
 
 
 ---

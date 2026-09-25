@@ -43,6 +43,8 @@ object GameCenterLeaderboardV2.Relationships.Versions
   The data that describes the Game Center group of the Game Center leaderboard v2.
 - [object GameCenterLeaderboardV2.Relationships.GameCenterLeaderboardSets](gamecenterleaderboardv2/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
   The data that describes the Game Center leaderboard sets of the Game Center leaderboard v2.
+- [object GameCenterLeaderboardV2.Relationships.GameCenterScoreModerations](gamecenterleaderboardv2/relationships-data.dictionary/gamecenterscoremoderations-data.dictionary.md)
+  The links to the score moderations related to the Game Center leaderboard v2.
 
 
 ---

@@ -14,6 +14,10 @@ An auto-renewable subscription product offered within an app, with configurable 
 object Subscription
 ```
 
+## Mentions
+
+- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+
 ## Topics
 
 ### Objects
@@ -55,9 +59,9 @@ object Subscription
 - [object SubscriptionOfferCode](subscriptionoffercode.md)
   A promotional code that gives customers a discounted or free subscription for a specified duration and eligibility group.
 - [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
-  The response body for endpoints that read or modify a promoted in-app purchase or subscription.
+  The response body for endpoints that read or modify a promoted In-App Purchase or subscription.
 - [object PromotedPurchase](promotedpurchase.md)
-  An in-app purchase or subscription configured to appear on the app’s App Store product page.
+  An In-App Purchase or subscription configured to appear on the app’s App Store product page.
 - [object SubscriptionPricePointsResponse](subscriptionpricepointsresponse.md)
   The response body for endpoints that list available price points for a subscription.
 - [object SubscriptionPricesResponse](subscriptionpricesresponse.md)

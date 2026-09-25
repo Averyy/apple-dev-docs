@@ -43,9 +43,9 @@ object AppBetaTestersLinkagesRequest
 - [object InAppPurchase](inapppurchase.md)
   A one-time purchasable item available in an app, such as a consumable, non-consumable, or non-renewing subscription.
 - [object InAppPurchaseResponse](inapppurchaseresponse.md)
-  The response body for endpoints that read a single in-app purchase.
+  The response body for endpoints that read a single In-App Purchase.
 - [object InAppPurchasesResponse](inapppurchasesresponse.md)
-  The response body for endpoints that list in-app purchases for an app.
+  The response body for endpoints that list In-App Purchases for an app.
 - [object AppPricePointV3](apppricepointv3.md)
   A specific price tier in App Store pricing, defining the customer price and developer proceeds across territories.
 - [object AppPricePointV3Response](apppricepointv3response.md)

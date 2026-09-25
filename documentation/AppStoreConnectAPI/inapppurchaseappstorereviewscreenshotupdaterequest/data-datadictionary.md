@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update an in-app purchase App Store review screenshot update request.
+The request body you use to update an In-App Purchase App Store review screenshot update request.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -18,7 +18,7 @@ object InAppPurchaseAppStoreReviewScreenshotUpdateRequest.Data
 
 ### Objects
 - [object InAppPurchaseAppStoreReviewScreenshotUpdateRequest.Data.Attributes](inapppurchaseappstorereviewscreenshotupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an in-app purchase App Store review screenshot update request resource.
+  Attributes that describe an In-App Purchase App Store review screenshot update request resource.
 
 ## Properties
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: typealias
 
-A string that represents the the event types for a webhook notification.
+A string that represents the event types for a webhook notification.
 
 **Availability**:
 - App Store Connect API 4.0+
