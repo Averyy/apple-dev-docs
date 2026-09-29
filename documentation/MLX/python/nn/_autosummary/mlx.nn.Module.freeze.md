@@ -45,13 +45,13 @@ model.apply_to_modules(lambda k, v: v.unfreeze() if k.endswith("attention") else
 
 Parameters:
 
-**recurse** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If True then freeze the parameters of the
+**recurse** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If True then freeze the parameters of the
 submodules as well. Default: `True`.
-**keys** ([str](https://docs.python.org/3/library/stdtypes.html#str)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*[*[str](https://docs.python.org/3/library/stdtypes.html#str)*]**, **optional*) – If provided then only these
+**keys** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*]**, **optional*) – If provided then only these
 parameters will be frozen otherwise all the parameters of a
 module. For instance freeze all biases by calling
 `module.freeze(keys="bias")`.
-**strict** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to `True` validate that the passed keys exist.
+**strict** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `True` validate that the passed keys exist.
 Default: `False`.
 
 Returns:

@@ -46,10 +46,10 @@ used for the height axis, the second `int` for the width axis.
 
 Parameters:
 
-**kernel_size** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*, *[int](https://docs.python.org/3/library/functions.html#int)*)*) – The size of the pooling window.
-**stride** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*, *[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – The stride of the pooling
+**kernel_size** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*, *[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The size of the pooling window.
+**stride** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*, *[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The stride of the pooling
 window. Default: `kernel_size`.
-**padding** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*, *[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – How much negative infinity
+**padding** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*, *[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – How much negative infinity
 padding to apply to the input. The padding is applied on both sides
 of the height and width axis. Default: `0`.
 

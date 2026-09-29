@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 
 # mlx.core.set_printoptions
 
-**set_printoptions(*precision: int = -1*) → [None](https://docs.python.org/3/library/constants.html#None)**
+**set_printoptions(*precision: int = -1*) → [None](https://docs.python.org/3/builtins/constants.html#None)**
 : Set global printing precision for array formatting.
 Example
 >>> print(x)  # Uses default precision
@@ -42,6 +42,6 @@ Example
 >>> print(x)  # Uses precision of 3 (again)
 
 Parameters:
-**precision** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of decimal places.
+**precision** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Number of decimal places.
 
 ** Contents

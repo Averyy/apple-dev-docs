@@ -29,6 +29,8 @@ The `supplyPlacement` field is **include-only**; setting `exclude` has no effect
 
 Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
 
+> **Note**: Omitting `supplyPlacement` here leaves the campaign’s current placement(s) unchanged; it doesn’t switch targeting to every placement. Unlike at create time, there’s no way to widen an existing single-placement `MAPS` campaign to target both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` via update. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for the create-time behavior.
+
 ## Properties
 
 - `include` ([string]): Placements to include in targeting. Omit to leave unchanged. Mutable.

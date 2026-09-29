@@ -1,4 +1,4 @@
 Completed scraping Messages!
-Total pages scraped: 0
-Pages skipped (unchanged): 154
+Total pages scraped: 1
+Pages skipped (unchanged): 153
 Pages failed: 0

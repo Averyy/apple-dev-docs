@@ -16,16 +16,14 @@ object CampaignTargetingUpdate
 
 #### Discussion
 
-The `CampaignTargetingUpdate` object is the update-time counterpart to [`CampaignTargeting`](campaigntargeting.md). The `supplySource`, `supplyPlacement`, and `countryOrRegion` fields are all optional and nullable. Only the fields you supply are changed, and any omitted field retains its current value. Each field uses a [`TargetingDataUpdate`](targetingdataupdate.md) object to express `include`/`exclude` changes for that dimension.
+The `CampaignTargetingUpdate` object is the update-time counterpart to [`CampaignTargeting`](campaigntargeting.md). `supplyPlacement` and `countryOrRegion` are optional and nullable; only the fields you supply are changed, and any omitted field retains its current value. `supplySource` is immutable after campaign creation: including it in an update request, even with its current unchanged value, is unsupported. Each updatable field uses a [`TargetingDataUpdate`](targetingdataupdate.md) object to express `include`/`exclude` changes for that dimension.
+
+> **Note**: For `supplyPlacement`, omitting the field leaves the current placement(s) unchanged rather than switching targeting to every placement. An Apple Maps campaign created with a single `MAPS` placement can’t be widened to target both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` via update. That requires creating a new campaign without `supplyPlacement` set. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md).
 
 ##### Example
 
 ```json
 {
-  "supplySource": {
-    "include": ["APPSTORE"],
-    "exclude": null
-  },
   "supplyPlacement": {
     "include": ["APPSTORE_SEARCH_RESULTS", "APPSTORE_TODAY_TAB"],
     "exclude": null
@@ -48,7 +46,7 @@ The `CampaignTargetingUpdate` object is the update-time counterpart to [`Campaig
 
 ## Properties
 
-- `supplySource` (CampaignTargetingUpdate.SupplySource): The supply source(s) where ads are eligible to appear. Omit to leave unchanged. See [`TargetingDataUpdate`](targetingdataupdate.md).
+- `supplySource` (CampaignTargetingUpdate.SupplySource): The supply source(s) where ads are eligible to appear. Fixed at creation. Don’t include this field in an update request, since doing so is unsupported regardless of the value sent.
 - `supplyPlacement` (CampaignTargetingUpdate.SupplyPlacement): The specific placements within a supply source. Omit to leave unchanged. See [`TargetingDataUpdate`](targetingdataupdate.md).
 - `countryOrRegion` (CampaignTargetingUpdate.CountryOrRegion): The countries or regions where the campaign serves ads. Omit to leave unchanged. See [`TargetingDataUpdate`](targetingdataupdate.md).
 

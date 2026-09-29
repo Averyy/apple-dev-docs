@@ -147,6 +147,8 @@ Create three keywords with different match types.
 
 - [Bulk Update Keywords](post-keywords-bulk-update.md)
   Updates multiple keywords in a single request.
+- [Bulk Delete Keywords](post-keywords-bulk-delete.md)
+  Soft-deletes multiple keywords in a single request.
 
 
 ---

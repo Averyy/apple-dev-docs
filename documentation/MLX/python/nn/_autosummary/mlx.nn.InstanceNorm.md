@@ -44,9 +44,9 @@ if `affine` is `True`.
 
 Parameters:
 
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The number of features of the input.
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A value added to the denominator for numerical stability. Default: `1e-5`.
-**affine** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Default: `False`.
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of features of the input.
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)) – A value added to the denominator for numerical stability. Default: `1e-5`.
+**affine** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Default: `False`.
 
 Shape:
 Input: \((N, ..., C)\) where \(C\) is equal to `dims`.

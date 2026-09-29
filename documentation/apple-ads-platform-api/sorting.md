@@ -32,7 +32,7 @@ Multiple `Sorting` objects can be included in the `sorting` array of a reporting
 ## Properties
 
 - `field` (string): The name of the field to sort on (for example, localSpend, impressions).
-- `order` (string): The sort direction for the specified field. Possible values: `ASC` (lowest to highest), `DESC` (highest to lowest).
+- `order` (string): The sort direction for the specified field, ascending (`ASC`) or descending (`DESC`).
 
 ## See Also
 

@@ -39,7 +39,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pa
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**pad_width** ([int](https://docs.python.org/3/library/functions.html#int)*, *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*, *[int](https://docs.python.org/3/library/functions.html#int)*) or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*, *[int](https://docs.python.org/3/library/functions.html#int)*)**)*) – Number of padded
+**pad_width** ([int](https://docs.python.org/3/builtins/functions.html#int)*, *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*, *[int](https://docs.python.org/3/builtins/functions.html#int)*) or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*, *[int](https://docs.python.org/3/builtins/functions.html#int)*)**)*) – Number of padded
 values to add to the edges of each axis:`((before_1, after_1),
 (before_2, after_2), ..., (before_N, after_N))`. If a single pair
 of integers is passed then `(before_i, after_i)` are all the same.

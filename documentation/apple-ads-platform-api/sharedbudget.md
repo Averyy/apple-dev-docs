@@ -67,7 +67,7 @@ The `systemStatus` field reflects whether the budget is currently usable. Common
 - `startTime` (date-time): The start date and time for this budget. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-06-07T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected. Mutable.
 - `endTime` (date-time): The end date and time for this budget. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Must be after `startTime`. Omit for an open-ended budget. Mutable.
 - `value` (Money): The budget amount as a Money object with amount and ISO 4217 currency code. See [`Money`](money.md). Mutable.
-- `adAccountIds` ([int64]): The ad account IDs this budget order applies to. Exactly one allowed at creation. Mutable.
+- `adAccountIds` ([int64]): The ad account IDs this budget order applies to. At least one ID is required. Mutable.
 - `orgId` (int64): The identifier of the organization that owns this budget order. Read-only.
 - `systemStatus` (SharedBudget.SystemStatus): Current system status of this budget order. See [`BudgetSystemStatus`](budgetsystemstatus.md). Read-only.
 - `systemStatusReasons` ([SharedBudget.SystemStatusReasons]): Status reasons applied based on system factors. Values: `CANCELED`, `CAMPAIGN_BUDGET_UNASSIGNED`, `DELETED_BY_USER`, `EXHAUSTED`, `PROCESSING`, `SCHEDULE_EXPIRED`, `SCHEDULE_PENDING`. Read-only.

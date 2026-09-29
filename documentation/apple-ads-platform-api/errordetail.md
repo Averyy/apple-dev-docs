@@ -23,7 +23,10 @@ The `ErrorDetail` provides field-level or request-level granularity for a specif
 ```json
 {
   "code": "FIELD_REQUIRED",
-  "message": "campaign.name is required and was not provided for AwayFinder campaign creation."
+  "message": "campaign.name is required and was not provided for AwayFinder campaign creation.",
+  "info": {
+    "field": "campaign.name"
+  }
 }
 ```
 
@@ -31,6 +34,7 @@ The `ErrorDetail` provides field-level or request-level granularity for a specif
 
 - `code` (string) *(required)*: A machine-readable code identifying the specific violation, such as `FIELD_REQUIRED` for a missing required field or `INVALID_VALUE` for a field that failed validation.
 - `message` (string): A human-readable description of this specific violation, such as which field was missing or invalid and why.
+- `info` (Info): Additional context that supplements `message`, such as the field name, the invalid value, or acceptable alternatives. Content varies by endpoint and error type. See [`Info`](info.md).
 
 ## See Also
 
@@ -38,6 +42,8 @@ The `ErrorDetail` provides field-level or request-level granularity for a specif
   The standard error envelope that the API returns when a request fails.
 - [object ErrorResponse](errorresponse.md)
   Certain endpoints return this envelope, which wraps an `Error` object, when a request fails.
+- [object Info](info.md)
+  Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 
 ---

@@ -40,7 +40,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 Parameters:
 
 **x** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**dst** ([int](https://docs.python.org/3/library/functions.html#int)) – Rank of the destination process in the group.
+**dst** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Rank of the destination process in the group.
 **group** ([Group](mlx.core.distributed.Group.html#mlx.core.distributed.Group)) – The group of processes that will participate in the
 send. If set to `None` the global group is used. Default:
 `None`.

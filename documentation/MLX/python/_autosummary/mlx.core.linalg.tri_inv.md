@@ -42,7 +42,7 @@ in the last two dimensions of `a`.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**upper** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether the array is upper or lower triangular. Defaults to `False`.
+**upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether the array is upper or lower triangular. Defaults to `False`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 

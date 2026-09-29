@@ -40,7 +40,7 @@ which CDF `exp(-exp(-x))`.
 
 Parameters:
 
-**shape** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The shape of the output.
+**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The shape of the output.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – The data type of the output.
 Default: `float32`.
 **key** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – A PRNG key. Default: `None`.

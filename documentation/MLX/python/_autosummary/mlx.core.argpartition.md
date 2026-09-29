@@ -41,12 +41,12 @@ is undefined.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**kth** ([int](https://docs.python.org/3/library/functions.html#int)) – Element index at the `kth` position in the output will
+**kth** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Element index at the `kth` position in the output will
 give the sorted position. All indices before the `kth` position
 will be of elements less or equal to the element at the `kth`
 index and all indices after will be of elements greater or equal
 to the element at the `kth` index.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or **None**, **optional*) – Optional axis to partition over.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None**, **optional*) – Optional axis to partition over.
 If `None`, this partitions over the flattened array.
 If unspecified, it defaults to `-1`.
 

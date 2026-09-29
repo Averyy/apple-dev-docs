@@ -45,15 +45,15 @@ w_{t+1} &= w_t - \alpha (\frac{m_{t+1}}{\sqrt{v_{t+1}} + \epsilon} + \lambda w_t
 
 Parameters:
 
-**learning_rate** ([float](https://docs.python.org/3/library/functions.html#float)* or **callable*) – The learning rate \(\alpha\).
-**betas** (*Tuple**[*[float](https://docs.python.org/3/library/functions.html#float)*, *[float](https://docs.python.org/3/library/functions.html#float)*]**, **optional*) – The coefficients
+**learning_rate** ([float](https://docs.python.org/3/builtins/functions.html#float)* or **callable*) – The learning rate \(\alpha\).
+**betas** (*Tuple**[*[float](https://docs.python.org/3/builtins/functions.html#float)*, *[float](https://docs.python.org/3/builtins/functions.html#float)*]**, **optional*) – The coefficients
 \((\beta_1, \beta_2)\) used for computing running averages of the
 gradient and its square. Default: `(0.9, 0.999)`
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the
 denominator to improve numerical stability. Default: `1e-8`
-**weight_decay** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The weight decay \(\lambda\).
+**weight_decay** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The weight decay \(\lambda\).
 Default: `0.01`.
-**bias_correction** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to `True`, bias correction
+**bias_correction** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `True`, bias correction
 is applied. Default: `False`
 
 Methods

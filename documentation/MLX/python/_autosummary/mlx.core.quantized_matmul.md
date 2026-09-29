@@ -46,16 +46,16 @@ Parameters:
 **scales** ([array](mlx.core.array.html#mlx.core.array)) – The scales to use per `group_size` elements of `w`
 **biases** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – The biases to use per `group_size`
 elements of `w`. Default: `None`.
-**transpose** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Defines whether to multiply with the
+**transpose** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Defines whether to multiply with the
 transposed `w` or not, namely whether we are performing
 `x @ w.T` or `x @ w`. Default: `True`.
-**group_size** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The size of the group in `w` that shares a
+**group_size** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The size of the group in `w` that shares a
 scale and bias. See supported values and defaults in the
 [table of quantization modes](mlx.core.quantize.html#quantize-modes). Default: `None`.
-**bits** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of bits occupied by each element of
+**bits** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of bits occupied by each element of
 `w` in the quantized array. See supported values and defaults in the
 [table of quantization modes](mlx.core.quantize.html#quantize-modes). Default: `None`.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – The quantization mode. Default: `"affine"`.
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – The quantization mode. Default: `"affine"`.
 
 Returns:
 The result of the multiplication of `x` with `w`.

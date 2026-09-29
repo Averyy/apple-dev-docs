@@ -54,7 +54,7 @@ Use `deviceClasses` to verify that your campaign’s device-class targeting is c
 - `primaryLanguage` (string): Primary language of the app (BCP-47 code, for example, `"en-US"`).
 - `primaryGenre` (string): The primary App Store genre category (for example, `">Mobile Software Applications>Music"`).
 - `secondaryGenre` (string): The secondary App Store genre category, if assigned.
-- `deviceClasses` ([string]): Device families supported by the app. Possible values: `IPHONE`, `IPAD`.
+- `deviceClasses` ([string]): Device families supported by the app.
 - `iconPictureUrl` (uri): URL of the app’s icon image.
 - `isPreorder` (boolean): Whether the app is currently available as a pre-order.
 - `availableStorefronts` ([string]): List of ISO 3166-1 alpha-2 country codes where the app is available.

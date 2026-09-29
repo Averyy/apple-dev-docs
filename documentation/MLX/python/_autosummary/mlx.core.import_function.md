@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.im
 
 # mlx.core.import_function
 
-**import_function(*file: str*, *return_metadata: bool = False*) → Callable | [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[Callable, [str](https://docs.python.org/3/library/stdtypes.html#str)]**
+**import_function(*file: str*, *return_metadata: bool = False*) → Callable | [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[Callable, [str](https://docs.python.org/3/builtins/stdtypes.html#str)]**
 : Import a function from a file.
 The imported function can be called either with `*args` and
 `**kwargs` or with a tuple of arrays and/or dictionary of string
@@ -47,8 +47,8 @@ versions of MLX may not be compatible with future versions.
 
 Parameters:
 
-**file** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The file path to import the function from.
-**return_metadata** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True` also return the
+**file** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The file path to import the function from.
+**return_metadata** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True` also return the
 metadata string saved with the function. Default: `False`.
 
 Returns:
@@ -57,7 +57,7 @@ tuple of the imported function and the metadata string is
 returned instead.
 
 Return type:
-*Callable* or [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)
+*Callable* or [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)
 
 Example
 >>> fn = mx.import_function("function.mlxfn")

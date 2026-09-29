@@ -42,6 +42,6 @@ Example
 >>> print(x)  # Back to default precision
 
 Parameters:
-**precision** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of decimal places. Use -1 for default
+**precision** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Number of decimal places. Use -1 for default
 
 ** Contents

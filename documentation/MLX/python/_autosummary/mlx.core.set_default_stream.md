@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 
 # mlx.core.set_default_stream
 
-**set_default_stream(*stream: Stream*) → [None](https://docs.python.org/3/library/constants.html#None)**
+**set_default_stream(*stream: Stream*) → [None](https://docs.python.org/3/builtins/constants.html#None)**
 : Set the default stream.
 This will make the given stream the default for the
 streams device. It will not change the default device.

@@ -39,8 +39,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sw
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis1** ([int](https://docs.python.org/3/library/functions.html#int)) – Specifies the first axis.
-**axis2** ([int](https://docs.python.org/3/library/functions.html#int)) – Specifies the second axis.
+**axis1** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Specifies the first axis.
+**axis2** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Specifies the second axis.
 
 Returns:
 The array with swapped axes.

@@ -54,9 +54,9 @@ Granularity is an optional time-series breakdown that applies to `granularMetric
 | Granularity | Constraint |
 | --- | --- |
 | `HOURLY` | Date range must span 7 days or less, and `start` must fall within the last 365 days. Ad-level and search term-level reports don’t support it. |
-| `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
-| `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
-| `MONTHLY` | End date must be at least 90 days in the past. |
+| `DAILY` | Date range must span 90 days or less. |
+| `WEEKLY` | Date range must span at least 14 days. |
+| `MONTHLY` | Date range must span at least 90 days. |
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there’s no `granularMetrics` breakdown to compute.
 

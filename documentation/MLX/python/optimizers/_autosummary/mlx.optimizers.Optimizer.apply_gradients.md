@@ -41,8 +41,8 @@ how [Optimizer.update()](mlx.optimizers.Optimizer.update.html#mlx.optimizers.Opt
 
 Parameters:
 
-**gradients** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A Python tree of gradients.
-**parameters** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A Python tree of parameters. It can be a
+**gradients** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)) – A Python tree of gradients.
+**parameters** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)) – A Python tree of parameters. It can be a
 superset of the gradients. In that case the returned python
 tree will be of the same structure as the gradients.
 

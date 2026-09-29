@@ -123,7 +123,7 @@ New to the API? Start with the workflow guides. [`Advertising Your App on the Ap
   Reference the response objects returned by product page endpoints.
 ### Bulk Operations
 - [Bulk Operations Endpoints](bulk-operations-endpoints.md)
-  Create and update keywords and negative keywords in bulk.
+  Create, update, and delete keywords and negative keywords in bulk through these endpoints.
 - [Bulk Data Objects](bulk-data-objects.md)
   Use these objects to build bulk keyword and negative keyword requests and read their responses.
 ### Budget Orders

@@ -46,13 +46,13 @@ modes and [Linear](../nn/_autosummary/mlx.nn.Linear.html#mlx.nn.Linear) layers.
 Parameters:
 
 **model** ([Module](../nn/module.html#mlx.nn.Module)) – The model whose leaf modules may be quantized.
-**group_size** (*Optional**[*[int](https://docs.python.org/3/library/functions.html#int)*]*) – The quantization group size (see
+**group_size** (*Optional**[*[int](https://docs.python.org/3/builtins/functions.html#int)*]*) – The quantization group size (see
 [mlx.core.quantize()](mlx.core.quantize.html#mlx.core.quantize)). Default: `None`.
-**bits** (*Optional**[*[int](https://docs.python.org/3/library/functions.html#int)*]*) – The number of bits per parameter (see
+**bits** (*Optional**[*[int](https://docs.python.org/3/builtins/functions.html#int)*]*) – The number of bits per parameter (see
 [mlx.core.quantize()](mlx.core.quantize.html#mlx.core.quantize)). Default: `None`.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The quantization method to use (see
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The quantization method to use (see
 [mlx.core.quantize()](mlx.core.quantize.html#mlx.core.quantize)). Default: `"affine"`.
-**quantize_input** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Whether to quantize activations. Default: `False`.
+**quantize_input** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to quantize activations. Default: `False`.
 **class_predicate** (*Optional**[**Callable**]*) – A callable which receives the
 [Module](../nn/module.html#mlx.nn.Module) path and [Module](../nn/module.html#mlx.nn.Module) itself and returns `True` or a
 dict of params for `to_quantized` if it should be quantized and

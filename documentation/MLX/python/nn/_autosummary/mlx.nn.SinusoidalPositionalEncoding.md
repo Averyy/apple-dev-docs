@@ -39,16 +39,16 @@ For more details see the paper [Attention Is All You Need](https://arxiv.org/abs
 
 Parameters:
 
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the resulting positional embeddings.
-**min_freq** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The minimum frequency expected. Default:
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the resulting positional embeddings.
+**min_freq** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The minimum frequency expected. Default:
 `0.0001`.
-**max_freq** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The maximum frequency expected. Default:
+**max_freq** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The maximum frequency expected. Default:
 `1`.
-**scale** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – A multiplicative scale for the embeddings.
+**scale** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – A multiplicative scale for the embeddings.
 Default: `sqrt(2/dims)`.
-**cos_first** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True` embed using `[cos(x); sin(x)]`
+**cos_first** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True` embed using `[cos(x); sin(x)]`
 instead of the reverse. Default: `False`.
-**full_turns** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True` multiply the frequencies with
+**full_turns** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True` multiply the frequencies with
 \(2\pi\). Default: `False`.
 
 Methods

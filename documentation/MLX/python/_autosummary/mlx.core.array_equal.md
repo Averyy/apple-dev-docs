@@ -43,7 +43,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
-**equal_nan** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If `True`, NaNs are considered equal.
+**equal_nan** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If `True`, NaNs are considered equal.
 Defaults to `False`.
 
 Returns:

@@ -45,7 +45,7 @@ Parameters:
 Default: `0`.
 **high** (*scalar** or *[array](mlx.core.array.html#mlx.core.array)*, **optional*) – Upper bound of the distribution.
 Default: `1`.
-**shape** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – Shape of the output. Default:`()`.
+**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Shape of the output. Default:`()`.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Type of the output. Default: `float32`.
 **key** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – A PRNG key. Default: `None`.
 

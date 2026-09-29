@@ -40,7 +40,7 @@ Training mode only applies to certain layers. For example
 identity in evaluation mode.
 
 Parameters:
-**mode** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Indicate if the model should be in training or
+**mode** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Indicate if the model should be in training or
 evaluation mode. Default: `True`.
 
 Returns:

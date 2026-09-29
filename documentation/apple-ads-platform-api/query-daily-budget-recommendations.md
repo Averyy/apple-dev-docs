@@ -107,6 +107,7 @@ POST /v1/recommendations/daily-budgets/query
    {
      "id": "rec-budget-001",
      "recommendationType": "DAILYCAP",
+     "adAccountId": 19522997,
      "promotedObjectId": "123456",
      "promotedObjectType": "APPSTORE_APP",
      "campaignId": 789012,
@@ -202,6 +203,7 @@ POST /v1/recommendations/daily-budgets/query
    {
      "id": "a1b2c3d4-e5f6-47a8-9b0c-d1e2f3a4b5c6",
      "recommendationType": "SDAILYCAP",
+     "adAccountId": 123456789,
      "promotedObjectId": "1234567890123456789",
      "promotedObjectType": "BUSINESS_BRAND",
      "campaignId": 900123456,
@@ -239,6 +241,7 @@ POST /v1/recommendations/daily-budgets/query
    {
      "id": "b2c3d4e5-f6a7-48b9-0c1d-e2f3a4b5c6d7",
      "recommendationType": "SDAILYCAP",
+     "adAccountId": 123456789,
      "promotedObjectId": "1234567890123456789",
      "promotedObjectType": "BUSINESS_BRAND",
      "campaignId": 900123457,

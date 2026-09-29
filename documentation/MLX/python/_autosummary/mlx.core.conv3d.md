@@ -41,16 +41,16 @@ Parameters:
 
 **input** ([array](mlx.core.array.html#mlx.core.array)) – Input array of shape `(N, D, H, W, C_in)`.
 **weight** ([array](mlx.core.array.html#mlx.core.array)) – Weight array of shape `(C_out, KD, KH, KW, C_in)`.
-**stride** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – [tuple](https://docs.python.org/3/library/stdtypes.html#tuple) of size 3 with
+**stride** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple) of size 3 with
 kernel strides. All spatial dimensions get the same stride if
 only one number is specified. Default: `1`.
-**padding** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – [tuple](https://docs.python.org/3/library/stdtypes.html#tuple) of size 3 with
+**padding** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple) of size 3 with
 symmetric input padding. All spatial dimensions get the same
 padding if only one number is specified. Default: `0`.
-**dilation** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – [tuple](https://docs.python.org/3/library/stdtypes.html#tuple) of size 3 with
+**dilation** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple) of size 3 with
 kernel dilation. All spatial dimensions get the same dilation
 if only one number is specified. Default: `1`
-**groups** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – input feature groups. Default: `1`.
+**groups** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – input feature groups. Default: `1`.
 
 Returns:
 The convolved array.

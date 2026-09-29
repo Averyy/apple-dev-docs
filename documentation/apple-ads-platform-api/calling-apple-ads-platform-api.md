@@ -271,7 +271,10 @@ A detailed error message example:
     "details": [
       {
         "code": "DUPLICATE_NAME",
-        "message": "AdGroup name already exists under this Campaign."
+        "message": "AdGroup name already exists under this Campaign.",
+        "info": {
+          "field": "name"
+        }
       }
     ]
   }
@@ -312,6 +315,8 @@ Every response, successful or not, includes a set of `RateLimit-*` headers you c
   Field-level or request-level detail for a specific part of a failed API request.
 - [object ErrorResponse](errorresponse.md)
   Certain endpoints return this envelope, which wraps an `Error` object, when a request fails.
+- [object Info](info.md)
+  Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 ## See Also
 

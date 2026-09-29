@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.lu
 
-**lu(*a: array*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
+**lu(*a: array*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
 : Compute the LU factorization of the given matrix `A`.
 Note, unlike the default behavior of `scipy.linalg.lu`, the pivots
 are indices. To reconstruct the input use `L[P, :] @ U` for 2
@@ -52,6 +52,6 @@ Returns:
 The `p`, `L`, and `U` arrays, such that `A = L[P, :] @ U`
 
 Return type:
-[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array))
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array))
 
 ** Contents

@@ -33,7 +33,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ## See Also
 
-- [Xcode 27.2 Beta Release Notes](xcode-27_2-release-notes.md)
+- [Xcode 27.2 Beta 2 Release Notes](xcode-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 27 Release Notes](xcode-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

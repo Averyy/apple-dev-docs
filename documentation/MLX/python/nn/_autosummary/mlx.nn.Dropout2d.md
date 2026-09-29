@@ -50,7 +50,7 @@ regularize activations. For more details, see [1].
 Efficient Object Localization Using Convolutional Networks. CVPR 2015.
 
 Parameters:
-**p** ([float](https://docs.python.org/3/library/functions.html#float)) – Probability of zeroing a channel during training.
+**p** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Probability of zeroing a channel during training.
 Default: `0.5`.
 
 Methods

@@ -40,8 +40,8 @@ is an [array](mlx.core.array.html#mlx.core.array) it must be broadcastable to th
 
 Parameters:
 
-**shape** ([int](https://docs.python.org/3/library/functions.html#int)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The shape of the output array.
-**vals** ([float](https://docs.python.org/3/library/functions.html#float)* or *[int](https://docs.python.org/3/library/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – Values to fill the array with.
+**shape** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The shape of the output array.
+**vals** ([float](https://docs.python.org/3/builtins/functions.html#float)* or *[int](https://docs.python.org/3/builtins/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – Values to fill the array with.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Data type of the output array. If
 unspecified the output type is inferred from `vals`.
 

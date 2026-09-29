@@ -40,8 +40,8 @@ The elements will not necessarily be in sorted order.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**k** ([int](https://docs.python.org/3/library/functions.html#int)) – `k` top elements to be returned
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or **None**, **optional*) – Optional axis to select over.
+**k** ([int](https://docs.python.org/3/builtins/functions.html#int)) – `k` top elements to be returned
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None**, **optional*) – Optional axis to select over.
 If `None`, this selects the top `k` elements over the
 flattened array. If unspecified, it defaults to `-1`.
 

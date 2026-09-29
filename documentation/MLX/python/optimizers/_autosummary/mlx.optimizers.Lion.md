@@ -50,11 +50,11 @@ w_{t + 1} &= w_t - \eta (\text{sign}(c_t) + \lambda w_t)\end{split}\]
 
 Parameters:
 
-**learning_rate** ([float](https://docs.python.org/3/library/functions.html#float)* or **callable*) – The learning rate \(\eta\).
-**betas** (*Tuple**[*[float](https://docs.python.org/3/library/functions.html#float)*, *[float](https://docs.python.org/3/library/functions.html#float)*]**, **optional*) – The coefficients
+**learning_rate** ([float](https://docs.python.org/3/builtins/functions.html#float)* or **callable*) – The learning rate \(\eta\).
+**betas** (*Tuple**[*[float](https://docs.python.org/3/builtins/functions.html#float)*, *[float](https://docs.python.org/3/builtins/functions.html#float)*]**, **optional*) – The coefficients
 \((\beta_1, \beta_2)\) used for computing the gradient
 momentum and update direction. Default: `(0.9, 0.99)`
-**weight_decay** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The weight decay \(\lambda\). Default: `0.0`
+**weight_decay** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The weight decay \(\lambda\). Default: `0.0`
 
 Methods
 

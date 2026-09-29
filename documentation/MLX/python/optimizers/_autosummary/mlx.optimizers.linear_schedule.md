@@ -38,9 +38,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 Parameters:
 
-**init** ([float](https://docs.python.org/3/library/functions.html#float)) – Initial value.
-**end** ([float](https://docs.python.org/3/library/functions.html#float)) – Final value.
-**steps** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of steps to apply the schedule over. The value is
+**init** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Initial value.
+**end** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Final value.
+**steps** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Number of steps to apply the schedule over. The value is
 `end` for any steps beyond `steps`.
 
 Example

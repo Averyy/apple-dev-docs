@@ -39,7 +39,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – The input to make contiguous
-**allow_col_major** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Consider column major as contiguous and don’t copy
+**allow_col_major** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Consider column major as contiguous and don’t copy
 
 Returns:
 The row or col contiguous output.

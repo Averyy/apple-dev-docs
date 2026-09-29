@@ -84,7 +84,7 @@ The API always returns the `eligibility` field, which describes whether the loca
 
 - `id` (string) *(required)*: ID of the location. Read-only.
 - `brandId` (string): Associated brand identifier. Read-only.
-- `status` (string): Possible values: `OPEN`, `CLOSED`, `MOVED`, `TEMPORARILY_CLOSED`, `OPENING_SOON`. Read-only.
+- `status` (string): The location’s operational state. Read-only.
 - `name` (string): The location’s display name. Read-only.
 - `categories` ([string]): Category identifiers (first is primary). Read-only.
 - `address` (Location.Address): Postal address of the location, sourced from Apple Maps. See [`Location.Address`](location/address-data.dictionary.md) for the full subfield breakdown. Read-only.

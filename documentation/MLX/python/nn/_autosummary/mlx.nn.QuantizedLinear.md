@@ -43,15 +43,15 @@ convert linear layers to [QuantizedLinear](#mlx.nn.QuantizedLinear) layers.
 
 Parameters:
 
-**input_dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the input features.
-**output_dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the output features.
-**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to `False` then the layer will not use
+**input_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the input features.
+**output_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the output features.
+**bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `False` then the layer will not use
 a bias. Default: `True`.
-**group_size** (*Optional**[*[int](https://docs.python.org/3/library/functions.html#int)*]*) – The group size to use for the quantized
+**group_size** (*Optional**[*[int](https://docs.python.org/3/builtins/functions.html#int)*]*) – The group size to use for the quantized
 weight. See [quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize). Default: `None`.
-**bits** (*Optional**[*[int](https://docs.python.org/3/library/functions.html#int)*]*) – The bit width to use for the quantized weight.
+**bits** (*Optional**[*[int](https://docs.python.org/3/builtins/functions.html#int)*]*) – The bit width to use for the quantized weight.
 See [quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize). Default: `None`.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The quantization method to use (see
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The quantization method to use (see
 [mlx.core.quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize)). Default: `"affine"`.
 
 Methods

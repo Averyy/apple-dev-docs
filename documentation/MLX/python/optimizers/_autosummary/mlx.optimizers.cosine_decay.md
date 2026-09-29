@@ -38,10 +38,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 Parameters:
 
-**init** ([float](https://docs.python.org/3/library/functions.html#float)) – Initial value.
-**decay_steps** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of steps to decay over. The decayed
+**init** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Initial value.
+**decay_steps** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Number of steps to decay over. The decayed
 value is constant for steps beyond `decay_steps`.
-**end** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Final value to decay to. Default: `0`.
+**end** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Final value to decay to. Default: `0`.
 
 Example
 >>> lr_schedule = optim.cosine_decay(1e-1, 1000)

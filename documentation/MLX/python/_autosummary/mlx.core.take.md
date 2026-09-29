@@ -43,8 +43,8 @@ As an example, if the `axis=1` this is equivalent to `a[:, indices, ...]`.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**indices** ([int](https://docs.python.org/3/library/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – Integer index or input array with integral type.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Axis along which to perform the take. If unspecified
+**indices** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – Integer index or input array with integral type.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Axis along which to perform the take. If unspecified
 the array is treated as a flattened 1-D vector.
 
 Returns:

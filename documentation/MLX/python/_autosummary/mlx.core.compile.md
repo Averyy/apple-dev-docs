@@ -41,17 +41,17 @@ Parameters:
 **fun** (*Callable*) – A function which takes a variable number of
 [array](mlx.core.array.html#mlx.core.array) or trees of [array](mlx.core.array.html#mlx.core.array) and returns
 a variable number of [array](mlx.core.array.html#mlx.core.array) or trees of [array](mlx.core.array.html#mlx.core.array).
-**inputs** ([list](https://docs.python.org/3/library/stdtypes.html#list)* or *[dict](https://docs.python.org/3/library/stdtypes.html#dict)*, **optional*) – These inputs will be captured during
+**inputs** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)* or *[dict](https://docs.python.org/3/builtins/stdtypes.html#dict)*, **optional*) – These inputs will be captured during
 the function compilation along with the inputs to `fun`. The `inputs`
-can be a [list](https://docs.python.org/3/library/stdtypes.html#list) or a [dict](https://docs.python.org/3/library/stdtypes.html#dict) containing arbitrarily nested
+can be a [list](https://docs.python.org/3/builtins/stdtypes.html#list) or a [dict](https://docs.python.org/3/builtins/stdtypes.html#dict) containing arbitrarily nested
 lists, dictionaries, or arrays. Leaf nodes that are not
 [array](mlx.core.array.html#mlx.core.array) are ignored. Default: `None`
-**outputs** ([list](https://docs.python.org/3/library/stdtypes.html#list)* or *[dict](https://docs.python.org/3/library/stdtypes.html#dict)*, **optional*) – These outputs will be captured and
+**outputs** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)* or *[dict](https://docs.python.org/3/builtins/stdtypes.html#dict)*, **optional*) – These outputs will be captured and
 updated in a compiled function. The `outputs` can be a
-[list](https://docs.python.org/3/library/stdtypes.html#list) or a [dict](https://docs.python.org/3/library/stdtypes.html#dict) containing arbitrarily nested lists,
+[list](https://docs.python.org/3/builtins/stdtypes.html#list) or a [dict](https://docs.python.org/3/builtins/stdtypes.html#dict) containing arbitrarily nested lists,
 dictionaries, or arrays. Leaf nodes that are not [array](mlx.core.array.html#mlx.core.array) are ignored.
 Default: `None`
-**shapeless** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – A function compiled with the `shapeless`
+**shapeless** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – A function compiled with the `shapeless`
 option enabled will not be recompiled when the input shape changes. Not all
 functions can be compiled with `shapeless` enabled. Attempting to compile
 such functions with shapeless enabled will throw. Note, changing the number

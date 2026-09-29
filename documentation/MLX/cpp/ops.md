@@ -295,6 +295,9 @@ array full_like(const array &a, [T](#_CPPv4I0E9full_like5arrayRK5array1T14Stream
 **inline array transpose(const array &a, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::initializer_list<int> axes, StreamOrDevice s = {})**
 : 
 
+**array matrix_transpose(const array &a, StreamOrDevice s = {})**
+: Permutes last two dimensions of an array.
+
 **array swapaxes(const array &a, int axis1, int axis2, StreamOrDevice s = {})**
 : Swap two axes of an array.
 
@@ -1087,7 +1090,7 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 **array to_fp8(array x, StreamOrDevice s = {})**
 : Convert a floating point matrix to E4M3 float8.
 
-**array gather_qmm(const array &x, const array &w, const array &scales, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> lhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> rhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool transpose = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", bool sorted_indices = false, StreamOrDevice s = {})**
+**array gather_qmm(const array &x, const array &w, const array &scales, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> lhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> rhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool transpose = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool sorted_indices = false, StreamOrDevice s = {})**
 : Compute matrix products with matrix-level gather.
 
 **array gather_qqmm(const array &x, const array &w, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &scales_w = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &lhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &rhs_indices = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "nvfp4", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale_x = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale_w = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool sorted_indices = false, StreamOrDevice s = {})**

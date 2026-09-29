@@ -42,10 +42,10 @@ w_{t+1} &= w_t - \lambda \frac{g_t}{\sqrt{v_{t+1}} + \epsilon}\end{split}\]
 
 Parameters:
 
-**learning_rate** ([float](https://docs.python.org/3/library/functions.html#float)* or **callable*) – The learning rate \(\lambda\).
-**alpha** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The smoothing constant \(\alpha\).
+**learning_rate** ([float](https://docs.python.org/3/builtins/functions.html#float)* or **callable*) – The learning rate \(\lambda\).
+**alpha** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The smoothing constant \(\alpha\).
 Default: `0.99`
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the denominator
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the denominator
 to improve numerical stability. Default: `1e-8`
 
 Methods

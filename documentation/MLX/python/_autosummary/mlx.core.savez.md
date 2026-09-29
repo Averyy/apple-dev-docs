@@ -50,7 +50,7 @@ mx.savez("model.npz", **dict(flat_params))
 
 Parameters:
 
-**file** (*file**, *[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – Path to file to which the arrays are saved.
+**file** (*file**, *[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – Path to file to which the arrays are saved.
 ***args** (*arrays*) – Arrays to be saved.
 ****kwargs** (*arrays*) – Arrays to be saved. Each array will be saved
 with the associated keyword as the output file name.

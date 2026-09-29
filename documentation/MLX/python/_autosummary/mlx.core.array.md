@@ -130,7 +130,7 @@ See [prod()](mlx.core.prod.html#mlx.core.prod).
 See [reciprocal()](mlx.core.reciprocal.html#mlx.core.reciprocal).
 
 [reshape](mlx.core.array.reshape.html#mlx.core.array.reshape)(self, *shape[, stream])
-Equivalent to [reshape()](mlx.core.reshape.html#mlx.core.reshape) but the shape can be passed either as a [tuple](https://docs.python.org/3/library/stdtypes.html#tuple) or as separate arguments.
+Equivalent to [reshape()](mlx.core.reshape.html#mlx.core.reshape) but the shape can be passed either as a [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple) or as separate arguments.
 
 [round](mlx.core.array.round.html#mlx.core.array.round)(self[, decimals, stream])
 See [round()](mlx.core.round.html#mlx.core.round).
@@ -153,7 +153,7 @@ See [square()](mlx.core.square.html#mlx.core.square).
 [squeeze](mlx.core.array.squeeze.html#mlx.core.array.squeeze)(self[, axis, stream])
 See [squeeze()](mlx.core.squeeze.html#mlx.core.squeeze).
 
-[std](mlx.core.array.std.html#mlx.core.array.std)(self[, axis, keepdims, ddof, stream])
+[std](mlx.core.array.std.html#mlx.core.array.std)(self[, axis, keepdims, ddof, ...])
 See [std()](mlx.core.std.html#mlx.core.std).
 
 [sum](mlx.core.array.sum.html#mlx.core.array.sum)(self[, axis, keepdims, stream])
@@ -163,12 +163,12 @@ See [sum()](mlx.core.sum.html#mlx.core.sum).
 See [swapaxes()](mlx.core.swapaxes.html#mlx.core.swapaxes).
 
 [tolist](mlx.core.array.tolist.html#mlx.core.array.tolist)(self)
-Convert the array to a Python [list](https://docs.python.org/3/library/stdtypes.html#list).
+Convert the array to a Python [list](https://docs.python.org/3/builtins/stdtypes.html#list).
 
 [transpose](mlx.core.array.transpose.html#mlx.core.array.transpose)(self, *axes[, stream])
 Equivalent to [transpose()](mlx.core.transpose.html#mlx.core.transpose) but the axes can be passed either as a tuple or as separate arguments.
 
-[var](mlx.core.array.var.html#mlx.core.array.var)(self[, axis, keepdims, ddof, stream])
+[var](mlx.core.array.var.html#mlx.core.array.var)(self[, axis, keepdims, ddof, ...])
 See [var()](mlx.core.var.html#mlx.core.var).
 
 [view](mlx.core.array.view.html#mlx.core.array.view)(self, dtype, *[, stream])
@@ -190,6 +190,9 @@ The imaginary part of a complex array.
 
 [itemsize](mlx.core.array.itemsize.html#mlx.core.array.itemsize)
 The size of the array's datatype in bytes.
+
+`mT`
+Equivalent to calling `self.transpose()` with the last two axes swapped.
 
 [nbytes](mlx.core.array.nbytes.html#mlx.core.array.nbytes)
 The number of bytes in the array.

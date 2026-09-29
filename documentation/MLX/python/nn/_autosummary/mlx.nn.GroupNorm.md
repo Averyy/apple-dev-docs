@@ -49,13 +49,13 @@ that precede it (except the first) are considered the spatial dimensions.
 
 Parameters:
 
-**num_groups** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of groups to separate the features into
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The feature dimensions of the input to normalize over
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)) – A small additive constant for numerical stability.
+**num_groups** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Number of groups to separate the features into
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The feature dimensions of the input to normalize over
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)) – A small additive constant for numerical stability.
 Default: `1e-5`.
-**affine** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If True learn an affine transform to apply after the
+**affine** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If True learn an affine transform to apply after the
 normalization. Default: `True`.
-**pytorch_compatible** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If True perform the group normalization in
+**pytorch_compatible** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If True perform the group normalization in
 the same order/grouping as PyTorch. Default: `False`.
 
 Methods

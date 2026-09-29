@@ -40,9 +40,9 @@ Typically used to embed discrete tokens for processing by neural networks.
 
 Parameters:
 
-**num_embeddings** ([int](https://docs.python.org/3/library/functions.html#int)) – How many possible discrete tokens can we embed.
+**num_embeddings** ([int](https://docs.python.org/3/builtins/functions.html#int)) – How many possible discrete tokens can we embed.
 Usually called the vocabulary size.
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the embeddings.
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the embeddings.
 
 Methods
 

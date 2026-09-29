@@ -46,7 +46,7 @@ print(d)
 # {"hello": {"world": 42}}
 
 Parameters:
-**tree** ([list](https://docs.python.org/3/library/stdtypes.html#list)*[*[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*[*[str](https://docs.python.org/3/library/stdtypes.html#str)*, **Any**]**] or *[dict](https://docs.python.org/3/library/stdtypes.html#dict)*[*[str](https://docs.python.org/3/library/stdtypes.html#str)*, **Any**]*) – The flat representation of a Python tree.
+**tree** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*[*[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **Any**]**] or *[dict](https://docs.python.org/3/builtins/stdtypes.html#dict)*[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **Any**]*) – The flat representation of a Python tree.
 For instance as returned by [tree_flatten()](mlx.utils.tree_flatten.html#mlx.utils.tree_flatten).
 
 Returns:

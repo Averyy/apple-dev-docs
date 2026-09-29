@@ -102,6 +102,8 @@ POST /v1/negative-keywords/bulk-create
 
 - [Bulk Update Negative Keywords](post-negative-keywords-bulk-update.md)
   Update multiple negative keywords in a single request.
+- [Bulk Delete Negative Keywords](post-negative-keywords-bulk-delete.md)
+  Delete multiple negative keywords in a single request.
 
 
 ---

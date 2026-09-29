@@ -39,7 +39,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axes** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The index of the inserted dimensions.
+**axes** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The index of the inserted dimensions.
 
 Returns:
 The array with inserted dimensions.

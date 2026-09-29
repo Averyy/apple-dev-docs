@@ -42,7 +42,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – 1D Input array.
 **v** ([array](mlx.core.array.html#mlx.core.array)) – 1D Input array.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – {‘full’, ‘valid’, ‘same’}
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – {‘full’, ‘valid’, ‘same’}
 
 Returns:
 The convolved array.

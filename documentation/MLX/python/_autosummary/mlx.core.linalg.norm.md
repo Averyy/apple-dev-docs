@@ -43,16 +43,16 @@ Parameters:
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.  If `axis` is `None`, `a` must be 1-D or 2-D,
 unless `ord` is `None`. If both `axis` and `ord` are `None`, the
 2-norm of `a.flatten` will be returned.
-**ord** ([int](https://docs.python.org/3/library/functions.html#int)*, *[float](https://docs.python.org/3/library/functions.html#float)* or *[str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Order of the norm (see table under `Notes`).
+**ord** ([int](https://docs.python.org/3/builtins/functions.html#int)*, *[float](https://docs.python.org/3/builtins/functions.html#float)* or *[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Order of the norm (see table under `Notes`).
 If `None`, the 2-norm (or Frobenius norm for matrices) will be computed
 along the given `axis`.  Default: `None`.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – If `axis` is an integer, it specifies the
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – If `axis` is an integer, it specifies the
 axis of `a` along which to compute the vector norms.  If `axis` is a
 2-tuple, it specifies the axes that hold 2-D matrices, and the matrix
 norms of these matrices are computed. If axis is `None` then
 either a vector norm (when `a` is 1-D) or a matrix norm (when `a` is
 2-D) is returned. Default: `None`.
-**keepdims** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, the axes which are normed over are
+**keepdims** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, the axes which are normed over are
 left in the result as dimensions with size one. Default `False`.
 
 Returns:

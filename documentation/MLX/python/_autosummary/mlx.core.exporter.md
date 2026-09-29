@@ -43,10 +43,10 @@ versions of MLX may not be compatible with future versions.
 
 Parameters:
 
-**file** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – File path to export the function to.
-**shapeless** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether or not the function allows
+**file** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – File path to export the function to.
+**shapeless** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether or not the function allows
 inputs with variable shapes. Default: `False`.
-**metadata** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – A string to save alongside the
+**metadata** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – A string to save alongside the
 function, for example a JSON encoded model configuration. Read
 it back with [import_function()](mlx.core.import_function.html#mlx.core.import_function). Default: `None`.
 

@@ -41,7 +41,7 @@ When `allowPartialSuccess` is `true` in the request, inspect `success` on each e
 - `operation` (string): The operation performed on this item: `CREATE`, `UPDATE`, or `DELETE`. Read-only.
 - `success` (boolean): Whether this individual item operation succeeded. Read-only.
 - `error` (Error): Per-item error details when this item failed. Null on success. See [`Error`](error.md). Read-only.
-- `result` (Response.Result): The response payload. Type depends on the specific response subtype. See [`Response.Result`](response/result-data.dictionary.md). Absent when the request fails.
+- `result` (Response.Result): The response payload. Type depends on the specific response subtype. See [`Response.Result`](response/result-data.dictionary.md). Absent on failure, and for all bulk delete responses.
 
 ## See Also
 
@@ -59,6 +59,10 @@ When `allowPartialSuccess` is `true` in the request, inspect `success` on each e
   A bulk request to create multiple Keyword objects.
 - [object KeywordCreateBulkResponse](keywordcreatebulkresponse.md)
   The response from a bulk Keyword creation request, containing results for each item.
+- [object KeywordDeleteBulkRequest](keyworddeletebulkrequest.md)
+  A bulk request to delete multiple Keyword objects by their identifiers.
+- [object KeywordDeleteBulkResponse](keyworddeletebulkresponse.md)
+  The response from a bulk Keyword deletion request.
 - [object KeywordUpdateBulkRequest](keywordupdatebulkrequest.md)
   A bulk request to update multiple Keyword objects.
 - [object KeywordUpdateBulkResponse](keywordupdatebulkresponse.md)
@@ -67,14 +71,10 @@ When `allowPartialSuccess` is `true` in the request, inspect `success` on each e
   A bulk request to create multiple negative keywords.
 - [object NegativeKeywordCreateBulkResponse](negativekeywordcreatebulkresponse.md)
   The response from a bulk negative keyword creation request, containing results for each item.
-- [object NegativeKeywordUpdateBulkRequest](negativekeywordupdatebulkrequest.md)
-  A bulk request to update multiple negative keywords.
-- [object NegativeKeywordUpdateBulkResponse](negativekeywordupdatebulkresponse.md)
-  The response from a bulk negative keyword update request, containing results for each item.
-- [object BulkKeywordCreate](bulkkeywordcreate.md)
-  The `data` payload for a single keyword-create item within a bulk create request.
-- [object BulkKeywordUpdate](bulkkeywordupdate.md)
-  The payload for a single keyword-update.
+- [object NegativeKeywordDeleteBulkRequest](negativekeyworddeletebulkrequest.md)
+  A bulk request to delete multiple negative keywords by their identifiers.
+- [object NegativeKeywordDeleteBulkResponse](negativekeyworddeletebulkresponse.md)
+  The response from a bulk negative keyword deletion request.
 
 
 ---

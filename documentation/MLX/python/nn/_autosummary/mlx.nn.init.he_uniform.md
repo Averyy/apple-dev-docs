@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 # mlx.nn.init.he_uniform
 
-**he_uniform(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [Literal](https://docs.python.org/3/library/typing.html#typing.Literal)['fan_in', 'fan_out'], [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
+**he_uniform(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [Literal](https://docs.python.org/3/library/typing.html#typing.Literal)['fan_in', 'fan_out'], [float](https://docs.python.org/3/builtins/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
 : A He uniform (Kaiming uniform) initializer.
 This initializer samples from a uniform distribution on the interval
 \([-\text{limit}, \text{limit}]\), where the bound \(\text{limit}\)
@@ -56,7 +56,7 @@ array with the same shape as the input, filled with samples from  the
 He uniform distribution.
 
 Return type:
-*Callable*[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [str](https://docs.python.org/3/library/stdtypes.html#str), [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]
+*Callable*[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [str](https://docs.python.org/3/builtins/stdtypes.html#str), [float](https://docs.python.org/3/builtins/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]
 
 Example
 >>> init_fn = nn.init.he_uniform()

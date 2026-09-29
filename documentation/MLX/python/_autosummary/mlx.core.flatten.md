@@ -43,8 +43,8 @@ positive, axes outside the valid range will be clamped to a valid value,
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**start_axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The first dimension to flatten. Defaults to `0`.
-**end_axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The last dimension to flatten. Defaults to `-1`.
+**start_axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The first dimension to flatten. Defaults to `0`.
+**end_axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The last dimension to flatten. Defaults to `-1`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 

@@ -36,7 +36,7 @@ The `SearchTermPopularityTimeRange` object specifies the date window and granula
 - `start` (string) *(required)*: The start date of the range, in `YYYY-MM-DD` format.
 - `end` (string) *(required)*: The end date of the range, in `YYYY-MM-DD` format.
 - `timeZone` (string): Timezone. Fixed to `UTC`. Not user-configurable. Default: `"UTC"`.
-- `granularity` (string) *(required)*: Aggregation period. `WEEKLY_SUN_SAT` uses fixed Sunday–Saturday weeks and is generated Mondays at 07:00 UTC for the preceding Sunday through Saturday week, with a rolling retention of 65 weeks. `MONTHLY` uses calendar months and is refreshed on the 5th of each month UTC for the prior calendar month, with a rolling retention of 15 months. Possible values: `WEEKLY_SUN_SAT`, `MONTHLY`.
+- `granularity` (string) *(required)*: Aggregation period. `WEEKLY_SUN_SAT` uses fixed Sunday–Saturday weeks and is generated Mondays at 07:00 UTC for the preceding Sunday through Saturday week, with a rolling retention of 65 weeks. `MONTHLY` uses calendar months and is refreshed on the 5th of each month UTC for the prior calendar month, with a rolling retention of 15 months.
 
 ## See Also
 

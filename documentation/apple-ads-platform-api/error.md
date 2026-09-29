@@ -31,7 +31,10 @@ Check `details` when you need to pinpoint exactly which part of the request was 
   "details": [
     {
       "code": "FIELD_REQUIRED",
-      "message": "campaign.name is required and was not provided for AwayFinder campaign creation."
+      "message": "campaign.name is required and was not provided for AwayFinder campaign creation.",
+      "info": {
+        "field": "campaign.name"
+      }
     }
   ]
 }
@@ -49,6 +52,8 @@ Check `details` when you need to pinpoint exactly which part of the request was 
   Field-level or request-level detail for a specific part of a failed API request.
 - [object ErrorResponse](errorresponse.md)
   Certain endpoints return this envelope, which wraps an `Error` object, when a request fails.
+- [object Info](info.md)
+  Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 
 ---

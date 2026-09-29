@@ -42,7 +42,7 @@ returned.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – 1-D or 2-D input array.
-**k** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The diagonal to extract or construct.
+**k** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The diagonal to extract or construct.
 Default: `0`.
 
 Returns:

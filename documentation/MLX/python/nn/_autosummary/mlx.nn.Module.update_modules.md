@@ -45,9 +45,9 @@ updated.
 
 Parameters:
 
-**modules** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A complete or partial dictionary of the module’s
+**modules** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)) – A complete or partial dictionary of the module’s
 submodules.
-**strict** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If `True` checks that `modules` is a
+**strict** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If `True` checks that `modules` is a
 subset of the child modules of this instance. Default: `True`.
 
 Returns:

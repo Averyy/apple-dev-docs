@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.de
 
 # mlx.core.device_count
 
-**device_count(*device_type: mlx.core.DeviceType*) → [int](https://docs.python.org/3/library/functions.html#int)**
+**device_count(*device_type: mlx.core.DeviceType*) → [int](https://docs.python.org/3/builtins/functions.html#int)**
 : Get the number of available devices for the given device type.
 
 Parameters:
@@ -43,6 +43,6 @@ Returns:
 Number of devices.
 
 Return type:
-[int](https://docs.python.org/3/library/functions.html#int)
+[int](https://docs.python.org/3/builtins/functions.html#int)
 
 ** Contents

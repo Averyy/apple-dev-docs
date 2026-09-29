@@ -45,6 +45,8 @@ The `splitView` must be in the same window as the toolbar containing this item b
 - [NSMenuItemValidation](nsmenuitemvalidation.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

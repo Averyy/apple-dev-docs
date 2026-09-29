@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.eigh
 
-**eigh(*a: array*, *UPLO: str = 'L'*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
+**eigh(*a: array*, *UPLO: str = 'L'*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
 : Compute the eigenvalues and eigenvectors of a complex Hermitian or
 real symmetric matrix.
 This function supports arrays with at least 2 dimensions. When the input
@@ -44,7 +44,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array. Must be a real symmetric or complex
 Hermitian matrix.
-**UPLO** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Whether to use the upper (`"U"`) or
+**UPLO** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Whether to use the upper (`"U"`) or
 lower (`"L"`) triangle of the matrix.  Default: `"L"`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.

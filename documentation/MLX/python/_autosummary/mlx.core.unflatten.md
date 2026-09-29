@@ -39,8 +39,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.un
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)) – The axis to unflatten.
-**shape** ([tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The shape to unflatten to. At most one
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The axis to unflatten.
+**shape** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The shape to unflatten to. At most one
 entry can be `-1` in which case the corresponding size will be
 inferred.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`

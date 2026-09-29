@@ -45,7 +45,7 @@ distribution.
 **cov** ([array](mlx.core.array.html#mlx.core.array)) – array  of shape `(..., n, n)`, the covariance
 matrix of the distribution. The batch shape `...` must be
 broadcast-compatible with that of `mean`.
-**shape** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – The output shape must be
+**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The output shape must be
 broadcast-compatible with `mean.shape[:-1]` and `cov.shape[:-2]`.
 If empty, the result shape is determined by broadcasting the batch
 shapes of `mean` and `cov`. Default: `[]`.

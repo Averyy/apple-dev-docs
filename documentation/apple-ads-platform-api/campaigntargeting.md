@@ -18,7 +18,7 @@ object CampaignTargeting
 
 The `CampaignTargeting` object defines where a campaign is eligible to serve ads, using three `TargetingData` fields: `supplySource`, `supplyPlacement`, and `countryOrRegion`.
 
-The `supplySource`, `supplyPlacement`, and `countryOrRegion` fields are all include-only at the campaign level: the `exclude` array isn’t supported for any of the three dimensions. Use [`CampaignTargetingCreate`](campaigntargetingcreate.md) to supply these values when creating a new campaign. Once the campaign exists, all three dimensions remain mutable via [`CampaignTargetingUpdate`](campaigntargetingupdate.md). After campaign-level targeting is in place, [`AdGroupTargeting`](adgrouptargeting.md) provides further audience and delivery refinements at the ad group level.
+The `supplySource`, `supplyPlacement`, and `countryOrRegion` fields are all include-only at the campaign level: the `exclude` array isn’t supported for any of the three dimensions. Use [`CampaignTargetingCreate`](campaigntargetingcreate.md) to supply these values when creating a new campaign. Once the campaign exists, `supplyPlacement` and `countryOrRegion` remain mutable via [`CampaignTargetingUpdate`](campaigntargetingupdate.md), but `supplySource` is fixed at creation and can’t be changed afterward. After campaign-level targeting is in place, [`AdGroupTargeting`](adgrouptargeting.md) provides further audience and delivery refinements at the ad group level.
 
 ##### Example
 
@@ -56,7 +56,7 @@ The `supplySource`, `supplyPlacement`, and `countryOrRegion` fields are all incl
 
 ## Properties
 
-- `supplySource` (CampaignTargeting.SupplySource): The supply source(s) where ads are eligible to appear. Possible values: `APPSTORE`, `MAPS`. See [`TargetingData`](targetingdata.md) for details. Mutable.
+- `supplySource` (CampaignTargeting.SupplySource): The supply source(s) where ads are eligible to appear. Possible values: `APPSTORE`, `MAPS`. See [`TargetingData`](targetingdata.md) for details. Fixed at creation.
 - `supplyPlacement` (CampaignTargeting.SupplyPlacement): The specific placements within a supply source. Possible values: `APPSTORE_SEARCH_RESULTS`, `APPSTORE_SEARCH_TAB`, `APPSTORE_TODAY_TAB`, `APPSTORE_PRODUCT_PAGES`, `MAPS_SEARCH_RESULTS`, `MAPS_SEARCH_HOME`. See [`CampaignTargeting.SupplyPlacement`](campaigntargeting/supplyplacement-data.dictionary.md) for the supply source each placement belongs to. See [`TargetingData`](targetingdata.md) for details. Mutable.
 - `countryOrRegion` (CampaignTargeting.CountryOrRegion): The countries or regions where the campaign serves ads. Uses ISO 3166-1 alpha-2 country codes. See [`TargetingData`](targetingdata.md) for details. Mutable.
 

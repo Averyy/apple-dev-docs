@@ -34,7 +34,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/printoption
 # mlx.core.PrintOptions
 
 **class PrintOptions(**args*, ***kwargs*)**
-: __init__(*self*, *precision: int = -1*) → [None](https://docs.python.org/3/library/constants.html#None)
+: __init__(*self*, *precision: int = -1*) → [None](https://docs.python.org/3/builtins/constants.html#None)
 
 Methods
 

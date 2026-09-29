@@ -33,22 +33,22 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.br
 
 # mlx.core.broadcast_shapes
 
-**broadcast_shapes(**shapes: Sequence[int]*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[int](https://docs.python.org/3/library/functions.html#int)]**
+**broadcast_shapes(**shapes: Sequence[int]*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[int](https://docs.python.org/3/builtins/functions.html#int)]**
 : Broadcast shapes.
 Returns the shape that results from broadcasting the supplied array shapes
 against each other.
 
 Parameters:
-***shapes** (*Sequence**[*[int](https://docs.python.org/3/library/functions.html#int)*]*) – The shapes to broadcast.
+***shapes** (*Sequence**[*[int](https://docs.python.org/3/builtins/functions.html#int)*]*) – The shapes to broadcast.
 
 Returns:
 The broadcasted shape.
 
 Return type:
-[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)
 
 Raises:
-[ValueError](https://docs.python.org/3/library/exceptions.html#ValueError) – If the shapes cannot be broadcast.
+[ValueError](https://docs.python.org/3/builtins/exceptions.html#ValueError) – If the shapes cannot be broadcast.
 
 Example
 >>> mx.broadcast_shapes((1,), (3, 1))

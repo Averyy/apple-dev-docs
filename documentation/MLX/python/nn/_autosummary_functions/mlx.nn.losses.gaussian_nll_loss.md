@@ -48,11 +48,11 @@ Parameters:
 **inputs** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The predicted expectation of the Gaussian distribution.
 **targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The target values (samples from the Gaussian distribution).
 **vars** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The predicted variance of the Gaussian distribution.
-**full** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether to include the constant term in the loss calculation.
+**full** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether to include the constant term in the loss calculation.
 Default: `False`.
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Small positive constant for numerical stability.
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Small positive constant for numerical stability.
 Default: `1e-6`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'mean'`.
 
 Returns:

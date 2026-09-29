@@ -46,9 +46,9 @@ Parameters:
 
 **inputs** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The predicted values.
 **targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The target values.
-**delta** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The threshold at which to change between L1 and L2 loss.
+**delta** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The threshold at which to change between L1 and L2 loss.
 Default: `1.0`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
 Returns:

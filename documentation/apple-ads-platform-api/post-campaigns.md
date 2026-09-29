@@ -24,6 +24,8 @@ The `promotedObjectType` field determines which kind of object `promotedObjectId
 
 Within `bidStrategy`, `bidStrategyType` and `bidStrategyGoal` are both required and must correspond per the pairings in [`BidStrategy`](bidstrategy.md) (for example, `MAX_CONVERSIONS` → `INSTALL`, `MANUAL_CPT` → `TAP`). Omitting either field, or sending a goal that doesn’t match the type, returns an error.
 
+For Apple Maps campaigns, decide the placement targeting at create time. Targeting both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` requires omitting `supplyPlacement` from `targeting` entirely, and this choice can’t be widened later through an update. A campaign created with a single Maps placement stays limited to that placement. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for details.
+
 #### Payload Examples
 
 **App Store Search**:
@@ -486,6 +488,92 @@ POST /v1/campaigns
      "supplyPlacement": {
        "include": [
          "MAPS_SEARCH_HOME"
+       ]
+     }
+   },
+   "bidStrategy": {
+     "bidStrategyType": "MAX_ENGAGEMENTS",
+     "bidStrategyGoal": "TAP"
+   },
+   "creationTime": "2025-01-10T08:00:00.000",
+   "modificationTime": "2025-01-10T08:00:00.000",
+   "deleted": false,
+   "paymentModel": "PAYG",
+   "systemStatus": "RUNNING",
+   "systemStatusReasons": [],
+   "systemStatusLimitingReasons": [],
+   "displayStatus": "RUNNING",
+   "regulationResponses": []
+ }
+}
+```
+
+**Apple Maps — Both placements**:
+
+An Apple Maps campaign targeting both the Maps Search results and Maps Search home placements.
+
+> **Note**: Listing both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` together in `supplyPlacement.include` is rejected. To target both placements, omit `supplyPlacement` from `targeting` entirely; `supplySource: MAPS` alone targets every placement under that supply source.
+
+##### Request
+
+Creates an Apple Maps campaign that targets both placements by omitting `supplyPlacement` from `targeting`.
+
+```json
+POST /v1/campaigns
+
+{
+ "name": "AwayFinder Apple Maps Campaign",
+ "adAccountId": 123456789,
+ "startTime": "2025-09-01T00:00:00.000",
+ "endTime": "2025-12-31T23:59:59.000",
+ "status": "ENABLED",
+ "billingEvent": "TAPS",
+ "promotedObjectType": "BUSINESS_BRAND",
+ "promotedObjectId": "987654321",
+ "dailyBudget": {
+   "value": {
+     "amount": "900.00",
+     "currency": "USD"
+   }
+ },
+ "targeting": {
+   "supplySource": {
+     "include": [
+       "MAPS"
+     ]
+   }
+ },
+ "bidStrategy": {
+   "bidStrategyType": "MAX_ENGAGEMENTS",
+   "bidStrategyGoal": "TAP"
+ }
+}
+```
+
+##### Response
+
+```json
+{
+ "result": {
+   "id": 444555670,
+   "name": "AwayFinder Apple Maps Campaign",
+   "adAccountId": 123456789,
+   "promotedObjectType": "BUSINESS_BRAND",
+   "promotedObjectId": "987654321",
+   "status": "ENABLED",
+   "billingEvent": "TAPS",
+   "startTime": "2025-09-01T00:00:00.000",
+   "endTime": "2025-12-31T23:59:59.000",
+   "dailyBudget": {
+     "value": {
+       "amount": "900.00",
+       "currency": "USD"
+     }
+   },
+   "targeting": {
+     "supplySource": {
+       "include": [
+         "MAPS"
        ]
      }
    },

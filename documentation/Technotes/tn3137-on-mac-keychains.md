@@ -63,6 +63,8 @@ Each user gets exactly one data protection keychain.  The system selects the cor
 
 File-based keychains are stored, as the name suggests, in files.  Every context has a keychain search list and a default keychain.  In a user context the search list includes a per-user *login* keychain and a single *System* keychain, with the former being the default.  In the system context the search list includes just the *System* keychain, which is also the default keychain.
 
+> ❗ **Important**: Starting in macOS 26.4 a keychain file might not be a standalone item.  For more details see [`Backing up a file-based keychain`](tn3137-on-mac-keychains#Backing-up-a-file-based-keychain.md).
+
 When using the SecItem API to target the file-based keychain:
 
 - [`SecItemAdd(_:_:)`](https://developer.apple.com/documentation/security/secitemadd(_:_:)) adds the item to the default keychain.  Use [`kSecUseKeychain`](https://developer.apple.com/documentation/security/ksecusekeychain) to override this.
@@ -99,8 +101,38 @@ Keychain Access sometimes fails to reflect changes made to the keychain by other
 
 The keychain support in the `security` command-line tool is primarily focused on the file-based keychain.
 
+#### Backing Up a File Based Keychain
+
+Historically each file-based keychain was a standalone file.  You could, for example, copy a keychain file from one Mac to another and still use it, as long as you knew the keychain password.
+
+In macOS 26.4 and later that’s no longer the case.  A keychain file might reference a protected entropy file.  To unlock such a keychain you need both the keychain password and the protected entropy file.
+
+> ⚠️ **Warning**: The location, name, and format of these protected entropy files are not considered API.  Don’t encode details about these files into your product.
+
+These protected entropy files are stored in `/var/db/SystemKeys`.  If you’re creating a backup product, make sure to back up that directory.  Without it, the keychain files that you back up might be useless.
+
+> ❗ **Important**: To reiterate, these files are not considered API.  The following describes a number of implementation details.  These could change at any time.  It’s fine to use these implementation details for development and debugging, but don’t rely on them in your product.
+
+In some cases you might want to work with a protected entropy file directly.  For example, if you’re investigating a keychain problem on one Mac, you might want to copy the keychain file to a different Mac to further your investigation.  If the keychain file references a protected entropy file, copy that file as well as the keychain file itself.  You can put the keychain file wherever you want on the destination Mac, but you must put the protected entropy file in `/var/db/SystemKeys` for it to be effective.
+
+The `/var/db/SystemKeys` directory is not directly accessible, even when running as root, so you can’t copy a protected entropy file in the normal way.  To access it, disable System Integrity Protection (SIP).  For instructions on how to do that, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection).
+
+The `/var/db/SystemKeys` directory will likely contain numerous protected entropy files.  To identify the correct one, dump the keychain’s salt:
+
+```shell
+% security show-keychain-info -s ~/Library/Keychains/login.keychain-db 
+Keychain … salt=A4A00624947FFA299D3127962B4600494EBF5A74
+```
+
+So this keychain’s protected entropy file is `/var/db/SystemKeys/A4A00624947FFA299D3127962B4600494EBF5A74`.  If you copy `~/Library/Keychains/login.keychain-db` to a different Mac, copy that file as well so that you can unlock the keychain.
+
+> **Note**: Every keychain file has salt, but not every keychain file has an associated protected entropy file.  If there’s no file with that name, this keychain file doesn’t reference a protected entropy file.
+
+macOS logs information about protected entropy files to the system log in the `dp_login` category (that’s the *category*, not the *subsystem*).  To see these log entries, monitor the system log for entries with that category.  To learn more about the system log, see [`Logging`](https://developer.apple.com/documentation/os/logging).
+
 #### Revision History
 
+- **2026-09-24** Added the [`Backing up a file-based keychain`](tn3137-on-mac-keychains#Backing-up-a-file-based-keychain.md) section.
 - **2022-11-01** Republished as TN3137.  Made significant editorial changes.
 - **2021-12-10** First published as ”On Mac Keychains” on Apple Developer Forums.
 

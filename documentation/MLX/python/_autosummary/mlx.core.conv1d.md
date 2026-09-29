@@ -40,10 +40,10 @@ Parameters:
 
 **input** ([array](mlx.core.array.html#mlx.core.array)) – Input array of shape `(N, L, C_in)`.
 **weight** ([array](mlx.core.array.html#mlx.core.array)) – Weight array of shape `(C_out, K, C_in)`.
-**stride** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Kernel stride. Default: `1`.
-**padding** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Input padding. Default: `0`.
-**dilation** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Kernel dilation. Default: `1`.
-**groups** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Input feature groups. Default: `1`.
+**stride** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Kernel stride. Default: `1`.
+**padding** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Input padding. Default: `0`.
+**dilation** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Kernel dilation. Default: `1`.
+**groups** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Input feature groups. Default: `1`.
 
 Returns:
 The convolved array.

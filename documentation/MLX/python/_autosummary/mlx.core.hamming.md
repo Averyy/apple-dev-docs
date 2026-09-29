@@ -41,7 +41,7 @@ The Hamming window is a taper formed by using a weighted cosine.
 \qquad 0 \le n \le M-1\]
 
 Parameters:
-**M** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of points in the output window.
+**M** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Number of points in the output window.
 
 Returns:
 

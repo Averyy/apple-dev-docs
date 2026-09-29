@@ -43,7 +43,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array. Must be a real symmetric or complex
 Hermitian matrix.
-**UPLO** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Whether to use the upper (`"U"`) or
+**UPLO** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Whether to use the upper (`"U"`) or
 lower (`"L"`) triangle of the matrix.  Default: `"L"`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.

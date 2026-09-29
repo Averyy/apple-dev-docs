@@ -39,7 +39,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fu
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – The input to take the shape from.
-**vals** ([float](https://docs.python.org/3/library/functions.html#float)* or *[int](https://docs.python.org/3/library/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – Values to fill the array with.
+**vals** ([float](https://docs.python.org/3/builtins/functions.html#float)* or *[int](https://docs.python.org/3/builtins/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – Values to fill the array with.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Data type of the output array. If
 unspecified the type of the input is used.
 

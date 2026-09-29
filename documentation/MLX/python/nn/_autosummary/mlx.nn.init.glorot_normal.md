@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 # mlx.nn.init.glorot_normal
 
-**glorot_normal(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
+**glorot_normal(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/builtins/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
 : A Glorot normal initializer.
 This initializer samples from a normal distribution with a standard
 deviation computed from the number of input (`fan_in`) and output
@@ -52,7 +52,7 @@ with the same shape as the input, filled with samples from the Glorot
 normal distribution.
 
 Return type:
-*Callable*[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]
+*Callable*[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/builtins/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]
 
 Example
 >>> init_fn = nn.init.glorot_normal()

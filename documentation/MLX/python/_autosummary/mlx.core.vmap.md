@@ -41,11 +41,11 @@ Parameters:
 **fun** (*Callable*) – A function which takes a variable number of
 [array](mlx.core.array.html#mlx.core.array) or a tree of [array](mlx.core.array.html#mlx.core.array) and returns
 a variable number of [array](mlx.core.array.html#mlx.core.array) or a tree of [array](mlx.core.array.html#mlx.core.array).
-**in_axes** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – An integer or a valid prefix tree of the
+**in_axes** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – An integer or a valid prefix tree of the
 inputs to `fun` where each node specifies the vmapped axis. If
 the value is `None` then the corresponding input(s) are not vmapped.
 Defaults to `0`.
-**out_axes** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – An integer or a valid prefix tree of the
+**out_axes** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – An integer or a valid prefix tree of the
 outputs of `fun` where each node specifies the vmapped axis. If
 the value is `None` then the corresponding outputs(s) are not vmapped.
 Defaults to `0`.

@@ -43,12 +43,12 @@ has the same shape as `logits` with the `axis` dimension removed.
 Parameters:
 
 **logits** ([array](mlx.core.array.html#mlx.core.array)) – The *unnormalized* categorical distribution(s).
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The axis which specifies the distribution.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The axis which specifies the distribution.
 Default: `-1`.
-**shape** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – The shape of the output. This must
+**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The shape of the output. This must
 be broadcast compatible with `logits.shape` with the `axis`
 dimension removed. Default: `None`
-**num_samples** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of samples to draw from each
+**num_samples** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of samples to draw from each
 of the categorical distributions in `logits`. The output will have
 `num_samples` in the last dimension. Default: `None`.
 **key** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – A PRNG key. Default: `None`.

@@ -38,8 +38,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 Parameters:
 
-**n** ([int](https://docs.python.org/3/library/functions.html#int)) – Window length.
-**d** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Sample spacing. The default is `1.0`.
+**n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Window length.
+**d** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Sample spacing. The default is `1.0`.
 
 Returns:
 The sample frequencies as a one-dimensional array of type `float32`.

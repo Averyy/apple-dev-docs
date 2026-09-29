@@ -36,7 +36,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.De
 **class Device(**args*, ***kwargs*)**
 : A device to run operations on.
 
-__init__(*self*, *type: mlx.core.DeviceType*, *index: int = 0*) → [None](https://docs.python.org/3/library/constants.html#None)
+__init__(*self*, *type: mlx.core.DeviceType*, *index: int = 0*) → [None](https://docs.python.org/3/builtins/constants.html#None)
 
 Methods
 

@@ -124,8 +124,8 @@ print(dloss_dw)
 ```
 
 You can also take the gradient with respect to arbitrarily nested Python
-containers of arrays (specifically any of [list](https://docs.python.org/3/library/stdtypes.html#list), [tuple](https://docs.python.org/3/library/stdtypes.html#tuple), or
-[dict](https://docs.python.org/3/library/stdtypes.html#dict)).
+containers of arrays (specifically any of [list](https://docs.python.org/3/builtins/stdtypes.html#list), [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple), or
+[dict](https://docs.python.org/3/builtins/stdtypes.html#dict)).
 
 Suppose we wanted a weight and a bias parameter in the above example. A nice
 way to do that is the following:

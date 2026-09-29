@@ -2,14 +2,10 @@
 
 **Framework**: Apple Ads Platform API
 
-Create and update keywords and negative keywords in bulk.
+Create, update, and delete keywords and negative keywords in bulk through these endpoints.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
-
-#### Overview
-
-> **Note**: Bulk delete endpoints for keywords and negative keywords are coming soon. To delete a keyword or negative keyword today, use the single-item [`Delete a Keyword`](delete-keywords-_id_.md) and [`Delete a Negative Keyword`](delete-negative-keywords-_id_.md) endpoints.
 
 #### Overview
 
@@ -19,21 +15,22 @@ Set `allowPartialSuccess: true` in the request to use partial success semantics.
 
 #### Find Bulk Endpoints
 
-Each entity that supports bulk operations exposes create and update endpoints at the following paths:
+Each entity that supports bulk operations exposes create, update, and delete endpoints at the following paths:
 
-| Entity | Bulk Create | Bulk Update |
-| --- | --- | --- |
-| Keywords | `POST /v1/keywords/bulk-create` | `POST /v1/keywords/bulk-update` |
-| Negative Keywords | `POST /v1/negative-keywords/bulk-create` | `POST /v1/negative-keywords/bulk-update` |
+| Entity | Bulk Create | Bulk Update | Bulk Delete |
+| --- | --- | --- | --- |
+| Keywords | `POST /v1/keywords/bulk-create` | `POST /v1/keywords/bulk-update` | `POST /v1/keywords/bulk-delete` |
+| Negative Keywords | `POST /v1/negative-keywords/bulk-create` | `POST /v1/negative-keywords/bulk-update` | `POST /v1/negative-keywords/bulk-delete` |
 
-##### Create and Update
+##### Create Update and Delete
 
-To create or update items in bulk, send a POST request to the entity’s bulk endpoint with an `items` array; the endpoint you call determines the shape of each item’s `data` object:
+To create, update, or delete items in bulk, send a POST request to the entity’s bulk endpoint with an `items` array; the endpoint you call determines the shape of each item’s `data` object:
 
 | Operation | Description |
 | --- | --- |
 | **Create** | Send the array to `/bulk-create`. Each item’s `data` contains the create payload. The response’s `result` array includes one entry per item with a `success` flag and per-item error details on failure. |
 | **Update** | Send the array to `/bulk-update`. Each item’s `data` must include the entity’s `id` plus only the fields you want to change; omitted fields retain their current values. |
+| **Delete** | Send the array to `/bulk-delete`. Each item’s `data` must include the entity’s `id`. Bulk delete soft-deletes entities: a deleted keyword stops serving immediately, and a deleted negative keyword stops suppressing matching terms immediately. The response doesn’t include the deleted entity, just each item’s success status. |
 
 ##### Handle Errors
 
@@ -43,7 +40,7 @@ The response reports bulk-level validation failures (such as sending more items 
 
 ##### Choose Between Bulk and Single Item Endpoints
 
-Prefer bulk endpoints when creating or updating more than a handful of keywords or negative keywords at once, such as rolling out a new keyword list across many ad groups or pausing a large negative keyword list in one pass. A bulk request counts as a single call against your rate limit regardless of how many items it carries, so batching changes into bulk requests is the most effective way to stay under the limits described in [`Applying Rate Limits`](rate-limits.md) during large-scale operations.
+Prefer bulk endpoints when creating, updating, or deleting more than a handful of keywords or negative keywords at once, such as rolling out a new keyword list across many ad groups or pausing a large negative keyword list in one pass. A bulk request counts as a single call against your rate limit regardless of how many items it carries, so batching changes into bulk requests is the most effective way to stay under the limits described in [`Applying Rate Limits`](rate-limits.md) during large-scale operations.
 
 Use the single-item endpoints for one-off changes, such as adjusting a single keyword’s bid, where there’s no batch to build. The single-item response shape is also simpler to handle in application code, since it returns a single `Error` object instead of a per-item `result` array keyed by `correlationId`.
 
@@ -54,11 +51,15 @@ Use the single-item endpoints for one-off changes, such as adjusting a single ke
   Creates multiple keywords in a single request.
 - [Bulk Update Keywords](post-keywords-bulk-update.md)
   Updates multiple keywords in a single request.
+- [Bulk Delete Keywords](post-keywords-bulk-delete.md)
+  Soft-deletes multiple keywords in a single request.
 ### Negative Keywords
 - [Bulk Create Negative Keywords](post-negative-keywords-bulk-create.md)
   Create multiple negative keywords in a single request.
 - [Bulk Update Negative Keywords](post-negative-keywords-bulk-update.md)
   Update multiple negative keywords in a single request.
+- [Bulk Delete Negative Keywords](post-negative-keywords-bulk-delete.md)
+  Delete multiple negative keywords in a single request.
 
 ## See Also
 

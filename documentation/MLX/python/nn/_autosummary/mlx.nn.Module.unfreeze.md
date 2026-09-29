@@ -45,13 +45,13 @@ model.unfreeze(keys="bias")
 
 Parameters:
 
-**recurse** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If True then unfreeze the parameters of the
+**recurse** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If True then unfreeze the parameters of the
 submodules as well. Default: `True`.
-**keys** ([str](https://docs.python.org/3/library/stdtypes.html#str)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*[*[str](https://docs.python.org/3/library/stdtypes.html#str)*]**, **optional*) – If provided then only these
+**keys** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*]**, **optional*) – If provided then only these
 parameters will be unfrozen otherwise all the parameters of a
 module. For instance unfreeze all biases by calling
 `module.unfreeze(keys="bias")`.
-**strict** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to `True` validate that the passed keys exist.
+**strict** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `True` validate that the passed keys exist.
 Default: `False`.
 
 Returns:

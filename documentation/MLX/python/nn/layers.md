@@ -31,7 +31,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/layers.html
 
 # Layers
 
-| ALiBi() |  |
+| ALiBi() | Implements Attention with Linear Biases (ALiBi). |
 | --- | --- |
 | AllToShardedLinear(input_dims, output_dims) | Each member of the group applies part of the affine transformation such that the result is sharded across the group. |
 | AvgPool1d(kernel_size[, stride, padding]) | Applies 1-dimensional average pooling. |

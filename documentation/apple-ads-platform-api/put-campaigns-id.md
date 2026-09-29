@@ -12,6 +12,8 @@ Update a campaign’s name, status, budget, targeting, or bid strategy.
 
 This endpoint updates an existing campaign. It changes only the fields included in the request body. Omitted fields retain their current values. The `promotedObjectType` and `promotedObjectId` fields are **not** part of the `CampaignUpdate` schema. They’re immutable after campaign creation, so this endpoint can’t change them.
 
+For Apple Maps campaigns, `targeting.supplyPlacement` follows the same omit-to-leave-unchanged rule as every other update field. Omitting it doesn’t expand targeting to every placement. A campaign created with a single Maps placement (`MAPS_SEARCH_RESULTS` or `MAPS_SEARCH_HOME`) can’t be widened to target both placements through this endpoint. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for how to set up both placements at create time instead.
+
 #### Payload Examples
 
 **Update Status**:

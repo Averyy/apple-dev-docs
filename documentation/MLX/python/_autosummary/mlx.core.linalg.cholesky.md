@@ -43,7 +43,7 @@ If the input matrix is not symmetric positive semi-definite, behaviour is undefi
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**upper** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, return the upper triangular Cholesky factor.
+**upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, return the upper triangular Cholesky factor.
 If `False`, return the lower triangular Cholesky factor. Default: `False`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.

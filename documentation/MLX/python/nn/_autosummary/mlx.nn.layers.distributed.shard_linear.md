@@ -45,9 +45,9 @@ new layer is returned.
 Parameters:
 
 **module** ([Module](../module.html#mlx.nn.Module)) – The linear layer to be sharded.
-**sharding** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – One of “all-to-sharded” and
+**sharding** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – One of “all-to-sharded” and
 “sharded-to-all” that defines the type of sharding to perform.
-**segments** ([int](https://docs.python.org/3/library/functions.html#int)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)) – The segments to use. Default: `1`.
+**segments** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)) – The segments to use. Default: `1`.
 **group** ([Group](../../_autosummary/mlx.core.distributed.Group.html#mlx.core.distributed.Group)) – The distributed group to shard
 across. If not set, the global group will be used. Default: `None`.
 

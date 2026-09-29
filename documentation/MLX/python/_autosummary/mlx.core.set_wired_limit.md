@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 
 # mlx.core.set_wired_limit
 
-**set_wired_limit(*limit: int*) → [int](https://docs.python.org/3/library/functions.html#int)**
+**set_wired_limit(*limit: int*) → [int](https://docs.python.org/3/builtins/functions.html#int)**
 : Set the wired size limit.
 
 Note
@@ -53,12 +53,12 @@ Use [device_info()](mlx.core.device_info.html#mlx.core.device_info) to query the
 (`"memory_size"`).
 
 Parameters:
-**limit** ([int](https://docs.python.org/3/library/functions.html#int)) – The wired limit in bytes.
+**limit** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The wired limit in bytes.
 
 Returns:
 The previous wired limit in bytes.
 
 Return type:
-[int](https://docs.python.org/3/library/functions.html#int)
+[int](https://docs.python.org/3/builtins/functions.html#int)
 
 ** Contents

@@ -80,7 +80,7 @@ provided. This can be loaded with:
 In this case [load()](../python/_autosummary/mlx.core.load.html#mlx.core.load) returns a dictionary of names to arrays.
 
 The functions [save_safetensors()](../python/_autosummary/mlx.core.save_safetensors.html#mlx.core.save_safetensors) and [save_gguf()](../python/_autosummary/mlx.core.save_gguf.html#mlx.core.save_gguf) are similar to
-[savez()](../python/_autosummary/mlx.core.savez.html#mlx.core.savez), but they take as input a [dict](https://docs.python.org/3/library/stdtypes.html#dict) of string names to arrays:
+[savez()](../python/_autosummary/mlx.core.savez.html#mlx.core.savez), but they take as input a [dict](https://docs.python.org/3/builtins/stdtypes.html#dict) of string names to arrays:
 
 ```
 >>> a = mx.array([1.0])

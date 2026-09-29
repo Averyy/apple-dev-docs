@@ -39,9 +39,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – Axis or axes to count over.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Axis or axes to count over.
 Defaults to `None` in which case the whole array is counted.
-**keepdims** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Keep the reduced axes as size one.
+**keepdims** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Keep the reduced axes as size one.
 Default: `False`.
 
 Returns:

@@ -40,8 +40,8 @@ Parameters:
 
 **start** (*scalar*) – Starting value.
 **stop** (*scalar*) – Stopping value.
-**num** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Number of samples, defaults to `50`.
-**endpoint** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, `stop` is the last
+**num** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Number of samples, defaults to `50`.
+**endpoint** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, `stop` is the last
 sample. Otherwise it is not included and the samples are spaced
 over the half-open interval `[start, stop)`. Default: `True`.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Specifies the data type of the output,

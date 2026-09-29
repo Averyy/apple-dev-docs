@@ -297,7 +297,7 @@ With a campaign running and data flowing, you’re ready to optimize in the foll
 - To act on automated suggestions, use [`Query Daily Budget Recommendations`](query-daily-budget-recommendations.md).
 - To understand how often your ads win auctions versus competitors, use [`Impression Share Query`](query-app-impression-share-data.md).
 - To identify trending search terms in your category, use [`Search Term Popularity Query`](query-app-search-term-popularity-data.md).
-- Scale keyword changes with [`Bulk Update Keywords`](post-keywords-bulk-update.md). To remove a keyword, use the single-item [`Delete a Keyword`](delete-keywords-_id_.md) endpoint. When looping over many campaigns or ad groups, watch the rate-limit headers described in [`Applying Rate Limits`](rate-limits.md) and back off before hitting a `429`.
+- Scale keyword changes with [`Bulk Update Keywords`](post-keywords-bulk-update.md), and scale removals with [`Bulk Delete Keywords`](post-keywords-bulk-delete.md). To remove a single keyword, use [`Delete a Keyword`](delete-keywords-_id_.md) instead. When looping over many campaigns or ad groups, watch the rate-limit headers described in [`Applying Rate Limits`](rate-limits.md) and back off before hitting a `429`.
 
 ## See Also
 

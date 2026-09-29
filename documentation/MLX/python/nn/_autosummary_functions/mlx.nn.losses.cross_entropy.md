@@ -46,9 +46,9 @@ the `axis` dimension removed. If the `targets` are probabilities
 (or one-hot encoded), then the `targets` shape should be the same as
 the `logits` shape.
 **weights** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)*, **optional*) – Optional weights for each target. Default: `None`.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The axis over which to compute softmax. Default: `-1`.
-**label_smoothing** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Label smoothing factor. Default: `0`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The axis over which to compute softmax. Default: `-1`.
+**label_smoothing** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Label smoothing factor. Default: `0`.
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
 Returns:
@@ -73,15 +73,15 @@ array([0.0485873, 0.0485873], dtype=float32)
 >>> nn.losses.cross_entropy(logits, targets)
 array([0.348587, 0.348587], dtype=float32)
 >>>
->>> # Half precision logits with class indices as targets. On CUDA a
+>>> # Half precision logits with class indices as targets. On the GPU a
 >>> # fused kernel accumulates the reduction in float32:
 >>> logits = mx.array([[2.0, -1.0], [-1.0, 2.0]], mx.bfloat16)
 >>> targets = mx.array([0, 1])
 >>> nn.losses.cross_entropy(logits, targets)
-array([0.0485873, 0.0485873], dtype=float32)
+array([0.048584, 0.048584], dtype=bfloat16)
 >>>
->>> # Metal and the CPU reduce in the dtype of the logits, so upcast
->>> # them to get the same accuracy:
+>>> # The CPU reduces in the dtype of the logits, so upcast them to get
+>>> # the same accuracy:
 >>> nn.losses.cross_entropy(logits.astype(mx.float32), targets)
 array([0.0485873, 0.0485873], dtype=float32)
 

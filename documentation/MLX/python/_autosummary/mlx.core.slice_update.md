@@ -41,7 +41,7 @@ Parameters:
 **a** ([array](mlx.core.array.html#mlx.core.array)) – The input array to update
 **update** ([array](mlx.core.array.html#mlx.core.array)) – The update array.
 **start_indices** ([array](mlx.core.array.html#mlx.core.array)) – The index location to start the slice at.
-**axes** ([tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The axes corresponding to the indices in `start_indices`.
+**axes** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The axes corresponding to the indices in `start_indices`.
 
 Returns:
 The output array with the same shape and type as the input.

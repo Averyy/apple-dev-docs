@@ -33,18 +33,18 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 
 # mlx.core.load
 
-**load(*file: file | str | Path*, */*, *format: str | None = None*, *return_metadata: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array) | [dict](https://docs.python.org/3/library/stdtypes.html#dict)[[str](https://docs.python.org/3/library/stdtypes.html#str), [array](mlx.core.array.html#mlx.core.array)] | [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[dict](https://docs.python.org/3/library/stdtypes.html#dict)[[str](https://docs.python.org/3/library/stdtypes.html#str), [array](mlx.core.array.html#mlx.core.array)], [dict](https://docs.python.org/3/library/stdtypes.html#dict)[[str](https://docs.python.org/3/library/stdtypes.html#str), Any]]**
+**load(*file: file | str | Path*, */*, *format: str | None = None*, *return_metadata: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array) | [dict](https://docs.python.org/3/builtins/stdtypes.html#dict)[[str](https://docs.python.org/3/builtins/stdtypes.html#str), [array](mlx.core.array.html#mlx.core.array)] | [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[dict](https://docs.python.org/3/builtins/stdtypes.html#dict)[[str](https://docs.python.org/3/builtins/stdtypes.html#str), [array](mlx.core.array.html#mlx.core.array)], [dict](https://docs.python.org/3/builtins/stdtypes.html#dict)[[str](https://docs.python.org/3/builtins/stdtypes.html#str), Any]]**
 : Load array(s) from a binary file.
 The supported formats are `.npy`, `.npz`, `.safetensors`, and
 `.gguf`.
 
 Parameters:
 
-**file** (*file**, *[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – File in which the array is saved.
-**format** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Format of the file. If `None`, the
+**file** (*file**, *[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – File in which the array is saved.
+**format** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Format of the file. If `None`, the
 format is inferred from the file extension. Supported formats:
 `npy`, `npz`, and `safetensors`. Default: `None`.
-**return_metadata** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Load the metadata for formats
+**return_metadata** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Load the metadata for formats
 which support matadata. The metadata will be returned as an
 additional dictionary. Default: `False`.
 
@@ -56,7 +56,7 @@ tuple `(arrays, metadata)` will be returned where the second
 element is a dictionary containing the metadata.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array), [dict](https://docs.python.org/3/library/stdtypes.html#dict), or [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)
+[array](mlx.core.array.html#mlx.core.array), [dict](https://docs.python.org/3/builtins/stdtypes.html#dict), or [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)
 
 Warning
 When loading unsupported quantization formats from GGUF, tensors

@@ -39,7 +39,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fl
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – Axis or axes to flip over.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Axis or axes to flip over.
 Defaults to `None` in which case all axes are flipped.
 
 Returns:

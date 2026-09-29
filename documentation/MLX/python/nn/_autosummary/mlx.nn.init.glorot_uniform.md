@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 # mlx.nn.init.glorot_uniform
 
-**glorot_uniform(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
+**glorot_uniform(*dtype: Dtype = mlx.core.float32*) → [Callable](https://docs.python.org/3/library/typing.html#typing.Callable)[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/builtins/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]**
 : A Glorot uniform initializer.
 This initializer samples from a uniform distribution on the interval
 \([-\text{limit}, \text{limit}]\), where the bound \(\text{limit}\)
@@ -53,7 +53,7 @@ with the same shape as the input, filled with samples from the Glorot
 uniform distribution.
 
 Return type:
-*Callable*[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/library/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]
+*Callable*[[[array](../../_autosummary/mlx.core.array.html#mlx.core.array), [float](https://docs.python.org/3/builtins/functions.html#float)], [array](../../_autosummary/mlx.core.array.html#mlx.core.array)]
 
 Example
 >>> init_fn = nn.init.glorot_uniform()

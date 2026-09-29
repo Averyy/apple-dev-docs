@@ -41,10 +41,10 @@ exp(a) / sum(exp(a), axis, keepdims=True)
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – Optional axis or axes to compute
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Optional axis or axes to compute
 the softmax over. If unspecified this performs the softmax over
 the full array.
-**precise** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Accumulate in `float32` for inputs of
+**precise** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Accumulate in `float32` for inputs of
 lower precision. Otherwise the accumulation type matches the
 input, which can lose precision over long reduction axes.
 Default: `False`.

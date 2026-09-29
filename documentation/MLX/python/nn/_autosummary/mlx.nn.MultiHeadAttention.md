@@ -47,20 +47,20 @@ that should *not* be attended to.
 
 Parameters:
 
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The model dimensions. This is also the default
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The model dimensions. This is also the default
 value for the queries, keys, values, and the output.
-**num_heads** ([int](https://docs.python.org/3/library/functions.html#int)) – The number of attention heads to use.
-**query_input_dims** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The input dimensions of the queries.
+**num_heads** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of attention heads to use.
+**query_input_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The input dimensions of the queries.
 Default: `dims`.
-**key_input_dims** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The input dimensions of the keys.
+**key_input_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The input dimensions of the keys.
 Default: `dims`.
-**value_input_dims** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The input dimensions of the values.
+**value_input_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The input dimensions of the values.
 Default: `key_input_dims`.
-**value_dims** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The dimensions of the values after the
+**value_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The dimensions of the values after the
 projection. Default: `dims`.
-**value_output_dims** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The dimensions the new values will
+**value_output_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The dimensions the new values will
 be projected to. Default: `dims`.
-**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether or not to use a bias in the projections.
+**bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether or not to use a bias in the projections.
 Default: `False`.
 
 Methods

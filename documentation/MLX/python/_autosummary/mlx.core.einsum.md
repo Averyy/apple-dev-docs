@@ -38,7 +38,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ei
 
 Parameters:
 
-**subscripts** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The Einstein summation convention equation.
+**subscripts** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The Einstein summation convention equation.
 ***operands** ([array](mlx.core.array.html#mlx.core.array)) – The input arrays.
 
 Returns:

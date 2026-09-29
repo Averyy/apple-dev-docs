@@ -12,7 +12,7 @@ Retrieve performance metrics for ad groups.
 
 Ad group reports return one row per ad group. Each row contains a `metadata` object with ad group identifiers (including `campaignId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
-Every apps report request requires a `campaignId` filter; optionally add `adGroupId` in the `filters` array to scope results further. Use `groupBy` to split metrics along a dimension: each dimension value produces its own row within the ad group’s result.
+Filter by the required `campaignId` in the `filters` array, optionally narrowed further by `adGroupId`. Use `groupBy` to split metrics along a dimension: each dimension value produces its own row within the ad group’s result.
 
 See [`Filter`](filter.md) for the full set of supported comparison operators.
 
@@ -24,22 +24,22 @@ See [`AppsReportingRequest`](appsreportingrequest.md).
 
 `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion`
 
-Granularity constraints follow the usual date range rules, from a 7-day span limit for `HOURLY` to a 90-day-old end date for `MONTHLY`.
+Date range requirements vary by granularity: `HOURLY` and `DAILY` are capped at 7-day and 90-day spans respectively, while `WEEKLY` and `MONTHLY` require spans of at least 14 and 90 days respectively.
 
 | Granularity | Constraint |
 | --- | --- |
-| `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
+| `DAILY` | Date range must span 90 days or less. |
 | `HOURLY` | Date range must span 7 days or less, and the start date must be within the last 365 days. |
-| `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
-| `MONTHLY` | End date must be at least 90 days in the past. |
+| `WEEKLY` | Date range must span at least 14 days. |
+| `MONTHLY` | Date range must span at least 90 days. |
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there is no `granularMetrics` breakdown to compute.
 
-Filtering by `campaignId`, selecting a timezone of `ORTZ` or `UTC`, and narrowing the `fields` array all help keep ad group report responses manageable.
+Selecting a timezone of `ORTZ` or `UTC` and narrowing the `fields` array also help keep ad group report responses manageable.
 
 | Constraint | Detail |
 | --- | --- |
-| Filter by `campaignId` | Recommended to scope results and reduce response size. |
+| Filter by `campaignId` | Required to scope results and reduce response size. |
 | Timezone | Use `ORTZ` (reporting timezone) or `UTC`. |
 | Fields selection | Use the `fields` array to request only specific metric columns. |
 

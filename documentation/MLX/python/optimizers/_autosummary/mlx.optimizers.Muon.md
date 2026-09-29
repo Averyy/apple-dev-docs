@@ -49,13 +49,13 @@ dimensions.
 
 Parameters:
 
-**learning_rate** ([float](https://docs.python.org/3/library/functions.html#float)* or **callable*) – The learning rate.
-**momentum** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The momentum strength. Default: `0.95`
-**weight_decay** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The weight decay (L2 penalty).
+**learning_rate** ([float](https://docs.python.org/3/builtins/functions.html#float)* or **callable*) – The learning rate.
+**momentum** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The momentum strength. Default: `0.95`
+**weight_decay** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The weight decay (L2 penalty).
 Default: `0.01`
-**nesterov** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Enables Nesterov momentum. Recommended for
+**nesterov** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Enables Nesterov momentum. Recommended for
 better performance.  Default: `True`
-**ns_steps** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Number of Newton-Schulz iteration steps for
+**ns_steps** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Number of Newton-Schulz iteration steps for
 orthogonalization.  Default: `5`
 
 Methods

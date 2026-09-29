@@ -36,7 +36,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ii
 **class iinfo(**args*, ***kwargs*)**
 : Get information on integer types.
 
-__init__(*self*, *arg: Dtype*, */*) → [None](https://docs.python.org/3/library/constants.html#None)
+__init__(*self*, *arg: Dtype*, */*) → [None](https://docs.python.org/3/builtins/constants.html#None)
 
 Methods
 

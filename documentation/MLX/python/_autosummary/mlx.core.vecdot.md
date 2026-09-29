@@ -40,7 +40,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Axis over which to compute the dot product. Default: `-1`.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Axis over which to compute the dot product. Default: `-1`.
 
 Returns:
 The vector dot product.

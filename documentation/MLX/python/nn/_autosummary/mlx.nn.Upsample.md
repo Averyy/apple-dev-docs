@@ -69,16 +69,16 @@ will raise a `ValueError`.
 
 Parameters:
 
-**scale_factor** ([float](https://docs.python.org/3/library/functions.html#float)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)) – The multiplier for the spatial size.
+**scale_factor** ([float](https://docs.python.org/3/builtins/functions.html#float)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)) – The multiplier for the spatial size.
 If a `float` is provided, it is the multiplier for all spatial dimensions.
 Otherwise, the number of scale factors provided must match the
 number of spatial dimensions.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – The upsampling algorithm, either `"nearest"`,
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – The upsampling algorithm, either `"nearest"`,
 `"linear"` or `"cubic"`. Default: `"nearest"`.
-**align_corners** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Changes the way the corners are treated
+**align_corners** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Changes the way the corners are treated
 during `"linear"` and `"cubic"` upsampling.  See the note above and the
 examples below for more details.  Default: `False`.
-**antialias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, apply an antialiasing filter
+**antialias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, apply an antialiasing filter
 when downsampling with `"linear"` or `"cubic"` mode. For
 `"cubic"` mode this also switches the kernel coefficient to
 `a=-0.5`. Not supported with `"nearest"` mode or with

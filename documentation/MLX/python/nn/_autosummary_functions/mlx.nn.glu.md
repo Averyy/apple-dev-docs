@@ -41,6 +41,6 @@ This function splits the `axis` dimension of the input into two halves
 \[\textrm{GLU}(x) = a * \sigma(b)\]
 
 Parameters:
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimension to split along. Default: `-1`
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimension to split along. Default: `-1`
 
 ** Contents

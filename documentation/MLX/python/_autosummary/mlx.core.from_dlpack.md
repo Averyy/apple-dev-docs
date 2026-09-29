@@ -40,7 +40,7 @@ Parameters:
 
 **x** – Input object implementing `__dlpack__` and
 `__dlpack_device__`.
-**copy** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether to copy the input. If `True`,
+**copy** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether to copy the input. If `True`,
 always copy. If `False`, never copy. If `None`, share memory
 when possible and copy otherwise. Zero-copy imports preserve the
 DLPack strides.

@@ -39,7 +39,7 @@ returns a new collection with the results.
 If `rest` is provided, every item is assumed to be a superset of `tree`
 and the corresponding leaves are provided as extra positional arguments to
 `fn`. In that respect, [tree_map()](#mlx.utils.tree_map) is closer to [itertools.starmap()](https://docs.python.org/3/library/itertools.html#itertools.starmap)
-than to [map()](https://docs.python.org/3/library/functions.html#map).
+than to [map()](https://docs.python.org/3/builtins/functions.html#map).
 The keyword argument `is_leaf` decides what constitutes a leaf from
 `tree` similar to [tree_flatten()](mlx.utils.tree_flatten.html#mlx.utils.tree_flatten).
 import mlx.nn as nn
@@ -56,7 +56,7 @@ Parameters:
 
 **fn** (*callable*) – The function that processes the leaves of the tree.
 **tree** (*Any*) – The main Python tree that will be iterated upon.
-**rest** ([tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*[**Any**]*) – Extra trees to be iterated together with `tree`.
+**rest** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*[**Any**]*) – Extra trees to be iterated together with `tree`.
 **is_leaf** (*callable**, **optional*) – An optional callable that returns `True`
 if the passed object is considered a leaf or `False` otherwise.
 

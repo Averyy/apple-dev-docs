@@ -43,7 +43,7 @@ Parameters:
 the input array excluding the axis dimension.
 **values** ([array](mlx.core.array.html#mlx.core.array)) – Values array. These should be broadcastable with
 the indices.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or **None*) – Axis in the destination to put the values to. If
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None*) – Axis in the destination to put the values to. If
 `axis == None` the destination is flattened prior to the put
 operation.
 

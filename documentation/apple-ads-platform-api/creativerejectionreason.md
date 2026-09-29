@@ -55,7 +55,7 @@ The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/
 - `reasonType` (string): Type of rejection reason. Read-only.
 - `reasonCode` (string): Code for the specific rejection reason. Read-only.
 - `comment` (string): Additional context for the rejection. Nullable. Read-only.
-- `reasonLevel` (string): The level at which the rejection applies. Possible values: `DEFAULT_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE_LOCALE`, `CUSTOM_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE_LOCALE`. Read-only.
+- `reasonLevel` (string): The level at which the rejection applies. Read-only.
 
 ## See Also
 

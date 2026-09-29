@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ga
 
 # mlx.core.gather_mm
 
-**gather_mm(*a: array*, *b: array*, */*, *lhs_indices: array*, *rhs_indices: array*, ***, *sorted_indices: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**gather_mm(*a: array*, *b: array*, */*, *lhs_indices: array | None = None*, *rhs_indices: array | None = None*, ***, *sorted_indices: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Matrix multiplication with matrix-level gather.
 Performs a gather of the operands with the given indices followed by a
 (possibly batched) matrix multiplication of two arrays.  This operation
@@ -55,7 +55,7 @@ Parameters:
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
 **lhs_indices** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Integer indices for `a`. Default: `None`
 **rhs_indices** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Integer indices for `b`. Default: `None`
-**sorted_indices** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – May allow a faster implementation
+**sorted_indices** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – May allow a faster implementation
 if the passed indices are sorted. Default: `False`.
 
 Returns:

@@ -43,7 +43,7 @@ Parameters:
 
 **fn** (*callable*) – The function that processes the leaves of the tree.
 **tree** (*Any*) – The main Python tree that will be iterated upon.
-**rest** ([tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*[**Any**]*) – Extra trees to be iterated together with `tree`.
+**rest** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*[**Any**]*) – Extra trees to be iterated together with `tree`.
 **is_leaf** (*Optional**[**Callable**]*) – An optional callable that returns `True`
 if the passed object is considered a leaf or `False` otherwise.
 **path** (*Optional**[**Any**]*) – Prefix will be added to the result.

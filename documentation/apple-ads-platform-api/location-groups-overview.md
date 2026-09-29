@@ -47,7 +47,6 @@ A location group object exposes the following fields:
 | `adAccountId` | string | The ad account that owns this location group. |
 | `groupType` | string | Type of location grouping: `STATIC` or `DYNAMIC`. |
 | `systemStatus` | string | System-managed status: `VALID`, `INVALID`, `PENDING`, or `DELETED`. **Read-only.** You can’t update or delete groups with `INVALID` or `PENDING` status. |
-| `query` | string | RSQL query generated from `rules` for `DYNAMIC` groups. **Read-only.** |
 | `rules` | array | Rule objects defining membership criteria for `DYNAMIC` groups. |
 | `locationIds` | array of strings | Location IDs included in the group (`STATIC` groups). |
 | `isAllLocationsGroup` | boolean | `true` for the system-created “All Locations” group for a brand. **Read-only.** |

@@ -42,7 +42,7 @@ Parameters:
 
 **inputs** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The predicted values.
 **targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The target values. They should be -1 or 1.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
 Returns:

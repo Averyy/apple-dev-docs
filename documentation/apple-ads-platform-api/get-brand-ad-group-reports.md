@@ -28,14 +28,14 @@ The `groupBy` array supports three dimensions for ad groups: device class, busin
 | `locationId` | Break down metrics per business location. |
 | `supplyPlacement` | Break down metrics by ad placement. |
 
-Each granularity value comes with its own date range restrictions, from a 7-day span limit for `HOURLY` to a 90-day-old end date for `MONTHLY`.
+Date range requirements vary by granularity: `HOURLY` and `DAILY` are capped at 7-day and 90-day spans respectively, while `WEEKLY` and `MONTHLY` require spans of at least 14 and 90 days respectively.
 
 | Granularity | Constraint |
 | --- | --- |
-| `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
+| `DAILY` | Date range must span 90 days or less. |
 | `HOURLY` | Date range must span 7 days or less, and the start date must be within the last 365 days. |
-| `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
-| `MONTHLY` | End date must be at least 90 days in the past. |
+| `WEEKLY` | Date range must span at least 14 days. |
+| `MONTHLY` | Date range must span at least 90 days. |
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there is no `granularMetrics` breakdown to compute.
 

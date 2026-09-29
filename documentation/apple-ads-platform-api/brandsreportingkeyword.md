@@ -34,8 +34,8 @@ The `BrandsReportingKeyword` extends the base `ReportingKeyword` object with a `
 - `adAccountId` (int64): The identifier of the ad account that owns the keyword.
 - `deleted` (boolean): `true` if the keyword has been deleted.
 - `text` (string): The keyword text.
-- `status` (string): Possible values: `ENABLED`, `PAUSED`.
-- `matchType` (string): Match type for the keyword in Maps campaigns. Possible values: `PHRASE`, `CATEGORY`.
+- `status` (string): The keyword’s status at the time captured in the report.
+- `matchType` (string): Match type for the keyword in Maps campaigns.
 - `bid` (Money): See [`Money`](money.md) for details.
 - `adGroupId` (int64): The identifier of the ad group that owns the keyword.
 - `modificationTime` (date-time): The time the keyword was last modified.

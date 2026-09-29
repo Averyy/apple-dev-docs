@@ -43,18 +43,18 @@ The channels are expected to be last i.e. the input shape should be `NLC` where:
 
 Parameters:
 
-**in_channels** ([int](https://docs.python.org/3/library/functions.html#int)) – The number of input channels
-**out_channels** ([int](https://docs.python.org/3/library/functions.html#int)) – The number of output channels
-**kernel_size** ([int](https://docs.python.org/3/library/functions.html#int)) – The size of the convolution filters
-**stride** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The stride when applying the filter.
+**in_channels** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of input channels
+**out_channels** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of output channels
+**kernel_size** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The size of the convolution filters
+**stride** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The stride when applying the filter.
 Default: `1`.
-**padding** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – How many positions to 0-pad the input with.
+**padding** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – How many positions to 0-pad the input with.
 Default: `0`.
-**dilation** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The dilation of the convolution.
+**dilation** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The dilation of the convolution.
 Default: `1`.
-**output_padding** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Additional size added to one side of the
+**output_padding** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Additional size added to one side of the
 output shape. Default: `0`.
-**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True` add a learnable bias to the output.
+**bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True` add a learnable bias to the output.
 Default: `True`
 
 Methods

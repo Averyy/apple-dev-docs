@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.qu
 
 # mlx.core.quantize
 
-**quantize(*w: array*, */*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *global_scale: array | None = None*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
+**quantize(*w: array*, */*, *group_size: int | None = None*, *bits: int | None = None*, *mode: str = 'affine'*, ***, *global_scale: array | None = None*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
 : Quantize the array `w`.
 Note, every `group_size` elements in a row of `w` are quantized
 together. Hence, the last dimension of `w` should be divisible by
@@ -49,13 +49,13 @@ The supported quantization modes are `"affine"`, `"mxfp4"`,
 Parameters:
 
 **w** ([array](mlx.core.array.html#mlx.core.array)) – Array to be quantized
-**group_size** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The size of the group in `w` that shares a
+**group_size** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The size of the group in `w` that shares a
 scale and bias. See supported values and defaults in the
 [table of quantization modes](#quantize-modes). Default: `None`.
-**bits** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of bits occupied by each element of
+**bits** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of bits occupied by each element of
 `w` in the quantized array. See supported values and defaults in the
 [table of quantization modes](#quantize-modes). Default: `None`.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – The quantization mode. Default: `"affine"`.
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – The quantization mode. Default: `"affine"`.
 **global_scale** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – The per-input float32 scale used for
 `"nvfp4"` quantization if provided. Default: `None`.
 
@@ -67,7 +67,7 @@ scales (array): The quantization scales
 biases (array): The quantization biases (returned for `mode=="affine"`).
 
 Return type:
-[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)
 
 Notes
 

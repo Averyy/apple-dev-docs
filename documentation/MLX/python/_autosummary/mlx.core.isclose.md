@@ -47,9 +47,9 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**rtol** ([float](https://docs.python.org/3/library/functions.html#float)) – Relative tolerance.
-**atol** ([float](https://docs.python.org/3/library/functions.html#float)) – Absolute tolerance.
-**equal_nan** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If `True`, NaNs are considered equal.
+**rtol** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Relative tolerance.
+**atol** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Absolute tolerance.
+**equal_nan** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If `True`, NaNs are considered equal.
 Defaults to `False`.
 
 Returns:

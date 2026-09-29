@@ -38,9 +38,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 Parameters:
 
-**low** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The lower bound of the uniform distribution.
+**low** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The lower bound of the uniform distribution.
 Default: `0.0`.
-**high** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The upper bound of the uniform distribution.
+**high** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The upper bound of the uniform distribution.
 Default: `1.0`
 **dtype** ([Dtype](../../_autosummary/mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – The data type of the array. Default: `float32`.
 

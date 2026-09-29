@@ -34,7 +34,7 @@ The `TimeRange` defines the date window, timezone, and optional time-series brea
 - `start` (date): The start date in YYYY-MM-DD format. The range is inclusive of this date.
 - `end` (date): The end date in YYYY-MM-DD format. The range is inclusive of this date.
 - `timeZone` (string): The time zone for the report date range. The default is ORTZ (org timezone). Both ORTZ and UTC are supported for all reports except search term-level, which only supports ORTZ.
-- `granularity` (string): Time period breakdown for granularMetrics in the response. When specified, the response includes granularMetrics broken down by this period. Possible values: `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`. HOURLY granularity is not supported for ad-level or search term-level reports.
+- `granularity` (string): Time period breakdown for granularMetrics in the response. When specified, the response includes granularMetrics broken down by this period. HOURLY granularity is not supported for ad-level or search term-level reports.
 
 ## See Also
 

@@ -48,12 +48,12 @@ result into crashes.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
-**shape** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – The shape of the resulting array. If
+**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The shape of the resulting array. If
 None it defaults to `a.shape()`.
-**strides** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – The strides of the resulting array. If
+**strides** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The strides of the resulting array. If
 None it defaults to the reverse exclusive cumulative product of
 `a.shape()`.
-**offset** ([int](https://docs.python.org/3/library/functions.html#int)) – Skip that many elements from the beginning of the input
+**offset** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Skip that many elements from the beginning of the input
 array.
 
 Returns:

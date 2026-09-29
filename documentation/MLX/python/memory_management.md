@@ -33,6 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/memory_management.html
 
 | get_active_memory() | Get the actively used memory in bytes. |
 | --- | --- |
+| get_array_buffer_size(*args) | Get the size of the buffers backing arrays in bytes. |
 | get_peak_memory() | Get the peak amount of used memory in bytes. |
 | reset_peak_memory() | Reset the peak memory to zero. |
 | get_cache_memory() | Get the cache size in bytes. |

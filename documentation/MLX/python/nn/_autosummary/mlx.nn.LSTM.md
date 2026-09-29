@@ -58,9 +58,9 @@ each time step, both of shape `NLH` or `LH`.
 
 Parameters:
 
-**input_size** ([int](https://docs.python.org/3/library/functions.html#int)) – Dimension of the input, `D`.
-**hidden_size** ([int](https://docs.python.org/3/library/functions.html#int)) – Dimension of the hidden state, `H`.
-**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Whether to use biases or not. Default: `True`.
+**input_size** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Dimension of the input, `D`.
+**hidden_size** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Dimension of the hidden state, `H`.
+**bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to use biases or not. Default: `True`.
 
 Methods
 

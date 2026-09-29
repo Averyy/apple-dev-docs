@@ -49,7 +49,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
-**block_size** ([int](https://docs.python.org/3/library/functions.html#int)) – Size of blocks to be masked. Must be `32` or `64`. Default: `64`.
+**block_size** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Size of blocks to be masked. Must be `32` or `64`. Default: `64`.
 **mask_out** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Mask for output. Default: `None`.
 **mask_lhs** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Mask for `a`. Default: `None`.
 **mask_rhs** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Mask for `b`. Default: `None`.

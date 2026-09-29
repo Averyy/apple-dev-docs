@@ -115,7 +115,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | from_dlpack(x, /, *[, copy]) | Create an array from an object that supports DLPack. |
 | full_like(a, vals[, dtype, stream]) | An array filled withvalswith the same shape as the input. |
 | from_fp8(x[, dtype, stream]) | Convert the array from fp8 (e4m3) to another floating-point type. |
-| gather_mm(a, b, /, lhs_indices, rhs_indices, *) | Matrix multiplication with matrix-level gather. |
+| gather_mm(a, b, /[, lhs_indices, ...]) | Matrix multiplication with matrix-level gather. |
 | gather_qmm(x, w, /, scales[, biases, ...]) | Perform quantized matrix multiplication with matrix-level gather. |
 | greater(a, b[, stream]) | Element-wise greater than. |
 | greater_equal(a, b[, stream]) | Element-wise greater or equal. |
@@ -222,9 +222,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | to_fp8(x, *[, stream]) | Convert the array to fp8 (e4m3) from another floating-point type. |
 | trace(a, /[, offset, axis1, axis2, dtype, ...]) | Return the sum along a specified diagonal in the given array. |
 | transpose(a, /[, axes, stream]) | Transpose the dimensions of the array. |
-| tri(n, m, k[, dtype, stream]) | An array with ones at and below the given diagonal and zeros elsewhere. |
-| tril(x, k, *[, stream]) | Zeros the array above the given diagonal. |
-| triu(x, k, *[, stream]) | Zeros the array below the given diagonal. |
+| tri(n[, m, k, dtype, stream]) | An array with ones at and below the given diagonal and zeros elsewhere. |
+| tril(x[, k, stream]) | Zeros the array above the given diagonal. |
+| triu(x[, k, stream]) | Zeros the array below the given diagonal. |
 | trunc(a, /, *[, stream]) | Element-wise truncation towards zero. |
 | unflatten(a, /, axis, shape, *[, stream]) | Unflatten an axis of an array to a shape. |
 | unstack(x, /, *[, axis, stream]) | Split an array into a sequence of arrays along the given axis. |

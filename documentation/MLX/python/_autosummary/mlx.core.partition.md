@@ -41,11 +41,11 @@ The ordering of the elements in partitions is undefined.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**kth** ([int](https://docs.python.org/3/library/functions.html#int)) – Element at the `kth` index will be in its sorted
+**kth** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Element at the `kth` index will be in its sorted
 position in the output. All elements before the kth index will
 be less or equal to the `kth` element and all elements after
 will be greater or equal to the `kth` element in the output.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or **None**, **optional*) – Optional axis to partition over.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None**, **optional*) – Optional axis to partition over.
 If `None`, this partitions over the flattened array.
 If unspecified, it defaults to `-1`.
 

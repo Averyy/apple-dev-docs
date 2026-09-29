@@ -43,7 +43,7 @@ Parameters:
 
 **lower** (*scalar** or *[array](mlx.core.array.html#mlx.core.array)) – Lower bound of the domain.
 **upper** (*scalar** or *[array](mlx.core.array.html#mlx.core.array)) – Upper bound of the domain.
-**shape** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – The shape of the output.
+**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The shape of the output.
 Default:`()`.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – The data type of the output.
 Default: `float32`.

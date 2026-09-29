@@ -40,7 +40,7 @@ our functions have learnable parameters they should be implemented as
 `nn.Module` instances.
 
 Parameters:
-**modules** ([tuple](https://docs.python.org/3/library/stdtypes.html#tuple)* of **Callables*) – The modules to call in order
+**modules** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)* of **Callables*) – The modules to call in order
 
 Methods
 

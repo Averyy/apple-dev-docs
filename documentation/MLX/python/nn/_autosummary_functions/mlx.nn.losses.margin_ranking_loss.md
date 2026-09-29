@@ -48,9 +48,9 @@ Parameters:
 **inputs2** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Scores for the second input.
 **targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Labels indicating whether samples in `inputs1` should be ranked higher
 than samples in `inputs2`. Values should be 1 or -1.
-**margin** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The margin by which the scores should be separated.
+**margin** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The margin by which the scores should be separated.
 Default: `0.0`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
 Returns:

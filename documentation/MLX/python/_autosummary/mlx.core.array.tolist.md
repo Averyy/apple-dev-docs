@@ -34,7 +34,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 # mlx.core.array.tolist
 
 **array.tolist(*self*) → list_or_scalar**
-: Convert the array to a Python [list](https://docs.python.org/3/library/stdtypes.html#list).
+: Convert the array to a Python [list](https://docs.python.org/3/builtins/stdtypes.html#list).
 
 Returns:
 The Python list.
@@ -45,6 +45,6 @@ The value type of the list corresponding to the last dimension is either
 `bool`, `int` or `float` depending on the `dtype` of the array.
 
 Return type:
-[list](https://docs.python.org/3/library/stdtypes.html#list)
+[list](https://docs.python.org/3/builtins/stdtypes.html#list)
 
 ** Contents

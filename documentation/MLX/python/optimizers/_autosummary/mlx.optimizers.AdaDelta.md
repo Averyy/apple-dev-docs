@@ -45,10 +45,10 @@ w_{t+1} &= w_t - \lambda \Delta w_{t+1}\end{split}\]
 
 Parameters:
 
-**learning_rate** ([float](https://docs.python.org/3/library/functions.html#float)* or **callable*) – The learning rate \(\lambda\).
-**rho** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The coefficient \(\rho\) used for computing a
+**learning_rate** ([float](https://docs.python.org/3/builtins/functions.html#float)* or **callable*) – The learning rate \(\lambda\).
+**rho** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The coefficient \(\rho\) used for computing a
 running average of squared gradients. Default: `0.9`
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the denominator to improve
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the denominator to improve
 numerical stability. Default: `1e-6`
 
 Methods

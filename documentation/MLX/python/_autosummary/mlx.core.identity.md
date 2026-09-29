@@ -38,7 +38,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.id
 
 Parameters:
 
-**n** ([int](https://docs.python.org/3/library/functions.html#int)) – The number of rows and columns in the output.
+**n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of rows and columns in the output.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Data type of the output array. Defaults to float32.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to None.
 

@@ -42,7 +42,7 @@ x = round(x * s) / s
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
-**decimals** ([int](https://docs.python.org/3/library/functions.html#int)) – Number of decimal places to round to. (default: 0)
+**decimals** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Number of decimal places to round to. (default: 0)
 
 Returns:
 An array of the same type as `a` rounded to the

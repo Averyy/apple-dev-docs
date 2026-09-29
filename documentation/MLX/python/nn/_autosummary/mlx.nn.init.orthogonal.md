@@ -38,7 +38,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 Parameters:
 
-**gain** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Scaling factor for the orthogonal matrix.
+**gain** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Scaling factor for the orthogonal matrix.
 Default: `1.0`.
 **dtype** ([Dtype](../../_autosummary/mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Data type of the array. Default: `float32`.
 

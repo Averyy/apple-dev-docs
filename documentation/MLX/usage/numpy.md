@@ -176,7 +176,7 @@ c = mx.array(b)
 ## TensorFlow
 
 TensorFlow supports the buffer protocol, but it requires an explicit
-[memoryview](https://docs.python.org/3/library/stdtypes.html#memoryview).
+[memoryview](https://docs.python.org/3/builtins/stdtypes.html#memoryview).
 
 ```
 import mlx.core as mx

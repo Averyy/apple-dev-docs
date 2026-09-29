@@ -46,8 +46,8 @@ Parameters:
 `inputs` are unnormalized logits. Otherwise, `inputs` are probabilities.
 **targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The binary target values in {0, 1}.
 **weights** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)*, **optional*) – Optional weights for each target. Default: `None`.
-**with_logits** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether `inputs` are logits. Default: `True`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**with_logits** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether `inputs` are logits. Default: `True`.
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'mean'`.
 
 Returns:

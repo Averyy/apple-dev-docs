@@ -45,9 +45,9 @@ updated.
 
 Parameters:
 
-**parameters** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A complete or partial dictionary of the modules
+**parameters** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)) – A complete or partial dictionary of the modules
 parameters.
-**strict** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If `True` checks that `parameters` is a
+**strict** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If `True` checks that `parameters` is a
 subset of the module’s parameters. Default: `True`.
 
 Returns:

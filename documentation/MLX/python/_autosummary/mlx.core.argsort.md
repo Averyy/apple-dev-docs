@@ -41,7 +41,7 @@ order. `NaN` values are placed at the end.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or **None**, **optional*) – Optional axis to sort over.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None**, **optional*) – Optional axis to sort over.
 If `None`, this sorts over the flattened array.
 If unspecified, it defaults to -1 (sorting over the last axis).
 

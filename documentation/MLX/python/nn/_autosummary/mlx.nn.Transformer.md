@@ -43,18 +43,18 @@ mechanism.
 
 Parameters:
 
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of expected features in the
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of expected features in the
 encoder/decoder inputs. Default: `512`.
-**num_heads** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of attention heads. Default:
+**num_heads** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of attention heads. Default:
 `8`.
-**num_encoder_layers** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of encoder layers in the
+**num_encoder_layers** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of encoder layers in the
 Transformer encoder. Default: `6`.
-**num_decoder_layers** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of decoder layers in the
+**num_decoder_layers** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of decoder layers in the
 Transformer decoder. Default: `6`.
-**mlp_dims** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The hidden dimension of the MLP block in each
+**mlp_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The hidden dimension of the MLP block in each
 Transformer layer. Defaults to `4*dims` if not provided. Default:
 `None`.
-**dropout** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The dropout value for the Transformer
+**dropout** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The dropout value for the Transformer
 encoder and decoder. Dropout is used after each attention layer and
 the activation in the MLP layer. Default: `0.0`.
 **activation** (*function**, **optional*) – the activation function for the MLP
@@ -63,10 +63,10 @@ hidden layer. Default: [mlx.nn.relu()](../_autosummary_functions/mlx.nn.relu.htm
 standard Transformer encoder. Default: `None`.
 **custom_decoder** ([Module](../module.html#mlx.nn.Module)*, **optional*) – A custom decoder to replace the
 standard Transformer decoder. Default: `None`.
-**norm_first** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – if `True`, encoder and decoder layers
+**norm_first** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – if `True`, encoder and decoder layers
 will perform layer normalization before attention and MLP
 operations, otherwise after. Default: `True`.
-**checkpoint** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – if `True` perform gradient checkpointing
+**checkpoint** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – if `True` perform gradient checkpointing
 to reduce the memory usage at the expense of more computation.
 Default: `False`.
 

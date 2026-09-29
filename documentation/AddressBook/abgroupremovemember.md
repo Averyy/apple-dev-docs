@@ -24,8 +24,8 @@ func ABGroupRemoveMember(_ group: ABGroupRef!, _ personToRemove: ABPersonRef!) -
 ## Parameters
 
 - `group`: The group that you wish to remove `person` from.
-- `member`: The person that you wish to remove from group.
 - `personToRemove`: The member that you wish to remove from `group`.
+- `member`: The person that you wish to remove from group.
 
 ## See Also
 

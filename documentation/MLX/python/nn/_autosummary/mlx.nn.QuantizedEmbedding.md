@@ -41,14 +41,14 @@ layers.
 
 Parameters:
 
-**num_embeddings** ([int](https://docs.python.org/3/library/functions.html#int)) – How many possible discrete tokens can we embed.
+**num_embeddings** ([int](https://docs.python.org/3/builtins/functions.html#int)) – How many possible discrete tokens can we embed.
 Usually called the vocabulary size.
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the embeddings.
-**group_size** (*Optional**[*[int](https://docs.python.org/3/library/functions.html#int)*]*) – The group size to use for the quantized
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the embeddings.
+**group_size** (*Optional**[*[int](https://docs.python.org/3/builtins/functions.html#int)*]*) – The group size to use for the quantized
 weight. See [quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize). Default: `None`.
-**bits** (*Optional**[*[int](https://docs.python.org/3/library/functions.html#int)*]*) – The bit width to use for the quantized weight.
+**bits** (*Optional**[*[int](https://docs.python.org/3/builtins/functions.html#int)*]*) – The bit width to use for the quantized weight.
 See [quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize). Default: `None`.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The quantization method to use (see
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The quantization method to use (see
 [mlx.core.quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize)). Default: `"affine"`.
 
 Methods

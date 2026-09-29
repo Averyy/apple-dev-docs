@@ -1,4 +1,4 @@
 Completed scraping Safari Release Notes!
-Total pages scraped: 3
-Pages skipped (unchanged): 41
+Total pages scraped: 0
+Pages skipped (unchanged): 44
 Pages failed: 0

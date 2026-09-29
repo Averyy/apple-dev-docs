@@ -55,8 +55,8 @@ The `bid` field is the keyword-level bid amount in the account currency, and `ad
 - `adAccountId` (int64): The identifier of the ad account that owns the keyword.
 - `deleted` (boolean): `true` if the keyword has been deleted.
 - `text` (string): The keyword text.
-- `status` (string): Possible values: `ENABLED`, `PAUSED`.
-- `matchType` (string): Possible values: `BROAD`, `EXACT`.
+- `status` (string): The keyword’s status at the time captured in the report.
+- `matchType` (string): The keyword’s match type.
 - `bid` (Money): See [`Money`](money.md) for details.
 - `adGroupId` (int64): The identifier of the ad group that owns the keyword.
 - `modificationTime` (date-time): The time the keyword was last modified.

@@ -40,8 +40,8 @@ Parameters:
 
 **inputs** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The predicted distribution in log space.
 **targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The target values.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The distribution axis. Default: `-1`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The distribution axis. Default: `-1`.
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
 Returns:

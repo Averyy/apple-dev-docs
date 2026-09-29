@@ -51,14 +51,14 @@ Covariate Shift](https://arxiv.org/abs/1502.03167).
 
 Parameters:
 
-**num_features** ([int](https://docs.python.org/3/library/functions.html#int)) – The feature dimension to normalize over.
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – A small additive constant for numerical
+**num_features** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The feature dimension to normalize over.
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – A small additive constant for numerical
 stability. Default: `1e-5`.
-**momentum** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The momentum for updating the running
+**momentum** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The momentum for updating the running
 mean and variance. Default: `0.1`.
-**affine** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, apply a learned affine
+**affine** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, apply a learned affine
 transformation after the normalization. Default: `True`.
-**track_running_stats** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, track the
+**track_running_stats** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, track the
 running mean and variance. Default: `True`.
 
 Examples

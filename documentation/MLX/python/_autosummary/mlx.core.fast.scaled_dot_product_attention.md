@@ -62,8 +62,8 @@ Parameters:
 **q** ([array](mlx.core.array.html#mlx.core.array)) – Queries with shape `[B, N_q, T_q, D]`.
 **k** ([array](mlx.core.array.html#mlx.core.array)) – Keys with shape `[B, N_kv, T_kv, D]`.
 **v** ([array](mlx.core.array.html#mlx.core.array)) – Values with shape `[B, N_kv, T_kv, D]`.
-**scale** ([float](https://docs.python.org/3/library/functions.html#float)) – Scale for queries (typically `1.0 / sqrt(q.shape(-1)`).
-**mask** ([str](https://docs.python.org/3/library/stdtypes.html#str)* or *[array](mlx.core.array.html#mlx.core.array)*, **optional*) – The mask to apply to the
+**scale** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Scale for queries (typically `1.0 / sqrt(q.shape(-1)`).
+**mask** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)* or *[array](mlx.core.array.html#mlx.core.array)*, **optional*) – The mask to apply to the
 query-key scores. The mask can be an array or a string indicating
 the mask type. The only supported string type is `"causal"`. If
 the mask is an array it can be a boolean or additive mask. The mask
@@ -74,7 +74,7 @@ The `"causal"` mask uses lower-right alignment where the
 last query aligns with the last key.
 **sinks** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – An optional array of attention sinks.
 Default: `None`.
-**force_fused** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, use a fused kernel
+**force_fused** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, use a fused kernel
 regardless of the builtin heuristics and raise error when no
 fused kernel is available. For certain configurations this would
 result in slower kernel getting used but can reduce memory

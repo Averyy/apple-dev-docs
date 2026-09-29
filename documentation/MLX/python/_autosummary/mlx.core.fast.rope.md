@@ -44,15 +44,15 @@ The input is expected to be at least 3D with shape `(B, *, T, D)` where:
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – The input array.
-**dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The feature dimensions to be rotated. If the input feature
+**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The feature dimensions to be rotated. If the input feature
 is larger than dims then the rest is left unchanged.
-**traditional** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If set to `True` choose the traditional
+**traditional** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If set to `True` choose the traditional
 implementation which rotates consecutive dimensions.
-**base** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The base used to compute angular frequency for
+**base** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The base used to compute angular frequency for
 each dimension in the positional encodings. Exactly one of `base` and
 `freqs` must be `None`.
-**scale** ([float](https://docs.python.org/3/library/functions.html#float)) – The scale used to scale the positions.
-**offset** ([int](https://docs.python.org/3/library/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – The position offset to start at. If an
+**scale** ([float](https://docs.python.org/3/builtins/functions.html#float)) – The scale used to scale the positions.
+**offset** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – The position offset to start at. If an
 [array](https://docs.python.org/3/library/array.html#module-array) is given it can be a scalar or vector of `B`
 offsets for each example in the batch.
 **freqs** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Optional frequencies to use with RoPE.

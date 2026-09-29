@@ -42,7 +42,7 @@ Parameters:
 
 **x** ([array](mlx.core.array.html#mlx.core.array)) – An array defining the shape and dtype of the array we are
 receiving.
-**src** ([int](https://docs.python.org/3/library/functions.html#int)) – Rank of the source process in the group.
+**src** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Rank of the source process in the group.
 **group** ([Group](mlx.core.distributed.Group.html#mlx.core.distributed.Group)) – The group of processes that will participate in the
 recv. If set to `None` the global group is used. Default:
 `None`.

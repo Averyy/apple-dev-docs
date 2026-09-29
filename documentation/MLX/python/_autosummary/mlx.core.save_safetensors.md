@@ -40,10 +40,10 @@ information on the format.
 
 Parameters:
 
-**file** (*file**, *[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – File in which the array is saved.
-**arrays** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)*(*[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[array](mlx.core.array.html#mlx.core.array)*)*) – The dictionary of names to arrays to
+**file** (*file**, *[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – File in which the array is saved.
+**arrays** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)*(*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[array](mlx.core.array.html#mlx.core.array)*)*) – The dictionary of names to arrays to
 be saved.
-**metadata** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)*(*[str](https://docs.python.org/3/library/stdtypes.html#str)*, *[str](https://docs.python.org/3/library/stdtypes.html#str)*)**, **optional*) – The dictionary of
+**metadata** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)*(*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[str](https://docs.python.org/3/builtins/stdtypes.html#str)*)**, **optional*) – The dictionary of
 metadata to be saved.
 
 ** Contents

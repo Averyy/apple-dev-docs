@@ -39,8 +39,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**n** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of times to difference. Default: `1`.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The axis along which to difference.
+**n** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of times to difference. Default: `1`.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The axis along which to difference.
 Default: `-1`.
 
 Returns:

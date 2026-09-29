@@ -40,7 +40,7 @@ Parameters:
 
 **sorted_sequence** ([array](mlx.core.array.html#mlx.core.array)) – A 1-D array sorted in ascending order.
 **values** ([array](mlx.core.array.html#mlx.core.array)) – The values to insert. May have any shape.
-**side** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Either `'left'` or `'right'`. With
+**side** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Either `'left'` or `'right'`. With
 `'left'` the first suitable index is returned, so the result is
 the number of elements strictly less than the value. With
 `'right'` the last is returned, so the result is the number of

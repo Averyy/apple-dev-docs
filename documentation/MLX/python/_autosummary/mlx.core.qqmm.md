@@ -55,13 +55,13 @@ Parameters:
 **w** ([array](mlx.core.array.html#mlx.core.array)) – Weight matrix. If quantized, it is packed in unsigned integers.
 **scales** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – The scales to use per `group_size` elements of
 `w` if `w` is quantized. Default: `None`.
-**group_size** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Number of elements in `x` and `w` that
+**group_size** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Number of elements in `x` and `w` that
 share a scale. See supported values and defaults in the
 [table of quantization modes](mlx.core.quantize.html#quantize-modes). Default: `None`.
-**bits** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Number of bits used to represent each element of
+**bits** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Number of bits used to represent each element of
 `x` and `w`. See supported values and defaults in the
 [table of quantization modes](mlx.core.quantize.html#quantize-modes). Default: `None`.
-**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – The quantization mode. Default: `"nvfp4"`.
+**mode** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – The quantization mode. Default: `"nvfp4"`.
 Supported modes are `nvfp4` and `mxfp8`. See the
 [table of quantization modes](mlx.core.quantize.html#quantize-modes) for details.
 **global_scale** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – The per-input float32 scale used for x

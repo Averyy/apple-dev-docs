@@ -38,10 +38,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 Parameters:
 
-**x** ([int](https://docs.python.org/3/library/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)*, **optional*) – If an integer is provided a random
+**x** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)*, **optional*) – If an integer is provided a random
 permtuation of `mx.arange(x)` is returned. Otherwise the entries
 of `x` along the given axis are randomly permuted.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The axis to permute along. Default: `0`.
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The axis to permute along. Default: `0`.
 **key** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – A PRNG key. Default: `None`.
 
 Returns:

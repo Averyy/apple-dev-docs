@@ -102,7 +102,7 @@ Apple Maps campaigns support two placements:
 | `MAPS_SEARCH_RESULTS` | Search results | Reaches people after they search for something specific and supports radius targeting at the ad group level. See [`AdGroupTargeting`](adgrouptargeting.md). |
 | `MAPS_SEARCH_HOME` | Search home | Reaches people at the top of the Suggested Places list, before they search. |
 
-You can include both placement values in a single campaign, or create separate campaigns per placement for independent budget control and reporting. The brand you identified earlier includes a `countryOrRegion` field indicating the markets where the brand is eligible. Set `countryOrRegion.include` to the subset of those markets this campaign should target, like this:
+To target both placements in a single campaign, omit `supplyPlacement` from `targeting` entirely: `supplySource: MAPS` alone covers both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME`. Listing both values together in `supplyPlacement.include` is rejected. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for details. Alternatively, create separate single-placement campaigns for independent budget control and reporting. The brand you identified earlier includes a `countryOrRegion` field indicating the markets where the brand is eligible. Set `countryOrRegion.include` to the subset of those markets this campaign should target, like this:
 
 ```json
 "targeting":
@@ -125,7 +125,7 @@ You can include both placement values in a single campaign, or create separate c
 }
 ```
 
-After creation, all three dimensions remain mutable and you can update them via [`CampaignTargeting`](campaigntargeting.md).
+After creation, `supplyPlacement` and `countryOrRegion` remain mutable and you can update them via [`CampaignTargetingUpdate`](campaigntargetingupdate.md), but `supplySource` is fixed at creation and can’t be changed afterward.
 
 #### Create an Apple Maps Campaign
 

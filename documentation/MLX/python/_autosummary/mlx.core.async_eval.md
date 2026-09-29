@@ -42,7 +42,7 @@ This is an experimental API and may change in future versions.
 Parameters:
 ***args** (*arrays** or **trees** of **arrays*) – Each argument can be a single array
 or a tree of arrays. If a tree is given the nodes can be a Python
-[list](https://docs.python.org/3/library/stdtypes.html#list), [tuple](https://docs.python.org/3/library/stdtypes.html#tuple) or [dict](https://docs.python.org/3/library/stdtypes.html#dict). Leaves which are not
+[list](https://docs.python.org/3/builtins/stdtypes.html#list), [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple) or [dict](https://docs.python.org/3/builtins/stdtypes.html#dict). Leaves which are not
 arrays are ignored.
 
 Example

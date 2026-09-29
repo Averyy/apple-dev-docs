@@ -38,10 +38,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 Parameters:
 
-**schedules** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(**Callable**)*) – A list of schedules. Schedule \(i+1\)
+**schedules** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(**Callable**)*) – A list of schedules. Schedule \(i+1\)
 receives a step count indicating the number of steps since
 the \(i\)-th boundary.
-**boundaries** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – A list of integers of length `len(schedules) - 1`
+**boundaries** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – A list of integers of length `len(schedules) - 1`
 that indicates when to transition between schedules.
 
 Example

@@ -56,7 +56,7 @@ A `429 Too Many Requests` or `500 Internal Server Error` response also populates
 
 ## Properties
 
-- `code` (string): A machine-readable error code identifying the failure type. Possible values: `BAD_REQUEST`, `NOT_FOUND`, `NOT_AUTHED`. Read-only.
+- `code` (string): A machine-readable error code identifying the failure type. Read-only.
 - `message` (string): A human-readable description of the error. Read-only.
 - `details` ([ErrorMessage.Details]): An array of additional error detail objects providing field-level context. Each object in the array contains `code` and `message` fields identifying the specific validation failure, and may include an `info` object (string-to-string map) with additional structured context. Read-only.
 

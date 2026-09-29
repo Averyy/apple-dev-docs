@@ -42,10 +42,10 @@ group = mx.distributed.init(backend="ring")
 
 Parameters:
 
-**strict** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to False it returns a singleton group
+**strict** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to False it returns a singleton group
 in case `mx.distributed.is_available()` returns False otherwise
 it throws a runtime error. Default: `False`
-**backend** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Which distributed backend to initialize.
+**backend** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Which distributed backend to initialize.
 Possible values `mpi`, `ring`, `nccl`, `jaccl`, `any`. If
 set to `any` all available backends are tried and the first one
 that succeeds becomes the global group which will be returned in

@@ -43,9 +43,9 @@ Parameters:
 **c** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
-**alpha** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Scaling factor for the
+**alpha** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Scaling factor for the
 matrix product of `a` and `b` (default: `1`)
-**beta** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Scaling factor for `c` (default: `1`)
+**beta** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Scaling factor for `c` (default: `1`)
 
 Returns:
 `alpha * (a @ b)  + beta * c`

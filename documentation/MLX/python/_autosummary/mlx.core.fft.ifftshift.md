@@ -40,7 +40,7 @@ the behavior differs for odd-length axes.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – The input array.
-**axes** ([int](https://docs.python.org/3/library/functions.html#int)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – Axis or axes over which to perform the inverse shift.
+**axes** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Axis or axes over which to perform the inverse shift.
 If `None`, shift all axes.
 
 Returns:

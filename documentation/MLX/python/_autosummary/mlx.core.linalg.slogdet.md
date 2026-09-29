@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.slogdet
 
-**slogdet(*a: array*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
+**slogdet(*a: array*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
 : Compute the sign and natural log of the absolute value of the
 determinant of a square matrix.
 This function supports arrays with at least 2 dimensions. When the
@@ -56,7 +56,7 @@ The `sign` and `logabsdet` of thedeterminant. `sign` is -1, 0, or +1. `logabsdet
 natural log of the absolute value of the determinant.
 
 Return type:
-[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array))
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array))
 
 Example
 >>> A = mx.array([[1., 2.], [3., 4.]])

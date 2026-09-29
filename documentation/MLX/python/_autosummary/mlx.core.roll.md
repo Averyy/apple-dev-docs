@@ -43,11 +43,11 @@ shape is restored.
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
-**shift** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The number of places by which elements
+**shift** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The number of places by which elements
 are shifted. If positive the array is rolled to the right, if
 negative it is rolled to the left. If an int is provided but the
 axis is a tuple then the same value is used for all axes.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – The axis or axes along which to
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – The axis or axes along which to
 roll the elements.
 
 ** Contents

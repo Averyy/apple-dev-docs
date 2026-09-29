@@ -46,7 +46,7 @@ Supports sizes `n = m*2^k` for `m` in `(1, 12, 20, 28)` and `2^k
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
-**scale** ([float](https://docs.python.org/3/library/functions.html#float)) – Scale the output by this factor.
+**scale** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Scale the output by this factor.
 Defaults to `1/sqrt(a.shape[-1])` so that the Hadamard matrix is orthonormal.
 
 Returns:

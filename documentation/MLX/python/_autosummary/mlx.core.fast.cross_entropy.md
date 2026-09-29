@@ -37,8 +37,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 : Cross entropy loss with class indices as targets.
 Computes `logsumexp(logits, axis=-1) - logits[..., target]` in a
 fused kernel with accumulation in float32.
-Note: Currently is implemented only on CUDA, fallback to unfused version with
-manual casting on Metal and CPU.
+Note: The fused kernel is available on Metal and CUDA. The CPU falls
+back to the unfused version, which reduces in the dtype of the logits.
 
 Parameters:
 

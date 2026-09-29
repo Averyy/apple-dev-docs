@@ -69,6 +69,10 @@ The `KeywordCreateBulkResponse` object is the response envelope returned by the 
   The generic response envelope returned by all bulk operations.
 - [object KeywordCreateBulkRequest](keywordcreatebulkrequest.md)
   A bulk request to create multiple Keyword objects.
+- [object KeywordDeleteBulkRequest](keyworddeletebulkrequest.md)
+  A bulk request to delete multiple Keyword objects by their identifiers.
+- [object KeywordDeleteBulkResponse](keyworddeletebulkresponse.md)
+  The response from a bulk Keyword deletion request.
 - [object KeywordUpdateBulkRequest](keywordupdatebulkrequest.md)
   A bulk request to update multiple Keyword objects.
 - [object KeywordUpdateBulkResponse](keywordupdatebulkresponse.md)
@@ -77,14 +81,10 @@ The `KeywordCreateBulkResponse` object is the response envelope returned by the 
   A bulk request to create multiple negative keywords.
 - [object NegativeKeywordCreateBulkResponse](negativekeywordcreatebulkresponse.md)
   The response from a bulk negative keyword creation request, containing results for each item.
-- [object NegativeKeywordUpdateBulkRequest](negativekeywordupdatebulkrequest.md)
-  A bulk request to update multiple negative keywords.
-- [object NegativeKeywordUpdateBulkResponse](negativekeywordupdatebulkresponse.md)
-  The response from a bulk negative keyword update request, containing results for each item.
-- [object BulkKeywordCreate](bulkkeywordcreate.md)
-  The `data` payload for a single keyword-create item within a bulk create request.
-- [object BulkKeywordUpdate](bulkkeywordupdate.md)
-  The payload for a single keyword-update.
+- [object NegativeKeywordDeleteBulkRequest](negativekeyworddeletebulkrequest.md)
+  A bulk request to delete multiple negative keywords by their identifiers.
+- [object NegativeKeywordDeleteBulkResponse](negativekeyworddeletebulkresponse.md)
+  The response from a bulk negative keyword deletion request.
 
 
 ---

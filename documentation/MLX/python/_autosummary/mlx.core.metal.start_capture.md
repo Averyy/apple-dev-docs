@@ -33,11 +33,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.me
 
 # mlx.core.metal.start_capture
 
-**start_capture(*path: str*) → [None](https://docs.python.org/3/library/constants.html#None)**
+**start_capture(*path: str*) → [None](https://docs.python.org/3/builtins/constants.html#None)**
 : Start a Metal capture.
 
 Parameters:
-**path** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The path to save the capture which should have
+**path** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – The path to save the capture which should have
 the extension `.gputrace`.
 
 ** Contents

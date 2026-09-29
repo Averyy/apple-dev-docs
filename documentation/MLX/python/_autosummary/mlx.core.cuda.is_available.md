@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.cu
 
 # mlx.core.cuda.is_available
 
-**is_available() → [bool](https://docs.python.org/3/library/functions.html#bool)**
+**is_available() → [bool](https://docs.python.org/3/builtins/functions.html#bool)**
 : Check if the CUDA back-end is available.
 
 ** Contents

@@ -38,8 +38,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 Parameters:
 
-**init** ([float](https://docs.python.org/3/library/functions.html#float)) – Initial value.
-**decay_rate** ([float](https://docs.python.org/3/library/functions.html#float)) – Multiplicative factor to decay by.
+**init** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Initial value.
+**decay_rate** ([float](https://docs.python.org/3/builtins/functions.html#float)) – Multiplicative factor to decay by.
 
 Example
 >>> lr_schedule = optim.exponential_decay(1e-1, 0.9)

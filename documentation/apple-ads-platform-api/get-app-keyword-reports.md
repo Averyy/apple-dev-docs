@@ -12,7 +12,7 @@ Retrieve performance metrics for keywords.
 
 Keyword performance reports return one row per keyword. Each row contains a `metadata` object with keyword identifiers (including `campaignId`, `adGroupId`, `text`, and `matchType`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`. Rows may also include an optional `insights` object whose `bidRecommendation` field surfaces a recommended bid for the keyword.
 
-Every apps report request requires a `campaignId` filter; optionally add `adGroupId` in the `filters` array to scope results further. Use `groupBy` to split metrics along a dimension.
+Filter by the required `campaignId` in the `filters` array, optionally narrowed further by `adGroupId`. Use `groupBy` to split metrics along a dimension.
 
 See [`Filter`](filter.md) for the full set of supported comparison operators.
 
@@ -26,22 +26,22 @@ See [`AppsReportingRequest`](appsreportingrequest.md).
 
 The following dimensions are **not** supported for the `KEYWORD` entity: `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`.
 
-Granularity constraints follow the usual date range rules, from a 7-day span limit for `HOURLY` to a 90-day-old end date for `MONTHLY`.
+Date range requirements vary by granularity: `HOURLY` and `DAILY` are capped at 7-day and 90-day spans respectively, while `WEEKLY` and `MONTHLY` require spans of at least 14 and 90 days respectively.
 
 | Granularity | Constraint |
 | --- | --- |
-| `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
+| `DAILY` | Date range must span 90 days or less. |
 | `HOURLY` | Date range must span 7 days or less, and the start date must be within the last 365 days. |
-| `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
-| `MONTHLY` | End date must be at least 90 days in the past. |
+| `WEEKLY` | Date range must span at least 14 days. |
+| `MONTHLY` | Date range must span at least 90 days. |
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there is no `granularMetrics` breakdown to compute.
 
-Always filter keyword reports by `adGroupId` or `campaignId` to avoid retrieving every keyword in the account.
+Always filter keyword reports by the required `campaignId`, optionally narrowed further by `adGroupId`.
 
 | Constraint | Detail |
 | --- | --- |
-| Filter scope | Always filter by `adGroupId` or `campaignId` to avoid retrieving all keywords across the account. |
+| Filter by `campaignId` | Required to scope results and avoid retrieving all keywords across the account. |
 
 #### Payload Examples
 
@@ -51,7 +51,7 @@ Retrieve daily keyword metrics for all keywords in a specific ad group.
 
 ##### Request
 
-Filters by `adGroupId` with no `groupBy` dimension, returning daily keyword metrics aggregated across all devices and countries for January 2025.
+Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, with no `groupBy` dimension, returning daily keyword metrics aggregated across all devices and countries for January 2025.
 
 ```json
 POST /v1/reports/apps/keywords/query
@@ -62,6 +62,11 @@ POST /v1/reports/apps/keywords/query
    "pageSize": 20
  },
  "filters": [
+   {
+     "field": "campaignId",
+     "operator": "EQUALS",
+     "value": "444555666"
+   },
    {
      "field": "adGroupId",
      "operator": "EQUALS",
@@ -149,7 +154,7 @@ Retrieve keyword metrics grouped by country to see which App Store countries or 
 
 ##### Request
 
-Filters by `adGroupId` and groups results by `countryOrRegion`, returning daily keyword metrics split by App Store country or region for January 2025.
+Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, and groups results by `countryOrRegion`, returning daily keyword metrics split by App Store country or region for January 2025.
 
 ```json
 POST /v1/reports/apps/keywords/query
@@ -160,6 +165,11 @@ POST /v1/reports/apps/keywords/query
    "pageSize": 20
  },
  "filters": [
+   {
+     "field": "campaignId",
+     "operator": "EQUALS",
+     "value": "444555666"
+   },
    {
      "field": "adGroupId",
      "operator": "EQUALS",

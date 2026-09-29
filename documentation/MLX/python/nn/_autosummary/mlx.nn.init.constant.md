@@ -38,7 +38,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.i
 
 Parameters:
 
-**value** ([float](https://docs.python.org/3/library/functions.html#float)) – The value to fill the array with.
+**value** ([float](https://docs.python.org/3/builtins/functions.html#float)) – The value to fill the array with.
 **dtype** ([Dtype](../../_autosummary/mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – The data type of the array. Default:
 `float32`.
 

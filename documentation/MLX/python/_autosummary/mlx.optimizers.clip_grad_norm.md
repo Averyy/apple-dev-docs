@@ -46,14 +46,14 @@ Example
 
 Parameters:
 
-**grads** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A dictionary containing the gradient arrays.
-**max_norm** ([float](https://docs.python.org/3/library/functions.html#float)) – The maximum allowed global norm of the gradients.
+**grads** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)) – A dictionary containing the gradient arrays.
+**max_norm** ([float](https://docs.python.org/3/builtins/functions.html#float)) – The maximum allowed global norm of the gradients.
 
 Returns:
 The possibly rescaled gradients and the original
 gradient norm.
 
 Return type:
-([dict](https://docs.python.org/3/library/stdtypes.html#dict), [float](https://docs.python.org/3/library/functions.html#float))
+([dict](https://docs.python.org/3/builtins/stdtypes.html#dict), [float](https://docs.python.org/3/builtins/functions.html#float))
 
 ** Contents

@@ -40,8 +40,8 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
 **start_indices** ([array](mlx.core.array.html#mlx.core.array)) – The index location to start the slice at.
-**axes** ([tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The axes corresponding to the indices in `start_indices`.
-**slice_size** ([tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/library/functions.html#int)*)*) – The size of the slice.
+**axes** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The axes corresponding to the indices in `start_indices`.
+**slice_size** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The size of the slice.
 
 Returns:
 The sliced output array.

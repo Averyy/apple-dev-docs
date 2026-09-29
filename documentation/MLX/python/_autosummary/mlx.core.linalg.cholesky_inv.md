@@ -50,7 +50,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array. This is the Cholesky factor
 \(\mathbf{L}\), not \(\mathbf{A}\) itself.
-**upper** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True`, return the upper triangular Cholesky factor.
+**upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, return the upper triangular Cholesky factor.
 If `False`, return the lower triangular Cholesky factor. Default: `False`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.

@@ -132,7 +132,7 @@ for batch in dataset:
 
 An important behavior to be aware of is when the graph will be implicitly
 evaluated. Anytime you `print` an array, convert it to an
-[numpy.ndarray](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray), or otherwise access its memory via [memoryview](https://docs.python.org/3/library/stdtypes.html#memoryview),
+[numpy.ndarray](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray), or otherwise access its memory via [memoryview](https://docs.python.org/3/builtins/stdtypes.html#memoryview),
 the graph will be evaluated. Saving arrays via [save()](../python/_autosummary/mlx.core.save.html#mlx.core.save) (or any other MLX
 saving functions) will also evaluate the array.
 

@@ -51,9 +51,9 @@ time step, of shape `NLH` or `LH`.
 
 Parameters:
 
-**input_size** ([int](https://docs.python.org/3/library/functions.html#int)) – Dimension of the input, `D`.
-**hidden_size** ([int](https://docs.python.org/3/library/functions.html#int)) – Dimension of the hidden state, `H`.
-**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether to use a bias. Default: `True`.
+**input_size** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Dimension of the input, `D`.
+**hidden_size** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Dimension of the hidden state, `H`.
+**bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether to use a bias. Default: `True`.
 **nonlinearity** (*callable**, **optional*) – Non-linearity to use. If `None`,
 then [tanh()](../_autosummary_functions/mlx.nn.tanh.html#mlx.nn.tanh) is used. Default: `None`.
 

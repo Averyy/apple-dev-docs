@@ -43,10 +43,10 @@ Parameters:
 
 **x1** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The first set of inputs.
 **x2** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The second set of inputs.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The embedding axis. Default: `1`.
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The minimum value of the denominator used for
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The embedding axis. Default: `1`.
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The minimum value of the denominator used for
 numerical stability. Default: `1e-8`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
 Returns:

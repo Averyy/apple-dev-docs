@@ -38,9 +38,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ey
 
 Parameters:
 
-**n** ([int](https://docs.python.org/3/library/functions.html#int)) – The number of rows in the output.
-**m** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of columns in the output. Defaults to n.
-**k** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Index of the diagonal. Defaults to 0 (main diagonal).
+**n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of rows in the output.
+**m** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The number of columns in the output. Defaults to n.
+**k** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Index of the diagonal. Defaults to 0 (main diagonal).
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Data type of the output array. Defaults to float32.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to None.
 

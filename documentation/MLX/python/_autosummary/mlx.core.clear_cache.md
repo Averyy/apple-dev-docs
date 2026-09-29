@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.cl
 
 # mlx.core.clear_cache
 
-**clear_cache() → [None](https://docs.python.org/3/library/constants.html#None)**
+**clear_cache() → [None](https://docs.python.org/3/builtins/constants.html#None)**
 : Clear the memory cache.
 After calling this, [get_cache_memory()](mlx.core.get_cache_memory.html#mlx.core.get_cache_memory) should return `0`.
 

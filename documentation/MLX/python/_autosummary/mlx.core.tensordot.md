@@ -40,7 +40,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array
-**axes** ([int](https://docs.python.org/3/library/functions.html#int)* or *[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**)**, **optional*) – The number of dimensions to
+**axes** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**)**, **optional*) – The number of dimensions to
 sum over. If an integer is provided, then sum over the last
 `axes` dimensions of `a` and the first `axes` dimensions of
 `b`. If a list of lists is provided, then sum over the

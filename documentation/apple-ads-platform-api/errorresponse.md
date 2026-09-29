@@ -30,7 +30,10 @@ A `429` status indicates the caller has exceeded its request quota. See [`Applyi
     "details": [
       {
         "code": "MISSING_REQUIRED_FIELD",
-        "message": "The field 'name' is required for campaign AwayFinder Summer Launch."
+        "message": "The field 'name' is required for campaign AwayFinder Summer Launch.",
+        "info": {
+          "field": "name"
+        }
       }
     ]
   }
@@ -47,6 +50,8 @@ A `429` status indicates the caller has exceeded its request quota. See [`Applyi
   The standard error envelope that the API returns when a request fails.
 - [object ErrorDetail](errordetail.md)
   Field-level or request-level detail for a specific part of a failed API request.
+- [object Info](info.md)
+  Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 
 ---

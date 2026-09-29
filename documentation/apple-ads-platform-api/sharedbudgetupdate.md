@@ -52,7 +52,7 @@ The example below shows every updatable field for reference. In a real request, 
 - `startTime` (date-time): Updated budget start date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-07-01T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected.
 - `endTime` (date-time): Updated budget end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Set to `null` to remove an expiration date, making the budget open-ended.
 - `value` (Money): Updated budget amount. Specify `amount` and `currency`. See [`Money`](money.md).
-- `adAccountIds` ([int64]): The ad account ID this budget order applies to. Exactly one ID is allowed, the same single-ID constraint as at creation. The API rejects requests that send more than one ID. Mutable.
+- `adAccountIds` ([int64]): The ad account IDs this budget order applies to. At least one ID is required. Mutable.
 - `invoiceDetail` (SharedBudgetUpdate.InvoiceDetail): Updated billing contact details. See [`InvoiceDetail`](invoicedetail.md).
 
 ## See Also

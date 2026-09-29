@@ -39,11 +39,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.cu
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Optional axis to compute the cumulative product
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Optional axis to compute the cumulative product
 over. If unspecified the cumulative product of the flattened array
 is returned.
-**reverse** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Perform the cumulative product in reverse.
-**inclusive** ([bool](https://docs.python.org/3/library/functions.html#bool)) – The i-th element of the output includes the i-th
+**reverse** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Perform the cumulative product in reverse.
+**inclusive** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – The i-th element of the output includes the i-th
 element of the input.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – Cast the input to this type before multiplying.
 

@@ -39,7 +39,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 Parameters:
 
 **key** ([array](mlx.core.array.html#mlx.core.array)) – Input key to split.
-**num** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Number of sub keys. Default: `2`.
+**num** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Number of sub keys. Default: `2`.
 
 Returns:
 The array of sub keys with `num` as its first dimension.

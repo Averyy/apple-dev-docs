@@ -12,7 +12,7 @@ Retrieve performance metrics for ads.
 
 Ad reports return one row per ad. Each row contains a `metadata` object with ad identifiers (including `campaignId` and `adGroupId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
-Every apps report request requires a `campaignId` filter; optionally add `adGroupId` in the `filters` array to scope results to a specific ad group.
+Filter by the required `campaignId` in the `filters` array, optionally narrowed further by `adGroupId`.
 
 See [`Filter`](filter.md) for the full set of supported comparison operators.
 
@@ -24,16 +24,16 @@ See [`AppsReportingRequest`](appsreportingrequest.md).
 
 `countryOrRegion`
 
-The `AD` entity supports only the `countryOrRegion` groupBy dimension. `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, and `locality` are **not** supported.
+The `AD` entity supports only the `countryOrRegion` groupBy dimension. `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, and `locality` are not supported.
 
 Ad reports follow the standard date range rules per granularity, except `HOURLY` isn’t available at the ad level.
 
 | Granularity | Constraint |
 | --- | --- |
-| `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
+| `DAILY` | Date range must span 90 days or less. |
 | `HOURLY` | **Not supported** for the `AD` entity. |
-| `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
-| `MONTHLY` | End date must be at least 90 days in the past. |
+| `WEEKLY` | Date range must span at least 14 days. |
+| `MONTHLY` | Date range must span at least 90 days. |
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there is no `granularMetrics` breakdown to compute.
 
@@ -52,7 +52,7 @@ Retrieve daily ad metrics for a specific ad group, grouped by country or region.
 
 ##### Request
 
-Filters by `campaignId` and `adGroupId` and groups results by `countryOrRegion`, returning daily ad-level metrics for a 31-day window in the account’s reporting timezone.
+Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, and groups results by `countryOrRegion`, returning daily ad-level metrics for a 31-day window in the account’s reporting timezone.
 
 ```json
 POST /v1/reports/apps/ads/query

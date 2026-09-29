@@ -49,7 +49,7 @@ array(8, dtype=int32)
 array([2, 4, 6], dtype=int32)
 ```
 
-For multi-dimensional arrays, the `...` or [Ellipsis](https://docs.python.org/3/library/constants.html#Ellipsis) syntax works as in NumPy:
+For multi-dimensional arrays, the `...` or [Ellipsis](https://docs.python.org/3/builtins/constants.html#Ellipsis) syntax works as in NumPy:
 
 ```
 >>> arr = mx.arange(8).reshape(2, 2, 2)

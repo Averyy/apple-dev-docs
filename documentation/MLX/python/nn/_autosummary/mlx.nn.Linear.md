@@ -44,9 +44,9 @@ where \(k = \frac{1}{\sqrt{D_i}}\) and \(D_i\) is equal to `input_dims`.
 
 Parameters:
 
-**input_dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the input features
-**output_dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the output features
-**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to `False` then the layer will
+**input_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the input features
+**output_dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the output features
+**bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `False` then the layer will
 not use a bias. Default is `True`.
 
 Methods

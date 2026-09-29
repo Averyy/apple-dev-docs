@@ -40,7 +40,7 @@ Parameters:
 
 **a** – Input data.
 **dtype** ([Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – The desired data-type for the array.
-**copy** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – Whether to copy the input. If `True`,
+**copy** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether to copy the input. If `True`,
 always copy. If `False`, never copy. If `None`, share memory
 when possible and copy otherwise. Zero-copy DLPack imports
 preserve the DLPack strides.
@@ -52,6 +52,6 @@ Return type:
 [array](mlx.core.array.html#mlx.core.array)
 
 Raises:
-[ValueError](https://docs.python.org/3/library/exceptions.html#ValueError) – If `copy` is `False` and a copy is required.
+[ValueError](https://docs.python.org/3/builtins/exceptions.html#ValueError) – If `copy` is `False` and a copy is required.
 
 ** Contents

@@ -80,10 +80,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/array.html
 | array.sqrt(self, *[, stream]) | Seesqrt(). |
 | array.square(self, *[, stream]) | Seesquare(). |
 | array.squeeze(self[, axis, stream]) | Seesqueeze(). |
-| array.std(self[, axis, keepdims, ddof, stream]) | Seestd(). |
+| array.std(self[, axis, keepdims, ddof, ...]) | Seestd(). |
 | array.sum(self[, axis, keepdims, stream]) | Seesum(). |
 | array.swapaxes(self, axis1, axis2, *[, stream]) | Seeswapaxes(). |
 | array.transpose(self, *axes[, stream]) | Equivalent totranspose()but the axes can be passed either as a tuple or as separate arguments. |
 | array.T | Equivalent to callingself.transpose()with no arguments. |
-| array.var(self[, axis, keepdims, ddof, stream]) | Seevar(). |
+| array.var(self[, axis, keepdims, ddof, ...]) | Seevar(). |
 | array.view(self, dtype, *[, stream]) | Seeview(). |

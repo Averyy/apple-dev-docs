@@ -40,7 +40,7 @@ model with the new parameters.
 Parameters:
 
 **model** ([Module](../../nn/module.html#mlx.nn.Module)) – An mlx module to be updated.
-**gradients** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A Python tree of gradients, most likely computed
+**gradients** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)) – A Python tree of gradients, most likely computed
 via [mlx.nn.value_and_grad()](../../_autosummary/mlx.nn.value_and_grad.html#mlx.nn.value_and_grad).
 
 ** Contents

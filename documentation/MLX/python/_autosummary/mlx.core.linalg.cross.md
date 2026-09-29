@@ -43,7 +43,7 @@ Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
 **b** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – Axis along which to compute the cross
+**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Axis along which to compute the cross
 product. Default: `-1`.
 **stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.

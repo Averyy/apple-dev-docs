@@ -43,11 +43,11 @@ input features, following the sparse initialization of Martens, J. (2010),
 
 Parameters:
 
-**sparsity** ([float](https://docs.python.org/3/library/functions.html#float)) – The fraction of elements in each row to be set to
+**sparsity** ([float](https://docs.python.org/3/builtins/functions.html#float)) – The fraction of elements in each row to be set to
 zero.
-**mean** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Mean of the normal distribution. Default:
+**mean** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Mean of the normal distribution. Default:
 `0.0`.
-**std** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Standard deviation of the normal distribution.
+**std** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Standard deviation of the normal distribution.
 Default: `1.0`.
 **dtype** ([Dtype](../../_autosummary/mlx.core.Dtype.html#mlx.core.Dtype)*, **optional*) – The data type of the array. Default:
 `float32`.

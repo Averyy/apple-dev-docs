@@ -39,6 +39,8 @@ The following table compares how App Store and Apple Maps campaigns differ:
 | Creative source | App Store product page (no upload required) | Brand assets uploaded via the Assets API |
 | Bid strategy options | `MANUAL_CPT`, `MAX_CONVERSIONS` | `MAX_ENGAGEMENTS`, `MANUAL_CPT`, `MANUAL_CPM` |
 
+To target both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` on an Apple Maps campaign, omit `supplyPlacement` from `targeting` entirely rather than listing both values in `include`. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for details.
+
 An ad account’s `productFeatures` gate which campaign type it can create. An account authorized with `APPSTORE_APP_MANUAL` can only create App Store campaigns, and an account authorized with `BUSINESS_BRAND_MANUAL` can only create Apple Maps campaigns. See [`ProductFeatures`](productfeatures.md) for details.
 
 ##### Promote Apps

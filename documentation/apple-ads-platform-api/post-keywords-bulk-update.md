@@ -139,6 +139,8 @@ Raise bids on two keywords and pause a third.
 
 - [Bulk Create Keywords](post-keywords-bulk-create.md)
   Creates multiple keywords in a single request.
+- [Bulk Delete Keywords](post-keywords-bulk-delete.md)
+  Soft-deletes multiple keywords in a single request.
 
 
 ---

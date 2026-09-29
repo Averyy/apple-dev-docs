@@ -11,6 +11,8 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3137: On Mac keychain APIs and implementations](tn3137-on-mac-keychains.md)
+  Learn how the keychain on macOS differs from other Apple platforms.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
@@ -121,8 +123,6 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
   Learn about the usage and requirements of “Ambient Viewing Environment” metadata with HLG and / or Dolby Vision™ Profile 8.4 playback.
 - [TN3133: Packaging a Metal renderer](tn3133-packaging-a-renderer.md)
   Distribute a Metal renderer in a Swift package.
-- [TN3137: On Mac keychain APIs and implementations](tn3137-on-mac-keychains.md)
-  Learn how the keychain on macOS differs from other Apple platforms.
 - [TN3136: AVAudioConverter - performing sample rate conversions](tn3136-avaudioconverter-performing-sample-rate-conversions.md)
   Use AVAudioConverter to perform sample rate conversions between PCM audio buffers.
 - [TN3135: Low-level networking on watchOS](tn3135-low-level-networking-on-watchos.md)

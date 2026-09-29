@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.jv
 
 # mlx.core.jvp
 
-**jvp(*fun: Callable*, *primals: list[array]*, *tangents: list[array]*) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[list](https://docs.python.org/3/library/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)], [list](https://docs.python.org/3/library/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)]]**
+**jvp(*fun: Callable*, *primals: list[array]*, *tangents: list[array]*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[list](https://docs.python.org/3/builtins/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)], [list](https://docs.python.org/3/builtins/stdtypes.html#list)[[array](mlx.core.array.html#mlx.core.array)]]**
 : Compute the Jacobian-vector product.
 This computes the product of the Jacobian of a function `fun` evaluated
 at `primals` with the `tangents`.
@@ -42,9 +42,9 @@ Parameters:
 
 **fun** (*Callable*) – A function which takes a variable number of [array](mlx.core.array.html#mlx.core.array)
 and returns a single [array](mlx.core.array.html#mlx.core.array) or list of [array](mlx.core.array.html#mlx.core.array).
-**primals** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[array](mlx.core.array.html#mlx.core.array)*)*) – A list of [array](mlx.core.array.html#mlx.core.array) at which to
+**primals** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[array](mlx.core.array.html#mlx.core.array)*)*) – A list of [array](mlx.core.array.html#mlx.core.array) at which to
 evaluate the Jacobian.
-**tangents** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[array](mlx.core.array.html#mlx.core.array)*)*) – A list of [array](mlx.core.array.html#mlx.core.array) which are the
+**tangents** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[array](mlx.core.array.html#mlx.core.array)*)*) – A list of [array](mlx.core.array.html#mlx.core.array) which are the
 “vector” in the Jacobian-vector product. The `tangents` should be the
 same in number, shape, and type as the inputs of `fun` (i.e. the `primals`).
 
@@ -54,7 +54,7 @@ A tuple with the outputs of
 in the second position.
 
 Return type:
-[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)([list](https://docs.python.org/3/library/stdtypes.html#list)([array](mlx.core.array.html#mlx.core.array)), [list](https://docs.python.org/3/library/stdtypes.html#list)([array](mlx.core.array.html#mlx.core.array)))
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([list](https://docs.python.org/3/builtins/stdtypes.html#list)([array](mlx.core.array.html#mlx.core.array)), [list](https://docs.python.org/3/builtins/stdtypes.html#list)([array](mlx.core.array.html#mlx.core.array)))
 
 Example
 import mlx.core as mx

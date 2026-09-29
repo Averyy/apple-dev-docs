@@ -74,7 +74,7 @@ The `assetsByDevice` map is the primary structure for accessing locale media.
 - `subTitle` (string): The app subtitle for the locale.
 - `promotionalText` (string): The promotional text for the locale. Max 170 characters.
 - `shortDescription` (string): A short description for the locale. Max 4000 characters.
-- `deviceClasses` ([string]): Supported device classes. Use to verify targeting compatibility when configuring ad groups with device-class targeting. Possible values: `IPHONE`, `IPAD`.
+- `deviceClasses` ([string]): Supported device classes. Use to verify targeting compatibility when configuring ad groups with device-class targeting.
 - `assetsByDevice` (ProductPageLocaleDetails.AssetsByDevice): Map of device type (for example, `iphone_6_5`, `iphone_6_7`) to a [`DeviceAssetGroup`](deviceassetgroup.md) object. Keys are specific device type strings, not limited to the values in `deviceClasses`.
 - `productPageId` (string): The parent product page identifier (ASC product page ID).
 

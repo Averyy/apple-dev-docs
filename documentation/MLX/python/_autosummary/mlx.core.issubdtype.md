@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 
 # mlx.core.issubdtype
 
-**issubdtype(*arg1: Dtype | DtypeCategory*, *arg2: Dtype | DtypeCategory*) → [bool](https://docs.python.org/3/library/functions.html#bool)**
+**issubdtype(*arg1: Dtype | DtypeCategory*, *arg2: Dtype | DtypeCategory*) → [bool](https://docs.python.org/3/builtins/functions.html#bool)**
 : Check if a [Dtype](mlx.core.Dtype.html#mlx.core.Dtype) or [DtypeCategory](mlx.core.DtypeCategory.html#mlx.core.DtypeCategory) is a subtype
 of another.
 
@@ -49,7 +49,7 @@ A boolean indicating if the first input is a subtype of the
 second input.
 
 Return type:
-[bool](https://docs.python.org/3/library/functions.html#bool)
+[bool](https://docs.python.org/3/builtins/functions.html#bool)
 
 Example
 >>> ints = mx.array([1, 2, 3], dtype=mx.int32)

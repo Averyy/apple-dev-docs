@@ -49,9 +49,9 @@ Parameters:
 
 **predictions** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Predicted values.
 **targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Ground truth values.
-**beta** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The threshold after which the loss changes
+**beta** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The threshold after which the loss changes
 from the squared to the absolute difference. Default: `1.0`.
-**reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'mean'`.
 
 Returns:

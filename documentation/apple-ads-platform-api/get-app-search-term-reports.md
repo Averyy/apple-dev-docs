@@ -18,7 +18,7 @@ Use search term data to:
 - Identify irrelevant queries to exclude as negative keywords with [`Create a Negative Keyword`](post-negative-keywords.md).
 - Understand match expansion breadth for BROAD-match keywords.
 
-Every apps report request requires a `campaignId` filter; optionally add `adGroupId` in the `filters` array to scope results further.
+Filter by the required `campaignId` in the `filters` array, optionally narrowed further by `adGroupId`.
 
 See [`Filter`](filter.md) for the full set of supported comparison operators.
 
@@ -32,14 +32,14 @@ See [`AppsReportingRequest`](appsreportingrequest.md).
 
 The following dimensions are **not** supported for the `SEARCHTERM` entity: `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`.
 
-Search term reports follow the usual granularity rules, except `HOURLY` isn’t available for this entity.
+Date range requirements vary by granularity: `DAILY` is capped at a 90-day span, while `WEEKLY` and `MONTHLY` require spans of at least 14 and 90 days respectively. `HOURLY` isn’t available for this entity.
 
 | Granularity | Constraint |
 | --- | --- |
-| `DAILY` | Date range start must be within the last 90 days. Date range must be greater than one day. |
+| `DAILY` | Date range must span 90 days or less. |
 | `HOURLY` | **Not supported** for the `SEARCHTERM` entity. |
-| `WEEKLY` | Date range start within the last 365 days. End date must be at least 14 days in the past. |
-| `MONTHLY` | End date must be at least 90 days in the past. |
+| `WEEKLY` | Date range must span at least 14 days. |
+| `MONTHLY` | Date range must span at least 90 days. |
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there is no `granularMetrics` breakdown to compute.
 
@@ -60,7 +60,7 @@ Retrieve daily search term metrics for all keywords in a specific ad group. Resu
 
 ##### Request
 
-Filters by `adGroupId` with no `groupBy` dimension, returning daily search term metrics for all matched queries in January 2025 using the account’s reporting timezone.
+Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, with no `groupBy` dimension, returning daily search term metrics for all matched queries in January 2025 using the account’s reporting timezone.
 
 ```json
 POST /v1/reports/apps/searchterms/query
@@ -71,6 +71,11 @@ POST /v1/reports/apps/searchterms/query
    "pageSize": 20
  },
  "filters": [
+   {
+     "field": "campaignId",
+     "operator": "EQUALS",
+     "value": "444555666"
+   },
    {
      "field": "adGroupId",
      "operator": "EQUALS",
@@ -232,11 +237,11 @@ POST /v1/reports/apps/searchterms/query
 
 **Weekly**:
 
-Retrieve weekly search term metrics for a campaign. Weekly granularity requires the end date to be at least 14 days in the past.
+Retrieve weekly search term metrics for a campaign. Weekly granularity requires the date range to span at least 14 days.
 
 ##### Request
 
-Filters by `campaignId` with no `groupBy` dimension and uses weekly granularity over a 2-month window. The end date is more than 14 days in the past as required by weekly reporting.
+Filters by `campaignId` with no `groupBy` dimension and uses weekly granularity over a 2-month window, well over the 14-day minimum required for weekly reporting.
 
 ```json
 POST /v1/reports/apps/searchterms/query
