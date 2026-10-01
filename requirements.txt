@@ -6,7 +6,6 @@
 httpx==0.28.1
 aiohttp==3.14.1
 beautifulsoup4==4.12.3
-markdownify==0.12.1   # 1.x changes markdown output — would churn scraped docs
 asyncio-throttle==1.0.2
 
 # Data handling

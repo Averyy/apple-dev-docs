@@ -8,8 +8,7 @@ SEPARATE from content scraping - this is ONLY for framework discovery
 import asyncio
 import json
 import httpx
-from typing import List, Dict, Set
-from pathlib import Path
+from typing import List, Dict
 
 class AppleFrameworkListScraper:
     """Dedicated scraper ONLY for getting the complete framework list from Apple's API"""
@@ -114,28 +113,6 @@ class AppleFrameworkListScraper:
         
         return unique_frameworks
     
-    async def save_framework_list(self, frameworks: List[Dict[str, str]], filename: str = "complete_apple_frameworks.json"):
-        """Save the complete framework list to JSON file"""
-        
-        output = {
-            "metadata": {
-                "source": "Apple technologies.json API",
-                "url": self.TECHNOLOGIES_URL, 
-                "total_frameworks": len(frameworks),
-                "description": "Complete list of Apple frameworks from official API"
-            },
-            "frameworks": frameworks,
-            "framework_ids": [fw['id'] for fw in frameworks],
-            "framework_titles": [fw['title'] for fw in frameworks]
-        }
-        
-        output_path = Path(filename)
-        with open(output_path, 'w') as f:
-            json.dump(output, f, indent=2)
-        
-        print(f"💾 Saved {len(frameworks)} frameworks to: {filename}")
-        return filename
-    
     def compare_with_existing_lists(self, frameworks: List[Dict[str, str]]) -> Dict:
         """Compare with existing framework lists to see coverage"""
         
@@ -221,9 +198,6 @@ async def main():
             print("❌ Failed to fetch frameworks")
             return
         
-        # Save to file
-        filename = await scraper.save_framework_list(frameworks)
-        
         # Compare with existing lists
         comparison = scraper.compare_with_existing_lists(frameworks)
         
@@ -239,7 +213,6 @@ async def main():
             for missing in comparison['missing_frameworks'][:10]:
                 print(f"  - {missing}")
         
-        print(f"\n✅ COMPLETE: Use {filename} as the authoritative framework list!")
         print("Now use the separate JSON content scraper for individual framework pages.")
 
 if __name__ == "__main__":

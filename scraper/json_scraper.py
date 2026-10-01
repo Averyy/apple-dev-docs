@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse
 
 from scraper.base import BaseAppleScraper
 from scraper.config import Config
@@ -21,8 +21,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     
     # Base URL for JSON data
     JSON_BASE_URL = "https://developer.apple.com/tutorials/data/documentation"
-    # DocC navigator index (full page tree per framework, one request)
-    INDEX_BASE_URL = "https://developer.apple.com/tutorials/data/index"
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
                  include_cross_refs: bool = False) -> None:
@@ -38,16 +36,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             framework_name=framework_name or framework_id.replace('-', ' ').title()
         )
         self.markdown_converter = AppleDocMarkdownConverter(self.output_dir)
-        self.discovered_urls: Set[str] = set()
         self.processed_urls: Set[str] = set()
-        self._discovery_batch_size = 1000  # Process URLs in batches to manage memory
         self.topic_hierarchy: Dict[str, Dict[str, List[str]]] = {}  # Track topic organization
         self.include_cross_refs = include_cross_refs
         self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
-        # Index-based discovery state (DISCOVERY_MODE=index): the set of doc
-        # paths Apple's navigator index lists, or None when crawling.
-        self._index_paths: Optional[Set[str]] = None
-        self._index_misses = 0
     
     def _convert_doc_url_to_json_url(self, doc_url: str) -> str:
         """Convert a documentation URL to its JSON data URL.
@@ -88,33 +80,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             path = path[:-5]
         
         return f"https://developer.apple.com/documentation/{path}"
-    
-    async def discover_urls(self) -> List[str]:
-        """Discover all documentation URLs for the framework."""
-        logger.info("discovering_urls_via_json", framework=self.framework_name)
-        
-        # Start with the framework's main JSON file
-        framework_json_url = f"{self.JSON_BASE_URL}/{self.framework_id}.json"
-        
-        # Extract topic hierarchy from main framework page
-        await self._extract_topic_hierarchy(framework_json_url)
-        
-        await self._discover_from_json(framework_json_url)
-        
-        # Convert discovered JSON URLs to documentation URLs
-        doc_urls = [
-            self._convert_json_url_to_doc_url(url) 
-            for url in self.discovered_urls
-        ]
-        
-        logger.info(
-            "urls_discovered",
-            framework=self.framework_name,
-            total=len(doc_urls),
-            sample=doc_urls[:5] if doc_urls else []
-        )
-        
-        return sorted(doc_urls)
     
     async def scrape_framework(self) -> Dict[str, Any]:
         """Override base scrape_framework to use streaming approach."""
@@ -157,27 +122,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         progress_file.write_text(f"Scraping main page: {main_doc_url}\n")
         await self._scrape_and_save_url(main_doc_url)
         
-        # Enumerate all pages upfront from Apple's navigator index when enabled;
-        # fall back to link-crawling for this framework if that fails.
-        initial_urls = [framework_json_url]
-        if Config.DISCOVERY_MODE == "index":
-            index_urls = await self._enumerate_from_index()
-            if index_urls is not None:
-                initial_urls.extend(index_urls)
-                logger.info(
-                    "index_discovery_enabled",
-                    framework=self.framework_id,
-                    pages=len(index_urls),
-                )
-            else:
-                logger.warning(
-                    "index_discovery_fallback_to_crawl",
-                    framework=self.framework_id,
-                )
-
         # Use iterative approach instead of recursion to avoid stack overflow
         try:
-            await self._discover_and_scrape_iterative(initial_urls, progress_file)
+            await self._discover_and_scrape_iterative([framework_json_url], progress_file)
         finally:
             # Final progress update - ALWAYS execute this even if an error occurs
             self._update_progress_file(progress_file, "COMPLETED", final=True)
@@ -216,132 +163,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             logger.error("failed_to_scrape_url", url=url, error=str(e))
             return False
     
-    async def _discover_and_scrape_from_json(self, json_url: str, progress_file) -> None:
-        """Discover URLs from JSON and scrape them immediately."""
-        if json_url in self.processed_urls:
-            return
-        
-        self.processed_urls.add(json_url)
-        
-        # Fetch the JSON data - for discovery, we need content even if unchanged
-        result = await self.fetch_page_with_etag(json_url, use_etag=False)
-        if not result:
-            return
-        response_text = result[0]
-        
-        try:
-            data = json.loads(response_text)
-            
-            # This JSON file is valid documentation - scrape it immediately
-            doc_url = self._convert_json_url_to_doc_url(json_url)
-            scraped = await self._scrape_and_save_url(doc_url)
-            
-            if scraped:
-                # Update progress with current stats
-                self._update_progress_file(progress_file, doc_url)
-                
-                # Log progress every 10 files
-                if self.stats['pages_scraped'] % 10 == 0:
-                    logger.info(
-                        "scraping_progress",
-                        scraped=self.stats['pages_scraped'],
-                        skipped=self.stats['pages_skipped'],
-                        failed=self.stats['pages_failed']
-                    )
-            
-            # Extract related documentation from various sections
-            sections_to_check = [
-                'topicSections',
-                'relationshipsSections', 
-                'seeAlsoSections',
-                'diffAvailability',
-                'variants'
-            ]
-            
-            for section_name in sections_to_check:
-                if section_name in data and isinstance(data[section_name], list):
-                    logger.debug(f"Processing {section_name} with {len(data[section_name])} items")
-                    await self._extract_and_scrape_links_from_sections(data[section_name], progress_file)
-            
-            # Handle references separately as it's a dict
-            if 'references' in data and isinstance(data['references'], dict):
-                logger.debug(f"Processing references with {len(data['references'])} items")
-                # References don't have identifiers directly, skip for now
-                    
-        except json.JSONDecodeError:
-            logger.warning("failed_to_parse_json", url=json_url)
-    
-    async def _enumerate_from_index(self) -> Optional[List[str]]:
-        """Enumerate every page of this framework from Apple's navigator index.
-
-        Returns JSON URLs for all internal pages, or None if the index is
-        unavailable/implausible (caller falls back to crawl discovery).
-        Side effect: stores the doc-path set in self._index_paths for the
-        index_miss audit.
-        """
-        index_url = f"{self.INDEX_BASE_URL}/{self.framework_id.lower()}"
-        try:
-            result = await self.fetch_page_with_etag(index_url, use_etag=False)
-        except Exception as e:
-            logger.warning("index_fetch_failed", framework=self.framework_id, error=str(e))
-            result = None
-        finally:
-            # The index endpoint is not a documentation page — keep fetch
-            # bookkeeping (e.g. mark_error entries) out of the hash file.
-            self.hash_manager.remove(index_url)
-        if not result:
-            return None
-        try:
-            data = json.loads(result[0])
-        except Exception as e:
-            logger.warning("index_parse_failed", framework=self.framework_id, error=str(e))
-            return None
-
-        paths: Set[str] = set()
-
-        def walk(nodes: List[Dict[str, Any]]) -> None:
-            for node in nodes:
-                path = node.get("path")
-                if path and not node.get("external"):
-                    paths.add(path.lower())
-                walk(node.get("children") or [])
-
-        try:
-            for roots in data.get("interfaceLanguages", {}).values():
-                walk(roots)
-        except Exception as e:
-            logger.warning("index_parse_failed", framework=self.framework_id, error=str(e))
-            return None
-
-        if not paths:
-            return None
-
-        self._index_paths = paths
-        # Only enumerate pages we already track. The navigator index is a
-        # SUPERSET of the curated docs for legacy frameworks — it lists
-        # uncurated legacy symbols (old macros, numeric-ID pages) that the
-        # crawl never surfaces and that shouldn't silently join the corpus.
-        # New pages keep entering the proven way: links from changed pages.
-        urls = []
-        extras = 0
-        for path in sorted(paths):
-            rel = path.removeprefix("/documentation/")
-            rel = self._escape_dot_path_segments(rel)
-            json_url = f"{self.JSON_BASE_URL}/{rel}.json"
-            if json_url in self.hash_manager.hashes:
-                urls.append(json_url)
-            else:
-                extras += 1
-                logger.debug("index_extra_skipped", framework=self.framework_id, path=path)
-        if extras:
-            logger.info(
-                "index_extras_not_enumerated",
-                framework=self.framework_id,
-                extras=extras,
-                enumerated=len(urls),
-            )
-        return urls
-
     async def _discover_and_scrape_iterative(self, initial_json_urls, progress_file) -> None:
         """Iterative version of discovery to avoid recursion depth issues with optimized ETag usage."""
         from collections import deque
@@ -397,7 +218,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             total_processed=processed_count,
             max_queue_size=max_queue_size,
             framework=self.framework_name,
-            index_misses=self._index_misses,
         )
 
     async def _process_queued_url(self, json_url: str, url_queue, progress_file) -> None:
@@ -427,10 +247,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
 
                 # IMPORTANT: Still need to discover child pages!
                 # The main page might be unchanged but children could be new/updated.
-                # In index mode every page is already enumerated upfront, so the
-                # discovery refetch is unnecessary — a 304 proves the page (and
-                # therefore its links) is byte-identical.
-                if self._index_paths is None and json_url in self.hash_manager.hashes:
+                if json_url in self.hash_manager.hashes:
                     # We've seen this page before - need to rediscover its children
                     # Fetch without ETag to get content for discovery
                     discovery_result = await self.fetch_page_with_etag(json_url, use_etag=False)
@@ -510,19 +327,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             # Filter and add new URLs to queue
             for new_url in new_urls:
                 if new_url not in self.processed_urls:
-                    # Audit: in index mode, a crawled link absent from the
-                    # navigator index means the index is incomplete — the URL
-                    # is still scraped (hybrid safety), just logged.
-                    if self._index_paths is not None:
-                        doc_path = ("/" + new_url.removeprefix(f"{self.JSON_BASE_URL}/")
-                                    .removesuffix(".json").replace("'", "")).lower()
-                        if f"/documentation{doc_path}" not in self._index_paths:
-                            self._index_misses += 1
-                            logger.warning(
-                                "index_miss",
-                                framework=self.framework_id,
-                                url=new_url,
-                            )
                     url_queue.append(new_url)
 
         except Exception as e:
@@ -618,71 +422,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             logger.error(f"Error converting identifier {identifier}: {e}")
             return None
     
-    async def _extract_and_scrape_links_from_sections(self, sections: List[Dict], progress_file) -> None:
-        """Extract links from sections and scrape them immediately."""
-        for section in sections:
-            if 'identifiers' in section:
-                identifiers = section.get('identifiers', [])
-                section_title = section.get('title', 'Unknown')
-                logger.info(f"Found section '{section_title}' with {len(identifiers)} identifiers")
-                await self._process_and_scrape_identifiers(identifiers, progress_file)
-    
-    async def _process_and_scrape_identifiers(self, identifiers: List[str], progress_file) -> None:
-        """Process identifiers and scrape them immediately."""
-        logger.info(f"Processing batch of {len(identifiers)} identifiers")
-        for identifier in identifiers:
-            if identifier.startswith('doc://'):
-                # Only process identifiers for the current framework
-                # Handle case-insensitive comparison properly
-                identifier_lower = identifier.lower()
-                framework_check = f"com.apple.{self.framework_id.lower()}"
-                if framework_check in identifier_lower or f"/{self.framework_id.lower()}/" in identifier_lower or f"/{self.framework_id}/" in identifier:
-                    await self._process_and_scrape_identifier(identifier, progress_file)
-    
-    async def _process_and_scrape_identifier(self, identifier: str, progress_file) -> None:
-        """Process a single identifier and scrape it immediately."""
-        try:
-            # Convert doc://com.apple.watchkit/documentation/WatchKit/WKApplication to 
-            # https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication.json
-            
-            # Remove doc:// prefix and /documentation/ if present
-            path = identifier.replace('doc://', '')
-            if '/documentation/' in path:
-                # Split on /documentation/ and take the second part
-                parts = path.split('/documentation/', 1)
-                if len(parts) == 2:
-                    path = parts[1]
-                else:
-                    # Fallback
-                    path = path.replace('/documentation/', '')
-        except Exception as e:
-            logger.error(f"Error processing identifier {identifier}: {e}")
-            return
-        
-        # Now path is like "WatchKit/WKApplication" or "WatchKit/setting-up-a-watchos-project"
-        # Convert to lowercase and ensure it starts with framework_id
-        path_lower = path.lower()
-
-        # If it starts with framework_id/, keep it. Otherwise prepend framework_id
-        if not path_lower.startswith(f"{self.framework_id.lower()}/"):
-            # Replace any case variation of current framework with our framework_id
-            if path_lower.startswith(f'{self.framework_id.lower()}/'):
-                # Already correct
-                pass
-            else:
-                path_lower = f"{self.framework_id.lower()}/{path_lower}"
-
-        # Escape path segments starting with dots (e.g. range operators)
-        path_lower = self._escape_dot_path_segments(path_lower)
-
-        json_url = f"{self.JSON_BASE_URL}/{path_lower}.json"
-        
-        if json_url not in self.processed_urls:
-            logger.debug(f"Processing new URL: {json_url}")
-            await self._discover_and_scrape_from_json(json_url, progress_file)
-        else:
-            logger.debug(f"Skipping already processed: {json_url}")
-    
     async def _extract_topic_hierarchy(self, framework_json_url: str) -> None:
         """Extract topic hierarchy from main framework page for organized file structure."""
         # For topic hierarchy, we need the content even if unchanged
@@ -733,107 +472,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         slug = re.sub(r'[^\w\s-]', '', text.lower())
         slug = re.sub(r'[\s_-]+', '-', slug)
         return slug.strip('-')
-    
-    async def _discover_from_json(self, json_url: str) -> None:
-        """Discover URLs from a JSON file.
-        
-        Args:
-            json_url: URL of the JSON file
-        """
-        if json_url in self.processed_urls:
-            return
-        
-        self.processed_urls.add(json_url)
-        
-        # Fetch the JSON data - for discovery, we need content even if unchanged
-        result = await self.fetch_page_with_etag(json_url, use_etag=False)
-        if not result:
-            return
-        response_text, etag = result
-        
-        try:
-            data = json.loads(response_text)
-            
-            # This JSON file is valid documentation
-            self.discovered_urls.add(json_url)
-            
-            # Update session tracking for this discovered URL
-            # Convert JSON URL to doc URL for file path calculation
-            doc_url = json_url.replace(self.JSON_BASE_URL + '/', self.DOCUMENTATION_BASE_URL + '/')
-            # Remove .json suffix properly (not rstrip which removes chars)
-            if doc_url.endswith('.json'):
-                doc_url = doc_url[:-5]
-
-            # Track this URL in the current session. Preserve any recorded file
-            # path (it can be data-dependent via kind-suffix disambiguation);
-            # only compute from the URL as a fallback for new entries.
-            if json_url not in self.hash_manager.hashes:
-                self.hash_manager.hashes[json_url] = {}
-            entry = self.hash_manager.hashes[json_url]
-            if not entry.get('file_path'):
-                entry['file_path'] = str(self._get_organized_file_path(doc_url, {}))
-            entry['session_id'] = self.hash_manager.session_id
-            entry['last_checked'] = datetime.utcnow().isoformat()
-            if etag:
-                self.hash_manager.hashes[json_url]['etag'] = etag
-            self.hash_manager._modified = True
-            
-            # Extract related documentation from various sections
-            sections_to_check = [
-                'topicSections',
-                'relationshipsSections', 
-                'seeAlsoSections',
-                'references'
-            ]
-            
-            for section_name in sections_to_check:
-                if section_name in data:
-                    await self._extract_links_from_sections(data[section_name])
-            
-            # Check for child pages in primaryContentSections
-            if 'primaryContentSections' in data:
-                for section in data['primaryContentSections']:
-                    if 'identifiers' in section:
-                        await self._process_identifiers(section['identifiers'])
-                        
-        except json.JSONDecodeError:
-            logger.debug("not_json_content", url=json_url)
-    
-    async def _extract_links_from_sections(self, sections: List[Dict]) -> None:
-        """Extract documentation links from sections."""
-        for section in sections:
-            if isinstance(section, dict):
-                # Look for identifiers
-                if 'identifiers' in section:
-                    await self._process_identifiers(section['identifiers'])
-                
-                # Look for nested items
-                if 'items' in section:
-                    for item in section['items']:
-                        if 'identifier' in item:
-                            await self._process_identifier(item['identifier'])
-    
-    async def _process_identifiers(self, identifiers: List[str]) -> None:
-        """Process a list of identifiers."""
-        for identifier in identifiers:
-            await self._process_identifier(identifier)
-    
-    async def _process_identifier(self, identifier: str) -> None:
-        """Process a single identifier and discover its JSON URL."""
-        # Skip external symbols
-        if 'externally.resolved' in identifier:
-            return
-        
-        # Extract path from identifier like "doc://com.apple.SwiftUI/documentation/SwiftUI/Text"
-        if identifier.startswith('doc://'):
-            parts = identifier.split('/documentation/')
-            if len(parts) == 2:
-                path = parts[1]
-                # Only process URLs for this framework
-                if path.lower().startswith(self.framework_id.lower()):
-                    json_url = f"{self.JSON_BASE_URL}/{path}.json"
-                    if json_url not in self.processed_urls:
-                        await self._discover_from_json(json_url)
     
     async def scrape_page(self, url: str) -> Optional[Dict[str, Any]]:
         """Override base scrape_page to work with JSON URLs and ETags.
@@ -944,21 +582,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             self.hash_manager.mark_error(url, f"JSON parse error: {str(e)}")
             self.stats["pages_failed"] += 1
             return None
-    
-    async def extract_page_data(self, soup: Any, url: str) -> Optional[Dict[str, Any]]:
-        """Legacy method for compatibility - actual scraping happens in scrape_page.
-        
-        Args:
-            soup: Ignored (for compatibility)
-            url: Documentation URL
-            
-        Returns:
-            None (all work done in scrape_page)
-        """
-        # This method is not used in the JSON scraper since we override scrape_page
-        # But we keep it for compatibility with the base class interface
-        logger.warning("extract_page_data_called_unexpectedly", url=url)
-        return None
     
     def _extract_from_json(self, json_data: Dict[str, Any], doc_url: str) -> Dict[str, Any]:
         """Extract structured data from Apple's JSON format.
@@ -1357,10 +980,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             size=len(markdown_content),
             url=url
         )
-        
-        # Clear URL caches periodically to manage memory
-        if len(self.discovered_urls) > self._discovery_batch_size:
-            self._cleanup_url_caches()
     
     def _get_organized_file_path(self, url: str, data: Dict[str, Any]) -> Path:
         """Generate organized file path based on URL hierarchy (mirrors Apple's structure).
@@ -1413,41 +1032,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             folder_path = Path(*[segment.lower() for segment in path_segments[:-1]])
             filename = self._create_clean_filename(path_segments[-1], data)
             return self.output_dir / folder_path / f"{filename}.md"
-    
-    def _extract_api_name_from_url(self, url: str) -> str:
-        """Extract the API name from the documentation URL."""
-        # Handle the main framework page
-        if url == f'https://developer.apple.com/documentation/{self.framework_id}':
-            return self.framework_id
-        
-        # Remove framework prefix and get the last part
-        url_path = url.replace(f'https://developer.apple.com/documentation/{self.framework_id}/', '')
-        
-        # If we still have the full URL, it means it didn't match the pattern above
-        if url_path.startswith('https://'):
-            # Extract from the full URL path
-            path_parts = url.split('/')
-            return path_parts[-1] if path_parts else 'unknown'
-        
-        # Get the last segment (the actual API name)
-        if '/' in url_path:
-            return url_path.split('/')[-1]
-        return url_path or self.framework_id
-    
-    def _find_topic_folder_for_url(self, url: str) -> Optional[str]:
-        """Find which topic folder this URL belongs to."""
-        for folder_name, topic_info in self.topic_hierarchy.items():
-            if url in topic_info['urls']:
-                return folder_name
-        
-        # Fallback: try to match by URL pattern if direct match fails
-        api_name = self._extract_api_name_from_url(url)
-        for folder_name, topic_info in self.topic_hierarchy.items():
-            for topic_url in topic_info['urls']:
-                if api_name in topic_url:
-                    return folder_name
-        
-        return None
     
     # Operator symbols to readable names for filenames
     _OPERATOR_NAMES = {
@@ -1505,23 +1089,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             clean_name = f"api-{clean_name}"
 
         return clean_name or 'unknown'
-    
-    def _cleanup_url_caches(self) -> None:
-        """Clean up URL caches to prevent memory issues."""
-        # Keep only recent processed URLs
-        if len(self.processed_urls) > self._discovery_batch_size // 2:
-            processed_list = list(self.processed_urls)
-            # Keep the last half of processed URLs
-            self.processed_urls = set(processed_list[-self._discovery_batch_size // 2:])
-        
-        # Clear discovered URLs that have been processed
-        self.discovered_urls = self.discovered_urls - self.processed_urls
-        
-        logger.info(
-            "cleaned_url_caches",
-            discovered_count=len(self.discovered_urls),
-            processed_count=len(self.processed_urls)
-        )
     
     def _convert_apple_url_to_local_path(self, apple_url: str, current_page_url: str = None) -> str:
         """Convert an Apple documentation URL to a local markdown file path.
@@ -2144,76 +1711,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     return f"![{alt_text}]({image_url})"
         
         return f"![{alt_text}](image:{image_identifier})" if alt_text else ""
-    
-    def create_framework_readme(self) -> None:
-        """Create a README.md file for the framework with overview and navigation."""
-        readme_path = self.output_dir / "README.md"
-        
-        content = f"""# {self.framework_name} Documentation
-
-{self._get_framework_description()}
-
-## Overview
-
-{self._get_framework_overview()}
-
-## Getting Started
-
-```swift
-import {self.framework_name.replace(' ', '')}
-
-// Basic example code here
-```
-
-## Topics
-
-{self._get_organized_topics()}
-
-## Platform Requirements
-
-{self._get_platform_requirements()}
-
----
-*Source: [Apple Developer - {self.framework_name}](https://developer.apple.com/documentation/{self.framework_id})*
-"""
-        
-        readme_path.write_text(content, encoding='utf-8')
-        logger.info("created_framework_readme", framework=self.framework_name)
-    
-    def _get_framework_description(self) -> str:
-        """Get framework description based on known frameworks."""
-        descriptions = {
-            "swiftui": "SwiftUI is Apple's modern declarative framework for building user interfaces across all Apple platforms.",
-            "uikit": "UIKit provides the window and view architecture for implementing your interface on iOS and tvOS.",
-            "metal": "Metal provides near-direct access to the graphics processing unit (GPU) for high-performance graphics and compute.",
-            "foundation": "Foundation provides a base layer of functionality for apps and frameworks.",
-            "coreml": "Core ML integrates machine learning models into your app.",
-            "arkit": "ARKit combines device motion tracking, camera scene capture, and advanced scene processing.",
-        }
-        return descriptions.get(self.framework_id.lower(), 
-                               f"{self.framework_name} framework for Apple platforms.")
-    
-    def _get_framework_overview(self) -> str:
-        """Get framework overview text."""
-        # This could be enhanced to fetch from the framework's main JSON
-        return f"The {self.framework_name} framework provides essential functionality for Apple platform development."
-    
-    def _get_organized_topics(self) -> str:
-        """Get organized topic list based on extracted hierarchy."""
-        if not self.topic_hierarchy:
-            return "- Getting Started\n- Key Concepts\n- Common Tasks\n- Best Practices"
-        
-        topics = []
-        for folder_name, topic_info in self.topic_hierarchy.items():
-            title = topic_info['title']
-            topics.append(f"- [{title}]({folder_name}/)")
-        
-        return "\n".join(topics)
-    
-    def _get_platform_requirements(self) -> str:
-        """Get platform requirements."""
-        # This could be enhanced based on discovered documentation
-        return "- iOS 13.0+\n- macOS 10.15+\n- tvOS 13.0+\n- watchOS 6.0+"
     
     def _track_cross_framework_ref(self, identifier: str) -> None:
         """Track a cross-framework reference."""

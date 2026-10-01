@@ -1,11 +1,7 @@
 """Convert Apple documentation HTML to clean markdown."""
 
-import re
 from pathlib import Path
 from typing import Dict, List, Optional, Any
-
-import markdownify
-from bs4 import BeautifulSoup, NavigableString, Tag
 
 from scraper.utils.logger import get_logger
 
@@ -21,47 +17,7 @@ class AppleDocMarkdownConverter:
         Args:
             output_dir: Directory where markdown files are saved for cross-linking
         """
-        self.converter = markdownify.MarkdownConverter(
-            heading_style="ATX",
-            autolinks=False,
-            code_language_callback=self._detect_language,
-            strip=["style", "script"],
-        )
         self.output_dir = output_dir
-    
-    def _detect_language(self, el: Tag) -> Optional[str]:
-        """Detect programming language from code element.
-        
-        Args:
-            el: BeautifulSoup Tag element
-            
-        Returns:
-            Language identifier or None
-        """
-        # Check class names
-        classes = el.get("class", [])
-        for cls in classes:
-            if "language-swift" in cls or "swift" in cls.lower():
-                return "swift"
-            elif "language-objc" in cls or "objective-c" in cls.lower():
-                return "objc"
-            elif "language-c" in cls or cls == "c":
-                return "c"
-            elif "language-cpp" in cls or "c++" in cls.lower():
-                return "cpp"
-            elif "language-metal" in cls or "metal" in cls.lower():
-                return "metal"
-            elif "language-javascript" in cls or "js" in cls.lower():
-                return "javascript"
-            elif "language-json" in cls:
-                return "json"
-        
-        # Check data attributes
-        if el.get("data-language"):
-            return el["data-language"]
-        
-        # Default to Swift for Apple docs
-        return "swift"
     
     def convert_page(self, data: Dict[str, Any]) -> str:
         """Convert extracted page data to markdown.
@@ -263,45 +219,6 @@ class AppleDocMarkdownConverter:
         
         return "\n".join(lines)
     
-    def _convert_to_local_link(self, apple_url: str, link_text: str) -> str:
-        """Convert Apple documentation URL to local markdown link if file exists.
-        
-        Args:
-            apple_url: Apple documentation URL
-            link_text: Text to display for the link
-            
-        Returns:
-            Markdown link (local if file exists, otherwise Apple URL)
-        """
-        if not self.output_dir or not apple_url.startswith('https://developer.apple.com/documentation/'):
-            return f"[{link_text}]({apple_url})"
-        
-        # Extract path from Apple URL
-        try:
-            url_path = apple_url.replace('https://developer.apple.com/documentation/', '')
-            
-            # Convert to local markdown path
-            # e.g., "uikit/uitableviewdatasource" -> "uitableviewdatasource.md"
-            path_parts = url_path.split('/')
-            if len(path_parts) >= 2:
-                framework = path_parts[0]
-                api_name = path_parts[-1]  # Get the last part (actual API name)
-                
-                # Look for corresponding markdown file
-                local_file = self.output_dir / f"{api_name}.md"
-                
-                if local_file.exists():
-                    # Create relative path from current location
-                    relative_path = f"{api_name}.md"
-                    return f"[{link_text}]({relative_path})"
-        
-        except Exception:
-            # If anything goes wrong, fall back to Apple URL
-            pass
-        
-        # Fallback to Apple URL
-        return f"[{link_text}]({apple_url})"
-    
     def _format_code_block(self, code: str, language: str = "swift") -> str:
         """Format a code block with proper language tag."""
         if not code:
@@ -311,53 +228,6 @@ class AppleDocMarkdownConverter:
         code = code.strip()
         
         return f"```{language}\n{code}\n```"
-    
-    def _convert_html_content(self, html: str) -> str:
-        """Convert HTML content to markdown."""
-        if not html:
-            return ""
-        
-        # Pre-process HTML to handle Apple-specific patterns
-        soup = BeautifulSoup(html, 'html.parser')
-        
-        # Handle code samples
-        for code in soup.find_all('code'):
-            # Preserve inline code
-            if code.parent.name != 'pre':
-                code.string = f"`{code.get_text()}`"
-        
-        # Handle aside/note blocks
-        for aside in soup.find_all('aside'):
-            aside_type = aside.get('class', ['note'])[0]
-            content = aside.get_text().strip()
-            
-            if aside_type == 'warning':
-                aside.string = f"> ⚠️ **Warning**: {content}"
-            elif aside_type == 'important':
-                aside.string = f"> ❗ **Important**: {content}"
-            else:
-                aside.string = f"> **Note**: {content}"
-        
-        # Convert to markdown
-        markdown = self.converter.convert(str(soup))
-        
-        # Post-process markdown
-        markdown = self._clean_markdown(markdown)
-        
-        return markdown
-    
-    def _clean_markdown(self, markdown: str) -> str:
-        """Clean up converted markdown."""
-        # Remove excessive blank lines
-        markdown = re.sub(r'\n{3,}', '\n\n', markdown)
-        
-        # Fix code block formatting
-        markdown = re.sub(r'```\s*\n\s*```', '', markdown)
-        
-        # Remove trailing spaces
-        markdown = re.sub(r' +$', '', markdown, flags=re.MULTILINE)
-        
-        return markdown.strip()
     
     def _format_parameters(self, parameters: List[Dict[str, str]]) -> str:
         """Format parameter list."""
@@ -376,45 +246,6 @@ class AppleDocMarkdownConverter:
                 lines.append(f"- `{name}`: {description}")
         
         return "\n".join(lines)
-    
-    def _convert_to_local_link(self, apple_url: str, link_text: str) -> str:
-        """Convert Apple documentation URL to local markdown link if file exists.
-        
-        Args:
-            apple_url: Apple documentation URL
-            link_text: Text to display for the link
-            
-        Returns:
-            Markdown link (local if file exists, otherwise Apple URL)
-        """
-        if not self.output_dir or not apple_url.startswith('https://developer.apple.com/documentation/'):
-            return f"[{link_text}]({apple_url})"
-        
-        # Extract path from Apple URL
-        try:
-            url_path = apple_url.replace('https://developer.apple.com/documentation/', '')
-            
-            # Convert to local markdown path
-            # e.g., "uikit/uitableviewdatasource" -> "uitableviewdatasource.md"
-            path_parts = url_path.split('/')
-            if len(path_parts) >= 2:
-                framework = path_parts[0]
-                api_name = path_parts[-1]  # Get the last part (actual API name)
-                
-                # Look for corresponding markdown file
-                local_file = self.output_dir / f"{api_name}.md"
-                
-                if local_file.exists():
-                    # Create relative path from current location
-                    relative_path = f"{api_name}.md"
-                    return f"[{link_text}]({relative_path})"
-        
-        except Exception:
-            # If anything goes wrong, fall back to Apple URL
-            pass
-        
-        # Fallback to Apple URL
-        return f"[{link_text}]({apple_url})"
     
     def _format_topics(self, topics: List[Dict[str, Any]]) -> str:
         """Format topics/related APIs section."""

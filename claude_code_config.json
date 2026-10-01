@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "apple-docs": {
-      "type": "http",
-      "url": "https://xdocs.dev/mcp"
-    }
-  }
-}

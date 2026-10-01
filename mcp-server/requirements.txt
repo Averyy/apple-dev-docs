@@ -23,7 +23,6 @@ pydantic==2.13.4      # Data validation
 
 # Additional dependencies
 beautifulsoup4==4.12.3
-markdownify==0.12.1   # 1.x changes markdown output — would churn scraped docs
 asyncio-throttle==1.0.2
 jsonschema==4.21.1
 structlog==24.1.0

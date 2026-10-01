@@ -30,6 +30,13 @@ curl -X POST https://xdocs.dev/mcp \
 - Rate Limit: 60 req/min per IP (bypassed with API key)
 - Host allow-list: `ALLOWED_HOSTS` env, default `xdocs.dev,www.xdocs.dev` (localhost always allowed; any other Host header gets 421 from fastmcp's guard)
 
+**VPS layout:**
+- MCP server: `~/apple-dev-docs/mcp-server/`
+- Landing page served from: `/var/www/xdocs/`
+- Caddy config: `~/caddy/Caddyfile`
+- Caddy docker-compose: `~/caddy/docker-compose.yml`
+- Caddy needs volume mount: `/var/www/xdocs:/var/www/xdocs:ro`
+
 **Health endpoint status codes:**
 - `200 OK` with `status: healthy` - Ready for use (322K+ docs indexed)
 - `200 OK` with `status: indexing` - Index building (check `documents` and `progress`)
