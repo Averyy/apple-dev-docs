@@ -95,11 +95,10 @@ jobs:
             mkdir -p /var/www/xdocs
             cp -r landing/* /var/www/xdocs/
 
-            # Stop old container, pull new image, start fresh
-            cd mcp-server
-            docker compose down --remove-orphans
-            docker compose pull
-            docker compose up -d
+            # Pull while the old container keeps serving, then swap it for a
+            # fresh one (the outage is only the swap, not the image download)
+            cd mcp-server || exit 1
+            docker compose pull && docker compose up -d --remove-orphans --force-recreate || exit 1
 
             # Cleanup
             docker image prune -f

@@ -55,7 +55,7 @@ Docker ENV takes precedence over Python defaults. If you change a default in Pyt
 
 ## Auto-Deploy Behavior
 
-GitHub Actions deploys via `docker compose down && docker compose up -d`, which **recreates the container**.
+GitHub Actions deploys via `docker compose pull && docker compose up -d --remove-orphans --force-recreate`: the old container keeps serving while the image downloads, then it is **recreated** (~10-20 s outage).
 
 **Important:** If deploy happens during indexing:
 1. Container is destroyed mid-indexing
