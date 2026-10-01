@@ -98,3 +98,10 @@ TODO_VPS_MIGRATION.md
 .codex-dobby/
 # Claude Code agent memory
 .claude/agent-memory/
+
+# Scraped docs are never ignored: generic patterns above (build/, profile_*)
+# must not drop documentation pages. Keep these last. Junk files (.DS_Store,
+# ._*, *~) stay ignored; don't widen to !documentation/** (it un-ignores them).
+!documentation/**/
+!documentation/**/*.md
+documentation/**/._*

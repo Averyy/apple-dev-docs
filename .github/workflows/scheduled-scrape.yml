@@ -168,3 +168,15 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Disk Usage" >> $GITHUB_STEP_SUMMARY
           df -h | grep -E '^/dev|Filesystem' >> $GITHUB_STEP_SUMMARY
+
+      # Last step: runs after the commit, deploy and summary so it can never block
+      # doc updates; it only fails the run if .gitignore is silently dropping scraped docs.
+      - name: Check no docs are git-ignored
+        run: |
+          IGNORED=$(git ls-files --others --ignored --exclude-standard -- documentation)
+          if [ -n "$IGNORED" ]; then
+            echo "::error::$(echo "$IGNORED" | wc -l | xargs) documentation files are ignored by .gitignore and never committed"
+            echo "$IGNORED" | head -50
+            exit 1
+          fi
+          echo "No ignored documentation files"
