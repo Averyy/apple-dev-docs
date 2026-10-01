@@ -759,7 +759,6 @@
     "github:ml-explore/mlx-swift-examples:Applications/MLXChatExample/README.md": "9c14d770d890b978176f5d23535b3e76bb17030b0200d1f54c27c3bc4d17d5e7",
     "github:ml-explore/mlx-swift-examples:Applications/MNISTTrainer/README.md": "c69359fa9bb32055321a5b83b567032fa1a6e0b1ee0f461c4121df4ba01d8d31",
     "github:ml-explore/mlx-swift-examples:Applications/StableDiffusionExample/README.md": "ce9c0d51e2f530064b4d860ff76980b8c4e43a2d6eaa6044aca82639f49bed70",
-    "github:apple/ml-stable-diffusion:README.md": "de70ec36d5406d74c5d3dffdbb8217879d0721e42fd410982df0f04d9fe88de2",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.checkpoint.html": "a552d5ff51976277590db5dc0201812c2219557547dc9550658a228d9b9f8569",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.device_count.html": "3d6ff72308b734c6ac735f394cfc1c3905e5ff0e3d3f3933072cc8484e865cdf",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.device_info.html": "765ce994c3984dcc79d4914627d2a24da1b477cf5c5f19aabb528403d1b48433",

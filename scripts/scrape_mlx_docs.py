@@ -182,7 +182,7 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
     ),
     GitHubDocSource(
         name="ml-stable-diffusion",
-        repo="apple/ml-stable-diffusion",
+        repo="apple-aiml-research/ml-stable-diffusion",
         branch="main",
         output_dir="ml-stable-diffusion",
         framework="ml-stable-diffusion",
