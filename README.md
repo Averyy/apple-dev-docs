@@ -111,13 +111,6 @@ Browse all 390+ frameworks with document counts.
 query: "UI" (optional filter)
 ```
 
-### `choose_framework`
-Set active framework for subsequent searches.
-
-```
-framework: "SwiftUI" or "clear"
-```
-
 ## Self-Hosting
 
 ### Docker (Recommended)

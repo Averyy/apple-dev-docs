@@ -43,6 +43,12 @@ class TestEscapeFilterValue(unittest.TestCase):
         result = escape_filter_value(long_value)
         self.assertEqual(len(result), 100)
 
+    def test_max_length_none_no_truncation(self):
+        """Test max_length=None keeps the whole value (file paths)."""
+        long_path = "documentation/" + "a" * 300 + ".md"
+        result = escape_filter_value(long_path, max_length=None)
+        self.assertEqual(result, long_path)
+
     def test_control_char_removal(self):
         """Test that control characters are removed."""
         result = escape_filter_value("test\x00\x01\x02value")
@@ -217,12 +223,12 @@ class TestRateLimitMiddleware(unittest.TestCase):
         self.assertEqual(result, "192.168.1.1")
 
     def test_get_client_ip_forwarded(self):
-        """Test getting client IP from X-Forwarded-For header."""
+        """Test X-Forwarded-For uses the rightmost token (the one Caddy appends)."""
         request = MagicMock()
         request.headers = {"x-forwarded-for": "10.0.0.1, 192.168.1.1"}
 
         result = self.middleware._get_client_ip(request)
-        self.assertEqual(result, "10.0.0.1")
+        self.assertEqual(result, "192.168.1.1")
 
 
 if __name__ == "__main__":

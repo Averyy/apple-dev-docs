@@ -14,12 +14,15 @@ For STDIO clients, use mcp-remote: npx -y mcp-remote https://xdocs.dev/mcp
 import os
 import sys
 import re
+import fnmatch
 import secrets
 import time
 import logging
 from collections import defaultdict
-from typing import Dict, List, Optional, Any
+from typing import Annotated, Dict, List, Optional, Any
 from pathlib import Path
+
+from pydantic import Field
 
 # Load environment variables
 from dotenv import load_dotenv
@@ -42,6 +45,7 @@ except ImportError:
 
 # Import FastMCP (standalone package) and MCP types
 from fastmcp import FastMCP
+from fastmcp.exceptions import ToolError
 from mcp.types import ToolAnnotations
 
 # =============================================================================
@@ -51,7 +55,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.5.0"
+SERVER_VERSION = "3.0.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -73,6 +77,10 @@ RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "60"))
 # Token optimization settings
 MAX_TOKEN_BUDGET = 25000
 
+# Meilisearch v1.49 never matches a filter string longer than this
+# (MAX_FACET_VALUE_LENGTH = 500 - 32 bytes), so longer file paths can't be looked up
+MAX_FILTER_VALUE_BYTES = 468
+
 # Health check thresholds
 MINIMUM_EXPECTED_DOCS = int(os.getenv("MIN_EXPECTED_DOCS", "290000"))
 EXPECTED_FULL_INDEX_SIZE = int(os.getenv("EXPECTED_FULL_INDEX_SIZE", "322000"))
@@ -89,16 +97,15 @@ MEILI_MAX_RETRIES = int(os.getenv("MEILI_MAX_RETRIES", "2"))
 meili_client: Optional[meilisearch.Client] = None
 meili_index: Optional[Any] = None
 
-# Framework cache (populated on first use)
+# Framework cache (refreshed after the TTL, so counts taken while the index
+# was still building don't stick for the life of the process)
 _frameworks_cache: Optional[Dict[str, int]] = None
+_frameworks_cache_time: float = 0
+_frameworks_cache_ttl: float = 300.0  # seconds
 
 # Stats cache for health check (avoid repeated Meilisearch calls)
 _stats_cache: Dict[str, Any] = {"value": None, "timestamp": 0}
 _stats_cache_ttl: float = 5.0  # seconds
-
-# Note: In stateless HTTP mode, pass 'framework' parameter explicitly to each call.
-# _active_framework exists for clients maintaining session state but doesn't persist.
-_active_framework: Optional[str] = None
 
 # =============================================================================
 # MEILISEARCH INITIALIZATION
@@ -236,23 +243,27 @@ def safe_search(query: str, params: dict, retries: int = MEILI_MAX_RETRIES) -> d
 
 
 def get_framework_counts() -> Dict[str, int]:
-    """Get framework counts with caching."""
-    global _frameworks_cache
+    """Get framework counts with caching (TTL; empty results aren't cached,
+    and a failed refresh keeps serving the last good counts)."""
+    global _frameworks_cache, _frameworks_cache_time
 
-    if _frameworks_cache is not None:
+    if _frameworks_cache and time.time() - _frameworks_cache_time < _frameworks_cache_ttl:
         return _frameworks_cache
 
     try:
         if not ensure_meilisearch_connection():
             logger.warning("Cannot get framework counts: Meilisearch not connected")
-            return {}
+            return _frameworks_cache or {}
 
         results = safe_search("", {"facets": ["framework"], "limit": 0})
-        _frameworks_cache = results.get("facetDistribution", {}).get("framework", {})
-        return _frameworks_cache
+        counts: Dict[str, int] = results.get("facetDistribution", {}).get("framework", {})
+        if counts:
+            _frameworks_cache = counts
+            _frameworks_cache_time = time.time()
+        return counts
     except Exception as e:
         logger.error(f"Failed to get framework counts: {e}")
-        return {}
+        return _frameworks_cache or {}
 
 
 def get_index_metadata() -> Optional[Dict]:
@@ -349,13 +360,13 @@ def extract_section(content: str, section_name: str) -> str:
     return match.group(1).strip() if match else ""
 
 
-def escape_filter_value(value: str, max_length: int = 100) -> str:
+def escape_filter_value(value: str, max_length: Optional[int] = 100) -> str:
     """
     Escape and sanitize filter values to prevent injection.
 
     Args:
         value: The filter value to escape
-        max_length: Maximum allowed length (default 100 chars)
+        max_length: Maximum allowed length (default 100 chars; None = no truncation)
 
     Returns:
         Sanitized and escaped string safe for use in Meilisearch filters
@@ -385,6 +396,9 @@ mcp = FastMCP(
     instructions="""Apple Developer Documentation search server.
 No authentication required. Rate limit: 60 requests/minute.
 For unlimited access, contact info@xdocs.dev for an API key.""",
+    # Unexpected exceptions reach clients as a generic isError result; the
+    # details stay in the server log. ToolError messages are sent as written.
+    mask_error_details=True,
 )
 
 # =============================================================================
@@ -398,13 +412,14 @@ For unlimited access, contact info@xdocs.dev for an API key.""",
         destructiveHint=False,
         idempotentHint=True,
         openWorldHint=False,
-    )
+    ),
+    output_schema=None,  # text only; a str return would otherwise be sent twice
 )
 def search_apple_docs(
-    query: str,
-    framework: str = "",
+    query: Annotated[str, Field(max_length=256)],
+    framework: Annotated[str, Field(max_length=100)] = "",
     strict_framework: bool = False,
-    platform: str = "all",
+    platform: Annotated[str, Field(max_length=100)] = "all",
     limit: int = 10,
     relevance_threshold: float = 0.0,
     token_budget: int = 5000,
@@ -430,19 +445,12 @@ def search_apple_docs(
     Returns:
         Formatted search results with relevance scores and documentation content
     """
-    global _active_framework
-
     # Validate connection
     if not ensure_meilisearch_connection():
-        return "Error: Unable to connect to search backend. Please try again in a moment."
+        raise ToolError("Unable to connect to search backend. Please try again in a moment.")
 
     if not query.strip():
-        return "Error: Query cannot be empty"
-
-    # Use active framework if set (for stateful clients; HTTP mode is stateless)
-    if not framework and _active_framework:
-        framework = _active_framework
-        strict_framework = True
+        raise ToolError("Query cannot be empty")
 
     # Clamp values
     limit = min(20, max(1, limit))
@@ -455,10 +463,12 @@ def search_apple_docs(
     wildcard_pattern = None
 
     if has_wildcards:
-        escaped = re.escape(query)
+        # fnmatch emits atomic groups, so a pattern can't backtrack
+        # catastrophically (a hand-built '.*' per '*' let '******Q' freeze the
+        # whole server). Runs of '*' collapse; '[' is escaped to stay literal.
+        # Matched against lowercased fields (case-insensitive, as before).
         wildcard_pattern = re.compile(
-            f'^{escaped.replace(chr(92)+"*", ".*").replace(chr(92)+"?", ".")}$',
-            re.IGNORECASE
+            fnmatch.translate(re.sub(r'\*+', '*', query).lower().replace('[', '[[]'))
         )
         query = query.replace('*', ' ').replace('?', ' ').strip() or "a"
 
@@ -490,13 +500,13 @@ def search_apple_docs(
         hits = results.get("hits", [])
     except Exception as e:
         logger.error(f"Search failed for query '{query}': {e}")
-        return f"Error: Search temporarily unavailable. Details: {str(e)[:200]}"
+        raise ToolError("Search temporarily unavailable. Please try again in a moment.") from e
 
     # Apply wildcard filter
     if has_wildcards and wildcard_pattern and hits:
         hits = [h for h in hits if
-                wildcard_pattern.match(h.get("api_name", "")) or
-                wildcard_pattern.match(h.get("title", ""))]
+                wildcard_pattern.match(h.get("api_name", "").lower()) or
+                wildcard_pattern.match(h.get("title", "").lower())]
 
     if not hits:
         return _build_no_results_response(original_query, framework, platform, has_wildcards)
@@ -603,11 +613,12 @@ def _build_no_results_response(query: str, framework: str, platform: str, has_wi
         destructiveHint=False,
         idempotentHint=True,
         openWorldHint=False,
-    )
+    ),
+    output_schema=None,  # text only; a str return would otherwise be sent twice
 )
 def expand_result(
-    file_path: str,
-    sections: List[str] = None
+    file_path: Annotated[str, Field(max_length=1024)],
+    sections: Optional[Annotated[List[Annotated[str, Field(max_length=64)]], Field(max_length=20)]] = None
 ) -> str:
     """Get full documentation for a symbol or file.
 
@@ -618,14 +629,12 @@ def expand_result(
     Returns:
         Full documentation content
     """
-    global _active_framework
-
     # Validate connection
     if not ensure_meilisearch_connection():
-        return "Error: Unable to connect to search backend. Please try again in a moment."
+        raise ToolError("Unable to connect to search backend. Please try again in a moment.")
 
     if not file_path:
-        return "Error: file_path is required"
+        raise ToolError("file_path is required")
 
     sections = sections or []
     input_value = file_path.strip().strip('`')
@@ -637,8 +646,6 @@ def expand_result(
                 "limit": 10,
                 "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path", "api_name"]
             }
-            if _active_framework:
-                search_params["filter"] = f'framework = "{escape_filter_value(_active_framework)}"'
 
             results = safe_search(input_value, search_params)
             hits = results.get("hits", [])
@@ -662,8 +669,6 @@ def expand_result(
             if not match:
                 suggestions = [f"   - {h.get('api_name', h.get('title'))} ({h.get('framework')})" for h in hits[:5]]
                 output = [f"Symbol '{input_value}' not found"]
-                if _active_framework:
-                    output.append(f"   Searched in: {_active_framework}")
                 if suggestions:
                     output.extend(["", "Similar:"] + suggestions)
                 return "\n".join(output)
@@ -675,8 +680,15 @@ def expand_result(
             if input_value.startswith('/') and 'documentation/' in input_value:
                 relative_path = input_value[input_value.find('documentation/'):]
 
+            if len(relative_path.encode('utf-8')) > MAX_FILTER_VALUE_BYTES:
+                raise ToolError(
+                    f"file_path is too long ({len(relative_path.encode('utf-8'))} bytes; "
+                    f"max {MAX_FILTER_VALUE_BYTES}). Use the Path shown in search results."
+                )
+
+            # Full path, never truncated: a cut path matches no document
             results = safe_search("", {
-                "filter": f'file_path = "{escape_filter_value(relative_path)}"',
+                "filter": f'file_path = "{escape_filter_value(relative_path, max_length=None)}"',
                 "limit": 1,
                 "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
             })
@@ -687,9 +699,11 @@ def expand_result(
 
             hit = hits[0]
 
+    except ToolError:
+        raise
     except Exception as e:
         logger.error(f"Expand failed for '{file_path}': {e}")
-        return f"Error: Unable to retrieve documentation. Details: {str(e)[:200]}"
+        raise ToolError("Unable to retrieve documentation. Please try again in a moment.") from e
 
     content = hit.get("content", "")
     if not content:
@@ -715,9 +729,10 @@ def expand_result(
         destructiveHint=False,
         idempotentHint=True,
         openWorldHint=False,
-    )
+    ),
+    output_schema=None,  # text only; a str return would otherwise be sent twice
 )
-def list_frameworks(query: str = "") -> str:
+def list_frameworks(query: Annotated[str, Field(max_length=256)] = "") -> str:
     """List available Apple frameworks with document counts.
 
     Args:
@@ -726,11 +741,9 @@ def list_frameworks(query: str = "") -> str:
     Returns:
         Formatted list of frameworks with document counts
     """
-    global _active_framework
-
     # Validate connection first
     if not ensure_meilisearch_connection():
-        return "Error: Unable to connect to search backend. Please try again in a moment."
+        raise ToolError("Unable to connect to search backend. Please try again in a moment.")
 
     framework_counts = get_framework_counts()
     if not framework_counts:
@@ -744,9 +757,6 @@ def list_frameworks(query: str = "") -> str:
     sorted_frameworks = sorted(filtered.items(), key=lambda x: (-x[1], x[0]))
 
     output = []
-    if _active_framework:
-        output.append(f"Currently selected: **{_active_framework}**\n")
-
     if query:
         output.append(f"Frameworks matching '{query}' ({len(sorted_frameworks)} of {len(framework_counts)}):")
     else:
@@ -754,94 +764,10 @@ def list_frameworks(query: str = "") -> str:
     output.append("")
 
     for i, (fw, count) in enumerate(sorted_frameworks, 1):
-        marker = "-> " if fw == _active_framework else "   "
-        output.append(f"{marker}{i:3d}. {fw:<30} ({count:,} docs)")
+        output.append(f"   {i:3d}. {fw:<30} ({count:,} docs)")
 
     output.extend(["", "Use: search_apple_docs(query=\"Button\", framework=\"SwiftUI\")"])
     return "\n".join(output)
-
-
-@mcp.tool(
-    annotations=ToolAnnotations(
-        title="Select Framework",
-        readOnlyHint=False,  # Modifies state
-        destructiveHint=False,
-        idempotentHint=True,
-        openWorldHint=False,
-    )
-)
-def choose_framework(framework: str) -> str:
-    """Select a framework to scope subsequent searches.
-
-    Note: State does not persist in stateless HTTP mode. Pass 'framework' directly to search_apple_docs instead.
-
-    Args:
-        framework: Framework name (e.g., 'SwiftUI'). Use 'clear' to remove selection.
-
-    Returns:
-        Confirmation message
-    """
-    global _active_framework
-
-    if not framework:
-        return "Error: framework parameter required"
-
-    framework = framework.strip()
-
-    if framework.lower() == "clear":
-        old = _active_framework
-        _active_framework = None
-        return f"Cleared framework selection{f' (was: {old})' if old else ''}"
-
-    # Validate connection
-    if not ensure_meilisearch_connection():
-        return "Error: Unable to connect to search backend. Please try again in a moment."
-
-    framework_counts = get_framework_counts()
-
-    # Find matching framework
-    matched = None
-    for fw in framework_counts:
-        if fw.lower() == framework.lower():
-            matched = fw
-            break
-
-    if not matched:
-        partial = [fw for fw in framework_counts if framework.lower() in fw.lower()]
-        if len(partial) == 1:
-            matched = partial[0]
-        elif partial:
-            return f"Multiple matches for '{framework}':\n" + "\n".join(f"   - {fw}" for fw in partial[:10])
-        else:
-            return f"Framework '{framework}' not found. Use list_frameworks() to see all."
-
-    _active_framework = matched
-    doc_count = framework_counts.get(matched, 0)
-    return f"Selected: **{matched}** ({doc_count:,} documents)\n\nNote: State does not persist in stateless HTTP. Pass 'framework' to search_apple_docs instead."
-
-
-@mcp.tool(
-    annotations=ToolAnnotations(
-        title="Current Framework",
-        readOnlyHint=True,
-        destructiveHint=False,
-        idempotentHint=True,
-        openWorldHint=False,
-    )
-)
-def current_framework() -> str:
-    """Show the currently selected framework.
-
-    Note: State does not persist in stateless HTTP mode.
-
-    Returns:
-        Current framework status
-    """
-    if _active_framework:
-        counts = get_framework_counts()
-        doc_count = counts.get(_active_framework, 0)
-        return f"**Current:** {_active_framework} ({doc_count:,} documents)"
-    return "**No framework selected** - searches include all frameworks"
 
 
 @mcp.tool(
@@ -851,7 +777,8 @@ def current_framework() -> str:
         destructiveHint=False,
         idempotentHint=True,
         openWorldHint=False,
-    )
+    ),
+    output_schema=None,  # text only; a str return would otherwise be sent twice
 )
 def get_version() -> str:
     """Get server version and status.
@@ -875,7 +802,7 @@ def get_version() -> str:
    Frameworks: {len(counts)}
    Documents: {total_docs:,}
 
-**Tools:** search_apple_docs, expand_result, list_frameworks, choose_framework, current_framework, get_version"""
+**Tools:** search_apple_docs, expand_result, list_frameworks, get_version"""
 
 
 # =============================================================================
@@ -1125,14 +1052,12 @@ def main():
 
     # Run with uvicorn
     # limit_concurrency: max concurrent connections
-    # limit_max_requests: max requests before worker restart (helps with memory leaks)
     uvicorn.run(
         app,
         host=args.host,
         port=args.port,
         log_level="info",
         limit_concurrency=100,
-        limit_max_requests=10000,
     )
 
 

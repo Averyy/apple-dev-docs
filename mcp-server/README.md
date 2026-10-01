@@ -33,8 +33,6 @@ npx -y mcp-remote https://xdocs.dev/mcp
 | `search_apple_docs` | Search documentation with wildcard support (`*`, `?`) |
 | `expand_result` | Get full content for a symbol name or file path |
 | `list_frameworks` | Browse frameworks with optional filtering |
-| `choose_framework` | Set active framework (stateless - use `framework` param instead) |
-| `current_framework` | Show current framework selection |
 | `get_version` | Get server version and status |
 
 ## Running Locally
