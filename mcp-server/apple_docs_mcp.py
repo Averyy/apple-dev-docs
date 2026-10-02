@@ -55,7 +55,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.0.2"
+SERVER_VERSION = "3.1.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -436,8 +436,8 @@ def search_apple_docs(
         query: Search query (e.g., 'Button', 'async await', 'NavigationStack'). Wildcards: '*' matches
             any characters and '?' one character in single-word queries (e.g., 'UIView*', 'NS*Button',
             'Button?'); they filter the top matches for the literal text, so start with a literal prefix
-        framework: Filter by framework (e.g., 'SwiftUI', 'UIKit', 'CarPlay')
-        strict_framework: Only return results from the specified framework
+        framework: Only return results from this framework (e.g., 'SwiftUI', 'UIKit', 'CarPlay')
+        strict_framework: Deprecated, no effect (framework always filters); accepted for older clients
         platform: Filter by platform: 'ios', 'macos', 'tvos', 'watchos', 'visionos', or 'all'
         limit: Number of results (1-20, default: 10)
         relevance_threshold: Minimum relevance score (0.0-1.0)
@@ -526,13 +526,10 @@ def search_apple_docs(
     if not hits:
         return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
 
-    # Score and filter results
+    # Score and filter results (framework is already a hard filter in the
+    # search, so strict_framework has nothing left to do)
     scored_hits = []
     for hit in hits:
-        if strict_framework and framework:
-            if hit.get("framework", "").lower() != framework.lower():
-                continue
-
         score = calculate_relevance_score(hit, query, framework)
         if score >= relevance_threshold:
             hit['_relevance'] = score
@@ -556,7 +553,7 @@ def search_apple_docs(
     output = [f"Search Results: {original_query}", ""]
 
     if framework:
-        output.append(f"Framework: {framework}{' (strict)' if strict_framework else ''}")
+        output.append(f"Framework: {framework}")
     if platform_filter:
         output.append(f"Platform: {platform}")
     output.append("")
@@ -653,13 +650,16 @@ def _build_no_results_response(query: str, framework: str, platform: str, has_wi
 )
 def expand_result(
     file_path: Annotated[str, Field(max_length=1024)],
-    sections: Optional[Annotated[List[Annotated[str, Field(max_length=64)]], Field(max_length=20)]] = None
+    sections: Optional[Annotated[List[Annotated[str, Field(max_length=64)]], Field(max_length=20)]] = None,
+    framework: Annotated[str, Field(max_length=100)] = ""
 ) -> str:
     """Get full documentation for a symbol or file.
 
     Args:
         file_path: Symbol name (e.g., 'Button') or file path from search results
         sections: Specific sections to include (e.g., ['overview', 'declaration'])
+        framework: Framework to look a symbol up in (e.g., 'SwiftUI'); use it for names that exist
+            in many frameworks, like 'List', 'Text' or 'View'. Ignored for file paths
 
     Returns:
         Full documentation content
@@ -669,6 +669,7 @@ def expand_result(
         raise ToolError("Unable to connect to search backend. Please try again in a moment.")
 
     sections = sections or []
+    framework = framework.strip()
     input_value = file_path.strip().strip('`').strip()
     if not input_value:
         raise ToolError("file_path is required")
@@ -676,13 +677,16 @@ def expand_result(
     # Anything that isn't a path is a symbol name, including lowercase ones
     # like 'withAnimation' or 'viewDidLoad'
     is_symbol = '/' not in input_value and not input_value.lower().endswith('.md')
+    ambiguity_note = ""
 
     try:
         if is_symbol:
-            search_params = {
+            search_params: Dict[str, Any] = {
                 "limit": 10,
                 "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path", "api_name"]
             }
+            if framework:
+                search_params["filter"] = f'framework = "{escape_filter_value(framework)}"'
 
             results = safe_search(input_value, search_params)
             hits = results.get("hits", [])
@@ -711,12 +715,27 @@ def expand_result(
 
             if not match:
                 suggestions = [f"   - {h.get('api_name', h.get('title'))} ({h.get('framework')})" for h in hits[:5]]
-                output = [f"Symbol '{input_value}' not found"]
+                output = [f"Symbol '{input_value}' not found" + (f" in framework '{framework}'" if framework else "")]
                 if suggestions:
                     output.extend(["", "Similar:"] + suggestions)
                 return "\n".join(output)
 
             hit = match
+            if not framework:
+                # Same name in other frameworks: say so, so the caller can pick one
+                title = hit.get("title", "").lower()
+                others = sorted({
+                    h.get("framework", "") for h in hits
+                    if h.get("framework") != hit.get("framework")
+                    and (h.get("title", "").lower() == title
+                         or h.get("title", "").lower().startswith(input_value.lower() + "("))
+                })
+                if others:
+                    ambiguity_note = (
+                        f"Note: '{input_value}' also matches pages in {', '.join(others)}; showing "
+                        f"{hit.get('framework', 'Unknown')}. Pass framework (e.g. framework=\"{others[0]}\") "
+                        "to choose another."
+                    )
         else:
             # File path lookup
             relative_path = input_value
@@ -760,8 +779,12 @@ def expand_result(
                 output.append(f"## {section.title()}")
                 output.append(section_content)
                 output.append("")
+        if ambiguity_note:
+            output.extend(["---", ambiguity_note])
         return "\n".join(output)
 
+    if ambiguity_note:
+        return f"{transform_internal_links(content)}\n\n---\n{ambiguity_note}"
     return transform_internal_links(content)
 
 

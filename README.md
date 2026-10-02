@@ -101,7 +101,8 @@ limit: 10 (1-20)
 Get full documentation for a symbol.
 
 ```
-file_path: "Button" or "documentation/SwiftUI/View.md"
+file_path: "Button" or "documentation/SwiftUI/view.md"
+framework: "SwiftUI" (optional, for symbol names found in several frameworks)
 ```
 
 ### `list_frameworks`

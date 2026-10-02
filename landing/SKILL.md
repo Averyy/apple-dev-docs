@@ -45,12 +45,14 @@ That's it for most lookups. Add complexity only when needed.
 
 **Too many irrelevant results?**
 - Add `framework` parameter
-- Add `strict_framework: true`
 - Increase `relevance_threshold` (0.0-1.0)
 
 **Results truncated?**
 - Increase `token_budget` (default 5000, max 25000)
 - Use `offset` for pagination
+
+**Symbol lookup picks the wrong framework?**
+- Pass `framework` to `apple-docs:expand_result` (e.g., `"SwiftUI"`)
 
 ## Parameters
 
@@ -64,7 +66,6 @@ That's it for most lookups. Add complexity only when needed.
 | `summary_mode` | false | **Use `true` for initial searches** |
 | `limit` | 10 | 1-20 |
 | `offset` | 0 | For pagination |
-| `strict_framework` | false | Exclude cross-framework results |
 | `token_budget` | 5000 | 1000-25000 |
 | `relevance_threshold` | 0.0 | 0.0-1.0, higher = stricter |
 
@@ -74,8 +75,9 @@ That's it for most lookups. Add complexity only when needed.
 |-----------|-------|
 | `file_path` | Path from search results (`documentation/SwiftUI/button.md`) or symbol name (`Button`) |
 | `sections` | Optional: `["declaration", "overview"]` to limit output |
+| `framework` | Optional: framework for symbol lookups (`"SwiftUI"`); use it for common names like `List`, `Text`, `View` |
 
-**Note:** Symbol-only lookups (e.g., `file_path: "Button"`) resolve ambiguously across all frameworks. "Button" may return WebKit JS instead of SwiftUI. Use the full path from search results for precise lookups.
+**Note:** Symbol-only lookups (e.g., `file_path: "Button"`) can match pages in several frameworks; the result lists the other frameworks. Pass `framework` (e.g., `framework: "SwiftUI"`) or use the full path from search results for precise lookups.
 
 ### apple-docs:list_frameworks
 

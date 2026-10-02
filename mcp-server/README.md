@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.0.2 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.1.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,10 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.1.0
+- `expand_result` takes an optional `framework` for symbol lookups (`List`, `Text`, `View`, `viewDidLoad` exist in many frameworks); without it, the result notes the other frameworks that match
+- `search_apple_docs`'s `strict_framework` is deprecated and has no effect: `framework` always filters. It is still accepted so older clients and skill files keep working
 
 ### v3.0.2
 - Responses stay within `token_budget` (room reserved for the header and footer lines)
