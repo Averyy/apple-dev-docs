@@ -55,7 +55,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.0.1"
+SERVER_VERSION = "3.0.2"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -434,7 +434,8 @@ def search_apple_docs(
 
     Args:
         query: Search query (e.g., 'Button', 'async await', 'NavigationStack'). Wildcards: '*' matches
-            any characters and '?' one character in single-word queries (e.g., '*View', 'UI*Controller')
+            any characters and '?' one character in single-word queries (e.g., 'UIView*', 'NS*Button',
+            'Button?'); they filter the top matches for the literal text, so start with a literal prefix
         framework: Filter by framework (e.g., 'SwiftUI', 'UIKit', 'CarPlay')
         strict_framework: Only return results from the specified framework
         platform: Filter by platform: 'ios', 'macos', 'tvos', 'watchos', 'visionos', or 'all'
@@ -560,7 +561,9 @@ def search_apple_docs(
         output.append(f"Platform: {platform}")
     output.append("")
 
-    token_count = estimate_tokens("\n".join(output))
+    # Reserve room for the "Showing" line and the "more results" footer, which
+    # are only written after the results are chosen
+    token_count = estimate_tokens("\n".join(output)) + 40
     results_included = 0
     budget_reached = False
 
@@ -595,7 +598,10 @@ def search_apple_docs(
                 break
             # A single result larger than the whole budget: truncate its body
             room = (token_budget - token_count - estimate_tokens("\n".join(result_lines)) - 60) * 4
-            body = body[:max(0, room)].rstrip() + (
+            body = body[:max(0, room)].rstrip()
+            if body.count("```") % 2:
+                body += "\n```"  # close a code block the cut left open
+            body += (
                 f"\n\n[Truncated to fit token_budget={token_budget}. "
                 "Use expand_result with the Path above for the full document.]"
             )
@@ -626,10 +632,10 @@ def _build_no_results_response(query: str, framework: str, platform: str, has_wi
     lines.append("")
     lines.append("Suggestions:")
     if has_wildcards:
-        lines.append("   - Try a different wildcard pattern (e.g., *View, UI*)")
+        lines.append("   - Try a pattern that starts with a literal prefix (e.g., UIView*, NS*Button)")
     else:
         lines.append("   - Try simpler keywords")
-        lines.append("   - Use wildcards: Button* or *View")
+        lines.append("   - Use wildcards: Button* or NSTable*")
     if framework:
         lines.append("   - Try without framework filter")
     return "\n".join(lines)

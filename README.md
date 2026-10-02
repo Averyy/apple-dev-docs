@@ -81,7 +81,7 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 - **MLX & CoreML Tools** - Apple's ML framework documentation
 - **Sub-3ms search** - Powered by Meilisearch
 - **Platform filtering** - iOS, macOS, tvOS, watchOS, visionOS
-- **Wildcard search** - `*View`, `UI*Controller`, `Button?`
+- **Wildcard search** - `UIView*`, `NS*Button`, `Button?` (patterns filter the top matches, so start with a literal prefix)
 - **Token management** - 1K-25K token budgets
 - **Native HTTP** - Streamable HTTP transport (no wrappers needed)
 

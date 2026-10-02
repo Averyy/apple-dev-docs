@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.0.1 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.0.2 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,11 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.0.2
+- Responses stay within `token_budget` (room reserved for the header and footer lines)
+- A truncated result closes any code block the cut left open, so the notice and next-page hint stay readable
+- Wildcard examples in the tool description use patterns that work (`UIView*`, `NS*Button`, `Button?`)
 
 ### v3.0.1
 - Questions ending in `?` are searched as text; `?` is a wildcard only in single-word queries
