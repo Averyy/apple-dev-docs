@@ -10,7 +10,7 @@ Returns a Boolean value that indicates whether the spatial scaler works with a G
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 16.0+
+- tvOS 27.1+
 - visionOS 1.0+
 
 ## Declaration

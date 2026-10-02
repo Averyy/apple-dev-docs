@@ -31,13 +31,20 @@ struct IntentValueRepresentation<Item, IntentValue> where Item : Transferable, I
 
 #### Export and Import
 
-You can create a representation that supports export only, or both export and import:
+You can create a representation that supports export only, import only, or both:
 
 ```swift
 // Export only
 ValueRepresentation(
     exporting: { entity in
         IntentPerson(name: .displayName(entity.name))
+    }
+)
+
+// Import only
+ValueRepresentation(
+    importing: { person in
+        ContactEntity(name: person.name.displayString)
     }
 )
 
@@ -78,6 +85,10 @@ struct LocationEntity: TransientAppEntity, Transferable {
   Creates a value representation that supports bidirectional conversion between an entity and a system intent value.
 - [init(exporting: (Item) async throws -> IntentValue, importing: (IntentValue) async throws -> Item)](intentvaluerepresentation/init(exporting:importing:)-550j7.md)
   an entity and an `IntentPerson`.
+- [init(importing: (IntentValue) async throws -> Item)](intentvaluerepresentation/init(importing:)-6jio8.md)
+  Creates a value representation that imports an `IntentPerson` into an entity.
+- [init(importing: (IntentValue) async throws -> Item)](intentvaluerepresentation/init(importing:)-7cl3z.md)
+  Creates a value representation that imports a system intent value into an entity.
 
 ## Relationships
 

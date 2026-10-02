@@ -49,7 +49,7 @@ In France, Germany, Italy, Poland, and Romania, the full-page sheet displays the
 
 ## See Also
 
-- [class func requestTrackingAuthorization(usingExpandedInterface: Bool, additionalInformationAction: (() -> Void)?, completionHandler: (ATTrackingManager.AuthorizationStatus) -> Void)](attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:).md)
+- [class func requestTrackingAuthorization(preferExpandedInterface: Bool, additionalInformationAction: (() -> Void)?, completionHandler: (ATTrackingManager.AuthorizationStatus) -> Void)](attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:).md)
   Presents a modal UI that asks someone for permission to access data that your app can use to track a person or device.
 - [NSUserTrackingMarkdownUsageDescription](../bundleresources/information-property-list/nsusertrackingmarkdownusagedescription.md)
   A message that explains the purpose for accessing data that an application can use to track a person or device.

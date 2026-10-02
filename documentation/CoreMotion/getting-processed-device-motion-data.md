@@ -119,6 +119,8 @@ If your app doesn’t require constant motion updates, start the device-motion s
   Constants that indicate the frame of reference for attitude-related motion data.
 - [class CMHeadphoneMotionManager](cmheadphonemotionmanager.md)
   An object that starts and manages headphone motion services.
+- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+  A type that identifies a physical body or view for device-motion calculations.
 
 
 ---

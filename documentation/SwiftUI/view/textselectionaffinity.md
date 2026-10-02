@@ -42,8 +42,8 @@ The following example shows how you would specify a specific selection affinity 
 
 ```swift
 struct SuggestionTextEditor: View {
-    @State var text: String = ""
-    @State var selection: TextSelection? = nil
+    @State private var text: String = ""
+    @State private var selection: TextSelection? = nil
 
     var body: some View {
         VStack {

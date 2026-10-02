@@ -30,7 +30,7 @@ associatedtype Subject : EvaluationSubject
 - [struct ModelSubject](modelsubject.md)
   The subject type for language model evaluations.
 - [var name: String](evaluation/name.md)
-  The default name, taken from the type name.
+  The evaluation’s name in results. Defaults to the type name; override for a custom one.
 
 
 ---

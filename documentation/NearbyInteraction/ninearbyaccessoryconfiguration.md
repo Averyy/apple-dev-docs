@@ -89,13 +89,6 @@ In iOS 16, you can combine the visual-spatial power of ARKit with the radio sens
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](../foundation/nssecurecoding.md)
 
-## See Also
-
-- [Implementing spatial interactions with third-party accessories](implementing-spatial-interactions-with-third-party-accessories.md)
-  Establish a connection with a nearby accessory to receive periodic measurements of its distance from the user.
-- [enum NIMotionActivityState](nimotionactivitystate.md)
-  Motion states for a nearby accessory.
-
 
 ---
 

@@ -61,6 +61,8 @@ When starting services, it’s your responsibility to specify a reference frame 
   The device’s orientation relative to a known frame of reference at a point in time.
 - [class CMHeadphoneMotionManager](cmheadphonemotionmanager.md)
   An object that starts and manages headphone motion services.
+- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+  A type that identifies a physical body or view for device-motion calculations.
 
 
 ---

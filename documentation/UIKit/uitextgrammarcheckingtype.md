@@ -19,7 +19,7 @@ enum UITextGrammarCheckingType
 
 ## Topics
 
-### Enumeration Cases
+### Getting the grammar-checking behaviors
 - [UITextGrammarCheckingType.default](uitextgrammarcheckingtype/default.md)
 - [UITextGrammarCheckingType.no](uitextgrammarcheckingtype/no.md)
 - [UITextGrammarCheckingType.yes](uitextgrammarcheckingtype/yes.md)
@@ -35,6 +35,11 @@ enum UITextGrammarCheckingType
 - [RawRepresentable](../swift/rawrepresentable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
+
+## See Also
+
+- [class UITextChecker](uitextchecker.md)
+  An object to check a string (usually the text of a document) for misspelled words.
 
 
 ---

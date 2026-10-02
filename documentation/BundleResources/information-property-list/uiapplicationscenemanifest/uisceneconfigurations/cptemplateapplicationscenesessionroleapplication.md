@@ -28,7 +28,7 @@ For more information, see [`Displaying Content in CarPlay`](https://developer.ap
 - [UISceneClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uisceneclassname.md)
   The name of the scene class you want UIKit to instantiate.
 - [UISceneDelegateClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication/uiscenedelegateclassname.md)
-  The name of the app-specific class you want UIKit to instantiate and use as the scene delegate object.
+  The name of the app-specific class you want UIKit to instantiate and use as the delegate of your app’s main scene.
 
 ## See Also
 

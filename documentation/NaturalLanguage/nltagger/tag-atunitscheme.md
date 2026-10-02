@@ -27,8 +27,9 @@ The tag for the requested tag scheme and linguistic unit, or `nil`. If a tag is 
 
 ## Parameters
 
-- `unit`: The linguistic unit. See [`NLTokenUnit`](nltokenunit.md) for possible values.
-- `scheme`: The tag scheme. See [`NLTagScheme`](nltagscheme.md) for possible values.
+- `index`: The index for the tag.
+- `unit`: The linguistic unit.
+- `scheme`: The tag scheme.
 
 ## See Also
 

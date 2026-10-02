@@ -106,6 +106,7 @@ Traits defined in Swift aren’t automatically bridged to Objective-C. If you ne
   A mutable container of traits.
 - [typealias UITrait](uitrait-9423.md)
   A type representing a trait in a trait collection.
+- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
 
 
 ---

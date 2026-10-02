@@ -29,7 +29,7 @@ Define app entities for core types and concepts that you want to make available 
 - [protocol TransientAppEntity](transientappentity.md)
   A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
 - [protocol UniqueAppEntity](uniqueappentity.md)
-  An entity that will only ever have one value, such as global settings.
+  An AppEntity subtype for entities that only have a single instance.
 - [protocol OwnershipProvidingEntity](ownershipprovidingentity.md)
   A type that provides the system with ownership and sharing context for an app entity.
 - [macro UnionValue()](unionvalue().md)

@@ -26,8 +26,8 @@ For example, the following shows a minimal find navigator implementation driven 
 
 ```swift
 struct FindNavigatorDrivenTextInput: View {
-    @State var text: String = ""
-    @State var showFindNavigator = false
+    @State private var text: String = ""
+    @State private var showFindNavigator = false
     @Environment(\.findContext) var findContext
     var body: some View {
         MyTextInputView(text: $text)

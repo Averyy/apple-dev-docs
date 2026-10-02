@@ -27,6 +27,7 @@ The range of the substring for the linguistic unit.
 
 ## Parameters
 
+- `index`: The character index to begin examination.
 - `unit`: The linguistic unit. For possible values, see [`NLTokenUnit`](nltokenunit.md).
 
 ## See Also

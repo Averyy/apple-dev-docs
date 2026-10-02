@@ -8,6 +8,17 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+##### 122 20260928
+
+**New features**
+
+- Added the [`Get Customer Groups`](get-customer-groups.md) and [`Get Group Members`](get-group-members.md) endpoints, and the [`GetCustomerGroupsResponse`](getcustomergroupsresponse.md) and [`GetGroupMembersResponse`](getgroupmembersresponse.md) data types, to support multiseat purchases, which let organizations and groups buy your subscriptions in bulk. These endpoints are only available in the sandbox environment.
+- Added the [`GroupEntry`](groupentry.md), [`GroupMemberEntry`](groupmemberentry.md), and [`RoleEntry`](roleentry.md) data types, and the [`groupId`](groupid.md), [`groupType`](grouptype.md), [`role`](role.md), and [`limit`](limit.md) fields.
+- Added the `ASSIGNED` value to [`inAppOwnershipType`](inappownershiptype.md), and the `ASSIGNMENT_REVOKE` value to [`revocationType`](revocationtype.md).
+- Added the [`storeType`](storetype.md) field to the [`JWSAppTransactionDecodedPayload`](jwsapptransactiondecodedpayload.md).
+- The [`quantity`](quantity.md) field also reports the number of seats for a subscription that a customer buys as a multiseat purchase.
+- Added the [`GroupNotFoundError`](groupnotfounderror.md), [`InvalidGroupIdError`](invalidgroupiderror.md), [`InvalidLimitError`](invalidlimiterror.md), [`InvalidAssignedTransactionNotSupportedError`](invalidassignedtransactionnotsupportederror.md), and [`AssignedSubscriptionExtensionIneligibleError`](assignedsubscriptionextensionineligibleerror.md) error codes.
+
 ##### Server Update 20260505
 
 Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit.apple.com`, and `api.storekit-sandbox.itunes.apple.com` to `api.storekit-sandbox.apple.com`. The previous domains will continue to be supported.

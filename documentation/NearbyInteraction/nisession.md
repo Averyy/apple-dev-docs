@@ -82,11 +82,6 @@ For more information, see [`Initiating and maintaining a session`](initiating-an
 - [Hashable](../swift/hashable.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
-## See Also
-
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
-  Measure the relative position of a nearby device and coach the user to sustain interaction.
-
 
 ---
 

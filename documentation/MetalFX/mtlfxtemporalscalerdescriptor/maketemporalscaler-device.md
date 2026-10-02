@@ -10,7 +10,7 @@ Creates a temporal scaler instance from this descriptor’s current property val
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 16.0+
+- tvOS 27.1+
 
 ## Declaration
 

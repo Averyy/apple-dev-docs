@@ -11,6 +11,8 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3214: Validating the fonts you ship in your app](tn3214-validating-the-fonts-you-ship-in-your-app.md)
+  Understand the App Store’s font validation, reproduce the check, and fix any issues it reports.
 - [TN3137: On Mac keychain APIs and implementations](tn3137-on-mac-keychains.md)
   Learn how the keychain on macOS differs from other Apple platforms.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)

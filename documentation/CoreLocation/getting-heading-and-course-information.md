@@ -28,6 +28,8 @@ Course information is included automatically in [`CLLocation`](cllocation.md) ob
 
 - [class CLHeading](clheading.md)
   The orientation of the user’s device, relative to true or magnetic north.
+- [protocol CLBodyIdentifiable](clbodyidentifiable.md)
+  A type that identifies a physical body or view for heading calculations.
 
 
 ---

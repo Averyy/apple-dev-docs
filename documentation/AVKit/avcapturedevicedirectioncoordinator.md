@@ -8,6 +8,7 @@ An object that tracks the direction each camera faces in relation to a view.
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
 
 ## Declaration
 

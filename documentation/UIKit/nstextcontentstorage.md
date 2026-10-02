@@ -48,9 +48,9 @@ TextKit uses the abstract [`NSTextLocation`](nstextlocation.md) protocol to iden
   Returns the text element corresponding to object’s attributed string.
 - [func attributedString(for: NSTextElement) -> NSAttributedString?](nstextcontentstorage/attributedstring(for:).md)
   Returns a new attributed string for the text element.
-### Instance Properties
+### Working with markers
 - [var includesTextListMarkers: Bool](nstextcontentstorage/includestextlistmarkers.md)
-  When `true`, `NSTextContentStorage` assumes the paragraph with `NSTextList` includes the text list marker string.
+  A Boolean value that indicates whether TextKit includes text list markers in the text content.
 
 ## Relationships
 

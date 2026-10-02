@@ -8,6 +8,9 @@ A range of dimensions defining the minimum, preferred, and maximum size for a vi
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+ (Beta)
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 

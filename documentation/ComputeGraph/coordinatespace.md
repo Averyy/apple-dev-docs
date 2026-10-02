@@ -44,6 +44,9 @@ enum CoordinateSpace
 
 ## See Also
 
+- [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+  The primitive topology used to assemble output geometry for an output stage.
+- [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
 - [enum StripOrientation](striporientation.md)
   An enumeration that specifies how a strip should be oriented.
 - [struct Viewpoint](viewpoint-swift.struct.md)

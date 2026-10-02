@@ -8,6 +8,7 @@ Descriptions of the capture devices that face the same direction as the view.
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
 
 ## Declaration
 

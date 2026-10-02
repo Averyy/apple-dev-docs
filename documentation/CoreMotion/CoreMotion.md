@@ -41,6 +41,8 @@ Not all services are available on all devices, and some services might be unavai
   Constants that indicate the frame of reference for attitude-related motion data.
 - [class CMHeadphoneMotionManager](cmheadphonemotionmanager.md)
   An object that starts and manages headphone motion services.
+- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+  A type that identifies a physical body or view for device-motion calculations.
 ### Accelerometers
 - [Getting raw accelerometer events](getting-raw-accelerometer-events.md)
   Retrieve data from the onboard accelerometers.
@@ -136,8 +138,6 @@ Not all services are available on all devices, and some services might be unavai
   The base class for all motion-related data objects.
 ### Classes
 - [class CMRecordedDeviceMotion](cmrecordeddevicemotion.md)
-### Protocols
-- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
 
 
 ---

@@ -34,12 +34,15 @@ Cases in which WidgetKit doesn’t count reloads against your widget’s budget 
 
 - The widget’s containing app is in the foreground.
 - The widget’s containing app has an active audio or navigation session.
+- The widget’s containing app is the current Now Playing app, as reported by [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter).
 - The widget performs an app intent, such as when the user taps a button or toggles a switch.
 - The widget performs an animation.
 - The system locale changes.
 - Dynamic Type or Accessibility settings change.
 
 For cases such as system appearance changes or system locale changes, don’t request a timeline reload from your app. The system updates your widgets automatically. In StandBy, the system refreshes your widget’s display at a system-defined rate that doesn’t count against its budget.
+
+While your app is the current Now Playing app, WidgetKit doesn’t count reloads against your widget’s budget. Take advantage of this exemption by reloading your widget’s timeline whenever your now-playing details change, to keep them in sync. Alternatively, to show playback progress or a countdown without reloading at all, refer to [`Displaying dynamic dates in widgets`](displaying-dynamic-dates.md).
 
 Although your widget timeline provider drives your reload schedule, WidgetKit sometimes reloads your widget to help keep its content fresh. Some common scenarios include:
 

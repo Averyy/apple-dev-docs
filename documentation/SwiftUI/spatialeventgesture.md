@@ -26,7 +26,7 @@ Use a gesture of this type to track multiple simultaneous spatial events and gai
 
 ```swift
 struct ParticlePlayground: View {
-    @State var model = ParticlesModel()
+    @State private var model = ParticlesModel()
 
     var body: some View {
         Canvas { context, size in

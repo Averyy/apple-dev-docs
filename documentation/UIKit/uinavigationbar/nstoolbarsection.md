@@ -17,6 +17,10 @@ Constants that determine how the system hosts the navigation bar in an AppKit to
 enum NSToolbarSection
 ```
 
+#### Discussion
+
+Not every navigation item property is supported in every toolbar section. For more information, see [`Display content in a toolbar on Mac`](uinavigationitem/title#Display-content-in-a-toolbar-on-Mac.md).
+
 ## Topics
 
 ### Constants

@@ -26,7 +26,7 @@ Check this property to determine whether your app has permission to access app-r
 If the status is [`ATTrackingManager.AuthorizationStatus.notDetermined`](attrackingmanager/authorizationstatus/notdetermined.md), call one of the tracking-request methods to present the tracking-authorization prompt and ask the person for permission:
 
 - [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md)
-- [`requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)`](attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:).md)
+- [`requestTrackingAuthorization(preferExpandedInterface:additionalInformationAction:completionHandler:)`](attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:).md)
 
 This property returns [`ATTrackingManager.AuthorizationStatus.restricted`](attrackingmanager/authorizationstatus/restricted.md) when the system restricts tracking for the device, regardless of whether your app has presented the prompt.
 

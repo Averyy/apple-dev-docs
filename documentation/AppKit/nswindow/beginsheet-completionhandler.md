@@ -20,6 +20,8 @@ If the window already has a presented sheet, this method queues the specified sh
 
 If the window has no presented sheets, this method displays the specified sheet, makes it key, and returns control to the caller. While the sheet remains visible, most events targeted at the receiver are prohibited.  The runloop does not enter any special mode to accomplish this.
 
+The sheet’s window never displays a title, regardless of its [`title`](nswindow/title.md) string, its [`titleVisibility`](nswindow/titlevisibility-swift.property.md) value, or whether its style mask includes the [`titled`](nswindow/stylemask-swift.struct/titled.md) flag.
+
 ## Parameters
 
 - `sheetWindow`: The window object that represents the sheet to present.

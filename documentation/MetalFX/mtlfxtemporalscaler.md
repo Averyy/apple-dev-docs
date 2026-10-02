@@ -10,7 +10,7 @@ An upscaling effect that generates a higher resolution texture in a render pass 
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS 16.0+
+- tvOS 27.1+
 
 ## Declaration
 

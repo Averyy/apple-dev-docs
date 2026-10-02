@@ -20,6 +20,10 @@ Computes the standard deviation of a metric and adds it to the aggregated result
 mutating func computeStandardDeviation(of metric: Metric)
 ```
 
+## Mentions
+
+- [Evaluating language model responses](evaluating-language-model-responses.md)
+
 ## Parameters
 
 - `metric`: The metric to aggregate.

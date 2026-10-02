@@ -25,6 +25,7 @@ When `nil`, the navigation bar will use the navigation item’s current title.
 - [var title: String?](uinavigationitem/title.md)
   The navigation item’s title that displays in the navigation bar.
 - [var attributedTitle: AttributedString?](uinavigationitem/attributedtitle-25fxb.md)
+  An attributed string that the system renders as the title in the navigation bar.
 - [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.property.md)
   The mode for displaying the title of the navigation bar.
 - [UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.enum.md)

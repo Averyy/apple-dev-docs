@@ -84,6 +84,8 @@ To interpret attitude data, you need to know the orientation of the device’s c
   The device’s orientation relative to a known frame of reference at a point in time.
 - [struct CMAttitudeReferenceFrame](cmattitudereferenceframe.md)
   Constants that indicate the frame of reference for attitude-related motion data.
+- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+  A type that identifies a physical body or view for device-motion calculations.
 
 
 ---

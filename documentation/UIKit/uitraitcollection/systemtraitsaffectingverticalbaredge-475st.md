@@ -8,6 +8,9 @@ The system traits that affect the value of `verticalBarEdge`.
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+ (Beta)
+- tvOS 27.1+
+- visionOS ?+
 
 ## Declaration
 

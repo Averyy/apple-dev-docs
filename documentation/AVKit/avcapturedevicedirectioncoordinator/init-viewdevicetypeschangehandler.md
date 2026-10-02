@@ -8,6 +8,7 @@ Creates a coordinator that reports the direction cameras face in relation to the
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
 
 ## Declaration
 

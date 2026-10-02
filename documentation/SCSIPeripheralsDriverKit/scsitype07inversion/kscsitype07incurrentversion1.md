@@ -3,6 +3,8 @@
 **Framework**: SCSIPeripheralsDriverKit  
 **Kind**: case
 
+Version 1 of the Type07 inbound interface.
+
 **Availability**:
 - DriverKit 22.0+
 

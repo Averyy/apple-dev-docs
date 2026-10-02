@@ -20,6 +20,8 @@
 ## See Also
 
 - [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](preview(_:traits:body:)-en9c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview(_:traits:arguments:body:)-6gm4c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](preview(_:traits:arguments:body:)-7cbjv.md)
 - [var UIKIT_HAS_UIFOUNDATION_SYMBOLS: Int32](uikit_has_uifoundation_symbols.md)
 
 

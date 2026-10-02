@@ -3,6 +3,8 @@
 **Framework**: SCSIPeripheralsDriverKit  
 **Kind**: method
 
+Resumes normal services after a suspension.
+
 **Availability**:
 - DriverKit 22.0+
 
@@ -12,13 +14,18 @@
 virtual kern_return_t UserResumeServices();
 ```
 
+#### Return Value
+
+A value that indicates the result of the resume request. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+
+#### Discussion
+
+Call this method when the dext finishes using its window of exclusivity from a previous [`UserSuspendServices`](iouserscsiperipheraldevicetype07/usersuspendservices.md) call so file systems can continue communicating with the drive.
+
 ## See Also
 
-- [UserDetermineDeviceCharacteristics](iouserscsiperipheraldevicetype07/userdeterminedevicecharacteristics.md)
-- [UserReportMediumBlockSize](iouserscsiperipheraldevicetype07/userreportmediumblocksize.md)
-- [UserResetDevice](iouserscsiperipheraldevicetype07/userresetdevice.md)
-- [UserSendCDB](iouserscsiperipheraldevicetype07/usersendcdb.md)
 - [UserSuspendServices](iouserscsiperipheraldevicetype07/usersuspendservices.md)
+  Suspends services and allows the dext to communicate with the external drive.
 
 
 ---

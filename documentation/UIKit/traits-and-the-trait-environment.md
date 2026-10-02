@@ -57,6 +57,10 @@ Avoid using custom traits in cases where you can directly set properties on a vi
   A type representing a trait in a trait collection.
 - [protocol UITraitDefinition](uitraitdefinition-64c15.md)
   A type representing a trait in a trait collection.
+- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
+### System traits
+- [struct UITraitNavigationTitleAlignment](uitraitnavigationtitlealignment-swift.struct.md)
+- [struct UITraitSystemPrefersReducedResourceUsage](uitraitsystemprefersreducedresourceusage-swift.struct.md)
 
 ## See Also
 

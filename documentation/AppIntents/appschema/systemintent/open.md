@@ -44,7 +44,7 @@ For more information about the App Intents framework and the experiences it supp
 
 ## See Also
 
-- [var search: some AppSchemaIntent](appschema/systemintent/search.md)
+- [var searchInApp: some AppSchemaIntent](appschema/systemintent/searchinapp.md)
   An intent schema that navigates to search results.
 - [AppSchema.SystemIntent](appschema/systemintent.md)
   Identifies intent schemas in the system domain.

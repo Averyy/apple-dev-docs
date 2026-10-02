@@ -10,6 +10,7 @@ The `.notes` domain defines app schemas that provide a structured representation
 
 - **[`createNote`](appschema/notesintent/createnote.md)**: An intent that creates notes when people say phrases like “Create a note called meeting notes.”
 - **[`updateNote`](appschema/notesintent/updatenote.md)**: An intent that updates notes when people say phrases like “Rename this note to taxes.” or “Move this note to my work folder.”
+- **[`appendText`](appschema/notesintent/appendtext.md)**: An intent that adds text to an existing note when people say phrases like “Add this item to the wishlist note.”
 
 > 💡 **Tip**: Xcode generates a template implementation when you type `notes_` and select a schema from the suggestions list.
 
@@ -22,6 +23,8 @@ For more information about making your app’s actions available to Apple Intell
   An intent schema that creates a new note.
 - [var updateNote: some AppSchemaIntent](appschema/notesintent/updatenote.md)
   An intent schema that updates a note.
+- [var appendText: some AppSchemaIntent](appschema/notesintent/appendtext.md)
+  An intent schema that adds text to the end of an existing note.
 - [AppSchema.NotesIntent](appschema/notesintent.md)
   Identifies intent schemas in the notes domain.
 ### Content and parameter types

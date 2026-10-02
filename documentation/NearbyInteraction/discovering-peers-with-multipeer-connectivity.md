@@ -47,15 +47,6 @@ When the receiving peer accepts data from the Multipeer Connectivity session, th
 let peerDiscoverToken = try! NSKeyedUnarchiver.unarchivedObject(ofClass: NIDiscoverToken, from: data) 
 ```
 
-## See Also
-
-- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
-  Enable devices to access relative positioning information.
-- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
-  Extend your app’s direction finding capabilities with data from Ultra Wideband devices.
-- [class NINearbyPeerConfiguration](ninearbypeerconfiguration.md)
-  A configuration that enables interaction between iPhone or Apple Watch devices.
-
 
 ---
 

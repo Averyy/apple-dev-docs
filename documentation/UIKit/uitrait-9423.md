@@ -30,6 +30,7 @@ The type of a trait serves as a key to uniquely identify a trait in a trait coll
   A mutable container of traits.
 - [protocol UITraitDefinition](uitraitdefinition-64c15.md)
   A type representing a trait in a trait collection.
+- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
 
 
 ---

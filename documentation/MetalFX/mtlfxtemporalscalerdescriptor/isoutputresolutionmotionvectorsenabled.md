@@ -10,7 +10,7 @@ A Boolean value that indicates whether the scaler expects motion vectors at outp
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.0+
+- tvOS 27.1+
 
 ## Declaration
 

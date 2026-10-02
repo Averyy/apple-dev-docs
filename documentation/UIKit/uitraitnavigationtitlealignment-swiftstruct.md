@@ -21,6 +21,10 @@ struct UITraitNavigationTitleAlignment
 ### Conforms To
 - [UITraitDefinition](uitraitdefinition-64c15.md)
 
+## See Also
+
+- [struct UITraitSystemPrefersReducedResourceUsage](uitraitsystemprefersreducedresourceusage-swift.struct.md)
+
 
 ---
 

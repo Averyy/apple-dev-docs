@@ -16,7 +16,7 @@ For iOS, iPadOS, tvOS, visionOS, and watchOS devices, you can use Device Hub to 
 
 1. Select the device in the sidebar.
 2. In the inspector, click Info in the toolbar.
-3. Under Hardware Properties, copy the device ID that appears in the UDID field.
+3. Copy the device ID that appears in the UDID field.
 
 ![A screenshot of Device Hub showing a physical device selected in the sidebar on the left, an iPhone device mirrored in the canvas in the middle, and the device ID shown in the Info inspector on the right.](/images/com.apple.Xcode/locating-device-id-device-hub@2x.png)
 

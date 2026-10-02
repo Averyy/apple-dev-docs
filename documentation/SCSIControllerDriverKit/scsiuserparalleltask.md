@@ -16,7 +16,7 @@ typedef struct SCSIUserParallelTask { ... } SCSIUserParallelTask;
 
 ## Topics
 
-### Task Properties
+### Task properties
 - [version](scsiuserparalleltask/version.md)
   The version of the parallel task structure currently in use.
 - [SCSIUserParallelTaskVersion](scsiuserparalleltaskversion.md)

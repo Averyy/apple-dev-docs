@@ -127,6 +127,8 @@ For additional information about how to use views and controls, see [`Human Inte
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
 - [struct UIBarMinimization](uibarminimization-swift.struct.md)
+- [enum UIVerticalBarEdge](uiverticalbaredge.md)
+  The edge where the system places the vertical bar.
 ### Content viewer
 - [class UILargeContentViewerInteraction](uilargecontentviewerinteraction.md)
   An interaction that enables a gesture to present the large content viewer for cases when supporting the largest dynamic type sizes isn’t appropriate.

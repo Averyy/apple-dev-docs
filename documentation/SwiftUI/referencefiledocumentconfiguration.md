@@ -45,8 +45,6 @@ You receive an instance of this structure when you create a [`DocumentGroup`](do
   The configuration for reading file contents.
 - [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
   The configuration for serializing file contents.
-- [struct NewDocumentAction](newdocumentaction.md)
-  An action that presents a new document.
 - [protocol ReferenceFileDocument](referencefiledocument.md)
   A type that you use to serialize reference type documents to and from file.
 

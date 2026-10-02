@@ -8,6 +8,7 @@ The vertical bar is on the leading edge.
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
 
 ## Declaration
 

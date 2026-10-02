@@ -60,6 +60,8 @@ Navigation bars, toolbars, and search bars all have delegates that support the [
 - [protocol UIBarPositioning](uibarpositioning.md)
   A set of methods for defining the positioning of bars in iOS apps.
 - [struct UIBarMinimization](uibarminimization-swift.struct.md)
+- [enum UIVerticalBarEdge](uiverticalbaredge.md)
+  The edge where the system places the vertical bar.
 
 
 ---

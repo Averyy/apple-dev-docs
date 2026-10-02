@@ -8,6 +8,7 @@ A compression behavior that prefers keeping bar items visible.
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
 
 ## Declaration
 

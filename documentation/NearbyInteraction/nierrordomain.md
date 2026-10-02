@@ -21,13 +21,6 @@ let NIErrorDomain: String
 
 For more information on Core Foundation error domains, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
 
-## See Also
-
-- [struct NIError](nierror.md)
-  An error Nearby Interaction reports.
-- [NIError.Code](nierror/code.md)
-  Codes that identify errors in Nearby Interaction.
-
 
 ---
 

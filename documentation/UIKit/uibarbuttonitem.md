@@ -221,6 +221,8 @@ In general, specify a value for the normal state so that other states without a 
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
 - [struct UIBarMinimization](uibarminimization-swift.struct.md)
+- [enum UIVerticalBarEdge](uiverticalbaredge.md)
+  The edge where the system places the vertical bar.
 
 
 ---

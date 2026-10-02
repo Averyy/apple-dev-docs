@@ -11,7 +11,7 @@ The minimal texture usage options that your app’s input depth texture needs in
 - iPadOS 9.0+
 - Mac Catalyst 9.0+
 - macOS 10.11+
-- tvOS 9.0+
+- tvOS 27.1+
 - visionOS 1.0+
 
 ## Declaration

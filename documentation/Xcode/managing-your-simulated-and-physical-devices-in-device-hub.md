@@ -26,6 +26,8 @@ To add a simulator with a specific configuration, click the Add Device button (+
 
 ![A screenshot of dialog that appears when you choose a simulator from the Add Device pop-up menu.](/images/com.apple.Xcode/add-additional-simulators@2x.png)
 
+If the operating system version you want to use doesn’t appear in the dialog, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md) to install the platform support first.
+
 To remove a simulator from Device Hub, Control-click it in the sidebar and choose Remove.
 
 #### Pair Physical Devices Wirelessly to Your Mac

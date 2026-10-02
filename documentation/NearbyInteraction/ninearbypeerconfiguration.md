@@ -64,15 +64,6 @@ In iOS 16, you can combine the visual spatial power of ARKit with the radio sens
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](../foundation/nssecurecoding.md)
 
-## See Also
-
-- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
-  Enable devices to access relative positioning information.
-- [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
-  Exchange discovery tokens over the local network.
-- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
-  Extend your app’s direction finding capabilities with data from Ultra Wideband devices.
-
 
 ---
 

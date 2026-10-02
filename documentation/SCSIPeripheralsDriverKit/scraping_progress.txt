@@ -1,4 +1,4 @@
 Completed scraping SCSIPeripheralsDriverKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 77
+Total pages scraped: 42
+Pages skipped (unchanged): 33
 Pages failed: 0

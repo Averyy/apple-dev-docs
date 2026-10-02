@@ -47,8 +47,11 @@ This structure represents a camera or observer’s position and viewing directio
 
 ## See Also
 
+- [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+  The primitive topology used to assemble output geometry for an output stage.
 - [enum CoordinateSpace](coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
+- [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
 - [enum StripOrientation](striporientation.md)
   An enumeration that specifies how a strip should be oriented.
 - [struct MouseParams](mouseparams.md)

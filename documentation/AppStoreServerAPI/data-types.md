@@ -32,6 +32,8 @@ Refer to these data types for decoded transaction and renewal information payloa
   The platform on which a customer originally purchases an app.
 - [type preorderDate](preorderdate.md)
   The date a customer places an order for the app before it’s available in the App Store, expressed in UNIX time, in milliseconds.
+- [type storeType](storetype.md)
+  A string that describes the store the customer obtained the app from.
 ### Account information
 - [type appAccountToken](appaccounttoken.md)
   The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
@@ -43,7 +45,7 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type subscriptionGroupIdentifier](subscriptiongroupidentifier.md)
   The identifier of the subscription group that the subscription belongs to.
 - [type quantity](quantity.md)
-  The number of purchased consumable products.
+  The number of products or seats the customer purchased.
 ### Product price and currency
 - [type price](price.md)
   The price, in milliunits, of the In-App Purchase that the system records in the transaction.
@@ -108,9 +110,24 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type commitmentRenewalBillingPlanType](commitmentrenewalbillingplantype.md)
 - [type commitmentRenewalDate](commitmentrenewaldate.md)
 - [type commitmentRenewalPrice](commitmentrenewalprice.md)
-### Family Sharing
+### Group membership
+- [object GroupEntry](groupentry.md)
+  The identifier, type, and per-product roles for a group that a customer belongs to.
+- [object GroupMemberEntry](groupmemberentry.md)
+  A customer that belongs to a group.
+- [object RoleEntry](roleentry.md)
+  A customer’s role for a single product within a group.
+- [type groupId](groupid.md)
+  The unique identifier of a group, within the scope of your app.
+- [type groupType](grouptype.md)
+  A string that describes the kind of multiseat purchase a customer’s access comes from.
+- [type role](role.md)
+  A string that identifies a customer’s role for a product within a group.
+- [type limit](limit.md)
+  The maximum number of group members to return in a single response.
+### Transaction ownership
 - [type inAppOwnershipType](inappownershiptype.md)
-  A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing.
+  A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing, an organization, or a group.
 ### Price increase status
 - [type priceIncreaseStatus](priceincreasestatus.md)
   The status that indicates whether an auto-renewable subscription is subject to a price increase.

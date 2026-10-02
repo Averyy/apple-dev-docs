@@ -46,15 +46,6 @@ To listen for the convergence status, implement [`session(_:didUpdateAlgorithmCo
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](../foundation/nssecurecoding.md)
 
-## See Also
-
-- [Finding devices with precision](finding-devices-with-precision.md)
-  Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
-- [enum NIAlgorithmConvergenceStatus](nialgorithmconvergencestatus-2fnve.md)
-  The possible states of Camera Assistance.
-- [Algorithm Convergence Status](algorithm-convergence-status.md)
-  The possible Objective-C states of Camera Assistance.
-
 
 ---
 

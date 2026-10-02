@@ -3,6 +3,8 @@
 **Framework**: SCSIPeripheralsDriverKit  
 **Kind**: method
 
+Performs enumeration-time initializations in response to a call from the framework.
+
 **Availability**:
 - DriverKit 22.0+
 
@@ -12,13 +14,18 @@
 virtual kern_return_t UserDetermineDeviceCharacteristics(bool *result);
 ```
 
+#### Discussion
+
+The kernel calls this user space method at enumeration time. Use this callback to perform any initializations your DriverKit extension (dext) needs to perform.
+
+## Parameters
+
+- `result`: On return, this value is `true` if initialization succeeds; otherwise, it’s `false`.
+
 ## See Also
 
-- [UserReportMediumBlockSize](iouserscsiperipheraldevicetype07/userreportmediumblocksize.md)
 - [UserResetDevice](iouserscsiperipheraldevicetype07/userresetdevice.md)
-- [UserResumeServices](iouserscsiperipheraldevicetype07/userresumeservices.md)
-- [UserSendCDB](iouserscsiperipheraldevicetype07/usersendcdb.md)
-- [UserSuspendServices](iouserscsiperipheraldevicetype07/usersuspendservices.md)
+  Performs a bus reset of the external drive.
 
 
 ---

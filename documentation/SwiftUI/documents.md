@@ -65,6 +65,8 @@ SwiftUI supports standard behaviors people expect from a document-based app, app
 ### Opening a document programmatically
 - [var newDocument: NewDocumentAction](environmentvalues/newdocument.md)
   An action in the environment that presents a new document.
+- [struct NewDocumentAction](newdocumentaction.md)
+  An action that presents a new document.
 - [var openDocument: OpenDocumentAction](environmentvalues/opendocument.md)
   An action in the environment that presents an existing document.
 - [struct OpenDocumentAction](opendocumentaction.md)
@@ -112,8 +114,6 @@ SwiftUI supports standard behaviors people expect from a document-based app, app
   The configuration for reading file contents.
 - [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
   The configuration for serializing file contents.
-- [struct NewDocumentAction](newdocumentaction.md)
-  An action that presents a new document.
 - [protocol ReferenceFileDocument](referencefiledocument.md)
   A type that you use to serialize reference type documents to and from file.
 - [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)

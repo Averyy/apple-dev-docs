@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+An attributed string that the system renders as the title in the navigation bar.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -14,6 +16,12 @@
 @MainActor
 @preconcurrency var attributedTitle: AttributedString? { get set }
 ```
+
+#### Discussion
+
+If [`titleView`](uinavigationitem/titleview.md) is non-`nil`, the system ignores this property.
+
+> **Note**:  `NSToolbar` doesn’t support an attributed title when the system displays a navigation bar’s content in a toolbar for an app built with Mac Catalyst. For more information, see [`Display content in a toolbar on Mac`](uinavigationitem/title#Display-content-in-a-toolbar-on-Mac.md).
 
 ## See Also
 

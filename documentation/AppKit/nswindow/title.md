@@ -18,6 +18,8 @@ var title: String { get set }
 
 If the title has been set using [`setTitleWithRepresentedFilename(_:)`](nswindow/settitlewithrepresentedfilename(_:).md), this property contains the file’s path. Setting this property also sets the title of the window’s miniaturized window.
 
+> **Note**:  When you present a window as a sheet, the window never displays this title, regardless of its value.
+
 ## See Also
 
 - [var miniwindowTitle: String!](nswindow/miniwindowtitle.md)

@@ -19,6 +19,10 @@ Notification sent when the audio session becomes active.
 class let didBecomeActiveNotification: NSNotification.Name
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 #### Discussion
 
 This notification has no userInfo payload.

@@ -26,6 +26,8 @@ Custom views can contain buttons. Use the [`init(type:)`](uibutton/init(type:).m
 
 The default value is `nil`.
 
+> **Note**:  `NSToolbar` doesn’t support a custom title view when the system displays the navigation bar’s content in a toolbar for an app built with Mac Catalyst. For more information, see [`Display content in a toolbar on Mac`](uinavigationitem/title#Display-content-in-a-toolbar-on-Mac.md).
+
 ## See Also
 
 - [var centerItemGroups: [UIBarButtonItemGroup]](uinavigationitem/centeritemgroups.md)

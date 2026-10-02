@@ -95,6 +95,11 @@ The first time that your code refers to the shared manager, Background Assets co
 ### Handling errors
 - [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
+### Instance Methods
+- [func localSize(ofAssetPackWithID: String, calculationMethod: SizeCalculationMethod) async throws -> Int64](assetpackmanager/localsize(ofassetpackwithid:calculationmethod:).md)
+  Calculates a locally available asset pack’s installation size.
+- [func localVersion(ofAssetPackWithID: String) throws -> Int](assetpackmanager/localversion(ofassetpackwithid:).md)
+  Returns a locally available asset pack’s version number.
 
 ## Relationships
 

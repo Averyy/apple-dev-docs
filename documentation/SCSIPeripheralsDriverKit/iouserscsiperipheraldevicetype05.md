@@ -3,7 +3,7 @@
 **Framework**: SCSIPeripheralsDriverKit  
 **Kind**: class
 
-A DriverKit provider object that works with type 05 devices, those that use SCSI Multimedia Commands (SMC).
+A DriverKit provider object that works with Type05 devices, those that use SCSI Multimedia Commands (SMC).
 
 **Availability**:
 - DriverKit 22.0+
@@ -33,11 +33,11 @@ Use the functions in [`SCSI commands`](scsi-commands.md) to populate Command Des
 - [SCSIType05OutParameters](scsitype05outparameters.md)
   Parameters for commands to send to the external SCSI device.
 - [SCSIType05OutVersion](scsitype05outversion.md)
-  Constants that represent versions of the type 05 outbound interface.
+  Constants that represent versions of the Type05 outbound interface.
 - [SCSIType05InParameters](scsitype05inparameters.md)
   Parameters for responses from the external SCSI device.
 - [SCSIType05InVersion](scsitype05inversion.md)
-  Constants that represent versions of the type 05 inbound interface.
+  Constants that represent versions of the Type05 inbound interface.
 ### Suspending and resuming services
 - [UserSuspendServices](iouserscsiperipheraldevicetype05/usersuspendservices.md)
   Suspends services and allows the dext to communicate with the external drive.
@@ -55,7 +55,9 @@ Use the functions in [`SCSI commands`](scsi-commands.md) to populate Command Des
 ## See Also
 
 - [IOUserSCSIPeripheralDeviceType00](iouserscsiperipheraldevicetype00.md)
-  A DriverKit provider object that works with type 00 devices, those that use SCSI Block Commands (SBC).
+  A DriverKit provider object that works with Type00 devices, those that use SCSI Block Commands (SBC).
+- [IOUserSCSIPeripheralDeviceType07](iouserscsiperipheraldevicetype07.md)
+  A DriverKit provider object that works with Type07 devices, those that use extended SCSI Block Commands (SBC) for optical memory devices.
 
 
 ---

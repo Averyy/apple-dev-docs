@@ -19,6 +19,10 @@ An object that describes why and how the audio session deactivated.
 class DeactivationContext
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 ## Topics
 
 ### Getting the deactivation details

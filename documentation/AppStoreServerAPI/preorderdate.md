@@ -28,6 +28,8 @@ For more information, see [`JWSAppTransactionDecodedPayload`](jwsapptransactiond
   The app version that the customer originally purchased from the App Store.
 - [type originalPlatform](originalplatform.md)
   The platform on which a customer originally purchases an app.
+- [type storeType](storetype.md)
+  A string that describes the store the customer obtained the app from.
 
 
 ---

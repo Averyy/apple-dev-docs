@@ -22,8 +22,8 @@ convenience init(resource: ImageResource)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
 - [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
-- [Creating custom symbol images for your app](creating-custom-symbol-images-for-your-app.md)
-  Create, organize, and annotate symbol images using SF Symbols.
+- [Creating custom symbols](../technologyoverviews/custom-sf-symbols.md)
+  Design a symbol image with the same behavior as system-provided symbols.
 - [init?(named: String, in: Bundle?, compatibleWith: UITraitCollection?)](uiimage/init(named:in:compatiblewith:).md)
   Creates an image object using the named image asset that’s compatible with the specified trait collection.
 - [init?(named: String, in: Bundle?, with: UIImage.Configuration?)](uiimage/init(named:in:with:).md)

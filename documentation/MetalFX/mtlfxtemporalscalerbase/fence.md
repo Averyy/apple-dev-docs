@@ -11,7 +11,7 @@ An optional fence that you provide to synchronize your app’s untracked resourc
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
 - macOS 10.13+
-- tvOS 10.0+
+- tvOS 27.1+
 - visionOS 1.0+
 
 ## Declaration

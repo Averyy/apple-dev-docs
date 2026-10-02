@@ -23,6 +23,7 @@ struct MetricsAggregator
 ## Mentions
 
 - [Designing effective evaluations](designing-effective-evaluations.md)
+- [Evaluating language model responses](evaluating-language-model-responses.md)
 - [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
 
 #### Overview

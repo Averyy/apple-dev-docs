@@ -3,6 +3,8 @@
 **Framework**: SCSIPeripheralsDriverKit  
 **Kind**: method
 
+Provides a report on the external device’s block size.
+
 **Availability**:
 - DriverKit 22.0+
 
@@ -12,13 +14,17 @@
 virtual kern_return_t UserReportMediumBlockSize(UInt64 *blockSize);
 ```
 
-## See Also
+#### Return Value
 
-- [UserDetermineDeviceCharacteristics](iouserscsiperipheraldevicetype07/userdeterminedevicecharacteristics.md)
-- [UserResetDevice](iouserscsiperipheraldevicetype07/userresetdevice.md)
-- [UserResumeServices](iouserscsiperipheraldevicetype07/userresumeservices.md)
-- [UserSendCDB](iouserscsiperipheraldevicetype07/usersendcdb.md)
-- [UserSuspendServices](iouserscsiperipheraldevicetype07/usersuspendservices.md)
+A value that indicates the result of the report request. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+
+#### Discussion
+
+This call populates `blockSize` with the granularity of the block size, such as 512 bytes or 4096 bytes (4 KB).
+
+## Parameters
+
+- `blockSize`: On return, the external device’s block size.
 
 
 ---

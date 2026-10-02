@@ -25,6 +25,8 @@ An [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) sec
 
 The system calls this method to determine how to render your [`UINavigationBar`](uinavigationbar.md) when you build your app with Mac Catalyst.
 
+> **Note**:  Not every navigation item property is supported in every toolbar section. For more information, see [`Display content in a toolbar on Mac`](uinavigationitem/title#Display-content-in-a-toolbar-on-Mac.md).
+
 ## Parameters
 
 - `navigationBar`: The navigation bar to host in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar).

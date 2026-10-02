@@ -36,6 +36,8 @@ Use this constant to indicate that any change to the heading, regardless of how 
   The minimum angular change in degrees required to generate new heading events.
 - [typealias CLLocationDegrees](cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
+- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+  A physical body or view that defines the reference orientation for heading calculations.
 - [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 - [enum CLDeviceOrientation](cldeviceorientation.md)

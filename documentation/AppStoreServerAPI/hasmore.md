@@ -3,7 +3,7 @@
 **Framework**: App Store Server API  
 **Kind**: typealias
 
-A Boolean value indicating whether the App Store has more transaction data.
+A Boolean value indicating whether the App Store has more data to return.
 
 **Availability**:
 - App Store Server API 1.0+
@@ -16,11 +16,11 @@ boolean hasMore
 
 #### Discussion
 
-This value is `true` if the App Store has more transactions for the customer. Call the endpoint again, including the [`revision`](revision.md) or [`paginationToken`](paginationtoken.md) query parameter, to get the next set of transactions.
+This value is `true` if more results are available. Call the endpoint again, including the [`revision`](revision.md) or [`paginationToken`](paginationtoken.md) query parameter, to get the next set of results.
 
-If this value is `false`, there aren’t any additional transactions.
+If this value is `false`, there aren’t any additional results.
 
-The [`hasMore`](hasmore.md) value appears in responses to endpoints that provide paginated results, such as [`NotificationHistoryResponse`](notificationhistoryresponse.md), [`HistoryResponse`](historyresponse.md), and [`RefundHistoryResponse`](refundhistoryresponse.md).
+The [`hasMore`](hasmore.md) value appears in responses to endpoints that provide paginated results, such as [`NotificationHistoryResponse`](notificationhistoryresponse.md), [`HistoryResponse`](historyresponse.md), [`RefundHistoryResponse`](refundhistoryresponse.md), and [`GetGroupMembersResponse`](getgroupmembersresponse.md).
 
 ## See Also
 

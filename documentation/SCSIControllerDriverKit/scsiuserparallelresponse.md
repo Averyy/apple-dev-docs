@@ -16,7 +16,7 @@ typedef struct SCSIUserParallelResponse { ... } SCSIUserParallelResponse;
 
 ## Topics
 
-### Response Properties
+### Response properties
 - [version](scsiuserparallelresponse/version.md)
   The version of the parallel response structure currently in use.
 - [SCSIUserParallelResponseVersion](scsiuserparallelresponseversion.md)

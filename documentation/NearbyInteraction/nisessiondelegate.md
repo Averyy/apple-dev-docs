@@ -63,11 +63,6 @@ Assign a delegate that Nearby Interaction can use to notify your app of importan
 ### Inherits From
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
-## See Also
-
-- [class NINearbyObject](ninearbyobject.md)
-  Location information for a peer device in an interaction session.
-
 
 ---
 

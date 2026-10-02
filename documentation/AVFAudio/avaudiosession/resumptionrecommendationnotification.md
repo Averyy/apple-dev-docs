@@ -19,6 +19,10 @@ Notification sent when the system provides a resumption recommendation.
 class let resumptionRecommendationNotification: NSNotification.Name
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 #### Discussion
 
 The userInfo dictionary contains an [`AVAudioSession.ResumptionContext`](avaudiosession/resumptioncontext.md) object accessible via [`resumptionContextKey`](avaudiosession/resumptioncontextkey.md).

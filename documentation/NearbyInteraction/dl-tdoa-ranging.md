@@ -33,17 +33,34 @@ Add the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/docu
 
 The system presents an authorization prompt to the person the first time your app requests authorization. On subsequent launches, the system checks the person’s previous authorization decision. If the person denies authorization, the DL-TDOA session stops with an error.
 
-##### Specify a Discovery Method
+#### Specify a Discovery Method
 
 To discover anchors in your deployment environment, specify the discovery method at the time of configuring your session by calling [`init(networkIdentifier:discoveryMethod:)`](nidltdoaconfiguration/init(networkidentifier:discoverymethod:).md). Your app needs to exclusively use either Wi-Fi or Bluetooth Low Energy to discover anchors. By specifying the technology, the framework focuses anchor interaction on the specified method throughout the life of the session. If you don’t specify the discovery method (by calling [`init(networkIdentifier:)`](nidltdoaconfiguration/init(networkidentifier:).md)), the discovery method defaults to [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.md).
 
-##### Receive Measurements and Calculate the Devices Location
+#### Receive Measurements and Calculate the Devices Location
 
 When a device receives a message from an anchor, the framework creates the measurement object [`NIDLTDOAMeasurement`](nidltdoameasurement.md) and provides it to your app by invoking the  [`session(_:didUpdateDLTDOA:)`](nisessiondelegate/session(_:didupdatedltdoa:).md) callback. The measurement contains the coordinates of the anchor in the physical environment and the time it takes the message to arrive. Your app uses the anchor’s coordinates and the elapsed message-transmission time to calculate the device’s location. The calculation consists of a comparison of measurements from multiple anchors, and in particular, the difference in their arrival time to the receiver.
 
-##### Distinguish and Determine the Deployment Area
+#### Distinguish and Determine the Deployment Area
 
 Provide a network identifier when instantiating this class to distinguish among different deployment areas when there are multiple such areas in the vicinity. The network identifier is the session ID in the anchor’s DL-TDOA configuration. Your app can infer the range of an anchor by changes in its signal strength. The anchor’s range, coordinates, and network ID together compose the bounds of the tracked area.
+
+#### Ranging in the Background
+
+In iOS 27.2 and later, DL-TDOA sessions can begin when the system relaunches your app in the background. For example, if your app uses iBeacon region monitoring and DL-TDOA together to locate a device in the physical environment, you can start the DL-TDOA session immediately in the iBeacon region-entry callback:
+
+```swift
+func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+    let configuration = NIDLTDOAConfiguration(networkIdentifier: networkIdentifier)
+    session.run(configuration)
+}
+```
+
+The system allows the DL-TDOA session to run in the background for up to 30 seconds. If the framework finds a DL-TDOA anchor within the 30-second window, it provides measurements through [`session(_:didUpdateDLTDOA:)`](nisessiondelegate/session(_:didupdatedltdoa:).md). If no anchor appears before the timeout, the framework invalidates the session by calling [`session(_:didInvalidateWith:)`](nisessiondelegate/session(_:didinvalidatewith:).md) with [`resourceUsageTimeout`](nierror/resourceusagetimeout.md).
+
+If the person foregrounds your app within the timeout, invalidate the background session and start a new one to continue ranging without the background time limit. The background session requires Always location authorization. To enable it, add the Background Modes capability in your target’s Signing & Capabilities tab in Xcode, then select Uses Nearby Interaction.
+
+For more information about iBeacon region monitoring and handling a background relaunch, see [`Determining the proximity to an iBeacon device`](https://developer.apple.com/documentation/corelocation/determining-the-proximity-to-an-ibeacon-device).
 
 ## Topics
 

@@ -31,6 +31,8 @@ The presence of this key indicates that the app supports scenes and doesn’t us
   A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Dashboard.
 - [CPSupportsInstrumentClusterNavigationScene](information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene.md)
   A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Instrument Cluster.
+- [CPInstrumentClusterNavigationSceneOptions](information-property-list/uiapplicationscenemanifest/cpinstrumentclusternavigationsceneoptions.md)
+  A dictionary of options that indicates your app’s level of support for the CarPlay instrument cluster.
 ### Configuration
 - [UISceneConfigurations](information-property-list/uiapplicationscenemanifest/uisceneconfigurations.md)
   The default configuration details the system uses to create new scenes.

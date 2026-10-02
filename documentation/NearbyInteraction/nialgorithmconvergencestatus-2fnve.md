@@ -48,12 +48,10 @@ The framework may require user action before Camera Assistance is fully operatio
 
 ## See Also
 
-- [Finding devices with precision](finding-devices-with-precision.md)
-  Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
-- [class NIAlgorithmConvergence](nialgorithmconvergence.md)
-  An object that provides the state and reason for user coaching recommendations.
-- [Algorithm Convergence Status](algorithm-convergence-status.md)
-  The possible Objective-C states of Camera Assistance.
+- [func session(NISession, didUpdateAlgorithmConvergence: NIAlgorithmConvergence, for: NINearbyObject?)](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md)
+  Provides recommended actions the user can take to facilitate the framework’s Camera Assistance.
+- [NIAlgorithmConvergenceStatus.Reason](nialgorithmconvergencestatus-2fnve/reason.md)
+  The possible reasons for the Camera Assistance status.
 
 
 ---

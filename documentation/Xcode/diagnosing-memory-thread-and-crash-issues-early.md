@@ -13,11 +13,9 @@ Identifying potential issues during development saves testing time later and imp
 - Main Thread Checker—This tool verifies that system APIs that must run on the main thread actually do run on that thread.
 - Undefined Behavior Sanitizer—The UBSan tool detects divide-by-zero errors, attempts to access memory using a misaligned pointer, and other undefined behaviors.
 
-These are LLVM-based tools that add specific checks to your code. You enable them at build time using the Xcode scheme editor. Select the appropriate scheme for your project and choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run or Test schemes, navigate to the Diagnostics section, and select the sanitizers you want to run.
+These are LLVM-based tools that add specific checks to your code. To enable them for the Run action, select the appropriate scheme for your project and choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run action, navigate to the Diagnostics section, and select the sanitizers you want to run. To enable them for the Test action, set the `Address Sanitizer`, `Thread Sanitizer`, `Undefined Behavior Sanitizer`, and `Main Thread Checker` values in the active test plan’s configuration instead. Test your app with sanitizer tools enabled to catch otherwise difficult to catch bugs. Use a comprehensive set of unit tests, and use additional integration and UI tests to exercise additional code at runtime. For more information, see [`Improving code assessment by organizing tests into test plans`](organizing-tests-to-improve-feedback.md) and [`Testing`](testing.md).
 
 > **Note**: The sanitizer tools support all C-based languages. The tools also support the Swift language, with the exception of the Undefined Behavior Sanitizer tool, which supports only C-based languages.
-
-Test your app with sanitizer tools enabled to catch otherwise difficult to catch bugs. Test your code using a comprehensive set of unit tests, and use additional integration and UI tests to exercise additional code at runtime. The `Address Sanitizer`, `Thread Sanitizer`, `Undefined Behavior Sanitizer`, and `Main Thread Checker` values of a test plan configuration enable these sanitizers during test runs, see [`Improving code assessment by organizing tests into test plans`](organizing-tests-to-improve-feedback.md).  For more information about testing your code, see [`Testing`](testing.md).
 
 ##### Locate Memory Corruption Issues in Your Code
 

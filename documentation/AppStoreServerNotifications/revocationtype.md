@@ -22,6 +22,8 @@ string revocationType
 
 If the `revocationType` is `REFUND_PRORATED`, see the [`revocationPercentage`](revocationpercentage.md) for the prorated percentage.
 
+A `revocationType` of `ASSIGNMENT_REVOKE` indicates that the organization or group purchaser removed the subscription from a customer. Revoke the customer’s access to the content the transaction provides.
+
 ## See Also
 
 - [type revocationDate](revocationdate.md)

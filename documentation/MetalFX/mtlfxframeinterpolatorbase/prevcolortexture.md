@@ -11,7 +11,7 @@ The previous color texture for this frame interpolator during the last call to e
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 26.0+
+- tvOS 27.1+
 
 ## Declaration
 

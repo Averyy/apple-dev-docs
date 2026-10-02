@@ -245,15 +245,6 @@ class MeasurementQualityEstimator {
 }
 ```
 
-## See Also
-
-- [class NIAlgorithmConvergence](nialgorithmconvergence.md)
-  An object that provides the state and reason for user coaching recommendations.
-- [enum NIAlgorithmConvergenceStatus](nialgorithmconvergencestatus-2fnve.md)
-  The possible states of Camera Assistance.
-- [Algorithm Convergence Status](algorithm-convergence-status.md)
-  The possible Objective-C states of Camera Assistance.
-
 
 ---
 

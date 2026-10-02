@@ -24,6 +24,8 @@ When a device requires movement (for example, to calibrate the compass), the val
 
 ## See Also
 
+- [var deviceMotionBody: (any CMBodyIdentifiable)?](cmmotionmanager/devicemotionbody.md)
+  A physical body or view that defines the coordinate system for device-motion data.
 - [var deviceMotionUpdateInterval: TimeInterval](cmmotionmanager/devicemotionupdateinterval.md)
   The interval, in seconds, for providing device-motion updates to the block handler.
 - [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame, to: OperationQueue, withHandler: CMDeviceMotionHandler)](cmmotionmanager/startdevicemotionupdates(using:to:withhandler:).md)

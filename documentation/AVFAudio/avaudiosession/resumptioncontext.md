@@ -19,6 +19,10 @@ An object that provides context when resumption becomes available.
 class ResumptionContext
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 ## Topics
 
 ### Getting the recommendation

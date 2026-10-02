@@ -44,6 +44,17 @@ struct SimulationRate
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [class ComputeGraphSimulation](computegraphsimulation.md)
+  A simulation of particles, which use a single pipeline.
+- [struct ElementSpawnParameters](elementspawnparameters.md)
+  Parameters used to configure the initial state of a particle when it’s spawned in the simulation.
+- [enum ElementGrouping](elementgrouping.md)
+  An enumeration of how elements are grouped.
+- [enum Sorting](sorting.md)
+  An enumeration of sorting modes.
+
 
 ---
 

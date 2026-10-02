@@ -11,7 +11,7 @@ The length of the time interval, in seconds, between time of current and previou
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 26.0+
+- tvOS 27.1+
 
 ## Declaration
 

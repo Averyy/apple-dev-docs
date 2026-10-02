@@ -8,7 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 26.0+
-- tvOS 18.0+
+- tvOS 27.1+
 
 ## Declaration
 

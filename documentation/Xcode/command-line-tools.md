@@ -24,6 +24,9 @@ You can use command-line tools to perform some actions in Terminal without runni
   Use Terminal to remove your app’s authorization access to protected resources during testing.
 - [Acquiring operating system symbol information](acquiring-operating-system-symbol-information.md)
   Download symbols for Apple system frameworks using Xcode or Terminal.
+### Devices
+- [Interacting with devices using the command line](interacting-with-devices-using-the-command-line.md)
+  Manage simulated and physical devices from the command line.
 
 ## See Also
 

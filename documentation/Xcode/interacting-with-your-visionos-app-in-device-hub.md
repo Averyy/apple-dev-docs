@@ -93,6 +93,8 @@ Launch and test your app’s SharePlay experiences in a simulator using FaceTime
   Use Device Hub to control interactions with your apps on simulated and physical devices.
 - [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
+- [Interacting with devices using the command line](interacting-with-devices-using-the-command-line.md)
+  Manage simulated and physical devices from the command line.
 
 
 ---

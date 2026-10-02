@@ -3,7 +3,7 @@
 **Framework**: App Store Server API  
 **Kind**: typealias
 
-A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing.
+A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing, an organization, or a group.
 
 **Availability**:
 - App Store Server API 1.0+
@@ -13,6 +13,10 @@ A string that describes whether the transaction was purchased by the customer, o
 ```swift
 string inAppOwnershipType
 ```
+
+## Mentions
+
+- [App Store Server API changelog](app-store-server-api-changelog.md)
 
 
 ---

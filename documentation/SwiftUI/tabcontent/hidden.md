@@ -31,9 +31,11 @@ The following example shows a `TabView` with 4 tabs in compact and 5 tabs in reg
 struct BrowseTabExample: View {
     @Environment(\.horizontalSizeClass) var sizeClass
 
-    @State var selection: MusicTab = .listenNow
-    @State var browseTabPath: [MusicTab] = []
-    @State var playlists = [Playlist("All Playlists"), Playlist("Running")]
+    @State private var selection: MusicTab = .listenNow
+    @State private var browseTabPath: [MusicTab] = []
+    @State private var playlists = [
+        Playlist("All Playlists"), Playlist("Running"),
+    ]
 
     var body: some View {
             TabView(selection: $selection) {

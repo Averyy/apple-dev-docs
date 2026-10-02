@@ -61,8 +61,12 @@ let params = ElementSpawnParameters(
 
 ## See Also
 
+- [class ComputeGraphSimulation](computegraphsimulation.md)
+  A simulation of particles, which use a single pipeline.
 - [enum ElementGrouping](elementgrouping.md)
   An enumeration of how elements are grouped.
+- [ComputeGraphSimulation.SimulationRate](computegraphsimulation/simulationrate-swift.struct.md)
+  Specifies the rate and mode for simulation.
 - [enum Sorting](sorting.md)
   An enumeration of sorting modes.
 

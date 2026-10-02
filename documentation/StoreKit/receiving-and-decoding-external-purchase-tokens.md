@@ -8,8 +8,9 @@ Receive tokens for external purchases that you use to report transactions to App
 
 An *external purchase token* is a unique string that your app or website receives when your customer chooses to view your external purchase offerings. You receive external purchase tokens within your app or appended to your website URL, depending on the API you call.
 
+- For alternatively distributed apps in the EU, Brazil, and Japan (including marketplaces and, in the EU, web distributed apps), you receive a `CORE_TECHNOLOGY` token that you use to report Core Technology Commissions. In the EU, this process applies to iOS and iPadOS apps; in Japan and Brazil, it only applies to iOS apps.
 - For apps in the European Union (EU) that have the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasecustomlinkregions) property list key configured, when you call `ExternalPurchaseCustomLink/token(for:)`, you receive an external purchase token for custom links (also called a *custom link token*). For more information about these tokens, see the following section, [`Receive custom link tokens for apps in the European Union`](receiving-and-decoding-external-purchase-tokens#Receive-custom-link-tokens-for-apps-in-the-European-Union.md).
-- For apps in Japan that have the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement configured, when you call `ExternalPurchaseCustomLink/token(for:)`, you receive external purchase tokens. For more information, see the following section, [`Receive custom link tokens for apps in Japan`](receiving-and-decoding-external-purchase-tokens#Receive-custom-link-tokens-for-apps-in-Japan.md).
+- For apps in EU, Japan, and Brazil that have the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement configured, when you call `ExternalPurchaseCustomLink/token(for:)`, you receive external purchase tokens. For more information, see [`Receive custom link tokens for apps in the European Union`](receiving-and-decoding-external-purchase-tokens#Receive-custom-link-tokens-for-apps-in-the-European-Union.md) and doc:receiving-and-decoding-external-purchase-tokens#Receive-custom-link-tokens-for-apps-in-Brazil-and-Japan.
 - For music streaming apps in the European Economic Area (EEA) that have the [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselinkstreamingregions) property list key configured, when you call `ExternalPurchaseCustomLink/token(for:)`, you receive custom link tokens for a music streaming service.
 - For apps in the EEA and South Korea, when you call [`presentNoticeSheet()`](externalpurchase/presentnoticesheet().md) and the response is [`ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)`](externalpurchase/noticeresult/continuedwithexternalpurchasetoken(token:).md), you receive an external purchase token in your app.
 - For apps in the EEA and Russia, when you call [`open()`](externalpurchaselink/open().md) or [`open(url:)`](externalpurchaselink/open(url:).md), you receive an external purchase token appended to the current storefront’s destination URL. You configure the URLs in the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselink) or [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasemultilink) property list keys, respectively.
@@ -35,17 +36,19 @@ Apps can request custom link tokens at any time, for example, when the app launc
 
 Use either the original token or a refreshed token to report transactions that occur during the active token period.
 
-> **Note**: To report transactions for custom link tokens, you can use any token associated with the customer that is active (not expired) at the time of the transaction.
+> **Note**: To report transactions for custom link tokens, you can use any token associated with the app that is active (not expired) at the time of the transaction.
 
 After a customer’s `ACQUISITION` token expires, the system doesn’t generate another. The `ACQUISITION` token type has only one active token period. After a customer’s `SERVICES` token expires, the system generates a new `SERVICES` token only if a qualifying event occurs, as listed in the table above.
 
 Custom link tokens are available only on devices running iOS 18.1 and later, iPadOS 18.1 and later, macOS 15.1 and later, tvOS 18.1 and later, visionOS 2.1 and later, and watchOS 11.1 and later.
 
-##### Receive Custom Link Tokens for Apps in Japan
+> ❗ **Important**: For the purposes of reporting, a token is valid if the initial transaction your app reports against that token was valid and occurred prior to the expiration of the token. If a new transaction occurs at the start of an auto-renewing subscription, report subsequent auto-renewal events against the original token, even if that token is in an expired state.
+
+##### Receive Custom Link Tokens for Apps in the Eu Brazil and Japan
 
 If your account receives the StoreKit External Custom Purchase Link Regions entitlement ([`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions)), use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases.
 
-Starting in iOS 26.4, call the `ExternalPurchaseCustomLink/token(for:)` function before every potential transaction to request the external purchase tokens, as follows:
+In iOS 26.4 and later in Brazil and Japan, and iOS 27.2 and later in the EU, call the `ExternalPurchaseCustomLink/token(for:)` function before every potential transaction to request the external purchase tokens, as follows:
 
 - Request an `IN_APP` token type for flows that use an alternative payment provider inside the app
 - Request a `LINK_OUT` token type for flows where customers can complete transactions on your website, outside of the app
@@ -57,12 +60,12 @@ The token your app or website’s server receives is a string that is Base64URL-
 - **`appAppleId`**: Uniquely identifies the app to which the token applies.
 - **`bundleId`**: The bundle ID of the app.
 - **`tokenCreationDate`**: UNIX time, in milliseconds, when the system created the token.
-- **`externalPurchaseId`**: A unique value the system creates to identify the token. Use this value when you report tokens and transactions.
+- **`externalPurchaseId`**: A unique value the system creates to identify the token. Use this value when you report tokens and transactions using the  doc://com.apple.documentation/documentation/externalpurchaseserverapi/send_external_purchase_report endpoint.
 
 The following additional fields apply only to custom link tokens:
 
-- **`tokenType`**: The custom link token’s type, either `ACQUISITION` or `SERVICES`.
-- **`tokenExpirationDate`**: UNIX time, in milliseconds, when the token expires, after which you no longer associate the token with new transactions.
+- **`tokenType`**: The custom link token’s type, which can be one of `ACQUISITION`, `SERVICES`, or  `CORE_TECHNOLOGY`.
+- **`tokenExpirationDate`**: UNIX time, in milliseconds, when the token expires, after which you no longer associate the token with new transactions. This field applies only to custom link tokens.
 
 The [`Send External Purchase Report`](https://developer.apple.com/documentation/externalpurchaseserverapi/send-external-purchase-report) endpoint requires the [`externalPurchaseId`](https://developer.apple.com/documentation/externalpurchaseserverapi/externalpurchaseid) field to report tokens and transactions. To get the `externalPurchaseId`, decode the token string using Base64URL decoding.
 

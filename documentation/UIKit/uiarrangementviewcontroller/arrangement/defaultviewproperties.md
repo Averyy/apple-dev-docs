@@ -9,6 +9,9 @@ The default view properties for a view controller placed in the arrangement.
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+ (Beta)
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 

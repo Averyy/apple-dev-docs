@@ -567,7 +567,9 @@ override func viewDidLoad() {
   Repeats the specified animations a specific number of times, optionally running the animation forward and backward.
 ### Sensor coordinate orientation
 - [protocol CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+  A type that identifies a physical body or view for heading calculations.
 - [protocol CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+  A type that identifies a physical body or view for device-motion calculations.
 ### Constants
 - [UIView.AnimationCurve](uiview/animationcurve.md)
   Specifies the supported animation curves.
@@ -600,7 +602,7 @@ override func viewDidLoad() {
 - [convenience init()](uiview/init.md)
 ### Instance Properties
 - [var appEntityUIElementProvider: ((UIView, AppEntityUIElementsContext) -> [AppEntityUIElement])?](uiview/appentityuielementprovider.md)
-  return AppEntityUIElement( identifier: EntityIdentifier( for: PhotoModel.self, identifier: photo.id ), bounds: photo.frame, state: State(isSelected: photo.isSelected) ) } } } }
+  A closure that provides app entity identifiers to make custom view content discoverable by Apple Intelligence and Siri when it appears onscreen.
 ### Instance Methods
 - [func setNeedsUpdateProperties()](uiview/setneedsupdateproperties.md)
   Call to manually request a properties update for the view. Multiple requests may be coalesced into a single update alongside the next layout pass.

@@ -10,6 +10,8 @@ Images provide a simple way to display custom content without drawing it dynamic
 
 Incorporate text into your interface to describe your content in a person’s native language. Manage your app’s text as Unicode characters and support both left-to-right and right-to-left layouts. Display text in your interface using the system-provided text views or create your own custom text view to perform advanced layout of your content.
 
+SF Symbols provides a library of ready-made symbol images, and lets you create your own custom symbols with the same behaviors. Display your custom symbols as user interface elements and inline with text. Define and use rendering modes, variable color, and animations with annotations in the SF Symbols app. To learn more, read [`Annotating custom symbols`](annotating-sf-symbols.md).
+
 Perform custom drawing in your app for content that changes dynamically or in ways you can’t predict at design time. Use system types to configure the drawing environment, issue drawing commands, and composite the results in one of your views. Configure your app for printing and use your existing drawing code to generate the content for an attached printer.
 
 Build and animate 3D content entirely on your own or with the help of system technologies. Give your content its appearance using custom materials and textures you define in advance. When performance matters most, build your own rendering engine to communicate directly with the GPU.
@@ -23,6 +25,11 @@ Animate items in your interface to make them feel more lively or to provide feed
   Display existing images and photos, create or capture new images, and read and write image data.
 - [Text display](text-display.md)
   Display localized text from your app’s interface, and discover how to lay out and render text yourself.
+### SF Symbols
+- [Creating custom symbols](custom-sf-symbols.md)
+  Design a symbol image with the same behavior as system-provided symbols.
+- [Annotating custom symbols](annotating-sf-symbols.md)
+  Use the SF Symbols app to annotate your custom symbols and adjust the way they render and animate.
 ### Drawing techniques
 - [Drawing and printing](drawing-and-printing.md)
   Draw custom content in your app’s views, and print content to a file or available printer.

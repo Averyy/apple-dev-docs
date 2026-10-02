@@ -59,13 +59,6 @@ Implement the [`session(_:didInvalidateWith:)`](nisessiondelegate/session(_:didi
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
-## See Also
-
-- [NIError.Code](nierror/code.md)
-  Codes that identify errors in Nearby Interaction.
-- [let NIErrorDomain: String](nierrordomain.md)
-  A unique error domain for Nearby Interaction.
-
 
 ---
 

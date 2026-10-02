@@ -87,7 +87,9 @@ To interpret accelerometer, gyroscope, or attitude information, you need to know
   A Boolean value that determines whether gyroscope updates are currently happening.
 - [var isMagnetometerActive: Bool](cmmotionmanager/ismagnetometeractive.md)
   A Boolean value that determines whether magnetometer updates are currently happening.
-### Managing Device Motion Updates
+### Managing device motion updates
+- [var deviceMotionBody: (any CMBodyIdentifiable)?](cmmotionmanager/devicemotionbody.md)
+  A physical body or view that defines the coordinate system for device-motion data.
 - [var showsDeviceMovementDisplay: Bool](cmmotionmanager/showsdevicemovementdisplay.md)
   Controls whether the device-movement display is shown.
 - [var deviceMotionUpdateInterval: TimeInterval](cmmotionmanager/devicemotionupdateinterval.md)
@@ -155,8 +157,6 @@ To interpret accelerometer, gyroscope, or attitude information, you need to know
   The error domain for Core Motion.
 - [struct CMError](cmerror.md)
   Defines motion errors.
-### Instance Properties
-- [var deviceMotionBody: (any CMBodyIdentifiable)?](cmmotionmanager/devicemotionbody.md)
 ### Type Methods
 - [class func authorizationStatus() -> CMAuthorizationStatus](cmmotionmanager/authorizationstatus.md)
 

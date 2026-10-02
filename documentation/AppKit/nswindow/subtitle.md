@@ -18,6 +18,8 @@ var subtitle: String { get set }
 
 When this property is an empty string, the system removes the subtitle from the window layout.
 
+> **Note**:  When you present a window as a sheet, the window never displays this subtitle, regardless of its value.
+
 ## See Also
 
 - [var title: String](nswindow/title.md)

@@ -42,6 +42,11 @@ Used to indicate where variables and buffers reside.
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [ComputeNodeGraph.SamplerSettings](computenodegraph/samplersettings.md)
+- [ComputeNodeGraph.SwizzleChannels](computenodegraph/swizzlechannels.md)
+
 
 ---
 

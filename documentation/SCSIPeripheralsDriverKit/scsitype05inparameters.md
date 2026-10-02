@@ -30,9 +30,9 @@ This type contains all the fields from [`SCSIDeviceInParameters`](scsideviceinpa
 - [SCSIType05OutParameters](scsitype05outparameters.md)
   Parameters for commands to send to the external SCSI device.
 - [SCSIType05OutVersion](scsitype05outversion.md)
-  Constants that represent versions of the type 05 outbound interface.
+  Constants that represent versions of the Type05 outbound interface.
 - [SCSIType05InVersion](scsitype05inversion.md)
-  Constants that represent versions of the type 05 inbound interface.
+  Constants that represent versions of the Type05 inbound interface.
 
 
 ---

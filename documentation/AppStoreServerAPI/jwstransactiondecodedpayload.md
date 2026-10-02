@@ -41,7 +41,7 @@ object JWSTransactionDecodedPayload
 - `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](https://developer.apple.com/documentation/appstoreservernotifications/price). The `currency` parameter indicates the currency of this price.
 - `productId` (productId): The unique identifier of the product.
 - `purchaseDate` (purchaseDate): The UNIX time, in milliseconds, that the App Store charged the customer’s account for a purchase, restored product, subscription, or subscription renewal after a lapse.
-- `quantity` (quantity): The number of consumable products the customer purchased.
+- `quantity` (quantity): The number of products or seats the customer purchased.
 - `revocationDate` (revocationDate): The UNIX time, in milliseconds, that the App Store refunded the transaction or revoked it from Family Sharing.
 - `revocationPercentage` (revocationPercentage): The percentage, in milliunits, of the transaction that the App Store has refunded or revoked.
 - `revocationReason` (revocationReason): The reason that the App Store refunded the transaction or revoked it from Family Sharing.

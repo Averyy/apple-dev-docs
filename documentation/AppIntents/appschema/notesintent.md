@@ -41,6 +41,8 @@ protocol NotesIntent : AppSchema.Kind
   An intent schema that creates a new note.
 - [var updateNote: some AppSchemaIntent](appschema/notesintent/updatenote.md)
   An intent schema that updates a note.
+- [var appendText: some AppSchemaIntent](appschema/notesintent/appendtext.md)
+  An intent schema that adds text to the end of an existing note.
 
 
 ---

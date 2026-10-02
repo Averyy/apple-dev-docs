@@ -29,8 +29,8 @@ The following example creates a search interface that selects all of the text on
 
 ```swift
 struct ContentView: View {
-    @State var text = "Hello, world!"
-    @State var selection: TextSelection?
+    @State private var text = "Hello, world!"
+    @State private var selection: TextSelection?
     @FocusState var focused
 
     var body: some View {

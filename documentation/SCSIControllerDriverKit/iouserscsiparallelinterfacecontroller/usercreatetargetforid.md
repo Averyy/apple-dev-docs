@@ -64,6 +64,8 @@ IMPL ( MyCustomService, UserStartController )
 
 This implementation ensures [`UserStartController`](iouserscsiparallelinterfacecontroller/userstartcontroller.md) calls the event handler asynchronously, which frees up the default dispatch queue for subsequent calls.
 
+> **Note**: The system calls this method on the queue named `AuxiliaryQueue` that your [`IOUserSCSIParallelInterfaceController`](iouserscsiparallelinterfacecontroller.md) creates.
+
 ## Parameters
 
 - `targetID`: The ID of the target to create.

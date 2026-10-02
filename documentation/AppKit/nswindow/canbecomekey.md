@@ -18,7 +18,9 @@ var canBecomeKey: Bool { get }
 
 The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window can become the key window, otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
-Attempts to make the window the key window are abandoned if the value of this property is [`false`](https://developer.apple.com/documentation/swift/false). The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window has a title bar or a resize bar, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Attempts to make the window the key window are abandoned if the value of this property is [`false`](https://developer.apple.com/documentation/swift/false). The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window’s style mask includes the [`titled`](nswindow/stylemask-swift.struct/titled.md) flag, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+
+> **Note**:  To make a window key without including the `titled` flag in its style mask, override this property in an [`NSWindow`](nswindow.md) subclass to return [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

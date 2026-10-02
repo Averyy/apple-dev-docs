@@ -40,68 +40,110 @@ In iOS 15 and later and watchOS 8 and later, UWB-enabled devices can interact wi
 
 ##### Using Nearby Interaction in the Background
 
-While your app is in the foreground, it can freely use Nearby Interaction to perform ranging between UWB devices. When the app moves to the background, it can perform UWB ranging only with devices that are Bluetooth Low Energy (LE)-paired and connected.
+While your app is in the foreground, it can freely use Nearby Interaction to range with a peer device or third-party accessory. When the app moves to the background, it can continue ranging only if the peer or accessory is Bluetooth Low Energy (LE)-paired and connected.
 
-In iOS 18.4 and later, your app can continue ranging in the background with any supported device if the app starts a Live Activity as it goes to the background. For more information about creating Live Activities, see [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
+In iOS 18.4 and later, your app can continue ranging in the background with any supported peer or accessory if the app starts a Live Activity as it goes to the background. For more information about creating Live Activities, see [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
-> **Note**: Both these forms of background activity require that you enable the appropriate capability in Xcode. In your target’s Signing & Capabilities tab, add the “Background Modes” capability, then select “Uses Nearby Interaction”.
+In iOS 27.2 and later, DL-TDOA sessions can begin when the system relaunches your app in the background. For example, if your app uses iBeacon region monitoring and DL-TDOA together to locate a device in the physical environment, you can start the DL-TDOA session immediately in the iBeacon region-entry callback. For more information, see [`Downlink time difference of arrival ranging`](dl-tdoa-ranging.md).
+
+> **Note**: Enable a capability in Xcode for the  type of background activity your app uses. In your target’s Signing & Capabilities tab, add the Background Modes capability, then select Uses Nearby Interaction.
+
+##### Setup
+
+- [`Initiating and maintaining a session`](initiating-and-maintaining-a-session.md)
+- [`NISession`](nisession.md)
+
+##### Authorization
+
+- [`NSNearbyInteractionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsnearbyinteractionusagedescription)
+
+##### Phone Interaction
+
+- [`Implementing interactions between users in close proximity`](implementing-interactions-between-users-in-close-proximity.md)
+- [`Discovering peers with Multipeer Connectivity`](discovering-peers-with-multipeer-connectivity.md)
+- [`Extending advanced direction finding and ranging`](extending-advanced-direction-finding-and-ranging.md)
+- [`NINearbyPeerConfiguration`](ninearbypeerconfiguration.md)
+
+##### Watch Interaction
+
+- [`Implementing proximity-based interactions between a phone and watch`](implementing-proximity-based-interactions-between-a-phone-and-watch.md)
+
+##### Third Party Accessories
+
+- [`Implementing spatial interactions with third-party accessories`](implementing-spatial-interactions-with-third-party-accessories.md)
+- [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md)
+- [`NIMotionActivityState`](nimotionactivitystate.md)
+
+##### Periodic Updates
+
+- [`NINearbyObject`](ninearbyobject.md)
+- [`NISessionDelegate`](nisessiondelegate.md)
+
+##### Camera Assistance
+
+- [`Finding devices with precision`](finding-devices-with-precision.md)
+- [`NIAlgorithmConvergence`](nialgorithmconvergence.md)
+- [`NIAlgorithmConvergenceStatus`](nialgorithmconvergencestatus-2fnve.md)
+- [`NIAlgorithmConvergenceStatus`](nialgorithmconvergencestatus-2fbmj.md)
+- [`Algorithm Convergence Status`](algorithm-convergence-status.md)
+
+##### Dl Tdoa Ranging
+
+- [`Downlink time difference of arrival ranging`](dl-tdoa-ranging.md)
+
+##### Errors
+
+- [`NIError`](nierror.md)
+- [`NIError.Code`](nierror/code.md)
+- [`NIErrorDomain`](nierrordomain.md)
+
+##### Deprecated
+
+Avoid using deprecated configuration in your apps.
+
+- [`NSNearbyInteractionAllowOnceUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsnearbyinteractionallowonceusagedescription)
 
 ## Topics
 
-### Setup
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
-  Measure the relative position of a nearby device and coach the user to sustain interaction.
-- [class NISession](nisession.md)
-  An object that identifies a unique connection between two peer devices.
-### Authorization
-- [NSNearbyInteractionUsageDescription](../bundleresources/information-property-list/nsnearbyinteractionusagedescription.md)
-  A request for user permission to begin an interaction session with nearby devices.
-### Phone interaction
-- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
-  Enable devices to access relative positioning information.
-- [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
-  Exchange discovery tokens over the local network.
-- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
-  Extend your app’s direction finding capabilities with data from Ultra Wideband devices.
-- [class NINearbyPeerConfiguration](ninearbypeerconfiguration.md)
-  A configuration that enables interaction between iPhone or Apple Watch devices.
-### Watch interaction
-- [Implementing proximity-based interactions between a phone and watch](implementing-proximity-based-interactions-between-a-phone-and-watch.md)
-  Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
-### Third-party accessories
-- [Implementing spatial interactions with third-party accessories](implementing-spatial-interactions-with-third-party-accessories.md)
-  Establish a connection with a nearby accessory to receive periodic measurements of its distance from the user.
-- [class NINearbyAccessoryConfiguration](ninearbyaccessoryconfiguration.md)
-  A configuration that enables interaction between iPhone and third-party accessories.
-- [enum NIMotionActivityState](nimotionactivitystate.md)
-  Motion states for a nearby accessory.
-### Periodic updates
-- [class NINearbyObject](ninearbyobject.md)
-  Location information for a peer device in an interaction session.
-- [protocol NISessionDelegate](nisessiondelegate.md)
-  An object that monitors and reacts to session updates.
-### Camera assistance
-- [Finding devices with precision](finding-devices-with-precision.md)
-  Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
-- [class NIAlgorithmConvergence](nialgorithmconvergence.md)
-  An object that provides the state and reason for user coaching recommendations.
-- [enum NIAlgorithmConvergenceStatus](nialgorithmconvergencestatus-2fnve.md)
-  The possible states of Camera Assistance.
+### Articles
 - [Algorithm Convergence Status](algorithm-convergence-status.md)
   The possible Objective-C states of Camera Assistance.
-### DL-TDOA ranging
+- [Discovering peers with Multipeer Connectivity](discovering-peers-with-multipeer-connectivity.md)
+  Exchange discovery tokens over the local network.
 - [Downlink time difference of arrival ranging](dl-tdoa-ranging.md)
   Use anchor devices to improve the accuracy of indoor positioning.
-### Errors
+- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
+  Extend your app’s direction finding capabilities with data from Ultra Wideband devices.
+- [Finding devices with precision](finding-devices-with-precision.md)
+  Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
+- [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
+  Enable devices to access relative positioning information.
+- [Implementing proximity-based interactions between a phone and watch](implementing-proximity-based-interactions-between-a-phone-and-watch.md)
+  Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
+- [Implementing spatial interactions with third-party accessories](implementing-spatial-interactions-with-third-party-accessories.md)
+  Establish a connection with a nearby accessory to receive periodic measurements of its distance from the user.
+- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+  Measure the relative position of a nearby device and coach the user to sustain interaction.
+### Classes
+- [class NIAlgorithmConvergence](nialgorithmconvergence.md)
+  An object that provides the state and reason for user coaching recommendations.
+- [class NINearbyAccessoryConfiguration](ninearbyaccessoryconfiguration.md)
+  A configuration that enables interaction between iPhone and third-party accessories.
+- [class NINearbyObject](ninearbyobject.md)
+  Location information for a peer device in an interaction session.
+- [class NINearbyPeerConfiguration](ninearbypeerconfiguration.md)
+  A configuration that enables interaction between iPhone or Apple Watch devices.
+- [class NISession](nisession.md)
+  An object that identifies a unique connection between two peer devices.
+### Protocols
+- [protocol NISessionDelegate](nisessiondelegate.md)
+  An object that monitors and reacts to session updates.
+### Structures
 - [struct NIError](nierror.md)
   An error Nearby Interaction reports.
-- [NIError.Code](nierror/code.md)
-  Codes that identify errors in Nearby Interaction.
+### Variables
 - [let NIErrorDomain: String](nierrordomain.md)
   A unique error domain for Nearby Interaction.
-### Deprecated
-- [NSNearbyInteractionAllowOnceUsageDescription](../bundleresources/information-property-list/nsnearbyinteractionallowonceusagedescription.md)
-  A one-time request for user permission to begin an interaction session with nearby devices.
 
 
 ---

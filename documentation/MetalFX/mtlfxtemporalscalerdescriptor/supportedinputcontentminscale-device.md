@@ -10,7 +10,7 @@ Returns the smallest temporal scaling factor the device supports as a floating-p
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
+- tvOS 27.1+
 
 ## Declaration
 

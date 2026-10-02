@@ -39,7 +39,7 @@ protocol SystemIntent : AppSchema.Kind
 
 - [var open: some AppSchemaIntent](appschema/systemintent/open.md)
   An intent schema that opens an item in the application.
-- [var search: some AppSchemaIntent](appschema/systemintent/search.md)
+- [var searchInApp: some AppSchemaIntent](appschema/systemintent/searchinapp.md)
   An intent schema that navigates to search results.
 
 

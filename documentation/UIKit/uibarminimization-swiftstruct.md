@@ -56,6 +56,8 @@ struct UIBarMinimization
   A set of methods for defining the positioning of bars in iOS apps.
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
+- [enum UIVerticalBarEdge](uiverticalbaredge.md)
+  The edge where the system places the vertical bar.
 
 
 ---

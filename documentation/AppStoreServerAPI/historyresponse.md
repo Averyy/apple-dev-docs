@@ -34,7 +34,7 @@ If a customer upgrades a subscription or the App Store revokes an in-app purchas
 - [type environment](environment.md)
   The server environment, either sandbox or production.
 - [type hasMore](hasmore.md)
-  A Boolean value indicating whether the App Store has more transaction data.
+  A Boolean value indicating whether the App Store has more data to return.
 - [type revision](revision.md)
   A token you use in a query to request the next set of transactions for the customer.
 - [type JWSTransaction](jwstransaction.md)

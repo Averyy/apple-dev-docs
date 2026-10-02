@@ -8,6 +8,9 @@ The edge where the system places the vertical bar.
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 
@@ -17,14 +20,14 @@ enum UIVerticalBarEdge
 
 ## Topics
 
-### Getting the edge values
+### Getting the vertical bar edges
 - [UIVerticalBarEdge.leading](uiverticalbaredge/leading.md)
   The vertical bar is on the leading edge.
 - [UIVerticalBarEdge.trailing](uiverticalbaredge/trailing.md)
   The vertical bar is on the trailing edge.
 - [UIVerticalBarEdge.unspecified](uiverticalbaredge/unspecified.md)
   The system has no preferred edge for the vertical bar.
-### Initializers
+### Creating a vertical bar edge
 - [init?(rawValue: Int)](uiverticalbaredge/init(rawvalue:).md)
 
 ## Relationships
@@ -39,35 +42,28 @@ enum UIVerticalBarEdge
 
 ## See Also
 
-- [var userInterfaceStyle: UIUserInterfaceStyle](uitraitcollection/userinterfacestyle.md)
-  The style associated with the user interface.
-- [enum UIUserInterfaceStyle](uiuserinterfacestyle.md)
-  Constants that indicate the interface style for the app.
-- [var userInterfaceIdiom: UIUserInterfaceIdiom](uitraitcollection/userinterfaceidiom.md)
-  The user interface idiom of the trait collection.
-- [enum UIUserInterfaceIdiom](uiuserinterfaceidiom.md)
-  Constants that indicate the interface type for the device or an object that has a trait environment, such as a view and view controller.
-- [var userInterfaceLevel: UIUserInterfaceLevel](uitraitcollection/userinterfacelevel.md)
-  The elevation level of the interface.
-- [enum UIUserInterfaceLevel](uiuserinterfacelevel.md)
-  Constants that indicate the visual level for content in the window.
-- [var layoutDirection: UITraitEnvironmentLayoutDirection](uitraitcollection/layoutdirection.md)
-  The layout direction associated with the current environment.
-- [enum UITraitEnvironmentLayoutDirection](uitraitenvironmentlayoutdirection.md)
-  Constants that indicate the layout direction associated with the current environment.
-- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
-- [var accessibilityContrast: UIAccessibilityContrast](uitraitcollection/accessibilitycontrast.md)
-  The accessibility contrast associated with the current environment.
-- [enum UIAccessibilityContrast](uiaccessibilitycontrast.md)
-  Constants that indicate the accessibility contrast setting.
-- [var legibilityWeight: UILegibilityWeight](uitraitcollection/legibilityweight.md)
-  The font weight to apply to text.
-- [enum UILegibilityWeight](uilegibilityweight.md)
-  Constants that indicate the weight to apply to text in your interface.
-- [var activeAppearance: UIUserInterfaceActiveAppearance](uitraitcollection/activeappearance.md)
-  A property that indicates whether a scene has an active appearance.
-- [enum UIUserInterfaceActiveAppearance](uiuserinterfaceactiveappearance.md)
-  Constants that indicate whether the user interface has an active appearance.
+- [class UIBarItem](uibaritem.md)
+  An abstract superclass for items that you can add to a bar that appears at the bottom of the screen.
+- [class UIBarButtonItem](uibarbuttonitem.md)
+  A specialized button for placement on a toolbar, navigation bar, or shortcuts bar.
+- [class UIBarButtonItemGroup](uibarbuttonitemgroup.md)
+  A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
+- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
+- [class UINavigationBar](uinavigationbar.md)
+  Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
+- [class UISearchBar](uisearchbar.md)
+  A specialized view for receiving search-related information from the user.
+- [class UIToolbar](uitoolbar.md)
+  A control that displays one or more buttons along an edge of your interface.
+- [class UITabBar](uitabbar.md)
+  A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
+- [class UITabBarItem](uitabbaritem.md)
+  An object that describes an item in a tab bar.
+- [protocol UIBarPositioning](uibarpositioning.md)
+  A set of methods for defining the positioning of bars in iOS apps.
+- [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
+  A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
+- [struct UIBarMinimization](uibarminimization-swift.struct.md)
 
 
 ---

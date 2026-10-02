@@ -49,6 +49,13 @@ At runtime, the app needs to check the status in the `convergence` object provid
 - [Hashable](../swift/hashable.md)
 - [RawRepresentable](../swift/rawrepresentable.md)
 
+## See Also
+
+- [func session(NISession, didUpdateAlgorithmConvergence: NIAlgorithmConvergence, for: NINearbyObject?)](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md)
+  Provides recommended actions the user can take to facilitate the framework’s Camera Assistance.
+- [enum NIAlgorithmConvergenceStatus](nialgorithmconvergencestatus-2fnve.md)
+  The possible states of Camera Assistance.
+
 
 ---
 

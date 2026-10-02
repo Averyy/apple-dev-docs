@@ -14,6 +14,10 @@ A decoded payload that contains app transaction information.
 object JWSAppTransactionDecodedPayload
 ```
 
+## Mentions
+
+- [App Store Server API changelog](app-store-server-api-changelog.md)
+
 #### Discussion
 
 The [`Get App Transaction Info`](get-app-transaction-info.md) endpoint returns a [`JWSAppTransaction`](jwsapptransaction.md), which you decode to get `JWSAppTransactionDecodedPayload`.
@@ -31,6 +35,7 @@ You can also get app transaction information in your app from StoreKit, using [`
 - `preorderDate` (preorderDate): The date the customer placed an order for the app before it’s available in the App Store.
 - `receiptCreationDate` (receiptCreationDate): The date that the App Store signed the JWS app transaction.
 - `receiptType` (environment): The server environment, production or sandbox, that signed the app transaction.
+- `storeType` (storeType): The store the customer obtained the app from.
 
 ## See Also
 

@@ -19,6 +19,10 @@ Context about the interruption that caused deactivation.
 var interruptionContext: AVAudioSession.InterruptionContext? { get }
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 #### Discussion
 
 This property is only present when the session was interrupted by another application.

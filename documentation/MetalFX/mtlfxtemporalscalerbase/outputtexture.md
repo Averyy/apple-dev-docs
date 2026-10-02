@@ -11,7 +11,7 @@ The output texture into which this scaler writes its output.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.11+
-- tvOS ?+
+- tvOS 27.1+
 - visionOS 1.0+
 
 ## Declaration

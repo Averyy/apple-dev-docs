@@ -42,6 +42,12 @@ struct SwizzleChannels
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [ComputeNodeGraph.SamplerSettings](computenodegraph/samplersettings.md)
+- [enum AddressSpace](addressspace.md)
+  A GPU memory address space.
+
 
 ---
 

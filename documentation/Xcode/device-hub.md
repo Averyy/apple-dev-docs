@@ -36,6 +36,8 @@ To manage your simulated and physical devices, select a device in the sidebar to
   Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
 - [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
+- [Interacting with devices using the command line](interacting-with-devices-using-the-command-line.md)
+  Manage simulated and physical devices from the command line.
 ### Device details
 - [Locating device identifiers](locating-device-identifiers.md)
   Get the unique identifier for a device before registering it in your developer account.

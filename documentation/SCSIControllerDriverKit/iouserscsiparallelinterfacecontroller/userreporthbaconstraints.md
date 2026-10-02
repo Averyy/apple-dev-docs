@@ -33,7 +33,11 @@ The valid keys for the `constraints` dictionary are as follows:
 | `kIOMinimumHBADataAlignmentMaskKey` | Yes |
 | `kIOHierarchicalLogicalUnitSupportKey` | No |
 
+Make sure your dext reports these constraints accurately — particularly all mandatory keys — during initialization. This helps prevent intermittent failures, such as controller firmware buffer overflows.
+
 Subclasses must call this method from the dext before [`UserInitializeController`](iouserscsiparallelinterfacecontroller/userinitializecontroller.md) returns.
+
+If the controller has global transfer limits, set the properties [`kIOMaximumByteCountReadKey`](https://developer.apple.com/documentation/driverkit/kiomaximumbytecountreadkey) and [`kIOMaximumByteCountWriteKey`](https://developer.apple.com/documentation/driverkit/kiomaximumbytecountwritekey) on the dext, using the [`SetProperties`](https://developer.apple.com/documentation/driverkit/ioservice/setproperties) method inherited from [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice). The `UserReportHBAConstraints` method doesn’t currently support these properties.
 
 ## Parameters
 

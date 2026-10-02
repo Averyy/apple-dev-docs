@@ -100,6 +100,7 @@ struct MyAppThemeTrait: UITraitDefinition {
   A type representing a trait in a trait collection.
 - [protocol UITraitDefinition](uitraitdefinition-64c15.md)
   A type representing a trait in a trait collection.
+- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
 
 
 ---

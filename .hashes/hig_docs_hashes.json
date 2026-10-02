@@ -165,14 +165,14 @@
     "last_updated": "2026-09-18T08:34:01.406216"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/right-to-left.json": {
-    "hash": "1b75b20b122d57594131c6d09c66c4b6a1ad9373fe118cad3ba563d8ae9a1e21",
+    "hash": "e240050536c4dc604aac2108c3c6962f21c70fdce283b5ab61d1520ddabee6ec",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/right-to-left.md",
-    "last_updated": "2026-09-11T08:40:15.218329"
+    "last_updated": "2026-10-02T08:38:25.586907"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sf-symbols.json": {
-    "hash": "0d9b700772c78ed144be105fea54c2242c4ce29bd1dd55e9ab2243e8715049bc",
+    "hash": "c8103ccd95e57c42c488d7fe854164a8c2d291d3202723e2234141a779ba138b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sf-symbols.md",
-    "last_updated": "2026-08-14T07:56:34.716943"
+    "last_updated": "2026-10-02T08:38:25.904288"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/spatial-layout.json": {
     "hash": "85aaa342c5604b4202361de29eea459ec15182456281642302383ab24a69fc3e",
@@ -860,9 +860,9 @@
     "last_updated": "2026-08-14T07:56:32.649066"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-iphone-duo.json": {
-    "hash": "f8f0a31602eb61e51d189a8d5e5094e612df0ee4b714efc3ec6823fdecccb0b0",
+    "hash": "6793af42335ab29a35d262f5a145f7c214503011f5d2f2d881b95a6f49cd0f69",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-iphone-duo.md",
-    "last_updated": "2026-09-22T08:39:45.184386"
+    "last_updated": "2026-10-02T08:38:19.628859"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/apple-in-app-purchase.json": {
     "hash": "16e2b5295a4f21b6f53194305190bcb5de518511a4ba7ba370afeff30b6f4780",

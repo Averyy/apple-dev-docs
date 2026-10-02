@@ -43,6 +43,15 @@ The schema supports the following system experiences:
 
 For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
 
+## See Also
+
+- [var createNote: some AppSchemaIntent](appschema/notesintent/createnote.md)
+  An intent schema that creates a new note.
+- [var updateNote: some AppSchemaIntent](appschema/notesintent/updatenote.md)
+  An intent schema that updates a note.
+- [AppSchema.NotesIntent](appschema/notesintent.md)
+  Identifies intent schemas in the notes domain.
+
 
 ---
 

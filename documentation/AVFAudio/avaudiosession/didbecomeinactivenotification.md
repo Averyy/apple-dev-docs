@@ -19,6 +19,10 @@ Notification sent when the audio session becomes inactive.
 class let didBecomeInactiveNotification: NSNotification.Name
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 #### Discussion
 
 The userInfo dictionary contains an [`AVAudioSession.DeactivationContext`](avaudiosession/deactivationcontext.md) object accessible via [`deactivationContextKey`](avaudiosession/deactivationcontextkey.md).

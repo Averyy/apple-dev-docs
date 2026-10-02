@@ -29,6 +29,20 @@ The methods implementing this are [`textLists`](nsparagraphstyle/textlists.md) o
 
 In addition, [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) has convenience methods for lists, such as [`range(of:at:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/range(of:at:)-6um0x), which determines the range covered by a list, and [`itemNumber(in:at:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/itemnumber(in:at:)), which determines the ordinal position within a list of a particular item.
 
+The text that makes up a text list can include list markers, such as the following example:
+
+```text
+- List item one.
+- List item two.
+```
+
+Or, the text that makes up the text list can omit the list markers, such as the following example:
+
+```text
+List item one.
+List item two.
+```
+
 ## Topics
 
 ### Creating a text list
@@ -45,6 +59,8 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/fo
   Constants that describe marker symbols you can apply to list elements in text lists.
 - [func marker(forItemNumber: Int) -> String](nstextlist/marker(foritemnumber:).md)
   Returns the computed value for a specific ordinal position in the list.
+- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+  A Boolean value that indicates whether TextKit includes text list markers in the text content.
 ### Getting list options
 - [var isOrdered: Bool](nstextlist/isordered.md)
   A Boolean value that indicates whether the list is ordered.
@@ -58,9 +74,6 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/fo
 ### Constants
 - [static var prependEnclosingMarker: NSTextList.Options](nstextlist/options/prependenclosingmarker.md)
   Specifies that a nested list should include the marker for its enclosing superlist before its own marker.
-### Type Properties
-- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
-  A Boolean value that indicates whether TextKit includes text list markers in the contents.
 
 ## Relationships
 

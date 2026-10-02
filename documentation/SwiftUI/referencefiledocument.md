@@ -98,8 +98,6 @@ final class PDFDocument: ReferenceFileDocument {
   The configuration for reading file contents.
 - [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
   The configuration for serializing file contents.
-- [struct NewDocumentAction](newdocumentaction.md)
-  An action that presents a new document.
 - [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
   The properties of an open reference file document.
 

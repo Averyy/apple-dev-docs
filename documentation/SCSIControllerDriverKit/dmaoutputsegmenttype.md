@@ -16,7 +16,7 @@ typedef enum DMAOutputSegmentType : uint16_t { ... } DMAOutputSegmentType;
 
 ## Topics
 
-### Segment Types
+### Segment types
 - [kDMAOutputSegmentBig32](dmaoutputsegmenttype/kdmaoutputsegmentbig32.md)
   A constant representing big-endian 32-bit DMA segments.
 - [kDMAOutputSegmentBig64](dmaoutputsegmenttype/kdmaoutputsegmentbig64.md)

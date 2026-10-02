@@ -104,6 +104,8 @@ You can also specify a custom image and position to use in landscape orientation
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
 - [struct UIBarMinimization](uibarminimization-swift.struct.md)
+- [enum UIVerticalBarEdge](uiverticalbaredge.md)
+  The edge where the system places the vertical bar.
 
 
 ---

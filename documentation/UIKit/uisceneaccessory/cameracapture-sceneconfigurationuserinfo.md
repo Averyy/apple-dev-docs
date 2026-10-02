@@ -8,6 +8,7 @@ Creates a scene accessory for presenting content during camera capture, passing 
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+ (Beta)
 
 ## Declaration
 

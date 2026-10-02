@@ -19,6 +19,10 @@ The source of the audio session deactivation.
 var source: AVAudioSession.DeactivationSource { get }
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 ## See Also
 
 - [var interruptionContext: AVAudioSession.InterruptionContext?](avaudiosession/deactivationcontext/interruptioncontext.md)

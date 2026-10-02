@@ -66,6 +66,10 @@ You may also use a text checker to obtain completions for partially entered word
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [Sendable](../swift/sendable.md)
 
+## See Also
+
+- [enum UITextGrammarCheckingType](uitextgrammarcheckingtype.md)
+
 
 ---
 

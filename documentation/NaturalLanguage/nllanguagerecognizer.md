@@ -31,11 +31,13 @@ An [`NLLanguageRecognizer`](nllanguagerecognizer.md) object automatically detect
 1. Identifying the dominant script of a piece of text. Some languages have a unique script (like Greek), but others share the same script (like English, French, and German, which all share the Latin script).
 2. Identifying the language itself.
 
-The identification obtained from an [`NLLanguageRecognizer`](nllanguagerecognizer.md) object can be either a single most likely language, access through [`dominantLanguage`](nllanguagerecognizer/dominantlanguage.md), or a set of language candidates with probabilities, using [`languageHypothesesWithMaximum:`](nllanguagerecognizer/languagehypotheseswithmaximum:.md). You can reset the recognizer to its initial state, to be reused for new analysis.
+The identification obtained from an [`NLLanguageRecognizer`](nllanguagerecognizer.md) object can be either a single most likely language, accessed through [`dominantLanguage`](nllanguagerecognizer/dominantlanguage.md), or a set of language candidates with probabilities, using [`languageHypotheses(withMaximum:)`](nllanguagerecognizer/languagehypotheses(withmaximum:).md). You can reset the recognizer to its initial state, to be reused for new analysis.
 
 Use the convenience method, [`dominantLanguage(for:)`](nllanguagerecognizer/dominantlanguage(for:).md), to get the most likely language without creating an [`NLLanguageRecognizer`](nllanguagerecognizer.md).
 
-> ❗ **Important**:  Don’t use an instance of [`NLLanguageRecognizer`](nllanguagerecognizer.md) from more than one thread simultaneously.
+Language identification is most reliable for longer passages of text. For very short inputs of only a few words, accuracy is lower, and for some text there may be no well-defined answer at all. For example, personal names are shared across languages and don’t belong definitively to any one of them. When you work with short or ambiguous text, inspect the full set of candidates with [`languageHypotheses(withMaximum:)`](nllanguagerecognizer/languagehypotheses(withmaximum:).md) rather than relying on a single [`dominantLanguage`](nllanguagerecognizer/dominantlanguage.md).  When you have prior knowledge about the input, like a person’s preferred languages, bias the recognizer toward them with [`languageHints`](nllanguagerecognizer/languagehints-3gy00.md), or limit it to a known set with [`languageConstraints`](nllanguagerecognizer/languageconstraints.md).
+
+> ❗ **Important**: Don’t use an instance of [`NLLanguageRecognizer`](nllanguagerecognizer.md) from more than one thread simultaneously.
 
 ## Topics
 

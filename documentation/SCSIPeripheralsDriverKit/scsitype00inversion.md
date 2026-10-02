@@ -3,7 +3,7 @@
 **Framework**: SCSIPeripheralsDriverKit  
 **Kind**: enum
 
-Constants that represent versions of the type 00 inbound interface.
+Constants that represent versions of the Type00 inbound interface.
 
 **Availability**:
 - DriverKit 22.0+
@@ -18,7 +18,7 @@ typedef enum SCSIType00InVersion : unsigned int { ... } SCSIType00InVersion;
 
 ### Versions
 - [kScsiType00InCurrentVersion1](scsitype00inversion/kscsitype00incurrentversion1.md)
-  Version 1 of the type 00 inbound interface.
+  Version 1 of the Type00 inbound interface.
 
 ## See Also
 
@@ -27,7 +27,7 @@ typedef enum SCSIType00InVersion : unsigned int { ... } SCSIType00InVersion;
 - [SCSIType00OutParameters](scsitype00outparameters.md)
   Parameters for commands to send to the external SCSI device.
 - [SCSIType00OutVersion](scsitype00outversion.md)
-  Constants that represent versions of the type 00 outbound interface.
+  Constants that represent versions of the Type00 outbound interface.
 - [SCSIType00InParameters](scsitype00inparameters.md)
   Parameters for responses from the external SCSI device.
 

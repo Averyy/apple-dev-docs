@@ -32,6 +32,8 @@ In the sandbox testing environment, the `originalApplicationVersion` value is al
   The platform on which a customer originally purchases an app.
 - [type preorderDate](preorderdate.md)
   The date a customer places an order for the app before it’s available in the App Store, expressed in UNIX time, in milliseconds.
+- [type storeType](storetype.md)
+  A string that describes the store the customer obtained the app from.
 
 
 ---

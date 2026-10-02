@@ -65,11 +65,6 @@ For more information, see [`Initiating and maintaining a session`](initiating-an
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](../foundation/nssecurecoding.md)
 
-## See Also
-
-- [protocol NISessionDelegate](nisessiondelegate.md)
-  An object that monitors and reacts to session updates.
-
 
 ---
 

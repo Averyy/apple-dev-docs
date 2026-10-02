@@ -63,8 +63,6 @@ Use `TVCollectionViewFullScreenCell` to populate the full-screen collection view
 - [Hashable](../swift/hashable.md)
 - [NSCoding](../foundation/nscoding.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](../uikit/uiappearance.md)

@@ -11,7 +11,7 @@ The minimal texture usage options that your app’s input roughness texture need
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 26.0+
+- tvOS 27.1+
 
 ## Declaration
 

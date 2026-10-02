@@ -29,7 +29,7 @@ You define product IDs in App Store Connect. Product IDs are unique within your 
 - [type subscriptionGroupIdentifier](subscriptiongroupidentifier.md)
   The identifier of the subscription group that the subscription belongs to.
 - [type quantity](quantity.md)
-  The number of purchased consumable products.
+  The number of products or seats the customer purchased.
 
 
 ---

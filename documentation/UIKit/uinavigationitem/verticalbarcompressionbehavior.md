@@ -8,6 +8,9 @@ When the tab bar and navigation/toolbar items are both rendered together in the 
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 

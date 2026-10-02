@@ -311,8 +311,6 @@ pencilInteraction.delegate = self
 view.addInteraction(pencilInteraction)
 ```
 
-For additional information on supporting touch input in drawing apps and Apple Pencil, watch the WWDC 2016 session video [`Leveraging Touch Input on iOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2016/220) and the Tech Talks session video [`Designing for iPad Pro and Apple Pencil`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/804/).
-
 ## See Also
 
 - [Handling touches in your view](handling-touches-in-your-view.md)

@@ -107,6 +107,16 @@ With VoiceOver enabled on an iOS device, after someone navigates to a new view i
 
 For general information about making your interface accessible, see [`Accessibility for UIKit`](accessibility-for-uikit.md).
 
+##### Build Your App with Mac Catalyst
+
+When you build your app with Mac Catalyst and it runs with the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md), the system can display a navigation bar’s content in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) instead of displaying the navigation bar directly. This is the default behavior when [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](uibehavioralstyle/automatic.md). Setting [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md) doesn’t change this behavior on the Mac idiom, and the system ignores this setting when your app runs with the [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md). To opt out of this behavior, set [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
+
+To choose which section of the toolbar displays the navigation bar, implement [`navigationBarNSToolbarSection(_:)`](uinavigationbardelegate/navigationbarnstoolbarsection(_:).md) on the navigation bar’s delegate. If you use [`UINavigationController`](uinavigationcontroller.md) to manage your navigation bar, you typically don’t need to implement this method yourself, because [`UINavigationController`](uinavigationcontroller.md) already implements it as the navigation bar’s delegate.
+
+> **Note**:  As an alternative to letting the system display your navigation bar’s content in a toolbar, you can configure an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) directly by setting [`toolbar`](uititlebar/toolbar.md). Displaying a navigation bar at the same time as a toolbar you configure directly on [`toolbar`](uititlebar/toolbar.md) results in a confusing interface. For this reason, if you set [`toolbar`](uititlebar/toolbar.md) directly, the navigation bar’s items don’t appear anywhere. To make the navigation bar display its own items in this configuration, set [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md), which displays the navigation bar below the toolbar you configured.
+
+Not every navigation item property is supported in every toolbar section. For more information, see [`Display content in a toolbar on Mac`](uinavigationitem/title#Display-content-in-a-toolbar-on-Mac.md).
+
 ## Topics
 
 ### Responding to navigation bar changes

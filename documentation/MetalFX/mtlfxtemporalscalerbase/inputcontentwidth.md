@@ -11,7 +11,7 @@ The width, in pixels, of the region within the color texture the scaler uses as 
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- tvOS ?+
+- tvOS 27.1+
 - visionOS 1.0+
 
 ## Declaration

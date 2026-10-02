@@ -20,6 +20,10 @@ A typed column descriptor for the model responses in the detailed DataFrame.
 var responseColumn: ResultColumn<Self.Subject> { get }
 ```
 
+## Mentions
+
+- [Evaluating language model responses](evaluating-language-model-responses.md)
+
 ## See Also
 
 - [struct EvaluationResult](evaluationresult.md)

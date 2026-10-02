@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-An interface that provides a custom identifier for an app intent.
+An interface that provides a custom content identifier for an app intent.
 
 **Availability**:
 - iOS 26.0+
@@ -25,7 +25,7 @@ protocol TargetContentProvidingIntent : AppIntent
 
 #### Overview
 
-In a SwiftUI app, adopt this protocol in an app intent that affects the contents of your app’s interface. The protocol provides an identifier string that you use to describe the app intent to your app. When the system launches your app, you use this identifier to match the app intent to one of your app’s scenes. If you’re implementing a UIKit app, use the [`UISceneAppIntent`](uisceneappintent.md) protocol to achieve the same behavior.
+In a SwiftUI app, adopt this protocol in an app intent that affects the contents of your app’s interface. The protocol provides an identifier string that you use to describe the app intent to your app. When the system launches your app, it looks for a scene that indicates it handles the specified identifier. If you’re implementing a UIKit app, use the [`UISceneAppIntent`](uisceneappintent.md) protocol to achieve the same behavior.
 
 For more information about how to use app intents to configure your app’s interface, see [`Directing app intents to your app’s scenes`](directing-app-intents-to-your-apps-scenes.md).
 

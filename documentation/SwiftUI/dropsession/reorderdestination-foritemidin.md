@@ -27,7 +27,7 @@ This value can be `nil`, if the container was unable to determine a placement fo
 
 ```swift
 struct ContentView: View {
-    @State var accounts: [Account] = []
+    @State private var accounts: [Account] = []
 
     var body: some View {
         VStack {

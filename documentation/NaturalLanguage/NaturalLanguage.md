@@ -16,9 +16,9 @@ Analyze natural language text and deduce its language-specific metadata.
 
 #### Overview
 
-The Natural Language framework provides a variety of natural language processing (NLP) functionality with support for many different languages and scripts. Use this framework to segment natural language text into paragraphs, sentences, or words, and tag information about those segments, such as part of speech, lexical class, lemma, script, and language.
+The Natural Language framework provides a variety of natural language processing (NLP) functionality with support for many different languages and scripts. Use this framework to segment natural language text into paragraphs, sentences, or words, and tag information about those segments, such as lexical class, lemma, script, and language.
 
-![Diagram showing the types of analysis that the Natural Language framework can perform.](/images/com.apple.naturallanguage/media-3597579@2x.png)
+![Diagram showing the types of analysis that the Natural Language framework can](/images/com.apple.naturallanguage/media-3597579@2x.png)
 
 Use this framework to perform tasks like:
 
@@ -27,8 +27,10 @@ Use this framework to perform tasks like:
 - *Parts-of-speech tagging*, marking up individual words with their part of speech.
 - *Lemmatization*, deducing a word’s stem based on its morphological analysis.
 - *Named entity recognition*, identifying tokens as names of people, places, or organizations.
+- *Sentiment classification*, scoring text on a scale from negative to positive.
+- *Text embedding*, mapping words and sentences to vectors so you can measure the similarity between pieces of text, using either word and sentence embeddings or transformer-based contextual embeddings.
 
-You can also use this framework with Create ML to train and deploy custom natural language models. For more information, see [`Creating a text classifier model`](https://developer.apple.com/documentation/createml/creating-a-text-classifier-model) and doc:creating-a-word-tagger-model.
+You can also use this framework with Create ML to train and deploy custom natural language models. For more information, see [`Creating a text classifier model`](https://developer.apple.com/documentation/createml/creating-a-text-classifier-model) and [`Creating a word tagger model`](https://developer.apple.com/documentation/createml/creating-a-word-tagger-model).
 
 ## Topics
 

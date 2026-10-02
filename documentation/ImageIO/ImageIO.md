@@ -138,8 +138,6 @@ For more information, see [`Image I/O Programming Guide`](https://developer.appl
 - [let kCGImagePropertyPVREncoder: CFString](kcgimagepropertypvrencoder.md)
 - [let kCGImageProviderPreferredTileHeight: CFString](kcgimageproviderpreferredtileheight.md)
 - [let kCGImageProviderPreferredTileWidth: CFString](kcgimageproviderpreferredtilewidth.md)
-- [let kCGImageSourceAllowableTypes: CFString](kcgimagesourceallowabletypes.md)
-  Option key for restricting which image formats can be decoded.
 - [let kCGImageSourceGenerateImageSpecificLumaScaling: CFString](kcgimagesourcegenerateimagespecificlumascaling.md)
 - [let kCGImageSourcePrioritizeQuality: CFString](kcgimagesourceprioritizequality.md)
   A Boolean value that indicates whether to prioritize image quality over decode speed.

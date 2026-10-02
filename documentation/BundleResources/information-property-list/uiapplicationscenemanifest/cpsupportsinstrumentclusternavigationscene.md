@@ -23,6 +23,8 @@ For more information, see [`Displaying Content in CarPlay`](https://developer.ap
 
 - [CPSupportsDashboardNavigationScene](information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md)
   A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Dashboard.
+- [CPInstrumentClusterNavigationSceneOptions](information-property-list/uiapplicationscenemanifest/cpinstrumentclusternavigationsceneoptions.md)
+  A dictionary of options that indicates your app’s level of support for the CarPlay instrument cluster.
 
 
 ---

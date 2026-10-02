@@ -3,7 +3,7 @@
 **Framework**: App Store Server Notifications  
 **Kind**: typealias
 
-The number of purchased consumable products.
+The number of products or seats the customer purchased.
 
 **Availability**:
 - App Store Server Notifications 2.0+
@@ -13,6 +13,14 @@ The number of purchased consumable products.
 ```swift
 int32 quantity
 ```
+
+## Mentions
+
+- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+
+#### Discussion
+
+For a subscription that a customer buys as a multiseat purchase, this value is the number of seats the purchase covers. For all other in-app purchase types, it’s the number of products the customer bought.
 
 ## See Also
 

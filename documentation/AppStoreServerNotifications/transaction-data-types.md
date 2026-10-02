@@ -37,7 +37,7 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type subscriptionGroupIdentifier](subscriptiongroupidentifier.md)
   The identifier of the subscription group that the subscription belongs to.
 - [type quantity](quantity.md)
-  The number of purchased consumable products.
+  The number of products or seats the customer purchased.
 ### Product price and currency
 - [type price](price.md)
   The price, in milliunits, of the In-App Purchase that the system records in the transaction.
@@ -71,7 +71,7 @@ Refer to these data types for decoded transaction and renewal information payloa
   A Boolean value that indicates whether the App Store is attempting to automatically renew a subscription that expired due to a billing issue.
 - [type gracePeriodExpiresDate](graceperiodexpiresdate.md)
   The time when the billing grace period for a subscription renewal expires.
-### Subscripton renewal and expiration
+### Subscription renewal and expiration
 - [type autoRenewStatus](autorenewstatus.md)
   The renewal status for an auto-renewable subscription.
 - [type autoRenewProductId](autorenewproductid.md)
@@ -100,9 +100,9 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type commitmentRenewalBillingPlanType](commitmentrenewalbillingplantype.md)
 - [type commitmentRenewalDate](commitmentrenewaldate.md)
 - [type commitmentRenewalPrice](commitmentrenewalprice.md)
-### Family Sharing
+### Transaction ownership
 - [type inAppOwnershipType](inappownershiptype.md)
-  A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing.
+  A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing, an organization, or a group.
 ### Price increase status
 - [type priceIncreaseStatus](priceincreasestatus.md)
   The status that indicates whether an auto-renewable subscription is subject to a price increase.

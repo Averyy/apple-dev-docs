@@ -28,8 +28,8 @@ This is frequently used to represent selection of text in a `TextField` or `Text
 
 ```swift
 struct SuggestionTextEditor: View {
-    @State var text: String = ""
-    @State var selection: TextSelection? = nil
+    @State private var text: String = ""
+    @State private var selection: TextSelection? = nil
 
     var body: some View {
         VStack {
@@ -54,8 +54,8 @@ You can also use the [`textSelectionAffinity(_:)`](view/textselectionaffinity(_:
 
 ```swift
 struct SuggestionTextEditor: View {
-    @State var text: String = ""
-    @State var selection: TextSelection? = nil
+    @State private var text: String = ""
+    @State private var selection: TextSelection? = nil
 
     var body: some View {
         VStack {

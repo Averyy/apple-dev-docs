@@ -20,6 +20,10 @@ Computes a custom aggregation from a single metric’s results.
 mutating func custom(of metric: Metric, label: String, _ body: ([Double]) -> Double)
 ```
 
+## Mentions
+
+- [Evaluating language model responses](evaluating-language-model-responses.md)
+
 ## Parameters
 
 - `metric`: The metric to aggregate.

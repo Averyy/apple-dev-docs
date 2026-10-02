@@ -36,6 +36,19 @@ struct StructureLayout
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+  The primitive topology used to assemble output geometry for an output stage.
+- [enum CoordinateSpace](coordinatespace.md)
+  Simulation coordinate space, controlling how positions and orientations are stored.
+- [enum StripOrientation](striporientation.md)
+  An enumeration that specifies how a strip should be oriented.
+- [struct Viewpoint](viewpoint-swift.struct.md)
+  Camera viewpoint parameters in 3D space.
+- [struct MouseParams](mouseparams.md)
+  Parameters describing mouse interaction in 3D space.
+
 
 ---
 

@@ -138,6 +138,8 @@ For more information, see [`Configuring your app to use location services`](conf
   A constant indicating that all header values should be reported.
 - [typealias CLLocationDegrees](cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
+- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+  A physical body or view that defines the reference orientation for heading calculations.
 - [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 - [enum CLDeviceOrientation](cldeviceorientation.md)
@@ -172,8 +174,6 @@ For more information, see [`Configuring your app to use location services`](conf
   Review unsupported symbols and their replacements.
 ### Instance Methods
 - [func requestHistoricalLocations(purposeKey: String, sampleCount: Int, completionHandler: ([CLLocation], (any Error)?) -> Void)](cllocationmanager/requesthistoricallocations(purposekey:samplecount:completionhandler:).md)
-### Instance Properties
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
 
 ## Relationships
 

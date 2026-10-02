@@ -8,6 +8,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 Xcode 27.2 beta 2 includes Swift 6.4 and SDKs for iOS 27.2, iPadOS 27.2, tvOS 27.2, watchOS 27.2, macOS 27.2, and visionOS 27.2. Xcode 27.2 beta 2 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27.2 beta 2 requires a Mac running macOS Tahoe 26.6 or later.
 
+> ❗ **Important**: [`Download Xcode 27.1 beta`](https://developer.apple.comhttps://developer.apple.com/download/applications/) to get the iOS SDK and simulator support for iPhone Duo.
+
 See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
 ##### General

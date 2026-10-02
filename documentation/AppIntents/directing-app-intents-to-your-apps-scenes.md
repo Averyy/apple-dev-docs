@@ -106,7 +106,7 @@ The system provides an additional way to configure scenes in UIKit apps. If you 
 ## See Also
 
 - [protocol TargetContentProvidingIntent](targetcontentprovidingintent.md)
-  An interface that provides a custom identifier for an app intent.
+  An interface that provides a custom content identifier for an app intent.
 - [protocol UISceneAppIntent](uisceneappintent.md)
   An interface you use to direct an app intent to a specific scene in your UIKit app.
 - [protocol AppIntentSceneDelegate](appintentscenedelegate.md)

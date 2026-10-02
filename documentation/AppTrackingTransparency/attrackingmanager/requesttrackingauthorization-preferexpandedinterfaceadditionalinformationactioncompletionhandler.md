@@ -1,4 +1,4 @@
-# requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)
+# requestTrackingAuthorization(preferExpandedInterface:additionalInformationAction:completionHandler:)
 
 **Framework**: App Tracking Transparency  
 **Kind**: method
@@ -13,7 +13,7 @@ Presents a modal UI that asks someone for permission to access data that your ap
 ## Declaration
 
 ```swift
-class func requestTrackingAuthorization(usingExpandedInterface preferExpandedInterface: Bool, additionalInformationAction: (() -> Void)?) async -> ATTrackingManager.AuthorizationStatus
+class func requestTrackingAuthorization(preferExpandedInterface: Bool, additionalInformationAction: (() -> Void)?) async -> ATTrackingManager.AuthorizationStatus
 ```
 
 #### Discussion
@@ -74,4 +74,4 @@ To use this method, add the [`NSUserTrackingUsageDescription`](https://developer
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:))*

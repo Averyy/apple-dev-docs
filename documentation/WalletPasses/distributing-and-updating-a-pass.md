@@ -6,11 +6,20 @@ Distribute a pass to your users or update an existing pass.
 
 #### Overview
 
-There are three ways you can distribute a pass:
+There are four ways you can distribute a pass:
 
+- Automatically add a pass during an in-app action.
 - Add a pass from an app or App Clip.
 - Provide a download on a web page for one pass or a bundle containing multiple passes.
 - Send a pass as an attachment in an email.
+
+You can add a pass automatically during an in-app action. When someone completes an action in your app that produces a pass, such as checking into a flight, you can add the pass to Wallet automatically without an additional confirmation prompt. Request the `backgroundAddPasses` capability once with doc://com.apple.documentation/documentation/passkit/pkpasslibrary/requestauthorization(for:). This request shows a one-time permission prompt; if you call it after the person has responded, it doesn’t prompt again, but instead returns the current status. People can manage this permission from Settings.
+
+After the initial request, check [`requestAuthorization(for:completion:)`](https://developer.apple.com/documentation/passkit/pkpasslibrary/requestauthorization(for:completion:)) to silently determine whether someone authorized your app to add passes in the background, without showing a prompt. If the status is `authorized`, call doc://com.apple.documentation/documentation/passkit/addPasses(_:withCompletionHandler:) with an array of one or more passes to add them to Wallet in a single call. Wallet adds the passes in the background and notifies the person with a system notification instead of an on-device confirmation.
+
+If you don’t request `backgroundAddPasses`, the `addPasses` method shows a prompt on the device before adding each pass to Wallet.
+
+> **Note**:  Automatically adding passes during an in-app action requires your app to be installed and running on the device.
 
 In your app or App Clip, add a [`PKAddPassButton`](https://developer.apple.com/documentation/passkit/pkaddpassbutton) to show that a pass is available. When the user taps the button, show a [`PKAddPassesViewController`](https://developer.apple.com/documentation/passkit/pkaddpassesviewcontroller) for the pass.
 

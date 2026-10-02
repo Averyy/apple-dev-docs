@@ -8,6 +8,9 @@ A Boolean value that indicates whether inactive reserved regions are included in
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+ (Beta)
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 

@@ -155,6 +155,30 @@ struct TodoItemView: View {
 }
 ```
 
+`ToggleTodoIntent(todo.id)` pre-populates the intent’s parameter directly instead of waiting for the system to resolve it. To support intent parameter pre-population, add a custom initializer to your app intent that assigns the incoming value to your `@Parameter` property, in addition to `init()`, as follows:
+
+```swift
+struct ToggleTodoIntent: AppIntent {
+    static var title: LocalizedStringResource = "Toggle To Do"
+
+    @Parameter(title: "To Do ID")
+    var todoID: String
+
+    init() {}
+
+    init(_ todoID: String) {
+        self.todoID = todoID
+    }
+
+    func perform() async throws -> some IntentResult {
+        // Mark the to-do item as complete.
+        return .result()
+    }
+}
+```
+
+Because `@Parameter` wraps a regular stored property, you can set its value directly in your own initializer instead of relying on the system to resolve it.
+
 > **Note**: If you define your own [`ToggleStyle`](https://developer.apple.com/documentation/swiftui/togglestyle), check the [`isOn`](https://developer.apple.com/documentation/swiftui/togglestyleconfiguration/ison) property and add the correct appearance for on and off states.
 
 The [`perform()`](https://developer.apple.com/documentation/appintents/appintent/perform()) function runs code asynchronously and may take time to complete, for example, when a person performs an interaction on an iPhone widget on Mac. `Toggle` updates its appearance optimistically and indicates its new state immediately — without waiting for the result of the performed action.

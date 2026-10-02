@@ -44,6 +44,8 @@ Image sources support this option only for JPEG, HEIF, TIFF, and PNG images.
   The maximum width and height of a thumbnail image, specified in pixels.
 - [let kCGImageSourceCreateThumbnailWithTransform: CFString](kcgimagesourcecreatethumbnailwithtransform.md)
   A Boolean value that indicates whether to rotate and scale the thumbnail image to match the image’s orientation and aspect ratio.
+- [let kCGImageSourceAllowableTypes: CFString](kcgimagesourceallowabletypes.md)
+  Option key for restricting which image formats can be decoded.
 
 
 ---

@@ -19,6 +19,10 @@ Keys for [`resumptionRecommendationNotification`](avaudiosession/resumptionrecom
 class let resumptionContextKey: String
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](avaudiosession/didbecomeactivenotification.md)

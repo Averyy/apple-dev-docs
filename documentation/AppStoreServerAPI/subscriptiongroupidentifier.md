@@ -25,7 +25,7 @@ Auto-renewable subscriptions always belong to a subscription group. You create t
 - [type type](type.md)
   The type of In-App Purchase products you can offer in your app.
 - [type quantity](quantity.md)
-  The number of purchased consumable products.
+  The number of products or seats the customer purchased.
 
 
 ---

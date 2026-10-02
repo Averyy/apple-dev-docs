@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Asks the scene delegate to prepare the scene for the specified app intent.
+Tells the scene delegate to prepare the scene for the specified app intent.
 
 **Availability**:
 - iOS 26.0+

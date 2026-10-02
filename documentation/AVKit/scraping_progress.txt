@@ -1,4 +1,4 @@
 Completed scraping AVKit!
-Total pages scraped: 1
-Pages skipped (unchanged): 560
+Total pages scraped: 16
+Pages skipped (unchanged): 545
 Pages failed: 0

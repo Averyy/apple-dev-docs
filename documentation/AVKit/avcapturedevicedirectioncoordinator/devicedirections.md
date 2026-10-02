@@ -8,6 +8,7 @@ The current direction of each camera the coordinator monitors, in relation to it
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
 
 ## Declaration
 

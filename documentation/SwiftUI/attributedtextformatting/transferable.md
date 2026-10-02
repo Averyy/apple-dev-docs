@@ -28,7 +28,7 @@ Use this type e.g. with drag and drop APIs or to create a [`fileExporter(isPrese
 struct RichTextEditorView: View {
     @State private var text: AttributedString = ""
     @Environment(\.self) private var environment
-    @State var fileExporterIsPresented: Bool = false
+    @State private var fileExporterIsPresented: Bool = false
 
     var body: some View {
         TextEditor(text: $text)

@@ -17,6 +17,8 @@ Understand the error codes that App Store Server API responses return.
   An error response that indicates an app transaction doesn’t exist for the specified customer.
 - [object AppTransactionIdNotSupportedError](apptransactionidnotsupportederror.md)
   An error that indicates the endpoint doesn’t support an app transaction ID.
+- [object AssignedSubscriptionExtensionIneligibleError](assignedsubscriptionextensionineligibleerror.md)
+  An error that indicates a subscription isn’t eligible for a renewal date extension because the customer has access through an organization or group.
 - [object FamilySharedSubscriptionExtensionIneligibleError](familysharedsubscriptionextensionineligibleerror.md)
   An error that indicates a subscription isn’t directly eligible for a renewal date extension because the customer obtained it through Family Sharing.
 - [object FamilyTransactionNotSupportedError](familytransactionnotsupportederror.md)
@@ -29,6 +31,8 @@ Understand the error codes that App Store Server API responses return.
   An error that indicates the app account token value is not a valid UUID.
 - [object InvalidAppIdentifierError](invalidappidentifiererror.md)
   An error that indicates an invalid app identifier.
+- [object InvalidAssignedTransactionNotSupportedError](invalidassignedtransactionnotsupportederror.md)
+  An error that indicates the transaction is one that an organization or group assigns to the customer, which the endpoint doesn’t support.
 - [object InvalidEmptyStorefrontCountryCodeListError](invalidemptystorefrontcountrycodelisterror.md)
   An error that indicates a required storefront country code is empty.
 - [object InvalidExtendByDaysError](invalidextendbydayserror.md)
@@ -107,6 +111,13 @@ Understand the error codes that App Store Server API responses return.
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
 - [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
   An error that indicates the consumption percentage must be zero for the provided delivery status.
+### Group membership errors
+- [object GroupNotFoundError](groupnotfounderror.md)
+  An error that indicates the group wasn’t found.
+- [object InvalidGroupIdError](invalidgroupiderror.md)
+  An error that indicates the group identifier is invalid.
+- [object InvalidLimitError](invalidlimiterror.md)
+  An error that indicates the request limit is invalid.
 ### Notification test and history errors
 - [object InvalidEndDateError](invalidenddateerror.md)
   An error that indicates the end date is invalid.

@@ -80,6 +80,17 @@ This class is independent of the output, which makes for simpler testing.
   Spawns new elements into the simulation with the given initial parameters.
 - [func texture(at: Int) -> (any MTLTexture)?](computegraphsimulation/texture(at:).md)
 
+## See Also
+
+- [struct ElementSpawnParameters](elementspawnparameters.md)
+  Parameters used to configure the initial state of a particle when it’s spawned in the simulation.
+- [enum ElementGrouping](elementgrouping.md)
+  An enumeration of how elements are grouped.
+- [ComputeGraphSimulation.SimulationRate](computegraphsimulation/simulationrate-swift.struct.md)
+  Specifies the rate and mode for simulation.
+- [enum Sorting](sorting.md)
+  An enumeration of sorting modes.
+
 
 ---
 

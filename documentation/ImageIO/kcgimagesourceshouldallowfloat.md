@@ -44,6 +44,8 @@ If the image format supports floating-point values, this key tells the image sou
   A Boolean value that indicates whether to rotate and scale the thumbnail image to match the image’s orientation and aspect ratio.
 - [let kCGImageSourceSubsampleFactor: CFString](kcgimagesourcesubsamplefactor.md)
   The factor by which to scale down any returned images.
+- [let kCGImageSourceAllowableTypes: CFString](kcgimagesourceallowabletypes.md)
+  Option key for restricting which image formats can be decoded.
 
 
 ---

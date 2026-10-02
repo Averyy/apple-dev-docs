@@ -20,7 +20,7 @@ CarPlay doesn’t support custom classes. Omit this key or specify [`CPTemplateA
 ## See Also
 
 - [UISceneDelegateClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication/uiscenedelegateclassname.md)
-  The name of the app-specific class you want UIKit to instantiate and use as the scene delegate object.
+  The name of the app-specific class you want UIKit to instantiate and use as the delegate for your app’s instrument cluster scene.
 
 
 ---

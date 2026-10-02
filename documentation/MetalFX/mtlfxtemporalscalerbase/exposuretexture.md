@@ -11,7 +11,7 @@ The exposure texture this scaler uses.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.11+
-- tvOS ?+
+- tvOS 27.1+
 - visionOS 1.0+
 
 ## Declaration

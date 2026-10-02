@@ -138,11 +138,6 @@ In iOS 16, Camera Assistance ([`isCameraAssistanceEnabled`](ninearbypeerconfigur
 
 To use Camera Assistance in an interaction session, ensure the device supports the feature first by checking the value of [`supportsCameraAssistance`](nidevicecapability/supportscameraassistance.md).
 
-## See Also
-
-- [class NISession](nisession.md)
-  An object that identifies a unique connection between two peer devices.
-
 
 ---
 

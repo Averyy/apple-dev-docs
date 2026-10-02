@@ -63,7 +63,7 @@ let subject = ModelSubject(value: "Paris, France")
 - [protocol EvaluationSubject](evaluationsubject.md)
   A type that represents the output the system under test produces.
 - [var name: String](evaluation/name.md)
-  The default name, taken from the type name.
+  The evaluation’s name in results. Defaults to the type name; override for a custom one.
 
 
 ---

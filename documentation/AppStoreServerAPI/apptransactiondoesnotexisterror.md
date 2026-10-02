@@ -16,7 +16,7 @@ object AppTransactionDoesNotExistError
 
 ## Properties
 
-- `errorCode` (number)
+- `errorCode` (int64)
 - `errorMessage` (string)
 
 ## See Also
@@ -29,6 +29,8 @@ object AppTransactionDoesNotExistError
   An error that indicates the app wasn’t found.
 - [object AppTransactionIdNotSupportedError](apptransactionidnotsupportederror.md)
   An error that indicates the endpoint doesn’t support an app transaction ID.
+- [object AssignedSubscriptionExtensionIneligibleError](assignedsubscriptionextensionineligibleerror.md)
+  An error that indicates a subscription isn’t eligible for a renewal date extension because the customer has access through an organization or group.
 - [object FamilySharedSubscriptionExtensionIneligibleError](familysharedsubscriptionextensionineligibleerror.md)
   An error that indicates a subscription isn’t directly eligible for a renewal date extension because the customer obtained it through Family Sharing.
 - [object FamilyTransactionNotSupportedError](familytransactionnotsupportederror.md)
@@ -41,16 +43,14 @@ object AppTransactionDoesNotExistError
   An error that indicates the app account token value is not a valid UUID.
 - [object InvalidAppIdentifierError](invalidappidentifiererror.md)
   An error that indicates an invalid app identifier.
+- [object InvalidAssignedTransactionNotSupportedError](invalidassignedtransactionnotsupportederror.md)
+  An error that indicates the transaction is one that an organization or group assigns to the customer, which the endpoint doesn’t support.
 - [object InvalidEmptyStorefrontCountryCodeListError](invalidemptystorefrontcountrycodelisterror.md)
   An error that indicates a required storefront country code is empty.
 - [object InvalidExtendByDaysError](invalidextendbydayserror.md)
   An error that indicates an invalid extend-by-days value.
 - [object InvalidExtendReasonCodeError](invalidextendreasoncodeerror.md)
   An error that indicates an invalid reason code.
-- [object InvalidOriginalTransactionIdError](invalidoriginaltransactioniderror.md)
-  An error that indicates an invalid original transaction identifier.
-- [object InvalidRefundPreferenceError](invalidrefundpreferenceerror.md)
-  An error that indicates an invalid refund preference value.
 
 
 ---

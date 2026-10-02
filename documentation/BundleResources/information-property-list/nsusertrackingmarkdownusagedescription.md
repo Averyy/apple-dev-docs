@@ -24,7 +24,7 @@ This key is optional. The system uses the [`NSUserTrackingUsageDescription`](inf
 This key has regional availability. To use this key, the system requires that the device be located in a specific European Union (EU) country and signed in with an Apple Account that has its country or region set to a specific EU country or region:
 
 - **France, Germany, Italy, Poland, and Romania**: The system uses this key, if available.
-- **The European Union**: The system uses this key if available when your app calls [`requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:)), passing `preferExpandedInterface` a value of `true`.
+- **The European Union**: The system uses this key if available when your app calls [`requestTrackingAuthorization(preferExpandedInterface:additionalInformationAction:completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:)), passing `preferExpandedInterface` a value of `true`.
 
 Outside of the EU, the system uses the [`NSUserTrackingUsageDescription`](information-property-list/nsusertrackingusagedescription.md) key instead of this key.
 

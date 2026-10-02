@@ -27,7 +27,7 @@ Use this modifier to be informed when the view has crossed the provided threshol
 
 ```swift
 struct VideoPlayer: View {
-    @State var playing: Bool
+    @State private var playing = false
 
     var body: some View {
         Group {

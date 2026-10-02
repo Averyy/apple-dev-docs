@@ -19,6 +19,10 @@ The system’s recommendation on whether to resume playback.
 var recommendation: AVAudioSession.ResumptionRecommendation { get }
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 
 ---
 

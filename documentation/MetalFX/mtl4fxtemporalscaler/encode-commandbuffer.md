@@ -11,7 +11,7 @@ Adds a scaling pass to a command buffer.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 26.0+
+- tvOS 27.1+
 
 ## Declaration
 

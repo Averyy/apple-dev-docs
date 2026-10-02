@@ -42,6 +42,7 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
 - [var title: String?](uinavigationitem/title.md)
   The navigation item’s title that displays in the navigation bar.
 - [var attributedTitle: AttributedString?](uinavigationitem/attributedtitle-25fxb.md)
+  An attributed string that the system renders as the title in the navigation bar.
 - [var largeTitle: String?](uinavigationitem/largetitle.md)
   String to be used as the large title.
 - [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.property.md)

@@ -26,7 +26,7 @@ The framework only calls this method when the dext has successfully mapped comma
 
 - `parallelRequestSlotIndices`: Indices of shared command buffer slots for the tasks to process. Entries from zero to `(parallelRequestSlotIndicesCount - 1)` have valid indices.
 - `parallelRequestSlotIndicesCount`: The number of tasks to process.
-- `completion`: An [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object that the dext class uses to complete the request.
+- `completion`: An [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object that the dext class uses to complete the request. The dext class needs to retain the `OSAction` object until all parallel tasks indicated by the callback complete and acknowledge completion to the framework by calling [`BundledParallelTaskCompletion`](iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md).
 
 ## See Also
 
@@ -34,6 +34,7 @@ The framework only calls this method when the dext has successfully mapped comma
   Maps the shared command and response buffers in the dext address space in response to a call from the framework.
 - [BundledParallelTaskCompletion](iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md)
   Indicates to the system that the extension completed a bundled asynchronous request.
+- [kMaxBundledParallelTasks](kmaxbundledparalleltasks.md)
 
 
 ---

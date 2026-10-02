@@ -18,13 +18,6 @@ Establish a connection with a nearby accessory to receive periodic measurements 
 
 Set the run destination to an iPhone that contains an Ultra Wideband chip. The sample app interacts with an accessory you partner with or develop using the [`Nearby Interaction Accessory Protocol Specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction).
 
-## See Also
-
-- [class NINearbyAccessoryConfiguration](ninearbyaccessoryconfiguration.md)
-  A configuration that enables interaction between iPhone and third-party accessories.
-- [enum NIMotionActivityState](nimotionactivitystate.md)
-  Motion states for a nearby accessory.
-
 
 ---
 

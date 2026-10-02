@@ -60,8 +60,8 @@ let image = NSImage(named: "ImageName")
 
 ## See Also
 
-- [Creating custom symbol images for your app](../uikit/creating-custom-symbol-images-for-your-app.md)
-  Create, organize, and annotate symbol images using SF Symbols.
+- [Creating custom symbols](../technologyoverviews/custom-sf-symbols.md)
+  Design a symbol image with the same behavior as system-provided symbols.
 
 
 ---

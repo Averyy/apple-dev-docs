@@ -44,13 +44,6 @@ The schema supports the following system experiences:
 
 For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
 
-## See Also
-
-- [var open: some AppSchemaIntent](appschema/systemintent/open.md)
-  An intent schema that opens an item in the application.
-- [AppSchema.SystemIntent](appschema/systemintent.md)
-  Identifies intent schemas in the system domain.
-
 
 ---
 

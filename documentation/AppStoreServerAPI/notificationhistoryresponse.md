@@ -32,7 +32,7 @@ The notification history response contains a maximum of 20 notification history 
 - [type paginationToken](paginationtoken.md)
   A pagination token that you return to the endpoint on a subsequent call to receive the next set of results.
 - [type hasMore](hasmore.md)
-  A Boolean value indicating whether the App Store has more transaction data.
+  A Boolean value indicating whether the App Store has more data to return.
 
 ## Properties
 

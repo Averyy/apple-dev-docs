@@ -121,7 +121,7 @@ The arrangement of layers within a symbol determines how variable color behaves 
 **Consider your app’s tone when adding animations.** When animating a symbol, think about what the animation can convey and how that might align with your brand identity and your app’s overall style and tone. For guidance, see [Branding](branding.md).
 
 ## Custom symbols
-If you need a symbol that SF Symbols doesn’t provide, you can create your own. To create a custom symbol, first export the template for a symbol that’s similar to the design you want, then use a vector-editing tool to modify it. For developer guidance, see [Creating custom symbol images for your app](../uikit/creating-custom-symbol-images-for-your-app.md).
+If you need a symbol that SF Symbols doesn’t provide, you can create your own. To create a custom symbol, first export the template for a symbol that’s similar to the design you want, then use a vector-editing tool to modify it. For developer guidance, see [Creating custom symbols](../technologyoverviews/custom-sf-symbols.md).
 
 > **Important:** SF Symbols includes copyrighted symbols that depict Apple products and features. You can display these symbols in your app, but you can’t customize them. To help you identify a noncustomizable symbol, the SF Symbols app badges it with an Info icon; to help you use the symbol correctly, the inspector pane describes its usage restrictions.
 Using a process called *annotating*, you can assign a specific color — or a specific hierarchical level, such as primary, secondary, or tertiary — to each layer in a custom symbol. Depending on the rendering modes you support, you can use a different mode in each instance of the symbol in your app.
@@ -151,7 +151,7 @@ For guidance, see [Icons](icons.md).
 #### Developer documentation
 [Symbols](../symbols.md) — Symbols framework
 [Configuring and displaying symbol images in your UI](../uikit/configuring-and-displaying-symbol-images-in-your-ui.md) — UIKit
-[Creating custom symbol images for your app](../uikit/creating-custom-symbol-images-for-your-app.md) — UIKit
+[Creating custom symbols](../technologyoverviews/custom-sf-symbols.md) — UIKit
 
 #### Videos
 - [What’s new in SF Symbols 7](https://developer.apple.com/videos/play/wwdc2025/337) - Explore the latest updates to SF Symbols, Apple’s library of iconography. Meet Draw, a new animation system that allows symbols to imitate the organic flow of a handwritten stroke, and Variable Draw, which can be used to convey strength or progress. Discover Gradients, which add dimension and visual interest to symbols, and Magic Replace enhancements, which offer greater continuity between related symbols. And learn how to preview and integrate these features into your own apps.

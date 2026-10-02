@@ -37,7 +37,7 @@ The following code implements these animations:
 
 ```swift
 struct TransactionExample: View {
-    @State var flag = false
+    @State private var flag = false
 
     var body: some View {
         VStack(spacing: 50) {

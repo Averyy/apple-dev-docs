@@ -6,10 +6,10 @@
 Indicates a network or server issue prevented completing the age range request.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
 
 ## Declaration
 

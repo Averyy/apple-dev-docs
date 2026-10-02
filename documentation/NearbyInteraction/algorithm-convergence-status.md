@@ -14,15 +14,6 @@ When the app enables Camera Assistance by setting [`isCameraAssistanceEnabled`](
 - [enum NIAlgorithmConvergenceStatus](nialgorithmconvergencestatus-2fnve.md)
   The possible states of Camera Assistance.
 
-## See Also
-
-- [Finding devices with precision](finding-devices-with-precision.md)
-  Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
-- [class NIAlgorithmConvergence](nialgorithmconvergence.md)
-  An object that provides the state and reason for user coaching recommendations.
-- [enum NIAlgorithmConvergenceStatus](nialgorithmconvergencestatus-2fnve.md)
-  The possible states of Camera Assistance.
-
 
 ---
 

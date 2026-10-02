@@ -46,6 +46,9 @@ There are two types of configurations:
 ### Color transformers
 - [struct UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct.md)
   A transformer that generates a modified output color from an input color.
+### Text attributes transformers
+- [struct UIConfigurationTextAttributesTransformer](uiconfigurationtextattributestransformer-swift.struct.md)
+  Defines a text transformation that can affect the visual appearance of a string.
 
 
 ---

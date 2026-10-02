@@ -46,6 +46,7 @@ Display text, manage fonts, and check spelling.
 ### Spell checking
 - [class UITextChecker](uitextchecker.md)
   An object to check a string (usually the text of a document) for misspelled words.
+- [enum UITextGrammarCheckingType](uitextgrammarcheckingtype.md)
 ### Text manipulations
 - [init(NSTextAlignment)](../coretext/cttextalignment/init(_:).md)
   Converts a UIKit text alignment constant value to the matching constant value that Core Text uses.

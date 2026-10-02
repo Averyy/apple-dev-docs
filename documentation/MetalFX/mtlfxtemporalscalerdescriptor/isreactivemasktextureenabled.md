@@ -10,7 +10,7 @@ A Boolean value that indicates whether a temporal scaler you create with the des
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
 - macOS 14.4+
-- tvOS 17.4+
+- tvOS 27.1+
 
 ## Declaration
 

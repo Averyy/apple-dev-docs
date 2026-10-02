@@ -11,7 +11,7 @@ The vertical field of view angle, in degrees, of the camera that renders the sce
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 26.0+
+- tvOS 27.1+
 
 ## Declaration
 

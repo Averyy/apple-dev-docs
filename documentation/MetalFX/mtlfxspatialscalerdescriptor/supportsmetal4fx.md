@@ -10,7 +10,7 @@ Queries whether a Metal device supports spatial scaling compatible with Metal 4.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 26.0+
+- tvOS 27.1+
 - visionOS 26.0+
 
 ## Declaration

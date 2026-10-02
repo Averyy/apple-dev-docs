@@ -91,6 +91,9 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
 - [enum BAErrorCode](baerrorcode.md)
 - [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
+### Enumerations
+- [enum SizeCalculationMethod](sizecalculationmethod.md)
+  Methods for calculating a file’s size.
 
 
 ---

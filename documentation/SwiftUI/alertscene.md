@@ -22,8 +22,8 @@ Alert scenes present themselves in the center of the current display, and don’
 ```swift
 @main
 struct MyApp: App {
-    @State var showLoginAlert = true
-    @State var loggedIn = false
+    @State private var showLoginAlert = true
+    @State private var loggedIn = false
 
     var body: some Scene {
         Window("Welcome User Window", id:"WelcomeWindow") {

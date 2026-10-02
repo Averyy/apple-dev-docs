@@ -23,6 +23,7 @@ protocol Evaluation : Sendable
 ## Mentions
 
 - [Designing effective evaluations](designing-effective-evaluations.md)
+- [Evaluating language model responses](evaluating-language-model-responses.md)
 
 #### Overview
 
@@ -73,7 +74,7 @@ struct MyEvaluation: Evaluation {
 - [struct ModelSubject](modelsubject.md)
   The subject type for language model evaluations.
 - [var name: String](evaluation/name.md)
-  The default name, taken from the type name.
+  The evaluation’s name in results. Defaults to the type name; override for a custom one.
 ### Scoring results
 - [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
   The evaluators to apply to each sample and its corresponding subject.

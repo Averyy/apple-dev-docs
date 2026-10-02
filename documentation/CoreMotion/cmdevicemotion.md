@@ -82,6 +82,8 @@ The accelerometer measures the sum of two acceleration vectors: gravity and user
   Constants that indicate the frame of reference for attitude-related motion data.
 - [class CMHeadphoneMotionManager](cmheadphonemotionmanager.md)
   An object that starts and manages headphone motion services.
+- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+  A type that identifies a physical body or view for device-motion calculations.
 
 
 ---

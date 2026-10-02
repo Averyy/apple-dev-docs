@@ -115,9 +115,9 @@ Rewrite this as a navigation stack that takes a path input:
 var body: some View {
     NavigationStack(path: $path) {
         List {
-            NavigationLink("Purple", value: .purple)
-            NavigationLink("Pink", value: .pink)
-            NavigationLink("Orange", value: .orange)
+            NavigationLink("Purple", value: Color.purple)
+            NavigationLink("Pink", value: Color.pink)
+            NavigationLink("Orange", value: Color.orange)
         }
         .navigationDestination(for: Color.self) { color in
             ColorDetail(color: color)

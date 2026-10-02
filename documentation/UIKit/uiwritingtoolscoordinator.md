@@ -80,8 +80,9 @@ When defining the delegate, choose an object from your app that has access to yo
   Options that indicate whether Writing Tools is animating changes to your view’s text.
 - [UIWritingToolsCoordinator.TextAnimation](uiwritingtoolscoordinator/textanimation.md)
   The types of animations that Writing Tools performs during an interactive update of your view.
-### Instance Properties
+### Working with markers
 - [var includesTextListMarkers: Bool](uiwritingtoolscoordinator/includestextlistmarkers.md)
+  A Boolean value that indicates whether Writing Tools includes text list markers in the text list paragraph content.
 ### Instance Methods
 - [func cancelTextAnimations(identifiers: [UUID])](uiwritingtoolscoordinator/canceltextanimations(identifiers:).md)
   Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.

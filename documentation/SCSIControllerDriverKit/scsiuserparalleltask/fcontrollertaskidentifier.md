@@ -14,6 +14,10 @@ A unique identifier for a task.
 uint64_t fControllerTaskIdentifier;
 ```
 
+#### Discussion
+
+Your dext class creates task identifiers when the framework invokes [`UserMapHBAData`](iouserscsiparallelinterfacecontroller/usermaphbadata.md) for each parallel task.
+
 ## See Also
 
 - [version](scsiuserparalleltask/version.md)

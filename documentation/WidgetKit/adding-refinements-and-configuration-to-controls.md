@@ -36,6 +36,30 @@ struct TimerToggle: ControlWidget {
 }
 ```
 
+##### Set Your Controls Tint Color
+
+Choose a tint color that matches your app’s brand. Apply the [`tint(_:)`](https://developer.apple.com/documentation/swiftui/controlwidgettemplate/tint(_:)) modifier to the control’s template to set a custom tint color.
+
+By default, a control’s tint color is set to the Global Accent Color you specify for your widget extension’s target. If you don’t specify one there, the tint color falls back to the Global Accent Color you specify for your app’s target. If you specify neither, the control uses the system’s default tint color. For each target, Xcode adds the Global Accent Color to its Info.plist as the [`NSAccentColorName`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsaccentcolorname) key. Set this value using the target’s **Global Accent Color Name** build setting instead of editing the Info.plist directly.
+
+For guidance on choosing a tint color, see [`Human Interface Guidelines > Controls`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/controls) and [`Human Interface Guidelines > Branding`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/branding).
+
+```swift
+struct GarageDoorOpener: ControlWidget {
+	var body: some ControlWidgetConfiguration {
+		StaticControlConfiguration(...) {
+			ControlWidgetToggle(...) {
+				Label(
+					isOpen ? "Open" : "Closed",
+					systemImage: isOpen ? "door.open" : "door.closed"
+				)
+			}
+			.tint(.orange)
+		}
+	}
+}
+```
+
 ##### Enforce Security and Privacy for Controls
 
 Controls can require a device to be authenticated to allow the control to perform its action or to display its current state and information. Set the `authenticationPolicy` in the control’s app intent to refine what level of authentication is necessary to perform the action.
@@ -55,7 +79,7 @@ Use the [`privacySensitive(_:)`](https://developer.apple.com/documentation/swift
 The following code adds the `privacySensitive()` modifier to a control toggle. The modifier redacts the state and information in the control that displays whether a door is open or closed:
 
 ```swift
-struct DoorOpener: ControlWidget {
+struct GarageDoorOpener: ControlWidget {
 	var body: some ControlWidgetConfiguration {
 		StaticControlConfiguration(...) {
 			ControlWidgetToggle(...) {

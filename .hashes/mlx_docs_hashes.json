@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-09-29T08:50:30.076614",
+    "last_updated": "2026-10-02T08:41:06.885809",
     "total_files": 844,
     "source": "scrape_mlx_docs.py"
   },
@@ -747,9 +747,9 @@
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/reduction.md": "daff0ec4002dbca95011abdbc17260080d0aa33678a56cd1c96acbe3e81aa798",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/shapes.md": "515fb4d69c99680a71cb49cf671d54e445fec53bc4c7bbf38e20dc4c81d0c4ef",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/sorting.md": "dec008918b534c747a7e7e3eaf1cc5bb31160b51a0f6a53eb5a6b909f7879ac7",
-    "github:ml-explore/mlx-swift-lm:README.md": "3831f9e379ffcf84f60c03408af1385ce81d8948693fe336e7d847d37bd31505",
+    "github:ml-explore/mlx-swift-lm:README.md": "d6a1e9b0d871bcd2d548dfa164208369738c9907cfbff62057f83ed26034b953",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "7e056dab0785f00165df536f746c495c354a82eb8f262b35872a6f4bd728ab34",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "031e355952923fa213c7e94de58bb064fdf35d7815c0e849f3e255e3eca679d1",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "27d68e74f19b8e19a9f3129441d832b73acdf7ee26b147d36b400917058b6a71",
     "github:ml-explore/mlx-swift-examples:README.md": "4da27bf9cb2b3f338851067adf5d521dd4d64c351f3cabc25ae9870ae1b7884b",
     "github:ml-explore/mlx-swift-examples:Applications/LLMBasic/README.md": "764050b0ddb93e64a13c7f4999da7fac29bd748924314829f24e69f63a91d032",
     "github:ml-explore/mlx-swift-examples:Applications/LLMEval/README.md": "9d2551458e5f4781b2738712a67474cfedf7534104e012168387c85c1df48ce7",
@@ -775,7 +775,7 @@
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/wired-memory.md": "4d7b3e1fd1fe150096d2191441b3f3030aa9c22158c7ddbe69bbbd443ae66328",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.fsdp_apply_gradients.html": "831fa8937241bfa196513b52a0af226e70a7316416b61f1262f328ca7fc566ee",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/developing.md": "0c23f858032d9f8f8cded26a69d8b86121db62c169becd9b99d63e48d6cf0fe5",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/upgrade.md": "2bf48d80f5f11f372bdc5f0ac90e5b7ddb05d7a5b31500b91708ddec410662fa",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/upgrade.md": "5e795d1b76a822c288f85a7f206516436045030092c5365c8d036c7778e0fc7f",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/using.md": "fbddd56336ba56ed131e03c0b4324b4726ca5a15cf62f68f2eba8e5b5ef25e69",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.PrintOptions.html": "5684125c4f8c9d0c917f33eff045476c10f776d7230d184def58b5789cdcc5ed",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.clear_streams.html": "7d819dd372709237d15d7b06cc94c338805812e72d18cc9a9f9d2382ee25861e",
@@ -847,6 +847,7 @@
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/": "f7b15ec72de8291c9f1fba9d18874279db261e71c4b70d8fb16d3efb831b19fd",
     "coremltools:https://apple.github.io/coremltools/docs-guides/": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fast.cross_entropy.html": "5b5eca8d6ef92f4b52bd9ff271363fe231da961803117f90d2b7ffcca16d43ba",
-    "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.get_array_buffer_size.html": "3ed7f65d563ea72e8c5b0e1a13cbe3b1430de80813e7b3c00dd12f3bc6f89f3f"
+    "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.get_array_buffer_size.html": "3ed7f65d563ea72e8c5b0e1a13cbe3b1430de80813e7b3c00dd12f3bc6f89f3f",
+    "github:apple-aiml-research/ml-stable-diffusion:README.md": "de70ec36d5406d74c5d3dffdbb8217879d0721e42fd410982df0f04d9fe88de2"
   }
 }

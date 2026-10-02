@@ -17,6 +17,11 @@
 case no
 ```
 
+## See Also
+
+- [UITextGrammarCheckingType.default](uitextgrammarcheckingtype/default.md)
+- [UITextGrammarCheckingType.yes](uitextgrammarcheckingtype/yes.md)
+
 
 ---
 

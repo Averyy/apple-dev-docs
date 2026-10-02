@@ -69,6 +69,8 @@ Typically, you don’t create instances of this class yourself, nor do you subcl
 
 - [Getting heading and course information](getting-heading-and-course-information.md)
   Use a device’s orientation and course information for navigation.
+- [protocol CLBodyIdentifiable](clbodyidentifiable.md)
+  A type that identifies a physical body or view for heading calculations.
 
 
 ---

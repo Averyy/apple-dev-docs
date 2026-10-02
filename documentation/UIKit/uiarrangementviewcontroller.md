@@ -8,6 +8,9 @@ A view controller that presents its container view controllers through an arrang
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 
@@ -136,6 +139,7 @@ The split arrangement adapts its axis based on the available size and size class
 - [NSCoding](../foundation/nscoding.md)
 - [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)

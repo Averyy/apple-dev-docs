@@ -33,6 +33,8 @@ The computed maker value for `itemNumber`.
   Returns the marker format string used by the receiver.
 - [NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct.md)
   Constants that describe marker symbols you can apply to list elements in text lists.
+- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+  A Boolean value that indicates whether TextKit includes text list markers in the text content.
 
 
 ---

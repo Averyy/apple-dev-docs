@@ -11,7 +11,7 @@ The width, in pixels, of the content region within the distortion texture to use
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS 27.0+
+- tvOS 27.1+
 
 ## Declaration
 

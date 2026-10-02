@@ -114,6 +114,8 @@ On iOS devices, users can change location service settings at any time in the Se
   Use a device’s orientation and course information for navigation.
 - [class CLHeading](clheading.md)
   The orientation of the user’s device, relative to true or magnetic north.
+- [protocol CLBodyIdentifiable](clbodyidentifiable.md)
+  A type that identifies a physical body or view for heading calculations.
 ### Geocoding
 - [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
   Convert between a latitude and longitude pair and a more user-friendly description of that location.
@@ -148,8 +150,6 @@ On iOS devices, users can change location service settings at any time in the Se
   This document describes the constants found in the Core Location framework.
 - [Core Location Functions](core-location-functions.md)
   The Core Location framework provides functions to help you work with coordinate values.
-### Protocols
-- [protocol CLBodyIdentifiable](clbodyidentifiable.md)
 
 
 ---

@@ -33,7 +33,7 @@ https://api.storekit-sandbox.apple.com/
 - [type bundleId](bundleid.md)
   The bundle identifier of an app.
 - [type hasMore](hasmore.md)
-  A Boolean value indicating whether the App Store has more transaction data.
+  A Boolean value indicating whether the App Store has more data to return.
 - [type revision](revision.md)
   A token you use in a query to request the next set of transactions for the customer.
 - [type JWSTransaction](jwstransaction.md)

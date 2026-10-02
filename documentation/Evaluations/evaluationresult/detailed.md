@@ -22,8 +22,8 @@ var detailed: DataFrame { get }
 
 ## Mentions
 
-- [Designing effective evaluations](designing-effective-evaluations.md)
 - [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Designing effective evaluations](designing-effective-evaluations.md)
 
 ## See Also
 

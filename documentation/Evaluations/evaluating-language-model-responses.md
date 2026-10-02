@@ -10,12 +10,34 @@ Evaluations replace manual spot checks with structured, repeatable measurements 
 
 Because you define your metrics before tuning prompts or switching models, every change is measured against the same criteria. Your focus stays on measurable outcomes rather than subjective impressions of quality. For guidance on how to design your overall strategy for measuring and improving evaluations, see [`Designing effective evaluations`](designing-effective-evaluations.md).
 
-To create an evaluation, you:
+An evaluation is a loop. For each sample in your dataset, the framework runs your feature, scores the response with your evaluators, and records a row of results. When the loop finishes, it aggregates those rows into summary statistics.
+
+To create an evaluation, you supply the parts of that loop:
 
 - Provide input as a dataset of samples with expected outputs.
 - Define the subject, the intelligence-powered feature you are testing.
 - Add evaluators that score each response against metrics you define.
 - Aggregate those scores into a metric summary you compare across runs.
+
+All four are members of a single [`Evaluation`](evaluation.md) conformance:
+
+```swift
+struct LetterCountEvaluation: Evaluation {
+    // The samples to run, and their expected values.
+    let dataset = ArrayLoader(samples: [...])
+
+    // The feature under test, called once per sample.
+    func subject(from sample: ModelSample<Int>) async throws -> ModelSubject<Int> { ... }
+
+    // The scoring applied to each response.
+    var evaluators: Evaluators { ... }
+
+    // The statistics computed across every sample.
+    func aggregateMetrics(using aggregator: inout MetricsAggregator) { ... }
+}
+```
+
+The sections that follow fill in each member.
 
 To see these four steps in use in a complete app, with code-based and model-judge scoring, synthetic data, and tool-call evaluation, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
@@ -115,7 +137,7 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 
 #### Run Your Evaluation
 
-To run an evaluation, attach the [`EvaluationTrait`](evaluationtrait.md) to a test function using the `@Test(.evaluates(...))` trait. The trait runs the dataset through your model, applies evaluators, and aggregates the metrics. Access the results through [`EvaluationContext`](evaluationcontext.md):
+To run an evaluation, attach the [`EvaluationTrait`](evaluationtrait.md) to a test function using the [`evaluates(_:info:recordTranscripts:)`](https://developer.apple.com/documentation/testing/testtrait/evaluates(_:info:recordtranscripts:)) test trait.
 
 ```swift
 import Testing
@@ -137,13 +159,19 @@ When the run finishes, open the Report navigator and select the Evaluations item
 
 ![A screenshot of the Report navigator in Xcode. Beneath a completed LetterCount test run, the Evaluations item is selected, alongside the Insights, Coverage, Tests, and Log items.](/images/com.apple.evaluations/eval-report-navigator@2x.png)
 
-You get back an [`EvaluationResult`](evaluationresult.md) with three views into your data:
+The trait runs the evaluation loop before your test body runs. It loads the dataset, produces a subject for each sample, applies your evaluators, and aggregates the metrics. It then stores the finished [`EvaluationResult`](evaluationresult.md) in [`EvaluationContext`](evaluationcontext.md).
 
-- **[`summary`](evaluationresult/summary.md)**: For aggregate statistics you compare across runs
-- **[`detailed`](evaluationresult/detailed.md)**: For per-sample scores, including the query, response, and every metric value
-- **[`groupedSummary`](evaluationresult/groupedsummary.md)**: To see the summary organized by the groups you defined in [`aggregateMetrics(using:)`](evaluation/aggregatemetrics(using:).md)
+The [`EvaluationResult`](evaluationresult.md) holds three values. The first two are [`DataFrame`](https://developer.apple.com/documentation/tabulardata/dataframe) from the TabularData framework. This collection arranges data in rows and columns.
 
-Read columns out of the detailed view through the typed descriptors on your evaluation. Each descriptor pairs the column’s name with its value type, so you get back a typed `Column<T>` without restating the type at the call site. The `[metric:]` subscript does the same for metric columns:
+- **[`summary`](evaluationresult/summary.md)**: Aggregate statistics you compare across runs, as a column for each statistic you compute and a single row holding its value
+- **[`detailed`](evaluationresult/detailed.md)**: Per-sample values, as a row for each sample and columns for the input, the response, and each metric you define
+- **[`groupedSummary`](evaluationresult/groupedsummary.md)**: A preformatted string with aggregate statistics under the groups you defined in [`aggregateMetrics(using:)`](evaluation/aggregatemetrics(using:).md)
+
+[`aggregateValue(_:)`](evaluationresult/aggregatevalue(_:).md) reads a single statistic out of the summary. Pass the same operation you registered in [`aggregateMetrics(using:)`](evaluation/aggregatemetrics(using:).md). Here, `.mean(of:)` matches the `computeMean(of: exactMatch)` call from the previous section. If the evaluation didn’t compute that statistic, the method returns a sentinel value of `-1`.
+
+Each `compute` method on [`MetricsAggregator`](metricsaggregator.md) pairs with the operation of the same name, so [`computeStandardDeviation(of:)`](metricsaggregator/computestandarddeviation(of:).md) matches `.standardDeviation(of:)`. The exception is [`custom(of:label:_:)`](metricsaggregator/custom(of:label:_:).md), which you retrieve with `.custom(label:)` by passing the label you chose rather than the metric.
+
+To read the values from the [`detailed`](evaluationresult/detailed.md) data frame, subscript it with [`inputColumn`](evaluation/inputcolumn.md), [`responseColumn`](evaluation/responsecolumn.md), or [`expectedColumn`](evaluation/expectedcolumn.md) to get the sample data, or pass one of your metrics to [`subscript(metric:)`](https://developer.apple.com/documentation/tabulardata/dataframe/subscript(metric:)) to get its scores. Each subscript returns a [`Column`](https://developer.apple.com/documentation/tabulardata/column):
 
 ```swift
 @Test(.evaluates(Self.evaluation))
@@ -155,7 +183,7 @@ func inspectDetailedResults() async throws {
     let expected = result.detailed[Self.evaluation.expectedColumn]
     let scores   = result.detailed[metric: Self.evaluation.exactMatch]
 
-    // Surface the prompts where the model's count disagreed with the expected count.
+    // Show the prompts where the model's count disagreed with the expected count.
     for row in 0..<scores.count where scores[row]?.value == .failing {
         let prompt = inputs[row]?.promptDescription ?? "<missing>"
         let target = expected[row].map(String.init) ?? "?"

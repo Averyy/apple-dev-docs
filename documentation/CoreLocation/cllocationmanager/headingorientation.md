@@ -24,11 +24,19 @@ var headingOrientation: CLDeviceOrientation { get set }
 
 #### Discussion
 
-When computing heading values, the location manager assumes that the top of the device in portrait mode represents due north (0 degrees) by default. For apps that run in other orientations, this may not always be the most convenient orientation. This property allows you to specify which device orientation you want the location manager to use as the reference point for due north.
+When computing heading values, the location manager assumes that the top of the device in portrait mode represents due north (0 degrees) by default. For apps that run in other orientations, this property allows you to specify which device orientation you want the location manager to use as the reference point for due north.
 
-Although you can set the value of this property to [`CLDeviceOrientation.unknown`](cldeviceorientation/unknown.md), [`CLDeviceOrientation.faceUp`](cldeviceorientation/faceup.md), or [`CLDeviceOrientation.faceDown`](cldeviceorientation/facedown.md), doing so has no effect on the orientation reference point. The original reference point is retained instead.
+Setting the value of this property to [`CLDeviceOrientation.unknown`](cldeviceorientation/unknown.md), [`CLDeviceOrientation.faceUp`](cldeviceorientation/faceup.md), or [`CLDeviceOrientation.faceDown`](cldeviceorientation/facedown.md) has no effect on the orientation reference point, and the system retains the original reference point instead.
 
-Changing the value in this property affects only those heading values reported after the change is made.
+Changing the value in this property affects only heading values reported after the change.
+
+## Topics
+
+### Heading configuration
+- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+  A physical body or view that defines the reference orientation for heading calculations.
+- [enum CLDeviceOrientation](cldeviceorientation.md)
+  Constants indicating the physical orientation of the device.
 
 ## See Also
 
@@ -44,6 +52,8 @@ Changing the value in this property affects only those heading values reported a
   A constant indicating that all header values should be reported.
 - [typealias CLLocationDegrees](cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
+- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+  A physical body or view that defines the reference orientation for heading calculations.
 - [enum CLDeviceOrientation](cldeviceorientation.md)
   Constants indicating the physical orientation of the device.
 

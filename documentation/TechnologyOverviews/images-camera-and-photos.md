@@ -12,7 +12,7 @@ Build your interface from system-provided images whenever possible, and store ot
 
 Apple platforms support a wide assortment of image formats, including common formats like PNG, JPEG, GIF, TIFF, HEIC, camera RAW, and many others. Apple also offers SF Symbols, a library of vector- based images you can use in your apps. When creating images for your app, choose the format best suited for the intended task:
 
-- Prefer [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/) for images you assign to buttons, toolbars, and other views in your interface. Symbols come in multiple weights, scale readily, and you can tint them to match your content. The SF Symbols library contains more than 6,900 symbols, and you can [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app) using the SF Symbols app.
+- Prefer [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/) for images you assign to buttons, toolbars, and other views in your interface. Symbols come in multiple weights, scale readily, and you can tint them to match your content. The SF Symbols library contains more than 6,900 symbols, and you can [`Creating custom symbols`](custom-sf-symbols.md) using the SF Symbols app.
 - Use the PNG format for bitmap images you include in your interface. Apple platforms handle PNG images more efficiently than many other file formats.
 - Store images you create on disk using the HEIC (High Efficiency Image Container) file format. This format offers smaller sizes than JPEG files while maintaining a high level of quality and efficiency.
 

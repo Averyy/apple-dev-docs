@@ -45,8 +45,11 @@ This structure captures both the position and direction of a mouse cursor projec
 
 ## See Also
 
+- [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+  The primitive topology used to assemble output geometry for an output stage.
 - [enum CoordinateSpace](coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
+- [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
 - [enum StripOrientation](striporientation.md)
   An enumeration that specifies how a strip should be oriented.
 - [struct Viewpoint](viewpoint-swift.struct.md)

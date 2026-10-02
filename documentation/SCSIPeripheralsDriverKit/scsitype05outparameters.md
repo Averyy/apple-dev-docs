@@ -28,11 +28,11 @@ This type contains all the fields from [`SCSIDeviceOutParameters`](scsideviceout
 - [UserSendCDB](iouserscsiperipheraldevicetype05/usersendcdb.md)
   Sends a vendor-specific Command Descriptor Block (CDB) to the device.
 - [SCSIType05OutVersion](scsitype05outversion.md)
-  Constants that represent versions of the type 05 outbound interface.
+  Constants that represent versions of the Type05 outbound interface.
 - [SCSIType05InParameters](scsitype05inparameters.md)
   Parameters for responses from the external SCSI device.
 - [SCSIType05InVersion](scsitype05inversion.md)
-  Constants that represent versions of the type 05 inbound interface.
+  Constants that represent versions of the Type05 inbound interface.
 
 
 ---

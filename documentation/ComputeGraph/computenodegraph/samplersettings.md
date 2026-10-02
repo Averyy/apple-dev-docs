@@ -38,6 +38,12 @@ struct SamplerSettings
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [ComputeNodeGraph.SwizzleChannels](computenodegraph/swizzlechannels.md)
+- [enum AddressSpace](addressspace.md)
+  A GPU memory address space.
+
 
 ---
 

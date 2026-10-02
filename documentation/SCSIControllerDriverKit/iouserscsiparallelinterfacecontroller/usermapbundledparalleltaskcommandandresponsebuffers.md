@@ -37,6 +37,7 @@ If you don’t want to use the shared buffers, your dext can return [`kIOReturnE
   Processes one or more parallel tasks in response to a call from the framework.
 - [BundledParallelTaskCompletion](iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md)
   Indicates to the system that the extension completed a bundled asynchronous request.
+- [kMaxBundledParallelTasks](kmaxbundledparalleltasks.md)
 
 
 ---

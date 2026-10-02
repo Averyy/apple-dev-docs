@@ -1,4 +1,4 @@
 Completed scraping RoomPlan!
-Total pages scraped: 0
-Pages skipped (unchanged): 274
+Total pages scraped: 1
+Pages skipped (unchanged): 273
 Pages failed: 0

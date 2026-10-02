@@ -8,6 +8,9 @@ The hinge is partially open
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 

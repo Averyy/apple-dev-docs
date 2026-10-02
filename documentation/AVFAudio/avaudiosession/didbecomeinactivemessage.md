@@ -17,6 +17,10 @@
 struct DidBecomeInactiveMessage
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 ## Topics
 
 ### Getting the deactivation result

@@ -1,7 +1,7 @@
 ---
 source: ml-stable-diffusion
 framework: ml-stable-diffusion
-url: https://github.com/apple/ml-stable-diffusion/blob/main/README.md
+url: https://github.com/apple-aiml-research/ml-stable-diffusion/blob/main/README.md
 ---
 
 # Core ML Stable Diffusion

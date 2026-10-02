@@ -27,6 +27,8 @@ The push token for a [`RemoteMediaSession`](remotemediasession.md) may change ov
 
 > **Note**: When you receive an updated push token, transmit it securely to your server (for example, over HTTPS) and invalidate the outdated token promptly so it cannot be reused.
 
+> **Note**: The system provisions tokens asynchronously, so this property will be `nil` until provisioning completes. Use [`pushToStartTokenUpdates`](remotemediasession/pushtostarttokenupdates.md) to receive tokens as soon as they become available.
+
 
 ---
 

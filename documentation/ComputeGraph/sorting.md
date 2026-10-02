@@ -45,10 +45,14 @@ enum Sorting
 
 ## See Also
 
-- [enum ElementGrouping](elementgrouping.md)
-  An enumeration of how elements are grouped.
+- [class ComputeGraphSimulation](computegraphsimulation.md)
+  A simulation of particles, which use a single pipeline.
 - [struct ElementSpawnParameters](elementspawnparameters.md)
   Parameters used to configure the initial state of a particle when it’s spawned in the simulation.
+- [enum ElementGrouping](elementgrouping.md)
+  An enumeration of how elements are grouped.
+- [ComputeGraphSimulation.SimulationRate](computegraphsimulation/simulationrate-swift.struct.md)
+  Specifies the rate and mode for simulation.
 
 
 ---

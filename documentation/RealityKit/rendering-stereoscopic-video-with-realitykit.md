@@ -5,8 +5,8 @@
 Render stereoscopic video in visionOS with RealityKit.
 
 **Availability**:
-- visionOS 26.0+
-- Xcode 26.0+
+- visionOS 27.0+
+- Xcode 27.0+
 
 #### Overview
 
@@ -22,13 +22,15 @@ visionOS offers a range of options for programmatic video playback, including:
 
 This sample app uses an `AVSampleBufferVideoRenderer` and a `VideoPlayerComponent` to render stereoscopic video in the *Shared Space*. Its content is a *side-by-side* video, which places the left- and right-eye images next to each other as part of a single video frame. Because the duration of the video is brief, a looping mechanism supports continuous playback.
 
+To supply frames, the app attaches its video renderer to a render synchronizer and receives an [`AVSampleBufferVideoRenderer.Receiver`](https://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer/receiver) in return. Awaiting the receiver’s [`enqueue(_:)`](https://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer/receiver/enqueue(_:)) method suspends until the renderer has room for another frame, which paces processing against playback.
+
 ![A screenshot of a visionOS window displaying a video of a hummingbird flying in front of flowers.](/images/com.apple.RealityKit/render-stereoscopic-video-with-realitykit-1@2x.png)
 
 > **Note**: By default, 3D video in visionOS uses the Multiview High Efficiency Video Encoding (MV-HEVC) format, supported by MPEG4 and QuickTime. For information about converting a file like the one in this sample to MV-HEVC, see [`Converting side-by-side 3D video to multiview HEVC and spatial video`](https://developer.apple.com/documentation/avfoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video).
 
 #### Structure the App
 
-The structure of the app is simple. `PlayerModel` is an [`Observable`](https://developer.apple.com/documentation/observation/observable) custom type that’s injected into the SwiftUI [`Environment`](https://developer.apple.com/documentation/swiftui/environment) for visibility to the root `ContentView`. This model includes a property of type `PlayerState`, which is a Swift enumeration that reflects the current player state. It also includes an instance of type `LoopingVideoPlayer`, which exposes the underlying `AVSampleBufferVideoRenderer`.
+The structure of the app is simple. `PlayerModel` is an [`Observable`](https://developer.apple.com/documentation/observation/observable) custom type that’s injected into the SwiftUI [`Environment`](https://developer.apple.com/documentation/swiftui/environment) for visibility to the root `ContentView`. This model includes a property of type `PlayerState`, which is a Swift enumeration that reflects the current player state. It also includes an instance of type `LoopingVideoPlayer`, which exposes the underlying [`AVSampleBufferVideoRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer).
 
 ```swift
 /// The main app structure.
@@ -117,7 +119,7 @@ Finally, the sample applies these modifiers to initialize the player, and to beg
 
 `LoopingVideoPlayer` is a custom type that coordinates continuous playback of the sample video. To achieve this, it manages multiple instances of another custom type, `SerialProcessor`.
 
-The player has two key properties: a video renderer and a synchronizer to control the rendering timeline:
+The player has three key properties: a video renderer, a synchronizer that controls the rendering timeline, and the receiver that accepts frames from the renderer:
 
 ```swift
 /// The synchronizer that controls the underlying video renderer.
@@ -125,16 +127,19 @@ private let synchronizer = AVSampleBufferRenderSynchronizer()
 
 /// The video renderer that enqueues individual frames for playback.
 let videoRenderer = AVSampleBufferVideoRenderer()
+
+/// The receiver used to enqueue frames, obtained by adding the renderer to the synchronizer.
+private var receiver: AVSampleBufferVideoRenderer.Receiver?
 ```
 
-When the system creates the player, it adds the renderer to the synchronizer, and initializes an [`AVURLAsset`](https://developer.apple.com/documentation/avfoundation/avurlasset) with a URL to the underlying video:
+When the system creates the player, it initializes an [`AVURLAsset`](https://developer.apple.com/documentation/avfoundation/avurlasset) with a URL to the underlying video, then adds the renderer to the synchronizer by calling [`sampleBufferReceiver(adding:)`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/samplebufferreceiver(adding:)-5dw84). That method returns a `sending` receiver, which the player later supplies to a task that owns it for the duration of playback.
 
 ```swift
 /// Initializes a player with the specified asset URL.
 /// - Parameter assetURL: A URL for the asset that the app plays.
 init(assetURL: URL) {
-    synchronizer.addRenderer(videoRenderer)
     asset = AVURLAsset(url: assetURL)
+    receiver = synchronizer.sampleBufferReceiver(adding: videoRenderer)
 }
 ```
 
@@ -147,8 +152,8 @@ func load() async throws {
     let duration = try await asset.load(.duration)
 
     // Use the asset duration as the boundary period with which to loop.
-    timeObserver = synchronizer.addBoundaryTimeObserver(forTimes: [NSValue(time: duration)], queue: nil) {
-        Task { @MainActor [weak self] in
+    timeObserver = synchronizer.addBoundaryTimeObserver(forTimes: [NSValue(time: duration)], queue: nil) { [weak self] in
+        Task { @MainActor in
             guard let self else { return }
             self.loop(rate: self.synchronizer.rate)
         }
@@ -199,7 +204,7 @@ func stop() {
     nextProcessor = nil
     isLooping = false
     loopCount = 0
-    
+
     synchronizer.rate = 0
     if let timeObserver {
         synchronizer.removeTimeObserver(timeObserver)
@@ -215,7 +220,7 @@ func stop() {
 
 #### Load the Side By Side Video
 
-Each `SerialProcessor` traverses the video track from start to finish, extracting each individual video frame for processing. Processing converts these input frames from the single-layer, side-by-side input format to a multi-layer, output format.
+Each `SerialProcessor` is an actor that traverses the video track from start to finish, extracting each individual video frame for processing. Processing converts these input frames from the single-layer, side-by-side input format to a multi-layer, output format.
 
 With side-by-side input, the sample places left- and right-eye images next to each other as part of a single frame. The sample splits the frame into separate images, copies them to distinct left- and right-eye layers, and writes them as a multi-layer frame.
 
@@ -277,7 +282,7 @@ let defaultAttributes = CVPixelBufferCreationAttributes(
     pixelFormatType: CVPixelFormatType(rawValue: kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange),
     size: eyeFrameSize
 )
-let recommendedAttributes = videoRenderer.recommendedPixelBufferAttributes
+let recommendedAttributes = recommendedPixelBufferAttributes
 guard let mergedAttributes = CVPixelBufferAttributes(merging: [CVPixelBufferAttributes(defaultAttributes), recommendedAttributes]),
       let creationAttributes = CVPixelBufferCreationAttributes(mergedAttributes),
       let pixelBufferPool = try? CVMutablePixelBuffer.Pool(pixelBufferAttributes: creationAttributes)
@@ -286,30 +291,29 @@ else {
 }
 ```
 
-#### Process Input As It Becomes Available
+#### Enqueue Frames to the Receiver
 
-To begin processing, the processor waits for the video renderer to indicate that it is ready to begin rendering. The private `untilReadyForMoreMediaData()` function achieves this with a call to [`requestMediaDataWhenReady(on:using:)`](https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/requestmediadatawhenready(on:using:)). As the sample reads the asset, the `videoTrackOutputProvider` supplies a stream of sample buffers for processing. As the sample receives these sample buffers, the processor calls `transform(from:with:in:)` to convert the side-by-side frame input into stereo-encoded output. The sample then enqueues the stereo-encoded frames to the video renderer. Processing concludes once the stream of sample buffers is exhausted.
+Each playback pass runs in a single task that owns the receiver. Before the pass begins, the player flushes the receiver to discard any frames left over from the previous loop. The task then starts the processor and repeatedly awaits the next transformed sample buffer, enqueueing each one.
 
 ```swift
-// Explicitly tear down resources when processing concludes.
-defer {
-    videoRenderer.stopRequestingMediaData()
-    assetReader.cancelReading()
-    VTPixelTransferSessionInvalidate(transferSession)
-}
+/// Executes a given serial processor.
+/// - Parameter processor: The processor to execute.
+private func process(with processor: SerialProcessor) {
+    guard let receiver else { return }
+    receiver.flush()
 
-// Monitor & process frames while renderer is ready.
-for await _ in mediaDataReadyStream() {
-    try Task.checkCancellation()
-
-    while videoRenderer.isReadyForMoreMediaData {
-        guard let sampleBuffer = try await videoTrackOutputProvider.next() else {
-            return
+    loopingTask = Task {
+        do {
+            try await processor.start()
+            try await drainSampleBuffers(from: processor, into: receiver)
+        } catch is CancellationError {
+            // Expected when `stop()` cancels the looping task; fall through to tear-down.
+        } catch {
+            debugPrint("\(#function) — error encountered during processing: \(error.localizedDescription)")
+            stop()
         }
 
-        if let transformedBuffer = try transform(from: sampleBuffer, with: pixelBufferPool, in: transferSession) {
-            videoRenderer.enqueue(transformedBuffer)
-        }
+        await processor.finish()
     }
 }
 ```
@@ -318,7 +322,7 @@ for await _ in mediaDataReadyStream() {
 
 The processor creates individual left- and right-eye images in the transformation function. It specifies layer ID `0` for the left eye, and `1` for the right eye.
 
-```None
+```swift
 let layerIDs = [0, 1]
 let eyeComponents: [CMStereoViewComponents] = [.leftEye, .rightEye]
 var taggedBuffers = [CMTaggedDynamicBuffer]()
@@ -326,7 +330,7 @@ for (layerID, eye) in zip(layerIDs, eyeComponents) {
     // ...
 ```
 
-The function uses the `VTPixelTransferSession` to copy pixels from the side-by-side source pixel buffer, crop to the frame for the current eye, and place them into the destination pixel buffer.
+The function uses the [`VTPixelTransferSession`](https://developer.apple.com/documentation/videotoolbox/vtpixeltransfersession) to copy pixels from the side-by-side source pixel buffer, crop to the frame for the current eye, and place them into the destination pixel buffer.
 
 ```swift
 // Crop the transfer region to the current eye.
@@ -367,6 +371,7 @@ let buffer = CMReadySampleBuffer(
     presentationTimeStamp: cmSampleBuffer.presentationTimeStamp,
     duration: cmSampleBuffer.duration
 )
+transformedBuffer = CMReadySampleBuffer<CMSampleBuffer.DynamicContent>(buffer)
 ```
 
 ## See Also

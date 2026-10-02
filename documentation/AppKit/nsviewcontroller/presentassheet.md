@@ -20,6 +20,8 @@ This method calls the [`present(_:animator:)`](nsviewcontroller/present(_:animat
 
 The presented view controller is the delegate and the content view controller of its sheet.
 
+The resulting sheet’s window never displays a title, regardless of its [`title`](nswindow/title.md) string or [`titleVisibility`](nswindow/titlevisibility-swift.property.md) value.
+
 To dismiss the sheet, call the [`dismiss(_:)`](nsviewcontroller/dismiss(_:)-91my5.md) method on `self` (the presenting view controller).
 
 ## Parameters

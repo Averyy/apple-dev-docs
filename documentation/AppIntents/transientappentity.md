@@ -51,7 +51,7 @@ protocol TransientAppEntity : AppEntity
 - [protocol SyncableEntity](syncableentity.md)
   An interface that indicates your entity has an identifier that’s consistent across devices.
 - [protocol UniqueAppEntity](uniqueappentity.md)
-  An entity that will only ever have one value, such as global settings.
+  An AppEntity subtype for entities that only have a single instance.
 - [protocol OwnershipProvidingEntity](ownershipprovidingentity.md)
   A type that provides the system with ownership and sharing context for an app entity.
 - [macro UnionValue()](unionvalue().md)

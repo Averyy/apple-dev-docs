@@ -26,7 +26,7 @@ struct InspectorCommands
 These commands are optional and can be explicitly requested by passing a value of this type to the [`commands(content:)`](scene/commands(content:).md) modifier:
 
 ```swift
-@State var presented = true
+@State private var presented = true
 WindowGroup {
     MainView()
         .inspector(isPresented: $presented) {

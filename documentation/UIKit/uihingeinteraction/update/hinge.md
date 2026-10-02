@@ -8,6 +8,9 @@ The current hinge state for the interaction, or `nil` when the interaction leave
 **Availability**:
 - iOS 27.1+ (Beta)
 - iPadOS 27.1+ (Beta)
+- Mac Catalyst 27.1+
+- tvOS 27.1+
+- visionOS 27.1+
 
 ## Declaration
 

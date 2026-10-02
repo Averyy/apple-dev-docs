@@ -20,6 +20,8 @@ This method displays the sheet—on top of the window’s current sheet, if one 
 
 If the window already has a sheet when this method runs, the existing sheet is temporarily disabled while the critical sheet is presented. When the critical sheet is dismissed, the previously presented sheet continues its standard operation.
 
+The sheet’s window never displays a title, regardless of its [`title`](nswindow/title.md) string, its [`titleVisibility`](nswindow/titlevisibility-swift.property.md) value, or whether its style mask includes the [`titled`](nswindow/stylemask-swift.struct/titled.md) flag.
+
 ## Parameters
 
 - `sheetWindow`: The window object that represents the critical sheet to present. A critical sheet contains content that is time-critical or very important to the user.

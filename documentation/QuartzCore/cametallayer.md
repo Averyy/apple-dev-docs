@@ -49,7 +49,7 @@ Call the layer’s [`nextDrawable()`](cametallayer/nextdrawable().md) method to 
 
 ```objc
 CAMetalLayer *metalLayer = (CAMetalLayer*)self.layer;
-id<CAMetalDrawable> *drawable = [metalLayer nextDrawable];
+id<CAMetalDrawable> drawable = [metalLayer nextDrawable];
 
 MTLRenderPassDescriptor *renderPassDescriptor
                                = [MTLRenderPassDescriptor renderPassDescriptor];

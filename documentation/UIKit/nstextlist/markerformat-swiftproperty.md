@@ -31,6 +31,8 @@ The marker format string used by the receiver.
   Constants that describe marker symbols you can apply to list elements in text lists.
 - [func marker(forItemNumber: Int) -> String](nstextlist/marker(foritemnumber:).md)
   Returns the computed value for a specific ordinal position in the list.
+- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+  A Boolean value that indicates whether TextKit includes text list markers in the text content.
 
 
 ---

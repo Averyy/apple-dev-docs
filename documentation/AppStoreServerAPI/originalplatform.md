@@ -24,6 +24,8 @@ string originalPlatform
   The app version that the customer originally purchased from the App Store.
 - [type preorderDate](preorderdate.md)
   The date a customer places an order for the app before it’s available in the App Store, expressed in UNIX time, in milliseconds.
+- [type storeType](storetype.md)
+  A string that describes the store the customer obtained the app from.
 
 
 ---

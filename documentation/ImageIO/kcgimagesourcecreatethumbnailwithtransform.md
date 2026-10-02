@@ -42,6 +42,8 @@ The value of this key must be a CFBoolean value. The default value is [`kCFBoole
   The maximum width and height of a thumbnail image, specified in pixels.
 - [let kCGImageSourceSubsampleFactor: CFString](kcgimagesourcesubsamplefactor.md)
   The factor by which to scale down any returned images.
+- [let kCGImageSourceAllowableTypes: CFString](kcgimagesourceallowabletypes.md)
+  Option key for restricting which image formats can be decoded.
 
 
 ---

@@ -28,6 +28,8 @@ If no device-motion data is available, the value of this property is `nil`. An a
 
 ## See Also
 
+- [var deviceMotionBody: (any CMBodyIdentifiable)?](cmmotionmanager/devicemotionbody.md)
+  A physical body or view that defines the coordinate system for device-motion data.
 - [var showsDeviceMovementDisplay: Bool](cmmotionmanager/showsdevicemovementdisplay.md)
   Controls whether the device-movement display is shown.
 - [var deviceMotionUpdateInterval: TimeInterval](cmmotionmanager/devicemotionupdateinterval.md)

@@ -20,6 +20,10 @@ Returns the first aggregate value matching the given operation, or `-1` if not f
 func aggregateValue(_ operation: AggregationOperation) -> Double
 ```
 
+## Mentions
+
+- [Evaluating language model responses](evaluating-language-model-responses.md)
+
 ## Parameters
 
 - `operation`: The aggregation operation to match.

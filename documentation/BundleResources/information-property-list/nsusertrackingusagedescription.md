@@ -24,7 +24,7 @@ This key is required. Your app crashes if it attempts to use the [`App Tracking 
 The system displays this key’s string in a modal UI when your app requests authorization to access app-related data that the app can use to track the person or the device by calling either method:
 
 - [`requestTrackingAuthorization(completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:))
-- [`requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(usingexpandedinterface:additionalinformationaction:completionhandler:))
+- [`requestTrackingAuthorization(preferExpandedInterface:additionalInformationAction:completionHandler:)`](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:))
 
 > ❗ **Important**: Alternatively, in the European Union, your app can provide a tracking-usage description that supports rich text elements by using markdown format (see [`NSUserTrackingMarkdownUsageDescription`](information-property-list/nsusertrackingmarkdownusagedescription.md)).
 

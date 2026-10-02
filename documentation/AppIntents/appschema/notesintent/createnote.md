@@ -50,6 +50,8 @@ For more information about the App Intents framework and the experiences it supp
 
 - [var updateNote: some AppSchemaIntent](appschema/notesintent/updatenote.md)
   An intent schema that updates a note.
+- [var appendText: some AppSchemaIntent](appschema/notesintent/appendtext.md)
+  An intent schema that adds text to the end of an existing note.
 - [AppSchema.NotesIntent](appschema/notesintent.md)
   Identifies intent schemas in the notes domain.
 

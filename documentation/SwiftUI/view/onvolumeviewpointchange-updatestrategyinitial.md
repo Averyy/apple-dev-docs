@@ -21,7 +21,7 @@ Use the provided [`Viewpoint3D`](viewpoint3d.md) to update the content of the vo
 
 ```swift
 struct RobotContentView: View {
-    @State var robotRotation: Rotation3D = .identity
+    @State private var robotRotation: Rotation3D = .identity
 
     var body: some View {
         Model3D(named: "robot")
@@ -45,8 +45,9 @@ To determine if the volume is being viewed from an unsupported viewpoint, provid
 
 ```swift
 struct ContentView: View {
-    @State var showingMoveToFrontSign = false
-    @State var moveToFrontSignViewpoint: Viewpoint3D = .standard
+    @State private var showingMoveToFrontSign = false
+    @State private var moveToFrontSignViewpoint: Viewpoint3D =
+        .standard
 
     let supportedViewpoints = [SquareAzimuth.front]
 

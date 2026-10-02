@@ -42,7 +42,7 @@ Alternatively, you can open the `Info.plist` file as source code and edit the XM
 </plist>
 ```
 
-To create a custom symbol for your app, see [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app). To see a sample code project that uses a custom symbol, see [`Synchronizing files using file provider extensions`](synchronizing-files-using-file-provider-extensions.md).
+To create a custom symbol for your app, see [`Creating custom symbols`](https://developer.apple.com/documentation/technologyoverviews/custom-sf-symbols). To see a sample code project that uses a custom symbol, see [`Synchronizing files using file provider extensions`](synchronizing-files-using-file-provider-extensions.md).
 
 ## See Also
 

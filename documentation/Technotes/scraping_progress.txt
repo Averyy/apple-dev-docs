@@ -1,4 +1,4 @@
 Completed scraping Technotes!
 Total pages scraped: 2
-Pages skipped (unchanged): 80
+Pages skipped (unchanged): 81
 Pages failed: 0

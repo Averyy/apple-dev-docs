@@ -45,10 +45,8 @@ Ranging accuracy improves when the framework knows whether the accessory is movi
 
 ## See Also
 
-- [Implementing spatial interactions with third-party accessories](implementing-spatial-interactions-with-third-party-accessories.md)
-  Establish a connection with a nearby accessory to receive periodic measurements of its distance from the user.
-- [class NINearbyAccessoryConfiguration](ninearbyaccessoryconfiguration.md)
-  A configuration that enables interaction between iPhone and third-party accessories.
+- [func updateMotionState(NIMotionActivityState, forObjectWithToken: NIDiscoveryToken)](nisession/updatemotionstate(_:forobjectwithtoken:).md)
+  Notifies the session of an accessory’s motion state change.
 
 
 ---

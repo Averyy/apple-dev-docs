@@ -35,8 +35,8 @@ You can configure the selection affinity on a given hierarchy by using the [`tex
 
 ```swift
 struct SuggestionTextEditor: View {
-    @State var text: String = ""
-    @State var selection: TextSelection? = nil
+    @State private var text: String = ""
+    @State private var selection: TextSelection? = nil
 
     var body: some View {
         VStack {

@@ -20,6 +20,10 @@ A typed column descriptor for the expected values in the detailed DataFrame.
 var expectedColumn: ResultColumn<Self.Sample.ExpectedValue> { get }
 ```
 
+## Mentions
+
+- [Evaluating language model responses](evaluating-language-model-responses.md)
+
 ## See Also
 
 - [struct EvaluationResult](evaluationresult.md)

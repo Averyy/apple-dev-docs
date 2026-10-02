@@ -28,6 +28,8 @@ With the Evaluations framework, you can:
 
 The framework evaluates your intelligence-powered features against the metrics you define, from simple pass or fail checks to detailed scoring with model-judge patterns. It aggregates the results into summaries that show you which approach performs best and where individual responses fall short. The framework works with any model available through [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels), including on-device, Private Cloud Compute, and other models.
 
+##### Whats New
+
 ## Topics
 
 ### Essentials

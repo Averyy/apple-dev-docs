@@ -26,6 +26,8 @@ This call expects you to unmount existing volumes upstream of this drive before 
 
 To prevent power state transitions during this window, you can optionally acquire a power assertion before invoking this API.
 
+> **Note**: Make sure your dext obtains exclusive access to the drive using this API before sending any vendor-specific commands using [`UserSendCDB`](iouserscsiperipheraldevicetype00/usersendcdb.md).
+
 ## See Also
 
 - [UserResumeServices](iouserscsiperipheraldevicetype00/userresumeservices.md)

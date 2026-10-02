@@ -76,6 +76,8 @@ The [`isDocumentEdited`](nsdocument/isdocumentedited.md) method returns [`true`]
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

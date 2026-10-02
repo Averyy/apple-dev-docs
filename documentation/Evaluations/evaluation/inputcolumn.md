@@ -20,6 +20,10 @@ A typed column descriptor for the input samples in the detailed DataFrame.
 var inputColumn: ResultColumn<Self.Sample> { get }
 ```
 
+## Mentions
+
+- [Evaluating language model responses](evaluating-language-model-responses.md)
+
 ## See Also
 
 - [struct EvaluationResult](evaluationresult.md)

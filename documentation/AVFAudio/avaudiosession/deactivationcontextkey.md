@@ -19,6 +19,10 @@ Keys for [`didBecomeInactiveNotification`](avaudiosession/didbecomeinactivenotif
 class let deactivationContextKey: String
 ```
 
+## Mentions
+
+- [Handling audio interruptions](handling-audio-interruptions.md)
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](avaudiosession/didbecomeactivenotification.md)

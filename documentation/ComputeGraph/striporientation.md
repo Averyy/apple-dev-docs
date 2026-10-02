@@ -51,8 +51,11 @@ enum StripOrientation
 
 ## See Also
 
+- [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+  The primitive topology used to assemble output geometry for an output stage.
 - [enum CoordinateSpace](coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
+- [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
 - [struct Viewpoint](viewpoint-swift.struct.md)
   Camera viewpoint parameters in 3D space.
 - [struct MouseParams](mouseparams.md)

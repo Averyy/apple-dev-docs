@@ -10,7 +10,7 @@ The `.system` domain defines app schemas that provide a structured representatio
 
 Unlike other domains that target a specific app category, the `.system` domain applies broadly. Any app that enables searching or opening content can adopt these schemas.
 
-- **[`search`](appschema/systemintent/search.md)**: An intent that searches in your app when people say phrases like “Find bicycle.” or “Search for mountains.”
+- **[`searchInApp`](appschema/systemintent/searchinapp.md)**: An intent that searches in your app when people say phrases like “Find bicycle.” or “Search for bicycle.”
 - **[`open`](appschema/systemintent/open.md)**: An intent that opens content in your app when people say phrases like “Open my screenshot.png file.”
 
 > 💡 **Tip**: Xcode generates a template implementation when you type `system_` and select a schema from the suggestions list.
@@ -22,7 +22,7 @@ For more information about making your app’s actions available to Apple Intell
 ### Actions
 - [var open: some AppSchemaIntent](appschema/systemintent/open.md)
   An intent schema that opens an item in the application.
-- [var search: some AppSchemaIntent](appschema/systemintent/search.md)
+- [var searchInApp: some AppSchemaIntent](appschema/systemintent/searchinapp.md)
   An intent schema that navigates to search results.
 - [AppSchema.SystemIntent](appschema/systemintent.md)
   Identifies intent schemas in the system domain.

@@ -32,7 +32,7 @@ In the Finder sidebar, it looks like this:
 
 ![A screenshot of Finder, showing the flame.fill SF Symbol in the sidebar.](/images/com.apple.bundleresources/media-3922503@2x.png)
 
-To create a custom symbol for your app, see [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app).
+To create a custom symbol for your app, see [`Creating custom symbols`](https://developer.apple.com/documentation/technologyoverviews/custom-sf-symbols).
 
 
 ---

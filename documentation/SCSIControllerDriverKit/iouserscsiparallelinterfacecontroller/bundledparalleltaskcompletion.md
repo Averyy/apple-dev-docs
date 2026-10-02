@@ -36,6 +36,7 @@ The command and response buffers have a one-to-one mapping; use the same slot nu
   Processes one or more parallel tasks in response to a call from the framework.
 - [UserMapBundledParallelTaskCommandAndResponseBuffers](iouserscsiparallelinterfacecontroller/usermapbundledparalleltaskcommandandresponsebuffers.md)
   Maps the shared command and response buffers in the dext address space in response to a call from the framework.
+- [kMaxBundledParallelTasks](kmaxbundledparalleltasks.md)
 
 
 ---

@@ -14,6 +14,10 @@ The window displays a title bar.
 static var titled: NSWindow.StyleMask { get }
 ```
 
+#### Discussion
+
+Setting this flag also causes the default value of [`canBecomeKey`](nswindow/canbecomekey.md) to become [`true`](https://developer.apple.com/documentation/swift/true). Setting this flag doesn’t cause a sheet to display a title, so you can set it on a sheet without having to hide the title separately.
+
 ## See Also
 
 - [static var borderless: NSWindow.StyleMask](nswindow/stylemask-swift.struct/borderless.md)

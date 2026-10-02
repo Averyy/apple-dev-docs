@@ -28,7 +28,7 @@ Use this initializer when you want to observe history changes via SwiftUI’s ob
 
 ## Parameters
 
-- `historyTokens`: The initial history tokens keyed by store identifier. When `nil`, the observer starts with an empty token set and captures tokens from the first notification for each store.
+- `historyTokens`: The initial history tokens keyed by store identifier. When `nil`, the observer captures the current position for each store immediately, so that only transactions from this point forward are reported.
 - `observedModels`: The model types to filter for. When empty (the default), the observer responds to changes for any model.
 - `authors`: The transaction authors to filter for. When empty (the default), the observer responds to changes from any author.
 - `modelContainer`: The model container to observe.

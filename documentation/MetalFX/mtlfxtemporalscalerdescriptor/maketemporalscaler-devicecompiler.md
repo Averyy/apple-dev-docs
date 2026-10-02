@@ -10,7 +10,7 @@ Creates a temporal scaler instance for a Metal device.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - macOS 26.0+
-- tvOS 26.0+
+- tvOS 27.1+
 
 ## Declaration
 

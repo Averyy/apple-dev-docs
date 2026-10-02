@@ -30,7 +30,7 @@ Consider storing the `revision` token from the last page of results with other c
 
 ### Response data types
 - [type hasMore](hasmore.md)
-  A Boolean value indicating whether the App Store has more transaction data.
+  A Boolean value indicating whether the App Store has more data to return.
 - [type revision](revision.md)
   A token you use in a query to request the next set of transactions for the customer.
 - [type JWSTransaction](jwstransaction.md)

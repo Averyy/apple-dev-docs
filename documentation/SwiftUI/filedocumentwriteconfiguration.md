@@ -34,8 +34,6 @@ struct FileDocumentWriteConfiguration
   The properties of an open file document.
 - [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
   The configuration for reading file contents.
-- [struct NewDocumentAction](newdocumentaction.md)
-  An action that presents a new document.
 - [protocol ReferenceFileDocument](referencefiledocument.md)
   A type that you use to serialize reference type documents to and from file.
 - [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)

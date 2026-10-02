@@ -54,6 +54,8 @@ If a compatible iPad or iPhone app calls this method when running in visionOS, t
   A constant indicating that all header values should be reported.
 - [typealias CLLocationDegrees](cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
+- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+  A physical body or view that defines the reference orientation for heading calculations.
 - [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 - [enum CLDeviceOrientation](cldeviceorientation.md)
