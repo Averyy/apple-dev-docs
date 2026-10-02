@@ -39,7 +39,7 @@ curl -X POST https://xdocs.dev/mcp \
 
 **Health endpoint status codes:**
 - `200 OK` with `status: healthy` - Ready for use (322K+ docs indexed)
-- `200 OK` with `status: indexing` - Index building (check `documents` and `progress`)
+- `503 Service Unavailable` with `status: indexing` - Index building or a recent index task (<3.5 min); searches still work (check `documents` and `progress`)
 - `503 Service Unavailable` with `status: degraded` - Partial index (<290K docs)
 - `503 Service Unavailable` with `status: unhealthy` - Meilisearch unavailable
 

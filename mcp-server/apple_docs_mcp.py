@@ -55,7 +55,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.0.0"
+SERVER_VERSION = "3.0.1"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -393,6 +393,7 @@ def escape_filter_value(value: str, max_length: Optional[int] = 100) -> str:
 # Initialize FastMCP with instructions
 mcp = FastMCP(
     name="apple-docs",
+    version=SERVER_VERSION,  # serverInfo.version (defaults to the fastmcp version)
     instructions="""Apple Developer Documentation search server.
 No authentication required. Rate limit: 60 requests/minute.
 For unlimited access, contact info@xdocs.dev for an API key.""",
@@ -432,7 +433,8 @@ def search_apple_docs(
     Only increase token_budget when comprehensive coverage is needed.
 
     Args:
-        query: Search query (e.g., 'Button', 'async await', 'NavigationStack')
+        query: Search query (e.g., 'Button', 'async await', 'NavigationStack'). Wildcards: '*' matches
+            any characters and '?' one character in single-word queries (e.g., '*View', 'UI*Controller')
         framework: Filter by framework (e.g., 'SwiftUI', 'UIKit', 'CarPlay')
         strict_framework: Only return results from the specified framework
         platform: Filter by platform: 'ios', 'macos', 'tvos', 'watchos', 'visionos', or 'all'
@@ -449,16 +451,25 @@ def search_apple_docs(
     if not ensure_meilisearch_connection():
         raise ToolError("Unable to connect to search backend. Please try again in a moment.")
 
-    if not query.strip():
+    original_query = query.strip()
+    # '?' is a one-character wildcard only in single-word queries ('Button?');
+    # in a multi-word query it's a question mark ('What is NavigationStack?')
+    if '?' in query and len(query.split()) > 1:
+        query = query.replace('?', ' ')
+    query = query.strip()
+
+    if not query:
         raise ToolError("Query cannot be empty")
 
     # Clamp values
     limit = min(20, max(1, limit))
     token_budget = min(MAX_TOKEN_BUDGET, max(1000, token_budget))
     offset = max(0, offset)
+    framework = framework.strip()
+    platform = platform.strip()
+    platform_filter = platform.lower() if platform.lower() not in ("", "all") else ""
 
     # Handle wildcards
-    original_query = query
     has_wildcards = '*' in query or '?' in query
     wildcard_pattern = None
 
@@ -475,17 +486,18 @@ def search_apple_docs(
     # Build Meilisearch filter
     filters = []
     if framework:
-        filters.append(f'framework = "{escape_filter_value(framework.strip())}"')
-    if platform and platform.lower() != "all":
-        filters.append(f'platforms = "{escape_filter_value(platform.lower())}"')
+        filters.append(f'framework = "{escape_filter_value(framework)}"')
+    if platform_filter:
+        filters.append(f'platforms = "{escape_filter_value(platform_filter)}"')
 
     # Search attributes
     attrs = ["title", "framework", "api_name", "overview", "url", "platforms", "kind", "file_path"]
     if not summary_mode:
         attrs.append("content")
 
+    window = max(100, limit * 5)  # results are ranked from this many top matches
     search_params = {
-        "limit": max(100, limit * 5),
+        "limit": window,
         "attributesToRetrieve": attrs,
         "attributesToHighlight": ["title", "api_name"],
         "highlightPreTag": "**",
@@ -502,6 +514,8 @@ def search_apple_docs(
         logger.error(f"Search failed for query '{query}': {e}")
         raise ToolError("Search temporarily unavailable. Please try again in a moment.") from e
 
+    window_full = len(hits) >= window
+
     # Apply wildcard filter
     if has_wildcards and wildcard_pattern and hits:
         hits = [h for h in hits if
@@ -509,7 +523,7 @@ def search_apple_docs(
                 wildcard_pattern.match(h.get("title", "").lower())]
 
     if not hits:
-        return _build_no_results_response(original_query, framework, platform, has_wildcards)
+        return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
 
     # Score and filter results
     scored_hits = []
@@ -523,37 +537,39 @@ def search_apple_docs(
             hit['_relevance'] = score
             scored_hits.append(hit)
 
+    if not scored_hits:
+        if relevance_threshold > 0:
+            return f"No results above relevance threshold {relevance_threshold}"
+        return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
+
     scored_hits.sort(key=lambda x: x['_relevance'], reverse=True)
+    total_text = f"{len(scored_hits)} results"
+    if window_full:
+        total_text += f" (ranked from the top {window} matches)"
+
     paginated = scored_hits[offset:offset + limit]
-
     if not paginated:
-        return f"No results above relevance threshold {relevance_threshold}"
+        return f"No more results: offset {offset} is past the last of {total_text}."
 
-    # Build output
-    output = [f"Search Results: {original_query if has_wildcards else query}"]
-    output.append(f"Showing {offset + 1}-{min(offset + len(paginated), len(scored_hits))} of {len(scored_hits)} results")
+    # Build output ("Showing" line is filled in once we know what fit the budget)
+    output = [f"Search Results: {original_query}", ""]
 
     if framework:
         output.append(f"Framework: {framework}{' (strict)' if strict_framework else ''}")
-    if platform != "all":
+    if platform_filter:
         output.append(f"Platform: {platform}")
     output.append("")
 
     token_count = estimate_tokens("\n".join(output))
     results_included = 0
+    budget_reached = False
 
-    for i, hit in enumerate(paginated, 1):
-        if token_count >= token_budget * 0.9:
-            remaining = len(scored_hits) - offset - results_included
-            if remaining > 0:
-                output.append(f"\nToken budget reached. {remaining} more results available.")
-                output.append(f"Use offset={offset + results_included} to continue")
-            break
-
+    # Results are numbered by overall rank, so numbers continue across pages
+    for rank, hit in enumerate(paginated, offset + 1):
         result_lines = []
         relevance = hit.get('_relevance', 0)
 
-        result_lines.append(f"## {i}. {hit.get('title', 'Untitled')} ({int(relevance * 100)}%)")
+        result_lines.append(f"## {rank}. {hit.get('title', 'Untitled')} ({int(relevance * 100)}%)")
         result_lines.append(f"Framework: {hit.get('framework', 'Unknown')} | Type: {hit.get('kind', '')}")
 
         if hit.get("file_path"):
@@ -562,27 +578,40 @@ def search_apple_docs(
             result_lines.append(f"[View on Apple Developer]({hit.get('url')})")
         result_lines.append("")
 
+        body = ""
         if not summary_mode and hit.get("content"):
-            result_lines.append(transform_internal_links(hit.get("content", "")))
+            body = transform_internal_links(hit.get("content", ""))
         elif hit.get("overview"):
-            overview = hit.get("overview", "")[:400]
-            if overview:
-                result_lines.append(overview)
+            body = hit.get("overview", "")[:400]
 
-        result_lines.append("\n---\n")
-        result_text = "\n".join(result_lines)
+        result_text = "\n".join(result_lines + ([body] if body else []) + ["\n---\n"])
         result_tokens = estimate_tokens(result_text)
 
-        if results_included > 0 and token_count + result_tokens > token_budget:
-            continue
+        if token_count + result_tokens > token_budget:
+            if results_included > 0:
+                # Stop at the first result that doesn't fit, so the next
+                # offset resumes exactly here (nothing skipped or repeated)
+                budget_reached = True
+                break
+            # A single result larger than the whole budget: truncate its body
+            room = (token_budget - token_count - estimate_tokens("\n".join(result_lines)) - 60) * 4
+            body = body[:max(0, room)].rstrip() + (
+                f"\n\n[Truncated to fit token_budget={token_budget}. "
+                "Use expand_result with the Path above for the full document.]"
+            )
+            result_text = "\n".join(result_lines + [body, "\n---\n"])
+            result_tokens = estimate_tokens(result_text)
 
-        output.extend(result_lines)
+        output.append(result_text)
         token_count += result_tokens
         results_included += 1
 
-    if offset + results_included < len(scored_hits):
-        remaining = len(scored_hits) - offset - results_included
-        output.append(f"\n{remaining} more results available. Use offset={offset + results_included} to continue")
+    shown_end = offset + results_included
+    output[1] = f"Showing {offset + 1}-{shown_end} of {total_text}"
+    remaining = len(scored_hits) - shown_end
+    if remaining > 0:
+        note = "Token budget reached. " if budget_reached else ""
+        output.append(f"\n{note}{remaining} more results available. Use offset={shown_end} to continue")
 
     return "\n".join(output)
 
@@ -633,12 +662,14 @@ def expand_result(
     if not ensure_meilisearch_connection():
         raise ToolError("Unable to connect to search backend. Please try again in a moment.")
 
-    if not file_path:
+    sections = sections or []
+    input_value = file_path.strip().strip('`').strip()
+    if not input_value:
         raise ToolError("file_path is required")
 
-    sections = sections or []
-    input_value = file_path.strip().strip('`')
-    is_symbol = bool(re.match(r'^[A-Z][a-zA-Z0-9]*$', input_value)) and '/' not in input_value
+    # Anything that isn't a path is a symbol name, including lowercase ones
+    # like 'withAnimation' or 'viewDidLoad'
+    is_symbol = '/' not in input_value and not input_value.lower().endswith('.md')
 
     try:
         if is_symbol:
@@ -650,15 +681,21 @@ def expand_result(
             results = safe_search(input_value, search_params)
             hits = results.get("hits", [])
 
-            # Find exact match
-            match = None
-            for h in hits:
-                if h.get("api_name", "").lower() == input_value.lower():
-                    match = h
-                    break
-                if h.get("title", "").lower() == input_value.lower():
-                    match = h
-                    break
+            # Prefer an exact, case-sensitive title ('Button' over 'Button tags'),
+            # then that name's function page ('withAnimation' ->
+            # 'withAnimation(_:_:)'), before the looser case-insensitive matches
+            match = next((h for h in hits if h.get("title", "") == input_value), None)
+            if not match:
+                match = next((h for h in hits if h.get("title", "").startswith(input_value + "(")), None)
+
+            if not match:
+                for h in hits:
+                    if h.get("api_name", "").lower() == input_value.lower():
+                        match = h
+                        break
+                    if h.get("title", "").lower() == input_value.lower():
+                        match = h
+                        break
 
             if not match:
                 for h in hits:

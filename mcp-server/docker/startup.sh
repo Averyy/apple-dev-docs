@@ -13,7 +13,7 @@ fi
 
 # Check optional API key (for rate limit bypass)
 if [ -z "$MCP_API_KEY" ]; then
-    echo "ℹ️  Note: MCP_API_KEY not set - all requests subject to rate limiting (30/min)"
+    echo "ℹ️  Note: MCP_API_KEY not set - all requests subject to rate limiting (${RATE_LIMIT_REQUESTS:-60}/min)"
     echo "   Set MCP_API_KEY to enable authenticated access that bypasses rate limits"
 fi
 
