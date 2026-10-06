@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS 12 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12. The SDK comes bundled with Xcode 10 available from the Mac App Store. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
+The iOS 12 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12. The SDK comes bundled with Xcode 10. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
 
 ##### App Store
 

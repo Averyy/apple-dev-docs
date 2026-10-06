@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 10.14 SDK provides support for developing apps for Macs running macOS Mojave. The SDK comes bundled with Xcode 10 available from the Mac App Store. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
+The macOS 10.14 SDK provides support for developing apps for Macs running macOS Mojave. The SDK comes bundled with Xcode 10. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
 
 ##### General
 

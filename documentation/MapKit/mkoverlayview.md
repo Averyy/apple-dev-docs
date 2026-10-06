@@ -48,6 +48,8 @@ The implementation of your [`drawMapRect:zoomScale:inContext:`](mkoverlayview/dr
 - [NSCoding](../foundation/nscoding.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](../uikit/uiappearance.md)

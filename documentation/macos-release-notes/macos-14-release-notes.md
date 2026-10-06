@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 14 SDK provides support to develop apps for Mac computers running Sonoma 14. The SDK comes bundled with Xcode 15 RC, available from the Mac App Store. For information on the compatibility requirements for Xcode 15 RC, see [`Xcode 15 RC Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15-release-notes).
+The macOS 14 SDK provides support to develop apps for Mac computers running Sonoma 14. The SDK comes bundled with Xcode 15 RC. For information on the compatibility requirements for Xcode 15 RC, see [`Xcode 15 RC Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15-release-notes).
 
 ##### General
 

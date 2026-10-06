@@ -21,7 +21,7 @@ func addPasses(_ passes: [PKPass]) async -> PKPassLibraryAddPassesStatus
 
 #### Discussion
 
-Use this method whenever the user initiates an action that generates a single pass (like purchasing a concert ticket) or multiple passes (like checking into a multiconnection flight). The user receives a prompt to confirm the overall action or to review the passes individually. If you want to force the user to review individual passes visually before adding them, use an instance of [`PKAddPassesViewController`](pkaddpassesviewcontroller.md).
+Use this method when someone initiates an action that generates a single pass, like purchasing a concert ticket, or multiple passes, like checking into a multiconnection flight. Your app adds the pass to the person’s Wallet automatically with [`PKPassLibrary.Capability.backgroundAddPasses`](pkpasslibrary/capability/backgroundaddpasses.md), or they receive a prompt to confirm the overall action or review the passes individually. If you want to the person to review individual passes visually before adding them, use an instance of [`PKAddPassesViewController`](pkaddpassesviewcontroller.md).
 
 ## Parameters
 
@@ -30,12 +30,12 @@ Use this method whenever the user initiates an action that generates a single pa
 
 ## See Also
 
-- [func canAddSecureElementPass(primaryAccountIdentifier: String) -> Bool](pkpasslibrary/canaddsecureelementpass(primaryaccountidentifier:).md)
-  Returns a Boolean value that indicates whether PassKit can add a Secure Element pass for the specified account.
-- [func canAddFelicaPass() -> Bool](pkpasslibrary/canaddfelicapass.md)
-  Returns a Boolean value that indicates whether the library can add FeliCa™ passes.
-- [enum PKPassLibraryAddPassesStatus](pkpasslibraryaddpassesstatus.md)
-  Statuses that PassKit uses when it adds passes to the pass library.
+- [func requestAuthorization(for: PKPassLibrary.Capability, completion: (PKPassLibrary.AuthorizationStatus) -> Void)](pkpasslibrary/requestauthorization(for:completion:).md)
+  Requests a person’s authorization to use a pass library capability.
+- [PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus.md)
+  Statuses that indicate whether a person authorized your app to add a pass to their Wallet.
+- [PKPassLibrary.Capability](pkpasslibrary/capability.md)
+  Features for which your app can request authorization from a person.
 
 
 ---

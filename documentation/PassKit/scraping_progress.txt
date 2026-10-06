@@ -1,4 +1,4 @@
 Completed scraping PassKit (Apple Pay and Wallet)!
-Total pages scraped: 4
-Pages skipped (unchanged): 1109
+Total pages scraped: 15
+Pages skipped (unchanged): 1098
 Pages failed: 0

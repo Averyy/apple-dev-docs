@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 10.2 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 10.3. The SDK comes bundled with Xcode 15.1, available from the Mac App Store. For information on the compatibility requirements for Xcode 15.1, see [`Xcode 15.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15_1-release-notes).
+The watchOS 10.2 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 10.3. The SDK comes bundled with Xcode 15.1. For information on the compatibility requirements for Xcode 15.1, see [`Xcode 15.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15_1-release-notes).
 
 ##### Device Support
 

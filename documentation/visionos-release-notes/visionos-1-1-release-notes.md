@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.1. The SDK comes bundled with Xcode 15.3, available from the Mac App Store. For information on the compatibility requirements for Xcode 15.3, see [`Xcode 15.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15_3-release-notes).
+The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.1. The SDK comes bundled with Xcode 15.3. For information on the compatibility requirements for Xcode 15.3, see [`Xcode 15.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15_3-release-notes).
 
 ##### General
 

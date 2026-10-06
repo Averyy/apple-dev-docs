@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.5. The SDK comes bundled with Xcode 16.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 16.4, see [`Xcode 16.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_4-release-notes).
+The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.5. The SDK comes bundled with Xcode 16.4. For information on the compatibility requirements for Xcode 16.4, see [`Xcode 16.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_4-release-notes).
 
 ##### Apple Vision Pro App
 

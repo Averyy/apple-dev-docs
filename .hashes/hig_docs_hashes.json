@@ -170,9 +170,9 @@
     "last_updated": "2026-10-02T08:38:25.586907"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sf-symbols.json": {
-    "hash": "c8103ccd95e57c42c488d7fe854164a8c2d291d3202723e2234141a779ba138b",
+    "hash": "cd57c0c0f85045f526cd88db21e05de02e74372a092f2da2289113fa54af40fb",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sf-symbols.md",
-    "last_updated": "2026-10-02T08:38:25.904288"
+    "last_updated": "2026-10-06T08:42:20.857817"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/spatial-layout.json": {
     "hash": "85aaa342c5604b4202361de29eea459ec15182456281642302383ab24a69fc3e",
@@ -545,9 +545,9 @@
     "last_updated": "2026-08-14T07:56:47.977844"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/wallet.json": {
-    "hash": "205889759b2fb7f077af620efbc580190026043ee8dc7f771a90eb53eeb3b6f3",
+    "hash": "c967b20110986be299fbae99b9c3130222ff8cbfb02720ae2732590e0ddc2d89",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/wallet.md",
-    "last_updated": "2026-09-18T08:34:13.152160"
+    "last_updated": "2026-10-06T08:42:36.842585"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/charts.json": {
     "hash": "9dd4fecb6bc07603efa5976c0685cb6e55015a52a3904e7e551ce2f9971ddd4a",

@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.1. The SDK comes bundled with Xcode 11 available from the Mac App Store. For information on the compatibility requirements for Xcode 11, see [`Xcode 11 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11-release-notes).
+The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.1. The SDK comes bundled with Xcode 11. For information on the compatibility requirements for Xcode 11, see [`Xcode 11 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11-release-notes).
 
 ##### General
 

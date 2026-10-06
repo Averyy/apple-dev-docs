@@ -1,4 +1,4 @@
-# macOS 27.2 Golden Gate Beta 2 Release Notes
+# macOS 27.2 Golden Gate Beta 3 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27.2 SDK provides support to develop apps for Mac computers running macOS 27.2 Golden Gate beta 2. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
+The macOS 27.2 SDK provides support to develop apps for Mac computers running macOS 27.2 Golden Gate beta 3. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
 
 ##### General
 

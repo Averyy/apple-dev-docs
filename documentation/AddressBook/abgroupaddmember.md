@@ -24,8 +24,8 @@ func ABGroupAddMember(_ group: ABGroupRef!, _ personToAdd: ABPersonRef!) -> Bool
 ## Parameters
 
 - `group`: The group you wish to add `person` to.
-- `personToAdd`: The person to add to `group`. If `person` is `NULL`, this function raises an exception.
 - `person`: The person to add to `group`. If `person` is `NULL`, this function raises an exception.
+- `personToAdd`: The person to add to `group`. If `person` is `NULL`, this function raises an exception.
 
 ## See Also
 

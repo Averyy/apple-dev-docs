@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### General
 
@@ -834,7 +834,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ## See Also
 
-- [macOS 27.2 Golden Gate Beta 2 Release Notes](macos-27_2-release-notes.md)
+- [macOS 27.2 Golden Gate Beta 3 Release Notes](macos-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

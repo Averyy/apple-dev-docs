@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 10.15 SDK provides support for developing apps for Macs running macOS Catalina 10.15. The SDK comes bundled with Xcode 11 available from the Mac App Store. For information on the compatibility requirements for Xcode 11, see [`Xcode 11 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11-release-notes).
+The macOS 10.15 SDK provides support for developing apps for Macs running macOS Catalina 10.15. The SDK comes bundled with Xcode 11. For information on the compatibility requirements for Xcode 11, see [`Xcode 11 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11-release-notes).
 
 ##### General
 

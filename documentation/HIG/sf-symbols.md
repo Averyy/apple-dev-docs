@@ -151,7 +151,7 @@ For guidance, see [Icons](icons.md).
 #### Developer documentation
 [Symbols](../symbols.md) — Symbols framework
 [Configuring and displaying symbol images in your UI](../uikit/configuring-and-displaying-symbol-images-in-your-ui.md) — UIKit
-[Creating custom symbols](../technologyoverviews/custom-sf-symbols.md) — UIKit
+[Creating custom symbols](../technologyoverviews/custom-sf-symbols.md)
 
 #### Videos
 - [What’s new in SF Symbols 7](https://developer.apple.com/videos/play/wwdc2025/337) - Explore the latest updates to SF Symbols, Apple’s library of iconography. Meet Draw, a new animation system that allows symbols to imitate the organic flow of a handwritten stroke, and Variable Draw, which can be used to convey strength or progress. Discover Gradients, which add dimension and visual interest to symbols, and Magic Replace enhancements, which offer greater continuity between related symbols. And learn how to preview and integrate these features into your own apps.

@@ -1,4 +1,4 @@
 Completed scraping SwiftData!
-Total pages scraped: 1
-Pages skipped (unchanged): 540
+Total pages scraped: 0
+Pages skipped (unchanged): 541
 Pages failed: 0

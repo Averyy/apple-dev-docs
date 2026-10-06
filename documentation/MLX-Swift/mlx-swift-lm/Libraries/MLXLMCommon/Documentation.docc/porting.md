@@ -22,6 +22,13 @@ do development _in_ mlx-swift-lm.
 
 ## Porting Models from MLX in Python
 
+Checkpoint namespaces can differ from runtime module paths. Implement
+``BaseLanguageModel/prepareCheckpoint(_:)`` with ``CheckpointNameMapping`` for
+renames and exclusions, or ``CheckpointComponent`` to select a component from a
+larger checkpoint. These operations preserve source metadata and per-layer
+precision. Keep architecture-specific numeric conversions in the model's hook.
+See <doc:model-compatibility> for the loading contract and validation rules.
+
 Let's consider a concrete example, [gemma.py](https://github.com/ml-explore/mlx-lm/blob/main/mlx_lm/models/gemma.py). For reference, here is the current port [Gemma.swift](https://github.com/ml-explore/mlx-swift-lm/blob/main/Libraries/MLXLLM/Models/Gemma.swift).
 
 ### Imports

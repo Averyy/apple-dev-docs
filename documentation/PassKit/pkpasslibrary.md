@@ -40,6 +40,15 @@ The `PKPassLibrary` isn’t thread-safe. Use instances of this class only on a s
   Calls a completion handler that returns the custom data for a Secure Element pass.
 - [var remoteSecureElementPasses: [PKSecureElementPass]](pkpasslibrary/remotesecureelementpasses.md)
   The Secure Element passes that PassKit stores on paired devices.
+### Automatically adding passes
+- [func requestAuthorization(for: PKPassLibrary.Capability, completion: (PKPassLibrary.AuthorizationStatus) -> Void)](pkpasslibrary/requestauthorization(for:completion:).md)
+  Requests a person’s authorization to use a pass library capability.
+- [PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus.md)
+  Statuses that indicate whether a person authorized your app to add a pass to their Wallet.
+- [PKPassLibrary.Capability](pkpasslibrary/capability.md)
+  Features for which your app can request authorization from a person.
+- [func addPasses([PKPass], withCompletionHandler: ((PKPassLibraryAddPassesStatus) -> Void)?)](pkpasslibrary/addpasses(_:withcompletionhandler:).md)
+  Presents a user interface for adding multiple passes at once.
 ### Adding passes
 - [func canAddSecureElementPass(primaryAccountIdentifier: String) -> Bool](pkpasslibrary/canaddsecureelementpass(primaryaccountidentifier:).md)
   Returns a Boolean value that indicates whether PassKit can add a Secure Element pass for the specified account.
@@ -93,10 +102,6 @@ The `PKPassLibrary` isn’t thread-safe. Use instances of this class only on a s
 - [func encryptedServiceProviderData(for: PKSecureElementPass, completion: ([AnyHashable : Any]?, (any Error)?) -> Void)](pkpasslibrary/encryptedserviceproviderdata(for:completion:).md)
 - [func openPaymentSetup(merchantIdentifier: String)](pkpasslibrary/openpaymentsetup(merchantidentifier:).md)
 - [func passes(withReaderIdentifier: String) -> Set<PKSecureElementPass>](pkpasslibrary/passes(withreaderidentifier:).md)
-- [func requestAuthorization(for: PKPassLibrary.Capability, completion: (PKPassLibrary.AuthorizationStatus) -> Void)](pkpasslibrary/requestauthorization(for:completion:).md)
-### Enumerations
-- [PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus.md)
-- [PKPassLibrary.Capability](pkpasslibrary/capability.md)
 
 ## Relationships
 

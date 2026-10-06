@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 12 SDK provides support for developing tvOS apps for Apple TV devices running tvOS 12. For information about new features in tvOS 12, see [`What’s New in tvOS`](https://developer.apple.comhttps://developer.apple.com/tvos/whats-new/). The SDK comes bundled with Xcode 10 available from the Mac App Store. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
+The tvOS 12 SDK provides support for developing tvOS apps for Apple TV devices running tvOS 12. For information about new features in tvOS 12, see [`What’s New in tvOS`](https://developer.apple.comhttps://developer.apple.com/tvos/whats-new/). The SDK comes bundled with Xcode 10. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
 
 ##### Dolby Atmos
 

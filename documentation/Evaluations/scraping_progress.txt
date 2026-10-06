@@ -1,4 +1,4 @@
 Completed scraping Evaluations!
-Total pages scraped: 17
-Pages skipped (unchanged): 326
+Total pages scraped: 0
+Pages skipped (unchanged): 343
 Pages failed: 0

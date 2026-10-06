@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 15 SDK provides support to develop apps for Mac computers running Sequoia 15. The SDK comes bundled with Xcode 16, available from the Mac App Store. For information on the compatibility requirements for Xcode 16, see [`Xcode 16 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16-release-notes).
+The macOS 15 SDK provides support to develop apps for Mac computers running Sequoia 15. The SDK comes bundled with Xcode 16. For information on the compatibility requirements for Xcode 16, see [`Xcode 16 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16-release-notes).
 
 ##### Accessibility
 
