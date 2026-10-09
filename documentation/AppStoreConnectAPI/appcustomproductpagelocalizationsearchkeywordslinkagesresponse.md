@@ -50,6 +50,8 @@ object AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse
   A response containing the resource identifiers of screenshot sets associated with a custom product page localization.
 - [object AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest](appcustomproductpagelocalizationsearchkeywordslinkagesrequest.md)
   The request body you use to create a relationship between a custom product page localization and a search keyword.
+- [object AppCustomProductPageLocalizationPlacementsLinkagesResponse](appcustomproductpagelocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 
 ---

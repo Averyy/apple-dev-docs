@@ -14,6 +14,8 @@ An `appPreviews` resource represents a single app preview for an app locale and 
 
 To upload app previews, begin by using [`Create an app preview set`](post-v1-apppreviewsets.md) endpoint for the locale and display target. For more information, see [`App preview specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-preview-specifications).
 
+> ❗ **Important**:  This resource is deprecated. Use the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+
 ## Topics
 
 ### Endpoints

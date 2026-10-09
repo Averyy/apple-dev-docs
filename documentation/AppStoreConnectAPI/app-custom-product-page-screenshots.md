@@ -13,6 +13,8 @@ An `appScreenshots` resource represents a single app screenshot for an app local
 
 To upload screenshots, begin by using the [`Create an app screenshot set`](post-v1-appscreenshotsets.md) endpoint for the locale and display target. To upload screenshots, you must create an asset reservation, then follow the upload operations specified in the response.
 
+> ❗ **Important**:  This resource is deprecated. Use the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+
 ## Topics
 
 ### Endpoints

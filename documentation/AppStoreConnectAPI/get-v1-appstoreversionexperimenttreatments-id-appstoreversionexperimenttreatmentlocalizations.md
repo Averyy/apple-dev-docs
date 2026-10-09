@@ -23,6 +23,8 @@ Get a list of all localizations for a specific App Store version experiment trea
 - `limit[appPreviewSets]` (integer): The maximum number of related app preview set resources to return.
 - `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot set resources to return.
 - `fields[appStoreVersionExperimentTreatments]` ([string]): Additional fields to include for each App Store version experiment treatment resource returned by the response.
+- `fields[appAssetLibraryPlacements]` ([string])
+- `limit[placements]` (integer)
 
 ## See Also
 

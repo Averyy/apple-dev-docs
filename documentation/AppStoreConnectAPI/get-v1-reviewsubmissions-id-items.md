@@ -21,6 +21,8 @@ List all the items in a specific review submission.
 - `fields[appCustomProductPageVersions]` ([string])
 - `fields[appEvents]` ([string])
 - `include` ([string])
+- `fields[appAssetLibraryImages]` ([string])
+- `fields[appAssetLibraryVideos]` ([string])
 - `fields[backgroundAssetVersions]` ([string])
 - `fields[gameCenterAchievementVersions]` ([string])
 - `fields[gameCenterActivityVersions]` ([string])

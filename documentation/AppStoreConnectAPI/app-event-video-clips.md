@@ -4,6 +4,10 @@
 
 Create and update video clips your product page uses for the card or detail view of an in-app event.
 
+#### Overview
+
+> ❗ **Important**:  This resource is deprecated. Use the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+
 ## Topics
 
 ### Endpoints

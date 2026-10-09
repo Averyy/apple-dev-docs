@@ -943,6 +943,8 @@ The following table describes the changes to this document.
 
 ## See Also
 
+- [HLS for Apple Podcasts](hls-for-podcasts.md)
+  Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
 - [Using content protection systems with HLS](using-content-protection-systems-with-hls.md)
   Adding encryption keys to media playlists
 - [About the Common Media Application Format with HTTP Live Streaming (HLS)](about-the-common-media-application-format-with-http-live-streaming-hls.md)

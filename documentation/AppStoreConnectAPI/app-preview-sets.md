@@ -15,6 +15,8 @@ To upload individual previews, uses the [`App Previews`](app-previews.md) resour
 
 For more information about app previews, see [`App information`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-information).
 
+> ❗ **Important**:  This resource is deprecated. Use the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+
 ## Topics
 
 ### Getting Preview Sets and Reading Information

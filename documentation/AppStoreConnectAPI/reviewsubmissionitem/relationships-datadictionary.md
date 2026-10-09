@@ -34,6 +34,8 @@ object ReviewSubmissionItem.Relationships
   The data that describes the Game Center leaderboard set version of the review submission item.
 - [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
   The data that describes the Game Center leaderboard version of the review submission item.
+- [object ReviewSubmissionItem.Relationships.AppAssetLibraryImage](reviewsubmissionitem/relationships-data.dictionary/appassetlibraryimage-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppAssetLibraryVideo](reviewsubmissionitem/relationships-data.dictionary/appassetlibraryvideo-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.InAppPurchaseVersion](reviewsubmissionitem/relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.SubscriptionGroupVersion](reviewsubmissionitem/relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.SubscriptionVersion](reviewsubmissionitem/relationships-data.dictionary/subscriptionversion-data.dictionary.md)
@@ -51,6 +53,8 @@ object ReviewSubmissionItem.Relationships
 - `gameCenterChallengeVersion` (ReviewSubmissionItem.Relationships.GameCenterChallengeVersion)
 - `gameCenterLeaderboardSetVersion` (ReviewSubmissionItem.Relationships.GameCenterLeaderboardSetVersion)
 - `gameCenterLeaderboardVersion` (ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion)
+- `appAssetLibraryImage` (ReviewSubmissionItem.Relationships.AppAssetLibraryImage): The data and links that describe the relationship between the Review Submission Items and the App Asset Library Images resources.
+- `appAssetLibraryVideo` (ReviewSubmissionItem.Relationships.AppAssetLibraryVideo): The data and links that describe the relationship between the Review Submission Items and the App Asset Library Videos resources.
 - `inAppPurchaseVersion` (ReviewSubmissionItem.Relationships.InAppPurchaseVersion)
 - `subscriptionGroupVersion` (ReviewSubmissionItem.Relationships.SubscriptionGroupVersion)
 - `subscriptionVersion` (ReviewSubmissionItem.Relationships.SubscriptionVersion)

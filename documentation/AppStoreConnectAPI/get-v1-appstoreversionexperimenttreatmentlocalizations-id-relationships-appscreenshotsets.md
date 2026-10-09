@@ -27,6 +27,10 @@
   Add a new localization for an App Store version experiment treatment.
 - [Delete a treatment localization for an app store version experiment](delete-v1-appstoreversionexperimenttreatmentlocalizations-_id_.md)
   Delete localized metatdata that you configured for an App Store Version experiment treatment.
+- [List related placements](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-placements.md)
+  List the placements for an App Store version experiment treatment localization.
+- [List the placement IDs for an App Store version experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific App Store version experiment treatment localization.
 
 
 ---

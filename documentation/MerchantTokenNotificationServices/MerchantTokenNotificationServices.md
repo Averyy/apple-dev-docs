@@ -48,6 +48,10 @@ If a life-cycle event affects the token — for example, the card’s expiration
   Data for displaying art to represent a card.
 - [object CardMetadata](cardmetadata.md)
   Data about the card, including its expiration date and suffix.
+- [object EncryptedTokenMetadata](encryptedtokenmetadata.md)
+  Encrypted data about the merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
+- [object TokenMetadata](tokenmetadata.md)
+  Unencrypted metadata about a merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
 ### Merchant token usage information
 - [Retrieve Merchant Token Public Key](retrieve-merchant-token-public-key.md)
   Get the merchant token public key.

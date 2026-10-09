@@ -23,6 +23,7 @@ object AppCustomProductPageLocalization.Relationships
 ### Dictionaries
 - [object AppCustomProductPageLocalization.Relationships.SearchKeywords](appcustomproductpagelocalization/relationships-data.dictionary/searchkeywords-data.dictionary.md)
   The data and links that describe the search keywords related to a custom product page localization.
+- [object AppCustomProductPageLocalization.Relationships.Placements](appcustomproductpagelocalization/relationships-data.dictionary/placements-data.dictionary.md)
 
 ## Properties
 
@@ -30,6 +31,7 @@ object AppCustomProductPageLocalization.Relationships
 - `appPreviewSets` (AppCustomProductPageLocalization.Relationships.AppPreviewSets)
 - `appScreenshotSets` (AppCustomProductPageLocalization.Relationships.AppScreenshotSets)
 - `searchKeywords` (AppCustomProductPageLocalization.Relationships.SearchKeywords)
+- `placements` (AppCustomProductPageLocalization.Relationships.Placements): The data and links that describe the relationship between the App Custom Product Page Localizations and the App Asset Library Placements resources.
 
 ## See Also
 

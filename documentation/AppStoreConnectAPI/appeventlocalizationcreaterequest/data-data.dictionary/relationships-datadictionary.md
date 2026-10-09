@@ -18,10 +18,13 @@ object AppEventLocalizationCreateRequest.Data.Relationships
 
 ### Objects
 - [object AppEventLocalizationCreateRequest.Data.Relationships.AppEvent](appeventlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appevent-data.dictionary.md)
+### Dictionaries
+- [object AppEventLocalizationCreateRequest.Data.Relationships.Placements](appeventlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary.md)
 
 ## Properties
 
 - `appEvent` (AppEventLocalizationCreateRequest.Data.Relationships.AppEvent) *(required)*
+- `placements` (AppEventLocalizationCreateRequest.Data.Relationships.Placements)
 
 ## See Also
 

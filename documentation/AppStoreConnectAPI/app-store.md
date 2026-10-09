@@ -15,6 +15,9 @@ Manage all aspects of your app, App Clips, In-App Purchases, and customer review
   Create and manage your app’s custom product pages and localizations.
 - [App Events and Metadata](app-events-and-metadata.md)
   Create and schedule in-app events and manage in-app event metadata.
+### App Asset Library
+- [App Asset Library](app-asset-library.md)
+  Upload image and video assets once, then reuse them across your app’s App Store surfaces.
 ### App Clips
 - [App Clips and App Clip Experiences](app-clips-and-app-clip-experiences.md)
   Read App Clip information and manage App Clip experiences.

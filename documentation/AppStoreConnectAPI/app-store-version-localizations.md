@@ -18,6 +18,8 @@ Use `appStoreVersionLocalizations` to create and maintain your App Store metadat
 
 You can update the Promotional Text for your version at any time. Update other attributes when your app is in an editable state. For information about required, localized, and editable metadata, see [`Required, localized, and editable properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/required-localizable-and-editable-properties).
 
+> **Note**:  Manage version media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md). The app preview set and app screenshot set relationships are deprecated.
+
 ## Topics
 
 ### Getting Version Localizations
@@ -48,6 +50,11 @@ You can update the Promotional Text for your version at any time. Update other a
   Add search keywords to a specific App Store version localization.
 - [Remove search keywords from an app store version localization](delete-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
   Remove search keywords from a specific App Store version localization.
+### Getting asset library placements
+- [List related placements](get-v1-appstoreversionlocalizations-_id_-placements.md)
+  List the placements for an App Store version localization.
+- [List the placement IDs for an App Store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific App Store version localization.
 ### Objects
 - [object AppStoreVersionLocalization](appstoreversionlocalization.md)
   The data structure that represent an App Store Version Localizations resource.
@@ -63,6 +70,8 @@ You can update the Promotional Text for your version at any time. Update other a
   The request body for updating the list of search keywords linked to an App Store version localization.
 - [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
   A response containing the resource identifiers of search keywords linked to an App Store version localization.
+- [object AppStoreVersionLocalizationPlacementsLinkagesResponse](appstoreversionlocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 ## See Also
 

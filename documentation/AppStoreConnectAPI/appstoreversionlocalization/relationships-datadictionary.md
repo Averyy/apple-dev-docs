@@ -24,6 +24,7 @@ object AppStoreVersionLocalization.Relationships
 - [object AppStoreVersionLocalization.Relationships.AppStoreVersion](appstoreversionlocalization/relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 ### Dictionaries
+- [object AppStoreVersionLocalization.Relationships.Placements](appstoreversionlocalization/relationships-data.dictionary/placements-data.dictionary.md)
 - [object AppStoreVersionLocalization.Relationships.SearchKeywords](appstoreversionlocalization/relationships-data.dictionary/searchkeywords-data.dictionary.md)
 
 ## Properties
@@ -31,6 +32,7 @@ object AppStoreVersionLocalization.Relationships
 - `appPreviewSets` (AppStoreVersionLocalization.Relationships.AppPreviewSets)
 - `appScreenshotSets` (AppStoreVersionLocalization.Relationships.AppScreenshotSets)
 - `appStoreVersion` (AppStoreVersionLocalization.Relationships.AppStoreVersion)
+- `placements` (AppStoreVersionLocalization.Relationships.Placements): The data and links that describe the relationship between the App Store Version Localizations and the App Asset Library Placements resources.
 - `searchKeywords` (AppStoreVersionLocalization.Relationships.SearchKeywords)
 
 ## See Also

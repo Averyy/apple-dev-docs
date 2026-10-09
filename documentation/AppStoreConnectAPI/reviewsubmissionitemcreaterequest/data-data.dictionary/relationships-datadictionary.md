@@ -24,6 +24,8 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.ReviewSubmission](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/reviewsubmission-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
 ### Dictionaries
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryImage](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appassetlibraryimage-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryVideo](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appassetlibraryvideo-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterActivityVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenteractivityversion-data.dictionary.md)
@@ -45,6 +47,8 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - `inAppPurchaseVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.InAppPurchaseVersion)
 - `subscriptionGroupVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion)
 - `subscriptionVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionVersion)
+- `appAssetLibraryImage` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryImage)
+- `appAssetLibraryVideo` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryVideo)
 - `backgroundAssetVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion)
 - `gameCenterAchievementVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion)
 - `gameCenterActivityVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterActivityVersion)

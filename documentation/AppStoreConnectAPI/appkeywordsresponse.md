@@ -44,6 +44,8 @@ object AppKeywordsResponse
   The request body you use to create a relationship between a custom product page localization and a search keyword.
 - [object AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse](appcustomproductpagelocalizationsearchkeywordslinkagesresponse.md)
   A response containing the resource identifiers of search keywords associated with a custom product page localization.
+- [object AppCustomProductPageLocalizationPlacementsLinkagesResponse](appcustomproductpagelocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 
 ---

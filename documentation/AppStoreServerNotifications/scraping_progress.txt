@@ -1,4 +1,4 @@
 Completed scraping App Store Server Notifications!
-Total pages scraped: 0
-Pages skipped (unchanged): 135
+Total pages scraped: 1
+Pages skipped (unchanged): 134
 Pages failed: 0

@@ -29,6 +29,10 @@
   Add a new localization for an in-app event.
 - [Delete an app event localization](delete-v1-appeventlocalizations-_id_.md)
   Delete localized metadata that you configured for an in-app event.
+- [List related placements](get-v1-appeventlocalizations-_id_-placements.md)
+  List the placements for an in-app event localization.
+- [List the placement IDs for an in-app event localization](get-v1-appeventlocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific in-app event localization.
 
 
 ---

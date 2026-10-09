@@ -37,6 +37,10 @@ For information about setting your server’s notification URL to receive life-c
   Data for displaying art to represent a card.
 - [object CardMetadata](cardmetadata.md)
   Data about the card, including its expiration date and suffix.
+- [object EncryptedTokenMetadata](encryptedtokenmetadata.md)
+  Encrypted data about the merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
+- [object TokenMetadata](tokenmetadata.md)
+  Unencrypted metadata about a merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
 
 
 ---

@@ -10,9 +10,10 @@ An `appPreviewSets` resource represents a collection of app previews for an app 
 
 - Begin the process of uploading app previews.
 - Reorder app previews after they’re uploaded.
-- To upload individual previews, uses the [`App Previews`](app-previews.md) resource.
 
-For more information about app previews, see [`App information`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-information).
+To upload individual previews, use the [`App Previews`](app-previews.md) resource. For more information about app previews, see [`App information`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-information).
+
+> ❗ **Important**:  This resource is deprecated. Use the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
 
 ## Topics
 

@@ -20,7 +20,9 @@ Read localized version-level information.
 - `include` ([string]): The relationship data to include in the response.
 - `limit[appPreviewSets]` (integer): The maximum number of related app preview set resources to return.
 - `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot set resources to return.
+- `fields[appAssetLibraryPlacements]` ([string])
 - `fields[appStoreVersions]` ([string])
+- `limit[placements]` (integer)
 - `limit[searchKeywords]` (integer)
 
 ## See Also

@@ -37,6 +37,8 @@ object AppEventLocalizationAppEventScreenshotsLinkagesResponse
   The response body for endpoints that list localized entries for an in-app event.
 - [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](appeventlocalizationappeventvideoclipslinkagesresponse.md)
 - [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationPlacementsLinkagesResponse](appeventlocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 
 ---

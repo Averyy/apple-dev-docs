@@ -66,7 +66,9 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51
 - `limit[appPreviewSets]` (integer): The maximum number of related app preview sets resources to return.
 - `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot sets resources to return.
 - `limit[searchKeywords]` (integer): The maximum number of related search keywords resources to return.
+- `fields[appAssetLibraryPlacements]` ([string])
 - `fields[appCustomProductPageVersions]` ([string])
+- `limit[placements]` (integer)
 
 ## See Also
 

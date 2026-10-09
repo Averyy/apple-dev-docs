@@ -22,6 +22,8 @@ Get a list of all localizations for a specific in-app event.
 - `limit[appEventScreenshots]` (integer): The maximum number of related app event screenshots resources to return.
 - `limit[appEventVideoClips]` (integer): The maximum number of related app event video clips resources to return.
 - `fields[appEvents]` ([string]): Additional fields to include for each app event resource returned by the response.
+- `fields[appAssetLibraryPlacements]` ([string])
+- `limit[placements]` (integer)
 
 ## See Also
 

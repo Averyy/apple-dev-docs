@@ -1,4 +1,4 @@
 Completed scraping Quick Look UI!
-Total pages scraped: 0
-Pages skipped (unchanged): 61
+Total pages scraped: 1
+Pages skipped (unchanged): 60
 Pages failed: 0

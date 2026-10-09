@@ -18,10 +18,13 @@ object AppCustomProductPageLocalizationInlineCreate.Relationships
 
 ### Objects
 - [object AppCustomProductPageLocalizationInlineCreate.Relationships.AppCustomProductPageVersion](appcustomproductpagelocalizationinlinecreate/relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)
+### Dictionaries
+- [object AppCustomProductPageLocalizationInlineCreate.Relationships.Placements](appcustomproductpagelocalizationinlinecreate/relationships-data.dictionary/placements-data.dictionary.md)
 
 ## Properties
 
 - `appCustomProductPageVersion` (AppCustomProductPageLocalizationInlineCreate.Relationships.AppCustomProductPageVersion)
+- `placements` (AppCustomProductPageLocalizationInlineCreate.Relationships.Placements)
 
 ## See Also
 

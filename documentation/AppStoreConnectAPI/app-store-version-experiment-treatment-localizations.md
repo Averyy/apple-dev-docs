@@ -19,6 +19,10 @@ Manage the localized assets, including screenshots and previews, for an App Stor
   Add a new localization for an App Store version experiment treatment.
 - [Delete a treatment localization for an app store version experiment](delete-v1-appstoreversionexperimenttreatmentlocalizations-_id_.md)
   Delete localized metatdata that you configured for an App Store Version experiment treatment.
+- [List related placements](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-placements.md)
+  List the placements for an App Store version experiment treatment localization.
+- [List the placement IDs for an App Store version experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific App Store version experiment treatment localization.
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalization](appstoreversionexperimenttreatmentlocalization.md)
   The localized screenshots, previews, and text for one treatment variant in an App Store product page A/B experiment.
@@ -28,6 +32,8 @@ Manage the localized assets, including screenshots and previews, for an App Stor
   The response body for endpoints that create, read, or modify a localized treatment for an App Store experiment.
 - [object AppStoreVersionExperimentTreatmentLocalizationsResponse](appstoreversionexperimenttreatmentlocalizationsresponse.md)
   The response body for endpoints that list localized treatments for an App Store version experiment.
+- [object AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 ## See Also
 

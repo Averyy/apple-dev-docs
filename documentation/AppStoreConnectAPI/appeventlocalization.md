@@ -43,6 +43,8 @@ object AppEventLocalization
 - [object AppEventLocalizationAppEventScreenshotsLinkagesResponse](appeventlocalizationappeventscreenshotslinkagesresponse.md)
 - [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](appeventlocalizationappeventvideoclipslinkagesresponse.md)
 - [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationPlacementsLinkagesResponse](appeventlocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 
 ---

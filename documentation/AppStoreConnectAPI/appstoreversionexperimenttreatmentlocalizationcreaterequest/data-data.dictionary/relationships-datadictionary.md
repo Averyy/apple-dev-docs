@@ -18,10 +18,13 @@ object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relation
 
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary.md)
+### Dictionaries
+- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.Placements](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary.md)
 
 ## Properties
 
 - `appStoreVersionExperimentTreatment` (AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment) *(required)*
+- `placements` (AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.Placements)
 
 ## See Also
 

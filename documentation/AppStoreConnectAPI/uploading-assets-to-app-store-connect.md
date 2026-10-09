@@ -15,6 +15,8 @@ There are four steps to upload an asset:
 3. Commit the upload.
 4. Verify that App Store Connect processed the asset successfully.
 
+> **Note**:  The app screenshot, app screenshot set, app preview, app preview set, and in-app event screenshot resources are deprecated. Manage screenshots, previews, and in-app event media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+
 This workflow is the same for every asset type you manage and upload using the following API resources:
 
 | Asset Type | API Resource |
@@ -184,7 +186,7 @@ App Store Connect compares the bytes received with the total bytes you described
 
 A successful commit request changes the asset state to `UPLOAD_COMPLETE`.
 
-> **Note**:  Once you commit the asset, you can no longer upload component parts. If you need to update your asset after committing it, you must delete it and create another upload, beginning with an asset reservation.
+After you commit the asset, you can no longer upload component parts. To update your asset after committing it, delete it and create another upload, beginning with an asset reservation.
 
 ##### Verify the Upload Succeeded
 

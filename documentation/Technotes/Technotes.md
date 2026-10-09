@@ -11,6 +11,8 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3214: Validating the fonts you ship in your app](tn3214-validating-the-fonts-you-ship-in-your-app.md)
   Understand the App Store’s font validation, reproduce the check, and fix any issues it reports.
 - [TN3137: On Mac keychain APIs and implementations](tn3137-on-mac-keychains.md)
@@ -31,8 +33,6 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
   Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
 - [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
   Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
 - [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
   Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
 - [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)

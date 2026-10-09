@@ -156,7 +156,9 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/6c0df710-d
 - `limit[appPreviewSets]` (integer): The maximum number of related app preview sets resources to return.
 - `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot sets resources to return.
 - `fields[appCustomProductPageVersions]` ([string]): Additional fields to include for each app custom product page version resource returned by the response.
+- `fields[appAssetLibraryPlacements]` ([string])
 - `fields[appKeywords]` ([string])
+- `limit[placements]` (integer)
 - `limit[searchKeywords]` (integer)
 
 ## See Also

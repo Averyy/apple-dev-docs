@@ -10,6 +10,8 @@ Use `appCustomProductPageLocalizations` to manage app preview sets and app scree
 
 You can update the Promotional Text for your custom product page localization at any time.
 
+> **Note**:  Manage custom product page media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md). The app preview set and app screenshot set relationships are deprecated.
+
 ## Topics
 
 ### Managing localizations
@@ -42,6 +44,11 @@ You can update the Promotional Text for your custom product page localization at
   Assign one or more search keywords to a specific custom product page localization.
 - [Remove a Search Keyword From a Custom Product Page Localization](delete-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Unassign a search keyword from a specific custom product page localization.
+### Getting asset library placements
+- [List related placements](get-v1-appcustomproductpagelocalizations-_id_-placements.md)
+  List the placements for an app custom product page localization.
+- [List the placement IDs for an app custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific app custom product page localization.
 ### Objects
 - [object AppKeyword](appkeyword.md)
   A search keyword associated with an App Store listing or custom product page for discoverability.
@@ -67,6 +74,8 @@ You can update the Promotional Text for your custom product page localization at
   The request body you use to create a relationship between a custom product page localization and a search keyword.
 - [object AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse](appcustomproductpagelocalizationsearchkeywordslinkagesresponse.md)
   A response containing the resource identifiers of search keywords associated with a custom product page localization.
+- [object AppCustomProductPageLocalizationPlacementsLinkagesResponse](appcustomproductpagelocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 
 ---

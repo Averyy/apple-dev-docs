@@ -28,6 +28,10 @@ Delete localized metatdata that you configured for an App Store Version experime
 - [List screenshot set IDs for an App Store version experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-appscreenshotsets.md)
 - [Create an app store version experiment treatment localization](post-v1-appstoreversionexperimenttreatmentlocalizations.md)
   Add a new localization for an App Store version experiment treatment.
+- [List related placements](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-placements.md)
+  List the placements for an App Store version experiment treatment localization.
+- [List the placement IDs for an App Store version experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific App Store version experiment treatment localization.
 
 
 ---

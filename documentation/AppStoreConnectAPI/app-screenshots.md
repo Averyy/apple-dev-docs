@@ -11,6 +11,8 @@ An `appScreenshots` resource represents a single app screenshot for an app local
 - Upload new app screenshots to App Store Connect.
 - Download existing screenshots.
 
+> ❗ **Important**:  This resource is deprecated. Use the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+
 To upload screenshots, begin by creating an [`App Screenshot Sets`](app-screenshot-sets.md) resource for the locale and display target. To upload screenshots, you must create an asset reservation, then follow the upload operations specified in the response.
 
 > ❗ **Important**:  Some screenshot sizes are required in order to submit your app for review. You’ll get an error at submission time if you don’t provide all of the required assets. For information about screenshot requirements, see [`Screenshot specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications).

@@ -20,7 +20,9 @@ Get information about a specific app event localization.
 - `include` ([string]): The relationship data to include in the response.
 - `limit[appEventScreenshots]` (integer): The maximum number of related app event screenshots resources to return.
 - `limit[appEventVideoClips]` (integer): The maximum number of related app event video clips resources to return.
+- `fields[appAssetLibraryPlacements]` ([string])
 - `fields[appEvents]` ([string])
+- `limit[placements]` (integer)
 
 ## See Also
 
@@ -36,6 +38,10 @@ Get information about a specific app event localization.
   Add a new localization for an in-app event.
 - [Delete an app event localization](delete-v1-appeventlocalizations-_id_.md)
   Delete localized metadata that you configured for an in-app event.
+- [List related placements](get-v1-appeventlocalizations-_id_-placements.md)
+  List the placements for an in-app event localization.
+- [List the placement IDs for an in-app event localization](get-v1-appeventlocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific in-app event localization.
 
 
 ---

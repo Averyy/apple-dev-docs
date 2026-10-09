@@ -23,7 +23,9 @@ Get a list of localized, version-level information about an app, for all locales
 - `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot set resources to return.
 - `limit[appPreviewSets]` (integer): The maximum number of related app preview set resources to return.
 - `include` ([string]): The relationship data to include in the response.
+- `fields[appAssetLibraryPlacements]` ([string])
 - `fields[appKeywords]` ([string])
+- `limit[placements]` (integer)
 - `limit[searchKeywords]` (integer)
 
 ## See Also

@@ -19,10 +19,13 @@ object AppStoreVersionLocalizationCreateRequest.Data.Relationships
 ### Objects
 - [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.AppStoreVersion](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The relationships to other resources that you can set with this request.
+### Dictionaries
+- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary.md)
 
 ## Properties
 
 - `appStoreVersion` (AppStoreVersionLocalizationCreateRequest.Data.Relationships.AppStoreVersion) *(required)*
+- `placements` (AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements)
 
 ## See Also
 

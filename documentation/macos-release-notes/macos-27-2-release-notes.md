@@ -20,6 +20,12 @@ The macOS 27.2 SDK provides support to develop apps for Mac computers running ma
 
 - The `EnablePasteboardPrivacyDeveloperPreview` user default has been removed. (186955507)
 
+##### Display Settings
+
+###### Known Issues
+
+- When an external display is connected, display settings might not be restored correctly, and the display arrangement might change. (188643179)
+
 ##### Notifications
 
 ###### Known Issues

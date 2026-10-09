@@ -19,6 +19,7 @@ object MerchantTokenMetadata
 
 - `cardArt` ([CardArt]): An array that contains data you use to display art that represents the card related to the merchant token.
 - `cardMetadata` (CardMetadata): Card data, including its expiration date and suffix, for the card related to the merchant token.
+- `encryptedTokenMetadata` (EncryptedTokenMetadata): Encrypted data about the merchant token, including its MPAN and expiration date.
 
 ## See Also
 
@@ -30,6 +31,10 @@ object MerchantTokenMetadata
   Data for displaying art to represent a card.
 - [object CardMetadata](cardmetadata.md)
   Data about the card, including its expiration date and suffix.
+- [object EncryptedTokenMetadata](encryptedtokenmetadata.md)
+  Encrypted data about the merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
+- [object TokenMetadata](tokenmetadata.md)
+  Unencrypted metadata about a merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
 
 
 ---

@@ -4,6 +4,10 @@
 
 Create and update in-app event metadata that’s localized.
 
+#### Overview
+
+> **Note**:  The in-app event screenshot and in-app event video clip relationships are deprecated. Manage in-app event media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+
 ## Topics
 
 ### Endpoints
@@ -21,6 +25,10 @@ Create and update in-app event metadata that’s localized.
   Add a new localization for an in-app event.
 - [Delete an app event localization](delete-v1-appeventlocalizations-_id_.md)
   Delete localized metadata that you configured for an in-app event.
+- [List related placements](get-v1-appeventlocalizations-_id_-placements.md)
+  List the placements for an in-app event localization.
+- [List the placement IDs for an in-app event localization](get-v1-appeventlocalizations-_id_-relationships-placements.md)
+  Get a list of placement resource IDs for a specific in-app event localization.
 ### Objects
 - [object AppEventLocalization](appeventlocalization.md)
   The localized name, short description, and long description for an App Store app event in a specific language.
@@ -35,6 +43,8 @@ Create and update in-app event metadata that’s localized.
 - [object AppEventLocalizationAppEventScreenshotsLinkagesResponse](appeventlocalizationappeventscreenshotslinkagesresponse.md)
 - [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](appeventlocalizationappeventvideoclipslinkagesresponse.md)
 - [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationPlacementsLinkagesResponse](appeventlocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 ## See Also
 

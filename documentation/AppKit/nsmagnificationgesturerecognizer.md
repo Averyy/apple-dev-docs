@@ -38,6 +38,8 @@ This gesture recognizer automatically sets the value of the [`delaysMagnificatio
 - [Hashable](../swift/hashable.md)
 - [NSCoding](../foundation/nscoding.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -276,9 +276,9 @@ On iOS, the easiest option is to delete your app.
 
 Alternatively, if you don’t want to delete your app for some reason, reset the entire privacy subsystem using Settings > General > Transfer or Reset > Reset > Reset Location & Privacy.
 
-On macOS there’s no way to reset your program’s Local Network privilege to the undetermined state (FB14944392).  One alternative is to run your program in a virtual machine (VM).  To retest, restore the VM from a snapshot taken before you installed your program.
+On macOS, the list in System Settings > Privacy & Security > Local Network has add (+) and remove (-) buttons.  To reset your program’s Local Network privilege, select it in the list and click the remove button.
 
-Alternatively, create a new user account and run your test there.  Remember that macOS maintains separate local network privacy state for each user account.
+> **Note**: These buttons were introduced in macOS 27.2.  On earlier versions of macOS there’s no way to reset your program’s Local Network privilege (FB14944392).  One option is to run your program in a virtual machine (VM).  To retest, restore the VM from a snapshot taken before you installed your program.  Alternatively, create a new user account and run your test there.  Remember that macOS maintains separate local network privacy state for each user account.
 
 #### Trigger the Local Network Alert
 
@@ -458,6 +458,7 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
 
 #### Revision History
 
+- **2026-10-06** Updated the *Reset local network state* section to account for changes in macOS 27.2.
 - **2026-02-17** Updated the *macOS considerations* section to explain how to configure local network privacy on specific networks (r. 161891509).  Moved version-specific information into the *Historical considerations* section.  Made other minor editorial changes.
 - **2025-07-18** Added information about two bugs (FB14321888, FB16131937). Updated the *Build-time considerations* section to cover macOS code signing.
 - **2024-10-31** Rewritten and republished as TN3179.

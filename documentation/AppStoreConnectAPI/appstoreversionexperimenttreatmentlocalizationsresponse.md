@@ -29,6 +29,8 @@ object AppStoreVersionExperimentTreatmentLocalizationsResponse
   The request body you use to create an App Store version experiment treatment localization.
 - [object AppStoreVersionExperimentTreatmentLocalizationResponse](appstoreversionexperimenttreatmentlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a localized treatment for an App Store experiment.
+- [object AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 
 ---

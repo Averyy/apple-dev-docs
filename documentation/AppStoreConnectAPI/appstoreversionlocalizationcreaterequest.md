@@ -38,6 +38,8 @@ object AppStoreVersionLocalizationCreateRequest
   The request body for updating the list of search keywords linked to an App Store version localization.
 - [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
   A response containing the resource identifiers of search keywords linked to an App Store version localization.
+- [object AppStoreVersionLocalizationPlacementsLinkagesResponse](appstoreversionlocalizationplacementslinkagesresponse.md)
+  A response body that contains a list of related resource IDs.
 
 
 ---

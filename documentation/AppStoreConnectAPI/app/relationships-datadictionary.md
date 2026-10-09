@@ -39,6 +39,7 @@ object App.Relationships
 - [object App.Relationships.AppStoreVersions](app/relationships-data.dictionary/appstoreversions-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 - [object App.Relationships.AppTags](app/relationships-data.dictionary/apptags-data.dictionary.md)
+- [object App.Relationships.AssetLibrary](app/relationships-data.dictionary/assetlibrary-data.dictionary.md)
 - [object App.Relationships.BackgroundAssets](app/relationships-data.dictionary/backgroundassets-data.dictionary.md)
   The link object for the app’s background assets relationship.
 - [object App.Relationships.BetaAppLocalizations](app/relationships-data.dictionary/betaapplocalizations-data.dictionary.md)
@@ -119,6 +120,7 @@ object App.Relationships
 - `appPriceSchedule` (App.Relationships.AppPriceSchedule): The data and links that describe the relationship between the Apps and the App Price Schedules resources.
 - `appStoreIcon` (App.Relationships.AppStoreIcon): The data and links that describe the relationship between the Apps and the App Store Icons resources.
 - `appTags` (App.Relationships.AppTags): The data and links that describe the relationship between the Apps and the App Tags resources.
+- `assetLibrary` (App.Relationships.AssetLibrary): The data and links that describe the relationship between the Apps and the App Asset Libraries resources.
 - `backgroundAssets` (App.Relationships.BackgroundAssets): The data and links that describe the relationship between the Apps and the Background Assets resources.
 - `betaFeedbackCrashSubmissions` (App.Relationships.BetaFeedbackCrashSubmissions): The data and links that describe the relationship between the Apps and the Beta Feedback Crash Submissions resources.
 - `betaFeedbackScreenshotSubmissions` (App.Relationships.BetaFeedbackScreenshotSubmissions): The data and links that describe the relationship between the Apps and the Beta Feedback Screenshot Submissions resources.
