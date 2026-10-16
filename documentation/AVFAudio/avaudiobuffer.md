@@ -22,19 +22,14 @@ class AVAudioBuffer
 
 ## Topics
 
-### Getting the Buffer Format
+### Getting the buffer format
 - [var format: AVAudioFormat](avaudiobuffer/format.md)
   The format of the audio in the buffer.
-### Getting the Audio Buffers
+### Getting the audio buffers
 - [var audioBufferList: UnsafePointer<AudioBufferList>](avaudiobuffer/audiobufferlist.md)
   The buffer’s underlying audio buffer list.
 - [var mutableAudioBufferList: UnsafeMutablePointer<AudioBufferList>](avaudiobuffer/mutableaudiobufferlist.md)
   A mutable version of the buffer’s underlying audio buffer list.
-### Specialized Audio Buffers
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
-  An object that represents an audio buffer that you use for compressed audio formats.
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
-  An object that represents an audio buffer you use with PCM audio formats.
 
 ## Relationships
 
@@ -55,12 +50,20 @@ class AVAudioBuffer
 
 ## See Also
 
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
-  An object that represents an audio buffer you use with PCM audio formats.
-- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
-  A read-only, Sendable audio buffer for safe concurrent access.
 - [class AVAudioFile](avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+  An object that represents an audio buffer that you use for compressed audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioFormat](avaudioformat.md)
+  An object that describes the representation of an audio format.
+- [class AVAudioChannelLayout](avaudiochannellayout.md)
+  An object that describes the roles of a set of audio channels.
+- [class AVAudioConverter](avaudioconverter.md)
+  An object that converts streams of audio between formats.
 - [class AVAudioTime](avaudiotime.md)
   An object you use to represent a moment in time.
 - [Audio settings](audio-settings.md)

@@ -22,7 +22,9 @@ enum AVAudioUnitEQFilterType
 
 ## Topics
 
-### Filter Types
+### Creating a filter type
+- [init?(rawValue: Int)](avaudiouniteqfiltertype/init(rawvalue:).md)
+### Choosing a filter type
 - [AVAudioUnitEQFilterType.parametric](avaudiouniteqfiltertype/parametric.md)
   A type that represents a parametric filter that derives from a Butterworth analog prototype.
 - [AVAudioUnitEQFilterType.lowPass](avaudiouniteqfiltertype/lowpass.md)
@@ -45,8 +47,6 @@ enum AVAudioUnitEQFilterType
   A type that represents a low-shelf filter with resonance support using the bandwidth parameter.
 - [AVAudioUnitEQFilterType.resonantHighShelf](avaudiouniteqfiltertype/resonanthighshelf.md)
   A type that represents a high-shelf filter with resonance support using the bandwidth parameter.
-### Initializers
-- [init?(rawValue: Int)](avaudiouniteqfiltertype/init(rawvalue:).md)
 
 ## Relationships
 
@@ -57,6 +57,19 @@ enum AVAudioUnitEQFilterType
 - [RawRepresentable](../swift/rawrepresentable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
+
+## See Also
+
+- [var bandwidth: Float](avaudiouniteqfilterparameters/bandwidth.md)
+  The bandwidth of the equalizer filter, in octaves.
+- [var bypass: Bool](avaudiouniteqfilterparameters/bypass.md)
+  The bypass state of the equalizer filter band.
+- [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
+  The equalizer filter type.
+- [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
+  The frequency of the equalizer filter, in hertz.
+- [var gain: Float](avaudiouniteqfilterparameters/gain.md)
+  The gain of the equalizer filter, in decibels.
 
 
 ---

@@ -25,10 +25,10 @@ When playback of an [`AVMusicTrack`](avmusictrack.md) reaches this event, the sy
 
 ## Topics
 
-### Creating a User Event
+### Creating a user event
 - [init(data: Data)](avmusicuserevent/init(data:).md)
   Creates a user event with the data you specify.
-### Inspecting a User Event
+### Inspecting a user event
 - [var sizeInBytes: UInt32](avmusicuserevent/sizeinbytes.md)
   The size of the data that the user event represents.
 

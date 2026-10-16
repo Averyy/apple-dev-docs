@@ -3,6 +3,8 @@
 **Framework**: HomeKit  
 **Kind**: method
 
+Finds your vendor HAP accessory using its long-term public key.
+
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
@@ -17,17 +19,14 @@
 func findVendorAccessory(hapPublicKey: Data) async throws -> HMAccessory?
 ```
 
-#### Discussion
+#### Overview
 
-Finds a vendor HAP accessory based on its Long Term Public Key.
-
-If no matching accessory exists, or if the current process does not have vendor-level access to the matching accessory, the result will be nil.
-
-An error will be returned if this method is used before available homes have been retrieved by the HMHomeManager, i.e. before the homeManagerDidUpdateHomes: delegate method has been invoked.
+Use `findVendorAccessory(hapPublicKey:completionHandler:)` to find out if your accessory is currently paired with HomeKit.
 
 ## Parameters
 
-- `hapPublicKey`: The HAP Long Term Public Key of the accessory. This has a length of 32 bytes. Refer to the HomeKit Accessory Protocol Specification for details.
+- `hapPublicKey`: The HAP long-term public key of the accessory with a length of 32 bytes.
+- `completion`: The block that HomeKit runs after the request completes. If HomeKit isn’t paired to a matching accessory, or if the current process doesn’t have access to the matching accessory, the completion block returns `nil` instead of an accessory. The completion block provides an error if you call `findVendorAccessory(hapPublicKey:completionHandler:)` before [`HMHomeManager`](hmhomemanager.md) can retrieve a home, such as before HomeKit calls the [`homeManagerDidUpdateHomes(_:)`](hmhomemanagerdelegate/homemanagerdidupdatehomes(_:).md) callback method.
 
 
 ---

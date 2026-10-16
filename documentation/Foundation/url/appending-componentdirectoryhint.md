@@ -26,7 +26,9 @@ A new URL that appends the specified path to the original URL.
 
 #### Discussion
 
-This method percent-encodes any path separators (`/`) in the path component before appending the component to the path. If you don’t want this encoding, use [`appending(path:directoryHint:)`](url/appending(path:directoryhint:).md) instead.
+For non-file URLs, this method percent-encodes any path separators (`/`) in the path component before appending.
+
+> **Note**: For compatibility, this method does not percent-encode any path separators (`/`) if the URL has a `file` scheme.
 
 ## Parameters
 

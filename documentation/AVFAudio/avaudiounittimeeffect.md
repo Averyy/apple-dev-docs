@@ -28,7 +28,7 @@ A time effect audio unit represents an [`AVAudioUnit`](avaudiounit.md) with a ty
 ### Creating a time effect
 - [init(audioComponentDescription: AudioComponentDescription)](avaudiounittimeeffect/init(audiocomponentdescription:).md)
   Creates a time effect audio unit with the specified description.
-### Getting and setting the time effect
+### Bypassing the time effect
 - [var bypass: Bool](avaudiounittimeeffect/bypass.md)
   The bypass state of the audio unit.
 

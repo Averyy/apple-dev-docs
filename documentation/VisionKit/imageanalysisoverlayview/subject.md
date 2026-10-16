@@ -6,7 +6,7 @@
 An area of interest in an image that the framework identifies as a primary focal point.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

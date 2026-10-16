@@ -17,7 +17,7 @@ Framework-generated metadata used for report presentation.
 ## Declaration
 
 ```swift
-var reportMetadata: [String : any Sendable]
+var reportMetadata: [String : any Sendable] { get }
 ```
 
 ## See Also

@@ -17,7 +17,7 @@ struct WindowLayoutRoot
 
 #### Overview
 
-This type acts like a proxy for the contents of the window defined by a SwiftUI [`Scene`](scene.md). The `Scene.defaultWindowPlacement(_:)` modifier receives an instance of this type, representing the contents of the window being created.
+This type acts like a proxy for the contents of the window defined by a SwiftUI [`Scene`](scene.md). The [`defaultWindowPlacement(_:)`](scene/defaultwindowplacement(_:).md) modifier receives an instance of this type, representing the contents of the window being created.
 
 Use this proxy to get information about the window’s contents, like it’s size.
 

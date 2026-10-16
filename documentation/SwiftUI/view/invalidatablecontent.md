@@ -36,7 +36,7 @@ In an interactive widget a view is invalidated from the moment the user interact
 ## See Also
 
 - [func disabled(Bool) -> some View](view/disabled(_:).md)
-  Adds a condition that controls whether users can interact with this view.
+  Adds a condition that controls whether someone can interact with this view.
 - [var isEnabled: Bool](environmentvalues/isenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows user interaction.
 - [func interactionActivityTrackingTag(String) -> some View](view/interactionactivitytrackingtag(_:).md)

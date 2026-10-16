@@ -19,6 +19,10 @@ Instantiates with a seed box.
 init(seedBox: NormalizedRect, _ revision: GenerateIterativeSegmentationRequest.Revision? = nil)
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 #### Discussion
 
 No result will be produced if the box is outside the `regionOfInterest`. By default, the `regionOfInterest` is the whole image.

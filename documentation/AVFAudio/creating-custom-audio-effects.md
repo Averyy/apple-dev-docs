@@ -309,8 +309,8 @@ Finally, in the extension’s `Info.plist` file, set the Audio Unit’s factory 
 
 ## See Also
 
-- [Audio Units](audio-units.md)
-  The data type for a plug-in component that provides audio processing or audio data generation.
+- [Audio Unit plug-ins](audio-units.md)
+  Add built-in and custom Audio Unit plug-ins to an audio engine to process, generate, and play audio.
 
 
 ---

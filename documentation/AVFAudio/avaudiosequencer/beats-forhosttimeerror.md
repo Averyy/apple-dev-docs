@@ -35,6 +35,7 @@ This call is valid when the player is in a playing state. It returns `0` with an
 - [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
 - [typealias AVBeatRange](avbeatrange-swift.typealias.md)
+  A specific time range within a music track.
 
 
 ---

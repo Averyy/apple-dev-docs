@@ -106,6 +106,8 @@ This configuration sets up an always-on IKEv2 VPN for both Cellular and Wi-Fi in
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
+- [object AccountSettings](accountsettings.md)
+  The declaration to configure account settings.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
@@ -120,8 +122,6 @@ This configuration sets up an always-on IKEv2 VPN for both Cellular and Wi-Fi in
   The declaration to configure disk management settings on the device.
 - [object ExtensibleSSO](extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
-- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
-  The declaration to configure External Intelligence Integrations settings.
 
 
 ---

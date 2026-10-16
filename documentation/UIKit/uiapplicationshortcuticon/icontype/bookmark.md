@@ -19,7 +19,7 @@ case bookmark
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934534@2x.png)
+![Bookmark quick action icon](/images/com.apple.uikit/media-2934534@2x.png)
 
 ## See Also
 

@@ -31,6 +31,7 @@ Pass this value as the length of an [`AVBeatRange`](avbeatrange-c.struct.md) to 
 - [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](avaudiosequencer/beats(forseconds:).md)
   Gets the beat position (timestamp) for the specified time in the track.
 - [typealias AVBeatRange](avbeatrange-swift.typealias.md)
+  A specific time range within a music track.
 
 
 ---

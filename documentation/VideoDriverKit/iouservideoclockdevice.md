@@ -46,9 +46,9 @@ class IOUserVideoClockDevice;
   Flags used to indicate how I/O is starting or stopping.
 ### Supporting device configuration changes
 - [PerformDeviceConfigurationChange](iouservideoclockdevice/performdeviceconfigurationchange.md)
-  The host calls this method to allow the clock device to perform a configuration change that had been previously requested via a call to the host via RequestDeviceConfigChange or a change to an IO state that requires a configuration change
+  The host calls this method to allow the clock device to perform a configuration change.
 - [AbortDeviceConfigurationChange](iouservideoclockdevice/abortdeviceconfigurationchange.md)
-  The host calls this method to tell the driver not to perform a configuration change that had been requested via a call to the Host method, RequestDeviceConfigurationChange().
+  The host calls this method to tell the driver not to perform a configuration change.
 ### Supporting sample rate changes
 - [HandleChangeSampleRate](iouservideoclockdevice/handlechangesamplerate.md)
   The system calls this virtual method when the clock device’s sample rate changes.

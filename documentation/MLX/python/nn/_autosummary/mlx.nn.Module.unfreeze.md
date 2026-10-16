@@ -51,8 +51,8 @@ submodules as well. Default: `True`.
 parameters will be unfrozen otherwise all the parameters of a
 module. For instance unfreeze all biases by calling
 `module.unfreeze(keys="bias")`.
-**strict** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `True` validate that the passed keys exist.
-Default: `False`.
+**strict** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If set to `True` validate that the passed keys
+exist. Default: `False`.
 
 Returns:
 The module instance after unfreezing the parameters.

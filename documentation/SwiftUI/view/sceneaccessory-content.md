@@ -37,7 +37,7 @@ struct RootView: View {
 }
 ```
 
-Use the `SceneAccessoryContent/onAvailabilityChange` modifier to observe a scene accessory’s system-determined availability. Observe the lifecycle of the accessory’s content using `View/onAppear`, `View/onDisappear`, and [`scenePhase`](environmentvalues/scenephase.md).
+Use the [`onAvailabilityChange(perform:)`](sceneaccessorycontent/onavailabilitychange(perform:).md) modifier to observe a scene accessory’s system-determined availability. Observe the lifecycle of the accessory’s content using [`onAppear(perform:)`](view/onappear(perform:).md), [`onDisappear(perform:)`](view/ondisappear(perform:).md), and [`scenePhase`](environmentvalues/scenephase.md).
 
 For example, you can present various controls based on the scene accessory’s current state:
 

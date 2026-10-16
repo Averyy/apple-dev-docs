@@ -6,7 +6,7 @@ Configure voices to speak strings of text.
 
 #### Overview
 
-The Speech Synthesis framework manages voice and speech synthesis, and requires two primary tasks:
+Speech synthesis in AVFAudio requires two primary tasks:
 
 Create an [`AVSpeechUtterance`](avspeechutterance.md) instance that contains the text to speak. Optionally, configure speech parameters, such as voice and rate, for each utterance.
 
@@ -49,7 +49,9 @@ Optionally, use the speech synthesizer instance to control or respond to ongoing
 ### Speech synthesis controls
 - [class AVSpeechSynthesizer](avspeechsynthesizer.md)
   An object that produces synthesized speech from text utterances and enables monitoring or controlling of ongoing speech.
-### Speech synthesis audio unit
+### Speech synthesis Audio Unit
+- [Creating a custom speech synthesizer](creating-a-custom-speech-synthesizer.md)
+  Use your custom voices to synthesize speech by building a speech synthesis provider.
 - [class AVSpeechSynthesisProviderAudioUnit](avspeechsynthesisprovideraudiounit.md)
   An object that generates speech from text.
 

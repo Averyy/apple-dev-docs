@@ -19,7 +19,7 @@ case audio
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934536@2x.png)
+![Audio quick action icon](/images/com.apple.uikit/media-2934536@2x.png)
 
 ## See Also
 

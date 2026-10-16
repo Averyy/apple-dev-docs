@@ -1,4 +1,4 @@
-# Encoder Settings
+# Encoder settings
 
 **Framework**: AVFAudio
 
@@ -6,7 +6,7 @@ The constants that define the audio encoder settings for the audio recorder clas
 
 ## Topics
 
-### Settings
+### Encoder setting keys
 - [let AVEncoderASPFrequencyKey: String](avencoderaspfrequencykey.md)
 - [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
   A constant that represents an integer from the audio quality enumeration.
@@ -20,12 +20,10 @@ The constants that define the audio encoder settings for the audio recorder clas
 
 ## See Also
 
-- [Sample Rate Conversion Settings](sample-rate-conversion-settings.md)
+- [Sample rate conversion settings](sample-rate-conversion-settings.md)
   The constants that define sample rate converter audio quality settings.
 - [enum AVAudioQuality](avaudioquality.md)
   The values that specify the sample rate audio quality for encoding and conversion.
-- [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
-  A constant that represents an integer from the audio quality enumeration.
 - [Time pitch algorithm settings](../avfoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 

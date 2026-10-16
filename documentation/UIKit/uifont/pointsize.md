@@ -19,6 +19,10 @@ The font’s point size, or the effective vertical point size for a font with a 
 var pointSize: CGFloat { get }
 ```
 
+#### Discussion
+
+For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](uifont.md).
+
 ## See Also
 
 - [var ascender: CGFloat](uifont/ascender.md)

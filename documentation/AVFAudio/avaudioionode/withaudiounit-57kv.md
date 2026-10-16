@@ -28,6 +28,13 @@ This method provides thread-safe, scoped access to the underlying AudioUnit. The
 
 - `body`: A closure that receives the AudioUnit instance
 
+## See Also
+
+- [func withAudioUnit<R, E>((borrowing AudioUnit?) throws(E) -> R) throws(E) -> R](avaudioionode/withaudiounit(_:)-6i8ld.md)
+  Provides scoped access to the I/O node’s AudioUnit
+- [var audioUnit: AudioUnit?](avaudioionode/audiounit-1bqu3.md)
+- [var audioUnit: AudioUnit?](avaudioionode/audiounit-1caha.md)
+
 
 ---
 

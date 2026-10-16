@@ -25,10 +25,10 @@ The effect of this message depends on the [`AVMusicTrack`](avmusictrack.md) dest
 
 ## Topics
 
-### Creating a Program Change Event
+### Creating a program change event
 - [init(channel: UInt32, programNumber: UInt32)](avmidiprogramchangeevent/init(channel:programnumber:).md)
   Creates a program change event with a channel and program number.
-### Configuring a Program Change Event
+### Configuring a program change event
 - [var programNumber: UInt32](avmidiprogramchangeevent/programnumber.md)
   The MIDI program number.
 

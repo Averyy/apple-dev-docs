@@ -89,7 +89,7 @@ class IOUserVideoStream;
 - [HandleChangeStreamIsActive](iouservideostream/handlechangestreamisactive.md)
   The system calls this virtual method when the stream active state changes.
 - [DeviceSampleRateChanged](iouservideostream/devicesampleratechanged.md)
-  Call to update stream formats when the owning video device changes sample rate
+  Call to update stream formats when the owning video device changes sample rate.
 ### Working with video buffers
 - [GetBufferCount](iouservideostream/getbuffercount.md)
   Returns the number of buffers in the buffer queue.

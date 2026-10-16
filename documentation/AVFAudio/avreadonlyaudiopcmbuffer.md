@@ -50,12 +50,20 @@ struct AVReadOnlyAudioPCMBuffer
 
 ## See Also
 
-- [class AVAudioBuffer](avaudiobuffer.md)
-  An object that represents a buffer of audio data with a format.
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
-  An object that represents an audio buffer you use with PCM audio formats.
 - [class AVAudioFile](avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+  An object that represents an audio buffer that you use for compressed audio formats.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
+- [class AVAudioFormat](avaudioformat.md)
+  An object that describes the representation of an audio format.
+- [class AVAudioChannelLayout](avaudiochannellayout.md)
+  An object that describes the roles of a set of audio channels.
+- [class AVAudioConverter](avaudioconverter.md)
+  An object that converts streams of audio between formats.
 - [class AVAudioTime](avaudiotime.md)
   An object you use to represent a moment in time.
 - [Audio settings](audio-settings.md)

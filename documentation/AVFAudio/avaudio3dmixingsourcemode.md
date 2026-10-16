@@ -25,7 +25,9 @@ The source mode determines how the individual channels of an input bus distribut
 
 ## Topics
 
-### Source Modes
+### Creating a source mode
+- [init?(rawValue: Int)](avaudio3dmixingsourcemode/init(rawvalue:).md)
+### Choosing a source mode
 - [AVAudio3DMixingSourceMode.spatializeIfMono](avaudio3dmixingsourcemode/spatializeifmono.md)
   A mono input bus that renders as a point source at the location of the source node.
 - [AVAudio3DMixingSourceMode.bypass](avaudio3dmixingsourcemode/bypass.md)
@@ -34,8 +36,6 @@ The source mode determines how the individual channels of an input bus distribut
   All channels of the bus render as a single source at the location of the source node.
 - [AVAudio3DMixingSourceMode.ambienceBed](avaudio3dmixingsourcemode/ambiencebed.md)
   The input channels spread around the listener as far-field sources that anchor to global space.
-### Initializers
-- [init?(rawValue: Int)](avaudio3dmixingsourcemode/init(rawvalue:).md)
 
 ## Relationships
 
@@ -49,28 +49,22 @@ The source mode determines how the individual channels of an input bus distribut
 
 ## See Also
 
-- [class AVAudioEnvironmentNode](avaudioenvironmentnode.md)
-  An object that simulates a 3D audio environment.
-- [class AVAudioEnvironmentDistanceAttenuationParameters](avaudioenvironmentdistanceattenuationparameters.md)
-  An object that specifies the amount of attenuation distance, the gradual loss in audio intensity, and other characteristics.
-- [class AVAudioEnvironmentReverbParameters](avaudioenvironmentreverbparameters.md)
-  A class that encapsulates the parameters that you use to control the reverb of the environment node class.
-- [protocol AVAudio3DMixing](avaudio3dmixing.md)
-  A collection of properties that define 3D mixing properties.
-- [struct AVAudio3DPoint](avaudio3dpoint.md)
-  A structure that represents a point in 3D space.
-- [struct AVAudio3DVectorOrientation](avaudio3dvectororientation.md)
-  A structure that represents two orthogonal vectors that describe the orientation of the listener in 3D space.
-- [struct AVAudio3DAngularOrientation](avaudio3dangularorientation.md)
-  A structure that represents the angular orientation of the listener in 3D space.
-- [enum AVAudio3DMixingRenderingAlgorithm](avaudio3dmixingrenderingalgorithm.md)
-  The types of rendering algorithms available per input bus of the environment node.
-- [enum AVAudioEnvironmentOutputType](avaudioenvironmentoutputtype.md)
-  The output types for using with the automatic 3D mixing rendering algorithm.
+- [var obstruction: Float](avaudio3dmixing/obstruction.md)
+  A value that simulates filtering of the direct path of sound due to an obstacle.
+- [var occlusion: Float](avaudio3dmixing/occlusion.md)
+  A value that simulates filtering of the direct and reverb paths of sound due to an obstacle.
+- [var position: AVAudio3DPoint](avaudio3dmixing/position.md)
+  The location of the source in the 3D environment.
+- [var rate: Float](avaudio3dmixing/rate.md)
+  A value that changes the playback rate of the input signal.
+- [var pointSourceInHeadMode: AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixing/pointsourceinheadmode.md)
+  The in-head mode for a point source.
 - [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
   The in-head modes for a point source.
-- [typealias AVAudio3DVector](avaudio3dvector.md)
-  A structure that represents a vector in 3D space, in degrees.
+- [var reverbBlend: Float](avaudio3dmixing/reverbblend.md)
+  A value that controls the blend of dry and reverb processed audio.
+- [var sourceMode: AVAudio3DMixingSourceMode](avaudio3dmixing/sourcemode.md)
+  The source mode for the input bus of the audio environment node.
 
 
 ---

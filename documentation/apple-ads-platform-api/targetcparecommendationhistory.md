@@ -55,16 +55,6 @@ The `TargetCpaRecommendationHistory` object is an immutable record that the syst
   "impression": 980000,
   "taps": 8025,
   "ttr": 0.0082,
-  "expectedInstalls": 1400,
-  "expectedSpend": {
-    "amount": "8400.00",
-    "currency": "USD"
-  },
-  "expectedTaps": 9100,
-  "expectedCPA": {
-    "amount": "6.00",
-    "currency": "USD"
-  },
   "creationTime": "2025-01-05T08:00:00.000",
   "modificationTime": "2025-01-10T08:00:00.000",
   "appliedTime": "2025-01-10T08:00:00.000",
@@ -92,10 +82,6 @@ The `TargetCpaRecommendationHistory` object is an immutable record that the syst
 - `impression` (int64): Historical impression count. Read-only.
 - `taps` (int64): Historical tap count. Read-only.
 - `ttr` (double): Historical tap-through rate. Read-only.
-- `expectedInstalls` (int64): Expected installs from the original recommendation. Read-only.
-- `expectedSpend` (RecommendationMoney): Expected spend from the original recommendation. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedTaps` (int64): Expected taps from the original recommendation. Read-only.
-- `expectedCPA` (RecommendationMoney): Expected CPA from the original recommendation. See [`Money`](recommendationmoney.md). Read-only.
 - `creationTime` (date-time): When the original recommendation was created. Read-only.
 - `modificationTime` (date-time): When this history record was last modified. Read-only.
 - `appliedTime` (date-time): When the action was taken. Read-only.

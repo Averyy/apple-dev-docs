@@ -32,6 +32,8 @@ Encoders produce a `magicCookie` object, and some decoders require it to decode 
   A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
 - [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
   The common format identifier instance.
+- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+  The format options that describe common audio formats.
 - [var settings: [String : Any]](avaudioformat/settings.md)
   A dictionary that represents the format as a dictionary using audio setting keys.
 

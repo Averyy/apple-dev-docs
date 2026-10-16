@@ -20,6 +20,9 @@ struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration
 
 ## Topics
 
+### Creating a ducking configuration
+- [init()](avaudiovoiceprocessingotheraudioduckingconfiguration/init.md)
+- [init(enableAdvancedDucking: ObjCBool, duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level)](avaudiovoiceprocessingotheraudioduckingconfiguration/init(enableadvancedducking:duckinglevel:).md)
 ### Configuring ducking
 - [var enableAdvancedDucking: ObjCBool](avaudiovoiceprocessingotheraudioduckingconfiguration/enableadvancedducking.md)
   Enables advanced ducking which ducks other audio based on the presence of voice activity from local and remote chat participants.
@@ -27,9 +30,6 @@ struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration
   The ducking level of other audio.
 - [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](avaudiovoiceprocessingotheraudioduckingconfiguration/level.md)
   Constants that define the supported ducking levels.
-### Initializers
-- [init()](avaudiovoiceprocessingotheraudioduckingconfiguration/init.md)
-- [init(enableAdvancedDucking: ObjCBool, duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level)](avaudiovoiceprocessingotheraudioduckingconfiguration/init(enableadvancedducking:duckinglevel:).md)
 
 ## Relationships
 

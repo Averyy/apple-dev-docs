@@ -34,20 +34,20 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 # mlx.nn.losses.margin_ranking_loss
 
 **class margin_ranking_loss(*inputs1: array*, *inputs2: array*, *targets: array*, *margin: float = 0.0*, *reduction: Literal['none', 'mean', 'sum'] = 'none'*)**
-: Calculate the margin ranking loss that loss given inputs \(x_1\), \(x_2\) and a label
-\(y\) (containing 1 or -1).
+: Calculate the margin ranking loss that loss given inputs \(x_1\), \(x_2\)
+and a label \(y\) (containing 1 or -1).
 The loss is given by:
 
 \[\text{loss} = \max (0, -y * (x_1 - x_2) + \text{margin})\]
-Where \(y\) represents `targets`, \(x_1\) represents `inputs1` and \(x_2\)
-represents `inputs2`.
+Where \(y\) represents `targets`, \(x_1\) represents `inputs1` and
+\(x_2\) represents `inputs2`.
 
 Parameters:
 
 **inputs1** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Scores for the first input.
 **inputs2** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Scores for the second input.
-**targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Labels indicating whether samples in `inputs1` should be ranked higher
-than samples in `inputs2`. Values should be 1 or -1.
+**targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – Labels indicating whether samples in `inputs1` should be
+ranked higher than samples in `inputs2`. Values should be 1 or -1.
 **margin** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The margin by which the scores should be separated.
 Default: `0.0`.
 **reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:

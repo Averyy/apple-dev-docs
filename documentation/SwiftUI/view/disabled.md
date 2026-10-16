@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Adds a condition that controls whether users can interact with this view.
+Adds a condition that controls whether someone can interact with this view.
 
 **Availability**:
 - iOS 13.0+
@@ -23,23 +23,36 @@ func disabled(_ disabled: Bool) -> some View
 
 #### Return Value
 
-A view that controls whether users can interact with this view.
+A view that controls whether someone can interact with this view.
 
 #### Discussion
 
-The higher views in a view hierarchy can override the value you set on this view. In the following example, the button isn’t interactive because the outer `disabled(_:)` modifier overrides the inner one:
+Add this modifier to a view to indicate whether it responds to interactions such as a tap, click, or gesture. The following example disables a [`Button`](button.md) when the Boolean value `isLoading` is `true`:
 
 ```swift
-HStack {
-    Button(Text("Press")) {}
-    .disabled(false)
+@State private var isLoading: Bool = false
+
+var body: some View {
+    Button("Load") { }
+        .disabled(isLoading)
+}
+```
+
+Add this modifier to a container, such as a [`VStack`](vstack.md), to indicate whether views in the container are currently interactive, and to override any `.disabled(_:)` modifiers you set on views within the container or view hierarchy. In the following example, the `.disabled(true)` modifier on the [`VStack`](vstack.md) disables all of the [`Button`](button.md) instances in the stack, even the button that has the modifier `.disabled(false)`.
+
+```swift
+VStack {
+    Button("One") {}
+        .disabled(false)
+    Button("Two") {}
+    Button("Three") {}
 }
 .disabled(true)
 ```
 
 ## Parameters
 
-- `disabled`: A Boolean value that determines whether users can interact with this view.
+- `disabled`: A Boolean value that determines whether someone can interact with this view.
 
 ## See Also
 

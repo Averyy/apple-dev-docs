@@ -36,7 +36,7 @@ All default retention messages require body text and header text, and may option
 - `header` (header) *(required)*: The header text of the retention message that the system displays to customers.
 - `body` (body) *(required)*: The body text of the retention message that the system displays to customers.
 - `image` (UploadMessageImage): The optional image identifier and its alternative text to appear as part of a text-based message with an image.
-- `bulletPoints` ([BulletPoint]): An optional array of bullet points.
+- `bulletPoints` ([BulletPoint]): An optional array of up to five bullet points.
 - `headerPosition` (headerPosition): The position of header text, which defaults to placing header text above the body.
 
 ## See Also

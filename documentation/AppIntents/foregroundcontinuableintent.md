@@ -22,7 +22,7 @@ protocol ForegroundContinuableIntent : AppIntent
 
 #### Overview
 
-This protocol is deprecated, please include `.foreground(.dynamic)` in the `supportedModes` of your app intent instead. For backward compatibility, you can provide conformance to this protocol in an extension, for example:
+This protocol is deprecated, please include `.foreground(.dynamic)` in the [`supportedModes`](appintent/supportedmodes.md) of your app intent instead. For backward compatibility, you can provide conformance to this protocol in an extension, for example:
 
 ```swift
 @available(*, deprecated)

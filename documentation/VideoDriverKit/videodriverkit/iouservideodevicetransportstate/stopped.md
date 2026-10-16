@@ -16,7 +16,7 @@ Stopped
 
 #### Discussion
 
-The hardware necessary for I/O should be disabled.
+In this state, disable the hardware necessary for I/O.
 
 ## See Also
 

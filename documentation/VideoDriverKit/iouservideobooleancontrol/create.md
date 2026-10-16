@@ -24,12 +24,12 @@ If you subclass [`IOUserVideoBooleanControl`](iouservideobooleancontrol.md) to o
 
 ## Parameters
 
-- `in_driver`: The [`IOUserVideoDriver`](iouservideodriver.md) that owns this object.
-- `in_is_settable`: A Boolean value indicating if the control value can be set
-- `in_control_value`: A Boolean value for the control’s current value
-- `in_control_element`: The `IOUserVideoObjectPropertyElement` for the control
-- `in_control_scope`: The `IOUserVideoObjectPropertyScope` for the control
-- `in_control_class_id`: The `IOUserVideoClassID` of the control
+- `in_driver`: The video driver that owns this object.
+- `in_is_settable`: A Boolean value that indicates whether the control value can be set.
+- `in_control_value`: A Boolean value for the control’s current value.
+- `in_control_element`: The property for the control.
+- `in_control_scope`: The scope for the control.
+- `in_control_class_id`: The class identifier of the control.
 
 ## See Also
 

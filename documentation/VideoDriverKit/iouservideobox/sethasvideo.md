@@ -18,6 +18,10 @@ kern_return_t SetHasVideo(bool in_has_video);
 
 The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 
+## Parameters
+
+- `in_has_video`: A Boolean value that indicates whether the box supports video.
+
 ## See Also
 
 - [SetHasAudio](iouservideobox/sethasaudio.md)

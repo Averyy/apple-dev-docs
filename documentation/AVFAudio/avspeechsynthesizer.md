@@ -72,6 +72,8 @@ An `AVSpeechSynthesizer` also controls the route where the speech plays. For mor
   Generates audio buffers and associated metadata for storage or further speech synthesis processing.
 - [AVSpeechSynthesizer.MarkerCallback](avspeechsynthesizer/markercallback.md)
   A type that defines a callback that receives speech markers.
+- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
+  An object that contains information about the synthesized audio.
 ### Enabling personal voices
 - [class var personalVoiceAuthorizationStatus: AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md)
   Your app’s authorization to use personal voices.

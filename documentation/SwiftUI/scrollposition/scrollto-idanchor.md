@@ -22,7 +22,7 @@ mutating func scrollTo(id: some Hashable & Sendable, anchor: UnitPoint? = nil)
 
 #### Discussion
 
-Inform the scroll view of which layout it should look for view’s with the identity value you provide using the `View/scrollTargetLayout()` modifier.
+Inform the scroll view of which layout it should look for view’s with the identity value you provide using the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier.
 
 
 ---

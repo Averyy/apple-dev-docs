@@ -1,139 +1,139 @@
 {
   "metadata": {
-    "last_updated": "2026-10-13T07:39:29.910534",
+    "last_updated": "2026-10-16T07:31:57.582481",
     "total_pages": 24,
-    "session_id": "2026-10-13T07:39:27.455581"
+    "session_id": "2026-10-16T07:31:55.514856"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/PhotoKit.json": {
-      "hash": "46e0afa62caa8bc4a5589e1dd1c345b3b8aa0f423d3c922312364b931bf65280",
-      "last_checked": "2026-10-13T07:39:27.755160",
+      "hash": "bf17fb156e06e0dabd2c1385b27ef10704c0114c862841bd4a608e734c53c64b",
+      "last_checked": "2026-10-16T07:31:55.808332",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"27f4-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"2799-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/PhotoKit.md"
     },
     "https://developer.apple.com/documentation/PhotoKit": {
-      "hash": "46e0afa62caa8bc4a5589e1dd1c345b3b8aa0f423d3c922312364b931bf65280",
-      "last_checked": "2026-10-13T07:39:27.674888",
+      "hash": "bf17fb156e06e0dabd2c1385b27ef10704c0114c862841bd4a608e734c53c64b",
+      "last_checked": "2026-10-16T07:31:55.675678",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"27f4-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"2799-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/PhotoKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/photos.json": {
       "hash": "",
-      "last_checked": "2026-10-13T07:39:28.188845",
+      "last_checked": "2026-10-16T07:31:56.184217",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/photosui.json": {
       "hash": "",
-      "last_checked": "2026-10-13T07:39:28.521829",
+      "last_checked": "2026-10-16T07:31:56.407204",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/browsing-and-modifying-photo-albums.json": {
-      "hash": "1af581174dd6f399f3879772e1852aba4d2c5253bd2809e4dcdf42fa0503816b",
-      "last_checked": "2026-10-13T07:39:28.630471",
+      "hash": "c5218fb934d4da84ea2d826f0924b4cce02ed00aa7e1e1ac73cfc30b876ac072",
+      "last_checked": "2026-10-16T07:31:56.636491",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"98dc-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"9d1e-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/browsing-and-modifying-photo-albums.md"
     },
     "https://developer.apple.com/documentation/photokit/browsing-and-modifying-photo-albums": {
-      "hash": "1af581174dd6f399f3879772e1852aba4d2c5253bd2809e4dcdf42fa0503816b",
-      "last_checked": "2026-09-15T07:29:29.275191",
+      "hash": "c5218fb934d4da84ea2d826f0924b4cce02ed00aa7e1e1ac73cfc30b876ac072",
+      "last_checked": "2026-10-16T07:31:56.636668",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.854309",
-      "etag": "\"98dc-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"9d1e-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/browsing-and-modifying-photo-albums.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/selecting-photos-and-videos-in-ios.json": {
-      "hash": "f1ac3f219a0646f1692cc62c71c7f58dd0f6c39019aaf998f5d87dfed3d37029",
-      "last_checked": "2026-10-13T07:39:28.762397",
+      "hash": "e9952e78e0471ca11a7a9aa27c6f9efef8984c1c2452f408b77c2470a89505f9",
+      "last_checked": "2026-10-16T07:31:56.765686",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"5a80-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"5c67-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/selecting-photos-and-videos-in-ios.md"
     },
     "https://developer.apple.com/documentation/photokit/selecting-photos-and-videos-in-ios": {
-      "hash": "f1ac3f219a0646f1692cc62c71c7f58dd0f6c39019aaf998f5d87dfed3d37029",
-      "last_checked": "2026-09-15T07:29:29.368528",
+      "hash": "e9952e78e0471ca11a7a9aa27c6f9efef8984c1c2452f408b77c2470a89505f9",
+      "last_checked": "2026-10-16T07:31:56.765794",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.854309",
-      "etag": "\"5a80-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"5c67-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/selecting-photos-and-videos-in-ios.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/bringing-photos-picker-to-your-swiftui-app.json": {
-      "hash": "bc05f70d9d0906d144554ca2b771704b7130f2dcd165105f15106c0da144ea4c",
-      "last_checked": "2026-10-13T07:39:28.912709",
+      "hash": "284aec8f38340e9db9054d33c1eed7ffffa37266c617879a941edd38cf111da5",
+      "last_checked": "2026-10-16T07:31:56.837799",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"53f7-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"54dd-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/bringing-photos-picker-to-your-swiftui-app.md"
     },
     "https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app": {
-      "hash": "bc05f70d9d0906d144554ca2b771704b7130f2dcd165105f15106c0da144ea4c",
-      "last_checked": "2026-09-15T07:29:29.466717",
+      "hash": "284aec8f38340e9db9054d33c1eed7ffffa37266c617879a941edd38cf111da5",
+      "last_checked": "2026-10-16T07:31:56.837914",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.854309",
-      "etag": "\"53f7-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"54dd-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/bringing-photos-picker-to-your-swiftui-app.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/implementing-an-inline-photos-picker.json": {
-      "hash": "7e9a4156e3f045142fa99f8a57849e958645dc7b7ea4b8254b960ac488418319",
-      "last_checked": "2026-10-13T07:39:29.047830",
+      "hash": "acc47b5aae97bc30c11795609619006a6e344ca03a77555589e0d651e9669c11",
+      "last_checked": "2026-10-16T07:31:56.894581",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"1c82-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"1c4e-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/implementing-an-inline-photos-picker.md"
     },
     "https://developer.apple.com/documentation/photokit/implementing-an-inline-photos-picker": {
-      "hash": "7e9a4156e3f045142fa99f8a57849e958645dc7b7ea4b8254b960ac488418319",
-      "last_checked": "2026-09-15T07:29:29.556979",
+      "hash": "acc47b5aae97bc30c11795609619006a6e344ca03a77555589e0d651e9669c11",
+      "last_checked": "2026-10-16T07:31:56.894646",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.854309",
-      "etag": "\"1c82-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"1c4e-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/implementing-an-inline-photos-picker.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/creating-a-slideshow-project-extension-for-photos.json": {
-      "hash": "3ecd9cca76c2ae01ded513eb1d6b7484489d676f31825aa2de99567a17754512",
-      "last_checked": "2026-10-13T07:39:29.220634",
+      "hash": "ce0122ed9db249ac7c6bd34d3a5a269dea9282a6caed96bbd80cfc81288662d9",
+      "last_checked": "2026-10-16T07:31:57.003162",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"7e69-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"7fd0-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/creating-a-slideshow-project-extension-for-photos.md"
     },
     "https://developer.apple.com/documentation/photokit/creating-a-slideshow-project-extension-for-photos": {
-      "hash": "3ecd9cca76c2ae01ded513eb1d6b7484489d676f31825aa2de99567a17754512",
-      "last_checked": "2026-09-15T07:29:29.656578",
+      "hash": "ce0122ed9db249ac7c6bd34d3a5a269dea9282a6caed96bbd80cfc81288662d9",
+      "last_checked": "2026-10-16T07:31:57.003283",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.854309",
-      "etag": "\"7e69-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"7fd0-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/creating-a-slideshow-project-extension-for-photos.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/delivering-an-enhanced-privacy-experience-in-your-photos-app.json": {
-      "hash": "7b3597857cd997161ea9e6cb5f27dcbe9f0e371d25416a757216fe599c1a259c",
-      "last_checked": "2026-10-13T07:39:29.343523",
+      "hash": "84c5b07cbf3e7be89e135a759ef66b73a6572a0541ec12ced295e41ae456f4c0",
+      "last_checked": "2026-10-16T07:31:57.059847",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"8fd7-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"910b-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md"
     },
     "https://developer.apple.com/documentation/photokit/delivering-an-enhanced-privacy-experience-in-your-photos-app": {
-      "hash": "7b3597857cd997161ea9e6cb5f27dcbe9f0e371d25416a757216fe599c1a259c",
-      "last_checked": "2026-09-15T07:29:29.746438",
+      "hash": "84c5b07cbf3e7be89e135a759ef66b73a6572a0541ec12ced295e41ae456f4c0",
+      "last_checked": "2026-10-16T07:31:57.059946",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.854309",
-      "etag": "\"8fd7-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"910b-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/fetching-objects-and-requesting-changes.json": {
       "hash": "36bf6bad7920086aa5814b42acbe9afeb4418f71b8ea49c255c563b4940c8d86",
-      "last_checked": "2026-10-13T07:39:29.470165",
+      "last_checked": "2026-10-16T07:31:57.147154",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
+      "session_id": "2026-10-16T07:31:55.514856",
       "etag": "\"348e-65a1bcdb0e4e0-df\"",
       "file_path": "documentation/PhotoKit/fetching-objects-and-requesting-changes.md"
     },
@@ -147,9 +147,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/loading-and-caching-assets-and-thumbnails.json": {
       "hash": "dd2de21e619ec96a3873f88ea0cd45f68223858b275bd175da6e408b0e0eebd7",
-      "last_checked": "2026-10-13T07:39:29.600960",
+      "last_checked": "2026-10-16T07:31:57.289735",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
+      "session_id": "2026-10-16T07:31:55.514856",
       "etag": "\"21c8-659029beb29c9-df\"",
       "file_path": "documentation/PhotoKit/loading-and-caching-assets-and-thumbnails.md"
     },
@@ -163,9 +163,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/displaying-live-photos.json": {
       "hash": "2ad709ce7967aed84d9932878b94cc07e35f980a55c073f0469ce16e05ef53ab",
-      "last_checked": "2026-10-13T07:39:29.732677",
+      "last_checked": "2026-10-16T07:31:57.439008",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
+      "session_id": "2026-10-16T07:31:55.514856",
       "etag": "\"5007-65a1bcdb0e4e0-df\"",
       "file_path": "documentation/PhotoKit/displaying-live-photos.md"
     },
@@ -178,19 +178,19 @@
       "file_path": "documentation/PhotoKit/displaying-live-photos.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/creating-photo-editing-extensions.json": {
-      "hash": "23cc1d4e8285041183bb194270f330680b9e553a66cac00374758a2853e9ccdc",
-      "last_checked": "2026-10-13T07:39:29.857501",
+      "hash": "7c1959fb9386b5555540c000fb418743cd82006c60c69a5982baf74e32dde559",
+      "last_checked": "2026-10-16T07:31:57.580759",
       "status": "unchanged",
-      "session_id": "2026-10-13T07:39:27.455581",
-      "etag": "\"3259-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"3218-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/creating-photo-editing-extensions.md"
     },
     "https://developer.apple.com/documentation/photokit/creating-photo-editing-extensions": {
-      "hash": "23cc1d4e8285041183bb194270f330680b9e553a66cac00374758a2853e9ccdc",
-      "last_checked": "2026-09-15T07:29:30.342352",
+      "hash": "7c1959fb9386b5555540c000fb418743cd82006c60c69a5982baf74e32dde559",
+      "last_checked": "2026-10-16T07:31:57.580853",
       "status": "unchanged",
-      "session_id": "2026-09-15T07:29:27.854309",
-      "etag": "\"3259-65a1bcdb0e4e0-df\"",
+      "session_id": "2026-10-16T07:31:55.514856",
+      "etag": "\"3218-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/creating-photo-editing-extensions.md"
     }
   }

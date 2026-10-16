@@ -2,7 +2,7 @@
 
 **Framework**: Apple Ads Platform API
 
-Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
+Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
@@ -145,15 +145,15 @@ Apply and dismiss operations return a history object rather than the original re
 ## See Also
 
 - [Suggestions Endpoints](suggestions-endpoints.md)
-  Endpoints for querying keyword, phrase, category, and Target CPA suggestions.
+  Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
 - [Managing Reports](reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 - [Insights Endpoints](insights-endpoints.md)
   Query impression share and search term popularity data for your apps.
 - [Recommendations Data Objects](recommendations-data-objects.md)
-  Request and response objects for recommendation endpoints.
+  Read budget and Target CPA recommendations and their history, and build the requests that apply them.
 - [Recommendations Query and Filter Objects](recommendations-query-filter-objects.md)
-  Query, filter, pagination, and sorting objects for recommendation requests.
+  Filter, sort, and paginate recommendation queries by status, state, and category.
 
 
 ---

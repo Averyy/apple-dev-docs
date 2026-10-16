@@ -19,9 +19,11 @@ var upperBound: Int?
 
 #### Discussion
 
-When this value is `nil`, there’s no upper bound to the person’s age range, indicating they meet or exceed your highest `ageGate`. When present, this value represents the highest `ageGate` the person is confirmed to be under.
+When this value is `nil`, there’s no upper bound to the person’s age range, indicating they meet or exceed the highest age gate specified by the `requestAgeRange(ageGates:_:_:in:)` methods (for example, [`requestAgeRange(ageGates:_:_:in:)`](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)).
 
-Use with `lowerBound` to provide age range boundaries for content decision making.
+When present, the value of this property equals the highest age gate that exceeds the person’s declared age, out of the age gates you supply to the method.
+
+Consider this property together with [`lowerBound`](agerangeservice/agerange/lowerbound.md) to gate your app’s content based on the person’s declared age range.
 
 ## See Also
 

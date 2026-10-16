@@ -21,11 +21,6 @@ static let communicationLimits: AgeRangeService.ParentalControls
 
 When this option is present, the parent or guardian has enabled communication restrictions in Screen Time on behalf of their child or teen.
 
-## See Also
-
-- [static let significantAppChangeApprovalRequired: AgeRangeService.ParentalControls](agerangeservice/parentalcontrols/significantappchangeapprovalrequired.md)
-  Indicates a notification obligation for significant app updates.
-
 
 ---
 

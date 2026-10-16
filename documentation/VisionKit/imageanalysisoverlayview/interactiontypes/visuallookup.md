@@ -6,7 +6,7 @@
 An option that presents a button for more information on any subjects the framework recognizes in the image.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

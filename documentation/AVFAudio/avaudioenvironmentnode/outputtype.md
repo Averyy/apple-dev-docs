@@ -23,6 +23,8 @@ var outputType: AVAudioEnvironmentOutputType { get set }
 
 - [var outputVolume: Float](avaudioenvironmentnode/outputvolume.md)
   The mixer’s output volume.
+- [enum AVAudioEnvironmentOutputType](avaudioenvironmentoutputtype.md)
+  The output types for using with the automatic 3D mixing rendering algorithm.
 
 
 ---

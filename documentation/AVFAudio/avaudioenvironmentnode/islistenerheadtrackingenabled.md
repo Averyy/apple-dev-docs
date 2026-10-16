@@ -24,6 +24,15 @@ To enable head tracking, your app must have the [`com.apple.developer.coremotion
 
 Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to enable head tracking with compatible AirPods.
 
+## See Also
+
+- [var listenerPosition: AVAudio3DPoint](avaudioenvironmentnode/listenerposition.md)
+  The listener’s position in the 3D environment.
+- [var listenerAngularOrientation: AVAudio3DAngularOrientation](avaudioenvironmentnode/listenerangularorientation.md)
+  The listener’s angular orientation in the environment.
+- [var listenerVectorOrientation: AVAudio3DVectorOrientation](avaudioenvironmentnode/listenervectororientation.md)
+  The listener’s vector orientation in the environment.
+
 
 ---
 

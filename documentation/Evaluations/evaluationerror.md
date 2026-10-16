@@ -33,6 +33,8 @@ do {
 ## Topics
 
 ### Enumeration Cases
+- [EvaluationError.duplicateMetricName(name:)](evaluationerror/duplicatemetricname(name:).md)
+  Two evaluators — or a single evaluator returning multiple metrics — produced a metric with the same name for the same sample.
 - [EvaluationError.missingTranscript(evaluatorType:)](evaluationerror/missingtranscript(evaluatortype:).md)
   An evaluator received a subject without the required transcript.
 

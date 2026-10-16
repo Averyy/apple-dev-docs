@@ -123,9 +123,24 @@ let request = PKIdentityRequest()
 request.descriptor = descriptor
 request.merchantIdentifier = // The merchant identifier.
 request.nonce = // The nonce your server generates.
+request.usageDescriptionKey = // The key of the message that describes the request.
 ```
 
-Your app’s `Info.plist` file needs to provide a message for the `NSIdentityUsageDescription` key. If this key is missing, any attempt to request a document fails.
+Your app’s information property list file provides the message the system displays in the consent prompt to explain the reason for your app’s request to view someone’s digital ID in Wallet. Provide a single message for the `NSIdentityUsageDescription` key, or multiple messages for different use cases with the `NSIdentityUsageDescriptionDictionary` key. For example, if your app verifies a person’s age for an alcohol delivery or verifies someone’s identity for a car rental, add a dictionary for the `NSIdentityUsageDescriptionDictionary` key. Each key in the dictionary maps to a string that describes why your app requests identity information. Then set [`usageDescriptionKey`](pkidentityrequest/usagedescriptionkey.md) to the name of the key for the message that matches the request.
+
+If you don’t have `NSIdentityUsageDescription` or `NSIdentityUsageDescriptionDictionary` in your information property list, any attempt to request a document fails. Your request also fails if [`usageDescriptionKey`](pkidentityrequest/usagedescriptionkey.md) is non-nil, but doesn’t match a key in your `NSIdentityUsageDescriptionDictionary` dictionary.
+
+```xml
+<key>NSIdentityUsageDescriptionDictionary</key>
+<dict>
+    <key>AgeVerification</key>
+    <string>Your age confirms that you're eligible to buy this item.</string>
+</dict>
+```
+
+```swift
+request.usageDescriptionKey = "AgeVerification"
+```
 
 ##### Request the Document
 

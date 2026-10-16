@@ -26,7 +26,7 @@ When exporting the `text` into different data formats, the transfer representati
 
 > **Note**: The transferable representation applies the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) in the `environment` before exporting the content.
 
-> **Note**: `View/attributedTextFormattingDefinition(_:)-uc57`, `AttributedTextValueConstraint/constrain(_:)-6cp64`
+> **Note**: [`attributedTextFormattingDefinition(_:)`](view/attributedtextformattingdefinition(_:)-81jn6.md), `AttributedTextValueConstraint/constrain(_:)-6cp64`
 
 
 ---

@@ -440,11 +440,6 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 
 ##### Javascript
 
-###### New Features
-
-- Added support for the TC39 BigInt Math proposal, exposing `Math`-equivalent methods on `BigInt` such as `BigInt.pow` and `BigInt.sqrt`. (152472996)
-- Added support for static `import defer` semantics. (176568369)
-
 ###### Resolved Issues
 
 - Fixed multiple top-level await correctness bugs with a rewrite of the ES module loader for standards compliance. (97370038)
@@ -515,7 +510,6 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Added support for setting `TextTrackCue.endTime` to `Infinity` to represent an unbounded cue duration. (71042767)
 - Added support for synchronized video playback on displays using genlock on macOS. ([`311815@main`](https://developer.apple.comhttps://commits.webkit.org/311815@main), [`312166@main`](https://developer.apple.comhttps://commits.webkit.org/312166@main))  (175197574)
 - Added support for overriding color space for hardware video decoders in WebCodecs. (178717498)
-- Added support for mapping `nextslide` and `previousslide` MediaSession actions to `nexttrack` and `previoustrack` platform commands, so pressing next/previous track invokes a registered slide handler when no direct track handler is registered. (178744268)
 
 ###### Resolved Issues
 
@@ -1219,7 +1213,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 ## See Also
 
 - [Safari 27.2 Beta Release Notes](safari-27_2-release-notes.md)
-  Released September 16, 2026 — 27.2 beta (20625.2.4)
+  Released October 13, 2026 — 27.2 beta (20625.2.8)
 
 
 ---

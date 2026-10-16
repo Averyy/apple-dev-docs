@@ -78,6 +78,12 @@ To configure the authentication method, use the following keys:
 | `LoginFrequency` | `LoginFrequency` | No | The duration, in seconds, until Platform SSO requires a full login instead of a refresh. The default value is `64800` (18 hours). The minimum value is `3600` (1 hour). A full login can involve user interaction, for example, to present a smart card or perform biometric authentication. |
 | `Policies.NonPlatformSSOAccounts` | `NonPlatformSSOAccounts` | No | Platform SSO excludes accounts listed in this key from login policies and Touch ID requirements, and doesn’t prompt them to register. |
 
+#### Define the Login Experience
+
+Platform SSO automatically uses its own login experience at FileVault unlock, at the Lock Screen, and at the login window when `AuthenticationMethod` is set to `OpenID`. It also uses its own login experience when `LoginPolicy`, `UnlockPolicy`, or `FileVaultPolicy` are set to `RequireTouchID` or `RequireTouchIDOrWatch`.
+
+You can set `AlwaysUseLoginUI` to `true` to enable the same experience for other authentication methods.
+
 #### Use Web Based Authentication
 
 Users can use web-based authentication if you set `AuthenticationMethod`, `UserCreation.NewUserAuthenticationMethods` (configuration), or `NewUserAuthenticationMethods` (profile) to `OpenID`.
@@ -87,11 +93,11 @@ Users can use web-based authentication if you set `AuthenticationMethod`, `UserC
 | `UseSharedDeviceKeys` | `UseSharedDeviceKeys` | Yes | Set to `true`. |
 | `AuthenticationMethod` | `AuthenticationMethod` | Yes | Set to `OpenID` to use web-based authentication for every login. |
 | `UserCreation.NewUserAuthenticationMethods` | `NewUserAuthenticationMethods` | No | Set to `OpenID` to use web-based authentication during Automated Device Enrollment and for on-demand account creation. |
-| `WebAuthentication.URLAllowList` | `WebLoginURLAllowList` | Yes | Provide this if `AuthenticationMethod` or `NewUserAuthenticationMethods` is set to `OpenID`. |
+| `WebAuthentication.URLAllowList` | `WebLoginURLAllowList` | Yes | Provide this key if you set `AuthenticationMethod` or `NewUserAuthenticationMethods` to `OpenID`. |
 | `Policies.FileVault` | `FileVaultPolicy` | No | Include `AllowOfflineGracePeriod` to allow fallback to local user password authentication during FileVault unlock. |
 | `Policies.Login` | `LoginPolicy` | No | Include `AllowOfflineGracePeriod` to allow fallback to local user password authentication at the login window. |
 | `Policies.Unlock` | `UnlockPolicy` | No | Include `AllowOfflineGracePeriod` to allow fallback to local user password authentication at the Lock Screen. |
-| `Policies.OfflineGracePeriod` | `OfflineGracePeriod` | No | Set this to the maximum number of days (in seconds) Platform SSO allows local user password fallback. Requires `AllowOfflineGracePeriod` in the FileVault, Lock Screen, or login window policy. |
+| `Policies.OfflineGracePeriod` | `OfflineGracePeriod` | No | Set this to the maximum number of days (in the unit of seconds) Platform SSO allows local user password fallback. Requires `AllowOfflineGracePeriod` in the FileVault, Lock Screen, or login window policy. |
 
 The SSO extension provides the initial sign-in URL of the identity provider to load during registration. Explicitly permit any URL the web view renders (including when using a static OpenID sign-in URL) using the `WebAuthentication.URLAllowList` (configuration) or `WebLoginURLAllowList` (profile) key.
 
@@ -125,7 +131,7 @@ If you configure `AuthenticationMethod` as `Password` or `UserSecureEnclaveKey`,
 | `Policies.Login` | `LoginPolicy` | No | The array can include `RequireTouchID` or `RequireTouchIDOrWatch` to require a second factor at the login window. Additionally, set `AllowOpenIDForTouchIDFallback` to allow web-based authentication as a fallback. |
 | `Policies.FileVault` | `FileVaultPolicy` | No | The array can include `RequireTouchID` or `RequireTouchIDOrWatch` to require a second factor during the FileVault unlock process. Additionally, set `AllowOpenIDForTouchIDFallback` to allow web-based authentication as a fallback. |
 | `Policies.Unlock` | `UnlockPolicy` | No | The array can include `RequireTouchID` or `RequireTouchIDOrWatch` to require a second factor at the Lock Screen. Additionally, set `AllowOpenIDForTouchIDFallback` to allow web-based authentication as a fallback. |
-| `Policies.NonPlatformSSOAccounts` | `NonPlatformSSOAccounts` | No | Accounts listed in this key are excluded from these policies. |
+| `Policies.NonPlatformSSOAccounts` | `NonPlatformSSOAccounts` | No | Platform SSO excludes accounts listed in this key from these policies. |
 
 When you configure `AuthenticationMethod` with `UserSecureEnclaveKey`, the following policies support only the values above plus `Policies.OfflineGracePeriod` (configuration) and `OfflineGracePeriod` (profile) for web-based authentication fallback:
 
@@ -180,11 +186,11 @@ If set to `Groups`, Platform SSO requests group membership from the identity pro
 | `Authorization.AdditionalGroups` | `AdditionalGroups` | No | A list of groups available to the system and apps. An entry in this array creates a group inside the local directory if the group doesn’t exist. |
 | `Authorization.AuthorizationGroups` | `AuthorizationGroups` | No | A list of access rights as the key and the identity provider group name to be associated with that access right. |
 
-During authentication, the system requests the superset of the groups from the identity provider and the login response contains the group membership for the user. Platform SSO adds the user to the groups the identity provider returns and removes the user from the rest of the groups. You can trust these group memberships for security decisions because the identity provider signs them during the login. The system doesn’t make a separate request for them and only updates group membership after user authentication.
+During authentication, the system requests the superset of the groups from the identity provider and the login response contains the group membership for the user. Platform SSO adds the user to the groups the identity provider returns and removes the user from the rest of the groups. You can trust these group memberships for security decisions because the identity provider signs them during login. The system doesn’t make a separate request for them and only updates group membership after user authentication.
 
 The groups are normal local groups on a Mac, and other processes can modify their membership. Put sufficient controls and auditing processes in place to handle unauthorized changes.
 
-> ❗ **Important**:  To help ensure good performance and proper use, Platform SSO limits the number of groups to 100. Identity providers can have lower limits. Use the groups for macOS, not for every group and every application in the organization. When using modern authentication, have each application independently request only the groups it needs.
+> ❗ **Important**:  To help ensure good performance and proper use, Platform SSO limits the number of groups to 100. Identity providers can have lower limits. Use the groups for macOS, not for every group and every app in the organization. When using modern authentication, have each app independently request only the groups it needs.
 
 #### Turn on Network Authorization
 
@@ -258,7 +264,7 @@ Tap to Login extends Authenticated Guest Mode with a faster and more convenient 
 | --- | --- | --- | --- |
 | `UserCreation.NewUserAuthenticationMethods` | `NewUserAuthenticationMethods` | Yes | Set to `AccessKey`. |
 | `AccessKey.ReaderGroupIdentifier` | `AccessKeyReaderGroupIdentifier` | Yes | The reader group identifier for use with the access key encoded as `Base64` data or `HEXData` string. The value must match the configured access key. |
-| `AccessKey.ReaderIssuerCertificateAssetReference` | `AccessKeyReaderIssuerCertificateUUID` | Yes | Set to the asset (when declarative device management is used) or `PayloadUUID` of a certificate payload containing the issuer certificate of the Terminal identity of the access key. |
+| `AccessKey.ReaderIssuerCertificateAssetReference` | `AccessKeyReaderIssuerCertificateUUID` | Yes | Set to the asset (when you use declarative device management) or `PayloadUUID` of a certificate payload containing the issuer certificate of the Terminal identity of the access key. |
 | `AccessKey.TerminalIdentityAssetReference` | `AccessKeyTerminalIdentityUUID` | Yes | Set to the asset (when declarative device management is used) or `PayloadUUID` of an identity payload to use as the Terminal identity of the access key. |
 | `AccessKey.AllowExpressMode` | `AllowAccessKeyExpressMode` | No | Set to `true` to allow use of the access key in Express Mode. |
 

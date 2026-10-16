@@ -371,6 +371,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var findContext: FindContext?](environmentvalues/findcontext.md)
 - [var fontResolutionContext: Font.Context](environmentvalues/fontresolutioncontext.md)
   Information used to resolve a font.
+- [var homeContext: HomeContext?](environmentvalues/homecontext.md)
 - [var imagePlaygroundAllowedGenerationStyles: [ImagePlaygroundStyle]](environmentvalues/imageplaygroundallowedgenerationstyles.md)
 - [var imagePlaygroundOptions: ImagePlaygroundOptions](environmentvalues/imageplaygroundoptions.md)
 - [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
@@ -378,7 +379,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var isActivityUpdateReduced: Bool](environmentvalues/isactivityupdatereduced.md)
   A Boolean value that indicates whether the Live Activity update synchronization rate is reduced.
 - [var isDynamicIslandLimitedInWidth: Bool](environmentvalues/isdynamicislandlimitedinwidth.md)
-  A Boolean value that indicates whether the Dynamic Island view displays with a limited width.
+  A Boolean value that indicates whether the Dynamic Island appears with reduced width.
 - [var isTabViewSidebarAvailable: Bool](environmentvalues/istabviewsidebaravailable.md)
   A Boolean value that indicates whether a tab sidebar is available within the content of a surrounding [`TabView`](tabview.md).
 - [var isUserAuthenticationEnabled: Bool](environmentvalues/isuserauthenticationenabled.md)
@@ -418,6 +419,8 @@ Clients of your value then access the value in the usual way, reading it with th
   The current placement of the tab bar.
 - [var tabViewBottomAccessoryPlacement: TabViewBottomAccessoryPlacement?](environmentvalues/tabviewbottomaccessoryplacement.md)
   The current placement of the tab view bottom accessory.
+- [var toolbarTitleAlignment: ToolbarTitleAlignment](environmentvalues/toolbartitlealignment.md)
+  The alignment the navigation bar resolved for its title.
 - [var windowClippingMargins: EdgeInsets3D](environmentvalues/windowclippingmargins.md)
 - [var writingToolsBehavior: WritingToolsBehavior?](environmentvalues/writingtoolsbehavior.md)
   The current Writing Tools behavior for text and text input.

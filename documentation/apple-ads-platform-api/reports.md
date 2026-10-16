@@ -88,13 +88,13 @@ The `options.includeRows` field controls which additional rows appear in the res
 - [Insights Endpoints](insights-endpoints.md)
   Query impression share and search term popularity data for your apps.
 - [Recommendations Endpoints](recommendations-endpoints.md)
-  Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
+  Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 - [Suggestions Endpoints](suggestions-endpoints.md)
-  Endpoints for querying keyword, phrase, category, and Target CPA suggestions.
+  Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
 - [Change History Endpoints](change-history-endpoints.md)
   Query audit summaries and retrieve change detail records for entities in an ad account.
 - [App Store Reports Endpoints](apps-reports-endpoints.md)
-  Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search term performance data.
+  Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
 - [Brands Reports Endpoints](brands-reports-endpoints.md)
   Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, and search terms.
 - [Apps Data Objects](apps-reports-objects.md)
@@ -102,7 +102,7 @@ The `options.includeRows` field controls which additional rows appear in the res
 - [Brands Data Objects](brands-reports-objects.md)
   Explore the request, response, and metadata objects that Brands report endpoints use.
 - [Shared Objects](reports-shared-objects.md)
-  Shared request and response objects used across Apps and Brands report endpoints.
+  Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 
 
 ---

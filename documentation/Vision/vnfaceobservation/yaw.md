@@ -23,7 +23,7 @@ var yaw: NSNumber? { get }
 
 This value indicates the rotational angle of the face around the y-axis.
 
-If the request doesn’t calculate the angle, the value is `nil.`
+If the request doesn’t calculate the angle, the value is `nil`.
 
 ## See Also
 

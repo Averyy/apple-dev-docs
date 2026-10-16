@@ -44,17 +44,20 @@ Then you can change the code for the element in the source editor and see the re
 
 #### Compare Different View Configurations
 
-Use variant mode to compare your view in different configurations side by side. For example, test how well your view supports different device orientations and text sizes for accessibility.
+Use variant mode to compare your view in different configurations side by side. For example, test how well your view supports different device orientations, text sizes for accessibility, and displays on iPhone Duo.
+
+![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro in the middle, and the canvas showing display variants on iPhone Duo on the right.](/images/com.apple.Xcode/preview-display-variants@2x.png)
 
 Click the Variant button in the lower-left corner of the canvas and choose a variant option from the pop-up menu:
 
-![A screenshot of the project window with an interface file selected in the Project navigator on the left, the source editor with a preview macro highlighted in the middle, and the canvas showing orientation variants on the right.](/images/com.apple.Xcode/preview-orientation-variants@2x.png)
-
+- **Display Variants**: Displays the different screens on the device (such as the outer and inner displays on iPhone Duo).
 - **Color Scheme Variants**: Displays light and dark appearances of your view.
 - **Contrast Variants**: Displays different contrasts of your view.
 - **Control Borders Variants**: Displays the edges and borders of interactive controls, such as buttons.
 - **Orientation Variants**: Displays your view in different portrait and landscape orientations.
 - **Dynamic Type Variants**: Displays your view in different accessibility text sizes.
+
+To show one of many variants, choose one of the menu options above and select the variant in the canvas. Then use the drop-down menu in the upper-left corner to switch between variants. To display all variants again, click the arrow on the left of the drop-down menu.
 
 #### Test Views with Different Device Settings
 

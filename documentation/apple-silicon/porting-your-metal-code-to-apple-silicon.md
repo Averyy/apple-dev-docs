@@ -6,6 +6,8 @@ Create a version of your Metal app that runs on both Apple silicon and Intel-bas
 
 #### Overview
 
+> ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference) and [`Configuring the build settings of a target`](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
+
 How you port a Metal app to a Mac with Apple silicon depends on whether your project supports Apple family GPUs. If your project supports iOS or tvOS, it also supports Apple family GPUs. If your codebase is macOS-only, you may find situations where Apple family GPUs behave differently from the GPUs in Intel-based Macs. This article describes how to port your app so it works across GPU families.
 
 Before you port your app, test run it under Rosetta translation. When you run an app linked against macOS 10.15 or earlier under Rosetta translation, Metal supports backward compatibility through software workarounds for common programming errors; these workarounds trade some GPU performance for behavior that’s more consistent with Intel-based Macs. To expedite fixing your app, this article describes common porting issues that you may encounter. For some issues, Metal doesn’t automatically apply a workaround because the performance penalty is too large. If you expect your app to run under translation, fix these issues first.

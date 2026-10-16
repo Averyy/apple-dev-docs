@@ -3,7 +3,7 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
-Static factory method to allocate and initialize an IOUserVideoBox.
+Static factory method to allocate and initialize a user video box.
 
 **Availability**:
 - DriverKit 27.0+ (Beta)
@@ -16,16 +16,17 @@ static OSSharedPtr<IOUserVideoBox> Create(IOUserVideoDriver *in_driver, bool in_
 
 #### Return Value
 
-OSSharedPtr to an IOUserVideoBox if it was successfully allocated and initialized
+A user video box if it was successfully allocated and initialized.
 
 #### Discussion
 
-If IOUserVideoBox is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
+If `IOUserVideoBox` is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 
 ## Parameters
 
-- `in_is_acquirable`: Bool value
-- `in_box_uid`: An OSString pointer for the box unique identifier
+- `in_driver`: The video driver that owns this object.
+- `in_is_acquirable`: A Boolean value that indicates whether the video box is aquirable.
+- `in_box_uid`: The box unique identifier.
 
 ## See Also
 

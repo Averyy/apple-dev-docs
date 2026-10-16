@@ -1,4 +1,4 @@
 Completed scraping CloudKit JS!
-Total pages scraped: 0
-Pages skipped (unchanged): 344
+Total pages scraped: 336
+Pages skipped (unchanged): 8
 Pages failed: 0

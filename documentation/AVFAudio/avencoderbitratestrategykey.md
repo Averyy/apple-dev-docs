@@ -22,7 +22,7 @@ let AVEncoderBitRateStrategyKey: String
 
 ## Topics
 
-### Bit Rate Strategies
+### Bit rate strategies
 - [let AVAudioBitRateStrategy_Constant: String](avaudiobitratestrategy_constant.md)
   A value that represents a constant bit rate strategy.
 - [let AVAudioBitRateStrategy_LongTermAverage: String](avaudiobitratestrategy_longtermaverage.md)

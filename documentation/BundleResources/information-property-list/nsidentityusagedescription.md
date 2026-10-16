@@ -24,6 +24,8 @@ For more information about requesting identity information, see [`Requesting ide
 
 - [NSFinancialDataUsageDescription](information-property-list/nsfinancialdatausagedescription.md)
   A message that tells people why the app is requesting access to financial data stored in Wallet.
+- [NSIdentityUsageDescriptionDictionary](information-property-list/nsidentityusagedescriptiondictionary.md)
+  A dictionary that contains messages that explain why your app is requesting identity information.
 
 
 ---

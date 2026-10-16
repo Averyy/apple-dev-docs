@@ -25,10 +25,10 @@ The effect of this message depends on the [`AVMusicTrack`](avmusictrack.md) dest
 
 ## Topics
 
-### Creating a Pressure Event
+### Creating a pressure event
 - [init(channel: UInt32, pressure: UInt32)](avmidichannelpressureevent/init(channel:pressure:).md)
   Creates a pressure event with a channel and pressure value.
-### Configuring a Pressure Event
+### Configuring a pressure event
 - [var pressure: UInt32](avmidichannelpressureevent/pressure.md)
   The MIDI channel pressure.
 

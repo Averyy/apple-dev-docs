@@ -29,9 +29,20 @@ let loader = ArrayLoader(samples: [
 ])
 ```
 
+`ArrayLoader` can also be created directly from an array literal:
+
+```swift
+let loader: ArrayLoader = [
+    ModelSample(prompt: "What is 2+2?", expected: "4"),
+    ModelSample(prompt: "What is the capital of France?", expected: "Paris"),
+]
+```
+
 ## Topics
 
 ### Initializers
+- [init(arrayLiteral: Sample...)](arrayloader/init(arrayliteral:).md)
+  Creates a loader from an array literal of samples.
 - [init(samples: [Sample])](arrayloader/init(samples:).md)
   Creates a loader backed by the given array of samples.
 ### Instance Properties
@@ -41,6 +52,7 @@ let loader = ArrayLoader(samples: [
 ## Relationships
 
 ### Conforms To
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
 - [Loader](loader.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)

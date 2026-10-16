@@ -44,6 +44,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/fft.html
 | irfft2(a[, s, axes, norm, stream]) | The inverse ofrfft2(). |
 | rfftn(a[, s, axes, norm, stream]) | n-dimensional real discrete Fourier Transform. |
 | irfftn(a[, s, axes, norm, stream]) | The inverse ofrfftn(). |
+| stft(x[, n_fft, hop_length, win_length, ...]) | Short-Time Fourier Transform. |
+| istft(stft_matrix[, n_fft, hop_length, ...]) | Inverse Short-Time Fourier Transform. |
 | fftfreq(n[, d, stream]) | Return the discrete Fourier Transform sample frequencies. |
 | rfftfreq(n[, d, stream]) | Return the discrete Fourier Transform sample frequencies for use withrfft()andirfft(). |
 | fftshift(a[, axes, stream]) | Shift the zero-frequency component to the center of the spectrum. |

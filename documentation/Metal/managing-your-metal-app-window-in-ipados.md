@@ -12,7 +12,7 @@ Apps that don’t adopt the scene-based life cycle log a warning at startup on i
 
 > ❗ **Important**: Because [`UIRequiresFullScreen`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreen) is deprecated, you can no longer opt out of iPad multitasking and dynamic resizing.
 
-For more information on migrating your iPad app, see [`TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key`](https://developer.apple.com/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key) and [`TN3187: Migrating to the UIKit scene-based life cycle`](https://developer.apple.com/documentation/technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle).
+For more information on migrating your iPad app, see [`TN3192: Migrating your app from the deprecated UIRequiresFullScreen key`](https://developer.apple.com/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key) and [`TN3187: Migrating to the UIKit scene-based life cycle`](https://developer.apple.com/documentation/technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle).
 
 #### Create the Window
 
@@ -510,7 +510,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-For more information on locking your app’s orientation, see [`TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key`](https://developer.apple.com/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key).
+For more information on locking your app’s orientation, see [`TN3192: Migrating your app from the deprecated UIRequiresFullScreen key`](https://developer.apple.com/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key).
 
 ## See Also
 

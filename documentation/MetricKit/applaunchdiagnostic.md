@@ -35,6 +35,8 @@ This captures a [`CallStackTree`](callstacktree.md) and a `launchDuration` measu
 ### Conforms To
 - [Decodable](../swift/decodable.md)
 - [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 

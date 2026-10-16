@@ -85,6 +85,8 @@ This configuration enables temporary pairing and sets an unpairing time of 6 pm.
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
+- [object AccountSettings](accountsettings.md)
+  The declaration to configure account settings.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
@@ -99,8 +101,6 @@ This configuration enables temporary pairing and sets an unpairing time of 6 pm.
   The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
-- [object IntelligenceSettings](intelligencesettings.md)
-  The declaration to configure Apple Intelligence settings.
 
 
 ---

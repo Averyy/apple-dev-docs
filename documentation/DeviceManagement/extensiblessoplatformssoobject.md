@@ -21,6 +21,8 @@ object ExtensibleSSOPlatformSSOObject
   Settings for Access Key authentication.
 - [object ExtensibleSSOPlatformSSO_AccountObject](extensiblessoplatformsso_accountobject.md)
   Account display and profile settings.
+- [object ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject](extensiblessoplatformsso_additionalhttpheadersobject.md)
+  A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
 - [object ExtensibleSSOPlatformSSO_AuthorizationObject](extensiblessoplatformsso_authorizationobject.md)
   Settings for authorization prompts and group management.
 - [object ExtensibleSSOPlatformSSO_PoliciesObject](extensiblessoplatformsso_policiesobject.md)
@@ -34,6 +36,7 @@ object ExtensibleSSOPlatformSSOObject
 
 - `AccessKey` (ExtensibleSSOPlatformSSO_AccessKeyObject): Settings for Access Key authentication.
 - `Account` (ExtensibleSSOPlatformSSO_AccountObject): Account display and profile settings.
+- `AdditionalHTTPHeaders` (ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject): A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters. Available: macOS 27.2+
 - `AllowDeviceIdentifiersInAttestation` (boolean): If `true`, the system includes the device UDID and serial number in Platform SSO attestations.
 - `AuthenticationMethod` (string): The Platform SSO authentication method to use with the extension. Requires that the SSO Extension also support the method.
 - `Authorization` (ExtensibleSSOPlatformSSO_AuthorizationObject): Settings for authorization prompts and group management.

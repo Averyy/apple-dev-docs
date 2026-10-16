@@ -21,10 +21,10 @@ struct Orientation
 
 ## Topics
 
-### Creating an Orientation
+### Creating an orientation
 - [init(rawValue: String)](avaudiosession/orientation/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
-### Getting Standard Orientations
+### Getting standard orientations
 - [static let top: AVAudioSession.Orientation](avaudiosession/orientation/top.md)
   A data source that points upward.
 - [static let bottom: AVAudioSession.Orientation](avaudiosession/orientation/bottom.md)

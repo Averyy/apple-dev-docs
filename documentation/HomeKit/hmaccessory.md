@@ -111,8 +111,16 @@ Accessories provide one or more services, represented by instances of [`HMServic
 - [var hapInstanceID: UInt64?](hmaccessory/hapinstanceid-3cusx.md)
 - [var home: HMHome?](hmaccessory/home.md)
 - [var isVendorAccessory: Bool](hmaccessory/isvendoraccessory.md)
+- [var manufacturerFeatures: [HMAccessory.ManufacturerFeature]](hmaccessory/manufacturerfeatures.md)
+  The list of manufacturer-declared extension features available for this accessory.
+### Structures
+- [HMAccessory.ManufacturerFeature](hmaccessory/manufacturerfeature.md)
+  A manufacturer-declared extension feature available for an accessory.
 ### Initializers
 - [init()](hmaccessory/init.md)
+### Instance Methods
+- [func showManufacturerExtension(for: HMAccessory.ManufacturerFeature.Kind, featureID: String?) async throws](hmaccessory/showmanufacturerextension(for:featureid:).md)
+  Presents the system-rendered UI for one manufacturer feature.
 
 ## Relationships
 

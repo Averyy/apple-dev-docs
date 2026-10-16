@@ -26,7 +26,7 @@ The `AVAudioSourceNode` class allows for supplying audio data for rendering thro
 
 ## Topics
 
-### Creating an Audio Source Node
+### Creating an audio source node
 - [typealias AVAudioSourceNodeRenderBlock](avaudiosourcenoderenderblock.md)
   A block that supplies audio data to an audio source node.
 - [init(renderBlock: AVAudioSourceNodeRenderBlock)](avaudiosourcenode/init(renderblock:).md)

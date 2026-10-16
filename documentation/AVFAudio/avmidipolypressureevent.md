@@ -21,10 +21,10 @@ class AVMIDIPolyPressureEvent
 
 ## Topics
 
-### Creating a Poly Pressure Event
+### Creating a poly pressure event
 - [init(channel: UInt32, key: UInt32, pressure: UInt32)](avmidipolypressureevent/init(channel:key:pressure:).md)
   Creates an event with a channel, MIDI key number, and a key pressure value.
-### Configuring a Poly Pressure Event
+### Configuring a poly pressure event
 - [var key: UInt32](avmidipolypressureevent/key.md)
   The MIDI key number.
 - [var pressure: UInt32](avmidipolypressureevent/pressure.md)

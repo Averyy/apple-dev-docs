@@ -1,4 +1,4 @@
 Completed scraping ClassKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 181
+Total pages scraped: 175
+Pages skipped (unchanged): 6
 Pages failed: 0

@@ -27,6 +27,8 @@ struct ContextOptions
 
 Create a [`ContextOptions`](contextoptions.md) structure when you need to bias the model’s behavior by adjusting how the model receives your prompt.
 
+When a property is `nil`, the framework defers to the underlying [`LanguageModel`](languagemodel.md) to select an appropriate value. Each model, and each version of a given model, may pick a different default, and the framework doesn’t guarantee a specific value or that the value remains stable across OS or model updates.
+
 ## Topics
 
 ### Creating context options

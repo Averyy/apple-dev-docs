@@ -21,7 +21,7 @@ class AVAudioUnitTimePitch
 
 ## Topics
 
-### Getting and setting time pitch values
+### Adjusting pitch and rate
 - [var overlap: Float](avaudiounittimepitch/overlap.md)
   The amount of overlap between segments of the input audio signal.
 - [var pitch: Float](avaudiounittimepitch/pitch.md)
@@ -45,10 +45,10 @@ class AVAudioUnitTimePitch
 
 ## See Also
 
-- [class AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
-  An object that processes audio in nonreal time.
 - [class AVAudioUnitVarispeed](avaudiounitvarispeed.md)
   An object that allows control of the playback rate.
+- [class AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
+  An object that processes audio in nonreal time.
 
 
 ---

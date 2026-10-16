@@ -2,7 +2,7 @@
 
 **Framework**: Safari Release Notes
 
-Released September 16, 2026 — 27.2 beta (20625.2.4)
+Released October 13, 2026 — 27.2 beta (20625.2.8)
 
 #### Overview
 
@@ -14,6 +14,7 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 - Fixed list, table, tree, and canvas content being omitted from the accessible name or description when the containing element is referenced by `aria-labelledby` or `aria-describedby`. (186015032)
 - Fixed VoiceOver repeating text it had already announced when a page streams content by re-rendering an `aria-live` region instead of appending to it. (186766347)
+- Fixed an issue where VoiceOver did not identify `<input type="date">`, `<input type="time">`, and `<input type="color">` controls as pop-up buttons on iOS. (187788949)
 
 ##### Animations
 
@@ -23,6 +24,10 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 ##### Css
 
+###### Resolved Issues
+
+- Fixed an issue where an anchor-positioned element inside a modal `<dialog>` could be laid out offscreen and become invisible when the page was scrolled. (187933878)
+
 ###### Deprecations
 
 - Renamed the `flow-tolerance` property to `fit-tolerance` for `display: grid-lanes`, keeping `flow-tolerance` as a deprecated alias that Web Inspector now flags. (185816680)
@@ -31,11 +36,12 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 ###### New Features
 
-- Added support for `safe` and `unsafe` overflow alignment with `normal`, and for `safe` alignment on fixed position boxes so they stay in view even when that means overflowing their `position-area`. Also, applied `safe` alignment to `::picker(select)`, which keeps base appearance `<select>` pickers fully in view. (186812035)
+- Allow combining `safe` and `unsafe` keywords with `normal` alignment, and change `safe` behavior for absolutely (and fixed positioned) boxes to keep the box within their original containing block (the viewport). Fixed an issue where a large picker for a base-appearance `<select>` could render outside the viewport, by applying `safe` alignment to keep it within its original containing block. (186812035)
+- Added `::field-content` to `<select>` to allow styling of the selected option text when `<selectedcontent>` is not provided. Updated alignment of `appearance: base-select` `<select>` buttons to more reliably vertically center its contents. Updated `appearance: base-select` `<select>` buttons to inherit `text-overflow` from the `<select>` to the selected option text. Adjusted `appearance: base-select` `<select>` buttons to use `flex: 1` rather than `::picker-icon { margin-inline-start: auto; }` to manage spacing, ensuring that the picker icon is always visible even when `<selectedcontent>` is not provided.  (187617020)
 
 ###### Resolved Issues
 
-- Fixed: Updated the default styling for `appearance: base-select` to center-align items, use `lh` units for padding, and reset all font properties on ::picker-icon and ::checkmark. (184843832)
+- Fixed: Switched default `content` for `appearance: base-select` `<select>` `::picker-icon` to render with a glyph that does not require negative margins to align correctly.  (187411081)
 
 ##### Html
 
@@ -53,9 +59,11 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 ###### Resolved Issues
 
-- Fixed `AudioContext.decodeAudioData()` failing with an `EncodingError` for valid AAC and M4A files whose file brand is not `mp4`. (183474728)
+- Fixed an issue where `AudioContext.decodeAudioData()` failed with an `EncodingError` on valid AAC/M4A audio files. (183474728)
 - Fixed video showing a black screen while audio continued to play after the video decoder was invalidated. (184041554)
 - Fixed `ManagedMediaSource` not firing the `startstreaming` event when seeking to a time that is not buffered, which could stall playback. (185166787)
+- Fixed an issue where a media element’s `play()` promise was not resolved when a `SourceBuffer` contained clear, unencrypted content. (188022510)
+- Fixed an issue where the WebCodecs `VideoEncoder` could stall and produce no output for H.264 Main and High profiles. (188201298)
 
 ##### Networking
 
@@ -74,6 +82,12 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 ###### Resolved Issues
 
 - Fixed Safari taking keyboard focus from other apps when creating tabs or capturing screenshots under Safari MCP control.  (182558329)
+
+##### Web Api
+
+###### Resolved Issues
+
+- Fixed an issue where transient activation could be incorrectly discarded, causing APIs gated on user activation (such as the Clipboard API) to fail on the first attempt. (187872193)
 
 ##### Web Extensions
 

@@ -6,8 +6,8 @@
 This value reflects the system’s preferred edge for the vertical bar in the current context, regardless of whether a vertical bar is currently visible. Use it to position custom bars or other UI relative to the system’s bar placement.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 - Mac Catalyst 27.1+
 - macOS 27.1+
 - tvOS 27.1+

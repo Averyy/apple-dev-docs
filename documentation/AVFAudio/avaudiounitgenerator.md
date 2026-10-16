@@ -25,10 +25,10 @@ A generator represents an [`AudioUnit`](https://developer.apple.com/documentatio
 
 ## Topics
 
-### Creating an audio unit generator
+### Creating an Audio Unit generator
 - [init(audioComponentDescription: AudioComponentDescription)](avaudiounitgenerator/init(audiocomponentdescription:).md)
   Creates a generator audio unit with the specified description.
-### Getting and setting the bypass status
+### Bypassing the generator
 - [var bypass: Bool](avaudiounitgenerator/bypass.md)
   The bypass state of the audio unit.
 

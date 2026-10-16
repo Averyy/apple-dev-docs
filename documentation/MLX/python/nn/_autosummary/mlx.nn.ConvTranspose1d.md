@@ -34,7 +34,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.C
 # mlx.nn.ConvTranspose1d
 
 **class ConvTranspose1d(*in_channels: int*, *out_channels: int*, *kernel_size: int*, *stride: int = 1*, *padding: int = 0*, *dilation: int = 1*, *output_padding: int = 0*, *bias: bool = True*)**
-: Applies a 1-dimensional transposed convolution over the multi-channel input sequence.
+: Applies a 1-dimensional transposed convolution over the multi-channel input
+sequence.
 The channels are expected to be last i.e. the input shape should be `NLC` where:
 
 `N` is the batch dimension

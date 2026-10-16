@@ -52,7 +52,7 @@ if (arch_cap_available) {
 
 In the guest OS, test for the availability of [`HV_MSR_IA32_ARCH_CAPABILITIES`](hv_msr_ia32_arch_capabilities.md) MSR using the `CPUID` instruction, and then read the register using the following assembly language fragment:
 
-```C
+```c
 // Check with CPUID to see if this MSR is available.
 movl $IA32_ARCH_CAPABILITIES, %ecx
 rdmsr

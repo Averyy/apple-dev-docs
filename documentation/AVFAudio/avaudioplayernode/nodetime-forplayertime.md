@@ -26,7 +26,7 @@ A node time, or `nil` if the player isn’t playing.
 
 #### Discussion
 
-For more information about this method and its inverse [`playerTime(forNodeTime:)`](avaudioplayernode/playertime(fornodetime:).md), see [`Player Timeline`](avaudioplayernode#Player-Timeline.md).
+For more information about this method and its inverse [`playerTime(forNodeTime:)`](avaudioplayernode/playertime(fornodetime:).md), see [`Player timeline`](avaudioplayernode#Player-timeline.md).
 
 ## Parameters
 

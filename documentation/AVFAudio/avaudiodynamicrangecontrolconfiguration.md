@@ -20,14 +20,14 @@ enum AVAudioDynamicRangeControlConfiguration
 
 ## Topics
 
-### Configurations
+### Creating a configuration
+- [init?(rawValue: Int)](avaudiodynamicrangecontrolconfiguration/init(rawvalue:).md)
+### Choosing a dynamic range profile
 - [AVAudioDynamicRangeControlConfiguration.capture](avaudiodynamicrangecontrolconfiguration/capture.md)
 - [AVAudioDynamicRangeControlConfiguration.movie](avaudiodynamicrangecontrolconfiguration/movie.md)
 - [AVAudioDynamicRangeControlConfiguration.music](avaudiodynamicrangecontrolconfiguration/music.md)
 - [AVAudioDynamicRangeControlConfiguration.none](avaudiodynamicrangecontrolconfiguration/none.md)
 - [AVAudioDynamicRangeControlConfiguration.speech](avaudiodynamicrangecontrolconfiguration/speech.md)
-### Initializers
-- [init?(rawValue: Int)](avaudiodynamicrangecontrolconfiguration/init(rawvalue:).md)
 
 ## Relationships
 

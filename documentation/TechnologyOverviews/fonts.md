@@ -14,7 +14,7 @@ Fonts give text its visual identity. The right font makes your interface readabl
 
 Many apps combine all three. Each framework provides font APIs suited to these categories, so use the APIs that match the framework you’re building with. Choosing the right category, and retrieving its fonts through the recommended API, results in better consistency across the system, better worldwide language support, and fewer surprises when the system evolves.
 
-> ❗ **Important**: Don’t bundle fonts that Apple ships with the system, makes available for download, or distributes through other channels like [`Apple Fonts`](https://developer.apple.comhttps://developer.apple.com/fonts), such as SF Pro, SF Compact, SF Mono, and New York.
+> ❗ **Important**: Don’t bundle fonts that Apple ships with the system, makes available for download, or distributes through other channels like [`Apple Fonts`](https://developer.apple.comhttps://developer.apple.com/fonts), such as SF Pro, SF Compact, SF Mono, and New York. To validate the fonts your app provides, see [`TN3214: Validating the fonts you ship in your app`](https://developer.apple.com/documentation/technotes/tn3214-validating-the-fonts-you-ship-in-your-app).
 
 #### Apply the System Font to the Text in Your Views
 

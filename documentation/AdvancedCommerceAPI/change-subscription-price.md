@@ -167,7 +167,7 @@ In the following request:
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/changePrice/{transactionId}`
+`POST https://api.storekit-sandbox.apple.com/advancedCommerce/v1/subscription/changePrice/{transactionId}`
 
 ## Parameters
 

@@ -23,7 +23,7 @@ The five Apps reporting entities each have a dedicated endpoint.
 
 ##### Shared Object Model
 
-Every Apps report request uses [`AppsReportingRequest`](appsreportingrequest.md) as its body. Every Apps report request must include a `campaignId` filter. Brands report requests don’t have this requirement. Each response row follows the same three-part shape:
+Every Apps report request uses [`AppsReportingRequest`](appsreportingrequest.md) as its body. Ad group, ad, keyword, and search term report requests must include a `campaignId` filter, while campaign report requests don’t. Brands report requests don’t have this requirement. Each response row follows the same three-part shape:
 
 - `metadata`: entity attributes (name, status, identifiers) plus any `groupBy` dimension value (`deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, or `countryOrRegion`, with entity-level restrictions) applied to that row. Entity-specific metadata schemas define the fields available for each entity, including [`AppsReportingCampaign`](appsreportingcampaign.md), [`AppsReportingAdGroup`](appsreportingadgroup.md), [`AppsReportingAd`](appsreportingad.md), [`ReportingKeyword`](reportingkeyword.md), and [`ReportingSearchTerm`](reportingsearchterm.md). Ad metadata nests creative details in an [`AppsReportingCreative`](appsreportingcreative.md) object rather than a flat creative ID.
 - `totalMetrics`: aggregate [`AppsMetrics`](appsmetrics.md) (or entity variant, for example, [`AppsAdGroupMetrics`](appsadgroupmetrics.md)) values for the row over the full requested date range.
@@ -101,13 +101,13 @@ For a side-by-side comparison of Apps and Brands reporting differences (groupBy 
 - [Managing Reports](reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 - [App Store Reports Endpoints](apps-reports-endpoints.md)
-  Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search term performance data.
+  Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
 - [Brands Reports Endpoints](brands-reports-endpoints.md)
   Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, and search terms.
 - [Brands Data Objects](brands-reports-objects.md)
   Explore the request, response, and metadata objects that Brands report endpoints use.
 - [Shared Objects](reports-shared-objects.md)
-  Shared request and response objects used across Apps and Brands report endpoints.
+  Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 
 
 ---

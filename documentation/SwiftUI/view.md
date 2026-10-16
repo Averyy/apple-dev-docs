@@ -99,6 +99,19 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 ### Deprecated modifiers
 - [Deprecated modifiers](view-deprecated.md)
   Review unsupported modifiers and their replacements.
+### Instance Methods
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set, alignment: Alignment?) -> some View](view/contentmargins(for:edges:alignment:).md)
+  Insets the content of this view by a content margin guide.
+- [func deviceMotionAnchor(manager: CMMotionManager, isEnabled: Bool) -> some View](view/devicemotionanchor(manager:isenabled:).md)
+  Specifies this view as the reference body for the motion manager’s device-motion calculations.
+- [func homeEmbeddedNavigationDestination<D, Content>(for: D.Type, destination: (D) -> Content) -> some View](view/homeembeddednavigationdestination(for:destination:).md)
+  Drop-in replacement for `.navigationDestination(for:)` for hosted extension content. Pair with `context.navigator.push(_:title:)` or `NavigationLink(value:)`.
+- [func locationHeadingAnchor(manager: CLLocationManager, isEnabled: Bool) -> some View](view/locationheadinganchor(manager:isenabled:).md)
+  Specifies this view as the reference body for the location manager’s heading calculations.
+- [func nearbyInteractionOriginAnchor(session: NISession, isEnabled: Bool) -> some View](view/nearbyinteractionoriginanchor(session:isenabled:).md)
+  Specifies this view as the reference body for the nearby interaction session’s angle calculations.
+- [func toolbarTitleAlignment(ToolbarTitleAlignment) -> some View](view/toolbartitlealignment(_:).md)
+  Sets the preferred alignment of the navigation bar’s title.
 
 ## Relationships
 

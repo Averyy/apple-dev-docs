@@ -6,8 +6,8 @@
 The item only supports horizontal bars. If an item only supports horizontal bars and no horizontal bars are present, the item is not shown.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 - Mac Catalyst 27.1+
 
 ## Declaration

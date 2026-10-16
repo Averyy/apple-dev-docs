@@ -43,7 +43,7 @@ You can verify the TLS handshake between your provider server and APNs by runnin
 
 The code listing below verifies the `TLS` handshake with device push notifications sandbox endpoint
 
-```Other
+```other
 $ openssl s_client -connect api.development.push.apple.com:443 -cert YourSSLCertAndPrivateKey.pem -debug 
 -showcerts -CAfile server-ca-cert.pem
 ```

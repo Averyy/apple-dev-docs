@@ -23,7 +23,7 @@ func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double = 0.5
 
 #### Discussion
 
-Use this modifier along with the modifier `View/scrollTargetLayout()` to be informed when the views in the targetted scroll view have crossed the provided threshold to be considered on/off screen.
+Use this modifier along with the modifier [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) to be informed when the views in the targetted scroll view have crossed the provided threshold to be considered on/off screen.
 
 ```swift
 ScrollView {

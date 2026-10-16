@@ -176,7 +176,7 @@ The app also prepares a customized language model that adds specialized chess te
 try await SFSpeechLanguageModel.prepareCustomLanguageModel(for: trainingData, configuration: lmConfiguration)
 ```
 
-Finally, the app asks the user for permission to record using `requestAccess(for:completionHandler:)`.
+Finally, the app asks the user for permission to record using [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/requestaccess(for:completionhandler:)).
 
 ```swift
 guard await AVCaptureDevice.requestAccess(for: .audio) else {

@@ -26,15 +26,15 @@ For more information, see [`AVAudioConverterPrimeInfo`](avaudioconverterprimeinf
 
 ## Topics
 
-### Options
+### Creating a priming method
+- [init?(rawValue: Int)](avaudioconverterprimemethod/init(rawvalue:).md)
+### Choosing a priming method
 - [AVAudioConverterPrimeMethod.pre](avaudioconverterprimemethod/pre.md)
   An option to prime with leading and trailing input frames.
 - [AVAudioConverterPrimeMethod.normal](avaudioconverterprimemethod/normal.md)
   An option to prime with trailing (zero latency) frames where the converter assumes the leading frames are silence.
 - [AVAudioConverterPrimeMethod.none](avaudioconverterprimemethod/none.md)
   An option to prime the converter assumes leading and trailing frames are silence.
-### Initializers
-- [init?(rawValue: Int)](avaudioconverterprimemethod/init(rawvalue:).md)
 
 ## Relationships
 

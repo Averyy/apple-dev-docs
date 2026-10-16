@@ -66,6 +66,8 @@ The request returns the resulting image mask in an instance of [`InstanceMaskObs
 
 ## See Also
 
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+  Generate and refine a mask that isolates an object in an image based on a person’s selection.
 - [Segmenting objects using taps, scribbles or rectangles](segmenting-objects-using-taps-scribbles-or-rectangles.md)
   Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
 - [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)

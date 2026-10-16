@@ -38,6 +38,7 @@ This method preallocates many resources the audio engine requires to start. Use 
   Resets all audio nodes in the audio engine.
 - [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
+- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
 
 
 ---

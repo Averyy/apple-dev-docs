@@ -28,6 +28,15 @@ This initializer allocates a new mutable buffer and copies all audio data from t
 
 - `readOnlyBuffer`: The read-only buffer to copy from.
 
+## See Also
+
+- [init?(pcmFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:)-5jhd5.md)
+  Creates a PCM audio buffer instance for PCM audio data.
+- [init?(pcmFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:)-9iwe7.md)
+  Creates a PCM audio buffer instance without copying samples, for PCM audio data, with a specified buffer list and a deallocator closure.
+- [convenience init(copying: AVAudioPCMBuffer)](avaudiopcmbuffer/init(copying:)-68es5.md)
+  Creates a mutable buffer by copying another PCM buffer’s audio data.
+
 
 ---
 

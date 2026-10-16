@@ -22,7 +22,9 @@ enum AVAudioCommonFormat
 
 ## Topics
 
-### Formats
+### Creating a common format
+- [init?(rawValue: UInt)](avaudiocommonformat/init(rawvalue:).md)
+### Choosing a sample format
 - [AVAudioCommonFormat.otherFormat](avaudiocommonformat/otherformat.md)
   A format other than one the enumeration specifies.
 - [AVAudioCommonFormat.pcmFormatFloat32](avaudiocommonformat/pcmformatfloat32.md)
@@ -33,8 +35,6 @@ enum AVAudioCommonFormat
   A format that represents signed 16-bit native-endian integers.
 - [AVAudioCommonFormat.pcmFormatInt32](avaudiocommonformat/pcmformatint32.md)
   A format that represents signed 32-bit native-endian integers.
-### Initializers
-- [init?(rawValue: UInt)](avaudiocommonformat/init(rawvalue:).md)
 
 ## Relationships
 
@@ -45,6 +45,19 @@ enum AVAudioCommonFormat
 - [RawRepresentable](../swift/rawrepresentable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
+
+## See Also
+
+- [var isInterleaved: Bool](avaudioformat/isinterleaved.md)
+  A Boolean value that indicates whether the samples mix into one stream.
+- [var isStandard: Bool](avaudioformat/isstandard.md)
+  A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
+- [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
+  The common format identifier instance.
+- [var settings: [String : Any]](avaudioformat/settings.md)
+  A dictionary that represents the format as a dictionary using audio setting keys.
+- [var magicCookie: Data?](avaudioformat/magiccookie.md)
+  An object that contains metadata that encoders and decoders require.
 
 
 ---

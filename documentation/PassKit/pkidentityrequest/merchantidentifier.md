@@ -29,6 +29,8 @@ Set this property before you invoke [`requestDocument(_:completion:)`](pkidentit
   The description of the document the app requests.
 - [var nonce: Data?](pkidentityrequest/nonce.md)
   An arbitrary number that the signed response playload includes.
+- [var usageDescriptionKey: String?](pkidentityrequest/usagedescriptionkey.md)
+  The key in your app’s information property list that describes the reason for an identity request.
 
 
 ---

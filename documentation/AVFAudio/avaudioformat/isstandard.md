@@ -30,6 +30,8 @@ This value returns [`true`](https://developer.apple.com/documentation/swift/true
   A Boolean value that indicates whether the samples mix into one stream.
 - [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
   The common format identifier instance.
+- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+  The format options that describe common audio formats.
 - [var settings: [String : Any]](avaudioformat/settings.md)
   A dictionary that represents the format as a dictionary using audio setting keys.
 - [var magicCookie: Data?](avaudioformat/magiccookie.md)

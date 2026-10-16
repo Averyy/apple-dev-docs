@@ -37,7 +37,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.I
 : Applies instance normalization [1] on the inputs.
 Computes
 
-\[y = \frac{x - \mathrm{E}[x]}{ \sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma + \beta,\]
+\[y = \frac{x - \mathrm{E}[x]}{ \sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma +
+\beta,\]
 where \(\gamma\) and \(\beta\) are learned per feature dimension
 parameters initialized at 1 and 0 respectively. Both are of size `dims`,
 if `affine` is `True`.
@@ -45,7 +46,8 @@ if `affine` is `True`.
 Parameters:
 
 **dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of features of the input.
-**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)) – A value added to the denominator for numerical stability. Default: `1e-5`.
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)) – A value added to the denominator for numerical stability. Default:
+`1e-5`.
 **affine** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Default: `False`.
 
 Shape:

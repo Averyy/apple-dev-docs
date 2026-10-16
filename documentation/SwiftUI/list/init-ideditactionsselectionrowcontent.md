@@ -34,7 +34,7 @@ List(
 
 Use [`deleteDisabled(_:)`](view/deletedisabled(_:).md) and [`moveDisabled(_:)`](view/movedisabled(_:).md) to disable respectively delete or move actions on a per-row basis.
 
-Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(perform:)`, or `View.swipeActions(edge:allowsFullSwipe:content:)` modifiers will override any synthesized action
+Explicit [`onDelete(perform:)`](dynamicviewcontent/ondelete(perform:).md), [`onMove(perform:)`](dynamicviewcontent/onmove(perform:).md), or [`swipeActions(edge:allowsFullSwipe:content:)`](view/swipeactions(edge:allowsfullswipe:content:).md) modifiers override any synthesized action.
 
 ## Parameters
 

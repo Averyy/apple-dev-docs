@@ -26,10 +26,10 @@ Instances of this class are immutable.
 
 ## Topics
 
-### Creating a Connection Point
+### Creating a connection point
 - [init(node: AVAudioNode, bus: AVAudioNodeBus)](avaudioconnectionpoint/init(node:bus:).md)
   Creates a connection point object.
-### Getting Connection Point Properties
+### Getting connection point properties
 - [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
   Returns connection information about a node’s input bus.
 - [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)

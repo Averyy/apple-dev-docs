@@ -1,33 +1,25 @@
-# appRefresh(_:)
+# appRefresh
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: property
 
-A task that updates your app’s state in the background for a matching identifier.
+A task that updates your app’s state in the background.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- tvOS 16.0+
-- visionOS 1.0+
 - watchOS 9.0+
 
 ## Declaration
 
 ```swift
-static func appRefresh(_ identifier: String) -> BackgroundTask<Void, Void>
+static var appRefresh: BackgroundTask<String?, Void> { get }
 ```
 
-#### Return Value
+## See Also
 
-A background task that you can handle with your app or extension.
-
-## Parameters
-
-- `identifier`: The identifier to match.
+- [static var snapshot: BackgroundTask<SnapshotData, SnapshotResponse>](backgroundtask/snapshot.md)
+  A background task used to update your app’s user interface in preparation for a snapshot.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/backgroundtask/apprefresh(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/backgroundtask/apprefresh)*

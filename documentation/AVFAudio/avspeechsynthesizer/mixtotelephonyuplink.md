@@ -36,6 +36,8 @@ This property has no effect when there isn’t an active call.
   Generates audio buffers and associated metadata for storage or further speech synthesis processing.
 - [AVSpeechSynthesizer.MarkerCallback](avspeechsynthesizer/markercallback.md)
   A type that defines a callback that receives speech markers.
+- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
+  An object that contains information about the synthesized audio.
 
 
 ---

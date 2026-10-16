@@ -28,7 +28,7 @@ Instances of this class are immutable.
 
 ## Topics
 
-### Creating a New Audio Format Representation
+### Creating an audio format
 - [init(standardFormatWithSampleRate: Double, channelLayout: AVAudioChannelLayout)](avaudioformat/init(standardformatwithsamplerate:channellayout:).md)
   Creates an audio format instance as a deinterleaved float with the specified sample rate and channel layout.
 - [init?(standardFormatWithSampleRate: Double, channels: AVAudioChannelCount)](avaudioformat/init(standardformatwithsamplerate:channels:).md)
@@ -46,13 +46,13 @@ Instances of this class are immutable.
 - [init?(formatDescription: CMAudioFormatDescription)](avaudioformat/init(formatdescription:).md)
 - [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-8rdfj.md)
   Creates an audio format instance from a Core Media audio format description.
-### Getting the Audio Stream Description
+### Getting the audio stream description
 - [var streamDescription: UnsafePointer<AudioStreamBasicDescription>](avaudioformat/streamdescription.md)
   The audio format properties of a stream of audio data.
-### Comparing Instances
+### Comparing instances
 - [func isEqual(Any) -> Bool](avaudioformat/isequal(_:).md)
   Indicates whether the audio format instance and a specified object are functionally equivalent.
-### Getting Audio Format Values
+### Getting audio format values
 - [var sampleRate: Double](avaudioformat/samplerate.md)
   The audio format sampling rate, in hertz.
 - [var channelCount: AVAudioChannelCount](avaudioformat/channelcount.md)
@@ -61,20 +61,19 @@ Instances of this class are immutable.
   The underlying audio channel layout.
 - [var formatDescription: CMAudioFormatDescription](avaudioformat/formatdescription.md)
   The audio format description to use with Core Media APIs.
-### Determining the Audio Format
+### Determining the audio format
 - [var isInterleaved: Bool](avaudioformat/isinterleaved.md)
   A Boolean value that indicates whether the samples mix into one stream.
 - [var isStandard: Bool](avaudioformat/isstandard.md)
   A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
 - [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
   The common format identifier instance.
+- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+  The format options that describe common audio formats.
 - [var settings: [String : Any]](avaudioformat/settings.md)
   A dictionary that represents the format as a dictionary using audio setting keys.
 - [var magicCookie: Data?](avaudioformat/magiccookie.md)
   An object that contains metadata that encoders and decoders require.
-### Constants
-- [enum AVAudioCommonFormat](avaudiocommonformat.md)
-  The format options that describe common audio formats.
 ### Initializers
 - [init(CMAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-2tldd.md)
 - [init?(coder: NSCoder)](avaudioformat/init(coder:).md)
@@ -97,13 +96,24 @@ Instances of this class are immutable.
 
 ## See Also
 
+- [class AVAudioFile](avaudiofile.md)
+  An object that represents an audio file that the system can open for reading or writing.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+  An object that represents an audio buffer that you use for compressed audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
 - [class AVAudioChannelLayout](avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [let AVChannelLayoutKey: String](avchannellayoutkey.md)
-- [Linear PCM Format Settings](linear-pcm-format-settings.md)
-  The audio settings that apply to linear PCM audio formats.
-- [Format Settings](format-settings.md)
-  The audio settings that apply to all audio formats that the audio player and recorder classes support.
+- [class AVAudioConverter](avaudioconverter.md)
+  An object that converts streams of audio between formats.
+- [class AVAudioTime](avaudiotime.md)
+  An object you use to represent a moment in time.
+- [Audio settings](audio-settings.md)
+  Configure audio processing settings using standard key and value constants.
 
 
 ---

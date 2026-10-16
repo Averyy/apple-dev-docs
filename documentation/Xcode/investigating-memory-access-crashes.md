@@ -30,6 +30,8 @@ Once you’ve identified that a crash report is for a memory access issue throug
 - Undefined Behavior Sanitizer
 - Thread Sanitizer
 
+For more information about these tools, see [`Diagnosing memory, thread, and crash issues early`](diagnosing-memory-thread-and-crash-issues-early.md).
+
 If your app contains code in Objective-C, C, or C++, run the static analyzer, and fix all issues it discovers. The static analyzer analyzes your app’s code at build time, and identifies common programming mistakes, including some types of memory management issues. See [`Analyze your code for potential flaws`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devb7babe820).
 
 Beyond the exception type in the crash report, other sections of the crash report may contain additional clues that suggest applying additional debugging tools. For example, if a zombie object caused the crash, telltale signs are in the crash report. See [`Check the crashed thread’s backtrace for clues about the source of the memory access issue`](investigating-memory-access-crashes#Check-the-crashed-threads-backtrace-for-clues-about-the-source-of-the-memory-access-issue.md) for information on the specific clues.

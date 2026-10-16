@@ -29,14 +29,14 @@ The output of a `AVAudioUnitSampler` is a single stereo bus.
 
 ## Topics
 
-### Configuring the Sampler Audio Unit
+### Configuring the sampler Audio Unit
 - [func loadInstrument(at: URL) throws](avaudiounitsampler/loadinstrument(at:).md)
   Configures the sampler with the specified instrument file.
 - [func loadAudioFiles(at: [URL]) throws](avaudiounitsampler/loadaudiofiles(at:).md)
   Configures the sampler by loading the specified audio files.
 - [func loadSoundBankInstrument(at: URL, program: UInt8, bankMSB: UInt8, bankLSB: UInt8) throws](avaudiounitsampler/loadsoundbankinstrument(at:program:bankmsb:banklsb:).md)
   Loads a specific instrument from the specified soundbank.
-### Getting and Setting Sampler Values
+### Getting and setting sampler values
 - [var globalTuning: Float](avaudiounitsampler/globaltuning.md)
   An adjustment for the tuning of all the played notes.
 - [var overallGain: Float](avaudiounitsampler/overallgain.md)

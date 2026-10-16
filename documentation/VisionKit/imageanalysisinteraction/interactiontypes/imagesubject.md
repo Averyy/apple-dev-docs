@@ -6,8 +6,8 @@
 An option that enables people to use a long-press gesture on a subject in an image to separate it from the background.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - visionOS 1.0+
 

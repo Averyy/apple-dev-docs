@@ -35,6 +35,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ei
 
 **einsum(*subscripts: str*, **operands*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Perform the Einstein summation convention on the operands.
+Contractions are implemented with [matmul()](mlx.core.matmul.html#mlx.core.matmul) and have the same
+requirements.
 
 Parameters:
 

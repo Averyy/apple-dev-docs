@@ -1,4 +1,4 @@
 Completed scraping Darwin Notify!
-Total pages scraped: 0
-Pages skipped (unchanged): 52
+Total pages scraped: 45
+Pages skipped (unchanged): 7
 Pages failed: 0

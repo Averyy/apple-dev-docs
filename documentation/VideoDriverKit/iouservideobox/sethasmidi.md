@@ -18,6 +18,10 @@ kern_return_t SetHasMIDI(bool in_has_midi);
 
 The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 
+## Parameters
+
+- `in_has_midi`: The box’s MIDI support.
+
 ## See Also
 
 - [SetHasAudio](iouservideobox/sethasaudio.md)

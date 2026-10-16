@@ -6,8 +6,8 @@
 Sets the preferred size constraint for an arrangement view in a split style to the ideal size of the view within its container. The arrangement view will prefer this size, but may resize to a smaller size depending on the priority of the view.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 - Mac Catalyst 27.1+
 - macOS 27.1+
 - tvOS 27.1+

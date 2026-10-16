@@ -21,7 +21,7 @@ Track budget order status, status reasons, and payment model with these enumerat
 - [Budget Orders Endpoints](budget-orders-endpoints.md)
   Create, retrieve, update, and delete budget orders through these endpoints.
 - [Budget Order Data Objects](budget-orders-data-objects.md)
-  Use these objects to build budget order requests and read their responses.
+  Build budget order and campaign assignment requests, and read budget order and invoice detail responses.
 
 
 ---

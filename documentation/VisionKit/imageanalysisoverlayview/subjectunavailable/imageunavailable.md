@@ -6,7 +6,7 @@
 An error that indicates the subject fails to produce an image.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

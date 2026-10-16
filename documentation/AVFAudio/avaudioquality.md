@@ -26,7 +26,9 @@ You use this value with [`AVEncoderAudioQualityKey`](avencoderaudioqualitykey.md
 
 ## Topics
 
-### Constants
+### Creating a quality level
+- [init?(rawValue: Int)](avaudioquality/init(rawvalue:).md)
+### Choosing a quality level
 - [AVAudioQuality.min](avaudioquality/min.md)
   A value that represents a minimum audio quality for encoding and conversion.
 - [AVAudioQuality.low](avaudioquality/low.md)
@@ -37,8 +39,6 @@ You use this value with [`AVEncoderAudioQualityKey`](avencoderaudioqualitykey.md
   A value that represents a high audio quality for encoding and conversion.
 - [AVAudioQuality.max](avaudioquality/max.md)
   A value that represents a maximum audio quality for encoding and conversion.
-### Initializers
-- [init?(rawValue: Int)](avaudioquality/init(rawvalue:).md)
 
 ## Relationships
 
@@ -52,11 +52,9 @@ You use this value with [`AVEncoderAudioQualityKey`](avencoderaudioqualitykey.md
 
 ## See Also
 
-- [Sample Rate Conversion Settings](sample-rate-conversion-settings.md)
+- [Sample rate conversion settings](sample-rate-conversion-settings.md)
   The constants that define sample rate converter audio quality settings.
-- [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
-  A constant that represents an integer from the audio quality enumeration.
-- [Encoder Settings](encoder-settings.md)
+- [Encoder settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
 - [Time pitch algorithm settings](../avfoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.

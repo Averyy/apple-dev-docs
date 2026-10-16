@@ -42,6 +42,20 @@ struct DraftMessageIntent {
 }
 ```
 
+Define a `@UnionValue` enumeration for the `destination` parameter, as in the following example, by typing the first few characters of `messages_destination` in Xcode and selecting it from the code-completion suggestions.
+
+```swift
+@UnionValue
+enum MessageDestination {
+    case people([IntentPerson])
+    case messagePerson(<#MessagePerson#>)
+    case messagePeople([<#MessagePerson#>])
+    case conversation(<#ConversationEntity#>)
+}
+```
+
+> 💡 **Tip**: Keep the cases that your app supports and remove the rest.
+
 The schema supports the following system experiences:
 
 - Siri

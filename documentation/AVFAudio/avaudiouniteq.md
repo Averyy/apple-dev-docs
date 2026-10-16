@@ -28,7 +28,7 @@ The [`AVAudioUnitEQFilterParameters`](avaudiouniteqfilterparameters.md) class en
 ### Creating an equalizer
 - [init(numberOfBands: Int)](avaudiouniteq/init(numberofbands:).md)
   Creates an audio unit equalizer object with the specified number of bands.
-### Getting and setting the equalizer values
+### Configuring equalizer bands
 - [class AVAudioUnitEQFilterParameters](avaudiouniteqfilterparameters.md)
   An object that encapsulates the parameters that the equalizer uses.
 - [var bands: [AVAudioUnitEQFilterParameters]](avaudiouniteq/bands.md)
@@ -52,14 +52,14 @@ The [`AVAudioUnitEQFilterParameters`](avaudiouniteqfilterparameters.md) class en
 
 ## See Also
 
-- [class AVAudioUnitEffect](avaudiouniteffect.md)
-  An object that processes audio in real time.
 - [class AVAudioUnitDistortion](avaudiounitdistortion.md)
   An object that implements a multistage distortion effect.
 - [class AVAudioUnitDelay](avaudiounitdelay.md)
   An object that implements a delay effect.
 - [class AVAudioUnitReverb](avaudiounitreverb.md)
   An object that implements a reverb effect.
+- [class AVAudioUnitEffect](avaudiouniteffect.md)
+  An object that processes audio in real time.
 
 
 ---

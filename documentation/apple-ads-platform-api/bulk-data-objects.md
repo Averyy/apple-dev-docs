@@ -2,10 +2,16 @@
 
 **Framework**: Apple Ads Platform API
 
-Use these objects to build bulk keyword and negative keyword requests and read their responses.
+Build bulk keyword and negative keyword requests, and read per-item results.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
+
+#### Overview
+
+Every bulk request wraps its items in an `items` array, and each item carries a client-supplied `correlationId` and a `data` object. The response returns one entry per item with the same `correlationId`, so you can match each result to its input. Create and update results return the entity. Delete results omit it and report only success or per-item errors.
+
+Request and response objects exist for create, update, and delete on both keywords and negative keywords. For endpoint behavior and partial success, see [`Bulk Operations Endpoints`](bulk-operations-endpoints.md).
 
 ## Topics
 

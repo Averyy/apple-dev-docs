@@ -21,13 +21,13 @@ enum PortOverride
 
 ## Topics
 
-### Port Override Types
+### Creating a port override
+- [init?(rawValue: UInt)](avaudiosession/portoverride/init(rawvalue:).md)
+### Choosing a port override
 - [AVAudioSession.PortOverride.none](avaudiosession/portoverride/none.md)
   A value that indicates not to override the output audio port.
 - [AVAudioSession.PortOverride.speaker](avaudiosession/portoverride/speaker.md)
   A value that indicates to override the current inputs and outputs, and route audio to the built-in speaker and microphone.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/portoverride/init(rawvalue:).md)
 
 ## Relationships
 

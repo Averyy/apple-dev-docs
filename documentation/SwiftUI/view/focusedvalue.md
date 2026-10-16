@@ -1,44 +1,39 @@
-# focusedValue(_:)
+# focusedValue(_:_:)
 
 **Framework**: SwiftUI  
 **Kind**: method
 
-Sets the focused value for the given object type.
+Modifies this view by injecting a value that you provide for use by other views whose state depends on the focused view hierarchy.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- macOS 11.0+
+- tvOS 14.0+
 - visionOS 1.0+
-- watchOS 10.0+
+- watchOS 7.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func focusedValue<T>(_ object: T?) -> some View where T : AnyObject, T : Observable
+func focusedValue<Value>(_ keyPath: WritableKeyPath<FocusedValues, Value?>, _ value: Value) -> some View
 ```
 
-## Mentions
+#### Return Value
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
-
-#### Discussion
-
-> ❗ **Important**: This initializer only accepts objects conforming to the `Observable` protocol. For reading environment objects that conform to `ObservableObject`, use `focusedObject(_:)`, instead.
-
-To read this value, use the `FocusedValue` property wrapper.
+A modified representation of this view.
 
 ## Parameters
 
-- `object`: The object to read the focus value for.
+- `keyPath`: The key path to associate `value` with when adding it to the existing table of exported focus values.
+- `value`: The focus value to export.
 
 ## See Also
 
-- [func focusedValue(_:_:)](view/focusedvalue(_:_:).md)
-  Modifies this view by injecting a value that you provide for use by other views whose state depends on the focused view hierarchy.
+- [func focusedValue<T>(T?) -> some View](view/focusedvalue(_:).md)
+  Sets the focused value for the given object type.
 - [func focusedSceneValue<T>(T?) -> some View](view/focusedscenevalue(_:).md)
   Sets the focused value for the given object type at a scene-wide scope.
 - [func focusedSceneValue(_:_:)](view/focusedscenevalue(_:_:).md)
@@ -49,4 +44,4 @@ To read this value, use the `FocusedValue` property wrapper.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/focusedvalue(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/focusedvalue(_:_:))*

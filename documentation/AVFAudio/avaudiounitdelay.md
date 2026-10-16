@@ -25,7 +25,7 @@ A delay unit delays the input signal by the specified time interval and then ble
 
 ## Topics
 
-### Getting and setting the delay values
+### Configuring the delay
 - [var delayTime: TimeInterval](avaudiounitdelay/delaytime.md)
   The time for the input signal to reach the output.
 - [var feedback: Float](avaudiounitdelay/feedback.md)
@@ -51,14 +51,14 @@ A delay unit delays the input signal by the specified time interval and then ble
 
 ## See Also
 
-- [class AVAudioUnitEffect](avaudiouniteffect.md)
-  An object that processes audio in real time.
 - [class AVAudioUnitEQ](avaudiouniteq.md)
   An object that implements a multiband equalizer.
 - [class AVAudioUnitDistortion](avaudiounitdistortion.md)
   An object that implements a multistage distortion effect.
 - [class AVAudioUnitReverb](avaudiounitreverb.md)
   An object that implements a reverb effect.
+- [class AVAudioUnitEffect](avaudiouniteffect.md)
+  An object that processes audio in real time.
 
 
 ---

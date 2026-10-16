@@ -19,7 +19,7 @@ case markLocation
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934519@2x.png)
+![Mark Location icon](/images/com.apple.uikit/media-2934519@2x.png)
 
 ## See Also
 

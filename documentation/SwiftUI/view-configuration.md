@@ -36,7 +36,7 @@ Many modifiers apply to specific kinds of views or behaviors, but some apply mor
   The visibility of a UI element, chosen automatically based on the platform, current context, and other factors.
 ### Managing view interaction
 - [func disabled(Bool) -> some View](view/disabled(_:).md)
-  Adds a condition that controls whether users can interact with this view.
+  Adds a condition that controls whether someone can interact with this view.
 - [var isEnabled: Bool](environmentvalues/isenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows user interaction.
 - [func interactionActivityTrackingTag(String) -> some View](view/interactionactivitytrackingtag(_:).md)

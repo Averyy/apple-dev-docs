@@ -1,7 +1,7 @@
-# authorizationStatus()
+# authorizationStatus
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: property
 
 **Availability**:
 - iOS 27.2+ (Beta)
@@ -13,10 +13,10 @@
 ## Declaration
 
 ```swift
-class func authorizationStatus() -> CMAuthorizationStatus
+class var authorizationStatus: CMAuthorizationStatus { get }
 ```
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmmotionmanager/authorizationstatus())*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmmotionmanager/authorizationstatus)*

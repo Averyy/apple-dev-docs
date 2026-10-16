@@ -68,8 +68,8 @@ The `assetsByDevice` map is the primary structure for accessing locale media.
 ## Properties
 
 - `adamId` (int64): The app’s Adam ID. The unique App Store identifier for the promoted object. Used as promotedObjectId when creating a campaign.
-- `language` (string): The language identifier, for example, en.
-- `languageCode` (string): The BCP-47 language code, for example, en-US.
+- `language` (string): The language identifier, usually an ISO 639-1 code, for example, en. Not every ISO 639-1 code is supported, and some values come from other standards, such as yue (ISO 639-3).
+- `languageCode` (string): The BCP-47 language code with a region or script subtag, for example, en-US or zh-Hans.
 - `appName` (string): The localized application display name as it appears on the App Store.
 - `subTitle` (string): The app subtitle for the locale.
 - `promotionalText` (string): The promotional text for the locale. Max 170 characters.

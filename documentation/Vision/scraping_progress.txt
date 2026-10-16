@@ -1,4 +1,4 @@
 Completed scraping Vision!
-Total pages scraped: 0
-Pages skipped (unchanged): 1865
+Total pages scraped: 1793
+Pages skipped (unchanged): 73
 Pages failed: 0

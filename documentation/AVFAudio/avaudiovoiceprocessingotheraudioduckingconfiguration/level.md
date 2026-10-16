@@ -20,7 +20,9 @@ enum Level
 
 ## Topics
 
-### Ducking levels
+### Creating a ducking level
+- [init?(rawValue: Int)](avaudiovoiceprocessingotheraudioduckingconfiguration/level/init(rawvalue:).md)
+### Choosing a ducking level
 - [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.default](avaudiovoiceprocessingotheraudioduckingconfiguration/level/default.md)
   The default ducking level for typical voice chat.
 - [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.max](avaudiovoiceprocessingotheraudioduckingconfiguration/level/max.md)
@@ -29,8 +31,6 @@ enum Level
   Applies medium ducking to other audio.
 - [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.min](avaudiovoiceprocessingotheraudioduckingconfiguration/level/min.md)
   Applies minimum ducking to other audio.
-### Initializers
-- [init?(rawValue: Int)](avaudiovoiceprocessingotheraudioduckingconfiguration/level/init(rawvalue:).md)
 
 ## Relationships
 

@@ -18,6 +18,10 @@ kern_return_t SetScalarValue(float in_scalar);
 
 Changing the scalar level value will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 
+## Parameters
+
+- `in_scalar`: The scalar level value.
+
 ## See Also
 
 - [SetDecibelValue](iouservideolevelcontrol/setdecibelvalue.md)

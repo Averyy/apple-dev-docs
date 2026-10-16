@@ -26,15 +26,19 @@ Look through the available domains in [`App schema domains`](app-schema-domains.
 
 An app can adopt schemas from multiple domains. For example, a houseplant-journaling app can adopt schemas from the [`Notes`](app-schema-domain-notes.md) domain, which has schemas that create new notes and update existing notes. It can also adopt schemas from the [`Photos`](app-schema-domain-photos.md) domain, which has a wide variety of intents, including those for opening, editing, and deleting photo assets.
 
-Only apply schemas for actions and content that genuinely match the domain’s intended purpose. The following domains require that your app supports every schema in the group:
+Only apply schemas for actions and content that genuinely match the domain’s intended purpose.
 
-- [`Mail`](app-schema-domain-mail.md)
+Some schemas belong to a *use-case group*, a set of related schemas that share a single purpose. To integrate your app with Apple Intelligence and bring it to Siri AI, adopt all the schemas in a group. For example, the [`Mail`](app-schema-domain-mail.md) has a use-case group for composing email that includes a [`draft`](appschema/mailentity/draft.md) entity and intents to create, save, update, and send a draft.
+
+The following domains include one or more use-case groups of schemas:
+
+- [`Audio`](app-schema-domain-audio.md)
 - [`Clock`](app-schema-domain-clock.md)
+- [`Mail`](app-schema-domain-mail.md)
+- [`Maps`](app-schema-domain-maps.md)
 - [`Messages`](app-schema-domain-messages.md)
 
-In other words, if you decide to support one schema in those domains, you need to adopt them all.
-
-> **Note**: Xcode notifies you at build time when you need to support additional schemas in a group.
+> **Note**: Xcode reports a build warning for each missing schema in a use-case group that your app partially supports.
 
 #### Support a Schema By Creating a New Type
 
@@ -148,7 +152,7 @@ If your app already has a type that matches a schema’s purpose, add the approp
 - [`AppEntity(schema:)`](appentity(schema:).md) for entities
 - [`AppEnum(schema:)`](appenum(schema:).md) for enumerations
 
-The macro generates protocol conformance and validates that your type satisfies the schema’s requirements. If your type is missing a required property, Xcode generates an error at build time with a Fix-It that adds it for you. The macro produces the same conformance regardless of whether the type is new or existing.
+The macro generates protocol conformance and validates that your type satisfies the schema’s requirements. If your type is missing a required property, Xcode generates an error at build time. The macro produces the same conformance regardless of whether the type is new or existing.
 
 > 💡 **Tip**: Increase the number of ways people can interact with your app through Apple Intelligence by adopting optional schemas that fit the app’s capabilities.
 

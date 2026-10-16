@@ -63,13 +63,11 @@ When a campaign frequently exhausts its daily budget, `DailyCapRecommendation` p
   "impression": 50000,
   "taps": 2500,
   "ttr": 0.05,
-  "expectedImpressions": 60000,
   "expectedInstalls": 600,
   "expectedSpend": {
     "amount": "2700.00",
     "currency": "USD"
   },
-  "expectedTaps": 3000,
   "expectedCpa": {
     "amount": "4.50",
     "currency": "USD"
@@ -101,10 +99,8 @@ When a campaign frequently exhausts its daily budget, `DailyCapRecommendation` p
 - `impression` (int64): Historical impression count. Read-only.
 - `taps` (int64): Historical tap count. Read-only.
 - `ttr` (double): Historical tap-through rate. Read-only.
-- `expectedImpressions` (int64): The estimated impressions you could see over a seven-day period after applying a recommendation, based on historical data. Read-only.
 - `expectedInstalls` (int64): The estimated installs you could see over a seven-day period after applying a recommendation, based on historical data. Read-only.
 - `expectedSpend` (RecommendationMoney): The estimated amount you could spend over a seven-day period after applying a recommendation, based on historical data. See [`Money`](money.md). Read-only.
-- `expectedTaps` (int64): The estimated taps you could see over a seven-day period after applying a recommendation, based on historical data. Read-only.
 - `expectedCpa` (RecommendationMoney): The estimated average cost-per-acquisition you could see over a seven-day period after applying a recommendation, based on historical data. See [`Money`](money.md). Read-only.
 - `creationTime` (date-time): When the recommendation was created. Read-only.
 - `modificationTime` (date-time): When the recommendation was last modified. Read-only.

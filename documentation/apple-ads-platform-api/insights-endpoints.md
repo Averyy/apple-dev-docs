@@ -83,9 +83,9 @@ The response always returns all dimension fields: `countryOrRegion`, `genre`, `s
 - [Managing Reports](reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 - [Recommendations Endpoints](recommendations-endpoints.md)
-  Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
+  Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 - [Suggestions Endpoints](suggestions-endpoints.md)
-  Endpoints for querying keyword, phrase, category, and Target CPA suggestions.
+  Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
 - [Insights Data Objects](insights-data-objects.md)
   Build the request and response objects for impression share and search term popularity queries.
 

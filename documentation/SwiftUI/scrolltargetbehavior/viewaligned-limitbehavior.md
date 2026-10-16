@@ -38,9 +38,9 @@ ScrollView(.horizontal) {
 .padding(.horizontal, 20.0)
 ```
 
-You configure which views should be used for settling using the `View/scrollTargetLayout()` modifier. Apply this modifier to a layout container like [`LazyVStack`](lazyvstack.md) or [`HStack`](hstack.md) and each individual view in that layout will be considered for alignment.
+You configure which views should be used for settling using the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier. Apply this modifier to a layout container like [`LazyVStack`](lazyvstack.md) or [`HStack`](hstack.md) and each individual view in that layout will be considered for alignment.
 
-You can customize whether the view aligned behavior limits the number of views that can be scrolled at a time by using the `ViewAlignedScrollTargetBehavior.LimitBehavior` type. Provide a value of `ViewAlignedScrollTargetBehavior.LimitBehavior/always` to always have the behavior only allow a few views to be scrolled at a time.
+You can customize whether the view aligned behavior limits the number of views that can be scrolled at a time by using the [`ViewAlignedScrollTargetBehavior.LimitBehavior`](viewalignedscrolltargetbehavior/limitbehavior.md) type. Provide a value of [`always`](viewalignedscrolltargetbehavior/limitbehavior/always.md) to always have the behavior only allow a few views to be scrolled at a time.
 
 By default, the view aligned behavior limits the number of views it scrolls when in a compact horizontal size class when scrollable in the horizontal axis, when in a compact vertical size class when scrollable in the vertical axis, and otherwise doesn’t impose any limit on the number of views that can be scrolled.
 

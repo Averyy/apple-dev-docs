@@ -41,7 +41,8 @@ regularization. ICLR 2019.
 
 \[\begin{split}m_{t+1} &= \beta_1 m_t + (1 - \beta_1) g_t \\
 v_{t+1} &= \beta_2 v_t + (1 - \beta_2) g_t^2 \\
-w_{t+1} &= w_t - \alpha (\frac{m_{t+1}}{\sqrt{v_{t+1}} + \epsilon} + \lambda w_t)\end{split}\]
+w_{t+1} &= w_t - \alpha (\frac{m_{t+1}}{\sqrt{v_{t+1}} + \epsilon} + \lambda
+w_t)\end{split}\]
 
 Parameters:
 

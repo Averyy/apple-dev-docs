@@ -43,7 +43,8 @@ their scales (`self.weight` is quantized and `self.scales` is provided).
 **Train**: The weights are stored in higher precision and are quantized onthe fly during computation so that gradients with respect to the weights
 can be computed.
 
-To switch between the two cases, use `layer.eval()` and `layer.train()` respectively.
+To switch between the two cases, use `layer.eval()` and `layer.train()`
+respectively.
 Compared to the [mlx.nn.QuantizedLinear](mlx.nn.QuantizedLinear.html#mlx.nn.QuantizedLinear) layer, this layer
 quantizes the input as well and includes weights in gradient computations.
 [QQLinear](#mlx.nn.QQLinear) also provides the class method `from_linear()` to

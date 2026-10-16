@@ -16,11 +16,11 @@ enum IOUserVideoFormatFlags : uint32_t;
 
 #### Overview
 
-These are the standard flags for use in the `mFormatFlags` field of the `VideoStreamBasicDescription` structure.
+These are the standard flags for use in the `mFormatFlags` field of the [`IOUserVideoStreamBasicDescription`](videodriverkit/iouservideostreambasicdescription.md) structure.
 
-Typically, when an ASBD is being used, the fields describe the complete layout of the sample data in the buffers that are represented by this description - where typically those buffers are represented by an VideoBuffer that is contained in an VideoBufferList.
+Typically, when a VSBD is being used, the fields describe the complete layout of the sample data in the buffers that are represented by this description - where typically those buffers are represented by a video buffer that is contained in a video buffer list.
 
-However, when an ASBD has the [`FormatFlagIsNonInterleaved`](videodriverkit/iouservideoformatflags/formatflagisnoninterleaved.md) flag, the video buffer list has a different structure and semantic. In this case, the ASBD fields describe the format of oneof the video buffersthat are contained in the list, and each video buffer in the list is determined to have a single (mono) channel of audio data. Then, the ASBD’s `mChannelsPerFrame` indicates the total number of buffers that are contained within the video buffer list - where each buffer contains one channel. This is used primarily with the `VideoUnit` (and `VideoConverter`) representation of this list - and won’t be found in the `VideoHardware` usage of this structure.
+However, when a VSBD has the [`FormatFlagIsNonInterleaved`](videodriverkit/iouservideoformatflags/formatflagisnoninterleaved.md) flag, the video buffer list has a different structure and semantic. In this case, the VSBD fields describe the format of one of the video buffers that are contained in the list, and each video buffer in the list is determined to have a single (mono) channel of audio data. Then, the VSBD’s `mChannelsPerFrame` indicates the total number of buffers that are contained within the video buffer list - where each buffer contains one channel. This is used primarily with the `VideoUnit` (and `VideoConverter`) representation of this list - and won’t be found in the `VideoHardware` usage of this structure.
 
 ## Topics
 

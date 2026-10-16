@@ -21,10 +21,10 @@ class AVMIDIPitchBendEvent
 
 ## Topics
 
-### Creating a Pitch Bend Event
+### Creating a pitch bend event
 - [init(channel: UInt32, value: UInt32)](avmidipitchbendevent/init(channel:value:).md)
   Creates an event with a channel and pitch bend value.
-### Configuring a Pitch Bend Event
+### Configuring a pitch bend event
 - [var value: UInt32](avmidipitchbendevent/value.md)
   The value of the pitch bend event.
 

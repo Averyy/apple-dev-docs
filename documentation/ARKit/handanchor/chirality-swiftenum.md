@@ -24,7 +24,7 @@ enum Chirality
   A right hand.
 ### Instance Properties
 - [var description: String](handanchor/chirality-swift.enum/description.md)
-  A textual representation of HandAnchor.Chirality
+  A textual representation of HandAnchor.Chirality.
 
 ## Relationships
 

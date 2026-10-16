@@ -21,6 +21,8 @@ Configure devices using declarative device management.
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
+- [object AccountSettings](accountsettings.md)
+  The declaration to configure account settings.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)

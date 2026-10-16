@@ -3,6 +3,8 @@
 **Framework**: VideoDriverKit  
 **Kind**: method
 
+Initializes a video object.
+
 **Availability**:
 - DriverKit 27.0+ (Beta)
 
@@ -18,9 +20,7 @@ True on success.
 
 #### Discussion
 
-Initializes a IOUserVideoObject.
-
-Always pass in the IOUserVideoDriver.  init() will always return false;
+Always pass in the `IOUserVideoDriver`; calling `init()` always returns false.
 
 ## Parameters
 

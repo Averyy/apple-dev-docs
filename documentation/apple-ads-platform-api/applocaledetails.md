@@ -62,8 +62,8 @@ The `AppLocaleDetails` object represents the localized metadata and asset groupi
 ## Properties
 
 - `adamId` (int64): App Store identifier for the app.
-- `language` (string): Language identifier (for example, `"en"`).
-- `languageCode` (string): BCP-47 language code (for example, `"en-US"`).
+- `language` (string): Language identifier, usually an ISO 639-1 code (for example, `"en"`). Not every ISO 639-1 code is supported, and some values come from other standards, such as `yue` (ISO 639-3).
+- `languageCode` (string): BCP-47 language code with a region or script subtag (for example, `"en-US"`, `"zh-Hans"`).
 - `isPrimaryLocale` (boolean): True if this locale’s `languageCode` matches the app’s primary language.
 - `appName` (string): Localized app name.
 - `subTitle` (string): Localized app subtitle.

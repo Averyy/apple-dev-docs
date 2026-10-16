@@ -22,7 +22,7 @@ var sampleRateConverterAlgorithm: String? { get set }
 
 ## Topics
 
-### Algorithms
+### Sample rate algorithms
 - [let AVSampleRateConverterAlgorithm_Normal: String](avsamplerateconverteralgorithm_normal.md)
   The usual encoder bit rate strategy.
 - [let AVSampleRateConverterAlgorithm_MinimumPhase: String](avsamplerateconverteralgorithm_minimumphase.md)

@@ -19,7 +19,7 @@ case time
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934528@2x.png)
+![Clock icon](/images/com.apple.uikit/media-2934528@2x.png)
 
 ## See Also
 

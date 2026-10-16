@@ -22,6 +22,7 @@ struct HMError
 ## Topics
 
 ### Obtaining error information
+- [static var errorDomain: String](hmerror/errordomain.md)
 - [let HMErrorDomain: String](hmerrordomain.md)
   A string that identifies the HomeKit error domain.
 ### Detecting accessory errors
@@ -259,9 +260,7 @@ struct HMError
 - [HMError.Code](hmerror/code.md)
   Possible error values that can be returned from HomeKit APIs.
 ### Type Properties
-- [static var errorDomain: String](hmerror/errordomain.md)
 - [static var homeUpgradeRequired: HMError.Code](hmerror/homeupgraderequired.md)
-- [static var nfcReaderTooHot: HMError.Code](hmerror/nfcreadertoohot.md)
 
 ## Relationships
 

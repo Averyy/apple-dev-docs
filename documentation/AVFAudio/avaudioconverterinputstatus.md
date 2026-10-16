@@ -22,15 +22,15 @@ enum AVAudioConverterInputStatus
 
 ## Topics
 
-### Status Options
+### Creating an input status
+- [init?(rawValue: Int)](avaudioconverterinputstatus/init(rawvalue:).md)
+### Reporting input status
 - [AVAudioConverterInputStatus.endOfStream](avaudioconverterinputstatus/endofstream.md)
   A status that indicates you’re at the end of an audio stream.
 - [AVAudioConverterInputStatus.haveData](avaudioconverterinputstatus/havedata.md)
   A status that indicates the normal case where you supply data to the converter.
 - [AVAudioConverterInputStatus.noDataNow](avaudioconverterinputstatus/nodatanow.md)
   A status that indicates you’re out of data.
-### Initializers
-- [init?(rawValue: Int)](avaudioconverterinputstatus/init(rawvalue:).md)
 
 ## Relationships
 

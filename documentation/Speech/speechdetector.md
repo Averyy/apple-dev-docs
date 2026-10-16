@@ -55,6 +55,9 @@ try await analyzer.setModules([transcriber, speechDetector])
   Allows clients to customize an instance of a speech detector.
 - [SpeechDetector.SensitivityLevel](speechdetector/sensitivitylevel.md)
   Determines how “aggressive” the voice activity detection (VAD) model will be.
+### Checking audio format support
+- [var availableCompatibleAudioFormats: [AVAudioFormat]](speechmodule/availablecompatibleaudioformats.md)
+  The audio formats that this module is able to analyze, given its configuration.
 ### Getting results
 - [var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error>](speechdetector/results.md)
   The asynchronous sequence of speech detection results.

@@ -22,13 +22,16 @@ enum AVAudioUnitDistortionPreset
 
 ## Topics
 
-### Presets
+### Creating a distortion preset
+- [init?(rawValue: Int)](avaudiounitdistortionpreset/init(rawvalue:).md)
+### Choosing a drum preset
 - [AVAudioUnitDistortionPreset.drumsBitBrush](avaudiounitdistortionpreset/drumsbitbrush.md)
   A preset that represents a bit brush drums distortion.
 - [AVAudioUnitDistortionPreset.drumsBufferBeats](avaudiounitdistortionpreset/drumsbufferbeats.md)
   A preset that represents a buffer beat drums distortion.
 - [AVAudioUnitDistortionPreset.drumsLoFi](avaudiounitdistortionpreset/drumslofi.md)
   A preset that represents a low fidelity drums distortion.
+### Choosing a multi-effect preset
 - [AVAudioUnitDistortionPreset.multiBrokenSpeaker](avaudiounitdistortionpreset/multibrokenspeaker.md)
   A preset that represents a broken speaker distortion.
 - [AVAudioUnitDistortionPreset.multiCellphoneConcert](avaudiounitdistortionpreset/multicellphoneconcert.md)
@@ -57,6 +60,7 @@ enum AVAudioUnitDistortionPreset
   A preset that represents a variant of a tight echo distortion.
 - [AVAudioUnitDistortionPreset.multiEverythingIsBroken](avaudiounitdistortionpreset/multieverythingisbroken.md)
   A preset that represents an everything-is-broken distortion.
+### Choosing a speech preset
 - [AVAudioUnitDistortionPreset.speechAlienChatter](avaudiounitdistortionpreset/speechalienchatter.md)
   A preset that represents an alien chatter distortion.
 - [AVAudioUnitDistortionPreset.speechCosmicInterference](avaudiounitdistortionpreset/speechcosmicinterference.md)
@@ -67,8 +71,6 @@ enum AVAudioUnitDistortionPreset
   A preset that represents a radio tower distortion.
 - [AVAudioUnitDistortionPreset.speechWaves](avaudiounitdistortionpreset/speechwaves.md)
   A preset that represents a speech wave distortion.
-### Initializers
-- [init?(rawValue: Int)](avaudiounitdistortionpreset/init(rawvalue:).md)
 
 ## Relationships
 

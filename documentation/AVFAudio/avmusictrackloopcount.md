@@ -22,11 +22,11 @@ enum AVMusicTrackLoopCount
 
 ## Topics
 
-### Elements
+### Creating a loop count
+- [init?(rawValue: Int)](avmusictrackloopcount/init(rawvalue:).md)
+### Looping indefinitely
 - [AVMusicTrackLoopCount.forever](avmusictrackloopcount/forever.md)
   A track that loops forever.
-### Initializers
-- [init?(rawValue: Int)](avmusictrackloopcount/init(rawvalue:).md)
 
 ## Relationships
 

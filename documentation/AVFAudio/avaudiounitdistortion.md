@@ -26,7 +26,7 @@ class AVAudioUnitDistortion
   Configures the audio distortion unit by loading a distortion preset.
 - [enum AVAudioUnitDistortionPreset](avaudiounitdistortionpreset.md)
   Constants that represent preset audio distortions.
-### Getting and setting the distortion values
+### Adjusting gain and mix
 - [var preGain: Float](avaudiounitdistortion/pregain.md)
   The gain that the audio unit applies to the signal before distortion, in decibels.
 - [var wetDryMix: Float](avaudiounitdistortion/wetdrymix.md)
@@ -48,14 +48,14 @@ class AVAudioUnitDistortion
 
 ## See Also
 
-- [class AVAudioUnitEffect](avaudiouniteffect.md)
-  An object that processes audio in real time.
 - [class AVAudioUnitEQ](avaudiouniteq.md)
   An object that implements a multiband equalizer.
 - [class AVAudioUnitDelay](avaudiounitdelay.md)
   An object that implements a delay effect.
 - [class AVAudioUnitReverb](avaudiounitreverb.md)
   An object that implements a reverb effect.
+- [class AVAudioUnitEffect](avaudiouniteffect.md)
+  An object that processes audio in real time.
 
 
 ---

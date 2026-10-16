@@ -17,6 +17,13 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [CHHapticError.Code](chhapticerror/code.md)
+  Error codes for framework operations.
+- [Error Constants](error-constants.md)
+  Error code constants for framework operations.
+
 
 ---
 

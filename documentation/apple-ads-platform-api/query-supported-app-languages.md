@@ -14,7 +14,7 @@ This endpoint returns a list of countries and regions along with the languages s
 
 Use this endpoint to:
 
-- Validate locale codes before setting them on creatives or ad groups.
+- Validate locale codes before setting them on creatives or ad groups. The API supports only a subset of ISO 639-1 languages, so treat this response as the source of truth for valid values.
 - Populate country/language selection UI in campaign setup workflows.
 - Confirm which languages are available when expanding campaigns into new markets.
 
@@ -39,8 +39,8 @@ Each result row includes the following fields:
 | `countryCode` | string | ISO 3166-1 alpha-2 code (for example, `US`) |
 | `adsSupportedLanguages` | array | All language/locale combinations eligible for Apple Ads creatives and targeting in this market |
 | `adsDefaultLanguages` | array | The default language(s) used when no explicit locale is specified |
-| `adsSupportedLanguages[].language` | string | Language identifier (for example, `en`, `es`, `fr`) |
-| `adsSupportedLanguages[].languageCode` | string | Full locale code (for example, `en-US`, `es-US`) |
+| `adsSupportedLanguages[].language` | string | Language identifier, usually an ISO 639-1 code (for example, `en`, `es`, `fr`). Can be another standard, such as `yue` (ISO 639-3) |
+| `adsSupportedLanguages[].languageCode` | string | BCP-47 locale code with a region or script subtag (for example, `en-US`, `es-MX`, `zh-Hans`) |
 
 #### Payload Examples
 
@@ -112,7 +112,11 @@ POST /v1/metadata/apps/supported-languages/query
        },
        {
          "language": "es",
-         "languageCode": "es-US"
+         "languageCode": "es-MX"
+       },
+       {
+         "language": "zh",
+         "languageCode": "zh-Hans"
        }
      ],
      "adsDefaultLanguages": [
@@ -166,7 +170,11 @@ POST /v1/metadata/apps/supported-languages/query
        },
        {
          "language": "es",
-         "languageCode": "es-US"
+         "languageCode": "es-MX"
+       },
+       {
+         "language": "zh",
+         "languageCode": "zh-Hans"
        }
      ],
      "adsDefaultLanguages": [
@@ -275,7 +283,11 @@ POST /v1/metadata/apps/supported-languages/query
        },
        {
          "language": "es",
-         "languageCode": "es-US"
+         "languageCode": "es-MX"
+       },
+       {
+         "language": "zh",
+         "languageCode": "zh-Hans"
        }
      ],
      "adsDefaultLanguages": [

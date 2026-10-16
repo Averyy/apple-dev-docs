@@ -6,7 +6,7 @@
 The set of all subjects the framework identifies in an image.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

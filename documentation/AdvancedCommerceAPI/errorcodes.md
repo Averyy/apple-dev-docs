@@ -120,7 +120,6 @@ Error messages and codes for the Advanced Commerce API.
 - [object RateLimitExceededError](ratelimitexceedederror.md)
 - [object RefundAmountWithoutCustomError](refundamountwithoutcustomerror.md)
 - [object RemovalAllNotAllowedError](removalallnotallowederror.md)
-- [object RemoveAllItemsNotAllowedError](removeallitemsnotallowederror.md)
 - [object RemoveItemNotFoundError](removeitemnotfounderror.md)
 - [object RemoveItemsWithoutAddOrChangeItemsError](removeitemswithoutaddorchangeitemserror.md)
 - [object RepeatedRequestReferenceIdError](repeatedrequestreferenceiderror.md)

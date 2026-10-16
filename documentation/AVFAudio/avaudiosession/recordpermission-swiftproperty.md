@@ -30,7 +30,7 @@ Returns one of three status values:
 
 ## Topics
 
-### Data Types
+### Permission states
 - [AVAudioSession.RecordPermission](avaudiosession/recordpermission-swift.enum.md)
   The values that define the current state of the record permission request.
 

@@ -78,7 +78,7 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 - [object SubscriptionReactivateInAppRequest](subscriptionreactivateinapprequest.md)
   The request your app provides to reactivate a subscription that has automatic renewal turned off.
 - [object SubscriptionReactivateItem](subscriptionreactivateitem.md)
-  An item in a subscription to reactive.
+  An item in a subscription to reactivate.
 ### Subscription price change from the server
 - [Change Subscription Price](change-subscription-price.md)
   Increase or decrease the price of an auto-renewable subscription, a bundle, or individual items within a subscription at the next renewal.

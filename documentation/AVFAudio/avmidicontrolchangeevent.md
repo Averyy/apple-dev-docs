@@ -21,10 +21,10 @@ class AVMIDIControlChangeEvent
 
 ## Topics
 
-### Creating a Control Change Event
+### Creating a control change event
 - [init(channel: UInt32, messageType: AVMIDIControlChangeEvent.MessageType, value: UInt32)](avmidicontrolchangeevent/init(channel:messagetype:value:).md)
   Creates an event with a channel, control change type, and a value.
-### Inspecting a Control Change Event
+### Inspecting a control change event
 - [var value: UInt32](avmidicontrolchangeevent/value.md)
   The value of the control change event.
 - [var messageType: AVMIDIControlChangeEvent.MessageType](avmidicontrolchangeevent/messagetype-swift.property.md)

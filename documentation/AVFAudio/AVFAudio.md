@@ -43,13 +43,34 @@ Play, record, and process audio; configure your app’s system audio behavior.
   An object that records audio data to a file.
 - [class AVMIDIPlayer](avmidiplayer.md)
   An object that plays MIDI data through a system sound module.
+### Audio data
+- [class AVAudioFile](avaudiofile.md)
+  An object that represents an audio file that the system can open for reading or writing.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+  An object that represents an audio buffer that you use for compressed audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
+- [class AVAudioFormat](avaudioformat.md)
+  An object that describes the representation of an audio format.
+- [class AVAudioChannelLayout](avaudiochannellayout.md)
+  An object that describes the roles of a set of audio channels.
+- [class AVAudioConverter](avaudioconverter.md)
+  An object that converts streams of audio between formats.
+- [class AVAudioTime](avaudiotime.md)
+  An object you use to represent a moment in time.
+- [Audio settings](audio-settings.md)
+  Configure audio processing settings using standard key and value constants.
 ### Advanced audio processing
-- [Audio Engine](audio-engine.md)
+- [Audio engine](audio-engine.md)
   Perform advanced real-time and offline audio processing, implement 3D spatialization, and work with MIDI and samplers.
 ### Speech synthesis
 - [Speech synthesis](speech-synthesis.md)
   Configure voices to speak strings of text.
-### Macros
+### Preprocessor macros
 - [Macros](macros.md)
 
 

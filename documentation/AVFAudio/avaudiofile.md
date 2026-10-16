@@ -28,7 +28,7 @@ Reads and writes are always sequential. Random access is possible by setting the
 
 ## Topics
 
-### Creating an Audio File
+### Creating an audio file
 - [init(forReading: URL) throws](avaudiofile/init(forreading:).md)
   Opens a file for reading using the standard, deinterleaved floating point format.
 - [init(forReading: URL, commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](avaudiofile/init(forreading:commonformat:interleaved:).md)
@@ -37,15 +37,19 @@ Reads and writes are always sequential. Random access is possible by setting the
   Opens a file for writing using the specified settings.
 - [init(forWriting: URL, settings: [String : Any], commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](avaudiofile/init(forwriting:settings:commonformat:interleaved:).md)
   Opens a file for writing using a specified processing format and settings.
-### Reading and Writing the Audio Buffer
+- [init()](avaudiofile/init.md)
+### Reading and writing audio
 - [func read(into: AVAudioPCMBuffer) throws](avaudiofile/read(into:).md)
   Reads an entire audio buffer.
 - [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](avaudiofile/read(into:framecount:).md)
   Reads a portion of an audio buffer using the number of frames you specify.
 - [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](avaudiofile/read(framecount:).md)
+- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:)-6qgec.md)
+  Writes an audio buffer sequentially.
+- [func write(from: AVReadOnlyAudioPCMBuffer) throws](avaudiofile/write(from:)-4zfhf.md)
 - [func close()](avaudiofile/close.md)
   Closes the audio file.
-### Getting Audio File Properties
+### Getting audio file properties
 - [var url: URL](avaudiofile/url.md)
   The location of the audio file.
 - [var fileFormat: AVAudioFormat](avaudiofile/fileformat.md)
@@ -64,11 +68,6 @@ Reads and writes are always sequential. Random access is possible by setting the
   A string that indicates the audio file type.
 - [var isOpen: Bool](avaudiofile/isopen.md)
   A Boolean value that indicates whether the file is open.
-### Initializers
-- [init()](avaudiofile/init.md)
-### Instance Methods
-- [func write(from: AVReadOnlyAudioPCMBuffer) throws](avaudiofile/write(from:)-4zfhf.md)
-- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:)-6qgec.md)
 
 ## Relationships
 
@@ -86,12 +85,20 @@ Reads and writes are always sequential. Random access is possible by setting the
 
 ## See Also
 
-- [class AVAudioBuffer](avaudiobuffer.md)
-  An object that represents a buffer of audio data with a format.
 - [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
   An object that represents an audio buffer you use with PCM audio formats.
+- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+  An object that represents an audio buffer that you use for compressed audio formats.
 - [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
   A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
+- [class AVAudioFormat](avaudioformat.md)
+  An object that describes the representation of an audio format.
+- [class AVAudioChannelLayout](avaudiochannellayout.md)
+  An object that describes the roles of a set of audio channels.
+- [class AVAudioConverter](avaudioconverter.md)
+  An object that converts streams of audio between formats.
 - [class AVAudioTime](avaudiotime.md)
   An object you use to represent a moment in time.
 - [Audio settings](audio-settings.md)

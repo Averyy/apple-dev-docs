@@ -2,10 +2,16 @@
 
 **Framework**: Apple Ads Platform API
 
-Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search term performance data.
+Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
+
+#### Overview
+
+All five endpoints share one `POST` query structure. Each request takes a `timeRange`, `filters`, and `sorting`, and returns rows with total and granular metrics. Ad group, ad, keyword, and search term reports require a `campaignId` filter.
+
+For the shared request objects, see [`Shared Objects`](reports-shared-objects.md). For the full reporting overview, see [`Managing Reports`](reports.md).
 
 ## Topics
 
@@ -31,7 +37,7 @@ Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search t
 - [Brands Data Objects](brands-reports-objects.md)
   Explore the request, response, and metadata objects that Brands report endpoints use.
 - [Shared Objects](reports-shared-objects.md)
-  Shared request and response objects used across Apps and Brands report endpoints.
+  Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 
 
 ---

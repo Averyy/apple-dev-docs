@@ -1,4 +1,4 @@
 Completed scraping MarketplaceKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 187
+Total pages scraped: 183
+Pages skipped (unchanged): 4
 Pages failed: 0

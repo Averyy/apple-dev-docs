@@ -2,10 +2,16 @@
 
 **Framework**: Apple Ads Platform API
 
-Endpoints for creating, retrieving, updating, and deleting keywords.
+Create, retrieve, update, query, and delete the keywords that match your ad group’s ads to searches.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
+
+#### Overview
+
+Keywords bid on search terms for an ad group, and a keyword’s match type controls which searches it matches. Negative keywords do the opposite and suppress your ads for searches you exclude. See [`Negative Keywords Endpoints`](negative-keywords-endpoints.md).
+
+Use these endpoints to manage keywords one at a time. For match types and bid behavior, see [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md). To change many keywords in one request, see [`Bulk Operations Endpoints`](bulk-operations-endpoints.md).
 
 ## Topics
 
@@ -25,13 +31,13 @@ Endpoints for creating, retrieving, updating, and deleting keywords.
 - [Managing Keywords and Negative Keywords](keywords-and-negative-keywords.md)
   Create and manage keywords and negative keywords for ad groups and campaigns.
 - [Negative Keywords Endpoints](negative-keywords-endpoints.md)
-  Endpoints for creating, retrieving, updating, and deleting negative keywords.
+  Create, retrieve, update, query, and delete negative keywords that block ads for unwanted searches.
 - [Keywords Data Objects](keywords-data-objects.md)
-  Request, response, and data objects for managing keywords in ad group campaigns.
+  Build keyword create and update requests, and read keyword responses and query results.
 - [Negative Keywords Data Objects](negative-keywords-objects.md)
-  Request and response objects for negative keyword endpoints.
+  Build negative keyword create and update requests, and read responses and query results.
 - [Keywords Shared Data Types](keywords-shared-data-types.md)
-  Shared enumerations used by keyword and negative keyword objects.
+  Set the status and match type of keywords and negative keywords, and interpret a keyword’s display status.
 
 
 ---

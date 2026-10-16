@@ -34,7 +34,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.C
 # mlx.nn.ConvTranspose2d
 
 **class ConvTranspose2d(*in_channels: int*, *out_channels: int*, *kernel_size: int | tuple*, *stride: int | tuple = 1*, *padding: int | tuple = 0*, *dilation: int | tuple = 1*, *output_padding: int | tuple = 0*, *bias: bool = True*)**
-: Applies a 2-dimensional transposed convolution over the multi-channel input image.
+: Applies a 2-dimensional transposed convolution over the multi-channel input
+image.
 The channels are expected to be last i.e. the input shape should be `NHWC` where:
 
 `N` is the batch dimension

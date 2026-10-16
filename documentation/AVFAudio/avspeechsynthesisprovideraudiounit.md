@@ -41,8 +41,6 @@ The system scans and loads voices for audio unit extensions of this type, and th
   A type that represents the method for sending marker information to the host.
 - [var speechSynthesisOutputMetadataBlock: AVSpeechSynthesisProviderOutputBlock?](avspeechsynthesisprovideraudiounit/speechsynthesisoutputmetadatablock.md)
   A block that subclasses use to send marker information to the host.
-- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
-  An object that contains information about the synthesized audio.
 ### Getting and setting voices
 - [var speechVoices: [AVSpeechSynthesisProviderVoice]](avspeechsynthesisprovideraudiounit/speechvoices.md)
   A list of voices the audio unit provides to the system.
@@ -63,6 +61,11 @@ The system scans and loads voices for audio unit extensions of this type, and th
 - [Equatable](../swift/equatable.md)
 - [Hashable](../swift/hashable.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+
+## See Also
+
+- [Creating a custom speech synthesizer](creating-a-custom-speech-synthesizer.md)
+  Use your custom voices to synthesize speech by building a speech synthesis provider.
 
 
 ---

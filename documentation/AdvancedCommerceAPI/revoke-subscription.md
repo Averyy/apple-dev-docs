@@ -26,7 +26,7 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Can
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/revoke/{transactionId}`
+`POST https://api.storekit-sandbox.apple.com/advancedCommerce/v1/subscription/revoke/{transactionId}`
 
 ## Parameters
 

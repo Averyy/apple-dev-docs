@@ -3,7 +3,7 @@
 **Framework**: VideoDriverKit  
 **Kind**: typealias
 
-A block that tells the device to perform an IOUserVideoIOOperation.
+A block that tells the device to perform a video IO operation.
 
 **Availability**:
 - DriverKit 27.0+ (Beta)
@@ -16,11 +16,11 @@ typedef int (^)(unsigned int, unsigned int, unsigned int, unsigned long long, un
 
 #### Discussion
 
-See also `IOUserVideoDevice::SetIOOperationHandler`.
+See also [`SetIOOperationHandler`](iouservideodevice/setiooperationhandler.md).
 
 ## Parameters
 
-- `in_device`: The object identifier of the device that is performing the IO operation
+- `in_device`: The object identifier of the device that is performing the IO operation.
 - `in_io_operation`: The operation that is being performed.
 - `in_io_buffer_frame_size`: The number of sample frames that will be processed in the IO operation. For some operations, this is different from the nominal buffer frame size.
 - `in_sample_time`: A sample time that indicates the position in the device’s timeline for the operation’s data.

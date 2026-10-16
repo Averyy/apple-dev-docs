@@ -70,7 +70,7 @@ This version 3 class is bridged to the version 2 `kAudioUnitProperty_ElementCoun
 
 ## See Also
 
-- [Creating an audio unit extension](../avfaudio/creating-an-audio-unit-extension.md)
+- [Creating an Audio Unit extension](../avfaudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
 - [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.

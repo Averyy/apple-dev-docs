@@ -20,6 +20,10 @@ An object that processes one or more image-analysis requests pertaining to a sin
 final class ImageRequestHandler
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 #### Overview
 
 Instantiate this handler to perform Vision requests on a single image. You specify the image, and then call [`perform(_:)`](imagerequesthandler/perform(_:)-7b6g5.md) to begin executing the request.

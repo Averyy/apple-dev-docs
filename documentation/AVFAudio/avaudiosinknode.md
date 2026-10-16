@@ -32,7 +32,7 @@ An audio sink node doesn’t support manual rendering mode, and doesn’t have a
 
 ## Topics
 
-### Creating an Audio Sink Node
+### Creating an audio sink node
 - [typealias AVAudioSinkNodeReceiverBlock](avaudiosinknodereceiverblock.md)
   A block that receives audio data from an audio sink node.
 - [init(receiverBlock: AVAudioSinkNodeReceiverBlock)](avaudiosinknode/init(receiverblock:).md)

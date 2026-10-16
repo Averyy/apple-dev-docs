@@ -16,7 +16,9 @@ enum SoundStageSize
 
 ## Topics
 
-### Sound stage sizes
+### Creating a sound stage size
+- [init?(rawValue: Int)](avaudiosession/soundstagesize/init(rawvalue:).md)
+### Choosing a sound stage size
 - [AVAudioSession.SoundStageSize.automatic](avaudiosession/soundstagesize/automatic.md)
   The system sets the sound stage size.
 - [AVAudioSession.SoundStageSize.small](avaudiosession/soundstagesize/small.md)
@@ -25,8 +27,6 @@ enum SoundStageSize
   A medium sound stage.
 - [AVAudioSession.SoundStageSize.large](avaudiosession/soundstagesize/large.md)
   A large sound stage.
-### Initializers
-- [init?(rawValue: Int)](avaudiosession/soundstagesize/init(rawvalue:).md)
 
 ## Relationships
 

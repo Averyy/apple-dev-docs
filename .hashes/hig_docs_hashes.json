@@ -445,9 +445,9 @@
     "last_updated": "2026-08-14T07:56:44.337682"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/carplay.json": {
-    "hash": "43217c5e00bb622952b8a87c44567cb4da97a54f5c0cdc77d87002d7d972f025",
+    "hash": "dc117bec51f3640caeaf3366db647315cc6bc410b5f173f98422d974a0d8a844",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/carplay.md",
-    "last_updated": "2026-08-14T07:56:44.508473"
+    "last_updated": "2026-10-16T08:45:24.315511"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/healthkit.json": {
     "hash": "167f4502dd7300cd75289b483896fb640bce50700b0173925daae0a5ae2d676e",
@@ -820,9 +820,9 @@
     "last_updated": "2026-08-14T07:56:57.212802"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/live-activities.json": {
-    "hash": "875ece0756e4f0ee8c2704c69d39c5bccdf6c933a3009f1987b3992bbaac3055",
+    "hash": "aacf4e43be0ed88906d473b33ef29c3a88b44ea76ad36c62d4cb392d66dcac28",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/live-activities.md",
-    "last_updated": "2026-08-14T07:56:57.324473"
+    "last_updated": "2026-10-16T08:45:34.852700"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/notifications.json": {
     "hash": "f466e4f11b584497e8a78e3e3de17a83395a069b0c37f9ff38bf7d14d79ad750",
@@ -845,9 +845,9 @@
     "last_updated": "2026-08-14T07:56:58.004495"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/widgets.json": {
-    "hash": "a715cdfe363a23b26f4500a3d7cb9924d83cd7a58b86a682fb29567dab268b1c",
+    "hash": "56f8f674105c2e8077f0b4078cc4c2c3ece4625dd96800155657bba8390d9722",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/widgets.md",
-    "last_updated": "2026-09-11T08:40:37.255112"
+    "last_updated": "2026-10-16T08:45:35.708030"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/design-principles.json": {
     "hash": "e0102c04b22044ddfee59a0733b307ebccff5022baec4e9401f72799c3dd6668",

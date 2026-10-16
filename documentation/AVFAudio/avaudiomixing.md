@@ -34,17 +34,15 @@ Source nodes maintain mixing settings when switching between different mixers. F
 
 ## Topics
 
-### Defining Mixing Properties
+### Defining mixing properties
 - [protocol AVAudioStereoMixing](avaudiostereomixing.md)
   A protocol that defines stereo mixing properties a mixer uses.
-- [protocol AVAudio3DMixing](avaudio3dmixing.md)
-  A collection of properties that define 3D mixing properties.
-### Getting and Setting the Destination
+### Getting and setting the destination
 - [class AVAudioMixingDestination](avaudiomixingdestination.md)
   An object that represents a connection to a mixer node from a node that conforms to the audio mixing protocol.
 - [func destination(forMixer: AVAudioNode, bus: AVAudioNodeBus) -> AVAudioMixingDestination?](avaudiomixing/destination(formixer:bus:).md)
   Gets the audio mixing destination object that corresponds to the specified mixer node and input bus.
-### Getting and Setting the Bus Volume
+### Adjusting the bus volume
 - [var volume: Float](avaudiomixing/volume.md)
   The bus’s input volume.
 

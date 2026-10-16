@@ -26,7 +26,7 @@ protocol AVAudioStereoMixing : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Getting and Setting the Stereo Panning
+### Adjusting the stereo pan
 - [var pan: Float](avaudiostereomixing/pan.md)
   The bus’s stereo pan.
 
@@ -48,11 +48,6 @@ protocol AVAudioStereoMixing : NSObjectProtocol, Sendable
 - [AVAudioUnitGenerator](avaudiounitgenerator.md)
 - [AVAudioUnitMIDIInstrument](avaudiounitmidiinstrument.md)
 - [AVAudioUnitSampler](avaudiounitsampler.md)
-
-## See Also
-
-- [protocol AVAudio3DMixing](avaudio3dmixing.md)
-  A collection of properties that define 3D mixing properties.
 
 
 ---

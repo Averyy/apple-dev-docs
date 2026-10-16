@@ -34,7 +34,7 @@ You use text fields to gather text-based input from the user using the onscreen 
 
 In addition to its basic text-editing behavior, you can add overlay views to a text field to display additional information and provide additional tappable controls. You might add custom overlay views for elements such as a bookmarks button or search icon. Text fields provide a built-in overlay view to clear the current text. The use of custom overlay views is optional.
 
-![None](/images/com.apple.uikit/media-2557435@2x.png)
+![A screenshot of a text field containing the text Text, with a circular clear button on the trailing edge that removes the current text.](/images/com.apple.uikit/media-2557435@2x.png)
 
 After adding a text field to your interface, you configure it for use in your app. Configuration involves performing some or all of the following tasks:
 

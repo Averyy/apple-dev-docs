@@ -38,7 +38,7 @@ The system may return age ranges that override the age gates you specify based o
 - [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
   Constants that describe how an adult, parent, or guardian set the age range.
 - [AgeRangeService.AgeRange](agerangeservice/agerange.md)
-  Information about a person’s age range based on their response to your age range request.
+  Information about a person’s age range based on their response to an age range request.
 - [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
   Requests an age range for the person signed in to iCloud on the device.
 - [AgeRangeService.Response](agerangeservice/response.md)

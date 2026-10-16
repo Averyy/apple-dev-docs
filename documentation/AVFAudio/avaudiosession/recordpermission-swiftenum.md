@@ -25,15 +25,15 @@ The [`recordPermission`](avaudiosession/recordpermission-swift.property.md) prop
 
 ## Topics
 
-### Record Permissions
+### Creating a record permission
+- [init?(rawValue: UInt)](avaudiosession/recordpermission-swift.enum/init(rawvalue:).md)
+### Checking record permissions
 - [AVAudioSession.RecordPermission.undetermined](avaudiosession/recordpermission-swift.enum/undetermined.md)
   A value that indicates that the user hasn’t granted or denied recording permission.
 - [AVAudioSession.RecordPermission.denied](avaudiosession/recordpermission-swift.enum/denied.md)
   A value that indicates that the user has denied recording permission.
 - [AVAudioSession.RecordPermission.granted](avaudiosession/recordpermission-swift.enum/granted.md)
   A value that indicates that the user has granted recording permission.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/recordpermission-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

@@ -19,7 +19,7 @@ case shuffle
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934535@2x.png)
+![Shuffle symbol](/images/com.apple.uikit/media-2934535@2x.png)
 
 ## See Also
 

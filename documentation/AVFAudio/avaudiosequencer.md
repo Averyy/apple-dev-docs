@@ -21,15 +21,15 @@ class AVAudioSequencer
 
 ## Topics
 
-### Creating an Audio Sequencer
+### Creating an audio sequencer
 - [init()](avaudiosequencer/init.md)
   Creates an audio sequencer object.
 - [init(audioEngine: AVAudioEngine)](avaudiosequencer/init(audioengine:).md)
   Creates an audio sequencer that the framework attaches to an audio engine instance.
-### Writing to a MIDI File
+### Writing to a MIDI file
 - [func write(to: URL, smpteResolution: Int, replaceExisting: Bool) throws](avaudiosequencer/write(to:smpteresolution:replaceexisting:).md)
   Creates and writes a MIDI file from the events in the sequence.
-### Handling Music Tracks
+### Handling music tracks
 - [class AVMusicTrack](avmusictrack.md)
   A collection of music events that you can offset, set to a muted state, modify independently from other track events, and send to a specified destination.
 - [func createAndAppendTrack() -> AVMusicTrack](avaudiosequencer/createandappendtrack.md)
@@ -40,7 +40,7 @@ class AVAudioSequencer
   Removes the music track from the sequencer.
 - [enum AVMusicTrackLoopCount](avmusictrackloopcount.md)
   Options that define the number of times a track loops.
-### Handling Music Events
+### Handling music events
 - [class AVMusicEvent](avmusicevent.md)
   A base class for the events you associate with a music track.
 - [class AVMusicUserEvent](avmusicuserevent.md)
@@ -53,14 +53,14 @@ class AVAudioSequencer
   An object that represents a tempo change to a specific beats-per-minute value.
 - [class AVExtendedNoteOnEvent](avextendednoteonevent.md)
   An object that represents a custom extension of a MIDI note on event.
-### Handling MIDI Events
+### Handling MIDI events
 - [class AVMIDINoteEvent](avmidinoteevent.md)
   An object that represents MIDI note on or off messages.
 - [class AVMIDIMetaEvent](avmidimetaevent.md)
   An object that represents MIDI meta event messages.
 - [class AVMIDISysexEvent](avmidisysexevent.md)
   An object that represents a MIDI system exclusive message.
-### Handling MIDI Channel Events
+### Handling MIDI channel events
 - [class AVMIDIChannelEvent](avmidichannelevent.md)
   A base class for all MIDI messages that operate on a single MIDI channel.
 - [class AVMIDIChannelPressureEvent](avmidichannelpressureevent.md)
@@ -73,28 +73,28 @@ class AVAudioSequencer
   An object that represents a MIDI pitch bend message.
 - [class AVMIDIControlChangeEvent](avmidicontrolchangeevent.md)
   An object that represents a MIDI control change message.
-### Managing Sequence Load Options
+### Managing sequence load options
 - [func load(from: Data, options: AVMusicSequenceLoadOptions) throws](avaudiosequencer/load(from:options:)-8o58w.md)
   Parses the data and adds its events to the sequence.
 - [func load(from: URL, options: AVMusicSequenceLoadOptions) throws](avaudiosequencer/load(from:options:)-9kb6m.md)
   Loads the file the URL references and adds the events to the sequence.
 - [struct AVMusicSequenceLoadOptions](avmusicsequenceloadoptions.md)
   A structure that defines whether data on different MIDI channels map to multiple tracks, or whether the framework preserves the tracks as they are.
-### Operating an Audio Sequencer
+### Operating an audio sequencer
 - [func prepareToPlay()](avaudiosequencer/preparetoplay.md)
   Gets ready to play the sequence by prerolling all events.
 - [func start() throws](avaudiosequencer/start.md)
   Starts the sequencer’s player.
 - [func stop()](avaudiosequencer/stop.md)
   Stops the sequencer’s player.
-### Managing Time Stamps
+### Managing time stamps
 - [typealias AVMusicTimeStamp](avmusictimestamp.md)
   A fractional number of beats.
 - [func hostTime(forBeats: AVMusicTimeStamp, error: NSErrorPointer) -> UInt64](avaudiosequencer/hosttime(forbeats:error:).md)
   Gets the host time the sequence plays at the specified position.
 - [func seconds(forBeats: AVMusicTimeStamp) -> TimeInterval](avaudiosequencer/seconds(forbeats:).md)
   Gets the time for the specified beat position (timestamp) in the track, in seconds.
-### Handling Beat Range
+### Handling beat range
 - [func beats(forHostTime: UInt64, error: NSErrorPointer) -> AVMusicTimeStamp](avaudiosequencer/beats(forhosttime:error:).md)
   Gets the beat the system plays at the specified host time.
 - [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](avaudiosequencer/beats(forseconds:).md)
@@ -102,12 +102,13 @@ class AVAudioSequencer
 - [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
 - [typealias AVBeatRange](avbeatrange-swift.typealias.md)
-### Setting the User Callback
+  A specific time range within a music track.
+### Setting the user callback
 - [func setUserCallback(AVAudioSequencerUserCallback?)](avaudiosequencer/setusercallback(_:).md)
   Adds a callback that the sequencer calls each time it encounters a user event during playback.
 - [typealias AVAudioSequencerUserCallback](avaudiosequencerusercallback.md)
   A callback the sequencer calls asynchronously during playback when it encounters a user event.
-### Getting Sequence Properties
+### Getting sequence properties
 - [var isPlaying: Bool](avaudiosequencer/isplaying.md)
   A Boolean value that indicates whether the sequencer’s player is in a playing state.
 - [var rate: Float](avaudiosequencer/rate.md)

@@ -1,4 +1,4 @@
 Completed scraping HIDDriverKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 2761
+Total pages scraped: 2725
+Pages skipped (unchanged): 36
 Pages failed: 0

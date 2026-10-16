@@ -2,10 +2,16 @@
 
 **Framework**: Apple Ads Platform API
 
-Query, filter, pagination, and sorting objects for recommendation requests.
+Filter, sort, and paginate recommendation queries by status, state, and category.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
+
+#### Overview
+
+Every recommendation query request builds on [`RecommendationQueryRequest`](recommendationqueryrequest.md), which requires `promotedObjectId` and `promotedObjectType` filters. Add [`FilterCondition`](recommendationfiltercondition.md) entries to narrow results, and use [`Sorting`](recommendationsorting.md) and [`QueryRequestPagination`](recommendationqueryrequestpagination.md) to order and page them. The suggestion query endpoints reuse these objects.
+
+For the calls that use them, see [`Recommendations Endpoints`](recommendations-endpoints.md) and [`Suggestions Endpoints`](suggestions-endpoints.md).
 
 ## Topics
 
@@ -31,9 +37,9 @@ Query, filter, pagination, and sorting objects for recommendation requests.
 ## See Also
 
 - [Recommendations Endpoints](recommendations-endpoints.md)
-  Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
+  Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 - [Recommendations Data Objects](recommendations-data-objects.md)
-  Request and response objects for recommendation endpoints.
+  Read budget and Target CPA recommendations and their history, and build the requests that apply them.
 
 
 ---

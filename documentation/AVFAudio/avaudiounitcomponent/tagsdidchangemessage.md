@@ -27,6 +27,19 @@ This notification is posted when the user tags of an audio unit component are mo
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [var iconURL: URL?](avaudiounitcomponent/iconurl.md)
+  The URL of an icon that represents the audio unit component.
+- [var icon: UIImage?](avaudiounitcomponent/icon.md)
+  An icon that represents the component.
+- [var localizedTypeName: String](avaudiounitcomponent/localizedtypename.md)
+  The localized type name of the component.
+- [var allTagNames: [String]](avaudiounitcomponent/alltagnames.md)
+  An array of tag names for the audio unit component.
+- [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
+  An array of tags the user creates.
+
 
 ---
 

@@ -33,12 +33,12 @@ The system posts this notification on a secondary thread.
 
 ## Topics
 
-### User Info Keys
+### User info keys
 - [let AVAudioSessionRouteChangeReasonKey: String](avaudiosessionroutechangereasonkey.md)
   A user info key that’s used to retrieve the route change reason.
 - [let AVAudioSessionRouteChangePreviousRouteKey: String](avaudiosessionroutechangepreviousroutekey.md)
   A user info key that’s used to retrieve the previously active audio session route.
-### User Info Values
+### User info values
 - [AVAudioSession.RouteChangeReason](avaudiosession/routechangereason.md)
   Constants that indicate the reason for an audio route change.
 

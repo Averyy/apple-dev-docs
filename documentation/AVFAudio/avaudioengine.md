@@ -82,24 +82,24 @@ audioEngine.stop()
 
 ## Topics
 
-### Creating an Audio Engine
+### Creating an audio engine
 - [init()](avaudioengine/init.md)
   Creates an audio engine instance for rendering in real time.
-### Attaching and Detaching Audio Nodes
+### Attaching and detaching audio nodes
 - [func attach(AVAudioNode)](avaudioengine/attach(_:).md)
   Attaches an audio node to the audio engine.
 - [func detach(AVAudioNode)](avaudioengine/detach(_:).md)
   Detaches an audio node from the audio engine.
 - [var attachedNodes: Set<AVAudioNode>](avaudioengine/attachednodes.md)
   A read-only set that contains the nodes you attach to the audio engine.
-### Getting the Input, Output, and Main Mixer Nodes
+### Accessing the built-in nodes
 - [var inputNode: AVAudioInputNode](avaudioengine/inputnode.md)
   The audio engine’s singleton input audio node.
 - [var outputNode: AVAudioOutputNode](avaudioengine/outputnode.md)
   The audio engine’s singleton output audio node.
 - [var mainMixerNode: AVAudioMixerNode](avaudioengine/mainmixernode.md)
   The audio engine’s optional singleton main mixer node.
-### Connecting and Disconnecting Audio Nodes
+### Connecting and disconnecting audio nodes
 - [func connectNode(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:format:).md)
 - [func connectNode(AVAudioNode, to: AVAudioNode, fromBus: AVAudioNodeBus, toBus: AVAudioNodeBus, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:frombus:tobus:format:).md)
 - [func connectNode(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:frombus:format:).md)
@@ -115,7 +115,7 @@ audioEngine.stop()
   Removes all output connections of a node.
 - [func disconnectNodeOutput(AVAudioNode, bus: AVAudioNodeBus)](avaudioengine/disconnectnodeoutput(_:bus:).md)
   Removes the output connection of a node on the specified bus.
-### Managing MIDI Nodes
+### Managing MIDI nodes
 - [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-8tmk8.md)
 - [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-35k1c.md)
 - [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-73cd1.md)
@@ -134,7 +134,7 @@ audioEngine.stop()
   Establishes a MIDI-only connection between two nodes.
 - [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, block: AUMIDIOutputEventBlock?)](avaudioengine/connectmidi(_:to:format:block:)-666bc.md)
   Establishes a MIDI-only connection between a source node and multiple destination nodes.
-### Playing Audio
+### Playing audio
 - [func prepare()](avaudioengine/prepare.md)
   Prepares the audio engine for starting.
 - [func start() throws](avaudioengine/start.md)
@@ -149,14 +149,21 @@ audioEngine.stop()
   Resets all audio nodes in the audio engine.
 - [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
-### Manually Rendering an Audio Engine
+- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
+### Rendering audio manually
 - [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md)
   Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
+- [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
+  The two modes for manual rendering.
 - [func disableManualRenderingMode()](avaudioengine/disablemanualrenderingmode.md)
   Sets the engine to render to or from an audio device.
 - [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](avaudioengine/renderoffline(_:to:).md)
   Makes a render call to the engine operating in the offline manual rendering mode.
-### Getting Manual Rendering Properties
+- [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
+  Status codes that return from the render call to the engine operating in manual rendering mode.
+- [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
+  Constants that describe error codes that the framework returns from manual rendering mode methods.
+### Getting manual rendering properties
 - [typealias AVAudioEngineManualRenderingBlock](avaudioenginemanualrenderingblock.md)
   The type that represents a block that renders the engine when operating in manual rendering mode.
 - [var manualRenderingBlock: AVAudioEngineManualRenderingBlock](avaudioengine/manualrenderingblock.md)
@@ -173,7 +180,7 @@ audioEngine.stop()
   A Boolean value that indicates whether autoshutdown is in an enabled state.
 - [var isInManualRenderingMode: Bool](avaudioengine/isinmanualrenderingmode.md)
   A Boolean value that indicates whether the engine is operating in manual rendering mode.
-### Using Connection Points
+### Using connection points
 - [class AVAudioConnectionPoint](avaudioconnectionpoint.md)
   A representation of either a source or destination connection point in the audio engine.
 - [func connect(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?)](avaudioengine/connect(_:to:frombus:format:).md)
@@ -182,15 +189,6 @@ audioEngine.stop()
   Returns connection information about a node’s input bus.
 - [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
   Returns connection information about a node’s output bus.
-### Constants
-- [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
-  Constants that describe error codes that the framework returns from manual rendering mode methods.
-- [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
-  The two modes for manual rendering.
-- [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
-  Status codes that return from the render call to the engine operating in manual rendering mode.
-### Instance Properties
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
 
 ## Relationships
 
@@ -205,6 +203,19 @@ audioEngine.stop()
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
+
+## See Also
+
+- [Using voice processing](using-voice-processing.md)
+  Add voice-processing capabilities to your app by using audio engine.
+- [class AVAudioInputNode](avaudioinputnode.md)
+  An object that connects to the system’s audio input.
+- [class AVAudioOutputNode](avaudiooutputnode.md)
+  An object that connects to the system’s audio output.
+- [class AVAudioIONode](avaudioionode.md)
+  An object that performs audio input or output in the engine.
+- [class AVAudioNode](avaudionode.md)
+  An object you use for audio generation, processing, or an I/O block.
 
 
 ---

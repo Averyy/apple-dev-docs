@@ -19,7 +19,7 @@ case play
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934510@2x.png)
+![Play icon](/images/com.apple.uikit/media-2934510@2x.png)
 
 ## See Also
 

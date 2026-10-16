@@ -67,7 +67,7 @@ Swift Package Manager creates a module that contains the C structs found in the 
 
 Continuing with the same naming from the example above, consider the following header located at `MyRenderer/Sources/MySharedTypes/include/SharedTypes.h`:
 
-```Obj-C
+```obj-c
 #ifndef SharedTypes_h
 #define SharedTypes_h
 

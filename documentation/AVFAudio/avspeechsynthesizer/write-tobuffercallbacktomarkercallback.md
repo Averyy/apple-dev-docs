@@ -40,6 +40,8 @@ func write(_ utterance: AVSpeechUtterance, toBufferCallback bufferCallback: @esc
   A type that defines a callback that receives a buffer of generated speech.
 - [AVSpeechSynthesizer.MarkerCallback](avspeechsynthesizer/markercallback.md)
   A type that defines a callback that receives speech markers.
+- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
+  An object that contains information about the synthesized audio.
 
 
 ---

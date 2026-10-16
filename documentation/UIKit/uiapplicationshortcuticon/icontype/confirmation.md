@@ -19,7 +19,7 @@ case confirmation
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934524@2x.png)
+![Confirmation icon](/images/com.apple.uikit/media-2934524@2x.png)
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: property
 
-A textual representation of HandAnchor.Chirality
+A textual representation of HandAnchor.Chirality.
 
 **Availability**:
 - visionOS 1.0+

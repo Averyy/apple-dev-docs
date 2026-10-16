@@ -252,7 +252,6 @@ enum Code
 ### Enumeration Cases
 - [HMError.Code.partialCommunicationFailure](hmerror/code/partialcommunicationfailure.md)
 - [HMError.Code.homeUpgradeRequired](hmerror/code/homeupgraderequired.md)
-- [HMError.Code.nfcReaderTooHot](hmerror/code/nfcreadertoohot.md)
 ### Initializers
 - [init?(rawValue: Int)](hmerror/code/init(rawvalue:).md)
 

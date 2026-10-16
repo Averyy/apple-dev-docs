@@ -20,12 +20,16 @@ Before you run the sample code project in Xcode, ensure you’re using iOS 17 or
 
 ## See Also
 
-- [Building an audio sequencer to arrange and play clips](building-an-audio-sequencer-to-arrange-and-play-clips.md)
-  Synchronize audio loops with a main tempo by creating a real-time clip launcher.
-- [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
-  Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
-- [class AVAudioPlayerNode](avaudioplayernode.md)
-  An object for scheduling the playback of buffers or segments of audio files.
+- [class AVAudioEngine](avaudioengine.md)
+  An object that manages a graph of audio nodes, controls playback, and configures real-time rendering constraints.
+- [class AVAudioInputNode](avaudioinputnode.md)
+  An object that connects to the system’s audio input.
+- [class AVAudioOutputNode](avaudiooutputnode.md)
+  An object that connects to the system’s audio output.
+- [class AVAudioIONode](avaudioionode.md)
+  An object that performs audio input or output in the engine.
+- [class AVAudioNode](avaudionode.md)
+  An object you use for audio generation, processing, or an I/O block.
 
 
 ---

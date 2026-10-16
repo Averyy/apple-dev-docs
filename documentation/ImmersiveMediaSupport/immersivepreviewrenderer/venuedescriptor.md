@@ -13,7 +13,7 @@ The venue descriptor for rendering immersive video frames.
 
 ```swift
 @MainActor
-var venueDescriptor: VenueDescriptor?
+var venueDescriptor: VenueDescriptor? { get set }
 ```
 
 #### Discussion

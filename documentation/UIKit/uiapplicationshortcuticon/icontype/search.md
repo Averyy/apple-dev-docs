@@ -19,7 +19,7 @@ case search
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934514@2x.png)
+![Search icon](/images/com.apple.uikit/media-2934514@2x.png)
 
 ## See Also
 

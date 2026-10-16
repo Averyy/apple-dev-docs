@@ -27,10 +27,10 @@ When your app intent encounters an error during execution, throw an `AppIntentEr
 You can create an `AppIntentError` in several ways:
 
 - **Predefined errors**: Use values from [`AppIntentError.PermissionRequired`](appintenterror/permissionrequired.md), [`AppIntentError.UserActionRequired`](appintenterror/useractionrequired.md), or [`AppIntentError.Unrecoverable`](appintenterror/unrecoverable.md) for common failure scenarios that the system already knows how to handle.
-- **Wrapping a custom error**: If your error type conforms to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible), pass it to `init(wrapping:)` to provide a localized description.
+- **Wrapping a custom error**: If your error type conforms to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible), pass it to [`init(wrapping:)`](appintenterror/init(wrapping:)-2lmed.md) to provide a localized description.
 - **Description string**: Create an error with a localized description directly from a [`LocalizedStringResource`](https://developer.apple.com/documentation/foundation/localizedstringresource) and pass it to [`init(description:)`](appintenterror/init(description:).md).
 
-The recommended approach for most apps is to define an error enumeration that conforms to `CustomLocalizedStringResourceConvertible` and throw it from your intent's `AppIntent/perform()`` method. The framework automatically wraps conforming errors into an `AppIntentError` with the localized description you provide.
+The recommended approach for most apps is to define an error enumeration that conforms to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) and throw it from your intent’s [`perform()`](appintent/perform().md) method. The framework automatically wraps conforming errors into an `AppIntentError` with the localized description you provide.
 
 ## Topics
 

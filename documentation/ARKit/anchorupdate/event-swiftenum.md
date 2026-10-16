@@ -26,7 +26,7 @@ enum Event
   An event that occurs when ARKit stops tracking an anchor.
 ### Instance Properties
 - [var description: String](anchorupdate/event-swift.enum/description.md)
-  A textual representation of AnchorUpdate.Event
+  A textual representation of this anchor update event.
 
 ## Relationships
 

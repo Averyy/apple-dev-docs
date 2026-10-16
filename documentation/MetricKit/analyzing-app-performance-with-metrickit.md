@@ -222,7 +222,7 @@ for await report in manager.metricReports {
 ## See Also
 
 - [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
-  Receive daily performance and diagnostic reports from real device usage.
+  Receive daily performance metrics and immediate diagnostic reports from real device usage.
 - [Track performance by app state using MetricKit](track-performance-by-app-state-using-metrickit.md)
   Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
 - [MetricKit updates](../updates/metrickit.md)

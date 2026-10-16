@@ -19,7 +19,7 @@ case cloud
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934522@2x.png)
+![Cloud icon](/images/com.apple.uikit/media-2934522@2x.png)
 
 ## See Also
 

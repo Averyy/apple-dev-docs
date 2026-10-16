@@ -17,7 +17,7 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type webOrderLineItemId](weborderlineitemid.md)
   The unique identifier of subscription purchase events across devices, including subscription renewals.
 - [type previousOriginalTransactionId](previousoriginaltransactionid.md)
-  The original transaction identifer of a subscription before migration.
+  The original transaction identifier of a subscription before migration.
 ### App transaction identifier
 - [type appTransactionId](apptransactionid.md)
   The unique identifier of the app download transaction.

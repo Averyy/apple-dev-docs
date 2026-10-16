@@ -1,32 +1,31 @@
-# SwiftSetting.InteroperabilityMode
+# interoperabilityMode(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: method
 
-The interoperability mode
+Enables Swift interoperability with a given language.
+
+**Availability**:
+- SwiftPM 5.9+
 
 ## Declaration
 
 ```swift
-enum InteroperabilityMode
+static func interoperabilityMode(_ mode: SwiftSetting.InteroperabilityMode, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-## Topics
+#### Discussion
 
-### Enumeration Cases
-- [SwiftSetting.InteroperabilityMode.C](swiftsetting/interoperabilitymode/c.md)
-  Emit code compatible with being imported from C and Objective-C.
-- [SwiftSetting.InteroperabilityMode.Cxx](swiftsetting/interoperabilitymode/cxx.md)
-  Emit code compatible with being imported from C++ and Objective-C++.
+This is useful for enabling interoperability between Swift and C++ for a given target.
 
-## Relationships
+Enabling C++ interoperability mode might alter the way some existing C and Objective-C APIs are imported.
 
-### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+> **Note**: First available in PackageDescription 5.9.
+
+## Parameters
+
+- `mode`: The interoperability mode, either C-compatible or C++-compatible.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 
@@ -44,12 +43,12 @@ enum InteroperabilityMode
   Enable an experimental feature with the given name.
 - [static func enableUpcomingFeature(String, BuildSettingCondition?) -> SwiftSetting](swiftsetting/enableupcomingfeature(_:_:).md)
   Enable an upcoming feature with the given name.
-- [static func interoperabilityMode(SwiftSetting.InteroperabilityMode, BuildSettingCondition?) -> SwiftSetting](swiftsetting/interoperabilitymode(_:_:).md)
-  Enables Swift interoperability with a given language.
+- [SwiftSetting.InteroperabilityMode](swiftsetting/interoperabilitymode.md)
+  The interoperability mode
 - [static func swiftLanguageVersion(SwiftVersion, BuildSettingCondition?) -> SwiftSetting](swiftsetting/swiftlanguageversion(_:_:).md)
   Defines a `-swift-version` to pass  to the corresponding build tool.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/packagedescription/swiftsetting/interoperabilitymode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/packagedescription/swiftsetting/interoperabilitymode(_:_:))*

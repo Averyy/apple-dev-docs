@@ -19,7 +19,7 @@ case task
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934531@2x.png)
+![Task quick action icon](/images/com.apple.uikit/media-2934531@2x.png)
 
 ## See Also
 

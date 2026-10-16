@@ -26,7 +26,7 @@ You can only use a destination instance when a source node provides it. You canâ
 
 ## Topics
 
-### Getting Mixing Destination Properties
+### Getting mixing destination properties
 - [var connectionPoint: AVAudioConnectionPoint](avaudiomixingdestination/connectionpoint.md)
   The underlying mixer connection point.
 

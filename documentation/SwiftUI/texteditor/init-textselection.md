@@ -87,7 +87,7 @@ struct StyledTextEditingView: View {
 
 > **Note**: When binding the `selection`, always make sure it is updated after you mutate the `text`. Otherwise, the editor resets the selection to the end of the `text`. For more details, see [`indices(in:)`](attributedtextselection/indices(in:).md).
 
-> **Note**: [`AttributedTextSelection`](attributedtextselection.md), `View/attributedTextFormattingDefinition(_:)-uc57`, [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), [`AttributedTextValueConstraint`](attributedtextvalueconstraint.md), [`AttributedTextFormatting`](attributedtextformatting.md)
+> **Note**: [`AttributedTextSelection`](attributedtextselection.md), [`attributedTextFormattingDefinition(_:)`](view/attributedtextformattingdefinition(_:)-81jn6.md), [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), [`AttributedTextValueConstraint`](attributedtextvalueconstraint.md), [`AttributedTextFormatting`](attributedtextformatting.md)
 
 ## Parameters
 

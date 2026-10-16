@@ -6,7 +6,7 @@
 Provides an image asynchronously that contains the given subjects with the background removed.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

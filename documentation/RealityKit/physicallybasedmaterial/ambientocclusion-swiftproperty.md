@@ -27,7 +27,7 @@ Specify ambient occlusion using a UV-mapped image called an *ambient occlusion m
 
 The following code loads an ambient occlusion map:
 
-```swift if let aoResource = try? TextureResource.load(named:
+```None
 "entity_ao") {
     let aoMap = MaterialParameters.Texture(aoResource)
     material.emissiveColor = .init(texture: aoMap)

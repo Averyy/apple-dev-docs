@@ -22,7 +22,7 @@ enum MicrophoneInjectionPermission
 
 ## Topics
 
-### Permissions
+### Checking permission states
 - [AVAudioApplication.MicrophoneInjectionPermission.serviceDisabled](avaudioapplication/microphoneinjectionpermission-swift.enum/servicedisabled.md)
   A person disables this service for all apps.
 - [AVAudioApplication.MicrophoneInjectionPermission.undetermined](avaudioapplication/microphoneinjectionpermission-swift.enum/undetermined.md)
@@ -31,7 +31,7 @@ enum MicrophoneInjectionPermission
   A person grants the app permission to add audio to calls.
 - [AVAudioApplication.MicrophoneInjectionPermission.denied](avaudioapplication/microphoneinjectionpermission-swift.enum/denied.md)
   A person denies the app permission to add audio to calls.
-### Initializers
+### Creating a permission state
 - [init?(rawValue: Int)](avaudioapplication/microphoneinjectionpermission-swift.enum/init(rawvalue:).md)
 
 ## Relationships

@@ -21,6 +21,8 @@ enum RenderingMode
 
 ## Topics
 
+### Creating a rendering mode
+- [init?(rawValue: Int)](avaudiosession/renderingmode-swift.enum/init(rawvalue:).md)
 ### Getting the rendering modes
 - [AVAudioSession.RenderingMode.monoStereo](avaudiosession/renderingmode-swift.enum/monostereo.md)
   A mode that represents non multi-channel audio.
@@ -34,8 +36,6 @@ enum RenderingMode
   A mode that represents Dolby Atmos.
 - [AVAudioSession.RenderingMode.notApplicable](avaudiosession/renderingmode-swift.enum/notapplicable.md)
   A mode that represents there’s no asset in a loading or playing state.
-### Initializers
-- [init?(rawValue: Int)](avaudiosession/renderingmode-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 
@@ -57,6 +57,8 @@ enum RenderingMode
   The array of channel layouts that the current route supports.
 - [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+  A notification the system posts when its spatial playback capabilities change.
 
 
 ---

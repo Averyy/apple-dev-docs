@@ -29,7 +29,7 @@ You don’t create instances of this class yourself. Instead, you retrieve the c
 
 ## Topics
 
-### Getting the Input and Output Ports
+### Getting the route’s ports
 - [var inputs: [AVAudioSessionPortDescription]](avaudiosessionroutedescription/inputs.md)
   An array of audio input port descriptions.
 - [var outputs: [AVAudioSessionPortDescription]](avaudiosessionroutedescription/outputs.md)

@@ -6,11 +6,11 @@
 The FaceTime-generated URL for this request.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
-- Mac Catalyst 27.1+ (Beta)
-- macOS 27.1+
-- visionOS 27.1+
+- iOS 27.2+ (Beta)
+- iPadOS 27.2+ (Beta)
+- Mac Catalyst 27.2+ (Beta)
+- macOS 27.2+ (Beta)
+- visionOS 27.2+ (Beta)
 
 ## Declaration
 

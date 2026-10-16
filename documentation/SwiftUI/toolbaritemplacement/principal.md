@@ -25,7 +25,7 @@ Principal actions are key units of functionality that receive prominent placemen
 
 In macOS and in Mac Catalyst apps, the system places the principal item in the center of the toolbar.
 
-In iOS, iPadOS, and tvOS, the system places the principal item in the center of the navigation bar. This item takes precedent over a title specified through `View/navigationTitle`.
+In iOS, iPadOS, and tvOS, the system places the principal item in the center of the navigation bar. This item takes precedent over a title specified through [`navigationTitle(_:)`](view/navigationtitle(_:).md).
 
 ## See Also
 

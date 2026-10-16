@@ -189,8 +189,6 @@ By default, logging suppresses messages about the enqueuing of specific sample b
 
 - [Building an audio sequencer to arrange and play clips](building-an-audio-sequencer-to-arrange-and-play-clips.md)
   Synchronize audio loops with a main tempo by creating a real-time clip launcher.
-- [Using voice processing](using-voice-processing.md)
-  Add voice-processing capabilities to your app by using audio engine.
 - [class AVAudioPlayerNode](avaudioplayernode.md)
   An object for scheduling the playback of buffers or segments of audio files.
 

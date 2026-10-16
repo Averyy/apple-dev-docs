@@ -25,7 +25,7 @@ func persistentSystemOverlays(_ preferredVisibility: Visibility) -> some Scene
 
 Use this modifier to influence the appearance of system overlays in your app. The behavior varies by platform.
 
-In iOS, the following example hides every persistent system overlay. In visionOS 2 and later, the SharePlay Indicator hides if the scene is shared through SharePlay, or not shared at all. During screen sharing, the indicator always remains visible. The Home indicator doesn’t appear without specific user intent when you set visibility to `hidden`. For a [`WindowGroup`](windowgroup.md), the modifier affects the visibility of the window chrome. For an [`ImmersiveSpace`](immersivespace.md), it affects the Home indicator.
+In iOS, the following example hides every persistent system overlay. In visionOS 2 and later, the SharePlay Indicator hides if the scene is shared through SharePlay, or not shared at all. During screen sharing, the indicator always remains visible. The Home indicator doesn’t appear without specific user intent when you set visibility to [`Visibility.hidden`](visibility/hidden.md). For a [`WindowGroup`](windowgroup.md), the modifier affects the visibility of the window chrome. For an [`ImmersiveSpace`](immersivespace.md), it affects the Home indicator.
 
 ```swift
 struct ImmersiveView: View {

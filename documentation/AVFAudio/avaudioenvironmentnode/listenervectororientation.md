@@ -33,6 +33,8 @@ Changing this property results in a corresponding change in the [`listenerAngula
   The listener’s position in the 3D environment.
 - [var listenerAngularOrientation: AVAudio3DAngularOrientation](avaudioenvironmentnode/listenerangularorientation.md)
   The listener’s angular orientation in the environment.
+- [var isListenerHeadTrackingEnabled: Bool](avaudioenvironmentnode/islistenerheadtrackingenabled.md)
+  A Boolean value that indicates whether the listener orientation is automatically rotated based on head orientation.
 
 
 ---

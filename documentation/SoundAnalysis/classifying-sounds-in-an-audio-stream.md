@@ -15,7 +15,7 @@ This article builds on the [`Classifying Sounds in an Audio File`](classifying-s
 
 ##### Start an Audio Engine
 
-The [`Audio Engine`](https://developer.apple.com/documentation/avfaudio/audio-engine) API simplifies audio-related tasks, including capturing audio data with a microphone.
+The [`Audio engine`](https://developer.apple.com/documentation/avfaudio/audio-engine) API simplifies audio-related tasks, including capturing audio data with a microphone.
 
 Capture audio data from the device’s default microphone:
 

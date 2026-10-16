@@ -22,12 +22,12 @@ struct AVMusicSequenceLoadOptions
 
 ## Topics
 
-### Getting Standard Load Options
-- [static var smf_ChannelsToTracks: AVMusicSequenceLoadOptions](avmusicsequenceloadoptions/smf_channelstotracks.md)
-  An option that represents data on different MIDI channels mapped to multiple tracks.
-### Creating a Load Option
+### Creating a load option
 - [init(rawValue: UInt)](avmusicsequenceloadoptions/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
+### Getting standard load options
+- [static var smf_ChannelsToTracks: AVMusicSequenceLoadOptions](avmusicsequenceloadoptions/smf_channelstotracks.md)
+  An option that represents data on different MIDI channels mapped to multiple tracks.
 
 ## Relationships
 

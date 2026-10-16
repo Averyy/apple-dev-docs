@@ -16,7 +16,7 @@ Prewarmed
 
 #### Discussion
 
-The minimal hardware for I/O should be enabled to minimize transition to normal I/O operation.
+In this state, enable the minimal hardware for I/O, to minimize transition to normal I/O operation.
 
 ## See Also
 

@@ -36,6 +36,8 @@ The value of this property is [`AVAudioSession.RenderingMode.notApplicable`](ava
   The array of channel layouts that the current route supports.
 - [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+  A notification the system posts when its spatial playback capabilities change.
 
 
 ---

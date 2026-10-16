@@ -19,7 +19,7 @@ case compose
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934509@2x.png)
+![Compose icon](/images/com.apple.uikit/media-2934509@2x.png)
 
 ## See Also
 

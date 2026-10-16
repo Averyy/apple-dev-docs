@@ -2,10 +2,14 @@
 
 **Framework**: Apple Ads Platform API
 
-Shared enumerations used by keyword and negative keyword objects.
+Set the status and match type of keywords and negative keywords, and interpret a keyword’s display status.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
+
+#### Overview
+
+Keywords and negative keywords share these types, so each status or match type has one definition to look up. [`KeywordStatus`](keywordstatus.md) and [`NegativeKeywordStatus`](negativekeywordstatus.md) control whether an entity is active or paused. [`KeywordMatchType`](keywordmatchtype.md) controls how a keyword’s text matches searches, and [`KeywordDisplayStatus`](keyworddisplaystatus.md) reports a keyword’s rolled-up delivery state.
 
 ## Topics
 
@@ -23,13 +27,13 @@ Shared enumerations used by keyword and negative keyword objects.
 - [Managing Keywords and Negative Keywords](keywords-and-negative-keywords.md)
   Create and manage keywords and negative keywords for ad groups and campaigns.
 - [Keywords Endpoints](keywords-endpoints.md)
-  Endpoints for creating, retrieving, updating, and deleting keywords.
+  Create, retrieve, update, query, and delete the keywords that match your ad group’s ads to searches.
 - [Negative Keywords Endpoints](negative-keywords-endpoints.md)
-  Endpoints for creating, retrieving, updating, and deleting negative keywords.
+  Create, retrieve, update, query, and delete negative keywords that block ads for unwanted searches.
 - [Keywords Data Objects](keywords-data-objects.md)
-  Request, response, and data objects for managing keywords in ad group campaigns.
+  Build keyword create and update requests, and read keyword responses and query results.
 - [Negative Keywords Data Objects](negative-keywords-objects.md)
-  Request and response objects for negative keyword endpoints.
+  Build negative keyword create and update requests, and read responses and query results.
 
 
 ---

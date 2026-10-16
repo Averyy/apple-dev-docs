@@ -49,6 +49,8 @@ object StatusEnhancedLoggingAppleCareToken
 
 - [object StatusEnhancedLoggingStatus](statusenhancedloggingstatus.md)
   The status item that reports the device’s enhanced log collection session status.
+- [object StatusEnhancedLoggingNonInteractiveEligibility](statusenhancedloggingnoninteractiveeligibility.md)
+  The status item that reports whether the device is eligible to run a non-interactive enhanced log collection session.
 - [object StatusEnhancedLoggingTimestamp](statusenhancedloggingtimestamp.md)
   The status item that reports the device’s enhanced log collection session timestamp.
 

@@ -57,15 +57,23 @@ Adopt the [`HMHomeManagerDelegate`](hmhomemanagerdelegate.md) protocol in your a
   Adds a new home to this home manager.
 - [func removeHome(HMHome, completionHandler: ((any Error)?) -> Void)](hmhomemanager/removehome(_:completionhandler:).md)
   Removes a home from this home manager.
-### Managing the primary home
+### Providing installation services
+- [func addProvisionalHome(named: String, configuration: HMHomeManager.ProvisionalConfiguration) async throws -> HMHome](hmhomemanager/addprovisionalhome(named:configuration:).md)
+  Adds a temporary provisional home while someone performs HomeKit installation services for a client.
+- [HMHomeManager.ProvisionalConfiguration](hmhomemanager/provisionalconfiguration.md)
+  The configuration you use to create a temporary, provisional home for performing installation services.
+- [HMHomeManager.PairingIdentity](hmhomemanager/pairingidentity.md)
+  Identity information that an installation service uses to set up a provisional home for a client.
+### Finding vendor accessories
+- [func findVendorAccessory(hapPublicKey: Data, completionHandler: (HMAccessory?, (any Error)?) -> Void)](hmhomemanager/findvendoraccessory(happublickey:completionhandler:).md)
+  Finds your vendor HAP accessory using its long-term public key.
+### Deprecated
 - [var primaryHome: HMHome?](hmhomemanager/primaryhome.md)
   The primary home managed by this home manager.
 - [func updatePrimaryHome(HMHome, completionHandler: ((any Error)?) -> Void)](hmhomemanager/updateprimaryhome(_:completionhandler:).md)
   Updates the primary home of this home manager.
 ### Initializers
 - [init()](hmhomemanager/init.md)
-### Instance Methods
-- [func findVendorAccessory(hapPublicKey: Data, completionHandler: (HMAccessory?, (any Error)?) -> Void)](hmhomemanager/findvendoraccessory(happublickey:completionhandler:).md)
 
 ## Relationships
 

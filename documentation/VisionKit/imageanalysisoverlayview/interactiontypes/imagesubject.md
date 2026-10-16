@@ -6,7 +6,7 @@
 An option that enables people to click or tap a subject in an image to separate it from the background.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

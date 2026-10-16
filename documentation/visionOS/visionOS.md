@@ -93,8 +93,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
-- [Rendering Gaussian splats with RealityKit](working-with-gaussian-splats-with-realitykit.md)
-  Bring a real-world scan into your app by loading splat data from a USD or PLY file.
+- [Rendering Gaussian splats with RealityKit](rendering-gaussian-splats-with-realitykit.md)
+  Bring a real-world scan into an app by loading splat data from a USD or PLY file.
 - [Manipulating models with RealityKit](../realitykit/manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.
 ### ARKit
@@ -135,6 +135,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 - [Synchronizing group gameplay with TabletopKit](../tabletopkit/synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
+- [Synchronizing custom video playback with SharePlay](synchronizing-custom-video-playback-with-shareplay.md)
+  Keep a custom video pipeline in sync across devices by coordinating playback in SharePlay.
 ### Video playback
 - [Destination Video](destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.

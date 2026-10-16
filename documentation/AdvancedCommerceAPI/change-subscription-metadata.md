@@ -22,7 +22,7 @@ Don’t call this endpoint if a customer is changing subscriptions to receive a 
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/changeMetadata/{transactionId}`
+`POST https://api.storekit-sandbox.apple.com/advancedCommerce/v1/subscription/changeMetadata/{transactionId}`
 
 ## Parameters
 

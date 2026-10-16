@@ -33,7 +33,7 @@ The default implementation always returns `kIOReturnSuccess`. Subclass and overr
 - [SetIOOperationHandler](iouservideodevice/setiooperationhandler.md)
   Sets the IOOperationHandler block on the device.
 - [IOOperationHandler](videodriverkit/iooperationhandler.md)
-  A block that tells the device to perform an IOUserVideoIOOperation.
+  A block that tells the device to perform a video IO operation.
 
 
 ---

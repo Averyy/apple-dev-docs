@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: property
 
-A textual representation of AnchorUpdate.Event
+A textual representation of this anchor update event.
 
 **Availability**:
 - visionOS 1.0+

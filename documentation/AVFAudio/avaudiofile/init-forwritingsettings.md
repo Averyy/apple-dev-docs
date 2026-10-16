@@ -45,6 +45,7 @@ The file opens for writing using the standard format [`AVAudioCommonFormat.pcmFo
   Opens a file for reading using the specified processing format.
 - [init(forWriting: URL, settings: [String : Any], commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](avaudiofile/init(forwriting:settings:commonformat:interleaved:).md)
   Opens a file for writing using a specified processing format and settings.
+- [init()](avaudiofile/init.md)
 
 
 ---

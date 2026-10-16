@@ -283,6 +283,8 @@ For more information on sending and receiving data, see [`Synchronizing data dur
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 - [Synchronizing group gameplay with TabletopKit](../tabletopkit/synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
+- [Synchronizing custom video playback with SharePlay](synchronizing-custom-video-playback-with-shareplay.md)
+  Keep a custom video pipeline in sync across devices by coordinating playback in SharePlay.
 
 
 ---

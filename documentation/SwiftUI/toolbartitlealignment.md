@@ -1,0 +1,57 @@
+# ToolbarTitleAlignment
+
+**Framework**: SwiftUI  
+**Kind**: struct
+
+A preferred alignment for a navigation bar’s title.
+
+**Availability**:
+- iOS 27.2+ (Beta)
+- iPadOS 27.2+ (Beta)
+- Mac Catalyst 27.2+ (Beta)
+- macOS 27.2+ (Beta)
+- visionOS 27.2+ (Beta)
+- watchOS 27.2+ (Beta)
+
+## Declaration
+
+```swift
+struct ToolbarTitleAlignment
+```
+
+#### Overview
+
+Use values of this type with the [`toolbarTitleAlignment(_:)`](view/toolbartitlealignment(_:).md) modifier to override the title alignment the system would use.
+
+```swift
+NavigationStack {
+    ContentView()
+        .navigationTitle("Library")
+        .toolbarTitleAlignment(.center)
+}
+```
+
+To read the alignment the system actually used, see [`toolbarTitleAlignment`](environmentvalues/toolbartitlealignment.md).
+
+## Topics
+
+### Type Properties
+- [static let automatic: ToolbarTitleAlignment](toolbartitlealignment/automatic.md)
+  The system determines the alignment.
+- [static let center: ToolbarTitleAlignment](toolbartitlealignment/center.md)
+  The title is center-aligned.
+- [static let leading: ToolbarTitleAlignment](toolbartitlealignment/leading.md)
+  The title is leading-aligned.
+
+## Relationships
+
+### Conforms To
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/toolbartitlealignment)*

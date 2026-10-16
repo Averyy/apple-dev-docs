@@ -1,4 +1,4 @@
 Completed scraping USDKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 1152
+Total pages scraped: 1142
+Pages skipped (unchanged): 10
 Pages failed: 0

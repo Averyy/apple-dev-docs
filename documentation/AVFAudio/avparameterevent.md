@@ -29,10 +29,10 @@ If you add an event to an empty, non-automation track, the track becomes an auto
 
 ## Topics
 
-### Creating a Parameter Event
+### Creating a parameter event
 - [init(parameterID: UInt32, scope: UInt32, element: UInt32, value: Float)](avparameterevent/init(parameterid:scope:element:value:).md)
   Creates an event with a parameter identifier, scope, element, and value for the parameter to set.
-### Configuring a Parameter Event
+### Configuring a parameter event
 - [var parameterID: UInt32](avparameterevent/parameterid.md)
   The identifier of the parameter.
 - [var scope: UInt32](avparameterevent/scope.md)

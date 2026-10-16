@@ -20,6 +20,10 @@ Downloads the assets required to perform the request, reporting progress through
 func downloadAssets(progress: consuming Subprogress) async throws
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 #### Discussion
 
 > **Note**: An error if the download fails.

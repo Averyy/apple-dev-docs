@@ -1,9 +1,9 @@
-# withTransaction(_:_:)
+# withTransaction(_:_:_:)
 
 **Framework**: SwiftUI  
 **Kind**: func
 
-Executes a closure with the specified transaction and returns the result.
+Executes a closure with the specified transaction key path and value and returns the result.
 
 **Availability**:
 - iOS 13.0+
@@ -17,22 +17,24 @@ Executes a closure with the specified transaction and returns the result.
 ## Declaration
 
 ```swift
-func withTransaction<Result>(_ transaction: Transaction, _ body: () throws -> Result) rethrows -> Result
+@export(implementation)
+func withTransaction<R, V>(_ keyPath: WritableKeyPath<Transaction, V>, _ value: V, _ body: () throws -> R) rethrows -> R
 ```
 
 #### Return Value
 
-The result of executing the closure with the specified transaction.
+The result of executing the closure with the specified transaction value.
 
 ## Parameters
 
-- `transaction`: An instance of a transaction, set as the thread’s current transaction.
+- `keyPath`: A key path that indicates the property of the [`Transaction`](transaction.md) structure to update.
+- `value`: The new value to set for the item specified by `keyPath`.
 - `body`: A closure to execute.
 
 ## See Also
 
-- [func withTransaction<R, V>(WritableKeyPath<Transaction, V>, V, () throws -> R) rethrows -> R](withtransaction(_:_:_:).md)
-  Executes a closure with the specified transaction key path and value and returns the result.
+- [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](withtransaction(_:_:).md)
+  Executes a closure with the specified transaction and returns the result.
 - [func transaction((inout Transaction) -> Void) -> some View](view/transaction(_:).md)
   Applies the given transaction mutation function to all animations used within the view.
 - [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](view/transaction(value:_:).md)
@@ -49,4 +51,4 @@ The result of executing the closure with the specified transaction.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/withtransaction(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/withtransaction(_:_:_:))*

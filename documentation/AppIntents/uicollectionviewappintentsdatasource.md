@@ -21,7 +21,7 @@ protocol UICollectionViewAppIntentsDataSource : AnyObject
 
 #### Overview
 
-For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](AppIntents.md).
+For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](providing-contextual-cues-to-apple-intelligence-and-siri.md) and [`App Intents`](AppIntents.md).
 
 ## Topics
 

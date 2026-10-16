@@ -19,7 +19,7 @@ case share
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934515@2x.png)
+![Share icon](/images/com.apple.uikit/media-2934515@2x.png)
 
 ## See Also
 

@@ -1,4 +1,4 @@
 Completed scraping Model I/O!
-Total pages scraped: 0
-Pages skipped (unchanged): 900
+Total pages scraped: 893
+Pages skipped (unchanged): 7
 Pages failed: 0

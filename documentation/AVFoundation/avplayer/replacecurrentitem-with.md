@@ -29,6 +29,8 @@ func replaceCurrentItem(with item: AVPlayerItem?)
 
 The player item replacement occurs immediately and the item becomes the player’s [`currentItem`](avplayer/currentitem.md). Calling this method with the player’s current player item has no effect.
 
+Replacing the current item removes the previous item from the player’s queue. An item that plays an HTTP Live Streaming (HLS) asset stops requesting playlists and media segments when the player removes it.
+
 ## Parameters
 
 - `item`: The new item for the player object to play.

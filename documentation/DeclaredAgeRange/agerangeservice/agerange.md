@@ -3,7 +3,7 @@
 **Framework**: Declared Age Range  
 **Kind**: struct
 
-Information about a person’s age range based on their response to your age range request.
+Information about a person’s age range based on their response to an age range request.
 
 **Availability**:
 - iOS 26.0+
@@ -19,9 +19,7 @@ struct AgeRange
 
 #### Overview
 
-This provides the minimum information necessary for you to make content decisions while protecting the person’s privacy. Rather than receiving an exact age, you receive age range bounds that correspond to your specified age gates.
-
-For more information about requesting age ranges, refer to `requestAgeRange(ageGates:_:_:in:)`.
+This structure provides the minimum information necessary for you to make content decisions while protecting the person’s privacy. The `requestAgeRange(ageGates:_:_:in:)` methods (for example, [`requestAgeRange(ageGates:_:_:in:)`](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)) return a response that contains an instance of this structure. Rather than model an exact age, the structure contains a range bounded by the age-gate method parameters.
 
 ## Topics
 

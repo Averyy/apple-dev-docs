@@ -16,7 +16,7 @@ class IOUserVideoCustomProperty;
 
 #### Overview
 
-Custom properties can be added to the following objects: [`IOUserVideoControl`](iouservideocontrol.md), [`IOUserVideoBox`](iouservideobox.md), [`IOUserVideoStream`](iouservideostream.md), [`IOUserVideoClockDevice`](iouservideoclockdevice.md), [`IOUserVideoDevice`](iouservideodevice.md), [`IOUserVideoDriver`](iouservideodriver.md). Custom properties have qualifier and data types of `OSString`, `OSDictionary`, or `OSData`.
+Custom properties can be added to the following objects: [`IOUserVideoControl`](iouservideocontrol.md), [`IOUserVideoBox`](iouservideobox.md), [`IOUserVideoStream`](iouservideostream.md), [`IOUserVideoClockDevice`](iouservideoclockdevice.md), [`IOUserVideoDevice`](iouservideodevice.md), [`IOUserVideoDriver`](iouservideodriver.md). Custom properties have qualifier and data types of [`OSString`](https://developer.apple.com/documentation/driverkit/osstring), [`OSDictionary`](https://developer.apple.com/documentation/driverkit/osdictionary), or [`OSData`](https://developer.apple.com/documentation/driverkit/osdata).
 
 ## Topics
 

@@ -17,14 +17,13 @@ Indicates a notification obligation for significant app updates.
 static let significantAppChangeApprovalRequired: AgeRangeService.ParentalControls
 ```
 
+## Mentions
+
+- [Requesting people’s age range information in your app](requesting-people-share-their-age-range-with-your-app.md)
+
 #### Discussion
 
 When this option is present, notify the parent or guardian before implementing significant app changes or updates to comply with associated laws or regulations.
-
-## See Also
-
-- [static let communicationLimits: AgeRangeService.ParentalControls](agerangeservice/parentalcontrols/communicationlimits.md)
-  Indicates that the system limits communication features for the minor.
 
 
 ---

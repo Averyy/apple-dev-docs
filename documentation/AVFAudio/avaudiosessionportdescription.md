@@ -27,7 +27,7 @@ You can query the audio session’s [`currentRoute`](avaudiosession/currentroute
 
 ## Topics
 
-### Getting the Port Attributes
+### Getting the port attributes
 - [var portName: String](avaudiosessionportdescription/portname.md)
   A descriptive name for the port.
 - [var portType: AVAudioSession.Port](avaudiosessionportdescription/porttype.md)
@@ -44,7 +44,7 @@ You can query the audio session’s [`currentRoute`](avaudiosession/currentroute
   A Boolean value that indicates whether the associated hardware port has built-in processing for two-way voice communication.
 - [var isSpatialAudioEnabled: Bool](avaudiosessionportdescription/isspatialaudioenabled.md)
   A Boolean value that indicates whether the port supports spatial audio playback.
-### Managing a Port’s Data Sources
+### Managing a port’s data sources
 - [var dataSources: [AVAudioSessionDataSourceDescription]?](avaudiosessionportdescription/datasources.md)
   The available data sources for the port.
 - [var selectedDataSource: AVAudioSessionDataSourceDescription?](avaudiosessionportdescription/selecteddatasource.md)

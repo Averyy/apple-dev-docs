@@ -22,7 +22,7 @@ case guardianDeclared
 - [AgeRangeService.AgeRangeDeclaration.selfDeclared](agerangeservice/agerangedeclaration/selfdeclared.md)
   Indicates the person signed in to iCloud to set their own age range.
 - [AgeRangeService.AgeRangeDeclaration.confirmed](agerangeservice/agerangedeclaration/confirmed.md)
-  Indicates a user’s age range was set using a scrutinized method, like a credit card or government ID.
+  A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
 
 
 ---

@@ -21,7 +21,9 @@ enum StereoOrientation
 
 ## Topics
 
-### Stereo Orientations
+### Creating a stereo orientation
+- [init?(rawValue: Int)](avaudiosession/stereoorientation/init(rawvalue:).md)
+### Choosing a stereo orientation
 - [AVAudioSession.StereoOrientation.none](avaudiosession/stereoorientation/none.md)
   The audio session isn’t configured for stereo recording.
 - [AVAudioSession.StereoOrientation.portrait](avaudiosession/stereoorientation/portrait.md)
@@ -32,8 +34,6 @@ enum StereoOrientation
   Audio capture should be horizontally oriented, with the USB-C or Lightning connector on the right.
 - [AVAudioSession.StereoOrientation.landscapeLeft](avaudiosession/stereoorientation/landscapeleft.md)
   Audio capture should be horizontally oriented, with the USB-C or Lightning connector on the left.
-### Initializers
-- [init?(rawValue: Int)](avaudiosession/stereoorientation/init(rawvalue:).md)
 
 ## Relationships
 

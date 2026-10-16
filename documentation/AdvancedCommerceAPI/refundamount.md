@@ -11,7 +11,7 @@ A refund amount, in milliunits of the currency.
 ## Declaration
 
 ```swift
-integer refundAmount
+int64 refundAmount
 ```
 
 #### Discussion

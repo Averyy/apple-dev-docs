@@ -58,6 +58,7 @@ Error code constants for framework operations.
 
 ## See Also
 
+- [static var errorDomain: String](chhapticerror/errordomain.md)
 - [CHHapticError.Code](chhapticerror/code.md)
   Error codes for framework operations.
 

@@ -16,8 +16,10 @@ CarPlay lets people get directions, make calls, send and receive messages, liste
 ![A sketch of the CarPlay icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-CarPlay-intro~dark@2x.png)
 People download CarPlay apps from the App Store and install them on iPhone like any other app. When people connect their iPhone with their vehicle, app icons for installed CarPlay apps appear on the CarPlay Home screen.
 CarPlay is designed for drivers to use while they’re driving. Keep this context in mind as you design your CarPlay app, providing features that help people perform tasks quickly and with minimal interaction.
-To create the interface of your CarPlay app, you use the system-defined templates that are appropriate for the type of app you’re developing, such as audio, communication, navigation, or fueling. For each template, your app provides the content and iOS renders it in CarPlay. Because the system displays UI components and handles the interface with the vehicle, you don’t need to adjust your layout for different screen resolutions, or manage input from different types of hardware like touchscreens, knobs, or touch pads.
-To learn how to create various types of CarPlay apps and use the system-provided templates, see [CarPlay App Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf). The general design guidelines below apply to all types of CarPlay apps.
+To create the interface of your CarPlay app, you use the system-defined templates that are appropriate for the type of app you’re developing, such as audio, communication, or navigation. For each template, your app provides the content and iOS renders it in CarPlay. Because the system displays UI components and handles the interface with the vehicle, you don’t need to adjust your layout for different screen resolutions, or manage input from different types of hardware like touchscreens, knobs, or touch pads.
+To learn how to create various types of CarPlay apps and use the system-provided templates, see [CarPlay Developer Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf). The general design guidelines below apply to all types of CarPlay apps.
+
+> **Note:** CarPlay audio and video apps also work on Apple HomeView without requiring you to make any modifications to your app.
 
 ## iPhone interactions
 CarPlay shows compatible apps from the connected iPhone on the car’s built-in display, applying simplified interfaces that are optimized for use while driving.
@@ -78,7 +80,7 @@ A CarPlay app needs to handle errors gracefully and report them to people only w
 [CarPlay](http://developer.apple.com/carplay/)
 
 #### Developer documentation
-[CarPlay App Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf)
+[CarPlay Developer Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf)
 
 #### Videos
 - [Rev up your CarPlay app](https://developer.apple.com/videos/play/wwdc2026/212) - Explore new features for your CarPlay audio, navigation, voice-based conversational apps, and more. Discover how to create CarPlay video apps so people can browse and watch their favorite videos in supported vehicles when parked. Learn how to integrate thumbnails, media information, and voice controls in your CarPlay app.

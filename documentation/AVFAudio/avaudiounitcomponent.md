@@ -25,10 +25,10 @@ Details can include information such as type, subtype, manufacturer, and locatio
 
 ## Topics
 
-### Getting the audio unit component’s audio unit
+### Getting the audio component
 - [var audioComponent: AudioComponent](avaudiounitcomponent/audiocomponent.md)
   The underlying audio component.
-### Getting audio unit component information
+### Getting Audio Unit component information
 - [var audioComponentDescription: AudioComponentDescription](avaudiounitcomponent/audiocomponentdescription.md)
   The audio component description.
 - [var availableArchitectures: [NSNumber]](avaudiounitcomponent/availablearchitectures.md)
@@ -59,7 +59,7 @@ Details can include information such as type, subtype, manufacturer, and locatio
   A string that represents the audio unit component version number.
 - [var componentURL: URL?](avaudiounitcomponent/componenturl.md)
   The URL of the audio unit component.
-### Getting audio unit component tags
+### Getting Audio Unit component tags
 - [var iconURL: URL?](avaudiounitcomponent/iconurl.md)
   The URL of an icon that represents the audio unit component.
 - [var icon: UIImage?](avaudiounitcomponent/icon.md)
@@ -70,10 +70,12 @@ Details can include information such as type, subtype, manufacturer, and locatio
   An array of tag names for the audio unit component.
 - [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
   An array of tags the user creates.
-### Audio unit manufacturer names
+- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
+  Type-safe notification message for audio unit component tag changes.
+### Identifying manufacturers
 - [let AVAudioUnitManufacturerNameApple: String](avaudiounitmanufacturernameapple.md)
   The audio unit manufacturer is Apple.
-### Audio unit types
+### Identifying component types
 - [let AVAudioUnitTypeOutput: String](avaudiounittypeoutput.md)
   An audio unit type that represents an output.
 - [let AVAudioUnitTypeMusicDevice: String](avaudiounittypemusicdevice.md)
@@ -94,9 +96,6 @@ Details can include information such as type, subtype, manufacturer, and locatio
   An audio unit type that represents an offline effect.
 - [let AVAudioUnitTypeMIDIProcessor: String](avaudiounittypemidiprocessor.md)
   An audio unit type that represents a MIDI processor.
-### Structures
-- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
-  Type-safe notification message for audio unit component tag changes.
 
 ## Relationships
 

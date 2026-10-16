@@ -74,7 +74,7 @@ The audio session uses this configuration when you activate the session using th
   Sets the audio session’s category.
 - [func setMode(AVAudioSession.Mode) throws](avaudiosession/setmode(_:).md)
   Sets the audio session’s mode.
-### Configuring the spatial experience in visionOS
+### Configuring the spatial experience
 - [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1bpnq.md)
   The spatial audio experience your app intends to provide the user.
 - [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](avaudiosession/setintendedspatialexperience(_:).md)
@@ -138,8 +138,6 @@ The audio session uses this configuration when you activate the session using th
   The set of options associated with the current audio session category.
 - [AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct.md)
   Constants that specify optional audio behaviors.
-- [static var farFieldInput: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/farfieldinput.md)
-  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`record`](avaudiosession/category-swift.struct/record.md), and `AVAudioSessionMultiRoute` with [`dualRoute`](avaudiosession/mode-swift.struct/dualroute.md).
 ### Inspecting mode configuration
 - [var mode: AVAudioSession.Mode](avaudiosession/mode-swift.property.md)
   The current audio session’s mode.
@@ -147,7 +145,7 @@ The audio session uses this configuration when you activate the session using th
   The audio session modes available on the device.
 - [AVAudioSession.Mode](avaudiosession/mode-swift.struct.md)
   Audio session mode identifiers.
-### Inspecting rendering mode and capabilities
+### Inspecting rendering capabilities
 - [var renderingMode: AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.property.md)
   The current audio session’s rendering mode.
 - [AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.enum.md)
@@ -158,6 +156,8 @@ The audio session uses this configuration when you activate the session using th
   The array of channel layouts that the current route supports.
 - [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+  A notification the system posts when its spatial playback capabilities change.
 ### Inspecting the route sharing policy
 - [var routeSharingPolicy: AVAudioSession.RouteSharingPolicy](avaudiosession/routesharingpolicy-swift.property.md)
   The active route-sharing policy.
@@ -193,9 +193,6 @@ The audio session uses this configuration when you activate the session using th
   Sets a preference to interrupt the audio session when the active route disconnects.
 - [class let interruptionNotification: NSNotification.Name](avaudiosession/interruptionnotification.md)
   A notification the system posts when an audio interruption occurs.
-### Monitoring spatial capabilities
-- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
-  A notification the system posts when its spatial playback capabilities change.
 ### Inspecting the audio prompt style
 - [var promptStyle: AVAudioSession.PromptStyle](avaudiosession/promptstyle-swift.property.md)
   A hint to audio sessions that use voice prompt mode to alter the type of prompts they issue in response to other system audio, such as Siri and phone calls.
@@ -253,16 +250,16 @@ The audio session uses this configuration when you activate the session using th
   Sets the audio session’s aggregated I/O configuration preference.
 - [AVAudioSession.IOType](avaudiosession/iotype.md)
   Constant values used to specify the audio session’s aggregated I/O behavior.
-### Handling a change of media services
+### Handling media services changes
 - [class let mediaServicesWereResetNotification: NSNotification.Name](avaudiosession/mediaserviceswereresetnotification.md)
   A notification the system posts when the media server restarts.
 - [class let mediaServicesWereLostNotification: NSNotification.Name](avaudiosession/mediaserviceswerelostnotification.md)
   A notification the system posts when it terminates the media server.
-### Errors
+### Handling errors
 - [AVAudioSession.ErrorCode](../coreaudiotypes/avaudiosession/errorcode.md)
   Codes that describe error conditions that may occur when performing audio session operations.
 ### Deprecated
-- [Deprecated Symbols](deprecated-symbols.md)
+- [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Structures
 - [AVAudioSession.BypassedSpatialExperience](avaudiosession/bypassedspatialexperience.md)

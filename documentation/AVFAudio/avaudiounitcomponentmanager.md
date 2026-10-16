@@ -33,7 +33,7 @@ You can search for audio units in the following ways:
 
 ## Topics
 
-### Getting the unit audio component manager
+### Getting the shared manager
 - [class func shared() -> Self](avaudiounitcomponentmanager/shared.md)
   Gets the shared component manager instance.
 ### Getting matching audio components
@@ -43,7 +43,7 @@ You can search for audio units in the following ways:
   Gets an array of audio component objects that match the search predicate.
 - [func components(passingTest: (AVAudioUnitComponent, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(passingtest:).md)
   Gets an array of audio components that pass the block method.
-### Getting audio unit tags
+### Getting Audio Unit tags
 - [var standardLocalizedTagNames: [String]](avaudiounitcomponentmanager/standardlocalizedtagnames.md)
   An array of the localized standard system tags the audio units define.
 - [var tagNames: [String]](avaudiounitcomponentmanager/tagnames.md)

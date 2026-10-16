@@ -33,7 +33,7 @@ If you’d prefer to permanently enable this behavior, you should instead set th
 
 ## Topics
 
-### Data Types
+### Port overrides
 - [AVAudioSession.PortOverride](avaudiosession/portoverride.md)
   Constants for use with the [`overrideOutputAudioPort(_:)`](avaudiosession/overrideoutputaudioport(_:).md) method.
 

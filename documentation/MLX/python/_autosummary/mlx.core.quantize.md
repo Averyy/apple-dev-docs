@@ -81,7 +81,7 @@ bias
 
 affine
 32, 64*, 128
-2, 3, 4*, 5, 6, 8
+1, 2, 3, 4*, 5, 6, 8
 same as input
 yes
 

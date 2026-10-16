@@ -10,11 +10,19 @@ Browse notable changes in [`Xcode`](https://developer.apple.comhttps://developer
 
 #### September 2026
 
+The latest version of Xcode includes the following new features.
+
+##### Projects and Workspaces
+
 - Start using the new JSON project configuration file format that’s version-control-friendly, human-readable, and editable by coding intelligence agents. For more information, see [`Updating your Xcode project configuration file format`](https://developer.apple.com/documentation/xcode/updating-your-xcode-project-configuration-file-format).
+
+##### Devices and Simulators
+
+- Test your app on iPhone Duo in the preview canvas and Device Hub. For more information, see [`Interacting with previews in the canvas`](https://developer.apple.com/documentation/xcode/interacting-with-previews-in-the-canvas) and [`Interacting with your app in Device Hub`](https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-device-hub).
 
 #### June 2026
 
-The latest version of Xcode includes the following new features.
+Xcode 27 includes the following new features.
 
 ##### Projects and Workspaces
 

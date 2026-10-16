@@ -22,12 +22,16 @@ virtual kern_return_t HandleChangeStreamIsActive(bool in_is_active);
 
 The default implementation calls `SetStreamIsActive()` and returns `kIOReturnSuccess`. Subclass and override this method to handle changing stream active state and return `kIOReturnSuccess` upon success.
 
+## Parameters
+
+- `in_is_active`: True if the stream is active; otherwise false.
+
 ## See Also
 
 - [HandleChangeCurrentStreamFormat](iouservideostream/handlechangecurrentstreamformat.md)
   The system calls this virtual method when the stream’s format changes.
 - [DeviceSampleRateChanged](iouservideostream/devicesampleratechanged.md)
-  Call to update stream formats when the owning video device changes sample rate
+  Call to update stream formats when the owning video device changes sample rate.
 
 
 ---

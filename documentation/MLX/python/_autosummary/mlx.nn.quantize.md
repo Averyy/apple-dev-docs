@@ -66,6 +66,8 @@ Weight only quantization for all layers that define a `to_quantized()` method:
 
 Weight and input quantization for all linear layers:
 >>> predicate = lambda p, m: isinstance(m, nn.Linear)
->>> nn.quantize(model, mode="nvfp4", quantize_input=True, class_predicate=predicate)
+>>> nn.quantize(
+...     model, mode="nvfp4", quantize_input=True, class_predicate=predicate,
+... )
 
 ** Contents

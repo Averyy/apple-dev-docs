@@ -217,6 +217,8 @@ You typically let Xcode manage the entitlements file for you. For information on
   An entitlement that permits an app to receive fall-detection notifications from Apple Watch.
 - [com.apple.developer.healthkit.recalibrate-estimates](entitlements/com.apple.developer.healthkit.recalibrate-estimates.md)
   A Boolean value that determines whether your app can recalibrate the prediction algorithm used to calculate supported sample types.
+- [com.apple.developer.healthkit.research](entitlements/com.apple.developer.healthkit.research.md)
+  A Boolean value that indicates whether an approved health research app offers only Full Access when it requests HealthKit read access.
 ### Home automation
 - [HomeKit Entitlement](entitlements/com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
@@ -255,6 +257,8 @@ You typically let Xcode manage the entitlements file for you. For information on
   A Boolean value that indicates whether an app can be the default calling app on someone’s device.
 - [Default Dialer App](entitlements/com.apple.developer.dialing-app.md)
   A Boolean value that indicates whether an app can be the default dialer app on someone’s device.
+- [com.apple.developer.conversation-accessibility](entitlements/com.apple.developer.conversation-accessibility.md)
+  A Boolean value that indicates whether the app can provide live assistance services, such as sign language interpreting or captioning, during FaceTime calls.
 ### Location
 - [Location Push Service Extension](entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.

@@ -22,12 +22,11 @@ struct CHHapticError
 ## Topics
 
 ### Inspecting an Error
+- [static var errorDomain: String](chhapticerror/errordomain.md)
 - [CHHapticError.Code](chhapticerror/code.md)
   Error codes for framework operations.
 - [Error Constants](error-constants.md)
   Error code constants for framework operations.
-### Type Properties
-- [static var errorDomain: String](chhapticerror/errordomain.md)
 
 ## Relationships
 

@@ -16,7 +16,7 @@ object TargetCpaRecommendation
 
 #### Discussion
 
-For campaigns using a Maximize Conversions bid strategy, `TargetCpaRecommendation` provides a system-calculated `recommendedTargetCPA` derived from historical `averageCPA` and projected performance. To evaluate the suggested adjustment, compare `recommendedTargetCPA` against `averageCPA`. Once actioned, the system creates a `TargetCpaRecommendationHistory` record.
+For campaigns using a Maximize Conversions bid strategy, `TargetCpaRecommendation` provides a system-calculated `recommendedTargetCPA` derived from historical performance. To evaluate the suggested adjustment, compare `recommendedTargetCPA` against `averageCPA`. Once actioned, the system creates a `TargetCpaRecommendationHistory` record.
 
 ##### Example
 
@@ -50,16 +50,6 @@ For campaigns using a Maximize Conversions bid strategy, `TargetCpaRecommendatio
     "amount": "4.50",
     "currency": "USD"
   },
-  "expectedTaps": 3000,
-  "expectedCPA": {
-    "amount": "4.00",
-    "currency": "USD"
-  },
-  "expectedInstalls": 600,
-  "expectedSpend": {
-    "amount": "2400.00",
-    "currency": "USD"
-  },
   "impression": 50000,
   "installs": 500,
   "spend": {
@@ -88,10 +78,6 @@ For campaigns using a Maximize Conversions bid strategy, `TargetCpaRecommendatio
 - `bidStrategy` (RecommendationBidStrategy): The campaign’s current bid strategy. See [`RecommendationBidStrategy`](recommendationbidstrategy.md). Read-only.
 - `averageCPT` (RecommendationMoney): Historical average cost per tap. See [`Money`](recommendationmoney.md). Read-only.
 - `averageCPA` (RecommendationMoney): Historical average cost per acquisition. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedTaps` (int64): Expected taps if recommendation is applied. Read-only.
-- `expectedCPA` (RecommendationMoney): The estimated average cost-per-acquisition you could see over a seven-day period after applying a recommendation, based on historical data. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedInstalls` (int64): The estimated installs you could see over a seven-day period after applying a recommendation, based on historical data. Read-only.
-- `expectedSpend` (RecommendationMoney): The estimated amount you could spend over a seven-day period after applying a recommendation, based on historical data. See [`Money`](recommendationmoney.md). Read-only.
 - `impression` (int64): Historical impression count. Read-only.
 - `installs` (int64): Historical install count. Read-only.
 - `spend` (RecommendationMoney): Historical spend. See [`Money`](recommendationmoney.md). Read-only.

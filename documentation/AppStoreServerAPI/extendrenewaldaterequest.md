@@ -30,9 +30,9 @@ Use this object with the [`Extend a Subscription Renewal Date`](extend-a-subscri
 
 ## Properties
 
-- `extendByDays` (extendByDays): **Required**. The number of days to extend the subscription renewal date.
-- `extendReasonCode` (extendReasonCode): **Required**. The reason code for the subscription date extension.
-- `requestIdentifier` (requestIdentifier): **Required**. A string that contains a value you provide to uniquely identify this renewal-date extension request.
+- `extendByDays` (extendByDays) *(required)*: The number of days to extend the subscription renewal date.
+- `extendReasonCode` (extendReasonCode) *(required)*: The reason code for the subscription date extension.
+- `requestIdentifier` (requestIdentifier) *(required)*: A string that contains a value you provide to uniquely identify this renewal-date extension request.
 
 ## See Also
 

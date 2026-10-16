@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: method
 
-Creates a new compute pipeline state asynchronously.
+Creates a compute pipeline state asynchronously.
 
 **Availability**:
 - iOS 26.0+
@@ -25,9 +25,9 @@ A compute pipeline state upon success, otherwise this method throws.
 
 ## Parameters
 
-- `descriptor`: A compute pipeline state descriptor, describing the compute pipeline to create.
-- `dynamicLinkingDescriptor`: An optional parameter that provides additional configuration for linking the pipeline state object.
-- `compilerTaskOptions`: A description of the compilation process itself, providing parameters that influence execution of the compilation process.
+- `descriptor`: A compute pipeline state descriptor that describes the pipeline the compiler creates.
+- `dynamicLinkingDescriptor`: An optional descriptor that configures dynamic linking for the pipeline state.
+- `compilerTaskOptions`: Options that control the compilation process.
 
 
 ---

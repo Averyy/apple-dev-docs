@@ -20,13 +20,9 @@ let AVChannelLayoutKey: String
 
 ## See Also
 
-- [class AVAudioFormat](avaudioformat.md)
-  An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](avaudiochannellayout.md)
-  An object that describes the roles of a set of audio channels.
-- [Linear PCM Format Settings](linear-pcm-format-settings.md)
+- [Linear PCM format settings](linear-pcm-format-settings.md)
   The audio settings that apply to linear PCM audio formats.
-- [Format Settings](format-settings.md)
+- [Format settings](format-settings.md)
   The audio settings that apply to all audio formats that the audio player and recorder classes support.
 
 

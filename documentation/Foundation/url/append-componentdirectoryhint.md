@@ -22,7 +22,9 @@ mutating func append<S>(component: S, directoryHint: URL.DirectoryHint = .inferF
 
 #### Discussion
 
-This method percent-encodes any path separators (`/`) in the path component before appending the component to the path. If you don’t want this encoding, use [`append(path:directoryHint:)`](url/append(path:directoryhint:).md) instead.
+For non-file URLs, this method percent-encodes any path separators (`/`) in the path component before appending.
+
+> **Note**: For compatibility, this method does not percent-encode any path separators (`/`) if the URL has a `file` scheme.
 
 ## Parameters
 

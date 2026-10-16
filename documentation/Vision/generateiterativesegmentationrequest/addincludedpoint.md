@@ -19,6 +19,10 @@ Refines the mask with a point that is part of the desired segmentation. Throws a
 final func addIncludedPoint(_ point: NormalizedPoint) throws
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## See Also
 
 - [func addExcludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addexcludedpoint(_:).md)

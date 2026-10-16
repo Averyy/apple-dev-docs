@@ -29,6 +29,8 @@ To check whether a sample type supports recalibration, see [`allowsRecalibration
   A Boolean value that indicates whether observer queries receive updates while running in the background.
 - [Fall Detection Notifications](entitlements/com.apple.developer.health.fall-detection.md)
   An entitlement that permits an app to receive fall-detection notifications from Apple Watch.
+- [com.apple.developer.healthkit.research](entitlements/com.apple.developer.healthkit.research.md)
+  A Boolean value that indicates whether an approved health research app offers only Full Access when it requests HealthKit read access.
 
 
 ---

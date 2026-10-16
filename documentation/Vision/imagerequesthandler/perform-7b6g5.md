@@ -20,6 +20,10 @@ Performs a framework request on the handler’s image.
 final func perform<T>(_ request: T) async throws -> T.Result where T : VisionRequest
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## See Also
 
 - [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](imagerequesthandler/perform(_:)-l6er.md)

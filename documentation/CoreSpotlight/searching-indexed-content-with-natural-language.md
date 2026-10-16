@@ -55,7 +55,7 @@ By default, the sample searches your app’s Spotlight index using the on-device
 
 The sample’s view model exposes the language model it uses as a `foundationModel` property:
 
-```Swift
+```swift
 // Initialize `foundationModel` with an on-device model so the sample works without additional configuration:
 let foundationModel = SystemLanguageModel()
 // Alternatively, initialize `foundationModel` with a PCC language model.
@@ -66,7 +66,7 @@ For best search performance that takes advantage of server models, route searche
 
 To adopt PCC, initialize `foundationModel` with [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel). When `foundationModel` is the PCC model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md) guide for richer query construction; on device. When `foundationModel` is the on-device model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](spotlightsearchtool/guidancelevel/focused(_:).md) guide and provides more explicit search instructions to suit the smaller model.
 
-```Swift
+```swift
 // A Boolean value that indicates whether the search tool uses an on-device or PCC model.
 private var isOnDevice: Bool {
     type(of: foundationModel) == SystemLanguageModel.self

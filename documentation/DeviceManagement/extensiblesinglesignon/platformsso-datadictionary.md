@@ -21,6 +21,8 @@ object ExtensibleSingleSignOn.PlatformSSO
 ## Topics
 
 ### Objects
+- [object ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders](extensiblesinglesignon/platformsso-data.dictionary/additionalhttpheaders-data.dictionary.md)
+  A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
 - [object ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups](extensiblesinglesignon/platformsso-data.dictionary/authorizationgroups-data.dictionary.md)
   The pairing of Authorization Rights to group names.
 - [object ExtensibleSingleSignOn.PlatformSSO.TokenToUserMapping](extensiblesinglesignon/platformsso-data.dictionary/tokentousermapping-data.dictionary.md)
@@ -35,10 +37,12 @@ object ExtensibleSingleSignOn.PlatformSSO
 - `com.apple.security.scep` Available: macOS 26+
 - `AccountDisplayName` (string): The display name for the account in notifications and authentication requests.
 - `AdditionalGroups` ([string]): The list of created groups that don’t have administrator access.
+- `AdditionalHTTPHeaders` (ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders): A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters. Available: macOS 27.2+
 - `AdministratorGroups` ([string]): The list of groups to use for administrator access. The system requests membership during authentication.
 - `AllowAccessKeyExpressMode` (boolean): If `true`, the system uses the access key in express mode, and doesn’t require authentication before use. Available: macOS 26+
 - `AllowDeviceIdentifiersInAttestation` (boolean): If `true`, the system includes the device UDID and serial number in Platform SSO attestations. Available: macOS 15.4+
 - `AllowWebLoginPasswordSync` (boolean): If `true`, the system detects the password during web login and synchronizes it to the local account password for the user. Available: macOS 27+
+- `AlwaysUseLoginUI` (boolean): If `true`, the system uses the Platform SSO login UI at the Login Window, screensaver unlock, and FileVault unlock for every configuration that supports it. If `false`, the system uses the Platform SSO login UI only when `AuthenticationMethod` is set to `OpenID`, or when `LoginPolicy`, `UnlockPolicy` or `FileVaultPolicy` are set to `RequireTouchID` or `RequireTouchIDOrWatch`. Available: macOS 27.2+
 - `AuthenticationGracePeriod` (integer): The amount of time (in seconds) after receiving or updating a `FileVaultPolicy`, `LoginPolicy`, or `UnlockPolicy` that the system can use unregistered local accounts. Required when `AllowAuthenticationGracePeriod` is set. Available: macOS 15+
 - `AuthenticationMethod` (string): The Platform SSO authentication method to use with the extension. Requires that the SSO Extension also support the method. `OpenID` is available in macOS 27 and later.
 - `AuthorizationGroups` (ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups): The pairing of Authorization Rights to group names. When using this, the system updates the Authorization Right to use the group.

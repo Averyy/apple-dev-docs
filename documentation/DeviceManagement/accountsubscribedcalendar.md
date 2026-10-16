@@ -72,6 +72,8 @@ This configuration subscribes to a calendar feed.
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
+- [object AccountSettings](accountsettings.md)
+  The declaration to configure account settings.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
 - [object AppSettings](appsettings.md)
@@ -86,8 +88,6 @@ This configuration subscribes to a calendar feed.
   The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
-- [object IntelligenceSettings](intelligencesettings.md)
-  The declaration to configure Apple Intelligence settings.
 
 
 ---

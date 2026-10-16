@@ -21,6 +21,7 @@ object StatusDeviceSystemHealthDeviceSystemHealthObject
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `non-genuine`: The component isn’t a genuine Apple component.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 
 Not all keys are supported on each device. The dictionary includes only components that are present and reportable on the device.
 
@@ -31,15 +32,19 @@ Not all keys are supported on each device. The dictionary includes only componen
 - `Camera` (string): The camera health status, which has the following values: - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `non-genuine`: The component isn’t a genuine Apple component.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 - `Display` (string): The display health status, which has the following values: - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `non-genuine`: The component isn’t a genuine Apple component.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 - `FaceID` (string): The Face ID health status, which has the following values: - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 - `NFC` (string): The NFC (Near Field Communication) health status, which has the following values: - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `TouchID` (string): The Touch ID health status, which has the following values: - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 - `UWB` (string): The UWB (Ultra-Wideband) radio health status, which has the following values: - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 

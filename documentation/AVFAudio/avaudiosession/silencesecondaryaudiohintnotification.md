@@ -46,10 +46,10 @@ The system posts this notification on the main thread.
 
 ## Topics
 
-### User Info Keys
+### User info keys
 - [let AVAudioSessionSilenceSecondaryAudioHintTypeKey: String](avaudiosessionsilencesecondaryaudiohinttypekey.md)
   A user info key that you use to retrieve the silence secondary audio hint type.
-### User Info Values
+### User info values
 - [AVAudioSession.SilenceSecondaryAudioHintType](avaudiosession/silencesecondaryaudiohinttype.md)
   Constants that indicate whether optional secondary audio muting should begin or end.
 

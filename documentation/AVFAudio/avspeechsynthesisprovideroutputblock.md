@@ -28,8 +28,6 @@ typealias AVSpeechSynthesisProviderOutputBlock = ([AVSpeechSynthesisMarker], AVS
 
 - [var speechSynthesisOutputMetadataBlock: AVSpeechSynthesisProviderOutputBlock?](avspeechsynthesisprovideraudiounit/speechsynthesisoutputmetadatablock.md)
   A block that subclasses use to send marker information to the host.
-- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
-  An object that contains information about the synthesized audio.
 
 
 ---

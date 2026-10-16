@@ -1,4 +1,4 @@
 Completed scraping NetworkingDriverKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 694
+Total pages scraped: 685
+Pages skipped (unchanged): 9
 Pages failed: 0

@@ -1,4 +1,4 @@
-# Linear PCM Format Settings
+# Linear PCM format settings
 
 **Framework**: AVFAudio
 
@@ -6,7 +6,7 @@ The audio settings that apply to linear PCM audio formats.
 
 ## Topics
 
-### Settings
+### Linear PCM keys
 - [let AVLinearPCMBitDepthKey: String](avlinearpcmbitdepthkey.md)
 - [let AVLinearPCMIsBigEndianKey: String](avlinearpcmisbigendiankey.md)
 - [let AVLinearPCMIsFloatKey: String](avlinearpcmisfloatkey.md)
@@ -14,12 +14,8 @@ The audio settings that apply to linear PCM audio formats.
 
 ## See Also
 
-- [class AVAudioFormat](avaudioformat.md)
-  An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](avaudiochannellayout.md)
-  An object that describes the roles of a set of audio channels.
 - [let AVChannelLayoutKey: String](avchannellayoutkey.md)
-- [Format Settings](format-settings.md)
+- [Format settings](format-settings.md)
   The audio settings that apply to all audio formats that the audio player and recorder classes support.
 
 

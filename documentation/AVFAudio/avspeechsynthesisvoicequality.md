@@ -22,15 +22,15 @@ enum AVSpeechSynthesisVoiceQuality
 
 ## Topics
 
-### Voice qualities
+### Creating a voice quality
+- [init?(rawValue: Int)](avspeechsynthesisvoicequality/init(rawvalue:).md)
+### Identifying voice qualities
 - [AVSpeechSynthesisVoiceQuality.default](avspeechsynthesisvoicequality/default.md)
   A basic quality voice that’s  available on the device by default.
 - [AVSpeechSynthesisVoiceQuality.enhanced](avspeechsynthesisvoicequality/enhanced.md)
   An enhanced quality voice that you must download to use.
 - [AVSpeechSynthesisVoiceQuality.premium](avspeechsynthesisvoicequality/premium.md)
   A premium quality voice that you must download to use.
-### Initializers
-- [init?(rawValue: Int)](avspeechsynthesisvoicequality/init(rawvalue:).md)
 
 ## Relationships
 

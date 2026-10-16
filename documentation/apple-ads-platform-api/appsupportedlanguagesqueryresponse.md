@@ -33,7 +33,11 @@ The `AppSupportedLanguagesQueryResponse` object is the top-level envelope return
         },
         {
           "language": "es",
-          "languageCode": "es-US"
+          "languageCode": "es-MX"
+        },
+        {
+          "language": "zh",
+          "languageCode": "zh-Hans"
         }
       ],
       "adsDefaultLanguages": [

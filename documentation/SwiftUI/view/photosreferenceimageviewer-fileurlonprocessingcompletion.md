@@ -20,7 +20,7 @@ Presents an image viewer for a given image file containing Apple Reference Image
 
 #### Discussion
 
-- Parameters - fileURL: A binding to an optional URL that refers to the file containing the Apple Reference Image image. When non-nil, the sheet will be presented.
+- Parameters - fileURL: A binding to an optional URL that refers to the file containing the Apple Reference Image. When non-nil, the sheet will be presented. Your app must have read access to this file.
 - onProcessingCompletion: An optional closure called when processing completes.
 
 ## See Also
@@ -52,9 +52,9 @@ Presents an image viewer for a given image file containing Apple Reference Image
 - [func photosSharedAlbumPostingSheet(isPresented:items:defaultAlbumIdentifier:photoLibrary:completion:)](view/photossharedalbumpostingsheet(ispresented:items:defaultalbumidentifier:photolibrary:completion:).md)
   Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
 - [func photosReferenceImageViewer(asset: Binding<PHAsset?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(asset:onprocessingcompletion:).md)
-  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `isPresented` is set to true.
+  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `asset` is set.
 - [func photosReferenceImageViewer(pickerItem: Binding<PhotosPickerItem?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(pickeritem:onprocessingcompletion:).md)
-  Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `isPresented` is set to true.
+  Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `pickerItem` is set.
 
 
 ---

@@ -25,7 +25,7 @@ This object is the response the [`Get Performance Test Results`](get-performance
 - `numPending` (int32) *(required)*: An integer that describes the number of pending requests in the performance test.
 - `responseTimes` (PerformanceTestResponseTimes) *(required)*: A [`PerformanceTestResponseTimes`](performancetestresponsetimes.md) object that enumerates the response times measured during the test.
 - `result` (PerformanceTestStatus) *(required)*: A [`PerformanceTestStatus`](performanceteststatus.md) object that describes the overall result of the test.
-- `successRate` (int32) *(required)*: An integer that describes he success rate percentage of the performance test.
+- `successRate` (int32) *(required)*: An integer that describes the success rate percentage of the performance test.
 - `target` (string) *(required)*: The target URL for the performance test.
 
 ## See Also

@@ -25,7 +25,7 @@ func play() async
 
 ## Topics
 
-### Closures
+### Completion handler
 - [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
   A callback the system invokes when MIDI playback completes.
 

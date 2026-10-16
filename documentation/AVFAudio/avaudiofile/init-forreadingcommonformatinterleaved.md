@@ -42,6 +42,7 @@ The processing format refers to the buffers it reads from the file. The system r
   Opens a file for writing using the specified settings.
 - [init(forWriting: URL, settings: [String : Any], commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](avaudiofile/init(forwriting:settings:commonformat:interleaved:).md)
   Opens a file for writing using a specified processing format and settings.
+- [init()](avaudiofile/init.md)
 
 
 ---

@@ -6,13 +6,13 @@
 A media characteristic that indicates that a track or media selection option provides a sign language interpretation of the spoken dialog and other significant aspects of the presentation.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
-- Mac Catalyst 27.1+ (Beta)
-- macOS 27.1+
+- iOS 27.2+ (Beta)
+- iPadOS 27.2+ (Beta)
+- Mac Catalyst 27.2+ (Beta)
+- macOS 27.2+ (Beta)
 - tvOS 27.1+
-- visionOS 27.1+
-- watchOS 27.1+
+- visionOS 27.2+ (Beta)
+- watchOS 27.2+ (Beta)
 
 ## Declaration
 

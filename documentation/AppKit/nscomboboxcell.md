@@ -101,8 +101,6 @@ Also see the [`NSComboBoxCellDataSource`](nscomboboxcelldatasource.md) protocol,
 - [NSCopying](../foundation/nscopying.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

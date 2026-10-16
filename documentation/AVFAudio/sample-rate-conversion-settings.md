@@ -1,4 +1,4 @@
-# Sample Rate Conversion Settings
+# Sample rate conversion settings
 
 **Framework**: AVFAudio
 
@@ -6,7 +6,7 @@ The constants that define sample rate converter audio quality settings.
 
 ## Topics
 
-### Constants
+### Sample rate conversion keys
 - [let AVSampleRateConverterAudioQualityKey: String](avsamplerateconverteraudioqualitykey.md)
   An integer value that represents the audio quality for conversion.
 - [let AVEncoderAudioQualityForVBRKey: String](avencoderaudioqualityforvbrkey.md)
@@ -17,9 +17,7 @@ The constants that define sample rate converter audio quality settings.
 
 - [enum AVAudioQuality](avaudioquality.md)
   The values that specify the sample rate audio quality for encoding and conversion.
-- [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
-  A constant that represents an integer from the audio quality enumeration.
-- [Encoder Settings](encoder-settings.md)
+- [Encoder settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
 - [Time pitch algorithm settings](../avfoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.

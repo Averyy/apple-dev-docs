@@ -1,4 +1,4 @@
 Completed scraping XPC!
-Total pages scraped: 0
-Pages skipped (unchanged): 431
+Total pages scraped: 419
+Pages skipped (unchanged): 12
 Pages failed: 0

@@ -16,7 +16,7 @@ FormatFlagIsPacked
 
 #### Discussion
 
-Even if this flag is clear, it is implied that this flag is set if the `VideoStreamBasicDescription` is filled out such that the fields have the following relationship:
+Even if this flag is clear, it is implied that this flag is set if the [`IOUserVideoStreamBasicDescription`](videodriverkit/iouservideostreambasicdescription.md) is filled out such that the fields have the following relationship:
 
 ```None
 ((mBitsPerSample / 8) * mChannelsPerFrame) == mBytesPerFrame

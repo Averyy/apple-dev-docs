@@ -16,7 +16,7 @@ string notificationUUID
 
 #### Discussion
 
-The App Store server assigns a unique identifer to each notification it sends. Use this value to identify, and ignore, duplicate notifications.
+The App Store server assigns a unique identifier to each notification it sends. Use this value to identify, and ignore, duplicate notifications.
 
 ## See Also
 

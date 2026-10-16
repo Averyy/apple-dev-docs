@@ -18,6 +18,10 @@
 var length: AVMusicTimeStamp
 ```
 
+## See Also
+
+- [var start: AVMusicTimeStamp](avbeatrange-swift.typealias/start.md)
+
 
 ---
 

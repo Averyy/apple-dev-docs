@@ -16,7 +16,7 @@ User client type required for connection to the Host.
 
 #### Overview
 
-Passed as an argument to `IOService::NewUserClient` when Core Video Host is creating a new user client.
+Passed as an argument to [`NewUserClient`](https://developer.apple.com/documentation/driverkit/ioservice/newuserclient) when Core Video Host is creating a new user client.
 
 
 ---

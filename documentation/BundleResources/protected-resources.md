@@ -193,6 +193,8 @@ Before your app can access certain protected resources, like the Bluetooth inter
   A message that tells people why the app is requesting access to financial data stored in Wallet.
 - [NSIdentityUsageDescription](information-property-list/nsidentityusagedescription.md)
   A message that tells people why the app is requesting identity information.
+- [NSIdentityUsageDescriptionDictionary](information-property-list/nsidentityusagedescriptiondictionary.md)
+  A dictionary that contains messages that explain why your app is requesting identity information.
 ### Wi-Fi
 - [UIRequiresPersistentWiFi](information-property-list/uirequirespersistentwifi.md)
   A Boolean value that indicates whether the app requires a Wi-Fi connection.

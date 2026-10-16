@@ -1,4 +1,4 @@
 Completed scraping VideoDriverKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 564
+Total pages scraped: 47
+Pages skipped (unchanged): 517
 Pages failed: 0

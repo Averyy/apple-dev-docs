@@ -25,7 +25,7 @@ It is required that this operation be handled if the device has output streams.
 - [IOUserVideoIOOperationBeginRead](videodriverkit/iouservideoiooperationbeginread.md)
   This operation is called just prior to reading data from the device’s stream buffers.
 - [IOOperationHandler](videodriverkit/iooperationhandler.md)
-  A block that tells the device to perform an IOUserVideoIOOperation.
+  A block that tells the device to perform a video IO operation.
 - [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 

@@ -21,7 +21,7 @@ var descender: CGFloat { get }
 
 #### Discussion
 
-The descender value is measured in points. This value may be positive or negative. For example, if the longest descender extends 2 points below the baseline, this method returns `-2.0` .
+The descender value is measured in points. This value may be positive or negative. For example, if the longest descender extends 2 points below the baseline, this method returns `-2.0` . For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](uifont.md).
 
 ## See Also
 

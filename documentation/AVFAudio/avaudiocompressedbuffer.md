@@ -22,12 +22,12 @@ class AVAudioCompressedBuffer
 
 ## Topics
 
-### Creating an Audio Buffer
+### Creating an audio buffer
 - [init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount)](avaudiocompressedbuffer/init(format:packetcapacity:).md)
   Creates a buffer that contains constant bytes per packet of audio data in a compressed state.
 - [init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount, maximumPacketSize: Int)](avaudiocompressedbuffer/init(format:packetcapacity:maximumpacketsize:).md)
   Creates a buffer that contains audio data in a compressed state.
-### Getting Audio Buffer Properties
+### Getting audio buffer properties
 - [var byteCapacity: UInt32](avaudiocompressedbuffer/bytecapacity.md)
   The number of packets the buffer contains.
 - [var byteLength: UInt32](avaudiocompressedbuffer/bytelength.md)
@@ -63,8 +63,24 @@ class AVAudioCompressedBuffer
 
 ## See Also
 
+- [class AVAudioFile](avaudiofile.md)
+  An object that represents an audio file that the system can open for reading or writing.
 - [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
   An object that represents an audio buffer you use with PCM audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
+- [class AVAudioFormat](avaudioformat.md)
+  An object that describes the representation of an audio format.
+- [class AVAudioChannelLayout](avaudiochannellayout.md)
+  An object that describes the roles of a set of audio channels.
+- [class AVAudioConverter](avaudioconverter.md)
+  An object that converts streams of audio between formats.
+- [class AVAudioTime](avaudiotime.md)
+  An object you use to represent a moment in time.
+- [Audio settings](audio-settings.md)
+  Configure audio processing settings using standard key and value constants.
 
 
 ---

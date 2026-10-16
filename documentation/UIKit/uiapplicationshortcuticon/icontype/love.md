@@ -19,7 +19,7 @@ case love
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934521@2x.png)
+![Love symbol](/images/com.apple.uikit/media-2934521@2x.png)
 
 ## See Also
 

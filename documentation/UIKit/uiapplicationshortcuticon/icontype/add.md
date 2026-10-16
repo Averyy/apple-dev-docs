@@ -19,7 +19,7 @@ case add
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934512@2x.png)
+![Add icon](/images/com.apple.uikit/media-2934512@2x.png)
 
 ## See Also
 

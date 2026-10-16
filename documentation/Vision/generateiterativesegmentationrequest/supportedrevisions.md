@@ -19,6 +19,10 @@ The revisions supported by [`GenerateIterativeSegmentationRequest`](generateiter
 static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## See Also
 
 - [let revision: GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.property.md)

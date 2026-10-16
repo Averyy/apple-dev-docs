@@ -23,11 +23,13 @@ class PKIdentityRequest
 
 #### Overview
 
-A request consists of a [`PKIdentityDocumentDescriptor`](pkidentitydocumentdescriptor.md), a [`nonce`](pkidentityrequest/nonce.md), and a [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md). A [`PKIdentityDocumentDescriptor`](pkidentitydocumentdescriptor.md) describes the document an app requests.
+A request consists of a [`PKIdentityDocumentDescriptor`](pkidentitydocumentdescriptor.md), a [`nonce`](pkidentityrequest/nonce.md), a [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md), and [`usageDescriptionKey`](pkidentityrequest/usagedescriptionkey.md). A [`PKIdentityDocumentDescriptor`](pkidentitydocumentdescriptor.md) describes the document an app requests.
 
 You use a [`nonce`](pkidentityrequest/nonce.md) to verify a request is only made once. It’s up to the app and its server to generate the [`nonce`](pkidentityrequest/nonce.md) before making the request, and to verify the [`nonce`](pkidentityrequest/nonce.md) when the server receives the response.
 
-The [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md) maps to an identifier you configure in the developer portal. Payment and identitity requests share the same identifier, so it’s important that the name of the property matches the equivalent [`PKPaymentRequest`](pkpaymentrequest.md), if necessary.
+The [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md) maps to an identifier you configure in the developer portal. Payment and identity requests share the same identifier, so it’s important that the name of the property matches the equivalent [`PKPaymentRequest`](pkpaymentrequest.md), if necessary.
+
+The [`usageDescriptionKey`](pkidentityrequest/usagedescriptionkey.md) is a key you create in the `NSIdentityDescriptionDictionary` field of your app’s information property list.
 
 ## Topics
 
@@ -38,9 +40,8 @@ The [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md) maps to an i
   An arbitrary number that the signed response playload includes.
 - [var merchantIdentifier: String?](pkidentityrequest/merchantidentifier.md)
   A value that represents the merchant that makes the request.
-### Instance Properties
 - [var usageDescriptionKey: String?](pkidentityrequest/usagedescriptionkey.md)
-  A key in the NSIdentityUsageDescriptionDictionary field of the app’s Info.plist file.
+  The key in your app’s information property list that describes the reason for an identity request.
 
 ## Relationships
 

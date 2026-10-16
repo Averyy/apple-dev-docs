@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: case
 
-Accessory Tracking
+The authorization for access to accessory tracking data.
 
 **Availability**:
 - macOS 26.0+

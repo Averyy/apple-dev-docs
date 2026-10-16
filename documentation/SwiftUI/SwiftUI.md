@@ -145,6 +145,11 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Expose custom views and modifiers in the Xcode library.
 - [Performance analysis](performance-analysis.md)
   Measure and improve your app’s responsiveness.
+### Structures
+- [struct ContentMarginGuide](contentmarginguide.md)
+  A guide for resolving the content margins for a view.
+- [struct ToolbarTitleAlignment](toolbartitlealignment.md)
+  A preferred alignment for a navigation bar’s title.
 
 
 ---

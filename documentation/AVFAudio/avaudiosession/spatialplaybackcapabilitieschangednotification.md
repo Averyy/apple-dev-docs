@@ -29,9 +29,22 @@ A route change may result in a change in the ability for the system to play spat
 
 ## Topics
 
-### User Info Keys
+### User info keys
 - [let AVAudioSessionSpatialAudioEnabledKey: String](avaudiosessionspatialaudioenabledkey.md)
   A user info key that you use to retrieve the state of spatial playback.
+
+## See Also
+
+- [var renderingMode: AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.property.md)
+  The current audio session’s rendering mode.
+- [AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.enum.md)
+  Audio session rendering mode identifiers.
+- [class let renderingModeChangeNotification: NSNotification.Name](avaudiosession/renderingmodechangenotification.md)
+  A notification the system posts when the rendering mode changes.
+- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](avaudiosession/supportedoutputchannellayouts.md)
+  The array of channel layouts that the current route supports.
+- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
+  A notification the system posts when the rendering capabilities change.
 
 
 ---

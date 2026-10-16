@@ -33,7 +33,11 @@ The [`Query Supported App Languages`](query-supported-app-languages.md) endpoint
     },
     {
       "language": "es",
-      "languageCode": "es-US"
+      "languageCode": "es-MX"
+    },
+    {
+      "language": "zh",
+      "languageCode": "zh-Hans"
     }
   ],
   "adsDefaultLanguages": [

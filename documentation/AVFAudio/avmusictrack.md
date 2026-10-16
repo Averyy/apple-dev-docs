@@ -21,7 +21,7 @@ class AVMusicTrack
 
 ## Topics
 
-### Configuring Music Track Properties
+### Configuring music track properties
 - [var isMuted: Bool](avmusictrack/ismuted.md)
   A Boolean value that indicates whether the track is in a muted state.
 - [var isSoloed: Bool](avmusictrack/issoloed.md)
@@ -32,43 +32,43 @@ class AVMusicTrack
   The time resolution value for the sequence, in ticks (pulses) per quarter note.
 - [var usesAutomatedParameters: Bool](avmusictrack/usesautomatedparameters.md)
   A Boolean value that indicates whether the track is an automation track.
-### Configuring the Track Duration
+### Configuring the track duration
 - [var lengthInBeats: AVMusicTimeStamp](avmusictrack/lengthinbeats.md)
   The total duration of the track, in beats.
 - [var lengthInSeconds: TimeInterval](avmusictrack/lengthinseconds.md)
   The total duration of the track, in seconds.
-### Configuring the Track Destinations
+### Configuring the track destinations
 - [var destinationAudioUnit: AVAudioUnit?](avmusictrack/destinationaudiounit.md)
   The audio unit that receives the track’s events.
 - [var destinationMIDIEndpoint: MIDIEndpointRef](avmusictrack/destinationmidiendpoint.md)
   The MIDI endpoint you specify as the track’s target.
-### Configuring the Looping State
+### Configuring the looping state
 - [var isLoopingEnabled: Bool](avmusictrack/isloopingenabled.md)
   A Boolean value that indicates whether the track is in a looping state.
 - [var loopRange: AVBeatRange](avmusictrack/looprange.md)
   The timestamp range for the loop, in beats.
 - [var numberOfLoops: Int](avmusictrack/numberofloops.md)
   The number of times the track’s loop repeats.
-### Adding and Clearing Events
+### Adding and clearing events
 - [func addEvent(AVMusicEvent, at: AVMusicTimeStamp)](avmusictrack/addevent(_:at:).md)
   Adds a music event to a track at the time you specify.
 - [func moveEvents(in: AVBeatRange, by: AVMusicTimeStamp)](avmusictrack/moveevents(in:by:).md)
   Moves the beat location of all events in the given beat range by the amount you specify.
 - [func clearEvents(in: AVBeatRange)](avmusictrack/clearevents(in:).md)
   Removes all events in the given beat range from the music track.
-### Cutting and Copying Events
+### Cutting and copying events
 - [func cutEvents(in: AVBeatRange)](avmusictrack/cutevents(in:).md)
   Splices all events in the beat range from the music track.
 - [func copyEvents(in: AVBeatRange, from: AVMusicTrack, insertAt: AVMusicTimeStamp)](avmusictrack/copyevents(in:from:insertat:).md)
   Copies the events from the source track and splices them into the current music track.
 - [func copyAndMergeEvents(in: AVBeatRange, from: AVMusicTrack, mergeAt: AVMusicTimeStamp)](avmusictrack/copyandmergeevents(in:from:mergeat:).md)
   Copies the events from the source track and merges them into the current music track.
-### Iterating Over Events
+### Iterating over events
 - [func enumerateEvents(in: AVBeatRange, using: (AVMusicEvent, UnsafeMutablePointer<AVMusicTimeStamp>, UnsafeMutablePointer<ObjCBool>) -> Void)](avmusictrack/enumerateevents(in:using:).md)
   Iterates through the music events within the track.
 - [typealias AVMusicEventEnumerationBlock](avmusiceventenumerationblock.md)
   A type you use to enumerate and remove music events, if necessary.
-### Getting the End of Track Timestamp
+### Getting the end-of-track time
 - [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
 

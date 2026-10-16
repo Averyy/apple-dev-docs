@@ -77,18 +77,18 @@ For more information about App Store Server Notifications versions, see [`App St
 
 ## Properties
 
-- `accountTenure` (accountTenure): **(Required)** The age of the customer’s account.
-- `appAccountToken` (appAccountToken): **(Required)** The UUID of the in-app user account that completed the in-app purchase transaction.
-- `consumptionStatus` (consumptionStatus): **(Required)** A value that indicates the extent to which the customer consumed the in-app purchase.
-- `customerConsented` (customerConsented): **(Required)** A Boolean value of `true` or `false` that indicates whether the customer consented to provide consumption data. Note: The App Store server rejects requests that have a [`customerConsented`](customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md).
-- `deliveryStatus` (deliveryStatusV1): **(Required)** A value that indicates whether the app successfully delivered an in-app purchase that works properly.
-- `lifetimeDollarsPurchased` (lifetimeDollarsPurchased): **(Required)** A value that indicates the total amount, in USD, of in-app purchases the customer has made in your app, across all platforms.
-- `lifetimeDollarsRefunded` (lifetimeDollarsRefunded): **(Required)** A value that indicates the total amount, in USD, of refunds the customer has received, in your app, across all platforms.
-- `platform` (platform): **(Required)** A value that indicates the platform on which the customer consumed the in-app purchase.
-- `playTime` (playTime): **(Required)** A value that indicates the amount of time that the customer used the app.
+- `accountTenure` (accountTenure) *(required)*: The age of the customer’s account.
+- `appAccountToken` (appAccountToken) *(required)*: The UUID of the in-app user account that completed the in-app purchase transaction.
+- `consumptionStatus` (consumptionStatus) *(required)*: A value that indicates the extent to which the customer consumed the in-app purchase.
+- `customerConsented` (customerConsented) *(required)*: A Boolean value of `true` or `false` that indicates whether the customer consented to provide consumption data. Note: The App Store server rejects requests that have a [`customerConsented`](customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md).
+- `deliveryStatus` (deliveryStatusV1) *(required)*: A value that indicates whether the app successfully delivered an in-app purchase that works properly.
+- `lifetimeDollarsPurchased` (lifetimeDollarsPurchased) *(required)*: A value that indicates the total amount, in USD, of in-app purchases the customer has made in your app, across all platforms.
+- `lifetimeDollarsRefunded` (lifetimeDollarsRefunded) *(required)*: A value that indicates the total amount, in USD, of refunds the customer has received, in your app, across all platforms.
+- `platform` (platform) *(required)*: A value that indicates the platform on which the customer consumed the in-app purchase.
+- `playTime` (playTime) *(required)*: A value that indicates the amount of time that the customer used the app.
 - `refundPreference` (refundPreferenceV1): A value that indicates your preference, based on your operational logic, as to whether Apple should grant the refund.
-- `sampleContentProvided` (sampleContentProvided): **(Required)** A Boolean value of `true` or `false` that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
-- `userStatus` (userStatus): **(Required)** The status of the customer’s account.
+- `sampleContentProvided` (sampleContentProvided) *(required)*: A Boolean value of `true` or `false` that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
+- `userStatus` (userStatus) *(required)*: The status of the customer’s account.
 
 ## See Also
 

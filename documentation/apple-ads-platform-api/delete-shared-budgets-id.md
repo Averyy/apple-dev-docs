@@ -12,6 +12,8 @@ Soft-deletes a budget order by its unique identifier.
 
 This endpoint soft-deletes the specified budget order. The system marks the record `deleted: true`, and it’s no longer available for assignment to campaigns. You must remove all campaign assignments before you can delete a budget order.
 
+Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+
 ##### Check Deletion Restrictions
 
 Deletion returns a `400 Bad Request` in the following cases:

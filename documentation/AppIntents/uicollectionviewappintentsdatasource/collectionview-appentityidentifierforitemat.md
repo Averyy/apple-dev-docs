@@ -26,7 +26,7 @@ The app entity identifier at the specified location in the collection view.
 
 #### Discussion
 
-For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](AppIntents.md).
+For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](providing-contextual-cues-to-apple-intelligence-and-siri.md) and [`App Intents`](AppIntents.md).
 
 ## Parameters
 

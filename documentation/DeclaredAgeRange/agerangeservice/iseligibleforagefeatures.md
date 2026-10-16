@@ -17,6 +17,10 @@ A Boolean value that indicates whether an adult, teen, or child is eligible for 
 var isEligibleForAgeFeatures: Bool { get async throws }
 ```
 
+## Mentions
+
+- [Requesting people’s age range information in your app](requesting-people-share-their-age-range-with-your-app.md)
+
 #### Return Value
 
 `true` if your app is eligible for age-gated features; otherwise, `false`.

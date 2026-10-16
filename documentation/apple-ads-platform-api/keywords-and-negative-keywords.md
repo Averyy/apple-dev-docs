@@ -71,15 +71,15 @@ For bulk create, update, and delete across keywords and negative keywords, see [
 ## See Also
 
 - [Keywords Endpoints](keywords-endpoints.md)
-  Endpoints for creating, retrieving, updating, and deleting keywords.
+  Create, retrieve, update, query, and delete the keywords that match your ad group’s ads to searches.
 - [Negative Keywords Endpoints](negative-keywords-endpoints.md)
-  Endpoints for creating, retrieving, updating, and deleting negative keywords.
+  Create, retrieve, update, query, and delete negative keywords that block ads for unwanted searches.
 - [Keywords Data Objects](keywords-data-objects.md)
-  Request, response, and data objects for managing keywords in ad group campaigns.
+  Build keyword create and update requests, and read keyword responses and query results.
 - [Negative Keywords Data Objects](negative-keywords-objects.md)
-  Request and response objects for negative keyword endpoints.
+  Build negative keyword create and update requests, and read responses and query results.
 - [Keywords Shared Data Types](keywords-shared-data-types.md)
-  Shared enumerations used by keyword and negative keyword objects.
+  Set the status and match type of keywords and negative keywords, and interpret a keyword’s display status.
 
 
 ---

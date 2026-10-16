@@ -19,6 +19,10 @@ The assets are not ready or the status is unknown. Call [`downloadAssets()`](dow
 case notReady
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## See Also
 
 - [DownloadableAssetsRequestStatus.error(_:)](downloadableassetsrequeststatus/error(_:).md)

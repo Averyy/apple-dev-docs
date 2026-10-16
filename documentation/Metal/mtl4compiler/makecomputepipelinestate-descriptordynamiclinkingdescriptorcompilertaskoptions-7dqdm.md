@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: method
 
-Creates a new compute pipeline state object synchronously.
+Creates a compute pipeline state synchronously.
 
 **Availability**:
 - iOS 26.0+
@@ -21,12 +21,13 @@ func makeComputePipelineState(descriptor: MTL4ComputePipelineDescriptor, dynamic
 
 #### Return Value
 
-A new compute pipeline state object upon success, otherwise this method throws.
+A compute pipeline state upon success, otherwise this method throws.
 
 ## Parameters
 
-- `descriptor`: A compute pipeline state descriptor describing the pipeline this compiler creates.
-- `compilerTaskOptions`: A description of the compilation process itself, providing parameters that influence execution of the compilation process.
+- `descriptor`: A compute pipeline state descriptor that describes the pipeline the compiler creates.
+- `dynamicLinkingDescriptor`: An optional descriptor that configures dynamic linking for the pipeline state.
+- `compilerTaskOptions`: Options that control the compilation process.
 
 
 ---

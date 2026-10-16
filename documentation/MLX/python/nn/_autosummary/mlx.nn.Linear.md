@@ -38,8 +38,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 Concretely:
 
 \[y = x W^\top + b\]
-where \(W\) has shape `[output_dims, input_dims]` and \(b\) has shape `[output_dims]`.
-The values are initialized from the uniform distribution \(\mathcal{U}(-{k}, {k})\),
+where \(W\) has shape `[output_dims, input_dims]` and \(b\) has shape
+`[output_dims]`.
+The values are initialized from the uniform distribution
+\(\mathcal{U}(-{k}, {k})\),
 where \(k = \frac{1}{\sqrt{D_i}}\) and \(D_i\) is equal to `input_dims`.
 
 Parameters:

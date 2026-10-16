@@ -37,7 +37,7 @@ The IOOperationHandler will be invoked when a IO operation is performed by the h
 - [GetCurrentClientIOTime](iouservideodevice/getcurrentclientiotime.md)
   Gets the current sample/host time pair in the ring buffer written to or read from by the client
 - [IOOperationHandler](videodriverkit/iooperationhandler.md)
-  A block that tells the device to perform an IOUserVideoIOOperation.
+  A block that tells the device to perform a video IO operation.
 
 
 ---

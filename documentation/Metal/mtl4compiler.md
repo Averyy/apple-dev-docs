@@ -38,9 +38,9 @@ protocol MTL4Compiler : NSObjectProtocol, Sendable
 - [func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor, compilerTaskOptions: MTL4CompilerTaskOptions?) async throws -> any MTL4BinaryFunction](mtl4compiler/makebinaryfunction(descriptor:compilertaskoptions:)-hkc4.md)
   Creates a new binary visible or intersection function asynchronously.
 - [func makeComputePipelineState(descriptor: MTL4ComputePipelineDescriptor, dynamicLinkingDescriptor: MTL4PipelineStageDynamicLinkingDescriptor?, compilerTaskOptions: MTL4CompilerTaskOptions?) async throws -> any MTLComputePipelineState](mtl4compiler/makecomputepipelinestate(descriptor:dynamiclinkingdescriptor:compilertaskoptions:)-19x.md)
-  Creates a new compute pipeline state asynchronously.
+  Creates a compute pipeline state asynchronously.
 - [func makeComputePipelineState(descriptor: MTL4ComputePipelineDescriptor, dynamicLinkingDescriptor: MTL4PipelineStageDynamicLinkingDescriptor?, compilerTaskOptions: MTL4CompilerTaskOptions?) throws -> any MTLComputePipelineState](mtl4compiler/makecomputepipelinestate(descriptor:dynamiclinkingdescriptor:compilertaskoptions:)-7dqdm.md)
-  Creates a new compute pipeline state object synchronously.
+  Creates a compute pipeline state synchronously.
 - [func makeDynamicLibrary(library: any MTLLibrary) throws -> any MTLDynamicLibrary](mtl4compiler/makedynamiclibrary(library:).md)
   Creates a new dynamic library from a library containing Metal IR code synchronously.
 - [func makeDynamicLibrary(url: URL) throws -> any MTLDynamicLibrary](mtl4compiler/makedynamiclibrary(url:).md)

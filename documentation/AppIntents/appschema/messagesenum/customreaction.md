@@ -26,8 +26,8 @@ The following example shows an app enum that conforms to the `customReaction` sc
 
 ```swift
 @AppEnum(schema: .messages.customReaction)
-enum Tapback: String {
-    case <#Tapback Case#>
+enum CustomReaction: String {
+    case <#CustomReaction Case#>
 
     static let caseDisplayRepresentations: [Self: DisplayRepresentation] = [
         <#DisplayRepresentations#>

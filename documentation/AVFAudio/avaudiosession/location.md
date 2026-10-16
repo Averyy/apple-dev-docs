@@ -21,16 +21,16 @@ struct Location
 
 ## Topics
 
-### Creating a Location
+### Creating a location
 - [init(rawValue: String)](avaudiosession/location/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
-### Getting Standard Locations
+### Getting standard locations
 - [static let lower: AVAudioSession.Location](avaudiosession/location/lower.md)
   A value that indicates that the data source is located near the bottom end of the device.
 - [static let upper: AVAudioSession.Location](avaudiosession/location/upper.md)
   A value that indicates that the data source is located near the top end of the device.
 ### Deprecated
-- [Deprecated Symbols](location-deprecated-symbols.md)
+- [Deprecated symbols](location-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships

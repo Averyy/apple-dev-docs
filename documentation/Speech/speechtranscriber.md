@@ -53,11 +53,17 @@ Use the [`isAvailable`](speechtranscriber/isavailable.md) or [`supportedLocales`
   The locales that the transcriber can transcribe into, including locales that may not be installed but are downloadable.
 - [static func supportedLocale(equivalentTo: Locale) async -> Locale?](speechtranscriber/supportedlocale(equivalentto:).md)
   A locale from the module’s supported locales equivalent to the given locale.
+### Checking audio format support
+- [var availableCompatibleAudioFormats: [AVAudioFormat]](speechmodule/availablecompatibleaudioformats.md)
+  The audio formats that this module is able to analyze, given its configuration.
 ### Getting results
 - [var results: some Sendable & AsyncSequence<SpeechTranscriber.Result, any Error>](speechtranscriber/results.md)
   The asynchronous sequence of transcription results.
 - [SpeechTranscriber.Result](speechtranscriber/result.md)
   A phrase or passage of transcribed speech. The phrases are sent in order.
+### Inspecting the transcriber
+- [var selectedLocales: [Locale]](localedependentspeechmodule/selectedlocales.md)
+  The set of asset locales specified by the module’s configuration.
 
 ## Relationships
 

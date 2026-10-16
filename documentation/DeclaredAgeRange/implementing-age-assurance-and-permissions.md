@@ -53,8 +53,8 @@ let result = AgeRangeResult.from(response)
 `AgeRangeResult.from(_:)` parses the response into one of four categories:
 
 - **`.minor`**: The person’s upper age bound is below 18.
-- **`.verifiedAdult`**: The person is an adult with a confirmed payment method.
-- **`.unverifiedAdult`**: The person is an adult without account verification.
+- **`.verifiedAdult`**: The person is an adult with a confirmed age declaration.
+- **`.unverifiedAdult`**: The person is an adult without a confirmed age declaration.
 - **`.declinedSharing`**: The person declined to share their age range.
 
 #### Handle the Significant Change Flow

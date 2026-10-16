@@ -16,7 +16,7 @@ Returns the earliest date that the person permits your app to read samples for t
 ## Declaration
 
 ```swift
-func getEarliestAuthorizedSampleDate(for types: Set<HKObjectType>, completion: @escaping @Sendable ([HKObjectType : Date]?, (any Error)?) -> Void)
+func earliestAuthorizedSampleDate(for types: Set<HKObjectType>) async throws -> [HKObjectType : Date]
 ```
 
 ## Mentions
@@ -95,8 +95,6 @@ let predicate = HKQuery.predicateForSamples(
   Requests permission to save and read the data types specified by an extension.
 - [var authorizationViewControllerPresenter: UIViewController?](hkhealthstore/authorizationviewcontrollerpresenter.md)
   The view controller that presents HealthKit authorization sheets.
-- [func earliestAuthorizedSampleDate(for: Set<HKObjectType>) async throws -> [HKObjectType : Date]](hkhealthstore/earliestauthorizedsampledate(for:).md)
-  Returns the earliest date that the person permits your app to read samples for the given data types.
 - [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
   Returns the earliest date that the framework permits your app to save or read samples.
 

@@ -22,7 +22,9 @@ enum PersonalVoiceAuthorizationStatus
 
 ## Topics
 
-### Authorization statuses
+### Creating an authorization status
+- [init?(rawValue: UInt)](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/init(rawvalue:).md)
+### Checking authorization status
 - [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.authorized](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/authorized.md)
   The user granted your app’s request to use personal voices.
 - [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.denied](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/denied.md)
@@ -31,8 +33,6 @@ enum PersonalVoiceAuthorizationStatus
   The app hasn’t requested authorization to use personal voices.
 - [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.unsupported](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/unsupported.md)
   The device doesn’t support personal voices.
-### Initializers
-- [init?(rawValue: UInt)](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

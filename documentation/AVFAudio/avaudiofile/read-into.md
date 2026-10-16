@@ -37,6 +37,9 @@ When reading sequentially from the [`framePosition`](avaudiofile/frameposition.m
 - [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](avaudiofile/read(into:framecount:).md)
   Reads a portion of an audio buffer using the number of frames you specify.
 - [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](avaudiofile/read(framecount:).md)
+- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:)-6qgec.md)
+  Writes an audio buffer sequentially.
+- [func write(from: AVReadOnlyAudioPCMBuffer) throws](avaudiofile/write(from:)-4zfhf.md)
 - [func close()](avaudiofile/close.md)
   Closes the audio file.
 

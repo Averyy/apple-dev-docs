@@ -22,11 +22,11 @@ init(wrapping error: some CustomLocalizedStringResourceConvertible & Error)
 
 #### Discussion
 
-Conform your custom `Error` to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) to provide a localized description of the error.
+Conform your custom [`Error`](https://developer.apple.com/documentation/swift/error) to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) to provide a localized description of the error.
 
-The system calls this initializer for errors thrown from [`perform()`](appintent/perform().md) that conform to `CustomLocalizedStringResourceConvertible`.
+The system calls this initializer for errors thrown from [`perform()`](appintent/perform().md) that conform to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible).
 
-If the error conforms to both `CustomLocalizedStringResourceConvertible` and [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
+If the error conforms to both [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) and [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
 
 ## Parameters
 

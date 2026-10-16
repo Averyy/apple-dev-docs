@@ -19,7 +19,7 @@ case location
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934513@2x.png)
+![Location arrow icon](/images/com.apple.uikit/media-2934513@2x.png)
 
 ## See Also
 

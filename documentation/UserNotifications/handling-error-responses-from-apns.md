@@ -75,7 +75,7 @@ The table below lists the possible error codes included in the reason key of a r
 
 The following code snippet shows a sample response when an error occurs.
 
-```Other
+```other
 HEADERS
   - END_STREAM
   + END_HEADERS

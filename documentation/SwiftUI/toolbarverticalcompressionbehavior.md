@@ -6,8 +6,8 @@
 A behavior that determines how bars compress when the system places different types of bars together and space is constrained.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 - Mac Catalyst 27.1+
 - macOS 27.1+
 - tvOS 27.1+

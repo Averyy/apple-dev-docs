@@ -6,6 +6,8 @@ Eliminate issues in your audio-specific code when running on Apple silicon Mac c
 
 #### Overview
 
+> ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference) and [`Configuring the build settings of a target`](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
+
 Include time in your porting plans to migrate code that uses the Core Audio family of frameworks. In particular, update your Audio Units to support Apple silicon, and optimize any real-time code to run efficiently on all Mac computers.
 
 ##### Create Universal Versions of Your Host App and Audio Units

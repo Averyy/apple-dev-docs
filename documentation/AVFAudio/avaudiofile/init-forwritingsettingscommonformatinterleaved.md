@@ -49,6 +49,7 @@ For more information about the `settings` parameter, see the [`settings`](avaudi
   Opens a file for reading using the specified processing format.
 - [init(forWriting: URL, settings: [String : Any]) throws](avaudiofile/init(forwriting:settings:).md)
   Opens a file for writing using the specified settings.
+- [init()](avaudiofile/init.md)
 
 
 ---

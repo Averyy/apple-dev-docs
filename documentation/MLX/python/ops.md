@@ -158,6 +158,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | meshgrid(*arrays[, sparse, indexing, stream]) | Generate multidimensional coordinate grids from 1-D coordinate arrays |
 | min(a, /[, axis, keepdims, stream]) | Aminreduction over the given axes. |
 | minimum(a, b, /, *[, stream]) | Element-wise minimum. |
+| minmax(a, /[, axis, keepdims, stream]) | Return the minimum and maximum over the given axes. |
 | moveaxis(a, /, source, destination, *[, stream]) | Move an axis to a new position. |
 | multiply(a, b[, stream]) | Element-wise multiplication. |
 | nan_to_num(a[, nan, posinf, neginf, stream]) | Replace NaN and Inf values with finite numbers. |
@@ -227,6 +228,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | triu(x[, k, stream]) | Zeros the array below the given diagonal. |
 | trunc(a, /, *[, stream]) | Element-wise truncation towards zero. |
 | unflatten(a, /, axis, shape, *[, stream]) | Unflatten an axis of an array to a shape. |
+| unique(a, /, size[, return_index, ...]) | Returns the sorted unique elements of the flattened array. |
 | unstack(x, /, *[, axis, stream]) | Split an array into a sequence of arrays along the given axis. |
 | vecdot(a, b, /, *[, axis, stream]) | Compute the vector dot product of two arrays along an axis. |
 | var(a, /[, axis, keepdims, ddof, stream]) | Compute the variance(s) over the given axes. |

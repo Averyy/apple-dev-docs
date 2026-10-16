@@ -21,7 +21,7 @@ class AVAudioUnitVarispeed
 
 ## Topics
 
-### Getting and setting the playback rate
+### Adjusting the playback rate
 - [var rate: Float](avaudiounitvarispeed/rate.md)
   The audio playback rate.
 
@@ -41,10 +41,10 @@ class AVAudioUnitVarispeed
 
 ## See Also
 
-- [class AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
-  An object that processes audio in nonreal time.
 - [class AVAudioUnitTimePitch](avaudiounittimepitch.md)
   An object that provides a good-quality playback rate and pitch shifting independently of each other.
+- [class AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
+  An object that processes audio in nonreal time.
 
 
 ---

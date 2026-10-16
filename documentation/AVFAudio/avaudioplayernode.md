@@ -68,10 +68,10 @@ When you use a player node with the engine operating in manual rendering mode, y
 
 ## Topics
 
-### Creating a Player Node
+### Creating a player node
 - [init()](avaudioplayernode/init.md)
   Creates an initialized audio player node.
-### Scheduling Playback
+### Scheduling files and segments
 - [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionHandler: (() -> Void)?)](avaudioplayernode/schedulefile(_:at:completionhandler:).md)
   Schedules the playing of an entire audio file.
 - [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulefile(_:at:completioncallbacktype:completionhandler:).md)
@@ -80,6 +80,13 @@ When you use a player node with the engine operating in manual rendering mode, y
   Schedules the playing of an audio file segment.
 - [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulesegment(_:startingframe:framecount:at:completioncallbacktype:completionhandler:).md)
   Schedules the playing of an audio file segment with a callback option you specify.
+- [enum AVAudioPlayerNodeCompletionCallbackType](avaudioplayernodecompletioncallbacktype.md)
+  Constants that specify when the framework must invoke the completion handler.
+- [typealias AVAudioPlayerNodeCompletionHandler](avaudioplayernodecompletionhandler.md)
+  The callback handler for buffer or file completion.
+- [typealias AVAudioNodeCompletionHandler](avaudionodecompletionhandler.md)
+  A general callback handler for an audio node.
+### Scheduling buffers
 - [func scheduleBuffer(AVAudioPCMBuffer, at: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:at:options:completionhandler:).md)
   Schedules the playing samples from an audio buffer at the time and playback options you specify.
 - [func scheduleBuffer(AVAudioPCMBuffer, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:completionhandler:).md)
@@ -88,18 +95,18 @@ When you use a player node with the engine operating in manual rendering mode, y
   Schedules the playing samples from an audio buffer with the playback options you specify.
 - [func scheduleBuffer(AVAudioPCMBuffer, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulebuffer(_:completioncallbacktype:completionhandler:).md)
   Schedules the playing samples from an audio buffer with the callback option you specify.
+- [func scheduleBuffer(AVAudioPCMBuffer, atTime: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:attime:options:completioncallbacktype:completionhandler:)-3ewd3.md)
+  Schedules playing samples from an audio buffer.
+- [func scheduleBuffer(AVReadOnlyAudioPCMBuffer, atTime: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:attime:options:completioncallbacktype:completionhandler:)-81qje.md)
+  Schedules playing samples from a read-only audio buffer.
 - [struct AVAudioPlayerNodeBufferOptions](avaudioplayernodebufferoptions.md)
   The buffer options that control the playback scheduling.
-- [enum AVAudioPlayerNodeCompletionCallbackType](avaudioplayernodecompletioncallbacktype.md)
-  Constants that specify when the framework must invoke the completion handler.
-- [typealias AVAudioPlayerNodeCompletionHandler](avaudioplayernodecompletionhandler.md)
-  The callback handler for buffer or file completion.
-### Converting Node and Player Times
+### Converting node and player times
 - [func nodeTime(forPlayerTime: AVAudioTime) -> AVAudioTime?](avaudioplayernode/nodetime(forplayertime:).md)
   Converts from player time to node time.
 - [func playerTime(forNodeTime: AVAudioTime) -> AVAudioTime?](avaudioplayernode/playertime(fornodetime:).md)
   Converts from node time to player time.
-### Controlling Playback
+### Controlling playback
 - [func prepare(withFrameCount: AVAudioFrameCount)](avaudioplayernode/prepare(withframecount:).md)
   Prepares the file regions or buffers you schedule for playback.
 - [func playAudio() throws](avaudioplayernode/playaudio.md)
@@ -114,11 +121,6 @@ When you use a player node with the engine operating in manual rendering mode, y
   Pauses the node’s playback.
 - [func stop()](avaudioplayernode/stop.md)
   Clears all of the node’s events you schedule and stops playback.
-### Instance Methods
-- [func scheduleBuffer(AVAudioPCMBuffer, atTime: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:attime:options:completioncallbacktype:completionhandler:)-3ewd3.md)
-  Schedules playing samples from an audio buffer.
-- [func scheduleBuffer(AVReadOnlyAudioPCMBuffer, atTime: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:attime:options:completioncallbacktype:completionhandler:)-81qje.md)
-  Schedules playing samples from a read-only audio buffer.
 
 ## Relationships
 
@@ -143,8 +145,6 @@ When you use a player node with the engine operating in manual rendering mode, y
   Synchronize audio loops with a main tempo by creating a real-time clip launcher.
 - [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
-- [Using voice processing](using-voice-processing.md)
-  Add voice-processing capabilities to your app by using audio engine.
 
 
 ---

@@ -6,9 +6,9 @@
 The axis of the current split for the view within the arrangement if it exists.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
-- Mac Catalyst 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
+- Mac Catalyst 27.1+
 - tvOS 27.1+
 - visionOS 27.1+
 

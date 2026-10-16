@@ -36,7 +36,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 **class AdaDelta(*learning_rate: float | Callable[[array], array]*, *rho: float = 0.9*, *eps: float = 1e-06*)**
 : The AdaDelta optimizer with a learning rate [1].
 Our AdaDelta implementation follows the original paper. In detail,
-[1]: Zeiler, M.D., 2012. ADADELTA: an adaptive learning rate method. arXiv preprint arXiv:1212.5701.
+[1]: Zeiler, M.D., 2012. ADADELTA: an adaptive learning rate method. arXiv preprint
+arXiv:1212.5701.
 
 \[\begin{split}v_{t+1} &= \rho v_t + (1 - \rho) g_t^2 \\
 \Delta w_{t+1} &= \frac{\sqrt{u_t + \epsilon}}{\sqrt{v_{t+1} + \epsilon}} g_t \\
@@ -48,8 +49,8 @@ Parameters:
 **learning_rate** ([float](https://docs.python.org/3/builtins/functions.html#float)* or **callable*) – The learning rate \(\lambda\).
 **rho** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The coefficient \(\rho\) used for computing a
 running average of squared gradients. Default: `0.9`
-**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the denominator to improve
-numerical stability. Default: `1e-6`
+**eps** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the denominator to
+improve numerical stability. Default: `1e-6`
 
 Methods
 

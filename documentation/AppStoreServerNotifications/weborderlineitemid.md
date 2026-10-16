@@ -25,7 +25,7 @@ This value applies only to auto-renewable subscriptions.
 - [type transactionId](transactionid.md)
   The unique identifier for a transaction, such as an In-App Purchase, restored purchase, or subscription renewal.
 - [type previousOriginalTransactionId](previousoriginaltransactionid.md)
-  The original transaction identifer of a subscription before migration.
+  The original transaction identifier of a subscription before migration.
 
 
 ---

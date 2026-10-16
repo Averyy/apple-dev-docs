@@ -22,7 +22,7 @@ The objects in a video box are typically [`IOUserVideoDevice`](iouservideodevice
 
 ### Creating a video box
 - [Create](iouservideobox/create.md)
-  Static factory method to allocate and initialize an IOUserVideoBox.
+  Static factory method to allocate and initialize a user video box.
 - [init](iouservideobox/init.md)
   Initializes a video box.
 - [IOUserVideoDriver](iouservideodriver.md)

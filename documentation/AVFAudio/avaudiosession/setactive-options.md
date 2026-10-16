@@ -36,7 +36,7 @@ When your app deactivates a session, the return value is [`false`](https://devel
 
 ## Topics
 
-### Data Types
+### Activation options
 - [AVAudioSession.SetActiveOptions](avaudiosession/setactiveoptions.md)
   Options that provide additional information about your app’s audio intentions upon session deactivation.
 

@@ -1,4 +1,4 @@
 Completed scraping PCIDriverKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 355
+Total pages scraped: 339
+Pages skipped (unchanged): 16
 Pages failed: 0

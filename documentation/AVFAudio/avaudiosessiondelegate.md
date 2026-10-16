@@ -28,7 +28,7 @@ When using the AVFoundation framework for recording or playback, you can also re
 
 ## Topics
 
-### Delegate Methods
+### Responding to session events
 - [func beginInterruption()](avaudiosessiondelegate/begininterruption.md)
   Called after your audio session is interrupted.
 - [func endInterruption()](avaudiosessiondelegate/endinterruption.md)

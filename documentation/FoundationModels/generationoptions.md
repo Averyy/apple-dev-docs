@@ -31,6 +31,8 @@ Only use [`maximumResponseTokens`](generationoptions/maximumresponsetokens.md) w
 
 All input to the model contributes tokens to the context window of the [`LanguageModelSession`](languagemodelsession.md) — including the [`Instructions`](instructions.md), [`Prompt`](prompt.md), [`Tool`](tool.md), and [`Generable`](generable.md) types, and the model’s responses. If your session exceeds the available context size, it throws [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md). For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
 
+When a property is `nil`, the framework defers to the underlying [`LanguageModel`](languagemodel.md) to select an appropriate value. Each model, and each version of a given model, may pick a different default, and the framework doesn’t guarantee a specific value or that the value remains stable across OS or model updates.
+
 ## Topics
 
 ### Creating options

@@ -37,8 +37,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 : Replace the parameters of this Module with the provided ones in the
 dict of dicts and lists.
 Commonly used by the optimizer to change the model to the updated
-(optimized) parameters. Also used by the [mlx.nn.value_and_grad()](../../_autosummary/mlx.nn.value_and_grad.html#mlx.nn.value_and_grad) to set the
-tracers in the model in order to compute gradients.
+(optimized) parameters. Also used by the [mlx.nn.value_and_grad()](../../_autosummary/mlx.nn.value_and_grad.html#mlx.nn.value_and_grad) to set
+the tracers in the model in order to compute gradients.
 The passed in parameters dictionary need not be a full dictionary
 similar to [parameters()](mlx.nn.Module.parameters.html#mlx.nn.Module.parameters). Only the provided locations will be
 updated.

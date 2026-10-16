@@ -21,8 +21,10 @@ func copyCommands(sourceBuffer: any MTLIndirectCommandBuffer, sourceRange: Range
 
 ## Parameters
 
-- `sourceRange`: The range of commands in `sourceBuffer` to copy. The copy operation requires that the source range starts at a valid execution point.
-- `destinationIndex`: An index in `destinationBuffer` into where the command copies content to. The copy operation requires that the destination index is a valid execution point with enough space left in `destinationBuffer` to accommodate `sourceRange.count` commands.
+- `sourceBuffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance the command copies from.
+- `sourceRange`: The range of commands in `sourceBuffer` to copy. The source range needs to start at a valid execution point.
+- `destinationBuffer`: Another [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance the command copies to.
+- `destinationIndex`: An index in `destinationBuffer` where the command copies content to. The destination index needs to be a valid execution point with enough remaining space in `destinationBuffer` to accommodate `sourceRange.count` commands.
 
 
 ---

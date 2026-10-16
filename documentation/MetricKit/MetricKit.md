@@ -24,7 +24,7 @@ In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) 
 
 ### Essentials
 - [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
-  Receive daily performance and diagnostic reports from real device usage.
+  Receive daily performance metrics and immediate diagnostic reports from real device usage.
 - [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
   Work with the metric values, diagnostic data, and environments in MetricKit reports.
 - [Track performance by app state using MetricKit](track-performance-by-app-state-using-metrickit.md)

@@ -25,6 +25,8 @@ object ExtensibleSSOPlatformSSO_WebAuthenticationObject
   Settings for Access Key authentication.
 - [object ExtensibleSSOPlatformSSO_AccountObject](extensiblessoplatformsso_accountobject.md)
   Account display and profile settings.
+- [object ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject](extensiblessoplatformsso_additionalhttpheadersobject.md)
+  A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
 - [object ExtensibleSSOPlatformSSO_AuthorizationObject](extensiblessoplatformsso_authorizationobject.md)
   Settings for authorization prompts and group management.
 - [object ExtensibleSSOPlatformSSO_PoliciesObject](extensiblessoplatformsso_policiesobject.md)

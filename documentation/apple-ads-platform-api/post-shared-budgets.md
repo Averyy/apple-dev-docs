@@ -12,6 +12,8 @@ Creates a budget order that can be assigned to campaigns within an ad account.
 
 This endpoint creates a budget order that campaigns can draw from via `SharedBudgetAssignment`. With a budget order, total spend across all assigned campaigns can’t exceed the budget order’s `value`, providing centralized cost control across a campaign group.
 
+Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+
 #### Payload Examples
 
 ##### Request

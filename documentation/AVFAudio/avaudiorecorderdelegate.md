@@ -22,13 +22,13 @@ protocol AVAudioRecorderDelegate : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Responding to Recording Completion
+### Responding to recording completion
 - [func audioRecorderDidFinishRecording(AVAudioRecorder, successfully: Bool)](avaudiorecorderdelegate/audiorecorderdidfinishrecording(_:successfully:).md)
   Tells the delegate when recording stops or finishes due to reaching its time limit.
-### Responding to Audio Encoding Errors
+### Responding to audio encoding errors
 - [func audioRecorderEncodeErrorDidOccur(AVAudioRecorder, error: (any Error)?)](avaudiorecorderdelegate/audiorecorderencodeerrordidoccur(_:error:).md)
   Tells the delegate that the audio recorder encountered an encoding error during recording.
-### Responding to Audio Interruptions
+### Responding to audio interruptions
 - [func audioRecorderBeginInterruption(AVAudioRecorder)](avaudiorecorderdelegate/audiorecorderbegininterruption(_:).md)
   Tells the delegate that the system interrupted the audio recording.
 - [func audioRecorderEndInterruption(AVAudioRecorder)](avaudiorecorderdelegate/audiorecorderendinterruption(_:).md)

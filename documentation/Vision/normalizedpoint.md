@@ -20,6 +20,10 @@ A point in a 2D coordinate system.
 struct NormalizedPoint
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## Topics
 
 ### Creating a normalized point

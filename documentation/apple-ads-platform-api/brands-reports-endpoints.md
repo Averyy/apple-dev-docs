@@ -25,13 +25,13 @@ Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, an
 - [Managing Reports](reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 - [App Store Reports Endpoints](apps-reports-endpoints.md)
-  Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search term performance data.
+  Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
 - [Apps Data Objects](apps-reports-objects.md)
   Request, response, and metadata objects for Apps report endpoints.
 - [Brands Data Objects](brands-reports-objects.md)
   Explore the request, response, and metadata objects that Brands report endpoints use.
 - [Shared Objects](reports-shared-objects.md)
-  Shared request and response objects used across Apps and Brands report endpoints.
+  Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 
 
 ---

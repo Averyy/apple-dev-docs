@@ -19,6 +19,10 @@ A request that generates a segmentation mask from points, a rectangle, or a scri
 final class GenerateIterativeSegmentationRequest
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 #### Overview
 
 Initialize with a seed point, a seed rectangle, or a seed scribble buffer to generate the initial segmentation mask. Then add points to iteratively refine the segmentation mask. The request supports a maximum of 13 points when seeded with a point or scribble, or 11 points when seeded with a box.
@@ -68,6 +72,8 @@ Initialize with a seed point, a seed rectangle, or a seed scribble buffer to gen
 
 ## See Also
 
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+  Generate and refine a mask that isolates an object in an image based on a person’s selection.
 - [Segmenting objects using taps, scribbles or rectangles](segmenting-objects-using-taps-scribbles-or-rectangles.md)
   Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
 - [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)

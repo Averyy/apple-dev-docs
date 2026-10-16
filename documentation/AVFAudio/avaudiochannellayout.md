@@ -26,12 +26,12 @@ The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioCha
 
 ## Topics
 
-### Creating an Audio Channel Layout
+### Creating an audio channel layout
 - [init(layout: UnsafePointer<AudioChannelLayout>)](avaudiochannellayout/init(layout:).md)
   Creates an audio channel layout object from an existing one.
 - [convenience init?(layoutTag: AudioChannelLayoutTag)](avaudiochannellayout/init(layouttag:).md)
   Creates an audio channel layout object from a layout tag.
-### Getting Audio Channel Layout Properties
+### Getting audio channel layout properties
 - [typealias AVAudioChannelCount](avaudiochannelcount.md)
   The number of audio channels.
 - [var channelCount: AVAudioChannelCount](avaudiochannellayout/channelcount.md)
@@ -63,13 +63,24 @@ The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioCha
 
 ## See Also
 
+- [class AVAudioFile](avaudiofile.md)
+  An object that represents an audio file that the system can open for reading or writing.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+  An object that represents an audio buffer that you use for compressed audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
 - [class AVAudioFormat](avaudioformat.md)
   An object that describes the representation of an audio format.
-- [let AVChannelLayoutKey: String](avchannellayoutkey.md)
-- [Linear PCM Format Settings](linear-pcm-format-settings.md)
-  The audio settings that apply to linear PCM audio formats.
-- [Format Settings](format-settings.md)
-  The audio settings that apply to all audio formats that the audio player and recorder classes support.
+- [class AVAudioConverter](avaudioconverter.md)
+  An object that converts streams of audio between formats.
+- [class AVAudioTime](avaudiotime.md)
+  An object you use to represent a moment in time.
+- [Audio settings](audio-settings.md)
+  Configure audio processing settings using standard key and value constants.
 
 
 ---

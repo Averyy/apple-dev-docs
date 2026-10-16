@@ -12,6 +12,8 @@ Updates mutable fields of an existing budget order by its unique identifier.
 
 This endpoint updates one or more mutable fields on an existing budget order. Only include the fields you want to change. Fields you don’t include remain unchanged. Pass the budget order `id` as a URL path parameter. You don’t need to include it in the request body. End date changes on active budget orders can only shorten the period, not extend it, except that you can set `endTime` to `null` to remove the expiration date entirely and make the budget open-ended.
 
+Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+
 #### Payload Examples
 
 **Increase Budget**:

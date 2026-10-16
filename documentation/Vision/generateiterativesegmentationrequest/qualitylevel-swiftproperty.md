@@ -19,6 +19,10 @@ Controls the resolution of the produced mask.
 final var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel { get set }
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 #### Discussion
 
 Higher resolutions will produce a smoother mask. Lower resolutions will be faster.

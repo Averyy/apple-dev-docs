@@ -12,7 +12,7 @@ Retrieve performance metrics for campaigns.
 
 Campaign reports return one row per campaign. Each row contains a `metadata` object with campaign identifiers, `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
-Every apps report request requires a `campaignId` filter; use `filters` to scope the report to specific campaigns. Use `groupBy` to split metrics along a dimension: each dimension value produces its own row within the campaign’s result.
+The `campaignId` filter is optional for campaign reports. Use `filters` to scope the report to specific campaigns, or omit it to return all campaigns. Use `groupBy` to split metrics along a dimension: each dimension value produces its own row within the campaign’s result.
 
 See [`Filter`](filter.md) for the full set of supported comparison operators.
 

@@ -25,7 +25,7 @@ func scheduleFile(_ file: AVAudioFile, at when: AVAudioTime?) async
 ## Parameters
 
 - `file`: The URL of the file to play.
-- `when`: The time the buffer plays. For more information, see [`Scheduling Playback Time`](avaudioplayernode#Scheduling-Playback-Time.md).
+- `when`: The time the buffer plays. For more information, see [`Scheduling playback time`](avaudioplayernode#Scheduling-playback-time.md).
 - `completionHandler`: The handler the system calls after the player schedules the file for playback on the render thread, or the player stops.
 
 ## See Also
@@ -36,20 +36,12 @@ func scheduleFile(_ file: AVAudioFile, at when: AVAudioTime?) async
   Schedules the playing of an audio file segment.
 - [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulesegment(_:startingframe:framecount:at:completioncallbacktype:completionhandler:).md)
   Schedules the playing of an audio file segment with a callback option you specify.
-- [func scheduleBuffer(AVAudioPCMBuffer, at: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:at:options:completionhandler:).md)
-  Schedules the playing samples from an audio buffer at the time and playback options you specify.
-- [func scheduleBuffer(AVAudioPCMBuffer, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:completionhandler:).md)
-  Schedules the playing samples from an audio buffer.
-- [func scheduleBuffer(AVAudioPCMBuffer, at: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulebuffer(_:at:options:completioncallbacktype:completionhandler:).md)
-  Schedules the playing samples from an audio buffer with the playback options you specify.
-- [func scheduleBuffer(AVAudioPCMBuffer, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulebuffer(_:completioncallbacktype:completionhandler:).md)
-  Schedules the playing samples from an audio buffer with the callback option you specify.
-- [struct AVAudioPlayerNodeBufferOptions](avaudioplayernodebufferoptions.md)
-  The buffer options that control the playback scheduling.
 - [enum AVAudioPlayerNodeCompletionCallbackType](avaudioplayernodecompletioncallbacktype.md)
   Constants that specify when the framework must invoke the completion handler.
 - [typealias AVAudioPlayerNodeCompletionHandler](avaudioplayernodecompletionhandler.md)
   The callback handler for buffer or file completion.
+- [typealias AVAudioNodeCompletionHandler](avaudionodecompletionhandler.md)
+  A general callback handler for an audio node.
 
 
 ---

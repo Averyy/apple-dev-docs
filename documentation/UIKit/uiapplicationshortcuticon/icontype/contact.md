@@ -19,7 +19,7 @@ case contact
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934517@2x.png)
+![Contact quick action icon](/images/com.apple.uikit/media-2934517@2x.png)
 
 ## See Also
 

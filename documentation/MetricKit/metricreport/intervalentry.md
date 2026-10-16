@@ -57,6 +57,8 @@ Each `IntervalEntry` provides a `duration` but no start timestamp, so you can’
 ### Conforms To
 - [Decodable](../swift/decodable.md)
 - [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 

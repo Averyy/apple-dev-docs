@@ -23,6 +23,12 @@ The following table maps example phrases that apply to each schema:
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
 
+#### Map Navigation Use Case Group
+
+A *use-case group* is a set of related schemas that share a single purpose. The [`startNavigation`](appschema/mapsintent/startnavigation.md) schema and an [`IntentValueQuery`](intentvaluequery.md) that imports [`place`](appschema/mapsentity/place.md) values form a use-case group for navigation. Xcode reports a build warning if your app supports one without the other.
+
+> ❗ **Important**: To integrate your app with Apple Intelligence and bring it to Siri AI, adopt both parts of the navigation use-case group.
+
 ## Topics
 
 ### Actions

@@ -6,8 +6,8 @@
 The item supports both horizontal and vertical bars, and prefers a vertical placement when both horizontal and vertical bars are present.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 - Mac Catalyst 27.1+
 
 ## Declaration

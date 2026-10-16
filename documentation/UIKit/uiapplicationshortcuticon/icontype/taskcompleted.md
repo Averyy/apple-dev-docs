@@ -19,7 +19,7 @@ case taskCompleted
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934532@2x.png)
+![Task completed quick action icon](/images/com.apple.uikit/media-2934532@2x.png)
 
 ## See Also
 

@@ -38,6 +38,33 @@ struct PlayAudioIntent: AudioStartingIntent {
 }
 ```
 
+Define a `@UnionValue` enumeration for the `audioEntity` parameter, as in the following example, by typing the first few characters of `audio_audioItem` in Xcode and selecting it from the code-completion suggestions.
+
+```swift
+@UnionValue
+enum AudioItem {
+    case song(<#SongEntity#>)
+    case album(<#AlbumEntity#>)
+    case artist(<#ArtistEntity#>)
+    case playlist(<#PlaylistEntity#>)
+    case songCollection(<#SongCollectionEntity#>)
+    case classicalMusicRecording(<#ClassicalMusicRecordingEntity#>)
+    case liveRadioStation(<#LiveRadioStationEntity#>)
+    case algorithmicRadioStation(<#AlgorithmicRadioStationEntity#>)
+    case radioShowEpisode(<#RadioShowEpisodeEntity#>)
+    case radioShow(<#RadioShowEntity#>)
+    case podcastShow(<#PodcastShowEntity#>)
+    case podcastEpisode(<#PodcastEpisodeEntity#>)
+    case podcastCollection(<#PodcastCollectionEntity#>)
+    case audiobook(<#MediaBookEntity#>)
+    case ambientSound(<#AmbientSoundEntity#>)
+    case newsBrief(<#NewsBriefEntity#>)
+    case newsProvider(<#NewsProviderEntity#>)
+}
+```
+
+> 💡 **Tip**: Keep the cases that your app supports and remove the rest.
+
 The schema supports the following system experiences:
 
 - Siri

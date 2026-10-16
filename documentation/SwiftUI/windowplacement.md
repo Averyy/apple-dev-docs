@@ -17,7 +17,7 @@ struct WindowPlacement
 
 #### Overview
 
-When using the `Scene.defaultWindowPlacement(_:)` modifier, you return an instance of a `WindowPlacement` in the closure you provide.
+When using the [`defaultWindowPlacement(_:)`](scene/defaultwindowplacement(_:).md) modifier, you return an instance of a `WindowPlacement` in the closure you provide.
 
 When constructing a window placement, many initial parameters are optional. Any value not specified will fall back to the scene’s default behavior and configuration for sizing and positioning it’s windows.
 

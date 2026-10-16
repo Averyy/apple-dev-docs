@@ -15,6 +15,7 @@ virtual bool init();
 ## See Also
 
 - [init](iouservideoobject/init-5dkv4.md)
+  Initializes a video object.
 
 
 ---

@@ -40,33 +40,34 @@ To set the node’s output to a multichannel format, use an [`AVAudioFormat`](av
 
 ## Topics
 
-### Creating an Environment Node
+### Creating an environment node
 - [init()](avaudioenvironmentnode/init.md)
   Creates a new environment node object.
-### Getting and Setting Positional Properties
+### Positioning the listener
 - [var listenerPosition: AVAudio3DPoint](avaudioenvironmentnode/listenerposition.md)
   The listener’s position in the 3D environment.
 - [var listenerAngularOrientation: AVAudio3DAngularOrientation](avaudioenvironmentnode/listenerangularorientation.md)
   The listener’s angular orientation in the environment.
 - [var listenerVectorOrientation: AVAudio3DVectorOrientation](avaudioenvironmentnode/listenervectororientation.md)
   The listener’s vector orientation in the environment.
-### Getting Attenuation and Reverb Properties
+- [var isListenerHeadTrackingEnabled: Bool](avaudioenvironmentnode/islistenerheadtrackingenabled.md)
+  A Boolean value that indicates whether the listener orientation is automatically rotated based on head orientation.
+### Configuring attenuation and reverb
 - [var distanceAttenuationParameters: AVAudioEnvironmentDistanceAttenuationParameters](avaudioenvironmentnode/distanceattenuationparameters.md)
   The distance attenuation parameters for the environment.
 - [var reverbParameters: AVAudioEnvironmentReverbParameters](avaudioenvironmentnode/reverbparameters.md)
   The reverb parameters for the environment.
-### Getting and Setting Environment Properties
+### Configuring the output
 - [var outputVolume: Float](avaudioenvironmentnode/outputvolume.md)
   The mixer’s output volume.
 - [var outputType: AVAudioEnvironmentOutputType](avaudioenvironmentnode/outputtype.md)
   The type of output hardware.
-### Getting the Available Rendering Algorithms
+- [enum AVAudioEnvironmentOutputType](avaudioenvironmentoutputtype.md)
+  The output types for using with the automatic 3D mixing rendering algorithm.
+### Inspecting rendering algorithms
 - [var applicableRenderingAlgorithms: [NSNumber]](avaudioenvironmentnode/applicablerenderingalgorithms.md)
   An array of rendering algorithms applicable to the environment node.
-### Getting the Head Tracking Status
-- [var isListenerHeadTrackingEnabled: Bool](avaudioenvironmentnode/islistenerheadtrackingenabled.md)
-  A Boolean value that indicates whether the listener orientation is automatically rotated based on head orientation.
-### Getting the Input Bus
+### Getting the input bus
 - [var nextAvailableInputBus: AVAudioNodeBus](avaudioenvironmentnode/nextavailableinputbus.md)
   An unused input bus.
 
@@ -95,22 +96,6 @@ To set the node’s output to a multichannel format, use an [`AVAudioFormat`](av
   A class that encapsulates the parameters that you use to control the reverb of the environment node class.
 - [protocol AVAudio3DMixing](avaudio3dmixing.md)
   A collection of properties that define 3D mixing properties.
-- [struct AVAudio3DPoint](avaudio3dpoint.md)
-  A structure that represents a point in 3D space.
-- [struct AVAudio3DVectorOrientation](avaudio3dvectororientation.md)
-  A structure that represents two orthogonal vectors that describe the orientation of the listener in 3D space.
-- [struct AVAudio3DAngularOrientation](avaudio3dangularorientation.md)
-  A structure that represents the angular orientation of the listener in 3D space.
-- [enum AVAudio3DMixingSourceMode](avaudio3dmixingsourcemode.md)
-  The source modes for the input bus of the audio environment node.
-- [enum AVAudio3DMixingRenderingAlgorithm](avaudio3dmixingrenderingalgorithm.md)
-  The types of rendering algorithms available per input bus of the environment node.
-- [enum AVAudioEnvironmentOutputType](avaudioenvironmentoutputtype.md)
-  The output types for using with the automatic 3D mixing rendering algorithm.
-- [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
-  The in-head modes for a point source.
-- [typealias AVAudio3DVector](avaudio3dvector.md)
-  A structure that represents a vector in 3D space, in degrees.
 
 
 ---

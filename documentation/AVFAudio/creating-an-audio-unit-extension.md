@@ -1,4 +1,4 @@
-# Creating an audio unit extension
+# Creating an Audio Unit extension
 
 **Framework**: AVFAudio
 
@@ -111,8 +111,6 @@ var body: some Value {
 
 ## See Also
 
-- [Using voice processing](using-voice-processing.md)
-  Add voice-processing capabilities to your app by using audio engine.
 - [class AVAudioUnit](avaudiounit.md)
   A subclass of the audio node class that, processes audio either in real time or nonreal time, depending on the type of the audio unit.
 

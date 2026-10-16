@@ -22,7 +22,7 @@ init(colorSpace: Color.RGBColorSpace = .sRGB, red: Float, green: Float, blue: Fl
 
 #### Discussion
 
-A standard sRGB color space clamps each color component — `red`, `green`, and `blue` — to a range of `0` to `1`, but SwiftUI colors use an extended sRGB color space, so you can use component values outside that range. This makes it possible to create colors using the [`Color.RGBColorSpace.sRGB`](color/rgbcolorspace/srgb.md) or [`Color.RGBColorSpace.sRGBLinear`](color/rgbcolorspace/srgblinear.md) color space that make full use of the wider gamut of a diplay that supports [`Color.RGBColorSpace.displayP3`](color/rgbcolorspace/displayp3.md).
+A standard sRGB color space clamps each color component — `red`, `green`, and `blue` — to a range of `0` to `1`, but SwiftUI colors use an extended sRGB color space, so you can use component values outside that range. This makes it possible to create colors using the [`Color.RGBColorSpace.sRGB`](color/rgbcolorspace/srgb.md) or [`Color.RGBColorSpace.sRGBLinear`](color/rgbcolorspace/srgblinear.md) color space that make full use of the wider gamut of a display that supports [`Color.RGBColorSpace.displayP3`](color/rgbcolorspace/displayp3.md).
 
 ## Parameters
 

@@ -6,7 +6,7 @@
 An option that enables all interaction types except image subjects and Visual Look Up.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

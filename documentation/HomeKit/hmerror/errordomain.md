@@ -17,6 +17,11 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [let HMErrorDomain: String](hmerrordomain.md)
+  A string that identifies the HomeKit error domain.
+
 
 ---
 

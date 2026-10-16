@@ -19,7 +19,7 @@ A view that displays the phrase a person uses to invoke an App Shortcut.
 
 #### Overview
 
-You must call `UISiriTip/setIntent(intent:)` before displaying the view.
+You must call [`setIntent(intent:)`](siritipuiview/setintent(intent:).md) before displaying the view.
 
 ## Topics
 

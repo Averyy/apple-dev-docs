@@ -25,10 +25,10 @@ The direction of a polar pattern is relative to the orientation of the data sour
 
 ## Topics
 
-### Creating a Polar Pattern
+### Creating a polar pattern
 - [init(rawValue: String)](avaudiosession/polarpattern/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
-### Getting Standard Polar Patterns
+### Getting standard polar patterns
 - [static let stereo: AVAudioSession.PolarPattern](avaudiosession/polarpattern/stereo.md)
   A polar pattern that captures a stereo image of an audio source.
 - [static let cardioid: AVAudioSession.PolarPattern](avaudiosession/polarpattern/cardioid.md)

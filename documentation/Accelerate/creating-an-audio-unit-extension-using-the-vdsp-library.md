@@ -22,7 +22,7 @@ This sample code project is a peaking EQ filter implemented with a vDSP biquadra
 
 This project is based on the Audio Unit Extension App Xcode template and uses the *Effect* audio unit type. This type of audio unit accepts an audio input and produces an audio output. The template provides an audio pass-through effect with a signal parameter to adjust the gain of the audio that passes through the audio unit.
 
-For more information about creating audio unit extensions, see [`Creating an audio unit extension`](https://developer.apple.com/documentation/avfaudio/creating-an-audio-unit-extension).
+For more information about creating audio unit extensions, see [`Creating an Audio Unit extension`](https://developer.apple.com/documentation/avfaudio/creating-an-audio-unit-extension).
 
 ##### Add a New Parameter Address
 

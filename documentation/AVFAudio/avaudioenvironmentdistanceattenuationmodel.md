@@ -26,15 +26,15 @@ Distance attenuation is the natural attenuation of sound when traveling from the
 
 ## Topics
 
-### Attenuation Models
+### Creating an attenuation model
+- [init?(rawValue: Int)](avaudioenvironmentdistanceattenuationmodel/init(rawvalue:).md)
+### Choosing an attenuation model
 - [AVAudioEnvironmentDistanceAttenuationModel.exponential](avaudioenvironmentdistanceattenuationmodel/exponential.md)
   An exponential model that describes the drop-off in gain as the source moves away from the listener.
 - [AVAudioEnvironmentDistanceAttenuationModel.inverse](avaudioenvironmentdistanceattenuationmodel/inverse.md)
   An inverse model that describes the drop-off in gain as the source moves away from the listener.
 - [AVAudioEnvironmentDistanceAttenuationModel.linear](avaudioenvironmentdistanceattenuationmodel/linear.md)
   A linear model that describes the drop-off in gain as the source moves away from the listener.
-### Initializers
-- [init?(rawValue: Int)](avaudioenvironmentdistanceattenuationmodel/init(rawvalue:).md)
 
 ## Relationships
 

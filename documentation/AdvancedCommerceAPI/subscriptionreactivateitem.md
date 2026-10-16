@@ -3,7 +3,7 @@
 **Framework**: Advanced Commerce API  
 **Kind**: dictionary
 
-An item in a subscription to reactive.
+An item in a subscription to reactivate.
 
 **Availability**:
 - Advanced Commerce API 1.1+

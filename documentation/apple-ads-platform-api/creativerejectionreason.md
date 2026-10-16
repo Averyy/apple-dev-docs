@@ -51,7 +51,7 @@ The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/
 - `supplySource` (string): Supply source for the rejection. Read-only.
 - `supplyPlacement` (string): Supply placement for the rejection. Read-only.
 - `countryOrRegion` (string): Country or region code. Read-only.
-- `languageCode` (string): Language code. Read-only.
+- `languageCode` (string): BCP-47 language code, for example, `en-US` or `zh-Hans`. Read-only.
 - `reasonType` (string): Type of rejection reason. Read-only.
 - `reasonCode` (string): Code for the specific rejection reason. Read-only.
 - `comment` (string): Additional context for the rejection. Nullable. Read-only.

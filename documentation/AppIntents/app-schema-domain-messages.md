@@ -8,7 +8,7 @@ Make your messaging app’s actions available to Apple Intelligence and Siri by 
 
 The `.messages` domain defines app schemas that provide a structured representation for common messaging actions and content. Apply schemas in the `.messages` domain to make your app’s messaging functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across messaging apps. For example, a person can send a message on different apps that support the [`sendMessage`](appschema/messagesintent/sendmessage.md) schema with the same phrases.
 
-The following table maps example phrases that apply to each schema. Your app needs to support all of these schemas when it supports any one of them.
+The following table maps example phrases that apply to each schema:
 
 | Messages intent schemas | Example phrases |
 | --- | --- |
@@ -18,11 +18,15 @@ The following table maps example phrases that apply to each schema. Your app nee
 | [`unsendMessage`](appschema/messagesintent/unsendmessage.md) | “Unsend my last message.” or “Unsend that.” |
 | [`setMessageReadStatus`](appschema/messagesintent/setmessagereadstatus.md) | “Mark this message as unread.” or “Mark the message from the lawyer as unread.” |
 
-At build time, Xcode validates whether your app implements all the schemas in the group.
-
 > 💡 **Tip**: Xcode generates a template implementation when you type `messages_` and select a schema from the suggestions list.
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+
+#### Message Sending Use Case Group
+
+A *use-case group* is a set of related schemas that share a single purpose. The [`draftMessage`](appschema/messagesintent/draftmessage.md) and [`sendMessage`](appschema/messagesintent/sendmessage.md) schemas form a use-case group for sending messages. Xcode reports a build warning if your app supports one schema in the group and not the other.
+
+> ❗ **Important**: To integrate your app with Apple Intelligence and bring it to Siri AI, adopt both schemas in the sending use-case group.
 
 ## Topics
 

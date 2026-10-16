@@ -30,10 +30,14 @@ var pointSourceInHeadMode: AVAudio3DMixingPointSourceInHeadMode { get set }
   The location of the source in the 3D environment.
 - [var rate: Float](avaudio3dmixing/rate.md)
   A value that changes the playback rate of the input signal.
+- [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
+  The in-head modes for a point source.
 - [var reverbBlend: Float](avaudio3dmixing/reverbblend.md)
   A value that controls the blend of dry and reverb processed audio.
 - [var sourceMode: AVAudio3DMixingSourceMode](avaudio3dmixing/sourcemode.md)
   The source mode for the input bus of the audio environment node.
+- [enum AVAudio3DMixingSourceMode](avaudio3dmixingsourcemode.md)
+  The source modes for the input bus of the audio environment node.
 
 
 ---

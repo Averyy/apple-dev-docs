@@ -21,6 +21,8 @@ object ExtensibleSingleSignOn.PlatformSSO.TokenToUserMapping
 
 ## See Also
 
+- [object ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders](extensiblesinglesignon/platformsso-data.dictionary/additionalhttpheaders-data.dictionary.md)
+  A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
 - [object ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups](extensiblesinglesignon/platformsso-data.dictionary/authorizationgroups-data.dictionary.md)
   The pairing of Authorization Rights to group names.
 

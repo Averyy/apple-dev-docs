@@ -21,7 +21,7 @@ func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 
 #### Discussion
 
-This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling `MTL4CommandBuffer/resolveCounterHeap:withRange:intoBuffer:atOffset:waitFence:updateFence:`.
+This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling [`resolveCounterHeap(_:range:buffer:fenceToWait:fenceToUpdate:)`](mtl4commandbuffer/resolvecounterheap(_:range:buffer:fencetowait:fencetoupdate:).md).
 
 - Returns a newly allocated autoreleased NSData containing tightly packed resolved heap counter values.
 

@@ -19,7 +19,7 @@ case invitation
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934523@2x.png)
+![Invitation quick action icon](/images/com.apple.uikit/media-2934523@2x.png)
 
 ## See Also
 

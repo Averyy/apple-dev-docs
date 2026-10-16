@@ -113,6 +113,8 @@ Add keys to your app’s [`Information Property List`](information-property-list
 ### Network
 - [NSApplicationServices](information-property-list/nsapplicationservices.md)
   A list of service providers and the devices that they support.
+- [NSPIRConfiguration](information-property-list/nspirconfiguration.md)
+  The URLs used for a PIR server to support a URL filter or Live Caller ID lookup app.
 ### Journaling Suggestions
 - [JSNotificationURLFormat](information-property-list/jsnotificationurlformat.md)
   A universal link that determines how the system provides Journaling Suggestion notifications to your app.

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Specifies details about how the VPN routes different types of network traffic.
+Specifies details about extended authentication (EAP).
 
 **Availability**:
 - iOS 27.0+

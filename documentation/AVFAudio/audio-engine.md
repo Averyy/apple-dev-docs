@@ -1,4 +1,4 @@
-# Audio Engine
+# Audio engine
 
 **Framework**: AVFAudio
 
@@ -18,44 +18,43 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
 
 ## Topics
 
-### Essentials
+### Engine and nodes
+- [Using voice processing](using-voice-processing.md)
+  Add voice-processing capabilities to your app by using audio engine.
 - [class AVAudioEngine](avaudioengine.md)
   An object that manages a graph of audio nodes, controls playback, and configures real-time rendering constraints.
-### Nodes
-- [class AVAudioNode](avaudionode.md)
-  An object you use for audio generation, processing, or an I/O block.
 - [class AVAudioInputNode](avaudioinputnode.md)
   An object that connects to the system’s audio input.
 - [class AVAudioOutputNode](avaudiooutputnode.md)
   An object that connects to the system’s audio output.
 - [class AVAudioIONode](avaudioionode.md)
   An object that performs audio input or output in the engine.
-### Playback
+- [class AVAudioNode](avaudionode.md)
+  An object you use for audio generation, processing, or an I/O block.
+### Scheduled playback
 - [Building an audio sequencer to arrange and play clips](building-an-audio-sequencer-to-arrange-and-play-clips.md)
   Synchronize audio loops with a main tempo by creating a real-time clip launcher.
 - [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
-- [Using voice processing](using-voice-processing.md)
-  Add voice-processing capabilities to your app by using audio engine.
 - [class AVAudioPlayerNode](avaudioplayernode.md)
   An object for scheduling the playback of buffers or segments of audio files.
-### MIDI
+### MIDI sequencing and instruments
 - [class AVAudioSequencer](avaudiosequencer.md)
   An object that plays audio from a collection of MIDI events the system organizes into music tracks.
 - [class AVAudioUnitSampler](avaudiounitsampler.md)
   An object that you configure with one or more instrument samples, based on Apple’s Sampler audio unit.
 - [typealias AVMIDIEventListBlock](avmidieventlistblock.md)
-### Mixing
+### Audio mixing
 - [class AVAudioMixerNode](avaudiomixernode.md)
   An object that takes any number of inputs and converts them into a single output.
 - [protocol AVAudioMixing](avaudiomixing.md)
   A collection of properties that are applicable to the input bus of a mixer node.
-### Effects
+### Audio Unit plug-ins and effects
 - [Creating custom audio effects](creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
-- [Audio Units](audio-units.md)
-  The data type for a plug-in component that provides audio processing or audio data generation.
-### Rendering
+- [Audio Unit plug-ins](audio-units.md)
+  Add built-in and custom Audio Unit plug-ins to an audio engine to process, generate, and play audio.
+### Custom and offline rendering
 - [Building a signal generator](building-a-signal-generator.md)
   Generate audio signals using an audio source node and a custom render callback.
 - [Performing offline audio processing](performing-offline-audio-processing.md)
@@ -64,9 +63,6 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
   An object that supplies audio data.
 - [class AVAudioSinkNode](avaudiosinknode.md)
   An object that receives audio data.
-### Conversion
-- [class AVAudioConverter](avaudioconverter.md)
-  An object that converts streams of audio between formats.
 ### Spatial audio
 - [class AVAudioEnvironmentNode](avaudioenvironmentnode.md)
   An object that simulates a 3D audio environment.
@@ -76,35 +72,15 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
   A class that encapsulates the parameters that you use to control the reverb of the environment node class.
 - [protocol AVAudio3DMixing](avaudio3dmixing.md)
   A collection of properties that define 3D mixing properties.
+### Positions and orientations
 - [struct AVAudio3DPoint](avaudio3dpoint.md)
   A structure that represents a point in 3D space.
+- [typealias AVAudio3DVector](avaudio3dvector.md)
+  A structure that represents a vector in 3D space, in degrees.
 - [struct AVAudio3DVectorOrientation](avaudio3dvectororientation.md)
   A structure that represents two orthogonal vectors that describe the orientation of the listener in 3D space.
 - [struct AVAudio3DAngularOrientation](avaudio3dangularorientation.md)
   A structure that represents the angular orientation of the listener in 3D space.
-- [enum AVAudio3DMixingSourceMode](avaudio3dmixingsourcemode.md)
-  The source modes for the input bus of the audio environment node.
-- [enum AVAudio3DMixingRenderingAlgorithm](avaudio3dmixingrenderingalgorithm.md)
-  The types of rendering algorithms available per input bus of the environment node.
-- [enum AVAudioEnvironmentOutputType](avaudioenvironmentoutputtype.md)
-  The output types for using with the automatic 3D mixing rendering algorithm.
-- [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
-  The in-head modes for a point source.
-- [typealias AVAudio3DVector](avaudio3dvector.md)
-  A structure that represents a vector in 3D space, in degrees.
-### Supporting data types
-- [class AVAudioBuffer](avaudiobuffer.md)
-  An object that represents a buffer of audio data with a format.
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
-  An object that represents an audio buffer you use with PCM audio formats.
-- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
-  A read-only, Sendable audio buffer for safe concurrent access.
-- [class AVAudioFile](avaudiofile.md)
-  An object that represents an audio file that the system can open for reading or writing.
-- [class AVAudioTime](avaudiotime.md)
-  An object you use to represent a moment in time.
-- [Audio settings](audio-settings.md)
-  Configure audio processing settings using standard key and value constants.
 
 
 ---

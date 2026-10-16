@@ -203,6 +203,9 @@ If you don’t have environment information, follow these steps:
   Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
 - [object RefundLookupResponse](refundlookupresponse.md)
   A response that contains an array of signed JSON Web Signature (JWS) transactions.
+### Type Aliases
+- [type previousOriginalTransactionId](previousoriginaltransactionid.md)
+  The original transaction identifier of a subscription before migration.
 
 
 ---

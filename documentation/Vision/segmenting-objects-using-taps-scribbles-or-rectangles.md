@@ -27,6 +27,8 @@ To configure the sample code project:
 
 ## See Also
 
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+  Generate and refine a mask that isolates an object in an image based on a person’s selection.
 - [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticeable objects to separate from the background.
 - [struct GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)

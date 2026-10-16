@@ -26,14 +26,14 @@ For information about possible values, see [`AVAudioQuality`](avaudioquality.md)
 
 ## See Also
 
-- [Sample Rate Conversion Settings](sample-rate-conversion-settings.md)
-  The constants that define sample rate converter audio quality settings.
-- [enum AVAudioQuality](avaudioquality.md)
-  The values that specify the sample rate audio quality for encoding and conversion.
-- [Encoder Settings](encoder-settings.md)
-  The constants that define the audio encoder settings for the audio recorder class.
-- [Time pitch algorithm settings](../avfoundation/time-pitch-algorithm-settings.md)
-  The constants that define the values for the time pitch algorithms.
+- [let AVEncoderASPFrequencyKey: String](avencoderaspfrequencykey.md)
+- [let AVEncoderBitDepthHintKey: String](avencoderbitdepthhintkey.md)
+- [let AVEncoderBitRateKey: String](avencoderbitratekey.md)
+- [let AVEncoderBitRatePerChannelKey: String](avencoderbitrateperchannelkey.md)
+- [let AVEncoderBitRateStrategyKey: String](avencoderbitratestrategykey.md)
+  A constant that represents the bit rate strategy for the encoder to use.
+- [let AVEncoderContentSourceKey: String](avencodercontentsourcekey.md)
+- [let AVEncoderDynamicRangeControlConfigurationKey: String](avencoderdynamicrangecontrolconfigurationkey.md)
 
 
 ---

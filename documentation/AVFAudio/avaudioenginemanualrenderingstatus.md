@@ -22,7 +22,9 @@ enum AVAudioEngineManualRenderingStatus
 
 ## Topics
 
-### Constants
+### Creating a rendering status
+- [init?(rawValue: Int)](avaudioenginemanualrenderingstatus/init(rawvalue:).md)
+### Interpreting rendering results
 - [AVAudioEngineManualRenderingStatus.error](avaudioenginemanualrenderingstatus/error.md)
   A problem that occurs during rendering and results in no data returning.
 - [AVAudioEngineManualRenderingStatus.success](avaudioenginemanualrenderingstatus/success.md)
@@ -31,8 +33,6 @@ enum AVAudioEngineManualRenderingStatus
   A condition that occurs when the input node doesn’t return enough input data to satisfy the render request at the time of the request.
 - [AVAudioEngineManualRenderingStatus.cannotDoInCurrentContext](avaudioenginemanualrenderingstatus/cannotdoincurrentcontext.md)
   An operation that the system can’t perform under the current conditions.
-### Initializers
-- [init?(rawValue: Int)](avaudioenginemanualrenderingstatus/init(rawvalue:).md)
 
 ## Relationships
 
@@ -46,10 +46,16 @@ enum AVAudioEngineManualRenderingStatus
 
 ## See Also
 
-- [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
-  Constants that describe error codes that the framework returns from manual rendering mode methods.
+- [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md)
+  Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
 - [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
   The two modes for manual rendering.
+- [func disableManualRenderingMode()](avaudioengine/disablemanualrenderingmode.md)
+  Sets the engine to render to or from an audio device.
+- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](avaudioengine/renderoffline(_:to:).md)
+  Makes a render call to the engine operating in the offline manual rendering mode.
+- [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
+  Constants that describe error codes that the framework returns from manual rendering mode methods.
 
 
 ---

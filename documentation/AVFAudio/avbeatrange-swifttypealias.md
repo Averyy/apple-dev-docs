@@ -3,6 +3,8 @@
 **Framework**: AVFAudio  
 **Kind**: typealias
 
+A specific time range within a music track.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+
@@ -20,9 +22,9 @@ typealias AVBeatRange = _AVBeatRange
 
 ## Topics
 
-### Instance Properties
-- [var length: AVMusicTimeStamp](avbeatrange-swift.typealias/length.md)
+### Range bounds
 - [var start: AVMusicTimeStamp](avbeatrange-swift.typealias/start.md)
+- [var length: AVMusicTimeStamp](avbeatrange-swift.typealias/length.md)
 
 ## Relationships
 

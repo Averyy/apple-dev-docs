@@ -14,6 +14,8 @@ This endpoint finds budget orders by name, status, or date range, or retrieves t
 
 See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
 
+Users with organization-level permissions don’t need the `X-AP-Context` header. Users limited to specific ad accounts must send it. See [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+
 ##### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |

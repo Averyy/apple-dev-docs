@@ -19,7 +19,7 @@ case prohibit
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934516@2x.png)
+![Prohibit symbol](/images/com.apple.uikit/media-2934516@2x.png)
 
 ## See Also
 

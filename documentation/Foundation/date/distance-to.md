@@ -34,8 +34,12 @@ The distance from this date to the other date, as a [`TimeInterval`](timeinterva
   Returns true if the two `Date` values represent the same point in time.
 - [static func > (Date, Date) -> Bool](date/_(_:_:)-880ns.md)
   Returns true if the left hand `Date` is later in time than the right hand `Date`.
+- [static func >= (Date, Date) -> Bool](date/_=(_:_:)-9dues.md)
+  Returns true if the left hand `Date` is later in time than or equal to the right hand `Date`.
 - [static func < (Date, Date) -> Bool](date/_(_:_:)-42kro.md)
   Returns true if the left hand `Date` is earlier in time than the right hand `Date`.
+- [static func <= (Date, Date) -> Bool](date/_=(_:_:)-9co12.md)
+  Returns true if the left hand `Date` is earlier in time than or equal to the right hand `Date`.
 - [func compare(Date) -> ComparisonResult](date/compare(_:).md)
   Compares another date to this one.
 

@@ -27,7 +27,7 @@ Play, record, and process audio; configure your app’s system audio behavior.
 - [class AVMIDIPlayer](../avfaudio/avmidiplayer.md)
   An object that plays MIDI data through a system sound module.
 ### Advanced audio processing
-- [Audio Engine](../avfaudio/audio-engine.md)
+- [Audio engine](../avfaudio/audio-engine.md)
   Perform advanced real-time and offline audio processing, implement 3D spatialization, and work with MIDI and samplers.
 
 ## See Also

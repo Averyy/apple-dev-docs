@@ -4,7 +4,7 @@
 
 ## Topics
 
-### Macros
+### Preprocessor macros
 - [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](avaudioengine_have_auaudiounit.md)
 - [var AVAUDIOENGINE_HAVE_MUSICPLAYER: Int32](avaudioengine_have_musicplayer.md)
 - [var AVAUDIOFORMAT_HAVE_CMFORMATDESCRIPTION: Int32](avaudioformat_have_cmformatdescription.md)

@@ -21,7 +21,10 @@ struct Port
 
 ## Topics
 
-### Getting Input Ports
+### Creating a port
+- [init(rawValue: String)](avaudiosession/port/init(rawvalue:).md)
+  Creates a new instance with the raw value you specify.
+### Getting input ports
 - [static let builtInMic: AVAudioSession.Port](avaudiosession/port/builtinmic.md)
   An input from a device’s built-in microphone.
 - [static let continuityMicrophone: AVAudioSession.Port](avaudiosession/port/continuitymicrophone.md)
@@ -30,7 +33,7 @@ struct Port
   An input from a wired headset’s built-in microphone.
 - [static let lineIn: AVAudioSession.Port](avaudiosession/port/linein.md)
   A line-level input from the dock connector.
-### Getting Output Ports
+### Getting output ports
 - [static let airPlay: AVAudioSession.Port](avaudiosession/port/airplay.md)
   An output to an AirPlay device.
 - [static let bluetoothA2DP: AVAudioSession.Port](avaudiosession/port/bluetootha2dp.md)
@@ -49,7 +52,7 @@ struct Port
   A line-level output to the dock connector.
 - [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
   Output to a media device vended through a system-wide extension that the user has installed
-### Getting I/O Ports
+### Getting I/O ports
 - [static let AVB: AVAudioSession.Port](avaudiosession/port/avb.md)
   An I/O connection to an Audio Video Bridging (AVB) device.
 - [static let PCI: AVAudioSession.Port](avaudiosession/port/pci.md)
@@ -70,9 +73,6 @@ struct Port
   An I/O connection to a Universal Serial Bus (USB) device.
 - [static let virtual: AVAudioSession.Port](avaudiosession/port/virtual.md)
   An I/O connection that doesn’t correspond to physical audio hardware.
-### Initializers
-- [init(rawValue: String)](avaudiosession/port/init(rawvalue:).md)
-  Creates a new instance with the raw value you specify.
 
 ## Relationships
 

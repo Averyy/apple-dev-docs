@@ -36,10 +36,10 @@ A single audio converter instance may perform more than one of the above transfo
 
 ## Topics
 
-### Creating an Audio Converter
+### Creating an audio converter
 - [init?(from: AVAudioFormat, to: AVAudioFormat)](avaudioconverter/init(from:to:).md)
   Creates an audio converter object from the specified input and output formats.
-### Converting Audio Formats
+### Converting audio formats
 - [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
   Performs a conversion between audio formats, if the system supports it.
 - [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
@@ -50,10 +50,10 @@ A single audio converter instance may perform more than one of the above transfo
   An option that indicates the status of an audio converter input block.
 - [enum AVAudioConverterOutputStatus](avaudioconverteroutputstatus.md)
   An option that indicates the return status of an audio converter method.
-### Resetting an Audio Converter
+### Resetting an audio converter
 - [func reset()](avaudioconverter/reset.md)
   Resets the converter so you can convert a new audio stream.
-### Getting Audio Converter Properties
+### Getting audio converter properties
 - [var channelMap: [NSNumber]](avaudioconverter/channelmap.md)
   An array of integers that indicates which input to derive each output from.
 - [var dither: Bool](avaudioconverter/dither.md)
@@ -68,7 +68,7 @@ A single audio converter instance may perform more than one of the above transfo
   An object that contains metadata for encoders and decoders.
 - [var maximumOutputPacketSize: Int](avaudioconverter/maximumoutputpacketsize.md)
   The maximum size of an output packet, in bytes.
-### Getting Bit Rate Properties
+### Getting bit rate properties
 - [var applicableEncodeBitRates: [NSNumber]?](avaudioconverter/applicableencodebitrates.md)
   An array of bit rates the framework applies during encoding according to the current formats and settings.
 - [var availableEncodeBitRates: [NSNumber]?](avaudioconverter/availableencodebitrates.md)
@@ -79,7 +79,7 @@ A single audio converter instance may perform more than one of the above transfo
   The bit rate, in bits per second.
 - [var bitRateStrategy: String?](avaudioconverter/bitratestrategy.md)
   A key value constant the framework uses during encoding.
-### Getting Sample Rate Properties
+### Getting sample rate properties
 - [var sampleRateConverterQuality: Int](avaudioconverter/samplerateconverterquality.md)
   A sample rate converter algorithm key value.
 - [var sampleRateConverterAlgorithm: String?](avaudioconverter/samplerateconverteralgorithm.md)
@@ -88,7 +88,7 @@ A single audio converter instance may perform more than one of the above transfo
   An array of output sample rates that the converter applies according to the current formats and settings, when encoding.
 - [var availableEncodeSampleRates: [NSNumber]?](avaudioconverter/availableencodesamplerates.md)
   An array of all output sample rates the codec provides when encoding.
-### Getting Priming Information
+### Getting priming information
 - [var primeInfo: AVAudioConverterPrimeInfo](avaudioconverter/primeinfo.md)
   The number of priming frames the converter uses.
 - [var primeMethod: AVAudioConverterPrimeMethod](avaudioconverter/primemethod.md)
@@ -119,6 +119,27 @@ A single audio converter instance may perform more than one of the above transfo
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
+
+## See Also
+
+- [class AVAudioFile](avaudiofile.md)
+  An object that represents an audio file that the system can open for reading or writing.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+  An object that represents an audio buffer that you use for compressed audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
+- [class AVAudioFormat](avaudioformat.md)
+  An object that describes the representation of an audio format.
+- [class AVAudioChannelLayout](avaudiochannellayout.md)
+  An object that describes the roles of a set of audio channels.
+- [class AVAudioTime](avaudiotime.md)
+  An object you use to represent a moment in time.
+- [Audio settings](audio-settings.md)
+  Configure audio processing settings using standard key and value constants.
 
 
 ---

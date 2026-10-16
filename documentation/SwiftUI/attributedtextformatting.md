@@ -22,7 +22,7 @@ enum AttributedTextFormatting
 
 #### Overview
 
-> **Note**: [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), `View/attributedTextFormattingDefinition(_:)-uc57`
+> **Note**: [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), [`attributedTextFormattingDefinition(_:)`](view/attributedtextformattingdefinition(_:)-81jn6.md)
 
 ## Topics
 

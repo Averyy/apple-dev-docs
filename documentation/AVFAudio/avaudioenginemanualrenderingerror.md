@@ -22,15 +22,15 @@ enum AVAudioEngineManualRenderingError
 
 ## Topics
 
-### Manual Rendering Errors
+### Creating a rendering error
+- [init?(rawValue: OSStatus)](avaudioenginemanualrenderingerror/init(rawvalue:).md)
+### Identifying rendering errors
 - [AVAudioEngineManualRenderingError.initialized](avaudioenginemanualrenderingerror/initialized.md)
   An operation that the system can’t perform because the engine is still running.
 - [AVAudioEngineManualRenderingError.invalidMode](avaudioenginemanualrenderingerror/invalidmode.md)
   An operation the system can’t perform because the engine isn’t in manual rendering mode or the right variant of it.
 - [AVAudioEngineManualRenderingError.notRunning](avaudioenginemanualrenderingerror/notrunning.md)
   An operation the system can’t perform because the engine isn’t running.
-### Initializers
-- [init?(rawValue: OSStatus)](avaudioenginemanualrenderingerror/init(rawvalue:).md)
 
 ## Relationships
 
@@ -44,8 +44,14 @@ enum AVAudioEngineManualRenderingError
 
 ## See Also
 
+- [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md)
+  Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
 - [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
   The two modes for manual rendering.
+- [func disableManualRenderingMode()](avaudioengine/disablemanualrenderingmode.md)
+  Sets the engine to render to or from an audio device.
+- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](avaudioengine/renderoffline(_:to:).md)
+  Makes a render call to the engine operating in the offline manual rendering mode.
 - [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
   Status codes that return from the render call to the engine operating in manual rendering mode.
 

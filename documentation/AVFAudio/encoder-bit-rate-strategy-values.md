@@ -1,4 +1,4 @@
-# Encoder Bit Rate Strategy Values
+# Encoder bit rate strategy values
 
 **Framework**: AVFAudio
 
@@ -10,7 +10,7 @@ You use these values with [`AVEncoderBitRateStrategyKey`](avencoderbitratestrate
 
 ## Topics
 
-### Strategies
+### Bit rate strategy values
 - [let AVAudioBitRateStrategy_Constant: String](avaudiobitratestrategy_constant.md)
   A value that represents a constant bit rate strategy.
 - [let AVAudioBitRateStrategy_LongTermAverage: String](avaudiobitratestrategy_longtermaverage.md)
@@ -19,10 +19,6 @@ You use these values with [`AVEncoderBitRateStrategyKey`](avencoderbitratestrate
   A value that represents a constrained variable bit rate strategy.
 - [let AVAudioBitRateStrategy_Variable: String](avaudiobitratestrategy_variable.md)
   A value that represents a variable bit rate strategy.
-
-## See Also
-
-- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](avaudioengine_have_auaudiounit.md)
 
 
 ---

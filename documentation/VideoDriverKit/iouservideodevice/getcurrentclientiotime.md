@@ -16,7 +16,9 @@ void GetCurrentClientIOTime(bool in_is_input, uint64_t *out_sample_time, uint64_
 
 ## Parameters
 
-- `in_is_input`: Bool value indicating if client IO time is for input or output. true for input, false for output
+- `in_is_input`: A Boolean value that indicates whether client IO time is for input.  A false value indicates that the time is for output.
+- `out_sample_time`: The buffer to set with the current IO sample time of the client.
+- `out_host_time`: The buffer to set with the current IO host time of the client.
 
 ## See Also
 
@@ -29,7 +31,7 @@ void GetCurrentClientIOTime(bool in_is_input, uint64_t *out_sample_time, uint64_
 - [SetIOOperationHandler](iouservideodevice/setiooperationhandler.md)
   Sets the IOOperationHandler block on the device.
 - [IOOperationHandler](videodriverkit/iooperationhandler.md)
-  A block that tells the device to perform an IOUserVideoIOOperation.
+  A block that tells the device to perform a video IO operation.
 
 
 ---

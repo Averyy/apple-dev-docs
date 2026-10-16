@@ -50,6 +50,9 @@ struct GeometryProxy
   A kind of reserved region.
 - [ReservedRegion.QueryOptions](reservedregion/queryoptions.md)
   Options for querying reserved regions.
+### Instance Methods
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set) -> EdgeInsets](geometryproxy/contentmargins(for:edges:).md)
+  The insets of a content margin guide for the given edges.
 
 ## See Also
 

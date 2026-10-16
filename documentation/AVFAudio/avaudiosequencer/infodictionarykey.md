@@ -21,7 +21,10 @@ struct InfoDictionaryKey
 
 ## Topics
 
-### Getting Album Details
+### Creating a dictionary key
+- [init(rawValue: String)](avaudiosequencer/infodictionarykey/init(rawvalue:).md)
+  Creates a new instance with the raw value you specify.
+### Getting album details
 - [static let album: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/album.md)
   A key that represents the album.
 - [static let artist: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/artist.md)
@@ -44,17 +47,17 @@ struct InfoDictionaryKey
   A key that represents the subtitle.
 - [static let year: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/year.md)
   A key that represents the year.
-### Getting the Duration and Time
+### Getting the duration and time
 - [static let approximateDurationInSeconds: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/approximatedurationinseconds.md)
   A key that represents the approximate duration.
 - [static let timeSignature: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/timesignature.md)
   A key that represents the time signature.
 - [static let tempo: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/tempo.md)
   A key that represents the tempo.
-### Getting the Recording Date
+### Getting the recording date
 - [static let recordedDate: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/recordeddate.md)
   A key that represents the date of the recording.
-### Getting Encoding Information
+### Getting encoding information
 - [static let encodingApplication: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/encodingapplication.md)
   A key that represents the encoding application.
 - [static let sourceEncoder: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/sourceencoder.md)
@@ -65,15 +68,12 @@ struct InfoDictionaryKey
   A key that represents the bit depth of the source.
 - [static let keySignature: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/keysignature.md)
   A key that represents the key signature.
-### Getting the Channel Layout
+### Getting the channel layout
 - [static let channelLayout: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/channellayout.md)
   A key that represents the channel layout.
-### Getting the Recording Code
+### Getting the recording code
 - [static let ISRC: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/isrc.md)
   A key that represents the international standard recording code.
-### Creating a Dictionary Key
-- [init(rawValue: String)](avaudiosequencer/infodictionarykey/init(rawvalue:).md)
-  Creates a new instance with the raw value you specify.
 
 ## Relationships
 

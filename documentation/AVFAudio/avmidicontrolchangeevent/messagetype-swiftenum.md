@@ -21,7 +21,9 @@ enum MessageType
 
 ## Topics
 
-### Event Types
+### Creating a message type
+- [init?(rawValue: Int)](avmidicontrolchangeevent/messagetype-swift.enum/init(rawvalue:).md)
+### Identifying control change types
 - [AVMIDIControlChangeEvent.MessageType.bankSelect](avmidicontrolchangeevent/messagetype-swift.enum/bankselect.md)
   An event type for switching bank selection.
 - [AVMIDIControlChangeEvent.MessageType.modWheel](avmidicontrolchangeevent/messagetype-swift.enum/modwheel.md)
@@ -92,8 +94,6 @@ enum MessageType
   An event type for setting the device mode to monophonic.
 - [AVMIDIControlChangeEvent.MessageType.monoModeOff](avmidicontrolchangeevent/messagetype-swift.enum/monomodeoff.md)
   An event type for setting the device mode to polyphonic.
-### Initializers
-- [init?(rawValue: Int)](avmidicontrolchangeevent/messagetype-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

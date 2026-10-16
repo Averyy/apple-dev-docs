@@ -27,13 +27,13 @@ Apps can state their intent to mix synthesized speech into another app’s input
 
 ## Topics
 
-### Microphone injection modes
+### Creating an injection mode
+- [init?(rawValue: Int)](avaudiosession/microphoneinjectionmode/init(rawvalue:).md)
+### Choosing an injection mode
 - [AVAudioSession.MicrophoneInjectionMode.none](avaudiosession/microphoneinjectionmode/none.md)
   A mode that indicates not to use spoken audio injection.
 - [AVAudioSession.MicrophoneInjectionMode.spokenAudio](avaudiosession/microphoneinjectionmode/spokenaudio.md)
   A mode that indicates to inject spoken audio, like synthesized speech, along with microphone audio.
-### Initializers
-- [init?(rawValue: Int)](avaudiosession/microphoneinjectionmode/init(rawvalue:).md)
 
 ## Relationships
 

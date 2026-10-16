@@ -42,6 +42,18 @@ Activate device buttons by clicking on parts of the device bezel:
 | Click or hold Volume Down | Click or hold the Volume Down button on the device bezel or choose Device > Sound > Decrease Volume. |
 | Click the Action button | Click the Action button on the device bezel. |
 
+#### Interact with Your Ios App on an Iphone Duo Simulator
+
+To ensure your iOS app adapts seamlessly to both iPhone Duo displays, simulate folding an iPhone Duo using the controls below the bezel in the canvas:
+
+- To close the iPhone Duo, click the Closed button on the right of the Rotate Right button.
+- To partially open the iPhone Duo, click the Partially Open button in the middle of the three device pose buttons.
+- To fully open the iPhone Duo, click the Open button on the far right.
+
+To fold the device to any angle, hold the Option key while dragging the slider that appears below the bezel.
+
+![A screenshot of Device Hub that shows an iPhone Duo simulator running a sample code app in the partially open device pose. The device pose buttons appear below the bezel.](/images/com.apple.Xcode/running-app-in-iphone-duo-simulator@2x.png)
+
 #### Interact with Your Watchos App in the Canvas
 
 Use the pointer, trackpad or Magic Mouse, keyboard, and menu items to make gestures on a simulated watchOS device.

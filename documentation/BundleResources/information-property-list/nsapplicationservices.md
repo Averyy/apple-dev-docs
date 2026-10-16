@@ -88,6 +88,11 @@ You can use the human-readable key names in Xcode’s property list editor.
 - [Browses](information-property-list/nsapplicationservices/browses.md)
   An array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported OSs.
 
+## See Also
+
+- [NSPIRConfiguration](information-property-list/nspirconfiguration.md)
+  The URLs used for a PIR server to support a URL filter or Live Caller ID lookup app.
+
 
 ---
 

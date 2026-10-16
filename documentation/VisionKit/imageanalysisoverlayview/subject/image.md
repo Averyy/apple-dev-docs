@@ -6,7 +6,7 @@
 An image of the subjects with the background removed.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

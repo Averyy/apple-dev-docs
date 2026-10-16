@@ -19,15 +19,15 @@ enum RouteSelection
 
 ## Topics
 
-### Constants
+### Creating a route selection
+- [init?(rawValue: Int)](avaudiosession/routeselection/init(rawvalue:).md)
+### Identifying the selected route
 - [AVAudioSession.RouteSelection.none](avaudiosession/routeselection/none.md)
   No route is selected.
 - [AVAudioSession.RouteSelection.local](avaudiosession/routeselection/local.md)
   The local device is selected.
 - [AVAudioSession.RouteSelection.external](avaudiosession/routeselection/external.md)
   An external device is selected.
-### Initializers
-- [init?(rawValue: Int)](avaudiosession/routeselection/init(rawvalue:).md)
 
 ## Relationships
 

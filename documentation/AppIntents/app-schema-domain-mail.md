@@ -8,7 +8,7 @@ Make your email app’s actions available to Apple Intelligence and Siri by adop
 
 The `.mail` domain defines app schemas that provide a structured representation for common email actions and content. Apply schemas in the `.mail` domain to make your app’s email functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across email apps. For example, a person can compose an email on different apps that support the [`createDraft`](appschema/mailintent/createdraft.md) schema with the same phrases.
 
-The following table maps example phrases that apply to each schema. Your app needs to support all of these schemas when it supports any one of them.
+The following table maps example phrases that apply to each schema:
 
 | Mail intent schemas | Example phrases |
 | --- | --- |
@@ -25,11 +25,28 @@ The following table maps example phrases that apply to each schema. Your app nee
 | [`archiveMail`](appschema/mailintent/archivemail.md) | “Archive book club emails.” or “Archive emails from Nancy.” |
 | [`deleteMail`](appschema/mailintent/deletemail.md) | “Delete emails from Julian.” or “Trash all mail messages from Example Store.” |
 
-At build time, Xcode validates whether your app implements all the schemas in the group.
-
 > 💡 **Tip**: Xcode generates a template implementation when you type `mail_` and select a schema from the suggestions list.
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+
+#### Mail Domain Use Case Groups
+
+A *use-case group* is a set of related schemas that share a single purpose. Xcode reports a build warning for each missing schema in a group your app partially supports.
+
+The Mail domain has three use-case groups: composing, forwarding, and replying. The following table lists the use-case groups for each Mail schema:
+
+| Mail schema | Type | Use-case groups |
+| --- | --- | --- |
+| [`createDraft`](appschema/mailintent/createdraft.md) | Intent | composing |
+| [`draft`](appschema/mailentity/draft.md) | Entity | composing, forwarding, replying |
+| [`updateDraft`](appschema/mailintent/updatedraft.md) | Intent | composing, forwarding, replying |
+| [`saveDraft`](appschema/mailintent/savedraft.md) | Intent | composing, forwarding, replying |
+| [`sendDraft`](appschema/mailintent/senddraft.md) | Intent | composing, forwarding, replying |
+| [`message`](appschema/mailentity/message.md) | Entity | forwarding, replying |
+| [`forwardMail`](appschema/mailintent/forwardmail.md) | Intent | forwarding |
+| [`replyMail`](appschema/mailintent/replymail.md) | Intent | replying |
+
+> ❗ **Important**: To integrate your app with Apple Intelligence and bring it to Siri AI, adopt all the schemas in a use-case group.
 
 ## Topics
 

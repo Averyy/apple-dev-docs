@@ -27,10 +27,10 @@ You can only add [`AVMIDIMetaEvent.EventType.tempo`](avmidimetaevent/eventtype/t
 
 ## Topics
 
-### Creating a Meta Event
+### Creating a meta event
 - [init(type: AVMIDIMetaEvent.EventType, data: Data)](avmidimetaevent/init(type:data:).md)
   Creates an event with a MIDI meta event type and data.
-### Getting the Meta Event Type
+### Getting the meta event type
 - [var type: AVMIDIMetaEvent.EventType](avmidimetaevent/type.md)
   The type of meta event.
 - [AVMIDIMetaEvent.EventType](avmidimetaevent/eventtype.md)

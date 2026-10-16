@@ -16,9 +16,9 @@ object LocaleInfo
 
 #### Discussion
 
-The `LocaleInfo` object pairs a two-letter language identifier with its full BCP-47 locale code. Use it when you need to communicate both the base language (`language`) and the regional variant (`languageCode`) together, for example when enumerating the locales supported by a product page or brand creative.
+The `LocaleInfo` object pairs a language identifier with its full BCP-47 locale code. Use it when you need to communicate both the base language (`language`) and the locale (`languageCode`) together, for example when enumerating the locales supported by a product page or brand creative.
 
-The `language` field corresponds to the ISO 639-1 language code (for example, `en`, `fr`, `ja`). The `languageCode` field includes the region subtag as required by BCP-47 (for example, `en-US`, `fr-FR`, `ja-JP`). When building locale-aware creative specs, use `languageCode` as the map key in `localizedText` structures.
+The `language` field is usually a two-letter ISO 639-1 code (for example, `en`, `fr`, `ja`), but the API supports only a subset of ISO 639-1 and can return codes from other standards, such as `yue` (ISO 639-3) for Cantonese. The `languageCode` field is a BCP-47 tag that usually includes a region subtag (for example, `en-US`, `fr-FR`, `ja-JP`) but can include a script subtag instead (for example, `zh-Hans`, `zh-Hant`). To confirm which values are valid, use [`Query Supported App Languages`](query-supported-app-languages.md). When building locale-aware creative specs, use `languageCode` as the map key in `localizedText` structures.
 
 ##### Example
 
@@ -31,8 +31,8 @@ The `language` field corresponds to the ISO 639-1 language code (for example, `e
 
 ## Properties
 
-- `language` (string): Language identifier (for example, “en”, “es”). Read-only.
-- `languageCode` (string): BCP-47 language code (for example, “en-US”, “es-MX”). Read-only.
+- `language` (string): Language identifier, usually an ISO 639-1 code (for example, “en”, “es”). Not every ISO 639-1 code is supported. Read-only.
+- `languageCode` (string): BCP-47 language code (for example, “en-US”, “zh-Hans”). Read-only.
 
 ## See Also
 

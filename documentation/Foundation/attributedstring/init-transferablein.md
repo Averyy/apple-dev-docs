@@ -26,7 +26,7 @@ Use this initializer with a `AttributedTextFormatting/Transferable` that was imp
 
 > **Note**: This initializer applies the `AttributedTextFormattingDefinition` in the given `environment` to the imported text before returning.
 
-> **Note**: `View/attributedTextFormattingDefinition(_:)-uc57`, `AttributedTextValueConstraint/constrain(_:)-6cp64`
+> **Note**: `View/attributedTextFormattingDefinition(_:)-81jn6`, `AttributedTextValueConstraint/constrain(_:)-6cp64`
 
 
 ---

@@ -1,4 +1,4 @@
 Completed scraping ML Compute!
-Total pages scraped: 0
-Pages skipped (unchanged): 704
+Total pages scraped: 699
+Pages skipped (unchanged): 5
 Pages failed: 0

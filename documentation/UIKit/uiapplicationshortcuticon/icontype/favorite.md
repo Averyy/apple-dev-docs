@@ -19,7 +19,7 @@ case favorite
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934520@2x.png)
+![Favorite icon](/images/com.apple.uikit/media-2934520@2x.png)
 
 ## See Also
 

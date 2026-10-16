@@ -26,11 +26,11 @@ struct AppEntityUIElement
 
 #### Overview
 
-A custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence using `appEntityUIElementProvider` and provide the system with a list of `AppEntityUIElements`.
+A custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence using the view’s [`appEntityUIElementProvider`](https://developer.apple.com/documentation/uikit/uiview/appentityuielementprovider) property, and provide the system with a list of [`AppEntityUIElement`](appentityuielement.md) instances.
 
-When your app uses a custom view and your app manages its state or you use custom drawing to render a UI element, you need to implement your own `appEntityUIElementProvider`. This closure provides the system with `AppEntityUIElement` objects that combine the app entity for your content and additional information with spatial and state information to help the system understand onscreen content.
+When your app uses a custom view and your app manages its state or you use custom drawing to render a UI element, you need to implement your own [`appEntityUIElementProvider`](https://developer.apple.com/documentation/uikit/uiview/appentityuielementprovider). This closure provides the system with [`AppEntityUIElement`](appentityuielement.md) instances that combine the app entity for your content and additional information with spatial and state information to help the system understand onscreen content.
 
-For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](AppIntents.md).
+For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](providing-contextual-cues-to-apple-intelligence-and-siri.md) and [`App Intents`](AppIntents.md).
 
 ## Topics
 

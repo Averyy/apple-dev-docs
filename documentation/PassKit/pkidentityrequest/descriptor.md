@@ -27,6 +27,8 @@ Set this property before you invoke [`requestDocument(_:completion:)`](pkidentit
   An arbitrary number that the signed response playload includes.
 - [var merchantIdentifier: String?](pkidentityrequest/merchantidentifier.md)
   A value that represents the merchant that makes the request.
+- [var usageDescriptionKey: String?](pkidentityrequest/usagedescriptionkey.md)
+  The key in your app’s information property list that describes the reason for an identity request.
 
 
 ---

@@ -30,6 +30,8 @@ To request this entitlement for your app, [`fill out the request form`](https://
   A Boolean value that indicates whether observer queries receive updates while running in the background.
 - [com.apple.developer.healthkit.recalibrate-estimates](entitlements/com.apple.developer.healthkit.recalibrate-estimates.md)
   A Boolean value that determines whether your app can recalibrate the prediction algorithm used to calculate supported sample types.
+- [com.apple.developer.healthkit.research](entitlements/com.apple.developer.healthkit.research.md)
+  A Boolean value that indicates whether an approved health research app offers only Full Access when it requests HealthKit read access.
 
 
 ---

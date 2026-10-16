@@ -47,6 +47,7 @@ This method provides thread-safe, scoped access to the MusicSequence. The MusicS
   Stops the audio engine and releases any previously prepared resources.
 - [func reset()](avaudioengine/reset.md)
   Resets all audio nodes in the audio engine.
+- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
 
 
 ---

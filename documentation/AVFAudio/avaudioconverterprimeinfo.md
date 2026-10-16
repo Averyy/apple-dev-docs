@@ -22,12 +22,12 @@ struct AVAudioConverterPrimeInfo
 
 ## Topics
 
-### Creating Priming Information
+### Creating priming information
 - [init()](avaudioconverterprimeinfo/init.md)
   Creates a priming information instance.
 - [init(leadingFrames: AVAudioFrameCount, trailingFrames: AVAudioFrameCount)](avaudioconverterprimeinfo/init(leadingframes:trailingframes:).md)
   Creates a priming information instance with the specified leading and trailing frames.
-### Getting Frame Properties
+### Getting frame properties
 - [var leadingFrames: AVAudioFrameCount](avaudioconverterprimeinfo/leadingframes.md)
   The number of leading (previous) input frames the converter requires to perform a high-quality conversion.
 - [var trailingFrames: AVAudioFrameCount](avaudioconverterprimeinfo/trailingframes.md)

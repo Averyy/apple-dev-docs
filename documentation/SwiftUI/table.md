@@ -145,13 +145,13 @@ Use the [`tableStyle(_:)`](view/tablestyle(_:).md) modifier to set a [`TableStyl
 
 ##### Using Tables on Different Platforms
 
-You can define a single table for use on macOS, iOS, and iPadOS. However, on iPhone or in a compact horizontal size class environment — typical on iPad in certain modes, like Slide Over — the table has limited space to display its columns. To conserve space, the table automatically hides headers and all columns after the first when it detects this condition.
+You can define a single table for use on macOS, iOS, iPadOS, and visionOS. On iOS, iPadOS, and visionOS, the size class provided by the environment is used to transition the table’s layout. Regular size class environments on iPadOS, visionOS, and the inner display of iPhone Duo will display headers and all of the columns in the table. However, on other iPhones or in a compact horizontal size class environment — typical on iPhone Duo’s outer display or iPad in certain modes, like smaller windowed apps — the table has limited space to display its columns. To conserve space, the table automatically hides headers and all columns after the first when it detects this condition.
 
 To provide a good user experience in a space-constrained environment, you can customize the first column to show more information when you detect that the [`horizontalSizeClass`](environmentvalues/horizontalsizeclass.md) environment value becomes [`UserInterfaceSizeClass.compact`](userinterfacesizeclass/compact.md). For example, you can modify the sortable table from above to conditionally show all the information in the first column:
 
 ```swift
 struct CompactableTable: View {
-    #if os(iOS)
+    #if os(iOS) || os(visionOS)
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     private var isCompact: Bool { horizontalSizeClass == .compact }
     #else
@@ -181,7 +181,7 @@ struct CompactableTable: View {
 }
 ```
 
-By making this change, you provide a list-like appearance for narrower displays, while displaying the full table on wider ones. Because you use the same table instance in both cases, you get a seamless transition when the size class changes, like when someone moves your app into or out of Slide Over.
+By making this change, you provide a list-like appearance for narrower displays, while displaying the full table on wider ones. Because you use the same table instance in both cases, you get a seamless transition when the size class changes, like when someone moves your app into or out of Slide Over or opens your app on iPhone Duo’s inner display.
 
 ## Topics
 

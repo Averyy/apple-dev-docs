@@ -22,7 +22,9 @@ enum AVAudioConverterOutputStatus
 
 ## Topics
 
-### Status Options
+### Creating an output status
+- [init?(rawValue: Int)](avaudioconverteroutputstatus/init(rawvalue:).md)
+### Interpreting conversion results
 - [AVAudioConverterOutputStatus.haveData](avaudioconverteroutputstatus/havedata.md)
   A status that indicates that the method returns all of the requested data.
 - [AVAudioConverterOutputStatus.inputRanDry](avaudioconverteroutputstatus/inputrandry.md)
@@ -31,8 +33,6 @@ enum AVAudioConverterOutputStatus
   A status that indicates the method reaches the end of the stream, and doesn’t return any data.
 - [AVAudioConverterOutputStatus.error](avaudioconverteroutputstatus/error.md)
   A status that indicates the method encounters an error.
-### Initializers
-- [init?(rawValue: Int)](avaudioconverteroutputstatus/init(rawvalue:).md)
 
 ## Relationships
 

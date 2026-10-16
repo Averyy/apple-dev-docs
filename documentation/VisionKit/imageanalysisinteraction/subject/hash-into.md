@@ -6,8 +6,8 @@
 Serializes a subject with the given hasher.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - visionOS 1.0+
 

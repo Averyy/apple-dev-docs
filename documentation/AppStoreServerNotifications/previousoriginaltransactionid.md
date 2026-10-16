@@ -3,7 +3,7 @@
 **Framework**: App Store Server Notifications  
 **Kind**: typealias
 
-The original transaction identifer of a subscription before migration.
+The original transaction identifier of a subscription before migration.
 
 **Availability**:
 - App Store Server Notifications 2.16+

@@ -26,7 +26,7 @@ object SubscriptionReactivateInAppRequest
 ## See Also
 
 - [object SubscriptionReactivateItem](subscriptionreactivateitem.md)
-  An item in a subscription to reactive.
+  An item in a subscription to reactivate.
 
 
 ---

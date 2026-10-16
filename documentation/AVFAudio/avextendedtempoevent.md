@@ -21,10 +21,10 @@ class AVExtendedTempoEvent
 
 ## Topics
 
-### Creating a Tempo Event
+### Creating a tempo event
 - [init(tempo: Double)](avextendedtempoevent/init(tempo:).md)
   Creates an extended tempo event.
-### Configuring a Tempo Event
+### Configuring a tempo event
 - [var tempo: Double](avextendedtempoevent/tempo.md)
   The tempo in beats per minute as a positive value.
 

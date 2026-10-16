@@ -101,7 +101,7 @@ You can frequently determine the purpose of a thread based on the bottom frames 
 
 - Should the code from the app be running on this specific thread?
 - Is the crashed thread a background thread?
-- Do any of the backtraces show the app manipulating UI elements on any thread except the main thread? Have you tested your app with the `Main Thread Checker` enabled?
+- Do any of the backtraces show the app manipulating UI elements on any thread except the main thread? Have you tested your app with the `Main Thread Checker` enabled? See [`Detect improper UI updates on background threads`](diagnosing-memory-thread-and-crash-issues-early#Detect-improper-UI-updates-on-background-threads.md) for more information.
 - If your code uses an API that takes a completion handler, does that API guarantee the specific queue the completion handler uses? Is your code expecting that queue?
 - If your code uses an API where you provide a [`DispatchQueue`](https://developer.apple.com/documentation/dispatch/dispatchqueue) to the API, does the crash report show you’re using the queue you expect?
 

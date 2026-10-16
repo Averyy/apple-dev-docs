@@ -6,6 +6,8 @@ Create a version of your macOS app that runs on both Apple silicon and Intel-bas
 
 #### Overview
 
+> ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference) and [`Configuring the build settings of a target`](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
+
 Port your existing macOS app to Apple silicon by creating a universal binary and modifying your code to handle architectural differences. A universal binary looks no different than a regular app, but its executable file contains two versions of your compiled code. One version runs natively on Apple silicon, and the other runs natively on Intel-based Mac computers. At runtime, the system automatically chooses which version to run on the current platform.
 
 ![ThAn illustration of an app, where the main executable file supports the arm64 and x86_64 architectures.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-1@2x.png)
@@ -133,16 +135,6 @@ Architectural differences between `arm64` and `x86_64` mean that techniques that
 During the porting process, measure your app’s performance on both Apple silicon and Intel-based Mac computers and investigate any discrepancies. Tasks that take longer to run on one platform may require additional tuning.
 
 For specific tips on tuning universal binaries, see [`Tuning your code’s performance for Apple silicon`](tuning-your-code-s-performance-for-apple-silicon.md).
-
-## Topics
-
-### Additional Porting Tips
-- [Addressing architectural differences in your macOS code](addressing-architectural-differences-in-your-macos-code.md)
-  Fix problems that stem from architectural differences between Apple silicon and Intel-based Mac computers.
-- [Porting your audio code to Apple silicon](porting-your-audio-code-to-apple-silicon.md)
-  Eliminate issues in your audio-specific code when running on Apple silicon Mac computers.
-- [Porting just-in-time compilers to Apple silicon](porting-just-in-time-compilers-to-apple-silicon.md)
-  Update your just-in-time (JIT) compiler to work with the Hardened Runtime capability, and with Apple silicon.
 
 ## See Also
 

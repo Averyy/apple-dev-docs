@@ -20,7 +20,7 @@ kern_return_t createQueues(uint32_t queueCount, uint32_t options);
 
 #### Discussion
 
-Normally, `IOUserVideoStream::init` calls this method.
+Normally, [`init`](iouservideostream/init.md) calls this method.
 
 ## See Also
 

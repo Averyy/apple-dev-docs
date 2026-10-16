@@ -81,8 +81,6 @@ Use this class to manage your extension. For more information on app extensions,
 - [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
 - [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
 - [UIContentContainer](../uikit/uicontentcontainer.md)

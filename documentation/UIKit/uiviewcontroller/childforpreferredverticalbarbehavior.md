@@ -6,8 +6,8 @@
 Which child view controller, if any, should control the vertical bar behavior.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 - Mac Catalyst 27.1+
 - tvOS 27.1+
 - visionOS 27.1+

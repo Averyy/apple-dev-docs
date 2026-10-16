@@ -19,7 +19,7 @@ case home
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934518@2x.png)
+![Home icon](/images/com.apple.uikit/media-2934518@2x.png)
 
 ## See Also
 

@@ -19,7 +19,7 @@ case update
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934537@2x.png)
+![Update quick action icon](/images/com.apple.uikit/media-2934537@2x.png)
 
 ## See Also
 

@@ -10,7 +10,7 @@ A [`launch screen`](https://developer.apple.comhttps://developer.apple.com/desig
 
 Starting in iOS 27 and iPadOS 27, App Store Connect requires your app to include a launch screen configuration in its `Info.plist`. This applies to both iPhone and iPad apps distributed through the App Store and alternative app marketplaces. If your app already includes a launch screen, you don’t need to make any changes.
 
-A launch screen supports modern system features like multitasking and dynamic resizing. To learn about supporting resizable scenes, see [`TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key`](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md).
+A launch screen supports modern system features like multitasking and dynamic resizing. To learn about supporting resizable scenes, see [`TN3192: Migrating your app from the deprecated UIRequiresFullScreen key`](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md).
 
 #### Understand the App Store Submission Requirement
 

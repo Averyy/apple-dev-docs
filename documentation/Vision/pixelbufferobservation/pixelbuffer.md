@@ -18,6 +18,10 @@
 var pixelBuffer: CVReadOnlyPixelBuffer { get }
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## See Also
 
 - [enum RequestDescriptor](requestdescriptor.md)

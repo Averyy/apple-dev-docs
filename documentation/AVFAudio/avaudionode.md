@@ -30,7 +30,7 @@ A bus contains a format the framework expresses in terms of sample rate and chan
 
 ## Topics
 
-### Configuring an Input Format Bus
+### Inspecting input buses
 - [typealias AVAudioNodeBus](avaudionodebus.md)
   The index of a bus on an audio node.
 - [func inputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](avaudionode/inputformat(forbus:).md)
@@ -39,14 +39,14 @@ A bus contains a format the framework expresses in terms of sample rate and chan
   Gets the name of the input bus you specify.
 - [var numberOfInputs: Int](avaudionode/numberofinputs.md)
   The number of input busses for the node.
-### Creating an Output Format Bus
+### Inspecting output buses
 - [func outputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](avaudionode/outputformat(forbus:).md)
   Retrieves the output format for the bus you specify.
 - [func name(forOutputBus: AVAudioNodeBus) -> String?](avaudionode/name(foroutputbus:).md)
   Retrieves the name of the output bus you specify.
 - [var numberOfOutputs: Int](avaudionode/numberofoutputs.md)
   The number of output busses for the node.
-### Installing and Removing an Audio Tap
+### Managing audio taps
 - [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md)
   Install a tap on a bus using a sendable block
 - [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](avaudionode/installtap(onbus:buffersize:format:block:).md)
@@ -55,13 +55,13 @@ A bus contains a format the framework expresses in terms of sample rate and chan
   Removes an audio tap on a bus you specify.
 - [typealias AVAudioNodeTapBlock](avaudionodetapblock.md)
   The block that receives copies of the output of an audio node.
-### Getting the Audio Engine for the Node
+### Getting the owning engine
 - [var engine: AVAudioEngine?](avaudionode/engine.md)
   The audio engine that manages the node, if any.
-### Getting the Latest Node Render Time
+### Getting the last render time
 - [var lastRenderTime: AVAudioTime?](avaudionode/lastrendertime.md)
   The most recent render time.
-### Getting Audio Node Properties
+### Getting audio node properties
 - [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](avaudionode/withauaudiounit(_:).md)
   Provides scoped access to the node’s AUAudioUnit
 - [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit-1gu8g.md)
@@ -70,12 +70,9 @@ A bus contains a format the framework expresses in terms of sample rate and chan
   The processing latency of the node, in seconds.
 - [var outputPresentationLatency: TimeInterval](avaudionode/outputpresentationlatency.md)
   The maximum render pipeline latency downstream of the node, in seconds.
-### Resetting the Audio Node
+### Resetting the audio node
 - [func reset()](avaudionode/reset.md)
   Clears a unit’s previous processing state.
-### Constants
-- [typealias AVAudioNodeCompletionHandler](avaudionodecompletionhandler.md)
-  A general callback handler for an audio node.
 
 ## Relationships
 
@@ -101,6 +98,10 @@ A bus contains a format the framework expresses in terms of sample rate and chan
 
 ## See Also
 
+- [Using voice processing](using-voice-processing.md)
+  Add voice-processing capabilities to your app by using audio engine.
+- [class AVAudioEngine](avaudioengine.md)
+  An object that manages a graph of audio nodes, controls playback, and configures real-time rendering constraints.
 - [class AVAudioInputNode](avaudioinputnode.md)
   An object that connects to the system’s audio input.
 - [class AVAudioOutputNode](avaudiooutputnode.md)

@@ -1,4 +1,4 @@
 Completed scraping SceneKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 1610
+Total pages scraped: 1586
+Pages skipped (unchanged): 24
 Pages failed: 0

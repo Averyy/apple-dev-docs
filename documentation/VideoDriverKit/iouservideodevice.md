@@ -16,7 +16,7 @@ class IOUserVideoDevice;
 
 #### Overview
 
-The device has `IOUserVideoDeviceStream` objects.
+The device has [`IOUserVideoStream`](iouservideostream.md) objects.
 
 ## Topics
 
@@ -49,7 +49,7 @@ The device has `IOUserVideoDeviceStream` objects.
 - [SetIOOperationHandler](iouservideodevice/setiooperationhandler.md)
   Sets the IOOperationHandler block on the device.
 - [IOOperationHandler](videodriverkit/iooperationhandler.md)
-  A block that tells the device to perform an IOUserVideoIOOperation.
+  A block that tells the device to perform a video IO operation.
 ### Supporting device configuration changes
 - [PerformDeviceConfigurationChange](iouservideodevice/performdeviceconfigurationchange.md)
   The host calls this method to allow the device to perform a configuration change it previously requested by calling RequestDeviceConfigurationChange(), or a change to an IO state that requires a configuration change.

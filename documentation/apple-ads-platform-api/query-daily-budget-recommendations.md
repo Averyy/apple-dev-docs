@@ -42,10 +42,8 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 | `impression` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical impression count. |
 | `ttr` | number | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical tap-through rate. |
 | `taps` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical tap count. |
-| `expectedImpressions` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected impression count if the recommendation is applied. |
 | `expectedInstalls` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected install count if the recommendation is applied. |
 | `expectedSpend` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected spend if the recommendation is applied. |
-| `expectedTaps` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected tap count if the recommendation is applied. |
 | `expectedCpa` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected cost-per-acquisition if the recommendation is applied. |
 | `bidStrategy` | object | `EQUALS`, `IN` | Optional. The campaign’s current bid strategy. |
 
@@ -143,8 +141,6 @@ POST /v1/recommendations/daily-budgets/query
      },
      "ttr": 0.05,
      "expectedInstalls": 600,
-     "expectedTaps": 3000,
-     "expectedImpressions": 60000,
      "expectedSpend": {
        "amount": "2700.00",
        "currency": "USD"
@@ -228,10 +224,8 @@ POST /v1/recommendations/daily-budgets/query
      "impression": null,
      "ttr": null,
      "taps": null,
-     "expectedImpressions": null,
      "expectedInstalls": null,
      "expectedSpend": null,
-     "expectedTaps": null,
      "expectedCpa": null,
      "bidStrategy": {
        "bidStrategyType": "MANUAL_CPT",
@@ -266,10 +260,8 @@ POST /v1/recommendations/daily-budgets/query
      "impression": null,
      "ttr": null,
      "taps": null,
-     "expectedImpressions": null,
      "expectedInstalls": null,
      "expectedSpend": null,
-     "expectedTaps": null,
      "expectedCpa": null,
      "bidStrategy": {
        "bidStrategyType": "MANUAL_CPT",

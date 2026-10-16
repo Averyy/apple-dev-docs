@@ -30,7 +30,7 @@ Include the following headers with every request:
 | Header | Description |
 | --- | --- |
 | `Authorization` | **Required.** The authorization value is always `Bearer`. |
-| `X-AP-Context` | **Required.** Scopes the request to a specific ad account. Format: `adAccountId={adAccountId}`. Required for all ad-account-scoped operations. **Note:** This isn’t a requirement when calling [`Get User ACL`](get-user-acls.md), [`Get Me Details`](get-current-user-details.md), [`Get Org by ID`](get-orgs-_id_.md), [`Get Advertiser Resources`](get-advertiser-resources.md), or [`Create Ad Accounts`](post-ad-accounts.md). |
+| `X-AP-Context` | **Required.** Scopes the request to a specific ad account. Format: `adAccountId={adAccountId}`. Required for all ad-account-scoped operations. **Note:** This isn’t a requirement when calling [`Get User ACL`](get-user-acls.md), [`Get Me Details`](get-current-user-details.md), [`Get Org by ID`](get-orgs-_id_.md), [`Get Advertiser Resources`](get-advertiser-resources.md), or [`Create Ad Accounts`](post-ad-accounts.md). Budget order endpoints are organization-scoped and handle the header differently. See [`Budget Orders Endpoints`](budget-orders-endpoints.md). |
 
 To return the `userId` and `orgId` of an API caller, use [`Get Me Details`](get-current-user-details.md).
 
@@ -99,7 +99,7 @@ POST /v1/keywords/bulk-create
 }
 ```
 
-The response returns a `result` array with one entry per input item. Each entry includes `correlationId`, `operation`, `success`, and either the entity you created or updated or per-item error details.
+The response returns a `result` array with one entry per input item. Each entry includes `correlationId`, `operation`, `success`, and either the entity you created or updated or per-item error details. Delete entries omit the entity.
 
 For supported entities and endpoint paths, see [`Bulk Operations Endpoints`](bulk-operations-endpoints.md).
 
@@ -225,6 +225,7 @@ The error detail object fields are as follows:
 | --- | --- | --- |
 | `code` | string | A granular reason about one part of the error |
 | `message` | string, nullable | Explicit detail about why the API rejected this part of the request |
+| `info` | Info | Additional context that supplements `message`. Content varies by endpoint and error type. See [`Info`](info.md). |
 
 **Successful Response**
 

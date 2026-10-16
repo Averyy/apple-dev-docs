@@ -6,7 +6,7 @@
 Error conditions that can occur during subject analysis.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

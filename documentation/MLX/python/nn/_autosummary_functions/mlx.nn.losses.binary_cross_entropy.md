@@ -68,7 +68,9 @@ array(0.539245, dtype=float32)
 
 >>> probs = mx.array([0.1, 0.1, 0.4, 0.4])
 >>> targets = mx.array([0, 0, 1, 1])
->>> loss = nn.losses.binary_cross_entropy(probs, targets, with_logits=False, reduction="mean")
+>>> loss = nn.losses.binary_cross_entropy(
+...     probs, targets, with_logits=False, reduction="mean",
+... )
 >>> loss
 array(0.510826, dtype=float32)
 

@@ -19,7 +19,7 @@ static var title: ToolbarItemPlacement { get }
 
 #### Discussion
 
-The view appears when the navigation bar renders its title inline, and takes precedence over the value provided to the `View.navigationTitle(_:)` modifier.
+The view appears when the navigation bar renders its title inline, and takes precedence over the value provided to the [`navigationTitle(_:)`](view/navigationtitle(_:).md) modifier.
 
 ```swift
 struct ContentView: View {

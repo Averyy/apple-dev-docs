@@ -30,6 +30,8 @@ The value range of values is `0.05` to `5.0` octaves.
   The bypass state of the equalizer filter band.
 - [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
   The equalizer filter type.
+- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+  Filter types available to use with the filter type property.
 - [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
   The frequency of the equalizer filter, in hertz.
 - [var gain: Float](avaudiouniteqfilterparameters/gain.md)

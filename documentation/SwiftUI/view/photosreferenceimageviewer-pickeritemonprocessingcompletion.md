@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `isPresented` is set to true.
+Presents an image viewer for an image containing Apple Reference Image data selected from the Photos picker when `pickerItem` is set.
 
 **Availability**:
 - iOS 27.0+
@@ -20,8 +20,7 @@ Presents an image viewer for an image containing Apple Reference Image data sele
 
 #### Discussion
 
-- Parameters - isPresented: A binding that determines when this view is presented.
-- pickerItem: The `PhotosPickerItem` returned from a SwiftUI Photos picker.
+- Parameters - pickerItem: The `PhotosPickerItem` returned from a SwiftUI Photos picker.
 - onProcessingCompletion: An optional closure called when processing completes.
 
 ## See Also
@@ -53,7 +52,7 @@ Presents an image viewer for an image containing Apple Reference Image data sele
 - [func photosSharedAlbumPostingSheet(isPresented:items:defaultAlbumIdentifier:photoLibrary:completion:)](view/photossharedalbumpostingsheet(ispresented:items:defaultalbumidentifier:photolibrary:completion:).md)
   Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
 - [func photosReferenceImageViewer(asset: Binding<PHAsset?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(asset:onprocessingcompletion:).md)
-  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `isPresented` is set to true.
+  Presents an image viewer for an asset in a photo library that contains Apple Reference Image data when `asset` is set.
 - [func photosReferenceImageViewer(fileURL: Binding<URL?>, onProcessingCompletion: ((Result<URL, any Error>) -> Void)?) -> some View](view/photosreferenceimageviewer(fileurl:onprocessingcompletion:).md)
   Presents an image viewer for a given image file containing Apple Reference Image data when `fileURL` is set.
 

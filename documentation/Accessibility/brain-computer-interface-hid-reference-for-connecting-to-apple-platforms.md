@@ -189,43 +189,94 @@ void send_bci_button_click(void* hid_user_device, uint8_t button_index, uint64_t
 
 ##### Report Id 3 Bci Input Pointer Report
 
-This report functions as a cursor onscreen for features such as Switch Control. This can be a 2D or 3D pointer. The host computing device can use this information to:
+This report drives an onscreen pointer for features such as Switch Control. A single report can describe a one-, two-, or three-dimensional movement. The host computing device chooses how to interpret each report based on which axes the report marks as valid. The BCI hardware device chooses the dimensionality per report, so it can switch between gliding-cursor and head-tracking interaction without reconfiguring the HID descriptor. The host computing device can use this report to:
 
-- Move an onscreen cursor.
-- Control a point scanner absolutely if the host computing device supports such a mode. Switch Control in iOS, iPadOS, and visionOS supports this mode with gliding cursor. This allows the BCI device to control the pointer manually.
+- **Move a 1D gliding cursor.** When only the x-axis carries a valid value, the report drives the Switch Control gliding cursor, which sweeps along a single axis at a time. Switch Control in iOS, iPadOS, and visionOS supports this mode.
+- **Move a 2D pointer.** When the x- and y-axes carry valid values, the report drives a two-dimensional pointer, equivalent to head tracking.
+- **Move a 3D pointer.** When all three axes carry valid values, the report drives the spatial point picker on spatial computing platforms such as visionOS. The picker positions the pointer in three dimensions: horizontal, vertical, and depth.
+
+A report can carry either *relative* movement deltas or *absolute* positions, and in both cases the BCI hardware device drives the pointer directly, rather than the host computing device scanning it automatically:
+
+- **Relative** (the default): each axis is a movement delta that the host computing device accumulates to position the pointer.
+- **Absolute**: each axis is a position that the host computing device maps directly onto the screen, without accumulation. A BCI hardware device that can report an absolute coordinate uses this mode to place the pointer at an exact position, which improves accuracy and avoids the drift that accumulating deltas can introduce.
+
+The BCI hardware device selects relative or absolute positioning for the pointer through the pointer item’s descriptor flag, independent of the per-report dimensionality. For details, see [`Relative and absolute positioning`](brain-computer-interface-hid-reference-for-connecting-to-apple-platforms#Relative-and-absolute-positioning.md).
 
 ###### Technical Summary
 
 This section defines an input report (report ID = 3) for a pointer (HID Generic Desktop Usage Page).
 
-- It includes three 8-bit signed values (`SInt8`) for x, y, and z axis movement. These values range from `-127` to `127`.
-- All x, y, and z values are *relative changes* (deltas) from the previous state, not absolute positions. For example, a value of `5` for x represents a movement of 5 units to the right, not an absolute coordinate of 5.
+- It includes three 8-bit signed values (`SInt8`) for x-, y-, and z-axis movement. A real movement delta ranges from `-127` to `127`.
+- By default, x, y, and z are *relative changes* (deltas) from the previous state, not absolute positions. For example, a value of `5` for x represents a movement of 5 units to the right, not an absolute coordinate of 5. The host computing device accumulates these deltas to position the pointer. A BCI hardware device can instead report absolute positions by declaring the pointer axes absolute in the descriptor — see [`Relative and absolute positioning`](brain-computer-interface-hid-reference-for-connecting-to-apple-platforms#Relative-and-absolute-positioning.md).
+- The value `-128` (`0x80`) is a reserved sentinel that marks an axis as **absent** for the current report, rather than a real movement delta. It’s the one signed 8-bit value outside the descriptor’s declared logical range (`-127` to `127`). This keeps it from ever being confused with a real delta — including a legitimate `0`, which means “no movement on this axis.”
+- Clamp every real delta to the range `-127` to `127`, and never send `-128` as movement data. Reserve `-128` exclusively as the “axis absent” marker. The host computing device doesn’t clamp incoming values to the logical range, so a stray `-128` delta misreads as an absent axis.
+- The set of valid (non-`-128`) axes selects the pointer’s dimensionality for that report. The x-axis must always be valid. If the x-axis is `-128`, or the combination of valid axes doesn’t match a row in the following table, the host computing device ignores the entire report:
+
+| Dimensionality | x | y | z | Host interpretation |
+| --- | --- | --- | --- | --- |
+| 1D | valid | `-128` | `-128` | Gliding cursor (single-axis sweep) |
+| 2D | valid | valid | `-128` | 2D pointer (head-tracking equivalent) |
+| 3D | valid | valid | valid | Spatial point picker (visionOS) |
+
+###### Relative and Absolute Positioning
+
+The pointer item declares whether its axes are relative or absolute through the HID Input item’s Relative/Absolute flag in the descriptor — `0x81, 0x06` (`Data, Variable, Relative`) or `0x81, 0x02` (`Data, Variable, Absolute`). This is a fixed, device-level choice for the pointer, unlike dimensionality, which the BCI hardware device selects per report.
+
+- **Relative** (the default): each valid axis is a movement delta in the range `-127` to `127` that the host computing device accumulates onto the current pointer position.
+- **Absolute**: each valid axis is a position that the host computing device maps linearly from the descriptor’s declared logical range onto the screen and applies directly, without accumulation. With the `-127` to `127` logical range that this document’s descriptor declares: - For the x-axis, `-127` is the left edge, `127` is the right edge, and `0` is the horizontal center.
+- For the y-axis, `-127` is the top edge, `127` is the bottom edge, and `0` is the vertical center.
+
+Keep the pointer item’s logical range within `-127` to `127` so the `-128` absent-axis sentinel stays reserved. The host computing device applies absolute positioning to the 1D gliding cursor and the 2D pointer only; the 3D spatial pointer always uses relative deltas. All other pointer rules are unchanged in absolute mode: the x-axis must be valid, `-128` still marks an absent axis, and the set of valid axes selects the dimensionality as in the preceding table.
 
 ###### Sending Pointer Event Reports
 
-To send pointer movement data, you populate the `BCIInputPointerReport` structure with the deltas for x, y, and z.
+To send pointer movement data, you populate the `BCIInputPointerReport` structure with the values for x, y, and z — deltas in relative mode, or positions in absolute mode.
 
 ```c
+// The sentinel that marks a pointer axis as absent for a report. It's the one int8_t value
+// outside the descriptor's logical range (-127 to 127), so it never collides with a real
+// delta. Never send it as a real movement value.
+#define BCI_POINTER_AXIS_ABSENT ((int8_t)-128) // 0x80
+
 /**
- * Sends a BCI Pointer Report with relative movement data using
- * IOHIDUserDeviceHandleReportWithTimeStamp.
+ * Clamps a raw delta into the descriptor's logical range so it can never equal the
+ * absent-axis sentinel (-128 / 0x80).
+ */
+static inline int8_t bci_clamp_axis(int value) {
+    if (value >  127) return  127;
+    if (value < -127) return -127;
+    return (int8_t)value;
+}
+
+/**
+ * Sends a BCI Pointer Report using IOHIDUserDeviceHandleReportWithTimeStamp. The x/y/z values are
+ * relative deltas when the pointer is declared relative, or positions when it's declared absolute.
+ *
+ * Set unused axes to BCI_POINTER_AXIS_ABSENT to select the pointer's dimensionality.
+ * The x-axis must always carry a real delta:
+ *   - 1D gliding cursor:       real x, y = ABSENT, z = ABSENT
+ *   - 2D pointer (head-track): real x, real y,     z = ABSENT
+ *   - 3D spatial pointer:      real x, real y,     real z
+ * The host ignores reports where x is ABSENT or the valid-axis pattern matches none of the above.
  *
  * @param hid_user_device A reference to your IOHIDUserDevice.
- * @param delta_x The relative movement along the x-axis (-127 to 127).
- * @param delta_y The relative movement along the y-axis (-127 to 127).
- * @param delta_z The relative movement along the z-axis (-127 to 127).
+ * @param delta_x The relative x-axis movement (-127 to 127). Must be a real delta.
+ * @param delta_y The relative y-axis movement (-127 to 127), or BCI_POINTER_AXIS_ABSENT.
+ * @param delta_z The relative z-axis movement (-127 to 127), or BCI_POINTER_AXIS_ABSENT.
  * @param timestamp The timestamp for this report, typically from mach_absolute_time().
  */
-void send_bci_pointer_report(void* hid_user_device, int8_t delta_x, int8_t delta_y, int8_t delta_z, uint8_t p_id, uint64_t timestamp) {
+void send_bci_pointer_report(void* hid_user_device, int8_t delta_x, int8_t delta_y, int8_t delta_z, uint64_t timestamp) {
     BCIInputPointerReport report;
+    bzero(&report, sizeof(report));
 
     // 1. Set the Report ID.
     report.reportId = 3;
 
-    // 2. Set the position deltas.
-    report.position[0] = delta_x; // x-axis movement
-    report.position[1] = delta_y; // y-axis movement
-    report.position[2] = delta_z; // z-axis movement
+    // 2. Set the position deltas. Use BCI_POINTER_AXIS_ABSENT for unused axes; clamp real
+    //    deltas with bci_clamp_axis() so they never equal -128.
+    report.position[0] = delta_x; // x-axis movement (always a real delta)
+    report.position[1] = delta_y; // y-axis movement, or BCI_POINTER_AXIS_ABSENT
+    report.position[2] = delta_z; // z-axis movement, or BCI_POINTER_AXIS_ABSENT
 
     // 3. Send the report.
     IOHIDUserDeviceHandleReportWithTimeStamp(
@@ -234,6 +285,36 @@ void send_bci_pointer_report(void* hid_user_device, int8_t delta_x, int8_t delta
         (uint8_t*)&report,
         sizeof(report)
     );
+}
+
+// Convenience wrappers showing how to select each dimensionality.
+void send_bci_pointer_1d(void* hid_user_device, int dx, uint64_t timestamp) {
+    // Gliding cursor: only the x-axis is valid.
+    send_bci_pointer_report(hid_user_device, bci_clamp_axis(dx),
+                            BCI_POINTER_AXIS_ABSENT, BCI_POINTER_AXIS_ABSENT, timestamp);
+}
+
+void send_bci_pointer_2d(void* hid_user_device, int dx, int dy, uint64_t timestamp) {
+    // 2D pointer (head-tracking equivalent): the x- and y-axes are valid.
+    send_bci_pointer_report(hid_user_device, bci_clamp_axis(dx), bci_clamp_axis(dy),
+                            BCI_POINTER_AXIS_ABSENT, timestamp);
+}
+
+// Absolute variants (the pointer Input item declared Absolute, 0x81 0x02). The same report structure
+// carries a POSITION per axis instead of a delta: with the -127..127 logical range, x maps
+// left(-127)..right(127) and y maps top(-127)..bottom(127), with 0 at the center. The dimensionality
+// rules are unchanged, so unused axes still use BCI_POINTER_AXIS_ABSENT.
+void send_bci_pointer_1d_absolute(void* hid_user_device, int x, uint64_t timestamp) {
+    // 1D gliding cursor, absolute: only the x-axis carries a position.
+    send_bci_pointer_report(hid_user_device, bci_clamp_axis(x),
+                            BCI_POINTER_AXIS_ABSENT, BCI_POINTER_AXIS_ABSENT, timestamp);
+}
+
+void send_bci_pointer_2d_absolute(void* hid_user_device, int x, int y, uint64_t timestamp) {
+    // 2D pointer, absolute: the x- and y-axes carry positions (for example, (127, 127) is bottom-right,
+    // (0, 0) is the center, and (-127, -127) is top-left).
+    send_bci_pointer_report(hid_user_device, bci_clamp_axis(x), bci_clamp_axis(y),
+                            BCI_POINTER_AXIS_ABSENT, timestamp);
 }
 ```
 
@@ -384,7 +465,7 @@ typedef struct {
 
 typedef struct {
     UInt8 reportId;
-    SInt8 position[3]; // 3 8-bit fields for x, y, z positioning: -127-127
+    SInt8 position[3]; // 3 8-bit fields for x, y, z: -127 to 127 (a delta in relative mode, or a position in absolute mode), or -128 (axis absent)
 } BCIInputPointerReport;
 
 
@@ -426,9 +507,18 @@ static char BCIDescriptor[] = {
     0x81, 0x02,                               //     Input...................(Data, Variable, Absolute)
     0xC0,                                     //   End Collection
     
-    // Pointer: You can have as many of these as needed.
-    //  When received, it can move the head tracker.
-    //  If the device is in gliding cursor mode, it can move the gliding cursor absolutely.
+    // Pointer: x/y/z values that position a pointer. By default they are relative deltas the host
+    //  accumulates; declare this Input item Absolute (0x81 0x02) instead of Relative (0x81 0x06) to
+    //  send absolute positions, which the host maps from the logical range onto the screen (1D and 2D only).
+    //  The device selects dimensionality per report by marking unused axes with the
+    //  sentinel -128 (0x80) -- the one signed 8-bit value outside the logical range
+    //  below, so it never collides with a real value:
+    //    x valid, y & z = -128   -> 1D gliding cursor
+    //    x & y valid, z = -128   -> 2D pointer (head-tracking equivalent)
+    //    x, y & z all valid      -> 3D spatial pointer (visionOS spatial point picker)
+    //  The x-axis must always be valid; the host ignores any other shape.
+    //  Logical Minimum stays -127 (not -128) on purpose so the sentinel stays out of
+    //  range -- keep the logical-range bytes as-is for both relative and absolute modes.
     0x05, 0x01,                               //   Usage Page (Generic Desktop)
     0x09, 0x01,                               //   Usage (Pointer)
     0x85, 0x03,                               //   ReportID................ (3)
@@ -440,7 +530,7 @@ static char BCIDescriptor[] = {
     0x25, 0x7F,                               //     Logical Maximum......... (127)
     0x75, 0x08,                               //     Report Size............. (8)
     0x95, 0x03,                               //     Report Count............ (3)
-    0x81, 0x06,                               //     Input...................(Data, Variable, Relative)
+    0x81, 0x06,                               //     Input...................(Data, Variable, Relative; use 0x02 for Absolute)
     0xC0,                                     //   End Collection
 
     // Item selection

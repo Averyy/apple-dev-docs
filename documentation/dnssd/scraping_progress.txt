@@ -1,4 +1,4 @@
 Completed scraping dnssd!
-Total pages scraped: 0
-Pages skipped (unchanged): 245
+Total pages scraped: 238
+Pages skipped (unchanged): 7
 Pages failed: 0

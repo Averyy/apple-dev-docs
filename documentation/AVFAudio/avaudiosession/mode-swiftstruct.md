@@ -27,10 +27,10 @@ While categories set the base behaviors for your app, you use modes to assign sp
 
 ## Topics
 
-### Creating a Mode
+### Creating a mode
 - [init(rawValue: String)](avaudiosession/mode-swift.struct/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
-### Getting Standard Session Modes
+### Getting standard session modes
 - [static let `default`: AVAudioSession.Mode](avaudiosession/mode-swift.struct/default.md)
   The default audio session mode.
 - [static let dualRoute: AVAudioSession.Mode](avaudiosession/mode-swift.struct/dualroute.md)

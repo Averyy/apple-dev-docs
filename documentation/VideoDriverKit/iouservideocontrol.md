@@ -16,7 +16,7 @@ class IOUserVideoControl;
 
 #### Overview
 
-Don’t subclass [`IOUserVideoControl`](iouservideocontrol.md) or allocated instances directly.
+Don’t subclass [`IOUserVideoControl`](iouservideocontrol.md) or allocate it directly.
 
 ## Topics
 

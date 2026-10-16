@@ -67,7 +67,7 @@ struct Home: View {
 ## See Also
 
 - [func disabled(Bool) -> some View](view/disabled(_:).md)
-  Adds a condition that controls whether users can interact with this view.
+  Adds a condition that controls whether someone can interact with this view.
 - [var isEnabled: Bool](environmentvalues/isenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows user interaction.
 - [func invalidatableContent(Bool) -> some View](view/invalidatablecontent(_:).md)

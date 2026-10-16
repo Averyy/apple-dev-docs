@@ -30,10 +30,10 @@ You can’t create a standalone instance of [`AVAudioEnvironmentReverbParameters
 
 ## Topics
 
-### Enabling and Disabling Reverb
+### Enabling and disabling reverb
 - [var enable: Bool](avaudioenvironmentreverbparameters/enable.md)
   A Boolean value that indicates whether reverberation is in an enabled state.
-### Getting and Setting Reverb Values
+### Getting and setting reverb values
 - [var level: Float](avaudioenvironmentreverbparameters/level.md)
   Controls the amount of reverb, in decibels.
 - [var filterParameters: AVAudioUnitEQFilterParameters](avaudioenvironmentreverbparameters/filterparameters.md)
@@ -63,22 +63,6 @@ You can’t create a standalone instance of [`AVAudioEnvironmentReverbParameters
   An object that specifies the amount of attenuation distance, the gradual loss in audio intensity, and other characteristics.
 - [protocol AVAudio3DMixing](avaudio3dmixing.md)
   A collection of properties that define 3D mixing properties.
-- [struct AVAudio3DPoint](avaudio3dpoint.md)
-  A structure that represents a point in 3D space.
-- [struct AVAudio3DVectorOrientation](avaudio3dvectororientation.md)
-  A structure that represents two orthogonal vectors that describe the orientation of the listener in 3D space.
-- [struct AVAudio3DAngularOrientation](avaudio3dangularorientation.md)
-  A structure that represents the angular orientation of the listener in 3D space.
-- [enum AVAudio3DMixingSourceMode](avaudio3dmixingsourcemode.md)
-  The source modes for the input bus of the audio environment node.
-- [enum AVAudio3DMixingRenderingAlgorithm](avaudio3dmixingrenderingalgorithm.md)
-  The types of rendering algorithms available per input bus of the environment node.
-- [enum AVAudioEnvironmentOutputType](avaudioenvironmentoutputtype.md)
-  The output types for using with the automatic 3D mixing rendering algorithm.
-- [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
-  The in-head modes for a point source.
-- [typealias AVAudio3DVector](avaudio3dvector.md)
-  A structure that represents a vector in 3D space, in degrees.
 
 
 ---

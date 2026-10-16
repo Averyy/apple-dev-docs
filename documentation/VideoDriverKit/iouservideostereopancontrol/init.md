@@ -20,12 +20,14 @@ True on success.
 
 ## Parameters
 
-- `in_driver`: The IOUserVideoDriver that owns this object.
-- `in_is_settable`: A Boolean value indicating if the control value can be set
-- `in_control_value`: A float for the control’s current stereo pan value
-- `in_control_element`: The IOUserVideoObjectPropertyElement for the control
-- `in_control_scope`: The IOUserVideoObjectPropertyScope for the control
-- `in_control_class_id`: The IOUserVideoClassID of the control
+- `in_driver`: The video driver that owns this object.
+- `in_is_settable`: A Boolean value indicating whether the control value can be set.
+- `in_control_value`: The control’s current stereo pan value.
+- `in_left_channel`: The property element for the left channel.
+- `in_right_channel`: The property element for the right channel.
+- `in_control_element`: The property element for the control.
+- `in_control_scope`: The property scope for the control.
+- `in_control_class_id`: The class ID of the control.
 
 ## See Also
 

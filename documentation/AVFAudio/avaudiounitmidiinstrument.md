@@ -28,7 +28,7 @@ Use an [`AVAudioUnitMIDIInstrument`](avaudiounitmidiinstrument.md) in a chain th
 ### Creating a MIDI instrument
 - [init(audioComponentDescription: AudioComponentDescription)](avaudiounitmidiinstrument/init(audiocomponentdescription:).md)
   Creates a MIDI instrument audio unit with the component description you specify.
-### Sending information to the MIDI instrument
+### Sending MIDI events
 - [func sendController(UInt8, withValue: UInt8, onChannel: UInt8)](avaudiounitmidiinstrument/sendcontroller(_:withvalue:onchannel:).md)
   Sends a MIDI controller event to the instrument.
 - [func sendMIDIEvent(UInt8, data1: UInt8)](avaudiounitmidiinstrument/sendmidievent(_:data1:).md)

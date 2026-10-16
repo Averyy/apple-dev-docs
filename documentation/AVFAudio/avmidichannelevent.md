@@ -21,7 +21,7 @@ class AVMIDIChannelEvent
 
 ## Topics
 
-### Configuring a Channel Event
+### Configuring a channel event
 - [var channel: UInt32](avmidichannelevent/channel.md)
   The MIDI channel.
 

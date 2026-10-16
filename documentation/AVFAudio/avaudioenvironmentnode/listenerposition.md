@@ -29,6 +29,8 @@ The system specifies the coordinates in meters.
   The listener’s angular orientation in the environment.
 - [var listenerVectorOrientation: AVAudio3DVectorOrientation](avaudioenvironmentnode/listenervectororientation.md)
   The listener’s vector orientation in the environment.
+- [var isListenerHeadTrackingEnabled: Bool](avaudioenvironmentnode/islistenerheadtrackingenabled.md)
+  A Boolean value that indicates whether the listener orientation is automatically rotated based on head orientation.
 
 
 ---

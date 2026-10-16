@@ -15,7 +15,6 @@ Each [`TargetCpaRecommendation`](targetcparecommendation.md) result includes:
 - `recommendedTargetCPA`: the suggested new target CPA
 - `bidStrategy`: the campaign’s current bid strategy context
 - Historical metrics: `installs`, `spend`, `taps`, `averageCPA`, `averageCPT`, `impression`, `ttr`
-- Expected metrics: projected `expectedInstalls`, `expectedSpend`, `expectedTaps`, `expectedCPA`
 
 Only campaigns using a Maximize Conversions bid strategy will receive recommendations.
 
@@ -41,10 +40,6 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 | `expirationTime` | string (date-time) | `EQUALS`, `GREATER_THAN`, `LESS_THAN` | Optional. When the recommendation expires. |
 | `averageCPT` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical average cost-per-tap. |
 | `averageCPA` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical average cost-per-acquisition. |
-| `expectedTaps` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected tap count if the recommendation is applied. |
-| `expectedCPA` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected cost-per-acquisition if the recommendation is applied. |
-| `expectedInstalls` | integer | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected install count if the recommendation is applied. |
-| `expectedSpend` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Projected spend if the recommendation is applied. |
 | `impression` | integer | `EQUALS`, `IN`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical impression count. |
 | `installs` | integer | `EQUALS`, `IN`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical install count. |
 | `spend` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. Historical spend. |
@@ -54,7 +49,7 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 
 #### Payload Examples
 
-This example queries available target CPA recommendations for an app, sorted by creation time. The response includes the recommended CPA alongside historical performance metrics and projected results if the recommendation is applied.
+This example queries available target CPA recommendations for an app, sorted by creation time. The response includes the recommended CPA alongside historical performance metrics.
 
 ##### Request
 
@@ -136,16 +131,6 @@ POST /v1/recommendations/target-cpas/query
        "currency": "USD"
      },
      "ttr": 0.05,
-     "expectedTaps": 3000,
-     "expectedInstalls": 600,
-     "expectedSpend": {
-       "amount": "3000.00",
-       "currency": "USD"
-     },
-     "expectedCPA": {
-       "amount": "5.00",
-       "currency": "USD"
-     },
      "creationTime": "2026-02-20T10:30:00Z",
      "modificationTime": "2026-02-20T10:30:00Z",
      "expirationTime": "2026-03-20T10:30:00Z"

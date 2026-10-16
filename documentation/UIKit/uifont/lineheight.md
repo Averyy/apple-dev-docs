@@ -19,6 +19,10 @@ The height, in points, of text lines.
 var lineHeight: CGFloat { get }
 ```
 
+#### Discussion
+
+This value is approximately equal to [`ascender`](uifont/ascender.md) plus the absolute value of [`descender`](uifont/descender.md) plus [`leading`](uifont/leading.md). For an explanation of how these metrics relate to each other, see [`UIFont`](uifont.md).
+
 ## See Also
 
 - [var pointSize: CGFloat](uifont/pointsize.md)

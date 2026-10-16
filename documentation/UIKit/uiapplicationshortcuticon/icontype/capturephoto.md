@@ -19,7 +19,7 @@ case capturePhoto
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934529@2x.png)
+![Camera icon](/images/com.apple.uikit/media-2934529@2x.png)
 
 ## See Also
 

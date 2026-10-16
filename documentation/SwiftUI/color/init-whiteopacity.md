@@ -24,7 +24,7 @@ init(_ colorSpace: Color.RGBColorSpace = .sRGB, white: Double, opacity: Double =
 
 This initializer creates a constant color that doesn’t change based on context. For example, it doesn’t have distinct light and dark appearances, unlike various system-defined colors, or a color that you load from an Asset Catalog with [`init(_:bundle:)`](color/init(_:bundle:).md).
 
-A standard sRGB color space clamps the `white` component to a range of `0` to `1`, but SwiftUI colors use an extended sRGB color space, so you can use component values outside that range. This makes it possible to create colors using the [`Color.RGBColorSpace.sRGB`](color/rgbcolorspace/srgb.md) or [`Color.RGBColorSpace.sRGBLinear`](color/rgbcolorspace/srgblinear.md) color space that make full use of the wider gamut of a diplay that supports [`Color.RGBColorSpace.displayP3`](color/rgbcolorspace/displayp3.md).
+A standard sRGB color space clamps the `white` component to a range of `0` to `1`, but SwiftUI colors use an extended sRGB color space, so you can use component values outside that range. This makes it possible to create colors using the [`Color.RGBColorSpace.sRGB`](color/rgbcolorspace/srgb.md) or [`Color.RGBColorSpace.sRGBLinear`](color/rgbcolorspace/srgblinear.md) color space that make full use of the wider gamut of a display that supports [`Color.RGBColorSpace.displayP3`](color/rgbcolorspace/displayp3.md).
 
 ## Parameters
 

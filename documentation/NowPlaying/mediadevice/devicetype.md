@@ -40,10 +40,14 @@ Use this enumeration to specify the type of playback device in a remote session.
   A set-top box.
 - [MediaDevice.DeviceType.speaker](mediadevice/devicetype/speaker.md)
   A speaker device.
+- [MediaDevice.DeviceType.speakerGroup](mediadevice/devicetype/speakergroup.md)
+  A group of speakers playing together as a single unit.
 - [MediaDevice.DeviceType.tablet](mediadevice/devicetype/tablet.md)
   A tablet device.
 - [MediaDevice.DeviceType.tv](mediadevice/devicetype/tv.md)
   A television.
+- [MediaDevice.DeviceType.tvAndSpeaker](mediadevice/devicetype/tvandspeaker.md)
+  A television paired with a speaker.
 - [MediaDevice.DeviceType.wearable](mediadevice/devicetype/wearable.md)
   A wearable device like a watch.
 - [MediaDevice.DeviceType.web](mediadevice/devicetype/web.md)

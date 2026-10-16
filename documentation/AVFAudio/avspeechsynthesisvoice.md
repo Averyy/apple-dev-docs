@@ -26,7 +26,7 @@ The primary factors that distinguish a voice in speech synthesis are language, l
 
 ## Topics
 
-### Obtaining voices
+### Creating a voice
 - [init?(identifier: String)](avspeechsynthesisvoice/init(identifier:).md)
   Retrieves a voice for the identifier you specify.
 - [init?(language: String?)](avspeechsynthesisvoice/init(language:).md)

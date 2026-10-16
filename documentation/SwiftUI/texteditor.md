@@ -51,7 +51,7 @@ struct TextEditingView: View {
 }
 ```
 
-If you want to change the spacing or font scaling aspects of the text, you can use modifiers like [`lineLimit(_:)`](view/linelimit(_:).md), [`lineSpacing(_:)`](view/linespacing(_:).md), and [`minimumScaleFactor(_:)`](view/minimumscalefactor(_:).md) to configure how the view displays text depending on the space constraints. For example, here the [`lineSpacing(_:)`](view/linespacing(_:).md) modifier sets the spacing between lines to 5 points:
+If you want to change the spacing or font scaling aspects of the text, you can use modifiers like [`lineSpacing(_:)`](view/linespacing(_:).md) and [`minimumScaleFactor(_:)`](view/minimumscalefactor(_:).md) to configure how the view displays text depending on the space constraints. For example, here the [`lineSpacing(_:)`](view/linespacing(_:).md) modifier sets the spacing between lines to 5 points:
 
 ```swift
 struct TextEditingView: View {

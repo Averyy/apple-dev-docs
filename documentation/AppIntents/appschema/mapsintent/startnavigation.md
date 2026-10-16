@@ -38,6 +38,28 @@ struct MapsStartNavigationIntent {
 }
 ```
 
+Define a `@UnionValue` enumeration for the `origin` parameter, as in the following example, by typing the first few characters of `maps_location` in Xcode and selecting it from the code-completion suggestions.
+
+```swift
+@UnionValue
+enum MapsLocation {
+    case place(<#MapsPlaceEntity#>)
+    case currentLocation(<#MapsCurrentLocationEntity#>)
+}
+```
+
+Define a `@UnionValue` enumeration for the `destinations` parameter, as in the following example, by typing the first few characters of `maps_location` in Xcode and selecting it from the code-completion suggestions.
+
+```swift
+@UnionValue
+enum MapsLocation {
+    case place(<#MapsPlaceEntity#>)
+    case currentLocation(<#MapsCurrentLocationEntity#>)
+}
+```
+
+> 💡 **Tip**: Keep the cases that your app supports and remove the rest.
+
 The schema supports the following system experiences:
 
 - Siri

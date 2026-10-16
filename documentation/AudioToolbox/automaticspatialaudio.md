@@ -16,7 +16,7 @@ struct AutomaticSpatialAudio
 
 #### Overview
 
-Sounds with an automatic spatial audio experience that belong to an [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) inherit its doc://com.apple.documentation/documentation/avfaudio/avaudiosession/intendedspatialexperience-1qwbe.
+Sounds with an automatic spatial audio experience that belong to an [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) inherit its [`intendedSpatialExperience`](https://developer.apple.com/documentation/avfaudio/avaudiosession/intendedspatialexperience-qlty).
 
 ```swift
 // Configure an audio player with an automatic spatial audio experience.

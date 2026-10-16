@@ -122,6 +122,8 @@ Set `countryOrRegion.include` using the `availableStorefronts` list you retrieve
 }
 ```
 
+After creation, `supplyPlacement` and `countryOrRegion` remain mutable and you can update them via [`CampaignTargetingUpdate`](campaigntargetingupdate.md), but `supplySource` is fixed at creation and can’t be changed afterward.
+
 #### Create a Campaign
 
 This example creates an `APPSTORE_SEARCH_RESULTS` placement campaign:
@@ -220,7 +222,7 @@ Negative keywords prevent your ads from showing for unrelated searches. Apply th
 - Campaign-level negatives apply across all ad groups. Set `campaignId`, omit `adGroupId`.
 - Ad group-level negatives apply to a single ad group. Set `adGroupId`, omit `campaignId`.
 
-You can add negative keywords with [`Create a Negative Keyword`](post-negative-keywords.md), as shown below. For large exclusion lists, you can use bulk creation via [`Bulk Create Negative Keywords`](post-negative-keywords-bulk-create.md). See [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md) for scoping rules and match type behavior.
+You can add negative keywords with [`Create a Negative Keyword`](post-negative-keywords.md), as shown below. For large exclusion lists, you can use bulk creation via [`Bulk Create Negative Keywords`](post-negative-keywords-bulk-create.md) and bulk removal via [`Bulk Delete Negative Keywords`](post-negative-keywords-bulk-delete.md). See [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md) for scoping rules and match type behavior.
 
 ```json
 POST /v1/negative-keywords

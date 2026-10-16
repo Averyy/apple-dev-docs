@@ -327,7 +327,7 @@ func stopSession(_ session: MediaOutputSession) {
 }
 ```
 
-The `playbackControl` parameter conforms to doc://com.apple.documentation/documentation/AVKit/AVPlaybackUserInterfaceControllable, which models the full playback state of the remote session. Update its properties to keep the system in sync as playback progresses: for example, `isPlaying`, `state`, `currentPlaybackPosition`, `playbackSpeed`, `timeRange`, and `metadata`.
+The `playbackControl` parameter conforms to [`AVPlaybackUserInterfaceControllable`](https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontrollable-92fri), which models the full playback state of the remote session. Update its properties to keep the system in sync as playback progresses: for example, `isPlaying`, `state`, `currentPlaybackPosition`, `playbackSpeed`, `timeRange`, and `metadata`.
 
 The system observes these properties and drives the shared playback UI from them, including Now Playing, the media device picker, and any controls surfaced by media apps. The system also uses the object’s conformance to `AVInterfacePlaybackControllable` to deliver play, pause, and seek commands back to your extension.
 

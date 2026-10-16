@@ -55,37 +55,13 @@ The `DailyCapRecommendationHistory` object is an immutable record created when y
   "impression": 154000,
   "taps": 3200,
   "ttr": 0.0208,
-  "expectedImpressions": 220000,
-  "expectedImpressionsLow": 190000,
-  "expectedImpressionsHigh": 250000,
   "expectedInstalls": 600,
-  "expectedInstallsLow": 520,
-  "expectedInstallsHigh": 680,
   "expectedSpend": {
     "amount": "1400.00",
     "currency": "USD"
   },
-  "expectedSpendLow": {
-    "amount": "1250.00",
-    "currency": "USD"
-  },
-  "expectedSpendHigh": {
-    "amount": "1550.00",
-    "currency": "USD"
-  },
-  "expectedTaps": 4600,
-  "expectedTapsLow": 4000,
-  "expectedTapsHigh": 5200,
   "expectedCpa": {
     "amount": "2.33",
-    "currency": "USD"
-  },
-  "expectedCpaLow": {
-    "amount": "2.05",
-    "currency": "USD"
-  },
-  "expectedCpaHigh": {
-    "amount": "2.60",
     "currency": "USD"
   },
   "creationTime": "2025-01-08T08:00:00.000",
@@ -115,21 +91,9 @@ The `DailyCapRecommendationHistory` object is an immutable record created when y
 - `impression` (int64): Historical impression count. Read-only.
 - `taps` (int64): Historical tap count. Read-only.
 - `ttr` (double): Historical tap-through rate. Read-only.
-- `expectedImpressions` (int64): Expected impressions from the original recommendation. Read-only.
-- `expectedImpressionsLow` (int64): Lower bound of the expected impressions confidence interval. Read-only.
-- `expectedImpressionsHigh` (int64): Upper bound of the expected impressions confidence interval. Read-only.
 - `expectedInstalls` (int64): Expected installs from the original recommendation. Read-only.
-- `expectedInstallsLow` (int64): Lower bound of the expected installs confidence interval. Read-only.
-- `expectedInstallsHigh` (int64): Upper bound of the expected installs confidence interval. Read-only.
 - `expectedSpend` (RecommendationMoney): Expected spend from the original recommendation. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedSpendLow` (RecommendationMoney): Lower bound of the expected spend confidence interval. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedSpendHigh` (RecommendationMoney): Upper bound of the expected spend confidence interval. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedTaps` (int64): Expected taps from the original recommendation. Read-only.
-- `expectedTapsLow` (int64): Lower bound of the expected taps confidence interval. Read-only.
-- `expectedTapsHigh` (int64): Upper bound of the expected taps confidence interval. Read-only.
 - `expectedCpa` (RecommendationMoney): Expected CPA from the original recommendation. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedCpaLow` (RecommendationMoney): Lower bound of the expected CPA confidence interval. See [`Money`](recommendationmoney.md). Read-only.
-- `expectedCpaHigh` (RecommendationMoney): Upper bound of the expected CPA confidence interval. See [`Money`](recommendationmoney.md). Read-only.
 - `creationTime` (date-time): When the original recommendation was created. Read-only.
 - `modificationTime` (date-time): When this history record was last modified. Read-only.
 - `appliedTime` (date-time): When the action was taken. Read-only.

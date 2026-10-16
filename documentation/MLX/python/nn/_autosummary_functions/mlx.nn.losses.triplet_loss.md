@@ -54,8 +54,8 @@ before taking the `1 / p` power. Defaults to `1e-6`.
 
 Returns:
 
-Computed triplet loss. If reduction is `"none"`, returns a tensor with thesame shape as the inputs but with the `axis` dimension removed; if reduction
-is `"mean"` or `"sum"`, returns a scalar tensor.
+Computed triplet loss. If reduction is `"none"`, returns a tensor withthe same shape as the inputs but with the `axis` dimension removed;
+if reduction is `"mean"` or `"sum"`, returns a scalar tensor.
 
 Return type:
 [array](../../_autosummary/mlx.core.array.html#mlx.core.array)

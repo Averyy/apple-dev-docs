@@ -38,6 +38,8 @@ CPU exceptions occur when your app consumes an excessive amount of CPU time in a
 ### Conforms To
 - [Decodable](../swift/decodable.md)
 - [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 

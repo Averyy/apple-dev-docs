@@ -20,7 +20,7 @@ Starting channel can be changed dynamically. The object sends a notification to 
 
 ## Parameters
 
-- `in_starting_channel`: The first element in the owning device that corresponds to element one of this stream.
+- `in_starting_channel`: The index of the first element in the owning device that corresponds to element one of this stream.
 
 ## See Also
 

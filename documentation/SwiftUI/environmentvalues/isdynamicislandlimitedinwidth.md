@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A Boolean value that indicates whether the Dynamic Island view displays with a limited width.
+A Boolean value that indicates whether the Dynamic Island appears with reduced width.
 
 **Availability**:
 - iOS 27.0+
@@ -18,7 +18,21 @@ var isDynamicIslandLimitedInWidth: Bool { get }
 
 #### Discussion
 
-This applies to `compactLeading`, `compactTrailing`, and `minimal` Live Activity DynamicIsland views.
+In some devices and context, the system adapts the flexible width of compact and minimal Live Activities and renders them smaller; for example, on iPhone in landscape orientation or on iPhone Duo. Use the `isDynamicIslandLimitedInWidth` environment value to adapt views you provide to compact and minimal Live Activity presentations. The following example shows a view for a compact leading presentation:
+
+```swift
+struct CompactLeadingView: View {
+    @Environment(\.isDynamicIslandLimitedInWidth) var isDynamicIslandLimitedInWidth
+
+    var body: some View {
+        if isDynamicIslandLimitedInWidth {
+            Text("Ltd")
+        } else {
+            Text("Full")
+        }
+    }
+}
+```
 
 
 ---

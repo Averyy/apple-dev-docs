@@ -22,13 +22,13 @@ enum AVSpeechBoundary
 
 ## Topics
 
-### Speech boundaries
+### Creating a speech boundary
+- [init?(rawValue: Int)](avspeechboundary/init(rawvalue:).md)
+### Choosing a speech boundary
 - [AVSpeechBoundary.immediate](avspeechboundary/immediate.md)
   Indicates to pause or stop speech immediately.
 - [AVSpeechBoundary.word](avspeechboundary/word.md)
   Indicates to pause or stop speech after the synthesizer finishes speaking the current word.
-### Initializers
-- [init?(rawValue: Int)](avspeechboundary/init(rawvalue:).md)
 
 ## Relationships
 

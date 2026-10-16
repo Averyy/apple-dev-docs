@@ -33,13 +33,13 @@ Apps that don’t use [`AVCaptureSession`](https://developer.apple.com/documenta
 
 ## Topics
 
-### I/O Types
+### Creating an I/O type
+- [init?(rawValue: UInt)](avaudiosession/iotype/init(rawvalue:).md)
+### Choosing an I/O type
 - [AVAudioSession.IOType.notSpecified](avaudiosession/iotype/notspecified.md)
   The default audio session I/O type.
 - [AVAudioSession.IOType.aggregated](avaudiosession/iotype/aggregated.md)
   An I/O type that indicates if audio input and output should be presented in the same realtime I/O callback.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/iotype/init(rawvalue:).md)
 
 ## Relationships
 

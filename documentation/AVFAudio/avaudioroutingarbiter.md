@@ -38,10 +38,10 @@ func endCall() {
 
 ## Topics
 
-### Creating a Routing Arbiter
+### Creating a routing arbiter
 - [class var shared: AVAudioRoutingArbiter](avaudioroutingarbiter/shared.md)
   The shared routing arbiter object.
-### Participating in AirPods Automatic Switching
+### Joining AirPods automatic switching
 - [func begin(category: AVAudioRoutingArbiter.Category, completionHandler: (Bool, (any Error)?) -> Void)](avaudioroutingarbiter/begin(category:completionhandler:).md)
   Begins routing arbitration to take ownership of a nearby Bluetooth audio route.
 - [AVAudioRoutingArbiter.Category](avaudioroutingarbiter/category.md)

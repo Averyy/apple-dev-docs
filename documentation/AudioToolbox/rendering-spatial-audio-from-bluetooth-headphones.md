@@ -8,7 +8,7 @@ Create a Spatial Audio extension that allows Bluetooth headphones to track the w
 
 To integrate a Bluetooth headphone into the Spatial Audio routing system, implement an audio extension called an *audio unit*. The system adds the audio unit to the audio signal chain when someone is listening to audio on the headphones and Spatial Audio is active. When the listener disables Spatial Audio or connects to a different audio device, the system removes your audio unit.
 
-You deliver this renderer by subclassing [`AUHeadTrackingBinauralRenderer`](auheadtrackingbinauralrenderer.md), which is itself a subclass of [`AUAudioUnit`](auaudiounit.md). Package your subclass as a Spatial Audio App Extension; see [`Creating an audio unit extension`](https://developer.apple.com/documentation/avfaudio/creating-an-audio-unit-extension) for an example of creating an audio app extension. Your extension runs in a process encapsulated by the system for security and performance. In addition to the audio unit, publish your headphone’s head-tracking capabilities using [`AudioAccessoryKit`](https://developer.apple.com/documentation/audioaccessorykit) so the system can match your device to the correct renderer.
+You deliver this renderer by subclassing [`AUHeadTrackingBinauralRenderer`](auheadtrackingbinauralrenderer.md), which is itself a subclass of [`AUAudioUnit`](auaudiounit.md). Package your subclass as a Spatial Audio App Extension; see [`Creating an Audio Unit extension`](https://developer.apple.com/documentation/avfaudio/creating-an-audio-unit-extension) for an example of creating an audio app extension. Your extension runs in a process encapsulated by the system for security and performance. In addition to the audio unit, publish your headphone’s head-tracking capabilities using [`AudioAccessoryKit`](https://developer.apple.com/documentation/audioaccessorykit) so the system can match your device to the correct renderer.
 
 The system exclusively controls spatialization state through three KVO properties your audio unit subclass observes: [`deviceUID`](auheadtrackingbinauralrenderer/deviceuid.md) identifies the paired device and, together with `AUHeadTrackingBinauralRenderer/headTrackingIsEnabled`, signals when your renderer begins data retrieval; `AUHeadTrackingBinauralRenderer/isBypassed` is the system’s safety valve, signaling when it removes your audio unit from the signal chain.
 
@@ -126,7 +126,7 @@ bypassObservation = observe(
 
 ## See Also
 
-- [Creating an audio unit extension](../avfaudio/creating-an-audio-unit-extension.md)
+- [Creating an Audio Unit extension](../avfaudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
 - [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.

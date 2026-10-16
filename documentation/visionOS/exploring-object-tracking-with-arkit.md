@@ -12,18 +12,20 @@ Find and track real-world objects in visionOS using reference objects you train 
 
 This sample app demonstrates how to use a reference object to discover and track a specific object in a person’s surroundings. A reference object is a trained representation of a physical object that ARKit uses to recognize and track that object. You create a reference object in Create ML from a USDZ file of the physical object. Create ML writes the reference object to a `.referenceobject` file, which your app loads and passes to ARKit. When ARKit detects the object, you can attach digital content to it, for example, a diagram of a machine’s assembly for someone testing or repairing the machine, or labels annotating parts of the device.
 
-The sample bundles a reference object that ARKit uses to recognize an Apple Magic Keyboard in someone’s surroundings, and exposes toggles you can use to change the tracking frequency and visualize the object’s metric coordinates.
+The sample includes two reference objects:
+
+- One for an Apple Magic Keyboard
+- One for a printable marker
+
+Place the Apple Magic Keyboard in your surroundings and the sample tracks it. The app exposes toggles you can use to change the tracking frequency and visualize the object’s metric coordinates.
+
+If you have access to a 3D printer, print the marker and mount it on a real-world object, so you can track that object without training a reference object for it.
+
+If you don’t have an Apple Magic Keyboard or 3D printer, use Create ML to train a reference object for something you want to track.
+
+Because Simulator doesn’t support object tracking, run this sample on Apple Vision Pro.
 
 > **Note**: This sample code project is associated with WWDC24 [`Session 10101 — Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10101/), and the sample also covers improvements to object tracking demonstrated in WWDC26 [`Session 283 - Explore enhancements to visionOS object tracking`](https://developer.apple.comhttps://developer.apple.com/wwdc26/283).
-
-#### Configure the Sample Code Project
-
-> **Note**: This app requires Xcode 27 and visionOS 27 or later, and an Apple Vision Pro. The visionOS simulator doesn’t support object tracking.
-
-1. In the project’s settings, select Signing & Capabilities.
-2. Select your team name from the drop-down menu.
-3. Pair Xcode with your device wirelessly or by using the developer strap.
-4. Click Run or press Command-R to launch the app.
 
 #### Configure the Object Tracking Capability
 
@@ -172,7 +174,13 @@ let metricSpace = anchor.coordinateSpace(correction: .none)
 let translation = metricSpace.ancestorFromSpaceTransformFloat().translation
 ```
 
-This sample demonstrates how to read the metric pose and display it in a SwiftUI label that `ObjectAnchorVisualization` attaches above the tracked keyboard using a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/realitykit/viewattachmentcomponent).
+This sample demonstrates how to read the metric pose and display it in a SwiftUI label that `ObjectAnchorVisualization` attaches above the tracked object using a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/realitykit/viewattachmentcomponent).
+
+#### Print the Marker
+
+The sample’s `Printable Objects` folder contains the marker’s 3D model in two forms. Print `Marker Full` in one piece using a 3D printer that supports two colors, or print the parts in `Marker Separated` one color at a time, then assemble them. When printed and assembled correctly, the marker measures approximately 31 mm (h) x 69 mm (w) x 66 mm (d) and has solid black and white areas with clean edges where they meet. The distinct, high-contrast pattern supports quick recognition and accurate tracking from any viewing angle. Mount the marker with its solid face against the object, leaving the patterned faces visible.
+
+> **Note**: The marker’s solid face carries no pattern because it isn’t visible during tracking. A featureless surface looks identical from every angle, so a visible face would need one.
 
 #### Create Your Own Reference Objects
 

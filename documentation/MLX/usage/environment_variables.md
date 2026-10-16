@@ -103,9 +103,23 @@ handled by the CUDA runtime.
 
 ## Metal
 
+**MLX_METAL_RESIDENCY_REFRESH_INTERVAL_MS**
+: Re-request residency for existing wired allocations at this interval in
+milliseconds. This works around macOS releasing residency while the GPU is
+idle. The default is `0` (disabled); nonpositive values disable renewal.
+For example, `1000` renews once per second. This does not change the wired
+limit set by [mlx.core.set_wired_limit()](../python/_autosummary/mlx.core.set_wired_limit.html#mlx.core.set_wired_limit) or submit GPU work. Renewal
+continues while the Metal device exists and can keep memory wired during
+long idle periods. Requires a Metal 3 GPU on macOS 15 or iOS 18 or later.
+
 **MLX_METAL_FAST_SYNCH**
 : Enable the faster Metal CPU/GPU synchronization path. The default is `0`.
 This requires Metal 3.2 or later (macOS 15 or later, or iOS 18 or later).
+
+**MLX_CONV_WINOGRAD**
+: Allow the Winograd algorithm for 3x3 `conv2d`. The default is `1`. Set
+it to `0` to use the GEMM convolution for all inputs. See
+[Numerical Precision](precision.md).
 
 ## Advanced tuning
 
@@ -175,8 +189,9 @@ default is `256`.
 default is `64`.
 
 **MLX_ENABLE_CACHE_THRASHING_CHECK**
-: Detect repeated CUDA cache misses and raise an error suggesting a larger
-cache capacity. The default is `1`.
+: Detect consecutive CUDA cache misses (more than twice the capacity with no
+hit in between) and raise an error suggesting a larger cache capacity. The
+default is `1`.
 
 MLX also uses `CUDA_HOME` or `CUDA_PATH` to locate CUDA headers for runtime
 kernel compilation when they cannot be found in the Python environment.

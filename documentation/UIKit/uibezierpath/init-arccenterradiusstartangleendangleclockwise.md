@@ -27,7 +27,7 @@ A new path object with the specified arc.
 
 This method creates an open subpath. The created arc lies on the perimeter of the specified circle. When drawn in the default coordinate system, the start and end angles are based on the unit circle shown in the following image. For example, specifying a start angle of `0` radians, an end angle of `π` radians, and setting the `clockwise` parameter to [`true`](https://developer.apple.com/documentation/swift/true) draws the bottom half of the circle. However, specifying the same start and end angles but setting the `clockwise` parameter to [`false`](https://developer.apple.com/documentation/swift/false) draws the top half of the circle.
 
-![None](/images/com.apple.uikit/media-1965853.jpg)
+![A diagram of the unit circle used for arc angles. Zero and 2π are at the right, π/2 at the bottom, π at the left, and 3π/2 at the top. A dashed arrow on the right side curves clockwise from zero toward π/2.](/images/com.apple.uikit/media-1965853.jpg)
 
 After calling this method, the current point is set to the point on the arc at the end angle of the circle.
 

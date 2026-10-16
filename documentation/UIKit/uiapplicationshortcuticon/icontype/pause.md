@@ -19,7 +19,7 @@ case pause
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934511@2x.png)
+![Pause symbol](/images/com.apple.uikit/media-2934511@2x.png)
 
 ## See Also
 

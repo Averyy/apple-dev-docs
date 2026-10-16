@@ -1,4 +1,4 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AVFAudio
 
@@ -6,7 +6,7 @@ Review unsupported symbols and their replacements.
 
 ## Topics
 
-### Locations
+### Orientations and polar patterns
 - [static var orientationFront: AVAudioSession.Location](avaudiosession/location/orientationfront.md)
 - [static var orientationBack: AVAudioSession.Location](avaudiosession/location/orientationback.md)
 - [static var orientationBottom: AVAudioSession.Location](avaudiosession/location/orientationbottom.md)

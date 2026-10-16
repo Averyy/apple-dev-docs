@@ -18,6 +18,10 @@ kern_return_t SetAcquisitionFailure(kern_return_t in_failure_code);
 
 The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 
+## Parameters
+
+- `in_failure_code`: The box’s acquisition failure.
+
 ## See Also
 
 - [HandleChangeAcquireBox](iouservideobox/handlechangeacquirebox.md)

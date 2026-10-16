@@ -22,12 +22,6 @@ case multiEchoTight1
 
 ## See Also
 
-- [AVAudioUnitDistortionPreset.drumsBitBrush](avaudiounitdistortionpreset/drumsbitbrush.md)
-  A preset that represents a bit brush drums distortion.
-- [AVAudioUnitDistortionPreset.drumsBufferBeats](avaudiounitdistortionpreset/drumsbufferbeats.md)
-  A preset that represents a buffer beat drums distortion.
-- [AVAudioUnitDistortionPreset.drumsLoFi](avaudiounitdistortionpreset/drumslofi.md)
-  A preset that represents a low fidelity drums distortion.
 - [AVAudioUnitDistortionPreset.multiBrokenSpeaker](avaudiounitdistortionpreset/multibrokenspeaker.md)
   A preset that represents a broken speaker distortion.
 - [AVAudioUnitDistortionPreset.multiCellphoneConcert](avaudiounitdistortionpreset/multicellphoneconcert.md)
@@ -52,6 +46,8 @@ case multiEchoTight1
   A preset that represents a variant of an echo distortion.
 - [AVAudioUnitDistortionPreset.multiEchoTight2](avaudiounitdistortionpreset/multiechotight2.md)
   A preset that represents a variant of a tight echo distortion.
+- [AVAudioUnitDistortionPreset.multiEverythingIsBroken](avaudiounitdistortionpreset/multieverythingisbroken.md)
+  A preset that represents an everything-is-broken distortion.
 
 
 ---

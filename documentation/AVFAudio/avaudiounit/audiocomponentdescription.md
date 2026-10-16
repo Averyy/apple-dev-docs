@@ -21,6 +21,10 @@ var audioComponentDescription: AudioComponentDescription { get }
 
 ## See Also
 
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-66uo7.md)
+  Provides scoped access to the audio unit’s AudioUnit
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-6c2ze.md)
+  Provides scoped access to the audio unit’s AudioUnit
 - [var manufacturerName: String](avaudiounit/manufacturername.md)
   The name of the manufacturer of the audio unit.
 - [var name: String](avaudiounit/name.md)

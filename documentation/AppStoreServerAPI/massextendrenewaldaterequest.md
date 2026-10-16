@@ -47,10 +47,10 @@ For more information, see [`Extending the renewal date for auto-renewable subscr
 
 ## Properties
 
-- `requestIdentifier` (requestIdentifier): **Required**. A string that contains a one-time `UUID` value you provide to identify this subscription-renewal-date extension request.
-- `extendByDays` (extendByDays): **Required**. The number of days to extend the subscription renewal date.
-- `extendReasonCode` (extendReasonCode): **Required**. The reason code for the subscription-renewal-date extension.
-- `productId` (productId): **Required**. The product identifier of the auto-renewable subscription that you’re requesting the renewal-date extension for.
+- `requestIdentifier` (requestIdentifier) *(required)*: A string that contains a one-time `UUID` value you provide to identify this subscription-renewal-date extension request.
+- `extendByDays` (extendByDays) *(required)*: The number of days to extend the subscription renewal date.
+- `extendReasonCode` (extendReasonCode) *(required)*: The reason code for the subscription-renewal-date extension.
+- `productId` (productId) *(required)*: The product identifier of the auto-renewable subscription that you’re requesting the renewal-date extension for.
 - `storefrontCountryCodes` (storefrontCountryCodes): A list of storefront country codes you provide to limit the storefronts that are eligible to receive the subscription-renewal-date extension. Omit this list to request the subscription-renewal-date extension in all storefronts.
 
 ## See Also

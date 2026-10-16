@@ -22,15 +22,15 @@ enum AVSpeechSynthesisVoiceGender
 
 ## Topics
 
-### Voice genders
+### Creating a voice gender
+- [init?(rawValue: Int)](avspeechsynthesisvoicegender/init(rawvalue:).md)
+### Identifying voice genders
 - [AVSpeechSynthesisVoiceGender.unspecified](avspeechsynthesisvoicegender/unspecified.md)
   The nonspecific gender option.
 - [AVSpeechSynthesisVoiceGender.male](avspeechsynthesisvoicegender/male.md)
   The male voice option.
 - [AVSpeechSynthesisVoiceGender.female](avspeechsynthesisvoicegender/female.md)
   The female voice option.
-### Initializers
-- [init?(rawValue: Int)](avspeechsynthesisvoicegender/init(rawvalue:).md)
 
 ## Relationships
 

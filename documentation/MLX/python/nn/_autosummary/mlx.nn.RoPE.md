@@ -49,7 +49,8 @@ is larger than dims then the rest is left unchanged.
 implementation which is slightly less efficient. Default: `False`.
 **base** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The base used to compute angular frequency for
 each dimension in the positional encodings. Default: `10000`.
-**scale** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The scale used to scale the positions. Default: `1.0`.
+**scale** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The scale used to scale the positions.
+Default: `1.0`.
 
 Methods
 

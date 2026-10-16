@@ -64,7 +64,7 @@ Use the single-item endpoints for one-off changes, such as adjusting a single ke
 ## See Also
 
 - [Bulk Data Objects](bulk-data-objects.md)
-  Use these objects to build bulk keyword and negative keyword requests and read their responses.
+  Build bulk keyword and negative keyword requests, and read per-item results.
 
 
 ---

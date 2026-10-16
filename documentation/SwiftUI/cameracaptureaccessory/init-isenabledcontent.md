@@ -6,8 +6,8 @@
 Creates a scene accessory that presents content during camera capture, with a binding for programmatic enablement.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 
 ## Declaration
 

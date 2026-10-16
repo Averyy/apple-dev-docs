@@ -31,8 +31,6 @@ There may be cases where a subclass doesn’t have marker data until it complete
 
 - [typealias AVSpeechSynthesisProviderOutputBlock](avspeechsynthesisprovideroutputblock.md)
   A type that represents the method for sending marker information to the host.
-- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
-  An object that contains information about the synthesized audio.
 
 
 ---

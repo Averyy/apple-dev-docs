@@ -35,7 +35,7 @@ The system posts this notification on the main thread.
 
 ## Topics
 
-### User Info Keys
+### User info keys
 - [let AVAudioSessionInterruptionTypeKey: String](avaudiosessioninterruptiontypekey.md)
   A user info key to retrieve the interruption type.
 - [let AVAudioSessionInterruptionOptionKey: String](avaudiosessioninterruptionoptionkey.md)
@@ -44,7 +44,7 @@ The system posts this notification on the main thread.
   A user info key to retrieve the interruption reason.
 - [let AVAudioSessionInterruptionWasSuspendedKey: String](avaudiosessioninterruptionwassuspendedkey.md)
   A user info key used to determine if the interruption is due to the audio session being deactivated when the system suspended the app.
-### User Info Values
+### User info values
 - [AVAudioSession.InterruptionType](avaudiosession/interruptiontype.md)
   Constants that describe the type of an audio interruption.
 - [AVAudioSession.InterruptionOptions](avaudiosession/interruptionoptions.md)

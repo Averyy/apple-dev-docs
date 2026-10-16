@@ -27,7 +27,7 @@ The default value is `true`.
 ## See Also
 
 - [func disabled(Bool) -> some View](view/disabled(_:).md)
-  Adds a condition that controls whether users can interact with this view.
+  Adds a condition that controls whether someone can interact with this view.
 - [func interactionActivityTrackingTag(String) -> some View](view/interactionactivitytrackingtag(_:).md)
   Sets a tag that you use for tracking interactivity.
 - [func invalidatableContent(Bool) -> some View](view/invalidatablecontent(_:).md)

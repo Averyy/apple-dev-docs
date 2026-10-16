@@ -45,11 +45,11 @@ If the [`deliveryStatus`](consumptionrequest/deliverystatus.md) isn’t `DELIVER
 
 ## Properties
 
-- `customerConsented` (customerConsented): **(Required)** A Boolean value of `true` or `false` that indicates whether the customer consented to provide consumption data.
+- `customerConsented` (customerConsented) *(required)*: A Boolean value of `true` or `false` that indicates whether the customer consented to provide consumption data.
 - `consumptionPercentage` (consumptionPercentage): An integer that indicates the percentage of the In-App Purchase the customer consumed, in milliunits.
-- `deliveryStatus` (deliveryStatus): **(Required)**  A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
+- `deliveryStatus` (deliveryStatus) *(required)*: A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
 - `refundPreference` (refundPreference): A value that indicates your preference, based on your operational logic, as to whether the App Store should grant the refund.
-- `sampleContentProvided` (sampleContentProvided): **(Required)**  A Boolean value of `true` or `false` that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
+- `sampleContentProvided` (sampleContentProvided) *(required)*: A Boolean value of `true` or `false` that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
 
 ## See Also
 

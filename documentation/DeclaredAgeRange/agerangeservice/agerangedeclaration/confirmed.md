@@ -3,7 +3,7 @@
 **Framework**: Declared Age Range  
 **Kind**: case
 
-Indicates a user’s age range was set using a scrutinized method, like a credit card or government ID.
+A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
 
 **Availability**:
 - iOS 26.5+

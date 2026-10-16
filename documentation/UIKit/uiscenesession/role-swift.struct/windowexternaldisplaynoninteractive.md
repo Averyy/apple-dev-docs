@@ -24,6 +24,10 @@ static let windowExternalDisplayNonInteractive: UISceneSession.Role
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 - [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
+#### Discussion
+
+> **Note**: Beginning in iOS 27, your app receives a scene with the [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role only after it registers a scene accessory. In earlier releases, the system connected this scene automatically, and your app opted out by declining to provide content for it. For more information, see [`Presenting content on a connected display`](presenting-content-on-a-connected-display.md).
+
 ## See Also
 
 - [static let windowApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowapplication.md)

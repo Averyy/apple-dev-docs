@@ -19,7 +19,7 @@ case message
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934526@2x.png)
+![Message icon](/images/com.apple.uikit/media-2934526@2x.png)
 
 ## See Also
 

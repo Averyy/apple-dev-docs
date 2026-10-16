@@ -2,10 +2,16 @@
 
 **Framework**: Apple Ads Platform API
 
-Request and response objects for recommendation endpoints.
+Read budget and Target CPA recommendations and their history, and build the requests that apply them.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
+
+#### Overview
+
+These objects carry the data for [`Recommendations Endpoints`](recommendations-endpoints.md). Read [`DailyCapRecommendation`](dailycaprecommendation.md) and [`TargetCpaRecommendation`](targetcparecommendation.md) in query responses, and read their history objects after you apply or dismiss one. Send [`ApplyDailyCapRecommendation`](applydailycaprecommendation.md) or [`ApplyTargetCpaRecommendation`](applytargetcparecommendation.md) to apply or dismiss a recommendation.
+
+For the objects that build query requests, see [`Recommendations Query and Filter Objects`](recommendations-query-filter-objects.md).
 
 ## Topics
 
@@ -49,9 +55,9 @@ Request and response objects for recommendation endpoints.
 ## See Also
 
 - [Recommendations Endpoints](recommendations-endpoints.md)
-  Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
+  Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 - [Recommendations Query and Filter Objects](recommendations-query-filter-objects.md)
-  Query, filter, pagination, and sorting objects for recommendation requests.
+  Filter, sort, and paginate recommendation queries by status, state, and category.
 
 
 ---

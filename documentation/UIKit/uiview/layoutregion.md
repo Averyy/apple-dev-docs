@@ -19,6 +19,8 @@ struct LayoutRegion
 ## Topics
 
 ### Type Methods
+- [static func bar(onEdge: UIRectEdge) -> UIView.LayoutRegion](uiview/layoutregion/bar(onedge:)-4937k.md)
+- [static func bar(onEdge: NSDirectionalRectEdge) -> UIView.LayoutRegion](uiview/layoutregion/bar(onedge:)-52kes.md)
 - [static func bar(onEdge: NSDirectionalRectEdge, extent: CGFloat) -> UIView.LayoutRegion](uiview/layoutregion/bar(onedge:extent:)-2tj1g.md)
 - [static func bar(onEdge: UIRectEdge, extent: CGFloat) -> UIView.LayoutRegion](uiview/layoutregion/bar(onedge:extent:)-8rmhq.md)
 - [static func margins(cornerAdaptation: UIView.LayoutRegion.AdaptivityAxis?) -> UIView.LayoutRegion](uiview/layoutregion/margins(corneradaptation:).md)

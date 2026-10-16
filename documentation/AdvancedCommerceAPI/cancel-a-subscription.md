@@ -145,7 +145,7 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the `Canc
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/cancel/{transactionId}`
+`POST https://api.storekit-sandbox.apple.com/advancedCommerce/v1/subscription/cancel/{transactionId}`
 
 ## Parameters
 

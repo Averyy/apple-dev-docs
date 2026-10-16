@@ -21,10 +21,10 @@ class AVAUPresetEvent
 
 ## Topics
 
-### Creating a Preset Event
+### Creating a preset event
 - [init(scope: UInt32, element: UInt32, dictionary: [AnyHashable : Any])](avaupresetevent/init(scope:element:dictionary:).md)
   Creates an event with the scope, element, and dictionary for the preset.
-### Configuring a Preset Event
+### Configuring a preset event
 - [var scope: UInt32](avaupresetevent/scope.md)
   The audio unit scope.
 - [var element: UInt32](avaupresetevent/element.md)

@@ -22,7 +22,9 @@ enum Mark
 
 ## Topics
 
-### Marks
+### Creating a mark
+- [init?(rawValue: Int)](avspeechsynthesismarker/mark-swift.enum/init(rawvalue:).md)
+### Identifying marker types
 - [AVSpeechSynthesisMarker.Mark.word](avspeechsynthesismarker/mark-swift.enum/word.md)
   A type of text that represents a word.
 - [AVSpeechSynthesisMarker.Mark.sentence](avspeechsynthesismarker/mark-swift.enum/sentence.md)
@@ -33,8 +35,6 @@ enum Mark
   A type of text that represents a phoneme.
 - [AVSpeechSynthesisMarker.Mark.bookmark](avspeechsynthesismarker/mark-swift.enum/bookmark.md)
   A Speech Synthesis Markup Language (SSML) mark tag.
-### Initializers
-- [init?(rawValue: Int)](avspeechsynthesismarker/mark-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

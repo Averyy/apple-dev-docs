@@ -33,10 +33,10 @@ The audio session category [`playAndRecord`](avaudiosession/category-swift.struc
 
 ## Topics
 
-### Creating a Category
+### Creating a category
 - [init(rawValue: String)](avaudiosession/category-swift.struct/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
-### Getting Standard Categories
+### Getting standard categories
 - [static let ambient: AVAudioSession.Category](avaudiosession/category-swift.struct/ambient.md)
   The category for an app in which sound playback is nonprimary — that is, your app also works with the sound turned off.
 - [static let multiRoute: AVAudioSession.Category](avaudiosession/category-swift.struct/multiroute.md)
@@ -71,8 +71,6 @@ The audio session category [`playAndRecord`](avaudiosession/category-swift.struc
   The set of options associated with the current audio session category.
 - [AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct.md)
   Constants that specify optional audio behaviors.
-- [static var farFieldInput: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/farfieldinput.md)
-  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`record`](avaudiosession/category-swift.struct/record.md), and `AVAudioSessionMultiRoute` with [`dualRoute`](avaudiosession/mode-swift.struct/dualroute.md).
 
 
 ---

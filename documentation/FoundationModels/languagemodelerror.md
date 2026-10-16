@@ -23,6 +23,22 @@ A failure that may occur while generating a response when using any language mod
 
 - [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
 
+#### Overview
+
+> **Note**: If your app deploys to iOS 26, macOS 26, or visionOS 26, where this error is unavailable, use an availability check and fall back to [`LanguageModelSession.GenerationError`](languagemodelsession/generationerror.md): ```swift
+do {
+    let response = try await session.respond(to: prompt)
+} catch {
+    if #available(iOS 27.0, macOS 27.0, visionOS 27.0, *),
+        let error = error as? LanguageModelError
+    {
+        // Handle the error.
+    } else if let error = error as? LanguageModelSession.GenerationError {
+        // Handle the deprecated error.
+    }
+}
+```
+
 ## Topics
 
 ### Exceeded context size error

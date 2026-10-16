@@ -17,13 +17,13 @@ A closure that provides app entity identifiers to make custom view content disco
 
 #### Discussion
 
-Dynamically provide app entity identifiers for a custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence and Siri using `appEntityUIElementProvider` and provide the system with a list of `AppEntityUIElements`.
+Dynamically provide app entity identifiers for a custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence and Siri using `appEntityUIElementProvider` and provide the system with a list of `AppEntityUIElement` instances.
 
 > **Note**: The order of the returned elements isn’t relevant.
 
 If your custom view shows content you can describe with a single app entity, use the `appEntityIdentifier` property instead to associate the app entity with your custom view.
 
-For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/appintents).
+For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](https://developer.apple.com/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri) and [`App Intents`](https://developer.apple.com/documentation/appintents).
 
 
 ---

@@ -20,17 +20,18 @@ True on success.
 
 #### Discussion
 
-Always pass in the IOUserVideoDriver and arguments. init() will always return false;
+Always pass in the `IOUserVideoDriver` and arguments; calling `init()` always returns false.
 
 ## Parameters
 
-- `in_is_acquirable`: Bool value
+- `in_driver`: The IOUserVideoDriver that owns this object.
+- `in_is_acquirable`: A Boolean value that indicates whether the video box is aquirable.
 - `in_box_uid`: An OSString pointer for the box unique identifier
 
 ## See Also
 
 - [Create](iouservideobox/create.md)
-  Static factory method to allocate and initialize an IOUserVideoBox.
+  Static factory method to allocate and initialize a user video box.
 - [IOUserVideoDriver](iouservideodriver.md)
   A video driver.
 

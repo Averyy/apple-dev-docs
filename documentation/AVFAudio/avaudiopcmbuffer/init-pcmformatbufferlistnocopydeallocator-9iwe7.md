@@ -46,6 +46,10 @@ The method returns `nil` due to the following reasons:
 
 - [init?(pcmFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:)-5jhd5.md)
   Creates a PCM audio buffer instance for PCM audio data.
+- [convenience init(copying: AVAudioPCMBuffer)](avaudiopcmbuffer/init(copying:)-68es5.md)
+  Creates a mutable buffer by copying another PCM buffer’s audio data.
+- [convenience init(copying: AVReadOnlyAudioPCMBuffer)](avaudiopcmbuffer/init(copying:)-875xm.md)
+  Creates a mutable buffer by copying a read-only buffer’s audio data.
 
 
 ---

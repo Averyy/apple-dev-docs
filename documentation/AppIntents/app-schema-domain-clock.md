@@ -8,7 +8,7 @@ Make your clock app’s actions available to Apple Intelligence and Siri by adop
 
 The `.clock` domain defines app schemas that provide a structured representation for common alarm and timer actions and content. Apply schemas in the `.clock` domain to make your app’s clock functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across clock apps. For example, a person can set an alarm on different apps that support the [`createAlarm`](appschema/clockintent/createalarm.md) schema with the same phrases.
 
-The following table maps example phrases that apply to each schema. Your app needs to support all of these schemas when it supports any one of them.
+The following table maps example phrases that apply to each schema:
 
 | Clock intent schemas | Example phrases |
 | --- | --- |
@@ -23,11 +23,15 @@ The following table maps example phrases that apply to each schema. Your app nee
 | [`resumeTimer`](appschema/clockintent/resumetimer.md) | “Resume the timer.” or “Start the timer again.” |
 | [`cancelTimer`](appschema/clockintent/canceltimer.md) | “Cancel the timer.” or “Stop the timer.” |
 
-At build time, Xcode validates whether your app implements all the schemas in the group.
-
 > 💡 **Tip**: Xcode generates a template implementation when you type `clock_` and select a schema from the suggestions list.
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+
+#### Clock Alarm Use Case Group
+
+A *use-case group* is a set of related schemas that share a single purpose. The [`dismissAlarm`](appschema/clockintent/dismissalarm.md) and [`updateAlarm`](appschema/clockintent/updatealarm.md) schemas form a use-case group for alarms. Xcode reports a build warning if your app supports one schema in the group and not the other.
+
+> ❗ **Important**: To integrate your app with Apple Intelligence and bring it to Siri AI, adopt both schemas in the alarm use-case group.
 
 ## Topics
 

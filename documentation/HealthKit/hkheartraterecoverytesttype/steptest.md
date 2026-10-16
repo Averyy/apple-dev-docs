@@ -4,12 +4,12 @@
 **Kind**: case
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 27.2+ (Beta)
+- iPadOS 27.2+ (Beta)
+- Mac Catalyst 27.2+ (Beta)
+- macOS 27.2+ (Beta)
 - visionOS 26.0+
-- watchOS 26.0+
+- watchOS 27.2+ (Beta)
 
 ## Declaration
 

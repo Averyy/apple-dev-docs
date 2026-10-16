@@ -19,6 +19,10 @@ Produces a low-resolution mask, but runs very quickly.
 case fast
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## See Also
 
 - [GenerateIterativeSegmentationRequest.QualityLevel.accurate](generateiterativesegmentationrequest/qualitylevel-swift.enum/accurate.md)

@@ -21,15 +21,15 @@ enum PromptStyle
 
 ## Topics
 
-### Prompt Styles
+### Creating a prompt style
+- [init?(rawValue: UInt)](avaudiosession/promptstyle-swift.enum/init(rawvalue:).md)
+### Identifying prompt styles
 - [AVAudioSession.PromptStyle.none](avaudiosession/promptstyle-swift.enum/none.md)
   Your app shouldn’t issue prompts at this time.
 - [AVAudioSession.PromptStyle.short](avaudiosession/promptstyle-swift.enum/short.md)
   Your app should issue short, nonverbal prompts.
 - [AVAudioSession.PromptStyle.normal](avaudiosession/promptstyle-swift.enum/normal.md)
   Your app may use long, verbal prompts.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/promptstyle-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

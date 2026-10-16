@@ -40,6 +40,8 @@ This carries a [`CallStackTree`](callstacktree.md) captured at the time of the h
 ### Conforms To
 - [Decodable](../swift/decodable.md)
 - [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 

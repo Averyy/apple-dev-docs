@@ -146,6 +146,19 @@ Because HomeKit gives your app access to a shared database of home automation in
   An abstract superclass for accessing user privileges.
 - [let HMUserFailedAccessoriesKey: String](hmuserfailedaccessorieskey.md)
   The key for retrieving details of what accessories failed to add or remove a user.
+### Providing installation services
+- [var isProvisionalHome: Bool](hmhome/isprovisionalhome.md)
+  A property that indicates if the home is a temporary, provisional home for use by installation services.
+- [func isProvisionalHome(forPairingIdentifier: String) async throws -> Bool](hmhome/isprovisionalhome(forpairingidentifier:).md)
+  Checks whether the home is a temporary, provisional home for use by installation services.
+- [func transferProvisionalHome(connectionDetails: HMHome.ProvisionalHomeConnectionDetails, targetHomeUniqueIdentifier: UUID) async throws(HMHome.ProvisionalHomeTransferError) -> HMHome.ProvisionalHomeTransferResult](hmhome/transferprovisionalhome(connectiondetails:targethomeuniqueidentifier:).md)
+  Transfers a temporary, provisional home to a person’s home hub.
+- [HMHome.ProvisionalHomeConnectionDetails](hmhome/provisionalhomeconnectiondetails.md)
+  A structure that contains the token to transfer a temporary, provisional home to a person’s home hub.
+- [HMHome.ProvisionalHomeTransferResult](hmhome/provisionalhometransferresult.md)
+  The outcome of transferring a temporary home to a home hub.
+- [HMHome.ProvisionalHomeTransferError](hmhome/provisionalhometransfererror.md)
+  Errors that occur when transferring a temporary home to a person’s home hub.
 ### Deprecated symbols
 - [var users: [HMUser]](hmhome/users.md)
   All users associated with the home.

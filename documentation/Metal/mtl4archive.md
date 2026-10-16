@@ -28,9 +28,10 @@ The pipeline states can have intermediate representation (IR) binaries, GPU- and
 ### Identifying the archive
 - [var label: String?](mtl4archive/label.md)
   A label that you can associate with this archive.
-### Instance Methods
+### Creating binary functions
 - [func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor) throws -> any MTL4BinaryFunction](mtl4archive/makebinaryfunction(descriptor:).md)
   Synchronously creates a binary version of a GPU visible function or GPU intersection function.
+### Instance Methods
 - [func makeComputePipelineState(descriptor: MTL4ComputePipelineDescriptor, dynamicLinkingDescriptor: MTL4PipelineStageDynamicLinkingDescriptor?) throws -> any MTLComputePipelineState](mtl4archive/makecomputepipelinestate(descriptor:dynamiclinkingdescriptor:).md)
   Creates a compute pipeline state from the archive with a compute descriptor and a dynamic linking descriptor.
 - [func makeRenderPipelineState(descriptor: MTL4PipelineDescriptor, dynamicLinkingDescriptor: MTL4RenderPipelineDynamicLinkingDescriptor?) throws -> any MTLRenderPipelineState](mtl4archive/makerenderpipelinestate(descriptor:dynamiclinkingdescriptor:).md)

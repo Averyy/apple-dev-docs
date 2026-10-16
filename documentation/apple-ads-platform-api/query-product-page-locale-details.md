@@ -25,8 +25,8 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
 | `productPageId` | string (UUID) | `EQUALS` |  | Scopes the query to a specific product page. See Key Constraints below. |
-| `language` | string | `EQUALS` |  | Filter to a specific language identifier, such as `en` or `fr`. |
-| `languageCode` | string | `EQUALS` |  | Filter to a specific locale, such as `en-US` or `fr-FR`. |
+| `language` | string | `EQUALS` |  | Filter to a specific language identifier, such as `en`, `fr`, or `yue`. |
+| `languageCode` | string | `EQUALS` |  | Filter to a specific locale, such as `en-US`, `fr-FR`, or `zh-Hans`. |
 
 The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
 

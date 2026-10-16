@@ -25,12 +25,12 @@ A reverb simulates the acoustic characteristics of a particular environment. Use
 
 ## Topics
 
-### Configure the reverb
+### Loading a reverb preset
 - [func loadFactoryPreset(AVAudioUnitReverbPreset)](avaudiounitreverb/loadfactorypreset(_:).md)
   Configures the audio unit as a reverb preset.
 - [enum AVAudioUnitReverbPreset](avaudiounitreverbpreset.md)
   Constants that represent preset reverbs.
-### Getting and setting the reverb values
+### Adjusting the wet-dry mix
 - [var wetDryMix: Float](avaudiounitreverb/wetdrymix.md)
   The blend of the wet and dry signals.
 
@@ -50,14 +50,14 @@ A reverb simulates the acoustic characteristics of a particular environment. Use
 
 ## See Also
 
-- [class AVAudioUnitEffect](avaudiouniteffect.md)
-  An object that processes audio in real time.
 - [class AVAudioUnitEQ](avaudiouniteq.md)
   An object that implements a multiband equalizer.
 - [class AVAudioUnitDistortion](avaudiounitdistortion.md)
   An object that implements a multistage distortion effect.
 - [class AVAudioUnitDelay](avaudiounitdelay.md)
   An object that implements a delay effect.
+- [class AVAudioUnitEffect](avaudiouniteffect.md)
+  An object that processes audio in real time.
 
 
 ---

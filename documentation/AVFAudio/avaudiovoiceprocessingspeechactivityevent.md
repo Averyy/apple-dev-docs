@@ -21,13 +21,13 @@ enum AVAudioVoiceProcessingSpeechActivityEvent
 
 ## Topics
 
-### Events
+### Creating an activity event
+- [init?(rawValue: Int)](avaudiovoiceprocessingspeechactivityevent/init(rawvalue:).md)
+### Identifying activity events
 - [AVAudioVoiceProcessingSpeechActivityEvent.started](avaudiovoiceprocessingspeechactivityevent/started.md)
   Indicates the start of speech activity.
 - [AVAudioVoiceProcessingSpeechActivityEvent.ended](avaudiovoiceprocessingspeechactivityevent/ended.md)
   Indicates the end of speech activity.
-### Initializers
-- [init?(rawValue: Int)](avaudiovoiceprocessingspeechactivityevent/init(rawvalue:).md)
 
 ## Relationships
 

@@ -29,6 +29,8 @@ var localizedTypeName: String { get }
   An array of tag names for the audio unit component.
 - [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
   An array of tags the user creates.
+- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
+  Type-safe notification message for audio unit component tag changes.
 
 
 ---

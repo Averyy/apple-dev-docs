@@ -43,6 +43,8 @@ Call this method to receive audio buffers to store or further process synthesize
   Generates audio buffers and associated metadata for storage or further speech synthesis processing.
 - [AVSpeechSynthesizer.MarkerCallback](avspeechsynthesizer/markercallback.md)
   A type that defines a callback that receives speech markers.
+- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
+  An object that contains information about the synthesized audio.
 
 
 ---

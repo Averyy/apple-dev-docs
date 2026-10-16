@@ -25,7 +25,10 @@ Each option is valid only for specific audio session categories.
 
 ## Topics
 
-### Category options
+### Creating a category option
+- [init(rawValue: UInt)](avaudiosession/categoryoptions-swift.struct/init(rawvalue:).md)
+  Creates a new instance with the raw value you specify.
+### Getting standard category options
 - [static var allowAirPlay: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/allowairplay.md)
   An option that determines whether you can stream audio from this session to AirPlay devices.
 - [static var allowBluetooth: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/allowbluetooth.md)
@@ -48,9 +51,6 @@ Each option is valid only for specific audio session categories.
   An option that indicates whether audio from this session mixes with audio from active sessions in other audio apps.
 - [static var overrideMutedMicrophoneInterruption: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/overridemutedmicrophoneinterruption.md)
   An option that indicates whether the system interrupts the audio session when it mutes the built-in microphone.
-### Initializers
-- [init(rawValue: UInt)](avaudiosession/categoryoptions-swift.struct/init(rawvalue:).md)
-  Creates a new instance with the raw value you specify.
 
 ## Relationships
 
@@ -74,8 +74,6 @@ Each option is valid only for specific audio session categories.
   Audio session category identifiers.
 - [var categoryOptions: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.property.md)
   The set of options associated with the current audio session category.
-- [static var farFieldInput: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/farfieldinput.md)
-  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`record`](avaudiosession/category-swift.struct/record.md), and `AVAudioSessionMultiRoute` with [`dualRoute`](avaudiosession/mode-swift.struct/dualroute.md).
 
 
 ---

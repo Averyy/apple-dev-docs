@@ -25,7 +25,7 @@ This value is used with [`IOOperationHandler`](videodriverkit/iooperationhandler
 - [IOUserVideoIOOperationWriteEnd](videodriverkit/iouservideoiooperationwriteend.md)
   This operation is called just after writing data to the device’s stream buffers.
 - [IOOperationHandler](videodriverkit/iooperationhandler.md)
-  A block that tells the device to perform an IOUserVideoIOOperation.
+  A block that tells the device to perform a video IO operation.
 - [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 

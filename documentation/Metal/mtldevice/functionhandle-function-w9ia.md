@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Get the function handle for the specified binary-linked function from the pipeline state.
+Returns the handle for a binary function from a pipeline state.
 
 **Availability**:
 - iOS 26.0+
@@ -22,11 +22,11 @@ func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)
 
 #### Return Value
 
-A [`MTLFunctionHandle`](mtlfunctionhandle.md) instance  for a binary function that was compiled with `MTLFunctionOptionPipelineIndependent`, otherwise `nil`.
+A function handle if the method succeeds, otherwise `nil`.
 
 ## Parameters
 
-- `function`: A [`MTL4BinaryFunction`](mtl4binaryfunction.md) instance representing the function binary.
+- `function`: A function that the Metal compiler created with the [`pipelineIndependent`](mtlfunctionoptions/pipelineindependent.md) setting.
 
 
 ---

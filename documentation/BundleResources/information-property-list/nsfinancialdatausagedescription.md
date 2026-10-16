@@ -17,6 +17,8 @@ A message that tells people why the app is requesting access to financial data s
 
 - [NSIdentityUsageDescription](information-property-list/nsidentityusagedescription.md)
   A message that tells people why the app is requesting identity information.
+- [NSIdentityUsageDescriptionDictionary](information-property-list/nsidentityusagedescriptiondictionary.md)
+  A dictionary that contains messages that explain why your app is requesting identity information.
 
 
 ---

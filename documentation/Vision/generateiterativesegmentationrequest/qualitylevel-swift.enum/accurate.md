@@ -19,6 +19,10 @@ Produces a high-resolution mask.
 case accurate
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## See Also
 
 - [GenerateIterativeSegmentationRequest.QualityLevel.balanced](generateiterativesegmentationrequest/qualitylevel-swift.enum/balanced.md)

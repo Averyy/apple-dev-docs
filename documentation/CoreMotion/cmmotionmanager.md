@@ -157,8 +157,8 @@ To interpret accelerometer, gyroscope, or attitude information, you need to know
   The error domain for Core Motion.
 - [struct CMError](cmerror.md)
   Defines motion errors.
-### Type Methods
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmmotionmanager/authorizationstatus.md)
+### Type Properties
+- [class var authorizationStatus: CMAuthorizationStatus](cmmotionmanager/authorizationstatus.md)
 
 ## Relationships
 

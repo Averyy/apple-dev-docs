@@ -29,7 +29,7 @@ The system provides this information to help you understand the reliability and 
 - [AgeRangeService.AgeRangeDeclaration.guardianDeclared](agerangeservice/agerangedeclaration/guardiandeclared.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
 - [AgeRangeService.AgeRangeDeclaration.confirmed](agerangeservice/agerangedeclaration/confirmed.md)
-  Indicates a user’s age range was set using a scrutinized method, like a credit card or government ID.
+  A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
 ### Deprecated
 - [AgeRangeService.AgeRangeDeclaration.paymentChecked](agerangeservice/agerangedeclaration/paymentchecked.md)
   Indicates the person set their own age range using a payment method, like a credit card.
@@ -55,7 +55,7 @@ The system provides this information to help you understand the reliability and 
 ## See Also
 
 - [AgeRangeService.AgeRange](agerangeservice/agerange.md)
-  Information about a person’s age range based on their response to your age range request.
+  Information about a person’s age range based on their response to an age range request.
 - [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
   Requests an age range for the person signed in to iCloud on the device.
 - [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)

@@ -25,7 +25,9 @@ A route-sharing policy allows you to specify that an audio session should route 
 
 ## Topics
 
-### Route-sharing policies
+### Creating a route-sharing policy
+- [init?(rawValue: UInt)](avaudiosession/routesharingpolicy-swift.enum/init(rawvalue:).md)
+### Choosing a route-sharing policy
 - [AVAudioSession.RouteSharingPolicy.default](avaudiosession/routesharingpolicy-swift.enum/default.md)
   A policy that follows standard rules for routing audio output.
 - [AVAudioSession.RouteSharingPolicy.longFormAudio](avaudiosession/routesharingpolicy-swift.enum/longformaudio.md)
@@ -36,8 +38,6 @@ A route-sharing policy allows you to specify that an audio session should route 
   A policy in which the route picker UI directs videos to a wireless route.
 - [static var longForm: AVAudioSession.RouteSharingPolicy](avaudiosession/routesharingpolicy-swift.enum/longform.md)
   A policy that routes output to the shared long-form audio output.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/routesharingpolicy-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

@@ -1,4 +1,4 @@
 Completed scraping MetalKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 120
+Total pages scraped: 115
+Pages skipped (unchanged): 5
 Pages failed: 0

@@ -21,10 +21,10 @@ class AVMIDINoteEvent
 
 ## Topics
 
-### Creating a MIDI Note Event
+### Creating a MIDI note event
 - [init(channel: UInt32, key: UInt32, velocity: UInt32, duration: AVMusicTimeStamp)](avmidinoteevent/init(channel:key:velocity:duration:).md)
   Creates an event with a MIDI channel, key number, velocity, and duration.
-### Configuring a MIDI Note Event
+### Configuring a MIDI note event
 - [var channel: UInt32](avmidinoteevent/channel.md)
   The MIDI channel.
 - [var key: UInt32](avmidinoteevent/key.md)

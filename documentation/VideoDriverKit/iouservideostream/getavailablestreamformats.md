@@ -24,7 +24,7 @@ The object’s work queue synchronizes access to the value.
 
 ## Parameters
 
-- `out_formats`: Pointer to a buffer of `IOUserVideoStreamBasicDescription` objects with size corresponding to `in_num_formats`.
+- `out_formats`: Pointer to a buffer of format objects.
 - `in_num_formats`: The number of formats in `out_formats `buffer.
 
 ## See Also

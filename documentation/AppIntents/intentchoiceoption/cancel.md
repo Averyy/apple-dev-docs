@@ -22,7 +22,7 @@ static var cancel: IntentChoiceOption { get }
 
 #### Discussion
 
-Selecting this option causes the `requestChoice(between:dialog:)` method to throw a cancellation error.
+Selecting this option causes the [`requestChoice(between:dialog:)`](appintent/requestchoice(between:dialog:).md) method to throw a cancellation error.
 
 
 ---

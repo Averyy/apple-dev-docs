@@ -37,12 +37,12 @@ In manual rendering mode, the format of the output scope is initially the same a
 
 ## Topics
 
-### Manually Giving Data to an Audio Engine
+### Supplying manual rendering input
 - [func setManualRenderingInputPCMFormat(AVAudioFormat, inputBlock: AVAudioIONodeInputBlock) -> Bool](avaudioinputnode/setmanualrenderinginputpcmformat(_:inputblock:).md)
   Supplies the data through the input node to the engine while operating in the manual rendering mode.
 - [typealias AVAudioIONodeInputBlock](avaudioionodeinputblock.md)
   The type that represents a block to render operation calls to get input data when in manual rendering mode.
-### Getting and Setting Voice Processing Properties
+### Configuring voice processing
 - [var isVoiceProcessingInputMuted: Bool](avaudioinputnode/isvoiceprocessinginputmuted.md)
   A Boolean that indicates whether the input of the voice processing unit is in a muted state.
 - [var isVoiceProcessingBypassed: Bool](avaudioinputnode/isvoiceprocessingbypassed.md)
@@ -53,7 +53,7 @@ In manual rendering mode, the format of the output scope is initially the same a
   The ducking configuration of nonvoice audio.
 - [struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration](avaudiovoiceprocessingotheraudioduckingconfiguration.md)
   The configuration of ducking non-voice audio.
-### Handling Muted Speech Events
+### Handling muted speech events
 - [func setMutedSpeechActivityEventListener(((AVAudioVoiceProcessingSpeechActivityEvent) -> Void)?) -> Bool](avaudioinputnode/setmutedspeechactivityeventlistener(_:).md)
 - [enum AVAudioVoiceProcessingSpeechActivityEvent](avaudiovoiceprocessingspeechactivityevent.md)
   Types of speech activity events.
@@ -77,12 +77,16 @@ In manual rendering mode, the format of the output scope is initially the same a
 
 ## See Also
 
-- [class AVAudioNode](avaudionode.md)
-  An object you use for audio generation, processing, or an I/O block.
+- [Using voice processing](using-voice-processing.md)
+  Add voice-processing capabilities to your app by using audio engine.
+- [class AVAudioEngine](avaudioengine.md)
+  An object that manages a graph of audio nodes, controls playback, and configures real-time rendering constraints.
 - [class AVAudioOutputNode](avaudiooutputnode.md)
   An object that connects to the system’s audio output.
 - [class AVAudioIONode](avaudioionode.md)
   An object that performs audio input or output in the engine.
+- [class AVAudioNode](avaudionode.md)
+  An object you use for audio generation, processing, or an I/O block.
 
 
 ---

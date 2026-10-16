@@ -25,10 +25,10 @@ You can’t modify the size and contents of this event once you create it.
 
 ## Topics
 
-### Creates a System Event
+### Creating a system exclusive event
 - [init(data: Data)](avmidisysexevent/init(data:).md)
   Creates a system event with the data you specify.
-### Getting the Size of the Event
+### Getting the event size
 - [var sizeInBytes: UInt32](avmidisysexevent/sizeinbytes.md)
   The size of the data that this event contains.
 

@@ -24,7 +24,7 @@ This is the request body for the [`Set App Account Token`](set-app-account-token
 
 ## Properties
 
-- `appAccountToken` (appAccountToken): **Required**. A UUID value to associate with the transaction you indicate in the endpoint parameter.
+- `appAccountToken` (appAccountToken) *(required)*: A UUID value to associate with the transaction you indicate in the endpoint parameter.
 
 ## See Also
 

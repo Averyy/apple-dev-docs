@@ -39,9 +39,11 @@ Concretely:
 
 \[y_i = x_2^\top W_i x_1 + b_i\]
 where:
-\(W\) has shape `[output_dims, input2_dims, input1_dims]`, \(b\) has shape `[output_dims]`,
+\(W\) has shape `[output_dims, input2_dims, input1_dims]`, \(b\) has
+shape `[output_dims]`,
 and \(i\) indexes the output dimension.
-The values are initialized from the uniform distribution \(\mathcal{U}(-{k}, {k})\),
+The values are initialized from the uniform distribution
+\(\mathcal{U}(-{k}, {k})\),
 where \(k = \frac{1}{\sqrt{D_1}}\) and \(D_1\) is `input1_dims`.
 
 Parameters:

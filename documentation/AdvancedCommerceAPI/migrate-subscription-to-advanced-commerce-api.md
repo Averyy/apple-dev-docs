@@ -20,7 +20,7 @@ Migrate a subscription that a customer purchased through Apple In-App Purchase t
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/migrate/{transactionId}`
+`POST https://api.storekit-sandbox.apple.com/advancedCommerce/v1/subscription/migrate/{transactionId}`
 
 ## Parameters
 

@@ -21,7 +21,7 @@ SwiftUI uses the buttons in a sheet’s toolbar to determine whether a particula
 
 Use this modifier to specify whether a sheet should prevent app termination. Pass `nil` to explicitly request the automatic behavior/for the inert version of this modifier. Non-nil values will override `nil`, and `true` takes precedence over `false`.
 
-Use this modifier within the `content` argument to `View/sheet`
+Use this modifier within the `content` argument to [`sheet(isPresented:onDismiss:content:)`](view/sheet(ispresented:ondismiss:content:).md)
 
 ```swift
 struct LaunchScreen: View {

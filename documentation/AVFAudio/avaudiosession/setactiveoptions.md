@@ -25,10 +25,10 @@ Use this option to request that the system notify an interrupted app that the in
 
 ## Topics
 
-### Creating an Activation Option
+### Creating an activation option
 - [init(rawValue: UInt)](avaudiosession/setactiveoptions/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
-### Getting Standard  Options
+### Getting standard  options
 - [static var notifyOthersOnDeactivation: AVAudioSession.SetActiveOptions](avaudiosession/setactiveoptions/notifyothersondeactivation.md)
   An option that indicates that the system should notify other apps that you’ve deactivated your app’s audio session.
 - [var AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation: Int](avaudiosessionsetactiveflags_notifyothersondeactivation.md)

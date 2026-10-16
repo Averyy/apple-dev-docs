@@ -19,7 +19,7 @@ case mail
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934525@2x.png)
+![Mail icon](/images/com.apple.uikit/media-2934525@2x.png)
 
 ## See Also
 

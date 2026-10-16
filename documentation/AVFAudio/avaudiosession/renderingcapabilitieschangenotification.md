@@ -27,6 +27,8 @@ class let renderingCapabilitiesChangeNotification: NSNotification.Name
   A notification the system posts when the rendering mode changes.
 - [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](avaudiosession/supportedoutputchannellayouts.md)
   The array of channel layouts that the current route supports.
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+  A notification the system posts when its spatial playback capabilities change.
 
 
 ---

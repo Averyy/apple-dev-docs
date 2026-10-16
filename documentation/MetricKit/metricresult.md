@@ -90,6 +90,8 @@ Use the [`metricGroup`](metricresult/metricgroup.md) property to filter or categ
 ### Conforms To
 - [Decodable](../swift/decodable.md)
 - [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 

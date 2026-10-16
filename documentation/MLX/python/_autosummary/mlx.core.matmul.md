@@ -48,6 +48,9 @@ two dimensions of each input.
 All but the last two dimensions of each input are broadcast with one another using
 standard numpy-style broadcasting semantics.
 
+Only inexact types are supported. The promoted type of `a` and `b`
+must be floating point or complex.
+
 Parameters:
 
 **a** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.

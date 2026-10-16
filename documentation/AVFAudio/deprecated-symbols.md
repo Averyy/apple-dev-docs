@@ -1,4 +1,4 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AVFAudio
 

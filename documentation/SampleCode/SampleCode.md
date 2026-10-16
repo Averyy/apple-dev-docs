@@ -87,8 +87,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build a travel planning app that organizes trips into collections and tracks activity completion.
 - [Working with content from your Mac app using Spatial Preview](../spatialpreview/working-with-content-from-your-mac-app-using-spatial-preview.md)
   Send and update documents, and work with 3D content live from your Mac app to a visionOS device.
-- [Rendering Gaussian splats with RealityKit](../visionos/working-with-gaussian-splats-with-realitykit.md)
-  Bring a real-world scan into your app by loading splat data from a USD or PLY file.
+- [Rendering Gaussian splats with RealityKit](../visionos/rendering-gaussian-splats-with-realitykit.md)
+  Bring a real-world scan into an app by loading splat data from a USD or PLY file.
 ### Accelerate
 - [Adding a bokeh effect to images](../accelerate/adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.

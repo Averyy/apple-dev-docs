@@ -26,7 +26,7 @@ A time relative to the player’s start time, or `nil` if the player isn’t pla
 
 #### Discussion
 
-For more information about this method and its inverse [`nodeTime(forPlayerTime:)`](avaudioplayernode/nodetime(forplayertime:).md), see [`Player Timeline`](avaudioplayernode#Player-Timeline.md).
+For more information about this method and its inverse [`nodeTime(forPlayerTime:)`](avaudioplayernode/nodetime(forplayertime:).md), see [`Player timeline`](avaudioplayernode#Player-timeline.md).
 
 ## Parameters
 

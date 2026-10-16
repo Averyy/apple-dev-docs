@@ -21,7 +21,9 @@ enum InterruptionReason
 
 ## Topics
 
-### Interruption Reasons
+### Creating an interruption reason
+- [init?(rawValue: UInt)](avaudiosession/interruptionreason/init(rawvalue:).md)
+### Identifying interruption reasons
 - [AVAudioSession.InterruptionReason.default](avaudiosession/interruptionreason/default.md)
   The system interrupts this audio session when it activates another.
 - [AVAudioSession.InterruptionReason.builtInMicMuted](avaudiosession/interruptionreason/builtinmicmuted.md)
@@ -32,8 +34,6 @@ enum InterruptionReason
   The system backgrounds the scene and interrupts the audio session.
 - [AVAudioSession.InterruptionReason.appWasSuspended](avaudiosession/interruptionreason/appwassuspended.md)
   The system suspends the app and interrupts the audio session.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/interruptionreason/init(rawvalue:).md)
 
 ## Relationships
 

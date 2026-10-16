@@ -15,6 +15,14 @@ To use budget orders, an ad account must have a `LOC` (Line of Credit) `paymentM
 
 To confirm your payment model, call [`Get Ad Account by ID`](get-ad-accounts-_id_.md) and check the [`AdAccount.PaymentModel`](adaccount/paymentmodel-data.typealias.md) field in the [`AdAccount`](adaccount.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
 
+#### Set the X Ap Context Header
+
+Budget orders belong to an organization, so the `X-AP-Context` header works differently here than on other ad account scoped endpoints.
+
+- [`Create a Budget Order`](post-shared-budgets.md), [`Update a Budget Order`](put-shared-budgets-_id_.md), and [`Delete a Budget Order`](delete-shared-budgets-_id_.md) require organization-level permissions. Omit the `X-AP-Context` header on these calls. If you send an ad account header, the API returns `403 Forbidden` with “User does not have required permissions”, even when your user has organization-level permissions.
+- [`Query Budget Orders`](post-shared-budgets-query.md) and [`Get a Budget Order by ID`](get-shared-budgets-_id_.md) don’t require the header for users with organization-level permissions, and sending it doesn’t change the result.
+- Users limited to specific ad accounts must send `X-AP-Context: adAccountId=<id>` on [`Query Budget Orders`](post-shared-budgets-query.md) and [`Get a Budget Order by ID`](get-shared-budgets-_id_.md). Without it, the API returns `403 Forbidden`.
+
 #### Call the Budget Orders Endpoints
 
 Use the following endpoints to create, retrieve, update, and delete budget orders:
@@ -43,7 +51,7 @@ Use the following endpoints to create, retrieve, update, and delete budget order
 ## See Also
 
 - [Budget Order Data Objects](budget-orders-data-objects.md)
-  Use these objects to build budget order requests and read their responses.
+  Build budget order and campaign assignment requests, and read budget order and invoice detail responses.
 - [Budget Order Data Types](budget-orders-data-types.md)
   Track budget order status, status reasons, and payment model with these enumerated types.
 

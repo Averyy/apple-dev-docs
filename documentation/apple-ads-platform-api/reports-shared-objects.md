@@ -2,10 +2,16 @@
 
 **Framework**: Apple Ads Platform API
 
-Shared request and response objects used across Apps and Brands report endpoints.
+Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
+
+#### Overview
+
+Apps and Brands report endpoints reuse the objects on this page, so you learn each one once. Request objects such as [`TimeRange`](timerange.md), [`Filter`](filter.md), [`Sorting`](sorting.md), and [`RequestPagination`](requestpagination.md) define what a report covers. Metric objects such as [`ActionMetrics`](actionmetrics.md), [`CostMetrics`](costmetrics.md), and [`RateMetrics`](ratemetrics.md) carry the numbers, and the Reporting-prefixed objects describe the entities in each row.
+
+For objects specific to one report family, see [`Apps Data Objects`](apps-reports-objects.md) and [`Brands Data Objects`](brands-reports-objects.md).
 
 ## Topics
 
@@ -51,7 +57,7 @@ Shared request and response objects used across Apps and Brands report endpoints
 - [Managing Reports](reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 - [App Store Reports Endpoints](apps-reports-endpoints.md)
-  Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search term performance data.
+  Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
 - [Brands Reports Endpoints](brands-reports-endpoints.md)
   Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, and search terms.
 - [Apps Data Objects](apps-reports-objects.md)

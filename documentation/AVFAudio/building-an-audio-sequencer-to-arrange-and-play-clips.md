@@ -357,8 +357,6 @@ This architecture keeps audio metering responsive and accurate without adding `T
 
 - [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
-- [Using voice processing](using-voice-processing.md)
-  Add voice-processing capabilities to your app by using audio engine.
 - [class AVAudioPlayerNode](avaudioplayernode.md)
   An object for scheduling the playback of buffers or segments of audio files.
 

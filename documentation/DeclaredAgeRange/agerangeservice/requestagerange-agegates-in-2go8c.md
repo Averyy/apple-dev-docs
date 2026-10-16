@@ -16,6 +16,10 @@ Requests an age range for the person signed in to iCloud on the device.
 func requestAgeRange(ageGates threshold1: Int, _ threshold2: Int? = nil, _ threshold3: Int? = nil, in viewController: UIViewController) async throws -> AgeRangeService.Response
 ```
 
+## Mentions
+
+- [Requesting people’s age range information in your app](requesting-people-share-their-age-range-with-your-app.md)
+
 #### Return Value
 
 An [`AgeRangeService.Response`](agerangeservice/response.md) value containing either the person’s age range or an indication that the person declined to share their age range.
@@ -42,7 +46,7 @@ The system may return age ranges that override the age gates you specify based o
 - [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
   Constants that describe how an adult, parent, or guardian set the age range.
 - [AgeRangeService.AgeRange](agerangeservice/agerange.md)
-  Information about a person’s age range based on their response to your age range request.
+  Information about a person’s age range based on their response to an age range request.
 - [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
   Requests an age range for the person logged onto iCloud on the device.
 - [AgeRangeService.Response](agerangeservice/response.md)

@@ -23,6 +23,7 @@ Don’t subclass `IOUserVideoObject` or allocate it directly.
 ### Creating a video object
 - [init](iouservideoobject/init-853a8.md)
 - [init](iouservideoobject/init-5dkv4.md)
+  Initializes a video object.
 ### Freeing a video object
 - [free](iouservideoobject/free.md)
   Frees the video object.

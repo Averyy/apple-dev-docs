@@ -11,6 +11,10 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3215: Reading man pages](tn3215-reading-man-pages.md)
+  Use the Terminal app to read the documentation for command-line tools and low-level APIs.
+- [TN3192: Migrating your app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPhone and iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
 - [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
   Learn how local network privacy affects your software.
 - [TN3214: Validating the fonts you ship in your app](tn3214-validating-the-fonts-you-ship-in-your-app.md)
@@ -41,8 +45,6 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
   Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
 - [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
   Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
-- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
-  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
 - [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
   Learn which networking API is best for you.
 - [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)

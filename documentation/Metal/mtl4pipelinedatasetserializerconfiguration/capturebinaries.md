@@ -21,7 +21,7 @@ static var captureBinaries: MTL4PipelineDataSetSerializerConfiguration { get }
 
 #### Discussion
 
-Set this mask to use `MTL4PipelineDataSetSerializer.serializeAsArchiveAndFlush(toURL:error:)`.
+Set this mask to use [`serializeAsArchiveAndFlush(url:)`](mtl4pipelinedatasetserializer/serializeasarchiveandflush(url:).md).
 
 
 ---

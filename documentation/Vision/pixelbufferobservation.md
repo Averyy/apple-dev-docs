@@ -20,6 +20,10 @@ An object that represents an image that an image-analysis request produces.
 struct PixelBufferObservation
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## Topics
 
 ### Creating an observation

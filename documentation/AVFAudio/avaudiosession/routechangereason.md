@@ -29,7 +29,9 @@ These constants appear as possible values for the [`AVAudioSessionRouteChangeRea
 
 ## Topics
 
-### Route Change Reasons
+### Creating a route change reason
+- [init?(rawValue: UInt)](avaudiosession/routechangereason/init(rawvalue:).md)
+### Identifying route change reasons
 - [AVAudioSession.RouteChangeReason.unknown](avaudiosession/routechangereason/unknown.md)
   A value that indicates the reason for the change is unknown.
 - [AVAudioSession.RouteChangeReason.newDeviceAvailable](avaudiosession/routechangereason/newdeviceavailable.md)
@@ -46,8 +48,6 @@ These constants appear as possible values for the [`AVAudioSessionRouteChangeRea
   A value that indicates that the route changed because no suitable route is now available for the specified category.
 - [AVAudioSession.RouteChangeReason.routeConfigurationChange](avaudiosession/routechangereason/routeconfigurationchange.md)
   A value that indicates that the configuration for a set of I/O ports has changed.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/routechangereason/init(rawvalue:).md)
 
 ## Relationships
 

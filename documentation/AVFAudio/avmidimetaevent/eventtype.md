@@ -21,7 +21,9 @@ enum EventType
 
 ## Topics
 
-### Event Types
+### Creating an event type
+- [init?(rawValue: Int)](avmidimetaevent/eventtype/init(rawvalue:).md)
+### Identifying meta event types
 - [AVMIDIMetaEvent.EventType.copyright](avmidimetaevent/eventtype/copyright.md)
   An event type that represents a copyright.
 - [AVMIDIMetaEvent.EventType.cuePoint](avmidimetaevent/eventtype/cuepoint.md)
@@ -54,8 +56,6 @@ enum EventType
   An event type that represents a time signature.
 - [AVMIDIMetaEvent.EventType.trackName](avmidimetaevent/eventtype/trackname.md)
   An event type that represents a track name.
-### Initializers
-- [init?(rawValue: Int)](avmidimetaevent/eventtype/init(rawvalue:).md)
 
 ## Relationships
 

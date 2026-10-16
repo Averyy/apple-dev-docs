@@ -20,6 +20,10 @@ The location and dimensions of a rectangle.
 struct NormalizedRect
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## Topics
 
 ### Creating a normalized rectangle

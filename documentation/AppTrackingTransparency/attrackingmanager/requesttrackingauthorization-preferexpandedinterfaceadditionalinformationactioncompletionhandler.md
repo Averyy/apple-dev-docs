@@ -63,6 +63,7 @@ To use this method, add the [`NSUserTrackingUsageDescription`](https://developer
 
 - `preferExpandedInterface`: A Boolean value that requests that the system present a full-page sheet instead of a system alert.
 - `additionalInformationAction`: An action to perform when someone taps Additional Information; pass `nil` to omit the button.
+- `completion`: A handler you implement to process the person’s response.
 
 ## See Also
 

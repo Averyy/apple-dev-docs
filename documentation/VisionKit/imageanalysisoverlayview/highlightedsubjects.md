@@ -6,7 +6,7 @@
 All highlighted subjects in the overlay view’s image.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

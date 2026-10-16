@@ -30,7 +30,7 @@ Place the Advanced Commerce request data in a UTF-8 JSON string and base64-encod
 
 For example, the following JSON represents a [`OneTimeChargeCreateRequest`](https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest) for the purchase of a one-time charge product:
 
-```JSON
+```json
 {
     "operation": "CREATE_ONE_TIME_CHARGE",
     "version": "1",                     
@@ -65,7 +65,7 @@ The result after following the instructions is a *JWS compact serialization*.
 
 Wrap the JWS to create a `signatureInfo` JSON string that contains a `token` key.  You can complete this step on your server or in your app. Create the `signatureInfo` JSON string as shown below:
 
-```JSON
+```json
 {
     "signatureInfo": {
         "token": "<your JWS compact serialization>"

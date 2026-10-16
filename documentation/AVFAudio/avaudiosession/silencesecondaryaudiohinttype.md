@@ -21,13 +21,13 @@ enum SilenceSecondaryAudioHintType
 
 ## Topics
 
-### Constants
+### Creating a hint type
+- [init?(rawValue: UInt)](avaudiosession/silencesecondaryaudiohinttype/init(rawvalue:).md)
+### Identifying hint types
 - [AVAudioSession.SilenceSecondaryAudioHintType.begin](avaudiosession/silencesecondaryaudiohinttype/begin.md)
   A value that indicates that another application’s primary audio has started.
 - [AVAudioSession.SilenceSecondaryAudioHintType.end](avaudiosession/silencesecondaryaudiohinttype/end.md)
   A value that indicates that another application’s primary audio has stopped.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/silencesecondaryaudiohinttype/init(rawvalue:).md)
 
 ## Relationships
 

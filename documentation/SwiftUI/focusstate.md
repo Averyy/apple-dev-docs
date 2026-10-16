@@ -28,7 +28,7 @@ Use this property wrapper in conjunction with [`focused(_:equals:)`](view/focuse
 In the following example of a simple login screen, when the user presses the Sign In button and one of the fields is still empty, focus moves to that field. Otherwise, the sign-in process proceeds.
 
 ```swift
-struct LoginForm {
+struct LoginForm: View {
     enum Field: Hashable {
         case username
         case password

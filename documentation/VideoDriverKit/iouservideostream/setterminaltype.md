@@ -18,6 +18,10 @@ kern_return_t SetTerminalType(IOUserVideoStreamTerminalType in_terminal_type);
 
 You can change the terminal type dynamically. On success, the system sends a notification to the host to update the object state.
 
+## Parameters
+
+- `in_terminal_type`: The terminal type to set.
+
 ## See Also
 
 - [GetTerminalType](iouservideostream/getterminaltype.md)

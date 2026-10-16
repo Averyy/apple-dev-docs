@@ -6,6 +6,8 @@ Update your just-in-time (JIT) compiler to work with the Hardened Runtime capabi
 
 #### Overview
 
+> ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference) and [`Configuring the build settings of a target`](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
+
 A just-in-time (JIT) compiler translates byte-code or intermediate script code into machine-language instructions, and makes those instructions available for execution. An app initiates JIT compilation as needed to support relevant tasks, and the compilation process takes place within the app’s process space. For example, a web browser uses JIT compilation to transform a web page’s script code into runnable code when the user interacts with the appropriate page elements.
 
 ![An illustration of an app compiling byte code into native instructions.](/images/com.apple.Apple-Silicon/porting-just-in-time-compilers-to-apple-silicon-1@2x.png)

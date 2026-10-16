@@ -575,6 +575,18 @@ An output value is true if any of the corresponding inputs are true.
 **array min(const array &a, int axis, bool keepdims = false, StreamOrDevice s = {})**
 : The minimum of the elements of an array along the given axis.
 
+**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<array, array> minmax(const array &a, bool keepdims, StreamOrDevice s = {})**
+: 
+
+**inline [std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<array, array> minmax(const array &a, StreamOrDevice s = {})**
+: 
+
+**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<array, array> minmax(const array &a, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> &axes, bool keepdims = false, StreamOrDevice s = {})**
+: The minimum and maximum of the elements of an array along the given axes.
+
+**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::tuple<array, array> minmax(const array &a, int axis, bool keepdims = false, StreamOrDevice s = {})**
+: The minimum and maximum of the elements of an array along the given axis.
+
 **array hanning(int M, StreamOrDevice s = {})**
 : Returns the Hanning window of size M.
 
@@ -641,6 +653,10 @@ The sort is stable and NaN values are placed at the end.
 
 **array topk(const array &a, int k, int axis, StreamOrDevice s = {})**
 : Returns topk elements of the array along a given axis.
+
+**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> unique(const array &a, int size, bool return_index = false, bool return_inverse = false, bool return_counts = false, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &fill_value = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
+: Returns the sorted unique elements of the flattened array, and optionally the index of the first occurrence of each, the inverse indices and the counts. 
+The output has the given size, and is truncated if `size` is smaller than the number of unique values. If `size` is larger, the result is padded with `fill_value`, or the first of the sorted unique values if no fill value is provided. An empty input has none, so it throws unless `size` is zero or a fill value is given. A truncated output loses the counts of the values it drops, and its inverse indices are clamped to the last entry.
 
 **array logcumsumexp(const array &a, bool reverse = false, bool inclusive = true, StreamOrDevice s = {})**
 : Cumulative logsumexp of an array.

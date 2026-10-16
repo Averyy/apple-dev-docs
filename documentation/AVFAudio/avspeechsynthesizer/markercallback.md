@@ -38,6 +38,8 @@ typealias MarkerCallback = ([AVSpeechSynthesisMarker]) -> Void
   A type that defines a callback that receives a buffer of generated speech.
 - [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback, toMarkerCallback: AVSpeechSynthesizer.MarkerCallback)](avspeechsynthesizer/write(_:tobuffercallback:tomarkercallback:).md)
   Generates audio buffers and associated metadata for storage or further speech synthesis processing.
+- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
+  An object that contains information about the synthesized audio.
 
 
 ---

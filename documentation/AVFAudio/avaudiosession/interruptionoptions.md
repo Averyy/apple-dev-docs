@@ -25,10 +25,10 @@ struct InterruptionOptions
 
 ## Topics
 
-### Creating an Interruption Option
+### Creating an interruption option
 - [init(rawValue: UInt)](avaudiosession/interruptionoptions/init(rawvalue:).md)
   Creates a new instance with the raw value you specify.
-### Getting Standard Interruption Options
+### Getting standard interruption options
 - [static var shouldResume: AVAudioSession.InterruptionOptions](avaudiosession/interruptionoptions/shouldresume.md)
   An option that indicates the interruption by another audio session has ended and the app can resume its audio session.
 

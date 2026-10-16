@@ -22,15 +22,15 @@ enum recordPermission
 
 ## Topics
 
-### Permissions
+### Creating a permission state
+- [init?(rawValue: Int)](avaudioapplication/recordpermission-swift.enum/init(rawvalue:).md)
+### Checking permission states
 - [AVAudioApplication.recordPermission.undetermined](avaudioapplication/recordpermission-swift.enum/undetermined.md)
   Indicates the app hasn’t requested recording permission.
 - [AVAudioApplication.recordPermission.granted](avaudioapplication/recordpermission-swift.enum/granted.md)
   Indicates the user grants the app permission to record audio.
 - [AVAudioApplication.recordPermission.denied](avaudioapplication/recordpermission-swift.enum/denied.md)
   Indicates the user denies the app permission to record audio.
-### Initializers
-- [init?(rawValue: Int)](avaudioapplication/recordpermission-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

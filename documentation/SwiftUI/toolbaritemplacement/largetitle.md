@@ -18,7 +18,7 @@ static let largeTitle: ToolbarItemPlacement
 
 #### Discussion
 
-The view appears when the navigation bar renders its title out-of-line, and takes precedence over the value provided to the `View.navigationTitle(_:)` modifier.
+The view appears when the navigation bar renders its title out-of-line, and takes precedence over the value provided to the [`navigationTitle(_:)`](view/navigationtitle(_:).md) modifier.
 
 ```swift
 struct ContentView: View {

@@ -26,13 +26,13 @@ The mixer accepts input at any sample rate and efficiently combines sample rate 
 
 ## Topics
 
-### Creating a Mixer Node
+### Creating a mixer node
 - [init()](avaudiomixernode/init.md)
   Creates an audio mixer node.
-### Getting and Setting the Mixer Volume
+### Adjusting the output volume
 - [var outputVolume: Float](avaudiomixernode/outputvolume.md)
   The mixer’s output volume.
-### Getting an Input Bus
+### Getting an input bus
 - [var nextAvailableInputBus: AVAudioNodeBus](avaudiomixernode/nextavailableinputbus.md)
   An audio bus that isn’t in a connected state.
 

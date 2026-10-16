@@ -32,6 +32,8 @@ The settings dictionary doesn’t support all formats that [`AudioStreamBasicDes
   A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
 - [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
   The common format identifier instance.
+- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+  The format options that describe common audio formats.
 - [var magicCookie: Data?](avaudioformat/magiccookie.md)
   An object that contains metadata that encoders and decoders require.
 

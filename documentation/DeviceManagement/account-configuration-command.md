@@ -14,6 +14,8 @@ Create and configure a local administrator account on a device.
 
 #### Discussion
 
+The device only uses this command during initial device setup. The device ignores this command when migrating from one MDM server to another.
+
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
 ##### Command Availability

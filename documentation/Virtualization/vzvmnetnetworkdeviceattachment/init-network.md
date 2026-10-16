@@ -48,7 +48,7 @@ virtioNetworkDevice.attachment = try! VZVmnetNetworkDeviceAttachment(network: ne
 
 **Objective-C**:
 
-```Objective-C
+```objective-c
 
 vmnet_return_t status;
 auto network_configuration = vmnet_network_configuration_create(VMNET_SHARED_MODE, &status);

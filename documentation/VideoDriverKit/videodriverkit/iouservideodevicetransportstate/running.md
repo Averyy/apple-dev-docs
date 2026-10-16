@@ -16,7 +16,7 @@ Running
 
 #### Discussion
 
-The hardware should be enabled to fully run I/O.
+In this state, enable the hardware to fully run I/O.
 
 ## See Also
 

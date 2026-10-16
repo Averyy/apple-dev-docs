@@ -6,7 +6,7 @@
 A rectangle that identifies the extremities of a subject within an image.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

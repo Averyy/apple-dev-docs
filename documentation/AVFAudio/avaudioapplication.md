@@ -36,7 +36,7 @@ Access the shared audio application instance to control app-level audio operatio
   The app’s permission to record audio.
 - [AVAudioApplication.recordPermission](avaudioapplication/recordpermission-swift.enum.md)
   Constants that indicate the app’s permission to record audio.
-### Requesting microphone injection permission
+### Managing microphone injection permission
 - [class func requestMicrophoneInjectionPermission(completionHandler: (AVAudioApplication.MicrophoneInjectionPermission) -> Void)](avaudioapplication/requestmicrophoneinjectionpermission(completionhandler:).md)
   Requests the app’s permission to add audio to calls.
 - [var microphoneInjectionPermission: AVAudioApplication.MicrophoneInjectionPermission](avaudioapplication/microphoneinjectionpermission-swift.property.md)

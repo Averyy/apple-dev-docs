@@ -28,6 +28,8 @@ Termination Signal:    Illegal instruction: 4
 Termination Reason:    Namespace SIGNAL, Code 0x4
 ```
 
+> **Note**: The exception type reflects the instructions the CPU was executing when the app crashed. Simulated iOS, iPadOS, watchOS, and tvOS apps run as Intel code on an Intel-based Mac, and macOS apps running under Rosetta translation execute as Intel code even on a Mac with Apple silicon. In both cases, the crash report shows the exception type for Intel processors.
+
 ##### Identify the Location of the Error
 
 The crash report shows the thread that encountered the runtime error, with a frame in the backtrace identifying the specific line of code.

@@ -19,6 +19,10 @@ The status of the assets required by a [`DownloadableAssetsRequest`](downloadabl
 enum DownloadableAssetsRequestStatus
 ```
 
+## Mentions
+
+- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+
 ## Topics
 
 ### Download status cases

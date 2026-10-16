@@ -25,6 +25,8 @@ X-AP-Context: adAccountId=<id>
 
 You don’t need the header for `GET /v1/me` ([`Get Me Details`](get-current-user-details.md)), `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)), `GET /v1/orgs/{id}` ([`Get Org by ID`](get-orgs-_id_.md)), `GET /v1/advertiser-resources` ([`Get Advertiser Resources`](get-advertiser-resources.md)), or `POST /v1/ad-accounts` ([`Create Ad Accounts`](post-ad-accounts.md)).
 
+Budget order endpoints are scoped to the organization. See [`Budget Orders Endpoints`](budget-orders-endpoints.md) for when to send the header.
+
 #### Explore the Account Management Endpoints
 
 The following endpoints handle authentication, ad account management, and access control:

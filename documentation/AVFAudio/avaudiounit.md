@@ -21,13 +21,20 @@ class AVAudioUnit
 
 ## Topics
 
+### Accessing the underlying Audio Unit
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-66uo7.md)
+  Provides scoped access to the audio unit’s AudioUnit
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-6c2ze.md)
+  Provides scoped access to the audio unit’s AudioUnit
+- [var audioUnit: AudioUnit](avaudiounit/audiounit-5vuo0.md)
+- [var audioUnit: AudioUnit](avaudiounit/audiounit-7dsac.md)
 ### Loading an audio preset file
 - [func loadPreset(at: URL) throws](avaudiounit/loadpreset(at:).md)
   Loads an audio unit using a specified preset.
-### Creating an audio unit component
+### Creating an Audio Unit component
 - [class func instantiate(with: AudioComponentDescription, options: AudioComponentInstantiationOptions, completionHandler: (AVAudioUnit?, (any Error)?) -> Void)](avaudiounit/instantiate(with:options:completionhandler:).md)
   Creates an instance of an audio unit component asynchronously and wraps it in an audio unit class.
-### Getting audio unit values
+### Getting Audio Unit values
 - [var audioComponentDescription: AudioComponentDescription](avaudiounit/audiocomponentdescription.md)
   The audio component description that represents the underlying Core Audio audio unit.
 - [var manufacturerName: String](avaudiounit/manufacturername.md)
@@ -36,14 +43,6 @@ class AVAudioUnit
   The name of the audio unit.
 - [var version: Int](avaudiounit/version.md)
   The version number of the audio unit.
-### Instance Properties
-- [var audioUnit: AudioUnit](avaudiounit/audiounit-5vuo0.md)
-- [var audioUnit: AudioUnit](avaudiounit/audiounit-7dsac.md)
-### Instance Methods
-- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-66uo7.md)
-  Provides scoped access to the audio unit’s AudioUnit
-- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-6c2ze.md)
-  Provides scoped access to the audio unit’s AudioUnit
 
 ## Relationships
 
@@ -66,10 +65,8 @@ class AVAudioUnit
 
 ## See Also
 
-- [Creating an audio unit extension](creating-an-audio-unit-extension.md)
+- [Creating an Audio Unit extension](creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
-- [Using voice processing](using-voice-processing.md)
-  Add voice-processing capabilities to your app by using audio engine.
 
 
 ---

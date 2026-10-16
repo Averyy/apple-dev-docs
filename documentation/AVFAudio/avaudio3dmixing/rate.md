@@ -36,10 +36,14 @@ The default value is `1.0`, and the range of valid values is `0.5` to `2.0`. Onl
   The location of the source in the 3D environment.
 - [var pointSourceInHeadMode: AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixing/pointsourceinheadmode.md)
   The in-head mode for a point source.
+- [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
+  The in-head modes for a point source.
 - [var reverbBlend: Float](avaudio3dmixing/reverbblend.md)
   A value that controls the blend of dry and reverb processed audio.
 - [var sourceMode: AVAudio3DMixingSourceMode](avaudio3dmixing/sourcemode.md)
   The source mode for the input bus of the audio environment node.
+- [enum AVAudio3DMixingSourceMode](avaudio3dmixingsourcemode.md)
+  The source modes for the input bus of the audio environment node.
 
 
 ---

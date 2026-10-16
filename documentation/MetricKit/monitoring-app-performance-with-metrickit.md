@@ -2,11 +2,11 @@
 
 **Framework**: MetricKit
 
-Receive daily performance and diagnostic reports from real device usage.
+Receive daily performance metrics and immediate diagnostic reports from real device usage.
 
 #### Overview
 
-MetricKit collects performance data from real devices running your app. It provides profiling data to your app once per day, giving you a picture of how your app performs in conditions you can’t easily reproduce during development. You can collect statistics like CPU usage, memory consumption, network activity, launch time, disk I/O, and more, all through a single API.
+MetricKit collects performance data from real devices running your app. It provides metric reports to your app once per day and diagnostic reports as events occur, giving you a picture of how your app performs in conditions you can’t easily reproduce during development. You can collect statistics like CPU usage, memory consumption, network activity, launch time, disk I/O, and more, all through a single API.
 
 When you use the [`StateReporting`](https://developer.apple.com/documentation/statereporting) framework to describe your app’s behavior, MetricKit can attribute metrics like hitch time or slow app launch to a particular feature, an app-configurable setting, or any other labeled states that you define. With performance data broken down by states, you have more evidence to make targeted, confident decisions for the next version of your app.
 
@@ -18,7 +18,7 @@ A [`MetricReport`](metricreport.md) contains measurements organized into two kin
 
 A [`DiagnosticReport`](diagnosticreport.md) contains discrete, event-based data. Access each report’s context through its [`DiagnosticReport.Environment`](diagnosticreport/environment-swift.struct.md), which includes information such as application version, operating system version, and device type. The results within each report are [`DiagnosticResult`](diagnosticresult.md) enum values such as [`DiagnosticResult.crash(_:)`](diagnosticresult/crash(_:).md), [`DiagnosticResult.hang(_:)`](diagnosticresult/hang(_:).md), [`DiagnosticResult.cpuException(_:)`](diagnosticresult/cpuexception(_:).md), [`DiagnosticResult.diskWriteException(_:)`](diagnosticresult/diskwriteexception(_:).md), and [`DiagnosticResult.appLaunch(_:)`](diagnosticresult/applaunch(_:).md).
 
-MetricKit collects data continuously and delivers it once per day when conditions permit. The [`timeRange`](metricreport/timerange.md) tells you the exact interval the report covers, and because each report reflects a full day’s worth of real usage, it’s more likely to encounter edge cases that are difficult to reproduce in a local test environment.
+MetricKit collects metric data continuously and delivers a [`MetricReport`](metricreport.md) about the previous 24 hours. The `MetricReport` is delivered, at most, once per day when conditions permit. The [`timeRange`](metricreport/timerange.md) tells you the exact interval the report covers, and because each report reflects a full day’s worth of real usage, it’s more likely to encounter edge cases that are difficult to reproduce in a local test environment. MetricKit delivers each [`DiagnosticReport`](diagnosticreport.md) immediately after the event occurs, so you can respond to crashes, hangs, and other diagnostic events without waiting for the daily metric report.
 
 #### Set Up a Metric Manager
 

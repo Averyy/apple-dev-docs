@@ -30,6 +30,8 @@ The default value is [`AVAudioUnitEQFilterType.parametric`](avaudiouniteqfiltert
   The bandwidth of the equalizer filter, in octaves.
 - [var bypass: Bool](avaudiouniteqfilterparameters/bypass.md)
   The bypass state of the equalizer filter band.
+- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+  Filter types available to use with the filter type property.
 - [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
   The frequency of the equalizer filter, in hertz.
 - [var gain: Float](avaudiouniteqfilterparameters/gain.md)

@@ -19,7 +19,7 @@ case captureVideo
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934530@2x.png)
+![Video capture icon](/images/com.apple.uikit/media-2934530@2x.png)
 
 ## See Also
 

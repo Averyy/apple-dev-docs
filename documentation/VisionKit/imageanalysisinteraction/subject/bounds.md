@@ -6,8 +6,8 @@
 A rectangle that identifies the extremities of a subject within an image in relation to the interaction view’s bounds.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - visionOS 1.0+
 

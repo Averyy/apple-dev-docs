@@ -26,20 +26,19 @@ class AVAudioUnitEQFilterParameters
 
 ## Topics
 
-### Getting and Setting Equalizer Filter Parameters
+### Configuring a filter band
 - [var bandwidth: Float](avaudiouniteqfilterparameters/bandwidth.md)
   The bandwidth of the equalizer filter, in octaves.
 - [var bypass: Bool](avaudiouniteqfilterparameters/bypass.md)
   The bypass state of the equalizer filter band.
 - [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
   The equalizer filter type.
+- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+  Filter types available to use with the filter type property.
 - [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
   The frequency of the equalizer filter, in hertz.
 - [var gain: Float](avaudiouniteqfilterparameters/gain.md)
   The gain of the equalizer filter, in decibels.
-### Constants
-- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
-  Filter types available to use with the filter type property.
 
 ## Relationships
 

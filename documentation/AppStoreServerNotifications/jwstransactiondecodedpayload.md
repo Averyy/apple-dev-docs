@@ -38,7 +38,7 @@ object JWSTransactionDecodedPayload
 - `commitmentInfo` (TransactionCommitmentInfo)
 - `environment` (environment): The server environment, either sandbox or production.
 - `expiresDate` (expiresDate): The UNIX time, in milliseconds, that the subscription expires or renews.
-- `inAppOwnershipType` (inAppOwnershipType): A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing.
+- `inAppOwnershipType` (inAppOwnershipType): A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing, an organization, or a group.
 - `isUpgraded` (isUpgraded): A Boolean value that indicates whether the customer upgraded to another subscription.
 - `offerDiscountType` (offerDiscountType): The payment mode a subscription offer uses such as Free Trial, or the payment mode that indicates a discount on a one-time purchase.
 - `offerIdentifier` (offerIdentifier): The identifier that contains the offer code or the promotional offer identifier.

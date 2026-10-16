@@ -27,22 +27,22 @@ This class is especially useful for differentiating between microphone configura
 
 ## Topics
 
-### Identifying a Data Source
+### Identifying a data source
 - [var dataSourceID: NSNumber](avaudiosessiondatasourcedescription/datasourceid.md)
   The system-assigned identifier for the data source.
 - [var dataSourceName: String](avaudiosessiondatasourcedescription/datasourcename.md)
   A human-readable name for the data source.
-### Retrieving the Data Source Location
+### Retrieving the data source location
 - [var location: AVAudioSession.Location?](avaudiosessiondatasourcedescription/location.md)
   The location of the data source on the device.
 - [AVAudioSession.Location](avaudiosession/location.md)
   Constants that describe the location of the data source on device.
-### Retrieving the Data Source Orientation
+### Retrieving the data source orientation
 - [var orientation: AVAudioSession.Orientation?](avaudiosessiondatasourcedescription/orientation.md)
   The orientation of the data source relative to the device’s natural orientation.
 - [AVAudioSession.Orientation](avaudiosession/orientation.md)
   Constants that indicate the directions in which a data source can point, relative to the device’s natural orientation.
-### Configuring Microphone Directivity
+### Configuring microphone directivity
 - [var selectedPolarPattern: AVAudioSession.PolarPattern?](avaudiosessiondatasourcedescription/selectedpolarpattern.md)
   The data source’s active polar pattern.
 - [var supportedPolarPatterns: [AVAudioSession.PolarPattern]?](avaudiosessiondatasourcedescription/supportedpolarpatterns.md)

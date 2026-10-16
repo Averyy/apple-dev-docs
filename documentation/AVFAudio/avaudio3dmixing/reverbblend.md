@@ -38,8 +38,12 @@ The default is `0.0`, and the range of valid values is `0.0` (completely dry) to
   A value that changes the playback rate of the input signal.
 - [var pointSourceInHeadMode: AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixing/pointsourceinheadmode.md)
   The in-head mode for a point source.
+- [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
+  The in-head modes for a point source.
 - [var sourceMode: AVAudio3DMixingSourceMode](avaudio3dmixing/sourcemode.md)
   The source mode for the input bus of the audio environment node.
+- [enum AVAudio3DMixingSourceMode](avaudio3dmixingsourcemode.md)
+  The source modes for the input bus of the audio environment node.
 
 
 ---

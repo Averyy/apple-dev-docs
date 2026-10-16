@@ -89,6 +89,8 @@ let entity = landmarkEntity.makeReference(
 ### Conforms To
 - [AppIntentTypeDefinition](appintenttypedefinition.md)
 - [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 - [Equatable](../swift/equatable.md)
 - [Escapable](../swift/escapable.md)
 - [Sendable](../swift/sendable.md)

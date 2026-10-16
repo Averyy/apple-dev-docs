@@ -25,13 +25,13 @@ enum InterruptionType
 
 ## Topics
 
-### Interruption Types
+### Creating an interruption type
+- [init?(rawValue: UInt)](avaudiosession/interruptiontype/init(rawvalue:).md)
+### Identifying interruption types
 - [AVAudioSession.InterruptionType.began](avaudiosession/interruptiontype/began.md)
   A type that indicates that the operating system began interrupting the audio session.
 - [AVAudioSession.InterruptionType.ended](avaudiosession/interruptiontype/ended.md)
   A type that indicates that the operating system ended interrupting the audio session.
-### Initializers
-- [init?(rawValue: UInt)](avaudiosession/interruptiontype/init(rawvalue:).md)
 
 ## Relationships
 

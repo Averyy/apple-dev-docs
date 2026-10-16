@@ -44,6 +44,8 @@ Use [`renderingCapabilitiesChangeNotification`](avaudiosession/renderingcapabili
   A notification the system posts when the rendering mode changes.
 - [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+  A notification the system posts when its spatial playback capabilities change.
 
 
 ---

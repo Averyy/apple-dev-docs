@@ -20,7 +20,7 @@ To return search results to the system, provide audio content in a format that A
 
 The following code snippet shows an entity that conforms to the `.audio.song` schema:
 
-```Swift
+```swift
 @AppEntity(schema: .audio.song)
 struct SongEntity {
     struct SongEntityQuery: EntityQuery {
@@ -44,7 +44,7 @@ To learn more about App Intents and app intent schemas, see [`Apple Intelligence
 
 When you create an app entity, you include a default query implementation. In the example above, the `SongEntityQuery` structure conforms to [`EntityQuery`](https://developer.apple.com/documentation/appintents/entityquery), the default protocol you use to provide app entities to the system. To let Siri respond to audio-search and playback requests, extend your entity query to conform to the [`IntentValueQuery`](https://developer.apple.com/documentation/appintents/intentvaluequery) protocol:
 
-```Swift
+```swift
 extension SongEntityQuery: IntentValueQuery {
     func values(for audioSearch: AudioSearch) async throws -> [SongEntity] {
         let foundSongs: [SongEntity]
@@ -64,7 +64,7 @@ People ask Siri to find and play audio content in a variety of ways, from specif
 
 The system classifies a person’s request and makes the classification available as the audio search’s [`criteria`](audiosearch/criteria-swift.property.md) property. The following code snippet shows how you might provide recommended content if a person doesn’t include specific information in their request, for example, if a person requests “Play some music”.
 
-```Swift
+```swift
 func findMatchingSongs(_ audioSearch: AudioSearch) async throws -> [SongEntity] {
     switch audioSearch.criteria {
     case .searchQuery(let query):

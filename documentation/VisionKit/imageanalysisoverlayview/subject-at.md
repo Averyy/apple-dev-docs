@@ -6,7 +6,7 @@
 Returns the subject at the given point within the overlay view’s image, if one exists.
 
 **Availability**:
-- macOS 13.0+
+- macOS 14.0+
 
 ## Declaration
 

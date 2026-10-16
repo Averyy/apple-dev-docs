@@ -6,8 +6,8 @@
 The axis of the split for a view within a split arrangement view.
 
 **Availability**:
-- iOS 27.1+ (Beta)
-- iPadOS 27.1+ (Beta)
+- iOS 27.1+
+- iPadOS 27.1+
 - Mac Catalyst 27.1+
 - macOS 27.1+
 - tvOS 27.1+

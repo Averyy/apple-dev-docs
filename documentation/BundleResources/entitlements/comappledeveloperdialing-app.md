@@ -29,6 +29,8 @@ Xcode displays the Default Dialer App entitlement, along with any other entitlem
 
 - [Default Calling App](entitlements/com.apple.developer.calling-app.md)
   A Boolean value that indicates whether an app can be the default calling app on someone’s device.
+- [com.apple.developer.conversation-accessibility](entitlements/com.apple.developer.conversation-accessibility.md)
+  A Boolean value that indicates whether the app can provide live assistance services, such as sign language interpreting or captioning, during FaceTime calls.
 
 
 ---

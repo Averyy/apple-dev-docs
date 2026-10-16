@@ -19,7 +19,7 @@ case date
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934527@2x.png)
+![Calendar icon](/images/com.apple.uikit/media-2934527@2x.png)
 
 ## See Also
 

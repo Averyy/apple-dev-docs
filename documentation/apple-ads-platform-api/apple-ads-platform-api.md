@@ -86,15 +86,15 @@ New to the API? Start with the workflow guides. [`Advertising Your App on the Ap
 - [Managing Keywords and Negative Keywords](keywords-and-negative-keywords.md)
   Create and manage keywords and negative keywords for ad groups and campaigns.
 - [Keywords Endpoints](keywords-endpoints.md)
-  Endpoints for creating, retrieving, updating, and deleting keywords.
+  Create, retrieve, update, query, and delete the keywords that match your ad group’s ads to searches.
 - [Negative Keywords Endpoints](negative-keywords-endpoints.md)
-  Endpoints for creating, retrieving, updating, and deleting negative keywords.
+  Create, retrieve, update, query, and delete negative keywords that block ads for unwanted searches.
 - [Keywords Data Objects](keywords-data-objects.md)
-  Request, response, and data objects for managing keywords in ad group campaigns.
+  Build keyword create and update requests, and read keyword responses and query results.
 - [Negative Keywords Data Objects](negative-keywords-objects.md)
-  Request and response objects for negative keyword endpoints.
+  Build negative keyword create and update requests, and read responses and query results.
 - [Keywords Shared Data Types](keywords-shared-data-types.md)
-  Shared enumerations used by keyword and negative keyword objects.
+  Set the status and match type of keywords and negative keywords, and interpret a keyword’s display status.
 ### Ads
 - [Ads Endpoints](ads-endpoints.md)
   Create, retrieve, update, and delete ads using these endpoints.
@@ -125,19 +125,19 @@ New to the API? Start with the workflow guides. [`Advertising Your App on the Ap
 - [Bulk Operations Endpoints](bulk-operations-endpoints.md)
   Create, update, and delete keywords and negative keywords in bulk through these endpoints.
 - [Bulk Data Objects](bulk-data-objects.md)
-  Use these objects to build bulk keyword and negative keyword requests and read their responses.
+  Build bulk keyword and negative keyword requests, and read per-item results.
 ### Budget Orders
 - [Budget Orders Endpoints](budget-orders-endpoints.md)
   Create, retrieve, update, and delete budget orders through these endpoints.
 - [Budget Order Data Objects](budget-orders-data-objects.md)
-  Use these objects to build budget order requests and read their responses.
+  Build budget order and campaign assignment requests, and read budget order and invoice detail responses.
 - [Budget Order Data Types](budget-orders-data-types.md)
   Track budget order status, status reasons, and payment model with these enumerated types.
 ### Reports
 - [Managing Reports](reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 - [App Store Reports Endpoints](apps-reports-endpoints.md)
-  Endpoints for retrieving App Store campaign, ad group, ad, keyword, and search term performance data.
+  Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
 - [Brands Reports Endpoints](brands-reports-endpoints.md)
   Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, and search terms.
 - [Apps Data Objects](apps-reports-objects.md)
@@ -145,7 +145,7 @@ New to the API? Start with the workflow guides. [`Advertising Your App on the Ap
 - [Brands Data Objects](brands-reports-objects.md)
   Explore the request, response, and metadata objects that Brands report endpoints use.
 - [Shared Objects](reports-shared-objects.md)
-  Shared request and response objects used across Apps and Brands report endpoints.
+  Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 ### Insights
 - [Insights Endpoints](insights-endpoints.md)
   Query impression share and search term popularity data for your apps.
@@ -153,16 +153,16 @@ New to the API? Start with the workflow guides. [`Advertising Your App on the Ap
   Build the request and response objects for impression share and search term popularity queries.
 ### Recommendations
 - [Recommendations Endpoints](recommendations-endpoints.md)
-  Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
+  Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 - [Recommendations Data Objects](recommendations-data-objects.md)
-  Request and response objects for recommendation endpoints.
+  Read budget and Target CPA recommendations and their history, and build the requests that apply them.
 - [Recommendations Query and Filter Objects](recommendations-query-filter-objects.md)
-  Query, filter, pagination, and sorting objects for recommendation requests.
+  Filter, sort, and paginate recommendation queries by status, state, and category.
 ### Suggestions
 - [Suggestions Endpoints](suggestions-endpoints.md)
-  Endpoints for querying keyword, phrase, category, and Target CPA suggestions.
+  Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
 - [Suggestions Data Objects](suggestions-data-objects.md)
-  Response objects for keyword, phrase, category, and Target CPA suggestion endpoints.
+  Read the keyword, phrase, category, and Target CPA suggestions that the suggestions endpoints return.
 ### Change History
 - [Change History Endpoints](change-history-endpoints.md)
   Query audit summaries and retrieve change detail records for entities in an ad account.

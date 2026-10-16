@@ -54,7 +54,8 @@ Parameters:
 **betas** (*Tuple**[*[float](https://docs.python.org/3/builtins/functions.html#float)*, *[float](https://docs.python.org/3/builtins/functions.html#float)*]**, **optional*) – The coefficients
 \((\beta_1, \beta_2)\) used for computing the gradient
 momentum and update direction. Default: `(0.9, 0.99)`
-**weight_decay** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The weight decay \(\lambda\). Default: `0.0`
+**weight_decay** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The weight decay \(\lambda\). Default:
+`0.0`
 
 Methods
 

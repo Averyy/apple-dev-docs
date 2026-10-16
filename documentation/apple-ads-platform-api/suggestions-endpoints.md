@@ -2,7 +2,7 @@
 
 **Framework**: Apple Ads Platform API
 
-Endpoints for querying keyword, phrase, category, and Target CPA suggestions.
+Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
@@ -96,13 +96,13 @@ Use `SUGGESTION` when building a keyword list from scratch. Use `SEARCH` to chec
 ## See Also
 
 - [Recommendations Endpoints](recommendations-endpoints.md)
-  Endpoints for querying, applying, and dismissing budget and Target CPA recommendations.
+  Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 - [Managing Reports](reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 - [Insights Endpoints](insights-endpoints.md)
   Query impression share and search term popularity data for your apps.
 - [Suggestions Data Objects](suggestions-data-objects.md)
-  Response objects for keyword, phrase, category, and Target CPA suggestion endpoints.
+  Read the keyword, phrase, category, and Target CPA suggestions that the suggestions endpoints return.
 
 
 ---

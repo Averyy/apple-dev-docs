@@ -19,7 +19,7 @@ case alarm
 
 #### Discussion
 
-![None](/images/com.apple.uikit/media-2934533@2x.png)
+![Alarm clock icon](/images/com.apple.uikit/media-2934533@2x.png)
 
 ## See Also
 

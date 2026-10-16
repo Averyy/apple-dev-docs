@@ -33,8 +33,14 @@ One of the status codes from [`AVAudioEngineManualRenderingStatus`](avaudioengin
 
 - [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md)
   Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
+- [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
+  The two modes for manual rendering.
 - [func disableManualRenderingMode()](avaudioengine/disablemanualrenderingmode.md)
   Sets the engine to render to or from an audio device.
+- [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
+  Status codes that return from the render call to the engine operating in manual rendering mode.
+- [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
+  Constants that describe error codes that the framework returns from manual rendering mode methods.
 
 
 ---

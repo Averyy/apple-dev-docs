@@ -1,4 +1,4 @@
-# Xcode 27.1 RC Release Notes
+# Xcode 27.1 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 27.1 RC includes Swift 6.4 and SDKs for iOS 27.1, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27.1 RC supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27.1 RC requires a Mac running macOS Tahoe 26.6 or later.
+Xcode 27.1 includes Swift 6.4 and SDKs for iOS 27.1, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27.1 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27.1 requires a Mac running macOS Tahoe 26.6 or later.
 
 See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
@@ -33,7 +33,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ## See Also
 
-- [Xcode 27.2 Beta 2 Release Notes](xcode-27_2-release-notes.md)
+- [Xcode 27.2 Beta 3 Release Notes](xcode-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 27 Release Notes](xcode-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

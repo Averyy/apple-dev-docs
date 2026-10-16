@@ -27,13 +27,13 @@ All of the methods in this protocol are optional.
 
 ## Topics
 
-### Responding to Playback Completion
+### Responding to playback completion
 - [func audioPlayerDidFinishPlaying(AVAudioPlayer, successfully: Bool)](avaudioplayerdelegate/audioplayerdidfinishplaying(_:successfully:).md)
   Tells the delegate when the audio finishes playing.
-### Responding to Audio Decoding Errors
+### Responding to audio decoding errors
 - [func audioPlayerDecodeErrorDidOccur(AVAudioPlayer, error: (any Error)?)](avaudioplayerdelegate/audioplayerdecodeerrordidoccur(_:error:).md)
   Tells the delegate when an audio player encounters a decoding error during playback.
-### Responding to Audio Interruptions
+### Responding to audio interruptions
 - [func audioPlayerBeginInterruption(AVAudioPlayer)](avaudioplayerdelegate/audioplayerbegininterruption(_:).md)
   Tells the delegate when the system interrupts the audio player’s playback.
 - [func audioPlayerEndInterruption(AVAudioPlayer)](avaudioplayerdelegate/audioplayerendinterruption(_:).md)

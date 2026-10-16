@@ -26,7 +26,7 @@ enum AuthorizationType
   The authorization for camera access.
 ### Enumeration Cases
 - [ARKitSession.AuthorizationType.accessoryTracking](arkitsession/authorizationtype/accessorytracking.md)
-  Accessory Tracking
+  The authorization for access to accessory tracking data.
 ### Instance Properties
 - [var description: String](arkitsession/authorizationtype/description.md)
   A textual representation of AuthorizationType

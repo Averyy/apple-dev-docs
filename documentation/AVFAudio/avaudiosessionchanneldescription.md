@@ -25,7 +25,7 @@ class AVAudioSessionChannelDescription
 
 ## Topics
 
-### Getting the Channel Information
+### Getting the channel information
 - [var channelName: String](avaudiosessionchanneldescription/channelname.md)
   The descriptive name for the channel.
 - [var channelNumber: Int](avaudiosessionchanneldescription/channelnumber.md)
