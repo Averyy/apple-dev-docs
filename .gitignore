@@ -17,6 +17,7 @@ venv/
 env/
 ENV/
 .venv
+/.venv-scrape/
 uv.lock
 pip-log.txt
 pip-delete-this-directory.txt

@@ -13,26 +13,50 @@ Usage:
     python scripts/scrape_hig_docs.py
     python scripts/scrape_hig_docs.py --dry-run
     python scripts/scrape_hig_docs.py --force  # Re-download all files
+
+Failures follow the policy shared with the MLX and Swift scrapers
+(utilities/source_policy.py): requests are retried; a page Apple no longer
+links, or that returns 404/410, is removed at once; other failures and
+convert/save errors keep the page's file and block the orphan cleanup for up
+to 3 runs; the root page follows the configured-root rules (404/410 keeps
+every file for that run and removes them on the 2nd consecutive run; any
+other failure keeps them until it recovers). The orphan cleanup uses
+confirm-then-delete for mass removals (pending_orphans in the hash file's
+metadata).
+
+Exit codes: 0 clean (removals and valve holds included); 1 an error of ours
+(a blocked cleanup, a failed root, a persistent failure, a failed save, an
+unexpected exception); 130 interrupted.
 """
 
 import argparse
 import asyncio
 import json
 import logging
-import os
 import re
 import sys
 import time
 from collections import deque
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple, Union
 
 import httpx
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 
-from utilities.hash_utils import compute_hash
+from utilities.hash_utils import HashFileError, compute_hash, read_hash_file, save_hashes, write_text_atomic
+from utilities.source_policy import (
+    FAILURE_COUNTS_KEY,
+    PENDING_ORPHANS_KEY,
+    CleanupResult,
+    FetchFailed,
+    KeptLocation,
+    ScrapeRun,
+    fetch_with_retry,
+    has_file_named,
+    policy_metadata,
+)
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -71,6 +95,9 @@ HIG_IDENTIFIER_PATTERNS = [
     "/design/Human-Interface-Guidelines",
 ]
 
+# Hash-file metadata the failure policy keeps (saved whenever it changes)
+POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY)
+
 
 class HIGDocsScraper:
     """Scraper for Apple Human Interface Guidelines using JSON API."""
@@ -87,11 +114,22 @@ class HIGDocsScraper:
         # Hash management for incremental updates
         self.hashes: Dict[str, Dict] = {}
         self.hashes_modified = False
+        self.stored_metadata: Dict[str, Any] = {}
+        self.load_error: Optional[str] = None
+        # The file is still in the old flat format (no metadata): the next save converts it
+        self.flat_hash_file = False
+
+        # The run's failures and cleanup (utilities/source_policy.py), and its
+        # policy metadata once the scrape completed (else the stored one is kept)
+        self.run: Optional[ScrapeRun] = None
+        self.final_metadata: Optional[Dict[str, Any]] = None
+        self.exit_code = 1
 
         # Statistics
-        self.stats = {
+        self.stats: Dict[str, Any] = {
             "pages_scraped": 0,
             "pages_skipped": 0,
+            "pages_gone": 0,
             "pages_failed": 0,
             "start_time": None,
             "end_time": None
@@ -100,7 +138,7 @@ class HIGDocsScraper:
         # Topic hierarchy for organized file structure
         self.topic_hierarchy: Dict[str, Dict] = {}
 
-    async def __aenter__(self):
+    async def __aenter__(self) -> "HIGDocsScraper":
         """Async context manager entry."""
         self.session = httpx.AsyncClient(
             timeout=REQUEST_TIMEOUT,
@@ -110,80 +148,117 @@ class HIGDocsScraper:
         self._load_hashes()
         return self
 
-    async def __aexit__(self, exc_type, exc_val, exc_tb):
-        """Async context manager exit."""
+    async def __aexit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
+        """Async context manager exit: save the page hashes of an interrupted
+        run (a completed run saved already); its counters stay as stored."""
         if self.session:
             await self.session.aclose()
-        self._save_hashes()
+        if self.final_metadata is None:
+            self._save_hashes()
 
-    def _load_hashes(self):
-        """Load stored hashes for incremental updates."""
+    def _load_hashes(self) -> None:
+        """Load stored hashes (and metadata) for incremental updates.
+
+        Reads both the shared {"metadata", "hashes"} format and the old flat
+        dict. A file that can't be read loads as empty, with the error: the
+        run then blocks its cleanup and its save replaces the file.
+        """
+        try:
+            self.hashes, self.stored_metadata = read_hash_file(HASH_FILE)
+        except HashFileError as e:
+            logger.warning(f"Could not load hash file: {e}")
+            self.hashes, self.stored_metadata, self.load_error = {}, {}, str(e)
+            return
+        self.flat_hash_file = HASH_FILE.exists() and not self.stored_metadata
         if HASH_FILE.exists():
-            try:
-                with open(HASH_FILE, 'r') as f:
-                    self.hashes = json.load(f)
-                logger.info(f"Loaded {len(self.hashes)} existing hashes")
-            except Exception as e:
-                logger.warning(f"Could not load hash file: {e}")
-                self.hashes = {}
-        else:
-            self.hashes = {}
+            logger.info(f"Loaded {len(self.hashes)} existing hashes")
 
-    def _save_hashes(self):
-        """Save hashes for next run."""
-        if self.hashes_modified and not self.dry_run:
-            try:
-                HASH_FILE.parent.mkdir(parents=True, exist_ok=True)
-                with open(HASH_FILE, 'w') as f:
-                    json.dump(self.hashes, f, indent=2)
-                logger.info(f"Saved {len(self.hashes)} hashes")
-            except Exception as e:
-                logger.error(f"Could not save hash file: {e}")
+    def _save_hashes(self) -> bool:
+        """Save hashes for next run, in the shared format with this run's
+        policy metadata, whenever either changed.
+
+        Returns:
+            False if the save failed
+        """
+        if self.dry_run:
+            return True
+        metadata = (self.final_metadata if self.final_metadata is not None
+                    else policy_metadata(self.stored_metadata, POLICY_KEYS))
+        if not (self.hashes_modified or self.flat_hash_file or self.load_error is not None
+                or metadata != policy_metadata(self.stored_metadata, POLICY_KEYS)):
+            return True
+        if not save_hashes(HASH_FILE, self.hashes, source="scrape_hig_docs.py", metadata=metadata):
+            return False
+        logger.info(f"Saved {len(self.hashes)} hashes")
+        return True
 
     def _compute_hash(self, content: str) -> str:
         """Compute SHA-256 hash of content."""
         return compute_hash(content)
 
-    def _has_changed(self, url: str, content: str) -> bool:
-        """Check if content has changed since last scrape."""
-        if self.force:
+    def _has_changed(self, url: str, content: str, file_path: Path) -> bool:
+        """Check if content has changed since last scrape (or its file is missing)."""
+        if self.force or not file_path.exists():
             return True
 
         new_hash = self._compute_hash(content)
         old_data = self.hashes.get(url, {})
         old_hash = old_data.get('hash', '')
 
-        return new_hash != old_hash
+        return bool(new_hash != old_hash)
 
-    def _update_hash(self, url: str, content: str, file_path: Path):
+    def _previously_good(self, url: str, file_path: Path) -> bool:
+        """We have this page: a hash entry with its content hash and file, or
+        its file on disk under exactly its name (a hash file that was lost or
+        couldn't be read loses entries, not files)."""
+        entry = self.hashes.get(url)
+        if isinstance(entry, dict) and bool(entry.get('hash')) and bool(entry.get('file_path')):
+            return True
+        return has_file_named(file_path)
+
+    def _update_hash(self, url: str, content: str, file_path: Path) -> None:
         """Update hash for a URL."""
         self.hashes[url] = {
             'hash': self._compute_hash(content),
             'file_path': str(file_path),
-            'last_updated': datetime.utcnow().isoformat()
+            # Naive UTC, as utcnow() wrote it (deprecated on the scrape workflow's Python 3.12)
+            'last_updated': datetime.now(timezone.utc).replace(tzinfo=None).isoformat()
         }
         self.hashes_modified = True
 
-    async def fetch_json(self, url: str) -> Optional[Dict]:
-        """Fetch and parse JSON from URL."""
-        if not self.session:
+    async def fetch_json(self, url: str) -> Union[Dict[str, Any], FetchFailed]:
+        """Fetch and parse JSON from URL, retrying transient failures.
+
+        Returns:
+            The JSON object, or FetchFailed with the status: 404/410 is a
+            removal; a body that isn't a JSON object is a transient failure
+        """
+        session = self.session
+        if not session:
             raise RuntimeError("Scraper must be used as async context manager")
 
         await asyncio.sleep(REQUEST_DELAY)
 
-        try:
-            response = await self.session.get(url)
-            response.raise_for_status()
-            return response.json()
-        except httpx.HTTPStatusError as e:
-            if e.response.status_code == 404:
+        async def attempt() -> Tuple[int, Optional[str], str]:
+            response = await session.get(url)
+            return response.status_code, response.headers.get("Retry-After"), response.text
+
+        # RequestError: timeouts, network and protocol errors, redirect loops, undecodable bodies
+        body = await fetch_with_retry(attempt, url, (httpx.RequestError,))
+        if isinstance(body, FetchFailed):
+            if body.gone:
                 logger.debug(f"Not found: {url}")
             else:
-                logger.warning(f"HTTP error {e.response.status_code} for {url}")
-            return None
-        except Exception as e:
-            logger.error(f"Error fetching {url}: {e}")
-            return None
+                logger.warning(f"Error fetching {url}: {body.error}")
+            return body
+        try:
+            data = json.loads(body)
+        except ValueError:
+            data = None
+        if not isinstance(data, dict):
+            logger.warning(f"Invalid JSON from {url}")
+            return FetchFailed(status=200, error="invalid json", transient=True)
+        return data
 
     def _convert_url_to_local_path(self, url: str) -> str:
         """Convert a URL to a local markdown path.
@@ -775,38 +850,45 @@ class HIGDocsScraper:
         Args:
             json_url: URL of the JSON file
             data: Optional pre-fetched JSON data to avoid duplicate requests
+
+        Returns:
+            True if the page's file was written
+
+        Raises:
+            Exception: The page failed to convert or save (an error of ours;
+                its hash entry is left as it was)
         """
-        if json_url in self.processed_urls:
+        if json_url in self.processed_urls and data is None:
             return False
 
         self.processed_urls.add(json_url)
 
         # Use pre-fetched data or fetch now
         if data is None:
-            data = await self.fetch_json(json_url)
-            if not data:
-                self.stats['pages_failed'] += 1
+            fetched = await self.fetch_json(json_url)
+            if isinstance(fetched, FetchFailed):
+                self.stats['pages_gone' if fetched.gone else 'pages_failed'] += 1
                 return False
+            data = fetched
 
         # Convert to markdown
         content = json.dumps(data)  # For hash checking
 
-        # Check if content has changed
-        if not self._has_changed(json_url, content):
-            self.stats['pages_skipped'] += 1
-            return False
-
         # Get file path
         file_path = self._get_file_path(json_url, data)
+
+        # Check if content has changed (or its file is missing)
+        if not self._has_changed(json_url, content, file_path):
+            self.stats['pages_skipped'] += 1
+            return False
 
         # Convert to markdown
         markdown = self._extract_to_markdown(data, json_url)
 
-        # Save file
+        # Save file (whole or not at all: a failed write keeps the old doc)
         if not self.dry_run:
             file_path.parent.mkdir(parents=True, exist_ok=True)
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(markdown)
+            write_text_atomic(file_path, markdown)
 
             # Update hash
             self._update_hash(json_url, content, file_path)
@@ -814,9 +896,24 @@ class HIGDocsScraper:
         self.stats['pages_scraped'] += 1
         return True
 
-    async def scrape_all(self):
-        """Scrape all HIG documentation."""
+    def _prune_hashes(self, run: ScrapeRun) -> int:
+        """After a clean run, drop the hash entries of deleted files: pages
+        this run didn't produce or keep whose file is gone. Returns how many."""
+        stale = [
+            url for url in self.hashes
+            if url not in run.produced and not run.keeps_key(url) and not self._get_file_path(url, {}).exists()
+        ]
+        for url in stale:
+            del self.hashes[url]
+        if stale:
+            self.hashes_modified = True
+        return len(stale)
+
+    async def scrape_all(self) -> None:
+        """Scrape all HIG documentation, clean up orphans and save (sets exit_code)."""
         self.stats['start_time'] = time.time()
+        run = ScrapeRun("HIG", OUTPUT_DIR.parent, self.stored_metadata, self.load_error)
+        self.run = run
 
         console.print(f"[bold blue]Apple Human Interface Guidelines Scraper[/bold blue]")
         console.print(f"Output: {OUTPUT_DIR}")
@@ -850,26 +947,60 @@ class HIGDocsScraper:
 
                 if json_url in self.processed_urls:
                     continue
+                self.processed_urls.add(json_url)
+                file_path = self._get_file_path(json_url, {})
 
                 # Fetch page
                 data = await self.fetch_json(json_url)
-                if not data:
-                    self.processed_urls.add(json_url)
-                    self.stats['pages_failed'] += 1
+                if isinstance(data, FetchFailed):
+                    self.stats['pages_gone' if data.gone else 'pages_failed'] += 1
+                    if json_url == root_url:
+                        # The root: nothing else is reached this run; every key and file stays
+                        run.source_failed(json_url, data, KeptLocation(OUTPUT_DIR, reason=""), key_prefix="")
+                    elif run.page_failed(json_url, data, previously_good=self._previously_good(json_url, file_path)):
+                        run.keep_file(json_url, file_path)
                     continue
+                if json_url == root_url:
+                    run.source_ok(json_url)
+                run.page_ok(json_url, file_path)
 
-                # Process and save (pass pre-fetched data to avoid duplicate request)
-                await self.scrape_page(json_url, data=data)
-
-                # Extract child URLs and add to queue
-                child_urls = self._extract_urls_from_json(data)
+                # Links first: queue the children before converting, so a page
+                # that fails to convert or save still leads to them
+                try:
+                    child_urls = self._extract_urls_from_json(data)
+                except Exception as e:
+                    self.stats['pages_failed'] += 1
+                    run.unprocessed(json_url, file_path, f"{type(e).__name__}: {e}")
+                    continue
                 for child_url in child_urls:
                     if child_url not in self.processed_urls:
                         url_queue.append(child_url)
 
+                # Process and save (pass pre-fetched data to avoid duplicate request)
+                try:
+                    await self.scrape_page(json_url, data=data)
+                except Exception as e:
+                    self.stats['pages_failed'] += 1
+                    run.local_error(json_url, file_path, f"{type(e).__name__}: {e}")
+                else:
+                    run.page_saved(json_url)
+
                 # Update progress
-                total_processed = self.stats['pages_scraped'] + self.stats['pages_skipped'] + self.stats['pages_failed']
+                total_processed = (self.stats['pages_scraped'] + self.stats['pages_skipped'] + self.stats['pages_gone']
+                                   + self.stats['pages_failed'])
                 progress.update(task, completed=total_processed, description=f"Scraping HIG... (queue: {len(url_queue)})")
+
+        # Clean up orphaned files (pages Apple no longer links, or that
+        # returned 404/410), unless a failure of ours blocks it
+        cleanup: CleanupResult = run.cleanup([OUTPUT_DIR], dry_run=self.dry_run)
+        pruned = 0
+        if not cleanup.skipped and not self.dry_run:
+            pruned = self._prune_hashes(run)
+
+        # Save whenever the hashes or the failure policy's metadata changed
+        self.final_metadata = run.metadata(self.hashes)
+        if not self._save_hashes():
+            run.error(f"hash_save_failed: {HASH_FILE}")
 
         self.stats['end_time'] = time.time()
 
@@ -879,11 +1010,21 @@ class HIGDocsScraper:
         console.print("[bold green]Scraping Complete![/bold green]")
         console.print(f"  Scraped: {self.stats['pages_scraped']}")
         console.print(f"  Skipped (unchanged): {self.stats['pages_skipped']}")
+        if self.stats['pages_gone']:
+            console.print(f"  Gone (404/410): {self.stats['pages_gone']}")
         console.print(f"  Failed: {self.stats['pages_failed']}")
+        if cleanup.deleted:
+            console.print(f"  Deleted (orphaned): {len(cleanup.deleted)}")
+        if pruned:
+            console.print(f"  Pruned hash entries: {pruned}")
+        for line in run.summary_lines(cleanup):
+            console.print(f"  {line}", markup=False)
         console.print(f"  Duration: {duration:.1f}s")
 
+        self.exit_code = run.exit_code()
 
-async def main():
+
+async def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape Apple Human Interface Guidelines")
     parser.add_argument('--dry-run', action='store_true', help="Don't write files, just show what would be done")
     parser.add_argument('--force', action='store_true', help="Re-download all files regardless of cache")
@@ -891,7 +1032,12 @@ async def main():
 
     async with HIGDocsScraper(force=args.force, dry_run=args.dry_run) as scraper:
         await scraper.scrape_all()
+    return scraper.exit_code
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        sys.exit(asyncio.run(main()))
+    except KeyboardInterrupt:
+        console.print("\n[yellow]Interrupted[/yellow]")
+        sys.exit(130)

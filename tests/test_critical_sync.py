@@ -218,7 +218,11 @@ class TestHashManager:
         print("✓ ETag unchanged detection test passed")
         
     def test_etag_comparison_when_changed(self):
-        """Test ETag comparison detects changed content."""
+        """Test a changed ETag falls through to the content hash.
+
+        Apple's CDN can regenerate ETags without changing the content, so a
+        new ETag means changed only when the content hash differs too.
+        """
         url = "https://example.com/test.json"
         content = "test content"
         old_etag = 'W/"abc123"'
@@ -227,8 +231,10 @@ class TestHashManager:
         # Store initial hash with ETag
         self.hash_manager.update_hash(url, content, old_etag)
         
-        # Check with different ETag - should be changed
-        assert self.hash_manager.has_changed(url, content, new_etag)
+        # Different ETag, same content - unchanged
+        assert not self.hash_manager.has_changed(url, content, new_etag)
+        # Different ETag and different content - changed
+        assert self.hash_manager.has_changed(url, "changed content", new_etag)
         print("✓ ETag change detection test passed")
 
 

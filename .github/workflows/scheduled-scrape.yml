@@ -26,35 +26,53 @@ jobs:
       - name: Check disk space
         run: df -h
 
+      # Python 3.12 for wafer-py (requirements-scrape.txt, the MLX Sphinx pages);
+      # the Docker image stays on 3.11 and never installs that file.
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           cache: 'pip'
+          cache-dependency-path: |
+            requirements.txt
+            requirements-scrape.txt
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt -r requirements-scrape.txt
 
+      # The five scrape steps continue on error, so one scraper's failure never
+      # blocks the others or the commit of their doc updates; the last step
+      # (Fail if a scrape step failed) fails the run from their outcomes.
       - name: Clean up removed frameworks
+        id: cleanup_removed
+        continue-on-error: true  # exits 1 when technologies.json can't be fetched
         run: python scripts/utilities/cleanup_removed_frameworks.py --yes
 
       # === Apple Developer Documentation ===
       - name: Run Apple frameworks scraper
+        id: apple
+        continue-on-error: true
         timeout-minutes: 330
         run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
 
       - name: Run Swift language docs scraper
+        id: swift
+        continue-on-error: true
         timeout-minutes: 15
         run: python scripts/scrape_swift_docs.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run HIG (Human Interface Guidelines) scraper
+        id: hig
+        continue-on-error: true
         timeout-minutes: 10
         run: python scripts/scrape_hig_docs.py
 
       # === ML Documentation (MLX, coremltools, etc.) ===
       - name: Run MLX/coremltools docs scraper
+        id: mlx
+        continue-on-error: true
         timeout-minutes: 60
         run: python scripts/scrape_mlx_docs.py
         env:
@@ -169,14 +187,41 @@ jobs:
           echo "### Disk Usage" >> $GITHUB_STEP_SUMMARY
           df -h | grep -E '^/dev|Filesystem' >> $GITHUB_STEP_SUMMARY
 
-      # Last step: runs after the commit, deploy and summary so it can never block
-      # doc updates; it only fails the run if .gitignore is silently dropping scraped docs.
+      # Runs after the commit, deploy and summary so it can never block doc
+      # updates; it only fails the run if .gitignore is silently dropping scraped docs.
+      # A *.tmp file is a doc write's temp file (left only if its step was killed
+      # mid-write), never a doc.
       - name: Check no docs are git-ignored
         run: |
-          IGNORED=$(git ls-files --others --ignored --exclude-standard -- documentation)
+          IGNORED=$(git ls-files --others --ignored --exclude-standard -- documentation ':(exclude)*.tmp')
           if [ -n "$IGNORED" ]; then
             echo "::error::$(echo "$IGNORED" | wc -l | xargs) documentation files are ignored by .gitignore and never committed"
             echo "$IGNORED" | head -50
             exit 1
           fi
           echo "No ignored documentation files"
+
+      # Last step, always run: fails the run if any scrape step failed. It reads
+      # each step's outcome, since with continue-on-error its conclusion is
+      # always success (a step skipped because an earlier step failed counts too).
+      - name: Fail if a scrape step failed
+        if: always()
+        env:
+          CLEANUP_REMOVED: ${{ steps.cleanup_removed.outcome }}
+          APPLE: ${{ steps.apple.outcome }}
+          SWIFT: ${{ steps.swift.outcome }}
+          HIG: ${{ steps.hig.outcome }}
+          MLX: ${{ steps.mlx.outcome }}
+        run: |
+          FAILED=""
+          [ "$CLEANUP_REMOVED" = "success" ] || FAILED="$FAILED cleanup_removed_frameworks=$CLEANUP_REMOVED"
+          [ "$APPLE" = "success" ] || FAILED="$FAILED apple=$APPLE"
+          [ "$SWIFT" = "success" ] || FAILED="$FAILED swift=$SWIFT"
+          [ "$HIG" = "success" ] || FAILED="$FAILED hig=$HIG"
+          [ "$MLX" = "success" ] || FAILED="$FAILED mlx=$MLX"
+          if [ -n "$FAILED" ]; then
+            echo "::error::Scrape steps that didn't succeed:$FAILED (see each step's log)"
+            echo "**Failed scrape steps:**$FAILED" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "All scrape steps succeeded"

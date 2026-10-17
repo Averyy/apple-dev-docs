@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 """Unit tests for hash utilities module."""
 
+import errno
 import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 from utilities.hash_utils import (
+    HashFileError,
     compute_hash,
     compute_file_hash,
     has_content_changed,
     load_hashes,
+    load_metadata,
+    read_hash_file,
     save_hashes,
+    write_text_atomic,
 )
 
 
@@ -164,6 +170,93 @@ class TestHashUtils(unittest.TestCase):
         hash_file = Path(self.temp_dir) / "deep" / "nested" / "dir" / "hashes.json"
         save_hashes(hash_file, {"test": "hash"})
         self.assertTrue(hash_file.exists())
+
+    # ==========================================================================
+    # metadata= / load_metadata / read_hash_file tests
+    # ==========================================================================
+
+    def test_metadata_keys_are_preserved_as_given(self):
+        """Every metadata= key is written as given and read back by load_metadata."""
+        hash_file = Path(self.temp_dir) / "hashes.json"
+        extra = {
+            "sources": {"MLX": "MLX", "coremltools": "coremltools"},
+            "failure_counts": {"MLX:https://x/a.html": {"fail": 2}},
+            "pending_orphans": ["MLX/a.md"],
+            "render": {"version": 3},
+        }
+        self.assertTrue(save_hashes(hash_file, {"k": "h"}, source="s.py", metadata=extra))
+        metadata = load_metadata(hash_file)
+        for key, value in extra.items():
+            self.assertEqual(metadata[key], value)
+        self.assertEqual(metadata["source"], "s.py")
+        self.assertEqual(metadata["total_files"], 1)
+        self.assertEqual(load_hashes(hash_file), {"k": "h"})
+
+    def test_run_metadata_keys_cannot_be_overridden(self):
+        hash_file = Path(self.temp_dir) / "hashes.json"
+        save_hashes(hash_file, {"k": "h"}, source="s.py", metadata={"total_files": 99, "source": "other"})
+        metadata = load_metadata(hash_file)
+        self.assertEqual(metadata["total_files"], 1)
+        self.assertEqual(metadata["source"], "s.py")
+
+    def test_a_key_left_out_is_dropped(self):
+        hash_file = Path(self.temp_dir) / "hashes.json"
+        save_hashes(hash_file, {}, metadata={"pending_orphans": ["a.md"]})
+        save_hashes(hash_file, {}, metadata={})
+        self.assertNotIn("pending_orphans", load_metadata(hash_file))
+
+    def test_load_metadata_of_flat_missing_and_corrupt_files(self):
+        hash_file = Path(self.temp_dir) / "hashes.json"
+        self.assertEqual(load_metadata(hash_file), {})
+        hash_file.write_text(json.dumps({"a": {"hash": "x"}}))
+        self.assertEqual(load_metadata(hash_file), {})
+        hash_file.write_text("{{{")
+        self.assertEqual(load_metadata(hash_file), {})
+
+    def test_read_hash_file_raises_on_unreadable_files(self):
+        """Invalid JSON, invalid UTF-8 and the wrong shape raise; load_hashes logs and returns {}."""
+        hash_file = Path(self.temp_dir) / "hashes.json"
+        for content in (b"{{{", b"\xff\xfe\x00 not utf-8", b"[1, 2]", b'{"hashes": [1], "metadata": {}}'):
+            hash_file.write_bytes(content)
+            with self.assertRaises(HashFileError):
+                read_hash_file(hash_file)
+            self.assertEqual(load_hashes(hash_file), {})
+        self.assertEqual(read_hash_file(Path(self.temp_dir) / "missing.json"), ({}, {}))
+
+    def test_save_is_atomic_and_reports_failure(self):
+        """A failed save leaves the old file intact (no temp file left) and returns False."""
+        hash_file = Path(self.temp_dir) / "hashes.json"
+        save_hashes(hash_file, {"k": "old"})
+        before = hash_file.read_text()
+        self.assertFalse(save_hashes(hash_file, {"k": object()}))  # not JSON-serializable
+        self.assertEqual(hash_file.read_text(), before)
+        self.assertEqual(sorted(p.name for p in Path(self.temp_dir).iterdir()), ["hashes.json"])
+        blocked = Path(self.temp_dir) / "file-not-dir"
+        blocked.write_text("x")
+        self.assertFalse(save_hashes(blocked / "hashes.json", {"k": "h"}))
+
+    def test_write_text_atomic(self):
+        """Whole or not at all: a write that fails part way keeps the old file, with no temp file left."""
+        doc = Path(self.temp_dir) / "page.md"
+        write_text_atomic(doc, "# old\n")
+        write_text_atomic(doc, "# new ü\n")
+        self.assertEqual(doc.read_text(encoding="utf-8"), "# new ü\n")
+        write_text = Path.write_text
+
+        def disk_full(path, data, *args, **kwargs):
+            write_text(path, data[:3], *args, **kwargs)
+            raise OSError(errno.ENOSPC, "No space left on device")
+
+        with mock.patch.object(Path, "write_text", disk_full):
+            with self.assertRaises(OSError):
+                write_text_atomic(doc, "# newer\n")
+        self.assertEqual(doc.read_text(encoding="utf-8"), "# new ü\n")
+        self.assertEqual(sorted(p.name for p in Path(self.temp_dir).iterdir()), ["page.md"])
+        # A name with no room for the ".tmp" suffix gets a short temp name
+        long_doc = Path(self.temp_dir) / ("a" * 250 + ".md")
+        write_text_atomic(long_doc, "# long\n")
+        self.assertEqual(long_doc.read_text(), "# long\n")
+        self.assertEqual(sorted(p.name for p in Path(self.temp_dir).iterdir()), sorted([long_doc.name, "page.md"]))
 
     # ==========================================================================
     # has_content_changed tests

@@ -42,7 +42,6 @@ class Config:
     INTRA_FRAMEWORK_CONCURRENCY = max(1, int(os.getenv("INTRA_FRAMEWORK_CONCURRENCY", "1")))
 
     # Development settings
-    DEBUG = os.getenv("DEBUG", "false").lower() == "true"
     TEST_MODE = os.getenv("TEST_MODE", "false").lower() == "true"
     DRY_RUN = os.getenv("DRY_RUN", "false").lower() == "true"
     

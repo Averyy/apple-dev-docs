@@ -46,7 +46,8 @@ curl -X POST https://xdocs.dev/mcp \
 **Container healthcheck:** Docker health curls the MCP app itself (`localhost:$HTTP_PORT/health`) with `Host: ${ALLOWED_HOSTS%%,*}`, so app-level failures (e.g. Host header rejection) show as `unhealthy` in `docker ps`. During a full reindex the app returns 503 below the serving threshold, so the container honestly reports unhealthy until the index is ready — that's intentional, not a bug.
 
 **Health endpoint timestamps:**
-- `last_docs_change` - When docs were last updated (most recent file mtime)
+- `docs_updated` - When docs were last changed (last git commit to `documentation/`, set at image build time)
+- `last_indexed` - When Meilisearch indexing last completed
 - `last_index_full` - When Meilisearch full rebuild ran
 - `image_built` - When Docker image was created
 
@@ -120,10 +121,19 @@ Load via `ToolSearch("fetchaller")` first. Use `mcp__fetchaller__browse_reddit` 
 Python is managed via **uv** (see `~/Code/CLAUDE.md` for global setup).
 
 ```bash
-# Create venv and install dependencies
+# Create venv and install dependencies: the MCP server, the indexer and mcp-server/tests
+# run on Python 3.11 with both files, as in the Docker image
 uv venv --python 3.11
 source .venv/bin/activate
-uv pip install -r requirements.txt
+uv pip install -r requirements.txt -r mcp-server/requirements.txt
+
+# The scrapers and the tests in tests/ and scripts/tests/ run on Python 3.12, as the
+# scheduled scrape workflow does: scripts/scrape_mlx_docs.py needs wafer-py
+# (requirements-scrape.txt, scrape workflow only); without it its tests
+# (scripts/tests/test_scrape_mlx_docs.py) are skipped
+uv venv --python 3.12 .venv-scrape
+source .venv-scrape/bin/activate
+uv pip install -r requirements.txt -r requirements-scrape.txt
 ```
 
 ## Python Standards
@@ -188,7 +198,7 @@ docker exec apple-docs-mcp tail -f /data/logs/mcp-server.log
 docker ps | grep apple-docs
 
 # Check indexing progress (real-time stats from Meilisearch)
-docker exec apple-docs-mcp curl -s localhost:7700/indexes/apple-docs/stats
+docker exec apple-docs-mcp sh -c 'curl -s -H "Authorization: Bearer $MEILI_MASTER_KEY" localhost:7700/indexes/apple-docs/stats'
 
 # Redeploy with latest image
 docker pull ghcr.io/averyy/apple-dev-docs:latest
@@ -223,6 +233,12 @@ docker stats apple-docs-mcp-local --no-stream --format "{{.MemUsage}}"
 
 # Indexing progress
 curl -s http://localhost:8001/health | python3 -c "import sys,json; d=json.load(sys.stdin); print(f\"{d.get('documents',0):,} docs ({d.get('progress','?')})\")"
+```
+
+Search eval, once the index is complete: scores `search_apple_docs` on the golden queries (`mcp-server/tests/golden_queries.json`, expectations keyed by canonical URL) by hit@3 and MRR, and `expand_result`'s symbol lookups (entries with `"expand": true`) by expand@1. It runs on the host, from the repo root, since it resolves the expectations through `.hashes` and `documentation/`:
+```bash
+python scripts/tests/eval_search.py                        # http://localhost:8001/mcp, Bearer test123
+python scripts/tests/eval_search.py --save /tmp/eval.json  # also records the per-query results
 ```
 
 Clean up:

@@ -56,3 +56,8 @@ meilisearch/
 
 # IMPORTANT: We need documentation/ and .hashes/ for the build
 # Do NOT exclude these!
+
+# Keep this the last line (the last matching pattern wins): it re-includes every
+# doc that a pattern above also matches (e.g. **/tests/, **/test_*, */env/), so
+# no doc path silently drops out of the image and the index
+!documentation/**

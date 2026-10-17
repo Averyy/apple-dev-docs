@@ -1,0 +1,12 @@
+# Scrape-workflow-only dependencies, installed on top of requirements.txt by
+# .github/workflows/scheduled-scrape.yml (Python 3.12). wafer-py needs Python
+# 3.12+; the Docker image (Python 3.11) never installs this file and nothing
+# it runs imports wafer.
+# ALL versions pinned exactly, wafer-py's own dependencies included (see the
+# note in mcp-server/requirements.txt). None of these is in requirements.txt.
+
+wafer-py==0.7.7       # HTTP client for web pages (scripts/scrape_mlx_docs.py's Sphinx pages)
+wreq==0.13.0          # wafer-py: TLS client
+cryptography==50.0.2  # wafer-py: certificate-chain checks
+cffi==2.1.1           # cryptography
+pycparser==3.11       # cffi

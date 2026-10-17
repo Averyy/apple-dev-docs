@@ -8,7 +8,7 @@ SEPARATE from content scraping - this is ONLY for framework discovery
 import asyncio
 import json
 import httpx
-from typing import List, Dict
+from typing import Any, Dict, List
 
 class AppleFrameworkListScraper:
     """Dedicated scraper ONLY for getting the complete framework list from Apple's API"""
@@ -24,10 +24,10 @@ class AppleFrameworkListScraper:
             }
         )
     
-    async def __aenter__(self):
+    async def __aenter__(self) -> "AppleFrameworkListScraper":
         return self
-    
-    async def __aexit__(self, exc_type, exc_val, exc_tb):
+
+    async def __aexit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
         await self.client.aclose()
     
     async def fetch_all_frameworks(self) -> List[Dict[str, str]]:

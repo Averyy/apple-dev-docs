@@ -1,0 +1,372 @@
+[
+  {
+    "query": "Button SwiftUI",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/button"
+    ]
+  },
+  {
+    "query": "URLSession",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/foundation/urlsession"
+    ],
+    "expand": true
+  },
+  {
+    "query": "NavigationView navigationBarTitle",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/view/navigationbartitle(_:)",
+      "https://developer.apple.com/documentation/swiftui/view/navigationbartitle(_:displaymode:)"
+    ]
+  },
+  {
+    "query": "async await Swift",
+    "expected_top3": [
+      "https://github.com/swiftlang/swift-book/blob/main/TSPL.docc/LanguageGuide/Concurrency.md",
+      "https://developer.apple.com/documentation/swift/concurrency"
+    ]
+  },
+  {
+    "query": "CPTemplateApplicationScene CarPlay",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/carplay/cptemplateapplicationscene"
+    ]
+  },
+  {
+    "query": "carplay entitlements",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/carplay/requesting-carplay-entitlements"
+    ]
+  },
+  {
+    "query": "AsyncImagePhase failure",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/asyncimagephase/failure(_:)"
+    ]
+  },
+  {
+    "query": "@State property wrapper",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/state"
+    ]
+  },
+  {
+    "query": "WKWebView",
+    "platform": "ios",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/webkit/wkwebview"
+    ]
+  },
+  {
+    "query": "frame",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/uikit/uiview/frame",
+      "https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)",
+      "https://developer.apple.com/documentation/appkit/nsview/frame"
+    ]
+  },
+  {
+    "query": "NavigationStack",
+    "framework": "SwiftUI",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/navigationstack"
+    ],
+    "expand": true
+  },
+  {
+    "query": "AsyncImage",
+    "framework": "SwiftUI",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/asyncimage"
+    ]
+  },
+  {
+    "query": "RealityView",
+    "platform": "visionos",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/realitykit/realityview"
+    ]
+  },
+  {
+    "query": "isResponding",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/foundationmodels/languagemodelsession/isresponding"
+    ]
+  },
+  {
+    "query": "LanguageModelSession respond",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/foundationmodels/languagemodelsession"
+    ]
+  },
+  {
+    "query": "async let",
+    "expected_top3": [
+      "https://github.com/swiftlang/swift-book/blob/main/TSPL.docc/LanguageGuide/Concurrency.md"
+    ]
+  },
+  {
+    "query": "What is NavigationStack?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/navigationstack"
+    ]
+  },
+  {
+    "query": "How do I make a network request with URLSession?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/foundation/urlsession",
+      "https://developer.apple.com/documentation/foundation/fetching-website-data-into-memory"
+    ]
+  },
+  {
+    "query": "How do I request permission to use the user's location?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/corelocation/requesting-authorization-to-use-location-services",
+      "https://developer.apple.com/documentation/corelocation/cllocationmanager/requestwheninuseauthorization()"
+    ]
+  },
+  {
+    "query": "What is the difference between a struct and a class in Swift?",
+    "expected_top3": [
+      "https://github.com/swiftlang/swift-book/blob/main/TSPL.docc/LanguageGuide/ClassesAndStructures.md",
+      "https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes"
+    ]
+  },
+  {
+    "query": "How do I present a sheet in SwiftUI?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)",
+      "https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:)"
+    ]
+  },
+  {
+    "query": "What does @MainActor do?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swift/mainactor"
+    ]
+  },
+  {
+    "query": "How do I schedule a local notification?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/usernotifications/scheduling-a-notification-locally-from-your-app"
+    ]
+  },
+  {
+    "query": "What is a LanguageModelSession?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/foundationmodels/languagemodelsession"
+    ]
+  },
+  {
+    "query": "How do I save data with SwiftData?",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches",
+      "https://developer.apple.com/documentation/swiftdata"
+    ]
+  },
+  {
+    "query": "UIView*",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/uikit/uiview",
+      "https://developer.apple.com/documentation/uikit/uiviewcontroller"
+    ]
+  },
+  {
+    "query": "NS*Button",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/appkit/nsbutton",
+      "https://developer.apple.com/documentation/appkit/nspopupbutton"
+    ]
+  },
+  {
+    "query": "UI*Controller",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/uikit/uiviewcontroller",
+      "https://developer.apple.com/documentation/uikit/uinavigationcontroller",
+      "https://developer.apple.com/documentation/uikit/uitableviewcontroller"
+    ]
+  },
+  {
+    "query": "CL*Manager",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/corelocation/cllocationmanager"
+    ]
+  },
+  {
+    "query": "AV*Player",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/avfoundation/avplayer",
+      "https://developer.apple.com/documentation/avfaudio/avaudioplayer",
+      "https://developer.apple.com/documentation/avfoundation/avqueueplayer"
+    ]
+  },
+  {
+    "query": "List",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/list"
+    ],
+    "expand": true
+  },
+  {
+    "query": "Text",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/text"
+    ],
+    "expand": true
+  },
+  {
+    "query": "View",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/view"
+    ],
+    "expand": true
+  },
+  {
+    "query": "viewDidLoad",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()",
+      "https://developer.apple.com/documentation/appkit/nsviewcontroller/viewdidload()"
+    ],
+    "expand": true
+  },
+  {
+    "query": "Task",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swift/task"
+    ],
+    "expand": true
+  },
+  {
+    "query": "Color",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/color"
+    ],
+    "expand": true
+  },
+  {
+    "query": "Button",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/button"
+    ],
+    "expand": true
+  },
+  {
+    "query": "UserDefaults",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/foundation/userdefaults"
+    ]
+  },
+  {
+    "query": "JSONDecoder",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/foundation/jsondecoder"
+    ]
+  },
+  {
+    "query": "DispatchQueue",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/dispatch/dispatchqueue"
+    ]
+  },
+  {
+    "query": "Codable",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swift/codable"
+    ]
+  },
+  {
+    "query": "ObservableObject",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/combine/observableobject"
+    ]
+  },
+  {
+    "query": "withAnimation",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/withanimation(_:_:)"
+    ],
+    "expand": true
+  },
+  {
+    "query": "Image",
+    "framework": "SwiftUI",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/image"
+    ]
+  },
+  {
+    "query": "Button",
+    "framework": "UIKit",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/uikit/uibutton"
+    ]
+  },
+  {
+    "query": "NSWindow",
+    "platform": "macos",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/appkit/nswindow"
+    ]
+  },
+  {
+    "query": "ImmersiveSpace",
+    "platform": "visionos",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/immersivespace"
+    ]
+  },
+  {
+    "query": "HKHealthStore",
+    "platform": "watchos",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/healthkit/hkhealthstore"
+    ]
+  },
+  {
+    "query": "requestAuthorization",
+    "framework": "UserNotifications",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/requestauthorization(options:completionhandler:)"
+    ]
+  },
+  {
+    "query": "TVTopShelfContentProvider",
+    "platform": "tvos",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/tvservices/tvtopshelfcontentprovider"
+    ]
+  },
+  {
+    "query": "human interface guidelines buttons",
+    "expected_top3": [
+      "https://developer.apple.com/design/human-interface-guidelines/buttons"
+    ]
+  },
+  {
+    "query": "dark mode",
+    "expected_top3": [
+      "https://developer.apple.com/design/human-interface-guidelines/dark-mode",
+      "https://developer.apple.com/documentation/uikit/supporting-dark-mode-in-your-interface"
+    ]
+  },
+  {
+    "query": "mlx.core.array",
+    "expected_top3": [
+      "https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.array.html",
+      "https://ml-explore.github.io/mlx/build/html/python/array.html"
+    ]
+  },
+  {
+    "query": "convert a PyTorch model to Core ML",
+    "expected_top3": [
+      "https://apple.github.io/coremltools/docs-guides/source/convert-pytorch.html",
+      "https://apple.github.io/coremltools/docs-guides/source/convert-pytorch-workflow.html"
+    ]
+  },
+  {
+    "query": "optional chaining",
+    "expected_top3": [
+      "https://github.com/swiftlang/swift-book/blob/main/TSPL.docc/LanguageGuide/OptionalChaining.md"
+    ]
+  }
+]

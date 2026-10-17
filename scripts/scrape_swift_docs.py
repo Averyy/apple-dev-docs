@@ -13,23 +13,53 @@ Usage:
     python scripts/scrape_swift_docs.py
     python scripts/scrape_swift_docs.py --dry-run
     python scripts/scrape_swift_docs.py --force  # Re-download all files
+
+Failures follow the policy shared with the MLX and HIG scrapers
+(utilities/source_policy.py): a configured directory that returns 404/410
+keeps its files for that run and is removed on the 2nd consecutive run; any
+other failure of a configured directory keeps its files until it recovers; a
+file GitHub no longer lists or that returns 404/410 is removed at once; other
+failures and convert/save errors keep the file and block the orphan cleanup
+for up to 3 runs. The orphan cleanup uses confirm-then-delete for mass
+removals (pending_orphans in the hash file's metadata).
+
+Exit codes: 0 clean (removals and valve holds included); 1 an error of ours
+(a blocked cleanup, a configured directory that failed, a persistent
+failure, a failed save, an unexpected exception); 130 interrupted.
 """
 
 import argparse
 import asyncio
-import json
 import logging
-import os
 import sys
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import aiohttp
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 
-from utilities.hash_utils import compute_hash, load_hashes as load_hashes_from_file, save_hashes as save_hashes_to_file
+from utilities.hash_utils import (
+    HashFileError,
+    compute_hash,
+    read_hash_file,
+    save_hashes as save_hashes_to_file,
+    write_text_atomic,
+)
+from utilities.source_policy import (
+    FAILURE_COUNTS_KEY,
+    PENDING_ORPHANS_KEY,
+    FetchFailed,
+    KeptLocation,
+    ScrapeRun,
+    discover_github_markdown,
+    fetch_github_raw,
+    has_file_named,
+    is_under,
+    list_github_directory,
+    policy_metadata,
+)
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -46,17 +76,11 @@ OUTPUT_DIR = Path(__file__).parent.parent / "documentation" / "Swift-Book"
 # Hash file for incremental updates
 HASH_FILE = Path(__file__).parent.parent / ".hashes" / "swift_docs_hashes.json"
 
-# GitHub raw content base URL
-GITHUB_RAW = "https://raw.githubusercontent.com"
-
 # Rate limiting
 REQUEST_DELAY = 0.1  # seconds between requests
 
-# Retry transient GitHub failures (502s are common on api.github.com)
-MAX_ATTEMPTS = 4
-RETRY_BASE_DELAY = 2.0  # seconds; doubles per retry
-RETRY_AFTER_CAP = 120.0  # seconds; upper bound on honoring a server Retry-After
-RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
+# Hash-file metadata the failure policy keeps (saved whenever it changes)
+POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY)
 
 
 @dataclass
@@ -113,14 +137,49 @@ SOURCES: List[DocSource] = [
 # HELPER FUNCTIONS
 # =============================================================================
 
-def _load_hashes() -> Dict[str, str]:
-    """Load stored file hashes for incremental updates."""
-    return load_hashes_from_file(HASH_FILE)
+def _load_hash_file() -> Tuple[Dict[str, str], Dict[str, Any], Optional[str]]:
+    """Load stored file hashes and metadata for incremental updates.
+
+    Returns:
+        (hashes, metadata, load error): a file that can't be read loads as
+        empty, with the error (the run then blocks its cleanup)
+    """
+    try:
+        hashes, metadata = read_hash_file(HASH_FILE)
+    except HashFileError as e:
+        return {}, {}, str(e)
+    return hashes, metadata, None
 
 
-def _save_hashes(hashes: Dict[str, str]):
+def _save_hashes(hashes: Dict[str, str], metadata: Dict[str, Any]) -> bool:
     """Save file hashes with metadata for next run."""
-    save_hashes_to_file(HASH_FILE, hashes, source="scrape_swift_docs.py")
+    return save_hashes_to_file(HASH_FILE, hashes, source="scrape_swift_docs.py", metadata=metadata)
+
+
+def _output_path(source: "DocSource", file_path: str) -> Path:
+    """The local output path of a source's file (repo-relative file_path)."""
+    if source.output_subdir:
+        relative_path = file_path[len(source.path) + 1:]
+        return OUTPUT_DIR / source.output_subdir / relative_path
+    return OUTPUT_DIR / Path(file_path).name
+
+
+def _source_location(source: "DocSource") -> KeptLocation:
+    """Where a source's files live: its output subdir (or, for a root-level
+    source, the output dir without the other sources' subdirs)."""
+    path = OUTPUT_DIR / source.output_subdir if source.output_subdir else OUTPUT_DIR
+    excluded = tuple(
+        other_path for other in SOURCES
+        if other is not source
+        and (other_path := (OUTPUT_DIR / other.output_subdir if other.output_subdir else OUTPUT_DIR)) != path
+        and is_under(other_path, path)
+    )
+    return KeptLocation(path, reason="", excluded=excluded)
+
+
+def _directory_key(repo: str, path: str) -> str:
+    """The failure-counts key of a GitHub directory (file keys are "repo:path")."""
+    return f"{repo}:{path}/"
 
 
 def _output_path_for_hash_key(hash_key: str) -> Optional[Path]:
@@ -132,10 +191,7 @@ def _output_path_for_hash_key(hash_key: str) -> Optional[Path]:
     repo, _, file_path = hash_key.partition(":")
     for source in SOURCES:
         if source.repo == repo and file_path.startswith(source.path + "/"):
-            if source.output_subdir:
-                relative_path = file_path[len(source.path) + 1:]
-                return OUTPUT_DIR / source.output_subdir / relative_path
-            return OUTPUT_DIR / Path(file_path).name
+            return _output_path(source, file_path)
     return None
 
 
@@ -210,246 +266,151 @@ url: {source_url}
 
 
 # =============================================================================
-# GITHUB API FUNCTIONS
-# =============================================================================
-
-async def _get_with_retry(
-    session: aiohttp.ClientSession,
-    url: str,
-    headers: Optional[dict] = None
-) -> tuple[int, str]:
-    """GET a URL, retrying transient failures (5xx/429/network errors) with backoff.
-
-    Returns (status, body_text). Non-retryable statuses (e.g. 404) are returned
-    as-is; retryable failures raise the last error after MAX_ATTEMPTS.
-    """
-    last_error: Optional[Exception] = None
-    retry_after: Optional[float] = None
-    for attempt in range(MAX_ATTEMPTS):
-        if attempt:
-            delay = RETRY_BASE_DELAY * (2 ** (attempt - 1))
-            if retry_after is not None:
-                # Rate-limit responses say how long to wait; honor that (capped)
-                delay = max(delay, min(retry_after, RETRY_AFTER_CAP))
-            logger.warning(
-                f"Retrying {url} in {delay:.0f}s "
-                f"(attempt {attempt + 1}/{MAX_ATTEMPTS}): {last_error}"
-            )
-            await asyncio.sleep(delay)
-        retry_after = None
-        try:
-            async with session.get(url, headers=headers) as response:
-                if response.status in RETRYABLE_STATUSES:
-                    header = response.headers.get("Retry-After", "")
-                    if header.isdigit():
-                        retry_after = float(header)
-                    last_error = RuntimeError(
-                        f"HTTP {response.status} {response.reason or ''} for {url}"
-                    )
-                    continue
-                return response.status, await response.text()
-        except (aiohttp.ClientError, asyncio.TimeoutError) as e:
-            last_error = e
-    assert last_error is not None  # loop can only fall through after a failure
-    raise last_error
-
-
-async def fetch_directory_contents(
-    session: aiohttp.ClientSession,
-    repo: str,
-    branch: str,
-    path: str,
-    missing_ok: bool = True
-) -> List[dict]:
-    """Fetch directory listing from GitHub API.
-
-    A 404 returns [] when missing_ok, else raises. A configured source root
-    must not 404 silently: an empty listing there marks every local file of
-    that source as an orphan, so it has to count as an error instead.
-    """
-    url = f"https://api.github.com/repos/{repo}/contents/{path}?ref={branch}"
-
-    headers = {"Accept": "application/vnd.github.v3+json"}
-
-    # Add token if available (for higher rate limits)
-    github_token = os.environ.get("GITHUB_TOKEN")
-    if github_token:
-        headers["Authorization"] = f"token {github_token}"
-
-    status, body = await _get_with_retry(session, url, headers=headers)
-    if status == 404:
-        if not missing_ok:
-            raise RuntimeError(f"Source path not found (404): {repo}/{path}")
-        logger.warning(f"Path not found: {path}")
-        return []
-    if status >= 400:
-        raise RuntimeError(f"GitHub API {status} for {url}")
-    data = json.loads(body)
-    if not isinstance(data, list):
-        raise RuntimeError(f"Unexpected GitHub API response for {url}: expected a list")
-    return data
-
-
-async def fetch_file_content(
-    session: aiohttp.ClientSession,
-    repo: str,
-    branch: str,
-    path: str
-) -> Optional[str]:
-    """Fetch raw file content from GitHub."""
-    url = f"{GITHUB_RAW}/{repo}/{branch}/{path}"
-
-    status, body = await _get_with_retry(session, url)
-    if status == 404:
-        return None
-    if status >= 400:
-        raise RuntimeError(f"HTTP {status} for {url}")
-    return body
-
-
-async def discover_markdown_files(
-    session: aiohttp.ClientSession,
-    source: DocSource,
-    recursive: bool = True,
-    is_root: bool = True
-) -> List[str]:
-    """Discover all markdown files in a source path."""
-    files = []
-
-    contents = await fetch_directory_contents(
-        session, source.repo, source.branch, source.path,
-        missing_ok=not is_root
-    )
-
-    for item in contents:
-        if item["type"] == "file" and item["name"].endswith(".md"):
-            files.append(item["path"])
-        elif item["type"] == "dir" and recursive:
-            # Recursively search subdirectories
-            sub_source = DocSource(
-                repo=source.repo,
-                branch=source.branch,
-                path=item["path"],
-                output_subdir=source.output_subdir,
-            )
-            sub_files = await discover_markdown_files(
-                session, sub_source, recursive=True, is_root=False
-            )
-            files.extend(sub_files)
-
-    await asyncio.sleep(REQUEST_DELAY)  # Rate limiting
-    return files
-
-
-# =============================================================================
 # MAIN SCRAPING LOGIC
 # =============================================================================
+
+async def _discover_source_files(
+    session: aiohttp.ClientSession,
+    source: DocSource,
+) -> Tuple[List[str], Dict[str, FetchFailed]]:
+    """A source's markdown files, and {directory: failure} for listings that failed."""
+    # For root-level sources, don't recurse into subdirs
+    recursive = source.output_subdir != "" or source.path.count('/') > 1
+
+    if source.output_subdir == "" and "TSPL.docc" in source.path:
+        # Special case: only get top-level files from TSPL.docc
+        contents = await list_github_directory(session, source.repo, source.branch, source.path)
+        await asyncio.sleep(REQUEST_DELAY)  # Rate limiting
+        if isinstance(contents, FetchFailed):
+            return [], {source.path: contents}
+        return [item["path"] for item in contents
+                if item.get("type") == "file" and str(item.get("name", "")).endswith(".md")
+                and isinstance(item.get("path"), str)], {}
+    return await discover_github_markdown(
+        session, source.repo, source.branch, source.path, recursive=recursive, delay=REQUEST_DELAY
+    )
+
 
 async def scrape_source(
     session: aiohttp.ClientSession,
     source: DocSource,
     hashes: Dict[str, str],
+    run: ScrapeRun,
     dry_run: bool = False,
     force: bool = False
-) -> Dict[str, any]:
-    """Scrape a single documentation source."""
-    stats = {"downloaded": 0, "skipped": 0, "errors": 0, "files": [], "expected_files": []}
-
-    # For root-level sources, don't recurse into subdirs
-    recursive = source.output_subdir != "" or source.path.count('/') > 1
+) -> Dict[str, int]:
+    """Scrape a single documentation source, reporting every outcome to run."""
+    stats = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0}
+    location = _source_location(source)
+    source_key = _directory_key(source.repo, source.path)
 
     # Discover all markdown files
-    try:
-        if source.output_subdir == "" and "TSPL.docc" in source.path:
-            # Special case: only get top-level files from TSPL.docc
-            contents = await fetch_directory_contents(
-                session, source.repo, source.branch, source.path,
-                missing_ok=False
-            )
-            file_paths = [item["path"] for item in contents
-                         if item["type"] == "file" and item["name"].endswith(".md")]
-        else:
-            file_paths = await discover_markdown_files(session, source, recursive=recursive)
-    except Exception as e:
-        logger.error(f"Error discovering files in {source.path}: {e}")
-        stats["errors"] += 1
-        return stats
+    file_paths, failures = await _discover_source_files(session, source)
 
-    for file_path in file_paths:
+    # The configured directory itself: on failure nothing of it was found
+    root_failure = failures.pop(source.path, None)
+    if root_failure is not None:
+        run.source_failed(source_key, root_failure, location, key_prefix=source_key)
+        stats["gone" if root_failure.gone else "failed"] += 1
+        return stats
+    run.source_ok(source_key)
+
+    # Subdirectories found by a listing
+    for directory, failure in sorted(failures.items()):
+        directory_key = _directory_key(source.repo, directory)
+        directory_path = (location.path / directory[len(source.path) + 1:]
+                          if source.output_subdir else location.path)
+        run.directory_failed(directory_key, failure, KeptLocation(directory_path, reason=""),
+                             key_prefix=directory_key)
+        stats["gone" if failure.gone else "failed"] += 1
+
+    for file_path in dict.fromkeys(file_paths):
         filename = Path(file_path).name
 
         # Determine output path (keep in sync with _output_path_for_hash_key)
-        if source.output_subdir:
-            # Calculate relative path within source
-            relative_path = file_path[len(source.path) + 1:]
-            output_path = OUTPUT_DIR / source.output_subdir / relative_path
-        else:
-            output_path = OUTPUT_DIR / filename
-
-        # Track expected files for orphan cleanup
-        stats["expected_files"].append(str(output_path))
+        output_path = _output_path(source, file_path)
 
         # Create unique key for hashing
         hash_key = f"{source.repo}:{file_path}"
 
+        # Fetch content
+        content = await fetch_github_raw(session, source.repo, source.branch, file_path)
+        if isinstance(content, FetchFailed):
+            stats["gone" if content.gone else "failed"] += 1
+            # A file we have: its key, or its file (a lost hash file loses keys, not files)
+            if run.page_failed(hash_key, content,
+                               previously_good=hash_key in hashes or has_file_named(output_path)):
+                run.keep_file(hash_key, output_path)
+            continue
+        run.page_ok(hash_key, output_path)
+
+        await asyncio.sleep(REQUEST_DELAY)  # Rate limiting
+
+        # Check if content changed (re-download if the local file vanished)
+        content_hash = compute_hash(content)
+        if (not force and hash_key in hashes and hashes[hash_key] == content_hash
+                and output_path.exists()):
+            run.page_saved(hash_key)
+            stats["skipped"] += 1
+            continue
+
+        # Convert and save; an error here is ours: the file is kept, never deleted
         try:
-            # Fetch content
-            content = await fetch_file_content(
-                session, source.repo, source.branch, file_path
-            )
-
-            if content is None:
-                stats["errors"] += 1
-                continue
-
-            await asyncio.sleep(REQUEST_DELAY)  # Rate limiting
-
-            # Check if content changed (re-download if the local file vanished)
-            content_hash = compute_hash(content)
-            if (not force and hash_key in hashes and hashes[hash_key] == content_hash
-                    and output_path.exists()):
-                stats["skipped"] += 1
-                continue
-
             # Clean and enhance content
             content = clean_docc_content(content, filename)
             content = add_source_header(content, source, filename)
 
             if dry_run:
                 console.print(f"  [dim]Would write:[/dim] {output_path}")
-                stats["downloaded"] += 1
-                stats["files"].append(str(output_path))
             else:
-                # Write file
+                # Write file (whole or not at all: a failed write keeps the old doc)
                 output_path.parent.mkdir(parents=True, exist_ok=True)
-                with open(output_path, 'w', encoding='utf-8') as f:
-                    f.write(content)
+                write_text_atomic(output_path, content)
 
                 # Update hash
                 hashes[hash_key] = content_hash
-                stats["downloaded"] += 1
-                stats["files"].append(str(output_path))
-
         except Exception as e:
-            logger.error(f"Error processing {file_path}: {e}")
-            stats["errors"] += 1
+            run.local_error(hash_key, output_path, f"{type(e).__name__}: {e}")
+            stats["failed"] += 1
+            continue
+
+        run.page_saved(hash_key)
+        stats["downloaded"] += 1
 
     return stats
 
 
-async def scrape_all(dry_run: bool = False, force: bool = False):
-    """Scrape all configured documentation sources."""
+def _prune_stale_keys(hashes: Dict[str, str]) -> int:
+    """Drop hash entries whose local file is gone or whose source is no
+    longer configured. Returns how many were dropped."""
+    stale_keys = [
+        k for k in hashes
+        if (p := _output_path_for_hash_key(k)) is None or not p.exists()
+    ]
+    for key in stale_keys:
+        del hashes[key]
+    return len(stale_keys)
+
+
+async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, Any]:
+    """Scrape all configured documentation sources.
+
+    Returns:
+        The run's totals, with "exit_code" (0 clean, 1 an error of ours)
+    """
     console.print("\n[bold blue]Swift Language Documentation Scraper[/bold blue]\n")
 
-    # Load existing hashes
-    hashes = {} if force else _load_hashes()
+    # Load existing hashes (also with --force: the failure policy needs to
+    # know which files we already have; --force only rewrites unchanged ones)
+    hashes, metadata, load_error = _load_hash_file()
+    stored_hashes = dict(hashes)
+    run = ScrapeRun("Swift", OUTPUT_DIR.parent, metadata, load_error)
 
     # Ensure output directory exists
     if not dry_run:
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    total_stats = {"downloaded": 0, "skipped": 0, "errors": 0}
-    all_expected_files: set = set()
+    total_stats: Dict[str, Any] = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0, "deleted": 0, "pruned": 0}
 
     async with aiohttp.ClientSession() as session:
         with Progress(
@@ -466,71 +427,47 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
                 progress.update(task, description=f"[cyan]{source_name}[/cyan]")
 
                 stats = await scrape_source(
-                    session, source, hashes, dry_run=dry_run, force=force
+                    session, source, hashes, run, dry_run=dry_run, force=force
                 )
 
-                total_stats["downloaded"] += stats["downloaded"]
-                total_stats["skipped"] += stats["skipped"]
-                total_stats["errors"] += stats["errors"]
-                all_expected_files.update(stats["expected_files"])
+                for name in ("downloaded", "skipped", "gone", "failed"):
+                    total_stats[name] += stats[name]
 
                 if stats["downloaded"] > 0:
                     console.print(f"  [green]{source_name}:[/green] {stats['downloaded']} files")
 
                 progress.advance(task)
 
-    # Clean up orphaned files (files that exist locally but weren't in source).
-    # Skipped whenever any error occurred: a failed directory listing means
-    # expected_files is incomplete and cleanup would delete legitimate files.
-    if total_stats["errors"] > 0:
-        console.print(
-            f"\n[yellow]Skipping orphan cleanup due to {total_stats['errors']} error(s)[/yellow]"
-        )
-    elif not dry_run and OUTPUT_DIR.exists():
-        existing_files = set(str(f) for f in OUTPUT_DIR.rglob("*.md"))
-        orphaned_files = existing_files - all_expected_files
+    # Clean up orphaned files (files that exist locally but that no source
+    # produced or keeps this run), unless a failure of ours blocks it
+    cleanup = run.cleanup([OUTPUT_DIR], dry_run=dry_run)
+    total_stats["deleted"] = len(cleanup.deleted)
+    if cleanup.deleted and not dry_run:
+        console.print(f"\n[yellow]Deleted {len(cleanup.deleted)} orphaned files[/yellow]")
+    if not cleanup.skipped and not dry_run:
+        # Prune hash entries whose local file no longer exists
+        total_stats["pruned"] = _prune_stale_keys(hashes)
 
-        if orphaned_files:
-            console.print(f"\n[yellow]Cleaning up {len(orphaned_files)} orphaned files...[/yellow]")
-            deleted_count = 0
-            for orphan_path in orphaned_files:
-                try:
-                    Path(orphan_path).unlink()
-                    deleted_count += 1
-                except Exception as e:
-                    logger.warning(f"Could not delete orphan {orphan_path}: {e}")
-
-            # Prune hash entries whose local file no longer exists
-            stale_keys = [
-                k for k in hashes
-                if (p := _output_path_for_hash_key(k)) is None or not p.exists()
-            ]
-            for key in stale_keys:
-                del hashes[key]
-
-            # Remove empty directories
-            for dirpath in sorted(OUTPUT_DIR.rglob("*"), key=lambda p: len(str(p)), reverse=True):
-                if dirpath.is_dir() and not any(dirpath.iterdir()):
-                    try:
-                        dirpath.rmdir()
-                    except Exception:
-                        pass
-
-            console.print(f"  [dim]Deleted {deleted_count} orphaned files[/dim]")
-            total_stats["deleted"] = deleted_count
-
-    # Save updated hashes (also save if files were deleted to update hash file)
-    if not dry_run and (total_stats["downloaded"] > 0 or total_stats.get("deleted", 0) > 0):
-        _save_hashes(hashes)
+    # Save whenever the hashes or the failure policy's metadata changed (a
+    # count or a pending list set on a run with no downloads must persist)
+    new_metadata = run.metadata(hashes)
+    if not dry_run and (hashes != stored_hashes or load_error is not None
+                        or new_metadata != policy_metadata(metadata, POLICY_KEYS)):
+        if not _save_hashes(hashes, new_metadata):
+            run.error(f"hash_save_failed: {HASH_FILE}")
 
     # Print summary
     console.print("\n[bold]Summary:[/bold]")
     console.print(f"  Downloaded: [green]{total_stats['downloaded']}[/green]")
     console.print(f"  Skipped (unchanged): [dim]{total_stats['skipped']}[/dim]")
-    if total_stats.get("deleted", 0) > 0:
+    if total_stats["deleted"] > 0:
         console.print(f"  Deleted (orphaned): [yellow]{total_stats['deleted']}[/yellow]")
-    if total_stats["errors"] > 0:
-        console.print(f"  Errors: [red]{total_stats['errors']}[/red]")
+    if total_stats["gone"] > 0:
+        console.print(f"  Gone (404/410): [yellow]{total_stats['gone']}[/yellow]")
+    if total_stats["failed"] > 0:
+        console.print(f"  Failed: [red]{total_stats['failed']}[/red]")
+    for line in run.summary_lines(cleanup):
+        console.print(f"  {line}", markup=False)
 
     console.print(f"\n[dim]Output directory: {OUTPUT_DIR}[/dim]")
 
@@ -538,6 +475,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
         console.print("\n[yellow]Next step:[/yellow] Run the indexer to add these docs to Meilisearch:")
         console.print("  [dim]cd scripts && python index_to_meilisearch.py[/dim]")
 
+    total_stats["exit_code"] = run.exit_code()
     return total_stats
 
 
@@ -545,7 +483,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False):
 # CLI ENTRY POINT
 # =============================================================================
 
-def main():
+def main() -> int:
     parser = argparse.ArgumentParser(
         description="Scrape Swift language documentation from GitHub"
     )
@@ -572,7 +510,7 @@ def main():
 
     try:
         stats = asyncio.run(scrape_all(dry_run=args.dry_run, force=args.force))
-        return 0 if stats["errors"] == 0 else 1
+        return int(stats["exit_code"])
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted[/yellow]")
         return 130

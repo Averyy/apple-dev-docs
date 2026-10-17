@@ -11,35 +11,80 @@ Sphinx HTML Sites:
 
 GitHub Markdown:
 - mlx-lm - LLM inference and fine-tuning
-- mlx-examples - Example implementations
 - mlx-c - C API bindings
 - mlx-onnx - ONNX support
+- mlx-swift, mlx-swift-lm, mlx-swift-examples - MLX Swift (DocC catalogs and READMEs)
 - ml-stable-diffusion - Stable Diffusion on Core ML
+
+The Sphinx pages are fetched with wafer-py, one at a time so its per-host
+rate limit spaces them, with its retries; so this script needs Python 3.12
+and requirements-scrape.txt on top of requirements.txt (the scheduled scrape
+workflow installs both). The GitHub fetches use aiohttp, with retries.
+
+Failures follow the policy shared with the HIG and Swift scrapers
+(utilities/source_policy.py): a configured Sphinx root, GitHub directory or
+file that returns 404/410 keeps its files for that run and is removed on the
+2nd consecutive run; any other failure of a configured root, directory or
+file keeps its files until it recovers (it never reaches D8); a page that is
+no longer linked or listed, or returns 404/410, is removed at once; other
+failures and convert/save errors keep the file of a page we have (its key,
+or its file on disk) and block the orphan cleanup for up to 3 runs; a page
+whose links can't be read keeps its file and blocks it, uncounted. The
+orphan cleanup scans each configured source's top-level dir, plus every
+output dir no longer configured (a source dropped from the config, or a
+source's old dir after its output_dir changed; metadata.sources) until its
+files are gone, with confirm-then-delete for mass removals per dir
+(pending_orphans). After a clean run, every hash key this run didn't produce
+is pruned, except on a run whose valve held files (their keys wait with them).
 
 Usage:
     python scripts/scrape_mlx_docs.py
     python scripts/scrape_mlx_docs.py --dry-run
     python scripts/scrape_mlx_docs.py --force  # Re-download all files
+
+Exit codes: 0 clean (removals and valve holds included); 1 an error of ours
+(a blocked cleanup, a configured source that failed, a persistent failure, a
+failed save, an unexpected exception); 130 interrupted.
 """
 
 import argparse
 import asyncio
 import hashlib
-import json
 import logging
-import os
 import re
 import sys
+from collections import deque
 from dataclasses import dataclass, field
-from pathlib import Path
-from typing import Any, Dict, List, Optional, Set
-from urllib.parse import urljoin, urlparse
+from pathlib import Path, PurePosixPath
+from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
+from urllib.parse import urljoin, urlparse, urlunparse
 
 import aiohttp
 from bs4 import BeautifulSoup
 from rich.console import Console
+from wafer import AsyncSession, WaferError
 
-from utilities.hash_utils import compute_hash, load_hashes as load_hashes_from_file, save_hashes as save_hashes_to_file
+from utilities.hash_utils import (
+    HashFileError,
+    compute_hash,
+    read_hash_file,
+    save_hashes as save_hashes_to_file,
+    write_text_atomic,
+)
+from utilities.source_policy import (
+    FAILURE_COUNTS_KEY,
+    PENDING_ORPHANS_KEY,
+    CleanupResult,
+    FetchFailed,
+    KeptLocation,
+    ScrapeRun,
+    discover_github_markdown,
+    fetch_github_raw,
+    has_file_named,
+    is_under,
+    policy_metadata,
+    status_failure,
+)
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -57,11 +102,28 @@ OUTPUT_BASE = Path(__file__).parent.parent / "documentation"
 HASH_FILE = Path(__file__).parent.parent / ".hashes" / "mlx_docs_hashes.json"
 
 # Rate limiting
-REQUEST_DELAY = 0.15  # seconds between requests
-MAX_CONCURRENT = 10  # max concurrent requests
+REQUEST_DELAY = 0.15  # seconds between requests (Sphinx pages: wafer's per-host rate_limit)
+MAX_CONCURRENT = 10  # max concurrent requests (GitHub)
 
-# HTTP timeout
+# HTTP timeout (GitHub, per attempt)
 HTTP_TIMEOUT = aiohttp.ClientTimeout(total=30)
+
+# Sphinx pages (wafer): the total budget per page, all retries included, and
+# the cap on each attempt (so a hung attempt is retried instead of eating the budget)
+SPHINX_TIMEOUT = 120.0
+SPHINX_ATTEMPT_TIMEOUT = 30.0
+SPHINX_MAX_RETRIES = 3  # wafer's retries for 5xx, connection errors and empty bodies
+
+# GitHub directories that can't contain markdown (Xcode-specific)
+XCODE_DIR_SUFFIXES = ('.xcassets', '.xcworkspace', '.xcodeproj', '.playground')
+
+# Hash-file metadata: each configured source's output dir ({name: output_dir}),
+# plus every output dir no longer configured until its files are deleted: a
+# source dropped from the config, or a source's old dir after its output_dir
+# changed (under "<name>@<old output_dir>": its name records the new dir)
+SOURCES_KEY = "sources"
+# Hash-file metadata saved whenever it changes
+POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, SOURCES_KEY)
 
 
 @dataclass
@@ -129,15 +191,6 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
         files=["README.md", "mlx_lm/LORA.md"],
     ),
     GitHubDocSource(
-        name="mlx-examples",
-        repo="ml-explore/mlx-examples",
-        branch="main",
-        output_dir="MLX/mlx-examples",
-        framework="MLX",
-        files=["README.md"],
-        directories=["llms", "stable_diffusion", "whisper", "lora"],
-    ),
-    GitHubDocSource(
         name="mlx-c",
         repo="ml-explore/mlx-c",
         branch="main",
@@ -195,14 +248,62 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
 # HELPER FUNCTIONS
 # =============================================================================
 
-def _load_hashes() -> Dict[str, str]:
-    """Load stored file hashes for incremental updates."""
-    return load_hashes_from_file(HASH_FILE)
+def _load_hash_file() -> Tuple[Dict[str, str], Dict[str, Any], Optional[str]]:
+    """Load stored file hashes and metadata for incremental updates.
+
+    Returns:
+        (hashes, metadata, load error): a file that can't be read loads as
+        empty, with the error (the run then blocks its cleanup)
+    """
+    try:
+        hashes, metadata = read_hash_file(HASH_FILE)
+    except HashFileError as e:
+        return {}, {}, str(e)
+    return hashes, metadata, None
 
 
-def _save_hashes(hashes: Dict[str, str]) -> None:
+def _save_hashes(hashes: Dict[str, str], metadata: Dict[str, Any]) -> bool:
     """Save file hashes with metadata for next run."""
-    save_hashes_to_file(HASH_FILE, hashes, source="scrape_mlx_docs.py")
+    return save_hashes_to_file(HASH_FILE, hashes, source="scrape_mlx_docs.py", metadata=metadata)
+
+
+def configured_sources() -> Dict[str, str]:
+    """Every configured source's output dir, {name: output_dir} (metadata.sources).
+
+    Raises:
+        ValueError: Two sources share a name (their files couldn't be told apart)
+    """
+    sources: Dict[str, str] = {}
+    all_sources: List[Union[SphinxDocSource, GitHubDocSource]] = [*SPHINX_SOURCES, *GITHUB_SOURCES]
+    for source in all_sources:
+        if source.name in sources:
+            raise ValueError(f"Duplicate MLX source name: {source.name}")
+        sources[source.name] = source.output_dir
+    return sources
+
+
+def valid_output_dir(output_dir: Any) -> bool:
+    """A stored output dir is safe to scan and clean: a relative path strictly
+    inside OUTPUT_BASE (never OUTPUT_BASE itself, never outside it)."""
+    if not isinstance(output_dir, str) or not output_dir or "\\" in output_dir:
+        return False
+    path = PurePosixPath(output_dir)
+    if path.is_absolute() or any(part in ("", ".", "..") for part in path.parts):
+        return False
+    target = OUTPUT_BASE / output_dir
+    return target != OUTPUT_BASE and is_safe_path(OUTPUT_BASE, target)
+
+
+def source_location(output_dir: str, all_output_dirs: Iterable[str]) -> KeptLocation:
+    """A source's files: everything under its output dir except the other
+    sources' own dirs nested inside it (strictly: a dir that differs from it
+    only in casing, e.g. its own old dir, is not excluded)."""
+    path = OUTPUT_BASE / output_dir
+    excluded = tuple(sorted({
+        OUTPUT_BASE / other for other in all_output_dirs
+        if is_under(OUTPUT_BASE / other, path) and not is_under(path, OUTPUT_BASE / other)
+    }))
+    return KeptLocation(path, reason="", excluded=excluded)
 
 
 def is_safe_path(base_dir: Path, target_path: Path) -> bool:
@@ -231,6 +332,53 @@ def normalize_url(base_url: str, href: str) -> Optional[str]:
 
     # Relative URL
     return urljoin(base_url, href)
+
+
+def normalize_link(page_url: str, href: str, source: SphinxDocSource) -> Optional[str]:
+    """The page a link on page_url points to, as one canonical URL; None if
+    it isn't a page of source.
+
+    Every spelling of a page maps to one URL, so no two URLs map to the same
+    file: the #fragment and ?query are stripped (the link is kept), a
+    directory (".../") is its index.html, and an extensionless page is its
+    .html (the site serves both). Other files (images, sources) are skipped,
+    and so is a link whose host part urllib rejects (e.g. a placeholder like
+    "http://[your-host]:8080/"): it can't be on the source's own host.
+    """
+    try:
+        normalized = normalize_url(page_url, href)
+        if normalized is None:
+            return None
+        normalized = urlunparse(urlparse(normalized)._replace(query="", fragment=""))
+    except ValueError as e:
+        logger.debug(f"Skipping malformed link {href!r} on {page_url}: {e}")
+        return None
+
+    # Check if within base URL (the base without its trailing slash is the root too)
+    if normalized + "/" == source.base_url:
+        normalized = source.base_url
+    if not normalized.startswith(source.base_url):
+        return None
+
+    # Check skip paths
+    rel_path = normalized[len(source.base_url):]
+    if any(skip in rel_path for skip in source.skip_paths):
+        return None
+
+    # Only include .html pages
+    name = rel_path.split('/')[-1]
+    if not name:
+        return normalized + "index.html"
+    if name.endswith('.html'):
+        return normalized
+    if '.' in name:
+        return None
+    return normalized + ".html"
+
+
+def sphinx_root_url(source: SphinxDocSource) -> str:
+    """A Sphinx source's root page (where discovery starts): its index.html."""
+    return urljoin(source.base_url, "index.html")
 
 
 def url_to_filepath(url: str, base_url: str, output_dir: Path) -> Optional[Path]:
@@ -498,107 +646,23 @@ def convert_table_to_markdown(table) -> str:
 # GITHUB MARKDOWN SCRAPING
 # =============================================================================
 
-GITHUB_RAW = "https://raw.githubusercontent.com"
-
-
 async def fetch_github_file(
     session: aiohttp.ClientSession,
     repo: str,
     branch: str,
     path: str
-) -> Optional[str]:
-    """Fetch raw file content from GitHub."""
-    url = f"{GITHUB_RAW}/{repo}/{branch}/{path}"
-    try:
-        async with session.get(url, timeout=HTTP_TIMEOUT) as response:
-            if response.status == 200:
-                return await response.text()
-            elif response.status == 404:
-                logger.debug(f"File not found: {path}")
-                return None
-            else:
-                logger.warning(f"HTTP {response.status} for {url}")
-                return None
-    except Exception as e:
-        logger.warning(f"Error fetching {url}: {e}")
-        return None
+) -> Union[str, FetchFailed]:
+    """Fetch raw file content from GitHub (retrying transient failures).
+
+    Returns the content, or FetchFailed with the status (404/410 is a
+    removal, anything else a failure of the fetch).
+    """
+    return await fetch_github_raw(session, repo, branch, path, timeout=HTTP_TIMEOUT)
 
 
-async def fetch_github_directory(
-    session: aiohttp.ClientSession,
-    repo: str,
-    branch: str,
-    path: str
-) -> tuple[List[dict], bool]:
-    """Fetch directory listing from GitHub API. Returns (contents, had_error)."""
-    url = f"https://api.github.com/repos/{repo}/contents/{path}?ref={branch}"
-
-    headers = {"Accept": "application/vnd.github.v3+json"}
-
-    # Add token if available (for higher rate limits)
-    github_token = os.environ.get("GITHUB_TOKEN")
-    if github_token:
-        headers["Authorization"] = f"token {github_token}"
-
-    try:
-        async with session.get(url, headers=headers, timeout=HTTP_TIMEOUT) as response:
-            if response.status == 200:
-                return await response.json(), False
-            elif response.status == 404:
-                return [], False  # Not an error, just doesn't exist
-            else:
-                logger.warning(f"GitHub API {response.status} for {path}")
-                return [], True  # API error
-    except Exception as e:
-        logger.warning(f"Error fetching directory {path}: {e}")
-        return [], True
-
-
-async def discover_markdown_files(
-    session: aiohttp.ClientSession,
-    repo: str,
-    branch: str,
-    directory: str,
-    recursive: bool = True
-) -> tuple[List[str], int]:
-    """Discover all markdown files in a GitHub directory. Returns (files, error_count)."""
-    files = []
-    error_count = 0
-
-    contents, had_error = await fetch_github_directory(session, repo, branch, directory)
-    if had_error:
-        error_count += 1
-    await asyncio.sleep(REQUEST_DELAY)  # Rate limit after API call
-
-    # Separate files and directories
-    md_files = []
-    subdirs = []
-
-    # Skip directories that can't contain markdown (Xcode-specific)
-    skip_patterns = ('.xcassets', '.xcworkspace', '.xcodeproj', '.playground')
-
-    for item in contents:
-        if item.get("type") == "file" and item.get("name", "").endswith(".md"):
-            md_files.append(item["path"])
-        elif item.get("type") == "dir" and recursive:
-            dir_name = item.get("name", "")
-            if not any(dir_name.endswith(pat) for pat in skip_patterns):
-                subdirs.append(item["path"])
-
-    files.extend(md_files)
-
-    # Discover subdirectories in parallel
-    if subdirs:
-        tasks = [
-            discover_markdown_files(session, repo, branch, subdir, recursive=True)
-            for subdir in subdirs
-        ]
-        results = await asyncio.gather(*tasks)
-        for sub_files, sub_errors in results:
-            files.extend(sub_files)
-            error_count += sub_errors
-
-    return files, error_count
+def github_directory_key(repo: str, directory: str) -> str:
+    """The failure-counts key of a GitHub directory (its files' keys start with it)."""
+    return f"github:{repo}:{directory}/"
 
 
 def add_github_source_header(content: str, source: GitHubDocSource, file_path: str) -> str:
@@ -636,34 +700,52 @@ async def scrape_github_source(
     session: aiohttp.ClientSession,
     source: GitHubDocSource,
     hashes: Dict[str, str],
+    run: ScrapeRun,
     dry_run: bool = False,
     force: bool = False
-) -> Dict[str, Any]:
-    """Scrape a GitHub markdown documentation source."""
-    stats = {"downloaded": 0, "skipped": 0, "errors": 0, "expected_files": []}
+) -> Dict[str, int]:
+    """Scrape a GitHub markdown documentation source, reporting every outcome to run."""
+    stats = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0}
 
     output_dir = OUTPUT_BASE / source.output_dir
 
-    # Collect all files to fetch
-    files_to_fetch: List[str] = list(source.files)
+    # Collect all files to fetch: repo path -> whether it is a configured file
+    files_to_fetch: Dict[str, bool] = {file_path: True for file_path in source.files}
 
     # Discover files in directories (in parallel)
     if source.directories:
-        tasks = [
-            discover_markdown_files(session, source.repo, source.branch, directory)
+        results = await asyncio.gather(*(
+            discover_github_markdown(
+                session, source.repo, source.branch, directory,
+                skip_dir_suffixes=XCODE_DIR_SUFFIXES, delay=REQUEST_DELAY, timeout=HTTP_TIMEOUT,
+            )
             for directory in source.directories
-        ]
-        results = await asyncio.gather(*tasks)
-        for discovered, dir_errors in results:
-            files_to_fetch.extend(discovered)
-            stats["errors"] += dir_errors
+        ))
+        for directory, (discovered, failures) in zip(source.directories, results, strict=True):
+            directory_key = github_directory_key(source.repo, directory)
+            # The configured directory itself: on failure nothing of it was found
+            root_failure = failures.pop(directory, None)
+            if root_failure is not None:
+                run.source_failed(directory_key, root_failure, KeptLocation(output_dir / directory, reason=""),
+                                  key_prefix=directory_key)
+                stats["gone" if root_failure.gone else "failed"] += 1
+                continue
+            run.source_ok(directory_key)
+            # Subdirectories found by a listing
+            for subdirectory, failure in sorted(failures.items()):
+                subdirectory_key = github_directory_key(source.repo, subdirectory)
+                run.directory_failed(subdirectory_key, failure, KeptLocation(output_dir / subdirectory, reason=""),
+                                     key_prefix=subdirectory_key)
+                stats["gone" if failure.gone else "failed"] += 1
+            for file_path in discovered:
+                files_to_fetch.setdefault(file_path, False)
 
     console.print(f"  Found {len(files_to_fetch)} markdown files")
 
-    for file_path in files_to_fetch:
+    for file_path, configured in files_to_fetch.items():
         # Validate path is safe
         if not validate_github_path(file_path):
-            stats["errors"] += 1
+            logger.warning(f"unsafe_path_skipped: {source.repo}:{file_path}")
             continue
 
         # Determine output path
@@ -679,47 +761,56 @@ async def scrape_github_source(
 
         # Validate output path is within output directory
         if not is_safe_path(output_dir, output_path):
-            logger.warning(f"Skipping unsafe output path: {output_path}")
-            stats["errors"] += 1
+            logger.warning(f"unsafe_path_skipped: {output_path}")
             continue
 
         hash_key = f"github:{source.repo}:{file_path}"
-
-        stats["expected_files"].append(str(output_path.resolve()))
 
         # Fetch content
         content = await fetch_github_file(
             session, source.repo, source.branch, file_path
         )
 
-        if content is None:
-            stats["errors"] += 1
+        if isinstance(content, FetchFailed):
+            stats["gone" if content.gone else "failed"] += 1
+            if configured:
+                # A configured file is a source: only 404/410 x2 removes it, never D8
+                kept = run.configured_file_failed(hash_key, content, output_path)
+            else:
+                # A file we have: its key, or its file (a lost hash file loses keys, not files)
+                kept = run.page_failed(hash_key, content,
+                                       previously_good=hash_key in hashes or has_file_named(output_path))
+            if kept:
+                run.keep_file(hash_key, output_path)
             continue
+        run.page_ok(hash_key, output_path)
 
         await asyncio.sleep(REQUEST_DELAY)
 
-        # Check if content changed
+        # Check if content changed (re-download if the local file vanished)
         content_hash = compute_hash(content)
-        if not force and hash_key in hashes and hashes[hash_key] == content_hash:
+        if not force and hash_key in hashes and hashes[hash_key] == content_hash and output_path.exists():
+            run.page_saved(hash_key)
             stats["skipped"] += 1
             continue
 
-        # Add source header
-        content = add_github_source_header(content, source, file_path)
+        # Convert and save; an error here is ours: the file is kept, never deleted
+        try:
+            # Add source header
+            content = add_github_source_header(content, source, file_path)
 
-        if dry_run:
-            console.print(f"  [dim]Would write:[/dim] {output_path}")
-        else:
-            try:
+            if dry_run:
+                console.print(f"  [dim]Would write:[/dim] {output_path}")
+            else:
                 output_path.parent.mkdir(parents=True, exist_ok=True)
-                with open(output_path, 'w', encoding='utf-8') as f:
-                    f.write(content)
+                write_text_atomic(output_path, content)  # a failed write keeps the old doc
                 hashes[hash_key] = content_hash
-            except IOError as e:
-                logger.warning(f"Could not write {output_path}: {e}")
-                stats["errors"] += 1
-                continue
+        except Exception as e:
+            run.local_error(hash_key, output_path, f"{type(e).__name__}: {e}")
+            stats["failed"] += 1
+            continue
 
+        run.page_saved(hash_key)
         stats["downloaded"] += 1
 
     return stats
@@ -729,134 +820,153 @@ async def scrape_github_source(
 # SPHINX HTML CRAWLING
 # =============================================================================
 
-async def fetch_page(session: aiohttp.ClientSession, url: str) -> Optional[str]:
-    """Fetch a single page."""
+class DuplicatePathError(ValueError):
+    """Two page URLs map to the same output file (a bug of ours)."""
+
+
+async def fetch_page(session: AsyncSession, url: str) -> Union[str, FetchFailed]:
+    """Fetch a single page (wafer retries 5xx and connection errors, and
+    rotates its identity on a 403 or challenge).
+
+    Returns the HTML, or FetchFailed with the status (404/410 is a removal).
+    """
     try:
-        async with session.get(url, timeout=HTTP_TIMEOUT) as response:
-            if response.status == 200:
-                return await response.text()
-            elif response.status == 404:
-                return None
-            else:
-                logger.warning(f"HTTP {response.status} for {url}")
-                return None
-    except Exception as e:
-        logger.warning(f"Error fetching {url}: {e}")
-        return None
+        response = await session.get(url, timeout=SPHINX_TIMEOUT, attempt_timeout=SPHINX_ATTEMPT_TIMEOUT)
+    except WaferError as e:
+        # Timeout, connection error, challenge, rate limit or empty body after all retries
+        status = getattr(e, "status_code", None)
+        logger.warning(f"Error fetching {url}: {type(e).__name__}: {e}")
+        return FetchFailed(
+            status=status if isinstance(status, int) else None,
+            error=f"{type(e).__name__}: {e}",
+            transient=True,
+        )
+    if response.ok:
+        html: str = response.text
+        return html
+    if response.status_code not in (404, 410):
+        logger.warning(f"HTTP {response.status_code} for {url}")
+    return status_failure(response.status_code)
+
+
+def extract_links(html: str, url: str, source: SphinxDocSource) -> List[str]:
+    """The source's pages a page links to (normalize_link)."""
+    soup = BeautifulSoup(html, 'html.parser')
+    links = []
+    for a in soup.find_all('a', href=True):
+        link = normalize_link(url, a['href'], source)
+        if link is not None:
+            links.append(link)
+    return links
 
 
 async def discover_pages(
-    session: aiohttp.ClientSession,
+    session: AsyncSession,
     source: SphinxDocSource,
     start_url: str,
-    visited: Set[str],
-    semaphore: asyncio.Semaphore
-) -> Set[str]:
-    """Discover all pages by crawling from start URL."""
-    to_visit = {start_url}
-    discovered = set()
+) -> Tuple[Dict[str, str], Dict[str, FetchFailed], Dict[str, str]]:
+    """Discover all pages by crawling from start URL, fetching each once.
+
+    The pages are fetched one at a time: wafer's rate_limit spaces a request
+    from the previous one to its host only when they don't overlap
+    (concurrent requests would all wait on the same last request and go out
+    together).
+
+    Returns:
+        ({url: html} for every page that loaded, {url: failure} for every
+        page that didn't, {url: error} for every page that loaded but whose
+        links couldn't be read; the links of the last two are unknown this run)
+    """
+    to_visit = deque([start_url])
+    queued = {start_url}
+    pages: Dict[str, str] = {}
+    failures: Dict[str, FetchFailed] = {}
+    unprocessed: Dict[str, str] = {}
 
     while to_visit:
-        # Get next batch
-        batch = set()
-        while to_visit and len(batch) < MAX_CONCURRENT:
-            batch.add(to_visit.pop())
+        url = to_visit.popleft()
+        result = await fetch_page(session, url)
+        if isinstance(result, FetchFailed):
+            failures[url] = result
+            continue
+        try:
+            links = extract_links(result, url, source)
+        except Exception as e:
+            # A bug of ours, raised before the page's links were read: the
+            # rest of the crawl goes on, and the page keeps its file and
+            # blocks the cleanup (ScrapeRun.unprocessed)
+            unprocessed[url] = f"{type(e).__name__}: {e}"
+            continue
+        pages[url] = result
+        for link in links:
+            if link not in queued:
+                queued.add(link)
+                to_visit.append(link)
 
-        # Fetch batch concurrently
-        tasks = []
-        for url in batch:
-            if url in visited:
-                continue
-            visited.add(url)
-            tasks.append(fetch_and_extract_links(session, url, source, semaphore))
-
-        results = await asyncio.gather(*tasks)
-
-        for url, links in zip(batch, results):
-            if links is not None:
-                discovered.add(url)
-                for link in links:
-                    if link not in visited:
-                        to_visit.add(link)
-
-        await asyncio.sleep(REQUEST_DELAY)
-
-    return discovered
+    return pages, failures, unprocessed
 
 
-async def fetch_and_extract_links(
-    session: aiohttp.ClientSession,
-    url: str,
-    source: SphinxDocSource,
-    semaphore: asyncio.Semaphore
-) -> Optional[List[str]]:
-    """Fetch page and extract internal links."""
-    async with semaphore:
-        html = await fetch_page(session, url)
-        if html is None:
-            return None
-
-        soup = BeautifulSoup(html, 'html.parser')
-        links = []
-
-        for a in soup.find_all('a', href=True):
-            href = a['href']
-            normalized = normalize_url(url, href)
-
-            if normalized is None:
-                continue
-
-            # Check if within base URL
-            if not normalized.startswith(source.base_url):
-                continue
-
-            # Check skip paths
-            rel_path = normalized[len(source.base_url):]
-            if any(skip in rel_path for skip in source.skip_paths):
-                continue
-
-            # Only include .html files
-            if not normalized.endswith('.html') and '.' in rel_path.split('/')[-1]:
-                continue
-
-            links.append(normalized)
-
-        return links
+def collision_path(path: Path, output_dir: Path) -> Path:
+    """A page's file name in a case-insensitive collision set: its stem plus a
+    suffix derived from its own relative path (url_to_filepath's)."""
+    suffix = hashlib.sha1(str(path.relative_to(output_dir)).encode()).hexdigest()[:5]
+    return path.with_name(f"{path.stem}-{suffix}{path.suffix}")
 
 
-async def scrape_source(
-    session: aiohttp.ClientSession,
-    source: SphinxDocSource,
-    hashes: Dict[str, str],
-    dry_run: bool = False,
-    force: bool = False
-) -> Dict[str, Any]:
-    """Scrape a single documentation source."""
-    stats = {"downloaded": 0, "skipped": 0, "errors": 0, "expected_files": []}
+def other_name(url: str, planned: Path, source: SphinxDocSource, output_dir: Path) -> Optional[Path]:
+    """A page's other file name: with its collision suffix when it is planned
+    without it, else without it (None if its path is unsafe).
 
-    output_dir = OUTPUT_BASE / source.output_dir
-    semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+    A page has two names (plan_paths adds the suffix only while another page
+    collides with it), so a collision partner added or removed upstream
+    moves the page to its other name; until it is written there, its doc is
+    under the old one.
+    """
+    unsuffixed = url_to_filepath(url, source.base_url, output_dir)
+    if unsuffixed is None:
+        return None
+    return collision_path(unsuffixed, output_dir) if planned == unsuffixed else unsuffixed
 
-    console.print(f"\n[cyan]Discovering pages for {source.name}...[/cyan]")
 
-    # Discover all pages
-    visited: Set[str] = set()
-    pages = await discover_pages(session, source, source.base_url, visited, semaphore)
+def has_page_file(url: str, source: SphinxDocSource, output_dir: Path) -> bool:
+    """A file of the page is on disk under one of its two names (other_name),
+    exactly (has_file_named): a page we have, also when its hash key was lost."""
+    unsuffixed = url_to_filepath(url, source.base_url, output_dir)
+    return unsuffixed is not None and any(
+        has_file_named(path) for path in (unsuffixed, collision_path(unsuffixed, output_dir))
+    )
 
-    # Also try index.html explicitly
-    index_url = urljoin(source.base_url, "index.html")
-    if index_url not in pages:
-        pages.add(index_url)
 
-    console.print(f"  Found {len(pages)} pages")
+def keep_unwritten_page(run: ScrapeRun, url: str, planned: Path, source: SphinxDocSource, output_dir: Path) -> None:
+    """Also keep the file under the other name of a page this run keeps
+    without writing it (its fetch failed, it failed to convert or save, its
+    links couldn't be read), if there is one (other_name).
 
+    A file under the planned name (left by an earlier run under that name)
+    may be older than the one under the other name, so whether the planned
+    file exists doesn't tell which one holds the doc: both are kept.
+    """
+    other = other_name(url, planned, source, output_dir)
+    if other is not None and has_file_named(other):
+        logger.info(f"previous_name_kept: {run.rel(other)} may hold {url} until it is written as {run.rel(planned)}")
+        run.expect(other)
+
+
+def plan_paths(urls: Iterable[str], source: SphinxDocSource, output_dir: Path) -> Dict[str, Optional[Path]]:
+    """Map every page to its target file (None if its path is unsafe).
+
+    Raises:
+        DuplicatePathError: Two URLs map to the same file
+    """
     # Map every page to its target file, disambiguating names that collide
     # case-insensitively (e.g. mlx.core.PrintOptions vs mlx.core.printoptions)
     # so the tree stays usable on case-insensitive filesystems. EVERY member
     # of a collision set gets a suffix derived from its own relative path —
-    # per-page deterministic, so set membership changes never rename siblings.
+    # per-page deterministic, so set membership changes never rename siblings
+    # that stay in a set (a page that leaves or joins one drops or gains its
+    # suffix: other_name, keep_unwritten_page, and scrape_source's skip check).
     planned: Dict[str, Optional[Path]] = {
-        url: url_to_filepath(url, source.base_url, output_dir) for url in sorted(pages)
+        url: url_to_filepath(url, source.base_url, output_dir) for url in sorted(urls)
     }
     by_folded: Dict[str, List[str]] = {}
     for page_url, fp in planned.items():
@@ -868,8 +978,90 @@ async def scrape_source(
         for page_url in colliding:
             fp = planned[page_url]
             assert fp is not None
-            suffix = hashlib.sha1(str(fp.relative_to(output_dir)).encode()).hexdigest()[:5]
-            planned[page_url] = fp.with_name(f"{fp.stem}-{suffix}{fp.suffix}")
+            planned[page_url] = collision_path(fp, output_dir)
+
+    # Links are normalized (normalize_link), so no two URLs may share a file
+    by_path: Dict[Path, str] = {}
+    for page_url, fp in planned.items():
+        if fp is None:
+            continue
+        if fp in by_path:
+            raise DuplicatePathError(f"{by_path[fp]} and {page_url} both map to {fp}")
+        by_path[fp] = page_url
+    return planned
+
+
+async def scrape_source(
+    session: AsyncSession,
+    source: SphinxDocSource,
+    hashes: Dict[str, str],
+    run: ScrapeRun,
+    location: KeptLocation,
+    dry_run: bool = False,
+    force: bool = False
+) -> Dict[str, int]:
+    """Scrape a single documentation source, reporting every outcome to run.
+
+    Args:
+        location: The source's files (kept whole when its root fails)
+    """
+    stats = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0}
+
+    output_dir = OUTPUT_BASE / source.output_dir
+    root_url = sphinx_root_url(source)
+    root_key = f"{source.name}:{root_url}"
+
+    console.print(f"\n[cyan]Discovering pages for {source.name}...[/cyan]")
+
+    # Discover all pages
+    pages, failures, unprocessed = await discover_pages(session, source, root_url)
+
+    # The configured root: on failure nothing of the source was found
+    root_failure = failures.pop(root_url, None)
+    if root_failure is not None:
+        run.source_failed(root_key, root_failure, location, key_prefix=f"{source.name}:")
+        stats["gone" if root_failure.gone else "failed"] += 1
+        return stats
+    run.source_ok(root_key)
+
+    console.print(f"  Found {len(pages)} pages" + (f" ({len(failures)} more not fetched)" if failures else "")
+                  + (f" ({len(unprocessed)} more whose links couldn't be read)" if unprocessed else ""))
+
+    # Pages that failed: removed (404/410), or kept and blocking (page_failed)
+    kept_failed: List[str] = []
+    for url, failure in sorted(failures.items()):
+        stats["gone" if failure.gone else "failed"] += 1
+        hash_key = f"{source.name}:{url}"
+        # A page we have: its key, or its file under either name (a lost hash file loses keys, not files)
+        previously_good = hash_key in hashes or has_page_file(url, source, output_dir)
+        if run.page_failed(hash_key, failure, previously_good=previously_good):
+            kept_failed.append(url)
+
+    try:
+        planned = plan_paths([*pages, *kept_failed, *unprocessed], source, output_dir)
+    except DuplicatePathError as e:
+        run.error(f"duplicate_output_path: {source.name}: {e}")
+        run.keep_location(KeptLocation(location.path, "duplicate_output_path", location.excluded),
+                          key_prefix=f"{source.name}:")
+        return stats
+
+    for url in kept_failed:
+        filepath = planned[url]
+        if filepath is not None:
+            run.keep_file(f"{source.name}:{url}", filepath)
+            keep_unwritten_page(run, url, filepath, source, output_dir)
+
+    # Pages whose links couldn't be read: kept as they are (not converted)
+    # and blocking, uncounted, as HIG's (the outer except of the plan's
+    # "links first" rule): lifting it would orphan their live children
+    for url, error in sorted(unprocessed.items()):
+        stats["failed"] += 1
+        hash_key = f"{source.name}:{url}"
+        filepath = planned[url]
+        if filepath is not None:
+            run.page_ok(hash_key, filepath)  # its fetch did succeed
+            keep_unwritten_page(run, url, filepath, source, output_dir)
+        run.unprocessed(hash_key, filepath, error)
 
     # Process each page
     for url in sorted(pages):
@@ -877,186 +1069,247 @@ async def scrape_source(
 
         # Skip if path validation failed
         if filepath is None:
-            stats["errors"] += 1
+            logger.warning(f"unsafe_path_skipped: {url}")
             continue
 
         hash_key = f"{source.name}:{url}"
+        run.page_ok(hash_key, filepath)
+        html = pages[url]
 
-        stats["expected_files"].append(str(filepath.resolve()))
-
-        async with semaphore:
-            html = await fetch_page(session, url)
-
-        if html is None:
-            stats["errors"] += 1
-            continue
-
-        # Check if content changed (hash the HTML). Only honor the skip when
-        # the planned output file actually exists — otherwise a renamed target
-        # (collision disambiguation) or deleted file would never be written.
+        # Check if content changed (hash the HTML). The stored hash says this
+        # content was written, not under which of the page's two names
+        # (plan_paths), so only honor the skip when the planned file exists
+        # under exactly its name and the other name holds no file (left by a
+        # blocked or held cleanup, it may hold the newer content). Otherwise a
+        # renamed target (collision disambiguation), a deleted file, or a case
+        # twin's leftover that a case-insensitive filesystem reports under the
+        # planned name would never be written.
         content_hash = compute_hash(html)
-        if not force and hash_key in hashes and hashes[hash_key] == content_hash and filepath.exists():
+        other = other_name(url, filepath, source, output_dir)
+        if (not force and hash_key in hashes and hashes[hash_key] == content_hash and has_file_named(filepath)
+                and not (other is not None and has_file_named(other))):
+            run.page_saved(hash_key)
             stats["skipped"] += 1
             continue
 
-        # Convert to markdown
+        # Convert and save; an error here is ours: the file is kept, never deleted
         try:
             markdown = html_to_markdown(html, source, url)
+
+            if dry_run:
+                console.print(f"  [dim]Would write:[/dim] {filepath}")
+            else:
+                filepath.parent.mkdir(parents=True, exist_ok=True)
+                if filepath.is_file() and not has_file_named(filepath):
+                    # A case-insensitive filesystem: a file named in another
+                    # casing is this same path, and writing would overwrite it
+                    # but keep its name, so it is replaced by one with this name
+                    logger.info(f"case_twin_replaced: {run.rel(filepath)} was held by a file named in another casing")
+                    filepath.unlink()
+                write_text_atomic(filepath, markdown)  # a failed write keeps the old doc
+                hashes[hash_key] = content_hash
         except Exception as e:
-            logger.warning(f"Error converting {url}: {e}")
-            stats["errors"] += 1
+            run.local_error(hash_key, filepath, f"{type(e).__name__}: {e}")
+            keep_unwritten_page(run, url, filepath, source, output_dir)
+            stats["failed"] += 1
             continue
 
-        if dry_run:
-            console.print(f"  [dim]Would write:[/dim] {filepath}")
-        else:
-            try:
-                filepath.parent.mkdir(parents=True, exist_ok=True)
-                with open(filepath, 'w', encoding='utf-8') as f:
-                    f.write(markdown)
-                hashes[hash_key] = content_hash
-            except IOError as e:
-                logger.warning(f"Could not write {filepath}: {e}")
-                stats["errors"] += 1
-                continue
-
+        run.page_saved(hash_key)
         stats["downloaded"] += 1
-        await asyncio.sleep(REQUEST_DELAY)
 
     return stats
 
 
-def cleanup_orphaned_files(
-    all_expected_files: Set[str],
-    hashes: Dict[str, str],
-    dry_run: bool = False
-) -> int:
-    """Clean up orphaned files and empty directories. Returns count of deleted files."""
-    deleted_count = 0
+# =============================================================================
+# SOURCES AND CLEANUP
+# =============================================================================
 
-    # Get unique top-level output directories to avoid scanning nested dirs multiple times
-    unique_top_dirs: Set[Path] = set()
-    for source in SPHINX_SOURCES:
-        top_dir = Path(source.output_dir).parts[0]
-        unique_top_dirs.add(OUTPUT_BASE / top_dir)
-    for source in GITHUB_SOURCES:
-        top_dir = Path(source.output_dir).parts[0]
-        unique_top_dirs.add(OUTPUT_BASE / top_dir)
+def stored_sources(metadata: Dict[str, Any]) -> Dict[str, str]:
+    """metadata.sources as saved, without entries that are malformed or unsafe to clean."""
+    stored = metadata.get(SOURCES_KEY)
+    if stored is None:
+        return {}
+    if not isinstance(stored, dict):
+        logger.warning(f"Ignoring malformed metadata.{SOURCES_KEY} in {HASH_FILE}")
+        return {}
+    sources: Dict[str, str] = {}
+    for name, output_dir in stored.items():
+        if isinstance(name, str) and valid_output_dir(output_dir):
+            sources[name] = output_dir
+        else:
+            logger.warning(f"Ignoring metadata.{SOURCES_KEY} entry {name!r}: {output_dir!r} is not a safe output dir")
+    return sources
 
-    # Also add non-nested directories directly
-    for source in SPHINX_SOURCES + GITHUB_SOURCES:
-        if '/' not in source.output_dir:
-            unique_top_dirs.add(OUTPUT_BASE / source.output_dir)
 
-    for output_dir in unique_top_dirs:
-        if not output_dir.exists():
+def dropped_sources(stored: Dict[str, str], configured: Dict[str, str]) -> Dict[str, str]:
+    """The stored output dirs that no configured source has any more,
+    {name: output_dir}: a source dropped from the config, or the old dir of a
+    source whose output_dir changed (named "<name>@<old output_dir>", since
+    its own name now records its new dir). Dirs are compared exactly: one
+    renamed only in casing is another dir on a case-sensitive filesystem."""
+    configured_dirs = set(configured.values())
+    dropped: Dict[str, str] = {}
+    for name, output_dir in stored.items():
+        if output_dir in configured_dirs:
             continue
+        dropped[f"{name}@{output_dir}" if name in configured else name] = output_dir
+    return dropped
 
-        existing = set(str(f.resolve()) for f in output_dir.rglob("*.md"))
-        orphaned = existing - all_expected_files
 
-        if orphaned:
-            if not dry_run:
-                console.print(f"\n[yellow]Cleaning up {len(orphaned)} orphaned files in {output_dir.name}...[/yellow]")
-            for orphan_path in orphaned:
-                if dry_run:
-                    console.print(f"  [dim]Would delete:[/dim] {orphan_path}")
-                else:
-                    try:
-                        Path(orphan_path).unlink()
-                        deleted_count += 1
+def scan_dirs(configured: Dict[str, str], dropped: Dict[str, str]) -> List[Path]:
+    """The dirs the orphan cleanup scans: each configured source's top-level
+    dir, and each dropped source's own dir (never a shared parent)."""
+    dirs = {OUTPUT_BASE / Path(output_dir).parts[0] for output_dir in configured.values()}
+    dirs.update(OUTPUT_BASE / output_dir for output_dir in dropped.values())
+    return sorted(dirs)
 
-                        # Remove corresponding hash entries
-                        keys_to_remove = [
-                            k for k in hashes
-                            if orphan_path.endswith(k.split(":")[-1].replace("/", os.sep).split(os.sep)[-1])
-                        ]
-                        for key in keys_to_remove:
-                            del hashes[key]
 
-                    except Exception as e:
-                        logger.warning(f"Could not delete {orphan_path}: {e}")
+def _md_files(directory: Path) -> Dict[Tuple[int, int], Path]:
+    """The .md files under a dir, by directory entry (st_dev, st_ino)."""
+    files: Dict[Tuple[int, int], Path] = {}
+    if directory.is_dir():
+        for file in directory.rglob("*.md"):
+            if file.is_file():
+                entry = file.lstat()
+                files[(entry.st_dev, entry.st_ino)] = file
+    return files
 
-    # Clean up empty directories
-    if not dry_run:
-        for output_dir in unique_top_dirs:
-            if not output_dir.exists():
-                continue
-            # Sort by depth (deepest first) to clean up nested empty dirs
-            for dirpath in sorted(output_dir.rglob("*"), key=lambda p: len(p.parts), reverse=True):
-                if dirpath.is_dir():
-                    try:
-                        if not any(dirpath.iterdir()):
-                            dirpath.rmdir()
-                    except Exception:
-                        pass  # Directory not empty or other error
 
-    return deleted_count
+def dropped_source_files(output_dir: str, configured: Dict[str, str]) -> List[Path]:
+    """The .md files a dropped source still has: those under its own dir that
+    no configured source's dir (nested in it, or the same) holds.
+
+    Told apart by directory entry, not by name: a configured dir that differs
+    from it only in casing holds its files only where the filesystem makes it
+    the same dir (macOS); on a case-sensitive one (CI) they are the old files.
+    """
+    path = OUTPUT_BASE / output_dir
+    files = _md_files(path)
+    for other in configured.values():
+        if is_under(OUTPUT_BASE / other, path):
+            for entry in _md_files(OUTPUT_BASE / other):
+                files.pop(entry, None)
+    return sorted(files.values())
+
+
+def prune_hashes(hashes: Dict[str, str], run: ScrapeRun, cleanup: CleanupResult) -> int:
+    """After a clean run, drop every key this run didn't produce or keep
+    (removed pages, renamed paths, sources dropped from the config, stale
+    keys). Returns how many were dropped.
+
+    Not on a run whose valve held files: a key can't be mapped back to its
+    file (the Sphinx collision suffixes; a dropped GitHub source's repo isn't
+    stored), so every key waits until the run that deletes the held files or
+    finds them linked again. Otherwise a held page linked again would look
+    new (a 403 on it wouldn't block, and its file would be deleted) and be
+    rewritten, and a dropped source's keys would go before its files.
+    """
+    if cleanup.held:
+        logger.info(f"prune_deferred: the valve holds files this run ({', '.join(sorted(cleanup.held))}); "
+                    "hash keys are pruned on the run that deletes them")
+        return 0
+    stale = [key for key in hashes if key not in run.produced and not run.keeps_key(key)]
+    for key in stale:
+        del hashes[key]
+    return len(stale)
 
 
 async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, Any]:
-    """Scrape all configured documentation sources."""
+    """Scrape all configured documentation sources.
+
+    Returns:
+        The run's totals, with "exit_code" (0 clean, 1 an error of ours)
+    """
     console.print("\n[bold blue]MLX / coremltools Documentation Scraper[/bold blue]\n")
 
-    # Load existing hashes
-    hashes = {} if force else _load_hashes()
+    configured = configured_sources()
 
-    total_stats = {"downloaded": 0, "skipped": 0, "errors": 0, "deleted": 0}
-    all_expected_files: Set[str] = set()
+    # Load existing hashes (also with --force: the failure policy needs to
+    # know which files we already have; --force only rewrites unchanged ones)
+    hashes, metadata, load_error = _load_hash_file()
+    stored_hashes = dict(hashes)
+    run = ScrapeRun("MLX", OUTPUT_BASE, metadata, load_error)
+
+    # Output dirs no longer configured (a source dropped from the config, or
+    # moved to another output_dir) are cleaned until their files are gone
+    dropped = dropped_sources(stored_sources(metadata), configured)
+    all_output_dirs = [*configured.values(), *dropped.values()]
+
+    total_stats: Dict[str, Any] = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0, "deleted": 0, "pruned": 0}
 
     connector = aiohttp.TCPConnector(limit=MAX_CONCURRENT)
-    async with aiohttp.ClientSession(connector=connector) as session:
+    async with AsyncSession(rate_limit=REQUEST_DELAY, max_retries=SPHINX_MAX_RETRIES) as sphinx_session, \
+            aiohttp.ClientSession(connector=connector) as session:
         # Scrape Sphinx HTML documentation sites
         console.print("[bold cyan]═══ Sphinx HTML Documentation ═══[/bold cyan]")
-        for source in SPHINX_SOURCES:
-            console.print(f"\n[bold]{source.name}[/bold] ({source.base_url})")
+        for sphinx_source in SPHINX_SOURCES:
+            console.print(f"\n[bold]{sphinx_source.name}[/bold] ({sphinx_source.base_url})")
 
             stats = await scrape_source(
-                session, source, hashes, dry_run=dry_run, force=force
+                sphinx_session, sphinx_source, hashes, run,
+                source_location(sphinx_source.output_dir, all_output_dirs), dry_run=dry_run, force=force
             )
 
-            total_stats["downloaded"] += stats["downloaded"]
-            total_stats["skipped"] += stats["skipped"]
-            total_stats["errors"] += stats["errors"]
-            all_expected_files.update(stats["expected_files"])
+            for name in ("downloaded", "skipped", "gone", "failed"):
+                total_stats[name] += stats[name]
 
             console.print(f"  [green]Downloaded:[/green] {stats['downloaded']}")
             console.print(f"  [dim]Skipped:[/dim] {stats['skipped']}")
-            if stats["errors"] > 0:
-                console.print(f"  [red]Errors:[/red] {stats['errors']}")
+            if stats["gone"] > 0:
+                console.print(f"  [yellow]Gone (404/410):[/yellow] {stats['gone']}")
+            if stats["failed"] > 0:
+                console.print(f"  [red]Failed:[/red] {stats['failed']}")
 
         # Scrape GitHub markdown documentation
         console.print("\n[bold cyan]═══ GitHub Markdown Documentation ═══[/bold cyan]")
-        for source in GITHUB_SOURCES:
-            console.print(f"\n[bold]{source.name}[/bold] (github.com/{source.repo})")
+        for github_source in GITHUB_SOURCES:
+            console.print(f"\n[bold]{github_source.name}[/bold] (github.com/{github_source.repo})")
 
             stats = await scrape_github_source(
-                session, source, hashes, dry_run=dry_run, force=force
+                session, github_source, hashes, run, dry_run=dry_run, force=force
             )
 
-            total_stats["downloaded"] += stats["downloaded"]
-            total_stats["skipped"] += stats["skipped"]
-            total_stats["errors"] += stats["errors"]
-            all_expected_files.update(stats["expected_files"])
+            for name in ("downloaded", "skipped", "gone", "failed"):
+                total_stats[name] += stats[name]
 
             console.print(f"  [green]Downloaded:[/green] {stats['downloaded']}")
             console.print(f"  [dim]Skipped:[/dim] {stats['skipped']}")
-            if stats["errors"] > 0:
-                console.print(f"  [red]Errors:[/red] {stats['errors']}")
+            if stats["gone"] > 0:
+                console.print(f"  [yellow]Gone (404/410):[/yellow] {stats['gone']}")
+            if stats["failed"] > 0:
+                console.print(f"  [red]Failed:[/red] {stats['failed']}")
 
-    # Clean up orphaned files (skip if there were errors to avoid deleting legitimate files)
-    if total_stats["errors"] > 0:
-        console.print(
-            f"\n[yellow]Skipping orphan cleanup due to {total_stats['errors']} error(s)[/yellow]"
-        )
-        console.print("  [dim]Run with --force and GITHUB_TOKEN to ensure complete scrape[/dim]")
-    else:
-        deleted_count = cleanup_orphaned_files(all_expected_files, hashes, dry_run=dry_run)
-        total_stats["deleted"] = deleted_count
+    # Clean up orphaned files, unless a failure of ours blocks it: in each
+    # scanned dir, every .md file this run neither produced nor keeps
+    for name, output_dir in dropped.items():
+        logger.info(f"source_dropped: {name} is no longer configured; cleaning {output_dir}")
+    cleanup = run.cleanup(
+        scan_dirs(configured, dropped),
+        removable_dirs=[OUTPUT_BASE / output_dir for output_dir in dropped.values()],
+        dry_run=dry_run,
+    )
+    total_stats["deleted"] = len(cleanup.deleted)
+    if cleanup.deleted and not dry_run:
+        console.print(f"\n[yellow]Deleted {len(cleanup.deleted)} orphaned files[/yellow]")
+    if not cleanup.skipped and not dry_run:
+        total_stats["pruned"] = prune_hashes(hashes, run, cleanup)
 
-    # Save hashes if anything changed (downloaded or deleted)
-    if not dry_run and (total_stats["downloaded"] > 0 or total_stats["deleted"] > 0):
-        _save_hashes(hashes)
+    # A dropped output dir stays in metadata.sources until its files are gone,
+    # so the next run still scans it (e.g. while the valve holds them)
+    sources = dict(configured)
+    for name, output_dir in dropped.items():
+        if dropped_source_files(output_dir, configured):
+            sources[name] = output_dir
+        else:
+            logger.info(f"source_removed: {name} ({output_dir}) has no files left; dropped from metadata.{SOURCES_KEY}")
+
+    # Save whenever the hashes or this metadata changed (a count, a pending
+    # list or a source set on a run with no downloads must persist)
+    new_metadata = {SOURCES_KEY: sources, **run.metadata(hashes)}
+    if not dry_run and (hashes != stored_hashes or load_error is not None
+                        or new_metadata != policy_metadata(metadata, POLICY_KEYS)):
+        if not _save_hashes(hashes, new_metadata):
+            run.error(f"hash_save_failed: {HASH_FILE}")
 
     # Print summary
     console.print("\n[bold]Summary:[/bold]")
@@ -1065,14 +1318,21 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
     console.print(f"  Skipped (unchanged): [dim]{total_stats['skipped']}[/dim]")
     if total_stats["deleted"] > 0:
         console.print(f"  Deleted (orphaned): [yellow]{total_stats['deleted']}[/yellow]")
-    if total_stats["errors"] > 0:
-        console.print(f"  Errors: [red]{total_stats['errors']}[/red]")
+    if total_stats["pruned"] > 0:
+        console.print(f"  Pruned hash keys: [dim]{total_stats['pruned']}[/dim]")
+    if total_stats["gone"] > 0:
+        console.print(f"  Gone (404/410): [yellow]{total_stats['gone']}[/yellow]")
+    if total_stats["failed"] > 0:
+        console.print(f"  Failed: [red]{total_stats['failed']}[/red]")
+    for line in run.summary_lines(cleanup):
+        console.print(f"  {line}", markup=False)
 
     # Print next step guidance
     if not dry_run and total_stats["downloaded"] > 0:
         console.print("\n[yellow]Next step:[/yellow] Run the indexer to add these docs to Meilisearch:")
         console.print("  [dim]cd scripts && python index_to_meilisearch.py[/dim]")
 
+    total_stats["exit_code"] = run.exit_code()
     return total_stats
 
 
@@ -1107,12 +1367,7 @@ def main() -> int:
 
     try:
         stats = asyncio.run(scrape_all(dry_run=args.dry_run, force=args.force))
-        # Exit 0 if any files were processed successfully (downloaded or skipped)
-        # Exit 1 only if complete failure (no files processed)
-        total_processed = stats["downloaded"] + stats["skipped"]
-        if total_processed == 0 and stats["errors"] > 0:
-            return 1  # Complete failure
-        return 0  # Partial success is still success
+        return int(stats["exit_code"])
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted[/yellow]")
         return 130

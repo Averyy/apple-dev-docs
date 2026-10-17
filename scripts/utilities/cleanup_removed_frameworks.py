@@ -1,338 +1,331 @@
 #!/usr/bin/env python3
 """
-Clean up frameworks that Apple has removed from technologies.json.
+Remove the frameworks Apple no longer lists in technologies.json.
 
-This handles the case where an entire framework is removed (not just pages within it).
-The existing orphan cleanup only handles pages within active frameworks.
+Runs before the Apple scrape (scheduled-scrape.yml). The candidates are the
+Apple framework hash files (framework_hash_files) whose id technologies.json
+doesn't list, compared case-insensitively (Apple flips a framework's URL
+casing). technologies.json is read through the scrape's own parser
+(framework_list_scraper); no doc folder is scanned and no page is requested.
+
+Each run that finds a framework unlisted counts it in its hash file's
+metadata.unlisted_runs. At UNLISTED_REMOVAL_RUNS consecutive runs its docs dir
+and hash file are deleted (every casing of each). However many frameworks are
+dropped at once, each is removed the same way: there is no cap. A framework
+listed again starts over: this script drops the count when the list has it,
+and the scrape's save drops it for every framework it scrapes.
+
+A failed technologies.json fetch, or one that lists no frameworks, is our
+failure: nothing is counted, reset or deleted, and the exit code is 1. So is a
+hash file that can't be read, of a framework the list doesn't have (exit 1 on
+that run). Next to a docs dir of its id it is that framework's, and is judged
+anyway: its count is lost, so the run counts as the first, and the file is
+replaced by one that holds the count (as the scrape replaces a listed
+framework's), so the framework is removed if the next run finds it unlisted
+too. With no docs
+dir of its id it can't be told from another scraper's state file, so it is
+never written or deleted; no doc depends on it.
 
 Usage:
-    python cleanup_removed_frameworks.py --dry-run  # Preview what would be deleted
-    python cleanup_removed_frameworks.py            # Actually delete
+    python cleanup_removed_frameworks.py --dry-run  # Preview; changes nothing
+    python cleanup_removed_frameworks.py            # Ask before deleting
+    python cleanup_removed_frameworks.py --yes      # Automated (CI)
+
+Exit code: 0, or 1 on an error of ours (the above, or a failed write or
+deletion).
 """
 
-import functools
-import shutil
+import asyncio
 import sys
+from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Dict, Final, List, Optional, Sequence
 
-import httpx
+# The repo root, for the scraper package
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-TECHNOLOGIES_URL = "https://developer.apple.com/tutorials/data/documentation/technologies.json"
-HASH_DIR = Path(__file__).parent.parent.parent / ".hashes"
-DOC_DIR = Path(__file__).parent.parent.parent / "documentation"
+from cleanup_orphans_at_end import remove_framework
+from framework_list_scraper import AppleFrameworkListScraper
+from scraper.config import Config
+from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.utils.hash_manager import HashManager, read_hash_file, same_name_any_case
+from scraper.utils.logger import get_logger
 
-# Frameworks to never delete (not from Apple's API)
-# Static list for docs that don't have a scraper config to import
-PROTECTED_FRAMEWORKS = {"Swift-Book", "HIG"}
+logger = get_logger(__name__)
 
-# Hash files that are not framework hashes (different structure/purpose)
-# These use different naming than their output folders
-NON_FRAMEWORK_HASHES = {"meilisearch", "swift_docs", "mlx_docs", "hig_docs"}
+# A framework technologies.json hasn't listed on this many consecutive runs is
+# removed (its docs dir and hash file); the runs are the confirmation
+UNLISTED_REMOVAL_RUNS: Final = 2
 
+HASH_FILE_SUFFIX: Final = "_hashes.json"
 
-@functools.lru_cache(maxsize=1)
-def get_mlx_protected_frameworks() -> frozenset[str]:
-    """Get protected frameworks from MLX scraper config dynamically."""
-    try:
-        # Import MLX scraper sources
-        scripts_dir = Path(__file__).parent.parent
-        if str(scripts_dir) not in sys.path:
-            sys.path.insert(0, str(scripts_dir))
+# Every Apple framework hash file has keys under this: its pages' JSON URLs
+APPLE_JSON_PREFIX: Final = AppleJSONDocumentationScraper.JSON_BASE_URL + "/"
 
-        from scrape_mlx_docs import SPHINX_SOURCES, GITHUB_SOURCES
-
-        # Extract top-level output directories
-        protected: set[str] = set()
-        for source in SPHINX_SOURCES:
-            top_dir = source.output_dir.split("/")[0]
-            protected.add(top_dir.lower())
-        for source in GITHUB_SOURCES:
-            top_dir = source.output_dir.split("/")[0]
-            protected.add(top_dir.lower())
-
-        return frozenset(protected)
-    except ImportError as e:
-        print(f"Warning: Could not import MLX scraper config: {e}")
-        # Fallback to known values if import fails
-        return frozenset({"mlx", "mlx-swift", "coremltools", "ml-stable-diffusion"})
+TECHNOLOGIES_URL: Final = AppleFrameworkListScraper.TECHNOLOGIES_URL
 
 
-def check_apple_site_available() -> tuple[bool, str]:
-    """Verify Apple's documentation site is responding before trusting 404s.
+@dataclass(frozen=True)
+class FrameworkHashFile:
+    """An Apple framework's hash file.
 
-    Returns:
-        Tuple of (is_available, message)
+    Attributes:
+        path: The hash file
+        framework_id: The framework's id, as the file name spells it
+        unlisted_runs: Its metadata.unlisted_runs: the consecutive runs
+            technologies.json hasn't listed it (0 when absent, or when the
+            file can't be read)
+        load_error: Why the file can't be read (it is the framework's by its
+            docs dir, see framework_hash_files), else None
     """
-    # Check a framework that should always exist
-    test_urls = [
-        "https://developer.apple.com/documentation/foundation",
-        "https://developer.apple.com/documentation/swift",
-    ]
 
-    for url in test_urls:
+    path: Path
+    framework_id: str
+    unlisted_runs: int
+    load_error: Optional[str] = None
+
+
+@dataclass
+class HashFiles:
+    """The hash files directly in a hash dir, classified.
+
+    Attributes:
+        frameworks: The Apple framework hash files
+        unreadable: The hash files that can't be read and have no docs dir
+            of their id, so can't be classified: file -> why
+    """
+
+    frameworks: List[FrameworkHashFile] = field(default_factory=list)
+    unreadable: Dict[Path, str] = field(default_factory=dict)
+
+
+@dataclass
+class UnlistedReport:
+    """What a run of the unlisted rule did (in a dry run: would do).
+
+    Attributes:
+        listed: How many frameworks technologies.json lists
+        hash_files: How many Apple framework hash files there are
+        counted: framework -> its unlisted_runs now, below the removal count
+        removed: framework -> .md files its docs dir held
+        declined: Frameworks due for removal whose deletion the user
+            declined (interactive); they keep their count, so a later run
+            removes them
+        reset: Frameworks listed again, whose count was dropped
+        failures: Errors of ours for the run (exit 1)
+    """
+
+    listed: int = 0
+    hash_files: int = 0
+    counted: Dict[str, int] = field(default_factory=dict)
+    removed: Dict[str, int] = field(default_factory=dict)
+    declined: List[str] = field(default_factory=list)
+    reset: List[str] = field(default_factory=list)
+    failures: List[str] = field(default_factory=list)
+
+
+def framework_id_of(hash_file: Path) -> str:
+    """The framework id a hash file's name spells (<id>_hashes.json)."""
+    return hash_file.name[: -len(HASH_FILE_SUFFIX)]
+
+
+def _docs_dirs(framework_id: str) -> List[Path]:
+    """Every casing of a framework's docs dir that exists."""
+    return [path for path in same_name_any_case(Config.get_framework_output_dir(framework_id)) if path.is_dir()]
+
+
+def framework_hash_files(hash_dir: Path) -> HashFiles:
+    """The Apple framework hash files directly in hash_dir.
+
+    An Apple framework hash file has a key under the Apple JSON URL prefix
+    (Apple's files also hold doc-URL keys, so not every key does) and no
+    metadata.module (a D6 module's file, which the scrape's end-of-run rules
+    remove). The other scrapers' files (HIG, MLX, Swift) and a local
+    meilisearch_hashes.json have no such key. Files in .hashes/<namespace>/
+    aren't looked at.
+
+    A file with no entry to tell by (one that can't be read, or has no
+    'hashes' entries) is a framework's when a docs dir of its id exists, in
+    any casing: a framework's hash file and docs dir share its id, and the
+    other scrapers' files have no docs dir of theirs. So the unlisted rule
+    still judges a framework whose hash file can't be read, and the file it
+    writes in its place, which has no entries until a scrape fills it.
+
+    The unlisted rule judges these, and the scrape's list guard counts them
+    (scrape_all_frameworks.check_framework_list).
+    """
+    found = HashFiles()
+    for path in sorted(hash_dir.glob(f"*{HASH_FILE_SUFFIX}")):
+        framework_id = framework_id_of(path)
         try:
-            response = httpx.head(url, follow_redirects=True, timeout=10)
-            if response.status_code == 200:
-                return True, f"Apple site responding ({url})"
-        except Exception:
+            hashes, metadata = read_hash_file(path)
+        except (OSError, ValueError) as e:  # ValueError: not UTF-8, JSON or a hash file
+            if _docs_dirs(framework_id):
+                found.frameworks.append(FrameworkHashFile(path, framework_id, 0, load_error=str(e)))
+            else:
+                found.unreadable[path] = str(e)
             continue
-
-    return False, "Apple documentation site not responding - aborting for safety"
-
-
-def verify_framework_removed(framework: str) -> tuple[bool, str]:
-    """Verify a framework is truly removed by checking Apple's website.
-
-    Returns:
-        Tuple of (is_removed, reason)
-    """
-    url = f"https://developer.apple.com/documentation/{framework}"
-    try:
-        # Don't follow redirects - we want to see the actual response
-        response = httpx.head(url, follow_redirects=False, timeout=10)
-
-        if response.status_code == 404:
-            return True, "404"
-        elif response.status_code == 301 or response.status_code == 302:
-            location = response.headers.get("location", "")
-            return True, f"redirects to {location}"
-        elif response.status_code == 200:
-            return False, "still exists (200)"
-        else:
-            return False, f"unknown status {response.status_code}"
-    except Exception as e:
-        return False, f"error: {e}"
-
-
-def get_apple_frameworks() -> set:
-    """Fetch current framework list from Apple's API."""
-    response = httpx.get(TECHNOLOGIES_URL, follow_redirects=True, timeout=30)
-    response.raise_for_status()
-    data = response.json()
-
-    frameworks = set()
-    for section in data.get("sections", []):
-        for group in section.get("groups", []):
-            for tech in group.get("technologies", []):
-                # Extract framework ID from destination identifier
-                dest = tech.get("destination", {})
-                identifier = dest.get("identifier", "")
-                if identifier.startswith("doc://"):
-                    # doc://com.apple.documentation/documentation/SwiftUI
-                    parts = identifier.split("/documentation/")
-                    if len(parts) > 1:
-                        framework_id = parts[1].split("/")[0]
-                        frameworks.add(framework_id.lower())
-
-    return frameworks
-
-
-def get_local_frameworks() -> dict:
-    """Get frameworks we have locally (from hash files).
-
-    Returns:
-        Dict mapping lowercase framework name to actual hash file path
-    """
-    if not HASH_DIR.exists():
-        return {}
-
-    frameworks = {}
-    for hash_file in HASH_DIR.glob("*_hashes.json"):
-        framework = hash_file.stem.replace("_hashes", "")
-        # Skip non-framework hash files
-        if framework.lower() in NON_FRAMEWORK_HASHES:
+        if metadata.get("module"):
             continue
-        frameworks[framework.lower()] = hash_file
+        has_apple_key = any(url.startswith(APPLE_JSON_PREFIX) for url in hashes)
+        if not has_apple_key and (hashes or not _docs_dirs(framework_id)):
+            continue
+        runs = metadata.get("unlisted_runs", 0)
+        found.frameworks.append(FrameworkHashFile(path, framework_id, runs if isinstance(runs, int) else 0))
+    return found
 
-    return frameworks
 
+def _write_count(hash_file: FrameworkHashFile, runs: int, report: UnlistedReport) -> bool:
+    """Write a framework's unlisted_runs (0 drops it); False, a failure for the run, if that failed.
 
-def get_local_doc_folders() -> dict:
-    """Get documentation folders we have locally.
-
-    Returns:
-        Dict mapping lowercase folder name to actual folder path
+    The hash file is reloaded with its own session, so the save changes
+    nothing else in it (session_id and last_updated stay, for old-way orphan
+    detection); set_metadata marks the manager modified, so a metadata-only
+    change is saved. A file that couldn't be read when it was classified
+    (hash_file.load_error) is replaced by one holding only the count, as
+    HashManager's save replaces any file that failed to load.
     """
-    if not DOC_DIR.exists():
-        return {}
+    manager = HashManager(hash_file.path, resume_session=True)
+    if manager.load_error is not None and hash_file.load_error is None:
+        report.failures.append(f"{hash_file.framework_id}: hash file can't be loaded ({manager.load_error})")
+        return False
+    manager.set_metadata("unlisted_runs", runs)
+    if not manager.save():
+        report.failures.append(f"{hash_file.framework_id}: hash file save failed ({hash_file.path})")
+        return False
+    if manager.load_error is not None:
+        logger.warning("unreadable_hash_file_replaced", framework=hash_file.framework_id,
+                       file=str(hash_file.path), unlisted_runs=runs)
+    return True
 
-    folders = {}
-    for folder in DOC_DIR.iterdir():
-        if folder.is_dir():
-            folders[folder.name.lower()] = folder
 
-    return folders
+def _doc_files(framework_id: str) -> int:
+    """How many .md files a framework's docs dir holds, every casing of it."""
+    return sum(len(HashManager.framework_files(path)) for path in _docs_dirs(framework_id))
 
 
-def cleanup_removed_frameworks(dry_run: bool = False) -> int:
-    """Remove frameworks that Apple has removed.
+def _approved(due: Sequence[FrameworkHashFile]) -> bool:
+    """Show the frameworks due for removal and ask once."""
+    print(f"\nAbout to remove {len(due)} frameworks technologies.json hasn't listed on "
+          f"{UNLISTED_REMOVAL_RUNS} consecutive runs (docs dir and hash file):")
+    for hash_file in due:
+        print(f"   - {hash_file.framework_id} ({_doc_files(hash_file.framework_id)} files)")
+    response = input("Continue? [y/N] ")
+    return response.strip().lower() in ("y", "yes")
 
-    Returns:
-        Number of frameworks removed
+
+def apply_unlisted_rule(frameworks: Sequence[Dict[str, str]], dry_run: bool = False,
+                        interactive: bool = False) -> UnlistedReport:
+    """Count, reset and remove the frameworks technologies.json doesn't list.
+
+    Args:
+        frameworks: The frameworks a successful technologies.json fetch lists
+            (the shared parser's output); never empty, which is a failed fetch
+        dry_run: Write and delete nothing; report what a run would do
+        interactive: Ask once before deleting; on no, nothing is deleted and
+            each framework keeps its count, so a later run removes it
     """
-    # Safety check - ensure Apple's site is responding before trusting 404s
-    print("Checking Apple documentation site availability...")
-    site_available, site_msg = check_apple_site_available()
-    if not site_available:
-        print(f"ABORT: {site_msg}")
-        return 0
-    print(f"   {site_msg}")
+    listed = {fw['id'].lower() for fw in frameworks}
+    found = framework_hash_files(Config.CACHE_DIR)
+    report = UnlistedReport(listed=len(listed), hash_files=len(found.frameworks))
+    for path, error in found.unreadable.items():
+        if framework_id_of(path).lower() in listed:
+            continue  # its framework's scrape replaces the file (hash_load_failed)
+        logger.error("unlisted_hash_file_unreadable", file=str(path), error=error, docs_dir=False)
+        report.failures.append(f"{path} can't be read and has no docs dir of its id, so it can't be judged: {error}")
 
-    print("Fetching current framework list from Apple...")
-    try:
-        apple_frameworks = get_apple_frameworks()
-    except Exception as e:
-        print(f"Error fetching Apple frameworks: {e}")
-        return 0
+    due: List[FrameworkHashFile] = []
+    for hash_file in found.frameworks:
+        framework = hash_file.framework_id
+        if framework.lower() in listed:
+            # One that can't be read has no count to drop: the scrape replaces it (hash_load_failed)
+            if hash_file.unlisted_runs and (dry_run or _write_count(hash_file, 0, report)):
+                logger.info("framework_listed_again", framework=framework,
+                            unlisted_runs=hash_file.unlisted_runs)
+                report.reset.append(framework)
+            continue
+        if hash_file.load_error is not None:
+            # An error of ours that loses the count: this run counts as the
+            # first, so the removal waits one run at most, and the count
+            # write replaces the file, so the next run can judge it
+            logger.error("unlisted_hash_file_unreadable", framework=framework, file=str(hash_file.path),
+                         error=hash_file.load_error, docs_dir=True)
+            report.failures.append(
+                f"{hash_file.path} can't be read ({hash_file.load_error}): its unlisted_runs is lost, so this run "
+                f"counts as run 1, and the file {'would be' if dry_run else 'is'} replaced by one holding that count"
+            )
+        runs = hash_file.unlisted_runs + 1
+        if runs >= UNLISTED_REMOVAL_RUNS:
+            due.append(hash_file)
+        elif dry_run or _write_count(hash_file, runs, report):
+            logger.warning("framework_unlisted_pending", framework=framework, unlisted_runs=runs)
+            report.counted[framework] = runs
 
-    print(f"Apple lists {len(apple_frameworks)} frameworks")
+    if due and interactive and not dry_run and not _approved(due):
+        for hash_file in due:
+            if _write_count(hash_file, hash_file.unlisted_runs + 1, report):
+                report.declined.append(hash_file.framework_id)
+        return report
+    for hash_file in due:
+        framework = hash_file.framework_id
+        if dry_run:
+            report.removed[framework] = _doc_files(framework)
+            continue
+        try:
+            report.removed[framework] = remove_framework(
+                framework, Config.get_framework_output_dir(framework), hash_file.path, reason="unlisted"
+            )
+        except OSError as e:
+            report.failures.append(f"{framework}: removal failed: {e}")
+    return report
 
-    local_hash_frameworks = get_local_frameworks()
-    local_doc_folders = get_local_doc_folders()
 
-    print(f"Local hash files: {len(local_hash_frameworks)}")
-    print(f"Local doc folders: {len(local_doc_folders)}")
-
-    # Find frameworks we have locally but Apple doesn't list anymore
-    protected_lower = {f.lower() for f in PROTECTED_FRAMEWORKS} | get_mlx_protected_frameworks()
-
-    orphaned_hashes = set(local_hash_frameworks.keys()) - apple_frameworks - protected_lower
-    orphaned_docs = set(local_doc_folders.keys()) - apple_frameworks - protected_lower
-
-    all_orphans = orphaned_hashes | orphaned_docs
-
-    if not all_orphans:
-        print("No removed frameworks detected")
-        return 0
-
-    print(f"\nFound {len(all_orphans)} candidate(s) not in technologies.json")
-    print("Verifying against Apple's website...")
-
-    # Verify each orphan is truly removed (404 or redirect)
-    verified_orphans = {}
-    skipped_count = 0
-    verbose = "--verbose" in sys.argv or "-v" in sys.argv
-
-    for fw in sorted(all_orphans):
-        is_removed, reason = verify_framework_removed(fw)
-        has_hash = fw in orphaned_hashes
-        has_docs = fw in orphaned_docs
-        markers = []
-        if has_hash:
-            markers.append("hash")
-        if has_docs:
-            markers.append("docs")
-
-        if is_removed:
-            verified_orphans[fw] = (reason, markers)
-        else:
-            skipped_count += 1
-            if verbose:
-                print(f"   [SKIP] {fw} - {reason}")
-
-    if skipped_count > 0 and not verbose:
-        print(f"   Skipped {skipped_count} (still exist on Apple's site)")
-
-    if not verified_orphans:
-        print("\nNo removed frameworks found")
-        return 0
-
-    print(f"\nConfirmed {len(verified_orphans)} removed framework(s):")
-    for fw, (reason, markers) in sorted(verified_orphans.items()):
-        print(f"   - {fw} ({', '.join(markers)}) - {reason}")
-
+def _print_summary(report: UnlistedReport, dry_run: bool) -> None:
+    """The run's summary for the console."""
     if dry_run:
-        print("\n[DRY RUN] Would delete the above frameworks")
-        return len(verified_orphans)
+        print("\n[DRY RUN] Nothing is written or deleted; a run would do this:")
+    print(f"Apple lists {report.listed} frameworks; {report.hash_files} Apple framework hash files here")
+    if report.counted:
+        print(f"⏳ Not in technologies.json ({'would be ' if dry_run else ''}counted in unlisted_runs), "
+              "removed if still unlisted on the next run: "
+              + ", ".join(f"{framework} (run {runs})" for framework, runs in sorted(report.counted.items())))
+    if report.removed:
+        print(f"🗑️  {'Would remove' if dry_run else 'Removed'} {len(report.removed)} frameworks "
+              f"technologies.json hasn't listed on {UNLISTED_REMOVAL_RUNS} consecutive runs "
+              "(docs dir and hash file): "
+              + ", ".join(f"{framework} ({files} files)" for framework, files in sorted(report.removed.items())))
+    if report.declined:
+        print("⏸️  Not removed (declined); a later run removes them: " + ", ".join(sorted(report.declined)))
+    if report.reset:
+        print(f"🔁 Listed again, unlisted_runs {'would be ' if dry_run else ''}reset: "
+              + ", ".join(sorted(report.reset)))
+    for failure in report.failures:
+        print(f"❌ {failure}")
+    if not (report.counted or report.removed or report.declined or report.failures):
+        print("✅ No removed frameworks detected")
 
-    # Confirm before deletion
-    print(f"\nAbout to delete {len(verified_orphans)} framework(s). Continue? [y/N] ", end="")
-    response = input().strip().lower()
-    if response != 'y':
-        print("Aborted.")
-        return 0
 
-    deleted = 0
-    for fw in verified_orphans:
-        # Delete hash file
-        if fw in local_hash_frameworks:
-            hash_file = local_hash_frameworks[fw]
-            if hash_file.exists():
-                hash_file.unlink()
-                print(f"   Deleted: {hash_file}")
+async def fetch_frameworks() -> List[Dict[str, str]]:
+    """technologies.json's frameworks, through the scrape's parser ([] if the fetch failed)."""
+    async with AppleFrameworkListScraper() as framework_scraper:
+        frameworks: List[Dict[str, str]] = await framework_scraper.fetch_all_frameworks()
+    return frameworks
 
-        # Delete documentation folder
-        if fw in local_doc_folders:
-            doc_folder = local_doc_folders[fw]
-            if doc_folder.exists():
-                shutil.rmtree(doc_folder)
-                print(f"   Deleted: {doc_folder}")
 
-        deleted += 1
-
-    print(f"\nCleaned up {deleted} removed framework(s)")
-    return deleted
+def main() -> int:
+    """Apply the unlisted rule once; returns the process exit code."""
+    dry_run = "--dry-run" in sys.argv
+    interactive = "--yes" not in sys.argv
+    print("Fetching current framework list from Apple...")
+    frameworks = asyncio.run(fetch_frameworks())
+    if not frameworks:
+        logger.error("framework_list_unavailable", url=TECHNOLOGIES_URL)
+        print("❌ technologies.json couldn't be fetched, or listed no frameworks: nothing counted, reset or removed")
+        return 1
+    report = apply_unlisted_rule(frameworks, dry_run=dry_run, interactive=interactive)
+    _print_summary(report, dry_run)
+    return 1 if report.failures else 0
 
 
 if __name__ == "__main__":
-    dry_run = "--dry-run" in sys.argv
-    auto_yes = "--yes" in sys.argv
-
-    if auto_yes and not dry_run:
-        # For automation: skip confirmation prompt but still verify
-        # Safety check first
-        print("Checking Apple documentation site availability...")
-        site_available, site_msg = check_apple_site_available()
-        if not site_available:
-            print(f"ABORT: {site_msg}")
-            sys.exit(1)
-        print(f"   {site_msg}")
-
-        print("Fetching current framework list from Apple...")
-        try:
-            apple_frameworks = get_apple_frameworks()
-        except Exception as e:
-            print(f"Error fetching Apple frameworks: {e}")
-            sys.exit(1)
-
-        print(f"Apple lists {len(apple_frameworks)} frameworks")
-
-        local_hash_frameworks = get_local_frameworks()
-        local_doc_folders = get_local_doc_folders()
-
-        protected_lower = {f.lower() for f in PROTECTED_FRAMEWORKS} | get_mlx_protected_frameworks()
-        orphaned_hashes = set(local_hash_frameworks.keys()) - apple_frameworks - protected_lower
-        orphaned_docs = set(local_doc_folders.keys()) - apple_frameworks - protected_lower
-        all_orphans = orphaned_hashes | orphaned_docs
-
-        if not all_orphans:
-            print("No removed frameworks detected")
-            sys.exit(0)
-
-        print(f"\nFound {len(all_orphans)} candidate(s), verifying...")
-
-        # Verify each orphan before deletion
-        deleted = 0
-        skipped = 0
-        for fw in sorted(all_orphans):
-            is_removed, reason = verify_framework_removed(fw)
-
-            if not is_removed:
-                print(f"   [SKIP] {fw} - {reason}")
-                skipped += 1
-                continue
-
-            print(f"   [DELETE] {fw} - {reason}")
-            if fw in local_hash_frameworks:
-                hash_file = local_hash_frameworks[fw]
-                if hash_file.exists():
-                    hash_file.unlink()
-            if fw in local_doc_folders:
-                doc_folder = local_doc_folders[fw]
-                if doc_folder.exists():
-                    shutil.rmtree(doc_folder)
-            deleted += 1
-
-        print(f"\nCleaned up {deleted} framework(s), skipped {skipped}")
-    else:
-        cleanup_removed_frameworks(dry_run=dry_run)
+    sys.exit(main())

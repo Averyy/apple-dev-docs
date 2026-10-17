@@ -10,7 +10,7 @@ from pathlib import Path
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from scraper.utils.hash_manager import HashManager
+from scraper.utils.hash_manager import HashManager, valve_trips
 from scraper.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -56,7 +56,14 @@ def check_orphans(framework: str = None, clean: bool = False, dry_run: bool = Tr
             
         # Load hash manager for this framework
         hash_manager = HashManager(hash_file)
-        
+        if hash_manager.partial:
+            # Only the pages that scrape reached carry its session: every other live page would look orphaned
+            logger.warning("orphan_check_skipped_partial", framework=framework_name)
+            print(f"\n⚠️  Skipping {framework_name}: its hash file was last saved by a scrape that didn't reach "
+                  "all its pages (interrupted, or blocked by a failure: partial_session). The next scrape that "
+                  "finishes it unblocked clears this.")
+            continue
+
         # Get framework directory - handle case sensitivity
         framework_dir = doc_dir / framework_name
         
@@ -74,9 +81,10 @@ def check_orphans(framework: str = None, clean: bool = False, dry_run: bool = Tr
         # Find orphaned files
         orphaned_files = hash_manager.get_orphaned_files(framework_dir)
         
-        # Safety check: if more than 50% of files would be deleted, something is wrong
+        # Safety check: at least half of the files (or over 1,000) is a mass
+        # removal, which only the scrape's confirm-then-delete deletes
         all_files = list(framework_dir.rglob("*.md"))
-        if all_files and len(orphaned_files) > len(all_files) * 0.5:
+        if valve_trips(len(orphaned_files), len(all_files)):
             logger.error(
                 "excessive_orphans_detected",
                 framework=framework_name,
@@ -153,7 +161,12 @@ def cleanup_framework_orphans(framework_name: str, manual_approval: bool = False
         if not hash_file.exists():
             return 0
             
-        hash_manager = HashManager(hash_file)
+        # Keeps the scrape's session when it saves the prune below
+        hash_manager = HashManager(hash_file, resume_session=True)
+        if hash_manager.partial:
+            # Last saved by a scrape that didn't reach all its pages: only the pages it reached carry its session
+            logger.warning("orphan_check_skipped_partial", framework=framework_name)
+            return 0
         framework_dir = doc_dir / framework_name
         
         # Handle case sensitivity
@@ -169,9 +182,9 @@ def cleanup_framework_orphans(framework_name: str, manual_approval: bool = False
         if not orphaned_files:
             return 0
         
-        # Safety check
+        # Safety check (the mass-removal valve)
         all_files = list(framework_dir.rglob("*.md"))
-        if all_files and len(orphaned_files) > len(all_files) * 0.5:
+        if valve_trips(len(orphaned_files), len(all_files)):
             print(f"\n⚠️  WARNING: {framework_name} has {len(orphaned_files)}/{len(all_files)} files marked as orphaned!")
             print("This seems excessive and may indicate a session tracking issue.")
             print("Skipping deletion for safety.")
@@ -217,8 +230,7 @@ def cleanup_framework_orphans(framework_name: str, manual_approval: bool = False
             # Prune hash entries for the deleted files — otherwise entries
             # outlive their files and accumulate forever.
             pruned = hash_manager.prune_missing_files()
-            if pruned:
-                hash_manager.save()
+            if pruned and hash_manager.save():
                 logger.info(f"Pruned {pruned} hash entries for deleted files in {framework_name}")
 
             if manual_approval:

@@ -18,8 +18,13 @@ Examples:
     # Scrape specific frameworks:
     python3 scrape.py --frameworks SwiftUI UIKit Foundation --yes
     
-    # Resume interrupted scraping:
-    python3 scrape.py --resume --yes
+    # Resume interrupted scraping, from a given framework:
+    python3 scrape.py --resume SwiftUI --yes
+
+Exit code: 0 for a clean run, 1 for an error of ours (e.g. a failed request
+that blocked a framework's cleanup), 2 if it stopped before scraping (a
+failed or short framework list, an unknown --frameworks name or --resume
+target), 130 if interrupted (see scrape_everything).
 """
 
 import sys
@@ -34,13 +39,16 @@ try:
     import asyncio
     
     if __name__ == "__main__":
-        # Simply delegate to the main scraper
-        asyncio.run(scrape_everything())
+        # Simply delegate to the main scraper; its result is the exit code
+        sys.exit(asyncio.run(scrape_everything()))
         
 except ImportError as e:
     print(f"❌ Error importing scraper module: {e}")
     print("💡 Make sure all dependencies are installed: pip install -r requirements.txt")
     sys.exit(1)
+except KeyboardInterrupt:
+    print("\n⏹️  Scraping interrupted by user")
+    sys.exit(130)
 except Exception as e:
     print(f"❌ Error running scraper: {e}")
     sys.exit(1)
