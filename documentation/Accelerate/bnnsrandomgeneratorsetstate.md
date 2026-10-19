@@ -24,7 +24,7 @@ func BNNSRandomGeneratorSetState(_ generator: BNNSRandomGenerator?, _ state_size
 
 Use the [`BNNSRandomGeneratorGetState(_:_:_:)`](bnnsrandomgeneratorgetstate(_:_:_:).md) and [`BNNSRandomGeneratorSetState(_:_:_:)`](bnnsrandomgeneratorsetstate(_:_:_:).md) functions to capture and restore a random number generator’s state.
 
-The following code creates a random number generator and captures its initial state. The code calls [`BNNSRandomFillUniformInt(_:_:_:_:)`](bnnsrandomfilluniformint(_:_:_:_:).md) twice and copies the random values into the arrays `a` and `b`. The [`BNNSRandomGeneratorSetState(_:_:_:)`](bnnsrandomgeneratorsetstate(_:_:_:).md) function restores the generator to its initial state, and the final call to [`BNNSRandomFillUniformInt(_:_:_:_:)`](bnnsrandomfilluniformint(_:_:_:_:).md) populates the descriptor so that the values in arrays `a` and `c` are equal.
+The following code creates a random number generator and captures its initial state. The code calls [`BNNSRandomFillUniformInt(_:_:_:_:)`](bnnsrandomfilluniformint(_:_:_:_:).md) twice and copies the random values into the arrays `a` and `b`. The [`BNNSRandomGeneratorSetState(_:_:_:)`](bnnsrandomgeneratorsetstate(_:_:_:).md) function restores the generator to its initial state, and the final call to [`BNNSRandomFillUniformInt(_:_:_:_:)`](bnnsrandomfilluniformint(_:_:_:_:).md) populates the descriptor so that the values in arrays `a` and `c` are equal:
 
 ```swift
 let data = UnsafeMutableBufferPointer<Int16>.allocate(capacity: 8)

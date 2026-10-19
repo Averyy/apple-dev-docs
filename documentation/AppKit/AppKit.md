@@ -91,9 +91,6 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/swi
   Manage the fonts used to display text.
 - [Writing Tools](writing-tools.md)
   Add support for Writing Tools to your app’s text views.
-### Deprecated
-- [Deprecated Symbols](deprecated-symbols.md)
-  Review symbols that are no longer supported, and find the replacements to use instead.
 ### Reference
 - [Enumerations](enumerations.md)
   Enumerations for use with multiple classes.
@@ -103,6 +100,9 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/swi
   Data types for use with multiple classes.
 - [Macros](macros.md)
   Macros for use with multiple classes.
+### Deprecated
+- [Deprecated symbols](deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 
 ---

@@ -24,12 +24,12 @@ This item style is the default.
 
 ## See Also
 
+- [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
+  A button item style for a prominent button.
 - [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
   A simple button style with a border.
 - [static var done: UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum/done.md)
   A button style for a done button.
-- [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
-  A button item style for a prominent button.
 
 
 ---

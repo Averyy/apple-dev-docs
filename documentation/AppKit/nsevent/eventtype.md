@@ -51,10 +51,6 @@ These constants appear in the event’s [`type`](nsevent/type.md) property. You 
 - [NSEvent.EventType.keyUp](nsevent/eventtype/keyup.md)
   The user released a key on the keyboard.
 ### Getting Touch-Based Events
-- [NSEvent.EventType.beginGesture](nsevent/eventtype/begingesture.md)
-  An event marking the beginning of a gesture.
-- [NSEvent.EventType.endGesture](nsevent/eventtype/endgesture.md)
-  An event that marks the end of a gesture.
 - [NSEvent.EventType.magnify](nsevent/eventtype/magnify.md)
   The user performed a pinch-open or pinch-close gesture.
 - [NSEvent.EventType.smartMagnify](nsevent/eventtype/smartmagnify.md)
@@ -93,6 +89,9 @@ These constants appear in the event’s [`type`](nsevent/type.md) property. You 
   An event that initiates a Quick Look request.
 - [NSEvent.EventType.systemDefined](nsevent/eventtype/systemdefined.md)
   A system-related event occurred.
+### Deprecated
+- [Deprecated symbols](eventtype-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Enumeration Cases
 - [NSEvent.EventType.mouseCancelled](nsevent/eventtype/mousecancelled.md)
 ### Initializers

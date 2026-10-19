@@ -24,6 +24,19 @@ If the action sheet’s delegate does not implement this method, clicking the ca
 
 - `actionSheet`: The action sheet that will be canceled.
 
+## See Also
+
+- [func actionSheet(UIActionSheet, clickedButtonAt: Int)](uiactionsheetdelegate/actionsheet(_:clickedbuttonat:).md)
+  Sent to the delegate when the user clicks a button on an action sheet.
+- [func willPresent(UIActionSheet)](uiactionsheetdelegate/willpresent(_:).md)
+  Sent to the delegate before an action sheet is presented to the user.
+- [func didPresent(UIActionSheet)](uiactionsheetdelegate/didpresent(_:).md)
+  Sent to the delegate after an action sheet is presented to the user.
+- [func actionSheet(UIActionSheet, willDismissWithButtonIndex: Int)](uiactionsheetdelegate/actionsheet(_:willdismisswithbuttonindex:).md)
+  Sent to the delegate before an action sheet is dismissed.
+- [func actionSheet(UIActionSheet, didDismissWithButtonIndex: Int)](uiactionsheetdelegate/actionsheet(_:diddismisswithbuttonindex:).md)
+  Sent to the delegate after an action sheet is dismissed from the screen.
+
 
 ---
 

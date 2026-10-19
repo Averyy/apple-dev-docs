@@ -22,6 +22,7 @@ The system color used for selected controls in non-key views. For more informati
 
 - [class var selectedControlColor: NSColor](nscolor/selectedcontrolcolor.md)
   The color to use for the face of a selected control—that is, a control that has been clicked or is being dragged.
+- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var alternateSelectedControlColor: NSColor](nscolor/alternateselectedcontrolcolor.md)
   The system color used for the face of a selected control in a list or table.
 - [class var controlAlternatingRowBackgroundColors: [NSColor]](nscolor/controlalternatingrowbackgroundcolors.md)

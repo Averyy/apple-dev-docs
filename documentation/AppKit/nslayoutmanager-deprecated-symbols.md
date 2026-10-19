@@ -1,12 +1,16 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func showCGGlyphs(UnsafePointer<CGGlyph>, positions: UnsafePointer<NSPoint>, count: Int, font: NSFont, matrix: AffineTransform, attributes: [NSAttributedString.Key : Any], in: NSGraphicsContext)](nslayoutmanager/showcgglyphs(_:positions:count:font:matrix:attributes:in:).md)
   Renders the glyphs at the specified positions, using the specified attributes.
 - [func invalidateGlyphs(onLayoutInvalidationForGlyphRange: NSRange)](nslayoutmanager/invalidateglyphs(onlayoutinvalidationforglyphrange:).md)
@@ -47,7 +51,7 @@ Review unsupported symbols and their replacements.
   Returns an array of rectangles and, by reference, the number of such rectangles, that define the region in the given container enclosing the given glyph range.
 - [func substituteFont(for: NSFont) -> NSFont](nslayoutmanager/substitutefont(for:).md)
   Replaces the specified font with a suitable screen font if one is available.
-### Properties
+### Deprecated properties
 - [var hyphenationFactor: Float](nslayoutmanager/hyphenationfactor.md)
   The threshold controlling when hyphenation is done.
 - [var usesScreenFonts: Bool](nslayoutmanager/usesscreenfonts.md)

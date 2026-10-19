@@ -35,12 +35,11 @@ Toggle("Enhance Sound", isOn: $isEnhanced)
 ### Creating the toggle style
 - [init()](switchtogglestyle/init.md)
   Creates a switch toggle style.
+- [init(tint: Color)](switchtogglestyle/init(tint:).md)
+  Creates a switch style with a tint color.
 ### Supporting types
 - [func makeBody(configuration: SwitchToggleStyle.Configuration) -> some View](switchtogglestyle/makebody(configuration:).md)
   Creates a view that represents the body of a toggle switch.
-### Deprecated initializers
-- [init(tint: Color)](switchtogglestyle/init(tint:).md)
-  Creates a switch style with a tint color.
 
 ## Relationships
 

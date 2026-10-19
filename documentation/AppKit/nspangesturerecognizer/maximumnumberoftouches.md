@@ -22,6 +22,8 @@ Set this property to 0 to require exactly `minimumNumberOfTouches` touches to re
 
 - [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
   The minimum number of touches needed to recognize this gesture
+- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
+  The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 
 ---

@@ -233,6 +233,8 @@ Customize the wrapper to meet your app’s needs. For example, you can add a nav
   The visibility of the leading columns in a navigation split view.
 - [struct NavigationLink](navigationlink.md)
   A view that controls a navigation presentation.
+- [struct NavigationView](navigationview.md)
+  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 
 ---

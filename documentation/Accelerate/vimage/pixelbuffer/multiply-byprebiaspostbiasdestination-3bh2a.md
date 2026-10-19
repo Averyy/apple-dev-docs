@@ -40,7 +40,7 @@ For example, the following code multiplies each pixel value in a 32-bit planar b
                    preBias: 0, postBias: 0,
                    destination: buffer)
 
-   // Prints "[0.2, 0.4, 0.6, 0.8, 1.0]"
+   // Prints "[0.2, 0.4, 0.6, 0.8, 1.0]".
    print(buffer.array)
 ```
 

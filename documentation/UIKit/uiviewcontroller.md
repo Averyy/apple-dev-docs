@@ -484,7 +484,7 @@ For more information about how the system determines which view controllers to p
   Unregisters a scene accessory with the specified registration.
 ### Deprecated
 - [Deprecated symbols](uiviewcontroller-deprecated-symbols.md)
-  Symbols that view controllers no longer support.
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

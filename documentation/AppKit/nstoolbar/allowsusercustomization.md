@@ -31,8 +31,6 @@ You can change the value of this property at any time to change your toolbar’s
   A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.
 - [NSToolbar.DisplayMode](nstoolbar/displaymode-swift.enum.md)
   Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
-- [var showsBaselineSeparator: Bool](nstoolbar/showsbaselineseparator.md)
-  A Boolean value that indicates whether the toolbar shows the separator between the toolbar and the main window contents.
 - [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)
   A Boolean value that indicates whether the toolbar can add items for Action extensions.
 

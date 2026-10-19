@@ -24,8 +24,6 @@ The value of this property is [`true`](https://developer.apple.com/documentation
   A Boolean value indicating whether the cell has a bezeled border.
 - [var isBordered: Bool](nscell/isbordered.md)
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
-- [var controlTint: NSControlTint](nscell/controltint.md)
-  The cell’s control tint.
 - [var backgroundStyle: NSView.BackgroundStyle](nscell/backgroundstyle.md)
   The cell’s background style.
 - [var interiorBackgroundStyle: NSView.BackgroundStyle](nscell/interiorbackgroundstyle.md)

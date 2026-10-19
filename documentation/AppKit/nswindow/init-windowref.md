@@ -56,6 +56,10 @@ For historical reasons, contrary to normal memory management policy `initWithWin
   Discards all of the window’s cached image rectangles.
 - [func useOptimizedDrawing(Bool)](nswindow/useoptimizeddrawing(_:).md)
   Specifies whether the window is to optimize focusing and drawing when displaying its views.
+- [func disableScreenUpdatesUntilFlush()](nswindow/disablescreenupdatesuntilflush.md)
+  Disables the window’s screen updates until the window is flushed.
+- [func drag(NSImage, at: NSPoint, offset: NSSize, event: NSEvent, pasteboard: NSPasteboard, source: Any, slideBack: Bool)](nswindow/drag(_:at:offset:event:pasteboard:source:slideback:).md)
+  Begins a dragging session.
 
 
 ---

@@ -26,32 +26,84 @@ func vImageHistogramCalculation_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ 
 
 #### Discussion
 
-The following code populates the `histogramAlpha` , `histogramRed`, `histogramGreen`, and `histogramBlue` arrays with the histograms for each channel of the specified [`vImage_Buffer`](vimage_buffer.md) structure.
+The following code populates the `histogramAlpha` , `histogramRed`, `histogramGreen`, and `histogramBlue` arrays with the histograms for each channel of the specified [`vImage_Buffer`](vimage_buffer.md) structure:
+
+**Swift**:
 
 ```swift
+let source = vImage.PixelBuffer<vImage.Interleaved8x4>(
+    pixelValues: [10, 20, 30, 40,
+                  50, 60, 70, 80],
+    size: .init(width: 1, height: 2))
+
 var histogramAlpha = [vImagePixelCount](repeating: 0, count: 256)
 var histogramRed = [vImagePixelCount](repeating: 0, count: 256)
 var histogramGreen = [vImagePixelCount](repeating: 0, count: 256)
 var histogramBlue = [vImagePixelCount](repeating: 0, count: 256)
 
-histogramAlpha.withUnsafeMutableBufferPointer { zeroPtr in
-    histogramRed.withUnsafeMutableBufferPointer { onePtr in
-        histogramGreen.withUnsafeMutableBufferPointer { twoPtr in
-            histogramBlue.withUnsafeMutableBufferPointer { threePtr in
-                
-                var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,
-                                     twoPtr.baseAddress, threePtr.baseAddress]
-                
-                histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in
-                    // `buffer` is a `vImage_Buffer` structure.
-                    _ = vImageHistogramCalculation_ARGB8888(&buffer,
-                                                            histogramBinsPtr.baseAddress!,
-                                                            vImage_Flags(kvImageNoFlags))
+source.withUnsafePointerToVImageBuffer { src in
+    histogramAlpha.withUnsafeMutableBufferPointer { zeroPtr in
+        histogramRed.withUnsafeMutableBufferPointer { onePtr in
+            histogramGreen.withUnsafeMutableBufferPointer { twoPtr in
+                histogramBlue.withUnsafeMutableBufferPointer { threePtr in
+                    
+                    var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,
+                                         twoPtr.baseAddress, threePtr.baseAddress]
+                    
+                    histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in
+                        _ = vImageHistogramCalculation_ARGB8888(src,
+                                                                histogramBinsPtr.baseAddress!,
+                                                                vImage_Flags(kvImageNoFlags))
+                    }
                 }
             }
         }
     }
 }
+
+// Prints:
+// Alpha: 1 1
+// Red:   1 1
+// Green: 1 1
+// Blue:  1 1
+print("Alpha:", histogramAlpha[10], histogramAlpha[50])
+print("Red:  ", histogramRed[20],   histogramRed[60])
+print("Green:", histogramGreen[30], histogramGreen[70])
+print("Blue: ", histogramBlue[40],  histogramBlue[80])
+```
+
+**Objective-C**:
+
+```objc
+uint8_t src[8] = {10, 20, 30, 40, 50, 60, 70, 80};
+
+vImage_Buffer srcBuf = {
+    .data = src,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 4
+};
+
+vImagePixelCount histogramAlpha[256] = {0};
+vImagePixelCount histogramRed[256]   = {0};
+vImagePixelCount histogramGreen[256] = {0};
+vImagePixelCount histogramBlue[256]  = {0};
+
+vImagePixelCount *histogramBins[4] = {
+    histogramAlpha, histogramRed, histogramGreen, histogramBlue
+};
+
+vImageHistogramCalculation_ARGB8888(&srcBuf, histogramBins, kvImageNoFlags);
+
+// Prints:
+// Alpha: 1 1
+// Red:   1 1
+// Green: 1 1
+// Blue:  1 1
+printf("Alpha: %lu %lu\n", (unsigned long)histogramAlpha[10], (unsigned long)histogramAlpha[50]);
+printf("Red:   %lu %lu\n", (unsigned long)histogramRed[20],   (unsigned long)histogramRed[60]);
+printf("Green: %lu %lu\n", (unsigned long)histogramGreen[30], (unsigned long)histogramGreen[70]);
+printf("Blue:  %lu %lu\n", (unsigned long)histogramBlue[40],  (unsigned long)histogramBlue[80]);
 ```
 
 ## Parameters

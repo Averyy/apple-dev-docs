@@ -36,10 +36,6 @@ A good place to add image representation classes to the registry is in the `load
   Returns an array containing the registered image representation classes.
 - [class func unregisterClass(AnyClass)](nsimagerep/unregisterclass(_:).md)
   Removes the specified image representation subclass from the registry of available image representations.
-- [class func `class`(forFileType: String) -> AnyClass?](nsimagerep/class(forfiletype:).md)
-  Returns the image representation subclass that handles data with the specified type.
-- [class func `class`(forPasteboardType: NSPasteboard.PasteboardType) -> AnyClass?](nsimagerep/class(forpasteboardtype:).md)
-  Returns the image representation subclass that handles data with the specified pasteboard type.
 
 
 ---

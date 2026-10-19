@@ -32,9 +32,10 @@ object Song.ReleaseDate
 - [object Song.Prices](song/prices-data.dictionary.md)
   A mapping of locale to pricing information.
 - [object Song.RelatedAlbum](song/relatedalbum.md)
-  Information about a related album.
 - [object Song.RelatedArtist](song/relatedartist.md)
   Information about a related artist.
+- [object Song.RelevanceScore](song/relevancescore-data.dictionary.md)
+  A score representing song relevance, used to rank songs when surfacing content.
 - [object Song.TitleVersion](song/titleversion-data.dictionary.md)
   A mapping of locale to translations for the specific title-version translation type.
 - [object Song.TitleVersionPronunciation](song/titleversionpronunciation-data.dictionary.md)

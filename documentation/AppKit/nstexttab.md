@@ -36,8 +36,6 @@ The text system supports four alignment types: left, center, right, and decimal 
 - [class func columnTerminators(for: Locale?) -> CharacterSet](nstexttab/columnterminators(for:).md)
   Returns the column terminators for the specified locale.
 ### Constants
-- [NSParagraphStyle.TextTabType](nsparagraphstyle/texttabtype.md)
-  Constants that specify the type of tab stop.
 - [NSTextTab.OptionKey](nstexttab/optionkey.md)
   The terminating character for a tab column.
 ### Deprecated
@@ -45,6 +43,8 @@ The text system supports four alignment types: left, center, right, and decimal 
   Initializes a newly allocated text tab with the specified alignment and location.
 - [var tabStopType: NSParagraphStyle.TextTabType](nstexttab/tabstoptype.md)
   The text tab’s type of tab stop.
+- [NSParagraphStyle.TextTabType](nsparagraphstyle/texttabtype.md)
+  Constants that specify the type of tab stop.
 ### Initializers
 - [init?(coder: NSCoder)](nstexttab/init(coder:).md)
 

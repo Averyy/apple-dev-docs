@@ -34,14 +34,6 @@ The value passed as `returnCode` is either `NSCancelButton` or `NSOKButton`. The
 - `didEndSelector`: The selector to call on the modal delegate object when the sheet is dismissed. The signature of this method is listed in the Discussion section.
 - `contextInfo`: A pointer to context data the `didEndSelector` method needs to process the sheet. This data is user-defined and may be `NULL`.
 
-## See Also
-
-- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPrintPanel.Result) -> Void)?)](nsprintpanel/beginsheet(using:on:completionhandler:).md)
-- [func runModal() -> Int](nsprintpanel/runmodal.md)
-  Displays the Print panel and begins the modal loop.
-- [func runModal(with: NSPrintInfo) -> Int](nsprintpanel/runmodal(with:).md)
-  Displays the Print panel and runs the modal loop using the specified printing information.
-
 
 ---
 

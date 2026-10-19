@@ -107,7 +107,7 @@ The slider also uses the `step` to increase or decrease the value when a VoiceOv
   Slider content created from a Swift tuple of slider content.
 - [protocol SliderTickContent](slidertickcontent.md)
   A type that provides content for a `SliderTickBuilder`.
-### Deprecated initializers
+### Deprecated
 - [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, label: () -> Label)](slider/init(value:in:oneditingchanged:label:).md)
   Creates a slider to select a value from a given range, which displays the provided label.
 - [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](slider/init(value:in:step:oneditingchanged:label:).md)

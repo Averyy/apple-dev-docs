@@ -32,6 +32,8 @@ Periodic events do not have a window. The result of accessing this property on a
   The Core Graphics event object corresponding to this event.
 - [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
+- [var context: NSGraphicsContext?](nsevent/context.md)
+  The display graphics context for this event.
 
 
 ---

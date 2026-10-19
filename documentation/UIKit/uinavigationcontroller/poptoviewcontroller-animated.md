@@ -24,7 +24,7 @@ An array containing the view controllers that were popped from the stack.
 
 #### Discussion
 
-For information on how the navigation bar is updated, see [`Updating the navigation bar`](uinavigationcontroller#Updating-the-navigation-bar.md).
+For information on how the navigation bar is updated, see doc:UINavigationController#Updating-the-navigation-bar.
 
 ## Parameters
 

@@ -24,29 +24,52 @@ extern void vDSP_vpoly(const float *__A, vDSP_Stride __IA, const float *__B, vDS
 
 For example, the following code evaluates the polynomial with the coefficients `[10.0, 20.0, 30.0]` and the variables `[7.0, 5.0]`:
 
+**Swift**:
+
 ```swift
-    let stride = 1
-    
-    let coefficients: [Float] = [10, 20, 30]
-    let variables: [Float] = [7, 5]
-    
-    let result = [Float](
-        unsafeUninitializedCapacity: variables.count) {
-            buffer, initializedCount in
-            
-            vDSP_vpoly(coefficients, stride, 
-                       variables, stride,
-                       buffer.baseAddress!, stride,
-                       vDSP_Length(variables.count),
-                       vDSP_Length(coefficients.count - 1))
-            
-            initializedCount = 2
-        }
-   
-    // Prints "[660.0, 380.0]".
-    //    result[0] = (10 * 7²) + (20 * 7¹) + (30 * 7⁰) = 660
-    //    result[1] = (10 * 5²) + (20 * 5¹) + (30 * 5⁰) = 380
-    print(result)
+let stride = 1
+
+let coefficients: [Float] = [10, 20, 30]
+let variables: [Float] = [7, 5]
+
+let result = [Float](
+    unsafeUninitializedCapacity: variables.count) {
+        buffer, initializedCount in
+        
+        vDSP_vpoly(coefficients, stride, 
+                   variables, stride,
+                   buffer.baseAddress!, stride,
+                   vDSP_Length(variables.count),
+                   vDSP_Length(coefficients.count - 1))
+        
+        initializedCount = 2
+    }
+
+// Prints "[660.0, 380.0]".
+//    _result[0] = (10 * 7²) + (20 * 7¹) + (30 * 7⁰) = 660_
+//    _result[1] = (10 * 5²) + (20 * 5¹) + (30 * 5⁰) = 380_
+print(result)
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Stride stride = 1;
+
+float coefficients[] = {10, 20, 30};
+float variables[] = {7, 5};
+float result[2];
+
+vDSP_vpoly(coefficients, stride,
+           variables, stride,
+           result, stride,
+           2,
+           2);
+
+// Prints "[660, 380]".
+//    _result[0] = (10 * 7²) + (20 * 7¹) + (30 * 7⁰) = 660_
+//    _result[1] = (10 * 5²) + (20 * 5¹) + (30 * 5⁰) = 380_
+printf("[%g, %g]\n", result[0], result[1]);
 ```
 
 ## Parameters

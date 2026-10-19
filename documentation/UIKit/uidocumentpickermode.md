@@ -41,13 +41,6 @@ enum UIDocumentPickerMode
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
-## See Also
-
-- [var shouldShowFileExtensions: Bool](uidocumentpickerviewcontroller/shouldshowfileextensions.md)
-  A Boolean value that determines whether the browser always shows file extensions.
-- [var documentPickerMode: UIDocumentPickerMode](uidocumentpickerviewcontroller/documentpickermode.md)
-  The type of file transfer operation that the document picker uses.
-
 
 ---
 

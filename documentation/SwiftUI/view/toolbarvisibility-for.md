@@ -66,14 +66,14 @@ Depending on the specified bars, the requested visibility may not be able to be 
 
 ## See Also
 
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
-  Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
 - [struct ContentToolbarPlacement](contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+  Specifies the visibility of a bar managed by SwiftUI.
 
 
 ---

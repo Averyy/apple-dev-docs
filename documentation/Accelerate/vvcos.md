@@ -30,7 +30,7 @@ func vvcos(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 
 If `x` is `+/-inf`, the result is `NaN`.
 
-The following code shows an example of using [`vvcos(_:_:_:)`](vvcos(_:_:_:).md).
+The following code shows an example of using [`vvcos(_:_:_:)`](vvcos(_:_:_:).md):
 
 **Swift**:
 
@@ -54,7 +54,7 @@ int n = 3;
  
 vvcos(y, x, &n);
  
-NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+printf("y: [%lf, %lf, %lf]\n", y[0], y[1], y[2]);
 ```
 
 ## See Also

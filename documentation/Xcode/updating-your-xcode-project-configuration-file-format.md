@@ -5,7 +5,7 @@
 Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 
 **Availability**:
-- Xcode 27.2+ (Beta)
+- Xcode 27.2+
 
 #### Overview
 

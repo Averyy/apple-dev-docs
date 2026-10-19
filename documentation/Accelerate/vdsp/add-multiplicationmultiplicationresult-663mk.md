@@ -22,7 +22,7 @@ static func add<T, U, V>(multiplication multiplicationAB: (a: T, b: Float), mult
 
 #### Discussion
 
-This function calculates the element-wise vector-scalar products of `A` and `B`, and `C` and `D`, and writes the sum of the products to vector `D`.
+This function calculates the element-wise vector-scalar products of `A` and `B`, and `C` and `D`, and writes the sum of the products to vector `D`, as follows:
 
 ```swift
 for (n = 0; n < N; ++n)

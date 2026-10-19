@@ -6,7 +6,7 @@
 Initializes an video level control.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

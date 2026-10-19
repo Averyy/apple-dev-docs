@@ -52,10 +52,10 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
 ### Accessing tab information
 - [var tabStops: [NSTextTab]](nsparagraphstyle/tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [NSParagraphStyle.TextTabType](nsparagraphstyle/texttabtype.md)
-  Constants that specify the type of tab stop.
 - [var defaultTabInterval: CGFloat](nsparagraphstyle/defaulttabinterval.md)
   The documentwide default tab interval.
+- [NSParagraphStyle.TextTabType](nsparagraphstyle/texttabtype.md)
+  Constants that specify the type of tab stop.
 ### Getting text block and list information
 - [var textBlocks: [NSTextBlock]](nsparagraphstyle/textblocks.md)
   The text blocks that contain the paragraph.

@@ -106,18 +106,8 @@ SwiftUI supports standard behaviors people expect from a document-based app, app
 - [struct RenameAction](renameaction.md)
   An action that activates a standard rename interaction.
 ### Deprecated
-- [protocol FileDocument](filedocument.md)
-  A type that you use to serialize documents to and from file.
-- [struct FileDocumentConfiguration](filedocumentconfiguration.md)
-  The properties of an open file document.
-- [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
-  The configuration for reading file contents.
-- [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
-  The configuration for serializing file contents.
-- [protocol ReferenceFileDocument](referencefiledocument.md)
-  A type that you use to serialize reference type documents to and from file.
-- [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
-  The properties of an open reference file document.
+- [Deprecated symbols](documents-deprecated.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## See Also
 

@@ -46,10 +46,10 @@ static func clipToGlobalNorm() {
                                inputs: [inputOne, inputTwo],
                                outputs: [outputOne, outputTwo])
     
-    // Prints: `[0.5, 1.0, 1.5, 2.0]`
+    // Prints "[0.5, 1.0, 1.5, 2.0]".
     print(outputOne.makeArray(of: Float.self)!)
     
-    // Prints: `[2.5, 3.0, 3.5, 4.0]`
+    // Prints "[2.5, 3.0, 3.5, 4.0]".
     print(outputTwo.makeArray(of: Float.self)!)
 
     inputOne.deallocate()

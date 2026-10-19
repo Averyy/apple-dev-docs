@@ -26,8 +26,6 @@ static var fullSizeContentView: NSWindow.StyleMask { get }
   The window displays a minimize button.
 - [static var resizable: NSWindow.StyleMask](nswindow/stylemask-swift.struct/resizable.md)
   The window can be resized by the user.
-- [static var texturedBackground: NSWindow.StyleMask](nswindow/stylemask-swift.struct/texturedbackground.md)
-  The window uses a textured background that darkens when the window is key or main and lightens when it is inactive, and may have a second gradient in the section below the window content.
 - [static var unifiedTitleAndToolbar: NSWindow.StyleMask](nswindow/stylemask-swift.struct/unifiedtitleandtoolbar.md)
   This constant has no effect, because all windows that include a toolbar use the unified style.
 - [static var fullScreen: NSWindow.StyleMask](nswindow/stylemask-swift.struct/fullscreen.md)

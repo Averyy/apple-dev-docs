@@ -39,8 +39,8 @@ struct Name
 - [static let useAsDesktopPicture: NSSharingService.Name](nssharingservice/name/useasdesktoppicture.md)
   A service that sets the item provider’s contents as the current user’s desktop picture.
 ### Deprecated
-- [Deprecated Symbols](name-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+- [Deprecated symbols](name-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

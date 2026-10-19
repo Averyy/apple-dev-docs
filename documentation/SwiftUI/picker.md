@@ -163,6 +163,8 @@ VStack {
   Creates a picker that generates its label from a localized string resource.
 - [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](picker/init(selection:content:label:).md)
   Creates a picker that displays a custom label.
+- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](picker/init(selection:label:content:).md)
+  Creates a picker that displays a custom label.
 ### Creating a picker for a collection
 - [init(_:sources:selection:content:)](picker/init(_:sources:selection:content:).md)
   Creates a picker that generates its label from a localized string resource.
@@ -177,9 +179,6 @@ VStack {
   Creates a picker that generates its label from a localized string key and system image.
 - [init(_:systemImage:sources:selection:content:)](picker/init(_:systemimage:sources:selection:content:).md)
   Creates a picker bound to a collection of bindings that generates its label from a string.
-### Deprecated initializers
-- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](picker/init(selection:label:content:).md)
-  Creates a picker that displays a custom label.
 ### Initializers
 - [init(_:image:selection:content:currentValueLabel:)](picker/init(_:image:selection:content:currentvaluelabel:).md)
   Creates a picker that accepts a custom current value label and generates its label from a localized string key and image resource.

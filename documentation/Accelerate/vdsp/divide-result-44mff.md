@@ -22,7 +22,7 @@ static func divide<U, V>(_ vector: U, _ scalar: Double, result: inout V) where U
 
 #### Discussion
 
-This function calculates the element-wise division of vector `A` and scalar value `B`, and writes the result to vector `C`.
+This function calculates the element-wise division of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

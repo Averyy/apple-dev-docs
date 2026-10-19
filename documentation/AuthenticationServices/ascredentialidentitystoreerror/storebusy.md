@@ -24,6 +24,7 @@ Attempt the operation again at a later time.
 
 ## See Also
 
+- [static var errorDomain: String](ascredentialidentitystoreerror/errordomain.md)
 - [let ASCredentialIdentityStoreErrorDomain: String](ascredentialidentitystoreerrordomain.md)
   The domain for a credential identity store error.
 - [static var internalError: ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/internalerror.md)

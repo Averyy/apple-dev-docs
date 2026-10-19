@@ -40,9 +40,9 @@ When you design your app’s interface, you position views and other interface e
   A factory class for creating size-based layout constraint objects using a fluent API.
 ### Reserved regions
 - [UIView.ReservedRegion](uiview/reservedregion.md)
-  A region within a view’s coordinate space that another entity occupies.
+  A region within a view’s coordinate space that another entity reserves.
 - [func reservedRegions(kind: UIView.ReservedRegion.Kind, options: UIView.ReservedRegion.QueryOptions) -> [UIView.ReservedRegion]](uiview/reservedregions(kind:options:).md)
-  Returns the reserved regions of a given kind and options.
+  Returns the reserved regions of a kind that overlap the view.
 ### Anchors
 - [class NSLayoutAnchor](nslayoutanchor.md)
   A factory class for creating layout constraint objects using a fluent API.

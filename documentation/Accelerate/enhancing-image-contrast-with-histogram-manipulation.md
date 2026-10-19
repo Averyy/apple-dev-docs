@@ -20,6 +20,8 @@ Histogram equalization transforms an image so that its histogram is more uniform
 
 The following code shows how to perform histogram equalization for [`vImage_Buffer`](vimage_buffer.md) and [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structures:
 
+**Swift**:
+
 ```swift
 // vImage buffer histogram equalization.
 do {
@@ -40,6 +42,20 @@ do {
 }
 ```
 
+**Objective-C**:
+
+```objc
+// vImage buffer histogram equalization.
+{
+    vImage_Buffer sourceBuffer = { /* ... */ };
+    vImage_Buffer destinationBuffer = { /* ... */ };
+
+    vImageEqualization_ARGB8888(&sourceBuffer,
+                                &destinationBuffer,
+                                kvImageNoFlags);
+}
+```
+
 On return, `destinationBuffer` contains the transformed image. The picture below shows the low-contrast image after histogram equalization. The operation distributed the nonzero histogram bins across the entire range of values, and the result has a lot more contrast. The cumulative histogram is nearly a straight diagonal line, indicating an almost uniform distribution of values.
 
 ![Two side-by-side images showing a very high-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are unevenly distributed across the length of the chart. The continous line that represents the cumulative histogram follows the diagonal line from the bottom left to the top right of the chart.](/images/com.apple.accelerate/media-3702119@2x.png)
@@ -51,6 +67,8 @@ Note that the histogram bins aren’t evenly distributed throughout the resultin
 Contrast stretching evenly distributes a histogram’s pixel values across the full range of available pixel values. This technique is ideal for enhancing the contrast of an image with pixel values concentrated in one area of the intensity spectrum, such as the original low-contrast image above.
 
 The following code shows how to perform contrast stretching for [`vImage_Buffer`](vimage_buffer.md) and [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structures:
+
+**Swift**:
 
 ```swift
 // vImage buffer contrast stretching.
@@ -72,6 +90,20 @@ do {
 }
 ```
 
+**Objective-C**:
+
+```objc
+// vImage buffer contrast stretching.
+{
+    vImage_Buffer sourceBuffer = { /* ... */ };
+    vImage_Buffer destinationBuffer = { /* ... */ };
+
+    vImageContrastStretch_ARGB8888(&sourceBuffer,
+                                   &destinationBuffer,
+                                   kvImageNoFlags);
+}
+```
+
 On return, `destinationBuffer` contains the transformed image. The picture below shows the low-contrast image after histogram stretching. The result has a lot more contrast, and its histogram shows that values are evenly distributed throughout the entire range. The shape of the contrast stretched image’s cumulative histogram is very similar to the original image’s cumulative histogram.
 
 ![Two side-by-side images show a high-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are evenly distributed across the length of the chart. The continous line that represents the cumulative histogram rises where the histogram values are high and is flat where the histogram values are low. ](/images/com.apple.accelerate/media-3702118@2x.png)
@@ -88,6 +120,8 @@ Note that this illustration isn’t to scale; the operation uses percentages bas
 
 Set the `percent_low` parameter of the [`vImageEndsInContrastStretch_ARGB8888(_:_:_:_:_:)`](vimageendsincontraststretch_argb8888(_:_:_:_:_:).md) function to define the percentage of pixels that the operation maps to the lowest end of the transformed image’s histogram. The following code shows how to perform ends-in contrast stretching for [`vImage_Buffer`](vimage_buffer.md) and [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structures with `percent_low` set to 25% for all channels:
 
+**Swift**:
+
 ```swift
 // vImage buffer ends-in contrast stretching.
 do {
@@ -116,7 +150,25 @@ do {
         }
     }
 }
- 
+```
+
+**Objective-C**:
+
+```objc
+// vImage buffer ends-in contrast stretching.
+{
+    vImage_Buffer sourceBuffer = { /* ... */ };
+    vImage_Buffer destinationBuffer = { /* ... */ };
+
+    unsigned int percent_low[4]  = {25, 25, 25, 25};
+    unsigned int percent_high[4] = {0, 0, 0, 0};
+
+    vImageEndsInContrastStretch_ARGB8888(&sourceBuffer,
+                                         &destinationBuffer,
+                                         percent_low,
+                                         percent_high,
+                                         kvImageNoFlags);
+}
 ```
 
 On return, `destinationBuffer` contains the transformed image. The picture below shows the low-contrast image after ends-in contrast stretching. This result is much darker overall with the histogram shifted to the left.
@@ -125,6 +177,8 @@ On return, `destinationBuffer` contains the transformed image. The picture below
 
 Set the `percent_high` parameter of the [`vImageEndsInContrastStretch_ARGB8888(_:_:_:_:_:)`](vimageendsincontraststretch_argb8888(_:_:_:_:_:).md) function to define the percentage of pixels that the operation maps to the high end of the transformed image’s histogram. The following code shows how to perform ends-in contrast stretching for [`vImage_Buffer`](vimage_buffer.md) and [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structures with `percent_high` set to 25% for all channels:
 
+**Swift**:
+
 ```swift
 // vImage buffer ends-in contrast stretching.
 do {
@@ -152,6 +206,25 @@ do {
                                                  vImage_Flags(kvImageNoFlags))
         }
     }
+}
+```
+
+**Objective-C**:
+
+```objc
+// vImage buffer ends-in contrast stretching.
+{
+    vImage_Buffer sourceBuffer = { /* ... */ };
+    vImage_Buffer destinationBuffer = { /* ... */ };
+
+    unsigned int percent_low[4]  = {0, 0, 0, 0};
+    unsigned int percent_high[4] = {25, 25, 25, 25};
+
+    vImageEndsInContrastStretch_ARGB8888(&sourceBuffer,
+                                         &destinationBuffer,
+                                         percent_low,
+                                         percent_high,
+                                         kvImageNoFlags);
 }
 ```
 

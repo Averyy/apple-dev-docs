@@ -33,6 +33,9 @@ enum Model
   An indexed color space, which identifies discrete colors in a color list by index number.
 - [NSColorSpace.Model.patterned](nscolorspace/model/patterned.md)
   A pattern color space, which is a repeated image that creates a tiled pattern.
+### Deprecated
+- [Deprecated symbols](model-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [init?(rawValue: Int)](nscolorspace/model/init(rawvalue:).md)
 

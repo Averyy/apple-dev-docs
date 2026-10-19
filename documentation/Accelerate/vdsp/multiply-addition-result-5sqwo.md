@@ -22,7 +22,7 @@ static func multiply<S, T, U, V>(addition: (a: S, b: T), _ vector: U, result: in
 
 #### Discussion
 
-This function calculates the sums of the first `N` elements of `A` and `B`, multiplies each sum by the corresponding value in `C`, and writes the result to `D`.
+This function calculates the sums of the first `N` elements of `A` and `B`, multiplies each sum by the corresponding value in `C`, and writes the result to `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

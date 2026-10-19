@@ -31,7 +31,6 @@ struct Name
   A high-contrast version of the light vibrant appearance.
 - [static let accessibilityHighContrastVibrantDark: NSAppearance.Name](nsappearance/name-swift.struct/accessibilityhighcontrastvibrantdark.md)
   A high-contrast version of the dark vibrant appearance.
-### Deprecated Appearance Names
 - [static let lightContent: NSAppearance.Name](nsappearance/name-swift.struct/lightcontent.md)
   The standard appearance that can be used by controls in light content areas (not including window-frame areas).
 ### Initializers

@@ -51,6 +51,8 @@ You can also use [`wheel`](pickerstyle/wheel.md) to construct this style.
   A picker style that presents the options in a segmented control.
 - [struct TabsPickerStyle](tabspickerstyle.md)
   A picker style that presents options as segmented tabs.
+- [struct PopUpButtonPickerStyle](popupbuttonpickerstyle.md)
+  A picker style that presents the options as a menu when the user presses a button.
 
 
 ---

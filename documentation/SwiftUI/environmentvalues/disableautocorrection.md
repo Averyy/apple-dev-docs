@@ -34,10 +34,9 @@ When the value is `nil`, SwiftUI uses the system default. The default value is `
   The active appearance expected of controls in a window.
 - [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
   A binding to the current presentation mode of the view associated with this environment.
-- [struct PresentationMode](presentationmode.md)
-  An indication whether a view is currently presented by another view.
 - [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
   The size of content.
+- [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
 
 
 ---

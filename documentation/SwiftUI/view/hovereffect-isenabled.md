@@ -36,8 +36,6 @@ By default, [`automatic`](hovereffect/automatic.md) is used. You can control the
 
 - [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
-- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
-  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 - [func hoverEffectDisabled(Bool) -> some View](view/hovereffectdisabled(_:).md)
   Adds a condition that controls whether this view can display hover effects.
 - [func defaultHoverEffect(_:)](view/defaulthovereffect(_:).md)
@@ -52,6 +50,8 @@ By default, [`automatic`](hovereffect/automatic.md) is used. You can control the
   Presents an ornament on hover using a custom effect.
 - [struct OrnamentHoverEffect](ornamenthovereffect.md)
   Presents an ornament on hover.
+- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
+  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
 
 ---

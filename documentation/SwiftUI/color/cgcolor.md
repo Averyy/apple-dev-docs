@@ -26,6 +26,15 @@ You can get a [`CGColor`](https://developer.apple.com/documentation/coregraphics
 
 For a dynamic color, like one you load from an Asset Catalog using [`init(_:bundle:)`](color/init(_:bundle:).md), or one you create from a dynamic UIKit or AppKit color, this property is `nil`. To evaluate all types of colors, use the `resolve(in:)` method.
 
+## See Also
+
+- [init(uiColor: UIColor)](color/init(uicolor:).md)
+  Creates a color from a UIKit color.
+- [init(nsColor: NSColor)](color/init(nscolor:).md)
+  Creates a color from an AppKit color.
+- [init(cgColor: CGColor)](color/init(cgcolor:).md)
+  Creates a color from a Core Graphics color.
+
 
 ---
 

@@ -128,8 +128,6 @@ Intercepting events is only rarely required and you should avoid it if possible.
 ### Opening a URL resource
 - [func open(URL, options: [UIApplication.OpenExternalURLOptionsKey : Any], completionHandler: ((Bool) -> Void)?)](uiapplication/open(_:options:completionhandler:).md)
   Attempts to asynchronously open the resource at the specified URL.
-- [func canOpenURL(URL) -> Bool](uiapplication/canopenurl(_:).md)
-  Returns a Boolean value that indicates whether an app is available to handle a URL scheme.
 - [UIApplication.OpenExternalURLOptionsKey](uiapplication/openexternalurloptionskey.md)
   Options for opening a URL.
 ### Deep linking to custom settings
@@ -137,8 +135,6 @@ Intercepting events is only rarely required and you should avoid it if possible.
   The URL string you use to deep link to your app’s custom settings in the Settings app.
 - [static let openNotificationSettingsURLString: String](uiapplication/opennotificationsettingsurlstring.md)
   The URL string you use to deep link to your app’s notification settings in the Settings app.
-- [let UIApplicationOpenNotificationSettingsURLString: String](uiapplicationopennotificationsettingsurlstring.md)
-  A constant that provides the URL string you use to deep link to your app’s notification settings in the Settings app.
 - [class let openDefaultApplicationsSettingsURLString: String](uiapplication/opendefaultapplicationssettingsurlstring.md)
   The URL string used to select a default app in the Settings app.
 ### Managing the app’s idle timer
@@ -198,9 +194,6 @@ Intercepting events is only rarely required and you should avoid it if possible.
   A notification that posts when the user changes the preferred content size setting.
 - [static let newValueUserInfoKey: String](uicontentsizecategory/newvalueuserinfokey.md)
   A key that reflects the new preferred content size.
-### Specifying the supported interface orientations
-- [func supportedInterfaceOrientations(for: UIWindow?) -> UIInterfaceOrientationMask](uiapplication/supportedinterfaceorientations(for:).md)
-  Returns the default set of interface orientations to use for the view controllers in the specified window.
 ### Tracking controls in the run loop
 - [static let tracking: RunLoop.Mode](../foundation/runloop/mode/tracking.md)
   The mode set while tracking in controls takes place.
@@ -216,7 +209,7 @@ Intercepting events is only rarely required and you should avoid it if possible.
   Errors that can happen when the system checks if your app is the default app in a category.
 ### Deprecated
 - [Deprecated symbols](uiapplication-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [UIApplication.BackgroundRefreshStatusDidChangeMessage](uiapplication/backgroundrefreshstatusdidchangemessage.md)
 - [UIApplication.DidBecomeActiveMessage](uiapplication/didbecomeactivemessage.md)

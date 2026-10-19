@@ -59,14 +59,14 @@ TabView {
 
 ## See Also
 
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
-  Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
   Specifies the visibility of a bar managed by SwiftUI.
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
 - [struct ContentToolbarPlacement](contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+  Specifies the visibility of a bar managed by SwiftUI.
 
 
 ---

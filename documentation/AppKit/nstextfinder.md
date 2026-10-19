@@ -28,6 +28,14 @@ A responder of [`performTextFinderAction(_:)`](nsresponder/performtextfinderacti
 
 Each user interface item used for finding has a different tag value , which corresponds to the appropriate value in [`NSTextFinder.Action`](nstextfinder/action.md). Upon receipt of the  [`performTextFinderAction(_:)`](nsresponder/performtextfinderaction(_:).md) message, the responder should call the following on its `NSTextFinder` instance:
 
+**Swift**:
+
+```swift
+func performAction(_ op: NSTextFinder.Action)
+```
+
+**Objective-C**:
+
 ```objc
 - (void)performAction:(NSTextFinderAction)action;
 ```
@@ -35,6 +43,14 @@ Each user interface item used for finding has a different tag value , which corr
 This method will determine the desired action from the tag and make various callbacks to [`client`](nstextfinder/client.md) to perform that action. These callbacks are defined in the [`NSTextFinderClient`](nstextfinderclient.md) protocol.
 
 Validation occurs by a similar pattern. The responder should implement [`validateUserInterfaceItem(_:)`](nsuserinterfacevalidations/validateuserinterfaceitem(_:).md) and, when the item’s action is the [`performTextFinderAction(_:)`](nsresponder/performtextfinderaction(_:).md) method, it should pass the item’s tag to the following method and return the result:
+
+**Swift**:
+
+```swift
+func validateAction(_ op: NSTextFinder.Action) -> Bool
+```
+
+**Objective-C**:
 
 ```objc
 - (BOOL)validateAction:(NSTextFinderAction)action;

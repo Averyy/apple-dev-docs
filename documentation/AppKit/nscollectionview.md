@@ -36,7 +36,7 @@ An `NSCollectionView` object itself is a facilitator, taking information from di
 
 [`Figure 1`](nscollectionview#1965644.md) illustrates how the collection view works with its other objects to create its final appearance. The collection view obtains the views for items and supplementary views from its data source, which creates the views and fills them with data. The layout object provides the layout attributes needed to position those items and supplementary views onscreen. The collection view merges the two sets of information to create the final appearance that the user sees onscreen.
 
-![None](/images/com.apple.appkit/media-1965644@2x.png)
+![A diagram showing how a collection view works with its helper objects to produce its final appearance. At the center, the collection view points to a delegate and a data source on the right, and to a collection view layout on the left. The layout object produces layout attributes, and the data source produces items. Both flow back into the collection view, which outputs a grid of items arranged in two columns.](/images/com.apple.appkit/media-1965644@2x.png)
 
 There are other helper classes and protocols that you can use to customize the layout behavior and other aspects of the collection view interface. For example, when using a flow layout object ([`NSCollectionViewFlowLayout`](nscollectionviewflowlayout.md)), you can modify the flow layout’s behavior using the methods of the [`NSCollectionViewDelegateFlowLayout`](nscollectionviewdelegateflowlayout.md) protocol. When implementing a custom layout, you might also work with [`NSCollectionViewUpdateItem`](nscollectionviewupdateitem.md) and [`NSCollectionViewLayoutInvalidationContext`](nscollectionviewlayoutinvalidationcontext.md) objects, which help the layout object manage updates.
 
@@ -240,20 +240,8 @@ For more information about how to configure a collection view using the legacy a
 - [func draggingImageForItems(at: Set<IndexPath>, with: NSEvent, offset: NSPointPointer) -> NSImage](nscollectionview/draggingimageforitems(at:with:offset:)-7rc4k.md)
   Returns an image to use for dragging the specified items.
 ### Legacy Collection View Support
-- [var itemPrototype: NSCollectionViewItem?](nscollectionview/itemprototype.md)
-  The receiver’s collection view item prototype.
-- [func newItem(forRepresentedObject: Any) -> NSCollectionViewItem](nscollectionview/newitem(forrepresentedobject:).md)
-  Returns the collection view item that is used for the specified object.
 - [var selectionIndexes: IndexSet](nscollectionview/selectionindexes.md)
   The indexes of the currently selected items.
-- [var maxNumberOfRows: Int](nscollectionview/maxnumberofrows.md)
-  The maximum number of rows that the collection view displays.
-- [var maxNumberOfColumns: Int](nscollectionview/maxnumberofcolumns.md)
-  The maximum number of columns that the collection view displays.
-- [var minItemSize: NSSize](nscollectionview/minitemsize.md)
-  The minimum size (in points) of items in the collection view grid.
-- [var maxItemSize: NSSize](nscollectionview/maxitemsize.md)
-  The maximum size (in points) of items in the collection view grid.
 - [func item(at: Int) -> NSCollectionViewItem?](nscollectionview/item(at:)-80xze.md)
   Returns the collection view item for the represented object at the specified index.
 - [func frameForItem(at: Int) -> NSRect](nscollectionview/frameforitem(at:).md)
@@ -283,6 +271,9 @@ For more information about how to configure a collection view using the legacy a
   Constants indicating the scrolling direction for the layout.
 - [NSCollectionView.UpdateAction](nscollectionview/updateaction.md)
   Constants indicating the type of action being performed on an item.
+### Deprecated
+- [Deprecated symbols](nscollectionview-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Instance Properties
 - [var appIntentsDataSource: (any NSCollectionViewAppIntentsDataSource)?](nscollectionview/appintentsdatasource.md)
   The object acting as the collection view’s data source for app entity identifiers that make a cell’s content discoverable by Apple Intelligence and Siri.

@@ -30,21 +30,46 @@ This function provides two different operations, depending on whether you pass t
 
 Without the [`kvImageNoAllocate`](kvimagenoallocate.md) flag, this function initializes a [`vImage_Buffer`](vimage_buffer.md) structure with memory that the vImage library sizes and aligns for the best performance. For example, the following code initializes a vImage buffer with the optimal memory size and alignment for a 10 x 5 image:
 
+**Swift**:
+
 ```swift
 var buffer = vImage_Buffer()
 
 vImageBuffer_Init(
     &buffer,
-    5,    // height
-    10,   // width
-    8,    // bits per pixel
+    5,    // The height.
+    10,   // The width.
+    8,    // The bits per pixel.
     vImage_Flags(kvImageNoFlags))
 
-// Prints "vImage_Buffer(data: Optional(...), height: 5, width: 10, rowBytes: 16)".
-print(buffer)
+// Prints "height: 5, width: 10, rowBytes: 16".
+print("height: \(buffer.height), width: \(buffer.width), rowBytes: \(buffer.rowBytes)")
+```
+
+**Objective-C**:
+
+```objc
+vImage_Buffer buffer = {};
+
+vImageBuffer_Init(
+    &buffer,
+    5,    // The height.
+    10,   // The width.
+    8,    // The bits per pixel.
+    kvImageNoFlags);
+
+// Prints "height: 5, width: 10, rowBytes: 16".
+printf("height: %lu, width: %lu, rowBytes: %zu\n",
+       (unsigned long)buffer.height,
+       (unsigned long)buffer.width,
+       buffer.rowBytes);
+
+free(buffer.data);
 ```
 
 With the [`kvImageNoAllocate`](kvimagenoallocate.md) flag, the function returns the memory alignment and overwrites the buffer’s [`rowBytes`](vimage_buffer/rowbytes.md) property with values that provide the best performance. For example, the following code calls [`vImageBuffer_Init(_:_:_:_:_:)`](vimagebuffer_init(_:_:_:_:_:).md) and uses the computed values to allocate an [`UnsafeMutableRawPointer`](https://developer.apple.com/documentation/swift/unsafemutablerawpointer):
+
+**Swift**:
 
 ```swift
 let width = 10
@@ -70,8 +95,37 @@ let data = UnsafeMutableRawPointer.allocate(
 
 buffer.data = data
 
-// Prints "vImage_Buffer(data: Optional(...), height: 5, width: 10, rowBytes: 16)".
-print(buffer)
+// Prints "height: 5, width: 10, rowBytes: 16".
+print("height: \(buffer.height), width: \(buffer.width), rowBytes: \(buffer.rowBytes)")
+```
+
+**Objective-C**:
+
+```objc
+vImagePixelCount width = 10;
+vImagePixelCount height = 5;
+
+vImage_Buffer buffer = {};
+
+vImage_Error alignment = vImageBuffer_Init(
+    &buffer,
+    height,
+    width,
+    8,
+    kvImageNoAllocate);
+
+if (alignment > 0) {
+    void *data = malloc(buffer.rowBytes * height);
+    buffer.data = data;
+
+    // Prints "height: 5, width: 10, rowBytes: 16".
+    printf("height: %lu, width: %lu, rowBytes: %zu\n",
+           (unsigned long)buffer.height,
+           (unsigned long)buffer.width,
+           buffer.rowBytes);
+
+    free(data);
+}
 ```
 
 In both cases, this function sets the buffer’s width, height, and row bytes properties.

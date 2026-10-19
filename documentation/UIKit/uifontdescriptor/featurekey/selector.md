@@ -27,6 +27,10 @@ The value of this key is an [`NSNumber`](https://developer.apple.com/documentati
 
 - [static let type: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/type.md)
   A key for identifying the font feature type.
+- [static let featureIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/featureidentifier.md)
+  A key for identifying a font feature type.
+- [static let typeIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/typeidentifier.md)
+  A key for identifying the font feature selector.
 
 
 ---

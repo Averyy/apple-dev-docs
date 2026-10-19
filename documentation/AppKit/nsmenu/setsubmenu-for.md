@@ -25,8 +25,6 @@ func setSubmenu(_ menu: NSMenu?, for item: NSMenuItem)
   The action method assigned to menu items that open submenus.
 - [var supermenu: NSMenu?](nsmenu/supermenu.md)
   The parent menu that contains the menu as a submenu.
-- [var isTornOff: Bool](nsmenu/istornoff.md)
-  Indicates whether the menu is offscreen or attached to another menu (or if it’s the main menu).
 
 
 ---

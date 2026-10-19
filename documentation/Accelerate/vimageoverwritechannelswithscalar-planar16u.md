@@ -28,6 +28,8 @@ func vImageOverwriteChannelsWithScalar_Planar16U(_ scalar: Pixel_16U, _ dest: Un
 
 The following code fills `pixelBuffer` with `scalar`:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.Planar16U>(
     size: .init(width: 4, height: 1))
@@ -42,6 +44,29 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 
 // Prints "[101, 101, 101, 101]".
 print(pixelBuffer.array)
+```
+
+**Objective-C**:
+
+```objc
+uint16_t data[4] = {0, 0, 0, 0};
+
+vImage_Buffer buf = {
+    .data = data,
+    .width = 4,
+    .height = 1,
+    .rowBytes = 8
+};
+
+Pixel_16U scalar = 101;
+
+vImageOverwriteChannelsWithScalar_Planar16U(scalar,
+                                            &buf,
+                                            kvImageNoFlags);
+
+// Prints "[101, 101, 101, 101]".
+printf("[%u, %u, %u, %u]\n",
+      data[0], data[1], data[2], data[3]);
 ```
 
 ## Parameters

@@ -36,7 +36,7 @@ unsigned long index =  fIndex;
 float result = table[ index ] * ( 1.0f - fract ) + table[ index + 1] * fract;
 ```
 
-The following code shows a lookup table that contains two values, `1` and `0`. The result is that the lookup transformation maps the source values `0...1` to the destination values `1...0`.
+The following code shows a lookup table that contains two values, `1` and `0`. The result is that the lookup transformation maps the source values `0...1` to the destination values `1...0`:
 
 ```swift
 let lookupTable: [Float] = [1, 0]

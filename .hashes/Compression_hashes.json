@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-16T07:31:36.697920",
+    "last_updated": "2026-10-19T20:44:53.059567",
     "total_pages": 132,
-    "session_id": "2026-10-16T07:31:30.658137"
+    "session_id": "2026-10-19T20:44:39.526548"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Compression.json": {
       "hash": "52e9c3478f69de4a05a0fc49ebc56cbf697a976f0c0ccf3567419f5202c56327",
-      "last_checked": "2026-10-16T07:31:30.953034",
+      "last_checked": "2026-10-19T20:44:39.775146",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"7e84-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/Compression.md"
     },
     "https://developer.apple.com/documentation/Compression": {
       "hash": "52e9c3478f69de4a05a0fc49ebc56cbf697a976f0c0ccf3567419f5202c56327",
-      "last_checked": "2026-10-16T07:31:30.867107",
+      "last_checked": "2026-10-19T20:44:39.772331",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"7e84-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/Compression.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/inputfilter.json": {
       "hash": "a214ce67342897cdc0c2b6e14076b302cc5ae866d52f193cb1e1c66b2eb25dbd",
-      "last_checked": "2026-10-16T07:31:31.132252",
+      "last_checked": "2026-10-19T20:44:40.200042",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2a7e-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/inputfilter.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/outputfilter.json": {
       "hash": "3aeb255a8bf229b83a99dcce3e22bfefda5ffbc5618370db28c6d20d66d196eb",
-      "last_checked": "2026-10-16T07:31:31.220273",
+      "last_checked": "2026-10-19T20:44:40.482012",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"28da-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/outputfilter.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/algorithm.json": {
       "hash": "77c663e9f00cee0f6fe3a100f2e98abf25b5280c59c434e8646df1e5d7dc0c7d",
-      "last_checked": "2026-10-16T07:31:31.337760",
+      "last_checked": "2026-10-19T20:44:40.814184",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"349c-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/algorithm.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/filtererror.json": {
       "hash": "82ae6e2135f061d5ba701dbafaf26e7b1ab56f384dca2296c6d540c7b2fdaa19",
-      "last_checked": "2026-10-16T07:31:31.378167",
+      "last_checked": "2026-10-19T20:44:41.098671",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2e8a-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/filtererror.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/filteroperation.json": {
       "hash": "0df1a7498b24039e25ea19692361e04d3a9fe7c5f1d88273681dc82fb6afb04d",
-      "last_checked": "2026-10-16T07:31:31.481392",
+      "last_checked": "2026-10-19T20:44:41.383147",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2916-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/filteroperation.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream.json": {
       "hash": "894883b2ec5cbdb4d15c98b2428850762de604a1a429e2c2959e83a12ed9843e",
-      "last_checked": "2026-10-16T07:31:31.568161",
+      "last_checked": "2026-10-19T20:44:41.539223",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"76f6-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-stream.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_init(_:_:_:).json": {
       "hash": "dcacce00f693562e6437cc1289b1f50e8383861edcd28fc20d603382727f60ae",
-      "last_checked": "2026-10-16T07:31:31.624842",
+      "last_checked": "2026-10-19T20:44:41.679906",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"65c4-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-stream-init.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_process(_:_:).json": {
       "hash": "e02269e5a68bfe51c0a150aa49067edc0074b80d498cf7edc66db303491b5dd5",
-      "last_checked": "2026-10-16T07:31:31.901028",
+      "last_checked": "2026-10-19T20:44:41.961915",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"7e23-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-stream-process.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_destroy(_:).json": {
       "hash": "bc00d6d9ad13f83c9ed71f8991dc773dd0bef8954aaa6801f1710fab9e36d184",
-      "last_checked": "2026-10-16T07:31:31.945032",
+      "last_checked": "2026-10-19T20:44:42.231799",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"5923-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-stream-destroy.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_status.json": {
       "hash": "8c5a5a77cd0c6bc7395ea9f55369992d60a5fe0b8a23ac21d2cae88e9d00eede",
-      "last_checked": "2026-10-16T07:31:32.050011",
+      "last_checked": "2026-10-19T20:44:42.507561",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"6443-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-status.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_flags.json": {
       "hash": "3336c76a7ae304cb31df031a68de76441a52a625e393348aa7634ebc344cac2b",
-      "last_checked": "2026-10-16T07:31:32.178347",
+      "last_checked": "2026-10-19T20:44:42.648174",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"5ace-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-stream-flags.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_operation.json": {
       "hash": "6ff3aaf74750a385be3d8953960b29425f1671c6b136043c4b0d7eb6f92f0e07",
-      "last_checked": "2026-10-16T07:31:32.245958",
+      "last_checked": "2026-10-19T20:44:42.781277",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"6038-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-stream-operation.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_algorithm.json": {
       "hash": "b6fbaf0ef5ab0d7899cf71f17d799c43b3352ea50e25e9d8768e0eba37fdddf6",
-      "last_checked": "2026-10-16T07:31:32.291331",
+      "last_checked": "2026-10-19T20:44:42.916657",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"8f16-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-algorithm.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_encode_scratch_buffer_size(_:).json": {
       "hash": "7bb465a22c50df70cad37680c3d3e377040da2c415f564c8d8bafc1e3310ddea",
-      "last_checked": "2026-10-16T07:31:32.407741",
+      "last_checked": "2026-10-19T20:44:43.184028",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"4349-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-encode-scratch-buffer-size.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_encode_buffer(_:_:_:_:_:_:).json": {
       "hash": "7b30f9e2fd11d42649c2a330fa8487d17ff2966bdf97528ce71fc83c56398e88",
-      "last_checked": "2026-10-16T07:31:32.449269",
+      "last_checked": "2026-10-19T20:44:43.485078",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"67f9-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-encode-buffer.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_decode_scratch_buffer_size(_:).json": {
       "hash": "fb345645017abcb19a5edc16d557751ffb02453399f5953fc8592df67021d737",
-      "last_checked": "2026-10-16T07:31:32.567097",
+      "last_checked": "2026-10-19T20:44:43.765676",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"44af-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-decode-scratch-buffer-size.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_decode_buffer(_:_:_:_:_:_:).json": {
       "hash": "f4823180829edecb8206aa516b267dcad269f318ff6cbb6b48794a1b7ed358df",
-      "last_checked": "2026-10-16T07:31:32.620244",
+      "last_checked": "2026-10-19T20:44:43.909418",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"6ba1-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-decode-buffer.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/inputfilter/init(_:using:buffercapacity:readingfrom:).json": {
       "hash": "17a11c0108ded827914037d24b57afcfca8e307ef0b3667b72bd744ded931b09",
-      "last_checked": "2026-10-16T07:31:32.716413",
+      "last_checked": "2026-10-19T20:44:44.051740",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2135-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/inputfilter/init-usingbuffercapacityreadingfrom.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/inputfilter/readdata(oflength:).json": {
       "hash": "f66b03521e2975a74bd342a28a21e42daa48079d302089e97ff50bcaded42c01",
-      "last_checked": "2026-10-16T07:31:32.754281",
+      "last_checked": "2026-10-19T20:44:44.205659",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"16ee-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/inputfilter/readdata-oflength.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/outputfilter/init(_:using:buffercapacity:writingto:).json": {
       "hash": "4102dbfb4a2d0ffb273cefc2b7e238162340616cf2f53ca414ab45c86fcb7281",
-      "last_checked": "2026-10-16T07:31:32.865946",
+      "last_checked": "2026-10-19T20:44:44.518739",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2693-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/outputfilter/init-usingbuffercapacitywritingto.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/outputfilter/write(_:).json": {
       "hash": "50caf27daa401f3cae9b4bd83ffcf89ad520787c7e9d447227d92a2b0fe23333",
-      "last_checked": "2026-10-16T07:31:32.914520",
+      "last_checked": "2026-10-19T20:44:44.781539",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1769-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/outputfilter/write.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/outputfilter/finalize().json": {
       "hash": "815621dbea77b05db0cabfbffbc64d2294aed98fce3ea55a05eb357d5148c0d9",
-      "last_checked": "2026-10-16T07:31:32.961178",
+      "last_checked": "2026-10-19T20:44:44.946712",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1231-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/outputfilter/finalize.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/algorithm/brotli.json": {
       "hash": "6da0fbbc3ce7526bfca5cf74d45153d48e1a389701dd3f07c9088773df7d5c7e",
-      "last_checked": "2026-10-16T07:31:33.037290",
+      "last_checked": "2026-10-19T20:44:45.089422",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1045-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/algorithm/brotli.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/algorithm/lz4.json": {
       "hash": "74240ebca50161d3201c95d05cd4f343ce229f59d82f9acfb60af9cbd74fe342",
-      "last_checked": "2026-10-16T07:31:33.091879",
+      "last_checked": "2026-10-19T20:44:45.225038",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1d79-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/algorithm/lz4.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/algorithm/lzbitmap.json": {
       "hash": "a843502cc4a8b8c6d65738f1cb7fcf93af298ea190ae1a1b0069b42d0504a5cc",
-      "last_checked": "2026-10-16T07:31:33.194177",
+      "last_checked": "2026-10-19T20:44:45.682354",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"3052-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/algorithm/lzbitmap.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/algorithm/lzfse.json": {
       "hash": "b0e20bbf33443918cc6ef4e0a779c55eda5bf7c586b9a167d2654419e0035970",
-      "last_checked": "2026-10-16T07:31:33.229234",
+      "last_checked": "2026-10-19T20:44:45.827620",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"156a-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/algorithm/lzfse.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/algorithm/lzma.json": {
       "hash": "6b36abad5aa7b52aba2c91d29628078b097da13413fdfdadfd11811374c39ac3",
-      "last_checked": "2026-10-16T07:31:33.505110",
+      "last_checked": "2026-10-19T20:44:45.984666",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"147d-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/algorithm/lzma.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/algorithm/zlib.json": {
       "hash": "994b54774926c714741bcbe8b78748ccf07f41b89be1ab61c4ce5a6830df0c0a",
-      "last_checked": "2026-10-16T07:31:33.590899",
+      "last_checked": "2026-10-19T20:44:46.130729",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"17a9-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/algorithm/zlib.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/filtererror/invaliddata.json": {
       "hash": "3faf26f58821110f9c3a14bf8d5ac1af5be298b1b0ac30dcce395406d7fe1154",
-      "last_checked": "2026-10-16T07:31:33.679463",
+      "last_checked": "2026-10-19T20:44:46.279412",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"dfb-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/filtererror/invaliddata.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/filtererror/invalidstate.json": {
       "hash": "1149653a1e94a8ca9f2314e614d756480d3d21207b23765c45844b62864114b0",
-      "last_checked": "2026-10-16T07:31:33.716264",
+      "last_checked": "2026-10-19T20:44:46.413994",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"e5c-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/filtererror/invalidstate.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/filteroperation/compress.json": {
       "hash": "260c8e28c2408ee237e76a9127c55c131c257e3a198df9f23b6d795c59e54036",
-      "last_checked": "2026-10-16T07:31:33.776476",
+      "last_checked": "2026-10-19T20:44:46.558291",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"e02-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/filteroperation/compress.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/filteroperation/decompress.json": {
       "hash": "9cd47bf57651613e9d7ab0b0ec967d72398f9bb8d48987e8f2da8e61428e46f7",
-      "last_checked": "2026-10-16T07:31:33.842529",
+      "last_checked": "2026-10-19T20:44:46.851528",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"e1d-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/filteroperation/decompress.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream/init(dst_ptr:dst_size:src_ptr:src_size:state:).json": {
       "hash": "a6e344ca2c7f7a62b489fe0e1017573ebf0e5c429d309a7da146325154b5f6fa",
-      "last_checked": "2026-10-16T07:31:33.914739",
+      "last_checked": "2026-10-19T20:44:47.002710",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2d73-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream/init-dst-ptrdst-sizesrc-ptrsrc-sizestate.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream/dst_ptr.json": {
       "hash": "c8f89356d3998c3b2ab0bf59a61e5d0ed5db5f0b66273716d2bdb92e87fb4abb",
-      "last_checked": "2026-10-16T07:31:34.050446",
+      "last_checked": "2026-10-19T20:44:47.290066",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"33c5-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream/dst-ptr.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream/dst_size.json": {
       "hash": "26afca82fc0eacfff8efefa9bd71cd13d37531a1f184389657db6a47a6583ade",
-      "last_checked": "2026-10-16T07:31:34.145209",
+      "last_checked": "2026-10-19T20:44:47.427601",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2f6e-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream/dst-size.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream/src_ptr.json": {
       "hash": "24f7af01439948bf619d6280799c5a5f99e1163f292a97794a3587a1b9a4719f",
-      "last_checked": "2026-10-16T07:31:34.233177",
+      "last_checked": "2026-10-19T20:44:47.690125",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"3379-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream/src-ptr.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream/src_size.json": {
       "hash": "66c46ed2a14e40f1bbbc30d8ce42144273d1b9875b5861b27ad43c74eec6a28d",
-      "last_checked": "2026-10-16T07:31:34.309303",
+      "last_checked": "2026-10-19T20:44:47.967170",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2f69-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream/src-size.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream/state.json": {
       "hash": "0e2ccf888a596a1b3047db58adab851138abb7d25e99a9b79a4bc72bfe9a43fb",
-      "last_checked": "2026-10-16T07:31:34.348301",
+      "last_checked": "2026-10-19T20:44:48.098876",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"3128-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream/state.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_status_ok.json": {
       "hash": "82e69fd7d1df97542c4e02fba54f8435fe85c03515878e9c8a9353900b8057ae",
-      "last_checked": "2026-10-16T07:31:34.428990",
+      "last_checked": "2026-10-19T20:44:48.258650",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"24c0-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-status-ok.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_status_end.json": {
       "hash": "be23864f788fb68b9e485f269a321205450f715d805836158bffb178203ce208",
-      "last_checked": "2026-10-16T07:31:34.543326",
+      "last_checked": "2026-10-19T20:44:48.400607",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"24bf-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-status-end.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_status_error.json": {
       "hash": "f24dec83d4e31ffcc4abfc4364708d67eb3a56d053f7aebf5081e939d76a61d8",
-      "last_checked": "2026-10-16T07:31:34.637150",
+      "last_checked": "2026-10-19T20:44:48.533103",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2d17-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-status-error.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_status/init(_:).json": {
       "hash": "449e4eaceaf10a43643246b219a9d40c135fcee0b2c81c70275dcbfee9a40a0a",
-      "last_checked": "2026-10-16T07:31:34.678161",
+      "last_checked": "2026-10-19T20:44:48.674584",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1706-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_status/init.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_status/init(rawvalue:).json": {
       "hash": "0f4d7f3679345c9673837c31eca80b8e99934b6a5702b546b4cf0460395e3601",
-      "last_checked": "2026-10-16T07:31:34.788162",
+      "last_checked": "2026-10-19T20:44:48.820015",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1726-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_status/init-rawvalue.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_status/rawvalue.json": {
       "hash": "c15dff36536559b17a132f692b6dbecfa2dce1c6bfa2c119d75e966aace97e26",
-      "last_checked": "2026-10-16T07:31:34.873418",
+      "last_checked": "2026-10-19T20:44:48.971546",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1368-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_status/rawvalue.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_finalize.json": {
       "hash": "55f693e30850e139012c6f5d4cfd74243b436c93b173642e82d4331ac2502758",
-      "last_checked": "2026-10-16T07:31:34.916659",
+      "last_checked": "2026-10-19T20:44:49.122243",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1a87-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-stream-finalize.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_flags/init(_:).json": {
       "hash": "0eeec5cb1cfe49a43595cc16a1eff5e61eae918eb0ef204e4faf87a5c277d98b",
-      "last_checked": "2026-10-16T07:31:34.984426",
+      "last_checked": "2026-10-19T20:44:49.291040",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"179a-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream_flags/init.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_flags/init(rawvalue:).json": {
       "hash": "51f6bdae7890571b959c29daa85070c116c0fe093204561fb93eecb1f25d7585",
-      "last_checked": "2026-10-16T07:31:35.102054",
+      "last_checked": "2026-10-19T20:44:49.441453",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"17ba-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream_flags/init-rawvalue.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_flags/rawvalue.json": {
       "hash": "1cbb61631d00de93532024a8ebc1513c6cff32fa9fe56e17f14bc43f71843313",
-      "last_checked": "2026-10-16T07:31:35.193092",
+      "last_checked": "2026-10-19T20:44:49.579106",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"13e2-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream_flags/rawvalue.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_encode.json": {
       "hash": "c8d661919830bff68781f9397252aad95c6d80625ded7748a899752adb7c9683",
-      "last_checked": "2026-10-16T07:31:35.287930",
+      "last_checked": "2026-10-19T20:44:49.717067",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2076-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-stream-encode.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_decode.json": {
       "hash": "d6b73b2e52901e59d4b9c25f9258948067b45ef29ccbb4e412b6becd6c4b16c6",
-      "last_checked": "2026-10-16T07:31:35.371667",
+      "last_checked": "2026-10-19T20:44:49.853956",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"2078-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-stream-decode.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_operation/init(_:).json": {
       "hash": "89e6d9440b33ac3d67425775db4a33e85a6d823202c29dc460851b48086b474f",
-      "last_checked": "2026-10-16T07:31:35.468428",
+      "last_checked": "2026-10-19T20:44:50.759705",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"17fc-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream_operation/init.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_operation/init(rawvalue:).json": {
       "hash": "9000b4604086248132ef0445369e371401c6732c0a064eae8a02e43c267f51c1",
-      "last_checked": "2026-10-16T07:31:35.510499",
+      "last_checked": "2026-10-19T20:44:50.900697",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"181c-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream_operation/init-rawvalue.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_stream_operation/rawvalue.json": {
       "hash": "f576e84e3c2472b40ef655b1d34428d483cbbae0bad6e354047aaf702202a4de",
-      "last_checked": "2026-10-16T07:31:35.590899",
+      "last_checked": "2026-10-19T20:44:51.040006",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1434-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_stream_operation/rawvalue.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_lzfse.json": {
       "hash": "a3c6cef6ffde04b1a5e484cc7b649a9af91fd04f40be3902ab2c6848ba0fadb1",
-      "last_checked": "2026-10-16T07:31:35.654476",
+      "last_checked": "2026-10-19T20:44:51.183847",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"6817-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-lzfse.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_lz4.json": {
       "hash": "bebaaf52785ba4123e6f2869addbb7fd0de320c432649710853bc940558ce23c",
-      "last_checked": "2026-10-16T07:31:35.751955",
+      "last_checked": "2026-10-19T20:44:51.326123",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"4c07-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-lz4.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_lz4_raw.json": {
       "hash": "100e6195829588242e81323159deb05724746139f41d9b5dd1776489e861c539",
-      "last_checked": "2026-10-16T07:31:35.834309",
+      "last_checked": "2026-10-19T20:44:51.477776",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"5c2e-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-lz4-raw.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_lzma.json": {
       "hash": "d746b9bed5218ec3ae1ff6f7760abb7079413e4a98642141699eb82baf5cf44c",
-      "last_checked": "2026-10-16T07:31:35.879477",
+      "last_checked": "2026-10-19T20:44:51.622091",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"6555-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-lzma.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_zlib.json": {
       "hash": "ba727694777070036736a7e92c120bcffb7362c316cd4b9d3d7a6d0e3bb46dbd",
-      "last_checked": "2026-10-16T07:31:35.939444",
+      "last_checked": "2026-10-19T20:44:51.853831",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"4636-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-zlib.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_brotli.json": {
       "hash": "88aba0fe564e39d95be7fc6e653e00dfea9cbb7ca363774bd74f399ad3b554f9",
-      "last_checked": "2026-10-16T07:31:36.000229",
+      "last_checked": "2026-10-19T20:44:52.023150",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"4e74-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-brotli.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_lzbitmap.json": {
       "hash": "568b3c3a2ef9cb3d0baece99f5fadc49c7dbd4b98a92c29df378df7812b81c4b",
-      "last_checked": "2026-10-16T07:31:36.176441",
+      "last_checked": "2026-10-19T20:44:52.216935",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"5f32-65d55e0ac1e11-df\"",
       "file_path": "documentation/Compression/compression-lzbitmap.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_algorithm/init(_:).json": {
       "hash": "2fffd37b87bfeabde62f292404c18078a736562f93e3eaa81851345694f0d08a",
-      "last_checked": "2026-10-16T07:31:36.572852",
+      "last_checked": "2026-10-19T20:44:52.755881",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1757-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_algorithm/init.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_algorithm/init(rawvalue:).json": {
       "hash": "b667ff8bfead6ea1affedef70e06b6e9ce291608e9254d0486a8cc526b5ec2ac",
-      "last_checked": "2026-10-16T07:31:36.658870",
+      "last_checked": "2026-10-19T20:44:52.896325",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"1777-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_algorithm/init-rawvalue.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_algorithm/rawvalue.json": {
       "hash": "44dc51ac97e656068879c96b75d363f0acd636d6f86e821d1532c95e6d7936a4",
-      "last_checked": "2026-10-16T07:31:36.696384",
+      "last_checked": "2026-10-19T20:44:53.055739",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"13ab-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression_algorithm/rawvalue.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_lzmesh.json": {
       "hash": "a5c7794d754cde6de97ced0a00397197eb04d0dba2406bd39053d472a8ec6c75",
-      "last_checked": "2026-10-16T07:31:36.212700",
+      "last_checked": "2026-10-19T20:44:52.391092",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"5fa2-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-lzmesh.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/compression/compression_lzraven.json": {
       "hash": "3f62d411b9fd812b61d58993aaf845bb688ea0c60d7679a0103e0857340c7778",
-      "last_checked": "2026-10-16T07:31:36.333773",
+      "last_checked": "2026-10-19T20:44:52.618724",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:30.658137",
+      "session_id": "2026-10-19T20:44:39.526548",
       "etag": "\"5dd7-65d55e0ab80e6-df\"",
       "file_path": "documentation/Compression/compression-lzraven.md"
     },

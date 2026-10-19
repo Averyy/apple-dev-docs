@@ -20,6 +20,11 @@ nonisolated
 init(tint: Color)
 ```
 
+## See Also
+
+- [init()](switchtogglestyle/init.md)
+  Creates a switch toggle style.
+
 
 ---
 

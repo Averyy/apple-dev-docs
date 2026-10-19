@@ -18,16 +18,20 @@ The kind of the region.
 let kind: UIView.ReservedRegion.Kind
 ```
 
+#### Discussion
+
+The kind tells you how to respond to the region. Place your content outside an [`occlusion`](uiview/reservedregion/kind-swift.struct/occlusion.md) region, and arrange it on both sides of a [`division`](uiview/reservedregion/kind-swift.struct/division.md) region.
+
 ## See Also
 
 - [let frame: CGRect](uiview/reservedregion/frame.md)
-  The rectangle of the region in the view’s coordinate space, including the margins.
+  The rectangle that describes the region within your view.
 - [let isActive: Bool](uiview/reservedregion/isactive.md)
-  A Boolean value that indicates whether the region is currently active.
+  A Boolean value that indicates whether the region is active.
 - [UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct.md)
   A kind of reserved region.
 - [let margins: UIEdgeInsets](uiview/reservedregion/margins.md)
-  The margins included in the frame around the reserved region for interactive content.
+  The extra space around the reserved area that keeps interactive content clear of it.
 
 
 ---

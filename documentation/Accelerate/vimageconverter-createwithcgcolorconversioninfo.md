@@ -28,7 +28,9 @@ Use [`vImageConverter_CreateWithCGColorConversionInfo(_:_:_:_:_:_:)`](vimageconv
 
 You can use [`vImageConverter_CreateWithCGColorConversionInfo(_:_:_:_:_:_:)`](vimageconverter_createwithcgcolorconversioninfo(_:_:_:_:_:_:).md) to convert an image with a linear response curve to sRGB. Many vImage operations provide optimal results when working on images with a linear response curve, this approach is ideal for converting between linear and sRGB.
 
-Begin by creating the source and destination color spaces, and the [`CGColorConversionInfo`](https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo) instance:
+Begin by creating the source and destination color spaces, and the [`CGColorConversionInfo`](https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo) instance, as follows:
+
+**Swift**:
 
 ```swift
 guard
@@ -41,7 +43,18 @@ else {
 }
 ```
 
-Create a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure, without a color space, that specifies the pixel memory requirement, number of channels, and alpha information:
+**Objective-C**:
+
+```objc
+CGColorSpaceRef sourceColorSpace = CGColorSpaceCreateWithName(kCGColorSpaceLinearSRGB);
+CGColorSpaceRef destinationColorSpace = CGColorSpaceCreateWithName(kCGColorSpaceSRGB);
+CGColorConversionInfoRef conversionInfo = CGColorConversionInfoCreate(sourceColorSpace,
+                                                                      destinationColorSpace);
+```
+
+Create a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure, without a color space, that specifies the pixel memory requirement, number of channels, and alpha information, as follows:
+
+**Swift**:
 
 ```swift
 var cgImageFormat = vImage_CGImageFormat(bitsPerComponent: 8,
@@ -53,7 +66,23 @@ var cgImageFormat = vImage_CGImageFormat(bitsPerComponent: 8,
                                          renderingIntent: .defaultIntent)
 ```
 
+**Objective-C**:
+
+```objc
+vImage_CGImageFormat cgImageFormat = {
+    .bitsPerComponent = 8,
+    .bitsPerPixel = 8 * 3,
+    .colorSpace = NULL,
+    .bitmapInfo = kCGBitmapByteOrderDefault | kCGImageAlphaNone,
+    .version = 0,
+    .decode = NULL,
+    .renderingIntent = kCGRenderingIntentDefault
+};
+```
+
 Create the converter and buffers:
+
+**Swift**:
 
 ```swift
 guard
@@ -72,13 +101,37 @@ guard
 }
 ```
 
+**Objective-C**:
+
+```objc
+const CGFloat bg[1] = {0};
+vImageConverterRef converter = vImageConverter_CreateWithCGColorConversionInfo(
+    conversionInfo,
+    &cgImageFormat,
+    &cgImageFormat,
+    bg,
+    kvImageNoFlags,
+    NULL);
+```
+
 Pass the converter and the two buffers to [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md) to perform the conversion:
+
+**Swift**:
 
 ```swift
 vImageConvert_AnyToAny(converter.takeRetainedValue(),
                        &sourceBuffer, &destinationBuffer,
                        nil,
                        vImage_Flags(kvImageNoFlags))
+```
+
+**Objective-C**:
+
+```objc
+vImageConvert_AnyToAny(converter,
+                       &sourceBuffer, &destinationBuffer,
+                       NULL,
+                       kvImageNoFlags);
 ```
 
 The following image shows the source image, on the left, and the contents of `destinationBuffer`, on the right, after conversion:

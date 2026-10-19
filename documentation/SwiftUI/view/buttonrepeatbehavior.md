@@ -34,7 +34,7 @@ Button {
 .buttonRepeatBehavior(.enabled)
 ```
 
-This affects all system button styles, as well as automatically affects custom `ButtonStyle` conforming types. This does not automatically apply to custom `PrimitiveButtonStyle` conforming types, and the `EnvironmentValues.buttonRepeatBehavior` value should be used to adjust their custom gestures as appropriate.
+This affects all system button styles, as well as automatically affects custom `ButtonStyle` conforming types. This does not automatically apply to custom `PrimitiveButtonStyle` conforming types, and the [`buttonRepeatBehavior`](environmentvalues/buttonrepeatbehavior.md) value should be used to adjust their custom gestures as appropriate.
 
 ## Parameters
 

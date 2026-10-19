@@ -47,14 +47,13 @@ For more information about using a document interaction controller, see [`UIDocu
   Called when a document interaction controller is about to display an Open In menu.
 - [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissopeninmenu(_:).md)
   Called when a document interaction controller has dismissed its Open In menu.
+- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
+  Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 ### Opening files
 - [func documentInteractionController(UIDocumentInteractionController, willBeginSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:willbeginsendingtoapplication:).md)
   Called when a document interaction controller’s document is about to be opened by the specified application.
 - [func documentInteractionController(UIDocumentInteractionController, didEndSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:didendsendingtoapplication:).md)
   Called when a document interaction controller’s document has been handed off to the specified application.
-### Deprecated
-- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
-  Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 - [func documentInteractionController(UIDocumentInteractionController, performAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md)
   Called when a document interaction controller wants its delegate to perform a specified action with the associated document.
 

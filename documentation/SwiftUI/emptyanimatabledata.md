@@ -53,6 +53,8 @@ This type is suitable for use as the `animatableData` property of types that do 
   A pair of animatable values, which is itself animatable.
 - [protocol VectorArithmetic](vectorarithmetic.md)
   A type that can serve as the animatable data of an animatable type.
+- [protocol AnimatableModifier](animatablemodifier.md)
+  A modifier that can create another modifier with animation.
 
 
 ---

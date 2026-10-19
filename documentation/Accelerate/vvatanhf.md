@@ -34,6 +34,36 @@ If `x` is `+/-1`, the result is `+/-inf`.
 
 If `|x|>1`, the result is `NaN`.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [-0.5, 0, 0.5]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the inverse hyperbolic tangent of each element in `x`.
+vvatanhf(&y, &x, &n)
+
+// Prints "[-0.54930615, 0.0, 0.54930615]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {-0.5, 0, 0.5};
+float y[3];
+int n = 3;
+
+// Calculate the inverse hyperbolic tangent of each element in `x`.
+vvatanhf(y, x, &n);
+
+// Prints "[-0.549306, 0, 0.549306]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acosh<U>(U) -> [Double]](vforce/acosh(_:)-1j3qt.md)

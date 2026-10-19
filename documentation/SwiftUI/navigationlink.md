@@ -148,8 +148,6 @@ The list coordinates with the navigation logic so that changing the selection st
 ### Presenting a destination view
 - [init(_:destination:)](navigationlink/init(_:destination:).md)
   Creates a navigation link that presents a destination view, with a text label that the link generates from a localized string key.
-- [init(destination:label:)](navigationlink/init(destination:label:).md)
-  Creates a navigation link that presents the destination view.
 ### Presenting a value
 - [init(_:value:)](navigationlink/init(_:value:).md)
   Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string resource.
@@ -158,9 +156,9 @@ The list coordinates with the navigation logic so that changing the selection st
 ### Configuring the link
 - [func isDetailLink(Bool) -> some View](navigationlink/isdetaillink(_:).md)
   Sets the navigation link to present its destination as the detail component of the containing navigation view.
-### Deprecated symbols
+### Deprecated
 - [Deprecated symbols](navigationlink-deprecated.md)
-  Review deprecated navigation link initializers.
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
@@ -183,6 +181,8 @@ The list coordinates with the navigation logic so that changing the selection st
   Sets a flexible, preferred width for the column containing this view.
 - [struct NavigationSplitViewVisibility](navigationsplitviewvisibility.md)
   The visibility of the leading columns in a navigation split view.
+- [struct NavigationView](navigationview.md)
+  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 
 ---

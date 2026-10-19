@@ -32,6 +32,7 @@ For more information, see [`NSColor`](nscolor.md).
   Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information.
 - [class var selectedControlColor: NSColor](nscolor/selectedcontrolcolor.md)
   The color to use for the face of a selected control—that is, a control that has been clicked or is being dragged.
+- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var controlAlternatingRowBackgroundColors: [NSColor]](nscolor/controlalternatingrowbackgroundcolors.md)
   An array containing the system specified background colors for alternating rows in tables and lists.
 - [class var controlHighlightColor: NSColor](nscolor/controlhighlightcolor.md)

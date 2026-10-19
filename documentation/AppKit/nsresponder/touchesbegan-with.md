@@ -26,10 +26,6 @@ This isn’t always the point of contact with the touch device. A touch that tra
 
 ## See Also
 
-- [func beginGesture(with: NSEvent)](nsresponder/begingesture(with:).md)
-  Informs the receiver that the user has begun a touch gesture.
-- [func endGesture(with: NSEvent)](nsresponder/endgesture(with:).md)
-  Informs the receiver that the user has ended a touch gesture.
 - [func magnify(with: NSEvent)](nsresponder/magnify(with:).md)
   Informs the receiver that the user has begun a pinch gesture.
 - [func rotate(with: NSEvent)](nsresponder/rotate(with:).md)

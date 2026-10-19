@@ -24,8 +24,6 @@ See [`NSScroller.Part`](nsscroller/part.md) for a list of part codes. In macOS 1
 
 - [func trackKnob(with: NSEvent)](nsscroller/trackknob(with:).md)
   Tracks the knob and sends action messages to the receiver’s target.
-- [func trackScrollButtons(with: NSEvent)](nsscroller/trackscrollbuttons(with:).md)
-  Tracks the scroll buttons and sends action messages to the receiver’s target.
 
 
 ---

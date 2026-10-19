@@ -24,7 +24,7 @@ An array of view controllers representing the items that were popped from the st
 
 #### Discussion
 
-The root view controller becomes the top view controller. For information on how the navigation bar is updated, see [`Updating the navigation bar`](uinavigationcontroller#Updating-the-navigation-bar.md).
+The root view controller becomes the top view controller. For information on how the navigation bar is updated, see doc:UINavigationController#Updating-the-navigation-bar.
 
 ## Parameters
 

@@ -34,8 +34,10 @@ The following figure shows two systems of equations where the coefficient matrix
 
 The following code solves this system by applying a diagonal scaling preconditioner and using the least squares minimum residual method:
 
+**Swift**:
+
 ```swift
-/// Create the coefficient matrix _A_.
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
 let rowIndices: [Int32] =    [ 0,  1, 1,  2]
 let columnIndices: [Int32] = [ 2,  0, 2,  1]
 let aValues: [Double] =      [10, 20, 5, 50]
@@ -54,7 +56,7 @@ defer {
     SparseCleanup(preconditioner)
 }
 
-/// Create the right-hand-side matrix, _B_.
+// Create the right-hand-side matrix `B` (also holds the solution `X` on return).
 var bValues: [Double] = [30, 35, 100,
                          300, 350, 1000]
 let n = bValues.count
@@ -80,6 +82,56 @@ let xValues = [Double](unsafeUninitializedCapacity: n) {
         count = n
     }
 }
+print(xValues) // Prints "[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+double aValues[]    = {10, 20, 5, 50};
+
+SparseMatrix_Double A = SparseConvertFromCoordinate(3, 3,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    aValues);
+
+SparseOpaquePreconditioner_Double preconditioner =
+    SparseCreatePreconditioner(SparsePreconditionerDiagScaling, A);
+
+// Create the right-hand-side matrix `B` and output matrix `X`.
+double bValues[] = {30, 35, 100, 300, 350, 1000};
+double xValues[] = {0, 0, 0, 0, 0, 0};
+
+DenseMatrix_Double B = {
+    .rowCount     = 3,
+    .columnCount  = 2,
+    .columnStride = 3,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = bValues
+};
+
+DenseMatrix_Double X = {
+    .rowCount     = 3,
+    .columnCount  = 2,
+    .columnStride = 3,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = xValues
+};
+
+// Solve `AX = B` using the LSMR iterative method with opaque preconditioner.
+SparseSolve(SparseLSMR(), A, B, X, preconditioner);
+
+// Prints "[1, 2, 3, 10, 20, 30]".
+printf("[%g, %g, %g, %g, %g, %g]\n",
+      xValues[0], xValues[1], xValues[2],
+      xValues[3], xValues[4], xValues[5]);
+
+SparseCleanup(A);
+SparseCleanup(preconditioner);
 ```
 
 On return, x`Values` contains the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.

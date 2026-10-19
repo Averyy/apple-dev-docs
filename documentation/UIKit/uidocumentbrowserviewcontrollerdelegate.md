@@ -37,14 +37,13 @@ protocol UIDocumentBrowserViewControllerDelegate : NSObjectProtocol
 ### Selecting documents
 - [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentsAt: [URL])](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumentsat:).md)
   Tells the delegate that the user has selected one or more documents.
+- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentURLs: [URL])](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumenturls:).md)
+  Tells the delegate that the user has selected one or more documents.
 ### Working with the browser’s activity view
 - [func documentBrowser(UIDocumentBrowserViewController, willPresent: UIActivityViewController)](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:willpresent:).md)
   Tells the delegate that the document browser will display an activity view.
 - [func documentBrowser(UIDocumentBrowserViewController, applicationActivitiesForDocumentURLs: [URL]) -> [UIActivity]](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:applicationactivitiesfordocumenturls:).md)
   Asks the delegate for additional activities when displaying an activity view.
-### Deprecated methods
-- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentURLs: [URL])](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumenturls:).md)
-  Tells the delegate that the user has selected one or more documents.
 
 ## Relationships
 

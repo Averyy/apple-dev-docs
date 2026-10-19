@@ -22,7 +22,7 @@ static func add<U, V>(multiplication: (a: U, b: Float), _ scalar: Float, result:
 
 #### Discussion
 
-This function calculates the element-wise product of vector `A` and scalar value `B`, adds scalar value `C` to the product, and writes the result to vector `D`.
+This function calculates the element-wise product of vector `A` and scalar value `B`, adds scalar value `C` to the product, and writes the result to vector `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

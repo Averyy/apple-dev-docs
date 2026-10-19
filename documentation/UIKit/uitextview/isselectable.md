@@ -24,12 +24,12 @@ This property controls the ability of the user to select content and interact wi
 
 ## See Also
 
-- [var selectedRange: NSRange](uitextview/selectedrange.md)
-  The current selection range of the text view.
 - [func scrollRangeToVisible(NSRange)](uitextview/scrollrangetovisible(_:).md)
   Scrolls the text view until the text in the specified range is visible.
 - [var clearsOnInsertion: Bool](uitextview/clearsoninsertion.md)
   A Boolean value that indicates whether inserting text replaces the previous contents.
+- [var selectedRange: NSRange](uitextview/selectedrange.md)
+  The current selection range of the text view.
 
 
 ---

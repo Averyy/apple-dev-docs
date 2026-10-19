@@ -53,6 +53,8 @@ struct AnimatablePair<First, Second> where First : VectorArithmetic, Second : Ve
   A type that can serve as the animatable data of an animatable type.
 - [struct EmptyAnimatableData](emptyanimatabledata.md)
   An empty type for animatable data.
+- [protocol AnimatableModifier](animatablemodifier.md)
+  A modifier that can create another modifier with animation.
 
 
 ---

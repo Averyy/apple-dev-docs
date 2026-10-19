@@ -23,7 +23,7 @@ The objects in the set are instances of the [`CLBeaconRegion`](clbeaconregion.md
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [func startRangingBeacons(in: CLBeaconRegion)](cllocationmanager/startrangingbeacons(in:).md)
   Starts the delivery of notifications for the specified beacon region.
 

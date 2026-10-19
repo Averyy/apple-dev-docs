@@ -42,8 +42,8 @@ enum UIVerticalBarCompressionBehavior
 
 ## See Also
 
-- [var verticalBarCompressionBehavior: UIVerticalBarCompressionBehavior](uinavigationitem/verticalbarcompressionbehavior.md)
-  When the tab bar and navigation/toolbar items are both rendered together in the vertical bar, this property controls which items compress first.
+- [enum UIVerticalBarBehavior](uiverticalbarbehavior.md)
+  A behavior that determines whether the vertical bar is used.
 
 
 ---

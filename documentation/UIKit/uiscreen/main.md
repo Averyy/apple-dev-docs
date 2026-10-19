@@ -37,6 +37,8 @@ Apple discourages the use of this symbol. Use a [`UIScreen`](uiscreen.md) instan
   The view that is currently focused.
 - [var supportsFocus: Bool](uiscreen/supportsfocus.md)
   A Boolean value that indicates whether the screen supports focus-based inputs.
+- [var isCaptured: Bool](uiscreen/iscaptured.md)
+  A Boolean value that indicates whether the system is actively cloning the screen to another destination.
 
 
 ---

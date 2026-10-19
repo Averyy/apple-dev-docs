@@ -40,6 +40,8 @@ The base writing direction is set previously when the text input system sends a 
   Returns a text range from a specified text position to its farthest extent in a certain direction of layout.
 - [func setBaseWritingDirection(NSWritingDirection, for: UITextRange)](uitextinput/setbasewritingdirection(_:for:).md)
   Sets the base writing direction for a specified range of text in a document.
+- [typealias UITextWritingDirection](uitextwritingdirection.md)
+  The writing direction of the text for the language.
 
 
 ---

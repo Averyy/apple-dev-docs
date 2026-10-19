@@ -166,7 +166,7 @@ The sample code app uses the data in the `centroidIndices` array to gather the c
 let indices = centroidIndices.enumerated().filter {
     $0.element == centroid.offset
 }.map {
-    // `vDSP.gather` uses one-based indices.
+    // The `vDSP.gather` function uses one-based indices.
     UInt($0.offset + 1)
 }
 ```

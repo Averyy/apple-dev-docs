@@ -32,14 +32,6 @@ The value passed as `returnCode` is either `NSCancelButton` or `NSOKButton`.
 - `didEndSelector`: The selector sent to the delegate. Can be `nil`.
 - `contextInfo`: Context information object passed with `didEndSelector`.
 
-## See Also
-
-- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPageLayout.Result) -> Void)?)](nspagelayout/beginsheet(using:on:completionhandler:).md)
-- [func runModal() -> Int](nspagelayout/runmodal.md)
-  Displays the page layout panel and begins the modal loop using the shared print info object.
-- [func runModal(with: NSPrintInfo) -> Int](nspagelayout/runmodal(with:).md)
-  Displays the page layout panel and begins the modal loop using the specified print info object.
-
 
 ---
 

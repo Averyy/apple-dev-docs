@@ -10,18 +10,13 @@ The style [`NSDictionary`](https://developer.apple.com/documentation/foundation/
 
 ## Topics
 
-### Constants
+### Deprecated
 - [let UITextInputTextBackgroundColorKey: String](uitextinputtextbackgroundcolorkey.md)
   The background color of the text.
 - [let UITextInputTextColorKey: String](uitextinputtextcolorkey.md)
   The color of the text.
 - [let UITextInputTextFontKey: String](uitextinputtextfontkey.md)
   The font of the text.
-
-## See Also
-
-- [typealias UITextWritingDirection](uitextwritingdirection.md)
-  The writing direction of the text for the language.
 
 
 ---

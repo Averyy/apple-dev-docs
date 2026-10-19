@@ -28,6 +28,8 @@ class var foreverDuration: TimeInterval { get }
   An opaque Carbon type associated with this event.
 - [var cgEvent: CGEvent?](nsevent/cgevent.md)
   The Core Graphics event object corresponding to this event.
+- [var context: NSGraphicsContext?](nsevent/context.md)
+  The display graphics context for this event.
 
 
 ---

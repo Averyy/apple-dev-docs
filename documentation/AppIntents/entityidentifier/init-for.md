@@ -22,11 +22,10 @@ init<Entity>(for entity: Entity) where Entity : AppEntity
 
 #### Discussion
 
-For entities adopting `_SyncableEntity`, this initializer extracts the stable ID:
+For entities adopting [`SyncableEntity`](syncableentity.md), this initializer extracts the stable ID:
 
 - **Passthrough case**: If the entity’s ID is already stable (like `UUID`), it’s used as both local and stable ID
-- **Mapped case**: If the entity’s ID uses `_SyncableEntityIdentifier`, the stable ID is extracted from the wrapper
-- **Custom identifier case**: If the entity’s ID conforms to `_SyncableEntityIdentifierProviding`, the stable ID is extracted via `stableIdentifierString`
+- **Mapped case**: If the entity’s ID uses [`SyncableEntityIdentifier`](syncableentityidentifier.md), the stable ID is extracted from the wrapper
 
 The stable ID is used for cross-device entity resolution via Campo session syncing.
 

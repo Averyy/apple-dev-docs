@@ -28,6 +28,8 @@ A pointer to a [`vImageChannelDescription`](vimagechanneldescription.md) structu
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelDescription(_:_:)`](vimagecvimageformat_getchanneldescription(_:_:).md):
 
+**Swift**:
+
 ```swift
 let channelDescription = withUnsafeBytes(of: cvImageFormat) { bytes in
     let format = bytes.assumingMemoryBound(
@@ -36,6 +38,16 @@ let channelDescription = withUnsafeBytes(of: cvImageFormat) { bytes in
     return vImageCVImageFormat_GetChannelDescription(format,
                                                      vImageBufferTypeCode(kvImageBufferTypeCode_Luminance))
 }
+```
+
+**Objective-C**:
+
+```objc
+vImageConstCVImageFormatRef constFormat = cvImageFormat;
+
+const vImageChannelDescription *channelDescription =
+    vImageCVImageFormat_GetChannelDescription(constFormat,
+                                              (vImageBufferTypeCode)kvImageBufferTypeCode_Luminance);
 ```
 
 ## Parameters

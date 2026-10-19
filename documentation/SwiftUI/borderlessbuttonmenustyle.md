@@ -39,10 +39,10 @@ Use [`borderlessButton`](menustyle/borderlessbutton.md) to construct this style.
 
 ## See Also
 
-- [struct DefaultMenuStyle](defaultmenustyle.md)
-  The default menu style, based on the menu’s context.
-- [struct ButtonMenuStyle](buttonmenustyle.md)
-  A menu style that displays a button that toggles the display of the menu’s contents when pressed.
+- [static var borderedButton: BorderedButtonMenuStyle](menustyle/borderedbutton.md)
+  A menu style that displays a bordered button that toggles the display of the menu’s contents when pressed.
+- [static var borderlessButton: BorderlessButtonMenuStyle](menustyle/borderlessbutton.md)
+  A menu style that displays a borderless button that toggles the display of the menu’s contents when pressed.
 - [struct BorderedButtonMenuStyle](borderedbuttonmenustyle.md)
   A menu style that displays a bordered button that toggles the display of the menu’s contents when pressed.
 

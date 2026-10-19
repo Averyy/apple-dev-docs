@@ -26,7 +26,7 @@ init(_ configuration: ArrangementViewStyleConfiguration)
 - [init(primary: () -> Primary, secondary: () -> Secondary)](arrangementview/init(primary:secondary:).md)
   Creates an arrangement view with a primary and secondary view.
 - [struct ArrangementViewStyleConfiguration](arrangementviewstyleconfiguration.md)
-  The properties of an arrangement view used to create its custom style.
+  The properties of an arrangement view you provide to create a custom style.
 
 
 ---

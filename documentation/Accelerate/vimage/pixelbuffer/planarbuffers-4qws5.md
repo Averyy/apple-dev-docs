@@ -37,7 +37,7 @@ let src = vImage.PixelBuffer<vImage.Interleaved8x4>(
 
 let planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>] = src.planarBuffers()
 
-// Prints "[0.058823533] [0.06666667] [0.20000002] [0.33333334]"
+// Prints "[0.058824] [0.066667] [0.2] [0.33333]".
 // ≅ [ 1 / 17, 1 / 15, 1 / 5, 1 / 3]
 for planarBuffer in planarBuffers {
     print(planarBuffer.array)

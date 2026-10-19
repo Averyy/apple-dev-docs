@@ -22,7 +22,7 @@ static var deferred: IntentModes.ForegroundMode { get }
 
 #### Discussion
 
-This option ensures the transition of the app to the foreground. Call the `AppIntent/continueInForeground(_:alwaysConfirm:) ` or [`needsToContinueInForegroundError(_:alwaysConfirm:)`](appintent/needstocontinueinforegrounderror(_:alwaysconfirm:).md) method from your intent’s [`perform()`](appintent/perform().md) method to transition to the foreground at the time you choose. If you don’t call one of these methods, the system transitions the app to the foreground at the end of your [`perform()`](appintent/perform().md) method.
+This option ensures the transition of the app to the foreground. Call the [`continueInForeground(_:alwaysConfirm:)`](appintent/continueinforeground(_:alwaysconfirm:).md) or [`needsToContinueInForegroundError(_:alwaysConfirm:)`](appintent/needstocontinueinforegrounderror(_:alwaysconfirm:).md) method from your intent’s [`perform()`](appintent/perform().md) method to transition to the foreground at the time you choose. If you don’t call one of these methods, the system transitions the app to the foreground at the end of your [`perform()`](appintent/perform().md) method.
 
 
 ---

@@ -26,12 +26,14 @@ This function calculates the length of the hypotenuse of *n* number of triangles
 
 The functions use the following operation:
 
-```swift
+```c
 for (n = 0; n < N; ++n)
     E[n] = sqrt((A[n]-B[n])**2 + (C[n]-D[n])**2);
 ```
 
 For example, the following code calculates the hypotenuse of four Pythagorean triples:
+
+**Swift**:
 
 ```swift
     let stride = 1
@@ -60,6 +62,26 @@ For example, the following code calculates the hypotenuse of four Pythagorean tr
     
     // Prints "[5.0, 10.0, 13.0, 15.0]".
     print(hypotenuses)
+```
+
+**Objective-C**:
+
+```objc
+const double a[4] = {3, 6, 5, 9};
+const double b[4] = {0, 0, 0, 0};
+const double c[4] = {0, 0, 0, 0};
+const double d[4] = {4, 8, 12, 12};
+double hypotenuses[4];
+
+vDSP_vpythgD(a, 1,
+             b, 1,
+             c, 1,
+             d, 1,
+             hypotenuses, 1,
+             4);
+
+// Prints "[5, 10, 13, 15]".
+printf("[%g, %g, %g, %g]\n", hypotenuses[0], hypotenuses[1], hypotenuses[2], hypotenuses[3]);
 ```
 
 ## Parameters

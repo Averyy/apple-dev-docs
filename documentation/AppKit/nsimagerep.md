@@ -46,14 +46,6 @@ The [`NSImageRep`](nsimagerep.md) class is called “semiabstract” because it 
   Returns an array of UTI strings identifying the image types supported by the image representation, either directly or through a user-installed filter service.
 - [class var imageUnfilteredTypes: [String]](nsimagerep/imageunfilteredtypes.md)
   Returns an array of UTI strings identifying the image types supported directly by the ime representation.
-- [class func imageFileTypes() -> [String]](nsimagerep/imagefiletypes.md)
-  Returns the file types supported by the image representation class or one of its subclasses.
-- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imagepasteboardtypes.md)
-  Returns the pasteboard types supported by the image representation class or one of its subclasses.
-- [class func imageUnfilteredFileTypes() -> [String]](nsimagerep/imageunfilteredfiletypes.md)
-  Returns the list of file types supported directly by the image representation.
-- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imageunfilteredpasteboardtypes.md)
-  Returns the list of pasteboard types supported directly by the image representation.
 ### Accessing Size of Images
 - [var size: NSSize](nsimagerep/size.md)
   The size of the image representation, measured in points in the user coordinate space.
@@ -99,13 +91,12 @@ The [`NSImageRep`](nsimagerep.md) class is called “semiabstract” because it 
   Adds the specified class to the registry of available image representation subclasses.
 - [class func unregisterClass(AnyClass)](nsimagerep/unregisterclass(_:).md)
   Removes the specified image representation subclass from the registry of available image representations.
-- [class func `class`(forFileType: String) -> AnyClass?](nsimagerep/class(forfiletype:).md)
-  Returns the image representation subclass that handles data with the specified type.
-- [class func `class`(forPasteboardType: NSPasteboard.PasteboardType) -> AnyClass?](nsimagerep/class(forpasteboardtype:).md)
-  Returns the image representation subclass that handles data with the specified pasteboard type.
 ### Notifications
 - [class let registryDidChangeNotification: NSNotification.Name](nsimagerep/registrydidchangenotification.md)
   Posted whenever the image representation class registry changes.
+### Deprecated
+- [Deprecated symbols](nsimagerep-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSImageRep.RegistryDidChangeMessage](nsimagerep/registrydidchangemessage.md)
 ### Initializers

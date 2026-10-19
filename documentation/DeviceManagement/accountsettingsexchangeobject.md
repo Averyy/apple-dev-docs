@@ -6,7 +6,7 @@
 If present, configures settings for Exchange accounts.
 
 **Availability**:
-- macOS 27.2+ (Beta)
+- macOS 27.2+
 
 ## Declaration
 

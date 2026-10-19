@@ -6,8 +6,8 @@
 A message that explains the purpose for accessing data that an application can use to track a person or device.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
 
 
 

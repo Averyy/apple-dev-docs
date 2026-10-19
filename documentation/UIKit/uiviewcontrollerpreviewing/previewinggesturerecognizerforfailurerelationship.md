@@ -28,6 +28,10 @@ For more information, see the [`gestureRecognizer(_:shouldBeRequiredToFailBy:)`]
 
 - [var sourceRect: CGRect](uiviewcontrollerpreviewing/sourcerect.md)
   The rectangle, in the source view’s coordinate system, that responds to a 3D Touch by a user and remains visually sharp while surrounding content blurs.
+- [var delegate: any UIViewControllerPreviewingDelegate](uiviewcontrollerpreviewing/delegate.md)
+  The previewing view controller’s delegate for managing preview (peek) and commit (pop) view controllers.
+- [var sourceView: UIView](uiviewcontrollerpreviewing/sourceview.md)
+  A source view, in a previewing view controller’s view hierarchy, responds to a 3D Touch by the user.
 
 
 ---

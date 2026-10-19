@@ -34,7 +34,6 @@ Use [`circular`](progressviewstyle/circular.md) to construct the circular progre
 ### Creating the progress view style
 - [init()](circularprogressviewstyle/init.md)
   Creates a circular progress view style.
-### Deprecated initializers
 - [init(tint: Color)](circularprogressviewstyle/init(tint:).md)
   Creates a circular progress view style with a tint color.
 

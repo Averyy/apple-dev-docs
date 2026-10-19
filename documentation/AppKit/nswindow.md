@@ -310,8 +310,6 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
   Returns a new instance of a given standard window button, sized appropriately for a given window style.
 - [func standardWindowButton(NSWindow.ButtonType) -> NSButton?](nswindow/standardwindowbutton(_:).md)
   Returns the window button of a given window button kind in the window’s view hierarchy.
-- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
-  A Boolean value that indicates whether the toolbar control button is currently displayed.
 - [var titlebarAppearsTransparent: Bool](nswindow/titlebarappearstransparent.md)
   A Boolean value that indicates whether the title bar draws its background.
 - [var toolbarStyle: NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.property.md)
@@ -446,13 +444,9 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - [var animationBehavior: NSWindow.AnimationBehavior](nswindow/animationbehavior-swift.property.md)
   The window’s automatic animation behavior.
 ### Updating Windows
-- [func disableScreenUpdatesUntilFlush()](nswindow/disablescreenupdatesuntilflush.md)
-  Disables the window’s screen updates until the window is flushed.
 - [func update()](nswindow/update.md)
   Updates the window.
 ### Dragging Items
-- [func drag(NSImage, at: NSPoint, offset: NSSize, event: NSEvent, pasteboard: NSPasteboard, source: Any, slideBack: Bool)](nswindow/drag(_:at:offset:event:pasteboard:source:slideback:).md)
-  Begins a dragging session.
 - [func registerForDraggedTypes([NSPasteboard.PasteboardType])](nswindow/registerfordraggedtypes(_:).md)
   Registers a set of pasteboard types that the window accepts as the destination of an image-dragging session.
 - [func unregisterDraggedTypes()](nswindow/unregisterdraggedtypes.md)
@@ -693,8 +687,8 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - [class let didChangeOcclusionStateNotification: NSNotification.Name](nswindow/didchangeocclusionstatenotification.md)
   A notification that the window object’s occlusion state changed.
 ### Deprecated
-- [Deprecated Symbols](nswindow-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+- [Deprecated symbols](nswindow-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Classes
 - [NSWindow.HostingSheetRepresentation](nswindow/hostingsheetrepresentation.md)
   A class representing a SwiftUI view hosted in an AppKit sheet.

@@ -32,10 +32,6 @@ This method posts the [`registryDidChangeNotification`](nsimagerep/registrydidch
   Returns an array containing the registered image representation classes.
 - [class func registerClass(AnyClass)](nsimagerep/registerclass(_:).md)
   Adds the specified class to the registry of available image representation subclasses.
-- [class func `class`(forFileType: String) -> AnyClass?](nsimagerep/class(forfiletype:).md)
-  Returns the image representation subclass that handles data with the specified type.
-- [class func `class`(forPasteboardType: NSPasteboard.PasteboardType) -> AnyClass?](nsimagerep/class(forpasteboardtype:).md)
-  Returns the image representation subclass that handles data with the specified pasteboard type.
 
 
 ---

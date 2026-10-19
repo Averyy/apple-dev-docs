@@ -34,10 +34,10 @@ If you do not implement this method, the text field clears the text as if the me
 
 ## See Also
 
-- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md)
-  Asks the delegate whether to change the specified text.
 - [func textFieldShouldReturn(UITextField) -> Bool](uitextfielddelegate/textfieldshouldreturn(_:).md)
   Asks the delegate whether to process the pressing of the Return button for the text field.
+- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md)
+  Asks the delegate whether to change the specified text.
 
 
 ---

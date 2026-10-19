@@ -35,7 +35,7 @@ For more information about customizing the layout dynamically using a delegate, 
 
 The flow layout supports custom header and footer views for each section, displaying them as supplementary views in the layout. [`Figure 1`](nscollectionviewflowlayout#1965629.md) shows how header and footer views are presented in your layout. The header view appears above the items in a section and the footer view appears below those items.
 
-![None](/images/com.apple.appkit/media-1965629@2x.png)
+![A layout diagram of a vertically scrolling flow layout section. A header labeled Header 1 spans the top, above two rows of five items each. An arrow runs along the first row, wraps to the start of the second row, and continues to the second item. A footer labeled Footer 1 spans the bottom. A double-headed vertical arrow at the right is labeled Scrolling direction.](/images/com.apple.appkit/media-1965629@2x.png)
 
 The size of the header and footer views is configurable using the [`headerReferenceSize`](nscollectionviewflowlayout/headerreferencesize.md) and [`footerReferenceSize`](nscollectionviewflowlayout/footerreferencesize.md) properties of this class or using the delegate object. For a vertically scrolling flow layout, the header and footer views span the width of the collection view and the height is based on the values you specify. For a horizontal layout, the footers span the height of the collection view and the width is configurable.
 
@@ -52,7 +52,7 @@ You configure the contents of your header and footer views in the same way you c
 
 The flow layout builds its grid dynamically, using the item size and spacing information to place items sequentially into rows (for a vertically scrolling layout) or columns (for a horizontally scrolling layout). The number of items displayed in each row or column is determined by the collection view’s size and the size of the items in that row. When items have a uniform size, the number of items in each row is the same, but when items are different sizes, some rows may contain more or fewer items. [`Figure 2`](nscollectionviewflowlayout#1965630.md) illustrates how the flow layout places items in a row until there is no more space and then begins a new row and continues the layout process.
 
-![None](/images/com.apple.appkit/media-1965630@2x.png)
+![A flow diagram showing items of different sizes placed in sequence inside a collection view. Arrows lead from left to right through four items in the first row, then wrap to a second row of three items, and continue with an ellipsis. A double-headed vertical arrow at the right is labeled Scrolling direction.](/images/com.apple.appkit/media-1965630@2x.png)
 
 The flow layout follows a specific set of steps to determine the size of each item. Whenever possible, the flow layout uses previously calculated information. When that information is not available, it falls back on other techniques to retrieve the size of the item. Specifically, the flow layout takes the following steps, stopping when it acquires a valid item size:
 

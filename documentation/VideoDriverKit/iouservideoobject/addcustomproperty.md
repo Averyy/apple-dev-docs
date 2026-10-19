@@ -6,7 +6,7 @@
 Adds an custom property object to this object.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

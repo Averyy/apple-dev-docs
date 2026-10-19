@@ -14,21 +14,12 @@ static var number10_14_1: NSAppKitVersion { get }
 
 ## See Also
 
-- [static var macOS10_15: NSAppKitVersion](nsappkitversion/macos10_15.md)
-- [static var macOS10_15_1: NSAppKitVersion](nsappkitversion/macos10_15_1.md)
-- [static var macOS10_15_2: NSAppKitVersion](nsappkitversion/macos10_15_2.md)
-- [static var macOS10_15_3: NSAppKitVersion](nsappkitversion/macos10_15_3.md)
-- [static var macOS10_15_4: NSAppKitVersion](nsappkitversion/macos10_15_4.md)
-- [static var macOS10_15_5: NSAppKitVersion](nsappkitversion/macos10_15_5.md)
-- [static var macOS10_15_6: NSAppKitVersion](nsappkitversion/macos10_15_6.md)
-- [static var macOS11_0: NSAppKitVersion](nsappkitversion/macos11_0.md)
-- [static var macOS11_1: NSAppKitVersion](nsappkitversion/macos11_1.md)
-- [static var macOS11_2: NSAppKitVersion](nsappkitversion/macos11_2.md)
-- [static var macOS11_3: NSAppKitVersion](nsappkitversion/macos11_3.md)
-- [static var macOS11_4: NSAppKitVersion](nsappkitversion/macos11_4.md)
-- [static var macOS11_5: NSAppKitVersion](nsappkitversion/macos11_5.md)
-- [static var macOS12_0: NSAppKitVersion](nsappkitversion/macos12_0.md)
-- [static var macOS12_1: NSAppKitVersion](nsappkitversion/macos12_1.md)
+- [static var number10_14: NSAppKitVersion](nsappkitversion/number10_14.md)
+- [static var number10_14_2: NSAppKitVersion](nsappkitversion/number10_14_2.md)
+- [static var number10_14_3: NSAppKitVersion](nsappkitversion/number10_14_3.md)
+- [static var number10_14_4: NSAppKitVersion](nsappkitversion/number10_14_4.md)
+- [static var number10_14_5: NSAppKitVersion](nsappkitversion/number10_14_5.md)
+- [static var number10_15: NSAppKitVersion](nsappkitversion/number10_15.md)
 
 
 ---

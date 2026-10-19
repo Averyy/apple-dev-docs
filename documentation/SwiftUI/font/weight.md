@@ -1,9 +1,9 @@
-# weight(_:)
+# Font.Weight
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: struct
 
-Sets the weight of the font.
+A weight to use for fonts.
 
 **Availability**:
 - iOS 13.0+
@@ -17,39 +17,49 @@ Sets the weight of the font.
 ## Declaration
 
 ```swift
-func weight(_ weight: Font.Weight) -> Font
+@frozen
+struct Weight
 ```
 
-## Mentions
+## Topics
 
-- [Applying custom fonts to text](applying-custom-fonts-to-text.md)
+### Getting font weights
+- [static let black: Font.Weight](font/weight/black.md)
+- [static let bold: Font.Weight](font/weight/bold.md)
+- [static let heavy: Font.Weight](font/weight/heavy.md)
+- [static let light: Font.Weight](font/weight/light.md)
+- [static let medium: Font.Weight](font/weight/medium.md)
+- [static let regular: Font.Weight](font/weight/regular.md)
+- [static let semibold: Font.Weight](font/weight/semibold.md)
+- [static let thin: Font.Weight](font/weight/thin.md)
+- [static let ultraLight: Font.Weight](font/weight/ultralight.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [func bold() -> Font](font/bold.md)
-  Adds bold or emphasized styling to the font.
-- [func italic() -> Font](font/italic.md)
-  Adds italics to the font.
-- [func monospaced() -> Font](font/monospaced.md)
-  Returns a fixed-width font from the same family as the base font.
-- [func monospacedDigit() -> Font](font/monospaceddigit.md)
-  Returns a modified font that uses fixed-width digits, while leaving other characters proportionally spaced.
-- [func smallCaps() -> Font](font/smallcaps.md)
-  Adjusts the font to enable all small capitals.
-- [func lowercaseSmallCaps() -> Font](font/lowercasesmallcaps.md)
-  Adjusts the font to enable lowercase small capitals.
-- [func uppercaseSmallCaps() -> Font](font/uppercasesmallcaps.md)
-  Adjusts the font to enable uppercase small capitals.
-- [func width(Font.Width) -> Font](font/width(_:).md)
-  Sets the width of the font.
-- [struct Width](font/width.md)
-  A width to use for fonts that have multiple widths.
-- [func leading(Font.Leading) -> Font](font/leading(_:).md)
-  Adjusts the line spacing of a font.
-- [Font.Leading](font/leading.md)
-  A line spacing adjustment that you can apply to a font.
+- [static func system(Font.TextStyle, design: Font.Design?, weight: Font.Weight?) -> Font](font/system(_:design:weight:).md)
+  Gets a system font that uses the specified style, design, and weight.
+- [Font.Design](font/design.md)
+  A design to use for fonts.
+- [Font.TextStyle](font/textstyle.md)
+  A dynamic text style to use for fonts.
+- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](font/system(size:weight:design:)-697b2.md)
+  Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
+- [static func system(Font.TextStyle, design: Font.Design) -> Font](font/system(_:design:).md)
+  Gets a system font with the given text style and design.
+- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
+  Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/font/weight(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/font/weight)*

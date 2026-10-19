@@ -43,7 +43,6 @@ See [`ToolbarItemPlacement`](toolbaritemplacement.md) to learn about the differe
   The tab bar of an app.
 - [static var windowToolbar: ToolbarPlacement](toolbarplacement/windowtoolbar.md)
   The placement for the containing window’s toolbar, sometimes referred to as the titlebar.
-### Deprecated symbols
 - [init<ID>(id: ID)](toolbarplacement/init(id:).md)
   Creates a custom accessory bar placement.
 ### Type Properties
@@ -52,14 +51,14 @@ See [`ToolbarItemPlacement`](toolbaritemplacement.md) to learn about the differe
 
 ## See Also
 
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
-  Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
   Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 - [struct ContentToolbarPlacement](contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+  Specifies the visibility of a bar managed by SwiftUI.
 
 
 ---

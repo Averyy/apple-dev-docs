@@ -68,6 +68,8 @@ Use a value of this type to control the visibility of the columns of a [`Navigat
   Sets a flexible, preferred width for the column containing this view.
 - [struct NavigationLink](navigationlink.md)
   A view that controls a navigation presentation.
+- [struct NavigationView](navigationview.md)
+  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 
 ---

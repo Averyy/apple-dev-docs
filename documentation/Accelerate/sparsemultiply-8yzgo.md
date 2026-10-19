@@ -28,6 +28,8 @@ Use this function to multiply a scalar by a sparse matrix, and then by a dense v
 
 Call [`SparseMultiply(_:_:_:_:)`](sparsemultiply(_:_:_:_:)-76o5l.md) to calculate the result.
 
+**Swift**:
+
 ```swift
 let rowCount = Int32(4)
 let columnCount = Int32(4)
@@ -37,7 +39,7 @@ let rowIndices: [Int32] = [0, 3, 0, 3]
 let columnIndices: [Int32] = [0, 0, 3, 3]
 let data: [Float] = [1.0, 4.0, 13.0, 16.0]
 
-/// The _A_ in _y = alpha * Ax_.
+// The sparse matrix `A` in `y = alpha * Ax`.
 let A = SparseConvertFromCoordinate(rowCount, columnCount,
                                     blockCount, blockSize,
                                     SparseAttributes_t(),
@@ -47,21 +49,21 @@ defer {
     SparseCleanup(A)
 }
 
-/// The values for _x_ in _y = alpha * Ax_.
+// The values for `x` in `y = alpha * Ax`.
 var xValues: [Float] = [10.0, -1.0, -1.0, 10.0]
 
 let alpha: Float = 2.0
 
-/// The values for _y_ in _y = alpha * Ax_.
+// The values for `y` in `y = alpha * Ax`.
 let yValues = [Float](unsafeUninitializedCapacity: xValues.count) {
     resultBuffer, count in
     
     xValues.withUnsafeMutableBufferPointer { xValuesPtr in
-        /// The _x_ in _y = alpha * Ax_.
+        // The dense vector `x` in `y = alpha * Ax`.
         let x = DenseVector_Float(count: 4, 
                                   data: xValuesPtr.baseAddress!)
         
-        /// The _y_ in _y = alpha * Ax_.
+        // The dense vector `y` in `y = alpha * Ax`.
         let y = DenseVector_Float(count: 4,
                                   data: resultBuffer.baseAddress!)
         
@@ -71,8 +73,41 @@ let yValues = [Float](unsafeUninitializedCapacity: xValues.count) {
     count = xValues.count
 }
 
-/// On return, `yValues` contains:
-///      `[ 280.0, 0.0, 0.0,  400.0 ]`
+print(yValues) // Prints "[280.0, 0.0, 0.0, 400.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Build the sparse matrix `A` from COO arrays.
+int rowIndices[]    = {0, 3, 0, 3};
+int columnIndices[] = {0, 0, 3, 3};
+float aValues[]     = {1.0f, 4.0f, 13.0f, 16.0f};
+
+SparseMatrix_Float A = SparseConvertFromCoordinate(4, 4,
+                                                   4, 1,
+                                                   (SparseAttributes_t){0},
+                                                   rowIndices, columnIndices,
+                                                   aValues);
+
+// The dense vector `x` in `y = alpha * Ax`.
+float xValues[] = {10.0f, -1.0f, -1.0f, 10.0f};
+
+float alpha = 2.0f;
+
+// The dense vector `y` in `y = alpha * Ax` (output buffer).
+float yValues[4] = {0};
+
+DenseVector_Float x = { .count = 4, .data = xValues };
+DenseVector_Float y = { .count = 4, .data = yValues };
+
+SparseMultiply(alpha, A, x, y);
+
+// Prints "[280, 0, 0, 400]".
+printf("[%g, %g, %g, %g]\n",
+      yValues[0], yValues[1], yValues[2], yValues[3]);
+
+SparseCleanup(A);
 ```
 
 ## Parameters

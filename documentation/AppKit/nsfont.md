@@ -129,9 +129,6 @@ You don’t create [`NSFont`](nsfont.md) objects using the `alloc` and `init` me
   Posted after the threshold for antialiasing changes.
 - [class let fontSetChangedNotification: NSNotification.Name](nsfont/fontsetchangednotification.md)
   Posted after the currently-set font changes.
-### Deprecated
-- [Deprecated Symbols](nsfont-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
 ### Type Aliases
 - [NSFont.Width](nsfont/width.md)
 ### Instance Properties
@@ -159,6 +156,9 @@ You don’t create [`NSFont`](nsfont.md) objects using the `alloc` and `init` me
 - [func withSize(CGFloat) -> NSFont](nsfont/withsize(_:).md)
 ### Type Methods
 - [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight, width: NSFont.Width) -> NSFont](nsfont/systemfont(ofsize:weight:width:).md)
+### Deprecated
+- [Deprecated symbols](nsfont-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSFont.FontSetChangedMessage](nsfont/fontsetchangedmessage.md)
 ### Initializers

@@ -10,11 +10,24 @@ In many cases, your code performs Fourier transforms on data that originates as 
 
 For example, the following shows a collection of four complex values in a single interleaved collection:
 
+**Swift**:
+
 ```swift
 let interleaved = [DSPComplex(real: real₀, imag: imag₀),
                    DSPComplex(real: real₁, imag: imag₁),
                    DSPComplex(real: real₂, imag: imag₂),
                    DSPComplex(real: real₃, imag: imag₃)]
+```
+
+**Objective-C**:
+
+```objc
+DSPComplex interleaved[] = {
+    {.real = real0, .imag = imag0},
+    {.real = real1, .imag = imag1},
+    {.real = real2, .imag = imag2},
+    {.real = real3, .imag = imag3}
+};
 ```
 
 The following shows the same four complex values as two collections in a split representation:
@@ -29,6 +42,8 @@ vDSP routines accept split-complex values either as [`DSPSplitComplex`](dspsplit
 ##### Convert Interleaved Values to Split Complex Format
 
 Given an array `signal` that contains 32 interleaved-complex values, the following code performs a Fourier transform on the values. Use [`vDSP_ctoz`](vdsp_ctoz.md) to populate the split collections `splitSignalReal` and `splitSignalImag` with the interleaved values from `signal`:
+
+**Swift**:
 
 ```swift
 let complexValuesCount = 32
@@ -54,9 +69,31 @@ signal.withUnsafeBufferPointer { signalPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+vDSP_Length complexValuesCount = 32;
+
+// DSPComplex signal[32] = { ... }; // `signal` has `complexValuesCount` elements.
+
+float splitSignalReal[32];
+float splitSignalImag[32];
+
+DSPSplitComplex splitComplex = {
+    .realp = splitSignalReal,
+    .imagp = splitSignalImag
+};
+
+vDSP_ctoz(signal, 2,
+          &splitComplex, 1,
+          complexValuesCount);
+```
+
 ##### Perform a Fourier Transform on Split Data
 
 Use the vDSP function [`vDSP_DFT_zop_CreateSetup`](vdsp_dft_zop_createsetup.md) to create a setup object for complex-to-complex DFTs. The execute function, [`vDSP_DFT_Execute`](vdsp_dft_execute.md), automatically switches to a fast Fourier transform (FFT) when the specified count supports the FFT algorithm.
+
+**Swift**:
 
 ```swift
 var splitOutputReal = [Float](repeating: 0,
@@ -83,11 +120,33 @@ print("Split-complex dominant frequency",
       splitComplexDominantFrequency.1)
 ```
 
+**Objective-C**:
+
+```objc
+float splitOutputReal[32];
+float splitOutputImag[32];
+
+vDSP_DFT_Setup splitComplexSetup = vDSP_DFT_zop_CreateSetup(nil,
+                                                             complexValuesCount,
+                                                             vDSP_DFT_FORWARD);
+if (splitComplexSetup) {
+    vDSP_DFT_Execute(splitComplexSetup,
+                     splitSignalReal, splitSignalImag,
+                     splitOutputReal, splitOutputImag);
+
+    vDSP_DFT_DestroySetup(splitComplexSetup);
+}
+
+// Use platform APIs (such as cblas or manual loop) to find the dominant frequency index.
+```
+
 On return,`splitOutputReal` and `splitOutputImag` contain the split format frequency-domain representation of the values in `signal`. Use [`indexOfMaximum(_:)`](vdsp/indexofmaximum(_:)-5qdtm.md) to find the dominant frequency.
 
 ##### Convert Split Complex Values to Interleaved Format
 
 Use [`vDSP_ztoc`](vdsp_ztoc.md) to convert the split result to the interleaved format.
+
+**Swift**:
 
 ```swift
 var dftOutputInterleaved = [DSPComplex](repeating: DSPComplex(),
@@ -105,6 +164,21 @@ splitOutputReal.withUnsafeMutableBufferPointer { dftOutputRealPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+DSPComplex dftOutputInterleaved[32];
+
+DSPSplitComplex splitComplex2 = {
+    .realp = splitOutputReal,
+    .imagp = splitOutputImag
+};
+
+vDSP_ztoc(&splitComplex2, 1,
+          dftOutputInterleaved, 2,
+          complexValuesCount);
+```
+
 On return, `dftOutputInterleaved` contains the DFT result in the interleaved format.
 
 ##### Perform a Fourier Transform Directly on Interleaved Data
@@ -112,6 +186,8 @@ On return, `dftOutputInterleaved` contains the DFT result in the interleaved for
 vDSP provides routines for DFTs directly on interleaved data. Use these functions instead of using [`vDSP_ctoz`](vdsp_ctoz.md) and [`vDSP_ztoc`](vdsp_ztoc.md) to convert between interleaved and split formats.
 
 The following code performs the transform from the [`Performing Fourier transforms on interleaved-complex data`](performing-fourier-transforms-on-interleaved-complex-data.md) section directly on the interleaved data:
+
+**Swift**:
 
 ```swift
 var interleavedOutput = [DSPComplex](repeating: DSPComplex(real: 0, imag: 0),
@@ -135,6 +211,27 @@ let interleavedDominantFrequency = interleavedOutput.enumerated().max {
 print("Interleaved dominant frequency",
       interleavedDominantFrequency?.offset ?? -1,
       interleavedDominantFrequency?.element.real ?? 0)
+```
+
+**Objective-C**:
+
+```objc
+DSPComplex interleavedOutput[32];
+
+vDSP_DFT_Interleaved_Setup interleavedSetup =
+    vDSP_DFT_Interleaved_CreateSetup(nil,
+                                     complexValuesCount,
+                                     vDSP_DFT_FORWARD,
+                                     vDSP_DFT_Interleaved_ComplextoComplex);
+if (interleavedSetup) {
+    vDSP_DFT_Interleaved_Execute(interleavedSetup,
+                                 signal,
+                                 interleavedOutput);
+
+    vDSP_DFT_Interleaved_DestroySetup(interleavedSetup);
+}
+
+// Use a manual loop to find the element with the maximum real part.
 ```
 
 On return, `interleavedOutput` contains the FFT result in the interleaved format.

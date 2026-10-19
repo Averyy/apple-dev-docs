@@ -126,6 +126,9 @@ In some situations, it’s worthwhile to subclass [`NSDocumentController`](nsdoc
   Presents an error alert to the user as a modal panel.
 - [func willPresentError(any Error) -> any Error](nsdocumentcontroller/willpresenterror(_:).md)
   Indicates an error condition and provides the opportunity to return the same or a different error.
+### Deprecated
+- [Deprecated symbols](nsdocumentcontroller-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

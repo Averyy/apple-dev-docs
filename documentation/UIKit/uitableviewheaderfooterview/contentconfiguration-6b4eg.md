@@ -35,6 +35,10 @@ The default value is `nil`. After you set a content configuration to this proper
   A Boolean value that determines whether the view automatically updates its content configuration when its state changes.
 - [var contentView: UIView](uitableviewheaderfooterview/contentview.md)
   The content view of the header or footer.
+- [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
+  A primary text label for the view.
+- [var detailTextLabel: UILabel?](uitableviewheaderfooterview/detailtextlabel.md)
+  A detail text label for the view.
 
 
 ---

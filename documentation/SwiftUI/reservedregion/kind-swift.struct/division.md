@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A region where content should split into two separate regions.
+A region that splits your view into separate parts.
 
 **Availability**:
 - iOS 27.1+
@@ -20,10 +20,14 @@ A region where content should split into two separate regions.
 static var division: ReservedRegion.Kind { get }
 ```
 
+#### Discussion
+
+A division region is an area, such as the fold of iPhone Duo, that splits your view. Place your content on both sides of the region instead of across it.
+
 ## See Also
 
 - [static var occlusion: ReservedRegion.Kind](reservedregion/kind-swift.struct/occlusion.md)
-  A region that is occluded by an element.
+  A region that covers part of your view.
 
 
 ---

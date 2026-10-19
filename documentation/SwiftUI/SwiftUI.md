@@ -148,6 +148,8 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
 ### Structures
 - [struct ContentMarginGuide](contentmarginguide.md)
   A guide for resolving the content margins for a view.
+- [struct PresentationMode](presentationmode.md)
+  An indication whether a view is currently presented by another view.
 - [struct ToolbarTitleAlignment](toolbartitlealignment.md)
   A preferred alignment for a navigation bar’s title.
 

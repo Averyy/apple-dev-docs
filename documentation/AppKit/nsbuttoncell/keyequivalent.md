@@ -30,12 +30,8 @@ To display a key equivalent on a button, set the image and alternate image to `n
   The image the button displays in its alternate state.
 - [var imagePosition: NSControl.ImagePosition](nsbuttoncell/imageposition.md)
   The position of the button’s image relative to its title.
-- [var keyEquivalentFont: NSFont?](nsbuttoncell/keyequivalentfont.md)
-  The font used to draw the button’s key equivalent.
 - [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsbuttoncell/keyequivalentmodifiermask.md)
   The mask that identifies the modifier keys for the button’s key equivalent.
-- [func setKeyEquivalentFont(String, size: CGFloat)](nsbuttoncell/setkeyequivalentfont(_:size:).md)
-  Sets by name and size of the font used to draw the key equivalent.
 
 
 ---

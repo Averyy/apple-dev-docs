@@ -28,7 +28,9 @@ func vImageMatrixMultiply_PlanarF(_ srcs: UnsafeMutablePointer<UnsafePointer<vIm
 
 This function treats corresponding pixels in the source buffers as `m`-element vectors, and the corresponding pixels in the destination buffers as `n`-element vectors. Therefore, the multiplication requires an `m x n` matrix, that is, a matrix with `src_planes` rows and `dest_planes` columns.
 
-The following code shows three source planes multiplied by a three-element column matrix to produce a single destination plane. The values in the matrix represent the Rec. 709 luminance coefficients that convert the color source pixels to a grayscale destination image. The three source planes represent the individual red, green, and blue channels of an image that contains a red pixel, a green pixel, and a blue pixel.
+The following code shows three source planes multiplied by a three-element column matrix to produce a single destination plane. The values in the matrix represent the Rec. 709 luminance coefficients that convert the color source pixels to a grayscale destination image. The three source planes represent the individual red, green, and blue channels of an image that contains a red pixel, a green pixel, and a blue pixel:
+
+**Swift**:
 
 ```swift
 let size = vImage.Size(width: 1, height: 3)
@@ -80,6 +82,43 @@ red.withUnsafePointerToVImageBuffer { r in
 
 // Prints "[0.2126, 0.7152, 0.0722]".
 print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+float redData[3]   = {1, 0, 0};
+float greenData[3] = {0, 1, 0};
+float blueData[3]  = {0, 0, 1};
+float dstData[3]   = {0, 0, 0};
+
+vImage_Buffer redBuf   = { .data = redData,   .width = 1, .height = 3, .rowBytes = 4 };
+vImage_Buffer greenBuf = { .data = greenData, .width = 1, .height = 3, .rowBytes = 4 };
+vImage_Buffer blueBuf  = { .data = blueData,  .width = 1, .height = 3, .rowBytes = 4 };
+vImage_Buffer destBuf  = { .data = dstData,   .width = 1, .height = 3, .rowBytes = 4 };
+
+float redCoefficient   = 0.2126f;
+float greenCoefficient = 0.7152f;
+float blueCoefficient  = 0.0722f;
+
+float matrix[3] = {
+    redCoefficient,
+    greenCoefficient,
+    blueCoefficient
+};
+
+const vImage_Buffer *srcs[3]  = { &redBuf, &greenBuf, &blueBuf };
+const vImage_Buffer *dests[1] = { &destBuf };
+
+vImageMatrixMultiply_PlanarF(srcs, dests,
+                             3, 1,
+                             matrix,
+                             NULL, NULL,
+                             kvImageNoFlags);
+
+// Prints "[0.2126, 0.7152, 0.0722]".
+printf("[%g, %g, %g]\n",
+       dstData[0], dstData[1], dstData[2]);
 ```
 
 On return, the destination buffer contains a grayscale representation of the red, green, and blue source buffers.

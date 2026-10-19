@@ -33,6 +33,8 @@ If this item is not a view, the [`focusedView`](uiscreen/focusedview.md) propert
   The view that is currently focused.
 - [var supportsFocus: Bool](uiscreen/supportsfocus.md)
   A Boolean value that indicates whether the screen supports focus-based inputs.
+- [var isCaptured: Bool](uiscreen/iscaptured.md)
+  A Boolean value that indicates whether the system is actively cloning the screen to another destination.
 
 
 ---

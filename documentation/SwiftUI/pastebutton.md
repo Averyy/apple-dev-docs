@@ -53,7 +53,7 @@ A paste button automatically validates and invalidates based on changes to the p
   Creates a Paste button that accepts specific types of data from the pasteboard.
 - [init<T>(payloadType: T.Type, onPaste: ([T]) -> Void)](pastebutton/init(payloadtype:onpaste:).md)
   Creates an instance that accepts values of the specified type.
-### Deprecated initializers
+### Deprecated
 - [init(supportedTypes: [String], payloadAction: ([NSItemProvider]) -> Void)](pastebutton/init(supportedtypes:payloadaction:).md)
   Creates a Paste button that accepts specific types of data from the pasteboard.
 - [init<Payload>(supportedTypes: [String], validator: ([NSItemProvider]) -> Payload?, payloadAction: (Payload) -> Void)](pastebutton/init(supportedtypes:validator:payloadaction:).md)

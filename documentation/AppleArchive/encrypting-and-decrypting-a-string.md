@@ -96,7 +96,7 @@ try encodeStream.writeHeader(header)
 
 ##### Write the String to the Encode Stream
 
-The sample calls `ArchiveStream/writeBlob(key:from:)` to write the contents of the string as a data buffer to the encode stream. In turn, the encode stream writes to the compression stream, and then the encryption stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
+The sample calls [`writeBlob(key:from:)`](archivestreamprotocol/writeblob(key:from:).md) to write the contents of the string as a data buffer to the encode stream. In turn, the encode stream writes to the compression stream, and then the encryption stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 
 ```swift
 var mutableString = string
@@ -198,7 +198,7 @@ defer {
 
 ##### Populate the Buffer with Decoded Data
 
-The `ArchiveStream/readBlob(key:into:)` function reads the decompressed data from the `DAT` field and writes it to the raw buffer pointer. The decode stream parses its input from the decryption stream that, in turn, decrypts its input from the AppleArchive file supplied by the file stream.
+The [`readBlob(key:into:)`](archivestreamprotocol/readblob(key:into:).md) function reads the decompressed data from the `DAT` field and writes it to the raw buffer pointer. The decode stream parses its input from the decryption stream that, in turn, decrypts its input from the AppleArchive file supplied by the file stream.
 
 ```swift
 try decodeStream.readBlob(key: ArchiveHeader.FieldKey("DAT"),

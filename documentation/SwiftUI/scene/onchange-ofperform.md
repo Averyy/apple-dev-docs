@@ -66,6 +66,13 @@ The system passes the new value into the closure. If you need the old value, cap
 - `value`: The value to check when determining whether to run the closure. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
 - `action`: A closure to run when the value changes. The closure provides a single `newValue` parameter that indicates the changed value.
 
+## See Also
+
+- [func onChange(of:initial:_:)](scene/onchange(of:initial:_:).md)
+  Adds an action to perform when the given value changes.
+- [func handlesExternalEvents(matching: Set<String>) -> some Scene](scene/handlesexternalevents(matching:).md)
+  Specifies the external events for which SwiftUI opens a new instance of the modified scene.
+
 
 ---
 

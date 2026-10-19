@@ -26,8 +26,6 @@ The background describes the surface the cell is drawn onto in the [`draw(withFr
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
 - [var isOpaque: Bool](nscell/isopaque.md)
   A Boolean value indicating whether the cell is completely opaque.
-- [var controlTint: NSControlTint](nscell/controltint.md)
-  The cell’s control tint.
 - [var interiorBackgroundStyle: NSView.BackgroundStyle](nscell/interiorbackgroundstyle.md)
   The cell’s interior background style.
 - [NSView.BackgroundStyle](nsview/backgroundstyle.md)

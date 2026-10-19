@@ -19,10 +19,10 @@ case automatic
 
 ## See Also
 
-- [static var inline: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum/inline.md)
-  A constant that places the search bar on the trailing edge of the navigation bar, inline with the other content.
 - [UINavigationItem.SearchBarPlacement.stacked](uinavigationitem/searchbarplacement-swift.enum/stacked.md)
   A constant that stacks the search bar vertically below the other content in the navigation bar.
+- [static var inline: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum/inline.md)
+  A constant that places the search bar on the trailing edge of the navigation bar, inline with the other content.
 
 
 ---

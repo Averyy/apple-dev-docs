@@ -25,6 +25,7 @@ struct ASWebAuthenticationSessionError
 ### Error Domain
 - [let ASWebAuthenticationSessionErrorDomain: String](aswebauthenticationsessionerrordomain.md)
   The error domain for a web authentication session.
+- [static var errorDomain: String](aswebauthenticationsessionerror/errordomain.md)
 ### Error Codes
 - [static var canceledLogin: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/canceledlogin.md)
   The login has been canceled.
@@ -34,8 +35,6 @@ struct ASWebAuthenticationSessionError
   The context was invalid.
 - [ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/code.md)
   The error code for a web authentication session error.
-### Type Properties
-- [static var errorDomain: String](aswebauthenticationsessionerror/errordomain.md)
 
 ## Relationships
 

@@ -40,22 +40,24 @@ After calling this method, UIKit posts a [`didBecomeActiveNotification`](uiappli
 
 - [func applicationWillResignActive(UIApplication)](uiapplicationdelegate/applicationwillresignactive(_:).md)
   Tells the delegate that the app is about to become inactive.
-- [func applicationDidEnterBackground(UIApplication)](uiapplicationdelegate/applicationdidenterbackground(_:).md)
-  Tells the delegate that the app is now in the background.
 - [func applicationWillEnterForeground(UIApplication)](uiapplicationdelegate/applicationwillenterforeground(_:).md)
   Tells the delegate that the app is about to enter the foreground.
-- [func applicationWillTerminate(UIApplication)](uiapplicationdelegate/applicationwillterminate(_:).md)
-  Tells the delegate when the app is about to terminate.
-- [class let didBecomeActiveNotification: NSNotification.Name](uiapplication/didbecomeactivenotification.md)
-  A notification that posts when the app becomes active.
-- [class let didEnterBackgroundNotification: NSNotification.Name](uiapplication/didenterbackgroundnotification.md)
-  A notification that posts when the app enters the background.
-- [class let willEnterForegroundNotification: NSNotification.Name](uiapplication/willenterforegroundnotification.md)
-  A notification that posts shortly before your app’s UI transitions to the foreground.
-- [class let willResignActiveNotification: NSNotification.Name](uiapplication/willresignactivenotification.md)
-  A notification that posts when the app is no longer active and loses focus.
-- [class let willTerminateNotification: NSNotification.Name](uiapplication/willterminatenotification.md)
-  A notification that posts when the app is about to terminate.
+- [func application(UIApplication, willContinueUserActivityWithType: String) -> Bool](uiapplicationdelegate/application(_:willcontinueuseractivitywithtype:).md)
+  Tells the delegate if your app takes responsibility for notifying users when a continuation activity takes longer than expected.
+- [func application(UIApplication, continue: NSUserActivity, restorationHandler: ([any UIUserActivityRestoring]?) -> Void) -> Bool](uiapplicationdelegate/application(_:continue:restorationhandler:).md)
+  Tells the delegate that the data for continuing an activity is available.
+- [func application(UIApplication, didUpdate: NSUserActivity)](uiapplicationdelegate/application(_:didupdate:).md)
+  Tells the delegate that the activity was updated.
+- [func application(UIApplication, didFailToContinueUserActivityWithType: String, error: any Error)](uiapplicationdelegate/application(_:didfailtocontinueuseractivitywithtype:error:).md)
+  Tells the delegate that the activity couldn’t be continued.
+- [func application(UIApplication, performActionFor: UIApplicationShortcutItem, completionHandler: (Bool) -> Void)](uiapplicationdelegate/application(_:performactionfor:completionhandler:).md)
+  Tells the delegate that the user selected a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method.
+- [func application(UIApplication, open: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool](uiapplicationdelegate/application(_:open:options:).md)
+  Asks the delegate to open a resource specified by a URL, and provides a dictionary of launch options.
+- [func application(UIApplication, userDidAcceptCloudKitShareWith: CKShareMetadata)](uiapplicationdelegate/application(_:userdidacceptcloudkitsharewith:).md)
+  Tells the delegate that the app now has access to shared information in CloudKit.
+- [func application(UIApplication, supportedInterfaceOrientationsFor: UIWindow?) -> UIInterfaceOrientationMask](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md)
+  Asks the delegate for the interface orientations to use for the view controllers in the specified window.
 
 
 ---

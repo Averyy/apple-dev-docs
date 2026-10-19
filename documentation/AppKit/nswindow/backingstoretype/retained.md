@@ -22,10 +22,10 @@ In macOS 10.5 and later, requests for retained windows will result in the window
 
 ## See Also
 
-- [NSWindow.BackingStoreType.nonretained](nswindow/backingstoretype/nonretained.md)
-  The window draws directly to the screen without using any buffer.
 - [NSWindow.BackingStoreType.buffered](nswindow/backingstoretype/buffered.md)
   The window renders all drawing into a display buffer and then flushes it to the screen.
+- [NSWindow.BackingStoreType.nonretained](nswindow/backingstoretype/nonretained.md)
+  The window draws directly to the screen without using any buffer.
 
 
 ---

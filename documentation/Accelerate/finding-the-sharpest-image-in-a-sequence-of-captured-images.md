@@ -253,7 +253,7 @@ if orientation == .right || orientation == .left {
 }
 ```
 
-The following code populates the destination buffer using either  [`vImageRotate90_Planar8(_:_:_:_:_:)`](vimagerotate90_planar8(_:_:_:_:_:).md) or [`vImageRotate90_PlanarF(_:_:_:_:_:)`](vimagerotate90_planarf(_:_:_:_:_:).md)
+The following code populates the destination buffer using either  [`vImageRotate90_Planar8(_:_:_:_:_:)`](vimagerotate90_planar8(_:_:_:_:_:).md) or [`vImageRotate90_PlanarF(_:_:_:_:_:)`](vimagerotate90_planarf(_:_:_:_:_:).md):
 
 ```swift
 let imageFormat: vImage_CGImageFormat

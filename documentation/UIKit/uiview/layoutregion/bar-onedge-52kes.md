@@ -4,8 +4,8 @@
 **Kind**: method
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 

@@ -42,7 +42,7 @@ struct DimensionRange
 ## See Also
 
 - [func axes(UIAxis) -> UISplitArrangement](uisplitarrangement-swift.struct/axes(_:).md)
-  Sets the axes of the arrangement.
+  Sets the axes that the arrangement supports to the axes you provide.
 - [UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension.md)
   A dimension for a view within a split arrangement.
 

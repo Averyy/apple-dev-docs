@@ -30,6 +30,10 @@ If the user presses deeper on the preview, the system navigates to the view you�
 
 - [var sourceRect: CGRect](uiviewcontrollerpreviewing/sourcerect.md)
   The rectangle, in the source view’s coordinate system, that responds to a 3D Touch by a user and remains visually sharp while surrounding content blurs.
+- [var sourceRect: CGRect](uiviewcontrollerpreviewing/sourcerect.md)
+  The rectangle, in the source view’s coordinate system, that responds to a 3D Touch by a user and remains visually sharp while surrounding content blurs.
+- [var previewingGestureRecognizerForFailureRelationship: UIGestureRecognizer](uiviewcontrollerpreviewing/previewinggesturerecognizerforfailurerelationship.md)
+  A gesture recognizer suitable for setting up failure requirements for a preview’s (peek’s) gestures.
 - [var delegate: any UIViewControllerPreviewingDelegate](uiviewcontrollerpreviewing/delegate.md)
   The previewing view controller’s delegate for managing preview (peek) and commit (pop) view controllers.
 

@@ -49,6 +49,21 @@ func textView(_ textView: UITextView, editMenuForTextIn range: NSRange, suggeste
 - `range`: The character range the menu is presenting for.
 - `suggestedActions`: The actions and commands the system suggests.
 
+## See Also
+
+- [func textView(UITextView, shouldInteractWith: NSTextAttachment, in: NSRange, interaction: UITextItemInteraction) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:interaction:)-5qha9.md)
+  Asks the delegate whether the specified text view allows the specified type of user interaction with the provided text attachment in the specified range of text.
+- [func textView(UITextView, shouldInteractWith: URL, in: NSRange, interaction: UITextItemInteraction) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:interaction:)-622ub.md)
+  Asks the delegate whether the specified text view allows the specified type of user interaction with the specified URL in the specified range of text.
+- [func textView(UITextView, shouldInteractWith: NSTextAttachment, in: NSRange) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:)-97zx6.md)
+  Asks the delegate whether the specified text view allows user interaction with the provided text attachment in the specified range of text.
+- [func textView(UITextView, shouldInteractWith: URL, in: NSRange) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:)-98tho.md)
+  Asks the delegate whether the specified text view allows user interaction with the specified URL in the specified range of text.
+- [enum UITextItemInteraction](uitextiteminteraction.md)
+  Constants that indicate the type of interaction the user expects to have with a URL or text attachment.
+- [func textView(UITextView, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uitextviewdelegate/textview(_:shouldchangetextin:replacementtext:).md)
+  Asks the delegate whether to replace the specified text in the text view.
+
 
 ---
 

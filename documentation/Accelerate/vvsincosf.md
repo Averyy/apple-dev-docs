@@ -29,7 +29,7 @@ func vvsincosf(_: UnsafeMutablePointer<Float>, _: UnsafeMutablePointer<Float>, _
 - **parameter 3**: The input array, *x*.
 - **parameter 4**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvsincosf(_:_:_:_:)`](vvsincosf(_:_:_:_:).md).
+The following code shows an example of using [`vvsincosf(_:_:_:_:)`](vvsincosf(_:_:_:_:).md):
 
 **Swift**:
 

@@ -33,7 +33,7 @@ let buf = try vImage.PixelBuffer(
     pixelFormat: vImage.Interleaved8x4.self)
 
 // Prints:
-// "[255, 115, 136, 165,  255, 115, 136, 165]"
+// "[255, 115, 136, 165,  255, 115, 136, 165]".
 //    A    R    G    B  |  A    R    G    B
 print(buf.array[0 ..< 2 * format.componentCount])
 ```
@@ -72,7 +72,7 @@ let buf = try vImage.PixelBuffer(cgImage: cgImage,
                                  pixelFormat: vImage.PlanarF.self)
 
 // Prints:
-// "[133, 133]"  // (0.299 * 115 + 0.587 * 136 + 0.114 * 165) = 133
+// "[133, 133]".  // (0.299 * 115 + 0.587 * 136 + 0.114 * 165) = 133
 //    Y    Y
 print(buf.array[0 ..< 2 * format.componentCount].map {
     Pixel_8($0 * 255 )
@@ -113,7 +113,7 @@ let buf = try vImage.PixelBuffer(cgImage: cgImage,
                                  pixelFormat: vImage.Interleaved8x4.self)
 
 // Prints:
-// "[115, 136, 165, 255,  115, 136, 165, 255]"
+// "[115, 136, 165, 255,  115, 136, 165, 255]".
 //    R    G    B    A  |  R    G    B    A
 print(buf.array[0 ..< 2 * format.componentCount])
 ```
@@ -142,7 +142,7 @@ print(format.colorSpace.takeRetainedValue().name!)  // kCGColorSpaceDisplayP3
 print(format.bitmapInfo)                            // noneSkipLast
 
 // Prints:
-// "[115, 136, 165, 255,  115, 136, 165, 255]"
+// "[115, 136, 165, 255,  115, 136, 165, 255]".
 //    R    G    B    A  |  R    G    B    A
 print(buf.array[0 ..< 2 * format.componentCount])
 ```

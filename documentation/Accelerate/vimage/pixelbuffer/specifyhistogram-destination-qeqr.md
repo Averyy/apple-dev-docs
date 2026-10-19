@@ -52,7 +52,7 @@ let multiplePlaneReference = vImage.PixelBuffer<vImage.Planar8x3>(
     planarBuffers: interleavedReference.planarBuffers())
 ```
 
-The following code calls [`histogram()`](vimage/pixelbuffer/histogram()-14a38.md) to calculate the histogram of the reference image and passes the histogram to [`specifyHistogram(_:destination:)`](vimage/pixelbuffer/specifyhistogram(_:destination:)-7xiz4.md) to generate the specification result. This function works in place, that is, the input and output can share the same underlying memory.
+The following code calls [`histogram()`](vimage/pixelbuffer/histogram()-14a38.md) to calculate the histogram of the reference image and passes the histogram to [`specifyHistogram(_:destination:)`](vimage/pixelbuffer/specifyhistogram(_:destination:)-7xiz4.md) to generate the specification result. This function works in place, that is, the input and output can share the same underlying memory:
 
 ```swift
 let histogram = multiplePlaneReference.histogram()

@@ -30,7 +30,6 @@ Use [`linear`](progressviewstyle/linear.md) to construct this style.
 ### Creating the progress view style
 - [init()](linearprogressviewstyle/init.md)
   Creates a linear progress view style.
-### Deprecated initializers
 - [init(tint: Color)](linearprogressviewstyle/init(tint:).md)
   Creates a linear progress view style with a tint color.
 

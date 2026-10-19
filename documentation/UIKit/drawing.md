@@ -63,8 +63,6 @@ Configure your app’s drawing environment using colors, renderers, draw paths, 
   Makes the specified graphics context the current context.
 - [func UIGraphicsPopContext()](uigraphicspopcontext().md)
   Removes the current graphics context from the top of the stack, restoring the previous context.
-- [func UIGraphicsBeginImageContextWithOptions(CGSize, Bool, CGFloat)](uigraphicsbeginimagecontextwithoptions(_:_:_:).md)
-  Creates a bitmap-based graphics context with the specified options.
 - [func UIRectClip(CGRect)](uirectclip(_:).md)
   Modifies the current clipping path by intersecting it with the specified rectangle.
 ### Primitive type conversions
@@ -88,6 +86,9 @@ Configure your app’s drawing environment using colors, renderers, draw paths, 
   Returns a string formatted to contain the data from a size data structure.
 - [class func string(for: CGVector) -> String](../foundation/nscoder/string(for:)-4omzv.md)
   Returns a string formatted to contain the data from a vector data structure.
+### Deprecated
+- [Deprecated symbols](drawing-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## See Also
 

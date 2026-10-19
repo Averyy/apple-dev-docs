@@ -37,6 +37,8 @@ This method is called after the view containing the document preview has been re
   Called when a document interaction controller is about to display an Open In menu.
 - [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissopeninmenu(_:).md)
   Called when a document interaction controller has dismissed its Open In menu.
+- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
+  Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 
 
 ---

@@ -32,10 +32,10 @@ The text field calls this method whenever the user taps the return button. You c
 
 ## See Also
 
-- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md)
-  Asks the delegate whether to change the specified text.
 - [func textFieldShouldClear(UITextField) -> Bool](uitextfielddelegate/textfieldshouldclear(_:).md)
   Asks the delegate whether to remove the text field’s current contents.
+- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md)
+  Asks the delegate whether to change the specified text.
 
 
 ---

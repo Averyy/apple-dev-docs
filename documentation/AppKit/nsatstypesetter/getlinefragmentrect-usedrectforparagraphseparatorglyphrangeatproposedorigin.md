@@ -34,6 +34,8 @@ The method returns the calculated line fragment rectangle in `lineFragmentRect`,
   Notifies subclasses that the typesetter is about to set a new line fragment.
 - [func setHardInvalidation(Bool, forGlyphRange: NSRange)](nsatstypesetter/sethardinvalidation(_:forglyphrange:).md)
   Sets a Boolean value that determines whether the layout manager invalidates the specified portion of the glyph cache.
+- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>!, characterIndexes: UnsafeMutablePointer<Int>!, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>!, elasticBits: UnsafeMutablePointer<ObjCBool>!) -> Int](nsatstypesetter/getglyphs(in:glyphs:characterindexes:glyphinscriptions:elasticbits:).md)
+  Extracts the information needed to lay out the glyphs in the given glyph buffer from the given glyph range.
 
 
 ---

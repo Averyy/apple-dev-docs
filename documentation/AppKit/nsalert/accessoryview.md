@@ -39,7 +39,7 @@ alert.accessoryView = accessory;
 [alert release];
 ```
 
-![None](/images/com.apple.appkit/media-1965585@2x.png)
+![A screenshot of an alert with a document, pencil, and ruler icon on the left. The alert shows the message text, the informative text, and the text from the accessory view below them, followed by an OK button at the bottom right.](/images/com.apple.appkit/media-1965585@2x.png)
 
 ## See Also
 

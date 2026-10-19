@@ -30,11 +30,6 @@ nonisolated init(@ContentBuilder destination: () -> Destination, @ContentBuilder
 - `destination`: A view for the navigation link to present.
 - `label`: A content builder to produce a label describing the `destination` to present.
 
-## See Also
-
-- [init(_:destination:)](navigationlink/init(_:destination:).md)
-  Creates a navigation link that presents a destination view, with a text label that the link generates from a localized string key.
-
 
 ---
 

@@ -34,26 +34,108 @@ An example of separable convolution is the edge-detection Sobel filter, for appr
 
 Note that the differentiation filter produces a result that contains, on average, half of the destination values having a negative value. Add a bias of 128 to allow the operation to represent values in the range `-1...1` as unsigned 8-bit integer destination pixels. For example, the operation represents a result of -1 as 0 in the destination, and represents a result of 1 as 255 in the destination.
 
-The following code shows how to apply the averaging and differentiation components of the Sobel filter to an 8-bit planar buffer:
+The following code shows how to apply the averaging and differentiation components of the Sobel filter to a 16-bit half-float (`Planar16F`) planar buffer:
+
+**Swift**:
 
 ```swift
-let kernelX: [Float] = [1, 2, 1]
-let kernelY: [Float] = [-1, 0, 1]
+// A 3 × 3 `Planar16F` source; all pixels = 1.0 (half-float 0x3C00).
+let source = vImage.PixelBuffer<vImage.Planar16F>(
+    pixelValues: [UInt16](repeating: 0x3C00, count: 9),
+    size: .init(width: 3, height: 3))
+
+// A 3 × 3 destination buffer, all zeros initially.
+let destination = vImage.PixelBuffer<vImage.Planar16F>(
+    pixelValues: [UInt16](repeating: 0, count: 9),
+    size: .init(width: 3, height: 3))
+
+// Separable box-filter kernels: all-ones 1×3, producing a 3×3 sum.
+let kernelX: [Float] = [1, 1, 1]
+let kernelY: [Float] = [1, 1, 1]
+// bias = 128: offset added after convolution; result = 9.0 + 128.0 = 137.0.
 let bias = Float(128)
-let backgroundColor = Float(0)
+// The `backgroundColor` equals 0; it's unused because `kvImageEdgeExtend` is used.
+let backgroundColor = Pixel_16F(0)
 
-// `planarSourceBuffer` contains the source image.
-// `destinationBuffer` is the destination buffer, initialized by `vImageBuffer_Init`.
-
-let error = vImageSepConvolve_Planar16F(&planarSourceBuffer,
-                                        &destinationBuffer,
+// Apply the separable convolution; the `kvImageEdgeExtend` replicates edge pixels
+// so every output pixel sums exactly nine source pixels.
+source.withUnsafePointerToVImageBuffer { src in
+    destination.withUnsafePointerToVImageBuffer { dest in
+        _ = vImageSepConvolve_Planar16F(src,
+                                        dest,
                                         nil,
                                         0, 0,
                                         kernelX, UInt32(kernelX.count),
                                         kernelY, UInt32(kernelY.count),
                                         bias,
                                         backgroundColor,
-                                        vImage_Flags(kvImageBackgroundColorFill))
+                                        vImage_Flags(kvImageEdgeExtend))
+    }
+}
+
+// Convert the center pixel (index 4) from half-float to Float, and print.
+let centerHalf = destination.array[4]
+let halfBuffer = vImage.PixelBuffer<vImage.Planar16F>(
+    pixelValues: [centerHalf],
+    size: .init(width: 1, height: 1))
+let floatBuffer = vImage.PixelBuffer<vImage.PlanarF>(
+    pixelValues: [Float(0)],
+    size: .init(width: 1, height: 1))
+halfBuffer.withUnsafePointerToVImageBuffer { halfBuf in
+    floatBuffer.withUnsafePointerToVImageBuffer { floatBuf in
+        _ = vImageConvert_Planar16FtoPlanarF(halfBuf, floatBuf, vImage_Flags(kvImageNoFlags))
+    }
+}
+// Prints "137.0".
+print(floatBuffer.array[0])
+```
+
+**Objective-C**:
+
+```objc
+// Source: 3x3 `Planar16F` image; all pixels = 1.0 (half-float `0x3C00`).
+uint16_t src[9];
+for (int i = 0; i < 9; i++) { src[i] = 0x3C00; }
+uint16_t dst[9] = {0};
+
+vImage_Buffer srcBuf = {
+    .data     = src,
+    .width    = 3,
+    .height   = 3,
+    .rowBytes = 3 * 2
+};
+
+vImage_Buffer dstBuf = {
+    .data     = dst,
+    .width    = 3,
+    .height   = 3,
+    .rowBytes = 3 * 2
+};
+
+float kernelX[3] = {1.0f, 1.0f, 1.0f};
+float kernelY[3] = {1.0f, 1.0f, 1.0f};
+float bias = 128.0f;
+Pixel_16F backgroundColor = 0;
+
+vImageSepConvolve_Planar16F(&srcBuf,
+                             &dstBuf,
+                             NULL,
+                             0, 0,
+                             kernelX, 3,
+                             kernelY, 3,
+                             bias,
+                             backgroundColor,
+                             kvImageEdgeExtend);
+
+// Convert center pixel (`dst[4]`) to float and print.
+// Result: 9.0 + 128.0 = 137.0
+vImage_Buffer halfBuf  = { .data = dst + 4, .width = 1, .height = 1, .rowBytes = 2 };
+float fval = 0;
+vImage_Buffer floatBuf = { .data = &fval, .width = 1, .height = 1, .rowBytes = 4 };
+vImageConvert_Planar16FtoPlanarF(&halfBuf, &floatBuf, kvImageNoFlags);
+
+// Prints "137.000000".
+printf("%f\n", fval);
 ```
 
 The following image shows two photographs, with the original image on the left, and the image after applying the Sobel filter on the right:

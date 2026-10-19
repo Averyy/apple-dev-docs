@@ -22,6 +22,12 @@ protocol NSTextInput
 
 > ❗ **Important**:  Methods specific to the `NSTextInput` protocol are intended for dealing with text input and generally are not suitable for other purposes.
 
+## Topics
+
+### Deprecated
+- [Deprecated symbols](nstextinput-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
+
 ## Relationships
 
 ### Conforming Types

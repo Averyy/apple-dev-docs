@@ -63,7 +63,7 @@ Except where noted, the color objects adapt automatically to Dark Mode changes w
   The nonadaptable system color for text on a light background.
 - [class var lightText: UIColor](uicolor/lighttext.md)
   The nonadaptable system color for text on a dark background.
-### Deprecated colors
+### Deprecated
 - [class var groupTableViewBackground: UIColor](uicolor/grouptableviewbackground.md)
   The system color to use for the background of a grouped table.
 

@@ -23,34 +23,9 @@ This protocol defines delegate methods for [`UISearchDisplayController`](uisearc
 
 ## Topics
 
-### Responding to search state change
-- [func searchDisplayControllerWillBeginSearch(UISearchDisplayController)](uisearchdisplaydelegate/searchdisplaycontrollerwillbeginsearch(_:).md)
-  Tells the delegate that the controller is about to begin searching.
-- [func searchDisplayControllerDidBeginSearch(UISearchDisplayController)](uisearchdisplaydelegate/searchdisplaycontrollerdidbeginsearch(_:).md)
-  Tells the delegate that the controller has started searching.
-- [func searchDisplayControllerWillEndSearch(UISearchDisplayController)](uisearchdisplaydelegate/searchdisplaycontrollerwillendsearch(_:).md)
-  Tells the delegate that the controller is about to end searching.
-- [func searchDisplayControllerDidEndSearch(UISearchDisplayController)](uisearchdisplaydelegate/searchdisplaycontrollerdidendsearch(_:).md)
-  Tells the delegate that the controller has finished searching.
-### Loading and unloading the table view
-- [func searchDisplayController(UISearchDisplayController, didLoadSearchResultsTableView: UITableView)](uisearchdisplaydelegate/searchdisplaycontroller(_:didloadsearchresultstableview:).md)
-  Tells the delegate that the controller has loaded its table view.
-- [func searchDisplayController(UISearchDisplayController, willUnloadSearchResultsTableView: UITableView)](uisearchdisplaydelegate/searchdisplaycontroller(_:willunloadsearchresultstableview:).md)
-  Tells the delegate that the controller is about to unload its table view.
-### Showing and hiding the table view
-- [func searchDisplayController(UISearchDisplayController, willShowSearchResultsTableView: UITableView)](uisearchdisplaydelegate/searchdisplaycontroller(_:willshowsearchresultstableview:).md)
-  Tells the delegate that the controller is about to display its table view.
-- [func searchDisplayController(UISearchDisplayController, didShowSearchResultsTableView: UITableView)](uisearchdisplaydelegate/searchdisplaycontroller(_:didshowsearchresultstableview:).md)
-  Tells the delegate that the controller just displayed its table view.
-- [func searchDisplayController(UISearchDisplayController, willHideSearchResultsTableView: UITableView)](uisearchdisplaydelegate/searchdisplaycontroller(_:willhidesearchresultstableview:).md)
-  Tells the delegate that the controller is about to hide its table view.
-- [func searchDisplayController(UISearchDisplayController, didHideSearchResultsTableView: UITableView)](uisearchdisplaydelegate/searchdisplaycontroller(_:didhidesearchresultstableview:).md)
-  Tells the delegate that the controller just hid its table view.
-### Responding to changes in search criteria
-- [func searchDisplayController(UISearchDisplayController, shouldReloadTableForSearch: String?) -> Bool](uisearchdisplaydelegate/searchdisplaycontroller(_:shouldreloadtableforsearch:).md)
-  Asks the delegate if the table view should be reloaded for a given search string.
-- [func searchDisplayController(UISearchDisplayController, shouldReloadTableForSearchScope: Int) -> Bool](uisearchdisplaydelegate/searchdisplaycontroller(_:shouldreloadtableforsearchscope:).md)
-  Asks the delegate if the table view should be reloaded for a given scope.
+### Deprecated
+- [Deprecated symbols](uisearchdisplaydelegate-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

@@ -110,20 +110,8 @@ When configuring the collection view object, assign your delegate object to its 
 - [func collectionView(UICollectionView, shouldSpringLoadItemAt: IndexPath, with: any UISpringLoadedInteractionContext) -> Bool](uicollectionviewdelegate/collectionview(_:shouldspringloaditemat:with:).md)
   Determines whether the spring-loading interaction effect is displayed for the specified item.
 ### Deprecated
-- [func collectionView(UICollectionView, targetIndexPathForMoveFromItemAt: IndexPath, toProposedIndexPath: IndexPath) -> IndexPath](uicollectionviewdelegate/collectionview(_:targetindexpathformovefromitemat:toproposedindexpath:).md)
-  Asks the delegate for the index path to use when moving an item.
-- [func collectionView(UICollectionView, contextMenuConfigurationForItemAt: IndexPath, point: CGPoint) -> UIContextMenuConfiguration?](uicollectionviewdelegate/collectionview(_:contextmenuconfigurationforitemat:point:).md)
-  Returns a context menu configuration for the item at a point.
-- [func collectionView(UICollectionView, previewForDismissingContextMenuWithConfiguration: UIContextMenuConfiguration) -> UITargetedPreview?](uicollectionviewdelegate/collectionview(_:previewfordismissingcontextmenuwithconfiguration:).md)
-  Returns the destination view when dismissing a context menu.
-- [func collectionView(UICollectionView, previewForHighlightingContextMenuWithConfiguration: UIContextMenuConfiguration) -> UITargetedPreview?](uicollectionviewdelegate/collectionview(_:previewforhighlightingcontextmenuwithconfiguration:).md)
-  Returns a view to override the default preview the collection view created.
-- [func collectionView(UICollectionView, shouldShowMenuForItemAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:shouldshowmenuforitemat:).md)
-  Asks the delegate if an action menu should be displayed for the specified item.
-- [func collectionView(UICollectionView, canPerformAction: Selector, forItemAt: IndexPath, withSender: Any?) -> Bool](uicollectionviewdelegate/collectionview(_:canperformaction:foritemat:withsender:).md)
-  Asks the delegate if it can perform the specified action on an item in the collection view.
-- [func collectionView(UICollectionView, performAction: Selector, forItemAt: IndexPath, withSender: Any?)](uicollectionviewdelegate/collectionview(_:performaction:foritemat:withsender:).md)
-  Tells the delegate to perform the specified action on an item in the collection view.
+- [Deprecated symbols](uicollectionviewdelegate-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

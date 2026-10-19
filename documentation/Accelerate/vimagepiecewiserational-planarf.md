@@ -34,6 +34,8 @@ The following code defines two sets of polynomial coefficients, `topCoefficients
 
 Note that this function allows the top and bottom polynomials to be of different orders. This example defines the boundaries array as `[-.infinity, .infinity]` so that a single rational expression covers pixels of any value.
 
+**Swift**:
+
 ```swift
 let source = vImage.PixelBuffer<vImage.PlanarF>(
     pixelValues: [0.2, 0.4, 0.6, 0.8, 1],
@@ -76,6 +78,60 @@ topCoefficients.withUnsafeBufferPointer { topCoefficientsPtr in
         }
     }
 }
+
+print(destination.array)
+// Prints "[2.4038, 1.1574, 0.74405, 0.53879, 0.41667]".
+```
+
+**Objective-C**:
+
+```objc
+float src[5] = {0.2f, 0.4f, 0.6f, 0.8f, 1.0f};
+float dst[5] = {0};
+
+vImage_Buffer srcBuf = {
+    .data     = src,
+    .width    = 5,
+    .height   = 1,
+    .rowBytes = 5 * 4
+};
+
+vImage_Buffer dstBuf = {
+    .data     = dst,
+    .width    = 5,
+    .height   = 1,
+    .rowBytes = 5 * 4
+};
+
+// 0.0 * x^0 + 0.5 * x^1 + 0.0 * x^2
+float topCoefficients[3] = {0.0f, 0.5f, 0.0f};
+uint32_t topOrder = 2;
+
+// 0.0 * x^0 + 0.0 * x^1 + 1.0 * x^2 + 0.2 * x^3
+float bottomCoefficients[4] = {0.0f, 0.0f, 1.0f, 0.2f};
+uint32_t bottomOrder = 3;
+
+const float *topCoeffs[1]    = { topCoefficients };
+const float *bottomCoeffs[1] = { bottomCoefficients };
+
+float boundaries[2] = {-INFINITY, INFINITY};
+
+uint32_t log2segments = 0;
+
+vImagePiecewiseRational_PlanarF(
+    &srcBuf,
+    &dstBuf,
+    topCoeffs,
+    bottomCoeffs,
+    boundaries,
+    topOrder,
+    bottomOrder,
+    log2segments,
+    kvImageNoFlags);
+
+// Prints "[2.4038, 1.1574, 0.74405, 0.53879, 0.41667]".
+printf("[%f, %f, %f, %f, %f]\n",
+       dst[0], dst[1], dst[2], dst[3], dst[4]);
 ```
 
 On return, the destination buffer contains the values `[2.4038463, 1.1574074, 0.7440475, 0.53879315, 0.41666666]`. This is equivalent to the following scalar code:

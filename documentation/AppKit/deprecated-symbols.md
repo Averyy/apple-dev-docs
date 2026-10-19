@@ -1,12 +1,16 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review symbols that are no longer supported, and find the replacements to use instead.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Classes
+### Deprecated classes
 - [class NSOpenGLView](nsopenglview.md)
   A view that displays OpenGL content in a view.
 - [class NSOpenGLContext](nsopenglcontext.md)
@@ -23,7 +27,7 @@ Review symbols that are no longer supported, and find the replacements to use in
   The `NSFormCell` class is used to implement text entry fields in a form. The left part of an `NSFormCell` object contains a title. The right part contains an editable text entry field.
 - [class NSMenuItemCell](nsmenuitemcell.md)
   An object that handles the measurement and display of a single menu item in its encompassing frame.
-### Protocols
+### Deprecated protocols
 - [NSAccessibility](nsaccessibility.md)
   A legacy, informal protocol that Apple doesn’t recommend for active use.
 - [protocol NSEditorRegistration](nseditorregistration.md)
@@ -32,7 +36,7 @@ Review symbols that are no longer supported, and find the replacements to use in
 - [protocol NSInputServerMouseTracker](nsinputservermousetracker.md)
 - [protocol NSDrawerDelegate](nsdrawerdelegate.md)
   A set of methods that drawer delegates implement to open, close, and resize the drawer.
-### Functions
+### Deprecated functions
 - [func NSConvertGlyphsToPackedGlyphs(UnsafeMutablePointer<NSGlyph>, Int, NSMultibyteGlyphPacking, UnsafeMutablePointer<CChar>) -> Int](nsconvertglyphstopackedglyphs(_:_:_:_:).md)
   Prepares a set of glyphs for processing by character-based routines.
 - [static func raiseBadArgumentException(Any!, NSAccessibility.Attribute!, Any!)](nsaccessibility-swift.struct/raisebadargumentexception(_:_:_:).md)
@@ -65,7 +69,7 @@ Review symbols that are no longer supported, and find the replacements to use in
   A file type based on the passed pasteboard type.
 - [static func representedPathExtensions(from: [NSPasteboard.PasteboardType]) -> [String]?](nspasteboard/pasteboardtype/representedpathextensions(from:).md)
   Returns an array of file types based on the passed pasteboard types.
-### Enumerations
+### Deprecated enumerations
 - [enum NSMultibyteGlyphPacking](nsmultibyteglyphpacking.md)
   A constant for glyph packing.
 - [Glyph Attributes](glyph-attributes.md)

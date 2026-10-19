@@ -6,7 +6,7 @@
 Sets the input channel layout with IOUserVideoChannelLabel values
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

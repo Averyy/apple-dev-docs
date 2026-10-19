@@ -24,8 +24,6 @@ An `NSWindow` object is automatically sent an `update` message on every pass thr
 
 - [func setWindowsNeedUpdate(Bool)](nsapplication/setwindowsneedupdate(_:).md)
   Sets whether the receiver’s windows need updating when the receiver has finished processing the current event.
-- [func disableScreenUpdatesUntilFlush()](nswindow/disablescreenupdatesuntilflush.md)
-  Disables the window’s screen updates until the window is flushed.
 
 
 ---

@@ -37,6 +37,8 @@ struct ModifierFlags
   Device-independent modifier flags are masked.
 ### Deprecated
 - [init(rawValue: UInt)](nsevent/modifierflags-swift.struct/init(rawvalue:).md)
+- [Deprecated symbols](modifierflags-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

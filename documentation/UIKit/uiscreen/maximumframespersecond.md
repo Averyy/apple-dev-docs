@@ -23,11 +23,6 @@ In iOS, the value of this property can be up to `120` for devices with ProMotion
 
 In tvOS, the value of this property depends on the hardware capabilities of the attached screen and the user’s selected resolution on Apple TV.
 
-## See Also
-
-- [func displayLink(withTarget: Any, selector: Selector) -> CADisplayLink?](uiscreen/displaylink(withtarget:selector:).md)
-  Returns a display link object for the current screen.
-
 
 ---
 

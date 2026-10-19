@@ -6,10 +6,10 @@
 A group of speakers playing together as a single unit.
 
 **Availability**:
-- iOS 27.2+ (Beta)
+- iOS 27.2+
 - iOS App Extension 27.2+
-- iPadOS 27.2+ (Beta)
-- Mac Catalyst 27.2+ (Beta)
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 

@@ -19,9 +19,9 @@ Specifies that the box is an OS X v10.2–style box.
 ## See Also
 
 - [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
-- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
 - [NSBox.BoxType.separator](nsbox/boxtype-swift.enum/separator.md)
 - [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
+- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
 
 
 ---

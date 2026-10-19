@@ -27,8 +27,6 @@ The system assigns this role automatically to scenes created from a camera captu
 - [static let windowApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowapplication.md)
   A scene that displays interactive windows on the device’s built-in display or an externally connected display.
 - [static let windowAssistiveAccessApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowassistiveaccessapplication.md)
-- [static let windowExternalDisplay: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplay.md)
-  A scene that displays noninteractive windows on an externally connected display.
 - [static let windowExternalDisplayNonInteractive: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md)
   A scene that displays noninteractive windows on an externally connected display.
 - [static let carTemplateApplication: UISceneSession.Role](uiscenesession/role-swift.struct/cartemplateapplication.md)
@@ -37,6 +35,8 @@ The system assigns this role automatically to scenes created from a camera captu
   A scene that displays navigation content on the CarPlay Dashboard.
 - [static let CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication: UISceneSession.Role](uiscenesession/role-swift.struct/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
   A scene that displays navigation content on the CarPlay Instruments Cluster.
+- [static let windowExternalDisplay: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplay.md)
+  A scene that displays noninteractive windows on an externally connected display.
 
 
 ---

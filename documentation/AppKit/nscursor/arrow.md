@@ -27,8 +27,6 @@ The default cursor, a slanted arrow with its hot spot at the tip. The arrow curs
   The position of the click location within the cursor.
 - [class var current: NSCursor](nscursor/current.md)
   Returns the application’s current cursor.
-- [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
-  Returns the current system cursor.
 - [class var contextualMenu: NSCursor](nscursor/contextualmenu.md)
   Returns the contextual menu system cursor.
 - [class var closedHand: NSCursor](nscursor/closedhand.md)
@@ -55,6 +53,8 @@ The default cursor, a slanted arrow with its hot spot at the tip. The arrow curs
   Returns the zoom-in cursor.
 - [class var zoomOut: NSCursor](nscursor/zoomout.md)
   Returns the zoom-out cursor.
+- [class var columnResize: NSCursor](nscursor/columnresize.md)
+  Returns the cursor for resizing a column (vertical divider) in either direction.
 
 
 ---

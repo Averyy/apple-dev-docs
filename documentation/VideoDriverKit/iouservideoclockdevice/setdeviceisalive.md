@@ -6,7 +6,7 @@
 Sets a Boolean value to indicate the device is alive.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

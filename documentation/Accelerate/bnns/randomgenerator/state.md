@@ -24,7 +24,7 @@ var state: BNNS.RandomGeneratorState { get set }
 
 Use the random number generator’s [`state`](bnns/randomgenerator/state.md) property to save and restore the generator.
 
-The following code creates a random number generator and captures its initial state. The code calls [`allocate(randomUniformUsing:range:shape:batchSize:)`](bnnsndarraydescriptor/allocate(randomuniformusing:range:shape:batchsize:)-761hg.md) twice to populate the arrays `a` and `b` with different random values. Before allocating the array `c` with random values, the code resets the generator’s state to create identical random values in arrays `a` and `c`.
+The following code creates a random number generator and captures its initial state. The code calls [`allocate(randomUniformUsing:range:shape:batchSize:)`](bnnsndarraydescriptor/allocate(randomuniformusing:range:shape:batchsize:)-761hg.md) twice to populate the arrays `a` and `b` with different random values. Before allocating the array `c` with random values, the code resets the generator’s state to create identical random values in arrays `a` and `c`:
 
 ```swift
 guard

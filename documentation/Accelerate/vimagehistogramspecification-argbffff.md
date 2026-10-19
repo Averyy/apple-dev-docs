@@ -28,31 +28,75 @@ func vImageHistogramSpecification_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, 
 
 Use this function to apply a histogram — that you’ve generated using [`vImageHistogramSpecification_ARGBFFFF(_:_:_:_:_:_:_:_:)`](vimagehistogramspecification_argbffff(_:_:_:_:_:_:_:_:).md) — to each channel of another image.
 
-The following code applies a histogram to a 4-channel interleaved vImage buffer:
+The following code applies a histogram to a four-channel interleaved vImage buffer:
+
+**Swift**:
 
 ```swift
-// `histogramAlpha`, `histogramRed`, `histogramGreen`, and `histogramBlue` are `entryCount` element arrays.
-histogramAlpha.withUnsafeBufferPointer { zeroPtr in
-    histogramRed.withUnsafeBufferPointer { onePtr in
-        histogramGreen.withUnsafeBufferPointer { twoPtr in
-            histogramBlue.withUnsafeBufferPointer { threePtr in
-                
-                var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,
-                                     twoPtr.baseAddress, threePtr.baseAddress]
-                
-                histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in
-                    // `buffer` is a `vImage_Buffer` structure.
-                    _ = vImageHistogramSpecification_ARGBFFFF(&buffer, &buffer,
-                                                              nil,
-                                                              histogramBinsPtr.baseAddress!,
-                                                              UInt32(entryCount),
-                                                              0, 1,
-                                                              vImage_Flags(kvImageNoFlags))
+let source = vImage.PixelBuffer<vImage.InterleavedFx4>(
+    pixelValues: [0.1, 0.2, 0.3, 0.4,
+                  0.5, 0.6, 0.7, 0.8],
+    size: .init(width: 1, height: 2))
+
+let entryCount = 64
+var histogramAlpha = [vImagePixelCount](repeating: 0, count: entryCount)
+var histogramRed   = [vImagePixelCount](repeating: 0, count: entryCount)
+var histogramGreen = [vImagePixelCount](repeating: 0, count: entryCount)
+var histogramBlue  = [vImagePixelCount](repeating: 0, count: entryCount)
+
+histogramAlpha[0] = 1; histogramAlpha[63] = 1
+histogramRed[0]   = 1; histogramRed[63]   = 1
+histogramGreen[0] = 1; histogramGreen[63] = 1
+histogramBlue[0]  = 1; histogramBlue[63]  = 1
+
+let destination = vImage.PixelBuffer<vImage.InterleavedFx4>(
+    size: .init(width: 1, height: 2))
+
+source.withUnsafePointerToVImageBuffer { src in
+    destination.withUnsafePointerToVImageBuffer { dest in
+        histogramAlpha.withUnsafeBufferPointer { zeroPtr in
+            histogramRed.withUnsafeBufferPointer { onePtr in
+                histogramGreen.withUnsafeBufferPointer { twoPtr in
+                    histogramBlue.withUnsafeBufferPointer { threePtr in
+                        
+                        var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,
+                                             twoPtr.baseAddress, threePtr.baseAddress]
+                        
+                        histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in
+                            _ = vImageHistogramSpecification_ARGBFFFF(src,
+                                                                      dest,
+                                                                      nil,
+                                                                      histogramBinsPtr.baseAddress!,
+                                                                      UInt32(entryCount),
+                                                                      0, 1,
+                                                                      vImage_Flags(kvImageNoFlags))
+                        }
+                    }
                 }
             }
         }
     }
 }
+
+// Prints "[0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0]".
+print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+// All `histogramAlpha`, `histogramRed`, `histogramGreen`, and `histogramBlue` are `entryCount`-element arrays.
+const vImagePixelCount *histogramBins[4] = {
+    histogramAlpha, histogramRed, histogramGreen, histogramBlue
+};
+
+// The `buffer` is a `vImage_Buffer` structure.
+vImageHistogramSpecification_ARGBFFFF(&buffer, &buffer,
+                                      nil,
+                                      histogramBins,
+                                      entryCount,
+                                      0, 1,
+                                      kvImageNoFlags);
 ```
 
 ##### Optimize Performance with Temporary Buffers

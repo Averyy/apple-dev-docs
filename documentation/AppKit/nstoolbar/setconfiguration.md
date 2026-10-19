@@ -22,13 +22,6 @@ If you implement your own autosave mechanism, call this method to restore the co
 
 - `configDict`: A dictionary with the toolbar configuration details. The toolbar ignores any keys it doesn’t recognize. Typically, you save the original configuration dictionary from the [`configuration`](nstoolbar/configuration.md) property to disk and recreate it before passing it in this parameter.
 
-## See Also
-
-- [var autosavesConfiguration: Bool](nstoolbar/autosavesconfiguration.md)
-  A Boolean value that indicates whether the toolbar autosaves its configuration.
-- [var configuration: [String : Any]](nstoolbar/configuration.md)
-  A dictionary containing the current configuration details for the toolbar.
-
 
 ---
 

@@ -23,6 +23,8 @@ object Artist.Name
 
 - [object Artist.NamePronunciation](artist/namepronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific pronunciation-name translation type.
+- [object Artist.RelevanceScore](artist/relevancescore-data.dictionary.md)
+  A score representing artist relevance, used to rank artists when surfacing content.
 
 
 ---

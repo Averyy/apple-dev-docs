@@ -26,6 +26,36 @@ func vvlog(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Double] = [1, 2.718281828459045, 10]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the natural logarithm of each element in `x`.
+vvlog(&y, &x, &n)
+
+// Prints "[0.0, 1.0, 2.3025850929940455]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+double x[3] = {1, 2.718281828459045, 10};
+double y[3];
+int n = 3;
+
+// Calculate the natural logarithm of each element in `x`.
+vvlog(y, x, &n);
+
+// Prints "[0, 1, 2.30259]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)

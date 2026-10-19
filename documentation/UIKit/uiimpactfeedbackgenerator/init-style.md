@@ -28,6 +28,13 @@ For more information on using feedback generators, see `Using feedback generator
 
 - `style`: A value representing the mass of the colliding objects. For a list of valid feedback styles, see the [`UIImpactFeedbackGenerator.FeedbackStyle`](uiimpactfeedbackgenerator/feedbackstyle.md) enumeration.
 
+## See Also
+
+- [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](uiimpactfeedbackgenerator/init(style:view:).md)
+  Creates an impact feedback generator with the specified style and view.
+- [UIImpactFeedbackGenerator.FeedbackStyle](uiimpactfeedbackgenerator/feedbackstyle.md)
+  The mass of the objects in the collision simulated by an impact feedback generator object.
+
 
 ---
 

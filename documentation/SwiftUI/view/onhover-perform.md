@@ -33,8 +33,6 @@ Calling this method defines a region for detecting pointer movement with the siz
 
 ## See Also
 
-- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
-  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 - [func hoverEffect(_:isEnabled:)](view/hovereffect(_:isenabled:).md)
   Applies a hover effect to this view.
 - [func hoverEffectDisabled(Bool) -> some View](view/hovereffectdisabled(_:).md)
@@ -51,6 +49,8 @@ Calling this method defines a region for detecting pointer movement with the siz
   Presents an ornament on hover using a custom effect.
 - [struct OrnamentHoverEffect](ornamenthovereffect.md)
   Presents an ornament on hover.
+- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
+  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
 
 ---

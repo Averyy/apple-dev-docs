@@ -30,10 +30,6 @@ Pressing and then dragging into the contents activates the selected action on re
 
 - [static var automatic: DefaultMenuStyle](menustyle/automatic.md)
   The default menu style, based on the menu’s context.
-- [static var borderedButton: BorderedButtonMenuStyle](menustyle/borderedbutton.md)
-  A menu style that displays a bordered button that toggles the display of the menu’s contents when pressed.
-- [static var borderlessButton: BorderlessButtonMenuStyle](menustyle/borderlessbutton.md)
-  A menu style that displays a borderless button that toggles the display of the menu’s contents when pressed.
 
 
 ---

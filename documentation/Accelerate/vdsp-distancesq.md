@@ -43,7 +43,37 @@ For example, the following code calculates the distance squared between the two 
                     &distanceSquared,
                     vDSP_Length(pointA.count))
     
-    print("distance²", distanceSquared) // Prints "distance² 50.0"
+    print("distance²", distanceSquared) // Prints "distance² 50.0".
+```
+
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var a: [Float] = [1, 2, 3]
+var b: [Float] = [4, 6, 8]
+var c: Float = 0
+
+// Calculate the squared distance between the points `a` and `b`.
+vDSP_distancesq(a, 1, b, 1, &c, vDSP_Length(a.count))
+
+// Prints "50.0".
+print(c)
+```
+
+**Objective-C**:
+
+```objc
+float a[3] = {1, 2, 3};
+float b[3] = {4, 6, 8};
+float c;
+
+// Calculate the squared distance between the points `a` and `b`.
+vDSP_distancesq(a, 1, b, 1, &c, 3);
+
+// Prints "50".
+printf("%g\n", c);
 ```
 
 ## Parameters

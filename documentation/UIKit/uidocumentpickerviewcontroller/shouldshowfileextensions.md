@@ -23,13 +23,6 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
 
 > **Note**:  This property has no effect in Mac apps built with Mac Catalyst.
 
-## See Also
-
-- [var documentPickerMode: UIDocumentPickerMode](uidocumentpickerviewcontroller/documentpickermode.md)
-  The type of file transfer operation that the document picker uses.
-- [enum UIDocumentPickerMode](uidocumentpickermode.md)
-  Modes that define the type of file transfer operation that the document picker uses.
-
 
 ---
 

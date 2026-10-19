@@ -59,9 +59,11 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
 - [struct WidgetLocation](widgetlocation.md)
   Values that indicate different widget locations.
-- [func widgetAccentable(Bool) -> some View\n](../swiftui/view/widgetaccentable(_:).md)
+- [func widgetAccentable(Bool) -> some View
+](../swiftui/view/widgetaccentable(_:).md)
   Adds the view and all of its subviews to the accented group.
-- [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View\n](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+- [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
+](../swiftui/image/widgetaccentedrenderingmode(_:).md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
 - [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
@@ -112,11 +114,13 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
 ### visionOS widgets
 - [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
   Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
-- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration\n](../swiftui/widgetconfiguration/widgettexture(_:).md)
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
+](../swiftui/widgetconfiguration/widgettexture(_:).md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](widgettexture.md)
   Values that define the texture of the widget’s coating layer.
-- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration\n](../swiftui/widgetconfiguration/supportedmountingstyles(_:).md)
+- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
+](../swiftui/widgetconfiguration/supportedmountingstyles(_:).md)
   Specifies the mounting style for this widget.
 - [struct WidgetMountingStyle](widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.
@@ -131,15 +135,18 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
   The style for an accessory widget group view.
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
-- [func widgetCurvesContent(Bool) -> some View\n](../swiftui/view/widgetcurvescontent(_:).md)
+- [func widgetCurvesContent(Bool) -> some View
+](../swiftui/view/widgetcurvescontent(_:).md)
   Displays the widget’s content along a curve if the context allows it.
 - [func widgetLabel(_:)](../swiftui/view/widgetlabel(_:).md)
   Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
-- [func widgetLabel<Label>(label: () -> Label) -> some View\n](../swiftui/view/widgetlabel(label:).md)
+- [func widgetLabel<Label>(label: () -> Label) -> some View
+](../swiftui/view/widgetlabel(label:).md)
   Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
 - [var showsWidgetLabel: Bool](../swiftui/environmentvalues/showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
-- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View\n](../swiftui/view/accessorywidgetgroupstyle(_:).md)
+- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View
+](../swiftui/view/accessorywidgetgroupstyle(_:).md)
   The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 ### Smart Stacks
 - [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)

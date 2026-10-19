@@ -63,8 +63,6 @@ When subclassing `NSCell` you must implement all of the designated initializers.
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
 - [var isOpaque: Bool](nscell/isopaque.md)
   A Boolean value indicating whether the cell is completely opaque.
-- [var controlTint: NSControlTint](nscell/controltint.md)
-  The cell’s control tint.
 - [var backgroundStyle: NSView.BackgroundStyle](nscell/backgroundstyle.md)
   The cell’s background style.
 - [var interiorBackgroundStyle: NSView.BackgroundStyle](nscell/interiorbackgroundstyle.md)
@@ -260,8 +258,6 @@ When subclassing `NSCell` you must implement all of the designated initializers.
   A constant for specifying the position of a button’s image relative to its title.
 - [enum NSImageScaling](nsimagescaling.md)
   Constants that specify a cell’s image scaling behavior.
-- [typealias StateValue](nscell/statevalue.md)
-  Constants for specifying a cell’s state and are used mostly for buttons.
 - [NSCell.StyleMask](nscell/stylemask.md)
   Constants for specifying what happens when a button is pressed or is displaying its alternate state.
 - [enum NSControlTint](nscontroltint.md)
@@ -276,12 +272,12 @@ When subclassing `NSCell` you must implement all of the designated initializers.
   These are deprecated scaling constants.
 - [Data Entry Types](data-entry-types.md)
   These constants specify how a cell formats numeric data.
-### Notifications
-- [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
-  Sent after the user changes control tint preference.
 ### Initializers
 - [init()](nscell/init.md)
 - [init(coder: NSCoder)](nscell/init(coder:).md)
+### Deprecated
+- [Deprecated symbols](nscell-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

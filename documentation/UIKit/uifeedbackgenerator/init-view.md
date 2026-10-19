@@ -16,6 +16,11 @@ Creates a feedback generator and attaches it to the specified view.
 convenience init(view: UIView)
 ```
 
+## See Also
+
+- [init()](uifeedbackgenerator/init.md)
+  Creates a feedback generator.
+
 
 ---
 

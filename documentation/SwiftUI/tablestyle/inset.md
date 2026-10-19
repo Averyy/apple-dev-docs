@@ -29,6 +29,10 @@ To customize whether the rows of the table should alternate their backgrounds, u
   The default table style in the current context.
 - [static var bordered: BorderedTableStyle](tablestyle/bordered.md)
   The table style that describes the behavior and appearance of a table with standard border.
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](tablestyle/inset(alternatesrowbackgrounds:).md)
+  The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](tablestyle/bordered(alternatesrowbackgrounds:).md)
+  The table style that describes the behavior and appearance of a table with standard border.
 
 
 ---

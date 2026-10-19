@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-16T07:31:32.300930",
+    "last_updated": "2026-10-19T20:44:38.445902",
     "total_pages": 148,
-    "session_id": "2026-10-16T07:31:25.069089"
+    "session_id": "2026-10-19T20:44:25.334946"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SCSIPeripheralsDriverKit.json": {
       "hash": "e4c0cf47d7b9dd3211d8545e1fad18798b5a5e4019558ccbc0e4b125423f856c",
-      "last_checked": "2026-10-16T07:31:25.456747",
+      "last_checked": "2026-10-19T20:44:25.468870",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3f46-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/SCSIPeripheralsDriverKit.md"
     },
     "https://developer.apple.com/documentation/SCSIPeripheralsDriverKit": {
       "hash": "e4c0cf47d7b9dd3211d8545e1fad18798b5a5e4019558ccbc0e4b125423f856c",
-      "last_checked": "2026-10-16T07:31:25.364201",
+      "last_checked": "2026-10-19T20:44:25.466572",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3f46-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/SCSIPeripheralsDriverKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00.json": {
       "hash": "4effd0cc0af4ac86ef9429ae346130b7eb0cf04a5c1a03245658427cb139d424",
-      "last_checked": "2026-10-16T07:31:25.932474",
+      "last_checked": "2026-10-19T20:44:25.767008",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3926-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype00.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05.json": {
       "hash": "32cb3ec883ffb27480ae6ebbfd0147c7d132df6ba3a4d86e45ef5801c43aacfc",
-      "last_checked": "2026-10-16T07:31:25.969868",
+      "last_checked": "2026-10-19T20:44:25.943099",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"38f1-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype05.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsi-commands.json": {
       "hash": "251d685e5b07532753460ce95ff5129edcaefe3c68545115824e9b9bd2ce3122",
-      "last_checked": "2026-10-16T07:31:26.157889",
+      "last_checked": "2026-10-19T20:44:26.242966",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3864-6590275ce221b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsi-commands.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07.json": {
       "hash": "c5287060cacc83aba0814e9edfd97df5ccaab4efa60a84b85532e6fe17ebce17",
-      "last_checked": "2026-10-16T07:31:26.074084",
+      "last_checked": "2026-10-19T20:44:26.090396",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"394a-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype07.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userdeterminedevicecharacteristics.json": {
       "hash": "b7a7de2401c763c8c7de31f5d1a754c256b69035ba8b0af05e2b4844cd5cd8df",
-      "last_checked": "2026-10-16T07:31:26.252476",
+      "last_checked": "2026-10-19T20:44:26.379029",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"18fb-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype00/userdeterminedevicecharacteristics.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userresetdevice.json": {
       "hash": "85810321a53c1143f8b6f86d9577087d0d6388572fa2bfda7a4b4b43e24bb1ef",
-      "last_checked": "2026-10-16T07:31:26.394974",
+      "last_checked": "2026-10-19T20:44:26.525104",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2096-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype00/userresetdevice.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/usersendcdb.json": {
       "hash": "f88fd2fe45155367d4b61b28b72a81a7f958551c1741330e195f2ff888ad64b2",
-      "last_checked": "2026-10-16T07:31:26.435564",
+      "last_checked": "2026-10-19T20:44:26.614786",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"38f9-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype00/usersendcdb.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00outparameters.json": {
       "hash": "ddfd91ccbcb576e39aad1ca5b7cf29818b69b5854586b1f6c5e9b0b3db4ec47b",
-      "last_checked": "2026-10-16T07:31:26.541687",
+      "last_checked": "2026-10-19T20:44:26.779085",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1eb0-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype00outparameters.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00outversion.json": {
       "hash": "fd9ac1c303524c178b0290586165d060631b54fb39bf86e4b21f885534f704a9",
-      "last_checked": "2026-10-16T07:31:26.624928",
+      "last_checked": "2026-10-19T20:44:26.908278",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1ae0-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype00outversion.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00inparameters.json": {
       "hash": "12bd273d84ba77a2b8d102bbbaa9b72fa7038070f020ab5ad353f85a345f5926",
-      "last_checked": "2026-10-16T07:31:26.680309",
+      "last_checked": "2026-10-19T20:44:27.044883",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1ea1-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype00inparameters.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00inversion.json": {
       "hash": "0600bff77052b39aa7b013dbcc861dbf1e4d965b6e0d454869d4105d222a2981",
-      "last_checked": "2026-10-16T07:31:26.747251",
+      "last_checked": "2026-10-19T20:44:27.137521",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1acd-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype00inversion.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/usersuspendservices.json": {
       "hash": "ddcc3b376bbdecc04b3e3446bdf9873bd67cd218bfe05a8d68158ec2a5bb8a8c",
-      "last_checked": "2026-10-16T07:31:26.806678",
+      "last_checked": "2026-10-19T20:44:27.261921",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2434-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype00/usersuspendservices.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userresumeservices.json": {
       "hash": "1055b488526b944fd73647f55d0f1439e512c014c4e66a9c67e62fec4f8799cd",
-      "last_checked": "2026-10-16T07:31:27.063456",
+      "last_checked": "2026-10-19T20:44:27.444134",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1c48-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype00/userresumeservices.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userreportmediumblocksize.json": {
       "hash": "4ffb522bad42af5a9d0e5297a1db5b196f536b399e0ba2c60af49f646daf63a2",
-      "last_checked": "2026-10-16T07:31:27.115537",
+      "last_checked": "2026-10-19T20:44:27.577902",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1b71-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype00/userreportmediumblocksize.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userinitializedevicesupport.json": {
       "hash": "a01dbbfe36f653dcf0d76ffc7caeb95d644a23e34998abd56fd4ff023dde0faf",
-      "last_checked": "2026-10-16T07:31:27.198809",
+      "last_checked": "2026-10-19T20:44:27.728189",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"176b-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype05/userinitializedevicesupport.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userresetdevice.json": {
       "hash": "ccaf37a02aa87d16b77d0406c7d1593a0c9fc1d9c311c7c68aab7fae9fd42f78",
-      "last_checked": "2026-10-16T07:31:27.287446",
+      "last_checked": "2026-10-19T20:44:27.892504",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2071-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype05/userresetdevice.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/usersendcdb.json": {
       "hash": "d3b503957821ac7d64214781946ac5a215ad5f38b2ffb0dfac21248a13b838b9",
-      "last_checked": "2026-10-16T07:31:27.372029",
+      "last_checked": "2026-10-19T20:44:27.990098",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"27fc-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype05/usersendcdb.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05outparameters.json": {
       "hash": "164f96637e272adfd109eeda74de9954ac5be0d58c3d72aefd8f9d7ad47f78ed",
-      "last_checked": "2026-10-16T07:31:27.465105",
+      "last_checked": "2026-10-19T20:44:28.123290",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1eb5-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype05outparameters.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05outversion.json": {
       "hash": "35c7800f03aeff3affde299d15f2c52d77a4ae9cce51486429cf36d0ee443645",
-      "last_checked": "2026-10-16T07:31:27.549723",
+      "last_checked": "2026-10-19T20:44:28.258333",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1ae0-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype05outversion.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05inparameters.json": {
       "hash": "eabbef3990528955d239b642dbf0c0b91e68b9e093acaa2806de9ca225c1c764",
-      "last_checked": "2026-10-16T07:31:27.639531",
+      "last_checked": "2026-10-19T20:44:28.385419",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1ea6-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype05inparameters.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05inversion.json": {
       "hash": "d693b05ffd1ec5f403b73a6c298518d1a1405174659c95e630ade366141a3c9e",
-      "last_checked": "2026-10-16T07:31:27.688945",
+      "last_checked": "2026-10-19T20:44:28.525458",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1acd-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype05inversion.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/usersuspendservices.json": {
       "hash": "ee12a25bce746afa4e492b56ae8e88701a078c56333aa725dd14efc50fbd1e6f",
-      "last_checked": "2026-10-16T07:31:27.779356",
+      "last_checked": "2026-10-19T20:44:28.841435",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2013-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype05/usersuspendservices.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userresumeservices.json": {
       "hash": "934de7869cc7bcd0bda5b61b261439809cda6e41c4600c50481a958689179e86",
-      "last_checked": "2026-10-16T07:31:27.820708",
+      "last_checked": "2026-10-19T20:44:28.924919",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1c4d-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype05/userresumeservices.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userreportmediumblocksize.json": {
       "hash": "0f7a3520c3ec6205d6db9a9b229ddf45724bfb033a7afb8a4ce51c32a8e854e0",
-      "last_checked": "2026-10-16T07:31:27.871502",
+      "last_checked": "2026-10-19T20:44:29.052868",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1b76-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype05/userreportmediumblocksize.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/test_unit_ready.json": {
       "hash": "790a6d20e55e3a72001377b19a066f939ca4ce497b3e145d86959f9d5cd236e3",
-      "last_checked": "2026-10-16T07:31:29.307834",
+      "last_checked": "2026-10-19T20:44:31.468482",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"26b7-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/test-unit-ready.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/inquiry.json": {
       "hash": "d1fae5bd974a4132d0cbeb849a0a9b2333ecf72727f477d6285769dc6768fecc",
-      "last_checked": "2026-10-16T07:31:29.371428",
+      "last_checked": "2026-10-19T20:44:31.725044",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"27fc-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/inquiry.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/request_sense.json": {
       "hash": "a6fe74c806839a720fbc350d8690723e25f5e30a78fadf5c4293c43c374179ce",
-      "last_checked": "2026-10-16T07:31:29.474387",
+      "last_checked": "2026-10-19T20:44:31.858859",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"29b4-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/request-sense.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/read_10.json": {
       "hash": "8d82a6bc25dccbdd9da6da0ee87cde9821c945a76f5639ec23bd174185f843c8",
-      "last_checked": "2026-10-16T07:31:29.509607",
+      "last_checked": "2026-10-19T20:44:32.002879",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2fa0-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/read-10.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/write_10.json": {
       "hash": "3b2f25ed9607c7c81db9b56b29886bd3a40e575b1da81dbd1e981f1bd445ec95",
-      "last_checked": "2026-10-16T07:31:29.645731",
+      "last_checked": "2026-10-19T20:44:32.152175",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2fad-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/write-10.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/read_capacity.json": {
       "hash": "8b9dbc675bba656cd062a7e44aafe8dfcf24d4b3d1daf50d0ba1e0239913a5a8",
-      "last_checked": "2026-10-16T07:31:29.694202",
+      "last_checked": "2026-10-19T20:44:32.438056",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"282c-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/read-capacity.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_enable_disable_operations.json": {
       "hash": "c1c6bc44205965e2fe8211f07fa2cc65fad6bb3aa46201a43e18bac65cd348ca",
-      "last_checked": "2026-10-16T07:31:29.747431",
+      "last_checked": "2026-10-19T20:44:32.711714",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"341e-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-enable-disable-operations.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_enable_disable_autosave.json": {
       "hash": "3d0bc074a63cc47cc40cdd14dd1a6e1af9b61b552f0b4001f3a710f5736e1565",
-      "last_checked": "2026-10-16T07:31:29.816395",
+      "last_checked": "2026-10-19T20:44:32.988495",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3430-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-enable-disable-autosave.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_return_status.json": {
       "hash": "ebe8af1dbd0c35f3bb7d1425bf560b3585596a77d7168d98bb2b4b665b2b4983",
-      "last_checked": "2026-10-16T07:31:29.890245",
+      "last_checked": "2026-10-19T20:44:33.262672",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3217-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-return-status.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_execute_offline_immediate.json": {
       "hash": "731fc572593439c585a195bb7c5c66875561541d5b81c17a29fee769643ba9af",
-      "last_checked": "2026-10-16T07:31:29.990285",
+      "last_checked": "2026-10-19T20:44:33.549228",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"343d-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-execute-offline-immediate.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_data.json": {
       "hash": "d71aa4f3bd5d3bc698b3a6e8a3f20ad605d89fa0d2de23ed7dcb7d72e46b0b72",
-      "last_checked": "2026-10-16T07:31:30.095050",
+      "last_checked": "2026-10-19T20:44:33.830649",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"34fe-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-data.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_data_thresholds.json": {
       "hash": "54ddc338f8c900977fa8164e81ab0978686306c6000640f781bead0af9c29865",
-      "last_checked": "2026-10-16T07:31:30.155836",
+      "last_checked": "2026-10-19T20:44:33.963733",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3556-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-data-thresholds.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_log_at_address.json": {
       "hash": "8e0cc2c9e2a73d2a5a09d04b51df19573486a7b1d20fde6ffc47975f7ea4e007",
-      "last_checked": "2026-10-16T07:31:30.218409",
+      "last_checked": "2026-10-19T20:44:34.097666",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3845-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-log-at-address.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_write_log_at_address.json": {
       "hash": "c3fe9788a3d75ec232774df320bc81d37fe11f1301738acd0cb031e4541cf1f8",
-      "last_checked": "2026-10-16T07:31:30.285974",
+      "last_checked": "2026-10-19T20:44:34.258472",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"3853-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-write-log-at-address.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_get_identify_data.json": {
       "hash": "5f5b10166c9f6e38f7cb192004c38da99d9bf342df16a4031399db0a684498e2",
-      "last_checked": "2026-10-16T07:31:30.334084",
+      "last_checked": "2026-10-19T20:44:34.400163",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"33b4-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/smart-get-identify-data.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/setcommandcdb.json": {
       "hash": "6529fd2ba7633ce2e3089fd8a144bfa5d2bee4059a0f3f1a2a539fbe9e2418d1",
-      "last_checked": "2026-10-16T07:31:30.408974",
+      "last_checked": "2026-10-19T20:44:34.535497",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2745-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/setcommandcdb.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters.json": {
       "hash": "8c900203689ae82faf8576189b98788412a9624a143ed82429a5ae5b9eb08558",
-      "last_checked": "2026-10-16T07:31:30.465334",
+      "last_checked": "2026-10-19T20:44:34.668631",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"352e-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters.json": {
       "hash": "6ad59fa5da7a56ff1c36ce30b71232d708199c3f58c61fccac51686a53766d2f",
-      "last_checked": "2026-10-16T07:31:30.520403",
+      "last_checked": "2026-10-19T20:44:34.944153",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2692-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceinparameters.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userdeterminedevicecharacteristics.json": {
       "hash": "47d22a0a7eaefa2f7d7592b7086456ee63f01f8f8bc596502d082561c906b8f9",
-      "last_checked": "2026-10-16T07:31:28.114597",
+      "last_checked": "2026-10-19T20:44:29.237465",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1926-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype07/userdeterminedevicecharacteristics.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userreportmediumblocksize.json": {
       "hash": "b129855d413f4b831e2aaf59e154e26e37ec6a91926bc7e103754422305d1439",
-      "last_checked": "2026-10-16T07:31:29.065165",
+      "last_checked": "2026-10-19T20:44:30.778791",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1b95-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype07/userreportmediumblocksize.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userresetdevice.json": {
       "hash": "d0a84524e5afd0bb6537f8bfb143c14616d6b1f887e120d16070e8d5cbd95e28",
-      "last_checked": "2026-10-16T07:31:28.342476",
+      "last_checked": "2026-10-19T20:44:29.391842",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"20ba-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype07/userresetdevice.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userresumeservices.json": {
       "hash": "cf62227f14b9aacbd6778e2ee1879b2f90c0acc8da5c4cb4305b196b1f4ba130",
-      "last_checked": "2026-10-16T07:31:29.268258",
+      "last_checked": "2026-10-19T20:44:31.340732",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1c6c-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype07/userresumeservices.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/usersendcdb.json": {
       "hash": "bc66f545bbe681c44067bf9ba681bd3244c63b229bb91cea1a638e35241c1979",
-      "last_checked": "2026-10-16T07:31:28.380248",
+      "last_checked": "2026-10-19T20:44:29.681622",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"281b-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype07/usersendcdb.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/usersuspendservices.json": {
       "hash": "2b20f211e301803f45370ed806ec8e99f0add1d084292815849abcd1ba29d41c",
-      "last_checked": "2026-10-16T07:31:29.156652",
+      "last_checked": "2026-10-19T20:44:31.058739",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2032-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/iouserscsiperipheraldevicetype07/usersuspendservices.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07inversion.json": {
       "hash": "20f4f5f1ad07acd6f30b7d913159151e20057a8583fd9f21d815aa3e61249727",
-      "last_checked": "2026-10-16T07:31:28.983604",
+      "last_checked": "2026-10-19T20:44:30.514214",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1acd-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype07inversion.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07outversion.json": {
       "hash": "957ca07ad0186ec4bcd5acffef51c99bccf04b4a68810feea4c2431bcf41dd63",
-      "last_checked": "2026-10-16T07:31:28.693466",
+      "last_checked": "2026-10-19T20:44:30.093335",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1ae0-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype07outversion.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07inparameters.json": {
       "hash": "11e2fcf979f254782ae1bc54fe7d1bca55bd6edaa9e667ce839576bd2c00a55c",
-      "last_checked": "2026-10-16T07:31:28.732090",
+      "last_checked": "2026-10-19T20:44:30.244724",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1ec5-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype07inparameters.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07outparameters.json": {
       "hash": "78cf6e94ea637afee552ef37d614161c8d42f0c03e974c140f06604513c9a52a",
-      "last_checked": "2026-10-16T07:31:28.439974",
+      "last_checked": "2026-10-19T20:44:29.956764",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1ed4-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype07outparameters.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00outversion/kscsitype00outcurrentversion1.json": {
       "hash": "10e9cbee6f370eb1777dc25f55a1867a7ce01de1f84078089f31df0651137a6e",
-      "last_checked": "2026-10-16T07:31:30.588956",
+      "last_checked": "2026-10-19T20:44:35.093967",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"e6e-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype00outversion/kscsitype00outcurrentversion1.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00inversion/kscsitype00incurrentversion1.json": {
       "hash": "488c9146ed2e8c6bb62ca5414e401fcd5557faa7af5b02f77e449977b42de3bf",
-      "last_checked": "2026-10-16T07:31:30.649588",
+      "last_checked": "2026-10-19T20:44:35.244883",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"e53-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype00inversion/kscsitype00incurrentversion1.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05outversion/kscsitype05outcurrentversion1.json": {
       "hash": "2f3e2e019f7f42f6c64bcbd9cdf17100b12e0d47ade6b01e6fb2680ef4cb389d",
-      "last_checked": "2026-10-16T07:31:30.790086",
+      "last_checked": "2026-10-19T20:44:35.387882",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"e6e-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype05outversion/kscsitype05outcurrentversion1.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05inversion/kscsitype05incurrentversion1.json": {
       "hash": "e3e366857f7731aa60764887548dd1e83c79f851ed0fff990e437adb08f94dcd",
-      "last_checked": "2026-10-16T07:31:30.887986",
+      "last_checked": "2026-10-19T20:44:35.516379",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"e53-65d55e5bf34f0-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype05inversion/kscsitype05incurrentversion1.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/flogicalunitnumber.json": {
       "hash": "94c5d90855949748a7af28f2cfc8ca42480be99372e88c2783706c481f9a4b67",
-      "last_checked": "2026-10-16T07:31:31.102806",
+      "last_checked": "2026-10-19T20:44:35.953167",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"27f7-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/flogicalunitnumber.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/ftimeoutduration.json": {
       "hash": "6489c4d35da7eb6cf2a77004988505eb7b36af3f41026a46743160509f8e00bd",
-      "last_checked": "2026-10-16T07:31:31.163721",
+      "last_checked": "2026-10-19T20:44:36.235834",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"27d1-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/ftimeoutduration.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fcommanddescriptorblock.json": {
       "hash": "051e855d82c2b0681a7c7d99d2d4a1326629c7bc646f508cbcbc552c219420f3",
-      "last_checked": "2026-10-16T07:31:31.276529",
+      "last_checked": "2026-10-19T20:44:36.388075",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2bd4-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/fcommanddescriptorblock.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/frequestedbytecountoftransfer.json": {
       "hash": "a671303509bbdf77e48f3e0a5d79a12b0f65d5a000a6e11860019555834f620a",
-      "last_checked": "2026-10-16T07:31:31.313372",
+      "last_checked": "2026-10-19T20:44:36.549341",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2815-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/frequestedbytecountoftransfer.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fbufferdirection.json": {
       "hash": "59f6882197074805fb855f33a321a2625c2c7c5ca84e78458ffe54b698ffb73c",
-      "last_checked": "2026-10-16T07:31:31.382077",
+      "last_checked": "2026-10-19T20:44:36.687342",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"36e3-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/fbufferdirection.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fdatatransferdirection.json": {
       "hash": "5670ed2562dc33f398cf25b8ea94356dd1abac771ae8f542ddcb3788886f7148",
-      "last_checked": "2026-10-16T07:31:31.478422",
+      "last_checked": "2026-10-19T20:44:36.822119",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"31b3-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/fdatatransferdirection.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fsenselengthrequested.json": {
       "hash": "5e008a64662c95516c1bc1cafb06e4fff047b37dbcb11025909c4bd961a195e8",
-      "last_checked": "2026-10-16T07:31:31.521527",
+      "last_checked": "2026-10-19T20:44:36.972322",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"27e8-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/fsenselengthrequested.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fdatabufferaddr.json": {
       "hash": "e57c02bd472c991ba14f079d6a56056502b5cdafd0f8ad7c103887e040ade616",
-      "last_checked": "2026-10-16T07:31:31.588768",
+      "last_checked": "2026-10-19T20:44:37.124078",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2c76-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/fdatabufferaddr.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fsensebufferaddr.json": {
       "hash": "f9589a2c9e761cf3c0e302769b786a0d131713621e5f5b9b3ba56736b65b1e0f",
-      "last_checked": "2026-10-16T07:31:31.720372",
+      "last_checked": "2026-10-19T20:44:37.417279",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"2c7f-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/fsensebufferaddr.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/reserved.json": {
       "hash": "3f71ffaaf5af0fd24f441fad77b6369d9106fa11999a8ffeebc636210382be76",
-      "last_checked": "2026-10-16T07:31:31.828296",
+      "last_checked": "2026-10-19T20:44:37.685636",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"fb5-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceoutparameters/reserved.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fcompletionstatus.json": {
       "hash": "30398dab64fbcc50df4177a93201ba2047462ccdd4e7462cbf8fec07b6f6870a",
-      "last_checked": "2026-10-16T07:31:31.920690",
+      "last_checked": "2026-10-19T20:44:37.849113",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1d2e-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceinparameters/fcompletionstatus.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fserviceresponse.json": {
       "hash": "49da975ac4975b5f00d17742c7419e4611f4fa342f1ee7db0d23300c9010d1be",
-      "last_checked": "2026-10-16T07:31:31.960914",
+      "last_checked": "2026-10-19T20:44:37.983835",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1d7a-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceinparameters/fserviceresponse.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/frealizedbytecountoftransfer.json": {
       "hash": "d36eeba886211dc386a3570f7796cd2275995415167481ac78545cc496219f03",
-      "last_checked": "2026-10-16T07:31:32.091027",
+      "last_checked": "2026-10-19T20:44:38.155950",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"199c-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceinparameters/frealizedbytecountoftransfer.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fsensedatavalid.json": {
       "hash": "b48245368440a22643c1047740e2ed53682750be49c8b83aa7b3206f3d37638b",
-      "last_checked": "2026-10-16T07:31:32.192256",
+      "last_checked": "2026-10-19T20:44:38.289043",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"1924-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceinparameters/fsensedatavalid.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/reserved.json": {
       "hash": "a48d87e27237cb562e543ad7303ebdbb4cfe051996a0b700fa63e19d8605fc60",
-      "last_checked": "2026-10-16T07:31:32.297321",
+      "last_checked": "2026-10-19T20:44:38.439027",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"fad-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsideviceinparameters/reserved.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07inversion/kscsitype07incurrentversion1.json": {
       "hash": "0e14c3fae30c9b4769dcba82fdc537b559d6c7fb11619a407ab632cc382eb0dd",
-      "last_checked": "2026-10-16T07:31:31.050949",
+      "last_checked": "2026-10-19T20:44:35.801311",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"e53-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype07inversion/kscsitype07incurrentversion1.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07outversion/kscsitype07outcurrentversion1.json": {
       "hash": "eab25edafc5fa05d7881666b856dee31dc11962f5fe0fa3e3ad8082992c51071",
-      "last_checked": "2026-10-16T07:31:30.994343",
+      "last_checked": "2026-10-19T20:44:35.651308",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:25.069089",
+      "session_id": "2026-10-19T20:44:25.334946",
       "etag": "\"e6e-65d55e5be3f4b-df\"",
       "file_path": "documentation/SCSIPeripheralsDriverKit/scsitype07outversion/kscsitype07outcurrentversion1.md"
     },

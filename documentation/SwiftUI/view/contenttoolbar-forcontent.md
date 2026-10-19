@@ -65,14 +65,10 @@ TabView {
   Populates the toolbar or navigation bar with the specified items.
 - [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
-  Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbar(removing: ToolbarDefaultItemKind?) -> some View](view/toolbar(removing:).md)
   Remove a toolbar item present by default
 - [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
   Specifies the visibility of a bar managed by SwiftUI.
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
-  Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 - [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 - [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
@@ -91,6 +87,10 @@ TabView {
   Sets the restoration behavior for the specified bars during minimization.
 - [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
   Sets the safe area adjustment for the specified bars during minimization.
+- [func toolbarTitleMenu<C>(content: () -> C) -> some View](view/toolbartitlemenu(content:).md)
+  Configure the title menu of a toolbar.
+- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
+  Configures the toolbar title display mode for this view.
 
 
 ---

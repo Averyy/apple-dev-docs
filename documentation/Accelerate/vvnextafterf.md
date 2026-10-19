@@ -31,6 +31,38 @@ func vvnextafterf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Un
 
 Not all values can be represented as a floating-point value of a given precision. This function sets a value in `z[i]` that is either minimally larger than the value in `y[i]` (if `x[i]` is larger than `y[i]`) or minimally smaller than the value in `y[i]` (if `x[i]` is smaller than `y[i]`).
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var from: [Float] = [1, 2, 3]
+var to: [Float] = [2, 2, 2]
+var y = [Float](repeating: 0, count: from.count)
+var n = Int32(from.count)
+
+// Calculate the next representable value after each element in `from` toward the corresponding element in `to`.
+vvnextafterf(&y, &from, &to, &n)
+
+// Prints "[1.0000001, 2.0, 2.9999998]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float from[3] = {1, 2, 3};
+float to[3] = {2, 2, 2};
+float y[3];
+int n = 3;
+
+// Calculate the next representable value after each element in `from` toward the corresponding element in `to`.
+vvnextafterf(y, from, to, &n);
+
+// Prints "[1, 2, 3]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func ceil<U>(U) -> [Double]](vforce/ceil(_:)-9dsdt.md)

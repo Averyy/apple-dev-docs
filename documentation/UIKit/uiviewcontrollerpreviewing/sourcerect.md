@@ -34,6 +34,10 @@ You can change the value of this property at runtime.
   A source view, in a previewing view controller’s view hierarchy, responds to a 3D Touch by the user.
 - [var previewingGestureRecognizerForFailureRelationship: UIGestureRecognizer](uiviewcontrollerpreviewing/previewinggesturerecognizerforfailurerelationship.md)
   A gesture recognizer suitable for setting up failure requirements for a preview’s (peek’s) gestures.
+- [var delegate: any UIViewControllerPreviewingDelegate](uiviewcontrollerpreviewing/delegate.md)
+  The previewing view controller’s delegate for managing preview (peek) and commit (pop) view controllers.
+- [var sourceView: UIView](uiviewcontrollerpreviewing/sourceview.md)
+  A source view, in a previewing view controller’s view hierarchy, responds to a 3D Touch by the user.
 
 
 ---

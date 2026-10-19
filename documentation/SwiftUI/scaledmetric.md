@@ -59,6 +59,8 @@ struct ScaledMetric<Value> where Value : BinaryFloatingPoint
   The default text variant preference that chooses the largest available variant.
 - [struct SizeDependentTextVariant](sizedependenttextvariant.md)
   The size dependent variant preference allows the text to take the available space into account when choosing the variant to display.
+- [enum ContentSizeCategory](contentsizecategory.md)
+  The sizes that you can specify for content.
 
 
 ---

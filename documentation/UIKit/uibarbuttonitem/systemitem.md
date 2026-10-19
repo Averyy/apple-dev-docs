@@ -67,11 +67,11 @@ enum SystemItem
   The system undo button.
 - [UIBarButtonItem.SystemItem.redo](uibarbuttonitem/systemitem/redo.md)
   The system redo button.
-- [UIBarButtonItem.SystemItem.pageCurl](uibarbuttonitem/systemitem/pagecurl.md)
-  The system page curl button.
 - [UIBarButtonItem.SystemItem.close](uibarbuttonitem/systemitem/close.md)
   The system close button.
 - [UIBarButtonItem.SystemItem.writingTools](uibarbuttonitem/systemitem/writingtools.md)
+- [UIBarButtonItem.SystemItem.pageCurl](uibarbuttonitem/systemitem/pagecurl.md)
+  The system page curl button.
 ### Initializers
 - [init?(rawValue: Int)](uibarbuttonitem/systemitem/init(rawvalue:).md)
 

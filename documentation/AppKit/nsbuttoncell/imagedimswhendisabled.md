@@ -28,8 +28,6 @@ The default setting for this state is reasserted whenever you invoke [`setButton
   The background color of the button.
 - [var bezelStyle: NSButton.BezelStyle](nsbuttoncell/bezelstyle.md)
   The appearance of the button’s border, if it has one.
-- [var gradientType: NSButton.GradientType](nsbuttoncell/gradienttype.md)
-  The gradient of the button’s border.
 - [var isOpaque: Bool](nsbuttoncell/isopaque.md)
   A Boolean value that indicates if the button is opaque.
 - [var isTransparent: Bool](nsbuttoncell/istransparent.md)

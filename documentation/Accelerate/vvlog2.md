@@ -26,6 +26,36 @@ func vvlog2(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Double] = [1, 2, 8]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the base-2 logarithm of each element in `x`.
+vvlog2(&y, &x, &n)
+
+// Prints "[0.0, 1.0, 3.0]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+double x[3] = {1, 2, 8};
+double y[3];
+int n = 3;
+
+// Calculate the base-2 logarithm of each element in `x`.
+vvlog2(y, x, &n);
+
+// Prints "[0, 1, 3]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)

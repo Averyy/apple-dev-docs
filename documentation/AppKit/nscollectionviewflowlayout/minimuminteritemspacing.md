@@ -20,7 +20,7 @@ If the delegate does not implement the [`collectionView(_:layout:minimumInterite
 
 For a vertically scrolling layout, the value represents the minimum spacing between items in the same row. For a horizontally scrolling layout, the value represents the minimum spacing between items in the same column. The layout object uses this spacing only to compute how many items can fit in a single row or column. The actual spacing may be increased after the number of items has been determined, as illustrated in [`Figure 1`](nscollectionviewflowlayout/1402872-minimuminteritemspacing#1965632.md).
 
-![None](/images/com.apple.appkit/media-1965632@2x.png)
+![A diagram of a row of four items with a gap between each pair. In every gap, an upper arrow marks the actual interitem spacing, and a shorter lower arrow marks the minimum interitem spacing, so the actual spacing is wider than the minimum. A legend below the row labels the upper arrow Actual interitem spacing and the lower arrow Minimum interitem spacing.](/images/com.apple.appkit/media-1965632@2x.png)
 
 The default value of this property is `10.0`.
 

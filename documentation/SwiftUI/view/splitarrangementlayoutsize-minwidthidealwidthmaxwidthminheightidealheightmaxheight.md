@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Sets the size constraints for an arrangement view in a split style.
+Sets the size constraints for a view in a split style arrangement view.
 
 **Availability**:
 - iOS 27.1+
@@ -23,7 +23,7 @@ func splitArrangementLayoutSize(minWidth: CGFloat? = nil, idealWidth: CGFloat? =
 
 #### Discussion
 
-Views with higher `layoutPriority` are sized first using their ideal size, clamped to their min and max values. Width constraints apply to horizontal arrangements, and height constraints apply to vertical arrangements.
+Use this modifier to specify the size of a view in a split arrangement, as the following example shows:
 
 ```swift
 ArrangementView {
@@ -38,31 +38,33 @@ ArrangementView {
 .arrangementViewStyle(.split)
 ```
 
+The arrangement sizes the view with higher `layoutPriority` using its ideal size, clamped to the minimum and maximum values. The arrangement applies width constraints to horizontal arrangement layouts, and height constraints to vertical arrangement layouts.
+
 ## Parameters
 
-- `minWidth`: The minimum width for horizontal splits.
-- `idealWidth`: The ideal width for horizontal splits.
-- `maxWidth`: The maximum width for horizontal splits.
-- `minHeight`: The minimum height for vertical splits.
-- `idealHeight`: The ideal height for vertical splits.
-- `maxHeight`: The maximum height for vertical splits.
+- `minWidth`: A float value that specifies the minimum width in points for a horizontal split arrangement.
+- `idealWidth`: A float value that specifies the ideal width in points for a horizontal split arrangement.
+- `maxWidth`: A float value that specifies the maximum width in points for a horizontal split arrangement.
+- `minHeight`: A float value that specifies the minimum height in points for a vertical split arrangement.
+- `idealHeight`: A float value that specifies the ideal height in points for a vertical split arrangement.
+- `maxHeight`: A float value that specifies the maximum height in points for a vertical split arrangement.
 
 ## See Also
 
 - [struct ArrangementView](arrangementview.md)
-  A view that arranges primary and secondary content using an adaptive layout that responds to the environment.
+  A view that dynamically lays out a primary and secondary view based on size class, orientation, and reserved regions.
 - [func arrangementViewStyle(some ArrangementViewStyle) -> some View](view/arrangementviewstyle(_:).md)
   Sets the style for arrangement views within this view.
 - [protocol ArrangementViewStyle](arrangementviewstyle.md)
-  A style that configures an `ArrangementView` with an arrangement.
+  A style that indicates how an arrangement view lays out a primary and secondary view.
 - [func overlayArrangementEdge(_:)](view/overlayarrangementedge(_:).md)
-  The horizontal edge a view in an overlay arrangement occupies when the arrangement transitions to a horizontal layout.
+  The horizontal edge a view in an overlay arrangement aligns to when the arrangement transitions to a landscape orientation.
 - [func splitArrangementFixedLayoutSize(horizontal: Bool, vertical: Bool) -> some View](view/splitarrangementfixedlayoutsize(horizontal:vertical:).md)
-  Sets the preferred size constraint for an arrangement view in a split style to the ideal size of the view within its container. The arrangement view will prefer this size, but may resize to a smaller size depending on the priority of the view.
+  Sets the preferred size constraint for a view in a split arrangement style to the ideal size of the view within its container.
 - [func splitArrangementLayoutRatio(CGFloat?) -> some View](view/splitarrangementlayoutratio(_:).md)
-  Sets the preferred size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+  Sets the preferred size ratio for a view in a split style arrangement view.
 - [func splitArrangementLayoutRatio(minHorizontal: CGFloat?, idealHorizontal: CGFloat?, maxHorizontal: CGFloat?, minVertical: CGFloat?, idealVertical: CGFloat?, maxVertical: CGFloat?) -> some View](view/splitarrangementlayoutratio(minhorizontal:idealhorizontal:maxhorizontal:minvertical:idealvertical:maxvertical:).md)
-  Sets the size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+  Sets the size ratio for a view in a split style arrangement view.
 
 
 ---

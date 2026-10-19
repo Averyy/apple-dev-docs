@@ -37,7 +37,7 @@ let a: [Double] = [-1.5, 2.25, 3.6,
                    0.2, -0.1, -4.3]
 
 let maximum = vDSP.maximum(a)
-print("maximum", maximum) // Prints "maximum 3.6"
+print("maximum", maximum) // Prints "maximum 3.6".
 ```
 
 ## Parameters

@@ -33,7 +33,7 @@ After calling this method, the app also posts a [`didFinishLaunchingNotification
 ## See Also
 
 - [Deprecated symbols](uiapplicationdelegate-deprecated-symbols.md)
-  Symbols that are no longer supported.
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 
 ---

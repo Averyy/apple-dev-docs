@@ -37,6 +37,8 @@ If you’re rescaling an image with premultiplied alpha (that is, with a [`bitma
 
 Otherwise, with the source and destination buffers properly initialized, you’re ready to perform the scaling operation. Because your format contains four 8-bit channels, you use the [`vImageScale_ARGB8888(_:_:_:_:)`](vimagescale_argb8888(_:_:_:_:).md) function. This function works equally well on all channel orderings; for example, RGBA or BGRA.
 
+**Swift**:
+
 ```swift
 error = vImageScale_ARGB8888(&sourceBuffer,
                              &destinationBuffer,
@@ -45,6 +47,19 @@ error = vImageScale_ARGB8888(&sourceBuffer,
         
 guard error == kvImageNoError else {
     fatalError("Error in vImageScale_ARGB8888: \(error)")
+}
+```
+
+**Objective-C**:
+
+```objc
+vImage_Error error = vImageScale_ARGB8888(&sourceBuffer,
+                                          &destinationBuffer,
+                                          NULL,
+                                          kvImageHighQualityResampling);
+
+if (error != kvImageNoError) {
+    // handle error
 }
 ```
 
@@ -65,6 +80,8 @@ If you’re rescaling an image with premultiplied alpha, you may see artifacts i
 
 This code shows the additional operations required, with error handling removed for brevity:
 
+**Swift**:
+
 ```swift
 error = vImageUnpremultiplyData_ARGB8888(&sourceBuffer,
                                          &sourceBuffer,
@@ -78,6 +95,23 @@ error = vImageScale_ARGB8888(&sourceBuffer,
 error = vImagePremultiplyData_ARGB8888(&destinationBuffer,
                                        &destinationBuffer,
                                        vImage_Flags(kvImageNoFlags))
+```
+
+**Objective-C**:
+
+```objc
+vImage_Error error = vImageUnpremultiplyData_ARGB8888(&sourceBuffer,
+                                                      &sourceBuffer,
+                                                      kvImageNoFlags);
+
+error = vImageScale_ARGB8888(&sourceBuffer,
+                             &destinationBuffer,
+                             NULL,
+                             kvImageHighQualityResampling);
+
+error = vImagePremultiplyData_ARGB8888(&destinationBuffer,
+                                       &destinationBuffer,
+                                       kvImageNoFlags);
 ```
 
 ## See Also

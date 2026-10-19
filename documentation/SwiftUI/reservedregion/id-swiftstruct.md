@@ -20,6 +20,10 @@ An identifier for a reserved region.
 struct ID
 ```
 
+#### Overview
+
+Compare identifiers to find out whether two values describe the same reserved region.
+
 ## Relationships
 
 ### Conforms To
@@ -37,16 +41,10 @@ struct ID
 
 - [var id: ReservedRegion.ID](reservedregion/id-swift.property.md)
   The identifier of the region.
-- [var frame: CGRect](reservedregion/frame.md)
-  The rect of the region in the view’s coordinate space, including the margins.
-- [var isActive: Bool](reservedregion/isactive.md)
-  Whether the region is active.
 - [var kind: ReservedRegion.Kind](reservedregion/kind-swift.property.md)
   The kind of the region.
 - [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
   A kind of reserved region.
-- [var margins: EdgeInsets](reservedregion/margins.md)
-  The margins included in the frame around the rect for interactive content.
 
 
 ---

@@ -26,8 +26,6 @@ This method sends the current graphics context a [`saveGraphicsState()`](nsgraph
   Removes the context’s graphics state from the top of the graphics state stack and makes the next graphics state the current graphics state.
 - [func saveGraphicsState()](nsgraphicscontext/savegraphicsstate-swift.method.md)
   Saves the current graphics state and creates a new graphics state on the top of the stack.
-- [class func setGraphicsState(Int)](nsgraphicscontext/setgraphicsstate(_:).md)
-  Makes the graphics context of the specified graphics state current, and resets graphics state.
 
 
 ---

@@ -9,10 +9,6 @@ Constants that describe the ability to authorize helper executables or modify da
 ### Constants
 - [var kSMRightBlessPrivilegedHelper: String](ksmrightblessprivilegedhelper.md)
   The authorization rights key for approving and installing a privileged helper tool.
-- [var kSMRightBlessPrivilegedHelper: String](ksmrightblessprivilegedhelper.md)
-  The authorization rights key for approving and installing a privileged helper tool.
-- [var kSMRightModifySystemDaemons: String](ksmrightmodifysystemdaemons.md)
-  The authorization rights key for modifying system daemons.
 - [var kSMRightModifySystemDaemons: String](ksmrightmodifysystemdaemons.md)
   The authorization rights key for modifying system daemons.
 

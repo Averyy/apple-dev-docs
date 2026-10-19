@@ -24,7 +24,6 @@ Use [`linear`](gaugestyle/linear.md) to construct this style.
 ### Creating the gauge style
 - [init()](lineargaugestyle/init.md)
   Creates a linear gauge style.
-### Deprecated initializers
 - [init(tint:)](lineargaugestyle/init(tint:).md)
   Creates a linear gauge style with a tint color.
 

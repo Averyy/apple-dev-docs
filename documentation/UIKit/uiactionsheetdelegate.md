@@ -32,21 +32,9 @@ You can also optionally augment the behavior of presenting and dismissing action
 
 ## Topics
 
-### Responding to actions
-- [func actionSheet(UIActionSheet, clickedButtonAt: Int)](uiactionsheetdelegate/actionsheet(_:clickedbuttonat:).md)
-  Sent to the delegate when the user clicks a button on an action sheet.
-### Customizing behavior
-- [func willPresent(UIActionSheet)](uiactionsheetdelegate/willpresent(_:).md)
-  Sent to the delegate before an action sheet is presented to the user.
-- [func didPresent(UIActionSheet)](uiactionsheetdelegate/didpresent(_:).md)
-  Sent to the delegate after an action sheet is presented to the user.
-- [func actionSheet(UIActionSheet, willDismissWithButtonIndex: Int)](uiactionsheetdelegate/actionsheet(_:willdismisswithbuttonindex:).md)
-  Sent to the delegate before an action sheet is dismissed.
-- [func actionSheet(UIActionSheet, didDismissWithButtonIndex: Int)](uiactionsheetdelegate/actionsheet(_:diddismisswithbuttonindex:).md)
-  Sent to the delegate after an action sheet is dismissed from the screen.
-### Canceling
-- [func actionSheetCancel(UIActionSheet)](uiactionsheetdelegate/actionsheetcancel(_:).md)
-  Sent to the delegate before an action sheet is canceled.
+### Deprecated
+- [Deprecated symbols](uiactionsheetdelegate-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

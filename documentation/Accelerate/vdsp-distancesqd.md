@@ -46,6 +46,36 @@ For example, the following code calculates the distance squared between the two 
     print("distance²", distanceSquared) // Prints "distance² 50.0".
 ```
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var a: [Double] = [1, 2, 3]
+var b: [Double] = [4, 6, 8]
+var c: Double = 0
+
+// Calculate the squared distance between the points `a` and `b`.
+vDSP_distancesqD(a, 1, b, 1, &c, vDSP_Length(a.count))
+
+// Prints "50.0".
+print(c)
+```
+
+**Objective-C**:
+
+```objc
+double a[3] = {1, 2, 3};
+double b[3] = {4, 6, 8};
+double c;
+
+// Calculate the squared distance between the points `a` and `b`.
+vDSP_distancesqD(a, 1, b, 1, &c, 3);
+
+// Prints "50".
+printf("%g\n", c);
+```
+
 ## Parameters
 
 - `__A`: An array that contains the coordinates of the first point.

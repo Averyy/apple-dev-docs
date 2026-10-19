@@ -36,24 +36,93 @@ Note that the differentiation filter produces a result that contains, on average
 
 The following code shows how to apply the averaging and differentiation components of the Sobel filter to an 8-bit planar buffer:
 
+**Swift**:
+
 ```swift
-let kernelX: [Float] = [1, 2, 1]
-let kernelY: [Float] = [-1, 0, 1]
-let bias = Float(128)
+// A 3×3 `Planar8` source; all pixels = 10.
+let source = vImage.PixelBuffer<vImage.Planar8>(
+    pixelValues: [10, 10, 10,
+                  10, 10, 10,
+                  10, 10, 10],
+    size: .init(width: 3, height: 3))
+
+// A 3×3 destination buffer, all zeros initially.
+let destination = vImage.PixelBuffer<vImage.Planar8>(
+    pixelValues: [UInt8](repeating: 0, count: 9),
+    size: .init(width: 3, height: 3))
+
+// Separable box-filter kernels: all-ones 1×3, producing a 3×3 sum.
+let kernelX: [Float] = [1, 1, 1]
+let kernelY: [Float] = [1, 1, 1]
+// The bias is 0, with no offset added to the results.
+let bias = Float(0)
+// The `backgroundColor` equals 0; it's unused because `kvImageEdgeExtend` is used.
 let backgroundColor = Pixel_16U(0)
 
-// `planarSourceBuffer` contains the source image.
-// `destinationBuffer` is the destination buffer, initialized by `vImageBuffer_Init`.
-
-let error = vImageSepConvolve_Planar8(&planarSourceBuffer,
-                                      &destinationBuffer,
+// Apply the separable convolution; `kvImageEdgeExtend` replicates edge pixels
+// so every output pixel sums exactly nine source pixels.
+source.withUnsafePointerToVImageBuffer { src in
+    destination.withUnsafePointerToVImageBuffer { dest in
+        _ = vImageSepConvolve_Planar8(src,
+                                      dest,
                                       nil,
                                       0, 0,
                                       kernelX, UInt32(kernelX.count),
                                       kernelY, UInt32(kernelY.count),
                                       bias,
                                       backgroundColor,
-                                      vImage_Flags(kvImageBackgroundColorFill))
+                                      vImage_Flags(kvImageEdgeExtend))
+    }
+}
+
+// Print the full 3×3 result.
+let result = destination.array
+// Prints "[[90, 90, 90], [90, 90, 90], [90, 90, 90]]".
+print([Array(result[0..<3]), Array(result[3..<6]), Array(result[6..<9])])
+```
+
+**Objective-C**:
+
+```objc
+uint8_t src[9] = {10, 10, 10,
+                  10, 10, 10,
+                  10, 10, 10};
+uint8_t dst[9] = {0};
+
+vImage_Buffer srcBuf = {
+    .data     = src,
+    .width    = 3,
+    .height   = 3,
+    .rowBytes = 3
+};
+
+vImage_Buffer dstBuf = {
+    .data     = dst,
+    .width    = 3,
+    .height   = 3,
+    .rowBytes = 3
+};
+
+float kernelX[3] = {1.0f, 1.0f, 1.0f};
+float kernelY[3] = {1.0f, 1.0f, 1.0f};
+float bias = 0.0f;
+Pixel_16U backgroundColor = 0;
+
+vImageSepConvolve_Planar8(&srcBuf,
+                           &dstBuf,
+                           NULL,
+                           0, 0,
+                           kernelX, 3,
+                           kernelY, 3,
+                           bias,
+                           backgroundColor,
+                           kvImageEdgeExtend);
+
+// Prints "[[90, 90, 90], [90, 90, 90], [90, 90, 90]]".
+printf("[[%d, %d, %d], [%d, %d, %d], [%d, %d, %d]]\n",
+      dst[0], dst[1], dst[2],
+      dst[3], dst[4], dst[5],
+      dst[6], dst[7], dst[8]);
 ```
 
 The following image shows two photographs, with the original image on the left, and the image after applying the Sobel filter on the right:

@@ -45,12 +45,12 @@ The app can’t override the user’s choice before iOS 16, tvOS 16 or watchOS 9
 
 ## See Also
 
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
-  Whether the system preference for Show Button Shapes is enabled.
 - [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
 - [var legibilityWeight: LegibilityWeight?](environmentvalues/legibilityweight.md)
   The font weight to apply to text.
+- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+  Whether the system preference for Show Button Shapes is enabled.
 
 
 ---

@@ -34,6 +34,8 @@ static let option: EventModifiers
   Any key on the numeric keypad.
 - [static let shift: EventModifiers](eventmodifiers/shift.md)
   The Shift key.
+- [static let function: EventModifiers](eventmodifiers/function.md)
+  The Function key.
 
 
 ---

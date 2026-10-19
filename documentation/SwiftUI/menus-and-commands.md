@@ -82,7 +82,7 @@ For design guidance, see [`Menus`](https://developer.apple.com/design/human-inte
   The preferred order of items for menus presented from this view.
 - [struct MenuOrder](menuorder.md)
   The order in which a menu presents its content.
-### Deprecated types
+### Deprecated
 - [struct MenuButton](menubutton.md)
   A button that displays a menu containing a list of choices when pressed.
 - [typealias PullDownButton](pulldownbutton.md)

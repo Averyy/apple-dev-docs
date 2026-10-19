@@ -26,6 +26,8 @@ Use the provided coordinate space to get the bounds of the scene’s bounds rect
 
 - [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
   The orientation to use when displaying content in your windows.
+- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
+  The placement of a window scene relative to other scenes in the workspace.
 
 
 ---

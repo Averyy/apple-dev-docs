@@ -20,10 +20,10 @@ You should not use this mode. It exists primarily for use in the original Classi
 
 ## See Also
 
-- [NSWindow.BackingStoreType.retained](nswindow/backingstoretype/retained.md)
-  The window uses a buffer, but draws directly to the screen where possible and to the buffer for obscured portions.
 - [NSWindow.BackingStoreType.buffered](nswindow/backingstoretype/buffered.md)
   The window renders all drawing into a display buffer and then flushes it to the screen.
+- [NSWindow.BackingStoreType.retained](nswindow/backingstoretype/retained.md)
+  The window uses a buffer, but draws directly to the screen where possible and to the buffer for obscured portions.
 
 
 ---

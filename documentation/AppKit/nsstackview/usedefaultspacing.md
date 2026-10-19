@@ -24,11 +24,11 @@ class let useDefaultSpacing: CGFloat
   The minimum spacing, in points, between adjacent views in the stack view.
 - [var edgeInsets: NSEdgeInsets](nsstackview/edgeinsets.md)
   The geometric padding, in points, inside the stack view, surrounding its views.
-- [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
-  A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 - [var distribution: NSStackView.Distribution](nsstackview/distribution-swift.property.md)
   The spacing and sizing distribution of stacked views along the primary axis.
 - [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
+- [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
+  A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 
 
 ---

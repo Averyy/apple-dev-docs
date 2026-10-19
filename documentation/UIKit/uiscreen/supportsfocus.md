@@ -29,6 +29,8 @@ var supportsFocus: Bool { get }
   The item that is currently focused.
 - [var focusedView: UIView?](uiscreen/focusedview.md)
   The view that is currently focused.
+- [var isCaptured: Bool](uiscreen/iscaptured.md)
+  A Boolean value that indicates whether the system is actively cloning the screen to another destination.
 
 
 ---

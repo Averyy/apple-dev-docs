@@ -45,6 +45,9 @@ The event subtype contains one of these constants only when the event’s [`type
   A tablet-proximity event occurred.
 - [NSEvent.EventSubtype.touch](nsevent/eventsubtype/touch.md)
   A touch event occurred.
+### Deprecated
+- [Deprecated symbols](eventsubtype-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [init?(rawValue: Int16)](nsevent/eventsubtype/init(rawvalue:).md)
 

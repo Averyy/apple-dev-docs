@@ -98,7 +98,7 @@ Third-party storage services can also provide access to the documents they manag
   The error codes for document browser errors.
 - [let UIDocumentBrowserErrorDomain: String](uidocumentbrowsererrordomain.md)
   The error domain for document browser errors.
-### Deprecated symbols
+### Deprecated
 - [init(forOpeningFilesWithContentTypes: [String]?)](uidocumentbrowserviewcontroller/init(foropeningfileswithcontenttypes:).md)
   Initializes and returns a document browser view controller that can open the specified file types.
 - [var recentDocumentsContentTypes: [String]](uidocumentbrowserviewcontroller/recentdocumentscontenttypes.md)

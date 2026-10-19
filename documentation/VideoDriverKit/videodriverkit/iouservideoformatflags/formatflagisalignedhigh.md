@@ -6,7 +6,7 @@
 Set if the sample bits are placed into the high bits of the channel, clear for low bit placement.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

@@ -28,7 +28,9 @@ func vImageMatrixMultiply_ARGBFFFFToPlanarF(_ src: UnsafePointer<vImage_Buffer>,
 
 This function treats the four-channel source pixels as a four-element vector, and multiplies each source pixel by the matrix. The operation is equivalent to computing the dot product of the source pixel and the matrix.
 
-The following code shows a four-channel interleaved buffer multiplied by a four-element column matrix to produce a planar destination image. The values in the matrix represent the Rec. 709 luminance coefficients that convert the color source pixels to a grayscale destination image. The source buffer contains a red pixel, a green pixel, and a blue pixel.
+The following code shows a four-channel interleaved buffer multiplied by a four-element column matrix to produce a planar destination image. The values in the matrix represent the Rec. 709 luminance coefficients that convert the color source pixels to a grayscale destination image. The source buffer contains a red pixel, a green pixel, and a blue pixel:
+
+**Swift**:
 
 ```swift
 let size = vImage.Size(width: 3, height: 1)
@@ -68,6 +70,52 @@ source.withUnsafePointerToVImageBuffer { src in
 
 // Prints "[0.2126, 0.7152, 0.0722]".
 print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+float srcData[12] = {
+    0, 1, 0, 0,   // red
+    0, 0, 1, 0,   // green
+    0, 0, 0, 1    // blue
+};
+
+vImage_Buffer srcBuf = {
+    .data = srcData,
+    .width = 3,
+    .height = 1,
+    .rowBytes = 48
+};
+
+float dstData[3] = {0};
+
+vImage_Buffer dstBuf = {
+    .data = dstData,
+    .width = 3,
+    .height = 1,
+    .rowBytes = 12
+};
+
+float redCoefficient   = 0.2126f;
+float greenCoefficient = 0.7152f;
+float blueCoefficient  = 0.0722f;
+
+float matrix[4] = {
+    0,
+    redCoefficient,
+    greenCoefficient,
+    blueCoefficient
+};
+
+vImageMatrixMultiply_ARGBFFFFToPlanarF(&srcBuf, &dstBuf,
+                                       matrix,
+                                       NULL, 0,
+                                       kvImageNoFlags);
+
+// Prints "[0.2126, 0.7152, 0.0722]".
+printf("[%g, %g, %g]\n",
+       dstData[0], dstData[1], dstData[2]);
 ```
 
 ## Parameters

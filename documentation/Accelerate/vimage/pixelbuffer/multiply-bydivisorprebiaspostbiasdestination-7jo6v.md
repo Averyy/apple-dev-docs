@@ -42,7 +42,7 @@ For example, the following code multiplies each pixel value in an 8-bit planar b
                    preBias: 0, postBias: 5,
                    destination: buffer)
 
-   // Prints
+   // Prints:
    // [  25,  45,  65,  85,
    //   105, 125, 145, 165 ]
    print(buffer.array)

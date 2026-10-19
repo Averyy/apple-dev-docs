@@ -8,6 +8,12 @@ These constants specify how a cell formats numeric data.
 
 These constants are used by [`setEntryType:`](nscell/setentrytype:.md) and [`entryType`](nscell/entrytype.md).
 
+## Topics
+
+### Deprecated
+- [Deprecated symbols](data-entry-types-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
+
 ## See Also
 
 - [enum NSMultibyteGlyphPacking](nsmultibyteglyphpacking.md)

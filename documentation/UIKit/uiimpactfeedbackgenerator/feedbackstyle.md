@@ -46,6 +46,8 @@ enum FeedbackStyle
 
 - [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](uiimpactfeedbackgenerator/init(style:view:).md)
   Creates an impact feedback generator with the specified style and view.
+- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](uiimpactfeedbackgenerator/init(style:).md)
+  Creates an impact feedback generator with the specified style.
 
 
 ---

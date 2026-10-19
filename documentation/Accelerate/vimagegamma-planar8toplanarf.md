@@ -28,6 +28,8 @@ func vImageGamma_Planar8toPlanarF(_ src: UnsafePointer<vImage_Buffer>, _ dest: U
 
 This function maps 8-bit values in the range `0...255` to the floating-point range `0.0...1.0`.
 
+**Swift**:
+
 ```swift
 let source = vImage.PixelBuffer<vImage.Planar8>(
     pixelValues: [  1,
@@ -64,6 +66,44 @@ source.withUnsafePointerToVImageBuffer { src in
 
 // Prints "[1.0, 3.0, 5.0, 15.0, 17.0, 51.0]".
 print(destination.array.map { $0 * 255 })
+```
+
+**Objective-C**:
+
+```objc
+uint8_t srcData[6] = {1, 3, 5, 15, 17, 51};
+float   dstData[6] = {0};
+
+vImage_Buffer srcBuf = {
+    .data = srcData,
+    .width = 1,
+    .height = 6,
+    .rowBytes = 1
+};
+
+vImage_Buffer dstBuf = {
+    .data = dstData,
+    .width = 1,
+    .height = 6,
+    .rowBytes = 4
+};
+
+GammaFunction gamma = vImageCreateGammaFunction(
+    1.0f,
+    kvImageGamma_UseGammaValue,
+    kvImageNoFlags);
+
+vImageGamma_Planar8toPlanarF(&srcBuf,
+                             &dstBuf,
+                             gamma,
+                             kvImageNoFlags);
+
+vImageDestroyGammaFunction(gamma);
+
+// Prints [1.0, 3.0, 5.0, 15.0, 17.0, 51.0]
+printf("[%.1f, %.1f, %.1f, %.1f, %.1f, %.1f]\n",
+       dstData[0] * 255, dstData[1] * 255, dstData[2] * 255,
+       dstData[3] * 255, dstData[4] * 255, dstData[5] * 255);
 ```
 
 ## Parameters

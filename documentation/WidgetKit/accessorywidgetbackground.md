@@ -73,9 +73,11 @@ The system only displays this view inside a [`WidgetFamily.accessoryCircular`](w
   Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
 - [struct WidgetLocation](widgetlocation.md)
   Values that indicate different widget locations.
-- [func widgetAccentable(Bool) -> some View\n](../swiftui/view/widgetaccentable(_:).md)
+- [func widgetAccentable(Bool) -> some View
+](../swiftui/view/widgetaccentable(_:).md)
   Adds the view and all of its subviews to the accented group.
-- [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View\n](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+- [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
+](../swiftui/image/widgetaccentedrenderingmode(_:).md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
 - [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.

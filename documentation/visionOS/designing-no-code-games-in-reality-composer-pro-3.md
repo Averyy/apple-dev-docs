@@ -5,6 +5,7 @@
 Build a video game in Reality Composer Pro without code using Script Graphs.
 
 **Availability**:
+- macOS 27.0+
 - visionOS 27.0+
 - Xcode 27.0+
 

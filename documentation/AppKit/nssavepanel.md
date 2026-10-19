@@ -86,9 +86,6 @@ In macOS 10.15, the system always displays the Save dialog in a separate process
   The action method that the panel calls when the user clicks the OK button.
 - [func cancel(Any?)](nssavepanel/cancel(_:).md)
   The action method that the panel calls when the user clicks the Cancel button.
-### Deprecated
-- [Deprecated Symbols](nssavepanel-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
 ### Instance Properties
 - [var identifier: NSUserInterfaceItemIdentifier?](nssavepanel/identifier.md)
   Sets and returns the identifier.
@@ -96,6 +93,9 @@ In macOS 10.15, the system always displays the Save dialog in a separate process
   `NSSavePanel`:The current type. If set to `nil`, resets to the first allowed content type. Returns `nil` if `allowedContentTypes` is empty. `NSOpenPanel`: Not used.
 - [var showsContentTypes: Bool](nssavepanel/showscontenttypes.md)
   Whether or not to show a popup list for selecting the type of the saved file.
+### Deprecated
+- [Deprecated symbols](nssavepanel-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

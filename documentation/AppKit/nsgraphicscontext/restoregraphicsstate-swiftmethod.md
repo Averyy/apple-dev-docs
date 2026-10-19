@@ -28,8 +28,6 @@ Restoring the graphics state restores such attributes as the current drawing sty
   Saves the graphics state of the current graphics context.
 - [func saveGraphicsState()](nsgraphicscontext/savegraphicsstate-swift.method.md)
   Saves the current graphics state and creates a new graphics state on the top of the stack.
-- [class func setGraphicsState(Int)](nsgraphicscontext/setgraphicsstate(_:).md)
-  Makes the graphics context of the specified graphics state current, and resets graphics state.
 
 
 ---

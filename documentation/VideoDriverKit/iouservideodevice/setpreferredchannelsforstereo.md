@@ -6,7 +6,7 @@
 Sets the channel indices for the preferred stereo pair
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

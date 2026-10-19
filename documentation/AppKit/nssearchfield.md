@@ -61,7 +61,7 @@ For additional information about search fields and how to implement them, see th
   The rectangle for the search button within the bounds of the search field.
 - [var searchTextBounds: NSRect](nssearchfield/searchtextbounds.md)
   The rectangle for the search text within the bounds of the search field.
-### Deprecated Symbols
+### Deprecated
 - [var centersPlaceholder: Bool](nssearchfield/centersplaceholder.md)
   A Boolean value that determines whether the search field’s components are centered within the control.
 - [func rectForCancelButton(whenCentered: Bool) -> NSRect](nssearchfield/rectforcancelbutton(whencentered:).md)

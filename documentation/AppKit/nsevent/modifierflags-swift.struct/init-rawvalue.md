@@ -12,6 +12,11 @@
 init(rawValue: UInt)
 ```
 
+## See Also
+
+- [Deprecated symbols](modifierflags-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
+
 
 ---
 

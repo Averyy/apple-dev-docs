@@ -30,6 +30,8 @@ Use this function to create a [`CGColorSpace`](https://developer.apple.com/docum
 
 For example, the following code defines the RGB color space for ITU-R BT.709-5:
 
+**Swift**:
+
 ```swift
 var rgbPrimaries = vImageRGBPrimaries(
     red_x: 0.64,
@@ -58,6 +60,40 @@ let colorSpace = vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(
     .defaultIntent,
     vImage_Flags(kvImageNoFlags),
     nil)
+```
+
+**Objective-C**:
+
+```objc
+vImageRGBPrimaries rgbPrimaries = {
+    .red_x   = 0.64f,
+    .green_x = 0.3f,
+    .blue_x  = 0.15f,
+    .white_x = 0.3127f,
+
+    .red_y   = 0.33f,
+    .green_y = 0.6f,
+    .blue_y  = 0.06f,
+    .white_y = 0.329f
+};
+
+vImageTransferFunction transferFunction = {
+    .c0     = 1.099f,
+    .c1     = 1.0f,
+    .c2     = 0.0f,
+    .c3     = -0.099f,
+    .gamma  = 0.45f,
+    .cutoff = 0.018f,
+    .c4     = 4.5f,
+    .c5     = 0.0f
+};
+
+CGColorSpaceRef colorSpace = vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(
+    &rgbPrimaries,
+    &transferFunction,
+    kCGRenderingIntentDefault,
+    kvImageNoFlags,
+    NULL);
 ```
 
 ## Parameters

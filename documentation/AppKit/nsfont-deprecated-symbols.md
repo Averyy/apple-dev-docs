@@ -1,12 +1,16 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func getAdvancements(NSSizeArray, forGlyphs: UnsafePointer<NSGlyph>, count: Int)](nsfont/getadvancements(_:forglyphs:count:).md)
   Returns an array of the advancements for the specified glyphs rendered by the receiver.
 - [func getAdvancements(NSSizeArray, forPackedGlyphs: UnsafeRawPointer, length: Int)](nsfont/getadvancements(_:forpackedglyphs:length:).md)
@@ -21,14 +25,14 @@ Review unsupported symbols and their replacements.
   Returns the named encoded glyph, or –1 if the receiver contains no such glyph.
 - [func screenFont(with: NSFontRenderingMode) -> NSFont](nsfont/screenfont(with:).md)
   Returns a bitmapped screen font, when sent to a font object representing a scalable PostScript font, with the specified rendering mode, matching the receiver in typeface and matrix (or size), or `nil` if such a font can’t be found.
-### Properties
+### Deprecated properties
 - [var renderingMode: NSFontRenderingMode](nsfont/renderingmode.md)
   The rendering mode of the font.
 - [var printer: NSFont](nsfont/printer.md)
   The scalable PostScript font corresponding to current font.
 - [var screen: NSFont](nsfont/screen.md)
   The bitmapped screen font for the current font.
-### Types
+### Deprecated types
 - [enum NSMultibyteGlyphPacking](nsmultibyteglyphpacking.md)
   A constant for glyph packing.
 - [enum NSFontRenderingMode](nsfontrenderingmode.md)

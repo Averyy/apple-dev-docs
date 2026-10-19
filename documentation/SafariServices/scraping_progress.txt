@@ -1,4 +1,4 @@
 Completed scraping Safari Services!
-Total pages scraped: 221
-Pages skipped (unchanged): 21
+Total pages scraped: 1
+Pages skipped (unchanged): 241
 Pages failed: 0

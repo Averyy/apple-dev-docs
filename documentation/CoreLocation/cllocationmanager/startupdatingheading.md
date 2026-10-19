@@ -38,7 +38,7 @@ If a compatible iPad or iPhone app calls this method when running in visionOS, t
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [var headingAvailable: Bool](cllocationmanager/headingavailable-swift.property.md)
   A Boolean value indicating whether the location manager is able to generate heading-related events.
 

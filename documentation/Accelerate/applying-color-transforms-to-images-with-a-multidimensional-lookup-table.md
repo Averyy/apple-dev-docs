@@ -38,8 +38,8 @@ Supply the lookup table as a contiguous array of samples that define the lookup 
 let tableData = [UInt16](unsafeUninitializedCapacity: lookupTableElementCount) {
     buffer, count in
     
-    /// Supply the samples in the range `0...65535`. The transform function
-    /// interpolates these to the range `0...1`.
+    // Supply the samples in the range `0...65535`. The transform function
+    // interpolates these to the range `0...1`.
     let multiplier = CGFloat(UInt16.max)
     var bufferIndex = 0
     
@@ -47,16 +47,16 @@ let tableData = [UInt16](unsafeUninitializedCapacity: lookupTableElementCount) {
         for green in ( 0 ..< entriesPerChannel) {
             for blue in ( 0 ..< entriesPerChannel) {
                 
-                /// Create normalized red, green, and blue values in the range `0...1`.
+                // Create normalized red, green, and blue values in the range `0...1`.
                 let normalizedColor = simd_double3(
                     x: CGFloat(red),
                     y: CGFloat(green),
                     z: CGFloat(blue)) / CGFloat(entriesPerChannel - 1)
      
-                /// Create a CMYK representsation of the RGB color.
+                // Create a CMYK representation of the RGB color.
                 let cmyk = ColorConverter.rgbToCMYK(normalizedColor) * multiplier
                 
-                /// Append the cyan, magenta, yellow, and black components to the buffer.
+                // Append the cyan, magenta, yellow, and black components to the buffer.
                 buffer[ bufferIndex ] = UInt16(cmyk.x)
                 bufferIndex += 1
                 buffer[ bufferIndex ] = UInt16(cmyk.y)
@@ -118,6 +118,8 @@ struct ColorConverter {
 
 Call [`vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)`](vimagemultidimensionaltable_create(_:_:_:_:_:_:_:).md) to create a multidimensional lookup table from the table data array. Because the code in this example only uses the 32-bit transform function, pass the [`kvImageMDTableHint_Float`](kvimagemdtablehint_float.md) hint to reduce memory overhead:
 
+**Swift**:
+
 ```swift
 var error = kvImageNoError
 
@@ -139,6 +141,33 @@ defer {
 }
 ```
 
+**Objective-C**:
+
+```objc
+vImage_Error error = kvImageNoError;
+
+const uint8_t tableEntriesPerDimension[3] = {entriesPerChannel,
+                                              entriesPerChannel,
+                                              entriesPerChannel};
+
+vImage_MultidimensionalTable lookupTable =
+    vImageMultidimensionalTable_Create(tableData,
+                                       srcChannelCount,
+                                       destChannelCount,
+                                       tableEntriesPerDimension,
+                                       kvImageMDTableHint_Float,
+                                       kvImageNoFlags,
+                                       &error);
+
+if (lookupTable == NULL) {
+    NSLog(@"Unable to create multidimensional table %ld.", error);
+}
+
+// ... use `lookupTable` ...
+
+vImageMultidimensionalTable_Release(lookupTable);
+```
+
 The lookup table structure is immutable and thread-safe, and therefore you can use it with multiple and concurrent calls to the appropriate transform function. After you finish using the lookup table, call [`vImageMultidimensionalTable_Release(_:)`](vimagemultidimensionaltable_release(_:).md) to free its resources.
 
 ##### Apply the Transform
@@ -146,6 +175,8 @@ The lookup table structure is immutable and thread-safe, and therefore you can u
 vImage provides two functions to apply the multidimensional lookup table to an image: [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planarf(_:_:_:_:_:_:).md) for 32-bit planar buffers, and [`vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planar16q12(_:_:_:_:_:_:).md) for 16Q12 planar buffers.
 
 The code below applies the lookup table to three 32-bit source buffers (`srcRedBuffer`, `srcGreenBuffer`, and `srcBlueBuffer`) and writes the result to four 32-bit destination buffers (`destCyanBuffer`, `destMagentaBuffer`, `destYellowBuffer`, and `destBlackBuffer`). For more information about working with planar buffers, see [`Optimizing image-processing performance`](optimizing-image-processing-performance.md).
+
+**Swift**:
 
 ```swift
 error = vImageMultiDimensionalInterpolatedLookupTable_PlanarF(
@@ -158,6 +189,25 @@ error = vImageMultiDimensionalInterpolatedLookupTable_PlanarF(
         
 if error != kvImageNoError {
     fatalError("Error calling transform function` \(error).")
+}
+```
+
+**Objective-C**:
+
+```objc
+const vImage_Buffer srcs[] = {srcRedBuffer, srcGreenBuffer, srcBlueBuffer};
+const vImage_Buffer dests[] = {destCyanBuffer, destMagentaBuffer,
+                               destYellowBuffer, destBlackBuffer};
+
+error = vImageMultiDimensionalInterpolatedLookupTable_PlanarF(srcs,
+                                                               dests,
+                                                               NULL,
+                                                               lookupTable,
+                                                               kvImageFullInterpolation,
+                                                               kvImageNoFlags);
+
+if (error != kvImageNoError) {
+    NSLog(@"Error calling transform function %ld.", error);
 }
 ```
 

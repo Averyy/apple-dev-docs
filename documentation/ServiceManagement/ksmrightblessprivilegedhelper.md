@@ -19,8 +19,6 @@ var kSMRightBlessPrivilegedHelper: String { get }
 
 - [var kSMRightModifySystemDaemons: String](ksmrightmodifysystemdaemons.md)
   The authorization rights key for modifying system daemons.
-- [var kSMRightModifySystemDaemons: String](ksmrightmodifysystemdaemons.md)
-  The authorization rights key for modifying system daemons.
 
 
 ---

@@ -6,7 +6,7 @@
 Gets the current basic description of the stream.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

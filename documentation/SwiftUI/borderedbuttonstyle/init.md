@@ -21,6 +21,11 @@ nonisolated
 init()
 ```
 
+## See Also
+
+- [init(tint: Color)](borderedbuttonstyle/init(tint:).md)
+  Creates a bordered button style with a tint color.
+
 
 ---
 

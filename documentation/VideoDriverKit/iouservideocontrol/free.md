@@ -6,7 +6,7 @@
 Frees the user video object.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

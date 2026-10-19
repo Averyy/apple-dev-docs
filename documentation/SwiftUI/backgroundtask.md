@@ -29,6 +29,8 @@ Use a value of this type with the [`backgroundTask(_:action:)`](scene/background
 ### Refreshing the app
 - [static func appRefresh(String) -> BackgroundTask<Void, Void>](backgroundtask/apprefresh(_:).md)
   A task that updates your app’s state in the background for a matching identifier.
+- [static var appRefresh: BackgroundTask<String?, Void>](backgroundtask/apprefresh.md)
+  A task that updates your app’s state in the background.
 ### Receiving connectivity updates
 - [static var bluetoothAlert: BackgroundTask<Void, Void>](backgroundtask/bluetoothalert.md)
   A background task used to receive critical alerts from paired bluetooth accessories.
@@ -50,8 +52,6 @@ Use a value of this type with the [`backgroundTask(_:action:)`](scene/background
 - [static func processingTask(String) -> BackgroundTask<Void, Void>](backgroundtask/processingtask(_:).md)
   A task that processes tasks in the background.
 ### Deprecated symbols
-- [static var appRefresh: BackgroundTask<String?, Void>](backgroundtask/apprefresh.md)
-  A task that updates your app’s state in the background.
 - [static var snapshot: BackgroundTask<SnapshotData, SnapshotResponse>](backgroundtask/snapshot.md)
   A background task used to update your app’s user interface in preparation for a snapshot.
 

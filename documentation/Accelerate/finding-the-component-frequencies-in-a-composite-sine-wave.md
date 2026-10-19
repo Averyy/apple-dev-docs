@@ -139,6 +139,8 @@ On return, `forwardOutputReal` contains the real parts of the forward FFT, and `
 
 Use the [`vDSP_zaspec`](vdsp_zaspec.md) function to compute the autospectrum of the frequency-domain data in the `forwardOutputReal` and `forwardOutputImag` arrays. The autospectrum is the sum of squares of the complex and real parts of each complex frequency-domain element. The code below computes the autospectrum:
 
+**Swift**:
+
 ```swift
 let autospectrum = [Float](unsafeUninitializedCapacity: halfN) {
     autospectrumBuffer, initializedCount in
@@ -162,6 +164,24 @@ let autospectrum = [Float](unsafeUninitializedCapacity: halfN) {
 }
 ```
 
+**Objective-C**:
+
+```objc
+// The `vDSP_zaspec` function accumulates its output. Clear the
+// uninitialized `autospectrum` buffer before computing the spectrum.
+float autospectrum[halfN];
+memset(autospectrum, 0, halfN * sizeof(float));
+
+DSPSplitComplex frequencyDomain = {
+    .realp = forwardOutputReal,
+    .imagp = forwardOutputImag
+};
+
+vDSP_zaspec(&frequencyDomain,
+            autospectrum,
+            (vDSP_Length)halfN);
+```
+
 The autospectrum of the forward FFT contains a series of high-magnitude items, rendered as vertical lines in the graph below:
 
 ![A diagram that shows a plot of the power spectrum of the original signal in the frequency domain.](/images/com.apple.accelerate/media-4264726@2x.png)
@@ -176,8 +196,8 @@ let componentFrequencyAmplitudePairs = autospectrum.enumerated().filter {
 }
 
 // Prints:
-//     ["frequency: 2 | amplitude: 0.80", "frequency: 7 | amplitude: 1.20",
-//      "frequency: 24 | amplitude: 0.70", "frequency: 50 | amplitude: 1.00"]"
+//     "["frequency: 2 | amplitude: 0.80", "frequency: 7 | amplitude: 1.20",
+//       "frequency: 24 | amplitude: 0.70", "frequency: 50 | amplitude: 1.00"]".
 
 print(componentFrequencyAmplitudePairs.map {
     "frequency: \($0.0) | amplitude: \(String(format: "%.2f", $0.1))"

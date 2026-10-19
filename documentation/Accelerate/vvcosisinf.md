@@ -30,7 +30,7 @@ func vvcosisinf(_: OpaquePointer, _: UnsafePointer<Float>, _: UnsafePointer<Int3
 
 This function calculates the complex number on the unit circle corresponding to the angle given by each element of a vector.
 
-The following code shows an example of using [`vvcosisinf(_:_:_:)`](vvcosisinf(_:_:_:).md).
+The following code shows an example of using [`vvcosisinf(_:_:_:)`](vvcosisinf(_:_:_:).md):
 
 **Swift**:
 

@@ -6,7 +6,7 @@
 Set if all the flags would be clear.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

@@ -28,11 +28,6 @@ Implementation of this method is optional.
 
 - `textView`: The text view containing the changes.
 
-## See Also
-
-- [func textView(UITextView, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uitextviewdelegate/textview(_:shouldchangetextin:replacementtext:).md)
-  Asks the delegate whether to replace the specified text in the text view.
-
 
 ---
 

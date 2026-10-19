@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-The properties of an arrangement view used to create its custom style.
+The properties of an arrangement view you provide to create a custom style.
 
 **Availability**:
 - iOS 27.1+
@@ -22,16 +22,15 @@ struct ArrangementViewStyleConfiguration
 
 ## Topics
 
-### Structures
+### Setting up a configuration
+- [var primary: ArrangementViewStyleConfiguration.Primary](arrangementviewstyleconfiguration/primary-swift.property.md)
+  The primary view to lay out in an arrangement view.
 - [ArrangementViewStyleConfiguration.Primary](arrangementviewstyleconfiguration/primary-swift.struct.md)
   A type-erased view of the primary content of an arrangement view.
+- [var secondary: ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.property.md)
+  The secondary view to lay out in an arrangement view.
 - [ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.struct.md)
   A type-erased view of the secondary content of an arrangement view.
-### Instance Properties
-- [var primary: ArrangementViewStyleConfiguration.Primary](arrangementviewstyleconfiguration/primary-swift.property.md)
-  The primary view of the arrangement.
-- [var secondary: ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.property.md)
-  The secondary view of the arrangement.
 
 ## See Also
 

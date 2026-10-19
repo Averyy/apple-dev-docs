@@ -20,8 +20,6 @@ case closePath
   Moves the path object’s current drawing point to the specified point.
 - [NSBezierPath.ElementType.lineTo](nsbezierpath/elementtype/lineto.md)
   Creates a straight line from the current drawing point to the specified point.
-- [static var curveTo: NSBezierPath.ElementType](nsbezierpath/elementtype/curveto.md)
-  Creates a curved line segment from the current point to the specified endpoint using two control points to define the curve.
 - [NSBezierPath.ElementType.cubicCurveTo](nsbezierpath/elementtype/cubiccurveto.md)
 - [NSBezierPath.ElementType.quadraticCurveTo](nsbezierpath/elementtype/quadraticcurveto.md)
 

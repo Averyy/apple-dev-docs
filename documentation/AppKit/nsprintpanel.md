@@ -49,8 +49,6 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The array of controller objects that manage the Print panel’s accessory views.
 ### Running the Panel
 - [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPrintPanel.Result) -> Void)?)](nsprintpanel/beginsheet(using:on:completionhandler:).md)
-- [func beginSheet(with: NSPrintInfo, modalFor: NSWindow, delegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsprintpanel/beginsheet(with:modalfor:delegate:didend:contextinfo:).md)
-  Displays a Print panel sheet and runs it modally for the specified window.
 - [func runModal() -> Int](nsprintpanel/runmodal.md)
   Displays the Print panel and begins the modal loop.
 - [func runModal(with: NSPrintInfo) -> Int](nsprintpanel/runmodal(with:).md)
@@ -61,6 +59,9 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [class NSPrintInfo](nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
 - [NSPrintPanel.Result](nsprintpanel/result.md)
+### Deprecated
+- [func beginSheet(with: NSPrintInfo, modalFor: NSWindow, delegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsprintpanel/beginsheet(with:modalfor:delegate:didend:contextinfo:).md)
+  Displays a Print panel sheet and runs it modally for the specified window.
 
 ## Relationships
 

@@ -20,6 +20,10 @@ Changing the value of this property tells the renderer that it can change the tr
 
 ## See Also
 
+- [var minimumScaleFactor: CGFloat](nsstringdrawingcontext/minimumscalefactor.md)
+  The scale factor that determines the smallest font size to use during drawing.
+- [var actualScaleFactor: CGFloat](nsstringdrawingcontext/actualscalefactor.md)
+  The actual scale factor that the system applied to the font during drawing.
 - [var actualTrackingAdjustment: CGFloat](nsstringdrawingcontext/actualtrackingadjustment.md)
   The actual tracking value that the system applied during drawing.
 

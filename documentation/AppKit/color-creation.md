@@ -64,10 +64,10 @@ Load colors from asset catalogs, and create colors from raw component values, su
 - [init(colorSpace: NSColorSpace, components: UnsafePointer<CGFloat>, count: Int)](nscolor/init(colorspace:components:count:).md)
   Creates a color object from the specified components of the given color space.
 ### Creating a system tint color
-- [init(for: NSControlTint)](nscolor/init(for:).md)
-  Returns the color object specified by the given control tint.
 - [enum NSControlTint](nscontroltint.md)
   Constants for specifying a cell’s tint color.
+- [init(for: NSControlTint)](nscolor/init(for:).md)
+  Returns the color object specified by the given control tint.
 ### Converting other types of color objects
 - [convenience init(Color)](nscolor/init(_:).md)
 - [init?(cgColor: CGColor)](nscolor/init(cgcolor:)-1hzl8.md)

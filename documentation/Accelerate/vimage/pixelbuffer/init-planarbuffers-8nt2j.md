@@ -46,7 +46,7 @@ let planar3 = vImage.PixelBuffer<vImage.PlanarF>(
 let interleaved = vImage.PixelBuffer<vImage.Interleaved8x4>(
     planarBuffers: [planar0, planar1, planar2, planar3])
 
-// Prints "[15, 17, 51, 85]"
+// Prints "[15, 17, 51, 85]".
 // = [255 / 17, 255 / 15, 255 / 5, 255 / 3]
 print(interleaved.array)
 ```

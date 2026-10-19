@@ -30,8 +30,10 @@ The following figure shows two systems of equations where the coefficient matrix
 
 The following code solves this system with a QR factorization of the coefficient matrix:
 
+**Swift**:
+
 ```swift
-/// Create the coefficient matrix _A_.
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
 let rowIndices: [Int32] =    [ 0,  1, 1,  2]
 let columnIndices: [Int32] = [ 2,  0, 2,  1]
 let aValues: [Double] =      [10, 20, 5, 50]
@@ -42,7 +44,7 @@ let A = SparseConvertFromCoordinate(3, 3,
                                     rowIndices, columnIndices,
                                     aValues)
 
-/// Factorize _A_.
+// Compute the factors of `A` using a QR decomposition.
 let factorization = SparseFactor(SparseFactorizationQR, A)
 
 defer {
@@ -50,7 +52,7 @@ defer {
     SparseCleanup(factorization)
 }
 
-/// Create the workspace.
+// Allocate the workspace.
 let nrhs = Int(A.structure.columnCount)
 let byteCount = factorization.solveWorkspaceRequiredStatic +
                     nrhs * factorization.solveWorkspaceRequiredPerRHS
@@ -61,12 +63,12 @@ defer {
     workspace.deallocate()
 }
 
-/// Create the right-hand-side matrix, _B_.
+// Create the right-hand-side matrix `B` (also holds the solution `X` on return).
 var bValues: [Double] = [30, 35, 100,
                          300, 350, 1000]
 let n = bValues.count
 
-/// Solve the system.
+// Solve the system.
 let xValues = [Double](unsafeUninitializedCapacity: n) {
     buffer, count in
     bValues.withUnsafeMutableBufferPointer { bPtr in
@@ -87,6 +89,64 @@ let xValues = [Double](unsafeUninitializedCapacity: n) {
         
         count = n
     }
+}
+print(xValues) // Prints "[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+double aValues[]    = {10, 20, 5, 50};
+
+SparseMatrix_Double A = SparseConvertFromCoordinate(3, 3,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    aValues);
+
+// Compute the factors of `A` using a QR decomposition.
+SparseOpaqueFactorization_Double factorization = SparseFactor(SparseFactorizationQR, A);
+
+// Allocate workspace.
+int nrhs = 2;
+size_t byteCount = factorization.solveWorkspaceRequiredStatic +
+                   nrhs * factorization.solveWorkspaceRequiredPerRHS;
+void *workspace = malloc(byteCount > 0 ? byteCount : 1);
+
+// Create the right-hand-side matrix `B` and solution matrix `X`.
+double bValues[] = {30, 35, 100, 300, 350, 1000};
+double xData[6]  = {0};
+
+DenseMatrix_Double B = {
+    .rowCount     = 3,
+    .columnCount  = 2,
+    .columnStride = 3,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = bValues
+};
+
+DenseMatrix_Double X = {
+    .rowCount     = 3,
+    .columnCount  = 2,
+    .columnStride = 3,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = xData
+};
+
+// Solve `AX = B`, writing the result into `X`.
+SparseSolve(factorization, B, X, workspace);
+
+// Prints "[1, 2, 3, 10, 20, 30]".
+printf("[%g, %g, %g, %g, %g, %g]\n",
+      xData[0], xData[1], xData[2],
+      xData[3], xData[4], xData[5]);
+
+free(workspace);
+SparseCleanup(A);
+SparseCleanup(factorization);
 ```
 
 On return, `xValues` contains the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.

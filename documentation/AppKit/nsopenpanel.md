@@ -40,8 +40,8 @@ Apps use the Open panel as a convenient way to query the user for the name of a 
 - [var canResolveUbiquitousConflicts: Bool](nsopenpanel/canresolveubiquitousconflicts.md)
   A Boolean value that indicates how the panel responds to iCloud documents that have conflicting versions.
 ### Deprecated
-- [Deprecated Symbols](nsopenpanel-deprecated-symbols.md)
-  Review symbols that are no longer supported, and find the replacements to use instead.
+- [Deprecated symbols](nsopenpanel-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

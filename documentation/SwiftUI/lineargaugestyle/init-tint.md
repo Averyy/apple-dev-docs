@@ -15,6 +15,11 @@ nonisolated
 init(tint: Color)
 ```
 
+## See Also
+
+- [init()](lineargaugestyle/init.md)
+  Creates a linear gauge style.
+
 
 ---
 

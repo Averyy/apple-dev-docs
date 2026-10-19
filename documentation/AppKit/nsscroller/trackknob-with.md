@@ -22,8 +22,6 @@ This method is invoked automatically when the receiver receives `theEvent` mouse
 
 - [var hitPart: NSScroller.Part](nsscroller/hitpart.md)
   A part code indicating the manner in which the scrolling should be performed.
-- [func trackScrollButtons(with: NSEvent)](nsscroller/trackscrollbuttons(with:).md)
-  Tracks the scroll buttons and sends action messages to the receiver’s target.
 
 
 ---

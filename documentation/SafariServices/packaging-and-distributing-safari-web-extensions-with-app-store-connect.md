@@ -36,11 +36,11 @@ For more information about creating an app record, see [`Add a new app`](https:/
 
 ##### Package the Extension Files
 
-After creating an app record, navigate to the Xcode Cloud tab. Under Safari Web Extension Packager, click Upload.
+After creating an app record, navigate to Users and Access. If you don’t see Users and Access, click the More button (…) to show it. In Users and Access, click the Xcode Cloud tab, select Safari Web Extension Packager, and click Upload.
 
-Select and upload your extension files. The Safari Web Extension Package assembles the app for your extension. You need to upload the full contents of your extension, including the manifest and all related resources.
+Select and upload your extension files. The Safari Web Extension Packager assembles the app for your extension. You need to upload the full contents of your extension, including the manifest and all related resources.
 
-You can see the status of the packaging process on the Builds page. You can upload multiple builds at once. When packaging is complete, distribute your extension to beta testers using TestFlight. For more information on using TestFlight, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases)
+You can see the status of the packaging process in the Xcode cloud tab. You can upload multiple builds at once. When packaging is complete, distribute your extension to beta testers using TestFlight. For more information on using TestFlight, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases)
 
 Review any reported exceptions, and see [`Assessing your Safari web extension’s browser compatibility`](assessing-your-safari-web-extension-s-browser-compatibility.md) for details on how to resolve them.
 

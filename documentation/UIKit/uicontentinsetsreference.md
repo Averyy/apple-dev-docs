@@ -54,6 +54,8 @@ enum UIContentInsetsReference
   The boundary to reference when defining content insets.
 - [var supplementaryContentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/supplementarycontentinsetsreference.md)
   The reference boundary for content insets on boundary supplementary items.
+- [var supplementariesFollowContentInsets: Bool](nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
+  A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 
 
 ---

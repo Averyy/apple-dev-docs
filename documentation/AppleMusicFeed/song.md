@@ -28,19 +28,23 @@ object Song
 - [object Song.Prices](song/prices-data.dictionary.md)
   A mapping of locale to pricing information.
 - [object Song.RelatedAlbum](song/relatedalbum.md)
-  Information about a related album.
 - [object Song.RelatedArtist](song/relatedartist.md)
   Information about a related artist.
 - [object Song.ReleaseDate](song/releasedate-data.dictionary.md)
   A mapping of locale to release date for the song.
+- [object Song.RelevanceScore](song/relevancescore-data.dictionary.md)
+  A score representing song relevance, used to rank songs when surfacing content.
 - [object Song.TitleVersion](song/titleversion-data.dictionary.md)
   A mapping of locale to translations for the specific title-version translation type.
 - [object Song.TitleVersionPronunciation](song/titleversionpronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific title-version-pronunciation-name translation type.
+### Dictionaries
+- [object Song.Album](song/album-data.dictionary.md)
+  Information about the related album that contains the song.
 
 ## Properties
 
-- `album` ([Song.RelatedAlbum]): A list of albums that contain the song.
+- `album` (Song.Album): The album that contains the song.
 - `artistRoles` ([Song.ArtistRole]): **(Required)** A list of artists and their roles.
 - `audioLocale` (string): The locale of the audio. This usually corresponds to the language of the song. The locale uses the IETF language tag format.
 - `contentTraits` ([string]): **(Required)** A list of the content traits for the song. The possible values are `remix`, `live`, `compilation`, and `karaoke`.
@@ -59,6 +63,7 @@ object Song
 - `prices` (Song.Prices): **(Required)** A mapping of locale to pricing information. Pricing offer parameters include `price`, `priceType`, and `quality`.
 - `primaryArtists` ([Song.RelatedArtist]): **(Required)** A list of the primary artists of the song.
 - `releaseDate` (Song.ReleaseDate): **(Required)** A mapping of locale to release date, in YYYY-MM-DD format.
+- `relevanceScore` (Song.RelevanceScore): A score used to rank the relevance of the song.
 - `shortPreview` (string): **(Required)** A template for the URL for a short audio preview of the song.
 - `titleVersion` (Song.TitleVersion): **(Required)** A mapping of locale to translations for the specific title-version translation type.
 - `titleVersionPronunciation` (Song.TitleVersionPronunciation): **(Required)** A mapping of locale to translations for the specific title-version-pronunciation-name translation type.

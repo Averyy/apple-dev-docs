@@ -37,8 +37,6 @@ The method only returns the cursor set by your application using `NSCursor` meth
   Makes the receiver the current cursor.
 - [func mouseExited(with: NSEvent)](nscursor/mouseexited(with:).md)
   Automatically sent to the receiver when the cursor exits a cursor rectangle owned by the receiver.
-- [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
-  Returns the current system cursor.
 - [class var arrow: NSCursor](nscursor/arrow.md)
   Returns the default cursor, the arrow cursor.
 - [class var contextualMenu: NSCursor](nscursor/contextualmenu.md)
@@ -67,6 +65,8 @@ The method only returns the cursor set by your application using `NSCursor` meth
   Returns the zoom-in cursor.
 - [class var zoomOut: NSCursor](nscursor/zoomout.md)
   Returns the zoom-out cursor.
+- [class var columnResize: NSCursor](nscursor/columnresize.md)
+  Returns the cursor for resizing a column (vertical divider) in either direction.
 
 
 ---

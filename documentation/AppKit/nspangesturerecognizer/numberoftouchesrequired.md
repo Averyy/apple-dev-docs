@@ -18,6 +18,10 @@ var numberOfTouchesRequired: Int { get set }
 
 - [class NSTouchBar](nstouchbar.md)
   An object that provides dynamic contextual controls in the Touch Bar of supported models of MacBook Pro.
+- [var maximumNumberOfTouches: Int](nspangesturerecognizer/maximumnumberoftouches.md)
+  The maximum number of touches allowed to recognize this gesture
+- [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
+  The minimum number of touches needed to recognize this gesture
 
 
 ---

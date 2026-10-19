@@ -65,6 +65,8 @@ You can also monitor the events your app receives and modify or cancel some even
   The Core Graphics event object corresponding to this event.
 - [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
+- [var context: NSGraphicsContext?](nsevent/context.md)
+  The display graphics context for this event.
 ### Getting modifier flags
 - [var modifierFlags: NSEvent.ModifierFlags](nsevent/modifierflags-swift.property.md)
   An integer bit field that indicates the pressed modifier keys.
@@ -233,9 +235,6 @@ You can also monitor the events your app receives and modify or cancel some even
 ### Converting a mouse event’s position into a SpriteKit node’s coordinate space
 - [func location(in: SKNode) -> CGPoint](nsevent/location(in:).md)
   Returns the location of the receiver in the coordinate system of the given node.
-### Deprecated
-- [var context: NSGraphicsContext?](nsevent/context.md)
-  The display graphics context for this event.
 ### Initializers
 - [init?(CGEvent: CGEvent)](nsevent/init(cgevent:)-8acvx.md)
 - [init?(coder: NSCoder)](nsevent/init(coder:).md)

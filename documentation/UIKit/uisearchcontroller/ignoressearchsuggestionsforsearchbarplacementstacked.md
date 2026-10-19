@@ -37,12 +37,14 @@ If you set this value to [`true`](https://developer.apple.com/documentation/swif
   A Boolean indicating whether the search results controller is visible when the search controller is active.
 - [var searchBarPlacement: UINavigationItem.SearchBarPlacement](uisearchcontroller/searchbarplacement.md)
   The placement of the search bar in the navigation bar.
-- [var automaticallyShowsScopeBar: Bool](uisearchcontroller/automaticallyshowsscopebar.md)
-  A Boolean indicating whether the search controller manages the visibility of the search bar’s scope bar.
 - [var scopeBarActivation: UISearchController.ScopeBarActivation](uisearchcontroller/scopebaractivation-swift.property.md)
   A mode that determines when the search controller shows and hides the scope bar.
 - [UISearchController.ScopeBarActivation](uisearchcontroller/scopebaractivation-swift.enum.md)
   Constants that specify the modes for showing and hiding the scope bar.
+- [var automaticallyShowsScopeBar: Bool](uisearchcontroller/automaticallyshowsscopebar.md)
+  A Boolean indicating whether the search controller manages the visibility of the search bar’s scope bar.
+- [var dimsBackgroundDuringPresentation: Bool](uisearchcontroller/dimsbackgroundduringpresentation.md)
+  A Boolean indicating whether to dim the underlying content during a search.
 
 
 ---

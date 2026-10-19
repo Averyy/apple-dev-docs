@@ -41,6 +41,9 @@ object Album
   A mapping of locale to translations for the specific title-version translation type.
 - [object Album.TitleVersionPronunciation](album/titleversionpronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific title-version-pronunciation-name translation type.
+### Dictionaries
+- [object Album.RelevanceScore](album/relevancescore-data.dictionary.md)
+  A score representing album relevance, used to rank albums when surfacing content.
 
 ## Properties
 
@@ -63,6 +66,7 @@ object Album
 - `primaryArtists` ([Album.RelatedArtist]): **(Required)** A list of the primary artists of the album.
 - `recordLabels` ([Album.RecordLabel]): **(Required)** A list of record labels for the album.
 - `releaseDate` (Album.ReleaseDate): **(Required)** A mapping of locale to release date, in YYYY-MM-DD format.
+- `relevanceScore` (Album.RelevanceScore): A score used to rank the relevance of the album.
 - `songs` ([Album.RelatedSong]): **(Required)** A list of songs in the album.
 - `titleVersion` (Album.TitleVersion): **(Required)** A mapping of locale to translations for the specific title-version translation type.
 - `titleVersionPronunciation` (Album.TitleVersionPronunciation): **(Required)** A mapping of locale to translations for the specific title-version-pronunciation-name translation type.

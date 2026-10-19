@@ -21,8 +21,6 @@ The stacking of levels takes precedence over the stacking of windows within each
 ## Topics
 
 ### Constants
-- [static var dock: NSWindow.Level](nswindow/level-swift.struct/dock.md)
-  The level for the dock.
 - [static var floating: NSWindow.Level](nswindow/level-swift.struct/floating.md)
   Useful for floating palettes.
 - [static var mainMenu: NSWindow.Level](nswindow/level-swift.struct/mainmenu.md)
@@ -41,6 +39,8 @@ The stacking of levels takes precedence over the stacking of windows within each
   Reserved for submenus. Synonymous with `NSTornOffMenuWindowLevel`, which is preferred.
 - [static var tornOffMenu: NSWindow.Level](nswindow/level-swift.struct/tornoffmenu.md)
   The level for a torn-off menu. Synonymous with `NSSubmenuWindowLevel`.
+- [static var dock: NSWindow.Level](nswindow/level-swift.struct/dock.md)
+  The level for the dock.
 ### Creating a Window Level
 - [init(Int)](nswindow/level-swift.struct/init(_:).md)
   Creates a window level using the given integer value.

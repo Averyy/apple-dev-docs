@@ -6,7 +6,7 @@
 Adds a video object to the driver.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

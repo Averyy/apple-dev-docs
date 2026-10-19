@@ -34,6 +34,10 @@ To create your header or footer content, you add subviews to the view in this pr
   The current content configuration of the view.
 - [var automaticallyUpdatesContentConfiguration: Bool](uitableviewheaderfooterview/automaticallyupdatescontentconfiguration.md)
   A Boolean value that determines whether the view automatically updates its content configuration when its state changes.
+- [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
+  A primary text label for the view.
+- [var detailTextLabel: UILabel?](uitableviewheaderfooterview/detailtextlabel.md)
+  A detail text label for the view.
 
 
 ---

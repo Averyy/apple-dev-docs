@@ -35,7 +35,7 @@ let src = vImage.PixelBuffer<vImage.InterleavedFx3>(
 
 let planarBuffers = src.planarBuffers()
 
-// Prints "[0.125] [0.25] [0.5]"
+// Prints "[0.125] [0.25] [0.5]".
 for planarBuffer in planarBuffers {
     print(planarBuffer.array)
 }

@@ -30,6 +30,11 @@ Toggle("Enhance Sound", isOn: $isEnhanced)
     .toggleStyle(.switch)
 ```
 
+## See Also
+
+- [init(tint: Color)](switchtogglestyle/init(tint:).md)
+  Creates a switch style with a tint color.
+
 
 ---
 

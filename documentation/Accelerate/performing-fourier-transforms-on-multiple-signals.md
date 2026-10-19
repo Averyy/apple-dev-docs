@@ -23,24 +23,24 @@ static func makeCompositeSineWave(from frequencyAmplitudePairs: [(f: Float,
     return [Float](unsafeUninitializedCapacity: count) {
         buffer, initializedCount in
         
-        /// Fill the buffer with zeros.
+        // Fill the buffer with zeros.
         vDSP.fill(&buffer, with: 0)
-        /// Create a reusable array to store the sine wave for each iteration.
+        // Create a reusable array to store the sine wave for each iteration.
         var iterationValues = [Float](repeating: 0, count: count)
         
         for frequencyAmplitudePair in frequencyAmplitudePairs {
-            /// Fill the working array with a ramp in the range `0 ..< frequency`.
+            // Fill the working array with a ramp in the range `0 ..< frequency`.
             vDSP.formRamp(withInitialValue: 0,
                           increment: frequencyAmplitudePair.f / Float(count / 2),
                           result: &iterationValues)
-            /// Compute `sin(x * .pi)` for each element.
+            // Compute `sin(x * .pi)` for each element.
             vForce.sinPi(iterationValues, result: &iterationValues)
             if frequencyAmplitudePair.a != 1 {
-                /// Mulitply each element by the specified amplitude.
+                // Multiply each element by the specified amplitude.
                 vDSP.multiply(frequencyAmplitudePair.a, iterationValues,
                               result: &iterationValues)
             }
-            /// Add this sine wave iteration to the composite sine wave accumulator.
+            // Add this sine wave iteration to the composite sine wave accumulator.
             vDSP.add(iterationValues, buffer, result: &buffer)
         }
         
@@ -85,6 +85,8 @@ The vDSP FFT and DFT functions work with data in split-complex format. Split-com
 
 Use the [`vDSP_ctoz`](https://developer.apple.com/documentation/kernel/1579975-vdsp_ctoz) function to convert the real values in the signal array to split-complex format. The [`vDSP_ctoz`](https://developer.apple.com/documentation/kernel/1579975-vdsp_ctoz) function transforms the real values so that the real array contains even elements, and the imaginary array contains odd elements.
 
+**Swift**:
+
 ```swift
 let complexValuesCount = signal.count / 2
 
@@ -110,7 +112,28 @@ signal.withUnsafeBytes { signalPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+// The `signal` is a float array of 1024 elements (4 signals * 256 each).
+vDSP_Length complexValuesCount = 512; // `signal` element count / 2
+
+float complexReals[512];
+float complexImaginaries[512];
+
+DSPSplitComplex splitComplex = {
+    .realp = complexReals,
+    .imagp = complexImaginaries
+};
+
+vDSP_ctoz((DSPComplex *)signal, 2,
+          &splitComplex, 1,
+          complexValuesCount);
+```
+
 The [`vDSP_fftm_zrip`](vdsp_fftm_zrip.md) function performs the FFT. Create a [`DSPSplitComplex`](dspsplitcomplex.md) structure that acts as a mediatory between the real and imaginary arrays and the FFT function. The third parameter to [`vDSP_fftm_zrip`](vdsp_fftm_zrip.md) (the stride between the individual signals) is measured in complex elements.
+
+**Swift**:
 
 ```swift
 let signalCount = 4
@@ -133,6 +156,30 @@ complexReals.withUnsafeMutableBufferPointer { realPtr in
             vDSP_destroy_fftsetup(fft)
         }
     }
+}
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Length signalCount = 4;
+
+DSPSplitComplex splitComplex2 = {
+    .realp = complexReals,
+    .imagp = complexImaginaries
+};
+
+vDSP_Length log2n = (vDSP_Length)log2f((float)realValuesCount);
+FFTSetup fft = vDSP_create_fftsetup(log2n, kFFTRadix2);
+if (fft) {
+    vDSP_fftm_zrip(fft,
+                   &splitComplex2, 1,
+                   (vDSP_Stride)(realValuesCount / 2),
+                   log2n,
+                   signalCount,
+                   kFFTDirection_Forward);
+
+    vDSP_destroy_fftsetup(fft);
 }
 ```
 
@@ -169,7 +216,7 @@ for i in 0 ..< signalCount {
         $0.element > sqrt(.ulpOfOne)
     }
 
-    // Prints
+    // Prints:
     //  [(offset: 1, element: 65536.0), (offset: 5, element: 2621.4412)]
     //  [(offset: 5, element: 65536.016), (offset: 7, element: 5898.24)]
     //  [(offset: 3, element: 65536.0), (offset: 9, element: 23592.96)]
@@ -224,6 +271,8 @@ The following image is a visualization of the values in `realSignal` as a solid 
 
 The [`vDSP_fftm_zip`](vdsp_fftm_zip.md) function performs the FFT in-place on the real and imaginary arrays.
 
+**Swift**:
+
 ```swift
 let signalCount = 4
 
@@ -245,6 +294,31 @@ realSignal.withUnsafeMutableBufferPointer { realPtr in
             vDSP_destroy_fftsetup(fft)
         }
     }
+}
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Length signalCount2 = 4;
+
+DSPSplitComplex splitComplex3 = {
+    .realp = realSignal,
+    .imagp = imaginarySignal
+};
+
+// The `complexValuesCount` is 256 in this section.
+vDSP_Length log2n2 = (vDSP_Length)log2f((float)complexValuesCount);
+FFTSetup fft2 = vDSP_create_fftsetup(log2n2, kFFTRadix2);
+if (fft2) {
+    vDSP_fftm_zip(fft2,
+                  &splitComplex3, 1,
+                  (vDSP_Stride)complexValuesCount,
+                  log2n2,
+                  signalCount2,
+                  kFFTDirection_Forward);
+
+    vDSP_destroy_fftsetup(fft2);
 }
 ```
 
@@ -282,7 +356,7 @@ for i in 0 ..< signalCount {
         $0.element > sqrt(.ulpOfOne)
     }
     
-    // Prints
+    // Prints:
     // [(offset: 1, element: 16384.0), (offset: 5, element: 655.3602)]
     // [(offset: 5, element: 16384.0), (offset: 7, element: 1474.56)]
     // [(offset: 3, element: 16384.0), (offset: 9, element: 5898.24)]

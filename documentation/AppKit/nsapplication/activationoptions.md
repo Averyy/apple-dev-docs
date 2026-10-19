@@ -19,12 +19,11 @@ struct ActivationOptions
 ### Options
 - [static var activateAllWindows: NSApplication.ActivationOptions](nsapplication/activationoptions/activateallwindows.md)
   By default, activation brings only the main and key windows forward.  If you specify NSApplicationActivateAllWindows, all of the application’s windows are brought forward.
+- [static var activateIgnoringOtherApps: NSApplication.ActivationOptions](nsapplication/activationoptions/activateignoringotherapps.md)
+  The application is activated regardless of the currently active app.
 ### Initializers
 - [init(rawValue: UInt)](nsapplication/activationoptions/init(rawvalue:).md)
   Initializes a new activation options structure.
-### Deprecated
-- [static var activateIgnoringOtherApps: NSApplication.ActivationOptions](nsapplication/activationoptions/activateignoringotherapps.md)
-  The application is activated regardless of the currently active app.
 
 ## Relationships
 

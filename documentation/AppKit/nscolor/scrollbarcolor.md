@@ -20,6 +20,7 @@ The system color used for scroll bars. For more information, see [`NSColor`](nsc
 
 ## See Also
 
+- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var alternateSelectedControlColor: NSColor](nscolor/alternateselectedcontrolcolor.md)
   The system color used for the face of a selected control in a list or table.
 - [class var controlAlternatingRowBackgroundColors: [NSColor]](nscolor/controlalternatingrowbackgroundcolors.md)

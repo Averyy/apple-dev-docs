@@ -2,11 +2,15 @@
 
 **Framework**: UIKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func showCGGlyphs(UnsafePointer<CGGlyph>, positions: UnsafePointer<CGPoint>, count: Int, font: UIFont, matrix: CGAffineTransform, attributes: [NSAttributedString.Key : Any], in: CGContext)](nslayoutmanager/showcgglyphs(_:positions:count:font:matrix:attributes:in:).md)
   Renders the glyphs at the specified positions, using the specified attributes.
 - [func invalidateGlyphs(onLayoutInvalidationForGlyphRange: NSRange)](../appkit/nslayoutmanager/invalidateglyphs(onlayoutinvalidationforglyphrange:).md)
@@ -47,7 +51,7 @@ Review unsupported symbols and their replacements.
   Returns an array of rectangles and, by reference, the number of such rectangles, that define the region in the given container enclosing the given glyph range.
 - [func substituteFont(for: NSFont) -> NSFont](../appkit/nslayoutmanager/substitutefont(for:).md)
   Replaces the specified font with a suitable screen font if one is available.
-### Properties
+### Deprecated properties
 - [var hyphenationFactor: CGFloat](nslayoutmanager/hyphenationfactor.md)
   The threshold controlling when hyphenation is done.
 - [attributedString](nslayoutmanager-attributedstring.md)
@@ -56,7 +60,7 @@ Review unsupported symbols and their replacements.
   The layout manager’s current layout options.
 - [var usesScreenFonts: Bool](../appkit/nslayoutmanager/usesscreenfonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
-### Types
+### Deprecated types
 - [Glyph Attributes](../appkit/glyph-attributes.md)
   Attributes that are used only inside the glyph generation machinery, but must also be shared between components.
 

@@ -6,7 +6,7 @@
 A flag that indicates starting or stopping for normal I/O operation.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

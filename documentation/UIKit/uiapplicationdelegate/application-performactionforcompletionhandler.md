@@ -37,6 +37,12 @@ If you find that your app was indeed launched using a quick action, perform the 
 
 ## See Also
 
+- [func applicationDidBecomeActive(UIApplication)](uiapplicationdelegate/applicationdidbecomeactive(_:).md)
+  Tells the delegate that the app has become active.
+- [func applicationWillResignActive(UIApplication)](uiapplicationdelegate/applicationwillresignactive(_:).md)
+  Tells the delegate that the app is about to become inactive.
+- [func applicationWillEnterForeground(UIApplication)](uiapplicationdelegate/applicationwillenterforeground(_:).md)
+  Tells the delegate that the app is about to enter the foreground.
 - [func application(UIApplication, willContinueUserActivityWithType: String) -> Bool](uiapplicationdelegate/application(_:willcontinueuseractivitywithtype:).md)
   Tells the delegate if your app takes responsibility for notifying users when a continuation activity takes longer than expected.
 - [func application(UIApplication, continue: NSUserActivity, restorationHandler: ([any UIUserActivityRestoring]?) -> Void) -> Bool](uiapplicationdelegate/application(_:continue:restorationhandler:).md)
@@ -45,6 +51,12 @@ If you find that your app was indeed launched using a quick action, perform the 
   Tells the delegate that the activity was updated.
 - [func application(UIApplication, didFailToContinueUserActivityWithType: String, error: any Error)](uiapplicationdelegate/application(_:didfailtocontinueuseractivitywithtype:error:).md)
   Tells the delegate that the activity couldn’t be continued.
+- [func application(UIApplication, open: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool](uiapplicationdelegate/application(_:open:options:).md)
+  Asks the delegate to open a resource specified by a URL, and provides a dictionary of launch options.
+- [func application(UIApplication, userDidAcceptCloudKitShareWith: CKShareMetadata)](uiapplicationdelegate/application(_:userdidacceptcloudkitsharewith:).md)
+  Tells the delegate that the app now has access to shared information in CloudKit.
+- [func application(UIApplication, supportedInterfaceOrientationsFor: UIWindow?) -> UIInterfaceOrientationMask](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md)
+  Asks the delegate for the interface orientations to use for the view controllers in the specified window.
 
 
 ---

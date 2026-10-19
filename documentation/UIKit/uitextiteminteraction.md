@@ -50,6 +50,10 @@ enum UITextItemInteraction
   Asks the delegate whether the specified text view allows user interaction with the provided text attachment in the specified range of text.
 - [func textView(UITextView, shouldInteractWith: URL, in: NSRange) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:)-98tho.md)
   Asks the delegate whether the specified text view allows user interaction with the specified URL in the specified range of text.
+- [func textView(UITextView, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uitextviewdelegate/textview(_:shouldchangetextin:replacementtext:).md)
+  Asks the delegate whether to replace the specified text in the text view.
+- [func textView(UITextView, editMenuForTextIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextviewdelegate/textview(_:editmenufortextin:suggestedactions:).md)
+  Asks the delegate for the menu to display in the text view, based on the text range and actions the system provides.
 
 
 ---

@@ -26,10 +26,10 @@ For example, use this style for a button that completes some task and returns to
 
 - [UIBarButtonItem.Style.plain](uibarbuttonitem/style-swift.enum/plain.md)
   A button style with plain text styling.
-- [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
-  A simple button style with a border.
 - [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
   A button item style for a prominent button.
+- [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
+  A simple button style with a border.
 
 
 ---

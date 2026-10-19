@@ -28,6 +28,8 @@ func vImageExtractChannel_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: 
 
 The following code extracts channel `1` from the source buffer and writes the result to the destination buffer:
 
+**Swift**:
+
 ```swift
 let source = vImage.PixelBuffer<vImage.Interleaved8x4>(
     pixelValues: [10, 20, 30, 40,
@@ -49,8 +51,37 @@ source.withUnsafePointerToVImageBuffer { src in
 
 // Prints:
 //      "[20,
-//        60]"
+//        60]".
 print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+uint8_t src[8] = {10, 20, 30, 40, 50, 60, 70, 80};
+uint8_t dst[2] = {0, 0};
+
+vImage_Buffer srcBuf = {
+    .data = src,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 4
+};
+
+vImage_Buffer dstBuf = {
+    .data = dst,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 1
+};
+
+vImageExtractChannel_ARGB8888(&srcBuf,
+                              &dstBuf,
+                              1,
+                              kvImageNoFlags);
+
+// Prints "[20, 60]".
+printf("[%d, %d]\n", dst[0], dst[1]);
 ```
 
 ## Parameters

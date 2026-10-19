@@ -32,7 +32,7 @@ let a: [Double] = [-1.5, 2.25, 3.6,
 
 let sumOfSquares = vDSP.sumOfSquares(a)
 
-// Prints "sum of squares 38.8125"
+// Prints "sum of squares 38.8125".
 print(String(format: "sum of squares %.4f", sumOfSquares))
 ```
 

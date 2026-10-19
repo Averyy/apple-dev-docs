@@ -65,6 +65,8 @@ By design, each [`NSAlert`](nsalert.md) object represents a single alert with a 
   The alert’s suppression checkbox.
 - [var showsSuppressionButton: Bool](nsalert/showssuppressionbutton.md)
   Specifies whether the alert includes a suppression checkbox, which you can employ to allow a user to opt out of seeing the alert again.
+- [func beginSheetModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsalert/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
+  Runs the alert modally as an alert sheet attached to a specified window.
 ### Accessing alert text
 - [var informativeText: String](nsalert/informativetext.md)
   The alert’s informative text.
@@ -83,9 +85,6 @@ By design, each [`NSAlert`](nsalert.md) object represents a single alert with a 
 ### Getting alert windows
 - [var window: NSWindow](nsalert/window.md)
   The app-modal panel or document-modal sheet that corresponds to the alert.
-### Deprecated
-- [func beginSheetModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsalert/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
-  Runs the alert modally as an alert sheet attached to a specified window.
 
 ## Relationships
 

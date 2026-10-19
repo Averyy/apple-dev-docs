@@ -58,7 +58,7 @@ A table column object determines the width (including the maximum and minimum wi
 ### Setting Tooltips
 - [var headerToolTip: String?](nstablecolumn/headertooltip.md)
   The string that’s displayed in a help tag over the table column header.
-### Deprecated Methods
+### Deprecated methods
 - [var dataCell: Any](nstablecolumn/datacell.md)
   The cell prototype used by the table column to draw individual cells.
 - [func dataCell(forRow: Int) -> Any](nstablecolumn/datacell(forrow:).md)

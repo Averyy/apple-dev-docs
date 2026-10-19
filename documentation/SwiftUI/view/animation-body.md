@@ -36,10 +36,10 @@ MyView(isActive: isActive)
 
 ## See Also
 
-- [func animation(_:)](view/animation(_:).md)
-  Applies the given animation to this view when this view changes.
 - [func animation<V>(Animation?, value: V) -> some View](view/animation(_:value:).md)
   Applies the given animation to this view when the specified value changes.
+- [func animation(_:)](view/animation(_:).md)
+  Applies the given animation to this view when this view changes.
 
 
 ---

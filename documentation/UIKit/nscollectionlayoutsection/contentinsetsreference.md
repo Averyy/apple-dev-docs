@@ -34,6 +34,8 @@ The default value of this property is [`UIContentInsetsReference.automatic`](uic
   The reference boundary for content insets on boundary supplementary items.
 - [enum UIContentInsetsReference](uicontentinsetsreference.md)
   Constants that describe the reference point of the content insets.
+- [var supplementariesFollowContentInsets: Bool](nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
+  A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 
 
 ---

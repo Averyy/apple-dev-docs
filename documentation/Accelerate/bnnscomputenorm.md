@@ -69,7 +69,7 @@ BNNSComputeNorm(&outputDescriptor,
                  BNNSL2Norm,
                  0b111)
 
-// Prints `[9587.45]`
+// Prints "[9587.45]".
 print(Array(outputData))
 ```
 
@@ -96,7 +96,7 @@ BNNSComputeNorm(&outputDescriptor,
                  BNNSL2Norm,
                  0b100)
 
-// Prints
+// Prints:
 //      [1005.0378, 2010.075, 3015.113,
 //       4020.1511, 5025.189, 6030.227]
 print(Array(outputData))
@@ -125,7 +125,7 @@ BNNSComputeNorm(&outputDescriptor,
                  BNNSL2Norm,
                  0b101)
 
-// Prints `[3760.507, 8819.171]`
+// Prints "[3760.507, 8819.171]".
 print(Array(outputData))
 ```
 

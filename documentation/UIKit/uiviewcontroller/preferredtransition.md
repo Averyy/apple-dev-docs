@@ -28,8 +28,10 @@ Use this property to define which transition the system uses when you present a 
 
 ## See Also
 
-- [UIViewController.Transition](uiviewcontroller/transition.md)
-  An object that defines the transition animation when switching to a new view controller.
+- [func show(UIViewController, sender: Any?)](uinavigationcontroller/show(_:sender:).md)
+  Presents the specified view controller in the navigation interface.
+- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+  Use the fluid zoom transition to provide a continuously interactive and responsive experience in your app.
 
 
 ---

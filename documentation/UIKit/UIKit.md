@@ -102,9 +102,6 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
   Add support for Writing Tools to your app’s text views.
 - [Handwriting recognition](handwriting-recognition.md)
   Configure text fields and custom views that accept text to handle input from Apple Pencil.
-### Deprecated
-- [Deprecated symbols](deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
 ### Reference
 - [UIKit Enumerations](uikit-enumerations.md)
 - [UIKit Constants](uikit-constants.md)
@@ -113,6 +110,9 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
   The UIKit framework defines data types that are used in multiple places throughout the framework.
 - [UIKit Functions](uikit-functions.md)
   The UIKit framework defines a number of functions, many of them used in graphics and drawing operations.
+### Deprecated
+- [Deprecated symbols](deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 
 ---

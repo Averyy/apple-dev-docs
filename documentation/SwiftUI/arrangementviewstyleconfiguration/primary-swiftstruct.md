@@ -28,6 +28,15 @@ A type-erased view of the primary content of an arrangement view.
 - [SendableMetatype](../swift/sendablemetatype.md)
 - [View](view.md)
 
+## See Also
+
+- [var primary: ArrangementViewStyleConfiguration.Primary](arrangementviewstyleconfiguration/primary-swift.property.md)
+  The primary view to lay out in an arrangement view.
+- [var secondary: ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.property.md)
+  The secondary view to lay out in an arrangement view.
+- [ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.struct.md)
+  A type-erased view of the secondary content of an arrangement view.
+
 
 ---
 

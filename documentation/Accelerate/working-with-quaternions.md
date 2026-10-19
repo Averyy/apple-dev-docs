@@ -26,11 +26,11 @@ let axis = simd_double3(x: -2,
                         y: 1,
                         z: 0.5)
 
-// `q1` length = 2.29128
+// The `q1` length equals 2.29128.
 let q1 = simd_quatd(angle: .pi,
                     axis: axis)
 
-// `q2` length = 1
+// The `q2` length equals 1.
 let q2 = simd_quatd(angle: .pi,
                     axis: simd_normalize(axis))
 ```

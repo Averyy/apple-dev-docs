@@ -30,6 +30,8 @@ Upon the completion of an activity, or the dismissal of the activity view contro
 
 - [var completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler?](uiactivityviewcontroller/completionwithitemshandler-swift.property.md)
   The completion handler to execute after the activity view controller is dismissed.
+- [var completionHandler: UIActivityViewController.CompletionHandler?](uiactivityviewcontroller/completionhandler-swift.property.md)
+  The completion handler to execute after the activity view controller is dismissed.
 
 
 ---

@@ -18,6 +18,11 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [let ASWebAuthenticationSessionErrorDomain: String](aswebauthenticationsessionerrordomain.md)
+  The error domain for a web authentication session.
+
 
 ---
 

@@ -62,7 +62,7 @@ let error = BNNSGatherND(&inputDescriptor,
                          &outputDescriptor,
                          nil)
                          
-// `outputDescriptor` contains `[20.0, 21.0, 22.0, 23.0]`   
+// The `outputDescriptor` contains `[20.0, 21.0, 22.0, 23.0]`   
 ```
 
 The following code shows that a 2D index gathers a 1D slice:
@@ -82,7 +82,7 @@ let error = BNNSGatherND(&inputDescriptor,
                          &outputDescriptor,
                          nil)
 
-// `outputDescriptor` contains `[20.0, 21.0]`
+// The `outputDescriptor` contains `[20.0, 21.0]`
 ```
 
 The following code shows that a 3D index gathers a single element:
@@ -102,7 +102,7 @@ let error = BNNSGatherND(&inputDescriptor,
                          &outputDescriptor,
                          nil)
                          
-// `outputDescriptor` contains `[23.0]`  
+// The `outputDescriptor` contains `[23.0]`  
 ```
 
 ## Parameters

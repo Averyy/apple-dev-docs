@@ -28,6 +28,8 @@ func vImageExtractChannel_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, _ dest: 
 
 The following code extracts channel `1` from the source buffer and writes the result to the destination buffer:
 
+**Swift**:
+
 ```swift
 let source = vImage.PixelBuffer<vImage.InterleavedFx4>(
     pixelValues: [10, 20, 30, 40,
@@ -41,16 +43,45 @@ let destination = vImage.PixelBuffer<vImage.PlanarF>(
 source.withUnsafePointerToVImageBuffer { src in
     destination.withUnsafePointerToVImageBuffer { dst in
         _ = vImageExtractChannel_ARGBFFFF(src,
-                                         dst,
-                                         1,
-                                         vImage_Flags(kvImageNoFlags))
+                                          dst,
+                                          1,
+                                          vImage_Flags(kvImageNoFlags))
     }
 }
 
 // Prints:
 //      "[20.0,
-//        60.0]"
+//        60.0]".
 print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+float src[8] = {10.0f, 20.0f, 30.0f, 40.0f,  50.0f, 60.0f, 70.0f, 80.0f};
+float dst[2] = {0.0f, 0.0f};
+
+vImage_Buffer srcBuf = {
+    .data = src,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 16
+};
+
+vImage_Buffer dstBuf = {
+    .data = dst,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 4
+};
+
+vImageExtractChannel_ARGBFFFF(&srcBuf,
+                              &dstBuf,
+                              1,
+                              kvImageNoFlags);
+
+// Prints "[20.0, 60.0]".
+printf("[%.1f, %.1f]\n", dst[0], dst[1]);
 ```
 
 ## Parameters

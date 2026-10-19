@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: method
 
-Returns the reserved regions of a given kind and options.
+Returns the reserved regions of a kind that overlap the view.
 
 **Availability**:
 - iOS 27.1+
@@ -19,15 +19,25 @@ Returns the reserved regions of a given kind and options.
 @preconcurrency func reservedRegions(kind: UIView.ReservedRegion.Kind, options: UIView.ReservedRegion.QueryOptions = []) -> [UIView.ReservedRegion]
 ```
 
+#### Return Value
+
+The reserved regions that overlap the view, with frames in the view’s coordinate space.
+
+#### Discussion
+
+Use this method to arrange your view’s content around areas that the device hardware reserves, such as a camera or the fold of a hinge. UIKit tracks the regions you read in [`updateConstraints()`](uiview/updateconstraints().md) and runs it again when the regions change.
+
+For more information, see [`UIView.ReservedRegion`](uiview/reservedregion.md).
+
 ## Parameters
 
-- `kind`: The kind of the region.
-- `options`: The options for querying the reserved regions.
+- `kind`: The kind of reserved region to return, such as [`occlusion`](uiview/reservedregion/kind-swift.struct/occlusion.md) or [`division`](uiview/reservedregion/kind-swift.struct/division.md).
+- `options`: Options that change which regions the method returns. By default, the method returns only active regions. Pass [`includeInactive`](uiview/reservedregion/queryoptions/includeinactive.md) to also return regions that aren’t currently active.
 
 ## See Also
 
 - [UIView.ReservedRegion](uiview/reservedregion.md)
-  A region within a view’s coordinate space that another entity occupies.
+  A region within a view’s coordinate space that another entity reserves.
 
 
 ---

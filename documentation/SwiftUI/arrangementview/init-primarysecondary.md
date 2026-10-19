@@ -31,7 +31,7 @@ init(@ContentBuilder primary: () -> Primary, @ContentBuilder secondary: () -> Se
 - [init(ArrangementViewStyleConfiguration)](arrangementview/init(_:).md)
   Creates an arrangement view from a style configuration.
 - [struct ArrangementViewStyleConfiguration](arrangementviewstyleconfiguration.md)
-  The properties of an arrangement view used to create its custom style.
+  The properties of an arrangement view you provide to create a custom style.
 
 
 ---

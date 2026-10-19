@@ -53,8 +53,6 @@ enum UIWindowSceneResizingRestrictions
 - [class UIWindowSceneDragInteraction](uiwindowscenedraginteraction.md)
   An interaction you add to a view that enables pan gestures to change the containing window scene’s position.
 - [UIWindowScene.ResizingRestrictions](uiwindowscene/resizingrestrictions.md)
-- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
-  The placement of a window scene relative to other scenes in the workspace.
 
 
 ---

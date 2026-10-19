@@ -72,8 +72,6 @@ UIWindowSceneDragInteraction *windowDragInteraction = [[UIWindowSceneDragInterac
   Constants that indicate the types of animations available for dismissing a scene’s windows.
 - [UIWindowScene.ResizingRestrictions](uiwindowscene/resizingrestrictions.md)
 - [enum UIWindowSceneResizingRestrictions](uiwindowsceneresizingrestrictions.md)
-- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
-  The placement of a window scene relative to other scenes in the workspace.
 
 
 ---

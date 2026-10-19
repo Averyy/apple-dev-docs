@@ -147,7 +147,7 @@ To create a fully customized image picker for browsing the photo library, use cl
   The flash mode used by the active camera.
 - [UIImagePickerController.CameraFlashMode](uiimagepickercontroller/cameraflashmode-swift.enum.md)
   Constants that specify the flash mode to use with the active camera.
-### Configuring the export presets
+### Deprecated
 - [var imageExportPreset: UIImagePickerController.ImageURLExportPreset](uiimagepickercontroller/imageexportpreset.md)
   The preset to use when preparing images for export to your app.
 - [UIImagePickerController.ImageURLExportPreset](uiimagepickercontroller/imageurlexportpreset.md)

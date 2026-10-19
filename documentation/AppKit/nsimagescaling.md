@@ -25,7 +25,7 @@ enum NSImageScaling
   Do not scale the image.
 - [NSImageScaling.scaleProportionallyUpOrDown](nsimagescaling/scaleproportionallyupordown.md)
   Scale the image to its maximum possible dimensions while both staying within the destination area and preserving its aspect ratio.
-### Type Properties
+### Deprecated
 - [static var NSScaleNone: NSImageScaling](nsimagescaling/nsscalenone.md)
 - [static var NSScaleProportionally: NSImageScaling](nsimagescaling/nsscaleproportionally.md)
 - [static var NSScaleToFit: NSImageScaling](nsimagescaling/nsscaletofit.md)
@@ -50,8 +50,6 @@ enum NSImageScaling
   Constants for specifying how a button behaves when pressed and how it displays its state.
 - [NSControl.ImagePosition](nscontrol/imageposition.md)
   A constant for specifying the position of a button’s image relative to its title.
-- [typealias StateValue](nscell/statevalue.md)
-  Constants for specifying a cell’s state and are used mostly for buttons.
 - [NSCell.StyleMask](nscell/stylemask.md)
   Constants for specifying what happens when a button is pressed or is displaying its alternate state.
 - [enum NSControlTint](nscontroltint.md)

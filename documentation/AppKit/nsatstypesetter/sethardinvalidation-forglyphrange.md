@@ -30,6 +30,8 @@ func setHardInvalidation(_ flag: Bool, forGlyphRange glyphRange: NSRange)
   Breaks a line by word-wrapping before the character at the specified index.
 - [func willSetLineFragmentRect(UnsafeMutablePointer<NSRect>, forGlyphRange: NSRange, usedRect: UnsafeMutablePointer<NSRect>, baselineOffset: UnsafeMutablePointer<CGFloat>)](nsatstypesetter/willsetlinefragmentrect(_:forglyphrange:usedrect:baselineoffset:).md)
   Notifies subclasses that the typesetter is about to set a new line fragment.
+- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>!, characterIndexes: UnsafeMutablePointer<Int>!, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>!, elasticBits: UnsafeMutablePointer<ObjCBool>!) -> Int](nsatstypesetter/getglyphs(in:glyphs:characterindexes:glyphinscriptions:elasticbits:).md)
+  Extracts the information needed to lay out the glyphs in the given glyph buffer from the given glyph range.
 
 
 ---

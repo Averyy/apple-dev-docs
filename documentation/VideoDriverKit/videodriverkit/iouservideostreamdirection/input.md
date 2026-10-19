@@ -6,7 +6,7 @@
 Input stream direction.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

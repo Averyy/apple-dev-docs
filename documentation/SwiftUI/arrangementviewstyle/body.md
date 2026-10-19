@@ -24,7 +24,7 @@ associatedtype Body : View
 - [func makeBody(configuration: Self.Configuration) -> Self.Body](arrangementviewstyle/makebody(configuration:).md)
   Creates a view for the arrangement view style from the configuration.
 - [ArrangementViewStyle.Configuration](arrangementviewstyle/configuration.md)
-  The configuration used to create the arrangement view style.
+  The configuration the style uses to create the arrangement view.
 
 
 ---

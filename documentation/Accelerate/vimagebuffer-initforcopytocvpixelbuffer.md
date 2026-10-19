@@ -30,6 +30,8 @@ The vImage library represents multiple plane Core Video pixel buffers as individ
 
 The following shows the code for creating the three destination buffers required to represent a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8planar) pixel buffer. On return of [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md), the three vImage buffers contain the luminance, Cb, and Cr image data.
 
+**Swift**:
+
 ```swift
 let colorSpace = CGColorSpaceCreateDeviceRGB()
 
@@ -59,7 +61,7 @@ var destinationBuffers = (0 ..< destinationBufferCount).map { _ in
     return vImage_Buffer()
 }
 
-// `cvPixelBuffer` is the destination Core Video pixel buffer.
+// The `cvPixelBuffer` is the destination Core Video pixel buffer.
 CVPixelBufferLockBaseAddress(cvPixelBuffer,
                              CVPixelBufferLockFlags(rawValue: 0))
 
@@ -76,7 +78,7 @@ assert(vImageConverter_GetNumberOfSourceBuffers(converterCGtoCV) == 1)
 
 // On return, `destinationBuffers` contains the YpCbCr conversion of the RGB
 // image data in the vImage source buffer.
-// `sourceBuffer` is the source vImage buffer.
+// The `sourceBuffer` is the source vImage buffer.
 vImageConvert_AnyToAny(converterCGtoCV,
                        &sourceBuffer,
                        &destinationBuffers,
@@ -85,6 +87,67 @@ vImageConvert_AnyToAny(converterCGtoCV,
 
 CVPixelBufferUnlockBaseAddress(cvPixelBuffer,
                                CVPixelBufferLockFlags(rawValue: 0))
+```
+
+**Objective-C**:
+
+```objc
+CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+
+vImage_CGImageFormat cgImageFormat = {
+    .bitsPerComponent = 8,
+    .bitsPerPixel = 32,
+    .colorSpace = colorSpace,
+    .bitmapInfo = kCGBitmapByteOrderDefault | kCGImageAlphaNoneSkipFirst,
+    .renderingIntent = kCGRenderingIntentDefault
+};
+
+vImageCVImageFormatRef cvImageFormat = vImageCVImageFormat_Create(
+    kCVPixelFormatType_420YpCbCr8Planar,
+    kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2,
+    kCVImageBufferChromaLocation_Center,
+    colorSpace,
+    0);
+
+vImage_Error error = kvImageNoError;
+vImageConverterRef converterCGtoCV = vImageConverter_CreateForCGToCVImageFormat(
+    &cgImageFormat,
+    cvImageFormat,
+    NULL,
+    kvImageNoFlags,
+    &error);
+
+unsigned int destinationBufferCount = vImageConverter_GetNumberOfDestinationBuffers(converterCGtoCV);
+vImage_Buffer *destinationBuffers = (vImage_Buffer *)calloc(destinationBufferCount, sizeof(vImage_Buffer));
+
+// The `cvPixelBuffer` is the destination Core Video pixel buffer.
+CVPixelBufferLockBaseAddress(cvPixelBuffer, 0);
+
+// Initialize the destination buffers.
+vImageBuffer_InitForCopyToCVPixelBuffer(
+    destinationBuffers,
+    converterCGtoCV,
+    cvPixelBuffer,
+    kvImageNoAllocate);
+
+// The source has an interleaved format with one or more channels,
+// and is encodable with a `vImage_CGImageFormat`.
+
+// On return, `destinationBuffers` contains the YpCbCr conversion of the RGB
+// image data in the vImage source buffer.
+// The `sourceBuffer` is the source vImage buffer.
+vImageConvert_AnyToAny(converterCGtoCV,
+                       &sourceBuffer,
+                       destinationBuffers,
+                       NULL,
+                       kvImageNoFlags);
+
+CVPixelBufferUnlockBaseAddress(cvPixelBuffer, 0);
+
+free(destinationBuffers);
+vImageConverter_Release(converterCGtoCV);
+vImageCVImageFormat_Release(cvImageFormat);
+CGColorSpaceRelease(colorSpace);
 ```
 
 ## Parameters

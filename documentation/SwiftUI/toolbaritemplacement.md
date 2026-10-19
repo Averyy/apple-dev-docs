@@ -66,7 +66,7 @@ In iOS, iPadOS, and macOS, the system uses the space available to the toolbar wh
   A placement for items in the keyboard section.
 - [static func accessoryBar<ID>(id: ID) -> ToolbarItemPlacement](toolbaritemplacement/accessorybar(id:).md)
   Creates a unique accessory bar placement.
-### Deprecated symbols
+### Deprecated
 - [init<ID>(id: ID)](toolbaritemplacement/init(id:).md)
   Creates a custom accessory bar item placement.
 - [static let navigationBarLeading: ToolbarItemPlacement](toolbaritemplacement/navigationbarleading.md)

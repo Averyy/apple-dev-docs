@@ -30,7 +30,7 @@ The output vector, `C`.
 
 #### Discussion
 
-This function calculates the division of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`.
+This function calculates the division of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

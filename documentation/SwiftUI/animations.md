@@ -34,12 +34,12 @@ For design guidance, see [`Motion`](https://developer.apple.com/design/human-int
 - [struct Animation](animation.md)
   The way a view changes over time to create a smooth visual transition from one state to another.
 ### Adding state-based animation to a view
-- [func animation(_:)](view/animation(_:).md)
-  Applies the given animation to this view when this view changes.
 - [func animation<V>(Animation?, value: V) -> some View](view/animation(_:value:).md)
   Applies the given animation to this view when the specified value changes.
 - [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](view/animation(_:body:).md)
   Applies the given animation to all animatable values within the `body` closure.
+- [func animation(_:)](view/animation(_:).md)
+  Applies the given animation to this view when this view changes.
 ### Creating phase-based animation
 - [Controlling the timing and movements of your animations](controlling-the-timing-and-movements-of-your-animations.md)
   Build sophisticated animations that you control using phase and keyframe animators.
@@ -99,6 +99,8 @@ For design guidance, see [`Motion`](https://developer.apple.com/design/human-int
   A type that can serve as the animatable data of an animatable type.
 - [struct EmptyAnimatableData](emptyanimatabledata.md)
   An empty type for animatable data.
+- [protocol AnimatableModifier](animatablemodifier.md)
+  A modifier that can create another modifier with animation.
 ### Updating a view on a schedule
 - [Updating watchOS apps with timelines](../watchos-apps/updating-watchos-apps-with-timelines.md)
   Seamlessly schedule updates to your user interface, even while it’s inactive.
@@ -177,9 +179,6 @@ For design guidance, see [`Motion`](https://developer.apple.com/design/human-int
   Creates an environment values, transaction, container values, or focused values entry.
 - [protocol TransactionKey](transactionkey.md)
   A key for accessing values in a transaction.
-### Deprecated types
-- [protocol AnimatableModifier](animatablemodifier.md)
-  A modifier that can create another modifier with animation.
 
 ## See Also
 

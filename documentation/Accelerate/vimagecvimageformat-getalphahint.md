@@ -28,6 +28,8 @@ Zero if the alpha hint isn’t opaque, or if the hint isn’t set. Nonzero if th
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetAlphaHint(_:)`](vimagecvimageformat_getalphahint(_:).md):
 
+**Swift**:
+
 ```swift
 let alphaHint = withUnsafeBytes(of: cvImageFormat) { bytes in
     let format = bytes.assumingMemoryBound(
@@ -35,6 +37,14 @@ let alphaHint = withUnsafeBytes(of: cvImageFormat) { bytes in
     
     return vImageCVImageFormat_GetAlphaHint(format)
 }
+```
+
+**Objective-C**:
+
+```objc
+vImageConstCVImageFormatRef constFormat = cvImageFormat;
+
+int alphaHint = vImageCVImageFormat_GetAlphaHint(constFormat);
 ```
 
 ## Parameters

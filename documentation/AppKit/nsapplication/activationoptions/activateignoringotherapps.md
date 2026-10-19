@@ -20,6 +20,11 @@ By default, activation deactivates the calling app (assuming it was active), and
 
 > ❗ **Important**:  You should **rarely pass this flag** because stealing key focus produces a poor user experience.
 
+## See Also
+
+- [static var activateAllWindows: NSApplication.ActivationOptions](nsapplication/activationoptions/activateallwindows.md)
+  By default, activation brings only the main and key windows forward.  If you specify NSApplicationActivateAllWindows, all of the application’s windows are brought forward.
+
 
 ---
 

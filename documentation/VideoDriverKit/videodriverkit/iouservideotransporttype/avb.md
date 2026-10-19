@@ -6,7 +6,7 @@
 The transport type identifier for video devices connected via AVB.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

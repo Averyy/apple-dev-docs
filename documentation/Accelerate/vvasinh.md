@@ -26,6 +26,36 @@ func vvasinh(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Double] = [0, 1, 3]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the inverse hyperbolic sine of each element in `x`.
+vvasinh(&y, &x, &n)
+
+// Prints "[0.0, 0.8813735870195429, 1.8184464592320668]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+double x[3] = {0, 1, 3};
+double y[3];
+int n = 3;
+
+// Calculate the inverse hyperbolic sine of each element in `x`.
+vvasinh(y, x, &n);
+
+// Prints "[0, 0.881374, 1.81845]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acosh<U>(U) -> [Double]](vforce/acosh(_:)-1j3qt.md)

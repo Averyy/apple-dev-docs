@@ -19,8 +19,6 @@ var borderRect: NSRect { get }
 - [Box Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Box/Box.html#//apple_ref/doc/uid/10000017i)
 - [var boxType: NSBox.BoxType](nsbox/boxtype-swift.property.md)
   The receiver’s box type.
-- [var borderType: NSBorderType](nsbox/bordertype.md)
-  The receiver’s border type.
 - [var isTransparent: Bool](nsbox/istransparent.md)
   A Boolean value that indicates whether the receiver is transparent.
 - [var title: String](nsbox/title.md)
@@ -33,6 +31,8 @@ var borderRect: NSRect { get }
   The cell used to display the receiver’s title.
 - [var titleRect: NSRect](nsbox/titlerect.md)
   The rectangle in which the receiver’s title is drawn.
+- [var borderType: NSBorderType](nsbox/bordertype.md)
+  The receiver’s border type.
 
 
 ---

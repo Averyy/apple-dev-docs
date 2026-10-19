@@ -22,7 +22,7 @@ static func divide<T, U, V>(_ vectorA: T, _ vectorB: U, result: inout V) where T
 
 #### Discussion
 
-This function calculates the division of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`.
+This function calculates the division of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

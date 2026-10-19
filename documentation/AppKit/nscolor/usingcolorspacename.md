@@ -26,14 +26,8 @@ The new `NSColor` object or `nil` if the specified conversion cannot be done.
 
 - [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
   The name of the color space associated with the color.
-- [class var ignoresAlpha: Bool](nscolor/ignoresalpha.md)
-  A Boolean value that indicates whether the app supports alpha.
-- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
-  The name of the color space associated with the color.
 - [func usingColorSpaceName(NSColorSpaceName?, device: [NSDeviceDescriptionKey : Any]?) -> NSColor?](nscolor/usingcolorspacename(_:device:).md)
   Creates a new color object for the same color, but in the specified color space and specific to the provided device.
-- [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
-  Sent after the user changes control tint preference.
 
 
 ---

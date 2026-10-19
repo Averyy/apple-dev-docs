@@ -32,8 +32,10 @@ Use this function to calculate the factorization of a sparse matrix to pass to t
 
 The following code solves this system with a QR factorization of the coefficient matrix:
 
+**Swift**:
+
 ```swift
-/// Create the coefficient matrix _A_.
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
 let rowIndices: [Int32] =    [ 0,  1, 1,  2]
 let columnIndices: [Int32] = [ 2,  0, 2,  1]
 let aValues: [Float] =       [10, 20, 5, 50]
@@ -44,7 +46,7 @@ let A = SparseConvertFromCoordinate(3, 3,
                                     rowIndices, columnIndices,
                                     aValues)
 
-/// Factorize _A_.
+// Compute the factors of `A` using a QR decomposition.
 let factorization = SparseFactor(SparseFactorizationQR, A)
 
 defer {
@@ -52,7 +54,7 @@ defer {
     SparseCleanup(factorization)
 }
 
-/// Create the right-hand-side vector, _b_.
+// Create the right-hand-side vector `b` (also holds the solution on return).
 var bValues: [Float] = [30.0, 35.0, 100.0]
 
 bValues.withUnsafeMutableBufferPointer { bPtr in
@@ -62,6 +64,42 @@ bValues.withUnsafeMutableBufferPointer { bPtr in
     
     SparseSolve(factorization, xb)
 }
+
+print(bValues) // Prints "[1.0, 2.0, 3.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+float aValues[]     = {10, 20, 5, 50};
+
+SparseMatrix_Float A = SparseConvertFromCoordinate(3, 3,
+                                                   4, 1,
+                                                   (SparseAttributes_t){0},
+                                                   rowIndices, columnIndices,
+                                                   aValues);
+
+// Compute the factors of `A` using a QR decomposition.
+SparseOpaqueFactorization_Float factorization = SparseFactor(SparseFactorizationQR, A);
+
+// Create the right-hand-side vector `b` (also holds the solution on return).
+float bValues[] = {30.0f, 35.0f, 100.0f};
+
+DenseVector_Float xb = {
+    .count = 3,
+    .data  = bValues
+};
+
+SparseSolve(factorization, xb);
+
+// Prints "[1, 2, 3]".
+printf("[%g, %g, %g]\n", bValues[0], bValues[1], bValues[2]);
+
+SparseCleanup(A);
+SparseCleanup(factorization);
 ```
 
 On return, `bValues` contains the values `[1.0, 2.0, 3.0]`.

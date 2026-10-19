@@ -28,6 +28,8 @@ A new [`SparseMatrix_Double`](sparsematrix_double.md).
 
 The following code shows an example of creating a [`SparseMatrix_Double`](sparsematrix_double.md) structure from a BLAS opaque matrix and multiplying it by a vector:
 
+**Swift**:
+
 ```swift
 guard let blasMatrix = sparse_matrix_create_double(4, 4) else {
     return
@@ -44,19 +46,19 @@ defer {
     SparseCleanup(A)
 }
 
-/// The values for _x_ in _y=Ax_.
+// The values for `x` in `y=Ax`.
 var xValues = [10.0, -1.0, -1.0, 10.0]
 
-/// The values for _y_ in _y=Ax_.
+// The values for `y` in `y=Ax`.
 let yValues = [Double](unsafeUninitializedCapacity: xValues.count) {
     resultBuffer, count in
     
     xValues.withUnsafeMutableBufferPointer { xValuesPtr in
-        /// The _x_ in _y=Ax_.
+        // The `x` in `y=Ax`.
         let x = DenseVector_Double(count: 4,
                                    data: xValuesPtr.baseAddress!)
         
-        /// The _y_ in _y=Ax_.
+        // The `y` in `y=Ax`.
         let y = DenseVector_Double(count: 4,
                                    data: resultBuffer.baseAddress!)
         
@@ -65,6 +67,38 @@ let yValues = [Double](unsafeUninitializedCapacity: xValues.count) {
     
     count = xValues.count
 }
+
+print(yValues) // Prints "[140.0, 0.0, 0.0, 200.0]".
+```
+
+**Objective-C**:
+
+```objc
+sparse_matrix_double blasMatrix = sparse_matrix_create_double(4, 4);
+
+sparse_insert_entry_double(blasMatrix, 1.0, 0, 0);
+sparse_insert_entry_double(blasMatrix, 4.0, 3, 0);
+sparse_insert_entry_double(blasMatrix, 13.0, 0, 3);
+sparse_insert_entry_double(blasMatrix, 16.0, 3, 3);
+
+SparseMatrix_Double A = SparseConvertFromOpaque(blasMatrix);
+
+// The values for `x` in `y=Ax`.
+double xValues[] = {10.0, -1.0, -1.0, 10.0};
+
+// The values for `y` in `y=Ax`.
+double yValues[4];
+
+DenseVector_Double x = { .count = 4, .data = xValues };
+DenseVector_Double y = { .count = 4, .data = yValues };
+
+SparseMultiply(A, x, y);
+
+// Prints "[140, 0, 0, 200]".
+printf("[%g, %g, %g, %g]\n",
+      yValues[0], yValues[1], yValues[2], yValues[3]);
+
+SparseCleanup(A);
 ```
 
 On return, `yValues` contains the values `[140.0, 0.0, 0.0, 200.0]`.

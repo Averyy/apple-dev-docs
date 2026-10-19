@@ -37,6 +37,10 @@ static var inset: InsetListStyle { get }
   The list style that describes the behavior and appearance of a plain list.
 - [static var sidebar: SidebarListStyle](liststyle/sidebar.md)
   The list style that describes the behavior and appearance of a sidebar list.
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedListStyle](liststyle/bordered(alternatesrowbackgrounds:).md)
+  The list style that describes the behavior and appearance of a list with standard border.
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetListStyle](liststyle/inset(alternatesrowbackgrounds:).md)
+  The list style that describes the behavior and appearance of an inset list with optional alternating row backgrounds.
 
 
 ---

@@ -22,7 +22,7 @@ static func multiply<S, T, U, V>(addition additionAB: (a: S, b: T), addition add
 
 #### Discussion
 
-This function calculates the products of the first `N` elements of the addition of vectors `A` and `B` and the addition of vectors `C` and `D`.
+This function calculates the products of the first `N` elements of the addition of vectors `A` and `B` and the addition of vectors `C` and `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

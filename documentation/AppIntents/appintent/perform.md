@@ -31,7 +31,7 @@ func perform() async throws -> Self.PerformResult
 
 #### Return Value
 
-The result of the action. You can use the result to tell the system to perform additional actions. For example, include an `OpensAppIntent` type if you want the system to open your app and perform another action. You can also provide the system with dialog and snippet content along with the result.
+The result of the action. You can use the result to tell the system to perform additional actions. For example, include an [`OpensIntent`](opensintent.md) type if you want the system to open your app and perform another action. You can also provide the system with dialog and snippet content along with the result.
 
 #### Discussion
 

@@ -58,6 +58,8 @@ Each section can have its own background, header, and footer to distinguish it f
   The reference boundary for content insets on boundary supplementary items.
 - [enum UIContentInsetsReference](uicontentinsetsreference.md)
   Constants that describe the reference point of the content insets.
+- [var supplementariesFollowContentInsets: Bool](nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
+  A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 ### Configuring additional views
 - [var boundarySupplementaryItems: [NSCollectionLayoutBoundarySupplementaryItem]](nscollectionlayoutsection/boundarysupplementaryitems.md)
   An array of the supplementary items that are associated with the boundary edges of the section, such as headers and footers.
@@ -66,9 +68,6 @@ Each section can have its own background, header, and footer to distinguish it f
 ### Rendering items
 - [var visibleItemsInvalidationHandler: NSCollectionLayoutSectionVisibleItemsInvalidationHandler?](nscollectionlayoutsection/visibleitemsinvalidationhandler.md)
   A closure called before each layout cycle to allow modification of the items in the section immediately before they’re displayed.
-### Deprecated
-- [var supplementariesFollowContentInsets: Bool](nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
-  A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 
 ## Relationships
 

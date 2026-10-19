@@ -17,7 +17,7 @@ A message that tells people why the app is requesting to send user data to Apple
 
 #### Discussion
 
-> ❗ **Important**:  This key is required if your app uses APIs that send user data to Apple’s speech recognition servers.
+> ❗ **Important**:  Include this key if your app uses the Speech framework. This applies regardless of whether you set [`requiresOnDeviceRecognition`](https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/requiresondevicerecognition) to `true` or `false`. If this key isn’t present, your app crashes when it calls [`requestAuthorization(_:)`](https://developer.apple.com/documentation/speech/sfspeechrecognizer/requestauthorization(_:)).
 
 ## See Also
 

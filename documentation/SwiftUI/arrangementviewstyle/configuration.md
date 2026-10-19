@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: typealias
 
-The configuration used to create the arrangement view style.
+The configuration the style uses to create the arrangement view.
 
 **Availability**:
 - iOS 27.1+

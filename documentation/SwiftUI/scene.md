@@ -100,6 +100,8 @@ extension MyCustomType: Transition {
   Adds an action to perform when the given value changes.
 - [func handlesExternalEvents(matching: Set<String>) -> some Scene](scene/handlesexternalevents(matching:).md)
   Specifies the external events for which SwiftUI opens a new instance of the modified scene.
+- [func onChange<V>(of: V, perform: (V) -> Void) -> some Scene](scene/onchange(of:perform:).md)
+  Adds an action to perform when the given value changes.
 ### Creating background tasks
 - [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some Scene](scene/backgroundtask(_:action:).md)
   Runs the specified action when the system provides a background task.
@@ -209,9 +211,6 @@ extension MyCustomType: Transition {
   Sets the content brightness of an immersive space.
 - [func immersiveEnvironmentBehavior(ImmersiveEnvironmentBehavior) -> some Scene](scene/immersiveenvironmentbehavior(_:).md)
   Sets the immersive environment behavior that should apply when this scene opens.
-### Deprecated symbols
-- [func onChange<V>(of: V, perform: (V) -> Void) -> some Scene](scene/onchange(of:perform:).md)
-  Adds an action to perform when the given value changes.
 
 ## Relationships
 

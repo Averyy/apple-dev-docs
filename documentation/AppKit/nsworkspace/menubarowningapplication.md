@@ -40,8 +40,6 @@ This property contains the running app instance for the app that owns the displa
   Returns the frontmost app, which is the app that receives key events.
 - [var runningApplications: [NSRunningApplication]](nsworkspace/runningapplications.md)
   Returns an array of running apps.
-- [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](nsworkspace/getinfoforfile(_:application:type:).md)
-  Retrieves information about the specified file.
 
 
 ---

@@ -30,14 +30,16 @@ The following figure shows two systems of equations where the coefficient matrix
 
 ![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703914@2x.png)
 
-The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix *A0*, the code refactors and solves for matrix *A1*.
+The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix *A0*, the code refactors and solves for matrix *A1*:
+
+**Swift**:
 
 ```swift
-/// Define the sparsity structure of matrices `A0` and `A1`.
+// Define the sparsity pattern of matrices `A0` and `A1`.
 let rowIndices: [Int32] =    [ 0, 1, 1, 2]
 let columnIndices: [Int32] = [ 2, 0, 2, 1]
 
-/// Create the single-precision coefficient matrix _A0_.
+// Create the single-precision coefficient matrix `A0` from coordinate (COO) arrays.
 let a0Values: [Float] = [10, 20, 5, 50]
 let A0 = SparseConvertFromCoordinate(3, 3,
                                      4, 1,
@@ -45,10 +47,10 @@ let A0 = SparseConvertFromCoordinate(3, 3,
                                      rowIndices, columnIndices,
                                      a0Values)
 
-/// Factorize _A0_.
+// Compute the factors of `A0`.
 var factorization = SparseFactor(SparseFactorizationQR, A0)
 
-/// Solve _A0 · x = b0_ in place.
+// Solve `A0 · x = b0` in place.
 var b0Values: [Float] = [30, 35, 100]
 b0Values.withUnsafeMutableBufferPointer { bPtr in
     let xb = DenseVector_Float(count: 3,
@@ -57,7 +59,7 @@ b0Values.withUnsafeMutableBufferPointer { bPtr in
     SparseSolve(factorization, xb)
 }
 
-/// Create the single-precision coefficient matrix _A1_.
+// Create the single-precision coefficient matrix `A1` from coordinate (COO) arrays.
 let a1Values: [Float] = [5, 10, 2.5, 25]
 let A1 = SparseConvertFromCoordinate(3, 3,
                                      4, 1,
@@ -65,10 +67,10 @@ let A1 = SparseConvertFromCoordinate(3, 3,
                                      rowIndices, columnIndices,
                                      a1Values)
 
-/// Factorize _A1_ into the existing factorization.
+// Refactor `A1` into the existing factorization.
 SparseRefactor(A1, &factorization)
 
-/// Solve _A1 · x = b1_ in place.
+// Solve `A1 · x = b1` in place.
 var b1Values: [Float] = [60, 70, 200]
 b1Values.withUnsafeMutableBufferPointer { bPtr in
     let xb = DenseVector_Float(count: 3,
@@ -77,9 +79,68 @@ b1Values.withUnsafeMutableBufferPointer { bPtr in
     SparseSolve(factorization, xb)
 }
 
+print(b0Values) // Prints "[1.0, 2.0, 3.0]".
+print(b1Values) // Prints "[4.0, 8.0, 12.0]".
+
 SparseCleanup(A0)
 SparseCleanup(A1)
 SparseCleanup(factorization)
+```
+
+**Objective-C**:
+
+```objc
+// Define the sparsity pattern of matrices `A0` and `A1`.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+
+// Create the single-precision coefficient matrix `A0` from coordinate (COO) arrays.
+float a0Values[] = {10, 20, 5, 50};
+SparseMatrix_Float A0 = SparseConvertFromCoordinate(3, 3,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    a0Values);
+
+// Compute the factors of `A0`.
+SparseOpaqueFactorization_Float factorization = SparseFactor(SparseFactorizationQR, A0);
+
+// Solve `A0 · x = b0` in place.
+float b0Values[] = {30, 35, 100};
+DenseVector_Float xb0 = {
+    .count = 3,
+    .data  = b0Values
+};
+SparseSolve(factorization, xb0);
+
+// Prints "[1, 2, 3]".
+printf("[%g, %g, %g]\n", b0Values[0], b0Values[1], b0Values[2]);
+
+// Create the single-precision coefficient matrix `A1` from coordinate (COO) arrays.
+float a1Values[] = {5, 10, 2.5, 25};
+SparseMatrix_Float A1 = SparseConvertFromCoordinate(3, 3,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    a1Values);
+
+// Refactor `A1` into the existing factorization.
+SparseRefactor(A1, &factorization);
+
+// Solve `A1 · x = b1` in place.
+float b1Values[] = {60, 70, 200};
+DenseVector_Float xb1 = {
+    .count = 3,
+    .data  = b1Values
+};
+SparseSolve(factorization, xb1);
+
+// Prints "[4, 8, 12]".
+printf("[%g, %g, %g]\n", b1Values[0], b1Values[1], b1Values[2]);
+
+SparseCleanup(A0);
+SparseCleanup(A1);
+SparseCleanup(factorization);
 ```
 
 On return, `b0Values` contains the values `[1.0, 2.0, 3.0]`, and `b1Values` contains the values `[4.0, 8.0, 12.0]`.

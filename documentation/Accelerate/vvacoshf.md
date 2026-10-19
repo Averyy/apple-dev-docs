@@ -36,6 +36,36 @@ If `x < 1`, the result is `NaN`.
 
 If `x == +inf`, the result is `+inf`.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [1, 2, 10]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the inverse hyperbolic cosine of each element in `x`.
+vvacoshf(&y, &x, &n)
+
+// Prints "[0.0, 1.316958, 2.993223]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {1, 2, 10};
+float y[3];
+int n = 3;
+
+// Calculate the inverse hyperbolic cosine of each element in `x`.
+vvacoshf(y, x, &n);
+
+// Prints "[0, 1.31696, 2.99322]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acosh<U>(U) -> [Double]](vforce/acosh(_:)-1j3qt.md)

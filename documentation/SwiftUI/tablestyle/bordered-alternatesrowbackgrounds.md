@@ -25,6 +25,12 @@ Bordered tables are expected to be inset from their outer containers, but do not
 
 ## See Also
 
+- [static var automatic: AutomaticTableStyle](tablestyle/automatic.md)
+  The default table style in the current context.
+- [static var inset: InsetTableStyle](tablestyle/inset.md)
+  The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
+- [static var bordered: BorderedTableStyle](tablestyle/bordered.md)
+  The table style that describes the behavior and appearance of a table with standard border.
 - [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](tablestyle/inset(alternatesrowbackgrounds:).md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
 

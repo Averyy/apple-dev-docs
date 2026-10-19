@@ -6,7 +6,7 @@
 Develop drivers for video capture and playback devices.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 #### Overview
 

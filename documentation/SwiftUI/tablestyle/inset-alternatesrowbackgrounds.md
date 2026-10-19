@@ -21,6 +21,12 @@ The table style that describes the behavior and appearance of a table with its c
 
 ## See Also
 
+- [static var automatic: AutomaticTableStyle](tablestyle/automatic.md)
+  The default table style in the current context.
+- [static var inset: InsetTableStyle](tablestyle/inset.md)
+  The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
+- [static var bordered: BorderedTableStyle](tablestyle/bordered.md)
+  The table style that describes the behavior and appearance of a table with standard border.
 - [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](tablestyle/bordered(alternatesrowbackgrounds:).md)
   The table style that describes the behavior and appearance of a table with standard border.
 

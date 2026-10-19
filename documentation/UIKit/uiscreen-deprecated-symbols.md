@@ -2,7 +2,11 @@
 
 **Framework**: UIKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
@@ -19,11 +23,16 @@ Review unsupported symbols and their replacements.
   The view that is currently focused.
 - [var supportsFocus: Bool](uiscreen/supportsfocus.md)
   A Boolean value that indicates whether the screen supports focus-based inputs.
+- [var isCaptured: Bool](uiscreen/iscaptured.md)
+  A Boolean value that indicates whether the system is actively cloning the screen to another destination.
 ### Deprecated notifications
 - [class let didConnectNotification: NSNotification.Name](uiscreen/didconnectnotification.md)
   A notification the system posts when a new screen connects to the device.
 - [class let didDisconnectNotification: NSNotification.Name](uiscreen/diddisconnectnotification.md)
   A notification the system posts when a screen disconnects from the device.
+### Deprecated methods
+- [func displayLink(withTarget: Any, selector: Selector) -> CADisplayLink?](uiscreen/displaylink(withtarget:selector:).md)
+  Returns a display link object for the current screen.
 
 
 ---

@@ -1,12 +1,16 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func availableFontNames(matching: NSFontDescriptor) -> [Any]?](nsfontmanager/availablefontnames(matching:).md)
   Returns the names of the fonts that match the attributes in the given font descriptor.
 - [func fontDescriptors(inCollection: String) -> [Any]?](nsfontmanager/fontdescriptors(incollection:).md)
@@ -21,7 +25,7 @@ Review unsupported symbols and their replacements.
   Removes the specified font descriptor from the specified collection.
 - [func fontManager(Any, willIncludeFont: String) -> Bool](../objectivec/nsobject-swift.class/fontmanager(_:willincludefont:).md)
   Requests permission from the Font panel delegate to display the given font name in the Font panel.
-### Properties
+### Deprecated properties
 - [static var applicationOnlyMask: NSFontCollectionOptions](nsfontcollectionoptions/applicationonlymask.md)
   Makes the collection available only to the application.
 - [var collectionNames: [Any]](nsfontmanager/collectionnames.md)

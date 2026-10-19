@@ -22,6 +22,19 @@ var supplementariesFollowContentInsets: Bool { get set }
 
 The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
+## See Also
+
+- [var interGroupSpacing: CGFloat](nscollectionlayoutsection/intergroupspacing.md)
+  The amount of space between the groups in the section.
+- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutsection/contentinsets.md)
+  The amount of space between the content of the section and its boundaries.
+- [var contentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/contentinsetsreference.md)
+  The boundary to reference when defining content insets.
+- [var supplementaryContentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/supplementarycontentinsetsreference.md)
+  The reference boundary for content insets on boundary supplementary items.
+- [enum UIContentInsetsReference](uicontentinsetsreference.md)
+  Constants that describe the reference point of the content insets.
+
 
 ---
 

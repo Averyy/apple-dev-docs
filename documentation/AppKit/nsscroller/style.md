@@ -40,10 +40,6 @@ enum Style
   Specify different knob styles.
 - [NSScroller.Part](nsscroller/part.md)
   These constants specify the different parts of the scroller:
-- [NSScroller.Arrow](nsscroller/arrow.md)
-  These constants describe the two scroller buttons and are used by [`drawArrow(_:highlight:)`](nsscroller/drawarrow(_:highlight:).md).
-- [NSScroller.ArrowPosition](nsscroller/arrowposition.md)
-  These constants specify where the scroller’s buttons appear and are used by the [`arrowsPosition`](nsscroller/arrowsposition.md) property.
 - [NSScroller.UsableParts](nsscroller/usableparts-swift.enum.md)
   These constants specify which parts of the scroller are visible.
 

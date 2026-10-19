@@ -67,12 +67,12 @@ Menu {
   The labels visibility set by [`labelsVisibility(_:)`](view/labelsvisibility(_:).md).
 - [func menuIndicator(Visibility) -> some View](view/menuindicator(_:).md)
   Sets the menu indicator visibility for controls within this view.
-- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
-  Sets the visibility of the status bar.
 - [func persistentSystemOverlays(Visibility) -> some View](view/persistentsystemoverlays(_:).md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
 - [enum Visibility](visibility.md)
   The visibility of a UI element, chosen automatically based on the platform, current context, and other factors.
+- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
+  Sets the visibility of the status bar.
 
 
 ---

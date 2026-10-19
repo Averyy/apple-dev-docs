@@ -18,7 +18,6 @@ class var secondarySystemFill: NSColor { get }
 
 - [class var quaternarySystemFill: NSColor](nscolor/quaternarysystemfill.md)
   A color appropriate for filling large areas, such as a group box or tab pane.
-- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var quinarySystemFill: NSColor](nscolor/quinarysystemfill.md)
   A color appropriate for filling large areas that require subtle emphasis, such as content of a form.
 - [class var systemFill: NSColor](nscolor/systemfill.md)

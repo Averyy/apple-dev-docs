@@ -42,6 +42,7 @@ The identifier path is taken starting from [`mainAppContext`](clsdatastore/maina
 
 ## Parameters
 
+- `identifierPath`: An array of strings that trace a path of identifiers from [`mainAppContext`](clsdatastore/mainappcontext.md) to a target context.
 - `completion`: A closure that the method calls with the matching contexts and an optional error that indicates the reason for failure, if any.
 
 ## See Also

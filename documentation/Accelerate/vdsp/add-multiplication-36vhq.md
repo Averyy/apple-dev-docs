@@ -30,7 +30,7 @@ The output vector `D` in `D = (A * B) + C`.
 
 #### Discussion
 
-This function calculates the element-wise product of vectors `A` and `B`, adds scalar value `C` to the product, and writes the result to vector `D`.
+This function calculates the element-wise product of vectors `A` and `B`, adds scalar value `C` to the product, and writes the result to vector `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

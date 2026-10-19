@@ -71,7 +71,7 @@ If the user responds to the prompt near the time it was delivered and chooses to
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [NSLocationAlwaysUsageDescription](../bundleresources/information-property-list/nslocationalwaysusagedescription.md)
   A message that tells people why the app is requesting access to their location at all times.
 

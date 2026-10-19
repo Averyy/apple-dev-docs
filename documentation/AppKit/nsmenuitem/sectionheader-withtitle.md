@@ -24,8 +24,8 @@ Use section headers to provide context to a group of menu items. Items created u
 
 ## See Also
 
-- [static func sectionHeader(title: String) -> NSMenuItem](nsmenuitem/sectionheader(title:).md)
-  Returns a menu item representing a section header for a logical grouping of menu commands.
+- [func setTitleWithMnemonic(String)](nsmenuitem/settitlewithmnemonic(_:).md)
+  Sets the title of a menu item with a character denoting an access key.
 
 
 ---

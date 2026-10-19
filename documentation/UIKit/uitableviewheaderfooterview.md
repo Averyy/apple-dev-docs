@@ -61,6 +61,10 @@ A simple alternative to creating custom header-footer views is to implement the 
   A Boolean value that determines whether the view automatically updates its content configuration when its state changes.
 - [var contentView: UIView](uitableviewheaderfooterview/contentview.md)
   The content view of the header or footer.
+- [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
+  A primary text label for the view.
+- [var detailTextLabel: UILabel?](uitableviewheaderfooterview/detailtextlabel.md)
+  A detail text label for the view.
 ### Managing the state
 - [var configurationState: UIViewConfigurationState](uitableviewheaderfooterview/configurationstate-7xj7r.md)
   The current configuration state of the view.
@@ -72,11 +76,6 @@ A simple alternative to creating custom header-footer views is to implement the 
   A block for handling updates to the view’s configuration using the current state.
 - [UITableViewHeaderFooterView.ConfigurationUpdateHandler](uitableviewheaderfooterview/configurationupdatehandler-swift.typealias.md)
   The type of block for handling updates to the view’s configuration using the current state.
-### Deprecated
-- [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
-  A primary text label for the view.
-- [var detailTextLabel: UILabel?](uitableviewheaderfooterview/detailtextlabel.md)
-  A detail text label for the view.
 
 ## Relationships
 

@@ -100,6 +100,9 @@ It is important to note that the majority of methods in [`NSPrintOperation`](nsp
 ### Managing Printing Threads
 - [var canSpawnSeparateThread: Bool](nsprintoperation/canspawnseparatethread.md)
   A Boolean value that determines whether the print operation is allowed to spawn a separate printing thread.
+### Deprecated
+- [Deprecated symbols](nsprintoperation-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

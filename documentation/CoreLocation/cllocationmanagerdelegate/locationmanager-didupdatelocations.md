@@ -31,7 +31,7 @@ Implementation of this method is optional but recommended.
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [MapKit](../mapkit/mapkit.md)
   Display map or satellite imagery within your app, call out points of interest, and determine placemark information for map coordinates.
 - [MapKit JS](../mapkitjs/mapkitjs.md)

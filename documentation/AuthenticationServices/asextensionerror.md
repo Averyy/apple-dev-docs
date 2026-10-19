@@ -21,6 +21,7 @@ struct ASExtensionError
 ## Topics
 
 ### Identifying the error domain
+- [static var errorDomain: String](asextensionerror/errordomain.md)
 - [let ASExtensionErrorDomain: String](asextensionerrordomain.md)
   The domain for a credential provider extension error.
 ### Error codes
@@ -35,7 +36,6 @@ struct ASExtensionError
 - [ASExtensionError.Code](asextensionerror/code.md)
   The codes for a credential provider extension error.
 ### Type Properties
-- [static var errorDomain: String](asextensionerror/errordomain.md)
 - [static var matchedExcludedCredential: ASExtensionError.Code](asextensionerror/matchedexcludedcredential.md)
 
 ## Relationships

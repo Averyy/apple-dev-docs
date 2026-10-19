@@ -29,14 +29,14 @@ For design guidance, see [`Accessibility`](https://developer.apple.com/design/hu
 - [var accessibilityLargeContentViewerEnabled: Bool](environmentvalues/accessibilitylargecontentviewerenabled.md)
   Whether the Large Content Viewer is enabled.
 ### Improving legibility
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
-  Whether the system preference for Show Button Shapes is enabled.
 - [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
 - [var legibilityWeight: LegibilityWeight?](environmentvalues/legibilityweight.md)
   The font weight to apply to text.
 - [enum LegibilityWeight](legibilityweight.md)
   The Accessibility Bold Text user setting options.
+- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+  Whether the system preference for Show Button Shapes is enabled.
 ### Minimizing motion
 - [var accessibilityDimFlashingLights: Bool](environmentvalues/accessibilitydimflashinglights.md)
   Whether the setting to reduce flashing or strobing lights in video content is on. This setting can also be used to determine if UI in playback controls should be shown to indicate upcoming content that includes flashing or strobing lights.

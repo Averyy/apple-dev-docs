@@ -20,13 +20,17 @@ A kind of reserved region.
 struct Kind
 ```
 
+#### Overview
+
+Pass a kind to [`reservedRegions(kind:options:layoutDirectionBehavior:)`](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md) to choose which regions you get: [`occlusion`](reservedregion/kind-swift.struct/occlusion.md) for areas that cover your content, and [`division`](reservedregion/kind-swift.struct/division.md) for areas that split it. Each [`ReservedRegion`](reservedregion.md) also reports its kind in its [`kind`](reservedregion/kind-swift.property.md) property.
+
 ## Topics
 
 ### Getting reserved region kinds
-- [static var division: ReservedRegion.Kind](reservedregion/kind-swift.struct/division.md)
-  A region where content should split into two separate regions.
 - [static var occlusion: ReservedRegion.Kind](reservedregion/kind-swift.struct/occlusion.md)
-  A region that is occluded by an element.
+  A region that covers part of your view.
+- [static var division: ReservedRegion.Kind](reservedregion/kind-swift.struct/division.md)
+  A region that splits your view into separate parts.
 
 ## Relationships
 

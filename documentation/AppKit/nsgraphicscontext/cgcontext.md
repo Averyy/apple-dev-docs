@@ -18,8 +18,6 @@ var cgContext: CGContext { get }
 
 - [class var current: NSGraphicsContext?](nsgraphicscontext/current.md)
   Returns the current graphics context of the current thread.
-- [var graphicsPort: UnsafeMutableRawPointer](nsgraphicscontext/graphicsport.md)
-  The low-level, platform-specific graphics context represented by the graphic port.
 
 
 ---

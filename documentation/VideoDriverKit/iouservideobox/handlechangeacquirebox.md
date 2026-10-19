@@ -6,7 +6,7 @@
 Called when host is attempting to the change the box acquisition
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

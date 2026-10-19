@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-The horizontal edge a view in an overlay arrangement occupies when the arrangement transitions to a horizontal layout.
+The horizontal edge a view in an overlay arrangement aligns to when the arrangement transitions to a landscape orientation.
 
 **Availability**:
 - iOS 27.1+
@@ -23,7 +23,7 @@ func overlayArrangementEdge(_ edge: HorizontalEdge?) -> some View
 
 #### Discussion
 
-Use this modifier to anchor the given view when its overlay layout transitions into a horizontal layout. For example, to move the view to the trailing side of the arrangement view, use the `trailing` edge.
+Use this modifier to anchor the given view when its overlay layout transitions into a landscape orientation. For example, to move the view to the trailing side of the arrangement view, use the [`HorizontalEdge.trailing`](horizontaledge/trailing.md) edge.
 
 ```swift
 var body: some View {
@@ -38,24 +38,24 @@ var body: some View {
 
 ## Parameters
 
-- `edge`: The horizontal edge to position the view at.
+- `edge`: The horizontal edge against which the arrangement aligns the view.
 
 ## See Also
 
 - [struct ArrangementView](arrangementview.md)
-  A view that arranges primary and secondary content using an adaptive layout that responds to the environment.
+  A view that dynamically lays out a primary and secondary view based on size class, orientation, and reserved regions.
 - [func arrangementViewStyle(some ArrangementViewStyle) -> some View](view/arrangementviewstyle(_:).md)
   Sets the style for arrangement views within this view.
 - [protocol ArrangementViewStyle](arrangementviewstyle.md)
-  A style that configures an `ArrangementView` with an arrangement.
+  A style that indicates how an arrangement view lays out a primary and secondary view.
 - [func splitArrangementFixedLayoutSize(horizontal: Bool, vertical: Bool) -> some View](view/splitarrangementfixedlayoutsize(horizontal:vertical:).md)
-  Sets the preferred size constraint for an arrangement view in a split style to the ideal size of the view within its container. The arrangement view will prefer this size, but may resize to a smaller size depending on the priority of the view.
+  Sets the preferred size constraint for a view in a split arrangement style to the ideal size of the view within its container.
 - [func splitArrangementLayoutRatio(CGFloat?) -> some View](view/splitarrangementlayoutratio(_:).md)
-  Sets the preferred size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+  Sets the preferred size ratio for a view in a split style arrangement view.
 - [func splitArrangementLayoutRatio(minHorizontal: CGFloat?, idealHorizontal: CGFloat?, maxHorizontal: CGFloat?, minVertical: CGFloat?, idealVertical: CGFloat?, maxVertical: CGFloat?) -> some View](view/splitarrangementlayoutratio(minhorizontal:idealhorizontal:maxhorizontal:minvertical:idealvertical:maxvertical:).md)
-  Sets the size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+  Sets the size ratio for a view in a split style arrangement view.
 - [func splitArrangementLayoutSize(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?) -> some View](view/splitarrangementlayoutsize(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:).md)
-  Sets the size constraints for an arrangement view in a split style.
+  Sets the size constraints for a view in a split style arrangement view.
 
 
 ---

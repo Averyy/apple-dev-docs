@@ -35,8 +35,6 @@ All of the methods in this protocol are optional. You can use them in situations
 - [func textViewDidEndEditing(UITextView)](uitextviewdelegate/textviewdidendediting(_:).md)
   Tells the delegate when editing of the specified text view ends.
 ### Responding to text changes
-- [func textView(UITextView, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uitextviewdelegate/textview(_:shouldchangetextin:replacementtext:).md)
-  Asks the delegate whether to replace the specified text in the text view.
 - [func textViewDidChange(UITextView)](uitextviewdelegate/textviewdidchange(_:).md)
   Tells the delegate when the user changes the text or attributes in the specified text view.
 ### Responding to selection changes
@@ -51,9 +49,6 @@ All of the methods in this protocol are optional. You can use them in situations
   Informs the delegate that a text item menu is about to be presented with the specified animator.
 - [func textView(UITextView, textItemMenuWillEndFor: UITextItem, animator: any UIContextMenuInteractionAnimating)](uitextviewdelegate/textview(_:textitemmenuwillendfor:animator:).md)
   Informs the delegate that a text item menu is about to be dismissed with the specified animator.
-### Providing a context menu
-- [func textView(UITextView, editMenuForTextIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextviewdelegate/textview(_:editmenufortextin:suggestedactions:).md)
-  Asks the delegate for the menu to display in the text view, based on the text range and actions the system provides.
 ### Customizing an edit menu
 - [func textView(UITextView, willDismissEditMenuWith: any UIEditMenuInteractionAnimating)](uitextviewdelegate/textview(_:willdismisseditmenuwith:).md)
 - [func textView(UITextView, willPresentEditMenuWith: any UIEditMenuInteractionAnimating)](uitextviewdelegate/textview(_:willpresenteditmenuwith:).md)
@@ -78,6 +73,10 @@ All of the methods in this protocol are optional. You can use them in situations
   Asks the delegate whether the specified text view allows user interaction with the specified URL in the specified range of text.
 - [enum UITextItemInteraction](uitextiteminteraction.md)
   Constants that indicate the type of interaction the user expects to have with a URL or text attachment.
+- [func textView(UITextView, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uitextviewdelegate/textview(_:shouldchangetextin:replacementtext:).md)
+  Asks the delegate whether to replace the specified text in the text view.
+- [func textView(UITextView, editMenuForTextIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextviewdelegate/textview(_:editmenufortextin:suggestedactions:).md)
+  Asks the delegate for the menu to display in the text view, based on the text range and actions the system provides.
 ### Instance Methods
 - [func textView(UITextView, didBeginFormattingWith: UITextFormattingViewController)](uitextviewdelegate/textview(_:didbeginformattingwith:).md)
 - [func textView(UITextView, didEndFormattingWith: UITextFormattingViewController)](uitextviewdelegate/textview(_:didendformattingwith:).md)

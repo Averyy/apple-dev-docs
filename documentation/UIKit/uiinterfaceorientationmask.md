@@ -58,8 +58,6 @@ In earlier versions of iOS, you returned these constants from the [`supportedInt
 
 ## See Also
 
-- [func application(UIApplication, supportedInterfaceOrientationsFor: UIWindow?) -> UIInterfaceOrientationMask](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md)
-  Asks the delegate for the interface orientations to use for the view controllers in the specified window.
 - [enum UIInterfaceOrientation](uiinterfaceorientation.md)
   Constants that specify the orientation of the app’s user interface.
 - [class let invalidInterfaceOrientationException: NSExceptionName](uiapplication/invalidinterfaceorientationexception.md)

@@ -1,4 +1,4 @@
 Completed scraping Exposure Notification!
-Total pages scraped: 215
-Pages skipped (unchanged): 11
+Total pages scraped: 0
+Pages skipped (unchanged): 226
 Pages failed: 0

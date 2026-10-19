@@ -22,7 +22,7 @@ static func addSubtract<S, T, U, V>(_ vectorA: S, _ vectorB: T, addResult: inout
 
 #### Discussion
 
-This function calculates the addition and subtraction of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`.
+This function calculates the addition and subtraction of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 
 ```swift
  for (i = 0; i < N; ++i)

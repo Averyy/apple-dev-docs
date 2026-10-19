@@ -36,8 +36,6 @@ If the placeholder string is empty or `nil`, this method is not called.
 
 - [func textRect(forBounds: CGRect) -> CGRect](uitextfield/textrect(forbounds:).md)
   Returns the drawing rectangle for the text field’s text.
-- [func drawText(in: CGRect)](uitextfield/drawtext(in:).md)
-  Draws the text field’s text in the specified rectangle.
 - [func drawPlaceholder(in: CGRect)](uitextfield/drawplaceholder(in:).md)
   Draws the text field’s placeholder text in the specified rectangle.
 - [func borderRect(forBounds: CGRect) -> CGRect](uitextfield/borderrect(forbounds:).md)
@@ -50,6 +48,8 @@ If the placeholder string is empty or `nil`, this method is not called.
   Returns the drawing rectangle of the text field’s left overlay view.
 - [func rightViewRect(forBounds: CGRect) -> CGRect](uitextfield/rightviewrect(forbounds:).md)
   Returns the drawing location of the text field’s right overlay view.
+- [func drawText(in: CGRect)](uitextfield/drawtext(in:).md)
+  Draws the text field’s text in the specified rectangle.
 
 
 ---

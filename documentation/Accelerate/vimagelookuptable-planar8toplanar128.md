@@ -28,7 +28,7 @@ func vImageLookupTable_Planar8toPlanar128(_ src: UnsafePointer<vImage_Buffer>, _
 
 For each pixel, this function uses the 8-bit value from the source image as an index to the [`Pixel_FFFF`](pixel_ffff.md) value from the table. The per-pixel conversion calculation is equivalent to the following:
 
-```swift
+```c
 uint32_t table[256*4];       // 128 bits per pixel and 32 bits per channel.
 uint32_t *t_ptr = (uint32_t*)(table + 4 * srcRow[i]);
 uint32_t a = t_ptr[0];
@@ -42,6 +42,8 @@ dstRow[3*i+3] = b;
 ```
 
 The following code shows how to create a lookup table that maps all source pixel values to a constant RGB value of `(10, 20, 30)`:
+
+**Swift**:
 
 ```swift
 let alpha: Pixel_F = 10
@@ -71,6 +73,50 @@ source.withUnsafePointerToVImageBuffer{ src in
 
 // Prints "[10.0, 20.0, 30.0, 40.0,  10.0, 20.0, 30.0, 40.0,  10.0, 20.0, 30.0, 40.0]".
 print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+float alpha = 10.0f;
+float red   = 20.0f;
+float green = 30.0f;
+float blue  = 40.0f;
+
+Pixel_FFFF lookupTable[256];
+for (int i = 0; i < 256; i++) {
+    lookupTable[i][0] = alpha;
+    lookupTable[i][1] = red;
+    lookupTable[i][2] = green;
+    lookupTable[i][3] = blue;
+}
+
+uint8_t srcData[3] = {0, 1, 2};
+
+vImage_Buffer srcBuf = {
+    .data = srcData,
+    .width = 3,
+    .height = 1,
+    .rowBytes = 3
+};
+
+float dstData[12] = {0};
+
+vImage_Buffer dstBuf = {
+    .data = dstData,
+    .width = 3,
+    .height = 1,
+    .rowBytes = 48
+};
+
+vImageLookupTable_Planar8toPlanar128(&srcBuf, &dstBuf,
+                                     lookupTable, kvImageNoFlags);
+
+// Prints "[10, 20, 30, 40,  10, 20, 30, 40,  10, 20, 30, 40]".
+printf("[%g, %g, %g, %g,  %g, %g, %g, %g,  %g, %g, %g, %g]\n",
+       dstData[0], dstData[1], dstData[2], dstData[3],
+       dstData[4], dstData[5], dstData[6], dstData[7],
+       dstData[8], dstData[9], dstData[10], dstData[11]);
 ```
 
 ## Parameters

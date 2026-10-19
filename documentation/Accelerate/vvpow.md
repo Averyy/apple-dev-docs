@@ -54,7 +54,7 @@ int n = 4;
  
 vvpow(z, y, x, &n);
  
-NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+printf("z: [%lf, %lf, %lf, %lf]\n", z[0], z[1], z[2], z[3]);
 ```
 
 The following special values of `x` and `y` produce the given value of `z`:

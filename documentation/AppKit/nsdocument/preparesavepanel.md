@@ -30,8 +30,6 @@ The default implementation is empty and returns [`true`](https://developer.apple
 
 - [func runModalSavePanel(for: NSDocument.SaveOperationType, delegate: Any?, didSave: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocument/runmodalsavepanel(for:delegate:didsave:contextinfo:).md)
   Presents a modal Save panel to the user, then tries to save the document if the user approves the operation.
-- [var shouldRunSavePanelWithAccessoryView: Bool](nsdocument/shouldrunsavepanelwithaccessoryview.md)
-  A Boolean value that indicates whether the document’s Save panel displays a list of supported writable document types.
 - [var fileTypeFromLastRunSavePanel: String?](nsdocument/filetypefromlastrunsavepanel.md)
   The file type that was last selected in the Save panel.
 - [var fileNameExtensionWasHiddenInLastRunSavePanel: Bool](nsdocument/filenameextensionwashiddeninlastrunsavepanel.md)

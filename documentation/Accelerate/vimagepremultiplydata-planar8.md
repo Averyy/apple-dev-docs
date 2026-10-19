@@ -28,7 +28,7 @@ func vImagePremultiplyData_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ alpha:
 
 This function multiplies color channels by the alpha channel using the following code:
 
-```swift
+```c
 uint8_t destColor = (src * alpha + 127) / 255;
 ```
 

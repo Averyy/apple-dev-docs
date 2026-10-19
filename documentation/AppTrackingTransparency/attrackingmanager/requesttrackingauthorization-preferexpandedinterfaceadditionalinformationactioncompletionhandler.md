@@ -6,9 +6,9 @@
 Presents a modal UI that asks someone for permission to access data that your app can use to track a person or device.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
-- Mac Catalyst 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 

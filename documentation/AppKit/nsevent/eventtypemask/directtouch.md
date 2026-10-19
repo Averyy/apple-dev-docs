@@ -20,10 +20,6 @@ Use this mask to filter out [`NSEvent.EventType.directTouch`](nsevent/eventtype/
 
 ## See Also
 
-- [static var beginGesture: NSEvent.EventTypeMask](nsevent/eventtypemask/begingesture.md)
-  A mask for begin-gesture events.
-- [static var endGesture: NSEvent.EventTypeMask](nsevent/eventtypemask/endgesture.md)
-  A mask for end-gesture events.
 - [static var magnify: NSEvent.EventTypeMask](nsevent/eventtypemask/magnify.md)
   A mask for magnify-gesture events.
 - [static var smartMagnify: NSEvent.EventTypeMask](nsevent/eventtypemask/smartmagnify.md)

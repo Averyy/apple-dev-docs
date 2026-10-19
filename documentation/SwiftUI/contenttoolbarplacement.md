@@ -62,14 +62,14 @@ Each placement accepts only some [`ToolbarItemPlacement`](toolbaritemplacement.m
 
 ## See Also
 
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
-  Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
   Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+  Specifies the visibility of a bar managed by SwiftUI.
 
 
 ---

@@ -32,8 +32,6 @@ To determine whether an app is installed that is capable of handling the URL, ca
 
 ## See Also
 
-- [func canOpenURL(URL) -> Bool](uiapplication/canopenurl(_:).md)
-  Returns a Boolean value that indicates whether an app is available to handle a URL scheme.
 - [UIApplication.OpenExternalURLOptionsKey](uiapplication/openexternalurloptionskey.md)
   Options for opening a URL.
 

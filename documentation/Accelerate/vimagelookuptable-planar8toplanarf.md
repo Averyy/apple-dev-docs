@@ -28,7 +28,7 @@ func vImageLookupTable_Planar8toPlanarF(_ src: UnsafePointer<vImage_Buffer>, _ d
 
 For each pixel, this function uses the 8-bit value from the source image as an index to the 32-bit value from the table. The per-pixel conversion calculation is equivalent to the following:
 
-```swift
+```c
 float table[256];
 float result_pixel = table[ input_8_bit_pixel ];
 ```

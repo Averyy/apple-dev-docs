@@ -207,7 +207,7 @@ In general, specify a value for the normal state so that other states without a 
   A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
 - [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
 - [class UINavigationBar](uinavigationbar.md)
-  Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
+  A region that displays the title and controls provided by navigation items.
 - [class UISearchBar](uisearchbar.md)
   A specialized view for receiving search-related information from the user.
 - [class UIToolbar](uitoolbar.md)

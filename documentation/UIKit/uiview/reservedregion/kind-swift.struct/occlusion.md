@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-A region where an element, such as a camera, occludes content.
+A region that covers part of your view.
 
 **Availability**:
 - iOS 27.1+
@@ -17,6 +17,15 @@ A region where an element, such as a camera, occludes content.
 ```swift
 static let occlusion: UIView.ReservedRegion.Kind
 ```
+
+#### Discussion
+
+An occlusion region is an area where an element, such as the Dynamic Island, a camera, or window controls, cover your content. Place important views and controls outside this area so people can see and use them.
+
+## See Also
+
+- [static let division: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct/division.md)
+  A region that splits your view into separate parts.
 
 
 ---

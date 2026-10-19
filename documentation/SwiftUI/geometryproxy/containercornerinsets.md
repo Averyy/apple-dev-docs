@@ -39,8 +39,6 @@ Container corner inset sizes may not be uniform. For example, on iPadOS and macO
   The concentric corner radii for this view’s bounds relative to the container shape.
 - [func concentricCornerRadii(in: CGRect) -> RectangleCornerRadii?](geometryproxy/concentriccornerradii(in:).md)
   Returns the concentric corner radii for the specified frame relative to the container shape.
-- [func frame(in:)](geometryproxy/frame(in:).md)
-  Returns the container view’s bounds rectangle, converted to a defined coordinate space.
 - [var size: CGSize](geometryproxy/size.md)
   The size of the container view.
 - [var safeAreaInsets: EdgeInsets](geometryproxy/safeareainsets.md)
@@ -49,6 +47,8 @@ Container corner inset sizes may not be uniform. For example, on iPadOS and macO
   Resolves the value of an anchor to the container view.
 - [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy/transform(in:).md)
   The container view’s 3D transform converted to a defined coordinate space.
+- [func frame(in:)](geometryproxy/frame(in:).md)
+  Returns the container view’s bounds rectangle, converted to a defined coordinate space.
 
 
 ---

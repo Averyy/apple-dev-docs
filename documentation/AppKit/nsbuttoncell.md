@@ -58,19 +58,13 @@ Setting the [`font`](nscell/font.md) property does nothing if the button has no 
 ### Managing the Key Equivalent
 - [var keyEquivalent: String](nsbuttoncell/keyequivalent.md)
   The button’s key-equivalent character.
-- [var keyEquivalentFont: NSFont?](nsbuttoncell/keyequivalentfont.md)
-  The font used to draw the button’s key equivalent.
 - [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsbuttoncell/keyequivalentmodifiermask.md)
   The mask that identifies the modifier keys for the button’s key equivalent.
-- [func setKeyEquivalentFont(String, size: CGFloat)](nsbuttoncell/setkeyequivalentfont(_:size:).md)
-  Sets by name and size of the font used to draw the key equivalent.
 ### Managing Graphics Attributes
 - [var backgroundColor: NSColor?](nsbuttoncell/backgroundcolor.md)
   The background color of the button.
 - [var bezelStyle: NSButton.BezelStyle](nsbuttoncell/bezelstyle.md)
   The appearance of the button’s border, if it has one.
-- [var gradientType: NSButton.GradientType](nsbuttoncell/gradienttype.md)
-  The gradient of the button’s border.
 - [var imageDimsWhenDisabled: Bool](nsbuttoncell/imagedimswhendisabled.md)
   A Boolean value that indicates if the button’s image and text appear “dim” when the button is disabled.
 - [var isOpaque: Bool](nsbuttoncell/isopaque.md)
@@ -108,8 +102,9 @@ Setting the [`font`](nscell/font.md) property does nothing if the button has no 
   The set of bezel styles to style buttons in your app.
 - [NSButton.ButtonType](nsbutton/buttontype.md)
   Button types that you can specify using [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md).
-- [NSButton.GradientType](nsbutton/gradienttype.md)
-  Specify the gradients used by the [`gradientType`](nsbuttoncell/gradienttype.md) property.
+### Deprecated
+- [Deprecated symbols](nsbuttoncell-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

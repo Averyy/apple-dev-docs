@@ -28,6 +28,8 @@ func vImageOverwriteChannelsWithPixel_ARGBFFFF(_ the_pixel: UnsafePointer<Float>
 
 The following code overwrites channel `0` of the source pixels in `pixelBuffer` with channel `0` of the source pixel value:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.InterleavedFx4>(
     pixelValues: [10, 20, 30, 40,
@@ -46,8 +48,34 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 
 // Prints:
 //      "[101.0, 20.0, 30.0, 40.0,
-//        101.0, 60.0, 70.0, 80.0]"
+//        101.0, 60.0, 70.0, 80.0]".
 print(pixelBuffer.array)
+```
+
+**Objective-C**:
+
+```objc
+float data[8] = {10, 20, 30, 40, 50, 60, 70, 80};
+
+vImage_Buffer buf = {
+    .data = data,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 16
+};
+
+const Pixel_FFFF pixel = {101, 102, 103, 104};
+
+vImageOverwriteChannelsWithPixel_ARGBFFFF(pixel,
+                                          &buf,
+                                          &buf,
+                                          0x8,
+                                          kvImageNoFlags);
+
+// Prints "[101, 20, 30, 40, 101, 60, 70, 80]".
+printf("[%g, %g, %g, %g, %g, %g, %g, %g]\n",
+       data[0], data[1], data[2], data[3],
+       data[4], data[5], data[6], data[7]);
 ```
 
 ## Parameters

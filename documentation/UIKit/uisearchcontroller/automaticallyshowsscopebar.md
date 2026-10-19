@@ -44,6 +44,8 @@ By default, [`UISearchController`](uisearchcontroller.md) shows the search barâ€
   A mode that determines when the search controller shows and hides the scope bar.
 - [UISearchController.ScopeBarActivation](uisearchcontroller/scopebaractivation-swift.enum.md)
   Constants that specify the modes for showing and hiding the scope bar.
+- [var dimsBackgroundDuringPresentation: Bool](uisearchcontroller/dimsbackgroundduringpresentation.md)
+  A Boolean indicating whether to dim the underlying content during a search.
 
 
 ---

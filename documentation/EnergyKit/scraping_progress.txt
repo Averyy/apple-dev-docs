@@ -1,4 +1,4 @@
 Completed scraping EnergyKit!
-Total pages scraped: 215
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 216
 Pages failed: 0

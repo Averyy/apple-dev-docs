@@ -26,6 +26,8 @@ optional func alertViewShouldEnableFirstOtherButton(_ alertView: UIAlertView) ->
 
 ## See Also
 
+- [func alertView(UIAlertView, clickedButtonAt: Int)](uialertviewdelegate/alertview(_:clickedbuttonat:).md)
+  Sent to the delegate when the user clicks a button on an alert view.
 - [func willPresent(UIAlertView)](uialertviewdelegate/willpresent(_:).md)
   Sent to the delegate before a model view is presented to the user.
 - [func didPresent(UIAlertView)](uialertviewdelegate/didpresent(_:).md)
@@ -34,6 +36,8 @@ optional func alertViewShouldEnableFirstOtherButton(_ alertView: UIAlertView) ->
   Sent to the delegate before an alert view is dismissed.
 - [func alertView(UIAlertView, didDismissWithButtonIndex: Int)](uialertviewdelegate/alertview(_:diddismisswithbuttonindex:).md)
   Sent to the delegate after an alert view is dismissed from the screen.
+- [func alertViewCancel(UIAlertView)](uialertviewdelegate/alertviewcancel(_:).md)
+  Sent to the delegate before an alert view is canceled.
 
 
 ---

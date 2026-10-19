@@ -40,6 +40,8 @@ The following code defines two sets of polynomial coefficients, `coefficients0` 
 
 Note that the boundaries array contains three elements that define two ranges: `0..<0.5` and `0.5...1`. The `order` value equals the number of coefficients in each segment minus one.
 
+**Swift**:
+
 ```swift
 let source = vImage.PixelBuffer<vImage.PlanarF>(
     pixelValues: [-0, -0.2, -0.4, -0.6, -0.8, -1],
@@ -65,7 +67,7 @@ coefficients0.withUnsafeBufferPointer { coefficients0Ptr in
                 var coeffs = [ coefficients0Ptr.baseAddress,
                                coefficients1Ptr.baseAddress ]
                 
-                vImagePiecewisePolynomial_PlanarF(
+                vImageSymmetricPiecewisePolynomial_PlanarF(
                     src,
                     dest,
                     &coeffs,
@@ -77,6 +79,55 @@ coefficients0.withUnsafeBufferPointer { coefficients0Ptr in
         }
     }
 }
+    
+// Prints "[0.0, -0.1, -0.2, -0.36, -0.64, -1.0]".
+print(destination.array)
+
+```
+
+**Objective-C**:
+
+```objc
+// Source: `PlanarF`, six pixels: [-0, -0.2, -0.4, -0.6, -0.8, -1]
+float src[6] = {-0.0f, -0.2f, -0.4f, -0.6f, -0.8f, -1.0f};
+float dst[6] = {0};
+
+vImage_Buffer srcBuf = {
+    .data     = src,
+    .width    = 6,
+    .height   = 1,
+    .rowBytes = 6 * 4
+};
+
+vImage_Buffer dstBuf = {
+    .data     = dst,
+    .width    = 6,
+    .height   = 1,
+    .rowBytes = 6 * 4
+};
+
+float coefficients0[3] = {0.0f, 0.5f, 0.0f};  // 0.0 * x⁰ + 0.5 * x¹ + 0.0 * x²
+float coefficients1[3] = {0.0f, 0.0f, 1.0f};  // 0.0 * x⁰ + 0.0 * x¹ + 1.0 * x²
+
+const float *coefficients[2] = { coefficients0, coefficients1 };
+
+float boundaries[3] = {0.0f, 0.5f, 1.0f};
+
+uint32_t order        = 2;
+uint32_t log2segments = 1;
+
+vImageSymmetricPiecewisePolynomial_PlanarF(
+    &srcBuf,
+    &dstBuf,
+    coefficients,
+    boundaries,
+    order,
+    log2segments,
+    kvImageNoFlags);
+
+// Prints "[-0.000000, -0.100000, -0.200000, -0.360000, -0.640000, -1.000000]".
+printf("[%f, %f, %f, %f, %f, %f]\n",
+       dst[0], dst[1], dst[2], dst[3], dst[4], dst[5]);
 ```
 
 On return, the destination buffer contains the values `[0.0, -0.1, -0.2, -0.36, -0.64, -1.0]`. This is equivalent to the following scalar code:

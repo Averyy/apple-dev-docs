@@ -36,6 +36,8 @@ The start and end control points are located at (x: 0, y: 0) and (x: 0.58, y: 1)
   A circular curve that starts out quickly, then slows down as it approaches the end.
 - [static let circularEaseInOut: UnitCurve](unitcurve/circulareaseinout.md)
   A circular curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
+- [static let easeInEaseOut: UnitCurve](unitcurve/easeineaseout.md)
+  A bezier curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
 
 
 ---

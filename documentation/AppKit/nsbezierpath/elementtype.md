@@ -27,10 +27,11 @@ These commands are enough to define all of the possible path shapes. Each comman
   Creates a straight line from the current drawing point to the specified point.
 - [NSBezierPath.ElementType.closePath](nsbezierpath/elementtype/closepath.md)
   Marks the end of the current subpath at the specified point.
-- [static var curveTo: NSBezierPath.ElementType](nsbezierpath/elementtype/curveto.md)
-  Creates a curved line segment from the current point to the specified endpoint using two control points to define the curve.
 - [NSBezierPath.ElementType.cubicCurveTo](nsbezierpath/elementtype/cubiccurveto.md)
 - [NSBezierPath.ElementType.quadraticCurveTo](nsbezierpath/elementtype/quadraticcurveto.md)
+### Deprecated
+- [static var curveTo: NSBezierPath.ElementType](nsbezierpath/elementtype/curveto.md)
+  Creates a curved line segment from the current point to the specified endpoint using two control points to define the curve.
 ### Initializers
 - [init?(rawValue: UInt)](nsbezierpath/elementtype/init(rawvalue:).md)
 

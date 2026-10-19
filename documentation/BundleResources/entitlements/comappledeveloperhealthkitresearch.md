@@ -6,10 +6,10 @@
 A Boolean value that indicates whether an approved health research app offers only Full Access when it requests HealthKit read access.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
-- visionOS 27.2+ (Beta)
-- watchOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
+- visionOS 27.2+
+- watchOS 27.2+
 
 
 

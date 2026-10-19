@@ -36,8 +36,6 @@ To refuse the drag, return [`false`](https://developer.apple.com/documentation/s
   Share data between macOS apps during drag and drop by using an item provider.
 - [func tableView(NSTableView, acceptDrop: any NSDraggingInfo, row: Int, dropOperation: NSTableView.DropOperation) -> Bool](nstableviewdatasource/tableview(_:acceptdrop:row:dropoperation:).md)
   Called by `aTableView` when the mouse button is released over a table view that previously decided to allow a drop.
-- [func tableView(NSTableView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedRowsWith: IndexSet) -> [String]](nstableviewdatasource/tableview(_:namesofpromisedfilesdroppedatdestination:fordraggedrowswith:).md)
-  Returns an array of filenames that represent the `indexSet` rows for a drag to `dropDestination`.
 - [func tableView(NSTableView, validateDrop: any NSDraggingInfo, proposedRow: Int, proposedDropOperation: NSTableView.DropOperation) -> NSDragOperation](nstableviewdatasource/tableview(_:validatedrop:proposedrow:proposeddropoperation:).md)
   Used by `aTableView` to determine a valid drop target.
 - [func tableView(NSTableView, draggingSession: NSDraggingSession, willBeginAt: NSPoint, forRowIndexes: IndexSet)](nstableviewdatasource/tableview(_:draggingsession:willbeginat:forrowindexes:).md)
@@ -46,6 +44,8 @@ To refuse the drag, return [`false`](https://developer.apple.com/documentation/s
   Implement this method to allow the table to update dragging items as they are dragged over a view.
 - [func tableView(NSTableView, draggingSession: NSDraggingSession, endedAt: NSPoint, operation: NSDragOperation)](nstableviewdatasource/tableview(_:draggingsession:endedat:operation:).md)
   Implement this method to determine when a dragging session has ended.
+- [func tableView(NSTableView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedRowsWith: IndexSet) -> [String]](nstableviewdatasource/tableview(_:namesofpromisedfilesdroppedatdestination:fordraggedrowswith:).md)
+  Returns an array of filenames that represent the `indexSet` rows for a drag to `dropDestination`.
 
 
 ---

@@ -28,7 +28,7 @@ func vImageLookupTable_8to64U(_ src: UnsafePointer<vImage_Buffer>, _ dest: Unsaf
 
 For each pixel, this function uses the 8-bit value from the source image as an index to the 64-bit value from the table. The per-pixel conversion calculation is equivalent to the following:
 
-```swift
+```c
 uint64_t table[256];
 uint64_t result_pixel = table[ input_8_bit_pixel ];
 ```

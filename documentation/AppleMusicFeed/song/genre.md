@@ -51,11 +51,12 @@ The feed export is in Parquet format. This data example is in JSON format for il
 - [object Song.Prices](song/prices-data.dictionary.md)
   A mapping of locale to pricing information.
 - [object Song.RelatedAlbum](song/relatedalbum.md)
-  Information about a related album.
 - [object Song.RelatedArtist](song/relatedartist.md)
   Information about a related artist.
 - [object Song.ReleaseDate](song/releasedate-data.dictionary.md)
   A mapping of locale to release date for the song.
+- [object Song.RelevanceScore](song/relevancescore-data.dictionary.md)
+  A score representing song relevance, used to rank songs when surfacing content.
 - [object Song.TitleVersion](song/titleversion-data.dictionary.md)
   A mapping of locale to translations for the specific title-version translation type.
 - [object Song.TitleVersionPronunciation](song/titleversionpronunciation-data.dictionary.md)

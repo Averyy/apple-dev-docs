@@ -31,7 +31,7 @@ let destination = vDSP.threshold(source,
                                  to: 15,
                                  with: .zeroFill)
 
-// Prints "[0.0, 0.0, 0.0, 15.0, 16.0, 17.0, 18.0]]"
+// Prints "[0.0, 0.0, 0.0, 15.0, 16.0, 17.0, 18.0]".
 print(destination)
 ```
 

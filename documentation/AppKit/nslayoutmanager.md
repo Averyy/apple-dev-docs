@@ -290,8 +290,8 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
 - [NSLayoutManager.TextLayoutOrientation](nslayoutmanager/textlayoutorientation.md)
   Constants that describe the text layout orientation.
 ### Deprecated
-- [Deprecated Symbols](nslayoutmanager-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+- [Deprecated symbols](nslayoutmanager-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

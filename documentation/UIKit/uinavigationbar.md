@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: class
 
-Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
+A region that displays the title and controls provided by navigation items.
 
 **Availability**:
 - iOS 2.0+
@@ -25,89 +25,101 @@ class UINavigationBar
 
 #### Overview
 
-A `UINavigationBar` object is a bar, typically displayed at the top of the window, containing buttons for navigating within a hierarchy of screens. The primary components are a left (back) button, a center title and optional subtitle, and optional right button(s). You can use a navigation bar as a standalone object or in conjunction with a navigation controller object.
+The primary components of a `UINavigationBar` are its title, subtitle, and leading and trailing items. Use `UINavigationBar` with [`UINavigationController`](uinavigationcontroller.md) whenever possible. The navigation controller creates, displays, and manages its associated navigation bar, and uses attributes of the view controllers in its navigation stack to control the content displayed in the navigation bar. You create a navigation bar directly only when you use a standalone navigation bar, and you handle its events with a [`UINavigationBarDelegate`](uinavigationbardelegate.md) object.
 
-You most frequently use a navigation bar within a navigation controller. The [`UINavigationController`](uinavigationcontroller.md) object creates, displays, and manages its associated navigation bar, and uses attributes of the view controllers you add to control the content displayed in the navigation bar.
+![A diagram that identifies the primary components of a navigation bar, including the system-provided back button, a leading item, the title and subtitle of the current view controller, and two trailing items grouped together.](/images/com.apple.uikit/uinavigationbar-01@2x.png)
 
-To control a navigation bar when using a navigation controller, follow these steps:
+To use a navigation bar with a navigation controller:
 
-- Create a navigation controller in Interface Builder or in the code.
+- Create a navigation controller in Interface Builder or in code.
 - Configure the appearance of the navigation bar using the [`navigationBar`](uinavigationcontroller/navigationbar.md) property on the [`UINavigationController`](uinavigationcontroller.md) object.
 - Control the content of the navigation bar by setting the [`title`](uiviewcontroller/title.md) and [`navigationItem`](uiviewcontroller/navigationitem.md) properties on each [`UIViewController`](uiviewcontroller.md) you push onto the navigation controller’s stack.
 
-You can also use a standalone navigation bar, without using a navigation controller. To add a navigation bar to your interface, follow these steps:
+A navigation controller also handles layout changes for you. On iPhone Duo, the system places each item from your [`UINavigationItem`](uinavigationitem.md) along either the horizontal axis at the top of the screen or the vertical axis along the side. The navigation bar content can appear along one axis or be divided between both.
+
+The system also updates the safe area so your content avoids the navigation controls. Use standard system components to get this behavior automatically.
+
+To add a navigation bar to your interface without using a navigation controller:
 
 - Set up Auto Layout rules to govern the position of the navigation bar in your interface.
 - Create a root navigation item to supply the initial title.
-- Configure a delegate object to handle user interactions with the navigation bar.
+- Configure a delegate object to handle interactions with the navigation bar.
 - Customize the appearance of the navigation bar.
-- Configure your app to push and pop relevant navigation items as the user navigates through the hierarchical screens.
+- Configure your app to push and pop relevant navigation items as people navigate through the hierarchical screens.
 
-##### Use a Navigation Bar with a Navigation Controller
+> ❗ **Important**: When you use `UINavigationBar` without a navigation controller, the system doesn’t adapt your controls for the vertical axis.
 
-If you use a navigation controller to manage the navigation between different screens of content, the navigation controller creates a navigation bar automatically and pushes and pops navigation items when appropriate.
+#### Use a Navigation Bar with a Navigation Controller
 
-A navigation controller uses the [`navigationItem`](uiviewcontroller/navigationitem.md) property on [`UIViewController`](uiviewcontroller.md) to provide the model objects to its navigation bar when navigating a stack of view controllers. The default navigation item uses the view controller’s title, but you can override the [`navigationItem`](uiviewcontroller/navigationitem.md) on a [`UIViewController`](uiviewcontroller.md) subclass to gain complete control of the navigation bar’s content.
+If you use a navigation controller to manage the navigation between view controllers, the navigation controller creates a navigation bar automatically and pushes and pops navigation items when appropriate.
 
-A navigation controller automatically assigns itself as the delegate of its navigation bar object. Therefore, when using a navigation controller, don’t assign a custom delegate object to the corresponding navigation bar.
+A navigation controller automatically assigns itself as the delegate of its navigation bar object. Don’t assign a custom delegate.
 
-To access the navigation bar associated with a navigation controller, use the [`navigationBar`](uinavigationcontroller/navigationbar.md) property on [`UINavigationController`](uinavigationcontroller.md). See [`Customize the appearance of a navigation bar`](uinavigationbar#Customize-the-appearance-of-a-navigation-bar.md) for details on appearance customization.
+To access the navigation bar associated with a navigation controller, use the [`navigationBar`](uinavigationcontroller/navigationbar.md) property on [`UINavigationController`](uinavigationcontroller.md). For details on appearance customization, see “Customize the appearance of a navigation bar,” below.
 
 For more information about navigation controllers, see [`UINavigationController`](uinavigationcontroller.md).
 
-##### Add Content to a Standalone Navigation Bar
+#### Add Content to a Standalone Navigation Bar
 
-In the vast majority of scenarios, you use a navigation bar as part of a navigation controller. However, there are situations for which you might want to use the navigation bar UI and implement your own approach to content navigation. In these situations, you can use a standalone navigation bar.
+Most apps use a navigation bar as part of a navigation controller. If you want the navigation bar user interface but need your own approach to content navigation, consider a standalone navigation bar.
 
-When you use a navigation bar as a standalone object, you’re responsible for providing its content. Unlike other types of views, you don’t add subviews to a navigation bar directly. Instead, you use a navigation item (an instance of the [`UINavigationItem`](uinavigationitem.md) class) to specify what buttons or custom views you want displayed. A navigation item has properties for specifying views on the left, right, and center of the navigation bar and for specifying a custom prompt string.
+When you use a navigation bar as a standalone object, you’re responsible for providing its content. Unlike other types of views, you don’t add subviews to a navigation bar directly. Instead, you use a navigation item (an instance of the [`UINavigationItem`](uinavigationitem.md) class) to specify the buttons or custom views to display. A navigation item provides properties for configuring its title, its subtitle, and its leading, center, and trailing bar items.
 
-A navigation bar manages a stack of [`UINavigationItem`](uinavigationitem.md) objects. Although the stack is there mostly to support navigation controllers, you can use it to implement your own custom navigation interface. The topmost item in the stack represents the navigation item whose contents are currently displayed by the navigation bar. You push new navigation items onto the stack using the [`pushItem(_:animated:)`](uinavigationbar/pushitem(_:animated:).md) method and pop items off the stack using the [`popItem(animated:)`](uinavigationbar/popitem(animated:).md) method. Both of these changes can be animated for the benefit of the user.
+Navigation bars manage a stack of [`UINavigationItem`](uinavigationitem.md) objects. Although the stack is there mostly to support navigation controllers, you can use it to implement a custom navigation interface. The topmost item in the stack represents the navigation item whose contents are available in the navigation bar. You push new navigation items onto the stack using the [`pushItem(_:animated:)`](uinavigationbar/pushitem(_:animated:).md) method and pop items off the stack using the [`popItem(animated:)`](uinavigationbar/popitem(animated:).md) method.
 
-In addition to pushing and popping items, you can also set the contents of the stack directly using either the [`items`](uinavigationbar/items.md) property or the [`setItems(_:animated:)`](uinavigationbar/setitems(_:animated:).md) method. You might use this method at launch time to restore your interface to its previous state or to push or pop more than one navigation item at a time. The following figure shows the part of the [`UINavigationBar`](uinavigationbar.md) API responsible for managing the stack of navigation items:
+In addition to pushing and popping items, you can also set the contents of the stack directly using either the [`items`](uinavigationbar/items.md) property or the [`setItems(_:animated:)`](uinavigationbar/setitems(_:animated:).md) method. You might use this method to apply restored state at launch, or to push or pop more than one navigation item at a time. The following figure shows the part of the [`UINavigationBar`](uinavigationbar.md) API responsible for managing the stack of navigation items:
 
-![A flowchart diagram of the navigation bar and a stack of navigation items. A new navigation item enters the navigation bar from the left side of the diagram. In the center, the UINavigationBar contains properties that provide access to items in the stack, and methods that allow mutation by pushing on and popping off the stack, depicted on the right of the diagram.](/images/com.apple.uikit/media-2759892@2x.png)
+![A diagram of the navigation bar and a stack of navigation items. A new navigation item enters the navigation bar from the left side of the diagram. In the center, the UINavigationBar contains properties that provide access to items in the stack, and methods that allow mutation by pushing on and popping off the stack, depicted on the right of the diagram.](/images/com.apple.uikit/uinavigationbar-02@2x.png)
 
-If you’re using a navigation bar as a standalone object, assign a custom delegate object to the [`delegate`](uinavigationbar/delegate.md) property and use that object to intercept messages coming from the navigation bar. Delegate objects must conform to the [`UINavigationBarDelegate`](uinavigationbardelegate.md) protocol. The delegate notifications let you track when navigation items are pushed or popped from the stack. You use these notifications to update the rest of your app’s user interface.
+If you’re using a navigation bar as a standalone object, assign a custom delegate object to the [`delegate`](uinavigationbar/delegate.md) property and use that object to intercept messages coming from the navigation bar. Delegate objects must conform to the [`UINavigationBarDelegate`](uinavigationbardelegate.md) protocol. Use the delegate to track when the navigation bar pushes or pops navigation items, and update the rest of your app’s user interface in response.
 
-For more information about creating navigation items, see [`UINavigationItem`](uinavigationitem.md). For more information about implementing a delegate object, see [`UINavigationBarDelegate`](uinavigationbardelegate.md).
+For more information about creating navigation items, see [`UINavigationItem`](uinavigationitem.md). To implement a delegate object, see [`UINavigationBarDelegate`](uinavigationbardelegate.md).
 
-##### Customize the Appearance of a Navigation Bar
+#### Customize the Appearance of a Navigation Bar
 
 Navigation bars are transparent and feature bar button items constructed with Liquid Glass. Don’t add a background or apply a tint color to the navigation bar, as that may interfere with the Liquid Glass presentation.
 
 Customize the color of the text or image in a bar button item by setting the [`tintColor`](uibarbuttonitem/tintcolor.md) property. To customize the background color of a bar button item, set the bar button’s tint color, then set the bar button’s [`style`](uibarbuttonitem/style-swift.property.md) property to the value [`UIBarButtonItem.Style.prominent`](uibarbuttonitem/style-swift.enum/prominent.md).
 
-The [`titleTextAttributes`](uinavigationbar/titletextattributes.md) property specifies the attributes for displaying the bar’s title text. You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary using the [`NSFontAttributeName`](nsfontattributename.md), [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md), and [`NSShadowAttributeName`](nsshadowattributename.md) keys.
+For design guidance, see Human Interface Guidelines > Foundations > Color > [`Liquid Glass color`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/color#Liquid-Glass-color).
 
-Use the [`setTitleVerticalPositionAdjustment(_:for:)`](uinavigationbar/settitleverticalpositionadjustment(_:for:).md) method to adjust the vertical position of the title. This method allows you to specify the adjustment dependent on the bar height, which is represented by the [`UIBarMetrics`](uibarmetrics.md) enumeration.
+The [`titleTextAttributes`](uinavigationbar/titletextattributes.md) property specifies the attributes for displaying the bar’s title text. Use the following keys in the text attributes dictionary to customize the title bar’s text:
 
-See [`Customizing your app’s navigation bar`](customizing-your-app-s-navigation-bar.md) for customization examples.
+| Key | Value | Description |
+| --- | --- | --- |
+| [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/font) | [`UIFont`](uifont.md) | The font to use. |
+| [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/foregroundcolor) | [`UIColor`](uicolor.md) | The font color to use. |
+| [`shadow`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/shadow) | [`NSShadow`](nsshadow.md) | The shadow object defining, offset, color, and radius to use. |
 
-##### Customize a Navigation Bar with Interface Builder
+Use the [`setTitleVerticalPositionAdjustment(_:for:)`](uinavigationbar/settitleverticalpositionadjustment(_:for:).md) method to adjust the vertical position of the title for a given bar height, which the [`UIBarMetrics`](uibarmetrics.md) enumeration specifies.
+
+For details on appearance customization, see [`Customize the appearance of a navigation bar`](uinavigationbar#Customize-the-appearance-of-a-navigation-bar.md).
+
+#### Customize a Navigation Bar with Interface Builder
 
 The following table lists the Interface Builder attributes that affect the appearance of the navigation bar’s title.
 
-| Attribute | Description |
-| --- | --- |
-| Title Font | The font for the title in the center of the navigation bar. Access this value at runtime with the [`NSFontAttributeName`](nsfontattributename.md) key in the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) dictionary. |
-| Title Color | The color for the navigation bar title. Access this value at runtime with the [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md) key in the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) dictionary. |
-| Title Shadow | The color and offset of the shadow for the navigation bar’s title. Access these values at runtime from the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) dictionary, using the [`NSShadowAttributeName`](nsshadowattributename.md) key. |
+| Key | Attribute | Description |
+| --- | --- | --- |
+| [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/font) | Title Font | The font to use. |
+| [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/foregroundcolor) | Title Color | The font color to use. |
+| [`shadow`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/shadow) | Title Shadow | The shadow object defining, offset, color, and radius to use. |
 
-##### Localize a Navigation Bar
+#### Localize a Navigation Bar
 
 To localize navigation bars, specify a localized string for each of the displayed string properties of the navigation item model objects.
 
 For more information about localizing your interface, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
-##### Make a Navigation Bar Accessible
+#### Make a Navigation Bar Accessible
 
 Navigation bars are accessible by default. The default accessibility trait for a navigation bar is User Interaction Enabled.
 
-With VoiceOver enabled on an iOS device, after someone navigates to a new view in the hierarchy, VoiceOver reads the navigation bar’s title, followed by the name of the left bar button item. When someone taps an element in a navigation bar, VoiceOver reads the name and the type of the element, for example, “General back button,” “Keyboard heading,” and “Edit button.”
+With VoiceOver enabled on an iOS device, when someone focuses on the back button in a navigation bar, VoiceOver reads the title of the previous view followed by the element type, for example, “General, back button.” When someone focuses on other elements in a navigation bar, VoiceOver reads the name and type of the element, for example, “Keyboard, heading” and “Edit, button.”
 
-For general information about making your interface accessible, see [`Accessibility for UIKit`](accessibility-for-uikit.md).
+For information on how to make your interface accessible, see [`Accessibility for UIKit`](accessibility-for-uikit.md).
 
-##### Build Your App with Mac Catalyst
+#### Build Your App with Mac Catalyst
 
 When you build your app with Mac Catalyst and it runs with the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md), the system can display a navigation bar’s content in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) instead of displaying the navigation bar directly. This is the default behavior when [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](uibehavioralstyle/automatic.md). Setting [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md) doesn’t change this behavior on the Mac idiom, and the system ignores this setting when your app runs with the [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md). To opt out of this behavior, set [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
 
@@ -152,6 +164,11 @@ Not every navigation item property is supported in every toolbar section. For mo
   A Boolean value that indicates whether the navigation bar is translucent.
 - [Legacy customizations](uinavigationbar-legacy-customizations.md)
   Customize appearance information directly on the navigation bar object.
+### Configuring bars on the vertical axis
+- [enum UIVerticalBarBehavior](uiverticalbarbehavior.md)
+  A behavior that determines whether the vertical bar is used.
+- [enum UIVerticalBarCompressionBehavior](uiverticalbarcompressionbehavior.md)
+  How bars compress when different types of bars are hosted together and space is constrained.
 ### Building with Mac Catalyst
 - [var behavioralStyle: UIBehavioralStyle](uinavigationbar/behavioralstyle.md)
   The behavioral style of the navigation bar.
@@ -224,7 +241,7 @@ Not every navigation item property is supported in every toolbar section. For mo
 - [class UIPageViewController](uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
 - [class UIArrangementViewController](uiarrangementviewcontroller.md)
-  A view controller that presents its container view controllers through an arrangement.
+  A view controller that dynamically lays out primary and secondary view controllers based on size class, orientation, and reserved regions.
 
 
 ---

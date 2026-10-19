@@ -165,12 +165,8 @@ To configure the content and appearance of your cell, you can set its [`contentC
 - [UITableViewCell.FocusStyle](uitableviewcell/focusstyle-swift.enum.md)
   The style of focused cells.
 ### Deprecated
-- [var textLabel: UILabel?](uitableviewcell/textlabel.md)
-  The label to use for the main textual content of the table cell.
-- [var detailTextLabel: UILabel?](uitableviewcell/detailtextlabel.md)
-  The secondary label of the table cell, if one exists.
-- [var imageView: UIImageView?](uitableviewcell/imageview.md)
-  The image view of the table cell.
+- [Deprecated symbols](uitableviewcell-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

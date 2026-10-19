@@ -20,8 +20,6 @@ var titleRect: NSRect { get }
   The rectangle in which the receiver’s border is drawn.
 - [var boxType: NSBox.BoxType](nsbox/boxtype-swift.property.md)
   The receiver’s box type.
-- [var borderType: NSBorderType](nsbox/bordertype.md)
-  The receiver’s border type.
 - [var isTransparent: Bool](nsbox/istransparent.md)
   A Boolean value that indicates whether the receiver is transparent.
 - [var title: String](nsbox/title.md)
@@ -32,6 +30,8 @@ var titleRect: NSRect { get }
   A constant representing the title position.
 - [var titleCell: Any](nsbox/titlecell.md)
   The cell used to display the receiver’s title.
+- [var borderType: NSBorderType](nsbox/bordertype.md)
+  The receiver’s border type.
 
 
 ---

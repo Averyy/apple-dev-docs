@@ -46,6 +46,10 @@ This graphics state is used by default for all `NSView` objects in the window’
   Specifies whether the window is to optimize focusing and drawing when displaying its views.
 - [convenience init?(windowRef: UnsafeMutableRawPointer)](nswindow/init(windowref:).md)
   Returns a Cocoa window created from a Carbon window.
+- [func disableScreenUpdatesUntilFlush()](nswindow/disablescreenupdatesuntilflush.md)
+  Disables the window’s screen updates until the window is flushed.
+- [func drag(NSImage, at: NSPoint, offset: NSSize, event: NSEvent, pasteboard: NSPasteboard, source: Any, slideBack: Bool)](nswindow/drag(_:at:offset:event:pasteboard:source:slideback:).md)
+  Begins a dragging session.
 
 
 ---

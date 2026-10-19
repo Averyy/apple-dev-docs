@@ -28,14 +28,6 @@ For information on ink text objects, see Using Ink Services in Your Application.
   Encapsulated PostScript (EPS) code.
 - [static let vCard: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/vcard.md)
   VCard data.
-- [var representedPathExtension: String?](nspasteboard/pasteboardtype/representedpathextension.md)
-  A file type based on the passed pasteboard type.
-- [static func fileContentsType(forPathExtension: String) -> NSPasteboard.PasteboardType!](nspasteboard/pasteboardtype/filecontentstype(forpathextension:).md)
-  Returns a pasteboard type based on the passed file type.
-- [static func fileNameType(forPathExtension: String) -> NSPasteboard.PasteboardType!](nspasteboard/pasteboardtype/filenametype(forpathextension:).md)
-  Returns a pasteboard type based on the passed file type.
-- [static func representedPathExtensions(from: [NSPasteboard.PasteboardType]) -> [String]?](nspasteboard/pasteboardtype/representedpathextensions(from:).md)
-  Returns an array of file types based on the passed pasteboard types.
 
 
 ---

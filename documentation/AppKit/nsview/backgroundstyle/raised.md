@@ -26,6 +26,10 @@ You might need to inset the cell’s content to achieve this effect.
   A style that adds emphasis to the background using an alternate color or visual effect.
 - [NSView.BackgroundStyle.lowered](nsview/backgroundstyle/lowered.md)
   A style that makes the background appear lower than the content drawn on it.
+- [static var light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
+  The background is a light color.
+- [static var dark: NSView.BackgroundStyle](nsview/backgroundstyle/dark.md)
+  The background is a dark color.
 
 
 ---

@@ -30,6 +30,36 @@ func vvexpm1f(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Unsafe
 
 If *x* is nearly zero, the common expression *exp(x)-1.0* will suffer from catastrophic cancellation and the result will have little or no precision.  This function provides an alternative means to do this calculation without the risk of significant loss of precision. This function provides high accuracy when *x* is around zero.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [0, 1, 2]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate `e` raised to the power of each element in `x`, minus 1.
+vvexpm1f(&y, &x, &n)
+
+// Prints "[0.0, 1.7182817, 6.389056]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {0, 1, 2};
+float y[3];
+int n = 3;
+
+// Calculate `e` raised to the power of each element in `x`, minus 1.
+vvexpm1f(y, x, &n);
+
+// Prints "[0, 1.71828, 6.38906]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)

@@ -28,14 +28,10 @@ struct FileDocumentReadConfiguration
 
 ## See Also
 
-- [protocol FileDocument](filedocument.md)
-  A type that you use to serialize documents to and from file.
 - [struct FileDocumentConfiguration](filedocumentconfiguration.md)
   The properties of an open file document.
 - [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
   The configuration for serializing file contents.
-- [protocol ReferenceFileDocument](referencefiledocument.md)
-  A type that you use to serialize reference type documents to and from file.
 - [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
   The properties of an open reference file document.
 

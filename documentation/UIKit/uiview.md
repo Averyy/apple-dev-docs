@@ -400,9 +400,9 @@ override func viewDidLoad() {
 - [func layoutGuide(for: UIView.LayoutRegion) -> UILayoutGuide](uiview/layoutguide(for:).md)
 ### Inspecting reserved regions
 - [UIView.ReservedRegion](uiview/reservedregion.md)
-  A region within a view’s coordinate space that another entity occupies.
+  A region within a view’s coordinate space that another entity reserves.
 - [func reservedRegions(kind: UIView.ReservedRegion.Kind, options: UIView.ReservedRegion.QueryOptions) -> [UIView.ReservedRegion]](uiview/reservedregions(kind:options:).md)
-  Returns the reserved regions of a given kind and options.
+  Returns the reserved regions of a kind that overlap the view.
 ### Adjusting the user interface
 - [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiview/overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.
@@ -597,7 +597,7 @@ override func viewDidLoad() {
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 ### Deprecated
 - [Deprecated symbols](uiview-deprecated-symbols.md)
-  Symbols that views no longer support.
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [convenience init()](uiview/init.md)
 ### Instance Properties

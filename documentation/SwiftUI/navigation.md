@@ -36,6 +36,8 @@ Configure navigation containers by adding view modifiers like [`navigationSplitV
   The visibility of the leading columns in a navigation split view.
 - [struct NavigationLink](navigationlink.md)
   A view that controls a navigation presentation.
+- [struct NavigationView](navigationview.md)
+  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 ### Stacking views in one column
 - [struct NavigationStack](navigationstack.md)
   A view that displays a root view and enables you to present additional views over the root view.
@@ -84,6 +86,8 @@ Configure navigation containers by adding view modifiers like [`navigationSplitV
   A container that you can use to add hierarchy within a tab view.
 - [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
   Sets the style for the tab view within the current environment.
+- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
+  Sets the tab bar item associated with this view.
 ### Configuring a tab bar
 - [func defaultAdaptableTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaultadaptabletabbarplacement(_:).md)
   Specifies the default placement for the tabs in a tab view using the adaptable sidebar style.
@@ -132,11 +136,6 @@ Configure navigation containers by adding view modifiers like [`navigationSplitV
   A layout container that arranges its children in a horizontal line and allows the user to resize them using dividers placed between them.
 - [struct VSplitView](vsplitview.md)
   A layout container that arranges its children in a vertical line and allows the user to resize them using dividers placed between them.
-### Deprecated Types
-- [struct NavigationView](navigationview.md)
-  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
-- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
-  Sets the tab bar item associated with this view.
 
 ## See Also
 

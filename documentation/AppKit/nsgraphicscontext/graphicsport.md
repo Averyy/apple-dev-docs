@@ -18,13 +18,6 @@ var graphicsPort: UnsafeMutableRawPointer { get }
 
 In macOS, this is the Core Graphics context, a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) object (opaque type).
 
-## See Also
-
-- [class var current: NSGraphicsContext?](nsgraphicscontext/current.md)
-  Returns the current graphics context of the current thread.
-- [var cgContext: CGContext](nsgraphicscontext/cgcontext.md)
-  The Core Graphics context, which is a low-level, platform-specific graphics context.
-
 
 ---
 

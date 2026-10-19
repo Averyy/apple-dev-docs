@@ -25,6 +25,7 @@ struct ASAuthorizationError
 ### Getting the Properties
 - [static var notInteractive: ASAuthorizationError.Code](asauthorizationerror-swift.struct/notinteractive.md)
 ### Error Domain
+- [static var errorDomain: String](asauthorizationerror-swift.struct/errordomain.md)
 - [let ASAuthorizationErrorDomain: String](asauthorizationerrordomain.md)
   The domain of authorization errors.
 ### Error Codes
@@ -46,7 +47,6 @@ struct ASAuthorizationError
   Codes that authorization errors can have.
 ### Type Properties
 - [static var deviceNotConfiguredForPasskeyCreation: ASAuthorizationError.Code](asauthorizationerror-swift.struct/devicenotconfiguredforpasskeycreation.md)
-- [static var errorDomain: String](asauthorizationerror-swift.struct/errordomain.md)
 - [static var matchedExcludedCredential: ASAuthorizationError.Code](asauthorizationerror-swift.struct/matchedexcludedcredential.md)
 - [static var preferSignInWithApple: ASAuthorizationError.Code](asauthorizationerror-swift.struct/prefersigninwithapple.md)
 

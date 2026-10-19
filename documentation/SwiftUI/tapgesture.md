@@ -62,8 +62,6 @@ struct TapGestureView: View {
 
 - [func onTapGesture(count: Int, perform: () -> Void) -> some View](view/ontapgesture(count:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture.
-- [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
-  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [struct SpatialTapGesture](spatialtapgesture.md)

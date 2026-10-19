@@ -6,8 +6,8 @@
 Specifies this view as the reference body for the nearby interaction session’s angle calculations.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 

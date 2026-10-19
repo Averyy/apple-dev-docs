@@ -16,6 +16,10 @@
 convenience init()
 ```
 
+## See Also
+
+- [init(frame: CGRect)](uiwindow/init(frame:).md)
+
 
 ---
 

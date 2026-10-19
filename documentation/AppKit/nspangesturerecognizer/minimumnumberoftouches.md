@@ -22,6 +22,8 @@ Defaults to 1.
 
 - [var maximumNumberOfTouches: Int](nspangesturerecognizer/maximumnumberoftouches.md)
   The maximum number of touches allowed to recognize this gesture
+- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
+  The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 
 ---

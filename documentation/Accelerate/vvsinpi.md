@@ -28,7 +28,7 @@ func vvsinpi(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvsinpi(_:_:_:)`](vvsinpi(_:_:_:).md).
+The following code shows an example of using [`vvsinpi(_:_:_:)`](vvsinpi(_:_:_:).md):
 
 **Swift**:
 
@@ -51,7 +51,7 @@ int n = 3;
  
 vvsinpi(y, x, &n);
  
-NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+printf("y: [%lf, %lf, %lf]\n", y[0], y[1], y[2]);
 ```
 
 ## See Also

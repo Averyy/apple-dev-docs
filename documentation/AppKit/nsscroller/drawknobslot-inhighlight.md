@@ -25,12 +25,8 @@ Only one arrow button will be shown highlighted at a time, so you can expect thi
 
 ## See Also
 
-- [func drawArrow(NSScroller.Arrow, highlight: Bool)](nsscroller/drawarrow(_:highlight:).md)
-  Draws the scroll button indicated by `arrow`, which is either `NSScrollerIncrementArrow` (the down or right scroll button) or `NSScrollerDecrementArrow` (up or left).
 - [func drawKnob()](nsscroller/drawknob.md)
   Draws the knob.
-- [func highlight(Bool)](nsscroller/highlight(_:).md)
-  Highlights or unhighlights the scroll button the user clicked.
 
 
 ---

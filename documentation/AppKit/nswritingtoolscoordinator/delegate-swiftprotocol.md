@@ -47,12 +47,12 @@ Writing Tools expects you to call the provided handler blocks at the end of your
 - [func writingToolsCoordinator(NSWritingToolsCoordinator, finish: NSWritingToolsCoordinator.TextAnimation, for: NSRange, in: NSWritingToolsCoordinator.Context, completion: () -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:finish:for:in:completion:).md)
   Asks the delegate to clean up any state related to the specified Writing Tools animation.
 ### Displaying proofreading marks
-- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsRangeInContextWithIdentifierFor: NSPoint, completion: (NSRange, UUID) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsrangeincontextwithidentifierfor:completion:).md)
-  Asks the delegate to provide the location of the character at the specified point in your view’s coordinate system.
 - [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsBoundingBezierPathsFor: NSRange, in: NSWritingToolsCoordinator.Context, completion: ([NSBezierPath]) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsboundingbezierpathsfor:in:completion:).md)
   Asks the delegate to provide the bounding paths for the specified text in your view.
 - [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsUnderlinePathsFor: NSRange, in: NSWritingToolsCoordinator.Context, completion: ([NSBezierPath]) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsunderlinepathsfor:in:completion:).md)
   Asks the delegate to provide an underline shape for the specified text during a proofreading session.
+- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsRangeInContextWithIdentifierFor: NSPoint, completion: (NSRange, UUID) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsrangeincontextwithidentifierfor:completion:).md)
+  Asks the delegate to provide the location of the character at the specified point in your view’s coordinate system.
 ### Providing animation container views dynamically
 - [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsSingleContainerSubrangesOf: NSRange, in: NSWritingToolsCoordinator.Context, completion: ([NSValue]) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestssinglecontainersubrangesof:in:completion:).md)
   Asks the delegate to divide the specified range of text into the separate containers that render that text.

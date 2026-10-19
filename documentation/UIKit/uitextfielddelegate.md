@@ -55,18 +55,15 @@ For more information about the features of a text field, see [`UITextField`](uit
 - [UITextField.DidEndEditingReason](uitextfield/didendeditingreason.md)
   Constants that indicate the reason for ending editing in a text field.
 ### Editing the text field’s text
-- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md)
-  Asks the delegate whether to change the specified text.
 - [func textFieldShouldClear(UITextField) -> Bool](uitextfielddelegate/textfieldshouldclear(_:).md)
   Asks the delegate whether to remove the text field’s current contents.
 - [func textFieldShouldReturn(UITextField) -> Bool](uitextfielddelegate/textfieldshouldreturn(_:).md)
   Asks the delegate whether to process the pressing of the Return button for the text field.
+- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md)
+  Asks the delegate whether to change the specified text.
 ### Managing text selection
 - [func textFieldDidChangeSelection(UITextField)](uitextfielddelegate/textfielddidchangeselection(_:).md)
   Tells the delegate when the text selection changes in the specified text field.
-### Providing a context menu
-- [func textField(UITextField, editMenuForCharactersIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextfielddelegate/textfield(_:editmenuforcharactersin:suggestedactions:).md)
-  Asks the delegate for the menu to display in the text field, based on the text range and actions the system provides.
 ### Customizing an edit menu
 - [func textField(UITextField, willPresentEditMenuWith: any UIEditMenuInteractionAnimating)](uitextfielddelegate/textfield(_:willpresenteditmenuwith:).md)
   Tells the delegate that the system is about to present an edit menu with an animator.
@@ -75,6 +72,9 @@ For more information about the features of a text field, see [`UITextField`](uit
 ### Inserting a Smart Reply suggestion
 - [func textField(UITextField, insertInputSuggestion: UIInputSuggestion)](uitextfielddelegate/textfield(_:insertinputsuggestion:).md)
   Tells the delegate when the keyboard delivers an input suggestion.
+### Providing a context menu
+- [func textField(UITextField, editMenuForCharactersIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextfielddelegate/textfield(_:editmenuforcharactersin:suggestedactions:).md)
+  Asks the delegate for the menu to display in the text field, based on the text range and actions the system provides.
 ### Instance Methods
 - [func textField(UITextField, editMenuForCharactersInRanges: [NSValue], suggestedActions: [UIMenuElement]) -> UIMenu?](uitextfielddelegate/textfield(_:editmenuforcharactersinranges:suggestedactions:).md)
 - [func textField(UITextField, shouldChangeCharactersInRanges: [NSValue], replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersinranges:replacementstring:).md)

@@ -29,6 +29,10 @@ The default value of this property is `0.0`.
 
 - [var actualScaleFactor: CGFloat](nsstringdrawingcontext/actualscalefactor.md)
   The actual scale factor that the system applied to the font during drawing.
+- [var minimumTrackingAdjustment: CGFloat](nsstringdrawingcontext/minimumtrackingadjustment.md)
+  The smallest amount of space, in points, to maintain between characters.
+- [var actualTrackingAdjustment: CGFloat](nsstringdrawingcontext/actualtrackingadjustment.md)
+  The actual tracking value that the system applied during drawing.
 
 
 ---

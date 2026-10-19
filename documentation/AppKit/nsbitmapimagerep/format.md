@@ -38,6 +38,9 @@ You can combine these values and pass them to the  [`init(bitmapDataPlanes:pixel
 ### Initializers
 - [init(rawValue: UInt)](nsbitmapimagerep/format/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
+### Deprecated
+- [Deprecated symbols](format-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

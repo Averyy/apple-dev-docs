@@ -23,12 +23,11 @@ protocol UIPencilInteractionDelegate : NSObjectProtocol
 ### Handling double-tap interactions
 - [func pencilInteraction(UIPencilInteraction, didReceiveTap: UIPencilInteraction.Tap)](uipencilinteractiondelegate/pencilinteraction(_:didreceivetap:).md)
   Tells the delegate when a person double-taps Apple Pencil.
+- [func pencilInteractionDidTap(UIPencilInteraction)](uipencilinteractiondelegate/pencilinteractiondidtap(_:).md)
+  Tells the delegate that the user double-tapped Apple Pencil.
 ### Handling squeeze interactions
 - [func pencilInteraction(UIPencilInteraction, didReceiveSqueeze: UIPencilInteraction.Squeeze)](uipencilinteractiondelegate/pencilinteraction(_:didreceivesqueeze:).md)
   Tells the delegate when a person squeezes Apple Pencil.
-### Deprecated
-- [func pencilInteractionDidTap(UIPencilInteraction)](uipencilinteractiondelegate/pencilinteractiondidtap(_:).md)
-  Tells the delegate that the user double-tapped Apple Pencil.
 
 ## Relationships
 

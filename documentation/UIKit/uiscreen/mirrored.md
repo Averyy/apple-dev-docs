@@ -27,8 +27,6 @@ To disable mirroring and present unique content on the external display, registe
 
 - [class var main: UIScreen](uiscreen/main.md)
   Returns the screen object representing the device’s screen.
-- [var isCaptured: Bool](uiscreen/iscaptured.md)
-  A Boolean value that indicates whether the system is actively cloning the screen to another destination.
 
 
 ---

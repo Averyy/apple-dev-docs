@@ -24,8 +24,6 @@ You may override this method to implement different behavior. Never invoke this 
   Assigns a menu to be a submenu of the menu controlled by a given menu item.
 - [var supermenu: NSMenu?](nsmenu/supermenu.md)
   The parent menu that contains the menu as a submenu.
-- [var isTornOff: Bool](nsmenu/istornoff.md)
-  Indicates whether the menu is offscreen or attached to another menu (or if it’s the main menu).
 
 
 ---

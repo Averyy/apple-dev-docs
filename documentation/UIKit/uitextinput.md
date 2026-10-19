@@ -107,6 +107,8 @@ When the user chooses dictation input on a supported device, the system automati
   Returns the base writing direction for a position in the text going in a certain direction.
 - [func setBaseWritingDirection(NSWritingDirection, for: UITextRange)](uitextinput/setbasewritingdirection(_:for:).md)
   Sets the base writing direction for a specified range of text in a document.
+- [typealias UITextWritingDirection](uitextwritingdirection.md)
+  The writing direction of the text for the language.
 ### Working with geometry and hit-testing
 - [func firstRect(for: UITextRange) -> CGRect](uitextinput/firstrect(for:).md)
   Returns the first rectangle that encloses a range of text in a document.
@@ -193,8 +195,6 @@ When the user chooses dictation input on a supported device, the system automati
 - [enum UITextLayoutDirection](uitextlayoutdirection.md)
   The direction of text layout.
 ### Deprecated
-- [typealias UITextWritingDirection](uitextwritingdirection.md)
-  The writing direction of the text for the language.
 - [Style dictionary keys](style-dictionary-keys.md)
   A dictionary that contains properties that define text style characteristics.
 ### Instance Properties

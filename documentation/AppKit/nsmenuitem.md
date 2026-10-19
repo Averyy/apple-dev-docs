@@ -87,9 +87,6 @@ The [`NSMenuItem`](nsmenuitem.md) class includes some private functionality need
   The menu item’s unmodified key equivalent.
 - [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsmenuitem/keyequivalentmodifiermask.md)
   The menu item’s keyboard equivalent modifiers.
-### Managing mnemonics
-- [func setTitleWithMnemonic(String)](nsmenuitem/settitlewithmnemonic(_:).md)
-  Sets the title of a menu item with a character denoting an access key.
 ### Managing user key equivalents
 - [class var usesUserKeyEquivalents: Bool](nsmenuitem/usesuserkeyequivalents.md)
   Returns a Boolean value that indicates whether menu items conform to user preferences for key equivalents.
@@ -124,6 +121,9 @@ The [`NSMenuItem`](nsmenuitem.md) class includes some private functionality need
 ### Type Methods
 - [static func sectionHeader(title: String) -> NSMenuItem](nsmenuitem/sectionheader(title:).md)
   Returns a menu item representing a section header for a logical grouping of menu commands.
+### Deprecated
+- [func setTitleWithMnemonic(String)](nsmenuitem/settitlewithmnemonic(_:).md)
+  Sets the title of a menu item with a character denoting an access key.
 - [static func sectionHeader(withTitle: String) -> NSMenuItem](nsmenuitem/sectionheader(withtitle:).md)
   Returns a menu item representing a section header for a logical grouping of menu commands.
 ### Instance Properties

@@ -22,7 +22,7 @@ struct NearestNeighbors
 
 #### Overview
 
-The following code generates eight 2D data points and loads them into a k-nearest neighbors object with a single call to the [`append(samples:)`](bnns/nearestneighbors/append(samples:).md) function. The code then computes the four nearest neighbors, based on Euclidean distance, to the sample data point at index 7 of the samples data.
+The following code generates eight 2D data points and loads them into a k-nearest neighbors object with a single call to the [`append(samples:)`](bnns/nearestneighbors/append(samples:).md) function. The code then computes the four nearest neighbors, based on Euclidean distance, to the sample data point at index 7 of the samples data:
 
 ```swift
 let samples: [Float] = [

@@ -57,14 +57,18 @@ The system resolves a font’s value at the time it uses the font in a given env
 ### Getting system fonts
 - [static func system(Font.TextStyle, design: Font.Design?, weight: Font.Weight?) -> Font](font/system(_:design:weight:).md)
   Gets a system font that uses the specified style, design, and weight.
-- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](font/system(size:weight:design:)-697b2.md)
-  Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 - [Font.Design](font/design.md)
   A design to use for fonts.
 - [Font.TextStyle](font/textstyle.md)
   A dynamic text style to use for fonts.
 - [struct Weight](font/weight.md)
   A weight to use for fonts.
+- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](font/system(size:weight:design:)-697b2.md)
+  Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
+- [static func system(Font.TextStyle, design: Font.Design) -> Font](font/system(_:design:).md)
+  Gets a system font with the given text style and design.
+- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
+  Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 ### Creating custom fonts
 - [static func custom(String, fixedSize: CGFloat) -> Font](font/custom(_:fixedsize:).md)
   Create a custom font with the given `name` and a fixed `size` that does not scale with Dynamic Type.
@@ -100,11 +104,6 @@ The system resolves a font’s value at the time it uses the font in a given env
   Adjusts the line spacing of a font.
 - [Font.Leading](font/leading.md)
   A line spacing adjustment that you can apply to a font.
-### Deprecated symbols
-- [static func system(Font.TextStyle, design: Font.Design) -> Font](font/system(_:design:).md)
-  Gets a system font with the given text style and design.
-- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
-  Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 ### Structures
 - [struct Context](font/context.md)
   Information used to resolve a font.

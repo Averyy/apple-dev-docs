@@ -101,10 +101,10 @@ static func clipToGlobalNorm() {
                          0.5 * 14.2828568570857,
                          0)
     
-    // Prints: `[0.5, 1.0, 1.5, 2.0]`
+    // Prints "[0.5, 1.0, 1.5, 2.0]".
     print(Array(outputOneData))
     
-    // Prints: `[2.5, 3.0, 3.5, 4.0]`
+    // Prints "[2.5, 3.0, 3.5, 4.0]".
     print(Array(outputTwoData))
     
     inputOneData.deallocate()

@@ -21,6 +21,7 @@ struct ASCredentialIdentityStoreError
 ## Topics
 
 ### Error domain
+- [static var errorDomain: String](ascredentialidentitystoreerror/errordomain.md)
 - [let ASCredentialIdentityStoreErrorDomain: String](ascredentialidentitystoreerrordomain.md)
   The domain for a credential identity store error.
 - [static var internalError: ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/internalerror.md)
@@ -31,8 +32,6 @@ struct ASCredentialIdentityStoreError
   The operation failed because the credential identity store is disabled.
 - [ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/code.md)
   Constants that represent credential identity store error codes.
-### Type Properties
-- [static var errorDomain: String](ascredentialidentitystoreerror/errordomain.md)
 
 ## Relationships
 

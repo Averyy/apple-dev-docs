@@ -240,17 +240,11 @@ Browser
 ### Notifications
 - [class let columnConfigurationDidChangeNotification: NSNotification.Name](nsbrowser/columnconfigurationdidchangenotification.md)
   Notifies the delegate when the width of a browser column has changed.
-### Deprecated
-- [func column(of: NSMatrix) -> Int](nsbrowser/column(of:).md)
-  Returns the column number in which the given matrix is located.
-- [func matrix(inColumn: Int) -> NSMatrix?](nsbrowser/matrix(incolumn:).md)
-  Returns the matrix located in the specified column.
-- [func matrixClass() -> AnyClass](nsbrowser/matrixclass.md)
-  Returns the matrix class used in the browser’s columns.
-- [func setMatrixClass(AnyClass)](nsbrowser/setmatrixclass(_:).md)
-  Sets the matrix class to be used in the browser’s columns.
 ### Instance Methods
 - [func selectedCell() -> Any?](nsbrowser/selectedcell.md)
+### Deprecated
+- [Deprecated symbols](nsbrowser-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSBrowser.ColumnConfigurationDidChangeMessage](nsbrowser/columnconfigurationdidchangemessage.md)
 

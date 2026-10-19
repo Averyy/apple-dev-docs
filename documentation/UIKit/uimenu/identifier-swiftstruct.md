@@ -53,8 +53,6 @@ When creating a custom menu identifier, provide a reverse domain name string val
 ### File menus
 - [static let newItem: UIMenu.Identifier](uimenu/identifier-swift.struct/newitem.md)
   New item menu
-- [static let newScene: UIMenu.Identifier](uimenu/identifier-swift.struct/newscene.md)
-  The New Scene menu.
 - [static let openRecent: UIMenu.Identifier](uimenu/identifier-swift.struct/openrecent.md)
   The Open Recent menu.
 - [static let open: UIMenu.Identifier](uimenu/identifier-swift.struct/open.md)
@@ -65,6 +63,8 @@ When creating a custom menu identifier, provide a reverse domain name string val
   The Print menu.
 - [static let document: UIMenu.Identifier](uimenu/identifier-swift.struct/document.md)
   The Document menu.
+- [static let newScene: UIMenu.Identifier](uimenu/identifier-swift.struct/newscene.md)
+  The New Scene menu.
 ### Edit menus
 - [static let undoRedo: UIMenu.Identifier](uimenu/identifier-swift.struct/undoredo.md)
   The Undo/Redo menu.

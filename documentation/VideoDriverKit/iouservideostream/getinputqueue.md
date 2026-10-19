@@ -6,7 +6,7 @@
 Gets the buffer queue for the stream.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

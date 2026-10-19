@@ -93,7 +93,6 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 ### Fill colors
 - [class var quaternarySystemFill: NSColor](nscolor/quaternarysystemfill.md)
   A color appropriate for filling large areas, such as a group box or tab pane.
-- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var quinarySystemFill: NSColor](nscolor/quinarysystemfill.md)
   A color appropriate for filling large areas that require subtle emphasis, such as content of a form.
 - [class var secondarySystemFill: NSColor](nscolor/secondarysystemfill.md)
@@ -103,33 +102,9 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [class var tertiarySystemFill: NSColor](nscolor/tertiarysystemfill.md)
   A color appropriate for filling medium-size shapes, such as the backing of a switch.
 - [class var textInsertionPointColor: NSColor](nscolor/textinsertionpointcolor.md)
-### Deprecated colors
-- [class var alternateSelectedControlColor: NSColor](nscolor/alternateselectedcontrolcolor.md)
-  The system color used for the face of a selected control in a list or table.
-- [class var controlAlternatingRowBackgroundColors: [NSColor]](nscolor/controlalternatingrowbackgroundcolors.md)
-  An array containing the system specified background colors for alternating rows in tables and lists.
-- [class var controlHighlightColor: NSColor](nscolor/controlhighlightcolor.md)
-  The system color used for the highlighted bezels of controls.
-- [class var controlLightHighlightColor: NSColor](nscolor/controllighthighlightcolor.md)
-  The system color used for light highlights in controls.
-- [class var controlShadowColor: NSColor](nscolor/controlshadowcolor.md)
-  The system color used for the shadows dropped from controls.
-- [class var controlDarkShadowColor: NSColor](nscolor/controldarkshadowcolor.md)
-  The system color used for the dark edge of the shadow dropped from controls.
-- [class var headerColor: NSColor](nscolor/headercolor.md)
-  The system color used as the background color for header cells in table views and outline views.
-- [class var knobColor: NSColor](nscolor/knobcolor.md)
-  The system color used for the flat surface of a slider knob that hasn’t been selected.
-- [class var selectedKnobColor: NSColor](nscolor/selectedknobcolor.md)
-  The system color used for the slider knob when it is selected.
-- [class var scrollBarColor: NSColor](nscolor/scrollbarcolor.md)
-  The system color used for scroll “bars”—that is, for the groove in which a scroller’s knob moves
-- [class var secondarySelectedControlColor: NSColor](nscolor/secondaryselectedcontrolcolor.md)
-  The color used for selected controls in non-key views.
-- [class var selectedMenuItemColor: NSColor](nscolor/selectedmenuitemcolor.md)
-  The color to use for the face of selected menu items.
-- [class var windowFrameColor: NSColor](nscolor/windowframecolor.md)
-  The system color used for window frames, except for their text.
+### Deprecated
+- [Deprecated symbols](ui-element-colors-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## See Also
 

@@ -30,14 +30,14 @@ subscript<T>(anchor: Anchor<T>) -> T { get }
   Returns the concentric corner radii for the specified frame relative to the container shape.
 - [var containerCornerInsets: RectangleCornerInsets](geometryproxy/containercornerinsets.md)
   Returns the corner insets of the container view. Use this value to adjust the geometry of a view based on the overlapping corner insets of the container view. Corner insets may include pieces of system UI as well as the corner radii for windows and presentations.
-- [func frame(in:)](geometryproxy/frame(in:).md)
-  Returns the container view’s bounds rectangle, converted to a defined coordinate space.
 - [var size: CGSize](geometryproxy/size.md)
   The size of the container view.
 - [var safeAreaInsets: EdgeInsets](geometryproxy/safeareainsets.md)
   The safe area inset of the container view.
 - [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy/transform(in:).md)
   The container view’s 3D transform converted to a defined coordinate space.
+- [func frame(in:)](geometryproxy/frame(in:).md)
+  Returns the container view’s bounds rectangle, converted to a defined coordinate space.
 
 
 ---

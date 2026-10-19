@@ -18,11 +18,6 @@ var allowedInputSourceLocales: [String]? { get set }
 
 You can use the meta-locale identifier, [`NSAllRomanInputSourcesLocaleIdentifier`](nsallromaninputsourceslocaleidentifier.md), to specify input sources that are limited for Roman script editing.
 
-## See Also
-
-- [func insertText(Any)](nstextview/inserttext(_:).md)
-  Inserts `aString` into the receiver’s text at the insertion point if there is one, otherwise replacing the selection.
-
 
 ---
 

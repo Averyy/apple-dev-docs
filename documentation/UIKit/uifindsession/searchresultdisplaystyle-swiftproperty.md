@@ -29,6 +29,8 @@ var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle { get set }
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 - [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
+- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
+  A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
 
 ---

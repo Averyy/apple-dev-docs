@@ -29,7 +29,7 @@ struct DenseVector_Double
 
 You typically use dense vectors to represent the unknowns vector, *x*, and the right-hand-side vector, *b*, in the matrix equation *Ax = b.* A [`DenseVector_Double`](densevector_double.md) structure provides a pointer to its underlying data and a count of its number of elements.
 
-The following code shows an example of how to create a dense vector structure from an array of double-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](acceleratemutablebuffer/withunsafemutablebufferpointer(_:).md) to pass a pointer to your collection. The [`DenseVector_Double`](densevector_double.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use.
+The following code shows an example of how to create a dense vector structure from an array of double-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](acceleratemutablebuffer/withunsafemutablebufferpointer(_:).md) to pass a pointer to your collection. The [`DenseVector_Double`](densevector_double.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use:
 
 ```swift
 var vectorValues: [Double] = [10, 20, 30, 40]

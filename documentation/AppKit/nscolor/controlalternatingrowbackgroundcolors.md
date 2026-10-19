@@ -20,6 +20,7 @@ An array of `NSColor` objects specifying the system colors used for rows in tabl
 
 ## See Also
 
+- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var alternateSelectedControlColor: NSColor](nscolor/alternateselectedcontrolcolor.md)
   The system color used for the face of a selected control in a list or table.
 - [class var controlHighlightColor: NSColor](nscolor/controlhighlightcolor.md)

@@ -31,9 +31,9 @@ The default value is `gravityAreas`.
 - [class let useDefaultSpacing: CGFloat](nsstackview/usedefaultspacing.md)
 - [var edgeInsets: NSEdgeInsets](nsstackview/edgeinsets.md)
   The geometric padding, in points, inside the stack view, surrounding its views.
+- [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
 - [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
   A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
-- [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
 
 
 ---

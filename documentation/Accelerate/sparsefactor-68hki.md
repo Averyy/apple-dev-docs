@@ -32,12 +32,14 @@ Use this function to solve a system of linear equations using a symbolic factori
 
 The following code creates the workspace and factor storage that this function requires, and solves this system with a QR factorization of the coefficient matrix:
 
+**Swift**:
+
 ```swift
-/// Define the sparsity pattern of the coefficient matrix.
+// Define the sparsity pattern of the coefficient matrix.
 let rowIndices: [Int32] =    [ 0, 1, 1, 2]
 let columnIndices: [Int32] = [ 2, 0, 2, 1]
 
-/// Create the double-precision coefficient matrix _A_.
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
 let aValues: [Double] = [10, 20, 5, 50]
 let A = SparseConvertFromCoordinate(3, 3,
                                     4, 1,
@@ -45,12 +47,12 @@ let A = SparseConvertFromCoordinate(3, 3,
                                     rowIndices, columnIndices,
                                     aValues)
 
-/// Compute the symbolic factorization from the structure of the coefficient matrix.
+// Compute the symbolic factorization from the structure of the coefficient matrix.
 let structure = A.structure
 let symbolicFactorization = SparseFactor(SparseFactorizationQR,
                                          structure)
 
-/// Create the workspace.
+// Allocate the workspace.
 let workspace = UnsafeMutableRawPointer.allocate(
     byteCount: symbolicFactorization.workspaceSize_Double,
     alignment: MemoryLayout<Double>.alignment)
@@ -58,7 +60,7 @@ defer {
     workspace.deallocate()
 }
 
-/// Create the factor storage.
+// Allocate the factor storage.
 let factorStorage = UnsafeMutableRawPointer.allocate(
     byteCount: symbolicFactorization.factorSize_Double,
     alignment: MemoryLayout<Double>.alignment)
@@ -66,12 +68,12 @@ defer {
     factorStorage.deallocate()
 }
 
-/// Factorize _A_ using the symbolic factorization.
+// Compute the factors of `A` using the symbolic factorization.
 let factorization = SparseFactor(symbolicFactorization, A,
                                  SparseNumericFactorOptions(),
                                  factorStorage, workspace)
 
-/// Solve _Ax = b_ in place.
+// Solve `Ax = b` in place.
 var b0Values: [Double] = [30, 35, 100]
 b0Values.withUnsafeMutableBufferPointer { bPtr in
     let xb = DenseVector_Double(count: 3,
@@ -80,8 +82,54 @@ b0Values.withUnsafeMutableBufferPointer { bPtr in
     SparseSolve(factorization, xb)
 }
 
+print(b0Values) // Prints "[1.0, 2.0, 3.0]".
 SparseCleanup(A)
 SparseCleanup(factorization)
+```
+
+**Objective-C**:
+
+```objc
+// Define the sparsity pattern of the coefficient matrix.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
+double aValues[] = {10, 20, 5, 50};
+SparseMatrix_Double A = SparseConvertFromCoordinate(3, 3,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    aValues);
+
+// Compute the symbolic factorization from the structure of the coefficient matrix.
+SparseOpaqueSymbolicFactorization symbolicFactorization = SparseFactor(SparseFactorizationQR,
+                                                                       A.structure);
+
+// Allocate the workspace.
+void *workspace = malloc(symbolicFactorization.workspaceSize_Double);
+
+// Allocate the factor storage.
+void *factorStorage = malloc(symbolicFactorization.factorSize_Double);
+
+// Compute the factors of `A` using the symbolic factorization.
+SparseNumericFactorOptions nfoptions = (SparseNumericFactorOptions){0};
+SparseOpaqueFactorization_Double factorization = SparseFactor(symbolicFactorization, A,
+                                                              nfoptions,
+                                                              factorStorage, workspace);
+
+// Solve `Ax = b` in place.
+double b0Values[] = {30, 35, 100};
+DenseVector_Double xb = { .count = 3, .data = b0Values };
+SparseSolve(factorization, xb);
+
+// Prints "[1, 2, 3]".
+printf("[%g, %g, %g]\n", b0Values[0], b0Values[1], b0Values[2]);
+
+SparseCleanup(A);
+SparseCleanup(factorization);
+free(workspace);
+free(factorStorage);
 ```
 
 On return, `bValues` contains the values `[1.0, 2.0, 3.0].`

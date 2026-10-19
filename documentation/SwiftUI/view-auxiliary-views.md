@@ -75,16 +75,12 @@ Use these modifiers to manage supplemental views that present context-specific c
   Populates the toolbar or navigation bar with the specified items.
 - [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
-  Specifies the visibility of a bar managed by SwiftUI.
 - [func contentToolbar(for:content:)](view/contenttoolbar(for:content:).md)
   Populates the toolbar of the specified content view type with the views you provide.
 - [func toolbar(removing: ToolbarDefaultItemKind?) -> some View](view/toolbar(removing:).md)
   Remove a toolbar item present by default
 - [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
   Specifies the visibility of a bar managed by SwiftUI.
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
-  Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 - [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 - [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
@@ -131,9 +127,6 @@ Use these modifiers to manage supplemental views that present context-specific c
 ### Help text
 - [func help(_:)](view/help(_:).md)
   Adds help text to a view using a localized string resource that you provide.
-### Status bar
-- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
-  Sets the visibility of the status bar.
 ### External displays
 - [func sceneAccessory<C>(content: () -> C) -> some View](view/sceneaccessory(content:).md)
   Defines any scene accessories associated with `self`.
@@ -148,6 +141,13 @@ Use these modifiers to manage supplemental views that present context-specific c
   Sets a user-visible string that identifies the view’s functionality.
 - [func touchBarItemPresence(TouchBarItemPresence) -> some View](view/touchbaritempresence(_:).md)
   Sets the behavior of the user-customized view.
+### Deprecated
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+  Specifies the visibility of a bar managed by SwiftUI.
+- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
+  Specifies the preferred shape style of the background of a bar managed by SwiftUI.
+- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
+  Sets the visibility of the status bar.
 
 ## See Also
 

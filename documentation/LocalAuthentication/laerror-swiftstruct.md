@@ -22,6 +22,7 @@ struct LAError
 ## Topics
 
 ### Error Characteristics
+- [static var errorDomain: String](laerror-swift.struct/errordomain.md)
 - [let LAErrorDomain: String](laerrordomain.md)
   The error domain that the framework uses when issuing errors.
 ### Error Codes
@@ -64,7 +65,6 @@ struct LAError
   Errors issued by the LocalAuthentication framework.
 ### Type Properties
 - [static var companionNotAvailable: LAError.Code](laerror-swift.struct/companionnotavailable.md)
-- [static var errorDomain: String](laerror-swift.struct/errordomain.md)
 
 ## Relationships
 

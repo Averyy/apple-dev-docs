@@ -12,6 +12,8 @@ The vDSP real-to-complex fast Fourier transform (FFT) and discrete Fourier trans
 
 The vDSP FFT and DFT functions work with data in split-complex format. Split-complex format separates the real and imaginary parts of complex numbers into two separate arrays. Given an array, `signal`, that contains real values, the following code converts the values to split-complex format. Use [`vDSP_ctoz`](vdsp_ctoz.md) to populate the split collections `complexReals` and `complexImaginaries` with the real values from `signal`:
 
+**Swift**:
+
 ```swift
 let signal: [Float] = [0, 1, 2, 3, 4, 5, 6, 7]
 let complexValuesCount = signal.count / 2
@@ -40,6 +42,28 @@ signal.withUnsafeBytes { signalPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+float signal[] = {0, 1, 2, 3, 4, 5, 6, 7};
+vDSP_Length complexValuesCount_1 = 4;
+
+float complexReals_1[4];
+float complexImaginaries_1[4];
+
+DSPSplitComplex splitComplex_1 = {
+    .realp = complexReals_1,
+    .imagp = complexImaginaries_1
+};
+
+vDSP_ctoz((DSPComplex *)signal, 2,
+          &splitComplex_1, 1,
+          complexValuesCount_1);
+
+// The `complexReals_1` equals [0.0, 2.0, 4.0, 6.0].
+// The `complexImaginaries_1` equals [1.0, 3.0, 5.0, 7.0].
+```
+
 On return, `complexReals` contains the values `[0.0, 2.0, 4.0, 6.0]`, and `complexImaginaries` contains the values `[1.0, 3.0, 5.0, 7.0]`. The diagram below illustrates how [`vDSP_ctoz`](vdsp_ctoz.md) converts the real values to the even-odd split configuration:
 
 ![Diagram showing an array of eight real elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](/images/com.apple.accelerate/media-3705864@2x.png)
@@ -57,25 +81,25 @@ static func makeCompositeSineWave(from frequencyAmplitudePairs: [(f: Float,
     return [Float](unsafeUninitializedCapacity: count) {
         buffer, initializedCount in
         
-        /// Fill the buffer with zeros.
+        // Fill the buffer with zeros.
         vDSP.fill(&buffer, with: 0)
-        /// Create a reusable array that the function uses to calculate the 
-        /// sine wave for each iteration.
+        // Create a reusable array that the function uses to calculate the 
+        // sine wave for each iteration.
         var iterationValues = [Float](repeating: 0, count: count)
         
         for frequencyAmplitudePair in frequencyAmplitudePairs {
-            /// Fill the working array with a ramp in the range `0 ..< frequency`.
+            // Fill the working array with a ramp in the range `0 ..< frequency`.
             vDSP.formRamp(withInitialValue: 0,
                           increment: frequencyAmplitudePair.f / Float(count / 2),
                           result: &iterationValues)
-            /// Compute `sin(x * .pi)` for each element.
+            // Compute `sin(x * .pi)` for each element.
             vForce.sinPi(iterationValues, result: &iterationValues)
             if frequencyAmplitudePair.a != 1 {
-                /// Mulitply each element by the specified amplitude.
+                // Multiply each element by the specified amplitude.
                 vDSP.multiply(frequencyAmplitudePair.a, iterationValues,
                               result: &iterationValues)
             }
-            /// Add this sine wave iteration to the composite sine wave accumulator.
+            // Add this sine wave iteration to the composite sine wave accumulator.
             vDSP.add(iterationValues, buffer, result: &buffer)
         }
         
@@ -109,6 +133,8 @@ var complexImaginaries = [Float](repeating: 0,
 
 Use [`vDSP_fft_zrip`](vdsp_fft_zrip.md) to perform an in-place fast Fourier transform (FFT) on the real values. In this example, the [`vDSP_ctoz`](vdsp_ctoz.md) function uses a `DSPSplitComplex` structure as an intermediary to populate the `complexReals` and `complexImaginaries` arrays:
 
+**Swift**:
+
 ```swift
 signal.withUnsafeBytes { signalPtr in
     complexReals.withUnsafeMutableBufferPointer { realPtr in
@@ -134,7 +160,38 @@ signal.withUnsafeBytes { signalPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+// The `realValuesCount` = 32; `signal` is a float[32] from `makeCompositeSineWave`.
+// The `complexValuesCount` = 16; `complexReals_fft` and `complexImaginaries_fft` are float[16] zeroed.
+vDSP_Length complexValuesCount_fft = 16;
+vDSP_Length realValuesCount_fft = 32;
+
+DSPSplitComplex splitComplex_fft = {
+    .realp = complexReals_fft,
+    .imagp = complexImaginaries_fft
+};
+
+vDSP_ctoz((DSPComplex *)signal_fft, 2,
+          &splitComplex_fft, 1,
+          complexValuesCount_fft);
+
+vDSP_Length log2n_fft = (vDSP_Length)log2f((float)realValuesCount_fft);
+FFTSetup fft = vDSP_create_fftsetup(log2n_fft, kFFTRadix2);
+if (fft) {
+    vDSP_fft_zrip(fft,
+                  &splitComplex_fft, 1,
+                  log2n_fft,
+                  kFFTDirection_Forward);
+
+    vDSP_destroy_fftsetup(fft);
+}
+```
+
 Alternatively, use [`vDSP_DFT_zrop_CreateSetup`](vdsp_dft_zrop_createsetup.md) to create an object that performs a discrete Fourier transform on the real values:
+
+**Swift**:
 
 ```swift
 signal.withUnsafeBytes { signalPtr in
@@ -160,6 +217,34 @@ signal.withUnsafeBytes { signalPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+// The `realValuesCount` = 32; `signal` is a float[32] from `makeCompositeSineWave`.
+// The `complexValuesCount` = 16; `complexReals_dft` and `complexImaginaries_dft` are float[16] zeroed.
+vDSP_Length complexValuesCount_dft = 16;
+vDSP_Length realValuesCount_dft = 32;
+
+DSPSplitComplex splitComplex_dft = {
+    .realp = complexReals_dft,
+    .imagp = complexImaginaries_dft
+};
+
+vDSP_ctoz((DSPComplex *)signal_dft, 2,
+          &splitComplex_dft, 1,
+          complexValuesCount_dft);
+
+vDSP_DFT_Setup dft = vDSP_DFT_zrop_CreateSetup(NULL,
+                                                realValuesCount_dft,
+                                                vDSP_DFT_FORWARD);
+if (dft) {
+    vDSP_DFT_Execute(dft,
+                     complexReals_dft, complexImaginaries_dft,
+                     complexReals_dft, complexImaginaries_dft);
+    vDSP_DFT_DestroySetup(dft);
+}
+```
+
 The result of a forward Fourier transform on `n` real values is `n` complex values. The list below describes how the vDSP library structures the result:
 
 - Complex element `0` contains the DC component (equal to the sum of the time domain values) in its real part and zero in its imaginary part.
@@ -180,6 +265,8 @@ The indices of the nonzero elements in the frequency-domain data are the sine wa
 ##### Convert Interleaved Complex to the Split Complex Format
 
 Given an array, `interleavedComplex`, that contains interleaved complex values, the following code converts the values to split-complex format. Use [`vDSP_ctoz`](vdsp_ctoz.md) to populate the split collections `complexReals` and `complexImaginaries` with the complex values from `interleavedComplex`:
+
+**Swift**:
 
 ```swift
 let interleavedComplex: [DSPComplex] = [DSPComplex(real: 0, imag: 1),
@@ -210,7 +297,31 @@ var complexReals = [Float](unsafeUninitializedCapacity: count) {
 }
 ```
 
-On return, `complexReals` contains the values `[0.0, 2.0, 4.0, 6.0]`, and `complexImaginaries` contains the values [`1.0, 3.0, 5.0, 7.0]`. The following diagram illustrates how `vDSP_ctoz(_:_:_:_:_:)` converts the interleaved values to the even-odd split configuration:
+**Objective-C**:
+
+```objc
+DSPComplex interleavedComplex_il[] = {
+    {0, 1}, {2, 3}, {4, 5}, {6, 6}
+};
+vDSP_Length count_il = 4;
+
+float complexReals_il[4];
+float complexImaginaries_il[4];
+
+DSPSplitComplex splitComplex_il = {
+    .realp = complexReals_il,
+    .imagp = complexImaginaries_il
+};
+
+vDSP_ctoz(interleavedComplex_il, 2,
+          &splitComplex_il, 1,
+          count_il);
+
+// The `complexReals_il` equals [0.0, 2.0, 4.0, 6.0].
+// The `complexImaginaries_il` equals [1.0, 3.0, 5.0, 6.0].
+```
+
+On return, `complexReals` contains the values `[0.0, 2.0, 4.0, 6.0]`, and `complexImaginaries` contains the values `[1.0, 3.0, 5.0, 6.0]`. The following diagram illustrates how `vDSP_ctoz(_:_:_:_:_:)` converts the interleaved values to the even-odd split configuration:
 
 ![Diagram showing an array of four interleaved-complex elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](/images/com.apple.accelerate/media-3705866@2x.png)
 
@@ -221,6 +332,8 @@ The following figure shows a representation of time-domain complex data. The rea
 ![Three stacked images of a complex signal. The top and middle images show the signal from the top view and side view respectively and render as composite sine waves. The bottom view show the signal in 3D and renders the signal as a distorted helix.](/images/com.apple.accelerate/media-3704699@2x.png)
 
 Use [`vDSP_DFT_zop_CreateSetup`](vdsp_dft_zop_createsetup.md) to create a DFT object for a complex transform, or call [`vDSP_fft_zip`](vdsp_fft_zip.md) to perform a complex FFT in place. The following code creates a complex signal and performs a forward DFT:
+
+**Swift**:
 
 ```swift
 let complexValuesCount = 16
@@ -244,6 +357,27 @@ if let dft = vDSP_DFT_zop_CreateSetup(nil,
                      &complexImaginaries)
     
     vDSP_DFT_DestroySetup(dft)
+}
+```
+
+**Objective-C**:
+
+```objc
+// The `complexReals_zop` and `complexImaginaries_zop` are float[16] populated
+// via `makeCompositeSineWave` equivalent (pairs (3,1),(5,0.2) and (4,1),(7,0.25)).
+vDSP_Length complexValuesCount_zop = 16;
+
+vDSP_DFT_Setup dft_zop = vDSP_DFT_zop_CreateSetup(NULL,
+                                                   complexValuesCount_zop,
+                                                   vDSP_DFT_FORWARD);
+if (dft_zop) {
+    vDSP_DFT_Execute(dft_zop,
+                     complexReals_zop,
+                     complexImaginaries_zop,
+                     complexReals_zop,
+                     complexImaginaries_zop);
+
+    vDSP_DFT_DestroySetup(dft_zop);
 }
 ```
 
@@ -277,6 +411,8 @@ let complexValuesHeight = realDimension
 ```
 
 Use [`vDSP_fft2d_zrip`](vdsp_fft2d_zrip.md) to perform the forward FFT in place. In this example, `imageData` is an array that contains `realDimension * realDimension` real pixel values:
+
+**Swift**:
 
 ```swift
 let complexElementCount = complexValuesWidth * complexValuesHeight
@@ -317,6 +453,43 @@ imageData.withUnsafeBytes { imageDataPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+// The `realDimension` = 512; the `complexValuesWidth` = 256; and the `complexValuesHeight` = 512.
+// The `imageData` is a float[512*512] array of pixel values.
+int realDimension_2d = 512;
+vDSP_Length complexElementCount_2d = 256 * 512; // `complexValuesWidth` * `complexValuesHeight`
+
+float *complexReals_2d = (float *)malloc(complexElementCount_2d * sizeof(float));
+float *complexImaginaries_2d = (float *)malloc(complexElementCount_2d * sizeof(float));
+
+DSPSplitComplex splitComplex_2d = {
+    .realp = complexReals_2d,
+    .imagp = complexImaginaries_2d
+};
+
+vDSP_ctoz((DSPComplex *)imageData, 2,
+          &splitComplex_2d, 1,
+          complexElementCount_2d);
+
+// The binary logarithm of `max(rowCount, columnCount)`.
+vDSP_Length countLog2n_2d = (vDSP_Length)log2f((float)realDimension_2d);
+FFTSetup fft_2d = vDSP_create_fftsetup(countLog2n_2d, kFFTRadix2);
+if (fft_2d) {
+    vDSP_Length dimensionLog2n_2d = (vDSP_Length)log2f((float)realDimension_2d);
+    vDSP_fft2d_zrip(fft_2d, &splitComplex_2d,
+                    1, 0,
+                    dimensionLog2n_2d, dimensionLog2n_2d,
+                    kFFTDirection_Forward);
+
+    vDSP_destroy_fftsetup(fft_2d);
+}
+
+free(complexReals_2d);
+free(complexImaginaries_2d);
+```
+
 The 2D FFT operates on real data by first transforming each row. This transform generates real values — the DC and Nyquist component of each row — in the first two elements of each row. The second pass of the transform computes the FFT for each column. The first two columns contain real values, and vDSP uses the real transform routines. Subsequent columns contain complex values, and vDSP uses the complex transform routines:
 
 ![Flow diagram showing a matrix of 8 times 8 real pixels forward Fourier transformed with eight horizontal passes. The intermediate result is forward Fourier transformed with two vertical real passes and six vertical complex passes.](/images/com.apple.accelerate/media-3705869@2x.png)
@@ -330,6 +503,8 @@ vDSP provides functions for performing Fourier transforms on 2D complex data, su
 ![Pair of images that shows image data before and after forward Fourier transform. The spatial-domain image contains a matrix 16 times 16 yellow dots and a matrix of 64 times 64 blue dots. The frequency-domain representation contains two star-like highlights.](/images/com.apple.accelerate/media-3696140@2x.png)
 
 Use [`vDSP_fft2d_zip`](vdsp_fft2d_zip.md) to perform a complex FFT on 2D complex data:
+
+**Swift**:
 
 ```swift
 let complexDimension = 512
@@ -365,6 +540,40 @@ complexReals.withUnsafeMutableBufferPointer { realPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+int complexDimension_zip = 512;
+vDSP_Length elementCount_zip = complexDimension_zip * complexDimension_zip;
+
+float *complexReals_zip = (float *)calloc(elementCount_zip, sizeof(float));
+float *complexImaginaries_zip = (float *)calloc(elementCount_zip, sizeof(float));
+
+// Populate `complexReals_zip` and `complexImaginaries_zip` with 2D complex data.
+
+DSPSplitComplex splitComplex_zip = {
+    .realp = complexReals_zip,
+    .imagp = complexImaginaries_zip
+};
+
+// The binary logarithm of `max(rowCount, columnCount)`.
+vDSP_Length countLog2n_zip = (vDSP_Length)log2f((float)complexDimension_zip);
+FFTSetup fft_zip = vDSP_create_fftsetup(countLog2n_zip, kFFTRadix2);
+if (fft_zip) {
+    // The binary logarithm of the width or height of the 2D matrix.
+    vDSP_Length dimensionLog2n_zip = (vDSP_Length)log2f((float)complexDimension_zip);
+    vDSP_fft2d_zip(fft_zip, &splitComplex_zip,
+                   1, 0,
+                   dimensionLog2n_zip, dimensionLog2n_zip,
+                   kFFTDirection_Forward);
+
+    vDSP_destroy_fftsetup(fft_zip);
+}
+
+free(complexReals_zip);
+free(complexImaginaries_zip);
+```
+
 On return, `complexReals` and `complexImaginaries` contain the frequency-domain representation of the complex data. Because both the horizontal pass and the vertical pass are complex FFTs, the right `n/2` columns and the bottom `n/2` rows contain the negative frequencies:
 
 ![Image of the frequency-domain representation of the matrix 16 times 16 yellow dots and a matrix of 64 times 64 blue dots. The top-left quadrant represents the positive frequencies and contains two star-like highlights. The other three quadrants represent negative frequencies and are grayed out.](/images/com.apple.accelerate/media-3696221@2x.png)
@@ -376,11 +585,13 @@ To provide the best execution performance, vDSP’s Fourier routines don’t sca
 |  | 1D | 2D |
 | --- | --- | --- |
 | Real forward transform | 2 | 2 |
-| Real inverse transform | Number of real elements | Number of real elements (rows x columns) |
+| Real inverse transform | Number of real elements | Number of real elements (rows by columns) |
 | Complex forward transform | 1 | 1 |
-| Complex inverse transform | Number of complex elements | Number of complex elements (rows x columns) |
+| Complex inverse transform | Number of complex elements | Number of complex elements (rows by columns) |
 
 For example, the following code performs a forward transform and an inverse transform on eight real elements. The code multiplies the frequency-domain data by `1/2`, and the time-domain data by `1/n`. The result is identical to the original data:
+
+**Swift**:
 
 ```swift
 let realValuesCount = 8
@@ -421,6 +632,57 @@ vDSP.multiply(1 / Float(realValuesCount), complexImaginaries, result: &complexIm
 
 print(complexReals) // Prints "[0.0, 2.0, 4.0, 6.0]".
 print(complexImaginaries) // Prints "[1.0, 3.0, 5.0, 7.0]".
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Length realValuesCount_sc = 8;
+
+// The result of `vDSP_ctoz` on {0, 1, 2, 3, 4, 5, 6, 7}.
+float complexReals_sc[]       = {0, 2, 4, 6};
+float complexImaginaries_sc[] = {1, 3, 5, 7};
+
+// Perform forward transform.
+vDSP_DFT_Setup dftFwd_sc = vDSP_DFT_zrop_CreateSetup(NULL,
+                                                      realValuesCount_sc,
+                                                      vDSP_DFT_FORWARD);
+if (dftFwd_sc) {
+    vDSP_DFT_Execute(dftFwd_sc,
+                     complexReals_sc, complexImaginaries_sc,
+                     complexReals_sc, complexImaginaries_sc);
+    vDSP_DFT_DestroySetup(dftFwd_sc);
+}
+
+// Apply real forward scaling factor (2).
+float scale_fwd = 0.5f;
+vDSP_vsmul(complexReals_sc,       1, &scale_fwd, complexReals_sc,       1, 4);
+vDSP_vsmul(complexImaginaries_sc, 1, &scale_fwd, complexImaginaries_sc, 1, 4);
+
+// Perform inverse transform.
+vDSP_DFT_Setup dftInv_sc = vDSP_DFT_zrop_CreateSetup(NULL,
+                                                      realValuesCount_sc,
+                                                      vDSP_DFT_INVERSE);
+if (dftInv_sc) {
+    vDSP_DFT_Execute(dftInv_sc,
+                     complexReals_sc, complexImaginaries_sc,
+                     complexReals_sc, complexImaginaries_sc);
+    vDSP_DFT_DestroySetup(dftInv_sc);
+}
+
+// Apply real inverse scaling factor (n).
+float scale_inv = 1.0f / (float)realValuesCount_sc;
+vDSP_vsmul(complexReals_sc,       1, &scale_inv, complexReals_sc,       1, 4);
+vDSP_vsmul(complexImaginaries_sc, 1, &scale_inv, complexImaginaries_sc, 1, 4);
+
+printf("complexReals_sc: [%g, %g, %g, %g]\n",
+      complexReals_sc[0], complexReals_sc[1],
+      complexReals_sc[2], complexReals_sc[3]);
+printf("complexImaginaries_sc: [%g, %g, %g, %g]\n",
+      complexImaginaries_sc[0], complexImaginaries_sc[1],
+      complexImaginaries_sc[2], complexImaginaries_sc[3]);
+// Prints "complexReals_sc: [0, 2, 4, 6]".
+// Prints "complexImaginaries_sc: [1, 3, 5, 7]".
 ```
 
 ## See Also

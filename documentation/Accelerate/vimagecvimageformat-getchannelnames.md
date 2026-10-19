@@ -28,6 +28,8 @@ A pointer to an array that contains the [`vImageBufferTypeCode`](vimagebuffertyp
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelNames(_:)`](vimagecvimageformat_getchannelnames(_:).md):
 
+**Swift**:
+
 ```swift
 let channelNames = withUnsafeBytes(of: cvImageFormat) { bytes in
     let format = bytes.assumingMemoryBound(
@@ -35,6 +37,15 @@ let channelNames = withUnsafeBytes(of: cvImageFormat) { bytes in
     
     return vImageCVImageFormat_GetChannelNames(format)
 }
+```
+
+**Objective-C**:
+
+```objc
+vImageConstCVImageFormatRef constFormat = cvImageFormat;
+
+const vImageBufferTypeCode *channelNames =
+    vImageCVImageFormat_GetChannelNames(constFormat);
 ```
 
 ## Parameters

@@ -22,6 +22,11 @@ optional func windowScene(_ windowScene: UIWindowScene, didUpdateEffectiveGeomet
 
 Always called when a `UIWindowScene` moves between screens.
 
+## See Also
+
+- [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md)
+  Notifies you when the size, orientation, or traits of a scene change.
+
 
 ---
 

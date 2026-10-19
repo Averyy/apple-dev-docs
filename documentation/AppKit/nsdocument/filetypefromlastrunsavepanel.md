@@ -25,8 +25,6 @@ This type is primarily used by the [`save(_:)`](nsdocument/save(_:).md), [`saveA
   Presents a modal Save panel to the user, then tries to save the document if the user approves the operation.
 - [func prepareSavePanel(NSSavePanel) -> Bool](nsdocument/preparesavepanel(_:).md)
   Tells the document to customize the specified Save panel.
-- [var shouldRunSavePanelWithAccessoryView: Bool](nsdocument/shouldrunsavepanelwithaccessoryview.md)
-  A Boolean value that indicates whether the document’s Save panel displays a list of supported writable document types.
 - [var fileNameExtensionWasHiddenInLastRunSavePanel: Bool](nsdocument/filenameextensionwashiddeninlastrunsavepanel.md)
   A Boolean value that indicates whether the user chose to hide the document’s filename extension.
 

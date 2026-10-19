@@ -27,10 +27,9 @@ For more information about the [`UIPopoverController`](uipopovercontroller.md) c
 
 ## Topics
 
-### Responding to popover position changes
+### Deprecated
 - [func popoverController(UIPopoverController, willRepositionPopoverTo: UnsafeMutablePointer<CGRect>, in: AutoreleasingUnsafeMutablePointer<UIView>)](uipopovercontrollerdelegate/popovercontroller(_:willrepositionpopoverto:in:).md)
   Tells the delegate that the popover controller needs to change the popover’s location in its view.
-### Managing the popover’s dismissal
 - [func popoverControllerShouldDismissPopover(UIPopoverController) -> Bool](uipopovercontrollerdelegate/popovercontrollershoulddismisspopover(_:).md)
   Asks the delegate if the popover should be dismissed.
 - [func popoverControllerDidDismissPopover(UIPopoverController)](uipopovercontrollerdelegate/popovercontrollerdiddismisspopover(_:).md)

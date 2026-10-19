@@ -121,13 +121,13 @@ Don’t create window scene objects directly. Instead, specify that you want a [
   An interaction you add to a view that enables pan gestures to change the containing window scene’s position.
 - [UIWindowScene.ResizingRestrictions](uiwindowscene/resizingrestrictions.md)
 - [enum UIWindowSceneResizingRestrictions](uiwindowsceneresizingrestrictions.md)
-- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
-  The placement of a window scene relative to other scenes in the workspace.
-### Deprecated symbols
+### Deprecated
 - [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
   The coordinate space occupied by the scene.
 - [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
   The orientation to use when displaying content in your windows.
+- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
+  The placement of a window scene relative to other scenes in the workspace.
 ### Instance Properties
 - [var closureConfirmation: UISceneClosureConfirmation?](uiwindowscene/closureconfirmation.md)
   A configuration describing a confirmation dialog to be shown when a user action will result in destruction of the scene session and disconnection of the scene.

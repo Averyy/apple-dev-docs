@@ -22,7 +22,7 @@ func pushViewController(_ viewController: UIViewController, animated: Bool)
 
 The object in the `viewController` parameter becomes the top view controller on the navigation stack. Pushing a view controller causes its view to be embedded in the navigation interface. If the `animated` parameter is [`true`](https://developer.apple.com/documentation/swift/true), the view is animated into position; otherwise, the view is simply displayed in its final location.
 
-In addition to displaying the view associated with the new view controller at the top of the stack, this method also updates the navigation bar and tool bar accordingly. For information on how the navigation bar is updated, see [`Updating the navigation bar`](uinavigationcontroller#Updating-the-navigation-bar.md).
+In addition to displaying the view associated with the new view controller at the top of the stack, this method also updates the navigation bar and tool bar accordingly. For information on how the navigation bar is updated, see doc:UINavigationController#Updating-the-navigation-bar.
 
 ## Parameters
 

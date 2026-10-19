@@ -1,4 +1,4 @@
 Completed scraping MetalFX!
-Total pages scraped: 269
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 270
 Pages failed: 0

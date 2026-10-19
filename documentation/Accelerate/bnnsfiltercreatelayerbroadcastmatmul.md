@@ -75,7 +75,7 @@ var weightsValues: [Float] = [
 ]
 ```
 
-The following code creates `BNNSNDArrayDescriptor` structures to describe the two inputs and the output. Note that the code passes the second input, `weights`, to the parameters structure with [`b_is_weights`](bnnslayerparametersbroadcastmatmul/b_is_weights.md) set to `true`. This means that the filter stores the data pointer to `weights`, and you don’t need to pass the weights data to the apply call.
+The following code creates `BNNSNDArrayDescriptor` structures to describe the two inputs and the output. Note that the code passes the second input, `weights`, to the parameters structure with [`b_is_weights`](bnnslayerparametersbroadcastmatmul/b_is_weights.md) set to `true`. This means that the filter stores the data pointer to `weights`, and you don’t need to pass the weights data to the apply call:
 
 ```swift
 let batchSize = 2

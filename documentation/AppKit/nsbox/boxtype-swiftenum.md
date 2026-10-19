@@ -18,10 +18,10 @@ enum BoxType
 
 ### Constants
 - [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
-- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
 - [NSBox.BoxType.separator](nsbox/boxtype-swift.enum/separator.md)
-- [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
 - [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
+- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
+- [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
 ### Initializers
 - [init?(rawValue: UInt)](nsbox/boxtype-swift.enum/init(rawvalue:).md)
 

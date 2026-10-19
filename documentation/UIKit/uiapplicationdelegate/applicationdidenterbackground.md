@@ -46,12 +46,6 @@ For more information about how to transition gracefully to the background, and f
 
 ## See Also
 
-- [func applicationDidBecomeActive(UIApplication)](uiapplicationdelegate/applicationdidbecomeactive(_:).md)
-  Tells the delegate that the app has become active.
-- [func applicationWillResignActive(UIApplication)](uiapplicationdelegate/applicationwillresignactive(_:).md)
-  Tells the delegate that the app is about to become inactive.
-- [func applicationWillEnterForeground(UIApplication)](uiapplicationdelegate/applicationwillenterforeground(_:).md)
-  Tells the delegate that the app is about to enter the foreground.
 - [func applicationWillTerminate(UIApplication)](uiapplicationdelegate/applicationwillterminate(_:).md)
   Tells the delegate when the app is about to terminate.
 - [class let didBecomeActiveNotification: NSNotification.Name](uiapplication/didbecomeactivenotification.md)

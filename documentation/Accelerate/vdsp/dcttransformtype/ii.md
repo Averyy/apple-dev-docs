@@ -25,9 +25,9 @@ case II
 The type-II DCT uses the following operation for a discrete cosine transform:
 
 ```c
-// `N` is the length given in the setup.
-// `h` is the input array that contains real numbers.
-// `H` is the output array that contains real numbers.
+// _N_ is the length given in the setup.
+// _h_ is the input array that contains real numbers.
+// _H_ is the output array that contains real numbers.
 
 For 0 <= k < N
     Or[k] = sum(Ir[j] * cos(k * (j+1/2) * pi / N, 0 <= j < N)

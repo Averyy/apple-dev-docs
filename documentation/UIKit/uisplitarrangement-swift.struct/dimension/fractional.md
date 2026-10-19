@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: method
 
-A fractional dimension for a split arrangement.
+A dimension that indicates sizing for a view in a split arrangement uses the float value you provide as a fraction.
 
 **Availability**:
 - iOS 27.1+
@@ -20,16 +20,16 @@ static func fractional(_ dimension: CGFloat) -> UISplitArrangement.Dimension
 
 ## Parameters
 
-- `dimension`: The fraction of the container to use.
+- `dimension`: A float value that expresses the fraction of the container to use, with a value between 0.0 and 1.0.
 
 ## See Also
 
 - [static var automatic: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/automatic.md)
-  The automatic dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement follows automatic rules.
 - [static var intrinsic: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/intrinsic.md)
-  The intrinsic dimension for a split arrangement based on intrinsic content size.
+  A dimension that indicates sizing for a view in a split arrangement uses intrinsic content size.
 - [static func absolute(CGFloat) -> UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/absolute(_:).md)
-  An absolute dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement uses the float value you provide, expressed in points.
 
 
 ---

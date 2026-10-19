@@ -134,8 +134,8 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSView.Invalidations](nsview/invalidations.md)
   Changes that cause aspects of a view to be invalid and require an update.
 ### Deprecated
-- [Deprecated Symbols](nsview-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+- [Deprecated symbols](nsview-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
@@ -186,8 +186,6 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

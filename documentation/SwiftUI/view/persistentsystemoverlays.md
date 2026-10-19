@@ -58,10 +58,10 @@ Affected non-transient system views can include, but are not limited to:
   The labels visibility set by [`labelsVisibility(_:)`](view/labelsvisibility(_:).md).
 - [func menuIndicator(Visibility) -> some View](view/menuindicator(_:).md)
   Sets the menu indicator visibility for controls within this view.
-- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
-  Sets the visibility of the status bar.
 - [enum Visibility](visibility.md)
   The visibility of a UI element, chosen automatically based on the platform, current context, and other factors.
+- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
+  Sets the visibility of the status bar.
 
 
 ---

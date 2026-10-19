@@ -17,8 +17,8 @@ The following image is an example of the effects possible when you use the techn
 If you’re developing apps with Xcode 14.0 or later, the [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structure provides the [`withUnsafeRegionOfInterest(_:_:)`](vimage/pixelbuffer/withunsaferegionofinterest(_:_:).md) function, which simplifies applying operations to ROIs. The following code creates the image above:
 
 ```swift
-// `source` is a `vImage.PixelBuffer<vImage.Interleaved8x4>` that contains an ARGB8888 image.
-// `destination` is an initialized `vImage.PixelBuffer<vImage.Interleaved8x4>` that's the same 
+// The `source` is a `vImage.PixelBuffer<vImage.Interleaved8x4>` that contains an ARGB8888 image.
+// The `destination` is an initialized `vImage.PixelBuffer<vImage.Interleaved8x4>` that's the same 
 // size as `source`.
 
 let landscapeROI = CGRect( ... )
@@ -49,7 +49,7 @@ On return, the destination [`vImage.PixelBuffer`](vimage/pixelbuffer.md) contain
 This article implements the remaining code in this article as extensions to the [`vImage_Buffer`](vimage_buffer.md) structure. The two function calls below created the image above:
 
 ```swift
-// `source` is a `vImage_Buffer` that contains an ARGB8888 image.
+// The `source` is a `vImage_Buffer` that contains an ARGB8888 image.
 
 source.desaturate_ARGB8888(regionOfInterest: CGRect( ... ))
 
@@ -89,38 +89,81 @@ The following code calculates the first pixel in the source buffer for the ROI:
 
 The `start` value defines the offset to the data pointer for a second [`vImage_Buffer`](vimage_buffer.md) structure that references the source buffer’s data with a size that equals the ROI.
 
+**Swift**:
+
 ```swift
-        var desaturationBuffer = vImage_Buffer(data: data.advanced(by: start),
-                                               height: vImagePixelCount(roi.height),
-                                               width: vImagePixelCount(roi.width),
-                                               rowBytes: rowBytes)
+var desaturationBuffer = vImage_Buffer(data: data.advanced(by: start),
+                                       height: vImagePixelCount(roi.height),
+                                       width: vImagePixelCount(roi.width),
+                                       rowBytes: rowBytes)
+```
+
+**Objective-C**:
+
+```objc
+vImage_Buffer desaturationBuffer = {
+    .data     = (uint8_t*)self->data + start,
+    .height   = (vImagePixelCount)roi.size.height,
+    .width    = (vImagePixelCount)roi.size.width,
+    .rowBytes = self->rowBytes
+};
 ```
 
 On return, `desaturationBuffer` contains a reference to the data in the source buffer that the supplied ROI defines. Calling [`vImageMatrixMultiply_ARGB8888(_:_:_:_:_:_:_:)`](vimagematrixmultiply_argb8888(_:_:_:_:_:_:_:).md) with `desaturationBuffer` as both the source and the destination performs the matrix multiplication on the pixels in the ROI:
 
+**Swift**:
+
 ```swift
-        let divisor: Int32 = 0x1000
-        
-        let desaturationMatrix = [
-            0.0722, 0.0722, 0.0722, 0,
-            0.7152, 0.7152, 0.7152, 0,
-            0.2126, 0.2126, 0.2126, 0,
-            0,      0,      0,      1
-            ].map {
-                return Int16($0 * Float(divisor))
-        }
-        
-        let error = vImageMatrixMultiply_ARGB8888(&desaturationBuffer,
-                                                  &desaturationBuffer,
-                                                  desaturationMatrix,
-                                                  divisor,
-                                                  nil, nil,
-                                                  vImage_Flags(kvImageNoFlags))
-        
-        if error != kvImageNoError {
-            print("Error: \(error)")
-        }
-    }
+let divisor: Int32 = 0x1000
+
+let desaturationMatrix = [
+    0.0722, 0.0722, 0.0722, 0,
+    0.7152, 0.7152, 0.7152, 0,
+    0.2126, 0.2126, 0.2126, 0,
+    0,      0,      0,      1
+    ].map {
+        return Int16($0 * Float(divisor))
+}
+
+let error = vImageMatrixMultiply_ARGB8888(&desaturationBuffer,
+                                          &desaturationBuffer,
+                                          desaturationMatrix,
+                                          divisor,
+                                          nil, nil,
+                                          vImage_Flags(kvImageNoFlags))
+
+if error != kvImageNoError {
+    print("Error: \(error)")
+}
+}
+}
+```
+
+**Objective-C**:
+
+```objc
+int32_t divisor = 0x1000;
+
+double matrixCoeffs[16] = {
+    0.0722, 0.0722, 0.0722, 0,
+    0.7152, 0.7152, 0.7152, 0,
+    0.2126, 0.2126, 0.2126, 0,
+    0,      0,      0,      1
+};
+int16_t desaturationMatrix[16];
+for (int i = 0; i < 16; i++) {
+    desaturationMatrix[i] = (int16_t)(matrixCoeffs[i] * (double)divisor);
+}
+
+vImage_Error error = vImageMatrixMultiply_ARGB8888(&desaturationBuffer,
+                                                   &desaturationBuffer,
+                                                   desaturationMatrix,
+                                                   divisor,
+                                                   NULL, NULL,
+                                                   kvImageNoFlags);
+
+if (error != kvImageNoError) {
+    NSLog(@"Error: %ld", error);
 }
 ```
 
@@ -155,61 +198,127 @@ The function performs the same check as [`Applying vImage operations to regions 
 
 `vImage_Buffer.blurred_ARGB8888(regionOfInterest:blurRadius:)` returns a buffer that’s the same size as the source. The function copies all source pixels that are outside of the ROI to the destination. The following code creates the buffer that the function returns, and copies the source pixels into the new buffer:
 
+**Swift**:
+
 ```swift
-        guard var destination = try? vImage_Buffer(width: Int(width),
-                                                   height: Int(height),
-                                                   bitsPerPixel: 32) else {
-                                                    return nil
-        }
-        
-        let bytesPerPixel = 4
-        
-        withUnsafePointer(to: self) { src in
-            vImageCopyBuffer(src,
-                             &destination,
-                             bytesPerPixel,
-                             vImage_Flags(kvImageNoFlags))
-        }
+guard var destination = try? vImage_Buffer(width: Int(width),
+                                           height: Int(height),
+                                           bitsPerPixel: 32) else {
+                                            return nil
+}
+
+let bytesPerPixel = 4
+
+withUnsafePointer(to: self) { src in
+    vImageCopyBuffer(src,
+                     &destination,
+                     bytesPerPixel,
+                     vImage_Flags(kvImageNoFlags))
+}
+```
+
+**Objective-C**:
+
+```objc
+vImage_Buffer destination;
+vImage_Error initError = vImageBuffer_Init(&destination,
+                                           self->height,
+                                           self->width,
+                                           32,
+                                           kvImageNoFlags);
+if (initError != kvImageNoError) {
+    return NULL;
+}
+
+int bytesPerPixel = 4;
+
+vImageCopyBuffer(self,
+                 &destination,
+                 bytesPerPixel,
+                 kvImageNoFlags);
 ```
 
 The out-of-place function uses the same approach as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest.md), calculate the start of the ROI. The destination buffer for the blur operation references the copied pixels in `destination`:
 
+**Swift**:
+
 ```swift
-        let start = Int(roi.origin.y) * destination.rowBytes +
-            Int(roi.origin.x) * bytesPerPixel
-        
-        var blurDestination = vImage_Buffer(data: destination.data.advanced(by: start),
-                                            height: vImagePixelCount(roi.height),
-                                            width: vImagePixelCount(roi.width),
-                                            rowBytes: destination.rowBytes)
+let start = Int(roi.origin.y) * destination.rowBytes +
+    Int(roi.origin.x) * bytesPerPixel
+
+var blurDestination = vImage_Buffer(data: destination.data.advanced(by: start),
+                                    height: vImagePixelCount(roi.height),
+                                    width: vImagePixelCount(roi.width),
+                                    rowBytes: destination.rowBytes)
+```
+
+**Objective-C**:
+
+```objc
+size_t start = (size_t)roi.origin.y * destination.rowBytes +
+    (size_t)roi.origin.x * bytesPerPixel;
+
+vImage_Buffer blurDestination = {
+    .data     = (uint8_t*)destination.data + start,
+    .height   = (vImagePixelCount)roi.size.height,
+    .width    = (vImagePixelCount)roi.size.width,
+    .rowBytes = destination.rowBytes
+};
 ```
 
 Finally, the [`vImageTentConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:)`](vimagetentconvolve_argb8888(_:_:_:_:_:_:_:_:_:).md) function applies the blur to the source and writes the result to `blurDestination`.
 
+**Swift**:
+
 ```swift
-        var error = kvImageNoError
-        
-        withUnsafePointer(to: self) { src in
-            let blurDiameter = UInt32(blurRadius * 2 + 1)
-            error = vImageTentConvolve_ARGB8888(src,
-                                                &blurDestination,
-                                                nil,
-                                                vImagePixelCount(roi.origin.x),
-                                                vImagePixelCount(roi.origin.y),
-                                                blurDiameter, blurDiameter,
-                                                [0],
-                                                vImage_Flags(kvImageTruncateKernel))
-        }
-        
-        if error != kvImageNoError {
-            destination.free()
-            print("Error: \(error)")
-            return nil
-        }
-        
-        return destination
-    }
+var error = kvImageNoError
+
+withUnsafePointer(to: self) { src in
+    let blurDiameter = UInt32(blurRadius * 2 + 1)
+    error = vImageTentConvolve_ARGB8888(src,
+                                        &blurDestination,
+                                        nil,
+                                        vImagePixelCount(roi.origin.x),
+                                        vImagePixelCount(roi.origin.y),
+                                        blurDiameter, blurDiameter,
+                                        [0],
+                                        vImage_Flags(kvImageTruncateKernel))
 }
+
+if error != kvImageNoError {
+    destination.free()
+    print("Error: \(error)")
+    return nil
+}
+
+return destination
+}
+}
+```
+
+**Objective-C**:
+
+```objc
+vImage_Error error = kvImageNoError;
+
+uint32_t blurDiameter = (uint32_t)(blurRadius * 2 + 1);
+Pixel_8888 backgroundColor = {0};
+error = vImageTentConvolve_ARGB8888(self,
+                                    &blurDestination,
+                                    NULL,
+                                    (vImagePixelCount)roi.origin.x,
+                                    (vImagePixelCount)roi.origin.y,
+                                    blurDiameter, blurDiameter,
+                                    backgroundColor,
+                                    kvImageTruncateKernel);
+
+if (error != kvImageNoError) {
+    free(destination.data);
+    NSLog(@"Error: %ld", error);
+    return NULL;
+}
+
+return destination;
 ```
 
 The following shows the result of blurring an ROI:

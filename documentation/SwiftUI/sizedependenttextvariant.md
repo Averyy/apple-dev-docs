@@ -43,6 +43,8 @@ struct SizeDependentTextVariant
   A protocol for controlling the size variant of text views.
 - [struct FixedTextVariant](fixedtextvariant.md)
   The default text variant preference that chooses the largest available variant.
+- [enum ContentSizeCategory](contentsizecategory.md)
+  The sizes that you can specify for content.
 
 
 ---

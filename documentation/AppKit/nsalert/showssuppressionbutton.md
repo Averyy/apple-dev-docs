@@ -58,6 +58,8 @@ if defaults.bool(forKey: alertSuppressionKey) {
   Runs the alert modally as a sheet attached to the specified window.
 - [var suppressionButton: NSButton?](nsalert/suppressionbutton.md)
   The alert’s suppression checkbox.
+- [func beginSheetModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsalert/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
+  Runs the alert modally as an alert sheet attached to a specified window.
 
 
 ---

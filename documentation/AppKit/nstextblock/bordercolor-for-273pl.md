@@ -22,6 +22,7 @@ func borderColor(for edge: NSRectEdge) -> NSColor?
   Returns the value type of an edge of a specified layer of the text block.
 - [func setBorderColor(NSColor?, for: NSRectEdge)](nstextblock/setbordercolor(_:for:).md)
   Sets the border color of the specified edge of the text block.
+- [func borderColor(for: CGRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-5m8cr.md)
 
 
 ---

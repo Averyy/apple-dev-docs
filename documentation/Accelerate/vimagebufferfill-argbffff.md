@@ -28,6 +28,8 @@ func vImageBufferFill_ARGBFFFF(_ dest: UnsafePointer<vImage_Buffer>, _ color: Un
 
 The following code fills the buffer with the specified color:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.InterleavedFx4>(
     size: .init(width: 1, height: 2))
@@ -43,7 +45,31 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 print(pixelBuffer.array)
 // Prints:
 //      "[64.0, 127.0, 192.0, 255.0,
-//        64.0, 127.0, 192.0, 255.0]"
+//        64.0, 127.0, 192.0, 255.0]".
+```
+
+**Objective-C**:
+
+```objc
+float data[8] = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
+
+vImage_Buffer dest = {
+    .data = data,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 16
+};
+
+Pixel_FFFF fillColor = {64.0f, 127.0f, 192.0f, 255.0f};
+
+vImageBufferFill_ARGBFFFF(&dest,
+                          fillColor,
+                          kvImageNoFlags);
+
+// Prints "[64.0, 127.0, 192.0, 255.0, 64.0, 127.0, 192.0, 255.0]".
+printf("[%.1f, %.1f, %.1f, %.1f, %.1f, %.1f, %.1f, %.1f]\n",
+       data[0], data[1], data[2], data[3],
+       data[4], data[5], data[6], data[7]);
 ```
 
 ## Parameters

@@ -33,12 +33,11 @@ For more information, read [`Playing haptic feedback in your app`](https://devel
 ### Initializing a feedback generator
 - [convenience init(view: UIView)](uifeedbackgenerator/init(view:).md)
   Creates a feedback generator and attaches it to the specified view.
+- [init()](uifeedbackgenerator/init.md)
+  Creates a feedback generator.
 ### Preparing to generate feedback
 - [func prepare()](uifeedbackgenerator/prepare.md)
   Prepares the generator to trigger feedback.
-### Deprecated
-- [init()](uifeedbackgenerator/init.md)
-  Creates a feedback generator.
 
 ## Relationships
 

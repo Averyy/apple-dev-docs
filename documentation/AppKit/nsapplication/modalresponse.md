@@ -37,16 +37,16 @@ The response value that a button returns can depend on which method is used to p
   The user clicked the second button from the right edge of the dialog or sheet.
 - [static var alertThirdButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertthirdbuttonreturn.md)
   The user clicked the third button from the right edge of the dialog or sheet.
-### Deprecated Responses
+### Initializers
+- [init(Int)](nsapplication/modalresponse/init(_:).md)
+- [init(rawValue: Int)](nsapplication/modalresponse/init(rawvalue:).md)
+### Deprecated
 - [var NSRunStoppedResponse: Int](nsrunstoppedresponse.md)
   Modal session was broken with [`stopModal()`](nsapplication/stopmodal().md).
 - [var NSRunAbortedResponse: Int](nsrunabortedresponse.md)
   Modal session was broken with [`abortModal()`](nsapplication/abortmodal().md).
 - [var NSRunContinuesResponse: Int](nsruncontinuesresponse.md)
   Modal session is continuing (returned by [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md) only).
-### Initializers
-- [init(Int)](nsapplication/modalresponse/init(_:).md)
-- [init(rawValue: Int)](nsapplication/modalresponse/init(rawvalue:).md)
 
 ## Relationships
 

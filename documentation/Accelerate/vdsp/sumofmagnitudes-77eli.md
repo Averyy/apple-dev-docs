@@ -32,7 +32,7 @@ let a: [Double] = [-1.5, 2.25, 3.6,
 
 let sumOfMagnitudes = vDSP.sumOfMagnitudes(a)
 
-// Prints "sum of magnitudes 11.9500"
+// Prints "sum of magnitudes 11.9500".
 print(String(format: "sum of magnitudes %.4f", sumOfMagnitudes))
 ```
 

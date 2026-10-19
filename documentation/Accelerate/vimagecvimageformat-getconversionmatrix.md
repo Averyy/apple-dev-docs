@@ -28,6 +28,8 @@ A pointer to the conversion matrix.
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetConversionMatrix(_:_:)`](vimagecvimageformat_getconversionmatrix(_:_:).md):
 
+**Swift**:
+
 ```swift
 let conversionMatrixPointer = withUnsafeBytes(of: cvImageFormat) { bytes in
     var outType = UInt32()
@@ -37,6 +39,17 @@ let conversionMatrixPointer = withUnsafeBytes(of: cvImageFormat) { bytes in
     
     return vImageCVImageFormat_GetConversionMatrix(format, &outType)
 }
+```
+
+**Objective-C**:
+
+```objc
+vImageConstCVImageFormatRef constFormat = cvImageFormat;
+
+vImageMatrixType outType = 0;
+
+const void *conversionMatrixPointer =
+    vImageCVImageFormat_GetConversionMatrix(constFormat, &outType);
 ```
 
 ## Parameters

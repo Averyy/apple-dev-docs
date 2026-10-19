@@ -32,8 +32,10 @@ Use this function to solve a system of linear equations using a factored coeffic
 
 The following code solves this system using the least squares minimum residual method:
 
+**Swift**:
+
 ```swift
-/// Create the coefficient matrix _A_.
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
 let rowIndices: [Int32] =    [ 0,  1, 1,  2]
 let columnIndices: [Int32] = [ 2,  0, 2,  1]
 let aValues: [Float] =      [10, 20, 5, 50]
@@ -47,7 +49,7 @@ defer {
     SparseCleanup(A)
 }
 
-/// Create the right-hand-side vector, _b_.
+// Create the right-hand-side vector `b` (also holds the solution on return).
 var bValues: [Float] = [30, 35, 100]
 var xValues = [Float](repeating: .nan, count: bValues.count)
 
@@ -63,6 +65,37 @@ bValues.withUnsafeMutableBufferPointer { bPtr in
         SparseSolve(SparseLSMR(), A, b, x)
     }
 }
+print(xValues) // Prints "[1.0, 2.0, 3.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+float aValues[]     = {10, 20, 5, 50};
+
+SparseMatrix_Float A = SparseConvertFromCoordinate(3, 3,
+                                                   4, 1,
+                                                   (SparseAttributes_t){0},
+                                                   rowIndices, columnIndices,
+                                                   aValues);
+
+// Create the right-hand-side vector `b` and output vector `x`.
+float bValues[] = {30, 35, 100};
+float xValues[] = {0, 0, 0};
+
+DenseVector_Float b = { .count = 3, .data = bValues };
+DenseVector_Float x = { .count = 3, .data = xValues };
+
+// Solve `Ax = b` using the LSMR iterative method.
+SparseSolve(SparseLSMR(), A, b, x);
+
+// Prints "[1, 2.0, 3]".
+printf("[%g, %g, %g]\n", xValues[0], xValues[1], xValues[2]);
+
+SparseCleanup(A);
 ```
 
 On return, x`Values` contains the values `[1.0, 2.0, 3.0]`.

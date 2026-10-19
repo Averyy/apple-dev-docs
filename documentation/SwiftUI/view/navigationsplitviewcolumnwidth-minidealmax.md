@@ -58,6 +58,8 @@ Only some platforms enable resizing columns. If you specify a width that the cur
   The visibility of the leading columns in a navigation split view.
 - [struct NavigationLink](navigationlink.md)
   A view that controls a navigation presentation.
+- [struct NavigationView](navigationview.md)
+  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 
 ---

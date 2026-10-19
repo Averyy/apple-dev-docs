@@ -19,10 +19,12 @@ let d = zip(a, b).map {
     ($0.0 + $0.1) * c
 }
 
-// d = [22.0, 44.0, 66.0, 88.0, 110.0, 132.0, 154.0, 176.0, 198.0, 220.0]
+// The `d` equals [22.0, 44.0, 66.0, 88.0, 110.0, 132.0, 154.0, 176.0, 198.0, 220.0].
 ```
 
 The vDSP version of the same operation runs significantly faster.
+
+**Swift**:
 
 ```swift
 let d = [Float](unsafeUninitializedCapacity: a.count) {
@@ -35,10 +37,23 @@ let d = [Float](unsafeUninitializedCapacity: a.count) {
     initializedCount = a.count
 }
 
-// d = [22.0, 44.0, 66.0, 88.0, 110.0, 132.0, 154.0, 176.0, 198.0, 220.0]
+// The `d` equals [22.0, 44.0, 66.0, 88.0, 110.0, 132.0, 154.0, 176.0, 198.0, 220.0].
+```
+
+**Objective-C**:
+
+```objc
+float d[10];
+
+// Compute `d[i] = (a[i] + b[i]) * c`.
+vDSP_vasm(a, 1, b, 1, &c, d, 1, 10);
+
+// The `d` equals [22, 44, 66, 88, 110, 132, 154, 176, 198, 220].
 ```
 
 Many vDSP functions have a variant that returns the result.
+
+**Swift**:
 
 ```swift
 let a: [Float] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -49,36 +64,52 @@ let d = vDSP.multiply(addition: (a, b),
                       c)
 ```
 
+**Objective-C**:
+
+```objc
+// The low-level vDSP C interface has no result-returning variant; it
+// always writes to a caller-supplied output buffer.
+float a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+float b[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+float c = 2;
+float d[10];
+
+// Compute `d[i] = (a[i] + b[i]) * c`.
+vDSP_vasm(a, 1, b, 1, &c, d, 1, 10);
+```
+
 ##### Available Arithmetic Functions
 
 The following table summarizes the basic arithmetic functions available in vDSP. All functions are available in single- and double-precision variants.
 
 In the *Operation* column, a subscript (for example, `a[i]`) indicates a vector, and no subscript (for example, `a`) indicates a scalar value.
 
-| Operation | Function |
-| --- | --- |
-| `c[i] = a[i] + b` | [`add(_:_:)`](vdsp/add(_:_:)-53nh9.md) |
-| `c[i] = a[i] + b[i]` | [`add(_:_:)`](vdsp/add(_:_:)-7swvf.md) |
-| `c[i] = a[i] - b[i]` | [`subtract(_:_:)`](vdsp/subtract(_:_:)-9xmo8.md) |
-| `c[i] = a[i] * b` | [`multiply(_:_:)`](vdsp/multiply(_:_:)-993yp.md) |
-| `c[i] = a[i] * b[i]` | [`multiply(_:_:)`](vdsp/multiply(_:_:)-9zgw.md) |
-| `c[i] = a[i] / b` | [`divide(_:_:)`](vdsp/divide(_:_:)-1uqmz.md) |
-| `c[i] = a / b[i]` | [`divide(_:_:)`](vdsp/divide(_:_:)-70npt.md) |
-| `o0[i] = i1[i] + i0[i]` ![None](/images/com.apple.accelerate/spacer.png) `o1[i] = i1[i] - i0[i]` | [`addSubtract(_:_:addResult:subtractResult:)`](vdsp/addsubtract(_:_:addresult:subtractresult:)-avzd.md) |
-| `c[i] = a[i] / b[i]` | [`divide(_:_:)`](vdsp/divide(_:_:)-6nfsi.md) |
-| `d[i] = (a[i] + b[i]) * c` | [`multiply(addition:_:)`](vdsp/multiply(addition:_:)-4fnbx.md) |
-| `d[i] = (a[i] + b[i]) * c[i]` | [`multiply(addition:_:)`](vdsp/multiply(addition:_:)-7t59.md) |
-| `d[i] = (a[i] - b[i]) * c` | [`multiply(subtraction:_:)`](vdsp/multiply(subtraction:_:)-106pt.md) |
-| `d[i] = (a[i] - b[i]) * c[i]` | [`multiply(subtraction:_:)`](vdsp/multiply(subtraction:_:)-6y7g6.md) |
-| `d[i] = (a[i] * b[i]) + c` | [`add(multiplication:_:)`](vdsp/add(multiplication:_:)-36vhq.md) |
-| `d[i] = (a[i] * b) + c[i]` | [`add(multiplication:_:)`](vdsp/add(multiplication:_:)-7aut1.md) |
-| `d[i] = (a[i] * b[i]) + c[i]` | [`add(multiplication:_:)`](vdsp/add(multiplication:_:)-9bgb2.md) |
-| `d[i] = (a[i] * b[i]) - c[i]` | [`subtract(multiplication:_:)`](vdsp/subtract(multiplication:_:)-6u3sp.md) |
-| `e[i] = (a[i] * b) + (c[i] * d)` | [`add(multiplication:multiplication:)`](vdsp/add(multiplication:multiplication:)-8rjh8.md) |
-| `e[i] = (a[i] + b[i]) * (c[i] + d[i])` | [`multiply(addition:addition:)`](vdsp/multiply(addition:addition:)-1voy8.md) |
-| `e[i] = (a[i] * b[i]) - (c[i] * d[i])` | [`subtract(multiplication:multiplication:)`](vdsp/subtract(multiplication:multiplication:)-1ghyu.md) |
-| `e[i] = (a[i] - b[i]) * (c[i] - d[i])` | [`multiply(subtraction:subtraction:)`](vdsp/multiply(subtraction:subtraction:)-1rnom.md) |
-| `e[i] = (a[i] + b[i]) * (c[i] - d[i])` | [`multiply(addition:subtraction:)`](vdsp/multiply(addition:subtraction:)-6h89l.md) |
+The *C function* column links to the equivalent low-level C interface. The Swift `vDSP` overlay (for example, [`multiply(_:_:)`](vdsp/multiply(_:_:)-993yp.md)) has no Objective-C interface; from C, call the underlying `vDSP_*` function shown here. Each C function also has a double-precision variant with a `D` suffix (for example, `vDSP_vsaddD`).
+
+| Operation | Function | C function |
+| --- | --- | --- |
+| `c[i] = a[i] + b` | [`add(_:_:)`](vdsp/add(_:_:)-53nh9.md) | [`vDSP_vsadd`](vdsp_vsadd.md) |
+| `c[i] = a[i] + b[i]` | [`add(_:_:)`](vdsp/add(_:_:)-7swvf.md) | [`vDSP_vadd`](vdsp_vadd.md) |
+| `c[i] = a[i] - b[i]` | [`subtract(_:_:)`](vdsp/subtract(_:_:)-9xmo8.md) | [`vDSP_vsub`](vdsp_vsub.md) |
+| `c[i] = a[i] * b` | [`multiply(_:_:)`](vdsp/multiply(_:_:)-993yp.md) | [`vDSP_vsmul`](vdsp_vsmul.md) |
+| `c[i] = a[i] * b[i]` | [`multiply(_:_:)`](vdsp/multiply(_:_:)-9zgw.md) | [`vDSP_vmul`](vdsp_vmul.md) |
+| `c[i] = a[i] / b` | [`divide(_:_:)`](vdsp/divide(_:_:)-1uqmz.md) | [`vDSP_vsdiv`](vdsp_vsdiv.md) |
+| `c[i] = a / b[i]` | [`divide(_:_:)`](vdsp/divide(_:_:)-70npt.md) | [`vDSP_svdiv`](vdsp_svdiv.md) |
+| `o0[i] = i1[i] + i0[i]` ![None](/images/com.apple.accelerate/spacer.png) `o1[i] = i1[i] - i0[i]` | [`addSubtract(_:_:addResult:subtractResult:)`](vdsp/addsubtract(_:_:addresult:subtractresult:)-avzd.md) | [`vDSP_vaddsub`](vdsp_vaddsub.md) |
+| `c[i] = a[i] / b[i]` | [`divide(_:_:)`](vdsp/divide(_:_:)-6nfsi.md) | [`vDSP_vdiv`](vdsp_vdiv.md) |
+| `d[i] = (a[i] + b[i]) * c` | [`multiply(addition:_:)`](vdsp/multiply(addition:_:)-4fnbx.md) | [`vDSP_vasm`](vdsp_vasm.md) |
+| `d[i] = (a[i] + b[i]) * c[i]` | [`multiply(addition:_:)`](vdsp/multiply(addition:_:)-7t59.md) | [`vDSP_vam`](vdsp_vam.md) |
+| `d[i] = (a[i] - b[i]) * c` | [`multiply(subtraction:_:)`](vdsp/multiply(subtraction:_:)-106pt.md) | [`vDSP_vsbsm`](vdsp_vsbsm.md) |
+| `d[i] = (a[i] - b[i]) * c[i]` | [`multiply(subtraction:_:)`](vdsp/multiply(subtraction:_:)-6y7g6.md) | [`vDSP_vsbm`](vdsp_vsbm.md) |
+| `d[i] = (a[i] * b[i]) + c` | [`add(multiplication:_:)`](vdsp/add(multiplication:_:)-36vhq.md) | [`vDSP_vmsa`](vdsp_vmsa.md) |
+| `d[i] = (a[i] * b) + c[i]` | [`add(multiplication:_:)`](vdsp/add(multiplication:_:)-7aut1.md) | [`vDSP_vsma`](vdsp_vsma.md) |
+| `d[i] = (a[i] * b[i]) + c[i]` | [`add(multiplication:_:)`](vdsp/add(multiplication:_:)-9bgb2.md) | [`vDSP_vma`](vdsp_vma.md) |
+| `d[i] = (a[i] * b[i]) - c[i]` | [`subtract(multiplication:_:)`](vdsp/subtract(multiplication:_:)-6u3sp.md) | [`vDSP_vmsb`](vdsp_vmsb.md) |
+| `e[i] = (a[i] * b) + (c[i] * d)` | [`add(multiplication:multiplication:)`](vdsp/add(multiplication:multiplication:)-8rjh8.md) | [`vDSP_vsmsma`](vdsp_vsmsma.md) |
+| `e[i] = (a[i] + b[i]) * (c[i] + d[i])` | [`multiply(addition:addition:)`](vdsp/multiply(addition:addition:)-1voy8.md) | [`vDSP_vaam`](vdsp_vaam.md) |
+| `e[i] = (a[i] * b[i]) - (c[i] * d[i])` | [`subtract(multiplication:multiplication:)`](vdsp/subtract(multiplication:multiplication:)-1ghyu.md) | [`vDSP_vmmsb`](vdsp_vmmsb.md) |
+| `e[i] = (a[i] - b[i]) * (c[i] - d[i])` | [`multiply(subtraction:subtraction:)`](vdsp/multiply(subtraction:subtraction:)-1rnom.md) | [`vDSP_vsbsbm`](vdsp_vsbsbm.md) |
+| `e[i] = (a[i] + b[i]) * (c[i] - d[i])` | [`multiply(addition:subtraction:)`](vdsp/multiply(addition:subtraction:)-6h89l.md) | [`vDSP_vasbm`](vdsp_vasbm.md) |
 
 ## See Also
 

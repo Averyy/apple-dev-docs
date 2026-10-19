@@ -29,6 +29,9 @@ enum FileType
   Portable Network Graphics (PNG) format.
 - [NSBitmapImageRep.FileType.jpeg2000](nsbitmapimagerep/filetype/jpeg2000.md)
   JPEG 2000 file format.
+### Deprecated
+- [Deprecated symbols](filetype-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [init?(rawValue: UInt)](nsbitmapimagerep/filetype/init(rawvalue:).md)
 

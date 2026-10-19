@@ -32,7 +32,7 @@ let a: [Float] = [-1.5, 2.25, 3.6,
 
 let sum = vDSP.sum(a)
 
-// Prints "sum 0.1500"
+// Prints "sum 0.1500".
 print(String(format: "sum %.4f", sum))
 ```
 

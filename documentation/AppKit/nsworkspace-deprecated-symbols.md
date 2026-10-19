@@ -1,10 +1,12 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
 
 #### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 The table below describes keys for an `NSDictionary` object containing information about an app. This dictionary is returned by [`activeApplication()`](nsworkspace/activeapplication().md) and [`launchedApplications`](nsworkspace/launchedapplications.md), and is also provided in the `userInfo` of `NSWorkspace` notifications for app launch and termination.
 
@@ -23,7 +25,7 @@ Note that these constants are considered legacy.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func open(URL, options: NSWorkspace.LaunchOptions, configuration: [NSWorkspace.LaunchConfigurationKey : Any]) throws -> NSRunningApplication](nsworkspace/open(_:options:configuration:).md)
 - [func open([URL], withApplicationAt: URL, options: NSWorkspace.LaunchOptions, configuration: [NSWorkspace.LaunchConfigurationKey : Any]) throws -> NSRunningApplication](nsworkspace/open(_:withapplicationat:options:configuration:).md)
 - [func openFile(String) -> Bool](nsworkspace/openfile(_:).md)
@@ -58,17 +60,29 @@ Note that these constants are considered legacy.
   Returns a dictionary with information about the current active app.
 - [func icon(forFileType: String) -> NSImage](nsworkspace/icon(forfiletype:).md)
   Returns an image containing the icon for files of the specified type.
-### Types
+- [func type(ofFile: String) throws -> String](nsworkspace/type(offile:).md)
+  Returns the uniform type identifier of the specified file, if it can be determined.
+- [func localizedDescription(forType: String) -> String?](nsworkspace/localizeddescription(fortype:).md)
+  Returns the localized description for the specified Uniform Type Identifier (UTI).
+- [func preferredFilenameExtension(forType: String) -> String?](nsworkspace/preferredfilenameextension(fortype:).md)
+  Returns the preferred filename extension for the specified Uniform Type Identifier (UTI).
+- [func filenameExtension(String, isValidForType: String) -> Bool](nsworkspace/filenameextension(_:isvalidfortype:).md)
+  Returns whether the specified filename extension is appropriate for the Uniform Type Identifier (UTI).
+- [func type(String, conformsToType: String) -> Bool](nsworkspace/type(_:conformstotype:).md)
+  Returns a Boolean indicating that the first Uniform Type Identifier (UTI) conforms to the second UTI.
+- [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](nsworkspace/getinfoforfile(_:application:type:).md)
+  Retrieves information about the specified file.
+### Deprecated types
 - [NSWorkspace.LaunchOptions](nsworkspace/launchoptions.md)
   Constants specifying how you want to launch an app
 - [NSWorkspace.LaunchConfigurationKey](nsworkspace/launchconfigurationkey.md)
   The following keys can be used in the configuration dictionary of the [`launchApplication(at:options:configuration:)`](nsworkspace/launchapplication(at:options:configuration:).md) method.  Each key is optional, and if omitted, default behavior is applied.
 - [NSWorkspace.FileOperationName](nsworkspace/fileoperationname.md)
   Constants that define types of file operations.
-### Constants
+### Deprecated constants
 - [class let applicationUserInfoKey: String](nsworkspace/applicationuserinfokey.md)
   The value corresponding to this key is an instance of [`NSRunningApplication`](nsrunningapplication.md) that reflects the affected app.
-### Notifications
+### Deprecated notifications
 - [class let didPerformFileOperationNotification: NSNotification.Name](nsworkspace/didperformfileoperationnotification.md)
   Posted when a file operation has been performed in the receiving app.
 

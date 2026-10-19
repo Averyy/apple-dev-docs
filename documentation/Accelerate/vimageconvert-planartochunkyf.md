@@ -28,7 +28,9 @@ func vImageConvert_PlanarToChunkyF(_ srcPlanarBuffers: UnsafeMutablePointer<Unsa
 
 Use this function to interleave formats that either aren’t supported by the vImage library or are only known at runtime.
 
-The following code interleaves two 4 x 1 planar buffers into a 4 x 1 interleaved 2-channel buffer:
+The following code interleaves two 4 x 1 planar buffers into a 4 x 1 interleaved two-channel buffer:
+
+**Swift**:
 
 ```swift
 let width = 4
@@ -75,6 +77,51 @@ cbBuffer.withUnsafePointerToVImageBuffer { cb in
 
 // Prints "[10.0, 20.0,   11.0, 21.0,   12.0, 22.0,   13.0, 23.0]".
 print(cbCrBuffer.array)
+```
+
+**Objective-C**:
+
+```objc
+float cbData[4] = {10.0f, 11.0f, 12.0f, 13.0f};
+float crData[4] = {20.0f, 21.0f, 22.0f, 23.0f};
+
+vImage_Buffer cbBuf = {
+    .data     = cbData,
+    .width    = 4,
+    .height   = 1,
+    .rowBytes = 16
+};
+
+vImage_Buffer crBuf = {
+    .data     = crData,
+    .width    = 4,
+    .height   = 1,
+    .rowBytes = 16
+};
+
+float dst[8] = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
+
+const vImage_Buffer *srcPlanarBuffers[2] = { &cbBuf, &crBuf };
+
+void *destChannels[2] = {
+    dst,
+    (uint8_t *)dst + sizeof(float)
+};
+
+vImageConvert_PlanarToChunkyF(
+    srcPlanarBuffers,
+    destChannels,
+    2,
+    sizeof(float) * 2,
+    4,
+    1,
+    4 * sizeof(float) * 2,
+    kvImageNoFlags);
+
+// Prints "[10.0, 20.0, 11.0, 21.0, 12.0, 22.0, 13.0, 23.0]".
+printf("[%f, %f, %f, %f, %f, %f, %f, %f]\n",
+       dst[0], dst[1], dst[2], dst[3],
+       dst[4], dst[5], dst[6], dst[7]);
 ```
 
 ## Parameters

@@ -28,7 +28,7 @@ func vvceil(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvceil(_:_:_:)`](vvceil(_:_:_:).md).
+The following code shows an example of using [`vvceil(_:_:_:)`](vvceil(_:_:_:).md):
 
 ```objc
 double x[] = {1.2, 5.5, 3.9, 26.0};
@@ -37,7 +37,37 @@ int n = 4;
  
 vvceil(y, x, &n);
  
-NSLog(@"y: [%lf, %lf, %lf, %lf]", y[0], y[1], y[2], y[3]);
+printf("y: [%lf, %lf, %lf, %lf]\n", y[0], y[1], y[2], y[3]);
+```
+
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Double] = [1.2, 2.5, -1.7]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the ceiling of each element in `x`, rounding up to the nearest integer.
+vvceil(&y, &x, &n)
+
+// Prints "[2.0, 3.0, -1.0]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+double x[3] = {1.2, 2.5, -1.7};
+double y[3];
+int n = 3;
+
+// Calculate the ceiling of each element in `x`, rounding up to the nearest integer.
+vvceil(y, x, &n);
+
+// Prints "[2, 3, -1]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
 ```
 
 ## See Also

@@ -22,7 +22,7 @@ Take the opportunity to build trust with the user through your usage description
 - “Lets you mark an item as finished by saying Done.”
 - “The app listens for specific verbal commands, such as “Start”, “Stop”, and “Pause”. For a complete list of commands, see http://myapp.example.com”.
 
-> ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription) key in your app’s `Info.plist` file. If this key is not present, your app will crash when it attempts to request authorization or use the APIs of the Speech framework.
+> ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription) key in your app’s `Info.plist` file. This applies regardless of whether you set [`requiresOnDeviceRecognition`](sfspeechrecognitionrequest/requiresondevicerecognition.md) to `true` or `false`. If this key is not present, your app will crash when it calls [`requestAuthorization(_:)`](sfspeechrecognizer/requestauthorization(_:).md).
 
 ##### Request Authorization at First Use
 

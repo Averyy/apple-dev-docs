@@ -6,7 +6,7 @@
 Always returns `kIOReturnError` because a custom property cannot have a custom property.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

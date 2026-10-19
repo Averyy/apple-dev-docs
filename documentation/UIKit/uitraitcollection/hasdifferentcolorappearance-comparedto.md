@@ -30,11 +30,6 @@ Use this method to determine whether changing the traits of the current environm
 
 - `traitCollection`: A trait collection that you want to compare to the current trait collection.
 
-## See Also
-
-- [func containsTraits(in: UITraitCollection?) -> Bool](uitraitcollection/containstraits(in:).md)
-  Queries whether a trait collection contains all of another trait collection’s values.
-
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: method
 
-Returns the placement for the provided view controller in the arrangement.
+Returns the placement for the view controller you provide in the arrangement.
 
 **Availability**:
 - iOS 27.1+
@@ -25,16 +25,16 @@ Returns `nil` if the provided view controller isn’t one of the view controller
 
 ## Parameters
 
-- `viewController`: The view controller in the arrangement.
+- `viewController`: The view controller to find in the arrangement.
 
 ## See Also
 
 - [UIArrangementViewController.ViewPlacement](uiarrangementviewcontroller/viewplacement.md)
   A placement of a view controller within an arrangement view controller.
 - [func viewController(for: UIArrangementViewController.ViewPlacement) -> UIViewController?](uiarrangementviewcontroller/viewcontroller(for:).md)
-  The view controller in the arrangement for the provided placement.
+  Returns the view controller in the arrangement for the placement you provide.
 - [func setViewController(UIViewController?, for: UIArrangementViewController.ViewPlacement, animated: Bool)](uiarrangementviewcontroller/setviewcontroller(_:for:animated:).md)
-  Sets the view controller in the arrangement for a specific placement.
+  Sets the view controller in the arrangement for the specific placement you provide.
 
 
 ---

@@ -28,7 +28,7 @@ func vImagePremultiplyData_ARGB16Q12(_ src: UnsafePointer<vImage_Buffer>, _ dest
 
 This function multiplies color channels by the alpha channel using the following code:
 
-```swift
+```c
 int16_t destColor = CLAMP((src * alpha + 2048) / 4096, INT16_MIN, INT16_MAX);
 int16_t destAlpha = alpha;
 ```

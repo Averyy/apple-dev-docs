@@ -35,8 +35,6 @@ This function may be called from any thread of your app.
   Makes the specified graphics context the current context.
 - [func UIGraphicsPopContext()](uigraphicspopcontext().md)
   Removes the current graphics context from the top of the stack, restoring the previous context.
-- [func UIGraphicsBeginImageContextWithOptions(CGSize, Bool, CGFloat)](uigraphicsbeginimagecontextwithoptions(_:_:_:).md)
-  Creates a bitmap-based graphics context with the specified options.
 - [func UIRectClip(CGRect)](uirectclip(_:).md)
   Modifies the current clipping path by intersecting it with the specified rectangle.
 

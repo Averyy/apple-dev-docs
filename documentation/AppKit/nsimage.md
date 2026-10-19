@@ -212,12 +212,12 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
   Creates and returns a new image with the specified locale.
 - [var locale: Locale?](nsimage/locale.md)
   The image’s preferred locale for resolving representations, if one has been specified using `-imageWithLocale:`. Otherwise, `nil`.
-### Deprecated
-- [Deprecated Symbols](nsimage-deprecated-symbols.md)
-  Review symbols that are no longer supported, and find the replacements to use instead.
 ### Enumerations
 - [NSImage.DynamicRange](nsimage/dynamicrange.md)
   Describes how High Dynamic Range (HDR) image content displays.
+### Deprecated
+- [Deprecated symbols](nsimage-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [convenience init(CGImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-15zeh.md)
 - [convenience init(byReferencingURL: URL)](nsimage/init(byreferencingurl:).md)

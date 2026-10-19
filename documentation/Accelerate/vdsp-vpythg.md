@@ -26,40 +26,65 @@ This function calculates the length of the hypotenuse of *n* number of triangles
 
 The functions use the following operation:
 
-```swift
+```c
 for (n = 0; n < N; ++n)
-    E[n] = sqrt((A[n]-B[n])**2 + (C[n]-D[n])**2);
+E[n] = sqrt((A[n]-B[n])**2 + (C[n]-D[n])**2);
 ```
 
 For example, the following code calculates the hypotenuse of four Pythagorean triples:
 
+**Swift**:
+
 ```swift
-    let stride = 1
-    
-    let a: [Float] = [3, 6, 5, 9]
-    let b: [Float] = [0, 0, 0, 0]
-    
-    let c: [Float] = [0, 0, 0, 0]
-    let d: [Float] = [4, 8, 12, 12]
-    
-    let hypotenuses = [Float](
-        unsafeUninitializedCapacity: a.count) {
-            buffer, initializedCount in
-            
-            vDSP_vpythg(
-                a, stride,
-                b, stride,
-                c, stride,
-                d, stride,
-                buffer.baseAddress!, stride,
-                vDSP_Length(a.count)
-            )
-   
-            initializedCount = a.count
-        }
-    
-    // Prints "[5.0, 10.0, 13.0, 15.0]".
-    print(hypotenuses)
+let stride = 1
+
+let a: [Float] = [3, 6, 5, 9]
+let b: [Float] = [0, 0, 0, 0]
+
+let c: [Float] = [0, 0, 0, 0]
+let d: [Float] = [4, 8, 12, 12]
+
+let hypotenuses = [Float](
+    unsafeUninitializedCapacity: a.count) {
+        buffer, initializedCount in
+        
+        vDSP_vpythg(
+            a, stride,
+            b, stride,
+            c, stride,
+            d, stride,
+            buffer.baseAddress!, stride,
+            vDSP_Length(a.count)
+        )
+
+        initializedCount = a.count
+    }
+
+// Prints "[5.0, 10.0, 13.0, 15.0]".
+print(hypotenuses)
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Stride stride = 1;
+
+float a[] = {3, 6, 5, 9};
+float b[] = {0, 0, 0, 0};
+float c[] = {0, 0, 0, 0};
+float d[] = {4, 8, 12, 12};
+float hypotenuses[4];
+
+vDSP_vpythg(a, stride,
+            b, stride,
+            c, stride,
+            d, stride,
+            hypotenuses, stride,
+            4);
+
+// Prints "[5, 10, 13, 15]".
+printf("[%g, %g, %g, %g]\n",
+      hypotenuses[0], hypotenuses[1], hypotenuses[2], hypotenuses[3]);
 ```
 
 ## Parameters

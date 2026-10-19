@@ -56,7 +56,7 @@ int n = 4;
  
 vvfmod(z, y, x, &n);
  
-NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+printf("z: [%lf, %lf, %lf, %lf]\n", z[0], z[1], z[2], z[3]);
 
 ```
 

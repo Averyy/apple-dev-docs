@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-16T07:31:57.247153",
+    "last_updated": "2026-10-19T20:45:23.577183",
     "total_pages": 18,
-    "session_id": "2026-10-16T07:31:55.997605"
+    "session_id": "2026-10-19T20:45:21.863238"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ApplePayWebMerchantRegistrationAPI.json": {
       "hash": "7261de0239cecba24383c972e8ee09fc1b1ad60c8a04a590063b6403ff582821",
-      "last_checked": "2026-10-16T07:31:56.250848",
+      "last_checked": "2026-10-19T20:45:22.102922",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"3252-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/ApplePayWebMerchantRegistrationAPI.md"
     },
     "https://developer.apple.com/documentation/ApplePayWebMerchantRegistrationAPI": {
       "hash": "7261de0239cecba24383c972e8ee09fc1b1ad60c8a04a590063b6403ff582821",
-      "last_checked": "2026-10-16T07:31:56.175919",
+      "last_checked": "2026-10-19T20:45:22.095517",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"3252-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/ApplePayWebMerchantRegistrationAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/preparing-merchant-domains-for-verification.json": {
       "hash": "4918887d4fb3c64e22bd21656d7c4784b7d3c553457a888e43341ce265d4d639",
-      "last_checked": "2026-10-16T07:31:56.688777",
+      "last_checked": "2026-10-19T20:45:22.536533",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"172d-6590222bc1c8a-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/preparing-merchant-domains-for-verification.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/register-merchant.json": {
       "hash": "2e010e3d7d029a991d458b90f3ec1b8e141545ffc790b069263a7519475b0c10",
-      "last_checked": "2026-10-16T07:31:56.856731",
+      "last_checked": "2026-10-19T20:45:22.667116",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"1fda-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/register-merchant.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/registermerchantrequest.json": {
       "hash": "bd3834c6fcbe3624c08285aaeb6eb00af4cea3ce2560f51e21cfe0fef2200f26",
-      "last_checked": "2026-10-16T07:31:56.945000",
+      "last_checked": "2026-10-19T20:45:22.769319",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"2947-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/registermerchantrequest.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/unregister-merchant.json": {
       "hash": "4788ce62a4c19494ead17b90167118e148f85cf4990bbb0132570995e59e67aa",
-      "last_checked": "2026-10-16T07:31:57.010795",
+      "last_checked": "2026-10-19T20:45:22.931690",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"1cb2-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/unregister-merchant.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/unregistermerchantrequest.json": {
       "hash": "de2d69d0d1563d4a2a5e41bb10043372721c232616fd511ebbb38828ab21e01c",
-      "last_checked": "2026-10-16T07:31:57.094496",
+      "last_checked": "2026-10-19T20:45:23.214733",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"1778-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/unregistermerchantrequest.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/get-merchant.json": {
       "hash": "99352fbdccdeb2071e716143dd60a104c67246eda7a95460d04d9b6b9520ec17",
-      "last_checked": "2026-10-16T07:31:57.174780",
+      "last_checked": "2026-10-19T20:45:23.367089",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"1cc0-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/get-merchant.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/merchantdetails.json": {
       "hash": "399c22e86e31b89939d23e9b8a10f1f845d16a8282bc9815f592e368d54b3ae1",
-      "last_checked": "2026-10-16T07:31:57.237793",
+      "last_checked": "2026-10-19T20:45:23.559934",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"206a-65d55a3634bce-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/merchantdetails.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaywebmerchantregistrationapi/applying-to-use-the-registration-api-and-configuring-ids.json": {
       "hash": "2892f654091d847fe9005f4a9823e2d90e53487c18e936b4283e1047ec833aec",
-      "last_checked": "2026-10-16T07:31:56.504227",
+      "last_checked": "2026-10-19T20:45:22.380640",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:31:55.997605",
+      "session_id": "2026-10-19T20:45:21.863238",
       "etag": "\"2594-6590222bc1c8a-df\"",
       "file_path": "documentation/ApplePayWebMerchantRegistrationAPI/applying-to-use-the-registration-api-and-configuring-ids.md"
     },

@@ -30,6 +30,8 @@ init(cgColor: CGColor)
   Creates a color from a UIKit color.
 - [init(nsColor: NSColor)](color/init(nscolor:).md)
   Creates a color from an AppKit color.
+- [var cgColor: CGColor?](color/cgcolor.md)
+  A Core Graphics representation of the color, if available.
 
 
 ---

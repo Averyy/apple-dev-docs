@@ -32,14 +32,13 @@ To use this class, allocate and initialize a new instance, set the minimum value
   The scale factor that determines the smallest font size to use during drawing.
 - [var actualScaleFactor: CGFloat](nsstringdrawingcontext/actualscalefactor.md)
   The actual scale factor that the system applied to the font during drawing.
-### Getting the drawing bounds
-- [var totalBounds: CGRect](nsstringdrawingcontext/totalbounds.md)
-  The most recent bounding rectangle that the system used to draw the string.
-### Deprecated
 - [var minimumTrackingAdjustment: CGFloat](nsstringdrawingcontext/minimumtrackingadjustment.md)
   The smallest amount of space, in points, to maintain between characters.
 - [var actualTrackingAdjustment: CGFloat](nsstringdrawingcontext/actualtrackingadjustment.md)
   The actual tracking value that the system applied during drawing.
+### Getting the drawing bounds
+- [var totalBounds: CGRect](nsstringdrawingcontext/totalbounds.md)
+  The most recent bounding rectangle that the system used to draw the string.
 
 ## Relationships
 

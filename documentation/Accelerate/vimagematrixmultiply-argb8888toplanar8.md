@@ -28,7 +28,9 @@ func vImageMatrixMultiply_ARGB8888ToPlanar8(_ src: UnsafePointer<vImage_Buffer>,
 
 This function treats the four-channel source pixels as a four-element vector, and multiplies each source pixel by the matrix. The operation is equivalent to computing the dot product of the source pixel and the matrix.
 
-The following code shows a four-channel interleaved buffer multiplied by a four-element column matrix to produce a planar destination image. The values in the matrix represent the Rec. 709 luminance coefficients that convert the color source pixels to a grayscale destination image. The source buffer contains a red pixel, a green pixel, and a blue pixel.
+The following code shows a four-channel interleaved buffer multiplied by a four-element column matrix to produce a planar destination image. The values in the matrix represent the Rec. 709 luminance coefficients that convert the color source pixels to a grayscale destination image. The source buffer contains a red pixel, a green pixel, and a blue pixel:
+
+**Swift**:
 
 ```swift
 let size = vImage.Size(width: 3, height: 1)
@@ -70,8 +72,58 @@ source.withUnsafePointerToVImageBuffer { src in
     }
 }
 
-// Prints "[0.21176471, 0.7137255, 0.07058824]".
+// Prints "[0.21176, 0.71373, 0.070588]".
 print(destination.array.map { Float($0) / 255 })
+```
+
+**Objective-C**:
+
+```objc
+uint8_t srcData[12] = {
+    0, 255,   0,   0,   // red
+    0,   0, 255,   0,   // green
+    0,   0,   0, 255    // blue
+};
+
+vImage_Buffer srcBuf = {
+    .data = srcData,
+    .width = 3,
+    .height = 1,
+    .rowBytes = 12
+};
+
+uint8_t dstData[3] = {0};
+
+vImage_Buffer dstBuf = {
+    .data = dstData,
+    .width = 3,
+    .height = 1,
+    .rowBytes = 3
+};
+
+int32_t divisor = 0x1000;
+float fDivisor = (float)divisor;
+float redCoefficient   = 0.2126f;
+float greenCoefficient = 0.7152f;
+float blueCoefficient  = 0.0722f;
+
+int16_t matrix[4] = {
+    0,
+    (int16_t)(redCoefficient   * fDivisor),
+    (int16_t)(greenCoefficient * fDivisor),
+    (int16_t)(blueCoefficient  * fDivisor)
+};
+
+vImageMatrixMultiply_ARGB8888ToPlanar8(&srcBuf, &dstBuf,
+                                       matrix, divisor,
+                                       NULL, 0,
+                                       kvImageNoFlags);
+
+// Prints "[0.21176, 0.71373, 0.070588]".
+printf("[%f, %f, %f]\n",
+      (float)dstData[0] / 255.0f,
+      (float)dstData[1] / 255.0f,
+      (float)dstData[2] / 255.0f);
 ```
 
 ## Parameters

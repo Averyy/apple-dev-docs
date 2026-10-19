@@ -233,8 +233,6 @@ In macOS 10.6 and later, `NSDocument` supports the ability to open multiple docu
   Presents a modal Save panel to the user, then tries to save the document if the user approves the operation.
 - [func prepareSavePanel(NSSavePanel) -> Bool](nsdocument/preparesavepanel(_:).md)
   Tells the document to customize the specified Save panel.
-- [var shouldRunSavePanelWithAccessoryView: Bool](nsdocument/shouldrunsavepanelwithaccessoryview.md)
-  A Boolean value that indicates whether the document’s Save panel displays a list of supported writable document types.
 - [var fileTypeFromLastRunSavePanel: String?](nsdocument/filetypefromlastrunsavepanel.md)
   The file type that was last selected in the Save panel.
 - [var fileNameExtensionWasHiddenInLastRunSavePanel: Bool](nsdocument/filenameextensionwashiddeninlastrunsavepanel.md)
@@ -361,9 +359,6 @@ In macOS 10.6 and later, `NSDocument` supports the ability to open multiple docu
   Called when the receiver is about to present an error.
 - [func willNotPresentError(any Error)](nsdocument/willnotpresenterror(_:).md)
   Confirms that the error object is not to be presented to the user and the error cannot be recovered from, so cleanup can be done.
-### Deprecated
-- [Deprecated Symbols](nsdocument-deprecated-symbols.md)
-  Review symbols that are no longer supported, and find replacements.
 ### Instance Properties
 - [var observedPresentedItemUbiquityAttributes: Set<URLResourceKey>](nsdocument/observedpresenteditemubiquityattributes.md)
 - [var presentedItemURL: URL?](nsdocument/presenteditemurl.md)
@@ -380,6 +375,9 @@ In macOS 10.6 and later, `NSDocument` supports the ability to open multiple docu
 - [func relinquishPresentedItem(toReader: ((() -> Void)?) -> Void)](nsdocument/relinquishpresenteditem(toreader:).md)
 - [func relinquishPresentedItem(toWriter: ((() -> Void)?) -> Void)](nsdocument/relinquishpresenteditem(towriter:).md)
 - [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](nsdocument/savepresenteditemchanges(completionhandler:).md)
+### Deprecated
+- [Deprecated symbols](nsdocument-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [convenience init(contentsOfURL: URL, ofType: String) throws](nsdocument/init(contentsofurl:oftype:).md)
 - [convenience init(forURL: URL?, withContentsOfURL: URL, ofType: String) throws](nsdocument/init(forurl:withcontentsofurl:oftype:).md)

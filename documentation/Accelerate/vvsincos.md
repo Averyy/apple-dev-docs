@@ -29,7 +29,7 @@ func vvsincos(_: UnsafeMutablePointer<Double>, _: UnsafeMutablePointer<Double>, 
 - **parameter 3**: The input array, *x*.
 - **parameter 4**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvsincos(_:_:_:_:)`](vvsincos(_:_:_:_:).md).
+The following code shows an example of using [`vvsincos(_:_:_:_:)`](vvsincos(_:_:_:_:).md):
 
 **Swift**:
 

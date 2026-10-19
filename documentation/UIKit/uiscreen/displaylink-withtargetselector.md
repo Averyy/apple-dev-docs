@@ -32,11 +32,6 @@ You use display link objects to synchronize your drawing code to the screen’s 
 - (void)selector:(CADisplayLink *)sender;
 ```
 
-## See Also
-
-- [var maximumFramesPerSecond: Int](uiscreen/maximumframespersecond.md)
-  The maximum number of frames per second a screen can render.
-
 
 ---
 

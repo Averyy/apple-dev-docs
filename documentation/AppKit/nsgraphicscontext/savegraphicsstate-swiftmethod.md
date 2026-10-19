@@ -28,8 +28,6 @@ Saving the graphics state saves such attributes as the current drawing style, tr
   Removes the context’s graphics state from the top of the graphics state stack and makes the next graphics state the current graphics state.
 - [class func saveGraphicsState()](nsgraphicscontext/savegraphicsstate-swift.type.method.md)
   Saves the graphics state of the current graphics context.
-- [class func setGraphicsState(Int)](nsgraphicscontext/setgraphicsstate(_:).md)
-  Makes the graphics context of the specified graphics state current, and resets graphics state.
 
 
 ---

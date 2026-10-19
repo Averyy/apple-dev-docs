@@ -27,6 +27,8 @@ This method is invoked before the animation begins and the view is hidden.
 
 ## See Also
 
+- [func alertView(UIAlertView, clickedButtonAt: Int)](uialertviewdelegate/alertview(_:clickedbuttonat:).md)
+  Sent to the delegate when the user clicks a button on an alert view.
 - [func alertViewShouldEnableFirstOtherButton(UIAlertView) -> Bool](uialertviewdelegate/alertviewshouldenablefirstotherbutton(_:).md)
   Sent to the delegate to determine whether the first non-cancel button in the alert should be enabled.
 - [func willPresent(UIAlertView)](uialertviewdelegate/willpresent(_:).md)
@@ -35,6 +37,8 @@ This method is invoked before the animation begins and the view is hidden.
   Sent to the delegate after an alert view is presented to the user.
 - [func alertView(UIAlertView, didDismissWithButtonIndex: Int)](uialertviewdelegate/alertview(_:diddismisswithbuttonindex:).md)
   Sent to the delegate after an alert view is dismissed from the screen.
+- [func alertViewCancel(UIAlertView)](uialertviewdelegate/alertviewcancel(_:).md)
+  Sent to the delegate before an alert view is canceled.
 
 
 ---

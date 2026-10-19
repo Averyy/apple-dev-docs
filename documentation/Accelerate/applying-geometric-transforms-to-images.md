@@ -24,6 +24,8 @@ The vImage reflect functions generate either a vertical or a horizontal reflecti
 
 The destination buffer you pass to the vImage reflect functions needs to be the same size as the source buffer. The code below uses a precondition to ensure that both buffer sizes match:
 
+**Swift**:
+
 ```swift
 static func verticalReflectBuffer(source: vImage_Buffer,
                                   destination: inout vImage_Buffer) {
@@ -39,6 +41,22 @@ static func verticalReflectBuffer(source: vImage_Buffer,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void verticalReflectBuffer(const vImage_Buffer *source,
+                           vImage_Buffer *destination) {
+
+    NSCAssert(source->width == destination->width &&
+              source->height == destination->height,
+              @"Source and destination buffers need to have the same size.");
+
+    vImageVerticalReflect_ARGB8888(source,
+                                   destination,
+                                   kvImageNoFlags);
+}
+```
+
 To learn more about reflection functions, see [`Image reflection`](image-reflection.md).
 
 ##### Shear a Vimage Buffer
@@ -48,6 +66,8 @@ The vImage shear functions scale and offset an image in one dimension. These fun
 ![A sheared photograph of flowers. The image appears as a diagonal stripe across its background.](/images/com.apple.accelerate/media-3682695@2x.png)
 
 Control the amount of shear by specifying the `shearSlope` parameter. The functions define the shear slope as `deltaᵧ/deltaₓ` that’s the slope for a linear function `y = slope * x`. The `verticalShearBuffer(source:destination:byAngleInDegrees:verticalScale:backgroundColor:)` function accepts the shear as an angle in degrees and performs the transform.
+
+**Swift**:
 
 ```swift
 static func verticalShearBuffer(source: vImage_Buffer,
@@ -87,6 +107,41 @@ static func verticalShearBuffer(source: vImage_Buffer,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void verticalShearBuffer(const vImage_Buffer *source,
+                         vImage_Buffer *destination,
+                         double angleInDegrees,
+                         float verticalScale,
+                         const Pixel_8888 backgroundColor) {
+
+    // 1. Ensure the shear angle is valid.
+    NSCAssert(angleInDegrees > -90 && angleInDegrees < 90,
+              @"The shear angle needs to be greater than -90° and less than 90°.");
+
+    // 2. Calculate `shearSlope` as the tangent of the specified angle.
+    float radians = (float)(angleInDegrees * M_PI / 180.0);
+    float shearSlope = tanf(radians);
+
+    // 3. Create a default resampling filter using the specified scale.
+    ResamplingFilter resamplingFilter = vImageNewResamplingFilter(verticalScale,
+                                                                  kvImageNoFlags);
+
+    // 4. Apply the transform to `source` and write the result to `destination`.
+    vImageVerticalShear_ARGB8888(source,
+                                 destination,
+                                 0, 0,
+                                 0,
+                                 shearSlope,
+                                 resamplingFilter,
+                                 backgroundColor,
+                                 kvImageBackgroundColorFill);
+
+    vImageDestroyResamplingFilter(resamplingFilter);
+}
+```
+
 To fit the sheared image in a buffer with the same dimensions as the original image, specify a shear angle that’s the arctangent of the image’s height divided by twice its width.
 
 ```swift
@@ -119,6 +174,8 @@ If the source and destination buffers are different sizes, the 0° and 180° rot
 The 90° rotation function crops source pixels that lie outside the destination buffer and fills destination pixels with the specified background color when source pixels don’t cover them.
 
 The function below applies a multiple of 90° rotation to a buffer and returns the result in a correctly oriented destination buffer:
+
+**Swift**:
 
 ```swift
 static func rotateNinety(source: vImage_Buffer,
@@ -156,6 +213,54 @@ static func rotateNinety(source: vImage_Buffer,
 }
 ```
 
+**Objective-C**:
+
+```objc
+vImage_Buffer *rotateNinety(const vImage_Buffer *source, int rotation) {
+
+    // 1. Create the destination buffer.
+    vImage_Buffer *destination = malloc(sizeof(vImage_Buffer));
+    if (!destination) {
+        return NULL;
+    }
+
+    vImage_Error initError;
+    if (rotation == kRotate0DegreesClockwise || rotation == kRotate180DegreesClockwise) {
+        initError = vImageBuffer_Init(destination,
+                                     source->height,
+                                     source->width,
+                                     8 * 4,
+                                     kvImageNoFlags);
+    } else if (rotation == kRotate90DegreesClockwise || rotation == kRotate270DegreesClockwise) {
+        initError = vImageBuffer_Init(destination,
+                                     source->width,
+                                     source->height,
+                                     8 * 4,
+                                     kvImageNoFlags);
+    } else {
+        NSLog(@"Unsupported rotation constant: %d.", rotation);
+        free(destination);
+        return NULL;
+    }
+
+    if (initError != kvImageNoError) {
+        NSLog(@"Unable to initialize destination buffer.");
+        free(destination);
+        return NULL;
+    }
+
+    // 2. Apply the transform to `source` and write the result to `destination`.
+    Pixel_8888 backColor = {0, 0, 0, 0};
+    vImageRotate90_ARGB8888(source,
+                            destination,
+                            (uint8_t)rotation,
+                            backColor,
+                            kvImageNoFlags);
+
+    return destination;
+}
+```
+
 To learn more about rotation functions, see [`Image rotation`](image-rotation.md).
 
 ##### Rotate a Vimage Buffer By an Arbitrary Angle
@@ -165,6 +270,8 @@ The vImage library provides rotation functions that rotate an image by any angle
 ![A rotated photograph of some squashes.](/images/com.apple.accelerate/media-3682702@2x.png)
 
 The function below rotates a buffer by the specified angle and writes the result to the destination:
+
+**Swift**:
 
 ```swift
 static func rotateBuffer(source: vImage_Buffer,
@@ -187,6 +294,25 @@ static func rotateBuffer(source: vImage_Buffer,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void rotateBuffer(const vImage_Buffer *source,
+                  vImage_Buffer *destination,
+                  double angleInDegrees,
+                  const Pixel_8888 backgroundColor) {
+
+    float radians = (float)(angleInDegrees * M_PI / 180.0);
+
+    vImageRotate_ARGB8888(source,
+                          destination,
+                          NULL,
+                          radians,
+                          backgroundColor,
+                          kvImageBackgroundColorFill);
+}
+```
+
 ##### Scale a Vimage Buffer
 
 The vImage library provides functions to scale the contents of an image buffer. The scaling can either be uniform, where the operation preserves the image’s aspect ratio, or nonuniform, where the operation stretches or condenses the image. The image below shows four scaled versions of the same photograph, with the second and third image scaled nonuniformly:
@@ -194,6 +320,8 @@ The vImage library provides functions to scale the contents of an image buffer. 
 ![Four variations of a scaled photograph of flowers.](/images/com.apple.accelerate/media-3682710@2x.png)
 
 The vImage scale functions accept source and destination buffers as parameters and rescale the source to fill the destination buffer. The function below wraps [`vImageScale_ARGB8888(_:_:_:_:)`](vimagescale_argb8888(_:_:_:_:).md) to provide a simple interface to the scale operation:
+
+**Swift**:
 
 ```swift
 static func scaleBuffer(source: vImage_Buffer,
@@ -205,6 +333,18 @@ static func scaleBuffer(source: vImage_Buffer,
                              nil,
                              vImage_Flags(kvImageNoFlags))
     }
+}
+```
+
+**Objective-C**:
+
+```objc
+void scaleBuffer(const vImage_Buffer *source, vImage_Buffer *destination) {
+
+    vImageScale_ARGB8888(source,
+                         destination,
+                         NULL,
+                         kvImageNoFlags);
 }
 ```
 
@@ -229,6 +369,8 @@ To perform the translate transformation, set the *tx* and *ty* parameters of the
 ![A 3 by 3 matrix for translation.](/images/com.apple.accelerate/media-3682475@2x.png)
 
 The `scaleAndCenterBuffer(source:destination:to:backgroundColor:)` function accepts a scale parameter and sets that parameter as the *a* and *d* parameters of the matrix.
+
+**Swift**:
 
 ```swift
 static func scaleAndCenterBuffer(source: vImage_Buffer,
@@ -266,6 +408,41 @@ static func scaleAndCenterBuffer(source: vImage_Buffer,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void scaleAndCenterBuffer(const vImage_Buffer *source,
+                          vImage_Buffer *destination,
+                          double scale,
+                          const Pixel_8888 backgroundColor) {
+
+    // 1. Calculate the translate required to center the scaled buffer.
+    double sourceCenterX = (double)source->width / 2.0;
+    double sourceCenterY = (double)source->height / 2.0;
+
+    double destinationCenterX = (double)destination->width / 2.0;
+    double destinationCenterY = (double)destination->height / 2.0;
+
+    double tx = destinationCenterX - sourceCenterX * scale;
+    double ty = destinationCenterY - sourceCenterY * scale;
+
+    // 2. Create the affine transformation that represents the scale-translate.
+    vImage_CGAffineTransform vImageTransform = {
+        .a  = scale, .b = 0,
+        .c  = 0,     .d = scale,
+        .tx = tx,    .ty = ty
+    };
+
+    // 3. Apply the transform to `source` and write the result to `destination`.
+    vImageAffineWarpCG_ARGB8888(source,
+                                destination,
+                                NULL,
+                                &vImageTransform,
+                                backgroundColor,
+                                kvImageBackgroundColorFill);
+}
+```
+
 The image below shows the result of applying `scaleAndCenterBuffer(_:to:backgroundColor:)` with a scale of `0.25`:
 
 ![A photograph of flowers that is scaled down against a colored background.](/images/com.apple.accelerate/media-3682477@2x.png)
@@ -277,6 +454,8 @@ To learn more about affine transformation functions, see [`Applying affine trans
 For complex transformations, [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) allows you to concatenate a series of transformations. For example, to rotate and scale an image to fit within its unrotated bounding box, your code needs to translate, rotate, scale, and translate again.
 
 The `rotateAndScaleBuffer(source:destination:byAngleInDegrees:backgroundColor:)` function uses [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to build the matrix required to rotate and scale an image to fit inside the bounding box of the destination buffer.
+
+**Swift**:
 
 ```swift
 static func rotateAndScaleBuffer(source: vImage_Buffer,
@@ -325,6 +504,56 @@ static func rotateAndScaleBuffer(source: vImage_Buffer,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void rotateAndScaleBuffer(const vImage_Buffer *source,
+                          vImage_Buffer *destination,
+                          double angleInDegrees,
+                          const Pixel_8888 backgroundColor) {
+
+    // 1. Convert the specified angle in degrees to radians.
+    CGFloat radians = (CGFloat)(angleInDegrees * M_PI / 180.0);
+
+    // 2. Calculate the scale based on the bounding box of the rotated image.
+    CGRect sourceRect = CGRectMake(0, 0, source->width, source->height);
+    CGRect rotatedBoundingBox = CGRectApplyAffineTransform(
+        sourceRect, CGAffineTransformMakeRotation(radians));
+    CGFloat scaleX = (CGFloat)destination->width / rotatedBoundingBox.size.width;
+    CGFloat scaleY = (CGFloat)destination->height / rotatedBoundingBox.size.height;
+    CGFloat scale = scaleX < scaleY ? scaleX : scaleY;
+
+    // 3. Create the composite affine transformation.
+    CGAffineTransform cgTransform = CGAffineTransformIdentity;
+    cgTransform = CGAffineTransformTranslate(cgTransform,
+                                             (CGFloat)destination->width / 2,
+                                             (CGFloat)destination->height / 2);
+    cgTransform = CGAffineTransformRotate(cgTransform, radians);
+    cgTransform = CGAffineTransformScale(cgTransform, scale, scale);
+    cgTransform = CGAffineTransformTranslate(cgTransform,
+                                             -(CGFloat)source->width / 2,
+                                             -(CGFloat)source->height / 2);
+
+    // 4. Convert the `CGAffineTransform` to a `vImage_CGAffineTransform`.
+    vImage_CGAffineTransform vImageTransform = {
+        .a  = (double)cgTransform.a,
+        .b  = (double)cgTransform.b,
+        .c  = (double)cgTransform.c,
+        .d  = (double)cgTransform.d,
+        .tx = (double)cgTransform.tx,
+        .ty = (double)cgTransform.ty
+    };
+
+    // 5. Apply the transform to `source` and write the result to `destination`.
+    vImageAffineWarpCG_ARGB8888(source,
+                                destination,
+                                NULL,
+                                &vImageTransform,
+                                backgroundColor,
+                                kvImageBackgroundColorFill);
+}
+```
+
 The image below shows the result of applying `rotateAndScaleBuffer(_:byAngleInDegrees:backgroundColor:)` with an angle of 30°:
 
 ![A rotated photograph of flowers that is scaled down to fit within its bounding box.](/images/com.apple.accelerate/media-3682479@2x.png)
@@ -334,6 +563,8 @@ The image below shows the result of applying `rotateAndScaleBuffer(_:byAngleInDe
 The vImage rotate, scale, and affine transform functions use multiple-pass algorithms that save intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional, temporary storage.
 
 Pass `nil` to the function to have vImage create and manage this temporary storage for you. For example, the scale function below relies on the operation to manage the temporary buffer:
+
+**Swift**:
 
 ```swift
 static func scaleBuffer(source: vImage_Buffer,
@@ -348,9 +579,23 @@ static func scaleBuffer(source: vImage_Buffer,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void scaleBuffer(const vImage_Buffer *source, vImage_Buffer *destination) {
+
+    vImageScale_ARGB8888(source,
+                         destination,
+                         NULL,
+                         kvImageNoFlags);
+}
+```
+
 In cases where your code calls the function frequently (for example, when processing video), create and manage this temporary buffer yourself and reuse it across function calls. Reusing a buffer avoids vImage allocating the temporary storage with each call. Pass [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) to your geometry function to calculate the size, in bytes, of the temporary buffer, and use that value to allocate an [`UnsafeMutableRawPointer`](https://developer.apple.com/documentation/swift/unsafemutablerawpointer) structure.
 
 The version of the `scaleBuffer()` function below shows an example of creating a temporary buffer:
+
+**Swift**:
 
 ```swift
 static func scaleBuffer(source: vImage_Buffer,
@@ -378,6 +623,33 @@ static func scaleBuffer(source: vImage_Buffer,
                              temporaryBuffer,
                              vImage_Flags(kvImageNoFlags))
     }
+}
+```
+
+**Objective-C**:
+
+```objc
+void scaleBuffer(const vImage_Buffer *source, vImage_Buffer *destination) {
+
+    vImage_Error bufferSize = vImageScale_ARGB8888(source,
+                                                   destination,
+                                                   NULL,
+                                                   kvImageGetTempBufferSize);
+
+    if (bufferSize < 0) {
+        // Error calculating buffer size for scale operation.
+        return;
+    }
+
+    // In a real app, you reuse this buffer across multiple calls of `vImageScale_ARGB8888`.
+    void *temporaryBuffer = malloc((size_t)bufferSize);
+
+    vImageScale_ARGB8888(source,
+                         destination,
+                         temporaryBuffer,
+                         kvImageNoFlags);
+
+    free(temporaryBuffer);
 }
 ```
 

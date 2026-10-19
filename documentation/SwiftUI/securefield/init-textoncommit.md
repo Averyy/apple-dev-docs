@@ -27,6 +27,15 @@ init(_ titleKey: LocalizedStringKey, text: Binding<String>, onCommit: @escaping 
 - `text`: The text to display and edit.
 - `onCommit`: The action to perform when the user performs an action (usually pressing the Return key) while the secure field has focus.
 
+## See Also
+
+- [init(_:text:)](securefield/init(_:text:).md)
+  Creates a secure field with a prompt generated from a `Text`.
+- [init(_:text:prompt:)](securefield/init(_:text:prompt:).md)
+  Creates a secure field with a prompt generated from a `Text`.
+- [init(text: Binding<String>, prompt: Text?, label: () -> Label)](securefield/init(text:prompt:label:).md)
+  Creates a secure field with a prompt generated from a `Text`.
+
 
 ---
 

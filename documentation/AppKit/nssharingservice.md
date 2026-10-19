@@ -59,10 +59,10 @@ You can use [`NSSharingService`](nssharingservice.md) objects directly in your a
 - [protocol NSSharingServiceDelegate](nssharingservicedelegate.md)
   A set of methods that you use to customize the position and animation of a share sheet, and to be notified whether the item is successfully shared.
 ### Querying Service Availability
-- [class func sharingServices(forItems: [Any]) -> [NSSharingService]](nssharingservice/sharingservices(foritems:).md)
-  Returns a list of sharing services which could share all the provided items together.
 - [func canPerform(withItems: [Any]?) -> Bool](nssharingservice/canperform(withitems:).md)
   Returns whether the service can share all the specified items.
+- [class func sharingServices(forItems: [Any]) -> [NSSharingService]](nssharingservice/sharingservices(foritems:).md)
+  Returns a list of sharing services which could share all the provided items together.
 ### Getting the Service’s Details
 - [var accountName: String?](nssharingservice/accountname.md)
   The account name used for posting on Twitter or Sina Weibo.

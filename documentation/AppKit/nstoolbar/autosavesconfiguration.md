@@ -29,10 +29,6 @@ The default of this property is [`false`](https://developer.apple.com/documentat
 
 - [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)
   A Boolean value that indicates whether users can modify the contents of the toolbar.
-- [var configuration: [String : Any]](nstoolbar/configuration.md)
-  A dictionary containing the current configuration details for the toolbar.
-- [func setConfiguration([String : Any])](nstoolbar/setconfiguration(_:).md)
-  Specifies the new configuration details for the toolbar.
 
 
 ---

@@ -6,7 +6,7 @@ The following constants are used to describe special cases for a controller’s 
 
 ## Topics
 
-### Constants
+### Deprecated
 - [var NSMultipleValuesMarker: AnyObject](nsmultiplevaluesmarker.md)
   This marker indicates that a key’s value contains multiple values that differ.
 - [var NSNoSelectionMarker: AnyObject](nsnoselectionmarker.md)

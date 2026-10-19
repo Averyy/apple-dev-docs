@@ -6,11 +6,11 @@
 A Boolean value that indicates whether the app can provide live assistance services, such as sign language interpreting or captioning, during FaceTime calls.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
-- Mac Catalyst 27.2+ (Beta)
-- macOS 27.2+ (Beta)
-- visionOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- macOS 27.2+
+- visionOS 27.2+
 
 
 

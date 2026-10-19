@@ -24,12 +24,12 @@ func scrollRangeToVisible(_ range: NSRange)
 
 ## See Also
 
-- [var selectedRange: NSRange](uitextview/selectedrange.md)
-  The current selection range of the text view.
 - [var clearsOnInsertion: Bool](uitextview/clearsoninsertion.md)
   A Boolean value that indicates whether inserting text replaces the previous contents.
 - [var isSelectable: Bool](uitextview/isselectable.md)
   A Boolean value that indicates whether the text view is selectable.
+- [var selectedRange: NSRange](uitextview/selectedrange.md)
+  The current selection range of the text view.
 
 
 ---

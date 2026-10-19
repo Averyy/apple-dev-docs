@@ -16,7 +16,7 @@ enum VerticalAlignment
 
 ## Topics
 
-### Constants
+### Deprecated
 - [static var topAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/topalignment.md)
   Aligns adjacent blocks at their top.
 - [static var middleAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/middlealignment.md)

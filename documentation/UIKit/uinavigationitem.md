@@ -193,7 +193,7 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
 - [class UINavigationController](uinavigationcontroller.md)
   A container view controller that defines a stack-based scheme for navigating hierarchical content.
 - [class UINavigationBar](uinavigationbar.md)
-  Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
+  A region that displays the title and controls provided by navigation items.
 - [class UITabBarController](uitabbarcontroller.md)
   A container view controller that manages a multiselection interface, where the selection determines which child view controller to display.
 - [class UITabBar](uitabbar.md)
@@ -210,7 +210,7 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
 - [class UIPageViewController](uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
 - [class UIArrangementViewController](uiarrangementviewcontroller.md)
-  A view controller that presents its container view controllers through an arrangement.
+  A view controller that dynamically lays out primary and secondary view controllers based on size class, orientation, and reserved regions.
 
 
 ---

@@ -65,21 +65,10 @@ For more information about working with external documents, see [`Providing acce
 ### Configuring a document picker
 - [var shouldShowFileExtensions: Bool](uidocumentpickerviewcontroller/shouldshowfileextensions.md)
   A Boolean value that determines whether the browser always shows file extensions.
-- [var documentPickerMode: UIDocumentPickerMode](uidocumentpickerviewcontroller/documentpickermode.md)
-  The type of file transfer operation that the document picker uses.
-- [enum UIDocumentPickerMode](uidocumentpickermode.md)
-  Modes that define the type of file transfer operation that the document picker uses.
 ### Deprecated
-- [init(documentTypes: [String], in: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(documenttypes:in:).md)
-  Creates and returns a document picker that can open or copy the specified file types.
-- [init(url: URL, in: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(url:in:).md)
-  Initializes and returns a document picker that can export or copy the specified document.
-- [init(urls: [URL], in: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:in:).md)
-  Creates and returns a document picker that can export or move the specified documents.
+- [Deprecated symbols](uidocumentpickerviewcontroller-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
-- [init(URL: URL, inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(url:inmode:).md)
-- [init(URLs: [URL], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:inmode:).md)
-- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(documenttypes:inmode:).md)
 - [convenience init(forExportingURLs: [URL])](uidocumentpickerviewcontroller/init(forexportingurls:).md)
 - [init(forExportingURLs: [URL], asCopy: Bool)](uidocumentpickerviewcontroller/init(forexportingurls:ascopy:).md)
 

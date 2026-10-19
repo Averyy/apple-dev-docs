@@ -34,6 +34,8 @@ The [`CGEvent`](https://developer.apple.com/documentation/coregraphics/cgevent) 
   An opaque Carbon type associated with this event.
 - [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
+- [var context: NSGraphicsContext?](nsevent/context.md)
+  The display graphics context for this event.
 
 
 ---

@@ -44,8 +44,6 @@ enum CellType
   A constant for specifying the position of a button’s image relative to its title.
 - [enum NSImageScaling](nsimagescaling.md)
   Constants that specify a cell’s image scaling behavior.
-- [typealias StateValue](nscell/statevalue.md)
-  Constants for specifying a cell’s state and are used mostly for buttons.
 - [NSCell.StyleMask](nscell/stylemask.md)
   Constants for specifying what happens when a button is pressed or is displaying its alternate state.
 - [enum NSControlTint](nscontroltint.md)

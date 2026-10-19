@@ -21,6 +21,11 @@ nonisolated
 init()
 ```
 
+## See Also
+
+- [init(tint: Color)](linearprogressviewstyle/init(tint:).md)
+  Creates a linear progress view style with a tint color.
+
 
 ---
 

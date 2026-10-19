@@ -40,7 +40,7 @@ let planar2 = vImage.PixelBuffer<vImage.PlanarF>(
 let interleaved = vImage.PixelBuffer<vImage.InterleavedFx3>(
     planarBuffers: [planar0, planar1, planar2])
 
-// Prints "[0.1, 0.3, 0.5, 0.2, 0.4, 0.6]"
+// Prints "[0.1, 0.3, 0.5, 0.2, 0.4, 0.6]".
 print(interleaved.array)
 ```
 

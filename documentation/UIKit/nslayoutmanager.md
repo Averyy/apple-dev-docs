@@ -295,7 +295,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
   Constants that describe the text layout orientation.
 ### Deprecated
 - [Deprecated symbols](nslayoutmanager-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

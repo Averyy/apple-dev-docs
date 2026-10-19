@@ -37,10 +37,10 @@ The following table shows and describes the system cursors, and indicates the cl
 | ![resize-up-and-down cursor](/images/com.apple.appkit/media-2555629@2x.png) | The resize-up-and-down cursor ([`resizeUpDown`](nscursor/resizeupdown.md)) |
 | ![disappearing item cursor](/images/com.apple.appkit/media-2555632@2x.png) | The disappearing item cursor ([`disappearingItem`](nscursor/disappearingitem.md)) |
 | ![disappearing item cursor](/images/com.apple.appkit/media-2555638@2x.png) | The I-Beam text cursor for vertical layout ([`iBeamCursorForVerticalLayout`](nscursor/ibeamcursorforverticallayout.md)). |
-| ![None](/images/com.apple.appkit/media-2555643@2x.png) | The not allowed cursor ([`operationNotAllowed`](nscursor/operationnotallowed.md)). |
-| ![None](/images/com.apple.appkit/media-2555647@2x.png) | The drag link cursor ([`dragLink`](nscursor/draglink.md)). |
-| ![None](/images/com.apple.appkit/media-2555652@2x.png) | The drag copy cursor ([`dragCopy`](nscursor/dragcopy.md)). |
-| ![None](/images/com.apple.appkit/media-2555658@2x.png) | The contextual menu cursor ([`contextualMenu`](nscursor/contextualmenu.md)). |
+| ![operation not allowed cursor](/images/com.apple.appkit/media-2555643@2x.png) | The not allowed cursor ([`operationNotAllowed`](nscursor/operationnotallowed.md)). |
+| ![drag link cursor](/images/com.apple.appkit/media-2555647@2x.png) | The drag link cursor ([`dragLink`](nscursor/draglink.md)). |
+| ![drag copy cursor](/images/com.apple.appkit/media-2555652@2x.png) | The drag copy cursor ([`dragCopy`](nscursor/dragcopy.md)). |
+| ![contextual menu cursor](/images/com.apple.appkit/media-2555658@2x.png) | The contextual menu cursor ([`contextualMenu`](nscursor/contextualmenu.md)). |
 
 In macOS 10.3 and later, cursor size is no longer limited to 16 by 16 pixels.
 
@@ -102,8 +102,6 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
 ### Retrieving cursor instances
 - [class var current: NSCursor](nscursor/current.md)
   Returns the application’s current cursor.
-- [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
-  Returns the current system cursor.
 - [class var arrow: NSCursor](nscursor/arrow.md)
   Returns the default cursor, the arrow cursor.
 - [class var contextualMenu: NSCursor](nscursor/contextualmenu.md)
@@ -132,18 +130,6 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
   Returns the zoom-in cursor.
 - [class var zoomOut: NSCursor](nscursor/zoomout.md)
   Returns the zoom-out cursor.
-- [class var resizeDown: NSCursor](nscursor/resizedown.md)
-  Returns the resize-down system cursor.
-- [class var resizeLeft: NSCursor](nscursor/resizeleft.md)
-  Returns the resize-left system cursor.
-- [class var resizeLeftRight: NSCursor](nscursor/resizeleftright.md)
-  Returns the resize-left-and-right system cursor.
-- [class var resizeRight: NSCursor](nscursor/resizeright.md)
-  Returns the resize-right system cursor.
-- [class var resizeUp: NSCursor](nscursor/resizeup.md)
-  Returns the resize-up system cursor.
-- [class var resizeUpDown: NSCursor](nscursor/resizeupdown.md)
-  Returns the resize-up-and-down system cursor.
 - [class var columnResize: NSCursor](nscursor/columnresize.md)
   Returns the cursor for resizing a column (vertical divider) in either direction.
 - [class func columnResize(directions: NSHorizontalDirection.Set) -> NSCursor](nscursor/columnresize(directions:).md)
@@ -160,20 +146,8 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
 - [AppKit Versions for NSCursor Bug Fixes](appkit-versions-for-nscursor-bug-fixes.md)
   The version of the AppKit framework containing a specific bug fix.
 ### Deprecated
-- [convenience init(image: NSImage, foregroundColorHint: NSColor?, backgroundColorHint: NSColor?, hotSpot: NSPoint)](nscursor/init(image:foregroundcolorhint:backgroundcolorhint:hotspot:).md)
-  Initializes the cursor with the specified image and hot spot.
-- [func mouseEntered(with: NSEvent)](nscursor/mouseentered(with:).md)
-  Automatically sent to the receiver when the cursor enters a cursor rectangle owned by the receiver.
-- [func setOnMouseEntered(Bool)](nscursor/setonmouseentered(_:).md)
-  Specifies whether the receiver accepts [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) events.
-- [var isSetOnMouseEntered: Bool](nscursor/issetonmouseentered.md)
-  A Boolean value indicating whether the receiver becomes current on receiving a [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) message.
-- [func mouseExited(with: NSEvent)](nscursor/mouseexited(with:).md)
-  Automatically sent to the receiver when the cursor exits a cursor rectangle owned by the receiver.
-- [func setOnMouseExited(Bool)](nscursor/setonmouseexited(_:).md)
-  Sets whether the receiver accepts [`mouseExited(with:)`](nscursor/mouseexited(with:).md) events.
-- [var isSetOnMouseExited: Bool](nscursor/issetonmouseexited.md)
-  A Boolean value indicating whether the receiver becomes current when it receives a [`mouseExited(with:)`](nscursor/mouseexited(with:).md) message.
+- [Deprecated symbols](nscursor-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

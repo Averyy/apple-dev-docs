@@ -33,6 +33,8 @@ Note that [`orderOut(_:)`](nswindow/orderout(_:).md) no longer needs to be calle
   The alert’s suppression checkbox.
 - [var showsSuppressionButton: Bool](nsalert/showssuppressionbutton.md)
   Specifies whether the alert includes a suppression checkbox, which you can employ to allow a user to opt out of seeing the alert again.
+- [func beginSheetModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsalert/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
+  Runs the alert modally as an alert sheet attached to a specified window.
 
 
 ---

@@ -30,14 +30,6 @@ The returned list includes UTIs all file types supported by this image represent
   Returns a Boolean value that indicates whether the receiver can initialize itself from the data on the specified pasteboard.
 - [class var imageUnfilteredTypes: [String]](nsimagerep/imageunfilteredtypes.md)
   Returns an array of UTI strings identifying the image types supported directly by the ime representation.
-- [class func imageFileTypes() -> [String]](nsimagerep/imagefiletypes.md)
-  Returns the file types supported by the image representation class or one of its subclasses.
-- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imagepasteboardtypes.md)
-  Returns the pasteboard types supported by the image representation class or one of its subclasses.
-- [class func imageUnfilteredFileTypes() -> [String]](nsimagerep/imageunfilteredfiletypes.md)
-  Returns the list of file types supported directly by the image representation.
-- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imageunfilteredpasteboardtypes.md)
-  Returns the list of pasteboard types supported directly by the image representation.
 
 
 ---

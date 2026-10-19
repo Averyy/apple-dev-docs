@@ -20,20 +20,18 @@ The kind of the region.
 var kind: ReservedRegion.Kind { get }
 ```
 
+#### Discussion
+
+The kind tells you how to respond to the region. Place your content outside an [`occlusion`](reservedregion/kind-swift.struct/occlusion.md) region, and arrange it on both sides of a [`division`](reservedregion/kind-swift.struct/division.md) region.
+
 ## See Also
 
 - [var id: ReservedRegion.ID](reservedregion/id-swift.property.md)
   The identifier of the region.
 - [ReservedRegion.ID](reservedregion/id-swift.struct.md)
   An identifier for a reserved region.
-- [var frame: CGRect](reservedregion/frame.md)
-  The rect of the region in the view’s coordinate space, including the margins.
-- [var isActive: Bool](reservedregion/isactive.md)
-  Whether the region is active.
 - [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
   A kind of reserved region.
-- [var margins: EdgeInsets](reservedregion/margins.md)
-  The margins included in the frame around the rect for interactive content.
 
 
 ---

@@ -20,6 +20,11 @@ The valid values for `controlTint` are described in [`NSControlTint`](nscontrolt
 
 > **Note**:  This method has no effect in macOS 10.7 and later.
 
+## See Also
+
+- [var arrowsPosition: NSScroller.ArrowPosition](nsscroller/arrowsposition.md)
+  The location of the scroll buttons within the scroller, as described in [`NSScroller.ArrowPosition`](nsscroller/arrowposition.md).
+
 
 ---
 

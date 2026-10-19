@@ -23,8 +23,6 @@ This exception is thrown if a view controller or the app returns `0` instead of 
 
 ## See Also
 
-- [func application(UIApplication, supportedInterfaceOrientationsFor: UIWindow?) -> UIInterfaceOrientationMask](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md)
-  Asks the delegate for the interface orientations to use for the view controllers in the specified window.
 - [enum UIInterfaceOrientation](uiinterfaceorientation.md)
   Constants that specify the orientation of the app’s user interface.
 - [struct UIInterfaceOrientationMask](uiinterfaceorientationmask.md)

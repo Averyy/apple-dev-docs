@@ -22,7 +22,7 @@ var BNNSQuantizerFunctionQuantize: BNNSQuantizerFunction { get }
 
 #### Discussion
 
-The following code quantizes a single-precision matrix to a 16-bit integer matrix. The code applies the scale along the zeroth axis and, therefore, the scale tensor contains four elements.
+The following code quantizes a single-precision matrix to a 16-bit integer matrix. The code applies the scale along the zeroth axis and, therefore, the scale tensor contains four elements:
 
 ```swift
 static func quantize() {
@@ -78,8 +78,8 @@ static func quantize() {
     
     
     // Prints:
-    //  [1, 20, 300, 4000,
-    //   5, 60, 700, 8000]
+    //  "[1, 20, 300, 4000,
+    //   5, 60, 700, 8000]".
     print(Array(outputData))
     
     inputData.deallocate()

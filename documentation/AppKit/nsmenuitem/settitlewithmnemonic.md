@@ -18,6 +18,11 @@ func setTitleWithMnemonic(_ stringWithAmpersand: String)
 
 Use an ampersand character to mark the character (the one following the ampersand) to be designated.
 
+## See Also
+
+- [static func sectionHeader(withTitle: String) -> NSMenuItem](nsmenuitem/sectionheader(withtitle:).md)
+  Returns a menu item representing a section header for a logical grouping of menu commands.
+
 
 ---
 

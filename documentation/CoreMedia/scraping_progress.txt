@@ -1,4 +1,4 @@
 Completed scraping Core Media!
-Total pages scraped: 2225
-Pages skipped (unchanged): 87
+Total pages scraped: 1
+Pages skipped (unchanged): 2310
 Pages failed: 0

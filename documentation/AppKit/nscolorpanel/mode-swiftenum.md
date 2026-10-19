@@ -35,6 +35,9 @@ enum Mode
   The color wheel mode.
 - [NSColorPanel.Mode.crayon](nscolorpanel/mode-swift.enum/crayon.md)
   The crayon picker mode.
+### Deprecated
+- [Deprecated symbols](mode-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [init?(rawValue: Int)](nscolorpanel/mode-swift.enum/init(rawvalue:).md)
 

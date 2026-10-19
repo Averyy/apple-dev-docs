@@ -30,8 +30,8 @@ This method is the entry point for inserting text typed by the user and is gener
 
 - [var typingAttributes: [NSAttributedString.Key : Any]](nstextview/typingattributes.md)
   The receiver’s typing attributes.
-- [var allowedInputSourceLocales: [String]?](nstextview/allowedinputsourcelocales.md)
-  An array of locale identifiers representing input sources that are allowed to be enabled when the receiver has the keyboard focus.
+- [func toggleTraditionalCharacterShape(Any?)](nstextview/toggletraditionalcharactershape(_:).md)
+  Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
 
 
 ---

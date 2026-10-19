@@ -81,6 +81,8 @@ struct Tab<Value, Content, Label>
   A container that you can use to add hierarchy within a tab view.
 - [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
   Sets the style for the tab view within the current environment.
+- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
+  Sets the tab bar item associated with this view.
 
 
 ---

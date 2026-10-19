@@ -6,7 +6,7 @@
 Removes a user video control from the video clock device.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

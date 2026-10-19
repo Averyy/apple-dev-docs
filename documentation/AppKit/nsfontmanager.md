@@ -126,8 +126,8 @@ Font collections are managed by [`NSFontManager`](nsfontmanager.md).
 - [func convertAttributes([String : Any]) -> [String : Any]](nsfontmanager/convertattributes(_:).md)
   Converts attributes in response to an object initiating an attribute change, typically the Font panel or Font menu.
 ### Deprecated
-- [Deprecated Symbols](nsfontmanager-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+- [Deprecated symbols](nsfontmanager-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

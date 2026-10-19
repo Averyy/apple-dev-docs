@@ -6,7 +6,7 @@
 Sets the value indicating the box’s MIDI support
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

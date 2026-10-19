@@ -23,7 +23,7 @@ struct AverageStatistics<DimensionType> where DimensionType : Dimension
 
 #### Discussion
 
-`AverageStatistics` provides the average value alongside a sample count and standard deviation. When statistical data is unavailable, `count` is `0` and `standardDeviation` is negative.
+`AverageStatistics` provides the average value alongside a sample count and standard deviation. When statistical data is unavailable, `count` is `0` and `standardDeviation` is `nil`.
 
 You encounter `AverageStatistics` as the type of certain metric properties, such as [`value`](suspendedmemorymetric/value.md) and [`averageMemory`](signpostintervalmetric/averagememory.md):
 
@@ -31,7 +31,7 @@ You encounter `AverageStatistics` as the type of certain metric properties, such
 let statistics = metric.value // AverageStatistics<UnitInformationStorage>
 print(statistics.average)           // Measurement<UnitInformationStorage>
 print(statistics.count)             // Int — number of samples
-print(statistics.standardDeviation) // Double — negative if unavailable
+print(statistics.standardDeviation) // Double? — nil if unavailable
 ```
 
 ## Topics

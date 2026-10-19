@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The secondary view of the arrangement.
+The secondary view to lay out in an arrangement view.
 
 **Availability**:
 - iOS 27.1+
@@ -19,6 +19,15 @@ The secondary view of the arrangement.
 ```swift
 var secondary: ArrangementViewStyleConfiguration.Secondary { get }
 ```
+
+## See Also
+
+- [var primary: ArrangementViewStyleConfiguration.Primary](arrangementviewstyleconfiguration/primary-swift.property.md)
+  The primary view to lay out in an arrangement view.
+- [ArrangementViewStyleConfiguration.Primary](arrangementviewstyleconfiguration/primary-swift.struct.md)
+  A type-erased view of the primary content of an arrangement view.
+- [ArrangementViewStyleConfiguration.Secondary](arrangementviewstyleconfiguration/secondary-swift.struct.md)
+  A type-erased view of the secondary content of an arrangement view.
 
 
 ---

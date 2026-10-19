@@ -26,7 +26,7 @@ The output vector, `C`.
 
 #### Discussion
 
-This function calculates the element-wise division of scalar value `A` and vector `B`, and writes the result to vector `C`.
+This function calculates the element-wise division of scalar value `A` and vector `B`, and writes the result to vector `C`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

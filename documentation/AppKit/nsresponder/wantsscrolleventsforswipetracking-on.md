@@ -30,10 +30,6 @@ Implement this method in your swipe controller and return [`true`](https://devel
 
 - [func trackSwipeEvent(options: NSEvent.SwipeTrackingOptions, dampenAmountThresholdMin: CGFloat, max: CGFloat, usingHandler: (CGFloat, NSEvent.Phase, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)](nsevent/trackswipeevent(options:dampenamountthresholdmin:max:usinghandler:).md)
   Allows tracking and user interface feedback of scroll wheel events.
-- [func beginGesture(with: NSEvent)](nsresponder/begingesture(with:).md)
-  Informs the receiver that the user has begun a touch gesture.
-- [func endGesture(with: NSEvent)](nsresponder/endgesture(with:).md)
-  Informs the receiver that the user has ended a touch gesture.
 - [func magnify(with: NSEvent)](nsresponder/magnify(with:).md)
   Informs the receiver that the user has begun a pinch gesture.
 - [func rotate(with: NSEvent)](nsresponder/rotate(with:).md)

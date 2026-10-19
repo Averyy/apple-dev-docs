@@ -24,18 +24,8 @@ If the button has no border, setting this property has no effect on the button�
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nsbuttoncell/backgroundcolor.md)
-  The background color of the button.
-- [var bezelStyle: NSButton.BezelStyle](nsbuttoncell/bezelstyle.md)
-  The appearance of the button’s border, if it has one.
-- [var imageDimsWhenDisabled: Bool](nsbuttoncell/imagedimswhendisabled.md)
-  A Boolean value that indicates if the button’s image and text appear “dim” when the button is disabled.
-- [var isOpaque: Bool](nsbuttoncell/isopaque.md)
-  A Boolean value that indicates if the button is opaque.
-- [var isTransparent: Bool](nsbuttoncell/istransparent.md)
-  A Boolean value that indicates if the button is transparent.
-- [var showsBorderOnlyWhileMouseInside: Bool](nsbuttoncell/showsborderonlywhilemouseinside.md)
-  A Boolean value that indicates if the button displays its border only when the pointer is over it.
+- [var keyEquivalentFont: NSFont?](nsbuttoncell/keyequivalentfont.md)
+  The font used to draw the button’s key equivalent.
 
 
 ---

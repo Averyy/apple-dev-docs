@@ -40,8 +40,6 @@ enum FrameResizeDirection
 
 - [class var current: NSCursor](nscursor/current.md)
   Returns the application’s current cursor.
-- [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
-  Returns the current system cursor.
 - [class var arrow: NSCursor](nscursor/arrow.md)
   Returns the default cursor, the arrow cursor.
 - [class var contextualMenu: NSCursor](nscursor/contextualmenu.md)
@@ -68,6 +66,8 @@ enum FrameResizeDirection
   Returns the pointing-hand system cursor.
 - [class var zoomIn: NSCursor](nscursor/zoomin.md)
   Returns the zoom-in cursor.
+- [class var zoomOut: NSCursor](nscursor/zoomout.md)
+  Returns the zoom-out cursor.
 
 
 ---

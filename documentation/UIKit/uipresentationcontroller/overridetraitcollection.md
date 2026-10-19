@@ -38,6 +38,12 @@ The *presenting* view controller is not affected by use of this property.
 
 The default value of the [`overrideTraitCollection`](uipresentationcontroller/overridetraitcollection.md) property is `nil`, which results in the full iOS trait environment being used by the presented view controller.
 
+## See Also
+
+- [var traitOverrides: UITraitOverrides](uipresentationcontroller/traitoverrides-629ka.md)
+- [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
+
 
 ---
 

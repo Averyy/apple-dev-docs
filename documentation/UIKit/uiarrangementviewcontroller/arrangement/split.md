@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-The default split arrangement.
+An arrangement that places the primary and secondary views side by side along one or more axes.
 
 **Availability**:
 - iOS 27.1+
@@ -18,10 +18,14 @@ The default split arrangement.
 static var split: UISplitArrangement { get }
 ```
 
+#### Discussion
+
+For more information about an overlay arrangement, see [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
+
 ## See Also
 
 - [static var overlay: UIOverlayArrangement](uiarrangementviewcontroller/arrangement/overlay.md)
-  The default overlay arrangement.
+  An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
 
 
 ---

@@ -31,6 +31,8 @@ nonisolated init(selection: Binding<SelectionValue>, @ContentBuilder content: ()
 
 - [init(_:selection:content:)](picker/init(_:selection:content:).md)
   Creates a picker that generates its label from a localized string resource.
+- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](picker/init(selection:label:content:).md)
+  Creates a picker that displays a custom label.
 
 
 ---

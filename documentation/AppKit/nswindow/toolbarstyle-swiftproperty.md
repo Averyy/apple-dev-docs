@@ -24,8 +24,6 @@ The default value is [`NSWindow.ToolbarStyle.automatic`](nswindow/toolbarstyle-s
   Returns a new instance of a given standard window button, sized appropriately for a given window style.
 - [func standardWindowButton(NSWindow.ButtonType) -> NSButton?](nswindow/standardwindowbutton(_:).md)
   Returns the window button of a given window button kind in the window’s view hierarchy.
-- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
-  A Boolean value that indicates whether the toolbar control button is currently displayed.
 - [var titlebarAppearsTransparent: Bool](nswindow/titlebarappearstransparent.md)
   A Boolean value that indicates whether the title bar draws its background.
 - [NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.enum.md)

@@ -119,8 +119,6 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 ### Inserting text
 - [var allowedInputSourceLocales: [String]?](nstextview/allowedinputsourcelocales.md)
   An array of locale identifiers representing input sources that are allowed to be enabled when the receiver has the keyboard focus.
-- [func insertText(Any)](nstextview/inserttext(_:).md)
-  Inserts `aString` into the receiver’s text at the insertion point if there is one, otherwise replacing the selection.
 ### Setting behavioral attributes
 - [var allowsUndo: Bool](nstextview/allowsundo.md)
   A Boolean value that indicates whether the receiver allows undo.
@@ -237,8 +235,6 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
   Sets the receiver to use only required ligatures when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view.
 - [func useAllLigatures(Any?)](nstextview/useallligatures(_:).md)
   Sets the receiver to use all ligatures available for the fonts and languages used when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view.
-- [func toggleTraditionalCharacterShape(Any?)](nstextview/toggletraditionalcharactershape(_:).md)
-  Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
 ### Clicking and pasting
 - [func clicked(onLink: Any, at: Int)](nstextview/clicked(onlink:at:).md)
   Causes the text view to act as if the user clicked on some text with the given link as the value of a link attribute associated with the text.
@@ -444,6 +440,11 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 - [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](nstextview/candidatelisttouchbaritem.md)
 - [func updateTextTouchBarItems()](nstextview/updatetexttouchbaritems.md)
 - [func updateTouchBarItemIdentifiers()](nstextview/updatetouchbaritemidentifiers.md)
+### Deprecated
+- [func insertText(Any)](nstextview/inserttext(_:).md)
+  Inserts `aString` into the receiver’s text at the insertion point if there is one, otherwise replacing the selection.
+- [func toggleTraditionalCharacterShape(Any?)](nstextview/toggletraditionalcharactershape(_:).md)
+  Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
 ### Structures
 - [NSTextView.DidBeginEditingMessage](nstextview/didbegineditingmessage.md)
 - [NSTextView.DidChangeMessage](nstextview/didchangemessage.md)

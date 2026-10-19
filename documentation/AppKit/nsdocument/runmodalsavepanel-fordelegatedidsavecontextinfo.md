@@ -37,8 +37,6 @@ For backward binary compatibility with Mac OS v10.3 and earlier, the default imp
 
 - [func prepareSavePanel(NSSavePanel) -> Bool](nsdocument/preparesavepanel(_:).md)
   Tells the document to customize the specified Save panel.
-- [var shouldRunSavePanelWithAccessoryView: Bool](nsdocument/shouldrunsavepanelwithaccessoryview.md)
-  A Boolean value that indicates whether the document’s Save panel displays a list of supported writable document types.
 - [var fileTypeFromLastRunSavePanel: String?](nsdocument/filetypefromlastrunsavepanel.md)
   The file type that was last selected in the Save panel.
 - [var fileNameExtensionWasHiddenInLastRunSavePanel: Bool](nsdocument/filenameextensionwashiddeninlastrunsavepanel.md)

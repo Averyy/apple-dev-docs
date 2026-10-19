@@ -26,10 +26,10 @@ Use these constants to specify the placement of the search bar that belongs to t
 ### Constants
 - [UINavigationItem.SearchBarPlacement.automatic](uinavigationitem/searchbarplacement-swift.enum/automatic.md)
   A constant that places the search bar according to the current layout.
-- [static var inline: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum/inline.md)
-  A constant that places the search bar on the trailing edge of the navigation bar, inline with the other content.
 - [UINavigationItem.SearchBarPlacement.stacked](uinavigationitem/searchbarplacement-swift.enum/stacked.md)
   A constant that stacks the search bar vertically below the other content in the navigation bar.
+- [static var inline: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum/inline.md)
+  A constant that places the search bar on the trailing edge of the navigation bar, inline with the other content.
 ### Enumeration Cases
 - [UINavigationItem.SearchBarPlacement.integrated](uinavigationitem/searchbarplacement-swift.enum/integrated.md)
   The navigation bar will place the search bar inline with other content, on the trailing edge. On iPhone, when the navigation bar belongs to a UINavigationController, the search bar may be integrated into the toolbar.

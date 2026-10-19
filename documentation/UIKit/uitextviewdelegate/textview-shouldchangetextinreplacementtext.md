@@ -34,8 +34,18 @@ The text view calls this method whenever the user types a new character or delet
 
 ## See Also
 
-- [func textViewDidChange(UITextView)](uitextviewdelegate/textviewdidchange(_:).md)
-  Tells the delegate when the user changes the text or attributes in the specified text view.
+- [func textView(UITextView, shouldInteractWith: NSTextAttachment, in: NSRange, interaction: UITextItemInteraction) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:interaction:)-5qha9.md)
+  Asks the delegate whether the specified text view allows the specified type of user interaction with the provided text attachment in the specified range of text.
+- [func textView(UITextView, shouldInteractWith: URL, in: NSRange, interaction: UITextItemInteraction) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:interaction:)-622ub.md)
+  Asks the delegate whether the specified text view allows the specified type of user interaction with the specified URL in the specified range of text.
+- [func textView(UITextView, shouldInteractWith: NSTextAttachment, in: NSRange) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:)-97zx6.md)
+  Asks the delegate whether the specified text view allows user interaction with the provided text attachment in the specified range of text.
+- [func textView(UITextView, shouldInteractWith: URL, in: NSRange) -> Bool](uitextviewdelegate/textview(_:shouldinteractwith:in:)-98tho.md)
+  Asks the delegate whether the specified text view allows user interaction with the specified URL in the specified range of text.
+- [enum UITextItemInteraction](uitextiteminteraction.md)
+  Constants that indicate the type of interaction the user expects to have with a URL or text attachment.
+- [func textView(UITextView, editMenuForTextIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextviewdelegate/textview(_:editmenufortextin:suggestedactions:).md)
+  Asks the delegate for the menu to display in the text view, based on the text range and actions the system provides.
 
 
 ---

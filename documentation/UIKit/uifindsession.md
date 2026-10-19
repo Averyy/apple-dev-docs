@@ -41,6 +41,8 @@ If you want to manage the state yourself or already have a class that implements
   The information the find panel includes in the summary of found results.
 - [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
+- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
+  A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 ### Managing session interactions
 - [func performSearch(query: String, options: UITextSearchOptions?)](uifindsession/performsearch(query:options:).md)
   Initiates a search for the query string you provide.
@@ -52,9 +54,6 @@ If you want to manage the state yourself or already have a class that implements
   Updates the highlighted result to the next or previous match.
 - [func invalidateFoundResults()](uifindsession/invalidatefoundresults.md)
   Invalidates the found ranges and updates the system find panel.
-### Deprecated
-- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
-  A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
 ## Relationships
 

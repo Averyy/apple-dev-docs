@@ -14,7 +14,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### Known Issues
 
-- Projects that use APIs specific to iOS 27.1 show compile errors when building for Mac Catalyst (“undeclared identifier”, “not found”, “has no member”, “cannot find”, etc). (185924957) **Workaround:** Use build-time conditionals like `#if !targetEnvironment(macCatalyst)` (Swift) or `#if !TARGET_OS_MACCATALYST` (ObjC) to isolate affected code.
+- Projects that use APIs specific to iOS 27.1 show compile errors when building for Mac Catalyst (“undeclared identifier”, “not found”, “has no member”, “cannot find”, etc.). (185924957) **Workaround:** Use build-time conditionals like `#if !targetEnvironment(macCatalyst)` (Swift) or `#if !TARGET_OS_MACCATALYST` (Objective-C) to isolate affected code.
 - Projects that target iOS 27.1 show no Mac Catalyst run destination available. (187046347) **Workaround:** Add a Mac Catalyst 27.0 minimum deployment in target settings.
 
 ##### Previews
@@ -30,10 +30,11 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Initial Simulator launch can take several minutes. (187708500)
 - StandBy is unavailable in the iPhone Duo Simulator runtime. (187708663)
 - Running and debugging most app extensions is unavailable in the iPhone Duo Simulator runtime. (187708767)
+- In the iPhone Duo simulator, an app using `CameraCaptureAccessory` can use both displays at the same time without an active camera capture session. (190155353)
 
 ## See Also
 
-- [Xcode 27.2 Beta 3 Release Notes](xcode-27_2-release-notes.md)
+- [Xcode 27.2 RC Release Notes](xcode-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 27 Release Notes](xcode-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

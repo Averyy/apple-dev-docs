@@ -95,7 +95,8 @@ Widgets, watch complications, Live Activities, and controls are small and requir
   Use SwiftUI animations to indicate data updates in your widgets and Live Activities.
 - [Linking to specific app scenes from your widget or Live Activity](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md)
   Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
-- [func widgetURL(URL?) -> some View\n](../swiftui/view/widgeturl(_:).md)
+- [func widgetURL(URL?) -> some View
+](../swiftui/view/widgeturl(_:).md)
   Sets the URL to open in the containing app when the user clicks the widget.
 ### Accessibility
 - [Adding accessible descriptions to widgets and Live Activities](../activitykit/adding-accessible-descriptions-to-widgets-and-live-activities.md)

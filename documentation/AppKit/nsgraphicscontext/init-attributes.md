@@ -32,10 +32,6 @@ Use this method to create a graphics context for a window or bitmap destination.
   Creates a new graphics context using the specified bitmap image representation object as the context destination.
 - [init(cgContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-9cbad.md)
   Creates a new graphics context from the specified Core Graphics context and the initial flipped state.
-- [init(window: NSWindow)](nsgraphicscontext/init(window:).md)
-  Creates a new graphics context for drawing into a window.
-- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](nsgraphicscontext/init(graphicsport:flipped:).md)
-  Creates a new graphics context from the specified graphics port.
 
 
 ---

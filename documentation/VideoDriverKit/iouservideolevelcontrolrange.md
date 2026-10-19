@@ -6,7 +6,7 @@
 A control that supports a range of floating-point values.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

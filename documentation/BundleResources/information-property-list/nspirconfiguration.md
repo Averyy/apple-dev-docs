@@ -6,9 +6,9 @@
 The URLs used for a PIR server to support a URL filter or Live Caller ID lookup app.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
-- macOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
+- macOS 27.2+
 
 
 

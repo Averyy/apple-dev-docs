@@ -40,6 +40,8 @@ struct UITraitOverrides
 ## See Also
 
 - [var traitOverrides: UITraitOverrides](uipresentationcontroller/traitoverrides-629ka.md)
+- [var overrideTraitCollection: UITraitCollection?](uipresentationcontroller/overridetraitcollection.md)
+  Interface traits for the presented view controller, to use in place of traits from the iOS environment.
 
 
 ---

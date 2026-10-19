@@ -1,12 +1,16 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func gState() -> Int](nswindow/gstate.md)
   Returns the window’s graphics state object.
 - [func canStoreColor() -> Bool](nswindow/canstorecolor.md)
@@ -31,7 +35,11 @@ Review unsupported symbols and their replacements.
   Specifies whether the window is to optimize focusing and drawing when displaying its views.
 - [convenience init?(windowRef: UnsafeMutableRawPointer)](nswindow/init(windowref:).md)
   Returns a Cocoa window created from a Carbon window.
-### Properties
+- [func disableScreenUpdatesUntilFlush()](nswindow/disablescreenupdatesuntilflush.md)
+  Disables the window’s screen updates until the window is flushed.
+- [func drag(NSImage, at: NSPoint, offset: NSSize, event: NSEvent, pasteboard: NSPasteboard, source: Any, slideBack: Bool)](nswindow/drag(_:at:offset:event:pasteboard:source:slideback:).md)
+  Begins a dragging session.
+### Deprecated properties
 - [var backingLocation: NSWindow.BackingLocation](nswindow/backinglocation-swift.property.md)
   The location of the window’s backing store.
 - [var preferredBackingLocation: NSWindow.BackingLocation](nswindow/preferredbackinglocation.md)
@@ -50,7 +58,9 @@ Review unsupported symbols and their replacements.
   The graphics context associated with the window for the current thread.
 - [var windowRef: UnsafeMutableRawPointer](nswindow/windowref.md)
   The Carbon window reference associated with the window, creating one if necessary.
-### Constants
+- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
+  A Boolean value that indicates whether the toolbar control button is currently displayed.
+### Deprecated constants
 - [NSWindow.BackingLocation](nswindow/backinglocation-swift.enum.md)
   The following constants and the related data type represent a window’s possible backing locations.
 

@@ -18,13 +18,17 @@ A kind of reserved region.
 struct Kind
 ```
 
+#### Overview
+
+Pass a kind to [`reservedRegions(kind:options:)`](uiview/reservedregions(kind:options:).md) to choose which regions you get: [`occlusion`](uiview/reservedregion/kind-swift.struct/occlusion.md) for areas that cover your content, and [`division`](uiview/reservedregion/kind-swift.struct/division.md) for areas that split it. Each [`UIView.ReservedRegion`](uiview/reservedregion.md) also reports its kind in its [`kind`](uiview/reservedregion/kind-swift.property.md) property.
+
 ## Topics
 
-### Type Properties
-- [static let division: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct/division.md)
-  A region where content splits into two separate regions.
+### Getting reserved region kinds
 - [static let occlusion: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct/occlusion.md)
-  A region where an element, such as a camera, occludes content.
+  A region that covers part of your view.
+- [static let division: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct/division.md)
+  A region that splits your view into separate parts.
 
 ## Relationships
 
@@ -40,13 +44,13 @@ struct Kind
 ## See Also
 
 - [let frame: CGRect](uiview/reservedregion/frame.md)
-  The rectangle of the region in the view’s coordinate space, including the margins.
+  The rectangle that describes the region within your view.
 - [let isActive: Bool](uiview/reservedregion/isactive.md)
-  A Boolean value that indicates whether the region is currently active.
+  A Boolean value that indicates whether the region is active.
 - [let kind: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.property.md)
   The kind of the region.
 - [let margins: UIEdgeInsets](uiview/reservedregion/margins.md)
-  The margins included in the frame around the reserved region for interactive content.
+  The extra space around the reserved area that keeps interactive content clear of it.
 
 
 ---

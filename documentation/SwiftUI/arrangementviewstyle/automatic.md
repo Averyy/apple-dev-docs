@@ -21,15 +21,21 @@ The default arrangement view style.
 nonisolated static var automatic: AutomaticArrangementViewStyle { get }
 ```
 
-#### Discussion
+#### Overview
 
-Using this style, the arrangement view resolves to a [`SplitArrangementViewStyle`](splitarrangementviewstyle.md).
+When you specify this style, the arrangement view uses [`SplitArrangementViewStyle`](splitarrangementviewstyle.md).
 
 ## See Also
 
+- [struct AutomaticArrangementViewStyle](automaticarrangementviewstyle.md)
+  The default arrangement view style.
 - [static var overlay: OverlayArrangementViewStyle](arrangementviewstyle/overlay.md)
-  An arrangement view style that layers the primary view over the secondary view in z-order.
+  A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
+- [struct OverlayArrangementViewStyle](overlayarrangementviewstyle.md)
+  A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
 - [static var split: SplitArrangementViewStyle](arrangementviewstyle/split.md)
+  An arrangement view style that places the primary and secondary views side by side along one or more axes.
+- [struct SplitArrangementViewStyle](splitarrangementviewstyle.md)
   An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
 

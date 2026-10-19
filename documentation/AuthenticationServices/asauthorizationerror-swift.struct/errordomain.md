@@ -18,6 +18,11 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [let ASAuthorizationErrorDomain: String](asauthorizationerrordomain.md)
+  The domain of authorization errors.
+
 
 ---
 

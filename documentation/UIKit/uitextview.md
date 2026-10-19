@@ -127,14 +127,14 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [class let textDidEndEditingNotification: NSNotification.Name](uitextview/textdidendeditingnotification.md)
   A notification that alerts observers when the editing session ends for a text view.
 ### Working with the selection
-- [var selectedRange: NSRange](uitextview/selectedrange.md)
-  The current selection range of the text view.
 - [func scrollRangeToVisible(NSRange)](uitextview/scrollrangetovisible(_:).md)
   Scrolls the text view until the text in the specified range is visible.
 - [var clearsOnInsertion: Bool](uitextview/clearsoninsertion.md)
   A Boolean value that indicates whether inserting text replaces the previous contents.
 - [var isSelectable: Bool](uitextview/isselectable.md)
   A Boolean value that indicates whether the text view is selectable.
+- [var selectedRange: NSRange](uitextview/selectedrange.md)
+  The current selection range of the text view.
 ### Replacing the system input views
 - [var inputView: UIView?](uitextview/inputview.md)
   The custom input view to display when the text view becomes the first responder.

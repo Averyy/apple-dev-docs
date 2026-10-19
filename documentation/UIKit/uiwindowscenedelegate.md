@@ -40,6 +40,8 @@ For an example on using `UIWindowSceneDelegate` in your app, see [`Supporting mu
 ### Responding to scene changes
 - [func windowScene(UIWindowScene, didUpdateEffectiveGeometry: UIWindowScene.Geometry)](uiwindowscenedelegate/windowscene(_:didupdateeffectivegeometry:).md)
   Called when the window scene’s effective geometry has changed.
+- [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md)
+  Notifies you when the size, orientation, or traits of a scene change.
 ### Performing tasks
 - [func windowScene(UIWindowScene, performActionFor: UIApplicationShortcutItem, completionHandler: (Bool) -> Void)](uiwindowscenedelegate/windowscene(_:performactionfor:completionhandler:).md)
   Asks the delegate to perform the user-selected action.
@@ -48,9 +50,6 @@ For an example on using `UIWindowSceneDelegate` in your app, see [`Supporting mu
 ### Configuring supported interface orientations
 - [func supportedInterfaceOrientations(for: UIWindowScene) -> UIInterfaceOrientationMask](uiwindowscenedelegate/supportedinterfaceorientations(for:).md)
   Returns the interface orientations supported by the window scene. The returned value replaces the app’s UISupportedInterfaceOrientations Info.plist value for this scene. If not implemented, the Info.plist value is used.
-### Deprecated methods
-- [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md)
-  Notifies you when the size, orientation, or traits of a scene change.
 ### Instance Methods
 - [func preferredWindowingControlStyle(for: UIWindowScene) -> UIWindowScene.WindowingControlStyle](uiwindowscenedelegate/preferredwindowingcontrolstyle(for:).md)
   Called by the system to determine the windowing control style for the provided scene. `automaticStyle` will be used if this method is not implemented.

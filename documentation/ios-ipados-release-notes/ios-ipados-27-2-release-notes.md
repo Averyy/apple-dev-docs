@@ -1,4 +1,4 @@
-# iOS & iPadOS 27.2 Beta 4 Release Notes
+# iOS & iPadOS 27.2 RC Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.2 beta 4. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
+The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
 
 ##### App Tracking Transparency
 
@@ -17,13 +17,13 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 ###### Resolved Issues
 
 - Fixed: The new `requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)` API is renamed to `requestTrackingAuthorization(preferExpandedInterface:...)`. (187149729)
-- Fixed: The new `requestTrackingAuthorization(preferExpandedInterface:...)` API is renamed to `requestTrackingAuthorizationPreferringExpandedInterface:…)`. (187610745)
+- Fixed: The new requestTrackingAuthorizationPreferExpandedInterface:… API is renamed to requestTrackingAuthorizationPreferringExpandedInterface:… (187610745)
 
 ##### Health
 
 ###### Known Issues
 
-- Personalized summaries may not generate as expected in the Insights tab. (186964423)
+- Personalized summaries might not generate as expected in the Insights tab. (186964423)
 - The redesigned Health app is not included in this beta and was available in the previous beta for testing purposes only. If you update to this beta, your Health app data from the previous beta remains on your device and is viewable in Settings. The redesigned Health app will be available again in an upcoming iOS beta. (188843443)
 
 ##### Nearby Interaction
@@ -44,7 +44,7 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 
 - Describe a Shortcut might fail with the error “Something went wrong. Try again later.” (187499433)
 
-##### Simulator Runtimes
+##### Simulator
 
 ###### Known Issues
 

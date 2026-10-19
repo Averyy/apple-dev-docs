@@ -31,7 +31,7 @@ It is always a good idea to check the timestamp of the location stored in this p
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [func startUpdatingLocation()](cllocationmanager/startupdatinglocation.md)
   Starts the generation of updates that report the user’s current location.
 

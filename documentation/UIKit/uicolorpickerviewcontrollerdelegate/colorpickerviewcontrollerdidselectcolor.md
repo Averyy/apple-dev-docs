@@ -21,6 +21,13 @@ optional func colorPickerViewControllerDidSelectColor(_ viewController: UIColorP
 
 - `viewController`: The view controller that receives the color change.
 
+## See Also
+
+- [func colorPickerViewControllerDidFinish(UIColorPickerViewController)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontrollerdidfinish(_:).md)
+  Informs the delegate that the user dismissed the color picker.
+- [func colorPickerViewController(UIColorPickerViewController, didSelect: UIColor, continuously: Bool)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontroller(_:didselect:continuously:).md)
+  Informs the delegate when a user selects a color, indicating whether the update is part of a continuous user interaction.
+
 
 ---
 

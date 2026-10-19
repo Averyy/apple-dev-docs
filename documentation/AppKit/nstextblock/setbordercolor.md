@@ -29,7 +29,6 @@ This setting has no visible effect unless the border width is larger than the de
 - [var backgroundColor: NSColor?](nstextblock/backgroundcolor.md)
   The background color of the text block.
 - [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
-- [func borderColor(for: CGRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-5m8cr.md)
 
 
 ---

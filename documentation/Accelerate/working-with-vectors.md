@@ -91,9 +91,9 @@ The following code shows how you can determine which of the two vectors defined 
 let target = simd_float2(x: 5, y: 2)
 
 if simd_distance_squared(a, target) < simd_distance_squared(b, target) {
-    // `a` is closest to `target`
+    // The `a` is closest to `target`
 } else {
-    // `b` is closest to `target`
+    // The `b` is closest to `target`
 }
 ```
 

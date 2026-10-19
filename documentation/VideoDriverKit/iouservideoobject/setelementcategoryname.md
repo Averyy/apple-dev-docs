@@ -6,7 +6,7 @@
 Sets the category name for the given element and scope of the video object.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

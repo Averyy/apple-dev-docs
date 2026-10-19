@@ -73,7 +73,7 @@ withUnsafeMutablePointer(to: &fields) { fieldsPtr in
     }
 }
 
-// Prints "[2.0, 4.0, 3.0, 5.0, 10.0]"
+// Prints "[2.0, 4.0, 3.0, 5.0, 10.0]".
 print("Unary Arithmetic: outputs", output)
 ```
 

@@ -38,6 +38,8 @@ For more information see the `MacWindows.h` header file.
   A Boolean value that indicates whether the window automatically displays views that need to be displayed.
 - [var graphicsContext: NSGraphicsContext?](nswindow/graphicscontext.md)
   The graphics context associated with the window for the current thread.
+- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
+  A Boolean value that indicates whether the toolbar control button is currently displayed.
 
 
 ---

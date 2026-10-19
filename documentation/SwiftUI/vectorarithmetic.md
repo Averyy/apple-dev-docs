@@ -57,6 +57,8 @@ protocol VectorArithmetic : AdditiveArithmetic
   A pair of animatable values, which is itself animatable.
 - [struct EmptyAnimatableData](emptyanimatabledata.md)
   An empty type for animatable data.
+- [protocol AnimatableModifier](animatablemodifier.md)
+  A modifier that can create another modifier with animation.
 
 
 ---

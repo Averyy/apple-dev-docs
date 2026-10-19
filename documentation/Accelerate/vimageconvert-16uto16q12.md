@@ -28,7 +28,7 @@ func vImageConvert_16Uto16Q12(_ src: UnsafePointer<vImage_Buffer>, _ dest: Unsaf
 
 The function uses the following calculation to perform the conversion:
 
-```swift
+```c
 result = (sample_16U * 4096 + 32767) / 65535;
 ```
 

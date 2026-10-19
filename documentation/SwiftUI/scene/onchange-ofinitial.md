@@ -67,6 +67,8 @@ When the value changes, the new version of the closure will be called, so any ca
 
 - [func handlesExternalEvents(matching: Set<String>) -> some Scene](scene/handlesexternalevents(matching:).md)
   Specifies the external events for which SwiftUI opens a new instance of the modified scene.
+- [func onChange<V>(of: V, perform: (V) -> Void) -> some Scene](scene/onchange(of:perform:).md)
+  Adds an action to perform when the given value changes.
 
 
 ---

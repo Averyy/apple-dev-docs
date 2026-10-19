@@ -20,20 +20,18 @@ The identifier of the region.
 var id: ReservedRegion.ID { get }
 ```
 
+#### Discussion
+
+Use the identifier to tell whether a region you saw in an earlier query is still there or is a different region.
+
 ## See Also
 
 - [ReservedRegion.ID](reservedregion/id-swift.struct.md)
   An identifier for a reserved region.
-- [var frame: CGRect](reservedregion/frame.md)
-  The rect of the region in the view’s coordinate space, including the margins.
-- [var isActive: Bool](reservedregion/isactive.md)
-  Whether the region is active.
 - [var kind: ReservedRegion.Kind](reservedregion/kind-swift.property.md)
   The kind of the region.
 - [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
   A kind of reserved region.
-- [var margins: EdgeInsets](reservedregion/margins.md)
-  The margins included in the frame around the rect for interactive content.
 
 
 ---

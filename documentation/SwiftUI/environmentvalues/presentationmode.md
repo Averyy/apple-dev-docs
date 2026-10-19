@@ -30,10 +30,9 @@ var presentationMode: Binding<PresentationMode> { get }
   The active appearance expected of controls in a window.
 - [var disableAutocorrection: Bool?](environmentvalues/disableautocorrection.md)
   A Boolean value that determines whether the view hierarchy has auto-correction enabled.
-- [struct PresentationMode](presentationmode.md)
-  An indication whether a view is currently presented by another view.
 - [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
   The size of content.
+- [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
 
 
 ---

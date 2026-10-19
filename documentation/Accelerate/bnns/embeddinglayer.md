@@ -31,7 +31,7 @@ let lookupIndices: [Int8] = [1, 5, 2]
 let input = BNNSNDArrayDescriptor.allocate(initializingFrom: lookupIndices,
                                            shape: .vector(lookupIndices.count))
 
-// The dictionary contains 7 embeddings of 5-element vectors
+// The dictionary contains seven embeddings of five-element vectors.
 let dictionaryData: [Float] = [ 01, 02, 03, 04, 05,     // Dictionary item 0
                                 11, 12, 13, 14, 15,     // Dictionary item 1
                                 21, 22, 23, 24, 25,     // Dictionary item 2
@@ -66,9 +66,9 @@ try? layer?.apply(batchSize: 1,
                   output: output)
 
 // Prints:
-// [11.0, 12.0, 13.0, 14.0, 15.0,
+// "[11.0, 12.0, 13.0, 14.0, 15.0,
 // 51.0, 52.0, 53.0, 54.0, 55.0,
-// 21.0, 22.0, 23.0, 24.0, 25.0]
+// 21.0, 22.0, 23.0, 24.0, 25.0]".
 print(output.makeArray(of: Float.self)!)
 
 input.deallocate()
@@ -84,7 +84,7 @@ let input = BNNSNDArrayDescriptor.allocate(initializingFrom: lookupIndices,
                                            shape: .vector(lookupIndices.count))
 
 
-// The dictionary contains 3 embeddings of 2 x 3 matrices.
+// The dictionary contains three embeddings of 2 x 3 matrices.
 let dictionaryData: [Float] = [0.1, 0.2, 0.3,
                                0.4, 0.5, 0.6,
                                
@@ -123,11 +123,11 @@ try? layer?.apply(batchSize: 1,
                   output: output)
 
 // Prints:
-// [0.1, 0.3, 0.5,
+// "[0.1, 0.3, 0.5,
 // 0.2, 0.4, 0.6,
 //
 // 0.6, 0.5, 0.4,
-// 0.3, 0.2, 0.1]
+// 0.3, 0.2, 0.1]".
 print(output.makeArray(of: Float.self)!)
 
 input.deallocate()

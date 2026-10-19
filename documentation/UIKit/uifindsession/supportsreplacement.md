@@ -35,6 +35,8 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
   The information the find panel includes in the summary of found results.
 - [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
+- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
+  A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
 
 ---

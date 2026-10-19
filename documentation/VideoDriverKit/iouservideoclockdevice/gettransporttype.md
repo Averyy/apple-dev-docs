@@ -6,7 +6,7 @@
 Gets the transport type of the IOUserVideoClockDevice.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

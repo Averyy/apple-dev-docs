@@ -28,31 +28,6 @@ Subclasses can override this method if the collection view items are not generat
 
 - `object`: The content object that the collection view item will represent.
 
-## See Also
-
-- [var itemPrototype: NSCollectionViewItem?](nscollectionview/itemprototype.md)
-  The receiver’s collection view item prototype.
-- [var selectionIndexes: IndexSet](nscollectionview/selectionindexes.md)
-  The indexes of the currently selected items.
-- [var maxNumberOfRows: Int](nscollectionview/maxnumberofrows.md)
-  The maximum number of rows that the collection view displays.
-- [var maxNumberOfColumns: Int](nscollectionview/maxnumberofcolumns.md)
-  The maximum number of columns that the collection view displays.
-- [var minItemSize: NSSize](nscollectionview/minitemsize.md)
-  The minimum size (in points) of items in the collection view grid.
-- [var maxItemSize: NSSize](nscollectionview/maxitemsize.md)
-  The maximum size (in points) of items in the collection view grid.
-- [func item(at: Int) -> NSCollectionViewItem?](nscollectionview/item(at:)-80xze.md)
-  Returns the collection view item for the represented object at the specified index.
-- [func frameForItem(at: Int) -> NSRect](nscollectionview/frameforitem(at:).md)
-  Returns the frame of the collection view item at the specified index.
-- [func frameForItem(at: Int, withNumberOfItems: Int) -> NSRect](nscollectionview/frameforitem(at:withnumberofitems:).md)
-  Returns the frame of an item based on the number of items in the collection view.
-- [func draggingImageForItems(at: IndexSet, with: NSEvent, offset: NSPointPointer) -> NSImage](nscollectionview/draggingimageforitems(at:with:offset:)-951w7.md)
-  This method computes and returns an image to use for dragging.
-- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](nscollectionview/setdraggingsourceoperationmask(_:forlocal:).md)
-  Configures the drag operation mask.
-
 
 ---
 

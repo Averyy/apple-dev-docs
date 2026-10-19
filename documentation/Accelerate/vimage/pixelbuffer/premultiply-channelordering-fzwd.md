@@ -34,7 +34,7 @@ let src = vImage.PixelBuffer<vImage.InterleavedFx4>(
 
 src.premultiply(channelOrdering: .ARGB)
 
-// Prints "[0.5, 0.0625, 0.125, 0.25"
+// Prints "[0.5, 0.0625, 0.125, 0.25]".
 print(src.array)
 ```
 

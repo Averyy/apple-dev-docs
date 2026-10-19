@@ -99,11 +99,11 @@ The system calls a stack view delegate method when a view is about to be detache
 - [class let useDefaultSpacing: CGFloat](nsstackview/usedefaultspacing.md)
 - [var edgeInsets: NSEdgeInsets](nsstackview/edgeinsets.md)
   The geometric padding, in points, inside the stack view, surrounding its views.
-- [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
-  A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 - [var distribution: NSStackView.Distribution](nsstackview/distribution-swift.property.md)
   The spacing and sizing distribution of stacked views along the primary axis.
 - [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
+- [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
+  A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 ### Configuring Views in a Stack View
 - [func customSpacing(after: NSView) -> CGFloat](nsstackview/customspacing(after:).md)
   Returns the custom spacing, in points, between a specified view in the stack view and the view that follows it.

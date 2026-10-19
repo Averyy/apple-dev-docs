@@ -27,8 +27,6 @@ You don’t use this directly. Use `CustomHoverEffect.ornament` to create orname
 
 - [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
-- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
-  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 - [func hoverEffect(_:isEnabled:)](view/hovereffect(_:isenabled:).md)
   Applies a hover effect to this view.
 - [func hoverEffectDisabled(Bool) -> some View](view/hovereffectdisabled(_:).md)
@@ -43,6 +41,8 @@ You don’t use this directly. Use `CustomHoverEffect.ornament` to create orname
   Options for overriding a hover effect’s current phase.
 - [struct OrnamentHoverContentEffect](ornamenthovercontenteffect.md)
   Presents an ornament on hover using a custom effect.
+- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
+  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
 
 ---

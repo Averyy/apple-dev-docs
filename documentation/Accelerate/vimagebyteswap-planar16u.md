@@ -30,6 +30,8 @@ Call this function to swap the byte ordering of each pixel in an unsigned 16-bit
 
 The following code converts the two pixels in the pixel buffer from `[”AABB”, “11FF”]` to `[”BBAA”, “FF11”]`:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.Planar16U>(
     pixelValues: [
@@ -45,6 +47,24 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 
 // Prints "["bbaa", "ff11"]".
 print(pixelBuffer.array.map {String($0, radix: 16)})
+```
+
+**Objective-C**:
+
+```objc
+uint16_t data[2] = {0xAABB, 0x11FF};
+
+vImage_Buffer buf = {
+    .data = data,
+    .width = 2,
+    .height = 1,
+    .rowBytes = 4   // `Planar16U`: 2 bytes/pixel
+};
+
+vImageByteSwap_Planar16U(&buf, &buf, kvImageNoFlags);
+
+// Prints "["bbaa", "ff11"]".
+printf("[\"%x\", \"%x\"]\n", data[0], data[1]);
 ```
 
 ## Parameters

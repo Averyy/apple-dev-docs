@@ -28,6 +28,8 @@ The address of `userData;` `NULL` if `userData` isn’t set.
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetUserData(_:)`](vimagecvimageformat_getuserdata(_:).md):
 
+**Swift**:
+
 ```swift
 let userData = withUnsafeBytes(of: cvImageFormat) { bytes in
     let format = bytes.assumingMemoryBound(
@@ -35,6 +37,25 @@ let userData = withUnsafeBytes(of: cvImageFormat) { bytes in
     
     return vImageCVImageFormat_GetUserData(format)
 }
+```
+
+**Objective-C**:
+
+```objc
+CGColorSpaceRef cs = CGColorSpaceCreateWithName(kCGColorSpaceSRGB);
+vImageCVImageFormatRef cvImageFormat = vImageCVImageFormat_Create(
+    kCVPixelFormatType_32ARGB, NULL, NULL, cs, 0);
+CGColorSpaceRelease(cs);
+
+int userData = 42;
+vImageCVImageFormat_SetUserData(cvImageFormat, &userData, NULL);
+
+void *result = vImageCVImageFormat_GetUserData(cvImageFormat);
+
+// Prints "42".
+printf("%d\n", *(int *)result);
+
+vImageCVImageFormat_Release(cvImageFormat);
 ```
 
 ## Parameters

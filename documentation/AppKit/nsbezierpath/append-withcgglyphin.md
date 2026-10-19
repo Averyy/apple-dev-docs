@@ -34,12 +34,6 @@ func append(withCGGlyph glyph: CGGlyph, in font: NSFont)
   Appends a rounded rectangular path to the path.
 - [func append(withCGGlyphs: UnsafePointer<CGGlyph>, count: Int, in: NSFont)](nsbezierpath/append(withcgglyphs:count:in:).md)
   Appends the outlines of the specified glyphs to the path.
-- [func appendGlyph(NSGlyph, in: NSFont)](nsbezierpath/appendglyph(_:in:).md)
-  Appends an outline of the specified glyph to the path.
-- [func appendGlyphs(UnsafeMutablePointer<NSGlyph>, count: Int, in: NSFont)](nsbezierpath/appendglyphs(_:count:in:).md)
-  Appends the outlines of the specified glyphs to the path.
-- [func appendPackedGlyphs(UnsafePointer<CChar>)](nsbezierpath/appendpackedglyphs(_:).md)
-  Appends an array of packed glyphs to the path.
 
 
 ---

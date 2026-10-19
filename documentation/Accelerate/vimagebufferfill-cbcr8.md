@@ -28,6 +28,8 @@ func vImageBufferFill_CbCr8(_ dest: UnsafePointer<vImage_Buffer>, _ color: Unsaf
 
 The following code fills the buffer with the specified color:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.Interleaved8x2>(
     size: .init(width: 1, height: 2))
@@ -43,7 +45,30 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 print(pixelBuffer.array)
 // Prints:
 //      "[127, 255,
-//        127, 255]"
+//        127, 255]".
+```
+
+**Objective-C**:
+
+```objc
+uint8_t data[4] = {0, 0, 0, 0};
+
+vImage_Buffer dest = {
+    .data = data,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 2
+};
+
+Pixel_88 fillColor = {127, 255};
+
+vImageBufferFill_CbCr8(&dest,
+                       fillColor,
+                       kvImageNoFlags);
+
+// Prints "[127, 255, 127, 255]".
+printf("[%d, %d, %d, %d]\n",
+       data[0], data[1], data[2], data[3]);
 ```
 
 ## Parameters

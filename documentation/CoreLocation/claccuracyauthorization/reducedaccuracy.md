@@ -22,7 +22,7 @@ case reducedAccuracy
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [var accuracyAuthorization: CLAccuracyAuthorization](cllocationmanager/accuracyauthorization.md)
   A value that indicates the level of location accuracy the app has permission to use.
 

@@ -33,7 +33,7 @@ let buffer = vImage.PixelBuffer<vImage.Interleaved8x3>(
 buffer.permuteChannels(to: (2, 1, 0),
                        destination: buffer)
 
-// Prints "[30, 20, 10]"
+// Prints "[30, 20, 10]".
 print(buffer.array)
 ```
 

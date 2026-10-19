@@ -116,7 +116,6 @@ If you remove the prompt from the previous example, the field keeps the label on
   Creates a secure field with a prompt generated from a `Text`.
 - [init(text: Binding<String>, prompt: Text?, label: () -> Label)](securefield/init(text:prompt:label:).md)
   Creates a secure field with a prompt generated from a `Text`.
-### Deprecated initializers
 - [init(_:text:onCommit:)](securefield/init(_:text:oncommit:).md)
   Creates an instance.
 

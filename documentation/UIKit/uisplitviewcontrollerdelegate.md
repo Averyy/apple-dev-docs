@@ -106,7 +106,7 @@ The expansion process reverses the collapsing process by asking the delegate to 
   Asks the delegate if it will do the work of displaying a view controller in the primary position of the split view interface.
 - [func splitViewController(UISplitViewController, showDetail: UIViewController, sender: Any?) -> Bool](uisplitviewcontrollerdelegate/splitviewcontroller(_:showdetail:sender:).md)
   Asks the delegate if it will do the work of displaying a view controller in the secondary position of the split view interface.
-### Deprecated methods
+### Deprecated
 - [func splitViewController(UISplitViewController, shouldHide: UIViewController, in: UIInterfaceOrientation) -> Bool](uisplitviewcontrollerdelegate/splitviewcontroller(_:shouldhide:in:).md)
   Asks the delegate whether the first view controller should be hidden for the specified orientation.
 - [func splitViewController(UISplitViewController, willHide: UIViewController, with: UIBarButtonItem, for: UIPopoverController)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willhide:with:for:).md)

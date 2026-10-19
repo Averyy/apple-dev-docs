@@ -24,7 +24,7 @@ extern void vDSP_hann_windowD(double *__C, vDSP_Length __N, int __Flag);
 
 The [`vDSP_hann_window`](vdsp_hann_window.md) and [`vDSP_hann_windowD`](vdsp_hann_windowd.md) functions create a Hann window vector using the following operation:
 
-```swift
+```c
 If Flag & vDSP_HALF_WINDOW:
     Length = (N+1)/2;
 Else
@@ -43,6 +43,8 @@ Use [`vDSP_vmulD`](vdsp_vmuld.md) to multiply the Hann window result by a nonint
 
 The following code shows how to generate a Hann window:
 
+**Swift**:
+
 ```swift
 let n = vDSP_Length(1024)
 var c = [Double](repeating: 0,
@@ -51,6 +53,15 @@ var c = [Double](repeating: 0,
 vDSP_hann_windowD(&c,
                   n,
                   Int32(vDSP_HANN_DENORM))
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Length n = 1024;
+double c[1024];
+
+vDSP_hann_windowD(c, n, vDSP_HANN_DENORM);
 ```
 
 The following illustrates the values of the output vector, `c`:

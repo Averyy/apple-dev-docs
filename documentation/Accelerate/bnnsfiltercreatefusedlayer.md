@@ -29,8 +29,8 @@ Use this function to create an `N` layer fused filter that processes input as: `
 The following code shows how you pass [`BNNSLayerParametersConvolution`](bnnslayerparametersconvolution.md) and [`BNNSLayerParametersNormalization`](bnnslayerparametersnormalization.md) structures to [`BNNSFilterCreateFusedLayer(_:_:_:_:)`](bnnsfiltercreatefusedlayer(_:_:_:_:).md) to create a fused convolution-layer normalization filter:
 
 ```swift
-// `input`, `output`, and `weights` are single-precision arrays.
-// `inDescriptor` and `outDescriptor` are the `BNNSNDArrayDescriptor` structures
+// The `input`, `output`, and `weights` are single-precision arrays.
+// The `inDescriptor` and `outDescriptor` are the `BNNSNDArrayDescriptor` structures
 // for the fused layer's input and output.
 
 weights.withUnsafeMutableBytes { weightsPtr in

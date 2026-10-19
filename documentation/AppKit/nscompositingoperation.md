@@ -89,6 +89,9 @@ The equations after each constant represent the mathematical formulas for calcul
   Uses the hue and saturation of the source and the luminosity of the destination.
 - [NSCompositingOperation.luminosity](nscompositingoperation/luminosity.md)
   Uses the luminosity of the source and the hue and saturation of the destination.
+### Deprecated
+- [Deprecated symbols](nscompositingoperation-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [init?(rawValue: UInt)](nscompositingoperation/init(rawvalue:).md)
 

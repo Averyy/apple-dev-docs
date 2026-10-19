@@ -32,7 +32,9 @@ func vImageMatrixMultiply_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: 
 
 This function treats the four-channel source and destination pixels as four-element vectors. The operation multiplies each source pixel by the 4 x 4 matrix to produce the destination pixel.
 
-The following code shows a single-pixel image that contains the ARGB value `(10, 20, 30, 40)`. The matrix permutes the channel values to produce a single-pixel destination image that contains the ARGB value `(40, 30, 20, 10)`.
+The following code shows a single-pixel image that contains the ARGB value `(10, 20, 30, 40)`. The matrix permutes the channel values to produce a single-pixel destination image that contains the ARGB value `(40, 30, 20, 10)`:
+
+**Swift**:
 
 ```swift
 let size = vImage.Size(width: 1, height: 1)
@@ -68,6 +70,44 @@ source.withUnsafePointerToVImageBuffer { src in
 
 // Prints "[40, 30, 20, 10]".
 print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+uint8_t srcData[4] = {10, 20, 30, 40};
+
+vImage_Buffer srcBuf = {
+    .data = srcData,
+    .width = 1,
+    .height = 1,
+    .rowBytes = 4
+};
+
+uint8_t dstData[4] = {0};
+
+vImage_Buffer dstBuf = {
+    .data = dstData,
+    .width = 1,
+    .height = 1,
+    .rowBytes = 4
+};
+
+int16_t matrix[16] = {
+    0, 0, 0, 1,
+    0, 0, 1, 0,
+    0, 1, 0, 0,
+    1, 0, 0, 0
+};
+
+vImageMatrixMultiply_ARGB8888(&srcBuf, &dstBuf,
+                              matrix, 1,
+                              NULL, NULL,
+                              kvImageNoFlags);
+
+// Prints "[40, 30, 20, 10]".
+printf("[%d, %d, %d, %d]\n",
+       dstData[0], dstData[1], dstData[2], dstData[3]);
 ```
 
 ## Parameters

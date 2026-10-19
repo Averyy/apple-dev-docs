@@ -24,8 +24,6 @@ For design guidance, see [`Gestures`](https://developer.apple.com/design/human-i
 ### Recognizing tap gestures
 - [func onTapGesture(count: Int, perform: () -> Void) -> some View](view/ontapgesture(count:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture.
-- [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
-  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [struct TapGesture](tapgesture.md)
@@ -135,11 +133,13 @@ For design guidance, see [`Gestures`](https://developer.apple.com/design/human-i
 ### Handling activation events
 - [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
-### Deprecated gestures
+### Deprecated
 - [struct MagnificationGesture](magnificationgesture.md)
   A gesture that recognizes a magnification motion and tracks the amount of magnification.
 - [struct RotationGesture](rotationgesture.md)
   A gesture that recognizes a rotation motion and tracks the angle of the rotation.
+- [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
+  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 
 ## See Also
 

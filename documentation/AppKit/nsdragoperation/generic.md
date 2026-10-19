@@ -28,6 +28,10 @@ static var generic: NSDragOperation { get }
   A constant that indicates the drag can delete the data.
 - [static var every: NSDragOperation](nsdragoperation/every.md)
   A constant that indicates that drag can perform all of the drag operations.
+- [static var all: NSDragOperation](nsdragoperation/all.md)
+  Use [`every`](nsdragoperation/every.md) instead.
+- [static var all_Obsolete: NSDragOperation](nsdragoperation/all_obsolete.md)
+  The `NSDragOperationAll` constant is deprecated. Use [`every`](nsdragoperation/every.md) instead.
 
 
 ---

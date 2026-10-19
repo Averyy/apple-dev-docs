@@ -28,6 +28,8 @@ func vImageOverwriteChannelsWithScalar_Planar8(_ scalar: Pixel_8, _ dest: Unsafe
 
 The following code fills `pixelBuffer` with `scalar`:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.Planar8>(
     size: .init(width: 4, height: 1))
@@ -42,6 +44,29 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 
 // Prints "[101, 101, 101, 101]".
 print(pixelBuffer.array)
+```
+
+**Objective-C**:
+
+```objc
+uint8_t data[4] = {0, 0, 0, 0};
+
+vImage_Buffer buf = {
+    .data = data,
+    .width = 4,
+    .height = 1,
+    .rowBytes = 4
+};
+
+Pixel_8 scalar = 101;
+
+vImageOverwriteChannelsWithScalar_Planar8(scalar,
+                                          &buf,
+                                          kvImageNoFlags);
+
+// Prints "[101, 101, 101, 101]".
+printf("[%d, %d, %d, %d]\n",
+       data[0], data[1], data[2], data[3]);
 ```
 
 ## Parameters

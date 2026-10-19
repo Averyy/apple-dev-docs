@@ -262,8 +262,6 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 ### Drawing and positioning overrides
 - [func textRect(forBounds: CGRect) -> CGRect](uitextfield/textrect(forbounds:).md)
   Returns the drawing rectangle for the text field’s text.
-- [func drawText(in: CGRect)](uitextfield/drawtext(in:).md)
-  Draws the text field’s text in the specified rectangle.
 - [func placeholderRect(forBounds: CGRect) -> CGRect](uitextfield/placeholderrect(forbounds:).md)
   Returns the drawing rectangle for the text field’s placeholder text.
 - [func drawPlaceholder(in: CGRect)](uitextfield/drawplaceholder(in:).md)
@@ -278,6 +276,8 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   Returns the drawing rectangle of the text field’s left overlay view.
 - [func rightViewRect(forBounds: CGRect) -> CGRect](uitextfield/rightviewrect(forbounds:).md)
   Returns the drawing location of the text field’s right overlay view.
+- [func drawText(in: CGRect)](uitextfield/drawtext(in:).md)
+  Draws the text field’s text in the specified rectangle.
 ### Replacing the system input views
 - [var inputView: UIView?](uitextfield/inputview.md)
   The custom input view to display when the text field becomes the first responder.

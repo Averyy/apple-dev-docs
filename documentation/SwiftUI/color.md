@@ -97,6 +97,8 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
   Creates a color from an AppKit color.
 - [init(cgColor: CGColor)](color/init(cgcolor:).md)
   Creates a color from a Core Graphics color.
+- [var cgColor: CGColor?](color/cgcolor.md)
+  A Core Graphics representation of the color, if available.
 ### Getting standard colors
 - [static let black: Color](color/black.md)
   A black color suitable for use in UI elements.
@@ -161,9 +163,6 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
   Indicates whether two colors are equal.
 - [func hash(into: inout Hasher)](color/hash(into:).md)
   Hashes the essential components of the color by feeding them into the given hash function.
-### Deprecated symbols
-- [var cgColor: CGColor?](color/cgcolor.md)
-  A Core Graphics representation of the color, if available.
 ### Default Implementations
 - [ShapeStyle Implementations](color/shapestyle-implementations.md)
 - [Transferable Implementations](color/transferable-implementations.md)

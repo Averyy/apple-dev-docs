@@ -29,7 +29,6 @@ By implementing the [`UIColorPickerViewControllerDelegate`](uicolorpickerviewcon
   Informs the delegate that the user dismissed the color picker.
 - [func colorPickerViewController(UIColorPickerViewController, didSelect: UIColor, continuously: Bool)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontroller(_:didselect:continuously:).md)
   Informs the delegate when a user selects a color, indicating whether the update is part of a continuous user interaction.
-### Deprecated
 - [func colorPickerViewControllerDidSelectColor(UIColorPickerViewController)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontrollerdidselectcolor(_:).md)
   Informs the delegate when the user selects a color.
 

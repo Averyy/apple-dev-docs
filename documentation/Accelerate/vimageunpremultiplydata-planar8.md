@@ -28,7 +28,7 @@ func vImageUnpremultiplyData_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ alph
 
 This function divides color channels by the alpha channel using the following code:
 
-```swift
+```c
 uint8_t destColor = ( MIN(src_color, alpha) * 255 + alpha/2) / alpha;
 ```
 

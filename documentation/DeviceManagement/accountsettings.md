@@ -6,7 +6,7 @@
 The declaration to configure account settings.
 
 **Availability**:
-- macOS 27.2+ (Beta)
+- macOS 27.2+
 
 ## Declaration
 

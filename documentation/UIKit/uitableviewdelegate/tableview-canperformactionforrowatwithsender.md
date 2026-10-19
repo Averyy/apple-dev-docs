@@ -34,10 +34,6 @@ This method is invoked after [`tableView(_:shouldShowMenuForRowAt:)`](uitablevie
 
 ## See Also
 
-- [func tableView(UITableView, leadingSwipeActionsConfigurationForRowAt: IndexPath) -> UISwipeActionsConfiguration?](uitableviewdelegate/tableview(_:leadingswipeactionsconfigurationforrowat:).md)
-  Returns the swipe actions to display on the leading edge of the row.
-- [func tableView(UITableView, trailingSwipeActionsConfigurationForRowAt: IndexPath) -> UISwipeActionsConfiguration?](uitableviewdelegate/tableview(_:trailingswipeactionsconfigurationforrowat:).md)
-  Returns the swipe actions to display on the trailing edge of the row.
 - [func tableView(UITableView, shouldShowMenuForRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:shouldshowmenuforrowat:).md)
   Asks the delegate if the editing menu should be shown for a certain row.
 - [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](uitableviewdelegate/tableview(_:performaction:forrowat:withsender:).md)

@@ -37,7 +37,7 @@ let dest = vImage.PixelBuffer<vImage.Planar16U>(
 src.extractChannel(at: 2,
                    destination: dest)
 
-// Prints "[12, 22, 32]"
+// Prints "[12, 22, 32]".
 print(dest.array)
 ```
 

@@ -71,11 +71,11 @@ Instances of [`NSError`](https://developer.apple.com/documentation/foundation/ns
 - [static var deferredNotUpdatingLocation: CLError.Code](clerror-swift.struct/deferrednotupdatinglocation.md)
   A constant that indicates the location manager didn’t enter deferred mode because location updates were already disabled or paused.
 ### Getting the error details
+- [static var errorDomain: String](clerror-swift.struct/errordomain.md)
 - [var alternateRegion: CLRegion?](clerror-swift.struct/alternateregion.md)
   A region that location services can monitor more effectively.
 ### Type Properties
 - [static var historicalLocationError: CLError.Code](clerror-swift.struct/historicallocationerror.md)
-- [static var errorDomain: String](clerror-swift.struct/errordomain.md)
 
 ## Relationships
 

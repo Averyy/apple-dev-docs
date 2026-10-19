@@ -37,6 +37,8 @@ func tabViewStyle<S>(_ style: S) -> some View where S : TabViewStyle
   A value that defines the purpose of the tab.
 - [struct TabSection](tabsection.md)
   A container that you can use to add hierarchy within a tab view.
+- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
+  Sets the tab bar item associated with this view.
 
 
 ---

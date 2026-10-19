@@ -28,7 +28,7 @@ func vImageConvert_Planar16FtoPlanar8(_ src: UnsafePointer<vImage_Buffer>, _ des
 
 The function uses the following calculation to perform the conversion:
 
-```swift
+```c
 destPixel = ROUND_TO_INTEGER( SATURATED_CLAMP_0_to_255( 255.0f * (srcPixel)));
 ```
 

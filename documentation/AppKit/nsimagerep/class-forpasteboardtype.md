@@ -24,16 +24,14 @@ A `Class` object for the image representation that can handle the specified past
 
 ## See Also
 
-- [class func `class`(forType: String) -> AnyClass?](nsimagerep/class(fortype:).md)
-  Returns the image representation subclass that handles image data for the specified UTI.
-- [class func `class`(for: Data) -> AnyClass?](nsimagerep/class(for:).md)
-  Returns the image representation subclass that handles the specified type of data.
-- [class var registeredClasses: [AnyClass]](nsimagerep/registeredclasses.md)
-  Returns an array containing the registered image representation classes.
-- [class func registerClass(AnyClass)](nsimagerep/registerclass(_:).md)
-  Adds the specified class to the registry of available image representation subclasses.
-- [class func unregisterClass(AnyClass)](nsimagerep/unregisterclass(_:).md)
-  Removes the specified image representation subclass from the registry of available image representations.
+- [class func imageFileTypes() -> [String]](nsimagerep/imagefiletypes.md)
+  Returns the file types supported by the image representation class or one of its subclasses.
+- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imagepasteboardtypes.md)
+  Returns the pasteboard types supported by the image representation class or one of its subclasses.
+- [class func imageUnfilteredFileTypes() -> [String]](nsimagerep/imageunfilteredfiletypes.md)
+  Returns the list of file types supported directly by the image representation.
+- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imageunfilteredpasteboardtypes.md)
+  Returns the list of pasteboard types supported directly by the image representation.
 - [class func `class`(forFileType: String) -> AnyClass?](nsimagerep/class(forfiletype:).md)
   Returns the image representation subclass that handles data with the specified type.
 

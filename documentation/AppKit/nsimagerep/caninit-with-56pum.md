@@ -34,14 +34,6 @@ This method invokes the [`imageUnfilteredPasteboardTypes()`](nsimagerep/imageunf
   Returns an array of UTI strings identifying the image types supported by the image representation, either directly or through a user-installed filter service.
 - [class var imageUnfilteredTypes: [String]](nsimagerep/imageunfilteredtypes.md)
   Returns an array of UTI strings identifying the image types supported directly by the ime representation.
-- [class func imageFileTypes() -> [String]](nsimagerep/imagefiletypes.md)
-  Returns the file types supported by the image representation class or one of its subclasses.
-- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imagepasteboardtypes.md)
-  Returns the pasteboard types supported by the image representation class or one of its subclasses.
-- [class func imageUnfilteredFileTypes() -> [String]](nsimagerep/imageunfilteredfiletypes.md)
-  Returns the list of file types supported directly by the image representation.
-- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imageunfilteredpasteboardtypes.md)
-  Returns the list of pasteboard types supported directly by the image representation.
 
 
 ---

@@ -30,14 +30,14 @@ optional func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
 
 - [func searchBar(UISearchBar, textDidChange: String)](uisearchbardelegate/searchbar(_:textdidchange:).md)
   Tells the delegate that the user changed the search text.
-- [func searchBar(UISearchBar, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uisearchbardelegate/searchbar(_:shouldchangetextin:replacementtext:).md)
-  Ask the delegate if text in a specified range should be replaced with given text.
 - [func searchBarTextDidBeginEditing(UISearchBar)](uisearchbardelegate/searchbartextdidbeginediting(_:).md)
   Tells the delegate when the user begins editing the search text.
 - [func searchBarShouldEndEditing(UISearchBar) -> Bool](uisearchbardelegate/searchbarshouldendediting(_:).md)
   Asks the delegate if editing should stop in the specified search bar.
 - [func searchBarTextDidEndEditing(UISearchBar)](uisearchbardelegate/searchbartextdidendediting(_:).md)
   Tells the delegate that the user finished editing the search text.
+- [func searchBar(UISearchBar, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uisearchbardelegate/searchbar(_:shouldchangetextin:replacementtext:).md)
+  Ask the delegate if text in a specified range should be replaced with given text.
 
 
 ---

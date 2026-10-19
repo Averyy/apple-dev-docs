@@ -20,16 +20,18 @@ If the value of this property is [`true`](https://developer.apple.com/documentat
 
 ## See Also
 
-- [var isVisible: Bool](nstoolbar/isvisible.md)
-  A Boolean value that indicates whether the toolbar is visible.
-- [var displayMode: NSToolbar.DisplayMode](nstoolbar/displaymode-swift.property.md)
-  A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.
-- [NSToolbar.DisplayMode](nstoolbar/displaymode-swift.enum.md)
-  Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
-- [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)
-  A Boolean value that indicates whether users can modify the contents of the toolbar.
-- [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)
-  A Boolean value that indicates whether the toolbar can add items for Action extensions.
+- [var configuration: [String : Any]](nstoolbar/configuration.md)
+  A dictionary containing the current configuration details for the toolbar.
+- [var centeredItemIdentifier: NSToolbarItem.Identifier?](nstoolbar/centereditemidentifier.md)
+  The item to display in the center of the toolbar.
+- [var fullScreenAccessoryView: NSView?](nstoolbar/fullscreenaccessoryview.md)
+  The toolbar’s full screen accessory view.
+- [var fullScreenAccessoryViewMinHeight: CGFloat](nstoolbar/fullscreenaccessoryviewminheight.md)
+  The minimum height of the toolbar’s full screen accessory view.
+- [var fullScreenAccessoryViewMaxHeight: CGFloat](nstoolbar/fullscreenaccessoryviewmaxheight.md)
+  The maximum height of the toolbar’s full screen accessory view, in points.
+- [var sizeMode: NSToolbar.SizeMode](nstoolbar/sizemode-swift.property.md)
+  The toolbar’s size mode.
 
 
 ---

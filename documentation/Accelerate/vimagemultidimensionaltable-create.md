@@ -36,6 +36,8 @@ A [`vImage_MultidimensionalTable`](vimage_multidimensionaltable.md) applies tran
 
 The following is an example of a simple lookup table that implements the Rec. 709 luminance coefficients to convert from a three-channel RGB image to a single-channel grayscale image. The lookup table is a 3D cube with 32 entries per channel. Supply the lookup values as a contiguous array of samples that defines the lookup table values. The samples have range `0...65535` that the vImage library interprets as the floating-point range `0...1`.
 
+**Swift**:
+
 ```swift
 let entriesPerChannel = UInt8(32)
 let srcChannelCount = 3
@@ -90,6 +92,57 @@ guard let lookupTable = vImageMultidimensionalTable_Create(
 defer {
     vImageMultidimensionalTable_Release(lookupTable)
 } 
+```
+
+**Objective-C**:
+
+```objc
+const uint8_t entriesPerChannel = 32;
+const uint32_t srcChannelCount = 3;
+const uint32_t destChannelCount = 1;
+
+const vImagePixelCount lookupTableElementCount =
+    (vImagePixelCount)pow((double)entriesPerChannel, (double)srcChannelCount) * destChannelCount;
+
+uint16_t *tableData = (uint16_t *)malloc(lookupTableElementCount * sizeof(uint16_t));
+
+const float multiplier = (float)UINT16_MAX;
+vImagePixelCount bufferIndex = 0;
+
+for (uint8_t red = 0; red < entriesPerChannel; red++) {
+    for (uint8_t green = 0; green < entriesPerChannel; green++) {
+        for (uint8_t blue = 0; blue < entriesPerChannel; blue++) {
+            float normalizedRed   = (float)red   / (float)(entriesPerChannel - 1);
+            float normalizedGreen = (float)green / (float)(entriesPerChannel - 1);
+            float normalizedBlue  = (float)blue  / (float)(entriesPerChannel - 1);
+
+            float gray = (normalizedRed   * 0.2126f) +
+                         (normalizedGreen * 0.7152f) +
+                         (normalizedBlue  * 0.0722f);
+
+            tableData[bufferIndex] = (uint16_t)(gray * multiplier);
+            bufferIndex++;
+        }
+    }
+}
+
+const uint8_t entryCountPerSourceChannel[3] = {entriesPerChannel,
+                                                entriesPerChannel,
+                                                entriesPerChannel};
+
+vImage_Error error = kvImageNoError;
+
+vImage_MultidimensionalTable lookupTable =
+    vImageMultidimensionalTable_Create(tableData,
+                                       srcChannelCount,
+                                       destChannelCount,
+                                       entryCountPerSourceChannel,
+                                       kvImageMDTableHint_Float,
+                                       kvImageNoFlags,
+                                       &error);
+
+vImageMultidimensionalTable_Release(lookupTable);
+free(tableData);
 ```
 
 ## Parameters

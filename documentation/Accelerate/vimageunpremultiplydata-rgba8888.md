@@ -28,7 +28,7 @@ func vImageUnpremultiplyData_RGBA8888(_ src: UnsafePointer<vImage_Buffer>, _ des
 
 This function divides color channels by the alpha channel using the following code:
 
-```swift
+```c
 uint8_t destColor = ( MIN(src_color, alpha) * 255 + alpha/2) / alpha;
 uint8_t destAlpha = alpha;
 ```

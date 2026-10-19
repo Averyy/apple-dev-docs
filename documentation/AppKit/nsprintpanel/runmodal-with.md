@@ -25,8 +25,6 @@ func runModal(with printInfo: NSPrintInfo) -> Int
 ## See Also
 
 - [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPrintPanel.Result) -> Void)?)](nsprintpanel/beginsheet(using:on:completionhandler:).md)
-- [func beginSheet(with: NSPrintInfo, modalFor: NSWindow, delegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsprintpanel/beginsheet(with:modalfor:delegate:didend:contextinfo:).md)
-  Displays a Print panel sheet and runs it modally for the specified window.
 - [func runModal() -> Int](nsprintpanel/runmodal.md)
   Displays the Print panel and begins the modal loop.
 

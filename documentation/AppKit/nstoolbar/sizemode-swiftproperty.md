@@ -20,6 +20,10 @@ If there’s no icon of the given size for a toolbar item, the toolbar item crea
 
 ## See Also
 
+- [var showsBaselineSeparator: Bool](nstoolbar/showsbaselineseparator.md)
+  A Boolean value that indicates whether the toolbar shows the separator between the toolbar and the main window contents.
+- [var configuration: [String : Any]](nstoolbar/configuration.md)
+  A dictionary containing the current configuration details for the toolbar.
 - [var centeredItemIdentifier: NSToolbarItem.Identifier?](nstoolbar/centereditemidentifier.md)
   The item to display in the center of the toolbar.
 - [var fullScreenAccessoryView: NSView?](nstoolbar/fullscreenaccessoryview.md)
@@ -28,8 +32,6 @@ If there’s no icon of the given size for a toolbar item, the toolbar item crea
   The minimum height of the toolbar’s full screen accessory view.
 - [var fullScreenAccessoryViewMaxHeight: CGFloat](nstoolbar/fullscreenaccessoryviewmaxheight.md)
   The maximum height of the toolbar’s full screen accessory view, in points.
-- [NSToolbar.SizeMode](nstoolbar/sizemode-swift.enum.md)
-  Constants that specify toolbar display modes.
 
 
 ---

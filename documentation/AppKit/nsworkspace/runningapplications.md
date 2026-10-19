@@ -48,8 +48,6 @@ You can safely call this method from any of your app’s threads. The method ret
   Returns the frontmost app, which is the app that receives key events.
 - [var menuBarOwningApplication: NSRunningApplication?](nsworkspace/menubarowningapplication.md)
   Returns the app that owns the currently displayed menu bar.
-- [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](nsworkspace/getinfoforfile(_:application:type:).md)
-  Retrieves information about the specified file.
 
 
 ---

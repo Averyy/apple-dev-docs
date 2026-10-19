@@ -24,7 +24,7 @@ struct EntityIdentifier
 
 The value used should be unique across all entities of the given type. Entities which are relevant across executions of the application should have stable identifiers that persist across executions.
 
-Entities, by default, conform to the `Identifiable` protocol. Use a type for the `id` that conforms to [`EntityIdentifierConvertible`](entityidentifierconvertible.md). Default implementations for `String`, `UUID` and `Int` are provided.
+Entities, by default, conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol. Use a type for the `id` that conforms to [`EntityIdentifierConvertible`](entityidentifierconvertible.md). Default implementations for `String`, `UUID` and `Int` are provided.
 
 For example:
 
@@ -36,13 +36,12 @@ struct Song: AppEntity {
 
 #### Cross Device Stable Identifiers
 
-For entities that adopt `_SyncableEntity`, the framework automatically extracts stable identifiers for cross-device session syncing:
+For entities that adopt [`SyncableEntity`](syncableentity.md), the framework automatically extracts stable identifiers for cross-device session syncing:
 
-- **Passthrough case**: If your entity’s ID is already stable across devices (like server UUIDs), just adopt `_SyncableEntity` with no other changes. The framework uses your ID as both the local and stable identifier.
-- **Mapped case**: If your entity has different local and stable identifiers, use `_SyncableEntityIdentifier` as your ID type. The framework extracts the stable ID from the wrapper.
-- **Custom identifier case**: If your entity uses a custom ID type that conforms to `_SyncableEntityIdentifierProviding`, the framework extracts the stable ID via the protocol’s `stableIdentifierString` property.
+- **Passthrough case**: If your entity’s ID is already stable across devices (like server UUIDs), just adopt [`SyncableEntity`](syncableentity.md) with no other changes. The framework uses your ID as both the local and stable identifier.
+- **Mapped case**: If your entity has different local and stable identifiers, use [`SyncableEntityIdentifier`](syncableentityidentifier.md) as your ID type. The framework extracts the stable ID from the wrapper.
 
-Apps never interact with `EntityIdentifier.stableIdentifier` directly - they work with their entity’s ID type (plain types like `UUID`, `_SyncableEntityIdentifier` for mapped IDs, or custom types conforming to `_SyncableEntityIdentifierProviding`).
+Apps never interact with `EntityIdentifier.stableIdentifier` directly - they work with their entity’s ID type (plain types like [`UUID`](https://developer.apple.com/documentation/foundation/uuid), or [`SyncableEntityIdentifier`](syncableentityidentifier.md) for mapped IDs).
 
 The stable identifier is NOT used for equality or hashing - two `EntityIdentifier` instances are equal if they have the same type and local identifier, regardless of stable identifier value.
 

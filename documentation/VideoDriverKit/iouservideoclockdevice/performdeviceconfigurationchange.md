@@ -6,7 +6,7 @@
 The host calls this method to allow the clock device to perform a configuration change.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

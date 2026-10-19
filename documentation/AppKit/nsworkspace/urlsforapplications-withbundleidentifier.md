@@ -48,8 +48,6 @@ The system sorts the resulting array accounts according to each app’s suitabil
   Returns an array of running apps.
 - [var menuBarOwningApplication: NSRunningApplication?](nsworkspace/menubarowningapplication.md)
   Returns the app that owns the currently displayed menu bar.
-- [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](nsworkspace/getinfoforfile(_:application:type:).md)
-  Retrieves information about the specified file.
 
 
 ---

@@ -29,7 +29,6 @@ Apply these styles to the [`backgroundStyle`](nscell/backgroundstyle.md) or [`in
   A style that makes the background appear higher than the content drawn on it.
 - [NSView.BackgroundStyle.lowered](nsview/backgroundstyle/lowered.md)
   A style that makes the background appear lower than the content drawn on it.
-### Deprecated
 - [static var light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
   The background is a light color.
 - [static var dark: NSView.BackgroundStyle](nsview/backgroundstyle/dark.md)
@@ -55,8 +54,6 @@ Apply these styles to the [`backgroundStyle`](nscell/backgroundstyle.md) or [`in
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
 - [var isOpaque: Bool](nscell/isopaque.md)
   A Boolean value indicating whether the cell is completely opaque.
-- [var controlTint: NSControlTint](nscell/controltint.md)
-  The cell’s control tint.
 - [var backgroundStyle: NSView.BackgroundStyle](nscell/backgroundstyle.md)
   The cell’s background style.
 - [var interiorBackgroundStyle: NSView.BackgroundStyle](nscell/interiorbackgroundstyle.md)

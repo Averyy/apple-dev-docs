@@ -47,6 +47,40 @@ The following special values of `x` and `y` produce the given value of `z`:
 | `+/-inf` | `-inf` | `+/-3pi/4` |
 | `+/-inf` | `+inf` | `+/-pi/4` |
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var y: [Float] = [1, 1, -1]
+var x: [Float] = [1, -1, 1]
+var z = [Float](repeating: 0, count: y.count)
+var n = Int32(y.count)
+
+// Calculate the arctangent of `y[i] / x[i]`, using the signs of both
+// arguments to place the result in the correct quadrant.
+vvatan2f(&z, &y, &x, &n)
+
+// Prints "[0.7853982, 2.3561945, -0.7853982]".
+print(z)
+```
+
+**Objective-C**:
+
+```objc
+float y[3] = {1, 1, -1};
+float x[3] = {1, -1, 1};
+float z[3];
+int n = 3;
+
+// Calculate the arctangent of `y[i] / x[i]`, using the signs of both
+// arguments to place the result in the correct quadrant.
+vvatan2f(z, y, x, &n);
+
+// Prints "[0.785398, 2.35619, -0.785398]".
+printf("[%g, %g, %g]\n", z[0], z[1], z[2]);
+```
+
 ## See Also
 
 - [static func acos<U>(U) -> [Double]](vforce/acos(_:)-8srk.md)

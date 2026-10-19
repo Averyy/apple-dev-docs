@@ -30,13 +30,6 @@ The [`NSPathControl`](nspathcontrol.md) class uses [`NSPathCell`](nspathcell.md)
 ### Setting the Background Color
 - [var backgroundColor: NSColor?](nspathcontrol/backgroundcolor.md)
   The receiver’s background color.
-### Managing Path Components
-- [func clickedPathComponentCell() -> NSPathComponentCell?](nspathcontrol/clickedpathcomponentcell.md)
-  Returns the clicked cell.
-- [func pathComponentCells() -> [NSPathComponentCell]](nspathcontrol/pathcomponentcells.md)
-  Returns an array of the `NSPathComponentCell` objects currently being displayed.
-- [func setPathComponentCells([NSPathComponentCell])](nspathcontrol/setpathcomponentcells(_:).md)
-  Sets the array of `NSPathComponentCell` objects currently being displayed.
 ### Setting the Double-Click Action
 - [var doubleAction: Selector?](nspathcontrol/doubleaction.md)
   The receiver’s double-click action method.
@@ -62,6 +55,13 @@ The [`NSPathControl`](nspathcontrol.md) class uses [`NSPathCell`](nspathcell.md)
 ### Enumerations
 - [NSPathControl.Style](nspathcontrol/style.md)
   `NSPathStyle` constants represent the different visual and behavioral styles an `NSPathControl` or `NSPathCell` object can have.
+### Deprecated
+- [func clickedPathComponentCell() -> NSPathComponentCell?](nspathcontrol/clickedpathcomponentcell.md)
+  Returns the clicked cell.
+- [func pathComponentCells() -> [NSPathComponentCell]](nspathcontrol/pathcomponentcells.md)
+  Returns an array of the `NSPathComponentCell` objects currently being displayed.
+- [func setPathComponentCells([NSPathComponentCell])](nspathcontrol/setpathcomponentcells(_:).md)
+  Sets the array of `NSPathComponentCell` objects currently being displayed.
 
 ## Relationships
 

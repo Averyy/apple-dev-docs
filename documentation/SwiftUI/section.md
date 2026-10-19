@@ -56,7 +56,7 @@ Create sections that expand and collapse by using an initializer that accepts an
   Creates a section with the provided section content.
 - [init(isExpanded:content:header:)](section/init(isexpanded:content:header:).md)
   Creates a section with the provided section content.
-### Deprecated symbols
+### Deprecated
 - [init(header: Parent, content: () -> Content)](section/init(header:content:).md)
   Creates a section with a header and the provided section content.
 - [init(footer: Footer, content: () -> Content)](section/init(footer:content:).md)

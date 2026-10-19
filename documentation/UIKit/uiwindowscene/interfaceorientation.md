@@ -25,6 +25,8 @@ The interface orientation normally corresponds to the device orientation, but it
 
 - [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
   The coordinate space occupied by the scene.
+- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
+  The placement of a window scene relative to other scenes in the workspace.
 
 
 ---

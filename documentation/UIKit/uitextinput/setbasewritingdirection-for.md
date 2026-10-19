@@ -32,6 +32,8 @@ func setBaseWritingDirection(_ writingDirection: NSWritingDirection, for range: 
   Returns a text range from a specified text position to its farthest extent in a certain direction of layout.
 - [func baseWritingDirection(for: UITextPosition, in: UITextStorageDirection) -> NSWritingDirection](uitextinput/basewritingdirection(for:in:).md)
   Returns the base writing direction for a position in the text going in a certain direction.
+- [typealias UITextWritingDirection](uitextwritingdirection.md)
+  The writing direction of the text for the language.
 
 
 ---

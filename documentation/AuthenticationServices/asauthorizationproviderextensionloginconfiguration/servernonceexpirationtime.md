@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- macOS 27.2+ (Beta)
+- macOS 27.2+
 
 ## Declaration
 

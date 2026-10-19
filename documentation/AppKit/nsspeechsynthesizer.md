@@ -28,7 +28,7 @@ Speech synthesis is just one of the macOS speech technologies. The speech recogn
 
 The speech feedback window ([`Figure 1`](nsspeechsynthesizer#1965715.md)) displays the text recognized from the user’s speech and the text from which an `NSSpeechSynthesizer` object synthesizes speech. Using the feedback window makes spoken exchange more natural and helps the user understand the synthesized speech.
 
-![None](/images/com.apple.appkit/media-1965715.jpg)
+![A screenshot of the speech feedback window. A microphone-style speech control sits in the center. Above it, a label shows the recognized phrase What Time Is It, and below it, a label shows the synthesized reply It’s 10:54.](/images/com.apple.appkit/media-1965715.jpg)
 
 For example, your application may use an [`NSSpeechRecognizer`](nsspeechrecognizer.md) object to listen for the command “Play some music.” When it recognizes this command, your application might then respond by speaking “Which artist?” using a speech synthesizer.
 

@@ -36,8 +36,6 @@ The default implementation of this method returns the original `bounds` rectangl
 
 - [func textRect(forBounds: CGRect) -> CGRect](uitextfield/textrect(forbounds:).md)
   Returns the drawing rectangle for the text field’s text.
-- [func drawText(in: CGRect)](uitextfield/drawtext(in:).md)
-  Draws the text field’s text in the specified rectangle.
 - [func placeholderRect(forBounds: CGRect) -> CGRect](uitextfield/placeholderrect(forbounds:).md)
   Returns the drawing rectangle for the text field’s placeholder text.
 - [func drawPlaceholder(in: CGRect)](uitextfield/drawplaceholder(in:).md)
@@ -50,6 +48,8 @@ The default implementation of this method returns the original `bounds` rectangl
   Returns the drawing rectangle of the text field’s left overlay view.
 - [func rightViewRect(forBounds: CGRect) -> CGRect](uitextfield/rightviewrect(forbounds:).md)
   Returns the drawing location of the text field’s right overlay view.
+- [func drawText(in: CGRect)](uitextfield/drawtext(in:).md)
+  Draws the text field’s text in the specified rectangle.
 
 
 ---

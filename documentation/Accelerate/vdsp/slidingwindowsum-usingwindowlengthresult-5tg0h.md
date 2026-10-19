@@ -26,7 +26,7 @@ Use this function to populate an output vector with the consecutive sums of valu
 
 The number of elements in the output vector must be the same as the number of elements in the input vector. This is because although the function only writes the number of window positions to the output vector, it may require additional elements for intermediate computation.
 
-The following code shows how to compute the sums of values in a three-element sliding window moved through a ten-element array. The code processes every element in the input array, and the output result contains eight values.
+The following code shows how to compute the sums of values in a three-element sliding window moved through a ten-element array. The code processes every element in the input array, and the output result contains eight values:
 
 ```swift
 let input: [Float] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -77,7 +77,7 @@ input.withUnsafeBufferPointer { srcPtr in
                 windowLength)
 }
 
-// Prints "[36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0]"
+// Prints "[36.0, 39.0, 42.0, 45.0, 48.0, 51.0, 54.0, 57.0]".
 print(output[0 ..< Int(outputCount)])
 ```
 

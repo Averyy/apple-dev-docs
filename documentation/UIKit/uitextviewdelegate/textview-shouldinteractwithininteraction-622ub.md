@@ -45,6 +45,10 @@ This method is called on only the first interaction with the URL link. For examp
   Asks the delegate whether the specified text view allows user interaction with the specified URL in the specified range of text.
 - [enum UITextItemInteraction](uitextiteminteraction.md)
   Constants that indicate the type of interaction the user expects to have with a URL or text attachment.
+- [func textView(UITextView, shouldChangeTextIn: NSRange, replacementText: String) -> Bool](uitextviewdelegate/textview(_:shouldchangetextin:replacementtext:).md)
+  Asks the delegate whether to replace the specified text in the text view.
+- [func textView(UITextView, editMenuForTextIn: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?](uitextviewdelegate/textview(_:editmenufortextin:suggestedactions:).md)
+  Asks the delegate for the menu to display in the text view, based on the text range and actions the system provides.
 
 
 ---

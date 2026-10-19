@@ -22,10 +22,6 @@ The value of this property is a mask that indicates the modifier keys that are a
 
 - [var keyEquivalent: String](nsbuttoncell/keyequivalent.md)
   The button’s key-equivalent character.
-- [var keyEquivalentFont: NSFont?](nsbuttoncell/keyequivalentfont.md)
-  The font used to draw the button’s key equivalent.
-- [func setKeyEquivalentFont(String, size: CGFloat)](nsbuttoncell/setkeyequivalentfont(_:size:).md)
-  Sets by name and size of the font used to draw the key equivalent.
 
 
 ---

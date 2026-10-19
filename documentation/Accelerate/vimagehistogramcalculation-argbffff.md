@@ -26,35 +26,91 @@ func vImageHistogramCalculation_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, _ 
 
 #### Discussion
 
-The following code populates the `histogramAlpha` , `histogramRed`, `histogramGreen`, and `histogramBlue` arrays with the histograms for each channel of the specified [`vImage_Buffer`](vimage_buffer.md) structure.
+The following code populates the `histogramAlpha` , `histogramRed`, `histogramGreen`, and `histogramBlue` arrays with the histograms for each channel of the specified [`vImage_Buffer`](vimage_buffer.md) structure:
+
+**Swift**:
 
 ```swift
+let source = vImage.PixelBuffer<vImage.InterleavedFx4>(
+    pixelValues: [0.1, 0.2, 0.3, 0.4,
+                  0.5, 0.6, 0.7, 0.8],
+    size: .init(width: 1, height: 2))
+
 let entryCount = 64
 var histogramAlpha = [vImagePixelCount](repeating: 0, count: entryCount)
 var histogramRed = [vImagePixelCount](repeating: 0, count: entryCount)
 var histogramGreen = [vImagePixelCount](repeating: 0, count: entryCount)
 var histogramBlue = [vImagePixelCount](repeating: 0, count: entryCount)
 
-histogramAlpha.withUnsafeMutableBufferPointer { zeroPtr in
-    histogramRed.withUnsafeMutableBufferPointer { onePtr in
-        histogramGreen.withUnsafeMutableBufferPointer { twoPtr in
-            histogramBlue.withUnsafeMutableBufferPointer { threePtr in
-                
-                var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,
-                                     twoPtr.baseAddress, threePtr.baseAddress]
-                
-                histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in
-                    // `buffer` is a `vImage_Buffer` structure.
-                    _ = vImageHistogramCalculation_ARGBFFFF(&buffer,
-                                                            histogramBinsPtr.baseAddress!,
-                                                            UInt32(entryCount),
-                                                            0, 1,
-                                                            vImage_Flags(kvImageNoFlags))
+source.withUnsafePointerToVImageBuffer { src in
+    histogramAlpha.withUnsafeMutableBufferPointer { zeroPtr in
+        histogramRed.withUnsafeMutableBufferPointer { onePtr in
+            histogramGreen.withUnsafeMutableBufferPointer { twoPtr in
+                histogramBlue.withUnsafeMutableBufferPointer { threePtr in
+                    
+                    var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,
+                                         twoPtr.baseAddress, threePtr.baseAddress]
+                    
+                    histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in
+                        _ = vImageHistogramCalculation_ARGBFFFF(src,
+                                                                histogramBinsPtr.baseAddress!,
+                                                                UInt32(entryCount),
+                                                                0, 1,
+                                                                vImage_Flags(kvImageNoFlags))
+                    }
                 }
             }
         }
     }
 }
+
+// Prints:
+// Alpha: 1 1
+// Red:   1 1
+// Green: 1 1
+// Blue:  1 1
+print("Alpha:", histogramAlpha[6],  histogramAlpha[32])
+print("Red:  ", histogramRed[12],   histogramRed[38])
+print("Green:", histogramGreen[19], histogramGreen[44])
+print("Blue: ", histogramBlue[25],  histogramBlue[51])
+```
+
+**Objective-C**:
+
+```objc
+float src[8] = {0.1f, 0.2f, 0.3f, 0.4f,
+                0.5f, 0.6f, 0.7f, 0.8f};
+
+vImage_Buffer srcBuf = {
+    .data = src,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 16
+};
+
+unsigned int entryCount = 64;
+vImagePixelCount histogramAlpha[64] = {0};
+vImagePixelCount histogramRed[64]   = {0};
+vImagePixelCount histogramGreen[64] = {0};
+vImagePixelCount histogramBlue[64]  = {0};
+
+vImagePixelCount *histogramBins[4] = {
+    histogramAlpha, histogramRed, histogramGreen, histogramBlue
+};
+
+vImageHistogramCalculation_ARGBFFFF(&srcBuf, histogramBins,
+                                    entryCount, 0, 1,
+                                    kvImageNoFlags);
+
+// Prints:
+// Alpha: 1 1
+// Red:   1 1
+// Green: 1 1
+// Blue:  1 1
+printf("Alpha: %lu %lu\n", (unsigned long)histogramAlpha[6],  (unsigned long)histogramAlpha[32]);
+printf("Red:   %lu %lu\n", (unsigned long)histogramRed[12],   (unsigned long)histogramRed[38]);
+printf("Green: %lu %lu\n", (unsigned long)histogramGreen[19], (unsigned long)histogramGreen[44]);
+printf("Blue:  %lu %lu\n", (unsigned long)histogramBlue[25],  (unsigned long)histogramBlue[51]);
 ```
 
 ## Parameters

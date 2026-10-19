@@ -6,7 +6,7 @@
 Sets the current control value.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

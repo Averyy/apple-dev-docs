@@ -77,12 +77,14 @@ To customize the presentation or dismissal of the search results controller, set
   The placement of the search bar in the navigation bar.
 - [var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool](uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md)
   A Boolean value you use to specify whether the search controller prevents search suggestions from displaying for a stacked search bar.
-- [var automaticallyShowsScopeBar: Bool](uisearchcontroller/automaticallyshowsscopebar.md)
-  A Boolean indicating whether the search controller manages the visibility of the search bar’s scope bar.
 - [var scopeBarActivation: UISearchController.ScopeBarActivation](uisearchcontroller/scopebaractivation-swift.property.md)
   A mode that determines when the search controller shows and hides the scope bar.
 - [UISearchController.ScopeBarActivation](uisearchcontroller/scopebaractivation-swift.enum.md)
   Constants that specify the modes for showing and hiding the scope bar.
+- [var automaticallyShowsScopeBar: Bool](uisearchcontroller/automaticallyshowsscopebar.md)
+  A Boolean indicating whether the search controller manages the visibility of the search bar’s scope bar.
+- [var dimsBackgroundDuringPresentation: Bool](uisearchcontroller/dimsbackgroundduringpresentation.md)
+  A Boolean indicating whether to dim the underlying content during a search.
 ### Providing search suggestions
 - [var searchSuggestions: [any UISearchSuggestion]?](uisearchcontroller/searchsuggestions.md)
   A list of suggestions to offer as shortcuts below the search field.
@@ -95,8 +97,6 @@ To customize the presentation or dismissal of the search results controller, set
 ### Deprecated
 - [var searchControllerObservedScrollView: UIScrollView?](uisearchcontroller/searchcontrollerobservedscrollview.md)
   The view with which the controller coordinates scrolling animations.
-- [var dimsBackgroundDuringPresentation: Bool](uisearchcontroller/dimsbackgroundduringpresentation.md)
-  A Boolean indicating whether to dim the underlying content during a search.
 
 ## Relationships
 

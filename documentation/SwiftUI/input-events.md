@@ -50,8 +50,6 @@ For design guidance, see [`Inputs`](https://developer.apple.com/design/human-int
 ### Responding to hover events
 - [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
-- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
-  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 - [func hoverEffect(_:isEnabled:)](view/hovereffect(_:isenabled:).md)
   Applies a hover effect to this view.
 - [func hoverEffectDisabled(Bool) -> some View](view/hovereffectdisabled(_:).md)
@@ -68,6 +66,8 @@ For design guidance, see [`Inputs`](https://developer.apple.com/design/human-int
   Presents an ornament on hover using a custom effect.
 - [struct OrnamentHoverEffect](ornamenthovereffect.md)
   Presents an ornament on hover.
+- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
+  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 ### Modifying pointer appearance
 - [func pointerStyle(PointerStyle?) -> some View](view/pointerstyle(_:).md)
   Sets the pointer style to display when the pointer is over the view.

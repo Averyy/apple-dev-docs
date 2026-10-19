@@ -34,6 +34,8 @@ static let control: EventModifiers
   The Option key.
 - [static let shift: EventModifiers](eventmodifiers/shift.md)
   The Shift key.
+- [static let function: EventModifiers](eventmodifiers/function.md)
+  The Function key.
 
 
 ---

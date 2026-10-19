@@ -15,12 +15,12 @@ Show, hide, minimize, arrange, and update your app’s windows.
   Returns the window corresponding to the specified window number.
 - [var windows: [NSWindow]](nsapplication/windows.md)
   An array of the app’s window objects.
-- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
-  Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 - [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](nsapplication/enumeratewindows(options:using:).md)
   Executes a block for each of the app’s windows.
 - [NSApplication.WindowListOptions](nsapplication/windowlistoptions.md)
   This constant indicates a window ordering.
+- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
+  Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 ### Minimizing Windows
 - [func miniaturizeAll(Any?)](nsapplication/miniaturizeall(_:).md)
   Miniaturizes all the receiver’s windows.
@@ -43,9 +43,6 @@ Show, hide, minimize, arrange, and update your app’s windows.
   Suppresses the usual window ordering in handling the most recent mouse-down event.
 - [func arrangeInFront(Any?)](nsapplication/arrangeinfront(_:).md)
   Arranges windows listed in the Window menu in front of all other windows.
-### Drawing Windows
-- [var context: NSGraphicsContext?](nsapplication/context.md)
-  The graphics context associated with the app.
 ### Getting the Occlusion State
 - [var occlusionState: NSApplication.OcclusionState](nsapplication/occlusionstate-swift.property.md)
   The occlusion state of the app.
@@ -66,6 +63,9 @@ Show, hide, minimize, arrange, and update your app’s windows.
   The priority at which cursor rects are reset.
 - [class var updateWindowsRunLoopOrdering: Int](nsapplication/updatewindowsrunloopordering.md)
   Run-loop message priority for handling window updates.
+### Drawing Windows
+- [var context: NSGraphicsContext?](nsapplication/context.md)
+  The graphics context associated with the app.
 
 ## See Also
 

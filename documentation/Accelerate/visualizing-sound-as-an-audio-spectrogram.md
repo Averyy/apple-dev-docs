@@ -99,7 +99,7 @@ forwardDCT.transform(timeDomainBuffer,
 
 ##### Define the Pseudocolor Multidimensional Lookup Tables
 
-The following code creates a [`vImage.MultidimensionalLookupTable`](vimage/multidimensionallookuptable.md) that the sample uses to create the pseudocolor rendering. The function returns dark blue for low values, graduates through red, and returns full-brightness green for `1.0`.
+The following code creates a [`vImage.MultidimensionalLookupTable`](vimage/multidimensionallookuptable.md) that the sample uses to create the pseudocolor rendering. The function returns dark blue for low values, graduates through red, and returns full-brightness green for `1.0`:
 
 ```swift
 static var multidimensionalLookupTable: vImage.MultidimensionalLookupTable = {
@@ -169,7 +169,7 @@ The following image shows the color that the function returns with inputs from `
 
 To display the audio spectrogram, the app creates a temporary planar [`vImage.PixelBuffer`](vimage/pixelbuffer.md) that shares memory with the frequency-domain values.
 
-The following code applies the multidimensional lookup table to the grayscale information in the temporary buffer to populate three planar buffers that represent the red, green, and blue channels. Because the vImage functions that generate a Core Graphics image from a pixel buffer require an interleaved buffer, the code interleaves the red, green, and blue buffer into `rgbImageBuffer`.
+The following code applies the multidimensional lookup table to the grayscale information in the temporary buffer to populate three planar buffers that represent the red, green, and blue channels. Because the vImage functions that generate a Core Graphics image from a pixel buffer require an interleaved buffer, the code interleaves the red, green, and blue buffer into `rgbImageBuffer`:
 
 ```swift
 func makeAudioSpectrogramImage() -> CGImage {

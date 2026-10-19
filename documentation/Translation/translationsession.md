@@ -102,8 +102,7 @@ struct TranslationExample: View {
 
 - [Translating text within your app](translating-text-within-your-app.md)
   Display simple system translations and create custom translation experiences.
-- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View
-](../swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
+- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View\n](../swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
   Presents a translation popover when a given condition is true.
 - [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View
 ](../swiftui/view/translationtask(_:action:).md)

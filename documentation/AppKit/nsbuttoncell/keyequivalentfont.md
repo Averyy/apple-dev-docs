@@ -24,12 +24,8 @@ Note that the default font is the same as the font used to draw the title.
 
 - [var font: NSFont?](nscell/font.md)
   The font that the cell uses to display text.
-- [var keyEquivalent: String](nsbuttoncell/keyequivalent.md)
-  The button’s key-equivalent character.
-- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsbuttoncell/keyequivalentmodifiermask.md)
-  The mask that identifies the modifier keys for the button’s key equivalent.
-- [func setKeyEquivalentFont(String, size: CGFloat)](nsbuttoncell/setkeyequivalentfont(_:size:).md)
-  Sets by name and size of the font used to draw the key equivalent.
+- [var gradientType: NSButton.GradientType](nsbuttoncell/gradienttype.md)
+  The gradient of the button’s border.
 
 
 ---

@@ -22,7 +22,7 @@ static func multiply<T, U, V>(addition: (a: T, b: U), _ scalar: Double, result: 
 
 #### Discussion
 
-This function calculates the element-wise sum of vectors `A` and `B`, multiplies the sum by scalar value `C`, and writes the result to vector `D`.
+This function calculates the element-wise sum of vectors `A` and `B`, multiplies the sum by scalar value `C`, and writes the result to vector `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

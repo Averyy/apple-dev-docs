@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Creates an overlay arrangement that supports laying out its views along the given axes.
+Creates an overlay arrangement that lays out its views along the axes you provide.
 
 **Availability**:
 - iOS 27.1+
@@ -20,6 +20,10 @@ Creates an overlay arrangement that supports laying out its views along the give
 nonisolated
 func axes(_ axes: Axis.Set) -> OverlayArrangementViewStyle
 ```
+
+#### Overview
+
+For axes that you don’t include, the arrangement view only displays the primary view.
 
 
 ---

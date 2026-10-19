@@ -1,4 +1,4 @@
 Completed scraping Wi-Fi Aware!
-Total pages scraped: 169
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 170
 Pages failed: 0

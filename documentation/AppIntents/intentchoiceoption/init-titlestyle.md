@@ -23,7 +23,7 @@ init(title: LocalizedStringResource, style: IntentChoiceOption.Style = .default)
 ## Parameters
 
 - `title`: The localized text to display for this option.
-- `style`: The visual style to apply; for example,  `AppIntents/IntentChoiceOption/destructive` or [`cancel`](intentchoiceoption/cancel.md). By default, the `style` for an intent choice option is `AppIntents/IntentChoiceOption/default`.
+- `style`: The visual style to apply; for example,  [`destructive`](intentchoiceoption/style-swift.struct/destructive.md) or [`cancel`](intentchoiceoption/style-swift.struct/cancel.md). By default, the `style` for an intent choice option is [`default`](intentchoiceoption/style-swift.struct/default.md).
 
 
 ---

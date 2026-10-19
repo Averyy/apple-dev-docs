@@ -1,4 +1,4 @@
 Completed scraping Virtualization!
-Total pages scraped: 629
-Pages skipped (unchanged): 21
+Total pages scraped: 0
+Pages skipped (unchanged): 650
 Pages failed: 0

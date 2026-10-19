@@ -71,8 +71,6 @@ Depending on the specified bars, the requested color scheme may not be able to b
 
 ## See Also
 
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
-  Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 - [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](view/toolbarforegroundstyle(_:for:).md)
   Specifies the preferred foreground style of bars managed by SwiftUI.
 - [func windowToolbarStyle<S>(S) -> some Scene](scene/windowtoolbarstyle(_:).md)
@@ -85,6 +83,8 @@ Depending on the specified bars, the requested color scheme may not be able to b
   The label style of a toolbar.
 - [struct SpacerSizing](spacersizing.md)
   A type which defines how spacers should size themselves.
+- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
+  Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 
 
 ---

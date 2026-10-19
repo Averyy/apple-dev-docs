@@ -22,11 +22,10 @@ init<Entity>(for entityType: Entity.Type, identifier: Entity.ID) where Entity : 
 
 #### Discussion
 
-For entity types adopting `_SyncableEntity`, this initializer extracts the stable ID:
+For entity types adopting [`SyncableEntity`](syncableentity.md), this initializer extracts the stable ID:
 
-- **Passthrough case**: If the ID is already stable (like `UUID`), it’s used as both local and stable ID
-- **Mapped case**: If the ID uses `_SyncableEntityIdentifier`, the stable ID is extracted from the wrapper
-- **Custom identifier case**: If the ID conforms to `_SyncableEntityIdentifierProviding`, the stable ID is extracted via `stableIdentifierString`
+- **Passthrough case**: If the ID is already stable (like [`UUID`](https://developer.apple.com/documentation/foundation/uuid)), it’s used as both local and stable ID
+- **Mapped case**: If the ID uses [`SyncableEntityIdentifier`](syncableentityidentifier.md), the stable ID is extracted from the wrapper
 
 ## Parameters
 

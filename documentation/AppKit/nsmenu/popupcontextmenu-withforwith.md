@@ -29,8 +29,6 @@ Specifying a font using the font parameter is discouraged. Instead, set the menu
 
 - [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView)](nsmenu/popupcontextmenu(_:with:for:).md)
   Displays a contextual menu over a view for an event.
-- [func helpRequested(with: NSEvent)](nsmenu/helprequested(with:).md)
-  Overridden by subclasses to implement specialized context-sensitive help behavior.
 - [func popUp(positioning: NSMenuItem?, at: NSPoint, in: NSView?) -> Bool](nsmenu/popup(positioning:at:in:).md)
   Pops up the menu at the specified location.
 

@@ -22,6 +22,8 @@ Sends `notification` and `userInfo` to any assistive apps that register to recei
 
 - [static func post(element: Any, notification: NSAccessibility.Notification)](nsaccessibility-swift.struct/post(element:notification:).md)
   Sends a notification to any observing assistive apps.
+- [static func raiseBadArgumentException(Any!, NSAccessibility.Attribute!, Any!)](nsaccessibility-swift.struct/raisebadargumentexception(_:_:_:).md)
+  Raises an error if the parameter is the wrong type or has an illegal value
 
 
 ---

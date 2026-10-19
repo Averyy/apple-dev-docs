@@ -24,8 +24,6 @@ var isTransparent: Bool { get set }
   The rectangle in which the receiver’s border is drawn.
 - [var boxType: NSBox.BoxType](nsbox/boxtype-swift.property.md)
   The receiver’s box type.
-- [var borderType: NSBorderType](nsbox/bordertype.md)
-  The receiver’s border type.
 - [var title: String](nsbox/title.md)
   The receiver’s title.
 - [var titleFont: NSFont](nsbox/titlefont.md)
@@ -36,6 +34,8 @@ var isTransparent: Bool { get set }
   The cell used to display the receiver’s title.
 - [var titleRect: NSRect](nsbox/titlerect.md)
   The rectangle in which the receiver’s title is drawn.
+- [var borderType: NSBorderType](nsbox/bordertype.md)
+  The receiver’s border type.
 
 
 ---

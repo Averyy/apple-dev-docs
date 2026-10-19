@@ -26,7 +26,7 @@ The output vector `E` in `E = (A - B) * (C - D)`.
 
 #### Discussion
 
-This function calculates the products of the first `N` elements of the subtraction of vectors `A` and `B` and the subtraction of vectors `C` and `D`.
+This function calculates the products of the first `N` elements of the subtraction of vectors `A` and `B` and the subtraction of vectors `C` and `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

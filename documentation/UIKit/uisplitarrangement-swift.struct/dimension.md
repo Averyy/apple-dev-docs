@@ -22,13 +22,13 @@ struct Dimension
 
 ### Getting a dimension
 - [static var automatic: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/automatic.md)
-  The automatic dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement follows automatic rules.
 - [static var intrinsic: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/intrinsic.md)
-  The intrinsic dimension for a split arrangement based on intrinsic content size.
+  A dimension that indicates sizing for a view in a split arrangement uses intrinsic content size.
 - [static func absolute(CGFloat) -> UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/absolute(_:).md)
-  An absolute dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement uses the float value you provide, expressed in points.
 - [static func fractional(CGFloat) -> UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/fractional(_:).md)
-  A fractional dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement uses the float value you provide as a fraction.
 
 ## Relationships
 
@@ -41,7 +41,7 @@ struct Dimension
 ## See Also
 
 - [func axes(UIAxis) -> UISplitArrangement](uisplitarrangement-swift.struct/axes(_:).md)
-  Sets the axes of the arrangement.
+  Sets the axes that the arrangement supports to the axes you provide.
 - [UISplitArrangement.DimensionRange](uisplitarrangement-swift.struct/dimensionrange.md)
   A range of dimensions defining the minimum, preferred, and maximum size for a view within a split arrangement.
 

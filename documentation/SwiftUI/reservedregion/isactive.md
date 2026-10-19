@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-Whether the region is active.
+A Boolean value that indicates whether the region is active.
 
 **Availability**:
 - iOS 27.1+
@@ -20,20 +20,11 @@ Whether the region is active.
 var isActive: Bool { get }
 ```
 
-## See Also
+#### Discussion
 
-- [var id: ReservedRegion.ID](reservedregion/id-swift.property.md)
-  The identifier of the region.
-- [ReservedRegion.ID](reservedregion/id-swift.struct.md)
-  An identifier for a reserved region.
-- [var frame: CGRect](reservedregion/frame.md)
-  The rect of the region in the view’s coordinate space, including the margins.
-- [var kind: ReservedRegion.Kind](reservedregion/kind-swift.property.md)
-  The kind of the region.
-- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
-  A kind of reserved region.
-- [var margins: EdgeInsets](reservedregion/margins.md)
-  The margins included in the frame around the rect for interactive content.
+A region can become active or inactive as conditions change. An active region currently affects your view. An inactive region doesn’t. For example, the fold of iPhone Duo is active when the device is partially open, and inactive when it’s fully open.
+
+By default, [`reservedRegions(kind:options:layoutDirectionBehavior:)`](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md) returns only active regions. To also get inactive regions, pass [`includeInactive`](reservedregion/queryoptions/includeinactive.md).
 
 
 ---

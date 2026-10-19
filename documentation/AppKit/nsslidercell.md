@@ -77,6 +77,9 @@ You can customize an [`NSSliderCell`](nsslidercell.md) to a certain degree, usin
   The position where a linear slider’s tick marks appear (above, below, leading, or trailing).
 - [NSSlider.SliderType](nsslider/slidertype-swift.enum.md)
   The types of sliders, used by [`sliderType`](nsslidercell/slidertype.md).
+### Deprecated
+- [Deprecated symbols](nsslidercell-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

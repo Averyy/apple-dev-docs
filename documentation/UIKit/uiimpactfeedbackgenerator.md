@@ -75,6 +75,8 @@ For more information, read [`Playing haptic feedback in your app`](https://devel
   Creates an impact feedback generator with the specified style and view.
 - [UIImpactFeedbackGenerator.FeedbackStyle](uiimpactfeedbackgenerator/feedbackstyle.md)
   The mass of the objects in the collision simulated by an impact feedback generator object.
+- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](uiimpactfeedbackgenerator/init(style:).md)
+  Creates an impact feedback generator with the specified style.
 ### Reporting impacts
 - [func impactOccurred()](uiimpactfeedbackgenerator/impactoccurred.md)
   Triggers impact feedback.
@@ -84,9 +86,6 @@ For more information, read [`Playing haptic feedback in your app`](https://devel
   Triggers impact feedback at the specified location.
 - [func impactOccurred(intensity: CGFloat, at: CGPoint)](uiimpactfeedbackgenerator/impactoccurred(intensity:at:).md)
   Triggers impact feedback with a specific intensity at the specified location.
-### Deprecated
-- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](uiimpactfeedbackgenerator/init(style:).md)
-  Creates an impact feedback generator with the specified style.
 
 ## Relationships
 

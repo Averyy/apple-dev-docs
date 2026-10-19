@@ -43,14 +43,6 @@ This function may be called from any thread of your app.
   Removes the current bitmap-based graphics context from the top of the stack.
 - [func UIGraphicsGetImageFromCurrentImageContext() -> UIImage?](uigraphicsgetimagefromcurrentimagecontext().md)
   Returns an image from the contents of the current bitmap-based graphics context.
-- [func UIGraphicsGetCurrentContext() -> CGContext?](uigraphicsgetcurrentcontext().md)
-  Returns the current graphics context.
-- [func UIGraphicsPushContext(CGContext)](uigraphicspushcontext(_:).md)
-  Makes the specified graphics context the current context.
-- [func UIGraphicsPopContext()](uigraphicspopcontext().md)
-  Removes the current graphics context from the top of the stack, restoring the previous context.
-- [func UIRectClip(CGRect)](uirectclip(_:).md)
-  Modifies the current clipping path by intersecting it with the specified rectangle.
 
 
 ---

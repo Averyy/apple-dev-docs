@@ -278,17 +278,6 @@ Use the [`isEnabled`](nscontrol/isenabled.md) property to enable or disable the 
   Unhides the specified table rows.
 - [var hiddenRowIndexes: IndexSet](nstableview/hiddenrowindexes.md)
   The indexes of all hidden table rows.
-### Deprecated Methods
-- [func focusedColumn() -> Int](nstableview/focusedcolumn.md)
-  Returns the currently focused column.
-- [func setFocusedColumn(Int)](nstableview/setfocusedcolumn(_:).md)
-  Sets the currently focused column to the specified index.
-- [func shouldFocusCell(NSCell, atColumn: Int, row: Int) -> Bool](nstableview/shouldfocuscell(_:atcolumn:row:).md)
-  Returns whether the fully prepared cell at the specified row and column can be made the focused cell.
-- [func performClickOnCell(atColumn: Int, row: Int)](nstableview/performclickoncell(atcolumn:row:).md)
-  Performs a click action on the cell at the specified row and column.
-- [func preparedCell(atColumn: Int, row: Int) -> NSCell?](nstableview/preparedcell(atcolumn:row:).md)
-  Returns the fully prepared cell that the table view will use for drawing or processing of the specified row and column.
 ### Constants
 - [Specifying a Custom Row View in a Nib File](specifying-a-custom-row-view-in-a-nib-file.md)
   View-based table view instances use `NSTableViewRowKey` to identify the nib file containing the template row view. You can specify a custom row view (without any code) by associating this key with the appropriate nib name in Interface Builder.
@@ -317,6 +306,9 @@ Use the [`isEnabled`](nscontrol/isenabled.md) property to enable or disable the 
   Posted after an `NSTableView` object’s selection changes.
 - [class let selectionIsChangingNotification: NSNotification.Name](nstableview/selectionischangingnotification.md)
   Posted as an `NSTableView` object’s selection changes (while the mouse button is still down).
+### Deprecated
+- [Deprecated symbols](nstableview-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSTableView.ColumnDidMoveMessage](nstableview/columndidmovemessage.md)
 - [NSTableView.ColumnDidResizeMessage](nstableview/columndidresizemessage.md)

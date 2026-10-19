@@ -21,6 +21,11 @@ nonisolated
 init()
 ```
 
+## See Also
+
+- [init(tint: Color)](circularprogressviewstyle/init(tint:).md)
+  Creates a circular progress view style with a tint color.
+
 
 ---
 

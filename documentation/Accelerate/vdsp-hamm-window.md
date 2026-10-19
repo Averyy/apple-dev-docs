@@ -48,6 +48,32 @@ The following illustrates the values of the output vector, `c`:
 
 ![Visualization of a Hamming window.](/images/com.apple.accelerate/media-3233535@2x.png)
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var window = [Float](repeating: 0, count: 5)
+
+// Fill `window` with a full Hamming window.
+vDSP_hamm_window(&window, vDSP_Length(window.count), 0)
+
+// Prints "[0.08000001, 0.39785215, 0.9121479, 0.9121479, 0.39785215]".
+print(window)
+```
+
+**Objective-C**:
+
+```objc
+float window[5];
+
+// Fill `window` with a full Hamming window.
+vDSP_hamm_window(window, 5, 0);
+
+// Prints "[0.08, 0.397852, 0.912148, 0.912148, 0.397852]".
+printf("[%g, %g, %g, %g, %g]\n", window[0], window[1], window[2], window[3], window[4]);
+```
+
 ## Parameters
 
 - `__C`: The output vector.

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-An arrangement view style which splits views.
+An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
 **Availability**:
 - iOS 27.1+
@@ -21,13 +21,63 @@ nonisolated
 struct SplitArrangementViewStyle
 ```
 
+#### Overview
+
+A split arrangement view keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
+
+- In landscape orientation, the arrangement view places the primary view in the leading position and the secondary view in the trailing position.
+- In portrait orientation, the arrangement view places the primary view in the top position and the secondary view in the bottom position.
+- When someone is holding a closed iPhone Duo in landscape orientation, the split arrangement only shows the primary view.
+
+Create a split arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](view/arrangementviewstyle(_:).md) modifier with [`split`](arrangementviewstyle/split.md), as the following example shows:
+
+```swift
+ArrangementView {
+    NowPlayingView()
+} secondary: {
+    LyricsView()
+}
+.arrangementViewStyle(.split)
+```
+
+#### Adjust Layout Sizing in a Split Arrangement
+
+By default, a split arrangement view sizes the primary and secondary views equally when a display has one region. Set a fixed layout size or layout ratio to influence how the arrangement view computes the sizes for each view. In the following example, adding the [`splitArrangementLayoutRatio(_:)`](view/splitarrangementlayoutratio(_:).md) view modifier to `PrimaryContent()` sets a value for a ratio that the arrangement uses to calculate how much of the display’s available space to use for the primary view:
+
+```swift
+ArrangementView {
+    PrimaryContent()
+        .splitArrangementLayoutRatio(0.3)
+} secondary: {
+    SecondaryContent()
+}
+```
+
+Use [`splitArrangementLayoutRatio(_:)`](view/splitarrangementlayoutratio(_:).md) or [`splitArrangementLayoutRatio(minHorizontal:idealHorizontal:maxHorizontal:minVertical:idealVertical:maxVertical:)`](view/splitarrangementlayoutratio(minhorizontal:idealhorizontal:maxhorizontal:minvertical:idealvertical:maxvertical:).md) to specify a ratio for a view, or use [`splitArrangementLayoutSize(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:)`](view/splitarrangementlayoutsize(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:).md) to specify a size for a view. Use the [`splitArrangementFixedLayoutSize(horizontal:vertical:)`](view/splitarrangementfixedlayoutsize(horizontal:vertical:).md) modifier to have the system calculate the preferred size for the view.
+
+#### Limit a Split Arrangement By Orientation
+
+You can limit which axes your split arrangement view supports by specifying the axes for the arrangement view style. The following example shows an arrangement that only splits vertically:
+
+```swift
+ArrangementView {
+    PrimaryContent()
+} secondary: {
+    SecondaryContent()
+}
+.arrangementViewStyle(.split.axes(.vertical))
+```
+
+Use [`axes(_:)`](splitarrangementviewstyle/axes(_:).md) to set the axes for a split arrangement style. For axes that you don’t include, the arrangement view only displays the primary view.
+
 ## Topics
 
 ### Creating a split arrangement view style
 - [init()](splitarrangementviewstyle/init.md)
+  Creates a split arrangement style.
 ### Specifying split arrangement axes
 - [func axes(Axis.Set) -> SplitArrangementViewStyle](splitarrangementviewstyle/axes(_:).md)
-  Creates a split arrangement that supports the given axes.
+  Creates a split arrangement that lays out its views along the axes you provide.
 
 ## Relationships
 
@@ -36,10 +86,16 @@ struct SplitArrangementViewStyle
 
 ## See Also
 
+- [static var automatic: AutomaticArrangementViewStyle](arrangementviewstyle/automatic.md)
+  The default arrangement view style.
 - [struct AutomaticArrangementViewStyle](automaticarrangementviewstyle.md)
   The default arrangement view style.
+- [static var overlay: OverlayArrangementViewStyle](arrangementviewstyle/overlay.md)
+  A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
 - [struct OverlayArrangementViewStyle](overlayarrangementviewstyle.md)
-  An arrangement view style which overlays views.
+  A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
+- [static var split: SplitArrangementViewStyle](arrangementviewstyle/split.md)
+  An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
 
 ---

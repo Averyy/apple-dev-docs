@@ -6,7 +6,7 @@
 The identifier for a terminal type of a speaker for low frequency effects.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

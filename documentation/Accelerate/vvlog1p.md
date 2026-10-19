@@ -30,6 +30,36 @@ func vvlog1p(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 
 If *x* is nearly zero, the expression *log(1+x)* will be highly inaccurate due to floating point rounding errors in *(1+x)*. This function provides an alternative, more accurate means to calculate this value.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Double] = [0, 1, 9]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the natural logarithm of 1 plus each element in `x`.
+vvlog1p(&y, &x, &n)
+
+// Prints "[0.0, 0.6931471805599453, 2.3025850929940455]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+double x[3] = {0, 1, 9};
+double y[3];
+int n = 3;
+
+// Calculate the natural logarithm of 1 plus each element in `x`.
+vvlog1p(y, x, &n);
+
+// Prints "[0, 0.693147, 2.30259]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)

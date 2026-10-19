@@ -18,6 +18,10 @@ Inserts a view of the value as the input with the specified name.
 mutating func insert(_ value: borrowing some InferenceValue.ViewRepresentable & ~Copyable, for inputName: String)
 ```
 
+## Mentions
+
+- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+
 ## Parameters
 
 - `value`: The value to borrow as an input.

@@ -28,7 +28,9 @@ func vImageConvert_PlanarToChunky8(_ srcPlanarBuffers: UnsafeMutablePointer<Unsa
 
 Use this function to interleave formats that either aren’t supported by the vImage library or are only known at runtime.
 
-The following code interleaves two 4 x 1 planar buffers into a 4 x 1 interleaved 2-channel buffer:
+The following code interleaves two 4 x 1 planar buffers into a 4 x 1 interleaved two-channel buffer:
+
+**Swift**:
 
 ```swift
 let width = 4
@@ -75,6 +77,51 @@ cbBuffer.withUnsafePointerToVImageBuffer { cb in
 
 // Prints "[10, 20,   11, 21,   12, 22,   13, 23]".
 print(cbCrBuffer.array)
+```
+
+**Objective-C**:
+
+```objc
+uint8_t cbData[4] = {10, 11, 12, 13};
+uint8_t crData[4] = {20, 21, 22, 23};
+
+vImage_Buffer cbBuf = {
+    .data     = cbData,
+    .width    = 4,
+    .height   = 1,
+    .rowBytes = 4
+};
+
+vImage_Buffer crBuf = {
+    .data     = crData,
+    .width    = 4,
+    .height   = 1,
+    .rowBytes = 4
+};
+
+uint8_t dst[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+
+const vImage_Buffer *srcPlanarBuffers[2] = { &cbBuf, &crBuf };
+
+void *destChannels[2] = {
+    dst,
+    dst + 1
+};
+
+vImageConvert_PlanarToChunky8(
+    srcPlanarBuffers,
+    destChannels,
+    2,
+    sizeof(uint8_t) * 2,
+    4,
+    1,
+    4 * sizeof(uint8_t) * 2,
+    kvImageNoFlags);
+
+// Prints "[10, 20, 11, 21, 12, 22, 13, 23]".
+printf("[%d, %d, %d, %d, %d, %d, %d, %d]\n",
+       dst[0], dst[1], dst[2], dst[3],
+       dst[4], dst[5], dst[6], dst[7]);
 ```
 
 ## Parameters

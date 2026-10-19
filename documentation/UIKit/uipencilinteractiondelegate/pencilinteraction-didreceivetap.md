@@ -17,6 +17,11 @@ Tells the delegate when a person double-taps Apple Pencil.
 optional func pencilInteraction(_ interaction: UIPencilInteraction, didReceiveTap tap: UIPencilInteraction.Tap)
 ```
 
+## See Also
+
+- [func pencilInteractionDidTap(UIPencilInteraction)](uipencilinteractiondelegate/pencilinteractiondidtap(_:).md)
+  Tells the delegate that the user double-tapped Apple Pencil.
+
 
 ---
 

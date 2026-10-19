@@ -111,7 +111,7 @@ struct StepperView: View {
   Creates a stepper instance that performs the closures you provide when the user increments or decrements the stepper.
 - [init(_:onIncrement:onDecrement:onEditingChanged:)](stepper/init(_:onincrement:ondecrement:oneditingchanged:).md)
   Creates a stepper that uses a title key and executes the closures you provide when the user clicks or taps the stepper’s increment and decrement buttons.
-### Deprecated initializers
+### Deprecated
 - [init<V>(value: Binding<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](stepper/init(value:step:oneditingchanged:label:).md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide.
 - [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](stepper/init(value:in:step:oneditingchanged:label:).md)

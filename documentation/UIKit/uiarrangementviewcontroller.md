@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: class
 
-A view controller that presents its container view controllers through an arrangement.
+A view controller that dynamically lays out primary and secondary view controllers based on size class, orientation, and reserved regions.
 
 **Availability**:
 - iOS 27.1+
@@ -21,13 +21,29 @@ class UIArrangementViewController
 
 #### Overview
 
-You create an arrangement view controller and set a primary and secondary view controller. The arrangement view controller computes a layout for its content based on the context it is presented in, including the available size, size class, and hardware features.
+Use an arrangement view controller to lay out two related content view controllers differently depending on the current size classes, orientation, and status of reserved regions such as the fold on iPhone Duo. The arrangement view helps you improve how your app handles a folded display in addition to a flat display.
 
-Use [`updateArrangement(_:animated:)`](uiarrangementviewcontroller/updatearrangement(_:animated:).md) to choose how the arrangement view lays out its content. The default style is [`UISplitArrangement`](uisplitarrangement-swift.struct.md). The other built-in style is [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md).
+Because an arrangement view controller is a container that lays out other view controllers, avoid adding an arrangement view controller inside another container such as a scroll view, split view controller, collection view, or other container view that lays out other views. Also, avoid placing some container views inside an arrangement view controller, such as a split view controller or tab view controller.
 
-##### Overlay Arrangements
+When iPhone Duo is fully open or closed, people interact with the flat display like other iPhone and iPad models. An arrangement view controller is useful when:
 
-An overlay arrangement layers the primary view on top of the secondary view in z-order. This layout is well-suited for full-screen experiences like media players, where playback controls overlay a video surface:
+- You want to place two views next to each other horizontally when someone is holding a device in landscape orientation or above and below each other when someone is holding a device in portrait orientation, without having to write conditional logic to switch between horizontal and vertical stacks.
+- You want to adjust how much space each view takes when someone folds the display.
+- You want to layer one view over another view on a flat display, and place the views next to each other when the device is folded. This arrangement works well when there’s a clear foreground and background relationship between your views, such as a view for video playback and a view with playback controls.
+
+Arrangement view controllers offer two distinct types of arrangement: *split* and *overlay*. You specify the split arrangement to indicate the views lay out next to each other, either horizontally or vertically. You specify the overlay arrangement to indicate the views layer over each other on a flat display and next to each other on a folded display.
+
+For more information on designing your app to use an arrangement view, see [`Designing for iPhone Duo`](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo).
+
+#### Configure an Overlay Arrangement
+
+An overlay arrangement view controller places a primary view controller and a secondary view controller in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a device in landscape orientation or above and below each other when someone is holding a device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
+
+- In a stacked overlay arrangement, the arrangement places the primary view above the secondary view in the z-axis.
+- When someone holds a folded iPhone Duo in landscape orientation, the arrangement places the secondary view in the leading position and the primary view in the trailing position.
+- When someone holds a folded iPhone Duo in portrait orientation, the arrangement places the secondary view in the top position and the primary view in the bottom position.
+
+Create an overlay arrangement view controller by specifying a primary and secondary view controller, and call the [`updateArrangement(_:animated:)`](uiarrangementviewcontroller/updatearrangement(_:animated:).md) method with [`overlay`](uiarrangementviewcontroller/arrangement/overlay.md) in Swift, or the [`updateArrangement:`](uiarrangementviewcontroller/updatearrangement:.md) method with [`overlayArrangement`](uioverlayarrangement-c.class/overlayarrangement.md) in Objective-C:
 
 **Swift**:
 
@@ -40,7 +56,7 @@ arrangementVC.setViewController(primaryVC, for: .primary)
 let secondaryVC = SecondaryViewController()
 arrangementVC.setViewController(secondaryVC, for: .secondary)
 
-arrangementVC.updateArrangement(.overlay.axes(.horizontal))
+arrangementVC.updateArrangement(.overlay)
 ```
 
 **Objective-C**:
@@ -55,15 +71,20 @@ self.secondaryVC = [[SecondaryController alloc] init];
 [self.arrangementVC setViewController:self.secondaryVC forPlacement:UIArrangementViewControllerViewPlacementSecondary];
 
 UIOverlayArrangement *arrangement = [UIOverlayArrangement overlayArrangement];
-arrangement.axes = UIAxisHorizontal;
 [self.arrangementVC updateArrangement:arrangement];
 ```
 
-When the environment changes, such as when a foldable device is folded, the overlay arrangement can transition its views from a layered layout into a side-by-side layout. Use [`axes(_:)`](uioverlayarrangement-swift.struct/axes(_:).md) to control which axes are supported.
+For more information on configuring layout for a folded iPhone Duo in an overlay arrangement, see [`Customize a folded layout`](uioverlayarrangement-c.class#Customize-a-folded-layout.md).
 
-##### Split Arrangements
+#### Configure a Split Arrangement
 
-A split arrangement places the primary and secondary views side-by-side along one or more axes. Use this layout for experiences that display two distinct pieces of content simultaneously, such as a music player alongside its lyrics:
+Unlike an overlay arrangement, which typically layers its two views and only separates them when the device folds, a split arrangement view always keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
+
+- In landscape orientation, the arrangement view places the primary view in the leading position and the secondary view in the trailing position.
+- In portrait orientation, the arrangement view places the primary view in the top position and the secondary view in the bottom position.
+- When someone is holding a closed iPhone Duo in landscape orientation, the split arrangement only shows the primary view.
+
+Create a split arrangement by specifying a primary and secondary view controller, and call the [`updateArrangement(_:animated:)`](uiarrangementviewcontroller/updatearrangement(_:animated:).md) method with [`split`](uiarrangementviewcontroller/arrangement/split.md) in Swift, or the [`updateArrangement:`](uiarrangementviewcontroller/updatearrangement:.md) method with [`splitArrangement`](uisplitarrangement-c.class/splitarrangement.md) in Objective-C:
 
 **Swift**:
 
@@ -76,7 +97,7 @@ arrangementVC.setViewController(primaryVC, for: .primary)
 let secondaryVC = SecondaryViewController()
 arrangementVC.setViewController(secondaryVC, for: .secondary)
 
-arrangementVC.updateArrangement(.split.axes(.horizontal))
+arrangementVC.updateArrangement(.split)
 ```
 
 **Objective-C**:
@@ -91,11 +112,46 @@ self.secondaryVC = [[SecondaryController alloc] init];
 [self.arrangementVC setViewController:self.secondaryVC forPlacement:UIArrangementViewControllerViewPlacementSecondary];
 
 UISplitArrangement *arrangement = [UISplitArrangement splitArrangement];
-arrangement.axes = UIAxisHorizontal;
 [self.arrangementVC updateArrangement:arrangement];
 ```
 
-The split arrangement adapts its axis based on the available size and size class. You can constrain which axes the split supports using [`axes(_:)`](uisplitarrangement-swift.struct/axes(_:).md).
+For more information on adjusting view sizes in a split arrangement, see [`Adjust a split arrangement’s layout sizing`](uisplitarrangement-swift.struct#Adjust-a-split-arrangements-layout-sizing.md).
+
+#### Limit an Arrangement By Orientation
+
+You can limit which axes your split or overlay arrangement view controller supports by specifying the axes for the arrangement. The following example shows an arrangement that only splits vertically:
+
+**Swift**:
+
+```swift
+let arrangementVC = UIArrangementViewController()
+
+let primaryVC = PrimaryViewController()
+arrangementVC.setViewController(primaryVC, for: .primary)
+
+let secondaryVC = SecondaryViewController()
+arrangementVC.setViewController(secondaryVC, for: .secondary)
+
+arrangementVC.updateArrangement(.split.axes(.vertical))
+```
+
+**Objective-C**:
+
+```objc
+self.arrangementVC = [[UIArrangementViewController alloc] init];
+
+self.primaryVC = [[PrimaryController alloc] init];
+[self.arrangementVC setViewController:self.primaryVC forPlacement:UIArrangementViewControllerViewPlacementPrimary];
+
+self.secondaryVC = [[SecondaryController alloc] init];
+[self.arrangementVC setViewController:self.secondaryVC forPlacement:UIArrangementViewControllerViewPlacementSecondary];
+
+UISplitArrangement *arrangement = [UISplitArrangement splitArrangement];
+arrangement.axes = UIAxisVertical;
+[self.arrangementVC updateArrangement:arrangement];
+```
+
+Use [`axes(_:)`](uisplitarrangement-swift.struct/axes(_:).md) in Swift or [`axes`](uisplitarrangement-c.class/axes.md) in Objective-C to set the axes for a split arrangement, or [`axes(_:)`](uioverlayarrangement-swift.struct/axes(_:).md) in Swift or [`axes`](uioverlayarrangement-c.class/axes.md) in Objective-C to set the axes for an overlay arrangement.
 
 ## Topics
 
@@ -103,23 +159,23 @@ The split arrangement adapts its axis based on the available size and size class
 - [init()](uiarrangementviewcontroller/init.md)
   Creates an arrangement view controller.
 ### Configuring the arrangement
+- [struct UIOverlayArrangement](uioverlayarrangement-swift.struct.md)
+  An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
+- [struct UISplitArrangement](uisplitarrangement-swift.struct.md)
+  An arrangement that places the primary and secondary views side by side along one or more axes.
 - [UIArrangementViewController.Arrangement](uiarrangementviewcontroller/arrangement.md)
   A type that describes how an arrangement view controller lays out its view controllers.
-- [struct UIOverlayArrangement](uioverlayarrangement-swift.struct.md)
-  An arrangement that overlays views.
-- [struct UISplitArrangement](uisplitarrangement-swift.struct.md)
-  An arrangement that splits views.
 - [func updateArrangement<A>(A, animated: Bool)](uiarrangementviewcontroller/updatearrangement(_:animated:).md)
   Updates the arrangement of the view controller.
 ### Managing arrangement view controllers
 - [UIArrangementViewController.ViewPlacement](uiarrangementviewcontroller/viewplacement.md)
   A placement of a view controller within an arrangement view controller.
 - [func viewController(for: UIArrangementViewController.ViewPlacement) -> UIViewController?](uiarrangementviewcontroller/viewcontroller(for:).md)
-  The view controller in the arrangement for the provided placement.
+  Returns the view controller in the arrangement for the placement you provide.
 - [func setViewController(UIViewController?, for: UIArrangementViewController.ViewPlacement, animated: Bool)](uiarrangementviewcontroller/setviewcontroller(_:for:animated:).md)
-  Sets the view controller in the arrangement for a specific placement.
+  Sets the view controller in the arrangement for the specific placement you provide.
 - [func placement(for: UIViewController) -> UIArrangementViewController.ViewPlacement?](uiarrangementviewcontroller/placement(for:).md)
-  Returns the placement for the provided view controller in the arrangement.
+  Returns the placement for the view controller you provide in the arrangement.
 ### Getting view state
 - [UIArrangementViewController.ViewState](uiarrangementviewcontroller/viewstate.md)
   The state of a view within an arrangement.
@@ -162,7 +218,7 @@ The split arrangement adapts its axis based on the available size and size class
 - [class UINavigationController](uinavigationcontroller.md)
   A container view controller that defines a stack-based scheme for navigating hierarchical content.
 - [class UINavigationBar](uinavigationbar.md)
-  Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
+  A region that displays the title and controls provided by navigation items.
 - [class UINavigationItem](uinavigationitem.md)
   The items that a navigation bar displays when the associated view controller is visible.
 - [class UITabBarController](uitabbarcontroller.md)

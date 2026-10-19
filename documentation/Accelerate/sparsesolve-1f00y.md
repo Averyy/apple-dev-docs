@@ -32,8 +32,10 @@ Use this function to solve a system of linear equations using a factored coeffic
 
 The following code solves this system using the least squares minimum residual method:
 
+**Swift**:
+
 ```swift
-/// Create the coefficient matrix _A_.
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
 let rowIndices: [Int32] =    [ 0,  1, 1,  2]
 let columnIndices: [Int32] = [ 2,  0, 2,  1]
 let aValues: [Float] =       [10, 20, 5, 50]
@@ -48,7 +50,7 @@ defer {
     SparseCleanup(A)
 }
 
-/// Create the right-hand-side matrix, _B_.
+// Create the right-hand-side matrix `B` (also holds the solution `X` on return).
 var bValues: [Float] = [30, 35, 100,
                         300, 350, 1000]
 let n = bValues.count
@@ -74,6 +76,52 @@ let xValues = [Float](unsafeUninitializedCapacity: n) {
         count = n
     }
 }
+print(xValues) // Prints "[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+float aValues[]     = {10, 20, 5, 50};
+
+SparseMatrix_Float A = SparseConvertFromCoordinate(3, 3,
+                                                   4, 1,
+                                                   (SparseAttributes_t){0},
+                                                   rowIndices, columnIndices,
+                                                   aValues);
+
+// Create the right-hand-side matrix `B` and the solution matrix `X`.
+float bValues[] = {30, 35, 100, 300, 350, 1000};
+float xData[6]  = {0};
+
+DenseMatrix_Float B = {
+    .rowCount     = 3,
+    .columnCount  = 2,
+    .columnStride = 3,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = bValues
+};
+
+DenseMatrix_Float X = {
+    .rowCount     = 3,
+    .columnCount  = 2,
+    .columnStride = 3,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = xData
+};
+
+// Solve `AX = B` using the LSMR iterative method.
+SparseSolve(SparseLSMR(), A, B, X);
+
+// Prints "[1, 2.0, 3, 10, 20.0, 30]".
+printf("[%g, %g, %g, %g, %g, %g]\n",
+      xData[0], xData[1], xData[2],
+      xData[3], xData[4], xData[5]);
+
+SparseCleanup(A);
 ```
 
 On return, x`Values` contains the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.

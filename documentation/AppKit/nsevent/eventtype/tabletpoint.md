@@ -20,10 +20,6 @@ Tablets generate tablet-point events between a mouse-down event and the first mo
 
 ## See Also
 
-- [NSEvent.EventType.beginGesture](nsevent/eventtype/begingesture.md)
-  An event marking the beginning of a gesture.
-- [NSEvent.EventType.endGesture](nsevent/eventtype/endgesture.md)
-  An event that marks the end of a gesture.
 - [NSEvent.EventType.magnify](nsevent/eventtype/magnify.md)
   The user performed a pinch-open or pinch-close gesture.
 - [NSEvent.EventType.smartMagnify](nsevent/eventtype/smartmagnify.md)

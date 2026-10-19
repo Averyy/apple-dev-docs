@@ -6,7 +6,7 @@
 Reserved configuration change identifiers when changing object state that requires a configuration change.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

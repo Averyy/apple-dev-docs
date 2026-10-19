@@ -32,6 +32,8 @@ In this gesture recognizer, the [`location(in:)`](nsgesturerecognizer/location(i
   The maximum number of touches allowed to recognize this gesture
 - [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
   The minimum number of touches needed to recognize this gesture
+- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
+  The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 ### Tracking the location and velocity of the gesture
 - [func translation(in: NSView?) -> NSPoint](nspangesturerecognizer/translation(in:).md)
   The distance traveled by the mouse during the gesture.
@@ -39,9 +41,6 @@ In this gesture recognizer, the [`location(in:)`](nsgesturerecognizer/location(i
   Changes the current translation value of the gesture recognizer.
 - [func velocity(in: NSView?) -> NSPoint](nspangesturerecognizer/velocity(in:).md)
   The velocity of the pan, measured in points per second.
-### Deprecated
-- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
-  The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 ## Relationships
 

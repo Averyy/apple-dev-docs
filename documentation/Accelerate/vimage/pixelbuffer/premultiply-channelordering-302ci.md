@@ -34,8 +34,8 @@ let src = vImage.PixelBuffer<vImage.Interleaved16Ux4>(
 
 src.premultiply(channelOrdering: .ARGB)
 
-// Prints "[32767, 4095, 8191, 16383]
-//  = [UInt16.max / 2, UInt16.max / 16, UInt16.max / 8, UInt16.max / 4]
+// Prints "[32767, 4095, 8191, 16383]".
+//  ≅ [UInt16.max / 2, UInt16.max / 16, UInt16.max / 8, UInt16.max / 4]
 print(src.array)
 ```
 

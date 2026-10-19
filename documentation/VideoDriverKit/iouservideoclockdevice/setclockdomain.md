@@ -6,7 +6,7 @@
 Sets the clock domain value of the clock device.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

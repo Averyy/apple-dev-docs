@@ -43,6 +43,8 @@ Your app is responsible for configuring, presenting, and dismissing this view co
   The completion handler to execute after the activity view controller is dismissed.
 - [UIActivityViewController.CompletionWithItemsHandler](uiactivityviewcontroller/completionwithitemshandler-swift.typealias.md)
   A completion handler to execute after the activity view controller is dismissed.
+- [var completionHandler: UIActivityViewController.CompletionHandler?](uiactivityviewcontroller/completionhandler-swift.property.md)
+  The completion handler to execute after the activity view controller is dismissed.
 ### Excluding specific activity types
 - [var excludedActivityTypes: [UIActivity.ActivityType]?](uiactivityviewcontroller/excludedactivitytypes.md)
   The list of services that should not be displayed.
@@ -54,8 +56,6 @@ Your app is responsible for configuring, presenting, and dismissing this view co
 - [var allowsProminentActivity: Bool](uiactivityviewcontroller/allowsprominentactivity.md)
   A Boolean value the system uses to elevate a system activity to make it more prominent.
 ### Deprecated
-- [var completionHandler: UIActivityViewController.CompletionHandler?](uiactivityviewcontroller/completionhandler-swift.property.md)
-  The completion handler to execute after the activity view controller is dismissed.
 - [UIActivityViewController.CompletionHandler](uiactivityviewcontroller/completionhandler-swift.typealias.md)
   A completion handler to execute after the activity view controller is dismissed.
 

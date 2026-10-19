@@ -24,10 +24,6 @@ The event will be sent to the view under the touch in the key window.
 
 ## See Also
 
-- [func beginGesture(with: NSEvent)](nsresponder/begingesture(with:).md)
-  Informs the receiver that the user has begun a touch gesture.
-- [func endGesture(with: NSEvent)](nsresponder/endgesture(with:).md)
-  Informs the receiver that the user has ended a touch gesture.
 - [func rotate(with: NSEvent)](nsresponder/rotate(with:).md)
   Informs the receiver that the user has begun a rotation gesture.
 - [func swipe(with: NSEvent)](nsresponder/swipe(with:).md)

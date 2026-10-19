@@ -28,7 +28,7 @@ func vImageConvert_ARGB16UToARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest
 
 The function uses the following calculation to perform the conversion:
 
-```swift
+```c
  Pixel_16U *srcPixel;
  Pixel_8888 *destPixel;
  uint16_t result16;

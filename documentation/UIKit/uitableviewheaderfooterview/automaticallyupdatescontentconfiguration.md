@@ -32,6 +32,10 @@ If you override [`updateConfiguration(using:)`](uitableviewheaderfooterview/upda
   The current content configuration of the view.
 - [var contentView: UIView](uitableviewheaderfooterview/contentview.md)
   The content view of the header or footer.
+- [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
+  A primary text label for the view.
+- [var detailTextLabel: UILabel?](uitableviewheaderfooterview/detailtextlabel.md)
+  A detail text label for the view.
 
 
 ---

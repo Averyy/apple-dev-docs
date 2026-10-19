@@ -53,11 +53,10 @@ var body: some View {
   Creates a group box with the provided label and view content.
 - [init(_:content:)](groupbox/init(_:content:).md)
   Creates a group box with the provided view content and title.
+- [init(label: Label, content: () -> Content)](groupbox/init(label:content:).md)
 ### Creating a group box from a configuration
 - [init(GroupBoxStyleConfiguration)](groupbox/init(_:).md)
   Creates a group box based on a style configuration.
-### Deprecated initializers
-- [init(label: Label, content: () -> Content)](groupbox/init(label:content:).md)
 
 ## Relationships
 

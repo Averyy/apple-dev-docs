@@ -18,7 +18,7 @@ class NSStepper
 
 A stepper consists of two small arrows that can increment and decrement a value that appears beside it, such as a date or time. The illustration below shows a stepper to the right of a text field, which would show the stepper’s value.
 
-![None](/images/com.apple.appkit/media-2555815@2x.png)
+![An illustration of a stepper control to the right of a text field. The stepper has an up arrow above a down arrow, and the text field is empty and focused.](/images/com.apple.appkit/media-2555815@2x.png)
 
 The `NSStepper` class uses the [`NSStepperCell`](nssteppercell.md) class to implement its user interface.
 

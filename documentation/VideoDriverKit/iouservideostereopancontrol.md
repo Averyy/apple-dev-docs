@@ -6,7 +6,7 @@
 A control object that supports panning between stereo channels.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

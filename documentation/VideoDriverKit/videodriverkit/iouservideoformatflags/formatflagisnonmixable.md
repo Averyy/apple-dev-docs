@@ -6,7 +6,7 @@
 Set to indicate when a format is non-mixable.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

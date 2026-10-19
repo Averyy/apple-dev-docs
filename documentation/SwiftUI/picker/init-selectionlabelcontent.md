@@ -27,6 +27,13 @@ init(selection: Binding<SelectionValue>, label: Label, @ContentBuilder content: 
 - `label`: A view that describes the purpose of selecting an option.
 - `content`: A view that contains the set of options.
 
+## See Also
+
+- [init(_:selection:content:)](picker/init(_:selection:content:).md)
+  Creates a picker that generates its label from a localized string resource.
+- [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](picker/init(selection:content:label:).md)
+  Creates a picker that displays a custom label.
+
 
 ---
 

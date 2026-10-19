@@ -69,6 +69,11 @@ private func openDocument(_ controller: UIDocumentBrowserViewController,
 - `controller`: The current document browser.
 - `documentURLs`: An array of URLs for the selected documents. If the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the array contains one or more URLs. If [`false`](https://developer.apple.com/documentation/swift/false), it contains only a single URL.
 
+## See Also
+
+- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentsAt: [URL])](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumentsat:).md)
+  Tells the delegate that the user has selected one or more documents.
+
 
 ---
 

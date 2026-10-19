@@ -1,4 +1,4 @@
 Completed scraping MapKit JS!
-Total pages scraped: 987
-Pages skipped (unchanged): 15
+Total pages scraped: 0
+Pages skipped (unchanged): 999
 Pages failed: 0

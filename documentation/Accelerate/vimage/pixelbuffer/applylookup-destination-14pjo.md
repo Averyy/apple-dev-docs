@@ -24,7 +24,7 @@ func applyLookup(_ lookupTable: [Pixel_F], destination: vImage.PixelBuffer<vImag
 
 You can use this function to create custom response curves (that is, the value of an output pixel based on the value of the corresponding input pixel). Changing the shape of the response curve changes the brightness and contrast of an image.
 
-The following code creates a simple lookup table that’s based on a sigmoid function. This example uses [`BNNS`](bnns.md) to create 256 `Float` values in the range `0...1` that describe a sigmoid curve. The code uses the sigmoid as the lookup table.
+The following code creates a simple lookup table that’s based on a sigmoid function. This example uses [`BNNS`](bnns.md) to create 256 `Float` values in the range `0...1` that describe a sigmoid curve. The code uses the sigmoid as the lookup table:
 
 ```swift
 let count = 256

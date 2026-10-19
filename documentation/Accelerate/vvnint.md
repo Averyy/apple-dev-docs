@@ -28,7 +28,7 @@ func vvnint(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvnint(_:_:_:)`](vvnint(_:_:_:).md).
+The following code shows an example of using [`vvnint(_:_:_:)`](vvnint(_:_:_:).md):
 
 **Swift**:
 
@@ -51,7 +51,7 @@ int n = 4;
  
 vvnint(y, x, &n);
  
-NSLog(@"y: [%lf, %lf, %lf, %lf]", y[0], y[1], y[2], y[3]);
+printf("y: [%lf, %lf, %lf, %lf]\n", y[0], y[1], y[2], y[3]);
 ```
 
 ## See Also

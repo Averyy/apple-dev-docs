@@ -6,7 +6,7 @@
 Gets a Boolean value for clock stability of the clock device.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

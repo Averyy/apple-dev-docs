@@ -76,9 +76,9 @@ To perform programmatic scrolling, wrap one or more scroll views with a [`Scroll
 ## Topics
 
 ### Creating a scroll view
-- [init(Axis.Set, showsIndicators: Bool, content: () -> Content)](scrollview/init(_:showsindicators:content:).md)
-  Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
 - [init(Axis.Set, content: () -> Content)](scrollview/init(_:content:).md)
+  Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
+- [init(Axis.Set, showsIndicators: Bool, content: () -> Content)](scrollview/init(_:showsindicators:content:).md)
   Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
 ### Configuring a scroll view
 - [var content: Content](scrollview/content.md)

@@ -10,6 +10,7 @@ The margins of the container the view is in.
 - iPadOS 27.1+
 - Mac Catalyst 27.1+
 - macOS 27.1+
+- tvOS 27.1+
 - visionOS 27.1+
 - watchOS 27.1+
 

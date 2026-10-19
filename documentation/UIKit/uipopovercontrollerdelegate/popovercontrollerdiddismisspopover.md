@@ -29,6 +29,8 @@ You can use this method to incorporate any changes from the popover’s content 
 
 ## See Also
 
+- [func popoverController(UIPopoverController, willRepositionPopoverTo: UnsafeMutablePointer<CGRect>, in: AutoreleasingUnsafeMutablePointer<UIView>)](uipopovercontrollerdelegate/popovercontroller(_:willrepositionpopoverto:in:).md)
+  Tells the delegate that the popover controller needs to change the popover’s location in its view.
 - [func popoverControllerShouldDismissPopover(UIPopoverController) -> Bool](uipopovercontrollerdelegate/popovercontrollershoulddismisspopover(_:).md)
   Asks the delegate if the popover should be dismissed.
 

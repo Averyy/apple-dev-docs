@@ -26,12 +26,12 @@ This property contains an array of [`NSWindow`](nswindow.md) objects correspondi
   The app’s main window.
 - [func window(withWindowNumber: Int) -> NSWindow?](nsapplication/window(withwindownumber:).md)
   Returns the window corresponding to the specified window number.
-- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
-  Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 - [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](nsapplication/enumeratewindows(options:using:).md)
   Executes a block for each of the app’s windows.
 - [NSApplication.WindowListOptions](nsapplication/windowlistoptions.md)
   This constant indicates a window ordering.
+- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
+  Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 
 
 ---

@@ -24,10 +24,9 @@ var complicationRenderingMode: ComplicationRenderingMode { get }
   A Boolean value that determines whether the view hierarchy has auto-correction enabled.
 - [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
   A binding to the current presentation mode of the view associated with this environment.
-- [struct PresentationMode](presentationmode.md)
-  An indication whether a view is currently presented by another view.
 - [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
   The size of content.
+- [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
 
 
 ---

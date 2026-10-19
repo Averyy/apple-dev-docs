@@ -22,7 +22,7 @@ static func dequantize(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNN
 
 #### Discussion
 
-The following code dequantizes a 16-bit integer matrix to a single-precision matrix. The code applies the scale along the zeroth axis and, therefore, the scale tensor contains four elements.
+The following code dequantizes a 16-bit integer matrix to a single-precision matrix. The code applies the scale along the zeroth axis and, therefore, the scale tensor contains four elements:
 
 ```swift
 static func dequantize() {
@@ -50,8 +50,8 @@ static func dequantize() {
                          bias: nil)
     
     // Prints:
-    //  [1000.0, 200.0, 30.0, 4.0,
-    //   5000.0, 600.0, 70.0, 8.0]
+    //  "[1000.0, 200.0, 30.0, 4.0,
+    //   5000.0, 600.0, 70.0, 8.0]".
     print(output.makeArray(of: Float.self)!)
     
     input.deallocate()

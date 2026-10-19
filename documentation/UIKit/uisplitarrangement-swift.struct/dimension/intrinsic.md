@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-The intrinsic dimension for a split arrangement based on intrinsic content size.
+A dimension that indicates sizing for a view in a split arrangement uses intrinsic content size.
 
 **Availability**:
 - iOS 27.1+
@@ -21,11 +21,11 @@ static var intrinsic: UISplitArrangement.Dimension { get }
 ## See Also
 
 - [static var automatic: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/automatic.md)
-  The automatic dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement follows automatic rules.
 - [static func absolute(CGFloat) -> UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/absolute(_:).md)
-  An absolute dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement uses the float value you provide, expressed in points.
 - [static func fractional(CGFloat) -> UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/fractional(_:).md)
-  A fractional dimension for a split arrangement.
+  A dimension that indicates sizing for a view in a split arrangement uses the float value you provide as a fraction.
 
 
 ---

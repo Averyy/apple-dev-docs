@@ -50,6 +50,10 @@ Text("Hello").font(.system(size: 17, design: .rounded))
   A dynamic text style to use for fonts.
 - [struct Weight](font/weight.md)
   A weight to use for fonts.
+- [static func system(Font.TextStyle, design: Font.Design) -> Font](font/system(_:design:).md)
+  Gets a system font with the given text style and design.
+- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
+  Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 
 
 ---

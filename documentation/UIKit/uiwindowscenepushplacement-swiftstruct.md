@@ -67,6 +67,8 @@ func presentNewScene() {
   A placement that indicates the system should present the window more prominently than others in the space.
 - [struct UIWindowSceneStandardPlacement](uiwindowscenestandardplacement-swift.struct.md)
   A placement that indicates the system should present the window using the default style of the system in the space.
+- [var preferredPresentationStyle: UIWindowScene.PresentationStyle](uiwindowscene/activationrequestoptions/preferredpresentationstyle.md)
+  The presentation style of the window scene.
 
 
 ---

@@ -63,14 +63,8 @@ In iOS 12 and earlier, you use your app delegate to manage major life cycle even
 - [func application(UIApplication, didDiscardSceneSessions: Set<UISceneSession>)](uiapplicationdelegate/application(_:diddiscardscenesessions:).md)
   Tells the delegate that the user closed one or more of the app’s scenes from the app switcher.
 ### Responding to app life-cycle events
-- [func applicationDidBecomeActive(UIApplication)](uiapplicationdelegate/applicationdidbecomeactive(_:).md)
-  Tells the delegate that the app has become active.
-- [func applicationWillResignActive(UIApplication)](uiapplicationdelegate/applicationwillresignactive(_:).md)
-  Tells the delegate that the app is about to become inactive.
 - [func applicationDidEnterBackground(UIApplication)](uiapplicationdelegate/applicationdidenterbackground(_:).md)
   Tells the delegate that the app is now in the background.
-- [func applicationWillEnterForeground(UIApplication)](uiapplicationdelegate/applicationwillenterforeground(_:).md)
-  Tells the delegate that the app is about to enter the foreground.
 - [func applicationWillTerminate(UIApplication)](uiapplicationdelegate/applicationwillterminate(_:).md)
   Tells the delegate when the app is about to terminate.
 - [class let didBecomeActiveNotification: NSNotification.Name](uiapplication/didbecomeactivenotification.md)
@@ -133,28 +127,12 @@ In iOS 12 and earlier, you use your app delegate to manage major life cycle even
   Tells the delegate when Apple Push Notification service cannot successfully complete the registration process.
 - [func application(UIApplication, didReceiveRemoteNotification: [AnyHashable : Any], fetchCompletionHandler: (UIBackgroundFetchResult) -> Void)](uiapplicationdelegate/application(_:didreceiveremotenotification:fetchcompletionhandler:).md)
   Tells the app that a remote notification arrived that indicates there is data to be fetched.
-### Continuing user activity and handling quick actions
-- [func application(UIApplication, willContinueUserActivityWithType: String) -> Bool](uiapplicationdelegate/application(_:willcontinueuseractivitywithtype:).md)
-  Tells the delegate if your app takes responsibility for notifying users when a continuation activity takes longer than expected.
-- [func application(UIApplication, continue: NSUserActivity, restorationHandler: ([any UIUserActivityRestoring]?) -> Void) -> Bool](uiapplicationdelegate/application(_:continue:restorationhandler:).md)
-  Tells the delegate that the data for continuing an activity is available.
-- [func application(UIApplication, didUpdate: NSUserActivity)](uiapplicationdelegate/application(_:didupdate:).md)
-  Tells the delegate that the activity was updated.
-- [func application(UIApplication, didFailToContinueUserActivityWithType: String, error: any Error)](uiapplicationdelegate/application(_:didfailtocontinueuseractivitywithtype:error:).md)
-  Tells the delegate that the activity couldn’t be continued.
-- [func application(UIApplication, performActionFor: UIApplicationShortcutItem, completionHandler: (Bool) -> Void)](uiapplicationdelegate/application(_:performactionfor:completionhandler:).md)
-  Tells the delegate that the user selected a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method.
 ### Interacting with WatchKit
 - [func application(UIApplication, handleWatchKitExtensionRequest: [AnyHashable : Any]?, reply: ([AnyHashable : Any]?) -> Void)](uiapplicationdelegate/application(_:handlewatchkitextensionrequest:reply:).md)
   Asks the delegate to respond to a request from a paired watchOS app.
 ### Interacting with HealthKit
 - [func applicationShouldRequestHealthAuthorization(UIApplication)](uiapplicationdelegate/applicationshouldrequesthealthauthorization(_:).md)
   Tells the delegate when your app should ask the user for access to his or her HealthKit data.
-### Opening a URL-specified resource
-- [func application(UIApplication, open: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool](uiapplicationdelegate/application(_:open:options:).md)
-  Asks the delegate to open a resource specified by a URL, and provides a dictionary of launch options.
-- [UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey.md)
-  Keys you use to access values in the options dictionary when opening a URL.
 ### Disallowing specified app extension types
 - [func application(UIApplication, shouldAllowExtensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool](uiapplicationdelegate/application(_:shouldallowextensionpointidentifier:).md)
   Asks the delegate to grant permission to use app extensions that are based on a specified extension point identifier.
@@ -165,15 +143,10 @@ In iOS 12 and earlier, you use your app delegate to manage major life cycle even
 ### Handling SiriKit intents
 - [func application(UIApplication, handlerFor: INIntent) -> Any?](uiapplicationdelegate/application(_:handlerfor:).md)
   Asks the delegate for an intent handler capable of handling the specified intent.
-### Handling CloudKit invitations
-- [func application(UIApplication, userDidAcceptCloudKitShareWith: CKShareMetadata)](uiapplicationdelegate/application(_:userdidacceptcloudkitsharewith:).md)
-  Tells the delegate that the app now has access to shared information in CloudKit.
 ### Localizing keyboard shortcuts
 - [func applicationShouldAutomaticallyLocalizeKeyCommands(UIApplication) -> Bool](uiapplicationdelegate/applicationshouldautomaticallylocalizekeycommands(_:).md)
   Returns a Boolean value that tells the system whether to remap menu shortcuts to support localized keyboards.
 ### Managing interface geometry
-- [func application(UIApplication, supportedInterfaceOrientationsFor: UIWindow?) -> UIInterfaceOrientationMask](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md)
-  Asks the delegate for the interface orientations to use for the view controllers in the specified window.
 - [enum UIInterfaceOrientation](uiinterfaceorientation.md)
   Constants that specify the orientation of the app’s user interface.
 - [struct UIInterfaceOrientationMask](uiinterfaceorientationmask.md)
@@ -190,7 +163,7 @@ In iOS 12 and earlier, you use your app delegate to manage major life cycle even
 - [func applicationDidFinishLaunching(UIApplication)](uiapplicationdelegate/applicationdidfinishlaunching(_:).md)
   Tells the delegate when the app has finished launching.
 - [Deprecated symbols](uiapplicationdelegate-deprecated-symbols.md)
-  Symbols that are no longer supported.
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

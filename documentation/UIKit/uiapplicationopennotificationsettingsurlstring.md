@@ -33,15 +33,6 @@ NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenNotificationSettings
                          completionHandler:nil];
 ```
 
-## See Also
-
-- [class let openSettingsURLString: String](uiapplication/opensettingsurlstring.md)
-  The URL string you use to deep link to your app’s custom settings in the Settings app.
-- [static let openNotificationSettingsURLString: String](uiapplication/opennotificationsettingsurlstring.md)
-  The URL string you use to deep link to your app’s notification settings in the Settings app.
-- [class let openDefaultApplicationsSettingsURLString: String](uiapplication/opendefaultapplicationssettingsurlstring.md)
-  The URL string used to select a default app in the Settings app.
-
 
 ---
 

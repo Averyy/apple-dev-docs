@@ -32,6 +32,36 @@ If `x` is `+/-0`, the result preserves the signed zero.
 
 If `x` is `+/-inf`, the result is `NaN`.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [0, 0.7853981633974483, -0.7853981633974483]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the tangent of each element in `x`.
+vvtanf(&y, &x, &n)
+
+// Prints "[0.0, 1.0000001, -1.0000001]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {0, 0.7853981633974483, -0.7853981633974483};
+float y[3];
+int n = 3;
+
+// Calculate the tangent of each element in `x`.
+vvtanf(y, x, &n);
+
+// Prints "[0, 1, -1]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acos<U>(U) -> [Double]](vforce/acos(_:)-8srk.md)

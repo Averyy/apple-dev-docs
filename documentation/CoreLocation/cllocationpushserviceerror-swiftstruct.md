@@ -30,7 +30,7 @@ struct CLLocationPushServiceError
   An error code that indicates the location push service isn’t available on this platform.
 - [CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/code.md)
   Error codes the location manager returns if starting to monitor for location push notifications fails.
-### Type Properties
+### Getting the error details
 - [static var errorDomain: String](cllocationpushserviceerror-swift.struct/errordomain.md)
 
 ## Relationships

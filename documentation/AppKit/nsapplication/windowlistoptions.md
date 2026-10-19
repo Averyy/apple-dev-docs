@@ -44,10 +44,10 @@ struct WindowListOptions
   Returns the window corresponding to the specified window number.
 - [var windows: [NSWindow]](nsapplication/windows.md)
   An array of the app’s window objects.
-- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
-  Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 - [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](nsapplication/enumeratewindows(options:using:).md)
   Executes a block for each of the app’s windows.
+- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
+  Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 
 
 ---

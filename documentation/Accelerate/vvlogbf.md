@@ -36,6 +36,36 @@ If `x` is `+/-inf`, `y` is set to `+inf`.
 
 If `x` is `NaN`, `y` is set to `NaN`.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [1, 8, 1024]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the unbiased radix-2 exponent of each element in `x`.
+vvlogbf(&y, &x, &n)
+
+// Prints "[0.0, 3.0, 10.0]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {1, 8, 1024};
+float y[3];
+int n = 3;
+
+// Calculate the unbiased radix-2 exponent of each element in `x`.
+vvlogbf(y, x, &n);
+
+// Prints "[0, 3, 10]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)

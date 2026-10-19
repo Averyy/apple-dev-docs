@@ -64,8 +64,6 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 ### Taps and gestures
 - [func onTapGesture(count: Int, perform: () -> Void) -> some View](view/ontapgesture(count:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture.
-- [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
-  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:).md)
@@ -106,6 +104,8 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
+- [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
+  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 ### Keyboard input
 - [func onKeyPress(KeyEquivalent, action: () -> KeyPress.Result) -> some View](view/onkeypress(_:action:).md)
   Performs an action if the user presses a key on a hardware keyboard while the view has focus.
@@ -144,8 +144,6 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 ### Hover
 - [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
-- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
-  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 - [func hoverEffect(HoverEffect) -> some View](view/hovereffect(_:).md)
   Applies a hover effect to this view.
 - [func hoverEffect(_:isEnabled:)](view/hovereffect(_:isenabled:).md)
@@ -168,6 +166,8 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Requests that the containing list row use the provided hover effect.
 - [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
   Requests that the containing list row have its hover effect disabled.
+- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
+  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 ### Pointer
 - [func pointerVisibility(Visibility) -> some View](view/pointervisibility(_:).md)
   Sets the visibility of the pointer when it’s over the view.

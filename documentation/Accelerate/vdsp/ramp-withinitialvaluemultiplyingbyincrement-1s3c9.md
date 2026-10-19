@@ -24,7 +24,7 @@ static func ramp<U>(withInitialValue initialValue: inout Double, multiplyingBy v
 
 Use this function to generate and return a vector populated with ramped values with each element multiplied by the corresponding element in a second vector.
 
-The following code generates a ramped vector with values in the range `0 ... 7`. The function multiplies elements at even indices by `10` and multiplies elements at odd indices by `100`.
+The following code generates a ramped vector with values in the range `0 ... 7`. The function multiplies elements at even indices by `10` and multiplies elements at odd indices by `100`:
 
 ```swift
     var initialValue: Double = 0

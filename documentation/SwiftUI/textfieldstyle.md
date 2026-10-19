@@ -29,10 +29,6 @@ protocol TextFieldStyle
   A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
 - [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
   A text field style with no decoration.
-- [static var roundedBorder: RoundedBorderTextFieldStyle](textfieldstyle/roundedborder.md)
-  A text field style with a system-defined rounded border.
-- [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)
-  A text field style with a system-defined square border.
 ### Supporting types
 - [struct BorderedTextFieldStyle](borderedtextfieldstyle.md)
   A text field style with a system-defined border.
@@ -40,6 +36,11 @@ protocol TextFieldStyle
   The default text field style, based on the text field’s context.
 - [struct PlainTextFieldStyle](plaintextfieldstyle.md)
   A text field style with no decoration.
+### Deprecated
+- [static var roundedBorder: RoundedBorderTextFieldStyle](textfieldstyle/roundedborder.md)
+  A text field style with a system-defined rounded border.
+- [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)
+  A text field style with a system-defined square border.
 - [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
   A text field style with a system-defined rounded border.
 - [struct SquareBorderTextFieldStyle](squarebordertextfieldstyle.md)

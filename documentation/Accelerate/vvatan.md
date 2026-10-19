@@ -34,6 +34,36 @@ If `x` is `+/-0`, the result preserves the signed zero.
 
 If `x` is `+/-inf`, the result is `+/-pi/2`.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Double] = [-1, 0, 1]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the arctangent of each element in `x`.
+vvatan(&y, &x, &n)
+
+// Prints "[-0.7853981633974483, 0.0, 0.7853981633974483]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+double x[3] = {-1, 0, 1};
+double y[3];
+int n = 3;
+
+// Calculate the arctangent of each element in `x`.
+vvatan(y, x, &n);
+
+// Prints "[-0.785398, 0, 0.785398]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acos<U>(U) -> [Double]](vforce/acos(_:)-8srk.md)

@@ -18,7 +18,7 @@ class NSTabView
 
 A tab view contains a row of tabs that give the appearance of folder tabs, as shown in the [`Figure 1`](nstabview#2555818.md). The user selects the desired page by clicking the appropriate tab or using the arrow keys to move between pages. Each page displays a view hierarchy provided by your app.
 
-![None](/images/com.apple.appkit/media-2555818@2x.png)
+![A screenshot of the Date & Time preferences window showing a tab view with three tabs: Date & Time, Time Zone, and Clock. The Clock tab is selected and displays options for showing the date and time in the menu bar, choosing digital or analog time, and setting date display and time announcements.](/images/com.apple.appkit/media-2555818@2x.png)
 
 ## Topics
 
@@ -76,9 +76,6 @@ A tab view contains a row of tabs that give the appearance of folder tabs, as sh
 ### Modifying the Font
 - [var font: NSFont](nstabview/font.md)
   The font used for the tab view’s label text.
-### Modifying Controls Tint
-- [var controlTint: NSControlTint](nstabview/controltint.md)
-  The tab view’s control tint.
 ### Manipulating the Background
 - [var drawsBackground: Bool](nstabview/drawsbackground.md)
   A Boolean value that indicates if the tab view draws a background color when its type is `NSNoTabsNoBorder`.
@@ -95,6 +92,9 @@ A tab view contains a row of tabs that give the appearance of folder tabs, as sh
 ### Event Handling
 - [func tabViewItem(at: NSPoint) -> NSTabViewItem?](nstabview/tabviewitem(at:)-8gnqw.md)
   Returns the tab view item at the specified point.
+### Modifying Controls Tint
+- [var controlTint: NSControlTint](nstabview/controltint.md)
+  The tab view’s control tint.
 
 ## Relationships
 

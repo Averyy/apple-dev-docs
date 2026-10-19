@@ -30,17 +30,52 @@ Use this function to apply a histogram — that you’ve generated using [`vImag
 
 The following code applies a histogram to a planar vImage buffer:
 
+**Swift**:
+
 ```swift
-// `histogram` is a `entryCount`-element array.
-histogram.withUnsafeBufferPointer {
-    // `buffer` is a `vImage_Buffer` structure.
-    _ = vImageHistogramSpecification_PlanarF(&buffer, &buffer,
-                                             nil,
-                                             $0.baseAddress!,
-                                             UInt32(entryCount),
-                                             0, 1,
-                                             vImage_Flags(kvImageNoFlags))
+let source = vImage.PixelBuffer<vImage.PlanarF>(
+    pixelValues: [0.1, 0.4, 0.7, 1.0],
+    size: .init(width: 4, height: 1))
+
+let entryCount = 64
+var histogram = [vImagePixelCount](repeating: 0, count: entryCount)
+histogram[0]  = 1
+histogram[21] = 1
+histogram[42] = 1
+histogram[63] = 1
+
+let destination = vImage.PixelBuffer<vImage.PlanarF>(
+    size: .init(width: 4, height: 1))
+
+source.withUnsafePointerToVImageBuffer { src in
+    destination.withUnsafePointerToVImageBuffer { dest in
+        histogram.withUnsafeBufferPointer { histPtr in
+            _ = vImageHistogramSpecification_PlanarF(src,
+                                                     dest,
+                                                     nil,
+                                                     histPtr.baseAddress!,
+                                                     UInt32(entryCount),
+                                                     0, 1,
+                                                     vImage_Flags(kvImageNoFlags))
+        }
+    }
 }
+
+// Prints "[0.0, 0.33333, 0.66667, 1.0]".
+print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+// The `histogram` is an `entryCount`-element array.
+// The `buffer` is a `vImage_Buffer` structure.
+vImageHistogramSpecification_PlanarF(&buffer, &buffer,
+                                     nil,
+                                     histogram,
+                                     entryCount,
+                                     0, 1,
+                                     kvImageNoFlags);
 ```
 
 ##### Optimize Performance with Temporary Buffers

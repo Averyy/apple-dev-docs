@@ -30,7 +30,7 @@ A vector that contains the linearly interpolated values.
 
 #### Discussion
 
-The following code creates a five-element vector from two values using linear interpolation. The last index in `indices` determines the length of the operation result.
+The following code creates a five-element vector from two values using linear interpolation. The last index in `indices` determines the length of the operation result:
 
 ```swift
 let values: [Float] = [0, 100]

@@ -33,17 +33,11 @@ Graphics contexts are maintained on a stack. You push a graphics context onto th
   Creates a new graphics context using the specified bitmap image representation object as the context destination.
 - [init(cgContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-9cbad.md)
   Creates a new graphics context from the specified Core Graphics context and the initial flipped state.
-- [init(window: NSWindow)](nsgraphicscontext/init(window:).md)
-  Creates a new graphics context for drawing into a window.
-- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](nsgraphicscontext/init(graphicsport:flipped:).md)
-  Creates a new graphics context from the specified graphics port.
 ### Managing the Current Context
 - [class var current: NSGraphicsContext?](nsgraphicscontext/current.md)
   Returns the current graphics context of the current thread.
 - [var cgContext: CGContext](nsgraphicscontext/cgcontext.md)
   The Core Graphics context, which is a low-level, platform-specific graphics context.
-- [var graphicsPort: UnsafeMutableRawPointer](nsgraphicscontext/graphicsport.md)
-  The low-level, platform-specific graphics context represented by the graphic port.
 ### Managing the Graphics State
 - [class func restoreGraphicsState()](nsgraphicscontext/restoregraphicsstate-swift.type.method.md)
   Pops a graphics context from the per-thread stack, makes it current, and sends the context a restore graphics state message.
@@ -53,8 +47,6 @@ Graphics contexts are maintained on a stack. You push a graphics context onto th
   Saves the graphics state of the current graphics context.
 - [func saveGraphicsState()](nsgraphicscontext/savegraphicsstate-swift.method.md)
   Saves the current graphics state and creates a new graphics state on the top of the stack.
-- [class func setGraphicsState(Int)](nsgraphicscontext/setgraphicsstate(_:).md)
-  Makes the graphics context of the specified graphics state current, and resets graphics state.
 ### Testing the Drawing Destination
 - [class func currentContextDrawingToScreen() -> Bool](nsgraphicscontext/currentcontextdrawingtoscreen.md)
   Returns a Boolean value that indicates whether the current context is drawing to the screen.
@@ -93,6 +85,9 @@ Graphics contexts are maintained on a stack. You push a graphics context onto th
   The color rendering intent in the graphics context’s graphics state.
 - [enum NSColorRenderingIntent](nscolorrenderingintent.md)
   Constants that specify how Cocoa should handle colors that are not located within the destination color space of a graphics context.
+### Deprecated
+- [Deprecated symbols](nsgraphicscontext-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [init(CGContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-4txqw.md)
 

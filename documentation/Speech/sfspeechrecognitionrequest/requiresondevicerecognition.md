@@ -18,6 +18,10 @@ A Boolean value that determines whether a request must keep its audio data on th
 var requiresOnDeviceRecognition: Bool { get set }
 ```
 
+## Mentions
+
+- [Asking Permission to Use Speech Recognition](asking-permission-to-use-speech-recognition.md)
+
 #### Discussion
 
 Set this property to `true` to prevent an [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) from sending audio over the network. However, on-device requests won’t be as accurate.

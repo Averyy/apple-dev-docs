@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The margins included in the frame around the rect for interactive content.
+The extra space around the reserved area that keeps interactive content clear of it.
 
 **Availability**:
 - iOS 27.1+
@@ -20,20 +20,14 @@ The margins included in the frame around the rect for interactive content.
 var margins: EdgeInsets { get }
 ```
 
+#### Discussion
+
+The region’s [`frame`](reservedregion/frame.md) already includes these margins.
+
 ## See Also
 
-- [var id: ReservedRegion.ID](reservedregion/id-swift.property.md)
-  The identifier of the region.
-- [ReservedRegion.ID](reservedregion/id-swift.struct.md)
-  An identifier for a reserved region.
 - [var frame: CGRect](reservedregion/frame.md)
-  The rect of the region in the view’s coordinate space, including the margins.
-- [var isActive: Bool](reservedregion/isactive.md)
-  Whether the region is active.
-- [var kind: ReservedRegion.Kind](reservedregion/kind-swift.property.md)
-  The kind of the region.
-- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
-  A kind of reserved region.
+  The rectangle that describes the region within your view.
 
 
 ---

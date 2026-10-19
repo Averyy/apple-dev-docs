@@ -32,6 +32,8 @@ The following code defines two sets of polynomial coefficients, `coefficients0` 
 
 Note that the boundaries array contains three elements that define two ranges: `0..<0.5` and `0.5...1`. The `order` value equals the number of coefficients in each segment minus one.
 
+**Swift**:
+
 ```swift
 let source = vImage.PixelBuffer<vImage.PlanarF>(
     pixelValues: [0, 0.2, 0.4, 0.6, 0.8, 1],
@@ -69,6 +71,53 @@ coefficients0.withUnsafeBufferPointer { coefficients0Ptr in
         }
     }
 }
+
+print(destination.array)
+// Prints "[0, 25, 50, 91, 163, 255]".
+```
+
+**Objective-C**:
+
+```objc
+float   src[6] = {0.0f, 0.2f, 0.4f, 0.6f, 0.8f, 1.0f};
+uint8_t dst[6] = {0};
+
+vImage_Buffer srcBuf = {
+    .data     = src,
+    .width    = 6,
+    .height   = 1,
+    .rowBytes = 6 * 4
+};
+
+vImage_Buffer dstBuf = {
+    .data     = dst,
+    .width    = 6,
+    .height   = 1,
+    .rowBytes = 6
+};
+
+float coefficients0[3] = {0.0f, 127.0f, 0.0f};
+float coefficients1[3] = {0.0f, 0.0f, 255.0f};
+
+const float *coefficients[2] = { coefficients0, coefficients1 };
+
+float boundaries[3] = {0.0f, 0.5f, 1.0f};
+
+uint32_t order        = 2;
+uint32_t log2segments = 1;
+
+vImagePiecewisePolynomial_PlanarFtoPlanar8(
+    &srcBuf,
+    &dstBuf,
+    coefficients,
+    boundaries,
+    order,
+    log2segments,
+    kvImageNoFlags);
+
+// Prints "[0, 25, 50, 91, 163, 255]".
+printf("[%d, %d, %d, %d, %d, %d]\n",
+       dst[0], dst[1], dst[2], dst[3], dst[4], dst[5]);
 ```
 
 On return, the destination buffer contains the values `[0, 25, 50, 91, 163, 255]`. This is equivalent to the following scalar code:

@@ -26,6 +26,36 @@ func vvexpf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafePo
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [0, 1, 2]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate `e` raised to the power of each element in `x`.
+vvexpf(&y, &x, &n)
+
+// Prints "[1.0, 2.7182817, 7.389056]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {0, 1, 2};
+float y[3];
+int n = 3;
+
+// Calculate `e` raised to the power of each element in `x`.
+vvexpf(y, x, &n);
+
+// Prints "[1, 2.71828, 7.38906]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)

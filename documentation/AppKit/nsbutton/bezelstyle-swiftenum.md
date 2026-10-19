@@ -51,7 +51,8 @@ For design guidance on buttons, see [`Human Interface Guidelines > Buttons`](htt
 - [NSButton.BezelStyle.smallSquare](nsbutton/bezelstyle-swift.enum/smallsquare.md)
   A simple square bezel style that can scale to any size.
 ### Deprecated
-- [Deprecated Symbols](bezelstyle-deprecated-symbols.md)
+- [Deprecated symbols](bezelstyle-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Enumeration Cases
 - [NSButton.BezelStyle.glass](nsbutton/bezelstyle-swift.enum/glass.md)
   A bezel style with a glass effect
@@ -72,8 +73,6 @@ For design guidance on buttons, see [`Human Interface Guidelines > Buttons`](htt
 
 - [NSButton.ButtonType](nsbutton/buttontype.md)
   Button types that you can specify using [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md).
-- [NSButton.GradientType](nsbutton/gradienttype.md)
-  Specify the gradients used by the [`gradientType`](nsbuttoncell/gradienttype.md) property.
 
 
 ---

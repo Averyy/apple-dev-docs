@@ -27,10 +27,6 @@ static var bordered: BorderedTextFieldStyle { get }
   The default text field style, based on the text field’s context.
 - [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
   A text field style with no decoration.
-- [static var roundedBorder: RoundedBorderTextFieldStyle](textfieldstyle/roundedborder.md)
-  A text field style with a system-defined rounded border.
-- [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)
-  A text field style with a system-defined square border.
 
 
 ---

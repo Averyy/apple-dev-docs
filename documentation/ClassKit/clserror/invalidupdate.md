@@ -28,6 +28,7 @@ static var invalidUpdate: CLSError.Code { get }
   ClassKit isn’t available on this device.
 - [static var databaseInaccessible: CLSError.Code](clserror/databaseinaccessible.md)
   ClassKit isn’t accessible because the device is locked.
+- [static var errorDomain: String](clserror/errordomain.md)
 - [static var invalidAccountCredentials: CLSError.Code](clserror/invalidaccountcredentials.md)
 - [static var invalidArgument: CLSError.Code](clserror/invalidargument.md)
   An invalid argument was provided to the API.

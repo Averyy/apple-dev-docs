@@ -43,8 +43,6 @@ HStack {
 
 - [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
-- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
-  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 - [func hoverEffect(_:isEnabled:)](view/hovereffect(_:isenabled:).md)
   Applies a hover effect to this view.
 - [func defaultHoverEffect(_:)](view/defaulthovereffect(_:).md)
@@ -59,6 +57,8 @@ HStack {
   Presents an ornament on hover using a custom effect.
 - [struct OrnamentHoverEffect](ornamenthovereffect.md)
   Presents an ornament on hover.
+- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
+  Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
 
 ---

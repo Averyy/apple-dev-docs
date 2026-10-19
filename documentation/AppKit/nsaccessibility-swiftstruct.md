@@ -21,6 +21,8 @@ struct NSAccessibility
   Sends a notification to any observing assistive apps.
 - [static func post(element: Any, notification: NSAccessibility.Notification, userInfo: [NSAccessibility.NotificationUserInfoKey : Any]?)](nsaccessibility-swift.struct/post(element:notification:userinfo:).md)
   Sends a notification and an optional user info dictionary to any observing assistive apps.
+- [static func raiseBadArgumentException(Any!, NSAccessibility.Attribute!, Any!)](nsaccessibility-swift.struct/raisebadargumentexception(_:_:_:).md)
+  Raises an error if the parameter is the wrong type or has an illegal value
 ### Getting Accessibility Objects
 - [static func unignoredAncestor(of: Any) -> Any?](nsaccessibility-swift.struct/unignoredancestor(of:).md)
   Returns an unignored accessibility object, ascending the hierarchy, if necessary.
@@ -68,9 +70,6 @@ struct NSAccessibility
   Values that indicate the sort direction of a column.
 - [NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole.md)
   Values that describe specialized object subtypes that accessibility elements represent.
-### Deprecated
-- [static func raiseBadArgumentException(Any!, NSAccessibility.Attribute!, Any!)](nsaccessibility-swift.struct/raisebadargumentexception(_:_:_:).md)
-  Raises an error if the parameter is the wrong type or has an illegal value
 
 ## Relationships
 

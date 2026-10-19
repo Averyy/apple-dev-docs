@@ -20,22 +20,24 @@ The value of this property is [`true`](https://developer.apple.com/documentation
 
 ## See Also
 
-- [class func standardWindowButton(NSWindow.ButtonType, for: NSWindow.StyleMask) -> NSButton?](nswindow/standardwindowbutton(_:for:).md)
-  Returns a new instance of a given standard window button, sized appropriately for a given window style.
-- [func standardWindowButton(NSWindow.ButtonType) -> NSButton?](nswindow/standardwindowbutton(_:).md)
-  Returns the window button of a given window button kind in the window’s view hierarchy.
-- [var titlebarAppearsTransparent: Bool](nswindow/titlebarappearstransparent.md)
-  A Boolean value that indicates whether the title bar draws its background.
-- [var toolbarStyle: NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.property.md)
-  The style that determines the appearance and location of the toolbar in relation to the title bar.
-- [NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.enum.md)
-  Styles that determine the appearance and location of the toolbar in relation to the title bar.
-- [var titlebarSeparatorStyle: NSTitlebarSeparatorStyle](nswindow/titlebarseparatorstyle.md)
-  The type of separator that the app displays between the title bar and content of a window.
-- [enum NSTitlebarSeparatorStyle](nstitlebarseparatorstyle.md)
-  Styles that determine the type of separator displayed between the title bar and content of a window.
-- [var windowTitlebarLayoutDirection: NSUserInterfaceLayoutDirection](nswindow/windowtitlebarlayoutdirection.md)
-  The direction the window’s title bar lays text out, either left to right or right to left.
+- [var backingLocation: NSWindow.BackingLocation](nswindow/backinglocation-swift.property.md)
+  The location of the window’s backing store.
+- [var preferredBackingLocation: NSWindow.BackingLocation](nswindow/preferredbackinglocation.md)
+  A Boolean value that indicates the preferred location for the window’s backing store.
+- [var isOneShot: Bool](nswindow/isoneshot.md)
+  A Boolean value that indicates whether the window device the window manages is freed when it’s removed from the screen list.
+- [var drawers: [NSDrawer]?](nswindow/drawers.md)
+  The collection of drawers associated with the window.
+- [var showsResizeIndicator: Bool](nswindow/showsresizeindicator.md)
+  A Boolean value that indicates whether the window’s resize indicator is visible.
+- [var isFlushWindowDisabled: Bool](nswindow/isflushwindowdisabled.md)
+  A Boolean value that indicates whether the window’s flushing ability is disabled.
+- [var isAutodisplay: Bool](nswindow/isautodisplay.md)
+  A Boolean value that indicates whether the window automatically displays views that need to be displayed.
+- [var graphicsContext: NSGraphicsContext?](nswindow/graphicscontext.md)
+  The graphics context associated with the window for the current thread.
+- [var windowRef: UnsafeMutableRawPointer](nswindow/windowref.md)
+  The Carbon window reference associated with the window, creating one if necessary.
 
 
 ---

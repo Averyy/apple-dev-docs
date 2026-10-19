@@ -63,8 +63,18 @@ struct TabItem: View {
 
 ## See Also
 
-- [struct NavigationView](navigationview.md)
-  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
+- [Enhancing your app’s content with tab navigation](enhancing-your-app-content-with-tab-navigation.md)
+  Keep your app content front and center while providing quick access to navigation using the tab bar.
+- [struct TabView](tabview.md)
+  A view that switches between multiple child views using interactive user interface elements.
+- [struct Tab](tab.md)
+  The content for a tab and the tab’s associated tab item in a tab view.
+- [struct TabRole](tabrole.md)
+  A value that defines the purpose of the tab.
+- [struct TabSection](tabsection.md)
+  A container that you can use to add hierarchy within a tab view.
+- [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
+  Sets the style for the tab view within the current environment.
 
 
 ---

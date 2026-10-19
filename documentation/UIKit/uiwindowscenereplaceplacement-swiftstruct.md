@@ -24,11 +24,6 @@ struct UIWindowSceneReplacePlacement
 - [Hashable](../swift/hashable.md)
 - [UIWindowScenePlacement](uiwindowsceneplacement-swift.protocol.md)
 
-## See Also
-
-- [var preferredPresentationStyle: UIWindowScene.PresentationStyle](uiwindowscene/activationrequestoptions/preferredpresentationstyle.md)
-  The presentation style of the window scene.
-
 
 ---
 

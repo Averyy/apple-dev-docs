@@ -24,6 +24,11 @@ To avoid the “flickering” effect of many successive menu changes, set the va
 
 In macOS 10.6 and later this property has no effect.
 
+## See Also
+
+- [var isTornOff: Bool](nsmenu/istornoff.md)
+  Indicates whether the menu is offscreen or attached to another menu (or if it’s the main menu).
+
 
 ---
 

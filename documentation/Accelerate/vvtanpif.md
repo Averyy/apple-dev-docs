@@ -26,6 +26,36 @@ func vvtanpif(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Unsafe
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [0, 0.25, -0.25]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the tangent of π times each element in `x`.
+vvtanpif(&y, &x, &n)
+
+// Prints "[0.0, 1.0, -1.0]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {0, 0.25, -0.25};
+float y[3];
+int n = 3;
+
+// Calculate the tangent of π times each element in `x`.
+vvtanpif(y, x, &n);
+
+// Prints "[0, 1, -1]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acos<U>(U) -> [Double]](vforce/acos(_:)-8srk.md)

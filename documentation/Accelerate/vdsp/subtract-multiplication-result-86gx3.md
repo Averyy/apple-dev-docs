@@ -22,7 +22,7 @@ static func subtract<T, U, V>(multiplication: (a: U, b: Float), _ vector: T, res
 
 #### Discussion
 
-This function calculates the element-wise product of vector `A` and scalar value `B`, subtracts vector `C` from the product, and writes the result to vector `D`.
+This function calculates the element-wise product of vector `A` and scalar value `B`, subtracts vector `C` from the product, and writes the result to vector `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

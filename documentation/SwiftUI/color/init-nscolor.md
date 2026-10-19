@@ -44,6 +44,8 @@ The `Box` view defined above automatically changes its appearance when the user 
   Creates a color from a UIKit color.
 - [init(cgColor: CGColor)](color/init(cgcolor:).md)
   Creates a color from a Core Graphics color.
+- [var cgColor: CGColor?](color/cgcolor.md)
+  A Core Graphics representation of the color, if available.
 
 
 ---

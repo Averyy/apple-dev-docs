@@ -47,6 +47,36 @@ vDSP_vdist(a, stride,
 
 On return, `c` contains `[5.0, 10.0, 13.0, 15.0]`.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var a: [Double] = [3, 5, 8]
+var b: [Double] = [4, 12, 15]
+var c = [Double](repeating: 0, count: a.count)
+
+// Calculate the hypotenuse of a right triangle with legs `a[i]` and `b[i]`.
+vDSP_vdistD(a, 1, b, 1, &c, 1, vDSP_Length(a.count))
+
+// Prints "[5.0, 13.0, 17.0]".
+print(c)
+```
+
+**Objective-C**:
+
+```objc
+double a[3] = {3, 5, 8};
+double b[3] = {4, 12, 15};
+double c[3];
+
+// Calculate the hypotenuse of a right triangle with legs `a[i]` and `b[i]`.
+vDSP_vdistD(a, 1, b, 1, c, 1, 3);
+
+// Prints "[5, 13, 17]".
+printf("[%g, %g, %g]\n", c[0], c[1], c[2]);
+```
+
 ## Parameters
 
 - `__A`: A vector that contains the lengths of the first set of legs of the triangles.

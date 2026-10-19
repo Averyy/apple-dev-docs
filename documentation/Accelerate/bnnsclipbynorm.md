@@ -26,7 +26,7 @@ Use this function to clip the values in an input tensor to a maximum Euclidean n
 
 The function supports clipping across the entire tensor or by the norms of the dimension you specify.
 
-The following code clips the values on axis `0b0010` to a Euclidean norm of `10`. The Euclidean norms of `[1, 2, 3]` and `[4, 5, 6]` are both less than 10, and function returns them unchanged. However, the Euclidean norm of `[7, 8, 9]` is greater than 10, and the function returns them scaled accordingly.
+The following code clips the values on axis `0b0010` to a Euclidean norm of `10`. The Euclidean norms of `[1, 2, 3]` and `[4, 5, 6]` are both less than 10, and function returns them unchanged. However, the Euclidean norm of `[7, 8, 9]` is greater than 10, and the function returns them scaled accordingly:
 
 ```swift
 static func clipToNorm() {
@@ -62,9 +62,10 @@ static func clipToNorm() {
                     10,
                     0b0010)
     
-    // Prints `[1.0, 2.0, 3.0,
-    //          4.0, 5.0, 6.0,
-    //          5.0257072, 5.743665, 6.461623]`
+    // Prints:
+    //  "[1.0, 2.0, 3.0,
+    //    4.0, 5.0, 6.0,
+    //    5.0257072, 5.743665, 6.461623]".
     print(Array(outputData))
     
     inputData.deallocate()

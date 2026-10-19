@@ -26,8 +26,6 @@ Window button in the window’s view hierarchy of the type identified by `b`; `n
 
 - [class func standardWindowButton(NSWindow.ButtonType, for: NSWindow.StyleMask) -> NSButton?](nswindow/standardwindowbutton(_:for:).md)
   Returns a new instance of a given standard window button, sized appropriately for a given window style.
-- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
-  A Boolean value that indicates whether the toolbar control button is currently displayed.
 - [var titlebarAppearsTransparent: Bool](nswindow/titlebarappearstransparent.md)
   A Boolean value that indicates whether the title bar draws its background.
 - [var toolbarStyle: NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.property.md)

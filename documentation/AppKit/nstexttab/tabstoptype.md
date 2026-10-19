@@ -22,6 +22,8 @@ Possible values are listed in [`NSParagraphStyle.TextTabType`](nsparagraphstyle/
 
 - [convenience init(type: NSParagraphStyle.TextTabType, location: CGFloat)](nstexttab/init(type:location:).md)
   Initializes a newly allocated text tab with the specified alignment and location.
+- [NSParagraphStyle.TextTabType](nsparagraphstyle/texttabtype.md)
+  Constants that specify the type of tab stop.
 
 
 ---

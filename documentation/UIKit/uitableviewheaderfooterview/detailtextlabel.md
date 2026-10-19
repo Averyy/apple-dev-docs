@@ -30,6 +30,14 @@ This property is mutually exclusive with a content configuration. Setting a non-
 
 ## See Also
 
+- [func defaultContentConfiguration() -> UIListContentConfiguration](uitableviewheaderfooterview/defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the view’s style.
+- [var contentConfiguration: (any UIContentConfiguration)?](uitableviewheaderfooterview/contentconfiguration-6b4eg.md)
+  The current content configuration of the view.
+- [var automaticallyUpdatesContentConfiguration: Bool](uitableviewheaderfooterview/automaticallyupdatescontentconfiguration.md)
+  A Boolean value that determines whether the view automatically updates its content configuration when its state changes.
+- [var contentView: UIView](uitableviewheaderfooterview/contentview.md)
+  The content view of the header or footer.
 - [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
   A primary text label for the view.
 

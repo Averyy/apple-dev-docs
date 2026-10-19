@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: method
 
-Sets the supported axes of the arrangement.
+Sets the axes that the arrangement supports to the axes you provide.
 
 **Availability**:
 - iOS 27.1+
@@ -17,6 +17,10 @@ Sets the supported axes of the arrangement.
 ```swift
 func axes(_ axes: UIAxis) -> UIOverlayArrangement
 ```
+
+#### Discussion
+
+For axes that you don’t include, the arrangement only displays the primary view.
 
 ## Parameters
 

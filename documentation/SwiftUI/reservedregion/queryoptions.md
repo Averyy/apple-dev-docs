@@ -21,11 +21,15 @@ Options for querying reserved regions.
 struct QueryOptions
 ```
 
+#### Overview
+
+Pass query options to [`reservedRegions(kind:options:layoutDirectionBehavior:)`](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md) to change which regions you get.
+
 ## Topics
 
 ### Getting query options
 - [static var includeInactive: ReservedRegion.QueryOptions](reservedregion/queryoptions/includeinactive.md)
-  Include inactive reserved regions.
+  An option that includes inactive reserved regions in the results.
 
 ## Relationships
 

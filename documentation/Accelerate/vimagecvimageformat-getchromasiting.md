@@ -30,6 +30,8 @@ A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChromaSiting(_:)`](vimagecvimageformat_getchromasiting(_:).md):
 
+**Swift**:
+
 ```swift
 let chromaSiting = withUnsafeBytes(of: cvImageFormat) { bytes in
     let format = bytes.assumingMemoryBound(
@@ -37,6 +39,14 @@ let chromaSiting = withUnsafeBytes(of: cvImageFormat) { bytes in
     
     return vImageCVImageFormat_GetChromaSiting(format)
 }
+```
+
+**Objective-C**:
+
+```objc
+vImageConstCVImageFormatRef constFormat = cvImageFormat;
+
+CFStringRef chromaSiting = vImageCVImageFormat_GetChromaSiting(constFormat);
 ```
 
 ## Parameters

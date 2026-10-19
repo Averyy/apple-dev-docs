@@ -10,9 +10,9 @@ Hides a toolbar item within its toolbar.
 - iPadOS 26.4+
 - Mac Catalyst 26.4+
 - macOS 15.0+
-- tvOS 27.2+ (Beta)
+- tvOS 27.2+
 - visionOS 26.4+
-- watchOS 27.2+ (Beta)
+- watchOS 27.2+
 
 ## Declaration
 

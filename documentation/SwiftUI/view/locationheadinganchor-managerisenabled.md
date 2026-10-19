@@ -6,8 +6,8 @@
 Specifies this view as the reference body for the location manager’s heading calculations.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
 
 ## Declaration
 

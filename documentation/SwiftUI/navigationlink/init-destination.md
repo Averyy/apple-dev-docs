@@ -26,11 +26,6 @@ nonisolated init(_ titleKey: LocalizedStringKey, @ContentBuilder destination: ()
 - `titleKey`: A localized string key for creating a text label.
 - `destination`: A view for the navigation link to present.
 
-## See Also
-
-- [init(destination:label:)](navigationlink/init(destination:label:).md)
-  Creates a navigation link that presents the destination view.
-
 
 ---
 

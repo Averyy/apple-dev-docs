@@ -4,7 +4,7 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
-The type of properties for views within the arrangement.
+Properties you use to customize how an arrangement presents views.
 
 **Availability**:
 - iOS 27.1+
@@ -18,6 +18,10 @@ The type of properties for views within the arrangement.
 ```swift
 associatedtype ViewProperties
 ```
+
+#### Discussion
+
+For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
 
 ## See Also
 

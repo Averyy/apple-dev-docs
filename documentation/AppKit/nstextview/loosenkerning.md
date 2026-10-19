@@ -50,8 +50,6 @@ Kerning values are determined by the point size of the fonts in the selection.
   Sets the receiver to use only required ligatures when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view.
 - [func useAllLigatures(Any?)](nstextview/useallligatures(_:).md)
   Sets the receiver to use all ligatures available for the fonts and languages used when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view.
-- [func toggleTraditionalCharacterShape(Any?)](nstextview/toggletraditionalcharactershape(_:).md)
-  Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
 
 
 ---

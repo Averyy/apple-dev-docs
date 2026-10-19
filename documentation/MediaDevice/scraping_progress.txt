@@ -1,4 +1,4 @@
 Completed scraping Media Device!
-Total pages scraped: 92
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 93
 Pages failed: 0

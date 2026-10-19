@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Sets the size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+Sets the size ratio for a view in a split style arrangement view.
 
 **Availability**:
 - iOS 27.1+
@@ -23,6 +23,8 @@ func splitArrangementLayoutRatio(minHorizontal: CGFloat? = nil, idealHorizontal:
 
 #### Discussion
 
+Use this modifier when you want to customize the size of a view compared to the other view in the split arrangement, as the following example shows:
+
 ```swift
 ArrangementView {
     NumpadView()
@@ -39,29 +41,29 @@ ArrangementView {
 
 ## Parameters
 
-- `minHorizontal`: The minimum ratio for horizontal splits.
-- `idealHorizontal`: The ideal ratio for horizontal splits.
-- `maxHorizontal`: The maximum ratio for horizontal splits.
-- `minVertical`: The minimum ratio for vertical splits.
-- `idealVertical`: The ideal ratio for vertical splits.
-- `maxVertical`: The maximum ratio for vertical splits.
+- `minHorizontal`: A float value between zero and one that indicates the minimum ratio for a horizontal split arrangement.
+- `idealHorizontal`: A float value between zero and one that indicates the ideal ratio for a horizontal split arrangement.
+- `maxHorizontal`: A float value between zero and one that indicates the maximum ratio for a horizontal split arrangement.
+- `minVertical`: A float value between zero and one that indicates the minimum ratio for a vertical split arrangement.
+- `idealVertical`: A float value between zero and one that indicates the ideal ratio for a vertical split arrangement.
+- `maxVertical`: A float value between zero and one that indicates the maximum ratio for a vertical split arrangement.
 
 ## See Also
 
 - [struct ArrangementView](arrangementview.md)
-  A view that arranges primary and secondary content using an adaptive layout that responds to the environment.
+  A view that dynamically lays out a primary and secondary view based on size class, orientation, and reserved regions.
 - [func arrangementViewStyle(some ArrangementViewStyle) -> some View](view/arrangementviewstyle(_:).md)
   Sets the style for arrangement views within this view.
 - [protocol ArrangementViewStyle](arrangementviewstyle.md)
-  A style that configures an `ArrangementView` with an arrangement.
+  A style that indicates how an arrangement view lays out a primary and secondary view.
 - [func overlayArrangementEdge(_:)](view/overlayarrangementedge(_:).md)
-  The horizontal edge a view in an overlay arrangement occupies when the arrangement transitions to a horizontal layout.
+  The horizontal edge a view in an overlay arrangement aligns to when the arrangement transitions to a landscape orientation.
 - [func splitArrangementFixedLayoutSize(horizontal: Bool, vertical: Bool) -> some View](view/splitarrangementfixedlayoutsize(horizontal:vertical:).md)
-  Sets the preferred size constraint for an arrangement view in a split style to the ideal size of the view within its container. The arrangement view will prefer this size, but may resize to a smaller size depending on the priority of the view.
+  Sets the preferred size constraint for a view in a split arrangement style to the ideal size of the view within its container.
 - [func splitArrangementLayoutRatio(CGFloat?) -> some View](view/splitarrangementlayoutratio(_:).md)
-  Sets the preferred size ratio for an arrangement view in a split style. Use this modifier when you want to customize the size of the view compared to its other views in the split layout.
+  Sets the preferred size ratio for a view in a split style arrangement view.
 - [func splitArrangementLayoutSize(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?) -> some View](view/splitarrangementlayoutsize(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:).md)
-  Sets the size constraints for an arrangement view in a split style.
+  Sets the size constraints for a view in a split style arrangement view.
 
 
 ---

@@ -26,8 +26,6 @@ You should never invoke the setter method for this property directly. The setter
   Assigns a menu to be a submenu of the menu controlled by a given menu item.
 - [func submenuAction(Any?)](nsmenu/submenuaction(_:).md)
   The action method assigned to menu items that open submenus.
-- [var isTornOff: Bool](nsmenu/istornoff.md)
-  Indicates whether the menu is offscreen or attached to another menu (or if it’s the main menu).
 
 
 ---

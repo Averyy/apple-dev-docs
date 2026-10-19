@@ -38,14 +38,13 @@ struct EventModifiers
   The Option key.
 - [static let shift: EventModifiers](eventmodifiers/shift.md)
   The Shift key.
+- [static let function: EventModifiers](eventmodifiers/function.md)
+  The Function key.
 ### Creating a set of options
 - [init(rawValue: Int)](eventmodifiers/init(rawvalue:).md)
   Creates a new set from a raw value.
 - [let rawValue: Int](eventmodifiers/rawvalue.md)
   The raw value.
-### Deprecated modifiers
-- [static let function: EventModifiers](eventmodifiers/function.md)
-  The Function key.
 
 ## Relationships
 

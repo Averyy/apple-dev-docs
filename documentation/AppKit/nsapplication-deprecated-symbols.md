@@ -1,12 +1,16 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review symbols that are no longer supported, and find the replacements to use instead.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func activate(ignoringOtherApps: Bool)](nsapplication/activate(ignoringotherapps:).md)
   Makes the receiver the active app.
 - [func endModalSession(NSApplication.ModalSession)](nsapplication/endmodalsession(_:).md)

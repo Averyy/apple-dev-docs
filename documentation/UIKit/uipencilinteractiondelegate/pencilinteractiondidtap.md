@@ -24,6 +24,11 @@ When handling the double tap, perform either:
 - The action selected by the user in the Settings app, as specified by the [`preferredTapAction`](uipencilinteraction/preferredtapaction.md) class property.
 - An alternative behavior that gives the user the best experience for your app. Should you decide to support an alternative, provide an intuitive way for the user to learn about and enable that behavior.
 
+## See Also
+
+- [func pencilInteraction(UIPencilInteraction, didReceiveTap: UIPencilInteraction.Tap)](uipencilinteractiondelegate/pencilinteraction(_:didreceivetap:).md)
+  Tells the delegate when a person double-taps Apple Pencil.
+
 
 ---
 

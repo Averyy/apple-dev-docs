@@ -29,10 +29,6 @@ The created [`NSGraphicsContext`](nsgraphicscontext.md) object, or `nil` if the 
   Creates a graphics context using the specified attributes.
 - [init?(bitmapImageRep: NSBitmapImageRep)](nsgraphicscontext/init(bitmapimagerep:).md)
   Creates a new graphics context using the specified bitmap image representation object as the context destination.
-- [init(window: NSWindow)](nsgraphicscontext/init(window:).md)
-  Creates a new graphics context for drawing into a window.
-- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](nsgraphicscontext/init(graphicsport:flipped:).md)
-  Creates a new graphics context from the specified graphics port.
 
 
 ---

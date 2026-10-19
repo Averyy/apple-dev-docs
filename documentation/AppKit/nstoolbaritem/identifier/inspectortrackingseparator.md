@@ -42,6 +42,10 @@ Only applies to windows with `NSWindowStyleMaskFullSizeContentView` applied.
   The identifier for a toolbar item that displays a tracking separator aligned with the secondary divider in a split view.
 - [static let toggleInspector: NSToolbarItem.Identifier](nstoolbaritem/identifier/toggleinspector.md)
   The identifier for a toolbar item that displays an inspector.
+- [static let customizeToolbar: NSToolbarItem.Identifier](nstoolbaritem/identifier/customizetoolbar.md)
+  The Customize item, which shows the customization palette.
+- [static let separator: NSToolbarItem.Identifier](nstoolbaritem/identifier/separator.md)
+  The Separator item.
 
 
 ---

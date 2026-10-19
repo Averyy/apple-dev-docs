@@ -42,8 +42,26 @@ There is no equivalent notification for this delegation method.
 
 ## See Also
 
-- [UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey.md)
-  Keys you use to access values in the options dictionary when opening a URL.
+- [func applicationDidBecomeActive(UIApplication)](uiapplicationdelegate/applicationdidbecomeactive(_:).md)
+  Tells the delegate that the app has become active.
+- [func applicationWillResignActive(UIApplication)](uiapplicationdelegate/applicationwillresignactive(_:).md)
+  Tells the delegate that the app is about to become inactive.
+- [func applicationWillEnterForeground(UIApplication)](uiapplicationdelegate/applicationwillenterforeground(_:).md)
+  Tells the delegate that the app is about to enter the foreground.
+- [func application(UIApplication, willContinueUserActivityWithType: String) -> Bool](uiapplicationdelegate/application(_:willcontinueuseractivitywithtype:).md)
+  Tells the delegate if your app takes responsibility for notifying users when a continuation activity takes longer than expected.
+- [func application(UIApplication, continue: NSUserActivity, restorationHandler: ([any UIUserActivityRestoring]?) -> Void) -> Bool](uiapplicationdelegate/application(_:continue:restorationhandler:).md)
+  Tells the delegate that the data for continuing an activity is available.
+- [func application(UIApplication, didUpdate: NSUserActivity)](uiapplicationdelegate/application(_:didupdate:).md)
+  Tells the delegate that the activity was updated.
+- [func application(UIApplication, didFailToContinueUserActivityWithType: String, error: any Error)](uiapplicationdelegate/application(_:didfailtocontinueuseractivitywithtype:error:).md)
+  Tells the delegate that the activity couldn’t be continued.
+- [func application(UIApplication, performActionFor: UIApplicationShortcutItem, completionHandler: (Bool) -> Void)](uiapplicationdelegate/application(_:performactionfor:completionhandler:).md)
+  Tells the delegate that the user selected a Home screen quick action for your app, except when you’ve intercepted the interaction in a launch method.
+- [func application(UIApplication, userDidAcceptCloudKitShareWith: CKShareMetadata)](uiapplicationdelegate/application(_:userdidacceptcloudkitsharewith:).md)
+  Tells the delegate that the app now has access to shared information in CloudKit.
+- [func application(UIApplication, supportedInterfaceOrientationsFor: UIWindow?) -> UIInterfaceOrientationMask](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md)
+  Asks the delegate for the interface orientations to use for the view controllers in the specified window.
 
 
 ---

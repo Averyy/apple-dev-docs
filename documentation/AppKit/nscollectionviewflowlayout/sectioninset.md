@@ -20,7 +20,7 @@ If the delegate does not implement the [`collectionView(_:layout:insetForSection
 
 Section insets reflect the spacing at the outer edges of the section. The margins affect the positioning of the header view, the minimum space on either side of each line of items, and the distance from the last line to the footer view, as shown in [`Figure 1`](nscollectionviewflowlayout/1402862-sectioninset#1965633.md). The margin insets do not affect the size of the header and footer views in the nonscrolling direction.
 
-![None](/images/com.apple.appkit/media-1965633@2x.png)
+![A diagram of a collection view section layout showing the section insets. A header labeled Header 1 sits at the top and a footer labeled Footer 1 sits at the bottom. Between them, a dashed outline marks the section, with nine items of varying sizes arranged in three rows inside it. Double-headed arrows labeled Top, Bottom, Left, and Right show the margins between the section’s outer edge and the items.](/images/com.apple.appkit/media-1965633@2x.png)
 
 The default insets are all set to `0`.
 

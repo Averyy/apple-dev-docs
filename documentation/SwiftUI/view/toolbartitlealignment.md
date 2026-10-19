@@ -6,9 +6,9 @@
 Sets the preferred alignment of the navigation bar’s title.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
-- Mac Catalyst 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
 
 ## Declaration
 

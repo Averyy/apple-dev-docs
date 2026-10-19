@@ -32,7 +32,7 @@ for (n=0; n < N; ++n)
 }
 ```
 
-The following code shows how to generate a Blackman window.
+The following code shows how to generate a Blackman window:
 
 ```swift
 let n = vDSP_Length(1024)
@@ -48,6 +48,32 @@ vDSP_blkman_window(&c,
 The following illustrates the values of the output vector, `c`:
 
 ![Visualization of a Blackman window.](/images/com.apple.accelerate/media-3233509@2x.png)
+
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var window = [Float](repeating: 0, count: 5)
+
+// Fill `window` with a full Blackman window.
+vDSP_blkman_window(&window, vDSP_Length(window.count), 0)
+
+// Prints "[0.0, 0.20077011, 0.84922993, 0.84922993, 0.20077011]".
+print(window)
+```
+
+**Objective-C**:
+
+```objc
+float window[5];
+
+// Fill `window` with a full Blackman window.
+vDSP_blkman_window(window, 5, 0);
+
+// Prints "[0, 0.20077, 0.84923, 0.84923, 0.20077]".
+printf("[%g, %g, %g, %g, %g]\n", window[0], window[1], window[2], window[3], window[4]);
+```
 
 ## Parameters
 

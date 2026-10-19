@@ -36,6 +36,8 @@ The shape of the curve is defined by a piecewise combination of `circularEaseIn`
   A curve that starts out slowly, then speeds up as it finishes.
 - [static let circularEaseOut: UnitCurve](unitcurve/circulareaseout.md)
   A circular curve that starts out quickly, then slows down as it approaches the end.
+- [static let easeInEaseOut: UnitCurve](unitcurve/easeineaseout.md)
+  A bezier curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
 
 
 ---

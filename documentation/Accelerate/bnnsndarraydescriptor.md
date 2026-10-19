@@ -112,7 +112,7 @@ var parameters = BNNSLayerParametersConvolution(i_desc: inDescriptor,
                                                 groups: 1,
                                                 pad: (0, 0, 0, 0))
 
-// `convolutionLayer` is a `BNNSFilter` created by `BNNSFilterCreateLayerConvolution` using `parameters`.
+// The `convolutionLayer` is a `BNNSFilter` created by `BNNSFilterCreateLayerConvolution` using `parameters`.
 
 let error = BNNSFilterApplyBatch(convolutionLayer, 1,
                                  input, inStride,

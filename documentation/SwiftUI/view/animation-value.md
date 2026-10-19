@@ -36,10 +36,10 @@ A view that applies `animation` to this view whenever `value` changes.
 
 ## See Also
 
-- [func animation(_:)](view/animation(_:).md)
-  Applies the given animation to this view when this view changes.
 - [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](view/animation(_:body:).md)
   Applies the given animation to all animatable values within the `body` closure.
+- [func animation(_:)](view/animation(_:).md)
+  Applies the given animation to this view when this view changes.
 
 
 ---

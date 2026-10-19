@@ -64,14 +64,6 @@ struct PasteboardType
 - [init(String)](nspasteboard/pasteboardtype/init(_:).md)
 - [init(rawValue: String)](nspasteboard/pasteboardtype/init(rawvalue:).md)
 ### Deprecated
-- [static let filePromise: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/filepromise.md)
-  Promised files.
-- [static let inkText: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/inktext.md)
-  Ink text data.
-- [static let postScript: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/postscript.md)
-  Encapsulated PostScript (EPS) code.
-- [static let vCard: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/vcard.md)
-  VCard data.
 - [var representedPathExtension: String?](nspasteboard/pasteboardtype/representedpathextension.md)
   A file type based on the passed pasteboard type.
 - [static func fileContentsType(forPathExtension: String) -> NSPasteboard.PasteboardType!](nspasteboard/pasteboardtype/filecontentstype(forpathextension:).md)
@@ -80,6 +72,8 @@ struct PasteboardType
   Returns a pasteboard type based on the passed file type.
 - [static func representedPathExtensions(from: [NSPasteboard.PasteboardType]) -> [String]?](nspasteboard/pasteboardtype/representedpathextensions(from:).md)
   Returns an array of file types based on the passed pasteboard types.
+- [Deprecated symbols](pasteboardtype-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

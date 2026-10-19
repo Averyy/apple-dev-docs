@@ -37,7 +37,7 @@ let format = vImage_CGImageFormat(
     colorSpace: CGColorSpaceCreateDeviceGray(),
     bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.none.rawValue))!
 
-// `cgImage` is a color image.
+// The `cgImage` is a color image.
 let buffer = try vImage_Buffer(cgImage: cgImage,
                                format: format)
 ```

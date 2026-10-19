@@ -29,6 +29,13 @@ The Show segue uses this method to display a new view controller.
 - `vc`: The view controller to display.
 - `sender`: The object that made the request to show the view controller.
 
+## See Also
+
+- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+  Use the fluid zoom transition to provide a continuously interactive and responsive experience in your app.
+- [var preferredTransition: UIViewController.Transition?](uiviewcontroller/preferredtransition.md)
+  An object that defines the transition animation when switching to the view controller.
+
 
 ---
 

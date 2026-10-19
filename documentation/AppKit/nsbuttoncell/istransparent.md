@@ -26,8 +26,6 @@ Setting this property redraws the button if necessary. A transparent button trac
   The background color of the button.
 - [var bezelStyle: NSButton.BezelStyle](nsbuttoncell/bezelstyle.md)
   The appearance of the button’s border, if it has one.
-- [var gradientType: NSButton.GradientType](nsbuttoncell/gradienttype.md)
-  The gradient of the button’s border.
 - [var imageDimsWhenDisabled: Bool](nsbuttoncell/imagedimswhendisabled.md)
   A Boolean value that indicates if the button’s image and text appear “dim” when the button is disabled.
 - [var isOpaque: Bool](nsbuttoncell/isopaque.md)

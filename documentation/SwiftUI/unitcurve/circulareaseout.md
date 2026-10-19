@@ -36,6 +36,8 @@ The shape of the curve is equal to the second (top left) quadrant of a unit circ
   A curve that starts out slowly, then speeds up as it finishes.
 - [static let circularEaseInOut: UnitCurve](unitcurve/circulareaseinout.md)
   A circular curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
+- [static let easeInEaseOut: UnitCurve](unitcurve/easeineaseout.md)
+  A bezier curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
 
 
 ---

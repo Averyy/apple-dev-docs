@@ -25,8 +25,6 @@ The system cursor that indicates that the current operation will result in a dis
 
 - [class var current: NSCursor](nscursor/current.md)
   Returns the application’s current cursor.
-- [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
-  Returns the current system cursor.
 - [class var arrow: NSCursor](nscursor/arrow.md)
   Returns the default cursor, the arrow cursor.
 - [class var contextualMenu: NSCursor](nscursor/contextualmenu.md)
@@ -53,6 +51,8 @@ The system cursor that indicates that the current operation will result in a dis
   Returns the zoom-in cursor.
 - [class var zoomOut: NSCursor](nscursor/zoomout.md)
   Returns the zoom-out cursor.
+- [class var columnResize: NSCursor](nscursor/columnresize.md)
+  Returns the cursor for resizing a column (vertical divider) in either direction.
 
 
 ---

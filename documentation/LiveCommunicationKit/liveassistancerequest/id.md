@@ -6,11 +6,11 @@
 A unique identifier that relates the request to a conversation in the FaceTime framework.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
-- Mac Catalyst 27.2+ (Beta)
-- macOS 27.2+ (Beta)
-- visionOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- macOS 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

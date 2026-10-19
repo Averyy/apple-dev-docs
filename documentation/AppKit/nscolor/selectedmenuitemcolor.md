@@ -22,6 +22,7 @@ The system color used for selected menu items. For more information, see [`NSCol
 
 - [class var selectedMenuItemTextColor: NSColor](nscolor/selectedmenuitemtextcolor.md)
   The color to use for the text in menu items.
+- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var alternateSelectedControlColor: NSColor](nscolor/alternateselectedcontrolcolor.md)
   The system color used for the face of a selected control in a list or table.
 - [class var controlAlternatingRowBackgroundColors: [NSColor]](nscolor/controlalternatingrowbackgroundcolors.md)

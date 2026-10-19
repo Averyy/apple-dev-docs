@@ -46,8 +46,6 @@ Implementation of this method is optional.
   Returns a Boolean value that indicates whether the a given item is expandable.
 - [func outlineView(NSOutlineView, itemForPersistentObject: Any) -> Any?](nsoutlineviewdatasource/outlineview(_:itemforpersistentobject:).md)
   Invoked by `outlineView` to return the item for the archived `object`.
-- [func outlineView(NSOutlineView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItems: [Any]) -> [String]](nsoutlineviewdatasource/outlineview(_:namesofpromisedfilesdroppedatdestination:fordraggeditems:).md)
-  Returns an array of filenames for the created files that the receiver promises to create.
 - [func outlineView(NSOutlineView, numberOfChildrenOfItem: Any?) -> Int](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md)
   Returns the number of child items encompassed by a given item.
 - [func outlineView(NSOutlineView, objectValueFor: NSTableColumn?, byItem: Any?) -> Any?](nsoutlineviewdatasource/outlineview(_:objectvaluefor:byitem:).md)
@@ -62,6 +60,8 @@ Implementation of this method is optional.
   Invoked by an outline view to notify the data source that the descriptors changed and the data may need to be resorted.
 - [func outlineView(NSOutlineView, updateDraggingItemsForDrag: any NSDraggingInfo)](nsoutlineviewdatasource/outlineview(_:updatedraggingitemsfordrag:).md)
   Implement this method to enable the table to update dragging items as they are dragged over the view.
+- [func outlineView(NSOutlineView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItems: [Any]) -> [String]](nsoutlineviewdatasource/outlineview(_:namesofpromisedfilesdroppedatdestination:fordraggeditems:).md)
+  Returns an array of filenames for the created files that the receiver promises to create.
 - [func outlineView(NSOutlineView, writeItems: [Any], to: NSPasteboard) -> Bool](nsoutlineviewdatasource/outlineview(_:writeitems:to:).md)
   Returns a Boolean value that indicates whether a drag operation is allowed.
 

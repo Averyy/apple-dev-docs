@@ -28,6 +28,8 @@ func vImagePermuteChannels_ARGBFFFF(_ src: UnsafePointer<vImage_Buffer>, _ dest:
 
 The following code reverses the channel ordering of a pixel buffer:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.InterleavedFx4>(
     pixelValues: [10, 20, 30, 40],
@@ -42,6 +44,29 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 
 // Prints "[40, 30, 20, 10]".
 print(pixelBuffer.array)
+```
+
+**Objective-C**:
+
+```objc
+float data[4] = {10, 20, 30, 40};
+
+vImage_Buffer buf = {
+    .data = data,
+    .width = 1,
+    .height = 1,
+    .rowBytes = 16
+};
+
+uint8_t permuteMap[4] = {3, 2, 1, 0};
+
+vImagePermuteChannels_ARGBFFFF(&buf,
+                               &buf,
+                               permuteMap,
+                               kvImageNoFlags);
+
+// Prints "[40, 30, 20, 10]".
+printf("[%g, %g, %g, %g]\n", data[0], data[1], data[2], data[3]);
 ```
 
 ## Parameters

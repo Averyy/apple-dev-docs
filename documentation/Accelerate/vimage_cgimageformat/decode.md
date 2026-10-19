@@ -26,7 +26,7 @@ The decode array contains the upper and lower bounds for each color channel. Whe
 
 A decode array for an RGB color space contains six entries: one pair for each red, green, and blue channel.
 
-The following code shows how the vImage library remaps a buffer that contains five planar pixels in the range `0 ... 0.5` to the range `0 ... 1`. The code passes a decode array with the values `[0, 0.5]` to the [`makeCGImage(cgImageFormat:)`](vimage/pixelbuffer/makecgimage(cgimageformat:).md) function that remaps the source pixel values from `[0.0, 0.125, 0.25, 0.375, 0.5]` to `[0.0, 0.25, 0.5, 0.75, 1.0]`.
+The following code shows how the vImage library remaps a buffer that contains five planar pixels in the range `0 ... 0.5` to the range `0 ... 1`. The code passes a decode array with the values `[0, 0.5]` to the [`makeCGImage(cgImageFormat:)`](vimage/pixelbuffer/makecgimage(cgimageformat:).md) function that remaps the source pixel values from `[0.0, 0.125, 0.25, 0.375, 0.5]` to `[0.0, 0.25, 0.5, 0.75, 1.0]`:
 
 ```swift
 // Create a grayscale vImage pixel buffer.

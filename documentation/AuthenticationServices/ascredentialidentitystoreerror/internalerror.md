@@ -20,6 +20,7 @@ static var internalError: ASCredentialIdentityStoreError.Code { get }
 
 ## See Also
 
+- [static var errorDomain: String](ascredentialidentitystoreerror/errordomain.md)
 - [let ASCredentialIdentityStoreErrorDomain: String](ascredentialidentitystoreerrordomain.md)
   The domain for a credential identity store error.
 - [static var storeBusy: ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/storebusy.md)

@@ -16,8 +16,6 @@ static var tornOffMenu: NSWindow.Level { get }
 
 ## See Also
 
-- [static var dock: NSWindow.Level](nswindow/level-swift.struct/dock.md)
-  The level for the dock.
 - [static var floating: NSWindow.Level](nswindow/level-swift.struct/floating.md)
   Useful for floating palettes.
 - [static var mainMenu: NSWindow.Level](nswindow/level-swift.struct/mainmenu.md)
@@ -34,6 +32,8 @@ static var tornOffMenu: NSWindow.Level { get }
   The level for a status window.
 - [static var submenu: NSWindow.Level](nswindow/level-swift.struct/submenu.md)
   Reserved for submenus. Synonymous with `NSTornOffMenuWindowLevel`, which is preferred.
+- [static var dock: NSWindow.Level](nswindow/level-swift.struct/dock.md)
+  The level for the dock.
 
 
 ---

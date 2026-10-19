@@ -33,7 +33,7 @@ let src = vImage.PixelBuffer<vImage.InterleavedFx3>(
 
 let dest = vImage.PixelBuffer<vImage.PlanarFx3>(interleavedBuffer: src)
 
-// Prints "[0.25] [0.5] [0.75]"
+// Prints "[0.25] [0.5] [0.75]".
 dest.withUnsafePixelBuffers { pixelBuffers in
     for pixelBuffer in pixelBuffers {
         print(pixelBuffer.array)

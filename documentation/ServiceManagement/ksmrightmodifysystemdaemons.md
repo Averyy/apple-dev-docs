@@ -19,8 +19,6 @@ var kSMRightModifySystemDaemons: String { get }
 
 - [var kSMRightBlessPrivilegedHelper: String](ksmrightblessprivilegedhelper.md)
   The authorization rights key for approving and installing a privileged helper tool.
-- [var kSMRightBlessPrivilegedHelper: String](ksmrightblessprivilegedhelper.md)
-  The authorization rights key for approving and installing a privileged helper tool.
 
 
 ---

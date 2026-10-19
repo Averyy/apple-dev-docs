@@ -32,8 +32,10 @@ Use this function to solve a system of linear equations using a factored coeffic
 
 The following code solves this system with a QR factorization of the coefficient matrix:
 
+**Swift**:
+
 ```swift
-/// Create the coefficient matrix _A.
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
 let rowIndices: [Int32] =    [ 0,  1, 1,  2]
 let columnIndices: [Int32] = [ 2,  0, 2,  1]
 let aValues: [Double] =      [10, 20, 5, 50]
@@ -44,7 +46,7 @@ let A = SparseConvertFromCoordinate(3, 3,
                                     rowIndices, columnIndices,
                                     aValues)
 
-/// Factorize _A_.
+// Compute the factors of `A` using a QR decomposition.
 let factorization = SparseFactor(SparseFactorizationQR, A)
 
 defer {
@@ -52,11 +54,11 @@ defer {
     SparseCleanup(factorization)
 }
 
-/// Create the right-hand-side vector, _b_.
+// Create the right-hand-side vector `b` (also holds the solution on return).
 var bValues: [Double] = [30, 35, 100]
 let n = bValues.count
 
-/// Solve the system.
+// Solve the system.
 let xValues = [Double](unsafeUninitializedCapacity: n) {
     buffer, count in
     
@@ -72,6 +74,48 @@ let xValues = [Double](unsafeUninitializedCapacity: n) {
         count = n
     }
 }
+print(xValues) // Prints "[1.0, 2.0, 3.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Create the coefficient matrix `A` from coordinate (COO) arrays.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+double aValues[]    = {10, 20, 5, 50};
+
+SparseMatrix_Double A = SparseConvertFromCoordinate(3, 3,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    aValues);
+
+// Compute the factors of `A` using a QR decomposition.
+SparseOpaqueFactorization_Double factorization = SparseFactor(SparseFactorizationQR, A);
+
+// Create the right-hand-side vector `b` and the solution vector `x`.
+double bValues[] = {30, 35, 100};
+double xValues[3];
+
+DenseVector_Double b = {
+    .count = 3,
+    .data  = bValues
+};
+
+DenseVector_Double x = {
+    .count = 3,
+    .data  = xValues
+};
+
+// Solve `Ax = b`, writing the solution into `x`.
+SparseSolve(factorization, b, x);
+
+// Prints "[1, 2, 3]".
+printf("[%g, %g, %g]\n", xValues[0], xValues[1], xValues[2]);
+
+SparseCleanup(A);
+SparseCleanup(factorization);
 ```
 
 On return, x`Values` contains the values `[1.0, 2.0, 3.0]`.

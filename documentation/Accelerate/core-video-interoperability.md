@@ -169,8 +169,8 @@ class VerticalReflectImageProcessorKernelNoCopy: CIImageProcessorKernel {
             outputPixelBuffer,
             vImage_Flags(kvImageNoAllocate))
         
-        // `CVPixelBufferGetBaseAddress(inputPixelBuffer) == sourceBuffer.data`.
-        // `CVPixelBufferGetBaseAddress(outputPixelBuffer) == destinationBuffer.data`
+        // At this point, `CVPixelBufferGetBaseAddress(inputPixelBuffer)` equals `sourceBuffer.data`.
+        // Likewise, `CVPixelBufferGetBaseAddress(outputPixelBuffer)` equals `destinationBuffer.data`.
         
         vImageVerticalReflect_ARGB8888(&sourceBuffer,
                                        &destinationBuffer,

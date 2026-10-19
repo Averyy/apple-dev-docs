@@ -30,6 +30,8 @@ This method is called when the user chooses to open a document, which could occu
 
 - [func documentInteractionController(UIDocumentInteractionController, didEndSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:didendsendingtoapplication:).md)
   Called when a document interaction controller’s document has been handed off to the specified application.
+- [func documentInteractionController(UIDocumentInteractionController, performAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md)
+  Called when a document interaction controller wants its delegate to perform a specified action with the associated document.
 
 
 ---

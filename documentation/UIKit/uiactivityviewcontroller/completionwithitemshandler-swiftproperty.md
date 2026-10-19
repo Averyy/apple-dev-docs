@@ -25,6 +25,8 @@ When the user-selected service finishes operating on the data, or when the user 
 
 - [UIActivityViewController.CompletionWithItemsHandler](uiactivityviewcontroller/completionwithitemshandler-swift.typealias.md)
   A completion handler to execute after the activity view controller is dismissed.
+- [var completionHandler: UIActivityViewController.CompletionHandler?](uiactivityviewcontroller/completionhandler-swift.property.md)
+  The completion handler to execute after the activity view controller is dismissed.
 
 
 ---

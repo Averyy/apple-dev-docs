@@ -40,6 +40,11 @@ These constants are used by [`statusForTable:`](nsprinter/statusfortable:.md).
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [Deprecated symbols](nsprinter-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
+
 
 ---
 

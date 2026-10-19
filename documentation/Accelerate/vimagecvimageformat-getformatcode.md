@@ -28,6 +28,8 @@ The four-character code of the image format, such as [`kCVPixelFormatType_420YpC
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetFormatCode(_:)`](vimagecvimageformat_getformatcode(_:).md):
 
+**Swift**:
+
 ```swift
 let formatCode = withUnsafeBytes(of: cvImageFormat) { bytes in
     let format = bytes.assumingMemoryBound(
@@ -35,6 +37,14 @@ let formatCode = withUnsafeBytes(of: cvImageFormat) { bytes in
     
     return vImageCVImageFormat_GetFormatCode(format)
 }
+```
+
+**Objective-C**:
+
+```objc
+vImageConstCVImageFormatRef constFormat = cvImageFormat;
+
+uint32_t formatCode = vImageCVImageFormat_GetFormatCode(constFormat);
 ```
 
 ## Parameters

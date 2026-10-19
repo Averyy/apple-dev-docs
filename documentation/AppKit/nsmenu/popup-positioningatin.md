@@ -38,8 +38,6 @@ If `view` is `nil`, the location is interpreted in the screen coordinate system.
   Displays a contextual menu over a view for an event.
 - [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView, with: NSFont?)](nsmenu/popupcontextmenu(_:with:for:with:).md)
   Displays a contextual menu over a view for an event using a specified font.
-- [func helpRequested(with: NSEvent)](nsmenu/helprequested(with:).md)
-  Overridden by subclasses to implement specialized context-sensitive help behavior.
 
 
 ---

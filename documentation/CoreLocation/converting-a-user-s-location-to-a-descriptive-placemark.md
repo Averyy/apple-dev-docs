@@ -53,12 +53,6 @@ func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
     }
 ```
 
-#### See Also
-
-##### Related Documentation
-
-- [`Converting between coordinates and user-friendly place names`](converting-between-coordinates-and-user-friendly-place-names.md)
-
 ## See Also
 
 - [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)

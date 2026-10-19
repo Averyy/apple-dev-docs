@@ -34,6 +34,8 @@ Use [`toolbarBackground(_:for:)`](view/toolbarbackground(_:for:).md) to hide the
   The navigation bar of an app.
 - [static var tabBar: ToolbarPlacement](toolbarplacement/tabbar.md)
   The tab bar of an app.
+- [init<ID>(id: ID)](toolbarplacement/init(id:).md)
+  Creates a custom accessory bar placement.
 
 
 ---

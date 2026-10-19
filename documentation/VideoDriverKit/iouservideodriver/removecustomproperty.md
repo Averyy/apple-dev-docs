@@ -6,7 +6,7 @@
 Removes a custom property object from the video driver.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

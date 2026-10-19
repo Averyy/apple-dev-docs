@@ -6,7 +6,7 @@
 The custom property does not have any data.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

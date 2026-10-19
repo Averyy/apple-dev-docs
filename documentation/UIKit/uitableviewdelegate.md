@@ -109,14 +109,6 @@ The table view specifies rows and sections using [`IndexPath`](https://developer
   Returns the swipe actions to display on the leading edge of the row.
 - [func tableView(UITableView, trailingSwipeActionsConfigurationForRowAt: IndexPath) -> UISwipeActionsConfiguration?](uitableviewdelegate/tableview(_:trailingswipeactionsconfigurationforrowat:).md)
   Returns the swipe actions to display on the trailing edge of the row.
-- [func tableView(UITableView, shouldShowMenuForRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:shouldshowmenuforrowat:).md)
-  Asks the delegate if the editing menu should be shown for a certain row.
-- [func tableView(UITableView, canPerformAction: Selector, forRowAt: IndexPath, withSender: Any?) -> Bool](uitableviewdelegate/tableview(_:canperformaction:forrowat:withsender:).md)
-  Asks the delegate if the editing menu should omit the Copy or Paste command for a given row.
-- [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](uitableviewdelegate/tableview(_:performaction:forrowat:withsender:).md)
-  Tells the delegate to perform a copy or paste operation on the content of a given row.
-- [func tableView(UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]?](uitableviewdelegate/tableview(_:editactionsforrowat:).md)
-  Asks the delegate for the actions to display in response to a swipe in the specified row.
 ### Managing table view highlights
 - [func tableView(UITableView, shouldHighlightRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:shouldhighlightrowat:).md)
   Asks the delegate if the specified row should be highlighted.
@@ -161,6 +153,15 @@ The table view specifies rows and sections using [`IndexPath`](https://developer
   Asks the delegate whether to perform a primary action for the row at the specified index path.
 - [func tableView(UITableView, performPrimaryActionForRowAt: IndexPath)](uitableviewdelegate/tableview(_:performprimaryactionforrowat:).md)
   Tells the delegate to perform the primary action for the row at the specified index path.
+### Deprecated
+- [func tableView(UITableView, shouldShowMenuForRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:shouldshowmenuforrowat:).md)
+  Asks the delegate if the editing menu should be shown for a certain row.
+- [func tableView(UITableView, canPerformAction: Selector, forRowAt: IndexPath, withSender: Any?) -> Bool](uitableviewdelegate/tableview(_:canperformaction:forrowat:withsender:).md)
+  Asks the delegate if the editing menu should omit the Copy or Paste command for a given row.
+- [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](uitableviewdelegate/tableview(_:performaction:forrowat:withsender:).md)
+  Tells the delegate to perform a copy or paste operation on the content of a given row.
+- [func tableView(UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]?](uitableviewdelegate/tableview(_:editactionsforrowat:).md)
+  Asks the delegate for the actions to display in response to a swipe in the specified row.
 
 ## Relationships
 

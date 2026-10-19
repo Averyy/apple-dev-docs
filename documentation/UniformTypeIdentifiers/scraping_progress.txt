@@ -1,4 +1,4 @@
 Completed scraping Uniform Type Identifiers!
-Total pages scraped: 198
-Pages skipped (unchanged): 5
+Total pages scraped: 0
+Pages skipped (unchanged): 203
 Pages failed: 0

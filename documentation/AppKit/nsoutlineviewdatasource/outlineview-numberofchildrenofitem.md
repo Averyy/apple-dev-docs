@@ -44,8 +44,6 @@ The [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlinevi
   Returns a Boolean value that indicates whether the a given item is expandable.
 - [func outlineView(NSOutlineView, itemForPersistentObject: Any) -> Any?](nsoutlineviewdatasource/outlineview(_:itemforpersistentobject:).md)
   Invoked by `outlineView` to return the item for the archived `object`.
-- [func outlineView(NSOutlineView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItems: [Any]) -> [String]](nsoutlineviewdatasource/outlineview(_:namesofpromisedfilesdroppedatdestination:fordraggeditems:).md)
-  Returns an array of filenames for the created files that the receiver promises to create.
 - [func outlineView(NSOutlineView, objectValueFor: NSTableColumn?, byItem: Any?) -> Any?](nsoutlineviewdatasource/outlineview(_:objectvaluefor:byitem:).md)
   Invoked by `outlineView` to return the data object associated with the specified `item`.
 - [func outlineView(NSOutlineView, pasteboardWriterForItem: Any) -> (any NSPasteboardWriting)?](nsoutlineviewdatasource/outlineview(_:pasteboardwriterforitem:).md)
@@ -60,6 +58,8 @@ The [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlinevi
   Implement this method to enable the table to update dragging items as they are dragged over the view.
 - [func outlineView(NSOutlineView, validateDrop: any NSDraggingInfo, proposedItem: Any?, proposedChildIndex: Int) -> NSDragOperation](nsoutlineviewdatasource/outlineview(_:validatedrop:proposeditem:proposedchildindex:).md)
   Used by an outline view to determine a valid drop target.
+- [func outlineView(NSOutlineView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItems: [Any]) -> [String]](nsoutlineviewdatasource/outlineview(_:namesofpromisedfilesdroppedatdestination:fordraggeditems:).md)
+  Returns an array of filenames for the created files that the receiver promises to create.
 - [func outlineView(NSOutlineView, writeItems: [Any], to: NSPasteboard) -> Bool](nsoutlineviewdatasource/outlineview(_:writeitems:to:).md)
   Returns a Boolean value that indicates whether a drag operation is allowed.
 

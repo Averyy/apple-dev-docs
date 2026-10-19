@@ -44,6 +44,8 @@ The vertical (y) axis maps to the output progress: when a curve is evaluated, th
   A circular curve that starts out quickly, then slows down as it approaches the end.
 - [static let circularEaseInOut: UnitCurve](unitcurve/circulareaseinout.md)
   A circular curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
+- [static let easeInEaseOut: UnitCurve](unitcurve/easeineaseout.md)
+  A bezier curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
 ### Creating a general Bezier curve
 - [static func bezier(startControlPoint: UnitPoint, endControlPoint: UnitPoint) -> UnitCurve](unitcurve/bezier(startcontrolpoint:endcontrolpoint:).md)
   Creates a new curve using bezier control points.
@@ -55,9 +57,6 @@ The vertical (y) axis maps to the output progress: when a curve is evaluated, th
   Returns the output value (y component) of the curve at the given time.
 - [func velocity(at: Double) -> Double](unitcurve/velocity(at:).md)
   Returns the rate of change (first derivative) of the output value of the curve at the given time.
-### Deprecated symbols
-- [static let easeInEaseOut: UnitCurve](unitcurve/easeineaseout.md)
-  A bezier curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
 
 ## Relationships
 

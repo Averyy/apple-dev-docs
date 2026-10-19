@@ -35,6 +35,10 @@ The window group uses the specified content as a template to create each window 
 
 ## See Also
 
+- [init(content: () -> Content)](windowgroup/init(content:).md)
+  Creates a window group.
+- [init(_:content:)](windowgroup/init(_:content:).md)
+  Creates a window group with a text view title.
 - [init(id: String, content: () -> Content)](windowgroup/init(id:content:).md)
   Creates a window group with an identifier.
 

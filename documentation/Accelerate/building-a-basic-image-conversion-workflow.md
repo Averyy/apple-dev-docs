@@ -14,6 +14,8 @@ You can use the vImage convert-any-to-any functionality to convert image data be
 
 A [`vImageConverter`](vimageconverter.md) instance – that contains the information to perform image conversion – requires two [`vImage_CGImageFormat`](vimage_cgimageformat.md) structures that describe the source and destination formats. The code below defines the CMYK source format and the RGB destination format:
 
+**Swift**:
+
 ```swift
 let cmykSourceImageFormat = vImage_CGImageFormat(
     bitsPerComponent: 16,
@@ -28,14 +30,50 @@ let rgbDestinationImageFormat = vImage_CGImageFormat(
     bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.none.rawValue))!
 ```
 
+**Objective-C**:
+
+```objc
+vImage_CGImageFormat cmykSourceImageFormat = {
+    .bitsPerComponent = 16,
+    .bitsPerPixel = 16 * 4,
+    .colorSpace = CGColorSpaceCreateDeviceCMYK(),
+    .bitmapInfo = kCGImageAlphaNone,
+    .version = 0,
+    .renderingIntent = kCGRenderingIntentDefault
+};
+
+vImage_CGImageFormat rgbDestinationImageFormat = {
+    .bitsPerComponent = 8,
+    .bitsPerPixel = 8 * 3,
+    .colorSpace = CGColorSpaceCreateDeviceRGB(),
+    .bitmapInfo = kCGImageAlphaNone,
+    .version = 0,
+    .renderingIntent = kCGRenderingIntentDefault
+};
+```
+
 ##### Create the Converter
 
 The Swift [`make(sourceFormat:destinationFormat:flags:)`](vimageconverter/make(sourceformat:destinationformat:flags:)-8tbym.md) method calls the underlying [`vImageConverter_CreateWithCGImageFormat(_:_:_:_:_:)`](vimageconverter_createwithcgimageformat(_:_:_:_:_:).md) function and returns a new any-to-any converter instance.
+
+**Swift**:
 
 ```swift
 let cmykToRgbConverter = try vImageConverter.make(
     sourceFormat: cmykSourceImageFormat,
     destinationFormat: rgbDestinationImageFormat)
+```
+
+**Objective-C**:
+
+```objc
+vImage_Error error;
+vImageConverterRef cmykToRgbConverter =
+    vImageConverter_CreateWithCGImageFormat(&cmykSourceImageFormat,
+                                           &rgbDestinationImageFormat,
+                                           NULL,
+                                           kvImageNoFlags,
+                                           &error);
 ```
 
 ##### Perform the Conversion Using Pixel Buffers
@@ -60,6 +98,8 @@ If you’re creating apps for older operating systems that don’t support the [
 
 The Swift [`convert(source:destination:flags:)`](vimageconverter/convert(source:destination:flags:).md) method calls the underlying [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md) function
 
+**Swift**:
+
 ```swift
 var rgbDestinationBuffer = try vImage_Buffer(
     size: cmykSourceBuffer.size,
@@ -67,6 +107,23 @@ var rgbDestinationBuffer = try vImage_Buffer(
 
 try cmykToRgbConverter.convert(source: cmykSourceBuffer,
                                destination: &rgbDestinationBuffer)
+```
+
+**Objective-C**:
+
+```objc
+vImage_Buffer rgbDestinationBuffer;
+vImageBuffer_Init(&rgbDestinationBuffer,
+                  cmykSourceBuffer.height,
+                  cmykSourceBuffer.width,
+                  rgbDestinationImageFormat.bitsPerPixel,
+                  kvImageNoFlags);
+
+vImageConvert_AnyToAny(cmykToRgbConverter,
+                       &cmykSourceBuffer,
+                       &rgbDestinationBuffer,
+                       NULL,
+                       kvImageNoFlags);
 ```
 
 On return, `rgbDestinationBuffer` contains the RGB representation of the CMYK source image.

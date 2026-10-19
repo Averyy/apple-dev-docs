@@ -132,10 +132,6 @@ struct Attribute
   An array of marker user interface elements (`NSArray`)
 - [static let markerValues: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markervalues.md)
   The marker values (`NSArray` of `NSNumber`).
-- [static let matteContentUIElement: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/mattecontentuielement.md)
-  The element that is clipped by the matte (`id`).
-- [static let matteHole: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/mattehole.md)
-  The bounds of the matte hole, in screen coordinates in points (`NSValue` containing an `NSRect`).
 - [static let maxValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/maxvalue.md)
   The element’s maximum value (`id`).
 - [static let menuBar: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/menubar.md)
@@ -265,6 +261,10 @@ struct Attribute
   The app’s windows (`NSArray`).
 - [static let zoomButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/zoombutton.md)
   The element that represents the zoom button (`id`).
+- [static let matteContentUIElement: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/mattecontentuielement.md)
+  The element that is clipped by the matte (`id`).
+- [static let matteHole: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/mattehole.md)
+  The bounds of the matte hole, in screen coordinates in points (`NSValue` containing an `NSRect`).
 ### Initializers
 - [init(rawValue: String)](nsaccessibility-swift.struct/attribute/init(rawvalue:).md)
 

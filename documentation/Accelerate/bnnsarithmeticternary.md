@@ -103,7 +103,7 @@ static func ternaryArithmetic() {
                                    outputDescriptor.data!,
                                    1)
     
-    // Prints `10 * 20 + 100 (300)`
+    // Prints "[300.0]" (10 * 20 + 100).
     print(Array(outputData))
     
     aData.deallocate()

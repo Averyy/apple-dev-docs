@@ -31,8 +31,14 @@ Constrain which axes the split supports using [`axes(_:)`](splitarrangementviews
 
 - [static var automatic: AutomaticArrangementViewStyle](arrangementviewstyle/automatic.md)
   The default arrangement view style.
+- [struct AutomaticArrangementViewStyle](automaticarrangementviewstyle.md)
+  The default arrangement view style.
 - [static var overlay: OverlayArrangementViewStyle](arrangementviewstyle/overlay.md)
-  An arrangement view style that layers the primary view over the secondary view in z-order.
+  A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
+- [struct OverlayArrangementViewStyle](overlayarrangementviewstyle.md)
+  A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
+- [struct SplitArrangementViewStyle](splitarrangementviewstyle.md)
+  An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
 
 ---

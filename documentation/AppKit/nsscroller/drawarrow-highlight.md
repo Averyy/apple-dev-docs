@@ -24,12 +24,10 @@ If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the
 
 - [func rect(for: NSScroller.Part) -> NSRect](nsscroller/rect(for:).md)
   Returns the rectangle occupied by `aPart`, which for this method is interpreted literally rather than as an indicator of scrolling direction.
-- [func drawKnobSlot(in: NSRect, highlight: Bool)](nsscroller/drawknobslot(in:highlight:).md)
-  Draws the portion of the scroller’s track, possibly including the line increment and decrement arrow buttons, that falls in the given rectangle.
-- [func drawKnob()](nsscroller/drawknob.md)
-  Draws the knob.
 - [func highlight(Bool)](nsscroller/highlight(_:).md)
   Highlights or unhighlights the scroll button the user clicked.
+- [func trackScrollButtons(with: NSEvent)](nsscroller/trackscrollbuttons(with:).md)
+  Tracks the scroll buttons and sends action messages to the receiver’s target.
 
 
 ---

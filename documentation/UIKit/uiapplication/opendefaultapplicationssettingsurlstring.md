@@ -52,8 +52,6 @@ For design guidance, see Human Interface Guidelines > [`Settings`](https://devel
   The URL string you use to deep link to your app’s custom settings in the Settings app.
 - [static let openNotificationSettingsURLString: String](uiapplication/opennotificationsettingsurlstring.md)
   The URL string you use to deep link to your app’s notification settings in the Settings app.
-- [let UIApplicationOpenNotificationSettingsURLString: String](uiapplicationopennotificationsettingsurlstring.md)
-  A constant that provides the URL string you use to deep link to your app’s notification settings in the Settings app.
 
 
 ---

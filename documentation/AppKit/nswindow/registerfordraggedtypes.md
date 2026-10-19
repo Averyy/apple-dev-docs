@@ -24,8 +24,6 @@ Registering an `NSWindow` object for dragged types automatically makes it a cand
 
 ## See Also
 
-- [func drag(NSImage, at: NSPoint, offset: NSSize, event: NSEvent, pasteboard: NSPasteboard, source: Any, slideBack: Bool)](nswindow/drag(_:at:offset:event:pasteboard:source:slideback:).md)
-  Begins a dragging session.
 - [func unregisterDraggedTypes()](nswindow/unregisterdraggedtypes.md)
   Unregisters the window as a possible destination for dragging operations.
 

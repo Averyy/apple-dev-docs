@@ -37,6 +37,8 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
   Creates a secure field with a prompt generated from a `Text`.
 - [init(_:text:prompt:)](securefield/init(_:text:prompt:).md)
   Creates a secure field with a prompt generated from a `Text`.
+- [init(_:text:onCommit:)](securefield/init(_:text:oncommit:).md)
+  Creates an instance.
 
 
 ---

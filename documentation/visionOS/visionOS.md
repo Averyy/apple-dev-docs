@@ -97,6 +97,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Bring a real-world scan into an app by loading splat data from a USD or PLY file.
 - [Manipulating models with RealityKit](../realitykit/manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.
+- [Creating a navigation mesh with Reality Composer Pro](creating-a-navigation-mesh-with-reality-composer-pro.md)
+  Move a character around a game level by defining its walkable surface and driving motion with a behavior tree.
 ### ARKit
 - [Happy Beam](happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.

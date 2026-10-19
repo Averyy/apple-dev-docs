@@ -6,7 +6,7 @@
 Gets bool value indicating if device is running.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

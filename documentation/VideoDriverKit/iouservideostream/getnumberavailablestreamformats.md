@@ -6,7 +6,7 @@
 Gets the number of available description for the stream.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

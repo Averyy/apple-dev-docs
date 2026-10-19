@@ -40,7 +40,7 @@ static func clipToBounds() {
                    input: input,
                    output: output)
     
-    // Prints: `[3.0, 3.0, 3.0, 4.0, 5.0, 6.0, 6.0, 6.0]`
+    // Prints "[3.0, 3.0, 3.0, 4.0, 5.0, 6.0, 6.0, 6.0]".
     print(output.makeArray(of: Float.self)!)
 
     input.deallocate()

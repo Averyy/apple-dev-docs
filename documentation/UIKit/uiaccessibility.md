@@ -67,11 +67,6 @@ struct UIAccessibility
   A Boolean value that indicates whether the Bold Text setting is in an enabled state.
 - [static let boldTextStatusDidChangeNotification: NSNotification.Name](uiaccessibility/boldtextstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Bold Text setting changes.
-### Button shapes
-- [static var buttonShapesEnabled: Bool](uiaccessibility/buttonshapesenabled.md)
-  A Boolean value that indicates whether the Button Shapes setting is in an enabled state.
-- [static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name](uiaccessibility/buttonshapesenabledstatusdidchangenotification.md)
-  A notification that UIKit posts when the system’s Button Shapes setting changes.
 ### Closed captions
 - [static var isClosedCaptioningEnabled: Bool](uiaccessibility/isclosedcaptioningenabled.md)
   A Boolean value that indicates whether the Closed Captions + SDH setting is in an enabled state.
@@ -187,11 +182,16 @@ struct UIAccessibility
   The types of system Zoom that can be in effect.
 - [UIAccessibility.DirectTouchOptions](uiaccessibility/directtouchoptions.md)
   Constants that configure how VoiceOver produces audio for direct touch areas.
+### Deprecated
+- [static var buttonShapesEnabled: Bool](uiaccessibility/buttonshapesenabled.md)
+  A Boolean value that indicates whether the Button Shapes setting is in an enabled state.
+- [static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name](uiaccessibility/buttonshapesenabledstatusdidchangenotification.md)
+  A notification that UIKit posts when the system’s Button Shapes setting changes.
+- [UIAccessibility.ButtonShapesEnabledStatusDidChangeMessage](uiaccessibility/buttonshapesenabledstatusdidchangemessage.md)
 ### Structures
 - [UIAccessibility.AnnouncementDidFinishMessage](uiaccessibility/announcementdidfinishmessage.md)
 - [UIAccessibility.AssistiveTouchStatusDidChangeMessage](uiaccessibility/assistivetouchstatusdidchangemessage.md)
 - [UIAccessibility.BoldTextStatusDidChangeMessage](uiaccessibility/boldtextstatusdidchangemessage.md)
-- [UIAccessibility.ButtonShapesEnabledStatusDidChangeMessage](uiaccessibility/buttonshapesenabledstatusdidchangemessage.md)
 - [UIAccessibility.ClosedCaptioningStatusDidChangeMessage](uiaccessibility/closedcaptioningstatusdidchangemessage.md)
 - [UIAccessibility.DarkerSystemColorsStatusDidChangeMessage](uiaccessibility/darkersystemcolorsstatusdidchangemessage.md)
 - [UIAccessibility.ElementFocusedMessage](uiaccessibility/elementfocusedmessage.md)

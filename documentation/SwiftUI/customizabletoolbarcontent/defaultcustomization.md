@@ -24,6 +24,11 @@ func defaultCustomization() -> some CustomizableToolbarContent
 
 Use the [`defaultCustomization(_:options:)`](customizabletoolbarcontent/defaultcustomization(_:options:).md) modifier providing either a `defaultVisibility` or `options` instead.
 
+## See Also
+
+- [func defaultCustomization(Visibility, options: ToolbarCustomizationOptions) -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization(_:options:).md)
+  Configures the way customizable toolbar items with the default behavior behave.
+
 
 ---
 

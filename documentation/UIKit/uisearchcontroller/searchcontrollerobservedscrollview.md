@@ -14,11 +14,6 @@ The view with which the controller coordinates scrolling animations.
 var searchControllerObservedScrollView: UIScrollView? { get set }
 ```
 
-## See Also
-
-- [var dimsBackgroundDuringPresentation: Bool](uisearchcontroller/dimsbackgroundduringpresentation.md)
-  A Boolean indicating whether to dim the underlying content during a search.
-
 
 ---
 

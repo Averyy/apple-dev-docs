@@ -30,12 +30,8 @@ In macOS 10.6 and later this method has no effect. This method may be deprecated
 
 - [func showContextHelp(for: Any, locationHint: NSPoint) -> Bool](nshelpmanager/showcontexthelp(for:locationhint:).md)
   Displays the context-sensitive help for a given object at or near the point on the screen specified by a given point.
-- [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView)](nsmenu/popupcontextmenu(_:with:for:).md)
-  Displays a contextual menu over a view for an event.
-- [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView, with: NSFont?)](nsmenu/popupcontextmenu(_:with:for:with:).md)
-  Displays a contextual menu over a view for an event using a specified font.
-- [func popUp(positioning: NSMenuItem?, at: NSPoint, in: NSView?) -> Bool](nsmenu/popup(positioning:at:in:).md)
-  Pops up the menu at the specified location.
+- [class func menuZone() -> NSZone!](nsmenu/menuzone.md)
+  Returns the zone from which `NSMenu` objects should be allocated.
 
 
 ---

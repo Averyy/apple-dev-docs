@@ -26,12 +26,6 @@ Adopt this protocol to identify a custom body, or pass a conforming view, such a
 
 Passing a view to [`headingBody`](cllocationmanager/headingbody.md) lets your app receive heading data that aligns with your user interface during orientation changes, when running in Stage Manager or Split View on iPad or iPhone Duo.
 
-## Topics
-
-### Heading configuration
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
-  A physical body or view that defines the reference orientation for heading calculations.
-
 ## Relationships
 
 ### Inherits From

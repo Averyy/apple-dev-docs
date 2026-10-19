@@ -29,7 +29,7 @@ func vvcopysign(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Un
 - **parameter 3**: The sign input array, *x*.
 - **parameter 4**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvcopysign(_:_:_:_:)`](vvcopysign(_:_:_:_:).md).
+The following code shows an example of using [`vvcopysign(_:_:_:_:)`](vvcopysign(_:_:_:_:).md):
 
 **Swift**:
 
@@ -54,7 +54,7 @@ int n = 4;
  
 vvcopysign(z, y, x, &n);
  
-NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+printf("z: [%lf, %lf, %lf, %lf]\n", z[0], z[1], z[2], z[3]);
 
 ```
 

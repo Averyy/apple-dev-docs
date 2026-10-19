@@ -36,6 +36,8 @@ struct RotationGesture
 
 - [struct MagnificationGesture](magnificationgesture.md)
   A gesture that recognizes a magnification motion and tracks the amount of magnification.
+- [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
+  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 
 
 ---

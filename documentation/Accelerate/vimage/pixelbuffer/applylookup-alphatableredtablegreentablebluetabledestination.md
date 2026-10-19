@@ -24,7 +24,7 @@ func applyLookup(alphaTable: [Pixel_8]?, redTable: [Pixel_8]?, greenTable: [Pixe
 
 Use this function to apply individual lookup tables to each channel in an interleaved, four-channel image. Adjust the order of the tables for images that don’t use ARGB channel ordering. For example, use the `blueTable` parameter for the alpha lookup table to transform an RGBA image.
 
-The following code creates a simple lookup table that transforms a [`vImage.Interleaved8x4`](vimage/interleaved8x4.md) pixel buffer into its negative. For example, when an input pixel has the value `255, 255, 255, 255`, the output pixel has the value `0, 0, 0, 0`. Conversely, when an input pixel has the value `0, 0, 0, 0`, the output pixel has the value `255, 255, 255, 255`.
+The following code creates a simple lookup table that transforms a [`vImage.Interleaved8x4`](vimage/interleaved8x4.md) pixel buffer into its negative. For example, when an input pixel has the value `255, 255, 255, 255`, the output pixel has the value `0, 0, 0, 0`. Conversely, when an input pixel has the value `0, 0, 0, 0`, the output pixel has the value `255, 255, 255, 255`:
 
 ```swift
 

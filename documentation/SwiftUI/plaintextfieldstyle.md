@@ -40,10 +40,6 @@ You can also use [`plain`](textfieldstyle/plain.md) to construct this style.
   A text field style with a system-defined border.
 - [struct DefaultTextFieldStyle](defaulttextfieldstyle.md)
   The default text field style, based on the text field’s context.
-- [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
-  A text field style with a system-defined rounded border.
-- [struct SquareBorderTextFieldStyle](squarebordertextfieldstyle.md)
-  A text field style with a system-defined square border.
 
 
 ---

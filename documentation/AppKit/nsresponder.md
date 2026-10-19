@@ -150,10 +150,6 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
 - [func noResponder(for: Selector)](nsresponder/noresponder(for:).md)
   Handles the case where an event or action message falls off the end of the responder chain.
 ### Touch and Gesture Events
-- [func beginGesture(with: NSEvent)](nsresponder/begingesture(with:).md)
-  Informs the receiver that the user has begun a touch gesture.
-- [func endGesture(with: NSEvent)](nsresponder/endgesture(with:).md)
-  Informs the receiver that the user has ended a touch gesture.
 - [func magnify(with: NSEvent)](nsresponder/magnify(with:).md)
   Informs the receiver that the user has begun a pinch gesture.
 - [func rotate(with: NSEvent)](nsresponder/rotate(with:).md)
@@ -192,6 +188,9 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
   Creates a new responder object.
 - [init?(coder: NSCoder)](nsresponder/init(coder:).md)
   Creates a new responder object with data in an unarchiver.
+### Deprecated
+- [Deprecated symbols](nsresponder-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Instance Methods
 - [func contextMenuKeyDown(NSEvent)](nsresponder/contextmenukeydown(_:).md)
 - [func mouseCancelled(with: NSEvent)](nsresponder/mousecancelled(with:).md)

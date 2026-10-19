@@ -36,6 +36,8 @@ The window scene environment typically changes in response to user actions. For 
 
 - [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
+- [func windowScene(UIWindowScene, didUpdateEffectiveGeometry: UIWindowScene.Geometry)](uiwindowscenedelegate/windowscene(_:didupdateeffectivegeometry:).md)
+  Called when the window scene’s effective geometry has changed.
 
 
 ---

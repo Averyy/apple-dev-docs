@@ -27,8 +27,6 @@ The default value of this property is [`NSToolbar.DisplayMode.default`](nstoolba
   A Boolean value that indicates whether the toolbar is visible.
 - [NSToolbar.DisplayMode](nstoolbar/displaymode-swift.enum.md)
   Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
-- [var showsBaselineSeparator: Bool](nstoolbar/showsbaselineseparator.md)
-  A Boolean value that indicates whether the toolbar shows the separator between the toolbar and the main window contents.
 - [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)
   A Boolean value that indicates whether users can modify the contents of the toolbar.
 - [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)

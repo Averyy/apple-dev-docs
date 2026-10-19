@@ -6,7 +6,7 @@
 A block that tells the device to perform a video IO operation.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

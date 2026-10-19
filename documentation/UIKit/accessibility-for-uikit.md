@@ -136,12 +136,12 @@ If you build your app with SwiftUI, see [`Accessibility modifiers`](https://deve
   A Boolean value that indicates whether the On/Off Labels setting is in an enabled state.
 - [static var isVideoAutoplayEnabled: Bool](uiaccessibility/isvideoautoplayenabled.md)
   A Boolean value that indicates whether the Auto-Play Video Previews setting is in an enabled state.
-- [static var buttonShapesEnabled: Bool](uiaccessibility/buttonshapesenabled.md)
-  A Boolean value that indicates whether the Button Shapes setting is in an enabled state.
 - [static var prefersCrossFadeTransitions: Bool](uiaccessibility/preferscrossfadetransitions.md)
   A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state.
 - [static var shouldDifferentiateWithoutColor: Bool](uiaccessibility/shoulddifferentiatewithoutcolor.md)
   A Boolean value that indicates whether the Differentiate Without Color setting is in an enabled state.
+- [static var buttonShapesEnabled: Bool](uiaccessibility/buttonshapesenabled.md)
+  A Boolean value that indicates whether the Button Shapes setting is in an enabled state.
 
 ## See Also
 

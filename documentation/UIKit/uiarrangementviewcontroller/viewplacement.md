@@ -18,6 +18,14 @@ A placement of a view controller within an arrangement view controller.
 struct ViewPlacement
 ```
 
+#### Overview
+
+You use a view placement to specify which position a view takes in an arrangement.
+
+For more information on how an overlay arrangement presents primary and secondary views, see [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md).
+
+For more information on how a split arrangement presents primary and secondary views, see [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
+
 ## Topics
 
 ### Getting a placement
@@ -37,11 +45,11 @@ struct ViewPlacement
 ## See Also
 
 - [func viewController(for: UIArrangementViewController.ViewPlacement) -> UIViewController?](uiarrangementviewcontroller/viewcontroller(for:).md)
-  The view controller in the arrangement for the provided placement.
+  Returns the view controller in the arrangement for the placement you provide.
 - [func setViewController(UIViewController?, for: UIArrangementViewController.ViewPlacement, animated: Bool)](uiarrangementviewcontroller/setviewcontroller(_:for:animated:).md)
-  Sets the view controller in the arrangement for a specific placement.
+  Sets the view controller in the arrangement for the specific placement you provide.
 - [func placement(for: UIViewController) -> UIArrangementViewController.ViewPlacement?](uiarrangementviewcontroller/placement(for:).md)
-  Returns the placement for the provided view controller in the arrangement.
+  Returns the placement for the view controller you provide in the arrangement.
 
 
 ---

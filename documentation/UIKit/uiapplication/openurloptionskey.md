@@ -46,11 +46,6 @@ Use these keys to retrieve options in the [`application(_:open:options:)`](uiapp
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
-## See Also
-
-- [func application(UIApplication, open: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool](uiapplicationdelegate/application(_:open:options:).md)
-  Asks the delegate to open a resource specified by a URL, and provides a dictionary of launch options.
-
 
 ---
 

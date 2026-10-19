@@ -36,6 +36,8 @@ A text-range object that represents the distance from `position` to the farthest
   Returns the base writing direction for a position in the text going in a certain direction.
 - [func setBaseWritingDirection(NSWritingDirection, for: UITextRange)](uitextinput/setbasewritingdirection(_:for:).md)
   Sets the base writing direction for a specified range of text in a document.
+- [typealias UITextWritingDirection](uitextwritingdirection.md)
+  The writing direction of the text for the language.
 
 
 ---

@@ -21,6 +21,10 @@ var alternateRegion: CLRegion? { get }
 
 This property has a value only for errors of type [`regionMonitoringResponseDelayed`](clerror-swift.struct/regionmonitoringresponsedelayed.md).
 
+## See Also
+
+- [static var errorDomain: String](clerror-swift.struct/errordomain.md)
+
 
 ---
 

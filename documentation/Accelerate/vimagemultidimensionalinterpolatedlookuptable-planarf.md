@@ -30,7 +30,9 @@ func vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_ srcs: UnsafePointer
 
 #### Discussion
 
-The following code shows how to convert an RGB image that’s represented as three planar buffers to grayscale. The call to [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planarf(_:_:_:_:_:_:).md) uses the lookup table from the example code in the Discussion section for  [`vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)`](vimagemultidimensionaltable_create(_:_:_:_:_:_:_:).md). The source image contains three pixels, one is pure red, one is pure green, and one is pure blue. On return, the destination image contains three pixels with the values `[0.2125887, 0.71519035, 0.072190434]`.
+The following code shows how to convert an RGB image that’s represented as three planar buffers to grayscale. The call to [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planarf(_:_:_:_:_:_:).md) uses the lookup table from the example code in the Discussion section for  [`vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)`](vimagemultidimensionaltable_create(_:_:_:_:_:_:_:).md). The source image contains three pixels: One is pure red, one is pure green, and one is pure blue. On return, the destination image contains three pixels with the values `[0.2125887, 0.71519035, 0.072190434]`:
+
+**Swift**:
 
 ```swift
 let size = vImage.Size(width: 1, height: 3)
@@ -64,8 +66,85 @@ source.withUnsafeVImageBuffers { src in
     }
 }
 
-// Prints "[0.2125887, 0.71519035, 0.072190434]".
+// Prints "[0.21259, 0.71519, 0.07219]".
 print(destination.array)
+```
+
+**Objective-C**:
+
+```objc
+// Build the same 32-entries-per-channel RGB-to-grayscale lookup table
+// as the companion vImageMultidimensionalTable_Create example, using
+// Rec. 709 coefficients. Samples in [0..65535] map to [0.0, 1.0].
+const uint8_t entriesPerChannel = 32;
+const uint32_t srcChannelCount = 3;
+const uint32_t destChannelCount = 1;
+
+const vImagePixelCount lookupTableElementCount =
+    (vImagePixelCount)pow((double)entriesPerChannel,
+                          (double)srcChannelCount) * destChannelCount;
+
+uint16_t *tableData = malloc(lookupTableElementCount * sizeof(uint16_t));
+
+const float multiplier = (float)UINT16_MAX;
+vImagePixelCount bufferIndex = 0;
+for (uint8_t red = 0; red < entriesPerChannel; red++) {
+    for (uint8_t green = 0; green < entriesPerChannel; green++) {
+        for (uint8_t blue = 0; blue < entriesPerChannel; blue++) {
+            float normalizedRed   = (float)red   / (float)(entriesPerChannel - 1);
+            float normalizedGreen = (float)green / (float)(entriesPerChannel - 1);
+            float normalizedBlue  = (float)blue  / (float)(entriesPerChannel - 1);
+
+            float gray = (normalizedRed   * 0.2126f) +
+                         (normalizedGreen * 0.7152f) +
+                         (normalizedBlue  * 0.0722f);
+
+            tableData[bufferIndex] = (uint16_t)(gray * multiplier);
+            bufferIndex++;
+        }
+    }
+}
+
+const uint8_t entryCountPerSourceChannel[3] = {entriesPerChannel,
+                                                entriesPerChannel,
+                                                entriesPerChannel};
+
+vImage_Error tableErr = kvImageNoError;
+vImage_MultidimensionalTable lookupTable =
+    vImageMultidimensionalTable_Create(tableData,
+                                      srcChannelCount,
+                                      destChannelCount,
+                                      entryCountPerSourceChannel,
+                                      kvImageMDTableHint_Float,
+                                      kvImageNoFlags,
+                                      &tableErr);
+
+float redData[3]   = {1, 0, 0};
+float greenData[3] = {0, 1, 0};
+float blueData[3]  = {0, 0, 1};
+float dstData[3]   = {0, 0, 0};
+
+vImage_Buffer redBuf   = { .data = redData,   .width = 1, .height = 3, .rowBytes = 4 };
+vImage_Buffer greenBuf = { .data = greenData, .width = 1, .height = 3, .rowBytes = 4 };
+vImage_Buffer blueBuf  = { .data = blueData,  .width = 1, .height = 3, .rowBytes = 4 };
+vImage_Buffer destBuf  = { .data = dstData,   .width = 1, .height = 3, .rowBytes = 4 };
+
+const vImage_Buffer srcs[3]  = { redBuf, greenBuf, blueBuf };
+const vImage_Buffer dests[1] = { destBuf };
+
+vImageMultiDimensionalInterpolatedLookupTable_PlanarF(
+    srcs, dests,
+    NULL,
+    lookupTable,
+    kvImageFullInterpolation,
+    kvImageNoFlags);
+
+// Prints "[0.21259, 0.71519, 0.07219]".
+printf("[%g, %g, %g]\n",
+       dstData[0], dstData[1], dstData[2]);
+
+vImageMultidimensionalTable_Release(lookupTable);
+free(tableData);
 ```
 
 ##### Optimize Performance with Temporary Buffers

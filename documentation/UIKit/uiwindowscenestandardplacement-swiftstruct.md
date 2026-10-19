@@ -41,6 +41,8 @@ struct UIWindowSceneStandardPlacement
   A placement that indicates the system should present the window more prominently than others in the space.
 - [struct UIWindowScenePushPlacement](uiwindowscenepushplacement-swift.struct.md)
   A placement that indicates the system needs to present the window by pushing it onto another window.
+- [var preferredPresentationStyle: UIWindowScene.PresentationStyle](uiwindowscene/activationrequestoptions/preferredpresentationstyle.md)
+  The presentation style of the window scene.
 
 
 ---

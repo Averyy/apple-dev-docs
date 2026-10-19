@@ -32,6 +32,36 @@ If `x` is `+/-0`, the result preserves the signed zero.
 
 If `x` is `+/-inf`, the result is `+/-1`.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Double] = [-1, 0, 1]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the hyperbolic tangent of each element in `x`.
+vvtanh(&y, &x, &n)
+
+// Prints "[-0.7615941559557649, 0.0, 0.7615941559557649]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+double x[3] = {-1, 0, 1};
+double y[3];
+int n = 3;
+
+// Calculate the hyperbolic tangent of each element in `x`.
+vvtanh(y, x, &n);
+
+// Prints "[-0.761594, 0, 0.761594]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acosh<U>(U) -> [Double]](vforce/acosh(_:)-1j3qt.md)

@@ -20,6 +20,8 @@ The major exception to this limitation is in functions that support the use of i
 
 The code below calls the [`vDSP_vadd`](vdsp_vadd.md) function to add each element in array `a` to the corresponding element in array `b`, and write the result to array `c`. Note that the stride used for each array is `1`.
 
+**Swift**:
+
 ```swift
 let strideA = vDSP_Stride(1)
 let strideB = vDSP_Stride(1)
@@ -39,6 +41,26 @@ vDSP_vadd(a, strideA,
           n)
 ```
 
+**Objective-C**:
+
+```objc
+vDSP_Stride strideA = 1;
+vDSP_Stride strideB = 1;
+vDSP_Stride strideC = 1;
+
+float a[] = {10, 20, 30, 40, 50, 60, 70, 80};
+float b[] = { 1,  2,  3,  4,  5,  6,  7,  8};
+
+vDSP_Length n = 8;
+
+float c[8];
+
+vDSP_vadd(a, strideA,
+          b, strideB,
+          c, strideC,
+          n);
+```
+
 In this example, the result is `[11.0, 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0]`.
 
 ![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3080000@2x.png)
@@ -47,12 +69,24 @@ In this example, the result is `[11.0, 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0]
 
 A nonunit stride allows you to, for example, access a particular color channel in interleaved RGB data. If you change `strideB` to 3, the operation adds the first, fourth, and seventh items in array `b` to the first, second, and third items in array `a`.
 
+**Swift**:
+
 ```swift
 let strideA = vDSP_Stride(1)
 let strideB = vDSP_Stride(3)
 let strideC = vDSP_Stride(1)
 ...
 let n = vDSP_Length(3)
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Stride strideA = 1;
+vDSP_Stride strideB = 3;
+vDSP_Stride strideC = 1;
+...
+vDSP_Length n = 3;
 ```
 
 ![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of three. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3178478@2x.png)
@@ -63,12 +97,24 @@ Note that vDSP operations always read `n` elements. Therefore, your collections 
 
 If you change array `c`’s stride to `3`, the calculation writes the result to its first, fourth, and seventh items. Using the example of interleaved RGB data discussed in [`Controlling vDSP operations with stride`](controlling-vdsp-operations-with-stride.md), this approach would write the result of an operation to the red channel. The example below defines the stride for the input array, `a`, as `2`, so the operation uses the first, third, and fifth elements:
 
+**Swift**:
+
 ```swift
 let strideA = vDSP_Stride(2)
 let strideB = vDSP_Stride(1)
 let strideC = vDSP_Stride(3)
 ...
 let n = vDSP_Length(3)
+```
+
+**Objective-C**:
+
+```objc
+vDSP_Stride strideA = 2;
+vDSP_Stride strideB = 1;
+vDSP_Stride strideC = 3;
+...
+vDSP_Length n = 3;
 ```
 
 ![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of two. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of three. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3079999@2x.png)
@@ -78,6 +124,8 @@ let n = vDSP_Length(3)
 Use a negative stride to access a vector in reverse order, for example, define the stride as `−1` when convolving with a filter using [`vDSP_conv`](vdsp_conv.md)).
 
 To use a negative stride, pass the [`vDSP_vadd`](vdsp_vadd.md) function a pointer to the address of the last element in the array. The example below shows the Swift code required to reverse the elements in array `a`:
+
+**Swift**:
 
 ```swift
 let strideA = vDSP_Stride(-1)
@@ -92,6 +140,19 @@ a.withUnsafeBufferPointer { buffer in
 }
 ```
 
+**Objective-C**:
+
+```objc
+vDSP_Stride strideA = -1;
+vDSP_Stride strideB = 1;
+vDSP_Stride strideC = 1;
+...
+vDSP_vadd(a + (n - 1), strideA,
+          b, strideB,
+          c, strideC,
+          n);
+```
+
 The result of adding `a` and `b` with a stride of `-1` for `a` is `[81.0, 72.0, 63.0, 54.0, 45.0, 36.0, 27.0, 18.0]`:
 
 ![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of minus one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3080245@2x.png)
@@ -101,6 +162,8 @@ The result of adding `a` and `b` with a stride of `-1` for `a` is `[81.0, 72.0, 
 With interleaved complex data, vDSP stores alternating real and imaginary components consecutively. Use a stride of `2` for interleaved complex data, counting the individual component elements rather than counting complex numbers.
 
 For example, use the code below to copy the contents of a [`DSPSplitComplex`](dspsplitcomplex.md) structure to an array of [`DSPComplex`](dspcomplex.md) values:
+
+**Swift**:
 
 ```swift
 var real: [Float] = [10, 20, 30, 40, 50, 60, 70, 80]
@@ -127,14 +190,47 @@ real.withUnsafeMutableBufferPointer { realPtr in
 }
 ```
 
+**Objective-C**:
+
+```objc
+float real[] = {10, 20, 30, 40, 50, 60, 70, 80};
+float imag[] = { 1,  2,  3,  4,  5,  6,  7,  8};
+
+vDSP_Length n = 8;
+
+DSPComplex complex[8];
+
+DSPSplitComplex splitComplex = {
+    .realp = real,
+    .imagp = imag
+};
+
+vDSP_Stride strideSplitComplex = 1;
+vDSP_Stride strideComplex = 2;
+
+vDSP_ztoc(&splitComplex, strideSplitComplex,
+          complex, strideComplex,
+          n);
+```
+
 On return, `complex` contains the pairs `[10.0 1.0], [20.0 2.0], [30.0 3.0] ... [80.0 8.0]`.
 
 Conversely, use the example below to copy the values of an array of [`DSPComplex`](dspcomplex.md) values to a [`DSPSplitComplex`](dspsplitcomplex.md) structure:
+
+**Swift**:
 
 ```swift
  vDSP_ctoz(&complex, strideComplex,
            &splitComplex, strideSplitComplex,
            vDSP_Length(n))
+```
+
+**Objective-C**:
+
+```objc
+vDSP_ctoz(complex, strideComplex,
+          &splitComplex, strideSplitComplex,
+          n);
 ```
 
 ## See Also

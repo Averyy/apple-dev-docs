@@ -201,6 +201,8 @@ Using [`appendInterpolation(_:)`](localizedstringkey/stringinterpolation/appendi
   A predefined style used to display a `Date`.
 - [struct LineStyle](text/linestyle.md)
   Description of the style used to draw the line for `StrikethroughStyleAttribute` and `UnderlineStyleAttribute`.
+- [func foregroundColor(Color?) -> Text](text/foregroundcolor(_:).md)
+  Sets the color of the text displayed by this view.
 ### Fitting text into available space
 - [func textScale(Text.Scale, isEnabled: Bool) -> Text](text/textscale(_:isenabled:).md)
   Applies a text scale to the text.
@@ -230,9 +232,6 @@ Using [`appendInterpolation(_:)`](localizedstringkey/stringinterpolation/appendi
 ### Combining text views
 - [static func + (Text, Text) -> Text](text/+(_:_:).md)
   Concatenates the text in two text views in a new text view.
-### Deprecated symbols
-- [func foregroundColor(Color?) -> Text](text/foregroundcolor(_:).md)
-  Sets the color of the text displayed by this view.
 ### Structures
 - [struct AlignmentStrategy](text/alignmentstrategy.md)
   The way SwiftUI infers the appropriate text alignment if no value is explicitly provided.

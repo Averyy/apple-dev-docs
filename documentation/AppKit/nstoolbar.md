@@ -50,8 +50,6 @@ For more information about how to use toolbars, see [`Integrating a Toolbar and 
   A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.
 - [NSToolbar.DisplayMode](nstoolbar/displaymode-swift.enum.md)
   Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
-- [var showsBaselineSeparator: Bool](nstoolbar/showsbaselineseparator.md)
-  A Boolean value that indicates whether the toolbar shows the separator between the toolbar and the main window contents.
 - [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)
   A Boolean value that indicates whether users can modify the contents of the toolbar.
 - [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)
@@ -76,10 +74,6 @@ For more information about how to use toolbars, see [`Integrating a Toolbar and 
 ### Autosaving the configuration
 - [var autosavesConfiguration: Bool](nstoolbar/autosavesconfiguration.md)
   A Boolean value that indicates whether the toolbar autosaves its configuration.
-- [var configuration: [String : Any]](nstoolbar/configuration.md)
-  A dictionary containing the current configuration details for the toolbar.
-- [func setConfiguration([String : Any])](nstoolbar/setconfiguration(_:).md)
-  Specifies the new configuration details for the toolbar.
 ### Displaying the customization palette
 - [func runCustomizationPalette(Any?)](nstoolbar/runcustomizationpalette(_:).md)
   Displays the toolbar’s customization palette and handles any user-initiated customizations.
@@ -89,18 +83,8 @@ For more information about how to use toolbars, see [`Integrating a Toolbar and 
 - [func validateVisibleItems()](nstoolbar/validatevisibleitems.md)
   Validates the toolbar’s visible items during a window update.
 ### Deprecated
-- [var centeredItemIdentifier: NSToolbarItem.Identifier?](nstoolbar/centereditemidentifier.md)
-  The item to display in the center of the toolbar.
-- [var fullScreenAccessoryView: NSView?](nstoolbar/fullscreenaccessoryview.md)
-  The toolbar’s full screen accessory view.
-- [var fullScreenAccessoryViewMinHeight: CGFloat](nstoolbar/fullscreenaccessoryviewminheight.md)
-  The minimum height of the toolbar’s full screen accessory view.
-- [var fullScreenAccessoryViewMaxHeight: CGFloat](nstoolbar/fullscreenaccessoryviewmaxheight.md)
-  The maximum height of the toolbar’s full screen accessory view, in points.
-- [var sizeMode: NSToolbar.SizeMode](nstoolbar/sizemode-swift.property.md)
-  The toolbar’s size mode.
-- [NSToolbar.SizeMode](nstoolbar/sizemode-swift.enum.md)
-  Constants that specify toolbar display modes.
+- [Deprecated symbols](nstoolbar-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSToolbar.DidRemoveItemMessage](nstoolbar/didremoveitemmessage.md)
 - [NSToolbar.WillAddItemMessage](nstoolbar/willadditemmessage.md)

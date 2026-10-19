@@ -20,6 +20,11 @@ See [`NSScroller.ArrowPosition`](nsscroller/arrowposition.md) for a list of poss
 
 > **Note**:  This property has no effect in macOS 10.7 and later.
 
+## See Also
+
+- [var controlTint: NSControlTint](nsscroller/controltint.md)
+  The scroller’s control tint.
+
 
 ---
 

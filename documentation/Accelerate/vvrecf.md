@@ -28,7 +28,7 @@ func vvrecf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafePo
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvrecf(_:_:_:)`](vvrecf(_:_:_:).md).
+The following code shows an example of using [`vvrecf(_:_:_:)`](vvrecf(_:_:_:).md):
 
 **Swift**:
 
@@ -51,7 +51,7 @@ int n = 4;
  
 vvrecf(y, x, &n);
  
-NSLog(@"y: [%lf, %lf, %lf, %lf]", y[0], y[1], y[2], y[3]);
+printf("y: [%lf, %lf, %lf, %lf]\n", y[0], y[1], y[2], y[3]);
 ```
 
 ## See Also

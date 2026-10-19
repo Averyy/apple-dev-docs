@@ -32,8 +32,9 @@ Use this method to compare two standalone trait collections, or to compare the i
 
 ## See Also
 
-- [func hasDifferentColorAppearance(comparedTo: UITraitCollection?) -> Bool](uitraitcollection/hasdifferentcolorappearance(comparedto:).md)
-  Queries whether changing between the specified and current trait collections would affect color values.
+- [init(traitsFrom: [UITraitCollection])](uitraitcollection/init(traitsfrom:).md)
+  Creates a trait collection that consists of traits merged from a specified array of trait collections.
+- [init(traitsFromCollections: [UITraitCollection])](uitraitcollection/init(traitsfromcollections:).md)
 
 
 ---

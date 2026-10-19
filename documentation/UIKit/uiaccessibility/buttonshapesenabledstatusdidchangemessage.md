@@ -27,6 +27,13 @@ struct ButtonShapesEnabledStatusDidChangeMessage
 - [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
+## See Also
+
+- [static var buttonShapesEnabled: Bool](uiaccessibility/buttonshapesenabled.md)
+  A Boolean value that indicates whether the Button Shapes setting is in an enabled state.
+- [static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name](uiaccessibility/buttonshapesenabledstatusdidchangenotification.md)
+  A notification that UIKit posts when the system’s Button Shapes setting changes.
+
 
 ---
 

@@ -1,4 +1,4 @@
 Completed scraping ClassKit UI!
-Total pages scraped: 11
-Pages skipped (unchanged): 2
+Total pages scraped: 0
+Pages skipped (unchanged): 13
 Pages failed: 0

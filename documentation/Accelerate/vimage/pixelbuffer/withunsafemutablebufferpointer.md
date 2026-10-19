@@ -32,7 +32,7 @@ You can use this function to simplify interoperation with other libraries and fr
 
 ##### Add Text to a Pixel Buffer
 
-The following code creates a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) instance from the pointer to the buffer’s storage. The code renders a gray rectangle over the image and draws text inside the rectangle by calling [`CTLineDraw(_:_:)`](https://developer.apple.com/documentation/coretext/ctlinedraw(_:_:)).
+The following code creates a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) instance from the pointer to the buffer’s storage. The code renders a gray rectangle over the image and draws text inside the rectangle by calling [`CTLineDraw(_:_:)`](https://developer.apple.com/documentation/coretext/ctlinedraw(_:_:)):
 
 ```swift
 let srcImage =  imageLiteral(resourceName: " ... ").cgImage(

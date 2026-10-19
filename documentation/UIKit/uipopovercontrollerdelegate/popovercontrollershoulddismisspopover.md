@@ -33,6 +33,8 @@ If you do not implement this method in your delegate, the default return value i
 
 ## See Also
 
+- [func popoverController(UIPopoverController, willRepositionPopoverTo: UnsafeMutablePointer<CGRect>, in: AutoreleasingUnsafeMutablePointer<UIView>)](uipopovercontrollerdelegate/popovercontroller(_:willrepositionpopoverto:in:).md)
+  Tells the delegate that the popover controller needs to change the popover’s location in its view.
 - [func popoverControllerDidDismissPopover(UIPopoverController)](uipopovercontrollerdelegate/popovercontrollerdiddismisspopover(_:).md)
   Tells the delegate that the popover was dismissed.
 

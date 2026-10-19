@@ -40,13 +40,6 @@ enum GradientType
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
-## See Also
-
-- [NSButton.BezelStyle](nsbutton/bezelstyle-swift.enum.md)
-  The set of bezel styles to style buttons in your app.
-- [NSButton.ButtonType](nsbutton/buttontype.md)
-  Button types that you can specify using [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md).
-
 
 ---
 

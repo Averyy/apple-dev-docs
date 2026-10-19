@@ -75,8 +75,6 @@ class NSMenu
   The action method assigned to menu items that open submenus.
 - [var supermenu: NSMenu?](nsmenu/supermenu.md)
   The parent menu that contains the menu as a submenu.
-- [var isTornOff: Bool](nsmenu/istornoff.md)
-  Indicates whether the menu is offscreen or attached to another menu (or if it’s the main menu).
 ### Enabling and Disabling Menu Items
 - [var autoenablesItems: Bool](nsmenu/autoenablesitems.md)
   Indicates whether the menu automatically enables and disables its menu items.
@@ -117,9 +115,6 @@ class NSMenu
 ### Working with Palettes
 - [static func palette(colors: [NSColor], titles: [String], template: NSImage?, onSelectionChange: ((NSMenu) -> Void)?) -> NSMenu](nsmenu/palette(colors:titles:template:onselectionchange:).md)
   Creates a palette style menu displaying user-selectable color tags that tint using the specified array of colors.
-### Managing Menu Change Notifications
-- [var menuChangedMessagesEnabled: Bool](nsmenu/menuchangedmessagesenabled.md)
-  Indicates whether messages are sent to the application’s windows each time the menu changes.
 ### Displaying Contextual Menus
 - [var allowsContextMenuPlugIns: Bool](nsmenu/allowscontextmenuplugins.md)
   Indicates whether the pop-up menu allows appending of contextual menu plug-in items.
@@ -128,16 +123,11 @@ class NSMenu
   Displays a contextual menu over a view for an event.
 - [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView, with: NSFont?)](nsmenu/popupcontextmenu(_:with:for:with:).md)
   Displays a contextual menu over a view for an event using a specified font.
-- [func helpRequested(with: NSEvent)](nsmenu/helprequested(with:).md)
-  Overridden by subclasses to implement specialized context-sensitive help behavior.
 - [func popUp(positioning: NSMenuItem?, at: NSPoint, in: NSView?) -> Bool](nsmenu/popup(positioning:at:in:).md)
   Pops up the menu at the specified location.
 ### Managing Display of the State Column
 - [var showsStateColumn: Bool](nsmenu/showsstatecolumn.md)
   Indicates whether the menu displays the state column.
-### Controlling Allocation Zones
-- [class func menuZone() -> NSZone!](nsmenu/menuzone.md)
-  Returns the zone from which `NSMenu` objects should be allocated.
 ### Handling Highlighting
 - [var highlightedItem: NSMenuItem?](nsmenu/highlighteditem.md)
   Indicates the currently highlighted item in the menu.
@@ -170,6 +160,9 @@ class NSMenu
   Posted just after the application dispatches a menu item’s action method to the menu item’s target.
 - [class let willSendActionNotification: NSNotification.Name](nsmenu/willsendactionnotification.md)
   Posted just before the application dispatches a menu item’s action method to the menu item’s target.
+### Deprecated
+- [Deprecated symbols](nsmenu-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSMenu.DidAddItemMessage](nsmenu/didadditemmessage.md)
 - [NSMenu.DidBeginTrackingMessage](nsmenu/didbegintrackingmessage.md)

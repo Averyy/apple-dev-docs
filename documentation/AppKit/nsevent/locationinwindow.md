@@ -41,6 +41,8 @@ NSPoint local_point = [self convertPoint:event_location fromView:nil];
   The Core Graphics event object corresponding to this event.
 - [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
   The longest time duration possible.
+- [var context: NSGraphicsContext?](nsevent/context.md)
+  The display graphics context for this event.
 
 
 ---

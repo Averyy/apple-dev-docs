@@ -6,7 +6,7 @@ These constants define values returned by the [`NSRunAlertPanel`](nsrunalertpane
 
 ## Topics
 
-### Constants
+### Deprecated
 - [var NSAlertDefaultReturn: Int](nsalertdefaultreturn.md)
   The user pressed the default button.
 - [var NSAlertAlternateReturn: Int](nsalertalternatereturn.md)

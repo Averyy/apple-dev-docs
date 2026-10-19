@@ -6,7 +6,7 @@
 Frees the video direction control.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

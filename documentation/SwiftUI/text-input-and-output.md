@@ -81,6 +81,8 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/human
   The default text variant preference that chooses the largest available variant.
 - [struct SizeDependentTextVariant](sizedependenttextvariant.md)
   The size dependent variant preference allows the text to take the available space into account when choosing the variant to display.
+- [enum ContentSizeCategory](contentsizecategory.md)
+  The sizes that you can specify for content.
 ### Controlling text style
 - [func bold(Bool) -> some View](view/bold(_:).md)
   Applies a bold font weight to the text in this view.
@@ -224,9 +226,6 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/human
   Specifies the language for typesetting.
 - [struct TypesettingLanguage](typesettinglanguage.md)
   Defines how typesetting language is determined for text.
-### Deprecated types
-- [enum ContentSizeCategory](contentsizecategory.md)
-  The sizes that you can specify for content.
 
 ## See Also
 

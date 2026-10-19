@@ -44,9 +44,9 @@ let roi = CGRect(x: 1, y: 1,
 let dest = src.cropped(to: roi)
 
 // Prints:
-//  [ 21, 22, 23,
+//  "[ 21, 22, 23,
 //    31, 32, 33,
-//    41, 42, 43 ]
+//    41, 42, 43 ]".
 print(dest.array)
 ```
 

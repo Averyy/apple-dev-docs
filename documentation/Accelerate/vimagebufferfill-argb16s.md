@@ -28,11 +28,13 @@ func vImageBufferFill_ARGB16S(_ dest: UnsafePointer<vImage_Buffer>, _ color: Uns
 
 The following code fills the buffer with the specified color:
 
+**Swift**:
+
 ```swift
 var buffer = vImage_Buffer()
 vImageBuffer_Init(&buffer,
-                  2, 1,
-                  16,
+                  1, 2,
+                  64,
                   vImage_Flags(kvImageNoFlags))
 defer {
     buffer.data.deallocate()
@@ -48,10 +50,32 @@ let pixelValues = UnsafeMutableBufferPointer(
     start: buffer.data.assumingMemoryBound(to: Pixel_16S.self),
     count: 8)
 
-// Prints:
-//      "[64, 127, 192, 255,
-//        64, 127, 192, 255]"
+// Prints "[64, 127, 192, 255, 64, 127, 192, 255]".
 print(Array(pixelValues))
+```
+
+**Objective-C**:
+
+```objc
+int16_t data[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+
+vImage_Buffer dest = {
+    .data = data,
+    .width = 1,
+    .height = 2,
+    .rowBytes = 8
+};
+
+Pixel_ARGB_16S fillColor = {64, 127, 192, 255};
+
+vImageBufferFill_ARGB16S(&dest,
+                         fillColor,
+                         kvImageNoFlags);
+
+// Prints "[64, 127, 192, 255, 64, 127, 192, 255]".
+printf("[%d, %d, %d, %d, %d, %d, %d, %d]\n",
+      data[0], data[1], data[2], data[3],
+      data[4], data[5], data[6], data[7]);
 ```
 
 ## Parameters

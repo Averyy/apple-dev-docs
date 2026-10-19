@@ -6,7 +6,7 @@
 Returns the video object identifier of the control’s owning device.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

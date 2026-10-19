@@ -18,6 +18,8 @@ Use the [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultiplied
 
 The following function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances and returns the result as a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance:
 
+**Swift**:
+
 ```swift
 func alphaComposite(topImage: CGImage, bottomImage: CGImage) -> CGImage? {
     // Create source and destination vImage buffers.
@@ -66,7 +68,83 @@ func alphaComposite(topImage: CGImage, bottomImage: CGImage) -> CGImage? {
 
 ```
 
+**Objective-C**:
+
+```objc
+// Compile-only: Requires live `CGImageRef` inputs.
+CGImageRef alphaComposite(CGImageRef topImage, CGImageRef bottomImage) {
+    // Create source and destination vImage buffers.
+    vImage_CGImageFormat argb8888Format = {
+        .bitsPerComponent = 8,
+        .bitsPerPixel = 8 * 4,
+        .colorSpace = NULL,
+        .bitmapInfo = (CGBitmapInfo)kCGImageAlphaFirst,
+        .version = 0,
+        .renderingIntent = kCGRenderingIntentDefault
+    };
+
+    vImage_Buffer topImageBuffer, bottomImageBuffer, destinationImageBuffer;
+
+    vImage_Error topErr    = vImageBuffer_InitWithCGImage(&topImageBuffer,
+                                                          &argb8888Format,
+                                                          NULL, topImage,
+                                                          kvImageNoFlags);
+    vImage_Error bottomErr = vImageBuffer_InitWithCGImage(&bottomImageBuffer,
+                                                          &argb8888Format,
+                                                          NULL, bottomImage,
+                                                          kvImageNoFlags);
+    vImage_Error destErr   = vImageBuffer_Init(&destinationImageBuffer,
+                                               topImageBuffer.height,
+                                               topImageBuffer.width,
+                                               8 * 4,
+                                               kvImageNoFlags);
+
+    if (topErr != kvImageNoError || bottomErr != kvImageNoError ||
+        destErr != kvImageNoError) {
+        return NULL;
+    }
+
+    // Ensure the bottom image and top image are ARGB.
+    convertToARGB(&bottomImageBuffer, CGImageGetAlphaInfo(bottomImage));
+    convertToARGB(&topImageBuffer,    CGImageGetAlphaInfo(topImage));
+
+    // Ensure the top layer is premultiplied.
+    premultiply(&topImageBuffer, CGImageGetAlphaInfo(topImage));
+
+    // Perform the composite operation.
+    vImagePremultipliedAlphaBlend_ARGB8888(&topImageBuffer,
+                                           &bottomImageBuffer,
+                                           &destinationImageBuffer,
+                                           kvImageNoFlags);
+
+    vImage_CGImageFormat destinationFormat = {
+        .bitsPerComponent = 8,
+        .bitsPerPixel = 8 * 4,
+        .colorSpace = CGColorSpaceCreateDeviceRGB(),
+        .bitmapInfo = (CGBitmapInfo)kCGImageAlphaFirst,
+        .version = 0,
+        .renderingIntent = kCGRenderingIntentDefault
+    };
+
+    vImage_Error outError = kvImageNoError;
+    CGImageRef result = vImageCreateCGImageFromBuffer(&destinationImageBuffer,
+                                                      &destinationFormat,
+                                                      NULL, NULL,
+                                                      kvImageNoFlags,
+                                                      &outError);
+
+    free(topImageBuffer.data);
+    free(bottomImageBuffer.data);
+    free(destinationImageBuffer.data);
+    CGColorSpaceRelease(destinationFormat.colorSpace);
+
+    return result;
+}
+```
+
 Because the blending function [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) requires that the alpha channel source buffers are first, the code calls `convertToARGB(_:alphaInfo:)` to ensure the correct ordering. The `convertToARGB(_:alphaInfo:)` function checks the channel ordering from the source image’s alpha information and permutes the channels if the ordering isn’t alpha-first.
+
+**Swift**:
 
 ```swift
 func convertToARGB(_ buffer: UnsafePointer<vImage_Buffer>,
@@ -85,7 +163,22 @@ func convertToARGB(_ buffer: UnsafePointer<vImage_Buffer>,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void convertToARGB(const vImage_Buffer *buffer, CGImageAlphaInfo alphaInfo) {
+    if (alphaInfo == kCGImageAlphaLast ||
+        alphaInfo == kCGImageAlphaPremultipliedLast ||
+        alphaInfo == kCGImageAlphaNoneSkipLast) {
+        uint8_t permuteMap[4] = {3, 0, 1, 2};
+        vImagePermuteChannels_ARGB8888(buffer, buffer, permuteMap, kvImageNoFlags);
+    }
+}
+```
+
 The `premultiply(_:alphaInfo:)` function uses a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance’s alpha information to determine whether an image contains premultiplied alpha. This function ensures that the top layer that the function passes to the composite operation contains premultiplied pixels.
+
+**Swift**:
 
 ```swift
 func premultiply(_ buffer: UnsafePointer<vImage_Buffer>,
@@ -102,6 +195,17 @@ func premultiply(_ buffer: UnsafePointer<vImage_Buffer>,
 }
 ```
 
+**Objective-C**:
+
+```objc
+void premultiply(const vImage_Buffer *buffer, CGImageAlphaInfo alphaInfo) {
+    if (alphaInfo != kCGImageAlphaPremultipliedFirst &&
+        alphaInfo != kCGImageAlphaPremultipliedLast) {
+        vImagePremultiplyData_ARGB8888(buffer, buffer, kvImageNoFlags);
+    }
+}
+```
+
 ##### Perform an Alpha Composite with a Single Alpha Value
 
 vImage provides functions to perform an alpha composite using a single alpha value. The functions apply the constant alpha value you supply combined with the top image’s existing alpha to the top layer’s color channels and alpha channels. For each pixel, the constant alpha functions perform the following operation:
@@ -113,6 +217,8 @@ destAlpha =  (srcTopAlpha * constAlpha * 255 + (255*255 - srcTopAlpha * constAlp
 
 To perform an alpha composite with a constant alpha, replace the call to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) in the code listing in [`Compositing images with alpha blending`](compositing-images-with-alpha-blending.md) with the following code:
 
+**Swift**:
+
 ```swift
 // Perform the composite operation.
 vImagePremultipliedConstAlphaBlend_ARGB8888(topPtr,
@@ -120,6 +226,17 @@ vImagePremultipliedConstAlphaBlend_ARGB8888(topPtr,
                                             bottomPtr,
                                             &destinationImageBuffer,
                                             vImage_Flags(kvImageNoFlags))
+```
+
+**Objective-C**:
+
+```objc
+// Perform the composite operation.
+vImagePremultipliedConstAlphaBlend_ARGB8888(&topImageBuffer,
+                                            (Pixel_8)191,
+                                            &bottomImageBuffer,
+                                            &destinationImageBuffer,
+                                            kvImageNoFlags);
 ```
 
 The following image shows the result of compositing with [`vImagePremultipliedConstAlphaBlend_ARGB8888(_:_:_:_:_:)`](vimagepremultipliedconstalphablend_argb8888(_:_:_:_:_:).md) using a constant alpha with a value of `191`. The background of the building remains transparent, but the parts of the image that were originally opaque now show some of the lower layer.
@@ -135,6 +252,8 @@ Use the [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](vimageoverwritechannels
 The [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](vimageoverwritechannels_argb8888(_:_:_:_:_:).md) function requires buffers with nonpremultiplied alpha.
 
 The `radialComposite(topImage:bottomImage:)` function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances with a procedural radial gradient.
+
+**Swift**:
 
 ```swift
 func radialComposite(topImage: CGImage,
@@ -200,7 +319,103 @@ func radialComposite(topImage: CGImage,
 }
 ```
 
+**Objective-C**:
+
+```objc
+// Compile-only: Requires live `CGImageRef` inputs.
+CGImageRef radialComposite(CGImageRef topImage, CGImageRef bottomImage) {
+    // Create source and destination vImage buffers.
+    vImage_CGImageFormat argb8888Format = {
+        .bitsPerComponent = 8,
+        .bitsPerPixel = 8 * 4,
+        .colorSpace = NULL,
+        .bitmapInfo = (CGBitmapInfo)kCGImageAlphaFirst,
+        .version = 0,
+        .renderingIntent = kCGRenderingIntentDefault
+    };
+
+    vImage_Buffer topImageBuffer, bottomImageBuffer;
+    vImage_Buffer gradientImageBuffer, destinationImageBuffer;
+
+    vImage_Error topErr    = vImageBuffer_InitWithCGImage(&topImageBuffer,
+                                                          &argb8888Format,
+                                                          NULL, topImage,
+                                                          kvImageNoFlags);
+    vImage_Error bottomErr = vImageBuffer_InitWithCGImage(&bottomImageBuffer,
+                                                          &argb8888Format,
+                                                          NULL, bottomImage,
+                                                          kvImageNoFlags);
+    vImage_Error gradErr   = vImageBuffer_Init(&gradientImageBuffer,
+                                               topImageBuffer.height,
+                                               topImageBuffer.width,
+                                               8,
+                                               kvImageNoFlags);
+    vImage_Error destErr   = vImageBuffer_Init(&destinationImageBuffer,
+                                               topImageBuffer.height,
+                                               topImageBuffer.width,
+                                               8 * 4,
+                                               kvImageNoFlags);
+
+    if (topErr != kvImageNoError || bottomErr != kvImageNoError ||
+        gradErr != kvImageNoError || destErr != kvImageNoError) {
+        return NULL;
+    }
+
+    // Ensure the top image and the bottom image are ARGB.
+    convertToARGB(&topImageBuffer,    CGImageGetAlphaInfo(topImage));
+    convertToARGB(&bottomImageBuffer, CGImageGetAlphaInfo(bottomImage));
+
+    // Populate `gradientImageBuffer` with a radial gradient.
+    makeRadialGradient(&gradientImageBuffer);
+
+    // Unpremultiply before overwriting, if required.
+    unpremultiply(&topImageBuffer, CGImageGetAlphaInfo(topImage));
+
+    // Overwrite the top layer's alpha channel with the radial gradient.
+    vImageOverwriteChannels_ARGB8888(&gradientImageBuffer,
+                                     &topImageBuffer, &topImageBuffer,
+                                     0x8,
+                                     kvImageNoFlags);
+
+    // Premultiply the top layer.
+    vImagePremultiplyData_ARGB8888(&topImageBuffer, &topImageBuffer,
+                                   kvImageNoFlags);
+
+    // Perform the alpha blend of the top layer over the bottom layer.
+    vImagePremultipliedAlphaBlend_ARGB8888(&topImageBuffer,
+                                           &bottomImageBuffer,
+                                           &destinationImageBuffer,
+                                           kvImageNoFlags);
+
+    vImage_CGImageFormat destinationFormat = {
+        .bitsPerComponent = 8,
+        .bitsPerPixel = 8 * 4,
+        .colorSpace = CGColorSpaceCreateDeviceRGB(),
+        .bitmapInfo = (CGBitmapInfo)kCGImageAlphaFirst,
+        .version = 0,
+        .renderingIntent = kCGRenderingIntentDefault
+    };
+
+    vImage_Error outError = kvImageNoError;
+    CGImageRef result = vImageCreateCGImageFromBuffer(&destinationImageBuffer,
+                                                      &destinationFormat,
+                                                      NULL, NULL,
+                                                      kvImageNoFlags,
+                                                      &outError);
+
+    free(topImageBuffer.data);
+    free(bottomImageBuffer.data);
+    free(gradientImageBuffer.data);
+    free(destinationImageBuffer.data);
+    CGColorSpaceRelease(destinationFormat.colorSpace);
+
+    return result;
+}
+```
+
 The code calls `unpremultiply(_:alphaInfo:)` to unpremultiply an image if its alpha information indicates it contains premultiplied pixels.
+
+**Swift**:
 
 ```swift
 func unpremultiply(_ buffer: UnsafePointer<vImage_Buffer>,
@@ -213,6 +428,17 @@ func unpremultiply(_ buffer: UnsafePointer<vImage_Buffer>,
         vImageUnpremultiplyData_ARGB8888(buffer,
                                          buffer,
                                          vImage_Flags(kvImageNoFlags))
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+void unpremultiply(const vImage_Buffer *buffer, CGImageAlphaInfo alphaInfo) {
+    if (alphaInfo == kCGImageAlphaPremultipliedFirst ||
+        alphaInfo == kCGImageAlphaPremultipliedLast) {
+        vImageUnpremultiplyData_ARGB8888(buffer, buffer, kvImageNoFlags);
     }
 }
 ```

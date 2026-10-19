@@ -30,6 +30,8 @@ init()
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
 - [Navigating an app’s user interface using a keyboard](navigating-an-app-s-user-interface-using-a-keyboard.md)
   Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
+- [convenience init(input: String, modifierFlags: UIKeyModifierFlags, action: Selector, discoverabilityTitle: String)](uikeycommand/init(input:modifierflags:action:discoverabilitytitle:).md)
+  Creates a key command object that matches the specified input and has a title.
 
 
 ---

@@ -22,8 +22,6 @@ A constant describing the type of box. These constants are described in [`NSBox.
 
 - [var borderRect: NSRect](nsbox/borderrect.md)
   The rectangle in which the receiver’s border is drawn.
-- [var borderType: NSBorderType](nsbox/bordertype.md)
-  The receiver’s border type.
 - [var isTransparent: Bool](nsbox/istransparent.md)
   A Boolean value that indicates whether the receiver is transparent.
 - [var title: String](nsbox/title.md)
@@ -36,6 +34,8 @@ A constant describing the type of box. These constants are described in [`NSBox.
   The cell used to display the receiver’s title.
 - [var titleRect: NSRect](nsbox/titlerect.md)
   The rectangle in which the receiver’s title is drawn.
+- [var borderType: NSBorderType](nsbox/bordertype.md)
+  The receiver’s border type.
 
 
 ---

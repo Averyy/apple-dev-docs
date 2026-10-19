@@ -54,8 +54,6 @@ These contents are used by the [`highlightsBy`](nsbuttoncell/highlightsby.md) an
   A constant for specifying the position of a button’s image relative to its title.
 - [enum NSImageScaling](nsimagescaling.md)
   Constants that specify a cell’s image scaling behavior.
-- [typealias StateValue](nscell/statevalue.md)
-  Constants for specifying a cell’s state and are used mostly for buttons.
 - [enum NSControlTint](nscontroltint.md)
   Constants for specifying a cell’s tint color.
 - [NSControl.ControlSize](nscontrol/controlsize-swift.enum.md)

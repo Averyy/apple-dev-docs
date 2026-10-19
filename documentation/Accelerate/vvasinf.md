@@ -34,6 +34,36 @@ If `x` is `+/-0`, the result preserves the signed zero.
 
 If `|x| > 1`, the result is NaN.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [-1, 0, 1]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the arcsine of each element in `x`.
+vvasinf(&y, &x, &n)
+
+// Prints "[-1.5707964, 0.0, 1.5707964]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {-1, 0, 1};
+float y[3];
+int n = 3;
+
+// Calculate the arcsine of each element in `x`.
+vvasinf(y, x, &n);
+
+// Prints "[-1.5708, 0, 1.5708]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func acos<U>(U) -> [Double]](vforce/acos(_:)-8srk.md)

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Creates a split arrangement that supports the given axes.
+Creates a split arrangement that lays out its views along the axes you provide.
 
 **Availability**:
 - iOS 27.1+
@@ -23,20 +23,7 @@ func axes(_ axes: Axis.Set) -> SplitArrangementViewStyle
 
 #### Discussion
 
-For example, you could make a split arrangement which will only split its views into a vertical split layout using the `vertical` axis.
-
-```swift
-ArrangementView {
-    PrimaryContent()
-} secondary: {
-    SecondaryContent()
-}
-.arrangementViewStyle(.split.axes(.vertical))
-```
-
-## Parameters
-
-- `axes`: The supported axes the view can split to.
+For axes that you don’t include, the arrangement only displays the primary view.
 
 
 ---

@@ -33,8 +33,6 @@ Changing the value in this property affects only heading values reported after t
 ## Topics
 
 ### Heading configuration
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
-  A physical body or view that defines the reference orientation for heading calculations.
 - [enum CLDeviceOrientation](cldeviceorientation.md)
   Constants indicating the physical orientation of the device.
 

@@ -28,6 +28,8 @@ func vImageCreateCGImageFromBuffer(_ buf: UnsafePointer<vImage_Buffer>, _ format
 
 The following code shows a passthrough function that generates an output Core Graphics image using no-copy mode. The vImage buffer, `buffer`, and the Core Graphics image, `destinationCGImage`, share the same memory. In this example, the deallocation callback deallocates the memory that the `data` variable points to:
 
+**Swift**:
+
 ```swift
 static func passThrough(sourceImage: CGImage) throws -> CGImage? {
     
@@ -70,6 +72,41 @@ static func passThrough(sourceImage: CGImage) throws -> CGImage? {
     
     return destinationCGImage?.takeRetainedValue()
 }
+```
+
+**Objective-C**:
+
+```objc
+static void deallocCallback(void *userData, void *bufData) {
+    free(bufData);
+}
+
+uint8_t *pixels = calloc(height * rowBytes, 1);
+
+vImage_Buffer buffer = {
+    .data = pixels,
+    .height = height,
+    .width = width,
+    .rowBytes = rowBytes
+};
+
+vImage_CGImageFormat format = {
+    .bitsPerComponent = 8,
+    .bitsPerPixel = 32,
+    .colorSpace = NULL,
+    .bitmapInfo = kCGBitmapByteOrderDefault | kCGImageAlphaNoneSkipFirst,
+    .version = 0,
+    .decode = NULL,
+    .renderingIntent = kCGRenderingIntentDefault
+};
+
+CGImageRef destinationCGImage = vImageCreateCGImageFromBuffer(
+    &buffer,
+    &format,
+    deallocCallback,
+    NULL,
+    kvImageNoAllocate,
+    NULL);
 ```
 
 ## Parameters

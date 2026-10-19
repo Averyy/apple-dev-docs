@@ -20,6 +20,10 @@ If you specified a custom value in the [`minimumTrackingAdjustment`](nsstringdra
 
 ## See Also
 
+- [var minimumScaleFactor: CGFloat](nsstringdrawingcontext/minimumscalefactor.md)
+  The scale factor that determines the smallest font size to use during drawing.
+- [var actualScaleFactor: CGFloat](nsstringdrawingcontext/actualscalefactor.md)
+  The actual scale factor that the system applied to the font during drawing.
 - [var minimumTrackingAdjustment: CGFloat](nsstringdrawingcontext/minimumtrackingadjustment.md)
   The smallest amount of space, in points, to maintain between characters.
 

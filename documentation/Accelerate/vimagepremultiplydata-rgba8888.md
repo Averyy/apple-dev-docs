@@ -32,7 +32,7 @@ func vImagePremultiplyData_RGBA8888(_ src: UnsafePointer<vImage_Buffer>, _ dest:
 
 This function multiplies color channels by the alpha channel using the following code:
 
-```swift
+```c
 uint8_t destColor = (src * alpha + 127) / 255;
 uint8_t destAlpha = alpha;
 ```

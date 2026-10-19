@@ -30,6 +30,7 @@ nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder conte
   Creates an unlabeled group box with the provided view content.
 - [init(content: () -> Content, label: () -> Label)](groupbox/init(content:label:).md)
   Creates a group box with the provided label and view content.
+- [init(label: Label, content: () -> Content)](groupbox/init(label:content:).md)
 
 
 ---

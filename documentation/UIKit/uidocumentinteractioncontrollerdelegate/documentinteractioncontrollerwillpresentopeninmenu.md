@@ -37,6 +37,8 @@ The Open In menu is used to select an application for opening the current file. 
   Called when a document interaction controller has dismissed its options menu.
 - [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissopeninmenu(_:).md)
   Called when a document interaction controller has dismissed its Open In menu.
+- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
+  Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 
 
 ---

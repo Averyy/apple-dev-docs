@@ -22,7 +22,7 @@ static func subtract<S, T, U, V>(multiplication: (a: T, b: U), _ vector: S, resu
 
 #### Discussion
 
-This function calculates the products of the first `N` elements of `A` and `B`, subtracts each product from the corresponding value in `C`, and writes the result to `D`.
+This function calculates the products of the first `N` elements of `A` and `B`, subtracts each product from the corresponding value in `C`, and writes the result to `D`, as follows:
 
 ```swift
  for (n = 0; n < N; ++n)

@@ -155,23 +155,14 @@ For design guidance, see Human Interface Guidelines > [`Color`](https://develope
 - [class let systemColorsDidChangeNotification: NSNotification.Name](nscolor/systemcolorsdidchangenotification.md)
   Sent when the system colors have changed, such as through a system control panel interface.
 ### Deprecated
-- [class var ignoresAlpha: Bool](nscolor/ignoresalpha.md)
-  A Boolean value that indicates whether the app supports alpha.
-- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
-  The name of the color space associated with the color.
-- [func usingColorSpaceName(NSColorSpaceName) -> NSColor?](nscolor/usingcolorspacename(_:).md)
-  Creates a new color object whose color is the same as the receiver’s, except that the new color object is in the specified color space.
-- [func usingColorSpaceName(NSColorSpaceName?, device: [NSDeviceDescriptionKey : Any]?) -> NSColor?](nscolor/usingcolorspacename(_:device:).md)
-  Creates a new color object for the same color, but in the specified color space and specific to the provided device.
-- [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
-  Sent after the user changes control tint preference.
+- [Deprecated symbols](nscolor-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSColor.SystemColorsDidChangeMessage](nscolor/systemcolorsdidchangemessage.md)
 ### Initializers
 - [init?(CGColor: CGColor)](nscolor/init(cgcolor:)-3pxs.md)
 - [init(SRGBRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-3vuej.md)
 - [init(ciColor: CIColor)](nscolor/init(cicolor:)-1jbdc.md)
-- [init(forControlTint: NSControlTint)](nscolor/init(forcontroltint:).md)
 - [init?(fromPasteboard: NSPasteboard)](nscolor/init(frompasteboard:).md)
 - [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nscolor/init(pasteboardpropertylist:oftype:).md)
 ### Type Properties

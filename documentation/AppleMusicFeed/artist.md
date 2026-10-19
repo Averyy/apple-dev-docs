@@ -21,6 +21,8 @@ object Artist
   A mapping of locale to localized names for the artist.
 - [object Artist.NamePronunciation](artist/namepronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific pronunciation-name translation type.
+- [object Artist.RelevanceScore](artist/relevancescore-data.dictionary.md)
+  A score representing artist relevance, used to rank artists when surfacing content.
 
 ## Properties
 
@@ -30,6 +32,7 @@ object Artist
 - `name` (Artist.Name): **(Required)** A mapping of locale to localized uncensored names for the artist.
 - `nameDefault` (string): The default name for the artist.
 - `namePronunciation` (Artist.NamePronunciation): **(Required)** A mapping of locale to translations for the specific pronunciation-name translation type.
+- `relevanceScore` (Artist.RelevanceScore): A score used to rank the relevance of the artist.
 - `urlTemplate` (string): A template for the URL to view the entity in Apple Music. The template requires an ISO country code for the `{country-code}` placeholder.
 
 ## See Also

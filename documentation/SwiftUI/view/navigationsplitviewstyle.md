@@ -49,6 +49,8 @@ A view that uses the specified navigation split view style.
   The visibility of the leading columns in a navigation split view.
 - [struct NavigationLink](navigationlink.md)
   A view that controls a navigation presentation.
+- [struct NavigationView](navigationview.md)
+  A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 
 ---

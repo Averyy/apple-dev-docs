@@ -30,12 +30,10 @@ You can also use [`squareBorder`](textfieldstyle/squareborder.md) to construct t
 
 ## See Also
 
-- [struct BorderedTextFieldStyle](borderedtextfieldstyle.md)
-  A text field style with a system-defined border.
-- [struct DefaultTextFieldStyle](defaulttextfieldstyle.md)
-  The default text field style, based on the text field’s context.
-- [struct PlainTextFieldStyle](plaintextfieldstyle.md)
-  A text field style with no decoration.
+- [static var roundedBorder: RoundedBorderTextFieldStyle](textfieldstyle/roundedborder.md)
+  A text field style with a system-defined rounded border.
+- [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)
+  A text field style with a system-defined square border.
 - [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
   A text field style with a system-defined rounded border.
 

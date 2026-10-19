@@ -16,10 +16,6 @@ case magnify
 
 ## See Also
 
-- [NSEvent.EventType.beginGesture](nsevent/eventtype/begingesture.md)
-  An event marking the beginning of a gesture.
-- [NSEvent.EventType.endGesture](nsevent/eventtype/endgesture.md)
-  An event that marks the end of a gesture.
 - [NSEvent.EventType.smartMagnify](nsevent/eventtype/smartmagnify.md)
   The user performed a smart-zoom gesture.
 - [NSEvent.EventType.swipe](nsevent/eventtype/swipe.md)

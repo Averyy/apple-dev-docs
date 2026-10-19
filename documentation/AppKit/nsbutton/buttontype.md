@@ -41,6 +41,9 @@ For more information, see [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).m
   A button that sends repeating actions as pressure changes occur.
 - [NSButton.ButtonType.multiLevelAccelerator](nsbutton/buttontype/multilevelaccelerator.md)
   A button that allows for a configurable number of stepped pressure levels and provides tactile feedback as the user reaches each step.
+### Deprecated
+- [Deprecated symbols](buttontype-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
 - [init?(rawValue: UInt)](nsbutton/buttontype/init(rawvalue:).md)
 
@@ -58,8 +61,6 @@ For more information, see [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).m
 
 - [NSButton.BezelStyle](nsbutton/bezelstyle-swift.enum.md)
   The set of bezel styles to style buttons in your app.
-- [NSButton.GradientType](nsbutton/gradienttype.md)
-  Specify the gradients used by the [`gradientType`](nsbuttoncell/gradienttype.md) property.
 
 
 ---

@@ -18,11 +18,15 @@ Options for querying reserved regions.
 struct QueryOptions
 ```
 
+#### Overview
+
+Pass query options to [`reservedRegions(kind:options:)`](uiview/reservedregions(kind:options:).md) to change which regions you get.
+
 ## Topics
 
 ### Setting query options
 - [static let includeInactive: UIView.ReservedRegion.QueryOptions](uiview/reservedregion/queryoptions/includeinactive.md)
-  A Boolean value that indicates whether inactive reserved regions are included in a query result.
+  An option that includes inactive reserved regions in the results.
 
 ## Relationships
 

@@ -27,12 +27,6 @@ This method redisplays the button if necessary. It does nothing if the button do
 
 - [var font: NSFont?](nscell/font.md)
   The font that the cell uses to display text.
-- [var keyEquivalent: String](nsbuttoncell/keyequivalent.md)
-  The button’s key-equivalent character.
-- [var keyEquivalentFont: NSFont?](nsbuttoncell/keyequivalentfont.md)
-  The font used to draw the button’s key equivalent.
-- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsbuttoncell/keyequivalentmodifiermask.md)
-  The mask that identifies the modifier keys for the button’s key equivalent.
 
 
 ---

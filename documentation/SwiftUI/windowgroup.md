@@ -203,16 +203,6 @@ The dismiss action doesn’t close the window if you call it from a modal — li
 
 ## Topics
 
-### Creating a window group
-- [init(content: () -> Content)](windowgroup/init(content:).md)
-  Creates a window group.
-- [init(_:content:)](windowgroup/init(_:content:).md)
-  Creates a window group with a text view title.
-### Identifying a window group
-- [init(id: String, content: () -> Content)](windowgroup/init(id:content:).md)
-  Creates a window group with an identifier.
-- [init(_:id:content:)](windowgroup/init(_:id:content:).md)
-  Creates a window group with a text view title and an identifier.
 ### Creating a data-driven window group
 - [init<D, C>(for: D.Type, content: (Binding<D?>) -> C)](windowgroup/init(for:content:).md)
   Creates a data-presenting window group.
@@ -236,6 +226,15 @@ The dismiss action doesn’t close the window if you call it from a modal — li
 ### Supporting types
 - [struct PresentedWindowContent](presentedwindowcontent.md)
   A view that represents the content of a presented window.
+### Deprecated
+- [init(content: () -> Content)](windowgroup/init(content:).md)
+  Creates a window group.
+- [init(_:content:)](windowgroup/init(_:content:).md)
+  Creates a window group with a text view title.
+- [init(id: String, content: () -> Content)](windowgroup/init(id:content:).md)
+  Creates a window group with an identifier.
+- [init(_:id:content:)](windowgroup/init(_:id:content:).md)
+  Creates a window group with a text view title and an identifier.
 ### Initializers
 - [init(_:id:makeContent:)](windowgroup/init(_:id:makecontent:).md)
   Creates a window group with a text view title and an identifier.

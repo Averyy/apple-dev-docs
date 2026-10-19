@@ -31,11 +31,6 @@ struct OptionKey
 - [Sendable](../swift/sendable.md)
 - [SendableMetatype](../swift/sendablemetatype.md)
 
-## See Also
-
-- [NSParagraphStyle.TextTabType](nsparagraphstyle/texttabtype.md)
-  Constants that specify the type of tab stop.
-
 
 ---
 

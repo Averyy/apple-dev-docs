@@ -24,10 +24,10 @@ This method is not invoked in macOS 10.7 and later.
 
 ## See Also
 
-- [var hitPart: NSScroller.Part](nsscroller/hitpart.md)
-  A part code indicating the manner in which the scrolling should be performed.
-- [func trackKnob(with: NSEvent)](nsscroller/trackknob(with:).md)
-  Tracks the knob and sends action messages to the receiver’s target.
+- [func drawArrow(NSScroller.Arrow, highlight: Bool)](nsscroller/drawarrow(_:highlight:).md)
+  Draws the scroll button indicated by `arrow`, which is either `NSScrollerIncrementArrow` (the down or right scroll button) or `NSScrollerDecrementArrow` (up or left).
+- [func highlight(Bool)](nsscroller/highlight(_:).md)
+  Highlights or unhighlights the scroll button the user clicked.
 
 
 ---

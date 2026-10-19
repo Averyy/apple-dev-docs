@@ -16,7 +16,7 @@ func activeApplication() -> [AnyHashable : Any]?
 
 #### Return Value
 
-A dictionary with information about the app. The dictionary contains as many of the keys described in [`Deprecated Symbols`](deprecated-symbols.md) as are available.
+A dictionary with information about the app. The dictionary contains as many of the keys described in [`Deprecated symbols`](deprecated-symbols.md) as are available.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Removes aa clock device from the video box.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

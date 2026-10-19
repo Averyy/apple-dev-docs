@@ -168,7 +168,7 @@ SparseSolve(LLT, b, x);
 
 If the [`SparseSolve(_:_:_:)`](sparsesolve(_:_:_:)-416bj.md) function encounters an error, the code prints an error message and terminates, unless you set [`reportError`](sparsesymbolicfactoroptions/reporterror.md) on the initial call to [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md).
 
-The following code iterates over the solution vector, `x`, and prints the solution, `x = 0.10 0.20 0.30 0.40`.
+The following code iterates over the solution vector, `x`, and prints the solution, `x = 0.10 0.20 0.30 0.40`:
 
 **Swift**:
 

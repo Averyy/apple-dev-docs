@@ -30,12 +30,11 @@ You can also use [`bordered`](primitivebuttonstyle/bordered.md) to construct thi
 ### Creating the button style
 - [init()](borderedbuttonstyle/init.md)
   Creates a bordered button style.
+- [init(tint: Color)](borderedbuttonstyle/init(tint:).md)
+  Creates a bordered button style with a tint color.
 ### Supporting types
 - [func makeBody(configuration: BorderedButtonStyle.Configuration) -> some View](borderedbuttonstyle/makebody(configuration:).md)
   Creates a view that represents the body of a button.
-### Deprecated symbols
-- [init(tint: Color)](borderedbuttonstyle/init(tint:).md)
-  Creates a bordered button style with a tint color.
 
 ## Relationships
 

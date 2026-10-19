@@ -2,7 +2,11 @@
 
 **Framework**: UIKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
@@ -47,6 +51,10 @@ Review unsupported symbols and their replacements.
   Attempts to open the resource at the specified URL.
 - [func setNewsstandIconImage(UIImage?)](uiapplication/setnewsstandiconimage(_:).md)
   Sets the icon of a Newsstand app to an image depicting the current issue of a publication.
+- [func canOpenURL(URL) -> Bool](uiapplication/canopenurl(_:).md)
+  Returns a Boolean value that indicates whether an app is available to handle a URL scheme.
+- [func supportedInterfaceOrientations(for: UIWindow?) -> UIInterfaceOrientationMask](uiapplication/supportedinterfaceorientations(for:).md)
+  Returns the default set of interface orientations to use for the view controllers in the specified window.
 ### Deprecated notifications
 - [class let willChangeStatusBarFrameNotification: NSNotification.Name](uiapplication/willchangestatusbarframenotification.md)
   Posted when the app is about to change the frame of the status bar.
@@ -85,6 +93,9 @@ Review unsupported symbols and their replacements.
   The current style of the status bar.
 - [var windows: [UIWindow]](uiapplication/windows.md)
   The app’s visible and hidden windows.
+### Deprecated constants
+- [let UIApplicationOpenNotificationSettingsURLString: String](uiapplicationopennotificationsettingsurlstring.md)
+  A constant that provides the URL string you use to deep link to your app’s notification settings in the Settings app.
 
 
 ---

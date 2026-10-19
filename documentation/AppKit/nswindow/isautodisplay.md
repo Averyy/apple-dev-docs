@@ -42,6 +42,8 @@ Automatic display typically occurs on each pass through the event loop.
   The graphics context associated with the window for the current thread.
 - [var windowRef: UnsafeMutableRawPointer](nswindow/windowref.md)
   The Carbon window reference associated with the window, creating one if necessary.
+- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
+  A Boolean value that indicates whether the toolbar control button is currently displayed.
 
 
 ---

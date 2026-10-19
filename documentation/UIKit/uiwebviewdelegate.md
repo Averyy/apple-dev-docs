@@ -22,7 +22,7 @@ protocol UIWebViewDelegate : NSObjectProtocol
 
 ## Topics
 
-### Loading Content
+### Deprecated
 - [func webView(UIWebView, shouldStartLoadWith: URLRequest, navigationType: UIWebView.NavigationType) -> Bool](uiwebviewdelegate/webview(_:shouldstartloadwith:navigationtype:).md)
   Sent before a web view begins loading a frame.
 - [func webViewDidStartLoad(UIWebView)](uiwebviewdelegate/webviewdidstartload(_:).md)

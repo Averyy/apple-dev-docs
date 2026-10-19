@@ -36,6 +36,8 @@ The value of this property is [`true`](https://developer.apple.com/documentation
   The graphics context associated with the window for the current thread.
 - [var windowRef: UnsafeMutableRawPointer](nswindow/windowref.md)
   The Carbon window reference associated with the window, creating one if necessary.
+- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
+  A Boolean value that indicates whether the toolbar control button is currently displayed.
 
 
 ---

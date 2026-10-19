@@ -6,11 +6,11 @@
 Requests that framework return to the FaceTime call, in order to resume the live assistance request.
 
 **Availability**:
-- iOS 27.2+ (Beta)
-- iPadOS 27.2+ (Beta)
-- Mac Catalyst 27.2+ (Beta)
-- macOS 27.2+ (Beta)
-- visionOS 27.2+ (Beta)
+- iOS 27.2+
+- iPadOS 27.2+
+- Mac Catalyst 27.2+
+- macOS 27.2+
+- visionOS 27.2+
 
 ## Declaration
 

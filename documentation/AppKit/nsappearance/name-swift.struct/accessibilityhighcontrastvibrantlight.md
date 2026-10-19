@@ -34,6 +34,8 @@ Don’t assign an [`NSAppearance`](nsappearance.md) object with this type direct
   A high-contrast version of the standard dark system appearance.
 - [static let accessibilityHighContrastVibrantDark: NSAppearance.Name](nsappearance/name-swift.struct/accessibilityhighcontrastvibrantdark.md)
   A high-contrast version of the dark vibrant appearance.
+- [static let lightContent: NSAppearance.Name](nsappearance/name-swift.struct/lightcontent.md)
+  The standard appearance that can be used by controls in light content areas (not including window-frame areas).
 
 
 ---

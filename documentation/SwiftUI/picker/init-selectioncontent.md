@@ -35,6 +35,8 @@ This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](t
 
 - [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](picker/init(selection:content:label:).md)
   Creates a picker that displays a custom label.
+- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](picker/init(selection:label:content:).md)
+  Creates a picker that displays a custom label.
 
 
 ---

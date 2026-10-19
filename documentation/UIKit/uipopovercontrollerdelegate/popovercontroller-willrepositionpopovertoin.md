@@ -27,6 +27,13 @@ For popovers that were presented using the [`present(from:in:permittedArrowDirec
 - `rect`: On input, the proposed rectangle for the popover. This popover is in the coordinate space of the view in the `view` parameter. If you want to propose a different rectangle for the popover, put the new value in this parameter.
 - `view`: On input, the proposed view for containing the popover. If you want to propose a different view for the popover, put the new view in this parameter.
 
+## See Also
+
+- [func popoverControllerShouldDismissPopover(UIPopoverController) -> Bool](uipopovercontrollerdelegate/popovercontrollershoulddismisspopover(_:).md)
+  Asks the delegate if the popover should be dismissed.
+- [func popoverControllerDidDismissPopover(UIPopoverController)](uipopovercontrollerdelegate/popovercontrollerdiddismisspopover(_:).md)
+  Tells the delegate that the popover was dismissed.
+
 
 ---
 

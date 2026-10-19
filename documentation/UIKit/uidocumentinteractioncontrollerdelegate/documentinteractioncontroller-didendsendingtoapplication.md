@@ -30,6 +30,8 @@ This method is called after the document information has been saved for the spec
 
 - [func documentInteractionController(UIDocumentInteractionController, willBeginSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:willbeginsendingtoapplication:).md)
   Called when a document interaction controller’s document is about to be opened by the specified application.
+- [func documentInteractionController(UIDocumentInteractionController, performAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md)
+  Called when a document interaction controller wants its delegate to perform a specified action with the associated document.
 
 
 ---

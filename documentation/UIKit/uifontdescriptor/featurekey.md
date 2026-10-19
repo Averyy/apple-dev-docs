@@ -30,16 +30,15 @@ Use these keys when retrieving information from one of the dictionaries associat
   A key for identifying the font feature type.
 - [static let selector: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/selector.md)
   A key for identifying the font feature selector.
+- [static let featureIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/featureidentifier.md)
+  A key for identifying a font feature type.
+- [static let typeIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/typeidentifier.md)
+  A key for identifying the font feature selector.
 ### Initializers
 - [init(String)](uifontdescriptor/featurekey/init(_:).md)
   Creates a font feature key.
 - [init(rawValue: String)](uifontdescriptor/featurekey/init(rawvalue:).md)
   Creates a font feature key with the specified raw value.
-### Deprecated
-- [static let featureIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/featureidentifier.md)
-  A key for identifying a font feature type.
-- [static let typeIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/typeidentifier.md)
-  A key for identifying the font feature selector.
 
 ## Relationships
 

@@ -37,6 +37,8 @@ You can use this method to remove any additional views or content you placed und
   Called when a document interaction controller is about to display an Open In menu.
 - [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissopeninmenu(_:).md)
   Called when a document interaction controller has dismissed its Open In menu.
+- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
+  Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 
 
 ---

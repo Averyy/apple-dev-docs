@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A region that is occluded by an element.
+A region that covers part of your view.
 
 **Availability**:
 - iOS 27.1+
@@ -20,10 +20,14 @@ A region that is occluded by an element.
 static var occlusion: ReservedRegion.Kind { get }
 ```
 
+#### Discussion
+
+An occlusion region is an area where an element, such as the Dynamic Island, a camera, or window controls, cover your content. Place important views and controls outside this area so people can see and use them.
+
 ## See Also
 
 - [static var division: ReservedRegion.Kind](reservedregion/kind-swift.struct/division.md)
-  A region where content should split into two separate regions.
+  A region that splits your view into separate parts.
 
 
 ---

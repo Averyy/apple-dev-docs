@@ -45,7 +45,7 @@ enum Material
   The material to show under a window’s background.
 - [NSVisualEffectView.Material.underPageBackground](nsvisualeffectview/material-swift.enum/underpagebackground.md)
   The material for the area behind the pages of a document.
-### Deprecated Materials
+### Deprecated
 - [NSVisualEffectView.Material.appearanceBased](nsvisualeffectview/material-swift.enum/appearancebased.md)
   A default material for the view’s effective appearance.
 - [NSVisualEffectView.Material.light](nsvisualeffectview/material-swift.enum/light.md)

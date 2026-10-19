@@ -32,14 +32,16 @@ The following figure shows two systems of equations where the coefficient matrix
 
 ![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703899@2x.png)
 
-The following code solves these two systems by creating a symbolic factorization that’s common to both coefficient matrices. Note that the two coefficient matrices contain different numeric values with different precisions.
+The following code solves these two systems by creating a symbolic factorization that’s common to both coefficient matrices. Note that the two coefficient matrices contain different numeric values with different precisions:
+
+**Swift**:
 
 ```swift
-/// Define the sparsity pattern of matrices `A0` and `A1`.
+// Define the sparsity pattern of matrices `A0` and `A1`.
 let rowIndices: [Int32] =    [ 0, 1, 1, 2]
 let columnIndices: [Int32] = [ 2, 0, 2, 1]
 
-/// Create the single-precision coefficient matrix _A0_.
+// Create the single-precision coefficient matrix `A0` from coordinate (COO) arrays.
 let a0Values: [Float] = [10, 20, 5, 50]
 let A0 = SparseConvertFromCoordinate(3, 3,
                                      4, 1,
@@ -47,7 +49,7 @@ let A0 = SparseConvertFromCoordinate(3, 3,
                                      rowIndices, columnIndices,
                                      a0Values)
 
-/// Create the double-precision coefficient matrix _A1_.
+// Create the double-precision coefficient matrix `A1` from coordinate (COO) arrays.
 let a1Values: [Double] = [5, 10, 2.5, 25]
 let A1 = SparseConvertFromCoordinate(3, 3,
                                      4, 1,
@@ -55,15 +57,15 @@ let A1 = SparseConvertFromCoordinate(3, 3,
                                      rowIndices, columnIndices,
                                      a1Values)
 
-/// Compute the symbolic factorization from the structure of either coefficient matrix.
+// Compute the symbolic factorization from the structure of either coefficient matrix.
 let structure = A0.structure
 let symbolicFactorization = SparseFactor(SparseFactorizationQR,
                                          structure)
 
-/// Factorize _A0_ using the symbolic factorization.
+// Compute the factors of `A0` using the symbolic factorization.
 let factorization0 = SparseFactor(symbolicFactorization, A0)
 
-/// Solve _A0 · x = b0_ in place.
+// Solve `A0 · x = b0` in place.
 var b0Values: [Float] = [30, 35, 100]
 b0Values.withUnsafeMutableBufferPointer { bPtr in
     let xb = DenseVector_Float(count: 3,
@@ -72,10 +74,10 @@ b0Values.withUnsafeMutableBufferPointer { bPtr in
     SparseSolve(factorization0, xb)
 }
 
-/// Factorize _A1_ using the symbolic factorization.
+// Compute the factors of `A1` using the symbolic factorization.
 let factorization1 = SparseFactor(symbolicFactorization, A1)
 
-/// Solve _A1 · x = b1_ in place.
+// Solve `A1 · x = b1` in place.
 var b1Values: [Double] = [60, 70, 200]
 b1Values.withUnsafeMutableBufferPointer { bPtr in
     let xb = DenseVector_Double(count: 3,
@@ -84,10 +86,76 @@ b1Values.withUnsafeMutableBufferPointer { bPtr in
     SparseSolve(factorization1, xb)
 }
 
+print(b0Values) // Prints "[1.0, 2.0, 3.0]".
+print(b1Values) // Prints "[4.0, 8.0, 12.0]".
 SparseCleanup(A0)
 SparseCleanup(A1)
 SparseCleanup(factorization0)
 SparseCleanup(factorization1)
+```
+
+**Objective-C**:
+
+```objc
+// Define the sparsity pattern of matrices `A0` and `A1`.
+int rowIndices[]    = {0, 1, 1, 2};
+int columnIndices[] = {2, 0, 2, 1};
+
+// Create the single-precision coefficient matrix `A0` from coordinate (COO) arrays.
+float a0Values[] = {10, 20, 5, 50};
+SparseMatrix_Float A0 = SparseConvertFromCoordinate(3, 3,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    a0Values);
+
+// Create the double-precision coefficient matrix `A1` from coordinate (COO) arrays.
+double a1Values[] = {5, 10, 2.5, 25};
+SparseMatrix_Double A1 = SparseConvertFromCoordinate(3, 3,
+                                                     4, 1,
+                                                     (SparseAttributes_t){0},
+                                                     rowIndices, columnIndices,
+                                                     a1Values);
+
+// Compute the symbolic factorization from the structure of either coefficient matrix.
+SparseSymbolicFactorOptions sfoptions = {
+    .control              = SparseDefaultControl,
+    .orderMethod          = SparseOrderDefault,
+    .order                = NULL,
+    .ignoreRowsAndColumns = NULL,
+    .malloc               = malloc,
+    .free                 = free,
+    .reportError          = NULL
+};
+SparseOpaqueSymbolicFactorization symbolicFactorization = SparseFactor(SparseFactorizationQR,
+                                                                       A0.structure,
+                                                                       sfoptions);
+
+// Compute the factors of `A0` using the symbolic factorization.
+SparseOpaqueFactorization_Float factorization0 = SparseFactor(symbolicFactorization, A0);
+
+// Solve `A0 · x = b0` in place.
+float b0Values[] = {30, 35, 100};
+DenseVector_Float xb0 = { .count = 3, .data = b0Values };
+SparseSolve(factorization0, xb0);
+
+// Compute the factors of `A1` using the symbolic factorization.
+SparseOpaqueFactorization_Double factorization1 = SparseFactor(symbolicFactorization, A1);
+
+// Solve `A1 · x = b1` in place.
+double b1Values[] = {60, 70, 200};
+DenseVector_Double xb1 = { .count = 3, .data = b1Values };
+SparseSolve(factorization1, xb1);
+
+// Prints "[1, 2, 3]".
+printf("[%g, %g, %g]\n", b0Values[0], b0Values[1], b0Values[2]);
+// Prints "[4, 8, 12]".
+printf("[%g, %g, %g]\n", b1Values[0], b1Values[1], b1Values[2]);
+
+SparseCleanup(A0);
+SparseCleanup(A1);
+SparseCleanup(factorization0);
+SparseCleanup(factorization1);
 ```
 
 On return, `b0Values` contains the values `[1.0, 2.0, 3.0]`, and `b1Values` contains the values `[4.0, 8.0, 12.0]`.

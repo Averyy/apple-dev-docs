@@ -31,6 +31,8 @@ A continuous selection is always followed by a noncontinuous one when the user f
 
 - [func colorPickerViewControllerDidFinish(UIColorPickerViewController)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontrollerdidfinish(_:).md)
   Informs the delegate that the user dismissed the color picker.
+- [func colorPickerViewControllerDidSelectColor(UIColorPickerViewController)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontrollerdidselectcolor(_:).md)
+  Informs the delegate when the user selects a color.
 
 
 ---

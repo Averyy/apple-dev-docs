@@ -24,12 +24,12 @@ The default value of this property is [`false`](https://developer.apple.com/docu
 
 ## See Also
 
-- [var selectedRange: NSRange](uitextview/selectedrange.md)
-  The current selection range of the text view.
 - [func scrollRangeToVisible(NSRange)](uitextview/scrollrangetovisible(_:).md)
   Scrolls the text view until the text in the specified range is visible.
 - [var isSelectable: Bool](uitextview/isselectable.md)
   A Boolean value that indicates whether the text view is selectable.
+- [var selectedRange: NSRange](uitextview/selectedrange.md)
+  The current selection range of the text view.
 
 
 ---

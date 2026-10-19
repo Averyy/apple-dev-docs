@@ -24,8 +24,6 @@ When the value of this property is [`true`](https://developer.apple.com/document
   Returns a new instance of a given standard window button, sized appropriately for a given window style.
 - [func standardWindowButton(NSWindow.ButtonType) -> NSButton?](nswindow/standardwindowbutton(_:).md)
   Returns the window button of a given window button kind in the window’s view hierarchy.
-- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
-  A Boolean value that indicates whether the toolbar control button is currently displayed.
 - [var toolbarStyle: NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.property.md)
   The style that determines the appearance and location of the toolbar in relation to the title bar.
 - [NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.enum.md)

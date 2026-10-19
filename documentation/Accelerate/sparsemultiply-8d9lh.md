@@ -28,6 +28,8 @@ Use this function to multiply a sparse matrix by a dense matrix. The following e
 
 Call [`SparseMultiply(_:_:_:)`](sparsemultiply(_:_:_:)-8d9lh.md) to calculate the result.
 
+**Swift**:
+
 ```swift
 let rowCount = Int32(4)
 let columnCount = Int32(4)
@@ -37,7 +39,7 @@ let rowIndices: [Int32] = [0, 3, 0, 3]
 let columnIndices: [Int32] = [0, 0, 3, 3]
 let data = [1.0, 4.0, 13.0, 16.0]
 
-/// The _A_ in _Y=AX_.
+// The sparse matrix `A` in `Y=AX`.
 let A = SparseConvertFromCoordinate(rowCount, columnCount,
                                     blockCount, blockSize,
                                     SparseAttributes_t(),
@@ -47,23 +49,23 @@ defer {
     SparseCleanup(A)
 }
 
-/// The values for _X_ in _Y=AX_.
+// The values for `X` in `Y=AX`.
 var xValues = [10.0, -1.0, -1.0, 10.0,
                100.0, -1.0, -1.0, 100.0]
 
-/// The values for _Y_ in _Y=AX_.
+// The values for `Y` in `Y=AX`.
 let yValues = [Double](unsafeUninitializedCapacity: xValues.count) {
     resultBuffer, count in
     
     xValues.withUnsafeMutableBufferPointer { denseMatrixPtr in
-        /// The _X_ in _Y=AX_.
+        // The dense matrix `X` in `Y=AX`.
         let X = DenseMatrix_Double(rowCount: 4,
                                    columnCount: 2,
                                    columnStride: 4,
                                    attributes: SparseAttributes_t(),
                                    data: denseMatrixPtr.baseAddress!)
         
-        /// The _Y_ in _Y=AX_.
+        // The dense matrix `Y` in `Y=AX`.
         let Y = DenseMatrix_Double(rowCount: 4,
                                    columnCount: 2,
                                    columnStride: 4,
@@ -76,9 +78,54 @@ let yValues = [Double](unsafeUninitializedCapacity: xValues.count) {
     count = xValues.count
 }
 
-// On return, `yValues` contains:
-//      `[ 140.0, 0.0, 0.0,  200.0,
-//        1400.0, 0.0, 0.0, 2000.0]`
+print(yValues) // Prints "[140.0, 0.0, 0.0, 200.0, 1400.0, 0.0, 0.0, 2000.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Build the sparse matrix `A` from COO arrays.
+int rowIndices[]    = {0, 3, 0, 3};
+int columnIndices[] = {0, 0, 3, 3};
+double aValues[]    = {1.0, 4.0, 13.0, 16.0};
+
+SparseMatrix_Double A = SparseConvertFromCoordinate(4, 4,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    aValues);
+
+// The dense matrix `X` in `Y=AX`.
+double xValues[] = {10.0, -1.0, -1.0, 10.0,
+                    100.0, -1.0, -1.0, 100.0};
+
+// The dense matrix `Y` in `Y=AX` (output buffer).
+double yValues[8] = {0};
+
+DenseMatrix_Double X = {
+    .rowCount     = 4,
+    .columnCount  = 2,
+    .columnStride = 4,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = xValues
+};
+
+DenseMatrix_Double Y = {
+    .rowCount     = 4,
+    .columnCount  = 2,
+    .columnStride = 4,
+    .attributes   = (SparseAttributes_t){0},
+    .data         = yValues
+};
+
+SparseMultiply(A, X, Y);
+
+// Prints "[140, 0, 0, 200, 1400, 0, 0, 2000]".
+printf("[%g, %g, %g, %g, %g, %g, %g, %g]\n",
+      yValues[0], yValues[1], yValues[2], yValues[3],
+      yValues[4], yValues[5], yValues[6], yValues[7]);
+
+SparseCleanup(A);
 ```
 
 ## Parameters

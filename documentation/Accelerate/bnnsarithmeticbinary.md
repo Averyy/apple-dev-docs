@@ -82,7 +82,7 @@ withUnsafeMutableBytes(of: &fields) { fieldsPtr in
     }
 }
 
-// Prints "[11.0, 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0, 99.0, 110.0]"
+// Prints "[11.0, 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0, 99.0, 110.0]".
 print("Binary Arithmetic: outputs", outputs)
 ```
 

@@ -27,6 +27,9 @@ struct Name
   The pasteboard you use to perform ordinary cut, copy, and paste operations.
 - [static let ruler: NSPasteboard.Name](nspasteboard/name-swift.struct/ruler.md)
   The pasteboard that holds information about paragraph formats and supports the Copy Ruler and Paste Ruler commands that the text editor may implement.
+### Initializers
+- [init(String)](nspasteboard/name-swift.struct/init(_:).md)
+- [init(rawValue: String)](nspasteboard/name-swift.struct/init(rawvalue:).md)
 ### Deprecated
 - [static let dragPboard: NSPasteboard.Name](nspasteboard/name-swift.struct/dragpboard.md)
   The pasteboard that stores data to be moved as the result of a drag operation.
@@ -38,9 +41,6 @@ struct Name
   The pasteboard used for ordinary cut, copy, and paste operations.
 - [static let rulerPboard: NSPasteboard.Name](nspasteboard/name-swift.struct/rulerpboard.md)
   The pasteboard that holds information about paragraph formats and supports the Copy Ruler and Paste Ruler commands implemented in a text editor.
-### Initializers
-- [init(String)](nspasteboard/name-swift.struct/init(_:).md)
-- [init(rawValue: String)](nspasteboard/name-swift.struct/init(rawvalue:).md)
 
 ## Relationships
 

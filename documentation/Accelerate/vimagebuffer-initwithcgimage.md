@@ -35,6 +35,8 @@ The following code shows a passthrough function that accepts a [`CGImage`](https
 
 In this example, the call to [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) populates the [`vImage_CGImageFormat`](vimage_cgimageformat.md) and the [`vImage_Buffer`](vimage_buffer.md) variables with the properties of the source image:
 
+**Swift**:
+
 ```swift
 static func passThrough(sourceImage: CGImage) -> CGImage? {
 
@@ -66,7 +68,39 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
 }
 ```
 
+**Objective-C**:
+
+```objc
++ (CGImageRef)passThroughWithSourceImage:(CGImageRef)sourceImage {
+    vImage_CGImageFormat format = {};
+    vImage_Buffer buffer = {};
+
+    vImageBuffer_InitWithCGImage(
+        &buffer,
+        &format,
+        NULL,
+        sourceImage,
+        kvImageNoFlags);
+
+    // Perform image-processing operations on `buffer`.
+
+    CGImageRef destinationCGImage = vImageCreateCGImageFromBuffer(
+        &buffer,
+        &format,
+        NULL,
+        NULL,
+        kvImageNoFlags,
+        NULL);
+
+    free(buffer.data);
+
+    return destinationCGImage;
+}
+```
+
 Pass a fully initialized [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) converts the source [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image to the format that `format` describes. The following example converts the source image to a three-channel, 8-bit-per-channel RGB image:
+
+**Swift**:
 
 ```swift
 static func passThrough(sourceImage: CGImage) -> CGImage? {
@@ -91,7 +125,7 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
         sourceImage,
         vImage_Flags(kvImageNoFlags))
     
-    // Perform image-processing operations on RGB888 `buffer`.
+    // Perform image-processing operations on the RGB888 `buffer`.
 
     let destinationCGImage = vImageCreateCGImageFromBuffer(
         &buffer,
@@ -102,6 +136,45 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
         nil)
     
     return destinationCGImage?.takeRetainedValue()
+}
+```
+
+**Objective-C**:
+
+```objc
++ (CGImageRef)passThroughRGB888WithSourceImage:(CGImageRef)sourceImage {
+    CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
+    vImage_CGImageFormat format = {
+        .bitsPerComponent = 8,
+        .bitsPerPixel = 8 * 3,
+        .colorSpace = cs,
+        .bitmapInfo = (CGBitmapInfo)kCGImageAlphaNone,
+        .renderingIntent = kCGRenderingIntentDefault
+    };
+
+    vImage_Buffer buffer = {};
+
+    vImageBuffer_InitWithCGImage(
+        &buffer,
+        &format,
+        NULL,
+        sourceImage,
+        kvImageNoFlags);
+
+    // Perform image-processing operations on the RGB888 `buffer`.
+
+    CGImageRef destinationCGImage = vImageCreateCGImageFromBuffer(
+        &buffer,
+        &format,
+        NULL,
+        NULL,
+        kvImageNoFlags,
+        NULL);
+
+    free(buffer.data);
+    CGColorSpaceRelease(cs);
+
+    return destinationCGImage;
 }
 ```
 

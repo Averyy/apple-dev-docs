@@ -26,14 +26,6 @@ In macOS 10.6 and later, use `(NSString *)kUTTypeVCard` instead.
   Ink text data.
 - [static let postScript: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/postscript.md)
   Encapsulated PostScript (EPS) code.
-- [var representedPathExtension: String?](nspasteboard/pasteboardtype/representedpathextension.md)
-  A file type based on the passed pasteboard type.
-- [static func fileContentsType(forPathExtension: String) -> NSPasteboard.PasteboardType!](nspasteboard/pasteboardtype/filecontentstype(forpathextension:).md)
-  Returns a pasteboard type based on the passed file type.
-- [static func fileNameType(forPathExtension: String) -> NSPasteboard.PasteboardType!](nspasteboard/pasteboardtype/filenametype(forpathextension:).md)
-  Returns a pasteboard type based on the passed file type.
-- [static func representedPathExtensions(from: [NSPasteboard.PasteboardType]) -> [String]?](nspasteboard/pasteboardtype/representedpathextensions(from:).md)
-  Returns an array of file types based on the passed pasteboard types.
 
 
 ---

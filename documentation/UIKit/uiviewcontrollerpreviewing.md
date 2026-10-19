@@ -31,12 +31,11 @@ To learn about 3D Touch, read [`Adopting 3D Touch on iPhone`](https://developer.
 
 ## Topics
 
-### Configuring a source view for a 3D Touch previewing view controller
+### Deprecated
 - [var sourceRect: CGRect](uiviewcontrollerpreviewing/sourcerect.md)
   The rectangle, in the source view’s coordinate system, that responds to a 3D Touch by a user and remains visually sharp while surrounding content blurs.
 - [var previewingGestureRecognizerForFailureRelationship: UIGestureRecognizer](uiviewcontrollerpreviewing/previewinggesturerecognizerforfailurerelationship.md)
   A gesture recognizer suitable for setting up failure requirements for a preview’s (peek’s) gestures.
-### Accessing properties of a 3D Touch previewing view controller
 - [var delegate: any UIViewControllerPreviewingDelegate](uiviewcontrollerpreviewing/delegate.md)
   The previewing view controller’s delegate for managing preview (peek) and commit (pop) view controllers.
 - [var sourceView: UIView](uiviewcontrollerpreviewing/sourceview.md)

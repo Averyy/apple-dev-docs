@@ -58,8 +58,6 @@ In earlier versions of iOS, you used these constants in the [`statusBarOrientati
 
 ## See Also
 
-- [func application(UIApplication, supportedInterfaceOrientationsFor: UIWindow?) -> UIInterfaceOrientationMask](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md)
-  Asks the delegate for the interface orientations to use for the view controllers in the specified window.
 - [struct UIInterfaceOrientationMask](uiinterfaceorientationmask.md)
   Constants that specify a view controller’s supported interface orientations.
 - [class let invalidInterfaceOrientationException: NSExceptionName](uiapplication/invalidinterfaceorientationexception.md)

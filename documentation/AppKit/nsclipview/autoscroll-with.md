@@ -24,10 +24,10 @@ Never invoke this method directly; instead, the [`NSScrollView`](nsscrollview.md
 
 - [func scroll(to: NSPoint)](nsclipview/scroll(to:).md)
   Changes the origin of the clip view’s bounds rectangle to `newOrigin`.
-- [func constrainScroll(NSPoint) -> NSPoint](nsclipview/constrainscroll(_:).md)
-  Returns a scroll point adjusted from the proposed new origin, if necessary, to guarantee the view will lie within its document view.
 - [func constrainBoundsRect(NSRect) -> NSRect](nsclipview/constrainboundsrect(_:).md)
   Constrains the bounds of the clip view while the user is magnifying and scrolling.
+- [func constrainScroll(NSPoint) -> NSPoint](nsclipview/constrainscroll(_:).md)
+  Returns a scroll point adjusted from the proposed new origin, if necessary, to guarantee the view will lie within its document view.
 
 
 ---

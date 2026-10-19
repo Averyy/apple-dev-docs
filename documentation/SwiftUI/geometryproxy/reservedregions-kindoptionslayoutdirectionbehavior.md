@@ -20,18 +20,22 @@ Returns an array of reserved regions that match the selection options you specif
 func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions = [], layoutDirectionBehavior: LayoutDirectionBehavior = .mirrors) -> [ReservedRegion]
 ```
 
+#### Return Value
+
+The reserved regions that overlap the view, with frames in the view’s coordinate space.
+
 #### Discussion
 
-A reserved region indicates an area within a view’s coordinate space that an entity, such as the device hardware, reserves. Arrange the view’s content to account for this region. Each region describes a frame, margins, active state, and an identifier.
+A reserved region is an area of your view that an entity reserves, such as the device hardware. Arrange your view’s content around it. Each region describes a frame, margins, active state, and an identifier.
 
 There are two categories of reserved regions:
 
-- **[`occlusion`](reservedregion/kind-swift.struct/occlusion.md)**: An area where an element, such as the Dynamic Island, a camera, or window controls, occludes content.
-- **[`division`](reservedregion/kind-swift.struct/division.md)**: An area where content splits into separate regions, such as at the fold of a hinge.
+- **[`occlusion`](reservedregion/kind-swift.struct/occlusion.md)**: An area where an element, such as the Dynamic Island, a camera, or window controls, cover your content. Place content outside this area.
+- **[`division`](reservedregion/kind-swift.struct/division.md)**: An area where content splits into separate regions, such as at the fold of a hinge. Arrange your content on both sides of this area.
 
-Read reserved regions using the [`reservedRegions(kind:options:layoutDirectionBehavior:)`](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md) method, which returns all of the reserved regions that currently intersect your view regardless of whether they are currently active.
+Call this method on the proxy of a [`GeometryReader`](geometryreader.md) to get the reserved regions that overlap your view. By default, the method returns only the active regions. To also get the inactive regions, pass [`includeInactive`](reservedregion/queryoptions/includeinactive.md) for the `options` parameter.
 
-In the example below, a custom [`Layout`](layout.md) uses the reserved regions from a [`GeometryProxy`](geometryproxy.md) instance to handle positioning its subviews away from any regions that intersect it.
+In the following example, `RegionAvoidingLayout` is a layout that you write yourself. It takes the reserved regions from the geometry proxy, and places each view it contains in a spot that doesn’t overlap a region:
 
 ```swift
 GeometryReader { proxy in
@@ -42,14 +46,22 @@ GeometryReader { proxy in
             ItemView(item)
         }
     }
-}    
+}
 ```
 
-When you manually position your content to incorporate reserved regions, take care to consider right-to-left layout directions. Reserved regions are typically in a fixed coordinate space; the absolute location of the camera of a device doesn’t flip depending on a person’s preferred language. By default, the system mirrors the geometry of these regions automatically before it provides them to SwiftUI APIs.
+Make sure a region’s frame and your layout’s positions use the same coordinates. The frame is measured from the top-leading corner of the view you read it from, but the `bounds` that a layout receives in [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) don’t always start at `(0, 0)`. Do your calculations from `(0, 0)`, and add `bounds.origin` only when you place each view.
 
-For example, a [`Layout`](layout.md) automatically flips the geometry of the subviews you place. By mirroring the geometry of the reserved regions, your layout doesn’t need to account for the layout direction when determining whether a subview intersects the region.
+With some right-to-left languages, SwiftUI flips the left and right sides of a layout. To keep reserved regions consistent with the flipped layout, the system mirrors the frames of reserved regions by default before it gives them to you. A layout that flips automatically, such as a custom [`Layout`](layout.md), lines up with the mirrored frames without extra work.
 
-There may be cases when you need to make more manual adjustments for the frames of reserved regions for right-to-left layout directions. In these cases, you can provide the [`LayoutDirectionBehavior.fixed`](layoutdirectionbehavior/fixed.md) value to the method and the system doesn’t mirror the frames of the regions.
+If you position content in a way that doesn’t flip with the layout direction, pass [`LayoutDirectionBehavior.fixed`](layoutdirectionbehavior/fixed.md) for the `layoutDirectionBehavior` parameter to get the unmirrored frames.
+
+For more information, see [`ReservedRegion`](reservedregion.md).
+
+## Parameters
+
+- `kind`: The kind of reserved region to return, such as [`occlusion`](reservedregion/kind-swift.struct/occlusion.md) or [`division`](reservedregion/kind-swift.struct/division.md).
+- `options`: Options that change which regions the method returns. By default, the method returns only active regions. Pass [`includeInactive`](reservedregion/queryoptions/includeinactive.md) to also return regions that aren’t currently active.
+- `layoutDirectionBehavior`: A value that determines how the method handles right-to-left layout directions. By default, the system mirrors the frames of the regions. Pass [`LayoutDirectionBehavior.fixed`](layoutdirectionbehavior/fixed.md) to get unmirrored frames.
 
 ## See Also
 

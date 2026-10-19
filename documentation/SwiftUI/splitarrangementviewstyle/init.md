@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
+Creates a split arrangement style.
+
 **Availability**:
 - iOS 27.1+
 - iPadOS 27.1+

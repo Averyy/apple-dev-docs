@@ -44,12 +44,8 @@ Return this type from [`preferredVerticalBarBehavior`](uiviewcontroller/preferre
 
 ## See Also
 
-- [var preferredVerticalBarBehavior: UIVerticalBarBehavior](uiviewcontroller/preferredverticalbarbehavior.md)
-  The vertical bar behavior that this view controller prefers.
-- [var childForPreferredVerticalBarBehavior: UIViewController?](uiviewcontroller/childforpreferredverticalbarbehavior.md)
-  Which child view controller, if any, should control the vertical bar behavior.
-- [func setNeedsUpdateOfVerticalBarConfiguration()](uiviewcontroller/setneedsupdateofverticalbarconfiguration.md)
-  Signals to the system that the preferred vertical bar configuration, such as its behavior, has changed.
+- [enum UIVerticalBarCompressionBehavior](uiverticalbarcompressionbehavior.md)
+  How bars compress when different types of bars are hosted together and space is constrained.
 
 
 ---

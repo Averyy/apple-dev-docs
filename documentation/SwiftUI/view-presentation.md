@@ -122,12 +122,6 @@ For more information about how to use these modifiers, see [`Modal presentations
   Presents a system dialog allowing the user to export a collection of `Transferable` items to files on disk.
 - [func fileExporterFilenameLabel(_:)](view/fileexporterfilenamelabel(_:).md)
   On macOS, configures the `fileExporter` with a label for the file name field.
-- [func fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:).md)
-  Presents a system dialog for exporting a document that’s stored in a value type, like a structure, to a file on disk.
-- [func fileExporter(isPresented:documents:contentType:onCompletion:)](view/fileexporter(ispresented:documents:contenttype:oncompletion:).md)
-  Presents a system dialog for exporting a collection of value type documents to files on disk.
-- [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
-  Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 ### File importer
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
   Presents a system dialog for allowing the user to import multiple files.
@@ -262,6 +256,13 @@ For more information about how to use these modifiers, see [`Modal presentations
 ### Security
 - [func certificateSheet(trust: Binding<SecTrust?>, title: String?, message: String?, help: URL?) -> some View](view/certificatesheet(trust:title:message:help:).md)
   Displays a certificate sheet using the provided certificate trust.
+### Deprecated
+- [func fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:).md)
+  Presents a system dialog for exporting a document that’s stored in a value type, like a structure, to a file on disk.
+- [func fileExporter(isPresented:documents:contentType:onCompletion:)](view/fileexporter(ispresented:documents:contenttype:oncompletion:).md)
+  Presents a system dialog for exporting a collection of value type documents to files on disk.
+- [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
+  Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 
 ## See Also
 

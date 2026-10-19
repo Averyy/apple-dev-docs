@@ -19,9 +19,9 @@ Specifies that the box is a separator.
 ## See Also
 
 - [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
+- [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
 - [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
 - [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
-- [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
 
 
 ---

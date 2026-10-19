@@ -6,7 +6,7 @@
 The identifier for a terminal type of headphones.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

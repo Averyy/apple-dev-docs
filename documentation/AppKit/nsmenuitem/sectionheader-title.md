@@ -22,11 +22,6 @@ Use section headers to provide context to a group of menu items. Items created u
 
 - `title`: The title string to display on the section header.
 
-## See Also
-
-- [static func sectionHeader(withTitle: String) -> NSMenuItem](nsmenuitem/sectionheader(withtitle:).md)
-  Returns a menu item representing a section header for a logical grouping of menu commands.
-
 
 ---
 

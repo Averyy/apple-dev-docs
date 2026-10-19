@@ -22,11 +22,11 @@ Browse notable changes to [`ARKit`](https://developer.apple.com/documentation/ar
 
 ##### Ios
 
-- Drive AR views from a rotation angle instead of a `UIInterfaceOrientation` with doc://com.apple.documentation/documentation/arkit/arsession/viewrotationangle and the new orientation-independent variants on [`ARCamera`](https://developer.apple.com/documentation/arkit/arcamera) and [`ARFrame`](https://developer.apple.com/documentation/arkit/arframe).
+- Drive AR views from a rotation angle instead of a `UIInterfaceOrientation` with [`viewRotationAngle`](https://developer.apple.com/documentation/arkit/arsession/viewrotationangle-8847g) and the new orientation-independent variants on [`ARCamera`](https://developer.apple.com/documentation/arkit/arcamera) and [`ARFrame`](https://developer.apple.com/documentation/arkit/arframe).
 - Attach an [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) to a specific `CALayer` with [`viewLayer`](https://developer.apple.com/documentation/arkit/arsession/viewlayer).
 - Receive `AVFoundation` metadata objects, such as detected faces, alongside camera frames with [`metadataObjects`](https://developer.apple.com/documentation/arkit/arframe/metadataobjects).
 - Detect and track physical objects in world-tracking sessions with [`trackingObjects`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/trackingobjects).
-- Generate environment textures automatically with doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration/environmenttexturingenabled.
+- Generate environment textures during face-tracking sessions from rear-camera imagery with [`isEnvironmentTexturingEnabled`](https://developer.apple.com/documentation/arkit/arfacetrackingconfiguration/isenvironmenttexturingenabled).
 
 #### June 2025
 
@@ -34,7 +34,7 @@ Browse notable changes to [`ARKit`](https://developer.apple.com/documentation/ar
 
 - Bring ARKit to Mac apps by using [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider) to query device pose and manage world anchors on macOS.
 - Classify surfaces consistently across plane, mesh, and room anchors using the unified [`SurfaceClassification`](https://developer.apple.com/documentation/arkit/surfaceclassification) enumeration.
-- Opt into higher-fidelity hand data with doc://com.apple.documentation/documentation/arkit/handanchor/fidelity.
+- Opt into higher-fidelity hand data with [`fidelity`](https://developer.apple.com/documentation/arkit/handanchor/fidelity-swift.property).
 
 ##### Spatial Accessories
 

@@ -43,8 +43,6 @@ struct OpenExternalURLOptionsKey
 
 - [func open(URL, options: [UIApplication.OpenExternalURLOptionsKey : Any], completionHandler: ((Bool) -> Void)?)](uiapplication/open(_:options:completionhandler:).md)
   Attempts to asynchronously open the resource at the specified URL.
-- [func canOpenURL(URL) -> Bool](uiapplication/canopenurl(_:).md)
-  Returns a Boolean value that indicates whether an app is available to handle a URL scheme.
 
 
 ---

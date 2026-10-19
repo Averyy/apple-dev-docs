@@ -56,8 +56,6 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/human-i
 - [struct ToolbarDefaultItemKind](toolbardefaultitemkind.md)
   A kind of toolbar item a `View` adds by default.
 ### Setting toolbar visibility
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
-  Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
   Specifies the visibility of a bar managed by SwiftUI.
 - [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
@@ -66,14 +64,14 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/human-i
   The placement of a toolbar.
 - [struct ContentToolbarPlacement](contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+  Specifies the visibility of a bar managed by SwiftUI.
 ### Specifying the role of toolbar content
 - [func toolbarRole(ToolbarRole) -> some View](view/toolbarrole(_:).md)
   Configures the semantic role for the content populating the toolbar.
 - [struct ToolbarRole](toolbarrole.md)
   The purpose of content that populates the toolbar.
 ### Styling a toolbar
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
-  Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 - [func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View](view/toolbarcolorscheme(_:for:).md)
   Specifies the preferred color scheme of a bar managed by SwiftUI.
 - [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](view/toolbarforegroundstyle(_:for:).md)
@@ -88,6 +86,8 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/human-i
   The label style of a toolbar.
 - [struct SpacerSizing](spacersizing.md)
   A type which defines how spacers should size themselves.
+- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
+  Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 ### Configuring the toolbar title display mode
 - [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
   Configures the toolbar title display mode for this view.

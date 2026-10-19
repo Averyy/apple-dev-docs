@@ -69,6 +69,9 @@ The `NSSlider` class uses the [`NSSliderCell`](nsslidercell.md) class to impleme
   The position where a linear slider’s tick marks appear (above, below, leading, or trailing).
 - [func tickMarkValue(at: Int) -> Double](nsslider/tickmarkvalue(at:).md)
   Returns the slider’s value represented by the tick mark at the specified index.
+### Deprecated
+- [Deprecated symbols](nsslider-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Instance Properties
 - [var neutralValue: Double](nsslider/neutralvalue.md)
   The value this slider will be filled from. This slider will be filled from its `neutralValue` to its current value. If `neutralValue` has not been explicitly set before, access to `neutralValue` will return `minValue`.

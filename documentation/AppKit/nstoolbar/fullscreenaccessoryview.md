@@ -24,6 +24,10 @@ To customize this behavior, you can implement the [`NSWindow`](nswindow.md) dele
 
 ## See Also
 
+- [var showsBaselineSeparator: Bool](nstoolbar/showsbaselineseparator.md)
+  A Boolean value that indicates whether the toolbar shows the separator between the toolbar and the main window contents.
+- [var configuration: [String : Any]](nstoolbar/configuration.md)
+  A dictionary containing the current configuration details for the toolbar.
 - [var centeredItemIdentifier: NSToolbarItem.Identifier?](nstoolbar/centereditemidentifier.md)
   The item to display in the center of the toolbar.
 - [var fullScreenAccessoryViewMinHeight: CGFloat](nstoolbar/fullscreenaccessoryviewminheight.md)
@@ -32,8 +36,6 @@ To customize this behavior, you can implement the [`NSWindow`](nswindow.md) dele
   The maximum height of the toolbar’s full screen accessory view, in points.
 - [var sizeMode: NSToolbar.SizeMode](nstoolbar/sizemode-swift.property.md)
   The toolbar’s size mode.
-- [NSToolbar.SizeMode](nstoolbar/sizemode-swift.enum.md)
-  Constants that specify toolbar display modes.
 
 
 ---

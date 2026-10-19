@@ -42,10 +42,6 @@ Progress indicators can be determinate or indeterminate. A determinate indicator
 ### Setting the appearance
 - [var controlSize: NSControl.ControlSize](nsprogressindicator/controlsize.md)
   The size of the progress indicator.
-- [var controlTint: NSControlTint](nsprogressindicator/controltint.md)
-  The progress indicator’s control tint.
-- [var isBezeled: Bool](nsprogressindicator/isbezeled.md)
-  A Boolean that indicates whether the progress indicator’s frame has a three-dimensional bezel.
 - [var isIndeterminate: Bool](nsprogressindicator/isindeterminate.md)
   A Boolean that indicates whether the progress indicator is indeterminate.
 - [var style: NSProgressIndicator.Style](nsprogressindicator/style-swift.property.md)
@@ -57,6 +53,9 @@ Progress indicators can be determinate or indeterminate. A determinate indicator
 ### Constants
 - [NSProgressIndicator.Style](nsprogressindicator/style-swift.enum.md)
   Constants that specify the progress indicator’s style.
+### Deprecated
+- [Deprecated symbols](nsprogressindicator-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

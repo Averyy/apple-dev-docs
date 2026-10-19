@@ -31,8 +31,6 @@ This function may be called from any thread of your app.
   Returns the current graphics context.
 - [func UIGraphicsPushContext(CGContext)](uigraphicspushcontext(_:).md)
   Makes the specified graphics context the current context.
-- [func UIGraphicsBeginImageContextWithOptions(CGSize, Bool, CGFloat)](uigraphicsbeginimagecontextwithoptions(_:_:_:).md)
-  Creates a bitmap-based graphics context with the specified options.
 - [func UIRectClip(CGRect)](uirectclip(_:).md)
   Modifies the current clipping path by intersecting it with the specified rectangle.
 

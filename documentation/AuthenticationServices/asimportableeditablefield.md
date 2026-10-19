@@ -20,7 +20,7 @@ struct ASImportableEditableField
 
 #### Overview
 
-Examples of editable fields include `ASImportableCredential/BasicAuthentication/username` and [`password`](asimportablecredential/basicauthentication/password.md) in [`ASImportableCredential.BasicAuthentication`](asimportablecredential/basicauthentication.md).
+Examples of editable fields include [`userName`](asimportablecredential/basicauthentication/username.md) and [`password`](asimportablecredential/basicauthentication/password.md) in [`ASImportableCredential.BasicAuthentication`](asimportablecredential/basicauthentication.md).
 
 This type is a representation of `EditableField` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `EditableField` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/foundation/jsondecoder/decode(_:from:)).
 

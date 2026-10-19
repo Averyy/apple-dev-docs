@@ -36,24 +36,88 @@ Note that the differentiation filter produces a result that contains, on average
 
 The following code shows how to apply the averaging and differentiation components of the Sobel filter to an 8-bit planar buffer:
 
+**Swift**:
+
 ```swift
-let kernelX: [Float] = [1, 2, 1]
-let kernelY: [Float] = [-1, 0, 1]
-let bias = Float(128)
+// The 3 × 3 `PlanarF` source; all pixels = 1.0.
+let source = vImage.PixelBuffer<vImage.PlanarF>(
+    pixelValues: [Float](repeating: 1.0, count: 9),
+    size: .init(width: 3, height: 3))
+
+// A 3×3 destination buffer, all zeros initially.
+let destination = vImage.PixelBuffer<vImage.PlanarF>(
+    pixelValues: [Float](repeating: 0.0, count: 9),
+    size: .init(width: 3, height: 3))
+
+// Separable box-filter kernels: all-ones 1×3, producing a 3×3 sum.
+let kernelX: [Float] = [1, 1, 1]
+let kernelY: [Float] = [1, 1, 1]
+// bias = 0: no offset added to results.
+let bias = Float(0)
+// The `backgroundColor` equals 0; it's unused because `kvImageEdgeExtend` is used.
 let backgroundColor = Float(0)
 
-// `planarSourceBuffer` contains the source image.
-// `destinationBuffer` is the destination buffer, initialized by `vImageBuffer_Init`.
-
-let error = vImageSepConvolve_PlanarF(&planarSourceBuffer,
-                                      &destinationBuffer,
+// Apply the separable convolution; kvImageEdgeExtend replicates edge pixels
+// so every output pixel sums exactly nine source pixels.
+source.withUnsafePointerToVImageBuffer { src in
+    destination.withUnsafePointerToVImageBuffer { dest in
+        _ = vImageSepConvolve_PlanarF(src,
+                                      dest,
                                       nil,
                                       0, 0,
                                       kernelX, UInt32(kernelX.count),
                                       kernelY, UInt32(kernelY.count),
                                       bias,
                                       backgroundColor,
-                                      vImage_Flags(kvImageBackgroundColorFill))
+                                      vImage_Flags(kvImageEdgeExtend))
+    }
+}
+
+// Print the center pixel (index 4 in row-major order).
+// Prints "9.0".
+print(destination.array[4])
+```
+
+**Objective-C**:
+
+```objc
+// The 3 × 3 `PlanarF` source; all pixels = 1.0.
+float src[9] = {1.0f, 1.0f, 1.0f,
+                1.0f, 1.0f, 1.0f,
+                1.0f, 1.0f, 1.0f};
+float dst[9] = {0};
+
+vImage_Buffer srcBuf = {
+    .data     = src,
+    .width    = 3,
+    .height   = 3,
+    .rowBytes = 3 * 4
+};
+
+vImage_Buffer dstBuf = {
+    .data     = dst,
+    .width    = 3,
+    .height   = 3,
+    .rowBytes = 3 * 4
+};
+
+float kernelX[3] = {1.0f, 1.0f, 1.0f};
+float kernelY[3] = {1.0f, 1.0f, 1.0f};
+float bias = 0.0f;
+Pixel_F backgroundColor = 0.0f;
+
+vImageSepConvolve_PlanarF(&srcBuf,
+                          &dstBuf,
+                          NULL,
+                          0, 0,
+                          kernelX, 3,
+                          kernelY, 3,
+                          bias,
+                          backgroundColor,
+                          kvImageEdgeExtend);
+
+// Prints "9.000000".
+printf("%f\n", dst[4]);
 ```
 
 The following image shows two photographs, with the original image on the left, and the image after applying the Sobel filter on the right:

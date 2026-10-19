@@ -32,6 +32,8 @@ var graphicsContext: NSGraphicsContext? { get }
   A Boolean value that indicates whether the window automatically displays views that need to be displayed.
 - [var windowRef: UnsafeMutableRawPointer](nswindow/windowref.md)
   The Carbon window reference associated with the window, creating one if necessary.
+- [var showsToolbarButton: Bool](nswindow/showstoolbarbutton.md)
+  A Boolean value that indicates whether the toolbar control button is currently displayed.
 
 
 ---

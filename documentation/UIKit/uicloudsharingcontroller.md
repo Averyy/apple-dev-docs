@@ -218,10 +218,10 @@ You can also show or hide the permission and access options presented to the use
 ## Topics
 
 ### Creating the cloud sharing controller
-- [init(preparationHandler: (UICloudSharingController, (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](uicloudsharingcontroller/init(preparationhandler:).md)
-  Initializes the CloudKit sharing controller with a preparation handler intending to save a new share record.
 - [init(share: CKShare, container: CKContainer)](uicloudsharingcontroller/init(share:container:).md)
   Initializes the CloudKit sharing view controller with a CloudKit share record and container to manage participants and restrictions.
+- [init(preparationHandler: (UICloudSharingController, (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](uicloudsharingcontroller/init(preparationhandler:).md)
+  Initializes the CloudKit sharing controller with a preparation handler intending to save a new share record.
 ### Customizing the cloud sharing controller behavior
 - [var delegate: (any UICloudSharingControllerDelegate)?](uicloudsharingcontroller/delegate.md)
   A reference to an object that conforms to the CloudKit sharing controller delegate protocol.

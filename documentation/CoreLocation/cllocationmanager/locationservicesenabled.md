@@ -37,7 +37,7 @@ If users disable or deny location services and you attempt to start location upd
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [func locationManager(CLLocationManager, didFailWithError: any Error)](cllocationmanagerdelegate/locationmanager(_:didfailwitherror:).md)
   Tells the delegate that the location manager was unable to retrieve a location value.
 - [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](cllocationmanagerdelegate/locationmanager(_:monitoringdidfailfor:witherror:).md)

@@ -20,7 +20,7 @@ If the delegate does not implement the [`collectionView(_:layout:minimumLineSpac
 
 For a vertically scrolling layout, the value represents the minimum spacing between successive rows. For a horizontally scrolling layout, the value represents the minimum spacing between successive columns. This spacing is not applied to the space between the header view and the first line or between the last line and the footer view. [`Figure 1`](nscollectionviewflowlayout/1402898-minimumlinespacing#1965631.md) shows how the line spacing is applied to rows of unevenly sized items, illustrating how the actual spacing between individual items may be greater than the minimum value.
 
-![None](/images/com.apple.appkit/media-1965631@2x.png)
+![A diagram of two rows of unevenly sized items, three in each row, with a shaded band between them that marks the minimum line spacing. Double-headed arrows show the actual line spacing between the rows in each column, which is larger than the minimum wherever the items are shorter. A legend identifies the arrow style for Actual line spacing and the arrow style for Minimum line spacing.](/images/com.apple.appkit/media-1965631@2x.png)
 
 The default value of this property is `10.0`.
 

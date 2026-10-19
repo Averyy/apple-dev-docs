@@ -24,8 +24,6 @@ A button uses shading to look like it’s sticking out or pushed in. You can set
 
 - [var backgroundColor: NSColor?](nsbuttoncell/backgroundcolor.md)
   The background color of the button.
-- [var gradientType: NSButton.GradientType](nsbuttoncell/gradienttype.md)
-  The gradient of the button’s border.
 - [var imageDimsWhenDisabled: Bool](nsbuttoncell/imagedimswhendisabled.md)
   A Boolean value that indicates if the button’s image and text appear “dim” when the button is disabled.
 - [var isOpaque: Bool](nsbuttoncell/isopaque.md)

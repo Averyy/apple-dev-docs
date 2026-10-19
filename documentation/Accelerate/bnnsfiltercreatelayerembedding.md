@@ -89,9 +89,9 @@ static func embeddingLayer() {
                     outputDescriptor.data!)
     
     // Prints:
-    // [11.0, 12.0, 13.0, 14.0, 15.0,
+    // "[11.0, 12.0, 13.0, 14.0, 15.0,
     //  51.0, 52.0, 53.0, 54.0, 55.0,
-    //  21.0, 22.0, 23.0, 24.0, 25.0]
+    //  21.0, 22.0, 23.0, 24.0, 25.0]".
     print(Array(outputData))
     
     indicesData.deallocate()
@@ -170,11 +170,11 @@ static func embeddingLayerClipByNorm() {
                     outputDescriptor.data!)
     
     // Prints:
-    //     [0.1, 0.3, 0.5,
+    //     "[0.1, 0.3, 0.5,
     //      0.2, 0.4, 0.6,
     //
     //      0.6, 0.5, 0.4,
-    //      0.3, 0.2, 0.1]
+    //      0.3, 0.2, 0.1]".
     print(Array(outputData))
     
     indicesData.deallocate()

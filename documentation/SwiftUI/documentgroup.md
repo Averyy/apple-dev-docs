@@ -158,6 +158,10 @@ The URL can be used, for example, to present the file path of the file name in t
   Creates a document group capable of creating, viewing, and editing documents.
 - [init(viewer: (Document) -> Content, makeReadableDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(viewer:makereadabledocument:).md)
   Creates a document group capable of opening and viewing read-only documents.
+- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
+  Creates a document group for creating and editing file documents.
+- [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
+  Creates a document group capable of viewing file documents.
 ### Editing a document backed by a persistent store
 - [init(editing:contentType:editor:prepareDocument:)](documentgroup/init(editing:contenttype:editor:preparedocument:).md)
   Instantiates a document group for creating and editing documents that store a specific model type.
@@ -168,11 +172,6 @@ The URL can be used, for example, to present the file path of the file name in t
   Instantiates a document group for viewing documents that store a specific model type.
 - [init(viewing: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: () -> Content)](documentgroup/init(viewing:migrationplan:viewer:).md)
   Instantiates a document group for viewing documents described by the last `Schema` in the migration plan.
-### Deprecated
-- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
-  Creates a document group for creating and editing file documents.
-- [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
-  Creates a document group capable of viewing file documents.
 
 ## Relationships
 

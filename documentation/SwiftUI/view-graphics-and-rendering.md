@@ -109,8 +109,6 @@ For more information about using these effects in your app, see [`Drawing and gr
 - [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](view/drawinggroup(opaque:colormode:).md)
   Composites this view’s contents into an offscreen image before final display.
 ### Animations
-- [func animation(_:)](view/animation(_:).md)
-  Applies the given animation to this view when this view changes.
 - [func animation<V>(Animation?, value: V) -> some View](view/animation(_:value:).md)
   Applies the given animation to this view when the specified value changes.
 - [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](view/animation(_:body:).md)
@@ -141,6 +139,8 @@ For more information about using these effects in your app, see [`Drawing and gr
   Applies the given transaction mutation function to all animations used within the view.
 - [func transaction<V>((inout Transaction) -> Void, body: (PlaceholderContentView<Self>) -> V) -> some View](view/transaction(_:body:).md)
   Applies the given transaction mutation function to all animations used within the `body` closure.
+- [func animation(_:)](view/animation(_:).md)
+  Applies the given animation to this view when this view changes.
 
 ## See Also
 

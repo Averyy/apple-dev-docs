@@ -22,8 +22,6 @@ static let open: UIMenu.Identifier
 
 - [static let newItem: UIMenu.Identifier](uimenu/identifier-swift.struct/newitem.md)
   New item menu
-- [static let newScene: UIMenu.Identifier](uimenu/identifier-swift.struct/newscene.md)
-  The New Scene menu.
 - [static let openRecent: UIMenu.Identifier](uimenu/identifier-swift.struct/openrecent.md)
   The Open Recent menu.
 - [static let close: UIMenu.Identifier](uimenu/identifier-swift.struct/close.md)
@@ -32,6 +30,8 @@ static let open: UIMenu.Identifier
   The Print menu.
 - [static let document: UIMenu.Identifier](uimenu/identifier-swift.struct/document.md)
   The Document menu.
+- [static let newScene: UIMenu.Identifier](uimenu/identifier-swift.struct/newscene.md)
+  The New Scene menu.
 
 
 ---

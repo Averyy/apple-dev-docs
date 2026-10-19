@@ -25,13 +25,11 @@ Use [`textFieldStyle(_:)`](view/textfieldstyle(_:).md) to apply the [`bordered`]
 
 ## See Also
 
-- [static var automatic: DefaultTextFieldStyle](textfieldstyle/automatic.md)
-  The default text field style, based on the text field’s context.
-- [static var bordered: BorderedTextFieldStyle](textfieldstyle/bordered.md)
-  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
-- [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
-  A text field style with no decoration.
 - [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)
+  A text field style with a system-defined square border.
+- [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
+  A text field style with a system-defined rounded border.
+- [struct SquareBorderTextFieldStyle](squarebordertextfieldstyle.md)
   A text field style with a system-defined square border.
 
 

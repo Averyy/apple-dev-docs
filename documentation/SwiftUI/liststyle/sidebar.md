@@ -41,6 +41,10 @@ On macOS and iOS, the sidebar list style displays disclosure indicators in the s
   The list style that describes the behavior and appearance of an inset grouped list.
 - [static var plain: PlainListStyle](liststyle/plain.md)
   The list style that describes the behavior and appearance of a plain list.
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedListStyle](liststyle/bordered(alternatesrowbackgrounds:).md)
+  The list style that describes the behavior and appearance of a list with standard border.
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetListStyle](liststyle/inset(alternatesrowbackgrounds:).md)
+  The list style that describes the behavior and appearance of an inset list with optional alternating row backgrounds.
 
 
 ---

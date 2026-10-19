@@ -1,12 +1,16 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AppKit
 
-Review unsupported symbols and their replacements.
+Review symbols that are no longer in active development, and their recommended replacements.
+
+#### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 ## Topics
 
-### Methods
+### Deprecated methods
 - [func lockFocus()](nsview/lockfocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
@@ -33,7 +37,7 @@ Review unsupported symbols and their replacements.
   Initiates a dragging operation from the view, allowing the user to drag a file icon to any application that has window or view objects that accept files.
 - [func dragPromisedFiles(ofTypes: [String], from: NSRect, source: Any, slideBack: Bool, event: NSEvent) -> Bool](nsview/dragpromisedfiles(oftypes:from:source:slideback:event:).md)
   Initiates a dragging operation from the view, allowing the user to drag one or more promised files (or directories) into any application that has window or view objects that accept promised file data.
-### Properties
+### Deprecated properties
 - [var wantsExtendedDynamicRangeOpenGLSurface: Bool](nsview/wantsextendeddynamicrangeopenglsurface.md)
 - [var acceptsTouchEvents: Bool](nsview/acceptstouchevents.md)
   A Boolean value indicating whether the view accepts touch events.
@@ -41,7 +45,7 @@ Review unsupported symbols and their replacements.
   A Boolean value indicating whether drawing commands will produce any results.
 - [var wantsBestResolutionOpenGLSurface: Bool](nsview/wantsbestresolutionopenglsurface.md)
   A Boolean value indicating whether the view wants an OpenGL backing surface with a resolution greater than 1 pixel per point.
-### Notifications
+### Deprecated notifications
 - [class let globalFrameDidChangeNotification: NSNotification.Name](nsview/globalframedidchangenotification.md)
   Posted whenever an `NSView` object that has attached surfaces (that is, `NSOpenGLContext` objects) moves to a different screen, or other cases where the `NSOpenGLContext` object needs to be updated.
 

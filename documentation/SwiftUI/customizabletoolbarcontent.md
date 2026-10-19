@@ -25,6 +25,8 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
 ### Using default options
 - [func defaultCustomization(Visibility, options: ToolbarCustomizationOptions) -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization(_:options:).md)
   Configures the way customizable toolbar items with the default behavior behave.
+- [func defaultCustomization() -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization.md)
+  Configures customizable toolbar content with the default visibility and options.
 ### Customizing behaviors
 - [func axisBehavior(ToolbarItemAxisBehavior) -> some CustomizableToolbarContent](customizabletoolbarcontent/axisbehavior(_:).md)
   The bar axis behavior of the toolbar item.
@@ -43,9 +45,6 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
 ### Adjusting content margins
 - [func contentMarginsRemoved(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/contentmarginsremoved(_:).md)
   Configures whether the content margins are removed.
-### Deprecated
-- [func defaultCustomization() -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization.md)
-  Configures customizable toolbar content with the default visibility and options.
 
 ## Relationships
 

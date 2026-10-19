@@ -23,9 +23,8 @@ To use a Core AI model, your app needs access to the `.aimodel` file at runtime.
 Start by adding the model file to an Xcode target:
 
 1. Drag the `.aimodel` file from the Finder into the Project Navigator in Xcode, or choose File > Add Files to add it.
-2. When the sheet appears, select the targets to include the model under Add to targets, then review the remaining options.
-
-1. Click Finish.
+2. When the sheet appears, select the targets to include the model under Add to targets, then review the remaining options. ![A screenshot of the dialog that appears when adding a file to an Xcode project. It includes options to copy items to the destination or reference files in place, and an Add to targets section where you select which targets include the model file.](/images/com.apple.coreai/add-model-to-project-dialog@2x.png)
+3. Click Finish.
 
 > **Note**: After adding the file, you should also see the model in the Compile Sources build phase for that target.
 
@@ -33,9 +32,8 @@ Start by adding the model file to an Xcode target:
 
 Core AI model integration in Xcode requires the Metal Toolchain, which isn’t installed by default. There are two options for adding the Metal Toolchain:
 
-1. In Xcode, choose Xcode > Settings > Components > Other Components, then click Get to download and install the Metal Toolchain.
-
-1. In Xcode, select any `.aimodel` file in your project and click the Get button in the Metal toolchain download bar that appears.
+1. In Xcode, choose Xcode > Settings > Components > Other Components, then click Get to download and install the Metal Toolchain. ![A screenshot of the Other Components section in Xcode Settings showing the Metal Toolchain available for download, with a Get button to install it.](/images/com.apple.coreai/metal-toolchain-settings@2x.png)
+2. In Xcode, select any `.aimodel` file in your project and click the Get button in the Metal toolchain download bar that appears. ![A dot-aimodel file selected in the Xcode Project Navigator, with a download bar prompting to install the Metal Toolchain.](/images/com.apple.coreai/metal-toolchain-file-inspector@2x.png)
 
 > ❗ **Important**: If the Metal toolchain isn’t included, builds that include `.aimodel` files fail with a missing Metal compiler error.
 
@@ -184,7 +182,7 @@ let expectedFormat = imageDescriptor.pixelFormatType
 
 A `width` or `height` of `-1` indicates a dynamic dimension. The [`pixelFormatType`](imagedescriptor/pixelformattype.md) is an [`OSType`](https://developer.apple.com/documentation/kernel/ostype) your code can compare against the format constants in [`Core Video`](https://developer.apple.com/documentation/corevideo).
 
-Pass a [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer) that matches the expected format and dimensions as an input. Build an [`InferenceFunction.Inputs`](inferencefunction/inputs.md) collection, add the buffer with `InferenceFunction/Inputs/insert(_:for:)`, and run the function:
+Pass a [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer) that matches the expected format and dimensions as an input. Build an [`InferenceFunction.Inputs`](inferencefunction/inputs.md) collection, add the buffer with [`insert(_:for:)`](inferencefunction/inputs/insert(_:for:)-2htrp.md), and run the function:
 
 ```swift
 var pixelBuffer = try makeImageBuffer(

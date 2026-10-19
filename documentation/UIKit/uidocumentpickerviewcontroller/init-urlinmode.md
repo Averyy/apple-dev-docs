@@ -15,6 +15,11 @@
 init(URL url: URL, inMode mode: UIDocumentPickerMode)
 ```
 
+## See Also
+
+- [init(URLs: [URL], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:inmode:).md)
+- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(documenttypes:inmode:).md)
+
 
 ---
 

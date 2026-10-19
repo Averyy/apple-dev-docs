@@ -17,7 +17,7 @@ object PopularityTopChartSongs.Rankings
 ## Properties
 
 - `id` (string): The identifier for the song in Apple Music.
-- `ranking` (number): The ranking of the song in the chart.
+- `ranking` (integer): The ranking of the song in the chart.
 
 ## See Also
 

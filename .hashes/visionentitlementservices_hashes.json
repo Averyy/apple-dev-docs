@@ -1,0 +1,553 @@
+{
+  "metadata": {
+    "last_updated": "2026-10-19T20:45:26.528335",
+    "total_pages": 68,
+    "session_id": "2026-10-19T20:45:23.730130"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices.json": {
+      "hash": "85ea8c66a3b187f6a2f943da89d5230f2bca39bc8795414c06c1a8493c7fcdf4",
+      "last_checked": "2026-10-19T20:45:23.890763",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"2bb0-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/visionentitlementservices.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices": {
+      "hash": "85ea8c66a3b187f6a2f943da89d5230f2bca39bc8795414c06c1a8493c7fcdf4",
+      "last_checked": "2026-10-19T20:45:23.849511",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"2bb0-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/visionentitlementservices.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails.json": {
+      "hash": "408878047eb857fdf1dfb869349f9099b4755245d25dc64f7e27dcae2139ce67",
+      "last_checked": "2026-10-19T20:45:24.099263",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"2aa0-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails": {
+      "hash": "408878047eb857fdf1dfb869349f9099b4755245d25dc64f7e27dcae2139ce67",
+      "last_checked": "2026-10-19T20:45:24.099349",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"2aa0-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement.json": {
+      "hash": "9447abd9ad60fdc1bb5c06c14d85247c03673756e8b8b5c550b7d4a59cb972e7",
+      "last_checked": "2026-10-19T20:45:24.242202",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"5023-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement": {
+      "hash": "9447abd9ad60fdc1bb5c06c14d85247c03673756e8b8b5c550b7d4a59cb972e7",
+      "last_checked": "2026-10-19T20:45:24.242309",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"5023-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/status.json": {
+      "hash": "483276795b0c354d5cd9589d9bfc19d011e7b2d7606c6b8ea29e0f4f6b92903d",
+      "last_checked": "2026-10-19T20:45:24.329075",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"2700-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/status": {
+      "hash": "483276795b0c354d5cd9589d9bfc19d011e7b2d7606c6b8ea29e0f4f6b92903d",
+      "last_checked": "2026-10-19T20:45:24.329159",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"2700-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory.json": {
+      "hash": "91b539147a6d9273d543eb97e07af0cb95e64d4898fc69380b7bdbcf81c89c78",
+      "last_checked": "2026-10-19T20:45:24.362396",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1ce7-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory": {
+      "hash": "91b539147a6d9273d543eb97e07af0cb95e64d4898fc69380b7bdbcf81c89c78",
+      "last_checked": "2026-10-19T20:45:24.362451",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1ce7-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.enum.json": {
+      "hash": "f1f99993b595066100bfe43bfaa9907203f37208d769c64336adb7c835738eaf",
+      "last_checked": "2026-10-19T20:45:24.428460",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1e97-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftenum.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.enum": {
+      "hash": "f1f99993b595066100bfe43bfaa9907203f37208d769c64336adb7c835738eaf",
+      "last_checked": "2026-10-19T20:45:24.428545",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1e97-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftenum.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/approvedentitlements.json": {
+      "hash": "961d274dd1a216793ce60da20253ae6dd89b1cd235cd550cdd74a8ccf3412d37",
+      "last_checked": "2026-10-19T20:45:24.480402",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"16e7-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/approvedentitlements.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/approvedentitlements": {
+      "hash": "961d274dd1a216793ce60da20253ae6dd89b1cd235cd550cdd74a8ccf3412d37",
+      "last_checked": "2026-10-19T20:45:24.480482",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"16e7-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/approvedentitlements.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/expirationtimestamp.json": {
+      "hash": "294de20cf260c3e39888c9aa049b5d1cfc594e60da1924d317baa3bbf0bf1d39",
+      "last_checked": "2026-10-19T20:45:24.552203",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1277-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/expirationtimestamp.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/expirationtimestamp": {
+      "hash": "294de20cf260c3e39888c9aa049b5d1cfc594e60da1924d317baa3bbf0bf1d39",
+      "last_checked": "2026-10-19T20:45:24.552287",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1277-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/expirationtimestamp.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/licensestatus.json": {
+      "hash": "5a32eaf358b9f462bb7b0352f99f61f9a5a76bedfb20a51572b36d45b3be86d1",
+      "last_checked": "2026-10-19T20:45:24.668601",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"15b4-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/licensestatus.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/licensestatus": {
+      "hash": "5a32eaf358b9f462bb7b0352f99f61f9a5a76bedfb20a51572b36d45b3be86d1",
+      "last_checked": "2026-10-19T20:45:24.668681",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"15b4-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/licensestatus.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/isapproved(for:).json": {
+      "hash": "33e72d6423923c57165aef9baaa7bff8d5ffd6f7364418c48231d61a3a7748d5",
+      "last_checked": "2026-10-19T20:45:24.749984",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1d47-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/isapproved-for.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/isapproved(for:)": {
+      "hash": "33e72d6423923c57165aef9baaa7bff8d5ffd6f7364418c48231d61a3a7748d5",
+      "last_checked": "2026-10-19T20:45:24.750067",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1d47-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/isapproved-for.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/shared.json": {
+      "hash": "abd9ed4217c7f3d42b76cb8e64cf309660a91c4ae83d87cee657ada15a91fb1a",
+      "last_checked": "2026-10-19T20:45:24.783240",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"115c-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/shared.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/shared": {
+      "hash": "abd9ed4217c7f3d42b76cb8e64cf309660a91c4ae83d87cee657ada15a91fb1a",
+      "last_checked": "2026-10-19T20:45:24.783319",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"115c-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/shared.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appcomputecategory.json": {
+      "hash": "f039e83482daa35e06eda454d60724411923c66238b7a69b5f177ff4d965f052",
+      "last_checked": "2026-10-19T20:45:24.852756",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12c4-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appcomputecategory.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appcomputecategory": {
+      "hash": "f039e83482daa35e06eda454d60724411923c66238b7a69b5f177ff4d965f052",
+      "last_checked": "2026-10-19T20:45:24.852861",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12c4-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appcomputecategory.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appprotectedcontent.json": {
+      "hash": "a757476bea27b486c29444e1f312541352066d0ed04a2cf628c416769fca2716",
+      "last_checked": "2026-10-19T20:45:24.920473",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12cf-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appprotectedcontent.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appprotectedcontent": {
+      "hash": "a757476bea27b486c29444e1f312541352066d0ed04a2cf628c416769fca2716",
+      "last_checked": "2026-10-19T20:45:24.920556",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12cf-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/appprotectedcontent.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/barcodedetection.json": {
+      "hash": "5feb4bbb6101dd3bc90202c6459e25c4b2bff7ca5b659f72dd96f7c3bd2b5cda",
+      "last_checked": "2026-10-19T20:45:24.986710",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12ae-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/barcodedetection.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/barcodedetection": {
+      "hash": "5feb4bbb6101dd3bc90202c6459e25c4b2bff7ca5b659f72dd96f7c3bd2b5cda",
+      "last_checked": "2026-10-19T20:45:24.986791",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12ae-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/barcodedetection.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/cameraregion.json": {
+      "hash": "200e6a02da0748047972f898e3a01af56b8533148c81b31aa3641c95d7a38dfc",
+      "last_checked": "2026-10-19T20:45:25.050037",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1282-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/cameraregion.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/cameraregion": {
+      "hash": "200e6a02da0748047972f898e3a01af56b8533148c81b31aa3641c95d7a38dfc",
+      "last_checked": "2026-10-19T20:45:25.050126",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1282-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/cameraregion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/maincameraaccess.json": {
+      "hash": "1abf019a6880e11cf76ca13295e6f8bb91d7c482d93b50870c8de4aa7470f1c4",
+      "last_checked": "2026-10-19T20:45:25.149420",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12ae-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/maincameraaccess.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/maincameraaccess": {
+      "hash": "1abf019a6880e11cf76ca13295e6f8bb91d7c482d93b50870c8de4aa7470f1c4",
+      "last_checked": "2026-10-19T20:45:25.149505",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12ae-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/maincameraaccess.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/neuralengineaccess.json": {
+      "hash": "862c8d78980893659f9219595b7eebd082ffe7dfdfcf78d95f092c0cdbbbbd8a",
+      "last_checked": "2026-10-19T20:45:25.185768",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12c4-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/neuralengineaccess.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/neuralengineaccess": {
+      "hash": "862c8d78980893659f9219595b7eebd082ffe7dfdfcf78d95f092c0cdbbbbd8a",
+      "last_checked": "2026-10-19T20:45:25.185872",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12c4-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/neuralengineaccess.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/objecttrackingadjustment.json": {
+      "hash": "7cb96c5eb873b67d4311573a8e3e280ac311be8b063d300566818a4be6359da1",
+      "last_checked": "2026-10-19T20:45:25.248258",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1306-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/objecttrackingadjustment.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/objecttrackingadjustment": {
+      "hash": "7cb96c5eb873b67d4311573a8e3e280ac311be8b063d300566818a4be6359da1",
+      "last_checked": "2026-10-19T20:45:25.248342",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1306-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/objecttrackingadjustment.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/screencapturepassthrough.json": {
+      "hash": "6709059dd75e41a8ad188e43c99678e0c3339473fa3341d1dddcf35ba21389cb",
+      "last_checked": "2026-10-19T20:45:25.354025",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1306-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/screencapturepassthrough.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/screencapturepassthrough": {
+      "hash": "6709059dd75e41a8ad188e43c99678e0c3339473fa3341d1dddcf35ba21389cb",
+      "last_checked": "2026-10-19T20:45:25.354107",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1306-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/screencapturepassthrough.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/sharedcoordinatespace.json": {
+      "hash": "aedec881159418b5d12739fb490dd06c3d7bcbb6320c3e2df141cab599ee3afb",
+      "last_checked": "2026-10-19T20:45:25.386309",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12e5-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/sharedcoordinatespace.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/sharedcoordinatespace": {
+      "hash": "aedec881159418b5d12739fb490dd06c3d7bcbb6320c3e2df141cab599ee3afb",
+      "last_checked": "2026-10-19T20:45:25.386393",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12e5-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/sharedcoordinatespace.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/uvcdeviceaccess.json": {
+      "hash": "88a295878f293f91a030a2103927388ad62375262a50799a266b806ad95564a0",
+      "last_checked": "2026-10-19T20:45:25.451837",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12a3-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/uvcdeviceaccess.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/uvcdeviceaccess": {
+      "hash": "88a295878f293f91a030a2103927388ad62375262a50799a266b806ad95564a0",
+      "last_checked": "2026-10-19T20:45:25.451922",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12a3-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/uvcdeviceaccess.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/visualfidelity.json": {
+      "hash": "e523822c39e791bf32f51aa712fb4b127e05083bb5d2b65582636ee9314f9210",
+      "last_checked": "2026-10-19T20:45:25.568305",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1298-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/visualfidelity.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/visualfidelity": {
+      "hash": "e523822c39e791bf32f51aa712fb4b127e05083bb5d2b65582636ee9314f9210",
+      "last_checked": "2026-10-19T20:45:25.568388",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1298-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/visualfidelity.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/windowbodyfollow.json": {
+      "hash": "a7a81f2029b72bafc7e136c9a267767389cecd926be3f856bb6a3d2b98a2c9b9",
+      "last_checked": "2026-10-19T20:45:25.605494",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12ae-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/windowbodyfollow.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/windowbodyfollow": {
+      "hash": "a7a81f2029b72bafc7e136c9a267767389cecd926be3f856bb6a3d2b98a2c9b9",
+      "last_checked": "2026-10-19T20:45:25.605576",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"12ae-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/windowbodyfollow.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/allcases.json": {
+      "hash": "e9706fd0347c8110bb7df6cfad511eda353aed02e6cd41373e67bd443694d933",
+      "last_checked": "2026-10-19T20:45:25.671873",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"195e-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/allcases.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/allcases": {
+      "hash": "e9706fd0347c8110bb7df6cfad511eda353aed02e6cd41373e67bd443694d933",
+      "last_checked": "2026-10-19T20:45:25.671961",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"195e-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/enterpriseentitlement/allcases.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/status/expired.json": {
+      "hash": "926d1e4dc4d89695dc3568920330b0789e6f31afc5fdd7e78238877d0d7a337f",
+      "last_checked": "2026-10-19T20:45:25.738309",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"117b-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/expired.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/status/expired": {
+      "hash": "926d1e4dc4d89695dc3568920330b0789e6f31afc5fdd7e78238877d0d7a337f",
+      "last_checked": "2026-10-19T20:45:25.738394",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"117b-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/expired.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/status/invalidformat.json": {
+      "hash": "99faf28ea386424748311eee666caad2cfd08dc0130aeba87b0477f84a9e6946",
+      "last_checked": "2026-10-19T20:45:25.812644",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"11be-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/invalidformat.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/status/invalidformat": {
+      "hash": "99faf28ea386424748311eee666caad2cfd08dc0130aeba87b0477f84a9e6946",
+      "last_checked": "2026-10-19T20:45:25.812732",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"11be-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/invalidformat.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/status/notauthorized.json": {
+      "hash": "62936d32a3b7af1f92aaa1f0e66453219c8ca9aed43347fac88f40135aad7d25",
+      "last_checked": "2026-10-19T20:45:25.885766",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"11be-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/notauthorized.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/status/notauthorized": {
+      "hash": "62936d32a3b7af1f92aaa1f0e66453219c8ca9aed43347fac88f40135aad7d25",
+      "last_checked": "2026-10-19T20:45:25.885869",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"11be-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/notauthorized.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/status/notfound.json": {
+      "hash": "f9a57c70b44d080f40a89a034dbf05756134bd96ba69fb89672765089131dff5",
+      "last_checked": "2026-10-19T20:45:25.938295",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1186-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/notfound.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/status/notfound": {
+      "hash": "f9a57c70b44d080f40a89a034dbf05756134bd96ba69fb89672765089131dff5",
+      "last_checked": "2026-10-19T20:45:25.938381",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1186-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/notfound.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/status/valid.json": {
+      "hash": "9c481513ab4f448a16dea0a58410d635a78f785819f2d9fe6ba6b7543f111398",
+      "last_checked": "2026-10-19T20:45:26.003882",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1165-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/valid.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/status/valid": {
+      "hash": "9c481513ab4f448a16dea0a58410d635a78f785819f2d9fe6ba6b7543f111398",
+      "last_checked": "2026-10-19T20:45:26.003972",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1165-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/valid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.property.json": {
+      "hash": "7494f319c21c9ab0c46ca4fe8c3a9ad04dae160f6561eb8838c3149938c843fa",
+      "last_checked": "2026-10-19T20:45:26.120154",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1be9-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.property": {
+      "hash": "7494f319c21c9ab0c46ca4fe8c3a9ad04dae160f6561eb8838c3149938c843fa",
+      "last_checked": "2026-10-19T20:45:26.120238",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1be9-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/shared.json": {
+      "hash": "339e82c3b52f49de603e122d82c559933f6b51c9f20ffc7de02b403b2d436009",
+      "last_checked": "2026-10-19T20:45:26.155266",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1195-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/shared.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/shared": {
+      "hash": "339e82c3b52f49de603e122d82c559933f6b51c9f20ffc7de02b403b2d436009",
+      "last_checked": "2026-10-19T20:45:26.155350",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"1195-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/shared.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/high.json": {
+      "hash": "1c8658b112420cf9d5a29a14cf7e591802c620d9bc7d7195e1ba9c50f12340b9",
+      "last_checked": "2026-10-19T20:45:26.404045",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"11f6-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum/high.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/high": {
+      "hash": "1c8658b112420cf9d5a29a14cf7e591802c620d9bc7d7195e1ba9c50f12340b9",
+      "last_checked": "2026-10-19T20:45:26.404135",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"11f6-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum/high.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/normal.json": {
+      "hash": "480f4d1f10a29db8b543c3d83669740719d7ea1440c1978b45f13ebe317db5f8",
+      "last_checked": "2026-10-19T20:45:26.488135",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"120c-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum/normal.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/normal": {
+      "hash": "480f4d1f10a29db8b543c3d83669740719d7ea1440c1978b45f13ebe317db5f8",
+      "last_checked": "2026-10-19T20:45:26.488227",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"120c-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum/normal.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/notauthorized.json": {
+      "hash": "1b39eacace1d75c21735b26a0f6610885f8c27e4154a1042d890f94a277683fd",
+      "last_checked": "2026-10-19T20:45:26.526995",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"125a-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum/notauthorized.md"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/notauthorized": {
+      "hash": "1b39eacace1d75c21735b26a0f6610885f8c27e4154a1042d890f94a277683fd",
+      "last_checked": "2026-10-19T20:45:26.527084",
+      "status": "new",
+      "session_id": "2026-10-19T20:45:23.730130",
+      "etag": "\"125a-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum/notauthorized.md"
+    }
+  }
+}

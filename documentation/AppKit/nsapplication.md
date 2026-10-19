@@ -283,8 +283,8 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 - [NSApplication.ShouldBeginSuppressingHighDynamicRangeContent](nsapplication/shouldbeginsuppressinghighdynamicrangecontent.md)
 - [NSApplication.ShouldEndSuppressingHighDynamicRangeContent](nsapplication/shouldendsuppressinghighdynamicrangecontent.md)
 ### Deprecated
-- [Deprecated Symbols](nsapplication-deprecated-symbols.md)
-  Review symbols that are no longer supported, and find the replacements to use instead.
+- [Deprecated symbols](nsapplication-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSApplication.DidBecomeActiveMessage](nsapplication/didbecomeactivemessage.md)
 - [NSApplication.DidChangeOcclusionStateMessage](nsapplication/didchangeocclusionstatemessage.md)

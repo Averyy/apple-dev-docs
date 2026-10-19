@@ -30,6 +30,7 @@ nonisolated init(@ContentBuilder content: () -> Content, @ContentBuilder label: 
   Creates an unlabeled group box with the provided view content.
 - [init(_:content:)](groupbox/init(_:content:).md)
   Creates a group box with the provided view content and title.
+- [init(label: Label, content: () -> Content)](groupbox/init(label:content:).md)
 
 
 ---

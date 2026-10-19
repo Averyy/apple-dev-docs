@@ -65,8 +65,6 @@ For information on creating custom traits, see [`Providing data to the view hier
 ### Comparing trait collections
 - [func hasDifferentColorAppearance(comparedTo: UITraitCollection?) -> Bool](uitraitcollection/hasdifferentcolorappearance(comparedto:).md)
   Queries whether changing between the specified and current trait collections would affect color values.
-- [func containsTraits(in: UITraitCollection?) -> Bool](uitraitcollection/containstraits(in:).md)
-  Queries whether a trait collection contains all of another trait collection’s values.
 ### Performing actions with the current traits
 - [func performAsCurrent(() -> Void)](uitraitcollection/performascurrent(_:).md)
   Executes custom code using the traits of the receiving trait collection.
@@ -203,8 +201,12 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [convenience init(typesettingLanguage: Locale.Language?)](uitraitcollection/init(typesettinglanguage:).md)
 - [init?(coder: NSCoder)](uitraitcollection/init(coder:).md)
   Creates a trait collection from data in an unarchiver.
+### Deprecated
+- [func containsTraits(in: UITraitCollection?) -> Bool](uitraitcollection/containstraits(in:).md)
+  Queries whether a trait collection contains all of another trait collection’s values.
 - [init(traitsFrom: [UITraitCollection])](uitraitcollection/init(traitsfrom:).md)
   Creates a trait collection that consists of traits merged from a specified array of trait collections.
+- [init(traitsFromCollections: [UITraitCollection])](uitraitcollection/init(traitsfromcollections:).md)
 ### Initializers
 - [init(HDRHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:)-3nnko.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-3as8f.md)
@@ -224,7 +226,6 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-8k1t1.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-vvgw.md)
 - [convenience init(systemPrefersReducedResourceUsage: Bool)](uitraitcollection/init(systemprefersreducedresourceusage:).md)
-- [init(traitsFromCollections: [UITraitCollection])](uitraitcollection/init(traitsfromcollections:).md)
 ### Instance Properties
 - [var navigationTitleAlignment: UINavigationItem.TitleAlignment](uitraitcollection/navigationtitlealignment.md)
   The alignment the navigation bar resolved for its title.

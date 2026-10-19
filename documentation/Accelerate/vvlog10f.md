@@ -26,6 +26,36 @@ func vvlog10f(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Unsafe
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
+The following code shows an example of using this function:
+
+**Swift**:
+
+```swift
+var x: [Float] = [1, 10, 100]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+// Calculate the base-10 logarithm of each element in `x`.
+vvlog10f(&y, &x, &n)
+
+// Prints "[0.0, 1.0000001, 2.0]".
+print(y)
+```
+
+**Objective-C**:
+
+```objc
+float x[3] = {1, 10, 100};
+float y[3];
+int n = 3;
+
+// Calculate the base-10 logarithm of each element in `x`.
+vvlog10f(y, x, &n);
+
+// Prints "[0, 1, 2]".
+printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
+```
+
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)

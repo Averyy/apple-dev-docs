@@ -22,6 +22,8 @@ The location is relative to the back margin, based on the line sweep direction o
 
 - [var tabStopType: NSParagraphStyle.TextTabType](nstexttab/tabstoptype.md)
   The text tab’s type of tab stop.
+- [NSParagraphStyle.TextTabType](nsparagraphstyle/texttabtype.md)
+  Constants that specify the type of tab stop.
 
 
 ---

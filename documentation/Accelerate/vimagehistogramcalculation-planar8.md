@@ -26,15 +26,47 @@ func vImageHistogramCalculation_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ h
 
 #### Discussion
 
-The following code populates the `histogram` array with the histogram of the specified [`vImage_Buffer`](vimage_buffer.md) structure.
+The following code populates the `histogram` array with the histogram of the specified [`vImage_Buffer`](vimage_buffer.md) structure:
+
+**Swift**:
 
 ```swift
+let source = vImage.PixelBuffer<vImage.Planar8>(
+    pixelValues: [10, 20, 30, 40],
+    size: .init(width: 4, height: 1))
+
 var histogram = [vImagePixelCount](repeating: 0, count: 256)
 
-// `buffer` is a `vImage_Buffer` structure.
-_ = vImageHistogramCalculation_Planar8(&buffer,
-                                       &histogram,
-                                       vImage_Flags(kvImageNoFlags))
+source.withUnsafePointerToVImageBuffer { src in
+    _ = vImageHistogramCalculation_Planar8(src,
+                                           &histogram,
+                                           vImage_Flags(kvImageNoFlags))
+}
+
+// Prints "1 1 1 1".
+print(histogram[10], histogram[20], histogram[30], histogram[40])
+```
+
+**Objective-C**:
+
+```objc
+uint8_t src[4] = {10, 20, 30, 40};
+
+vImage_Buffer srcBuf = {
+    .data = src,
+    .width = 4,
+    .height = 1,
+    .rowBytes = 4
+};
+
+vImagePixelCount histogram[256] = {0};
+
+vImageHistogramCalculation_Planar8(&srcBuf, histogram, kvImageNoFlags);
+
+// Prints "1 1 1 1".
+printf("%lu %lu %lu %lu\n",
+       (unsigned long)histogram[10], (unsigned long)histogram[20],
+       (unsigned long)histogram[30], (unsigned long)histogram[40]);
 ```
 
 ## Parameters

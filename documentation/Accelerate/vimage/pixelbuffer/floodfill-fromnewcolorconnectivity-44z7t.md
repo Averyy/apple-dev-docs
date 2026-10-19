@@ -24,10 +24,10 @@ func floodFill(from seed: CGPoint, newColor: Pixel_8, connectivity: vImage.Flood
 
 The flood-fill function sets all pixels that are neighboring and identical to the seed pixel to a new color. The operation continues until it reaches the image boundary or until it sets all pixels within the connected component to the new value.
 
-The following code applies a flood fill to an 8-bit planar pixel buffer and uses the image’s center pixel as the seed.
+The following code applies a flood fill to an 8-bit planar pixel buffer and uses the image’s center pixel as the seed:
 
 ```swift
-// `pixelBuffer` is a `vImage.PixelBuffer<vImage.Planar8>`.
+// The `pixelBuffer` is a `vImage.PixelBuffer<vImage.Planar8>`.
 
 pixelBuffer.floodFill(from: CGPoint(x: pixelBuffer.width / 2,
                                     y: pixelBuffer.height / 2),

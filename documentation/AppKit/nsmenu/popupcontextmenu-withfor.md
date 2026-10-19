@@ -29,8 +29,6 @@ class func popUpContextMenu(_ menu: NSMenu, with event: NSEvent, for view: NSVie
 
 - [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView, with: NSFont?)](nsmenu/popupcontextmenu(_:with:for:with:).md)
   Displays a contextual menu over a view for an event using a specified font.
-- [func helpRequested(with: NSEvent)](nsmenu/helprequested(with:).md)
-  Overridden by subclasses to implement specialized context-sensitive help behavior.
 - [func popUp(positioning: NSMenuItem?, at: NSPoint, in: NSView?) -> Bool](nsmenu/popup(positioning:at:in:).md)
   Pops up the menu at the specified location.
 

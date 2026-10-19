@@ -35,9 +35,9 @@ Create a [`UIWindowScene.ActivationRequestOptions`](uiwindowscene/activationrequ
   A placement that indicates the system should present the window using the default style of the system in the space.
 - [struct UIWindowScenePushPlacement](uiwindowscenepushplacement-swift.struct.md)
   A placement that indicates the system needs to present the window by pushing it onto another window.
-### Deprecated
 - [var preferredPresentationStyle: UIWindowScene.PresentationStyle](uiwindowscene/activationrequestoptions/preferredpresentationstyle.md)
   The presentation style of the window scene.
+### Deprecated
 - [struct UIWindowSceneReplacePlacement](uiwindowscenereplaceplacement-swift.struct.md)
 
 ## Relationships
@@ -68,8 +68,6 @@ Create a [`UIWindowScene.ActivationRequestOptions`](uiwindowscene/activationrequ
   An interaction you add to a view that enables pan gestures to change the containing window scene’s position.
 - [UIWindowScene.ResizingRestrictions](uiwindowscene/resizingrestrictions.md)
 - [enum UIWindowSceneResizingRestrictions](uiwindowsceneresizingrestrictions.md)
-- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
-  The placement of a window scene relative to other scenes in the workspace.
 
 
 ---

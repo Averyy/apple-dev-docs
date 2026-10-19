@@ -1,4 +1,4 @@
 Completed scraping Contacts!
-Total pages scraped: 681
-Pages skipped (unchanged): 4
+Total pages scraped: 0
+Pages skipped (unchanged): 685
 Pages failed: 0

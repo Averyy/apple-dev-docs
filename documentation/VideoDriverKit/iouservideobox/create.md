@@ -6,7 +6,7 @@
 Static factory method to allocate and initialize a user video box.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

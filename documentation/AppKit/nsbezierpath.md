@@ -76,12 +76,6 @@ The current graphics context is automatically saved and restored for all drawing
   Appends an outline of the specified glyph to the path.
 - [func append(withCGGlyphs: UnsafePointer<CGGlyph>, count: Int, in: NSFont)](nsbezierpath/append(withcgglyphs:count:in:).md)
   Appends the outlines of the specified glyphs to the path.
-- [func appendGlyph(NSGlyph, in: NSFont)](nsbezierpath/appendglyph(_:in:).md)
-  Appends an outline of the specified glyph to the path.
-- [func appendGlyphs(UnsafeMutablePointer<NSGlyph>, count: Int, in: NSFont)](nsbezierpath/appendglyphs(_:count:in:).md)
-  Appends the outlines of the specified glyphs to the path.
-- [func appendPackedGlyphs(UnsafePointer<CChar>)](nsbezierpath/appendpackedglyphs(_:).md)
-  Appends an array of packed glyphs to the path.
 ### Accessing a Path’s Attributes
 - [var windingRule: NSBezierPath.WindingRule](nsbezierpath/windingrule-swift.property.md)
   The winding rule used to fill the path.
@@ -168,6 +162,13 @@ The current graphics context is automatically saved and restored for all drawing
   Constants that specify the shape of endpoints for an open path when it is stroked.
 - [NSBezierPath.WindingRule](nsbezierpath/windingrule-swift.enum.md)
   Constants that specify the winding rule a Bézier path uses.
+### Deprecated
+- [func appendGlyph(NSGlyph, in: NSFont)](nsbezierpath/appendglyph(_:in:).md)
+  Appends an outline of the specified glyph to the path.
+- [func appendGlyphs(UnsafeMutablePointer<NSGlyph>, count: Int, in: NSFont)](nsbezierpath/appendglyphs(_:count:in:).md)
+  Appends the outlines of the specified glyphs to the path.
+- [func appendPackedGlyphs(UnsafePointer<CChar>)](nsbezierpath/appendpackedglyphs(_:).md)
+  Appends an array of packed glyphs to the path.
 ### Initializers
 - [init(CGPath: CGPath)](nsbezierpath/init(cgpath:)-4nao7.md)
 - [init?(coder: NSCoder)](nsbezierpath/init(coder:).md)

@@ -6,7 +6,7 @@
 A selector control’s value and name.
 
 **Availability**:
-- DriverKit 27.0+ (Beta)
+- DriverKit 27.0+
 
 ## Declaration
 

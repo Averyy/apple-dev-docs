@@ -32,10 +32,6 @@ This method accepts only single plane [`NSBitmapImageRep`](nsbitmapimagerep.md) 
   Creates a graphics context using the specified attributes.
 - [init(cgContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-9cbad.md)
   Creates a new graphics context from the specified Core Graphics context and the initial flipped state.
-- [init(window: NSWindow)](nsgraphicscontext/init(window:).md)
-  Creates a new graphics context for drawing into a window.
-- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](nsgraphicscontext/init(graphicsport:flipped:).md)
-  Creates a new graphics context from the specified graphics port.
 
 
 ---

@@ -33,6 +33,8 @@ static var navigationBar: ToolbarPlacement { get }
   The tab bar of an app.
 - [static var windowToolbar: ToolbarPlacement](toolbarplacement/windowtoolbar.md)
   The placement for the containing window’s toolbar, sometimes referred to as the titlebar.
+- [init<ID>(id: ID)](toolbarplacement/init(id:).md)
+  Creates a custom accessory bar placement.
 
 
 ---

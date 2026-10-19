@@ -54,10 +54,6 @@ Pass these constants to the [`NSCell`](nscell.md) method [`sendAction(on:)`](nsc
 - [static var keyUp: NSEvent.EventTypeMask](nsevent/eventtypemask/keyup.md)
   A mask for key-up events.
 ### Getting Touch Events
-- [static var beginGesture: NSEvent.EventTypeMask](nsevent/eventtypemask/begingesture.md)
-  A mask for begin-gesture events.
-- [static var endGesture: NSEvent.EventTypeMask](nsevent/eventtypemask/endgesture.md)
-  A mask for end-gesture events.
 - [static var magnify: NSEvent.EventTypeMask](nsevent/eventtypemask/magnify.md)
   A mask for magnify-gesture events.
 - [static var smartMagnify: NSEvent.EventTypeMask](nsevent/eventtypemask/smartmagnify.md)
@@ -98,6 +94,9 @@ Pass these constants to the [`NSCell`](nscell.md) method [`sendAction(on:)`](nsc
 - [init(rawValue: UInt64)](nsevent/eventtypemask/init(rawvalue:).md)
 - [init(type: NSEvent.EventType)](nsevent/eventtypemask/init(type:).md)
   Returns the event mask for the specified type.
+### Deprecated
+- [Deprecated symbols](eventtypemask-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Type Properties
 - [static var mouseCancelled: NSEvent.EventTypeMask](nsevent/eventtypemask/mousecancelled.md)
 

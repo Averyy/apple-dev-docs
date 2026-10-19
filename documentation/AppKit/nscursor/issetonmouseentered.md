@@ -20,16 +20,20 @@ var isSetOnMouseEntered: Bool { get }
 
 ## See Also
 
-- [convenience init(image: NSImage, foregroundColorHint: NSColor?, backgroundColorHint: NSColor?, hotSpot: NSPoint)](nscursor/init(image:foregroundcolorhint:backgroundcolorhint:hotspot:).md)
-  Initializes the cursor with the specified image and hot spot.
-- [func mouseEntered(with: NSEvent)](nscursor/mouseentered(with:).md)
-  Automatically sent to the receiver when the cursor enters a cursor rectangle owned by the receiver.
-- [func setOnMouseEntered(Bool)](nscursor/setonmouseentered(_:).md)
-  Specifies whether the receiver accepts [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) events.
-- [func mouseExited(with: NSEvent)](nscursor/mouseexited(with:).md)
-  Automatically sent to the receiver when the cursor exits a cursor rectangle owned by the receiver.
-- [func setOnMouseExited(Bool)](nscursor/setonmouseexited(_:).md)
-  Sets whether the receiver accepts [`mouseExited(with:)`](nscursor/mouseexited(with:).md) events.
+- [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
+  Returns the current system cursor.
+- [class var resizeDown: NSCursor](nscursor/resizedown.md)
+  Returns the resize-down system cursor.
+- [class var resizeLeft: NSCursor](nscursor/resizeleft.md)
+  Returns the resize-left system cursor.
+- [class var resizeLeftRight: NSCursor](nscursor/resizeleftright.md)
+  Returns the resize-left-and-right system cursor.
+- [class var resizeRight: NSCursor](nscursor/resizeright.md)
+  Returns the resize-right system cursor.
+- [class var resizeUp: NSCursor](nscursor/resizeup.md)
+  Returns the resize-up system cursor.
+- [class var resizeUpDown: NSCursor](nscursor/resizeupdown.md)
+  Returns the resize-up-and-down system cursor.
 - [var isSetOnMouseExited: Bool](nscursor/issetonmouseexited.md)
   A Boolean value indicating whether the receiver becomes current when it receives a [`mouseExited(with:)`](nscursor/mouseexited(with:).md) message.
 

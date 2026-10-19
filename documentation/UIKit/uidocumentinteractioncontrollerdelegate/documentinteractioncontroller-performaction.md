@@ -38,8 +38,10 @@ Instead of implementing printing code in this method, you can rely on the built-
 
 ## See Also
 
-- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
-  Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
+- [func documentInteractionController(UIDocumentInteractionController, willBeginSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:willbeginsendingtoapplication:).md)
+  Called when a document interaction controller’s document is about to be opened by the specified application.
+- [func documentInteractionController(UIDocumentInteractionController, didEndSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:didendsendingtoapplication:).md)
+  Called when a document interaction controller’s document has been handed off to the specified application.
 
 
 ---

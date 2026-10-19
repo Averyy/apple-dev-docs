@@ -28,6 +28,8 @@ Use this function to multiply a sparse matrix by a dense vector and accumulate t
 
 Call [`SparseMultiplyAdd(_:_:_:)`](sparsemultiplyadd(_:_:_:)-7iuo9.md) to calculate the result.
 
+**Swift**:
+
 ```swift
 let rowCount = Int32(4)
 let columnCount = Int32(4)
@@ -37,7 +39,7 @@ let rowIndices: [Int32] = [0, 3, 0, 3]
 let columnIndices: [Int32] = [0, 0, 3, 3]
 let data = [1.0, 4.0, 13.0, 16.0]
 
-/// The _A_ in _y+=Ax_.
+// The sparse matrix `A` in `y+=Ax`.
 let A = SparseConvertFromCoordinate(rowCount, columnCount,
                                     blockCount, blockSize,
                                     SparseAttributes_t(),
@@ -47,20 +49,20 @@ defer {
     SparseCleanup(A)
 }
 
-/// The values for _x_ in _y+=Ax_.
+// The values for `x` in `y+=Ax`.
 var xValues = [10.0, -1.0, -1.0, 10.0]
 
 var yValues = [1.0, 1.0, 1.0, 1.0]
 
-/// The values for _y_ in _y+=Ax_.
+// The values for `y` in `y+=Ax`.
 yValues.withUnsafeMutableBufferPointer { yValuesPtr in
 
     xValues.withUnsafeMutableBufferPointer { xValuesPtr in
-        /// The _x_ in _y+=Ax_.
+        // The dense vector `x` in `y+=Ax`.
         let x = DenseVector_Double(count: 4,
                                    data: xValuesPtr.baseAddress!)
         
-        /// The _y_ in _y+=Ax_.
+        // The dense vector `y` in `y+=Ax`.
         let y = DenseVector_Double(count: 4,
                                    data: yValuesPtr.baseAddress!)
         
@@ -68,8 +70,46 @@ yValues.withUnsafeMutableBufferPointer { yValuesPtr in
     }
 }
 
-/// On return, `yValues` contains:
-///      `[ 141.0, 1.0, 1.0, 201.0 ]`
+print(yValues) // Prints "[141.0, 1.0, 1.0, 201.0]".
+```
+
+**Objective-C**:
+
+```objc
+// Build the sparse matrix `A` (Double, 4 by 4, 4 nonzeros).
+int rowIndices[]    = {0, 3, 0, 3};
+int columnIndices[] = {0, 0, 3, 3};
+double data[]       = {1.0, 4.0, 13.0, 16.0};
+
+SparseMatrix_Double A = SparseConvertFromCoordinate(4, 4,
+                                                    4, 1,
+                                                    (SparseAttributes_t){0},
+                                                    rowIndices, columnIndices,
+                                                    data);
+
+// The values for `x` in `y+=Ax`.
+double xValues[] = {10.0, -1.0, -1.0, 10.0};
+
+// The values for `y` in `y+=Ax`.
+double yValues[] = {1.0, 1.0, 1.0, 1.0};
+
+DenseVector_Double x = {
+    .count = 4,
+    .data  = xValues
+};
+
+DenseVector_Double y = {
+    .count = 4,
+    .data  = yValues
+};
+
+SparseMultiplyAdd(A, x, y);
+
+// Prints "[ 141, 1, 1, 201 ]".
+printf("[ %g, %g, %g, %g ]\n",
+      yValues[0], yValues[1], yValues[2], yValues[3]);
+
+SparseCleanup(A);
 ```
 
 ## Parameters

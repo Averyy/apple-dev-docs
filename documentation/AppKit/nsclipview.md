@@ -43,13 +43,10 @@ It is also important to note that setting [`drawsBackground`](nsclipview/drawsba
   Changes the origin of the clip view’s bounds rectangle to `newOrigin`.
 - [func autoscroll(with: NSEvent) -> Bool](nsclipview/autoscroll(with:).md)
   Scrolls the clip view proportionally to `theEvent`’s distance outside of it.
-- [func constrainScroll(NSPoint) -> NSPoint](nsclipview/constrainscroll(_:).md)
-  Returns a scroll point adjusted from the proposed new origin, if necessary, to guarantee the view will lie within its document view.
 - [func constrainBoundsRect(NSRect) -> NSRect](nsclipview/constrainboundsrect(_:).md)
   Constrains the bounds of the clip view while the user is magnifying and scrolling.
-### Determining Scrolling Efficiency
-- [var copiesOnScroll: Bool](nsclipview/copiesonscroll.md)
-  A Boolean value that indicates if the clip view copies rendered images while scrolling.
+- [func constrainScroll(NSPoint) -> NSPoint](nsclipview/constrainscroll(_:).md)
+  Returns a scroll point adjusted from the proposed new origin, if necessary, to guarantee the view will lie within its document view.
 ### Accessing the Content Insets
 - [var contentInsets: NSEdgeInsets](nsclipview/contentinsets.md)
   The distance that the content view is inset from the enclosing scroll view.
@@ -73,6 +70,9 @@ It is also important to note that setting [`drawsBackground`](nsclipview/drawsba
   Handles an [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md), passed in the `aNotification` argument, by updating a containing [`NSScrollView`](nsscrollview.md) based on the new bounds.
 - [func viewFrameChanged(Notification)](nsclipview/viewframechanged(_:).md)
   Handles an [`frameDidChangeNotification`](nsview/framedidchangenotification.md), passed in the `aNotification` argument, by updating a containing [`NSScrollView`](nsscrollview.md) based on the new frame.
+### Determining Scrolling Efficiency
+- [var copiesOnScroll: Bool](nsclipview/copiesonscroll.md)
+  A Boolean value that indicates if the clip view copies rendered images while scrolling.
 
 ## Relationships
 

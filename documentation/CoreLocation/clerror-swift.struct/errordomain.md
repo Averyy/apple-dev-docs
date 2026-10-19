@@ -18,6 +18,11 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [var alternateRegion: CLRegion?](clerror-swift.struct/alternateregion.md)
+  A region that location services can monitor more effectively.
+
 
 ---
 

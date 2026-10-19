@@ -33,7 +33,7 @@ let bufferOne = try vImage_Buffer(cgImage: cgImageOne,
 let bufferTwo = try vImage_Buffer(cgImage: cgImageTwo,
                                   format: format)
 
-// `subBufferTwo` points to the bottom-right quadrant of `bufferTwo`.
+// The `subBufferTwo` points to the bottom-right quadrant of `bufferTwo`.
 var start = (bufferTwo.rowBytes * Int(bufferOne.height / 2))    // y
 start += Int(bufferOne.width / 2) * format.componentCount       // x
 var subBufferOne = vImage_Buffer(data: bufferOne.data.advanced(by: start),
@@ -41,7 +41,7 @@ var subBufferOne = vImage_Buffer(data: bufferOne.data.advanced(by: start),
                                 width: bufferOne.width / 2,
                                 rowBytes: bufferTwo.rowBytes)
 
-// `subBufferTwo` points to the top-left quadrant of `bufferTwo`.
+// The `subBufferTwo` points to the top-left quadrant of `bufferTwo`.
 let subBufferTwo = vImage_Buffer(data: bufferTwo.data,
                                 height: bufferTwo.height / 2,
                                 width: bufferTwo.width / 2,

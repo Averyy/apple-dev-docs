@@ -26,7 +26,7 @@ Creates a view for the arrangement view style from the configuration.
 
 - [associatedtype Body : View](arrangementviewstyle/body.md)
 - [ArrangementViewStyle.Configuration](arrangementviewstyle/configuration.md)
-  The configuration used to create the arrangement view style.
+  The configuration the style uses to create the arrangement view.
 
 
 ---

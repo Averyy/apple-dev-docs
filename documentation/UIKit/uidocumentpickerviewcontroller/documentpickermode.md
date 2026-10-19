@@ -21,13 +21,6 @@ var documentPickerMode: UIDocumentPickerMode { get }
 
 For a list of available modes, see [`UIDocumentPickerMode`](uidocumentpickermode.md).
 
-## See Also
-
-- [var shouldShowFileExtensions: Bool](uidocumentpickerviewcontroller/shouldshowfileextensions.md)
-  A Boolean value that determines whether the browser always shows file extensions.
-- [enum UIDocumentPickerMode](uidocumentpickermode.md)
-  Modes that define the type of file transfer operation that the document picker uses.
-
 
 ---
 

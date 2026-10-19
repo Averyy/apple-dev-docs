@@ -28,8 +28,6 @@ In a custom button with a custom bezel you can override this property and return
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
 - [var isOpaque: Bool](nscell/isopaque.md)
   A Boolean value indicating whether the cell is completely opaque.
-- [var controlTint: NSControlTint](nscell/controltint.md)
-  The cell’s control tint.
 - [var backgroundStyle: NSView.BackgroundStyle](nscell/backgroundstyle.md)
   The cell’s background style.
 - [NSView.BackgroundStyle](nsview/backgroundstyle.md)

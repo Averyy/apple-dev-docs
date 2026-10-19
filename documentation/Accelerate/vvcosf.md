@@ -30,7 +30,7 @@ func vvcosf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafePo
 
 If `x` is `+/-inf`, the result is `NaN`.
 
-The following code shows an example of using [`vvcosf(_:_:_:)`](vvcosf(_:_:_:).md).
+The following code shows an example of using [`vvcosf(_:_:_:)`](vvcosf(_:_:_:).md):
 
 **Swift**:
 
@@ -54,7 +54,7 @@ int n = 3;
  
 vvcosf(y, x, &n);
  
-NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+printf("y: [%lf, %lf, %lf]\n", y[0], y[1], y[2]);
 
 ```
 

@@ -32,7 +32,7 @@ If `x` is `+/-0`, the result preserves the signed zero.
 
 If `x` is `+/-inf`, the result is `NaN`.
 
-The following code shows an example of using [`vvsinf(_:_:_:)`](vvsinf(_:_:_:).md).
+The following code shows an example of using [`vvsinf(_:_:_:)`](vvsinf(_:_:_:).md):
 
 **Swift**:
 
@@ -56,7 +56,7 @@ int n = 3;
  
 vvsinf(y, x, &n);
  
-NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+printf("y: [%lf, %lf, %lf]\n", y[0], y[1], y[2]);
 ```
 
 ## See Also

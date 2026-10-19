@@ -53,6 +53,8 @@ You can also use [`automatic`](pickerstyle/automatic.md) to construct this style
   A picker style that presents options as segmented tabs.
 - [struct WheelPickerStyle](wheelpickerstyle.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
+- [struct PopUpButtonPickerStyle](popupbuttonpickerstyle.md)
+  A picker style that presents the options as a menu when the user presses a button.
 
 
 ---

@@ -73,17 +73,6 @@ You can use the workspace object to:
   Activates the Finder, and opens one or more windows selecting the specified files.
 - [func selectFile(String?, inFileViewerRootedAtPath: String) -> Bool](nsworkspace/selectfile(_:infileviewerrootedatpath:).md)
   Selects the file at the specified path.
-### Manipulating Uniform Type Identifier Information
-- [func type(ofFile: String) throws -> String](nsworkspace/type(offile:).md)
-  Returns the uniform type identifier of the specified file, if it can be determined.
-- [func localizedDescription(forType: String) -> String?](nsworkspace/localizeddescription(fortype:).md)
-  Returns the localized description for the specified Uniform Type Identifier (UTI).
-- [func preferredFilenameExtension(forType: String) -> String?](nsworkspace/preferredfilenameextension(fortype:).md)
-  Returns the preferred filename extension for the specified Uniform Type Identifier (UTI).
-- [func filenameExtension(String, isValidForType: String) -> Bool](nsworkspace/filenameextension(_:isvalidfortype:).md)
-  Returns whether the specified filename extension is appropriate for the Uniform Type Identifier (UTI).
-- [func type(String, conformsToType: String) -> Bool](nsworkspace/type(_:conformstotype:).md)
-  Returns a Boolean indicating that the first Uniform Type Identifier (UTI) conforms to the second UTI.
 ### Requesting Information
 - [func urlForApplication(toOpen: URL) -> URL?](nsworkspace/urlforapplication(toopen:)-7qkzf.md)
   Returns the URL to the default app to open the specified URL.
@@ -107,8 +96,6 @@ You can use the workspace object to:
   Returns an array of running apps.
 - [var menuBarOwningApplication: NSRunningApplication?](nsworkspace/menubarowningapplication.md)
   Returns the app that owns the currently displayed menu bar.
-- [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](nsworkspace/getinfoforfile(_:application:type:).md)
-  Retrieves information about the specified file.
 ### Setting Default Application Information
 - [func setDefaultApplication(at: URL, toOpenFileAt: URL, completion: (((any Error)?) -> Void)?)](nsworkspace/setdefaultapplication(at:toopenfileat:completion:).md)
   Sets the default app to use when opening a specific file.
@@ -231,8 +218,8 @@ You can use the workspace object to:
 - [class let oldVolumeURLUserInfoKey: String](nsworkspace/oldvolumeurluserinfokey.md)
   A URL containing the old mount path of the volume
 ### Deprecated
-- [Deprecated Symbols](nsworkspace-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+- [Deprecated symbols](nsworkspace-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [NSWorkspace.AccessibilityDisplayOptionsDidChangeMessage](nsworkspace/accessibilitydisplayoptionsdidchangemessage.md)
 - [NSWorkspace.ActiveSpaceDidChangeMessage](nsworkspace/activespacedidchangemessage.md)

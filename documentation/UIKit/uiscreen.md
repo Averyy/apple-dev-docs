@@ -79,16 +79,12 @@ Avoid using screen objects to make decisions about your app’s interface. Use a
 - [var potentialEDRHeadroom: CGFloat](uiscreen/potentialedrheadroom.md)
   The screen’s maximum headroom when displaying extended dynamic range content.
 ### Getting a display link
-- [func displayLink(withTarget: Any, selector: Selector) -> CADisplayLink?](uiscreen/displaylink(withtarget:selector:).md)
-  Returns a display link object for the current screen.
 - [var maximumFramesPerSecond: Int](uiscreen/maximumframespersecond.md)
   The maximum number of frames per second a screen can render.
 ### Capturing a snapshot
 - [func snapshotView(afterScreenUpdates: Bool) -> UIView](uiscreen/snapshotview(afterscreenupdates:).md)
   Returns a snapshot view based on the current screen contents.
 ### Detecting screen capture
-- [var isCaptured: Bool](uiscreen/iscaptured.md)
-  A Boolean value that indicates whether the system is actively cloning the screen to another destination.
 - [var mirrored: UIScreen?](uiscreen/mirrored.md)
   The screen an external display mirrors from.
 ### Notifications
@@ -102,7 +98,7 @@ Avoid using screen objects to make decisions about your app’s interface. Use a
   A notification that posts when there’s a change to a screen’s reference display mode status.
 ### Deprecated
 - [Deprecated symbols](uiscreen-deprecated-symbols.md)
-  Review unsupported symbols and their replacements.
+  Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
 - [UIScreen.BrightnessDidChangeMessage](uiscreen/brightnessdidchangemessage.md)
 - [UIScreen.CapturedDidChangeMessage](uiscreen/captureddidchangemessage.md)

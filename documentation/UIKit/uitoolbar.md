@@ -111,7 +111,7 @@ For a button that finalizes or completes a task, set the button’s style to [`U
   A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
 - [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
 - [class UINavigationBar](uinavigationbar.md)
-  Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
+  A region that displays the title and controls provided by navigation items.
 - [class UISearchBar](uisearchbar.md)
   A specialized view for receiving search-related information from the user.
 - [class UITabBar](uitabbar.md)

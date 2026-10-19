@@ -22,7 +22,7 @@ init(referencing lockedCVPixelBuffer: CVPixelBuffer, converter: vImageConverter,
 
 #### Discussion
 
-The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel) instance. The code calls [`init(referencing:converter:destinationPixelFormat:)`](vimage/pixelbuffer/init(referencing:converter:destinationpixelformat:).md) to initialize a source and destination vImage pixel buffers that share data with the processor kernel’s input and output.
+The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel) instance. The code calls [`init(referencing:converter:destinationPixelFormat:)`](vimage/pixelbuffer/init(referencing:converter:destinationpixelformat:).md) to initialize a source and destination vImage pixel buffers that share data with the processor kernel’s input and output:
 
 ```swift
 class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {

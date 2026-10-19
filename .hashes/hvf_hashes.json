@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-16T07:31:11.584750",
+    "last_updated": "2026-10-19T20:44:11.758341",
     "total_pages": 238,
-    "session_id": "2026-10-16T07:30:56.315231"
+    "session_id": "2026-10-19T20:43:56.016199"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/hvf.json": {
       "hash": "cdd5095e89b9e926da9f6a08162e97f685508c6a3d0aa99d945bf4469f963eaf",
-      "last_checked": "2026-10-16T07:30:56.711115",
+      "last_checked": "2026-10-19T20:43:56.156654",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"6949-65d55d988f830-df\"",
       "file_path": "documentation/hvf/hvf.md"
     },
     "https://developer.apple.com/documentation/hvf": {
       "hash": "cdd5095e89b9e926da9f6a08162e97f685508c6a3d0aa99d945bf4469f963eaf",
-      "last_checked": "2026-10-16T07:30:56.594618",
+      "last_checked": "2026-10-19T20:43:56.154253",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"6949-65d55d988f830-df\"",
       "file_path": "documentation/hvf/hvf.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader.json": {
       "hash": "62e4443190bc780d0353462cba9fb19390ed2175cb1edf0fe475fe69be32bea6",
-      "last_checked": "2026-10-16T07:30:57.085740",
+      "last_checked": "2026-10-19T20:43:56.393193",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"194e-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/hvglpartloader.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer.json": {
       "hash": "d950192253d208168400899d76b9856d3bed2a257cc74c876c0f10d13cbbf9ae",
-      "last_checked": "2026-10-16T07:30:57.185914",
+      "last_checked": "2026-10-19T20:43:56.588238",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"3e12-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/partrenderer.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter.json": {
       "hash": "16601fa46234dddc70f9736539b376aa9fa798b513b89ebab42741c72060cebf",
-      "last_checked": "2026-10-16T07:30:57.278800",
+      "last_checked": "2026-10-19T20:43:56.720516",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"4bd3-65d55d988f830-df\"",
       "file_path": "documentation/hvf/compositewriter.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partgenerator.json": {
       "hash": "fae5211a37084b513347d871ea981567b4d6f2a8b12f74d50e942e8cc83241ee",
-      "last_checked": "2026-10-16T07:30:57.372229",
+      "last_checked": "2026-10-19T20:43:56.911734",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1274-65d55d988f830-df\"",
       "file_path": "documentation/hvf/partgenerator.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter.json": {
       "hash": "e2ed62a7880bef52a3d141a236cdf2125c898aa0b716e5d8cf07e9b2d036af82",
-      "last_checked": "2026-10-16T07:30:57.472440",
+      "last_checked": "2026-10-19T20:43:57.049230",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"2d04-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/shapewriter.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositeextremumindex.json": {
       "hash": "62597e1db65de84d692517abc3e3839fec66db05346b93434d8569a1c5415636",
-      "last_checked": "2026-10-16T07:30:57.568736",
+      "last_checked": "2026-10-19T20:43:57.264776",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1a86-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/compositeextremumindex.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubpart.json": {
       "hash": "e9102d5af1aee55cb41b0f98dd6d00998fa6f28e0e1b906acc81ea3580dd006b",
-      "last_checked": "2026-10-16T07:30:57.800749",
+      "last_checked": "2026-10-19T20:43:57.408623",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1e39-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositesubpart.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubparttranslation.json": {
       "hash": "b1c9363d4eca50bb727f10b6240064f68215ee423dc278ce36ed523474631fa6",
-      "last_checked": "2026-10-16T07:30:58.024913",
+      "last_checked": "2026-10-19T20:43:57.511987",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"19d0-65d55d988f830-df\"",
       "file_path": "documentation/hvf/compositesubparttranslation.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvflibraryversion-swift.var.json": {
       "hash": "22f990ca1ca3d18141aceaf5ad65c540dbd98bae6a7151ea8be7076c3755e5df",
-      "last_checked": "2026-10-16T07:30:58.257497",
+      "last_checked": "2026-10-19T20:43:57.685440",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"12ad-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/hvflibraryversion-swiftvar.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/custompartloader.json": {
       "hash": "f745ca6d033f73905d3bf4695e6dbe5b245f69dd9310f1b87dc7776135d45676",
-      "last_checked": "2026-10-16T07:30:58.343977",
+      "last_checked": "2026-10-19T20:43:57.768918",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1710-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/custompartloader.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/axisextremum.json": {
       "hash": "4b3a2682c56b59ea6f2d284b2b43a901874615b95d95d6a8bd9551c9acd0774a",
-      "last_checked": "2026-10-16T07:30:58.579103",
+      "last_checked": "2026-10-19T20:43:57.946567",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1bb8-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/axisextremum.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult.json": {
       "hash": "bd0dd3920c5e3c987408f7ea1aff9a4f33c63e6e9dd682f211a680c83b5ab063",
-      "last_checked": "2026-10-16T07:30:58.671790",
+      "last_checked": "2026-10-19T20:43:58.042970",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"131d-65d55d988f830-df\"",
       "file_path": "documentation/hvf/partresult.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/pointcoordinate.json": {
       "hash": "8b23841bf5b1870fdab2dad8fdb873b20791a776b989683dea59a09b3ea27b60",
-      "last_checked": "2026-10-16T07:30:58.930500",
+      "last_checked": "2026-10-19T20:43:58.181310",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1c19-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/pointcoordinate.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentblendtype.json": {
       "hash": "83d4370f80180a4f976476d7ae1f827f3dccc3d365b7b10621ee76a04491ab4e",
-      "last_checked": "2026-10-16T07:30:59.024882",
+      "last_checked": "2026-10-19T20:43:58.302974",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"235c-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/segmentblendtype.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentpoint.json": {
       "hash": "d90c52f007b834db0a2c5164473947ec52ea4ad9e413cf038878e50bfd604802",
-      "last_checked": "2026-10-16T07:30:59.264363",
+      "last_checked": "2026-10-19T20:43:58.487184",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1b80-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/segmentpoint.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader/init(hvgltable:hvpmtable:).json": {
       "hash": "f9718e3b54087273f74c635f8eb5212d7a37d1cce72aaf8010a173a02869b8b6",
-      "last_checked": "2026-10-16T07:30:59.360822",
+      "last_checked": "2026-10-19T20:43:58.589422",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1596-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/hvglpartloader/init-hvgltablehvpmtable.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader/glyphcount.json": {
       "hash": "dd619e8ad0fd1c22dedf26bf6795a5497f8d224237aabfb4db539389e57fc89c",
-      "last_checked": "2026-10-16T07:30:59.447331",
+      "last_checked": "2026-10-19T20:43:58.762183",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"118d-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/hvglpartloader/glyphcount.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader/partcount.json": {
       "hash": "429cb1ea786a0f38ef09d3af34bc489783f1fdf0566d18accab07a278debf4a8",
-      "last_checked": "2026-10-16T07:30:59.681954",
+      "last_checked": "2026-10-19T20:43:58.906063",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1161-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/hvglpartloader/partcount.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader/tableversion.json": {
       "hash": "4c3fb8a578bde90b87ca29d45ee21462f89a6835909f1b1d1ae9a5c1adfec255",
-      "last_checked": "2026-10-16T07:30:59.912823",
+      "last_checked": "2026-10-19T20:43:59.006172",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"13f9-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/hvglpartloader/tableversion.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/axisvalues.json": {
       "hash": "f974302b82ca318affd8c5f5b7b2d1dbc40518270ea47a880896df1f46b76350",
-      "last_checked": "2026-10-16T07:31:00.143686",
+      "last_checked": "2026-10-19T20:43:59.119929",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1ed6-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/axisvalues.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters.json": {
       "hash": "6153ec89b72bbea9807e7a1159dd4e3fd81a635fe3eda77bb1f03c61cfcb25ab",
-      "last_checked": "2026-10-16T07:31:00.240323",
+      "last_checked": "2026-10-19T20:43:59.249066",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"24d9-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/point.json": {
       "hash": "4f2e532835c8115262588d1ac77fc863b5776e1db399e43faaa8f63774721271",
-      "last_checked": "2026-10-16T07:31:00.331341",
+      "last_checked": "2026-10-19T20:43:59.380582",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1b1b-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/point.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/subparts.json": {
       "hash": "7742365efbadd7f004c804ff4105b97fd34ea9cee19ea410738ef18384ec69c1",
-      "last_checked": "2026-10-16T07:31:02.012649",
+      "last_checked": "2026-10-19T20:43:59.527995",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1991-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/subparts.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/translation.json": {
       "hash": "efdac29b96ae8dc4e56b3d1fa9ad47a15750284362a916d2175671fdbedf2ebc",
-      "last_checked": "2026-10-16T07:31:02.111563",
+      "last_checked": "2026-10-19T20:43:59.643264",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1bce-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/translation.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/init(custom:reusable:).json": {
       "hash": "b46c0587bb6e8af7506a85099432c7f38ea442b3830bc39edaa006509942069e",
-      "last_checked": "2026-10-16T07:31:02.218275",
+      "last_checked": "2026-10-19T20:43:59.777888",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1a12-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/init-customreusable.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/init(hvglloader:reusable:).json": {
       "hash": "c66b1f9d2cadd53eef7ffcd951326d16a6318b825a51a162dc0404399721ea42",
-      "last_checked": "2026-10-16T07:31:02.322212",
+      "last_checked": "2026-10-19T20:43:59.904391",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"18bc-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/init-hvglloaderreusable.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/blendedaxisvaluebounds.json": {
       "hash": "5d681b0466cecd7bf5c4da66fc4aef4dce4c9cc8eb5e7c13c99560f3162815ef",
-      "last_checked": "2026-10-16T07:31:02.436732",
+      "last_checked": "2026-10-19T20:44:00.047770",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1713-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/blendedaxisvaluebounds.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/parameters.json": {
       "hash": "db4e0df428c2596b846dba1a4cb81727ff6ac30c897509127468db6f67b81e3e",
-      "last_checked": "2026-10-16T07:31:02.520391",
+      "last_checked": "2026-10-19T20:44:00.151774",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1478-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/parameters.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partaxiscount.json": {
       "hash": "62be856da4b6e52f545d93b6523bc698cdbc1facb6a091b94c856e363b6fc616",
-      "last_checked": "2026-10-16T07:31:02.606966",
+      "last_checked": "2026-10-19T20:44:00.289254",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1158-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/partaxiscount.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partindex.json": {
       "hash": "faf1f9b7c7a851c3d18bb3a34ecb00a310706abdf14eceed7f7fd037922c7717",
-      "last_checked": "2026-10-16T07:31:02.711116",
+      "last_checked": "2026-10-19T20:44:00.419809",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1362-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/partindex.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/clearpartcache().json": {
       "hash": "1603c12d120ba44a9dd3aae9fcdacf7f891efb77ec1311f791f9348f968648a1",
-      "last_checked": "2026-10-16T07:31:02.862800",
+      "last_checked": "2026-10-19T20:44:00.552690",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"e61-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/clearpartcache.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/render(to:).json": {
       "hash": "f331b6fdaeac3b45087ae37ec189352d482f3c9c97af6e2029c2f9d5a9787ccd",
-      "last_checked": "2026-10-16T07:31:02.951798",
+      "last_checked": "2026-10-19T20:44:00.686888",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"2077-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/render-to.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/action.json": {
       "hash": "e8cf14c8190971e656a212af1c40e1cc4e6f94681a2f8cad01c9958bb9f7e47f",
-      "last_checked": "2026-10-16T07:31:03.039847",
+      "last_checked": "2026-10-19T20:44:00.801045",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1a39-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/action.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction.json": {
       "hash": "c64b187d95ef41db9513a77ef8cdec02d254b2c46e33a2a4a8bc1c6f4d01973d",
-      "last_checked": "2026-10-16T07:31:03.128992",
+      "last_checked": "2026-10-19T20:44:00.942991",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"3021-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/axiscount.json": {
       "hash": "b7e07ced450509de0513d1a19573529e3e7ad7374e109697b507a6bbe6941f1d",
-      "last_checked": "2026-10-16T07:31:03.218130",
+      "last_checked": "2026-10-19T20:44:01.064329",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1147-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/axiscount.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumcscaxisvalues.json": {
       "hash": "23570e7a3a570ba1abf4831e2f1f804279e9a8034a31f035194e7195d45aadb4",
-      "last_checked": "2026-10-16T07:31:03.305507",
+      "last_checked": "2026-10-19T20:44:01.225809",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"126b-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/extremumcscaxisvalues.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumcsccolumnstarts.json": {
       "hash": "d48854b39efcbfaff19a9e46818d46f49cb02539faeba35e58daaa06c6390aaa",
-      "last_checked": "2026-10-16T07:31:03.393307",
+      "last_checked": "2026-10-19T20:44:01.318737",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"13b7-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/extremumcsccolumnstarts.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumcscrowindices.json": {
       "hash": "421ffc034fff4883eb009a4233fc4185115ff98802a008bf8f34ab3f851dadfe",
-      "last_checked": "2026-10-16T07:31:03.484038",
+      "last_checked": "2026-10-19T20:44:01.459581",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"12a3-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/extremumcscrowindices.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumrotationindices.json": {
       "hash": "4a9919fefec725b17791f9120e6d2314307bf589ec1160170146f8702e441cc1",
-      "last_checked": "2026-10-16T07:31:03.574776",
+      "last_checked": "2026-10-19T20:44:01.591995",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1395-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/extremumrotationindices.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumrotations.json": {
       "hash": "18c22b268ab8a6d676856c8733d3fe11a862cc88388c65477d3e6583ab929b79",
-      "last_checked": "2026-10-16T07:31:03.663903",
+      "last_checked": "2026-10-19T20:44:01.715288",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1217-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/extremumrotations.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumtranslationindices.json": {
       "hash": "c24f04725f260a333f46b444f0aae358ad8efb7ad73ec1416a27091db19228ab",
-      "last_checked": "2026-10-16T07:31:03.892504",
+      "last_checked": "2026-10-19T20:44:01.891760",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"13bc-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/extremumtranslationindices.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumtranslations.json": {
       "hash": "62ff7d7fb5ae3dab54fc0fffa039af7ad645f85d8fad0638afa63b9d011ebcf8",
-      "last_checked": "2026-10-16T07:31:03.974124",
+      "last_checked": "2026-10-19T20:44:02.001697",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"135d-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/extremumtranslations.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/mastercscaxisvalues.json": {
       "hash": "d32b105776ac912331127fcefa784f68bd808ebb8e03e7dbc07ee0586d705791",
-      "last_checked": "2026-10-16T07:31:04.201139",
+      "last_checked": "2026-10-19T20:44:02.176706",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1265-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/mastercscaxisvalues.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/mastercscrowindices.json": {
       "hash": "2accc72015102d28f6c6368c20f05102bd0cbfbb86e0ef144a3ad19cc9fe2962",
-      "last_checked": "2026-10-16T07:31:04.289989",
+      "last_checked": "2026-10-19T20:44:02.271102",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"12a3-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/mastercscrowindices.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/masterrotationindices.json": {
       "hash": "2ea7999deaa80b84e9ba4a4b2239e711da976cd3cc8eda6a34c3d966992fc0d0",
-      "last_checked": "2026-10-16T07:31:04.374894",
+      "last_checked": "2026-10-19T20:44:02.408201",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"12a1-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/masterrotationindices.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/masterrotations.json": {
       "hash": "543d9b84177455202a3d480fe2dd7ce98dae05e039262a6667ea87d43380fc2a",
-      "last_checked": "2026-10-16T07:31:04.477394",
+      "last_checked": "2026-10-19T20:44:02.526643",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1239-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/masterrotations.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/mastertranslationindices.json": {
       "hash": "92b7b6d3c46be87e3e45493d2777a7e46df904709841eaffa9abaf25988c24cb",
-      "last_checked": "2026-10-16T07:31:04.564098",
+      "last_checked": "2026-10-19T20:44:02.656714",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"12c8-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/mastertranslationindices.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/mastertranslations.json": {
       "hash": "bbfad127fa6708782eddb33f846387730ddccca7142b0bb073c695a5705b3bc3",
-      "last_checked": "2026-10-16T07:31:04.648139",
+      "last_checked": "2026-10-19T20:44:02.765419",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1343-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/mastertranslations.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/maximumextremumcount.json": {
       "hash": "2479abfde33f3a3257783a07dbd7ab75b84c59c1be833fa2ec02975433a8cf0d",
-      "last_checked": "2026-10-16T07:31:04.735744",
+      "last_checked": "2026-10-19T20:44:02.899094",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"120b-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/maximumextremumcount.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/subpartcount.json": {
       "hash": "fe13dad72e3350d5a27d60bf5e8c31112918423a0d78e192263ccc2fdb5812e6",
-      "last_checked": "2026-10-16T07:31:04.824927",
+      "last_checked": "2026-10-19T20:44:03.024165",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1171-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/subpartcount.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/subparts.json": {
       "hash": "9ebfcaee4ecb8312d3f370792308367586b53c76a6f94a32eefbd5cdc0bfeeb1",
-      "last_checked": "2026-10-16T07:31:04.912128",
+      "last_checked": "2026-10-19T20:44:03.147320",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1217-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/subparts.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/totalaxiscount.json": {
       "hash": "69f386d20fe2aa988576cf56e0736bd7816e426fba95fcf460a912767e0b6c9a",
-      "last_checked": "2026-10-16T07:31:05.134428",
+      "last_checked": "2026-10-19T20:44:03.265013",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"11e1-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/totalaxiscount.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/totalpartcount.json": {
       "hash": "47da44d6643e9d0385671bcbe4c3bc423eca492b1e80e4222b7c113123576992",
-      "last_checked": "2026-10-16T07:31:05.359166",
+      "last_checked": "2026-10-19T20:44:03.438722",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"11e3-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/totalpartcount.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/column(axis:extremum:).json": {
       "hash": "aa632bb0e098d0160070ab285553f9d3c12957b96c0c1816b1a5f2259b5c1ab8",
-      "last_checked": "2026-10-16T07:31:05.451374",
+      "last_checked": "2026-10-19T20:44:03.547515",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"17cb-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositewriter/column-axisextremum.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/finalize().json": {
       "hash": "13a5ea385ad63a8d8b50fd52d6944899e6724f8bf596b5c900ff8ebc75093252",
-      "last_checked": "2026-10-16T07:31:05.535193",
+      "last_checked": "2026-10-19T20:44:03.659326",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1161-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/compositewriter/finalize.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partgenerator/makecomposite(_:).json": {
       "hash": "fed2c23af54e2643d02e4404fa893d3b411f6f62091ca1a441012f8779b4cb51",
-      "last_checked": "2026-10-16T07:31:05.618902",
+      "last_checked": "2026-10-19T20:44:03.781259",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"15ba-65d55d988f830-df\"",
       "file_path": "documentation/hvf/partgenerator/makecomposite.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partgenerator/makeshape(_:).json": {
       "hash": "534f017c73fcb3aeff014eb0c102cb86f7bbe052285160c2561a4ede9c5ad81c",
-      "last_checked": "2026-10-16T07:31:05.706451",
+      "last_checked": "2026-10-19T20:44:03.901731",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1547-65d55d988f830-df\"",
       "file_path": "documentation/hvf/partgenerator/makeshape.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/axiscount.json": {
       "hash": "a829bf7e1d4c35d44bf40a58df8f516c3d6cc564dd4d028e39f2d14737ab907d",
-      "last_checked": "2026-10-16T07:31:05.792836",
+      "last_checked": "2026-10-19T20:44:04.022231",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"10f7-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/shapewriter/axiscount.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/blendtypes.json": {
       "hash": "bee26d10e5379c5f038a8bcee31ed5fb262209a835857cabe3707e2591593200",
-      "last_checked": "2026-10-16T07:31:06.018233",
+      "last_checked": "2026-10-19T20:44:04.170420",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"122d-65d55d988f830-df\"",
       "file_path": "documentation/hvf/shapewriter/blendtypes.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/densedeltamatrix.json": {
       "hash": "61d631d33e58b5a61e8120d02c827409d8d026736f7395f342d266b17c311f7b",
-      "last_checked": "2026-10-16T07:31:06.104937",
+      "last_checked": "2026-10-19T20:44:04.299688",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1322-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/shapewriter/densedeltamatrix.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/mastervector.json": {
       "hash": "d96b24235d04a0d025cb7bf728e0697c3f60931715ca535860a7a85ae2444424",
-      "last_checked": "2026-10-16T07:31:06.197710",
+      "last_checked": "2026-10-19T20:44:04.412170",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1368-65d55d988f830-df\"",
       "file_path": "documentation/hvf/shapewriter/mastervector.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/pathsizes.json": {
       "hash": "09602e2e70cfff93a865552c178d01d1eceebed73575bb1dd39e7026d1914fa6",
-      "last_checked": "2026-10-16T07:31:06.311517",
+      "last_checked": "2026-10-19T20:44:04.538558",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"120c-65d55d988f830-df\"",
       "file_path": "documentation/hvf/shapewriter/pathsizes.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/totalsegmentcount.json": {
       "hash": "0012c22e3a7972dd97fde534a0d882d420901c0a395e858478466685e123ac50",
-      "last_checked": "2026-10-16T07:31:06.427317",
+      "last_checked": "2026-10-19T20:44:04.683097",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"119e-65d55d988f830-df\"",
       "file_path": "documentation/hvf/shapewriter/totalsegmentcount.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/densedeltaoffset(axis:extremum:segment:point:coordinate:).json": {
       "hash": "30ce23fc241c8b9ab6baba3541d182cf6f69fa673c5249a86840a0f67c636513",
-      "last_checked": "2026-10-16T07:31:06.521539",
+      "last_checked": "2026-10-19T20:44:04.802312",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"2544-65d55d988f830-df\"",
       "file_path": "documentation/hvf/shapewriter/densedeltaoffset-axisextremumsegmentpointcoordinate.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/finalize().json": {
       "hash": "777d01fb8b9d24bfdaad202bc9196c4115f63ad4dc5dcd4c21f0bc9d01e712be",
-      "last_checked": "2026-10-16T07:31:06.624645",
+      "last_checked": "2026-10-19T20:44:04.911635",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1123-65d55d988f830-df\"",
       "file_path": "documentation/hvf/shapewriter/finalize.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/masteroffset(segment:point:coordinate:).json": {
       "hash": "d24ea526cf44b2f8fa2afda9a160974039fa6acecd115437c6d14fea94f919fd",
-      "last_checked": "2026-10-16T07:31:06.851416",
+      "last_checked": "2026-10-19T20:44:05.036748",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1cea-65d55d988f830-df\"",
       "file_path": "documentation/hvf/shapewriter/masteroffset-segmentpointcoordinate.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositeextremumindex/init(row:column:).json": {
       "hash": "fd325772c23b7441e156bca26dcaa5b361f89fc40362436dae46dd15865c6cff",
-      "last_checked": "2026-10-16T07:31:06.937209",
+      "last_checked": "2026-10-19T20:44:05.159013",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"13b6-65d55d988f830-df\"",
       "file_path": "documentation/hvf/compositeextremumindex/init-rowcolumn.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositeextremumindex/column.json": {
       "hash": "a4a82f7ac83fa9c11b848a7f79775a1179d363dcb8b4c17554ab4a87231f604f",
-      "last_checked": "2026-10-16T07:31:07.025284",
+      "last_checked": "2026-10-19T20:44:05.275148",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1162-65d55d988f830-df\"",
       "file_path": "documentation/hvf/compositeextremumindex/column.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositeextremumindex/row.json": {
       "hash": "09d7e39d97ff16e4318e502791fdb9af1082321aef2cfef0ce1dc908b7699a40",
-      "last_checked": "2026-10-16T07:31:07.115575",
+      "last_checked": "2026-10-19T20:44:05.396571",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"114f-65d55d988f830-df\"",
       "file_path": "documentation/hvf/compositeextremumindex/row.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubpart/init(partindex:treepartoffset:treeaxisoffset:).json": {
       "hash": "eeda46aad289e621c61c1c4cdd59d010d7952d78789eff05719eb802dfcfc66d",
-      "last_checked": "2026-10-16T07:31:07.197671",
+      "last_checked": "2026-10-19T20:44:05.537497",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"18df-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositesubpart/init-partindextreepartoffsettreeaxisoffset.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubpart/partindex.json": {
       "hash": "78f943b9e0f106548176da1077c5e604f5d4df1ee9406547c31ec87e014708b7",
-      "last_checked": "2026-10-16T07:31:07.295165",
+      "last_checked": "2026-10-19T20:44:05.645270",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"10fa-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositesubpart/partindex.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubpart/treeaxisoffset.json": {
       "hash": "8e74b94eaad3f334fdb098f96390e2e3712df8d8e266a0cc0a1fba3eb7e70ec4",
-      "last_checked": "2026-10-16T07:31:07.520102",
+      "last_checked": "2026-10-19T20:44:05.777995",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"11a2-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositesubpart/treeaxisoffset.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubpart/treepartoffset.json": {
       "hash": "aae070b6528f135b4476194e72ccdf35be50775a6d1f8c62e11a2c70c80f9698",
-      "last_checked": "2026-10-16T07:31:07.603960",
+      "last_checked": "2026-10-19T20:44:05.915659",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1182-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/compositesubpart/treepartoffset.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubparttranslation/init(dx:dy:).json": {
       "hash": "ad6b2b5a6dda8b5c5028de67a0fccdbcd38d63398cfd5416b72bad72bd77b820",
-      "last_checked": "2026-10-16T07:31:07.686661",
+      "last_checked": "2026-10-19T20:44:06.049224",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1344-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/compositesubparttranslation/init-dxdy.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubparttranslation/dx.json": {
       "hash": "5dd46724785e58dc9fa789141bc1d50fc5c9ffa5e41737ba8066cad8b1166119",
-      "last_checked": "2026-10-16T07:31:07.773654",
+      "last_checked": "2026-10-19T20:44:06.165440",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"106c-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/compositesubparttranslation/dx.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubparttranslation/dy.json": {
       "hash": "b7cb3cd47eb1d0a73a0f678837b967ff5346ee5c4b49e48005ba74338ff12f3b",
-      "last_checked": "2026-10-16T07:31:07.865845",
+      "last_checked": "2026-10-19T20:44:06.298585",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"106c-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/compositesubparttranslation/dy.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/axisextremum/maximum.json": {
       "hash": "1967fa06b7aa9accadba9abe83dc1d083d1a522c9f7f40e5ee2440b33e4fec0a",
-      "last_checked": "2026-10-16T07:31:07.955460",
+      "last_checked": "2026-10-19T20:44:06.430746",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"c80-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/axisextremum/maximum.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/axisextremum/minimum.json": {
       "hash": "ddd9759e4a67e06e6579b61678a56efd1f046988899da61a18ba568b7afe8382",
-      "last_checked": "2026-10-16T07:31:08.042794",
+      "last_checked": "2026-10-19T20:44:06.544583",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"c80-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/axisextremum/minimum.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult/composite(_:).json": {
       "hash": "f68aaf9d5ca8560a97de5d75fc16eff6dcc90e019e913c0aaa9837bad2f2a22e",
-      "last_checked": "2026-10-16T07:31:08.129330",
+      "last_checked": "2026-10-19T20:44:06.691485",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"11b2-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partresult/composite.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult/notfound.json": {
       "hash": "74c353a830382ec0e20841a3c5a46a4e0a52c3eb8635ff85b9293f4c1cb78b9d",
-      "last_checked": "2026-10-16T07:31:08.217666",
+      "last_checked": "2026-10-19T20:44:06.853745",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"d04-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partresult/notfound.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult/shape(_:).json": {
       "hash": "fd046b3fb2db236459e5e774b12a9b906e8ec10936b2062785a45ac29644659c",
-      "last_checked": "2026-10-16T07:31:08.304290",
+      "last_checked": "2026-10-19T20:44:06.979272",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"113c-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partresult/shape.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/pointcoordinate/xorparallel.json": {
       "hash": "acb8e01db9507875029474f4fd66708ff4a73d67822b2c64a242efc13155a196",
-      "last_checked": "2026-10-16T07:31:08.394727",
+      "last_checked": "2026-10-19T20:44:07.096423",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"cdc-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/pointcoordinate/xorparallel.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/pointcoordinate/yorzero.json": {
       "hash": "b0792a9d45b127902708e103ea9a58dcfce0c4464b4810abe774c84c52805b46",
-      "last_checked": "2026-10-16T07:31:08.483261",
+      "last_checked": "2026-10-19T20:44:07.217007",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"caf-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/pointcoordinate/yorzero.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentblendtype/corner.json": {
       "hash": "66cd266a9e0139d6d54f993717f6fa56fb2a0f1bbf4e6b5c2e7789d3721d354c",
-      "last_checked": "2026-10-16T07:31:08.567788",
+      "last_checked": "2026-10-19T20:44:07.350140",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"d30-65d55d988f830-df\"",
       "file_path": "documentation/hvf/segmentblendtype/corner.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentblendtype/curve.json": {
       "hash": "fdf690868876be62a2ec1df575f3b4e77cb00099fec9d268bf93772e35a23ee3",
-      "last_checked": "2026-10-16T07:31:08.663526",
+      "last_checked": "2026-10-19T20:44:07.513319",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"d23-65d55d988f830-df\"",
       "file_path": "documentation/hvf/segmentblendtype/curve.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentblendtype/tangent.json": {
       "hash": "5e325a1b15f726160ba6e794674d119fea25bd915d64e2553b8a5f9f8abb5c60",
-      "last_checked": "2026-10-16T07:31:08.754024",
+      "last_checked": "2026-10-19T20:44:07.620072",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"d51-65d55d988f830-df\"",
       "file_path": "documentation/hvf/segmentblendtype/tangent.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentblendtype/tangenttangent1.json": {
       "hash": "a4e93520f0774236eb84449b2d87d30595bd5e9f9be905e1bd9c4923bc281698",
-      "last_checked": "2026-10-16T07:31:08.845926",
+      "last_checked": "2026-10-19T20:44:07.740808",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"db8-65d55d988f830-df\"",
       "file_path": "documentation/hvf/segmentblendtype/tangenttangent1.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentblendtype/tangenttangent2.json": {
       "hash": "a38a6a72afce314bce7ca0af5fd5c6d4e52c9456a02d35b2ee7451d57fff3ce0",
-      "last_checked": "2026-10-16T07:31:08.937218",
+      "last_checked": "2026-10-19T20:44:07.859744",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"dba-65d55d988f830-df\"",
       "file_path": "documentation/hvf/segmentblendtype/tangenttangent2.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentpoint/off.json": {
       "hash": "86293a7c497f6a9b9417edc3d1e822f1bc405de24671fe351d18200f42e45f32",
-      "last_checked": "2026-10-16T07:31:09.021862",
+      "last_checked": "2026-10-19T20:44:07.965803",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"c53-65d55d988f830-df\"",
       "file_path": "documentation/hvf/segmentpoint/off.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/segmentpoint/on.json": {
       "hash": "ce5779c46e9050d2f65b0a51df569ca7c39f7832c602c277f3611777fdc5f5db",
-      "last_checked": "2026-10-16T07:31:09.112802",
+      "last_checked": "2026-10-19T20:44:08.092793",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"c48-65d55d988f830-df\"",
       "file_path": "documentation/hvf/segmentpoint/on.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/axisvalues/isnested.json": {
       "hash": "a3e51e68ae741208faf90834a045f85720047d9672c1b12fa656980642e9c2f9",
-      "last_checked": "2026-10-16T07:31:09.207473",
+      "last_checked": "2026-10-19T20:44:08.245177",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"14f4-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/axisvalues/isnested.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/axisvalues/blendedvalue(axis:).json": {
       "hash": "a2a1b908682853b51256741d008540cad6e2890b7c1685bd53ec9df84b074c2c",
-      "last_checked": "2026-10-16T07:31:09.293006",
+      "last_checked": "2026-10-19T20:44:08.363665",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"19fe-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/axisvalues/blendedvalue-axis.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters/axisvalues.json": {
       "hash": "e68008b5c9d73a322efd15631554753add2bec4f80485de5dd99965548592ec0",
-      "last_checked": "2026-10-16T07:31:09.382200",
+      "last_checked": "2026-10-19T20:44:08.477071",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1712-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters/axisvalues.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters/blendedrotation.json": {
       "hash": "04e47728a4ba7db0a74e3024c750d06c969ccf91c4817b08b2ab9821a46fa9b2",
-      "last_checked": "2026-10-16T07:31:09.476786",
+      "last_checked": "2026-10-19T20:44:08.609092",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1498-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters/blendedrotation.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters/blendedtranslation.json": {
       "hash": "67dbd1e628481e185f205e8f9f3023227ed3459b4bc7540627ddae3f9d3c8254",
-      "last_checked": "2026-10-16T07:31:09.573786",
+      "last_checked": "2026-10-19T20:44:08.735106",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1707-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters/blendedtranslation.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters/partindex.json": {
       "hash": "e69e5eb06e22a6ef0ed98c705775a3f62ff8ef2a78ddbcbda02cf265c9291694",
-      "last_checked": "2026-10-16T07:31:09.666372",
+      "last_checked": "2026-10-19T20:44:08.863307",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"13f6-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters/partindex.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters/rotation.json": {
       "hash": "071df8988dac641104f809bc0f56311952bdf7f4a1872c7d672b6930b91b18bf",
-      "last_checked": "2026-10-16T07:31:09.747576",
+      "last_checked": "2026-10-19T20:44:08.995050",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"148f-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters/rotation.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters/subparts.json": {
       "hash": "08ad396086b04da70cbd2342cc8c88c4caf6896c5111bd315f891d38c7dd97d8",
-      "last_checked": "2026-10-16T07:31:09.812851",
+      "last_checked": "2026-10-19T20:44:09.104198",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"16d8-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters/subparts.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/partparameters/translation.json": {
       "hash": "4831a31ecbc4ee725801ead6691cc18ded86df1a59a4c4331bcb510cefcbae06",
-      "last_checked": "2026-10-16T07:31:09.919217",
+      "last_checked": "2026-10-19T20:44:09.216329",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"16cd-65d55d98bf9cb-df\"",
       "file_path": "documentation/hvf/partrenderer/partparameters/translation.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/point/init(x:y:).json": {
       "hash": "d61a98fb143602904f6a150380b538c1ecbf79aa1636ff2b6cf33cca5943c444",
-      "last_checked": "2026-10-16T07:31:10.006962",
+      "last_checked": "2026-10-19T20:44:09.342835",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1531-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/point/init-xy.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/point/x.json": {
       "hash": "22076dcc5ca8844a50c13729871b472b779cf58c90b83cce4b2d6b674c7077d8",
-      "last_checked": "2026-10-16T07:31:10.093465",
+      "last_checked": "2026-10-19T20:44:09.476119",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1260-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/point/x.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/point/y.json": {
       "hash": "808c461620c42687a183e15e912e89aed80acf9c93afd6d1301ab2d3c7c91b56",
-      "last_checked": "2026-10-16T07:31:10.175412",
+      "last_checked": "2026-10-19T20:44:09.603201",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1260-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/point/y.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/translation/init(dx:dy:).json": {
       "hash": "8751bcf22a633c9c28a10a634064a457e95f7dd678a23aaed12f860e5a4e20a5",
-      "last_checked": "2026-10-16T07:31:10.265295",
+      "last_checked": "2026-10-19T20:44:09.717905",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1598-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/translation/init-dxdy.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/translation/dx.json": {
       "hash": "6af2df2d0951611656138e5e45d5605059a597a790afbb9a6b469001ba1e339c",
-      "last_checked": "2026-10-16T07:31:10.357731",
+      "last_checked": "2026-10-19T20:44:09.840898",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"12bc-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/translation/dx.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/translation/dy.json": {
       "hash": "e97f3d57cf8ae623d67a953a588fe196f70229ff7a6d4733b13c3768a5f14959",
-      "last_checked": "2026-10-16T07:31:10.446167",
+      "last_checked": "2026-10-19T20:44:09.978554",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"12bc-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/translation/dy.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/action/continue.json": {
       "hash": "1c4c3e37313ae4fb466e6e0ee8984a9b93a47a0c8aa5ec08f34af56c1337d61d",
-      "last_checked": "2026-10-16T07:31:10.542054",
+      "last_checked": "2026-10-19T20:44:10.125185",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"ffa-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/action/continue.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/action/skip.json": {
       "hash": "e67c7f1b5f808ca3c90b24a0e301d582a7760f79ecc9ff1efb1dd481ee16af99",
-      "last_checked": "2026-10-16T07:31:10.584937",
+      "last_checked": "2026-10-19T20:44:10.232727",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1000-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/action/skip.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/action/stop.json": {
       "hash": "5eadb6d0b63dc987a2163466cfe6fa8352b08260bb458c0bab323a7910442267",
-      "last_checked": "2026-10-16T07:31:10.711422",
+      "last_checked": "2026-10-19T20:44:10.366386",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"fc0-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/action/stop.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addcubic(cp1:cp2:on:).json": {
       "hash": "a6090f6c3dd03d7a7bdd2b3503abe4fba4359d48499327ed487ef165601ecec9",
-      "last_checked": "2026-10-16T07:31:10.801701",
+      "last_checked": "2026-10-19T20:44:10.484434",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1eee-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/addcubic-cp1cp2on.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addline(_:).json": {
       "hash": "97c256f208bbef84ee4aaff4a7a9334fbdc90a8721d4c66827a195644e4b949a",
-      "last_checked": "2026-10-16T07:31:10.902101",
+      "last_checked": "2026-10-19T20:44:10.591083",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"158c-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/addline.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addpoint(_:).json": {
       "hash": "83386f6ea8c292f4245f73cd4b34926596867017be6e1a825d4a93f10d290521",
-      "last_checked": "2026-10-16T07:31:10.981501",
+      "last_checked": "2026-10-19T20:44:10.721339",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1594-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/addpoint.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addquad(off:on:).json": {
       "hash": "79af96ffff6795dce88d3398f59cb3495143c6c77df3828ddbc1b6a482338cbd",
-      "last_checked": "2026-10-16T07:31:11.064097",
+      "last_checked": "2026-10-19T20:44:10.851793",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1a9e-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/addquad-offon.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/beginpart(id:name:).json": {
       "hash": "fbca34d7f340552872cdfa397a096d0728811bd62404f7bbd6f7816129d38967",
-      "last_checked": "2026-10-16T07:31:11.150860",
+      "last_checked": "2026-10-19T20:44:10.977040",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"196b-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/beginpart-idname.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/beginpath.json": {
       "hash": "c5ba9f8361b52a7cb6376819435eb2352fe0d2fb9232989a0de880b1361e5b35",
-      "last_checked": "2026-10-16T07:31:11.238461",
+      "last_checked": "2026-10-19T20:44:11.097067",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"fd3-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/beginpath.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/closepath.json": {
       "hash": "cb5030dbeca7c65c867eee941dffa610d59f3dc9f1330d2f589589d945062bac",
-      "last_checked": "2026-10-16T07:31:11.337235",
+      "last_checked": "2026-10-19T20:44:11.277117",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"fd3-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/closepath.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/endpart(id:name:).json": {
       "hash": "42df2875f78c48b39e5872bbc5ab043aec750c74ad828958229633440510f03f",
-      "last_checked": "2026-10-16T07:31:11.422529",
+      "last_checked": "2026-10-19T20:44:11.426405",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"1955-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/endpart-idname.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/endpath.json": {
       "hash": "0129325abb1640cca24266b58a1ce69a5c98ea8569db1b70786362635fcc6e99",
-      "last_checked": "2026-10-16T07:31:11.464275",
+      "last_checked": "2026-10-19T20:44:11.592883",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"fbd-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/endpath.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/stop.json": {
       "hash": "ce14a40e21890432d76bbf0df319ccfd544a6970d263a86947b7361227074fe2",
-      "last_checked": "2026-10-16T07:31:11.580343",
+      "last_checked": "2026-10-19T20:44:11.736469",
       "status": "unchanged",
-      "session_id": "2026-10-16T07:30:56.315231",
+      "session_id": "2026-10-19T20:43:56.016199",
       "etag": "\"f9c-65d55d98d05cd-df\"",
       "file_path": "documentation/hvf/partrenderer/instruction/stop.md"
     },

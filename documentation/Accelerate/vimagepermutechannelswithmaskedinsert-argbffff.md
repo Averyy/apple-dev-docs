@@ -30,6 +30,8 @@ This fused operation provides the same functionality as [`vImagePermuteChannels_
 
 The following code reverses the channel ordering of a pixel buffer and overwrites channel `0` of the destination with element `0` of the background color:
 
+**Swift**:
+
 ```swift
 let pixelBuffer = vImage.PixelBuffer<vImage.InterleavedFx4>(
     pixelValues: [10, 20, 30, 40],
@@ -48,6 +50,32 @@ pixelBuffer.withUnsafePointerToVImageBuffer { buf in
 
 // Prints "[101, 30, 20, 10]".
 print(pixelBuffer.array)
+```
+
+**Objective-C**:
+
+```objc
+float data[4] = {10, 20, 30, 40};
+
+vImage_Buffer buf = {
+    .data = data,
+    .width = 1,
+    .height = 1,
+    .rowBytes = 16
+};
+
+uint8_t permuteMap[4] = {3, 2, 1, 0};
+float backgroundColor[4] = {101, 102, 103, 104};
+
+vImagePermuteChannelsWithMaskedInsert_ARGBFFFF(&buf,
+                                               &buf,
+                                               permuteMap,
+                                               0x8,
+                                               backgroundColor,
+                                               kvImageNoFlags);
+
+// Prints "[101, 30, 20, 10]".
+printf("[%g, %g, %g, %g]\n", data[0], data[1], data[2], data[3]);
 ```
 
 ## Parameters

@@ -269,7 +269,7 @@ For more information about making iOS controls accessible, see the accessibility
   The preferred menu-element ordering strategy for the menu.
 ### Deprecated
 - [Deprecated symbols](uibutton-deprecated-symbols.md)
-  Symbols that buttons no longer support.
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

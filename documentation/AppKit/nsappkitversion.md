@@ -123,13 +123,9 @@ struct NSAppKitVersion
 - [static var macOS13_6: NSAppKitVersion](nsappkitversion/macos13_6.md)
 - [static var macOS14_0: NSAppKitVersion](nsappkitversion/macos14_0.md)
 - [static var macOS14_1: NSAppKitVersion](nsappkitversion/macos14_1.md)
-- [static var number10_14: NSAppKitVersion](nsappkitversion/number10_14.md)
-- [static var number10_14_1: NSAppKitVersion](nsappkitversion/number10_14_1.md)
-- [static var number10_14_2: NSAppKitVersion](nsappkitversion/number10_14_2.md)
-- [static var number10_14_3: NSAppKitVersion](nsappkitversion/number10_14_3.md)
-- [static var number10_14_4: NSAppKitVersion](nsappkitversion/number10_14_4.md)
-- [static var number10_14_5: NSAppKitVersion](nsappkitversion/number10_14_5.md)
-- [static var number10_15: NSAppKitVersion](nsappkitversion/number10_15.md)
+### Deprecated
+- [Deprecated symbols](nsappkitversion-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

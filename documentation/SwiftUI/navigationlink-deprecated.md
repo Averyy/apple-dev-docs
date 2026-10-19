@@ -2,9 +2,11 @@
 
 **Framework**: SwiftUI
 
-Review deprecated navigation link initializers.
+Review symbols that are no longer in active development, and their recommended replacements.
 
 #### Overview
+
+Although these symbols are available for use, Apple is no longer actively developing them, and may remove them in a future release. Apple recommends moving away from these symbols and using their indicated replacements instead. Check the individual symbol pages for the recommended replacements.
 
 For information about updating your use of navigation symbols, see [`Migrating to new navigation types`](migrating-to-new-navigation-types.md).
 
@@ -35,6 +37,9 @@ For information about updating your use of navigation symbols, see [`Migrating t
   Creates a navigation link that presents a destination view when a bound selection variable matches a value you provide, using a text label that the link generates from a title string.
 - [init<V>(destination: Destination, tag: V, selection: Binding<V?>, label: () -> Label)](navigationlink/init(destination:tag:selection:label:).md)
   Creates a navigation link that presents the destination view when a bound selection variable equals a given tag value.
+### Deprecated initializers
+- [init(destination:label:)](navigationlink/init(destination:label:).md)
+  Creates a navigation link that presents the destination view.
 
 
 ---

@@ -44,7 +44,7 @@ When your app starts standard location services in the foreground, they continue
 
 ## Topics
 
-### Related Documentation
+### Related documentation
 - [Handling location updates in the background](handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
 - [NSLocationWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationwheninuseusagedescription.md)

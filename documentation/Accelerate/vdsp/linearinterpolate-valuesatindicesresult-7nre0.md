@@ -22,7 +22,7 @@ static func linearInterpolate<T, U, V>(values: T, atIndices indices: U, result: 
 
 #### Discussion
 
-The following code creates a five-element vector from two values using linear interpolation. The last index in `indices` determines the length of the operation result.
+The following code creates a five-element vector from two values using linear interpolation. The last index in `indices` determines the length of the operation result:
 
 ```swift
 let values: [Double] = [0, 100]

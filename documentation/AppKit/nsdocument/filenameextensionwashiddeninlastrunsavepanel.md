@@ -29,8 +29,6 @@ The Save panel includes an option to hide a document’s filename extension. If 
   Presents a modal Save panel to the user, then tries to save the document if the user approves the operation.
 - [func prepareSavePanel(NSSavePanel) -> Bool](nsdocument/preparesavepanel(_:).md)
   Tells the document to customize the specified Save panel.
-- [var shouldRunSavePanelWithAccessoryView: Bool](nsdocument/shouldrunsavepanelwithaccessoryview.md)
-  A Boolean value that indicates whether the document’s Save panel displays a list of supported writable document types.
 - [var fileTypeFromLastRunSavePanel: String?](nsdocument/filetypefromlastrunsavepanel.md)
   The file type that was last selected in the Save panel.
 

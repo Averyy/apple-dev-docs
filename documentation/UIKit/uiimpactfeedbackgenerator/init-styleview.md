@@ -20,6 +20,8 @@ convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)
 
 - [UIImpactFeedbackGenerator.FeedbackStyle](uiimpactfeedbackgenerator/feedbackstyle.md)
   The mass of the objects in the collision simulated by an impact feedback generator object.
+- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](uiimpactfeedbackgenerator/init(style:).md)
+  Creates an impact feedback generator with the specified style.
 
 
 ---

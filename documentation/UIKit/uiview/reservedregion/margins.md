@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-The margins included in the frame around the reserved region for interactive content.
+The extra space around the reserved area that keeps interactive content clear of it.
 
 **Availability**:
 - iOS 27.1+
@@ -18,12 +18,16 @@ The margins included in the frame around the reserved region for interactive con
 let margins: UIEdgeInsets
 ```
 
+#### Discussion
+
+The region’s [`frame`](uiview/reservedregion/frame.md) already includes these margins.
+
 ## See Also
 
 - [let frame: CGRect](uiview/reservedregion/frame.md)
-  The rectangle of the region in the view’s coordinate space, including the margins.
+  The rectangle that describes the region within your view.
 - [let isActive: Bool](uiview/reservedregion/isactive.md)
-  A Boolean value that indicates whether the region is currently active.
+  A Boolean value that indicates whether the region is active.
 - [let kind: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.property.md)
   The kind of the region.
 - [UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct.md)

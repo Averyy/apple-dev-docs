@@ -54,7 +54,7 @@ On return, `outputDescriptor` contains the values `[10.0, 22.0, 30.0, 44.0, 50.0
 
 [`BNNSScatter(_:_:_:_:_:_:)`](bnnsscatter(_:_:_:_:_:_:).md) supports scattering values from a tensor with two or more dimensions using indices defined as a 1D vector. In this case, the indices correspond to the values along an entire axis and the input and output shapes must match.
 
-The following code scatters three rows from the input tensor to rows `[1, 3, 4]` in the output tensor. In this case, the operation sets the destination value.
+The following code scatters three rows from the input tensor to rows `[1, 3, 4]` in the output tensor. In this case, the operation sets the destination value:
 
 ```swift
 let values: [Float] = [10, 11, 12,
