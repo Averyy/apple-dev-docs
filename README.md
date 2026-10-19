@@ -2,7 +2,7 @@
 
 > **Note:** This is an independent project not affiliated with, endorsed by, or sponsored by Apple Inc. Documentation content is © Apple Inc. and provided for development use only.
 
-An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 390+ frameworks, 322K+ documents, sub-3ms search.
+An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 390+ frameworks, 322K+ documents, ~16 ms median search.
 
 [![Frameworks](https://img.shields.io/badge/frameworks-390%2B-blue)](https://xdocs.dev)
 [![Documents](https://img.shields.io/badge/documents-322K%2B-green)](https://xdocs.dev)
@@ -79,16 +79,16 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 - **Human Interface Guidelines** - Apple's design documentation for all platforms
 - **Swift Language Guide** - The Swift Programming Language book, API Design Guidelines, C++ Interop
 - **MLX & CoreML Tools** - Apple's ML framework documentation
-- **Sub-3ms search** - Powered by Meilisearch
+- **Fast search** - Powered by Meilisearch (~16 ms median per search, one result per page)
 - **Platform filtering** - iOS, macOS, tvOS, watchOS, visionOS
-- **Wildcard search** - `UIView*`, `NS*Button`, `Button?` (patterns filter the top matches, so start with a literal prefix)
+- **Wildcard search** - `UIView*`, `UI*Controller`, `Button?` (matched against the top matches for the pattern's text and, when it starts with two or more literal characters, every API name starting with them, up to 10,000; names in the pattern's case come first, unless it is all lowercase)
 - **Token management** - 1K-25K token budgets
 - **Native HTTP** - Streamable HTTP transport (no wrappers needed)
 
 ## Available Tools
 
 ### `search_apple_docs`
-Search documentation with natural language queries.
+Search documentation with natural language queries (one result per page).
 
 ```
 query: "SwiftUI Button custom style"
@@ -98,11 +98,12 @@ limit: 10 (1-20)
 ```
 
 ### `expand_result`
-Get full documentation for a symbol.
+Get full documentation for a symbol or file path. A page too long for one response comes in parts: a reply holds as many as fit and ends with which ones (e.g. "Parts 1-4 of 12") and the `part` to pass for the rest (a search result from a long page shows the part it matched, which `part` can start from).
 
 ```
 file_path: "Button" or "documentation/SwiftUI/view.md"
 framework: "SwiftUI" (optional, for symbol names found in several frameworks)
+part: 5 (optional, the part of a long page to start from)
 ```
 
 ### `list_frameworks`
@@ -204,12 +205,22 @@ cd scripts && python3 index_to_meilisearch.py
 - A page that fails to convert or save on 3 runs, with no successful save in between, stops blocking but is kept
 - A framework's root page never counts toward the 3 failed fetch runs (a root that fails to convert or save follows the rule above). If the root or its links can't be read (a failure other than 404/410, or a 404/410 after the root answered normally earlier in the same run), the framework's cleanup is skipped on every run until the root recovers. A root that returns 404/410 (Apple may be removing the framework, not an error of ours) skips it too, unless the root answers normally later in the same run. Once it has returned 404/410 on 2 runs with no normal answer in between, the framework's docs dir and hash file are deleted at the end of that run
 
+### Re-indexing
+
+**`scripts/index_to_meilisearch.py`** - Keeps the `apple-docs` index in step with `documentation/` and records each file's hash for the next run. The live index serves every search throughout:
+- **Update** (the usual run): new and changed docs are added first, then the documents they no longer have (fewer chunks, a doc that became one document or several) and those of removed docs are deleted by `file_path`, at most 2,000 paths per delete; removed docs leave the hash file. A run with nothing changed sends nothing to the live index (its settings are updated only where they differ)
+- **Rebuild** (`--force`, or when one is due): every doc goes into a new index, `apple-docs-build`, which replaces the live index in one atomic swap once it holds at least 90% as many documents as there are files (on a fresh volume it is renamed to `apple-docs`). A rebuild is due when there is no index yet, when the hash file records another processor version (`PROCESSOR_VERSION`, bumped whenever the documents built from a file change) or another index (it records the `createdAt` of the index its hashes describe), when an older version of the indexer has run on the live index (a rollback: it drops `index_gen` from the filterable attributes and leaves stale documents), 6.5 days after the live index was built, or when more than 25% of the files changed. A failed rebuild leaves the live index as it was. Over a live index, a rebuild starts only when Meilisearch's disk has room for the second index (1.2× the database's size on disk plus 1 GiB free, checked in the Docker image, where the indexer runs beside Meilisearch), and stops, deleting its build index, if free space falls under 1 GiB between two batches: a full disk would crash Meilisearch and keep it from starting again. When a due rebuild fails before its swap, or isn't started for lack of disk, the run applies the update to the live index instead (once Meilisearch answers again, if it went down), records the rebuild as still due and exits 1, and the next run retries the rebuild. That update also indexes again any file an older version of the indexer added documents for (a rollback), so the stale documents beside them go. `--limit` (for testing) rebuilds only on a fresh index, never in place of a live one
+- **Image completeness:** in the Docker image, `DOC_FILE_COUNT` (set by the docker-build workflow) is the `.md` count of the checkout the image was built from. An image holding another count is incomplete: nothing is swapped, added or deleted, and the run exits 1. Without it (local runs and builds), the docs must number at least 90% of the live index's documents; set `DOC_FILE_COUNT` to the expected count to confirm a larger removal
+- It checks the outcome of every Meilisearch task it queues. If one fails, or Meilisearch can't be reached, it stops, saves no hashes and exits 1, so the next run indexes the same files again (an update records the files it sends as pending in the hash file before its first add, so the documents of one removed since are deleted instead of staying in search; a due rebuild's failure is first followed by the update, above); in the Docker image, Meilisearch and the MCP server keep serving the index as it is
+- A file it can't index is left out, logged and counted, and the run still exits 0, so one bad file can't fail every run: a file that can't be read or processed, one whose name isn't valid UTF-8 or with a document id Meilisearch would reject (over 511 bytes, or characters other than `A-Z a-z 0-9 _ -`; either would fail its whole batch), or one whose `file_path` is over 468 bytes as Meilisearch filters it (Meilisearch keeps only its first 468 bytes, so a filter on its path never finds or deletes it, and one on another file's path equal to those bytes catches it too). Its hash isn't recorded, so it is tried again on every run, and a changed file keeps its old documents until then
+- In the Docker image, `startup_check.py` runs it on every container start (never with `--force`: the indexer decides), and its whole output, including its mode (incremental update or rebuild by swap, and why), each file left out and the cause of a failed run, goes to `/data/logs/startup-check.log`
+
 ## Requirements
 
 - Python 3.11+ or Docker (the Docker image uses 3.11)
 - Python 3.12+ to scrape, as the scheduled scrape workflow does: the MLX scraper needs wafer-py (`pip install -r requirements.txt -r requirements-scrape.txt`)
 - 1.5GB RAM (4GB+ recommended for indexing)
-- ~5GB disk space (1.5GB documentation + Meilisearch index + Docker image)
+- ~13GB disk space: the Docker image (~2.5GB, the 1.4GB documentation included) and the Meilisearch index (~5GB on disk for the full corpus, which `/stats` reports as ~3GB), which a rebuild needs room for twice: the new index is built beside the live one until the swap. With less, the indexer doesn't start the rebuild and keeps updating the live index (see Re-indexing)
 
 ## License
 

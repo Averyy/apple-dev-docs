@@ -39,16 +39,16 @@ curl -X POST https://xdocs.dev/mcp \
 
 **Health endpoint status codes:**
 - `200 OK` with `status: healthy` - Ready for use (322K+ docs indexed)
-- `503 Service Unavailable` with `status: indexing` - Index building or a recent index task (<3.5 min); searches still work (check `documents` and `progress`)
-- `503 Service Unavailable` with `status: degraded` - Partial index (<290K docs)
+- `503 Service Unavailable` with `status: indexing` - The live index was just updated: an incremental update, or a rebuild's swap (<3.5 min after its last add); it serves every search. A rebuild in progress never shows as `indexing`: `/health` reports only the live `apple-docs` index, with its old `documents` count, until the swap
+- `503 Service Unavailable` with `status: degraded` - Partial index (<290K docs); on a fresh volume, 0 docs until its first build is renamed in
 - `503 Service Unavailable` with `status: unhealthy` - Meilisearch unavailable
 
-**Container healthcheck:** Docker health curls the MCP app itself (`localhost:$HTTP_PORT/health`) with `Host: ${ALLOWED_HOSTS%%,*}`, so app-level failures (e.g. Host header rejection) show as `unhealthy` in `docker ps`. During a full reindex the app returns 503 below the serving threshold, so the container honestly reports unhealthy until the index is ready — that's intentional, not a bug.
+**Container healthcheck:** Docker health curls the MCP app itself (`localhost:$HTTP_PORT/health`) with `Host: ${ALLOWED_HOSTS%%,*}`, so app-level failures (e.g. Host header rejection) show as `unhealthy` in `docker ps`. A rebuild over a live index doesn't turn the container unhealthy (it is built beside the live index and swapped in); only the short `indexing` window after an update or a swap can. A fresh volume's first build still does, since there is no live index yet: 0 docs, `degraded` (503) until the rename-swap and through the short `indexing` window after it — that's intentional, not a bug.
 
 **Health endpoint timestamps:**
 - `docs_updated` - When docs were last changed (last git commit to `documentation/`, set at image build time)
 - `last_indexed` - When Meilisearch indexing last completed
-- `last_index_full` - When Meilisearch full rebuild ran
+- `last_index_full` - When the last full rebuild was swapped in
 - `image_built` - When Docker image was created
 
 ## Docker ENV Gotcha
@@ -65,13 +65,14 @@ Docker ENV takes precedence over Python defaults. If you change a default in Pyt
 
 GitHub Actions deploys via `docker compose pull && docker compose up -d --remove-orphans --force-recreate`: the old container keeps serving while the image downloads, then it is **recreated** (~10-20 s outage).
 
-**Important:** If deploy happens during indexing:
-1. Container is destroyed mid-indexing
-2. New container starts with low doc count
-3. `startup_check.py` sees <90% of expected docs (needs ~290K to skip rebuild)
-4. Full rebuild triggers (~15-20 min on Meilisearch v1.49; was ~2h on v1.33)
+On every start, `startup_check.py` runs the indexer, and the live `apple-docs` index keeps serving every search:
+- **Incremental update** (the usual deploy): new and changed docs are added first, then the documents they no longer have and those of removed docs are deleted by `file_path` (add-then-sweep, by `index_gen`). A start with no doc changes queues no task on the live index (settings are applied only where they differ), so `/health` stays 200
+- **Rebuild by swap** when one is due: no live index yet (fresh volume), a new `PROCESSOR_VERSION`, a hash file that doesn't describe the live index (`meilisearch_hashes.json` records the `createdAt` of the index its hashes belong to), an older indexer has run on the live index (a rollback: older indexers drop `index_gen` from its filterable attributes and only add, leaving stale documents), 6.5 days since the live index was built (UTC, from its `createdAt`), or more than 25% of the files changed. The new index is built in `apple-docs-build` (~15-20 min on Meilisearch v1.49) and swapped in atomically, so disk peaks at two indexes: ~9.6 GB (one full index takes ~4.8 GB on disk; `/stats` `usedDatabaseSize` says ~3.1 GB), plus the ~2.5 GB image
+- **Disk check:** a full disk would crash Meilisearch (SIGBUS) and keep it from starting again while the unfinished build fills the disk, so over a live index the indexer starts a rebuild only with 1.2× the database's size on disk + 1 GiB free on `/data/meilisearch` (~6.8 GB today), and stops it (deleting `apple-docs-build`) if free space falls under 1 GiB between two batches. The log shows `✓ Disk: …` or the shortfall
+- **A due rebuild that fails before its swap, or isn't started for lack of disk,** leaves the live index serving; the same run then applies the incremental update to it (after waiting up to 2 min for Meilisearch to answer again, if it crashed or was OOM-killed mid-build: supervisord restarts it), records the rebuild as still due in the hash file (`rebuild_due`) and exits 1, and every start retries the rebuild until one succeeds (`last_index_full` moves). New docs and Apple's removals keep reaching search meanwhile. After a rollback, that update also re-indexes the files the older indexer added documents for, so their stale documents don't wait for the rebuild
+- **Image completeness:** docker-build bakes the checkout's `.md` count into the image (`DOC_FILE_COUNT`). An image holding another count is truncated: the indexer swaps, adds and deletes nothing, exits 1, and the live index keeps serving. Local builds carry no count and fall back to requiring 90% of the live index's size
 
-Once index completes (322K+ docs), subsequent deploys will be fast (incremental updates only).
+**If a deploy happens during indexing:** the container is destroyed mid-run, and the live index is never left partial. A rebuild was going into `apple-docs-build`: the next start deletes it and rebuilds by swap again (its hash file still describes the old index). An update saved no new hashes, but it recorded the docs it was sending as pending in the hash file before its first add: the next start sends them again, or deletes their documents if they were removed since.
 
 **Scrape schedule:** Tue/Fri at 2:07 AM EST (7:07 AM UTC), triggered via VPS cron
 
@@ -90,7 +91,7 @@ If issues persist, consider:
 
 ## Project Overview
 
-MCP server for Apple Developer Documentation with Meilisearch backend. 390+ frameworks, 322K+ documents, sub-3ms search.
+MCP server for Apple Developer Documentation with Meilisearch backend. 390+ frameworks, 322K+ documents, ~16 ms median search.
 
 ## Critical Rules
 
@@ -153,7 +154,7 @@ uv pip install -r requirements.txt -r requirements-scrape.txt
 ## Architecture
 
 - **Scraper**: Uses Apple's JSON API (not HTML)
-- **Search**: Meilisearch (<3ms latency; engine version pinned in `mcp-server/Dockerfile`, Python client pinned in both requirements files — keep them matched)
+- **Search**: Meilisearch (~16 ms median search on the full index; engine version pinned in `mcp-server/Dockerfile`, Python client pinned in both requirements files — keep them matched)
 - **MCP Server**: FastMCP with Streamable HTTP transport
 - **Indexing**: ~15-20 minutes for 322K+ documents on Meilisearch v1.49 (measured in production 2026-07-07; was ~2 hours on v1.33)
 
@@ -197,8 +198,14 @@ docker exec apple-docs-mcp tail -f /data/logs/mcp-server.log
 # Check container status
 docker ps | grep apple-docs
 
-# Check indexing progress (real-time stats from Meilisearch)
+# Indexer output of the last start (its mode: incremental update or rebuild by swap, and why)
+docker exec apple-docs-mcp tail -50 /data/logs/startup-check.log
+
+# Check the live index (real-time stats from Meilisearch)
 docker exec apple-docs-mcp sh -c 'curl -s -H "Authorization: Bearer $MEILI_MASTER_KEY" localhost:7700/indexes/apple-docs/stats'
+
+# Check a rebuild's progress (the new index, built beside the live one until the swap)
+docker exec apple-docs-mcp sh -c 'curl -s -H "Authorization: Bearer $MEILI_MASTER_KEY" localhost:7700/indexes/apple-docs-build/stats'
 
 # Redeploy with latest image
 docker pull ghcr.io/averyy/apple-dev-docs:latest
@@ -206,16 +213,16 @@ docker stop apple-docs-mcp && docker rm apple-docs-mcp
 # Then run docker-compose up -d or your docker run command
 ```
 
-**Note:** The `/health` endpoint returns real-time stats from Meilisearch (not cached). Use it to check `documents` and `is_indexing` status.
+**Note:** The `/health` endpoint returns real-time stats from Meilisearch (not cached), for the live index only: during a rebuild it shows the old live `documents` count (the rebuild's progress is in `apple-docs-build`'s stats, above), and on a fresh volume 0 docs (`degraded`) until the first build is renamed in.
 
 ## Document Count Discrepancy
 
 The landing page and health API show slightly different document counts - this is expected:
 
-- **Landing page** (`find` count): Number of markdown files on disk (~322.2K)
-- **Health API** (Meilisearch count): Number of indexed documents (~322.4K)
+- **Landing page** (`find` count): Number of markdown files on disk (~324.7K)
+- **Health API** (Meilisearch count): Number of indexed documents (~325.2K)
 
-The difference (~300-400) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents. One markdown file can produce multiple indexed documents. This is intentional for search performance.
+The difference (~430) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents, each with its own id (`<sha1 of file_path>_chunk_<n>`; an unchunked file's id is the bare sha1): on 2026-10-19 the 86 files over 50KB gave 518 documents, 324,740 files 325,172. One markdown file can produce multiple indexed documents. This is intentional for search performance.
 
 ## Local Testing
 
@@ -226,13 +233,22 @@ cd mcp-server
 docker compose -f docker-compose.local.yml up --build
 ```
 
+A plain local build leaves `DOC_FILE_COUNT` empty, so the indexer falls back to the 90%-of-the-live-index check. To build as docker-build does (the count gates every production swap and delete), pass it to `build`, then start without `--build`, which would drop it:
+```bash
+docker compose -f docker-compose.local.yml build --build-arg DOC_FILE_COUNT=$(find ../documentation -name '*.md' | wc -l | xargs)
+docker compose -f docker-compose.local.yml up -d
+```
+
 Monitor progress:
 ```bash
 # Memory usage
 docker stats apple-docs-mcp-local --no-stream --format "{{.MemUsage}}"
 
-# Indexing progress
-curl -s http://localhost:8001/health | python3 -c "import sys,json; d=json.load(sys.stdin); print(f\"{d.get('documents',0):,} docs ({d.get('progress','?')})\")"
+# Live index (during a rebuild, its old count until the swap)
+curl -s http://localhost:8001/health | python3 -c "import sys,json; d=json.load(sys.stdin); print(f\"{d.get('documents',0):,} docs ({d.get('status','?')})\")"
+
+# A rebuild's progress
+docker exec apple-docs-mcp-local sh -c 'curl -s -H "Authorization: Bearer $MEILI_MASTER_KEY" localhost:7700/indexes/apple-docs-build/stats'
 ```
 
 Search eval, once the index is complete: scores `search_apple_docs` on the golden queries (`mcp-server/tests/golden_queries.json`, expectations keyed by canonical URL) by hit@3 and MRR, and `expand_result`'s symbol lookups (entries with `"expand": true`) by expand@1. It runs on the host, from the repo root, since it resolves the expectations through `.hashes` and `documentation/`:
@@ -248,10 +264,7 @@ docker compose -f docker-compose.local.yml down -v  # -v removes volumes
 
 ## Landing Page & SKILL.md
 
-**IMPORTANT:** When updating the SKILL.md content, update ALL THREE locations:
-1. `landing/SKILL.md` - standalone file for download/reference
-2. `landing/index.html` - Claude Code tab (search for `id="claude-skills"`)
-3. `landing/index.html` - Claude Desktop tab (search for `id="desktop-skills"`)
+**`landing/SKILL.md` is the only copy of the skill.** Edit it there and nowhere else: `landing/index.html` fills both skill blocks (Claude Code tab `id="claude-skills"`, Claude Desktop tab `id="desktop-skills"`, marked `data-skill`) with `fetch('/SKILL.md')` at page load, their Copy buttons copy the fetched text, and both tabs link to it for download. The deploy copies `landing/` to the web root, so the page and `https://xdocs.dev/SKILL.md` always show the same file. Never paste the skill text into `index.html`.
 
 **SKILL.md rules** (per Anthropic docs):
 - Description must be **third person** ("Searches..." not "Search...")
@@ -278,5 +291,5 @@ apple-dev-docs/
 │   └── Dockerfile
 └── landing/
     ├── index.html                # xdocs.dev landing page
-    └── SKILL.md                  # Claude Code skill file (keep in sync with index.html)
+    └── SKILL.md                  # Claude Code skill file (the only copy; index.html loads it)
 ```

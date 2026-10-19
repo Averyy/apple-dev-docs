@@ -39,6 +39,32 @@ CI = ["--yes", "--cleanup-orphans", "--auto-cleanup"]
 OTHER = "otherkit"
 OTHER_SITE: Site = {OTHER: [f"{OTHER}/one", f"{OTHER}/two"], f"{OTHER}/one": [], f"{OTHER}/two": []}
 
+# Stands in for index_to_meilisearch.py under --trigger-reindex: a left-out file, more
+# summary lines than any tail, then (exit 1) the abort cause last on stdout, and one stderr line
+FAKE_INDEXER = """
+import sys
+print("Skipping Zz/long.md: file_path is 482 bytes")
+for n in range(28):
+    print(f"summary line {n}")
+if sys.argv[1] != "0":
+    print("Indexing aborted: add 10 documents: task 7 failed (missing_document_id: x)")
+print("stderr line", file=sys.stderr)
+sys.exit(int(sys.argv[1]))
+"""
+
+
+def fake_indexer(monkeypatch: pytest.MonkeyPatch, exit_code: int) -> List[Sequence[str]]:
+    """subprocess.run runs FAKE_INDEXER, with the caller's own arguments; the commands it got."""
+    real_run = subprocess.run
+    commands: List[Sequence[str]] = []
+
+    def run(cmd: Sequence[str], **kwargs: Any) -> subprocess.CompletedProcess[Any]:
+        commands.append(cmd)
+        return real_run([sys.executable, "-c", FAKE_INDEXER, str(exit_code)], **kwargs)
+
+    monkeypatch.setattr(subprocess, "run", run)
+    return commands
+
 
 @pytest.fixture
 def runs(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Iterator[Runs]:
@@ -112,6 +138,19 @@ class TestExit0:
         assert all(file_of(path).exists() for path in SITE)
         assert await scrape(monkeypatch, routes, "--frameworks", FW, *CI) == 0
         assert not file_of(ALPHA).exists() and file_of(GAMMA).exists()
+
+    async def test_a_reindex_shows_the_files_it_left_out(self, runs: Runs, monkeypatch: pytest.MonkeyPatch,
+                                                         capfd: pytest.CaptureFixture[str]) -> None:
+        """The indexer's output isn't captured: every line reaches this run's output."""
+        await seeded(runs)
+        commands = fake_indexer(monkeypatch, 0)
+        capfd.readouterr()
+        assert await scrape(monkeypatch, routes_for(SITE), "--frameworks", FW, "--yes", "--trigger-reindex") == 0
+        out, err = capfd.readouterr()
+        assert len(commands) == 1 and commands[0][-1] == "--force"
+        assert out.index("Skipping Zz/long.md: file_path is 482 bytes") < out.index("✅ Re-indexing completed successfully!")
+        assert all(f"summary line {n}\n" in out for n in range(28))
+        assert "stderr line" in err
 
 
 class TestExit1:
@@ -203,6 +242,19 @@ class TestExit1:
         capsys.readouterr()
         assert await scrape(monkeypatch, routes_for(SITE), "--frameworks", FW, "--yes", "--trigger-reindex") == 1
         assert "   - re-indexing failed with return code 1\n" in capsys.readouterr().out
+
+    async def test_a_failed_reindex_shows_its_cause(self, runs: Runs, monkeypatch: pytest.MonkeyPatch,
+                                                    capfd: pytest.CaptureFixture[str]) -> None:
+        """The indexer prints why it aborted last, on stdout: it must reach this run's output."""
+        await seeded(runs)
+        fake_indexer(monkeypatch, 1)
+        capfd.readouterr()
+        assert await scrape(monkeypatch, routes_for(SITE), "--frameworks", FW, "--yes", "--trigger-reindex") == 1
+        out, err = capfd.readouterr()
+        cause = out.index("Indexing aborted: add 10 documents: task 7 failed (missing_document_id: x)")
+        assert out.index("Skipping Zz/long.md") < cause < out.index("❌ Re-indexing failed with return code 1")
+        assert "   - re-indexing failed with return code 1\n" in out
+        assert "stderr line" in err
 
 
 class TestExit2:

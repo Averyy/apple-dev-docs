@@ -412,20 +412,17 @@ async def scrape_everything() -> int:
                     # Force full rebuild after scraping to ensure orphans are removed
                     cmd = [sys.executable, index_script, "--docs-path", docs_path, "--force"]
                     print(f"Running: {' '.join(cmd)}")
-                    
-                    result = subprocess.run(cmd, capture_output=True, text=True)
-                    
+
+                    # The indexer's output goes straight to this run's stdout and stderr, all
+                    # of it as it happens: each file left out of the index and why, and the
+                    # cause of a failed run (its last lines, on stdout)
+                    sys.stdout.flush()
+                    result = subprocess.run(cmd)
+
                     if result.returncode == 0:
                         print("✅ Re-indexing completed successfully!")
-                        # Show last few lines of output
-                        if result.stdout:
-                            for line in result.stdout.strip().split('\n')[-5:]:
-                                if line.strip():
-                                    print(f"   {line}")
                     else:
                         print(f"❌ Re-indexing failed with return code {result.returncode}")
-                        if result.stderr:
-                            print(f"Error: {result.stderr}")
                         errors.append(f"re-indexing failed with return code {result.returncode}")
                 else:
                     print(f"❌ Index script not found at {index_script}")

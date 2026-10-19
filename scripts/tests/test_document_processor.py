@@ -4,6 +4,7 @@
 import unittest
 import tempfile
 import os
+import hashlib
 from pathlib import Path
 from document_processor import DocumentProcessor
 
@@ -69,15 +70,49 @@ Platforms: iOS, macOS
         self.assertGreater(len(docs), 1)
         
         # Check chunk relationships
+        parent_id = hashlib.sha1(b"documentation/TestKit/LargeClass.md").hexdigest()
         for i, doc in enumerate(docs):
             self.assertEqual(doc["chunk_index"], i)
             self.assertEqual(doc["total_chunks"], len(docs))
+            self.assertEqual(doc["id"], f"{parent_id}_chunk_{i}")
             if len(docs) > 1:
                 # Debug print
                 if not doc.get("is_chunk"):
                     print(f"Doc {i}: is_chunk={doc.get('is_chunk')}, total_chunks={doc['total_chunks']}")
                 self.assertTrue(doc["is_chunk"])
-                self.assertEqual(doc["parent_id"], "testkit_largeclass")
+                self.assertEqual(doc["parent_id"], parent_id)
+        self.assertEqual("\n".join(doc["content"] for doc in docs), content)
+
+    def test_split_sections_give_every_chunk_its_own_id(self) -> None:
+        """A section split by size among whole ones: unique ids, sequential indexes, one total."""
+        content = ("# Mixed\n\nIntro.\n\n## Small\n\nShort section.\n\n## Big\n\n"
+                   + "\n\n".join(f"Paragraph {n}. " + "word " * 60 for n in range(12))
+                   + "\n\n## Tail\n\nLast section.\n")
+        file_path = self.create_test_file(content, "documentation/TestKit/Mixed.md")
+        docs = self.processor.process_document(file_path)
+        
+        self.assertGreater(len(docs), 4)
+        ids = [doc["id"] for doc in docs]
+        self.assertEqual(len(set(ids)), len(ids))
+        self.assertEqual([doc["chunk_index"] for doc in docs], list(range(len(docs))))
+        self.assertTrue(all(doc["total_chunks"] == len(docs) and doc["is_chunk"] for doc in docs))
+        self.assertTrue(all(len(doc["content"].encode("utf-8")) <= 1000 for doc in docs))
+        # Joined in order, the chunks are the file exactly
+        self.assertEqual("\n".join(doc["content"] for doc in docs), content)
+        # The same file gives the same documents
+        self.assertEqual(self.processor.process_document(file_path), docs)
+
+    def test_oversized_block_after_another_block_is_split(self) -> None:
+        """A block larger than a chunk is split even when it doesn't come first."""
+        table = "\n".join(f"| row {n} | " + "cell " * 20 + "|" for n in range(40))  # one ~4.5 KB block
+        content = "# Table\n\nA short paragraph first.\n\n" + table + "\n\nAfter the table.\n"
+        file_path = self.create_test_file(content, "documentation/TestKit/Table.md")
+        docs = self.processor.process_document(file_path)
+        
+        self.assertGreater(len(docs), 4)
+        # At most a chunk's size plus the line breaks between its lines (not counted)
+        self.assertTrue(all(len(doc["content"].encode("utf-8")) <= 1000 + 10 for doc in docs))
+        self.assertEqual("\n".join(doc["content"] for doc in docs), content)
     
     def test_code_block_preservation(self):
         """Test that code blocks are preserved during chunking."""
@@ -175,6 +210,19 @@ Final paragraph."""
         self.assertIn("multiple lines", blocks[1])
         self.assertIn("```python", blocks[2])
         self.assertIn("Final paragraph", blocks[3])
+        # Blank lines stay with their blocks: joined, the blocks are the content
+        self.assertEqual("\n".join(blocks), content)
+
+    def test_block_extraction_keeps_every_line(self) -> None:
+        """Leading, repeated and whitespace-only blank lines, and a fence right after text."""
+        content = "\n\nIntro line\n```swift\nlet x = 1\n\nlet y = 2\n```\n  \n\n\nNext\nparagraph\n\n"
+        blocks = self.processor._extract_blocks(content)
+        
+        self.assertEqual(len(blocks), 3)
+        self.assertTrue(blocks[0].endswith("Intro line"))
+        self.assertTrue(blocks[1].startswith("```swift") and "let y = 2" in blocks[1])
+        self.assertTrue(blocks[2].startswith("Next"))
+        self.assertEqual("\n".join(blocks), content)
     
     def test_hash_generation(self):
         """Test content hash generation."""
@@ -192,20 +240,21 @@ Final paragraph."""
     
     def test_process_directory(self):
         """Test processing multiple files in a directory."""
-        # Create test files
-        self.create_test_file("# File 1", "file1.md")
-        self.create_test_file("# File 2", "subdir/file2.md")
+        # Create test files: two of the same name, outside a documentation dir
+        paths = [self.create_test_file("# File 1", "file1.md"),
+                 self.create_test_file("# File 1", "subdir/file1.md"),
+                 self.create_test_file("# File 2", "subdir/file2.md")]
         self.create_test_file("Not markdown", "file.txt")
         
         docs = self.processor.process_directory(self.test_dir)
         
         # Should process only .md files
-        self.assertEqual(len(docs), 2)
+        self.assertEqual(len(docs), 3)
         
-        # Check that both files were processed
-        ids = [doc["id"] for doc in docs]
-        self.assertIn("file1", ids[0])
-        self.assertIn("file2", ids[1])
+        # Check that every file was processed, each with its own file_path (the whole
+        # path, without a documentation dir) and id
+        self.assertEqual(sorted(doc["file_path"] for doc in docs), sorted(Path(p).as_posix() for p in paths))
+        self.assertEqual(len({doc["id"] for doc in docs}), 3)
 
 if __name__ == "__main__":
     unittest.main()

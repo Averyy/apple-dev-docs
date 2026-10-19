@@ -37,7 +37,10 @@ up with expand_result(file_path=<query>, framework=<framework>), which picks
 its page through its own candidate search, not search_apple_docs' ranking. The
 page it returns is named by its canonical URL (an Apple page's footer, another
 doc's front-matter url) and must be an expected one; expand@1 is the share of
-lookups that return one ("Symbol ... not found" counts as a miss).
+lookups that return one ("Symbol ... not found" counts as a miss). A page too
+long for one response comes in parts, and when the first reply doesn't reach
+its last part, which ends with the footer, that part is fetched too
+(expand_result with its path and part).
 
 Exit status: 0 when every query was scored (and --save wrote its file); 1,
 with an ERROR line naming the cause, when the golden file is invalid, the
@@ -97,11 +100,15 @@ RESULTS_PREFIX = "Search Results: "
 NO_RESULTS_PREFIX = "No results found for "
 # The last line of every Apple page (markdown_converter.py): its canonical URL
 _FOOTER_RE = re.compile(r"^\*\[View on Apple Developer\]\((https?://\S+)\)\*$")
-# expand_result output for a symbol: the page's content, then, when the name
-# also matches pages in other frameworks, "\n\n---\nNote: '<name>' also matches
-# pages in ..."; or "Symbol '<name>' not found ..." when nothing matches
+# expand_result output for a symbol: the page's content, then "\n\n---\n" and
+# its notes, one per line: for a page too long for one response, which of its
+# parts the reply holds ("Part <i> of <n> of `<file_path>`..." or "Parts
+# <i>-<j> of <n> of `<file_path>`..."), and when the name also matches pages in
+# other frameworks, "Note: '<name>' also matches pages in ..."; or "Symbol
+# '<name>' not found ..." when nothing matches
 _SYMBOL_NOT_FOUND_RE = re.compile(r"^Symbol '.*' not found")
 _AMBIGUITY_NOTE_RE = re.compile(r"^Note: '.*' also matches pages in ")
+_PART_NOTE_RE = re.compile(r"^Parts? (\d+)(?:-(\d+))? of (\d+) of `([^`]+)`")
 # A query an "expand" entry looks up: one word, not a path or wildcard pattern
 _SYMBOL_RE = re.compile(r"[^\s/*?]+")
 # An event stream's line ends (the SSE spec; sse_starlette splits data on the
@@ -424,12 +431,44 @@ def parse_search_results(text: str) -> List[Hit]:
     return hits
 
 
-def parse_expand_result(text: str) -> Optional[str]:
+@dataclass(frozen=True)
+class ExpandPart:
+    """The parts of a long page an expand_result reply holds: first to last, of total."""
+    first: int
+    last: int
+    total: int
+    path: str
+
+
+def split_expand_notes(text: str) -> Tuple[str, List[str]]:
+    """An expand_result reply's content, and the note lines after its final "---"."""
+    lines = text_lines(text.rstrip())
+    end = len(lines)
+    while end > 0 and (_AMBIGUITY_NOTE_RE.match(lines[end - 1]) or _PART_NOTE_RE.match(lines[end - 1])):
+        end -= 1
+    if 0 < end < len(lines) and lines[end - 1] == "---":
+        return "\n".join(lines[:end - 1]).rstrip(), lines[end:]
+    return "\n".join(lines).rstrip(), []
+
+
+def expand_part(text: str) -> Optional[ExpandPart]:
+    """Which parts of a long page an expand_result reply holds; None for a whole page."""
+    for line in split_expand_notes(text)[1]:
+        match = _PART_NOTE_RE.match(line)
+        if match:
+            first = int(match.group(1))
+            return ExpandPart(first, int(match.group(2) or first), int(match.group(3)), match.group(4))
+    return None
+
+
+def parse_expand_result(text: str, last_part: Optional[str] = None) -> Optional[str]:
     """The canonical URL of the page expand_result returned for a symbol.
 
     An Apple page ends with its footer; any other doc starts with front matter
-    whose url the index stores. "Symbol ... not found" gives None. A reply that
-    names no page this way raises EvalError rather than scoring as a miss.
+    whose url the index stores. A page too long for one response comes in
+    parts: text is then the reply holding its first, and last_part the reply
+    holding its last, which ends with the footer. "Symbol ... not found" gives None. A reply
+    that names no page this way raises EvalError rather than scoring as a miss.
     """
     lines = text_lines(text.rstrip())
     if not lines:
@@ -437,10 +476,9 @@ def parse_expand_result(text: str) -> Optional[str]:
     first = lines[0]
     if _SYMBOL_NOT_FOUND_RE.match(first):
         return None
-    if len(lines) >= 2 and _AMBIGUITY_NOTE_RE.match(lines[-1]) and lines[-2] == "---":
-        lines = lines[:-2]
-    content = "\n".join(lines).rstrip()
-    footer = _FOOTER_RE.match(text_lines(content)[-1].strip()) if content else None
+    content = split_expand_notes(text)[0]
+    end = split_expand_notes(last_part)[0] if last_part is not None else content
+    footer = _FOOTER_RE.match(text_lines(end)[-1].strip()) if end else None
     if footer:
         return footer.group(1)
     url = MetadataExtractor().parse_yaml_frontmatter(content).get("url")
@@ -626,7 +664,13 @@ def run_eval(client: McpClient, queries: Sequence[GoldenQuery],
                 expand_arguments: Dict[str, Any] = {"file_path": query.query}
                 if query.framework:
                     expand_arguments["framework"] = query.framework
-                page = parse_expand_result(call_tool("expand_result", expand_arguments))
+                reply = call_tool("expand_result", expand_arguments)
+                part = expand_part(reply)
+                last_part: Optional[str] = None
+                if part and part.last < part.total:
+                    # A long page comes in parts, and an Apple page's footer ends the last
+                    last_part = call_tool("expand_result", {"file_path": part.path, "part": part.total})
+                page = parse_expand_result(reply, last_part)
         except EvalError as e:
             raise EvalError(f"query {query.label!r}: {e}") from e
         expand_hit = page is not None and any(x.matches_page(page) for x in expected)

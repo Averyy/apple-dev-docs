@@ -4,9 +4,10 @@
 import re
 import os
 import json
+import hashlib
 import yaml
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Set
 import argparse
 from datetime import datetime
 
@@ -79,6 +80,62 @@ class MetadataExtractor:
             "ml stable diffusion": "ml-stable-diffusion"
         }
 
+        # Apple's **Kind** values (the page's symbolKind, lowercased, including the legacy
+        # reference's codes) -> kind. A value missing here is "unknown" (e.g. "uid", the
+        # Installer JS and WebKit JS pseudo-symbols, which are objects, methods and
+        # properties alike); a page with no **Kind** line is an "article".
+        self.kind_mappings = {
+            # Types
+            "class": "class",
+            "cl": "class",
+            "struct": "struct",
+            "enum": "enum",
+            "protocol": "protocol",
+            "intf": "protocol",
+            "actor": "actor",
+            "extension": "extension",
+            "union": "union",
+            "typealias": "typealias",
+            "tdef": "typealias",
+            "associatedtype": "associatedtype",
+            "tag": "type",  # a C struct, enum or union tag
+            "namespace": "namespace",
+            "module": "module",
+            "macro": "macro",
+            # Members and globals
+            "method": "method",
+            "instm": "method",
+            "clm": "method",
+            "intfm": "method",
+            "func": "function",
+            "init": "init",
+            "structctr": "init",
+            "instctr": "init",
+            "intfctr": "init",
+            "property": "property",
+            "instp": "property",
+            "structp": "property",
+            "intfp": "property",
+            "enump": "property",
+            "unionp": "property",
+            "cldata": "property",
+            "structdata": "property",
+            "clconst": "property",
+            "pseudo": "property",  # a C++ class's member variable
+            "var": "variable",
+            "data": "variable",
+            "case": "case",
+            "enumelt": "case",
+            "econst": "case",
+            "subscript": "subscript",
+            "instsub": "subscript",
+            "op": "operator",
+            "opfunc": "operator",
+            # Web services and property lists
+            "httprequest": "endpoint",
+            "dictionary": "object",
+        }
+
         # Pre-compile regex patterns for performance (called 334K+ times during indexing)
         self._compile_patterns()
 
@@ -91,7 +148,31 @@ class MetadataExtractor:
         self._title_h1_pattern = re.compile(r'^#\s+(.+)$', re.MULTILINE)
         self._title_metadata_pattern = re.compile(r'^title:\s*(.+)$', re.MULTILINE)
 
+        # The header under the title: "**Key**: value" lines (Apple pages: Framework,
+        # Kind, Required; the HIG writes "**Key:** value"). An empty value heads a list
+        # ("**Availability**:" and its "- ..." items).
+        self._header_line_pattern = re.compile(
+            r'^\*\*(?P<key>[^*:\n]+)(?:\*\*:|:\*\*)[ \t]*(?P<value>[^\n]*?)[ \t]*$')
+        self._header_block_pattern = re.compile(
+            r'(?:[ \t]*\n)+((?:\*\*[^*:\n]+(?:\*\*:|:\*\*)[^\n]*(?:\n|\Z))+)')
+
+        # A symbol's base name: its title without argument labels or qualifier
+        self._qualified_name_pattern = re.compile(r'[^\W\d]\w*(?:(?:\.|::)[^\W\d]\w*)+')
+        self._qualifier_split_pattern = re.compile(r'\.|::')
+
+        # The footer every Apple page ends with (markdown_converter.py): the URL it was
+        # scraped from, verbatim
+        self._footer_pattern = re.compile(r'^\*\[View on Apple Developer\]\((https?://\S+)\)\*$')
+
         # Platform extraction patterns
+        # Apple's **Availability** list, one platform per item:
+        # "- <platform>[ <version>+][ (Beta)][ - Deprecated[ in <version>][: <message>]]".
+        # The version is anything up to its "+" (legacy pages have "?+").
+        self._availability_list_pattern = re.compile(
+            r'^\*\*Availability\*\*:[ \t]*\n((?:- [^\n]*(?:\n|\Z))+)', re.MULTILINE)
+        self._availability_item_pattern = re.compile(
+            r'^- (?P<platform>.+?)(?: (?P<intro>[^\s+]+)\+)?(?: \(Beta\))?'
+            r'(?: - Deprecated(?: in (?P<dep>[\w.]+))?(?:: .*| \(renamed: .*\))?)?$')
         self._platform_patterns = [
             re.compile(r'(?:Platforms?|Available on|Supported on):\s*([^\n]+)', re.IGNORECASE),
             re.compile(r'!\[.*?\]\(.*?badge.*?(ios|macos|tvos|watchos|visionos|catalyst).*?\)', re.IGNORECASE),
@@ -100,30 +181,21 @@ class MetadataExtractor:
         ]
         self._platform_split_pattern = re.compile(r'[,;|]')
 
-        # Combined platform detection pattern for content scanning (single pass)
+        # Combined platform detection pattern for content scanning (single pass). Whole
+        # words only, "IOService" and "IOSurface" don't name iOS, but a version may follow
+        # ("iOS18", "macOS12+")
         platform_keys = '|'.join(re.escape(k) for k in self.platform_mappings.keys())
-        self._platform_scan_pattern = re.compile(f'({platform_keys})', re.IGNORECASE)
+        self._platform_scan_pattern = re.compile(rf'(?<!\w)({platform_keys})(?![^\W\d])', re.IGNORECASE)
 
-        # Kind extraction patterns
-        self._kind_patterns = [
-            (re.compile(r'(?:^|\s)class\s+\w+', re.IGNORECASE | re.MULTILINE), 'class'),
-            (re.compile(r'(?:^|\s)struct\s+\w+', re.IGNORECASE | re.MULTILINE), 'struct'),
-            (re.compile(r'(?:^|\s)protocol\s+\w+', re.IGNORECASE | re.MULTILINE), 'protocol'),
-            (re.compile(r'(?:^|\s)enum\s+\w+', re.IGNORECASE | re.MULTILINE), 'enum'),
-            (re.compile(r'(?:^|\s)actor\s+\w+', re.IGNORECASE | re.MULTILINE), 'actor'),
-            (re.compile(r'(?:^|\s)typealias\s+\w+', re.IGNORECASE | re.MULTILINE), 'typealias'),
-            (re.compile(r'(?:^|\s)extension\s+\w+', re.IGNORECASE | re.MULTILINE), 'extension'),
-            (re.compile(r'#\s*(?:Class|Structure|Protocol|Enumeration|Type)\s+\w+', re.IGNORECASE | re.MULTILINE), 'type'),
-        ]
-        self._func_pattern = re.compile(r'(?:^|\s)func\s+\w+')
-        self._property_pattern = re.compile(r'(?:^|\s)(?:var|let)\s+\w+')
-
-        # Overview extraction
-        self._overview_pattern = re.compile(
-            r'(?:##?\s*(?:Overview|Description|Summary|Introduction))\s*\n+([^\n#]+(?:\n[^\n#]+)*)',
+        # Overview extraction: a section heading, never the page's title (a symbol named
+        # description or summary would get its header lines as its overview)
+        self._overview_heading_pattern = re.compile(
+            r'^#{2,}[ \t]*(?:Overview|Description|Summary|Introduction)[ \t]*$',
             re.IGNORECASE | re.MULTILINE
         )
+        self._rule_pattern = re.compile(r'-{3,}|\*{3,}|_{3,}')
         self._whitespace_pattern = re.compile(r'\s+')
+        self._word_pattern = re.compile(r'\w')
 
         # Framework main page indicators
         self._framework_indicator_patterns = [
@@ -186,7 +258,7 @@ class MetadataExtractor:
             "overview": self.extract_overview(content),
             "is_framework_main": self.is_framework_main_page(content, file_path),
             "last_modified": self.get_file_modified_time(file_path),
-            "url": frontmatter.get("url") or self.generate_url(file_path),
+            "url": frontmatter.get("url") or self.extract_source_url(content) or self.generate_url(file_path),
             "file_size": os.path.getsize(file_path) if os.path.exists(file_path) else 0
         }
 
@@ -204,41 +276,23 @@ class MetadataExtractor:
             relative_parts = parts[doc_index:]  # Include 'documentation' itself
             return "/".join(relative_parts)
         
-        # Fallback: if no documentation found, return just the filename
-        return path.name
+        # Fallback: if no documentation found, the whole path, so that files of the same
+        # name (each index.md) keep distinct file_paths and ids
+        return path.as_posix()
     
     def generate_document_id(self, file_path: str) -> str:
-        """Generate a unique document ID from file path."""
-        # Convert to Path object
-        path = Path(file_path)
-        
-        # Find the documentation root directory
-        parts = list(path.parts)
-        doc_index = -1
-        for i, part in enumerate(parts):
-            if part == "documentation":
-                doc_index = i
-                break
-        
-        # If we found 'documentation', use everything after it
-        if doc_index >= 0:
-            relevant_parts = parts[doc_index + 1:]  # Skip 'documentation' itself
-        else:
-            # Fallback: use the whole path
-            relevant_parts = parts
-        
-        # Remove .md extension from last part
-        if relevant_parts and relevant_parts[-1].endswith('.md'):
-            relevant_parts[-1] = relevant_parts[-1][:-3]
-            
-        # Join with underscores and normalize
-        # This preserves the full path structure: framework/class/method
-        # Replace all invalid characters with underscores (Meilisearch only allows alphanumeric, hyphens, underscores)
-        doc_id = "_".join(relevant_parts).lower()
-        # Replace any character that's not alphanumeric, hyphen, or underscore
-        # This handles dots from paths like "swift.struct/method.md"
-        doc_id = re.sub(r'[^a-z0-9_-]', '_', doc_id)
-        return doc_id
+        """
+        Document ID: the SHA-1 of the file's file_path (normalize_file_path), in hex.
+
+        One per path, as file_path is (case and every character count), and always a
+        valid Meilisearch id (40 of [0-9a-f]). An id built from the path's characters
+        lowercased, with every other character replaced by "_", gave different files the
+        same id, and the last one sent replaced the others in the index.
+        """
+        # A file name that isn't valid UTF-8 (Linux allows it) hashes as its bytes; the
+        # indexer then leaves the file out for its file_path
+        path_bytes = self.normalize_file_path(file_path).encode('utf-8', 'surrogateescape')
+        return hashlib.sha1(path_bytes).hexdigest()
     
     def extract_framework(self, content: str, file_path: str) -> str:
         """Extract framework name from content or path."""
@@ -281,31 +335,15 @@ class MetadataExtractor:
         return self.framework_aliases.get(name_lower, name)
     
     def extract_api_name(self, content: str, file_path: str) -> str:
-        """Extract API/class/protocol name."""
-        # Try to extract from content first
-        # Look for class/struct/protocol declarations
-        api_patterns = [
-            r'(?:class|struct|protocol|enum|actor)\s+(\w+)',
-            r'#\s*(?:class|struct|protocol|enum|type|Class|Type)\s+(\w+)',
-            r'^#\s+(\w+)\s*$',  # First level header
-        ]
-        
-        for pattern in api_patterns:
-            match = re.search(pattern, content, re.MULTILINE)
-            if match:
-                return match.group(1)
-        
-        # Extract from title
+        """
+        API name: the base name of the page's title (base_name; is_nested_title tells a
+        nested symbol's qualified name from a dotted name), e.g. "init" for
+        init(viewControllerProvider:). Never a name from the page's code or prose, which
+        named another symbol (or "An", "The"…) on a third of Apple's symbol pages.
+        """
         title = self.extract_title(content)
         if title:
-            # Remove common suffixes
-            for suffix in [" Class", " Protocol", " Structure", " Enumeration", " Type"]:
-                if title.endswith(suffix):
-                    return title[:-len(suffix)]
-            # Return first word of title if it looks like an API name
-            first_word = title.split()[0] if title else ""
-            if first_word and first_word[0].isupper():
-                return first_word
+            return self.base_name(title, nested=self.is_nested_title(content, title))
         
         # Get from filename as last resort
         filename = Path(file_path).stem
@@ -313,6 +351,42 @@ class MetadataExtractor:
             return filename
         
         return "Unknown"
+
+    def base_name(self, title: str, nested: bool = True) -> str:
+        """
+        A title's base name: without its argument labels (init(frame:) -> init,
+        ==(_:_:) -> ==) and, when it is a nested symbol's (nested), without its qualifier
+        (Product.SubscriptionOffer -> SubscriptionOffer, IOHIDInterface::InterruptReportAction
+        -> InterruptReportAction). Any other title (an article's, "Vector3 (Half)", an
+        operator such as .<=) is kept whole.
+        """
+        name = title.strip()
+        paren = name.find('(')
+        if paren > 0 and name.endswith(')') and not name[paren - 1].isspace():
+            name = name[:paren]
+        if nested and self._qualified_name_pattern.fullmatch(name):
+            name = self._qualifier_split_pattern.split(name)[-1]
+        return name
+
+    def is_nested_title(self, content: str, title: str) -> bool:
+        """
+        Whether the page's dotted (or ::) title is a nested symbol's qualified name rather
+        than the page's own name. On an Apple page (the footer) it is not when the page is
+        an article (no **Kind** line, e.g. the header file AXError.h) or when its URL names
+        it by the whole title (a property list key such as com.apple.security.network.client,
+        CloudKit JS's CloudKit.Database): Apple puts a nested symbol under its parent's page,
+        named by its own name (arkit/accessory/chirality for Accessory.Chirality). Other
+        sources' dotted titles are qualified API names (MLX's mlx.core.array).
+        """
+        name = self.base_name(title, nested=False)
+        if not self._qualified_name_pattern.fullmatch(name):
+            return False
+        url = self.extract_source_url(content)
+        if url is None:
+            return True
+        if 'Kind' not in self.header_fields(content):
+            return False
+        return url.rstrip('/').rsplit('/', 1)[-1].lower() != name.lower()
     
     def extract_title(self, content: str) -> str:
         """Extract document title."""
@@ -329,7 +403,14 @@ class MetadataExtractor:
         return ""
 
     def extract_platforms(self, content: str) -> List[str]:
-        """Extract supported platforms."""
+        """
+        Extract supported platforms: those of the page's **Availability** list when it has
+        one (Apple pages), otherwise the platforms its text names.
+        """
+        listed = self.extract_availability_platforms(content)
+        if listed is not None:
+            return sorted(listed)
+
         platforms = set()
 
         # Look for platform badges or lists using pre-compiled patterns
@@ -354,39 +435,69 @@ class MetadataExtractor:
 
         return sorted(list(platforms))
     
+    def extract_availability_platforms(self, content: str) -> Optional[Set[str]]:
+        """
+        The platforms of the page's **Availability** list, or None when it has none. A
+        listed platform outside platform_mappings (DriverKit, Safari Mobile, Xcode, a web
+        service API…) adds none, so a page available only there has no platform.
+        """
+        block = self._availability_list_pattern.search(content)
+        if not block:
+            return None
+        platforms: Set[str] = set()
+        for item in block.group(1).splitlines():
+            match = self._availability_item_pattern.match(item.rstrip())
+            if match:
+                platform = self.platform_mappings.get(match.group('platform').strip().lower())
+                if platform:
+                    platforms.add(platform)
+        return platforms
+
+    def header_fields(self, content: str) -> Dict[str, str]:
+        """The "**Key**: value" lines right under the page's title (H1), by key"""
+        title = self._title_h1_pattern.search(content)
+        if not title:
+            return {}
+        block = self._header_block_pattern.match(content, title.end())
+        if not block:
+            return {}
+        fields: Dict[str, str] = {}
+        for line in block.group(1).splitlines():
+            match = self._header_line_pattern.match(line)
+            if match:
+                fields.setdefault(match.group('key').strip(), match.group('value'))
+        return fields
+
     def extract_kind(self, content: str) -> str:
-        """Extract the kind of API (class, protocol, struct, etc.)."""
-        # Use pre-compiled patterns
-        for pattern, kind in self._kind_patterns:
-            if pattern.search(content):
-                return kind
-
-        # Check for function/method
-        if self._func_pattern.search(content):
-            return 'function'
-
-        # Check for property
-        if self._property_pattern.search(content):
-            return 'property'
-
-        return 'unknown'
+        """
+        Extract the kind of API: the page's **Kind** line through kind_mappings (e.g.
+        instm -> method, econst -> case), "unknown" for a value it doesn't list, and
+        "article" for a page without one (articles, collections, other sources' docs).
+        """
+        kind = self.header_fields(content).get('Kind')
+        if kind is None:
+            return 'article'
+        return self.kind_mappings.get(kind.lower(), 'unknown')
     
     def extract_overview(self, content: str) -> str:
-        """Extract overview or description."""
-        # Look for Overview section using pre-compiled pattern
-        overview_match = self._overview_pattern.search(content)
+        """
+        Extract overview or description: the first paragraph of the page's Overview
+        (Description, Summary, Introduction) section, otherwise its first paragraph after
+        the title, at most 500 characters.
+        """
+        # The first section whose first paragraph is a summary (section_paragraph)
+        for heading in self._overview_heading_pattern.finditer(content):
+            overview = self.section_paragraph(content, heading.end())
+            if overview:
+                return overview[:500]  # Limit to 500 chars
 
-        if overview_match:
-            overview = overview_match.group(1).strip()
-            # Clean up the overview using pre-compiled pattern
-            overview = self._whitespace_pattern.sub(' ', overview)
-            return overview[:500]  # Limit to 500 chars
-        
-        # Try to get first non-empty paragraph after title
+        # Try to get first non-empty paragraph after title, past the header's
+        # "**Key**: value" lines (and the list an empty one heads, e.g. **Availability**:)
         lines = content.split('\n')
         found_title = False
-        overview_lines = []
+        overview_lines: List[str] = []
         skip_empty = True
+        in_key_list = False
         
         for i, line in enumerate(lines):
             # Found title
@@ -401,11 +512,19 @@ class MetadataExtractor:
                 # Skip initial empty lines
                 if skip_empty and not line_stripped:
                     continue
-                elif line_stripped:
+                if skip_empty:
+                    key_line = self._header_line_pattern.match(line_stripped)
+                    if key_line:
+                        in_key_list = not key_line.group('value')
+                        continue
+                    if in_key_list and line_stripped.startswith('- '):
+                        continue
+                if line_stripped:
                     skip_empty = False
                 
-                # Stop at next header or after paragraph break
-                if line_stripped.startswith('#'):
+                # Stop at next header, a horizontal rule (the footer's, on a page with
+                # no abstract) or after paragraph break
+                if line_stripped.startswith('#') or self._rule_pattern.fullmatch(line_stripped):
                     break
                 elif not line_stripped and overview_lines:
                     # Paragraph break - we have our overview
@@ -413,11 +532,37 @@ class MetadataExtractor:
                 elif line_stripped:
                     overview_lines.append(line_stripped)
         
-        if overview_lines:
-            return ' '.join(overview_lines)[:500]
+        # A paragraph without a letter or digit (a stray "**" or "}") is no summary
+        overview = ' '.join(overview_lines)
+        if self._word_pattern.search(overview):
+            return overview[:500]
         
         return ""
     
+    def section_paragraph(self, content: str, start: int) -> str:
+        """
+        The first paragraph of the section that starts at start (a heading line's end),
+        past horizontal rules (Apple puts one before some abstracts), whitespace collapsed.
+        "" when the section has none before the next heading or the footer, or when it is no
+        summary: a lone "**Label**:" line (one that heads a code block, e.g. **Request**: or
+        **Swift**:), or without a letter or digit (a stray "}").
+        """
+        lines: List[str] = []
+        for line in content[start:].split('\n'):
+            line_stripped = line.strip()
+            if line_stripped.startswith('#') or self._footer_pattern.match(line_stripped):
+                break
+            if not line_stripped or self._rule_pattern.fullmatch(line_stripped):
+                if lines:
+                    break
+                continue
+            lines.append(line_stripped)
+        paragraph = self._whitespace_pattern.sub(' ', ' '.join(lines))
+        label = self._header_line_pattern.match(paragraph)
+        if (label and not label.group('value')) or not self._word_pattern.search(paragraph):
+            return ""
+        return paragraph
+
     def is_framework_main_page(self, content: str, file_path: str) -> bool:
         """Check if this is a framework's main page."""
         path = Path(file_path)
@@ -447,8 +592,22 @@ class MetadataExtractor:
             pass
         return datetime.now().isoformat()
     
+    def extract_source_url(self, content: str) -> Optional[str]:
+        """
+        The URL in the footer every Apple page ends with
+        (*[View on Apple Developer](<url>)*): the page's own URL, as it was scraped.
+        None for a page without one.
+        """
+        last_line = content[-4096:].rstrip().rsplit('\n', 1)[-1].strip()
+        match = self._footer_pattern.match(last_line)
+        return match.group(1) if match else None
+
     def generate_url(self, file_path: str) -> str:
-        """Generate Apple Developer documentation URL from file path."""
+        """
+        Generate Apple Developer documentation URL from file path: only for a page with
+        neither a front-matter url nor the footer, since file names are sanitized (e.g.
+        init-frame.md for init(frame:)) and the URL would be a 404 for half of the pages.
+        """
         path = Path(file_path)
         
         # Extract path components

@@ -384,6 +384,16 @@ def test_parse_filtered_response_with_any_link_label_and_parenthesized_url() -> 
     ]
 
 
+def test_parse_hit_from_a_long_page_with_its_part() -> None:
+    # A hit from a page indexed in parts names its part on the Framework line
+    text = SERVER_RESPONSE.replace("Framework: AppKit | Type: property\nPath: `documentation/AppKit/"
+                                   "nscollectionlayoutvisibleitem",
+                                   "Framework: AppKit | Type: property | Part 2 of 3\nPath: `documentation/"
+                                   "AppKit/nscollectionlayoutvisibleitem")
+    assert text != SERVER_RESPONSE
+    assert ev.parse_search_results(text) == ev.parse_search_results(SERVER_RESPONSE)
+
+
 def test_parse_no_results_response() -> None:
     assert ev.parse_search_results(NO_RESULTS) == []
 
@@ -449,6 +459,36 @@ def test_parse_expand_result_names_the_page_by_its_footer() -> None:
     # Without the other-frameworks note (a unique name, or framework passed)
     page = EXPAND_RESPONSE.split("\n\n---\nNote: ")[0]
     assert ev.parse_expand_result(page + "\n") == VIEW_PAGE_URL
+
+
+LONG_PATH = "documentation/AppIntents/entityproperty.md"
+FIRST_PART_NOTE = (f"Parts 1-2 of 3 of `{LONG_PATH}`: the page is too long for one response. For the next "
+                   "part, pass this file_path with part=3.")
+LAST_PART = ("## See Also\n\n- [EntityQuery](entityquery.md)\n\n---\n\n"
+             f"*[View on Apple Developer]({VIEW_PAGE_URL})*\n\n---\nPart 3 of 3 of `{LONG_PATH}` (the end of the page).")
+
+
+def test_parse_expand_result_of_a_page_in_parts_names_it_by_the_last_parts_footer() -> None:
+    first = "# EntityProperty\n\n**Framework**: App Intents\n\n## Topics\n\n- [A](a.md)\n\n---\n" + FIRST_PART_NOTE
+    assert ev.expand_part(first) == ev.ExpandPart(1, 2, 3, LONG_PATH)
+    assert ev.expand_part(LAST_PART) == ev.ExpandPart(3, 3, 3, LONG_PATH)
+    assert ev.expand_part(EXPAND_RESPONSE) is None
+    # A reply that reaches the last part holds the footer itself
+    to_the_end = (f"## Topics\n\n---\n\n*[View on Apple Developer]({VIEW_PAGE_URL})*\n\n---\n"
+                  f"Parts 2-3 of 3 of `{LONG_PATH}` (the end of the page).")
+    assert ev.expand_part(to_the_end) == ev.ExpandPart(2, 3, 3, LONG_PATH)
+    assert ev.parse_expand_result(to_the_end) == VIEW_PAGE_URL
+    assert ev.parse_expand_result(first, LAST_PART) == VIEW_PAGE_URL
+    # The first part alone has no footer
+    with pytest.raises(EvalError, match="names no page"):
+        ev.parse_expand_result(first)
+    # Followed by the other-frameworks note
+    with_note = first + "\nNote: 'EntityProperty' also matches pages in AppKit; showing AppIntents."
+    assert ev.expand_part(with_note) == ev.ExpandPart(1, 2, 3, LONG_PATH)
+    assert ev.parse_expand_result(with_note, LAST_PART) == VIEW_PAGE_URL
+    # A non-Apple doc's front matter starts its first part
+    swift = f"---\nurl: {SWIFT_BOOK_URL}\n---\n\n# Concurrency\n\n---\n" + FIRST_PART_NOTE
+    assert ev.parse_expand_result(swift, "## Actors\n\n---\nPart 3 of 3 of `x.md` (the end of the page).") == SWIFT_BOOK_URL
 
 
 def test_parse_expand_result_names_another_doc_by_its_front_matter_url() -> None:
@@ -617,7 +657,8 @@ class FakeServer:
         if name == "expand_result":
             self.expand_calls.append(arguments)
             symbol = arguments["file_path"]
-            text = self.expand_answers.get(symbol, f"Symbol '{symbol}' not found")
+            key = f"{symbol} part={arguments['part']}" if "part" in arguments else symbol
+            text = self.expand_answers.get(key, f"Symbol '{symbol}' not found")
         else:
             assert name == "search_apple_docs"
             self.calls.append(arguments)
@@ -854,6 +895,25 @@ def test_run_eval_scores_expand_result_symbol_lookups(repo: Path, tmp_path: Path
     assert "  5 MISS UIView -> (symbol not found)" in report
     assert "  2 " not in report.split("expand_result symbol lookups")[1]
     assert report.endswith("expand@1: 2/4 = 0.500")
+
+
+def test_run_eval_reads_the_footer_from_the_last_part_of_a_long_page(repo: Path, tmp_path: Path) -> None:
+    nav_path = "documentation/SwiftUI/navigationstack.md"
+    queries = ev.load_golden(golden_file(tmp_path, [
+        {"query": "NavigationStack", "framework": "SwiftUI", "expected_top3": [NAV_URL], "expand": True}]))
+    expectations = ev.resolve_expectations(queries, repo)
+    server = FakeServer(ANSWERS, expand_answers={
+        "NavigationStack": (f"# NavigationStack\n\n## Topics\n\n---\nParts 1-2 of 3 of `{nav_path}`: the page "
+                            "is too long for one response. For the next part, pass this file_path with part=3."),
+        f"{nav_path} part=3": (f"## See Also\n\n---\n\n*[View on Apple Developer]({NAV_URL})*\n\n---\n"
+                               f"Part 3 of 3 of `{nav_path}` (the end of the page)."),
+    })
+    with client_for(server) as client:
+        client.initialize()
+        results = ev.run_eval(client, queries, expectations)
+    assert server.expand_calls == [{"file_path": "NavigationStack", "framework": "SwiftUI"},
+                                   {"file_path": nav_path, "part": 3}]
+    assert [(r.expand_page, r.expand_hit) for r in results] == [(NAV_URL, True)]
 
 
 def test_report_without_expand_lookups_has_no_expand_section(repo: Path, tmp_path: Path) -> None:

@@ -2,10 +2,13 @@
 # All-in-one container with Meilisearch search engine and MCP server
 
 # Server version - update this when releasing new versions
-ARG SERVER_VERSION=3.1.0
+ARG SERVER_VERSION=3.2.0
 # Build timestamps (set by CI/CD)
 ARG BUILD_TIME=unknown
 ARG DOCS_UPDATED=unknown
+# .md count of the checkout the image is built from (set by CI/CD; empty in local builds,
+# where the indexer falls back to comparing with the live index's size)
+ARG DOC_FILE_COUNT
 
 # Stage 1: Builder
 FROM python:3.11-slim AS builder
@@ -29,9 +32,10 @@ RUN pip install --user --no-cache-dir -r mcp-requirements.txt && \
 FROM python:3.11-slim
 
 # Re-declare ARGs after FROM to make them available in this stage
-ARG SERVER_VERSION=3.1.0
+ARG SERVER_VERSION=3.2.0
 ARG BUILD_TIME=unknown
 ARG DOCS_UPDATED=unknown
+ARG DOC_FILE_COUNT
 
 # Add labels for version tracking and metadata
 LABEL org.opencontainers.image.title="Apple Docs MCP Server"
@@ -122,6 +126,10 @@ ENV TZ=America/New_York
 # Build timestamps for health endpoint
 ENV BUILD_TIME=${BUILD_TIME}
 ENV DOCS_UPDATED=${DOCS_UPDATED}
+# Image completeness: when set, the indexer changes the index (adds, deletes, a rebuild's
+# swap) only if the image holds exactly this many .md files, so a truncated image changes
+# nothing
+ENV DOC_FILE_COUNT=${DOC_FILE_COUNT}
 
 # Expose HTTP port for native MCP server
 EXPOSE 8000
@@ -129,7 +137,8 @@ EXPOSE 8000
 # Health check against the MCP app itself, using the public hostname so
 # app-level failures (e.g. Host header rejection) surface as unhealthy.
 # The app returns 503 while the index is below serving threshold, so the
-# container honestly reports unhealthy during an initial full reindex.
+# container honestly reports unhealthy during a fresh volume's first build
+# (a rebuild over a live index builds beside it and swaps it in).
 HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
     CMD curl -f -H "Host: ${ALLOWED_HOSTS%%,*}" "http://localhost:${HTTP_PORT:-8000}/health" || exit 1
 

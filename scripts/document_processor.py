@@ -101,50 +101,28 @@ class DocumentProcessor:
         Returns:
             List of document chunks
         """
-        chunks = []
+        # Collect every piece first, so each chunk gets its place in the whole and the
+        # whole's count (and with them its own id)
+        pieces: List[str] = []
         
         # Try to split by major sections first
         sections = self._split_by_sections(content)
         
         if len(sections) > 1:
-            # Process each section
-            for i, section in enumerate(sections):
+            for section in sections:
                 if len(section.encode('utf-8')) <= self.chunk_size:
-                    chunks.append(self._create_document(
-                        section, metadata, 
-                        chunk_index=i, 
-                        total_chunks=len(sections)
-                    ))
+                    pieces.append(section)
                 else:
                     # Section is still too large, split further
-                    sub_chunks = self._split_by_size(section, preserve_blocks=True)
-                    for j, sub_chunk in enumerate(sub_chunks):
-                        chunks.append(self._create_document(
-                            sub_chunk, metadata,
-                            chunk_index=len(chunks),
-                            total_chunks=-1  # Will update later
-                        ))
+                    pieces.extend(self._split_by_size(section, preserve_blocks=True))
         else:
             # No clear sections, split by size
-            size_chunks = self._split_by_size(content, preserve_blocks=True)
-            for i, chunk_content in enumerate(size_chunks):
-                chunks.append(self._create_document(
-                    chunk_content, metadata,
-                    chunk_index=i,
-                    total_chunks=len(size_chunks)
-                ))
+            pieces = self._split_by_size(content, preserve_blocks=True)
         
-        # Update total chunks count
-        total = len(chunks)
-        for chunk in chunks:
-            if chunk["total_chunks"] == -1:
-                chunk["total_chunks"] = total
-                # Also update is_chunk since we now know total > 1
-                if total > 1:
-                    chunk["is_chunk"] = True
-                    chunk["parent_id"] = metadata.get('id', 'unknown')
-        
-        return chunks
+        return [
+            self._create_document(piece, metadata, chunk_index=i, total_chunks=len(pieces))
+            for i, piece in enumerate(pieces)
+        ]
     
     def _split_by_sections(self, content: str) -> List[str]:
         """Split content by major sections (## headers)."""
@@ -152,7 +130,7 @@ class DocumentProcessor:
         pattern = r'^##\s+(.+)$'
         
         sections = []
-        current_section = []
+        current_section: List[str] = []
         lines = content.split('\n')
         found_first_h2 = False
         
@@ -181,26 +159,24 @@ class DocumentProcessor:
     
     def _split_by_size(self, content: str, preserve_blocks: bool = True) -> List[str]:
         """Split content by size, trying to preserve code blocks and paragraphs."""
-        chunks = []
-        current_chunk = []
+        chunks: List[str] = []
+        current_chunk: List[str] = []
         current_size = 0
         
         if preserve_blocks:
-            # Split by paragraphs and code blocks
+            # Split by paragraphs and code blocks (with their blank lines, so the chunks
+            # joined with '\n' are the content exactly)
             blocks = self._extract_blocks(content)
             
             for block in blocks:
                 block_size = len(block.encode('utf-8'))
                 
-                if current_size + block_size > self.chunk_size and current_chunk:
-                    # Start new chunk
-                    chunks.append('\n\n'.join(current_chunk))
-                    current_chunk = [block]
-                    current_size = block_size
-                elif block_size > self.chunk_size:
+                # Checked first: a block too large for any chunk is split wherever it
+                # comes, not kept whole when another block precedes it
+                if block_size > self.chunk_size:
                     # Block itself is too large, split it
                     if current_chunk:
-                        chunks.append('\n\n'.join(current_chunk))
+                        chunks.append('\n'.join(current_chunk))
                         current_chunk = []
                         current_size = 0
                     
@@ -208,13 +184,18 @@ class DocumentProcessor:
                     sub_blocks = self._split_large_block(block)
                     for sub_block in sub_blocks:
                         chunks.append(sub_block)
+                elif current_size + block_size > self.chunk_size and current_chunk:
+                    # Start new chunk
+                    chunks.append('\n'.join(current_chunk))
+                    current_chunk = [block]
+                    current_size = block_size
                 else:
                     current_chunk.append(block)
                     current_size += block_size
             
             # Add remaining
             if current_chunk:
-                chunks.append('\n\n'.join(current_chunk))
+                chunks.append('\n'.join(current_chunk))
         else:
             # Simple line-based splitting
             lines = content.split('\n')
@@ -235,9 +216,15 @@ class DocumentProcessor:
         return chunks
     
     def _extract_blocks(self, content: str) -> List[str]:
-        """Extract logical blocks (paragraphs, code blocks, etc.)."""
+        """Extract logical blocks (paragraphs, code blocks, etc.).
+        
+        Each block keeps the blank lines that follow it (the first block also those
+        before it), so the blocks joined by newlines are the content exactly.
+        """
         blocks = []
-        current_block = []
+        current_block: List[str] = []
+        has_text = False  # current_block holds more than blank lines
+        ended = False  # current_block is complete: only blank lines may still join it
         in_code_block = False
         
         lines = content.split('\n')
@@ -248,39 +235,45 @@ class DocumentProcessor:
                 if in_code_block:
                     # End of code block
                     current_block.append(line)
-                    blocks.append('\n'.join(current_block))
-                    current_block = []
                     in_code_block = False
+                    ended = True
                 else:
-                    # Start of code block
-                    if current_block:
+                    # Start of code block: a new block, after the paragraph before it
+                    if has_text:
                         blocks.append('\n'.join(current_block))
-                    current_block = [line]
+                        current_block = []
+                    current_block.append(line)
+                    has_text = True
+                    ended = False
                     in_code_block = True
             elif in_code_block:
                 # Inside code block
                 current_block.append(line)
             elif line.strip() == '':
-                # Empty line - end of paragraph
-                if current_block:
+                # Empty line - end of paragraph (kept with it)
+                current_block.append(line)
+                ended = has_text
+            else:
+                # Regular content: a new block after a paragraph break or a code block
+                if ended:
                     blocks.append('\n'.join(current_block))
                     current_block = []
-            else:
-                # Regular content
                 current_block.append(line)
+                has_text = True
+                ended = False
         
         # Add remaining
         if current_block:
             blocks.append('\n'.join(current_block))
         
-        return [b for b in blocks if b.strip()]
+        return blocks
     
     def _split_large_block(self, block: str) -> List[str]:
         """Split a large block that exceeds chunk size."""
         # This is a fallback for very large blocks
-        chunks = []
+        chunks: List[str] = []
         lines = block.split('\n')
-        current_chunk = []
+        current_chunk: List[str] = []
         current_size = 0
         
         for line in lines:

@@ -33,7 +33,7 @@ That's it for most lookups. Add complexity only when needed.
 | Tool | Purpose |
 |------|---------|
 | `apple-docs:search_apple_docs` | Find symbols, search documentation |
-| `apple-docs:expand_result` | Get full documentation for a symbol |
+| `apple-docs:expand_result` | Get full documentation for a symbol or path (long pages come in parts) |
 | `apple-docs:list_frameworks` | Browse available frameworks |
 
 ## When Search Fails
@@ -50,6 +50,10 @@ That's it for most lookups. Add complexity only when needed.
 **Results truncated?**
 - Increase `token_budget` (default 5000, max 25000)
 - Use `offset` for pagination
+
+**Page comes in parts?**
+- A page too long for one response comes in parts: each reply holds as many as fit and ends with a note like `Parts 1-4 of 12 ... pass this file_path with part=5`. Call `apple-docs:expand_result` again with the same path and that `part`, until the note says it's the end of the page
+- A search result from a long page shows its part (`Part 3 of 6`): pass `part: 3` to start reading there
 
 **Symbol lookup picks the wrong framework?**
 - Pass `framework` to `apple-docs:expand_result` (e.g., `"SwiftUI"`)
@@ -74,8 +78,9 @@ That's it for most lookups. Add complexity only when needed.
 | Parameter | Notes |
 |-----------|-------|
 | `file_path` | Path from search results (`documentation/SwiftUI/button.md`) or symbol name (`Button`) |
-| `sections` | Optional: `["declaration", "overview"]` to limit output |
+| `sections` | Optional: `["declaration", "overview"]` to limit output (taken from the whole page) |
 | `framework` | Optional: framework for symbol lookups (`"SwiftUI"`); use it for common names like `List`, `Text`, `View` |
+| `part` | Optional: part of a long page to start from (`5` for the fifth; the reply holds as many parts as fit); without it, the whole page, or from part 1 if it doesn't fit in one response |
 
 **Note:** Symbol-only lookups (e.g., `file_path: "Button"`) can match pages in several frameworks; the result lists the other frameworks. Pass `framework` (e.g., `framework: "SwiftUI"`) or use the full path from search results for precise lookups.
 

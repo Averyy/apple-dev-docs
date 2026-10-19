@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.1.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.2.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,19 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.2.0
+- `search_apple_docs` returns one result per page, not one per indexed chunk of a long page; such a result shows the part that matched (`Part 3 of 6`)
+- Results are ranked by Meilisearch's relevance (`_rankingScore`) plus a boost for the page whose title is the name asked for (the query may also name its framework, in one word or several: `Button SwiftUI`, `Core Data NSPersistentContainer`); a name typed all in lower case matches a title in any case (`color`, `text`, `accessibility` find SwiftUI's `Color` and `Text` and the Accessibility framework, not the properties of that name), and a smaller boost goes to the symbol one word of a longer query names, typed with its capitals (`Concurrency Task`, `date formatting DateFormatter`, `Core Graphics CGPoint`); equally relevant pages come the more general first: the shorter path within its framework (a type before its members), then the page on more platforms (Foundation's `UserDefaults` before TVMLKit JS's). The relevance % and `relevance_threshold` use this score
+- A one-word query also searches the types named so, when the top 100 matches were cut: Meilisearch scores every page titled with a common name alike, so `String`, `Data`, `Color`, `State` and `Image` missed their type's page (the total says "and the types named 'Data'")
+- Questions ("What is NavigationStack?", "How do I present a sheet in SwiftUI?", or without the `?`, a question word followed by another such word) are searched without their question and function words; a page titled with the question itself still counts as an exact title
+- A wildcard pattern is matched against the top 100 matches for its literal text and, when it starts with 2+ literal characters, every API name starting with them, up to 10,000 (`UI*Controller`, `CL*Manager`, which found nothing before); the total says when either was cut. Wildcard results are ranked by how closely the name fits the pattern ignoring case (the relevance %), names in the pattern's case first (`UI*` lists `UIKey` before `uid`) unless the pattern is all lowercase
+- Result links are labelled by their host: "View on Apple Developer" only for Apple's pages ("View on GitHub", "View on ml-explore.github.io"...)
+- `expand_result` returns the whole page (all its chunks, not one); a page over ~20K tokens comes in parts, each reply holding as many as fit, and the new `part` argument starts at any of them. `sections` are taken from the whole page
+- `expand_result`'s symbol lookup chooses among the types named exactly so, every page named so and the top 100 matches: a type before a member, the simplest overload, the most general page (`Text`, `View`, `Color`, `Data`, `UserDefaults` and `viewDidLoad` find SwiftUI's, Foundation's and UIKit's pages). The other-frameworks note counts every framework with a page of that name and names at most 8
+- A result's `Type` comes from its page's Kind line (`article` without one) and its platforms from the page's Availability list when it has one; a nested type is named by its own name (`Publishers.Map` is `Map`)
+- `/health` reports only the live `apple-docs` index. A rebuild is now built beside it and swapped in (search serves the whole index throughout), so it no longer shows as `indexing` (503) or turns the container unhealthy, and `documents` stays the live count until the swap; only the ~3.5 min after an update or a swap is `indexing`. A start with no doc changes queues no index task, so `/health` stays 200 through it
+- Fixed: a search running while `/health` was polled could fail with "Search temporarily unavailable" (`missing_content_type`)
 
 ### v3.1.0
 - `expand_result` takes an optional `framework` for symbol lookups (`List`, `Text`, `View`, `viewDidLoad` exist in many frameworks); without it, the result notes the other frameworks that match

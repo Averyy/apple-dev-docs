@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xdocs - Apple Developer Documentation MCP Server for AI Coding</title>
-    <meta name="description" content="Search 322,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, AppKit, and 390+ frameworks. Sub-3ms latency. Connect Claude, Cursor, VSCode, or any MCP client.">
+    <meta name="description" content="Search 322,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, AppKit, and 390+ frameworks. ~16 ms median search. Connect Claude, Cursor, VSCode, or any MCP client.">
     <meta name="keywords" content="Apple documentation, MCP server, SwiftUI, UIKit, AppKit, iOS development, macOS development, Claude, Cursor, AI coding, developer tools, Swift, Xcode">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://xdocs.dev/">
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://xdocs.dev/">
     <meta property="og:title" content="xdocs - Apple Developer Documentation for AI Coding">
-    <meta property="og:description" content="Search 322,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 390+ frameworks with sub-3ms latency.">
+    <meta property="og:description" content="Search 322,000+ Apple Developer documents instantly via MCP. Pre-indexed SwiftUI, UIKit, and 390+ frameworks with ~16 ms median search.">
     <meta property="og:site_name" content="xdocs">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://xdocs.dev/og-image.png">
@@ -1042,7 +1042,7 @@
                                 </div>
                             </div>
                             <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-bottom: 12px;">
-                                Then create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">.claude/skills/searching-apple-docs/SKILL.md</code> with:
+                                Then create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">.claude/skills/searching-apple-docs/SKILL.md</code> with the content below, or <a href="/SKILL.md" download="SKILL.md" style="color: var(--accent);">download SKILL.md</a>:
                     </p>
                     <div class="code-window" style="margin: 0;">
                         <div class="code-header">
@@ -1055,62 +1055,8 @@
                                 Copy
                             </button>
                         </div>
-                        <div class="code-body" id="claude-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;">
-<pre><code><span class="code-comment">---</span>
-<span class="code-key">name</span>: <span class="code-string">searching-apple-docs</span>
-<span class="code-key">description</span>: <span class="code-string">Searches Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 390+ frameworks. Useful for looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
-<span class="code-comment">---</span>
-
-<span class="code-comment"># Searching Apple Documentation</span>
-
-322K pre-indexed Apple developer documents.
-
-<span class="code-comment">## Default Workflow</span>
-
-<span class="code-key">Step 1:</span> Search with summaries first
-<span class="code-string">apple-docs:search_apple_docs(</span>
-  <span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span>,
-  <span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span>,
-  <span class="code-key">summary_mode</span>: <span class="code-string">true</span>
-<span class="code-string">)</span>
-<span class="code-comment">→ Results include Path: documentation/SwiftUI/navigationstack.md</span>
-
-<span class="code-key">Step 2:</span> Expand using the path from results
-<span class="code-string">apple-docs:expand_result(</span>
-  <span class="code-key">file_path</span>: <span class="code-string">"documentation/SwiftUI/navigationstack.md"</span>
-<span class="code-string">)</span>
-
-<span class="code-comment">## Tool Reference</span>
-
-<span class="code-key">apple-docs:search_apple_docs</span> - Find symbols, search documentation
-<span class="code-key">apple-docs:expand_result</span> - Get full documentation for a symbol
-<span class="code-key">apple-docs:list_frameworks</span> - Browse available frameworks
-
-<span class="code-comment">## Key Parameters</span>
-
-<span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span> <span class="code-comment">(use exact symbol names)</span>
-<span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional filter)</span>
-<span class="code-key">platform</span>: <span class="code-string">"visionos"</span> <span class="code-comment">(ios/macos/visionos/watchos/tvos)</span>
-<span class="code-key">summary_mode</span>: <span class="code-string">true</span> <span class="code-comment">(use for initial searches)</span>
-<span class="code-key">token_budget</span>: <span class="code-string">5000</span> <span class="code-comment">(default, max 25000)</span>
-
-<span class="code-comment">## When Search Fails</span>
-
-<span class="code-key">No results?</span>
-- Check framework spelling with <span class="code-string">apple-docs:list_frameworks</span>
-- Use exact Apple terminology (<span class="code-string">"NavigationStack"</span> not "nav stack")
-- Remove generic words, keep symbol names
-
-<span class="code-key">Too many irrelevant results?</span>
-- Add <span class="code-key">framework</span> parameter
-- Increase <span class="code-key">relevance_threshold</span> (0.0-1.0)
-
-<span class="code-key">Results truncated?</span>
-- Increase <span class="code-key">token_budget</span> (default 5000, max 25000)
-- Use <span class="code-key">offset</span> for pagination
-
-<span class="code-key">Symbol lookup picks the wrong framework?</span>
-- Pass <span class="code-key">framework</span> to <span class="code-string">apple-docs:expand_result</span> (e.g., <span class="code-string">"SwiftUI"</span>)</code></pre>
+                        <div class="code-body" id="claude-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;" data-skill>
+<pre><code>Loading SKILL.md…</code></pre>
                         </div>
                     </div>
                             <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-top: 16px;">
@@ -1170,7 +1116,7 @@
                                 </div>
                             </div>
                             <p style="color: var(--text-tertiary); font-size: 0.8125rem; margin-bottom: 12px;">
-                                Create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">apple-docs/SKILL.md</code> with the content below, then ZIP the folder:
+                                Create <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">apple-docs/SKILL.md</code> with the content below (or <a href="/SKILL.md" download="SKILL.md" style="color: var(--accent);">download SKILL.md</a>), then ZIP the folder:
                             </p>
                             <div class="code-window" style="margin: 0 0 12px 0;">
                                 <div class="code-header">
@@ -1183,62 +1129,8 @@
                                         Copy
                                     </button>
                                 </div>
-                                <div class="code-body" id="desktop-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;">
-<pre><code><span class="code-comment">---</span>
-<span class="code-key">name</span>: <span class="code-string">searching-apple-docs</span>
-<span class="code-key">description</span>: <span class="code-string">Searches Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 390+ frameworks. Useful for looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.</span>
-<span class="code-comment">---</span>
-
-<span class="code-comment"># Searching Apple Documentation</span>
-
-322K pre-indexed Apple developer documents.
-
-<span class="code-comment">## Default Workflow</span>
-
-<span class="code-key">Step 1:</span> Search with summaries first
-<span class="code-string">apple-docs:search_apple_docs(</span>
-  <span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span>,
-  <span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span>,
-  <span class="code-key">summary_mode</span>: <span class="code-string">true</span>
-<span class="code-string">)</span>
-<span class="code-comment">→ Results include Path: documentation/SwiftUI/navigationstack.md</span>
-
-<span class="code-key">Step 2:</span> Expand using the path from results
-<span class="code-string">apple-docs:expand_result(</span>
-  <span class="code-key">file_path</span>: <span class="code-string">"documentation/SwiftUI/navigationstack.md"</span>
-<span class="code-string">)</span>
-
-<span class="code-comment">## Tool Reference</span>
-
-<span class="code-key">apple-docs:search_apple_docs</span> - Find symbols, search documentation
-<span class="code-key">apple-docs:expand_result</span> - Get full documentation for a symbol
-<span class="code-key">apple-docs:list_frameworks</span> - Browse available frameworks
-
-<span class="code-comment">## Key Parameters</span>
-
-<span class="code-key">query</span>: <span class="code-string">"NavigationStack"</span> <span class="code-comment">(use exact symbol names)</span>
-<span class="code-key">framework</span>: <span class="code-string">"SwiftUI"</span> <span class="code-comment">(optional filter)</span>
-<span class="code-key">platform</span>: <span class="code-string">"visionos"</span> <span class="code-comment">(ios/macos/visionos/watchos/tvos)</span>
-<span class="code-key">summary_mode</span>: <span class="code-string">true</span> <span class="code-comment">(use for initial searches)</span>
-<span class="code-key">token_budget</span>: <span class="code-string">5000</span> <span class="code-comment">(default, max 25000)</span>
-
-<span class="code-comment">## When Search Fails</span>
-
-<span class="code-key">No results?</span>
-- Check framework spelling with <span class="code-string">apple-docs:list_frameworks</span>
-- Use exact Apple terminology (<span class="code-string">"NavigationStack"</span> not "nav stack")
-- Remove generic words, keep symbol names
-
-<span class="code-key">Too many irrelevant results?</span>
-- Add <span class="code-key">framework</span> parameter
-- Increase <span class="code-key">relevance_threshold</span> (0.0-1.0)
-
-<span class="code-key">Results truncated?</span>
-- Increase <span class="code-key">token_budget</span> (default 5000, max 25000)
-- Use <span class="code-key">offset</span> for pagination
-
-<span class="code-key">Symbol lookup picks the wrong framework?</span>
-- Pass <span class="code-key">framework</span> to <span class="code-string">apple-docs:expand_result</span> (e.g., <span class="code-string">"SwiftUI"</span>)</code></pre>
+                                <div class="code-body" id="desktop-skills" style="font-size: 12px; line-height: 1.5; max-height: 340px; overflow-y: auto;" data-skill>
+<pre><code>Loading SKILL.md…</code></pre>
                                 </div>
                             </div>
                             <div class="code-window" style="margin: 0;">
@@ -1502,9 +1394,28 @@
             document.getElementById(id).classList.add('active');
         }
 
+        // landing/SKILL.md is the only copy of the skill: both skill blocks show it,
+        // fetched at page load, and their Copy buttons copy it exactly
+        let skillText = null;
+
+        async function loadSkill() {
+            const blocks = document.querySelectorAll('[data-skill] code');
+            try {
+                const response = await fetch('/SKILL.md');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                skillText = await response.text();
+                blocks.forEach(code => { code.textContent = skillText; });
+            } catch (e) {
+                blocks.forEach(code => {
+                    code.textContent = 'Could not load SKILL.md. Download it from https://xdocs.dev/SKILL.md';
+                });
+            }
+        }
+        loadSkill();
+
         function copyCode(btn, id) {
             const codeBody = document.getElementById(id);
-            const text = codeBody.textContent;
+            const text = codeBody.hasAttribute('data-skill') && skillText !== null ? skillText : codeBody.textContent;
             navigator.clipboard.writeText(text).then(() => {
                 btn.classList.add('copied');
                 btn.setAttribute('aria-label', 'Copied to clipboard');
@@ -1573,16 +1484,17 @@
                 const response = await fetch('https://xdocs.dev/health', { signal: controller.signal });
                 clearTimeout(timeoutId);
                 const data = await response.json();
+                const docCount = data.documents ? data.documents.toLocaleString() : '';
                 // Handle all status states from the health endpoint
                 switch (data.status) {
                     case 'healthy':
                         dot.className = 'dot healthy';
-                        const docCount = data.documents ? data.documents.toLocaleString() : '';
                         text.textContent = `MCP Online: ${docCount} Docs`;
                         break;
                     case 'indexing':
+                        // The live index was just updated (minutes ago) and serves every search
                         dot.className = 'dot indexing';
-                        text.textContent = `MCP Unavailable: Updating ${data.progress || ''}`;
+                        text.textContent = `MCP Online: ${docCount} Docs (index updating)`;
                         break;
                     case 'degraded':
                         dot.className = 'dot down';

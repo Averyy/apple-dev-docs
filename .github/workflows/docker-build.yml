@@ -73,6 +73,10 @@ jobs:
           else
             echo "docs_updated=unknown" >> $GITHUB_OUTPUT
           fi
+          # The checkout's .md count: the indexer changes the index (adds, deletes, a
+          # rebuild's swap) only when the image holds exactly this many (the root
+          # .dockerignore re-includes every documentation/ path)
+          echo "doc_file_count=$(find documentation -name '*.md' | wc -l | xargs)" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -91,6 +95,7 @@ jobs:
             SERVER_VERSION=${{ steps.version.outputs.server_version }}
             BUILD_TIME=${{ steps.timestamps.outputs.build_time }}
             DOCS_UPDATED=${{ steps.timestamps.outputs.docs_updated }}
+            DOC_FILE_COUNT=${{ steps.timestamps.outputs.doc_file_count }}
       
       - name: Deploy to VPS
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'

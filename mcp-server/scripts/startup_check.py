@@ -1,23 +1,27 @@
 #!/usr/bin/env python3
 """
 Startup check script for Docker container.
-Always runs the indexer on startup - the indexer handles incremental updates.
-Weekly force rebuild to clean up deleted files.
+Always runs the indexer on startup. The indexer updates the live index (new and changed
+docs added, removed docs deleted), or rebuilds it beside the live index and swaps it in
+when a rebuild is due (no index yet, a new processor version, a hash file that belongs to
+another index, an older indexer has run on it (a rollback), a week since the last rebuild,
+or more than 25% of the files changed). Either way the live index keeps serving; a due
+rebuild that fails is followed by the update and retried on the next start.
 """
 
 import os
 import sys
 import time
 from pathlib import Path
-from datetime import datetime
 import meilisearch
 from rich.console import Console
 
 console = Console()
 
-# How often to force a full rebuild (cleans up deleted files)
-# Weekly scraping means we should rebuild weekly to sync deletions
-FORCE_REBUILD_DAYS = 7
+# Written by older versions of this script for their weekly in-place rebuild. The live
+# index's createdAt is the rebuild time now; an older image started on this volume (a
+# rollback) treats a missing file as a rebuild just done instead of rebuilding in place.
+RETIRED_FORCE_REBUILD_FILE = Path("/data/logs/last_force_rebuild.txt")
 
 
 def wait_for_meilisearch(url: str, api_key: str, max_attempts: int = 30) -> bool:
@@ -49,49 +53,11 @@ def get_index_doc_count(client: meilisearch.Client, index_name: str = "apple-doc
         return 0
 
 
-def should_force_rebuild(current_doc_count: int, file_count: int) -> tuple[bool, str]:
-    """Check if we should do a full rebuild (weekly cleanup of deleted files)."""
-    force_file = Path("/data/logs/last_force_rebuild.txt")
-
-    # Index is "healthy" if doc count is at least 90% of file count
-    # (each file produces ~1 doc on average, some produce more for sections)
-    min_expected = int(file_count * 0.9)
-    index_is_healthy = current_doc_count >= min_expected
-
-    if index_is_healthy:
-        if not force_file.exists():
-            # Create the file so future checks work, but don't force rebuild
-            save_force_rebuild_time()
-            return False, f"Index healthy ({current_doc_count:,} docs) - skipping rebuild"
-
-        try:
-            last_force = datetime.fromisoformat(force_file.read_text().strip())
-            days_since = (datetime.now() - last_force).days
-
-            if days_since >= FORCE_REBUILD_DAYS:
-                return True, f"Weekly cleanup ({days_since} days since last rebuild)"
-            else:
-                return False, f"Incremental update ({days_since} days since last rebuild)"
-        except Exception:
-            return False, f"Index healthy ({current_doc_count:,} docs) - skipping rebuild"
-
-    # Index is empty or incomplete - needs full build
-    return True, f"Index incomplete ({current_doc_count:,} docs, expected {min_expected:,}+) - full build needed"
-
-
-def save_force_rebuild_time() -> None:
-    """Save the current time as the last force rebuild time."""
-    force_file = Path("/data/logs/last_force_rebuild.txt")
-    force_file.parent.mkdir(parents=True, exist_ok=True)
-    force_file.write_text(datetime.now().isoformat())
-
-
-def run_indexing(force_rebuild: bool = False) -> bool:
-    """Run the indexing script."""
+def run_indexing() -> bool:
+    """Run the indexing script (it prints its mode: incremental update or rebuild by swap)."""
     import subprocess
 
-    mode = "full rebuild" if force_rebuild else "incremental"
-    msg = f"Starting indexing ({mode})..."
+    msg = "Starting indexing..."
     console.print(msg, style="blue")
     print(msg)
 
@@ -102,33 +68,22 @@ def run_indexing(force_rebuild: bool = False) -> bool:
         "--docs-path", "/data/documentation"
     ]
 
-    if force_rebuild:
-        cmd.append("--force")
-
-    # Run the indexing script
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    # Run the indexing script. Its output goes straight to this script's stdout and stderr
+    # (/data/logs/startup-check.log under supervisord), so the log keeps all of it as it
+    # happens: each file left out of the index and why, and the cause of a failed run
+    sys.stdout.flush()
+    result = subprocess.run(cmd)
 
     if result.returncode == 0:
         console.print("Indexing completed successfully!", style="green")
-        # Log last few lines of output
-        if result.stdout:
-            for line in result.stdout.strip().split('\n')[-5:]:
-                if line.strip():
-                    console.print(f"   {line}", style="dim")
         return True
     else:
         console.print(f"Indexing failed with return code {result.returncode}", style="red")
-        if result.stderr:
-            for line in result.stderr.strip().split('\n')[-10:]:
-                console.print(f"   {line}", style="red")
-        if result.stdout:
-            for line in result.stdout.strip().split('\n')[-10:]:
-                console.print(f"   {line}", style="yellow")
         return False
 
 
 def main() -> None:
-    """Main startup check - always run indexer, weekly force rebuild."""
+    """Main startup check - always run the indexer (it decides when to rebuild)."""
     print("\n" + "=" * 50)
     print("Apple Docs MCP Server - Startup Check")
     print("=" * 50)
@@ -166,17 +121,10 @@ def main() -> None:
     doc_files = list(docs_path.rglob("*.md"))
     console.print(f"Documentation: {len(doc_files):,} markdown files", style="cyan")
 
-    # Determine if we need force rebuild (compare doc count to file count)
-    force_rebuild, reason = should_force_rebuild(doc_count, len(doc_files))
-    console.print(f"Mode: {reason}", style="cyan")
-    print(f"Mode: {reason}")
+    RETIRED_FORCE_REBUILD_FILE.unlink(missing_ok=True)
 
-    # Always run the indexer - it handles incremental updates
-    if run_indexing(force_rebuild=force_rebuild):
-        # Save force rebuild time if we did a force rebuild
-        if force_rebuild:
-            save_force_rebuild_time()
-
+    # Always run the indexer - it updates the live index or rebuilds it by swap
+    if run_indexing():
         # Verify final state
         time.sleep(2)
         new_count = get_index_doc_count(client)

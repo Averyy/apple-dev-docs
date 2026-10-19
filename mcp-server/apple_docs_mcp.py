@@ -18,9 +18,11 @@ import fnmatch
 import secrets
 import time
 import logging
+import unicodedata
 from collections import defaultdict
-from typing import Annotated, Dict, List, Optional, Any
+from typing import Annotated, Callable, Dict, List, Optional, Any, Tuple, TypeVar
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from pydantic import Field
 
@@ -55,7 +57,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.1.0"
+SERVER_VERSION = "3.2.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -77,8 +79,90 @@ RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "60"))
 # Token optimization settings
 MAX_TOKEN_BUDGET = 25000
 
+# Largest expand_result reply, in estimate_tokens units (~4 characters per token). Claude
+# Code's default cap on an MCP tool's output is 25,000 tokens, and code-heavy pages
+# tokenize denser than 4 characters per token, so this leaves room under it. A longer
+# page comes in parts, its indexed chunks (each at most ~52 KB, ~13K tokens): a reply
+# holds as many whole parts as fit under it.
+EXPAND_TOKEN_CAP = 20000
+
+# The fields expand_result reads from each document (chunk) of a file. index_gen is the
+# indexer run that sent it (scripts/index_to_meilisearch.py: INDEX_GEN_ATTRIBUTE).
+EXPAND_FIELDS = ["title", "content", "framework", "kind", "url", "file_path",
+                 "chunk_index", "total_chunks", "index_gen"]
+
+# Documents fetched for one file at first (the largest file has ~20 chunks); a file with
+# more is fetched again with its total
+FILE_CHUNKS_LIMIT = 100
+
+# Display names of the hosts the indexed docs come from; a result link from any other host
+# is labelled with the host itself
+LINK_HOST_NAMES = {"developer.apple.com": "Apple Developer", "github.com": "GitHub"}
+
+# Search ranking (calculate_relevance_score): Meilisearch's _rankingScore, scaled into
+# 1 - TITLE_BOOST_MAX, plus a boost for a page whose title is the name the query asks for.
+# Meilisearch scores a type and every method named after it alike (URLSession and
+# urlSession(_:didReceive:) both match the word exactly), so the title decides between them.
+# A name typed all in lower case ("color", "accessibility") says nothing about case, so
+# every page titled so gets the exact boost, and the more general page comes first (Color
+# the type, not the color properties of hundreds of types).
+TITLE_BOOST_MAX = 0.2
+TITLE_EXACT_BOOST = 0.2  # the title is the name, case and all (any case for a lowercase name)
+TITLE_NOCASE_BOOST = 0.15  # the same but for case
+TITLE_FUNCTION_BOOST = 0.1  # a function of that name: name(...)
+# A symbol page (not an article) named by one word of a longer query, a word typed with a
+# capital as a symbol name is ("Concurrency Task", "date formatting DateFormatter",
+# "Core Graphics CGPoint"): Meilisearch ranks the articles holding more of the words
+# first, while the query asks for the symbol. Not the first word of a query that reads as
+# a sentence when only its first letter is a capital: that may just start the sentence
+# ("Color picker in SwiftUI")
+NAMED_SYMBOL_BOOST = 0.1
+
+# A question ("What is NavigationStack?", "How do I present a sheet in SwiftUI?") is
+# searched without its question and function words: every word must match, and pages
+# holding "what", "is", "how", "do" and the subject close together (release notes, long
+# articles) outranked the subject's own page. Only for a question (several words, ending
+# with "?", or starting with one of QUESTION_START_WORDS followed by another of
+# QUESTION_STOP_WORDS), since some of these words are Swift keywords a plain query
+# searches for ("is operator", "for in", "do catch"), and titles start with them too
+# ("What’s New").
+QUESTION_START_WORDS = frozenset({"what", "what's", "whats", "how", "why", "when", "which", "who", "whose"})
+QUESTION_STOP_WORDS = frozenset({
+    "what", "what's", "whats", "how", "why", "when", "where", "which", "who", "whom", "whose",
+    "is", "are", "was", "were", "be", "been", "am", "do", "does", "did", "can", "could", "should",
+    "would", "will", "shall", "may", "might", "must",
+    "i", "me", "my", "we", "us", "our", "you", "your", "it", "its", "they", "them", "their",
+    "a", "an", "the", "this", "that", "these", "those",
+    "to", "of", "in", "on", "at", "by", "for", "with", "from", "into", "about", "between", "and", "or",
+})
+
+# A wildcard pattern that starts with this many literal characters ('UI*Controller') is
+# matched against the pages whose api_name starts with them (ignoring case), besides the
+# top matches for its literal text. At most WILDCARD_NAME_LIMIT names are listed, and the
+# result says when there were more. On the full index (325K documents) a type prefix lists
+# a few thousand ('CL' 3,880, 'MT' 3,602, 'NS' 2,733, 'UI' 1,173), but the commonest
+# lowercase prefixes list more ('se' 7,955, 'co' 8,760, 're' 17,666, 'in' 30,268, of
+# which 'init', every initializer's name, 24,350), and their patterns take ~0.1-0.5 s
+# (up to ~1 s on a cold cache) against ~20-70 ms for a type prefix's.
+WILDCARD_PREFIX_MIN = 2
+WILDCARD_NAME_LIMIT = 10000
+
+# expand_result's symbol lookup (symbol_candidates): candidates per search, one per page;
+# also the most types a one-word search adds (search_apple_docs). Meilisearch scores every
+# page named "data" alike (a property of hundreds of types, and Foundation's Data), so its
+# top matches for the name alone often miss the type.
+SYMBOL_CANDIDATES = 100
+# Kinds that are types (scripts/metadata_extractor.py kind_mappings): a type is preferred
+# over members of the same name (SwiftUI's Text struct over AVCaption.Ruby's text)
+TYPE_KINDS = ("class", "struct", "enum", "protocol", "actor", "typealias", "union", "type", "namespace")
+TYPE_KINDS_FILTER = "kind IN [" + ", ".join(f'"{kind}"' for kind in TYPE_KINDS) + "]"
+# Frameworks the "also matches pages in" note names before "and N more"
+AMBIGUITY_FRAMEWORKS_SHOWN = 8
+
 # Meilisearch v1.49 never matches a filter string longer than this
-# (MAX_FACET_VALUE_LENGTH = 500 - 32 bytes), so longer file paths can't be looked up
+# (MAX_FACET_VALUE_LENGTH = 500 - 32 bytes), so longer file paths can't be looked up. It
+# measures the value normalized (filter_value_bytes), as the indexer checks it
+# (scripts/index_to_meilisearch.py)
 MAX_FILTER_VALUE_BYTES = 468
 
 # Health check thresholds
@@ -102,10 +186,6 @@ meili_index: Optional[Any] = None
 _frameworks_cache: Optional[Dict[str, int]] = None
 _frameworks_cache_time: float = 0
 _frameworks_cache_ttl: float = 300.0  # seconds
-
-# Stats cache for health check (avoid repeated Meilisearch calls)
-_stats_cache: Dict[str, Any] = {"value": None, "timestamp": 0}
-_stats_cache_ttl: float = 5.0  # seconds
 
 # =============================================================================
 # MEILISEARCH INITIALIZATION
@@ -203,8 +283,14 @@ def _is_retryable_error(e: Exception) -> bool:
     ])
 
 
-def safe_search(query: str, params: dict, retries: int = MEILI_MAX_RETRIES) -> dict:
-    """Execute a Meilisearch search with error handling and retry logic."""
+T = TypeVar("T")
+
+
+def _with_retries(operation: str, call: Callable[[], T], retries: int) -> T:
+    """Run a Meilisearch call with error handling and retry logic.
+
+    call reads meili_index when it runs, so a retry uses the reconnected index.
+    """
     last_error = None
 
     for attempt in range(retries + 1):
@@ -213,12 +299,11 @@ def safe_search(query: str, params: dict, retries: int = MEILI_MAX_RETRIES) -> d
             if not ensure_meilisearch_connection():
                 raise MeilisearchSetupError("Failed to establish Meilisearch connection")
 
-            # Execute search
-            result = meili_index.search(query, params)
+            result = call()
 
             # Log recovery after successful retry
             if attempt > 0:
-                logger.info(f"Meilisearch search recovered after {attempt} retry(ies)")
+                logger.info(f"Meilisearch {operation} recovered after {attempt} retry(ies)")
 
             return result
 
@@ -226,7 +311,7 @@ def safe_search(query: str, params: dict, retries: int = MEILI_MAX_RETRIES) -> d
             last_error = e
             is_retryable = _is_retryable_error(e)
             logger.warning(
-                f"Meilisearch search failed (attempt {attempt + 1}/{retries + 1}): {e} "
+                f"Meilisearch {operation} failed (attempt {attempt + 1}/{retries + 1}): {e} "
                 f"[{type(e).__name__}, retryable={is_retryable}]"
             )
 
@@ -239,7 +324,28 @@ def safe_search(query: str, params: dict, retries: int = MEILI_MAX_RETRIES) -> d
                 break
 
     # All retries exhausted
-    raise Exception(f"Meilisearch search failed after {retries + 1} attempts: {last_error}")
+    raise Exception(f"Meilisearch {operation} failed after {retries + 1} attempts: {last_error}")
+
+
+def _connected_index() -> Any:
+    """The index object, which a successful ensure_meilisearch_connection has set."""
+    if meili_index is None:
+        raise MeilisearchSetupError("Meilisearch index not initialized")
+    return meili_index
+
+
+def safe_search(query: str, params: dict, retries: int = MEILI_MAX_RETRIES) -> dict:
+    """Execute a Meilisearch search with error handling and retry logic."""
+    return _with_retries("search", lambda: _connected_index().search(query, params), retries)
+
+
+def safe_get_documents(params: dict, retries: int = MEILI_MAX_RETRIES) -> Any:
+    """Fetch documents (a DocumentsResults) with error handling and retry logic.
+
+    A POST, like a search: a GET would drop the Content-Type of the headers the index
+    object shares with concurrent searches (see health_check).
+    """
+    return _with_retries("document fetch", lambda: _connected_index().get_documents(params), retries)
 
 
 def get_framework_counts() -> Dict[str, int]:
@@ -285,54 +391,254 @@ def get_index_metadata() -> Optional[Dict]:
 # HELPER FUNCTIONS
 # =============================================================================
 
-def calculate_relevance_score(hit: Dict, query: str, search_framework: str = "") -> float:
-    """Calculate relevance score based on query match quality."""
-    query_lower = query.lower()
-    query_words = query_lower.split()
+def without_framework_words(query: str, framework: str) -> str:
+    """query without the words that name framework, in one word or several ('SwiftUI' for
+    SwiftUI, 'Core Data' for CoreData, 'App Intents' for AppIntents; letters and digits
+    compared, ignoring case), or all of it when nothing else is left."""
+    def key(text: str) -> str:
+        return re.sub(r"[\W_]", "", text.lower())
 
-    title = hit.get("title", "").lower()
-    api_name = hit.get("api_name", "").lower()
-    overview = hit.get("overview", "").lower()
-    framework = hit.get("framework", "").lower()
-
-    score = 0.0
-
-    # Framework matching boost
-    if search_framework:
-        target = search_framework.lower()
-        if framework == target:
-            score += 0.2
-        elif target:
-            score -= 0.3
-
-    # Core component boost
-    core_components = ["button", "text", "image", "view", "list", "stack",
-                       "navigation", "alert", "sheet", "picker", "toggle"]
-    if any(c in api_name for c in core_components):
-        if len(api_name) <= 20 and "store" not in api_name:
-            score += 0.1
+    framework_key = key(framework)
+    words = query.split()
+    keys = [key(word) for word in words]
+    kept: List[str] = []
+    start = 0
+    while start < len(words):
+        joined, end = "", 0
+        for i in range(start, len(words)):
+            joined += keys[i]
+            if not keys[i] or not framework_key.startswith(joined):
+                break
+            if joined == framework_key:
+                end = i + 1
+                break
+        if end:
+            start = end
         else:
-            score -= 0.2
+            kept.append(words[start])
+            start += 1
+    return " ".join(kept or words)
 
-    # Match quality scoring
-    if api_name == query_lower or title == query_lower:
-        score += 1.0
-    elif query_words and api_name == query_words[-1]:
-        score += 0.95
-    elif api_name and query_lower in api_name:
-        score += 0.9
-    elif all(word in title for word in query_words):
-        score += 0.85
-    elif query_words and query_words[-1] in title:
-        score += 0.75
-    elif any(word in title for word in query_words):
-        score += 0.7
-    elif overview and query_lower in overview:
-        score += 0.6
-    else:
-        score += 0.4
 
-    return max(0.0, min(1.0, score))
+def title_boost(title: str, name: str) -> float:
+    """The boost for a page whose title is name: case and all (any case when name is all
+    lowercase), ignoring case, or a function of that name (name(...))."""
+    if title == name or (name.islower() and title.lower() == name):
+        return TITLE_EXACT_BOOST
+    if title.lower() == name.lower():
+        return TITLE_NOCASE_BOOST
+    if title.lower().startswith(name.lower() + "("):
+        return TITLE_FUNCTION_BOOST
+    return 0.0
+
+
+def named_symbol_boost(hit: Dict, words: List[str], typed: str = "") -> float:
+    """NAMED_SYMBOL_BOOST for a symbol page (not an article) whose api_name is one of
+    several query words, a word with a capital letter, case and all; else 0.
+
+    typed is the query as typed. When it reads as a sentence (another of its words starts
+    in lower case), the capital of its first word may only start it ("Color picker in
+    SwiftUI", "Error handling Swift"): that word names a symbol only with another capital
+    after its first letter ("NavigationView navigationBarTitle"). "Button SwiftUI" is no
+    sentence."""
+    name = str(hit.get("api_name", ""))
+    if len(words) > 1 and hit.get("kind") != "article" and name in words and name != name.lower():
+        typed_words = typed.split()
+        if (typed_words and name == typed_words[0].rstrip("?!.,:;") and name[1:] == name[1:].lower()
+                and any(word[:1].islower() for word in typed_words[1:])):
+            return 0.0
+        return NAMED_SYMBOL_BOOST
+    return 0.0
+
+
+def calculate_relevance_score(hit: Dict, query: str, asked: str = "") -> float:
+    """A search hit's relevance (0.0-1.0): Meilisearch's _rankingScore (from its ranking
+    rules: matched words, typos, proximity, attribute, position, exactness), plus a
+    boost when the page's title is the name asked for, or a smaller one when the page is
+    the symbol one word of a longer query names (named_symbol_boost).
+
+    The query may also name the page's framework ("Button SwiftUI", "Core Data
+    NSPersistentContainer"): the title is compared with the rest of it. asked is the query
+    as asked: a question is searched without its question words (question_terms), and a
+    page titled with the question itself ("What Is Core ML Tools?") keeps its boost.
+    """
+    ranking = float(hit.get("_rankingScore") or 0.0)
+    title = str(hit.get("title", ""))
+    rest = without_framework_words(query, str(hit.get("framework", "")))
+    boost = title_boost(title, rest)
+    if asked.strip():
+        boost = max(boost, title_boost(title.rstrip("?"), asked.strip().rstrip("?")))
+    if not boost:
+        boost = named_symbol_boost(hit, rest.split(), asked.strip() or query)
+    # Rounded, so that hits Meilisearch ranks alike compare equal (see rank_hits)
+    return round(ranking * (1 - TITLE_BOOST_MAX) + boost, 6)
+
+
+def question_terms(original_query: str, query: str) -> str:
+    """The words to search for: query without QUESTION_STOP_WORDS when original_query is a
+    question (all of query when every word is one), else query unchanged.
+
+    A question ends with "?", or starts with one of QUESTION_START_WORDS and has another of
+    QUESTION_STOP_WORDS ("how do I present a sheet"); a title like "What’s New" is not one.
+    """
+    def plain(word: str) -> str:
+        return re.sub(r"[^\w']", "", word.lower().replace("\u2019", "'"))
+
+    words = query.split()
+    original_words = [plain(word) for word in original_query.split()]
+    is_question = original_query.rstrip().endswith("?") or (
+        bool(original_words) and original_words[0] in QUESTION_START_WORDS
+        and any(word in QUESTION_STOP_WORDS for word in original_words[1:]))
+    if len(words) < 2 or not is_question:
+        return query
+    return " ".join(w for w in words if plain(w) not in QUESTION_STOP_WORDS) or query
+
+
+def wildcard_prefix(pattern: str) -> str:
+    """A wildcard pattern's literal text before its first '*' or '?'."""
+    return re.split(r'[*?]', pattern)[0].strip()
+
+
+def wildcard_matches(hits: List[Dict], pattern: "re.Pattern[str]", same_case: "re.Pattern[str]",
+                     literal_chars: int) -> List[Dict]:
+    """The hits whose title or api_name the wildcard pattern matches ignoring case (pattern
+    is lowercased), each with its '_relevance', how closely the name fits the pattern: the
+    share of the name the pattern's literal characters make up, ignoring case (UIView*
+    gives UIView 1.0 and UIViewController 0.375), and its '_case_rank': 0 for a name in the
+    pattern's own case (same_case matches it), 1 for any other, which rank_hits puts after
+    the names in the pattern's case ('UI*' lists UIKey before uid; a pattern all in lower
+    case matches every case, see search_apple_docs). The case orders the matches but leaves
+    their relevance alone, so 'nsview*' shows NSView at 100% as 'NSView*' does, and
+    relevance_threshold keeps it."""
+    matches = []
+    for hit in hits:
+        for field in ("title", "api_name"):
+            name = str(hit.get(field, ""))
+            if pattern.match(name.lower()):
+                hit['_relevance'] = round(min(1.0, literal_chars / max(1, len(name))), 6)
+                hit['_case_rank'] = 0 if same_case.match(name) else 1
+                matches.append(hit)
+                break
+    return matches
+
+
+def list_names_by_prefix(prefix: str, filters: List[str]) -> Tuple[List[Dict[str, Any]], int]:
+    """The pages whose api_name starts with prefix (ignoring case), within the filters: at
+    most WILDCARD_NAME_LIMIT of their documents (file_path, title, api_name and platforms,
+    for rank_hits), and how many documents there are."""
+    params = {
+        "filter": " AND ".join(filters + [f'api_name STARTS WITH "{escape_filter_value(prefix)}"']),
+        "fields": ["file_path", "title", "api_name", "platforms"],
+        "limit": WILDCARD_NAME_LIMIT,
+    }
+    results = safe_get_documents(params)
+    return [dict(doc) for doc in results.results], int(results.total)
+
+
+def fetch_hits_by_path(paths: List[str], filters: List[str], attrs: List[str]) -> Dict[str, Dict[str, Any]]:
+    """One search hit (attrs) per page of these paths, by file_path."""
+    values = ", ".join(f'"{escape_filter_value(path, max_length=None)}"' for path in paths)
+    params = {
+        "limit": len(paths),
+        "attributesToRetrieve": attrs,
+        "distinct": "file_path",
+        "filter": " AND ".join(filters + [f"file_path IN [{values}]"]),
+    }
+    return {str(hit.get("file_path")): hit for hit in safe_search("", params).get("hits", [])}
+
+
+def api_name_filter(name: str) -> str:
+    """The filter for the pages whose api_name is name (ignoring case, as filters compare)."""
+    return f'api_name = "{escape_filter_value(name, max_length=None)}"'
+
+
+def searchable_filter_value(value: str) -> bool:
+    """Whether a search's filter can hold value. Meilisearch v1.49's search reads a quoted
+    filter value twice (it parses the filter, then parses its own rendering of it, where
+    a backslash is no longer escaped): a backslash at the end of a value, or before
+    anything but a quote, fails the search (invalid_search_filter), and any other is
+    misread. No indexed name, path, framework or platform has one, so such a value matches
+    nothing. (A documents fetch reads its filter once, so escape_filter_value suffices.)"""
+    return "\\" not in value
+
+
+def symbol_candidates(name: str, framework: str = "") -> Tuple[List[Dict[str, Any]], List[str]]:
+    """The pages expand_result's symbol lookup chooses from, one hit per page: the types
+    whose api_name is name (ignoring case), the other pages named so, then the top matches
+    for name (SYMBOL_CANDIDATES of each), within framework when given. Also, without a
+    framework, every framework that has a page whose api_name is name (its pages can
+    outnumber the candidates: 'init' names ~24,000)."""
+    if not searchable_filter_value(framework):
+        return [], []
+    base = [f'framework = "{escape_filter_value(framework)}"'] if framework else []
+    named = api_name_filter(name)
+    # No page is named with a backslash, and a search can't filter on one
+    searches = [base + [named, TYPE_KINDS_FILTER], base + [named], base] if searchable_filter_value(name) else [base]
+    candidates: List[Dict[str, Any]] = []
+    frameworks: List[str] = []
+    seen = set()
+    for filters in searches:
+        params: Dict[str, Any] = {
+            "limit": SYMBOL_CANDIDATES,
+            "attributesToRetrieve": ["title", "framework", "kind", "url", "file_path", "api_name", "platforms"],
+            # One candidate per page, so the chunks of one long page can't fill the window
+            "distinct": "file_path",
+        }
+        if filters:
+            params["filter"] = " AND ".join(filters)
+        if filters == [named]:
+            # Without a framework: every framework that has a page of that name, for the note
+            params["facets"] = ["framework"]
+        results = safe_search(name, params)
+        if "facets" in params:
+            frameworks = sorted(results.get("facetDistribution", {}).get("framework", {}))
+        for hit in results.get("hits", []):
+            if hit.get("file_path") not in seen:
+                seen.add(hit.get("file_path"))
+                candidates.append(hit)
+    return candidates, frameworks
+
+
+def generality(hit: Dict[str, Any]) -> Tuple[int, int]:
+    """A sort key for pages that otherwise tie, the more general first: the shorter path
+    within its framework (a type before its members, a base class's method before a
+    subclass's override), then the page available on more platforms (Foundation's
+    UserDefaults before TVMLKit JS's, UIKit's viewDidLoad() before AppKit's). The whole
+    path would favor the framework with the shorter directory name."""
+    in_framework = str(hit.get("file_path", "")).split("/", 2)[-1]
+    return len(in_framework), -len(hit.get("platforms") or [])
+
+
+def pick_symbol(candidates: List[Dict[str, Any]], name: str) -> Optional[Dict[str, Any]]:
+    """The candidate that is name's page, or None.
+
+    In order: an exact, case-sensitive title ('Button' over 'Button tags'), that name's
+    function page ('withAnimation' -> 'withAnimation(_:_:)'), then the looser
+    case-insensitive matches. Among the candidates of the first of these that has any: a
+    type before a member, then the shortest title (the simplest overload), then the more
+    general page (generality), then the candidates' order.
+    """
+    lower = name.lower()
+    tiers: List[Callable[[Dict[str, Any]], bool]] = [
+        lambda h: h.get("title", "") == name,
+        lambda h: h.get("title", "").startswith(name + "("),
+        lambda h: h.get("title", "").lower() == lower or h.get("api_name", "").lower() == lower,
+        lambda h: h.get("title", "").lower().startswith(lower + "("),
+        lambda h: lower in h.get("api_name", "").lower(),
+    ]
+    for tier in tiers:
+        matches = [h for h in candidates if tier(h)]
+        if matches:
+            return min(matches, key=lambda h: (h.get("kind") not in TYPE_KINDS, len(h.get("title", "")),
+                                               *generality(h)))
+    return None
+
+
+def rank_hits(hits: List[Dict]) -> List[Dict]:
+    """Hits by relevance (their '_relevance'), best first, a wildcard match not in the
+    pattern's case after those that are (its '_case_rank', wildcard_matches). Equally
+    relevant hits go the more general page first (generality), then in Meilisearch's order."""
+    return sorted(hits, key=lambda hit: (hit.get('_case_rank', 0), -hit['_relevance'], *generality(hit)))
 
 
 def estimate_tokens(text: str) -> int:
@@ -386,6 +692,73 @@ def escape_filter_value(value: str, max_length: Optional[int] = 100) -> str:
     return value
 
 
+def filter_value_bytes(value: str) -> int:
+    """Length of a filter value as Meilisearch's 468-byte limit counts it: trimmed,
+    NFKD-normalized and lowercased (verified on v1.49), as the indexer measures file_path
+    (scripts/index_to_meilisearch.py: filter_value_bytes)."""
+    return len(unicodedata.normalize("NFKD", value.strip()).lower().encode("utf-8"))
+
+
+def cut_text(text: str, max_chars: int) -> str:
+    """Cut text to at most max_chars, closing a code block the cut left open."""
+    text = text[:max(0, max_chars)].rstrip()
+    if text.count("```") % 2:
+        text += "\n```"
+    return text
+
+
+def get_file_chunks(file_path: str) -> List[Dict[str, Any]]:
+    """Every document of one file, in chunk order (empty if the file isn't indexed).
+
+    The indexer stores a file over its chunk size as several documents (chunks), one
+    piece each: joined with "\\n" in chunk_index order, they are the file.
+    """
+    params: Dict[str, Any] = {
+        # Full path, never truncated: a cut path matches no document
+        "filter": f'file_path = "{escape_filter_value(file_path, max_length=None)}"',
+        "fields": EXPAND_FIELDS,
+        "limit": FILE_CHUNKS_LIMIT,
+    }
+    results = safe_get_documents(params)
+    if results.total > len(results.results):
+        params["limit"] = results.total
+        results = safe_get_documents(params)
+    chunks = [dict(doc) for doc in results.results]
+
+    # A filter compares paths ignoring case and Unicode forms, so it can also match
+    # another file's documents: keep one file's, the path asked for when it's there
+    paths = sorted({str(chunk.get("file_path", "")) for chunk in chunks})
+    if len(paths) > 1:
+        keep = file_path if file_path in paths else paths[0]
+        chunks = [chunk for chunk in chunks if chunk.get("file_path", "") == keep]
+
+    # An update deletes a changed file's old documents only after every add of the run (a
+    # run that stops first leaves them until the next): until then the file has two runs'
+    # documents. Keep the newest run's, which are all of the file (the indexer sends a
+    # file's documents in one batch). index_gen is a fixed-width UTC timestamp; documents
+    # without one (an index built before it) count as the oldest.
+    newest = max(str(chunk.get("index_gen") or "") for chunk in chunks) if chunks else ""
+    chunks = [chunk for chunk in chunks if str(chunk.get("index_gen") or "") == newest]
+
+    chunks.sort(key=lambda chunk: chunk.get("chunk_index") or 0)
+    return chunks
+
+
+def link_label(url: str) -> str:
+    """A result link's label, named by the URL's host: "View on Apple Developer" only for
+    Apple's own pages (the index also holds GitHub, MLX and coremltools docs)."""
+    host = (urlsplit(url).hostname or "").removeprefix("www.")
+    return f"View on {LINK_HOST_NAMES.get(host, host or 'source')}"
+
+
+def part_label(hit: Dict[str, Any]) -> str:
+    """"Part i of N" for a chunk of a file indexed as several documents, else ""."""
+    index, total = hit.get("chunk_index"), hit.get("total_chunks")
+    if isinstance(index, int) and isinstance(total, int) and total > 1:
+        return f"Part {index + 1} of {total}"
+    return ""
+
+
 # =============================================================================
 # FASTMCP SERVER SETUP
 # =============================================================================
@@ -432,10 +805,17 @@ def search_apple_docs(
     IMPORTANT: Use summary_mode=true for initial exploration, then expand_result for specific docs.
     Only increase token_budget when comprehensive coverage is needed.
 
+    Returns one result per page. A result from a long page shows which part of it matched
+    (e.g. 'Part 3 of 6'): expand_result with that part reads the page from there.
+
     Args:
-        query: Search query (e.g., 'Button', 'async await', 'NavigationStack'). Wildcards: '*' matches
-            any characters and '?' one character in single-word queries (e.g., 'UIView*', 'NS*Button',
-            'Button?'); they filter the top matches for the literal text, so start with a literal prefix
+        query: Search query (e.g., 'Button', 'async await', 'NavigationStack', or a question).
+            Wildcards: '*' matches any characters and '?' one character in single-word queries
+            (e.g., 'UIView*', 'UI*Controller', 'Button?'), ignoring case, names in the pattern's
+            case first (unless it is all lowercase). A pattern is matched against the top
+            matches for its literal text and, when it starts with 2+ literal characters, every
+            API name starting with them (the first 10,000 when there are more); the results say
+            when either was cut
         framework: Only return results from this framework (e.g., 'SwiftUI', 'UIKit', 'CarPlay')
         strict_framework: Deprecated, no effect (framework always filters); accepted for older clients
         platform: Filter by platform: 'ios', 'macos', 'tvos', 'watchos', 'visionos', or 'all'
@@ -446,7 +826,7 @@ def search_apple_docs(
         offset: Skip N results for pagination
 
     Returns:
-        Formatted search results with relevance scores and documentation content
+        Formatted search results, one per page, with relevance scores and documentation content
     """
     # Validate connection
     if not ensure_meilisearch_connection():
@@ -473,16 +853,25 @@ def search_apple_docs(
     # Handle wildcards
     has_wildcards = '*' in query or '?' in query
     wildcard_pattern = None
+    same_case_pattern = None
+    literal_chars = 0
+    name_prefix = ""
 
     if has_wildcards:
         # fnmatch emits atomic groups, so a pattern can't backtrack
         # catastrophically (a hand-built '.*' per '*' let '******Q' freeze the
         # whole server). Runs of '*' collapse; '[' is escaped to stay literal.
-        # Matched against lowercased fields (case-insensitive, as before).
-        wildcard_pattern = re.compile(
-            fnmatch.translate(re.sub(r'\*+', '*', query).lower().replace('[', '[[]'))
-        )
+        # Matched against lowercased fields (case-insensitive, as before); a name in
+        # the pattern's own case ranks first (wildcard_matches).
+        glob = re.sub(r'\*+', '*', query).replace('[', '[[]')
+        wildcard_pattern = re.compile(fnmatch.translate(glob.lower()))
+        # A pattern typed all in lower case says nothing about case: every case is its own
+        same_case_pattern = re.compile(fnmatch.translate(glob), re.IGNORECASE if glob.islower() else 0)
+        literal_chars = len(re.sub(r'[*?]', '', query))
+        name_prefix = wildcard_prefix(query)
         query = query.replace('*', ' ').replace('?', ' ').strip() or "a"
+    else:
+        query = question_terms(original_query, query)
 
     # Build Meilisearch filter
     filters = []
@@ -490,9 +879,13 @@ def search_apple_docs(
         filters.append(f'framework = "{escape_filter_value(framework)}"')
     if platform_filter:
         filters.append(f'platforms = "{escape_filter_value(platform_filter)}"')
+    if not (searchable_filter_value(framework) and searchable_filter_value(platform_filter)):
+        # No framework or platform has a backslash, and a search can't filter on one
+        return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
 
     # Search attributes
-    attrs = ["title", "framework", "api_name", "overview", "url", "platforms", "kind", "file_path"]
+    attrs = ["title", "framework", "api_name", "overview", "url", "platforms", "kind", "file_path",
+             "chunk_index", "total_chunks"]
     if not summary_mode:
         attrs.append("content")
 
@@ -504,33 +897,56 @@ def search_apple_docs(
         "highlightPreTag": "**",
         "highlightPostTag": "**",
         "showRankingScore": True,
+        # One hit per file: its best-matching chunk, not every chunk of a long page
+        "distinct": "file_path",
     }
     if filters:
         search_params["filter"] = " AND ".join(filters)
 
+    names_total: Optional[int] = None  # names listed for a wildcard pattern's prefix
+    types_added = False  # types named as a one-word query, past the top matches
     try:
         results = safe_search(query, search_params)
         hits = results.get("hits", [])
+        window_full = len(hits) >= window
+
+        if has_wildcards and wildcard_pattern and same_case_pattern:
+            # The pattern's literal text, searched as words, finds a name like
+            # UIViewController (one word) only by its first letters, so the top matches
+            # are joined by the pages whose name starts with the pattern's prefix
+            hits = wildcard_matches(hits, wildcard_pattern, same_case_pattern, literal_chars)
+            if len(name_prefix) >= WILDCARD_PREFIX_MIN:
+                listed, names_total = list_names_by_prefix(name_prefix, filters)
+                seen = {hit.get("file_path") for hit in hits}
+                for doc in wildcard_matches(listed, wildcard_pattern, same_case_pattern, literal_chars):
+                    if doc.get("file_path") not in seen:
+                        seen.add(doc.get("file_path"))
+                        hits.append(dict(doc, _listed=True))
+        elif window_full and re.fullmatch(r"\w+", query):
+            # Meilisearch scores every page with the word as its title alike, in index
+            # order: for a common name (String, Data, Color, State) the type's own page can
+            # be past the top matches, so the types named so join them
+            type_params = dict(search_params, limit=SYMBOL_CANDIDATES,
+                               filter=" AND ".join(filters + [api_name_filter(query), TYPE_KINDS_FILTER]))
+            seen = {hit.get("file_path") for hit in hits}
+            for hit in safe_search(query, type_params).get("hits", []):
+                if hit.get("file_path") not in seen:
+                    seen.add(hit.get("file_path"))
+                    hits.append(hit)
+                    types_added = True
     except Exception as e:
         logger.error(f"Search failed for query '{query}': {e}")
         raise ToolError("Search temporarily unavailable. Please try again in a moment.") from e
-
-    window_full = len(hits) >= window
-
-    # Apply wildcard filter
-    if has_wildcards and wildcard_pattern and hits:
-        hits = [h for h in hits if
-                wildcard_pattern.match(h.get("api_name", "").lower()) or
-                wildcard_pattern.match(h.get("title", "").lower())]
 
     if not hits:
         return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
 
     # Score and filter results (framework is already a hard filter in the
-    # search, so strict_framework has nothing left to do)
+    # search, so strict_framework has nothing left to do). A wildcard match's
+    # relevance is how closely its name fits the pattern (wildcard_matches).
     scored_hits = []
     for hit in hits:
-        score = calculate_relevance_score(hit, query, framework)
+        score = hit['_relevance'] if has_wildcards else calculate_relevance_score(hit, query, original_query)
         if score >= relevance_threshold:
             hit['_relevance'] = score
             scored_hits.append(hit)
@@ -540,14 +956,38 @@ def search_apple_docs(
             return f"No results above relevance threshold {relevance_threshold}"
         return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
 
-    scored_hits.sort(key=lambda x: x['_relevance'], reverse=True)
+    scored_hits = rank_hits(scored_hits)
     total_text = f"{len(scored_hits)} results"
+    names_capped = names_total is not None and names_total > WILDCARD_NAME_LIMIT
+    added = ""  # what joined the top matches
+    if names_total:
+        # Every page whose name starts with the prefix was matched, unless there were more
+        added = (f"the first {WILDCARD_NAME_LIMIT:,} of the {names_total:,} names starting with '{name_prefix}'"
+                 if names_capped else f"every name starting with '{name_prefix}'")
+    elif types_added:
+        added = f"the types named '{query}'"
     if window_full:
-        total_text += f" (ranked from the top {window} matches)"
+        # Matches past the top ones were never seen, unless something else found them: a
+        # title such as 'Publishers.Map' (api_name 'Map') comes only from the top matches
+        total_text += f" (ranked from the top {window} matches" + (f" and {added}" if added else "") + ")"
+    elif names_capped:
+        total_text += f" (matched against {added})"
 
     paginated = scored_hits[offset:offset + limit]
     if not paginated:
         return f"No more results: offset {offset} is past the last of {total_text}."
+
+    # A name listed by its prefix carries only its title and path: fetch what a result shows
+    listed_paths = [str(hit.get("file_path")) for hit in paginated if hit.get("_listed")]
+    if listed_paths:
+        try:
+            details = fetch_hits_by_path(listed_paths, filters, attrs)
+        except Exception as e:
+            logger.error(f"Search failed for query '{query}': {e}")
+            raise ToolError("Search temporarily unavailable. Please try again in a moment.") from e
+        for hit in paginated:
+            if hit.get("_listed"):
+                hit.update(details.get(str(hit.get("file_path")), {}))
 
     # Build output ("Showing" line is filled in once we know what fit the budget)
     output = [f"Search Results: {original_query}", ""]
@@ -570,12 +1010,15 @@ def search_apple_docs(
         relevance = hit.get('_relevance', 0)
 
         result_lines.append(f"## {rank}. {hit.get('title', 'Untitled')} ({int(relevance * 100)}%)")
-        result_lines.append(f"Framework: {hit.get('framework', 'Unknown')} | Type: {hit.get('kind', '')}")
+        # A hit from a long page is one of its parts: expand_result's part reads it
+        part = part_label(hit)
+        result_lines.append(f"Framework: {hit.get('framework', 'Unknown')} | Type: {hit.get('kind', '')}"
+                            + (f" | {part}" if part else ""))
 
         if hit.get("file_path"):
             result_lines.append(f"Path: `{hit.get('file_path')}`")
         if hit.get("url"):
-            result_lines.append(f"[View on Apple Developer]({hit.get('url')})")
+            result_lines.append(f"[{link_label(hit['url'])}]({hit['url']})")
         result_lines.append("")
 
         body = ""
@@ -595,9 +1038,7 @@ def search_apple_docs(
                 break
             # A single result larger than the whole budget: truncate its body
             room = (token_budget - token_count - estimate_tokens("\n".join(result_lines)) - 60) * 4
-            body = body[:max(0, room)].rstrip()
-            if body.count("```") % 2:
-                body += "\n```"  # close a code block the cut left open
+            body = cut_text(body, room)
             body += (
                 f"\n\n[Truncated to fit token_budget={token_budget}. "
                 "Use expand_result with the Path above for the full document.]"
@@ -628,13 +1069,20 @@ def _build_no_results_response(query: str, framework: str, platform: str, has_wi
         lines.append(f"   Platform: {platform}")
     lines.append("")
     lines.append("Suggestions:")
-    if has_wildcards:
-        lines.append("   - Try a pattern that starts with a literal prefix (e.g., UIView*, NS*Button)")
+    prefix = wildcard_prefix(query) if has_wildcards else ""
+    if has_wildcards and len(prefix) >= WILDCARD_PREFIX_MIN:
+        # Such a pattern is matched against the names starting with its prefix already
+        lines.append(f"   - Check the spelling, or use fewer literal characters (the pattern is matched "
+                     f"against the API names starting with '{prefix}')")
+    elif has_wildcards:
+        lines.append("   - Try a pattern that starts with 2+ literal characters (e.g., UIView*, UI*Controller)")
     else:
         lines.append("   - Try simpler keywords")
         lines.append("   - Use wildcards: Button* or NSTable*")
     if framework:
         lines.append("   - Try without framework filter")
+    if platform and platform != "all":
+        lines.append("   - Try without platform filter")
     return "\n".join(lines)
 
 
@@ -651,15 +1099,24 @@ def _build_no_results_response(query: str, framework: str, platform: str, has_wi
 def expand_result(
     file_path: Annotated[str, Field(max_length=1024)],
     sections: Optional[Annotated[List[Annotated[str, Field(max_length=64)]], Field(max_length=20)]] = None,
-    framework: Annotated[str, Field(max_length=100)] = ""
+    framework: Annotated[str, Field(max_length=100)] = "",
+    part: int = 0
 ) -> str:
     """Get full documentation for a symbol or file.
 
+    A page too long for one response comes in parts: a reply holds as many whole parts
+    as fit and ends with which ones (e.g. 'Parts 1-4 of 12 of `<path>`') and the part
+    to pass with that path for the rest (part=5).
+
     Args:
         file_path: Symbol name (e.g., 'Button') or file path from search results
-        sections: Specific sections to include (e.g., ['overview', 'declaration'])
+        sections: Specific sections to include (e.g., ['overview', 'declaration']), taken from the
+            whole page (part is ignored)
         framework: Framework to look a symbol up in (e.g., 'SwiftUI'); use it for names that exist
             in many frameworks, like 'List', 'Text' or 'View'. Ignored for file paths
+        part: Part of a long page to start from, from 1 (a search result from a long page shows
+            its part, e.g. 'Part 3 of 6'); the reply holds it and as many of the next parts as
+            fit. Default 0: the whole page if it fits in one response, else from part 1
 
     Returns:
         Full documentation content
@@ -670,6 +1127,7 @@ def expand_result(
 
     sections = sections or []
     framework = framework.strip()
+    part = max(0, part)
     input_value = file_path.strip().strip('`').strip()
     if not input_value:
         raise ToolError("file_path is required")
@@ -681,37 +1139,8 @@ def expand_result(
 
     try:
         if is_symbol:
-            search_params: Dict[str, Any] = {
-                "limit": 10,
-                "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path", "api_name"]
-            }
-            if framework:
-                search_params["filter"] = f'framework = "{escape_filter_value(framework)}"'
-
-            results = safe_search(input_value, search_params)
-            hits = results.get("hits", [])
-
-            # Prefer an exact, case-sensitive title ('Button' over 'Button tags'),
-            # then that name's function page ('withAnimation' ->
-            # 'withAnimation(_:_:)'), before the looser case-insensitive matches
-            match = next((h for h in hits if h.get("title", "") == input_value), None)
-            if not match:
-                match = next((h for h in hits if h.get("title", "").startswith(input_value + "(")), None)
-
-            if not match:
-                for h in hits:
-                    if h.get("api_name", "").lower() == input_value.lower():
-                        match = h
-                        break
-                    if h.get("title", "").lower() == input_value.lower():
-                        match = h
-                        break
-
-            if not match:
-                for h in hits:
-                    if input_value.lower() in h.get("api_name", "").lower():
-                        match = h
-                        break
+            hits, named_frameworks = symbol_candidates(input_value, framework)
+            match = pick_symbol(hits, input_value)
 
             if not match:
                 suggestions = [f"   - {h.get('api_name', h.get('title'))} ({h.get('framework')})" for h in hits[:5]]
@@ -722,44 +1151,41 @@ def expand_result(
 
             hit = match
             if not framework:
-                # Same name in other frameworks: say so, so the caller can pick one
+                # Same name in other frameworks (a candidate's title, or any page's api_name):
+                # say so, so the caller can pick one
                 title = hit.get("title", "").lower()
-                others = sorted({
+                others = sorted(({
                     h.get("framework", "") for h in hits
-                    if h.get("framework") != hit.get("framework")
-                    and (h.get("title", "").lower() == title
-                         or h.get("title", "").lower().startswith(input_value.lower() + "("))
-                })
+                    if h.get("title", "").lower() == title
+                    or h.get("title", "").lower().startswith(input_value.lower() + "(")
+                } | set(named_frameworks)) - {hit.get("framework", "")})
                 if others:
+                    named = ", ".join(others[:AMBIGUITY_FRAMEWORKS_SHOWN]) + (
+                        f" and {len(others) - AMBIGUITY_FRAMEWORKS_SHOWN} more"
+                        if len(others) > AMBIGUITY_FRAMEWORKS_SHOWN else "")
                     ambiguity_note = (
-                        f"Note: '{input_value}' also matches pages in {', '.join(others)}; showing "
+                        f"Note: '{input_value}' also matches pages in {named}; showing "
                         f"{hit.get('framework', 'Unknown')}. Pass framework (e.g. framework=\"{others[0]}\") "
                         "to choose another."
                     )
+            # The hit is one chunk of its page: the page is all of them
+            chunks = get_file_chunks(hit["file_path"]) if hit.get("file_path") else []
         else:
             # File path lookup
             relative_path = input_value
             if input_value.startswith('/') and 'documentation/' in input_value:
                 relative_path = input_value[input_value.find('documentation/'):]
 
-            if len(relative_path.encode('utf-8')) > MAX_FILTER_VALUE_BYTES:
+            path_bytes = filter_value_bytes(relative_path)
+            if path_bytes > MAX_FILTER_VALUE_BYTES:
                 raise ToolError(
-                    f"file_path is too long ({len(relative_path.encode('utf-8'))} bytes; "
+                    f"file_path is too long ({path_bytes} bytes; "
                     f"max {MAX_FILTER_VALUE_BYTES}). Use the Path shown in search results."
                 )
 
-            # Full path, never truncated: a cut path matches no document
-            results = safe_search("", {
-                "filter": f'file_path = "{escape_filter_value(relative_path, max_length=None)}"',
-                "limit": 1,
-                "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
-            })
-            hits = results.get("hits", [])
-
-            if not hits:
+            chunks = get_file_chunks(relative_path)
+            if not chunks:
                 return f"File not found: {relative_path}"
-
-            hit = hits[0]
 
     except ToolError:
         raise
@@ -767,25 +1193,64 @@ def expand_result(
         logger.error(f"Expand failed for '{file_path}': {e}")
         raise ToolError("Unable to retrieve documentation. Please try again in a moment.") from e
 
-    content = hit.get("content", "")
-    if not content:
+    pieces = [chunk.get("content") or "" for chunk in chunks]
+    if not any(pieces):
         return "No content available"
+    doc_path = chunks[0].get("file_path", "")
+    notes = [ambiguity_note] if ambiguity_note else []
 
     if sections:
-        output = [f"# {hit.get('title', 'Documentation')}", ""]
+        # From the whole page, so a section that spans two chunks comes whole
+        content = "\n".join(pieces)
+        output = [f"# {chunks[0].get('title', 'Documentation')}", ""]
         for section in sections:
             section_content = extract_section(content, section)
             if section_content:
                 output.append(f"## {section.title()}")
                 output.append(section_content)
                 output.append("")
-        if ambiguity_note:
-            output.extend(["---", ambiguity_note])
-        return "\n".join(output)
+        text = "\n".join(output)
+        if estimate_tokens(text) > EXPAND_TOKEN_CAP:
+            text = cut_text(text, EXPAND_TOKEN_CAP * 4) + (
+                "\n\n[Truncated to fit one response. Read the whole page in parts: "
+                f"expand_result(file_path=\"{doc_path}\", part=1).]\n"
+            )
+        return "\n".join([text] + (["---"] + notes if notes else []))
 
-    if ambiguity_note:
-        return f"{transform_internal_links(content)}\n\n---\n{ambiguity_note}"
-    return transform_internal_links(content)
+    total_parts = len(pieces)
+    if part > total_parts:
+        return f"No part {part}: `{doc_path}` has {total_parts} part{'' if total_parts == 1 else 's'}."
+
+    text = transform_internal_links("\n".join(pieces))
+    if part or estimate_tokens(text) > EXPAND_TOKEN_CAP:
+        first = last = part or 1
+        if total_parts > 1:
+            # Parts are the page's chunks, so a search result's "Part i of N" is part=i
+            # here: the reply holds that part and, whole, as many of the next as fit
+            texts = [transform_internal_links(pieces[first - 1])]
+            while last < total_parts:
+                more = texts + [transform_internal_links(pieces[last])]
+                if estimate_tokens("\n".join(more)) > EXPAND_TOKEN_CAP:
+                    break
+                texts, last = more, last + 1
+            text = "\n".join(texts)
+            notes.insert(0, (
+                (f"Part {first}" if first == last else f"Parts {first}-{last}")
+                + f" of {total_parts} of `{doc_path}`"
+                + (": the page is too long for one response" if not part else "")
+                + (f". For the next part, pass this file_path with part={last + 1}."
+                   if last < total_parts else " (the end of the page).")
+            ))
+        if estimate_tokens(text) > EXPAND_TOKEN_CAP:
+            # Chunks are at most ~52 KB (~13K tokens), but an index built by an older
+            # indexer can hold longer ones
+            text = cut_text(text, EXPAND_TOKEN_CAP * 4) + (
+                "\n\n[Truncated: this part is longer than one response allows.]"
+            )
+
+    if notes:
+        return f"{text}\n\n---\n" + "\n".join(notes)
+    return text
 
 
 @mcp.tool(
@@ -982,7 +1447,10 @@ async def health_check(request):
 
     if meili_index and meili_client:
         try:
-            stats = meili_index.get_stats()
+            # Not meili_index: the client keeps one headers dict per index object, and a
+            # GET drops its Content-Type, so a GET on the object the searches share can
+            # send a concurrent search without one (missing_content_type, a failed search)
+            stats = meili_client.index(INDEX_NAME).get_stats()
             total_docs = getattr(stats, 'number_of_documents', 0)
 
             # Detect indexing: stats.is_indexing (during batch) OR recent indexing task (between batches)
@@ -991,8 +1459,13 @@ async def health_check(request):
 
             try:
                 from datetime import datetime, timezone
+                # Only the live index's tasks: a rebuild's adds go to apple-docs-build
+                # while the live index serves every search, and the indexer writes
+                # apple-docs-meta on every start. A swap moves the build's tasks to the
+                # live index, so the window after a swap still shows as indexing.
                 tasks = meili_client.get_tasks({
                     "types": ["documentAdditionOrUpdate"],
+                    "indexUids": [INDEX_NAME],
                     "limit": 1
                 })
                 if tasks.results:
@@ -1059,7 +1532,7 @@ async def health_check(request):
     if metadata and metadata.get("last_indexed"):
         response_data["last_indexed"] = metadata["last_indexed"]
 
-    # last_index_full: When last full rebuild ran (--force flag, from metadata)
+    # last_index_full: When the last full rebuild was swapped in (from metadata)
     if metadata and metadata.get("last_index_full"):
         response_data["last_index_full"] = metadata["last_index_full"]
 

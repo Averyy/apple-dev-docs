@@ -10,7 +10,8 @@ from unittest.mock import MagicMock, patch
 from pathlib import Path
 import tempfile
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from typing import Any, List, Optional
 
 
 class MockDocument:
@@ -70,7 +71,7 @@ class TestHealthEndpoint:
              patch('apple_docs_mcp.get_index_metadata') as mock_meta:
 
             # Exactly at threshold should be healthy
-            mock_index.get_stats.return_value = MockStats(
+            mock_client.index.return_value.get_stats.return_value = MockStats(
                 number_of_documents=MINIMUM_EXPECTED_DOCS,
                 is_indexing=False
             )
@@ -98,7 +99,7 @@ class TestHealthEndpoint:
 
             # One below threshold should be degraded
             docs_count = MINIMUM_EXPECTED_DOCS - 1
-            mock_index.get_stats.return_value = MockStats(
+            mock_client.index.return_value.get_stats.return_value = MockStats(
                 number_of_documents=docs_count,
                 is_indexing=False
             )
@@ -125,7 +126,7 @@ class TestHealthEndpoint:
              patch('apple_docs_mcp.get_index_metadata') as mock_meta:
 
             # Low docs but actively indexing
-            mock_index.get_stats.return_value = MockStats(
+            mock_client.index.return_value.get_stats.return_value = MockStats(
                 number_of_documents=50000,  # Way below threshold
                 is_indexing=True
             )
@@ -172,7 +173,7 @@ class TestHealthEndpoint:
              patch('apple_docs_mcp.DOCS_UPDATED', test_docs_updated), \
              patch('apple_docs_mcp.BUILD_TIME', test_build_time):
 
-            mock_index.get_stats.return_value = MockStats(
+            mock_client.index.return_value.get_stats.return_value = MockStats(
                 number_of_documents=MINIMUM_EXPECTED_DOCS,
                 is_indexing=False
             )
@@ -208,7 +209,7 @@ class TestHealthEndpoint:
              patch('apple_docs_mcp.DOCS_UPDATED', "unknown"), \
              patch('apple_docs_mcp.BUILD_TIME', "unknown"):
 
-            mock_index.get_stats.return_value = MockStats(
+            mock_client.index.return_value.get_stats.return_value = MockStats(
                 number_of_documents=MINIMUM_EXPECTED_DOCS,
                 is_indexing=False
             )
@@ -239,7 +240,7 @@ class TestHealthEndpoint:
 
             # 50% of expected docs
             half_docs = EXPECTED_FULL_INDEX_SIZE // 2
-            mock_index.get_stats.return_value = MockStats(
+            mock_client.index.return_value.get_stats.return_value = MockStats(
                 number_of_documents=half_docs,
                 is_indexing=True
             )
@@ -255,6 +256,48 @@ class TestHealthEndpoint:
 
             # Should be approximately 50%
             assert body["progress"] == "50%"
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("task_age,expected", [(None, "healthy"), (60, "indexing"), (211, "healthy")])
+    async def test_task_check_is_scoped_to_the_live_index(self, task_age: Optional[int], expected: str) -> None:
+        """Only the live index's add tasks count: a rebuild's adds to apple-docs-build
+        and the indexer's apple-docs-meta write on every start never show as indexing,
+        while the live index's own last add (an update, or a swapped-in build's adds)
+        does for 3.5 min."""
+        from apple_docs_mcp import MINIMUM_EXPECTED_DOCS, INDEX_NAME
+
+        with patch('apple_docs_mcp.meili_index') as mock_index, \
+             patch('apple_docs_mcp.meili_client') as mock_client, \
+             patch('apple_docs_mcp.get_index_metadata') as mock_meta:
+
+            mock_client.index.return_value.get_stats.return_value = MockStats(
+                number_of_documents=MINIMUM_EXPECTED_DOCS,
+                is_indexing=False
+            )
+            mock_index.search.return_value = {"facetDistribution": {"framework": {"SwiftUI": 100}}}
+            results: List[Any] = []
+            if task_age is not None:
+                finished = datetime.now(timezone.utc).replace(tzinfo=None) - timedelta(seconds=task_age)
+                results = [MagicMock(status="succeeded", finished_at=finished)]
+            mock_client.get_tasks.return_value = MagicMock(results=results)
+            mock_meta.return_value = None
+
+            from apple_docs_mcp import health_check
+            response = await health_check(MagicMock())
+
+            mock_client.get_tasks.assert_called_once_with({
+                "types": ["documentAdditionOrUpdate"],
+                "indexUids": [INDEX_NAME],
+                "limit": 1
+            })
+            # its GET goes through its own index object, never the one searches share
+            mock_client.index.assert_called_with(INDEX_NAME)
+            mock_index.get_stats.assert_not_called()
+            assert INDEX_NAME == "apple-docs"
+            import json
+            body = json.loads(response.body)
+            assert body["status"] == expected
+            assert response.status_code == (200 if expected == "healthy" else 503)
 
 
 class TestConfiguration:
