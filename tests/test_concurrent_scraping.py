@@ -142,12 +142,17 @@ async def test_memory_efficiency():
     max_concurrent = 20  # Our default
     task_count = 1000
     
-    # Track completion
+    # Track completion and the tasks in flight
     completed = 0
+    running = 0
+    peak = 0
     
     async def lightweight_task(task_id: int):
-        nonlocal completed
+        nonlocal completed, running, peak
+        running += 1
+        peak = max(peak, running)
         await asyncio.sleep(0.001)  # Very quick task
+        running -= 1
         completed += 1
     
     semaphore = asyncio.Semaphore(max_concurrent)
@@ -165,11 +170,12 @@ async def test_memory_efficiency():
     
     assert completed == task_count
     
-    # Should complete in reasonable time
-    duration = end_time - start_time
-    expected_duration = (task_count / max_concurrent) * 0.001
-    assert duration < expected_duration * 2  # Allow some overhead
+    # The semaphore caps the tasks in flight, and they do run concurrently.
+    # (Not timed: asyncio.sleep(0.001) takes 1 ms or more, depending on the
+    # event loop's timer and the machine's load.)
+    assert peak == max_concurrent
     
+    duration = end_time - start_time
     print(f"✅ Handled {task_count} tasks efficiently in {duration:.2f}s")
 
 
