@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-19T21:49:51.340832",
-    "total_files": 833,
+    "last_updated": "2026-10-20T13:39:31.866483",
+    "total_files": 831,
     "source": "scrape_mlx_docs.py",
     "sources": {
       "MLX": "MLX",
@@ -754,8 +754,6 @@
     "github:ml-explore/mlx-swift-examples:README.md": "4da27bf9cb2b3f338851067adf5d521dd4d64c351f3cabc25ae9870ae1b7884b",
     "github:ml-explore/mlx-swift-examples:Applications/LLMBasic/README.md": "764050b0ddb93e64a13c7f4999da7fac29bd748924314829f24e69f63a91d032",
     "github:ml-explore/mlx-swift-examples:Applications/LLMEval/README.md": "9d2551458e5f4781b2738712a67474cfedf7534104e012168387c85c1df48ce7",
-    "github:ml-explore/mlx-swift-examples:Applications/LLMEval/Models/CarKeysStory.md": "07adfdd66b2bfd5997745f0ea9e96dd4beb07d1965bc7687e27493ba95e77a03",
-    "github:ml-explore/mlx-swift-examples:Applications/LLMEval/Models/LongPrompt.md": "46ffd9cfef1d9830e018193b46b9581d40fbe7d9d2d0f1598f2a69cade3a38ee",
     "github:ml-explore/mlx-swift-examples:Applications/LoRATrainingExample/README.md": "c0f44bbd3f0bf71a4983f2006879f92418f80896b99c69c0ed737073bec49b70",
     "github:ml-explore/mlx-swift-examples:Applications/MLXChatExample/README.md": "9c14d770d890b978176f5d23535b3e76bb17030b0200d1f54c27c3bc4d17d5e7",
     "github:ml-explore/mlx-swift-examples:Applications/MNISTTrainer/README.md": "c69359fa9bb32055321a5b83b567032fa1a6e0b1ee0f461c4121df4ba01d8d31",

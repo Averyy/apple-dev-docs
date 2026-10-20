@@ -10556,7 +10556,7 @@
       "hash": "dc48fbe1cd7617aba0a7a9d4c138750800c9ad74afd5be0a1919b2c0f4056d17"
     },
     "https://developer.apple.com/documentation/coretext/sfntfontfeaturesetting/nameid": {
-      "etag": "\"1a31-65d55cdb6c6ed\"",
+      "etag": "\"1a31-65d55cdb6c6ed-df\"",
       "file_path": "documentation/CoreText/sfntfontfeaturesetting/nameid.md",
       "hash": "14fd046cccac8ba2e763533e933bfa86ab1da91e4848492b52811425045a9fd2"
     },
@@ -22201,7 +22201,7 @@
       "hash": "dc48fbe1cd7617aba0a7a9d4c138750800c9ad74afd5be0a1919b2c0f4056d17"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretext/sfntfontfeaturesetting/nameid.json": {
-      "etag": "\"1a31-65d55cdb6c6ed\"",
+      "etag": "\"1a31-65d55cdb6c6ed-df\"",
       "file_path": "documentation/CoreText/sfntfontfeaturesetting/nameid.md",
       "hash": "14fd046cccac8ba2e763533e933bfa86ab1da91e4848492b52811425045a9fd2"
     },

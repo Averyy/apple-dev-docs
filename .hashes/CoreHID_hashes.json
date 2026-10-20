@@ -1026,7 +1026,7 @@
       "hash": "2829c3f7b2ac0b0bf098c235e648d248bcb3f617c044314e77f18375967f0005"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/arcadeusage/extendedopticalinputstate": {
-      "etag": "\"ef4-65d55ea0bb9bf-df\"",
+      "etag": "\"ef4-65d55ea0bb9bf\"",
       "file_path": "documentation/CoreHID/hidusage/arcadeusage/extendedopticalinputstate.md",
       "hash": "8e062af0d9593c31311421e7ba72196bb6620d343f415188781399dd6b784538"
     },
@@ -16431,7 +16431,7 @@
       "hash": "2829c3f7b2ac0b0bf098c235e648d248bcb3f617c044314e77f18375967f0005"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/arcadeusage/extendedopticalinputstate.json": {
-      "etag": "\"ef4-65d55ea0bb9bf-df\"",
+      "etag": "\"ef4-65d55ea0bb9bf\"",
       "file_path": "documentation/CoreHID/hidusage/arcadeusage/extendedopticalinputstate.md",
       "hash": "8e062af0d9593c31311421e7ba72196bb6620d343f415188781399dd6b784538"
     },

@@ -2426,7 +2426,7 @@
       "hash": "27633c6f7ee9fc8d70099c665cc276d4f6179c3092697d2eb7705808d7ac5c07"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioobjectpropertyownedobjects": {
-      "etag": "\"4710-65d55e17360a3\"",
+      "etag": "\"4710-65d55e17360a3-df\"",
       "file_path": "documentation/CoreMediaIO/kcmioobjectpropertyownedobjects.md",
       "hash": "4a87d86f317c07ebcdfdac571ee91bb94dffe800381da3dfd31a1b7fd00beb5d"
     },
@@ -5201,7 +5201,7 @@
       "hash": "27633c6f7ee9fc8d70099c665cc276d4f6179c3092697d2eb7705808d7ac5c07"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioobjectpropertyownedobjects.json": {
-      "etag": "\"4710-65d55e17360a3\"",
+      "etag": "\"4710-65d55e17360a3-df\"",
       "file_path": "documentation/CoreMediaIO/kcmioobjectpropertyownedobjects.md",
       "hash": "4a87d86f317c07ebcdfdac571ee91bb94dffe800381da3dfd31a1b7fd00beb5d"
     },

@@ -2291,7 +2291,7 @@
       "hash": "dc492f730e06b5fb39c4f8165bf1d6f652fbafdf2205eeba25b533efdb26eaaa"
     },
     "https://developer.apple.com/documentation/appkit/nsaccessibility-swift.struct/subrole/suggestionsubrole": {
-      "etag": "\"7d71-65d55e60cb9b5-df\"",
+      "etag": "\"7d71-65d55e60cb9b5\"",
       "file_path": "documentation/AppKit/nsaccessibility-swift.struct/subrole/suggestionsubrole.md",
       "hash": "be6b81e18bf3b35f780ede7666dd6023c4e744530ff65603af18c6372ec3f343"
     },
@@ -40596,7 +40596,7 @@
       "hash": "652490550be0ad78f63f0a2b3d7268746c869084ac350bfae915b54b822f7992"
     },
     "https://developer.apple.com/documentation/appkit/nssegueperforming/performsegue(withidentifier:sender:)": {
-      "etag": "\"4b04-65d55e5edb2cc-df\"",
+      "etag": "\"4b04-65d55e5edb2cc\"",
       "file_path": "documentation/AppKit/nssegueperforming/performsegue-withidentifiersender.md",
       "hash": "0520c246b37e7855df9e0f374e2f38f21bcf6d0b1522a2772cf1738e5858057b"
     },
@@ -65755,7 +65755,7 @@
       "hash": "dc492f730e06b5fb39c4f8165bf1d6f652fbafdf2205eeba25b533efdb26eaaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsaccessibility-swift.struct/subrole/suggestionsubrole.json": {
-      "etag": "\"7d71-65d55e60cb9b5-df\"",
+      "etag": "\"7d71-65d55e60cb9b5\"",
       "file_path": "documentation/AppKit/nsaccessibility-swift.struct/subrole/suggestionsubrole.md",
       "hash": "be6b81e18bf3b35f780ede7666dd6023c4e744530ff65603af18c6372ec3f343"
     },
@@ -104065,7 +104065,7 @@
       "hash": "652490550be0ad78f63f0a2b3d7268746c869084ac350bfae915b54b822f7992"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nssegueperforming/performsegue(withidentifier:sender:).json": {
-      "etag": "\"4b04-65d55e5edb2cc-df\"",
+      "etag": "\"4b04-65d55e5edb2cc\"",
       "file_path": "documentation/AppKit/nssegueperforming/performsegue-withidentifiersender.md",
       "hash": "0520c246b37e7855df9e0f374e2f38f21bcf6d0b1522a2772cf1738e5858057b"
     },

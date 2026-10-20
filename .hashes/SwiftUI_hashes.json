@@ -18666,7 +18666,7 @@
       "hash": "d4b489d279f6f841cc1e6dbe9854dc76ac0c00762a950444e49a45be38b480e2"
     },
     "https://developer.apple.com/documentation/swiftui/progressiveimmersionaspectratio/landscape": {
-      "etag": "\"126f-65d55df56db6b-df\"",
+      "etag": "\"126f-65d55df56db6b\"",
       "file_path": "documentation/SwiftUI/progressiveimmersionaspectratio/landscape.md",
       "hash": "1fc69df9ee8bbc1b8ff69a6977930ab7c64d5517b42eba8a678de4fabc90bd8a"
     },
@@ -27546,7 +27546,7 @@
       "hash": "0944f0dceadb288afeaaea49519d8e4079999c960f8f5209edf2e74e76e65960"
     },
     "https://developer.apple.com/documentation/swiftui/touchbar/init(id:content:)": {
-      "etag": "\"1db8-65d55ddfe7f9a\"",
+      "etag": "\"1db8-65d55ddfe7f9a-df\"",
       "file_path": "documentation/SwiftUI/touchbar/init-idcontent.md",
       "hash": "b17abd0446b81e83ce770297d029e6d27fedb95ab0816e11e9d2e26ae05e39e9"
     },
@@ -54399,7 +54399,7 @@
       "hash": "d4b489d279f6f841cc1e6dbe9854dc76ac0c00762a950444e49a45be38b480e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/progressiveimmersionaspectratio/landscape.json": {
-      "etag": "\"126f-65d55df56db6b-df\"",
+      "etag": "\"126f-65d55df56db6b\"",
       "file_path": "documentation/SwiftUI/progressiveimmersionaspectratio/landscape.md",
       "hash": "1fc69df9ee8bbc1b8ff69a6977930ab7c64d5517b42eba8a678de4fabc90bd8a"
     },
@@ -63279,7 +63279,7 @@
       "hash": "0944f0dceadb288afeaaea49519d8e4079999c960f8f5209edf2e74e76e65960"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/touchbar/init(id:content:).json": {
-      "etag": "\"1db8-65d55ddfe7f9a\"",
+      "etag": "\"1db8-65d55ddfe7f9a-df\"",
       "file_path": "documentation/SwiftUI/touchbar/init-idcontent.md",
       "hash": "b17abd0446b81e83ce770297d029e6d27fedb95ab0816e11e9d2e26ae05e39e9"
     },

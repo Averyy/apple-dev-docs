@@ -26806,7 +26806,7 @@
       "hash": "9efcca01aa2359dd8a889045330f62261fb497a14ce027fa724aaa3ba8d2bb73"
     },
     "https://developer.apple.com/documentation/swift/int128/*(_:_:)": {
-      "etag": "\"18e0-65d5610b3302f\"",
+      "etag": "\"18e0-65d5610b3302f-df\"",
       "file_path": "documentation/Swift/int128/multiply.md",
       "hash": "d2e2e99227244d87940ecb8767816fb6dad7e3e2e1e04b370f4dbcd50be0bd78"
     },
@@ -83246,7 +83246,7 @@
       "hash": "9bb726e033dbb95416a53de9597d499206fc6fb33661b7358c32f33d3c12cef5"
     },
     "https://developer.apple.com/documentation/swift/unicode/scalar/utf16view/min(by:)": {
-      "etag": "\"34d1-65d560ee1d27c\"",
+      "etag": "\"34d1-65d560ee1d27c-df\"",
       "file_path": "documentation/Swift/unicode/scalar/utf16view/min-by.md",
       "hash": "ee115d9ee249811bbe9b2ad16a35456b188b1155eec402a77499aa685213ca83"
     },
@@ -117779,7 +117779,7 @@
       "hash": "9efcca01aa2359dd8a889045330f62261fb497a14ce027fa724aaa3ba8d2bb73"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/int128/*(_:_:).json": {
-      "etag": "\"18e0-65d5610b3302f\"",
+      "etag": "\"18e0-65d5610b3302f-df\"",
       "file_path": "documentation/Swift/int128/multiply.md",
       "hash": "d2e2e99227244d87940ecb8767816fb6dad7e3e2e1e04b370f4dbcd50be0bd78"
     },
@@ -180123,7 +180123,7 @@
       "hash": "9bb726e033dbb95416a53de9597d499206fc6fb33661b7358c32f33d3c12cef5"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/unicode/scalar/utf16view/min(by:).json": {
-      "etag": "\"34d1-65d560ee1d27c\"",
+      "etag": "\"34d1-65d560ee1d27c-df\"",
       "file_path": "documentation/Swift/unicode/scalar/utf16view/min-by.md",
       "hash": "ee115d9ee249811bbe9b2ad16a35456b188b1155eec402a77499aa685213ca83"
     },

@@ -24631,7 +24631,7 @@
       "hash": "e6b8e67c64c9745280759dbcd50888e5a3cbf5c5b54aeebe52241368c54e107e"
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/managing-payment-processing-certificates": {
-      "etag": "\"4280-65d55a79261c7-df\"",
+      "etag": "\"4280-65d55a79261c7\"",
       "file_path": "documentation/AppStoreConnectAPI/managing-payment-processing-certificates.md",
       "hash": "0735275bf2ed18b4e20be99c1d0ecf40c85d05e26466aec03b0f99f464746ebb"
     },
@@ -26146,7 +26146,7 @@
       "hash": "70aad6bb0790dc8028f88f2d289bdcf4f17d064fade83c85b0fc95d71c3b034c"
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/post-v1-appeventlocalizations": {
-      "etag": "\"3a20-65d55a7e615ed-df\"",
+      "etag": "\"3a20-65d55a7e615ed\"",
       "file_path": "documentation/AppStoreConnectAPI/post-v1-appeventlocalizations.md",
       "hash": "5dd4d9a42e4aee32ec6db6e08c7af656a0b89d2b503ed877ae1cbe7b70fe2113"
     },
@@ -29261,7 +29261,7 @@
       "hash": "dd24bf87c1812bf555bb794eb04a43752ffdc3ada809cf3193e15405550c6e35"
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/subscriptionimagev2createrequest/data-data.dictionary/relationships-data.dictionary": {
-      "etag": "\"2018-65d55a784596b-df\"",
+      "etag": "\"2018-65d55a784596b\"",
       "file_path": "documentation/AppStoreConnectAPI/subscriptionimagev2createrequest/data-data.dictionary/relationships-datadictionary.md",
       "hash": "23729dd8ca4f7ca1e834f732736a430b08afc8d42d23dcec2aaa128ba4ebb0e1"
     },
@@ -30281,7 +30281,7 @@
       "hash": "6a448060bedcf2349b8aa5a34208b38cdd72fac7de90ca47f590d9cb390e9078"
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary": {
-      "etag": "\"1fd6-65d55a78a6e39\"",
+      "etag": "\"1fd6-65d55a78a6e39-df\"",
       "file_path": "documentation/AppStoreConnectAPI/subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/territory-data.dictionary/data-datadictionary.md",
       "hash": "f601f1027fec9598ba947de868937ad4d1802cba1c007eda1ecfe71359c7d2ec"
     },
@@ -56481,7 +56481,7 @@
       "hash": "e6b8e67c64c9745280759dbcd50888e5a3cbf5c5b54aeebe52241368c54e107e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/managing-payment-processing-certificates.json": {
-      "etag": "\"4280-65d55a79261c7-df\"",
+      "etag": "\"4280-65d55a79261c7\"",
       "file_path": "documentation/AppStoreConnectAPI/managing-payment-processing-certificates.md",
       "hash": "0735275bf2ed18b4e20be99c1d0ecf40c85d05e26466aec03b0f99f464746ebb"
     },
@@ -57996,7 +57996,7 @@
       "hash": "9ea4d9e55ef9a184f13a8b64c7574353df3cb08531930a4089fb333bdc84ca84"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/post-v1-appeventlocalizations.json": {
-      "etag": "\"3a20-65d55a7e615ed-df\"",
+      "etag": "\"3a20-65d55a7e615ed\"",
       "file_path": "documentation/AppStoreConnectAPI/post-v1-appeventlocalizations.md",
       "hash": "5dd4d9a42e4aee32ec6db6e08c7af656a0b89d2b503ed877ae1cbe7b70fe2113"
     },
@@ -61111,7 +61111,7 @@
       "hash": "dd24bf87c1812bf555bb794eb04a43752ffdc3ada809cf3193e15405550c6e35"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/subscriptionimagev2createrequest/data-data.dictionary/relationships-data.dictionary.json": {
-      "etag": "\"2018-65d55a784596b-df\"",
+      "etag": "\"2018-65d55a784596b\"",
       "file_path": "documentation/AppStoreConnectAPI/subscriptionimagev2createrequest/data-data.dictionary/relationships-datadictionary.md",
       "hash": "23729dd8ca4f7ca1e834f732736a430b08afc8d42d23dcec2aaa128ba4ebb0e1"
     },
@@ -62131,7 +62131,7 @@
       "hash": "6a448060bedcf2349b8aa5a34208b38cdd72fac7de90ca47f590d9cb390e9078"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.json": {
-      "etag": "\"1fd6-65d55a78a6e39\"",
+      "etag": "\"1fd6-65d55a78a6e39-df\"",
       "file_path": "documentation/AppStoreConnectAPI/subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/territory-data.dictionary/data-datadictionary.md",
       "hash": "f601f1027fec9598ba947de868937ad4d1802cba1c007eda1ecfe71359c7d2ec"
     },

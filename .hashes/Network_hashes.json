@@ -2596,7 +2596,7 @@
       "hash": "3ecd3fa69e2420de6e58f4d8d678ae0d93e20d29a88e6044fb0a0764d64e19e5"
     },
     "https://developer.apple.com/documentation/network/nw_ethernet_channel_state_t/init(rawvalue:)": {
-      "etag": "\"1356-65d55fa9f45c5\"",
+      "etag": "\"1356-65d55fa9f45c5-df\"",
       "file_path": "documentation/Network/nw_ethernet_channel_state_t/init-rawvalue.md",
       "hash": "b2ce1068c9edb8d23339239ae7c2d57a25f2dbbede02614e68d7caa6461e29bb"
     },
@@ -4621,7 +4621,7 @@
       "hash": "19534526323cffa06771d4bda464c06e06f9445367391168b7c17ea863e7a9d8"
     },
     "https://developer.apple.com/documentation/network/nw_txt_record_copy(_:)": {
-      "etag": "\"7efb-65d55fab33709\"",
+      "etag": "\"7efb-65d55fab33709-df\"",
       "file_path": "documentation/Network/nw-txt-record-copy.md",
       "hash": "7d16d3adb54095fc746157e418ce97779e27d467ae23fa0740d7d68867d5dfad"
     },
@@ -11806,7 +11806,7 @@
       "hash": "3ecd3fa69e2420de6e58f4d8d678ae0d93e20d29a88e6044fb0a0764d64e19e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_ethernet_channel_state_t/init(rawvalue:).json": {
-      "etag": "\"1356-65d55fa9f45c5\"",
+      "etag": "\"1356-65d55fa9f45c5-df\"",
       "file_path": "documentation/Network/nw_ethernet_channel_state_t/init-rawvalue.md",
       "hash": "b2ce1068c9edb8d23339239ae7c2d57a25f2dbbede02614e68d7caa6461e29bb"
     },
@@ -13831,7 +13831,7 @@
       "hash": "19534526323cffa06771d4bda464c06e06f9445367391168b7c17ea863e7a9d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_txt_record_copy(_:).json": {
-      "etag": "\"7efb-65d55fab33709\"",
+      "etag": "\"7efb-65d55fab33709-df\"",
       "file_path": "documentation/Network/nw-txt-record-copy.md",
       "hash": "7d16d3adb54095fc746157e418ce97779e27d467ae23fa0740d7d68867d5dfad"
     },

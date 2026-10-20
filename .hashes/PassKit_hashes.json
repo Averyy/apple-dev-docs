@@ -2296,7 +2296,7 @@
       "hash": "46b12dbae261468ac8f2c0f0c867a9c2e34cefb77576b91459df480028bbd249"
     },
     "https://developer.apple.com/documentation/passkit/pkidentityintenttostore": {
-      "etag": "\"4f31-65d55e282ae93-df\"",
+      "etag": "\"4f31-65d55e282ae93\"",
       "file_path": "documentation/PassKit/pkidentityintenttostore.md",
       "hash": "2e9810a98aac7d929ce5cc3f66727fbac1f80c5e00cd6a993d89d1cfddea2a6f"
     },
@@ -7860,7 +7860,7 @@
       "hash": "46b12dbae261468ac8f2c0f0c867a9c2e34cefb77576b91459df480028bbd249"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkidentityintenttostore.json": {
-      "etag": "\"4f31-65d55e282ae93-df\"",
+      "etag": "\"4f31-65d55e282ae93\"",
       "file_path": "documentation/PassKit/pkidentityintenttostore.md",
       "hash": "2e9810a98aac7d929ce5cc3f66727fbac1f80c5e00cd6a993d89d1cfddea2a6f"
     },

@@ -38931,7 +38931,7 @@
       "hash": "f8afd003bd6d22024cfe1e3e77123ef8eb589d3e177c9a95e9bb20e8c083df57"
     },
     "https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/axprefersheadanchoralternativedidchange": {
-      "etag": "\"1ae9-65d560fc5d6c2-df\"",
+      "etag": "\"1ae9-65d560fc5d6c2\"",
       "file_path": "documentation/Foundation/nsnotification/name-swift.struct/axprefersheadanchoralternativedidchange.md",
       "hash": "807868f80ead05c333b720dd3a83a716842aa36faa88ac206573278bfd44372c"
     },
@@ -47866,7 +47866,7 @@
       "hash": "6c72f070e2763a5e75f7e50182465345b8d2c6d3ff9d9a6514a519075440d4ec"
     },
     "https://developer.apple.com/documentation/foundation/nsvalue/init(point:)": {
-      "etag": "\"3b7e-65d560f628b31\"",
+      "etag": "\"3b7e-65d560f628b31-df\"",
       "file_path": "documentation/Foundation/nsvalue/init-point.md",
       "hash": "0c20397004c43f74c6524041e33da8381ba7aa09d4e876fa58ea20d7f80094ba"
     },
@@ -52851,7 +52851,7 @@
       "hash": "57309e6001e1496f780076f132a18c257dc0d73f93d3bc684a05a6cfb54800be"
     },
     "https://developer.apple.com/documentation/foundation/progress/filetotalcount": {
-      "etag": "\"29bc-65d560e4d3f04-df\"",
+      "etag": "\"29bc-65d560e4d3f04\"",
       "file_path": "documentation/Foundation/progress/filetotalcount.md",
       "hash": "6e721a8d7bc7e19cfce74eae00c5e95cd5a100def6f455475d30f28b440b7170"
     },
@@ -103775,7 +103775,7 @@
       "hash": "f8afd003bd6d22024cfe1e3e77123ef8eb589d3e177c9a95e9bb20e8c083df57"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsnotification/name-swift.struct/axprefersheadanchoralternativedidchange.json": {
-      "etag": "\"1ae9-65d560fc5d6c2-df\"",
+      "etag": "\"1ae9-65d560fc5d6c2\"",
       "file_path": "documentation/Foundation/nsnotification/name-swift.struct/axprefersheadanchoralternativedidchange.md",
       "hash": "807868f80ead05c333b720dd3a83a716842aa36faa88ac206573278bfd44372c"
     },
@@ -112710,7 +112710,7 @@
       "hash": "6c72f070e2763a5e75f7e50182465345b8d2c6d3ff9d9a6514a519075440d4ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsvalue/init(point:).json": {
-      "etag": "\"3b7e-65d560f628b31\"",
+      "etag": "\"3b7e-65d560f628b31-df\"",
       "file_path": "documentation/Foundation/nsvalue/init-point.md",
       "hash": "0c20397004c43f74c6524041e33da8381ba7aa09d4e876fa58ea20d7f80094ba"
     },
@@ -117695,7 +117695,7 @@
       "hash": "57309e6001e1496f780076f132a18c257dc0d73f93d3bc684a05a6cfb54800be"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/progress/filetotalcount.json": {
-      "etag": "\"29bc-65d560e4d3f04-df\"",
+      "etag": "\"29bc-65d560e4d3f04\"",
       "file_path": "documentation/Foundation/progress/filetotalcount.md",
       "hash": "6e721a8d7bc7e19cfce74eae00c5e95cd5a100def6f455475d30f28b440b7170"
     },

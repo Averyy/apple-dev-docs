@@ -3061,7 +3061,7 @@
       "hash": "d64f907905a2dbb74e6dbab03338452530e5e6a13514b7ef65e945c90961b656"
     },
     "https://developer.apple.com/documentation/healthkit/hkerror/code/errorusercanceled": {
-      "etag": "\"4d21-65d5608869fcb-df\"",
+      "etag": "\"4d21-65d5608869fcb\"",
       "file_path": "documentation/HealthKit/hkerror/code/errorusercanceled.md",
       "hash": "5cca92fcbbac47cd886c7643e19e2bf03ad08bfa4d5fe29875cded70be3355d4"
     },
@@ -13659,7 +13659,7 @@
       "hash": "d64f907905a2dbb74e6dbab03338452530e5e6a13514b7ef65e945c90961b656"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkerror/code/errorusercanceled.json": {
-      "etag": "\"4d21-65d5608869fcb-df\"",
+      "etag": "\"4d21-65d5608869fcb\"",
       "file_path": "documentation/HealthKit/hkerror/code/errorusercanceled.md",
       "hash": "5cca92fcbbac47cd886c7643e19e2bf03ad08bfa4d5fe29875cded70be3355d4"
     },

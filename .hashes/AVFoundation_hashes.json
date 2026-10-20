@@ -4561,7 +4561,7 @@
       "hash": "eba30550fe3f528af08bf8e62e0dbc4500fa99a9d69ae959d6f1dbf4eb3c0b81"
     },
     "https://developer.apple.com/documentation/avfoundation/avcaptionunitstype/percent": {
-      "etag": "\"20e2-65d55e0d1647e\"",
+      "etag": "\"20e2-65d55e0d1647e-df\"",
       "file_path": "documentation/AVFoundation/avcaptionunitstype/percent.md",
       "hash": "2d7e2281b412edfa60cfcae903aca047eb11c77c7589be5ea10c04f89968d991"
     },
@@ -13796,7 +13796,7 @@
       "hash": "031c6ada9629e62845e757273ec772d03be4ebbd7ff6315dce320dd23fd728c7"
     },
     "https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect": {
-      "etag": "\"2930-65d55e08bbbc0\"",
+      "etag": "\"2930-65d55e08bbbc0-df\"",
       "file_path": "documentation/AVFoundation/avlayervideogravity/resizeaspect.md",
       "hash": "1c6d27dddf0e070f03f2c54fc67d39f0d1eaf2e052c16a276e11e3504a3414cb"
     },
@@ -31171,7 +31171,7 @@
       "hash": "eba30550fe3f528af08bf8e62e0dbc4500fa99a9d69ae959d6f1dbf4eb3c0b81"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcaptionunitstype/percent.json": {
-      "etag": "\"20e2-65d55e0d1647e\"",
+      "etag": "\"20e2-65d55e0d1647e-df\"",
       "file_path": "documentation/AVFoundation/avcaptionunitstype/percent.md",
       "hash": "2d7e2281b412edfa60cfcae903aca047eb11c77c7589be5ea10c04f89968d991"
     },
@@ -40406,7 +40406,7 @@
       "hash": "031c6ada9629e62845e757273ec772d03be4ebbd7ff6315dce320dd23fd728c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avlayervideogravity/resizeaspect.json": {
-      "etag": "\"2930-65d55e08bbbc0\"",
+      "etag": "\"2930-65d55e08bbbc0-df\"",
       "file_path": "documentation/AVFoundation/avlayervideogravity/resizeaspect.md",
       "hash": "1c6d27dddf0e070f03f2c54fc67d39f0d1eaf2e052c16a276e11e3504a3414cb"
     },

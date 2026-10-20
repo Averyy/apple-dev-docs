@@ -46,7 +46,7 @@
       "hash": "46dc68fe5c418bcaabdbd7d051af4d7aa22fd0ee069ed43cf468ae6bd30fc76d"
     },
     "https://developer.apple.com/documentation/javascriptcore/jscheckscriptsyntax(_:_:_:_:_:)": {
-      "etag": "\"5e21-65d55dff940c0\"",
+      "etag": "\"5e21-65d55dff940c0-df\"",
       "file_path": "documentation/JavaScriptCore/jscheckscriptsyntax.md",
       "hash": "2c645ea679767e43837dab18bc06fa8b1585953a4466790ff37bf01236fc3dec"
     },
@@ -1856,7 +1856,7 @@
       "hash": "46dc68fe5c418bcaabdbd7d051af4d7aa22fd0ee069ed43cf468ae6bd30fc76d"
     },
     "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jscheckscriptsyntax(_:_:_:_:_:).json": {
-      "etag": "\"5e21-65d55dff940c0\"",
+      "etag": "\"5e21-65d55dff940c0-df\"",
       "file_path": "documentation/JavaScriptCore/jscheckscriptsyntax.md",
       "hash": "2c645ea679767e43837dab18bc06fa8b1585953a4466790ff37bf01236fc3dec"
     },

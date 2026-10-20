@@ -11941,7 +11941,7 @@
       "hash": "72aa110b8cd15a5decd48b35fd78497491639bfacc746d5984f65954c10d5d8a"
     },
     "https://developer.apple.com/documentation/applicationservices/kerntable/1462098-init": {
-      "etag": "\"faa-65b3a46827d3d\"",
+      "etag": "\"faa-65b3a46827d3d-df\"",
       "file_path": "documentation/applicationservices/kerntable/api-1462098-init.md",
       "hash": "73dbd5e23fba9618a3905c6d5e545d50bc9c8df1c2a40c35353da94c01a6cf6c"
     },
@@ -13341,7 +13341,7 @@
       "hash": "60463ee11f3a56e78c6968c8c34f7ed4312a98892c72ea53fd3d8fd226a94fcf"
     },
     "https://developer.apple.com/documentation/applicationservices/kpminvalidprintsession": {
-      "etag": "\"7b61-65b3a45e32828\"",
+      "etag": "\"7b61-65b3a45e32828-df\"",
       "file_path": "documentation/applicationservices/kpminvalidprintsession.md",
       "hash": "1d9c29916dbe173e73d3fc5126304371cecc5982e81d9659088aa338ca0c95e5"
     },
@@ -29381,7 +29381,7 @@
       "hash": "72aa110b8cd15a5decd48b35fd78497491639bfacc746d5984f65954c10d5d8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/kerntable/1462098-init.json": {
-      "etag": "\"faa-65b3a46827d3d\"",
+      "etag": "\"faa-65b3a46827d3d-df\"",
       "file_path": "documentation/applicationservices/kerntable/api-1462098-init.md",
       "hash": "73dbd5e23fba9618a3905c6d5e545d50bc9c8df1c2a40c35353da94c01a6cf6c"
     },
@@ -30781,7 +30781,7 @@
       "hash": "60463ee11f3a56e78c6968c8c34f7ed4312a98892c72ea53fd3d8fd226a94fcf"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/kpminvalidprintsession.json": {
-      "etag": "\"7b61-65b3a45e32828\"",
+      "etag": "\"7b61-65b3a45e32828-df\"",
       "file_path": "documentation/applicationservices/kpminvalidprintsession.md",
       "hash": "1d9c29916dbe173e73d3fc5126304371cecc5982e81d9659088aa338ca0c95e5"
     },

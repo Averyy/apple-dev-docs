@@ -2401,7 +2401,7 @@
       "hash": "8b20858bdcab437fc6c644eac3b768a0e304fd672aec56d83964b01f99092502"
     },
     "https://developer.apple.com/documentation/modelio/mdlobject/componentconforming(to:)": {
-      "etag": "\"45ce-65d55d419847b\"",
+      "etag": "\"45ce-65d55d419847b-df\"",
       "file_path": "documentation/ModelIO/mdlobject/componentconforming-to.md",
       "hash": "cf188fe87e96ba5ab588912af43aa47100cd5b0a0933ed1e8b85b003c648fb6b"
     },
@@ -6896,7 +6896,7 @@
       "hash": "8b20858bdcab437fc6c644eac3b768a0e304fd672aec56d83964b01f99092502"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlobject/componentconforming(to:).json": {
-      "etag": "\"45ce-65d55d419847b\"",
+      "etag": "\"45ce-65d55d419847b-df\"",
       "file_path": "documentation/ModelIO/mdlobject/componentconforming-to.md",
       "hash": "cf188fe87e96ba5ab588912af43aa47100cd5b0a0933ed1e8b85b003c648fb6b"
     },

@@ -926,7 +926,7 @@
       "hash": "508b6ea23d3571dde92ca2b0414d6f150c98508d582ad3666140da8a3ea6c3a3"
     },
     "https://developer.apple.com/documentation/homekit/hmcamerasettingscontrol/currentverticaltilt": {
-      "etag": "\"4d1d-65d55fa6efcaf\"",
+      "etag": "\"4d1d-65d55fa6efcaf-df\"",
       "file_path": "documentation/HomeKit/hmcamerasettingscontrol/currentverticaltilt.md",
       "hash": "60563801584cb9f4eac80375144c4eb96e92a6bcbf6697f789594d1193426845"
     },
@@ -4836,7 +4836,7 @@
       "hash": "ff35f9400b1348d913b85adf1c8ff6c05a458b5177b7f8162fc0eba883a2df29"
     },
     "https://developer.apple.com/documentation/homekit/hmerror/renamewithsimilarname": {
-      "etag": "\"219e-65d55fa66b6f5\"",
+      "etag": "\"219e-65d55fa66b6f5-df\"",
       "file_path": "documentation/HomeKit/hmerror/renamewithsimilarname.md",
       "hash": "2ad368aa9275b8eb74010a2df010d2f681f4c87978e55d20ac17522040347f2e"
     },
@@ -7670,7 +7670,7 @@
       "hash": "508b6ea23d3571dde92ca2b0414d6f150c98508d582ad3666140da8a3ea6c3a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmcamerasettingscontrol/currentverticaltilt.json": {
-      "etag": "\"4d1d-65d55fa6efcaf\"",
+      "etag": "\"4d1d-65d55fa6efcaf-df\"",
       "file_path": "documentation/HomeKit/hmcamerasettingscontrol/currentverticaltilt.md",
       "hash": "60563801584cb9f4eac80375144c4eb96e92a6bcbf6697f789594d1193426845"
     },
@@ -11580,7 +11580,7 @@
       "hash": "ff35f9400b1348d913b85adf1c8ff6c05a458b5177b7f8162fc0eba883a2df29"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmerror/renamewithsimilarname.json": {
-      "etag": "\"219e-65d55fa66b6f5\"",
+      "etag": "\"219e-65d55fa66b6f5-df\"",
       "file_path": "documentation/HomeKit/hmerror/renamewithsimilarname.md",
       "hash": "2ad368aa9275b8eb74010a2df010d2f681f4c87978e55d20ac17522040347f2e"
     },

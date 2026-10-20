@@ -991,7 +991,7 @@
       "hash": "a1b0935c5d8582b2e073d6baaca893e5ea948aba3fd8b0164ba1611e89bef92e"
     },
     "https://developer.apple.com/documentation/driverkit/iodmacommand/completedma": {
-      "etag": "\"15e2-65d560b0dd51e\"",
+      "etag": "\"15e2-65d560b0dd51e-df\"",
       "file_path": "documentation/DriverKit/iodmacommand/completedma.md",
       "hash": "98eb4268a23a9b60ca8fe0757547346fb98aace798d16acaa406a6f1b9b45b86"
     },
@@ -15801,7 +15801,7 @@
       "hash": "a1b0935c5d8582b2e073d6baaca893e5ea948aba3fd8b0164ba1611e89bef92e"
     },
     "https://developer.apple.com/tutorials/data/documentation/driverkit/iodmacommand/completedma.json": {
-      "etag": "\"15e2-65d560b0dd51e\"",
+      "etag": "\"15e2-65d560b0dd51e-df\"",
       "file_path": "documentation/DriverKit/iodmacommand/completedma.md",
       "hash": "98eb4268a23a9b60ca8fe0757547346fb98aace798d16acaa406a6f1b9b45b86"
     },

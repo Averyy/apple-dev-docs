@@ -4141,7 +4141,7 @@
       "hash": "ebe5e7214e96409ff44241512956ce7989881d9c60e95a1665bcbe4f3ae5f754"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_type_auth_setmode": {
-      "etag": "\"80cf-65d55d1f11d08-df\"",
+      "etag": "\"80cf-65d55d1f11d08\"",
       "file_path": "documentation/EndpointSecurity/es-event-type-auth-setmode.md",
       "hash": "06fb1cf84c78cf7cfe7ae19bd0af6d5385e5fd050e43a51169cea86ccf620766"
     },
@@ -6461,7 +6461,7 @@
       "hash": "2dd926b0d19f9f106a8d8ecc11ecd192fa6ddf53c04670808a23f1c7dbb55a3f"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_message_t/time": {
-      "etag": "\"2e74-65d55d202127b\"",
+      "etag": "\"2e74-65d55d202127b-df\"",
       "file_path": "documentation/EndpointSecurity/es_message_t/time.md",
       "hash": "349a5e5ee244692e1ec3f725425c2feb14a08ebb2e6acfd1f76e2d6361b27424"
     },
@@ -7756,7 +7756,7 @@
       "hash": "5bf41397a62f79430c925bec21f1acbfd4704b4cb71b54b671eeb0e44d884362"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_tcc_authorization_reason_preflight_unknown": {
-      "etag": "\"1c09-65d55d1f7abb3\"",
+      "etag": "\"1c09-65d55d1f7abb3-df\"",
       "file_path": "documentation/EndpointSecurity/es-tcc-authorization-reason-preflight-unknown.md",
       "hash": "4cc7fd5de37fc2ad886b202747acc1c3edc8f97d4bb1ec45a092ccdb300305e8"
     },
@@ -12301,7 +12301,7 @@
       "hash": "ebe5e7214e96409ff44241512956ce7989881d9c60e95a1665bcbe4f3ae5f754"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_type_auth_setmode.json": {
-      "etag": "\"80cf-65d55d1f11d08-df\"",
+      "etag": "\"80cf-65d55d1f11d08\"",
       "file_path": "documentation/EndpointSecurity/es-event-type-auth-setmode.md",
       "hash": "06fb1cf84c78cf7cfe7ae19bd0af6d5385e5fd050e43a51169cea86ccf620766"
     },
@@ -14621,7 +14621,7 @@
       "hash": "2dd926b0d19f9f106a8d8ecc11ecd192fa6ddf53c04670808a23f1c7dbb55a3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_message_t/time.json": {
-      "etag": "\"2e74-65d55d202127b\"",
+      "etag": "\"2e74-65d55d202127b-df\"",
       "file_path": "documentation/EndpointSecurity/es_message_t/time.md",
       "hash": "349a5e5ee244692e1ec3f725425c2feb14a08ebb2e6acfd1f76e2d6361b27424"
     },
@@ -15916,7 +15916,7 @@
       "hash": "5bf41397a62f79430c925bec21f1acbfd4704b4cb71b54b671eeb0e44d884362"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_tcc_authorization_reason_preflight_unknown.json": {
-      "etag": "\"1c09-65d55d1f7abb3\"",
+      "etag": "\"1c09-65d55d1f7abb3-df\"",
       "file_path": "documentation/EndpointSecurity/es-tcc-authorization-reason-preflight-unknown.md",
       "hash": "4cc7fd5de37fc2ad886b202747acc1c3edc8f97d4bb1ec45a092ccdb300305e8"
     },

@@ -656,7 +656,7 @@
       "hash": "b13edec4ffaca2f76fdf8c1be6722e13fb689b2618035814dc30a0bfc2d1789a"
     },
     "https://developer.apple.com/documentation/backgroundassets/baerrorcode/downloadessentialdownloadnotpermitted": {
-      "etag": "\"68bd-65d5603e7a95e-df\"",
+      "etag": "\"68bd-65d5603e7a95e\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadessentialdownloadnotpermitted.md",
       "hash": "fe55af6bff769a96cd3c74913e02d7cd7b575bc0ddfa667e4290099ba13437fc"
     },
@@ -1466,7 +1466,7 @@
       "hash": "b13edec4ffaca2f76fdf8c1be6722e13fb689b2618035814dc30a0bfc2d1789a"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadessentialdownloadnotpermitted.json": {
-      "etag": "\"68bd-65d5603e7a95e-df\"",
+      "etag": "\"68bd-65d5603e7a95e\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadessentialdownloadnotpermitted.md",
       "hash": "fe55af6bff769a96cd3c74913e02d7cd7b575bc0ddfa667e4290099ba13437fc"
     },

@@ -19006,7 +19006,7 @@
       "hash": "077f7353acf15ae6cebfc72e0fb2d1aa3e1b2d3a4b4be0f4af6bee5b15a2b8db"
     },
     "https://developer.apple.com/documentation/iobluetooth/obexsession/obexabortresponse(_:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:)": {
-      "etag": "\"508c-65d55cd016450\"",
+      "etag": "\"508c-65d55cd016450-df\"",
       "file_path": "documentation/IOBluetooth/obexsession/obexabortresponse-optionalheadersoptionalheaderslengtheventselectorselectortargetrefcon.md",
       "hash": "f79fd4713082eccf77b08f83b9b90548ec9f152108b817322d1b0b5be62074df"
     },
@@ -38473,7 +38473,7 @@
       "hash": "077f7353acf15ae6cebfc72e0fb2d1aa3e1b2d3a4b4be0f4af6bee5b15a2b8db"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetooth/obexsession/obexabortresponse(_:optionalheaders:optionalheaderslength:eventselector:selectortarget:refcon:).json": {
-      "etag": "\"508c-65d55cd016450\"",
+      "etag": "\"508c-65d55cd016450-df\"",
       "file_path": "documentation/IOBluetooth/obexsession/obexabortresponse-optionalheadersoptionalheaderslengtheventselectorselectortargetrefcon.md",
       "hash": "f79fd4713082eccf77b08f83b9b90548ec9f152108b817322d1b0b5be62074df"
     },

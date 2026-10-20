@@ -241,7 +241,7 @@
       "hash": "7f67bf861ea2a210eb17bfe9f8721a6115b00fc5a906f4dc3d68dbfd8994601e"
     },
     "https://developer.apple.com/documentation/uikit/axcustomactionsreturnblock": {
-      "etag": "\"6281-65d55dcc71daf\"",
+      "etag": "\"6281-65d55dcc71daf-df\"",
       "file_path": "documentation/UIKit/axcustomactionsreturnblock.md",
       "hash": "72ca210d9c2a5ff9211f4867a6e6f7a4049029216b06bf37a8556c4dbe54ce4b"
     },
@@ -53681,7 +53681,7 @@
       "hash": "18dab47f16ec8875ad702c8fd3006ee116d8b18cc00de6134f15f7ce4d0e10e1"
     },
     "https://developer.apple.com/documentation/uikit/uiview/systemlayoutsizefitting(_:)": {
-      "etag": "\"638a-65d55db84bb68\"",
+      "etag": "\"638a-65d55db84bb68-df\"",
       "file_path": "documentation/UIKit/uiview/systemlayoutsizefitting.md",
       "hash": "872c1d005bbfe95a093876367e813119e2380df6078a5717d293c9494b4bf472"
     },
@@ -57336,7 +57336,7 @@
       "hash": "7f67bf861ea2a210eb17bfe9f8721a6115b00fc5a906f4dc3d68dbfd8994601e"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/axcustomactionsreturnblock.json": {
-      "etag": "\"6281-65d55dcc71daf\"",
+      "etag": "\"6281-65d55dcc71daf-df\"",
       "file_path": "documentation/UIKit/axcustomactionsreturnblock.md",
       "hash": "72ca210d9c2a5ff9211f4867a6e6f7a4049029216b06bf37a8556c4dbe54ce4b"
     },
@@ -110780,7 +110780,7 @@
       "hash": "18dab47f16ec8875ad702c8fd3006ee116d8b18cc00de6134f15f7ce4d0e10e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview/systemlayoutsizefitting(_:).json": {
-      "etag": "\"638a-65d55db84bb68\"",
+      "etag": "\"638a-65d55db84bb68-df\"",
       "file_path": "documentation/UIKit/uiview/systemlayoutsizefitting.md",
       "hash": "872c1d005bbfe95a093876367e813119e2380df6078a5717d293c9494b4bf472"
     },

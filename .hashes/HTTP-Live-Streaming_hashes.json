@@ -71,7 +71,7 @@
       "hash": "aecbccf2a1edaaec2b48f0fa1bcddabfa27c3fc9eca7e4b2e462ef8e3e06047b"
     },
     "https://developer.apple.com/documentation/http-live-streaming/example-playlists-for-http-live-streaming": {
-      "etag": "\"22bb-659022b3b5139\"",
+      "etag": "\"22bb-659022b3b5139-df\"",
       "file_path": "documentation/HTTP-Live-Streaming/example-playlists-for-http-live-streaming.md",
       "hash": "a7266a08a8cc7c60fbc6780717ddbc2fcd0d3551c2bdec5d7e5b62de343aa27f"
     },
@@ -221,7 +221,7 @@
       "hash": "aecbccf2a1edaaec2b48f0fa1bcddabfa27c3fc9eca7e4b2e462ef8e3e06047b"
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/example-playlists-for-http-live-streaming.json": {
-      "etag": "\"22bb-659022b3b5139\"",
+      "etag": "\"22bb-659022b3b5139-df\"",
       "file_path": "documentation/HTTP-Live-Streaming/example-playlists-for-http-live-streaming.md",
       "hash": "a7266a08a8cc7c60fbc6780717ddbc2fcd0d3551c2bdec5d7e5b62de343aa27f"
     },

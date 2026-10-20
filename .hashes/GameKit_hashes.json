@@ -606,7 +606,7 @@
       "hash": "162ac5ca3ec54c4d5149bf59264ce1b8fc107d4b4c72408611f9f47f4dd13853"
     },
     "https://developer.apple.com/documentation/gamekit/gkchallengecomposehandler": {
-      "etag": "\"56c8-65d5607c70b9e\"",
+      "etag": "\"56c8-65d5607c70b9e-df\"",
       "file_path": "documentation/GameKit/gkchallengecomposehandler.md",
       "hash": "38ec43f82b6fa230fcc3c553293908a2f9c8ed477bc42a1cebaf2dd841aafeec"
     },
@@ -1456,7 +1456,7 @@
       "hash": "60e25049f15fe4b55e36f7a1525d454d0e27509fd3867da4b77a68daddf34fd2"
     },
     "https://developer.apple.com/documentation/gamekit/gkgameactivity/makematchrequest()": {
-      "etag": "\"2060-65d5607ab71b5\"",
+      "etag": "\"2060-65d5607ab71b5-df\"",
       "file_path": "documentation/GameKit/gkgameactivity/makematchrequest.md",
       "hash": "f87fa3c11477d05bfe9d417eec54480ea66fbbe74fa47a7498b305731664c1e5"
     },
@@ -5925,7 +5925,7 @@
       "hash": "162ac5ca3ec54c4d5149bf59264ce1b8fc107d4b4c72408611f9f47f4dd13853"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkchallengecomposehandler.json": {
-      "etag": "\"56c8-65d5607c70b9e\"",
+      "etag": "\"56c8-65d5607c70b9e-df\"",
       "file_path": "documentation/GameKit/gkchallengecomposehandler.md",
       "hash": "38ec43f82b6fa230fcc3c553293908a2f9c8ed477bc42a1cebaf2dd841aafeec"
     },
@@ -6775,7 +6775,7 @@
       "hash": "60e25049f15fe4b55e36f7a1525d454d0e27509fd3867da4b77a68daddf34fd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkgameactivity/makematchrequest().json": {
-      "etag": "\"2060-65d5607ab71b5\"",
+      "etag": "\"2060-65d5607ab71b5-df\"",
       "file_path": "documentation/GameKit/gkgameactivity/makematchrequest.md",
       "hash": "f87fa3c11477d05bfe9d417eec54480ea66fbbe74fa47a7498b305731664c1e5"
     },

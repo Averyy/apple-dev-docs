@@ -11396,7 +11396,7 @@
       "hash": "08a55d8a069059ea9f123245468f44fd50508f9afa895adafd7303859de65d02"
     },
     "https://developer.apple.com/documentation/metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature:index:)": {
-      "etag": "\"2ccc-65d55e3272c99-df\"",
+      "etag": "\"2ccc-65d55e3272c99\"",
       "file_path": "documentation/Metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction-signatureindex.md",
       "hash": "daa632d7e2463c981feed8eea27af8f6409d409b7528d497003971a060bf1769"
     },
@@ -30780,7 +30780,7 @@
       "hash": "08a55d8a069059ea9f123245468f44fd50508f9afa895adafd7303859de65d02"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature:index:).json": {
-      "etag": "\"2ccc-65d55e3272c99-df\"",
+      "etag": "\"2ccc-65d55e3272c99\"",
       "file_path": "documentation/Metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction-signatureindex.md",
       "hash": "daa632d7e2463c981feed8eea27af8f6409d409b7528d497003971a060bf1769"
     },

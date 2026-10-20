@@ -6556,7 +6556,7 @@
       "hash": "52b1c653f07c935204e9c939298a8cbafb7cead195294baea5ff441f111fabce"
     },
     "https://developer.apple.com/documentation/security/cssm_list_type_custom": {
-      "etag": "\"1458-65d55d3fdc9e6\"",
+      "etag": "\"1458-65d55d3fdc9e6-df\"",
       "file_path": "documentation/Security/cssm-list-type-custom.md",
       "hash": "32972268e2c83c270c4bf53f5a79211b91fb44d32a790412810badb7f471a643"
     },
@@ -32620,7 +32620,7 @@
       "hash": "52b1c653f07c935204e9c939298a8cbafb7cead195294baea5ff441f111fabce"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/cssm_list_type_custom.json": {
-      "etag": "\"1458-65d55d3fdc9e6\"",
+      "etag": "\"1458-65d55d3fdc9e6-df\"",
       "file_path": "documentation/Security/cssm-list-type-custom.md",
       "hash": "32972268e2c83c270c4bf53f5a79211b91fb44d32a790412810badb7f471a643"
     },

@@ -2156,7 +2156,7 @@
       "hash": "556f4a01b2766ca8baba0524d4bed4c626542440a965620adb36200b28f4ca42"
     },
     "https://developer.apple.com/documentation/applemusicapi/storefronts/attributes-data.dictionary": {
-      "etag": "\"124b-65d55a4323037\"",
+      "etag": "\"124b-65d55a4323037-df\"",
       "file_path": "documentation/AppleMusicAPI/storefronts/attributes-datadictionary.md",
       "hash": "efce929cab9450b265ee5f5a1d80e31ab1abb8dbb5b970c828385e0c0020eb34"
     },
@@ -4346,7 +4346,7 @@
       "hash": "8177b546ada542d8dd984bc42ac9f69fb3671b81243fa01451c71d463c44b7fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicapi/storefronts/attributes-data.dictionary.json": {
-      "etag": "\"124b-65d55a4323037\"",
+      "etag": "\"124b-65d55a4323037-df\"",
       "file_path": "documentation/AppleMusicAPI/storefronts/attributes-datadictionary.md",
       "hash": "efce929cab9450b265ee5f5a1d80e31ab1abb8dbb5b970c828385e0c0020eb34"
     },

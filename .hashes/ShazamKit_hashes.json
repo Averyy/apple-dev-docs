@@ -506,7 +506,7 @@
       "hash": "6412d83266a54862021bf415e2e4a4fb82e29737aea5a7d7a47d1f4f3dcf84d8"
     },
     "https://developer.apple.com/documentation/shazamkit/shmediaitemproperty/frequencyskew": {
-      "etag": "\"2344-65d55d8f391ed\"",
+      "etag": "\"2344-65d55d8f391ed-df\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/frequencyskew.md",
       "hash": "9d1e3662cbf2cdf1bb6e611130230ffa31d2209ac674a8d6be6e69ed8963506e"
     },
@@ -1256,7 +1256,7 @@
       "hash": "6412d83266a54862021bf415e2e4a4fb82e29737aea5a7d7a47d1f4f3dcf84d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/frequencyskew.json": {
-      "etag": "\"2344-65d55d8f391ed\"",
+      "etag": "\"2344-65d55d8f391ed-df\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/frequencyskew.md",
       "hash": "9d1e3662cbf2cdf1bb6e611130230ffa31d2209ac674a8d6be6e69ed8963506e"
     },
